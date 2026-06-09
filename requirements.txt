@@ -1,0 +1,6 @@
+mkdocs-material==9.7.6
+feedparser==6.0.12
+PyYAML==6.0.3
+requests==2.34.2
+python-dateutil==2.9.0.post0
+rapidfuzz==3.14.5

@@ -1,0 +1,45 @@
+/* Governance status badges for the tools directory (SPEC section 6):
+   approved green, conditional amber, restricted red, under_review grey. */
+
+.badge {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border-radius: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.badge-approved {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+.badge-conditional {
+  background-color: #ff8f00;
+  color: #1a1a1a;
+}
+
+.badge-restricted {
+  background-color: #c62828;
+  color: #ffffff;
+}
+
+.badge-under-review {
+  background-color: #757575;
+  color: #ffffff;
+}
+
+/* Conference table badges */
+
+.badge-deadline {
+  background-color: #ff8f00;
+  color: #1a1a1a;
+}
+
+.badge-unconfirmed {
+  background-color: #757575;
+  color: #ffffff;
+}

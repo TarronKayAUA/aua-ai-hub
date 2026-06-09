@@ -1,0 +1,63 @@
+site_name: AUA AI Hub
+site_description: >-
+  Curated artificial intelligence reference and news hub for the American
+  University of Antigua College of Medicine.
+site_url: https://tarronkayaua.github.io/aua-ai-hub/
+repo_url: https://github.com/TarronKayAUA/aua-ai-hub
+repo_name: TarronKayAUA/aua-ai-hub
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+hooks:
+  - scripts/render_data.py
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - AI Basics:
+      - How LLMs Work: basics/how-llms-work.md
+      - Glossary: basics/glossary.md
+      - Common Misconceptions: basics/misconceptions.md
+  - Tools: tools/index.md
+  - Learning: learning/index.md
+  - Conferences: conferences.md
+  - Announcements:
+      - announcements/index.md
+  - About: about.md

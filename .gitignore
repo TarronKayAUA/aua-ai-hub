@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# MkDocs build output
+site/
+
+# Local environment and secrets
+.env
+.claude/settings.local.json
+
+# OS noise
+Thumbs.db
+.DS_Store
