@@ -1,0 +1,61 @@
+name: Monthly feed health check
+
+on:
+  schedule:
+    - cron: "23 10 3 * *" # 10:23 UTC on the 3rd of each month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check every feed in feeds.yaml
+        id: check
+        run: |
+          set +e
+          python scripts/verify_feeds.py > feed-health.txt 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+          cat feed-health.txt
+      - name: Open, update, or close the feed health issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --state open --search "Feed health: in:title" \
+            --json number --jq '.[0].number // empty')
+          if [[ "${{ steps.check.outputs.exit_code }}" != "0" ]]; then
+            n=$(grep -E '^failed' feed-health.txt | grep -oE '[0-9]+$')
+            title="Feed health: ${n} feeds failing"
+            {
+              echo "Automated monthly check found failing feeds."
+              echo
+              echo '```'
+              grep -E '^  FAIL|^skip' feed-health.txt
+              echo '```'
+              echo
+              echo "Full log in the workflow run. Fix or replace the feeds in feeds.yaml,"
+              echo "verify with \`python scripts/verify_feeds.py\`, and commit."
+            } > body.md
+            if [[ -n "$existing" ]]; then
+              gh issue edit "$existing" --title "$title" --body-file body.md
+              gh issue comment "$existing" --body "Still failing as of $(date -u +%F)."
+            else
+              gh issue create --title "$title" --body-file body.md
+            fi
+          elif [[ -n "$existing" ]]; then
+            gh issue close "$existing" \
+              --comment "All feeds passing as of $(date -u +%F). Closing."
+          else
+            echo "All feeds healthy; no issue to manage."
+          fi
