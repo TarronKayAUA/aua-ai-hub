@@ -23,6 +23,7 @@ import argparse
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -46,6 +47,8 @@ NEWS_DIR = REPO / "docs" / "news"
 ARCHIVE_DIR = NEWS_DIR / "archive"
 LATEST_INCLUDE = REPO / "includes" / "latest.md"
 DIGEST_PATH = REPO / "docs" / "digest.xml"
+CURATOR_PROMPT_PATH = REPO / "prompts" / "curator.md"
+CONFERENCE_FLAGS_PATH = REPO / "data" / "conference_flags.md"
 
 USER_AGENT = "AUA-AI-Hub pipeline (github.com/TarronKayAUA/aua-ai-hub)"
 RETRIES = 2  # additional attempts after the first
@@ -124,7 +127,7 @@ def strip_html(text: str) -> str:
 
 def remove_dashes(text: str) -> str:
     """Site style rule: no em dashes in rendered copy (CLAUDE.md)."""
-    text = re.sub(r"(?<=\w)[–—](?=\w)", "-", text)  # ranges: 2024-2025
+    text = re.sub(r"(?<=\d)[–—](?=\d)", "-", text)  # numeric ranges: 2024-2025
     text = re.sub(r"\s*[–—]+\s*", ", ", text)
     return text
 
@@ -232,6 +235,197 @@ def normalize(parsed, source: str, category: str, weight: float, max_items: int,
         )
     items.sort(key=lambda i: i.published, reverse=True)
     return items[:max_items]
+
+
+# --- LLM curation (SPEC section 9) -------------------------------------------
+
+
+def post_process_summary(text: str, fallback: str, word_cap: int) -> str:
+    """Enforce site style on an LLM summary: no em dashes, no markup, word cap.
+
+    Falls back to the feed's own summary when the model returned nothing usable.
+    """
+    text = strip_html(text or "")
+    text = re.sub(r"[*_`#>\[\]()]+", " ", text)  # strip markdown leftovers
+    text = remove_dashes(re.sub(r"\s+", " ", text).strip())
+    words = text.split()
+    if len(words) > word_cap:
+        text = " ".join(words[:word_cap]).rstrip(",;:") + "."
+    if not text:
+        return fallback
+    return text
+
+
+def call_anthropic(system: str, user: str, cfg: dict, timeout: int) -> str:
+    resp = requests.post(
+        cfg["endpoint"],
+        headers={
+            "x-api-key": os.environ["ANTHROPIC_API_KEY"],
+            "anthropic-version": cfg["api_version"],
+            "content-type": "application/json",
+        },
+        json={
+            "model": cfg["model"],
+            "max_tokens": 4000,
+            "system": system,
+            "messages": [{"role": "user", "content": user}],
+        },
+        timeout=timeout,
+    )
+    resp.raise_for_status()
+    blocks = resp.json()["content"]
+    return "".join(b["text"] for b in blocks if b.get("type") == "text")
+
+
+def call_github_models(system: str, user: str, cfg: dict, timeout: int) -> str:
+    resp = requests.post(
+        cfg["endpoint"],
+        headers={
+            "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": cfg["api_version"],
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": cfg["model"],
+            "max_tokens": 4000,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+        },
+        timeout=timeout,
+    )
+    resp.raise_for_status()
+    return resp.json()["choices"][0]["message"]["content"]
+
+
+def parse_curator_json(text: str, candidate_ids: set, categories: dict) -> list[dict]:
+    """Parse and validate the strict JSON contract. Raises ValueError on any problem."""
+    text = text.strip()
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)  # tolerate code fences
+    data = json.loads(text)
+    items = data["items"]
+    if not isinstance(items, list):
+        raise ValueError("items is not a list")
+    decisions = []
+    for entry in items:
+        if not entry.get("keep"):
+            continue
+        item_id = str(entry["id"])
+        if item_id not in candidate_ids:
+            raise ValueError(f"unknown candidate id {item_id!r}")
+        category = entry.get("category", "")
+        if category not in categories:
+            raise ValueError(f"unknown category {category!r}")
+        decisions.append(
+            {
+                "id": item_id,
+                "category": category,
+                "summary": str(entry.get("summary", "")),
+                "importance": int(entry.get("importance", 3)),
+                "is_cfp": bool(entry.get("is_cfp", False)),
+            }
+        )
+    return decisions
+
+
+def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
+    """One batched curation call. Returns (kept_by_category, cfp_items, note)
+    or None when the LLM path failed and keyword mode should run instead."""
+    llm_cfg = config["llm"]
+    categories = {k: v["label"] for k, v in config["categories"].items()}
+    timeout = llm_cfg["request_timeout_seconds"]
+
+    candidates = sorted(fresh, key=lambda i: -i.score)[: llm_cfg["max_candidates"]]
+    by_id = {str(idx): item for idx, item in enumerate(candidates)}
+    payload = json.dumps(
+        {
+            "candidates": [
+                {
+                    "id": idx,
+                    "feed_category": item.category,
+                    "source": item.source,
+                    "title": item.title,
+                    "summary": item.summary[:300],
+                }
+                for idx, item in by_id.items()
+            ]
+        },
+        ensure_ascii=False,
+    )
+    system = CURATOR_PROMPT_PATH.read_text(encoding="utf-8")
+    call = call_anthropic if provider == "anthropic" else call_github_models
+    cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
+
+    decisions = None
+    for attempt, user_msg in enumerate(
+        [
+            payload,
+            payload + "\n\nYour previous response was not valid JSON matching "
+            "the contract. Respond again with only the JSON object.",
+        ]
+    ):
+        try:
+            raw = call(system, user_msg, cfg, timeout)
+            decisions = parse_curator_json(raw, set(by_id), categories)
+            break
+        except (requests.RequestException, KeyError) as exc:
+            # transport or schema error: no point retrying with a corrective
+            # instruction, fall back to keyword mode immediately
+            if verbose:
+                print(f"  llm call failed: {type(exc).__name__}: {exc}")
+            return None
+        except (ValueError, json.JSONDecodeError) as exc:
+            if verbose:
+                print(f"  llm json invalid (attempt {attempt + 1}): {exc}")
+    if decisions is None:
+        return None
+
+    decisions.sort(key=lambda d: -d["importance"])
+    decisions = decisions[: llm_cfg["max_keep"]]
+
+    kept_by_category = {k: [] for k in categories}
+    cfp_items = []
+    for decision in decisions:
+        item = by_id[decision["id"]]
+        item.category = decision["category"]
+        item.summary = post_process_summary(
+            decision["summary"], item.summary, llm_cfg["summary_word_cap"]
+        )
+        item.score = float(decision["importance"])
+        kept_by_category[decision["category"]].append(item)
+        if decision["is_cfp"]:
+            cfp_items.append(item)
+    for pool in kept_by_category.values():
+        pool.sort(key=lambda i: (-i.score, -i.published.timestamp()))
+    note = f"llm ({provider}, {cfg['model']})"
+    return kept_by_category, cfp_items, note
+
+
+def append_conference_flags(cfp_items: list, now: datetime, dry_run: bool) -> int:
+    """Append CFP-flagged items for owner review. The pipeline never edits
+    data/conferences.yaml itself; conference data stays human-in-the-loop."""
+    if not cfp_items:
+        return 0
+    lines = []
+    if not CONFERENCE_FLAGS_PATH.exists():
+        lines.append("<!-- GENERATED by scripts/aggregate.py. Owner review "
+                     "queue for CFP-flagged news items. -->")
+        lines.append("# Conference flags")
+        lines.append("")
+    for item in cfp_items:
+        lines.append(
+            f"- {now.date().isoformat()}: [{md_escape(item.title)}]({item.url}) "
+            f"({item.source}) {item.summary}"
+        )
+    if dry_run:
+        print(f"[dry-run] would append {len(cfp_items)} items to "
+              f"data/conference_flags.md")
+    else:
+        with CONFERENCE_FLAGS_PATH.open("a", encoding="utf-8", newline="\n") as fh:
+            fh.write("\n".join(lines) + "\n")
+    return len(cfp_items)
 
 
 # --- ledger -----------------------------------------------------------------
@@ -505,17 +699,42 @@ def main() -> int:
     ]
     after_dedupe = len(fresh)
 
-    # 5. curate (keyword mode in Phase 2; --no-llm reserved for Phase 3)
-    mode = "keyword"
-    kept_by_category: dict[str, list[Item]] = {k: [] for k in categories}
+    # 5. curate: LLM mode when a provider is available, else keyword mode.
+    # Keyword scores are computed first either way; LLM mode uses them to
+    # rank candidates, keyword mode uses them to select.
     for item in fresh:
         text = f"{item.title} {item.summary}".lower()
         matches = sum(1 for term in boost_terms if term in text)
         item.score = matches + item.weight
-    for cat_key in categories:
-        pool = [i for i in fresh if i.category == cat_key]
-        pool.sort(key=lambda i: (-i.score, -i.published.timestamp()))
-        kept_by_category[cat_key] = pool[:KEEP_PER_CATEGORY]
+
+    provider = None
+    if not args.no_llm:
+        if os.environ.get("ANTHROPIC_API_KEY"):
+            provider = "anthropic"
+        elif os.environ.get("GITHUB_TOKEN"):
+            provider = "github_models"
+
+    mode = "keyword"
+    cfp_count = 0
+    llm_result = None
+    if provider and fresh:
+        llm_result = curate_llm(fresh, config, provider, args.verbose)
+        if llm_result is None:
+            mode = f"keyword (fallback: {provider} failed)"
+    elif args.no_llm:
+        mode = "keyword (--no-llm)"
+    elif provider is None:
+        mode = "keyword (no LLM credentials)"
+
+    if llm_result is not None:
+        kept_by_category, cfp_items, mode = llm_result
+        cfp_count = append_conference_flags(cfp_items, now, args.dry_run)
+    else:
+        kept_by_category = {k: [] for k in categories}
+        for cat_key in categories:
+            pool = [i for i in fresh if i.category == cat_key]
+            pool.sort(key=lambda i: (-i.score, -i.published.timestamp()))
+            kept_by_category[cat_key] = pool[:KEEP_PER_CATEGORY]
     kept_items = [i for pool in kept_by_category.values() for i in pool]
     kept_set = {id(i) for i in kept_items}
 
@@ -627,6 +846,7 @@ def main() -> int:
     print(f"kept total       : {kept_total}")
     for label, count in per_cat_counts.items():
         print(f"  {label:<18}: {count}")
+    print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {'written (' + week_key + ')' if digest_written else 'not due'}")
     if args.dry_run:

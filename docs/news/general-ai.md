@@ -22,3 +22,11 @@ Items are selected nightly by an automated pipeline and link to their original s
   *r/LocalLLaMA weekly top, June 6, 2026.* Hey, Nick here from Cohere. Thanks for all the feedback on Command A+ the other week everyone. I read these threads all the time about other releases so it was fun to read one about our own :) we would like to do more of it. We actually have our first coding model we’re getting ready to release soon, and I wanted to give this community an opportunity to test it out and give feedback before we officially release it. Figured why not try something different and get you guys to help directly here?…
 - **[micropython-wasm 0.1a2](https://simonwillison.net/2026/Jun/6/micropython-wasm)**  
   *Simon Willison's weblog, June 6, 2026.* Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section. Tags: python , sandboxing , webassembly , micropython
+- **[OpenAI frontier models and Codex are now available on AWS](https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws)**  
+  *Hacker News (LLM, 100+ points), June 1, 2026.* OpenAI's frontier models and Codex code generation models are now available for use on Amazon Web Services cloud platform.
+- **[CS336: Language Modeling from Scratch](https://cs336.stanford.edu/)**  
+  *Hacker News (LLM, 100+ points), June 1, 2026.* Stanford's CS336 course provides an educational resource on language modeling from scratch, useful for understanding foundational AI concepts.
+- **[Show HN: Tiny-vLLM, high performance LLM inference engine in C++ and CUDA](https://github.com/jmaczan/tiny-vllm)**  
+  *Hacker News (LLM, 100+ points), May 29, 2026.* Tiny-vLLM, a high performance large language model inference engine implemented in C++ and CUDA, was released to improve model deployment efficiency.
+- **[The mysterious Hy3 LLM is topping OpenRouter Model Rankings by a large margin](https://minimaxir.com/2026/05/openrouter-hy3)**  
+  *Hacker News (LLM, 100+ points), May 29, 2026.* The Hy3 large language model is leading the OpenRouter model rankings by a significant margin according to recent evaluation data.

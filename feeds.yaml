@@ -12,6 +12,24 @@ defaults:
   max_items_per_feed: 25
   request_timeout_seconds: 10
 
+# LLM curation settings (SPEC section 9). Provider order: Anthropic when
+# ANTHROPIC_API_KEY is set, else GitHub Models when GITHUB_TOKEN is set,
+# else keyword mode. Endpoints and model ids verified against official
+# documentation 2026-06-09; edit here, never in code.
+llm:
+  max_candidates: 120
+  max_keep: 12
+  summary_word_cap: 35
+  request_timeout_seconds: 90
+  github_models:
+    endpoint: https://models.github.ai/inference/chat/completions
+    model: openai/gpt-4.1-mini
+    api_version: "2026-03-10"
+  anthropic:
+    endpoint: https://api.anthropic.com/v1/messages
+    model: claude-haiku-4-5
+    api_version: "2023-06-01"
+
 categories:
   general_ai:
     label: General AI
