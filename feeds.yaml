@@ -1,0 +1,89 @@
+# Feed configuration for the news pipeline (scripts/aggregate.py).
+#
+# Verification rule (SPEC section 7): every URL here was fetched and parsed
+# successfully with feedparser before being committed. Run
+# `python scripts/verify_feeds.py` after any change to this file.
+#
+# Optional per-feed key: weight (default 1.0). Multiplies the keyword score in
+# keyword curation mode; use values below 1.0 to damp high-volume sources.
+
+defaults:
+  lookback_days: 8
+  max_items_per_feed: 25
+  request_timeout_seconds: 10
+
+categories:
+  general_ai:
+    label: General AI
+    feeds:
+      - name: Simon Willison's weblog
+        url: https://simonwillison.net/atom/everything/
+      - name: Hugging Face blog
+        url: https://huggingface.co/blog/feed.xml
+      - name: Hacker News (LLM, 100+ points)
+        url: https://hnrss.org/newest?q=LLM+OR+%22language+model%22&points=100
+      - name: r/LocalLLaMA weekly top
+        url: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=week
+      - name: arXiv cs.CL
+        url: https://rss.arxiv.org/rss/cs.CL
+        weight: 0.5
+      - name: Ars Technica AI
+        url: https://arstechnica.com/ai/feed/
+      - name: LMArena blog
+        url: https://news.lmarena.ai/rss/
+
+  medical_education:
+    label: Medical Education
+    feeds:
+      # Owner action needed: run this query at pubmed.gov, click "Create RSS",
+      # set the item limit to 50, and paste the generated URL here.
+      # Query:
+      #   ("artificial intelligence"[tiab] OR "large language model*"[tiab]
+      #    OR ChatGPT[tiab] OR "machine learning"[tiab]) AND
+      #   ("medical education"[tiab] OR "medical student*"[tiab]
+      #    OR "undergraduate medical education"[tiab] OR residen*[tiab]
+      #    OR "health professions education"[tiab])
+      - name: PubMed AI in medical education
+        url: TODO-OWNER
+      - name: JMIR Medical Education
+        url: https://mededu.jmir.org/feed/atom
+
+  clinical_practice:
+    label: Clinical Practice
+    feeds:
+      # Owner action needed: same PubMed steps as above. Query:
+      #   ("artificial intelligence"[tiab] OR "large language model*"[tiab]
+      #    OR "machine learning"[tiab]) AND
+      #   ("clinical decision support"[tiab] OR diagnos*[tiab]
+      #    OR "patient safety"[tiab] OR "clinical workflow"[tiab])
+      - name: PubMed AI in clinical practice
+        url: TODO-OWNER
+      - name: npj Digital Medicine
+        url: https://www.nature.com/npjdigitalmed.rss
+      - name: JMIR AI
+        url: https://ai.jmir.org/feed/atom
+      - name: JMIR Medical Informatics
+        url: https://medinform.jmir.org/feed/atom
+      - name: Nature Medicine
+        url: https://www.nature.com/nm.rss
+        weight: 0.7
+
+keyword_block:
+  - sponsored
+  - webinar replay
+  - crypto
+  - giveaway
+  - promo code
+
+keyword_boost:
+  - release
+  - benchmark
+  - open weights
+  - local model
+  - medical education
+  - medical student
+  - clinical
+  - FDA
+  - USMLE
+  - assessment
+  - curriculum
