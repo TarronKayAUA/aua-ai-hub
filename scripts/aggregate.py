@@ -560,7 +560,11 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
             "best are tested and promoted into the "
             "[reviewed library](index.md) with credit. Voting and replying "
             "happen on GitHub and need a free "
-            "[GitHub account](https://github.com/signup).",
+            "[GitHub account](https://github.com/signup). Keep posts "
+            "professional, and never include patient information, student "
+            "records, or exam content, consistent with the university's "
+            "[AI Responsible Use Policy](../governance/policy.md); posts "
+            "are subject to moderation.",
             "",
             f"[Share a prompt]({NEW_DISCUSSION_URL}){{ .md-button "
             ".md-button--primary }",

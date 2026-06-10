@@ -38,7 +38,9 @@ This site is informational. AI-generated summaries and descriptions may contain 
 
 ## Comments and feedback
 
-News, video, podcast, and digest pages carry a comments section where you can discuss items and react to them; the [Prompt Exchange](prompts/index.md) accepts community prompt contributions with public voting. Both run on the site's [GitHub Discussions board](https://github.com/TarronKayAUA/aua-ai-hub/discussions) and require a free [GitHub account](https://github.com/signup) to post. Comments are public and are expected to meet the same professional standard as any university forum.
+News, video, podcast, and digest pages carry a comments section where you can discuss items and react to them; the [Prompt Exchange](prompts/index.md) accepts community prompt contributions with public voting. Both run on the site's [GitHub Discussions board](https://github.com/TarronKayAUA/aua-ai-hub/discussions) and require a free [GitHub account](https://github.com/signup) to post.
+
+**Community standards.** Comments and posts are public. Keep discussion professional, and never post patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](governance/policy.md). Content is subject to moderation, and repeated misuse may result in loss of posting access.
 
 ## Contact
 

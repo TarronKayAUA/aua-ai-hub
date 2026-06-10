@@ -2709,6 +2709,18 @@
    "category": "videos",
    "score": 3.0,
    "thumbnail": "https://i1.ytimg.com/vi/h001l-XUJJE/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1siyl/without_open_source_llms_us_ai_companies_could",
+   "title_hash": "8521a0e5f44c5762b331a58c66ad44cb",
+   "first_seen": "2026-06-10T21:55:31.066286+00:00",
+   "kept": true,
+   "title": "Without open source LLMs, US AI companies could have already monopoled the technology",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-10T05:00:42+00:00",
+   "summary": "For such technology with clear importance and impact on all of us, I believe that making it open source is an ethical duty, otherwise, especially with the 1-sided politics of the US we experience today, they could have already monopolized the technology by now, maybe make it exclusively available to US companies only, and starve the entire world including Europe. You could disagree with China on many topics, but the fact they released a couple of powerful open source LLMs is a direct…",
+   "category": "general_ai",
+   "score": 2.0
   }
  ],
  "digests": [
