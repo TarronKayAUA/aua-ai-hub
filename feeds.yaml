@@ -94,6 +94,14 @@ categories:
       - name: LMArena blog
         url: https://news.lmarena.ai/rss/
 
+# Community Prompt Exchange (GitHub Discussions). The nightly pipeline pulls
+# the top-upvoted discussions from this category into the Prompts page.
+# category_id is the GraphQL node id; it survives category renames.
+community:
+  repo: TarronKayAUA/aua-ai-hub
+  category_id: DIC_kwDOS17r5c4C-57B
+  items: 5
+
 # Weekly digest settings. The digest is a second-stage highlights selection
 # over everything kept since the previous digest, generated on the configured
 # day's nightly run. Selection instructions live in prompts/digest.md.

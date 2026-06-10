@@ -11,6 +11,7 @@ copyright: >-
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo-mark-white.png
   favicon: assets/favicon.png
   font:

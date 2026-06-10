@@ -9,4 +9,10 @@ Two habits make every prompt here work better: give the model your actual materi
 
 <!-- render:prompts -->
 
-Have a prompt that works well for you? Send it in; tested prompts from AUA faculty are credited and marked Reviewed. Contact information is on the [About page](../about.md).
+## Community Prompt Exchange
+
+Share prompts that work for you and vote on what others have shared. The exchange lives on the site's [discussion board](https://github.com/TarronKayAUA/aua-ai-hub/discussions), where you can post a prompt, describe the output it produced, and upvote the ones that earn it. Participating requires a free [GitHub account](https://github.com/signup); reading requires nothing. The top-voted community prompts appear below, refreshed nightly, and the best of them are tested, credited to their contributors, and promoted into the reviewed library above.
+
+--8<-- "includes/community-prompts.md"
+
+Prefer not to post publicly? Send prompts directly; contact information is on the [About page](../about.md).

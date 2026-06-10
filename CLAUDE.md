@@ -40,7 +40,8 @@ These rules apply to everything rendered on the site, including pipeline-generat
 
 ## Repository conventions
 
-- Generated files (never hand-edit, pipeline-owned): docs/news/**, docs/digest.xml, includes/latest.md, includes/latest-videos.md, includes/livebench.md, data/seen_items.json, data/conference_flags.md. The pipeline never modifies hand-authored files.
+- Generated files (never hand-edit, pipeline-owned): docs/news/**, docs/digest.xml, includes/latest.md, includes/latest-videos.md, includes/livebench.md, includes/community-prompts.md, data/seen_items.json, data/conference_flags.md. The pipeline never modifies hand-authored files.
+- Comments and the community Prompt Exchange run on the repo's GitHub Discussions (giscus partial in overrides/, category ids in feeds.yaml community block). Generated content pages carry comments front matter; moderation is the owner's, through GitHub.
 - Owner-owned data files: data/tools.yaml, data/conferences.yaml, data/conference_watchlist.yaml, data/prompts.yaml, data/committee.yaml, feeds.yaml, prompts/curator.md, prompts/digest.md. graphics/ holds official AUA logos and member photos; regenerate web assets with scripts/build_brand_assets.py. The approved AI policy on docs/governance/policy.md is verbatim institutional text: never edit its wording, only replace it whole when the owner supplies a newly approved version.
 - Secrets exist only as GitHub Actions secrets or local environment variables. Nothing secret in code, YAML, or commit history.
 - Commit messages are descriptive. Pipeline commits use the prefix `chore(news): refresh YYYY-MM-DD`.

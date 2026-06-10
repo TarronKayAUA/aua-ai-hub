@@ -74,6 +74,11 @@ GENERATED_HEADER = (
     "be overwritten by the next pipeline run. -->"
 )
 
+# Front matter that switches on the giscus comments partial
+# (overrides/partials/comments.html) for generated content pages.
+COMMENTS_FRONT_MATTER = "---\ncomments: true\n---\n\n"
+COMMUNITY_INCLUDE = REPO / "includes" / "community-prompts.md"
+
 PAGE_INTROS = {
     "general_ai": "Model releases, benchmarks, and developments in general "
     "artificial intelligence.",
@@ -392,7 +397,7 @@ def normalize_podcasts(parsed, show: str, counters: dict) -> list[Item]:
 
 def render_videos_page(records: list[dict]) -> str:
     lines = [
-        GENERATED_HEADER,
+        COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
         "# Videos",
         "",
@@ -412,7 +417,7 @@ def render_videos_page(records: list[dict]) -> str:
 
 def render_podcasts_page(records: list[dict]) -> str:
     lines = [
-        GENERATED_HEADER,
+        COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
         "# Podcasts",
         "",
@@ -453,6 +458,83 @@ def _video_grid_html(records: list[dict], extra_class: str = "") -> str:
         )
     css = ("video-grid " + extra_class).strip()
     return f'<div class="{css}">\n' + "\n".join(cards) + "\n</div>"
+
+
+# --- community Prompt Exchange (GitHub Discussions) ----------------------------
+
+
+def update_community_prompts(config: dict, now: datetime, dry_run: bool,
+                             verbose: bool) -> str:
+    """Refresh includes/community-prompts.md with the top-upvoted discussions
+    from the Prompt Exchange category. Keep-last-good on any failure."""
+    cfg = config.get("community")
+    if not cfg:
+        return "not configured"
+    token = os.environ.get("GITHUB_TOKEN")
+    fallback = ("No community prompts yet. Be the first to "
+                "[share one](https://github.com/TarronKayAUA/aua-ai-hub/discussions).")
+    try:
+        if not token:
+            raise RuntimeError("no GITHUB_TOKEN for the Discussions API")
+        owner, name = cfg["repo"].split("/", 1)
+        query = """
+        query($owner: String!, $name: String!, $categoryId: ID!) {
+          repository(owner: $owner, name: $name) {
+            discussions(first: 50, categoryId: $categoryId) { nodes {
+              title url upvoteCount author { login }
+            } }
+          }
+        }"""
+        resp = requests.post(
+            "https://api.github.com/graphql",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"query": query,
+                  "variables": {"owner": owner, "name": name,
+                                "categoryId": cfg["category_id"]}},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        if "errors" in data:
+            raise ValueError(str(data["errors"])[:200])
+        nodes = data["data"]["repository"]["discussions"]["nodes"]
+        nodes.sort(key=lambda n: -n["upvoteCount"])
+        top = nodes[: cfg.get("items", 5)]
+        lines = [GENERATED_HEADER, ""]
+        if top:
+            lines.append(f"Top-voted community prompts as of {fmt_date(now)}, "
+                         "shown as posted and not yet reviewed:")
+            lines.append("")
+            for n in top:
+                author = (n.get("author") or {}).get("login", "unknown")
+                lines.append(
+                    f"- [{md_escape(remove_dashes(n['title']))}]({n['url']}) "
+                    f"(by {author}, {n['upvoteCount']} upvotes)"
+                )
+        else:
+            lines.append(fallback)
+        content = "\n".join(lines) + "\n"
+        if dry_run:
+            print(f"[dry-run] would write includes/community-prompts.md "
+                  f"({len(top)} items)")
+        else:
+            COMMUNITY_INCLUDE.parent.mkdir(parents=True, exist_ok=True)
+            COMMUNITY_INCLUDE.write_text(content, encoding="utf-8",
+                                         newline="\n")
+        return f"updated ({len(top)} of {len(nodes)} discussions)"
+    except (requests.RequestException, RuntimeError, ValueError,
+            KeyError, TypeError) as exc:
+        if verbose:
+            print(f"  community prompts update failed: "
+                  f"{type(exc).__name__}: {exc}")
+        if COMMUNITY_INCLUDE.exists():
+            return f"kept previous list ({type(exc).__name__})"
+        if not dry_run:
+            COMMUNITY_INCLUDE.parent.mkdir(parents=True, exist_ok=True)
+            COMMUNITY_INCLUDE.write_text(
+                GENERATED_HEADER + "\n\n" + fallback + "\n",
+                encoding="utf-8", newline="\n")
+        return f"unavailable ({type(exc).__name__})"
 
 
 # --- LiveBench table (Benchmarks page) ----------------------------------------
@@ -970,8 +1052,8 @@ def kept_records(ledger: dict, category: str | None = None) -> list[dict]:
 
 
 def render_category_page(label: str, intro: str, records: list[dict]) -> str:
-    lines = [GENERATED_HEADER, "", f"# {label}", "", intro, "",
-             selection_note("../"), ""]
+    lines = [COMMENTS_FRONT_MATTER + GENERATED_HEADER, "", f"# {label}", "",
+             intro, "", selection_note("../"), ""]
     if records:
         suppress = _generic_thumbnails(records)
         lines.append('<div class="news-list">')
@@ -1140,7 +1222,7 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                      podcasts: list[dict]) -> str:
     """Rolling trailing-seven-day view, regenerated nightly."""
     lines = [
-        GENERATED_HEADER,
+        COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
         "# This Week",
         "",
@@ -1179,7 +1261,7 @@ def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
     """Stable weekly digest page: the email's highlights plus a link list of
     everything else kept in the same window."""
     lines = [
-        GENERATED_HEADER,
+        COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
         f"# {title}",
         "",
@@ -1717,6 +1799,8 @@ def main() -> int:
 
     livebench_status = update_livebench(config, now, args.dry_run,
                                         args.verbose)
+    community_status = update_community_prompts(config, now, args.dry_run,
+                                                args.verbose)
 
     if not args.dry_run:
         write_count = len(ledger["items"])
@@ -1767,6 +1851,7 @@ def main() -> int:
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
     print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
     print(f"livebench table  : {livebench_status}")
+    print(f"community prompts: {community_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {digest_status}")
     if args.dry_run:

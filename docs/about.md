@@ -21,7 +21,7 @@ The university's [AI Responsible Use Policy](governance/policy.md) and the [AI G
 
 ## Privacy
 
-This site sets no cookies and runs no advertising scripts. Anonymous visit counts are collected with GoatCounter, a privacy-respecting service that uses no cookies and stores no personal information. Video thumbnails and podcast artwork load from the platforms that publish them; clicking any card takes you to the original platform, which has its own privacy practices.
+This site sets no cookies and runs no advertising scripts. Anonymous visit counts are collected with GoatCounter, a privacy-respecting service that uses no cookies and stores no personal information. Pages with a comments section load a small widget from giscus, an open-source service backed by this site's public GitHub Discussions board: reading comments requires nothing, posting requires a free GitHub account, and anything posted is public. Video thumbnails and podcast artwork load from the platforms that publish them; clicking any card takes you to the original platform, which has its own privacy practices.
 
 ## Disclaimer
 
@@ -36,6 +36,10 @@ This site is informational. AI-generated summaries and descriptions may contain 
 </div>
 </div>
 
+## Comments and feedback
+
+News, video, podcast, and digest pages carry a comments section where you can discuss items and react to them; the [Prompt Exchange](prompts/index.md) accepts community prompt contributions with public voting. Both run on the site's [GitHub Discussions board](https://github.com/TarronKayAUA/aua-ai-hub/discussions) and require a free [GitHub account](https://github.com/signup) to post. Comments are public and are expected to meet the same professional standard as any university forum.
+
 ## Contact
 
-Questions, corrections, tool suggestions, prompt contributions, and conference submissions: contact the Office of the Assistant Dean for AI in Medical Education, AUACOM.
+Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact the Office of the Assistant Dean for AI in Medical Education, AUACOM.

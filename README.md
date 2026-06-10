@@ -94,6 +94,11 @@ in `docs/governance/policy.md` to a clearly labeled superseded archive page,
 paste the newly approved text verbatim with its effective date in the status
 block, and never publish drafts.
 
+**Moderate comments or the Prompt Exchange** — everything lives in the
+repo's GitHub Discussions; use GitHub's hide/delete/lock tools. To promote a
+community prompt: test it, add it to `data/prompts.yaml` with contributor
+credit in the notes, mark it reviewed, and reply on the discussion.
+
 **Update branding** — drop new artwork in `graphics/`, run
 `python scripts/build_brand_assets.py` (needs `pip install pillow`), review
 the regenerated files in `docs/assets/`, build strict, commit.

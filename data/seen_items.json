@@ -2621,6 +2621,69 @@
    "summary": "A study reports the use of artificial intelligence to enhance endoscopic diagnosis accuracy for ampullary lesions, potentially improving clinical outcomes.",
    "category": "clinical_practice",
    "score": 4.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/10/diffusiongemma",
+   "title_hash": "6e898ad0522fca303b77e0cd20a986b5",
+   "first_seen": "2026-06-10T20:19:06.536808+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/06/googles-latest-diffusiongemma-open-ai-model-comes-with-a-4x-speed-boost",
+   "title_hash": "eb09a089fef9121cfea4cd12890f3536",
+   "first_seen": "2026-06-10T20:19:06.536808+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e80930",
+   "title_hash": "7c18d893085e8194054337a332f49214",
+   "first_seen": "2026-06-10T20:19:06.536808+00:00",
+   "kept": true,
+   "title": "Machine Learning for Intraoperative Bleeding Prediction in Patients Undergoing Surgery: Scoping Review",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-10T19:15:12+00:00",
+   "summary": "A scoping review examines machine learning methods for predicting intraoperative bleeding to improve surgical safety and patient outcomes.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://asset.jmir.pub/assets/129accca82ab8904f93fa53899477af5.png"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02680-9",
+   "title_hash": "73580d6a5006a39ca3a7ccad1fbda7f9",
+   "first_seen": "2026-06-10T20:19:06.536808+00:00",
+   "kept": true,
+   "title": "Deployable real-time spinal endoscopic instance segmentation with lightweight multi-scale attention mechanism",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-10T00:00:00+00:00",
+   "summary": "The study presents a lightweight multi-scale attention deep learning model for real-time instance segmentation during spinal endoscopy.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=haK1KoQWm18",
+   "title_hash": "ff94f2be4d30916a7179b014a8507299",
+   "first_seen": "2026-06-10T20:19:06.536808+00:00",
+   "kept": true,
+   "title": "Claude Fable 5 - Full 319 page Breakdown",
+   "source": "AI Explained",
+   "published": "2026-06-10T18:43:12+00:00",
+   "summary": "This video provides a detailed 319-page analysis of Claude Fable 5, discussing its capabilities and characteristics beyond the initial demos.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/haK1KoQWm18/hqdefault.jpg"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Fable-5-Raises-the-Bar-for-AI-Ambition-e3kk9rp",
+   "title_hash": "b0893f98565708eb62172deb2c000265",
+   "first_seen": "2026-06-10T20:19:06.536808+00:00",
+   "kept": true,
+   "title": "Fable 5 Raises the Bar for AI Ambition",
+   "source": "The AI Daily Brief",
+   "published": "2026-06-10T19:05:34+00:00",
+   "summary": "This podcast episode discusses the new features and user expectations set by Anthropic's Fable 5 in advancing frontier artificial intelligence.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [
