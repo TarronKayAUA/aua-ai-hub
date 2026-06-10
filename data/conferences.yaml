@@ -1,4 +1,4 @@
-# Conference calendar. Rendered into docs/conferences.md at build time by
+﻿# Conference calendar. Rendered into docs/conferences.md at build time by
 # scripts/render_data.py. Edit this file only; never the rendered page.
 #
 # Date integrity rule (SPEC section 6): every date here was confirmed from the
