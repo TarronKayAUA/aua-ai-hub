@@ -35,29 +35,30 @@ categories:
   medical_education:
     label: Medical Education
     feeds:
-      # Owner action needed: run this query at pubmed.gov, click "Create RSS",
-      # set the item limit to 50, and paste the generated URL here.
-      # Query:
+      # Owner-generated PubMed saved-search RSS (verified 2026-06-09).
+      # To change the query: rerun it at pubmed.gov, click "Create RSS" with
+      # limit 50, and replace this URL. Query behind this URL:
       #   ("artificial intelligence"[tiab] OR "large language model*"[tiab]
       #    OR ChatGPT[tiab] OR "machine learning"[tiab]) AND
       #   ("medical education"[tiab] OR "medical student*"[tiab]
       #    OR "undergraduate medical education"[tiab] OR residen*[tiab]
       #    OR "health professions education"[tiab])
       - name: PubMed AI in medical education
-        url: TODO-OWNER
+        url: https://pubmed.ncbi.nlm.nih.gov/rss/search/145VRaMa7R_CRyMjetta0WfN1w_GEomALtgrOcpWwLN4WceQ4l/?limit=50&utm_campaign=pubmed-2&fc=20260609215449
       - name: JMIR Medical Education
         url: https://mededu.jmir.org/feed/atom
 
   clinical_practice:
     label: Clinical Practice
     feeds:
-      # Owner action needed: same PubMed steps as above. Query:
+      # Owner-generated PubMed saved-search RSS (verified 2026-06-09).
+      # Same regeneration steps as the medical_education entry. Query:
       #   ("artificial intelligence"[tiab] OR "large language model*"[tiab]
       #    OR "machine learning"[tiab]) AND
       #   ("clinical decision support"[tiab] OR diagnos*[tiab]
       #    OR "patient safety"[tiab] OR "clinical workflow"[tiab])
       - name: PubMed AI in clinical practice
-        url: TODO-OWNER
+        url: https://pubmed.ncbi.nlm.nih.gov/rss/search/14czX-i9THT7CJhbo4ii-wINZPIE5HRKGtyrVoC1vIw2io0Y8R/?limit=50&utm_campaign=pubmed-2&fc=20260609215545
       - name: npj Digital Medicine
         url: https://www.nature.com/npjdigitalmed.rss
       - name: JMIR AI

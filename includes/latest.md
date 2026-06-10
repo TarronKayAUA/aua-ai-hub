@@ -3,5 +3,5 @@
 - [Initial impressions of Claude Fable 5](https://simonwillison.net/2026/Jun/9/claude-fable-5) (Simon Willison's weblog, June 9, 2026)
 - [llm 0.32a3](https://simonwillison.net/2026/Jun/9/llm) (Simon Willison's weblog, June 9, 2026)
 - [Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech](https://huggingface.co/blog/ServiceNow-AI/code-switching) (Hugging Face blog, June 9, 2026)
+- [Large language models in emergency and critical care medicine: a comprehensive review of applications, challenges, and future directions](https://pubmed.ncbi.nlm.nih.gov/42261384?fc=20260609215449&ff=20260609215822&v=2.20.0) (PubMed AI in medical education, June 9, 2026)
 - [Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study](https://medinform.jmir.org/2026/1/e80574) (JMIR Medical Informatics, June 8, 2026)
-- [Re-Centering Clinical Documentation in the Age of AI Scribes: Four Aims of the Patient Chart Note](https://mededu.jmir.org/2026/1/e95218) (JMIR Medical Education, June 8, 2026)

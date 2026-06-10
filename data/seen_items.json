@@ -1061,6 +1061,192 @@
    "title_hash": "109dade2ee34ed8f2c08d872bc696158",
    "first_seen": "2026-06-10T01:31:38.274181+00:00",
    "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42261384?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "ac08dcd0915b2c851d6fa93162d6c78d",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "Large language models in emergency and critical care medicine: a comprehensive review of applications, challenges, and future directions",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-09T10:00:00+00:00",
+   "summary": "Emergency and critical care medicine requires the rapid synthesis of heterogeneous clinical data under extreme time constraints. Early artificial intelligence tools lacked the flexibility to manage real-world patient heterogeneity. Large language models (LLMs) offer a paradigm shift by demonstrating advanced natural language understanding, cross-task generalization, and context-sensitive reasoning, thereby bridging the gap between fragmented algorithms and holistic clinical decision support.…",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42260081?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "d87aac4da6095ff021d8f17df0a031fe",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42259755?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "29525864169de4a06efb53feee64b4b3",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42259441?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "15088e6172af51de2934989148bb1551",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42259172?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "e9860508b3eafe2917d681f671e891a0",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42259034?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "647be35f7a13be803e3c65329f968507",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42258369?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "b17a042670e7f7b2f2aa7fb6dd54c65e",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "360 Video-Based Virtual Reality for Preparing Medical Students for Body Donor Dissection: Randomized Controlled Trial",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-08T10:00:00+00:00",
+   "summary": "CONCLUSIONS: The 360° video-based VR intervention significantly reduced TA and was perceived as valuable for emotional and procedural preparation. The intervention shows promise as a preparatory tool for enhancing emotional and procedural readiness; however, its impact on objective educational outcomes was not assessed and warrants further investigation.",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42257174?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "255ba5149aaa06865fe3e2a1cf661d71",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "Narrative Review on History of Point-of-Care Ultrasound Training in Critical Care",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-08T10:00:00+00:00",
+   "summary": "CONCLUSION: PoCUS training has advanced considerably but remains fragmented. Sustainable progress requires longitudinal, evidence-based curricula, validated assessment tools and global collaboration to ensure safe, high-quality training for future clinicians.",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42257171?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "03166ade376ad1f99c95d30b2254259d",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "Artificial intelligence in clinical physiology: System-wise applications in diagnostics, monitoring, and medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-08T10:00:00+00:00",
+   "summary": "CONCLUSION: AI possesses the potential to revolutionize clinical physiology by facilitating predictive, personalized, and participatory healthcare. Nonetheless, its effective implementation necessitates ethical governance, inclusive datasets, and regulatory oversight to ensure equitable, transparent, and effective deployment.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42256849?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "401f129c3aa86b9c65fc847856535f58",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42256512?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "d92ccac2272c886a63af5b2875308bc0",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42256006?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "f08e94bb22024923dd3b194a1570ad32",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42255472?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "5273cd6ebead5dcb93c291e9cea4414a",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42255338?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "122b213c0d9e3fe1307561b6798cdc1a",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "Knowledge, Attitude, and Perception of Medical Students Toward AI-Based Learning: A Cross-Sectional Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-08T10:00:00+00:00",
+   "summary": "CONCLUSION: Medical students in KP exhibit strong enthusiasm and positive perceptions toward AI-based learning, yet their knowledge remains modest and uneven across training levels. This mismatch highlights the urgent need for structured AI education in undergraduate curricula. Incorporating formal training, workshops, and faculty development programs can bridge this gap and better prepare future physicians to responsibly integrate AI into clinical practice.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42254636?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "51cb546682efcba65cdc04bca56dbc09",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42254388?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "31538ca678fbc406dd9e8fdc02bd71ab",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "Integrating AI into undergraduate medical education: an exploration of learner-centered approaches through AI",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-08T10:00:00+00:00",
+   "summary": "INTRODUCTION: Advances in artificial intelligence (AI) offer promising opportunities to enrich medical education by supporting self-directed learning, providing personalized feedback, and simulating clinical and scientific reasoning. Although AI use has expanded in graduate medical education for clinical decision training and administrative support, its effectiveness in undergraduate medical education remains insufficiently established. Empirical data examining how AI instruction influences...",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42252881?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "93d477d561cf1b5739bbc82cf07502ab",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "Deep learning-based assessment of periodontitis progression using serial panoramic radiographs: a multicenter study incorporating indirect and direct grading approaches",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-08T10:00:00+00:00",
+   "summary": "CONCLUSIONS: This multicenter study demonstrates that DL-based assessment of periodontitis progression using serial panoramic radiographs achieves high diagnostic accuracy (89.6% and 79.5% for indirect and direct assessment, respectively) while markedly improving time efficiency. This approach has strong potential as a standardized adjunctive diagnostic tool for periodontal clinical decision-making.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42252718?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "6b247c7f901ee5d824546abc77686805",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42251971?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "6ea0bc5eb5a2721978e305f35d3a58d8",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42250191?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "7f722947611eb5e46f8c0a04c7c3e358",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42249802?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "41e2550bef4dfc0b8a73d8546c42315f",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42249561?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "b67454c326dcdf0df374efaa4430cdd7",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": true,
+   "title": "EXPRESS: Effect of the Use of Artificial Intelligence Tools on Clinical Education and Clinical Decision-Making of Medical Students During Clinical Rotations: A Scoping Review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-06T10:00:00+00:00",
+   "summary": "Medical education is transforming due to new technologies such as artificial intelligence (AI). Although AI is being considered for medical education, its integration into the curriculum remains limited. Furthermore, few studies evaluate how these tools affect students' diagnostic accuracy during clinical rotations. This study aims to evaluate available evidence regarding AI tools in medical students, identifying their effects on clinical education and clinical decision-making, as well as…",
+   "category": "medical_education",
+   "score": 5.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42247762?fc=20260609215449&ff=20260609215822&v=2.20.0",
+   "title_hash": "31db3410f0cc03ee2d17df154eff6e90",
+   "first_seen": "2026-06-10T01:58:11.669003+00:00",
+   "kept": false
   }
  ],
  "digests": [
