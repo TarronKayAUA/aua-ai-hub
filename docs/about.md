@@ -29,16 +29,11 @@ This site is informational. AI-generated summaries and descriptions may contain 
 
 ## The maintainer
 
-<div class="maintainer-card" markdown>
-
+<div class="maintainer-card">
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
-
-<div markdown>
-
-The AUA AI Hub is curated and maintained by **Dr. Tarron Kayalackakom**, Assistant Dean for Artificial Intelligence in Medical Education at the American University of Antigua College of Medicine and chair of the university's AI Governance Committee. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.
-
+<div class="maintainer-bio">
+<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean for Artificial Intelligence in Medical Education at the American University of Antigua College of Medicine and chair of the university's AI Governance Committee. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
 </div>
-
 </div>
 
 ## Contact

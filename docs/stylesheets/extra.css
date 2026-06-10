@@ -200,8 +200,18 @@
   flex: 0 0 6.5rem;
   width: 6.5rem;
   height: 6.5rem;
+  min-width: 6.5rem;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.maintainer-bio {
+  flex: 1;
+  min-width: 0;
+}
+
+.md-typeset .maintainer-bio p {
+  margin: 0;
 }
 
 @media screen and (max-width: 480px) {
