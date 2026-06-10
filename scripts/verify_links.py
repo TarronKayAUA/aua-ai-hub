@@ -58,9 +58,13 @@ def collect() -> list[tuple[str, str]]:
                 pairs.append((f"{yaml_rel}:{entry.get('name', '?')}", url))
     md_paths = []
     if "--all-docs" in sys.argv[1:]:
+        # Skip generated trees and the Exchange mirror: news rotates nightly
+        # and the Exchange body is community content whose links the owner
+        # does not maintain.
         md_paths = [
             p for p in (REPO / "docs").rglob("*.md")
             if "news" not in p.relative_to(REPO / "docs").parts
+            and p.name != "exchange.md"
         ]
     else:
         md_paths = [REPO / md_rel for md_rel in sys.argv[1:]]

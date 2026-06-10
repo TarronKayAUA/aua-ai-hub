@@ -11,6 +11,12 @@ Recent videos from a curated set of channels covering artificial intelligence de
 Cards link to YouTube; nothing plays on this site.
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=h001l-XUJJE" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/h001l-XUJJE/hqdefault.jpg" alt="Video: Claude Fable 5 Ultimate Test - Is THIS The Closest Thing to AGI?" loading="lazy">
+  <span class="video-card-title">Claude Fable 5 Ultimate Test - Is THIS The Closest Thing to AGI?</span>
+  <span class="video-card-meta">Bijan Bowen, June 10, 2026</span>
+  <span class="video-card-desc">This video tests Claude Fable 5&#x27;s artificial general intelligence capabilities with multimodal coding and explores its limits and application on Windows XP.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=haK1KoQWm18" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/haK1KoQWm18/hqdefault.jpg" alt="Video: Claude Fable 5 - Full 319 page Breakdown" loading="lazy">
   <span class="video-card-title">Claude Fable 5 - Full 319 page Breakdown</span>

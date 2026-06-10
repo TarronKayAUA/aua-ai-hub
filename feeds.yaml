@@ -100,7 +100,10 @@ categories:
 community:
   repo: TarronKayAUA/aua-ai-hub
   category_id: DIC_kwDOS17r5c4C-57B
-  items: 5
+  items: 5            # top-voted rail on the library page
+  board_items: 50     # posts mirrored onto the on-site Exchange page
+  body_chars: 4000    # per-post body cap; longer posts link out for the rest
+  exclude: [2]        # discussion numbers to omit (the welcome/how-to post)
 
 # Weekly digest settings. The digest is a second-stage highlights selection
 # over everything kept since the previous digest, generated on the configured

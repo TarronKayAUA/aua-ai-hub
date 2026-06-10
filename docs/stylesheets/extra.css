@@ -185,6 +185,15 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* === Community Exchange posts ============================================== */
+
+.exchange-meta {
+  display: block;
+  margin-top: -0.4rem;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
 /* === Maintainer card (About page) ========================================= */
 
 .maintainer-card {

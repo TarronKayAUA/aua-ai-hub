@@ -78,6 +78,10 @@ GENERATED_HEADER = (
 # (overrides/partials/comments.html) for generated content pages.
 COMMENTS_FRONT_MATTER = "---\ncomments: true\n---\n\n"
 COMMUNITY_INCLUDE = REPO / "includes" / "community-prompts.md"
+EXCHANGE_PAGE = REPO / "docs" / "prompts" / "exchange.md"
+NEW_DISCUSSION_URL = (
+    "https://github.com/TarronKayAUA/aua-ai-hub/discussions/new/choose"
+)
 
 PAGE_INTROS = {
     "general_ai": "Model releases, benchmarks, and developments in general "
@@ -463,25 +467,50 @@ def _video_grid_html(records: list[dict], extra_class: str = "") -> str:
 # --- community Prompt Exchange (GitHub Discussions) ----------------------------
 
 
+def _exchange_post_md(node: dict, body_chars: int) -> str:
+    """One Exchange post as site markdown. The body is community content:
+    HTML is escaped for safety, markdown (including code blocks) renders,
+    and the text is shown as posted, so site style rules do not apply."""
+    author = (node.get("author") or {}).get("login", "unknown")
+    created = parse_entry_date({"published": node.get("createdAt", "")})
+    date_str = fmt_date(created) if created else ""
+    replies = node.get("comments", {}).get("totalCount", 0)
+    body = html.escape(node.get("body", "")).strip()
+    truncated = ""
+    if len(body) > body_chars:
+        body = body[:body_chars].rsplit("\n", 1)[0]
+        truncated = (f"\n\n*(Post shortened; "
+                     f"[read the rest on GitHub]({node['url']}).)*")
+    return (
+        f"### [{md_escape(node['title'])}]({node['url']})\n\n"
+        f'<span class="exchange-meta">by **{author}**, {date_str}, '
+        f"**{node['upvoteCount']}** upvotes, {replies} replies</span>\n\n"
+        f"{body}{truncated}\n\n"
+        f"[Vote or reply on GitHub]({node['url']})\n"
+    )
+
+
 def update_community_prompts(config: dict, now: datetime, dry_run: bool,
                              verbose: bool) -> str:
-    """Refresh includes/community-prompts.md with the top-upvoted discussions
-    from the Prompt Exchange category. Keep-last-good on any failure."""
+    """Refresh the top-voted rail (includes/community-prompts.md) and the
+    full on-site Exchange board (docs/prompts/exchange.md) from the Prompt
+    Exchange Discussions category. Keep-last-good on any failure."""
     cfg = config.get("community")
     if not cfg:
         return "not configured"
     token = os.environ.get("GITHUB_TOKEN")
     fallback = ("No community prompts yet. Be the first to "
-                "[share one](https://github.com/TarronKayAUA/aua-ai-hub/discussions).")
+                f"[share one]({NEW_DISCUSSION_URL}).")
     try:
         if not token:
             raise RuntimeError("no GITHUB_TOKEN for the Discussions API")
         owner, name = cfg["repo"].split("/", 1)
         query = """
-        query($owner: String!, $name: String!, $categoryId: ID!) {
+        query($owner: String!, $name: String!, $categoryId: ID!, $n: Int!) {
           repository(owner: $owner, name: $name) {
-            discussions(first: 50, categoryId: $categoryId) { nodes {
-              title url upvoteCount author { login }
+            discussions(first: $n, categoryId: $categoryId) { nodes {
+              number title url upvoteCount createdAt body
+              author { login } comments { totalCount }
             } }
           }
         }"""
@@ -490,7 +519,8 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
             headers={"Authorization": f"Bearer {token}"},
             json={"query": query,
                   "variables": {"owner": owner, "name": name,
-                                "categoryId": cfg["category_id"]}},
+                                "categoryId": cfg["category_id"],
+                                "n": cfg.get("board_items", 50)}},
             timeout=30,
         )
         resp.raise_for_status()
@@ -498,42 +528,80 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
         if "errors" in data:
             raise ValueError(str(data["errors"])[:200])
         nodes = data["data"]["repository"]["discussions"]["nodes"]
-        nodes.sort(key=lambda n: -n["upvoteCount"])
+        excluded = set(cfg.get("exclude", []))
+        nodes = [n for n in nodes if n.get("number") not in excluded]
+        nodes.sort(key=lambda n: (-n["upvoteCount"], n.get("createdAt", "")))
+
+        # top-voted rail for the library page
         top = nodes[: cfg.get("items", 5)]
-        lines = [GENERATED_HEADER, ""]
+        rail = [GENERATED_HEADER, ""]
         if top:
-            lines.append(f"Top-voted community prompts as of {fmt_date(now)}, "
-                         "shown as posted and not yet reviewed:")
-            lines.append("")
+            rail.append(f"Top-voted community prompts as of {fmt_date(now)}, "
+                        "shown as posted and not yet reviewed:")
+            rail.append("")
             for n in top:
                 author = (n.get("author") or {}).get("login", "unknown")
-                lines.append(
-                    f"- [{md_escape(remove_dashes(n['title']))}]({n['url']}) "
+                rail.append(
+                    f"- [{md_escape(remove_dashes(n['title']))}](exchange.md) "
                     f"(by {author}, {n['upvoteCount']} upvotes)"
                 )
         else:
-            lines.append(fallback)
-        content = "\n".join(lines) + "\n"
+            rail.append(fallback)
+
+        # full on-site board
+        board = [
+            GENERATED_HEADER,
+            "",
+            "# Community Exchange",
+            "",
+            "Every prompt shared on the community board, mirrored here "
+            f"nightly (as of {fmt_date(now)}) and sorted by votes. Posts "
+            "appear as their authors wrote them and are not reviewed; the "
+            "best are tested and promoted into the "
+            "[reviewed library](index.md) with credit. Voting and replying "
+            "happen on GitHub and need a free "
+            "[GitHub account](https://github.com/signup).",
+            "",
+            f"[Share a prompt]({NEW_DISCUSSION_URL}){{ .md-button "
+            ".md-button--primary }",
+            "",
+        ]
+        if nodes:
+            body_chars = cfg.get("body_chars", 4000)
+            board.extend(_exchange_post_md(n, body_chars) for n in nodes)
+        else:
+            board.append(fallback)
+
         if dry_run:
             print(f"[dry-run] would write includes/community-prompts.md "
-                  f"({len(top)} items)")
+                  f"({len(top)} items) and docs/prompts/exchange.md "
+                  f"({len(nodes)} posts)")
         else:
             COMMUNITY_INCLUDE.parent.mkdir(parents=True, exist_ok=True)
-            COMMUNITY_INCLUDE.write_text(content, encoding="utf-8",
-                                         newline="\n")
-        return f"updated ({len(top)} of {len(nodes)} discussions)"
+            COMMUNITY_INCLUDE.write_text("\n".join(rail) + "\n",
+                                         encoding="utf-8", newline="\n")
+            EXCHANGE_PAGE.write_text("\n".join(board) + "\n",
+                                     encoding="utf-8", newline="\n")
+        return (f"updated (board {len(nodes)} posts, rail {len(top)}, "
+                f"{len(excluded)} excluded)")
     except (requests.RequestException, RuntimeError, ValueError,
             KeyError, TypeError) as exc:
         if verbose:
             print(f"  community prompts update failed: "
                   f"{type(exc).__name__}: {exc}")
-        if COMMUNITY_INCLUDE.exists():
-            return f"kept previous list ({type(exc).__name__})"
+        if COMMUNITY_INCLUDE.exists() and EXCHANGE_PAGE.exists():
+            return f"kept previous board ({type(exc).__name__})"
         if not dry_run:
             COMMUNITY_INCLUDE.parent.mkdir(parents=True, exist_ok=True)
-            COMMUNITY_INCLUDE.write_text(
-                GENERATED_HEADER + "\n\n" + fallback + "\n",
-                encoding="utf-8", newline="\n")
+            if not COMMUNITY_INCLUDE.exists():
+                COMMUNITY_INCLUDE.write_text(
+                    GENERATED_HEADER + "\n\n" + fallback + "\n",
+                    encoding="utf-8", newline="\n")
+            if not EXCHANGE_PAGE.exists():
+                EXCHANGE_PAGE.write_text(
+                    GENERATED_HEADER + "\n\n# Community Exchange\n\n"
+                    + fallback + "\n",
+                    encoding="utf-8", newline="\n")
         return f"unavailable ({type(exc).__name__})"
 
 

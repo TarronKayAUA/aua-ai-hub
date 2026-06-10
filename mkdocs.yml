@@ -75,7 +75,9 @@ nav:
       - Glossary: basics/glossary.md
       - Common Misconceptions: basics/misconceptions.md
   - Tools: tools/index.md
-  - Prompts: prompts/index.md
+  - Prompts:
+      - Library: prompts/index.md
+      - Community Exchange: prompts/exchange.md
   - Learning: learning/index.md
   - News:
       - This Week: news/this-week.md

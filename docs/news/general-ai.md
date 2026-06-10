@@ -13,6 +13,13 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">Anthropic&#x27;s Model Naming, Extrapolated</a>
+    <p class="news-card-summary">Analysis of Anthropic&#x27;s model naming convention provides insights into their future large language model development plans.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
     <a class="news-card-title" href="https://simonwillison.net/2026/Jun/9/claude-fable-5">Initial impressions of Claude Fable 5</a>
     <p class="news-card-summary">I didn&#x27;t have early access to today&#x27;s Claude Fable 5 release, but I&#x27;ve spent the past ~5.5 hours putting it through its paces.</p>

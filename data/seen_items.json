@@ -2684,6 +2684,31 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated",
+   "title_hash": "bf0a85c0c182511caa4137880b96c9ef",
+   "first_seen": "2026-06-10T21:33:27.653406+00:00",
+   "kept": true,
+   "title": "Anthropic's Model Naming, Extrapolated",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-10T18:45:20+00:00",
+   "summary": "Analysis of Anthropic's model naming convention provides insights into their future large language model development plans.",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=h001l-XUJJE",
+   "title_hash": "32ec0ce8ccf9785944c9616552261f52",
+   "first_seen": "2026-06-10T21:33:27.653406+00:00",
+   "kept": true,
+   "title": "Claude Fable 5 Ultimate Test - Is THIS The Closest Thing to AGI?",
+   "source": "Bijan Bowen",
+   "published": "2026-06-10T21:05:41+00:00",
+   "summary": "This video tests Claude Fable 5's artificial general intelligence capabilities with multimodal coding and explores its limits and application on Windows XP.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/h001l-XUJJE/hqdefault.jpg"
   }
  ],
  "digests": [

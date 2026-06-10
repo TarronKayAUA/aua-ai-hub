@@ -11,7 +11,7 @@ Two habits make every prompt here work better: give the model your actual materi
 
 ## Community Prompt Exchange
 
-Share prompts that work for you and vote on what others have shared. The exchange lives on the site's [discussion board](https://github.com/TarronKayAUA/aua-ai-hub/discussions), where you can post a prompt, describe the output it produced, and upvote the ones that earn it. Participating requires a free [GitHub account](https://github.com/signup); reading requires nothing. The top-voted community prompts appear below, refreshed nightly, and the best of them are tested, credited to their contributors, and promoted into the reviewed library above.
+Share prompts that work for you and vote on what others have shared. Browse everything on the [Community Exchange page](exchange.md), mirrored from the discussion board nightly; posting and voting require a free [GitHub account](https://github.com/signup), reading requires nothing. The best community prompts are tested, credited to their contributors, and promoted into the reviewed library above.
 
 --8<-- "includes/community-prompts.md"
 
