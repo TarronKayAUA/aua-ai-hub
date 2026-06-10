@@ -40,7 +40,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
   <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42261384?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Large language models in emergency and critical care medicine: a comprehensive review of applications, challenges, and future directions</a>
-  <p class="news-card-summary">Emergency and critical care medicine requires the rapid synthesis of heterogeneous clinical data under extreme time constraints. Early artificial intelligence tools lacked the flexibility to manage real-world patient heterogeneity. Large language models (LLMs) offer a paradigm shift by demonstrating advanced natural language understanding, cross-task generalization, and context-sensitive reasoning, thereby bridging the gap between fragmented algorithms and holistic clinical decision support.…</p>
+  <p class="news-card-summary">Emergency and critical care medicine requires the rapid synthesis of heterogeneous clinical data under extreme time constraints.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
@@ -50,36 +50,36 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95218">Re-Centering Clinical Documentation in the Age of AI Scribes: Four Aims of the Patient Chart Note</a>
-  <p class="news-card-summary">Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice. Historically, the chart note functioned as a clinician-centered cognitive tool for reasoning, teaching, and communication but has evolved into a multipurpose document shaped by administrative, regulatory, and financial demands, and is increasingly experienced as burdensome. The electronic health record, intended to improve efficiency, has introduced additional complexity and…</p>
+  <p class="news-card-summary">Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e64402">Perspectives of Premedical Students at a Medical University College in Malaysia Regarding Augmented Reality Integration in Anatomy Education: Cross-Sectional Study</a>
-  <p class="news-card-summary">Background: For novice anatomy learners, studying human anatomy using textbooks, 2D learning materials, and static anatomical models frequently causes challenges in understanding complex anatomical structures. Since access to dissected human donor bodies is limited in many premedical programs, researchers are concerned with exploring novel supplementary approaches to anatomy learning. This research explores the effectiveness of an augmented reality (AR) app in enhancing the anatomy learning…</p>
+  <p class="news-card-summary">Background: For novice anatomy learners, studying human anatomy using textbooks, 2D learning materials, and static anatomical models frequently causes challenges in understanding complex anatomical structures.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88511">AI Integration in Spanish Undergraduate Medical Education: National Cross-Sectional Study</a>
-  <p class="news-card-summary">Background: Artificial intelligence (AI) is reshaping clinical practice and redefining the competencies future physicians will need. International bodies, such as the Association of American Medical Colleges, have called for structured AI training in medical curricula. Despite growing international consensus, no systematic nationwide evaluation had been conducted in Spain prior to this study. Objective: This study aimed to characterize the presence, type, and curricular features of AI-related…</p>
+  <p class="news-card-summary">Background: Artificial intelligence (AI) is reshaping clinical practice and redefining the competencies future physicians will need.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42258369?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">360 Video-Based Virtual Reality for Preparing Medical Students for Body Donor Dissection: Randomized Controlled Trial</a>
-  <p class="news-card-summary">CONCLUSIONS: The 360° video-based VR intervention significantly reduced TA and was perceived as valuable for emotional and procedural preparation. The intervention shows promise as a preparatory tool for enhancing emotional and procedural readiness; however, its impact on objective educational outcomes was not assessed and warrants further investigation.</p>
+  <p class="news-card-summary">CONCLUSIONS: The 360° video-based VR intervention significantly reduced TA and was perceived as valuable for emotional and procedural preparation.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42257174?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Narrative Review on History of Point-of-Care Ultrasound Training in Critical Care</a>
-  <p class="news-card-summary">CONCLUSION: PoCUS training has advanced considerably but remains fragmented. Sustainable progress requires longitudinal, evidence-based curricula, validated assessment tools and global collaboration to ensure safe, high-quality training for future clinicians.</p>
+  <p class="news-card-summary">CONCLUSION: PoCUS training has advanced considerably but remains fragmented.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42257171?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Artificial intelligence in clinical physiology: System-wise applications in diagnostics, monitoring, and medical education</a>
-  <p class="news-card-summary">CONCLUSION: AI possesses the potential to revolutionize clinical physiology by facilitating predictive, personalized, and participatory healthcare. Nonetheless, its effective implementation necessitates ethical governance, inclusive datasets, and regulatory oversight to ensure equitable, transparent, and effective deployment.</p>
+  <p class="news-card-summary">CONCLUSION: AI possesses the potential to revolutionize clinical physiology by facilitating predictive, personalized, and participatory healthcare.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42255338?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Knowledge, Attitude, and Perception of Medical Students Toward AI-Based Learning: A Cross-Sectional Study</a>
-  <p class="news-card-summary">CONCLUSION: Medical students in KP exhibit strong enthusiasm and positive perceptions toward AI-based learning, yet their knowledge remains modest and uneven across training levels. This mismatch highlights the urgent need for structured AI education in undergraduate curricula. Incorporating formal training, workshops, and faculty development programs can bridge this gap and better prepare future physicians to responsibly integrate AI into clinical practice.</p>
+  <p class="news-card-summary">CONCLUSION: Medical students in KP exhibit strong enthusiasm and positive perceptions toward AI-based learning, yet their knowledge remains modest and uneven across training levels.</p>
 </div>
 </div>

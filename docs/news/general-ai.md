@@ -10,12 +10,12 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
   <a class="news-card-title" href="https://simonwillison.net/2026/Jun/9/claude-fable-5">Initial impressions of Claude Fable 5</a>
-  <p class="news-card-summary">I didn&#x27;t have early access to today&#x27;s Claude Fable 5 release, but I&#x27;ve spent the past ~5.5 hours putting it through its paces. My initial impressions are that this is something of a beast . It&#x27;s slow, expensive and has been quite happily churning through everything I&#x27;ve thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can&#x27;t do. First, let&#x27;s review the key characteristics. Anthropic claim that Claude Fable 5 offers the same…</p>
+  <p class="news-card-summary">I didn&#x27;t have early access to today&#x27;s Claude Fable 5 release, but I&#x27;ve spent the past ~5.5 hours putting it through its paces.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
   <a class="news-card-title" href="https://simonwillison.net/2026/Jun/9/llm">llm 0.32a3</a>
-  <p class="news-card-summary">Release: llm 0.32a3 Almost entirely written by the new Claude Fable 5, see my write-up for more details . Tags: projects , ai , generative-ai , llms , llm , claude-mythos</p>
+  <p class="news-card-summary">Release: llm 0.32a3 Almost entirely written by the new Claude Fable 5, see my write-up for more details .</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 9, 2026</span></div>
@@ -24,27 +24,26 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u0fflj/when_every_other_post_is_an_ai_generated">When every other post is an AI generated benchmark report, a question about the best model, or a slop-coded application or engine that pretends to be groundbreaking</a>
-  <p class="news-card-summary">submitted by /u/Honest-Kangaroo-1830 [link] [comments]</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 7, 2026</span></div>
   <a class="news-card-title" href="https://simonwillison.net/2026/Jun/7/datasette-agent-edit">datasette-agent-edit 0.1a0</a>
-  <p class="news-card-summary">Release: datasette-agent-edit 0.1a0 I&#x27;m planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files. Agentic editing of text is a little tricky to get right. My favorite published design for this is for the Claude text editor , which implements the following tools: view - view sections of a file, with line numbers added to every line. str_replace - find an exact…</p>
+  <p class="news-card-summary">Release: datasette-agent-edit 0.1a0 I&#x27;m planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 6, 2026</span></div>
   <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1typjmc/120_toks_on_12gb_vram_with_gemma_4_12b_qat_mtp">120 tok/s on 12GB VRAM with Gemma 4 12B QAT MTP</a>
-  <p class="news-card-summary">Google just released the QAT (Quantization-Aware Training) variant of their Gemma 4 models, including 12B, so it was only natural for me to benchmark it on my 12GB GPU since it fits entirely in VRAM. I was pleasantly surprised with the result! By using llama.cpp patched with the Gemma 4 MTP PR, and loading Unsloth&#x27;s gemma-4-12B-it-qat-GGUF quant and Google&#x27;s gemma-4-12B-it-qat-q4_0-unquantized-assistant QAT assistant / draft model, which I converted to GGUF and uploaded to HuggingFace as…</p>
+  <p class="news-card-summary">Google just released the QAT (Quantization-Aware Training) variant of their Gemma 4 models, including 12B, so it was only natural for me to benchmark it on my 12GB GPU since it fits entirely in VRAM.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 6, 2026</span></div>
   <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1tylzy2/coheres_unreleased_coding_model_early_access_for">Cohere&#x27;s unreleased coding model (early access for localllama)</a>
-  <p class="news-card-summary">Hey, Nick here from Cohere. Thanks for all the feedback on Command A+ the other week everyone. I read these threads all the time about other releases so it was fun to read one about our own :) we would like to do more of it. We actually have our first coding model we’re getting ready to release soon, and I wanted to give this community an opportunity to test it out and give feedback before we officially release it. Figured why not try something different and get you guys to help directly here?…</p>
+  <p class="news-card-summary">Hey, Nick here from Cohere.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 6, 2026</span></div>
   <a class="news-card-title" href="https://simonwillison.net/2026/Jun/6/micropython-wasm">micropython-wasm 0.1a2</a>
-  <p class="news-card-summary">Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section. Tags: python , sandboxing , webassembly , micropython</p>
+  <p class="news-card-summary">Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section.</p>
 </div>
 <div class="news-card">
   <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>

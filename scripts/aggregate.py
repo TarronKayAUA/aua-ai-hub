@@ -837,6 +837,41 @@ def prune_ledger(ledger: dict, now: datetime) -> int:
 # --- rendering --------------------------------------------------------------
 
 
+FEED_BOILERPLATE = [
+    re.compile(r"submitted by\s+/u/\S+", re.I),
+    re.compile(r"\[link\]", re.I),
+    re.compile(r"\[comments\]", re.I),
+    re.compile(r"The post .{0,120} appeared first on .{0,80}$", re.I),
+    re.compile(r"(Continue reading|Read more).{0,30}$", re.I),
+]
+
+
+def display_summary(record: dict) -> str:
+    """Render-time cleanup for summaries. Curator-written summaries are a
+    single sentence and pass through unchanged; raw feed excerpts (keyword
+    fallback and legacy records) get boilerplate stripped and are cut to
+    their first sentence, or a 200-character word boundary when no sentence
+    boundary exists. The full stored text in data/seen_items.json is never
+    modified."""
+    text = record.get("summary", "")
+    for pattern in FEED_BOILERPLATE:
+        text = pattern.sub(" ", text)
+    text = re.sub(r"\s+", " ", text).strip(" -:;,")
+    if not text:
+        return ""
+    sentences = re.split(r"(?<=[.?!])\s+", text)
+    first = sentences[0]
+    # Guard against false splits on abbreviations ("Dr.", "vs.") that leave
+    # a fragment too short to be a real sentence.
+    if len(first) < 25 and len(sentences) > 1:
+        first = f"{first} {sentences[1]}"
+    if not re.search(r"[.?!]$", first):
+        if len(first) > 200:
+            first = first[:200].rsplit(" ", 1)[0].rstrip(",;:")
+        first = first.rstrip("…") + "…"
+    return first
+
+
 def render_item_md(record: dict) -> str:
     published = datetime.fromisoformat(record["published"])
     title = html.escape(record["title"])
@@ -848,9 +883,10 @@ def render_item_md(record: dict) -> str:
         f'  <a class="news-card-title" href="{html.escape(record["url"])}">'
         f"{title}</a>",
     ]
-    if record.get("summary"):
+    summary = display_summary(record)
+    if summary:
         card.append(
-            f'  <p class="news-card-summary">{html.escape(record["summary"])}</p>'
+            f'  <p class="news-card-summary">{html.escape(summary)}</p>'
         )
     card.append("</div>")
     return "\n".join(card)
@@ -898,7 +934,7 @@ def digest_description_html(categories: dict, by_category: dict,
             continue
         parts.append(f"<h3>{escape(categories[key])}</h3><ul>")
         for r in records:
-            summary = escape(r.get("summary", ""))
+            summary = escape(display_summary(r))
             parts.append(
                 f'<li><a href="{escape(r["url"])}">{escape(r["title"])}</a> '
                 f"({escape(r['source'])}). {summary}</li>"
