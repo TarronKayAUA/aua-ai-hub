@@ -6,4 +6,19 @@ Every prompt shared on the community board, mirrored here nightly (as of June 10
 
 [Share a prompt](https://github.com/TarronKayAUA/aua-ai-hub/discussions/new/choose){ .md-button .md-button--primary }
 
-No community prompts yet. Be the first to [share one](https://github.com/TarronKayAUA/aua-ai-hub/discussions/new/choose).
+### [Test](https://github.com/TarronKayAUA/aua-ai-hub/discussions/3)
+
+<span class="exchange-meta">by **TarronKay**, June 10, 2026, **1** upvotes, 0 replies</span>
+
+Test
+
+[Vote or reply on GitHub](https://github.com/TarronKayAUA/aua-ai-hub/discussions/3)
+
+### [Hello](https://github.com/TarronKayAUA/aua-ai-hub/discussions/4)
+
+<span class="exchange-meta">by **TarronKay**, June 10, 2026, **1** upvotes, 1 replies</span>
+
+Hi
+
+[Vote or reply on GitHub](https://github.com/TarronKayAUA/aua-ai-hub/discussions/4)
+
