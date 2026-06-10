@@ -58,6 +58,12 @@ nav:
       - Common Misconceptions: basics/misconceptions.md
   - Tools: tools/index.md
   - Learning: learning/index.md
+  - News:
+      - This Week: news/this-week.md
+      - General AI: news/general-ai.md
+      - Medical Education: news/medical-education.md
+      - Clinical Practice: news/clinical-practice.md
+      - Archive: news/archive/index.md
   - Conferences: conferences.md
   - Announcements:
       - announcements/index.md

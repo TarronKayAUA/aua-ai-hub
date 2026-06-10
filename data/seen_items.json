@@ -1,0 +1,1076 @@
+{
+ "items": [
+  {
+   "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you",
+   "title_hash": "a8cc362f238676f22dd12366228b7e09",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02866-1",
+   "title_hash": "4b12cd6e21dfa1f3159c613b4998a245",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5",
+   "title_hash": "7e790c89f8823cb987b774c9b978cf38",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Initial impressions of Claude Fable 5",
+   "source": "Simon Willison's weblog",
+   "published": "2026-06-09T23:59:54+00:00",
+   "summary": "I didn't have early access to today's Claude Fable 5 release, but I've spent the past ~5.5 hours putting it through its paces. My initial impressions are that this is something of a beast . It's slow, expensive and has been quite happily churning through everything I've thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can't do. First, let's review the key characteristics. Anthropic claim that Claude Fable 5 offers the same…",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/9/llm",
+   "title_hash": "7c53fe009f580974f25a30fff890c977",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "llm 0.32a3",
+   "source": "Simon Willison's weblog",
+   "published": "2026-06-09T22:27:03+00:00",
+   "summary": "Release: llm 0.32a3 Almost entirely written by the new Claude Fable 5, see my write-up for more details . Tags: projects , ai , generative-ai , llms , llm , claude-mythos",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
+   "title_hash": "eed24c05fceb830d93b05096814b1523",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+   "title_hash": "d330dfe4f2096ad9a3ceb1716df5075a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+   "source": "Hugging Face blog",
+   "published": "2026-06-09T19:38:28+00:00",
+   "summary": "",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/anthropic-says-these-topics-are-too-dangerous-to-let-its-fable-5-model-talk-about",
+   "title_hash": "67f0dfce803952def111afd92845b763",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy",
+   "title_hash": "926deed90c03ea64f06998fb9a4a2651",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation",
+   "title_hash": "1fdb41222dfbd5c759f9aab3c396e4c3",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+   "title_hash": "257b92050bb769c8c9949b618fca3af5",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u16b2c/rick_morty",
+   "title_hash": "38eb12699969e1db9737588f9a89c32c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/apple/2026/06/apple-says-its-ai-is-still-private-even-when-its-running-on-googles-servers",
+   "title_hash": "7e22c9670e15fab66420d01068ecc51f",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+   "title_hash": "d19959de4f6992600902ef2e72d55dca",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07519",
+   "title_hash": "b5039d8db1536f09124172d98fc7e09c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07520",
+   "title_hash": "dd3a8462e8221d389160622a8eee130d",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07521",
+   "title_hash": "ac8049d89f9860488f9a7016a144101d",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07522",
+   "title_hash": "2b38a03c8b2778b15b965a64cf0eb1f9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07523",
+   "title_hash": "59eb054f0ea6c004bd02eb5aa5be029c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07524",
+   "title_hash": "9a73c1c9232137b0540539e7760ad6f5",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07525",
+   "title_hash": "a9714240bd7c00d2c666ae935c7c731b",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07526",
+   "title_hash": "3832c4f0024b9580dbd766f9ed896130",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07527",
+   "title_hash": "c7856a21e567ab1c2240db3934ffbc9f",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07528",
+   "title_hash": "1eea0696ab6b38e417b482e954d3f863",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07529",
+   "title_hash": "0e0c0dae253ec1c0fe345925fb61a85c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07530",
+   "title_hash": "6891bf7ee4ba8d24d314de749716e39c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07531",
+   "title_hash": "cf894a4abfd1e68b9a15002ca96fc562",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07532",
+   "title_hash": "3d2782bc1580150a850c4b33ed5cd633",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07533",
+   "title_hash": "07704a4c2a5c6bf263a62b88cfc3a4c0",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07535",
+   "title_hash": "e3781d265901748d4b837d12684cc4a1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07537",
+   "title_hash": "4ae8e9bb76b7fd65e09f512f5607f1e2",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07540",
+   "title_hash": "6d08e61cf2025de542f4db87f47e97d4",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07547",
+   "title_hash": "ac6f47f4468e9063d0a61ded9012ce53",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07555",
+   "title_hash": "941715a47ba43f143334d8cc8ff767a1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07559",
+   "title_hash": "6700f49776a26ed6209bc1c5293492ae",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07560",
+   "title_hash": "0b46bf767b7706b10678741390b491ed",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07608",
+   "title_hash": "5bf767a2cea2ecc3fe79558ecf71f258",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07753",
+   "title_hash": "70e8ae931d7fe93636b4b1b095dc913a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.07778",
+   "title_hash": "0bca3a7af216255585911ace4089ead9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/github-ci-hf-jobs",
+   "title_hash": "50cfa7c48688bec62640aff6f07b65ff",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02848-3",
+   "title_hash": "b7b158e22372eb9296df1caf625e8006",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02865-2",
+   "title_hash": "b8e20aa9c57234c7e63405d3c6090f52",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02856-3",
+   "title_hash": "95c93b62c68b5b2b8eb4906fae5ed4d1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04482-8",
+   "title_hash": "12c254f857dbe6795f3f69f7fdca9dec",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04429-z",
+   "title_hash": "c81afa26b5433a14b2745e0e495fc915",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/8/wwdc",
+   "title_hash": "1a74dfdd0e7595fd12084a669cdd44da",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0ixu0/me_arguing_with_an_ai_bot_who_just_posted",
+   "title_hash": "b2a51d0eecdb55cba3ca11cc93f3b2f1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e80574",
+   "title_hash": "b7f9730e4529ecd0e56e6be4391c50a0",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-08T19:45:12+00:00",
+   "summary": "Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential. Machine learning models are increasingly used to assess prognosis; however, developing systems that combine high discrimination with clear, clinically interpretable reasoning remains challenging. Objective: This study aimed to develop deep learning models that predict 5-year mortality in NSCLC using data from the…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e95218",
+   "title_hash": "244c9288d1917186c97c1bbb4ff48f97",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Re-Centering Clinical Documentation in the Age of AI Scribes: Four Aims of the Patient Chart Note",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-08T19:45:10+00:00",
+   "summary": "Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice. Historically, the chart note functioned as a clinician-centered cognitive tool for reasoning, teaching, and communication but has evolved into a multipurpose document shaped by administrative, regulatory, and financial demands, and is increasingly experienced as burdensome. The electronic health record, intended to improve efficiency, has introduced additional complexity and…",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e64402",
+   "title_hash": "94b2851590491a5a248ab2329374d0fc",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Perspectives of Premedical Students at a Medical University College in Malaysia Regarding Augmented Reality Integration in Anatomy Education: Cross-Sectional Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-08T19:45:10+00:00",
+   "summary": "Background: For novice anatomy learners, studying human anatomy using textbooks, 2D learning materials, and static anatomical models frequently causes challenges in understanding complex anatomical structures. Since access to dissected human donor bodies is limited in many premedical programs, researchers are concerned with exploring novel supplementary approaches to anatomy learning. This research explores the effectiveness of an augmented reality (AR) app in enhancing the anatomy learning…",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e88511",
+   "title_hash": "c44c1e3cea5e55824ec08ffc67726350",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "AI Integration in Spanish Undergraduate Medical Education: National Cross-Sectional Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-08T19:30:14+00:00",
+   "summary": "Background: Artificial intelligence (AI) is reshaping clinical practice and redefining the competencies future physicians will need. International bodies, such as the Association of American Medical Colleges, have called for structured AI training in medical curricula. Despite growing international consensus, no systematic nationwide evaluation had been conducted in Spain prior to this study. Objective: This study aimed to characterize the presence, type, and curricular features of AI-related…",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://arstechnica.com/apple/2026/06/say-hi-to-siri-ai-apple-announces-new-more-conversational-voice-assistant",
+   "title_hash": "4f3a974a38438d80470150dc0250452a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture",
+   "title_hash": "f0fcc5cdecf51121fe18ffa07bf4f08b",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/gemini-3-5-and-antigravity-come-to-google-notebooklm",
+   "title_hash": "db557affdb54cfd85c4d764daa1babf9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/06/for-the-2nd-time-in-weeks-microsoft-packages-laced-with-credential-stealer",
+   "title_hash": "d06021216099464563122d7e9bf5c6f4",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e83927",
+   "title_hash": "a3ee60496eaac4c501bf4568fe5bcc94",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0fflj/when_every_other_post_is_an_ai_generated",
+   "title_hash": "9a6e1ab5e626cff048e125f3447ec397",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "When every other post is an AI generated benchmark report, a question about the best model, or a slop-coded application or engine that pretends to be groundbreaking",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-08T17:56:59+00:00",
+   "summary": "submitted by /u/Honest-Kangaroo-1830 [link] [comments]",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0buhm/xiaomi_just_claimed_1000_tps_on_a_1t_model_using",
+   "title_hash": "a5526e860694f76841192abfb4ba85b6",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+   "title_hash": "5d66cde54def65feeb0578a499a20246",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/chat-is-dead-openai-preps-overhaul-of-chatgpt",
+   "title_hash": "0cd847a899efb2384da07b68107ce7c1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/science/2026/06/the-weather-and-climate-science-ai-revolution-isnt-revolutionary",
+   "title_hash": "f06959069ae437285df1eafee032e25e",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/openenv-agentic-rl",
+   "title_hash": "21e026790316509df6df3ba8498c366e",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02840-x",
+   "title_hash": "b4713e15673d9596e0dabb5a5e5da477",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02790-4",
+   "title_hash": "a1e1114c89f994e83f1eb5ba4c66ede6",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02867-0",
+   "title_hash": "43010a49098629c9e38fa3255856e2b3",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02879-w",
+   "title_hash": "5623b6f13290f94354d49366cd7afd07",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04439-x",
+   "title_hash": "57f3b60f84c3b50d2622736382a61dd1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04428-0",
+   "title_hash": "ee316675c2888e81312937a91e41b307",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04440-4",
+   "title_hash": "f4e22879c9e59bd119fd3e62419311eb",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04469-5",
+   "title_hash": "6497a88137b626c34f56605b71d7e9aa",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit",
+   "title_hash": "d89e4be049a2c272c1e2c8376411ce83",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "datasette-agent-edit 0.1a0",
+   "source": "Simon Willison's weblog",
+   "published": "2026-06-07T23:56:38+00:00",
+   "summary": "Release: datasette-agent-edit 0.1a0 I'm planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files. Agentic editing of text is a little tricky to get right. My favorite published design for this is for the Claude text editor , which implements the following tools: view - view sections of a file, with line numbers added to every line. str_replace - find an exact…",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzbcyp/llamacpp_gemma4_mtp_support_merged",
+   "title_hash": "6d88adb88df005272266220afbe64c4e",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/school-shooting-survivor-sues-ai-gun-detection-firm-after-system-failed-to-spot-weapon",
+   "title_hash": "efd9117b43bc56dde4914c0b3e440189",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tz5ffp/you_dont_need_a_gpu_to_run_gemma426ba4b",
+   "title_hash": "7bf5ae33fa7bcdc565b7844f25793fe5",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04479-3",
+   "title_hash": "b30937dce9130354fa67cdd05b8de823",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tys1wj/another_1click_admin_account_takeover_in",
+   "title_hash": "d5fdbedb179e6b0a23856dd39658c69d",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1typjmc/120_toks_on_12gb_vram_with_gemma_4_12b_qat_mtp",
+   "title_hash": "7cf53dfe45fed9629999e6d4d2091768",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "120 tok/s on 12GB VRAM with Gemma 4 12B QAT MTP",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-06T18:53:19+00:00",
+   "summary": "Google just released the QAT (Quantization-Aware Training) variant of their Gemma 4 models, including 12B, so it was only natural for me to benchmark it on my 12GB GPU since it fits entirely in VRAM. I was pleasantly surprised with the result! By using llama.cpp patched with the Gemma 4 MTP PR, and loading Unsloth's gemma-4-12B-it-qat-GGUF quant and Google's gemma-4-12B-it-qat-q4_0-unquantized-assistant QAT assistant / draft model, which I converted to GGUF and uploaded to HuggingFace as…",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tylzy2/coheres_unreleased_coding_model_early_access_for",
+   "title_hash": "4e354d2003353c9e7ea5dd71958c8f38",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Cohere's unreleased coding model (early access for localllama)",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-06T16:36:41+00:00",
+   "summary": "Hey, Nick here from Cohere. Thanks for all the feedback on Command A+ the other week everyone. I read these threads all the time about other releases so it was fun to read one about our own :) we would like to do more of it. We actually have our first coding model we’re getting ready to release soon, and I wanted to give this community an opportunity to test it out and give feedback before we officially release it. Figured why not try something different and get you guys to help directly here?…",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm",
+   "title_hash": "214a30211ffd4acdbe24db13b587dd14",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "micropython-wasm 0.1a2",
+   "source": "Simon Willison's weblog",
+   "published": "2026-06-06T04:26:06+00:00",
+   "summary": "Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section. Tags: python , sandboxing , webassembly , micropython",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox",
+   "title_hash": "c843cdf1bd172bdd25c9101362343962",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://devblogs.microsoft.com/oldnewthing/20260605-01?p=112391",
+   "title_hash": "9957e5e5075b1f9f285a320c07e9f1d2",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode",
+   "title_hash": "abc9b462334033fbe2de95f2314f207e",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txxgpq/openlumara_a_different_kind_of_ai_agent_written",
+   "title_hash": "1908824dbe6969e7893509f5fa8ab6a8",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e84194",
+   "title_hash": "4b0837c2e5a09be73dbbeddeee6a78c8",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Knowledge, Attitudes, Practices, Barriers, and Promotional Strategies Related to Clinical Data Interchange Standards Consortium Adoption Among Clinical Data Management Professionals: Semiqualitative Interview Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-05T19:30:16+00:00",
+   "summary": "Background: National Medical Products Administration of China has actively encouraged organizations to adopt the Clinical Data Interchange Standards Consortium (CDISC) for clinical data submission since 2020. Objective: This study aimed to explore the knowledge, attitudes, practices, and barriers to using the CDISC among data managers and to propose strategies for promoting CDISC use in China. Methods: A total of 38 participants as leaders or experts of data management departments and teams…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e81152",
+   "title_hash": "b657f629fbe4b598471722e370300ed1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txufl9/dont_act_like_yall_aint_thinking_it_im_just",
+   "title_hash": "1241af33efd553373a07fffcf6c5ea43",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e87803",
+   "title_hash": "2ecadcd34731527fab2e4b2db7ec426a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms",
+   "title_hash": "8581284251fd79946cbc2070b2af9bd0",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/we-pissed-off-a-lot-of-people-giant-data-center-plan-cut-50-amid-protests",
+   "title_hash": "c494eca9c3bbe2c5b2a87d158102c795",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e77351",
+   "title_hash": "fe405a51cb0eb2ec5fca977799fbbfb6",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e83475",
+   "title_hash": "b9366a14bc994a1fb20ca9d26e4c8b9c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Adoption and Use of Social Media in Health Care Among Medical Residents: Cross-Sectional Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-05T18:00:23+00:00",
+   "summary": "Background: Social media apps are widely used by health care professionals despite security and regulatory risks. Identifying factors associated with this use is important for developing effective risk-reduction strategies. Objective: This study aimed to investigate how medical residents use 6 popular social media apps in professional tasks and to identify factors influencing their adoption in health care, using the validated Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) model.…",
+   "category": "medical_education",
+   "score": 1.0
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4",
+   "title_hash": "9b2b2c0a5433d10e5d60433619495611",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txpeo0/gemma_4_with_quantizationaware_training",
+   "title_hash": "41b437b8b6eb76aa5dad41cb168a140a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/06/the-fitbit-air-is-great-but-googles-ai-is-too-nice-to-be-your-coach",
+   "title_hash": "e8a5d1a7c53b2db310e639fdb91f2ac9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/5/andreas-kling",
+   "title_hash": "6bfb2c63a3a4c8046d6f01db947fed1a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://github.com/zdk/lowfat",
+   "title_hash": "019cd9378c4a9272f1ded50464505e47",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://passo.uno/fine-tuning-docs-llm",
+   "title_hash": "31883b660837cd016c053be971dba723",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tx9tf2/finally_finished_my_llm_server_epyc_9575f_4_rtx",
+   "title_hash": "481c9b48a1663413fb3df699c4580124",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tx4yjo/finally",
+   "title_hash": "205c3e16c66ff0b845700155d0394219",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04476-6",
+   "title_hash": "f931b0821e2e848af23d1a1fd1db671a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics",
+   "title_hash": "92b1c81b11ad768683a2f7629aede784",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/the-skeptics-guide-to-humanoid-robots-going-viral-on-the-internet",
+   "title_hash": "726722ed086e1abe5dd493287a0078f8",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e80403",
+   "title_hash": "41d07ac38538b668d03ab15874636597",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Histopathological Assessment of Myocardial Ischemia-Reperfusion Injury Using Transformer-Based Artificial Intelligence: Model Comparison Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-04T20:45:19+00:00",
+   "summary": "Background: Myocardial ischemia-reperfusion injury (MIRI) poses diagnostic challenges due to complex histopathological changes. Objective: This study aimed to develop an intelligent framework for evaluating MIRI on hematoxylin-eosin-stained slides, to compare major deep learning architectures, and to determine the advantages of transformer models across multiple interventions and time points. Methods: A total of 1280 whole-slide images (~62,000 tiles) from public datasets were analyzed across…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/these-llms-are-the-best-at-resisting-russian-propaganda",
+   "title_hash": "9c48ac1e75186140f8b25a5665421d52",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e77476",
+   "title_hash": "3bd25f19c6f36f723fe421c500a8a258",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Development and Validation of a Scale for Measuring Leadership and Managerial Competencies of Middle Managers in Health Care and Medical Education in the Gulf Region: Cross-Sectional Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-04T20:30:20+00:00",
+   "summary": "Background: The Kingdom of Saudi Arabia and the Kingdom of Bahrain are transforming their health care systems toward more self-sustained, autonomous systems. Effective leadership at all management levels, particularly middle management, is critical for operational success. Objective: The study aimed to develop a feasible, reliable, and valid scale for measuring leadership and managerial competencies of middle managers in health care and medical education in the Gulf region. Methods: A mixed…",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e78471",
+   "title_hash": "a37ee7a9219ff053397142d056423b74",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Early Immunological Biomarkers for Personalized Treatment Selection in Severe COVID-19: Post Hoc Machine Learning Analysis of a Randomized Clinical Trial",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-04T20:30:20+00:00",
+   "summary": "Background: Severe COVID-19 is a global health concern despite continuous vaccination campaigns because current therapies, such as dexamethasone and remdesivir, do not considerably improve immune function, especially in high-risk individuals. SARS-CoV-2-specific T cells (CoV-2-STs) from vaccinated or convalescent donors are a promising new treatment that can enhance clinical outcomes and viral-specific immunity. CoV-2-STs improve T cell proliferation and recovery without raising safety…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e81052",
+   "title_hash": "b01dc4b34a650490b4147e0245398bd2",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Physical Attractiveness and Chances of Being Invited to Interview With a Medical Residency Program: Retrospective Cohort Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-04T20:15:18+00:00",
+   "summary": "Background: Applicants participating in the Residency Match generally submit a photograph through the Electronic Residency Application Service (ERAS). Studies demonstrate that subjectively more attractive applicants are more likely to succeed during job recruitment, including a paper related to the Residency Match. Objective: This study further investigates the relationship between an applicant’s attractiveness and the likelihood that they are invited to interview with a residency program to…",
+   "category": "medical_education",
+   "score": 1.0
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e93710",
+   "title_hash": "bf3e19c9e7a35d520f52af826312c945",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "AI-Assisted Formative Assessment in Clinical Education: From Algorithms to Agency",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-04T20:15:18+00:00",
+   "summary": "Artificial intelligence (AI) is rapidly reshaping clinical education by embedding assessment and feedback into everyday learning activities. Medical students can now use machine learning dashboards, generative AI, large language models, and emerging agentic systems to practice clinical reasoning, communication, and procedural skills while receiving individualized feedback within seconds. However, the availability of more data and more feedback does not necessarily produce better learning. This…",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e87368",
+   "title_hash": "c803a3a24833efe90d2b0a6d7e3a3c85",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/elon-musk-tries-again-to-escape-ftc-audits-of-x-data-handling",
+   "title_hash": "df4e78dba73f45d99f079472057cf0e9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+   "title_hash": "9886dd0e772b8a6d8dfd6640d33241f7",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version",
+   "title_hash": "0f8491c29669b5cbdea3d6f9c19fbe37",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e71843",
+   "title_hash": "cc38dbda2e99786fd9cce5e67315731b",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "From Classroom to Operating Room: Addressing Shortcomings in Gender Affirmation Surgical Education",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-04T16:00:28+00:00",
+   "summary": "The prevalence of American youth identifying as transgender has doubled in the past five years, emphasizing the crucial role of gender affirmation surgery (GAS) in treating gender dysphoria. However, the current health care infrastructure faces challenges in meeting the escalating demand for GAS interventions. Transgender and gender-diverse patients encounter barriers such as travel and extended waitlists for specialized surgeons. This viewpoint highlights the insufficient exposure to GAS in…",
+   "category": "medical_education",
+   "score": 1.0
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e78931",
+   "title_hash": "27d001eeffc5562c237b404db48890e7",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Advancing Gastrointestinal Cancer Risk Prediction With Patient-Centered Machine Learning: Machine Learning Modeling Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-04T16:00:28+00:00",
+   "summary": "Background: Gastrointestinal (GI) cancers are a significant health concern in South Korea. Recently, machine learning (ML) models have emerged as powerful tools to support early screening efforts and identify people at risk before disease onset. However, the low incidence of GI malignancies in prospective cohorts leads to severe class imbalance, often causing ML models to favor the majority “healthy” class at the expense of clinical sensitivity. Objective: This study aimed to evaluate class…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twrvts/nvidias_been_paying_shills_on_linkedin",
+   "title_hash": "9d134d0263e4634fb5a17419d398e425",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.tumblr.com/dreaminginthedeepsouth/817865966907228160/darren-oconnor-timnit-gebru-was-fired-from",
+   "title_hash": "61005403090df065f65fe8f5222f1ef9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twqvmp/today_made_me_realize_just_how_bad_things_have",
+   "title_hash": "a623a8703c710986a406b78ad8a4481b",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arena.ai/blog/agent-arena-methodology",
+   "title_hash": "e2c6a05e6c4b36a6548b365f681c63af",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arena.ai/blog/agent-mode",
+   "title_hash": "9f3a0538af66dc29a94b8f95d5b5ed29",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twpv8r/vibeos_fully_hallucinated_operating_system",
+   "title_hash": "42c72a4c7dea5b6fcb59de0d70a5de93",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twptw2/kvarn_new_kvcache_quant_from_huawei_35_kv_cache",
+   "title_hash": "caf80da62a1a0a068347bd175f9a3fa8",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/how-data-center-operators-are-tackling-their-water-use-problems",
+   "title_hash": "f04e58515ce560f6f4bb5cd73ffe0893",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twla1k/nvidianvidianemotron3ultra550ba55bbf16_hugging",
+   "title_hash": "f02bed93447de8c94070b4ca09a7fc04",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://biohub.org/news/world-model-of-protein-biology",
+   "title_hash": "4066c8248653552f2317f04dfe684653",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tw8eul/me_visiting_this_sub",
+   "title_hash": "2fc86f385ba96ba1b1538a714c11ccf4",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/hf-cli-for-agents",
+   "title_hash": "7c7184334d204c0ddbd4820236ff2693",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tw4tmf/new_google_gemma_4_12b_claims_near26b_performance",
+   "title_hash": "3ce7d12cb097dd477349d9620f11b511",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e78649",
+   "title_hash": "b7fba403c4ee0c78e0067e9130ec4ff0",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/google-ordered-to-put-clearer-links-in-ai-search-and-let-uk-publishers-opt-out",
+   "title_hash": "be2be256c77a8355ddd8fe4a2758489c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e71572",
+   "title_hash": "0658a2bc211952bc5ef8dcc058f166a1",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e86265",
+   "title_hash": "1fb8a38cfdb35b9bf67c95872521285e",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e82545",
+   "title_hash": "b10478e7b0006ef74a9203169408125c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Clinical Note Generation From Doctor-Patient Conversations Using Parameter-Efficient Fine-Tuning Large Language Models: Comparative Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-03T19:45:16+00:00",
+   "summary": "Background: Clinical note documentation is a vital yet time-intensive task in health care. While advancements in natural language processing have transformed many domains, generating accurate summaries of doctor-patient conversations remains underexplored due to the limited availability of open-source datasets. Large language models (LLMs), with their training on vast datasets, present a promising solution to this challenge. Objective: Precision in clinical summarization is crucial, as it…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tvzzml/more_gemma_4_models_incoming",
+   "title_hash": "b5e4705340ded9e0c761965a8f5338ca",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/06/googles-new-gemma-4-open-ai-model-is-sized-for-your-laptop",
+   "title_hash": "dad1b5526523712f2310816dc4db8035",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released",
+   "title_hash": "8be990a6272b1519e570c08d027adce5",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e77872",
+   "title_hash": "52772f283b888a56020e658aff92b96c",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Development and Interpretability Analysis of a Stacking Ensemble Model for Early Prediction of Nutritional Risk in Intensive Care Unit Patients: Retrospective Cohort Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-03T19:00:24+00:00",
+   "summary": "Background: Malnutrition in critically ill patients is associated with increased morbidity and mortality, yet traditional screening tools such as the modified NUTRIC (mNUTRIC) score often rely on subjective assessments or delayed data, limiting their utility for early intervention in the dynamic intensive care unit (ICU) environment. Real-time, data-driven approaches using electronic health records offer a promising solution for automated and objective risk stratification. Objective: This…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/trumps-ai-executive-order-may-not-prevent-dangerous-deployments",
+   "title_hash": "19e017a38268bfb0097556353de0d436",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tvw2ej/introducing_gemma_4_12b_a_unified_encoderfree",
+   "title_hash": "a4e220645dff14ecb67c15e1f5a40adc",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b",
+   "title_hash": "b099c148fc459c403a14cc0f5c532497",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tvtn6m/googlegemma412b_hugging_face",
+   "title_hash": "b0b39bf7b6d1a2e40b8974b1ed1c0b32",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/inside-metas-attempts-to-play-catch-up-with-ai",
+   "title_hash": "7f8c65e9bcbe97586a62e67592eea3c9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+   "title_hash": "15ce6eadb97e81a12e02d84bdd57dc45",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage",
+   "title_hash": "e52b3a7ba99b268ea092bb1cff726d8e",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tvhv4b/calling_it_now_microsoft_is_buying_unsloth",
+   "title_hash": "f02eb4481ed7038c8fc72b486e7de93a",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+   "title_hash": "3b51f7a2221c678b7befa45b979369c9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models",
+   "title_hash": "27f05b589566dd49d5b50642f8cc19c0",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e90827",
+   "title_hash": "152ddec56ec6487c25fb910a54e227fd",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e90011",
+   "title_hash": "c476d2d4ead5e8c7c9b5ba6a67258498",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": true,
+   "title": "Novel Online Platform for Trauma Care-Integrating Trauma Phenotypes to Optimize the Trauma and Injury Severity Score Model: Retrospective Cohort Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-02T21:00:37+00:00",
+   "summary": "Background: Severe trauma remains a leading cause of admission to the intensive care unit. The Trauma and Injury Severity Score (TRISS) is an established standard for predicting outcomes and benchmarking the quality of trauma care globally. However, the TRISS model has some limitations when used for benchmarking trauma care. Objective: This study aimed to determine whether machine learning-derived trauma phenotypes can complement the TRISS via multivariable modeling to improve in-hospital…",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e85419",
+   "title_hash": "3ea2cd10e93e9fabe2394cc9a4e962b5",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython",
+   "title_hash": "9cad96ad56215b858106cfb54041b7f9",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/2/sighting-367841339",
+   "title_hash": "5c37214c5fbc9d6946ac921e9976d231",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/U.S._Army_Corps_of_Engineers_Bay_Model",
+   "title_hash": "8aa550079f517435e3ab7c0ef2552601",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/Hcompany/holo31",
+   "title_hash": "9e78f955d2b905b2f8fc9b32fba6b1ae",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor",
+   "title_hash": "109dade2ee34ed8f2c08d872bc696158",
+   "first_seen": "2026-06-10T01:31:38.274181+00:00",
+   "kept": false
+  }
+ ],
+ "digests": [
+  {
+   "guid": "aua-ai-digest-2026-W24",
+   "title": "AUA AI Hub Digest: Week of June 8, 2026",
+   "link": "https://tarronkayaua.github.io/aua-ai-hub/news/this-week/",
+   "pub_date": "Wed, 10 Jun 2026 01:31:38 +0000",
+   "description": "<h3>General AI</h3><ul><li><a href=\"https://simonwillison.net/2026/Jun/9/claude-fable-5\">Initial impressions of Claude Fable 5</a> (Simon Willison's weblog). I didn't have early access to today's Claude Fable 5 release, but I've spent the past ~5.5 hours putting it through its paces. My initial impressions are that this is something of a beast . It's slow, expensive and has been quite happily churning through everything I've thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can't do. First, let's review the key characteristics. Anthropic claim that Claude Fable 5 offers the same…</li><li><a href=\"https://simonwillison.net/2026/Jun/9/llm\">llm 0.32a3</a> (Simon Willison's weblog). Release: llm 0.32a3 Almost entirely written by the new Claude Fable 5, see my write-up for more details . Tags: projects , ai , generative-ai , llms , llm , claude-mythos</li><li><a href=\"https://huggingface.co/blog/ServiceNow-AI/code-switching\">Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech</a> (Hugging Face blog). </li><li><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0fflj/when_every_other_post_is_an_ai_generated\">When every other post is an AI generated benchmark report, a question about the best model, or a slop-coded application or engine that pretends to be groundbreaking</a> (r/LocalLLaMA weekly top). submitted by /u/Honest-Kangaroo-1830 [link] [comments]</li><li><a href=\"https://simonwillison.net/2026/Jun/7/datasette-agent-edit\">datasette-agent-edit 0.1a0</a> (Simon Willison's weblog). Release: datasette-agent-edit 0.1a0 I'm planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files. Agentic editing of text is a little tricky to get right. My favorite published design for this is for the Claude text editor , which implements the following tools: view - view sections of a file, with line numbers added to every line. str_replace - find an exact…</li><li><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1typjmc/120_toks_on_12gb_vram_with_gemma_4_12b_qat_mtp\">120 tok/s on 12GB VRAM with Gemma 4 12B QAT MTP</a> (r/LocalLLaMA weekly top). Google just released the QAT (Quantization-Aware Training) variant of their Gemma 4 models, including 12B, so it was only natural for me to benchmark it on my 12GB GPU since it fits entirely in VRAM. I was pleasantly surprised with the result! By using llama.cpp patched with the Gemma 4 MTP PR, and loading Unsloth's gemma-4-12B-it-qat-GGUF quant and Google's gemma-4-12B-it-qat-q4_0-unquantized-assistant QAT assistant / draft model, which I converted to GGUF and uploaded to HuggingFace as…</li><li><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tylzy2/coheres_unreleased_coding_model_early_access_for\">Cohere's unreleased coding model (early access for localllama)</a> (r/LocalLLaMA weekly top). Hey, Nick here from Cohere. Thanks for all the feedback on Command A+ the other week everyone. I read these threads all the time about other releases so it was fun to read one about our own :) we would like to do more of it. We actually have our first coding model we’re getting ready to release soon, and I wanted to give this community an opportunity to test it out and give feedback before we officially release it. Figured why not try something different and get you guys to help directly here?…</li><li><a href=\"https://simonwillison.net/2026/Jun/6/micropython-wasm\">micropython-wasm 0.1a2</a> (Simon Willison's weblog). Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section. Tags: python , sandboxing , webassembly , micropython</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://mededu.jmir.org/2026/1/e95218\">Re-Centering Clinical Documentation in the Age of AI Scribes: Four Aims of the Patient Chart Note</a> (JMIR Medical Education). Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice. Historically, the chart note functioned as a clinician-centered cognitive tool for reasoning, teaching, and communication but has evolved into a multipurpose document shaped by administrative, regulatory, and financial demands, and is increasingly experienced as burdensome. The electronic health record, intended to improve efficiency, has introduced additional complexity and…</li><li><a href=\"https://mededu.jmir.org/2026/1/e64402\">Perspectives of Premedical Students at a Medical University College in Malaysia Regarding Augmented Reality Integration in Anatomy Education: Cross-Sectional Study</a> (JMIR Medical Education). Background: For novice anatomy learners, studying human anatomy using textbooks, 2D learning materials, and static anatomical models frequently causes challenges in understanding complex anatomical structures. Since access to dissected human donor bodies is limited in many premedical programs, researchers are concerned with exploring novel supplementary approaches to anatomy learning. This research explores the effectiveness of an augmented reality (AR) app in enhancing the anatomy learning…</li><li><a href=\"https://mededu.jmir.org/2026/1/e88511\">AI Integration in Spanish Undergraduate Medical Education: National Cross-Sectional Study</a> (JMIR Medical Education). Background: Artificial intelligence (AI) is reshaping clinical practice and redefining the competencies future physicians will need. International bodies, such as the Association of American Medical Colleges, have called for structured AI training in medical curricula. Despite growing international consensus, no systematic nationwide evaluation had been conducted in Spain prior to this study. Objective: This study aimed to characterize the presence, type, and curricular features of AI-related…</li><li><a href=\"https://mededu.jmir.org/2026/1/e83475\">Adoption and Use of Social Media in Health Care Among Medical Residents: Cross-Sectional Study</a> (JMIR Medical Education). Background: Social media apps are widely used by health care professionals despite security and regulatory risks. Identifying factors associated with this use is important for developing effective risk-reduction strategies. Objective: This study aimed to investigate how medical residents use 6 popular social media apps in professional tasks and to identify factors influencing their adoption in health care, using the validated Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) model.…</li><li><a href=\"https://mededu.jmir.org/2026/1/e77476\">Development and Validation of a Scale for Measuring Leadership and Managerial Competencies of Middle Managers in Health Care and Medical Education in the Gulf Region: Cross-Sectional Study</a> (JMIR Medical Education). Background: The Kingdom of Saudi Arabia and the Kingdom of Bahrain are transforming their health care systems toward more self-sustained, autonomous systems. Effective leadership at all management levels, particularly middle management, is critical for operational success. Objective: The study aimed to develop a feasible, reliable, and valid scale for measuring leadership and managerial competencies of middle managers in health care and medical education in the Gulf region. Methods: A mixed…</li><li><a href=\"https://mededu.jmir.org/2026/1/e81052\">Physical Attractiveness and Chances of Being Invited to Interview With a Medical Residency Program: Retrospective Cohort Study</a> (JMIR Medical Education). Background: Applicants participating in the Residency Match generally submit a photograph through the Electronic Residency Application Service (ERAS). Studies demonstrate that subjectively more attractive applicants are more likely to succeed during job recruitment, including a paper related to the Residency Match. Objective: This study further investigates the relationship between an applicant’s attractiveness and the likelihood that they are invited to interview with a residency program to…</li><li><a href=\"https://mededu.jmir.org/2026/1/e93710\">AI-Assisted Formative Assessment in Clinical Education: From Algorithms to Agency</a> (JMIR Medical Education). Artificial intelligence (AI) is rapidly reshaping clinical education by embedding assessment and feedback into everyday learning activities. Medical students can now use machine learning dashboards, generative AI, large language models, and emerging agentic systems to practice clinical reasoning, communication, and procedural skills while receiving individualized feedback within seconds. However, the availability of more data and more feedback does not necessarily produce better learning. This…</li><li><a href=\"https://mededu.jmir.org/2026/1/e71843\">From Classroom to Operating Room: Addressing Shortcomings in Gender Affirmation Surgical Education</a> (JMIR Medical Education). The prevalence of American youth identifying as transgender has doubled in the past five years, emphasizing the crucial role of gender affirmation surgery (GAS) in treating gender dysphoria. However, the current health care infrastructure faces challenges in meeting the escalating demand for GAS interventions. Transgender and gender-diverse patients encounter barriers such as travel and extended waitlists for specialized surgeons. This viewpoint highlights the insufficient exposure to GAS in…</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://medinform.jmir.org/2026/1/e80574\">Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study</a> (JMIR Medical Informatics). Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential. Machine learning models are increasingly used to assess prognosis; however, developing systems that combine high discrimination with clear, clinically interpretable reasoning remains challenging. Objective: This study aimed to develop deep learning models that predict 5-year mortality in NSCLC using data from the…</li><li><a href=\"https://medinform.jmir.org/2026/1/e84194\">Knowledge, Attitudes, Practices, Barriers, and Promotional Strategies Related to Clinical Data Interchange Standards Consortium Adoption Among Clinical Data Management Professionals: Semiqualitative Interview Study</a> (JMIR Medical Informatics). Background: National Medical Products Administration of China has actively encouraged organizations to adopt the Clinical Data Interchange Standards Consortium (CDISC) for clinical data submission since 2020. Objective: This study aimed to explore the knowledge, attitudes, practices, and barriers to using the CDISC among data managers and to propose strategies for promoting CDISC use in China. Methods: A total of 38 participants as leaders or experts of data management departments and teams…</li><li><a href=\"https://medinform.jmir.org/2026/1/e80403\">Histopathological Assessment of Myocardial Ischemia-Reperfusion Injury Using Transformer-Based Artificial Intelligence: Model Comparison Study</a> (JMIR Medical Informatics). Background: Myocardial ischemia-reperfusion injury (MIRI) poses diagnostic challenges due to complex histopathological changes. Objective: This study aimed to develop an intelligent framework for evaluating MIRI on hematoxylin-eosin-stained slides, to compare major deep learning architectures, and to determine the advantages of transformer models across multiple interventions and time points. Methods: A total of 1280 whole-slide images (~62,000 tiles) from public datasets were analyzed across…</li><li><a href=\"https://medinform.jmir.org/2026/1/e78471\">Early Immunological Biomarkers for Personalized Treatment Selection in Severe COVID-19: Post Hoc Machine Learning Analysis of a Randomized Clinical Trial</a> (JMIR Medical Informatics). Background: Severe COVID-19 is a global health concern despite continuous vaccination campaigns because current therapies, such as dexamethasone and remdesivir, do not considerably improve immune function, especially in high-risk individuals. SARS-CoV-2-specific T cells (CoV-2-STs) from vaccinated or convalescent donors are a promising new treatment that can enhance clinical outcomes and viral-specific immunity. CoV-2-STs improve T cell proliferation and recovery without raising safety…</li><li><a href=\"https://medinform.jmir.org/2026/1/e78931\">Advancing Gastrointestinal Cancer Risk Prediction With Patient-Centered Machine Learning: Machine Learning Modeling Study</a> (JMIR Medical Informatics). Background: Gastrointestinal (GI) cancers are a significant health concern in South Korea. Recently, machine learning (ML) models have emerged as powerful tools to support early screening efforts and identify people at risk before disease onset. However, the low incidence of GI malignancies in prospective cohorts leads to severe class imbalance, often causing ML models to favor the majority “healthy” class at the expense of clinical sensitivity. Objective: This study aimed to evaluate class…</li><li><a href=\"https://medinform.jmir.org/2026/1/e82545\">Clinical Note Generation From Doctor-Patient Conversations Using Parameter-Efficient Fine-Tuning Large Language Models: Comparative Study</a> (JMIR Medical Informatics). Background: Clinical note documentation is a vital yet time-intensive task in health care. While advancements in natural language processing have transformed many domains, generating accurate summaries of doctor-patient conversations remains underexplored due to the limited availability of open-source datasets. Large language models (LLMs), with their training on vast datasets, present a promising solution to this challenge. Objective: Precision in clinical summarization is crucial, as it…</li><li><a href=\"https://medinform.jmir.org/2026/1/e77872\">Development and Interpretability Analysis of a Stacking Ensemble Model for Early Prediction of Nutritional Risk in Intensive Care Unit Patients: Retrospective Cohort Study</a> (JMIR Medical Informatics). Background: Malnutrition in critically ill patients is associated with increased morbidity and mortality, yet traditional screening tools such as the modified NUTRIC (mNUTRIC) score often rely on subjective assessments or delayed data, limiting their utility for early intervention in the dynamic intensive care unit (ICU) environment. Real-time, data-driven approaches using electronic health records offer a promising solution for automated and objective risk stratification. Objective: This…</li><li><a href=\"https://medinform.jmir.org/2026/1/e90011\">Novel Online Platform for Trauma Care-Integrating Trauma Phenotypes to Optimize the Trauma and Injury Severity Score Model: Retrospective Cohort Study</a> (JMIR Medical Informatics). Background: Severe trauma remains a leading cause of admission to the intensive care unit. The Trauma and Injury Severity Score (TRISS) is an established standard for predicting outcomes and benchmarking the quality of trauma care globally. However, the TRISS model has some limitations when used for benchmarking trauma care. Objective: This study aimed to determine whether machine learning-derived trauma phenotypes can complement the TRISS via multivariable modeling to improve in-hospital…</li></ul>"
+  }
+ ],
+ "last_digest_week": "2026-W24"
+}

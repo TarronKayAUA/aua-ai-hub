@@ -6,6 +6,12 @@ The AUA AI Hub is a curated reference and news site on artificial intelligence (
 
 - [Welcome to the AUA AI Hub](announcements/2026-06-09-aua-ai-hub-launch.md): the site is live, what is here now, and what is coming next.
 
+## Latest items
+
+--8<-- "includes/latest.md"
+
+See the [News section](news/this-week.md) for more, including the weekly digest.
+
 ## Start here
 
 - New to AI? Read [How LLMs Work](basics/how-llms-work.md), then skim the [Glossary](basics/glossary.md).

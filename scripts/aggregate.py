@@ -73,10 +73,13 @@ PAGE_INTROS = {
     "deployment, and regulation.",
 }
 
-SELECTION_NOTE = (
-    "Items are selected nightly by an automated pipeline and link to their "
-    "original sources. See [About](../about.md) for how selection works."
-)
+def selection_note(rel_prefix: str) -> str:
+    """rel_prefix is the path from the page's directory up to docs/."""
+    return (
+        "Items are selected nightly by an automated pipeline and link to "
+        f"their original sources. See [About]({rel_prefix}about.md) for how "
+        "selection works."
+    )
 
 
 @dataclass
@@ -276,7 +279,8 @@ def kept_records(ledger: dict, category: str | None = None) -> list[dict]:
 
 
 def render_category_page(label: str, intro: str, records: list[dict]) -> str:
-    lines = [GENERATED_HEADER, "", f"# {label}", "", intro, "", SELECTION_NOTE, ""]
+    lines = [GENERATED_HEADER, "", f"# {label}", "", intro, "",
+             selection_note("../"), ""]
     if records:
         lines.extend(render_item_md(r) for r in records)
     else:
@@ -313,13 +317,14 @@ def digest_description_html(categories: dict, by_category: dict) -> str:
     return "".join(parts)
 
 
-def digest_markdown(categories: dict, by_category: dict, week_label: str) -> str:
+def digest_markdown(title: str, categories: dict, by_category: dict,
+                    week_label: str, rel_prefix: str) -> str:
     lines = [
         GENERATED_HEADER,
         "",
-        f"# This Week",
+        f"# {title}",
         "",
-        f"Digest for {week_label}. " + SELECTION_NOTE,
+        f"Digest for {week_label}. " + selection_note(rel_prefix),
         "",
     ]
     empty = True
@@ -561,9 +566,14 @@ def main() -> int:
             "pub_date": format_datetime(now),
             "description": digest_description_html(categories, by_category),
         }
-        digest_md = digest_markdown(categories, by_category, week_label)
-        write(NEWS_DIR / "this-week.md", digest_md, digest_count)
-        write(ARCHIVE_DIR / f"{iso.year}-w{iso.week:02d}.md", digest_md, digest_count)
+        this_week_md = digest_markdown(
+            "This Week", categories, by_category, week_label, "../")
+        archive_md = digest_markdown(
+            f"Week {iso.week}, {iso.year}", categories, by_category,
+            week_label, "../../")
+        write(NEWS_DIR / "this-week.md", this_week_md, digest_count)
+        write(ARCHIVE_DIR / f"{iso.year}-w{iso.week:02d}.md", archive_md,
+              digest_count)
         if not args.dry_run:
             ledger["digests"].append(digest_entry)
             ledger["digests"] = ledger["digests"][-DIGEST_KEEP:]
