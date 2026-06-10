@@ -185,6 +185,25 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* === Inline figures (educational pages) ==================================== */
+
+.figure {
+  margin: 1.6rem auto;
+  max-width: 38rem;
+  text-align: center;
+}
+
+.figure svg {
+  width: 100%;
+  height: auto;
+}
+
+.figure figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
 /* === Community Exchange posts ============================================== */
 
 .exchange-meta {
