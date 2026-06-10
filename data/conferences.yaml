@@ -101,6 +101,19 @@
   url: https://ahli.cc/ml4h/
   tags: [ai, clinical]
 
+# Verified 2026-06-10 from events.educause.edu/annual-conference (via the
+# conference-watch report, evidence: "September 29-October 2, 2026 | Denver, CO").
+# Owner approved adding 2026-06-11.
+- name: EDUCAUSE Annual Conference 2026
+  organizer: EDUCAUSE
+  start_date: 2026-09-29
+  end_date: 2026-10-02
+  location: Denver, Colorado, USA
+  format: in_person
+  abstract_deadline: TBD
+  url: https://events.educause.edu/annual-conference
+  tags: [ai]
+
 # Verified 2026-06-09 from chil.ahli.cc
 - name: CHIL 2026, Conference on Health, Inference, and Learning
   organizer: Association for Health Learning and Inference (AHLI)

@@ -18,6 +18,5 @@
   url: https://www.asugsvsummit.com/
   note: Large AI-in-education summit, usually April, San Diego.
 
-- name: EDUCAUSE Annual Conference
-  url: https://events.educause.edu/annual-conference
-  note: Higher education technology conference with substantial AI programming.
+# EDUCAUSE moved to data/conferences.yaml on 2026-06-11; the calendar entry
+# is monitored directly by the conference-watch workflow now.
