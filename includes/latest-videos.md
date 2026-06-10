@@ -16,4 +16,19 @@
   <span class="video-card-title">DeepMind’s New AI Found A Strange New Way To Think</span>
   <span class="video-card-meta">Two Minute Papers, June 5, 2026</span>
 </a>
+<a class="video-card" href="https://www.youtube.com/watch?v=7qZH3D7u-z8" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/7qZH3D7u-z8/hqdefault.jpg" alt="Video: OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents" loading="lazy">
+  <span class="video-card-title">OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents</span>
+  <span class="video-card-meta">IBM Technology, June 4, 2026</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=ypL7kUiw_LM" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/ypL7kUiw_LM/hqdefault.jpg" alt="Video: Claude Opus 4.8: Lying Machine No More?" loading="lazy">
+  <span class="video-card-title">Claude Opus 4.8: Lying Machine No More?</span>
+  <span class="video-card-meta">Two Minute Papers, June 3, 2026</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=yz6I23VRbdg" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/yz6I23VRbdg/hqdefault.jpg" alt="Video: What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean" loading="lazy">
+  <span class="video-card-title">What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean</span>
+  <span class="video-card-meta">Two Minute Papers, June 1, 2026</span>
+</a>
 </div>

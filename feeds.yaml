@@ -99,9 +99,9 @@ categories:
 # YouTube; nothing is embedded.
 video_feeds:
   lookback_days: 14
-  max_keep_per_run: 8
-  page_items: 24
-  home_items: 3
+  max_keep_per_run: 12
+  page_items: 36
+  home_items: 6
   channels:
     - name: Matthew Berman
       channel_id: UCawZsQWqfGSbCI5yjkdVkTA

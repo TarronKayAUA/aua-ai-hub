@@ -1,3 +1,24 @@
+/* === AUA brand palette ====================================================
+   Colors sampled from the official logo artwork (graphics/):
+   seal blue #07618c, wordmark navy #1b4165. */
+
+[data-md-color-scheme="default"][data-md-color-primary="custom"],
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color: #07618c;
+  --md-primary-fg-color--light: #3a86ac;
+  --md-primary-fg-color--dark: #1b4165;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #07618c;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #5aa3c7;
+}
+
 /* === Badges (governance statuses, SPEC section 6) ======================== */
 
 .badge {
@@ -36,6 +57,12 @@
 
 .hub-hero strong {
   font-size: 1.15rem;
+}
+
+.hub-hero .hero-wordmark {
+  display: block;
+  width: min(20rem, 80%);
+  margin-bottom: 0.9rem;
 }
 
 .hub-hero .md-button {

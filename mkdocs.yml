@@ -8,22 +8,24 @@ repo_name: TarronKayAUA/aua-ai-hub
 
 theme:
   name: material
-  icon:
-    logo: material/school
+  logo: assets/logo-mark-white.png
+  favicon: assets/favicon.png
   font:
     text: Inter
     code: JetBrains Mono
   palette:
+    # AUA brand colors sampled from the official logo artwork; the custom
+    # primary is defined in docs/stylesheets/extra.css.
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: custom
       accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: custom
       accent: amber
       toggle:
         icon: material/brightness-4

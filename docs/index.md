@@ -2,6 +2,8 @@
 
 <div class="hub-hero" markdown>
 
+<img class="hero-wordmark" src="assets/wordmark-white.png" alt="American University of Antigua College of Medicine">
+
 **Artificial intelligence, curated for medical education.**
 
 One reliable place for the AUACOM community to learn how AI works, find reviewed tools, follow the developments that matter, and plan for conferences. Selected for accuracy and usefulness, not hype.
