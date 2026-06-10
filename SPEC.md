@@ -41,9 +41,9 @@ Power Automate (external) watches docs/digest.xml -> Outlook email
 
 Three content classes, strictly separated:
 
-- Hand-authored (pipeline must never modify): everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `prompts/curator.md`.
-- Data-driven (rendered at build time from YAML): the conferences table and the tools directory.
-- Generated (humans never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `data/seen_items.json`.
+- Hand-authored (pipeline must never modify): everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/conference_watchlist.yaml`; `data/tools.yaml`; `data/prompts.yaml`; `data/committee.yaml`; `prompts/curator.md`; `prompts/digest.md`.
+- Data-driven (rendered at build time from YAML by the MkDocs hook): the conferences table, the tools directory, the prompt library, and the committee page.
+- Generated (humans never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `data/seen_items.json`, `data/conference_flags.md`.
 
 ## 3. Stack
 
@@ -92,16 +92,19 @@ If a small helper is needed to render YAML into pages (conferences, tools), pref
 
 ## 5. Site structure and navigation
 
-- Home (`index.md`): one-paragraph mission statement, pinned announcements (latest 3), a "Latest items" block of the 5 newest news items pulled in via the snippets include, and a last-updated stamp.
+- Home (`index.md`): hero block with the AUA wordmark and mission line, a card grid for the start-here sections, a "Latest items" block of the 5 newest news items, a "Latest videos" strip, pinned announcements, and a last-updated stamp.
 - AI Basics: "How LLMs Work" plain-language primer (roughly 1,200 words, no math), Glossary (terms listed in section 6), and a Common Misconceptions page.
 - Tools: index page rendering the directory from `data/tools.yaml` with governance badges, grouped by category.
+- Prompts: prompt library rendered from `data/prompts.yaml` (section 12).
 - Learning: curated learning paths organized by audience: Faculty getting started, Faculty teaching with AI, Students, and Going deeper (technical).
 - News: This Week (rolling trailing-seven-day view, refreshed nightly), Medical Education, Clinical Practice, General AI, Videos, Podcasts, and an Archive of weekly digests organized by ISO week.
+- Benchmarks: leaderboard explainer, link cards, and the nightly LiveBench snapshot (section 12).
 - Conferences: table rendered from `data/conferences.yaml` (rendering rules in section 6).
+- Governance: the approved AI Responsible Use Policy and the AI Governance Committee page (section 12).
 - Announcements: index of owner-authored posts under `docs/announcements/`, newest first.
-- About: purpose of the site, how news items are selected (transparency about the pipeline and the LLM step), a governance note, a disclaimer (the site is informational, AI-generated summaries may contain errors, readers should verify primary sources, and nothing here is institutional policy unless explicitly marked as such), and a contact line.
+- About: purpose of the site, how content is selected (transparency about the pipeline and the LLM steps), a governance note, a privacy note, a disclaimer (the site is informational, AI-generated summaries may contain errors, readers should verify primary sources, and nothing here is institutional policy unless explicitly marked as such), the maintainer card, and a contact line.
 
-Theme configuration: Material with light and dark toggle, search, navigation tabs, and per-page table of contents. Placeholder palette of deep blue primary with amber accent until official AUA branding is supplied. Site name placeholder: "AUA AI Hub".
+Theme configuration: Material with light and dark toggle, search, navigation tabs, and per-page table of contents. Official AUA branding applied 2026-06-10: palette sampled from the logo artwork (seal blue #07618c primary, wordmark navy #1b4165 dark), white seal header mark, favicon, and hero wordmark, regenerated from `graphics/` by `scripts/build_brand_assets.py`. Site name: "AUA AI Hub".
 
 ## 6. Hand-authored seed content (Phase 1)
 

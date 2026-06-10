@@ -20,7 +20,7 @@ Validation build (run after any nav or content change):
 
 ## How the data-driven pages work
 
-The conferences table (`docs/conferences.md`) and the tools directory (`docs/tools/index.md`) are rendered from `data/conferences.yaml` and `data/tools.yaml` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`.
+The conferences table (`docs/conferences.md`), the tools directory (`docs/tools/index.md`), the prompt library (`docs/prompts/index.md`), and the committee page (`docs/governance/committee.md`) are rendered from their matching files under `data/` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`.
 
 Why a hook instead of a pre-build script: the hook runs automatically inside both `mkdocs serve` and `mkdocs build --strict`, so there is no extra workflow step to forget, and the rendered tables are injected in memory only. Nothing generated is ever written into hand-authored files under `docs/`.
 
@@ -74,6 +74,11 @@ issue, check each proposal against its linked source, edit
 
 **Tune what the curator keeps or how it writes** — edit `prompts/curator.md`
 (no code changes); test with a pipeline dry run with `GITHUB_TOKEN` set.
+
+**Tune the weekly digest** — the send day and per-type budgets live in the
+`digest:` block of `feeds.yaml`; the highlight-selection instructions live in
+`prompts/digest.md`. The digest fires on the configured day's nightly run,
+one per ISO week.
 
 **Change the curation model or provider** — edit the `llm:` block in
 `feeds.yaml` only. Adding an `ANTHROPIC_API_KEY` repository secret switches
