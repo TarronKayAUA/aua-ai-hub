@@ -33,6 +33,11 @@ Items are selected nightly by an automated pipeline and link to their original s
   <p class="news-card-summary">A DeepSeek-based case-based learning approach improved nursing students&#x27; emergency management education for urosepsis.</p>
 </div>
 <div class="news-card">
+  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267893?fc=20260609215449&amp;ff=20260610121559&amp;v=2.20.0">Integrating Artificial Intelligence-Based Simulation into Serious Illness Conversation Training: A Pilot Medical Student Intervention</a>
+  <p class="news-card-summary">A pilot study tested artificial intelligence-based simulation as a training tool for medical students to practice serious illness conversations.</p>
+</div>
+<div class="news-card">
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
   <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42261384?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Large language models in emergency and critical care medicine: a comprehensive review of applications, challenges, and future directions</a>
   <p class="news-card-summary">Emergency and critical care medicine requires the rapid synthesis of heterogeneous clinical data under extreme time constraints. Early artificial intelligence tools lacked the flexibility to manage real-world patient heterogeneity. Large language models (LLMs) offer a paradigm shift by demonstrating advanced natural language understanding, cross-task generalization, and context-sensitive reasoning, thereby bridging the gap between fragmented algorithms and holistic clinical decision support.…</p>
@@ -76,10 +81,5 @@ Items are selected nightly by an automated pipeline and link to their original s
   <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
   <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42255338?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Knowledge, Attitude, and Perception of Medical Students Toward AI-Based Learning: A Cross-Sectional Study</a>
   <p class="news-card-summary">CONCLUSION: Medical students in KP exhibit strong enthusiasm and positive perceptions toward AI-based learning, yet their knowledge remains modest and uneven across training levels. This mismatch highlights the urgent need for structured AI education in undergraduate curricula. Incorporating formal training, workshops, and faculty development programs can bridge this gap and better prepare future physicians to responsibly integrate AI into clinical practice.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42254388?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Integrating AI into undergraduate medical education: an exploration of learner-centered approaches through AI</a>
-  <p class="news-card-summary">INTRODUCTION: Advances in artificial intelligence (AI) offer promising opportunities to enrich medical education by supporting self-directed learning, providing personalized feedback, and simulating clinical and scientific reasoning. Although AI use has expanded in graduate medical education for clinical decision training and administrative support, its effectiveness in undergraduate medical education remains insufficiently established. Empirical data examining how AI instruction influences...</p>
 </div>
 </div>

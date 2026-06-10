@@ -2317,6 +2317,207 @@
    "title_hash": "49ad75b49140da6141a8e00c2b70569c",
    "first_seen": "2026-06-10T15:37:26.740249+00:00",
    "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42267893?fc=20260609215449&ff=20260610121559&v=2.20.0",
+   "title_hash": "63a29f768feca02fdc150a2e6b990b48",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": true,
+   "title": "Integrating Artificial Intelligence-Based Simulation into Serious Illness Conversation Training: A Pilot Medical Student Intervention",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "A pilot study tested artificial intelligence-based simulation as a training tool for medical students to practice serious illness conversations.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42267773?fc=20260609215449&ff=20260610121559&v=2.20.0",
+   "title_hash": "c54a1911a64ffd014b860bc1b9abcda1",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42267668?fc=20260609215449&ff=20260610121559&v=2.20.0",
+   "title_hash": "288ca08c4b3d629a8065e533d1a585e6",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/OpenAI-Declares-the-Next-Phase-of-AI-e3kihr0",
+   "title_hash": "5f7c4239b7b45ad6e37c6ef817f7af10",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-We-Use-AI-Is-Changing-e3kguqc",
+   "title_hash": "699cdf754479e4830bbce5b1fa9d7c40",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/10-Things-You-Should-Build-With-AI-Instead-of-Sending-Files-e3keqlt",
+   "title_hash": "027fe0485305e1c8c009229cd4da70f8",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/This-Week-in-AI-for-Ridiculously-Busy-People-e3ke2rp",
+   "title_hash": "b3df20b96bac6db24c3edbd3bf89abc4",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/What-OpenAI-and-Anthropic-Think-Happens-Next-With-AI-e3kd32n",
+   "title_hash": "238a00b5ecc1fe0d8cc2671e0eef5639",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-Companies-Are-Becoming-AI-Token-Efficient-e3kbm85",
+   "title_hash": "d64d36286376d3e20f16c20e8742bd38",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Next-Wave-of-Enterprise-AI-e3ka603",
+   "title_hash": "c31a8b2cacbe66f345fdc7978b0f9a8c",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Should-Americans-Get-Shares-in-AI-Companies-e3k8jtv",
+   "title_hash": "4241ff4edfeb2a5a37e19f16116950d5",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Token-Shortage-Begins-AI-Monthly-Recap-e3k6e0o",
+   "title_hash": "69611e4d1799ed4511af638fe0fea5cc",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Use-Goal-to-Do-More-With-AI-e3k4u0l",
+   "title_hash": "3154660ee867e856ef41b69b019dd3e4",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Claude-Opus-4-8-First-Impressions-e3k36l2",
+   "title_hash": "0852d26a205b59ee9183204658923d44",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Case-for-an-AI-Token-Tax-e3k146b",
+   "title_hash": "8b18c3ef1f8c771f6b53e07e3966df6e",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Annual-AI-Slowdown-Panic-is-Here-e3k03e9",
+   "title_hash": "db86269ba7a0a40ec2cc379dceb38188",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nytimes.com/column/hard-fork",
+   "title_hash": "3eeaf666b7583629c42f84c893ac320d",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://share.transistor.fm/s/302b36f8",
+   "title_hash": "ff5e856cab3120351f4f713da5dd6a4a",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": true,
+   "title": "Breaking down the 2026 Stanford AI Index Report",
+   "source": "Practical AI",
+   "published": "2026-06-04T09:00:00+00:00",
+   "summary": "An analysis of the 2026 Stanford AI Index Report highlights AI models' success in math competitions alongside ongoing struggles with basic tasks like reading analog clocks.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://img.transistorcdn.com/ipFlPl0Z0kkjjiMc1n8f9T_9pB23QEviqZIzZXO9pig/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9hYjA0/MjAxZGQ2Nzg4Yzk4/YzYxODg0OThmM2U0/ZmE0My5wbmc.jpg"
+  },
+  {
+   "url": "https://share.transistor.fm/s/d76e02d5",
+   "title_hash": "949c513b90b07b37f907bfb73daf56e4",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://sloanreview.mit.edu/audio/ai-for-interoperability-in-health-care-philipss-carla-goulart-peron",
+   "title_hash": "187d79c99c679f7d2ecf0be05bb8fca0",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": true,
+   "title": "AI for Interoperability in Health Care: Philips’s Carla Goulart Peron",
+   "source": "Me, Myself, and AI",
+   "published": "2026-06-01T04:00:00+00:00",
+   "summary": "Philips’s chief medical officer Carla Goulart Peron discusses how artificial intelligence supports interoperability in health care systems to improve patient outcomes and clinical workflows.",
+   "category": "podcasts",
+   "score": 4.0,
+   "thumbnail": "https://megaphone.imgix.net/podcasts/499218be-4f0b-11f1-b37f-0b0591ec3021/image/ae291127f6965432b65f8770e58490c6.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+   "url": "https://aipodcast.education/why-one-law-school-just-banned-ai",
+   "title_hash": "ec90927288f5384e4628bcfd9d7f4bcd",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": true,
+   "title": "Why One Law School Just Banned AI",
+   "source": "AI in Education Podcast",
+   "published": "2026-06-04T20:23:00+00:00",
+   "summary": "A law school explains its decision to ban artificial intelligence use entirely, contrasting with countries promoting wide AI access and raising questions about AI's role in legal education.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
+  },
+  {
+   "url": "https://aipodcast.education/pasi-sahlberg-on-ai-and-flourishing-in-education",
+   "title_hash": "40dd8e8475f75589314105f1757252aa",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.latent.space/p/andon",
+   "title_hash": "a2a164406479aab2a0a3bb149c26c6cc",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.latent.space/p/axiom",
+   "title_hash": "393b6aa9a89159bd5c9dc31b58a93859",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.latent.space/p/satya-2026",
+   "title_hash": "dbaf5ecf484e06c599628c2ae51d16dd",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.latent.space/p/github",
+   "title_hash": "caf3db1b3829ff0b338bf8213f8e3608",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.latent.space/p/video-agents",
+   "title_hash": "443dc6545cffaa85f7d18b595868761a",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.latent.space/p/cognition",
+   "title_hash": "0c603f6fef8c73c542167b848ac42b46",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.latent.space/p/esmfold2",
+   "title_hash": "f6ba37f8dee1a0743c602bb8b08ab88a",
+   "first_seen": "2026-06-10T16:15:47.440268+00:00",
+   "kept": false
   }
  ],
  "digests": [

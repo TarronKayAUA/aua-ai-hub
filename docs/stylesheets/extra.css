@@ -217,6 +217,16 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* Podcast variant: square show art, slightly narrower cards */
+
+.podcast-grid {
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+}
+
+.podcast-grid .video-card img {
+  aspect-ratio: 1 / 1;
+}
+
 /* === Tool cards ============================================================ */
 
 .tool-grid {

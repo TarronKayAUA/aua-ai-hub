@@ -137,6 +137,29 @@ video_feeds:
     - name: Yannic Kilcher
       channel_id: UCZHmQk67mSJgfCCTn7xBfew
 
+# Curated podcast shows for the Podcasts page. Feed URLs resolved through the
+# Apple Podcasts directory and verified with feedparser on 2026-06-10.
+# Episode cards link to the episode page; nothing plays on this site.
+podcast_feeds:
+  lookback_days: 14
+  max_keep_per_run: 8
+  page_items: 30
+  shows:
+    - name: NEJM AI Grand Rounds
+      url: https://ai-podcast.nejm.org/feed.xml
+    - name: The AI Daily Brief
+      url: https://anchor.fm/s/f7cac464/podcast/rss
+    - name: Hard Fork
+      url: https://feeds.simplecast.com/6HKOhNgS
+    - name: Practical AI
+      url: https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm
+    - name: Me, Myself, and AI
+      url: https://feeds.megaphone.fm/TPG7603691495
+    - name: AI in Education Podcast
+      url: https://aipodcast.education/rss
+    - name: Latent Space
+      url: https://api.substack.com/feed/podcast/1084089.rss
+
 keyword_block:
   - sponsored
   - webinar replay

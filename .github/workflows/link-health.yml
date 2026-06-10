@@ -1,0 +1,61 @@
+name: Monthly link health check
+
+on:
+  schedule:
+    - cron: "37 10 5 * *" # 10:37 UTC on the 5th of each month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check every link in data files and hand-authored pages
+        id: check
+        run: |
+          set +e
+          python scripts/verify_links.py --all-docs > link-health.txt 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+          cat link-health.txt
+      - name: Open, update, or close the link health issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --state open --search "Link health: in:title" \
+            --json number --jq '.[0].number // empty')
+          if [[ "${{ steps.check.outputs.exit_code }}" != "0" ]]; then
+            n=$(grep -E '^failed' link-health.txt | grep -oE '[0-9]+$')
+            title="Link health: ${n} links failing"
+            {
+              echo "Automated monthly check found failing links."
+              echo
+              echo '```'
+              grep -E '^  FAIL' link-health.txt
+              echo '```'
+              echo
+              echo "Fix or replace the links, verify with"
+              echo '`python scripts/verify_links.py --all-docs`, and commit.'
+            } > body.md
+            if [[ -n "$existing" ]]; then
+              gh issue edit "$existing" --title "$title" --body-file body.md
+              gh issue comment "$existing" --body "Still failing as of $(date -u +%F)."
+            else
+              gh issue create --title "$title" --body-file body.md
+            fi
+          elif [[ -n "$existing" ]]; then
+            gh issue close "$existing" \
+              --comment "All links passing as of $(date -u +%F). Closing."
+          else
+            echo "All links healthy; no issue to manage."
+          fi

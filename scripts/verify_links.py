@@ -9,6 +9,11 @@ review, not block site deploys.
 
 Usage:
     python scripts/verify_links.py [docs/learning/index.md ...]
+    python scripts/verify_links.py --all-docs   # every hand-authored page
+
+--all-docs scans every markdown page under docs/ except the generated
+docs/news/ tree, plus both data files. The monthly link-health workflow
+runs this mode and opens an issue when links fail.
 
 Exit code is nonzero if any link fails.
 """
@@ -51,12 +56,20 @@ def collect() -> list[tuple[str, str]]:
             url = entry.get("url", "")
             if url and url != "TBD":
                 pairs.append((f"{yaml_rel}:{entry.get('name', '?')}", url))
-    for md_rel in sys.argv[1:]:
-        path = REPO / md_rel
+    md_paths = []
+    if "--all-docs" in sys.argv[1:]:
+        md_paths = [
+            p for p in (REPO / "docs").rglob("*.md")
+            if "news" not in p.relative_to(REPO / "docs").parts
+        ]
+    else:
+        md_paths = [REPO / md_rel for md_rel in sys.argv[1:]]
+    for path in md_paths:
         text = path.read_text(encoding="utf-8")
         for url in MD_LINK.findall(text):
-            pairs.append((md_rel, url))
-    return pairs
+            pairs.append((path.relative_to(REPO).as_posix(), url))
+    # de-duplicate identical (source, url) pairs from repeated links
+    return list(dict.fromkeys(pairs))
 
 
 def check(url: str) -> tuple[bool, str]:

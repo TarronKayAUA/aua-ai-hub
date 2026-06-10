@@ -316,6 +316,19 @@ All phases:
 - `docs/benchmarks.md` is hand-authored: a plain-language explainer on reading leaderboards plus link cards to Artificial Analysis, LiveBench, BenchLM, and LMArena.
 - The LiveBench snapshot table is generated nightly into `includes/livebench.md` and pulled in via snippets. The pipeline discovers the current LiveBench release id from the site's app bundle (falling back to a pinned version in the `benchmarks:` block of feeds.yaml), fetches the published per-task CSV and category mapping, computes category averages and the global average the way LiveBench's own leaderboard does, and renders the top N models with attribution and an as-of date. On any failure the previous snapshot is kept and the verification block says so; the build never breaks on upstream changes.
 
+### Podcasts (owner approved 2026-06-10)
+
+- `feeds.yaml` carries a `podcast_feeds` section mirroring `video_feeds`: a list of shows (name plus RSS url, resolved through the Apple Podcasts directory and verified with feedparser), a lookback window, a per-run keep budget, and a page item count. The pipeline ingests episodes with the same isolation, blocklist, and ledger dedupe as videos, curates them with a focused LLM call (up to 8 kept per run, one-sentence description each), and renders `docs/news/podcasts.md` as a card grid using each show's artwork. Cards link to the episode's own page; nothing is embedded. The weekly digest's media section includes kept episodes.
+
+### Prompt library (skeleton, owner approved 2026-06-10)
+
+- `data/prompts.yaml` is hand-authored, owner-owned data: each entry has title, category (research, mcq_generation, mcq_vetting, data_analysis, content_generation), audience, status (draft or reviewed), last_reviewed, notes, and the prompt text. The render hook builds `docs/prompts/index.md` from it: prompts grouped by category, status and audience badges, prompt text in copyable code blocks, with a visible drafts-pending-review banner. Seed entries are placeholders the owner iterates on; only the owner flips status to reviewed.
+
+### Operational additions (owner approved 2026-06-10)
+
+- `link-health.yml`: monthly workflow running `scripts/verify_links.py --all-docs` (data files plus every hand-authored page, excluding the generated news tree); opens or updates a single "Link health: N links failing" issue and closes it on recovery.
+- A privacy-respecting visit counter (GoatCounter, cookie-free) is wired in `docs/javascripts/counter.js` but disabled until the owner creates the account and supplies the site code. This amends the section 13 exclusion of analytics, by owner decision.
+
 ### Visual conventions
 
 - Homepage: hero block (gradient on the theme primary color, mission line, two buttons), Material grid cards for the four start-here sections, Latest items list, Latest videos strip, pinned announcements, last-updated stamp.

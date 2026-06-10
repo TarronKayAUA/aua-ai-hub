@@ -24,6 +24,20 @@ import yaml
 TOOLS_MARKER = "<!-- render:tools -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
+PROMPTS_MARKER = "<!-- render:prompts -->"
+
+PROMPT_CATEGORY_LABELS = {
+    "research": "Research",
+    "mcq_generation": "MCQ Generation",
+    "mcq_vetting": "MCQ Vetting",
+    "data_analysis": "Data Analysis",
+    "content_generation": "Content Generation",
+}
+
+PROMPT_STATUS_LABELS = {
+    "draft": ("Draft", "badge-under-review"),
+    "reviewed": ("Reviewed", "badge-approved"),
+}
 
 CATEGORY_LABELS = {
     "assistants": "Assistants",
@@ -125,6 +139,63 @@ def _render_tools(config) -> str:
         print(f"  {label:<16}: {count}")
     print(f"  rendered total  : {rendered} (cross-check ok)")
 
+    return "\n".join(lines)
+
+
+# --- prompts ------------------------------------------------------------------
+
+
+def _render_prompts(config) -> str:
+    prompts = _load(_data_dir(config) / "prompts.yaml")
+
+    by_category: dict[str, list] = {}
+    for entry in prompts:
+        category = entry["category"]
+        if category not in PROMPT_CATEGORY_LABELS:
+            raise ValueError(
+                f"render_data hook: unknown prompt category {category!r}"
+            )
+        if entry["status"] not in PROMPT_STATUS_LABELS:
+            raise ValueError(
+                f"render_data hook: unknown prompt status {entry['status']!r}"
+            )
+        by_category.setdefault(category, []).append(entry)
+
+    lines = []
+    rendered = 0
+    per_category = {}
+    for category, label in PROMPT_CATEGORY_LABELS.items():
+        group = by_category.get(category, [])
+        if not group:
+            continue
+        per_category[label] = len(group)
+        lines.extend([f"## {label}", ""])
+        for entry in group:
+            status_label, status_css = PROMPT_STATUS_LABELS[entry["status"]]
+            badge = _badge(status_label, status_css)
+            audience = _badge(entry["audience"], "badge-unconfirmed")
+            lines.append(f"### {entry['title']} {badge} {audience}")
+            lines.append("")
+            if entry.get("notes"):
+                lines.append(f"*{entry['notes'].strip()}*")
+                lines.append("")
+            lines.append("```text")
+            lines.append(entry["prompt"].rstrip())
+            lines.append("```")
+            lines.append("")
+            rendered += 1
+
+    if rendered != len(prompts):
+        raise AssertionError(
+            f"render_data hook: prompts count mismatch, read {len(prompts)} "
+            f"but rendered {rendered}"
+        )
+
+    print("render_data: prompts verification")
+    print(f"  entries read : {len(prompts)}")
+    for label, count in per_category.items():
+        print(f"  {label:<18}: {count}")
+    print(f"  rendered total: {rendered} (cross-check ok)")
     return "\n".join(lines)
 
 
@@ -264,6 +335,13 @@ def on_page_markdown(markdown, page, config, files):
                 f"{CONFERENCES_MARKER} marker"
             )
         return markdown.replace(CONFERENCES_MARKER, _render_conferences(config))
+    if src == "prompts/index.md":
+        if PROMPTS_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: prompts/index.md is missing the "
+                f"{PROMPTS_MARKER} marker"
+            )
+        return markdown.replace(PROMPTS_MARKER, _render_prompts(config))
     if src == "index.md" and LAST_UPDATED_MARKER in markdown:
         stamp = date.today().strftime("%B %d, %Y").replace(" 0", " ")
         return markdown.replace(LAST_UPDATED_MARKER, stamp)

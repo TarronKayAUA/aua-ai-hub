@@ -27,6 +27,13 @@ Video rules:
 - Prefer breadth across channels over several videos from one channel covering the same story.
 - For each kept video, write the summary field as one plain sentence (at most 35 words) saying what the video covers and what a viewer gets from it, so readers know what they are getting into before clicking. Same style rules as news summaries: neutral, no hype, no em dashes. Do not just restate the title.
 
+Podcast rules:
+
+- Candidates with feed_category "podcasts" are podcast episodes. Keep up to 8 per run, category "podcasts". Never move an episode into a news or videos category.
+- Keep episodes relevant to medicine, education, or general artificial intelligence literacy: interviews with researchers and practitioners, clear explanations of developments, and discussions of AI policy or deployment. For daily news shows, keep only standout episodes, not every day's recap.
+- For each kept episode, write the summary field as one plain sentence (at most 35 words) saying what the episode covers and who is speaking when notable. Same style rules as news summaries. Do not just restate the title.
+- Drop promotional episodes, re-runs, and episodes with no AI relevance.
+
 Flags:
 
 - Set "is_cfp" to true when the item is a conference announcement or a call for papers, abstracts, or proposals. These are collected separately for the site's conference calendar.

@@ -42,6 +42,8 @@ def collect() -> list[tuple[str, str]]:
         url = ("https://www.youtube.com/feeds/videos.xml?channel_id="
                + channel["channel_id"])
         pairs.append((f"videos:{channel['name']}", url))
+    for show in config.get("podcast_feeds", {}).get("shows", []):
+        pairs.append((f"podcasts:{show['name']}", show["url"]))
     return pairs
 
 

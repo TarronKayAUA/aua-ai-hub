@@ -32,12 +32,19 @@ To update the conferences table or the tools directory, edit the YAML files only
 - Data-driven: the conferences table and tools directory, rendered from YAML at build time.
 - Generated (never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `data/seen_items.json`, `data/conference_flags.md`.
 
-## Videos
+## Videos and podcasts
 
-The Videos page and homepage strip are produced by the same pipeline from the
-`video_feeds` channel list in `feeds.yaml` (YouTube channel RSS, no API key).
-Cards link out to YouTube; nothing is embedded. To add or remove a channel,
-edit `feeds.yaml` and run `python scripts/verify_feeds.py` before committing.
+The Videos and Podcasts pages (and the homepage video strip) are produced by
+the same pipeline from the `video_feeds` and `podcast_feeds` lists in
+`feeds.yaml` (channel/show RSS, no API keys). Cards link out to the original
+platform; nothing is embedded. To add or remove a channel or show, edit
+`feeds.yaml` and run `python scripts/verify_feeds.py` before committing.
+
+## Prompt library
+
+`data/prompts.yaml` holds the prompt library; the render hook builds the
+Prompts page from it at build time. Owner edits the YAML only; prompts marked
+`status: draft` carry a visible Draft badge until the owner reviews them.
 
 ## Phase 2 sequencing note
 

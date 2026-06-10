@@ -1,0 +1,129 @@
+# Prompt library. Rendered into docs/prompts/index.md at build time by
+# scripts/render_data.py. Edit this file only; never the rendered page.
+#
+# category values: research | mcq_generation | mcq_vetting | data_analysis | content_generation
+# audience values: faculty | students | both
+# status values: draft | reviewed   (drafts carry a visible Draft badge;
+# the owner flips status to reviewed after checking a prompt personally)
+#
+# The seed entries below are placeholders written to demonstrate the format.
+# The owner replaces or refines them with institution-tested prompts.
+
+- title: Literature screening assistant
+  category: research
+  audience: faculty
+  status: draft
+  last_reviewed: 2026-06-10
+  notes: Paste one abstract per message after the setup. Works best when your
+    inclusion and exclusion criteria are specific. Always confirm decisions
+    against the full text before relying on them.
+  prompt: |
+    You are helping me screen literature for a review. My research question
+    is: [RESEARCH QUESTION]. My inclusion criteria are: [LIST CRITERIA].
+    My exclusion criteria are: [LIST CRITERIA].
+
+    I will paste one abstract at a time. For each abstract, respond with:
+    1. Decision: include, exclude, or unclear.
+    2. The specific criterion that drove the decision.
+    3. Any reason a human reviewer should double-check this one.
+
+    Be conservative: when the abstract does not give enough information to
+    apply a criterion, say "unclear" rather than guessing.
+
+- title: Single best answer item writer
+  category: mcq_generation
+  audience: faculty
+  status: draft
+  last_reviewed: 2026-06-10
+  notes: Generated items are starting points only. Every item needs faculty
+    review for accuracy and a check against your blueprint before use in any
+    assessment. Never include real patient details.
+  prompt: |
+    Write one single-best-answer multiple choice question for medical
+    students on the following learning objective: [LEARNING OBJECTIVE].
+    Target level: [PRECLINICAL / CLINICAL].
+
+    Requirements:
+    - Begin with a clinical vignette (patient age, presentation, relevant
+      findings) that is required to answer the question.
+    - The lead-in must be answerable without seeing the options.
+    - Five options, one unambiguously best answer, distractors that are
+      plausible and homogeneous (same category as the correct answer).
+    - No "all of the above", "none of the above", absolute terms, or
+      grammatical cues that reveal the answer.
+    - After the item, state the correct answer, a one-paragraph explanation,
+      and a one-line rationale for why each distractor is wrong.
+
+- title: Item flaw checker
+  category: mcq_vetting
+  audience: faculty
+  status: draft
+  last_reviewed: 2026-06-10
+  notes: Use on draft items before committee review. The model catches
+    structural flaws well but cannot judge clinical accuracy; that part
+    stays with you.
+  prompt: |
+    Review the following multiple choice question for technical flaws. Do
+    not rewrite it yet.
+
+    [PASTE ITEM WITH OPTIONS AND KEY]
+
+    Check for each of these and report findings one by one:
+    1. Can the question be answered without the vignette (vignette is
+       window dressing)?
+    2. Is the lead-in answerable without seeing the options?
+    3. Are any options not homogeneous with the keyed answer?
+    4. Cues: longest option is the key, grammatical mismatches, word
+       repeats from the stem, absolute terms.
+    5. Could a testwise student eliminate distractors without content
+       knowledge? Explain how.
+    6. Is anything ambiguous, opinion-based, or potentially defensible as
+       a second correct answer?
+
+    Then give the item a verdict: use as is, minor revision, or rewrite,
+    and only then propose a revised version.
+
+- title: Analysis plan reviewer
+  category: data_analysis
+  audience: faculty
+  status: draft
+  last_reviewed: 2026-06-10
+  notes: Describe your dataset in general terms; do not paste rows
+    containing student or patient identifiers. Verify every suggested
+    method against a statistics reference before publishing results.
+  prompt: |
+    I am planning an analysis for an education research project.
+    Study question: [QUESTION]. Design: [DESIGN]. Outcome variable:
+    [OUTCOME, with type]. Predictors or groups: [LIST]. Sample size: [N].
+    Data quirks: [MISSINGNESS, CLUSTERING, REPEATED MEASURES, ETC.]
+
+    Without inventing any results:
+    1. Propose an analysis approach and name the specific tests or models.
+    2. List the assumptions each requires and how I should check them.
+    3. Flag the most likely threat to validity in this design.
+    4. Suggest what a sensible sensitivity analysis would be.
+    5. List what you were not told that would change your recommendation.
+
+- title: Lecture outline builder
+  category: content_generation
+  audience: faculty
+  status: draft
+  last_reviewed: 2026-06-10
+  notes: The outline is scaffolding; content accuracy and references remain
+    your responsibility. Pairs well with pasting your current outline for
+    revision rather than starting from scratch.
+  prompt: |
+    Build a lecture outline for a [DURATION]-minute session for
+    [AUDIENCE/YEAR] on: [TOPIC]. The session's learning objectives are:
+    [LIST OBJECTIVES].
+
+    Structure the outline as:
+    - A 3-minute opener that poses a clinical problem the lecture resolves.
+    - Sections of at most 12 minutes, each mapped to one objective, each
+      ending with a 2-minute active check (one-best-answer question,
+      think-pair-share, or quick poll) with the check written out.
+    - A closing summary slide listing one takeaway per objective.
+    - A short list of what to cut first if time runs short.
+
+    Note any point in the topic where current evidence is unsettled, so I
+    can present it as such.

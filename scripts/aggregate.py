@@ -285,22 +285,61 @@ def normalize_videos(parsed, channel: str, counters: dict) -> list[Item]:
     return items
 
 
-def curate_videos_keyword(fresh_videos: list, max_keep: int) -> list:
-    """Fallback selection: newest first, at most two per channel so one
-    prolific channel cannot fill the whole budget."""
-    per_channel: dict[str, int] = {}
+def curate_media_keyword(fresh_media: list, max_keep: int) -> list:
+    """Fallback selection: newest first, at most two per channel or show so
+    one prolific source cannot fill the whole budget."""
+    per_source: dict[str, int] = {}
     kept = []
-    for video in sorted(fresh_videos, key=lambda i: -i.published.timestamp()):
-        if per_channel.get(video.source, 0) >= 2:
+    for item in sorted(fresh_media, key=lambda i: -i.published.timestamp()):
+        if per_source.get(item.source, 0) >= 2:
             continue
-        per_channel[video.source] = per_channel.get(video.source, 0) + 1
-        # No curator-written description in fallback mode; raw YouTube
+        per_source[item.source] = per_source.get(item.source, 0) + 1
+        # No curator-written description in fallback mode; raw feed
         # descriptions are too noisy to publish.
-        video.summary = ""
-        kept.append(video)
+        item.summary = ""
+        kept.append(item)
         if len(kept) >= max_keep:
             break
     return kept
+
+
+def normalize_podcasts(parsed, show: str, counters: dict) -> list[Item]:
+    art = ""
+    image = parsed.feed.get("image")
+    if image:
+        art = image.get("href", "")
+    items = []
+    for entry in parsed.entries:
+        link = entry.get("link")
+        if not link and entry.get("links"):
+            enclosures = [l.get("href") for l in entry["links"]
+                          if l.get("rel") == "enclosure" and l.get("href")]
+            link = enclosures[0] if enclosures else None
+        title = clean_text(entry.get("title", ""), limit=300)
+        if not link or not title:
+            counters["no_link_or_title"] += 1
+            continue
+        published = parse_entry_date(entry)
+        if published is None:
+            counters["no_date"] += 1
+            continue
+        episode_art = art
+        media = entry.get("image")
+        if media and media.get("href"):
+            episode_art = media["href"]
+        items.append(
+            Item(
+                title=title,
+                url=canonicalize(link),
+                source=show,
+                published=published,
+                summary=clean_text(entry.get("summary", ""), limit=300),
+                category="podcasts",
+                thumbnail=episode_art,
+            )
+        )
+    items.sort(key=lambda i: i.published, reverse=True)
+    return items
 
 
 def render_videos_page(records: list[dict]) -> str:
@@ -323,7 +362,27 @@ def render_videos_page(records: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _video_grid_html(records: list[dict]) -> str:
+def render_podcasts_page(records: list[dict]) -> str:
+    lines = [
+        GENERATED_HEADER,
+        "",
+        "# Podcasts",
+        "",
+        "Recent episodes from a curated set of shows on artificial "
+        "intelligence in medicine, education, and beyond. "
+        + selection_note("../"),
+        "",
+        "Cards link to each episode's own page; nothing plays on this site.",
+        "",
+    ]
+    if records:
+        lines.append(_video_grid_html(records, extra_class="podcast-grid"))
+    else:
+        lines.append("No episodes yet. The pipeline adds episodes nightly.")
+    return "\n".join(lines) + "\n"
+
+
+def _video_grid_html(records: list[dict], extra_class: str = "") -> str:
     cards = []
     for r in records:
         published = datetime.fromisoformat(r["published"])
@@ -344,7 +403,8 @@ def _video_grid_html(records: list[dict]) -> str:
             f"{fmt_date(published)}</span>{description}\n"
             "</a>"
         )
-    return '<div class="video-grid">\n' + "\n".join(cards) + "\n</div>"
+    css = ("video-grid " + extra_class).strip()
+    return f'<div class="{css}">\n' + "\n".join(cards) + "\n</div>"
 
 
 # --- LiveBench table (Benchmarks page) ----------------------------------------
@@ -558,7 +618,7 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict) -> list[
         if item_id not in candidate_ids:
             raise ValueError(f"unknown candidate id {item_id!r}")
         category = entry.get("category", "")
-        if category not in categories and category != "videos":
+        if category not in categories and category not in ("videos", "podcasts"):
             raise ValueError(f"unknown category {category!r}")
         decisions.append(
             {
@@ -661,10 +721,11 @@ def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
     return kept_by_category, cfp_items, note
 
 
-def curate_llm_videos(fresh_videos: list, config: dict, provider: str,
-                      verbose: bool):
-    """Separate focused curation call for video candidates. Returns
-    (kept_videos, cfp_items) or None on failure (keyword fallback)."""
+def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
+                     config: dict, provider: str, verbose: bool):
+    """Separate focused curation call for one media type (videos or
+    podcasts). Returns (kept_items, cfp_items) or None on failure
+    (keyword fallback)."""
     llm_cfg = config["llm"]
     categories = {k: v["label"] for k, v in config["categories"].items()}
     timeout = llm_cfg["request_timeout_seconds"]
@@ -672,7 +733,7 @@ def curate_llm_videos(fresh_videos: list, config: dict, provider: str,
     call = call_anthropic if provider == "anthropic" else call_github_models
     cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
 
-    ordered = sorted(fresh_videos, key=lambda i: -i.published.timestamp())[:60]
+    ordered = sorted(fresh_media, key=lambda i: -i.published.timestamp())[:60]
     by_id, payload = _pack_candidates(
         ordered, cfg.get("max_payload_chars", 22000), verbose
     )
@@ -695,34 +756,36 @@ def curate_llm_videos(fresh_videos: list, config: dict, provider: str,
             return None
         except (ValueError, json.JSONDecodeError) as exc:
             if verbose:
-                print(f"  video llm json invalid (attempt {attempt + 1}): {exc}")
+                print(f"  {media_label} llm json invalid "
+                      f"(attempt {attempt + 1}): {exc}")
     if decisions is None:
         return None
 
-    # Every candidate in this call is a video, so any kept decision is a
-    # video regardless of the category label the model wrote back.
+    # Every candidate in this call is the same media type, so any kept
+    # decision belongs to it regardless of the category label the model
+    # wrote back.
     if verbose:
-        print(f"  video llm: {len(by_id)} candidates sent, "
+        print(f"  {media_label} llm: {len(by_id)} candidates sent, "
               f"{len(decisions)} kept by model")
     decisions.sort(key=lambda d: -d["importance"])
-    decisions = decisions[: config["video_feeds"]["max_keep_per_run"]]
-    kept_videos = []
+    decisions = decisions[:max_keep]
+    kept_items = []
     cfp_items = []
     for decision in decisions:
         item = by_id[decision["id"]]
-        item.category = "videos"
+        item.category = media_label
         item.score = float(decision["importance"])
         # Curator-written description shown under the card; when the model
         # returns nothing usable, show no description rather than the raw
-        # YouTube description snippet.
+        # feed description snippet.
         item.summary = post_process_summary(
             decision["summary"], "", llm_cfg["summary_word_cap"]
         )
-        kept_videos.append(item)
+        kept_items.append(item)
         if decision["is_cfp"]:
             cfp_items.append(item)
-    kept_videos.sort(key=lambda i: -i.published.timestamp())
-    return kept_videos, cfp_items
+    kept_items.sort(key=lambda i: -i.published.timestamp())
+    return kept_items, cfp_items
 
 
 def append_conference_flags(cfp_items: list, now: datetime, dry_run: bool) -> int:
@@ -1019,6 +1082,31 @@ def main() -> int:
         all_videos.extend(normalize_videos(parsed, name, norm_counters))
         vfeeds_succeeded.append(name)
 
+    # 1c. fetch podcast show feeds (same isolation rules)
+    podcast_cfg = config.get("podcast_feeds", {})
+    pfeeds_attempted = 0
+    pfeeds_failed = []
+    pfeeds_succeeded = []
+    raw_episodes = 0
+    all_episodes: list[Item] = []
+    for show in podcast_cfg.get("shows", []):
+        name = show["name"]
+        pfeeds_attempted += 1
+        if args.verbose:
+            print(f"fetching podcast: {name}")
+        try:
+            content = fetch_feed(show["url"], timeout, args.verbose)
+        except RuntimeError as exc:
+            pfeeds_failed.append(f"{name}: {exc}")
+            continue
+        parsed = feedparser.parse(content)
+        if not parsed.entries:
+            pfeeds_failed.append(f"{name}: parsed but 0 entries")
+            continue
+        raw_episodes += len(parsed.entries)
+        all_episodes.extend(normalize_podcasts(parsed, name, norm_counters))
+        pfeeds_succeeded.append(name)
+
     if feeds_attempted and not feeds_succeeded:
         print("FATAL: every feed failed", file=sys.stderr)
         for failure in feeds_failed:
@@ -1090,6 +1178,18 @@ def main() -> int:
         if v.url not in seen_urls and title_hash(v.title) not in seen_hashes
     ]
 
+    # podcasts: same treatment as videos
+    podcast_cutoff = now - timedelta(days=podcast_cfg.get("lookback_days", 14))
+    episodes_window = [e for e in all_episodes if e.published >= podcast_cutoff]
+    episodes_unblocked = [e for e in episodes_window if not blocked(e)]
+    episodes_by_url: dict[str, Item] = {}
+    for episode in episodes_unblocked:
+        episodes_by_url.setdefault(episode.url, episode)
+    fresh_episodes = [
+        e for e in episodes_by_url.values()
+        if e.url not in seen_urls and title_hash(e.title) not in seen_hashes
+    ]
+
     # 5. curate: LLM mode when a provider is available, else keyword mode.
     # Keyword scores are computed first either way; LLM mode uses them to
     # rank candidates, keyword mode uses them to select.
@@ -1113,9 +1213,15 @@ def main() -> int:
         llm_result = curate_llm(fresh, config, provider, args.verbose)
         if llm_result is None:
             mode = f"keyword (fallback: {provider} failed)"
+    podcast_result = None
     if provider and fresh_videos:
-        video_result = curate_llm_videos(fresh_videos, config, provider,
-                                         args.verbose)
+        video_result = curate_llm_media(
+            fresh_videos, "videos", video_cfg.get("max_keep_per_run", 12),
+            config, provider, args.verbose)
+    if provider and fresh_episodes:
+        podcast_result = curate_llm_media(
+            fresh_episodes, "podcasts", podcast_cfg.get("max_keep_per_run", 8),
+            config, provider, args.verbose)
     if not provider:
         if args.no_llm:
             mode = "keyword (--no-llm)"
@@ -1137,17 +1243,30 @@ def main() -> int:
         kept_videos, video_cfp = video_result
         all_cfp.extend(video_cfp)
     else:
-        kept_videos = curate_videos_keyword(
-            fresh_videos, video_cfg.get("max_keep_per_run", 8)
+        kept_videos = curate_media_keyword(
+            fresh_videos, video_cfg.get("max_keep_per_run", 12)
         )
         if provider and fresh_videos:
             mode += " + video fallback"
+    if podcast_result is not None:
+        kept_episodes, podcast_cfp = podcast_result
+        all_cfp.extend(podcast_cfp)
+    else:
+        kept_episodes = curate_media_keyword(
+            fresh_episodes, podcast_cfg.get("max_keep_per_run", 8)
+        )
+        if provider and fresh_episodes:
+            mode += " + podcast fallback"
     cfp_count = append_conference_flags(all_cfp, now, args.dry_run)
     kept_items = [i for pool in kept_by_category.values() for i in pool]
-    kept_set = {id(i) for i in kept_items} | {id(v) for v in kept_videos}
+    kept_set = (
+        {id(i) for i in kept_items}
+        | {id(v) for v in kept_videos}
+        | {id(e) for e in kept_episodes}
+    )
 
     # ledger update: everything fresh is now seen; kept items carry metadata
-    for item in fresh + fresh_videos:
+    for item in fresh + fresh_videos + fresh_episodes:
         ledger["items"].append(item.to_ledger(id(item) in kept_set, now_iso))
 
     # 6. outputs
@@ -1170,7 +1289,8 @@ def main() -> int:
         write(NEWS_DIR / f"{slug[cat_key]}.md", page, len(records))
 
     latest = [
-        r for r in kept_records(ledger) if r.get("category") != "videos"
+        r for r in kept_records(ledger)
+        if r.get("category") not in ("videos", "podcasts")
     ][:LATEST_ITEMS]
     write(LATEST_INCLUDE, render_latest_include(latest), len(latest))
 
@@ -1188,6 +1308,14 @@ def main() -> int:
     write(REPO / "includes" / "latest-videos.md", home_include,
           len(home_videos))
 
+    episode_records = kept_records(ledger, "podcasts")
+    write(
+        NEWS_DIR / "podcasts.md",
+        render_podcasts_page(
+            episode_records[: podcast_cfg.get("page_items", 30)]),
+        min(len(episode_records), podcast_cfg.get("page_items", 30)),
+    )
+
     # weekly digest when the ISO week has changed since the last digest
     iso = now.isocalendar()
     week_key = f"{iso.year}-W{iso.week:02d}"
@@ -1202,6 +1330,9 @@ def main() -> int:
         }
         digest_videos = [
             r for r in kept_records(ledger, "videos")
+            if r["first_seen"] >= window_start
+        ] + [
+            r for r in kept_records(ledger, "podcasts")
             if r["first_seen"] >= window_start
         ]
         digest_count = sum(len(v) for v in by_category.values()) + len(digest_videos)
@@ -1271,8 +1402,13 @@ def main() -> int:
           f"{len(vfeeds_succeeded)} succeeded, {len(vfeeds_failed)} failed")
     for failure in vfeeds_failed:
         print(f"  FAIL {failure}")
+    print(f"podcast shows    : {pfeeds_attempted} attempted, "
+          f"{len(pfeeds_succeeded)} succeeded, {len(pfeeds_failed)} failed")
+    for failure in pfeeds_failed:
+        print(f"  FAIL {failure}")
     print(f"raw items        : {raw_count}")
     print(f"raw videos       : {raw_videos}")
+    print(f"raw episodes     : {raw_episodes}")
     print(f"normalize drops  : no_date={norm_counters['no_date']} "
           f"no_link_or_title={norm_counters['no_link_or_title']}")
     print(f"after window     : {after_window} (lookback {lookback_days} days)")
@@ -1286,6 +1422,8 @@ def main() -> int:
         print(f"  {label:<18}: {count}")
     print(f"videos in window : {len(videos_window)}, fresh after dedupe: "
           f"{len(fresh_videos)}, kept: {len(kept_videos)}")
+    print(f"episodes window  : {len(episodes_window)}, fresh after dedupe: "
+          f"{len(fresh_episodes)}, kept: {len(kept_episodes)}")
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
     print(f"livebench table  : {livebench_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
