@@ -2609,6 +2609,18 @@
    "title_hash": "8531d667816eebd79d9176b1f125233d",
    "first_seen": "2026-06-10T18:28:25.126551+00:00",
    "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02893-y",
+   "title_hash": "bb9bc9d7dfc810d59e86f3292622636c",
+   "first_seen": "2026-06-10T18:43:19.694041+00:00",
+   "kept": true,
+   "title": "AI-assisted improvement of endoscopic diagnosis of ampullary lesions",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-10T00:00:00+00:00",
+   "summary": "A study reports the use of artificial intelligence to enhance endoscopic diagnosis accuracy for ampullary lesions, potentially improving clinical outcomes.",
+   "category": "clinical_practice",
+   "score": 4.0
   }
  ],
  "digests": [

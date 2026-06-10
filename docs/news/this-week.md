@@ -247,6 +247,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02893-y">AI-assisted improvement of endoscopic diagnosis of ampullary lesions</a>
+    <p class="news-card-summary">A study reports the use of artificial intelligence to enhance endoscopic diagnosis accuracy for ampullary lesions, potentially improving clinical outcomes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 8, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80574">Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study</a>
     <p class="news-card-summary">Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential.</p>
