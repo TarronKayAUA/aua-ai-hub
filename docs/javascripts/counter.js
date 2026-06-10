@@ -3,7 +3,7 @@
    the code from the owner's goatcounter.com account. */
 
 (function () {
-  var code = ""; // e.g. "auaaihub" once the GoatCounter account exists
+  var code = "tarronkay"; // owner's GoatCounter site code
   if (!code) return;
   var s = document.createElement("script");
   s.async = true;

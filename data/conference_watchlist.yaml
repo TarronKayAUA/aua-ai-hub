@@ -1,0 +1,23 @@
+# Watchlist for the monthly conference-watch workflow: recurring events not
+# yet (or not currently) in data/conferences.yaml whose official pages are
+# checked for newly announced editions. Owner-owned; the workflow only reads
+# this file and proposes additions in a GitHub issue, it never edits data.
+#
+# All URLs verified fetchable 2026-06-10. amia.org was considered and dropped
+# because it blocks scripted requests (HTTP 403).
+
+- name: Stanford Health AI Week (incl. AIMI Symposium)
+  url: https://aimi.stanford.edu/stanford-health-ai-week
+  note: Annual, early June. Includes the AIMI Symposium and Academic x Industry Summit.
+
+- name: RAISE Health Symposium (Stanford Medicine)
+  url: https://med.stanford.edu/content/sm/raisehealth/events/healthaiweek.html
+  note: Part of Stanford Health AI Week.
+
+- name: ASU+GSV Summit
+  url: https://www.asugsvsummit.com/
+  note: Large AI-in-education summit, usually April, San Diego.
+
+- name: EDUCAUSE Annual Conference
+  url: https://events.educause.edu/annual-conference
+  note: Higher education technology conference with substantial AI programming.

@@ -1,0 +1,42 @@
+name: Monthly conference watch
+
+on:
+  schedule:
+    - cron: "13 11 7 * *" # 11:13 UTC on the 7th of each month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  models: read
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check official conference pages
+        id: watch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python scripts/conference_watch.py --report conference-watch.md \
+            | tee watch-log.txt
+          n=$(grep -oE 'actionable=[0-9]+' watch-log.txt | grep -oE '[0-9]+')
+          echo "actionable=$n" >> "$GITHUB_OUTPUT"
+      - name: Open a proposal issue when there is something to review
+        if: steps.watch.outputs.actionable != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          month=$(date -u +%Y-%m)
+          gh issue create \
+            --title "Conference watch ${month}: ${{ steps.watch.outputs.actionable }} item(s) to review" \
+            --body-file conference-watch.md

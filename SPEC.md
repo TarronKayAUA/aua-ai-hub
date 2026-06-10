@@ -327,7 +327,8 @@ All phases:
 ### Operational additions (owner approved 2026-06-10)
 
 - `link-health.yml`: monthly workflow running `scripts/verify_links.py --all-docs` (data files plus every hand-authored page, excluding the generated news tree); opens or updates a single "Link health: N links failing" issue and closes it on recovery.
-- A privacy-respecting visit counter (GoatCounter, cookie-free) is wired in `docs/javascripts/counter.js` but disabled until the owner creates the account and supplies the site code. This amends the section 13 exclusion of analytics, by owner decision.
+- A privacy-respecting visit counter (GoatCounter, cookie-free, site code tarronkay) runs from `docs/javascripts/counter.js` and is disclosed on the About page. This amends the section 13 exclusion of analytics, by owner decision.
+- `conference-watch.yml`: monthly workflow running `scripts/conference_watch.py`, which fetches each official page in `data/conferences.yaml` plus the recurring events in `data/conference_watchlist.yaml`, has the LLM extract explicitly stated dates for the next edition, filters non-actionable noise (past editions, cosmetic location rewording, deadlines already marked passed), and opens a GitHub issue proposing changes with evidence quotes and source links. The script never edits data files; conference data stays human-in-the-loop per section 9.
 
 ### Visual conventions
 

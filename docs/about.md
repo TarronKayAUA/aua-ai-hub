@@ -21,7 +21,7 @@ The [tools directory](tools/index.md) carries governance status badges, and the 
 
 ## Privacy
 
-This site sets no cookies and runs no tracking or advertising scripts. Video thumbnails and podcast artwork load from the platforms that publish them; clicking any card takes you to the original platform, which has its own privacy practices.
+This site sets no cookies and runs no advertising scripts. Anonymous visit counts are collected with GoatCounter, a privacy-respecting service that uses no cookies and stores no personal information. Video thumbnails and podcast artwork load from the platforms that publish them; clicking any card takes you to the original platform, which has its own privacy practices.
 
 ## Disclaimer
 
