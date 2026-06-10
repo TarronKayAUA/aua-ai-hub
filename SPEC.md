@@ -43,7 +43,7 @@ Three content classes, strictly separated:
 
 - Hand-authored (pipeline must never modify): everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `prompts/curator.md`.
 - Data-driven (rendered at build time from YAML): the conferences table and the tools directory.
-- Generated (humans never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `data/seen_items.json`.
+- Generated (humans never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `data/seen_items.json`.
 
 ## 3. Stack
 
@@ -244,7 +244,7 @@ Digest contract (consumed by Power Automate): `docs/digest.xml` is valid RSS 2.0
 {"items": [{"id": "", "keep": true, "category": "general_ai", "summary": "", "importance": 3, "is_cfp": false}]}
 ```
 
-- One batched call per run. Cap candidates sent to the LLM at 120, selected by keyword score descending; truncate each candidate to title plus a 300-character summary. On JSON parse failure, retry once with a corrective instruction, then fall back to keyword mode. Log the outcome in the verification block.
+- One batched call per run for news (a second, separate batched call covers video candidates; see section 14). Cap news candidates sent to the LLM at 120, selected by keyword score descending; truncate each candidate to a 140-character title plus a 100-character summary, and greedily pack candidates under the provider's payload budget (GitHub Models' free tier caps requests at 8,000 tokens; the budget lives in the `llm:` block of feeds.yaml). On JSON parse failure, retry once with a corrective instruction, then fall back to keyword mode. Log the outcome in the verification block.
 - CFP-flagged items are appended to `data/conference_flags.md` for owner review. The pipeline never edits `data/conferences.yaml` itself; conference data changes stay human-in-the-loop.
 - Post-process every LLM summary before publishing: replace any em dash with a comma or period, enforce the 35-word cap, strip any markdown or HTML the model included, and reject empty summaries (fall back to the feed's own summary).
 - Provider selection order: `ANTHROPIC_API_KEY` present, use the Anthropic API with an inexpensive current model (verify current model strings from official docs at build time; make the model id a config value, not a literal scattered through code); else, when running in Actions with models access, use GitHub Models; else keyword mode.
@@ -298,13 +298,28 @@ All phases:
 - No secrets in the repository (search for common key patterns before each phase sign-off).
 - No data values hardcoded anywhere a data file should be the source.
 
-## 12. Out of scope
+## 12. Videos and visual presentation (scope addition, owner approved 2026-06-10)
+
+### Curated video feeds
+
+- `feeds.yaml` carries a `video_feeds` section: a list of YouTube channels (name plus channel_id; the RSS URL derives as `https://www.youtube.com/feeds/videos.xml?channel_id=<id>`), a lookback window, a per-run keep budget, and page/homepage item counts. Channel ids are resolved from the channel's own page (canonical link) and verified with feedparser before committing, the same rule as news feeds. `scripts/verify_feeds.py` checks them alongside news feeds.
+- The pipeline fetches channels with the same per-feed error isolation, applies the video lookback window and keyword blocklist, skips YouTube Shorts, dedupes by canonical URL and the seen ledger (no fuzzy-title pass: distinct channels legitimately cover the same story), and curates with a second, videos-only LLM call using the same curator prompt and JSON contract. Any kept decision in that call is a video regardless of the category label the model returns. Keyword fallback: newest first, at most two per channel, up to the keep budget.
+- Outputs: `docs/news/videos.md` (thumbnail card grid, newest first, capped by `page_items`) and `includes/latest-videos.md` (homepage strip, `home_items` cards). Video cards show thumbnail, title, channel, and date, and link out to YouTube; nothing is embedded and no YouTube scripts load on the site. Thumbnails hotlink YouTube's standard `i.ytimg.com` images. The weekly digest gains a Videos section.
+- Channel roster changes are owner edits to feeds.yaml only. Roster as approved: Matthew Berman, Two Minute Papers, Bijan Bowen, WorldofAI, AI Search, Wes Roth, Anthropic, OpenAI, Google DeepMind, AI Explained, IBM Technology, Yannic Kilcher.
+
+### Visual conventions
+
+- Homepage: hero block (gradient on the theme primary color, mission line, two buttons), Material grid cards for the four start-here sections, Latest items list, Latest videos strip, pinned announcements, last-updated stamp.
+- News category pages and digest pages render items as cards (source chip, date, linked title, summary) via the pipeline renderers; the tools directory renders as card grids per category via the MkDocs hook; conferences remain a table because dates and deadlines are tabular.
+- Typography: Inter for text, JetBrains Mono for code. All card styling lives in `docs/stylesheets/extra.css` using Material CSS variables so light and dark schemes both work. The palette remains the placeholder pending AUA branding (section 13).
+
+## 13. Out of scope
 
 - The Power Automate flow itself (owner builds it in the institutional M365 tenant; this repo only guarantees the stable `digest.xml` contract).
 - Custom domain configuration (leave CNAME instructions in README.md; the owner will coordinate a subdomain with AUA IT).
 - Analytics, authentication, and comments.
 
-## 13. Open items for the owner
+## 14. Open items for the owner
 
 - Confirm the site name and supply AUA branding (colors, logo) to replace placeholders.
 - Generate the PubMed RSS URLs (or approve the builder doing so) and confirm the queries.

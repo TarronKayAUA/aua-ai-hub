@@ -6,29 +6,80 @@ Artificial intelligence in clinical care, deployment, and regulation.
 
 Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
 
-- **[Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study](https://medinform.jmir.org/2026/1/e80574)**  
-  *JMIR Medical Informatics, June 8, 2026.* Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential. Machine learning models are increasingly used to assess prognosis; however, developing systems that combine high discrimination with clear, clinically interpretable reasoning remains challenging. Objective: This study aimed to develop deep learning models that predict 5-year mortality in NSCLC using data from the…
-- **[Federated orthogonal learning for detection of liver lesions from multi-phase contrast-enhanced CT images](https://www.nature.com/articles/s41746-026-02767-3)**  
-  *npj Digital Medicine, June 8, 2026.* Researchers present a federated orthogonal learning method for detecting liver lesions using multi-phase contrast-enhanced computed tomography images without sharing patient data across centers.
-- **[Knowledge, Attitudes, Practices, Barriers, and Promotional Strategies Related to Clinical Data Interchange Standards Consortium Adoption Among Clinical Data Management Professionals: Semiqualitative Interview Study](https://medinform.jmir.org/2026/1/e84194)**  
-  *JMIR Medical Informatics, June 5, 2026.* Background: National Medical Products Administration of China has actively encouraged organizations to adopt the Clinical Data Interchange Standards Consortium (CDISC) for clinical data submission since 2020. Objective: This study aimed to explore the knowledge, attitudes, practices, and barriers to using the CDISC among data managers and to propose strategies for promoting CDISC use in China. Methods: A total of 38 participants as leaders or experts of data management departments and teams…
-- **[Histopathological Assessment of Myocardial Ischemia-Reperfusion Injury Using Transformer-Based Artificial Intelligence: Model Comparison Study](https://medinform.jmir.org/2026/1/e80403)**  
-  *JMIR Medical Informatics, June 4, 2026.* Background: Myocardial ischemia-reperfusion injury (MIRI) poses diagnostic challenges due to complex histopathological changes. Objective: This study aimed to develop an intelligent framework for evaluating MIRI on hematoxylin-eosin-stained slides, to compare major deep learning architectures, and to determine the advantages of transformer models across multiple interventions and time points. Methods: A total of 1280 whole-slide images (~62,000 tiles) from public datasets were analyzed across…
-- **[Early Immunological Biomarkers for Personalized Treatment Selection in Severe COVID-19: Post Hoc Machine Learning Analysis of a Randomized Clinical Trial](https://medinform.jmir.org/2026/1/e78471)**  
-  *JMIR Medical Informatics, June 4, 2026.* Background: Severe COVID-19 is a global health concern despite continuous vaccination campaigns because current therapies, such as dexamethasone and remdesivir, do not considerably improve immune function, especially in high-risk individuals. SARS-CoV-2-specific T cells (CoV-2-STs) from vaccinated or convalescent donors are a promising new treatment that can enhance clinical outcomes and viral-specific immunity. CoV-2-STs improve T cell proliferation and recovery without raising safety…
-- **[Advancing Gastrointestinal Cancer Risk Prediction With Patient-Centered Machine Learning: Machine Learning Modeling Study](https://medinform.jmir.org/2026/1/e78931)**  
-  *JMIR Medical Informatics, June 4, 2026.* Background: Gastrointestinal (GI) cancers are a significant health concern in South Korea. Recently, machine learning (ML) models have emerged as powerful tools to support early screening efforts and identify people at risk before disease onset. However, the low incidence of GI malignancies in prospective cohorts leads to severe class imbalance, often causing ML models to favor the majority “healthy” class at the expense of clinical sensitivity. Objective: This study aimed to evaluate class…
-- **[Clinical Note Generation From Doctor-Patient Conversations Using Parameter-Efficient Fine-Tuning Large Language Models: Comparative Study](https://medinform.jmir.org/2026/1/e82545)**  
-  *JMIR Medical Informatics, June 3, 2026.* Background: Clinical note documentation is a vital yet time-intensive task in health care. While advancements in natural language processing have transformed many domains, generating accurate summaries of doctor-patient conversations remains underexplored due to the limited availability of open-source datasets. Large language models (LLMs), with their training on vast datasets, present a promising solution to this challenge. Objective: Precision in clinical summarization is crucial, as it…
-- **[Development and Interpretability Analysis of a Stacking Ensemble Model for Early Prediction of Nutritional Risk in Intensive Care Unit Patients: Retrospective Cohort Study](https://medinform.jmir.org/2026/1/e77872)**  
-  *JMIR Medical Informatics, June 3, 2026.* Background: Malnutrition in critically ill patients is associated with increased morbidity and mortality, yet traditional screening tools such as the modified NUTRIC (mNUTRIC) score often rely on subjective assessments or delayed data, limiting their utility for early intervention in the dynamic intensive care unit (ICU) environment. Real-time, data-driven approaches using electronic health records offer a promising solution for automated and objective risk stratification. Objective: This…
-- **[Novel Online Platform for Trauma Care-Integrating Trauma Phenotypes to Optimize the Trauma and Injury Severity Score Model: Retrospective Cohort Study](https://medinform.jmir.org/2026/1/e90011)**  
-  *JMIR Medical Informatics, June 2, 2026.* Background: Severe trauma remains a leading cause of admission to the intensive care unit. The Trauma and Injury Severity Score (TRISS) is an established standard for predicting outcomes and benchmarking the quality of trauma care globally. However, the TRISS model has some limitations when used for benchmarking trauma care. Objective: This study aimed to determine whether machine learning-derived trauma phenotypes can complement the TRISS via multivariable modeling to improve in-hospital…
-- **[Improving Vancomycin Therapeutic Drug Monitoring With a Deep Learning, Based Two-Compartment Predictive Model: Development and Validation Study](https://ai.jmir.org/2026/1/e81103)**  
-  *JMIR AI, June 1, 2026.* Researchers developed and validated a deep learning two-compartment pharmacokinetic recurrent neural network model to improve vancomycin therapeutic drug monitoring.
-- **[Estimating a Physiological Lung Function Score and Biological Sex Using Pulmonary Function Tests and Machine Learning: Retrospective Study](https://ai.jmir.org/2026/1/e89060)**  
-  *JMIR AI, June 1, 2026.* A machine learning model was trained to estimate physiological lung function scores and biological sex using pulmonary function tests for better understanding of sex- and age-related differences.
-- **[The Role of Multimodal Generative AI in Older Adults’ Health Management: Systematic Scoping Review](https://ai.jmir.org/2026/1/e84695)**  
-  *JMIR AI, May 29, 2026.* A systematic scoping review examined the role of multimodal generative artificial intelligence in managing health for older adults amid global aging challenges.
-- **[Multimodal GPT-5 for Predicting Poor Functional Outcomes After Intracerebral Hemorrhage in the Emergency Department: Validation Study](https://ai.jmir.org/2026/1/e87062)**  
-  *JMIR AI, May 27, 2026.* A study validated a multimodal GPT-5 model to predict poor functional outcomes after intracerebral hemorrhage in the emergency department to aid early clinical decisions.
+<div class="news-list">
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02877-y">Development and application of an intelligent assessment system for medical clinical skill training</a>
+  <p class="news-card-summary">An intelligent assessment system was developed and applied for medical clinical skill training.</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02731-1">Smartphone-based detection of subtle memory decline in prodromal Alzheimer’s disease</a>
+  <p class="news-card-summary">Smartphone-based detection methods identified subtle memory decline in early Alzheimer&#x27;s disease.</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02729-9">Human, AI collaboration for dysphagia rehabilitation from effectiveness to implementation complexity: a systematic review</a>
+  <p class="news-card-summary">A systematic review examined human and artificial intelligence collaboration for dysphagia rehabilitation including effectiveness and implementation challenges.</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+  <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04444-0">Brain Health for Economic Resilience: a data-driven framework for the brain-positive economic transition</a>
+  <p class="news-card-summary">A data-driven framework was introduced linking brain health to economic resilience for brain-positive economic transition.</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+  <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04436-0">Dual-target gene therapy in Parkinson’s disease: a multicenter phase 1 trial</a>
+  <p class="news-card-summary">Phase 1 trial results were reported for dual-target gene therapy in Parkinson&#x27;s disease.</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 8, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80574">Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study</a>
+  <p class="news-card-summary">Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential. Machine learning models are increasingly used to assess prognosis; however, developing systems that combine high discrimination with clear, clinically interpretable reasoning remains challenging. Objective: This study aimed to develop deep learning models that predict 5-year mortality in NSCLC using data from the…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 8, 2026</span></div>
+  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02767-3">Federated orthogonal learning for detection of liver lesions from multi-phase contrast-enhanced CT images</a>
+  <p class="news-card-summary">Researchers present a federated orthogonal learning method for detecting liver lesions using multi-phase contrast-enhanced computed tomography images without sharing patient data across centers.</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 5, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84194">Knowledge, Attitudes, Practices, Barriers, and Promotional Strategies Related to Clinical Data Interchange Standards Consortium Adoption Among Clinical Data Management Professionals: Semiqualitative Interview Study</a>
+  <p class="news-card-summary">Background: National Medical Products Administration of China has actively encouraged organizations to adopt the Clinical Data Interchange Standards Consortium (CDISC) for clinical data submission since 2020. Objective: This study aimed to explore the knowledge, attitudes, practices, and barriers to using the CDISC among data managers and to propose strategies for promoting CDISC use in China. Methods: A total of 38 participants as leaders or experts of data management departments and teams…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80403">Histopathological Assessment of Myocardial Ischemia-Reperfusion Injury Using Transformer-Based Artificial Intelligence: Model Comparison Study</a>
+  <p class="news-card-summary">Background: Myocardial ischemia-reperfusion injury (MIRI) poses diagnostic challenges due to complex histopathological changes. Objective: This study aimed to develop an intelligent framework for evaluating MIRI on hematoxylin-eosin-stained slides, to compare major deep learning architectures, and to determine the advantages of transformer models across multiple interventions and time points. Methods: A total of 1280 whole-slide images (~62,000 tiles) from public datasets were analyzed across…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78471">Early Immunological Biomarkers for Personalized Treatment Selection in Severe COVID-19: Post Hoc Machine Learning Analysis of a Randomized Clinical Trial</a>
+  <p class="news-card-summary">Background: Severe COVID-19 is a global health concern despite continuous vaccination campaigns because current therapies, such as dexamethasone and remdesivir, do not considerably improve immune function, especially in high-risk individuals. SARS-CoV-2-specific T cells (CoV-2-STs) from vaccinated or convalescent donors are a promising new treatment that can enhance clinical outcomes and viral-specific immunity. CoV-2-STs improve T cell proliferation and recovery without raising safety…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78931">Advancing Gastrointestinal Cancer Risk Prediction With Patient-Centered Machine Learning: Machine Learning Modeling Study</a>
+  <p class="news-card-summary">Background: Gastrointestinal (GI) cancers are a significant health concern in South Korea. Recently, machine learning (ML) models have emerged as powerful tools to support early screening efforts and identify people at risk before disease onset. However, the low incidence of GI malignancies in prospective cohorts leads to severe class imbalance, often causing ML models to favor the majority “healthy” class at the expense of clinical sensitivity. Objective: This study aimed to evaluate class…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 3, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82545">Clinical Note Generation From Doctor-Patient Conversations Using Parameter-Efficient Fine-Tuning Large Language Models: Comparative Study</a>
+  <p class="news-card-summary">Background: Clinical note documentation is a vital yet time-intensive task in health care. While advancements in natural language processing have transformed many domains, generating accurate summaries of doctor-patient conversations remains underexplored due to the limited availability of open-source datasets. Large language models (LLMs), with their training on vast datasets, present a promising solution to this challenge. Objective: Precision in clinical summarization is crucial, as it…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 3, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77872">Development and Interpretability Analysis of a Stacking Ensemble Model for Early Prediction of Nutritional Risk in Intensive Care Unit Patients: Retrospective Cohort Study</a>
+  <p class="news-card-summary">Background: Malnutrition in critically ill patients is associated with increased morbidity and mortality, yet traditional screening tools such as the modified NUTRIC (mNUTRIC) score often rely on subjective assessments or delayed data, limiting their utility for early intervention in the dynamic intensive care unit (ICU) environment. Real-time, data-driven approaches using electronic health records offer a promising solution for automated and objective risk stratification. Objective: This…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 2, 2026</span></div>
+  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90011">Novel Online Platform for Trauma Care-Integrating Trauma Phenotypes to Optimize the Trauma and Injury Severity Score Model: Retrospective Cohort Study</a>
+  <p class="news-card-summary">Background: Severe trauma remains a leading cause of admission to the intensive care unit. The Trauma and Injury Severity Score (TRISS) is an established standard for predicting outcomes and benchmarking the quality of trauma care globally. However, the TRISS model has some limitations when used for benchmarking trauma care. Objective: This study aimed to determine whether machine learning-derived trauma phenotypes can complement the TRISS via multivariable modeling to improve in-hospital…</p>
+</div>
+<div class="news-card">
+  <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 1, 2026</span></div>
+  <a class="news-card-title" href="https://ai.jmir.org/2026/1/e81103">Improving Vancomycin Therapeutic Drug Monitoring With a Deep Learning, Based Two-Compartment Predictive Model: Development and Validation Study</a>
+  <p class="news-card-summary">Researchers developed and validated a deep learning two-compartment pharmacokinetic recurrent neural network model to improve vancomycin therapeutic drug monitoring.</p>
+</div>
+</div>

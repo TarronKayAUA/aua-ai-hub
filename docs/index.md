@@ -1,23 +1,69 @@
 # AUA AI Hub
 
-The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It exists to give our community one reliable place to learn how AI works, find tools that have been reviewed for institutional use, follow developments that matter to medical education and clinical practice, and plan for relevant conferences. Content is selected for accuracy and usefulness, not novelty or hype.
+<div class="hub-hero" markdown>
 
-## Pinned announcements
+**Artificial intelligence, curated for medical education.**
 
-- [Welcome to the AUA AI Hub](announcements/2026-06-09-aua-ai-hub-launch.md): the site is live, what is here now, and what is coming next.
+One reliable place for the AUACOM community to learn how AI works, find reviewed tools, follow the developments that matter, and plan for conferences. Selected for accuracy and usefulness, not hype.
+
+[Start with the basics](basics/how-llms-work.md){ .md-button .md-button--primary }
+[Browse the tools](tools/index.md){ .md-button }
+
+</div>
+
+## Start here
+
+<div class="grid cards" markdown>
+
+- :material-head-lightbulb:{ .lg .middle } __AI Basics__
+
+    ---
+
+    How large language models actually work, a full glossary, and the misconceptions worth unlearning. Plain language, no math.
+
+    [Read the primer](basics/how-llms-work.md)
+
+- :material-toolbox:{ .lg .middle } __Tools__
+
+    ---
+
+    A reviewed directory of AI tools with governance status badges, grouped by what you want to get done.
+
+    [Open the directory](tools/index.md)
+
+- :material-school:{ .lg .middle } __Learning__
+
+    ---
+
+    Curated learning paths for faculty and students, from first steps to technical depth, plus the AAMC and AMA shelves.
+
+    [Pick a path](learning/index.md)
+
+- :material-calendar-star:{ .lg .middle } __Conferences__
+
+    ---
+
+    Verified dates and deadlines for AI and medical education meetings, with past events archived automatically.
+
+    [See the calendar](conferences.md)
+
+</div>
 
 ## Latest items
 
 --8<-- "includes/latest.md"
 
-See the [News section](news/this-week.md) for more, including the weekly digest.
+More in the [News section](news/this-week.md), including the weekly digest.
 
-## Start here
+## Latest videos
 
-- New to AI? Read [How LLMs Work](basics/how-llms-work.md), then skim the [Glossary](basics/glossary.md).
-- Looking for a tool? Check the [recommended tools directory](tools/index.md) and its governance statuses.
-- Want to build skills? Pick a path on the [Learning page](learning/index.md).
-- Planning scholarship? See the [conference calendar](conferences.md).
+--8<-- "includes/latest-videos.md"
+
+More on the [Videos page](news/videos.md).
+
+## Pinned announcements
+
+- [Welcome to the AUA AI Hub](announcements/2026-06-09-aua-ai-hub-launch.md): the site is live, what is here now, and what is coming next.
 
 ---
 

@@ -38,6 +38,10 @@ def collect() -> list[tuple[str, str]]:
                 print(f"skip {feed['name']} (URL pending owner action)")
                 continue
             pairs.append((f"{category}:{feed['name']}", feed["url"]))
+    for channel in config.get("video_feeds", {}).get("channels", []):
+        url = ("https://www.youtube.com/feeds/videos.xml?channel_id="
+               + channel["channel_id"])
+        pairs.append((f"videos:{channel['name']}", url))
     return pairs
 
 

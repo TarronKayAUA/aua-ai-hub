@@ -25,10 +25,15 @@ llm:
     endpoint: https://models.github.ai/inference/chat/completions
     model: openai/gpt-4.1-mini
     api_version: "2026-03-10"
+    # GitHub Models free tier rejects requests over 8,000 tokens, so the
+    # candidate payload is greedily packed under this character budget
+    # (verified limit 2026-06-10).
+    max_payload_chars: 22000
   anthropic:
     endpoint: https://api.anthropic.com/v1/messages
     model: claude-haiku-4-5
     api_version: "2023-06-01"
+    max_payload_chars: 600000
 
 categories:
   general_ai:
@@ -86,6 +91,42 @@ categories:
       - name: Nature Medicine
         url: https://www.nature.com/nm.rss
         weight: 0.7
+
+# Curated YouTube channels for the Videos page. Feed URLs derive from
+# channel_id: https://www.youtube.com/feeds/videos.xml?channel_id=<id>
+# All channel ids resolved from the channels' own pages and verified with
+# feedparser on 2026-06-10. Videos render as thumbnail cards linking out to
+# YouTube; nothing is embedded.
+video_feeds:
+  lookback_days: 14
+  max_keep_per_run: 8
+  page_items: 24
+  home_items: 3
+  channels:
+    - name: Matthew Berman
+      channel_id: UCawZsQWqfGSbCI5yjkdVkTA
+    - name: Two Minute Papers
+      channel_id: UCbfYPyITQ-7l4upoX8nvctg
+    - name: Bijan Bowen
+      channel_id: UCOCahKBCEUuzDJawM7yN1dg
+    - name: WorldofAI
+      channel_id: UC2WmuBuFq6gL08QYG-JjXKw
+    - name: AI Search
+      channel_id: UCIgnGlGkVRhd4qNFcEwLL4A
+    - name: Wes Roth
+      channel_id: UCqcbQf6yw5KzRoDDcZ_wBSw
+    - name: Anthropic
+      channel_id: UCrDwWp7EBBv4NwvScIpBDOA
+    - name: OpenAI
+      channel_id: UCXZCJLdBC09xxGZ6gcdrc6A
+    - name: Google DeepMind
+      channel_id: UCP7jMXSY2xbc3KCAE0MHQ-A
+    - name: AI Explained
+      channel_id: UCNJ1Ymd5yFuUPtn21xtRbbw
+    - name: IBM Technology
+      channel_id: UCKWaEZ-_VweaEx1j62do_vQ
+    - name: Yannic Kilcher
+      channel_id: UCZHmQk67mSJgfCCTn7xBfew
 
 keyword_block:
   - sponsored

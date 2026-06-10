@@ -96,6 +96,7 @@ class Item:
     weight: float = 1.0
     score: float = 0.0
     first_seen: str = ""
+    thumbnail: str = ""
 
     def to_ledger(self, kept: bool, now_iso: str) -> dict:
         record = {
@@ -113,6 +114,8 @@ class Item:
                 category=self.category,
                 score=round(self.score, 2),
             )
+            if self.thumbnail:
+                record["thumbnail"] = self.thumbnail
         return record
 
 
@@ -237,6 +240,100 @@ def normalize(parsed, source: str, category: str, weight: float, max_items: int,
     return items[:max_items]
 
 
+# --- videos -------------------------------------------------------------------
+
+
+def normalize_videos(parsed, channel: str, counters: dict) -> list[Item]:
+    items = []
+    for entry in parsed.entries:
+        link = entry.get("link")
+        title = clean_text(entry.get("title", ""), limit=300)
+        if not link or not title:
+            counters["no_link_or_title"] += 1
+            continue
+        if "/shorts/" in link:
+            continue  # Shorts are not a fit for the curated video page
+        published = parse_entry_date(entry)
+        if published is None:
+            counters["no_date"] += 1
+            continue
+        thumbnail = ""
+        media = entry.get("media_thumbnail")
+        if media:
+            thumbnail = media[0].get("url", "")
+        elif entry.get("yt_videoid"):
+            thumbnail = f"https://i.ytimg.com/vi/{entry['yt_videoid']}/hqdefault.jpg"
+        description = entry.get("summary", "")
+        if entry.get("media_description"):
+            description = entry["media_description"]
+        items.append(
+            Item(
+                title=title,
+                url=canonicalize(link),
+                source=channel,
+                published=published,
+                summary=clean_text(description, limit=150),
+                category="videos",
+                thumbnail=thumbnail,
+            )
+        )
+    items.sort(key=lambda i: i.published, reverse=True)
+    return items
+
+
+def curate_videos_keyword(fresh_videos: list, max_keep: int) -> list:
+    """Fallback selection: newest first, at most two per channel so one
+    prolific channel cannot fill the whole budget."""
+    per_channel: dict[str, int] = {}
+    kept = []
+    for video in sorted(fresh_videos, key=lambda i: -i.published.timestamp()):
+        if per_channel.get(video.source, 0) >= 2:
+            continue
+        per_channel[video.source] = per_channel.get(video.source, 0) + 1
+        kept.append(video)
+        if len(kept) >= max_keep:
+            break
+    return kept
+
+
+def render_videos_page(records: list[dict]) -> str:
+    lines = [
+        GENERATED_HEADER,
+        "",
+        "# Videos",
+        "",
+        "Recent videos from a curated set of channels covering artificial "
+        "intelligence developments, explanations, and announcements. "
+        + selection_note("../"),
+        "",
+        "Cards link to YouTube; nothing plays on this site.",
+        "",
+    ]
+    if records:
+        lines.append(_video_grid_html(records))
+    else:
+        lines.append("No videos yet. The pipeline adds videos nightly.")
+    return "\n".join(lines) + "\n"
+
+
+def _video_grid_html(records: list[dict]) -> str:
+    cards = []
+    for r in records:
+        published = datetime.fromisoformat(r["published"])
+        title = html.escape(r["title"])
+        cards.append(
+            f'<a class="video-card" href="{html.escape(r["url"])}" '
+            'target="_blank" rel="noopener">\n'
+            f'  <img src="{html.escape(r.get("thumbnail", ""))}" '
+            f'alt="Video: {title}" loading="lazy">\n'
+            f'  <span class="video-card-title">{title}</span>\n'
+            f'  <span class="video-card-meta">{html.escape(r["source"])}, '
+            f"{fmt_date(published)}</span>\n"
+            "</a>"
+        )
+    return '<div class="video-grid">\n' + "\n".join(cards) + "\n</div>"
+
+
 # --- LLM curation (SPEC section 9) -------------------------------------------
 
 
@@ -316,7 +413,7 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict) -> list[
         if item_id not in candidate_ids:
             raise ValueError(f"unknown candidate id {item_id!r}")
         category = entry.get("category", "")
-        if category not in categories:
+        if category not in categories and category != "videos":
             raise ValueError(f"unknown category {category!r}")
         decisions.append(
             {
@@ -330,33 +427,48 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict) -> list[
     return decisions
 
 
+def _pack_candidates(ordered: list, budget: int, verbose: bool):
+    """Greedy payload packing under the provider's character budget.
+    GitHub Models' free tier caps requests at 8,000 tokens, so candidates
+    beyond the budget simply are not curated this run."""
+    by_id = {}
+    entries = []
+    used = 200  # wrapper overhead allowance
+    for idx, item in enumerate(ordered):
+        entry = {
+            "id": str(idx),
+            "feed_category": item.category,
+            "source": item.source,
+            "title": item.title[:140],
+            "summary": item.summary[:100],
+        }
+        entry_len = len(json.dumps(entry, ensure_ascii=False))
+        if used + entry_len > budget:
+            break
+        used += entry_len
+        by_id[str(idx)] = item
+        entries.append(entry)
+    if verbose and len(entries) < len(ordered):
+        print(f"  llm payload budget: {len(entries)} of {len(ordered)} "
+              "candidates sent")
+    return by_id, json.dumps({"candidates": entries}, ensure_ascii=False)
+
+
 def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
-    """One batched curation call. Returns (kept_by_category, cfp_items, note)
+    """Batched news curation call. Returns (kept_by_category, cfp_items, note)
     or None when the LLM path failed and keyword mode should run instead."""
     llm_cfg = config["llm"]
     categories = {k: v["label"] for k, v in config["categories"].items()}
     timeout = llm_cfg["request_timeout_seconds"]
 
-    candidates = sorted(fresh, key=lambda i: -i.score)[: llm_cfg["max_candidates"]]
-    by_id = {str(idx): item for idx, item in enumerate(candidates)}
-    payload = json.dumps(
-        {
-            "candidates": [
-                {
-                    "id": idx,
-                    "feed_category": item.category,
-                    "source": item.source,
-                    "title": item.title,
-                    "summary": item.summary[:300],
-                }
-                for idx, item in by_id.items()
-            ]
-        },
-        ensure_ascii=False,
-    )
     system = CURATOR_PROMPT_PATH.read_text(encoding="utf-8")
     call = call_anthropic if provider == "anthropic" else call_github_models
     cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
+
+    ordered = sorted(fresh, key=lambda i: -i.score)[: llm_cfg["max_candidates"]]
+    by_id, payload = _pack_candidates(
+        ordered, cfg.get("max_payload_chars", 22000), verbose
+    )
 
     decisions = None
     for attempt, user_msg in enumerate(
@@ -382,12 +494,13 @@ def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
     if decisions is None:
         return None
 
-    decisions.sort(key=lambda d: -d["importance"])
-    decisions = decisions[: llm_cfg["max_keep"]]
+    news_decisions = [d for d in decisions if d["category"] != "videos"]
+    news_decisions.sort(key=lambda d: -d["importance"])
+    news_decisions = news_decisions[: llm_cfg["max_keep"]]
 
     kept_by_category = {k: [] for k in categories}
     cfp_items = []
-    for decision in decisions:
+    for decision in news_decisions:
         item = by_id[decision["id"]]
         item.category = decision["category"]
         item.summary = post_process_summary(
@@ -401,6 +514,64 @@ def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
         pool.sort(key=lambda i: (-i.score, -i.published.timestamp()))
     note = f"llm ({provider}, {cfg['model']})"
     return kept_by_category, cfp_items, note
+
+
+def curate_llm_videos(fresh_videos: list, config: dict, provider: str,
+                      verbose: bool):
+    """Separate focused curation call for video candidates. Returns
+    (kept_videos, cfp_items) or None on failure (keyword fallback)."""
+    llm_cfg = config["llm"]
+    categories = {k: v["label"] for k, v in config["categories"].items()}
+    timeout = llm_cfg["request_timeout_seconds"]
+    system = CURATOR_PROMPT_PATH.read_text(encoding="utf-8")
+    call = call_anthropic if provider == "anthropic" else call_github_models
+    cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
+
+    ordered = sorted(fresh_videos, key=lambda i: -i.published.timestamp())[:60]
+    by_id, payload = _pack_candidates(
+        ordered, cfg.get("max_payload_chars", 22000), verbose
+    )
+
+    decisions = None
+    for attempt, user_msg in enumerate(
+        [
+            payload,
+            payload + "\n\nYour previous response was not valid JSON matching "
+            "the contract. Respond again with only the JSON object.",
+        ]
+    ):
+        try:
+            raw = call(system, user_msg, cfg, timeout)
+            decisions = parse_curator_json(raw, set(by_id), categories)
+            break
+        except (requests.RequestException, KeyError) as exc:
+            if verbose:
+                print(f"  video llm call failed: {type(exc).__name__}: {exc}")
+            return None
+        except (ValueError, json.JSONDecodeError) as exc:
+            if verbose:
+                print(f"  video llm json invalid (attempt {attempt + 1}): {exc}")
+    if decisions is None:
+        return None
+
+    # Every candidate in this call is a video, so any kept decision is a
+    # video regardless of the category label the model wrote back.
+    if verbose:
+        print(f"  video llm: {len(by_id)} candidates sent, "
+              f"{len(decisions)} kept by model")
+    decisions.sort(key=lambda d: -d["importance"])
+    decisions = decisions[: config["video_feeds"]["max_keep_per_run"]]
+    kept_videos = []
+    cfp_items = []
+    for decision in decisions:
+        item = by_id[decision["id"]]
+        item.category = "videos"
+        item.score = float(decision["importance"])
+        kept_videos.append(item)
+        if decision["is_cfp"]:
+            cfp_items.append(item)
+    kept_videos.sort(key=lambda i: -i.published.timestamp())
+    return kept_videos, cfp_items
 
 
 def append_conference_flags(cfp_items: list, now: datetime, dry_run: bool) -> int:
@@ -454,13 +625,21 @@ def prune_ledger(ledger: dict, now: datetime) -> int:
 
 def render_item_md(record: dict) -> str:
     published = datetime.fromisoformat(record["published"])
-    line = (
-        f"- **[{md_escape(record['title'])}]({record['url']})**  \n"
-        f"  *{record['source']}, {fmt_date(published)}.*"
-    )
+    title = html.escape(record["title"])
+    card = [
+        '<div class="news-card">',
+        '  <div class="news-card-head">'
+        f'<span class="source-chip">{html.escape(record["source"])}</span>'
+        f'<span class="news-card-date">{fmt_date(published)}</span></div>',
+        f'  <a class="news-card-title" href="{html.escape(record["url"])}">'
+        f"{title}</a>",
+    ]
     if record.get("summary"):
-        line += f" {record['summary']}"
-    return line
+        card.append(
+            f'  <p class="news-card-summary">{html.escape(record["summary"])}</p>'
+        )
+    card.append("</div>")
+    return "\n".join(card)
 
 
 def kept_records(ledger: dict, category: str | None = None) -> list[dict]:
@@ -476,7 +655,9 @@ def render_category_page(label: str, intro: str, records: list[dict]) -> str:
     lines = [GENERATED_HEADER, "", f"# {label}", "", intro, "",
              selection_note("../"), ""]
     if records:
+        lines.append('<div class="news-list">')
         lines.extend(render_item_md(r) for r in records)
+        lines.append("</div>")
     else:
         lines.append("No items yet. The pipeline adds items nightly.")
     return "\n".join(lines) + "\n"
@@ -495,7 +676,8 @@ def render_latest_include(records: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def digest_description_html(categories: dict, by_category: dict) -> str:
+def digest_description_html(categories: dict, by_category: dict,
+                            videos: list[dict]) -> str:
     parts = []
     for key, records in by_category.items():
         if not records:
@@ -508,11 +690,20 @@ def digest_description_html(categories: dict, by_category: dict) -> str:
                 f"({escape(r['source'])}). {summary}</li>"
             )
         parts.append("</ul>")
+    if videos:
+        parts.append("<h3>Videos</h3><ul>")
+        for r in videos:
+            parts.append(
+                f'<li><a href="{escape(r["url"])}">{escape(r["title"])}</a> '
+                f"({escape(r['source'])})</li>"
+            )
+        parts.append("</ul>")
     return "".join(parts)
 
 
 def digest_markdown(title: str, categories: dict, by_category: dict,
-                    week_label: str, rel_prefix: str) -> str:
+                    videos: list[dict], week_label: str,
+                    rel_prefix: str) -> str:
     lines = [
         GENERATED_HEADER,
         "",
@@ -528,6 +719,11 @@ def digest_markdown(title: str, categories: dict, by_category: dict,
         empty = False
         lines.extend([f"## {categories[key]}", ""])
         lines.extend(render_item_md(r) for r in records)
+        lines.append("")
+    if videos:
+        empty = False
+        lines.extend(["## Videos", ""])
+        lines.append(_video_grid_html(videos))
         lines.append("")
     if empty:
         lines.append("No items were kept this week.")
@@ -581,9 +777,12 @@ def render_archive_index(archive_files: list[str]) -> str:
 
 
 def read_site_url() -> str:
-    # Light-touch read; mkdocs.yml is plain YAML in this project.
-    config = yaml.safe_load((REPO / "mkdocs.yml").read_text(encoding="utf-8"))
-    return config["site_url"]
+    # Line-level read: mkdocs.yml contains Material's !!python/name tags,
+    # which yaml.safe_load rejects.
+    for line in (REPO / "mkdocs.yml").read_text(encoding="utf-8").splitlines():
+        if line.startswith("site_url:"):
+            return line.split(":", 1)[1].strip()
+    raise ValueError("site_url not found in mkdocs.yml")
 
 
 def main() -> int:
@@ -642,6 +841,33 @@ def main() -> int:
             feeds_succeeded.append(name)
             all_items.extend(items)
 
+    # 1b. fetch video channel feeds (same isolation rules)
+    video_cfg = config.get("video_feeds", {})
+    vfeeds_attempted = 0
+    vfeeds_failed = []
+    vfeeds_succeeded = []
+    raw_videos = 0
+    all_videos: list[Item] = []
+    for channel in video_cfg.get("channels", []):
+        name = channel["name"]
+        url = ("https://www.youtube.com/feeds/videos.xml?channel_id="
+               + channel["channel_id"])
+        vfeeds_attempted += 1
+        if args.verbose:
+            print(f"fetching videos: {name}")
+        try:
+            content = fetch_feed(url, timeout, args.verbose)
+        except RuntimeError as exc:
+            vfeeds_failed.append(f"{name}: {exc}")
+            continue
+        parsed = feedparser.parse(content)
+        if not parsed.entries:
+            vfeeds_failed.append(f"{name}: parsed but 0 entries")
+            continue
+        raw_videos += len(parsed.entries)
+        all_videos.extend(normalize_videos(parsed, name, norm_counters))
+        vfeeds_succeeded.append(name)
+
     if feeds_attempted and not feeds_succeeded:
         print("FATAL: every feed failed", file=sys.stderr)
         for failure in feeds_failed:
@@ -699,6 +925,20 @@ def main() -> int:
     ]
     after_dedupe = len(fresh)
 
+    # videos: their own lookback window, block filter, URL + ledger dedupe.
+    # No fuzzy-title pass: different channels covering the same story are
+    # legitimately distinct videos; the curation step picks among them.
+    video_cutoff = now - timedelta(days=video_cfg.get("lookback_days", 14))
+    videos_window = [v for v in all_videos if v.published >= video_cutoff]
+    videos_unblocked = [v for v in videos_window if not blocked(v)]
+    videos_by_url: dict[str, Item] = {}
+    for video in videos_unblocked:
+        videos_by_url.setdefault(video.url, video)
+    fresh_videos = [
+        v for v in videos_by_url.values()
+        if v.url not in seen_urls and title_hash(v.title) not in seen_hashes
+    ]
+
     # 5. curate: LLM mode when a provider is available, else keyword mode.
     # Keyword scores are computed first either way; LLM mode uses them to
     # rank candidates, keyword mode uses them to select.
@@ -717,29 +957,46 @@ def main() -> int:
     mode = "keyword"
     cfp_count = 0
     llm_result = None
+    video_result = None
     if provider and fresh:
         llm_result = curate_llm(fresh, config, provider, args.verbose)
         if llm_result is None:
             mode = f"keyword (fallback: {provider} failed)"
-    elif args.no_llm:
-        mode = "keyword (--no-llm)"
-    elif provider is None:
-        mode = "keyword (no LLM credentials)"
+    if provider and fresh_videos:
+        video_result = curate_llm_videos(fresh_videos, config, provider,
+                                         args.verbose)
+    if not provider:
+        if args.no_llm:
+            mode = "keyword (--no-llm)"
+        else:
+            mode = "keyword (no LLM credentials)"
 
+    all_cfp = []
     if llm_result is not None:
         kept_by_category, cfp_items, mode = llm_result
-        cfp_count = append_conference_flags(cfp_items, now, args.dry_run)
+        all_cfp.extend(cfp_items)
     else:
         kept_by_category = {k: [] for k in categories}
         for cat_key in categories:
             pool = [i for i in fresh if i.category == cat_key]
             pool.sort(key=lambda i: (-i.score, -i.published.timestamp()))
             kept_by_category[cat_key] = pool[:KEEP_PER_CATEGORY]
+
+    if video_result is not None:
+        kept_videos, video_cfp = video_result
+        all_cfp.extend(video_cfp)
+    else:
+        kept_videos = curate_videos_keyword(
+            fresh_videos, video_cfg.get("max_keep_per_run", 8)
+        )
+        if provider and fresh_videos:
+            mode += " + video fallback"
+    cfp_count = append_conference_flags(all_cfp, now, args.dry_run)
     kept_items = [i for pool in kept_by_category.values() for i in pool]
-    kept_set = {id(i) for i in kept_items}
+    kept_set = {id(i) for i in kept_items} | {id(v) for v in kept_videos}
 
     # ledger update: everything fresh is now seen; kept items carry metadata
-    for item in fresh:
+    for item in fresh + fresh_videos:
         ledger["items"].append(item.to_ledger(id(item) in kept_set, now_iso))
 
     # 6. outputs
@@ -761,8 +1018,24 @@ def main() -> int:
         page = render_category_page(label, PAGE_INTROS[cat_key], records)
         write(NEWS_DIR / f"{slug[cat_key]}.md", page, len(records))
 
-    latest = kept_records(ledger)[:LATEST_ITEMS]
+    latest = [
+        r for r in kept_records(ledger) if r.get("category") != "videos"
+    ][:LATEST_ITEMS]
     write(LATEST_INCLUDE, render_latest_include(latest), len(latest))
+
+    video_records = kept_records(ledger, "videos")
+    write(
+        NEWS_DIR / "videos.md",
+        render_videos_page(video_records[: video_cfg.get("page_items", 24)]),
+        min(len(video_records), video_cfg.get("page_items", 24)),
+    )
+    home_videos = video_records[: video_cfg.get("home_items", 3)]
+    home_include = GENERATED_HEADER + "\n\n" + (
+        _video_grid_html(home_videos) if home_videos
+        else "No videos yet. The pipeline adds videos nightly."
+    ) + "\n"
+    write(REPO / "includes" / "latest-videos.md", home_include,
+          len(home_videos))
 
     # weekly digest when the ISO week has changed since the last digest
     iso = now.isocalendar()
@@ -776,20 +1049,26 @@ def main() -> int:
             k: [r for r in kept_records(ledger, k) if r["first_seen"] >= window_start]
             for k in categories
         }
-        digest_count = sum(len(v) for v in by_category.values())
+        digest_videos = [
+            r for r in kept_records(ledger, "videos")
+            if r["first_seen"] >= window_start
+        ]
+        digest_count = sum(len(v) for v in by_category.values()) + len(digest_videos)
         digest_entry = {
             "guid": f"aua-ai-digest-{iso.year}-W{iso.week:02d}",
             "title": f"AUA AI Hub Digest: Week of "
             f"{monday.strftime('%B %d, %Y').replace(' 0', ' ')}",
             "link": read_site_url() + "news/this-week/",
             "pub_date": format_datetime(now),
-            "description": digest_description_html(categories, by_category),
+            "description": digest_description_html(
+                categories, by_category, digest_videos),
         }
         this_week_md = digest_markdown(
-            "This Week", categories, by_category, week_label, "../")
+            "This Week", categories, by_category, digest_videos,
+            week_label, "../")
         archive_md = digest_markdown(
             f"Week {iso.week}, {iso.year}", categories, by_category,
-            week_label, "../../")
+            digest_videos, week_label, "../../")
         write(NEWS_DIR / "this-week.md", this_week_md, digest_count)
         write(ARCHIVE_DIR / f"{iso.year}-w{iso.week:02d}.md", archive_md,
               digest_count)
@@ -834,7 +1113,12 @@ def main() -> int:
     for failure in feeds_failed:
         print(f"  FAIL {failure}")
     print(f"feeds skipped    : {len(feeds_skipped)} (TODO-OWNER)")
+    print(f"video channels   : {vfeeds_attempted} attempted, "
+          f"{len(vfeeds_succeeded)} succeeded, {len(vfeeds_failed)} failed")
+    for failure in vfeeds_failed:
+        print(f"  FAIL {failure}")
     print(f"raw items        : {raw_count}")
+    print(f"raw videos       : {raw_videos}")
     print(f"normalize drops  : no_date={norm_counters['no_date']} "
           f"no_link_or_title={norm_counters['no_link_or_title']}")
     print(f"after window     : {after_window} (lookback {lookback_days} days)")
@@ -846,6 +1130,8 @@ def main() -> int:
     print(f"kept total       : {kept_total}")
     for label, count in per_cat_counts.items():
         print(f"  {label:<18}: {count}")
+    print(f"videos in window : {len(videos_window)}, fresh after dedupe: "
+          f"{len(fresh_videos)}, kept: {len(kept_videos)}")
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {'written (' + week_key + ')' if digest_written else 'not due'}")

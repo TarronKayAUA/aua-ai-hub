@@ -96,16 +96,21 @@ def _render_tools(config) -> str:
         per_category_counts[label] = len(group)
         lines.append(f"## {label}")
         lines.append("")
-        lines.append("| Tool | Vendor | Cost | Status | Description |")
-        lines.append("| --- | --- | --- | --- | --- |")
+        lines.append('<div class="tool-grid">')
         for tool in sorted(group, key=lambda t: t["name"].lower()):
             status_label, status_css = STATUS_LABELS[tool["governance_status"]]
             badge = _badge(status_label, status_css, tool.get("status_note", ""))
             lines.append(
-                f"| [{tool['name']}]({tool['url']}) | {tool['vendor']} "
-                f"| {tool['cost']} | {badge} | {tool['blurb']} |"
+                '<div class="tool-card">\n'
+                '  <div class="tool-card-head">'
+                f'<a href="{tool["url"]}">{tool["name"]}</a>{badge}</div>\n'
+                f'  <div class="tool-card-sub">{tool["vendor"]}'
+                f'<span class="cost-chip">{tool["cost"]}</span></div>\n'
+                f'  <p class="tool-card-blurb">{tool["blurb"]}</p>\n'
+                "</div>"
             )
             rendered += 1
+        lines.append("</div>")
         lines.append("")
 
     if rendered != len(tools):

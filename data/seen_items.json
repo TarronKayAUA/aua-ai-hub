@@ -1487,6 +1487,830 @@
    "summary": "Researchers present a federated orthogonal learning method for detecting liver lesions using multi-phase contrast-enhanced computed tomography images without sharing patient data across centers.",
    "category": "clinical_practice",
    "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42267500?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "f5d73d4c0df015d7a8a3657ce8a36db8",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "The role of emerging technology in expanding regional anesthesia education and patient access",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "Emerging technologies are identified as enhancing regional anesthesia education and expanding patient access.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42267289?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "4ffcf791a3d41282d69a6184f8be6095",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42266634?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "13a868b9de61bebc3b5039ed960590cf",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42266631?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "85ebb306d69def0235860d639c4127b6",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Self-learning and Simulation in the 21st Century: From Textbooks to ChatGPT",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "The role of digital tools including ChatGPT in self-learning and simulation during medical training is examined.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42266245?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "bcfd1e3c14226d01dea2656d875c8d17",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Explainable Machine Learning Integrating Patient and Environmental Factors for Predicting Multidrug-Resistant Organism Colonization or Infection on ICU Admission",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "Machine learning integrating patient and environmental factors predicted multidrug-resistant organism colonization and infection.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42266218?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "6e41fdc0e13ae0de88a7f68017106327",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Application of an artificial-intelligence-based transesophageal echocardiography simulation system in residency training",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "An artificial intelligence-based transesophageal echocardiography simulation system improved resident training performance.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42265968?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "50eec9fc1ddeea43a65f0a4da751bd3b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Evaluating a DeepSeek-Based Case-Based Learning Approach for Teaching the Emergency Management of Urosepsis to Nursing Students",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "A DeepSeek-based case-based learning approach improved nursing students' emergency management education for urosepsis.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42265658?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "4985a9e5b6f684d2c31608d2a54100f6",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=48473166",
+   "title_hash": "a50b9f97bdc252cd685e0e2f92022711",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when",
+   "title_hash": "0f6a450fccc24e7acb388cbb8b215c95",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.09830",
+   "title_hash": "9ec2a4e70486f858ed1d3cbdea26f7a5",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.09854",
+   "title_hash": "54beff797d1e754a27ab9610c7921cbf",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.09856",
+   "title_hash": "a409d4e7cec4c71db860054d689b232d",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.09900",
+   "title_hash": "ecdca46d339d9ce34e9f758d2d063a1b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10061",
+   "title_hash": "3814377213a0fd248f2cbd2ef28eec72",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10087",
+   "title_hash": "125ee1489510b05bdd64fa38b7661e89",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10113",
+   "title_hash": "88e58c18fc10392f8eb6d995052cf608",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10126",
+   "title_hash": "7cc7506895d091cecf0177e43a7bf668",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10159",
+   "title_hash": "66818e3700f2f224d09ad94884223656",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10285",
+   "title_hash": "301af736e787ede3f607990ebc1adbc6",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10296",
+   "title_hash": "45ea8e496c506d1c97a8277f61e763c9",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10302",
+   "title_hash": "e204cc5e1347ceedc8fa580360194ee1",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10304",
+   "title_hash": "09f9cd412e64f0f7a15b517361021067",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10307",
+   "title_hash": "e5f9c4f4c116307b3f01caac6fcdbf26",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10315",
+   "title_hash": "da16beed6f588ddc7daa1c5a1dbb572e",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10316",
+   "title_hash": "136b4692bd96c0707e2ad0b53655c7f0",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10327",
+   "title_hash": "7f205b23bc1ae1eede2a4ade3fb2b056",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10338",
+   "title_hash": "809d20354e94a05954a3eb0bae1bdd13",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10369",
+   "title_hash": "df8bdd7ce65b2d2476776f4e472f21d1",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10380",
+   "title_hash": "8e985c3537628d34bcf00028ff5d27a3",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10400",
+   "title_hash": "b67a3470b008a2a1de46c71c95f6bbe8",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10402",
+   "title_hash": "399db0ba475982fcabccf2da0ab2e581",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10403",
+   "title_hash": "18f15c6737b1e1dc66db0e1d747285f7",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10423",
+   "title_hash": "562cd29b345c133d3f4d1a1ced17bbed",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.10428",
+   "title_hash": "983923a5b5459133df65826eaeab7c25",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1p3k5/without_open_llm_competition_closed_source_llm",
+   "title_hash": "8c3b5ad535b20f7d1fdc6e1b289bc1ec",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02877-y",
+   "title_hash": "69f0c4bf1d2e260d040a01832eb700fd",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Development and application of an intelligent assessment system for medical clinical skill training",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-10T00:00:00+00:00",
+   "summary": "An intelligent assessment system was developed and applied for medical clinical skill training.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02731-1",
+   "title_hash": "f5dd541d2a029c7f2a9d4a7a7881ee4a",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Smartphone-based detection of subtle memory decline in prodromal Alzheimer’s disease",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-10T00:00:00+00:00",
+   "summary": "Smartphone-based detection methods identified subtle memory decline in early Alzheimer's disease.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02729-9",
+   "title_hash": "3801d9fca637b63169481f0464adfe11",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Human, AI collaboration for dysphagia rehabilitation from effectiveness to implementation complexity: a systematic review",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-10T00:00:00+00:00",
+   "summary": "A systematic review examined human and artificial intelligence collaboration for dysphagia rehabilitation including effectiveness and implementation challenges.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04444-0",
+   "title_hash": "7f2544c802efae879f188dc00c58e113",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Brain Health for Economic Resilience: a data-driven framework for the brain-positive economic transition",
+   "source": "Nature Medicine",
+   "published": "2026-06-10T00:00:00+00:00",
+   "summary": "A data-driven framework was introduced linking brain health to economic resilience for brain-positive economic transition.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04436-0",
+   "title_hash": "c5849afd4f29955406ca759ac0105165",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Dual-target gene therapy in Parkinson’s disease: a multicenter phase 1 trial",
+   "source": "Nature Medicine",
+   "published": "2026-06-10T00:00:00+00:00",
+   "summary": "Phase 1 trial results were reported for dual-target gene therapy in Parkinson's disease.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42263543?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "743e773cc3a75af29aa5cf1312365408",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Development and clinical usability assessment of a web-based AI platform for automated echocardiography analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-09T10:00:00+00:00",
+   "summary": "A web-based AI platform, EchoAI, showed vendor-agnostic, domain-adaptive automated echocardiography analysis with clinical usability.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42259908?fc=20260609215449&ff=20260610104000&v=2.20.0",
+   "title_hash": "086f098172a930c13279bd02c6c74800",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Reconciling how clinical reasoning is learned in the age of artificial intelligence",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-08T10:00:00+00:00",
+   "summary": "Recent studies explore how artificial intelligence supports medical students' learning of clinical reasoning.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Ou-0vjl6FZo",
+   "title_hash": "4b5f1b0ceedf46bff1985bd59bb27eeb",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=e-4xG1U7M70",
+   "title_hash": "dba3831f19a9cbc04a1eddba7a35d706",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=dMrm2jAyrKM",
+   "title_hash": "fb2efd962464ce95a910ca8c09357121",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=udS9osDCJKo",
+   "title_hash": "e675654362a557d0bb7c8a53c05ec3af",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XzUB8_gj6xM",
+   "title_hash": "43e570c0a166b76f0fa1f569ee800c54",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=a56T6OQtwEg",
+   "title_hash": "1cde47c8a396c9caaf2c5bd547744c9a",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gyXjvzMDV7s",
+   "title_hash": "d1b749821b781ab82dde4eb52ffccd85",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=HoMvCjnpAJ8",
+   "title_hash": "97adf14fc2116928fda2072fe4252299",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Dkqzqw8rxXI",
+   "title_hash": "1254d179659ac29b80ce511a55230a67",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "DeepMind’s New AI Found A Strange New Way To Think",
+   "source": "Two Minute Papers",
+   "published": "2026-06-05T15:50:26+00:00",
+   "summary": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers 📝 The paper is available here:…",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/Dkqzqw8rxXI/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ypL7kUiw_LM",
+   "title_hash": "c9012cdc84ceba3ba61071ef5325a2ee",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Claude Opus 4.8: Lying Machine No More?",
+   "source": "Two Minute Papers",
+   "published": "2026-06-03T13:49:31+00:00",
+   "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers Anthropic's Opus 4.8:…",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/ypL7kUiw_LM/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=yz6I23VRbdg",
+   "title_hash": "e69f5af1010cff4b86896f7cb088d329",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean",
+   "source": "Two Minute Papers",
+   "published": "2026-06-01T15:41:22+00:00",
+   "summary": "Thank you to Google for the invite! 🙏 ❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 🙏 We would like to thank…",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/yz6I23VRbdg/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9GLYsrMpprs",
+   "title_hash": "c76ad997ab8fd2e09b755be1b2a7dfe8",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=hm0SoLlhAvM",
+   "title_hash": "bf380c7a6dd270d722f5d3d4290e4753",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uBWgzlqryUU",
+   "title_hash": "74292cbf6f7e998269bef701a866ce76",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=8ueMNBZaJe0",
+   "title_hash": "6bba446bf24aaf03af6ce9eef29e1a39",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=LJIfSr2fVTc",
+   "title_hash": "8f67487efca3487d7f26d9ee8e7628ab",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=MzLl9C-THHo",
+   "title_hash": "96cd4a8bff87979b2c10c4141d193f0b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=FYCZx67XX1o",
+   "title_hash": "ea3b97efc6ea512ef9b06a653603c912",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=J5s_QHi_mLE",
+   "title_hash": "d286ae261cb25bd883c28e4ff4561dec",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PWRR4A8qSxc",
+   "title_hash": "f56aa7957bfa7b82b2f6a678b59a400c",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=54Fky0JpSbw",
+   "title_hash": "df09a98ee9b64b8c99481142462fb643",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=bPYhPxwUyGA",
+   "title_hash": "17f2eb98f784244f18d11393ae09cea6",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=aSZfNC4ZscM",
+   "title_hash": "fcfd22828d872fb09abd4d4a938b6936",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fRjWpcA40hs",
+   "title_hash": "5425c3fe0251b068c7b709bac060f0bc",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=TpEBYINwokA",
+   "title_hash": "a69eb859b7d82b9e499598a184a1684e",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=h6_v1IBqmNI",
+   "title_hash": "41aa7e06c10494afafc67143f1f30ff5",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=GJAgh8isVLk",
+   "title_hash": "a7d8286362328eec6e1078a4953d1177",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=3SZ0oCDSVbM",
+   "title_hash": "07849429456355cb599adea7e1e4949c",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=p6Npi-HBoRU",
+   "title_hash": "dcc57637f7b3f6c83821d7d8949333a6",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "MiniMax M3 IS INSANE! BEST Opensource AI Model! Beats Opus 4.7 and 50x Cheaper! (Fully Tested)",
+   "source": "WorldofAI",
+   "published": "2026-06-01T07:36:37+00:00",
+   "summary": "MiniMax is back with one of the most shocking AI releases yet… and this one might genuinely change how we build software. MiniMax Token Plan 12%…",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/p6Npi-HBoRU/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=vc_XbsEcrXo",
+   "title_hash": "74bf5ca7ea5100bbdb683448661939ba",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=MkzUPtYjgBY",
+   "title_hash": "6f888831bedf5ef97fa48ac9eaac1950",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=BGqjbP7XaEs",
+   "title_hash": "7b3039ce9a77fd9cc38ce939d3d7503a",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=OA4gchz1Zcs",
+   "title_hash": "72c3d2f13ea356013b39be0a0d56d7c6",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=CzxqQJOswvo",
+   "title_hash": "7aee72c6ba756f8cff780c2f796720fe",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=DlvhlQOBHBw",
+   "title_hash": "da890226595cd2ea3cc36625fc6c6127",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RdqYvdT74i0",
+   "title_hash": "54f7f4d4877093ecc3bf12766cfa5e4b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=QvN6Tu6dHYM",
+   "title_hash": "1f0ef27f68efc9233d592fe7b947f598",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xUbIVUnQnZg",
+   "title_hash": "fe2425fc6ab262232a440f8ecef42251",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4rEgNiP5V2E",
+   "title_hash": "e0fb24fd1403257e0b390a83b5cfe07e",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Anthropic Calls for \"Global AI Pause\"",
+   "source": "Wes Roth",
+   "published": "2026-06-05T22:40:54+00:00",
+   "summary": "The latest AI News. Learn about LLMs, Gen AI and get ready for the rollout of AGI. Wes Roth covers the latest happenings in the world of OpenAI,…",
+   "category": "videos",
+   "score": 5.0,
+   "thumbnail": "https://i1.ytimg.com/vi/4rEgNiP5V2E/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=glonkx9ppz8",
+   "title_hash": "aa774d330c85eda5d2ec622a7fa8461b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=cS0Tm6ddnsQ",
+   "title_hash": "53694fafa2cec02d4acb424000a735a8",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=hGCrvDDpl5w",
+   "title_hash": "2dccefafbb7b6fc0b8d9fc5ffd6b6fe5",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=F_6go08nHv4",
+   "title_hash": "8a41d419c60537c76057c3d1ad32f6ae",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jZg1EkujbJ0",
+   "title_hash": "3ac89cc7042da8e668c66184fb610a7b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Y9Wz2PV404E",
+   "title_hash": "0620e0a4a8e88eebfec5c73fd8666b0b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Introducing Claude Fable 5",
+   "source": "Anthropic",
+   "published": "2026-06-09T17:00:05+00:00",
+   "summary": "Claude Fable 5 is our most capable model yet, now generally available. It’s a Mythos-class model with safeguards that let us share it broadly…",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/Y9Wz2PV404E/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=IEYU-CgLo3E",
+   "title_hash": "6c6937d4297dc337eaa580fb17310f15",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Lvk_VZOppIY",
+   "title_hash": "943fc3c54d6ddc3a770465b2c1982c65",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=evPsMeSiP_4",
+   "title_hash": "5b9afe93bd5aae738b62fbedcdb498f5",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=76ABuBGX4IY",
+   "title_hash": "96d5ccf1f2dfcb7d8341d73d8143046f",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gRSzTChV_bk",
+   "title_hash": "7d06bd77ce7f282c7ed918f4cad313ff",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=KWAE5G7nF8Q",
+   "title_hash": "0452c7426cb36efa60a1b43c18e3b9c0",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=m1PV1a9BWao",
+   "title_hash": "0751b3438a1c3cfc08a177f43301c77c",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1NtS2KdnDok",
+   "title_hash": "f2741e2cdab545d06f3df3c9d50ef4c3",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fAxlEcXiSts",
+   "title_hash": "16242e88cc6a4099c776bcb6372737fa",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ykNmTvRcqPQ",
+   "title_hash": "0625fb7081cbd60e89ffdc5fc833f491",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gli3gNI2saU",
+   "title_hash": "606705ee65d1a5d8ee099d9340c75391",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=LJKzZAH0bEw",
+   "title_hash": "40a55bf02e5700a45d24afe49c6cb34a",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=re-18gil_ec",
+   "title_hash": "3d2219062e25332b7f50b648990e0f0b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=m2TV8slGQKc",
+   "title_hash": "3bd3f6201960abc9affad9533f3886e0",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=pcAtJDBO3hw",
+   "title_hash": "ddb34ba33e990836e8abbdcba607c3b3",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=aJvP3nXWkwM",
+   "title_hash": "332f581e20454c76a9d8d6ca1109f750",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=JHDsM8ER7tk",
+   "title_hash": "6f6a23a6b10d0ef86ef475cd809c8cb1",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fCHe_fOqlYA",
+   "title_hash": "d22ab1ad6af9c37c59f5852b8a702d15",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PjrXaC5UsIw",
+   "title_hash": "ea97c59eace796bde94dd13b5bb39d9a",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=TcE56uuB1Qc",
+   "title_hash": "f2e6b90097c3ee7b6601101ea1a2e50b",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=EKULOf_Cy0w",
+   "title_hash": "4bfd32c088cae30f22045a7b11fc901d",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7qZH3D7u-z8",
+   "title_hash": "5df9d409116dfd146f9f2f5b20dc3ff5",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents",
+   "source": "IBM Technology",
+   "published": "2026-06-04T11:00:02+00:00",
+   "summary": "Learn more about What OpenClaw Reveals About Agentic AI Security Risks here → https://ibm.biz/~S29jyA638 OpenClaw security risks are bigger than you…",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/7qZH3D7u-z8/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=aa6k-JrZTYI",
+   "title_hash": "5350081e2db3db780eca481b4b939ba2",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=aCOsqL-jIOo",
+   "title_hash": "c35969aa06d83d608d3e64c7895ce381",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=DAlC8mL5ZlI",
+   "title_hash": "87e69148702a5dc0f23d640531a4bf9c",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": true,
+   "title": "Why AI Models Pause to Think: Test Time Compute Explained",
+   "source": "IBM Technology",
+   "published": "2026-06-01T11:00:01+00:00",
+   "summary": "Learn more about AI Models here → https://ibm.biz/~NE5Wjh0tm Chances are when you've seen a chatbot pause and say 'thinking,' a lot more is…",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/DAlC8mL5ZlI/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=V7EgIMWOqgw",
+   "title_hash": "ef8daf4449927efc09648d1737d843ce",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=wVdivlahcm0",
+   "title_hash": "d5fc08a74486123dada351de2a8dde50",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=kYkZI3oj2W4",
+   "title_hash": "22d08d600f404408eb0a2aab0e60bee8",
+   "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
   }
  ],
  "digests": [

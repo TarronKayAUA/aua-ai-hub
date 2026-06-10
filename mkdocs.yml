@@ -8,6 +8,11 @@ repo_name: TarronKayAUA/aua-ai-hub
 
 theme:
   name: material
+  icon:
+    logo: material/school
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -26,6 +31,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -49,6 +55,9 @@ markdown_extensions:
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Home: index.md
@@ -63,6 +72,7 @@ nav:
       - General AI: news/general-ai.md
       - Medical Education: news/medical-education.md
       - Clinical Practice: news/clinical-practice.md
+      - Videos: news/videos.md
       - Archive: news/archive/index.md
   - Conferences: conferences.md
   - Announcements:

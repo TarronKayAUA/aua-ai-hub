@@ -30,7 +30,14 @@ To update the conferences table or the tools directory, edit the YAML files only
 
 - Hand-authored: everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `prompts/curator.md`.
 - Data-driven: the conferences table and tools directory, rendered from YAML at build time.
-- Generated (never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `data/seen_items.json`, `data/conference_flags.md`.
+- Generated (never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `data/seen_items.json`, `data/conference_flags.md`.
+
+## Videos
+
+The Videos page and homepage strip are produced by the same pipeline from the
+`video_feeds` channel list in `feeds.yaml` (YouTube channel RSS, no API key).
+Cards link out to YouTube; nothing is embedded. To add or remove a channel,
+edit `feeds.yaml` and run `python scripts/verify_feeds.py` before committing.
 
 ## Phase 2 sequencing note
 
