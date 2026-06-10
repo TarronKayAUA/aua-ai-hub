@@ -1,0 +1,124 @@
+# Conference calendar. Rendered into docs/conferences.md at build time by
+# scripts/render_data.py. Edit this file only; never the rendered page.
+#
+# Date integrity rule (SPEC section 6): every date here was confirmed from the
+# conference's official site on the date in the comment, or it is TBD.
+# Never invent or estimate a date.
+#
+# abstract_deadline: YYYY-MM-DD, or "passed" when the deadline has closed,
+# or TBD when not yet announced.
+
+# Verified 2026-06-09 from amee.org/events/amee-2026
+- name: AMEE 2026
+  organizer: AMEE, The International Association for Health Professions Education
+  start_date: 2026-08-22
+  end_date: 2026-08-26
+  location: Vienna, Austria
+  format: hybrid
+  abstract_deadline: passed
+  url: https://amee.org/events/amee-2026/
+  tags: [meded]
+
+# The Ottawa Conference runs as the Integrated Ottawa Event inside AMEE 2026.
+# Verified 2026-06-09 from amee.org/events/amee-2026. The standalone site
+# ottawaconference.org had a broken SSL certificate on 2026-06-09, so the
+# AMEE event page is linked instead.
+- name: Ottawa Conference (Integrated Ottawa Event at AMEE 2026)
+  organizer: AMEE and Ottawa Conferences
+  start_date: 2026-08-22
+  end_date: 2026-08-26
+  location: Vienna, Austria
+  format: hybrid
+  abstract_deadline: passed
+  url: https://amee.org/events/amee-2026/
+  tags: [meded]
+
+# Verified 2026-06-09 from iamse.org/annual-conference
+- name: IAMSE 2026 Annual Conference
+  organizer: International Association of Medical Science Educators
+  start_date: 2026-06-06
+  end_date: 2026-06-09
+  location: Augusta, Georgia, USA
+  format: in_person
+  abstract_deadline: passed
+  url: https://www.iamse.org/annual-conference/
+  tags: [meded]
+
+# Verified 2026-06-09 from aamc.org/learn-network/learn-serve-lead
+- name: Learn Serve Lead 2026, The AAMC Annual Meeting
+  organizer: Association of American Medical Colleges
+  start_date: 2026-11-06
+  end_date: 2026-11-10
+  location: Anaheim, California, USA
+  format: in_person
+  abstract_deadline: TBD
+  url: https://www.aamc.org/learn-network/learn-serve-lead
+  tags: [meded]
+
+# The 23rd annual IME conference ran online on February 11-12, 2026.
+# 2027 dates were not announced as of 2026-06-09; check sites.usc.edu/ime-conference.
+- name: Innovations in Medical Education (IME) 2026
+  organizer: Keck School of Medicine of USC
+  start_date: 2026-02-11
+  end_date: 2026-02-12
+  location: Online
+  format: virtual
+  abstract_deadline: passed
+  url: https://sites.usc.edu/ime-conference/
+  tags: [meded]
+
+# Verified 2026-06-09 from asme.org.uk/events/asm2026
+- name: ASME Annual Scholarship Meeting 2026
+  organizer: Association for the Study of Medical Education
+  start_date: 2026-06-30
+  end_date: 2026-07-02
+  location: Birmingham, United Kingdom
+  format: in_person
+  abstract_deadline: passed
+  url: https://www.asme.org.uk/events/asm2026/
+  tags: [meded]
+
+# Verified 2026-06-09 from aime26.aimedicine.info
+- name: AIME 2026, International Conference on Artificial Intelligence in Medicine
+  organizer: Society for Artificial Intelligence in Medicine (AIME)
+  start_date: 2026-07-07
+  end_date: 2026-07-10
+  location: Ottawa, Canada
+  format: in_person
+  abstract_deadline: passed
+  url: https://aime26.aimedicine.info/
+  tags: [ai, clinical]
+
+# ML4H 2026 dates were not announced as of 2026-06-09; the official site still
+# lists the December 2025 symposium. Check ahli.cc/ml4h.
+- name: ML4H Symposium 2026
+  organizer: Association for Health Learning and Inference (AHLI)
+  start_date: TBD
+  end_date: TBD
+  location: TBD
+  format: in_person
+  abstract_deadline: TBD
+  url: https://ahli.cc/ml4h/
+  tags: [ai, clinical]
+
+# Verified 2026-06-09 from chil.ahli.cc
+- name: CHIL 2026, Conference on Health, Inference, and Learning
+  organizer: Association for Health Learning and Inference (AHLI)
+  start_date: 2026-06-28
+  end_date: 2026-06-30
+  location: Seattle, Washington, USA
+  format: in_person
+  abstract_deadline: passed
+  url: https://chil.ahli.cc/
+  tags: [ai, clinical]
+
+# Verified 2026-06-09 from sail.health/event/sail-2026
+- name: SAIL 2026, Symposium on Artificial Intelligence for Learning Health Systems
+  organizer: SAIL
+  start_date: 2026-05-05
+  end_date: 2026-05-08
+  location: Rio Grande, Puerto Rico
+  format: in_person
+  abstract_deadline: passed
+  url: https://sail.health/event/sail-2026/
+  tags: [ai, clinical]
