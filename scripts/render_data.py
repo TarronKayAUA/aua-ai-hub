@@ -6,8 +6,11 @@ comments in hand-authored pages with markdown rendered from YAML, in memory
 only: nothing generated is written into the docs/ source tree.
 
 Markers:
-    <!-- render:conferences -->  in docs/conferences.md
-    <!-- render:tools -->        in docs/tools/index.md
+    <!-- render:conferences -->   in docs/conferences.md
+    <!-- render:tools -->         in docs/tools/index.md
+    <!-- render:last-updated -->  in docs/index.md (build date stamp; stays
+                                  current because the site rebuilds nightly
+                                  once the Phase 2 pipeline is live)
 
 Verification counts are printed on every build and the hook raises (failing
 the build) if totals do not cross-check (CLAUDE.md working rule 2).
@@ -20,6 +23,7 @@ import yaml
 
 TOOLS_MARKER = "<!-- render:tools -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
+LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 
 CATEGORY_LABELS = {
     "assistants": "Assistants",
@@ -255,4 +259,7 @@ def on_page_markdown(markdown, page, config, files):
                 f"{CONFERENCES_MARKER} marker"
             )
         return markdown.replace(CONFERENCES_MARKER, _render_conferences(config))
+    if src == "index.md" and LAST_UPDATED_MARKER in markdown:
+        stamp = date.today().strftime("%B %d, %Y").replace(" 0", " ")
+        return markdown.replace(LAST_UPDATED_MARKER, stamp)
     return markdown
