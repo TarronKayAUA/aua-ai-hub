@@ -31,6 +31,12 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Run aggregation pipeline
+        env:
+          # Exposes the workflow token (models: read) so the pipeline can use
+          # GitHub Models inference; without this the run falls back to
+          # keyword mode.
+          GITHUB_TOKEN: ${{ github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/aggregate.py --verbose
       - name: Commit refreshed content
         run: |
