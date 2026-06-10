@@ -5,6 +5,9 @@ site_description: >-
 site_url: https://tarronkayaua.github.io/aua-ai-hub/
 repo_url: https://github.com/TarronKayAUA/aua-ai-hub
 repo_name: TarronKayAUA/aua-ai-hub
+copyright: >-
+  Maintained by Dr. Tarron Kayalackakom, Assistant Dean for AI in Medical
+  Education, AUA College of Medicine
 
 theme:
   name: material

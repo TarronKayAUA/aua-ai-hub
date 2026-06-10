@@ -185,6 +185,32 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* === Maintainer card (About page) ========================================= */
+
+.maintainer-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 1.2rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+}
+
+.md-typeset .maintainer-photo {
+  flex: 0 0 6.5rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .maintainer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /* === Video cards =========================================================== */
 
 .video-grid {

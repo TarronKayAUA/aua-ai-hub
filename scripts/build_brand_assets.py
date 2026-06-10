@@ -102,9 +102,20 @@ def main():
         "wordmark-white.png": white_knockout(wordmark, 800),
         "favicon.png": circle_transparent(seal, 180),
     }
+    profile_path = GRAPHICS / "Profile Photo.jpg"
+    if profile_path.exists():
+        profile = Image.open(profile_path).convert("RGB")
+        side = min(profile.size)
+        left = (profile.width - side) // 2
+        top = (profile.height - side) // 2
+        profile = profile.crop((left, top, left + side, top + side))
+        outputs["profile.jpg"] = profile.resize((480, 480), Image.LANCZOS)
     for name, img in outputs.items():
         path = ASSETS / name
-        img.save(path, optimize=True)
+        if name.endswith(".jpg"):
+            img.save(path, quality=85, optimize=True)
+        else:
+            img.save(path, optimize=True)
         print(f"wrote {path.relative_to(REPO)} "
               f"({img.size[0]}x{img.size[1]}, {path.stat().st_size // 1024} KB)")
     print(f"\n=== verification ===\nassets written : {len(outputs)}")

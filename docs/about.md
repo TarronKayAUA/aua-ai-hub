@@ -27,6 +27,20 @@ This site sets no cookies and runs no advertising scripts. Anonymous visit count
 
 This site is informational. AI-generated summaries and descriptions may contain errors; readers should verify claims against the linked primary sources before relying on them. Tool listings are not endorsements, benchmark scores are not purchasing advice, and prompts are templates whose outputs require your own verification. Nothing here constitutes clinical guidance, legal advice, or institutional policy unless explicitly marked as such.
 
+## The maintainer
+
+<div class="maintainer-card" markdown>
+
+<img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
+
+<div markdown>
+
+The AUA AI Hub is curated and maintained by **Dr. Tarron Kayalackakom**, Assistant Dean for Artificial Intelligence in Medical Education at the American University of Antigua College of Medicine and chair of the university's AI Governance Committee. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.
+
+</div>
+
+</div>
+
 ## Contact
 
 Questions, corrections, tool suggestions, prompt contributions, and conference submissions: contact the Office of the Assistant Dean for AI in Medical Education, AUACOM.
