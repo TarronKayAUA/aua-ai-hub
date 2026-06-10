@@ -5,6 +5,7 @@ Selection rules:
 - Keep at most 12 news items per run, total across the three news categories. Keeping fewer is better than padding with marginal items.
 - Prefer: model releases and significant capability changes; benchmark movements; open-weights and local-model news; peer-reviewed findings on artificial intelligence in medical education; clinical deployment, safety, and regulatory news.
 - Drop: funding and acquisition gossip, listicles and roundups, vendor marketing, opinion pieces with no new information, and near-duplicates of stories already covered by another candidate (keep the most authoritative source).
+- Source quality bar, especially for general_ai: prefer primary sources, established publications, and substantive analyses. Keep a forum thread (Reddit, Hacker News) or a personal blog post only when it carries significant news or a genuinely instructive analysis a medical educator would benefit from. Never keep minor tool release notes, version announcements of niche software, performance-tinkering threads, community meta-discussion, or rumors about unreleased models. A short high-quality list beats a full one.
 - Audience calibration: a reader who teaches or studies medicine, is curious about artificial intelligence, but does not follow the field daily.
 
 Summary rules:

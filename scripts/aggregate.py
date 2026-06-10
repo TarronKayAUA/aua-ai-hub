@@ -194,6 +194,46 @@ def fetch_feed(url: str, timeout: int, verbose: bool) -> bytes:
     raise RuntimeError(str(last_error))
 
 
+OG_IMAGE_RE = re.compile(
+    r'<meta[^>]+(?:property|name)=["\'](?:og:image(?::url)?|twitter:image)'
+    r'["\'][^>]+content=["\']([^"\']+)["\']',
+    re.I,
+)
+OG_IMAGE_RE_REVERSED = re.compile(
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)='
+    r'["\'](?:og:image(?::url)?|twitter:image)["\']',
+    re.I,
+)
+
+
+def fetch_article_thumbnail(url: str, timeout: int = 10) -> str:
+    """Best-effort og:image extraction from an article page. Returns "" on
+    any failure; thumbnails are decoration, never worth failing a run for."""
+    try:
+        resp = requests.get(
+            url,
+            headers={"User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/126.0 Safari/537.36")},
+            timeout=timeout,
+        )
+        if resp.status_code != 200:
+            return ""
+        head = resp.text[:60000]
+        match = OG_IMAGE_RE.search(head) or OG_IMAGE_RE_REVERSED.search(head)
+        if not match:
+            return ""
+        image = html.unescape(match.group(1)).strip()
+        if image.startswith("//"):
+            image = "https:" + image
+        if not image.startswith("http"):
+            return ""
+        return image
+    except requests.RequestException:
+        return ""
+
+
 def parse_entry_date(entry) -> datetime | None:
     for key in ("published_parsed", "updated_parsed"):
         struct = entry.get(key)
@@ -229,6 +269,10 @@ def normalize(parsed, source: str, category: str, weight: float, max_items: int,
         summary_raw = entry.get("summary") or entry.get("description") or ""
         if not summary_raw and entry.get("content"):
             summary_raw = entry["content"][0].get("value", "")
+        thumbnail = ""
+        media = entry.get("media_thumbnail") or entry.get("media_content")
+        if media and media[0].get("url", "").startswith("http"):
+            thumbnail = media[0]["url"]
         items.append(
             Item(
                 title=title,
@@ -238,6 +282,7 @@ def normalize(parsed, source: str, category: str, weight: float, max_items: int,
                 summary=clean_text(summary_raw),
                 category=category,
                 weight=weight,
+                thumbnail=thumbnail,
             )
         )
     items.sort(key=lambda i: i.published, reverse=True)
@@ -872,24 +917,43 @@ def display_summary(record: dict) -> str:
     return first
 
 
-def render_item_md(record: dict) -> str:
+def render_item_md(record: dict, suppress: frozenset = frozenset()) -> str:
     published = datetime.fromisoformat(record["published"])
     title = html.escape(record["title"])
-    card = [
-        '<div class="news-card">',
-        '  <div class="news-card-head">'
+    body = [
+        '  <div class="news-card-body">',
+        '    <div class="news-card-head">'
         f'<span class="source-chip">{html.escape(record["source"])}</span>'
         f'<span class="news-card-date">{fmt_date(published)}</span></div>',
-        f'  <a class="news-card-title" href="{html.escape(record["url"])}">'
+        f'    <a class="news-card-title" href="{html.escape(record["url"])}">'
         f"{title}</a>",
     ]
     summary = display_summary(record)
     if summary:
-        card.append(
-            f'  <p class="news-card-summary">{html.escape(summary)}</p>'
+        body.append(
+            f'    <p class="news-card-summary">{html.escape(summary)}</p>'
         )
-    card.append("</div>")
-    return "\n".join(card)
+    body.append("  </div>")
+    thumbnail = record.get("thumbnail", "")
+    thumb = []
+    if thumbnail and thumbnail not in suppress:
+        thumb = [
+            f'  <img class="news-card-thumb" src="{html.escape(thumbnail)}" '
+            'alt="" loading="lazy" '
+            "onerror=\"this.style.display='none'\">"
+        ]
+    return "\n".join(['<div class="news-card">'] + body + thumb + ["</div>"])
+
+
+def _generic_thumbnails(records: list[dict]) -> frozenset:
+    """Thumbnail URLs repeated across items are publisher logos, not article
+    images; suppress them rather than showing the same picture many times."""
+    counts: dict[str, int] = {}
+    for r in records:
+        url = r.get("thumbnail", "")
+        if url:
+            counts[url] = counts.get(url, 0) + 1
+    return frozenset(url for url, n in counts.items() if n > 1)
 
 
 def kept_records(ledger: dict, category: str | None = None) -> list[dict]:
@@ -905,8 +969,9 @@ def render_category_page(label: str, intro: str, records: list[dict]) -> str:
     lines = [GENERATED_HEADER, "", f"# {label}", "", intro, "",
              selection_note("../"), ""]
     if records:
+        suppress = _generic_thumbnails(records)
         lines.append('<div class="news-list">')
-        lines.extend(render_item_md(r) for r in records)
+        lines.extend(render_item_md(r, suppress) for r in records)
         lines.append("</div>")
     else:
         lines.append("No items yet. The pipeline adds items nightly.")
@@ -962,13 +1027,15 @@ def digest_markdown(title: str, categories: dict, by_category: dict,
         f"Digest for {week_label}. " + selection_note(rel_prefix),
         "",
     ]
+    all_records = [r for records in by_category.values() for r in records]
+    suppress = _generic_thumbnails(all_records)
     empty = True
     for key, records in by_category.items():
         if not records:
             continue
         empty = False
         lines.extend([f"## {categories[key]}", ""])
-        lines.extend(render_item_md(r) for r in records)
+        lines.extend(render_item_md(r, suppress) for r in records)
         lines.append("")
     if videos:
         empty = False
@@ -1295,6 +1362,15 @@ def main() -> int:
             mode += " + podcast fallback"
     cfp_count = append_conference_flags(all_cfp, now, args.dry_run)
     kept_items = [i for pool in kept_by_category.values() for i in pool]
+
+    # Article thumbnails for kept news items (og:image, best effort). Only
+    # kept items are fetched, so this is at most ~12 page loads per run.
+    thumbs_found = 0
+    for item in kept_items:
+        if not item.thumbnail:
+            item.thumbnail = fetch_article_thumbnail(item.url)
+        if item.thumbnail:
+            thumbs_found += 1
     kept_set = (
         {id(i) for i in kept_items}
         | {id(v) for v in kept_videos}
@@ -1461,6 +1537,7 @@ def main() -> int:
     print(f"episodes window  : {len(episodes_window)}, fresh after dedupe: "
           f"{len(fresh_episodes)}, kept: {len(kept_episodes)}")
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
+    print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
     print(f"livebench table  : {livebench_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {'written (' + week_key + ')' if digest_written else 'not due'}")

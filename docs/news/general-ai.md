@@ -8,61 +8,34 @@ Items are selected nightly by an automated pipeline and link to their original s
 
 <div class="news-list">
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
-  <a class="news-card-title" href="https://simonwillison.net/2026/Jun/9/claude-fable-5">Initial impressions of Claude Fable 5</a>
-  <p class="news-card-summary">I didn&#x27;t have early access to today&#x27;s Claude Fable 5 release, but I&#x27;ve spent the past ~5.5 hours putting it through its paces.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/9/claude-fable-5">Initial impressions of Claude Fable 5</a>
+    <p class="news-card-summary">I didn&#x27;t have early access to today&#x27;s Claude Fable 5 release, but I&#x27;ve spent the past ~5.5 hours putting it through its paces.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/fable-max.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
-  <a class="news-card-title" href="https://simonwillison.net/2026/Jun/9/llm">llm 0.32a3</a>
-  <p class="news-card-summary">Release: llm 0.32a3 Almost entirely written by the new Claude Fable 5, see my write-up for more details .</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 9, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/ServiceNow-AI/code-switching">Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech</a>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/code-switching.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 9, 2026</span></div>
-  <a class="news-card-title" href="https://huggingface.co/blog/ServiceNow-AI/code-switching">Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech</a>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
+    <a class="news-card-title" href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">OpenAI frontier models and Codex are now available on AWS</a>
+    <p class="news-card-summary">OpenAI&#x27;s frontier models and Codex code generation models are now available for use on Amazon Web Services cloud platform.</p>
+  </div>
+  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/2Tbsus4QAtPDAlsIM3vYO2/87f4c6894832d7937e54ecb3c245fdbe/OAI_AWS_Partnership_16x9_Art_Card.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u0fflj/when_every_other_post_is_an_ai_generated">When every other post is an AI generated benchmark report, a question about the best model, or a slop-coded application or engine that pretends to be groundbreaking</a>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 7, 2026</span></div>
-  <a class="news-card-title" href="https://simonwillison.net/2026/Jun/7/datasette-agent-edit">datasette-agent-edit 0.1a0</a>
-  <p class="news-card-summary">Release: datasette-agent-edit 0.1a0 I&#x27;m planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 6, 2026</span></div>
-  <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1typjmc/120_toks_on_12gb_vram_with_gemma_4_12b_qat_mtp">120 tok/s on 12GB VRAM with Gemma 4 12B QAT MTP</a>
-  <p class="news-card-summary">Google just released the QAT (Quantization-Aware Training) variant of their Gemma 4 models, including 12B, so it was only natural for me to benchmark it on my 12GB GPU since it fits entirely in VRAM.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 6, 2026</span></div>
-  <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1tylzy2/coheres_unreleased_coding_model_early_access_for">Cohere&#x27;s unreleased coding model (early access for localllama)</a>
-  <p class="news-card-summary">Hey, Nick here from Cohere.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 6, 2026</span></div>
-  <a class="news-card-title" href="https://simonwillison.net/2026/Jun/6/micropython-wasm">micropython-wasm 0.1a2</a>
-  <p class="news-card-summary">Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
-  <a class="news-card-title" href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">OpenAI frontier models and Codex are now available on AWS</a>
-  <p class="news-card-summary">OpenAI&#x27;s frontier models and Codex code generation models are now available for use on Amazon Web Services cloud platform.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
-  <a class="news-card-title" href="https://cs336.stanford.edu/">CS336: Language Modeling from Scratch</a>
-  <p class="news-card-summary">Stanford&#x27;s CS336 course provides an educational resource on language modeling from scratch, useful for understanding foundational AI concepts.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">May 29, 2026</span></div>
-  <a class="news-card-title" href="https://github.com/jmaczan/tiny-vllm">Show HN: Tiny-vLLM, high performance LLM inference engine in C++ and CUDA</a>
-  <p class="news-card-summary">Tiny-vLLM, a high performance large language model inference engine implemented in C++ and CUDA, was released to improve model deployment efficiency.</p>
-</div>
-<div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">May 29, 2026</span></div>
-  <a class="news-card-title" href="https://minimaxir.com/2026/05/openrouter-hy3">The mysterious Hy3 LLM is topping OpenRouter Model Rankings by a large margin</a>
-  <p class="news-card-summary">The Hy3 large language model is leading the OpenRouter model rankings by a significant margin according to recent evaluation data.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
+    <a class="news-card-title" href="https://cs336.stanford.edu/">CS336: Language Modeling from Scratch</a>
+    <p class="news-card-summary">Stanford&#x27;s CS336 course provides an educational resource on language modeling from scratch, useful for understanding foundational AI concepts.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cs336.stanford.edu/assets/images/stanford-nlp-logo-new.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

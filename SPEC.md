@@ -334,6 +334,8 @@ All phases:
 
 - Homepage: hero block (gradient on the theme primary color, mission line, two buttons), Material grid cards for the four start-here sections, Latest items list, Latest videos strip, pinned announcements, last-updated stamp.
 - News category pages and digest pages render items as cards (source chip, date, linked title, summary) via the pipeline renderers; the tools directory renders as card grids per category via the MkDocs hook; conferences remain a table because dates and deadlines are tabular.
+- News cards carry an article thumbnail when one is available: taken from the feed entry when present, otherwise extracted from the kept article's og:image tag (kept items only, best effort, never fatal). Thumbnail URLs repeated across items on a page are publisher logos and are suppressed; a broken image hides itself client-side.
+- News category order is medical education, clinical practice, general AI (owner preference, 2026-06-10), expressed in the feeds.yaml categories order (which drives the digest) and mirrored in the nav. The general_ai keep bar in prompts/curator.md explicitly excludes minor release notes, forum tinkering threads, and rumor posts.
 - Typography: Inter for text, JetBrains Mono for code. All card styling lives in `docs/stylesheets/extra.css` using Material CSS variables so light and dark schemes both work. The palette remains the placeholder pending AUA branding (section 13).
 
 ## 13. Out of scope

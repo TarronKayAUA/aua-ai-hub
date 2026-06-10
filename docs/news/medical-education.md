@@ -8,78 +8,111 @@ Items are selected nightly by an automated pipeline and link to their original s
 
 <div class="news-list">
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267500?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">The role of emerging technology in expanding regional anesthesia education and patient access</a>
-  <p class="news-card-summary">Emerging technologies are identified as enhancing regional anesthesia education and expanding patient access.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267500?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">The role of emerging technology in expanding regional anesthesia education and patient access</a>
+    <p class="news-card-summary">Emerging technologies are identified as enhancing regional anesthesia education and expanding patient access.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266631?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Self-learning and Simulation in the 21st Century: From Textbooks to ChatGPT</a>
-  <p class="news-card-summary">The role of digital tools including ChatGPT in self-learning and simulation during medical training is examined.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266631?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Self-learning and Simulation in the 21st Century: From Textbooks to ChatGPT</a>
+    <p class="news-card-summary">The role of digital tools including ChatGPT in self-learning and simulation during medical training is examined.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266245?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Explainable Machine Learning Integrating Patient and Environmental Factors for Predicting Multidrug-Resistant Organism Colonization or Infection on ICU Admission</a>
-  <p class="news-card-summary">Machine learning integrating patient and environmental factors predicted multidrug-resistant organism colonization and infection.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266245?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Explainable Machine Learning Integrating Patient and Environmental Factors for Predicting Multidrug-Resistant Organism Colonization or Infection on ICU Admission</a>
+    <p class="news-card-summary">Machine learning integrating patient and environmental factors predicted multidrug-resistant organism colonization and infection.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266218?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Application of an artificial-intelligence-based transesophageal echocardiography simulation system in residency training</a>
-  <p class="news-card-summary">An artificial intelligence-based transesophageal echocardiography simulation system improved resident training performance.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266218?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Application of an artificial-intelligence-based transesophageal echocardiography simulation system in residency training</a>
+    <p class="news-card-summary">An artificial intelligence-based transesophageal echocardiography simulation system improved resident training performance.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42265968?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Evaluating a DeepSeek-Based Case-Based Learning Approach for Teaching the Emergency Management of Urosepsis to Nursing Students</a>
-  <p class="news-card-summary">A DeepSeek-based case-based learning approach improved nursing students&#x27; emergency management education for urosepsis.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42265968?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Evaluating a DeepSeek-Based Case-Based Learning Approach for Teaching the Emergency Management of Urosepsis to Nursing Students</a>
+    <p class="news-card-summary">A DeepSeek-based case-based learning approach improved nursing students&#x27; emergency management education for urosepsis.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267893?fc=20260609215449&amp;ff=20260610121559&amp;v=2.20.0">Integrating Artificial Intelligence-Based Simulation into Serious Illness Conversation Training: A Pilot Medical Student Intervention</a>
-  <p class="news-card-summary">A pilot study tested artificial intelligence-based simulation as a training tool for medical students to practice serious illness conversations.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267893?fc=20260609215449&amp;ff=20260610121559&amp;v=2.20.0">Integrating Artificial Intelligence-Based Simulation into Serious Illness Conversation Training: A Pilot Medical Student Intervention</a>
+    <p class="news-card-summary">A pilot study tested artificial intelligence-based simulation as a training tool for medical students to practice serious illness conversations.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42261384?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Large language models in emergency and critical care medicine: a comprehensive review of applications, challenges, and future directions</a>
-  <p class="news-card-summary">Emergency and critical care medicine requires the rapid synthesis of heterogeneous clinical data under extreme time constraints.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42261384?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Large language models in emergency and critical care medicine: a comprehensive review of applications, challenges, and future directions</a>
+    <p class="news-card-summary">Emergency and critical care medicine requires the rapid synthesis of heterogeneous clinical data under extreme time constraints.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42263543?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Development and clinical usability assessment of a web-based AI platform for automated echocardiography analysis</a>
-  <p class="news-card-summary">A web-based AI platform, EchoAI, showed vendor-agnostic, domain-adaptive automated echocardiography analysis with clinical usability.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42263543?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Development and clinical usability assessment of a web-based AI platform for automated echocardiography analysis</a>
+    <p class="news-card-summary">A web-based AI platform, EchoAI, showed vendor-agnostic, domain-adaptive automated echocardiography analysis with clinical usability.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95218">Re-Centering Clinical Documentation in the Age of AI Scribes: Four Aims of the Patient Chart Note</a>
-  <p class="news-card-summary">Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95218">Re-Centering Clinical Documentation in the Age of AI Scribes: Four Aims of the Patient Chart Note</a>
+    <p class="news-card-summary">Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/1305e7c44bd471c8e7ffc3b81f1f68a0.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e64402">Perspectives of Premedical Students at a Medical University College in Malaysia Regarding Augmented Reality Integration in Anatomy Education: Cross-Sectional Study</a>
-  <p class="news-card-summary">Background: For novice anatomy learners, studying human anatomy using textbooks, 2D learning materials, and static anatomical models frequently causes challenges in understanding complex anatomical structures.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e64402">Perspectives of Premedical Students at a Medical University College in Malaysia Regarding Augmented Reality Integration in Anatomy Education: Cross-Sectional Study</a>
+    <p class="news-card-summary">Background: For novice anatomy learners, studying human anatomy using textbooks, 2D learning materials, and static anatomical models frequently causes challenges in understanding complex anatomical structures.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/7aa6d5b8990a52e49026e1101f2ef185.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88511">AI Integration in Spanish Undergraduate Medical Education: National Cross-Sectional Study</a>
-  <p class="news-card-summary">Background: Artificial intelligence (AI) is reshaping clinical practice and redefining the competencies future physicians will need.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88511">AI Integration in Spanish Undergraduate Medical Education: National Cross-Sectional Study</a>
+    <p class="news-card-summary">Background: Artificial intelligence (AI) is reshaping clinical practice and redefining the competencies future physicians will need.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/2c562552f541b9b728e0a99a4a27fb6a.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42258369?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">360 Video-Based Virtual Reality for Preparing Medical Students for Body Donor Dissection: Randomized Controlled Trial</a>
-  <p class="news-card-summary">CONCLUSIONS: The 360° video-based VR intervention significantly reduced TA and was perceived as valuable for emotional and procedural preparation.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42258369?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">360 Video-Based Virtual Reality for Preparing Medical Students for Body Donor Dissection: Randomized Controlled Trial</a>
+    <p class="news-card-summary">CONCLUSIONS: The 360° video-based VR intervention significantly reduced TA and was perceived as valuable for emotional and procedural preparation.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42257174?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Narrative Review on History of Point-of-Care Ultrasound Training in Critical Care</a>
-  <p class="news-card-summary">CONCLUSION: PoCUS training has advanced considerably but remains fragmented.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42257174?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Narrative Review on History of Point-of-Care Ultrasound Training in Critical Care</a>
+    <p class="news-card-summary">CONCLUSION: PoCUS training has advanced considerably but remains fragmented.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42257171?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Artificial intelligence in clinical physiology: System-wise applications in diagnostics, monitoring, and medical education</a>
-  <p class="news-card-summary">CONCLUSION: AI possesses the potential to revolutionize clinical physiology by facilitating predictive, personalized, and participatory healthcare.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42257171?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Artificial intelligence in clinical physiology: System-wise applications in diagnostics, monitoring, and medical education</a>
+    <p class="news-card-summary">CONCLUSION: AI possesses the potential to revolutionize clinical physiology by facilitating predictive, personalized, and participatory healthcare.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42255338?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Knowledge, Attitude, and Perception of Medical Students Toward AI-Based Learning: A Cross-Sectional Study</a>
-  <p class="news-card-summary">CONCLUSION: Medical students in KP exhibit strong enthusiasm and positive perceptions toward AI-based learning, yet their knowledge remains modest and uneven across training levels.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42255338?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Knowledge, Attitude, and Perception of Medical Students Toward AI-Based Learning: A Cross-Sectional Study</a>
+    <p class="news-card-summary">CONCLUSION: Medical students in KP exhibit strong enthusiasm and positive perceptions toward AI-based learning, yet their knowledge remains modest and uneven across training levels.</p>
+  </div>
 </div>
 </div>

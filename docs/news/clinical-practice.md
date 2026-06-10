@@ -8,78 +8,115 @@ Items are selected nightly by an automated pipeline and link to their original s
 
 <div class="news-list">
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02877-y">Development and application of an intelligent assessment system for medical clinical skill training</a>
-  <p class="news-card-summary">An intelligent assessment system was developed and applied for medical clinical skill training.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81644">Understanding Transformer-Based Classifications of Medical Text Using a Large Language Model for the Attribution of Feature Importance: Proof-of-Concept Algorithm Development and Validation Study</a>
+    <p class="news-card-summary">This study investigates transformer-based deep learning models for classifying medical text and explores feature importance attribution using a large language model.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/1cde701310306d1d4e6eb3a8765adf4c.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02731-1">Smartphone-based detection of subtle memory decline in prodromal Alzheimer’s disease</a>
-  <p class="news-card-summary">Smartphone-based detection methods identified subtle memory decline in early Alzheimer&#x27;s disease.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02877-y">Development and application of an intelligent assessment system for medical clinical skill training</a>
+    <p class="news-card-summary">An intelligent assessment system was developed and applied for medical clinical skill training.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02729-9">Human, AI collaboration for dysphagia rehabilitation from effectiveness to implementation complexity: a systematic review</a>
-  <p class="news-card-summary">A systematic review examined human and artificial intelligence collaboration for dysphagia rehabilitation including effectiveness and implementation challenges.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02731-1">Smartphone-based detection of subtle memory decline in prodromal Alzheimer’s disease</a>
+    <p class="news-card-summary">Smartphone-based detection methods identified subtle memory decline in early Alzheimer&#x27;s disease.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04444-0">Brain Health for Economic Resilience: a data-driven framework for the brain-positive economic transition</a>
-  <p class="news-card-summary">A data-driven framework was introduced linking brain health to economic resilience for brain-positive economic transition.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02729-9">Human, AI collaboration for dysphagia rehabilitation from effectiveness to implementation complexity: a systematic review</a>
+    <p class="news-card-summary">A systematic review examined human and artificial intelligence collaboration for dysphagia rehabilitation including effectiveness and implementation challenges.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-  <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04436-0">Dual-target gene therapy in Parkinson’s disease: a multicenter phase 1 trial</a>
-  <p class="news-card-summary">Phase 1 trial results were reported for dual-target gene therapy in Parkinson&#x27;s disease.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04444-0">Brain Health for Economic Resilience: a data-driven framework for the brain-positive economic transition</a>
+    <p class="news-card-summary">A data-driven framework was introduced linking brain health to economic resilience for brain-positive economic transition.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80574">Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study</a>
-  <p class="news-card-summary">Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04436-0">Dual-target gene therapy in Parkinson’s disease: a multicenter phase 1 trial</a>
+    <p class="news-card-summary">Phase 1 trial results were reported for dual-target gene therapy in Parkinson&#x27;s disease.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 8, 2026</span></div>
-  <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02767-3">Federated orthogonal learning for detection of liver lesions from multi-phase contrast-enhanced CT images</a>
-  <p class="news-card-summary">Researchers present a federated orthogonal learning method for detecting liver lesions using multi-phase contrast-enhanced computed tomography images without sharing patient data across centers.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02884-z">Noninvasive PPROM risk stratification with explainable AI using routine antenatal CRP and albumin</a>
+    <p class="news-card-summary">The study presents an explainable artificial intelligence model for noninvasive risk stratification of preterm premature rupture of membranes based on routine antenatal C-reactive protein and albumin measurements.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 5, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84194">Knowledge, Attitudes, Practices, Barriers, and Promotional Strategies Related to Clinical Data Interchange Standards Consortium Adoption Among Clinical Data Management Professionals: Semiqualitative Interview Study</a>
-  <p class="news-card-summary">Background: National Medical Products Administration of China has actively encouraged organizations to adopt the Clinical Data Interchange Standards Consortium (CDISC) for clinical data submission since 2020.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02816-x">Benchmarking deep learning architectures for MALDI-TOF mass spectrometry in infectious disease diagnostics and vector-borne disease surveillance</a>
+    <p class="news-card-summary">This paper benchmarks deep learning architectures for matrix-assisted laser desorption/ionization time-of-flight mass spectrometry applied to infectious disease diagnostics and vector-borne disease surveillance.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80403">Histopathological Assessment of Myocardial Ischemia-Reperfusion Injury Using Transformer-Based Artificial Intelligence: Model Comparison Study</a>
-  <p class="news-card-summary">Background: Myocardial ischemia-reperfusion injury (MIRI) poses diagnostic challenges due to complex histopathological changes.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80574">Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study</a>
+    <p class="news-card-summary">Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/29c3afc5b617a820185fb531df6a4456.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78471">Early Immunological Biomarkers for Personalized Treatment Selection in Severe COVID-19: Post Hoc Machine Learning Analysis of a Randomized Clinical Trial</a>
-  <p class="news-card-summary">Background: Severe COVID-19 is a global health concern despite continuous vaccination campaigns because current therapies, such as dexamethasone and remdesivir, do not considerably improve immune function, especially in high-risk individuals.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02767-3">Federated orthogonal learning for detection of liver lesions from multi-phase contrast-enhanced CT images</a>
+    <p class="news-card-summary">Researchers present a federated orthogonal learning method for detecting liver lesions using multi-phase contrast-enhanced computed tomography images without sharing patient data across centers.</p>
+  </div>
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78931">Advancing Gastrointestinal Cancer Risk Prediction With Patient-Centered Machine Learning: Machine Learning Modeling Study</a>
-  <p class="news-card-summary">Background: Gastrointestinal (GI) cancers are a significant health concern in South Korea.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 5, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84194">Knowledge, Attitudes, Practices, Barriers, and Promotional Strategies Related to Clinical Data Interchange Standards Consortium Adoption Among Clinical Data Management Professionals: Semiqualitative Interview Study</a>
+    <p class="news-card-summary">Background: National Medical Products Administration of China has actively encouraged organizations to adopt the Clinical Data Interchange Standards Consortium (CDISC) for clinical data submission since 2020.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/2db9d4bc30b7e7a417840e319605bee7.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 3, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82545">Clinical Note Generation From Doctor-Patient Conversations Using Parameter-Efficient Fine-Tuning Large Language Models: Comparative Study</a>
-  <p class="news-card-summary">Background: Clinical note documentation is a vital yet time-intensive task in health care.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80403">Histopathological Assessment of Myocardial Ischemia-Reperfusion Injury Using Transformer-Based Artificial Intelligence: Model Comparison Study</a>
+    <p class="news-card-summary">Background: Myocardial ischemia-reperfusion injury (MIRI) poses diagnostic challenges due to complex histopathological changes.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/5d68991295f9af0cc9ac2b8f71b02433.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 3, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77872">Development and Interpretability Analysis of a Stacking Ensemble Model for Early Prediction of Nutritional Risk in Intensive Care Unit Patients: Retrospective Cohort Study</a>
-  <p class="news-card-summary">Background: Malnutrition in critically ill patients is associated with increased morbidity and mortality, yet traditional screening tools such as the modified NUTRIC (mNUTRIC) score often rely on subjective assessments or delayed data, limiting their utility for early intervention in the dynamic intensive care unit (ICU) environment.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78471">Early Immunological Biomarkers for Personalized Treatment Selection in Severe COVID-19: Post Hoc Machine Learning Analysis of a Randomized Clinical Trial</a>
+    <p class="news-card-summary">Background: Severe COVID-19 is a global health concern despite continuous vaccination campaigns because current therapies, such as dexamethasone and remdesivir, do not considerably improve immune function, especially in high-risk individuals.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/473ac05e9ac01567d1fdc858174a8970.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 2, 2026</span></div>
-  <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90011">Novel Online Platform for Trauma Care-Integrating Trauma Phenotypes to Optimize the Trauma and Injury Severity Score Model: Retrospective Cohort Study</a>
-  <p class="news-card-summary">Background: Severe trauma remains a leading cause of admission to the intensive care unit.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78931">Advancing Gastrointestinal Cancer Risk Prediction With Patient-Centered Machine Learning: Machine Learning Modeling Study</a>
+    <p class="news-card-summary">Background: Gastrointestinal (GI) cancers are a significant health concern in South Korea.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/0e8b638413385a0fa0979e49ef6bd5af.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
-  <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 1, 2026</span></div>
-  <a class="news-card-title" href="https://ai.jmir.org/2026/1/e81103">Improving Vancomycin Therapeutic Drug Monitoring With a Deep Learning, Based Two-Compartment Predictive Model: Development and Validation Study</a>
-  <p class="news-card-summary">Researchers developed and validated a deep learning two-compartment pharmacokinetic recurrent neural network model to improve vancomycin therapeutic drug monitoring.</p>
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 3, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82545">Clinical Note Generation From Doctor-Patient Conversations Using Parameter-Efficient Fine-Tuning Large Language Models: Comparative Study</a>
+    <p class="news-card-summary">Background: Clinical note documentation is a vital yet time-intensive task in health care.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/fae3bccf21795adeba00145d9b8778c7.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

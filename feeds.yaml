@@ -35,26 +35,9 @@ llm:
     api_version: "2023-06-01"
     max_payload_chars: 600000
 
+# Category order is meaningful: it sets the section order in the weekly
+# digest and mirrors the nav (medical education first, per owner preference).
 categories:
-  general_ai:
-    label: General AI
-    feeds:
-      - name: Simon Willison's weblog
-        url: https://simonwillison.net/atom/everything/
-      - name: Hugging Face blog
-        url: https://huggingface.co/blog/feed.xml
-      - name: Hacker News (LLM, 100+ points)
-        url: https://hnrss.org/newest?q=LLM+OR+%22language+model%22&points=100
-      - name: r/LocalLLaMA weekly top
-        url: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=week
-      - name: arXiv cs.CL
-        url: https://rss.arxiv.org/rss/cs.CL
-        weight: 0.5
-      - name: Ars Technica AI
-        url: https://arstechnica.com/ai/feed/
-      - name: LMArena blog
-        url: https://news.lmarena.ai/rss/
-
   medical_education:
     label: Medical Education
     feeds:
@@ -91,6 +74,25 @@ categories:
       - name: Nature Medicine
         url: https://www.nature.com/nm.rss
         weight: 0.7
+
+  general_ai:
+    label: General AI
+    feeds:
+      - name: Simon Willison's weblog
+        url: https://simonwillison.net/atom/everything/
+      - name: Hugging Face blog
+        url: https://huggingface.co/blog/feed.xml
+      - name: Hacker News (LLM, 100+ points)
+        url: https://hnrss.org/newest?q=LLM+OR+%22language+model%22&points=100
+      - name: r/LocalLLaMA weekly top
+        url: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=week
+      - name: arXiv cs.CL
+        url: https://rss.arxiv.org/rss/cs.CL
+        weight: 0.5
+      - name: Ars Technica AI
+        url: https://arstechnica.com/ai/feed/
+      - name: LMArena blog
+        url: https://news.lmarena.ai/rss/
 
 # Benchmarks page data source. The pipeline discovers the current LiveBench
 # release from the site's app bundle each night; if discovery or the fetch
