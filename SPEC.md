@@ -331,6 +331,11 @@ All phases:
 - A privacy-respecting visit counter (GoatCounter, cookie-free, site code tarronkay) runs from `docs/javascripts/counter.js` and is disclosed on the About page. This amends the section 13 exclusion of analytics, by owner decision.
 - `conference-watch.yml`: monthly workflow running `scripts/conference_watch.py`, which fetches each official page in `data/conferences.yaml` plus the recurring events in `data/conference_watchlist.yaml`, has the LLM extract explicitly stated dates for the next edition, filters non-actionable noise (past editions, cosmetic location rewording, deadlines already marked passed), and opens a GitHub issue proposing changes with evidence quotes and source links. The script never edits data files; conference data stays human-in-the-loop per section 9.
 
+### Governance section (owner approved 2026-06-11)
+
+- `docs/governance/policy.md` carries the approved AI Responsible Use Policy verbatim (currently the version effective July 30, 2025), headed by a status block with effective and last-update dates. Only approved policy text is ever published; drafts under committee review never appear. When a revised policy is approved, the page is updated and the superseded version is archived with clear status labeling. The policy was scanned before publication and contains no emails, URLs, or internal-only references. Source document retained in `documents/` (not deployed).
+- `docs/governance/committee.md` lists the AI Governance Committee from `data/committee.yaml` (owner-owned), rendered by the hook as photo cards with name, committee role badge, and title/affiliation lines. Per owner decision, no institutional email addresses appear on the public page. Member photos live in `graphics/` and are processed to `docs/assets/committee/` by `scripts/build_brand_assets.py`.
+
 ### Visual conventions
 
 - Homepage: hero block (gradient on the theme primary color, mission line, two buttons), Material grid cards for the four start-here sections, Latest items list, Latest videos strip, pinned announcements, last-updated stamp.

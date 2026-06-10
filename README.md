@@ -80,6 +80,15 @@ issue, check each proposal against its linked source, edit
 the nightly run to the Anthropic path automatically; removing it switches
 back. Mind the GitHub Models 8,000-token request cap (`max_payload_chars`).
 
+**Update the committee roster** — edit `data/committee.yaml`; for a new
+member, add their photo to `graphics/`, map it in
+`scripts/build_brand_assets.py`, and run that script; build strict, commit.
+
+**Replace the AI policy when a new version is approved** — move the old text
+in `docs/governance/policy.md` to a clearly labeled superseded archive page,
+paste the newly approved text verbatim with its effective date in the status
+block, and never publish drafts.
+
 **Update branding** — drop new artwork in `graphics/`, run
 `python scripts/build_brand_assets.py` (needs `pip install pillow`), review
 the regenerated files in `docs/assets/`, build strict, commit.

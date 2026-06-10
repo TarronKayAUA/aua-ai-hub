@@ -102,14 +102,38 @@ def main():
         "wordmark-white.png": white_knockout(wordmark, 800),
         "favicon.png": circle_transparent(seal, 180),
     }
+    def square(path: Path, size: int) -> Image.Image:
+        img = Image.open(path).convert("RGB")
+        side = min(img.size)
+        left = (img.width - side) // 2
+        top = (img.height - side) // 2
+        return img.crop((left, top, left + side, top + side)).resize(
+            (size, size), Image.LANCZOS)
+
     profile_path = GRAPHICS / "Profile Photo.jpg"
     if profile_path.exists():
-        profile = Image.open(profile_path).convert("RGB")
-        side = min(profile.size)
-        left = (profile.width - side) // 2
-        top = (profile.height - side) // 2
-        profile = profile.crop((left, top, left + side, top + side))
-        outputs["profile.jpg"] = profile.resize((480, 480), Image.LANCZOS)
+        outputs["profile.jpg"] = square(profile_path, 480)
+
+    # Committee photos: source file in graphics/ -> web asset slug.
+    committee = {
+        "Profile Photo.jpg": "tarron-kayalackakom.jpg",
+        "Ricardo Hood.jpg": "ricardo-hood.jpg",
+        "Prasanna Honnavar.jpg": "prasanna-honnavar.jpg",
+        "Juan Acuna.jpg": "juan-acuna.jpg",
+        "Courtney Lewis.jpg": "courtney-lewis.jpg",
+        "Ujjal Bose.jpg": "ujjal-bose.jpg",
+        "Ramos Amith.png": "amith-ramos.jpg",
+        "Warren Barrymore.jpg": "warren-barrymore.jpg",
+        "Leona Dickenson.jpg": "leona-dickenson.jpg",
+        "Elvis Anunwa.png": "elvis-anunwa.jpg",
+    }
+    (ASSETS / "committee").mkdir(parents=True, exist_ok=True)
+    for source, slug in committee.items():
+        src_path = GRAPHICS / source
+        if src_path.exists():
+            outputs[f"committee/{slug}"] = square(src_path, 320)
+        else:
+            print(f"WARNING: missing committee photo {source}")
     for name, img in outputs.items():
         path = ASSETS / name
         if name.endswith(".jpg"):

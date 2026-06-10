@@ -25,6 +25,7 @@ TOOLS_MARKER = "<!-- render:tools -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
+COMMITTEE_MARKER = "<!-- render:committee -->"
 
 PROMPT_CATEGORY_LABELS = {
     "research": "Research",
@@ -199,6 +200,41 @@ def _render_prompts(config) -> str:
     return "\n".join(lines)
 
 
+# --- committee ----------------------------------------------------------------
+
+
+def _render_committee(config) -> str:
+    members = _load(_data_dir(config) / "committee.yaml")
+
+    cards = []
+    for member in members:
+        role = member["committee_role"]
+        role_css = "badge-approved" if role == "Chair" else (
+            "badge-conditional" if role == "Student Representative"
+            else "badge-under-review")
+        lines = "".join(
+            f'<span class="committee-line">{line}</span>'
+            for line in member.get("lines", [])
+        )
+        cards.append(
+            '<div class="committee-card">\n'
+            f'  <img src="../../assets/committee/{member["photo"]}" '
+            f'alt="Portrait of {member["name"]}" loading="lazy">\n'
+            f'  <span class="committee-name">{member["name"]}</span>\n'
+            f'  {_badge(role, role_css)}\n'
+            f'  {lines}\n'
+            "</div>"
+        )
+
+    print("render_data: committee verification")
+    print(f"  members read : {len(members)}")
+    print(f"  cards rendered: {len(cards)} (cross-check "
+          f"{'ok' if len(cards) == len(members) else 'MISMATCH'})")
+    if len(cards) != len(members):
+        raise AssertionError("render_data hook: committee count mismatch")
+    return ('<div class="committee-grid">\n' + "\n".join(cards) + "\n</div>")
+
+
 # --- conferences ------------------------------------------------------------
 
 
@@ -335,6 +371,13 @@ def on_page_markdown(markdown, page, config, files):
                 f"{CONFERENCES_MARKER} marker"
             )
         return markdown.replace(CONFERENCES_MARKER, _render_conferences(config))
+    if src == "governance/committee.md":
+        if COMMITTEE_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: governance/committee.md is missing the "
+                f"{COMMITTEE_MARKER} marker"
+            )
+        return markdown.replace(COMMITTEE_MARKER, _render_committee(config))
     if src == "prompts/index.md":
         if PROMPTS_MARKER not in markdown:
             raise AssertionError(

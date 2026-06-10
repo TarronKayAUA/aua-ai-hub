@@ -1,0 +1,74 @@
+# AI Governance Committee roster. Rendered into docs/governance/committee.md
+# at build time by scripts/render_data.py. Edit this file only; never the
+# rendered page. Photos live in graphics/ and are processed into
+# docs/assets/committee/ by scripts/build_brand_assets.py.
+#
+# Per owner decision (2026-06-11): no institutional email addresses on the
+# public page; photos, names, and titles/affiliations only.
+
+- name: Dr. Tarron Kayalackakom
+  committee_role: Chair
+  lines:
+    - Assistant Dean for AI in Medical Education
+    - Assistant Professor, Education Enhancement Department
+  photo: tarron-kayalackakom.jpg
+
+- name: Dr. Ricardo Hood
+  committee_role: Member
+  lines:
+    - Professor; Dean of Preclinical Sciences
+    - Department of Clinical Medicine
+  photo: ricardo-hood.jpg
+
+- name: Dr. Prasanna Honnavar
+  committee_role: Member
+  lines:
+    - Associate Professor; AUA IRB Chair
+    - Department of Microbiology & Immunology
+  photo: prasanna-honnavar.jpg
+
+- name: Dr. Juan Acuna
+  committee_role: Member
+  lines:
+    - Professor; Dean of Research
+    - Prasanna School of Public Health
+  photo: juan-acuna.jpg
+
+- name: Dr. Courtney Lewis
+  committee_role: Member
+  lines:
+    - Assistant Professor
+    - Department of Clinical Medicine
+  photo: courtney-lewis.jpg
+
+- name: Dr. Ujjal Bose
+  committee_role: Member
+  lines:
+    - Associate Professor
+    - Department of Pharmacology
+  photo: ujjal-bose.jpg
+
+- name: Dr. Amith Ramos
+  committee_role: Member
+  lines:
+    - Professor
+    - Department of Anatomy & Medical Imaging
+  photo: amith-ramos.jpg
+
+- name: Warren Barrymore
+  committee_role: Member
+  lines:
+    - Director, Campus Technology Services
+  photo: warren-barrymore.jpg
+
+- name: Leona Dickenson
+  committee_role: Member
+  lines:
+    - Administrative Assistant
+  photo: leona-dickenson.jpg
+
+- name: Elvis Anunwa
+  committee_role: Student Representative
+  lines:
+    - Med 5
+  photo: elvis-anunwa.jpg

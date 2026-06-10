@@ -17,7 +17,7 @@ Human oversight: the source lists, selection criteria, and summarization instruc
 
 ## Governance note
 
-The [tools directory](tools/index.md) carries governance status badges, and the [prompt library](prompts/index.md) carries review status badges. Both are provisional until ratified through the AI Governance Committee process. Nothing on this site is institutional policy unless explicitly marked as such.
+The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Governance Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) carries governance status badges, and the [prompt library](prompts/index.md) carries review status badges; both are provisional until ratified through the committee process. Nothing else on this site is institutional policy unless explicitly marked as such.
 
 ## Privacy
 
@@ -32,7 +32,7 @@ This site is informational. AI-generated summaries and descriptions may contain 
 <div class="maintainer-card">
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
 <div class="maintainer-bio">
-<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean for Artificial Intelligence in Medical Education at the American University of Antigua College of Medicine and chair of the university's AI Governance Committee. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
+<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean for Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Governance Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
 </div>
 </div>
 

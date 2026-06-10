@@ -86,6 +86,9 @@ nav:
       - Archive: news/archive/index.md
   - Benchmarks: benchmarks.md
   - Conferences: conferences.md
+  - Governance:
+      - AI Responsible Use Policy: governance/policy.md
+      - Governance Committee: governance/committee.md
   - Announcements:
       - announcements/index.md
   - About: about.md
