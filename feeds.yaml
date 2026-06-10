@@ -92,6 +92,15 @@ categories:
         url: https://www.nature.com/nm.rss
         weight: 0.7
 
+# Benchmarks page data source. The pipeline discovers the current LiveBench
+# release from the site's app bundle each night; if discovery or the fetch
+# fails, the previously rendered table is kept and the failure is logged.
+benchmarks:
+  livebench:
+    base_url: https://livebench.ai
+    fallback_version: "2026_01_08"
+    rows: 15
+
 # Curated YouTube channels for the Videos page. Feed URLs derive from
 # channel_id: https://www.youtube.com/feeds/videos.xml?channel_id=<id>
 # All channel ids resolved from the channels' own pages and verified with

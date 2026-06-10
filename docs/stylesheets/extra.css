@@ -205,8 +205,15 @@
 }
 
 .video-card-meta {
-  padding: 0 0.7rem 0.65rem;
+  padding: 0 0.7rem 0.45rem;
   font-size: 0.66rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.video-card-desc {
+  padding: 0 0.7rem 0.65rem;
+  font-size: 0.68rem;
+  line-height: 1.45;
   color: var(--md-default-fg-color--light);
 }
 

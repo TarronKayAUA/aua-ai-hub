@@ -11,40 +11,48 @@ Cards link to YouTube; nothing plays on this site.
   <img src="https://i2.ytimg.com/vi/Y9Wz2PV404E/hqdefault.jpg" alt="Video: Introducing Claude Fable 5" loading="lazy">
   <span class="video-card-title">Introducing Claude Fable 5</span>
   <span class="video-card-meta">Anthropic, June 9, 2026</span>
+  <span class="video-card-desc">Anthropic introduces Claude Fable 5, detailing its advanced capabilities and integrated safeguards aimed at enhancing responsible and secure AI deployment.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=4rEgNiP5V2E" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/4rEgNiP5V2E/hqdefault.jpg" alt="Video: Anthropic Calls for &quot;Global AI Pause&quot;" loading="lazy">
   <span class="video-card-title">Anthropic Calls for &quot;Global AI Pause&quot;</span>
   <span class="video-card-meta">Wes Roth, June 5, 2026</span>
+  <span class="video-card-desc">Wes Roth reports on Anthropic&#x27;s call for a global moratorium on AI development to address ethical and safety concerns related to advanced AI systems.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Dkqzqw8rxXI" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/Dkqzqw8rxXI/hqdefault.jpg" alt="Video: DeepMind’s New AI Found A Strange New Way To Think" loading="lazy">
   <span class="video-card-title">DeepMind’s New AI Found A Strange New Way To Think</span>
   <span class="video-card-meta">Two Minute Papers, June 5, 2026</span>
+  <span class="video-card-desc">This video explains a new computational approach discovered by DeepMind&#x27;s AI that alters traditional problem-solving strategies, providing insight into innovative AI thinking models.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=7qZH3D7u-z8" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/7qZH3D7u-z8/hqdefault.jpg" alt="Video: OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents" loading="lazy">
   <span class="video-card-title">OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents</span>
   <span class="video-card-meta">IBM Technology, June 4, 2026</span>
+  <span class="video-card-desc">This video outlines six security risks identified by OpenClaw related to autonomous AI agents and discusses potential vulnerabilities in agent-driven AI systems.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=ypL7kUiw_LM" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/ypL7kUiw_LM/hqdefault.jpg" alt="Video: Claude Opus 4.8: Lying Machine No More?" loading="lazy">
   <span class="video-card-title">Claude Opus 4.8: Lying Machine No More?</span>
   <span class="video-card-meta">Two Minute Papers, June 3, 2026</span>
+  <span class="video-card-desc">The video evaluates Anthropic&#x27;s Claude Opus 4.8, focusing on improvements in reducing false outputs and the model&#x27;s reliability in generating truthful responses.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=yz6I23VRbdg" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/yz6I23VRbdg/hqdefault.jpg" alt="Video: What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean" loading="lazy">
   <span class="video-card-title">What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean</span>
   <span class="video-card-meta">Two Minute Papers, June 1, 2026</span>
+  <span class="video-card-desc">Jeff Dean discusses potential developments and impacts in artificial intelligence after a significant increase in computational power by a factor of one million.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=DAlC8mL5ZlI" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/DAlC8mL5ZlI/hqdefault.jpg" alt="Video: Why AI Models Pause to Think: Test Time Compute Explained" loading="lazy">
   <span class="video-card-title">Why AI Models Pause to Think: Test Time Compute Explained</span>
   <span class="video-card-meta">IBM Technology, June 1, 2026</span>
+  <span class="video-card-desc">IBM Technology explains the reasons why AI models exhibit pauses during interaction, describing the concept of test time computation for decision-making processes.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=p6Npi-HBoRU" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/p6Npi-HBoRU/hqdefault.jpg" alt="Video: MiniMax M3 IS INSANE! BEST Opensource AI Model! Beats Opus 4.7 and 50x Cheaper! (Fully Tested)" loading="lazy">
   <span class="video-card-title">MiniMax M3 IS INSANE! BEST Opensource AI Model! Beats Opus 4.7 and 50x Cheaper! (Fully Tested)</span>
   <span class="video-card-meta">WorldofAI, June 1, 2026</span>
+  <span class="video-card-desc">An assessment of the MiniMax M3 open-source AI model highlights its performance benefits and cost efficiency compared to other models like Claude Opus 4.7.</span>
 </a>
 </div>

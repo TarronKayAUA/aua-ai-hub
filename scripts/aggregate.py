@@ -20,11 +20,14 @@ Flags: --dry-run (no writes), --no-llm (force keyword mode), --since-days N
 """
 
 import argparse
+import csv
 import hashlib
 import html
+import io
 import json
 import os
 import re
+import statistics
 import sys
 import time
 from dataclasses import dataclass, field
@@ -49,6 +52,7 @@ LATEST_INCLUDE = REPO / "includes" / "latest.md"
 DIGEST_PATH = REPO / "docs" / "digest.xml"
 CURATOR_PROMPT_PATH = REPO / "prompts" / "curator.md"
 CONFERENCE_FLAGS_PATH = REPO / "data" / "conference_flags.md"
+LIVEBENCH_INCLUDE = REPO / "includes" / "livebench.md"
 
 USER_AGENT = "AUA-AI-Hub pipeline (github.com/TarronKayAUA/aua-ai-hub)"
 RETRIES = 2  # additional attempts after the first
@@ -290,6 +294,9 @@ def curate_videos_keyword(fresh_videos: list, max_keep: int) -> list:
         if per_channel.get(video.source, 0) >= 2:
             continue
         per_channel[video.source] = per_channel.get(video.source, 0) + 1
+        # No curator-written description in fallback mode; raw YouTube
+        # descriptions are too noisy to publish.
+        video.summary = ""
         kept.append(video)
         if len(kept) >= max_keep:
             break
@@ -321,6 +328,12 @@ def _video_grid_html(records: list[dict]) -> str:
     for r in records:
         published = datetime.fromisoformat(r["published"])
         title = html.escape(r["title"])
+        description = ""
+        if r.get("summary"):
+            description = (
+                f'\n  <span class="video-card-desc">'
+                f"{html.escape(r['summary'])}</span>"
+            )
         cards.append(
             f'<a class="video-card" href="{html.escape(r["url"])}" '
             'target="_blank" rel="noopener">\n'
@@ -328,10 +341,142 @@ def _video_grid_html(records: list[dict]) -> str:
             f'alt="Video: {title}" loading="lazy">\n'
             f'  <span class="video-card-title">{title}</span>\n'
             f'  <span class="video-card-meta">{html.escape(r["source"])}, '
-            f"{fmt_date(published)}</span>\n"
+            f"{fmt_date(published)}</span>{description}\n"
             "</a>"
         )
     return '<div class="video-grid">\n' + "\n".join(cards) + "\n</div>"
+
+
+# --- LiveBench table (Benchmarks page) ----------------------------------------
+
+
+def _livebench_discover_version(base_url: str, timeout: int) -> str | None:
+    """Find the current LiveBench release id by reading the site's app bundle.
+    Returns the underscored form used in data file names, or None."""
+    headers = {"User-Agent": USER_AGENT}
+    page = requests.get(base_url + "/", headers=headers, timeout=timeout)
+    page.raise_for_status()
+    bundle_match = re.search(r'src="(\./static/js/main\.[^"]+\.js)"', page.text)
+    if not bundle_match:
+        return None
+    bundle_url = base_url + bundle_match.group(1).lstrip(".")
+    bundle = requests.get(bundle_url, headers=headers, timeout=timeout)
+    bundle.raise_for_status()
+    version_match = re.search(r"LiveBench-(\d{4}-\d{2}-\d{2})", bundle.text)
+    if not version_match:
+        return None
+    return version_match.group(1).replace("-", "_")
+
+
+def update_livebench(config: dict, now: datetime, dry_run: bool,
+                     verbose: bool) -> str:
+    """Refresh includes/livebench.md from LiveBench's published data.
+    On any failure the previous include is kept. Returns a status string
+    for the verification block."""
+    cfg = config.get("benchmarks", {}).get("livebench")
+    if not cfg:
+        return "not configured"
+    timeout = 30
+    try:
+        version = None
+        try:
+            version = _livebench_discover_version(cfg["base_url"], timeout)
+        except requests.RequestException:
+            pass
+        if version is None:
+            version = cfg["fallback_version"]
+            discovery = "fallback version"
+        else:
+            discovery = "discovered"
+        headers = {"User-Agent": USER_AGENT}
+        table = requests.get(
+            f"{cfg['base_url']}/table_{version}.csv", headers=headers,
+            timeout=timeout,
+        )
+        table.raise_for_status()
+        if "csv" not in table.headers.get("content-type", ""):
+            raise ValueError("table response is not CSV")
+        categories = requests.get(
+            f"{cfg['base_url']}/categories_{version}.json", headers=headers,
+            timeout=timeout,
+        )
+        categories.raise_for_status()
+        groups = categories.json()
+
+        rows = []
+        for record in csv.DictReader(io.StringIO(table.text)):
+            cat_averages = {}
+            for group, tasks in groups.items():
+                scores = []
+                for task in tasks:
+                    value = record.get(task)
+                    if value not in (None, ""):
+                        try:
+                            scores.append(float(value))
+                        except ValueError:
+                            pass
+                if scores:
+                    cat_averages[group] = statistics.mean(scores)
+            if not cat_averages:
+                continue
+            rows.append(
+                {
+                    "model": record.get("model", "?"),
+                    "global": statistics.mean(cat_averages.values()),
+                    "cats": cat_averages,
+                }
+            )
+        if not rows:
+            raise ValueError("no usable rows in LiveBench table")
+        rows.sort(key=lambda r: -r["global"])
+        top = rows[: cfg.get("rows", 15)]
+
+        group_names = list(groups)
+        lines = [
+            GENERATED_HEADER,
+            "",
+            f"LiveBench release {version.replace('_', '-')}, fetched "
+            f"{fmt_date(now)}. Scores are 0 to 100; the global average is "
+            "the mean of the category averages. Data: "
+            "[LiveBench](https://livebench.ai/), an open, "
+            "contamination-aware benchmark.",
+            "",
+            "| # | Model | Global | " + " | ".join(group_names) + " |",
+            "| --- | --- | --- | " + " | ".join("---" for _ in group_names) + " |",
+        ]
+        for rank, row in enumerate(top, 1):
+            cells = " | ".join(
+                f"{row['cats'][g]:.1f}" if g in row["cats"] else "n/a"
+                for g in group_names
+            )
+            lines.append(
+                f"| {rank} | {remove_dashes(row['model'])} "
+                f"| **{row['global']:.1f}** | {cells} |"
+            )
+        content = "\n".join(lines) + "\n"
+        if dry_run:
+            print(f"[dry-run] would write includes/livebench.md "
+                  f"({len(top)} rows)")
+        else:
+            LIVEBENCH_INCLUDE.parent.mkdir(parents=True, exist_ok=True)
+            LIVEBENCH_INCLUDE.write_text(content, encoding="utf-8",
+                                         newline="\n")
+        return (f"updated ({discovery} {version}, {len(rows)} models, "
+                f"top {len(top)} rendered)")
+    except (requests.RequestException, ValueError, KeyError) as exc:
+        if verbose:
+            print(f"  livebench update failed: {type(exc).__name__}: {exc}")
+        if LIVEBENCH_INCLUDE.exists():
+            return f"kept previous table ({type(exc).__name__})"
+        if not dry_run:
+            LIVEBENCH_INCLUDE.parent.mkdir(parents=True, exist_ok=True)
+            LIVEBENCH_INCLUDE.write_text(
+                GENERATED_HEADER + "\n\nThe live table is temporarily "
+                "unavailable. See [LiveBench](https://livebench.ai/) "
+                "directly.\n",
+                encoding="utf-8", newline="\n",
+            )
+        return f"unavailable ({type(exc).__name__})"
 
 
 # --- LLM curation (SPEC section 9) -------------------------------------------
@@ -567,6 +712,12 @@ def curate_llm_videos(fresh_videos: list, config: dict, provider: str,
         item = by_id[decision["id"]]
         item.category = "videos"
         item.score = float(decision["importance"])
+        # Curator-written description shown under the card; when the model
+        # returns nothing usable, show no description rather than the raw
+        # YouTube description snippet.
+        item.summary = post_process_summary(
+            decision["summary"], "", llm_cfg["summary_word_cap"]
+        )
         kept_videos.append(item)
         if decision["is_cfp"]:
             cfp_items.append(item)
@@ -1093,6 +1244,9 @@ def main() -> int:
               len(archive_files))
         digest_written = True
 
+    livebench_status = update_livebench(config, now, args.dry_run,
+                                        args.verbose)
+
     if not args.dry_run:
         write_count = len(ledger["items"])
         LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -1133,6 +1287,7 @@ def main() -> int:
     print(f"videos in window : {len(videos_window)}, fresh after dedupe: "
           f"{len(fresh_videos)}, kept: {len(kept_videos)}")
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
+    print(f"livebench table  : {livebench_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {'written (' + week_key + ')' if digest_written else 'not due'}")
     if args.dry_run:

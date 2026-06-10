@@ -1874,7 +1874,7 @@
    "title": "DeepMind’s New AI Found A Strange New Way To Think",
    "source": "Two Minute Papers",
    "published": "2026-06-05T15:50:26+00:00",
-   "summary": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers 📝 The paper is available here:…",
+   "summary": "This video explains a new computational approach discovered by DeepMind's AI that alters traditional problem-solving strategies, providing insight into innovative AI thinking models.",
    "category": "videos",
    "score": 4.0,
    "thumbnail": "https://i1.ytimg.com/vi/Dkqzqw8rxXI/hqdefault.jpg"
@@ -1887,7 +1887,7 @@
    "title": "Claude Opus 4.8: Lying Machine No More?",
    "source": "Two Minute Papers",
    "published": "2026-06-03T13:49:31+00:00",
-   "summary": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers Anthropic's Opus 4.8:…",
+   "summary": "The video evaluates Anthropic's Claude Opus 4.8, focusing on improvements in reducing false outputs and the model's reliability in generating truthful responses.",
    "category": "videos",
    "score": 4.0,
    "thumbnail": "https://i2.ytimg.com/vi/ypL7kUiw_LM/hqdefault.jpg"
@@ -1900,7 +1900,7 @@
    "title": "What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean",
    "source": "Two Minute Papers",
    "published": "2026-06-01T15:41:22+00:00",
-   "summary": "Thank you to Google for the invite! 🙏 ❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers 🙏 We would like to thank…",
+   "summary": "Jeff Dean discusses potential developments and impacts in artificial intelligence after a significant increase in computational power by a factor of one million.",
    "category": "videos",
    "score": 4.0,
    "thumbnail": "https://i2.ytimg.com/vi/yz6I23VRbdg/hqdefault.jpg"
@@ -2015,7 +2015,7 @@
    "title": "MiniMax M3 IS INSANE! BEST Opensource AI Model! Beats Opus 4.7 and 50x Cheaper! (Fully Tested)",
    "source": "WorldofAI",
    "published": "2026-06-01T07:36:37+00:00",
-   "summary": "MiniMax is back with one of the most shocking AI releases yet… and this one might genuinely change how we build software. MiniMax Token Plan 12%…",
+   "summary": "An assessment of the MiniMax M3 open-source AI model highlights its performance benefits and cost efficiency compared to other models like Claude Opus 4.7.",
    "category": "videos",
    "score": 4.0,
    "thumbnail": "https://i1.ytimg.com/vi/p6Npi-HBoRU/hqdefault.jpg"
@@ -2082,7 +2082,7 @@
    "title": "Anthropic Calls for \"Global AI Pause\"",
    "source": "Wes Roth",
    "published": "2026-06-05T22:40:54+00:00",
-   "summary": "The latest AI News. Learn about LLMs, Gen AI and get ready for the rollout of AGI. Wes Roth covers the latest happenings in the world of OpenAI,…",
+   "summary": "Wes Roth reports on Anthropic's call for a global moratorium on AI development to address ethical and safety concerns related to advanced AI systems.",
    "category": "videos",
    "score": 5.0,
    "thumbnail": "https://i1.ytimg.com/vi/4rEgNiP5V2E/hqdefault.jpg"
@@ -2125,7 +2125,7 @@
    "title": "Introducing Claude Fable 5",
    "source": "Anthropic",
    "published": "2026-06-09T17:00:05+00:00",
-   "summary": "Claude Fable 5 is our most capable model yet, now generally available. It’s a Mythos-class model with safeguards that let us share it broadly…",
+   "summary": "Anthropic introduces Claude Fable 5, detailing its advanced capabilities and integrated safeguards aimed at enhancing responsible and secure AI deployment.",
    "category": "videos",
    "score": 4.0,
    "thumbnail": "https://i2.ytimg.com/vi/Y9Wz2PV404E/hqdefault.jpg"
@@ -2264,7 +2264,7 @@
    "title": "OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents",
    "source": "IBM Technology",
    "published": "2026-06-04T11:00:02+00:00",
-   "summary": "Learn more about What OpenClaw Reveals About Agentic AI Security Risks here → https://ibm.biz/~S29jyA638 OpenClaw security risks are bigger than you…",
+   "summary": "This video outlines six security risks identified by OpenClaw related to autonomous AI agents and discusses potential vulnerabilities in agent-driven AI systems.",
    "category": "videos",
    "score": 4.0,
    "thumbnail": "https://i4.ytimg.com/vi/7qZH3D7u-z8/hqdefault.jpg"
@@ -2289,7 +2289,7 @@
    "title": "Why AI Models Pause to Think: Test Time Compute Explained",
    "source": "IBM Technology",
    "published": "2026-06-01T11:00:01+00:00",
-   "summary": "Learn more about AI Models here → https://ibm.biz/~NE5Wjh0tm Chances are when you've seen a chatbot pause and say 'thinking,' a lot more is…",
+   "summary": "IBM Technology explains the reasons why AI models exhibit pauses during interaction, describing the concept of test time computation for decision-making processes.",
    "category": "videos",
    "score": 3.0,
    "thumbnail": "https://i1.ytimg.com/vi/DAlC8mL5ZlI/hqdefault.jpg"
@@ -2310,6 +2310,12 @@
    "url": "https://www.youtube.com/watch?v=kYkZI3oj2W4",
    "title_hash": "22d08d600f404408eb0a2aab0e60bee8",
    "first_seen": "2026-06-10T14:39:44.239927+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/10/jeremy-howard",
+   "title_hash": "49ad75b49140da6141a8e00c2b70569c",
+   "first_seen": "2026-06-10T15:37:26.740249+00:00",
    "kept": false
   }
  ],

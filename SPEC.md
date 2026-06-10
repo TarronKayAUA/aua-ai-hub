@@ -43,7 +43,7 @@ Three content classes, strictly separated:
 
 - Hand-authored (pipeline must never modify): everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `prompts/curator.md`.
 - Data-driven (rendered at build time from YAML): the conferences table and the tools directory.
-- Generated (humans never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `data/seen_items.json`.
+- Generated (humans never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `data/seen_items.json`.
 
 ## 3. Stack
 
@@ -306,6 +306,15 @@ All phases:
 - The pipeline fetches channels with the same per-feed error isolation, applies the video lookback window and keyword blocklist, skips YouTube Shorts, dedupes by canonical URL and the seen ledger (no fuzzy-title pass: distinct channels legitimately cover the same story), and curates with a second, videos-only LLM call using the same curator prompt and JSON contract. Any kept decision in that call is a video regardless of the category label the model returns. Keyword fallback: newest first, at most two per channel, up to the keep budget.
 - Outputs: `docs/news/videos.md` (thumbnail card grid, newest first, capped by `page_items`) and `includes/latest-videos.md` (homepage strip, `home_items` cards). Video cards show thumbnail, title, channel, and date, and link out to YouTube; nothing is embedded and no YouTube scripts load on the site. Thumbnails hotlink YouTube's standard `i.ytimg.com` images. The weekly digest gains a Videos section.
 - Channel roster changes are owner edits to feeds.yaml only. Roster as approved: Matthew Berman, Two Minute Papers, Bijan Bowen, WorldofAI, AI Search, Wes Roth, Anthropic, OpenAI, Google DeepMind, AI Explained, IBM Technology, Yannic Kilcher.
+
+### Video descriptions
+
+- The curator writes a one-sentence description (35-word cap, same style rules as news summaries) for every kept video, rendered under the card so readers know what a video covers before clicking. In keyword fallback mode videos carry no description; raw YouTube descriptions are never published.
+
+### Benchmarks page (owner approved 2026-06-10)
+
+- `docs/benchmarks.md` is hand-authored: a plain-language explainer on reading leaderboards plus link cards to Artificial Analysis, LiveBench, BenchLM, and LMArena.
+- The LiveBench snapshot table is generated nightly into `includes/livebench.md` and pulled in via snippets. The pipeline discovers the current LiveBench release id from the site's app bundle (falling back to a pinned version in the `benchmarks:` block of feeds.yaml), fetches the published per-task CSV and category mapping, computes category averages and the global average the way LiveBench's own leaderboard does, and renders the top N models with attribution and an as-of date. On any failure the previous snapshot is kept and the verification block says so; the build never breaks on upstream changes.
 
 ### Visual conventions
 

@@ -76,6 +76,7 @@ nav:
       - Clinical Practice: news/clinical-practice.md
       - Videos: news/videos.md
       - Archive: news/archive/index.md
+  - Benchmarks: benchmarks.md
   - Conferences: conferences.md
   - Announcements:
       - announcements/index.md
