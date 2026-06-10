@@ -2,10 +2,11 @@
 
 # This Week
 
-Digest for the week of June 8, 2026. Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
+Everything kept in the last seven days, refreshed nightly. Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
 
 ## Medical Education
 
+<div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
@@ -182,9 +183,11 @@ Digest for the week of June 8, 2026. Items are selected nightly by an automated 
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/e7fd404277b38c2f94c572dd5903f2d1.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+</div>
 
 ## Clinical Practice
 
+<div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
@@ -345,9 +348,11 @@ Digest for the week of June 8, 2026. Items are selected nightly by an automated 
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/placeholder.svg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+</div>
 
 ## General AI
 
+<div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
@@ -378,6 +383,7 @@ Digest for the week of June 8, 2026. Items are selected nightly by an automated 
     <p class="news-card-summary">Stanford&#x27;s CS336 course provides an educational resource on language modeling from scratch, useful for understanding foundational AI concepts.</p>
   </div>
   <img class="news-card-thumb" src="https://cs336.stanford.edu/assets/images/stanford-nlp-logo-new.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 </div>
 
 ## Videos
@@ -431,6 +437,11 @@ Digest for the week of June 8, 2026. Items are selected nightly by an automated 
   <span class="video-card-meta">WorldofAI, June 1, 2026</span>
   <span class="video-card-desc">An assessment of the MiniMax M3 open-source AI model highlights its performance benefits and cost efficiency compared to other models like Claude Opus 4.7.</span>
 </a>
+</div>
+
+## Podcasts
+
+<div class="video-grid podcast-grid">
 <a class="video-card" href="https://aipodcast.education/why-one-law-school-just-banned-ai" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Why One Law School Just Banned AI" loading="lazy">
   <span class="video-card-title">Why One Law School Just Banned AI</span>

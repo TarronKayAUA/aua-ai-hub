@@ -96,7 +96,7 @@ If a small helper is needed to render YAML into pages (conferences, tools), pref
 - AI Basics: "How LLMs Work" plain-language primer (roughly 1,200 words, no math), Glossary (terms listed in section 6), and a Common Misconceptions page.
 - Tools: index page rendering the directory from `data/tools.yaml` with governance badges, grouped by category.
 - Learning: curated learning paths organized by audience: Faculty getting started, Faculty teaching with AI, Students, and Going deeper (technical).
-- News: This Week (latest weekly digest), General AI, Medical Education, Clinical Practice, and an Archive organized by ISO week.
+- News: This Week (rolling trailing-seven-day view, refreshed nightly), Medical Education, Clinical Practice, General AI, Videos, Podcasts, and an Archive of weekly digests organized by ISO week.
 - Conferences: table rendered from `data/conferences.yaml` (rendering rules in section 6).
 - Announcements: index of owner-authored posts under `docs/announcements/`, newest first.
 - About: purpose of the site, how news items are selected (transparency about the pipeline and the LLM step), a governance note, a disclaimer (the site is informational, AI-generated summaries may contain errors, readers should verify primary sources, and nothing here is institutional policy unless explicitly marked as such), and a contact line.
@@ -228,7 +228,8 @@ Behavior, in order:
 6. Write outputs:
    - `docs/news/general-ai.md`, `docs/news/medical-education.md`, `docs/news/clinical-practice.md`: the latest 15 kept items each, newest first. Each item renders as a linked title, source name, date, and one-sentence summary.
    - `includes/latest.md`: the 5 newest kept items across all categories, for the homepage include.
-   - Weekly, when the ISO week has changed since the last digest (effectively Mondays): snapshot the week's kept items into `docs/news/this-week.md`, append a copy to `docs/news/archive/<year>-w<week>.md`, and regenerate `docs/digest.xml`.
+   - Every run: regenerate `docs/news/this-week.md` as a rolling view of everything kept in the trailing seven days (owner-approved change, 2026-06-10; the page is current every day rather than a frozen weekly snapshot).
+   - Weekly, on the configured digest day (feeds.yaml `digest:` block, default Friday) when the ISO week has not yet had a digest: run a second-stage highlights selection over everything kept since the previous digest (instructions in `prompts/digest.md`, per-type budgets in the digest block, score-plus-recency fallback when no LLM is available), write the highlights plus an "Also this week" link list to `docs/news/archive/<year>-w<week>.md`, and regenerate `docs/digest.xml` with the highlights. The digest item links to that archive page, which is the stable mirror of the email.
    - `data/seen_items.json` updated and pruned to 60 days.
 7. Print the mandatory verification block (owner's standing rule): feeds attempted, succeeded, failed (named); raw item count; counts after window, after block-filter, after dedupe; kept per category; files written with per-file item counts; curation mode used. Assert that category counts sum to the total kept and fail loudly on mismatch.
 8. CLI flags: `--dry-run` (no writes), `--no-llm`, `--since-days N`, `--verbose`.

@@ -94,6 +94,15 @@ categories:
       - name: LMArena blog
         url: https://news.lmarena.ai/rss/
 
+# Weekly digest settings. The digest is a second-stage highlights selection
+# over everything kept since the previous digest, generated on the configured
+# day's nightly run. Selection instructions live in prompts/digest.md.
+digest:
+  day: friday
+  news_items: 8
+  videos: 4
+  podcasts: 3
+
 # Benchmarks page data source. The pipeline discovers the current LiveBench
 # release from the site's app bundle each night; if discovery or the fetch
 # fails, the previously rendered table is kept and the failure is logged.

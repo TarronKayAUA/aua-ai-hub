@@ -51,6 +51,9 @@ ARCHIVE_DIR = NEWS_DIR / "archive"
 LATEST_INCLUDE = REPO / "includes" / "latest.md"
 DIGEST_PATH = REPO / "docs" / "digest.xml"
 CURATOR_PROMPT_PATH = REPO / "prompts" / "curator.md"
+DIGEST_PROMPT_PATH = REPO / "prompts" / "digest.md"
+WEEKDAYS = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3,
+            "friday": 4, "saturday": 5, "sunday": 6}
 CONFERENCE_FLAGS_PATH = REPO / "data" / "conference_flags.md"
 LIVEBENCH_INCLUDE = REPO / "includes" / "livebench.md"
 
@@ -991,10 +994,10 @@ def render_latest_include(records: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def digest_description_html(categories: dict, by_category: dict,
-                            videos: list[dict]) -> str:
+def digest_description_html(categories: dict, news_by_category: dict,
+                            media_sections: dict) -> str:
     parts = []
-    for key, records in by_category.items():
+    for key, records in news_by_category.items():
         if not records:
             continue
         parts.append(f"<h3>{escape(categories[key])}</h3><ul>")
@@ -1005,9 +1008,11 @@ def digest_description_html(categories: dict, by_category: dict,
                 f"({escape(r['source'])}). {summary}</li>"
             )
         parts.append("</ul>")
-    if videos:
-        parts.append("<h3>Videos</h3><ul>")
-        for r in videos:
+    for label, records in media_sections.items():
+        if not records:
+            continue
+        parts.append(f"<h3>{escape(label)}</h3><ul>")
+        for r in records:
             parts.append(
                 f'<li><a href="{escape(r["url"])}">{escape(r["title"])}</a> '
                 f"({escape(r['source'])})</li>"
@@ -1016,15 +1021,78 @@ def digest_description_html(categories: dict, by_category: dict,
     return "".join(parts)
 
 
-def digest_markdown(title: str, categories: dict, by_category: dict,
-                    videos: list[dict], week_label: str,
-                    rel_prefix: str) -> str:
+def select_digest_highlights(candidates: list[dict], config: dict,
+                             provider: str | None, verbose: bool):
+    """Second-stage selection: pick the week's most digest-worthy items.
+    Returns (ordered ids, note). Falls back to importance score then recency
+    when no LLM is available or the call fails."""
+    digest_cfg = config["digest"]
+    budgets = (f"Budgets: at most {digest_cfg['news_items']} news items, "
+               f"{digest_cfg['videos']} videos, {digest_cfg['podcasts']} "
+               "podcast episodes.")
+    if provider:
+        llm_cfg = config["llm"]
+        call = call_anthropic if provider == "anthropic" else call_github_models
+        cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
+        ordered = sorted(
+            candidates,
+            key=lambda r: (-(r.get("score") or 0), r["published"]),
+        )
+        by_id, payload = _pack_candidates_records(
+            ordered, cfg.get("max_payload_chars", 22000))
+        system = DIGEST_PROMPT_PATH.read_text(encoding="utf-8")
+        try:
+            raw = call(system, budgets + "\n\n" + payload, cfg,
+                       llm_cfg["request_timeout_seconds"])
+            raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip())
+            ids = [str(i) for i in json.loads(raw)["highlights"]]
+            valid = [i for i in ids if i in by_id]
+            if valid:
+                return [by_id[i] for i in valid], f"llm ({provider})"
+        except (requests.RequestException, KeyError, ValueError,
+                json.JSONDecodeError) as exc:
+            if verbose:
+                print(f"  digest llm failed: {type(exc).__name__}: {exc}")
+    ranked = sorted(
+        candidates,
+        key=lambda r: (-(r.get("score") or 0), r["published"]),
+    )
+    return ranked, "score fallback"
+
+
+def _pack_candidates_records(records: list[dict], budget: int):
+    """Greedy payload packing for ledger records (digest selection)."""
+    by_id = {}
+    entries = []
+    used = 300
+    for idx, record in enumerate(records):
+        entry = {
+            "id": str(idx),
+            "type": ("news" if record.get("category") not in
+                     ("videos", "podcasts") else record["category"]),
+            "source": record["source"],
+            "title": record["title"][:140],
+            "summary": record.get("summary", "")[:100],
+        }
+        entry_len = len(json.dumps(entry, ensure_ascii=False))
+        if used + entry_len > budget:
+            break
+        used += entry_len
+        by_id[str(idx)] = record
+        entries.append(entry)
+    return by_id, json.dumps({"candidates": entries}, ensure_ascii=False)
+
+
+def render_this_week(categories: dict, by_category: dict, videos: list[dict],
+                     podcasts: list[dict]) -> str:
+    """Rolling trailing-seven-day view, regenerated nightly."""
     lines = [
         GENERATED_HEADER,
         "",
-        f"# {title}",
+        "# This Week",
         "",
-        f"Digest for {week_label}. " + selection_note(rel_prefix),
+        "Everything kept in the last seven days, refreshed nightly. "
+        + selection_note("../"),
         "",
     ]
     all_records = [r for records in by_category.values() for r in records]
@@ -1035,15 +1103,64 @@ def digest_markdown(title: str, categories: dict, by_category: dict,
             continue
         empty = False
         lines.extend([f"## {categories[key]}", ""])
+        lines.append('<div class="news-list">')
         lines.extend(render_item_md(r, suppress) for r in records)
+        lines.append("</div>")
         lines.append("")
     if videos:
         empty = False
-        lines.extend(["## Videos", ""])
-        lines.append(_video_grid_html(videos))
+        lines.extend(["## Videos", "", _video_grid_html(videos), ""])
+    if podcasts:
+        empty = False
+        lines.extend(["## Podcasts", "",
+                      _video_grid_html(podcasts, extra_class="podcast-grid"),
+                      ""])
+    if empty:
+        lines.append("No items were kept in the last seven days.")
+    return "\n".join(lines) + "\n"
+
+
+def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
+                          media_sections: dict, also: list[dict],
+                          window_label: str) -> str:
+    """Stable weekly digest page: the email's highlights plus a link list of
+    everything else kept in the same window."""
+    lines = [
+        GENERATED_HEADER,
+        "",
+        f"# {title}",
+        "",
+        f"Highlights selected from everything kept {window_label}. "
+        + selection_note("../../"),
+        "",
+    ]
+    all_records = [r for records in news_by_cat.values() for r in records]
+    suppress = _generic_thumbnails(all_records)
+    empty = True
+    for key, records in news_by_cat.items():
+        if not records:
+            continue
+        empty = False
+        lines.extend([f"## {categories[key]}", ""])
+        lines.append('<div class="news-list">')
+        lines.extend(render_item_md(r, suppress) for r in records)
+        lines.append("</div>")
         lines.append("")
+    for label, records in media_sections.items():
+        if not records:
+            continue
+        empty = False
+        extra = "podcast-grid" if label == "Podcasts" else ""
+        lines.extend([f"## {label}", "",
+                      _video_grid_html(records, extra_class=extra), ""])
     if empty:
         lines.append("No items were kept this week.")
+    if also:
+        lines.extend(["## Also this week", ""])
+        for r in also:
+            lines.append(f"- [{md_escape(r['title'])}]({r['url']}) "
+                         f"({r['source']})")
+        lines.append("")
     return "\n".join(lines) + "\n"
 
 
@@ -1428,48 +1545,84 @@ def main() -> int:
         min(len(episode_records), podcast_cfg.get("page_items", 30)),
     )
 
-    # weekly digest when the ISO week has changed since the last digest
+    # rolling This Week page: trailing seven days, regenerated every run
+    rolling_start = (now - timedelta(days=7)).isoformat()
+    rolling_by_cat = {
+        k: [r for r in kept_records(ledger, k) if r["first_seen"] >= rolling_start]
+        for k in categories
+    }
+    rolling_videos = [r for r in kept_records(ledger, "videos")
+                      if r["first_seen"] >= rolling_start]
+    rolling_podcasts = [r for r in kept_records(ledger, "podcasts")
+                        if r["first_seen"] >= rolling_start]
+    rolling_count = (sum(len(v) for v in rolling_by_cat.values())
+                     + len(rolling_videos) + len(rolling_podcasts))
+    write(NEWS_DIR / "this-week.md",
+          render_this_week(categories, rolling_by_cat, rolling_videos,
+                           rolling_podcasts),
+          rolling_count)
+
+    # weekly highlights digest on the configured day (default friday), one
+    # per ISO week, covering everything kept since the previous digest
+    digest_cfg = config.get("digest", {})
+    digest_day = WEEKDAYS.get(str(digest_cfg.get("day", "friday")).lower(), 4)
     iso = now.isocalendar()
     week_key = f"{iso.year}-W{iso.week:02d}"
-    digest_written = False
-    if week_key != ledger["last_digest_week"]:
-        monday = now.date() - timedelta(days=now.weekday())
-        week_label = f"the week of {monday.strftime('%B %d, %Y').replace(' 0', ' ')}"
-        window_start = (now - timedelta(days=7)).isoformat()
-        by_category = {
-            k: [r for r in kept_records(ledger, k) if r["first_seen"] >= window_start]
-            for k in categories
-        }
-        digest_videos = [
-            r for r in kept_records(ledger, "videos")
-            if r["first_seen"] >= window_start
-        ] + [
-            r for r in kept_records(ledger, "podcasts")
+    digest_status = f"not due (fires {digest_cfg.get('day', 'friday')})"
+    if now.weekday() == digest_day and week_key != ledger["last_digest_week"]:
+        window_floor = (now - timedelta(days=14)).isoformat()
+        window_start = max(
+            ledger.get("last_digest_at") or window_floor, window_floor)
+        candidates = [
+            r for r in kept_records(ledger)
             if r["first_seen"] >= window_start
         ]
-        digest_count = sum(len(v) for v in by_category.values()) + len(digest_videos)
+        ordered, digest_note = select_digest_highlights(
+            candidates, config, provider, args.verbose)
+        news_budget = digest_cfg.get("news_items", 8)
+        video_budget = digest_cfg.get("videos", 4)
+        podcast_budget = digest_cfg.get("podcasts", 3)
+        news_high, video_high, podcast_high = [], [], []
+        for record in ordered:
+            kind = record.get("category")
+            if kind == "videos" and len(video_high) < video_budget:
+                video_high.append(record)
+            elif kind == "podcasts" and len(podcast_high) < podcast_budget:
+                podcast_high.append(record)
+            elif kind in categories and len(news_high) < news_budget:
+                news_high.append(record)
+        highlight_ids = {id(r) for r in news_high + video_high + podcast_high}
+        also = [r for r in candidates if id(r) not in highlight_ids]
+        news_by_cat = {
+            k: [r for r in news_high if r["category"] == k]
+            for k in categories
+        }
+        media_sections = {"Videos": video_high, "Podcasts": podcast_high}
+        window_label = (
+            "between "
+            f"{fmt_date(datetime.fromisoformat(window_start))} and "
+            f"{fmt_date(now)}"
+        )
+        archive_name = f"{iso.year}-w{iso.week:02d}"
         digest_entry = {
-            "guid": f"aua-ai-digest-{iso.year}-W{iso.week:02d}",
+            "guid": f"aua-ai-digest-{archive_name.replace('-w', '-W')}",
             "title": f"AUA AI Hub Digest: Week of "
-            f"{monday.strftime('%B %d, %Y').replace(' 0', ' ')}",
-            "link": read_site_url() + "news/this-week/",
+            f"{(now.date() - timedelta(days=now.weekday())).strftime('%B %d, %Y').replace(' 0', ' ')}",
+            "link": read_site_url() + f"news/archive/{archive_name}/",
             "pub_date": format_datetime(now),
             "description": digest_description_html(
-                categories, by_category, digest_videos),
+                categories, news_by_cat, media_sections),
         }
-        this_week_md = digest_markdown(
-            "This Week", categories, by_category, digest_videos,
-            week_label, "../")
-        archive_md = digest_markdown(
-            f"Week {iso.week}, {iso.year}", categories, by_category,
-            digest_videos, week_label, "../../")
-        write(NEWS_DIR / "this-week.md", this_week_md, digest_count)
-        write(ARCHIVE_DIR / f"{iso.year}-w{iso.week:02d}.md", archive_md,
-              digest_count)
+        archive_md = render_digest_archive(
+            f"Week {iso.week}, {iso.year}", categories, news_by_cat,
+            media_sections, also, window_label)
+        write(ARCHIVE_DIR / f"{archive_name}.md", archive_md,
+              len(highlight_ids))
         if not args.dry_run:
             ledger["digests"].append(digest_entry)
             ledger["digests"] = ledger["digests"][-DIGEST_KEEP:]
             ledger["last_digest_week"] = week_key
+            ledger["last_digest_at"] = now_iso
         digests_newest_first = list(reversed(ledger["digests"] + (
             [digest_entry] if args.dry_run else [])))
         # On dry runs the entry was not appended; the line above previews it.
@@ -1479,13 +1632,16 @@ def main() -> int:
         archive_files = sorted(
             (p.name for p in ARCHIVE_DIR.glob("*-w*.md")), reverse=True
         ) if ARCHIVE_DIR.exists() else []
-        if args.dry_run and f"{iso.year}-w{iso.week:02d}.md" not in archive_files:
+        if args.dry_run and f"{archive_name}.md" not in archive_files:
             archive_files = sorted(
-                archive_files + [f"{iso.year}-w{iso.week:02d}.md"], reverse=True
+                archive_files + [f"{archive_name}.md"], reverse=True
             )
         write(ARCHIVE_DIR / "index.md", render_archive_index(archive_files),
               len(archive_files))
-        digest_written = True
+        digest_status = (f"written ({week_key}, {len(news_high)} news + "
+                         f"{len(video_high)} videos + {len(podcast_high)} "
+                         f"podcasts of {len(candidates)} candidates, "
+                         f"{digest_note})")
 
     livebench_status = update_livebench(config, now, args.dry_run,
                                         args.verbose)
@@ -1540,7 +1696,7 @@ def main() -> int:
     print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
     print(f"livebench table  : {livebench_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
-    print(f"weekly digest    : {'written (' + week_key + ')' if digest_written else 'not due'}")
+    print(f"weekly digest    : {digest_status}")
     if args.dry_run:
         print("files written    : none (dry run)")
     else:
