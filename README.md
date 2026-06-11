@@ -112,6 +112,11 @@ issue, check each proposal against its linked source, edit
 `prompts/digest.md`. The digest fires on the configured day's nightly run,
 one per ISO week.
 
+**Tune the section briefs** — the writing instructions live in
+`prompts/section_brief.md`; the model and excluded source domains live in
+the `llm.briefs` block of `feeds.yaml`. Briefs regenerate only when a
+page's item set changes; test with a dry run with `GITHUB_TOKEN` set.
+
 **Change the curation model or provider** — edit the `llm:` block in
 `feeds.yaml` only. Adding an `ANTHROPIC_API_KEY` repository secret switches
 the nightly run to the Anthropic path automatically; removing it switches

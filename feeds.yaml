@@ -34,6 +34,19 @@ llm:
     model: claude-haiku-4-5
     api_version: "2023-06-01"
     max_payload_chars: 600000
+  # Section briefs: one short narrative per news category page, regenerated
+  # only when that page's item set changes. Three small calls at most per
+  # night, so they ride the strongest free GitHub Models entry (high tier,
+  # ~3 calls fit easily) rather than the bulk-curation mini model. Verified
+  # available on the free plan 2026-06-11; the GPT-5 family is gated.
+  briefs:
+    model: openai/gpt-4.1
+    # Forum/community sources stay on the page but are not offered to the
+    # brief writer; the brief cites journals, labs, and primary sources.
+    exclude_domains:
+      - reddit.com
+      - news.ycombinator.com
+      - hnrss.org
 
 # Category order is meaningful: it sets the section order in the weekly
 # digest and mirrors the nav (medical education first, per owner preference).

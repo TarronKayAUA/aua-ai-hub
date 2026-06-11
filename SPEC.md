@@ -382,6 +382,14 @@ All phases:
 - Polls run on Microsoft Forms in the owner's tenant and render from `data/polls.yaml` onto the Announcements page as a "The committee is asking" block (linked, not embedded, so no new scripts load); when no poll is active a quiet placeholder points to Committee Updates, and closed polls list one-line outcomes. Owner decision: poll links live on Announcements for visibility; results are reported as committee update posts.
 - The owner's planned research study (an IRB-submitted follow-up survey) is deliberately NOT listed in current projects: announcing a survey to the population it will sample could prime responses. Add it only when the owner says so (post-IRB approval at the earliest).
 
+### Section briefs (owner approved 2026-06-11)
+
+- Each news category page opens with an original SVG section banner (docs/assets/section-*.svg, hand-authored, self-contained brand-gradient colors because external SVGs cannot read page CSS variables) and a section brief: one 60-110 word narrative tying together the most significant threads among the items currently on the page, with bracketed numbered links to those items.
+- Briefs are written by the strongest free GitHub Models entry (openai/gpt-4.1, high tier; the GPT-5 family is gated to paid Copilot plans, verified empirically 2026-06-11), configured in the feeds.yaml `llm.briefs` block with instructions in prompts/section_brief.md (owner-tunable). Three calls per night at most.
+- Trust contract: the model sees a numbered list of the page's items (forum/community sources excluded via `exclude_domains`; they stay on the page but are never cited in the brief) and may reference only those numbers; the pipeline validates every reference, link-ifies them to the exact item URLs, enforces word and reference-count bounds, and applies a dash policy (word-joining dashes become hyphens, others become commas). Any failure keeps the stored brief.
+- Briefs live in the ledger (`section_briefs`) keyed by a hash of the eligible item URLs, so a brief regenerates only when its page's item set changes; pages render whatever the ledger holds, including in keyword mode. Owner accepted the prose register after reviewing live samples: informative orientation, consistent with the no-hype rule, explicitly not marketing copy.
+- The weekly digest narrative (same idea, one cohesive weekly story with article-content extraction) is planned on claude-opus-4-8 (~13 cents/run) pending the owner adding an ANTHROPIC_API_KEY secret, with per-task provider wiring so nightly curation stays on free GitHub Models.
+
 ### Visual conventions
 
 - Homepage: hero block (gradient on the theme primary color, mission line, two buttons), Material grid cards for the four start-here sections, Latest items list, Latest videos strip, pinned announcements, last-updated stamp.

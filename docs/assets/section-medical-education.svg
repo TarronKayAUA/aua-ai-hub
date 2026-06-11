@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07618c"/>
+      <stop offset="1" stop-color="#1b4165"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="140" rx="10" fill="url(#bg)"/>
+  <!-- open book -->
+  <g stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M120 95 V52 q30 -14 60 0 v43 q-30 -12 -60 0 Z"/>
+    <path d="M180 95 V52 q30 -14 60 0 v43 q-30 -12 -60 0 Z"/>
+    <line x1="180" y1="52" x2="180" y2="95"/>
+  </g>
+  <!-- graduation cap -->
+  <g stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M310 62 l55 -20 55 20 -55 20 Z"/>
+    <path d="M338 72 v22 q27 14 54 0 V72"/>
+    <line x1="420" y1="62" x2="420" y2="92"/>
+  </g>
+  <!-- knowledge nodes drifting right -->
+  <g fill="#ffffff" opacity="0.35">
+    <circle cx="560" cy="45" r="5"/><circle cx="660" cy="90" r="4"/>
+    <circle cx="760" cy="55" r="6"/><circle cx="860" cy="95" r="4"/>
+    <circle cx="950" cy="50" r="5"/><circle cx="1050" cy="85" r="6"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="1.5" opacity="0.25">
+    <line x1="560" y1="45" x2="660" y2="90"/><line x1="660" y1="90" x2="760" y2="55"/>
+    <line x1="760" y1="55" x2="860" y2="95"/><line x1="860" y1="95" x2="950" y2="50"/>
+    <line x1="950" y1="50" x2="1050" y2="85"/>
+  </g>
+</svg>

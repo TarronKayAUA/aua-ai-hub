@@ -52,6 +52,7 @@ LATEST_INCLUDE = REPO / "includes" / "latest.md"
 DIGEST_PATH = REPO / "docs" / "digest.xml"
 CURATOR_PROMPT_PATH = REPO / "prompts" / "curator.md"
 DIGEST_PROMPT_PATH = REPO / "prompts" / "digest.md"
+SECTION_BRIEF_PROMPT_PATH = REPO / "prompts" / "section_brief.md"
 WEEKDAYS = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3,
             "friday": 4, "saturday": 5, "sunday": 6}
 CONFERENCE_FLAGS_PATH = REPO / "data" / "conference_flags.md"
@@ -608,6 +609,94 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
                     + fallback + "\n",
                     encoding="utf-8", newline="\n")
         return f"unavailable ({type(exc).__name__})"
+
+
+# --- Section briefs (news category pages) --------------------------------------
+
+
+def _brief_sanitize(text: str) -> str:
+    """Dash policy for model prose: a dash joining two words is a compound
+    (AI-driven) and becomes a hyphen; spaced or stray dashes become commas,
+    matching the site-wide no-em-dash rule without garbling grammar."""
+    text = re.sub(r"(?<=\w)[–—](?=\w)", "-", text)
+    text = re.sub(r"\s*[–—]+\s*", ", ", text)
+    return " ".join(text.split())
+
+
+def update_section_briefs(config: dict, categories: dict, ledger: dict,
+                          now: datetime, dry_run: bool,
+                          verbose: bool) -> str:
+    """Write one short narrative per news category from the items currently
+    on that page, stored in the ledger and regenerated only when the page's
+    eligible item set changes. Keep-last-good: any failure leaves the stored
+    brief in place; pages render whatever the ledger holds."""
+    cfg = config.get("llm", {}).get("briefs")
+    if not cfg:
+        return "not configured"
+    if not os.environ.get("GITHUB_TOKEN"):
+        return "skipped (no GITHUB_TOKEN); stored briefs kept"
+    gh_cfg = dict(config["llm"]["github_models"])
+    gh_cfg["model"] = cfg["model"]
+    timeout = config["llm"].get("request_timeout_seconds", 90)
+    template = SECTION_BRIEF_PROMPT_PATH.read_text(encoding="utf-8")
+    exclude = cfg.get("exclude_domains", [])
+    briefs = ledger.setdefault("section_briefs", {})
+    statuses = []
+    for cat_key, label in categories.items():
+        records = kept_records(ledger, cat_key)[:PAGE_ITEMS]
+        eligible = [r for r in records
+                    if not any(d in r.get("url", "") for d in exclude)]
+        stored = briefs.get(cat_key)
+        if len(eligible) < 3:
+            statuses.append(f"{cat_key} skipped ({len(eligible)} eligible)")
+            continue
+        items_hash = hashlib.sha256(
+            "\n".join(r["url"] for r in eligible).encode("utf-8")
+        ).hexdigest()[:16]
+        if stored and stored.get("hash") == items_hash:
+            statuses.append(f"{cat_key} unchanged")
+            continue
+        try:
+            items_block = "\n".join(
+                f"{i}. {r['title']} ({r.get('source', '?')}): "
+                f"{r.get('summary', '')}"
+                for i, r in enumerate(eligible, 1)
+            )
+            raw = call_github_models(
+                "Follow the instructions in the message exactly.",
+                template.format(label=label, items=items_block),
+                gh_cfg, timeout,
+            )
+            text = _brief_sanitize(raw)
+            refs = [int(n) for n in re.findall(r"\[(\d+)\]", text)]
+            words = len(re.sub(r"\[\d+\]", "", text).split())
+            if not 2 <= len(refs) <= 6:
+                raise ValueError(f"reference count {len(refs)} out of range")
+            if any(not 1 <= n <= len(eligible) for n in refs):
+                raise ValueError("brief references a nonexistent item")
+            if not 40 <= words <= 140:
+                raise ValueError(f"word count {words} out of range")
+            escaped = html.escape(text)
+            linked = re.sub(
+                r"\[(\d+)\]",
+                lambda m: (f'<a href="{html.escape(eligible[int(m.group(1)) - 1]["url"])}">'
+                           f"[{m.group(1)}]</a>"),
+                escaped,
+            )
+            briefs[cat_key] = {"text": linked, "hash": items_hash,
+                               "date": fmt_date(now)}
+            statuses.append(
+                f"{cat_key} updated ({len(set(refs))} links, {words} words)"
+            )
+        except (requests.RequestException, ValueError, KeyError) as exc:
+            if verbose:
+                print(f"  brief for {cat_key} failed: "
+                      f"{type(exc).__name__}: {exc}")
+            statuses.append(
+                f"{cat_key} {'kept previous' if stored else 'unavailable'} "
+                f"({type(exc).__name__})"
+            )
+    return "; ".join(statuses)
 
 
 # --- Committee updates feed (Governance page) ---------------------------------
@@ -1213,9 +1302,24 @@ def kept_records(ledger: dict, category: str | None = None) -> list[dict]:
     return records
 
 
-def render_category_page(label: str, intro: str, records: list[dict]) -> str:
+def render_category_page(label: str, intro: str, records: list[dict],
+                         brief: dict | None = None,
+                         banner_slug: str | None = None) -> str:
     lines = [COMMENTS_FRONT_MATTER + GENERATED_HEADER, "", f"# {label}", "",
              intro, "", selection_note("../"), ""]
+    if banner_slug:
+        lines.append(f'<img class="section-banner" '
+                     f'src="../assets/section-{banner_slug}.svg" alt="">')
+        lines.append("")
+    if brief and brief.get("text"):
+        lines.append(
+            '<div class="section-brief">\n'
+            f"<p>{brief['text']}</p>\n"
+            f'<p class="section-brief-date">The picture as of '
+            f"{brief['date']}; numbered links go to the items below.</p>\n"
+            "</div>"
+        )
+        lines.append("")
     if records:
         suppress = _generic_thumbnails(records)
         lines.append('<div class="news-list">')
@@ -1813,11 +1917,18 @@ def main() -> int:
             path.write_text(content, encoding="utf-8", newline="\n")
             files_written.append((rel, count))
 
+    briefs_status = update_section_briefs(config, categories, ledger, now,
+                                          args.dry_run, args.verbose)
+
     slug = {"general_ai": "general-ai", "medical_education": "medical-education",
             "clinical_practice": "clinical-practice"}
     for cat_key, label in categories.items():
         records = kept_records(ledger, cat_key)[:PAGE_ITEMS]
-        page = render_category_page(label, PAGE_INTROS[cat_key], records)
+        page = render_category_page(
+            label, PAGE_INTROS[cat_key], records,
+            brief=ledger.get("section_briefs", {}).get(cat_key),
+            banner_slug=slug[cat_key],
+        )
         write(NEWS_DIR / f"{slug[cat_key]}.md", page, len(records))
 
     latest = [
@@ -2015,6 +2126,7 @@ def main() -> int:
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
     print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
     print(f"livebench table  : {livebench_status}")
+    print(f"section briefs   : {briefs_status}")
     print(f"community prompts: {community_status}")
     print(f"committee updates: {committee_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
