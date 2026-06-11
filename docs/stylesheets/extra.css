@@ -19,7 +19,15 @@
    degrades as prose lines lengthen). */
 
 .md-grid {
-  max-width: 76rem;
+  max-width: 78rem;
+}
+
+/* Tighter horizontal cell padding so wide tables (the 10-column LiveBench
+   snapshot) fit the content column without clipping or scrolling. */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding-left: 0.7em;
+  padding-right: 0.7em;
 }
 
 [data-md-color-scheme="default"] {
