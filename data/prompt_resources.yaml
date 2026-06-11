@@ -13,6 +13,11 @@
 # must reflect current prompting practice (role, context, examples, structured
 # output, reasoning models), not 2023-era trick lists. Peer-reviewed items are
 # preferred for category-specific entries; every URL is verified before commit.
+#
+# General entries render as thumbnail cards. YouTube thumbnails derive from
+# the video id automatically; non-video entries carry an optional thumbnail
+# field holding the page's own og:image URL, verified live at authoring time
+# (2026-06-11). Entries without one render as text-only cards.
 
 - title: Prompting 101
   source: Anthropic
@@ -38,6 +43,7 @@
   type: guide
   category: general
   url: https://workspace.google.com/learning/content/gemini-prompt-guide
+  thumbnail: https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png
   blurb: A plain-language handbook for prompting in everyday office work,
     built on a four-part pattern of persona, task, context, and format. The
     gentlest starting point on this list.
@@ -47,6 +53,7 @@
   type: guide
   category: general
   url: https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide
+  thumbnail: https://developers.openai.com/open-graph.png
   blurb: OpenAI's technical guide to prompting its current models. The most
     developer-oriented item here, useful when you need precise control over
     agentic behavior and output format.
@@ -67,6 +74,7 @@
   type: paper
   category: general
   url: https://doi.org/10.1007/s40670-024-02146-1
+  thumbnail: https://media.springernature.com/full/springer-static/cover-hires/journal/40670
   blurb: Ten practical tips on choosing a chatbot and writing prompts for
     teaching and assessment work, written for medical educators with no
     technical background.
@@ -76,6 +84,7 @@
   type: paper
   category: general
   url: https://doi.org/10.2196/72644
+  thumbnail: https://asset.jmir.pub/assets/45bdba5e9290dbfa0b0a78876cc7c810.png
   blurb: A clinician-oriented tutorial on prompt patterns with worked clinical
     examples, including common failure modes and how wording changes outputs.
 

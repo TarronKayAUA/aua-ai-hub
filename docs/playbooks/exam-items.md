@@ -2,6 +2,8 @@
 
 **For faculty · the highest-stakes playbook, read the guardrails first**
 
+--8<-- "includes/prompt-maturity-note.md"
+
 ## The task
 
 Use AI to draft and structurally vet multiple choice questions (MCQs), cutting item-writing time while keeping quality control and assessment security entirely human.

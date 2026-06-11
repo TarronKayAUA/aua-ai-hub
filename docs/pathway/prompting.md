@@ -2,6 +2,8 @@
 
 **For everyone · about 15 minutes · CGEA competency domains: Working with AI, Critical Appraisal of AI Outputs**
 
+--8<-- "includes/prompt-maturity-note.md"
+
 ## What you will be able to do
 
 - Structure a request so the model has what it needs: a role, your actual materials, the task, and the output shape you want.

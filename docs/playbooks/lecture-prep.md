@@ -2,6 +2,8 @@
 
 **For faculty · works with any capable assistant in the [tools directory](../tools/index.md)**
 
+--8<-- "includes/prompt-maturity-note.md"
+
 ## The task
 
 Turn a topic and a set of learning objectives into a session plan: a structure, timed sections, active-learning checks, and supporting materials, in a fraction of the usual drafting time.

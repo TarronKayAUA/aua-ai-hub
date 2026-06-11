@@ -16,6 +16,7 @@ Verification counts are printed on every build and the hook raises (failing
 the build) if totals do not cross-check (CLAUDE.md working rule 2).
 """
 
+import re
 from datetime import date
 from pathlib import Path
 
@@ -23,7 +24,6 @@ import yaml
 
 TOOLS_MARKER = "<!-- render:tools -->"
 OPEN_MODELS_MARKER = "<!-- render:open-models -->"
-GUIDE_VIDEOS_AGENTS_MARKER = "<!-- render:guide-videos:agents -->"
 GUIDE_VIDEOS_LOCAL_MARKER = "<!-- render:guide-videos:local -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
@@ -177,35 +177,99 @@ def _render_open_models(config) -> str:
     return '<div class="tool-grid">\n' + "\n".join(cards) + "\n</div>"
 
 
-def _render_guide_videos(config, group: str) -> str:
+def _youtube_id(url: str) -> str:
+    match = re.search(r"[?&]v=([\w-]+)", url)
+    if not match:
+        raise ValueError(f"render_data hook: cannot derive video id from {url!r}")
+    return match.group(1)
+
+
+def _video_card(url: str, title: str, meta: str, desc: str = "",
+                thumbnail: str = "") -> str:
+    """One thumbnail card, reusing the pipeline's video-card markup and CSS.
+    YouTube thumbnails derive from the video id; an empty thumbnail renders
+    a text-only card."""
+    if not thumbnail and "youtube.com/watch" in url:
+        thumbnail = f"https://i.ytimg.com/vi/{_youtube_id(url)}/hqdefault.jpg"
+    img = (f'  <img src="{thumbnail}" alt="Thumbnail: {title}" '
+           'loading="lazy">\n') if thumbnail else ""
+    desc_part = (f'\n  <span class="video-card-desc">{desc}</span>'
+                 if desc else "")
+    return (
+        f'<a class="video-card" href="{url}" target="_blank" rel="noopener">\n'
+        f"{img}"
+        f'  <span class="video-card-title">{title}</span>\n'
+        f'  <span class="video-card-meta">{meta}</span>{desc_part}\n'
+        "</a>"
+    )
+
+
+def _load_guide_videos(config) -> list:
     videos = _load(_data_dir(config) / "guide_videos.yaml")
-    lines = []
-    total_in_known_groups = 0
     for entry in videos:
         if entry["group"] not in GUIDE_VIDEO_GROUPS:
             raise ValueError(
                 f"render_data hook: unknown guide video group "
                 f"{entry['group']!r} on {entry['title']!r}"
             )
-        total_in_known_groups += 1
-        if entry["group"] != group:
-            continue
-        note = " ".join(entry["note"].split()) if entry.get("note") else ""
-        note_part = f": {note}" if note else ""
-        lines.append(
-            f"- **{entry['tool']}**: [{entry['title']}]({entry['url']}) "
-            f"({entry['channel']}, {entry['length']}, "
-            f"{entry['published']}){note_part}"
-        )
-    print(f"render_data: guide videos verification ({group})")
-    print(f"  entries read : {len(videos)} (all groups valid: "
-          f"{total_in_known_groups == len(videos)})")
-    print(f"  rendered     : {len(lines)} for group {group!r}")
-    if not lines:
+    return videos
+
+
+def _guide_video_card(entry) -> str:
+    note = " ".join(entry["note"].split()) if entry.get("note") else ""
+    return _video_card(
+        url=entry["url"],
+        title=entry["title"],
+        meta=f"{entry['channel']}, {entry['length']}, {entry['published']}",
+        desc=note,
+    )
+
+
+def _render_guide_videos_group(config, group: str) -> str:
+    videos = [v for v in _load_guide_videos(config) if v["group"] == group]
+    if not videos:
         raise AssertionError(
             f"render_data hook: no guide videos for group {group!r}"
         )
-    return "\n".join(lines)
+    print(f"render_data: guide videos verification ({group})")
+    print(f"  rendered     : {len(videos)} cards")
+    return ('<div class="video-grid">\n'
+            + "\n".join(_guide_video_card(v) for v in videos)
+            + "\n</div>")
+
+
+def _render_guide_videos_per_tool(config, markdown: str) -> str:
+    """Replace every render:guide-videos:agents:<slug> marker with that
+    tool's card. The page's markers and the data file's agent slugs must
+    match one to one; anything orphaned fails the build."""
+    videos = {v["slug"]: v for v in _load_guide_videos(config)
+              if v["group"] == "agents"}
+    marker_re = re.compile(r"<!-- render:guide-videos:agents:([\w-]+) -->")
+    seen = []
+
+    def _sub(match):
+        slug = match.group(1)
+        if slug not in videos:
+            raise AssertionError(
+                f"render_data hook: marker for unknown agent video "
+                f"slug {slug!r}"
+            )
+        seen.append(slug)
+        return ('<div class="video-grid">\n'
+                + _guide_video_card(videos[slug])
+                + "\n</div>")
+
+    markdown = marker_re.sub(_sub, markdown)
+    missing = sorted(set(videos) - set(seen))
+    duplicates = sorted({s for s in seen if seen.count(s) > 1})
+    if missing or duplicates:
+        raise AssertionError(
+            f"render_data hook: agent video placement mismatch "
+            f"(missing markers {missing}, duplicate markers {duplicates})"
+        )
+    print("render_data: guide videos verification (agents)")
+    print(f"  rendered     : {len(seen)} per-tool cards (cross-check ok)")
+    return markdown
 
 
 # --- prompt resources ---------------------------------------------------------
@@ -232,20 +296,36 @@ def _load_prompt_resources(config) -> dict[str, list]:
     return grouped
 
 
-def _resource_line(entry) -> str:
+def _resource_meta(entry) -> str:
     if entry["type"] == "video":
         length = f", {entry['length']}" if entry.get("length") else ""
-        paren = f"{entry['source']} video{length}"
-    elif entry["type"] == "guide":
-        paren = f"{entry['source']} guide"
-    else:  # paper; source carries "Journal, Year"
-        paren = entry["source"]
+        return f"{entry['source']} video{length}"
+    if entry["type"] == "guide":
+        return f"{entry['source']} guide"
+    return entry["source"]  # paper; source carries "Journal, Year"
+
+
+def _resource_line(entry) -> str:
     blurb = " ".join(entry["blurb"].split())
-    return f"- **[{entry['title']}]({entry['url']})** ({paren}): {blurb}"
+    return (f"- **[{entry['title']}]({entry['url']})** "
+            f"({_resource_meta(entry)}): {blurb}")
 
 
 def _render_prompt_resources_general(grouped: dict[str, list]) -> str:
-    return "\n".join(_resource_line(e) for e in grouped.get("general", []))
+    """General resources render as thumbnail cards (YouTube thumbnails
+    derive from the video id; pages carry a verified thumbnail field;
+    entries without one render as text-only cards)."""
+    cards = [
+        _video_card(
+            url=entry["url"],
+            title=entry["title"],
+            meta=_resource_meta(entry),
+            desc=" ".join(entry["blurb"].split()),
+            thumbnail=entry.get("thumbnail", ""),
+        )
+        for entry in grouped.get("general", [])
+    ]
+    return '<div class="video-grid">\n' + "\n".join(cards) + "\n</div>"
 
 
 # --- prompts ------------------------------------------------------------------
@@ -492,14 +572,7 @@ def on_page_markdown(markdown, page, config, files):
         markdown = markdown.replace(TOOLS_MARKER, _render_tools(config))
         return markdown.replace(OPEN_MODELS_MARKER, _render_open_models(config))
     if src == "tools/agents.md":
-        if GUIDE_VIDEOS_AGENTS_MARKER not in markdown:
-            raise AssertionError(
-                "render_data hook: tools/agents.md is missing the "
-                f"{GUIDE_VIDEOS_AGENTS_MARKER} marker"
-            )
-        return markdown.replace(
-            GUIDE_VIDEOS_AGENTS_MARKER, _render_guide_videos(config, "agents")
-        )
+        return _render_guide_videos_per_tool(config, markdown)
     if src == "tools/local.md":
         if GUIDE_VIDEOS_LOCAL_MARKER not in markdown:
             raise AssertionError(
@@ -507,7 +580,8 @@ def on_page_markdown(markdown, page, config, files):
                 f"{GUIDE_VIDEOS_LOCAL_MARKER} marker"
             )
         return markdown.replace(
-            GUIDE_VIDEOS_LOCAL_MARKER, _render_guide_videos(config, "local")
+            GUIDE_VIDEOS_LOCAL_MARKER,
+            _render_guide_videos_group(config, "local"),
         )
     if src == "conferences.md":
         if CONFERENCES_MARKER not in markdown:

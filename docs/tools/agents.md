@@ -19,22 +19,65 @@ Two risks matter more for agents than for chat:
 
 The [AI Responsible Use Policy](../governance/policy.md)'s existing rules carry the rest of the weight: you are accountable for work done on your behalf, which includes anything an agent does; and the data prohibitions are unchanged, so an agent must not be given access to patient information, student records, or confidential material that the underlying tool is not approved to handle. Expect university guidance on agents to become more specific as the governance process continues; the principles above already apply.
 
-## The options
+## The agents
 
-The [Agents category in the tools directory](index.md#agents) carries the current entries with statuses and costs. The shape of the field, by where the agent lives:
+The [Agents category in the tools directory](index.md#agents) carries every entry with its status and cost. Below, each agent gets its own section: what it is, where it lives, one verified video walkthrough (official-channel videos where they exist), and its official starting documentation. Video links reviewed June 2026; tutorials in this space age within months, so check a video's date against the tool's current version.
 
-- **In your terminal**: [Claude Code](https://claude.com/product/claude-code) (Anthropic) and [Codex](https://openai.com/codex/) (OpenAI), built for software work but increasingly used for any file-based task by people comfortable with a command line.
-- **On your desktop**: [Cowork](https://claude.com/product/cowork) (Anthropic) brings the same agentic machinery to non-coding knowledge work: point it at a folder, give it a goal, get a finished deliverable.
-- **Inside the chat app**: [ChatGPT Agent Mode](https://help.openai.com/en/articles/11752874-chatgpt-agent) runs tasks in a sandboxed virtual computer from an ordinary ChatGPT conversation; the gentlest entry point.
-- **In the browser**: [Comet](https://www.perplexity.ai/comet) (Perplexity) embeds the agent where much knowledge work already happens, acting across your tabs.
-- **In a cloud workspace**: [Manus](https://manus.im) takes a goal and works it autonomously on its own infrastructure, returning research, documents, and slides.
-- **Self-hosted**: [OpenClaw](https://openclaw.ai) is the open-source path, a personal agent you run on your own hardware and reach through your messaging apps. The most control and the most responsibility; its permissions are whatever you grant it.
+### Claude Code (Anthropic)
 
-## Watch how it is done
+Anthropic's agent for software work, run from the terminal. Built for coding, but increasingly used for any file-based task by people comfortable with a command line: it plans multi-step work against your own files and executes it step by step. Included with paid Claude plans.
 
-One verified walkthrough per tool, chosen for current interfaces and a beginner audience (official-channel videos where they exist). Links reviewed June 2026; tutorials in this space age within months, so check a video's date against the tool's current version.
+<!-- render:guide-videos:agents:claude-code -->
 
-<!-- render:guide-videos:agents -->
+More: [Claude Code](https://claude.com/product/claude-code) and its [documentation](https://code.claude.com/docs).
+
+### Cowork (Anthropic)
+
+The same agentic machinery as Claude Code, brought to the desktop for non-coding knowledge work: point it at a folder, give it a goal, and get a finished document or analysis rather than instructions. The natural starting agent for faculty and staff who live in documents.
+
+<!-- render:guide-videos:agents:cowork -->
+
+More: [Cowork](https://claude.com/product/cowork).
+
+### Codex (OpenAI)
+
+OpenAI's software agent, available as a command-line tool, app, and cloud service. Like Claude Code it is developer-oriented, and the official onboarding below is the most thorough video on this page. Included with paid ChatGPT plans.
+
+<!-- render:guide-videos:agents:codex -->
+
+More: [Codex](https://openai.com/codex/) and its [quickstart](https://developers.openai.com/codex/quickstart).
+
+### ChatGPT Agent Mode (OpenAI)
+
+An agent inside an ordinary ChatGPT conversation: select agent mode and it works in a sandboxed virtual computer, browsing, filling forms, and handling files, with confirmation prompts before consequential steps. The gentlest entry point on this page.
+
+<!-- render:guide-videos:agents:chatgpt-agent -->
+
+More: [ChatGPT agent help article](https://help.openai.com/en/articles/11752874-chatgpt-agent).
+
+### Manus
+
+A general-purpose autonomous agent in a cloud workspace: it decomposes a goal into steps and works them on its own infrastructure, returning research, documents, slides, and simple applications. Free credits to start, subscriptions beyond.
+
+<!-- render:guide-videos:agents:manus -->
+
+More: [Manus](https://manus.im) and its [help center](https://help.manus.im).
+
+### Comet (Perplexity)
+
+A web browser with the agent built in, acting across your open tabs and signed-in sites: summarizing, navigating, and carrying out tasks where much knowledge work already happens. Free, with higher limits on paid plans. Browser agents read whatever the page contains, so the prompt-injection caution above applies here most directly.
+
+<!-- render:guide-videos:agents:comet -->
+
+More: [Comet](https://www.perplexity.ai/comet) and its [getting started guide](https://www.perplexity.ai/comet/gettingstarted).
+
+### OpenClaw (open source)
+
+The self-hosted path: an open-source personal agent you run on your own hardware, connected to a model of your choice and reached through the messaging apps you already use. The most control and the most responsibility on this page; its permissions are whatever you grant it, so scope them deliberately. For technically confident users.
+
+<!-- render:guide-videos:agents:openclaw -->
+
+More: [OpenClaw](https://openclaw.ai) and its [documentation](https://docs.openclaw.ai).
 
 ## Where to start
 

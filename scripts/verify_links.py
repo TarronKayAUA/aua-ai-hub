@@ -37,13 +37,16 @@ HEADERS = {
 }
 TIMEOUT = 15
 
-# Domains that block scripted requests (HTTP 400, 403, or 429) but were
-# confirmed live by hand. Re-verify in a browser when touching an entry that
-# uses one.
+# Domains that block scripted requests (HTTP 400, 403, 429, or a TLS
+# handshake that strict clients reject) but were confirmed live by hand.
+# Re-verify in a browser when touching an entry that uses one.
 MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
     "nabututor.com": "2026-06-10",
     "llama.com": "2026-06-10",
+    # Cert chain began failing python-requests on 2026-06-11; the host still
+    # answers other clients. Drop the StepGenie entry if a browser fails too.
+    "stepgenie.app": "2026-06-11",
 }
 BOT_BLOCK_STATUSES = {400, 403, 429}
 
@@ -109,6 +112,13 @@ def check(url: str, retries: int = 2) -> tuple[bool, str]:
                 url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True
             )
             break
+        except requests.exceptions.SSLError:
+            host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+            if host in MANUALLY_VERIFIED:
+                return True, f"manual ({MANUALLY_VERIFIED[host]}, TLS strict-fail)"
+            last_exc = "SSLError"
+            if attempt < retries:
+                time.sleep(3)
         except requests.RequestException as exc:
             last_exc = type(exc).__name__
             if attempt < retries:

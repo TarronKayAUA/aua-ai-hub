@@ -2,6 +2,8 @@
 
 **For faculty and student researchers · about 10 minutes · CGEA competency domain: Using AI in Research and Scholarship**
 
+--8<-- "includes/prompt-maturity-note.md"
+
 ## What you will be able to do
 
 - Use AI for literature work with a workflow that catches its failure modes.

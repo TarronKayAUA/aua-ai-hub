@@ -1,15 +1,21 @@
 # Curated setup and walkthrough videos for the technical guide pages.
-# Rendered at build time by scripts/render_data.py into the page matching
-# each entry's group: "agents" renders in docs/tools/agents.md, "local"
-# renders in docs/tools/local.md. Edit this file only; never the pages.
+# Rendered at build time by scripts/render_data.py as thumbnail cards.
+# Placement: entries with group "local" render together at the
+# render:guide-videos:local marker in docs/tools/local.md; entries with
+# group "agents" render individually at per-tool markers in
+# docs/tools/agents.md (render:guide-videos:agents:<slug>), and the build
+# fails if the page's markers and this file's agent slugs do not match
+# one to one. Edit this file only; never the pages.
 #
 # Every entry is verified before commit (video live, channel and title
 # confirmed via YouTube's oEmbed API, duration and upload date from the
-# watch page). Tutorials age quickly: prefer official-channel videos where
-# they exist, keep one entry per tool, and refresh entries when a tool's
-# interface changes. published is a display string.
+# watch page). Thumbnails derive from the video id; nothing is embedded.
+# Tutorials age quickly: prefer official-channel videos where they exist,
+# keep one entry per tool, refresh entries when a tool's interface
+# changes. published is a display string.
 
 - tool: Claude Code
+  slug: claude-code
   group: agents
   title: Full Claude Code Tutorial for Non-Technical Beginners
   channel: Futurepedia
@@ -19,6 +25,7 @@
   note: Aimed at people who do not program; step by step from installation onward.
 
 - tool: Cowork
+  slug: cowork
   group: agents
   title: Claude Cowork, Full Course for Beginners
   channel: Tech With Tim
@@ -28,6 +35,7 @@
   note: Sessions, folder projects, and how Cowork differs from chat and Claude Code.
 
 - tool: Codex
+  slug: codex
   group: agents
   title: Getting started with Codex
   channel: OpenAI (official)
@@ -37,6 +45,7 @@
   note: Official onboarding covering the command line, app, and editor extension.
 
 - tool: ChatGPT Agent Mode
+  slug: chatgpt-agent
   group: agents
   title: Introduction to ChatGPT agent
   channel: OpenAI (official)
@@ -46,6 +55,7 @@
   note: The official introduction; the feature has gained safeguards since, but the workflow shown still holds.
 
 - tool: Manus
+  slug: manus
   group: agents
   title: Manus AI explained simply in 13 minutes (setup and use cases)
   channel: No Code MBA
@@ -54,7 +64,18 @@
   url: https://www.youtube.com/watch?v=a7OZwy7kOxM
   note: Compact tour of setup and what delegated tasks look like in practice.
 
+- tool: Comet
+  slug: comet
+  group: agents
+  title: How to Use Perplexity Comet Browser in 2026 (For Beginners)
+  channel: How to Hub
+  length: 16 min
+  published: November 2025
+  url: https://www.youtube.com/watch?v=qALaR-SCGO4
+  note: Installing the browser and putting its assistant to work across tabs.
+
 - tool: OpenClaw
+  slug: openclaw
   group: agents
   title: How to Setup OpenClaw on Windows with Ollama
   channel: Ksk Royal
@@ -64,6 +85,7 @@
   note: A full Windows installation walkthrough paired with a local model; the most technical item here.
 
 - tool: Ollama
+  slug: ollama
   group: local
   title: Learn Ollama in 15 Minutes, Run LLM Models Locally for FREE
   channel: Tech With Tim
@@ -73,6 +95,7 @@
   note: Older than the rest but still accurate; Ollama's basics have not changed.
 
 - tool: ComfyUI
+  slug: comfyui
   group: local
   title: ComfyUI in 20 Minutes, Absolute Beginner Guide to Getting Started
   channel: WINBUSH

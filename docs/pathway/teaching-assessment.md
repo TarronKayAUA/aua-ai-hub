@@ -2,6 +2,8 @@
 
 **For faculty · about 15 minutes · CGEA competency domain: AI Possibilities in Medical Education**
 
+--8<-- "includes/prompt-maturity-note.md"
+
 ## What you will be able to do
 
 - Identify the teaching tasks where AI assistance is currently strongest and weakest.
