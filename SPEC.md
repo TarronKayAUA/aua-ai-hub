@@ -257,7 +257,7 @@ Digest contract (consumed by Power Automate): `docs/digest.xml` is valid RSS 2.0
 
 `refresh.yml`:
 
-- Triggers: `schedule` with cron `15 9 * * *` (09:15 UTC, about 5:15 AM in Antigua, which observes UTC-4 year-round) plus `workflow_dispatch`.
+- Triggers: `schedule` with two cron slots, `45 6 * * *` (06:45 UTC, 2:45 AM in Antigua, which observes UTC-4 year-round) and a `15 10 * * *` backup (10:15 UTC, 6:15 AM in Antigua), plus `workflow_dispatch`. Two slots because GitHub runs cron best-effort and can delay a slot by hours or drop it; a double run is harmless (ledger dedupe, digest fires at most once per ISO week, commit only on change).
 - Permissions: `contents: write`, `models: read`, `pages: write`, `id-token: write`.
 - Concurrency group `refresh`, no cancel-in-progress. Timeout 15 minutes.
 - Steps: checkout; set up Python with pip caching; install requirements; run `scripts/aggregate.py`; if `git diff` shows changes, commit as `chore(news): refresh YYYY-MM-DD` and push; then build with `mkdocs build --strict` and deploy to Pages within this same workflow.

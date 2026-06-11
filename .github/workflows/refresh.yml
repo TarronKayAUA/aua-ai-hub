@@ -2,7 +2,14 @@ name: Nightly news refresh
 
 on:
   schedule:
-    - cron: "15 9 * * *" # 09:15 UTC, about 5:15 AM in Antigua (UTC-4)
+    # Two slots because GitHub runs cron best-effort and can delay or drop
+    # a slot under load (observed: 9.5 hours late on 2026-06-10). The early
+    # slot absorbs delay before morning; the second is the backup if the
+    # first is dropped. A double run is harmless: the seen-items ledger
+    # dedupes, the digest fires at most once per ISO week, and the workflow
+    # only commits when content changed.
+    - cron: "45 6 * * *" # 06:45 UTC, 2:45 AM in Antigua (UTC-4 year-round)
+    - cron: "15 10 * * *" # 10:15 UTC backup, 6:15 AM in Antigua
   workflow_dispatch:
 
 permissions:
