@@ -1,6 +1,6 @@
-# Benchmarks
+# Language Model Benchmarks
 
-How do you know whether one artificial intelligence (AI) model is better than another? Benchmarks are the field's answer: standardized test sets that every model takes, so results can be compared. This page explains how to read them, links the leaderboards worth knowing, and carries a live snapshot of one of them.
+How do you know whether one artificial intelligence (AI) model is better than another? Benchmarks are the field's answer: standardized test sets that every model takes, so results can be compared. This page covers language models: how to read their leaderboards, the ones worth knowing, and a live snapshot of one of them. Generative media is ranked differently; see the companion pages on [image generation](benchmarks/image.md) and [video generation](benchmarks/video.md).
 
 ## How to read a leaderboard
 

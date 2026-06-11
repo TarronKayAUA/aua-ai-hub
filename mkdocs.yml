@@ -86,6 +86,7 @@ nav:
       - Courses and Resources: learning/index.md
   - Tools:
       - Directory: tools/index.md
+      - AI Agents: tools/agents.md
       - Running Models Locally: tools/local.md
   - Prompts:
       - Library: prompts/index.md
@@ -103,7 +104,10 @@ nav:
       - Videos: news/videos.md
       - Podcasts: news/podcasts.md
       - Archive: news/archive/index.md
-  - Benchmarks: benchmarks.md
+  - Benchmarks:
+      - Language Models: benchmarks.md
+      - Image Generation: benchmarks/image.md
+      - Video Generation: benchmarks/video.md
   - Conferences: conferences.md
   - Governance:
       - AI Responsible Use Policy: governance/policy.md
