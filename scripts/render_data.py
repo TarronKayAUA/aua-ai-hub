@@ -488,8 +488,7 @@ def _render_polls(config) -> str:
             lines.append(
                 f'!!! question "The AI Committee is asking"\n'
                 f"    **{poll['question']}**{note} Responses are collected "
-                f"through Microsoft Forms with an AUA account and take under "
-                f"a minute.\n\n"
+                f"through Microsoft Forms and take under a minute.\n\n"
                 f"    [Answer the poll]({poll['url']})"
                 f"{{ .md-button .md-button--primary }} "
                 f"*Closes {poll['closes']}.*"

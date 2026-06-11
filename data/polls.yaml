@@ -7,6 +7,13 @@
 # active entries: question, url (the Forms share link), closes (display
 # string), optional note. closed entries: question, outcome.
 
-active: []
+# Poll URL verified live at add time; the Forms page is JavaScript-rendered,
+# so the question wording below is confirmed against the owner's form
+# directly rather than fetched.
+
+active:
+  - question: Which AI workshop would you be interested in attending?
+    url: https://forms.office.com/r/5EiqpXHJAL
+    closes: Sunday, July 19, 2026, at 11:59 PM
 
 closed: []
