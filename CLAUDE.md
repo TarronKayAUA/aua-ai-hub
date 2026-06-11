@@ -37,6 +37,7 @@ These rules apply to everything rendered on the site, including pipeline-generat
 - Pushes made with the default GITHUB_TOKEN do not trigger other workflows; refresh.yml builds and deploys itself after committing.
 - PubMed and amia.org return 403 to all scripted clients; PubMed RSS URLs are owner-generated through pubmed.gov's Create RSS flow. gamma.app 403s scripts but is live (allowlisted in verify_links.py). YouTube channel ids must come from a channel page's canonical link, not the first channelId in the page source. Podcast RSS URLs resolve reliably through the Apple Podcasts directory API.
 - PowerShell 5.1 `Set-Content -Encoding utf8` writes a BOM; restore files with `git checkout --` rather than round-tripping, and use `git commit -F <file>` for multi-line commit messages.
+- MkDocs rewrites markdown link/image paths but NOT raw HTML src/href. With directory URLs, a page at docs/news/foo.md serves from /news/foo/, so raw HTML referencing docs/assets needs ../../assets (the briefs banner bug, 2026-06-11). External SVGs referenced via img cannot read the page's CSS variables, so site artwork under docs/assets is self-contained-color.
 
 ## Repository conventions
 
