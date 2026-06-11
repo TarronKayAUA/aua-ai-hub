@@ -11,6 +11,17 @@
   --md-primary-bg-color--light: #ffffffb3;
 }
 
+/* === Layout ================================================================
+   Material caps the content grid at 61rem for book-like line lengths.
+   Raise the cap moderately so wide screens get room for tables and card
+   grids; phones and tablets sit below the cap and are unaffected. Owner
+   preference 2026-06-11; adjust this one number to taste (readability
+   degrades as prose lines lengthen). */
+
+.md-grid {
+  max-width: 76rem;
+}
+
 [data-md-color-scheme="default"] {
   --md-typeset-a-color: #07618c;
 }
