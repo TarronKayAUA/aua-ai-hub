@@ -20,6 +20,7 @@ Exit code is nonzero if any link fails.
 
 import re
 import sys
+import time
 from pathlib import Path
 
 import requests
@@ -86,28 +87,41 @@ def collect() -> list[tuple[str, str]]:
     return list(dict.fromkeys(pairs))
 
 
-def check(url: str) -> tuple[bool, str]:
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
-        if resp.status_code in BOT_BLOCK_STATUSES:
-            host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
-            if host in MANUALLY_VERIFIED:
-                return True, f"manual ({MANUALLY_VERIFIED[host]})"
-            # A 403 reached through a doi.org link means the DOI resolved
-            # (doi.org returns 404 for unknown DOIs) and only the publisher
-            # site blocks scripted clients, so the link works in a browser.
-            if host == "doi.org" and resp.status_code == 403:
-                return True, "doi resolved (publisher 403s scripts)"
-        ok = resp.status_code < 400
-        return ok, f"HTTP {resp.status_code}"
-    except requests.RequestException as exc:
-        return False, type(exc).__name__
+def check(url: str, retries: int = 2) -> tuple[bool, str]:
+    # Transient ConnectionError/ReadTimeout under rapid sequential requests
+    # is common; retry before reporting a link dead so the monthly
+    # link-health issue only carries real failures.
+    last_exc = "RequestException"
+    for attempt in range(retries + 1):
+        try:
+            resp = requests.get(
+                url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True
+            )
+            break
+        except requests.RequestException as exc:
+            last_exc = type(exc).__name__
+            if attempt < retries:
+                time.sleep(3)
+    else:
+        return False, last_exc
+    if resp.status_code in BOT_BLOCK_STATUSES:
+        host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+        if host in MANUALLY_VERIFIED:
+            return True, f"manual ({MANUALLY_VERIFIED[host]})"
+        # A 403 reached through a doi.org link means the DOI resolved
+        # (doi.org returns 404 for unknown DOIs) and only the publisher
+        # site blocks scripted clients, so the link works in a browser.
+        if host == "doi.org" and resp.status_code == 403:
+            return True, "doi resolved (publisher 403s scripts)"
+    ok = resp.status_code < 400
+    return ok, f"HTTP {resp.status_code}"
 
 
 def main() -> int:
     pairs = collect()
     failures = []
     for source, url in pairs:
+        time.sleep(0.5)  # pacing; rapid-fire requests trip connection drops
         ok, detail = check(url)
         marker = "ok  " if ok else "FAIL"
         print(f"{marker} {detail:<22} {url}  ({source})")

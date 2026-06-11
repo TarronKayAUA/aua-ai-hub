@@ -75,7 +75,9 @@ nav:
       - How LLMs Work: basics/how-llms-work.md
       - Glossary: basics/glossary.md
       - Common Misconceptions: basics/misconceptions.md
-  - Tools: tools/index.md
+  - Tools:
+      - Directory: tools/index.md
+      - Running Models Locally: tools/local.md
   - Prompts:
       - Library: prompts/index.md
       - Community Exchange: prompts/exchange.md
