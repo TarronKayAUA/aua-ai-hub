@@ -28,6 +28,16 @@ Text is the simple case. Open-weights models also exist for image generation, vi
 
 For voice, [Whisper](https://github.com/openai/whisper) (already in the directory) transcribes speech to text entirely on your machine, and open text-to-speech models are improving quickly.
 
-## Where to learn more
+## When your machine cannot keep up: renting a GPU
 
-The runners' own documentation is good, and several channels followed by our [Videos page](../news/videos.md) regularly test new open-weights releases on consumer hardware, which is the fastest way to see what a model of a given size can actually do before downloading anything.
+If a model you want will not fit in your hardware, you can rent the hardware instead: cloud providers such as Amazon Web Services (AWS) offer GPU instances by the hour, and GPU rental marketplaces like [RunPod](https://www.runpod.io) and [Vast.ai](https://vast.ai) make the same thing simpler and usually cheaper, with one-click templates for Ollama, Open WebUI, and ComfyUI. You get capability no laptop can match and pay only while the machine runs.
+
+Be clear-eyed about what this trades away. The moment your model runs on rented hardware, your data leaves your machine, which was the headline reason to run locally in the first place. A rented GPU running an open-weights model is still more under your control than a consumer chatbot (you choose the model, nothing is retained to train on by default, and you can destroy the instance), but the [AI Responsible Use Policy](../governance/policy.md)'s data rules apply exactly as they do to any hosted tool: no patient information, student records, or confidential material. Add the practical frictions (per-hour billing that keeps running if you forget to shut down, and more setup than a desktop app) and the honest summary is: rent for capability and experiments, run truly locally for privacy, and use approved cloud tools for everyday work.
+
+## Watch: setting it up
+
+Verified walkthroughs for the tools on this page. Links reviewed June 2026; check a video's date against the tool's current version.
+
+<!-- render:guide-videos:local -->
+
+Beyond these, several channels followed by our [Videos page](../news/videos.md) regularly test new open-weights releases on consumer hardware, which is the fastest way to see what a model of a given size can actually do before downloading anything. For agents rather than models, see the companion guide on [AI Agents](agents.md).

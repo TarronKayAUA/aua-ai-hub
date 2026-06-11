@@ -85,6 +85,79 @@
   last_reviewed: 2026-06-10
   blurb: Chat assistant built on the GLM model family from Chinese lab Zhipu AI, with agent modes for slides and documents.
 
+# Agents: tools that plan and carry out multi-step tasks on a user's
+# behalf. See docs/tools/agents.md for the guide that frames this category.
+
+- name: Claude Code
+  vendor: Anthropic
+  category: agents
+  url: https://claude.com/product/claude-code
+  cost: paid
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-11
+  blurb: Anthropic's agent for software work, run from the terminal. Plans and executes multi-step coding tasks against your own files; included with paid Claude plans.
+
+- name: Cowork
+  vendor: Anthropic
+  category: agents
+  url: https://claude.com/product/cowork
+  cost: paid
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-11
+  blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
+
+- name: Codex
+  vendor: OpenAI
+  category: agents
+  url: https://openai.com/codex/
+  cost: paid
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-11
+  blurb: OpenAI's software agent, available as a command-line tool, app, and cloud service; included with paid ChatGPT plans.
+
+- name: ChatGPT Agent Mode
+  vendor: OpenAI
+  category: agents
+  url: https://help.openai.com/en/articles/11752874-chatgpt-agent
+  cost: paid
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-11
+  blurb: Agent built into ChatGPT's paid plans. Browses, fills forms, and works with files and connected apps in a sandboxed virtual computer, asking for confirmation before consequential steps.
+
+- name: Manus
+  vendor: Manus AI
+  category: agents
+  url: https://manus.im
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-11
+  blurb: General-purpose autonomous agent that breaks a goal into steps and executes them in a cloud workspace, producing research, documents, slides, and simple applications.
+
+- name: Comet
+  vendor: Perplexity
+  category: agents
+  url: https://www.perplexity.ai/comet
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-11
+  blurb: Web browser with a built-in agent that can summarize, navigate, and act across your open tabs and accounts. Free to use, with higher limits on paid plans.
+
+- name: OpenClaw
+  vendor: OpenClaw (open source)
+  category: agents
+  url: https://openclaw.ai
+  cost: free
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review. Self-hosted software with broad system access; for technically confident users who scope its permissions deliberately.
+  last_reviewed: 2026-06-11
+  blurb: Open-source, self-hosted personal agent that connects a model of your choice to the messaging apps you already use. Free software; you supply the model, hardware, and judgment.
+
 - name: Elicit
   vendor: Elicit
   category: research

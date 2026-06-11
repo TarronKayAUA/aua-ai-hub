@@ -21,6 +21,7 @@ Exit code is nonzero if any link fails.
 import re
 import sys
 import time
+import urllib.parse
 from pathlib import Path
 
 import requests
@@ -57,6 +58,7 @@ def collect() -> list[tuple[str, str]]:
         "data/conferences.yaml",
         "data/prompt_resources.yaml",
         "data/open_models.yaml",
+        "data/guide_videos.yaml",
     ):
         path = REPO / yaml_rel
         if not path.exists():
@@ -88,6 +90,15 @@ def collect() -> list[tuple[str, str]]:
 
 
 def check(url: str, retries: int = 2) -> tuple[bool, str]:
+    # YouTube rate-limits watch pages (HTTP 429) when several are fetched in
+    # a row. The oEmbed endpoint answers cheaply: 200 for a live public
+    # video, 400/404 for a dead one. Check videos through it instead.
+    if re.match(r"https?://(?:www\.)?youtube\.com/watch\?v=[\w-]+", url):
+        url = (
+            "https://www.youtube.com/oembed?url="
+            + urllib.parse.quote(url, safe="")
+            + "&format=json"
+        )
     # Transient ConnectionError/ReadTimeout under rapid sequential requests
     # is common; retry before reporting a link dead so the monthly
     # link-health issue only carries real failures.

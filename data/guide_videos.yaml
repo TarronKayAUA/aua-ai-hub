@@ -1,0 +1,82 @@
+# Curated setup and walkthrough videos for the technical guide pages.
+# Rendered at build time by scripts/render_data.py into the page matching
+# each entry's group: "agents" renders in docs/tools/agents.md, "local"
+# renders in docs/tools/local.md. Edit this file only; never the pages.
+#
+# Every entry is verified before commit (video live, channel and title
+# confirmed via YouTube's oEmbed API, duration and upload date from the
+# watch page). Tutorials age quickly: prefer official-channel videos where
+# they exist, keep one entry per tool, and refresh entries when a tool's
+# interface changes. published is a display string.
+
+- tool: Claude Code
+  group: agents
+  title: Full Claude Code Tutorial for Non-Technical Beginners
+  channel: Futurepedia
+  length: 40 min
+  published: April 2026
+  url: https://www.youtube.com/watch?v=bqJzIWAEn40
+  note: Aimed at people who do not program; step by step from installation onward.
+
+- tool: Cowork
+  group: agents
+  title: Claude Cowork, Full Course for Beginners
+  channel: Tech With Tim
+  length: 24 min
+  published: March 2026
+  url: https://www.youtube.com/watch?v=tf_KmDNZXzI
+  note: Sessions, folder projects, and how Cowork differs from chat and Claude Code.
+
+- tool: Codex
+  group: agents
+  title: Getting started with Codex
+  channel: OpenAI (official)
+  length: 53 min
+  published: January 2026
+  url: https://www.youtube.com/watch?v=px7XlbYgk7I
+  note: Official onboarding covering the command line, app, and editor extension.
+
+- tool: ChatGPT Agent Mode
+  group: agents
+  title: Introduction to ChatGPT agent
+  channel: OpenAI (official)
+  length: 25 min
+  published: July 2025
+  url: https://www.youtube.com/watch?v=1jn_RpbPbEc
+  note: The official introduction; the feature has gained safeguards since, but the workflow shown still holds.
+
+- tool: Manus
+  group: agents
+  title: Manus AI explained simply in 13 minutes (setup and use cases)
+  channel: No Code MBA
+  length: 13 min
+  published: April 2026
+  url: https://www.youtube.com/watch?v=a7OZwy7kOxM
+  note: Compact tour of setup and what delegated tasks look like in practice.
+
+- tool: OpenClaw
+  group: agents
+  title: How to Setup OpenClaw on Windows with Ollama
+  channel: Ksk Royal
+  length: 12 min
+  published: April 2026
+  url: https://www.youtube.com/watch?v=UtwVMvMdouY
+  note: A full Windows installation walkthrough paired with a local model; the most technical item here.
+
+- tool: Ollama
+  group: local
+  title: Learn Ollama in 15 Minutes, Run LLM Models Locally for FREE
+  channel: Tech With Tim
+  length: 14 min
+  published: January 2025
+  url: https://www.youtube.com/watch?v=UtSSMs6ObqY
+  note: Older than the rest but still accurate; Ollama's basics have not changed.
+
+- tool: ComfyUI
+  group: local
+  title: ComfyUI in 20 Minutes, Absolute Beginner Guide to Getting Started
+  channel: WINBUSH
+  length: 21 min
+  published: March 2026
+  url: https://www.youtube.com/watch?v=6dXpgL1-YdM
+  note: Installation through a first image-generation workflow on the node canvas.

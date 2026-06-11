@@ -23,6 +23,8 @@ import yaml
 
 TOOLS_MARKER = "<!-- render:tools -->"
 OPEN_MODELS_MARKER = "<!-- render:open-models -->"
+GUIDE_VIDEOS_AGENTS_MARKER = "<!-- render:guide-videos:agents -->"
+GUIDE_VIDEOS_LOCAL_MARKER = "<!-- render:guide-videos:local -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
@@ -46,6 +48,7 @@ PROMPT_RESOURCE_TYPES = {"video", "guide", "paper"}
 
 CATEGORY_LABELS = {
     "assistants": "Assistants",
+    "agents": "Agents",
     "research": "Research",
     "medical_learning": "Medical Learning",
     "writing_slides": "Writing and Slides",
@@ -53,6 +56,8 @@ CATEGORY_LABELS = {
     "media": "Media",
     "local": "Local Models",
 }
+
+GUIDE_VIDEO_GROUPS = {"agents", "local"}
 
 STATUS_LABELS = {
     "approved": ("Approved", "badge-approved"),
@@ -170,6 +175,37 @@ def _render_open_models(config) -> str:
     if len(cards) != len(models):
         raise AssertionError("render_data hook: open models count mismatch")
     return '<div class="tool-grid">\n' + "\n".join(cards) + "\n</div>"
+
+
+def _render_guide_videos(config, group: str) -> str:
+    videos = _load(_data_dir(config) / "guide_videos.yaml")
+    lines = []
+    total_in_known_groups = 0
+    for entry in videos:
+        if entry["group"] not in GUIDE_VIDEO_GROUPS:
+            raise ValueError(
+                f"render_data hook: unknown guide video group "
+                f"{entry['group']!r} on {entry['title']!r}"
+            )
+        total_in_known_groups += 1
+        if entry["group"] != group:
+            continue
+        note = " ".join(entry["note"].split()) if entry.get("note") else ""
+        note_part = f": {note}" if note else ""
+        lines.append(
+            f"- **{entry['tool']}**: [{entry['title']}]({entry['url']}) "
+            f"({entry['channel']}, {entry['length']}, "
+            f"{entry['published']}){note_part}"
+        )
+    print(f"render_data: guide videos verification ({group})")
+    print(f"  entries read : {len(videos)} (all groups valid: "
+          f"{total_in_known_groups == len(videos)})")
+    print(f"  rendered     : {len(lines)} for group {group!r}")
+    if not lines:
+        raise AssertionError(
+            f"render_data hook: no guide videos for group {group!r}"
+        )
+    return "\n".join(lines)
 
 
 # --- prompt resources ---------------------------------------------------------
@@ -455,6 +491,24 @@ def on_page_markdown(markdown, page, config, files):
                 )
         markdown = markdown.replace(TOOLS_MARKER, _render_tools(config))
         return markdown.replace(OPEN_MODELS_MARKER, _render_open_models(config))
+    if src == "tools/agents.md":
+        if GUIDE_VIDEOS_AGENTS_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: tools/agents.md is missing the "
+                f"{GUIDE_VIDEOS_AGENTS_MARKER} marker"
+            )
+        return markdown.replace(
+            GUIDE_VIDEOS_AGENTS_MARKER, _render_guide_videos(config, "agents")
+        )
+    if src == "tools/local.md":
+        if GUIDE_VIDEOS_LOCAL_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: tools/local.md is missing the "
+                f"{GUIDE_VIDEOS_LOCAL_MARKER} marker"
+            )
+        return markdown.replace(
+            GUIDE_VIDEOS_LOCAL_MARKER, _render_guide_videos(config, "local")
+        )
     if src == "conferences.md":
         if CONFERENCES_MARKER not in markdown:
             raise AssertionError(
