@@ -13,6 +13,42 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02890-1">FIRST-ICU: forecasting interventions and risk stratification in the ICU using graph neural network autoencoders</a>
+    <p class="news-card-summary">The FIRST-ICU model uses graph neural network autoencoders to forecast interventions and risk stratify patients in intensive care units.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02664-9">Embeddings of clinical codes enable knowledge-grounded AI in medicine</a>
+    <p class="news-card-summary">This study in npj Digital Medicine demonstrates how embeddings of clinical codes can enable knowledge-grounded artificial intelligence applications in medicine for improved clinical insights.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02878-x">A systematic review of explainable artificial intelligence and cardiac electrophysiological models addressing sports-related sudden cardiac death and arrest in adolescents and young adults</a>
+    <p class="news-card-summary">A systematic review in npj Digital Medicine evaluates explainable artificial intelligence and cardiac electrophysiological models related to sports-associated sudden cardiac events.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02827-8">How can reasoning capability empower the AI copilot robot in endoscopic surgery</a>
+    <p class="news-card-summary">This article explores how reasoning capabilities can enhance AI copilot robots assisting in endoscopic surgical procedures.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-02827-8/MediaObjects/41746_2026_2827_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04510-7">Clinical Profile and Genomic Characterization of the 2026 Bundibugyo Virus Index Case in Uganda</a>
+    <p class="news-card-summary">Nature Medicine reports the clinical profile and genomic characterization of the 2026 Bundibugyo virus index case in Uganda to inform disease understanding and management.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80930">Machine Learning for Intraoperative Bleeding Prediction in Patients Undergoing Surgery: Scoping Review</a>
     <p class="news-card-summary">A scoping review examines machine learning methods for predicting intraoperative bleeding to improve surgical safety and patient outcomes.</p>
@@ -82,43 +118,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02893-y">AI-assisted improvement of endoscopic diagnosis of ampullary lesions</a>
     <p class="news-card-summary">A study reports the use of artificial intelligence to enhance endoscopic diagnosis accuracy for ampullary lesions, potentially improving clinical outcomes.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02680-9">Deployable real-time spinal endoscopic instance segmentation with lightweight multi-scale attention mechanism</a>
-    <p class="news-card-summary">The study presents a lightweight multi-scale attention deep learning model for real-time instance segmentation during spinal endoscopy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 8, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80574">Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study</a>
-    <p class="news-card-summary">Background: Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/29c3afc5b617a820185fb531df6a4456.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02767-3">Federated orthogonal learning for detection of liver lesions from multi-phase contrast-enhanced CT images</a>
-    <p class="news-card-summary">Researchers present a federated orthogonal learning method for detecting liver lesions using multi-phase contrast-enhanced computed tomography images without sharing patient data across centers.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 5, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84194">Knowledge, Attitudes, Practices, Barriers, and Promotional Strategies Related to Clinical Data Interchange Standards Consortium Adoption Among Clinical Data Management Professionals: Semiqualitative Interview Study</a>
-    <p class="news-card-summary">Background: National Medical Products Administration of China has actively encouraged organizations to adopt the Clinical Data Interchange Standards Consortium (CDISC) for clinical data submission since 2020.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/2db9d4bc30b7e7a417840e319605bee7.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 4, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80403">Histopathological Assessment of Myocardial Ischemia-Reperfusion Injury Using Transformer-Based Artificial Intelligence: Model Comparison Study</a>
-    <p class="news-card-summary">Background: Myocardial ischemia-reperfusion injury (MIRI) poses diagnostic challenges due to complex histopathological changes.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/5d68991295f9af0cc9ac2b8f71b02433.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

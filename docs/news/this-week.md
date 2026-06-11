@@ -13,6 +13,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.11208">BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts</a>
+    <p class="news-card-summary">BioDivergence proposes a benchmark and evaluation framework to detect hidden contextual contradictions in biomedical abstracts, improving reliability of biomedical literature interpretation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267500?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">The role of emerging technology in expanding regional anesthesia education and patient access</a>
     <p class="news-card-summary">Emerging technologies are identified as enhancing regional anesthesia education and expanding patient access.</p>
@@ -51,6 +58,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267893?fc=20260609215449&amp;ff=20260610121559&amp;v=2.20.0">Integrating Artificial Intelligence-Based Simulation into Serious Illness Conversation Training: A Pilot Medical Student Intervention</a>
     <p class="news-card-summary">A pilot study tested artificial intelligence-based simulation as a training tool for medical students to practice serious illness conversations.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42270292?fc=20260609215449&amp;ff=20260611061658&amp;v=2.20.0">Exploring the capabilities of three artificial intelligence chatbots in diagnosis and decision-making of age-related macular degeneration</a>
+    <p class="news-card-summary">Research evaluates three artificial intelligence chatbots in diagnosing and decision-making for age-related macular degeneration, showing strong capabilities in clinical tasks.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42269942?fc=20260609215449&amp;ff=20260611061658&amp;v=2.20.0">Artificial intelligence and medical retina training: A scoping review of educational opportunities, emerging risks, and curricular responses</a>
+    <p class="news-card-summary">This scoping review discusses educational opportunities, risks, and needed curriculum changes related to autonomous artificial intelligence in medical retina training.</p>
   </div>
 </div>
 <div class="news-card">
@@ -192,6 +213,42 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02890-1">FIRST-ICU: forecasting interventions and risk stratification in the ICU using graph neural network autoencoders</a>
+    <p class="news-card-summary">The FIRST-ICU model uses graph neural network autoencoders to forecast interventions and risk stratify patients in intensive care units.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02664-9">Embeddings of clinical codes enable knowledge-grounded AI in medicine</a>
+    <p class="news-card-summary">This study in npj Digital Medicine demonstrates how embeddings of clinical codes can enable knowledge-grounded artificial intelligence applications in medicine for improved clinical insights.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02878-x">A systematic review of explainable artificial intelligence and cardiac electrophysiological models addressing sports-related sudden cardiac death and arrest in adolescents and young adults</a>
+    <p class="news-card-summary">A systematic review in npj Digital Medicine evaluates explainable artificial intelligence and cardiac electrophysiological models related to sports-associated sudden cardiac events.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02827-8">How can reasoning capability empower the AI copilot robot in endoscopic surgery</a>
+    <p class="news-card-summary">This article explores how reasoning capabilities can enhance AI copilot robots assisting in endoscopic surgical procedures.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-02827-8/MediaObjects/41746_2026_2827_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04510-7">Clinical Profile and Genomic Characterization of the 2026 Bundibugyo Virus Index Case in Uganda</a>
+    <p class="news-card-summary">Nature Medicine reports the clinical profile and genomic characterization of the 2026 Bundibugyo virus index case in Uganda to inform disease understanding and management.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
@@ -379,6 +436,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.11204">Benchmarking Large Language Models for Safety Data Extraction</a>
+    <p class="news-card-summary">A new arXiv study benchmarks large language models for extracting safety data from structured sources, relevant for clinical AI safety assessment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.11257">Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite</a>
+    <p class="news-card-summary">This work presents an energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units, enabling more practical AI deployments.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 10, 2026</span></div>

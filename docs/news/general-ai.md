@@ -13,6 +13,20 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.11204">Benchmarking Large Language Models for Safety Data Extraction</a>
+    <p class="news-card-summary">A new arXiv study benchmarks large language models for extracting safety data from structured sources, relevant for clinical AI safety assessment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.11257">Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite</a>
+    <p class="news-card-summary">This work presents an energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units, enabling more practical AI deployments.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">Anthropic&#x27;s Model Naming, Extrapolated</a>
     <p class="news-card-summary">Analysis of Anthropic&#x27;s model naming convention provides insights into their future large language model development plans.</p>

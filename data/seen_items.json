@@ -2721,6 +2721,313 @@
    "summary": "For such technology with clear importance and impact on all of us, I believe that making it open source is an ethical duty, otherwise, especially with the 1-sided politics of the US we experience today, they could have already monopolized the technology by now, maybe make it exclusively available to US companies only, and starve the entire world including Europe. You could disagree with China on many topics, but the fact they released a couple of powerful open source LLMs is a direct…",
    "category": "general_ai",
    "score": 2.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11196",
+   "title_hash": "664de6e3c32ebc885cf75bd613556227",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11198",
+   "title_hash": "5680ba8284ed819049f3eb4910901dc0",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11199",
+   "title_hash": "4db1a52c214b7d294f8e5b66c04ed6b5",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11200",
+   "title_hash": "048784075fe84c307bd7f48ba3f342fd",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11202",
+   "title_hash": "4aaf6a487cecae3dbcb2f6a104e655db",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11203",
+   "title_hash": "83a56a71e1c12fde04cb03f18808ab56",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11204",
+   "title_hash": "2a3d140e31f4aa70410c93e220330493",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "Benchmarking Large Language Models for Safety Data Extraction",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-11T04:00:00+00:00",
+   "summary": "A new arXiv study benchmarks large language models for extracting safety data from structured sources, relevant for clinical AI safety assessment.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11206",
+   "title_hash": "e0cccfb79b9355b9ba5336cf9bd17620",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11208",
+   "title_hash": "14a6cd2282f7c858a3876ff7983176c5",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-11T04:00:00+00:00",
+   "summary": "BioDivergence proposes a benchmark and evaluation framework to detect hidden contextual contradictions in biomedical abstracts, improving reliability of biomedical literature interpretation.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11209",
+   "title_hash": "f9e84ae6f9dec8ca3c9701d7499f6994",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11210",
+   "title_hash": "da0de2256c4a1c399621dc519ebc3fd6",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11211",
+   "title_hash": "657829bfd12c9716ba9a83f960af67ef",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11212",
+   "title_hash": "6d70ccbb53ca3623a0476736d00e3d56",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11213",
+   "title_hash": "c0357761117b208c8f42c76da619d908",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11219",
+   "title_hash": "bef917f598b4ea10e5d4c64138c6dd1d",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11220",
+   "title_hash": "7bc85c78baab4479bf7088766cbed093",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11222",
+   "title_hash": "fc3e5c8c95d052fee06318ab79c3ead2",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11232",
+   "title_hash": "cdfeaf0c884fdb15c78ca014247444a7",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11257",
+   "title_hash": "6cf1654fe3e48d66d618e63bb5811bbf",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-11T04:00:00+00:00",
+   "summary": "This work presents an energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units, enabling more practical AI deployments.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11316",
+   "title_hash": "14e4c1442597c5ed99ea249ceb0eb917",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11350",
+   "title_hash": "4632d7c25dc782e8f47cc06bcdf54e21",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11371",
+   "title_hash": "47df79e12dbce1893e27aca4d3f4578f",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11375",
+   "title_hash": "cb7156f80acdf98930ba4700a8f38eb9",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11386",
+   "title_hash": "cc25a1f808c9614d06d430a0f8368bc7",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.11387",
+   "title_hash": "247f2b6864c1061e64ed0430cea87427",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy",
+   "title_hash": "b5cd1baf9a55f42cc8f7e23c451d49cd",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02678-3",
+   "title_hash": "2b95e87f531b2bdc91ed9e1388c285ef",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02890-1",
+   "title_hash": "7845783225b4a7bd7cb192ff76401962",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "FIRST-ICU: forecasting interventions and risk stratification in the ICU using graph neural network autoencoders",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-11T00:00:00+00:00",
+   "summary": "The FIRST-ICU model uses graph neural network autoencoders to forecast interventions and risk stratify patients in intensive care units.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02664-9",
+   "title_hash": "5813c111d19fc5314914354a22d5a71f",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "Embeddings of clinical codes enable knowledge-grounded AI in medicine",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-11T00:00:00+00:00",
+   "summary": "This study in npj Digital Medicine demonstrates how embeddings of clinical codes can enable knowledge-grounded artificial intelligence applications in medicine for improved clinical insights.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02878-x",
+   "title_hash": "bf1416545776e0f52e1acb5a8cfe02ce",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "A systematic review of explainable artificial intelligence and cardiac electrophysiological models addressing sports-related sudden cardiac death and arrest in adolescents and young adults",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-11T00:00:00+00:00",
+   "summary": "A systematic review in npj Digital Medicine evaluates explainable artificial intelligence and cardiac electrophysiological models related to sports-associated sudden cardiac events.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02827-8",
+   "title_hash": "78c7d4d2a10e3b76bafcb0c6154cdefb",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "How can reasoning capability empower the AI copilot robot in endoscopic surgery",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-11T00:00:00+00:00",
+   "summary": "This article explores how reasoning capabilities can enhance AI copilot robots assisting in endoscopic surgical procedures.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-02827-8/MediaObjects/41746_2026_2827_Fig1_HTML.png"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04510-7",
+   "title_hash": "5ae31d442e9df40913a0e4ee63cf68b8",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "Clinical Profile and Genomic Characterization of the 2026 Bundibugyo Virus Index Case in Uganda",
+   "source": "Nature Medicine",
+   "published": "2026-06-11T00:00:00+00:00",
+   "summary": "Nature Medicine reports the clinical profile and genomic characterization of the 2026 Bundibugyo virus index case in Uganda to inform disease understanding and management.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/10/datasette-agent",
+   "title_hash": "63b8f94bb53417e6d189bc0229e88c5c",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850",
+   "title_hash": "6754c369d6e6225177d9e7fcf443182c",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42270292?fc=20260609215449&ff=20260611061658&v=2.20.0",
+   "title_hash": "66b0eb66018ccc639cf21bc5e56bed83",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "Exploring the capabilities of three artificial intelligence chatbots in diagnosis and decision-making of age-related macular degeneration",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "Research evaluates three artificial intelligence chatbots in diagnosing and decision-making for age-related macular degeneration, showing strong capabilities in clinical tasks.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42269942?fc=20260609215449&ff=20260611061658&v=2.20.0",
+   "title_hash": "f0a2138cfb0ebc7739792b64eda8b550",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": true,
+   "title": "Artificial intelligence and medical retina training: A scoping review of educational opportunities, emerging risks, and curricular responses",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-10T10:00:00+00:00",
+   "summary": "This scoping review discusses educational opportunities, risks, and needed curriculum changes related to autonomous artificial intelligence in medical retina training.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u084qi/gemma_4_chat_template_now_has_preserve_thinking",
+   "title_hash": "c81b39907016cbe49155a2886a0709e9",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=n4XMisTcL0k",
+   "title_hash": "b38f18346090bbb8ca2f6f6cd9125a72",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=GUEE9OA4keo",
+   "title_hash": "207a6f46ae4c2a595de0236f1e5236ff",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=deFvnmibzow",
+   "title_hash": "0e75384d28226230825770cde34da39b",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://share.transistor.fm/s/5c1a087d",
+   "title_hash": "b13b9ee2b9b173203118c0f6331c181e",
+   "first_seen": "2026-06-11T10:16:57.987373+00:00",
+   "kept": false
   }
  ],
  "digests": [

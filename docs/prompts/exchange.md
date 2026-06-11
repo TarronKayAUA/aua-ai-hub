@@ -2,23 +2,8 @@
 
 # Community Exchange
 
-Every prompt shared on the community board, mirrored here nightly (as of June 10, 2026) and sorted by votes. Posts appear as their authors wrote them and are not reviewed; the best are tested and promoted into the [reviewed library](index.md) with credit. Voting and replying happen on GitHub and need a free [GitHub account](https://github.com/signup). Keep posts professional, and never include patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](../governance/policy.md); posts are subject to moderation.
+Every prompt shared on the community board, mirrored here nightly (as of June 11, 2026) and sorted by votes. Posts appear as their authors wrote them and are not reviewed; the best are tested and promoted into the [reviewed library](index.md) with credit. Voting and replying happen on GitHub and need a free [GitHub account](https://github.com/signup). Keep posts professional, and never include patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](../governance/policy.md); posts are subject to moderation.
 
 [Share a prompt](https://github.com/TarronKayAUA/aua-ai-hub/discussions/new/choose){ .md-button .md-button--primary }
 
-### [Test](https://github.com/TarronKayAUA/aua-ai-hub/discussions/3)
-
-<span class="exchange-meta">by **TarronKay**, June 10, 2026, **1** upvotes, 0 replies</span>
-
-Test
-
-[Vote or reply on GitHub](https://github.com/TarronKayAUA/aua-ai-hub/discussions/3)
-
-### [Hello](https://github.com/TarronKayAUA/aua-ai-hub/discussions/4)
-
-<span class="exchange-meta">by **TarronKay**, June 10, 2026, **1** upvotes, 1 replies</span>
-
-Hi
-
-[Vote or reply on GitHub](https://github.com/TarronKayAUA/aua-ai-hub/discussions/4)
-
+No community prompts yet. Be the first to [share one](https://github.com/TarronKayAUA/aua-ai-hub/discussions/new/choose).
