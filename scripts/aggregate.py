@@ -741,6 +741,112 @@ def update_livebench(config: dict, now: datetime, dry_run: bool,
         return f"unavailable ({type(exc).__name__})"
 
 
+# --- Media arena tables (Image/Video Generation benchmark pages) --------------
+
+
+def update_media_benchmarks(config: dict, now: datetime, dry_run: bool,
+                            verbose: bool) -> str:
+    """Refresh includes/media-*.md from the Artificial Analysis Data API.
+
+    Free tier returns model identity plus arena Elo and a 95% confidence
+    interval per arena. Without the API key in the environment the step is
+    skipped and any previous snapshot stays in place; on any fetch or parse
+    failure, likewise (keep-last-good, mirroring update_livebench)."""
+    cfg = config.get("benchmarks", {}).get("media_arenas")
+    if not cfg:
+        return "not configured"
+    include_paths = {
+        arena["include"]: REPO / "includes" / arena["include"]
+        for arena in cfg["arenas"]
+    }
+    api_key = os.environ.get(cfg.get("key_env", ""), "")
+    if not api_key:
+        return f"skipped (no {cfg.get('key_env')} in environment)"
+    headers = {"x-api-key": api_key, "User-Agent": USER_AGENT}
+    try:
+        by_include: dict[str, list] = {}
+        fetched = []
+        for arena in cfg["arenas"]:
+            resp = requests.get(
+                f"{cfg['base_url']}/{arena['slug']}/models",
+                headers=headers, timeout=30,
+            )
+            resp.raise_for_status()
+            models = resp.json().get("data") or []
+            rows = []
+            for model in models:
+                name = model.get("name")
+                elo = model.get("elo")
+                if not name or elo is None:
+                    continue
+                rows.append({
+                    "name": name,
+                    "creator": (model.get("model_creator") or {}).get("name", ""),
+                    "elo": float(elo),
+                    "ci": model.get("ci_95"),
+                })
+            if not rows:
+                raise ValueError(f"no usable models for {arena['slug']}")
+            rows.sort(key=lambda r: -r["elo"])
+            by_include.setdefault(arena["include"], []).append(
+                (arena["label"], rows[: cfg.get("rows", 12)], len(rows))
+            )
+            fetched.append(f"{arena['slug']} {len(rows)}")
+
+        for include_name, tables in by_include.items():
+            lines = [
+                GENERATED_HEADER,
+                "",
+                f"Arena Elo ratings fetched {fmt_date(now)} from the "
+                "[Artificial Analysis](https://artificialanalysis.ai/) Data "
+                "API (attribution per its free tier terms). Ratings come "
+                "from blind human preference votes; higher is better, and "
+                "the interval is the 95% confidence range.",
+            ]
+            for label, top, total in tables:
+                lines += [
+                    "",
+                    f"**{label}** (top {len(top)} of {total} ranked models)",
+                    "",
+                    "| # | Model | Creator | Arena Elo |",
+                    "| --- | --- | --- | --- |",
+                ]
+                for rank, row in enumerate(top, 1):
+                    ci = ""
+                    if row.get("ci") not in (None, ""):
+                        ci = f" (&plusmn;{float(row['ci']):.0f})"
+                    lines.append(
+                        f"| {rank} | {remove_dashes(row['name'])} "
+                        f"| {remove_dashes(row['creator'])} "
+                        f"| **{row['elo']:.0f}**{ci} |"
+                    )
+            content = "\n".join(lines) + "\n"
+            path = include_paths[include_name]
+            if dry_run:
+                print(f"[dry-run] would write includes/{include_name} "
+                      f"({len(tables)} tables)")
+            else:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(content, encoding="utf-8", newline="\n")
+        return "updated (" + ", ".join(fetched) + ")"
+    except (requests.RequestException, ValueError, KeyError) as exc:
+        if verbose:
+            print(f"  media arenas update failed: {type(exc).__name__}: {exc}")
+        if all(path.exists() for path in include_paths.values()):
+            return f"kept previous tables ({type(exc).__name__})"
+        if not dry_run:
+            for path in include_paths.values():
+                if not path.exists():
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text(
+                        GENERATED_HEADER + "\n\nThe snapshot is temporarily "
+                        "unavailable. See [Artificial Analysis]"
+                        "(https://artificialanalysis.ai/) directly.\n",
+                        encoding="utf-8", newline="\n",
+                    )
+        return f"unavailable ({type(exc).__name__})"
+
+
 # --- LLM curation (SPEC section 9) -------------------------------------------
 
 
@@ -1871,6 +1977,8 @@ def main() -> int:
 
     livebench_status = update_livebench(config, now, args.dry_run,
                                         args.verbose)
+    media_status = update_media_benchmarks(config, now, args.dry_run,
+                                           args.verbose)
     community_status = update_community_prompts(config, now, args.dry_run,
                                                 args.verbose)
 
@@ -1923,6 +2031,7 @@ def main() -> int:
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
     print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
     print(f"livebench table  : {livebench_status}")
+    print(f"media arenas     : {media_status}")
     print(f"community prompts: {community_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {digest_status}")

@@ -122,6 +122,25 @@ benchmarks:
     base_url: https://livebench.ai
     fallback_version: "2026_01_08"
     rows: 15
+  # Artificial Analysis free Data API (documented at
+  # artificialanalysis.ai/data-api/docs, verified 2026-06-11). Free tier:
+  # 1,000 requests/day, attribution required. The key lives only in the
+  # repository secret / local env var named by key_env; the pipeline skips
+  # this step cleanly when the variable is absent.
+  media_arenas:
+    base_url: https://artificialanalysis.ai/api/v2/media
+    key_env: ARTIFICIAL_ANALYSIS_LEADERBOARD_API
+    rows: 12
+    arenas:
+      - slug: text-to-image
+        label: Text-to-image
+        include: media-image.md
+      - slug: text-to-video
+        label: Text-to-video
+        include: media-video.md
+      - slug: image-to-video
+        label: Image-to-video
+        include: media-video.md
 
 # Curated YouTube channels for the Videos page. Feed URLs derive from
 # channel_id: https://www.youtube.com/feeds/videos.xml?channel_id=<id>

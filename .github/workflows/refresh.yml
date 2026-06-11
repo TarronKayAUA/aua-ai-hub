@@ -44,6 +44,9 @@ jobs:
           # keyword mode.
           GITHUB_TOKEN: ${{ github.token }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Artificial Analysis free Data API key for the media arena
+          # snapshots; without it the pipeline skips that step cleanly.
+          ARTIFICIAL_ANALYSIS_LEADERBOARD_API: ${{ secrets.ARTIFICIAL_ANALYSIS_LEADERBOARD_API }}
         run: python scripts/aggregate.py --verbose
       - name: Commit refreshed content
         run: |

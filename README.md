@@ -30,7 +30,7 @@ To update the conferences table or the tools directory, edit the YAML files only
 
 - Hand-authored: everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `data/prompts.yaml`; `data/prompt_resources.yaml`; `data/open_models.yaml`; `data/committee.yaml`; `prompts/curator.md`.
 - Data-driven: the conferences table, tools directory, open-weights models section, prompt library, prompt learning resources, and committee page, rendered from YAML at build time.
-- Generated (never hand-edit): `docs/news/**`, `docs/prompts/exchange.md`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `includes/community-prompts.md`, `data/seen_items.json`, `data/conference_flags.md`.
+- Generated (never hand-edit): `docs/news/**`, `docs/prompts/exchange.md`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `includes/media-image.md`, `includes/media-video.md`, `includes/community-prompts.md`, `data/seen_items.json`, `data/conference_flags.md`.
 
 ## Videos and podcasts
 

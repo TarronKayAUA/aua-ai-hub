@@ -34,6 +34,12 @@ When you read an image arena, look past the overall rank to the things that sepa
 
 </div>
 
+## Arena snapshot
+
+--8<-- "includes/media-image.md"
+
+A note on method: this table is rebuilt nightly by the same pipeline that refreshes the News section, using the Artificial Analysis free Data API. If the upstream data is unreachable, the most recent successful snapshot stays in place and the date above tells you how fresh it is.
+
 ## Medical images are a different question
 
 No public leaderboard ranks models on generating *accurate* medical imagery, and the peer-reviewed evidence says the gap between pretty and correct is wide. A 2025 study in the Journal of Pediatric Ophthalmology and Strabismus had general text-to-image models depict common pediatric eye pathologies and scored them against human medical illustration: the generated images rated poorly overall and worse on pathological accuracy specifically ([DOI](https://doi.org/10.3928/01913913-20250724-03)). A clinical perspective in Cureus reaches the same balance point for practice: generated imagery may eventually enrich patient communication and teaching, but inaccuracy and bias demand that it supplement, never substitute for, verified clinical material ([DOI](https://doi.org/10.7759/cureus.68313)). The technical literature on medical image synthesis and translation is advancing quickly, with its own evaluation metrics distinct from preference arenas; a 2025 review in Medical Image Analysis maps that landscape ([DOI](https://doi.org/10.1016/j.media.2025.103605)).
