@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Office of the Assistant Dean for AI in Medical Education, which also chairs the institution's AI Governance Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
+The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Office of the Assistant Dean of AI in Medical Education, which also chairs the institution's AI Governance Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
 
 ## How content is selected
 
@@ -32,7 +32,7 @@ This site is informational. AI-generated summaries and descriptions may contain 
 <div class="maintainer-card">
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
 <div class="maintainer-bio">
-<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean for Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Governance Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
+<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean of Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Governance Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
 </div>
 </div>
 
@@ -46,4 +46,4 @@ News, video, podcast, and digest pages also carry a comments section where you c
 
 ## Contact
 
-Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact the Office of the Assistant Dean for AI in Medical Education, AUACOM.
+Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact the Office of the Assistant Dean of AI in Medical Education, AUACOM.

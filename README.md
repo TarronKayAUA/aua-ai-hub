@@ -1,6 +1,6 @@
 # AUA AI Hub
 
-Curated artificial intelligence reference and news hub for the American University of Antigua College of Medicine (AUACOM). Maintained by Dr. Tarron Kayalackakom, Assistant Dean for AI in Medical Education.
+Curated artificial intelligence reference and news hub for the American University of Antigua College of Medicine (AUACOM). Maintained by Dr. Tarron Kayalackakom, Assistant Dean of AI in Medical Education.
 
 Built with MkDocs Material, deployed to GitHub Pages, and refreshed by a Python feed-aggregation pipeline running on GitHub Actions. See SPEC.md for the full specification and CLAUDE.md for working rules.
 

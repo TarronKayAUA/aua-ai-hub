@@ -4,4 +4,4 @@ The AI Governance Committee governs the use of artificial intelligence (AI) at t
 
 <!-- render:committee -->
 
-To reach the committee with a question, a concern, or a report under the policy's reporting provisions, contact the Office of the Assistant Dean for AI in Medical Education.
+To reach the committee with a question, a concern, or a report under the policy's reporting provisions, contact the Office of the Assistant Dean of AI in Medical Education.

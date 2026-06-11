@@ -4,7 +4,7 @@ Project specification for an automated AI information hub for the American Unive
 
 This document is the source of truth for scope and behavior. If implementation needs to deviate from anything here, flag the deviation and confirm with the owner before proceeding. Working rules and style rules live in CLAUDE.md.
 
-- Owner: Assistant Dean for AI in Medical Education (chairs the AUA AI Governance Committee)
+- Owner: Assistant Dean of AI in Medical Education (chairs the AUA AI Governance Committee)
 - Audience: AUACOM faculty (primary) and students (secondary)
 - Visibility: all content is public-facing; the repository is public
 - Status: greenfield build
