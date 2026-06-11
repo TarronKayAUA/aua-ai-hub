@@ -20,7 +20,7 @@ Validation build (run after any nav or content change):
 
 ## How the data-driven pages work
 
-The conferences table (`docs/conferences.md`), the tools directory (`docs/tools/index.md`), the prompt library (`docs/prompts/index.md`), and the committee page (`docs/governance/committee.md`) are rendered from their matching files under `data/` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`.
+The conferences table (`docs/conferences.md`), the tools directory and its open-weights section (`docs/tools/index.md`), the prompt library and its learning resources (`docs/prompts/index.md`), and the committee page (`docs/governance/committee.md`) are rendered from their matching files under `data/` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`.
 
 Why a hook instead of a pre-build script: the hook runs automatically inside both `mkdocs serve` and `mkdocs build --strict`, so there is no extra workflow step to forget, and the rendered tables are injected in memory only. Nothing generated is ever written into hand-authored files under `docs/`.
 
@@ -28,8 +28,8 @@ To update the conferences table or the tools directory, edit the YAML files only
 
 ## Content classes
 
-- Hand-authored: everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `prompts/curator.md`.
-- Data-driven: the conferences table and tools directory, rendered from YAML at build time.
+- Hand-authored: everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `data/prompts.yaml`; `data/prompt_resources.yaml`; `data/open_models.yaml`; `data/committee.yaml`; `prompts/curator.md`.
+- Data-driven: the conferences table, tools directory, open-weights models section, prompt library, prompt learning resources, and committee page, rendered from YAML at build time.
 - Generated (never hand-edit): `docs/news/**`, `docs/prompts/exchange.md`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `includes/community-prompts.md`, `data/seen_items.json`, `data/conference_flags.md`.
 
 ## Videos and podcasts
@@ -67,6 +67,16 @@ directory (`https://itunes.apple.com/search?term=NAME&media=podcast` returns
 **Add a tool, conference, or prompt** — edit the matching file in `data/`;
 for new URLs run `python scripts/verify_links.py`; conference dates must be
 confirmed from the official site or written as TBD; build strict and commit.
+
+**Add a prompt learning resource** — edit `data/prompt_resources.yaml`
+(category `general` renders at the top of the Prompts page, a prompt
+category renders as Further reading under that section); the bar is
+evergreen quality reflecting current practice; verify the link, build
+strict, commit.
+
+**Update the open-weights model list** — edit `data/open_models.yaml`;
+blurbs may name current flagships, so refresh blurb and `last_reviewed`
+together; verify links, build strict, commit.
 
 **Apply a conference-watch proposal** — open the monthly "Conference watch"
 issue, check each proposal against its linked source, edit
