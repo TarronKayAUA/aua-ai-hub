@@ -105,6 +105,18 @@ community:
   body_chars: 4000    # per-post body cap; longer posts link out for the rest
   exclude: [2]        # discussion numbers to omit (the welcome/how-to post)
 
+# Committee updates feed: announcement-format Discussions category mirrored
+# nightly onto docs/governance/updates.md. Only repo maintainers can post in
+# an announcement category, so this is the owner's self-serve publishing
+# channel. category_id stays empty until the owner creates the category in
+# the Discussions UI (no API exists for category creation); the pipeline
+# skips this step cleanly while it is empty.
+committee_updates:
+  repo: TarronKayAUA/aua-ai-hub
+  category_id: ""
+  items: 10
+  body_chars: 3000
+
 # Weekly digest settings. The digest is a second-stage highlights selection
 # over everything kept since the previous digest, generated on the configured
 # day's nightly run. Selection instructions live in prompts/digest.md.

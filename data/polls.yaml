@@ -1,0 +1,12 @@
+# Polls from the AI Committee, rendered onto the Announcements page at build
+# time by scripts/render_data.py. Owner-owned: polls run on Microsoft Forms
+# in the owner's institutional tenant; add a poll here when it opens and
+# move it to closed (with a one-line outcome) when it ends. The renderer
+# shows a quiet placeholder when no poll is active.
+#
+# active entries: question, url (the Forms share link), closes (display
+# string), optional note. closed entries: question, outcome.
+
+active: []
+
+closed: []

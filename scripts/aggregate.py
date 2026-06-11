@@ -56,6 +56,7 @@ WEEKDAYS = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3,
             "friday": 4, "saturday": 5, "sunday": 6}
 CONFERENCE_FLAGS_PATH = REPO / "data" / "conference_flags.md"
 LIVEBENCH_INCLUDE = REPO / "includes" / "livebench.md"
+COMMITTEE_UPDATES_INCLUDE = REPO / "includes" / "committee-updates.md"
 
 USER_AGENT = "AUA-AI-Hub pipeline (github.com/TarronKayAUA/aua-ai-hub)"
 RETRIES = 2  # additional attempts after the first
@@ -606,6 +607,95 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
                     GENERATED_HEADER + "\n\n# Community Exchange\n\n"
                     + fallback + "\n",
                     encoding="utf-8", newline="\n")
+        return f"unavailable ({type(exc).__name__})"
+
+
+# --- Committee updates feed (Governance page) ---------------------------------
+
+
+def update_committee_updates(config: dict, now: datetime, dry_run: bool,
+                             verbose: bool) -> str:
+    """Mirror the owner's announcement-format Discussions category onto
+    includes/committee-updates.md, newest first. Only repo maintainers can
+    post in an announcement category, so this is owner-published content.
+    Keep-last-good on any failure; skipped cleanly until the owner creates
+    the category and its id lands in feeds.yaml."""
+    cfg = config.get("committee_updates")
+    if not cfg or not cfg.get("category_id"):
+        return "not configured (category_id pending)"
+    token = os.environ.get("GITHUB_TOKEN")
+    fallback = ("No updates posted yet. Updates appear here within a day "
+                "of the committee posting them.")
+    try:
+        if not token:
+            raise RuntimeError("no GITHUB_TOKEN for the Discussions API")
+        owner, name = cfg["repo"].split("/", 1)
+        query = """
+        query($owner: String!, $name: String!, $categoryId: ID!, $n: Int!) {
+          repository(owner: $owner, name: $name) {
+            discussions(first: $n, categoryId: $categoryId,
+                        orderBy: {field: CREATED_AT, direction: DESC}) {
+              nodes { title url createdAt body }
+            }
+          }
+        }"""
+        resp = requests.post(
+            "https://api.github.com/graphql",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"query": query,
+                  "variables": {"owner": owner, "name": name,
+                                "categoryId": cfg["category_id"],
+                                "n": cfg.get("items", 10)}},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        if "errors" in data:
+            raise ValueError(str(data["errors"])[:200])
+        nodes = data["data"]["repository"]["discussions"]["nodes"]
+
+        lines = [GENERATED_HEADER, ""]
+        if nodes:
+            body_chars = cfg.get("body_chars", 3000)
+            for node in nodes:
+                created = parse_entry_date(
+                    {"published": node.get("createdAt", "")})
+                date_str = fmt_date(created) if created else ""
+                body = html.escape(node.get("body", "")).strip()
+                truncated = ""
+                if len(body) > body_chars:
+                    body = body[:body_chars].rsplit("\n", 1)[0]
+                    truncated = (f"\n\n*(Shortened; [read the rest on "
+                                 f"GitHub]({node['url']}).)*")
+                lines.append(
+                    f"### {md_escape(remove_dashes(node['title']))}\n\n"
+                    f'<span class="exchange-meta">{date_str}</span>\n\n'
+                    f"{body}{truncated}\n"
+                )
+        else:
+            lines.append(fallback)
+
+        if dry_run:
+            print(f"[dry-run] would write includes/committee-updates.md "
+                  f"({len(nodes)} updates)")
+        else:
+            COMMITTEE_UPDATES_INCLUDE.parent.mkdir(parents=True,
+                                                   exist_ok=True)
+            COMMITTEE_UPDATES_INCLUDE.write_text(
+                "\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+        return f"updated ({len(nodes)} updates)"
+    except (requests.RequestException, RuntimeError, ValueError,
+            KeyError, TypeError) as exc:
+        if verbose:
+            print(f"  committee updates failed: {type(exc).__name__}: {exc}")
+        if COMMITTEE_UPDATES_INCLUDE.exists():
+            return f"kept previous updates ({type(exc).__name__})"
+        if not dry_run:
+            COMMITTEE_UPDATES_INCLUDE.parent.mkdir(parents=True,
+                                                   exist_ok=True)
+            COMMITTEE_UPDATES_INCLUDE.write_text(
+                GENERATED_HEADER + "\n\n" + fallback + "\n",
+                encoding="utf-8", newline="\n")
         return f"unavailable ({type(exc).__name__})"
 
 
@@ -1873,6 +1963,8 @@ def main() -> int:
                                         args.verbose)
     community_status = update_community_prompts(config, now, args.dry_run,
                                                 args.verbose)
+    committee_status = update_committee_updates(config, now, args.dry_run,
+                                                args.verbose)
 
     if not args.dry_run:
         write_count = len(ledger["items"])
@@ -1924,6 +2016,7 @@ def main() -> int:
     print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
     print(f"livebench table  : {livebench_status}")
     print(f"community prompts: {community_status}")
+    print(f"committee updates: {committee_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {digest_status}")
     if args.dry_run:

@@ -376,6 +376,12 @@ All phases:
 - verify_links.py treats a strict-client TLS failure on a manually-verified host like its other bot-block cases, dated in the allowlist (mechanism added 2026-06-11 for stepgenie.app, whose directory entry was removed the same day when the campus firewall also flagged the domain; the handling stays for future cases).
 - The Courses and Resources page renders from `data/learning_resources.yaml` (owner-owned) as thumbnail cards at `render:learning-resources:<section>` markers, every entry placed exactly once or the build fails; og:image thumbnails verified at authoring time, text-only cards where a page has none. The Assistants category includes Perplexity (added 2026-06-11).
 
+### Committee Updates page and polls (owner approved 2026-06-11)
+
+- `docs/governance/updates.md` (Committee Updates, in the Governance nav) has two parts. Current projects render from `data/committee_work.yaml` (owner-owned; plain public-safe summaries with status badges and updated dates). The updates feed mirrors an announcement-format GitHub Discussions category ("Committee updates"; only maintainers can post there, making it the owner's self-serve publishing channel): the nightly pipeline writes `includes/committee-updates.md` newest-first with keep-last-good, configured by the `committee_updates` block in feeds.yaml, and skips cleanly while `category_id` is empty (category creation has no API; the owner creates it in the Discussions UI, then the id is fetched via GraphQL and pinned in feeds.yaml).
+- Polls run on Microsoft Forms in the owner's tenant and render from `data/polls.yaml` onto the Announcements page as a "The committee is asking" block (linked, not embedded, so no new scripts load); when no poll is active a quiet placeholder points to Committee Updates, and closed polls list one-line outcomes. Owner decision: poll links live on Announcements for visibility; results are reported as committee update posts.
+- The owner's planned research study (an IRB-submitted follow-up survey) is deliberately NOT listed in current projects: announcing a survey to the population it will sample could prime responses. Add it only when the owner says so (post-IRB approval at the earliest).
+
 ### Visual conventions
 
 - Homepage: hero block (gradient on the theme primary color, mission line, two buttons), Material grid cards for the four start-here sections, Latest items list, Latest videos strip, pinned announcements, last-updated stamp.

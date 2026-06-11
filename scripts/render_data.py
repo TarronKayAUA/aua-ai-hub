@@ -451,6 +451,66 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
     return "\n".join(lines)
 
 
+# --- committee work and polls ---------------------------------------------------
+
+COMMITTEE_WORK_MARKER = "<!-- render:committee-work -->"
+POLLS_MARKER = "<!-- render:polls -->"
+
+
+def _render_committee_work(config) -> str:
+    projects = _load(_data_dir(config) / "committee_work.yaml")
+    lines = []
+    for entry in projects:
+        summary = " ".join(entry["summary"].split())
+        lines.append(
+            f"**{entry['project']}** "
+            + _badge(entry["status"], "badge-under-review")
+            + f"\n: {summary} *(updated {entry['updated']})*\n"
+        )
+    print("render_data: committee work verification")
+    print(f"  projects read : {len(projects)}")
+    print(f"  rendered      : {len(lines)} (cross-check "
+          f"{'ok' if len(lines) == len(projects) else 'MISMATCH'})")
+    if len(lines) != len(projects):
+        raise AssertionError("render_data hook: committee work count mismatch")
+    return "\n".join(lines)
+
+
+def _render_polls(config) -> str:
+    path = _data_dir(config) / "polls.yaml"
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    active = data.get("active") or []
+    closed = data.get("closed") or []
+    lines = []
+    if active:
+        for poll in active:
+            note = f" {poll['note']}" if poll.get("note") else ""
+            lines.append(
+                f'!!! question "The AI Committee is asking"\n'
+                f"    **{poll['question']}**{note} Responses are collected "
+                f"through Microsoft Forms with an AUA account and take under "
+                f"a minute.\n\n"
+                f"    [Answer the poll]({poll['url']})"
+                f"{{ .md-button .md-button--primary }} "
+                f"*Closes {poll['closes']}.*"
+            )
+    else:
+        lines.append(
+            "No poll is open right now. New polls from the AI Committee "
+            "are announced here, and results are reported on the "
+            "[Committee Updates](../governance/updates.md) page."
+        )
+    if closed:
+        lines.append("")
+        lines.append('??? note "Past polls"')
+        lines.append("")
+        for poll in closed:
+            lines.append(f"    - **{poll['question']}** {poll['outcome']}")
+    print("render_data: polls verification")
+    print(f"  active: {len(active)}, closed: {len(closed)}")
+    return "\n".join(lines)
+
+
 # --- committee ----------------------------------------------------------------
 
 
@@ -638,6 +698,22 @@ def on_page_markdown(markdown, page, config, files):
                 f"{CONFERENCES_MARKER} marker"
             )
         return markdown.replace(CONFERENCES_MARKER, _render_conferences(config))
+    if src == "governance/updates.md":
+        if COMMITTEE_WORK_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: governance/updates.md is missing the "
+                f"{COMMITTEE_WORK_MARKER} marker"
+            )
+        return markdown.replace(
+            COMMITTEE_WORK_MARKER, _render_committee_work(config)
+        )
+    if src == "announcements/index.md":
+        if POLLS_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: announcements/index.md is missing the "
+                f"{POLLS_MARKER} marker"
+            )
+        return markdown.replace(POLLS_MARKER, _render_polls(config))
     if src == "governance/committee.md":
         if COMMITTEE_MARKER not in markdown:
             raise AssertionError(

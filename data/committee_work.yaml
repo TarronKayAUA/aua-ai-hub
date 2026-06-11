@@ -1,0 +1,35 @@
+# Current AI Committee projects, rendered onto docs/governance/updates.md at
+# build time by scripts/render_data.py. Edit this file only; never the page.
+# Owner-owned: entries are added, updated, and retired by the owner. Keep
+# summaries to plain, public-safe language (no emails, budgets, or protocol
+# detail), and update the updated field whenever a status changes.
+
+- project: AI Responsible Use Policy revision
+  status: Under committee review
+  updated: June 2026
+  summary: A revised edition of the university's AI Responsible Use Policy is
+    in the committee's review process, updating the policy for newer
+    technologies and uses. The current approved policy remains in force and
+    published on this site until ratification.
+
+- project: The AUA AI Hub
+  status: Internal testing
+  updated: June 2026
+  summary: This site, built as the community's reference point for AI at
+    AUACOM, is in internal testing with committee members, with institutional
+    rollout planned for July 2026. Feedback from testing is shaping the site
+    week by week.
+
+- project: Tool review process
+  status: Pending ratification
+  updated: June 2026
+  summary: The rubric behind the tools directory's governance statuses is
+    published for transparency and awaits committee ratification; statuses
+    across the directory remain provisional until then.
+
+- project: Responsible AI use training
+  status: Under consideration
+  updated: June 2026
+  summary: A six-module AI literacy pathway is live on this site and serves
+    the policy's commitment to training resources; whether to designate it as
+    formal responsible-use training is under committee consideration.
