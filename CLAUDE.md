@@ -4,7 +4,7 @@ Project memory for Claude Code sessions in this repository. Read SPEC.md before 
 
 ## What this project is
 
-AUA AI Hub: a MkDocs Material site for the American University of Antigua College of Medicine, plus a Python feed-aggregation pipeline and GitHub Actions automation, deployed to GitHub Pages at zero cost. Live at https://tarronkayaua.github.io/aua-ai-hub/ (repo TarronKayAUA/aua-ai-hub). All three SPEC build phases shipped in June 2026, plus owner-approved additions documented in SPEC section 12: videos, podcasts, benchmarks page with a nightly LiveBench table, prompt library with curated learning resources, the Governance section (published AI Responsible Use Policy, committee page, and tool review process), a six-module AI literacy pathway, faculty playbooks, a rolling This Week page with a Friday highlights digest, official AUA branding, visit counter, and the watch/health workflows. The owner is the Assistant Dean of AI in Medical Education and chairs the institution's AI Governance Committee. This is institution-facing work: accuracy and restraint over flash.
+AUA AI Hub: a MkDocs Material site for the American University of Antigua College of Medicine, plus a Python feed-aggregation pipeline and GitHub Actions automation, deployed to GitHub Pages at zero cost. Live at https://tarronkayaua.github.io/aua-ai-hub/ (repo TarronKayAUA/aua-ai-hub). All three SPEC build phases shipped in June 2026, plus owner-approved additions documented in SPEC section 12: videos, podcasts, benchmarks page with a nightly LiveBench table, prompt library with curated learning resources, the Governance section (published AI Responsible Use Policy, committee page, and tool review process), a six-module AI literacy pathway, faculty playbooks, a rolling This Week page with a Friday highlights digest, official AUA branding, visit counter, and the watch/health workflows. The owner is the Assistant Dean of AI in Medical Education and chairs the institution's AI Committee. This is institution-facing work: accuracy and restraint over flash.
 
 ## Non-negotiable working rules
 
@@ -21,7 +21,7 @@ These rules apply to everything rendered on the site, including pipeline-generat
 - No em dashes anywhere in site copy. Use commas, periods, colons, or parentheses instead. The pipeline post-processes LLM output to enforce this; check generated output too.
 - Plain language for medical educators and students. Expand acronyms on first use per page. US English.
 - Neutral tone. No hype, no vendor editorializing, no superlatives in news summaries.
-- Governance statuses in the tools directory and review statuses in the prompt library are provisional until the AI Governance Committee ratifies them. Provisional banners stay in place. Only the owner changes statuses.
+- Governance statuses in the tools directory and review statuses in the prompt library are provisional until the AI Committee ratifies them. Provisional banners stay in place. Only the owner changes statuses.
 
 ## Stack and commands
 

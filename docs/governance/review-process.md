@@ -3,7 +3,7 @@
 The [tools directory](../tools/index.md) assigns every entry a governance status. This page describes the rubric behind those statuses, so the process is visible rather than implied.
 
 !!! warning "Provisional"
-    This rubric is the working process used by the Office of the Assistant Dean of AI in Medical Education, pending ratification by the AI Governance Committee. It is published for transparency and comment; the committee may revise it.
+    This rubric is the working process used by the Office of the Assistant Dean of AI in Medical Education, pending ratification by the AI Committee. It is published for transparency and comment; the committee may revise it.
 
 ## What a review establishes
 

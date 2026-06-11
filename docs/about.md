@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Office of the Assistant Dean of AI in Medical Education, which also chairs the institution's AI Governance Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
+The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Office of the Assistant Dean of AI in Medical Education, which also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
 
 ## How content is selected
 
@@ -17,7 +17,7 @@ Human oversight: the source lists, selection criteria, and summarization instruc
 
 ## Governance note
 
-The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Governance Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) carries governance status badges, and the [prompt library](prompts/index.md) carries review status badges; both are provisional until ratified through the committee process. Nothing else on this site is institutional policy unless explicitly marked as such.
+The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) carries governance status badges, and the [prompt library](prompts/index.md) carries review status badges; both are provisional until ratified through the committee process. Nothing else on this site is institutional policy unless explicitly marked as such.
 
 ## Privacy
 
@@ -32,7 +32,7 @@ This site is informational. AI-generated summaries and descriptions may contain 
 <div class="maintainer-card">
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
 <div class="maintainer-bio">
-<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean of Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Governance Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
+<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean of Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
 </div>
 </div>
 

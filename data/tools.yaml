@@ -2,7 +2,7 @@
 # by scripts/render_data.py. Edit this file only; never the rendered page.
 #
 # governance_status values: approved | conditional | restricted | under_review
-# All statuses are provisional until the AI Governance Committee ratifies them.
+# All statuses are provisional until the AI Committee ratifies them.
 # Only the owner changes governance_status.
 
 - name: Claude
@@ -11,7 +11,7 @@
   url: https://claude.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface.
 
@@ -21,7 +21,7 @@
   url: https://chatgpt.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Widely used artificial intelligence chat assistant for drafting, summarizing, brainstorming, and general question answering.
 
@@ -31,7 +31,7 @@
   url: https://gemini.google.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Google's artificial intelligence assistant, integrated with Google Workspace apps such as Docs and Gmail.
 
@@ -41,7 +41,7 @@
   url: https://www.microsoft.com/en-us/microsoft-365-copilot
   cost: institutional
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
 
@@ -51,7 +51,7 @@
   url: https://chat.deepseek.com
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-06-10
   blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
 
@@ -61,7 +61,7 @@
   url: https://chat.qwen.ai
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-06-10
   blurb: Alibaba's chat assistant, built on the Qwen model family, with document, image, and voice input alongside text chat.
 
@@ -71,7 +71,7 @@
   url: https://www.kimi.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-06-10
   blurb: Chat assistant from Moonshot AI, built on the Kimi K2 model family, with long-document reading and agent features.
 
@@ -81,7 +81,7 @@
   url: https://www.perplexity.ai
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-11
   blurb: Search-centered assistant that answers questions with citations to live web sources, useful when you need traceable answers rather than open-ended chat.
 
@@ -91,7 +91,7 @@
   url: https://chat.z.ai
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-06-10
   blurb: Chat assistant built on the GLM model family from Chinese lab Zhipu AI, with agent modes for slides and documents.
 
@@ -104,7 +104,7 @@
   url: https://claude.com/product/claude-code
   cost: paid
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-11
   blurb: Anthropic's agent for software work, run from the terminal. Plans and executes multi-step coding tasks against your own files; included with paid Claude plans.
 
@@ -114,7 +114,7 @@
   url: https://claude.com/product/cowork
   cost: paid
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-11
   blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
@@ -124,7 +124,7 @@
   url: https://openai.com/codex/
   cost: paid
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-11
   blurb: OpenAI's software agent, available as a command-line tool, app, and cloud service; included with paid ChatGPT plans.
 
@@ -134,7 +134,7 @@
   url: https://help.openai.com/en/articles/11752874-chatgpt-agent
   cost: paid
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-11
   blurb: Agent built into ChatGPT's paid plans. Browses, fills forms, and works with files and connected apps in a sandboxed virtual computer, asking for confirmation before consequential steps.
 
@@ -144,7 +144,7 @@
   url: https://manus.im
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-11
   blurb: General-purpose autonomous agent that breaks a goal into steps and executes them in a cloud workspace, producing research, documents, slides, and simple applications.
 
@@ -154,7 +154,7 @@
   url: https://www.perplexity.ai/comet
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-11
   blurb: Web browser with a built-in agent that can summarize, navigate, and act across your open tabs and accounts. Free to use, with higher limits on paid plans.
 
@@ -164,7 +164,7 @@
   url: https://openclaw.ai
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review. Self-hosted software with broad system access; for technically confident users who scope its permissions deliberately.
+  status_note: Awaiting AI Committee review. Self-hosted software with broad system access; for technically confident users who scope its permissions deliberately.
   last_reviewed: 2026-06-11
   blurb: Open-source, self-hosted personal agent that connects a model of your choice to the messaging apps you already use. Free software; you supply the model, hardware, and judgment.
 
@@ -174,7 +174,7 @@
   url: https://elicit.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Literature research assistant that finds papers and extracts key findings into structured tables.
 
@@ -184,7 +184,7 @@
   url: https://consensus.app
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Search engine that answers questions by summarizing findings across published, peer-reviewed studies.
 
@@ -194,7 +194,7 @@
   url: https://scite.ai
   cost: paid
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
@@ -204,7 +204,7 @@
   url: https://notebooklm.google.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Research notebook that answers questions and generates summaries grounded only in documents you upload.
 
@@ -214,7 +214,7 @@
   url: https://www.openevidence.com
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Clinical question-answering tool for verified health professionals, with answers cited to the medical literature.
 
@@ -224,7 +224,7 @@
   url: https://www.semanticscholar.org
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
 
@@ -238,7 +238,7 @@
   url: https://www.neuralconsult.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-10
   blurb: Study platform for medical, nursing, and physician assistant students with flashcard generation from your own materials, board-style questions, and simulated patient encounters for clinical exam practice.
 
@@ -248,7 +248,7 @@
   url: https://www.theastudy.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-10
   blurb: General-purpose study app widely used by medical students. Upload readings or lecture notes and it builds flashcards, practice tests, and summaries with spaced repetition.
 
@@ -258,7 +258,7 @@
   url: https://medicalstudent.ai
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-10
   blurb: Tutoring app with a question bank in the style of the United States Medical Licensing Examination (USMLE), cited explanations, and custom quizzes built from uploaded study materials.
 
@@ -268,7 +268,7 @@
   url: https://nabututor.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-10
   blurb: Tutor for USMLE and Comprehensive Osteopathic Medical Licensing Examination (COMLEX) preparation that works through cases Socratically with follow-up questions and builds a study plan around weak areas.
 
@@ -278,7 +278,7 @@
   url: https://getoncourse.ai
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-10
   blurb: Adaptive USMLE study platform whose lessons, flashcards, and quizzes adjust to performance, with a built-in tutoring chatbot.
 
@@ -288,7 +288,7 @@
   url: https://gamma.app
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Tool that drafts presentations, documents, and simple web pages from a text prompt or outline.
 
@@ -298,7 +298,7 @@
   url: https://www.grammarly.com
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Writing assistant that checks grammar, clarity, and tone in documents, email, and browser text fields.
 
@@ -308,7 +308,7 @@
   url: https://github.com/openai/whisper
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review. Runs locally; audio never leaves your computer.
+  status_note: Awaiting AI Committee review. Runs locally; audio never leaves your computer.
   last_reviewed: 2026-06-09
   blurb: Open-source speech-to-text model that transcribes audio recordings on your own computer.
 
@@ -318,7 +318,7 @@
   url: https://support.microsoft.com/en-us/teams/meetings/start-stop-and-download-live-transcripts-in-microsoft-teams-meetings
   cost: institutional
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Built-in live transcription for Teams meetings under the institutional Microsoft 365 license.
 
@@ -328,7 +328,7 @@
   url: https://ollama.com
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Command-line tool for downloading and running open-weights language models on your own computer.
 
@@ -338,7 +338,7 @@
   url: https://lmstudio.ai
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Desktop application with a graphical interface for downloading and chatting with local language models.
 
@@ -348,6 +348,6 @@
   url: https://openwebui.com
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
+  status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Self-hosted web interface for chatting with local models served by tools such as Ollama.

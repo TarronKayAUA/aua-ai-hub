@@ -4,7 +4,7 @@ Project specification for an automated AI information hub for the American Unive
 
 This document is the source of truth for scope and behavior. If implementation needs to deviate from anything here, flag the deviation and confirm with the owner before proceeding. Working rules and style rules live in CLAUDE.md.
 
-- Owner: Assistant Dean of AI in Medical Education (chairs the AUA AI Governance Committee)
+- Owner: Assistant Dean of AI in Medical Education (chairs the AUA AI Committee)
 - Audience: AUACOM faculty (primary) and students (secondary)
 - Visibility: all content is public-facing; the repository is public
 - Status: greenfield build
@@ -100,7 +100,7 @@ If a small helper is needed to render YAML into pages (conferences, tools), pref
 - News: This Week (rolling trailing-seven-day view, refreshed nightly), Medical Education, Clinical Practice, General AI, Videos, Podcasts, and an Archive of weekly digests organized by ISO week.
 - Benchmarks: leaderboard explainer, link cards, and the nightly LiveBench snapshot (section 12).
 - Conferences: table rendered from `data/conferences.yaml` (rendering rules in section 6).
-- Governance: the approved AI Responsible Use Policy and the AI Governance Committee page (section 12).
+- Governance: the approved AI Responsible Use Policy and the AI Committee page (section 12).
 - Announcements: index of owner-authored posts under `docs/announcements/`, newest first.
 - About: purpose of the site, how content is selected (transparency about the pipeline and the LLM steps), a governance note, a privacy note, a disclaimer (the site is informational, AI-generated summaries may contain errors, readers should verify primary sources, and nothing here is institutional policy unless explicitly marked as such), the maintainer card, and a contact line.
 
@@ -134,7 +134,7 @@ Rules:
 
 - Default every seed entry to `governance_status: under_review`. The builder must not assign approved, conditional, or restricted statuses on its own.
 - Badge rendering: approved green, conditional amber, restricted red, under_review grey.
-- A visible banner on the Tools index: "Governance statuses are provisional pending AI Governance Committee ratification." Do not remove this banner; only the owner removes it.
+- A visible banner on the Tools index: "Governance statuses are provisional pending AI Committee ratification." Do not remove this banner; only the owner removes it.
 
 Seed entries (builder drafts blurbs; verify each URL resolves): Claude, ChatGPT, Gemini, Microsoft 365 Copilot; Elicit, Consensus, Scite, NotebookLM, OpenEvidence, Semantic Scholar; Gamma, Grammarly; Whisper (local transcription), Microsoft Teams transcription; Ollama, LM Studio, Open WebUI.
 
@@ -337,7 +337,7 @@ All phases:
 ### Governance section (owner approved 2026-06-11)
 
 - `docs/governance/policy.md` carries the approved AI Responsible Use Policy verbatim (currently the version effective July 30, 2025), headed by a status block with effective and last-update dates. Only approved policy text is ever published; drafts under committee review never appear. When a revised policy is approved, the page is updated and the superseded version is archived with clear status labeling. The policy was scanned before publication and contains no emails, URLs, or internal-only references. Source document retained in `documents/` (not deployed).
-- `docs/governance/committee.md` lists the AI Governance Committee from `data/committee.yaml` (owner-owned), rendered by the hook as photo cards with name, committee role badge, and title/affiliation lines. Per owner decision, no institutional email addresses appear on the public page. Member photos live in `graphics/` and are processed to `docs/assets/committee/` by `scripts/build_brand_assets.py`.
+- `docs/governance/committee.md` lists the AI Committee from `data/committee.yaml` (owner-owned), rendered by the hook as photo cards with name, committee role badge, and title/affiliation lines. Per owner decision, no institutional email addresses appear on the public page. Member photos live in `graphics/` and are processed to `docs/assets/committee/` by `scripts/build_brand_assets.py`.
 
 ### Comments and community Prompt Exchange (owner approved 2026-06-11)
 
@@ -395,4 +395,4 @@ All phases:
 - Confirm the site name and supply AUA branding (colors, logo) to replace placeholders.
 - Generate the PubMed RSS URLs (or approve the builder doing so) and confirm the queries.
 - Replace TBD conference dates as they are confirmed.
-- Take governance statuses to the AI Governance Committee for ratification, update `data/tools.yaml` accordingly, and remove the provisional banner.
+- Take governance statuses to the AI Committee for ratification, update `data/tools.yaml` accordingly, and remove the provisional banner.

@@ -1,7 +1,7 @@
 # AI Responsible Use Policy
 
 !!! info "Current version in force"
-    Effective July 30, 2025 (second major update). This is the approved Artificial Intelligence (AI) Responsible Use Policy for AUA students, faculty, and staff, reproduced here in full. When the AI Governance Committee approves a revised version, this page will be updated and the superseded version archived.
+    Effective July 30, 2025 (second major update). This is the approved Artificial Intelligence (AI) Responsible Use Policy for AUA students, faculty, and staff, reproduced here in full. When the AI Committee approves a revised version, this page will be updated and the superseded version archived.
 
 **Policy Administrators.** American University of Antigua's AI Responsible Use Subcommittee is responsible for this policy's content, administration, training, compliance monitoring, as well as timely revision and review. This subcommittee also oversees the University's AI usage, ensuring that AI is deployed ethically and in compliance with legal and academic requirements.
 

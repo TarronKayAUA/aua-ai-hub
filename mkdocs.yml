@@ -111,7 +111,7 @@ nav:
   - Conferences: conferences.md
   - Governance:
       - AI Responsible Use Policy: governance/policy.md
-      - Governance Committee: governance/committee.md
+      - AI Committee: governance/committee.md
       - How Tools Are Reviewed: governance/review-process.md
   - Announcements:
       - announcements/index.md

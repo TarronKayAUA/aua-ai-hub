@@ -1,4 +1,4 @@
-# AI Governance Committee roster. Rendered into docs/governance/committee.md
+# AI Committee roster. Rendered into docs/governance/committee.md
 # at build time by scripts/render_data.py. Edit this file only; never the
 # rendered page. Photos live in graphics/ and are processed into
 # docs/assets/committee/ by scripts/build_brand_assets.py.
