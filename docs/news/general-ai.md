@@ -10,6 +10,13 @@ Model releases, benchmarks, and developments in general artificial intelligence.
 
 Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
 
+<img class="section-banner" src="../assets/section-general-ai.svg" alt="">
+
+<div class="section-brief">
+<p>OpenAI&#x27;s frontier models and Codex are now accessible on Amazon Web Services, making leading large language model products more widely available for clinical AI integration and research <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[6]</a>. A new benchmark study measures how well large language models extract safety data from structured sources, supporting more rigorous evaluation of AI tools for safety-sensitive medical applications <a href="https://arxiv.org/abs/2606.11204">[1]</a>. Energy-efficient, on-device retrieval-augmented generation is advancing on mobile neural processing units, which could enable secure and practical medical AI deployments in clinical settings <a href="https://arxiv.org/abs/2606.11257">[2]</a>. Analysis of Anthropic&#x27;s model naming conventions sheds light on upcoming developments in language models, helping educators track progress relevant to medical AI <a href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the items below.</p>
+</div>
+
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">

@@ -13,6 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e86208">AI-Generated Multiple Mini Interview (MMI) Stations for Medical School Admissions: Psychometric Evaluation</a>
+    <p class="news-card-summary">Artificial intelligence was used to generate multiple mini interview stations for medical school admissions, with psychometric evaluation of their quality.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/973cb92a143a1dafec01f581c504e7dd.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">MedQA-CS: Objective Structured Clinical Examination (OSCE)-Style Benchmark for Evaluating LLM Clinical Skills</a>
     <p class="news-card-summary">MedQA-CS offers an Objective Structured Clinical Examination-style benchmark to evaluate large language model clinical skills accurately.</p>
@@ -30,6 +38,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Integrating large language models into prostate cancer training: evidence from comparative benchmarking and a pilot randomized trial</a>
     <p class="news-card-summary">A pilot randomized trial shows that teaching with large language models improves prostate cancer training examination performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42275394?fc=20260609215449&amp;ff=20260611185504&amp;v=2.20.0">Clinical artificial intelligence applications of vision-language foundation models</a>
+    <p class="news-card-summary">This article reviews applications of vision-language foundation models in clinical artificial intelligence and their potential impact on medical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42274871?fc=20260609215449&amp;ff=20260611185504&amp;v=2.20.0">An AI-Driven H5P Training for Epilepsy Emergency Management Preparedness in Dental Education</a>
+    <p class="news-card-summary">An artificial intelligence-driven training module improved preparedness in dental education for managing epilepsy emergencies.</p>
   </div>
 </div>
 <div class="news-card">
@@ -236,6 +258,30 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e85960">Topic-Aware Summarization of Lived Health Care Experiences: Large Language Model Evaluation Study</a>
+    <p class="news-card-summary">The study assessed large language models for summarizing adults’ lived health care experiences with topic awareness and relevance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/484b4826d4af8bf3e0ca5f68129bd5af.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81105">AI-Powered Resting 12-Lead Electrocardiogram Algorithm for Predicting Low Peak Oxygen Consumption: Development and Validation Study</a>
+    <p class="news-card-summary">Researchers developed and validated an artificial intelligence algorithm using resting 12-lead electrocardiograms to predict low peak oxygen consumption.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63e1243f80a16a342e25c255f1fcc7ef.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e94063">A Machine Learning Approach to Voice-Based Parkinson Disease Screening Using Multiview Spectrogram and Speech Recognition Features: Diagnostic Study</a>
+    <p class="news-card-summary">A machine learning model using voice spectrogram and speech recognition features was created for Parkinson disease screening based on early vocal impairments.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63e465df8b1aee77903bb094c6e4cd6e.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02890-1">FIRST-ICU: forecasting interventions and risk stratification in the ICU using graph neural network autoencoders</a>
     <p class="news-card-summary">The FIRST-ICU model uses graph neural network autoencoders to forecast interventions and risk stratify patients in intensive care units.</p>
@@ -269,6 +315,42 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04510-7">Clinical Profile and Genomic Characterization of the 2026 Bundibugyo Virus Index Case in Uganda</a>
     <p class="news-card-summary">Nature Medicine reports the clinical profile and genomic characterization of the 2026 Bundibugyo virus index case in Uganda to inform disease understanding and management.</p>
   </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02745-9">Performance of a large language model in the informed consent process for participation in a clinical trial</a>
+    <p class="news-card-summary">A large language model was evaluated for its performance in guiding patients through the informed consent process for clinical trial participation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02874-1">Development and prospective evaluation of a real-time deep learning model for inpatient hypoglycemia prediction</a>
+    <p class="news-card-summary">A real-time deep learning model was developed and prospectively evaluated to predict inpatient hypoglycemia events.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02863-4">Daily activity patterns from wearable accelerometry predict physical frailty and concern about falling</a>
+    <p class="news-card-summary">Daily activity patterns measured by wearable accelerometers were found predictive of physical frailty and concern about falling.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02870-5">An ultrasound foundation model for the stratification of vision impairment and eye cancer risk</a>
+    <p class="news-card-summary">An ultrasound foundation model was developed to stratify risk for vision impairment and eye cancer.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04409-3">Microglia at a key inflection point in Alzheimer’s disease</a>
+    <p class="news-card-summary">This study analyzed microglia activities at a critical progression point in Alzheimer’s disease to better understand its pathology.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04409-3/MediaObjects/41591_2026_4409_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">

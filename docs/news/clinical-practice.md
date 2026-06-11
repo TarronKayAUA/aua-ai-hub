@@ -10,7 +10,38 @@ Artificial intelligence in clinical care, deployment, and regulation.
 
 Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
 
+<img class="section-banner" src="../assets/section-clinical-practice.svg" alt="">
+
+<div class="section-brief">
+<p>Clinical decision support is advancing through graph neural network autoencoders that forecast interventions and stratify risk for intensive care unit patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[4]</a>, alongside real-time deep learning models that predict inpatient hypoglycemia events to enhance care responsiveness <a href="https://www.nature.com/articles/s41746-026-02874-1">[10]</a>. Progress is also evident in screening technologies, as a machine learning model leveraging voice spectrogram and speech recognition features was created for early detection of Parkinson disease based on vocal markers <a href="https://medinform.jmir.org/2026/1/e94063">[3]</a>. Embeddings of clinical codes are further enabling knowledge-grounded artificial intelligence applications, offering improved clinical insights in medical practice <a href="https://www.nature.com/articles/s41746-026-02664-9">[5]</a>. Wearable accelerometry data have shown utility in predicting physical frailty and concern about falling, indicating broader opportunities for remote patient monitoring <a href="https://www.nature.com/articles/s41746-026-02863-4">[11]</a>.</p>
+<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the items below.</p>
+</div>
+
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e85960">Topic-Aware Summarization of Lived Health Care Experiences: Large Language Model Evaluation Study</a>
+    <p class="news-card-summary">The study assessed large language models for summarizing adults’ lived health care experiences with topic awareness and relevance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/484b4826d4af8bf3e0ca5f68129bd5af.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81105">AI-Powered Resting 12-Lead Electrocardiogram Algorithm for Predicting Low Peak Oxygen Consumption: Development and Validation Study</a>
+    <p class="news-card-summary">Researchers developed and validated an artificial intelligence algorithm using resting 12-lead electrocardiograms to predict low peak oxygen consumption.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63e1243f80a16a342e25c255f1fcc7ef.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e94063">A Machine Learning Approach to Voice-Based Parkinson Disease Screening Using Multiview Spectrogram and Speech Recognition Features: Diagnostic Study</a>
+    <p class="news-card-summary">A machine learning model using voice spectrogram and speech recognition features was created for Parkinson disease screening based on early vocal impairments.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63e465df8b1aee77903bb094c6e4cd6e.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
@@ -49,6 +80,42 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02745-9">Performance of a large language model in the informed consent process for participation in a clinical trial</a>
+    <p class="news-card-summary">A large language model was evaluated for its performance in guiding patients through the informed consent process for clinical trial participation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02874-1">Development and prospective evaluation of a real-time deep learning model for inpatient hypoglycemia prediction</a>
+    <p class="news-card-summary">A real-time deep learning model was developed and prospectively evaluated to predict inpatient hypoglycemia events.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02863-4">Daily activity patterns from wearable accelerometry predict physical frailty and concern about falling</a>
+    <p class="news-card-summary">Daily activity patterns measured by wearable accelerometers were found predictive of physical frailty and concern about falling.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02870-5">An ultrasound foundation model for the stratification of vision impairment and eye cancer risk</a>
+    <p class="news-card-summary">An ultrasound foundation model was developed to stratify risk for vision impairment and eye cancer.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04409-3">Microglia at a key inflection point in Alzheimer’s disease</a>
+    <p class="news-card-summary">This study analyzed microglia activities at a critical progression point in Alzheimer’s disease to better understand its pathology.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04409-3/MediaObjects/41591_2026_4409_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80930">Machine Learning for Intraoperative Bleeding Prediction in Patients Undergoing Surgery: Scoping Review</a>
     <p class="news-card-summary">A scoping review examines machine learning methods for predicting intraoperative bleeding to improve surgical safety and patient outcomes.</p>
@@ -62,61 +129,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">This study investigates transformer-based deep learning models for classifying medical text and explores feature importance attribution using a large language model.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/1cde701310306d1d4e6eb3a8765adf4c.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02877-y">Development and application of an intelligent assessment system for medical clinical skill training</a>
-    <p class="news-card-summary">An intelligent assessment system was developed and applied for medical clinical skill training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02731-1">Smartphone-based detection of subtle memory decline in prodromal Alzheimer’s disease</a>
-    <p class="news-card-summary">Smartphone-based detection methods identified subtle memory decline in early Alzheimer&#x27;s disease.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02729-9">Human, AI collaboration for dysphagia rehabilitation from effectiveness to implementation complexity: a systematic review</a>
-    <p class="news-card-summary">A systematic review examined human and artificial intelligence collaboration for dysphagia rehabilitation including effectiveness and implementation challenges.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04444-0">Brain Health for Economic Resilience: a data-driven framework for the brain-positive economic transition</a>
-    <p class="news-card-summary">A data-driven framework was introduced linking brain health to economic resilience for brain-positive economic transition.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04436-0">Dual-target gene therapy in Parkinson’s disease: a multicenter phase 1 trial</a>
-    <p class="news-card-summary">Phase 1 trial results were reported for dual-target gene therapy in Parkinson&#x27;s disease.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02884-z">Noninvasive PPROM risk stratification with explainable AI using routine antenatal CRP and albumin</a>
-    <p class="news-card-summary">The study presents an explainable artificial intelligence model for noninvasive risk stratification of preterm premature rupture of membranes based on routine antenatal C-reactive protein and albumin measurements.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02816-x">Benchmarking deep learning architectures for MALDI-TOF mass spectrometry in infectious disease diagnostics and vector-borne disease surveillance</a>
-    <p class="news-card-summary">This paper benchmarks deep learning architectures for matrix-assisted laser desorption/ionization time-of-flight mass spectrometry applied to infectious disease diagnostics and vector-borne disease surveillance.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02893-y">AI-assisted improvement of endoscopic diagnosis of ampullary lesions</a>
-    <p class="news-card-summary">A study reports the use of artificial intelligence to enhance endoscopic diagnosis accuracy for ampullary lesions, potentially improving clinical outcomes.</p>
-  </div>
 </div>
 </div>

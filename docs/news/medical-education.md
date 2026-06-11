@@ -10,7 +10,22 @@ Research and news on artificial intelligence in medical education.
 
 Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
 
+<img class="section-banner" src="../assets/section-medical-education.svg" alt="">
+
+<div class="section-brief">
+<p>The comparative assessment of ChatGPT, DeepSeek, and Perplexity in managing acid-base disorders highlights moderate accuracy and consistent performance from ChatGPT and DeepSeek, pointing to progress in evaluating clinical reasoning through artificial intelligence <a href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[3]</a>. MedQA-CS provides a structured benchmark for objectively measuring large language model clinical skills, suggesting a standardized pathway for their integration in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[2]</a>. Evidence from a pilot randomized trial indicates that teaching with large language models improves examination outcomes in prostate cancer training, which may influence instructional design <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[4]</a>. The development of AI-generated mini interview stations for medical school admissions, backed by psychometric evaluation, raises questions about the future of admissions processes <a href="https://mededu.jmir.org/2026/1/e86208">[1]</a>.</p>
+<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the items below.</p>
+</div>
+
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e86208">AI-Generated Multiple Mini Interview (MMI) Stations for Medical School Admissions: Psychometric Evaluation</a>
+    <p class="news-card-summary">Artificial intelligence was used to generate multiple mini interview stations for medical school admissions, with psychometric evaluation of their quality.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/973cb92a143a1dafec01f581c504e7dd.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
@@ -30,6 +45,20 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Integrating large language models into prostate cancer training: evidence from comparative benchmarking and a pilot randomized trial</a>
     <p class="news-card-summary">A pilot randomized trial shows that teaching with large language models improves prostate cancer training examination performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42275394?fc=20260609215449&amp;ff=20260611185504&amp;v=2.20.0">Clinical artificial intelligence applications of vision-language foundation models</a>
+    <p class="news-card-summary">This article reviews applications of vision-language foundation models in clinical artificial intelligence and their potential impact on medical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42274871?fc=20260609215449&amp;ff=20260611185504&amp;v=2.20.0">An AI-Driven H5P Training for Epilepsy Emergency Management Preparedness in Dental Education</a>
+    <p class="news-card-summary">An artificial intelligence-driven training module improved preparedness in dental education for managing epilepsy emergencies.</p>
   </div>
 </div>
 <div class="news-card">
@@ -94,27 +123,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42269942?fc=20260609215449&amp;ff=20260611061658&amp;v=2.20.0">Artificial intelligence and medical retina training: A scoping review of educational opportunities, emerging risks, and curricular responses</a>
     <p class="news-card-summary">This scoping review discusses educational opportunities, risks, and needed curriculum changes related to autonomous artificial intelligence in medical retina training.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42261384?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">Large language models in emergency and critical care medicine: a comprehensive review of applications, challenges, and future directions</a>
-    <p class="news-card-summary">Emergency and critical care medicine requires the rapid synthesis of heterogeneous clinical data under extreme time constraints.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42263543?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Development and clinical usability assessment of a web-based AI platform for automated echocardiography analysis</a>
-    <p class="news-card-summary">A web-based AI platform, EchoAI, showed vendor-agnostic, domain-adaptive automated echocardiography analysis with clinical usability.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95218">Re-Centering Clinical Documentation in the Age of AI Scribes: Four Aims of the Patient Chart Note</a>
-    <p class="news-card-summary">Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/1305e7c44bd471c8e7ffc3b81f1f68a0.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
