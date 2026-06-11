@@ -486,9 +486,13 @@ def _render_polls(config) -> str:
         for poll in active:
             note = f" {poll['note']}" if poll.get("note") else ""
             lines.append(
+                # Committee polls are restricted to the AUA organization in
+                # Forms (owner-confirmed 2026-06-11). If a public poll ever
+                # runs, move this sentence into a per-poll field.
                 f'!!! question "The AI Committee is asking"\n'
                 f"    **{poll['question']}**{note} Responses are collected "
-                f"through Microsoft Forms and take under a minute.\n\n"
+                f"through Microsoft Forms, need an AUA account to access, "
+                f"and take under a minute.\n\n"
                 f"    [Answer the poll]({poll['url']})"
                 f"{{ .md-button .md-button--primary }} "
                 f"*Closes {poll['closes']}.*"
