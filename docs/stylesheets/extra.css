@@ -11,6 +11,19 @@
   --md-primary-bg-color--light: #ffffffb3;
 }
 
+/* === Footer ================================================================
+   The attribution line is a display element alone in a full-width band (no
+   social icons balance the right side), so it centers, like the hero. If
+   social links are ever added to mkdocs.yml extra, revisit this. */
+
+.md-footer-meta__inner {
+  justify-content: center;
+}
+
+.md-footer-meta .md-copyright {
+  text-align: center;
+}
+
 /* === Layout ================================================================
    Material caps the content grid at 61rem for book-like line lengths.
    Raise the cap moderately so wide screens get room for tables and card
