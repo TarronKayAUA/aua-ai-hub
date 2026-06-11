@@ -45,6 +45,46 @@
   last_reviewed: 2026-06-09
   blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
 
+- name: DeepSeek
+  vendor: DeepSeek
+  category: assistants
+  url: https://chat.deepseek.com
+  cost: free
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  last_reviewed: 2026-06-10
+  blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
+
+- name: Qwen Chat
+  vendor: Alibaba
+  category: assistants
+  url: https://chat.qwen.ai
+  cost: free
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  last_reviewed: 2026-06-10
+  blurb: Alibaba's chat assistant, built on the Qwen model family, with document, image, and voice input alongside text chat.
+
+- name: Kimi
+  vendor: Moonshot AI
+  category: assistants
+  url: https://www.kimi.com
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  last_reviewed: 2026-06-10
+  blurb: Chat assistant from Moonshot AI, built on the Kimi K2 model family, with long-document reading and agent features.
+
+- name: Z.ai
+  vendor: Z.ai (Zhipu AI)
+  category: assistants
+  url: https://chat.z.ai
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
+  last_reviewed: 2026-06-10
+  blurb: Chat assistant built on the GLM model family from Chinese lab Zhipu AI, with agent modes for slides and documents.
+
 - name: Elicit
   vendor: Elicit
   category: research
@@ -104,6 +144,70 @@
   status_note: Awaiting AI Governance Committee review.
   last_reviewed: 2026-06-09
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
+
+# Medical Learning: student-facing study tools. Listings are not
+# endorsements (see About disclaimer); exam-prep accuracy claims are the
+# vendors' own.
+
+- name: Neural Consult
+  vendor: Dendritic Health AI
+  category: medical_learning
+  url: https://www.neuralconsult.com
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-10
+  blurb: Study platform for medical, nursing, and physician assistant students with flashcard generation from your own materials, board-style questions, and simulated patient encounters for clinical exam practice.
+
+- name: Thea
+  vendor: Thea
+  category: medical_learning
+  url: https://www.theastudy.com
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-10
+  blurb: General-purpose study app widely used by medical students. Upload readings or lecture notes and it builds flashcards, practice tests, and summaries with spaced repetition.
+
+- name: Medical Student AI
+  vendor: Help You Match LLC
+  category: medical_learning
+  url: https://medicalstudent.ai
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-10
+  blurb: Tutoring app with a question bank in the style of the United States Medical Licensing Examination (USMLE), cited explanations, and custom quizzes built from uploaded study materials.
+
+- name: Nabu Tutor
+  vendor: Nabu Tutor
+  category: medical_learning
+  url: https://nabututor.com
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-10
+  blurb: Tutor for USMLE and Comprehensive Osteopathic Medical Licensing Examination (COMLEX) preparation that works through cases Socratically with follow-up questions and builds a study plan around weak areas.
+
+- name: StepGenie
+  vendor: StepGenie
+  category: medical_learning
+  url: https://www.stepgenie.app
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-10
+  blurb: USMLE preparation platform with board-style practice questions, flashcards with spaced repetition, and step-by-step explanations of reasoning.
+
+- name: Oncourse AI
+  vendor: Oncourse AI
+  category: medical_learning
+  url: https://getoncourse.ai
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-10
+  blurb: Adaptive USMLE study platform whose lessons, flashcards, and quizzes adjust to performance, with a built-in tutoring chatbot.
 
 - name: Gamma
   vendor: Gamma

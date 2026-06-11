@@ -39,6 +39,7 @@ TIMEOUT = 15
 # hand. Re-verify in a browser when touching an entry that uses one.
 MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
+    "nabututor.com": "2026-06-10",
 }
 
 MD_LINK = re.compile(r"\[[^\]]*\]\((https?://[^)\s]+)\)")

@@ -46,6 +46,7 @@ PROMPT_RESOURCE_TYPES = {"video", "guide", "paper"}
 CATEGORY_LABELS = {
     "assistants": "Assistants",
     "research": "Research",
+    "medical_learning": "Medical Learning",
     "writing_slides": "Writing and Slides",
     "meetings_transcription": "Meetings and Transcription",
     "media": "Media",
