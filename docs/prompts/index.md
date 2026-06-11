@@ -7,6 +7,14 @@ Reusable prompts for common faculty tasks: research, assessment writing, data an
 
 Two habits make every prompt here work better: give the model your actual materials (objectives, criteria, draft items) rather than asking from a blank page, and ask it to show reasoning you can check rather than bare answers.
 
+## Learning to prompt
+
+Curated starting points on prompting current models, from short guides to peer-reviewed studies. Prompting advice ages quickly; everything here reflects how today's assistants work, and the list stays short on purpose. Journal links may require library access.
+
+<!-- render:prompt-resources -->
+
+Category-specific studies appear as further reading under each section below.
+
 <!-- render:prompts -->
 
 ## Community Prompt Exchange

@@ -25,6 +25,7 @@ TOOLS_MARKER = "<!-- render:tools -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
+PROMPT_RESOURCES_MARKER = "<!-- render:prompt-resources -->"
 COMMITTEE_MARKER = "<!-- render:committee -->"
 
 PROMPT_CATEGORY_LABELS = {
@@ -39,6 +40,8 @@ PROMPT_STATUS_LABELS = {
     "draft": ("Draft", "badge-under-review"),
     "reviewed": ("Reviewed", "badge-approved"),
 }
+
+PROMPT_RESOURCE_TYPES = {"video", "guide", "paper"}
 
 CATEGORY_LABELS = {
     "assistants": "Assistants",
@@ -143,10 +146,50 @@ def _render_tools(config) -> str:
     return "\n".join(lines)
 
 
+# --- prompt resources ---------------------------------------------------------
+
+
+def _load_prompt_resources(config) -> dict[str, list]:
+    """Load and validate data/prompt_resources.yaml, grouped by category."""
+    resources = _load(_data_dir(config) / "prompt_resources.yaml")
+    grouped: dict[str, list] = {}
+    valid_categories = {"general", *PROMPT_CATEGORY_LABELS}
+    for entry in resources:
+        category = entry["category"]
+        if category not in valid_categories:
+            raise ValueError(
+                f"render_data hook: unknown resource category {category!r} "
+                f"on {entry['title']!r}"
+            )
+        if entry["type"] not in PROMPT_RESOURCE_TYPES:
+            raise ValueError(
+                f"render_data hook: unknown resource type {entry['type']!r} "
+                f"on {entry['title']!r}"
+            )
+        grouped.setdefault(category, []).append(entry)
+    return grouped
+
+
+def _resource_line(entry) -> str:
+    if entry["type"] == "video":
+        length = f", {entry['length']}" if entry.get("length") else ""
+        paren = f"{entry['source']} video{length}"
+    elif entry["type"] == "guide":
+        paren = f"{entry['source']} guide"
+    else:  # paper; source carries "Journal, Year"
+        paren = entry["source"]
+    blurb = " ".join(entry["blurb"].split())
+    return f"- **[{entry['title']}]({entry['url']})** ({paren}): {blurb}"
+
+
+def _render_prompt_resources_general(grouped: dict[str, list]) -> str:
+    return "\n".join(_resource_line(e) for e in grouped.get("general", []))
+
+
 # --- prompts ------------------------------------------------------------------
 
 
-def _render_prompts(config) -> str:
+def _render_prompts(config, resource_groups: dict[str, list]) -> str:
     prompts = _load(_data_dir(config) / "prompts.yaml")
 
     by_category: dict[str, list] = {}
@@ -164,6 +207,7 @@ def _render_prompts(config) -> str:
 
     lines = []
     rendered = 0
+    resources_placed = 0
     per_category = {}
     for category, label in PROMPT_CATEGORY_LABELS.items():
         group = by_category.get(category, [])
@@ -185,11 +229,28 @@ def _render_prompts(config) -> str:
             lines.append("```")
             lines.append("")
             rendered += 1
+        category_resources = resource_groups.get(category, [])
+        if category_resources:
+            lines.append("**Further reading**")
+            lines.append("")
+            lines.extend(_resource_line(e) for e in category_resources)
+            lines.append("")
+            resources_placed += len(category_resources)
 
     if rendered != len(prompts):
         raise AssertionError(
             f"render_data hook: prompts count mismatch, read {len(prompts)} "
             f"but rendered {rendered}"
+        )
+    expected_resources = sum(
+        len(v) for k, v in resource_groups.items() if k != "general"
+    )
+    if resources_placed != expected_resources:
+        raise AssertionError(
+            f"render_data hook: prompt resources mismatch, "
+            f"{expected_resources} category resources read but "
+            f"{resources_placed} placed (a resource may point at a category "
+            f"with no prompts)"
         )
 
     print("render_data: prompts verification")
@@ -197,6 +258,8 @@ def _render_prompts(config) -> str:
     for label, count in per_category.items():
         print(f"  {label:<18}: {count}")
     print(f"  rendered total: {rendered} (cross-check ok)")
+    print(f"  resources: general {len(resource_groups.get('general', []))}, "
+          f"per-category {resources_placed} (cross-check ok)")
     return "\n".join(lines)
 
 
@@ -379,12 +442,20 @@ def on_page_markdown(markdown, page, config, files):
             )
         return markdown.replace(COMMITTEE_MARKER, _render_committee(config))
     if src == "prompts/index.md":
-        if PROMPTS_MARKER not in markdown:
-            raise AssertionError(
-                "render_data hook: prompts/index.md is missing the "
-                f"{PROMPTS_MARKER} marker"
-            )
-        return markdown.replace(PROMPTS_MARKER, _render_prompts(config))
+        for marker in (PROMPTS_MARKER, PROMPT_RESOURCES_MARKER):
+            if marker not in markdown:
+                raise AssertionError(
+                    f"render_data hook: prompts/index.md is missing the "
+                    f"{marker} marker"
+                )
+        resource_groups = _load_prompt_resources(config)
+        markdown = markdown.replace(
+            PROMPT_RESOURCES_MARKER,
+            _render_prompt_resources_general(resource_groups),
+        )
+        return markdown.replace(
+            PROMPTS_MARKER, _render_prompts(config, resource_groups)
+        )
     if src == "index.md" and LAST_UPDATED_MARKER in markdown:
         stamp = date.today().strftime("%B %d, %Y").replace(" 0", " ")
         return markdown.replace(LAST_UPDATED_MARKER, stamp)

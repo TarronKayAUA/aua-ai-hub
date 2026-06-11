@@ -1,7 +1,7 @@
 """Authoring-time link checker for the AUA AI Hub.
 
-Checks every URL in data/tools.yaml, data/conferences.yaml, and any markdown
-files passed as arguments. Run before committing changes to those files so no
+Checks every URL in data/tools.yaml, data/conferences.yaml,
+data/prompt_resources.yaml, and any markdown files passed as arguments. Run before committing changes to those files so no
 dead link is ever committed (SPEC section 11, Phase 1 acceptance criteria).
 
 Not run in CI on purpose: a link that dies after commit should surface through
@@ -47,7 +47,11 @@ MD_LINK = re.compile(r"\[[^\]]*\]\((https?://[^)\s]+)\)")
 def collect() -> list[tuple[str, str]]:
     """Return (source, url) pairs from the data files and any CLI-passed markdown."""
     pairs = []
-    for yaml_rel in ("data/tools.yaml", "data/conferences.yaml"):
+    for yaml_rel in (
+        "data/tools.yaml",
+        "data/conferences.yaml",
+        "data/prompt_resources.yaml",
+    ):
         path = REPO / yaml_rel
         if not path.exists():
             continue
@@ -55,7 +59,8 @@ def collect() -> list[tuple[str, str]]:
         for entry in entries:
             url = entry.get("url", "")
             if url and url != "TBD":
-                pairs.append((f"{yaml_rel}:{entry.get('name', '?')}", url))
+                label = entry.get("name") or entry.get("title", "?")
+                pairs.append((f"{yaml_rel}:{label}", url))
     md_paths = []
     if "--all-docs" in sys.argv[1:]:
         # Skip generated trees and the Exchange mirror: news rotates nightly
@@ -83,6 +88,11 @@ def check(url: str) -> tuple[bool, str]:
             host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
             if host in MANUALLY_VERIFIED:
                 return True, f"manual ({MANUALLY_VERIFIED[host]})"
+            # A 403 reached through a doi.org link means the DOI resolved
+            # (doi.org returns 404 for unknown DOIs) and only the publisher
+            # site blocks scripted clients, so the link works in a browser.
+            if host == "doi.org":
+                return True, "doi resolved (publisher 403s scripts)"
         ok = resp.status_code < 400
         return ok, f"HTTP {resp.status_code}"
     except requests.RequestException as exc:

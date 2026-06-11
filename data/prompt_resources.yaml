@@ -1,0 +1,122 @@
+# Curated learning resources for the Prompt Library. Rendered into
+# docs/prompts/index.md at build time by scripts/render_data.py: entries with
+# category "general" appear in the "Learning to prompt" section at the top of
+# the page; entries with a prompt-library category appear as "Further reading"
+# under that category's prompts. Edit this file only; never the rendered page.
+#
+# category values: general | research | mcq_generation | mcq_vetting |
+#                  data_analysis | content_generation
+# type values: video | guide | paper
+# length is optional display text (for videos); journal/year are for papers.
+#
+# Selection bar (owner decision 2026-06-10): evergreen quality only. Items
+# must reflect current prompting practice (role, context, examples, structured
+# output, reasoning models), not 2023-era trick lists. Peer-reviewed items are
+# preferred for category-specific entries; every URL is verified before commit.
+
+- title: Prompting 101
+  source: Anthropic
+  type: video
+  length: 24 min
+  category: general
+  url: https://www.youtube.com/watch?v=ysPbXH0LpIE
+  blurb: Two Anthropic engineers rebuild a real prompt step by step, showing
+    how role, context, examples, and output structure each change the result.
+    The single best short introduction to how practitioners prompt today.
+
+- title: Prompt engineering overview
+  source: Anthropic
+  type: guide
+  category: general
+  url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+  blurb: The documentation Anthropic maintains for its Claude models. The
+    techniques (clear instructions, examples, structured output, giving the
+    model room to think) carry over to any modern assistant.
+
+- title: Prompting guide 101
+  source: Google
+  type: guide
+  category: general
+  url: https://workspace.google.com/learning/content/gemini-prompt-guide
+  blurb: A plain-language handbook for prompting in everyday office work,
+    built on a four-part pattern of persona, task, context, and format. The
+    gentlest starting point on this list.
+
+- title: GPT-5 prompting guide
+  source: OpenAI
+  type: guide
+  category: general
+  url: https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide
+  blurb: OpenAI's technical guide to prompting its current models. The most
+    developer-oriented item here, useful when you need precise control over
+    agentic behavior and output format.
+
+- title: How I use LLMs
+  source: Andrej Karpathy
+  type: video
+  length: 2 hr 11 min
+  category: general
+  url: https://www.youtube.com/watch?v=EWvNQjAaOHw
+  blurb: A practical tour of what modern assistants can actually do (thinking
+    modes, tool use, file uploads, voice) from a leading AI researcher,
+    illustrated with his own daily workflows. Long, but chaptered so you can
+    watch in sections.
+
+- title: "Beginner-level tips for medical educators"
+  source: Medical Science Educator, 2024
+  type: paper
+  category: general
+  url: https://doi.org/10.1007/s40670-024-02146-1
+  blurb: Ten practical tips on choosing a chatbot and writing prompts for
+    teaching and assessment work, written for medical educators with no
+    technical background.
+
+- title: "Prompt engineering in clinical practice: tutorial for clinicians"
+  source: Journal of Medical Internet Research, 2025
+  type: paper
+  category: general
+  url: https://doi.org/10.2196/72644
+  blurb: A clinician-oriented tutorial on prompt patterns with worked clinical
+    examples, including common failure modes and how wording changes outputs.
+
+- title: "Performance of a large language model in screening citations"
+  source: JAMA Network Open, 2024
+  type: paper
+  category: research
+  url: https://doi.org/10.1001/jamanetworkopen.2024.20496
+  blurb: A prospective test of model-assisted title and abstract screening for
+    guideline development. Note how much revising the prompt's inclusion
+    criteria mattered, sensitivity rose from 0.75 to 0.91.
+
+- title: "Development and evaluation of prompts to screen titles and abstracts"
+  source: BMJ Mental Health, 2025
+  type: paper
+  category: research
+  url: https://doi.org/10.1136/bmjment-2025-301762
+  blurb: Walks through the prompt-refinement workflow itself, a development
+    set, iteration, then held-out evaluation, for literature screening in a
+    living systematic review.
+
+- title: "GPT-4 versus human authors in clinically complex MCQ creation"
+  source: Medical Teacher, 2025
+  type: paper
+  category: mcq_generation
+  url: https://doi.org/10.1080/0142159X.2025.2505122
+  blurb: A blinded comparison of item quality between model-written and
+    faculty-written multiple choice questions at novice and expert level.
+
+- title: "Faculty versus artificial intelligence chatbot: MCQ quality in physiology"
+  source: Advances in Physiology Education, 2025
+  type: paper
+  category: mcq_vetting
+  url: https://doi.org/10.1152/advan.00197.2025
+  blurb: Compares faculty-written and chatbot-written items against standard
+    flaw criteria, which double as a checklist of what to vet for.
+
+- title: "Application of artificial intelligence generated content in medical examinations"
+  source: Advances in Medical Education and Practice, 2025
+  type: paper
+  category: mcq_vetting
+  url: https://doi.org/10.2147/AMEP.S492895
+  blurb: Reviews how generated questions fit into examination workflows,
+    including the points where human review cannot be skipped.
