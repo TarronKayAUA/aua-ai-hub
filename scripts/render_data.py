@@ -238,6 +238,52 @@ def _render_guide_videos_group(config, group: str) -> str:
             + "\n</div>")
 
 
+def _render_learning_resources(config, markdown: str) -> str:
+    """Replace every render:learning-resources:<section> marker with that
+    section's card grid. Every entry must be placed exactly once."""
+    entries = _load(_data_dir(config) / "learning_resources.yaml")
+    by_section: dict[str, list] = {}
+    for entry in entries:
+        by_section.setdefault(entry["section"], []).append(entry)
+    marker_re = re.compile(r"<!-- render:learning-resources:([\w-]+) -->")
+    seen = []
+
+    def _sub(match):
+        section = match.group(1)
+        if section not in by_section:
+            raise AssertionError(
+                f"render_data hook: marker for unknown learning resource "
+                f"section {section!r}"
+            )
+        seen.append(section)
+        cards = [
+            _video_card(
+                url=e["url"],
+                title=e["title"],
+                meta=f"{e['source']}, {e['kind']}",
+                desc=" ".join(e["blurb"].split()),
+                thumbnail=e.get("thumbnail", ""),
+            )
+            for e in by_section[section]
+        ]
+        return '<div class="video-grid">\n' + "\n".join(cards) + "\n</div>"
+
+    markdown = marker_re.sub(_sub, markdown)
+    missing = sorted(set(by_section) - set(seen))
+    duplicates = sorted({s for s in seen if seen.count(s) > 1})
+    if missing or duplicates:
+        raise AssertionError(
+            f"render_data hook: learning resource placement mismatch "
+            f"(missing markers {missing}, duplicate markers {duplicates})"
+        )
+    placed = sum(len(by_section[s]) for s in seen)
+    print("render_data: learning resources verification")
+    print(f"  entries read : {len(entries)}")
+    print(f"  placed       : {placed} across {len(seen)} sections "
+          f"(cross-check {'ok' if placed == len(entries) else 'MISMATCH'})")
+    return markdown
+
+
 def _render_guide_videos_per_tool(config, markdown: str) -> str:
     """Replace every render:guide-videos:agents:<slug> marker with that
     tool's card. The page's markers and the data file's agent slugs must
@@ -573,6 +619,8 @@ def on_page_markdown(markdown, page, config, files):
         return markdown.replace(OPEN_MODELS_MARKER, _render_open_models(config))
     if src == "tools/agents.md":
         return _render_guide_videos_per_tool(config, markdown)
+    if src == "learning/index.md":
+        return _render_learning_resources(config, markdown)
     if src == "tools/local.md":
         if GUIDE_VIDEOS_LOCAL_MARKER not in markdown:
             raise AssertionError(

@@ -75,6 +75,16 @@
   last_reviewed: 2026-06-10
   blurb: Chat assistant from Moonshot AI, built on the Kimi K2 model family, with long-document reading and agent features.
 
+- name: Perplexity
+  vendor: Perplexity
+  category: assistants
+  url: https://www.perplexity.ai
+  cost: freemium
+  governance_status: under_review
+  status_note: Awaiting AI Governance Committee review.
+  last_reviewed: 2026-06-11
+  blurb: Search-centered assistant that answers questions with citations to live web sources, useful when you need traceable answers rather than open-ended chat.
+
 - name: Z.ai
   vendor: Z.ai (Zhipu AI)
   category: assistants

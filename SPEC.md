@@ -374,6 +374,7 @@ All phases:
 - The AI Agents guide is organized per agent: each of the seven gets its own section with a description, its verified walkthrough video, and official documentation links (all verified live). Per-agent video placement uses `render:guide-videos:agents:<slug>` markers matched one to one against the data file's agent entries, failing the build on any mismatch.
 - Guide videos and the Prompt Library's general learning resources render as thumbnail cards reusing the pipeline's video-card markup and CSS. YouTube thumbnails derive from the video id (i.ytimg.com); non-video resources carry an optional thumbnail field in data/prompt_resources.yaml holding the page's own og:image URL, verified at authoring time; entries without one render as text-only cards.
 - verify_links.py treats a strict-client TLS failure on a manually-verified host like its other bot-block cases, dated in the allowlist (mechanism added 2026-06-11 for stepgenie.app, whose directory entry was removed the same day when the campus firewall also flagged the domain; the handling stays for future cases).
+- The Courses and Resources page renders from `data/learning_resources.yaml` (owner-owned) as thumbnail cards at `render:learning-resources:<section>` markers, every entry placed exactly once or the build fails; og:image thumbnails verified at authoring time, text-only cards where a page has none. The Assistants category includes Perplexity (added 2026-06-11).
 
 ### Visual conventions
 

@@ -1,0 +1,87 @@
+# Curated external resources for the Courses and Resources page
+# (docs/learning/index.md). Rendered at build time by scripts/render_data.py
+# as thumbnail cards at render:learning-resources:<section> markers; the
+# build fails if the page's markers and this file's sections do not place
+# every entry exactly once. Edit this file only; never the page.
+#
+# Thumbnails: YouTube entries derive their thumbnail from the video id;
+# other entries carry the page's own og:image URL, verified live at
+# authoring time (2026-06-11); entries without one render as text cards.
+# kind + source build the card's meta line.
+
+- title: Google AI Essentials
+  section: getting_started
+  source: Google
+  kind: self-paced course
+  url: https://grow.google/ai-essentials/
+  thumbnail: https://www.gstatic.com/marketing-cms/assets/images/21/31/12172c2d442f9c678f910c1e0f08/christian-aie-1376x1376.webp=s1440-fcrop64=1,000041ddffffbe53-rw
+  blurb: A short course on using AI tools productively and responsibly at work. No technical background required.
+
+- title: Elements of AI
+  section: getting_started
+  source: University of Helsinki
+  kind: free course
+  url: https://www.elementsofai.com/
+  thumbnail: https://elementsofai.s3.amazonaws.com/_1200x630_crop_center-center_none/EOAIhero.png
+  blurb: What AI is, what it can and cannot do, and how it affects society. Calibrated for complete beginners and free.
+
+- title: Advancing AI Across Academic Medicine Resource Collection
+  section: teaching
+  source: AAMC
+  kind: resource collection
+  url: https://www.aamc.org/about-us/mission-areas/medical-education/advancing-ai-across-academic-medicine-resource-collection
+  thumbnail: https://www.aamc.org/themes/custom/hippocrates/images/AAMC-Logo.jpg
+  blurb: The Association of American Medical Colleges (AAMC) collection of practical resources for integrating AI into medical education.
+
+- title: Principles for the Responsible Use of AI in and for Medical Education
+  section: teaching
+  source: AAMC
+  kind: guidance
+  url: https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use
+  thumbnail: https://www.aamc.org/sites/default/files/Technology-Computer-Screens-Labcoat_0.jpeg
+  blurb: A concise statement of principles, useful when drafting course policies and AI statements.
+
+- title: DeepLearning.AI short courses
+  section: teaching
+  source: DeepLearning.AI
+  kind: hands-on courses
+  url: https://www.deeplearning.ai/short-courses/
+  blurb: One-to-two-hour courses on specific skills such as prompting and retrieval. Pick individual courses as needed rather than working through the catalog.
+
+- title: Anthropic Academy
+  section: teaching
+  source: Anthropic
+  kind: free courses
+  url: https://www.anthropic.com/learn
+  thumbnail: https://cdn.sanity.io/images/4zrzovbb/website/c4bd33e7c8e809a2f9a9a5896ee13961e2a738ec-2400x1260.png
+  blurb: Courses ranging from AI fluency for general audiences to technical material for builders.
+
+- title: Intro to Large Language Models
+  section: students
+  source: Andrej Karpathy
+  kind: video, 1 hr
+  url: https://www.youtube.com/watch?v=zjkBMFhNj_g
+  blurb: A one-hour lecture explaining how large language models actually work, aimed at a general audience. The single best hour of video on the subject.
+
+- title: "3Blue1Brown: Neural networks series"
+  section: technical
+  source: 3Blue1Brown
+  kind: video series
+  url: https://www.3blue1brown.com/lessons/neural-networks
+  thumbnail: https://www.3blue1brown.com/share.jpg
+  blurb: Visually outstanding explanations of neural networks, gradient descent, and transformers. The most accessible serious treatment available.
+
+- title: Artificial Intelligence and Academic Medicine
+  section: shelf
+  source: AAMC
+  kind: hub
+  url: https://www.aamc.org/about-us/mission-areas/medical-education/artificial-intelligence-and-academic-medicine
+  blurb: The AAMC's hub for AI initiatives, webinars, and guidance, worth checking a few times a year.
+
+- title: Augmented Intelligence in Medicine
+  section: shelf
+  source: AMA
+  kind: hub
+  url: https://www.ama-assn.org/practice-management/digital-health/augmented-intelligence-medicine
+  thumbnail: https://www.ama-assn.org/sites/ama-assn.org/files/styles/image_ratio_16_9/public/wire/Media%20Root/2017-05-23-index-datapalooza.jpg?itok=EWvcjfkA
+  blurb: The American Medical Association (AMA) hub for AI policy, physician survey data, and practice guidance.
