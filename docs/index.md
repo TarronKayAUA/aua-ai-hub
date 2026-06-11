@@ -8,7 +8,7 @@
 
 One reliable place for the AUACOM community to learn how AI works, find reviewed tools, follow the developments that matter, and plan for conferences. Selected for accuracy and usefulness, not hype.
 
-[Start with the basics](basics/how-llms-work.md){ .md-button .md-button--primary }
+[Start the literacy pathway](pathway/index.md){ .md-button .md-button--primary }
 [Browse the tools](tools/index.md){ .md-button }
 
 </div>
@@ -17,13 +17,13 @@ One reliable place for the AUACOM community to learn how AI works, find reviewed
 
 <div class="grid cards" markdown>
 
-- :material-head-lightbulb:{ .lg .middle } __AI Basics__
+- :material-head-lightbulb:{ .lg .middle } __Learn__
 
     ---
 
-    How large language models actually work, a full glossary, and the misconceptions worth unlearning. Plain language, no math.
+    A six-module AI literacy pathway, from how models work to clinical contexts, with self-checks. Plain language, no math.
 
-    [Read the primer](basics/how-llms-work.md)
+    [Start the pathway](pathway/index.md)
 
 - :material-toolbox:{ .lg .middle } __Tools__
 
@@ -33,13 +33,13 @@ One reliable place for the AUACOM community to learn how AI works, find reviewed
 
     [Open the directory](tools/index.md)
 
-- :material-school:{ .lg .middle } __Learning__
+- :material-school:{ .lg .middle } __Playbooks__
 
     ---
 
-    Curated learning paths for faculty and students, from first steps to technical depth, plus the AAMC and AMA shelves.
+    Task-by-task walkthroughs for faculty: preparing a lecture, writing exam questions safely, and your syllabus AI statement.
 
-    [Pick a path](learning/index.md)
+    [Open the playbooks](playbooks/index.md)
 
 - :material-calendar-star:{ .lg .middle } __Conferences__
 

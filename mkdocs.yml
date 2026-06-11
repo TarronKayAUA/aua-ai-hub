@@ -71,17 +71,30 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - AI Basics:
-      - How LLMs Work: basics/how-llms-work.md
-      - Glossary: basics/glossary.md
-      - Common Misconceptions: basics/misconceptions.md
+  - Learn:
+      - Start Here: pathway/index.md
+      - "1. How AI Works": pathway/how-ai-works.md
+      - "2. Prompting Fundamentals": pathway/prompting.md
+      - "3. The Rules": pathway/rules.md
+      - "4. Teaching and Assessment": pathway/teaching-assessment.md
+      - "5. Research and Scholarship": pathway/research.md
+      - "6. Clinical Contexts": pathway/clinical.md
+      - Reference:
+          - How LLMs Work: basics/how-llms-work.md
+          - Glossary: basics/glossary.md
+          - Common Misconceptions: basics/misconceptions.md
+      - Courses and Resources: learning/index.md
   - Tools:
       - Directory: tools/index.md
       - Running Models Locally: tools/local.md
   - Prompts:
       - Library: prompts/index.md
       - Community Exchange: prompts/exchange.md
-  - Learning: learning/index.md
+  - Playbooks:
+      - Overview: playbooks/index.md
+      - Preparing a Lecture: playbooks/lecture-prep.md
+      - Writing Exam Questions: playbooks/exam-items.md
+      - Syllabus AI Statement: playbooks/syllabus-statement.md
   - News:
       - This Week: news/this-week.md
       - Medical Education: news/medical-education.md
@@ -95,6 +108,7 @@ nav:
   - Governance:
       - AI Responsible Use Policy: governance/policy.md
       - Governance Committee: governance/committee.md
+      - How Tools Are Reviewed: governance/review-process.md
   - Announcements:
       - announcements/index.md
   - About: about.md

@@ -78,6 +78,12 @@ strict, commit.
 blurbs may name current flagships, so refresh blurb and `last_reviewed`
 together; verify links, build strict, commit.
 
+**Edit the literacy pathway or playbooks** — hand-authored pages under
+`docs/pathway/` and `docs/playbooks/`; keep the fixed page shapes
+(objectives/self-checks; guardrails/checklist), keep module 3 and all
+playbook guardrails consistent with the policy version in force, and
+re-check the CGEA mapping note if module scope changes.
+
 **Apply a conference-watch proposal** — open the monthly "Conference watch"
 issue, check each proposal against its linked source, edit
 `data/conferences.yaml` yourself, build strict, commit, close the issue.
