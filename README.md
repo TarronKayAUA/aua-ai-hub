@@ -84,6 +84,11 @@ together; verify links, build strict, commit.
 playbook guardrails consistent with the policy version in force, and
 re-check the CGEA mapping note if module scope changes.
 
+**Add or refresh a setup video** — edit `data/guide_videos.yaml` (group
+`agents` or `local`); verify the video via YouTube oEmbed (live, right
+channel/title) and note duration and upload date; one entry per tool,
+official channels preferred; build strict, commit.
+
 **Apply a conference-watch proposal** — open the monthly "Conference watch"
 issue, check each proposal against its linked source, edit
 `data/conferences.yaml` yourself, build strict, commit, close the issue.
