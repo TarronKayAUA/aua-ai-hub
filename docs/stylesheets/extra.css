@@ -68,10 +68,15 @@
     var(--md-primary-fg-color) 0%,
     var(--md-primary-fg-color--dark) 100%);
   color: var(--md-primary-bg-color);
+  /* Display element, not reading text: centered by owner preference
+     (2026-06-11). Body text everywhere else stays left-aligned. */
+  text-align: center;
 }
 
 .hub-hero p {
   max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hub-hero strong {
@@ -81,11 +86,11 @@
 .hub-hero .hero-wordmark {
   display: block;
   width: min(20rem, 80%);
-  margin-bottom: 0.9rem;
+  margin: 0 auto 0.9rem;
 }
 
 .hub-hero .md-button {
-  margin: 0.3rem 0.5rem 0 0;
+  margin: 0.3rem 0.25rem 0;
   border-color: var(--md-primary-bg-color);
   color: var(--md-primary-bg-color);
 }
