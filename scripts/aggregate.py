@@ -1308,8 +1308,10 @@ def render_category_page(label: str, intro: str, records: list[dict],
     lines = [COMMENTS_FRONT_MATTER + GENERATED_HEADER, "", f"# {label}", "",
              intro, "", selection_note("../"), ""]
     if banner_slug:
+        # Raw HTML is not path-rewritten by MkDocs: with directory URLs the
+        # page serves from /news/<page>/, so docs/assets needs ../../ here.
         lines.append(f'<img class="section-banner" '
-                     f'src="../assets/section-{banner_slug}.svg" alt="">')
+                     f'src="../../assets/section-{banner_slug}.svg" alt="">')
         lines.append("")
     if brief and brief.get("text"):
         lines.append(
@@ -1485,7 +1487,8 @@ def _pack_candidates_records(records: list[dict], budget: int):
 
 
 def render_this_week(categories: dict, by_category: dict, videos: list[dict],
-                     podcasts: list[dict]) -> str:
+                     podcasts: list[dict],
+                     briefs: dict | None = None) -> str:
     """Rolling trailing-seven-day view, regenerated nightly."""
     lines = [
         COMMENTS_FRONT_MATTER + GENERATED_HEADER,
@@ -1504,6 +1507,17 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
             continue
         empty = False
         lines.extend([f"## {categories[key]}", ""])
+        brief = (briefs or {}).get(key)
+        if brief and brief.get("text"):
+            lines.append(
+                '<div class="section-brief">\n'
+                f"<p>{brief['text']}</p>\n"
+                f'<p class="section-brief-date">The picture as of '
+                f"{brief['date']}; numbered links go to the source "
+                "items.</p>\n"
+                "</div>"
+            )
+            lines.append("")
         lines.append('<div class="news-list">')
         lines.extend(render_item_md(r, suppress) for r in records)
         lines.append("</div>")
@@ -1973,7 +1987,8 @@ def main() -> int:
                      + len(rolling_videos) + len(rolling_podcasts))
     write(NEWS_DIR / "this-week.md",
           render_this_week(categories, rolling_by_cat, rolling_videos,
-                           rolling_podcasts),
+                           rolling_podcasts,
+                           briefs=ledger.get("section_briefs", {})),
           rolling_count)
 
     # weekly highlights digest on the configured day (default friday), one
