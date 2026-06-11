@@ -44,9 +44,6 @@ MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
     "nabututor.com": "2026-06-10",
     "llama.com": "2026-06-10",
-    # Cert chain began failing python-requests on 2026-06-11; the host still
-    # answers other clients. Drop the StepGenie entry if a browser fails too.
-    "stepgenie.app": "2026-06-11",
 }
 BOT_BLOCK_STATUSES = {400, 403, 429}
 

@@ -262,16 +262,6 @@
   last_reviewed: 2026-06-10
   blurb: Tutor for USMLE and Comprehensive Osteopathic Medical Licensing Examination (COMLEX) preparation that works through cases Socratically with follow-up questions and builds a study plan around weak areas.
 
-- name: StepGenie
-  vendor: StepGenie
-  category: medical_learning
-  url: https://www.stepgenie.app
-  cost: freemium
-  governance_status: under_review
-  status_note: Awaiting AI Governance Committee review.
-  last_reviewed: 2026-06-10
-  blurb: USMLE preparation platform with board-style practice questions, flashcards with spaced repetition, and step-by-step explanations of reasoning.
-
 - name: Oncourse AI
   vendor: Oncourse AI
   category: medical_learning
