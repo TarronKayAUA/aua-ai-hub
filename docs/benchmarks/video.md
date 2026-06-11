@@ -42,12 +42,6 @@ What separates video models in practice: temporal consistency (objects keep thei
 
 </div>
 
-## Arena snapshot
-
---8<-- "includes/media-video.md"
-
-A note on method: these tables are rebuilt nightly by the same pipeline that refreshes the News section, using the Artificial Analysis free Data API. If the upstream data is unreachable, the most recent successful snapshot stays in place and the date above tells you how fresh it is.
-
 ## A note on medical use
 
 Everything on the [image generation page about medical contexts](image.md#medical-images-are-a-different-question) applies with more force here: there is no public benchmark for clinically accurate generated video, preference scores say nothing about anatomical or procedural correctness, and a fluent clip of a procedure can be confidently wrong in ways a non-expert will not catch. Generated video in teaching needs expert review and AI-generated labeling per the [AI Responsible Use Policy](../governance/policy.md), and patient-identifiable material never enters a generation tool. Synthetic media depicting real, identifiable people without consent is prohibited territory regardless of intent.
