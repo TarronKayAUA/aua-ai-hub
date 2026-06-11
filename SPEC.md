@@ -389,6 +389,7 @@ All phases:
 - News cards carry an article thumbnail when one is available: taken from the feed entry when present, otherwise extracted from the kept article's og:image tag (kept items only, best effort, never fatal). Thumbnail URLs repeated across items on a page are publisher logos and are suppressed; a broken image hides itself client-side.
 - News category order is medical education, clinical practice, general AI (owner preference, 2026-06-10), expressed in the feeds.yaml categories order (which drives the digest) and mirrored in the nav. The general_ai keep bar in prompts/curator.md explicitly excludes minor release notes, forum tinkering threads, and rumor posts.
 - Typography: Inter for text, JetBrains Mono for code. All card styling lives in `docs/stylesheets/extra.css` using Material CSS variables so light and dark schemes both work. The palette remains the placeholder pending AUA branding (section 13).
+- Layout (owner preferences, 2026-06-11): the content grid is capped at 78rem (Material default 61rem) so wide screens get room for tables and card grids, with phones unaffected; table cells carry tighter horizontal padding so the 10-column LiveBench snapshot fits without clipping; the homepage hero contents are centered as a deliberate display-element exception, while all reading text stays left-aligned for readability. Each decision is commented at its rule in extra.css.
 
 ## 13. Out of scope
 
@@ -396,9 +397,19 @@ All phases:
 - Custom domain configuration (leave CNAME instructions in README.md; the owner will coordinate a subdomain with AUA IT).
 - Analytics, authentication, and comments.
 
-## 14. Open items for the owner
+## 14. Open items (current as of 2026-06-11)
 
-- Confirm the site name and supply AUA branding (colors, logo) to replace placeholders.
-- Generate the PubMed RSS URLs (or approve the builder doing so) and confirm the queries.
+Owner actions:
+
+- Create the "Committee updates" Discussions category (announcement format, UI only); the builder then pins its GraphQL id in the `committee_updates` block of feeds.yaml to activate the updates feed.
+- The AI workshop poll closes Sunday, July 19, 2026: move it to `closed` in data/polls.yaml with a one-line outcome and post the result as a committee update.
+- Seed the Prompt Exchange with first real prompts; supply prompt library content over time (the under-construction snippet, includes/prompt-maturity-note.md, retires when grounded prompts land).
+- Build the Power Automate flow from docs/digest.xml before the first institutional digest send; institutional rollout planned mid-July 2026.
+- Take governance statuses and the review rubric to the AI Committee for ratification; remove the provisional banners only after.
 - Replace TBD conference dates as they are confirmed.
-- Take governance statuses to the AI Committee for ratification, update `data/tools.yaml` accordingly, and remove the provisional banner.
+
+Builder actions, triggered by owner events:
+
+- On ratification of the revised AI Responsible Use Policy: replace the policy page verbatim (archiving the superseded version), build the student "Can I use AI for this?" FAQ on the ratified text, align site wording to the AI Responsible Use Subcommittee naming and reporting contact, and update pathway module 3 and the agents-page guardrails to the new provisions.
+- On first Local Voices content: build the section per the design recorded in section 12.
+- On owner instruction only (post-IRB at the earliest): list the research study on Committee Updates. Never publish IRB form internals.

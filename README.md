@@ -89,6 +89,17 @@ re-check the CGEA mapping note if module scope changes.
 channel/title) and note duration and upload date; one entry per tool,
 official channels preferred; build strict, commit.
 
+**Run a poll** — create it in Microsoft Forms (restricted to the AUA
+organization), then add question/url/closes to the `active` list in
+`data/polls.yaml`; on close, move it to `closed` with a one-line
+outcome and post the result as a committee update.
+
+**Post a committee update or edit current projects** — updates are
+posts in the "Committee updates" Discussions category (announcement
+format; mirrored to the site nightly once `category_id` is set in the
+`committee_updates` block of feeds.yaml). The current-projects list is
+`data/committee_work.yaml`; keep summaries public-safe.
+
 **Apply a conference-watch proposal** — open the monthly "Conference watch"
 issue, check each proposal against its linked source, edit
 `data/conferences.yaml` yourself, build strict, commit, close the issue.
