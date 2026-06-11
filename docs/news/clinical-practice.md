@@ -10,7 +10,7 @@ Artificial intelligence in clinical care, deployment, and regulation.
 
 Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
 
-<img class="section-banner" src="../assets/section-clinical-practice.svg" alt="">
+<img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
 <p>Clinical decision support is advancing through graph neural network autoencoders that forecast interventions and stratify risk for intensive care unit patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[4]</a>, alongside real-time deep learning models that predict inpatient hypoglycemia events to enhance care responsiveness <a href="https://www.nature.com/articles/s41746-026-02874-1">[10]</a>. Progress is also evident in screening technologies, as a machine learning model leveraging voice spectrogram and speech recognition features was created for early detection of Parkinson disease based on vocal markers <a href="https://medinform.jmir.org/2026/1/e94063">[3]</a>. Embeddings of clinical codes are further enabling knowledge-grounded artificial intelligence applications, offering improved clinical insights in medical practice <a href="https://www.nature.com/articles/s41746-026-02664-9">[5]</a>. Wearable accelerometry data have shown utility in predicting physical frailty and concern about falling, indicating broader opportunities for remote patient monitoring <a href="https://www.nature.com/articles/s41746-026-02863-4">[11]</a>.</p>

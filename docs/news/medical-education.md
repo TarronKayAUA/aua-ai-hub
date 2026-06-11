@@ -10,7 +10,7 @@ Research and news on artificial intelligence in medical education.
 
 Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
 
-<img class="section-banner" src="../assets/section-medical-education.svg" alt="">
+<img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
 <p>The comparative assessment of ChatGPT, DeepSeek, and Perplexity in managing acid-base disorders highlights moderate accuracy and consistent performance from ChatGPT and DeepSeek, pointing to progress in evaluating clinical reasoning through artificial intelligence <a href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[3]</a>. MedQA-CS provides a structured benchmark for objectively measuring large language model clinical skills, suggesting a standardized pathway for their integration in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[2]</a>. Evidence from a pilot randomized trial indicates that teaching with large language models improves examination outcomes in prostate cancer training, which may influence instructional design <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[4]</a>. The development of AI-generated mini interview stations for medical school admissions, backed by psychometric evaluation, raises questions about the future of admissions processes <a href="https://mededu.jmir.org/2026/1/e86208">[1]</a>.</p>

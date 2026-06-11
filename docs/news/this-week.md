@@ -10,6 +10,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Medical Education
 
+<div class="section-brief">
+<p>The comparative assessment of ChatGPT, DeepSeek, and Perplexity in managing acid-base disorders highlights moderate accuracy and consistent performance from ChatGPT and DeepSeek, pointing to progress in evaluating clinical reasoning through artificial intelligence <a href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[3]</a>. MedQA-CS provides a structured benchmark for objectively measuring large language model clinical skills, suggesting a standardized pathway for their integration in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[2]</a>. Evidence from a pilot randomized trial indicates that teaching with large language models improves examination outcomes in prostate cancer training, which may influence instructional design <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[4]</a>. The development of AI-generated mini interview stations for medical school admissions, backed by psychometric evaluation, raises questions about the future of admissions processes <a href="https://mededu.jmir.org/2026/1/e86208">[1]</a>.</p>
+<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the source items.</p>
+</div>
+
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
@@ -254,6 +259,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 
 ## Clinical Practice
+
+<div class="section-brief">
+<p>Clinical decision support is advancing through graph neural network autoencoders that forecast interventions and stratify risk for intensive care unit patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[4]</a>, alongside real-time deep learning models that predict inpatient hypoglycemia events to enhance care responsiveness <a href="https://www.nature.com/articles/s41746-026-02874-1">[10]</a>. Progress is also evident in screening technologies, as a machine learning model leveraging voice spectrogram and speech recognition features was created for early detection of Parkinson disease based on vocal markers <a href="https://medinform.jmir.org/2026/1/e94063">[3]</a>. Embeddings of clinical codes are further enabling knowledge-grounded artificial intelligence applications, offering improved clinical insights in medical practice <a href="https://www.nature.com/articles/s41746-026-02664-9">[5]</a>. Wearable accelerometry data have shown utility in predicting physical frailty and concern about falling, indicating broader opportunities for remote patient monitoring <a href="https://www.nature.com/articles/s41746-026-02863-4">[11]</a>.</p>
+<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the source items.</p>
+</div>
 
 <div class="news-list">
 <div class="news-card">
@@ -537,6 +547,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 
 ## General AI
+
+<div class="section-brief">
+<p>OpenAI&#x27;s frontier models and Codex are now accessible on Amazon Web Services, making leading large language model products more widely available for clinical AI integration and research <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[6]</a>. A new benchmark study measures how well large language models extract safety data from structured sources, supporting more rigorous evaluation of AI tools for safety-sensitive medical applications <a href="https://arxiv.org/abs/2606.11204">[1]</a>. Energy-efficient, on-device retrieval-augmented generation is advancing on mobile neural processing units, which could enable secure and practical medical AI deployments in clinical settings <a href="https://arxiv.org/abs/2606.11257">[2]</a>. Analysis of Anthropic&#x27;s model naming conventions sheds light on upcoming developments in language models, helping educators track progress relevant to medical AI <a href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the source items.</p>
+</div>
 
 <div class="news-list">
 <div class="news-card">
