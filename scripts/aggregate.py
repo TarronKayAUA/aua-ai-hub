@@ -771,7 +771,13 @@ def update_media_benchmarks(config: dict, now: datetime, dry_run: bool,
                 f"{cfg['base_url']}/{arena['slug']}/models",
                 headers=headers, timeout=30,
             )
-            resp.raise_for_status()
+            if resp.status_code >= 400:
+                # Surface the API's own reason; bodies are small JSON errors
+                # and never contain the key.
+                raise ValueError(
+                    f"{arena['slug']} HTTP {resp.status_code}: "
+                    f"{resp.text[:200]}"
+                )
             models = resp.json().get("data") or []
             rows = []
             for model in models:
