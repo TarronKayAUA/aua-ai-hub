@@ -11,4 +11,12 @@ Whatever a tool's status, two rules always apply: never enter protected health i
 
 <!-- render:tools -->
 
+## Open-weights models
+
+The assistants above run in their vendor's cloud. Open-weights models are different: the model file itself is published for anyone to download and run on their own hardware, so nothing you type leaves your machine. The Local Models tools above are the usual way to run them. Capability rankings shift quickly; the [Benchmarks page](../benchmarks.md) tracks current standings. Licenses differ by family, so check the license before any use beyond personal experimentation.
+
+The major open-weight families as of June 2026:
+
+<!-- render:open-models -->
+
 To suggest a tool for review, see the [About page](../about.md) for contact information. This directory is maintained in a data file; statuses change only through the governance process.

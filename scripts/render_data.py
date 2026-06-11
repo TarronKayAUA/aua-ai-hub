@@ -22,6 +22,7 @@ from pathlib import Path
 import yaml
 
 TOOLS_MARKER = "<!-- render:tools -->"
+OPEN_MODELS_MARKER = "<!-- render:open-models -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
@@ -145,6 +146,30 @@ def _render_tools(config) -> str:
     print(f"  rendered total  : {rendered} (cross-check ok)")
 
     return "\n".join(lines)
+
+
+def _render_open_models(config) -> str:
+    models = _load(_data_dir(config) / "open_models.yaml")
+
+    cards = []
+    for entry in sorted(models, key=lambda m: m["name"].lower()):
+        cards.append(
+            '<div class="tool-card">\n'
+            '  <div class="tool-card-head">'
+            f'<a href="{entry["url"]}">{entry["name"]}</a></div>\n'
+            f'  <div class="tool-card-sub">{entry["vendor"]}'
+            f'<span class="cost-chip">{entry["license"]}</span></div>\n'
+            f'  <p class="tool-card-blurb">{entry["blurb"]}</p>\n'
+            "</div>"
+        )
+
+    print("render_data: open models verification")
+    print(f"  entries read : {len(models)}")
+    print(f"  cards rendered: {len(cards)} (cross-check "
+          f"{'ok' if len(cards) == len(models) else 'MISMATCH'})")
+    if len(cards) != len(models):
+        raise AssertionError("render_data hook: open models count mismatch")
+    return '<div class="tool-grid">\n' + "\n".join(cards) + "\n</div>"
 
 
 # --- prompt resources ---------------------------------------------------------
@@ -422,12 +447,14 @@ def _render_conferences(config) -> str:
 def on_page_markdown(markdown, page, config, files):
     src = page.file.src_uri
     if src == "tools/index.md":
-        if TOOLS_MARKER not in markdown:
-            raise AssertionError(
-                "render_data hook: tools/index.md is missing the "
-                f"{TOOLS_MARKER} marker"
-            )
-        return markdown.replace(TOOLS_MARKER, _render_tools(config))
+        for marker in (TOOLS_MARKER, OPEN_MODELS_MARKER):
+            if marker not in markdown:
+                raise AssertionError(
+                    f"render_data hook: tools/index.md is missing the "
+                    f"{marker} marker"
+                )
+        markdown = markdown.replace(TOOLS_MARKER, _render_tools(config))
+        return markdown.replace(OPEN_MODELS_MARKER, _render_open_models(config))
     if src == "conferences.md":
         if CONFERENCES_MARKER not in markdown:
             raise AssertionError(

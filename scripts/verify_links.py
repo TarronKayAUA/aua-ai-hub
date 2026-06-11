@@ -35,12 +35,15 @@ HEADERS = {
 }
 TIMEOUT = 15
 
-# Domains that block scripted requests (HTTP 403) but were confirmed live by
-# hand. Re-verify in a browser when touching an entry that uses one.
+# Domains that block scripted requests (HTTP 400, 403, or 429) but were
+# confirmed live by hand. Re-verify in a browser when touching an entry that
+# uses one.
 MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
     "nabututor.com": "2026-06-10",
+    "llama.com": "2026-06-10",
 }
+BOT_BLOCK_STATUSES = {400, 403, 429}
 
 MD_LINK = re.compile(r"\[[^\]]*\]\((https?://[^)\s]+)\)")
 
@@ -52,6 +55,7 @@ def collect() -> list[tuple[str, str]]:
         "data/tools.yaml",
         "data/conferences.yaml",
         "data/prompt_resources.yaml",
+        "data/open_models.yaml",
     ):
         path = REPO / yaml_rel
         if not path.exists():
@@ -85,14 +89,14 @@ def collect() -> list[tuple[str, str]]:
 def check(url: str) -> tuple[bool, str]:
     try:
         resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
-        if resp.status_code == 403:
+        if resp.status_code in BOT_BLOCK_STATUSES:
             host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
             if host in MANUALLY_VERIFIED:
                 return True, f"manual ({MANUALLY_VERIFIED[host]})"
             # A 403 reached through a doi.org link means the DOI resolved
             # (doi.org returns 404 for unknown DOIs) and only the publisher
             # site blocks scripted clients, so the link works in a browser.
-            if host == "doi.org":
+            if host == "doi.org" and resp.status_code == 403:
                 return True, "doi resolved (publisher 403s scripts)"
         ok = resp.status_code < 400
         return ok, f"HTTP {resp.status_code}"

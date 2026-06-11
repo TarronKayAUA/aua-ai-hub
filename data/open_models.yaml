@@ -1,0 +1,56 @@
+# Open-weights model families. Rendered into the "Open-weights models"
+# section of docs/tools/index.md at build time by scripts/render_data.py.
+# Edit this file only; never the rendered page.
+#
+# These are model families, not hosted services, so entries carry a license
+# instead of a cost and governance badge. Blurbs may name current flagship
+# releases; refresh them (and last_reviewed) when a family moves on.
+
+- name: gpt-oss
+  vendor: OpenAI
+  url: https://openai.com/index/introducing-gpt-oss/
+  license: Apache 2.0
+  last_reviewed: 2026-06-10
+  blurb: OpenAI's open-weight pair. gpt-oss-120b runs on a single 80 gigabyte graphics card with reasoning performance near the company's o4-mini, and gpt-oss-20b runs on machines with 16 gigabytes of memory.
+
+- name: Llama 4
+  vendor: Meta
+  url: https://www.llama.com
+  license: Llama Community License
+  last_reviewed: 2026-06-10
+  blurb: Meta's open-weight family and the most widely deployed. Llama 4 Scout and Maverick handle text and images natively, and Scout offers a context window of up to 10 million tokens.
+
+- name: Gemma 4
+  vendor: Google
+  url: https://deepmind.google/models/gemma/
+  license: Apache 2.0
+  last_reviewed: 2026-06-10
+  blurb: Google's open model family, released April 2026, from 2 billion parameter on-device variants to a 31 billion parameter model, with vision and audio input and support for over 140 languages.
+
+- name: Qwen3
+  vendor: Alibaba
+  url: https://huggingface.co/Qwen
+  license: Apache 2.0
+  last_reviewed: 2026-06-10
+  blurb: Alibaba's open-weight line, offered in the widest range of sizes, from models small enough for a laptop to flagship scale, with broad multilingual coverage.
+
+- name: DeepSeek
+  vendor: DeepSeek
+  url: https://huggingface.co/deepseek-ai
+  license: MIT
+  last_reviewed: 2026-06-10
+  blurb: DeepSeek publishes the weights of its flagship chat and reasoning models, including the V4 series, under the permissive MIT license.
+
+- name: Kimi K2
+  vendor: Moonshot AI
+  url: https://huggingface.co/moonshotai
+  license: Modified MIT
+  last_reviewed: 2026-06-10
+  blurb: Moonshot AI's open-weight family, among the strongest published models on coding and agentic benchmarks as of mid 2026.
+
+- name: Mistral
+  vendor: Mistral AI
+  url: https://mistral.ai/models
+  license: Apache 2.0
+  last_reviewed: 2026-06-10
+  blurb: French lab Mistral's open-weight range, from the small Ministral models to Mistral Large 3, with most flagship releases under Apache 2.0.
