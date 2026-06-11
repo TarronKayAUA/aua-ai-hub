@@ -13,6 +13,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">MedQA-CS: Objective Structured Clinical Examination (OSCE)-Style Benchmark for Evaluating LLM Clinical Skills</a>
+    <p class="news-card-summary">MedQA-CS offers an Objective Structured Clinical Examination-style benchmark to evaluate large language model clinical skills accurately.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Head-to-head evaluation of ChatGPT, DeepSeek, and Perplexity on acid-base disorder case clinical management and drug treatment: Accuracy, domain performance, and response consistency assessment</a>
+    <p class="news-card-summary">A study compares ChatGPT, DeepSeek, and Perplexity on acid-base disorder management, finding ChatGPT and DeepSeek have moderate and generally better accuracy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Integrating large language models into prostate cancer training: evidence from comparative benchmarking and a pilot randomized trial</a>
+    <p class="news-card-summary">A pilot randomized trial shows that teaching with large language models improves prostate cancer training examination performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.11208">BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts</a>
     <p class="news-card-summary">BioDivergence proposes a benchmark and evaluation framework to detect hidden contextual contradictions in biomedical abstracts, improving reliability of biomedical literature interpretation.</p>
@@ -500,6 +521,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=UE_vuadQrJ0" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/UE_vuadQrJ0/hqdefault.jpg" alt="Video: AI That’s Too Dangerous For You? What we learned from S.A.T.A.N" loading="lazy">
+  <span class="video-card-title">AI That’s Too Dangerous For You? What we learned from S.A.T.A.N</span>
+  <span class="video-card-meta">IBM Technology, June 11, 2026</span>
+  <span class="video-card-desc">This video discusses AI uncovering cybersecurity vulnerabilities, focusing on lessons learned from the S.A.T.A.N project and implications for AI safety.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=h001l-XUJJE" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/h001l-XUJJE/hqdefault.jpg" alt="Video: Claude Fable 5 Ultimate Test - Is THIS The Closest Thing to AGI?" loading="lazy">
   <span class="video-card-title">Claude Fable 5 Ultimate Test - Is THIS The Closest Thing to AGI?</span>

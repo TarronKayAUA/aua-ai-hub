@@ -3028,6 +3028,79 @@
    "title_hash": "b13b9ee2b9b173203118c0f6331c181e",
    "first_seen": "2026-06-11T10:16:57.987373+00:00",
    "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&ff=20260611080252&v=2.20.0",
+   "title_hash": "1be1018d0a3d359ba081c0e731f6e936",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": true,
+   "title": "MedQA-CS: Objective Structured Clinical Examination (OSCE)-Style Benchmark for Evaluating LLM Clinical Skills",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-11T10:00:00+00:00",
+   "summary": "MedQA-CS offers an Objective Structured Clinical Examination-style benchmark to evaluate large language model clinical skills accurately.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&ff=20260611080252&v=2.20.0",
+   "title_hash": "0571502fab91af3ce0a5a7851a860e8b",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": true,
+   "title": "Head-to-head evaluation of ChatGPT, DeepSeek, and Perplexity on acid-base disorder case clinical management and drug treatment: Accuracy, domain performance, and response consistency assessment",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-11T10:00:00+00:00",
+   "summary": "A study compares ChatGPT, DeepSeek, and Perplexity on acid-base disorder management, finding ChatGPT and DeepSeek have moderate and generally better accuracy.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42272679?fc=20260609215449&ff=20260611080252&v=2.20.0",
+   "title_hash": "aa628b558db88b65d462b38eeb93233b",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&ff=20260611080252&v=2.20.0",
+   "title_hash": "33afb3b71b6a9b28ac45bc6fb681e41c",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": true,
+   "title": "Integrating large language models into prostate cancer training: evidence from comparative benchmarking and a pilot randomized trial",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-11T10:00:00+00:00",
+   "summary": "A pilot randomized trial shows that teaching with large language models improves prostate cancer training examination performance.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2tlum/i_thought_chinese_censorship_didnt_affect_me_i",
+   "title_hash": "c996f1ad7e6f8c2bfd5e771796e47317",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02892-z",
+   "title_hash": "0d1ebe41be6dec775ce928da7aa4cb8d",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/torch-mlp-fusion",
+   "title_hash": "8f11e5b0155aaa745b46aef9188eeb21",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=UE_vuadQrJ0",
+   "title_hash": "f1e1e6998a2b7b630acb1ffb963bd50f",
+   "first_seen": "2026-06-11T12:02:51.896470+00:00",
+   "kept": true,
+   "title": "AI That’s Too Dangerous For You? What we learned from S.A.T.A.N",
+   "source": "IBM Technology",
+   "published": "2026-06-11T11:00:12+00:00",
+   "summary": "This video discusses AI uncovering cybersecurity vulnerabilities, focusing on lessons learned from the S.A.T.A.N project and implications for AI safety.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/UE_vuadQrJ0/hqdefault.jpg"
   }
  ],
  "digests": [

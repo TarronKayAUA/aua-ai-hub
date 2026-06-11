@@ -13,6 +13,27 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">MedQA-CS: Objective Structured Clinical Examination (OSCE)-Style Benchmark for Evaluating LLM Clinical Skills</a>
+    <p class="news-card-summary">MedQA-CS offers an Objective Structured Clinical Examination-style benchmark to evaluate large language model clinical skills accurately.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Head-to-head evaluation of ChatGPT, DeepSeek, and Perplexity on acid-base disorder case clinical management and drug treatment: Accuracy, domain performance, and response consistency assessment</a>
+    <p class="news-card-summary">A study compares ChatGPT, DeepSeek, and Perplexity on acid-base disorder management, finding ChatGPT and DeepSeek have moderate and generally better accuracy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Integrating large language models into prostate cancer training: evidence from comparative benchmarking and a pilot randomized trial</a>
+    <p class="news-card-summary">A pilot randomized trial shows that teaching with large language models improves prostate cancer training examination performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.11208">BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts</a>
     <p class="news-card-summary">BioDivergence proposes a benchmark and evaluation framework to detect hidden contextual contradictions in biomedical abstracts, improving reliability of biomedical literature interpretation.</p>
@@ -95,28 +116,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Clinical documentation is a foundational skill in medicine, developed during training and required in everyday practice.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/1305e7c44bd471c8e7ffc3b81f1f68a0.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e64402">Perspectives of Premedical Students at a Medical University College in Malaysia Regarding Augmented Reality Integration in Anatomy Education: Cross-Sectional Study</a>
-    <p class="news-card-summary">Background: For novice anatomy learners, studying human anatomy using textbooks, 2D learning materials, and static anatomical models frequently causes challenges in understanding complex anatomical structures.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/7aa6d5b8990a52e49026e1101f2ef185.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 8, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88511">AI Integration in Spanish Undergraduate Medical Education: National Cross-Sectional Study</a>
-    <p class="news-card-summary">Background: Artificial intelligence (AI) is reshaping clinical practice and redefining the competencies future physicians will need.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/2c562552f541b9b728e0a99a4a27fb6a.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42258369?fc=20260609215449&amp;ff=20260609215822&amp;v=2.20.0">360 Video-Based Virtual Reality for Preparing Medical Students for Body Donor Dissection: Randomized Controlled Trial</a>
-    <p class="news-card-summary">CONCLUSIONS: The 360° video-based VR intervention significantly reduced TA and was perceived as valuable for emotional and procedural preparation.</p>
-  </div>
 </div>
 </div>
