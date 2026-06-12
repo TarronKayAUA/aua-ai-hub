@@ -983,6 +983,25 @@ def call_github_models(system: str, user: str, cfg: dict, timeout: int) -> str:
     return resp.json()["choices"][0]["message"]["content"]
 
 
+def resolve_task_llm(config: dict, task: str):
+    """Per-task provider resolution (owner spend plan, 2026-06-11): the
+    Anthropic key activates only the tasks that name anthropic in the
+    feeds.yaml llm.tasks block; every task falls back to the free GitHub
+    Models path when the key is absent. Returns (provider, call_fn, cfg),
+    or (None, None, None) when no LLM credential is available."""
+    llm_cfg = config["llm"]
+    spec = llm_cfg.get("tasks", {}).get(task, {})
+    if (spec.get("provider") == "anthropic"
+            and os.environ.get("ANTHROPIC_API_KEY")):
+        cfg = dict(llm_cfg["anthropic"])
+        if spec.get("model"):
+            cfg["model"] = spec["model"]
+        return "anthropic", call_anthropic, cfg
+    if os.environ.get("GITHUB_TOKEN"):
+        return "github_models", call_github_models, dict(llm_cfg["github_models"])
+    return None, None, None
+
+
 def parse_curator_json(text: str, candidate_ids: set, categories: dict) -> list[dict]:
     """Parse and validate the strict JSON contract. Raises ValueError on any problem."""
     text = text.strip()
@@ -1040,7 +1059,7 @@ def _pack_candidates(ordered: list, budget: int, verbose: bool):
     return by_id, json.dumps({"candidates": entries}, ensure_ascii=False)
 
 
-def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
+def curate_llm(fresh: list, config: dict, verbose: bool):
     """Batched news curation call. Returns (kept_by_category, cfp_items, note)
     or None when the LLM path failed and keyword mode should run instead."""
     llm_cfg = config["llm"]
@@ -1048,8 +1067,9 @@ def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
     timeout = llm_cfg["request_timeout_seconds"]
 
     system = CURATOR_PROMPT_PATH.read_text(encoding="utf-8")
-    call = call_anthropic if provider == "anthropic" else call_github_models
-    cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
+    provider, call, cfg = resolve_task_llm(config, "curation")
+    if call is None:
+        return None
 
     ordered = sorted(fresh, key=lambda i: -i.score)[: llm_cfg["max_candidates"]]
     by_id, payload = _pack_candidates(
@@ -1103,7 +1123,7 @@ def curate_llm(fresh: list, config: dict, provider: str, verbose: bool):
 
 
 def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
-                     config: dict, provider: str, verbose: bool):
+                     config: dict, verbose: bool):
     """Separate focused curation call for one media type (videos or
     podcasts). Returns (kept_items, cfp_items) or None on failure
     (keyword fallback)."""
@@ -1111,8 +1131,9 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
     categories = {k: v["label"] for k, v in config["categories"].items()}
     timeout = llm_cfg["request_timeout_seconds"]
     system = CURATOR_PROMPT_PATH.read_text(encoding="utf-8")
-    call = call_anthropic if provider == "anthropic" else call_github_models
-    cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
+    provider, call, cfg = resolve_task_llm(config, "curation")
+    if call is None:
+        return None
 
     ordered = sorted(fresh_media, key=lambda i: -i.published.timestamp())[:60]
     by_id, payload = _pack_candidates(
@@ -1425,7 +1446,7 @@ def conference_updates(snapshot: dict, current: dict, today_iso: str) -> list[di
 
 
 def select_digest_highlights(candidates: list[dict], config: dict,
-                             provider: str | None, verbose: bool):
+                             use_llm: bool, verbose: bool):
     """Second-stage selection: pick the week's most digest-worthy items.
     Returns (ordered ids, note). Falls back to importance score then recency
     when no LLM is available or the call fails."""
@@ -1433,10 +1454,9 @@ def select_digest_highlights(candidates: list[dict], config: dict,
     budgets = (f"Budgets: at most {digest_cfg['news_items']} news items, "
                f"{digest_cfg['videos']} videos, {digest_cfg['podcasts']} "
                "podcast episodes.")
-    if provider:
+    provider, call, cfg = resolve_task_llm(config, "digest_selection")
+    if use_llm and call is not None:
         llm_cfg = config["llm"]
-        call = call_anthropic if provider == "anthropic" else call_github_models
-        cfg = llm_cfg["anthropic" if provider == "anthropic" else "github_models"]
         ordered = sorted(
             candidates,
             key=lambda r: (-(r.get("score") or 0), r["published"]),
@@ -1451,7 +1471,7 @@ def select_digest_highlights(candidates: list[dict], config: dict,
             ids = [str(i) for i in json.loads(raw)["highlights"]]
             valid = [i for i in ids if i in by_id]
             if valid:
-                return [by_id[i] for i in valid], f"llm ({provider})"
+                return [by_id[i] for i in valid], f"llm ({provider}, {cfg['model']})"
         except (requests.RequestException, KeyError, ValueError,
                 json.JSONDecodeError) as exc:
             if verbose:
@@ -1839,31 +1859,30 @@ def main() -> int:
         matches = sum(1 for term in boost_terms if term in text)
         item.score = matches + item.weight
 
-    provider = None
-    if not args.no_llm:
-        if os.environ.get("ANTHROPIC_API_KEY"):
-            provider = "anthropic"
-        elif os.environ.get("GITHUB_TOKEN"):
-            provider = "github_models"
+    # Provider selection is per task (resolve_task_llm); this gate only asks
+    # whether any LLM credential exists at all.
+    llm_available = (not args.no_llm) and bool(
+        os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("GITHUB_TOKEN")
+    )
 
     mode = "keyword"
     cfp_count = 0
     llm_result = None
     video_result = None
-    if provider and fresh:
-        llm_result = curate_llm(fresh, config, provider, args.verbose)
+    if llm_available and fresh:
+        llm_result = curate_llm(fresh, config, args.verbose)
         if llm_result is None:
-            mode = f"keyword (fallback: {provider} failed)"
+            mode = "keyword (fallback: llm failed)"
     podcast_result = None
-    if provider and fresh_videos:
+    if llm_available and fresh_videos:
         video_result = curate_llm_media(
             fresh_videos, "videos", video_cfg.get("max_keep_per_run", 12),
-            config, provider, args.verbose)
-    if provider and fresh_episodes:
+            config, args.verbose)
+    if llm_available and fresh_episodes:
         podcast_result = curate_llm_media(
             fresh_episodes, "podcasts", podcast_cfg.get("max_keep_per_run", 8),
-            config, provider, args.verbose)
-    if not provider:
+            config, args.verbose)
+    if not llm_available:
         if args.no_llm:
             mode = "keyword (--no-llm)"
         else:
@@ -1887,7 +1906,7 @@ def main() -> int:
         kept_videos = curate_media_keyword(
             fresh_videos, video_cfg.get("max_keep_per_run", 12)
         )
-        if provider and fresh_videos:
+        if llm_available and fresh_videos:
             mode += " + video fallback"
     if podcast_result is not None:
         kept_episodes, podcast_cfp = podcast_result
@@ -1896,7 +1915,7 @@ def main() -> int:
         kept_episodes = curate_media_keyword(
             fresh_episodes, podcast_cfg.get("max_keep_per_run", 8)
         )
-        if provider and fresh_episodes:
+        if llm_available and fresh_episodes:
             mode += " + podcast fallback"
     cfp_count = append_conference_flags(all_cfp, now, args.dry_run)
     kept_items = [i for pool in kept_by_category.values() for i in pool]
@@ -2013,7 +2032,7 @@ def main() -> int:
         if not ledger["conference_snapshot"]:
             conf_updates = []  # first digest baselines without announcing
         ordered, digest_note = select_digest_highlights(
-            candidates, config, provider, args.verbose)
+            candidates, config, llm_available, args.verbose)
         news_budget = digest_cfg.get("news_items", 8)
         video_budget = digest_cfg.get("videos", 4)
         podcast_budget = digest_cfg.get("podcasts", 3)

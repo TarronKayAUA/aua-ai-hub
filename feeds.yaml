@@ -34,6 +34,23 @@ llm:
     model: claude-haiku-4-5
     api_version: "2023-06-01"
     max_payload_chars: 600000
+  # Per-task provider assignments (owner spend plan, 2026-06-11). The
+  # Anthropic key activates ONLY the tasks that name anthropic here; each
+  # falls back to the free GitHub Models path (then keyword mode) whenever
+  # the key is absent or the call fails. Spend is hard-capped at the
+  # account level: prepaid credits with auto-reload off, plus a workspace
+  # monthly limit. The section briefs stay on the free tier by design
+  # (configured in the briefs block below).
+  tasks:
+    curation:
+      provider: anthropic
+      model: claude-haiku-4-5
+    digest_selection:
+      provider: anthropic
+      model: claude-haiku-4-5
+    digest_narrative:
+      provider: anthropic
+      model: claude-opus-4-8
   # Section briefs: one short narrative per news category page, regenerated
   # only when that page's item set changes. Three small calls at most per
   # night, so they ride the strongest free GitHub Models entry (high tier,
