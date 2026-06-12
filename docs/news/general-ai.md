@@ -63,6 +63,13 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1tyb3np/deepseek_v4_flash_is_amazing_wip_llamacpp_pr_24162">DeepSeek V4 Flash is amazing! (WIP llama.cpp PR #24162)</a>
+    <p class="news-card-summary">DeepSeek V4 series models now supported in llama.cpp, enabling local deployment of this open-weights model family.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
     <a class="news-card-title" href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">OpenAI frontier models and Codex are now available on AWS</a>
     <p class="news-card-summary">OpenAI&#x27;s frontier models and Codex code generation models are now available for use on Amazon Web Services cloud platform.</p>

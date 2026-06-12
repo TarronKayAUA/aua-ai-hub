@@ -599,6 +599,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1tyb3np/deepseek_v4_flash_is_amazing_wip_llamacpp_pr_24162">DeepSeek V4 Flash is amazing! (WIP llama.cpp PR #24162)</a>
+    <p class="news-card-summary">DeepSeek V4 series models now supported in llama.cpp, enabling local deployment of this open-weights model family.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
     <a class="news-card-title" href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">OpenAI frontier models and Codex are now available on AWS</a>
     <p class="news-card-summary">OpenAI&#x27;s frontier models and Codex code generation models are now available for use on Amazon Web Services cloud platform.</p>
@@ -618,6 +625,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=bhgYFRZLyKI" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/bhgYFRZLyKI/hqdefault.jpg" alt="Video: Debug web apps with browser use in Codex" loading="lazy">
+  <span class="video-card-title">Debug web apps with browser use in Codex</span>
+  <span class="video-card-meta">OpenAI, June 12, 2026</span>
+  <span class="video-card-desc">OpenAI demonstrates how Codex uses Chrome DevTools Protocol to debug web applications by inspecting logs and runtime state.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=UE_vuadQrJ0" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/UE_vuadQrJ0/hqdefault.jpg" alt="Video: AI That’s Too Dangerous For You? What we learned from S.A.T.A.N" loading="lazy">
   <span class="video-card-title">AI That’s Too Dangerous For You? What we learned from S.A.T.A.N</span>

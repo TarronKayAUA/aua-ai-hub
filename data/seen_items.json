@@ -3352,6 +3352,37 @@
    "title_hash": "9a25eae0a47689f97b4c81087386dcdf",
    "first_seen": "2026-06-11T22:55:04.107336+00:00",
    "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive",
+   "title_hash": "f7230bb1189b55eca494ad9f9e14b00b",
+   "first_seen": "2026-06-12T00:36:17.426671+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyb3np/deepseek_v4_flash_is_amazing_wip_llamacpp_pr_24162",
+   "title_hash": "6c13541ff5feeddd379de6203a8bfb31",
+   "first_seen": "2026-06-12T00:36:17.426671+00:00",
+   "kept": true,
+   "title": "DeepSeek V4 Flash is amazing! (WIP llama.cpp PR #24162)",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-06T07:56:42+00:00",
+   "summary": "DeepSeek V4 series models now supported in llama.cpp, enabling local deployment of this open-weights model family.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=bhgYFRZLyKI",
+   "title_hash": "77bcfee6e38bf81fbc8efc2f36d1a937",
+   "first_seen": "2026-06-12T00:36:17.426671+00:00",
+   "kept": true,
+   "title": "Debug web apps with browser use in Codex",
+   "source": "OpenAI",
+   "published": "2026-06-12T00:15:38+00:00",
+   "summary": "OpenAI demonstrates how Codex uses Chrome DevTools Protocol to debug web applications by inspecting logs and runtime state.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i3.ytimg.com/vi/bhgYFRZLyKI/hqdefault.jpg"
   }
  ],
  "digests": [

@@ -11,6 +11,12 @@ Recent videos from a curated set of channels covering artificial intelligence de
 Cards link to YouTube; nothing plays on this site.
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=bhgYFRZLyKI" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/bhgYFRZLyKI/hqdefault.jpg" alt="Video: Debug web apps with browser use in Codex" loading="lazy">
+  <span class="video-card-title">Debug web apps with browser use in Codex</span>
+  <span class="video-card-meta">OpenAI, June 12, 2026</span>
+  <span class="video-card-desc">OpenAI demonstrates how Codex uses Chrome DevTools Protocol to debug web applications by inspecting logs and runtime state.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=UE_vuadQrJ0" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/UE_vuadQrJ0/hqdefault.jpg" alt="Video: AI That’s Too Dangerous For You? What we learned from S.A.T.A.N" loading="lazy">
   <span class="video-card-title">AI That’s Too Dangerous For You? What we learned from S.A.T.A.N</span>
