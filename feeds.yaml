@@ -190,9 +190,29 @@ benchmarks:
 video_feeds:
   lookback_days: 14
   max_keep_per_run: 12
-  page_items: 36
   home_items: 6
+  # The Videos page renders one section per group, in this order. A video's
+  # group comes from its channel's optional `group` key (default: general),
+  # never from model-assigned labels, which are known to be unreliable for
+  # media. Adding a medical channel is one `channels` entry with
+  # `group: medical`.
+  groups:
+    medical:
+      label: Medical AI
+      page_items: 8
+    general:
+      label: General AI
+      page_items: 20
   channels:
+    # Stanford Center for Artificial Intelligence in Medicine and Imaging:
+    # seminar and grand-rounds recordings. Channel id from the channel
+    # page's canonical link, feed verified 2026-06-12. Uploads are roughly
+    # monthly, so a per-channel 90-day lookback pulls the recent backlog on
+    # the first run (inert afterwards; older uploads land in the ledger).
+    - name: Stanford AIMI
+      channel_id: UCiHlZ1osvJ_1C8K5MCnJp7w
+      group: medical
+      lookback_days: 90
     - name: Matthew Berman
       channel_id: UCawZsQWqfGSbCI5yjkdVkTA
     - name: Two Minute Papers

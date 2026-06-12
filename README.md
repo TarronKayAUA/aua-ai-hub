@@ -58,7 +58,10 @@ block, `mkdocs build --strict`, commit, push (CI deploys automatically).
 **Add or remove a YouTube channel** — get the channel id from the channel
 page's canonical link (`<link rel="canonical" href=".../channel/UC...">`,
 not the first channelId in the source); add to `video_feeds:`; verify and
-dry-run as above.
+dry-run as above. Optional per-channel keys: `group` picks the Videos page
+section (default `general`; `medical` renders under Medical AI) and
+`lookback_days` widens the window for low-cadence channels such as seminar
+series. Sections and their caps live in `video_feeds.groups`.
 
 **Add or remove a podcast** — find the RSS URL via the Apple Podcasts
 directory (`https://itunes.apple.com/search?term=NAME&media=podcast` returns

@@ -24,7 +24,9 @@ Video rules:
 
 - Candidates with feed_category "videos" are YouTube videos. Keep up to 12 per run, category "videos". Never move a video into a news category or a news item into "videos".
 - Keep videos that explain a development clearly, demonstrate a tool relevant to education or clinical work, cover notable model releases or benchmarks, or announce something significant from a major lab (for the Anthropic, OpenAI, and Google DeepMind channels, keep only significant announcements, not routine uploads).
+- Seminar and grand-rounds recordings from medical AI channels (for example Stanford AIMI) are valuable to this audience: keep them when the topic concerns artificial intelligence in medicine, medical education, or clinical practice, even though they are long-form lectures rather than news.
 - These channels are pre-curated for this audience, so lean toward keeping solid informative videos; when in doubt about a borderline video, keep it. Target 8 to 12 kept videos whenever the list contains that many with genuine news or educational value; keeping fewer than 6 should be rare, only on days when the candidates are uniformly weak. Drop pure reaction content, speculation, and drama, and when several videos cover the same story keep the two or three best treatments.
+- Titles render verbatim on an institutional academic page. Drop any video whose title is sensationalist or suggestive (shock phrasing, all-caps hype, leak and rumor framing, innuendo), no matter how good the content may be.
 - Prefer breadth across channels over several videos from one channel covering the same story.
 - For each kept video, write the summary field as one plain sentence (at most 35 words) saying what the video covers and what a viewer gets from it, so readers know what they are getting into before clicking. Same style rules as news summaries: neutral, no hype, no em dashes. Do not just restate the title.
 

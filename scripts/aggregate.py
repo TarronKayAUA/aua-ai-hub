@@ -402,7 +402,29 @@ def normalize_podcasts(parsed, show: str, counters: dict) -> list[Item]:
     return items
 
 
-def render_videos_page(records: list[dict]) -> str:
+def split_video_groups(records: list[dict], video_cfg: dict):
+    """Order-preserving split of kept videos into the Videos page sections
+    configured in feeds.yaml. A video's group comes from its channel's
+    `group` key (owner-assigned, default general), never from model labels,
+    which are unreliable for media (CLAUDE.md). Returns [(label, records)]
+    with per-group caps applied; empty groups are dropped. Without a groups
+    config the whole list is one unlabeled section capped by page_items."""
+    groups = video_cfg.get("groups")
+    if not groups:
+        return [(None, records[: int(video_cfg.get("page_items", 24))])]
+    by_source = {ch["name"]: ch.get("group", "general")
+                 for ch in video_cfg.get("channels", [])}
+    sections = []
+    for key, gcfg in groups.items():
+        members = [r for r in records
+                   if by_source.get(r["source"], "general") == key]
+        members = members[: int(gcfg.get("page_items", 20))]
+        if members:
+            sections.append((gcfg.get("label", key.title()), members))
+    return sections
+
+
+def render_videos_page(sections: list) -> str:
     lines = [
         COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
@@ -415,9 +437,15 @@ def render_videos_page(records: list[dict]) -> str:
         "Cards link to YouTube; nothing plays on this site.",
         "",
     ]
-    if records:
-        lines.append(_video_grid_html(records))
-    else:
+    rendered = False
+    for label, records in sections:
+        if not records:
+            continue
+        rendered = True
+        if label:
+            lines.extend([f"## {label}", ""])
+        lines.extend([_video_grid_html(records), ""])
+    if not rendered:
         lines.append("No videos yet. The pipeline adds videos nightly.")
     return "\n".join(lines) + "\n"
 
@@ -1972,7 +2000,16 @@ def main() -> int:
     # No fuzzy-title pass: different channels covering the same story are
     # legitimately distinct videos; the curation step picks among them.
     video_cutoff = now - timedelta(days=video_cfg.get("lookback_days", 14))
-    videos_window = [v for v in all_videos if v.published >= video_cutoff]
+    # Per-channel lookback overrides (low-cadence channels like seminar
+    # series would otherwise never have an upload inside the window).
+    video_cutoffs = {
+        ch["name"]: now - timedelta(days=ch["lookback_days"])
+        for ch in video_cfg.get("channels", []) if ch.get("lookback_days")
+    }
+    videos_window = [
+        v for v in all_videos
+        if v.published >= video_cutoffs.get(v.source, video_cutoff)
+    ]
     videos_unblocked = [v for v in videos_window if not blocked(v)]
     videos_by_url: dict[str, Item] = {}
     for video in videos_unblocked:
@@ -2114,10 +2151,11 @@ def main() -> int:
     write(LATEST_INCLUDE, render_latest_include(latest), len(latest))
 
     video_records = kept_records(ledger, "videos")
+    video_sections = split_video_groups(video_records, video_cfg)
     write(
         NEWS_DIR / "videos.md",
-        render_videos_page(video_records[: video_cfg.get("page_items", 24)]),
-        min(len(video_records), video_cfg.get("page_items", 24)),
+        render_videos_page(video_sections),
+        sum(len(rs) for _, rs in video_sections),
     )
     home_videos = video_records[: video_cfg.get("home_items", 3)]
     home_include = GENERATED_HEADER + "\n\n" + (
@@ -2307,6 +2345,9 @@ def main() -> int:
         print(f"  {label:<18}: {count}")
     print(f"videos in window : {len(videos_window)}, fresh after dedupe: "
           f"{len(fresh_videos)}, kept: {len(kept_videos)}")
+    print("videos page      : " + (", ".join(
+        f"{label or 'all'} {len(rs)}" for label, rs in video_sections)
+        or "empty"))
     print(f"episodes window  : {len(episodes_window)}, fresh after dedupe: "
           f"{len(fresh_episodes)}, kept: {len(kept_episodes)}")
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
