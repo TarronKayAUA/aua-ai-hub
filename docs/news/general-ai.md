@@ -34,6 +34,14 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u2np0a/nvidiadiffusiongemma26ba4bitnvfp4_hugging_face">nvidia/diffusiongemma-26B-A4B-it-NVFP4 · Hugging Face</a>
+    <p class="news-card-summary">Nvidia releases DiffusionGemma 26B, an open-weights multimodal model combining language and image generation capabilities.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/9EBAZR2owX7nOGzlCDPXd-p_xWnW0WyWy3qPB046G1s.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6d83f884a6cf4fe9a76b4e5328582f59450a6ff5" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">Anthropic&#x27;s Model Naming, Extrapolated</a>
     <p class="news-card-summary">Analysis of Anthropic&#x27;s model naming convention provides insights into their future large language model development plans.</p>
