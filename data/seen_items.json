@@ -3875,6 +3875,24 @@
    "summary": "Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.",
    "category": "clinical_practice",
    "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/12/andrew-singleton",
+   "title_hash": "e247ea084aa53674cfa07872248bfc65",
+   "first_seen": "2026-06-12T18:19:30.385058+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/ukraines-one-time-test-used-fully-autonomous-drones-to-kill-russian-soldiers",
+   "title_hash": "449d376bd954775a1781edeecdf8814d",
+   "first_seen": "2026-06-12T18:19:30.385058+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=QcaP2HA5tt0",
+   "title_hash": "be1a0ffc97f67190ffd7bd7181f9de88",
+   "first_seen": "2026-06-12T18:19:30.385058+00:00",
+   "kept": false
   }
  ],
  "digests": [
