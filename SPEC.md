@@ -41,7 +41,7 @@ Power Automate (external) watches docs/digest.xml -> Outlook email
 
 Three content classes, strictly separated:
 
-- Hand-authored (pipeline must never modify): everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/conference_watchlist.yaml`; `data/tools.yaml`; `data/prompts.yaml`; `data/committee.yaml`; `prompts/curator.md`; `prompts/digest.md`.
+- Hand-authored (pipeline must never modify): everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/conference_watchlist.yaml`; `data/tools.yaml`; `data/prompts.yaml`; `data/committee.yaml`; `prompts/curator.md`; `prompts/digest.md`; `prompts/digest_narrative.md`; `prompts/section_brief.md`.
 - Data-driven (rendered at build time from YAML by the MkDocs hook): the conferences table, the tools directory, the prompt library, and the committee page.
 - Generated (humans never hand-edit): `docs/news/**`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `data/seen_items.json`, `data/conference_flags.md`.
 
@@ -237,7 +237,7 @@ Behavior, in order:
 7. Print the mandatory verification block (owner's standing rule): feeds attempted, succeeded, failed (named); raw item count; counts after window, after block-filter, after dedupe; kept per category; files written with per-file item counts; curation mode used. Assert that category counts sum to the total kept and fail loudly on mismatch.
 8. CLI flags: `--dry-run` (no writes), `--no-llm`, `--since-days N`, `--verbose`.
 
-Digest contract (consumed by Power Automate): `docs/digest.xml` is valid RSS 2.0. Exactly one new `<item>` is added per weekly digest, with a stable guid of the form `aua-ai-digest-<year>-W<week>`, a title like "AUA AI Hub Digest: Week of <date>", and a description containing the digest as simple HTML (category headings, linked items, one-sentence summaries). The channel retains the 12 most recent digests.
+Digest contract (consumed by Power Automate): `docs/digest.xml` is valid RSS 2.0. Exactly one new `<item>` is added per weekly digest, with a stable guid of the form `aua-ai-digest-<year>-W<week>`, a title like "AUA AI Hub Digest: Week of <date>", and a description containing the digest as simple HTML: an opening "The week in brief" narrative when one was generated (see section 12), then category headings, linked items, and one-sentence summaries. The channel retains the 12 most recent digests.
 
 ## 9. LLM curation (Phase 3)
 
@@ -389,7 +389,7 @@ All phases:
 - Trust contract: the model sees a numbered list of the page's items (forum/community sources excluded via `exclude_domains`; they stay on the page but are never cited in the brief) and may reference only those numbers; the pipeline validates every reference, link-ifies them to the exact item URLs, enforces word and reference-count bounds, and applies a dash policy (word-joining dashes become hyphens, others become commas). Any failure keeps the stored brief.
 - Briefs live in the ledger (`section_briefs`) keyed by a hash of the eligible item URLs, so a brief regenerates only when its page's item set changes; pages render whatever the ledger holds, including in keyword mode. Owner accepted the prose register after reviewing live samples: informative orientation, consistent with the no-hype rule, explicitly not marketing copy.
 - Per-task provider wiring shipped 2026-06-11 (owner spend plan, ANTHROPIC_API_KEY secret in place with prepaid credits, auto-reload off, and a workspace monthly limit): the feeds.yaml `llm.tasks` block assigns curation and weekly digest selection to claude-haiku-4-5 and the digest narrative to claude-opus-4-8, with section briefs staying on free gpt-4.1; every Anthropic task falls back to the free GitHub path, then keyword mode, when the key is absent or a call fails. Verified live in CI: curation mode reports `llm (anthropic, claude-haiku-4-5)`.
-- Still to build: the digest narrative itself (one cohesive weekly story on claude-opus-4-8, ~13 cents/run, with capped article-content extraction and usage/cost logging in the verification block; videos and podcasts contribute at title-plus-description level).
+- Digest narrative shipped 2026-06-12: each weekly digest opens with "The week in brief", one cohesive 120-260 word story over the digest highlights, written by the `llm.tasks` digest_narrative model (claude-opus-4-8) with instructions in prompts/digest_narrative.md (owner-tunable). News items are grounded in fetched article text, capped per item and in total via the feeds.yaml `digest.narrative` block; pages that block scripted clients fall back to stored summaries; videos and podcasts contribute at title-plus-description level. Same trust contract as the section briefs (validated numbered links, word/reference bounds, dash policy), with one stricter rule: on any failure the narrative is omitted, never retried on a weaker model. Skipped on dry runs because the call is paid. The verification block logs words, linked references, articles fetched, token usage, and an estimated cost from list prices in feeds.yaml. First live run (W24 regeneration after the Wednesday seed run was reset): 257 words, 5 linked references, 6 of 8 articles fetched, ~$0.05.
 
 ### Visual conventions
 

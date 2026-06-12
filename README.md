@@ -110,7 +110,12 @@ issue, check each proposal against its linked source, edit
 **Tune the weekly digest** — the send day and per-type budgets live in the
 `digest:` block of `feeds.yaml`; the highlight-selection instructions live in
 `prompts/digest.md`. The digest fires on the configured day's nightly run,
-one per ISO week.
+one per ISO week. The opening narrative ("The week in brief") is written by
+the paid `digest_narrative` model in the `llm.tasks` block; its instructions
+live in `prompts/digest_narrative.md` and its length, reference, and
+article-extraction caps in the `digest.narrative` block. It is omitted,
+never downgraded, when the Anthropic path is unavailable, and skipped on
+dry runs because the call is paid.
 
 **Tune the section briefs** — the writing instructions live in
 `prompts/section_brief.md`; the model and excluded source domains live in
