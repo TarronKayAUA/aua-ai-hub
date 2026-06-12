@@ -10,7 +10,26 @@ Recent videos from a curated set of channels covering artificial intelligence de
 
 Cards link to YouTube; nothing plays on this site.
 
+## Medical AI
+
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9K9TR1GVec0" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/9K9TR1GVec0/hqdefault.jpg" alt="Video: IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks" loading="lazy">
+  <span class="video-card-title">IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks</span>
+  <span class="video-card-meta">Stanford AIMI, April 25, 2026</span>
+  <span class="video-card-desc">Susan Shelmerdine argues that successful healthcare artificial intelligence requires organizational and system changes beyond isolated task automation.</span>
+</a>
+</div>
+
+## General AI
+
+<div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=-Jm-Bf3g9r8" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/-Jm-Bf3g9r8/hqdefault.jpg" alt="Video: How Preply combines AI and human tutors to personalize learning" loading="lazy">
+  <span class="video-card-title">How Preply combines AI and human tutors to personalize learning</span>
+  <span class="video-card-meta">OpenAI, June 12, 2026</span>
+  <span class="video-card-desc">Preply integrates language models with human tutors to personalize learning experiences on its platform.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=bhgYFRZLyKI" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/bhgYFRZLyKI/hqdefault.jpg" alt="Video: Debug web apps with browser use in Codex" loading="lazy">
   <span class="video-card-title">Debug web apps with browser use in Codex</span>
@@ -84,3 +103,4 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-desc">An assessment of the MiniMax M3 open-source AI model highlights its performance benefits and cost efficiency compared to other models like Claude Opus 4.7.</span>
 </a>
 </div>
+

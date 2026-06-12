@@ -63,6 +63,20 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42276882?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0">Revolutionizing radiology education: exploring and implementing spaced repetition in radiology teaching and curricula</a>
+    <p class="news-card-summary">Study evaluates spaced repetition techniques, including Anki platforms, as scalable adjuncts to traditional radiology education and curriculum design.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42276635?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0">Preparing the nursing workforce for the health AI era: Insights from the Macy Foundation Conference on AI in Medical Education</a>
+    <p class="news-card-summary">Macy Foundation conference proceedings address curriculum and workforce preparation for integrating artificial intelligence into nursing education and clinical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.11208">BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts</a>
     <p class="news-card-summary">BioDivergence proposes a benchmark and evaluation framework to detect hidden contextual contradictions in biomedical abstracts, improving reliability of biomedical literature interpretation.</p>
@@ -108,20 +122,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267893?fc=20260609215449&amp;ff=20260610121559&amp;v=2.20.0">Integrating Artificial Intelligence-Based Simulation into Serious Illness Conversation Training: A Pilot Medical Student Intervention</a>
     <p class="news-card-summary">A pilot study tested artificial intelligence-based simulation as a training tool for medical students to practice serious illness conversations.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42270292?fc=20260609215449&amp;ff=20260611061658&amp;v=2.20.0">Exploring the capabilities of three artificial intelligence chatbots in diagnosis and decision-making of age-related macular degeneration</a>
-    <p class="news-card-summary">Research evaluates three artificial intelligence chatbots in diagnosing and decision-making for age-related macular degeneration, showing strong capabilities in clinical tasks.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42269942?fc=20260609215449&amp;ff=20260611061658&amp;v=2.20.0">Artificial intelligence and medical retina training: A scoping review of educational opportunities, emerging risks, and curricular responses</a>
-    <p class="news-card-summary">This scoping review discusses educational opportunities, risks, and needed curriculum changes related to autonomous artificial intelligence in medical retina training.</p>
   </div>
 </div>
 </div>

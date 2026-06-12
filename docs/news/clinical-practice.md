@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Clinical decision support is advancing through graph neural network autoencoders that forecast interventions and stratify risk for intensive care unit patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[4]</a>, alongside real-time deep learning models that predict inpatient hypoglycemia events to enhance care responsiveness <a href="https://www.nature.com/articles/s41746-026-02874-1">[10]</a>. Progress is also evident in screening technologies, as a machine learning model leveraging voice spectrogram and speech recognition features was created for early detection of Parkinson disease based on vocal markers <a href="https://medinform.jmir.org/2026/1/e94063">[3]</a>. Embeddings of clinical codes are further enabling knowledge-grounded artificial intelligence applications, offering improved clinical insights in medical practice <a href="https://www.nature.com/articles/s41746-026-02664-9">[5]</a>. Wearable accelerometry data have shown utility in predicting physical frailty and concern about falling, indicating broader opportunities for remote patient monitoring <a href="https://www.nature.com/articles/s41746-026-02863-4">[11]</a>.</p>
-<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the items below.</p>
+<p>General-purpose large language models have demonstrated performance on medical benchmarks that matches or exceeds specialized clinical artificial intelligence tools, suggesting potential for broad clinical integration <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. Separately, large language models were evaluated for their ability to generate topic-aware summaries of adults&#x27; lived health care experiences, reflecting their relevance in patient-centered applications <a href="https://medinform.jmir.org/2026/1/e85960">[3]</a>. Machine learning and deep learning approaches have been utilized to predict clinical events and screen for conditions, such as using resting electrocardiograms to forecast low peak oxygen consumption <a href="https://medinform.jmir.org/2026/1/e81105">[4]</a> and voice-based techniques to identify early vocal impairments in Parkinson disease screening <a href="https://medinform.jmir.org/2026/1/e94063">[5]</a>. Additionally, real-time models are being prospectively evaluated for predicting inpatient hypoglycemia, highlighting advancements in AI-driven clinical risk assessment <a href="https://www.nature.com/articles/s41746-026-02874-1">[12]</a>.</p>
+<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02795-z">A new AI assisted approach aligns data standards and accelerates interoperability in biomedical research</a>
+    <p class="news-card-summary">npj Digital Medicine describes an artificial intelligence approach to align data standards and improve interoperability in biomedical research.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04431-5">General-purpose large language models outperform specialized clinical AI tools on medical benchmarks</a>
+    <p class="news-card-summary">Nature Medicine reports that general-purpose large language models match or exceed specialized clinical AI tools on medical benchmarks in independent evaluation.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
@@ -113,21 +127,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">This study analyzed microglia activities at a critical progression point in Alzheimer’s disease to better understand its pathology.</p>
   </div>
   <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04409-3/MediaObjects/41591_2026_4409_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80930">Machine Learning for Intraoperative Bleeding Prediction in Patients Undergoing Surgery: Scoping Review</a>
-    <p class="news-card-summary">A scoping review examines machine learning methods for predicting intraoperative bleeding to improve surgical safety and patient outcomes.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/129accca82ab8904f93fa53899477af5.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81644">Understanding Transformer-Based Classifications of Medical Text Using a Large Language Model for the Attribution of Feature Importance: Proof-of-Concept Algorithm Development and Validation Study</a>
-    <p class="news-card-summary">This study investigates transformer-based deep learning models for classifying medical text and explores feature importance attribution using a large language model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/1cde701310306d1d4e6eb3a8765adf4c.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

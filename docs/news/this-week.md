@@ -61,6 +61,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42276882?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0">Revolutionizing radiology education: exploring and implementing spaced repetition in radiology teaching and curricula</a>
+    <p class="news-card-summary">Study evaluates spaced repetition techniques, including Anki platforms, as scalable adjuncts to traditional radiology education and curriculum design.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42276635?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0">Preparing the nursing workforce for the health AI era: Insights from the Macy Foundation Conference on AI in Medical Education</a>
+    <p class="news-card-summary">Macy Foundation conference proceedings address curriculum and workforce preparation for integrating artificial intelligence into nursing education and clinical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.11208">BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts</a>
     <p class="news-card-summary">BioDivergence proposes a benchmark and evaluation framework to detect hidden contextual contradictions in biomedical abstracts, improving reliability of biomedical literature interpretation.</p>
@@ -261,11 +275,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Clinical decision support is advancing through graph neural network autoencoders that forecast interventions and stratify risk for intensive care unit patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[4]</a>, alongside real-time deep learning models that predict inpatient hypoglycemia events to enhance care responsiveness <a href="https://www.nature.com/articles/s41746-026-02874-1">[10]</a>. Progress is also evident in screening technologies, as a machine learning model leveraging voice spectrogram and speech recognition features was created for early detection of Parkinson disease based on vocal markers <a href="https://medinform.jmir.org/2026/1/e94063">[3]</a>. Embeddings of clinical codes are further enabling knowledge-grounded artificial intelligence applications, offering improved clinical insights in medical practice <a href="https://www.nature.com/articles/s41746-026-02664-9">[5]</a>. Wearable accelerometry data have shown utility in predicting physical frailty and concern about falling, indicating broader opportunities for remote patient monitoring <a href="https://www.nature.com/articles/s41746-026-02863-4">[11]</a>.</p>
-<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the source items.</p>
+<p>General-purpose large language models have demonstrated performance on medical benchmarks that matches or exceeds specialized clinical artificial intelligence tools, suggesting potential for broad clinical integration <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. Separately, large language models were evaluated for their ability to generate topic-aware summaries of adults&#x27; lived health care experiences, reflecting their relevance in patient-centered applications <a href="https://medinform.jmir.org/2026/1/e85960">[3]</a>. Machine learning and deep learning approaches have been utilized to predict clinical events and screen for conditions, such as using resting electrocardiograms to forecast low peak oxygen consumption <a href="https://medinform.jmir.org/2026/1/e81105">[4]</a> and voice-based techniques to identify early vocal impairments in Parkinson disease screening <a href="https://medinform.jmir.org/2026/1/e94063">[5]</a>. Additionally, real-time models are being prospectively evaluated for predicting inpatient hypoglycemia, highlighting advancements in AI-driven clinical risk assessment <a href="https://www.nature.com/articles/s41746-026-02874-1">[12]</a>.</p>
+<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02795-z">A new AI assisted approach aligns data standards and accelerates interoperability in biomedical research</a>
+    <p class="news-card-summary">npj Digital Medicine describes an artificial intelligence approach to align data standards and improve interoperability in biomedical research.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04431-5">General-purpose large language models outperform specialized clinical AI tools on medical benchmarks</a>
+    <p class="news-card-summary">Nature Medicine reports that general-purpose large language models match or exceed specialized clinical AI tools on medical benchmarks in independent evaluation.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
@@ -549,11 +577,39 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI&#x27;s frontier models and Codex are now accessible on Amazon Web Services, making leading large language model products more widely available for clinical AI integration and research <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[6]</a>. A new benchmark study measures how well large language models extract safety data from structured sources, supporting more rigorous evaluation of AI tools for safety-sensitive medical applications <a href="https://arxiv.org/abs/2606.11204">[1]</a>. Energy-efficient, on-device retrieval-augmented generation is advancing on mobile neural processing units, which could enable secure and practical medical AI deployments in clinical settings <a href="https://arxiv.org/abs/2606.11257">[2]</a>. Analysis of Anthropic&#x27;s model naming conventions sheds light on upcoming developments in language models, helping educators track progress relevant to medical AI <a href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the source items.</p>
+<p>SafeLLM introduces extraction as an alternative to rewriting for safety-critical medical applications, aiming to reduce hallucinations and improve the reliability of language model outputs <a href="https://arxiv.org/abs/2606.12897">[4]</a>. Complementing this concern for safety, new benchmarking of large language models evaluates their effectiveness at extracting safety data from structured clinical sources, an important step toward practical AI safety assessments <a href="https://arxiv.org/abs/2606.11204">[5]</a>. Meanwhile, cost-effective fine-tuning of small language models shows promise for biomedical claim verification, including stronger generalization across domains <a href="https://arxiv.org/abs/2606.12854">[3]</a>. The energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units further expands options for deploying AI in resource-constrained medical settings <a href="https://arxiv.org/abs/2606.11257">[6]</a>.</p>
+<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12569">EDEN: A Large-Scale Corpus of Clinical Notes for Italian</a>
+    <p class="news-card-summary">EDEN is a large-scale Italian clinical notes corpus for training and evaluating language models on emergency department data.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12578">MARD: Mirror-Augmented Reasoning Distillation for Mechanism-Level Drug-Drug Interaction Prediction</a>
+    <p class="news-card-summary">MARD applies reasoning distillation to predict mechanism-level drug-drug interactions, combining machine learning with pharmacological reasoning.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12854">Small LLMs for Biomedical Claim Verification: Cost-Effective Fine-Tuning, Structural Dataset Shortcuts, and Cross-Domain Generalization</a>
+    <p class="news-card-summary">Study demonstrates cost-effective fine-tuning of small language models for biomedical claim verification with improved cross-domain generalization.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12897">SafeLLM: Extraction as a Hallucination-Resistant Alternative to Rewriting in Safety-Critical Settings</a>
+    <p class="news-card-summary">SafeLLM proposes extraction rather than rewriting to reduce hallucinations and improve reliability of language models in safety-critical medical applications.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
@@ -633,6 +689,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=-Jm-Bf3g9r8" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/-Jm-Bf3g9r8/hqdefault.jpg" alt="Video: How Preply combines AI and human tutors to personalize learning" loading="lazy">
+  <span class="video-card-title">How Preply combines AI and human tutors to personalize learning</span>
+  <span class="video-card-meta">OpenAI, June 12, 2026</span>
+  <span class="video-card-desc">Preply integrates language models with human tutors to personalize learning experiences on its platform.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=bhgYFRZLyKI" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/bhgYFRZLyKI/hqdefault.jpg" alt="Video: Debug web apps with browser use in Codex" loading="lazy">
   <span class="video-card-title">Debug web apps with browser use in Codex</span>
@@ -704,6 +766,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">MiniMax M3 IS INSANE! BEST Opensource AI Model! Beats Opus 4.7 and 50x Cheaper! (Fully Tested)</span>
   <span class="video-card-meta">WorldofAI, June 1, 2026</span>
   <span class="video-card-desc">An assessment of the MiniMax M3 open-source AI model highlights its performance benefits and cost efficiency compared to other models like Claude Opus 4.7.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=9K9TR1GVec0" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/9K9TR1GVec0/hqdefault.jpg" alt="Video: IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks" loading="lazy">
+  <span class="video-card-title">IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks</span>
+  <span class="video-card-meta">Stanford AIMI, April 25, 2026</span>
+  <span class="video-card-desc">Susan Shelmerdine argues that successful healthcare artificial intelligence requires organizational and system changes beyond isolated task automation.</span>
 </a>
 </div>
 

@@ -13,11 +13,39 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI&#x27;s frontier models and Codex are now accessible on Amazon Web Services, making leading large language model products more widely available for clinical AI integration and research <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[6]</a>. A new benchmark study measures how well large language models extract safety data from structured sources, supporting more rigorous evaluation of AI tools for safety-sensitive medical applications <a href="https://arxiv.org/abs/2606.11204">[1]</a>. Energy-efficient, on-device retrieval-augmented generation is advancing on mobile neural processing units, which could enable secure and practical medical AI deployments in clinical settings <a href="https://arxiv.org/abs/2606.11257">[2]</a>. Analysis of Anthropic&#x27;s model naming conventions sheds light on upcoming developments in language models, helping educators track progress relevant to medical AI <a href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the items below.</p>
+<p>SafeLLM introduces extraction as an alternative to rewriting for safety-critical medical applications, aiming to reduce hallucinations and improve the reliability of language model outputs <a href="https://arxiv.org/abs/2606.12897">[4]</a>. Complementing this concern for safety, new benchmarking of large language models evaluates their effectiveness at extracting safety data from structured clinical sources, an important step toward practical AI safety assessments <a href="https://arxiv.org/abs/2606.11204">[5]</a>. Meanwhile, cost-effective fine-tuning of small language models shows promise for biomedical claim verification, including stronger generalization across domains <a href="https://arxiv.org/abs/2606.12854">[3]</a>. The energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units further expands options for deploying AI in resource-constrained medical settings <a href="https://arxiv.org/abs/2606.11257">[6]</a>.</p>
+<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12569">EDEN: A Large-Scale Corpus of Clinical Notes for Italian</a>
+    <p class="news-card-summary">EDEN is a large-scale Italian clinical notes corpus for training and evaluating language models on emergency department data.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12578">MARD: Mirror-Augmented Reasoning Distillation for Mechanism-Level Drug-Drug Interaction Prediction</a>
+    <p class="news-card-summary">MARD applies reasoning distillation to predict mechanism-level drug-drug interactions, combining machine learning with pharmacological reasoning.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12854">Small LLMs for Biomedical Claim Verification: Cost-Effective Fine-Tuning, Structural Dataset Shortcuts, and Cross-Domain Generalization</a>
+    <p class="news-card-summary">Study demonstrates cost-effective fine-tuning of small language models for biomedical claim verification with improved cross-domain generalization.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.12897">SafeLLM: Extraction as a Hallucination-Resistant Alternative to Rewriting in Safety-Critical Settings</a>
+    <p class="news-card-summary">SafeLLM proposes extraction rather than rewriting to reduce hallucinations and improve reliability of language models in safety-critical medical applications.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
