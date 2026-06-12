@@ -52,6 +52,7 @@ LATEST_INCLUDE = REPO / "includes" / "latest.md"
 DIGEST_PATH = REPO / "docs" / "digest.xml"
 CURATOR_PROMPT_PATH = REPO / "prompts" / "curator.md"
 DIGEST_PROMPT_PATH = REPO / "prompts" / "digest.md"
+DIGEST_NARRATIVE_PROMPT_PATH = REPO / "prompts" / "digest_narrative.md"
 SECTION_BRIEF_PROMPT_PATH = REPO / "prompts" / "section_brief.md"
 WEEKDAYS = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3,
             "friday": 4, "saturday": 5, "sunday": 6}
@@ -939,6 +940,11 @@ def post_process_summary(text: str, fallback: str, word_cap: int) -> str:
     return text
 
 
+# Token usage from the most recent Anthropic call, for the cost line on
+# paid tasks (the pipeline is single-threaded, so one slot is enough).
+LAST_ANTHROPIC_USAGE: dict = {}
+
+
 def call_anthropic(system: str, user: str, cfg: dict, timeout: int) -> str:
     resp = requests.post(
         cfg["endpoint"],
@@ -956,8 +962,11 @@ def call_anthropic(system: str, user: str, cfg: dict, timeout: int) -> str:
         timeout=timeout,
     )
     resp.raise_for_status()
-    blocks = resp.json()["content"]
-    return "".join(b["text"] for b in blocks if b.get("type") == "text")
+    data = resp.json()
+    LAST_ANTHROPIC_USAGE.clear()
+    LAST_ANTHROPIC_USAGE.update(data.get("usage") or {})
+    return "".join(
+        b["text"] for b in data["content"] if b.get("type") == "text")
 
 
 def call_github_models(system: str, user: str, cfg: dict, timeout: int) -> str:
@@ -1506,6 +1515,130 @@ def _pack_candidates_records(records: list[dict], budget: int):
     return by_id, json.dumps({"candidates": entries}, ensure_ascii=False)
 
 
+def fetch_article_extract(url: str, char_cap: int, timeout: int = 12) -> str:
+    """Best-effort article text for grounding the digest narrative. Strips
+    obvious non-content blocks and prefers an article/main element when one
+    exists. Callers treat any failure or thin result as 'use the stored
+    summary'; sources that block scripted clients (PubMed, per CLAUDE.md)
+    simply fall back."""
+    resp = requests.get(url, headers={"User-Agent": USER_AGENT},
+                        timeout=timeout)
+    resp.raise_for_status()
+    page = re.sub(
+        r"(?is)<(script|style|nav|header|footer|aside|form)[^>]*>.*?</\1>",
+        " ", resp.text)
+    main = re.search(r"(?is)<(article|main)\b[^>]*>(.*)</\1>", page)
+    if main:
+        page = main.group(2)
+    return strip_html(page)[:char_cap]
+
+
+def generate_digest_narrative(highlights: list[dict], window_label: str,
+                              config: dict, dry_run: bool, verbose: bool):
+    """One cohesive story of the week, written over the digest highlights by
+    the llm.tasks digest_narrative model and grounded in fetched article
+    text (capped per item and in total). Returns (paragraphs, status):
+    paragraphs is a list of HTML strings with [n] references linked to the
+    highlighted items, or None when no narrative is available. The digest
+    renders fine without one, so every failure path omits rather than
+    retrying on a weaker model."""
+    ncfg = config.get("digest", {}).get("narrative")
+    if not ncfg:
+        return None, "not configured"
+    if dry_run:
+        return None, "skipped (dry run: the narrative call is paid)"
+    provider, call, cfg = resolve_task_llm(config, "digest_narrative")
+    if provider != "anthropic":
+        return None, "skipped (anthropic unavailable)"
+
+    article_chars = int(ncfg.get("article_chars", 4000))
+    budget = int(ncfg.get("max_payload_chars", 60000))
+    news_total = sum(1 for r in highlights
+                     if r.get("category") not in ("videos", "podcasts"))
+    blocks, used, fetched = [], 0, 0
+    for i, record in enumerate(highlights, 1):
+        kind = ("video" if record.get("category") == "videos"
+                else "podcast episode"
+                if record.get("category") == "podcasts" else "news")
+        head = (f"{i}. [{kind}] {record['title']} "
+                f"({record.get('source', '?')}, "
+                f"{fmt_date(datetime.fromisoformat(record['published']))})")
+        body = record.get("summary", "")
+        if kind == "news" and used + len(head) < budget:
+            try:
+                extract = fetch_article_extract(record["url"], article_chars)
+                if len(extract) > len(body):
+                    body = extract
+                    fetched += 1
+            except requests.RequestException as exc:
+                if verbose:
+                    print(f"  narrative extract [{i}] failed "
+                          f"({type(exc).__name__}); using stored summary")
+        # Every item keeps its header so the numbering the model sees
+        # matches the page; only bodies are trimmed to the budget.
+        body = body[:max(0, min(article_chars, budget - used - len(head)))]
+        used += len(head) + len(body)
+        blocks.append(head + ("\n" + body if body else ""))
+
+    template = DIGEST_NARRATIVE_PROMPT_PATH.read_text(encoding="utf-8")
+    timeout = config["llm"].get("request_timeout_seconds", 90)
+    try:
+        raw = call("Follow the instructions in the message exactly.",
+                   template.format(window=window_label,
+                                   items="\n\n".join(blocks)),
+                   cfg, timeout)
+    except (requests.RequestException, KeyError) as exc:
+        if verbose:
+            print(f"  narrative call failed: {type(exc).__name__}: {exc}")
+        return None, f"failed ({type(exc).__name__})"
+
+    paragraphs = [_brief_sanitize(p)
+                  for p in re.split(r"\n\s*\n", raw.strip()) if p.strip()]
+    text = " ".join(paragraphs)
+    refs = [int(n) for n in re.findall(r"\[(\d+)\]", text)]
+    words = len(re.sub(r"\[\d+\]", "", text).split())
+    try:
+        if len(set(refs)) < int(ncfg.get("min_refs", 5)):
+            raise ValueError(f"only {len(set(refs))} distinct references")
+        if len(refs) > 25:
+            raise ValueError(f"{len(refs)} references is too many")
+        if any(not 1 <= n <= len(highlights) for n in refs):
+            raise ValueError("references a nonexistent item")
+        if not (int(ncfg.get("min_words", 120)) <= words
+                <= int(ncfg.get("max_words", 260))):
+            raise ValueError(f"word count {words} out of range")
+        if not 1 <= len(paragraphs) <= 4:
+            raise ValueError(f"{len(paragraphs)} paragraphs")
+    except ValueError as exc:
+        if verbose:
+            print(f"  narrative rejected: {exc}")
+        return None, f"rejected ({exc})"
+
+    linked = [
+        re.sub(
+            r"\[(\d+)\]",
+            lambda m: (
+                f'<a href="'
+                f'{html.escape(highlights[int(m.group(1)) - 1]["url"])}">'
+                f"[{m.group(1)}]</a>"),
+            html.escape(p),
+        )
+        for p in paragraphs
+    ]
+    tokens_in = LAST_ANTHROPIC_USAGE.get("input_tokens", 0)
+    tokens_out = LAST_ANTHROPIC_USAGE.get("output_tokens", 0)
+    spec = config["llm"].get("tasks", {}).get("digest_narrative", {})
+    cost = ""
+    if spec.get("usd_per_m_input") is not None:
+        usd = (tokens_in * float(spec["usd_per_m_input"])
+               + tokens_out * float(spec.get("usd_per_m_output", 0))) / 1e6
+        cost = f", ~${usd:.3f}"
+    return linked, (
+        f"written ({words} words, {len(set(refs))} linked refs, "
+        f"{fetched} of {news_total} articles fetched, {cfg['model']}, "
+        f"{tokens_in}+{tokens_out} tokens{cost})")
+
+
 def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                      podcasts: list[dict],
                      briefs: dict | None = None) -> str:
@@ -1557,7 +1690,8 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
 
 def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
                           media_sections: dict, conf_updates: list[dict],
-                          also: list[dict], window_label: str) -> str:
+                          also: list[dict], window_label: str,
+                          narrative: list[str] | None = None) -> str:
     """Stable weekly digest page: the email's highlights plus a link list of
     everything else kept in the same window."""
     lines = [
@@ -1569,6 +1703,15 @@ def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
         + selection_note("../../"),
         "",
     ]
+    if narrative:
+        lines.extend(["## The week in brief", ""])
+        lines.append('<div class="section-brief">')
+        lines.extend(f"<p>{p}</p>" for p in narrative)
+        lines.append('<p class="section-brief-date">Written from the items '
+                     "highlighted below; numbered links go to the sources."
+                     "</p>")
+        lines.append("</div>")
+        lines.append("")
     if conf_updates:
         lines.extend(["## Conference calendar updates", ""])
         for u in conf_updates:
@@ -2017,6 +2160,7 @@ def main() -> int:
     iso = now.isocalendar()
     week_key = f"{iso.year}-W{iso.week:02d}"
     digest_status = f"not due (fires {digest_cfg.get('day', 'friday')})"
+    narrative_status = "n/a (no digest this run)"
     if now.weekday() == digest_day and week_key != ledger["last_digest_week"]:
         window_floor = (now - timedelta(days=14)).isoformat()
         window_start = max(
@@ -2057,6 +2201,13 @@ def main() -> int:
             f"{fmt_date(datetime.fromisoformat(window_start))} and "
             f"{fmt_date(now)}"
         )
+        narrative, narrative_status = generate_digest_narrative(
+            news_high + video_high + podcast_high, window_label, config,
+            args.dry_run, args.verbose)
+        narrative_html = (
+            "<h3>The week in brief</h3>"
+            + "".join(f"<p>{p}</p>" for p in narrative)
+        ) if narrative else ""
         archive_name = f"{iso.year}-w{iso.week:02d}"
         digest_entry = {
             "guid": f"aua-ai-digest-{archive_name.replace('-w', '-W')}",
@@ -2064,12 +2215,13 @@ def main() -> int:
             f"{(now.date() - timedelta(days=now.weekday())).strftime('%B %d, %Y').replace(' 0', ' ')}",
             "link": read_site_url() + f"news/archive/{archive_name}/",
             "pub_date": format_datetime(now),
-            "description": digest_description_html(
+            "description": narrative_html + digest_description_html(
                 categories, news_by_cat, media_sections, conf_updates),
         }
         archive_md = render_digest_archive(
             f"Week {iso.week}, {iso.year}", categories, news_by_cat,
-            media_sections, conf_updates, also, window_label)
+            media_sections, conf_updates, also, window_label,
+            narrative=narrative)
         write(ARCHIVE_DIR / f"{archive_name}.md", archive_md,
               len(highlight_ids))
         if not args.dry_run:
@@ -2165,6 +2317,7 @@ def main() -> int:
     print(f"committee updates: {committee_status}")
     print(f"ledger pruned    : {pruned} entries older than {LEDGER_DAYS} days")
     print(f"weekly digest    : {digest_status}")
+    print(f"digest narrative : {narrative_status}")
     if args.dry_run:
         print("files written    : none (dry run)")
     else:

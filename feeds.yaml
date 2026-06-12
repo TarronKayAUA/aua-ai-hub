@@ -51,6 +51,10 @@ llm:
     digest_narrative:
       provider: anthropic
       model: claude-opus-4-8
+      # List prices for the cost line in the verification block (USD per
+      # million tokens, verified against Anthropic pricing 2026-06-11).
+      usd_per_m_input: 5
+      usd_per_m_output: 25
   # Section briefs: one short narrative per news category page, regenerated
   # only when that page's item set changes. Three small calls at most per
   # night, so they ride the strongest free GitHub Models entry (high tier,
@@ -155,6 +159,19 @@ digest:
   news_items: 8
   videos: 4
   podcasts: 3
+  # Weekly narrative: one cohesive story over the digest highlights, written
+  # by the llm.tasks digest_narrative model (the strongest paid model in the
+  # owner's spend plan). Grounded in fetched article text, capped per item
+  # and in total; pages that block scripted clients fall back to the stored
+  # summaries. The narrative is omitted, never downgraded to a weaker model,
+  # when the Anthropic path is unavailable or the output fails validation.
+  # Writing instructions live in prompts/digest_narrative.md.
+  narrative:
+    article_chars: 4000
+    max_payload_chars: 60000
+    min_words: 120
+    max_words: 260
+    min_refs: 5
 
 # Benchmarks page data source. The pipeline discovers the current LiveBench
 # release from the site's app bundle each night; if discovery or the fetch
