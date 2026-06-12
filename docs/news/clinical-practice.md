@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>General-purpose large language models have matched or outperformed specialized clinical artificial intelligence tools on medical benchmarks, signaling a shift in how AI may be used in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. A multi-site study is also investigating the impact of virtual nursing on thirty-day patient readmission rates, offering data to inform care transitions and hospital policy <a href="https://www.nature.com/articles/s41746-026-02881-2">[3]</a>. For critical care, the FIRST-ICU model leverages graph neural network autoencoders to forecast interventions and stratify risk among intensive care patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[7]</a>. Additionally, a real-time deep learning model designed for inpatient hypoglycemia prediction was prospectively evaluated, supporting clinical decision making in diabetes management <a href="https://www.nature.com/articles/s41746-026-02874-1">[13]</a>.</p>
+<p>General-purpose large language models are demonstrating strong performance against specialized clinical artificial intelligence tools on medical benchmarks, suggesting a shift toward broader applicability in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. Integration of autonomous AI agents in emergency department decision support is advancing with designs that combine knowledge and data for improved clinical outcomes <a href="https://www.nature.com/articles/s41746-026-02869-y">[4]</a>. Studies are examining the impact of virtual nursing on patient readmission rates, highlighting new models of care delivery <a href="https://www.nature.com/articles/s41746-026-02881-2">[3]</a>. Deep learning is also being prospectively evaluated for real-time hypoglycemia prediction during inpatient stays, providing opportunities for earlier intervention <a href="https://www.nature.com/articles/s41746-026-02874-1">[14]</a>. The alignment of data standards using artificial intelligence is accelerating interoperability in biomedical research, which may enhance clinical information exchange <a href="https://www.nature.com/articles/s41746-026-02795-z">[1]</a>.</p>
 <p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -37,6 +37,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02881-2">Virtual nursing implementation and 30-day patient readmissions: a multi-site study</a>
     <p class="news-card-summary">Multi-site study examines effects of virtual nursing implementation on 30-day patient readmission rates.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02869-y">An autonomous AI agent for knowledge and data cooperation in ED clinical decision support</a>
+    <p class="news-card-summary">Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.</p>
   </div>
 </div>
 <div class="news-card">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02863-4">Daily activity patterns from wearable accelerometry predict physical frailty and concern about falling</a>
     <p class="news-card-summary">Daily activity patterns measured by wearable accelerometers were found predictive of physical frailty and concern about falling.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02870-5">An ultrasound foundation model for the stratification of vision impairment and eye cancer risk</a>
-    <p class="news-card-summary">An ultrasound foundation model was developed to stratify risk for vision impairment and eye cancer.</p>
   </div>
 </div>
 </div>

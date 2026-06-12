@@ -3857,6 +3857,24 @@
    "title_hash": "8a80152a8c05fd487300f66b906f8dbc",
    "first_seen": "2026-06-12T17:16:28.331101+00:00",
    "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/130-billion-in-data-center-projects-blocked-by-protests-so-far-this-year",
+   "title_hash": "ce899b267113987d3ba02bf52a626dd2",
+   "first_seen": "2026-06-12T17:26:01.984852+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02869-y",
+   "title_hash": "41bf529fb211830b9dc45c8d2e35ac9f",
+   "first_seen": "2026-06-12T17:26:01.984852+00:00",
+   "kept": true,
+   "title": "An autonomous AI agent for knowledge and data cooperation in ED clinical decision support",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-12T00:00:00+00:00",
+   "summary": "Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.",
+   "category": "clinical_practice",
+   "score": 3.0
   }
  ],
  "digests": [
@@ -3956,8 +3974,8 @@
    "date": "June 12, 2026"
   },
   "clinical_practice": {
-   "text": "General-purpose large language models have matched or outperformed specialized clinical artificial intelligence tools on medical benchmarks, signaling a shift in how AI may be used in clinical practice <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[2]</a>. A multi-site study is also investigating the impact of virtual nursing on thirty-day patient readmission rates, offering data to inform care transitions and hospital policy <a href=\"https://www.nature.com/articles/s41746-026-02881-2\">[3]</a>. For critical care, the FIRST-ICU model leverages graph neural network autoencoders to forecast interventions and stratify risk among intensive care patients <a href=\"https://www.nature.com/articles/s41746-026-02890-1\">[7]</a>. Additionally, a real-time deep learning model designed for inpatient hypoglycemia prediction was prospectively evaluated, supporting clinical decision making in diabetes management <a href=\"https://www.nature.com/articles/s41746-026-02874-1\">[13]</a>.",
-   "hash": "9b33f64ba033eda8",
+   "text": "General-purpose large language models are demonstrating strong performance against specialized clinical artificial intelligence tools on medical benchmarks, suggesting a shift toward broader applicability in clinical practice <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[2]</a>. Integration of autonomous AI agents in emergency department decision support is advancing with designs that combine knowledge and data for improved clinical outcomes <a href=\"https://www.nature.com/articles/s41746-026-02869-y\">[4]</a>. Studies are examining the impact of virtual nursing on patient readmission rates, highlighting new models of care delivery <a href=\"https://www.nature.com/articles/s41746-026-02881-2\">[3]</a>. Deep learning is also being prospectively evaluated for real-time hypoglycemia prediction during inpatient stays, providing opportunities for earlier intervention <a href=\"https://www.nature.com/articles/s41746-026-02874-1\">[14]</a>. The alignment of data standards using artificial intelligence is accelerating interoperability in biomedical research, which may enhance clinical information exchange <a href=\"https://www.nature.com/articles/s41746-026-02795-z\">[1]</a>.",
+   "hash": "b23af8a39e0c3625",
    "date": "June 12, 2026"
   },
   "general_ai": {
