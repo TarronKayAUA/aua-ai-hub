@@ -5,6 +5,10 @@
 # These are model families, not hosted services, so entries carry a license
 # instead of a cost and governance badge. Blurbs may name current flagship
 # releases; refresh them (and last_reviewed) when a family moves on.
+#
+# modality: language (default when absent) | image | video | audio.
+# The section renders one subsection per modality. License names follow the
+# Hugging Face model card license tag, verified at authoring.
 
 - name: gpt-oss
   vendor: OpenAI
@@ -54,3 +58,81 @@
   license: Apache 2.0
   last_reviewed: 2026-06-10
   blurb: French lab Mistral's open-weight range, from the small Ministral models to Mistral Large 3, with most flagship releases under Apache 2.0.
+
+# --- Image generation (owner approved 2026-06-12) ---------------------------
+
+- name: FLUX.1
+  vendor: Black Forest Labs
+  url: https://huggingface.co/black-forest-labs/FLUX.1-dev
+  license: Non-commercial (dev)
+  modality: image
+  last_reviewed: 2026-06-12
+  blurb: The most capable open-weight image family. The dev variant is licensed for non-commercial use; the faster schnell variant is Apache 2.0. Runs locally in ComfyUI.
+
+- name: Stable Diffusion 3.5
+  vendor: Stability AI
+  url: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
+  license: Community License
+  modality: image
+  last_reviewed: 2026-06-12
+  blurb: The widely supported image generation line with the largest ecosystem of community fine-tunes and tooling. Free for individuals and small organizations under Stability's community license.
+
+- name: Qwen-Image
+  vendor: Alibaba
+  url: https://huggingface.co/Qwen/Qwen-Image
+  license: Apache 2.0
+  modality: image
+  last_reviewed: 2026-06-12
+  blurb: Image generation and editing model under a fully permissive license, notably strong at rendering legible text inside images.
+
+# --- Video generation (owner approved 2026-06-12) ---------------------------
+
+- name: Wan
+  vendor: Alibaba
+  url: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
+  license: Apache 2.0
+  modality: video
+  last_reviewed: 2026-06-12
+  blurb: Open-weight video family regarded as the photorealism leader, especially for human subjects. Top quality wants a 24 gigabyte graphics card.
+
+- name: HunyuanVideo
+  vendor: Tencent
+  url: https://huggingface.co/tencent/HunyuanVideo-1.5
+  license: Community License
+  modality: video
+  last_reviewed: 2026-06-12
+  blurb: Tencent's open-weight video model, strongest at natural motion and physics such as fluids, cloth, and object interactions.
+
+- name: LTX-Video
+  vendor: Lightricks
+  url: https://huggingface.co/Lightricks/LTX-Video
+  license: Open weights license
+  modality: video
+  last_reviewed: 2026-06-12
+  blurb: The fastest open-weight video model and the most accessible, generating usable clips on a 16 gigabyte graphics card.
+
+# --- Music and audio (owner approved 2026-06-12) ----------------------------
+
+- name: MusicGen
+  vendor: Meta
+  url: https://huggingface.co/facebook/musicgen-large
+  license: CC BY-NC 4.0
+  modality: audio
+  last_reviewed: 2026-06-12
+  blurb: Meta's research model for generating instrumental music from text descriptions, licensed for non-commercial use.
+
+- name: Stable Audio Open
+  vendor: Stability AI
+  url: https://huggingface.co/stabilityai/stable-audio-open-1.0
+  license: Community License
+  modality: audio
+  last_reviewed: 2026-06-12
+  blurb: Generates short audio samples, sound effects, and production elements from text, suited to clips rather than full songs.
+
+- name: ACE-Step
+  vendor: ACE Studio and StepFun
+  url: https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
+  license: Apache 2.0
+  modality: audio
+  last_reviewed: 2026-06-12
+  blurb: Open-weight song generation model producing full tracks with vocals across many languages, under a fully permissive license.

@@ -52,10 +52,34 @@ CATEGORY_LABELS = {
     "agents": "Agents",
     "research": "Research",
     "medical_learning": "Medical Learning",
-    "writing_slides": "Writing and Slides",
+    "presentations_design": "Presentations and Design",
+    "image_generation": "Image Generation",
+    "video_generation": "Video Generation",
+    "music_audio": "Music and Audio",
+    "writing_slides": "Writing",
     "meetings_transcription": "Meetings and Transcription",
-    "media": "Media",
     "local": "Local Models",
+}
+
+# Optional intro paragraph rendered under a category heading, for guidance
+# that belongs to the category rather than any one tool.
+CATEGORY_INTROS = {
+    "presentations_design": (
+        "To improve an existing PowerPoint deck without rebuilding it, "
+        "start with tools that work on the .pptx file itself: PowerPoint "
+        "Designer applies suggestions inside the file, and Claude Design "
+        "and Canva import a PowerPoint deck and export the result back to "
+        "one. Gamma builds in its own format first and its PowerPoint "
+        "export can shift layouts; Beautiful.ai also works in its own "
+        "format but exports to PowerPoint cleanly."
+    ),
+}
+
+MODALITY_LABELS = {
+    "language": "Language",
+    "image": "Image generation",
+    "video": "Video generation",
+    "audio": "Music and audio",
 }
 
 GUIDE_VIDEO_GROUPS = {"agents", "local"}
@@ -135,6 +159,10 @@ def _render_tools(config) -> str:
         per_category_counts[label] = len(group)
         lines.append(f"## {label}")
         lines.append("")
+        intro = CATEGORY_INTROS.get(category)
+        if intro:
+            lines.append(intro)
+            lines.append("")
         lines.append('<div class="tool-grid">')
         for tool in sorted(group, key=lambda t: t["name"].lower()):
             status_label, status_css = STATUS_LABELS[tool["governance_status"]]
@@ -171,25 +199,49 @@ def _render_tools(config) -> str:
 def _render_open_models(config) -> str:
     models = _load(_data_dir(config) / "open_models.yaml")
 
-    cards = []
-    for entry in sorted(models, key=lambda m: m["name"].lower()):
-        cards.append(
-            '<div class="tool-card">\n'
-            '  <div class="tool-card-head">'
-            f'<a href="{entry["url"]}">{entry["name"]}</a></div>\n'
-            f'  <div class="tool-card-sub">{entry["vendor"]}'
-            f'<span class="cost-chip">{entry["license"]}</span></div>\n'
-            f'  <p class="tool-card-blurb">{entry["blurb"]}</p>\n'
-            "</div>"
-        )
+    by_modality: dict[str, list] = {}
+    for entry in models:
+        modality = entry.get("modality", "language")
+        if modality not in MODALITY_LABELS:
+            raise ValueError(
+                f"render_data hook: unknown modality {modality!r} "
+                f"on {entry['name']!r}")
+        by_modality.setdefault(modality, []).append(entry)
+
+    lines = []
+    rendered = 0
+    per_modality = {}
+    for modality, label in MODALITY_LABELS.items():
+        group = by_modality.get(modality, [])
+        if not group:
+            continue
+        per_modality[label] = len(group)
+        lines.append(f"### {label}")
+        lines.append("")
+        lines.append('<div class="tool-grid">')
+        for entry in sorted(group, key=lambda m: m["name"].lower()):
+            lines.append(
+                '<div class="tool-card">\n'
+                '  <div class="tool-card-head">'
+                f'<a href="{entry["url"]}">{entry["name"]}</a></div>\n'
+                f'  <div class="tool-card-sub">{entry["vendor"]}'
+                f'<span class="cost-chip">{entry["license"]}</span></div>\n'
+                f'  <p class="tool-card-blurb">{entry["blurb"]}</p>\n'
+                "</div>"
+            )
+            rendered += 1
+        lines.append("</div>")
+        lines.append("")
 
     print("render_data: open models verification")
     print(f"  entries read : {len(models)}")
-    print(f"  cards rendered: {len(cards)} (cross-check "
-          f"{'ok' if len(cards) == len(models) else 'MISMATCH'})")
-    if len(cards) != len(models):
+    for label, count in per_modality.items():
+        print(f"  {label:<16}: {count}")
+    print(f"  cards rendered: {rendered} (cross-check "
+          f"{'ok' if rendered == len(models) else 'MISMATCH'})")
+    if rendered != len(models):
         raise AssertionError("render_data hook: open models count mismatch")
-    return '<div class="tool-grid">\n' + "\n".join(cards) + "\n</div>"
+    return "\n".join(lines)
 
 
 def _youtube_id(url: str) -> str:

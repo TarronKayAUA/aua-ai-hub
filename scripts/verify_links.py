@@ -44,6 +44,11 @@ MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
     "nabututor.com": "2026-06-10",
     "llama.com": "2026-06-10",
+    # Cloudflare-blocks scripted clients; confirmed live in a browser.
+    "midjourney.com": "2026-06-12",
+    # claude.com/design redirects logged-out visitors to a login URL that
+    # returns 403 to scripts; product confirmed live 2026-06-12.
+    "claude.com": "2026-06-12",
 }
 BOT_BLOCK_STATUSES = {400, 403, 429}
 
