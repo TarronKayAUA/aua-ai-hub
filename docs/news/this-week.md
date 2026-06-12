@@ -11,11 +11,53 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>The comparative assessment of ChatGPT, DeepSeek, and Perplexity in managing acid-base disorders highlights moderate accuracy and consistent performance from ChatGPT and DeepSeek, pointing to progress in evaluating clinical reasoning through artificial intelligence <a href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[3]</a>. MedQA-CS provides a structured benchmark for objectively measuring large language model clinical skills, suggesting a standardized pathway for their integration in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[2]</a>. Evidence from a pilot randomized trial indicates that teaching with large language models improves examination outcomes in prostate cancer training, which may influence instructional design <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[4]</a>. The development of AI-generated mini interview stations for medical school admissions, backed by psychometric evaluation, raises questions about the future of admissions processes <a href="https://mededu.jmir.org/2026/1/e86208">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the source items.</p>
+<p>New evidence from a randomized trial demonstrates that instruction using large language models can significantly improve prostate cancer training examination scores for medical trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[10]</a>, highlighting a measurable effect of artificial intelligence integration on education outcomes. Meanwhile, studies evaluating DeepSeek-generated clinical cases and AI-generated counterfactual imaging address persistent shortcomings in traditional case-based and diagnostic learning approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[6]</a>. Findings from a survey of early-year medical students confirm anticipation of expanded artificial intelligence roles in medical curricula and a preference for structured training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[2]</a>. In radiation oncology, an international study establishes a benchmark for artificial intelligence literacy and readiness among clinical staff, informing pathways for workforce development <a href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[1]</a>.</p>
+<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Quantifying the AI readiness gap: An international, multidisciplinary assessment of artificial intelligence literacy in the radiation oncology community</a>
+    <p class="news-card-summary">International study establishes a global benchmark for artificial intelligence literacy and readiness among radiation oncology clinical staff.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">EXPRESS: Artificial intelligence perceptions and experiences among first and second year medical students</a>
+    <p class="news-card-summary">Survey of first and second year medical students shows they anticipate growing artificial intelligence roles in medical education and favor structured training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281346?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Bridging the Health Literacy Gap for Patients With Oral Cancer: Readability Enhancement With AI Chatbots</a>
+    <p class="news-card-summary">Large language model-based simplification enhanced readability of oral cancer patient health materials while preserving medical accuracy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Evaluation of DeepSeek-Generated Biochemistry Clinical Cases for Teaching Purpose</a>
+    <p class="news-card-summary">Study evaluates DeepSeek-generated biochemistry clinical cases as a workflow to address limitations in traditional case-based teaching.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42278944?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Language-Specific Differences in Large Language Model Diagnostic Reasoning: A Translation-Controlled Clinical Vignette Study</a>
+    <p class="news-card-summary">Translation-controlled study finds large language models show language-specific differences in diagnostic reasoning on clinical vignettes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Exploring the use of AI-generated counterfactual chest X-rays to enhance diagnostic learning in medical education</a>
+    <p class="news-card-summary">Research explores artificial intelligence-generated counterfactual chest X-rays to improve diagnostic learning outcomes in medical education.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 11, 2026</span></div>
@@ -275,7 +317,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>General-purpose large language models have demonstrated performance on medical benchmarks that matches or exceeds specialized clinical artificial intelligence tools, suggesting potential for broad clinical integration <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. Separately, large language models were evaluated for their ability to generate topic-aware summaries of adults&#x27; lived health care experiences, reflecting their relevance in patient-centered applications <a href="https://medinform.jmir.org/2026/1/e85960">[3]</a>. Machine learning and deep learning approaches have been utilized to predict clinical events and screen for conditions, such as using resting electrocardiograms to forecast low peak oxygen consumption <a href="https://medinform.jmir.org/2026/1/e81105">[4]</a> and voice-based techniques to identify early vocal impairments in Parkinson disease screening <a href="https://medinform.jmir.org/2026/1/e94063">[5]</a>. Additionally, real-time models are being prospectively evaluated for predicting inpatient hypoglycemia, highlighting advancements in AI-driven clinical risk assessment <a href="https://www.nature.com/articles/s41746-026-02874-1">[12]</a>.</p>
+<p>General-purpose large language models have matched or outperformed specialized clinical artificial intelligence tools on medical benchmarks, signaling a shift in how AI may be used in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. A multi-site study is also investigating the impact of virtual nursing on thirty-day patient readmission rates, offering data to inform care transitions and hospital policy <a href="https://www.nature.com/articles/s41746-026-02881-2">[3]</a>. For critical care, the FIRST-ICU model leverages graph neural network autoencoders to forecast interventions and stratify risk among intensive care patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[7]</a>. Additionally, a real-time deep learning model designed for inpatient hypoglycemia prediction was prospectively evaluated, supporting clinical decision making in diabetes management <a href="https://www.nature.com/articles/s41746-026-02874-1">[13]</a>.</p>
 <p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -292,6 +334,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04431-5">General-purpose large language models outperform specialized clinical AI tools on medical benchmarks</a>
     <p class="news-card-summary">Nature Medicine reports that general-purpose large language models match or exceed specialized clinical AI tools on medical benchmarks in independent evaluation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02881-2">Virtual nursing implementation and 30-day patient readmissions: a multi-site study</a>
+    <p class="news-card-summary">Multi-site study examines effects of virtual nursing implementation on 30-day patient readmission rates.</p>
   </div>
 </div>
 <div class="news-card">
@@ -577,45 +626,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>SafeLLM introduces extraction as an alternative to rewriting for safety-critical medical applications, aiming to reduce hallucinations and improve the reliability of language model outputs <a href="https://arxiv.org/abs/2606.12897">[4]</a>. Complementing this concern for safety, new benchmarking of large language models evaluates their effectiveness at extracting safety data from structured clinical sources, an important step toward practical AI safety assessments <a href="https://arxiv.org/abs/2606.11204">[5]</a>. Meanwhile, cost-effective fine-tuning of small language models shows promise for biomedical claim verification, including stronger generalization across domains <a href="https://arxiv.org/abs/2606.12854">[3]</a>. The energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units further expands options for deploying AI in resource-constrained medical settings <a href="https://arxiv.org/abs/2606.11257">[6]</a>.</p>
+<p>Deployment of energy-efficient retrieval-augmented generation systems on mobile neural processing units is advancing, making AI more practical for mobile devices <a href="https://arxiv.org/abs/2606.11257">[3]</a>. OpenAI frontier models and Codex code generation models are now accessible through Amazon Web Services, widening options for scalable AI integration <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[7]</a>. Kimi K2.7-Code stands out for its open-source approach with improved token efficiency in code-focused tasks <a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">[2]</a>. Hugging Face’s release of olmo-eval supports robust model development workflows, streamlining evaluation across projects <a href="https://huggingface.co/blog/allenai/olmo-eval">[1]</a>. Stanford’s CS336 course offers a structured foundation for understanding language modeling, relevant for both faculty and students engaging with current AI tools <a href="https://cs336.stanford.edu/">[8]</a>.</p>
 <p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12569">EDEN: A Large-Scale Corpus of Clinical Notes for Italian</a>
-    <p class="news-card-summary">EDEN is a large-scale Italian clinical notes corpus for training and evaluating language models on emergency department data.</p>
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/allenai/olmo-eval">olmo-eval: An evaluation workbench for the model development loop</a>
+    <p class="news-card-summary">Hugging Face releases olmo-eval, an evaluation workbench designed to support model development workflows.</p>
   </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/gacAOFYwPkpxu7cC4eeey.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12578">MARD: Mirror-Augmented Reasoning Distillation for Mechanism-Level Drug-Drug Interaction Prediction</a>
-    <p class="news-card-summary">MARD applies reasoning distillation to predict mechanism-level drug-drug interactions, combining machine learning with pharmacological reasoning.</p>
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face">MiniMaxAI/MiniMax-M3 · Hugging Face</a>
+    <p class="news-card-summary">MiniMax-M3 open-weights model released with approximately 428 billion parameters and 23 billion activated parameters.</p>
   </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/Uv93NfmsEWZ6OylNRrWDx5767F50djITuxFOvPL7cs4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1bedec10a803f86762cdba66e04f25b0f6b3343d" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12854">Small LLMs for Biomedical Claim Verification: Cost-Effective Fine-Tuning, Structural Dataset Shortcuts, and Cross-Domain Generalization</a>
-    <p class="news-card-summary">Study demonstrates cost-effective fine-tuning of small language models for biomedical claim verification with improved cross-domain generalization.</p>
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">Kimi K2.7-Code: open-source coding model with better token efficiency</a>
+    <p class="news-card-summary">Moonshot AI releases Kimi K2.7-Code, an open-source coding-focused model with improved token efficiency.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12897">SafeLLM: Extraction as a Hallucination-Resistant Alternative to Rewriting in Safety-Critical Settings</a>
-    <p class="news-card-summary">SafeLLM proposes extraction rather than rewriting to reduce hallucinations and improve reliability of language models in safety-critical medical applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.11204">Benchmarking Large Language Models for Safety Data Extraction</a>
-    <p class="news-card-summary">A new arXiv study benchmarks large language models for extracting safety data from structured sources, relevant for clinical AI safety assessment.</p>
-  </div>
+  <img class="news-card-thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K2.7-Code.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">

@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>General-purpose large language models have demonstrated performance on medical benchmarks that matches or exceeds specialized clinical artificial intelligence tools, suggesting potential for broad clinical integration <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. Separately, large language models were evaluated for their ability to generate topic-aware summaries of adults&#x27; lived health care experiences, reflecting their relevance in patient-centered applications <a href="https://medinform.jmir.org/2026/1/e85960">[3]</a>. Machine learning and deep learning approaches have been utilized to predict clinical events and screen for conditions, such as using resting electrocardiograms to forecast low peak oxygen consumption <a href="https://medinform.jmir.org/2026/1/e81105">[4]</a> and voice-based techniques to identify early vocal impairments in Parkinson disease screening <a href="https://medinform.jmir.org/2026/1/e94063">[5]</a>. Additionally, real-time models are being prospectively evaluated for predicting inpatient hypoglycemia, highlighting advancements in AI-driven clinical risk assessment <a href="https://www.nature.com/articles/s41746-026-02874-1">[12]</a>.</p>
+<p>General-purpose large language models have matched or outperformed specialized clinical artificial intelligence tools on medical benchmarks, signaling a shift in how AI may be used in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. A multi-site study is also investigating the impact of virtual nursing on thirty-day patient readmission rates, offering data to inform care transitions and hospital policy <a href="https://www.nature.com/articles/s41746-026-02881-2">[3]</a>. For critical care, the FIRST-ICU model leverages graph neural network autoencoders to forecast interventions and stratify risk among intensive care patients <a href="https://www.nature.com/articles/s41746-026-02890-1">[7]</a>. Additionally, a real-time deep learning model designed for inpatient hypoglycemia prediction was prospectively evaluated, supporting clinical decision making in diabetes management <a href="https://www.nature.com/articles/s41746-026-02874-1">[13]</a>.</p>
 <p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -30,6 +30,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04431-5">General-purpose large language models outperform specialized clinical AI tools on medical benchmarks</a>
     <p class="news-card-summary">Nature Medicine reports that general-purpose large language models match or exceed specialized clinical AI tools on medical benchmarks in independent evaluation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02881-2">Virtual nursing implementation and 30-day patient readmissions: a multi-site study</a>
+    <p class="news-card-summary">Multi-site study examines effects of virtual nursing implementation on 30-day patient readmission rates.</p>
   </div>
 </div>
 <div class="news-card">
@@ -119,13 +126,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02870-5">An ultrasound foundation model for the stratification of vision impairment and eye cancer risk</a>
     <p class="news-card-summary">An ultrasound foundation model was developed to stratify risk for vision impairment and eye cancer.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04409-3">Microglia at a key inflection point in Alzheimer’s disease</a>
-    <p class="news-card-summary">This study analyzed microglia activities at a critical progression point in Alzheimer’s disease to better understand its pathology.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04409-3/MediaObjects/41591_2026_4409_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

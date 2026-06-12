@@ -13,45 +13,34 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>SafeLLM introduces extraction as an alternative to rewriting for safety-critical medical applications, aiming to reduce hallucinations and improve the reliability of language model outputs <a href="https://arxiv.org/abs/2606.12897">[4]</a>. Complementing this concern for safety, new benchmarking of large language models evaluates their effectiveness at extracting safety data from structured clinical sources, an important step toward practical AI safety assessments <a href="https://arxiv.org/abs/2606.11204">[5]</a>. Meanwhile, cost-effective fine-tuning of small language models shows promise for biomedical claim verification, including stronger generalization across domains <a href="https://arxiv.org/abs/2606.12854">[3]</a>. The energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units further expands options for deploying AI in resource-constrained medical settings <a href="https://arxiv.org/abs/2606.11257">[6]</a>.</p>
+<p>Deployment of energy-efficient retrieval-augmented generation systems on mobile neural processing units is advancing, making AI more practical for mobile devices <a href="https://arxiv.org/abs/2606.11257">[3]</a>. OpenAI frontier models and Codex code generation models are now accessible through Amazon Web Services, widening options for scalable AI integration <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[7]</a>. Kimi K2.7-Code stands out for its open-source approach with improved token efficiency in code-focused tasks <a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">[2]</a>. Hugging Face’s release of olmo-eval supports robust model development workflows, streamlining evaluation across projects <a href="https://huggingface.co/blog/allenai/olmo-eval">[1]</a>. Stanford’s CS336 course offers a structured foundation for understanding language modeling, relevant for both faculty and students engaging with current AI tools <a href="https://cs336.stanford.edu/">[8]</a>.</p>
 <p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12569">EDEN: A Large-Scale Corpus of Clinical Notes for Italian</a>
-    <p class="news-card-summary">EDEN is a large-scale Italian clinical notes corpus for training and evaluating language models on emergency department data.</p>
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/allenai/olmo-eval">olmo-eval: An evaluation workbench for the model development loop</a>
+    <p class="news-card-summary">Hugging Face releases olmo-eval, an evaluation workbench designed to support model development workflows.</p>
   </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/gacAOFYwPkpxu7cC4eeey.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12578">MARD: Mirror-Augmented Reasoning Distillation for Mechanism-Level Drug-Drug Interaction Prediction</a>
-    <p class="news-card-summary">MARD applies reasoning distillation to predict mechanism-level drug-drug interactions, combining machine learning with pharmacological reasoning.</p>
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face">MiniMaxAI/MiniMax-M3 · Hugging Face</a>
+    <p class="news-card-summary">MiniMax-M3 open-weights model released with approximately 428 billion parameters and 23 billion activated parameters.</p>
   </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/Uv93NfmsEWZ6OylNRrWDx5767F50djITuxFOvPL7cs4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1bedec10a803f86762cdba66e04f25b0f6b3343d" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12854">Small LLMs for Biomedical Claim Verification: Cost-Effective Fine-Tuning, Structural Dataset Shortcuts, and Cross-Domain Generalization</a>
-    <p class="news-card-summary">Study demonstrates cost-effective fine-tuning of small language models for biomedical claim verification with improved cross-domain generalization.</p>
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">Kimi K2.7-Code: open-source coding model with better token efficiency</a>
+    <p class="news-card-summary">Moonshot AI releases Kimi K2.7-Code, an open-source coding-focused model with improved token efficiency.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.12897">SafeLLM: Extraction as a Hallucination-Resistant Alternative to Rewriting in Safety-Critical Settings</a>
-    <p class="news-card-summary">SafeLLM proposes extraction rather than rewriting to reduce hallucinations and improve reliability of language models in safety-critical medical applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.11204">Benchmarking Large Language Models for Safety Data Extraction</a>
-    <p class="news-card-summary">A new arXiv study benchmarks large language models for extracting safety data from structured sources, relevant for clinical AI safety assessment.</p>
-  </div>
+  <img class="news-card-thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K2.7-Code.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">

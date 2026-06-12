@@ -13,11 +13,53 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>The comparative assessment of ChatGPT, DeepSeek, and Perplexity in managing acid-base disorders highlights moderate accuracy and consistent performance from ChatGPT and DeepSeek, pointing to progress in evaluating clinical reasoning through artificial intelligence <a href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[3]</a>. MedQA-CS provides a structured benchmark for objectively measuring large language model clinical skills, suggesting a standardized pathway for their integration in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[2]</a>. Evidence from a pilot randomized trial indicates that teaching with large language models improves examination outcomes in prostate cancer training, which may influence instructional design <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[4]</a>. The development of AI-generated mini interview stations for medical school admissions, backed by psychometric evaluation, raises questions about the future of admissions processes <a href="https://mededu.jmir.org/2026/1/e86208">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 11, 2026; numbered links go to the items below.</p>
+<p>New evidence from a randomized trial demonstrates that instruction using large language models can significantly improve prostate cancer training examination scores for medical trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[10]</a>, highlighting a measurable effect of artificial intelligence integration on education outcomes. Meanwhile, studies evaluating DeepSeek-generated clinical cases and AI-generated counterfactual imaging address persistent shortcomings in traditional case-based and diagnostic learning approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[6]</a>. Findings from a survey of early-year medical students confirm anticipation of expanded artificial intelligence roles in medical curricula and a preference for structured training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[2]</a>. In radiation oncology, an international study establishes a benchmark for artificial intelligence literacy and readiness among clinical staff, informing pathways for workforce development <a href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[1]</a>.</p>
+<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Quantifying the AI readiness gap: An international, multidisciplinary assessment of artificial intelligence literacy in the radiation oncology community</a>
+    <p class="news-card-summary">International study establishes a global benchmark for artificial intelligence literacy and readiness among radiation oncology clinical staff.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">EXPRESS: Artificial intelligence perceptions and experiences among first and second year medical students</a>
+    <p class="news-card-summary">Survey of first and second year medical students shows they anticipate growing artificial intelligence roles in medical education and favor structured training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281346?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Bridging the Health Literacy Gap for Patients With Oral Cancer: Readability Enhancement With AI Chatbots</a>
+    <p class="news-card-summary">Large language model-based simplification enhanced readability of oral cancer patient health materials while preserving medical accuracy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Evaluation of DeepSeek-Generated Biochemistry Clinical Cases for Teaching Purpose</a>
+    <p class="news-card-summary">Study evaluates DeepSeek-generated biochemistry clinical cases as a workflow to address limitations in traditional case-based teaching.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42278944?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Language-Specific Differences in Large Language Model Diagnostic Reasoning: A Translation-Controlled Clinical Vignette Study</a>
+    <p class="news-card-summary">Translation-controlled study finds large language models show language-specific differences in diagnostic reasoning on clinical vignettes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Exploring the use of AI-generated counterfactual chest X-rays to enhance diagnostic learning in medical education</a>
+    <p class="news-card-summary">Research explores artificial intelligence-generated counterfactual chest X-rays to improve diagnostic learning outcomes in medical education.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 11, 2026</span></div>
@@ -80,48 +122,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.11208">BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts</a>
     <p class="news-card-summary">BioDivergence proposes a benchmark and evaluation framework to detect hidden contextual contradictions in biomedical abstracts, improving reliability of biomedical literature interpretation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267500?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">The role of emerging technology in expanding regional anesthesia education and patient access</a>
-    <p class="news-card-summary">Emerging technologies are identified as enhancing regional anesthesia education and expanding patient access.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266631?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Self-learning and Simulation in the 21st Century: From Textbooks to ChatGPT</a>
-    <p class="news-card-summary">The role of digital tools including ChatGPT in self-learning and simulation during medical training is examined.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266245?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Explainable Machine Learning Integrating Patient and Environmental Factors for Predicting Multidrug-Resistant Organism Colonization or Infection on ICU Admission</a>
-    <p class="news-card-summary">Machine learning integrating patient and environmental factors predicted multidrug-resistant organism colonization and infection.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42266218?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Application of an artificial-intelligence-based transesophageal echocardiography simulation system in residency training</a>
-    <p class="news-card-summary">An artificial intelligence-based transesophageal echocardiography simulation system improved resident training performance.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42265968?fc=20260609215449&amp;ff=20260610104000&amp;v=2.20.0">Evaluating a DeepSeek-Based Case-Based Learning Approach for Teaching the Emergency Management of Urosepsis to Nursing Students</a>
-    <p class="news-card-summary">A DeepSeek-based case-based learning approach improved nursing students&#x27; emergency management education for urosepsis.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42267893?fc=20260609215449&amp;ff=20260610121559&amp;v=2.20.0">Integrating Artificial Intelligence-Based Simulation into Serious Illness Conversation Training: A Pilot Medical Student Intervention</a>
-    <p class="news-card-summary">A pilot study tested artificial intelligence-based simulation as a training tool for medical students to practice serious illness conversations.</p>
   </div>
 </div>
 </div>
