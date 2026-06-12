@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" role="img" aria-hidden="true">
+  <!-- Weekly digest banner. Self-contained brand colors (external SVGs
+       cannot read page CSS variables): seal blue #07618c, navy #1b4165. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07618c"/>
+      <stop offset="1" stop-color="#1b4165"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="140" rx="10" fill="url(#bg)"/>
+  <!-- digest text lines -->
+  <g stroke="#ffffff" stroke-width="6" opacity="0.3" stroke-linecap="round">
+    <line x1="140" y1="45" x2="430" y2="45"/>
+    <line x1="140" y1="70" x2="380" y2="70"/>
+    <line x1="140" y1="95" x2="410" y2="95"/>
+  </g>
+  <!-- week strip: seven days, the digest day filled -->
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.45">
+    <rect x="560" y="50" width="40" height="40" rx="8"/>
+    <rect x="612" y="50" width="40" height="40" rx="8"/>
+    <rect x="664" y="50" width="40" height="40" rx="8"/>
+    <rect x="716" y="50" width="40" height="40" rx="8"/>
+    <rect x="768" y="50" width="40" height="40" rx="8"/>
+    <rect x="872" y="50" width="40" height="40" rx="8"/>
+  </g>
+  <rect x="820" y="50" width="40" height="40" rx="8" fill="#ffffff" opacity="0.85"/>
+  <path d="M 830 70 l 8 8 l 14 -16" fill="none" stroke="#1b4165" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- sparkle accent -->
+  <g stroke="#ffffff" stroke-width="2.5" opacity="0.8" stroke-linecap="round">
+    <line x1="1080" y1="55" x2="1080" y2="85"/>
+    <line x1="1065" y1="70" x2="1095" y2="70"/>
+    <line x1="1070" y1="60" x2="1090" y2="80"/>
+    <line x1="1090" y1="60" x2="1070" y2="80"/>
+  </g>
+</svg>

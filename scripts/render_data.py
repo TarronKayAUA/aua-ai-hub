@@ -19,6 +19,7 @@ the build) if totals do not cross-check (CLAUDE.md working rule 2).
 import re
 from datetime import date
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 
@@ -96,6 +97,19 @@ def _badge(label: str, css: str, title: str = "") -> str:
 # --- tools -----------------------------------------------------------------
 
 
+def _favicon_img(url: str) -> str:
+    """Tool branding without a new data field: the favicon of the tool's own
+    domain via Google's favicon service. Hotlinked third-party images are
+    established practice on this site (video thumbnails hotlink i.ytimg.com,
+    news thumbnails hotlink publishers). Hidden onerror, so a tool whose
+    favicon is unavailable renders a text-only head."""
+    domain = urlparse(url).netloc
+    return ('<img class="tool-card-icon" '
+            f'src="https://www.google.com/s2/favicons?domain={domain}'
+            '&amp;sz=64" alt="" loading="lazy" '
+            "onerror=\"this.style.display='none'\">")
+
+
 def _render_tools(config) -> str:
     tools = _load(_data_dir(config) / "tools.yaml")
 
@@ -128,7 +142,8 @@ def _render_tools(config) -> str:
             lines.append(
                 '<div class="tool-card">\n'
                 '  <div class="tool-card-head">'
-                f'<a href="{tool["url"]}">{tool["name"]}</a>{badge}</div>\n'
+                f'<a href="{tool["url"]}">{_favicon_img(tool["url"])}'
+                f'{tool["name"]}</a>{badge}</div>\n'
                 f'  <div class="tool-card-sub">{tool["vendor"]}'
                 f'<span class="cost-chip">{tool["cost"]}</span></div>\n'
                 f'  <p class="tool-card-blurb">{tool["blurb"]}</p>\n'

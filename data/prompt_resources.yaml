@@ -34,6 +34,10 @@
   type: guide
   category: general
   url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+  # The docs page's own og:image endpoint returns 404 (rechecked 2026-06-12),
+  # so this card uses Anthropic's official site og:image instead (verified
+  # 200 image/jpeg 2026-06-12).
+  thumbnail: https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/68309ab48369f7ad9b4a40e1_open-graph.jpg
   blurb: The documentation Anthropic maintains for its Claude models. The
     techniques (clear instructions, examples, structured output, giving the
     model room to think) carry over to any modern assistant.

@@ -1730,6 +1730,11 @@ def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
         f"Highlights selected from everything kept {window_label}. "
         + selection_note("../../"),
         "",
+        # Raw HTML is not path-rewritten by MkDocs; archive pages serve
+        # from /news/archive/<page>/, one level deeper than category pages.
+        '<img class="section-banner" '
+        'src="../../../assets/section-digest.svg" alt="">',
+        "",
     ]
     if narrative:
         lines.extend(["## The week in brief", ""])

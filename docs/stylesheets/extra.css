@@ -62,6 +62,14 @@
   max-width: 78rem;
 }
 
+/* Generated pages stack multiple card grids; Material's prose-tuned
+   heading margin leaves section boundaries tighter than the gaps between
+   cards inside a section. Extra air above h2 marks section starts through
+   whitespace alone (owner-approved 2026-06-12). */
+.md-typeset h2 {
+  margin-top: 2.2em;
+}
+
 /* Tighter horizontal cell padding so wide tables (the 10-column LiveBench
    snapshot) fit the content column without clipping or scrolling. */
 .md-typeset table:not([class]) th,
@@ -158,7 +166,7 @@
 .news-list {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.85rem;
   margin-top: 1rem;
 }
 
@@ -415,6 +423,12 @@
   font-size: 0.68rem;
   line-height: 1.45;
   color: var(--md-default-fg-color--light);
+  /* Clamp like the title (2 lines) so grid rows stay even when one
+     description runs long. */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Podcast variant: square show art, slightly narrower cards */
@@ -459,6 +473,16 @@
 .tool-card-head a {
   font-weight: 700;
   font-size: 0.85rem;
+}
+
+/* Favicon-derived tool branding (render_data.py); hidden onerror, so a
+   missing favicon just renders a text-only head. */
+.md-typeset .tool-card-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 0.2rem;
+  margin: 0 0.45rem 0 0;
+  vertical-align: -0.25rem;
 }
 
 .tool-card-sub {
