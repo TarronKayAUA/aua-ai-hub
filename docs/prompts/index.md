@@ -3,7 +3,7 @@
 Reusable prompts for common faculty tasks: research, assessment writing, data analysis, and content creation. Each prompt is a starting template; replace the bracketed placeholders with your specifics, and use the copy button in the corner of each block.
 
 !!! warning "Drafts pending review"
-    Prompts marked Draft have not yet been tested and endorsed by the Office of the Assistant Dean of AI in Medical Education. Treat outputs as first drafts: verify accuracy yourself, and never paste protected health information or student records into any AI tool.
+    Prompts marked Draft are still being tested and refined; Reviewed means a prompt has been through that process, not that its outputs are guaranteed. Treat outputs as first drafts: verify accuracy yourself, and never paste protected health information or student records into any AI tool.
 
 !!! note "What to expect across different models"
     These prompts are written for and tested against current frontier assistants from Anthropic, OpenAI, and Google. The same prompt will not give identical results everywhere: output depends on the model's capability, the company that trained it, the material and context you provide, and the model version, which changes over time. Treat a weaker or older model's output as a rough draft, give the model your real source material rather than a blank-page request, and judge every result against your own expertise. The structure and rules in each prompt carry across models even when the exact wording of the output does not.

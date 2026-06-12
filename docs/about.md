@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Office of the Assistant Dean of AI in Medical Education, which also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
+The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Assistant Dean of AI in Medical Education, who also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
 
 ## How content is selected
 
@@ -46,4 +46,4 @@ News, video, podcast, and digest pages also carry a comments section where you c
 
 ## Contact
 
-Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact the Office of the Assistant Dean of AI in Medical Education, AUACOM.
+Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact the Assistant Dean of AI in Medical Education, AUACOM.

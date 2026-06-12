@@ -19,4 +19,4 @@ The major open-weight families as of June 2026:
 
 <!-- render:open-models -->
 
-To suggest a tool for review, see the [About page](../about.md) for contact information. This directory is maintained in a data file; statuses change only through the governance process described in [How Tools Are Reviewed](../governance/review-process.md).
+To suggest a tool for review, see the [About page](../about.md) for contact information. This directory is maintained in a data file; statuses are updated through the review process described in [How Tools Are Reviewed](../governance/review-process.md).

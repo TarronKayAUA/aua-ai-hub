@@ -2,7 +2,7 @@
 
 A self-paced sequence of six short modules on using artificial intelligence (AI) well at the American University of Antigua College of Medicine (AUACOM). Each module takes 10 to 15 minutes: a focused read, pointers into the best material on this site and beyond, and a short self-check. The whole pathway takes about 75 minutes, and the modules also stand alone.
 
-The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Office of the Assistant Dean of AI in Medical Education.
+The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Assistant Dean of AI in Medical Education.
 
 | # | Module | Mainly for | Time |
 | --- | --- | --- | --- |
