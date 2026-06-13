@@ -13,11 +13,26 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>General-purpose large language models are demonstrating strong performance against specialized clinical artificial intelligence tools on medical benchmarks, suggesting a shift toward broader applicability in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. Integration of autonomous AI agents in emergency department decision support is advancing with designs that combine knowledge and data for improved clinical outcomes <a href="https://www.nature.com/articles/s41746-026-02869-y">[4]</a>. Studies are examining the impact of virtual nursing on patient readmission rates, highlighting new models of care delivery <a href="https://www.nature.com/articles/s41746-026-02881-2">[3]</a>. Deep learning is also being prospectively evaluated for real-time hypoglycemia prediction during inpatient stays, providing opportunities for earlier intervention <a href="https://www.nature.com/articles/s41746-026-02874-1">[14]</a>. The alignment of data standards using artificial intelligence is accelerating interoperability in biomedical research, which may enhance clinical information exchange <a href="https://www.nature.com/articles/s41746-026-02795-z">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
+<p>General-purpose large language models now surpass specialized clinical AI tools on medical benchmarks, highlighting the potential for broader integration across clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[4]</a>. Efforts to align data standards and accelerate interoperability using artificial intelligence are facilitating more seamless biomedical research and healthcare system collaboration <a href="https://www.nature.com/articles/s41746-026-02795-z">[3]</a>. A knowledge-augmented large language model has been validated for risk prediction based on multimodal electronic health record data, strengthening outcome prediction in clinical settings <a href="https://ai.jmir.org/2026/1/e88356">[2]</a>. Additionally, an autonomous AI agent has been introduced to support emergency department decision-making through knowledge and data cooperation <a href="https://www.nature.com/articles/s41746-026-02869-y">[6]</a>. These advances signal meaningful changes in the use of AI for clinical guidance and improved workflows.</p>
+<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02738-8">ActiTect: a generalizable machine learning pipeline for REM sleep behavior disorder screening through standardized actigraphy</a>
+    <p class="news-card-summary">Researchers developed ActiTect, a generalizable machine learning pipeline using standardized actigraphy data to screen for rapid eye movement sleep behavior disorder.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88356">Knowledge-Augmented Large Language Model for Multimodal Electronic Health Record, Based Risk Prediction: Development and Validation Study</a>
+    <p class="news-card-summary">Researchers developed and validated a knowledge-augmented large language model for predicting clinical outcomes from multimodal electronic health record data.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63f57c054bd6e7a6c3fcd5282c669918.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
@@ -44,6 +59,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02869-y">An autonomous AI agent for knowledge and data cooperation in ED clinical decision support</a>
     <p class="news-card-summary">Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02886-x">The effectiveness of CBT-based NLP-enabled AI conversational agents for mental health intervention: a systematic review and meta-analysis</a>
+    <p class="news-card-summary">Systematic review and meta-analysis assessed the effectiveness of natural language processing-enabled conversational agents delivering cognitive behavioral therapy for mental health.</p>
   </div>
 </div>
 <div class="news-card">
@@ -104,27 +126,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04510-7">Clinical Profile and Genomic Characterization of the 2026 Bundibugyo Virus Index Case in Uganda</a>
     <p class="news-card-summary">Nature Medicine reports the clinical profile and genomic characterization of the 2026 Bundibugyo virus index case in Uganda to inform disease understanding and management.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02745-9">Performance of a large language model in the informed consent process for participation in a clinical trial</a>
-    <p class="news-card-summary">A large language model was evaluated for its performance in guiding patients through the informed consent process for clinical trial participation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02874-1">Development and prospective evaluation of a real-time deep learning model for inpatient hypoglycemia prediction</a>
-    <p class="news-card-summary">A real-time deep learning model was developed and prospectively evaluated to predict inpatient hypoglycemia events.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02863-4">Daily activity patterns from wearable accelerometry predict physical frailty and concern about falling</a>
-    <p class="news-card-summary">Daily activity patterns measured by wearable accelerometers were found predictive of physical frailty and concern about falling.</p>
   </div>
 </div>
 </div>

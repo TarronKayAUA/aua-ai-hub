@@ -13,11 +13,27 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Deployment of energy-efficient retrieval-augmented generation systems on mobile neural processing units is advancing, making AI more practical for mobile devices <a href="https://arxiv.org/abs/2606.11257">[3]</a>. OpenAI frontier models and Codex code generation models are now accessible through Amazon Web Services, widening options for scalable AI integration <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[7]</a>. Kimi K2.7-Code stands out for its open-source approach with improved token efficiency in code-focused tasks <a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">[2]</a>. Hugging Face’s release of olmo-eval supports robust model development workflows, streamlining evaluation across projects <a href="https://huggingface.co/blog/allenai/olmo-eval">[1]</a>. Stanford’s CS336 course offers a structured foundation for understanding language modeling, relevant for both faculty and students engaging with current AI tools <a href="https://cs336.stanford.edu/">[8]</a>.</p>
-<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the items below.</p>
+<p>Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive raised concerns about a jailbreak vulnerability affecting national security <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[1]</a>. OpenAI has expanded its WebRTC Audio Session feature to include document context, allowing users to interact with both speech and uploaded documents in a more integrated way <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[2]</a>. Hugging Face has introduced olmo-eval, a workbench that streamlines model development and evaluation efforts <a href="https://huggingface.co/blog/allenai/olmo-eval">[3]</a>. Researchers are advancing energy-efficient retrieval-augmented generation on mobile neural processing units, which supports practical on-device AI applications <a href="https://arxiv.org/abs/2606.11257">[5]</a>. OpenAI’s frontier models and Codex are now accessible on Amazon Web Services, broadening their availability for development and deployment <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[9]</a>.</p>
+<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">Anthropic shuts down Fable, Mythos models following Trump admin directive</a>
+    <p class="news-card-summary">Anthropic shut down Fable and Mythos models following a US Commerce Department directive citing national security concerns over a reported jailbreak vulnerability.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/fable5-500x500-1781319492.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/12/openai-webrtc">OpenAI WebRTC Audio Session, now with document context</a>
+    <p class="news-card-summary">OpenAI expanded its WebRTC Audio Session feature to support document context, enabling multimodal interaction with speech and uploaded documents.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/openai-webrtc-document-context-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 12, 2026</span></div>

@@ -11,11 +11,42 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>New evidence from a randomized trial demonstrates that instruction using large language models can significantly improve prostate cancer training examination scores for medical trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">[10]</a>, highlighting a measurable effect of artificial intelligence integration on education outcomes. Meanwhile, studies evaluating DeepSeek-generated clinical cases and AI-generated counterfactual imaging address persistent shortcomings in traditional case-based and diagnostic learning approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[6]</a>. Findings from a survey of early-year medical students confirm anticipation of expanded artificial intelligence roles in medical curricula and a preference for structured training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[2]</a>. In radiation oncology, an international study establishes a benchmark for artificial intelligence literacy and readiness among clinical staff, informing pathways for workforce development <a href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
+<p>A peer-reviewed evaluation indicates that ChatGPT-4o demonstrates the highest accuracy in operative dentistry multiple-choice questions, though with inconsistencies in semantic and readability measures <a href="https://pubmed.ncbi.nlm.nih.gov/42286811?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">[1]</a>. Meanwhile, a quasi-experimental study assessed the use of a role-prompted GPT-4o chatbot for training empathetic communication skills, reporting measurable learning outcomes for medical students <a href="https://mededu.jmir.org/2026/1/e88092">[2]</a>. At a broader level, researchers have developed a framework to guide artificial intelligence integration into UK medical school curricula, responding to changing healthcare demands <a href="https://mededu.jmir.org/2026/1/e81953">[3]</a>. Survey findings suggest medical students recognize the expanding role of artificial intelligence in their education and express preference for structured training formats <a href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[6]</a>.</p>
+<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42286811?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Exploring the Educational Utility of LLMs in Operative Dentistry Through MCQ-Based Accuracy, Semantic, and Readability Testing</a>
+    <p class="news-card-summary">Peer-reviewed evaluation found ChatGPT-4o achieved highest accuracy on operative dentistry multiple-choice questions but with variable semantic and readability performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88092">Training Empathetic Communication Skills in Medical Students With a Role-Prompted GPT-4o Chatbot: Quasi-Experimental Intervention Study</a>
+    <p class="news-card-summary">Quasi-experimental study evaluated a role-prompted GPT-4o chatbot for training empathetic communication skills in medical students with measured learning outcomes.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/d6dfc3f5ee6c05832d996f4fc0fe1108.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e81953">AI in UK Medical Education: A Framework for Curriculum Reform</a>
+    <p class="news-card-summary">Study develops a framework for integrating artificial intelligence into UK medical school curricula to align with evolving healthcare needs.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/e039257f4a04c1474ee5844e1eba9ffa.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e83376">Evaluating the Pediatric Behavior Guidance of Students Based on Actual Clinical Transcripts Scored by Faculty and Large Language Models: Pilot Comparative Study</a>
+    <p class="news-card-summary">Study compared large language model scoring of pediatric behavior guidance against faculty assessment using actual clinical transcripts to evaluate feedback quality.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/4c8889e2a34ed98cd9ddf7ec87d412ca.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
@@ -56,6 +87,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Exploring the use of AI-generated counterfactual chest X-rays to enhance diagnostic learning in medical education</a>
     <p class="news-card-summary">Research explores artificial intelligence-generated counterfactual chest X-rays to improve diagnostic learning outcomes in medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42284227?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Meta-analysis of randomized controlled trials comparing outcomes of artificial intelligence-based teaching versus traditional-based teaching in medical education</a>
+    <p class="news-card-summary">Meta-analysis of randomized controlled trials found artificial intelligence-based teaching approaches performed comparably to or better than traditional teaching methods.</p>
   </div>
 </div>
 <div class="news-card">
@@ -317,11 +355,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>General-purpose large language models are demonstrating strong performance against specialized clinical artificial intelligence tools on medical benchmarks, suggesting a shift toward broader applicability in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[2]</a>. Integration of autonomous AI agents in emergency department decision support is advancing with designs that combine knowledge and data for improved clinical outcomes <a href="https://www.nature.com/articles/s41746-026-02869-y">[4]</a>. Studies are examining the impact of virtual nursing on patient readmission rates, highlighting new models of care delivery <a href="https://www.nature.com/articles/s41746-026-02881-2">[3]</a>. Deep learning is also being prospectively evaluated for real-time hypoglycemia prediction during inpatient stays, providing opportunities for earlier intervention <a href="https://www.nature.com/articles/s41746-026-02874-1">[14]</a>. The alignment of data standards using artificial intelligence is accelerating interoperability in biomedical research, which may enhance clinical information exchange <a href="https://www.nature.com/articles/s41746-026-02795-z">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
+<p>General-purpose large language models now surpass specialized clinical AI tools on medical benchmarks, highlighting the potential for broader integration across clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[4]</a>. Efforts to align data standards and accelerate interoperability using artificial intelligence are facilitating more seamless biomedical research and healthcare system collaboration <a href="https://www.nature.com/articles/s41746-026-02795-z">[3]</a>. A knowledge-augmented large language model has been validated for risk prediction based on multimodal electronic health record data, strengthening outcome prediction in clinical settings <a href="https://ai.jmir.org/2026/1/e88356">[2]</a>. Additionally, an autonomous AI agent has been introduced to support emergency department decision-making through knowledge and data cooperation <a href="https://www.nature.com/articles/s41746-026-02869-y">[6]</a>. These advances signal meaningful changes in the use of AI for clinical guidance and improved workflows.</p>
+<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02738-8">ActiTect: a generalizable machine learning pipeline for REM sleep behavior disorder screening through standardized actigraphy</a>
+    <p class="news-card-summary">Researchers developed ActiTect, a generalizable machine learning pipeline using standardized actigraphy data to screen for rapid eye movement sleep behavior disorder.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88356">Knowledge-Augmented Large Language Model for Multimodal Electronic Health Record, Based Risk Prediction: Development and Validation Study</a>
+    <p class="news-card-summary">Researchers developed and validated a knowledge-augmented large language model for predicting clinical outcomes from multimodal electronic health record data.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63f57c054bd6e7a6c3fcd5282c669918.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
@@ -348,6 +401,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02869-y">An autonomous AI agent for knowledge and data cooperation in ED clinical decision support</a>
     <p class="news-card-summary">Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02886-x">The effectiveness of CBT-based NLP-enabled AI conversational agents for mental health intervention: a systematic review and meta-analysis</a>
+    <p class="news-card-summary">Systematic review and meta-analysis assessed the effectiveness of natural language processing-enabled conversational agents delivering cognitive behavioral therapy for mental health.</p>
   </div>
 </div>
 <div class="news-card">
@@ -633,11 +693,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Deployment of energy-efficient retrieval-augmented generation systems on mobile neural processing units is advancing, making AI more practical for mobile devices <a href="https://arxiv.org/abs/2606.11257">[3]</a>. OpenAI frontier models and Codex code generation models are now accessible through Amazon Web Services, widening options for scalable AI integration <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[7]</a>. Kimi K2.7-Code stands out for its open-source approach with improved token efficiency in code-focused tasks <a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">[2]</a>. Hugging Face’s release of olmo-eval supports robust model development workflows, streamlining evaluation across projects <a href="https://huggingface.co/blog/allenai/olmo-eval">[1]</a>. Stanford’s CS336 course offers a structured foundation for understanding language modeling, relevant for both faculty and students engaging with current AI tools <a href="https://cs336.stanford.edu/">[8]</a>.</p>
-<p class="section-brief-date">The picture as of June 12, 2026; numbered links go to the source items.</p>
+<p>Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive raised concerns about a jailbreak vulnerability affecting national security <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[1]</a>. OpenAI has expanded its WebRTC Audio Session feature to include document context, allowing users to interact with both speech and uploaded documents in a more integrated way <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[2]</a>. Hugging Face has introduced olmo-eval, a workbench that streamlines model development and evaluation efforts <a href="https://huggingface.co/blog/allenai/olmo-eval">[3]</a>. Researchers are advancing energy-efficient retrieval-augmented generation on mobile neural processing units, which supports practical on-device AI applications <a href="https://arxiv.org/abs/2606.11257">[5]</a>. OpenAI’s frontier models and Codex are now accessible on Amazon Web Services, broadening their availability for development and deployment <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[9]</a>.</p>
+<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">Anthropic shuts down Fable, Mythos models following Trump admin directive</a>
+    <p class="news-card-summary">Anthropic shut down Fable and Mythos models following a US Commerce Department directive citing national security concerns over a reported jailbreak vulnerability.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/fable5-500x500-1781319492.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 12, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/12/openai-webrtc">OpenAI WebRTC Audio Session, now with document context</a>
+    <p class="news-card-summary">OpenAI expanded its WebRTC Audio Session feature to support document context, enabling multimodal interaction with speech and uploaded documents.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/openai-webrtc-document-context-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 12, 2026</span></div>
@@ -734,6 +810,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=uqNpKVpmajw" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/uqNpKVpmajw/hqdefault.jpg" alt="Video: Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!" loading="lazy">
+  <span class="video-card-title">Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!</span>
+  <span class="video-card-meta">WorldofAI, June 13, 2026</span>
+  <span class="video-card-desc">Overview of Minimax M3 Coder, an open-source local language model for code generation and development tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=-Jm-Bf3g9r8" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/-Jm-Bf3g9r8/hqdefault.jpg" alt="Video: How Preply combines AI and human tutors to personalize learning" loading="lazy">
   <span class="video-card-title">How Preply combines AI and human tutors to personalize learning</span>
