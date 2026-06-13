@@ -70,6 +70,11 @@ directory (`https://itunes.apple.com/search?term=NAME&media=podcast` returns
 **Add a tool, conference, or prompt** — edit the matching file in `data/`;
 for new URLs run `python scripts/verify_links.py`; conference dates must be
 confirmed from the official site or written as TBD; build strict and commit.
+Tool categories, their page order, and category intro paragraphs live in
+`CATEGORY_LABELS` and `CATEGORY_INTROS` in `scripts/render_data.py` (the
+hook fails the build on an unknown category). Sites that block scripted
+clients go in the `MANUALLY_VERIFIED` allowlist in `scripts/verify_links.py`
+with the date they were confirmed live in a browser.
 
 **Add a prompt learning resource** — edit `data/prompt_resources.yaml`
 (category `general` renders at the top of the Prompts page, a prompt
