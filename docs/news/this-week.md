@@ -355,8 +355,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>General-purpose large language models now surpass specialized clinical AI tools on medical benchmarks, highlighting the potential for broader integration across clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[4]</a>. Efforts to align data standards and accelerate interoperability using artificial intelligence are facilitating more seamless biomedical research and healthcare system collaboration <a href="https://www.nature.com/articles/s41746-026-02795-z">[3]</a>. A knowledge-augmented large language model has been validated for risk prediction based on multimodal electronic health record data, strengthening outcome prediction in clinical settings <a href="https://ai.jmir.org/2026/1/e88356">[2]</a>. Additionally, an autonomous AI agent has been introduced to support emergency department decision-making through knowledge and data cooperation <a href="https://www.nature.com/articles/s41746-026-02869-y">[6]</a>. These advances signal meaningful changes in the use of AI for clinical guidance and improved workflows.</p>
-<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the source items.</p>
+<p>General-purpose large language models now match or outpace specialized clinical AI tools on standard medical benchmarks, prompting renewed consideration of their potential roles in clinical workflows <a href="https://www.nature.com/articles/s41591-026-04431-5">[5]</a>. Researchers have also validated knowledge-augmented large language models for risk prediction using multimodal electronic health record data, with implications for outcome-based clinical decision-making <a href="https://ai.jmir.org/2026/1/e88356">[3]</a>. A newly described artificial intelligence solution aims to align data standards and accelerate interoperability, supporting more consistent biomedical research and cross-institutional collaboration <a href="https://www.nature.com/articles/s41746-026-02795-z">[4]</a>. In emergency department settings, autonomous AI agents are being developed to support decisions by integrating diverse knowledge and data sources <a href="https://www.nature.com/articles/s41746-026-02869-y">[7]</a>. Demographically equitable medical image synthesis is advancing through preference-aligned diffusion models, addressing equity concerns in diagnostic imaging <a href="https://www.nature.com/articles/s41746-026-02868-z">[2]</a>.</p>
+<p class="section-brief-date">The picture as of June 14, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
@@ -365,6 +365,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02738-8">ActiTect: a generalizable machine learning pipeline for REM sleep behavior disorder screening through standardized actigraphy</a>
     <p class="news-card-summary">Researchers developed ActiTect, a generalizable machine learning pipeline using standardized actigraphy data to screen for rapid eye movement sleep behavior disorder.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02868-z">FairGen: preference-aligned diffusion for demographically equitable medical image synthesis</a>
+    <p class="news-card-summary">Peer-reviewed study presents FairGen, a method for generating medical images with demographic equity using preference-aligned diffusion models.</p>
   </div>
 </div>
 <div class="news-card">
@@ -810,6 +817,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=V1EPXfZV0Ew" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/V1EPXfZV0Ew/hqdefault.jpg" alt="Video: GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?" loading="lazy">
+  <span class="video-card-title">GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?</span>
+  <span class="video-card-meta">Bijan Bowen, June 13, 2026</span>
+  <span class="video-card-desc">Demonstration and evaluation of GLM-5.2, an open-source language model, across coding and reasoning tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=uqNpKVpmajw" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/uqNpKVpmajw/hqdefault.jpg" alt="Video: Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!" loading="lazy">
   <span class="video-card-title">Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!</span>

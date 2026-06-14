@@ -4158,6 +4158,109 @@
    "title_hash": "3fd46c4f8bf7d1d31a21e917b89091e4",
    "first_seen": "2026-06-13T15:53:33.682720+00:00",
    "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels",
+   "title_hash": "898007d1cbc4f2b8a8122eee779c0d6f",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/13/luau-wasm",
+   "title_hash": "7fb49441f88da926c3baf12788280ea9",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance",
+   "title_hash": "6708412300914b534a6868102a29f8be",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4wy3p/this_is_coming_to_chinese_open_source_models",
+   "title_hash": "2a6e3fb56ed39e52d05cf3e2aa8d6ba6",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4ow2h/pi_setup_that_pretty_much_replaced_claude_code",
+   "title_hash": "93321ffffe48dd6ebb4806e031ee43c0",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4je3d/glm52_next_week_open_weight_mit",
+   "title_hash": "034617a4ad45bcc24248e91cb0f72c6f",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4fzg1/new_model_on_huggingface",
+   "title_hash": "af4d733683c30c1ac71afa64ee2a6bf1",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02868-z",
+   "title_hash": "e118eb4f941268858bb3c6f23506ddf3",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": true,
+   "title": "FairGen: preference-aligned diffusion for demographically equitable medical image synthesis",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-13T00:00:00+00:00",
+   "summary": "Peer-reviewed study presents FairGen, a method for generating medical images with demographic equity using preference-aligned diffusion models.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arstechnica.com/space/2026/06/spacex-is-now-a-public-company-valued-for-its-ai-potential-so-what-comes-next",
+   "title_hash": "734bd918176a6679a3f76590695d5965",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xvfz3gXVYNI",
+   "title_hash": "a2dd047db477eefefa6b7c2f696f598a",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=V1EPXfZV0Ew",
+   "title_hash": "86b87c98285dbc7c0817ea0b1158301e",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": true,
+   "title": "GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?",
+   "source": "Bijan Bowen",
+   "published": "2026-06-13T23:01:50+00:00",
+   "summary": "Demonstration and evaluation of GLM-5.2, an open-source language model, across coding and reasoning tasks.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/V1EPXfZV0Ew/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qVn5BN094Qo",
+   "title_hash": "79719c8882193135c1ca319fc72a2ace",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SxiRANj0xLs",
+   "title_hash": "0cf40a371a93d5e851db4d6aba6a7240",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Gh1E9VgXZWs",
+   "title_hash": "a1ec0d797ad73ac2ef3f02af90a248e7",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Fable-5-Shut-Down-by-US-Government-e3koa10",
+   "title_hash": "f744c54ad27b080f20ea56ba27be019b",
+   "first_seen": "2026-06-14T13:16:32.387420+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -4257,9 +4360,9 @@
    "date": "June 13, 2026"
   },
   "clinical_practice": {
-   "text": "General-purpose large language models now surpass specialized clinical AI tools on medical benchmarks, highlighting the potential for broader integration across clinical practice <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[4]</a>. Efforts to align data standards and accelerate interoperability using artificial intelligence are facilitating more seamless biomedical research and healthcare system collaboration <a href=\"https://www.nature.com/articles/s41746-026-02795-z\">[3]</a>. A knowledge-augmented large language model has been validated for risk prediction based on multimodal electronic health record data, strengthening outcome prediction in clinical settings <a href=\"https://ai.jmir.org/2026/1/e88356\">[2]</a>. Additionally, an autonomous AI agent has been introduced to support emergency department decision-making through knowledge and data cooperation <a href=\"https://www.nature.com/articles/s41746-026-02869-y\">[6]</a>. These advances signal meaningful changes in the use of AI for clinical guidance and improved workflows.",
-   "hash": "162fa9ac26f12613",
-   "date": "June 13, 2026"
+   "text": "General-purpose large language models now match or outpace specialized clinical AI tools on standard medical benchmarks, prompting renewed consideration of their potential roles in clinical workflows <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[5]</a>. Researchers have also validated knowledge-augmented large language models for risk prediction using multimodal electronic health record data, with implications for outcome-based clinical decision-making <a href=\"https://ai.jmir.org/2026/1/e88356\">[3]</a>. A newly described artificial intelligence solution aims to align data standards and accelerate interoperability, supporting more consistent biomedical research and cross-institutional collaboration <a href=\"https://www.nature.com/articles/s41746-026-02795-z\">[4]</a>. In emergency department settings, autonomous AI agents are being developed to support decisions by integrating diverse knowledge and data sources <a href=\"https://www.nature.com/articles/s41746-026-02869-y\">[7]</a>. Demographically equitable medical image synthesis is advancing through preference-aligned diffusion models, addressing equity concerns in diagnostic imaging <a href=\"https://www.nature.com/articles/s41746-026-02868-z\">[2]</a>.",
+   "hash": "6770630d8ad54d56",
+   "date": "June 14, 2026"
   },
   "general_ai": {
    "text": "Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive raised concerns about a jailbreak vulnerability affecting national security <a href=\"https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive\">[1]</a>. OpenAI has expanded its WebRTC Audio Session feature to include document context, allowing users to interact with both speech and uploaded documents in a more integrated way <a href=\"https://simonwillison.net/2026/Jun/12/openai-webrtc\">[2]</a>. Hugging Face has introduced olmo-eval, a workbench that streamlines model development and evaluation efforts <a href=\"https://huggingface.co/blog/allenai/olmo-eval\">[3]</a>. Researchers are advancing energy-efficient retrieval-augmented generation on mobile neural processing units, which supports practical on-device AI applications <a href=\"https://arxiv.org/abs/2606.11257\">[5]</a>. OpenAI’s frontier models and Codex are now accessible on Amazon Web Services, broadening their availability for development and deployment <a href=\"https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws\">[9]</a>.",

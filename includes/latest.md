@@ -3,5 +3,5 @@
 - [Exploring the Educational Utility of LLMs in Operative Dentistry Through MCQ-Based Accuracy, Semantic, and Readability Testing](https://pubmed.ncbi.nlm.nih.gov/42286811?fc=20260609215449&ff=20260613081755&v=2.20.0) (PubMed AI in medical education, June 13, 2026)
 - [Anthropic shuts down Fable, Mythos models following Trump admin directive](https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive) (Ars Technica AI, June 13, 2026)
 - [ActiTect: a generalizable machine learning pipeline for REM sleep behavior disorder screening through standardized actigraphy](https://www.nature.com/articles/s41746-026-02738-8) (npj Digital Medicine, June 13, 2026)
+- [FairGen: preference-aligned diffusion for demographically equitable medical image synthesis](https://www.nature.com/articles/s41746-026-02868-z) (npj Digital Medicine, June 13, 2026)
 - [OpenAI WebRTC Audio Session, now with document context](https://simonwillison.net/2026/Jun/12/openai-webrtc) (Simon Willison's weblog, June 12, 2026)
-- [Training Empathetic Communication Skills in Medical Students With a Role-Prompted GPT-4o Chatbot: Quasi-Experimental Intervention Study](https://mededu.jmir.org/2026/1/e88092) (JMIR Medical Education, June 12, 2026)

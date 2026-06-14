@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=V1EPXfZV0Ew" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/V1EPXfZV0Ew/hqdefault.jpg" alt="Video: GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?" loading="lazy">
+  <span class="video-card-title">GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?</span>
+  <span class="video-card-meta">Bijan Bowen, June 13, 2026</span>
+  <span class="video-card-desc">Demonstration and evaluation of GLM-5.2, an open-source language model, across coding and reasoning tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=uqNpKVpmajw" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/uqNpKVpmajw/hqdefault.jpg" alt="Video: Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!" loading="lazy">
   <span class="video-card-title">Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!</span>
