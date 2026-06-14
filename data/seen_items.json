@@ -4261,6 +4261,49 @@
    "title_hash": "f744c54ad27b080f20ea56ba27be019b",
    "first_seen": "2026-06-14T13:16:32.387420+00:00",
    "kept": false
+  },
+  {
+   "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink",
+   "title_hash": "651148683eb6abe5804d3f7baa271ece",
+   "first_seen": "2026-06-14T16:08:35.889212+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://github.com/kekcleader/FreeOberon",
+   "title_hash": "f306a45a113e8bc030ef56c096ffef94",
+   "first_seen": "2026-06-14T16:08:35.889212+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zJvN8PDX1is",
+   "title_hash": "5f779459d541c353de9530154c8bed61",
+   "first_seen": "2026-06-14T16:08:35.889212+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gRFhacXrP1s",
+   "title_hash": "5a311ce20032a93251d9cf608147d2eb",
+   "first_seen": "2026-06-14T16:08:35.889212+00:00",
+   "kept": true,
+   "title": "Diffusion Gemma First Look & Demo, A BIG Step for Local AI Models!",
+   "source": "Bijan Bowen",
+   "published": "2026-06-14T14:35:51+00:00",
+   "summary": "Diffusion Gemma is a new generative image model that runs locally; this video demonstrates its capabilities and technical details for practitioners working with open-weights models.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/gRFhacXrP1s/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
+   "title_hash": "e556e12d6b28ef9b2b2753ab6fd9e42b",
+   "first_seen": "2026-06-14T16:08:35.889212+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/This-Week-in-AI-in-5-Minutes-Fable-Chaos-Edition-e3kp7dn",
+   "title_hash": "5c5999ca1dca026fd90975e3edc0702f",
+   "first_seen": "2026-06-14T16:08:35.889212+00:00",
+   "kept": false
   }
  ],
  "digests": [

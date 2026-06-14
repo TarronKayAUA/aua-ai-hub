@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=gRFhacXrP1s" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/gRFhacXrP1s/hqdefault.jpg" alt="Video: Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!" loading="lazy">
+  <span class="video-card-title">Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!</span>
+  <span class="video-card-meta">Bijan Bowen, June 14, 2026</span>
+  <span class="video-card-desc">Diffusion Gemma is a new generative image model that runs locally; this video demonstrates its capabilities and technical details for practitioners working with open-weights models.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=V1EPXfZV0Ew" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/V1EPXfZV0Ew/hqdefault.jpg" alt="Video: GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?" loading="lazy">
   <span class="video-card-title">GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?</span>
