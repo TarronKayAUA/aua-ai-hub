@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A practical guide addresses the implementation and capability of large language model prompt engineering in specialist-level medical education for anaesthesia, providing actionable insights for examination preparation and curriculum integration <a href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. Empirical evidence indicates that generative artificial intelligence enhances student learning performance through mechanisms aligned with social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[1]</a>. Reliable complementary assessment by ChatGPT of reflective clinical reasoning assignments in dermatology undergraduate students demonstrates meaningful concordance with human graders, suggesting scalable evaluation methods <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[2]</a>. At the international level, the AI readiness gap has been quantified among radiation oncology clinicians, establishing a benchmark for artificial intelligence literacy and clinical preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[11]</a>.</p>
+<p>ChatGPT has demonstrated reliable complementary assessment capabilities for reflective clinical reasoning assignments in dermatology undergraduates, showing meaningful concordance with human grading and supporting the integration of machine evaluation into medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. A recent empirical study found that generative AI enhances learning performance among medical students through mechanisms aligned with social cognitive theory, indicating broad pedagogical benefits <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[2]</a>. Practical guidance for implementing large language models in specialist-level anaesthesia training highlights both the capability of these tools and considerations for prompt engineering <a href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[4]</a>. Methodological rigor remains a concern in AI studies, with analysis revealing gaps in research design and philosophical frameworks that affect study quality <a href="https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[6]</a>.</p>
 <p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e76924">Developing a Large Language Model, Based Feedback System for Case Report Writing in Rehabilitation Education: Tutorial</a>
+    <p class="news-card-summary">Tutorial describes development of a large language model feedback system to assist rehabilitation students in writing clinical case reports.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6c27dff69c1613c31e499e3fbb24630b.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Evaluation of DeepSeek-Generated Biochemistry Clinical Cases for Teaching Purpose</a>
     <p class="news-card-summary">Study evaluates DeepSeek-generated biochemistry clinical cases as a workflow to address limitations in traditional case-based teaching.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42278944?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Language-Specific Differences in Large Language Model Diagnostic Reasoning: A Translation-Controlled Clinical Vignette Study</a>
-    <p class="news-card-summary">Translation-controlled study finds large language models show language-specific differences in diagnostic reasoning on clinical vignettes.</p>
   </div>
 </div>
 </div>

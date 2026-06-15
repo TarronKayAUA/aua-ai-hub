@@ -11,11 +11,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A practical guide addresses the implementation and capability of large language model prompt engineering in specialist-level medical education for anaesthesia, providing actionable insights for examination preparation and curriculum integration <a href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. Empirical evidence indicates that generative artificial intelligence enhances student learning performance through mechanisms aligned with social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[1]</a>. Reliable complementary assessment by ChatGPT of reflective clinical reasoning assignments in dermatology undergraduate students demonstrates meaningful concordance with human graders, suggesting scalable evaluation methods <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[2]</a>. At the international level, the AI readiness gap has been quantified among radiation oncology clinicians, establishing a benchmark for artificial intelligence literacy and clinical preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[11]</a>.</p>
+<p>ChatGPT has demonstrated reliable complementary assessment capabilities for reflective clinical reasoning assignments in dermatology undergraduates, showing meaningful concordance with human grading and supporting the integration of machine evaluation into medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. A recent empirical study found that generative AI enhances learning performance among medical students through mechanisms aligned with social cognitive theory, indicating broad pedagogical benefits <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[2]</a>. Practical guidance for implementing large language models in specialist-level anaesthesia training highlights both the capability of these tools and considerations for prompt engineering <a href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[4]</a>. Methodological rigor remains a concern in AI studies, with analysis revealing gaps in research design and philosophical frameworks that affect study quality <a href="https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[6]</a>.</p>
 <p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e76924">Developing a Large Language Model, Based Feedback System for Case Report Writing in Rehabilitation Education: Tutorial</a>
+    <p class="news-card-summary">Tutorial describes development of a large language model feedback system to assist rehabilitation students in writing clinical case reports.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6c27dff69c1613c31e499e3fbb24630b.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
@@ -397,11 +405,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>General-purpose large language models are matching or outperforming specialized clinical artificial intelligence tools on medical benchmarks, which may influence future evaluation and adoption of AI technologies in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[8]</a>. In mental health, digital phenotyping validated with large language models is able to detect shifts in depressive states using patient-generated text data <a href="https://www.nature.com/articles/s41746-026-02883-0">[2]</a>, and systematic review suggests cognitive behavioral therapy delivered through NLP-enabled conversational agents holds promise for intervention <a href="https://www.nature.com/articles/s41746-026-02886-x">[11]</a>. For risk prediction and outcome assessment, knowledge-augmented large language models are being validated to forecast clinical outcomes from multimodal electronic health record data <a href="https://ai.jmir.org/2026/1/e88356">[6]</a>, while FIRST-ICU uses graph neural network autoencoders to forecast interventions and stratify risk in the intensive care unit <a href="https://www.nature.com/articles/s41746-026-02890-1">[15]</a>.</p>
+<p>General-purpose large language models now match or outperform specialized clinical artificial intelligence tools on medical benchmarks, indicating a shift in how AI is assessed for clinical utility <a href="https://www.nature.com/articles/s41591-026-04431-5">[10]</a>. Additionally, machine learning is being applied to emergency department workflows, including predicting laboratory test ordering based on integrated electronic health record data <a href="https://medinform.jmir.org/2026/1/e85255">[1]</a>, and supporting decision-making with an autonomous agent that synthesizes knowledge and data <a href="https://www.nature.com/articles/s41746-026-02869-y">[12]</a>. The detection of depressive state changes from patient-generated text using digital phenotyping with large language models demonstrates clinical validation for mental health monitoring <a href="https://www.nature.com/articles/s41746-026-02883-0">[4]</a>. Automated ICD coding from clinical documentation is being evaluated for improvement through post-training on large language models <a href="https://arxiv.org/abs/2606.13940">[3]</a>.</p>
 <p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e85255">Predicting Laboratory Test Ordering in Emergency Departments Using Integrated Structured and Unstructured Electronic Health Records: Machine Learning Study</a>
+    <p class="news-card-summary">Machine learning model predicts emergency department laboratory test ordering using structured and unstructured electronic health record data to support clinical decision-making.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/354a2cc0feee66259ce6e37274beff5e.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e81049">AI-Assisted Systematic Literature Review of the Economic Burden of Pneumococcal Disease: Development and Validation Study</a>
+    <p class="news-card-summary">Study validates AI-assisted automated systematic literature review for extracting economic evidence on pneumococcal disease burden from medical databases.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/fc7be4ebbdd9481f612f762ed4c9b5f3.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>

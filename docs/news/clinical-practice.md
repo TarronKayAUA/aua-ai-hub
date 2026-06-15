@@ -13,11 +13,27 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>General-purpose large language models are matching or outperforming specialized clinical artificial intelligence tools on medical benchmarks, which may influence future evaluation and adoption of AI technologies in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[8]</a>. In mental health, digital phenotyping validated with large language models is able to detect shifts in depressive states using patient-generated text data <a href="https://www.nature.com/articles/s41746-026-02883-0">[2]</a>, and systematic review suggests cognitive behavioral therapy delivered through NLP-enabled conversational agents holds promise for intervention <a href="https://www.nature.com/articles/s41746-026-02886-x">[11]</a>. For risk prediction and outcome assessment, knowledge-augmented large language models are being validated to forecast clinical outcomes from multimodal electronic health record data <a href="https://ai.jmir.org/2026/1/e88356">[6]</a>, while FIRST-ICU uses graph neural network autoencoders to forecast interventions and stratify risk in the intensive care unit <a href="https://www.nature.com/articles/s41746-026-02890-1">[15]</a>.</p>
+<p>General-purpose large language models now match or outperform specialized clinical artificial intelligence tools on medical benchmarks, indicating a shift in how AI is assessed for clinical utility <a href="https://www.nature.com/articles/s41591-026-04431-5">[10]</a>. Additionally, machine learning is being applied to emergency department workflows, including predicting laboratory test ordering based on integrated electronic health record data <a href="https://medinform.jmir.org/2026/1/e85255">[1]</a>, and supporting decision-making with an autonomous agent that synthesizes knowledge and data <a href="https://www.nature.com/articles/s41746-026-02869-y">[12]</a>. The detection of depressive state changes from patient-generated text using digital phenotyping with large language models demonstrates clinical validation for mental health monitoring <a href="https://www.nature.com/articles/s41746-026-02883-0">[4]</a>. Automated ICD coding from clinical documentation is being evaluated for improvement through post-training on large language models <a href="https://arxiv.org/abs/2606.13940">[3]</a>.</p>
 <p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e85255">Predicting Laboratory Test Ordering in Emergency Departments Using Integrated Structured and Unstructured Electronic Health Records: Machine Learning Study</a>
+    <p class="news-card-summary">Machine learning model predicts emergency department laboratory test ordering using structured and unstructured electronic health record data to support clinical decision-making.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/354a2cc0feee66259ce6e37274beff5e.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e81049">AI-Assisted Systematic Literature Review of the Economic Burden of Pneumococcal Disease: Development and Validation Study</a>
+    <p class="news-card-summary">Study validates AI-assisted automated systematic literature review for extracting economic evidence on pneumococcal disease burden from medical databases.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/fc7be4ebbdd9481f612f762ed4c9b5f3.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
@@ -111,20 +127,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Researchers developed and validated an artificial intelligence algorithm using resting 12-lead electrocardiograms to predict low peak oxygen consumption.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63e1243f80a16a342e25c255f1fcc7ef.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e94063">A Machine Learning Approach to Voice-Based Parkinson Disease Screening Using Multiview Spectrogram and Speech Recognition Features: Diagnostic Study</a>
-    <p class="news-card-summary">A machine learning model using voice spectrogram and speech recognition features was created for Parkinson disease screening based on early vocal impairments.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63e465df8b1aee77903bb094c6e4cd6e.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02890-1">FIRST-ICU: forecasting interventions and risk stratification in the ICU using graph neural network autoencoders</a>
-    <p class="news-card-summary">The FIRST-ICU model uses graph neural network autoencoders to forecast interventions and risk stratify patients in intensive care units.</p>
-  </div>
 </div>
 </div>
