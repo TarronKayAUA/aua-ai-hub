@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=MTmhgIVhpag" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/MTmhgIVhpag/hqdefault.jpg" alt="Video: What Is AI Pair Programming? AI Coding Tools for Developers" loading="lazy">
+  <span class="video-card-title">What Is AI Pair Programming? AI Coding Tools for Developers</span>
+  <span class="video-card-meta">IBM Technology, June 15, 2026</span>
+  <span class="video-card-desc">Overview of AI pair programming tools and their application to software development workflows.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=gRFhacXrP1s" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/gRFhacXrP1s/hqdefault.jpg" alt="Video: Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!" loading="lazy">
   <span class="video-card-title">Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!</span>

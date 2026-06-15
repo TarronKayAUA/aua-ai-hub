@@ -13,16 +13,58 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A peer-reviewed evaluation indicates that ChatGPT-4o demonstrates the highest accuracy in operative dentistry multiple-choice questions, though with inconsistencies in semantic and readability measures <a href="https://pubmed.ncbi.nlm.nih.gov/42286811?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">[1]</a>. Meanwhile, a quasi-experimental study assessed the use of a role-prompted GPT-4o chatbot for training empathetic communication skills, reporting measurable learning outcomes for medical students <a href="https://mededu.jmir.org/2026/1/e88092">[2]</a>. At a broader level, researchers have developed a framework to guide artificial intelligence integration into UK medical school curricula, responding to changing healthcare demands <a href="https://mededu.jmir.org/2026/1/e81953">[3]</a>. Survey findings suggest medical students recognize the expanding role of artificial intelligence in their education and express preference for structured training formats <a href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[6]</a>.</p>
-<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the items below.</p>
+<p>A practical guide addresses the implementation and capability of large language model prompt engineering in specialist-level medical education for anaesthesia, providing actionable insights for examination preparation and curriculum integration <a href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. Empirical evidence indicates that generative artificial intelligence enhances student learning performance through mechanisms aligned with social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[1]</a>. Reliable complementary assessment by ChatGPT of reflective clinical reasoning assignments in dermatology undergraduate students demonstrates meaningful concordance with human graders, suggesting scalable evaluation methods <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[2]</a>. At the international level, the AI readiness gap has been quantified among radiation oncology clinicians, establishing a benchmark for artificial intelligence literacy and clinical preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">[11]</a>.</p>
+<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Generative AI and student learning performance in medical higher education: a social cognitive theory perspective</a>
+    <p class="news-card-summary">Empirical study demonstrates that generative AI enhances learning performance in medical higher education through mechanisms aligned with social cognitive theory.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Beyond Red Pen: Comparing the machine vs human grading of reflective assignments on clinical reasoning in Dermatology undergraduate students</a>
+    <p class="news-card-summary">ChatGPT provides reliable complementary assessment of reflective clinical reasoning assignments in dermatology students, with results showing meaningful concordance with human graders.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Large language model prompt engineering for medical education: A practical guide for the Australian and New Zealand College of Anaesthetists Final Examination</a>
+    <p class="news-card-summary">Practical guide for using large language models in prompt engineering across specialist-level medical education in anaesthesia, addressing capability and implementation considerations.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42286811?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Exploring the Educational Utility of LLMs in Operative Dentistry Through MCQ-Based Accuracy, Semantic, and Readability Testing</a>
     <p class="news-card-summary">Peer-reviewed evaluation found ChatGPT-4o achieved highest accuracy on operative dentistry multiple-choice questions but with variable semantic and readability performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">How crucial is research philosophy in designing an AI study in medical education?</a>
+    <p class="news-card-summary">Analysis of methodological rigor in AI studies within medical education, addressing common research design and philosophical framework gaps affecting paper quality.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42288333?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Item-Level Evaluation of Multimodal Large Language Models in Neuroradiology: Generational Performance and Execution Variability</a>
+    <p class="news-card-summary">Item-level evaluation of multimodal large language models on neuroradiology tasks shows meaningful performance gains across model generations with notable variability.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">The eye sees what the mind knows: Eye tracking and artificial intelligence to assess surgical resident level of expertise</a>
+    <p class="news-card-summary">Eye-tracking combined with artificial intelligence identifies gaze patterns that distinguish expertise levels in surgical residents during procedural training.</p>
   </div>
 </div>
 <div class="news-card">
@@ -82,49 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42278944?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Language-Specific Differences in Large Language Model Diagnostic Reasoning: A Translation-Controlled Clinical Vignette Study</a>
     <p class="news-card-summary">Translation-controlled study finds large language models show language-specific differences in diagnostic reasoning on clinical vignettes.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Exploring the use of AI-generated counterfactual chest X-rays to enhance diagnostic learning in medical education</a>
-    <p class="news-card-summary">Research explores artificial intelligence-generated counterfactual chest X-rays to improve diagnostic learning outcomes in medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42284227?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Meta-analysis of randomized controlled trials comparing outcomes of artificial intelligence-based teaching versus traditional-based teaching in medical education</a>
-    <p class="news-card-summary">Meta-analysis of randomized controlled trials found artificial intelligence-based teaching approaches performed comparably to or better than traditional teaching methods.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e86208">AI-Generated Multiple Mini Interview (MMI) Stations for Medical School Admissions: Psychometric Evaluation</a>
-    <p class="news-card-summary">Artificial intelligence was used to generate multiple mini interview stations for medical school admissions, with psychometric evaluation of their quality.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/973cb92a143a1dafec01f581c504e7dd.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42272748?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">MedQA-CS: Objective Structured Clinical Examination (OSCE)-Style Benchmark for Evaluating LLM Clinical Skills</a>
-    <p class="news-card-summary">MedQA-CS offers an Objective Structured Clinical Examination-style benchmark to evaluate large language model clinical skills accurately.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42272707?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Head-to-head evaluation of ChatGPT, DeepSeek, and Perplexity on acid-base disorder case clinical management and drug treatment: Accuracy, domain performance, and response consistency assessment</a>
-    <p class="news-card-summary">A study compares ChatGPT, DeepSeek, and Perplexity on acid-base disorder management, finding ChatGPT and DeepSeek have moderate and generally better accuracy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42271392?fc=20260609215449&amp;ff=20260611080252&amp;v=2.20.0">Integrating large language models into prostate cancer training: evidence from comparative benchmarking and a pilot randomized trial</a>
-    <p class="news-card-summary">A pilot randomized trial shows that teaching with large language models improves prostate cancer training examination performance.</p>
   </div>
 </div>
 </div>

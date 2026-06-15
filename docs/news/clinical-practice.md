@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>General-purpose large language models now match or outpace specialized clinical AI tools on standard medical benchmarks, prompting renewed consideration of their potential roles in clinical workflows <a href="https://www.nature.com/articles/s41591-026-04431-5">[5]</a>. Researchers have also validated knowledge-augmented large language models for risk prediction using multimodal electronic health record data, with implications for outcome-based clinical decision-making <a href="https://ai.jmir.org/2026/1/e88356">[3]</a>. A newly described artificial intelligence solution aims to align data standards and accelerate interoperability, supporting more consistent biomedical research and cross-institutional collaboration <a href="https://www.nature.com/articles/s41746-026-02795-z">[4]</a>. In emergency department settings, autonomous AI agents are being developed to support decisions by integrating diverse knowledge and data sources <a href="https://www.nature.com/articles/s41746-026-02869-y">[7]</a>. Demographically equitable medical image synthesis is advancing through preference-aligned diffusion models, addressing equity concerns in diagnostic imaging <a href="https://www.nature.com/articles/s41746-026-02868-z">[2]</a>.</p>
-<p class="section-brief-date">The picture as of June 14, 2026; numbered links go to the items below.</p>
+<p>General-purpose large language models are matching or outperforming specialized clinical artificial intelligence tools on medical benchmarks, which may influence future evaluation and adoption of AI technologies in clinical practice <a href="https://www.nature.com/articles/s41591-026-04431-5">[8]</a>. In mental health, digital phenotyping validated with large language models is able to detect shifts in depressive states using patient-generated text data <a href="https://www.nature.com/articles/s41746-026-02883-0">[2]</a>, and systematic review suggests cognitive behavioral therapy delivered through NLP-enabled conversational agents holds promise for intervention <a href="https://www.nature.com/articles/s41746-026-02886-x">[11]</a>. For risk prediction and outcome assessment, knowledge-augmented large language models are being validated to forecast clinical outcomes from multimodal electronic health record data <a href="https://ai.jmir.org/2026/1/e88356">[6]</a>, while FIRST-ICU uses graph neural network autoencoders to forecast interventions and stratify risk in the intensive care unit <a href="https://www.nature.com/articles/s41746-026-02890-1">[15]</a>.</p>
+<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.13940">Can Post-Training Turn LLMs into Good Medical Coders? An Empirical Study of Generative ICD Coding</a>
+    <p class="news-card-summary">Study evaluates whether post-training can improve large language models for automated International Classification of Diseases coding from clinical documentation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02883-0">Digital phenotyping with large language models to detect depressive state changes in patients</a>
+    <p class="news-card-summary">Digital phenotyping using large language models detects changes in depressive state from patient-generated text data with clinical validation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02880-3">A scoping review of traditional and artificial intelligence methods in malaria diagnostics</a>
+    <p class="news-card-summary">Scoping review compares traditional diagnostic methods and artificial intelligence approaches for malaria detection across available evidence.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
@@ -105,27 +126,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02890-1">FIRST-ICU: forecasting interventions and risk stratification in the ICU using graph neural network autoencoders</a>
     <p class="news-card-summary">The FIRST-ICU model uses graph neural network autoencoders to forecast interventions and risk stratify patients in intensive care units.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02664-9">Embeddings of clinical codes enable knowledge-grounded AI in medicine</a>
-    <p class="news-card-summary">This study in npj Digital Medicine demonstrates how embeddings of clinical codes can enable knowledge-grounded artificial intelligence applications in medicine for improved clinical insights.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02878-x">A systematic review of explainable artificial intelligence and cardiac electrophysiological models addressing sports-related sudden cardiac death and arrest in adolescents and young adults</a>
-    <p class="news-card-summary">A systematic review in npj Digital Medicine evaluates explainable artificial intelligence and cardiac electrophysiological models related to sports-associated sudden cardiac events.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02827-8">How can reasoning capability empower the AI copilot robot in endoscopic surgery</a>
-    <p class="news-card-summary">This article explores how reasoning capabilities can enhance AI copilot robots assisting in endoscopic surgical procedures.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-02827-8/MediaObjects/41746_2026_2827_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

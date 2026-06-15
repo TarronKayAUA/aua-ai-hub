@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive raised concerns about a jailbreak vulnerability affecting national security <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[1]</a>. OpenAI has expanded its WebRTC Audio Session feature to include document context, allowing users to interact with both speech and uploaded documents in a more integrated way <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[2]</a>. Hugging Face has introduced olmo-eval, a workbench that streamlines model development and evaluation efforts <a href="https://huggingface.co/blog/allenai/olmo-eval">[3]</a>. Researchers are advancing energy-efficient retrieval-augmented generation on mobile neural processing units, which supports practical on-device AI applications <a href="https://arxiv.org/abs/2606.11257">[5]</a>. OpenAI’s frontier models and Codex are now accessible on Amazon Web Services, broadening their availability for development and deployment <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">[9]</a>.</p>
-<p class="section-brief-date">The picture as of June 13, 2026; numbered links go to the items below.</p>
+<p>Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive, reportedly due to a jailbreak vulnerability and associated national security concerns <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[3]</a>. Reliability and bias issues in large language model-as-judge evaluation methods remain highlighted, raising questions about how these models are ranked and compared <a href="https://arxiv.org/abs/2606.13685">[1]</a>. Meanwhile, OpenAI expanded its WebRTC Audio Session to support document context, enabling multimodal interaction between speech and uploaded documents for broader application <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[4]</a>. Energy-efficient, on-device retrieval-augmented generation systems are advancing, with a new design benchmarked on a Snapdragon X Elite mobile neural processing unit to enable practical deployments <a href="https://arxiv.org/abs/2606.11257">[7]</a>. Hugging Face released the olmo-eval workbench, supporting model development workflows with improved evaluation tools <a href="https://huggingface.co/blog/allenai/olmo-eval">[5]</a>.</p>
+<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.13685">The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation</a>
+    <p class="news-card-summary">Analysis of large language model-as-judge evaluation methods reveals reliability concerns and systematic biases affecting model ranking comparisons.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.14179">CacheRL:Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward</a>
+    <p class="news-card-summary">CacheRL system trains small language model agents for multi-turn tool-calling tasks using cached rollouts and hybrid reward mechanisms.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 13, 2026</span></div>
@@ -116,13 +130,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">OpenAI&#x27;s frontier models and Codex code generation models are now available for use on Amazon Web Services cloud platform.</p>
   </div>
   <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/2Tbsus4QAtPDAlsIM3vYO2/87f4c6894832d7937e54ecb3c245fdbe/OAI_AWS_Partnership_16x9_Art_Card.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
-    <a class="news-card-title" href="https://cs336.stanford.edu/">CS336: Language Modeling from Scratch</a>
-    <p class="news-card-summary">Stanford&#x27;s CS336 course provides an educational resource on language modeling from scratch, useful for understanding foundational AI concepts.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cs336.stanford.edu/assets/images/stanford-nlp-logo-new.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
