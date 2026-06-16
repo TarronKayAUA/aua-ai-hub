@@ -11,11 +11,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>ChatGPT has demonstrated reliable complementary assessment capabilities for reflective clinical reasoning assignments in dermatology undergraduates, showing meaningful concordance with human grading and supporting the integration of machine evaluation into medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. A recent empirical study found that generative AI enhances learning performance among medical students through mechanisms aligned with social cognitive theory, indicating broad pedagogical benefits <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[2]</a>. Practical guidance for implementing large language models in specialist-level anaesthesia training highlights both the capability of these tools and considerations for prompt engineering <a href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[4]</a>. Methodological rigor remains a concern in AI studies, with analysis revealing gaps in research design and philosophical frameworks that affect study quality <a href="https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[6]</a>.</p>
-<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the source items.</p>
+<p>A comparative benchmark found DeepSeek-R1 outperformed average human and AI scores on USMLE questions, strengthening its role as a standard for medical AI evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">[6]</a>. Generative AI is shown to enhance student learning performance in medical higher education, with effects consistent with social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. The integration of AI into medical school curricula is proceeding, highlighted by a new framework in the UK aimed at meeting evolving healthcare demands <a href="https://mededu.jmir.org/2026/1/e81953">[12]</a>. Meanwhile, eye-tracking paired with artificial intelligence now distinguishes expertise levels among surgical residents, highlighting AI’s expanding application in procedural training scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[10]</a>.</p>
+<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">Comparative Accuracy and Safety of 4 Large Language Models on Cornea and External Disease Multiple-Choice Questions</a>
+    <p class="news-card-summary">Comparative evaluation found GPT-5.2, Gemini 3 Pro, and Claude Opus 4.5 achieve similar high accuracy on ophthalmology board exam questions.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 15, 2026</span></div>
@@ -43,6 +50,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Large language model prompt engineering for medical education: A practical guide for the Australian and New Zealand College of Anaesthetists Final Examination</a>
     <p class="news-card-summary">Practical guide for using large language models in prompt engineering across specialist-level medical education in anaesthesia, addressing capability and implementation considerations.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">A comparative benchmark of DeepSeek-R1 on the USMLE: surpassing human and AI performance averages</a>
+    <p class="news-card-summary">DeepSeek-R1 achieved above-average performance on USMLE questions, suggesting utility as a benchmark model for medical AI assessment.</p>
   </div>
 </div>
 <div class="news-card">
@@ -405,11 +419,32 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>General-purpose large language models now match or outperform specialized clinical artificial intelligence tools on medical benchmarks, indicating a shift in how AI is assessed for clinical utility <a href="https://www.nature.com/articles/s41591-026-04431-5">[10]</a>. Additionally, machine learning is being applied to emergency department workflows, including predicting laboratory test ordering based on integrated electronic health record data <a href="https://medinform.jmir.org/2026/1/e85255">[1]</a>, and supporting decision-making with an autonomous agent that synthesizes knowledge and data <a href="https://www.nature.com/articles/s41746-026-02869-y">[12]</a>. The detection of depressive state changes from patient-generated text using digital phenotyping with large language models demonstrates clinical validation for mental health monitoring <a href="https://www.nature.com/articles/s41746-026-02883-0">[4]</a>. Automated ICD coding from clinical documentation is being evaluated for improvement through post-training on large language models <a href="https://arxiv.org/abs/2606.13940">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the source items.</p>
+<p>A framework for decision-theoretic abstention is advancing understanding of when large language models should refrain from providing responses in clinical scenarios, highlighting safety as a central concern <a href="https://www.nature.com/articles/s41746-026-02882-1">[2]</a>. In emergency departments, machine learning models that utilize both structured and unstructured electronic health record data are being evaluated for their ability to predict laboratory test ordering and assist clinical decisions <a href="https://medinform.jmir.org/2026/1/e85255">[4]</a>. New AI-enabled wearable technology has achieved reduced misdiagnosis rates for obstructive sleep apnea by enabling multi-night patient monitoring without added burden <a href="https://www.nature.com/articles/s41746-026-02914-w">[3]</a>. Finally, general-purpose large language models are demonstrating performance on medical benchmarks comparable to or better than specialized clinical AI tools in independent assessments <a href="https://www.nature.com/articles/s41591-026-04431-5">[13]</a>.</p>
+<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42301010?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">Zero-shot Thoracic Oncologic History Generation for Radiologists Using Retrieval-augmented Large Language Model Pipeline</a>
+    <p class="news-card-summary">Study demonstrates zero-shot large language model generation of oncologic history for radiology using retrieval-augmented pipeline.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02882-1">When silence is safer: a review and decision-theoretic framework for LLM abstention in healthcare</a>
+    <p class="news-card-summary">Framework proposes decision-theoretic approach for when large language models should abstain from responding in clinical settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02914-w">Zero burden multi night monitoring with AI enabled technology reduces obstructive sleep apnea misdiagnosis</a>
+    <p class="news-card-summary">AI-enabled wearable technology reduces misdiagnosis of obstructive sleep apnea through multi-night monitoring without burden on patients.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 15, 2026</span></div>
@@ -787,11 +822,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive, reportedly due to a jailbreak vulnerability and associated national security concerns <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[3]</a>. Reliability and bias issues in large language model-as-judge evaluation methods remain highlighted, raising questions about how these models are ranked and compared <a href="https://arxiv.org/abs/2606.13685">[1]</a>. Meanwhile, OpenAI expanded its WebRTC Audio Session to support document context, enabling multimodal interaction between speech and uploaded documents for broader application <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[4]</a>. Energy-efficient, on-device retrieval-augmented generation systems are advancing, with a new design benchmarked on a Snapdragon X Elite mobile neural processing unit to enable practical deployments <a href="https://arxiv.org/abs/2606.11257">[7]</a>. Hugging Face released the olmo-eval workbench, supporting model development workflows with improved evaluation tools <a href="https://huggingface.co/blog/allenai/olmo-eval">[5]</a>.</p>
-<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the source items.</p>
+<p>NVIDIA&#x27;s release of Nemotron 3 Ultra introduces a 550-billion-parameter, open-weight mixture-of-experts model that integrates both Mamba and Transformer architectures, supporting advanced agentic reasoning <a href="https://arxiv.org/abs/2606.15007">[2]</a>. The practicality of running local models has improved, with advances in deployment, inference speed, and open-weight model availability enabling broader access and use <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[1]</a>. Meanwhile, OpenAI&#x27;s update to its WebRTC Audio Session now allows speech interaction with uploaded documents, facilitating multimodal capabilities <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[6]</a>. Recent analysis highlights reliability and systematic bias concerns in large language model-as-judge evaluations, raising questions about the effectiveness of model comparison methods <a href="https://arxiv.org/abs/2606.13685">[3]</a>. Anthropic discontinued its Fable and Mythos models after the US Commerce Department cited national security concerns related to jailbreak vulnerabilities <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[5]</a>.</p>
+<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">Running local models is good now</a>
+    <p class="news-card-summary">Article examines improvements in practical local model deployment, inference speed, and availability of capable open-weight models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://vickiboykis.com/images/refactor_gemma.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.15007">Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning</a>
+    <p class="news-card-summary">NVIDIA released Nemotron 3 Ultra, a 550-billion-parameter open-weight mixture-of-experts model combining Mamba and Transformer architectures for agentic reasoning.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
@@ -845,6 +895,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Moonshot AI releases Kimi K2.7-Code, an open-source coding-focused model with improved token efficiency.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K2.7-Code.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://cohere.com/blog/north-mini-code">Cohere&#x27;s First Model for Developers</a>
+    <p class="news-card-summary">Cohere released North Mini, a compact code-generation model targeting developers who need smaller alternatives to large models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/824d32875c1faf5d7048cb18d83e006e46c9b869-3840x2160.png?rect=0,72,3840,2016&amp;w=1200&amp;h=630" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -918,6 +976,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=CFqjjKp9Y-Q" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/CFqjjKp9Y-Q/hqdefault.jpg" alt="Video: Why Tejal Patwardhan stopped underestimating the models - Episode 21" loading="lazy">
+  <span class="video-card-title">Why Tejal Patwardhan stopped underestimating the models - Episode 21</span>
+  <span class="video-card-meta">OpenAI, June 16, 2026</span>
+  <span class="video-card-desc">OpenAI&#x27;s frontier evaluations lead discusses how standard benchmarks are becoming too easy for current models, requiring new evaluation approaches.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=l72ufA-4SzE" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/l72ufA-4SzE/hqdefault.jpg" alt="Video: They Looked Inside Claude’s AI&#x27;s Mind. It Got Weird" loading="lazy">
+  <span class="video-card-title">They Looked Inside Claude’s AI&#x27;s Mind. It Got Weird</span>
+  <span class="video-card-meta">Two Minute Papers, June 16, 2026</span>
+  <span class="video-card-desc">Researchers examine interpretability findings from Claude&#x27;s internal representations, revealing unexpected patterns in how the model processes information.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=4vfvvzzwcwI" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/4vfvvzzwcwI/hqdefault.jpg" alt="Video: Kagenti’s Approach to Multi-Agent Security for AI Agents" loading="lazy">
+  <span class="video-card-title">Kagenti’s Approach to Multi-Agent Security for AI Agents</span>
+  <span class="video-card-meta">IBM Technology, June 16, 2026</span>
+  <span class="video-card-desc">Security approaches for multi-agent AI systems, covering data leakage risks and safeguards for autonomous agent deployments.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=MTmhgIVhpag" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/MTmhgIVhpag/hqdefault.jpg" alt="Video: What Is AI Pair Programming? AI Coding Tools for Developers" loading="lazy">
   <span class="video-card-title">What Is AI Pair Programming? AI Coding Tools for Developers</span>

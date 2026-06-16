@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>ChatGPT has demonstrated reliable complementary assessment capabilities for reflective clinical reasoning assignments in dermatology undergraduates, showing meaningful concordance with human grading and supporting the integration of machine evaluation into medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. A recent empirical study found that generative AI enhances learning performance among medical students through mechanisms aligned with social cognitive theory, indicating broad pedagogical benefits <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[2]</a>. Practical guidance for implementing large language models in specialist-level anaesthesia training highlights both the capability of these tools and considerations for prompt engineering <a href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[4]</a>. Methodological rigor remains a concern in AI studies, with analysis revealing gaps in research design and philosophical frameworks that affect study quality <a href="https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[6]</a>.</p>
-<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
+<p>A comparative benchmark found DeepSeek-R1 outperformed average human and AI scores on USMLE questions, strengthening its role as a standard for medical AI evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">[6]</a>. Generative AI is shown to enhance student learning performance in medical higher education, with effects consistent with social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. The integration of AI into medical school curricula is proceeding, highlighted by a new framework in the UK aimed at meeting evolving healthcare demands <a href="https://mededu.jmir.org/2026/1/e81953">[12]</a>. Meanwhile, eye-tracking paired with artificial intelligence now distinguishes expertise levels among surgical residents, highlighting AI’s expanding application in procedural training scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[10]</a>.</p>
+<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">Comparative Accuracy and Safety of 4 Large Language Models on Cornea and External Disease Multiple-Choice Questions</a>
+    <p class="news-card-summary">Comparative evaluation found GPT-5.2, Gemini 3 Pro, and Claude Opus 4.5 achieve similar high accuracy on ophthalmology board exam questions.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 15, 2026</span></div>
@@ -45,6 +52,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Large language model prompt engineering for medical education: A practical guide for the Australian and New Zealand College of Anaesthetists Final Examination</a>
     <p class="news-card-summary">Practical guide for using large language models in prompt engineering across specialist-level medical education in anaesthesia, addressing capability and implementation considerations.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">A comparative benchmark of DeepSeek-R1 on the USMLE: surpassing human and AI performance averages</a>
+    <p class="news-card-summary">DeepSeek-R1 achieved above-average performance on USMLE questions, suggesting utility as a benchmark model for medical AI assessment.</p>
   </div>
 </div>
 <div class="news-card">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">EXPRESS: Artificial intelligence perceptions and experiences among first and second year medical students</a>
     <p class="news-card-summary">Survey of first and second year medical students shows they anticipate growing artificial intelligence roles in medical education and favor structured training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281346?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Bridging the Health Literacy Gap for Patients With Oral Cancer: Readability Enhancement With AI Chatbots</a>
-    <p class="news-card-summary">Large language model-based simplification enhanced readability of oral cancer patient health materials while preserving medical accuracy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Evaluation of DeepSeek-Generated Biochemistry Clinical Cases for Teaching Purpose</a>
-    <p class="news-card-summary">Study evaluates DeepSeek-generated biochemistry clinical cases as a workflow to address limitations in traditional case-based teaching.</p>
   </div>
 </div>
 </div>

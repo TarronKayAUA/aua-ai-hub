@@ -13,11 +13,26 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive, reportedly due to a jailbreak vulnerability and associated national security concerns <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[3]</a>. Reliability and bias issues in large language model-as-judge evaluation methods remain highlighted, raising questions about how these models are ranked and compared <a href="https://arxiv.org/abs/2606.13685">[1]</a>. Meanwhile, OpenAI expanded its WebRTC Audio Session to support document context, enabling multimodal interaction between speech and uploaded documents for broader application <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[4]</a>. Energy-efficient, on-device retrieval-augmented generation systems are advancing, with a new design benchmarked on a Snapdragon X Elite mobile neural processing unit to enable practical deployments <a href="https://arxiv.org/abs/2606.11257">[7]</a>. Hugging Face released the olmo-eval workbench, supporting model development workflows with improved evaluation tools <a href="https://huggingface.co/blog/allenai/olmo-eval">[5]</a>.</p>
-<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
+<p>NVIDIA&#x27;s release of Nemotron 3 Ultra introduces a 550-billion-parameter, open-weight mixture-of-experts model that integrates both Mamba and Transformer architectures, supporting advanced agentic reasoning <a href="https://arxiv.org/abs/2606.15007">[2]</a>. The practicality of running local models has improved, with advances in deployment, inference speed, and open-weight model availability enabling broader access and use <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[1]</a>. Meanwhile, OpenAI&#x27;s update to its WebRTC Audio Session now allows speech interaction with uploaded documents, facilitating multimodal capabilities <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[6]</a>. Recent analysis highlights reliability and systematic bias concerns in large language model-as-judge evaluations, raising questions about the effectiveness of model comparison methods <a href="https://arxiv.org/abs/2606.13685">[3]</a>. Anthropic discontinued its Fable and Mythos models after the US Commerce Department cited national security concerns related to jailbreak vulnerabilities <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[5]</a>.</p>
+<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">Running local models is good now</a>
+    <p class="news-card-summary">Article examines improvements in practical local model deployment, inference speed, and availability of capable open-weight models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://vickiboykis.com/images/refactor_gemma.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.15007">Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning</a>
+    <p class="news-card-summary">NVIDIA released Nemotron 3 Ultra, a 550-billion-parameter open-weight mixture-of-experts model combining Mamba and Transformer architectures for agentic reasoning.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
@@ -74,6 +89,14 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 11, 2026</span></div>
+    <a class="news-card-title" href="https://cohere.com/blog/north-mini-code">Cohere&#x27;s First Model for Developers</a>
+    <p class="news-card-summary">Cohere released North Mini, a compact code-generation model targeting developers who need smaller alternatives to large models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/824d32875c1faf5d7048cb18d83e006e46c9b869-3840x2160.png?rect=0,72,3840,2016&amp;w=1200&amp;h=630" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.11257">Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite</a>
     <p class="news-card-summary">This work presents an energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units, enabling more practical AI deployments.</p>
@@ -108,27 +131,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">I didn&#x27;t have early access to today&#x27;s Claude Fable 5 release, but I&#x27;ve spent the past ~5.5 hours putting it through its paces.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/fable-max.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 9, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/ServiceNow-AI/code-switching">Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech</a>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/code-switching.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1tyb3np/deepseek_v4_flash_is_amazing_wip_llamacpp_pr_24162">DeepSeek V4 Flash is amazing! (WIP llama.cpp PR #24162)</a>
-    <p class="news-card-summary">DeepSeek V4 series models now supported in llama.cpp, enabling local deployment of this open-weights model family.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 1, 2026</span></div>
-    <a class="news-card-title" href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws">OpenAI frontier models and Codex are now available on AWS</a>
-    <p class="news-card-summary">OpenAI&#x27;s frontier models and Codex code generation models are now available for use on Amazon Web Services cloud platform.</p>
-  </div>
-  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/2Tbsus4QAtPDAlsIM3vYO2/87f4c6894832d7937e54ecb3c245fdbe/OAI_AWS_Partnership_16x9_Art_Card.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

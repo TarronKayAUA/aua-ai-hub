@@ -24,6 +24,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=CFqjjKp9Y-Q" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/CFqjjKp9Y-Q/hqdefault.jpg" alt="Video: Why Tejal Patwardhan stopped underestimating the models - Episode 21" loading="lazy">
+  <span class="video-card-title">Why Tejal Patwardhan stopped underestimating the models - Episode 21</span>
+  <span class="video-card-meta">OpenAI, June 16, 2026</span>
+  <span class="video-card-desc">OpenAI&#x27;s frontier evaluations lead discusses how standard benchmarks are becoming too easy for current models, requiring new evaluation approaches.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=l72ufA-4SzE" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/l72ufA-4SzE/hqdefault.jpg" alt="Video: They Looked Inside Claude’s AI&#x27;s Mind. It Got Weird" loading="lazy">
+  <span class="video-card-title">They Looked Inside Claude’s AI&#x27;s Mind. It Got Weird</span>
+  <span class="video-card-meta">Two Minute Papers, June 16, 2026</span>
+  <span class="video-card-desc">Researchers examine interpretability findings from Claude&#x27;s internal representations, revealing unexpected patterns in how the model processes information.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=4vfvvzzwcwI" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/4vfvvzzwcwI/hqdefault.jpg" alt="Video: Kagenti’s Approach to Multi-Agent Security for AI Agents" loading="lazy">
+  <span class="video-card-title">Kagenti’s Approach to Multi-Agent Security for AI Agents</span>
+  <span class="video-card-meta">IBM Technology, June 16, 2026</span>
+  <span class="video-card-desc">Security approaches for multi-agent AI systems, covering data leakage risks and safeguards for autonomous agent deployments.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=MTmhgIVhpag" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/MTmhgIVhpag/hqdefault.jpg" alt="Video: What Is AI Pair Programming? AI Coding Tools for Developers" loading="lazy">
   <span class="video-card-title">What Is AI Pair Programming? AI Coding Tools for Developers</span>

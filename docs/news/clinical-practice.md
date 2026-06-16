@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>General-purpose large language models now match or outperform specialized clinical artificial intelligence tools on medical benchmarks, indicating a shift in how AI is assessed for clinical utility <a href="https://www.nature.com/articles/s41591-026-04431-5">[10]</a>. Additionally, machine learning is being applied to emergency department workflows, including predicting laboratory test ordering based on integrated electronic health record data <a href="https://medinform.jmir.org/2026/1/e85255">[1]</a>, and supporting decision-making with an autonomous agent that synthesizes knowledge and data <a href="https://www.nature.com/articles/s41746-026-02869-y">[12]</a>. The detection of depressive state changes from patient-generated text using digital phenotyping with large language models demonstrates clinical validation for mental health monitoring <a href="https://www.nature.com/articles/s41746-026-02883-0">[4]</a>. Automated ICD coding from clinical documentation is being evaluated for improvement through post-training on large language models <a href="https://arxiv.org/abs/2606.13940">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 15, 2026; numbered links go to the items below.</p>
+<p>A framework for decision-theoretic abstention is advancing understanding of when large language models should refrain from providing responses in clinical scenarios, highlighting safety as a central concern <a href="https://www.nature.com/articles/s41746-026-02882-1">[2]</a>. In emergency departments, machine learning models that utilize both structured and unstructured electronic health record data are being evaluated for their ability to predict laboratory test ordering and assist clinical decisions <a href="https://medinform.jmir.org/2026/1/e85255">[4]</a>. New AI-enabled wearable technology has achieved reduced misdiagnosis rates for obstructive sleep apnea by enabling multi-night patient monitoring without added burden <a href="https://www.nature.com/articles/s41746-026-02914-w">[3]</a>. Finally, general-purpose large language models are demonstrating performance on medical benchmarks comparable to or better than specialized clinical AI tools in independent assessments <a href="https://www.nature.com/articles/s41591-026-04431-5">[13]</a>.</p>
+<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42301010?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">Zero-shot Thoracic Oncologic History Generation for Radiologists Using Retrieval-augmented Large Language Model Pipeline</a>
+    <p class="news-card-summary">Study demonstrates zero-shot large language model generation of oncologic history for radiology using retrieval-augmented pipeline.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02882-1">When silence is safer: a review and decision-theoretic framework for LLM abstention in healthcare</a>
+    <p class="news-card-summary">Framework proposes decision-theoretic approach for when large language models should abstain from responding in clinical settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02914-w">Zero burden multi night monitoring with AI enabled technology reduces obstructive sleep apnea misdiagnosis</a>
+    <p class="news-card-summary">AI-enabled wearable technology reduces misdiagnosis of obstructive sleep apnea through multi-night monitoring without burden on patients.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 15, 2026</span></div>
@@ -104,28 +125,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02869-y">An autonomous AI agent for knowledge and data cooperation in ED clinical decision support</a>
     <p class="news-card-summary">Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02886-x">The effectiveness of CBT-based NLP-enabled AI conversational agents for mental health intervention: a systematic review and meta-analysis</a>
-    <p class="news-card-summary">Systematic review and meta-analysis assessed the effectiveness of natural language processing-enabled conversational agents delivering cognitive behavioral therapy for mental health.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e85960">Topic-Aware Summarization of Lived Health Care Experiences: Large Language Model Evaluation Study</a>
-    <p class="news-card-summary">The study assessed large language models for summarizing adults’ lived health care experiences with topic awareness and relevance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/484b4826d4af8bf3e0ca5f68129bd5af.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81105">AI-Powered Resting 12-Lead Electrocardiogram Algorithm for Predicting Low Peak Oxygen Consumption: Development and Validation Study</a>
-    <p class="news-card-summary">Researchers developed and validated an artificial intelligence algorithm using resting 12-lead electrocardiograms to predict low peak oxygen consumption.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63e1243f80a16a342e25c255f1fcc7ef.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

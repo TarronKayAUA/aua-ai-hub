@@ -4860,6 +4860,455 @@
    "title_hash": "5c0af55ec3176eabd66bcea540d653bd",
    "first_seen": "2026-06-15T21:35:57.245910+00:00",
    "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/pentagon-boasts-of-using-ai-to-write-reports-mandated-by-congress",
+   "title_hash": "3a45dea1f89212450b5bd81b4a607a3a",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://status.claude.com/incidents/xmhsglsz3h3w",
+   "title_hash": "a137ce9802f8fd43278890ee8305b447",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/spacex-will-acquire-coding-tool-cursor-to-compete-with-anthropic-openai",
+   "title_hash": "b081d690a0504275bbf1656eedceb383",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year",
+   "title_hash": "66ca9f974e403706dcc06f308a2c64c0",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/16/georgi-gerganov",
+   "title_hash": "727a8da1f838a817ae17f3a2119ae6d2",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e102057",
+   "title_hash": "966a7b3362b740fe933006fa65d90f18",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now",
+   "title_hash": "0532d8c0c2056d999437b94772d8548d",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Running local models is good now",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-16T14:36:57+00:00",
+   "summary": "Article examines improvements in practical local model deployment, inference speed, and availability of capable open-weight models.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://vickiboykis.com/images/refactor_gemma.png"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users",
+   "title_hash": "65f3ae677361758ebab5d7a810e14406",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42301733?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "d92e1d26f5dff865d05bc6f5cda3a286",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42301010?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "ba5055fbd3ff9a2a29d6cc2645d2f584",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Zero-shot Thoracic Oncologic History Generation for Radiologists Using Retrieval-augmented Large Language Model Pipeline",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-16T10:00:00+00:00",
+   "summary": "Study demonstrates zero-shot large language model generation of oncologic history for radiology using retrieval-augmented pipeline.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "bfe27a7f4f73e09ea79992cbf9cc4d0c",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Comparative Accuracy and Safety of 4 Large Language Models on Cornea and External Disease Multiple-Choice Questions",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-16T10:00:00+00:00",
+   "summary": "Comparative evaluation found GPT-5.2, Gemini 3 Pro, and Claude Opus 4.5 achieve similar high accuracy on ophthalmology board exam questions.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42298594?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "76afad1e6601fc6e4565c359efb92989",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42298345?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "11a65b5e5853e514b3b0eb457b8ca686",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u795pb/donate_your_coding_sessions_to_an_open_ccby40",
+   "title_hash": "7d9c97bfda163fce025f5a1e0131a050",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls",
+   "title_hash": "fd12874e9d8fad63bd75e3d624af1d46",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.14832",
+   "title_hash": "241eed4bcf2744880373e57a41527bce",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.14867",
+   "title_hash": "71817618ee38b051cadd2146d9976639",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.14875",
+   "title_hash": "8c560eb26c18cfdf773fa33599bb1311",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.14943",
+   "title_hash": "94accadc517a7382eb091e2f893b9358",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.14961",
+   "title_hash": "4cf05eb43309513ee03f87a87ce2703e",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15007",
+   "title_hash": "a6c28f26cf5cdf47f2a6b7ac57940f51",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-16T04:00:00+00:00",
+   "summary": "NVIDIA released Nemotron 3 Ultra, a 550-billion-parameter open-weight mixture-of-experts model combining Mamba and Transformer architectures for agentic reasoning.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15017",
+   "title_hash": "16f407f1a4942197305780cb63356bc5",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15026",
+   "title_hash": "411aab954beb1332b1e80c6ccd819255",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15037",
+   "title_hash": "7b7d109621c23867fd75f45c1f07dfb0",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15044",
+   "title_hash": "47f3d296df2ba0375bf140f9c408d483",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15059",
+   "title_hash": "7d8a0acedb14355cf527b3331562621e",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15069",
+   "title_hash": "b9a8af468a916ee170e5145a3e93dff6",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15070",
+   "title_hash": "d899ec07b59f83beccd998f1e2a09455",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15079",
+   "title_hash": "15908cd1d6c8107bb038d40b2e57969b",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15080",
+   "title_hash": "a3cc7bece6b5b7095c07d0d71fb8739c",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15121",
+   "title_hash": "4504bff43c15fe4dcdd8aa38625c3cc2",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15144",
+   "title_hash": "137b63c4e0b74d98a079e09c7320bb65",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15152",
+   "title_hash": "dbc2a8226998dc1d94a22e72bf260322",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15161",
+   "title_hash": "f56f116e3c03f3c87a1d0c5574766b10",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15191",
+   "title_hash": "0e36154bfba45427e9bf63efaa298870",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15216",
+   "title_hash": "8cea8dbc5cdba9752ca6c357642fcafd",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15266",
+   "title_hash": "2d5f328b3735a363084eb067ab003d2c",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15307",
+   "title_hash": "1c56ffe31515d471e1571eab36366528",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15325",
+   "title_hash": "f13bf749affb46b54f58cdcfddcd3b8c",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.15333",
+   "title_hash": "693e805942e368d6a1c7af98fd7b0314",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic",
+   "title_hash": "7f96065ea7aebcc6ecfbffec3a0c670a",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u6zj79/claude_fable_5_distilled",
+   "title_hash": "7be73870fbb1443c04c029a24b27248f",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand",
+   "title_hash": "fcbc7231235a6ead971ee9d09fe4e615",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02882-1",
+   "title_hash": "9fe0a7a0c58cc03f8267debd1469bed9",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "When silence is safer: a review and decision-theoretic framework for LLM abstention in healthcare",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-16T00:00:00+00:00",
+   "summary": "Framework proposes decision-theoretic approach for when large language models should abstain from responding in clinical settings.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02864-3",
+   "title_hash": "b6046b4938a4cd0d9c198744ae25883b",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02914-w",
+   "title_hash": "e9272a0766e171a7e9d797713c7f7a95",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Zero burden multi night monitoring with AI enabled technology reduces obstructive sleep apnea misdiagnosis",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-16T00:00:00+00:00",
+   "summary": "AI-enabled wearable technology reduces misdiagnosis of obstructive sleep apnea through multi-night monitoring without burden on patients.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00031-5",
+   "title_hash": "cc0c19dbfc14f38b9d50d678945703c6",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04513-4",
+   "title_hash": "23d7e3b1f728e8a917f5a7603cd8c795",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e101732",
+   "title_hash": "884e0417bd4162b642130a341f1bbf7f",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u6s6pm/stop_using_ollama",
+   "title_hash": "a90b28b061fa98457830d245bf888e7f",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/15/datasette-agent",
+   "title_hash": "3d056e8d379e0f3f1641a72e3117304f",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42296849?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "81df88b6fc5289d1f36ddc9b167bba61",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "c42f71b5d6397f4b081f50b9c62bd51b",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "A comparative benchmark of DeepSeek-R1 on the USMLE: surpassing human and AI performance averages",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-15T10:00:00+00:00",
+   "summary": "DeepSeek-R1 achieved above-average performance on USMLE questions, suggesting utility as a benchmark model for medical AI assessment.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42296533?fc=20260609215449&ff=20260616155644&v=2.20.0",
+   "title_hash": "0e01082768221d8791934d10c421ff25",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://cohere.com/blog/north-mini-code",
+   "title_hash": "7b6500e732d76c2abd04e0bf6041da5c",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Cohere's First Model for Developers",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-11T13:15:45+00:00",
+   "summary": "Cohere released North Mini, a compact code-generation model targeting developers who need smaller alternatives to large models.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/824d32875c1faf5d7048cb18d83e006e46c9b869-3840x2160.png?rect=0,72,3840,2016&w=1200&h=630"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=l72ufA-4SzE",
+   "title_hash": "049935cb8a0564acfbc700ceffcabe80",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "They Looked Inside Claude’s AI's Mind. It Got Weird",
+   "source": "Two Minute Papers",
+   "published": "2026-06-16T15:53:17+00:00",
+   "summary": "Researchers examine interpretability findings from Claude's internal representations, revealing unexpected patterns in how the model processes information.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/l72ufA-4SzE/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=x-RdIMcB5bg",
+   "title_hash": "1ba1a9a6a17cb0255fc62e637a0a2a14",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=T-EScj1GEKY",
+   "title_hash": "69ae60bbfb516ea7f00c0d2ac41d2c77",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=CFqjjKp9Y-Q",
+   "title_hash": "bb561761248294816f6a6f0782f79393",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Why Tejal Patwardhan stopped underestimating the models - Episode 21",
+   "source": "OpenAI",
+   "published": "2026-06-16T17:00:02+00:00",
+   "summary": "OpenAI's frontier evaluations lead discusses how standard benchmarks are becoming too easy for current models, requiring new evaluation approaches.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/CFqjjKp9Y-Q/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=u9zLlcsCDiQ",
+   "title_hash": "f24f583c6362d4a358db183dc2634190",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4vfvvzzwcwI",
+   "title_hash": "19e470ec4e0ed5e787e8c2397fe6c9c7",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": true,
+   "title": "Kagenti’s Approach to Multi-Agent Security for AI Agents",
+   "source": "IBM Technology",
+   "published": "2026-06-16T11:00:03+00:00",
+   "summary": "Security approaches for multi-agent AI systems, covering data leakage risks and safeguards for autonomous agent deployments.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/4vfvvzzwcwI/hqdefault.jpg"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Only-AI-Training-Can-Save-the-Economy-e3kruqv",
+   "title_hash": "41dff1fb33624cf842e0ed86729347cb",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://sloanreview.mit.edu/audio/ai-upskilling-at-scale-bank-of-americas-bernard-hampton",
+   "title_hash": "bdeabebfaced84342435274b87fa1f42",
+   "first_seen": "2026-06-16T19:56:44.275372+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -4954,19 +5403,19 @@
  "last_digest_at": "2026-06-12T03:08:49.759806+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "ChatGPT has demonstrated reliable complementary assessment capabilities for reflective clinical reasoning assignments in dermatology undergraduates, showing meaningful concordance with human grading and supporting the integration of machine evaluation into medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[3]</a>. A recent empirical study found that generative AI enhances learning performance among medical students through mechanisms aligned with social cognitive theory, indicating broad pedagogical benefits <a href=\"https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[2]</a>. Practical guidance for implementing large language models in specialist-level anaesthesia training highlights both the capability of these tools and considerations for prompt engineering <a href=\"https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[4]</a>. Methodological rigor remains a concern in AI studies, with analysis revealing gaps in research design and philosophical frameworks that affect study quality <a href=\"https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[6]</a>.",
-   "hash": "72a07b5480586f30",
-   "date": "June 15, 2026"
+   "text": "A comparative benchmark found DeepSeek-R1 outperformed average human and AI scores on USMLE questions, strengthening its role as a standard for medical AI evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0\">[6]</a>. Generative AI is shown to enhance student learning performance in medical higher education, with effects consistent with social cognitive theory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[3]</a>. The integration of AI into medical school curricula is proceeding, highlighted by a new framework in the UK aimed at meeting evolving healthcare demands <a href=\"https://mededu.jmir.org/2026/1/e81953\">[12]</a>. Meanwhile, eye-tracking paired with artificial intelligence now distinguishes expertise levels among surgical residents, highlighting AI’s expanding application in procedural training scenarios <a href=\"https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[10]</a>.",
+   "hash": "967f95699ae2a031",
+   "date": "June 16, 2026"
   },
   "clinical_practice": {
-   "text": "General-purpose large language models now match or outperform specialized clinical artificial intelligence tools on medical benchmarks, indicating a shift in how AI is assessed for clinical utility <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[10]</a>. Additionally, machine learning is being applied to emergency department workflows, including predicting laboratory test ordering based on integrated electronic health record data <a href=\"https://medinform.jmir.org/2026/1/e85255\">[1]</a>, and supporting decision-making with an autonomous agent that synthesizes knowledge and data <a href=\"https://www.nature.com/articles/s41746-026-02869-y\">[12]</a>. The detection of depressive state changes from patient-generated text using digital phenotyping with large language models demonstrates clinical validation for mental health monitoring <a href=\"https://www.nature.com/articles/s41746-026-02883-0\">[4]</a>. Automated ICD coding from clinical documentation is being evaluated for improvement through post-training on large language models <a href=\"https://arxiv.org/abs/2606.13940\">[3]</a>.",
-   "hash": "ac02732d82ac29e3",
-   "date": "June 15, 2026"
+   "text": "A framework for decision-theoretic abstention is advancing understanding of when large language models should refrain from providing responses in clinical scenarios, highlighting safety as a central concern <a href=\"https://www.nature.com/articles/s41746-026-02882-1\">[2]</a>. In emergency departments, machine learning models that utilize both structured and unstructured electronic health record data are being evaluated for their ability to predict laboratory test ordering and assist clinical decisions <a href=\"https://medinform.jmir.org/2026/1/e85255\">[4]</a>. New AI-enabled wearable technology has achieved reduced misdiagnosis rates for obstructive sleep apnea by enabling multi-night patient monitoring without added burden <a href=\"https://www.nature.com/articles/s41746-026-02914-w\">[3]</a>. Finally, general-purpose large language models are demonstrating performance on medical benchmarks comparable to or better than specialized clinical AI tools in independent assessments <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[13]</a>.",
+   "hash": "badb60e61ea60b55",
+   "date": "June 16, 2026"
   },
   "general_ai": {
-   "text": "Anthropic has shut down its Fable and Mythos models after a US Commerce Department directive, reportedly due to a jailbreak vulnerability and associated national security concerns <a href=\"https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive\">[3]</a>. Reliability and bias issues in large language model-as-judge evaluation methods remain highlighted, raising questions about how these models are ranked and compared <a href=\"https://arxiv.org/abs/2606.13685\">[1]</a>. Meanwhile, OpenAI expanded its WebRTC Audio Session to support document context, enabling multimodal interaction between speech and uploaded documents for broader application <a href=\"https://simonwillison.net/2026/Jun/12/openai-webrtc\">[4]</a>. Energy-efficient, on-device retrieval-augmented generation systems are advancing, with a new design benchmarked on a Snapdragon X Elite mobile neural processing unit to enable practical deployments <a href=\"https://arxiv.org/abs/2606.11257\">[7]</a>. Hugging Face released the olmo-eval workbench, supporting model development workflows with improved evaluation tools <a href=\"https://huggingface.co/blog/allenai/olmo-eval\">[5]</a>.",
-   "hash": "d90636e758d3e515",
-   "date": "June 15, 2026"
+   "text": "NVIDIA&#x27;s release of Nemotron 3 Ultra introduces a 550-billion-parameter, open-weight mixture-of-experts model that integrates both Mamba and Transformer architectures, supporting advanced agentic reasoning <a href=\"https://arxiv.org/abs/2606.15007\">[2]</a>. The practicality of running local models has improved, with advances in deployment, inference speed, and open-weight model availability enabling broader access and use <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[1]</a>. Meanwhile, OpenAI&#x27;s update to its WebRTC Audio Session now allows speech interaction with uploaded documents, facilitating multimodal capabilities <a href=\"https://simonwillison.net/2026/Jun/12/openai-webrtc\">[6]</a>. Recent analysis highlights reliability and systematic bias concerns in large language model-as-judge evaluations, raising questions about the effectiveness of model comparison methods <a href=\"https://arxiv.org/abs/2606.13685\">[3]</a>. Anthropic discontinued its Fable and Mythos models after the US Commerce Department cited national security concerns related to jailbreak vulnerabilities <a href=\"https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive\">[5]</a>.",
+   "hash": "d3bd045aec409996",
+   "date": "June 16, 2026"
   }
  }
 }
