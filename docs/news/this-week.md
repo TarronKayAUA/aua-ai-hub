@@ -527,28 +527,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81644">Understanding Transformer-Based Classifications of Medical Text Using a Large Language Model for the Attribution of Feature Importance: Proof-of-Concept Algorithm Development and Validation Study</a>
-    <p class="news-card-summary">This study investigates transformer-based deep learning models for classifying medical text and explores feature importance attribution using a large language model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/1cde701310306d1d4e6eb3a8765adf4c.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02884-z">Noninvasive PPROM risk stratification with explainable AI using routine antenatal CRP and albumin</a>
-    <p class="news-card-summary">The study presents an explainable artificial intelligence model for noninvasive risk stratification of preterm premature rupture of membranes based on routine antenatal C-reactive protein and albumin measurements.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02816-x">Benchmarking deep learning architectures for MALDI-TOF mass spectrometry in infectious disease diagnostics and vector-borne disease surveillance</a>
-    <p class="news-card-summary">This paper benchmarks deep learning architectures for matrix-assisted laser desorption/ionization time-of-flight mass spectrometry applied to infectious disease diagnostics and vector-borne disease surveillance.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02893-y">AI-assisted improvement of endoscopic diagnosis of ampullary lesions</a>
     <p class="news-card-summary">A study reports the use of artificial intelligence to enhance endoscopic diagnosis accuracy for ampullary lesions, potentially improving clinical outcomes.</p>

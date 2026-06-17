@@ -5761,6 +5761,18 @@
    "category": "podcasts",
    "score": 4.0,
    "thumbnail": "https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what",
+   "title_hash": "d22255abffba0986f4daa09e6edaab7e",
+   "first_seen": "2026-06-17T18:41:13.800862+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u8ai2a/glm52_is_a_win_for_local_ai",
+   "title_hash": "17419f28b523011480e2bc6ae2529feb",
+   "first_seen": "2026-06-17T18:41:13.800862+00:00",
+   "kept": false
   }
  ],
  "digests": [
