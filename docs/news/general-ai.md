@@ -13,11 +13,35 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>NVIDIA&#x27;s release of Nemotron 3 Ultra introduces a 550-billion-parameter, open-weight mixture-of-experts model that integrates both Mamba and Transformer architectures, supporting advanced agentic reasoning <a href="https://arxiv.org/abs/2606.15007">[2]</a>. The practicality of running local models has improved, with advances in deployment, inference speed, and open-weight model availability enabling broader access and use <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[1]</a>. Meanwhile, OpenAI&#x27;s update to its WebRTC Audio Session now allows speech interaction with uploaded documents, facilitating multimodal capabilities <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[6]</a>. Recent analysis highlights reliability and systematic bias concerns in large language model-as-judge evaluations, raising questions about the effectiveness of model comparison methods <a href="https://arxiv.org/abs/2606.13685">[3]</a>. Anthropic discontinued its Fable and Mythos models after the US Commerce Department cited national security concerns related to jailbreak vulnerabilities <a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">[5]</a>.</p>
-<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the items below.</p>
+<p>GLM-5.2, a new open-weights model designed for long-horizon reasoning tasks, sets a performance benchmark for systems tackling extended and complex sequences <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[1]</a>. Parallel to this, NVIDIA’s Nemotron 3 Ultra, also released with open weights, combines hybrid Mamba and Transformer architectures at the 550-billion-parameter scale to support agentic reasoning broadly across applications <a href="https://arxiv.org/abs/2606.15007">[5]</a>. Improvements in local model deployment and inference speed are making capable open-weight models increasingly practical for users seeking autonomy and customizable workflows <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[3]</a>. Reliability and bias in large language model evaluation methods continue to raise concerns about fairness in model ranking, calling attention to how systems are judged and compared <a href="https://arxiv.org/abs/2606.13685">[6]</a>.</p>
+<p class="section-brief-date">The picture as of June 17, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/zai-org/glm-52-blog">GLM-5.2: Built for Long-Horizon Tasks</a>
+    <p class="news-card-summary">GLM-5.2, a new open-weights model from Alibaba, achieves leading performance on benchmarks and is designed for long-horizon reasoning tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/67066ea38a79951d7b8d4195/iaTHtYOBgeY0C3Xx3vymr.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk">Anthropic &quot;pauses&quot; token-based billing for its Claude Agent SDK</a>
+    <p class="news-card-summary">Anthropic paused planned token-based billing changes for Claude Agent SDK that would have increased costs for power users.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/02/claude37_header-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u7klvv/mistral_new_family_of_openweight_models_july">Mistral - New family of open-weight models @ July</a>
+    <p class="news-card-summary">Mistral announced a new family of open-weight models planned for July release.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/kxbwrfnglo7h1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=2f83a6b2fbc675be4790406f3c441d84e8b289b4" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 16, 2026</span></div>
@@ -25,6 +49,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Article examines improvements in practical local model deployment, inference speed, and availability of capable open-weight models.</p>
   </div>
   <img class="news-card-thumb" src="https://vickiboykis.com/images/refactor_gemma.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://qwen.ai/blog?id=qwen-robotsuite">Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence</a>
+    <p class="news-card-summary">Qwen released Robot Suite, a foundation model suite designed for physical world robotics and embodied AI tasks.</p>
+  </div>
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -101,35 +132,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://arxiv.org/abs/2606.11257">Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite</a>
     <p class="news-card-summary">This work presents an energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units, enabling more practical AI deployments.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u2np0a/nvidiadiffusiongemma26ba4bitnvfp4_hugging_face">nvidia/diffusiongemma-26B-A4B-it-NVFP4 · Hugging Face</a>
-    <p class="news-card-summary">Nvidia releases DiffusionGemma 26B, an open-weights multimodal model combining language and image generation capabilities.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/9EBAZR2owX7nOGzlCDPXd-p_xWnW0WyWy3qPB046G1s.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6d83f884a6cf4fe9a76b4e5328582f59450a6ff5" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated">Anthropic&#x27;s Model Naming, Extrapolated</a>
-    <p class="news-card-summary">Analysis of Anthropic&#x27;s model naming convention provides insights into their future large language model development plans.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u1siyl/without_open_source_llms_us_ai_companies_could">Without open source LLMs, US AI companies could have already monopoled the technology</a>
-    <p class="news-card-summary">For such technology with clear importance and impact on all of us, I believe that making it open source is an ethical duty, otherwise, especially with the 1-sided politics of the US we experience today, they could have already monopolized the technology by now, maybe make it exclusively available to US companies only, and starve the entire world including Europe.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 9, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/9/claude-fable-5">Initial impressions of Claude Fable 5</a>
-    <p class="news-card-summary">I didn&#x27;t have early access to today&#x27;s Claude Fable 5 release, but I&#x27;ve spent the past ~5.5 hours putting it through its paces.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/fable-max.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

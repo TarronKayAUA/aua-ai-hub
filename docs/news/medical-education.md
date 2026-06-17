@@ -13,16 +13,38 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A comparative benchmark found DeepSeek-R1 outperformed average human and AI scores on USMLE questions, strengthening its role as a standard for medical AI evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">[6]</a>. Generative AI is shown to enhance student learning performance in medical higher education, with effects consistent with social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[3]</a>. The integration of AI into medical school curricula is proceeding, highlighted by a new framework in the UK aimed at meeting evolving healthcare demands <a href="https://mededu.jmir.org/2026/1/e81953">[12]</a>. Meanwhile, eye-tracking paired with artificial intelligence now distinguishes expertise levels among surgical residents, highlighting AI’s expanding application in procedural training scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[10]</a>.</p>
-<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the items below.</p>
+<p>Comparative studies reveal that large language models now rival or even surpass human benchmarks in generating and answering medical exam questions-both in specialty areas like ophthalmology and in broader contexts such as the USMLE, indicating their growing reliability as formative assessment tools <a href="https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">[3]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">[9]</a>. Substantial agreement between AI-generated and human supervisor feedback on clinical logs further highlights their potential in educational support <a href="https://mededu.jmir.org/2026/1/e90064">[2]</a>. Ongoing research also explores AI’s role in enhancing clinical reasoning and empathetic communication training, with complementary grading and chatbots yielding measurable student outcomes in fields including dermatology <a href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[7]</a> and general medical education <a href="https://mededu.jmir.org/2026/1/e88092">[14]</a>.</p>
+<p class="section-brief-date">The picture as of June 17, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">Psychometric performance and student perceptions of AI- versus student-generated multiple-choice questions: a single-center randomized controlled trial</a>
+    <p class="news-card-summary">Randomized trial found large language models and students generated comparable multiple-choice questions in formative assessment with similar student perceptions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90064">AI-Generated Versus Human Supervisor Feedback on Medical Students’ Clinical Clerkship Logs: Cross-Sectional Convergent Mixed Methods Study</a>
+    <p class="news-card-summary">Mixed methods study comparing AI-generated and human supervisor feedback on medical students&#x27; clinical clerkship logs found substantial agreement between feedback types.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/0442c169b0e52020fffaaf8b294f79b0.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">Comparative Accuracy and Safety of 4 Large Language Models on Cornea and External Disease Multiple-Choice Questions</a>
     <p class="news-card-summary">Comparative evaluation found GPT-5.2, Gemini 3 Pro, and Claude Opus 4.5 achieve similar high accuracy on ophthalmology board exam questions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42303720?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">DeepSeek-assisted problem-based learning for glaucoma education in an undergraduate ophthalmology clerkship: a randomized educational pilot study</a>
+    <p class="news-card-summary">Pilot study evaluated open-source DeepSeek language model combined with problem-based learning for undergraduate ophthalmology education.</p>
   </div>
 </div>
 <div class="news-card">
@@ -104,27 +126,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Study develops a framework for integrating artificial intelligence into UK medical school curricula to align with evolving healthcare needs.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/e039257f4a04c1474ee5844e1eba9ffa.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e83376">Evaluating the Pediatric Behavior Guidance of Students Based on Actual Clinical Transcripts Scored by Faculty and Large Language Models: Pilot Comparative Study</a>
-    <p class="news-card-summary">Study compared large language model scoring of pediatric behavior guidance against faculty assessment using actual clinical transcripts to evaluate feedback quality.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/4c8889e2a34ed98cd9ddf7ec87d412ca.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Quantifying the AI readiness gap: An international, multidisciplinary assessment of artificial intelligence literacy in the radiation oncology community</a>
-    <p class="news-card-summary">International study establishes a global benchmark for artificial intelligence literacy and readiness among radiation oncology clinical staff.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">EXPRESS: Artificial intelligence perceptions and experiences among first and second year medical students</a>
-    <p class="news-card-summary">Survey of first and second year medical students shows they anticipate growing artificial intelligence roles in medical education and favor structured training.</p>
-  </div>
 </div>
 </div>

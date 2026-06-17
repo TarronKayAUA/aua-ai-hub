@@ -13,11 +13,47 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A framework for decision-theoretic abstention is advancing understanding of when large language models should refrain from providing responses in clinical scenarios, highlighting safety as a central concern <a href="https://www.nature.com/articles/s41746-026-02882-1">[2]</a>. In emergency departments, machine learning models that utilize both structured and unstructured electronic health record data are being evaluated for their ability to predict laboratory test ordering and assist clinical decisions <a href="https://medinform.jmir.org/2026/1/e85255">[4]</a>. New AI-enabled wearable technology has achieved reduced misdiagnosis rates for obstructive sleep apnea by enabling multi-night patient monitoring without added burden <a href="https://www.nature.com/articles/s41746-026-02914-w">[3]</a>. Finally, general-purpose large language models are demonstrating performance on medical benchmarks comparable to or better than specialized clinical AI tools in independent assessments <a href="https://www.nature.com/articles/s41591-026-04431-5">[13]</a>.</p>
-<p class="section-brief-date">The picture as of June 16, 2026; numbered links go to the items below.</p>
+<p>GPT-5 has achieved triage performance in emergency otolaryngology decisions on par with attending physicians, suggesting potential roles in complex frontline assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[1]</a>. Meanwhile, general-purpose chatbots outperformed specialized clinical AI tools when responding to real-world physician questions, indicating that broader models may currently offer greater practical utility in clinical practice <a href="https://www.nature.com/articles/s41591-026-04457-9">[5]</a>. In emergency department settings, large language models are being investigated for acute coronary syndrome triage and for assisting with diagnostic decisions when compared with intern doctors, both pointing to expanded use in acute care workflows <a href="https://www.nature.com/articles/s41746-026-02904-y">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[2]</a>. Additionally, models are handling patient and administrative queries in nuclear medicine, with real-world evaluations ongoing <a href="https://www.nature.com/articles/s41746-026-02889-8">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 17, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">The Utility of Large Language Models to Assist With Emergency Triage Decisions Within Otolaryngology</a>
+    <p class="news-card-summary">Study found GPT-5 demonstrated triage performance comparable to attending otolaryngologists in emergency decision-making.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">Comparison of Intern Doctors and ChatGPT in Emergency Cases Assessment</a>
+    <p class="news-card-summary">Study comparing ChatGPT-4 and intern doctors on emergency case assessment found the model may support diagnostic decision-making in emergency departments.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02889-8">Real-world evaluation of large language model for patients medical and administrative queries in nuclear medicine</a>
+    <p class="news-card-summary">Real-world study evaluated large language models handling patient medical and administrative queries in nuclear medicine clinical settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02904-y">Large language models for acute coronary syndrome triage at first medical contact in emergency departments</a>
+    <p class="news-card-summary">Study assessed large language model performance for acute coronary syndrome triage at first medical contact in emergency departments.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04457-9">General-purpose chatbots outperform clinical AI tools on physicians’ real-world questions</a>
+    <p class="news-card-summary">Nature Medicine study found general-purpose chatbots outperform specialized clinical AI tools when answering physicians&#x27; real-world clinical questions.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04457-9/MediaObjects/41591_2026_4457_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
@@ -88,42 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02868-z">FairGen: preference-aligned diffusion for demographically equitable medical image synthesis</a>
     <p class="news-card-summary">Peer-reviewed study presents FairGen, a method for generating medical images with demographic equity using preference-aligned diffusion models.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88356">Knowledge-Augmented Large Language Model for Multimodal Electronic Health Record, Based Risk Prediction: Development and Validation Study</a>
-    <p class="news-card-summary">Researchers developed and validated a knowledge-augmented large language model for predicting clinical outcomes from multimodal electronic health record data.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63f57c054bd6e7a6c3fcd5282c669918.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02795-z">A new AI assisted approach aligns data standards and accelerates interoperability in biomedical research</a>
-    <p class="news-card-summary">npj Digital Medicine describes an artificial intelligence approach to align data standards and improve interoperability in biomedical research.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04431-5">General-purpose large language models outperform specialized clinical AI tools on medical benchmarks</a>
-    <p class="news-card-summary">Nature Medicine reports that general-purpose large language models match or exceed specialized clinical AI tools on medical benchmarks in independent evaluation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02881-2">Virtual nursing implementation and 30-day patient readmissions: a multi-site study</a>
-    <p class="news-card-summary">Multi-site study examines effects of virtual nursing implementation on 30-day patient readmission rates.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02869-y">An autonomous AI agent for knowledge and data cooperation in ED clinical decision support</a>
-    <p class="news-card-summary">Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.</p>
   </div>
 </div>
 </div>

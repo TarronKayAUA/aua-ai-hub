@@ -5315,6 +5315,452 @@
    "title_hash": "be471683c1d91bd751c004c2dac86dd6",
    "first_seen": "2026-06-16T20:33:24.409960+00:00",
    "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/17/charity-majors",
+   "title_hash": "3348c6790f64126be1a63ee4d6ee3c15",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/06/the-gemini-powered-google-home-speaker-arrives-on-june-25-for-100",
+   "title_hash": "39c227d4a22b394256d6754a817ffa4c",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/allenai/molmomotion",
+   "title_hash": "09b43455bfb0b1f5730c8b7527b1253c",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://github.com/rxi/microui",
+   "title_hash": "92d53ce97d1ca4b697e75a7d4c13f216",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+   "title_hash": "bae2c3515139c58565e239c887062c09",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "fa3f1a61ce244c7d39d38a1104e7cec0",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "The Utility of Large Language Models to Assist With Emergency Triage Decisions Within Otolaryngology",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-17T10:00:00+00:00",
+   "summary": "Study found GPT-5 demonstrated triage performance comparable to attending otolaryngologists in emergency decision-making.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42307324?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "f2a82b9e78d0627dccce7cee5bf28eee",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42306906?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "a1753c814b8aa450c554a762f1c5888c",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42306438?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "3e30e0bdb231eeb6ce3a7ceb7f1f674f",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "ba08b514af005160d183af120c81a932",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Comparison of Intern Doctors and ChatGPT in Emergency Cases Assessment",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-17T10:00:00+00:00",
+   "summary": "Study comparing ChatGPT-4 and intern doctors on emergency case assessment found the model may support diagnostic decision-making in emergency departments.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42304990?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "23fd20356b3bd1ec87b1ffa878bab6de",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42304848?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "2da6822a62d171515e84b01a8e15abaf",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42304396?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "e20639eb6beed3ca5cd4906017dba3d3",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42304368?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "baa27f292cc60a936940e70dc0df5f52",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "dec99b7880af08dbac3a472e454c4eff",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Psychometric performance and student perceptions of AI- versus student-generated multiple-choice questions: a single-center randomized controlled trial",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-17T10:00:00+00:00",
+   "summary": "Randomized trial found large language models and students generated comparable multiple-choice questions in formative assessment with similar student perceptions.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+   "title_hash": "890b2ae2ca0809af32fafc8dcafa414e",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+   "title_hash": "584003412142a56a1c602c29a3edde5a",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "GLM-5.2: Built for Long-Horizon Tasks",
+   "source": "Hugging Face blog",
+   "published": "2026-06-17T09:01:25+00:00",
+   "summary": "GLM-5.2, a new open-weights model from Alibaba, achieves leading performance on benchmarks and is designed for long-horizon reasoning tasks.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/67066ea38a79951d7b8d4195/iaTHtYOBgeY0C3Xx3vymr.png"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u832oh/glm52_max_is_currently_the_third_best_model",
+   "title_hash": "055066b57a9ce8732a3caed420926be1",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/17/click-to-play-component",
+   "title_hash": "3638d365167e2478cacfcdc72acfd17b",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/17/netnewswire-status",
+   "title_hash": "640b12f80be09f1464864ba8a5d15386",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02692-5",
+   "title_hash": "6cdbf92170271eddad87b88d2ecc5dde",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02889-8",
+   "title_hash": "fb41b202827ffb81da9a4019f90b75af",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Real-world evaluation of large language model for patients medical and administrative queries in nuclear medicine",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-17T00:00:00+00:00",
+   "summary": "Real-world study evaluated large language models handling patient medical and administrative queries in nuclear medicine clinical settings.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02857-2",
+   "title_hash": "3fbff94a17577aeb909d8724a03d2fb6",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02904-y",
+   "title_hash": "d7b07845ad579697d1e115cfaa145b89",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Large language models for acute coronary syndrome triage at first medical contact in emergency departments",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-17T00:00:00+00:00",
+   "summary": "Study assessed large language model performance for acute coronary syndrome triage at first medical contact in emergency departments.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04499-z",
+   "title_hash": "d346ff7340e653a2b4aee517ad2bc448",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04473-9",
+   "title_hash": "7a0dd02ea421fc78f000a13e17367056",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04457-9",
+   "title_hash": "48a1d819ef9c8d461c81001cf8e661b2",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "General-purpose chatbots outperform clinical AI tools on physicians’ real-world questions",
+   "source": "Nature Medicine",
+   "published": "2026-06-17T00:00:00+00:00",
+   "summary": "Nature Medicine study found general-purpose chatbots outperform specialized clinical AI tools when answering physicians' real-world clinical questions.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04457-9/MediaObjects/41591_2026_4457_Fig1_HTML.png"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04474-8",
+   "title_hash": "92d2cfb112ee017a5d568680218e54c7",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+   "title_hash": "548faaf2539de74cfd9bf01cf6c19516",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality",
+   "title_hash": "e9a0c2ba24df1fc8853d7bd1a1d36eb4",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/trump-admin-helps-xai-fight-pollution-lawsuit-says-military-needs-grok-for-war",
+   "title_hash": "c5e34bc285ba3958e0c0cb7212238d24",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/16/datasette",
+   "title_hash": "169c30a7c218f9df1d32be631c2854d4",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7qti8/glm52_is_now_1st_on_design_arena_ahead_of_the_now",
+   "title_hash": "743a1415c5d6d0356e9feb8825db2dd4",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e81250",
+   "title_hash": "96fefc58211c5251cc8cac61f7782249",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e77732",
+   "title_hash": "3424e3488c9c339f4d18b69e7bde51ac",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e93348",
+   "title_hash": "873b8dde19d633765b5f67a438f36ceb",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86066",
+   "title_hash": "75f60b0736ce8f34ee8b3deec19906f3",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk",
+   "title_hash": "39743ad171d5c8594af024e959b95e27",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Anthropic \"pauses\" token-based billing for its Claude Agent SDK",
+   "source": "Ars Technica AI",
+   "published": "2026-06-16T21:00:35+00:00",
+   "summary": "Anthropic paused planned token-based billing changes for Claude Agent SDK that would have increased costs for power users.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/claude37_header-500x500.jpg"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e90064",
+   "title_hash": "be7324ea19688a4c19c6f77bfe649c5b",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "AI-Generated Versus Human Supervisor Feedback on Medical Students’ Clinical Clerkship Logs: Cross-Sectional Convergent Mixed Methods Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-06-16T21:00:21+00:00",
+   "summary": "Mixed methods study comparing AI-generated and human supervisor feedback on medical students' clinical clerkship logs found substantial agreement between feedback types.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://asset.jmir.pub/assets/0442c169b0e52020fffaaf8b294f79b0.png"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e75516",
+   "title_hash": "184b5b88bdd3480d5a62cb132bcb21ca",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7nph8/hashicorp_founder_thinks_local_models_arent_good",
+   "title_hash": "71fb2a6d62ed6c082c63e12b4ca14182",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7mexd/glm52_is_the_first_openweights_model_to_cross_80",
+   "title_hash": "2975d20eb5f8ef1a08054e7f0176ab89",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl",
+   "title_hash": "1068d5abd8189ec9c3e0ac673bdb64c1",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7klvv/mistral_new_family_of_openweight_models_july",
+   "title_hash": "8f52062bd08b538dc7a14290662972b9",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Mistral - New family of open-weight models @ July",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-16T17:45:14+00:00",
+   "summary": "Mistral announced a new family of open-weight models planned for July release.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/kxbwrfnglo7h1.png?width=320&crop=smart&auto=webp&s=2f83a6b2fbc675be4790406f3c441d84e8b289b4"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7kcwf/zaiorgglm52_is_here",
+   "title_hash": "74d8c913b794a6a33db0b1b4808b92c6",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/16/datasette-tailscale",
+   "title_hash": "b69128b39788abb0b2edfc3b9d8b414f",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://qwen.ai/blog?id=qwen-robotsuite",
+   "title_hash": "46b885bf09f263f171c109d500ba8cee",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-16T13:15:15+00:00",
+   "summary": "Qwen released Robot Suite, a foundation model suite designed for physical world robotics and embodied AI tasks.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42303720?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "7258b5f4d7512a17ae55079156319165",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "DeepSeek-assisted problem-based learning for glaucoma education in an undergraduate ophthalmology clerkship: a randomized educational pilot study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-16T10:00:00+00:00",
+   "summary": "Pilot study evaluated open-source DeepSeek language model combined with problem-based learning for undergraduate ophthalmology education.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42303610?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "584c933bfc759be6e35c98208a28ce58",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42302578?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "cec79767cd317f095c1134ad1bbefab0",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42302307?fc=20260609215449&ff=20260617134036&v=2.20.0",
+   "title_hash": "212ab9b34ac3363750430848d0d07bbf",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02891-0",
+   "title_hash": "9c767c1a08f2ffb1d5ccbf685765603e",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02833-w",
+   "title_hash": "63629ec261c668849c5573399accb553",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=w2hpXlyMrAA",
+   "title_hash": "d60d640a5c3668a7ef3889729c2c4704",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)",
+   "source": "WorldofAI",
+   "published": "2026-06-17T06:30:29+00:00",
+   "summary": "Hands-on evaluation of Kimi K2.7 Code, an open-weights model, comparing its performance on code tasks against proprietary alternatives.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/w2hpXlyMrAA/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6d__WOpZswY",
+   "title_hash": "5890084462b02cb2bab6a8f380384cb6",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "New #1 open-source AI model is here!",
+   "source": "AI Search",
+   "published": "2026-06-17T03:26:33+00:00",
+   "summary": "Review of GLM 5.2, a new open-source large language model claiming top performance in open-weights benchmarks.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/6d__WOpZswY/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XtgEA4L7sIU",
+   "title_hash": "4367cd1e5bc9cae656aa430fc7b619df",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ATIwByZ4nUA",
+   "title_hash": "bde747cd469f2f355a8e378b2e184e98",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai-podcast.nejm.org/e/openai-s-karan-singal-on-healthbench-and-the-future-of-medical-ai",
+   "title_hash": "18103c0890990b1a5052b741db39bbc2",
+   "first_seen": "2026-06-17T17:40:36.614026+00:00",
+   "kept": true,
+   "title": "OpenAI’s Karan Singal on HealthBench and the Future of Medical AI",
+   "source": "NEJM AI Grand Rounds",
+   "published": "2026-06-17T13:00:00+00:00",
+   "summary": "Karan Singal from OpenAI discusses HealthBench, a benchmark for evaluating AI performance on medical tasks, and the role of AI in addressing medical expertise gaps.",
+   "category": "podcasts",
+   "score": 4.0,
+   "thumbnail": "https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg"
   }
  ],
  "digests": [
@@ -5409,19 +5855,19 @@
  "last_digest_at": "2026-06-12T03:08:49.759806+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A comparative benchmark found DeepSeek-R1 outperformed average human and AI scores on USMLE questions, strengthening its role as a standard for medical AI evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0\">[6]</a>. Generative AI is shown to enhance student learning performance in medical higher education, with effects consistent with social cognitive theory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[3]</a>. The integration of AI into medical school curricula is proceeding, highlighted by a new framework in the UK aimed at meeting evolving healthcare demands <a href=\"https://mededu.jmir.org/2026/1/e81953\">[12]</a>. Meanwhile, eye-tracking paired with artificial intelligence now distinguishes expertise levels among surgical residents, highlighting AI’s expanding application in procedural training scenarios <a href=\"https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[10]</a>.",
-   "hash": "967f95699ae2a031",
-   "date": "June 16, 2026"
+   "text": "Comparative studies reveal that large language models now rival or even surpass human benchmarks in generating and answering medical exam questions-both in specialty areas like ophthalmology and in broader contexts such as the USMLE, indicating their growing reliability as formative assessment tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[1]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0\">[3]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0\">[9]</a>. Substantial agreement between AI-generated and human supervisor feedback on clinical logs further highlights their potential in educational support <a href=\"https://mededu.jmir.org/2026/1/e90064\">[2]</a>. Ongoing research also explores AI’s role in enhancing clinical reasoning and empathetic communication training, with complementary grading and chatbots yielding measurable student outcomes in fields including dermatology <a href=\"https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[7]</a> and general medical education <a href=\"https://mededu.jmir.org/2026/1/e88092\">[14]</a>.",
+   "hash": "bc06776e16488adf",
+   "date": "June 17, 2026"
   },
   "clinical_practice": {
-   "text": "A framework for decision-theoretic abstention is advancing understanding of when large language models should refrain from providing responses in clinical scenarios, highlighting safety as a central concern <a href=\"https://www.nature.com/articles/s41746-026-02882-1\">[2]</a>. In emergency departments, machine learning models that utilize both structured and unstructured electronic health record data are being evaluated for their ability to predict laboratory test ordering and assist clinical decisions <a href=\"https://medinform.jmir.org/2026/1/e85255\">[4]</a>. New AI-enabled wearable technology has achieved reduced misdiagnosis rates for obstructive sleep apnea by enabling multi-night patient monitoring without added burden <a href=\"https://www.nature.com/articles/s41746-026-02914-w\">[3]</a>. Finally, general-purpose large language models are demonstrating performance on medical benchmarks comparable to or better than specialized clinical AI tools in independent assessments <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[13]</a>.",
-   "hash": "badb60e61ea60b55",
-   "date": "June 16, 2026"
+   "text": "GPT-5 has achieved triage performance in emergency otolaryngology decisions on par with attending physicians, suggesting potential roles in complex frontline assessment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[1]</a>. Meanwhile, general-purpose chatbots outperformed specialized clinical AI tools when responding to real-world physician questions, indicating that broader models may currently offer greater practical utility in clinical practice <a href=\"https://www.nature.com/articles/s41591-026-04457-9\">[5]</a>. In emergency department settings, large language models are being investigated for acute coronary syndrome triage and for assisting with diagnostic decisions when compared with intern doctors, both pointing to expanded use in acute care workflows <a href=\"https://www.nature.com/articles/s41746-026-02904-y\">[4]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[2]</a>. Additionally, models are handling patient and administrative queries in nuclear medicine, with real-world evaluations ongoing <a href=\"https://www.nature.com/articles/s41746-026-02889-8\">[3]</a>.",
+   "hash": "b26f0b284e47623f",
+   "date": "June 17, 2026"
   },
   "general_ai": {
-   "text": "NVIDIA&#x27;s release of Nemotron 3 Ultra introduces a 550-billion-parameter, open-weight mixture-of-experts model that integrates both Mamba and Transformer architectures, supporting advanced agentic reasoning <a href=\"https://arxiv.org/abs/2606.15007\">[2]</a>. The practicality of running local models has improved, with advances in deployment, inference speed, and open-weight model availability enabling broader access and use <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[1]</a>. Meanwhile, OpenAI&#x27;s update to its WebRTC Audio Session now allows speech interaction with uploaded documents, facilitating multimodal capabilities <a href=\"https://simonwillison.net/2026/Jun/12/openai-webrtc\">[6]</a>. Recent analysis highlights reliability and systematic bias concerns in large language model-as-judge evaluations, raising questions about the effectiveness of model comparison methods <a href=\"https://arxiv.org/abs/2606.13685\">[3]</a>. Anthropic discontinued its Fable and Mythos models after the US Commerce Department cited national security concerns related to jailbreak vulnerabilities <a href=\"https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive\">[5]</a>.",
-   "hash": "d3bd045aec409996",
-   "date": "June 16, 2026"
+   "text": "GLM-5.2, a new open-weights model designed for long-horizon reasoning tasks, sets a performance benchmark for systems tackling extended and complex sequences <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[1]</a>. Parallel to this, NVIDIA’s Nemotron 3 Ultra, also released with open weights, combines hybrid Mamba and Transformer architectures at the 550-billion-parameter scale to support agentic reasoning broadly across applications <a href=\"https://arxiv.org/abs/2606.15007\">[5]</a>. Improvements in local model deployment and inference speed are making capable open-weight models increasingly practical for users seeking autonomy and customizable workflows <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[3]</a>. Reliability and bias in large language model evaluation methods continue to raise concerns about fairness in model ranking, calling attention to how systems are judged and compared <a href=\"https://arxiv.org/abs/2606.13685\">[6]</a>.",
+   "hash": "99c6d2140759ade8",
+   "date": "June 17, 2026"
   }
  }
 }

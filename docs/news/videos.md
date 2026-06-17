@@ -24,6 +24,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=w2hpXlyMrAA" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/w2hpXlyMrAA/hqdefault.jpg" alt="Video: Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)" loading="lazy">
+  <span class="video-card-title">Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)</span>
+  <span class="video-card-meta">WorldofAI, June 17, 2026</span>
+  <span class="video-card-desc">Hands-on evaluation of Kimi K2.7 Code, an open-weights model, comparing its performance on code tasks against proprietary alternatives.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=6d__WOpZswY" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/6d__WOpZswY/hqdefault.jpg" alt="Video: New #1 open-source AI model is here!" loading="lazy">
+  <span class="video-card-title">New #1 open-source AI model is here!</span>
+  <span class="video-card-meta">AI Search, June 17, 2026</span>
+  <span class="video-card-desc">Review of GLM 5.2, a new open-source large language model claiming top performance in open-weights benchmarks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=CFqjjKp9Y-Q" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/CFqjjKp9Y-Q/hqdefault.jpg" alt="Video: Why Tejal Patwardhan stopped underestimating the models - Episode 21" loading="lazy">
   <span class="video-card-title">Why Tejal Patwardhan stopped underestimating the models - Episode 21</span>
@@ -131,18 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean</span>
   <span class="video-card-meta">Two Minute Papers, June 1, 2026</span>
   <span class="video-card-desc">Jeff Dean discusses potential developments and impacts in artificial intelligence after a significant increase in computational power by a factor of one million.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=DAlC8mL5ZlI" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/DAlC8mL5ZlI/hqdefault.jpg" alt="Video: Why AI Models Pause to Think: Test Time Compute Explained" loading="lazy">
-  <span class="video-card-title">Why AI Models Pause to Think: Test Time Compute Explained</span>
-  <span class="video-card-meta">IBM Technology, June 1, 2026</span>
-  <span class="video-card-desc">IBM Technology explains the reasons why AI models exhibit pauses during interaction, describing the concept of test time computation for decision-making processes.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=p6Npi-HBoRU" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/p6Npi-HBoRU/hqdefault.jpg" alt="Video: MiniMax M3 IS INSANE! BEST Opensource AI Model! Beats Opus 4.7 and 50x Cheaper! (Fully Tested)" loading="lazy">
-  <span class="video-card-title">MiniMax M3 IS INSANE! BEST Opensource AI Model! Beats Opus 4.7 and 50x Cheaper! (Fully Tested)</span>
-  <span class="video-card-meta">WorldofAI, June 1, 2026</span>
-  <span class="video-card-desc">An assessment of the MiniMax M3 open-source AI model highlights its performance benefits and cost efficiency compared to other models like Claude Opus 4.7.</span>
 </a>
 </div>
 

@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://ai-podcast.nejm.org/e/openai-s-karan-singal-on-healthbench-and-the-future-of-medical-ai" target="_blank" rel="noopener">
+  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Video: OpenAI’s Karan Singal on HealthBench and the Future of Medical AI" loading="lazy">
+  <span class="video-card-title">OpenAI’s Karan Singal on HealthBench and the Future of Medical AI</span>
+  <span class="video-card-meta">NEJM AI Grand Rounds, June 17, 2026</span>
+  <span class="video-card-desc">Karan Singal from OpenAI discusses HealthBench, a benchmark for evaluating AI performance on medical tasks, and the role of AI in addressing medical expertise gaps.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Fable-5-Raises-the-Bar-for-AI-Ambition-e3kk9rp" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Video: Fable 5 Raises the Bar for AI Ambition" loading="lazy">
   <span class="video-card-title">Fable 5 Raises the Bar for AI Ambition</span>
