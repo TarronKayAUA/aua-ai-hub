@@ -5773,6 +5773,394 @@
    "title_hash": "17419f28b523011480e2bc6ae2529feb",
    "first_seen": "2026-06-17T18:41:13.800862+00:00",
    "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/bernie-sanders-unveils-7-trillion-plan-to-give-americans-control-of-ai-industry",
+   "title_hash": "4d28fd3d1b04206cbe994c644b82d575",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u96jof/glms_founder_says_glmfable_before_the_end_of_the",
+   "title_hash": "ffb57db69416bd337c4553acd350ee6a",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42311995?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "b890d2ac82ba2d44630ba4976f7dce71",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42311928?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "6262b45fe9a9c98cea824f50c4a0dde0",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Evaluation of Large Language Models in Infectious Disease Decision-Making: From Examination to Clinical Practice",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-18T10:00:00+00:00",
+   "summary": "Large language models show substantial potential in infectious disease education and decision support, with ability to handle both exam and clinical scenarios.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42311898?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "ff91a8876e23b5776f2da229a4166741",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42311349?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "816c292ba42596d121728903b50c87b2",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42310703?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "397a6515103911e4da9575b20f795e62",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Evaluating the Performance of GPT-4.0 in Generating and Refining Multiple-Choice Questions for Dental Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-18T10:00:00+00:00",
+   "summary": "GPT-4.0 demonstrated capability to generate and refine multiple-choice questions for dental education, outperforming some baseline methods.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "01b290987cbdd6bc0313e447b97e3d48",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Is it time to introduce an artificial intelligence curriculum in undergraduate medical education? medical students' perspectives: a systematic review and meta-analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-18T10:00:00+00:00",
+   "summary": "Systematic review finds medical students recognize need for standardized artificial intelligence curriculum to address gap between enthusiasm and actual competence.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18273",
+   "title_hash": "a0c6d08f0fa2fb77d0791eb54898b41e",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Continuous Audio Thinking for Large Audio Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-18T04:00:00+00:00",
+   "summary": "Continuous Audio Thinking extends large audio language models with intermediate reasoning steps for improved audio processing and understanding.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18372",
+   "title_hash": "0a9761e175f8e5089fcfa167e7597330",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identification",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-18T04:00:00+00:00",
+   "summary": "Fully local artificial intelligence cascade de-identifies educational dialogue without sending data to external servers, balancing privacy and utility.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18381",
+   "title_hash": "f984b8103c4fd5296b29e033db1007df",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18389",
+   "title_hash": "b7c43f2cf94b13fc48c890615cb2c24d",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18394",
+   "title_hash": "938006abcba8d4f3c04db342c224ce3f",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18406",
+   "title_hash": "dc3f8c5e50876d6ad02a5a45b6055982",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18448",
+   "title_hash": "f2f8fadf9b63193e59526573606a90a3",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18453",
+   "title_hash": "07cc866e9560e3f5a01fc9d9559bdcac",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18466",
+   "title_hash": "277f123cc3aa986dbe60f34bb3850b48",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18471",
+   "title_hash": "d560654eb8f45c1b4de9d1deb39d74fc",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Possible or Definite? A Benchmark for Evaluating Diagnostic Uncertainty Preservation in Clinical Text",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-18T04:00:00+00:00",
+   "summary": "New benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their readiness for medical use.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18473",
+   "title_hash": "48e3f62e0a16dc652073f4b7a4e59242",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18502",
+   "title_hash": "0179b752ec808bc21dc0c1e9688497e6",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18508",
+   "title_hash": "47618038321de3f405d4c9fff4aa7d60",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18584",
+   "title_hash": "bbcad1c3759055fd17067d5cdd0844cc",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18587",
+   "title_hash": "98f1f62a001f474b798253f27a3b8d04",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18597",
+   "title_hash": "9273bdaa78ac6a98786746671b412349",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18606",
+   "title_hash": "fa9902a28c0c61e327c7c41ab2f33401",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18613",
+   "title_hash": "14bcb004272135240f25bbaec776fcb6",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Are LLMs Ready to Assist Physicians? PhysAssistBench for Interactive Doctor-Patient-EHR Assistance",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-18T04:00:00+00:00",
+   "summary": "PhysAssistBench benchmark tests whether large language models can assist physicians in interactive doctor-patient-electronic health record scenarios.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18620",
+   "title_hash": "5e4143b50987c1a9820c9a6ca9ce2714",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18624",
+   "title_hash": "9f8710fa21443364a57666ca36d499ac",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18636",
+   "title_hash": "b8ec76ff3b66b75d0b984050c83a7b8c",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18656",
+   "title_hash": "cbf97dd5aa1571c763190644e95e8608",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18663",
+   "title_hash": "c66ade88da8e1ecddcf255f2baa032d0",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18699",
+   "title_hash": "1fd4070499ec8a1d9ca26e1d8d0f001b",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.18709",
+   "title_hash": "6e96f55b6f3dfadaf3c056d31a93d4ad",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-18T04:00:00+00:00",
+   "summary": "Study finds large language models struggle to measure item discrimination, a key psychometric property for assessing student reading comprehension differences.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02829-6",
+   "title_hash": "2401a8783c39387449598005631c5c60",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "UNICORN: a deep learning model for integrating multi-stain data in histopathology",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-18T00:00:00+00:00",
+   "summary": "UNICORN is a deep learning model that integrates multi-stain histopathology data, published in npj Digital Medicine.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02861-6",
+   "title_hash": "ad762c719bee237eccec699ecf5b1784",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Unlocking multi-institutional insights into disease progression with PEAL as a lossless, one-shot federated learning solution",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-18T00:00:00+00:00",
+   "summary": "PEAL provides lossless, one-shot federated learning for disease progression analysis across multiple healthcare institutions without sharing raw data.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://huggingface.co/blog/peft-beyond-lora",
+   "title_hash": "2452cae0c3766bb43e14bcc3a52fe824",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/is-it-agentic-enough",
+   "title_hash": "16f8d165a6ac93704e29a101b4f00588",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/17/glm-52",
+   "title_hash": "157e0401935aec190079b6463f029e47",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
+   "source": "Simon Willison's weblog",
+   "published": "2026-06-17T23:58:39+00:00",
+   "summary": "Chinese AI lab Z.ai released GLM-5.2, an open-weights large language model, to coding plan subscribers with reported strong text-generation performance.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://static.simonwillison.net/static/2026/glm-5.2-pelican-card.jpg"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u8p9s1/i_released_inflectnano_an_ultraextreme_tiny_463m",
+   "title_hash": "950c2a73901674178e6a5d52df7da923",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e83657",
+   "title_hash": "7eb6df99a408919b5d1549e6f85868d2",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training",
+   "title_hash": "5057229ebbe74c95597b5eaeb5f81e64",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "AI coding agents taught robots how to install GPUs and cut zip ties",
+   "source": "Ars Technica AI",
+   "published": "2026-06-17T19:25:19+00:00",
+   "summary": "Nvidia's robot self-improvement program used teams of artificial intelligence coding agents to teach robots hardware installation tasks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Screenshot-2026-06-17-at-2.40.06-PM-500x500.png"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u8g3d0/gemma_4_e2b_running_inbrowser_at_255_toks_using",
+   "title_hash": "9492ce5bd2a072f8cac6ceda518614dc",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42309426?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "8050f20ef2f1134dab94249e2931dc34",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42308755?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "3fd833af6412b4b4b8efb132a80fdf3a",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42308513?fc=20260609215449&ff=20260618141138&v=2.20.0",
+   "title_hash": "fb3ba9bc24b0c11e4e48fe1abfcf7e83",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=wwfJlSF34n8",
+   "title_hash": "cea469acbd2d1fae83bf3ca63a8cd81b",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=tFiJMUNJdJU",
+   "title_hash": "f4f942a5969f977e24f84fa63628c328",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Liquid LFM2.5-8B First Test, An On-Device MoE Model!",
+   "source": "Bijan Bowen",
+   "published": "2026-06-18T13:16:31+00:00",
+   "summary": "Demonstration of Liquid LFM2.5-8B, an on-device mixture-of-experts model suitable for local deployment.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/tFiJMUNJdJU/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=57L3vmQLzwQ",
+   "title_hash": "016b82f4118b998baa9a51fc45a6d6df",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4Vg2aVtrX8k",
+   "title_hash": "d12dba654a97f4cdc2141e3079bacf67",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": true,
+   "title": "Building AI Agents for Real-World Problems & Workflows",
+   "source": "IBM Technology",
+   "published": "2026-06-18T11:00:32+00:00",
+   "summary": "IBM's overview of building and evaluating AI agents for real-world applications and clinical workflows.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/4Vg2aVtrX8k/hqdefault.jpg"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/A-Big-Shift-in-the-AI-Race-e3kubu2",
+   "title_hash": "3e9d048bb1d3c5c9907806956a56fd60",
+   "first_seen": "2026-06-18T18:11:37.919150+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -5867,19 +6255,19 @@
  "last_digest_at": "2026-06-12T03:08:49.759806+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Comparative studies reveal that large language models now rival or even surpass human benchmarks in generating and answering medical exam questions-both in specialty areas like ophthalmology and in broader contexts such as the USMLE, indicating their growing reliability as formative assessment tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[1]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0\">[3]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0\">[9]</a>. Substantial agreement between AI-generated and human supervisor feedback on clinical logs further highlights their potential in educational support <a href=\"https://mededu.jmir.org/2026/1/e90064\">[2]</a>. Ongoing research also explores AI’s role in enhancing clinical reasoning and empathetic communication training, with complementary grading and chatbots yielding measurable student outcomes in fields including dermatology <a href=\"https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[7]</a> and general medical education <a href=\"https://mededu.jmir.org/2026/1/e88092\">[14]</a>.",
-   "hash": "bc06776e16488adf",
-   "date": "June 17, 2026"
+   "text": "Medical students increasingly recognize the need for a standardized artificial intelligence curriculum to bridge the gap between enthusiasm about AI and actual competence, as evidenced by a systematic review and meta-analysis <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[3]</a>. Large language models have demonstrated substantial agreement with human supervisors in providing feedback on clinical clerkship logs, indicating their reliability in assessment contexts <a href=\"https://mededu.jmir.org/2026/1/e90064\">[5]</a>. In formative evaluation, there is comparable performance and similar student perceptions of multiple-choice questions generated by both large language models and human students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[4]</a>. Additionally, generative AI has been shown to enhance medical higher education learning performance via mechanisms consistent with social cognitive theory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[9]</a>.",
+   "hash": "8f3265a8db56cdc3",
+   "date": "June 18, 2026"
   },
   "clinical_practice": {
-   "text": "GPT-5 has achieved triage performance in emergency otolaryngology decisions on par with attending physicians, suggesting potential roles in complex frontline assessment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[1]</a>. Meanwhile, general-purpose chatbots outperformed specialized clinical AI tools when responding to real-world physician questions, indicating that broader models may currently offer greater practical utility in clinical practice <a href=\"https://www.nature.com/articles/s41591-026-04457-9\">[5]</a>. In emergency department settings, large language models are being investigated for acute coronary syndrome triage and for assisting with diagnostic decisions when compared with intern doctors, both pointing to expanded use in acute care workflows <a href=\"https://www.nature.com/articles/s41746-026-02904-y\">[4]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[2]</a>. Additionally, models are handling patient and administrative queries in nuclear medicine, with real-world evaluations ongoing <a href=\"https://www.nature.com/articles/s41746-026-02889-8\">[3]</a>.",
-   "hash": "b26f0b284e47623f",
-   "date": "June 17, 2026"
+   "text": "A new benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their suitability for medical workflows and emphasizing the importance of nuanced reasoning for patient care <a href=\"https://arxiv.org/abs/2606.18471\">[1]</a>. Studies are examining whether large language models can assist physicians in real-time doctor-patient-electronic health record scenarios, including performance in emergency triage and diagnostic decision-making, where models such as GPT-5 match attending otolaryngologists and ChatGPT-4 supports intern doctors <a href=\"https://arxiv.org/abs/2606.18613\">[2]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[5]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[6]</a>. Additionally, general-purpose chatbots have outperformed specialized clinical AI tools when answering physicians’ real-world questions, highlighting the evolving role of conversational AI in supporting clinical practice <a href=\"https://www.nature.com/articles/s41591-026-04457-9\">[9]</a>.",
+   "hash": "cffbd295ee044d0c",
+   "date": "June 18, 2026"
   },
   "general_ai": {
-   "text": "GLM-5.2, a new open-weights model designed for long-horizon reasoning tasks, sets a performance benchmark for systems tackling extended and complex sequences <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[1]</a>. Parallel to this, NVIDIA’s Nemotron 3 Ultra, also released with open weights, combines hybrid Mamba and Transformer architectures at the 550-billion-parameter scale to support agentic reasoning broadly across applications <a href=\"https://arxiv.org/abs/2606.15007\">[5]</a>. Improvements in local model deployment and inference speed are making capable open-weight models increasingly practical for users seeking autonomy and customizable workflows <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[3]</a>. Reliability and bias in large language model evaluation methods continue to raise concerns about fairness in model ranking, calling attention to how systems are judged and compared <a href=\"https://arxiv.org/abs/2606.13685\">[6]</a>.",
-   "hash": "99c6d2140759ade8",
-   "date": "June 17, 2026"
+   "text": "The introduction of GLM-5.2, a large open-weight language model designed for long-horizon reasoning tasks, stands out for both its benchmark performance and recent releases to coding plan subscribers from leading Chinese AI research labs <a href=\"https://simonwillison.net/2026/Jun/17/glm-52\">[4]</a> <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[6]</a>. Advances in local deployment are making capable open-weight models more accessible, with improvements in inference speed and model availability highlighted as important practical benefits <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[8]</a>. Meanwhile, a study reports that large language models currently struggle to measure item discrimination in student reading comprehension assessments, raising questions about their effectiveness in educational contexts <a href=\"https://arxiv.org/abs/2606.18709\">[3]</a>. Separately, OpenAI has enhanced its WebRTC Audio Session to allow multimodal interaction, supporting both speech and document input <a href=\"https://simonwillison.net/2026/Jun/12/openai-webrtc\">[14]</a>.",
+   "hash": "99e1771f6bad4968",
+   "date": "June 18, 2026"
   }
  }
 }

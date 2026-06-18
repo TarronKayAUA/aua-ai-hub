@@ -13,11 +13,48 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>GLM-5.2, a new open-weights model designed for long-horizon reasoning tasks, sets a performance benchmark for systems tackling extended and complex sequences <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[1]</a>. Parallel to this, NVIDIA’s Nemotron 3 Ultra, also released with open weights, combines hybrid Mamba and Transformer architectures at the 550-billion-parameter scale to support agentic reasoning broadly across applications <a href="https://arxiv.org/abs/2606.15007">[5]</a>. Improvements in local model deployment and inference speed are making capable open-weight models increasingly practical for users seeking autonomy and customizable workflows <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[3]</a>. Reliability and bias in large language model evaluation methods continue to raise concerns about fairness in model ranking, calling attention to how systems are judged and compared <a href="https://arxiv.org/abs/2606.13685">[6]</a>.</p>
-<p class="section-brief-date">The picture as of June 17, 2026; numbered links go to the items below.</p>
+<p>The introduction of GLM-5.2, a large open-weight language model designed for long-horizon reasoning tasks, stands out for both its benchmark performance and recent releases to coding plan subscribers from leading Chinese AI research labs <a href="https://simonwillison.net/2026/Jun/17/glm-52">[4]</a> <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[6]</a>. Advances in local deployment are making capable open-weight models more accessible, with improvements in inference speed and model availability highlighted as important practical benefits <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[8]</a>. Meanwhile, a study reports that large language models currently struggle to measure item discrimination in student reading comprehension assessments, raising questions about their effectiveness in educational contexts <a href="https://arxiv.org/abs/2606.18709">[3]</a>. Separately, OpenAI has enhanced its WebRTC Audio Session to allow multimodal interaction, supporting both speech and document input <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[14]</a>.</p>
+<p class="section-brief-date">The picture as of June 18, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.18273">Continuous Audio Thinking for Large Audio Language Models</a>
+    <p class="news-card-summary">Continuous Audio Thinking extends large audio language models with intermediate reasoning steps for improved audio processing and understanding.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.18372">Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identification</a>
+    <p class="news-card-summary">Fully local artificial intelligence cascade de-identifies educational dialogue without sending data to external servers, balancing privacy and utility.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.18709">LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment</a>
+    <p class="news-card-summary">Study finds large language models struggle to measure item discrimination, a key psychometric property for assessing student reading comprehension differences.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/17/glm-52">GLM-5.2 is probably the most powerful text-only open weights LLM</a>
+    <p class="news-card-summary">Chinese AI lab Z.ai released GLM-5.2, an open-weights large language model, to coding plan subscribers with reported strong text-generation performance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/glm-5.2-pelican-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 17, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training">AI coding agents taught robots how to install GPUs and cut zip ties</a>
+    <p class="news-card-summary">Nvidia&#x27;s robot self-improvement program used teams of artificial intelligence coding agents to teach robots hardware installation tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/Screenshot-2026-06-17-at-2.40.06-PM-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 17, 2026</span></div>
@@ -93,44 +130,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">OpenAI expanded its WebRTC Audio Session feature to support document context, enabling multimodal interaction with speech and uploaded documents.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/openai-webrtc-document-context-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/allenai/olmo-eval">olmo-eval: An evaluation workbench for the model development loop</a>
-    <p class="news-card-summary">Hugging Face releases olmo-eval, an evaluation workbench designed to support model development workflows.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/gacAOFYwPkpxu7cC4eeey.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face">MiniMaxAI/MiniMax-M3 · Hugging Face</a>
-    <p class="news-card-summary">MiniMax-M3 open-weights model released with approximately 428 billion parameters and 23 billion activated parameters.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/Uv93NfmsEWZ6OylNRrWDx5767F50djITuxFOvPL7cs4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1bedec10a803f86762cdba66e04f25b0f6b3343d" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">Kimi K2.7-Code: open-source coding model with better token efficiency</a>
-    <p class="news-card-summary">Moonshot AI releases Kimi K2.7-Code, an open-source coding-focused model with improved token efficiency.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K2.7-Code.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://cohere.com/blog/north-mini-code">Cohere&#x27;s First Model for Developers</a>
-    <p class="news-card-summary">Cohere released North Mini, a compact code-generation model targeting developers who need smaller alternatives to large models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/824d32875c1faf5d7048cb18d83e006e46c9b869-3840x2160.png?rect=0,72,3840,2016&amp;w=1200&amp;h=630" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.11257">Energy-Efficient On-Device RAG on a Mobile NPU: System Design and Benchmark on Snapdragon X Elite</a>
-    <p class="news-card-summary">This work presents an energy-efficient, on-device retrieval-augmented generation system for mobile neural processing units, enabling more practical AI deployments.</p>
-  </div>
 </div>
 </div>

@@ -13,11 +13,39 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>GPT-5 has achieved triage performance in emergency otolaryngology decisions on par with attending physicians, suggesting potential roles in complex frontline assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[1]</a>. Meanwhile, general-purpose chatbots outperformed specialized clinical AI tools when responding to real-world physician questions, indicating that broader models may currently offer greater practical utility in clinical practice <a href="https://www.nature.com/articles/s41591-026-04457-9">[5]</a>. In emergency department settings, large language models are being investigated for acute coronary syndrome triage and for assisting with diagnostic decisions when compared with intern doctors, both pointing to expanded use in acute care workflows <a href="https://www.nature.com/articles/s41746-026-02904-y">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[2]</a>. Additionally, models are handling patient and administrative queries in nuclear medicine, with real-world evaluations ongoing <a href="https://www.nature.com/articles/s41746-026-02889-8">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 17, 2026; numbered links go to the items below.</p>
+<p>A new benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their suitability for medical workflows and emphasizing the importance of nuanced reasoning for patient care <a href="https://arxiv.org/abs/2606.18471">[1]</a>. Studies are examining whether large language models can assist physicians in real-time doctor-patient-electronic health record scenarios, including performance in emergency triage and diagnostic decision-making, where models such as GPT-5 match attending otolaryngologists and ChatGPT-4 supports intern doctors <a href="https://arxiv.org/abs/2606.18613">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[6]</a>. Additionally, general-purpose chatbots have outperformed specialized clinical AI tools when answering physicians’ real-world questions, highlighting the evolving role of conversational AI in supporting clinical practice <a href="https://www.nature.com/articles/s41591-026-04457-9">[9]</a>.</p>
+<p class="section-brief-date">The picture as of June 18, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.18471">Possible or Definite? A Benchmark for Evaluating Diagnostic Uncertainty Preservation in Clinical Text</a>
+    <p class="news-card-summary">New benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their readiness for medical use.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.18613">Are LLMs Ready to Assist Physicians? PhysAssistBench for Interactive Doctor-Patient-EHR Assistance</a>
+    <p class="news-card-summary">PhysAssistBench benchmark tests whether large language models can assist physicians in interactive doctor-patient-electronic health record scenarios.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02829-6">UNICORN: a deep learning model for integrating multi-stain data in histopathology</a>
+    <p class="news-card-summary">UNICORN is a deep learning model that integrates multi-stain histopathology data, published in npj Digital Medicine.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02861-6">Unlocking multi-institutional insights into disease progression with PEAL as a lossless, one-shot federated learning solution</a>
+    <p class="news-card-summary">PEAL provides lossless, one-shot federated learning for disease progression analysis across multiple healthcare institutions without sharing raw data.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
@@ -96,34 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.13940">Can Post-Training Turn LLMs into Good Medical Coders? An Empirical Study of Generative ICD Coding</a>
     <p class="news-card-summary">Study evaluates whether post-training can improve large language models for automated International Classification of Diseases coding from clinical documentation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02883-0">Digital phenotyping with large language models to detect depressive state changes in patients</a>
-    <p class="news-card-summary">Digital phenotyping using large language models detects changes in depressive state from patient-generated text data with clinical validation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02880-3">A scoping review of traditional and artificial intelligence methods in malaria diagnostics</a>
-    <p class="news-card-summary">Scoping review compares traditional diagnostic methods and artificial intelligence approaches for malaria detection across available evidence.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02738-8">ActiTect: a generalizable machine learning pipeline for REM sleep behavior disorder screening through standardized actigraphy</a>
-    <p class="news-card-summary">Researchers developed ActiTect, a generalizable machine learning pipeline using standardized actigraphy data to screen for rapid eye movement sleep behavior disorder.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02868-z">FairGen: preference-aligned diffusion for demographically equitable medical image synthesis</a>
-    <p class="news-card-summary">Peer-reviewed study presents FairGen, a method for generating medical images with demographic equity using preference-aligned diffusion models.</p>
   </div>
 </div>
 </div>

@@ -24,6 +24,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=tFiJMUNJdJU" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/tFiJMUNJdJU/hqdefault.jpg" alt="Video: Liquid LFM2.5-8B First Test, An On-Device MoE Model!" loading="lazy">
+  <span class="video-card-title">Liquid LFM2.5-8B First Test, An On-Device MoE Model!</span>
+  <span class="video-card-meta">Bijan Bowen, June 18, 2026</span>
+  <span class="video-card-desc">Demonstration of Liquid LFM2.5-8B, an on-device mixture-of-experts model suitable for local deployment.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=4Vg2aVtrX8k" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/4Vg2aVtrX8k/hqdefault.jpg" alt="Video: Building AI Agents for Real-World Problems &amp; Workflows" loading="lazy">
+  <span class="video-card-title">Building AI Agents for Real-World Problems &amp; Workflows</span>
+  <span class="video-card-meta">IBM Technology, June 18, 2026</span>
+  <span class="video-card-desc">IBM&#x27;s overview of building and evaluating AI agents for real-world applications and clinical workflows.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=w2hpXlyMrAA" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/w2hpXlyMrAA/hqdefault.jpg" alt="Video: Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)" loading="lazy">
   <span class="video-card-title">Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)</span>
@@ -131,18 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents</span>
   <span class="video-card-meta">IBM Technology, June 4, 2026</span>
   <span class="video-card-desc">This video outlines six security risks identified by OpenClaw related to autonomous AI agents and discusses potential vulnerabilities in agent-driven AI systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=ypL7kUiw_LM" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/ypL7kUiw_LM/hqdefault.jpg" alt="Video: Claude Opus 4.8: Lying Machine No More?" loading="lazy">
-  <span class="video-card-title">Claude Opus 4.8: Lying Machine No More?</span>
-  <span class="video-card-meta">Two Minute Papers, June 3, 2026</span>
-  <span class="video-card-desc">The video evaluates Anthropic&#x27;s Claude Opus 4.8, focusing on improvements in reducing false outputs and the model&#x27;s reliability in generating truthful responses.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=yz6I23VRbdg" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/yz6I23VRbdg/hqdefault.jpg" alt="Video: What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean" loading="lazy">
-  <span class="video-card-title">What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean</span>
-  <span class="video-card-meta">Two Minute Papers, June 1, 2026</span>
-  <span class="video-card-desc">Jeff Dean discusses potential developments and impacts in artificial intelligence after a significant increase in computational power by a factor of one million.</span>
 </a>
 </div>
 
