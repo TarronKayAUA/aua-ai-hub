@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>The introduction of GLM-5.2, a large open-weight language model designed for long-horizon reasoning tasks, stands out for both its benchmark performance and recent releases to coding plan subscribers from leading Chinese AI research labs <a href="https://simonwillison.net/2026/Jun/17/glm-52">[4]</a> <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[6]</a>. Advances in local deployment are making capable open-weight models more accessible, with improvements in inference speed and model availability highlighted as important practical benefits <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[8]</a>. Meanwhile, a study reports that large language models currently struggle to measure item discrimination in student reading comprehension assessments, raising questions about their effectiveness in educational contexts <a href="https://arxiv.org/abs/2606.18709">[3]</a>. Separately, OpenAI has enhanced its WebRTC Audio Session to allow multimodal interaction, supporting both speech and document input <a href="https://simonwillison.net/2026/Jun/12/openai-webrtc">[14]</a>.</p>
+<p>A recent study demonstrates that research agents can leak sensitive information from their training data when prompted strategically, highlighting security concerns relevant to medical education and research environments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[1]</a>. Efforts to address privacy include a fully local artificial intelligence cascade for de-identifying educational dialogue, effectively balancing the need for data utility without external transmission risks <a href="https://arxiv.org/abs/2606.18372">[3]</a>. In the development of large models, several open-weight releases aim to improve performance and accessibility, such as GLM-5.2, which shows strength in text generation and long-horizon reasoning <a href="https://simonwillison.net/2026/Jun/17/glm-52">[5]</a> <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[7]</a>. Deployment advances enable practical local model inference, bolstering privacy and speed for medical applications <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[9]</a>.</p>
 <p class="section-brief-date">The picture as of June 18, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/ServiceNow/mosaicleaks">MosaicLeaks: Can your research agent keep a secret?</a>
+    <p class="news-card-summary">Study demonstrates that research agents can leak sensitive information from training data when queried strategically, raising security concerns for deployed AI systems.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
@@ -122,13 +130,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Anthropic shut down Fable and Mythos models following a US Commerce Department directive citing national security concerns over a reported jailbreak vulnerability.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/fable5-500x500-1781319492.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/12/openai-webrtc">OpenAI WebRTC Audio Session, now with document context</a>
-    <p class="news-card-summary">OpenAI expanded its WebRTC Audio Session feature to support document context, enabling multimodal interaction with speech and uploaded documents.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/openai-webrtc-document-context-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

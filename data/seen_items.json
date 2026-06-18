@@ -6161,6 +6161,19 @@
    "title_hash": "3e9d048bb1d3c5c9907806956a56fd60",
    "first_seen": "2026-06-18T18:11:37.919150+00:00",
    "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+   "title_hash": "dd52080878d0e1b829da4d5bc68d3c85",
+   "first_seen": "2026-06-18T18:42:20.882407+00:00",
+   "kept": true,
+   "title": "MosaicLeaks: Can your research agent keep a secret?",
+   "source": "Hugging Face blog",
+   "published": "2026-06-18T18:13:13+00:00",
+   "summary": "Study demonstrates that research agents can leak sensitive information from training data when queried strategically, raising security concerns for deployed AI systems.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp"
   }
  ],
  "digests": [
@@ -6265,8 +6278,8 @@
    "date": "June 18, 2026"
   },
   "general_ai": {
-   "text": "The introduction of GLM-5.2, a large open-weight language model designed for long-horizon reasoning tasks, stands out for both its benchmark performance and recent releases to coding plan subscribers from leading Chinese AI research labs <a href=\"https://simonwillison.net/2026/Jun/17/glm-52\">[4]</a> <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[6]</a>. Advances in local deployment are making capable open-weight models more accessible, with improvements in inference speed and model availability highlighted as important practical benefits <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[8]</a>. Meanwhile, a study reports that large language models currently struggle to measure item discrimination in student reading comprehension assessments, raising questions about their effectiveness in educational contexts <a href=\"https://arxiv.org/abs/2606.18709\">[3]</a>. Separately, OpenAI has enhanced its WebRTC Audio Session to allow multimodal interaction, supporting both speech and document input <a href=\"https://simonwillison.net/2026/Jun/12/openai-webrtc\">[14]</a>.",
-   "hash": "99e1771f6bad4968",
+   "text": "A recent study demonstrates that research agents can leak sensitive information from their training data when prompted strategically, highlighting security concerns relevant to medical education and research environments <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[1]</a>. Efforts to address privacy include a fully local artificial intelligence cascade for de-identifying educational dialogue, effectively balancing the need for data utility without external transmission risks <a href=\"https://arxiv.org/abs/2606.18372\">[3]</a>. In the development of large models, several open-weight releases aim to improve performance and accessibility, such as GLM-5.2, which shows strength in text generation and long-horizon reasoning <a href=\"https://simonwillison.net/2026/Jun/17/glm-52\">[5]</a> <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[7]</a>. Deployment advances enable practical local model inference, bolstering privacy and speed for medical applications <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[9]</a>.",
+   "hash": "583303b6fb59130b",
    "date": "June 18, 2026"
   }
  }
