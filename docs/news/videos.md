@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=UxY8zJKRrHU" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/UxY8zJKRrHU/hqdefault.jpg" alt="Video: Improving health intelligence in ChatGPT" loading="lazy">
+  <span class="video-card-title">Improving health intelligence in ChatGPT</span>
+  <span class="video-card-meta">OpenAI, June 18, 2026</span>
+  <span class="video-card-desc">OpenAI describes improvements to health intelligence features in ChatGPT, including enhanced medical information handling for its 230 million weekly health-related user queries.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=tFiJMUNJdJU" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/tFiJMUNJdJU/hqdefault.jpg" alt="Video: Liquid LFM2.5-8B First Test, An On-Device MoE Model!" loading="lazy">
   <span class="video-card-title">Liquid LFM2.5-8B First Test, An On-Device MoE Model!</span>
@@ -137,12 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">DeepMind’s New AI Found A Strange New Way To Think</span>
   <span class="video-card-meta">Two Minute Papers, June 5, 2026</span>
   <span class="video-card-desc">This video explains a new computational approach discovered by DeepMind&#x27;s AI that alters traditional problem-solving strategies, providing insight into innovative AI thinking models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=7qZH3D7u-z8" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/7qZH3D7u-z8/hqdefault.jpg" alt="Video: OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents" loading="lazy">
-  <span class="video-card-title">OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents</span>
-  <span class="video-card-meta">IBM Technology, June 4, 2026</span>
-  <span class="video-card-desc">This video outlines six security risks identified by OpenClaw related to autonomous AI agents and discusses potential vulnerabilities in agent-driven AI systems.</span>
 </a>
 </div>
 

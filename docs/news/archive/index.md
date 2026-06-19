@@ -4,4 +4,5 @@
 
 Weekly digests, newest first.
 
+- [Week 25, 2026](2026-w25.md)
 - [Week 24, 2026](2026-w24.md)

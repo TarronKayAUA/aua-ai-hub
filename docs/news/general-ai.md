@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A recent study demonstrates that research agents can leak sensitive information from their training data when prompted strategically, highlighting security concerns relevant to medical education and research environments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[1]</a>. Efforts to address privacy include a fully local artificial intelligence cascade for de-identifying educational dialogue, effectively balancing the need for data utility without external transmission risks <a href="https://arxiv.org/abs/2606.18372">[3]</a>. In the development of large models, several open-weight releases aim to improve performance and accessibility, such as GLM-5.2, which shows strength in text generation and long-horizon reasoning <a href="https://simonwillison.net/2026/Jun/17/glm-52">[5]</a> <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[7]</a>. Deployment advances enable practical local model inference, bolstering privacy and speed for medical applications <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[9]</a>.</p>
-<p class="section-brief-date">The picture as of June 18, 2026; numbered links go to the items below.</p>
+<p>DeepSeek-V4 preview highlights efforts to efficiently handle million-token contexts in language model applications, signaling advances in scaling AI input and analysis for large medical datasets <a href="https://arxiv.org/abs/2606.19348">[1]</a>. Security concerns arise as a study demonstrates that research agents can leak sensitive information from training data when queried strategically, underlining risks in deploying AI systems for faculty and student use <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. CacheWeaver introduces optimizations for retrieval-augmented generation inference, improving model performance through cache-aware evidence ordering <a href="https://arxiv.org/abs/2606.19667">[3]</a>. Large-scale evaluation shows reliability and bias issues in LLM-as-a-Judge models, raising questions about trust and consistency when applying these models to academic decision-making processes <a href="https://arxiv.org/abs/2606.19544">[2]</a>.</p>
+<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.19348">DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence</a>
+    <p class="news-card-summary">DeepSeek-V4 preview targets efficient context handling for million-token language model applications.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.19544">Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias</a>
+    <p class="news-card-summary">Large-scale evaluation reveals that LLM-as-a-Judge models show reliability and consistency issues across agreement and bias measures.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.19667">CacheWeaver: Cache-Aware Evidence Ordering for Efficient Grounded RAG Inference</a>
+    <p class="news-card-summary">CacheWeaver optimizes retrieval-augmented generation inference efficiency through cache-aware evidence ordering.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 18, 2026</span></div>
@@ -108,27 +129,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://arxiv.org/abs/2606.15007">Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning</a>
     <p class="news-card-summary">NVIDIA released Nemotron 3 Ultra, a 550-billion-parameter open-weight mixture-of-experts model combining Mamba and Transformer architectures for agentic reasoning.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.13685">The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation</a>
-    <p class="news-card-summary">Analysis of large language model-as-judge evaluation methods reveals reliability concerns and systematic biases affecting model ranking comparisons.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.14179">CacheRL:Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward</a>
-    <p class="news-card-summary">CacheRL system trains small language model agents for multi-turn tool-calling tasks using cached rollouts and hybrid reward mechanisms.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">Anthropic shuts down Fable, Mythos models following Trump admin directive</a>
-    <p class="news-card-summary">Anthropic shut down Fable and Mythos models following a US Commerce Department directive citing national security concerns over a reported jailbreak vulnerability.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/fable5-500x500-1781319492.webp" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

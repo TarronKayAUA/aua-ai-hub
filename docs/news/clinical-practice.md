@@ -13,11 +13,42 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their suitability for medical workflows and emphasizing the importance of nuanced reasoning for patient care <a href="https://arxiv.org/abs/2606.18471">[1]</a>. Studies are examining whether large language models can assist physicians in real-time doctor-patient-electronic health record scenarios, including performance in emergency triage and diagnostic decision-making, where models such as GPT-5 match attending otolaryngologists and ChatGPT-4 supports intern doctors <a href="https://arxiv.org/abs/2606.18613">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[6]</a>. Additionally, general-purpose chatbots have outperformed specialized clinical AI tools when answering physicians’ real-world questions, highlighting the evolving role of conversational AI in supporting clinical practice <a href="https://www.nature.com/articles/s41591-026-04457-9">[9]</a>.</p>
-<p class="section-brief-date">The picture as of June 18, 2026; numbered links go to the items below.</p>
+<p>A new vision-language model using reinforcement learning now differentiates ischemic from nonischemic T-wave inversion on electrocardiograms, marking a notable advance in automated ECG interpretation for clinical practice <a href="https://medinform.jmir.org/2026/1/e87227">[1]</a>. The question of whether large language models can assist physicians interactively with doctor-patient-electronic health record tasks is tested by the PhysAssistBench benchmark, reflecting growing interest in practical physician support <a href="https://arxiv.org/abs/2606.18613">[6]</a>. Diagnostic uncertainty remains a concern, with a new benchmark evaluating if large language models preserve clinical ambiguity-a critical consideration for medical text readiness <a href="https://arxiv.org/abs/2606.18471">[5]</a>. Meanwhile, studies continue to assess large language model performance in emergency settings, finding comparable or supportive triage capabilities relative to physicians and interns <a href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[9]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[10]</a>.</p>
+<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87227">Differentiating Ischemic From Nonischemic T-Wave Inversion Using a Multimodal Vision-Language Model With Reinforcement Learning (ECG-R1): Development and Validation Study</a>
+    <p class="news-card-summary">Vision-language model with reinforcement learning differentiates ischemic from nonischemic T-wave inversion on electrocardiograms.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/868464737a74765c41328b0e83b67b6b.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02509-5">Clinical large language model centered on electronic medical records</a>
+    <p class="news-card-summary">Large language model trained on electronic medical records for clinical applications.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77943">Performance of Zero-Shot Classifiers for Categorizing RCT Abstracts by Intervention Type: Validation Study</a>
+    <p class="news-card-summary">Zero-shot language model classifiers validated for categorizing randomized controlled trial abstracts by intervention type.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6f8388d5d0ea3298643a34812798503f.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 18, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93054">Evaluation of Five Large Language Models for Parental Education in Pediatric Anesthesia: Reliability and Readability Study</a>
+    <p class="news-card-summary">Five large language models evaluated for reliability and readability in generating parental education materials for pediatric anesthesia.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/19437c759dc1cc8ac08d1e1262e71a35.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
@@ -94,36 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02882-1">When silence is safer: a review and decision-theoretic framework for LLM abstention in healthcare</a>
     <p class="news-card-summary">Framework proposes decision-theoretic approach for when large language models should abstain from responding in clinical settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02914-w">Zero burden multi night monitoring with AI enabled technology reduces obstructive sleep apnea misdiagnosis</a>
-    <p class="news-card-summary">AI-enabled wearable technology reduces misdiagnosis of obstructive sleep apnea through multi-night monitoring without burden on patients.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e85255">Predicting Laboratory Test Ordering in Emergency Departments Using Integrated Structured and Unstructured Electronic Health Records: Machine Learning Study</a>
-    <p class="news-card-summary">Machine learning model predicts emergency department laboratory test ordering using structured and unstructured electronic health record data to support clinical decision-making.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/354a2cc0feee66259ce6e37274beff5e.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e81049">AI-Assisted Systematic Literature Review of the Economic Burden of Pneumococcal Disease: Development and Validation Study</a>
-    <p class="news-card-summary">Study validates AI-assisted automated systematic literature review for extracting economic evidence on pneumococcal disease burden from medical databases.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/fc7be4ebbdd9481f612f762ed4c9b5f3.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.13940">Can Post-Training Turn LLMs into Good Medical Coders? An Empirical Study of Generative ICD Coding</a>
-    <p class="news-card-summary">Study evaluates whether post-training can improve large language models for automated International Classification of Diseases coding from clinical documentation.</p>
   </div>
 </div>
 </div>

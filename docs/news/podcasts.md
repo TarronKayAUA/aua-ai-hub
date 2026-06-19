@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/more-as-more-fails-what-ai-is-really-doing-to-student-performance" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance" loading="lazy">
+  <span class="video-card-title">More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance</span>
+  <span class="video-card-meta">AI in Education Podcast, June 18, 2026</span>
+  <span class="video-card-desc">Episode explores the paradoxical effects of AI on student performance, examining why AI tutoring correlates with both higher grades and increased failure rates.</span>
+</a>
 <a class="video-card" href="https://ai-podcast.nejm.org/e/openai-s-karan-singal-on-healthbench-and-the-future-of-medical-ai" target="_blank" rel="noopener">
   <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Video: OpenAI’s Karan Singal on HealthBench and the Future of Medical AI" loading="lazy">
   <span class="video-card-title">OpenAI’s Karan Singal on HealthBench and the Future of Medical AI</span>
