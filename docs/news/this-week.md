@@ -171,48 +171,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Quantifying the AI readiness gap: An international, multidisciplinary assessment of artificial intelligence literacy in the radiation oncology community</a>
-    <p class="news-card-summary">International study establishes a global benchmark for artificial intelligence literacy and readiness among radiation oncology clinical staff.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281389?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">EXPRESS: Artificial intelligence perceptions and experiences among first and second year medical students</a>
-    <p class="news-card-summary">Survey of first and second year medical students shows they anticipate growing artificial intelligence roles in medical education and favor structured training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281346?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Bridging the Health Literacy Gap for Patients With Oral Cancer: Readability Enhancement With AI Chatbots</a>
-    <p class="news-card-summary">Large language model-based simplification enhanced readability of oral cancer patient health materials while preserving medical accuracy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42281165?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Evaluation of DeepSeek-Generated Biochemistry Clinical Cases for Teaching Purpose</a>
-    <p class="news-card-summary">Study evaluates DeepSeek-generated biochemistry clinical cases as a workflow to address limitations in traditional case-based teaching.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42278944?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Language-Specific Differences in Large Language Model Diagnostic Reasoning: A Translation-Controlled Clinical Vignette Study</a>
-    <p class="news-card-summary">Translation-controlled study finds large language models show language-specific differences in diagnostic reasoning on clinical vignettes.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42277776?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0">Exploring the use of AI-generated counterfactual chest X-rays to enhance diagnostic learning in medical education</a>
-    <p class="news-card-summary">Research explores artificial intelligence-generated counterfactual chest X-rays to improve diagnostic learning outcomes in medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42284227?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Meta-analysis of randomized controlled trials comparing outcomes of artificial intelligence-based teaching versus traditional-based teaching in medical education</a>
     <p class="news-card-summary">Meta-analysis of randomized controlled trials found artificial intelligence-based teaching approaches performed comparably to or better than traditional teaching methods.</p>
   </div>
@@ -405,20 +363,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02881-2">Virtual nursing implementation and 30-day patient readmissions: a multi-site study</a>
-    <p class="news-card-summary">Multi-site study examines effects of virtual nursing implementation on 30-day patient readmission rates.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02869-y">An autonomous AI agent for knowledge and data cooperation in ED clinical decision support</a>
-    <p class="news-card-summary">Published study describes an autonomous AI agent designed to support clinical decision-making in emergency department settings through knowledge and data integration.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02886-x">The effectiveness of CBT-based NLP-enabled AI conversational agents for mental health intervention: a systematic review and meta-analysis</a>
     <p class="news-card-summary">Systematic review and meta-analysis assessed the effectiveness of natural language processing-enabled conversational agents delivering cognitive behavioral therapy for mental health.</p>
   </div>
@@ -574,30 +518,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">OpenAI expanded its WebRTC Audio Session feature to support document context, enabling multimodal interaction with speech and uploaded documents.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/openai-webrtc-document-context-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/allenai/olmo-eval">olmo-eval: An evaluation workbench for the model development loop</a>
-    <p class="news-card-summary">Hugging Face releases olmo-eval, an evaluation workbench designed to support model development workflows.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/gacAOFYwPkpxu7cC4eeey.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face">MiniMaxAI/MiniMax-M3 · Hugging Face</a>
-    <p class="news-card-summary">MiniMax-M3 open-weights model released with approximately 428 billion parameters and 23 billion activated parameters.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/Uv93NfmsEWZ6OylNRrWDx5767F50djITuxFOvPL7cs4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1bedec10a803f86762cdba66e04f25b0f6b3343d" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">Kimi K2.7-Code: open-source coding model with better token efficiency</a>
-    <p class="news-card-summary">Moonshot AI releases Kimi K2.7-Code, an open-source coding-focused model with improved token efficiency.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K2.7-Code.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
