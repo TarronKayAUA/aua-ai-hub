@@ -3,5 +3,5 @@
 - [Voluntary use of LLM-powered virtual standardized patients and medical students' interview performance: An observational study](https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&ff=20260620082131&v=2.20.0) (PubMed AI in medical education, June 20, 2026)
 - [FetalCLIP: a visual-language foundation model for fetal ultrasound image analysis](https://www.nature.com/articles/s41746-026-02907-9) (npj Digital Medicine, June 20, 2026)
 - [Treatment-aware deep learning enables counterfactual prediction of individual benefit from PARP inhibitors in ovarian cancer](https://www.nature.com/articles/s41746-026-02822-z) (npj Digital Medicine, June 20, 2026)
-- [Online Sepsis Prediction Using Vital Signs and Multiscale Temporal-Aware Contrastive Learning: Model Development and Validation Study](https://medinform.jmir.org/2026/1/e82762) (JMIR Medical Informatics, June 19, 2026)
-- [Differentiating Ischemic From Nonischemic T-Wave Inversion Using a Multimodal Vision-Language Model With Reinforcement Learning (ECG-R1): Development and Validation Study](https://medinform.jmir.org/2026/1/e87227) (JMIR Medical Informatics, June 19, 2026)
+- [Human-AI Collaboration in Healthcare: A Scoping Review](https://www.nature.com/articles/s41746-026-02918-6) (npj Digital Medicine, June 20, 2026)
+- [Interpretable machine learning model for predicting kidney failure among CAKUT children in multicenter large-scale study](https://www.nature.com/articles/s41746-026-02901-1) (npj Digital Medicine, June 20, 2026)

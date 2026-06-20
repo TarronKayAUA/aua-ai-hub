@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=qdf6UvCUlu4" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/qdf6UvCUlu4/hqdefault.jpg" alt="Video: North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!" loading="lazy">
+  <span class="video-card-title">North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!</span>
+  <span class="video-card-meta">Bijan Bowen, June 20, 2026</span>
+  <span class="video-card-desc">Demonstration and technical walkthrough of Cohere&#x27;s North Mini, a local agentic coding model suitable for running without cloud infrastructure.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=0JIbgZ544wU" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/0JIbgZ544wU/hqdefault.jpg" alt="Video: What Codex Unlocks for NTT Data" loading="lazy">
   <span class="video-card-title">What Codex Unlocks for NTT Data</span>
@@ -137,12 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Introducing Claude Fable 5</span>
   <span class="video-card-meta">Anthropic, June 9, 2026</span>
   <span class="video-card-desc">Anthropic introduces Claude Fable 5, detailing its advanced capabilities and integrated safeguards aimed at enhancing responsible and secure AI deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=4rEgNiP5V2E" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/4rEgNiP5V2E/hqdefault.jpg" alt="Video: Anthropic Calls for &quot;Global AI Pause&quot;" loading="lazy">
-  <span class="video-card-title">Anthropic Calls for &quot;Global AI Pause&quot;</span>
-  <span class="video-card-meta">Wes Roth, June 5, 2026</span>
-  <span class="video-card-desc">Wes Roth reports on Anthropic&#x27;s call for a global moratorium on AI development to address ethical and safety concerns related to advanced AI systems.</span>
 </a>
 </div>
 

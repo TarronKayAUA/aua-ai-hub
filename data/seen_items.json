@@ -6734,6 +6734,55 @@
    "title_hash": "ce157c3db8facf5df3ca00d8f8e707b0",
    "first_seen": "2026-06-20T12:21:31.438564+00:00",
    "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02918-6",
+   "title_hash": "2628110e6eca63d863c7e44153b7aa9c",
+   "first_seen": "2026-06-20T15:57:36.989284+00:00",
+   "kept": true,
+   "title": "Human-AI Collaboration in Healthcare: A Scoping Review",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-20T00:00:00+00:00",
+   "summary": "Scoping review examines frameworks and outcomes of human-AI collaboration in clinical settings and healthcare delivery.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02901-1",
+   "title_hash": "1292f9f528da8521a372e62b6955dd64",
+   "first_seen": "2026-06-20T15:57:36.989284+00:00",
+   "kept": true,
+   "title": "Interpretable machine learning model for predicting kidney failure among CAKUT children in multicenter large-scale study",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-20T00:00:00+00:00",
+   "summary": "Multicenter study develops an interpretable machine learning model to predict kidney failure in children with congenital anomalies of the kidney and urinary tract.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qdf6UvCUlu4",
+   "title_hash": "2e8415219df0d721a89d2fc9084754e5",
+   "first_seen": "2026-06-20T15:57:36.989284+00:00",
+   "kept": true,
+   "title": "North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!",
+   "source": "Bijan Bowen",
+   "published": "2026-06-20T13:20:42+00:00",
+   "summary": "Demonstration and technical walkthrough of Cohere's North Mini, a local agentic coding model suitable for running without cloud infrastructure.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/qdf6UvCUlu4/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=G3KfRWUj6Wc",
+   "title_hash": "e5dd12f0c07558f8d019aad1737eb02d",
+   "first_seen": "2026-06-20T15:57:36.989284+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-5-Minute-AI-Weekly-Recap-Realignment-Week-e3l2097",
+   "title_hash": "dee5b4bd1451aee4eeaa06047afa9560",
+   "first_seen": "2026-06-20T15:57:36.989284+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -6840,8 +6889,8 @@
    "date": "June 20, 2026"
   },
   "clinical_practice": {
-   "text": "Individual patient benefit from PARP inhibitors in ovarian cancer can now be predicted using a treatment-aware deep learning model, supporting more personalized therapies based on counterfactual outcomes <a href=\"https://www.nature.com/articles/s41746-026-02822-z\">[2]</a>. Real-time sepsis risk assessment is also advancing, as a validated model uses vital signs and temporal-aware contrastive learning for deployment in clinical settings <a href=\"https://medinform.jmir.org/2026/1/e82762\">[3]</a>. Meanwhile, electronic medical records are informing a large language model designed for clinical applications, broadening AI&#x27;s utility in patient care <a href=\"https://www.nature.com/articles/s41746-026-02509-5\">[5]</a>. Further, new benchmarks test large language models for their ability to preserve diagnostic uncertainty in clinical text, which is essential for safe integration into medical workflows <a href=\"https://arxiv.org/abs/2606.18471\">[9]</a>.",
-   "hash": "e25c6f0f60133ec0",
+   "text": "A treatment-aware deep learning model is enabling counterfactual prediction of individual benefit for ovarian cancer patients treated with PARP inhibitors, supporting more personalized therapy selection <a href=\"https://www.nature.com/articles/s41746-026-02822-z\">[2]</a>. Human-AI collaboration frameworks and outcomes are being examined across clinical settings, with reviews highlighting key task divisions and how these partnerships influence healthcare delivery <a href=\"https://www.nature.com/articles/s41746-026-02918-6\">[3]</a> <a href=\"https://www.nature.com/articles/s41746-026-02912-y\">[8]</a>. In parallel, large language models are being evaluated for their suitability in assisting physicians during interactive doctor-patient-electronic health record tasks, using dedicated benchmarks to assess readiness for clinical practice and uncertainty preservation <a href=\"https://arxiv.org/abs/2606.18471\">[11]</a> <a href=\"https://arxiv.org/abs/2606.18613\">[12]</a>. These developments point to increased integration of machine learning and language models in core clinical workflows.",
+   "hash": "58bfd6bd97bcbf37",
    "date": "June 20, 2026"
   },
   "general_ai": {

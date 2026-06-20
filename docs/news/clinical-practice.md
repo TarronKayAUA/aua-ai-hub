@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Individual patient benefit from PARP inhibitors in ovarian cancer can now be predicted using a treatment-aware deep learning model, supporting more personalized therapies based on counterfactual outcomes <a href="https://www.nature.com/articles/s41746-026-02822-z">[2]</a>. Real-time sepsis risk assessment is also advancing, as a validated model uses vital signs and temporal-aware contrastive learning for deployment in clinical settings <a href="https://medinform.jmir.org/2026/1/e82762">[3]</a>. Meanwhile, electronic medical records are informing a large language model designed for clinical applications, broadening AI&#x27;s utility in patient care <a href="https://www.nature.com/articles/s41746-026-02509-5">[5]</a>. Further, new benchmarks test large language models for their ability to preserve diagnostic uncertainty in clinical text, which is essential for safe integration into medical workflows <a href="https://arxiv.org/abs/2606.18471">[9]</a>.</p>
+<p>A treatment-aware deep learning model is enabling counterfactual prediction of individual benefit for ovarian cancer patients treated with PARP inhibitors, supporting more personalized therapy selection <a href="https://www.nature.com/articles/s41746-026-02822-z">[2]</a>. Human-AI collaboration frameworks and outcomes are being examined across clinical settings, with reviews highlighting key task divisions and how these partnerships influence healthcare delivery <a href="https://www.nature.com/articles/s41746-026-02918-6">[3]</a> <a href="https://www.nature.com/articles/s41746-026-02912-y">[8]</a>. In parallel, large language models are being evaluated for their suitability in assisting physicians during interactive doctor-patient-electronic health record tasks, using dedicated benchmarks to assess readiness for clinical practice and uncertainty preservation <a href="https://arxiv.org/abs/2606.18471">[11]</a> <a href="https://arxiv.org/abs/2606.18613">[12]</a>. These developments point to increased integration of machine learning and language models in core clinical workflows.</p>
 <p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -30,6 +30,20 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02822-z">Treatment-aware deep learning enables counterfactual prediction of individual benefit from PARP inhibitors in ovarian cancer</a>
     <p class="news-card-summary">Treatment-aware deep learning model predicts individual benefit from poly ADP-ribose polymerase inhibitors in ovarian cancer patients.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02918-6">Human-AI Collaboration in Healthcare: A Scoping Review</a>
+    <p class="news-card-summary">Scoping review examines frameworks and outcomes of human-AI collaboration in clinical settings and healthcare delivery.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02901-1">Interpretable machine learning model for predicting kidney failure among CAKUT children in multicenter large-scale study</a>
+    <p class="news-card-summary">Multicenter study develops an interpretable machine learning model to predict kidney failure in children with congenital anomalies of the kidney and urinary tract.</p>
   </div>
 </div>
 <div class="news-card">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">The Utility of Large Language Models to Assist With Emergency Triage Decisions Within Otolaryngology</a>
     <p class="news-card-summary">Study found GPT-5 demonstrated triage performance comparable to attending otolaryngologists in emergency decision-making.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">Comparison of Intern Doctors and ChatGPT in Emergency Cases Assessment</a>
-    <p class="news-card-summary">Study comparing ChatGPT-4 and intern doctors on emergency case assessment found the model may support diagnostic decision-making in emergency departments.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02889-8">Real-world evaluation of large language model for patients medical and administrative queries in nuclear medicine</a>
-    <p class="news-card-summary">Real-world study evaluated large language models handling patient medical and administrative queries in nuclear medicine clinical settings.</p>
   </div>
 </div>
 </div>
