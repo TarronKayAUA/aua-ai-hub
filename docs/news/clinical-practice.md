@@ -13,11 +13,33 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new vision-language model using reinforcement learning now differentiates ischemic from nonischemic T-wave inversion on electrocardiograms, marking a notable advance in automated ECG interpretation for clinical practice <a href="https://medinform.jmir.org/2026/1/e87227">[1]</a>. The question of whether large language models can assist physicians interactively with doctor-patient-electronic health record tasks is tested by the PhysAssistBench benchmark, reflecting growing interest in practical physician support <a href="https://arxiv.org/abs/2606.18613">[6]</a>. Diagnostic uncertainty remains a concern, with a new benchmark evaluating if large language models preserve clinical ambiguity-a critical consideration for medical text readiness <a href="https://arxiv.org/abs/2606.18471">[5]</a>. Meanwhile, studies continue to assess large language model performance in emergency settings, finding comparable or supportive triage capabilities relative to physicians and interns <a href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[9]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[10]</a>.</p>
-<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the items below.</p>
+<p>Individual patient benefit from PARP inhibitors in ovarian cancer can now be predicted using a treatment-aware deep learning model, supporting more personalized therapies based on counterfactual outcomes <a href="https://www.nature.com/articles/s41746-026-02822-z">[2]</a>. Real-time sepsis risk assessment is also advancing, as a validated model uses vital signs and temporal-aware contrastive learning for deployment in clinical settings <a href="https://medinform.jmir.org/2026/1/e82762">[3]</a>. Meanwhile, electronic medical records are informing a large language model designed for clinical applications, broadening AI&#x27;s utility in patient care <a href="https://www.nature.com/articles/s41746-026-02509-5">[5]</a>. Further, new benchmarks test large language models for their ability to preserve diagnostic uncertainty in clinical text, which is essential for safe integration into medical workflows <a href="https://arxiv.org/abs/2606.18471">[9]</a>.</p>
+<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02907-9">FetalCLIP: a visual-language foundation model for fetal ultrasound image analysis</a>
+    <p class="news-card-summary">FetalCLIP, a visual-language foundation model for fetal ultrasound image analysis, published in npj Digital Medicine.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02822-z">Treatment-aware deep learning enables counterfactual prediction of individual benefit from PARP inhibitors in ovarian cancer</a>
+    <p class="news-card-summary">Treatment-aware deep learning model predicts individual benefit from poly ADP-ribose polymerase inhibitors in ovarian cancer patients.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82762">Online Sepsis Prediction Using Vital Signs and Multiscale Temporal-Aware Contrastive Learning: Model Development and Validation Study</a>
+    <p class="news-card-summary">Real-time sepsis prediction model using vital signs and multiscale temporal-aware contrastive learning, developed and validated for clinical deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/677a3087d1aecb49d42a61aa982131e0.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
@@ -31,6 +53,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02509-5">Clinical large language model centered on electronic medical records</a>
     <p class="news-card-summary">Large language model trained on electronic medical records for clinical applications.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02912-y">A scoping review of human-AI collaboration patterns and task divisions in healthcare applications</a>
+    <p class="news-card-summary">Scoping review of human-AI collaboration patterns and task divisions across healthcare applications, published in npj Digital Medicine.</p>
   </div>
 </div>
 <div class="news-card">
@@ -96,35 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 17, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02889-8">Real-world evaluation of large language model for patients medical and administrative queries in nuclear medicine</a>
     <p class="news-card-summary">Real-world study evaluated large language models handling patient medical and administrative queries in nuclear medicine clinical settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02904-y">Large language models for acute coronary syndrome triage at first medical contact in emergency departments</a>
-    <p class="news-card-summary">Study assessed large language model performance for acute coronary syndrome triage at first medical contact in emergency departments.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04457-9">General-purpose chatbots outperform clinical AI tools on physicians’ real-world questions</a>
-    <p class="news-card-summary">Nature Medicine study found general-purpose chatbots outperform specialized clinical AI tools when answering physicians&#x27; real-world clinical questions.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04457-9/MediaObjects/41591_2026_4457_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42301010?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">Zero-shot Thoracic Oncologic History Generation for Radiologists Using Retrieval-augmented Large Language Model Pipeline</a>
-    <p class="news-card-summary">Study demonstrates zero-shot large language model generation of oncologic history for radiology using retrieval-augmented pipeline.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02882-1">When silence is safer: a review and decision-theoretic framework for LLM abstention in healthcare</a>
-    <p class="news-card-summary">Framework proposes decision-theoretic approach for when large language models should abstain from responding in clinical settings.</p>
   </div>
 </div>
 </div>

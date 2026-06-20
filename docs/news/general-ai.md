@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>DeepSeek-V4 preview highlights efforts to efficiently handle million-token contexts in language model applications, signaling advances in scaling AI input and analysis for large medical datasets <a href="https://arxiv.org/abs/2606.19348">[1]</a>. Security concerns arise as a study demonstrates that research agents can leak sensitive information from training data when queried strategically, underlining risks in deploying AI systems for faculty and student use <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. CacheWeaver introduces optimizations for retrieval-augmented generation inference, improving model performance through cache-aware evidence ordering <a href="https://arxiv.org/abs/2606.19667">[3]</a>. Large-scale evaluation shows reliability and bias issues in LLM-as-a-Judge models, raising questions about trust and consistency when applying these models to academic decision-making processes <a href="https://arxiv.org/abs/2606.19544">[2]</a>.</p>
-<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the items below.</p>
+<p>Recent advances in efficient context handling are highlighted by DeepSeek-V4, which aims to support million-token language model applications, potentially expanding the complexity of medical and academic use cases <a href="https://arxiv.org/abs/2606.19348">[1]</a>. At the same time, security concerns are rising, as evidence shows research agents can leak sensitive training data if queried strategically, underlining risks when deploying AI in clinical or educational environments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. Evaluation of LLM-as-a-Judge models indicates continuing reliability and bias issues, suggesting a need for caution when considering automated systems in decision-making roles <a href="https://arxiv.org/abs/2606.19544">[2]</a>. Innovations such as CacheWeaver are improving retrieval-augmented generation inference efficiency through cache-aware ordering, which may enhance performance in information-heavy workflows <a href="https://arxiv.org/abs/2606.19667">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9w6my/researchers_trained_a_deep_research_agent_with_32">Researchers trained a Deep Research agent with 32 H100s and open-sourced everything</a>
+    <p class="news-card-summary">Ohio State University&#x27;s NLP team released QUEST-35B, an open-source deep research agent trained on 32 H100 GPUs with full training details published.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/hdrqhare878h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1207b6e96b3fa00c41dc3254251976b3a01467cb" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
@@ -121,13 +129,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 16, 2026</span></div>
     <a class="news-card-title" href="https://qwen.ai/blog?id=qwen-robotsuite">Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence</a>
     <p class="news-card-summary">Qwen released Robot Suite, a foundation model suite designed for physical world robotics and embodied AI tasks.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.15007">Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning</a>
-    <p class="news-card-summary">NVIDIA released Nemotron 3 Ultra, a 550-billion-parameter open-weight mixture-of-experts model combining Mamba and Transformer architectures for agentic reasoning.</p>
   </div>
 </div>
 </div>

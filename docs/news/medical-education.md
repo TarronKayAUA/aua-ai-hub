@@ -13,16 +13,30 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Medical education is seeing increased integration of large language models, with studies highlighting their utility in both formative and clinical training. GPT-4.0 demonstrated strong performance generating and refining multiple-choice questions for dental education, occasionally outperforming traditional methods <a href="https://pubmed.ncbi.nlm.nih.gov/42310703?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[3]</a>. In randomized comparisons, questions and formative assessments produced by large language models and students were found to be of similar quality and acceptance <a href="https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[6]</a>. Analogous patterns emerged when AI-generated feedback was used in medical students’ clinical training, showing substantial agreement with human supervisors’ feedback <a href="https://mededu.jmir.org/2026/1/e90064">[7]</a>. These developments align with medical students’ recognition of the need for a standardized AI curriculum to address gaps in skills and confidence with artificial intelligence <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the items below.</p>
+<p>Medical education is increasingly intersecting with artificial intelligence as studies map both its direct impacts and the evolving needs of students. There is measurable benefit from large language model-powered virtual standardized patients, which are associated with gains in medical student interview performance within existing curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">[1]</a>. Alongside this, medical students have signaled a gap between their enthusiasm for AI in healthcare and their current competency, prompting calls for a standardized AI curriculum in undergraduate medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[6]</a>. Student perspectives reflect a growing recognition of AI’s role, while research continues to demonstrate positive effects of generative AI on learning performance using theoretical frameworks such as social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[13]</a>.</p>
+<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Voluntary use of LLM-powered virtual standardized patients and medical students&#x27; interview performance: An observational study</a>
+    <p class="news-card-summary">Voluntary use of large language model-powered virtual standardized patients within human standardized patient curricula showed small but measurable associations with improved medical student interview performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">AI in Medicine: Uncovering the Educational Pulse Through Students&#x27; Perspective</a>
     <p class="news-card-summary">Study explores medical students&#x27; perspectives on artificial intelligence in healthcare delivery and medical training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42320614?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Clinical Artificial Intelligence Competence in Obstetrics and Gynecology: Patient Safety, Physician Accountability, and Responsible Use</a>
+    <p class="news-card-summary">Peer-reviewed analysis of clinical AI competence requirements in obstetrics and gynecology, addressing patient safety, physician accountability, and responsible AI use.</p>
   </div>
 </div>
 <div class="news-card">
@@ -109,20 +123,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Large language model prompt engineering for medical education: A practical guide for the Australian and New Zealand College of Anaesthetists Final Examination</a>
     <p class="news-card-summary">Practical guide for using large language models in prompt engineering across specialist-level medical education in anaesthesia, addressing capability and implementation considerations.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">A comparative benchmark of DeepSeek-R1 on the USMLE: surpassing human and AI performance averages</a>
-    <p class="news-card-summary">DeepSeek-R1 achieved above-average performance on USMLE questions, suggesting utility as a benchmark model for medical AI assessment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42286811?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Exploring the Educational Utility of LLMs in Operative Dentistry Through MCQ-Based Accuracy, Semantic, and Readability Testing</a>
-    <p class="news-card-summary">Peer-reviewed evaluation found ChatGPT-4o achieved highest accuracy on operative dentistry multiple-choice questions but with variable semantic and readability performance.</p>
   </div>
 </div>
 </div>

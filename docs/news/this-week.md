@@ -11,16 +11,30 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Medical education is seeing increased integration of large language models, with studies highlighting their utility in both formative and clinical training. GPT-4.0 demonstrated strong performance generating and refining multiple-choice questions for dental education, occasionally outperforming traditional methods <a href="https://pubmed.ncbi.nlm.nih.gov/42310703?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[3]</a>. In randomized comparisons, questions and formative assessments produced by large language models and students were found to be of similar quality and acceptance <a href="https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[6]</a>. Analogous patterns emerged when AI-generated feedback was used in medical students’ clinical training, showing substantial agreement with human supervisors’ feedback <a href="https://mededu.jmir.org/2026/1/e90064">[7]</a>. These developments align with medical students’ recognition of the need for a standardized AI curriculum to address gaps in skills and confidence with artificial intelligence <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the source items.</p>
+<p>Medical education is increasingly intersecting with artificial intelligence as studies map both its direct impacts and the evolving needs of students. There is measurable benefit from large language model-powered virtual standardized patients, which are associated with gains in medical student interview performance within existing curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">[1]</a>. Alongside this, medical students have signaled a gap between their enthusiasm for AI in healthcare and their current competency, prompting calls for a standardized AI curriculum in undergraduate medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[6]</a>. Student perspectives reflect a growing recognition of AI’s role, while research continues to demonstrate positive effects of generative AI on learning performance using theoretical frameworks such as social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[13]</a>.</p>
+<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Voluntary use of LLM-powered virtual standardized patients and medical students&#x27; interview performance: An observational study</a>
+    <p class="news-card-summary">Voluntary use of large language model-powered virtual standardized patients within human standardized patient curricula showed small but measurable associations with improved medical student interview performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">AI in Medicine: Uncovering the Educational Pulse Through Students&#x27; Perspective</a>
     <p class="news-card-summary">Study explores medical students&#x27; perspectives on artificial intelligence in healthcare delivery and medical training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42320614?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Clinical Artificial Intelligence Competence in Obstetrics and Gynecology: Patient Safety, Physician Accountability, and Responsible Use</a>
+    <p class="news-card-summary">Peer-reviewed analysis of clinical AI competence requirements in obstetrics and gynecology, addressing patient safety, physician accountability, and responsible AI use.</p>
   </div>
 </div>
 <div class="news-card">
@@ -119,13 +133,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42286811?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Exploring the Educational Utility of LLMs in Operative Dentistry Through MCQ-Based Accuracy, Semantic, and Readability Testing</a>
-    <p class="news-card-summary">Peer-reviewed evaluation found ChatGPT-4o achieved highest accuracy on operative dentistry multiple-choice questions but with variable semantic and readability performance.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">How crucial is research philosophy in designing an AI study in medical education?</a>
     <p class="news-card-summary">Analysis of methodological rigor in AI studies within medical education, addressing common research design and philosophical framework gaps affecting paper quality.</p>
   </div>
@@ -144,47 +151,38 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Eye-tracking combined with artificial intelligence identifies gaze patterns that distinguish expertise levels in surgical residents during procedural training.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88092">Training Empathetic Communication Skills in Medical Students With a Role-Prompted GPT-4o Chatbot: Quasi-Experimental Intervention Study</a>
-    <p class="news-card-summary">Quasi-experimental study evaluated a role-prompted GPT-4o chatbot for training empathetic communication skills in medical students with measured learning outcomes.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/d6dfc3f5ee6c05832d996f4fc0fe1108.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e81953">AI in UK Medical Education: A Framework for Curriculum Reform</a>
-    <p class="news-card-summary">Study develops a framework for integrating artificial intelligence into UK medical school curricula to align with evolving healthcare needs.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/e039257f4a04c1474ee5844e1eba9ffa.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e83376">Evaluating the Pediatric Behavior Guidance of Students Based on Actual Clinical Transcripts Scored by Faculty and Large Language Models: Pilot Comparative Study</a>
-    <p class="news-card-summary">Study compared large language model scoring of pediatric behavior guidance against faculty assessment using actual clinical transcripts to evaluate feedback quality.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/4c8889e2a34ed98cd9ddf7ec87d412ca.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42284227?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0">Meta-analysis of randomized controlled trials comparing outcomes of artificial intelligence-based teaching versus traditional-based teaching in medical education</a>
-    <p class="news-card-summary">Meta-analysis of randomized controlled trials found artificial intelligence-based teaching approaches performed comparably to or better than traditional teaching methods.</p>
-  </div>
-</div>
 </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new vision-language model using reinforcement learning now differentiates ischemic from nonischemic T-wave inversion on electrocardiograms, marking a notable advance in automated ECG interpretation for clinical practice <a href="https://medinform.jmir.org/2026/1/e87227">[1]</a>. The question of whether large language models can assist physicians interactively with doctor-patient-electronic health record tasks is tested by the PhysAssistBench benchmark, reflecting growing interest in practical physician support <a href="https://arxiv.org/abs/2606.18613">[6]</a>. Diagnostic uncertainty remains a concern, with a new benchmark evaluating if large language models preserve clinical ambiguity-a critical consideration for medical text readiness <a href="https://arxiv.org/abs/2606.18471">[5]</a>. Meanwhile, studies continue to assess large language model performance in emergency settings, finding comparable or supportive triage capabilities relative to physicians and interns <a href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[9]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">[10]</a>.</p>
-<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the source items.</p>
+<p>Individual patient benefit from PARP inhibitors in ovarian cancer can now be predicted using a treatment-aware deep learning model, supporting more personalized therapies based on counterfactual outcomes <a href="https://www.nature.com/articles/s41746-026-02822-z">[2]</a>. Real-time sepsis risk assessment is also advancing, as a validated model uses vital signs and temporal-aware contrastive learning for deployment in clinical settings <a href="https://medinform.jmir.org/2026/1/e82762">[3]</a>. Meanwhile, electronic medical records are informing a large language model designed for clinical applications, broadening AI&#x27;s utility in patient care <a href="https://www.nature.com/articles/s41746-026-02509-5">[5]</a>. Further, new benchmarks test large language models for their ability to preserve diagnostic uncertainty in clinical text, which is essential for safe integration into medical workflows <a href="https://arxiv.org/abs/2606.18471">[9]</a>.</p>
+<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02907-9">FetalCLIP: a visual-language foundation model for fetal ultrasound image analysis</a>
+    <p class="news-card-summary">FetalCLIP, a visual-language foundation model for fetal ultrasound image analysis, published in npj Digital Medicine.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02822-z">Treatment-aware deep learning enables counterfactual prediction of individual benefit from PARP inhibitors in ovarian cancer</a>
+    <p class="news-card-summary">Treatment-aware deep learning model predicts individual benefit from poly ADP-ribose polymerase inhibitors in ovarian cancer patients.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82762">Online Sepsis Prediction Using Vital Signs and Multiscale Temporal-Aware Contrastive Learning: Model Development and Validation Study</a>
+    <p class="news-card-summary">Real-time sepsis prediction model using vital signs and multiscale temporal-aware contrastive learning, developed and validated for clinical deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/677a3087d1aecb49d42a61aa982131e0.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
@@ -198,6 +196,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02509-5">Clinical large language model centered on electronic medical records</a>
     <p class="news-card-summary">Large language model trained on electronic medical records for clinical applications.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02912-y">A scoping review of human-AI collaboration patterns and task divisions in healthcare applications</a>
+    <p class="news-card-summary">Scoping review of human-AI collaboration patterns and task divisions across healthcare applications, published in npj Digital Medicine.</p>
   </div>
 </div>
 <div class="news-card">
@@ -341,30 +346,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02738-8">ActiTect: a generalizable machine learning pipeline for REM sleep behavior disorder screening through standardized actigraphy</a>
-    <p class="news-card-summary">Researchers developed ActiTect, a generalizable machine learning pipeline using standardized actigraphy data to screen for rapid eye movement sleep behavior disorder.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02868-z">FairGen: preference-aligned diffusion for demographically equitable medical image synthesis</a>
     <p class="news-card-summary">Peer-reviewed study presents FairGen, a method for generating medical images with demographic equity using preference-aligned diffusion models.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88356">Knowledge-Augmented Large Language Model for Multimodal Electronic Health Record, Based Risk Prediction: Development and Validation Study</a>
-    <p class="news-card-summary">Researchers developed and validated a knowledge-augmented large language model for predicting clinical outcomes from multimodal electronic health record data.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/63f57c054bd6e7a6c3fcd5282c669918.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02886-x">The effectiveness of CBT-based NLP-enabled AI conversational agents for mental health intervention: a systematic review and meta-analysis</a>
-    <p class="news-card-summary">Systematic review and meta-analysis assessed the effectiveness of natural language processing-enabled conversational agents delivering cognitive behavioral therapy for mental health.</p>
   </div>
 </div>
 </div>
@@ -372,11 +355,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>DeepSeek-V4 preview highlights efforts to efficiently handle million-token contexts in language model applications, signaling advances in scaling AI input and analysis for large medical datasets <a href="https://arxiv.org/abs/2606.19348">[1]</a>. Security concerns arise as a study demonstrates that research agents can leak sensitive information from training data when queried strategically, underlining risks in deploying AI systems for faculty and student use <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. CacheWeaver introduces optimizations for retrieval-augmented generation inference, improving model performance through cache-aware evidence ordering <a href="https://arxiv.org/abs/2606.19667">[3]</a>. Large-scale evaluation shows reliability and bias issues in LLM-as-a-Judge models, raising questions about trust and consistency when applying these models to academic decision-making processes <a href="https://arxiv.org/abs/2606.19544">[2]</a>.</p>
-<p class="section-brief-date">The picture as of June 19, 2026; numbered links go to the source items.</p>
+<p>Recent advances in efficient context handling are highlighted by DeepSeek-V4, which aims to support million-token language model applications, potentially expanding the complexity of medical and academic use cases <a href="https://arxiv.org/abs/2606.19348">[1]</a>. At the same time, security concerns are rising, as evidence shows research agents can leak sensitive training data if queried strategically, underlining risks when deploying AI in clinical or educational environments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. Evaluation of LLM-as-a-Judge models indicates continuing reliability and bias issues, suggesting a need for caution when considering automated systems in decision-making roles <a href="https://arxiv.org/abs/2606.19544">[2]</a>. Innovations such as CacheWeaver are improving retrieval-augmented generation inference efficiency through cache-aware ordering, which may enhance performance in information-heavy workflows <a href="https://arxiv.org/abs/2606.19667">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9w6my/researchers_trained_a_deep_research_agent_with_32">Researchers trained a Deep Research agent with 32 H100s and open-sourced everything</a>
+    <p class="news-card-summary">Ohio State University&#x27;s NLP team released QUEST-35B, an open-source deep research agent trained on 32 H100 GPUs with full training details published.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/hdrqhare878h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1207b6e96b3fa00c41dc3254251976b3a01467cb" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
@@ -505,22 +496,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive">Anthropic shuts down Fable, Mythos models following Trump admin directive</a>
-    <p class="news-card-summary">Anthropic shut down Fable and Mythos models following a US Commerce Department directive citing national security concerns over a reported jailbreak vulnerability.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/fable5-500x500-1781319492.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 12, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/12/openai-webrtc">OpenAI WebRTC Audio Session, now with document context</a>
-    <p class="news-card-summary">OpenAI expanded its WebRTC Audio Session feature to support document context, enabling multimodal interaction with speech and uploaded documents.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/openai-webrtc-document-context-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://cohere.com/blog/north-mini-code">Cohere&#x27;s First Model for Developers</a>
     <p class="news-card-summary">Cohere released North Mini, a compact code-generation model targeting developers who need smaller alternatives to large models.</p>
@@ -532,6 +507,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=0JIbgZ544wU" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/0JIbgZ544wU/hqdefault.jpg" alt="Video: What Codex Unlocks for NTT Data" loading="lazy">
+  <span class="video-card-title">What Codex Unlocks for NTT Data</span>
+  <span class="video-card-meta">OpenAI, June 19, 2026</span>
+  <span class="video-card-desc">OpenAI describes how Codex, a code generation model, grew to over 10,000 active users and applications in enterprise software development.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=UxY8zJKRrHU" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/UxY8zJKRrHU/hqdefault.jpg" alt="Video: Improving health intelligence in ChatGPT" loading="lazy">
   <span class="video-card-title">Improving health intelligence in ChatGPT</span>
@@ -597,12 +578,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?</span>
   <span class="video-card-meta">Bijan Bowen, June 13, 2026</span>
   <span class="video-card-desc">Demonstration and evaluation of GLM-5.2, an open-source language model, across coding and reasoning tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=uqNpKVpmajw" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/uqNpKVpmajw/hqdefault.jpg" alt="Video: Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!" loading="lazy">
-  <span class="video-card-title">Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!</span>
-  <span class="video-card-meta">WorldofAI, June 13, 2026</span>
-  <span class="video-card-desc">Overview of Minimax M3 Coder, an open-source local language model for code generation and development tasks.</span>
 </a>
 </div>
 

@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=0JIbgZ544wU" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/0JIbgZ544wU/hqdefault.jpg" alt="Video: What Codex Unlocks for NTT Data" loading="lazy">
+  <span class="video-card-title">What Codex Unlocks for NTT Data</span>
+  <span class="video-card-meta">OpenAI, June 19, 2026</span>
+  <span class="video-card-desc">OpenAI describes how Codex, a code generation model, grew to over 10,000 active users and applications in enterprise software development.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=UxY8zJKRrHU" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/UxY8zJKRrHU/hqdefault.jpg" alt="Video: Improving health intelligence in ChatGPT" loading="lazy">
   <span class="video-card-title">Improving health intelligence in ChatGPT</span>
@@ -137,12 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Anthropic Calls for &quot;Global AI Pause&quot;</span>
   <span class="video-card-meta">Wes Roth, June 5, 2026</span>
   <span class="video-card-desc">Wes Roth reports on Anthropic&#x27;s call for a global moratorium on AI development to address ethical and safety concerns related to advanced AI systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Dkqzqw8rxXI" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/Dkqzqw8rxXI/hqdefault.jpg" alt="Video: DeepMind’s New AI Found A Strange New Way To Think" loading="lazy">
-  <span class="video-card-title">DeepMind’s New AI Found A Strange New Way To Think</span>
-  <span class="video-card-meta">Two Minute Papers, June 5, 2026</span>
-  <span class="video-card-desc">This video explains a new computational approach discovered by DeepMind&#x27;s AI that alters traditional problem-solving strategies, providing insight into innovative AI thinking models.</span>
 </a>
 </div>
 

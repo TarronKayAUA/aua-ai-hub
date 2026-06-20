@@ -6569,6 +6569,171 @@
    "category": "podcasts",
    "score": 4.0,
    "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&ff=20260620082131&v=2.20.0",
+   "title_hash": "d650c641995172be78f890eade0ef98a",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "Voluntary use of LLM-powered virtual standardized patients and medical students' interview performance: An observational study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-20T10:00:00+00:00",
+   "summary": "Voluntary use of large language model-powered virtual standardized patients within human standardized patient curricula showed small but measurable associations with improved medical student interview performance.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02907-9",
+   "title_hash": "d674f03e5449dafd34e870860c04df1b",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "FetalCLIP: a visual-language foundation model for fetal ultrasound image analysis",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-20T00:00:00+00:00",
+   "summary": "FetalCLIP, a visual-language foundation model for fetal ultrasound image analysis, published in npj Digital Medicine.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02822-z",
+   "title_hash": "b0b8bd69f2eab893d8d868b5f7be58aa",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "Treatment-aware deep learning enables counterfactual prediction of individual benefit from PARP inhibitors in ovarian cancer",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-20T00:00:00+00:00",
+   "summary": "Treatment-aware deep learning model predicts individual benefit from poly ADP-ribose polymerase inhibitors in ovarian cancer patients.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/19/sean-lynch",
+   "title_hash": "51014dbb48f492272ed35ce3e5405210",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e82762",
+   "title_hash": "0d2c017d20be880168dc178098b71ae6",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "Online Sepsis Prediction Using Vital Signs and Multiscale Temporal-Aware Contrastive Learning: Model Development and Validation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-19T21:00:28+00:00",
+   "summary": "Real-time sepsis prediction model using vital signs and multiscale temporal-aware contrastive learning, developed and validated for clinical deployment.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://asset.jmir.pub/assets/677a3087d1aecb49d42a61aa982131e0.png"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ua1na0/whats_more_impressive_glm_51_52_or_qwen_35_36",
+   "title_hash": "c552465ccd79b7938a6fb3529b750442",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42321473?fc=20260609215449&ff=20260620082131&v=2.20.0",
+   "title_hash": "c7eca613037567171eca65efa60a0ff6",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42320614?fc=20260609215449&ff=20260620082131&v=2.20.0",
+   "title_hash": "a9b1ec2b4fcfa95d6a5c6314bec75556",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "Clinical Artificial Intelligence Competence in Obstetrics and Gynecology: Patient Safety, Physician Accountability, and Responsible Use",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-19T10:00:00+00:00",
+   "summary": "Peer-reviewed analysis of clinical AI competence requirements in obstetrics and gynecology, addressing patient safety, physician accountability, and responsible AI use.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9w6my/researchers_trained_a_deep_research_agent_with_32",
+   "title_hash": "e5e8e9278e600ed655b0f212f0982fb5",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "Researchers trained a Deep Research agent with 32 H100s and open-sourced everything",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-19T08:20:43+00:00",
+   "summary": "Ohio State University's NLP team released QUEST-35B, an open-source deep research agent trained on 32 H100 GPUs with full training details published.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://preview.redd.it/hdrqhare878h1.png?width=640&crop=smart&auto=webp&s=1207b6e96b3fa00c41dc3254251976b3a01467cb"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02912-y",
+   "title_hash": "862b375bd809682ae4f2c356901e7958",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "A scoping review of human-AI collaboration patterns and task divisions in healthcare applications",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-19T00:00:00+00:00",
+   "summary": "Scoping review of human-AI collaboration patterns and task divisions across healthcare applications, published in npj Digital Medicine.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u99hel/glm52_inference_is_free_on_hugging_face_for_the",
+   "title_hash": "7a9941dde661292b6cc326253409cb38",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u85t9c/local_models_went_from_mostly_useless_to_actually",
+   "title_hash": "d74b9c69025aa9195eba94ec3aeae2a1",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7pj4i/is_le_gros_chaton_opensource",
+   "title_hash": "10373963aca40d06d97adbdac3406e91",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=F4a8aMLb678",
+   "title_hash": "78b6c0f108e34093d711f042320d5875",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=8G4sBIVA5D0",
+   "title_hash": "63764bdd14ec8e37d94a00e7e4aabcd9",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0JIbgZ544wU",
+   "title_hash": "b543cd245a88363bd18e31e537bd30db",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": true,
+   "title": "What Codex Unlocks for NTT Data",
+   "source": "OpenAI",
+   "published": "2026-06-19T22:57:58+00:00",
+   "summary": "OpenAI describes how Codex, a code generation model, grew to over 10,000 active users and applications in enterprise software development.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/0JIbgZ544wU/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=YPNOjXTDP9c",
+   "title_hash": "0644dd8d31901e78190f8d8de15329ff",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5sDfhQq_g8A",
+   "title_hash": "310e3722e2f0452490d90ac891d8fff1",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Your-Company-Doesnt-Need-an-AI-Strategy-e3l14m1",
+   "title_hash": "ce157c3db8facf5df3ca00d8f8e707b0",
+   "first_seen": "2026-06-20T12:21:31.438564+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -6670,19 +6835,19 @@
  "last_digest_at": "2026-06-19T16:33:28.270097+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Medical education is seeing increased integration of large language models, with studies highlighting their utility in both formative and clinical training. GPT-4.0 demonstrated strong performance generating and refining multiple-choice questions for dental education, occasionally outperforming traditional methods <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310703?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[3]</a>. In randomized comparisons, questions and formative assessments produced by large language models and students were found to be of similar quality and acceptance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[6]</a>. Analogous patterns emerged when AI-generated feedback was used in medical students’ clinical training, showing substantial agreement with human supervisors’ feedback <a href=\"https://mededu.jmir.org/2026/1/e90064\">[7]</a>. These developments align with medical students’ recognition of the need for a standardized AI curriculum to address gaps in skills and confidence with artificial intelligence <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[4]</a>.",
-   "hash": "21f5414ab96d86bc",
-   "date": "June 19, 2026"
+   "text": "Medical education is increasingly intersecting with artificial intelligence as studies map both its direct impacts and the evolving needs of students. There is measurable benefit from large language model-powered virtual standardized patients, which are associated with gains in medical student interview performance within existing curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0\">[1]</a>. Alongside this, medical students have signaled a gap between their enthusiasm for AI in healthcare and their current competency, prompting calls for a standardized AI curriculum in undergraduate medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[6]</a>. Student perspectives reflect a growing recognition of AI’s role, while research continues to demonstrate positive effects of generative AI on learning performance using theoretical frameworks such as social cognitive theory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0\">[2]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[13]</a>.",
+   "hash": "6c27523aee7693b5",
+   "date": "June 20, 2026"
   },
   "clinical_practice": {
-   "text": "A new vision-language model using reinforcement learning now differentiates ischemic from nonischemic T-wave inversion on electrocardiograms, marking a notable advance in automated ECG interpretation for clinical practice <a href=\"https://medinform.jmir.org/2026/1/e87227\">[1]</a>. The question of whether large language models can assist physicians interactively with doctor-patient-electronic health record tasks is tested by the PhysAssistBench benchmark, reflecting growing interest in practical physician support <a href=\"https://arxiv.org/abs/2606.18613\">[6]</a>. Diagnostic uncertainty remains a concern, with a new benchmark evaluating if large language models preserve clinical ambiguity-a critical consideration for medical text readiness <a href=\"https://arxiv.org/abs/2606.18471\">[5]</a>. Meanwhile, studies continue to assess large language model performance in emergency settings, finding comparable or supportive triage capabilities relative to physicians and interns <a href=\"https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[9]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42305276?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0\">[10]</a>.",
-   "hash": "5012c586e8e79ab7",
-   "date": "June 19, 2026"
+   "text": "Individual patient benefit from PARP inhibitors in ovarian cancer can now be predicted using a treatment-aware deep learning model, supporting more personalized therapies based on counterfactual outcomes <a href=\"https://www.nature.com/articles/s41746-026-02822-z\">[2]</a>. Real-time sepsis risk assessment is also advancing, as a validated model uses vital signs and temporal-aware contrastive learning for deployment in clinical settings <a href=\"https://medinform.jmir.org/2026/1/e82762\">[3]</a>. Meanwhile, electronic medical records are informing a large language model designed for clinical applications, broadening AI&#x27;s utility in patient care <a href=\"https://www.nature.com/articles/s41746-026-02509-5\">[5]</a>. Further, new benchmarks test large language models for their ability to preserve diagnostic uncertainty in clinical text, which is essential for safe integration into medical workflows <a href=\"https://arxiv.org/abs/2606.18471\">[9]</a>.",
+   "hash": "e25c6f0f60133ec0",
+   "date": "June 20, 2026"
   },
   "general_ai": {
-   "text": "DeepSeek-V4 preview highlights efforts to efficiently handle million-token contexts in language model applications, signaling advances in scaling AI input and analysis for large medical datasets <a href=\"https://arxiv.org/abs/2606.19348\">[1]</a>. Security concerns arise as a study demonstrates that research agents can leak sensitive information from training data when queried strategically, underlining risks in deploying AI systems for faculty and student use <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[4]</a>. CacheWeaver introduces optimizations for retrieval-augmented generation inference, improving model performance through cache-aware evidence ordering <a href=\"https://arxiv.org/abs/2606.19667\">[3]</a>. Large-scale evaluation shows reliability and bias issues in LLM-as-a-Judge models, raising questions about trust and consistency when applying these models to academic decision-making processes <a href=\"https://arxiv.org/abs/2606.19544\">[2]</a>.",
-   "hash": "e803886adf0765a5",
-   "date": "June 19, 2026"
+   "text": "Recent advances in efficient context handling are highlighted by DeepSeek-V4, which aims to support million-token language model applications, potentially expanding the complexity of medical and academic use cases <a href=\"https://arxiv.org/abs/2606.19348\">[1]</a>. At the same time, security concerns are rising, as evidence shows research agents can leak sensitive training data if queried strategically, underlining risks when deploying AI in clinical or educational environments <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[4]</a>. Evaluation of LLM-as-a-Judge models indicates continuing reliability and bias issues, suggesting a need for caution when considering automated systems in decision-making roles <a href=\"https://arxiv.org/abs/2606.19544\">[2]</a>. Innovations such as CacheWeaver are improving retrieval-augmented generation inference efficiency through cache-aware ordering, which may enhance performance in information-heavy workflows <a href=\"https://arxiv.org/abs/2606.19667\">[3]</a>.",
+   "hash": "bd8c4e63244c5a16",
+   "date": "June 20, 2026"
   }
  }
 }
