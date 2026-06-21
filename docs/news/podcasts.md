@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Local-AI-Matters-and-How-to-Use-It-e3l344o" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Video: Why Local AI Matters and How to Use It" loading="lazy">
+  <span class="video-card-title">Why Local AI Matters and How to Use It</span>
+  <span class="video-card-meta">The AI Daily Brief, June 21, 2026</span>
+  <span class="video-card-desc">Practical overview of local AI systems, their advantages over cloud-based models, and deployment considerations for institutions and individuals.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/more-as-more-fails-what-ai-is-really-doing-to-student-performance" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance" loading="lazy">
   <span class="video-card-title">More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance</span>

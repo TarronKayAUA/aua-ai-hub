@@ -6844,6 +6844,25 @@
    "title_hash": "27d4f83c693b9b262a901c5666d47a6a",
    "first_seen": "2026-06-21T13:24:45.624195+00:00",
    "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ubk57k/vercel_ceo_almost_shocked_by_how_good_glm52_is_at",
+   "title_hash": "046308e62d0c81394c98e63ff4eb5421",
+   "first_seen": "2026-06-21T16:21:04.348587+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Local-AI-Matters-and-How-to-Use-It-e3l344o",
+   "title_hash": "0447c29c271192e656b220aabef4bec9",
+   "first_seen": "2026-06-21T16:21:04.348587+00:00",
+   "kept": true,
+   "title": "Why Local AI Matters and How to Use It",
+   "source": "The AI Daily Brief",
+   "published": "2026-06-21T15:20:32+00:00",
+   "summary": "Practical overview of local AI systems, their advantages over cloud-based models, and deployment considerations for institutions and individuals.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [
