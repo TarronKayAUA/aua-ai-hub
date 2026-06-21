@@ -156,11 +156,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A treatment-aware deep learning model is enabling counterfactual prediction of individual benefit for ovarian cancer patients treated with PARP inhibitors, supporting more personalized therapy selection <a href="https://www.nature.com/articles/s41746-026-02822-z">[2]</a>. Human-AI collaboration frameworks and outcomes are being examined across clinical settings, with reviews highlighting key task divisions and how these partnerships influence healthcare delivery <a href="https://www.nature.com/articles/s41746-026-02918-6">[3]</a> <a href="https://www.nature.com/articles/s41746-026-02912-y">[8]</a>. In parallel, large language models are being evaluated for their suitability in assisting physicians during interactive doctor-patient-electronic health record tasks, using dedicated benchmarks to assess readiness for clinical practice and uncertainty preservation <a href="https://arxiv.org/abs/2606.18471">[11]</a> <a href="https://arxiv.org/abs/2606.18613">[12]</a>. These developments point to increased integration of machine learning and language models in core clinical workflows.</p>
-<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the source items.</p>
+<p>A new hierarchical reinforcement learning system now supports clinical decision-making in renal replacement therapy, signaling ongoing advances in AI-guided treatment strategies <a href="https://www.nature.com/articles/s41746-026-02900-2">[1]</a>. Voice-controlled ultrasound imaging powered by multimodal large language models may improve workflow efficiency and reporting quality for clinicians <a href="https://www.nature.com/articles/s41746-026-02924-8">[2]</a>. Foundation models such as FetalCLIP enable more comprehensive analysis of fetal ultrasound images, further demonstrating the impact of visual-language technologies in diagnostic imaging <a href="https://www.nature.com/articles/s41746-026-02907-9">[3]</a>. Recent multicenter research has produced interpretable machine learning models that predict kidney failure in children with congenital anomalies, offering practical tools for risk assessment in pediatric nephrology <a href="https://www.nature.com/articles/s41746-026-02901-1">[6]</a>. Deep learning is also being applied to forecast individual benefits from PARP inhibitors in ovarian cancer, supporting more personalized therapy planning <a href="https://www.nature.com/articles/s41746-026-02822-z">[4]</a>.</p>
+<p class="section-brief-date">The picture as of June 21, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02900-2">HRRT: hierarchical reinforcement learning for renal replacement therapy decision support</a>
+    <p class="news-card-summary">Hierarchical reinforcement learning system developed for clinical decision support in renal replacement therapy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02924-8">Voice-controlled super-resolution ultrasound imaging and reporting powered by multimodal large language models</a>
+    <p class="news-card-summary">Voice-controlled ultrasound imaging system integrated with multimodal large language models for enhanced clinical reporting.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
@@ -357,23 +371,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Scoping review compares traditional diagnostic methods and artificial intelligence approaches for malaria detection across available evidence.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02868-z">FairGen: preference-aligned diffusion for demographically equitable medical image synthesis</a>
-    <p class="news-card-summary">Peer-reviewed study presents FairGen, a method for generating medical images with demographic equity using preference-aligned diffusion models.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Recent advances in efficient context handling are highlighted by DeepSeek-V4, which aims to support million-token language model applications, potentially expanding the complexity of medical and academic use cases <a href="https://arxiv.org/abs/2606.19348">[1]</a>. At the same time, security concerns are rising, as evidence shows research agents can leak sensitive training data if queried strategically, underlining risks when deploying AI in clinical or educational environments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. Evaluation of LLM-as-a-Judge models indicates continuing reliability and bias issues, suggesting a need for caution when considering automated systems in decision-making roles <a href="https://arxiv.org/abs/2606.19544">[2]</a>. Innovations such as CacheWeaver are improving retrieval-augmented generation inference efficiency through cache-aware ordering, which may enhance performance in information-heavy workflows <a href="https://arxiv.org/abs/2606.19667">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the source items.</p>
+<p>Faculty and students may want to note DeepSeek-V4’s emphasis on handling million-token contexts efficiently, which could affect future applications requiring extensive data processing <a href="https://arxiv.org/abs/2606.19348">[1]</a>. At the same time, GLM-5.2 has been released with open weights and strong performance claims, especially in text generation and long-horizon reasoning, suggesting new opportunities for academic projects and benchmarking <a href="https://simonwillison.net/2026/Jun/17/glm-52">[8]</a> <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[10]</a>. Security remains a concern as MosaicLeaks shows that research agents can leak sensitive training data during queries, drawing attention to risks in deploying AI systems for institutional use <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. Meanwhile, local model deployment has become increasingly practical, with improvements in inference speed and open-weight model availability, shaping how users interact with AI on-campus <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[12]</a>.</p>
+<p class="section-brief-date">The picture as of June 21, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9zqlx/glm52_is_the_new_leading_open_weights_model_on">GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index</a>
+    <p class="news-card-summary">GLM-5.2 achieved top ranking on the Artificial Analysis Intelligence Index among open-weights models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/br2lSBapukS1-SpxHqZLiRDYFoObg5xwpKU4LYKNyXA.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3646758c86913f0feaa08b9580e3018433f047be" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
@@ -592,12 +607,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!</span>
   <span class="video-card-meta">Bijan Bowen, June 14, 2026</span>
   <span class="video-card-desc">Diffusion Gemma is a new generative image model that runs locally; this video demonstrates its capabilities and technical details for practitioners working with open-weights models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=V1EPXfZV0Ew" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/V1EPXfZV0Ew/hqdefault.jpg" alt="Video: GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?" loading="lazy">
-  <span class="video-card-title">GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?</span>
-  <span class="video-card-meta">Bijan Bowen, June 13, 2026</span>
-  <span class="video-card-desc">Demonstration and evaluation of GLM-5.2, an open-source language model, across coding and reasoning tasks.</span>
 </a>
 </div>
 

@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Recent advances in efficient context handling are highlighted by DeepSeek-V4, which aims to support million-token language model applications, potentially expanding the complexity of medical and academic use cases <a href="https://arxiv.org/abs/2606.19348">[1]</a>. At the same time, security concerns are rising, as evidence shows research agents can leak sensitive training data if queried strategically, underlining risks when deploying AI in clinical or educational environments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. Evaluation of LLM-as-a-Judge models indicates continuing reliability and bias issues, suggesting a need for caution when considering automated systems in decision-making roles <a href="https://arxiv.org/abs/2606.19544">[2]</a>. Innovations such as CacheWeaver are improving retrieval-augmented generation inference efficiency through cache-aware ordering, which may enhance performance in information-heavy workflows <a href="https://arxiv.org/abs/2606.19667">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the items below.</p>
+<p>Faculty and students may want to note DeepSeek-V4’s emphasis on handling million-token contexts efficiently, which could affect future applications requiring extensive data processing <a href="https://arxiv.org/abs/2606.19348">[1]</a>. At the same time, GLM-5.2 has been released with open weights and strong performance claims, especially in text generation and long-horizon reasoning, suggesting new opportunities for academic projects and benchmarking <a href="https://simonwillison.net/2026/Jun/17/glm-52">[8]</a> <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[10]</a>. Security remains a concern as MosaicLeaks shows that research agents can leak sensitive training data during queries, drawing attention to risks in deploying AI systems for institutional use <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. Meanwhile, local model deployment has become increasingly practical, with improvements in inference speed and open-weight model availability, shaping how users interact with AI on-campus <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[12]</a>.</p>
+<p class="section-brief-date">The picture as of June 21, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9zqlx/glm52_is_the_new_leading_open_weights_model_on">GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index</a>
+    <p class="news-card-summary">GLM-5.2 achieved top ranking on the Artificial Analysis Intelligence Index among open-weights models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/br2lSBapukS1-SpxHqZLiRDYFoObg5xwpKU4LYKNyXA.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3646758c86913f0feaa08b9580e3018433f047be" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
@@ -123,12 +131,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Article examines improvements in practical local model deployment, inference speed, and availability of capable open-weight models.</p>
   </div>
   <img class="news-card-thumb" src="https://vickiboykis.com/images/refactor_gemma.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://qwen.ai/blog?id=qwen-robotsuite">Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence</a>
-    <p class="news-card-summary">Qwen released Robot Suite, a foundation model suite designed for physical world robotics and embodied AI tasks.</p>
-  </div>
 </div>
 </div>

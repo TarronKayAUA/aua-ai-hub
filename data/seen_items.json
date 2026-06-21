@@ -6783,6 +6783,67 @@
    "title_hash": "dee5b4bd1451aee4eeaa06047afa9560",
    "first_seen": "2026-06-20T15:57:36.989284+00:00",
    "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02900-2",
+   "title_hash": "b790ccb55373153d1c404874a3ed9e5b",
+   "first_seen": "2026-06-21T13:24:45.624195+00:00",
+   "kept": true,
+   "title": "HRRT: hierarchical reinforcement learning for renal replacement therapy decision support",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-21T00:00:00+00:00",
+   "summary": "Hierarchical reinforcement learning system developed for clinical decision support in renal replacement therapy.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02924-8",
+   "title_hash": "dc536177a0e1a4f5a44f73ad423ca3d8",
+   "first_seen": "2026-06-21T13:24:45.624195+00:00",
+   "kept": true,
+   "title": "Voice-controlled super-resolution ultrasound imaging and reporting powered by multimodal large language models",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-21T00:00:00+00:00",
+   "summary": "Voice-controlled ultrasound imaging system integrated with multimodal large language models for enhanced clinical reporting.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ub2kmt/deep_neural_network_that_can_turn_any_image_into",
+   "title_hash": "66422d90050b7677730707e1ccbf609a",
+   "first_seen": "2026-06-21T13:24:45.624195+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uaxktf/zai_as_the_number_2_gives_praise_to_the_number_1",
+   "title_hash": "892690bac4f9e8c447c757fb46bd0955",
+   "first_seen": "2026-06-21T13:24:45.624195+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9zqlx/glm52_is_the_new_leading_open_weights_model_on",
+   "title_hash": "eb6364210a0a1ef755ddef6d6a5bb8a5",
+   "first_seen": "2026-06-21T13:24:45.624195+00:00",
+   "kept": true,
+   "title": "GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-19T11:43:22+00:00",
+   "summary": "GLM-5.2 achieved top ranking on the Artificial Analysis Intelligence Index among open-weights models.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/br2lSBapukS1-SpxHqZLiRDYFoObg5xwpKU4LYKNyXA.jpeg?width=640&crop=smart&auto=webp&s=3646758c86913f0feaa08b9580e3018433f047be"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=kkLlzQqa7MY",
+   "title_hash": "dc0d97fa6abaf9f5260e7d1a40e64c6c",
+   "first_seen": "2026-06-21T13:24:45.624195+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WJzsX32qMJY",
+   "title_hash": "27d4f83c693b9b262a901c5666d47a6a",
+   "first_seen": "2026-06-21T13:24:45.624195+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -6889,14 +6950,14 @@
    "date": "June 20, 2026"
   },
   "clinical_practice": {
-   "text": "A treatment-aware deep learning model is enabling counterfactual prediction of individual benefit for ovarian cancer patients treated with PARP inhibitors, supporting more personalized therapy selection <a href=\"https://www.nature.com/articles/s41746-026-02822-z\">[2]</a>. Human-AI collaboration frameworks and outcomes are being examined across clinical settings, with reviews highlighting key task divisions and how these partnerships influence healthcare delivery <a href=\"https://www.nature.com/articles/s41746-026-02918-6\">[3]</a> <a href=\"https://www.nature.com/articles/s41746-026-02912-y\">[8]</a>. In parallel, large language models are being evaluated for their suitability in assisting physicians during interactive doctor-patient-electronic health record tasks, using dedicated benchmarks to assess readiness for clinical practice and uncertainty preservation <a href=\"https://arxiv.org/abs/2606.18471\">[11]</a> <a href=\"https://arxiv.org/abs/2606.18613\">[12]</a>. These developments point to increased integration of machine learning and language models in core clinical workflows.",
-   "hash": "58bfd6bd97bcbf37",
-   "date": "June 20, 2026"
+   "text": "A new hierarchical reinforcement learning system now supports clinical decision-making in renal replacement therapy, signaling ongoing advances in AI-guided treatment strategies <a href=\"https://www.nature.com/articles/s41746-026-02900-2\">[1]</a>. Voice-controlled ultrasound imaging powered by multimodal large language models may improve workflow efficiency and reporting quality for clinicians <a href=\"https://www.nature.com/articles/s41746-026-02924-8\">[2]</a>. Foundation models such as FetalCLIP enable more comprehensive analysis of fetal ultrasound images, further demonstrating the impact of visual-language technologies in diagnostic imaging <a href=\"https://www.nature.com/articles/s41746-026-02907-9\">[3]</a>. Recent multicenter research has produced interpretable machine learning models that predict kidney failure in children with congenital anomalies, offering practical tools for risk assessment in pediatric nephrology <a href=\"https://www.nature.com/articles/s41746-026-02901-1\">[6]</a>. Deep learning is also being applied to forecast individual benefits from PARP inhibitors in ovarian cancer, supporting more personalized therapy planning <a href=\"https://www.nature.com/articles/s41746-026-02822-z\">[4]</a>.",
+   "hash": "5a25fd83aaceb3e5",
+   "date": "June 21, 2026"
   },
   "general_ai": {
-   "text": "Recent advances in efficient context handling are highlighted by DeepSeek-V4, which aims to support million-token language model applications, potentially expanding the complexity of medical and academic use cases <a href=\"https://arxiv.org/abs/2606.19348\">[1]</a>. At the same time, security concerns are rising, as evidence shows research agents can leak sensitive training data if queried strategically, underlining risks when deploying AI in clinical or educational environments <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[4]</a>. Evaluation of LLM-as-a-Judge models indicates continuing reliability and bias issues, suggesting a need for caution when considering automated systems in decision-making roles <a href=\"https://arxiv.org/abs/2606.19544\">[2]</a>. Innovations such as CacheWeaver are improving retrieval-augmented generation inference efficiency through cache-aware ordering, which may enhance performance in information-heavy workflows <a href=\"https://arxiv.org/abs/2606.19667\">[3]</a>.",
-   "hash": "bd8c4e63244c5a16",
-   "date": "June 20, 2026"
+   "text": "Faculty and students may want to note DeepSeek-V4’s emphasis on handling million-token contexts efficiently, which could affect future applications requiring extensive data processing <a href=\"https://arxiv.org/abs/2606.19348\">[1]</a>. At the same time, GLM-5.2 has been released with open weights and strong performance claims, especially in text generation and long-horizon reasoning, suggesting new opportunities for academic projects and benchmarking <a href=\"https://simonwillison.net/2026/Jun/17/glm-52\">[8]</a> <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[10]</a>. Security remains a concern as MosaicLeaks shows that research agents can leak sensitive training data during queries, drawing attention to risks in deploying AI systems for institutional use <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[4]</a>. Meanwhile, local model deployment has become increasingly practical, with improvements in inference speed and open-weight model availability, shaping how users interact with AI on-campus <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[12]</a>.",
+   "hash": "ce3563c39f47bbcf",
+   "date": "June 21, 2026"
   }
  }
 }

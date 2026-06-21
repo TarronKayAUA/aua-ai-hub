@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A treatment-aware deep learning model is enabling counterfactual prediction of individual benefit for ovarian cancer patients treated with PARP inhibitors, supporting more personalized therapy selection <a href="https://www.nature.com/articles/s41746-026-02822-z">[2]</a>. Human-AI collaboration frameworks and outcomes are being examined across clinical settings, with reviews highlighting key task divisions and how these partnerships influence healthcare delivery <a href="https://www.nature.com/articles/s41746-026-02918-6">[3]</a> <a href="https://www.nature.com/articles/s41746-026-02912-y">[8]</a>. In parallel, large language models are being evaluated for their suitability in assisting physicians during interactive doctor-patient-electronic health record tasks, using dedicated benchmarks to assess readiness for clinical practice and uncertainty preservation <a href="https://arxiv.org/abs/2606.18471">[11]</a> <a href="https://arxiv.org/abs/2606.18613">[12]</a>. These developments point to increased integration of machine learning and language models in core clinical workflows.</p>
-<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the items below.</p>
+<p>A new hierarchical reinforcement learning system now supports clinical decision-making in renal replacement therapy, signaling ongoing advances in AI-guided treatment strategies <a href="https://www.nature.com/articles/s41746-026-02900-2">[1]</a>. Voice-controlled ultrasound imaging powered by multimodal large language models may improve workflow efficiency and reporting quality for clinicians <a href="https://www.nature.com/articles/s41746-026-02924-8">[2]</a>. Foundation models such as FetalCLIP enable more comprehensive analysis of fetal ultrasound images, further demonstrating the impact of visual-language technologies in diagnostic imaging <a href="https://www.nature.com/articles/s41746-026-02907-9">[3]</a>. Recent multicenter research has produced interpretable machine learning models that predict kidney failure in children with congenital anomalies, offering practical tools for risk assessment in pediatric nephrology <a href="https://www.nature.com/articles/s41746-026-02901-1">[6]</a>. Deep learning is also being applied to forecast individual benefits from PARP inhibitors in ovarian cancer, supporting more personalized therapy planning <a href="https://www.nature.com/articles/s41746-026-02822-z">[4]</a>.</p>
+<p class="section-brief-date">The picture as of June 21, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02900-2">HRRT: hierarchical reinforcement learning for renal replacement therapy decision support</a>
+    <p class="news-card-summary">Hierarchical reinforcement learning system developed for clinical decision support in renal replacement therapy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02924-8">Voice-controlled super-resolution ultrasound imaging and reporting powered by multimodal large language models</a>
+    <p class="news-card-summary">Voice-controlled ultrasound imaging system integrated with multimodal large language models for enhanced clinical reporting.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 18, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02829-6">UNICORN: a deep learning model for integrating multi-stain data in histopathology</a>
     <p class="news-card-summary">UNICORN is a deep learning model that integrates multi-stain histopathology data, published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02861-6">Unlocking multi-institutional insights into disease progression with PEAL as a lossless, one-shot federated learning solution</a>
-    <p class="news-card-summary">PEAL provides lossless, one-shot federated learning for disease progression analysis across multiple healthcare institutions without sharing raw data.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42307998?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">The Utility of Large Language Models to Assist With Emergency Triage Decisions Within Otolaryngology</a>
-    <p class="news-card-summary">Study found GPT-5 demonstrated triage performance comparable to attending otolaryngologists in emergency decision-making.</p>
   </div>
 </div>
 </div>
