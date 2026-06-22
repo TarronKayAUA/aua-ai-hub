@@ -6863,6 +6863,277 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e85803",
+   "title_hash": "fbfb2cf926243f6614b1946f24237146",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/how-anthropic-may-have-talked-itself-into-an-ai-export-ban",
+   "title_hash": "554198e2b53183588ab3ac8961124cd1",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e81304",
+   "title_hash": "c032e94ab33d2613fbcdce13785d14c7",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+   "title_hash": "a097e575e55a50df7e0c02dee87a61fa",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42329665?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "fffe772de56cb5d105ec218476e08fbd",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42328544?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "e3bc78cba9157e40d25a6c138d16f772",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "b7d7cb9ae9cd8d2b25ef9fc010416a36",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "A strategic framework for data science integration in undergraduate medical education and clinical training",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-22T10:00:00+00:00",
+   "summary": "Framework proposes structured integration of data science and machine learning competencies into undergraduate medical education curricula.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42328230?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "739158b93a76b7ae27e6412a25df482e",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "Perception and challenges of artificial intelligence (AI) in Emergency Medicine: A multi-country study in Sub-Saharan Africa",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-22T10:00:00+00:00",
+   "summary": "Multi-country survey from Sub-Saharan Africa documents emergency medicine professionals' awareness and perception of artificial intelligence opportunities and barriers.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42327283?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "3d35de96930813e7a750ea0c2ad7fd09",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42326908?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "b315e34fdba82c40b0715074fbb758e9",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "10e2fc5b96c837ada545617f49f9bbc7",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "Implementation of a Novel Case-Based Session for Medical Students Focused on Artificial Intelligence Ethics",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-22T10:00:00+00:00",
+   "summary": "Case-based teaching session for medical students addresses ethical considerations and responsible deployment of artificial intelligence in clinical practice.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42326139?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "3428380a07cbd69f17f75237e0936e83",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "Robustness of a Large Language Model (LLM)-Based Virtual Patient for Japanese History-Taking Training Under Direct and Indirect Instructional Contamination",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-22T10:00:00+00:00",
+   "summary": "Study evaluates robustness of large language model-based virtual patients for training medical students in history-taking across different instructional approaches.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42325159?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "da494183c46dbf1a77e72abad17c9c68",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42325073?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "826e91fbaa374eaff68f5f5b6f026661",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02916-8",
+   "title_hash": "eb44159eb20515b4ec63aee6eb456eac",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "Development of a multimodal large language model for early warning and diagnosis of chronic ocular GVHD",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-22T00:00:00+00:00",
+   "summary": "Multimodal large language model developed for early warning and diagnosis of chronic ocular graft-versus-host disease, a complication of hematopoietic stem cell transplantation.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02905-x",
+   "title_hash": "28df97f4612b6cce53bee795ac4be1e2",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "An expert-level vision-language model for multitask diagnostic morphology in clinical laboratories",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-22T00:00:00+00:00",
+   "summary": "Expert-level vision-language model performs multitask diagnostic analysis on clinical laboratory morphology samples, demonstrating machine learning application in pathology.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04470-y",
+   "title_hash": "6e5c3ff2c2769b66cbd5fa0f462ad804",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04454-y",
+   "title_hash": "2fd2f599bec406accb1c9d159b591bff",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "A case of artificial intelligence-enhanced diagnostics leading to heart transplantation",
+   "source": "Nature Medicine",
+   "published": "2026-06-22T00:00:00+00:00",
+   "summary": "Case report describes artificial intelligence-enhanced diagnostic approach that identified cardiac dysfunction and enabled successful heart transplantation in a patient.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00032-4",
+   "title_hash": "2a346f32f3e4ba0c988d47cb8e23f27a",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04448-w",
+   "title_hash": "49f5b5dd5004c55e27e51dbde826bcbe",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1",
+   "title_hash": "12afa15c52d3ded9426e670861eec01d",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils",
+   "title_hash": "92b24bb22d060cf8eafac12bb49c8849",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts",
+   "title_hash": "4b0c9ee540253856a31cc9ee993166fd",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ubrcwj/tokenomics",
+   "title_hash": "ae193d886b2e05503534fde0f34e3c7f",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42323939?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "a8ed820f21ecd7b0dd5b611c83e79f7f",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "58422221790e0cbe5a1a4ae7dc33b74c",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "Can large language models generate exam questions comparable to humans? A systematic review and meta-analysis study in medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-21T10:00:00+00:00",
+   "summary": "Systematic review and meta-analysis examines whether large language models can generate medical examination questions with quality comparable to human instructors.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ubjnh5/qwen_is_never_going_to_open_source_qwen_37_arent",
+   "title_hash": "63df0dcc3fbf036356ce4777d32c6df7",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ubbj6n/what_happens_when_they_stop_subsidizing_llm",
+   "title_hash": "240dbe94beeda454b0dd954608e4fb0f",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "23b891c08dfa0534775f6cfb79b5196e",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "Construction of a faculty competency model for medical simulation education integrated with GenAI: a multi-method quantitative study based on the perspective of medical students",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-20T10:00:00+00:00",
+   "summary": "Validated competency model identifies skills and knowledge faculty need to teach medical simulation education integrated with generative artificial intelligence.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42323560?fc=20260609215449&ff=20260622150046&v=2.20.0",
+   "title_hash": "3252125c8dd6da084cb00b5ac82c7aea",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "Evaluation of ChatGPT-4o's and DeepSeek R1's responses to urological problems: a comparative study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-20T10:00:00+00:00",
+   "summary": "Comparative study evaluates ChatGPT-4o and DeepSeek R1 performance on clinical urology questions, finding DeepSeek R1 superior in accuracy and reasoning.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mG4SmhWyeFA",
+   "title_hash": "565e3ed899d4061a8ab734ed6b0a5c13",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": true,
+   "title": "DeepSeek Just Solved AI's Billion Dollar Problem",
+   "source": "Two Minute Papers",
+   "published": "2026-06-22T15:53:06+00:00",
+   "summary": "Overview of DeepSeek's approach to reducing AI inference costs, a significant technical and economic development in large language model deployment.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/mG4SmhWyeFA/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=E17Lb3osqrw",
+   "title_hash": "b6dd77e93fdd0dcb3d6c56984d35731a",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=27-GjDIWGo0",
+   "title_hash": "ed650648832d1d91e2e34a632d1e8024",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4wMRXmLpdA8",
+   "title_hash": "9ee73ba0d4cc5dec397a2facf8dadbe6",
+   "first_seen": "2026-06-22T19:00:45.264863+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -6964,14 +7235,14 @@
  "last_digest_at": "2026-06-19T16:33:28.270097+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Medical education is increasingly intersecting with artificial intelligence as studies map both its direct impacts and the evolving needs of students. There is measurable benefit from large language model-powered virtual standardized patients, which are associated with gains in medical student interview performance within existing curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0\">[1]</a>. Alongside this, medical students have signaled a gap between their enthusiasm for AI in healthcare and their current competency, prompting calls for a standardized AI curriculum in undergraduate medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[6]</a>. Student perspectives reflect a growing recognition of AI’s role, while research continues to demonstrate positive effects of generative AI on learning performance using theoretical frameworks such as social cognitive theory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0\">[2]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0\">[13]</a>.",
-   "hash": "6c27523aee7693b5",
-   "date": "June 20, 2026"
+   "text": "A new strategic framework proposes structured integration of data science and machine learning into undergraduate medical education and clinical training, shaping how competencies in these areas could be developed in future curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[1]</a>. Meanwhile, medical students have recognized a significant need for a standardized artificial intelligence curriculum, citing a gap between their enthusiasm and their actual abilities <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[13]</a>. Survey studies document professionals&#x27; awareness of artificial intelligence opportunities and challenges in emergency medicine across Sub-Saharan Africa <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328230?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[2]</a>, and researchers have implemented case-based teaching sessions to address ethical issues surrounding responsible deployment of artificial intelligence in clinical practice <a href=\"https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[3]</a>. Additionally, evaluation of large language models finds these tools capable of generating medical examination questions with quality comparable to human instructors <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[5]</a>.",
+   "hash": "027e4565aa812eb3",
+   "date": "June 22, 2026"
   },
   "clinical_practice": {
-   "text": "A new hierarchical reinforcement learning system now supports clinical decision-making in renal replacement therapy, signaling ongoing advances in AI-guided treatment strategies <a href=\"https://www.nature.com/articles/s41746-026-02900-2\">[1]</a>. Voice-controlled ultrasound imaging powered by multimodal large language models may improve workflow efficiency and reporting quality for clinicians <a href=\"https://www.nature.com/articles/s41746-026-02924-8\">[2]</a>. Foundation models such as FetalCLIP enable more comprehensive analysis of fetal ultrasound images, further demonstrating the impact of visual-language technologies in diagnostic imaging <a href=\"https://www.nature.com/articles/s41746-026-02907-9\">[3]</a>. Recent multicenter research has produced interpretable machine learning models that predict kidney failure in children with congenital anomalies, offering practical tools for risk assessment in pediatric nephrology <a href=\"https://www.nature.com/articles/s41746-026-02901-1\">[6]</a>. Deep learning is also being applied to forecast individual benefits from PARP inhibitors in ovarian cancer, supporting more personalized therapy planning <a href=\"https://www.nature.com/articles/s41746-026-02822-z\">[4]</a>.",
-   "hash": "5a25fd83aaceb3e5",
-   "date": "June 21, 2026"
+   "text": "Artificial intelligence approaches are facilitating early detection and intervention across several clinical domains, such as the deployment of multimodal large language models for early warning and diagnosis in chronic ocular graft-versus-host disease following stem cell transplantation <a href=\"https://www.nature.com/articles/s41746-026-02916-8\">[1]</a> and AI-enhanced diagnostics that enabled successful heart transplantation by identifying cardiac dysfunction <a href=\"https://www.nature.com/articles/s41591-026-04454-y\">[3]</a>. In laboratory and imaging settings, expert-level vision-language models are supporting multitask diagnostic analyses of morphology samples <a href=\"https://www.nature.com/articles/s41746-026-02905-x\">[2]</a> and allowing voice-controlled ultrasound imaging with integrated large language models to strengthen clinical reporting workflows <a href=\"https://www.nature.com/articles/s41746-026-02924-8\">[5]</a>. These developments illustrate rapid integration of vision-language and multimodal models in critical diagnostic and decision-support applications across clinical practice.",
+   "hash": "c5aec0749c8db65b",
+   "date": "June 22, 2026"
   },
   "general_ai": {
    "text": "Faculty and students may want to note DeepSeek-V4’s emphasis on handling million-token contexts efficiently, which could affect future applications requiring extensive data processing <a href=\"https://arxiv.org/abs/2606.19348\">[1]</a>. At the same time, GLM-5.2 has been released with open weights and strong performance claims, especially in text generation and long-horizon reasoning, suggesting new opportunities for academic projects and benchmarking <a href=\"https://simonwillison.net/2026/Jun/17/glm-52\">[8]</a> <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[10]</a>. Security remains a concern as MosaicLeaks shows that research agents can leak sensitive training data during queries, drawing attention to risks in deploying AI systems for institutional use <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[4]</a>. Meanwhile, local model deployment has become increasingly practical, with improvements in inference speed and open-weight model availability, shaping how users interact with AI on-campus <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[12]</a>.",

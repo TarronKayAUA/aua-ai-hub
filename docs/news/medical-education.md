@@ -13,16 +13,65 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Medical education is increasingly intersecting with artificial intelligence as studies map both its direct impacts and the evolving needs of students. There is measurable benefit from large language model-powered virtual standardized patients, which are associated with gains in medical student interview performance within existing curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">[1]</a>. Alongside this, medical students have signaled a gap between their enthusiasm for AI in healthcare and their current competency, prompting calls for a standardized AI curriculum in undergraduate medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[6]</a>. Student perspectives reflect a growing recognition of AI’s role, while research continues to demonstrate positive effects of generative AI on learning performance using theoretical frameworks such as social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[13]</a>.</p>
-<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the items below.</p>
+<p>A new strategic framework proposes structured integration of data science and machine learning into undergraduate medical education and clinical training, shaping how competencies in these areas could be developed in future curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[1]</a>. Meanwhile, medical students have recognized a significant need for a standardized artificial intelligence curriculum, citing a gap between their enthusiasm and their actual abilities <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[13]</a>. Survey studies document professionals&#x27; awareness of artificial intelligence opportunities and challenges in emergency medicine across Sub-Saharan Africa <a href="https://pubmed.ncbi.nlm.nih.gov/42328230?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[2]</a>, and researchers have implemented case-based teaching sessions to address ethical issues surrounding responsible deployment of artificial intelligence in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[3]</a>. Additionally, evaluation of large language models finds these tools capable of generating medical examination questions with quality comparable to human instructors <a href="https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[5]</a>.</p>
+<p class="section-brief-date">The picture as of June 22, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">A strategic framework for data science integration in undergraduate medical education and clinical training</a>
+    <p class="news-card-summary">Framework proposes structured integration of data science and machine learning competencies into undergraduate medical education curricula.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42328230?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Perception and challenges of artificial intelligence (AI) in Emergency Medicine: A multi-country study in Sub-Saharan Africa</a>
+    <p class="news-card-summary">Multi-country survey from Sub-Saharan Africa documents emergency medicine professionals&#x27; awareness and perception of artificial intelligence opportunities and barriers.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Implementation of a Novel Case-Based Session for Medical Students Focused on Artificial Intelligence Ethics</a>
+    <p class="news-card-summary">Case-based teaching session for medical students addresses ethical considerations and responsible deployment of artificial intelligence in clinical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42326139?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Robustness of a Large Language Model (LLM)-Based Virtual Patient for Japanese History-Taking Training Under Direct and Indirect Instructional Contamination</a>
+    <p class="news-card-summary">Study evaluates robustness of large language model-based virtual patients for training medical students in history-taking across different instructional approaches.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Can large language models generate exam questions comparable to humans? A systematic review and meta-analysis study in medical education</a>
+    <p class="news-card-summary">Systematic review and meta-analysis examines whether large language models can generate medical examination questions with quality comparable to human instructors.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Voluntary use of LLM-powered virtual standardized patients and medical students&#x27; interview performance: An observational study</a>
     <p class="news-card-summary">Voluntary use of large language model-powered virtual standardized patients within human standardized patient curricula showed small but measurable associations with improved medical student interview performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Construction of a faculty competency model for medical simulation education integrated with GenAI: a multi-method quantitative study based on the perspective of medical students</a>
+    <p class="news-card-summary">Validated competency model identifies skills and knowledge faculty need to teach medical simulation education integrated with generative artificial intelligence.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323560?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Evaluation of ChatGPT-4o&#x27;s and DeepSeek R1&#x27;s responses to urological problems: a comparative study</a>
+    <p class="news-card-summary">Comparative study evaluates ChatGPT-4o and DeepSeek R1 performance on clinical urology questions, finding DeepSeek R1 superior in accuracy and reasoning.</p>
   </div>
 </div>
 <div class="news-card">
@@ -72,57 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42304363?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">Psychometric performance and student perceptions of AI- versus student-generated multiple-choice questions: a single-center randomized controlled trial</a>
     <p class="news-card-summary">Randomized trial found large language models and students generated comparable multiple-choice questions in formative assessment with similar student perceptions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90064">AI-Generated Versus Human Supervisor Feedback on Medical Students’ Clinical Clerkship Logs: Cross-Sectional Convergent Mixed Methods Study</a>
-    <p class="news-card-summary">Mixed methods study comparing AI-generated and human supervisor feedback on medical students&#x27; clinical clerkship logs found substantial agreement between feedback types.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/0442c169b0e52020fffaaf8b294f79b0.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42299782?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">Comparative Accuracy and Safety of 4 Large Language Models on Cornea and External Disease Multiple-Choice Questions</a>
-    <p class="news-card-summary">Comparative evaluation found GPT-5.2, Gemini 3 Pro, and Claude Opus 4.5 achieve similar high accuracy on ophthalmology board exam questions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42303720?fc=20260609215449&amp;ff=20260617134036&amp;v=2.20.0">DeepSeek-assisted problem-based learning for glaucoma education in an undergraduate ophthalmology clerkship: a randomized educational pilot study</a>
-    <p class="news-card-summary">Pilot study evaluated open-source DeepSeek language model combined with problem-based learning for undergraduate ophthalmology education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e76924">Developing a Large Language Model, Based Feedback System for Case Report Writing in Rehabilitation Education: Tutorial</a>
-    <p class="news-card-summary">Tutorial describes development of a large language model feedback system to assist rehabilitation students in writing clinical case reports.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6c27dff69c1613c31e499e3fbb24630b.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Generative AI and student learning performance in medical higher education: a social cognitive theory perspective</a>
-    <p class="news-card-summary">Empirical study demonstrates that generative AI enhances learning performance in medical higher education through mechanisms aligned with social cognitive theory.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Beyond Red Pen: Comparing the machine vs human grading of reflective assignments on clinical reasoning in Dermatology undergraduate students</a>
-    <p class="news-card-summary">ChatGPT provides reliable complementary assessment of reflective clinical reasoning assignments in dermatology students, with results showing meaningful concordance with human graders.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Large language model prompt engineering for medical education: A practical guide for the Australian and New Zealand College of Anaesthetists Final Examination</a>
-    <p class="news-card-summary">Practical guide for using large language models in prompt engineering across specialist-level medical education in anaesthesia, addressing capability and implementation considerations.</p>
   </div>
 </div>
 </div>

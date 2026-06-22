@@ -11,16 +11,65 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Medical education is increasingly intersecting with artificial intelligence as studies map both its direct impacts and the evolving needs of students. There is measurable benefit from large language model-powered virtual standardized patients, which are associated with gains in medical student interview performance within existing curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">[1]</a>. Alongside this, medical students have signaled a gap between their enthusiasm for AI in healthcare and their current competency, prompting calls for a standardized AI curriculum in undergraduate medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[6]</a>. Student perspectives reflect a growing recognition of AI’s role, while research continues to demonstrate positive effects of generative AI on learning performance using theoretical frameworks such as social cognitive theory <a href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">[13]</a>.</p>
-<p class="section-brief-date">The picture as of June 20, 2026; numbered links go to the source items.</p>
+<p>A new strategic framework proposes structured integration of data science and machine learning into undergraduate medical education and clinical training, shaping how competencies in these areas could be developed in future curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[1]</a>. Meanwhile, medical students have recognized a significant need for a standardized artificial intelligence curriculum, citing a gap between their enthusiasm and their actual abilities <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[13]</a>. Survey studies document professionals&#x27; awareness of artificial intelligence opportunities and challenges in emergency medicine across Sub-Saharan Africa <a href="https://pubmed.ncbi.nlm.nih.gov/42328230?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[2]</a>, and researchers have implemented case-based teaching sessions to address ethical issues surrounding responsible deployment of artificial intelligence in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[3]</a>. Additionally, evaluation of large language models finds these tools capable of generating medical examination questions with quality comparable to human instructors <a href="https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[5]</a>.</p>
+<p class="section-brief-date">The picture as of June 22, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">A strategic framework for data science integration in undergraduate medical education and clinical training</a>
+    <p class="news-card-summary">Framework proposes structured integration of data science and machine learning competencies into undergraduate medical education curricula.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42328230?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Perception and challenges of artificial intelligence (AI) in Emergency Medicine: A multi-country study in Sub-Saharan Africa</a>
+    <p class="news-card-summary">Multi-country survey from Sub-Saharan Africa documents emergency medicine professionals&#x27; awareness and perception of artificial intelligence opportunities and barriers.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Implementation of a Novel Case-Based Session for Medical Students Focused on Artificial Intelligence Ethics</a>
+    <p class="news-card-summary">Case-based teaching session for medical students addresses ethical considerations and responsible deployment of artificial intelligence in clinical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42326139?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Robustness of a Large Language Model (LLM)-Based Virtual Patient for Japanese History-Taking Training Under Direct and Indirect Instructional Contamination</a>
+    <p class="news-card-summary">Study evaluates robustness of large language model-based virtual patients for training medical students in history-taking across different instructional approaches.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Can large language models generate exam questions comparable to humans? A systematic review and meta-analysis study in medical education</a>
+    <p class="news-card-summary">Systematic review and meta-analysis examines whether large language models can generate medical examination questions with quality comparable to human instructors.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Voluntary use of LLM-powered virtual standardized patients and medical students&#x27; interview performance: An observational study</a>
     <p class="news-card-summary">Voluntary use of large language model-powered virtual standardized patients within human standardized patient curricula showed small but measurable associations with improved medical student interview performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Construction of a faculty competency model for medical simulation education integrated with GenAI: a multi-method quantitative study based on the perspective of medical students</a>
+    <p class="news-card-summary">Validated competency model identifies skills and knowledge faculty need to teach medical simulation education integrated with generative artificial intelligence.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323560?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Evaluation of ChatGPT-4o&#x27;s and DeepSeek R1&#x27;s responses to urological problems: a comparative study</a>
+    <p class="news-card-summary">Comparative study evaluates ChatGPT-4o and DeepSeek R1 performance on clinical urology questions, finding DeepSeek R1 superior in accuracy and reasoning.</p>
   </div>
 </div>
 <div class="news-card">
@@ -156,11 +205,32 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new hierarchical reinforcement learning system now supports clinical decision-making in renal replacement therapy, signaling ongoing advances in AI-guided treatment strategies <a href="https://www.nature.com/articles/s41746-026-02900-2">[1]</a>. Voice-controlled ultrasound imaging powered by multimodal large language models may improve workflow efficiency and reporting quality for clinicians <a href="https://www.nature.com/articles/s41746-026-02924-8">[2]</a>. Foundation models such as FetalCLIP enable more comprehensive analysis of fetal ultrasound images, further demonstrating the impact of visual-language technologies in diagnostic imaging <a href="https://www.nature.com/articles/s41746-026-02907-9">[3]</a>. Recent multicenter research has produced interpretable machine learning models that predict kidney failure in children with congenital anomalies, offering practical tools for risk assessment in pediatric nephrology <a href="https://www.nature.com/articles/s41746-026-02901-1">[6]</a>. Deep learning is also being applied to forecast individual benefits from PARP inhibitors in ovarian cancer, supporting more personalized therapy planning <a href="https://www.nature.com/articles/s41746-026-02822-z">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 21, 2026; numbered links go to the source items.</p>
+<p>Artificial intelligence approaches are facilitating early detection and intervention across several clinical domains, such as the deployment of multimodal large language models for early warning and diagnosis in chronic ocular graft-versus-host disease following stem cell transplantation <a href="https://www.nature.com/articles/s41746-026-02916-8">[1]</a> and AI-enhanced diagnostics that enabled successful heart transplantation by identifying cardiac dysfunction <a href="https://www.nature.com/articles/s41591-026-04454-y">[3]</a>. In laboratory and imaging settings, expert-level vision-language models are supporting multitask diagnostic analyses of morphology samples <a href="https://www.nature.com/articles/s41746-026-02905-x">[2]</a> and allowing voice-controlled ultrasound imaging with integrated large language models to strengthen clinical reporting workflows <a href="https://www.nature.com/articles/s41746-026-02924-8">[5]</a>. These developments illustrate rapid integration of vision-language and multimodal models in critical diagnostic and decision-support applications across clinical practice.</p>
+<p class="section-brief-date">The picture as of June 22, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02916-8">Development of a multimodal large language model for early warning and diagnosis of chronic ocular GVHD</a>
+    <p class="news-card-summary">Multimodal large language model developed for early warning and diagnosis of chronic ocular graft-versus-host disease, a complication of hematopoietic stem cell transplantation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02905-x">An expert-level vision-language model for multitask diagnostic morphology in clinical laboratories</a>
+    <p class="news-card-summary">Expert-level vision-language model performs multitask diagnostic analysis on clinical laboratory morphology samples, demonstrating machine learning application in pathology.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04454-y">A case of artificial intelligence-enhanced diagnostics leading to heart transplantation</a>
+    <p class="news-card-summary">Case report describes artificial intelligence-enhanced diagnostic approach that identified cardiac dysfunction and enabled successful heart transplantation in a patient.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
@@ -536,6 +606,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=mG4SmhWyeFA" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/mG4SmhWyeFA/hqdefault.jpg" alt="Video: DeepSeek Just Solved AI&#x27;s Billion Dollar Problem" loading="lazy">
+  <span class="video-card-title">DeepSeek Just Solved AI&#x27;s Billion Dollar Problem</span>
+  <span class="video-card-meta">Two Minute Papers, June 22, 2026</span>
+  <span class="video-card-desc">Overview of DeepSeek&#x27;s approach to reducing AI inference costs, a significant technical and economic development in large language model deployment.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=qdf6UvCUlu4" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/qdf6UvCUlu4/hqdefault.jpg" alt="Video: North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!" loading="lazy">
   <span class="video-card-title">North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!</span>

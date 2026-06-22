@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new hierarchical reinforcement learning system now supports clinical decision-making in renal replacement therapy, signaling ongoing advances in AI-guided treatment strategies <a href="https://www.nature.com/articles/s41746-026-02900-2">[1]</a>. Voice-controlled ultrasound imaging powered by multimodal large language models may improve workflow efficiency and reporting quality for clinicians <a href="https://www.nature.com/articles/s41746-026-02924-8">[2]</a>. Foundation models such as FetalCLIP enable more comprehensive analysis of fetal ultrasound images, further demonstrating the impact of visual-language technologies in diagnostic imaging <a href="https://www.nature.com/articles/s41746-026-02907-9">[3]</a>. Recent multicenter research has produced interpretable machine learning models that predict kidney failure in children with congenital anomalies, offering practical tools for risk assessment in pediatric nephrology <a href="https://www.nature.com/articles/s41746-026-02901-1">[6]</a>. Deep learning is also being applied to forecast individual benefits from PARP inhibitors in ovarian cancer, supporting more personalized therapy planning <a href="https://www.nature.com/articles/s41746-026-02822-z">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 21, 2026; numbered links go to the items below.</p>
+<p>Artificial intelligence approaches are facilitating early detection and intervention across several clinical domains, such as the deployment of multimodal large language models for early warning and diagnosis in chronic ocular graft-versus-host disease following stem cell transplantation <a href="https://www.nature.com/articles/s41746-026-02916-8">[1]</a> and AI-enhanced diagnostics that enabled successful heart transplantation by identifying cardiac dysfunction <a href="https://www.nature.com/articles/s41591-026-04454-y">[3]</a>. In laboratory and imaging settings, expert-level vision-language models are supporting multitask diagnostic analyses of morphology samples <a href="https://www.nature.com/articles/s41746-026-02905-x">[2]</a> and allowing voice-controlled ultrasound imaging with integrated large language models to strengthen clinical reporting workflows <a href="https://www.nature.com/articles/s41746-026-02924-8">[5]</a>. These developments illustrate rapid integration of vision-language and multimodal models in critical diagnostic and decision-support applications across clinical practice.</p>
+<p class="section-brief-date">The picture as of June 22, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02916-8">Development of a multimodal large language model for early warning and diagnosis of chronic ocular GVHD</a>
+    <p class="news-card-summary">Multimodal large language model developed for early warning and diagnosis of chronic ocular graft-versus-host disease, a complication of hematopoietic stem cell transplantation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02905-x">An expert-level vision-language model for multitask diagnostic morphology in clinical laboratories</a>
+    <p class="news-card-summary">Expert-level vision-language model performs multitask diagnostic analysis on clinical laboratory morphology samples, demonstrating machine learning application in pathology.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04454-y">A case of artificial intelligence-enhanced diagnostics leading to heart transplantation</a>
+    <p class="news-card-summary">Case report describes artificial intelligence-enhanced diagnostic approach that identified cardiac dysfunction and enabled successful heart transplantation in a patient.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
@@ -105,26 +126,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Five large language models evaluated for reliability and readability in generating parental education materials for pediatric anesthesia.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/19437c759dc1cc8ac08d1e1262e71a35.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18471">Possible or Definite? A Benchmark for Evaluating Diagnostic Uncertainty Preservation in Clinical Text</a>
-    <p class="news-card-summary">New benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their readiness for medical use.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18613">Are LLMs Ready to Assist Physicians? PhysAssistBench for Interactive Doctor-Patient-EHR Assistance</a>
-    <p class="news-card-summary">PhysAssistBench benchmark tests whether large language models can assist physicians in interactive doctor-patient-electronic health record scenarios.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02829-6">UNICORN: a deep learning model for integrating multi-stain data in histopathology</a>
-    <p class="news-card-summary">UNICORN is a deep learning model that integrates multi-stain histopathology data, published in npj Digital Medicine.</p>
-  </div>
 </div>
 </div>

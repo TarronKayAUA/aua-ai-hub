@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=mG4SmhWyeFA" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/mG4SmhWyeFA/hqdefault.jpg" alt="Video: DeepSeek Just Solved AI&#x27;s Billion Dollar Problem" loading="lazy">
+  <span class="video-card-title">DeepSeek Just Solved AI&#x27;s Billion Dollar Problem</span>
+  <span class="video-card-meta">Two Minute Papers, June 22, 2026</span>
+  <span class="video-card-desc">Overview of DeepSeek&#x27;s approach to reducing AI inference costs, a significant technical and economic development in large language model deployment.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=qdf6UvCUlu4" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/qdf6UvCUlu4/hqdefault.jpg" alt="Video: North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!" loading="lazy">
   <span class="video-card-title">North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!</span>
@@ -137,12 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Claude Fable 5 - Full 319 page Breakdown</span>
   <span class="video-card-meta">AI Explained, June 10, 2026</span>
   <span class="video-card-desc">This video provides a detailed 319-page analysis of Claude Fable 5, discussing its capabilities and characteristics beyond the initial demos.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Y9Wz2PV404E" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/Y9Wz2PV404E/hqdefault.jpg" alt="Video: Introducing Claude Fable 5" loading="lazy">
-  <span class="video-card-title">Introducing Claude Fable 5</span>
-  <span class="video-card-meta">Anthropic, June 9, 2026</span>
-  <span class="video-card-desc">Anthropic introduces Claude Fable 5, detailing its advanced capabilities and integrated safeguards aimed at enhancing responsible and secure AI deployment.</span>
 </a>
 </div>
 
