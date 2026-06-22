@@ -154,50 +154,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Generative AI and student learning performance in medical higher education: a social cognitive theory perspective</a>
-    <p class="news-card-summary">Empirical study demonstrates that generative AI enhances learning performance in medical higher education through mechanisms aligned with social cognitive theory.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Beyond Red Pen: Comparing the machine vs human grading of reflective assignments on clinical reasoning in Dermatology undergraduate students</a>
-    <p class="news-card-summary">ChatGPT provides reliable complementary assessment of reflective clinical reasoning assignments in dermatology students, with results showing meaningful concordance with human graders.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Large language model prompt engineering for medical education: A practical guide for the Australian and New Zealand College of Anaesthetists Final Examination</a>
-    <p class="news-card-summary">Practical guide for using large language models in prompt engineering across specialist-level medical education in anaesthesia, addressing capability and implementation considerations.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42296682?fc=20260609215449&amp;ff=20260616155644&amp;v=2.20.0">A comparative benchmark of DeepSeek-R1 on the USMLE: surpassing human and AI performance averages</a>
     <p class="news-card-summary">DeepSeek-R1 achieved above-average performance on USMLE questions, suggesting utility as a benchmark model for medical AI assessment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">How crucial is research philosophy in designing an AI study in medical education?</a>
-    <p class="news-card-summary">Analysis of methodological rigor in AI studies within medical education, addressing common research design and philosophical framework gaps affecting paper quality.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42288333?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">Item-Level Evaluation of Multimodal Large Language Models in Neuroradiology: Generational Performance and Execution Variability</a>
-    <p class="news-card-summary">Item-level evaluation of multimodal large language models on neuroradiology tasks shows meaningful performance gains across model generations with notable variability.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&amp;ff=20260615160740&amp;v=2.20.0">The eye sees what the mind knows: Eye tracking and artificial intelligence to assess surgical resident level of expertise</a>
-    <p class="news-card-summary">Eye-tracking combined with artificial intelligence identifies gaze patterns that distinguish expertise levels in surgical residents during procedural training.</p>
   </div>
 </div>
 </div>
@@ -420,27 +378,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/fc7be4ebbdd9481f612f762ed4c9b5f3.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.13940">Can Post-Training Turn LLMs into Good Medical Coders? An Empirical Study of Generative ICD Coding</a>
-    <p class="news-card-summary">Study evaluates whether post-training can improve large language models for automated International Classification of Diseases coding from clinical documentation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02883-0">Digital phenotyping with large language models to detect depressive state changes in patients</a>
-    <p class="news-card-summary">Digital phenotyping using large language models detects changes in depressive state from patient-generated text data with clinical validation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02880-3">A scoping review of traditional and artificial intelligence methods in malaria diagnostics</a>
-    <p class="news-card-summary">Scoping review compares traditional diagnostic methods and artificial intelligence approaches for malaria detection across available evidence.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
@@ -581,20 +518,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.13685">The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation</a>
-    <p class="news-card-summary">Analysis of large language model-as-judge evaluation methods reveals reliability concerns and systematic biases affecting model ranking comparisons.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.14179">CacheRL:Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward</a>
-    <p class="news-card-summary">CacheRL system trains small language model agents for multi-turn tool-calling tasks using cached rollouts and hybrid reward mechanisms.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 11, 2026</span></div>
     <a class="news-card-title" href="https://cohere.com/blog/north-mini-code">Cohere&#x27;s First Model for Developers</a>
     <p class="news-card-summary">Cohere released North Mini, a compact code-generation model targeting developers who need smaller alternatives to large models.</p>
@@ -671,12 +594,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">Kagenti’s Approach to Multi-Agent Security for AI Agents</span>
   <span class="video-card-meta">IBM Technology, June 16, 2026</span>
   <span class="video-card-desc">Security approaches for multi-agent AI systems, covering data leakage risks and safeguards for autonomous agent deployments.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=MTmhgIVhpag" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/MTmhgIVhpag/hqdefault.jpg" alt="Video: What Is AI Pair Programming? AI Coding Tools for Developers" loading="lazy">
-  <span class="video-card-title">What Is AI Pair Programming? AI Coding Tools for Developers</span>
-  <span class="video-card-meta">IBM Technology, June 15, 2026</span>
-  <span class="video-card-desc">Overview of AI pair programming tools and their application to software development workflows.</span>
 </a>
 </div>
 
