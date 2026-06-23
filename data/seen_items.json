@@ -7587,6 +7587,18 @@
    "category": "videos",
    "score": 3.0,
    "thumbnail": "https://i4.ytimg.com/vi/k5jYwyhDMxA/hqdefault.jpg"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42334858?fc=20260609215449&ff=20260623132825&v=2.20.0",
+   "title_hash": "c5ebd8d228f1e3a08b8571a4dfafd75e",
+   "first_seen": "2026-06-23T17:28:24.996861+00:00",
+   "kept": true,
+   "title": "A Two-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT 5 and Gemini on the German M2 Medical Exam: Evaluation Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-23T10:00:00+00:00",
+   "summary": "Study reveals that large language models fail systematically on harder German medical exam questions despite high overall scores, requiring rescue protocols to improve performance.",
+   "category": "medical_education",
+   "score": 4.0
   }
  ],
  "digests": [
@@ -7688,8 +7700,8 @@
  "last_digest_at": "2026-06-19T16:33:28.270097+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A strategic framework has been proposed to guide the integration of data science and machine learning into undergraduate medical education, advocating for structured curricular development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[2]</a>. Medical students express an ongoing need for standardized artificial intelligence training, highlighting a disconnect between enthusiasm for AI and readiness to use these tools effectively <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[14]</a>. Recent peer-reviewed research explores how artificial intelligence can support surgical trainees in research activities, addressing practical barriers in surgical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42333051?fc=20260609215449&amp;ff=20260623121519&amp;v=2.20.0\">[1]</a>. Validated faculty competency models further emphasize the knowledge and skills required to teach simulation education with generative AI, reflecting student perspectives on instructor preparedness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[8]</a>.",
-   "hash": "7bb48bfdcba31474",
+   "text": "A strategic framework for integrating data science and machine learning into undergraduate medical education provides structured guidance for curriculum development and upskilling clinical trainees <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[3]</a>. Medical students recognize the need for a standardized artificial intelligence curriculum, noting a disconnect between widespread enthusiasm and demonstrable competence <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[15]</a>. Studies have explored whether large language models can generate exam questions with quality comparable to human instructors, highlighting both potential and limitations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[7]</a>. Faculty competency modeling for simulation-based education integrated with generative AI identifies required teaching skills and knowledge from the medical student perspective <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[9]</a>. Case-based teaching sessions target ethical considerations to prepare students for responsible use of artificial intelligence in clinical practice <a href=\"https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[5]</a>.",
+   "hash": "69014240f835604d",
    "date": "June 23, 2026"
   },
   "clinical_practice": {

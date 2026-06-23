@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A strategic framework has been proposed to guide the integration of data science and machine learning into undergraduate medical education, advocating for structured curricular development <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[2]</a>. Medical students express an ongoing need for standardized artificial intelligence training, highlighting a disconnect between enthusiasm for AI and readiness to use these tools effectively <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[14]</a>. Recent peer-reviewed research explores how artificial intelligence can support surgical trainees in research activities, addressing practical barriers in surgical education <a href="https://pubmed.ncbi.nlm.nih.gov/42333051?fc=20260609215449&amp;ff=20260623121519&amp;v=2.20.0">[1]</a>. Validated faculty competency models further emphasize the knowledge and skills required to teach simulation education with generative AI, reflecting student perspectives on instructor preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[8]</a>.</p>
+<p>A strategic framework for integrating data science and machine learning into undergraduate medical education provides structured guidance for curriculum development and upskilling clinical trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[3]</a>. Medical students recognize the need for a standardized artificial intelligence curriculum, noting a disconnect between widespread enthusiasm and demonstrable competence <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[15]</a>. Studies have explored whether large language models can generate exam questions with quality comparable to human instructors, highlighting both potential and limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[7]</a>. Faculty competency modeling for simulation-based education integrated with generative AI identifies required teaching skills and knowledge from the medical student perspective <a href="https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[9]</a>. Case-based teaching sessions target ethical considerations to prepare students for responsible use of artificial intelligence in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[5]</a>.</p>
 <p class="section-brief-date">The picture as of June 23, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -23,6 +23,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42333051?fc=20260609215449&amp;ff=20260623121519&amp;v=2.20.0">Lowering the Barrier to Surgical Research: Can Artificial Intelligence (AI) Support Trainees?</a>
     <p class="news-card-summary">Peer-reviewed investigation examines how artificial intelligence can support surgical trainees in conducting research.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42334858?fc=20260609215449&amp;ff=20260623132825&amp;v=2.20.0">A Two-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT 5 and Gemini on the German M2 Medical Exam: Evaluation Study</a>
+    <p class="news-card-summary">Study reveals that large language models fail systematically on harder German medical exam questions despite high overall scores, requiring rescue protocols to improve performance.</p>
   </div>
 </div>
 <div class="news-card">
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">Is it time to introduce an artificial intelligence curriculum in undergraduate medical education? medical students&#x27; perspectives: a systematic review and meta-analysis</a>
     <p class="news-card-summary">Systematic review finds medical students recognize need for standardized artificial intelligence curriculum to address gap between enthusiasm and actual competence.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42314970?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">Real-Time CustomGPT Generated Feedback for Medical Students: A Simulation-Based Pilot Study</a>
-    <p class="news-card-summary">Pilot study assesses real-time CustomGPT-generated feedback for medical students in simulation-based training.</p>
   </div>
 </div>
 </div>
