@@ -7140,6 +7140,453 @@
    "title_hash": "5ae2b0c1af62c51f27616abdb5b80aeb",
    "first_seen": "2026-06-22T20:22:05.633887+00:00",
    "kept": false
+  },
+  {
+   "url": "https://status.claude.com/incidents/jbhf20wjmzrf",
+   "title_hash": "2c7984b95d51f71574e65c4b09923b52",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+   "title_hash": "250763f47e7f5815816d070cca31cf74",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/06/how-to-burst-the-ai-bubble-strike-at-its-roots",
+   "title_hash": "df8654e73a24f96da13261bbc0b70417",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42333282?fc=20260609215449&ff=20260623121519&v=2.20.0",
+   "title_hash": "fbdd7827eb1ad266a2c8c658d0bc753e",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42333051?fc=20260609215449&ff=20260623121519&v=2.20.0",
+   "title_hash": "5c81ecd15db57020dba401797e4f6fc2",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "Lowering the Barrier to Surgical Research: Can Artificial Intelligence (AI) Support Trainees?",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-23T10:00:00+00:00",
+   "summary": "Peer-reviewed investigation examines how artificial intelligence can support surgical trainees in conducting research.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20571",
+   "title_hash": "1b282c4c13a90f4745938a43e6639f61",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20572",
+   "title_hash": "f0b333f28ebdaadf57849d3b39a39090",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20632",
+   "title_hash": "e6a717a98dccd60311cd71db599d4444",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20650",
+   "title_hash": "0d5190e6e18666e2cc958cef29e177d7",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20691",
+   "title_hash": "37ba02297126f0286ef83e1fa8519e46",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20696",
+   "title_hash": "2a84bef94e2dbf9f53933ff162b09da3",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20740",
+   "title_hash": "273aa66ed229144bfbe426c452078348",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "VeriBound: PAC-Bayesian Generalization Bounds for Process Reward Models Trained with Formal Verification Tools",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-23T04:00:00+00:00",
+   "summary": "Theoretical framework establishes probabilistic generalization bounds for process reward models trained with formal verification tools.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20751",
+   "title_hash": "ff49f8466b8952ae863500edc5e0d88d",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20769",
+   "title_hash": "414d3a6936c4f0703629741d390e6d81",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "FirstPass: Grounding AI Scientific Judgment in Multi-Round Editorial Outcomes",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-23T04:00:00+00:00",
+   "summary": "Study evaluates AI systems for peer review against editorial outcomes, identifying three core failure modes in scientific judgment.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20770",
+   "title_hash": "7ef12004b78fe452cdb7e4c21ca3bc1a",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20873",
+   "title_hash": "45aff63bca74172cb8f31a8720471386",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20890",
+   "title_hash": "cc7d85f9e65d89d391f6069a7ba79e22",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20897",
+   "title_hash": "f8cf15ccff9053901f81546e5a00eab0",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "PeerCheck: Enhancing LLM-Generated Academic Reviews Towards Human-Level Quality",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-23T04:00:00+00:00",
+   "summary": "Preprint presents methods for improving language model generated academic peer reviews to approximate human-level quality.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20900",
+   "title_hash": "d097c3dc616614226087db8523b06ee0",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20911",
+   "title_hash": "ad37517df35758d97bcf390d7da83b74",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20929",
+   "title_hash": "1f555ababa1754e129e7978d075ab291",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20936",
+   "title_hash": "95f3e8fcde0312af266df7348039a184",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20946",
+   "title_hash": "7f2613887b4b17d3a894066fe386de68",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20954",
+   "title_hash": "0152c3489e2e8134a31388772dee3b40",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.20993",
+   "title_hash": "842a847976b4db18fdbebdcfb4defa46",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.21008",
+   "title_hash": "2445d7ef09125669223a728cb637e7cc",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.21048",
+   "title_hash": "36d3cb1ddc52073f31a764693c1bd9f7",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.21066",
+   "title_hash": "6f028644a8e6d573b3ff6730d5320867",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.21069",
+   "title_hash": "5314437421d25b20360935ce88bd82c5",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.21075",
+   "title_hash": "55c2909c567e61fe349805caad2351a3",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.16140",
+   "title_hash": "7998225aa4b16881899c094a3eb00818",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-23T02:01:25+00:00",
+   "summary": "VibeThinker, a 3-billion-parameter model, achieves reasoning performance exceeding Anthropic's Opus 4.5 using supervised fine-tuning and group relative policy optimization.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02926-6",
+   "title_hash": "a723a2624e7bc2f286cb608f769e9469",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "IVCM-Insight: automated interactive interpretation of in vivo confocal microscopy",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-23T00:00:00+00:00",
+   "summary": "Peer-reviewed study presents automated AI system for interpreting in vivo confocal microscopy images in clinical practice.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02927-5",
+   "title_hash": "0e5c57d70f5b043ab98ac4ba4621ca32",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "End to end AI system for surgical gesture sequence recognition and clinical outcome prediction",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-23T00:00:00+00:00",
+   "summary": "Peer-reviewed study presents end-to-end AI system for recognizing surgical gestures in video and predicting clinical outcomes from operative videos.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02913-x",
+   "title_hash": "aab4eee311f3479488f2551b179b3a2c",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-23T00:00:00+00:00",
+   "summary": "Peer-reviewed analysis uses unsupervised machine learning on 100,272 electronic health records to identify high-risk patient groups and comorbidities linked to premature aging.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04462-y",
+   "title_hash": "2a8d0f725d562ab932c3f363969cafa4",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+   "title_hash": "954bf50a0f0094fbbadf5c15e7b9e6f5",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion",
+   "title_hash": "63ec56a38eaefb4e388ce6ad7522169b",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "Prompt Injection as Role Confusion",
+   "source": "Simon Willison's weblog",
+   "published": "2026-06-22T23:59:53+00:00",
+   "summary": "Technical analysis explains prompt injection attacks as role confusion vulnerabilities in language model systems.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/22/porting-moebius",
+   "title_hash": "8524c88126d9cadc8ffdafca3750ee16",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/gm-installs-robots-at-flagship-ev-factory-after-laying-off-1300-workers",
+   "title_hash": "c2f3c86c782d8b9c9b11269e84cb8e87",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucwyes/deepseek_raises_74b_usd_at_60b_valuation",
+   "title_hash": "27f48b20ed4fffbebb4933acc6cbc39d",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e76547",
+   "title_hash": "aaeacfb967aaaac4e2f1849f9159e607",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86700",
+   "title_hash": "5e96b82bb653471da64b3f7039c4cd83",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "Leveraging Large Language Models to Integrate Clinical Knowledge and Machine Learning Predictions for Lymph Node Metastasis Prediction: Development of a Knowledge-Augmented Framework",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-22T21:00:27+00:00",
+   "summary": "Peer-reviewed study integrates large language models with machine learning to predict lymph node metastasis for cancer staging.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://asset.jmir.pub/assets/218a62fa81666c1f076f7883e734e08a.png"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88536",
+   "title_hash": "08d399ef926231b86a974143990c8409",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucokod/chinese_hackers_latest_masterpiece_with_nvidia",
+   "title_hash": "665cee1164fe7e1b725edb06a8cacbc7",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://hustvl.github.io/Moebius",
+   "title_hash": "5d7edf79cabad30cb5cdb7a26ca2efe2",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-22T13:53:02+00:00",
+   "summary": "Moebius is a 200-million-parameter open-weights image inpainting model achieving performance comparable to models ten times its size.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucknck/glm52_7tg_on_4x3090_192gb_on_budget_motherboard",
+   "title_hash": "c016bb212d7dad1165011ffff19c5e3b",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42331974?fc=20260609215449&ff=20260623121519&v=2.20.0",
+   "title_hash": "db548e8a74405c74818c65580c19f6d2",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02896-9",
+   "title_hash": "9883c223cfa3901742fee99b0d9bab73",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02783-3",
+   "title_hash": "afa34351b7e9fb392f122491afc733d3",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "Handling missing modalities in multimodal survival prediction for non-small cell lung cancer",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-22T00:00:00+00:00",
+   "summary": "Peer-reviewed study addresses technical challenge of missing data modalities in multimodal machine learning for lung cancer survival prediction.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://huggingface.co/blog/local-models-pr-triage",
+   "title_hash": "6a7e2fa93dd00ee3f92508af47e8242e",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uc3wg9/local_llm_inference_optimization_the_complete",
+   "title_hash": "45b3c02ee2ddbe26759cd755cde0457c",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions",
+   "title_hash": "337ab49a4f74e7b466c1ee1a030f3dd9",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://apertvs.ai/",
+   "title_hash": "6e9d8a28cb5cf581b17ebf3c56f51f78",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.marble.onl/posts/cancel_claude.html",
+   "title_hash": "81bcc4e5644b5432208beb27cc079df9",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://abcnews.com/US/tesla-allegedly-autopilot-mode-crashes-texas-house-woman/story?id=134062374",
+   "title_hash": "bee9fe47091775ccd7fdacedb1b35e4a",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=pDwfG5uDItE",
+   "title_hash": "2da5cb6357033f4717daa36b9c1cb900",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VBi_4cWpup8",
+   "title_hash": "11d40bbbd736ab4970693bc03637ce75",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qU5-komJ-GE",
+   "title_hash": "93282b68ccab580afbd9d52d5e8f13e9",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
+   "title_hash": "09ae03808a3613c9a5478dba43405dfb",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "When millions of AI agents meet",
+   "source": "Google DeepMind",
+   "published": "2026-06-23T15:48:06+00:00",
+   "summary": "Google DeepMind explores the emerging landscape of AI agents and their differences from traditional language models.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i3.ytimg.com/vi/V04bm-3d6EQ/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=k5jYwyhDMxA",
+   "title_hash": "3b7eb7a37210b087d9e02c0e94f9db56",
+   "first_seen": "2026-06-23T16:15:18.950219+00:00",
+   "kept": true,
+   "title": "5 AI Agent Terms You Need to Know",
+   "source": "IBM Technology",
+   "published": "2026-06-23T11:00:39+00:00",
+   "summary": "IBM Technology explains foundational concepts and terminology for understanding frontier AI agents and their capabilities.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/k5jYwyhDMxA/hqdefault.jpg"
   }
  ],
  "digests": [
@@ -7241,19 +7688,19 @@
  "last_digest_at": "2026-06-19T16:33:28.270097+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A new strategic framework proposes structured integration of data science and machine learning into undergraduate medical education and clinical training, shaping how competencies in these areas could be developed in future curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[1]</a>. Meanwhile, medical students have recognized a significant need for a standardized artificial intelligence curriculum, citing a gap between their enthusiasm and their actual abilities <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[13]</a>. Survey studies document professionals&#x27; awareness of artificial intelligence opportunities and challenges in emergency medicine across Sub-Saharan Africa <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328230?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[2]</a>, and researchers have implemented case-based teaching sessions to address ethical issues surrounding responsible deployment of artificial intelligence in clinical practice <a href=\"https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[3]</a>. Additionally, evaluation of large language models finds these tools capable of generating medical examination questions with quality comparable to human instructors <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[5]</a>.",
-   "hash": "027e4565aa812eb3",
-   "date": "June 22, 2026"
+   "text": "A strategic framework has been proposed to guide the integration of data science and machine learning into undergraduate medical education, advocating for structured curricular development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[2]</a>. Medical students express an ongoing need for standardized artificial intelligence training, highlighting a disconnect between enthusiasm for AI and readiness to use these tools effectively <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[14]</a>. Recent peer-reviewed research explores how artificial intelligence can support surgical trainees in research activities, addressing practical barriers in surgical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42333051?fc=20260609215449&amp;ff=20260623121519&amp;v=2.20.0\">[1]</a>. Validated faculty competency models further emphasize the knowledge and skills required to teach simulation education with generative AI, reflecting student perspectives on instructor preparedness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[8]</a>.",
+   "hash": "7bb48bfdcba31474",
+   "date": "June 23, 2026"
   },
   "clinical_practice": {
-   "text": "Artificial intelligence approaches are facilitating early detection and intervention across several clinical domains, such as the deployment of multimodal large language models for early warning and diagnosis in chronic ocular graft-versus-host disease following stem cell transplantation <a href=\"https://www.nature.com/articles/s41746-026-02916-8\">[1]</a> and AI-enhanced diagnostics that enabled successful heart transplantation by identifying cardiac dysfunction <a href=\"https://www.nature.com/articles/s41591-026-04454-y\">[3]</a>. In laboratory and imaging settings, expert-level vision-language models are supporting multitask diagnostic analyses of morphology samples <a href=\"https://www.nature.com/articles/s41746-026-02905-x\">[2]</a> and allowing voice-controlled ultrasound imaging with integrated large language models to strengthen clinical reporting workflows <a href=\"https://www.nature.com/articles/s41746-026-02924-8\">[5]</a>. These developments illustrate rapid integration of vision-language and multimodal models in critical diagnostic and decision-support applications across clinical practice.",
-   "hash": "c5aec0749c8db65b",
-   "date": "June 22, 2026"
+   "text": "Unsupervised machine learning applied to electronic health records has identified specific high-risk patient groups and comorbidities associated with premature aging, offering new clinical insights for risk stratification <a href=\"https://www.nature.com/articles/s41746-026-02913-x\">[3]</a>. Advances in surgical gesture recognition using end-to-end artificial intelligence systems are enabling prediction of clinical outcomes directly from operative videos, supporting both intraoperative assessment and postoperative management <a href=\"https://www.nature.com/articles/s41746-026-02927-5\">[2]</a>. Integrated approaches that leverage large language models with machine learning predictions are now aiding the prediction of lymph node metastasis, improving decision support for cancer staging <a href=\"https://medinform.jmir.org/2026/1/e86700\">[4]</a>. Automated interpretation of in vivo confocal microscopy images with peer-reviewed AI systems is streamlining diagnostic workflows in clinical practice <a href=\"https://www.nature.com/articles/s41746-026-02926-6\">[1]</a>.",
+   "hash": "5f4ee6348261e8e8",
+   "date": "June 23, 2026"
   },
   "general_ai": {
-   "text": "Faculty and students may want to note DeepSeek-V4’s emphasis on handling million-token contexts efficiently, which could affect future applications requiring extensive data processing <a href=\"https://arxiv.org/abs/2606.19348\">[1]</a>. At the same time, GLM-5.2 has been released with open weights and strong performance claims, especially in text generation and long-horizon reasoning, suggesting new opportunities for academic projects and benchmarking <a href=\"https://simonwillison.net/2026/Jun/17/glm-52\">[8]</a> <a href=\"https://huggingface.co/blog/zai-org/glm-52-blog\">[10]</a>. Security remains a concern as MosaicLeaks shows that research agents can leak sensitive training data during queries, drawing attention to risks in deploying AI systems for institutional use <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[4]</a>. Meanwhile, local model deployment has become increasingly practical, with improvements in inference speed and open-weight model availability, shaping how users interact with AI on-campus <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\">[12]</a>.",
-   "hash": "ce3563c39f47bbcf",
-   "date": "June 21, 2026"
+   "text": "VibeThinker, a 3-billion-parameter model, surpasses Anthropic&#x27;s Opus 4.5 in reasoning benchmarks by incorporating supervised fine-tuning and group relative policy optimization, reflecting notable progress in affordable model architectures <a href=\"https://arxiv.org/abs/2606.16140\">[4]</a>. At the same time, research demonstrates persistent challenges in reliability and consistency for large language models used as judges, with agreement and bias issues identified through systematic evaluation <a href=\"https://arxiv.org/abs/2606.19544\">[8]</a>. Security remains a concern as studies show research agents vulnerable to targeted queries capable of leaking sensitive training data, underscoring risks in deployed systems <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[10]</a>. Efforts to enhance academic review quality see methods developed that improve language model-generated peer feedback, aiming for human-level standards <a href=\"https://arxiv.org/abs/2606.20897\">[3]</a>.",
+   "hash": "917713beaba1ffad",
+   "date": "June 23, 2026"
   }
  }
 }

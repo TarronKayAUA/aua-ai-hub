@@ -13,11 +13,53 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Faculty and students may want to note DeepSeek-V4’s emphasis on handling million-token contexts efficiently, which could affect future applications requiring extensive data processing <a href="https://arxiv.org/abs/2606.19348">[1]</a>. At the same time, GLM-5.2 has been released with open weights and strong performance claims, especially in text generation and long-horizon reasoning, suggesting new opportunities for academic projects and benchmarking <a href="https://simonwillison.net/2026/Jun/17/glm-52">[8]</a> <a href="https://huggingface.co/blog/zai-org/glm-52-blog">[10]</a>. Security remains a concern as MosaicLeaks shows that research agents can leak sensitive training data during queries, drawing attention to risks in deploying AI systems for institutional use <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[4]</a>. Meanwhile, local model deployment has become increasingly practical, with improvements in inference speed and open-weight model availability, shaping how users interact with AI on-campus <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">[12]</a>.</p>
-<p class="section-brief-date">The picture as of June 21, 2026; numbered links go to the items below.</p>
+<p>VibeThinker, a 3-billion-parameter model, surpasses Anthropic&#x27;s Opus 4.5 in reasoning benchmarks by incorporating supervised fine-tuning and group relative policy optimization, reflecting notable progress in affordable model architectures <a href="https://arxiv.org/abs/2606.16140">[4]</a>. At the same time, research demonstrates persistent challenges in reliability and consistency for large language models used as judges, with agreement and bias issues identified through systematic evaluation <a href="https://arxiv.org/abs/2606.19544">[8]</a>. Security remains a concern as studies show research agents vulnerable to targeted queries capable of leaking sensitive training data, underscoring risks in deployed systems <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[10]</a>. Efforts to enhance academic review quality see methods developed that improve language model-generated peer feedback, aiming for human-level standards <a href="https://arxiv.org/abs/2606.20897">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 23, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.20740">VeriBound: PAC-Bayesian Generalization Bounds for Process Reward Models Trained with Formal Verification Tools</a>
+    <p class="news-card-summary">Theoretical framework establishes probabilistic generalization bounds for process reward models trained with formal verification tools.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.20769">FirstPass: Grounding AI Scientific Judgment in Multi-Round Editorial Outcomes</a>
+    <p class="news-card-summary">Study evaluates AI systems for peer review against editorial outcomes, identifying three core failure modes in scientific judgment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.20897">PeerCheck: Enhancing LLM-Generated Academic Reviews Towards Human-Level Quality</a>
+    <p class="news-card-summary">Preprint presents methods for improving language model generated academic peer reviews to approximate human-level quality.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.16140">VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO</a>
+    <p class="news-card-summary">VibeThinker, a 3-billion-parameter model, achieves reasoning performance exceeding Anthropic&#x27;s Opus 4.5 using supervised fine-tuning and group relative policy optimization.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion">Prompt Injection as Role Confusion</a>
+    <p class="news-card-summary">Technical analysis explains prompt injection attacks as role confusion vulnerabilities in language model systems.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://hustvl.github.io/Moebius">Moebius: 0.2B image inpainting model with 10B-level performance</a>
+    <p class="news-card-summary">Moebius is a 200-million-parameter open-weights image inpainting model achieving performance comparable to models ten times its size.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
@@ -83,53 +125,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://arxiv.org/abs/2606.18709">LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment</a>
     <p class="news-card-summary">Study finds large language models struggle to measure item discrimination, a key psychometric property for assessing student reading comprehension differences.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/17/glm-52">GLM-5.2 is probably the most powerful text-only open weights LLM</a>
-    <p class="news-card-summary">Chinese AI lab Z.ai released GLM-5.2, an open-weights large language model, to coding plan subscribers with reported strong text-generation performance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/glm-5.2-pelican-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training">AI coding agents taught robots how to install GPUs and cut zip ties</a>
-    <p class="news-card-summary">Nvidia&#x27;s robot self-improvement program used teams of artificial intelligence coding agents to teach robots hardware installation tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/Screenshot-2026-06-17-at-2.40.06-PM-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/zai-org/glm-52-blog">GLM-5.2: Built for Long-Horizon Tasks</a>
-    <p class="news-card-summary">GLM-5.2, a new open-weights model from Alibaba, achieves leading performance on benchmarks and is designed for long-horizon reasoning tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/67066ea38a79951d7b8d4195/iaTHtYOBgeY0C3Xx3vymr.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk">Anthropic &quot;pauses&quot; token-based billing for its Claude Agent SDK</a>
-    <p class="news-card-summary">Anthropic paused planned token-based billing changes for Claude Agent SDK that would have increased costs for power users.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/02/claude37_header-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u7klvv/mistral_new_family_of_openweight_models_july">Mistral - New family of open-weight models @ July</a>
-    <p class="news-card-summary">Mistral announced a new family of open-weight models planned for July release.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/kxbwrfnglo7h1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=2f83a6b2fbc675be4790406f3c441d84e8b289b4" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 16, 2026</span></div>
-    <a class="news-card-title" href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now">Running local models is good now</a>
-    <p class="news-card-summary">Article examines improvements in practical local model deployment, inference speed, and availability of capable open-weight models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://vickiboykis.com/images/refactor_gemma.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

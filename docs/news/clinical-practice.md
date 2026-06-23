@@ -13,11 +13,40 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Artificial intelligence approaches are facilitating early detection and intervention across several clinical domains, such as the deployment of multimodal large language models for early warning and diagnosis in chronic ocular graft-versus-host disease following stem cell transplantation <a href="https://www.nature.com/articles/s41746-026-02916-8">[1]</a> and AI-enhanced diagnostics that enabled successful heart transplantation by identifying cardiac dysfunction <a href="https://www.nature.com/articles/s41591-026-04454-y">[3]</a>. In laboratory and imaging settings, expert-level vision-language models are supporting multitask diagnostic analyses of morphology samples <a href="https://www.nature.com/articles/s41746-026-02905-x">[2]</a> and allowing voice-controlled ultrasound imaging with integrated large language models to strengthen clinical reporting workflows <a href="https://www.nature.com/articles/s41746-026-02924-8">[5]</a>. These developments illustrate rapid integration of vision-language and multimodal models in critical diagnostic and decision-support applications across clinical practice.</p>
-<p class="section-brief-date">The picture as of June 22, 2026; numbered links go to the items below.</p>
+<p>Unsupervised machine learning applied to electronic health records has identified specific high-risk patient groups and comorbidities associated with premature aging, offering new clinical insights for risk stratification <a href="https://www.nature.com/articles/s41746-026-02913-x">[3]</a>. Advances in surgical gesture recognition using end-to-end artificial intelligence systems are enabling prediction of clinical outcomes directly from operative videos, supporting both intraoperative assessment and postoperative management <a href="https://www.nature.com/articles/s41746-026-02927-5">[2]</a>. Integrated approaches that leverage large language models with machine learning predictions are now aiding the prediction of lymph node metastasis, improving decision support for cancer staging <a href="https://medinform.jmir.org/2026/1/e86700">[4]</a>. Automated interpretation of in vivo confocal microscopy images with peer-reviewed AI systems is streamlining diagnostic workflows in clinical practice <a href="https://www.nature.com/articles/s41746-026-02926-6">[1]</a>.</p>
+<p class="section-brief-date">The picture as of June 23, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02926-6">IVCM-Insight: automated interactive interpretation of in vivo confocal microscopy</a>
+    <p class="news-card-summary">Peer-reviewed study presents automated AI system for interpreting in vivo confocal microscopy images in clinical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02927-5">End to end AI system for surgical gesture sequence recognition and clinical outcome prediction</a>
+    <p class="news-card-summary">Peer-reviewed study presents end-to-end AI system for recognizing surgical gestures in video and predicting clinical outcomes from operative videos.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02913-x">Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging</a>
+    <p class="news-card-summary">Peer-reviewed analysis uses unsupervised machine learning on 100,272 electronic health records to identify high-risk patient groups and comorbidities linked to premature aging.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86700">Leveraging Large Language Models to Integrate Clinical Knowledge and Machine Learning Predictions for Lymph Node Metastasis Prediction: Development of a Knowledge-Augmented Framework</a>
+    <p class="news-card-summary">Peer-reviewed study integrates large language models with machine learning to predict lymph node metastasis for cancer staging.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/218a62fa81666c1f076f7883e734e08a.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
@@ -37,6 +66,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04454-y">A case of artificial intelligence-enhanced diagnostics leading to heart transplantation</a>
     <p class="news-card-summary">Case report describes artificial intelligence-enhanced diagnostic approach that identified cardiac dysfunction and enabled successful heart transplantation in a patient.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02783-3">Handling missing modalities in multimodal survival prediction for non-small cell lung cancer</a>
+    <p class="news-card-summary">Peer-reviewed study addresses technical challenge of missing data modalities in multimodal machine learning for lung cancer survival prediction.</p>
   </div>
 </div>
 <div class="news-card">
@@ -88,43 +124,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Real-time sepsis prediction model using vital signs and multiscale temporal-aware contrastive learning, developed and validated for clinical deployment.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/677a3087d1aecb49d42a61aa982131e0.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87227">Differentiating Ischemic From Nonischemic T-Wave Inversion Using a Multimodal Vision-Language Model With Reinforcement Learning (ECG-R1): Development and Validation Study</a>
-    <p class="news-card-summary">Vision-language model with reinforcement learning differentiates ischemic from nonischemic T-wave inversion on electrocardiograms.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/868464737a74765c41328b0e83b67b6b.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02509-5">Clinical large language model centered on electronic medical records</a>
-    <p class="news-card-summary">Large language model trained on electronic medical records for clinical applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02912-y">A scoping review of human-AI collaboration patterns and task divisions in healthcare applications</a>
-    <p class="news-card-summary">Scoping review of human-AI collaboration patterns and task divisions across healthcare applications, published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77943">Performance of Zero-Shot Classifiers for Categorizing RCT Abstracts by Intervention Type: Validation Study</a>
-    <p class="news-card-summary">Zero-shot language model classifiers validated for categorizing randomized controlled trial abstracts by intervention type.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6f8388d5d0ea3298643a34812798503f.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93054">Evaluation of Five Large Language Models for Parental Education in Pediatric Anesthesia: Reliability and Readability Study</a>
-    <p class="news-card-summary">Five large language models evaluated for reliability and readability in generating parental education materials for pediatric anesthesia.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/19437c759dc1cc8ac08d1e1262e71a35.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

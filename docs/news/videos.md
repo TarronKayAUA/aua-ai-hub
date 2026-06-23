@@ -24,6 +24,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=V04bm-3d6EQ" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/V04bm-3d6EQ/hqdefault.jpg" alt="Video: When millions of AI agents meet" loading="lazy">
+  <span class="video-card-title">When millions of AI agents meet</span>
+  <span class="video-card-meta">Google DeepMind, June 23, 2026</span>
+  <span class="video-card-desc">Google DeepMind explores the emerging landscape of AI agents and their differences from traditional language models.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=k5jYwyhDMxA" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/k5jYwyhDMxA/hqdefault.jpg" alt="Video: 5 AI Agent Terms You Need to Know" loading="lazy">
+  <span class="video-card-title">5 AI Agent Terms You Need to Know</span>
+  <span class="video-card-meta">IBM Technology, June 23, 2026</span>
+  <span class="video-card-desc">IBM Technology explains foundational concepts and terminology for understanding frontier AI agents and their capabilities.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=mG4SmhWyeFA" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/mG4SmhWyeFA/hqdefault.jpg" alt="Video: DeepSeek Just Solved AI&#x27;s Billion Dollar Problem" loading="lazy">
   <span class="video-card-title">DeepSeek Just Solved AI&#x27;s Billion Dollar Problem</span>
@@ -131,18 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI That’s Too Dangerous For You? What we learned from S.A.T.A.N</span>
   <span class="video-card-meta">IBM Technology, June 11, 2026</span>
   <span class="video-card-desc">This video discusses AI uncovering cybersecurity vulnerabilities, focusing on lessons learned from the S.A.T.A.N project and implications for AI safety.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=h001l-XUJJE" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/h001l-XUJJE/hqdefault.jpg" alt="Video: Claude Fable 5 Ultimate Test - Is THIS The Closest Thing to AGI?" loading="lazy">
-  <span class="video-card-title">Claude Fable 5 Ultimate Test - Is THIS The Closest Thing to AGI?</span>
-  <span class="video-card-meta">Bijan Bowen, June 10, 2026</span>
-  <span class="video-card-desc">This video tests Claude Fable 5&#x27;s artificial general intelligence capabilities with multimodal coding and explores its limits and application on Windows XP.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=haK1KoQWm18" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/haK1KoQWm18/hqdefault.jpg" alt="Video: Claude Fable 5 - Full 319 page Breakdown" loading="lazy">
-  <span class="video-card-title">Claude Fable 5 - Full 319 page Breakdown</span>
-  <span class="video-card-meta">AI Explained, June 10, 2026</span>
-  <span class="video-card-desc">This video provides a detailed 319-page analysis of Claude Fable 5, discussing its capabilities and characteristics beyond the initial demos.</span>
 </a>
 </div>
 
