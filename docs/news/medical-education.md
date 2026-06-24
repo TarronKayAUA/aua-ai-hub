@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A strategic framework for integrating data science and machine learning into undergraduate medical education provides structured guidance for curriculum development and upskilling clinical trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[3]</a>. Medical students recognize the need for a standardized artificial intelligence curriculum, noting a disconnect between widespread enthusiasm and demonstrable competence <a href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">[15]</a>. Studies have explored whether large language models can generate exam questions with quality comparable to human instructors, highlighting both potential and limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[7]</a>. Faculty competency modeling for simulation-based education integrated with generative AI identifies required teaching skills and knowledge from the medical student perspective <a href="https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[9]</a>. Case-based teaching sessions target ethical considerations to prepare students for responsible use of artificial intelligence in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[5]</a>.</p>
-<p class="section-brief-date">The picture as of June 23, 2026; numbered links go to the items below.</p>
+<p>Artificial intelligence is now capable of quantifying clinical skills with accuracy comparable to expert human assessors, indicating a potential shift in how student performance can be measured and standardized <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[1]</a>. Integrating AI education into healthcare curricula has demonstrated improvements in both student attitudes and knowledge, suggesting that targeted curriculum interventions may enhance readiness for AI-enabled clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[3]</a>. Continuing professional development courses for educators have also been shown to improve perceptions and competence regarding AI tools, which may support broader adoption in faculty training <a href="https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[2]</a>. Meanwhile, a structured framework has been proposed for embedding data science and machine learning competencies in undergraduate medical education, offering a roadmap for systematic curricular integration <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[7]</a>.</p>
+<p class="section-brief-date">The picture as of June 24, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Can artificial intelligence outperform experts in assessing clinical skills? Evidence from a comparative experiment</a>
+    <p class="news-card-summary">Artificial intelligence can quantify technical skills in clinical assessments as effectively as human expert evaluation in a comparative study.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Impact of a Practical, Hands-On, Continuing Professional Development Course About AI in Health Care Professions Education on the Perceptions and Behaviors of Health Care Educators: Qualitative Case Study</a>
+    <p class="news-card-summary">A six-week continuing professional development course on artificial intelligence in healthcare improved educator perceptions of AI tools and competence.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Medical students&#x27; knowledge and attitude towards using artificial intelligence in medical education and practice: a pre-post study</a>
+    <p class="news-card-summary">A pre-post study shows a curriculum intervention improved medical students&#x27; knowledge and attitudes toward artificial intelligence in healthcare.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
@@ -30,6 +51,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42334858?fc=20260609215449&amp;ff=20260623132825&amp;v=2.20.0">A Two-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT 5 and Gemini on the German M2 Medical Exam: Evaluation Study</a>
     <p class="news-card-summary">Study reveals that large language models fail systematically on harder German medical exam questions despite high overall scores, requiring rescue protocols to improve performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42335861?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Large language models exhibit greater diagnostic anchoring than physicians in a forced-choice vignette study</a>
+    <p class="news-card-summary">Large language models exhibit significantly greater diagnostic anchoring bias than physicians in a forced-choice clinical vignette study.</p>
   </div>
 </div>
 <div class="news-card">
@@ -93,34 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">AI in Medicine: Uncovering the Educational Pulse Through Students&#x27; Perspective</a>
     <p class="news-card-summary">Study explores medical students&#x27; perspectives on artificial intelligence in healthcare delivery and medical training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42320614?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Clinical Artificial Intelligence Competence in Obstetrics and Gynecology: Patient Safety, Physician Accountability, and Responsible Use</a>
-    <p class="news-card-summary">Peer-reviewed analysis of clinical AI competence requirements in obstetrics and gynecology, addressing patient safety, physician accountability, and responsible AI use.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42311928?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">Evaluation of Large Language Models in Infectious Disease Decision-Making: From Examination to Clinical Practice</a>
-    <p class="news-card-summary">Large language models show substantial potential in infectious disease education and decision support, with ability to handle both exam and clinical scenarios.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42310703?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">Evaluating the Performance of GPT-4.0 in Generating and Refining Multiple-Choice Questions for Dental Education</a>
-    <p class="news-card-summary">GPT-4.0 demonstrated capability to generate and refine multiple-choice questions for dental education, outperforming some baseline methods.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">Is it time to introduce an artificial intelligence curriculum in undergraduate medical education? medical students&#x27; perspectives: a systematic review and meta-analysis</a>
-    <p class="news-card-summary">Systematic review finds medical students recognize need for standardized artificial intelligence curriculum to address gap between enthusiasm and actual competence.</p>
   </div>
 </div>
 </div>

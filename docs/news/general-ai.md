@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>VibeThinker, a 3-billion-parameter model, surpasses Anthropic&#x27;s Opus 4.5 in reasoning benchmarks by incorporating supervised fine-tuning and group relative policy optimization, reflecting notable progress in affordable model architectures <a href="https://arxiv.org/abs/2606.16140">[4]</a>. At the same time, research demonstrates persistent challenges in reliability and consistency for large language models used as judges, with agreement and bias issues identified through systematic evaluation <a href="https://arxiv.org/abs/2606.19544">[8]</a>. Security remains a concern as studies show research agents vulnerable to targeted queries capable of leaking sensitive training data, underscoring risks in deployed systems <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[10]</a>. Efforts to enhance academic review quality see methods developed that improve language model-generated peer feedback, aiming for human-level standards <a href="https://arxiv.org/abs/2606.20897">[3]</a>.</p>
-<p class="section-brief-date">The picture as of June 23, 2026; numbered links go to the items below.</p>
+<p>MedBench v5 introduces a new benchmark for clinical multimodal models, addressing critical issues of process transparency and hallucination in medical artificial intelligence evaluation <a href="https://arxiv.org/abs/2606.24155">[1]</a>. Meanwhile, a large-scale assessment has identified reliability and bias concerns in LLM-as-a-Judge models, suggesting limitations for automated scientific adjudication <a href="https://arxiv.org/abs/2606.19544">[9]</a>. Another study finds that AI systems used for peer review can diverge from human editorial decisions, with three core failure modes characterizing current scientific judgment gaps <a href="https://arxiv.org/abs/2606.20769">[3]</a>. Adding to these risks, research highlights that deployed research agents can leak sensitive training data when probed, underlining persistent security vulnerabilities in language model deployments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[11]</a>.</p>
+<p class="section-brief-date">The picture as of June 24, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.24155">MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark for Clinical Multimodal Models</a>
+    <p class="news-card-summary">MedBench v5 introduces a process-oriented benchmark for clinical multimodal models that addresses hallucination and transparency in medical AI evaluation.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.18372">Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identification</a>
     <p class="news-card-summary">Fully local artificial intelligence cascade de-identifies educational dialogue without sending data to external servers, balancing privacy and utility.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18709">LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment</a>
-    <p class="news-card-summary">Study finds large language models struggle to measure item discrimination, a key psychometric property for assessing student reading comprehension differences.</p>
   </div>
 </div>
 </div>

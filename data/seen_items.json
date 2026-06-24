@@ -7599,6 +7599,463 @@
    "summary": "Study reveals that large language models fail systematically on harder German medical exam questions despite high overall scores, requiring rescue protocols to improve performance.",
    "category": "medical_education",
    "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "ca3208923c3723325c765be2c1941467",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Can artificial intelligence outperform experts in assessing clinical skills? Evidence from a comparative experiment",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-24T10:00:00+00:00",
+   "summary": "Artificial intelligence can quantify technical skills in clinical assessments as effectively as human expert evaluation in a comparative study.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42338874?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "b82a8b23e799e7b8aaac6ba1fdd0ce04",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42337993?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "3ac9822c03a72a41d07797b3e828986f",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "e1b594e172a936ade4477188f4146e0a",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Impact of a Practical, Hands-On, Continuing Professional Development Course About AI in Health Care Professions Education on the Perceptions and Behaviors of Health Care Educators: Qualitative Case Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-24T10:00:00+00:00",
+   "summary": "A six-week continuing professional development course on artificial intelligence in healthcare improved educator perceptions of AI tools and competence.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "6b74987bf2217ec424fdd3f10f74501e",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Medical students' knowledge and attitude towards using artificial intelligence in medical education and practice: a pre-post study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-24T10:00:00+00:00",
+   "summary": "A pre-post study shows a curriculum intervention improved medical students' knowledge and attitudes toward artificial intelligence in healthcare.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ue51uk/unlimitedocr_is_now_on_modelscope_a_33b",
+   "title_hash": "b0a194328cf63a31c42705a85c5adb7e",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23693",
+   "title_hash": "8096ed28852c69ab6d6662a8b26b5eb0",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23694",
+   "title_hash": "304d42c30d62467bdb7eecf95be73382",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23695",
+   "title_hash": "b243dbe57790b9aaa0029b278b94e756",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23700",
+   "title_hash": "fabf47d01ae3169f0073e15c5d0433e3",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23701",
+   "title_hash": "01585244469a4e22a32637d5e5141ff6",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23881",
+   "title_hash": "103f56c7412fd129061a26624b88ff9c",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23884",
+   "title_hash": "e4b4e9b3bc0be75badf1d11ff5d90f97",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23915",
+   "title_hash": "8f9250b8a807fc2d82fa7ee48fa37048",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23937",
+   "title_hash": "3634b731945c7f19b66817fcb7de63cf",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23943",
+   "title_hash": "60dc68a98043d4081e445fcba8600020",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23948",
+   "title_hash": "a658149176b756ab1cf1c302ba9fc423",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23959",
+   "title_hash": "fe425925582893b67ca770940895181e",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23989",
+   "title_hash": "8e3166418111f4bff2572130111c0d52",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.23992",
+   "title_hash": "58e6ef7c8085d22a0a0b27a65ea19b00",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24004",
+   "title_hash": "799b2acab9d67fc4e71b9afb11802c8c",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24040",
+   "title_hash": "127fbafa960449843ccdfa7ac1249a32",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24055",
+   "title_hash": "6e6f37ce81f83a719e3f59b9e9e5fc79",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24063",
+   "title_hash": "89efda2c45f1834fdcc836606dddb58a",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24077",
+   "title_hash": "2090b18dc07fb4fd07417df3952791e3",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24083",
+   "title_hash": "3ab47d7d3623f0e8da99cba5863fe56b",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24093",
+   "title_hash": "6356a27e4f78b7d3dc58388ee18b59d7",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24102",
+   "title_hash": "aab505e317d9cfeaffb4ae43810b4c04",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24151",
+   "title_hash": "a8fb4f01ead48302490a75177e46a08c",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24155",
+   "title_hash": "b3906e1fa8ba0bad199f3108c53f23cf",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark for Clinical Multimodal Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-24T04:00:00+00:00",
+   "summary": "MedBench v5 introduces a process-oriented benchmark for clinical multimodal models that addresses hallucination and transparency in medical AI evaluation.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24162",
+   "title_hash": "2e36845c65213de9888782bf4126c282",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.24597",
+   "title_hash": "0a7f2197758b473988c2a1f3e9515c09",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02908-8",
+   "title_hash": "a2a9c2fb7fee3858e308f7a8e26d1f10",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02780-6",
+   "title_hash": "f9c1d0256df6d1b2fe6180599e15d646",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Reconstruction from multi-planar MRI with foundation models for uterine fibroid analysis",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-24T00:00:00+00:00",
+   "summary": "Foundation models enable multi-planar MRI reconstruction for analysis of uterine fibroids, advancing imaging analysis with minimal manual segmentation.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02906-w",
+   "title_hash": "fc142cfbf7fe04097efc44fa75a59f4e",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Advanced machine learning-based screening for primary aldosteronism with plasma steroids, potassium, and renin",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-24T00:00:00+00:00",
+   "summary": "Machine learning screening using plasma steroids, potassium, and renin improves detection of primary aldosteronism compared to standard approaches.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04480-w",
+   "title_hash": "9222b6d0910f6a5a8917dabbb2108f87",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04477-5",
+   "title_hash": "4b69be372bcb13cc071beea9ccba782a",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Automated reanalysis of genomic data for rare disease diagnostics at scale",
+   "source": "Nature Medicine",
+   "published": "2026-06-24T00:00:00+00:00",
+   "summary": "Talos, an automated reanalysis tool, enables genomic data reinterpretation at scale to improve rare disease diagnostic yields over time.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/23/datasette",
+   "title_hash": "d72ba69dcb3f580e1d54e99b7dbf14f1",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e84980",
+   "title_hash": "dd3103579ac78a20f39ddda4be9b0c02",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e81317",
+   "title_hash": "11e16603428315e920603991f6923da2",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e81570",
+   "title_hash": "7f83405e67f9f1af06afd11be6318567",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e83092",
+   "title_hash": "a5b4a7792ea50091617d43187df3a486",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments",
+   "title_hash": "8e499ae83e311a1594c1995f8cf47c7b",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e85365",
+   "title_hash": "0318ce279c062ff8d8975af026ad95ab",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e84104",
+   "title_hash": "6cd795421ae442c1102467bb9b0b8106",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Ambient AI Scribe Implementation in an Ambulatory Setting in a Single Medical Group: Prospective Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-06-23T19:00:03+00:00",
+   "summary": "Implementation of ambient artificial intelligence scribes in ambulatory care reduced electronic health record documentation burden on physicians.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://asset.jmir.pub/assets/2021430632be32f7af988bd0e29fbf54.png"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/23/opfs-pyodide",
+   "title_hash": "5794ed0712865883fbc40aa65beec2a3",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1udo9il/not_ironclad_confirmation_but",
+   "title_hash": "21c2134b4c5e395489881182b4cef4a7",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://swipe.futo.tech/",
+   "title_hash": "74a395e5be77b8a70803f78bd83b50f2",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1udkxde/7_chinese_companies_are_already_shipping",
+   "title_hash": "aa13629c1ff11ea61064df304a2fc3e0",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42337184?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "d08376cf83cac123f93ff83d0c2e22bd",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42336217?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "a6344b21ea0ed5b7bc97ab7af7877762",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42335861?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "98a90aaebfd07ae31247bb3cceaa6cd6",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Large language models exhibit greater diagnostic anchoring than physicians in a forced-choice vignette study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-23T10:00:00+00:00",
+   "summary": "Large language models exhibit significantly greater diagnostic anchoring bias than physicians in a forced-choice clinical vignette study.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42335803?fc=20260609215449&ff=20260624113940&v=2.20.0",
+   "title_hash": "b7677feef760a3348725d0beda6761ea",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02871-4",
+   "title_hash": "7c0e78e1c66a0f6b68586b873d4b0969",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02923-9",
+   "title_hash": "8c946d03bae57f2e893486b64965caea",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": true,
+   "title": "Video frame interpolation for coronary angiography using latent flow matching",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-23T00:00:00+00:00",
+   "summary": "Latent flow matching enables video frame interpolation for coronary angiography, improving temporal resolution in cardiac imaging sequences.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://huggingface.co/blog/cross-origin-storage",
+   "title_hash": "931019f23df09da9a864128413a30736",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://blog.racket-lang.org/2026/06/rhombus-v1.0.html",
+   "title_hash": "0c85980d48f9871ff8f929d0959d43f4",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ub693e/six_months_ago_i_turned_down_8165_for_an_rtx_6000",
+   "title_hash": "e65033a8f4c1d2460fa9e0632afaa225",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ua5b16/the_economics_of_ai_are_starting_to_favor_open",
+   "title_hash": "ee8427a0a52248cd2ebb67bc30b2ba59",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial",
+   "title_hash": "a7a0ba0bdbd434ecde81f5b9021177d3",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u8ikje/psa_unslothglm52gguf_is_uploading",
+   "title_hash": "3484351233b496e227d95010c0c57425",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=2lmBj_XQq0I",
+   "title_hash": "b4474d73d943e7cbe022649da5da9366",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SIGNgo8NzE8",
+   "title_hash": "75506e2f9b4fb010e91dd4f71b6ea407",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1U8dJ94QFNc",
+   "title_hash": "4ed814af010d1ef58437bbd73e10123c",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=10XtOi4Lbes",
+   "title_hash": "ed3a6a44d43660fdeeee2f562ba98f5b",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Right-Way-to-Deal-With-AI-Data-Centers-e3l6l4o",
+   "title_hash": "cc82f2ce3a094771ad085136d28850bd",
+   "first_seen": "2026-06-24T15:39:40.284516+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -7700,19 +8157,19 @@
  "last_digest_at": "2026-06-19T16:33:28.270097+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A strategic framework for integrating data science and machine learning into undergraduate medical education provides structured guidance for curriculum development and upskilling clinical trainees <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[3]</a>. Medical students recognize the need for a standardized artificial intelligence curriculum, noting a disconnect between widespread enthusiasm and demonstrable competence <a href=\"https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">[15]</a>. Studies have explored whether large language models can generate exam questions with quality comparable to human instructors, highlighting both potential and limitations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323886?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[7]</a>. Faculty competency modeling for simulation-based education integrated with generative AI identifies required teaching skills and knowledge from the medical student perspective <a href=\"https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[9]</a>. Case-based teaching sessions target ethical considerations to prepare students for responsible use of artificial intelligence in clinical practice <a href=\"https://pubmed.ncbi.nlm.nih.gov/42326897?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[5]</a>.",
-   "hash": "69014240f835604d",
-   "date": "June 23, 2026"
+   "text": "Artificial intelligence is now capable of quantifying clinical skills with accuracy comparable to expert human assessors, indicating a potential shift in how student performance can be measured and standardized <a href=\"https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0\">[1]</a>. Integrating AI education into healthcare curricula has demonstrated improvements in both student attitudes and knowledge, suggesting that targeted curriculum interventions may enhance readiness for AI-enabled clinical practice <a href=\"https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0\">[3]</a>. Continuing professional development courses for educators have also been shown to improve perceptions and competence regarding AI tools, which may support broader adoption in faculty training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0\">[2]</a>. Meanwhile, a structured framework has been proposed for embedding data science and machine learning competencies in undergraduate medical education, offering a roadmap for systematic curricular integration <a href=\"https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0\">[7]</a>.",
+   "hash": "2b33e4cd90bdd32c",
+   "date": "June 24, 2026"
   },
   "clinical_practice": {
-   "text": "Unsupervised machine learning applied to electronic health records has identified specific high-risk patient groups and comorbidities associated with premature aging, offering new clinical insights for risk stratification <a href=\"https://www.nature.com/articles/s41746-026-02913-x\">[3]</a>. Advances in surgical gesture recognition using end-to-end artificial intelligence systems are enabling prediction of clinical outcomes directly from operative videos, supporting both intraoperative assessment and postoperative management <a href=\"https://www.nature.com/articles/s41746-026-02927-5\">[2]</a>. Integrated approaches that leverage large language models with machine learning predictions are now aiding the prediction of lymph node metastasis, improving decision support for cancer staging <a href=\"https://medinform.jmir.org/2026/1/e86700\">[4]</a>. Automated interpretation of in vivo confocal microscopy images with peer-reviewed AI systems is streamlining diagnostic workflows in clinical practice <a href=\"https://www.nature.com/articles/s41746-026-02926-6\">[1]</a>.",
-   "hash": "5f4ee6348261e8e8",
-   "date": "June 23, 2026"
+   "text": "Advances in automated genomic data reinterpretation are increasing rare disease diagnostic yields at scale, as demonstrated by Talos, a platform that continuously enhances detection capabilities over time <a href=\"https://www.nature.com/articles/s41591-026-04477-5\">[3]</a>. Machine learning-based screening for primary aldosteronism using plasma steroids, potassium, and renin is improving detection rates compared to traditional methods <a href=\"https://www.nature.com/articles/s41746-026-02906-w\">[2]</a>. In imaging analysis, foundation models facilitate multi-planar MRI reconstruction for uterine fibroid assessment with reduced manual segmentation needs <a href=\"https://www.nature.com/articles/s41746-026-02780-6\">[1]</a>. Clinical practice is also seeing the adoption of ambient artificial intelligence scribes to alleviate electronic health record documentation burden in ambulatory care settings <a href=\"https://medinform.jmir.org/2026/1/e84104\">[4]</a>. Automated systems for interpreting in vivo confocal microscopy images are further streamlining integration of advanced diagnostics into routine workflows <a href=\"https://www.nature.com/articles/s41746-026-02926-6\">[5]</a>.",
+   "hash": "b27eb3f709c52069",
+   "date": "June 24, 2026"
   },
   "general_ai": {
-   "text": "VibeThinker, a 3-billion-parameter model, surpasses Anthropic&#x27;s Opus 4.5 in reasoning benchmarks by incorporating supervised fine-tuning and group relative policy optimization, reflecting notable progress in affordable model architectures <a href=\"https://arxiv.org/abs/2606.16140\">[4]</a>. At the same time, research demonstrates persistent challenges in reliability and consistency for large language models used as judges, with agreement and bias issues identified through systematic evaluation <a href=\"https://arxiv.org/abs/2606.19544\">[8]</a>. Security remains a concern as studies show research agents vulnerable to targeted queries capable of leaking sensitive training data, underscoring risks in deployed systems <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[10]</a>. Efforts to enhance academic review quality see methods developed that improve language model-generated peer feedback, aiming for human-level standards <a href=\"https://arxiv.org/abs/2606.20897\">[3]</a>.",
-   "hash": "917713beaba1ffad",
-   "date": "June 23, 2026"
+   "text": "MedBench v5 introduces a new benchmark for clinical multimodal models, addressing critical issues of process transparency and hallucination in medical artificial intelligence evaluation <a href=\"https://arxiv.org/abs/2606.24155\">[1]</a>. Meanwhile, a large-scale assessment has identified reliability and bias concerns in LLM-as-a-Judge models, suggesting limitations for automated scientific adjudication <a href=\"https://arxiv.org/abs/2606.19544\">[9]</a>. Another study finds that AI systems used for peer review can diverge from human editorial decisions, with three core failure modes characterizing current scientific judgment gaps <a href=\"https://arxiv.org/abs/2606.20769\">[3]</a>. Adding to these risks, research highlights that deployed research agents can leak sensitive training data when probed, underlining persistent security vulnerabilities in language model deployments <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[11]</a>.",
+   "hash": "4eebd0d3f181ac9b",
+   "date": "June 24, 2026"
   }
  }
 }

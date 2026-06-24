@@ -13,11 +13,40 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Unsupervised machine learning applied to electronic health records has identified specific high-risk patient groups and comorbidities associated with premature aging, offering new clinical insights for risk stratification <a href="https://www.nature.com/articles/s41746-026-02913-x">[3]</a>. Advances in surgical gesture recognition using end-to-end artificial intelligence systems are enabling prediction of clinical outcomes directly from operative videos, supporting both intraoperative assessment and postoperative management <a href="https://www.nature.com/articles/s41746-026-02927-5">[2]</a>. Integrated approaches that leverage large language models with machine learning predictions are now aiding the prediction of lymph node metastasis, improving decision support for cancer staging <a href="https://medinform.jmir.org/2026/1/e86700">[4]</a>. Automated interpretation of in vivo confocal microscopy images with peer-reviewed AI systems is streamlining diagnostic workflows in clinical practice <a href="https://www.nature.com/articles/s41746-026-02926-6">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 23, 2026; numbered links go to the items below.</p>
+<p>Advances in automated genomic data reinterpretation are increasing rare disease diagnostic yields at scale, as demonstrated by Talos, a platform that continuously enhances detection capabilities over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[3]</a>. Machine learning-based screening for primary aldosteronism using plasma steroids, potassium, and renin is improving detection rates compared to traditional methods <a href="https://www.nature.com/articles/s41746-026-02906-w">[2]</a>. In imaging analysis, foundation models facilitate multi-planar MRI reconstruction for uterine fibroid assessment with reduced manual segmentation needs <a href="https://www.nature.com/articles/s41746-026-02780-6">[1]</a>. Clinical practice is also seeing the adoption of ambient artificial intelligence scribes to alleviate electronic health record documentation burden in ambulatory care settings <a href="https://medinform.jmir.org/2026/1/e84104">[4]</a>. Automated systems for interpreting in vivo confocal microscopy images are further streamlining integration of advanced diagnostics into routine workflows <a href="https://www.nature.com/articles/s41746-026-02926-6">[5]</a>.</p>
+<p class="section-brief-date">The picture as of June 24, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02780-6">Reconstruction from multi-planar MRI with foundation models for uterine fibroid analysis</a>
+    <p class="news-card-summary">Foundation models enable multi-planar MRI reconstruction for analysis of uterine fibroids, advancing imaging analysis with minimal manual segmentation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02906-w">Advanced machine learning-based screening for primary aldosteronism with plasma steroids, potassium, and renin</a>
+    <p class="news-card-summary">Machine learning screening using plasma steroids, potassium, and renin improves detection of primary aldosteronism compared to standard approaches.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04477-5">Automated reanalysis of genomic data for rare disease diagnostics at scale</a>
+    <p class="news-card-summary">Talos, an automated reanalysis tool, enables genomic data reinterpretation at scale to improve rare disease diagnostic yields over time.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84104">Ambient AI Scribe Implementation in an Ambulatory Setting in a Single Medical Group: Prospective Study</a>
+    <p class="news-card-summary">Implementation of ambient artificial intelligence scribes in ambulatory care reduced electronic health record documentation burden on physicians.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/2021430632be32f7af988bd0e29fbf54.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
@@ -37,6 +66,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02913-x">Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging</a>
     <p class="news-card-summary">Peer-reviewed analysis uses unsupervised machine learning on 100,272 electronic health records to identify high-risk patient groups and comorbidities linked to premature aging.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02923-9">Video frame interpolation for coronary angiography using latent flow matching</a>
+    <p class="news-card-summary">Latent flow matching enables video frame interpolation for coronary angiography, improving temporal resolution in cardiac imaging sequences.</p>
   </div>
 </div>
 <div class="news-card">
@@ -88,41 +124,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02924-8">Voice-controlled super-resolution ultrasound imaging and reporting powered by multimodal large language models</a>
     <p class="news-card-summary">Voice-controlled ultrasound imaging system integrated with multimodal large language models for enhanced clinical reporting.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02907-9">FetalCLIP: a visual-language foundation model for fetal ultrasound image analysis</a>
-    <p class="news-card-summary">FetalCLIP, a visual-language foundation model for fetal ultrasound image analysis, published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02822-z">Treatment-aware deep learning enables counterfactual prediction of individual benefit from PARP inhibitors in ovarian cancer</a>
-    <p class="news-card-summary">Treatment-aware deep learning model predicts individual benefit from poly ADP-ribose polymerase inhibitors in ovarian cancer patients.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02918-6">Human-AI Collaboration in Healthcare: A Scoping Review</a>
-    <p class="news-card-summary">Scoping review examines frameworks and outcomes of human-AI collaboration in clinical settings and healthcare delivery.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02901-1">Interpretable machine learning model for predicting kidney failure among CAKUT children in multicenter large-scale study</a>
-    <p class="news-card-summary">Multicenter study develops an interpretable machine learning model to predict kidney failure in children with congenital anomalies of the kidney and urinary tract.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82762">Online Sepsis Prediction Using Vital Signs and Multiscale Temporal-Aware Contrastive Learning: Model Development and Validation Study</a>
-    <p class="news-card-summary">Real-time sepsis prediction model using vital signs and multiscale temporal-aware contrastive learning, developed and validated for clinical deployment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/677a3087d1aecb49d42a61aa982131e0.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
