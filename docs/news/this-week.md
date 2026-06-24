@@ -438,17 +438,33 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>MedBench v5 introduces a new benchmark for clinical multimodal models, addressing critical issues of process transparency and hallucination in medical artificial intelligence evaluation <a href="https://arxiv.org/abs/2606.24155">[1]</a>. Meanwhile, a large-scale assessment has identified reliability and bias concerns in LLM-as-a-Judge models, suggesting limitations for automated scientific adjudication <a href="https://arxiv.org/abs/2606.19544">[9]</a>. Another study finds that AI systems used for peer review can diverge from human editorial decisions, with three core failure modes characterizing current scientific judgment gaps <a href="https://arxiv.org/abs/2606.20769">[3]</a>. Adding to these risks, research highlights that deployed research agents can leak sensitive training data when probed, underlining persistent security vulnerabilities in language model deployments <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[11]</a>.</p>
+<p>OpenAI and Broadcom&#x27;s introduction of a custom inference chip for large language model workloads points to growing advancements in AI hardware specialization, which could impact how efficiently medical AI systems are deployed <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[1]</a>. Benchmarking concerns are being addressed by MedBench v5, which incorporates process-oriented and hallucination-aware metrics for clinical multimodal models, aiming to improve transparency and trust in model evaluation <a href="https://arxiv.org/abs/2606.24155">[2]</a>. Meanwhile, large-scale analysis shows that LLM-as-a-Judge models experience reliability and consistency challenges, particularly regarding agreement and bias, which has implications for their role in medical decision-support <a href="https://arxiv.org/abs/2606.19544">[11]</a>. The security of AI-based research tools also comes into focus, as research demonstrates that agents may inadvertently leak sensitive training data during interactions <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[13]</a>.</p>
 <p class="section-brief-date">The picture as of June 24, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">OpenAI and Broadcom unveil LLM-optimized inference chip</a>
+    <p class="news-card-summary">OpenAI and Broadcom announced a custom inference chip optimized for large language model deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/4DeZq8e24W4qgIrtAu4Xmg/54189176ae1c6150d94cac02fb104f79/openai-broadcom-jalapeno-inference-chip-image-16_9.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 24, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.24155">MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark for Clinical Multimodal Models</a>
     <p class="news-card-summary">MedBench v5 introduces a process-oriented benchmark for clinical multimodal models that addresses hallucination and transparency in medical AI evaluation.</p>
   </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.krea.ai/blog/krea-2-technical-report">Krea 2: SOTA open-weights 12B image model</a>
+    <p class="news-card-summary">Krea 2, a state-of-the-art open-weights 12 billion parameter image generation model, was released.</p>
+  </div>
+  <img class="news-card-thumb" src="https://s.krea.ai/blog-posts/krea-2-technical-report/agent/1782227962641-krea2-hero-new.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">

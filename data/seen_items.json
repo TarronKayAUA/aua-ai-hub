@@ -8056,6 +8056,62 @@
    "title_hash": "cc82f2ce3a094771ad085136d28850bd",
    "first_seen": "2026-06-24T15:39:40.284516+00:00",
    "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+   "title_hash": "249e2a01a2a461c15f82c00deb2dbbb6",
+   "first_seen": "2026-06-24T17:29:20.306852+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+   "title_hash": "d710814bbc30751514148f36b6080ca0",
+   "first_seen": "2026-06-24T17:29:20.306852+00:00",
+   "kept": true,
+   "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-24T13:14:39+00:00",
+   "summary": "OpenAI and Broadcom announced a custom inference chip optimized for large language model deployment.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4DeZq8e24W4qgIrtAu4Xmg/54189176ae1c6150d94cac02fb104f79/openai-broadcom-jalapeno-inference-chip-image-16_9.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02910-0",
+   "title_hash": "111a5d289a75ef454dddd873409bf5b4",
+   "first_seen": "2026-06-24T17:29:20.306852+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04508-1",
+   "title_hash": "51e4033b68dfcef8e82ab50c32bb0d80",
+   "first_seen": "2026-06-24T17:29:20.306852+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/ffasr-leaderboard",
+   "title_hash": "6fae39e7e9302ddacbf4a6422907e611",
+   "first_seen": "2026-06-24T17:29:20.306852+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.krea.ai/blog/krea-2-technical-report",
+   "title_hash": "dfa55ff7e26a6e357f485ae12c827e9c",
+   "first_seen": "2026-06-24T17:29:20.306852+00:00",
+   "kept": true,
+   "title": "Krea 2: SOTA open-weights 12B image model",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-23T15:31:21+00:00",
+   "summary": "Krea 2, a state-of-the-art open-weights 12 billion parameter image generation model, was released.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://s.krea.ai/blog-posts/krea-2-technical-report/agent/1782227962641-krea2-hero-new.jpg"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uc79ho/glm52_is_on_deepswe",
+   "title_hash": "b2b27529e3f717bb8780db3c3cd1e100",
+   "first_seen": "2026-06-24T17:29:20.306852+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -8167,8 +8223,8 @@
    "date": "June 24, 2026"
   },
   "general_ai": {
-   "text": "MedBench v5 introduces a new benchmark for clinical multimodal models, addressing critical issues of process transparency and hallucination in medical artificial intelligence evaluation <a href=\"https://arxiv.org/abs/2606.24155\">[1]</a>. Meanwhile, a large-scale assessment has identified reliability and bias concerns in LLM-as-a-Judge models, suggesting limitations for automated scientific adjudication <a href=\"https://arxiv.org/abs/2606.19544\">[9]</a>. Another study finds that AI systems used for peer review can diverge from human editorial decisions, with three core failure modes characterizing current scientific judgment gaps <a href=\"https://arxiv.org/abs/2606.20769\">[3]</a>. Adding to these risks, research highlights that deployed research agents can leak sensitive training data when probed, underlining persistent security vulnerabilities in language model deployments <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[11]</a>.",
-   "hash": "4eebd0d3f181ac9b",
+   "text": "OpenAI and Broadcom&#x27;s introduction of a custom inference chip for large language model workloads points to growing advancements in AI hardware specialization, which could impact how efficiently medical AI systems are deployed <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[1]</a>. Benchmarking concerns are being addressed by MedBench v5, which incorporates process-oriented and hallucination-aware metrics for clinical multimodal models, aiming to improve transparency and trust in model evaluation <a href=\"https://arxiv.org/abs/2606.24155\">[2]</a>. Meanwhile, large-scale analysis shows that LLM-as-a-Judge models experience reliability and consistency challenges, particularly regarding agreement and bias, which has implications for their role in medical decision-support <a href=\"https://arxiv.org/abs/2606.19544\">[11]</a>. The security of AI-based research tools also comes into focus, as research demonstrates that agents may inadvertently leak sensitive training data during interactions <a href=\"https://huggingface.co/blog/ServiceNow/mosaicleaks\">[13]</a>.",
+   "hash": "e7174903bff734bf",
    "date": "June 24, 2026"
   }
  }
