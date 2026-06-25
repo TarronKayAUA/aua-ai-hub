@@ -176,11 +176,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Machine learning models have been shown to improve early patient triage by predicting hospital admission within twenty-four hours after stroke <a href="https://medinform.jmir.org/2026/1/e90852">[1]</a> and offer enhanced screening accuracy for primary aldosteronism using plasma biomarkers <a href="https://www.nature.com/articles/s41746-026-02906-w">[3]</a>. Automated tools for genomic data reanalysis are supporting rare disease diagnostics at scale, increasing diagnostic yields over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[4]</a>. Ambient artificial intelligence scribes in ambulatory care settings have been implemented to reduce electronic health record documentation burdens <a href="https://medinform.jmir.org/2026/1/e84104">[5]</a>. Additionally, unsupervised analysis of electronic health records has identified distinct high-risk groups and comorbidities associated with premature aging, broadening risk stratification capabilities <a href="https://www.nature.com/articles/s41746-026-02913-x">[8]</a>.</p>
+<p>Foundation models are now enabling multi-planar MRI reconstruction to advance uterine fibroid imaging with minimal manual segmentation, highlighting improvements in diagnostic efficiency <a href="https://www.nature.com/articles/s41746-026-02780-6">[3]</a>. Meanwhile, large language models have been integrated with machine learning to predict lymph node metastasis, supporting more precise cancer staging <a href="https://medinform.jmir.org/2026/1/e86700">[11]</a>. Automated reanalysis tools such as Talos provide scalable reinterpretation of genomic data, increasing the diagnostic yield for rare diseases over extended periods <a href="https://www.nature.com/articles/s41591-026-04477-5">[5]</a>. In ambulatory care, ambient artificial intelligence scribes have reduced the burden of electronic health record documentation for physicians, streamlining clinical workflows <a href="https://medinform.jmir.org/2026/1/e84104">[6]</a>. There is also progress toward trustworthy AI-driven cuffless blood pressure monitoring, addressing concerns about sensor-free measurement reliability <a href="https://www.nature.com/articles/s41746-026-02898-7">[1]</a>.</p>
 <p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02898-7">Towards trustworthy AI-driven cuffless blood pressure monitoring</a>
+    <p class="news-card-summary">Study addresses trustworthiness of AI systems for cuffless blood pressure monitoring without traditional sensors.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 24, 2026</span></div>
@@ -403,7 +410,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A mechanistic interpretability study has identified a significant divide between detecting harmful capabilities in language models and effectively controlling or steering their behavior, suggesting ongoing limitations in current safety approaches <a href="https://arxiv.org/abs/2606.24952">[1]</a>. Alongside these concerns, new methods now allow detection of jailbreak attacks by analyzing entropy changes in intermediate model layers, providing a tool to identify when unauthorized behaviors are prompted without needing prior knowledge of attack details <a href="https://arxiv.org/abs/2606.25182">[3]</a>. As language models become increasingly prevalent in academic evaluation, research is evaluating their role in scientific peer review, addressing both methodological benchmarks and reliability challenges <a href="https://arxiv.org/abs/2606.25057">[2]</a>, while new initiatives aim to better align automated reviews with human editorial outcomes by highlighting core judgment failures <a href="https://arxiv.org/abs/2606.20769">[11]</a>. In the clinical domain, MedBench v5 introduces a benchmark designed to expose hallucinations and improve transparency in medical multimodal model evaluation <a href="https://arxiv.org/abs/2606.24155">[8]</a>.</p>
+<p>A custom inference chip designed by OpenAI and Broadcom targets large language model deployment at scale, reflecting industry responses to increasing computational demands from language models used in both general and clinical contexts <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[7]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[8]</a>. Mechanistic interpretability research now highlights limitations in moving from merely detecting harmful capabilities in language models to actively controlling them, which raises new issues for model safety <a href="https://arxiv.org/abs/2606.24952">[1]</a>. Work on detecting jailbreak attacks by analyzing entropy dynamics in model layers, without relying on knowledge of attack prompts, suggests novel defenses against prompt-based exploits <a href="https://arxiv.org/abs/2606.25182">[3]</a>. New benchmarks for clinical multimodal models aim to better evaluate hallucination risks and transparency in medical AI <a href="https://arxiv.org/abs/2606.24155">[9]</a>.</p>
 <p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -441,6 +448,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.25380">A Survey of Toxicity Detection and Mitigation Strategies for Multilingual Language Models</a>
     <p class="news-card-summary">Survey reviews detection and mitigation strategies for toxicity in multilingual large language models as they are increasingly deployed globally.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models">The Unbearable Cheapness of Open Weight Models</a>
+    <p class="news-card-summary">Analysis of why open-weight models have become inexpensive and implications for the machine learning landscape.</p>
   </div>
 </div>
 <div class="news-card">
@@ -531,6 +545,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">GLM-5.2 achieved top ranking on the Artificial Analysis Intelligence Index among open-weights models.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/br2lSBapukS1-SpxHqZLiRDYFoObg5xwpKU4LYKNyXA.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3646758c86913f0feaa08b9580e3018433f047be" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9yt6v/new_agentic_benchmark_out_claude_fable_and_glm_52">New Agentic Benchmark Out: Claude Fable and GLM 5.2 Top Their Cohorts</a>
+    <p class="news-card-summary">New benchmark ranks agentic language models, with Claude Fable and GLM 5.2 leading their respective cohorts.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/9xcqvw4ny78h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=05cfa185a68113c44c5d17e79359162874d6a2b5" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">

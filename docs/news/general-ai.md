@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A mechanistic interpretability study has identified a significant divide between detecting harmful capabilities in language models and effectively controlling or steering their behavior, suggesting ongoing limitations in current safety approaches <a href="https://arxiv.org/abs/2606.24952">[1]</a>. Alongside these concerns, new methods now allow detection of jailbreak attacks by analyzing entropy changes in intermediate model layers, providing a tool to identify when unauthorized behaviors are prompted without needing prior knowledge of attack details <a href="https://arxiv.org/abs/2606.25182">[3]</a>. As language models become increasingly prevalent in academic evaluation, research is evaluating their role in scientific peer review, addressing both methodological benchmarks and reliability challenges <a href="https://arxiv.org/abs/2606.25057">[2]</a>, while new initiatives aim to better align automated reviews with human editorial outcomes by highlighting core judgment failures <a href="https://arxiv.org/abs/2606.20769">[11]</a>. In the clinical domain, MedBench v5 introduces a benchmark designed to expose hallucinations and improve transparency in medical multimodal model evaluation <a href="https://arxiv.org/abs/2606.24155">[8]</a>.</p>
+<p>A custom inference chip designed by OpenAI and Broadcom targets large language model deployment at scale, reflecting industry responses to increasing computational demands from language models used in both general and clinical contexts <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[7]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[8]</a>. Mechanistic interpretability research now highlights limitations in moving from merely detecting harmful capabilities in language models to actively controlling them, which raises new issues for model safety <a href="https://arxiv.org/abs/2606.24952">[1]</a>. Work on detecting jailbreak attacks by analyzing entropy dynamics in model layers, without relying on knowledge of attack prompts, suggests novel defenses against prompt-based exploits <a href="https://arxiv.org/abs/2606.25182">[3]</a>. New benchmarks for clinical multimodal models aim to better evaluate hallucination risks and transparency in medical AI <a href="https://arxiv.org/abs/2606.24155">[9]</a>.</p>
 <p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -51,6 +51,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.25380">A Survey of Toxicity Detection and Mitigation Strategies for Multilingual Language Models</a>
     <p class="news-card-summary">Survey reviews detection and mitigation strategies for toxicity in multilingual large language models as they are increasingly deployed globally.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models">The Unbearable Cheapness of Open Weight Models</a>
+    <p class="news-card-summary">Analysis of why open-weight models have become inexpensive and implications for the machine learning landscape.</p>
   </div>
 </div>
 <div class="news-card">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 22, 2026</span></div>
     <a class="news-card-title" href="https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion">Prompt Injection as Role Confusion</a>
     <p class="news-card-summary">Technical analysis explains prompt injection attacks as role confusion vulnerabilities in language model systems.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 22, 2026</span></div>
-    <a class="news-card-title" href="https://hustvl.github.io/Moebius">Moebius: 0.2B image inpainting model with 10B-level performance</a>
-    <p class="news-card-summary">Moebius is a 200-million-parameter open-weights image inpainting model achieving performance comparable to models ten times its size.</p>
   </div>
 </div>
 </div>

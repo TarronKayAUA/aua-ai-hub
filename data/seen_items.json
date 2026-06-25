@@ -8527,6 +8527,61 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg"
+  },
+  {
+   "url": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
+   "title_hash": "4c93254e42418b0bfb2029ab9b79c911",
+   "first_seen": "2026-06-25T17:37:18.758581+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42346713?fc=20260609215449&ff=20260625133718&v=2.20.0",
+   "title_hash": "22ab864165ae3d030842fd7f27e1e1b5",
+   "first_seen": "2026-06-25T17:37:18.758581+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models",
+   "title_hash": "3bd9f3ec6fd5af27d5bcb1e65d03b445",
+   "first_seen": "2026-06-25T17:37:18.758581+00:00",
+   "kept": true,
+   "title": "The Unbearable Cheapness of Open Weight Models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-25T02:51:29+00:00",
+   "summary": "Analysis of why open-weight models have become inexpensive and implications for the machine learning landscape.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02898-7",
+   "title_hash": "cf632f23c88aba79668969d27b44c1ea",
+   "first_seen": "2026-06-25T17:37:18.758581+00:00",
+   "kept": true,
+   "title": "Towards trustworthy AI-driven cuffless blood pressure monitoring",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-25T00:00:00+00:00",
+   "summary": "Study addresses trustworthiness of AI systems for cuffless blood pressure monitoring without traditional sensors.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9yt6v/new_agentic_benchmark_out_claude_fable_and_glm_52",
+   "title_hash": "fe4c86e7f281300264b37f4ae5ff4cfd",
+   "first_seen": "2026-06-25T17:37:18.758581+00:00",
+   "kept": true,
+   "title": "New Agentic Benchmark Out: Claude Fable and GLM 5.2 Top Their Cohorts",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-06-19T10:54:57+00:00",
+   "summary": "New benchmark ranks agentic language models, with Claude Fable and GLM 5.2 leading their respective cohorts.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/9xcqvw4ny78h1.png?width=640&crop=smart&auto=webp&s=05cfa185a68113c44c5d17e79359162874d6a2b5"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=q_diWy3xdrw",
+   "title_hash": "51be34f8c7dae964548b725ada93a0f1",
+   "first_seen": "2026-06-25T17:37:18.758581+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -8633,13 +8688,13 @@
    "date": "June 25, 2026"
   },
   "clinical_practice": {
-   "text": "Machine learning models have been shown to improve early patient triage by predicting hospital admission within twenty-four hours after stroke <a href=\"https://medinform.jmir.org/2026/1/e90852\">[1]</a> and offer enhanced screening accuracy for primary aldosteronism using plasma biomarkers <a href=\"https://www.nature.com/articles/s41746-026-02906-w\">[3]</a>. Automated tools for genomic data reanalysis are supporting rare disease diagnostics at scale, increasing diagnostic yields over time <a href=\"https://www.nature.com/articles/s41591-026-04477-5\">[4]</a>. Ambient artificial intelligence scribes in ambulatory care settings have been implemented to reduce electronic health record documentation burdens <a href=\"https://medinform.jmir.org/2026/1/e84104\">[5]</a>. Additionally, unsupervised analysis of electronic health records has identified distinct high-risk groups and comorbidities associated with premature aging, broadening risk stratification capabilities <a href=\"https://www.nature.com/articles/s41746-026-02913-x\">[8]</a>.",
-   "hash": "9df9dbec836769ba",
+   "text": "Foundation models are now enabling multi-planar MRI reconstruction to advance uterine fibroid imaging with minimal manual segmentation, highlighting improvements in diagnostic efficiency <a href=\"https://www.nature.com/articles/s41746-026-02780-6\">[3]</a>. Meanwhile, large language models have been integrated with machine learning to predict lymph node metastasis, supporting more precise cancer staging <a href=\"https://medinform.jmir.org/2026/1/e86700\">[11]</a>. Automated reanalysis tools such as Talos provide scalable reinterpretation of genomic data, increasing the diagnostic yield for rare diseases over extended periods <a href=\"https://www.nature.com/articles/s41591-026-04477-5\">[5]</a>. In ambulatory care, ambient artificial intelligence scribes have reduced the burden of electronic health record documentation for physicians, streamlining clinical workflows <a href=\"https://medinform.jmir.org/2026/1/e84104\">[6]</a>. There is also progress toward trustworthy AI-driven cuffless blood pressure monitoring, addressing concerns about sensor-free measurement reliability <a href=\"https://www.nature.com/articles/s41746-026-02898-7\">[1]</a>.",
+   "hash": "cc6c0e901846317f",
    "date": "June 25, 2026"
   },
   "general_ai": {
-   "text": "A mechanistic interpretability study has identified a significant divide between detecting harmful capabilities in language models and effectively controlling or steering their behavior, suggesting ongoing limitations in current safety approaches <a href=\"https://arxiv.org/abs/2606.24952\">[1]</a>. Alongside these concerns, new methods now allow detection of jailbreak attacks by analyzing entropy changes in intermediate model layers, providing a tool to identify when unauthorized behaviors are prompted without needing prior knowledge of attack details <a href=\"https://arxiv.org/abs/2606.25182\">[3]</a>. As language models become increasingly prevalent in academic evaluation, research is evaluating their role in scientific peer review, addressing both methodological benchmarks and reliability challenges <a href=\"https://arxiv.org/abs/2606.25057\">[2]</a>, while new initiatives aim to better align automated reviews with human editorial outcomes by highlighting core judgment failures <a href=\"https://arxiv.org/abs/2606.20769\">[11]</a>. In the clinical domain, MedBench v5 introduces a benchmark designed to expose hallucinations and improve transparency in medical multimodal model evaluation <a href=\"https://arxiv.org/abs/2606.24155\">[8]</a>.",
-   "hash": "16f3064ae7adc950",
+   "text": "A custom inference chip designed by OpenAI and Broadcom targets large language model deployment at scale, reflecting industry responses to increasing computational demands from language models used in both general and clinical contexts <a href=\"https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale\">[7]</a> <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[8]</a>. Mechanistic interpretability research now highlights limitations in moving from merely detecting harmful capabilities in language models to actively controlling them, which raises new issues for model safety <a href=\"https://arxiv.org/abs/2606.24952\">[1]</a>. Work on detecting jailbreak attacks by analyzing entropy dynamics in model layers, without relying on knowledge of attack prompts, suggests novel defenses against prompt-based exploits <a href=\"https://arxiv.org/abs/2606.25182\">[3]</a>. New benchmarks for clinical multimodal models aim to better evaluate hallucination risks and transparency in medical AI <a href=\"https://arxiv.org/abs/2606.24155\">[9]</a>.",
+   "hash": "6f122371a47332e0",
    "date": "June 25, 2026"
   }
  }

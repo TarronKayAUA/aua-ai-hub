@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Machine learning models have been shown to improve early patient triage by predicting hospital admission within twenty-four hours after stroke <a href="https://medinform.jmir.org/2026/1/e90852">[1]</a> and offer enhanced screening accuracy for primary aldosteronism using plasma biomarkers <a href="https://www.nature.com/articles/s41746-026-02906-w">[3]</a>. Automated tools for genomic data reanalysis are supporting rare disease diagnostics at scale, increasing diagnostic yields over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[4]</a>. Ambient artificial intelligence scribes in ambulatory care settings have been implemented to reduce electronic health record documentation burdens <a href="https://medinform.jmir.org/2026/1/e84104">[5]</a>. Additionally, unsupervised analysis of electronic health records has identified distinct high-risk groups and comorbidities associated with premature aging, broadening risk stratification capabilities <a href="https://www.nature.com/articles/s41746-026-02913-x">[8]</a>.</p>
+<p>Foundation models are now enabling multi-planar MRI reconstruction to advance uterine fibroid imaging with minimal manual segmentation, highlighting improvements in diagnostic efficiency <a href="https://www.nature.com/articles/s41746-026-02780-6">[3]</a>. Meanwhile, large language models have been integrated with machine learning to predict lymph node metastasis, supporting more precise cancer staging <a href="https://medinform.jmir.org/2026/1/e86700">[11]</a>. Automated reanalysis tools such as Talos provide scalable reinterpretation of genomic data, increasing the diagnostic yield for rare diseases over extended periods <a href="https://www.nature.com/articles/s41591-026-04477-5">[5]</a>. In ambulatory care, ambient artificial intelligence scribes have reduced the burden of electronic health record documentation for physicians, streamlining clinical workflows <a href="https://medinform.jmir.org/2026/1/e84104">[6]</a>. There is also progress toward trustworthy AI-driven cuffless blood pressure monitoring, addressing concerns about sensor-free measurement reliability <a href="https://www.nature.com/articles/s41746-026-02898-7">[1]</a>.</p>
 <p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02898-7">Towards trustworthy AI-driven cuffless blood pressure monitoring</a>
+    <p class="news-card-summary">Study addresses trustworthiness of AI systems for cuffless blood pressure monitoring without traditional sensors.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 24, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02783-3">Handling missing modalities in multimodal survival prediction for non-small cell lung cancer</a>
     <p class="news-card-summary">Peer-reviewed study addresses technical challenge of missing data modalities in multimodal machine learning for lung cancer survival prediction.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02900-2">HRRT: hierarchical reinforcement learning for renal replacement therapy decision support</a>
-    <p class="news-card-summary">Hierarchical reinforcement learning system developed for clinical decision support in renal replacement therapy.</p>
   </div>
 </div>
 </div>
