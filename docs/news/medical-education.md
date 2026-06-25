@@ -13,11 +13,26 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Artificial intelligence is now capable of quantifying clinical skills with accuracy comparable to expert human assessors, indicating a potential shift in how student performance can be measured and standardized <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[1]</a>. Integrating AI education into healthcare curricula has demonstrated improvements in both student attitudes and knowledge, suggesting that targeted curriculum interventions may enhance readiness for AI-enabled clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[3]</a>. Continuing professional development courses for educators have also been shown to improve perceptions and competence regarding AI tools, which may support broader adoption in faculty training <a href="https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[2]</a>. Meanwhile, a structured framework has been proposed for embedding data science and machine learning competencies in undergraduate medical education, offering a roadmap for systematic curricular integration <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[7]</a>.</p>
-<p class="section-brief-date">The picture as of June 24, 2026; numbered links go to the items below.</p>
+<p>Artificial intelligence can now quantify technical skills in clinical assessments as reliably as human experts, supporting its adoption in medical education and evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[3]</a>. Studies also show that targeted curriculum interventions improve both medical students&#x27; knowledge and attitudes concerning AI applications in healthcare, highlighting the importance of educational integration <a href="https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[5]</a>. Complementing this, a practical professional development course has increased educators&#x27; competence and positive perceptions regarding AI tools in health professions training <a href="https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[4]</a>. Meanwhile, research suggests that large language models display greater diagnostic anchoring bias than physicians, underscoring the need for careful oversight and nuanced implementation of AI diagnostic systems <a href="https://pubmed.ncbi.nlm.nih.gov/42335861?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[8]</a>. Efforts to structure the integration of data science and machine learning competencies into undergraduate curricula are ongoing <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[9]</a>.</p>
+<p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">Performance of large language models in delivering accurate and comprehensible patient information on heart failure and cardiomyopathy</a>
+    <p class="news-card-summary">Study evaluates how well large language models deliver accurate and understandable patient information about heart failure and cardiomyopathy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87959">Effectiveness of Artificial Intelligence, Assisted Peer Teaching in Orthopedic Clinical Education: Historical Cohort Study</a>
+    <p class="news-card-summary">Historical cohort study examines effectiveness of AI-assisted peer teaching in orthopedic clinical education compared to traditional peer teaching.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/c1ebd4f1d6710c903c129408430f160e.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
@@ -107,20 +122,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Construction of a faculty competency model for medical simulation education integrated with GenAI: a multi-method quantitative study based on the perspective of medical students</a>
     <p class="news-card-summary">Validated competency model identifies skills and knowledge faculty need to teach medical simulation education integrated with generative artificial intelligence.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323560?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Evaluation of ChatGPT-4o&#x27;s and DeepSeek R1&#x27;s responses to urological problems: a comparative study</a>
-    <p class="news-card-summary">Comparative study evaluates ChatGPT-4o and DeepSeek R1 performance on clinical urology questions, finding DeepSeek R1 superior in accuracy and reasoning.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">AI in Medicine: Uncovering the Educational Pulse Through Students&#x27; Perspective</a>
-    <p class="news-card-summary">Study explores medical students&#x27; perspectives on artificial intelligence in healthcare delivery and medical training.</p>
   </div>
 </div>
 </div>

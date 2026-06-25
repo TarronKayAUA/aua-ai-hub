@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://share.transistor.fm/s/e039d1ca" target="_blank" rel="noopener">
+  <img src="https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg" alt="Video: AIUC-1: Building trust in AI agents" loading="lazy">
+  <span class="video-card-title">AIUC-1: Building trust in AI agents</span>
+  <span class="video-card-meta">Practical AI, June 25, 2026</span>
+  <span class="video-card-desc">Discussion of how to build trust in AI agents, with Emil Lassen from the Artificial Intelligence Upstart Committee.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Local-AI-Matters-and-How-to-Use-It-e3l344o" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Video: Why Local AI Matters and How to Use It" loading="lazy">
   <span class="video-card-title">Why Local AI Matters and How to Use It</span>

@@ -13,11 +13,54 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI and Broadcom&#x27;s introduction of a custom inference chip for large language model workloads points to growing advancements in AI hardware specialization, which could impact how efficiently medical AI systems are deployed <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[1]</a>. Benchmarking concerns are being addressed by MedBench v5, which incorporates process-oriented and hallucination-aware metrics for clinical multimodal models, aiming to improve transparency and trust in model evaluation <a href="https://arxiv.org/abs/2606.24155">[2]</a>. Meanwhile, large-scale analysis shows that LLM-as-a-Judge models experience reliability and consistency challenges, particularly regarding agreement and bias, which has implications for their role in medical decision-support <a href="https://arxiv.org/abs/2606.19544">[11]</a>. The security of AI-based research tools also comes into focus, as research demonstrates that agents may inadvertently leak sensitive training data during interactions <a href="https://huggingface.co/blog/ServiceNow/mosaicleaks">[13]</a>.</p>
-<p class="section-brief-date">The picture as of June 24, 2026; numbered links go to the items below.</p>
+<p>A mechanistic interpretability study has identified a significant divide between detecting harmful capabilities in language models and effectively controlling or steering their behavior, suggesting ongoing limitations in current safety approaches <a href="https://arxiv.org/abs/2606.24952">[1]</a>. Alongside these concerns, new methods now allow detection of jailbreak attacks by analyzing entropy changes in intermediate model layers, providing a tool to identify when unauthorized behaviors are prompted without needing prior knowledge of attack details <a href="https://arxiv.org/abs/2606.25182">[3]</a>. As language models become increasingly prevalent in academic evaluation, research is evaluating their role in scientific peer review, addressing both methodological benchmarks and reliability challenges <a href="https://arxiv.org/abs/2606.25057">[2]</a>, while new initiatives aim to better align automated reviews with human editorial outcomes by highlighting core judgment failures <a href="https://arxiv.org/abs/2606.20769">[11]</a>. In the clinical domain, MedBench v5 introduces a benchmark designed to expose hallucinations and improve transparency in medical multimodal model evaluation <a href="https://arxiv.org/abs/2606.24155">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.24952">Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models</a>
+    <p class="news-card-summary">Mechanistic interpretability research reveals a gap between detecting harmful capabilities in language models and successfully steering or controlling them.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.25057">LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges</a>
+    <p class="news-card-summary">Preprint examines methods, benchmarks, and reliability challenges for using large language models to conduct peer review of scientific papers.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.25182">What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics</a>
+    <p class="news-card-summary">Method detects jailbreak attacks on large language models by analyzing entropy dynamics in intermediate layers without requiring knowledge of attack prompts.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.25338">Hybrid-IR: Dual-Path Hybrid Retrieval with Iterative Reasoning for Complex Medical Question Answering</a>
+    <p class="news-card-summary">Hybrid-IR combines dual-path hybrid retrieval with iterative reasoning to improve large language model performance on complex medical question answering tasks.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.25380">A Survey of Toxicity Detection and Mitigation Strategies for Multilingual Language Models</a>
+    <p class="news-card-summary">Survey reviews detection and mitigation strategies for toxicity in multilingual large language models as they are increasingly deployed globally.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">OpenAI and Broadcom announce chip designed for LLM inference at scale</a>
+    <p class="news-card-summary">OpenAI and Broadcom announce a custom silicon chip designed to handle large language model inference at scale amid growing computational demand.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image-500x500.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 24, 2026</span></div>
@@ -82,50 +125,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://hustvl.github.io/Moebius">Moebius: 0.2B image inpainting model with 10B-level performance</a>
     <p class="news-card-summary">Moebius is a 200-million-parameter open-weights image inpainting model achieving performance comparable to models ten times its size.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9zqlx/glm52_is_the_new_leading_open_weights_model_on">GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index</a>
-    <p class="news-card-summary">GLM-5.2 achieved top ranking on the Artificial Analysis Intelligence Index among open-weights models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/br2lSBapukS1-SpxHqZLiRDYFoObg5xwpKU4LYKNyXA.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3646758c86913f0feaa08b9580e3018433f047be" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9w6my/researchers_trained_a_deep_research_agent_with_32">Researchers trained a Deep Research agent with 32 H100s and open-sourced everything</a>
-    <p class="news-card-summary">Ohio State University&#x27;s NLP team released QUEST-35B, an open-source deep research agent trained on 32 H100 GPUs with full training details published.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/hdrqhare878h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1207b6e96b3fa00c41dc3254251976b3a01467cb" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.19348">DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence</a>
-    <p class="news-card-summary">DeepSeek-V4 preview targets efficient context handling for million-token language model applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.19544">Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias</a>
-    <p class="news-card-summary">Large-scale evaluation reveals that LLM-as-a-Judge models show reliability and consistency issues across agreement and bias measures.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.19667">CacheWeaver: Cache-Aware Evidence Ordering for Efficient Grounded RAG Inference</a>
-    <p class="news-card-summary">CacheWeaver optimizes retrieval-augmented generation inference efficiency through cache-aware evidence ordering.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/ServiceNow/mosaicleaks">MosaicLeaks: Can your research agent keep a secret?</a>
-    <p class="news-card-summary">Study demonstrates that research agents can leak sensitive information from training data when queried strategically, raising security concerns for deployed AI systems.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

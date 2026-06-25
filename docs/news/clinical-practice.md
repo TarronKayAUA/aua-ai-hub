@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Advances in automated genomic data reinterpretation are increasing rare disease diagnostic yields at scale, as demonstrated by Talos, a platform that continuously enhances detection capabilities over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[3]</a>. Machine learning-based screening for primary aldosteronism using plasma steroids, potassium, and renin is improving detection rates compared to traditional methods <a href="https://www.nature.com/articles/s41746-026-02906-w">[2]</a>. In imaging analysis, foundation models facilitate multi-planar MRI reconstruction for uterine fibroid assessment with reduced manual segmentation needs <a href="https://www.nature.com/articles/s41746-026-02780-6">[1]</a>. Clinical practice is also seeing the adoption of ambient artificial intelligence scribes to alleviate electronic health record documentation burden in ambulatory care settings <a href="https://medinform.jmir.org/2026/1/e84104">[4]</a>. Automated systems for interpreting in vivo confocal microscopy images are further streamlining integration of advanced diagnostics into routine workflows <a href="https://www.nature.com/articles/s41746-026-02926-6">[5]</a>.</p>
-<p class="section-brief-date">The picture as of June 24, 2026; numbered links go to the items below.</p>
+<p>Machine learning models have been shown to improve early patient triage by predicting hospital admission within twenty-four hours after stroke <a href="https://medinform.jmir.org/2026/1/e90852">[1]</a> and offer enhanced screening accuracy for primary aldosteronism using plasma biomarkers <a href="https://www.nature.com/articles/s41746-026-02906-w">[3]</a>. Automated tools for genomic data reanalysis are supporting rare disease diagnostics at scale, increasing diagnostic yields over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[4]</a>. Ambient artificial intelligence scribes in ambulatory care settings have been implemented to reduce electronic health record documentation burdens <a href="https://medinform.jmir.org/2026/1/e84104">[5]</a>. Additionally, unsupervised analysis of electronic health records has identified distinct high-risk groups and comorbidities associated with premature aging, broadening risk stratification capabilities <a href="https://www.nature.com/articles/s41746-026-02913-x">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 24, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90852">Prediction of Early Hospital Admission (≤24 Hours) After Stroke Using Machine Learning and Deep Learning: Multicenter Study From China</a>
+    <p class="news-card-summary">Multicenter machine learning study from China develops models to predict early hospital admission within 24 hours after stroke for improved patient triage.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/5023dc89505869aa37a36470fcc9b5ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 24, 2026</span></div>
@@ -116,13 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02900-2">HRRT: hierarchical reinforcement learning for renal replacement therapy decision support</a>
     <p class="news-card-summary">Hierarchical reinforcement learning system developed for clinical decision support in renal replacement therapy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02924-8">Voice-controlled super-resolution ultrasound imaging and reporting powered by multimodal large language models</a>
-    <p class="news-card-summary">Voice-controlled ultrasound imaging system integrated with multimodal large language models for enhanced clinical reporting.</p>
   </div>
 </div>
 </div>
