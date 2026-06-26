@@ -9058,6 +9058,18 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/26/openai",
+   "title_hash": "b0ff0300fb5fda42db4a158f3b443703",
+   "first_seen": "2026-06-26T17:12:21.927517+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ue2fd7/seems_this_community_might_have_missed_it_bill",
+   "title_hash": "8df2e4ff0791a1f5cda700ddc718529e",
+   "first_seen": "2026-06-26T17:12:21.927517+00:00",
+   "kept": false
   }
  ],
  "digests": [

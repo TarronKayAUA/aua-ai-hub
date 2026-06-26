@@ -181,22 +181,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">AI in Medicine: Uncovering the Educational Pulse Through Students&#x27; Perspective</a>
-    <p class="news-card-summary">Study explores medical students&#x27; perspectives on artificial intelligence in healthcare delivery and medical training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42320614?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Clinical Artificial Intelligence Competence in Obstetrics and Gynecology: Patient Safety, Physician Accountability, and Responsible Use</a>
     <p class="news-card-summary">Peer-reviewed analysis of clinical AI competence requirements in obstetrics and gynecology, addressing patient safety, physician accountability, and responsible AI use.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42314970?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">Real-Time CustomGPT Generated Feedback for Medical Students: A Simulation-Based Pilot Study</a>
-    <p class="news-card-summary">Pilot study assesses real-time CustomGPT-generated feedback for medical students in simulation-based training.</p>
   </div>
 </div>
 </div>
@@ -383,41 +369,10 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87227">Differentiating Ischemic From Nonischemic T-Wave Inversion Using a Multimodal Vision-Language Model With Reinforcement Learning (ECG-R1): Development and Validation Study</a>
-    <p class="news-card-summary">Vision-language model with reinforcement learning differentiates ischemic from nonischemic T-wave inversion on electrocardiograms.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/868464737a74765c41328b0e83b67b6b.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02509-5">Clinical large language model centered on electronic medical records</a>
-    <p class="news-card-summary">Large language model trained on electronic medical records for clinical applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02912-y">A scoping review of human-AI collaboration patterns and task divisions in healthcare applications</a>
     <p class="news-card-summary">Scoping review of human-AI collaboration patterns and task divisions across healthcare applications, published in npj Digital Medicine.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77943">Performance of Zero-Shot Classifiers for Categorizing RCT Abstracts by Intervention Type: Validation Study</a>
-    <p class="news-card-summary">Zero-shot language model classifiers validated for categorizing randomized controlled trial abstracts by intervention type.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6f8388d5d0ea3298643a34812798503f.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93054">Evaluation of Five Large Language Models for Parental Education in Pediatric Anesthesia: Reliability and Readability Study</a>
-    <p class="news-card-summary">Five large language models evaluated for reliability and readability in generating parental education materials for pediatric anesthesia.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/19437c759dc1cc8ac08d1e1262e71a35.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
 
@@ -594,27 +549,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.19348">DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence</a>
-    <p class="news-card-summary">DeepSeek-V4 preview targets efficient context handling for million-token language model applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.19544">Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias</a>
-    <p class="news-card-summary">Large-scale evaluation reveals that LLM-as-a-Judge models show reliability and consistency issues across agreement and bias measures.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.19667">CacheWeaver: Cache-Aware Evidence Ordering for Efficient Grounded RAG Inference</a>
-    <p class="news-card-summary">CacheWeaver optimizes retrieval-augmented generation inference efficiency through cache-aware evidence ordering.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 18, 2026</span></div>
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9b2i3/poolsidelagunam1_hugging_face_225ba23b">poolside/Laguna-M.1 · Hugging Face - 225B-A23B</a>
     <p class="news-card-summary">Laguna M.1, a 225 billion parameter mixture-of-experts model with 23 billion activated parameters, is now available on Hugging Face.</p>
@@ -656,12 +590,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-meta">OpenAI, June 19, 2026</span>
   <span class="video-card-desc">OpenAI describes how Codex, a code generation model, grew to over 10,000 active users and applications in enterprise software development.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=UxY8zJKRrHU" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/UxY8zJKRrHU/hqdefault.jpg" alt="Video: Improving health intelligence in ChatGPT" loading="lazy">
-  <span class="video-card-title">Improving health intelligence in ChatGPT</span>
-  <span class="video-card-meta">OpenAI, June 18, 2026</span>
-  <span class="video-card-desc">OpenAI describes improvements to health intelligence features in ChatGPT, including enhanced medical information handling for its 230 million weekly health-related user queries.</span>
-</a>
 </div>
 
 ## Podcasts
@@ -684,12 +612,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">Why Local AI Matters and How to Use It</span>
   <span class="video-card-meta">The AI Daily Brief, June 21, 2026</span>
   <span class="video-card-desc">Practical overview of local AI systems, their advantages over cloud-based models, and deployment considerations for institutions and individuals.</span>
-</a>
-<a class="video-card" href="https://aipodcast.education/more-as-more-fails-what-ai-is-really-doing-to-student-performance" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance" loading="lazy">
-  <span class="video-card-title">More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance</span>
-  <span class="video-card-meta">AI in Education Podcast, June 18, 2026</span>
-  <span class="video-card-desc">Episode explores the paradoxical effects of AI on student performance, examining why AI tutoring correlates with both higher grades and increased failure rates.</span>
 </a>
 </div>
 
