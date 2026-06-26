@@ -11,16 +11,65 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Artificial intelligence can now quantify technical skills in clinical assessments as reliably as human experts, supporting its adoption in medical education and evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[3]</a>. Studies also show that targeted curriculum interventions improve both medical students&#x27; knowledge and attitudes concerning AI applications in healthcare, highlighting the importance of educational integration <a href="https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[5]</a>. Complementing this, a practical professional development course has increased educators&#x27; competence and positive perceptions regarding AI tools in health professions training <a href="https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[4]</a>. Meanwhile, research suggests that large language models display greater diagnostic anchoring bias than physicians, underscoring the need for careful oversight and nuanced implementation of AI diagnostic systems <a href="https://pubmed.ncbi.nlm.nih.gov/42335861?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[8]</a>. Efforts to structure the integration of data science and machine learning competencies into undergraduate curricula are ongoing <a href="https://pubmed.ncbi.nlm.nih.gov/42328408?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">[9]</a>.</p>
-<p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the source items.</p>
+<p>Artificial intelligence is being rapidly integrated into medical education, particularly within clinical skills curricula, where implementation has accelerated since 2022 across simulation and assessment activities <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[1]</a>. In practical skill evaluation, research identifies complementary error patterns between human evaluators and GPT-4o for video-based CPR assessment, supporting hybrid approaches to skill validation <a href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[3]</a>. Large language models are also emerging as supportive tools, with evidence for their promising use in providing automated feedback in medical imaging education <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[2]</a> and in powering adaptable clinical simulation systems for gastroenterology training <a href="https://pubmed.ncbi.nlm.nih.gov/42351097?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[8]</a>. These developments coincide with studies showing AI can match expert evaluations of technical clinical skills <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[10]</a>.</p>
+<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Artificial intelligence in undergraduate medical education clinical skills curricula: a scoping review of implementations since 2022</a>
+    <p class="news-card-summary">Scoping review finds AI implementation in clinical skills education has accelerated substantially since 2022, with emerging applications across simulation and assessment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Use of large language models for providing automated feedback in medical imaging education: a systematic review</a>
+    <p class="news-card-summary">Systematic review finds large language models show promising potential as supportive tools for providing automated feedback in medical imaging education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Complementary Error Patterns Between Human Evaluators and GPT-4o in Video-Based Cardiopulmonary Resuscitation Skills Assessment: Implications for Artificial Intelligence-Assisted Second Reading</a>
+    <p class="news-card-summary">Study identifies complementary error patterns between human evaluators and GPT-4o in video-based CPR skills assessment, suggesting potential for hybrid evaluation approaches.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42355546?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">The Impact of Artificial Intelligence on BI-RADS Classification and Diagnostic Confidence in Mammography Interpretation by Radiology Residents</a>
+    <p class="news-card-summary">Study examines how AI assistance influences BI-RADS classification reassessment and diagnostic confidence among radiology residents in mammography interpretation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351276?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Artificial intelligence to support debriefing in simulation-based healthcare education: a scoping review</a>
+    <p class="news-card-summary">Scoping review identifies artificial intelligence as an emerging supportive tool for debriefing in simulation-based healthcare education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">Performance of large language models in delivering accurate and comprehensible patient information on heart failure and cardiomyopathy</a>
     <p class="news-card-summary">Study evaluates how well large language models deliver accurate and understandable patient information about heart failure and cardiomyopathy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351124?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Acceptance and use of GenAI among medical and health sciences students in Saudi Arabia: an extended TAM study</a>
+    <p class="news-card-summary">Extended Technology Acceptance Model study examines acceptance and use of generative AI among medical and health sciences students in Saudi Arabia.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351097?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Development and pilot evaluation of a large language model-based clinical simulation system for medical education in gastroenterology</a>
+    <p class="news-card-summary">Large language model-based clinical simulator for gastroenterology education demonstrates high accuracy, realism, and adaptability in pilot evaluation.</p>
   </div>
 </div>
 <div class="news-card">
@@ -146,27 +195,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42311928?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">Evaluation of Large Language Models in Infectious Disease Decision-Making: From Examination to Clinical Practice</a>
-    <p class="news-card-summary">Large language models show substantial potential in infectious disease education and decision support, with ability to handle both exam and clinical scenarios.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42310703?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">Evaluating the Performance of GPT-4.0 in Generating and Refining Multiple-Choice Questions for Dental Education</a>
-    <p class="news-card-summary">GPT-4.0 demonstrated capability to generate and refine multiple-choice questions for dental education, outperforming some baseline methods.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0">Is it time to introduce an artificial intelligence curriculum in undergraduate medical education? medical students&#x27; perspectives: a systematic review and meta-analysis</a>
-    <p class="news-card-summary">Systematic review finds medical students recognize need for standardized artificial intelligence curriculum to address gap between enthusiasm and actual competence.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42314970?fc=20260609215449&amp;ff=20260619123328&amp;v=2.20.0">Real-Time CustomGPT Generated Feedback for Medical Students: A Simulation-Based Pilot Study</a>
     <p class="news-card-summary">Pilot study assesses real-time CustomGPT-generated feedback for medical students in simulation-based training.</p>
   </div>
@@ -176,11 +204,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Foundation models are now enabling multi-planar MRI reconstruction to advance uterine fibroid imaging with minimal manual segmentation, highlighting improvements in diagnostic efficiency <a href="https://www.nature.com/articles/s41746-026-02780-6">[3]</a>. Meanwhile, large language models have been integrated with machine learning to predict lymph node metastasis, supporting more precise cancer staging <a href="https://medinform.jmir.org/2026/1/e86700">[11]</a>. Automated reanalysis tools such as Talos provide scalable reinterpretation of genomic data, increasing the diagnostic yield for rare diseases over extended periods <a href="https://www.nature.com/articles/s41591-026-04477-5">[5]</a>. In ambulatory care, ambient artificial intelligence scribes have reduced the burden of electronic health record documentation for physicians, streamlining clinical workflows <a href="https://medinform.jmir.org/2026/1/e84104">[6]</a>. There is also progress toward trustworthy AI-driven cuffless blood pressure monitoring, addressing concerns about sensor-free measurement reliability <a href="https://www.nature.com/articles/s41746-026-02898-7">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the source items.</p>
+<p>A cluster-randomized trial evaluated the impact of a generative AI-enabled clinical decision support system in primary care, providing evidence for implementation in real-world settings <a href="https://www.nature.com/articles/s41591-026-04503-6">[1]</a>. Studies highlight the evaluation of frontier health AI models for robustness and readiness, using adversarial tests to address their suitability in clinical contexts <a href="https://www.nature.com/articles/s41591-026-04501-8">[2]</a>. Trustworthiness concerns are also investigated in the development of AI-driven cuffless blood pressure monitoring, which aims to eliminate traditional sensors <a href="https://www.nature.com/articles/s41746-026-02898-7">[3]</a>. Automated tools continue to advance diagnostic support, with one system facilitating large-scale genomic data reanalysis to improve rare disease diagnostic yields <a href="https://www.nature.com/articles/s41591-026-04477-5">[7]</a>, and another reducing physician documentation burden by implementing ambient AI scribes in ambulatory care <a href="https://medinform.jmir.org/2026/1/e84104">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04503-6">Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial</a>
+    <p class="news-card-summary">Pragmatic cluster-randomized trial published in Nature Medicine evaluates a generative AI-enabled clinical decision support system in primary care.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04501-8">Evaluating the robustness and readiness of large frontier models in health AI applications</a>
+    <p class="news-card-summary">Nature Medicine study evaluates robustness and readiness of large frontier models in health AI applications through adversarial evaluation methods.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 25, 2026</span></div>
@@ -377,44 +419,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/19437c759dc1cc8ac08d1e1262e71a35.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18471">Possible or Definite? A Benchmark for Evaluating Diagnostic Uncertainty Preservation in Clinical Text</a>
-    <p class="news-card-summary">New benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their readiness for medical use.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18613">Are LLMs Ready to Assist Physicians? PhysAssistBench for Interactive Doctor-Patient-EHR Assistance</a>
-    <p class="news-card-summary">PhysAssistBench benchmark tests whether large language models can assist physicians in interactive doctor-patient-electronic health record scenarios.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02829-6">UNICORN: a deep learning model for integrating multi-stain data in histopathology</a>
-    <p class="news-card-summary">UNICORN is a deep learning model that integrates multi-stain histopathology data, published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02861-6">Unlocking multi-institutional insights into disease progression with PEAL as a lossless, one-shot federated learning solution</a>
-    <p class="news-card-summary">PEAL provides lossless, one-shot federated learning for disease progression analysis across multiple healthcare institutions without sharing raw data.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>A custom inference chip designed by OpenAI and Broadcom targets large language model deployment at scale, reflecting industry responses to increasing computational demands from language models used in both general and clinical contexts <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[7]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[8]</a>. Mechanistic interpretability research now highlights limitations in moving from merely detecting harmful capabilities in language models to actively controlling them, which raises new issues for model safety <a href="https://arxiv.org/abs/2606.24952">[1]</a>. Work on detecting jailbreak attacks by analyzing entropy dynamics in model layers, without relying on knowledge of attack prompts, suggests novel defenses against prompt-based exploits <a href="https://arxiv.org/abs/2606.25182">[3]</a>. New benchmarks for clinical multimodal models aim to better evaluate hallucination risks and transparency in medical AI <a href="https://arxiv.org/abs/2606.24155">[9]</a>.</p>
-<p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the source items.</p>
+<p>OpenAI and Broadcom have announced a custom chip designed to manage large language model inference at scale in response to increased computational demands <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[8]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[9]</a>. As deployment of these models grows, new peer-reviewed research examines methods, benchmarks, and ongoing reliability challenges for using large language models in scientific peer review <a href="https://arxiv.org/abs/2606.25057">[3]</a>, including efforts to align language model-generated reviews more closely with human-level quality <a href="https://arxiv.org/abs/2606.20897">[14]</a>. At the model control and safety level, recent work highlights persistent gaps between detecting harmful capabilities and effectively steering model behavior, underlining the limits of current mechanistic interpretability techniques <a href="https://arxiv.org/abs/2606.24952">[2]</a>. Additionally, automated methods now allow for the detection of jailbreak attacks by analyzing entropy dynamics in model layers <a href="https://arxiv.org/abs/2606.25182">[4]</a>.</p>
+<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 25, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities">Anthropic says Alibaba must be punished for largest Claude cloning attack</a>
+    <p class="news-card-summary">Anthropic reports that Alibaba conducted a large-scale coordinated account campaign to extract Claude capabilities through millions of model exchanges.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2271847932-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
@@ -593,56 +615,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/ServiceNow/mosaicleaks">MosaicLeaks: Can your research agent keep a secret?</a>
-    <p class="news-card-summary">Study demonstrates that research agents can leak sensitive information from training data when queried strategically, raising security concerns for deployed AI systems.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 18, 2026</span></div>
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9b2i3/poolsidelagunam1_hugging_face_225ba23b">poolside/Laguna-M.1 · Hugging Face - 225B-A23B</a>
     <p class="news-card-summary">Laguna M.1, a 225 billion parameter mixture-of-experts model with 23 billion activated parameters, is now available on Hugging Face.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/vHCU5AFU0BwrXZl0c0jt_f_O2yQ-jV1nc7SNtokYWKU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=09eca81f311eecad4b4ad37a95cabbddf0e51bf0" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18273">Continuous Audio Thinking for Large Audio Language Models</a>
-    <p class="news-card-summary">Continuous Audio Thinking extends large audio language models with intermediate reasoning steps for improved audio processing and understanding.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18372">Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identification</a>
-    <p class="news-card-summary">Fully local artificial intelligence cascade de-identifies educational dialogue without sending data to external servers, balancing privacy and utility.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.18709">LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment</a>
-    <p class="news-card-summary">Study finds large language models struggle to measure item discrimination, a key psychometric property for assessing student reading comprehension differences.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/17/glm-52">GLM-5.2 is probably the most powerful text-only open weights LLM</a>
-    <p class="news-card-summary">Chinese AI lab Z.ai released GLM-5.2, an open-weights large language model, to coding plan subscribers with reported strong text-generation performance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/glm-5.2-pelican-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 17, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training">AI coding agents taught robots how to install GPUs and cut zip ties</a>
-    <p class="news-card-summary">Nvidia&#x27;s robot self-improvement program used teams of artificial intelligence coding agents to teach robots hardware installation tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/Screenshot-2026-06-17-at-2.40.06-PM-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
 
@@ -685,23 +662,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-meta">OpenAI, June 18, 2026</span>
   <span class="video-card-desc">OpenAI describes improvements to health intelligence features in ChatGPT, including enhanced medical information handling for its 230 million weekly health-related user queries.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=tFiJMUNJdJU" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/tFiJMUNJdJU/hqdefault.jpg" alt="Video: Liquid LFM2.5-8B First Test, An On-Device MoE Model!" loading="lazy">
-  <span class="video-card-title">Liquid LFM2.5-8B First Test, An On-Device MoE Model!</span>
-  <span class="video-card-meta">Bijan Bowen, June 18, 2026</span>
-  <span class="video-card-desc">Demonstration of Liquid LFM2.5-8B, an on-device mixture-of-experts model suitable for local deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=4Vg2aVtrX8k" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/4Vg2aVtrX8k/hqdefault.jpg" alt="Video: Building AI Agents for Real-World Problems &amp; Workflows" loading="lazy">
-  <span class="video-card-title">Building AI Agents for Real-World Problems &amp; Workflows</span>
-  <span class="video-card-meta">IBM Technology, June 18, 2026</span>
-  <span class="video-card-desc">IBM&#x27;s overview of building and evaluating AI agents for real-world applications and clinical workflows.</span>
-</a>
 </div>
 
 ## Podcasts
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/victoria-hedlund-on-ai-bias-what-every-teacher-needs-to-know" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Victoria Hedlund on AI bias: What every teacher needs to know" loading="lazy">
+  <span class="video-card-title">Victoria Hedlund on AI bias: What every teacher needs to know</span>
+  <span class="video-card-meta">AI in Education Podcast, June 25, 2026</span>
+  <span class="video-card-desc">Victoria Hedlund discusses AI bias in educational systems and implications for teachers and students.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/e039d1ca" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg" alt="Video: AIUC-1: Building trust in AI agents" loading="lazy">
   <span class="video-card-title">AIUC-1: Building trust in AI agents</span>

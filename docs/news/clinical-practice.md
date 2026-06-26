@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Foundation models are now enabling multi-planar MRI reconstruction to advance uterine fibroid imaging with minimal manual segmentation, highlighting improvements in diagnostic efficiency <a href="https://www.nature.com/articles/s41746-026-02780-6">[3]</a>. Meanwhile, large language models have been integrated with machine learning to predict lymph node metastasis, supporting more precise cancer staging <a href="https://medinform.jmir.org/2026/1/e86700">[11]</a>. Automated reanalysis tools such as Talos provide scalable reinterpretation of genomic data, increasing the diagnostic yield for rare diseases over extended periods <a href="https://www.nature.com/articles/s41591-026-04477-5">[5]</a>. In ambulatory care, ambient artificial intelligence scribes have reduced the burden of electronic health record documentation for physicians, streamlining clinical workflows <a href="https://medinform.jmir.org/2026/1/e84104">[6]</a>. There is also progress toward trustworthy AI-driven cuffless blood pressure monitoring, addressing concerns about sensor-free measurement reliability <a href="https://www.nature.com/articles/s41746-026-02898-7">[1]</a>.</p>
-<p class="section-brief-date">The picture as of June 25, 2026; numbered links go to the items below.</p>
+<p>A cluster-randomized trial evaluated the impact of a generative AI-enabled clinical decision support system in primary care, providing evidence for implementation in real-world settings <a href="https://www.nature.com/articles/s41591-026-04503-6">[1]</a>. Studies highlight the evaluation of frontier health AI models for robustness and readiness, using adversarial tests to address their suitability in clinical contexts <a href="https://www.nature.com/articles/s41591-026-04501-8">[2]</a>. Trustworthiness concerns are also investigated in the development of AI-driven cuffless blood pressure monitoring, which aims to eliminate traditional sensors <a href="https://www.nature.com/articles/s41746-026-02898-7">[3]</a>. Automated tools continue to advance diagnostic support, with one system facilitating large-scale genomic data reanalysis to improve rare disease diagnostic yields <a href="https://www.nature.com/articles/s41591-026-04477-5">[7]</a>, and another reducing physician documentation burden by implementing ambient AI scribes in ambulatory care <a href="https://medinform.jmir.org/2026/1/e84104">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04503-6">Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial</a>
+    <p class="news-card-summary">Pragmatic cluster-randomized trial published in Nature Medicine evaluates a generative AI-enabled clinical decision support system in primary care.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04501-8">Evaluating the robustness and readiness of large frontier models in health AI applications</a>
+    <p class="news-card-summary">Nature Medicine study evaluates robustness and readiness of large frontier models in health AI applications through adversarial evaluation methods.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 25, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02905-x">An expert-level vision-language model for multitask diagnostic morphology in clinical laboratories</a>
     <p class="news-card-summary">Expert-level vision-language model performs multitask diagnostic analysis on clinical laboratory morphology samples, demonstrating machine learning application in pathology.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04454-y">A case of artificial intelligence-enhanced diagnostics leading to heart transplantation</a>
-    <p class="news-card-summary">Case report describes artificial intelligence-enhanced diagnostic approach that identified cardiac dysfunction and enabled successful heart transplantation in a patient.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02783-3">Handling missing modalities in multimodal survival prediction for non-small cell lung cancer</a>
-    <p class="news-card-summary">Peer-reviewed study addresses technical challenge of missing data modalities in multimodal machine learning for lung cancer survival prediction.</p>
   </div>
 </div>
 </div>

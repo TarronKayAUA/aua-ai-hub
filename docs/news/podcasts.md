@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/victoria-hedlund-on-ai-bias-what-every-teacher-needs-to-know" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Victoria Hedlund on AI bias: What every teacher needs to know" loading="lazy">
+  <span class="video-card-title">Victoria Hedlund on AI bias: What every teacher needs to know</span>
+  <span class="video-card-meta">AI in Education Podcast, June 25, 2026</span>
+  <span class="video-card-desc">Victoria Hedlund discusses AI bias in educational systems and implications for teachers and students.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/e039d1ca" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg" alt="Video: AIUC-1: Building trust in AI agents" loading="lazy">
   <span class="video-card-title">AIUC-1: Building trust in AI agents</span>
