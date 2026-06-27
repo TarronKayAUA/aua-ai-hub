@@ -189,13 +189,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Voluntary use of LLM-powered virtual standardized patients and medical students&#x27; interview performance: An observational study</a>
-    <p class="news-card-summary">Voluntary use of large language model-powered virtual standardized patients within human standardized patient curricula showed small but measurable associations with improved medical student interview performance.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323590?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Construction of a faculty competency model for medical simulation education integrated with GenAI: a multi-method quantitative study based on the perspective of medical students</a>
     <p class="news-card-summary">Validated competency model identifies skills and knowledge faculty need to teach medical simulation education integrated with generative artificial intelligence.</p>
   </div>
@@ -205,13 +198,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42323560?fc=20260609215449&amp;ff=20260622150046&amp;v=2.20.0">Evaluation of ChatGPT-4o&#x27;s and DeepSeek R1&#x27;s responses to urological problems: a comparative study</a>
     <p class="news-card-summary">Comparative study evaluates ChatGPT-4o and DeepSeek R1 performance on clinical urology questions, finding DeepSeek R1 superior in accuracy and reasoning.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42320614?fc=20260609215449&amp;ff=20260620082131&amp;v=2.20.0">Clinical Artificial Intelligence Competence in Obstetrics and Gynecology: Patient Safety, Physician Accountability, and Responsible Use</a>
-    <p class="news-card-summary">Peer-reviewed analysis of clinical AI competence requirements in obstetrics and gynecology, addressing patient safety, physician accountability, and responsible AI use.</p>
   </div>
 </div>
 </div>
@@ -371,20 +357,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02907-9">FetalCLIP: a visual-language foundation model for fetal ultrasound image analysis</a>
-    <p class="news-card-summary">FetalCLIP, a visual-language foundation model for fetal ultrasound image analysis, published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02822-z">Treatment-aware deep learning enables counterfactual prediction of individual benefit from PARP inhibitors in ovarian cancer</a>
-    <p class="news-card-summary">Treatment-aware deep learning model predicts individual benefit from poly ADP-ribose polymerase inhibitors in ovarian cancer patients.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02918-6">Human-AI Collaboration in Healthcare: A Scoping Review</a>
     <p class="news-card-summary">Scoping review examines frameworks and outcomes of human-AI collaboration in clinical settings and healthcare delivery.</p>
   </div>
@@ -396,31 +368,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Multicenter study develops an interpretable machine learning model to predict kidney failure in children with congenital anomalies of the kidney and urinary tract.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82762">Online Sepsis Prediction Using Vital Signs and Multiscale Temporal-Aware Contrastive Learning: Model Development and Validation Study</a>
-    <p class="news-card-summary">Real-time sepsis prediction model using vital signs and multiscale temporal-aware contrastive learning, developed and validated for clinical deployment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/677a3087d1aecb49d42a61aa982131e0.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02912-y">A scoping review of human-AI collaboration patterns and task divisions in healthcare applications</a>
-    <p class="news-card-summary">Scoping review of human-AI collaboration patterns and task divisions across healthcare applications, published in npj Digital Medicine.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI and Broadcom have developed a custom chip engineered to support large language model inference at scale, a move that addresses increasing computational needs for deploying advanced AI systems <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[10]</a>. Simultaneously, OpenAI has previewed GPT-5.6 Sol, highlighting continued innovation in model architecture and capabilities <a href="https://openai.com/index/previewing-gpt-5-6-sol">[1]</a>. Anthropic alleges that Alibaba engaged in a significant, coordinated effort to extract and potentially replicate the proprietary capabilities of Claude models, intensifying ongoing concerns about model security and intellectual property risks <a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities">[2]</a>. Mechanistic interpretability research underscores a persistent challenge: while harmful abilities in language models are now easier to detect, reliably controlling that behavior remains difficult <a href="https://arxiv.org/abs/2606.24952">[3]</a>.</p>
+<p>OpenAI and Broadcom have unveiled a custom chip optimized specifically for large language model inference to meet the computational demands of scalable deployments <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. As next-generation models like GPT-5.6 Sol are previewed, attention is growing on how improvements in model architecture and hardware could influence clinical and scientific applications <a href="https://openai.com/index/previewing-gpt-5-6-sol">[2]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. At the same time, studies are examining the reliability and challenges of using large language models in roles such as scientific peer review, highlighting methods and benchmark creation as well as evaluating model judgment against multi-round editorial processes <a href="https://arxiv.org/abs/2606.25057">[5]</a> <a href="https://arxiv.org/abs/2606.20769">[15]</a>. Mechanistic interpretability research continues to expose gaps between detecting harmful capabilities in language models and success in actually controlling those outputs <a href="https://arxiv.org/abs/2606.24952">[4]</a>.</p>
 <p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">DSpark: Speculative decoding accelerates LLM inference [pdf]</a>
+    <p class="news-card-summary">DeepSeek&#x27;s DSpark method uses speculative decoding to accelerate large language model inference speed.</p>
+  </div>
+  <img class="news-card-thumb" src="https://opengraph.githubassets.com/ea272ca2bbf5c56f91240ee0fc4892bb5800442ef3a5c96fb0ed556503386540/deepseek-ai/DeepSpec" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 26, 2026</span></div>
@@ -579,14 +544,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9w6my/researchers_trained_a_deep_research_agent_with_32">Researchers trained a Deep Research agent with 32 H100s and open-sourced everything</a>
-    <p class="news-card-summary">Ohio State University&#x27;s NLP team released QUEST-35B, an open-source deep research agent trained on 32 H100 GPUs with full training details published.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/hdrqhare878h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1207b6e96b3fa00c41dc3254251976b3a01467cb" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9vfhf/glm52_can_now_run_locally_in_llamacpp_and_unsloth">GLM-5.2 can now run locally in llama.cpp and Unsloth Studio.</a>
     <p class="news-card-summary">GLM-5.2 is now runnable locally via llama.cpp and Unsloth Studio after compression from 1.51TB to 238GB while retaining 82 percent accuracy.</p>
   </div>
@@ -628,12 +585,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!</span>
   <span class="video-card-meta">Bijan Bowen, June 20, 2026</span>
   <span class="video-card-desc">Demonstration and technical walkthrough of Cohere&#x27;s North Mini, a local agentic coding model suitable for running without cloud infrastructure.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=0JIbgZ544wU" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/0JIbgZ544wU/hqdefault.jpg" alt="Video: What Codex Unlocks for NTT Data" loading="lazy">
-  <span class="video-card-title">What Codex Unlocks for NTT Data</span>
-  <span class="video-card-meta">OpenAI, June 19, 2026</span>
-  <span class="video-card-desc">OpenAI describes how Codex, a code generation model, grew to over 10,000 active users and applications in enterprise software development.</span>
 </a>
 </div>
 

@@ -9223,6 +9223,25 @@
    "title_hash": "f639c83d813fe8cd991fc423f863e96a",
    "first_seen": "2026-06-27T11:57:39.405186+00:00",
    "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ugyqsi/96_gig_5090s_from_shenzhens_huaqiangbei",
+   "title_hash": "aebbabe81563e26170f69b6a6b9fa768",
+   "first_seen": "2026-06-27T15:04:52.531998+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+   "title_hash": "71cabf1559910170339441a022167c42",
+   "first_seen": "2026-06-27T15:04:52.531998+00:00",
+   "kept": true,
+   "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-06-27T09:18:52+00:00",
+   "summary": "DeepSeek's DSpark method uses speculative decoding to accelerate large language model inference speed.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://opengraph.githubassets.com/ea272ca2bbf5c56f91240ee0fc4892bb5800442ef3a5c96fb0ed556503386540/deepseek-ai/DeepSpec"
   }
  ],
  "digests": [
@@ -9341,8 +9360,8 @@
    "date": "June 27, 2026"
   },
   "general_ai": {
-   "text": "OpenAI and Broadcom have developed a custom chip engineered to support large language model inference at scale, a move that addresses increasing computational needs for deploying advanced AI systems <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[10]</a>. Simultaneously, OpenAI has previewed GPT-5.6 Sol, highlighting continued innovation in model architecture and capabilities <a href=\"https://openai.com/index/previewing-gpt-5-6-sol\">[1]</a>. Anthropic alleges that Alibaba engaged in a significant, coordinated effort to extract and potentially replicate the proprietary capabilities of Claude models, intensifying ongoing concerns about model security and intellectual property risks <a href=\"https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities\">[2]</a>. Mechanistic interpretability research underscores a persistent challenge: while harmful abilities in language models are now easier to detect, reliably controlling that behavior remains difficult <a href=\"https://arxiv.org/abs/2606.24952\">[3]</a>.",
-   "hash": "9c45691e376f02df",
+   "text": "OpenAI and Broadcom have unveiled a custom chip optimized specifically for large language model inference to meet the computational demands of scalable deployments <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[11]</a>. As next-generation models like GPT-5.6 Sol are previewed, attention is growing on how improvements in model architecture and hardware could influence clinical and scientific applications <a href=\"https://openai.com/index/previewing-gpt-5-6-sol\">[2]</a> <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[11]</a>. At the same time, studies are examining the reliability and challenges of using large language models in roles such as scientific peer review, highlighting methods and benchmark creation as well as evaluating model judgment against multi-round editorial processes <a href=\"https://arxiv.org/abs/2606.25057\">[5]</a> <a href=\"https://arxiv.org/abs/2606.20769\">[15]</a>. Mechanistic interpretability research continues to expose gaps between detecting harmful capabilities in language models and success in actually controlling those outputs <a href=\"https://arxiv.org/abs/2606.24952\">[4]</a>.",
+   "hash": "34efa40261558543",
    "date": "June 27, 2026"
   }
  }

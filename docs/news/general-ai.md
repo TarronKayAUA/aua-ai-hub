@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI and Broadcom have developed a custom chip engineered to support large language model inference at scale, a move that addresses increasing computational needs for deploying advanced AI systems <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[10]</a>. Simultaneously, OpenAI has previewed GPT-5.6 Sol, highlighting continued innovation in model architecture and capabilities <a href="https://openai.com/index/previewing-gpt-5-6-sol">[1]</a>. Anthropic alleges that Alibaba engaged in a significant, coordinated effort to extract and potentially replicate the proprietary capabilities of Claude models, intensifying ongoing concerns about model security and intellectual property risks <a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities">[2]</a>. Mechanistic interpretability research underscores a persistent challenge: while harmful abilities in language models are now easier to detect, reliably controlling that behavior remains difficult <a href="https://arxiv.org/abs/2606.24952">[3]</a>.</p>
+<p>OpenAI and Broadcom have unveiled a custom chip optimized specifically for large language model inference to meet the computational demands of scalable deployments <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. As next-generation models like GPT-5.6 Sol are previewed, attention is growing on how improvements in model architecture and hardware could influence clinical and scientific applications <a href="https://openai.com/index/previewing-gpt-5-6-sol">[2]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. At the same time, studies are examining the reliability and challenges of using large language models in roles such as scientific peer review, highlighting methods and benchmark creation as well as evaluating model judgment against multi-round editorial processes <a href="https://arxiv.org/abs/2606.25057">[5]</a> <a href="https://arxiv.org/abs/2606.20769">[15]</a>. Mechanistic interpretability research continues to expose gaps between detecting harmful capabilities in language models and success in actually controlling those outputs <a href="https://arxiv.org/abs/2606.24952">[4]</a>.</p>
 <p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">DSpark: Speculative decoding accelerates LLM inference [pdf]</a>
+    <p class="news-card-summary">DeepSeek&#x27;s DSpark method uses speculative decoding to accelerate large language model inference speed.</p>
+  </div>
+  <img class="news-card-thumb" src="https://opengraph.githubassets.com/ea272ca2bbf5c56f91240ee0fc4892bb5800442ef3a5c96fb0ed556503386540/deepseek-ai/DeepSpec" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 26, 2026</span></div>
@@ -119,13 +127,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.20769">FirstPass: Grounding AI Scientific Judgment in Multi-Round Editorial Outcomes</a>
     <p class="news-card-summary">Study evaluates AI systems for peer review against editorial outcomes, identifying three core failure modes in scientific judgment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.20897">PeerCheck: Enhancing LLM-Generated Academic Reviews Towards Human-Level Quality</a>
-    <p class="news-card-summary">Preprint presents methods for improving language model generated academic peer reviews to approximate human-level quality.</p>
   </div>
 </div>
 </div>
