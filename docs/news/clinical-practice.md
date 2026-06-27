@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A cluster-randomized trial evaluated the impact of a generative AI-enabled clinical decision support system in primary care, providing evidence for implementation in real-world settings <a href="https://www.nature.com/articles/s41591-026-04503-6">[1]</a>. Studies highlight the evaluation of frontier health AI models for robustness and readiness, using adversarial tests to address their suitability in clinical contexts <a href="https://www.nature.com/articles/s41591-026-04501-8">[2]</a>. Trustworthiness concerns are also investigated in the development of AI-driven cuffless blood pressure monitoring, which aims to eliminate traditional sensors <a href="https://www.nature.com/articles/s41746-026-02898-7">[3]</a>. Automated tools continue to advance diagnostic support, with one system facilitating large-scale genomic data reanalysis to improve rare disease diagnostic yields <a href="https://www.nature.com/articles/s41591-026-04477-5">[7]</a>, and another reducing physician documentation burden by implementing ambient AI scribes in ambulatory care <a href="https://medinform.jmir.org/2026/1/e84104">[8]</a>.</p>
-<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the items below.</p>
+<p>A cluster-randomized trial assesses the clinical impact of a generative AI-enabled decision support system in primary care, providing evidence for how artificial intelligence can influence patient management <a href="https://www.nature.com/articles/s41591-026-04503-6">[2]</a>. Evaluation of large frontier models highlights both the robustness and limitations of advanced health AI applications, raising questions about the reliability of these tools in clinical environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[3]</a>. In a regional health system, the deployment and measurement of ambient AI demonstrates ongoing efforts to understand its practical value and scalability outside of academic centers <a href="https://medinform.jmir.org/2026/1/e87450">[1]</a>. Ambient AI scribes have also eased documentation processes for ambulatory physicians, suggesting potential workflow benefits <a href="https://medinform.jmir.org/2026/1/e84104">[9]</a>. Automated reanalysis tools for genomic data are enhancing rare disease diagnostics by enabling reinterpretation at scale <a href="https://www.nature.com/articles/s41591-026-04477-5">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87450">Selecting, Scaling, and Measuring the Value of Ambient AI in a Nonacademic Health System: Multiphase Pilot Study</a>
+    <p class="news-card-summary">Multiphase pilot study of implementing and measuring the clinical and financial value of ambient AI in a regional health system.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/d7c5d376154c2e1c6e7f2101efc740ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02916-8">Development of a multimodal large language model for early warning and diagnosis of chronic ocular GVHD</a>
     <p class="news-card-summary">Multimodal large language model developed for early warning and diagnosis of chronic ocular graft-versus-host disease, a complication of hematopoietic stem cell transplantation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02905-x">An expert-level vision-language model for multitask diagnostic morphology in clinical laboratories</a>
-    <p class="news-card-summary">Expert-level vision-language model performs multitask diagnostic analysis on clinical laboratory morphology samples, demonstrating machine learning application in pathology.</p>
   </div>
 </div>
 </div>

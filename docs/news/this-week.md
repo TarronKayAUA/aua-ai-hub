@@ -11,11 +11,33 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Artificial intelligence is being rapidly integrated into medical education, particularly within clinical skills curricula, where implementation has accelerated since 2022 across simulation and assessment activities <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[1]</a>. In practical skill evaluation, research identifies complementary error patterns between human evaluators and GPT-4o for video-based CPR assessment, supporting hybrid approaches to skill validation <a href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[3]</a>. Large language models are also emerging as supportive tools, with evidence for their promising use in providing automated feedback in medical imaging education <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[2]</a> and in powering adaptable clinical simulation systems for gastroenterology training <a href="https://pubmed.ncbi.nlm.nih.gov/42351097?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[8]</a>. These developments coincide with studies showing AI can match expert evaluations of technical clinical skills <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[10]</a>.</p>
-<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the source items.</p>
+<p>Comparative studies of reasoning models show large language models can support radiology resident education and clinical decision-making, with benchmarked differences between DeepSeek-R1 and ChatGPT-o1 <a href="https://ai.jmir.org/2026/1/e86974">[3]</a>. Evaluations across platforms including ChatGPT-5, Gemini 2.5, and Grok 4 also compare radiological anatomy accuracy and modes of reasoning, providing insight into how varied AI models perform on key medical content <a href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">[2]</a>. Systematic reviews highlight the promise of large language models in supplying automated feedback for medical imaging education, suggesting efficiencies in formative assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[5]</a>. Evidence indicates AI technologies are accelerating clinical skills education since 2022, particularly through simulation and assessment tools <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[4]</a>, as well as demonstrating effectiveness in quantifying clinical skills compared to expert evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[14]</a>.</p>
+<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363535?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Large language models in radiology exams: A cross-sectional comparative analysis of performance in Turkish and English</a>
+    <p class="news-card-summary">Cross-sectional analysis of large language model performance on radiology exam questions in Turkish and English languages.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Comparative evaluation of radiological anatomy knowledge and accuracy of ChatGPT-5, Gemini 2.5, and Grok 4 across normal and thinking modes</a>
+    <p class="news-card-summary">Comparative evaluation of ChatGPT-5, Gemini 2.5, and Grok 4 performance on radiological anatomy knowledge with standard and extended thinking modes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e86974">Supporting Radiology Resident Education and Clinical Decision-Making With Large Language Models: Comparative Study of Reasoning Models DeepSeek-R1 and ChatGPT-o1</a>
+    <p class="news-card-summary">Study comparing reasoning models for supporting radiology resident education and clinical decision-making with large language models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/7e0f19bead3613bae49a99c49ae44da4.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
@@ -49,6 +71,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351276?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Artificial intelligence to support debriefing in simulation-based healthcare education: a scoping review</a>
     <p class="news-card-summary">Scoping review identifies artificial intelligence as an emerging supportive tool for debriefing in simulation-based healthcare education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42361810?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">The Avatar Advantage: AI-Powered Faculty Development to Enhance Feedback Delivery Skills</a>
+    <p class="news-card-summary">Study demonstrates AI-powered avatars provide reliable and consistent feedback delivery for faculty development in teaching skills.</p>
   </div>
 </div>
 <div class="news-card">
@@ -190,11 +219,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A cluster-randomized trial evaluated the impact of a generative AI-enabled clinical decision support system in primary care, providing evidence for implementation in real-world settings <a href="https://www.nature.com/articles/s41591-026-04503-6">[1]</a>. Studies highlight the evaluation of frontier health AI models for robustness and readiness, using adversarial tests to address their suitability in clinical contexts <a href="https://www.nature.com/articles/s41591-026-04501-8">[2]</a>. Trustworthiness concerns are also investigated in the development of AI-driven cuffless blood pressure monitoring, which aims to eliminate traditional sensors <a href="https://www.nature.com/articles/s41746-026-02898-7">[3]</a>. Automated tools continue to advance diagnostic support, with one system facilitating large-scale genomic data reanalysis to improve rare disease diagnostic yields <a href="https://www.nature.com/articles/s41591-026-04477-5">[7]</a>, and another reducing physician documentation burden by implementing ambient AI scribes in ambulatory care <a href="https://medinform.jmir.org/2026/1/e84104">[8]</a>.</p>
-<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the source items.</p>
+<p>A cluster-randomized trial assesses the clinical impact of a generative AI-enabled decision support system in primary care, providing evidence for how artificial intelligence can influence patient management <a href="https://www.nature.com/articles/s41591-026-04503-6">[2]</a>. Evaluation of large frontier models highlights both the robustness and limitations of advanced health AI applications, raising questions about the reliability of these tools in clinical environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[3]</a>. In a regional health system, the deployment and measurement of ambient AI demonstrates ongoing efforts to understand its practical value and scalability outside of academic centers <a href="https://medinform.jmir.org/2026/1/e87450">[1]</a>. Ambient AI scribes have also eased documentation processes for ambulatory physicians, suggesting potential workflow benefits <a href="https://medinform.jmir.org/2026/1/e84104">[9]</a>. Automated reanalysis tools for genomic data are enhancing rare disease diagnostics by enabling reinterpretation at scale <a href="https://www.nature.com/articles/s41591-026-04477-5">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87450">Selecting, Scaling, and Measuring the Value of Ambient AI in a Nonacademic Health System: Multiphase Pilot Study</a>
+    <p class="news-card-summary">Multiphase pilot study of implementing and measuring the clinical and financial value of ambient AI in a regional health system.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/d7c5d376154c2e1c6e7f2101efc740ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
@@ -379,11 +416,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI and Broadcom have announced a custom chip designed to manage large language model inference at scale in response to increased computational demands <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[8]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[9]</a>. As deployment of these models grows, new peer-reviewed research examines methods, benchmarks, and ongoing reliability challenges for using large language models in scientific peer review <a href="https://arxiv.org/abs/2606.25057">[3]</a>, including efforts to align language model-generated reviews more closely with human-level quality <a href="https://arxiv.org/abs/2606.20897">[14]</a>. At the model control and safety level, recent work highlights persistent gaps between detecting harmful capabilities and effectively steering model behavior, underlining the limits of current mechanistic interpretability techniques <a href="https://arxiv.org/abs/2606.24952">[2]</a>. Additionally, automated methods now allow for the detection of jailbreak attacks by analyzing entropy dynamics in model layers <a href="https://arxiv.org/abs/2606.25182">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the source items.</p>
+<p>OpenAI and Broadcom have developed a custom chip engineered to support large language model inference at scale, a move that addresses increasing computational needs for deploying advanced AI systems <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[10]</a>. Simultaneously, OpenAI has previewed GPT-5.6 Sol, highlighting continued innovation in model architecture and capabilities <a href="https://openai.com/index/previewing-gpt-5-6-sol">[1]</a>. Anthropic alleges that Alibaba engaged in a significant, coordinated effort to extract and potentially replicate the proprietary capabilities of Claude models, intensifying ongoing concerns about model security and intellectual property risks <a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities">[2]</a>. Mechanistic interpretability research underscores a persistent challenge: while harmful abilities in language models are now easier to detect, reliably controlling that behavior remains difficult <a href="https://arxiv.org/abs/2606.24952">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://openai.com/index/previewing-gpt-5-6-sol">Previewing GPT‑5.6 Sol: a next-generation model</a>
+    <p class="news-card-summary">OpenAI releases system card and preview for GPT-5.6 Sol, a next-generation large language model.</p>
+  </div>
+  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/48XpR5dxhE6jJQ03HTUnWZ/ac68fbfb7761fa72ac7442c6744dba56/_.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 25, 2026</span></div>

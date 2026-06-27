@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI and Broadcom have announced a custom chip designed to manage large language model inference at scale in response to increased computational demands <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[8]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[9]</a>. As deployment of these models grows, new peer-reviewed research examines methods, benchmarks, and ongoing reliability challenges for using large language models in scientific peer review <a href="https://arxiv.org/abs/2606.25057">[3]</a>, including efforts to align language model-generated reviews more closely with human-level quality <a href="https://arxiv.org/abs/2606.20897">[14]</a>. At the model control and safety level, recent work highlights persistent gaps between detecting harmful capabilities and effectively steering model behavior, underlining the limits of current mechanistic interpretability techniques <a href="https://arxiv.org/abs/2606.24952">[2]</a>. Additionally, automated methods now allow for the detection of jailbreak attacks by analyzing entropy dynamics in model layers <a href="https://arxiv.org/abs/2606.25182">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the items below.</p>
+<p>OpenAI and Broadcom have developed a custom chip engineered to support large language model inference at scale, a move that addresses increasing computational needs for deploying advanced AI systems <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[10]</a>. Simultaneously, OpenAI has previewed GPT-5.6 Sol, highlighting continued innovation in model architecture and capabilities <a href="https://openai.com/index/previewing-gpt-5-6-sol">[1]</a>. Anthropic alleges that Alibaba engaged in a significant, coordinated effort to extract and potentially replicate the proprietary capabilities of Claude models, intensifying ongoing concerns about model security and intellectual property risks <a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities">[2]</a>. Mechanistic interpretability research underscores a persistent challenge: while harmful abilities in language models are now easier to detect, reliably controlling that behavior remains difficult <a href="https://arxiv.org/abs/2606.24952">[3]</a>.</p>
+<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://openai.com/index/previewing-gpt-5-6-sol">Previewing GPT‑5.6 Sol: a next-generation model</a>
+    <p class="news-card-summary">OpenAI releases system card and preview for GPT-5.6 Sol, a next-generation large language model.</p>
+  </div>
+  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/48XpR5dxhE6jJQ03HTUnWZ/ac68fbfb7761fa72ac7442c6744dba56/_.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 25, 2026</span></div>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.20897">PeerCheck: Enhancing LLM-Generated Academic Reviews Towards Human-Level Quality</a>
     <p class="news-card-summary">Preprint presents methods for improving language model generated academic peer reviews to approximate human-level quality.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.16140">VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO</a>
-    <p class="news-card-summary">VibeThinker, a 3-billion-parameter model, achieves reasoning performance exceeding Anthropic&#x27;s Opus 4.5 using supervised fine-tuning and group relative policy optimization.</p>
   </div>
 </div>
 </div>

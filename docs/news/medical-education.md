@@ -13,11 +13,33 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Artificial intelligence is being rapidly integrated into medical education, particularly within clinical skills curricula, where implementation has accelerated since 2022 across simulation and assessment activities <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[1]</a>. In practical skill evaluation, research identifies complementary error patterns between human evaluators and GPT-4o for video-based CPR assessment, supporting hybrid approaches to skill validation <a href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[3]</a>. Large language models are also emerging as supportive tools, with evidence for their promising use in providing automated feedback in medical imaging education <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[2]</a> and in powering adaptable clinical simulation systems for gastroenterology training <a href="https://pubmed.ncbi.nlm.nih.gov/42351097?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[8]</a>. These developments coincide with studies showing AI can match expert evaluations of technical clinical skills <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[10]</a>.</p>
-<p class="section-brief-date">The picture as of June 26, 2026; numbered links go to the items below.</p>
+<p>Comparative studies of reasoning models show large language models can support radiology resident education and clinical decision-making, with benchmarked differences between DeepSeek-R1 and ChatGPT-o1 <a href="https://ai.jmir.org/2026/1/e86974">[3]</a>. Evaluations across platforms including ChatGPT-5, Gemini 2.5, and Grok 4 also compare radiological anatomy accuracy and modes of reasoning, providing insight into how varied AI models perform on key medical content <a href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">[2]</a>. Systematic reviews highlight the promise of large language models in supplying automated feedback for medical imaging education, suggesting efficiencies in formative assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[5]</a>. Evidence indicates AI technologies are accelerating clinical skills education since 2022, particularly through simulation and assessment tools <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[4]</a>, as well as demonstrating effectiveness in quantifying clinical skills compared to expert evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[14]</a>.</p>
+<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363535?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Large language models in radiology exams: A cross-sectional comparative analysis of performance in Turkish and English</a>
+    <p class="news-card-summary">Cross-sectional analysis of large language model performance on radiology exam questions in Turkish and English languages.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Comparative evaluation of radiological anatomy knowledge and accuracy of ChatGPT-5, Gemini 2.5, and Grok 4 across normal and thinking modes</a>
+    <p class="news-card-summary">Comparative evaluation of ChatGPT-5, Gemini 2.5, and Grok 4 performance on radiological anatomy knowledge with standard and extended thinking modes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e86974">Supporting Radiology Resident Education and Clinical Decision-Making With Large Language Models: Comparative Study of Reasoning Models DeepSeek-R1 and ChatGPT-o1</a>
+    <p class="news-card-summary">Study comparing reasoning models for supporting radiology resident education and clinical decision-making with large language models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/7e0f19bead3613bae49a99c49ae44da4.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
@@ -51,6 +73,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351276?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Artificial intelligence to support debriefing in simulation-based healthcare education: a scoping review</a>
     <p class="news-card-summary">Scoping review identifies artificial intelligence as an emerging supportive tool for debriefing in simulation-based healthcare education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42361810?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">The Avatar Advantage: AI-Powered Faculty Development to Enhance Feedback Delivery Skills</a>
+    <p class="news-card-summary">Study demonstrates AI-powered avatars provide reliable and consistent feedback delivery for faculty development in teaching skills.</p>
   </div>
 </div>
 <div class="news-card">
@@ -94,34 +123,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Impact of a Practical, Hands-On, Continuing Professional Development Course About AI in Health Care Professions Education on the Perceptions and Behaviors of Health Care Educators: Qualitative Case Study</a>
     <p class="news-card-summary">A six-week continuing professional development course on artificial intelligence in healthcare improved educator perceptions of AI tools and competence.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42337771?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Medical students&#x27; knowledge and attitude towards using artificial intelligence in medical education and practice: a pre-post study</a>
-    <p class="news-card-summary">A pre-post study shows a curriculum intervention improved medical students&#x27; knowledge and attitudes toward artificial intelligence in healthcare.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42333051?fc=20260609215449&amp;ff=20260623121519&amp;v=2.20.0">Lowering the Barrier to Surgical Research: Can Artificial Intelligence (AI) Support Trainees?</a>
-    <p class="news-card-summary">Peer-reviewed investigation examines how artificial intelligence can support surgical trainees in conducting research.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42334858?fc=20260609215449&amp;ff=20260623132825&amp;v=2.20.0">A Two-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT 5 and Gemini on the German M2 Medical Exam: Evaluation Study</a>
-    <p class="news-card-summary">Study reveals that large language models fail systematically on harder German medical exam questions despite high overall scores, requiring rescue protocols to improve performance.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42335861?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Large language models exhibit greater diagnostic anchoring than physicians in a forced-choice vignette study</a>
-    <p class="news-card-summary">Large language models exhibit significantly greater diagnostic anchoring bias than physicians in a forced-choice clinical vignette study.</p>
   </div>
 </div>
 </div>
