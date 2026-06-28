@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
+  <span class="video-card-title">The Promptware Kill Chain: How Prompt Injection Becomes AI Malware</span>
+  <span class="video-card-meta">IBM Technology, June 28, 2026</span>
+  <span class="video-card-desc">IBM Security explains prompt injection attacks and how they can be weaponized as AI malware, covering attack methods and defenses.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=V04bm-3d6EQ" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/V04bm-3d6EQ/hqdefault.jpg" alt="Video: When millions of AI agents meet" loading="lazy">
   <span class="video-card-title">When millions of AI agents meet</span>
@@ -137,12 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Debug web apps with browser use in Codex</span>
   <span class="video-card-meta">OpenAI, June 12, 2026</span>
   <span class="video-card-desc">OpenAI demonstrates how Codex uses Chrome DevTools Protocol to debug web applications by inspecting logs and runtime state.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=UE_vuadQrJ0" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/UE_vuadQrJ0/hqdefault.jpg" alt="Video: AI That’s Too Dangerous For You? What we learned from S.A.T.A.N" loading="lazy">
-  <span class="video-card-title">AI That’s Too Dangerous For You? What we learned from S.A.T.A.N</span>
-  <span class="video-card-meta">IBM Technology, June 11, 2026</span>
-  <span class="video-card-desc">This video discusses AI uncovering cybersecurity vulnerabilities, focusing on lessons learned from the S.A.T.A.N project and implications for AI safety.</span>
 </a>
 </div>
 

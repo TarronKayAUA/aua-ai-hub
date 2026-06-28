@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A cluster-randomized trial assesses the clinical impact of a generative AI-enabled decision support system in primary care, providing evidence for how artificial intelligence can influence patient management <a href="https://www.nature.com/articles/s41591-026-04503-6">[2]</a>. Evaluation of large frontier models highlights both the robustness and limitations of advanced health AI applications, raising questions about the reliability of these tools in clinical environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[3]</a>. In a regional health system, the deployment and measurement of ambient AI demonstrates ongoing efforts to understand its practical value and scalability outside of academic centers <a href="https://medinform.jmir.org/2026/1/e87450">[1]</a>. Ambient AI scribes have also eased documentation processes for ambulatory physicians, suggesting potential workflow benefits <a href="https://medinform.jmir.org/2026/1/e84104">[9]</a>. Automated reanalysis tools for genomic data are enhancing rare disease diagnostics by enabling reinterpretation at scale <a href="https://www.nature.com/articles/s41591-026-04477-5">[8]</a>.</p>
-<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the items below.</p>
+<p>A cluster-randomized trial has evaluated the impact of a generative AI-enabled clinical decision support system in primary care settings, contributing evidence on both safety and effectiveness as AI tools integrate further into routine practice <a href="https://www.nature.com/articles/s41591-026-04503-6">[3]</a>. Studies are also focusing on the robustness and readiness of large frontier models for clinical use, employing adversarial methods to probe reliability, which remains critical as healthcare providers consider deployment in sensitive environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[4]</a>. Automated reanalysis tools are now improving rare disease diagnostic yields by systematically reinterpreting genomic data at scale, supporting ongoing efforts in precision medicine <a href="https://www.nature.com/articles/s41591-026-04477-5">[9]</a>. Ambient AI is increasingly implemented in real-world settings, with pilot studies assessing the clinical and financial value of these systems beyond academic institutions <a href="https://medinform.jmir.org/2026/1/e87450">[2]</a>.</p>
+<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Interstitial lung disease pattern recognition on full high resolution computed tomography volume: Development and evaluation of a decision-support tool for less-experimented radiologists</a>
+    <p class="news-card-summary">AI system classifies interstitial lung disease patterns on high-resolution CT and assists less-experienced radiologists in pattern recognition.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 26, 2026</span></div>
@@ -119,12 +126,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Peer-reviewed study integrates large language models with machine learning to predict lymph node metastasis for cancer staging.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/218a62fa81666c1f076f7883e734e08a.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02916-8">Development of a multimodal large language model for early warning and diagnosis of chronic ocular GVHD</a>
-    <p class="news-card-summary">Multimodal large language model developed for early warning and diagnosis of chronic ocular graft-versus-host disease, a complication of hematopoietic stem cell transplantation.</p>
-  </div>
 </div>
 </div>

@@ -2,6 +2,6 @@
 
 - [Large language models in radiology exams: A cross-sectional comparative analysis of performance in Turkish and English](https://pubmed.ncbi.nlm.nih.gov/42363535?fc=20260609215449&ff=20260627075739&v=2.20.0) (PubMed AI in medical education, June 27, 2026)
 - [Comparative evaluation of radiological anatomy knowledge and accuracy of ChatGPT-5, Gemini 2.5, and Grok 4 across normal and thinking modes](https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&ff=20260627075739&v=2.20.0) (PubMed AI in medical education, June 27, 2026)
+- [Interstitial lung disease pattern recognition on full high resolution computed tomography volume: Development and evaluation of a decision-support tool for less-experimented radiologists](https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&ff=20260628080852&v=2.20.0) (PubMed AI in medical education, June 27, 2026)
+- [Methodological Considerations in Evaluating Large Language Models for Anatomy Education](https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&ff=20260628080852&v=2.20.0) (PubMed AI in medical education, June 27, 2026)
 - [DSpark: Speculative decoding accelerates LLM inference \[pdf\]](https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf) (Hacker News (LLM, 100+ points), June 27, 2026)
-- [Supporting Radiology Resident Education and Clinical Decision-Making With Large Language Models: Comparative Study of Reasoning Models DeepSeek-R1 and ChatGPT-o1](https://ai.jmir.org/2026/1/e86974) (JMIR AI, June 26, 2026)
-- [Selecting, Scaling, and Measuring the Value of Ambient AI in a Nonacademic Health System: Multiphase Pilot Study](https://medinform.jmir.org/2026/1/e87450) (JMIR Medical Informatics, June 26, 2026)

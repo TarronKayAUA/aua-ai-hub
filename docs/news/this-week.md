@@ -11,8 +11,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Comparative studies of reasoning models show large language models can support radiology resident education and clinical decision-making, with benchmarked differences between DeepSeek-R1 and ChatGPT-o1 <a href="https://ai.jmir.org/2026/1/e86974">[3]</a>. Evaluations across platforms including ChatGPT-5, Gemini 2.5, and Grok 4 also compare radiological anatomy accuracy and modes of reasoning, providing insight into how varied AI models perform on key medical content <a href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">[2]</a>. Systematic reviews highlight the promise of large language models in supplying automated feedback for medical imaging education, suggesting efficiencies in formative assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[5]</a>. Evidence indicates AI technologies are accelerating clinical skills education since 2022, particularly through simulation and assessment tools <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[4]</a>, as well as demonstrating effectiveness in quantifying clinical skills compared to expert evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[14]</a>.</p>
-<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the source items.</p>
+<p>Large language models are increasingly being used to assess and support clinical skills education, with systematic reviews highlighting their potential as tools for providing automated feedback in medical imaging <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[6]</a> and for delivering accurate and comprehensible patient information <a href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">[11]</a>. Methodological concerns about evaluating these models for anatomy education are drawing attention to the need for rigorous assessment within medical curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">[3]</a>. Studies also show that artificial intelligence can quantify clinical assessment skills as reliably as expert evaluators <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[15]</a>, and identify complementary error patterns when paired with human evaluators in CPR skills assessment, indicating possible advantages for hybrid evaluation approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[7]</a>.</p>
+<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
@@ -28,6 +28,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Comparative evaluation of radiological anatomy knowledge and accuracy of ChatGPT-5, Gemini 2.5, and Grok 4 across normal and thinking modes</a>
     <p class="news-card-summary">Comparative evaluation of ChatGPT-5, Gemini 2.5, and Grok 4 performance on radiological anatomy knowledge with standard and extended thinking modes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Methodological Considerations in Evaluating Large Language Models for Anatomy Education</a>
+    <p class="news-card-summary">Study examines methodological issues in evaluating large language models for anatomy education, relevant to rigorous AI assessment in medical curricula.</p>
   </div>
 </div>
 <div class="news-card">
@@ -205,11 +212,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A cluster-randomized trial assesses the clinical impact of a generative AI-enabled decision support system in primary care, providing evidence for how artificial intelligence can influence patient management <a href="https://www.nature.com/articles/s41591-026-04503-6">[2]</a>. Evaluation of large frontier models highlights both the robustness and limitations of advanced health AI applications, raising questions about the reliability of these tools in clinical environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[3]</a>. In a regional health system, the deployment and measurement of ambient AI demonstrates ongoing efforts to understand its practical value and scalability outside of academic centers <a href="https://medinform.jmir.org/2026/1/e87450">[1]</a>. Ambient AI scribes have also eased documentation processes for ambulatory physicians, suggesting potential workflow benefits <a href="https://medinform.jmir.org/2026/1/e84104">[9]</a>. Automated reanalysis tools for genomic data are enhancing rare disease diagnostics by enabling reinterpretation at scale <a href="https://www.nature.com/articles/s41591-026-04477-5">[8]</a>.</p>
-<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the source items.</p>
+<p>A cluster-randomized trial has evaluated the impact of a generative AI-enabled clinical decision support system in primary care settings, contributing evidence on both safety and effectiveness as AI tools integrate further into routine practice <a href="https://www.nature.com/articles/s41591-026-04503-6">[3]</a>. Studies are also focusing on the robustness and readiness of large frontier models for clinical use, employing adversarial methods to probe reliability, which remains critical as healthcare providers consider deployment in sensitive environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[4]</a>. Automated reanalysis tools are now improving rare disease diagnostic yields by systematically reinterpreting genomic data at scale, supporting ongoing efforts in precision medicine <a href="https://www.nature.com/articles/s41591-026-04477-5">[9]</a>. Ambient AI is increasingly implemented in real-world settings, with pilot studies assessing the clinical and financial value of these systems beyond academic institutions <a href="https://medinform.jmir.org/2026/1/e87450">[2]</a>.</p>
+<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Interstitial lung disease pattern recognition on full high resolution computed tomography volume: Development and evaluation of a decision-support tool for less-experimented radiologists</a>
+    <p class="news-card-summary">AI system classifies interstitial lung disease patterns on high-resolution CT and assists less-experienced radiologists in pattern recognition.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 26, 2026</span></div>
@@ -352,20 +366,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02924-8">Voice-controlled super-resolution ultrasound imaging and reporting powered by multimodal large language models</a>
     <p class="news-card-summary">Voice-controlled ultrasound imaging system integrated with multimodal large language models for enhanced clinical reporting.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02918-6">Human-AI Collaboration in Healthcare: A Scoping Review</a>
-    <p class="news-card-summary">Scoping review examines frameworks and outcomes of human-AI collaboration in clinical settings and healthcare delivery.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02901-1">Interpretable machine learning model for predicting kidney failure among CAKUT children in multicenter large-scale study</a>
-    <p class="news-card-summary">Multicenter study develops an interpretable machine learning model to predict kidney failure in children with congenital anomalies of the kidney and urinary tract.</p>
   </div>
 </div>
 </div>
@@ -562,6 +562,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
+  <span class="video-card-title">The Promptware Kill Chain: How Prompt Injection Becomes AI Malware</span>
+  <span class="video-card-meta">IBM Technology, June 28, 2026</span>
+  <span class="video-card-desc">IBM Security explains prompt injection attacks and how they can be weaponized as AI malware, covering attack methods and defenses.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=V04bm-3d6EQ" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/V04bm-3d6EQ/hqdefault.jpg" alt="Video: When millions of AI agents meet" loading="lazy">
   <span class="video-card-title">When millions of AI agents meet</span>
@@ -579,12 +585,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">DeepSeek Just Solved AI&#x27;s Billion Dollar Problem</span>
   <span class="video-card-meta">Two Minute Papers, June 22, 2026</span>
   <span class="video-card-desc">Overview of DeepSeek&#x27;s approach to reducing AI inference costs, a significant technical and economic development in large language model deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=qdf6UvCUlu4" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/qdf6UvCUlu4/hqdefault.jpg" alt="Video: North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!" loading="lazy">
-  <span class="video-card-title">North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!</span>
-  <span class="video-card-meta">Bijan Bowen, June 20, 2026</span>
-  <span class="video-card-desc">Demonstration and technical walkthrough of Cohere&#x27;s North Mini, a local agentic coding model suitable for running without cloud infrastructure.</span>
 </a>
 </div>
 

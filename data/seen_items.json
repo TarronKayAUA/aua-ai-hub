@@ -9242,6 +9242,121 @@
    "category": "general_ai",
    "score": 3.0,
    "thumbnail": "https://opengraph.githubassets.com/ea272ca2bbf5c56f91240ee0fc4892bb5800442ef3a5c96fb0ed556503386540/deepseek-ai/DeepSpec"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uht2m0/were_probably_going_to_need_that_soon",
+   "title_hash": "8439b96b7e696926ce5eaff112f95e53",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uh8ir7/even_google_still_believes_in_small_models_for",
+   "title_hash": "b8155931c5ac74431795a5e0136acc29",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on",
+   "title_hash": "31fdb710b10194bcf2b5aa2d53e17b12",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uh1lc7/96gb_4090s_and_5090_are_literally_a_scam_i_mods",
+   "title_hash": "6fefc2b30d8bd477a0a20fa7349b4a18",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42365293?fc=20260609215449&ff=20260628080852&v=2.20.0",
+   "title_hash": "147d27ef4ab6ba16068692f55be48b51",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42365081?fc=20260609215449&ff=20260628080852&v=2.20.0",
+   "title_hash": "259b05833541cb393a498aa8392c8635",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&ff=20260628080852&v=2.20.0",
+   "title_hash": "bd6878b73f2af5cdcf8021e173464838",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": true,
+   "title": "Interstitial lung disease pattern recognition on full high resolution computed tomography volume: Development and evaluation of a decision-support tool for less-experimented radiologists",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-27T10:00:00+00:00",
+   "summary": "AI system classifies interstitial lung disease patterns on high-resolution CT and assists less-experienced radiologists in pattern recognition.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&ff=20260628080852&v=2.20.0",
+   "title_hash": "226b14301d9409d76309fe9c1473b4f2",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": true,
+   "title": "Methodological Considerations in Evaluating Large Language Models for Anatomy Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-27T10:00:00+00:00",
+   "summary": "Study examines methodological issues in evaluating large language models for anatomy education, relevant to rigorous AI assessment in medical curricula.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ugug2o/deepseekaideepseekv4prodspark_huggingface",
+   "title_hash": "b501b46542e0063b6176ade2a8cd05d4",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://fusion-lang.org/",
+   "title_hash": "26cf5a70120cf31c88adcbb0b6ac752f",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Y7VL_whmAqQ",
+   "title_hash": "323bb27247f8fc2f0bd553bba7ab68e0",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7c_ieWfAbrw",
+   "title_hash": "1acf828a8251b5960af7491c427af760",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=st_HMMt0T7g",
+   "title_hash": "1499efb63296de01fe538101ebb72c4a",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=K68sqG18270",
+   "title_hash": "88709f417ee1ba342177bf6159236d9b",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": true,
+   "title": "The Promptware Kill Chain: How Prompt Injection Becomes AI Malware",
+   "source": "IBM Technology",
+   "published": "2026-06-28T11:00:08+00:00",
+   "summary": "IBM Security explains prompt injection attacks and how they can be weaponized as AI malware, covering attack methods and defenses.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Capability-Overhang-Playbook-e3lchen",
+   "title_hash": "f8dbe3900827a1741f8524f678127385",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Ad-Hoc-AI-Licensing-Regime-e3lbomb",
+   "title_hash": "b915d4b79a3e6209b6af8aa9bcd59919",
+   "first_seen": "2026-06-28T12:08:51.807136+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -9350,14 +9465,14 @@
  "last_digest_at": "2026-06-26T15:34:17.251264+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Comparative studies of reasoning models show large language models can support radiology resident education and clinical decision-making, with benchmarked differences between DeepSeek-R1 and ChatGPT-o1 <a href=\"https://ai.jmir.org/2026/1/e86974\">[3]</a>. Evaluations across platforms including ChatGPT-5, Gemini 2.5, and Grok 4 also compare radiological anatomy accuracy and modes of reasoning, providing insight into how varied AI models perform on key medical content <a href=\"https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0\">[2]</a>. Systematic reviews highlight the promise of large language models in supplying automated feedback for medical imaging education, suggesting efficiencies in formative assessment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[5]</a>. Evidence indicates AI technologies are accelerating clinical skills education since 2022, particularly through simulation and assessment tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[4]</a>, as well as demonstrating effectiveness in quantifying clinical skills compared to expert evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0\">[14]</a>.",
-   "hash": "6498c08f5bfe72d4",
-   "date": "June 27, 2026"
+   "text": "Large language models are increasingly being used to assess and support clinical skills education, with systematic reviews highlighting their potential as tools for providing automated feedback in medical imaging <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[6]</a> and for delivering accurate and comprehensible patient information <a href=\"https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0\">[11]</a>. Methodological concerns about evaluating these models for anatomy education are drawing attention to the need for rigorous assessment within medical curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0\">[3]</a>. Studies also show that artificial intelligence can quantify clinical assessment skills as reliably as expert evaluators <a href=\"https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0\">[15]</a>, and identify complementary error patterns when paired with human evaluators in CPR skills assessment, indicating possible advantages for hybrid evaluation approaches <a href=\"https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[7]</a>.",
+   "hash": "4c7232bc9d5b178a",
+   "date": "June 28, 2026"
   },
   "clinical_practice": {
-   "text": "A cluster-randomized trial assesses the clinical impact of a generative AI-enabled decision support system in primary care, providing evidence for how artificial intelligence can influence patient management <a href=\"https://www.nature.com/articles/s41591-026-04503-6\">[2]</a>. Evaluation of large frontier models highlights both the robustness and limitations of advanced health AI applications, raising questions about the reliability of these tools in clinical environments <a href=\"https://www.nature.com/articles/s41591-026-04501-8\">[3]</a>. In a regional health system, the deployment and measurement of ambient AI demonstrates ongoing efforts to understand its practical value and scalability outside of academic centers <a href=\"https://medinform.jmir.org/2026/1/e87450\">[1]</a>. Ambient AI scribes have also eased documentation processes for ambulatory physicians, suggesting potential workflow benefits <a href=\"https://medinform.jmir.org/2026/1/e84104\">[9]</a>. Automated reanalysis tools for genomic data are enhancing rare disease diagnostics by enabling reinterpretation at scale <a href=\"https://www.nature.com/articles/s41591-026-04477-5\">[8]</a>.",
-   "hash": "319d0bac5e763f17",
-   "date": "June 27, 2026"
+   "text": "A cluster-randomized trial has evaluated the impact of a generative AI-enabled clinical decision support system in primary care settings, contributing evidence on both safety and effectiveness as AI tools integrate further into routine practice <a href=\"https://www.nature.com/articles/s41591-026-04503-6\">[3]</a>. Studies are also focusing on the robustness and readiness of large frontier models for clinical use, employing adversarial methods to probe reliability, which remains critical as healthcare providers consider deployment in sensitive environments <a href=\"https://www.nature.com/articles/s41591-026-04501-8\">[4]</a>. Automated reanalysis tools are now improving rare disease diagnostic yields by systematically reinterpreting genomic data at scale, supporting ongoing efforts in precision medicine <a href=\"https://www.nature.com/articles/s41591-026-04477-5\">[9]</a>. Ambient AI is increasingly implemented in real-world settings, with pilot studies assessing the clinical and financial value of these systems beyond academic institutions <a href=\"https://medinform.jmir.org/2026/1/e87450\">[2]</a>.",
+   "hash": "cb83933d392f1dc8",
+   "date": "June 28, 2026"
   },
   "general_ai": {
    "text": "OpenAI and Broadcom have unveiled a custom chip optimized specifically for large language model inference to meet the computational demands of scalable deployments <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[11]</a>. As next-generation models like GPT-5.6 Sol are previewed, attention is growing on how improvements in model architecture and hardware could influence clinical and scientific applications <a href=\"https://openai.com/index/previewing-gpt-5-6-sol\">[2]</a> <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[11]</a>. At the same time, studies are examining the reliability and challenges of using large language models in roles such as scientific peer review, highlighting methods and benchmark creation as well as evaluating model judgment against multi-round editorial processes <a href=\"https://arxiv.org/abs/2606.25057\">[5]</a> <a href=\"https://arxiv.org/abs/2606.20769\">[15]</a>. Mechanistic interpretability research continues to expose gaps between detecting harmful capabilities in language models and success in actually controlling those outputs <a href=\"https://arxiv.org/abs/2606.24952\">[4]</a>.",

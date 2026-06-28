@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Comparative studies of reasoning models show large language models can support radiology resident education and clinical decision-making, with benchmarked differences between DeepSeek-R1 and ChatGPT-o1 <a href="https://ai.jmir.org/2026/1/e86974">[3]</a>. Evaluations across platforms including ChatGPT-5, Gemini 2.5, and Grok 4 also compare radiological anatomy accuracy and modes of reasoning, providing insight into how varied AI models perform on key medical content <a href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">[2]</a>. Systematic reviews highlight the promise of large language models in supplying automated feedback for medical imaging education, suggesting efficiencies in formative assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[5]</a>. Evidence indicates AI technologies are accelerating clinical skills education since 2022, particularly through simulation and assessment tools <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[4]</a>, as well as demonstrating effectiveness in quantifying clinical skills compared to expert evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[14]</a>.</p>
-<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the items below.</p>
+<p>Large language models are increasingly being used to assess and support clinical skills education, with systematic reviews highlighting their potential as tools for providing automated feedback in medical imaging <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[6]</a> and for delivering accurate and comprehensible patient information <a href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">[11]</a>. Methodological concerns about evaluating these models for anatomy education are drawing attention to the need for rigorous assessment within medical curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">[3]</a>. Studies also show that artificial intelligence can quantify clinical assessment skills as reliably as expert evaluators <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[15]</a>, and identify complementary error patterns when paired with human evaluators in CPR skills assessment, indicating possible advantages for hybrid evaluation approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[7]</a>.</p>
+<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -30,6 +30,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Comparative evaluation of radiological anatomy knowledge and accuracy of ChatGPT-5, Gemini 2.5, and Grok 4 across normal and thinking modes</a>
     <p class="news-card-summary">Comparative evaluation of ChatGPT-5, Gemini 2.5, and Grok 4 performance on radiological anatomy knowledge with standard and extended thinking modes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Methodological Considerations in Evaluating Large Language Models for Anatomy Education</a>
+    <p class="news-card-summary">Study examines methodological issues in evaluating large language models for anatomy education, relevant to rigorous AI assessment in medical curricula.</p>
   </div>
 </div>
 <div class="news-card">
@@ -116,13 +123,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Can artificial intelligence outperform experts in assessing clinical skills? Evidence from a comparative experiment</a>
     <p class="news-card-summary">Artificial intelligence can quantify technical skills in clinical assessments as effectively as human expert evaluation in a comparative study.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42337802?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Impact of a Practical, Hands-On, Continuing Professional Development Course About AI in Health Care Professions Education on the Perceptions and Behaviors of Health Care Educators: Qualitative Case Study</a>
-    <p class="news-card-summary">A six-week continuing professional development course on artificial intelligence in healthcare improved educator perceptions of AI tools and competence.</p>
   </div>
 </div>
 </div>
