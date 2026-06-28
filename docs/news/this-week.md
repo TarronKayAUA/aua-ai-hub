@@ -354,20 +354,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Peer-reviewed study addresses technical challenge of missing data modalities in multimodal machine learning for lung cancer survival prediction.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02900-2">HRRT: hierarchical reinforcement learning for renal replacement therapy decision support</a>
-    <p class="news-card-summary">Hierarchical reinforcement learning system developed for clinical decision support in renal replacement therapy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02924-8">Voice-controlled super-resolution ultrasound imaging and reporting powered by multimodal large language models</a>
-    <p class="news-card-summary">Voice-controlled ultrasound imaging system integrated with multimodal large language models for enhanced clinical reporting.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
@@ -524,14 +510,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">GLM-5.2 achieves 98 percent of maximum reasoning capability while using less than half the inference tokens required by its predecessor.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/vxL3J4B1cStZzAInWQ5D4gqyaUYke8i4-GOuqdek2Vw.png?width=140&amp;height=73&amp;auto=webp&amp;s=d484efdefc2f79b158ceffc4b991b53ed1cf183f" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9zqlx/glm52_is_the_new_leading_open_weights_model_on">GLM-5.2 is the new leading open weights model on the Artificial Analysis Intelligence Index</a>
-    <p class="news-card-summary">GLM-5.2 achieved top ranking on the Artificial Analysis Intelligence Index among open-weights models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/br2lSBapukS1-SpxHqZLiRDYFoObg5xwpKU4LYKNyXA.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3646758c86913f0feaa08b9580e3018433f047be" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
