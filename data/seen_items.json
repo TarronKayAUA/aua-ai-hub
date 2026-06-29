@@ -9759,6 +9759,31 @@
    "title_hash": "8eb8d4f2e5d24caddc889de574266fd4",
    "first_seen": "2026-06-29T17:18:06.512542+00:00",
    "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/allenai/discoformer",
+   "title_hash": "114e720a34065a047a6775adedc5027f",
+   "first_seen": "2026-06-29T18:25:17.388951+00:00",
+   "kept": true,
+   "title": "DiScoFormer: One transformer for density and score, across distributions",
+   "source": "Hugging Face blog",
+   "published": "2026-06-29T18:02:48+00:00",
+   "summary": "DiScoFormer uses a single transformer architecture to learn both density and score functions across multiple probability distributions.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/AnOX0pzQm-Hep_CLFOVM7.png"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uiyrlq/amodei_open_source_models_will_eat_your_children",
+   "title_hash": "03a49aa5bad58f9ecea76670c6e1109a",
+   "first_seen": "2026-06-29T18:25:17.388951+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Mythos-Comes-Back-But-Not-for-Everyone-e3lef4i",
+   "title_hash": "eb4fa167b3fdae845bf4880e748c29de",
+   "first_seen": "2026-06-29T18:25:17.388951+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -9877,8 +9902,8 @@
    "date": "June 29, 2026"
   },
   "general_ai": {
-   "text": "OpenAI and Broadcom have announced a custom chip designed to optimize inference for large language models, addressing the escalating computational demands as these models scale <a href=\"https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale\">[14]</a> <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[15]</a>. Alongside hardware innovation, new methods such as EntMTP and DeepSeek’s DSpark have demonstrated significant acceleration in inference speed by employing entropy-guided multi-token prediction and speculative decoding, respectively <a href=\"https://arxiv.org/abs/2606.27550\">[2]</a> <a href=\"https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf\">[5]</a>. Attention to long-context challenges has also advanced, with layer-specific positional embedding scaling techniques mitigating position bias in transformers to improve performance in extended tasks <a href=\"https://arxiv.org/abs/2606.27705\">[3]</a>. Mechanistic interpretability research identifies a persistent gap between reliably detecting harmful capabilities in language models and effectively controlling them <a href=\"https://arxiv.org/abs/2606.24952\">[8]</a>.",
-   "hash": "80c3999316a61785",
+   "text": "OpenAI and Broadcom have introduced a custom chip intended to support large language model inference at scale, addressing rising computational requirements as LLM deployment expands <a href=\"https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale\">[15]</a>. At the same time, methods for accelerating inference are drawing attention, such as EntMTP, which uses entropy-guided multi-token prediction, and DSpark’s speculative decoding approach, both aiming to boost speed and efficiency <a href=\"https://arxiv.org/abs/2606.27550\">[3]</a> <a href=\"https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf\">[6]</a>. Researchers continue to confront model safety and control, with new findings showing that successfully detecting harmful capabilities does not necessarily translate to effective steering or mitigation within language models <a href=\"https://arxiv.org/abs/2606.24952\">[9]</a>. Meanwhile, LLM-based peer review faces ongoing challenges related to method reliability and benchmarking in scientific contexts <a href=\"https://arxiv.org/abs/2606.25057\">[10]</a>.",
+   "hash": "9e4997c80aafab91",
    "date": "June 29, 2026"
   }
  }
