@@ -13,11 +13,39 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI and Broadcom have unveiled a custom chip optimized specifically for large language model inference to meet the computational demands of scalable deployments <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. As next-generation models like GPT-5.6 Sol are previewed, attention is growing on how improvements in model architecture and hardware could influence clinical and scientific applications <a href="https://openai.com/index/previewing-gpt-5-6-sol">[2]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. At the same time, studies are examining the reliability and challenges of using large language models in roles such as scientific peer review, highlighting methods and benchmark creation as well as evaluating model judgment against multi-round editorial processes <a href="https://arxiv.org/abs/2606.25057">[5]</a> <a href="https://arxiv.org/abs/2606.20769">[15]</a>. Mechanistic interpretability research continues to expose gaps between detecting harmful capabilities in language models and success in actually controlling those outputs <a href="https://arxiv.org/abs/2606.24952">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the items below.</p>
+<p>OpenAI and Broadcom have announced a custom chip designed to optimize inference for large language models, addressing the escalating computational demands as these models scale <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[14]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[15]</a>. Alongside hardware innovation, new methods such as EntMTP and DeepSeek’s DSpark have demonstrated significant acceleration in inference speed by employing entropy-guided multi-token prediction and speculative decoding, respectively <a href="https://arxiv.org/abs/2606.27550">[2]</a> <a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">[5]</a>. Attention to long-context challenges has also advanced, with layer-specific positional embedding scaling techniques mitigating position bias in transformers to improve performance in extended tasks <a href="https://arxiv.org/abs/2606.27705">[3]</a>. Mechanistic interpretability research identifies a persistent gap between reliably detecting harmful capabilities in language models and effectively controlling them <a href="https://arxiv.org/abs/2606.24952">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27472">Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents</a>
+    <p class="news-card-summary">Diagnostic study and training method for memory-update gap problem in large language model agents operating over long contexts.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27550">EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction</a>
+    <p class="news-card-summary">EntMTP accelerates large language model inference by using entropy-guided multi-token prediction to improve speed and efficiency.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27705">Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling</a>
+    <p class="news-card-summary">Study of layer-specific positional embedding scaling to mitigate position bias problem in large language models for long-context tasks.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27786">SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation</a>
+    <p class="news-card-summary">SHIFT method uses gate-modulated activation steering to resolve knowledge conflicts in retrieval-augmented generation systems.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 27, 2026</span></div>
@@ -99,34 +127,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">OpenAI and Broadcom announced a custom inference chip optimized for large language model deployment.</p>
   </div>
   <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/4DeZq8e24W4qgIrtAu4Xmg/54189176ae1c6150d94cac02fb104f79/openai-broadcom-jalapeno-inference-chip-image-16_9.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.24155">MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark for Clinical Multimodal Models</a>
-    <p class="news-card-summary">MedBench v5 introduces a process-oriented benchmark for clinical multimodal models that addresses hallucination and transparency in medical AI evaluation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.krea.ai/blog/krea-2-technical-report">Krea 2: SOTA open-weights 12B image model</a>
-    <p class="news-card-summary">Krea 2, a state-of-the-art open-weights 12 billion parameter image generation model, was released.</p>
-  </div>
-  <img class="news-card-thumb" src="https://s.krea.ai/blog-posts/krea-2-technical-report/agent/1782227962641-krea2-hero-new.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.20740">VeriBound: PAC-Bayesian Generalization Bounds for Process Reward Models Trained with Formal Verification Tools</a>
-    <p class="news-card-summary">Theoretical framework establishes probabilistic generalization bounds for process reward models trained with formal verification tools.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.20769">FirstPass: Grounding AI Scientific Judgment in Multi-Round Editorial Outcomes</a>
-    <p class="news-card-summary">Study evaluates AI systems for peer review against editorial outcomes, identifying three core failure modes in scientific judgment.</p>
-  </div>
 </div>
 </div>

@@ -11,11 +11,46 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Large language models are increasingly being used to assess and support clinical skills education, with systematic reviews highlighting their potential as tools for providing automated feedback in medical imaging <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[6]</a> and for delivering accurate and comprehensible patient information <a href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">[11]</a>. Methodological concerns about evaluating these models for anatomy education are drawing attention to the need for rigorous assessment within medical curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">[3]</a>. Studies also show that artificial intelligence can quantify clinical assessment skills as reliably as expert evaluators <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[15]</a>, and identify complementary error patterns when paired with human evaluators in CPR skills assessment, indicating possible advantages for hybrid evaluation approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[7]</a>.</p>
-<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the source items.</p>
+<p>Implementation of artificial intelligence in medical education has advanced rapidly since 2022, with notable developments in clinical skills curricula, simulation, and assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[10]</a>. Reviews highlight growing integration across U.S. healthcare degree programs, pointing to increased adoption in both structured coursework and practical training <a href="https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">[1]</a>. There is evidence that large language models can provide automated feedback in medical imaging education, supporting both students and educators in real-time learning environments <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[11]</a>. Cross-sectional studies report gaps between student awareness and true competency in areas such as clinical biochemistry, raising questions about educational effectiveness as AI tools become more widespread <a href="https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">[4]</a>.</p>
+<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Artificial Intelligence Integration in U.S. Healthcare Professional Degree Programs: A Rapid Scoping Review</a>
+    <p class="news-card-summary">Rapid scoping review of artificial intelligence integration across U.S.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42368831?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Building CAR-E: A Novel Artificial Intelligence Agent for Coaching Conversations</a>
+    <p class="news-card-summary">Development of CAR-E, an artificial intelligence agent that enables scalable coaching conversations in medical education settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367557?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Knowledge, Utilization, and Perceptions of Artificial Intelligence in Medical Education Among Preclinical Osteopathic Medical Students and Faculty: A Cross-Sectional Study</a>
+    <p class="news-card-summary">Survey of preclinical osteopathic medical students&#x27; knowledge, use, and perceptions of artificial intelligence and generative large language models in medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Future-Ready Doctors: A Cross-Sectional Study of Undergraduate Knowledge of Artificial Intelligence in Clinical Biochemistry</a>
+    <p class="news-card-summary">Cross-sectional study of undergraduate medical students&#x27; knowledge of artificial intelligence in clinical biochemistry reveals gaps between awareness and competency.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367417?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">A Study to Assess the Awareness and Attitudes Towards Artificial Intelligence (AI) Tools Among Medical Trainees and Practitioners</a>
+    <p class="news-card-summary">Study of awareness and attitudes toward artificial intelligence tools among medical trainees and practitioners in healthcare settings.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
@@ -212,11 +247,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A cluster-randomized trial has evaluated the impact of a generative AI-enabled clinical decision support system in primary care settings, contributing evidence on both safety and effectiveness as AI tools integrate further into routine practice <a href="https://www.nature.com/articles/s41591-026-04503-6">[3]</a>. Studies are also focusing on the robustness and readiness of large frontier models for clinical use, employing adversarial methods to probe reliability, which remains critical as healthcare providers consider deployment in sensitive environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[4]</a>. Automated reanalysis tools are now improving rare disease diagnostic yields by systematically reinterpreting genomic data at scale, supporting ongoing efforts in precision medicine <a href="https://www.nature.com/articles/s41591-026-04477-5">[9]</a>. Ambient AI is increasingly implemented in real-world settings, with pilot studies assessing the clinical and financial value of these systems beyond academic institutions <a href="https://medinform.jmir.org/2026/1/e87450">[2]</a>.</p>
-<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the source items.</p>
+<p>A generative AI-enabled clinical decision support system has been evaluated in a cluster-randomized trial in primary care, providing evidence for its integration into clinical workflows <a href="https://www.nature.com/articles/s41591-026-04503-6">[5]</a>. Decision-support tools to aid less-experienced radiologists in recognizing interstitial lung disease patterns on high-resolution CT have also been developed, indicating progress in radiology assistance <a href="https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">[3]</a>. Studies have examined the clinical and financial value of ambient AI in regional health systems, highlighting multiphase implementation strategies <a href="https://medinform.jmir.org/2026/1/e87450">[4]</a>. In ambulatory care, ambient AI scribes have been shown to reduce physician documentation burdens <a href="https://medinform.jmir.org/2026/1/e84104">[12]</a>, while automated reanalysis of genomic data at scale is improving diagnostic yields for rare diseases over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[11]</a>.</p>
+<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Promising performance of locally deployed large language models for postoperative orthopaedic patient questions: An In Silico analysis</a>
+    <p class="news-card-summary">Structured evaluation of locally deployed and commercial large language models for responding to postoperative orthopaedic patient questions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02939-1">Translation of frozen sections into FFPE images for skin cancer resection margins using generative AI</a>
+    <p class="news-card-summary">Generative artificial intelligence system translates frozen section pathology images to standard formalin-fixed paraffin-embedded format for skin cancer margin assessment.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
@@ -359,11 +408,39 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI and Broadcom have unveiled a custom chip optimized specifically for large language model inference to meet the computational demands of scalable deployments <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. As next-generation models like GPT-5.6 Sol are previewed, attention is growing on how improvements in model architecture and hardware could influence clinical and scientific applications <a href="https://openai.com/index/previewing-gpt-5-6-sol">[2]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[11]</a>. At the same time, studies are examining the reliability and challenges of using large language models in roles such as scientific peer review, highlighting methods and benchmark creation as well as evaluating model judgment against multi-round editorial processes <a href="https://arxiv.org/abs/2606.25057">[5]</a> <a href="https://arxiv.org/abs/2606.20769">[15]</a>. Mechanistic interpretability research continues to expose gaps between detecting harmful capabilities in language models and success in actually controlling those outputs <a href="https://arxiv.org/abs/2606.24952">[4]</a>.</p>
-<p class="section-brief-date">The picture as of June 27, 2026; numbered links go to the source items.</p>
+<p>OpenAI and Broadcom have announced a custom chip designed to optimize inference for large language models, addressing the escalating computational demands as these models scale <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[14]</a> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">[15]</a>. Alongside hardware innovation, new methods such as EntMTP and DeepSeek’s DSpark have demonstrated significant acceleration in inference speed by employing entropy-guided multi-token prediction and speculative decoding, respectively <a href="https://arxiv.org/abs/2606.27550">[2]</a> <a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">[5]</a>. Attention to long-context challenges has also advanced, with layer-specific positional embedding scaling techniques mitigating position bias in transformers to improve performance in extended tasks <a href="https://arxiv.org/abs/2606.27705">[3]</a>. Mechanistic interpretability research identifies a persistent gap between reliably detecting harmful capabilities in language models and effectively controlling them <a href="https://arxiv.org/abs/2606.24952">[8]</a>.</p>
+<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27472">Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents</a>
+    <p class="news-card-summary">Diagnostic study and training method for memory-update gap problem in large language model agents operating over long contexts.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27550">EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction</a>
+    <p class="news-card-summary">EntMTP accelerates large language model inference by using entropy-guided multi-token prediction to improve speed and efficiency.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27705">Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling</a>
+    <p class="news-card-summary">Study of layer-specific positional embedding scaling to mitigate position bias problem in large language models for long-context tasks.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.27786">SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation</a>
+    <p class="news-card-summary">SHIFT method uses gate-modulated activation steering to resolve knowledge conflicts in retrieval-augmented generation systems.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 27, 2026</span></div>
@@ -580,12 +657,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">AIUC-1: Building trust in AI agents</span>
   <span class="video-card-meta">Practical AI, June 25, 2026</span>
   <span class="video-card-desc">Discussion of how to build trust in AI agents, with Emil Lassen from the Artificial Intelligence Upstart Committee.</span>
-</a>
-<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Local-AI-Matters-and-How-to-Use-It-e3l344o" target="_blank" rel="noopener">
-  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Video: Why Local AI Matters and How to Use It" loading="lazy">
-  <span class="video-card-title">Why Local AI Matters and How to Use It</span>
-  <span class="video-card-meta">The AI Daily Brief, June 21, 2026</span>
-  <span class="video-card-desc">Practical overview of local AI systems, their advantages over cloud-based models, and deployment considerations for institutions and individuals.</span>
 </a>
 </div>
 

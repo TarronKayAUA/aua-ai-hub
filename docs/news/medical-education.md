@@ -13,11 +13,46 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models are increasingly being used to assess and support clinical skills education, with systematic reviews highlighting their potential as tools for providing automated feedback in medical imaging <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[6]</a> and for delivering accurate and comprehensible patient information <a href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">[11]</a>. Methodological concerns about evaluating these models for anatomy education are drawing attention to the need for rigorous assessment within medical curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">[3]</a>. Studies also show that artificial intelligence can quantify clinical assessment skills as reliably as expert evaluators <a href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">[15]</a>, and identify complementary error patterns when paired with human evaluators in CPR skills assessment, indicating possible advantages for hybrid evaluation approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[7]</a>.</p>
-<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the items below.</p>
+<p>Implementation of artificial intelligence in medical education has advanced rapidly since 2022, with notable developments in clinical skills curricula, simulation, and assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[10]</a>. Reviews highlight growing integration across U.S. healthcare degree programs, pointing to increased adoption in both structured coursework and practical training <a href="https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">[1]</a>. There is evidence that large language models can provide automated feedback in medical imaging education, supporting both students and educators in real-time learning environments <a href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">[11]</a>. Cross-sectional studies report gaps between student awareness and true competency in areas such as clinical biochemistry, raising questions about educational effectiveness as AI tools become more widespread <a href="https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">[4]</a>.</p>
+<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Artificial Intelligence Integration in U.S. Healthcare Professional Degree Programs: A Rapid Scoping Review</a>
+    <p class="news-card-summary">Rapid scoping review of artificial intelligence integration across U.S.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42368831?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Building CAR-E: A Novel Artificial Intelligence Agent for Coaching Conversations</a>
+    <p class="news-card-summary">Development of CAR-E, an artificial intelligence agent that enables scalable coaching conversations in medical education settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367557?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Knowledge, Utilization, and Perceptions of Artificial Intelligence in Medical Education Among Preclinical Osteopathic Medical Students and Faculty: A Cross-Sectional Study</a>
+    <p class="news-card-summary">Survey of preclinical osteopathic medical students&#x27; knowledge, use, and perceptions of artificial intelligence and generative large language models in medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Future-Ready Doctors: A Cross-Sectional Study of Undergraduate Knowledge of Artificial Intelligence in Clinical Biochemistry</a>
+    <p class="news-card-summary">Cross-sectional study of undergraduate medical students&#x27; knowledge of artificial intelligence in clinical biochemistry reveals gaps between awareness and competency.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367417?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">A Study to Assess the Awareness and Attitudes Towards Artificial Intelligence (AI) Tools Among Medical Trainees and Practitioners</a>
+    <p class="news-card-summary">Study of awareness and attitudes toward artificial intelligence tools among medical trainees and practitioners in healthcare settings.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
@@ -87,42 +122,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42361810?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">The Avatar Advantage: AI-Powered Faculty Development to Enhance Feedback Delivery Skills</a>
     <p class="news-card-summary">Study demonstrates AI-powered avatars provide reliable and consistent feedback delivery for faculty development in teaching skills.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">Performance of large language models in delivering accurate and comprehensible patient information on heart failure and cardiomyopathy</a>
-    <p class="news-card-summary">Study evaluates how well large language models deliver accurate and understandable patient information about heart failure and cardiomyopathy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351124?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Acceptance and use of GenAI among medical and health sciences students in Saudi Arabia: an extended TAM study</a>
-    <p class="news-card-summary">Extended Technology Acceptance Model study examines acceptance and use of generative AI among medical and health sciences students in Saudi Arabia.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351097?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Development and pilot evaluation of a large language model-based clinical simulation system for medical education in gastroenterology</a>
-    <p class="news-card-summary">Large language model-based clinical simulator for gastroenterology education demonstrates high accuracy, realism, and adaptability in pilot evaluation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87959">Effectiveness of Artificial Intelligence, Assisted Peer Teaching in Orthopedic Clinical Education: Historical Cohort Study</a>
-    <p class="news-card-summary">Historical cohort study examines effectiveness of AI-assisted peer teaching in orthopedic clinical education compared to traditional peer teaching.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/c1ebd4f1d6710c903c129408430f160e.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0">Can artificial intelligence outperform experts in assessing clinical skills? Evidence from a comparative experiment</a>
-    <p class="news-card-summary">Artificial intelligence can quantify technical skills in clinical assessments as effectively as human expert evaluation in a comparative study.</p>
   </div>
 </div>
 </div>

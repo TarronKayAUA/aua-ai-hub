@@ -9363,6 +9363,402 @@
    "title_hash": "a567cf1ab9536795dedf9e9ef0086f17",
    "first_seen": "2026-06-28T15:06:48.161059+00:00",
    "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/29/ornith",
+   "title_hash": "6ba883169d47b0b3f5a6e72947738b91",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arena.ai/blog/arena-100m-revenue",
+   "title_hash": "05518f04cb885130a172aaa791469c44",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uiv8e4/effect_of_glm_52",
+   "title_hash": "f30e9895fa8f4b769f1739cc5d8f1eae",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42371534?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "cbe232633da36bea4dd449f8535d1a34",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42370390?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "10fe67c0c32a5946d701e4f1fcf69776",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "941b42d5b6238a5a902f3d028d20ed7c",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence Integration in U.S. Healthcare Professional Degree Programs: A Rapid Scoping Review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-29T10:00:00+00:00",
+   "summary": "Rapid scoping review of artificial intelligence integration across U.S. healthcare professional degree programs.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42369944?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "bed5fa327d920752e56626ca85339ca9",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42368831?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "bf98c98ecd420d4d77298a692a185d80",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Building CAR-E: A Novel Artificial Intelligence Agent for Coaching Conversations",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-29T10:00:00+00:00",
+   "summary": "Development of CAR-E, an artificial intelligence agent that enables scalable coaching conversations in medical education settings.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42367557?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "5fbc67700d42f07655fb025861acdb27",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Knowledge, Utilization, and Perceptions of Artificial Intelligence in Medical Education Among Preclinical Osteopathic Medical Students and Faculty: A Cross-Sectional Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-29T10:00:00+00:00",
+   "summary": "Survey of preclinical osteopathic medical students' knowledge, use, and perceptions of artificial intelligence and generative large language models in medical education.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "9844c7093a2a9a6c8657d8424581878b",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Future-Ready Doctors: A Cross-Sectional Study of Undergraduate Knowledge of Artificial Intelligence in Clinical Biochemistry",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-29T10:00:00+00:00",
+   "summary": "Cross-sectional study of undergraduate medical students' knowledge of artificial intelligence in clinical biochemistry reveals gaps between awareness and competency.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42367417?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "c5599caf420c9aeab8701498d346d829",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "A Study to Assess the Awareness and Attitudes Towards Artificial Intelligence (AI) Tools Among Medical Trainees and Practitioners",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-29T10:00:00+00:00",
+   "summary": "Study of awareness and attitudes toward artificial intelligence tools among medical trainees and practitioners in healthcare settings.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&ff=20260629131807&v=2.20.0",
+   "title_hash": "e0965f3e5a7d870e7cbfc42655c38213",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Promising performance of locally deployed large language models for postoperative orthopaedic patient questions: An In Silico analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-29T10:00:00+00:00",
+   "summary": "Structured evaluation of locally deployed and commercial large language models for responding to postoperative orthopaedic patient questions.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27378",
+   "title_hash": "4762ab0f3e5426bf78c89de498e39d65",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27379",
+   "title_hash": "c70bb9288fb455ec8c199a1c34e0a50d",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27380",
+   "title_hash": "96e0991c50aba2adb0ead7d239f7a52f",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27446",
+   "title_hash": "c9ff82f034820b2a5fe9d44b9362497c",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27460",
+   "title_hash": "d00ede53c4b653569c4f2bbdfcd21292",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27472",
+   "title_hash": "718cf85dbfd0e22b8111896a0633e7db",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-29T04:00:00+00:00",
+   "summary": "Diagnostic study and training method for memory-update gap problem in large language model agents operating over long contexts.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27538",
+   "title_hash": "55525883c8166abb7409c3b71a9dad52",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27550",
+   "title_hash": "9932c0ad32015ebfc82bcc222dab1dac",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-29T04:00:00+00:00",
+   "summary": "EntMTP accelerates large language model inference by using entropy-guided multi-token prediction to improve speed and efficiency.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27595",
+   "title_hash": "1a0c6b0271257e1ae893b95d4fd647ad",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27598",
+   "title_hash": "d27861444633bb869736a8e7a60eba04",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27617",
+   "title_hash": "6735692f4fa590c6dd51f63cc898f73d",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27629",
+   "title_hash": "8ee77d1ab6b9cf622a3e66bc41193c86",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27632",
+   "title_hash": "0357c17d87248ece3fd98490bfa3830c",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27669",
+   "title_hash": "91e25cff245e4fcbb43be573a7951edc",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27679",
+   "title_hash": "96889f64f80b74400ed1fad2cbc7175b",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27687",
+   "title_hash": "a7843cf9798e9ca21fbd4c936dfcdbb5",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27705",
+   "title_hash": "b26b3abd785bd2a503f25dbadfc7a25f",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-29T04:00:00+00:00",
+   "summary": "Study of layer-specific positional embedding scaling to mitigate position bias problem in large language models for long-context tasks.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27709",
+   "title_hash": "1cfbccf42801fd5105d489321960df85",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27717",
+   "title_hash": "77d2198ca012ded8123fab12b6ef3363",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27731",
+   "title_hash": "5260653223e26d09cc2026ead5a1d501",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27742",
+   "title_hash": "0a0943d93278e530b5496b0a50136de0",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27785",
+   "title_hash": "39d17a70dd4b8c0b69b62db140cd49aa",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27786",
+   "title_hash": "b3a978b6a37a765ca11bc516a104c3b3",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation",
+   "source": "arXiv cs.CL",
+   "published": "2026-06-29T04:00:00+00:00",
+   "summary": "SHIFT method uses gate-modulated activation steering to resolve knowledge conflicts in retrieval-augmented generation systems.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27791",
+   "title_hash": "8fcdf3b32342e66a244a7195e05cd620",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.27793",
+   "title_hash": "5cee38e422064bdbf3662f997c531428",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02939-1",
+   "title_hash": "7390ce20dc9d4bf2016ad8db93d5066d",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": true,
+   "title": "Translation of frozen sections into FFPE images for skin cancer resection margins using generative AI",
+   "source": "npj Digital Medicine",
+   "published": "2026-06-29T00:00:00+00:00",
+   "summary": "Generative artificial intelligence system translates frozen section pathology images to standard formalin-fixed paraffin-embedded format for skin cancer margin assessment.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04516-1",
+   "title_hash": "97265a8ece1712bbfeb6840a79fa23da",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04544-x",
+   "title_hash": "e992a629a57cb7bd1bc6ba57574bc2c4",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uibt9o/npc_engine_using_local_models",
+   "title_hash": "0d3e13ba42cb2c5ad5da58646572e239",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arxiv.org/abs/2401.07013",
+   "title_hash": "3cfefc60eba2f55ef6aaebccdc3fd49c",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/28/jon-udell",
+   "title_hash": "5a0587047c38acf50f417205e992c3e2",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/28/hack-your-summer",
+   "title_hash": "7c4a821a6b058fdb4ee66e3dac45075a",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ui3tck/china_has_matched_anthropic_in_cybersecurity",
+   "title_hash": "a983860eb7691142f25536150bf9e94a",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ui241x/the_number_1_public_enemy_of_opensource",
+   "title_hash": "ce1b5d60aad82e91b0bc34c5b0a4fd89",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+   "title_hash": "44f9f34465f103602c362425df123a91",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uhx862/dflash_support_merged_into_llamacpp",
+   "title_hash": "5ff4a45c1cdab922e701aac0bd8864be",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://github.com/itsthelore/wayfinder-router",
+   "title_hash": "7e4cd227698eb0ea15cabcf38863caba",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uh8r1j/running_glm52_on_budget_hardware_2500",
+   "title_hash": "0e99f9cd8f3de163a02ada00e39da86e",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://aleph-alpha.com/en/blog/model-training-as-code",
+   "title_hash": "94cbff3abf4d4736fd058aa413b30869",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zdhY9ZXn410",
+   "title_hash": "eabb41ca78a8ce3f623548875bbeaf4d",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uc4AOydmcaE",
+   "title_hash": "12090dc6f100365b74103d46bba838e2",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=f-HiB82Tl94",
+   "title_hash": "127f6fdd2a82bb9945922ef7b9652335",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0-YCleDw-Po",
+   "title_hash": "8eb8d4f2e5d24caddc889de574266fd4",
+   "first_seen": "2026-06-29T17:18:06.512542+00:00",
+   "kept": false
   }
  ],
  "digests": [
@@ -9471,19 +9867,19 @@
  "last_digest_at": "2026-06-26T15:34:17.251264+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Large language models are increasingly being used to assess and support clinical skills education, with systematic reviews highlighting their potential as tools for providing automated feedback in medical imaging <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[6]</a> and for delivering accurate and comprehensible patient information <a href=\"https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0\">[11]</a>. Methodological concerns about evaluating these models for anatomy education are drawing attention to the need for rigorous assessment within medical curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0\">[3]</a>. Studies also show that artificial intelligence can quantify clinical assessment skills as reliably as expert evaluators <a href=\"https://pubmed.ncbi.nlm.nih.gov/42338953?fc=20260609215449&amp;ff=20260624113940&amp;v=2.20.0\">[15]</a>, and identify complementary error patterns when paired with human evaluators in CPR skills assessment, indicating possible advantages for hybrid evaluation approaches <a href=\"https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[7]</a>.",
-   "hash": "4c7232bc9d5b178a",
-   "date": "June 28, 2026"
+   "text": "Implementation of artificial intelligence in medical education has advanced rapidly since 2022, with notable developments in clinical skills curricula, simulation, and assessment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[10]</a>. Reviews highlight growing integration across U.S. healthcare degree programs, pointing to increased adoption in both structured coursework and practical training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0\">[1]</a>. There is evidence that large language models can provide automated feedback in medical imaging education, supporting both students and educators in real-time learning environments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[11]</a>. Cross-sectional studies report gaps between student awareness and true competency in areas such as clinical biochemistry, raising questions about educational effectiveness as AI tools become more widespread <a href=\"https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0\">[4]</a>.",
+   "hash": "ba12da1d6b2f720c",
+   "date": "June 29, 2026"
   },
   "clinical_practice": {
-   "text": "A cluster-randomized trial has evaluated the impact of a generative AI-enabled clinical decision support system in primary care settings, contributing evidence on both safety and effectiveness as AI tools integrate further into routine practice <a href=\"https://www.nature.com/articles/s41591-026-04503-6\">[3]</a>. Studies are also focusing on the robustness and readiness of large frontier models for clinical use, employing adversarial methods to probe reliability, which remains critical as healthcare providers consider deployment in sensitive environments <a href=\"https://www.nature.com/articles/s41591-026-04501-8\">[4]</a>. Automated reanalysis tools are now improving rare disease diagnostic yields by systematically reinterpreting genomic data at scale, supporting ongoing efforts in precision medicine <a href=\"https://www.nature.com/articles/s41591-026-04477-5\">[9]</a>. Ambient AI is increasingly implemented in real-world settings, with pilot studies assessing the clinical and financial value of these systems beyond academic institutions <a href=\"https://medinform.jmir.org/2026/1/e87450\">[2]</a>.",
-   "hash": "cb83933d392f1dc8",
-   "date": "June 28, 2026"
+   "text": "A generative AI-enabled clinical decision support system has been evaluated in a cluster-randomized trial in primary care, providing evidence for its integration into clinical workflows <a href=\"https://www.nature.com/articles/s41591-026-04503-6\">[5]</a>. Decision-support tools to aid less-experienced radiologists in recognizing interstitial lung disease patterns on high-resolution CT have also been developed, indicating progress in radiology assistance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0\">[3]</a>. Studies have examined the clinical and financial value of ambient AI in regional health systems, highlighting multiphase implementation strategies <a href=\"https://medinform.jmir.org/2026/1/e87450\">[4]</a>. In ambulatory care, ambient AI scribes have been shown to reduce physician documentation burdens <a href=\"https://medinform.jmir.org/2026/1/e84104\">[12]</a>, while automated reanalysis of genomic data at scale is improving diagnostic yields for rare diseases over time <a href=\"https://www.nature.com/articles/s41591-026-04477-5\">[11]</a>.",
+   "hash": "c57fa588e8c0db04",
+   "date": "June 29, 2026"
   },
   "general_ai": {
-   "text": "OpenAI and Broadcom have unveiled a custom chip optimized specifically for large language model inference to meet the computational demands of scalable deployments <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[11]</a>. As next-generation models like GPT-5.6 Sol are previewed, attention is growing on how improvements in model architecture and hardware could influence clinical and scientific applications <a href=\"https://openai.com/index/previewing-gpt-5-6-sol\">[2]</a> <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[11]</a>. At the same time, studies are examining the reliability and challenges of using large language models in roles such as scientific peer review, highlighting methods and benchmark creation as well as evaluating model judgment against multi-round editorial processes <a href=\"https://arxiv.org/abs/2606.25057\">[5]</a> <a href=\"https://arxiv.org/abs/2606.20769\">[15]</a>. Mechanistic interpretability research continues to expose gaps between detecting harmful capabilities in language models and success in actually controlling those outputs <a href=\"https://arxiv.org/abs/2606.24952\">[4]</a>.",
-   "hash": "34efa40261558543",
-   "date": "June 27, 2026"
+   "text": "OpenAI and Broadcom have announced a custom chip designed to optimize inference for large language models, addressing the escalating computational demands as these models scale <a href=\"https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale\">[14]</a> <a href=\"https://openai.com/index/openai-broadcom-jalapeno-inference-chip\">[15]</a>. Alongside hardware innovation, new methods such as EntMTP and DeepSeek’s DSpark have demonstrated significant acceleration in inference speed by employing entropy-guided multi-token prediction and speculative decoding, respectively <a href=\"https://arxiv.org/abs/2606.27550\">[2]</a> <a href=\"https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf\">[5]</a>. Attention to long-context challenges has also advanced, with layer-specific positional embedding scaling techniques mitigating position bias in transformers to improve performance in extended tasks <a href=\"https://arxiv.org/abs/2606.27705\">[3]</a>. Mechanistic interpretability research identifies a persistent gap between reliably detecting harmful capabilities in language models and effectively controlling them <a href=\"https://arxiv.org/abs/2606.24952\">[8]</a>.",
+   "hash": "80c3999316a61785",
+   "date": "June 29, 2026"
   }
  }
 }

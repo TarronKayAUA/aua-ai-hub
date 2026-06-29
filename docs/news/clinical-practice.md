@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A cluster-randomized trial has evaluated the impact of a generative AI-enabled clinical decision support system in primary care settings, contributing evidence on both safety and effectiveness as AI tools integrate further into routine practice <a href="https://www.nature.com/articles/s41591-026-04503-6">[3]</a>. Studies are also focusing on the robustness and readiness of large frontier models for clinical use, employing adversarial methods to probe reliability, which remains critical as healthcare providers consider deployment in sensitive environments <a href="https://www.nature.com/articles/s41591-026-04501-8">[4]</a>. Automated reanalysis tools are now improving rare disease diagnostic yields by systematically reinterpreting genomic data at scale, supporting ongoing efforts in precision medicine <a href="https://www.nature.com/articles/s41591-026-04477-5">[9]</a>. Ambient AI is increasingly implemented in real-world settings, with pilot studies assessing the clinical and financial value of these systems beyond academic institutions <a href="https://medinform.jmir.org/2026/1/e87450">[2]</a>.</p>
-<p class="section-brief-date">The picture as of June 28, 2026; numbered links go to the items below.</p>
+<p>A generative AI-enabled clinical decision support system has been evaluated in a cluster-randomized trial in primary care, providing evidence for its integration into clinical workflows <a href="https://www.nature.com/articles/s41591-026-04503-6">[5]</a>. Decision-support tools to aid less-experienced radiologists in recognizing interstitial lung disease patterns on high-resolution CT have also been developed, indicating progress in radiology assistance <a href="https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">[3]</a>. Studies have examined the clinical and financial value of ambient AI in regional health systems, highlighting multiphase implementation strategies <a href="https://medinform.jmir.org/2026/1/e87450">[4]</a>. In ambulatory care, ambient AI scribes have been shown to reduce physician documentation burdens <a href="https://medinform.jmir.org/2026/1/e84104">[12]</a>, while automated reanalysis of genomic data at scale is improving diagnostic yields for rare diseases over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[11]</a>.</p>
+<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Promising performance of locally deployed large language models for postoperative orthopaedic patient questions: An In Silico analysis</a>
+    <p class="news-card-summary">Structured evaluation of locally deployed and commercial large language models for responding to postoperative orthopaedic patient questions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02939-1">Translation of frozen sections into FFPE images for skin cancer resection margins using generative AI</a>
+    <p class="news-card-summary">Generative artificial intelligence system translates frozen section pathology images to standard formalin-fixed paraffin-embedded format for skin cancer margin assessment.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
@@ -111,20 +125,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02913-x">Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging</a>
     <p class="news-card-summary">Peer-reviewed analysis uses unsupervised machine learning on 100,272 electronic health records to identify high-risk patient groups and comorbidities linked to premature aging.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02923-9">Video frame interpolation for coronary angiography using latent flow matching</a>
-    <p class="news-card-summary">Latent flow matching enables video frame interpolation for coronary angiography, improving temporal resolution in cardiac imaging sequences.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 22, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86700">Leveraging Large Language Models to Integrate Clinical Knowledge and Machine Learning Predictions for Lymph Node Metastasis Prediction: Development of a Knowledge-Augmented Framework</a>
-    <p class="news-card-summary">Peer-reviewed study integrates large language models with machine learning to predict lymph node metastasis for cancer staging.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/218a62fa81666c1f076f7883e734e08a.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
