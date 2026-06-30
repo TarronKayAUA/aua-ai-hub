@@ -10172,6 +10172,85 @@
    "category": "videos",
    "score": 3.0,
    "thumbnail": "https://i4.ytimg.com/vi/o0gkdZBtwEg/hqdefault.jpg"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/trumps-plan-to-redesign-every-gov-website-leads-to-ai-designed-horrors",
+   "title_hash": "76cfe2d665988cf3e302b87f64c9b325",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video",
+   "title_hash": "803b2a5f61ad8f6fd658285cc32d461f",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/06/spacex-may-donate-stock-to-trumps-savings-accounts-for-kids-report-says",
+   "title_hash": "279ce9dd61bf0d7a3e33d02f65e42b51",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jun/30/shot-scraper",
+   "title_hash": "ff140227077762a2aacf37761f793e2a",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable",
+   "title_hash": "7f8190b84bec910c68b9b60807d63f94",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": true,
+   "title": "Why Specialization Is Inevitable",
+   "source": "Hugging Face blog",
+   "published": "2026-06-30T14:39:11+00:00",
+   "summary": "Hugging Face analysis of model specialization trends in artificial intelligence development and deployment.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Av4v9_l94sEUj-etRFOLb.png"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ujouxg/well_its_a_step_up_from_nonstop_bot_spam_i_guess",
+   "title_hash": "d54a955b0e0d25e2eb94f4eab84d17bb",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": false
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42377065?fc=20260609215449&ff=20260630132631&v=2.20.0",
+   "title_hash": "5d70ca17c32b997aac3a9b6e463cb0bc",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence Use Among Occupational Therapy Students in Academic and Fieldwork Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-30T10:00:00+00:00",
+   "summary": "Study documents how occupational therapy students are integrating artificial intelligence into academic and fieldwork education with measured caution.",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&ff=20260630132631&v=2.20.0",
+   "title_hash": "6801d2f626fc3fe05ac8c0bfaa1019ab",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": true,
+   "title": "Exploring medical Artificial Intelligence Readiness among Korean medical students: a cross-sectional study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-30T10:00:00+00:00",
+   "summary": "Cross-sectional study finds Korean medical students lack sufficient preparation to effectively utilize artificial intelligence in their training.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42376779?fc=20260609215449&ff=20260630132631&v=2.20.0",
+   "title_hash": "9eb38dec07fc9b1904045d63d30268f3",
+   "first_seen": "2026-06-30T17:26:30.856048+00:00",
+   "kept": true,
+   "title": "Turning AI hallucinations into scaffolds for morphologic reasoning: A pilot randomized trial of prompt-guided virtual microscopy learning during a focused histology module",
+   "source": "PubMed AI in medical education",
+   "published": "2026-06-30T10:00:00+00:00",
+   "summary": "Pilot randomized trial tests whether AI-guided prompts in virtual microscopy can scaffold morphologic reasoning skills in medical students.",
+   "category": "medical_education",
+   "score": 3.0
   }
  ],
  "digests": [
@@ -10280,8 +10359,8 @@
  "last_digest_at": "2026-06-26T15:34:17.251264+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A rapid scoping review highlights expanding artificial intelligence integration across healthcare professional degree programs in the United States, underscoring a shift in curricula that incorporates AI-driven tools and learning strategies <a href=\"https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0\">[3]</a>. Research demonstrates that AI implementation in clinical skills education has accelerated since 2022, introducing new approaches for simulation and assessment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[14]</a>. Studies continue to assess knowledge, utilization, and perceptions of AI among medical students and faculty, revealing variability in experience and competency with generative models in educational contexts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42367557?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0\">[5]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0\">[6]</a>. Additionally, systematic reviews indicate large language models are being increasingly adopted to deliver automated feedback in medical imaging education, supporting instructional innovation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[15]</a>.",
-   "hash": "f0f70ed4a9327e60",
+   "text": "Research highlighting significant sex and racial biases in physician images generated by text-to-image artificial intelligence underscores ongoing concerns about representation in medical education tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42376226?fc=20260609215449&amp;ff=20260630092944&amp;v=2.20.0\">[1]</a>. A rapid scoping review details broad integration of artificial intelligence across U.S. healthcare professional degree programs, demonstrating increasing institutional adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0\">[6]</a>. Meanwhile, studies continue to expose gaps in medical student readiness for artificial intelligence, with findings that Korean medical students lack sufficient preparation to use these technologies effectively in training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0\">[4]</a>. In clinical pathology education, the reliability of large language models in generating multiple-choice questions is under active evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42376175?fc=20260609215449&amp;ff=20260630092944&amp;v=2.20.0\">[2]</a>, reflecting both potential and limitations for automated assessment content.",
+   "hash": "0ce5f3aca9dc31c1",
    "date": "June 30, 2026"
   },
   "clinical_practice": {
@@ -10290,8 +10369,8 @@
    "date": "June 30, 2026"
   },
   "general_ai": {
-   "text": "The release of system information for GPT-5.6 Sol marks a notable advancement in next-generation large language models, indicating further improvements in capability and design <a href=\"https://openai.com/index/previewing-gpt-5-6-sol\">[9]</a>. Alongside this, LongCat-2.0 has emerged as a large-scale open-weights mixture-of-experts model, setting new benchmarks in parameter count and active computation per token <a href=\"https://longcat.chat/blog/longcat-2.0\">[2]</a>. Researchers have addressed persistent technical challenges, including the memory-update gap in long-context LLM agents <a href=\"https://arxiv.org/abs/2606.27472\">[4]</a>, and the problem of position bias in transformers using layer-specific positional embedding scaling <a href=\"https://arxiv.org/abs/2606.27705\">[6]</a>. Mechanistic interpretability studies have also highlighted that while harmful language model capabilities can be reliably detected, steering or controlling those capabilities remains difficult <a href=\"https://arxiv.org/abs/2606.24952\">[11]</a>.",
-   "hash": "be4660b7944bc161",
+   "text": "OpenAI’s preview and system card for GPT-5.6 Sol highlight ongoing advancement in language model capabilities, drawing attention to new architectural and performance benchmarks <a href=\"https://openai.com/index/previewing-gpt-5-6-sol\">[10]</a>. At the same time, LongCat-2.0 introduces a large-scale mixture-of-experts model with 1.6 trillion parameters and 48 billion active per token, reflecting a trend toward greater specialization and model complexity <a href=\"https://longcat.chat/blog/longcat-2.0\">[3]</a> <a href=\"https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable\">[1]</a>. Researchers are also examining practical challenges such as memory-update gaps in LLM agents operating over long contexts, with diagnostic and training methods addressing these concerns <a href=\"https://arxiv.org/abs/2606.27472\">[5]</a>. Finally, mechanistic interpretability research indicates a persistent gap between reliably detecting harmful language model behavior and successfully controlling it <a href=\"https://arxiv.org/abs/2606.24952\">[12]</a>.",
+   "hash": "97decd9661712602",
    "date": "June 30, 2026"
   }
  }

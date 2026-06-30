@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>The release of system information for GPT-5.6 Sol marks a notable advancement in next-generation large language models, indicating further improvements in capability and design <a href="https://openai.com/index/previewing-gpt-5-6-sol">[9]</a>. Alongside this, LongCat-2.0 has emerged as a large-scale open-weights mixture-of-experts model, setting new benchmarks in parameter count and active computation per token <a href="https://longcat.chat/blog/longcat-2.0">[2]</a>. Researchers have addressed persistent technical challenges, including the memory-update gap in long-context LLM agents <a href="https://arxiv.org/abs/2606.27472">[4]</a>, and the problem of position bias in transformers using layer-specific positional embedding scaling <a href="https://arxiv.org/abs/2606.27705">[6]</a>. Mechanistic interpretability studies have also highlighted that while harmful language model capabilities can be reliably detected, steering or controlling those capabilities remains difficult <a href="https://arxiv.org/abs/2606.24952">[11]</a>.</p>
+<p>OpenAI’s preview and system card for GPT-5.6 Sol highlight ongoing advancement in language model capabilities, drawing attention to new architectural and performance benchmarks <a href="https://openai.com/index/previewing-gpt-5-6-sol">[10]</a>. At the same time, LongCat-2.0 introduces a large-scale mixture-of-experts model with 1.6 trillion parameters and 48 billion active per token, reflecting a trend toward greater specialization and model complexity <a href="https://longcat.chat/blog/longcat-2.0">[3]</a> <a href="https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable">[1]</a>. Researchers are also examining practical challenges such as memory-update gaps in LLM agents operating over long contexts, with diagnostic and training methods addressing these concerns <a href="https://arxiv.org/abs/2606.27472">[5]</a>. Finally, mechanistic interpretability research indicates a persistent gap between reliably detecting harmful language model behavior and successfully controlling it <a href="https://arxiv.org/abs/2606.24952">[12]</a>.</p>
 <p class="section-brief-date">The picture as of June 30, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable">Why Specialization Is Inevitable</a>
+    <p class="news-card-summary">Hugging Face analysis of model specialization trends in artificial intelligence development and deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Av4v9_l94sEUj-etRFOLb.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 30, 2026</span></div>
@@ -119,13 +127,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.25338">Hybrid-IR: Dual-Path Hybrid Retrieval with Iterative Reasoning for Complex Medical Question Answering</a>
     <p class="news-card-summary">Hybrid-IR combines dual-path hybrid retrieval with iterative reasoning to improve large language model performance on complex medical question answering tasks.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25380">A Survey of Toxicity Detection and Mitigation Strategies for Multilingual Language Models</a>
-    <p class="news-card-summary">Survey reviews detection and mitigation strategies for toxicity in multilingual large language models as they are increasingly deployed globally.</p>
   </div>
 </div>
 </div>
