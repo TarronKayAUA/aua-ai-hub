@@ -13,11 +13,26 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI and Broadcom have introduced a custom chip intended to support large language model inference at scale, addressing rising computational requirements as LLM deployment expands <a href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">[15]</a>. At the same time, methods for accelerating inference are drawing attention, such as EntMTP, which uses entropy-guided multi-token prediction, and DSpark’s speculative decoding approach, both aiming to boost speed and efficiency <a href="https://arxiv.org/abs/2606.27550">[3]</a> <a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">[6]</a>. Researchers continue to confront model safety and control, with new findings showing that successfully detecting harmful capabilities does not necessarily translate to effective steering or mitigation within language models <a href="https://arxiv.org/abs/2606.24952">[9]</a>. Meanwhile, LLM-based peer review faces ongoing challenges related to method reliability and benchmarking in scientific contexts <a href="https://arxiv.org/abs/2606.25057">[10]</a>.</p>
-<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the items below.</p>
+<p>The release of system information for GPT-5.6 Sol marks a notable advancement in next-generation large language models, indicating further improvements in capability and design <a href="https://openai.com/index/previewing-gpt-5-6-sol">[9]</a>. Alongside this, LongCat-2.0 has emerged as a large-scale open-weights mixture-of-experts model, setting new benchmarks in parameter count and active computation per token <a href="https://longcat.chat/blog/longcat-2.0">[2]</a>. Researchers have addressed persistent technical challenges, including the memory-update gap in long-context LLM agents <a href="https://arxiv.org/abs/2606.27472">[4]</a>, and the problem of position bias in transformers using layer-specific positional embedding scaling <a href="https://arxiv.org/abs/2606.27705">[6]</a>. Mechanistic interpretability studies have also highlighted that while harmful language model capabilities can be reliably detected, steering or controlling those capabilities remains difficult <a href="https://arxiv.org/abs/2606.24952">[11]</a>.</p>
+<p class="section-brief-date">The picture as of June 30, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.28524">Developmental Trajectories of Situation Modeling and Mentalizing in Transformer Language Models</a>
+    <p class="news-card-summary">Preprint analyzes how transformer language models develop situation modeling and mentalizing abilities during training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://longcat.chat/blog/longcat-2.0">LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active</a>
+    <p class="news-card-summary">LongCat-2.0 is a large open-weights mixture-of-experts model with 1.6 trillion total parameters and 48 billion active per token.</p>
+  </div>
+  <img class="news-card-thumb" src="https://s3plus.meituan.net/aigc-media-resources/longcat/big-cat-logo.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 29, 2026</span></div>
@@ -112,20 +127,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://arxiv.org/abs/2606.25380">A Survey of Toxicity Detection and Mitigation Strategies for Multilingual Language Models</a>
     <p class="news-card-summary">Survey reviews detection and mitigation strategies for toxicity in multilingual large language models as they are increasingly deployed globally.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models">The Unbearable Cheapness of Open Weight Models</a>
-    <p class="news-card-summary">Analysis of why open-weight models have become inexpensive and implications for the machine learning landscape.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">OpenAI and Broadcom announce chip designed for LLM inference at scale</a>
-    <p class="news-card-summary">OpenAI and Broadcom announce a custom silicon chip designed to handle large language model inference at scale amid growing computational demand.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image-500x500.webp" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

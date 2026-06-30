@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=o0gkdZBtwEg" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/o0gkdZBtwEg/hqdefault.jpg" alt="Video: How KV Cache Speeds Up LLMs for Faster AI Models on GPUs" loading="lazy">
+  <span class="video-card-title">How KV Cache Speeds Up LLMs for Faster AI Models on GPUs</span>
+  <span class="video-card-meta">IBM Technology, June 30, 2026</span>
+  <span class="video-card-desc">Explains how key-value cache optimization reduces computational overhead in large language model inference on GPUs.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
   <span class="video-card-title">The Promptware Kill Chain: How Prompt Injection Becomes AI Malware</span>
@@ -137,12 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">How Preply combines AI and human tutors to personalize learning</span>
   <span class="video-card-meta">OpenAI, June 12, 2026</span>
   <span class="video-card-desc">Preply integrates language models with human tutors to personalize learning experiences on its platform.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=bhgYFRZLyKI" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/bhgYFRZLyKI/hqdefault.jpg" alt="Video: Debug web apps with browser use in Codex" loading="lazy">
-  <span class="video-card-title">Debug web apps with browser use in Codex</span>
-  <span class="video-card-meta">OpenAI, June 12, 2026</span>
-  <span class="video-card-desc">OpenAI demonstrates how Codex uses Chrome DevTools Protocol to debug web applications by inspecting logs and runtime state.</span>
 </a>
 </div>
 

@@ -13,11 +13,55 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A generative AI-enabled clinical decision support system has been evaluated in a cluster-randomized trial in primary care, providing evidence for its integration into clinical workflows <a href="https://www.nature.com/articles/s41591-026-04503-6">[5]</a>. Decision-support tools to aid less-experienced radiologists in recognizing interstitial lung disease patterns on high-resolution CT have also been developed, indicating progress in radiology assistance <a href="https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">[3]</a>. Studies have examined the clinical and financial value of ambient AI in regional health systems, highlighting multiphase implementation strategies <a href="https://medinform.jmir.org/2026/1/e87450">[4]</a>. In ambulatory care, ambient AI scribes have been shown to reduce physician documentation burdens <a href="https://medinform.jmir.org/2026/1/e84104">[12]</a>, while automated reanalysis of genomic data at scale is improving diagnostic yields for rare diseases over time <a href="https://www.nature.com/articles/s41591-026-04477-5">[11]</a>.</p>
-<p class="section-brief-date">The picture as of June 29, 2026; numbered links go to the items below.</p>
+<p>Agents AMIE and MIRA are reported to demonstrate improved clinical capabilities, indicating notable progress in the use of medical AI agents for enhanced clinical practice <a href="https://www.nature.com/articles/d41591-026-00034-2">[4]</a>. A pragmatic, cluster-randomized trial evaluated a generative AI-enabled clinical decision support system in primary care, offering evidence for how AI applications can function in real-world clinical settings <a href="https://www.nature.com/articles/s41591-026-04503-6">[11]</a>. Studies also describe locally deployable AI for clinical decision support in hematological malignancies <a href="https://www.nature.com/articles/s41591-026-04494-4">[5]</a>, and structured evaluation of large language models for postoperative orthopaedic patient inquiries, with assessment of both locally deployed and commercial systems <a href="https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">[7]</a>. In addition, a multicenter machine learning study developed predictive models for early hospital admission after stroke to support efficient patient triage <a href="https://medinform.jmir.org/2026/1/e90852">[14]</a>.</p>
+<p class="section-brief-date">The picture as of June 30, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02925-7">FedFound: a federated foundation model for lifespan brain morphological connectome analysis</a>
+    <p class="news-card-summary">FedFound, a federated foundation model, enables brain morphological connectome analysis across lifespan while preserving data privacy.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02951-5">Structured reasoning failures compromise LLM interpretation of clinical oncology notes</a>
+    <p class="news-card-summary">Study in npj Digital Medicine shows large language models fail to correctly interpret clinical oncology notes due to reasoning limitations.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02936-4">Enhancing anatomical recognition by surgeons during pelvic lymph node dissection using artificial intelligence</a>
+    <p class="news-card-summary">npj Digital Medicine reports artificial intelligence enhancement of anatomical recognition during pelvic lymph node dissection surgery.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00034-2">Agents AMIE and MIRA advance medical AI capabilities</a>
+    <p class="news-card-summary">Nature Medicine reports advances in two medical AI agents, AMIE and MIRA, demonstrating improved clinical capabilities.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00034-2/d41591-026-00034-2_52857458.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04494-4">Clinical decision support in hematological malignancies using a case-grounded AI agent</a>
+    <p class="news-card-summary">Nature Medicine describes a locally deployable AI agent for clinical decision support in hematological malignancies.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 29, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92817">AI Chatbot Suicide Risk Detection and Response: Human Validation Study of the Open-Source VERA-MH Safety Evaluation</a>
+    <p class="news-card-summary">Validation study examines the open-source VERA-MH tool for detecting and responding to suicide risk through AI chatbot conversations.</p>
+  </div>
+  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6d96933a42610f3c37be622d536e427d.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
@@ -81,49 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02780-6">Reconstruction from multi-planar MRI with foundation models for uterine fibroid analysis</a>
     <p class="news-card-summary">Foundation models enable multi-planar MRI reconstruction for analysis of uterine fibroids, advancing imaging analysis with minimal manual segmentation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02906-w">Advanced machine learning-based screening for primary aldosteronism with plasma steroids, potassium, and renin</a>
-    <p class="news-card-summary">Machine learning screening using plasma steroids, potassium, and renin improves detection of primary aldosteronism compared to standard approaches.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04477-5">Automated reanalysis of genomic data for rare disease diagnostics at scale</a>
-    <p class="news-card-summary">Talos, an automated reanalysis tool, enables genomic data reinterpretation at scale to improve rare disease diagnostic yields over time.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84104">Ambient AI Scribe Implementation in an Ambulatory Setting in a Single Medical Group: Prospective Study</a>
-    <p class="news-card-summary">Implementation of ambient artificial intelligence scribes in ambulatory care reduced electronic health record documentation burden on physicians.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/2021430632be32f7af988bd0e29fbf54.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02926-6">IVCM-Insight: automated interactive interpretation of in vivo confocal microscopy</a>
-    <p class="news-card-summary">Peer-reviewed study presents automated AI system for interpreting in vivo confocal microscopy images in clinical practice.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02927-5">End to end AI system for surgical gesture sequence recognition and clinical outcome prediction</a>
-    <p class="news-card-summary">Peer-reviewed study presents end-to-end AI system for recognizing surgical gestures in video and predicting clinical outcomes from operative videos.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02913-x">Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging</a>
-    <p class="news-card-summary">Peer-reviewed analysis uses unsupervised machine learning on 100,272 electronic health records to identify high-risk patient groups and comorbidities linked to premature aging.</p>
   </div>
 </div>
 </div>
