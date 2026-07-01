@@ -309,12 +309,15 @@ def main() -> int:
             failures.append(f"{name} (watchlist): {type(exc).__name__}: {exc}")
             continue
         if data.get("start_date"):
-            past_note = ""
             if str(data["start_date"]) < today_iso:
-                past_note = (" (this edition already happened; watch for "
-                             "the next)")
+                # A past edition on a watchlist page is not actionable;
+                # reporting it as a finding opened noise issues (issue #5).
+                unchanged.append(
+                    f"{name} (watchlist; page still shows a past edition)")
+                time.sleep(2)
+                continue
             findings.append(
-                f"### {name} (watchlist, not yet in the calendar){past_note}\n"
+                f"### {name} (watchlist, not yet in the calendar)\n"
                 f"  - dates: `{data.get('start_date')}` to "
                 f"`{data.get('end_date') or '?'}`, location: "
                 f"`{data.get('location') or '?'}`, abstract deadline: "
