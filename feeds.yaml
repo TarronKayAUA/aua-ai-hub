@@ -170,7 +170,11 @@ digest:
     article_chars: 4000
     max_payload_chars: 60000
     min_words: 120
-    max_words: 260
+    # Tolerance band, wider than the prompt's stated target on purpose: the
+    # W26 narrative was rejected at 273 words against a 260 cap
+    # (2026-06-26), discarding a paid draft. The pipeline also makes one
+    # corrective retry on any rejected or failed draft.
+    max_words: 320
     min_refs: 5
 
 # Benchmarks page data source. The pipeline discovers the current LiveBench

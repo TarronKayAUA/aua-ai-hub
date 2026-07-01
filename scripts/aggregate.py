@@ -1610,61 +1610,86 @@ def generate_digest_narrative(highlights: list[dict], window_label: str,
 
     template = DIGEST_NARRATIVE_PROMPT_PATH.read_text(encoding="utf-8")
     timeout = config["llm"].get("request_timeout_seconds", 90)
-    try:
-        raw = call("Follow the instructions in the message exactly.",
-                   template.format(window=window_label,
-                                   items="\n\n".join(blocks)),
-                   cfg, timeout)
-    except (requests.RequestException, KeyError) as exc:
-        if verbose:
-            print(f"  narrative call failed: {type(exc).__name__}: {exc}")
-        return None, f"failed ({type(exc).__name__})"
+    base_msg = template.format(window=window_label,
+                               items="\n\n".join(blocks))
+    # One corrective retry: the W26 narrative was discarded over a 13-word
+    # overshoot (2026-06-26), which wastes a paid draft and the week's
+    # story. A rejected draft gets one second attempt that names the
+    # failure; a transient request failure gets one plain retry. Worst
+    # case doubles the weekly narrative cost, still cents.
+    tokens_in = tokens_out = 0
+    last_failure = ""
+    for attempt in (1, 2):
+        user_msg = base_msg
+        if attempt == 2 and last_failure.startswith("rejected"):
+            user_msg = (
+                base_msg
+                + "\n\nYour previous draft was rejected by an automated "
+                + f"validator: {last_failure}. Write a fresh draft that "
+                + "satisfies every rule above, and recount your words "
+                + "before answering."
+            )
+        try:
+            raw = call("Follow the instructions in the message exactly.",
+                       user_msg, cfg, timeout)
+        except (requests.RequestException, KeyError) as exc:
+            last_failure = f"failed ({type(exc).__name__})"
+            if verbose:
+                print(f"  narrative attempt {attempt} call failed: "
+                      f"{type(exc).__name__}: {exc}")
+            continue
+        tokens_in += LAST_ANTHROPIC_USAGE.get("input_tokens", 0)
+        tokens_out += LAST_ANTHROPIC_USAGE.get("output_tokens", 0)
 
-    paragraphs = [_brief_sanitize(p)
-                  for p in re.split(r"\n\s*\n", raw.strip()) if p.strip()]
-    text = " ".join(paragraphs)
-    refs = [int(n) for n in re.findall(r"\[(\d+)\]", text)]
-    words = len(re.sub(r"\[\d+\]", "", text).split())
-    try:
-        if len(set(refs)) < int(ncfg.get("min_refs", 5)):
-            raise ValueError(f"only {len(set(refs))} distinct references")
-        if len(refs) > 25:
-            raise ValueError(f"{len(refs)} references is too many")
-        if any(not 1 <= n <= len(highlights) for n in refs):
-            raise ValueError("references a nonexistent item")
-        if not (int(ncfg.get("min_words", 120)) <= words
-                <= int(ncfg.get("max_words", 260))):
-            raise ValueError(f"word count {words} out of range")
-        if not 1 <= len(paragraphs) <= 4:
-            raise ValueError(f"{len(paragraphs)} paragraphs")
-    except ValueError as exc:
-        if verbose:
-            print(f"  narrative rejected: {exc}")
-        return None, f"rejected ({exc})"
+        paragraphs = [_brief_sanitize(p)
+                      for p in re.split(r"\n\s*\n", raw.strip())
+                      if p.strip()]
+        text = " ".join(paragraphs)
+        refs = [int(n) for n in re.findall(r"\[(\d+)\]", text)]
+        words = len(re.sub(r"\[\d+\]", "", text).split())
+        try:
+            if len(set(refs)) < int(ncfg.get("min_refs", 5)):
+                raise ValueError(
+                    f"only {len(set(refs))} distinct references")
+            if len(refs) > 25:
+                raise ValueError(f"{len(refs)} references is too many")
+            if any(not 1 <= n <= len(highlights) for n in refs):
+                raise ValueError("references a nonexistent item")
+            if not (int(ncfg.get("min_words", 120)) <= words
+                    <= int(ncfg.get("max_words", 320))):
+                raise ValueError(f"word count {words} out of range")
+            if not 1 <= len(paragraphs) <= 4:
+                raise ValueError(f"{len(paragraphs)} paragraphs")
+        except ValueError as exc:
+            last_failure = f"rejected ({exc})"
+            if verbose:
+                print(f"  narrative attempt {attempt} rejected: {exc}")
+            continue
 
-    linked = [
-        re.sub(
-            r"\[(\d+)\]",
-            lambda m: (
-                f'<a href="'
-                f'{html.escape(highlights[int(m.group(1)) - 1]["url"])}">'
-                f"[{m.group(1)}]</a>"),
-            html.escape(p),
-        )
-        for p in paragraphs
-    ]
-    tokens_in = LAST_ANTHROPIC_USAGE.get("input_tokens", 0)
-    tokens_out = LAST_ANTHROPIC_USAGE.get("output_tokens", 0)
-    spec = config["llm"].get("tasks", {}).get("digest_narrative", {})
-    cost = ""
-    if spec.get("usd_per_m_input") is not None:
-        usd = (tokens_in * float(spec["usd_per_m_input"])
-               + tokens_out * float(spec.get("usd_per_m_output", 0))) / 1e6
-        cost = f", ~${usd:.3f}"
-    return linked, (
-        f"written ({words} words, {len(set(refs))} linked refs, "
-        f"{fetched} of {news_total} articles fetched, {cfg['model']}, "
-        f"{tokens_in}+{tokens_out} tokens{cost})")
+        linked = [
+            re.sub(
+                r"\[(\d+)\]",
+                lambda m: (
+                    f'<a href="'
+                    f'{html.escape(highlights[int(m.group(1)) - 1]["url"])}">'
+                    f"[{m.group(1)}]</a>"),
+                html.escape(p),
+            )
+            for p in paragraphs
+        ]
+        spec = config["llm"].get("tasks", {}).get("digest_narrative", {})
+        cost = ""
+        if spec.get("usd_per_m_input") is not None:
+            usd = (tokens_in * float(spec["usd_per_m_input"])
+                   + tokens_out * float(spec.get("usd_per_m_output", 0))
+                   ) / 1e6
+            cost = f", ~${usd:.3f}"
+        retry_note = f", attempt {attempt}" if attempt > 1 else ""
+        return linked, (
+            f"written ({words} words, {len(set(refs))} linked refs, "
+            f"{fetched} of {news_total} articles fetched, {cfg['model']}, "
+            f"{tokens_in}+{tokens_out} tokens{cost}{retry_note})")
+    return None, f"{last_failure} after 2 attempts"
 
 
 def render_this_week(categories: dict, by_category: dict, videos: list[dict],
