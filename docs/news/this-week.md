@@ -352,11 +352,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI’s preview and system card for GPT-5.6 Sol highlight ongoing advancement in language model capabilities, drawing attention to new architectural and performance benchmarks <a href="https://openai.com/index/previewing-gpt-5-6-sol">[10]</a>. At the same time, LongCat-2.0 introduces a large-scale mixture-of-experts model with 1.6 trillion parameters and 48 billion active per token, reflecting a trend toward greater specialization and model complexity <a href="https://longcat.chat/blog/longcat-2.0">[3]</a> <a href="https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable">[1]</a>. Researchers are also examining practical challenges such as memory-update gaps in LLM agents operating over long contexts, with diagnostic and training methods addressing these concerns <a href="https://arxiv.org/abs/2606.27472">[5]</a>. Finally, mechanistic interpretability research indicates a persistent gap between reliably detecting harmful language model behavior and successfully controlling it <a href="https://arxiv.org/abs/2606.24952">[12]</a>.</p>
-<p class="section-brief-date">The picture as of June 30, 2026; numbered links go to the source items.</p>
+<p>Anthropic’s Fable and Mythos AI models are now available globally following clearance by US regulators after safety testing, a move that may influence the broader adoption and regulatory standards for advanced language models <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[1]</a>. Meanwhile, concerns about reasoning quality and output reliability are addressed by initiatives such as the LoFa benchmark, which evaluates large language model robustness against logical fallacies <a href="https://arxiv.org/abs/2606.31039">[3]</a>, and CORTEX, which proposes token-level hallucination detection in retrieval-augmented generation systems <a href="https://arxiv.org/abs/2606.31033">[2]</a>. Efficiency and scalability are driving further innovation, with LongCat-2.0 offering a large open-weights mixture-of-experts architecture designed for high parameter capacity <a href="https://longcat.chat/blog/longcat-2.0">[9]</a> and SeKV introducing hierarchical semantic memory for improved long-context inference <a href="https://arxiv.org/abs/2606.31145">[4]</a>.</p>
+<p class="section-brief-date">The picture as of July 1, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 1, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">After spooking Trump into safety testing, Anthropic AI models get global release</a>
+    <p class="news-card-summary">US regulators cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations, removing previous export restrictions.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2280258777-500x500-1782918942.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
@@ -534,22 +542,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">OpenAI and Broadcom announce a custom silicon chip designed to handle large language model inference at scale amid growing computational demand.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image-500x500.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">OpenAI and Broadcom unveil LLM-optimized inference chip</a>
-    <p class="news-card-summary">OpenAI and Broadcom announced a custom inference chip optimized for large language model deployment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/4DeZq8e24W4qgIrtAu4Xmg/54189176ae1c6150d94cac02fb104f79/openai-broadcom-jalapeno-inference-chip-image-16_9.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.krea.ai/blog/krea-2-technical-report">Krea 2: SOTA open-weights 12B image model</a>
-    <p class="news-card-summary">Krea 2, a state-of-the-art open-weights 12 billion parameter image generation model, was released.</p>
-  </div>
-  <img class="news-card-thumb" src="https://s.krea.ai/blog-posts/krea-2-technical-report/agent/1782227962641-krea2-hero-new.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">

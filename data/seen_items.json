@@ -10651,6 +10651,19 @@
    "title_hash": "217eb7d1f4e7eb70b31fb1bee8fd0162",
    "first_seen": "2026-07-01T16:10:28.605463+00:00",
    "kept": false
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release",
+   "title_hash": "280e88b519ee7d53c1ea4e98d2fb7443",
+   "first_seen": "2026-07-01T17:32:02.617326+00:00",
+   "kept": true,
+   "title": "After spooking Trump into safety testing, Anthropic AI models get global release",
+   "source": "Ars Technica AI",
+   "published": "2026-07-01T16:44:18+00:00",
+   "summary": "US regulators cleared Anthropic's Fable and Mythos AI models for global release after safety evaluations, removing previous export restrictions.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2280258777-500x500-1782918942.jpg"
   }
  ],
  "digests": [
@@ -10769,9 +10782,9 @@
    "date": "July 1, 2026"
   },
   "general_ai": {
-   "text": "OpenAI’s preview and system card for GPT-5.6 Sol highlight ongoing advancement in language model capabilities, drawing attention to new architectural and performance benchmarks <a href=\"https://openai.com/index/previewing-gpt-5-6-sol\">[10]</a>. At the same time, LongCat-2.0 introduces a large-scale mixture-of-experts model with 1.6 trillion parameters and 48 billion active per token, reflecting a trend toward greater specialization and model complexity <a href=\"https://longcat.chat/blog/longcat-2.0\">[3]</a> <a href=\"https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable\">[1]</a>. Researchers are also examining practical challenges such as memory-update gaps in LLM agents operating over long contexts, with diagnostic and training methods addressing these concerns <a href=\"https://arxiv.org/abs/2606.27472\">[5]</a>. Finally, mechanistic interpretability research indicates a persistent gap between reliably detecting harmful language model behavior and successfully controlling it <a href=\"https://arxiv.org/abs/2606.24952\">[12]</a>.",
-   "hash": "97decd9661712602",
-   "date": "June 30, 2026"
+   "text": "Anthropic’s Fable and Mythos AI models are now available globally following clearance by US regulators after safety testing, a move that may influence the broader adoption and regulatory standards for advanced language models <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[1]</a>. Meanwhile, concerns about reasoning quality and output reliability are addressed by initiatives such as the LoFa benchmark, which evaluates large language model robustness against logical fallacies <a href=\"https://arxiv.org/abs/2606.31039\">[3]</a>, and CORTEX, which proposes token-level hallucination detection in retrieval-augmented generation systems <a href=\"https://arxiv.org/abs/2606.31033\">[2]</a>. Efficiency and scalability are driving further innovation, with LongCat-2.0 offering a large open-weights mixture-of-experts architecture designed for high parameter capacity <a href=\"https://longcat.chat/blog/longcat-2.0\">[9]</a> and SeKV introducing hierarchical semantic memory for improved long-context inference <a href=\"https://arxiv.org/abs/2606.31145\">[4]</a>.",
+   "hash": "b2c625b851c8aa5e",
+   "date": "July 1, 2026"
   }
  }
 }

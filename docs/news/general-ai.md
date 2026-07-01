@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI’s preview and system card for GPT-5.6 Sol highlight ongoing advancement in language model capabilities, drawing attention to new architectural and performance benchmarks <a href="https://openai.com/index/previewing-gpt-5-6-sol">[10]</a>. At the same time, LongCat-2.0 introduces a large-scale mixture-of-experts model with 1.6 trillion parameters and 48 billion active per token, reflecting a trend toward greater specialization and model complexity <a href="https://longcat.chat/blog/longcat-2.0">[3]</a> <a href="https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable">[1]</a>. Researchers are also examining practical challenges such as memory-update gaps in LLM agents operating over long contexts, with diagnostic and training methods addressing these concerns <a href="https://arxiv.org/abs/2606.27472">[5]</a>. Finally, mechanistic interpretability research indicates a persistent gap between reliably detecting harmful language model behavior and successfully controlling it <a href="https://arxiv.org/abs/2606.24952">[12]</a>.</p>
-<p class="section-brief-date">The picture as of June 30, 2026; numbered links go to the items below.</p>
+<p>Anthropic’s Fable and Mythos AI models are now available globally following clearance by US regulators after safety testing, a move that may influence the broader adoption and regulatory standards for advanced language models <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[1]</a>. Meanwhile, concerns about reasoning quality and output reliability are addressed by initiatives such as the LoFa benchmark, which evaluates large language model robustness against logical fallacies <a href="https://arxiv.org/abs/2606.31039">[3]</a>, and CORTEX, which proposes token-level hallucination detection in retrieval-augmented generation systems <a href="https://arxiv.org/abs/2606.31033">[2]</a>. Efficiency and scalability are driving further innovation, with LongCat-2.0 offering a large open-weights mixture-of-experts architecture designed for high parameter capacity <a href="https://longcat.chat/blog/longcat-2.0">[9]</a> and SeKV introducing hierarchical semantic memory for improved long-context inference <a href="https://arxiv.org/abs/2606.31145">[4]</a>.</p>
+<p class="section-brief-date">The picture as of July 1, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 1, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">After spooking Trump into safety testing, Anthropic AI models get global release</a>
+    <p class="news-card-summary">US regulators cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations, removing previous export restrictions.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2280258777-500x500-1782918942.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
@@ -121,13 +129,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://arxiv.org/abs/2606.27786">SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation</a>
     <p class="news-card-summary">SHIFT method uses gate-modulated activation steering to resolve knowledge conflicts in retrieval-augmented generation systems.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 27, 2026</span></div>
-    <a class="news-card-title" href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">DSpark: Speculative decoding accelerates LLM inference [pdf]</a>
-    <p class="news-card-summary">DeepSeek&#x27;s DSpark method uses speculative decoding to accelerate large language model inference speed.</p>
-  </div>
-  <img class="news-card-thumb" src="https://opengraph.githubassets.com/ea272ca2bbf5c56f91240ee0fc4892bb5800442ef3a5c96fb0ed556503386540/deepseek-ai/DeepSpec" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
