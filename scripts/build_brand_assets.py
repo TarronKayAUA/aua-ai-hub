@@ -12,16 +12,22 @@ Outputs (committed, referenced by mkdocs.yml and the homepage):
     docs/assets/logo-mark-white.png  white knockout of the seal for the header
     docs/assets/wordmark-white.png   white knockout of the wordmark for the hero
     docs/assets/favicon.png          color seal, transparent outside the circle
+    docs/assets/social-card.png      1200x630 Open Graph share card
+                                     (overrides/main.html points og:image at it)
+
+Run with --social-only to regenerate just the share card (skips the photo
+re-encodes, which would otherwise show up as byte-level diffs in git).
 
 The white variants are mechanical single-color recolors (luminance becomes
 alpha), standard practice for placing a monochrome mark on a colored
 background; the geometry of the artwork is untouched.
 """
 
+import sys
 from collections import Counter, deque
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 
 REPO = Path(__file__).resolve().parent.parent
 GRAPHICS = REPO / "graphics"
@@ -89,10 +95,70 @@ def circle_transparent(img: Image.Image, size: int) -> Image.Image:
     return rgba.resize((size, size), Image.LANCZOS)
 
 
+def _card_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
+    """Best available system face; the site itself uses Inter, and Segoe UI
+    is the closest metric match present on this authoring machine."""
+    candidates = (["seguisb.ttf", "arialbd.ttf"] if bold
+                  else ["segoeui.ttf", "arial.ttf"])
+    for name in candidates:
+        try:
+            return ImageFont.truetype(name, size)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
+def social_card(wordmark: Image.Image) -> Image.Image:
+    """1200x630 Open Graph card: brand gradient, white wordmark, title,
+    tagline, and the sparkle accent from the section-banner family. Colors
+    are the sampled seal blue #07618c and wordmark navy #1b4165."""
+    width, height = 1200, 630
+    c1, c2 = (0x07, 0x61, 0x8C), (0x1B, 0x41, 0x65)
+    small = Image.new("RGB", (60, 32))
+    for y in range(32):
+        for x in range(60):
+            t = (x / 59 + y / 31) / 2
+            small.putpixel(
+                (x, y),
+                tuple(round(a + (b - a) * t) for a, b in zip(c1, c2)))
+    card = small.resize((width, height), Image.BICUBIC).convert("RGB")
+    draw = ImageDraw.Draw(card, "RGBA")
+
+    cx, cy, r, d = 1080, 110, 30, 20  # sparkle accent, top right
+    for x1, y1, x2, y2 in ((cx, cy - r, cx, cy + r),
+                           (cx - r, cy, cx + r, cy),
+                           (cx - d, cy - d, cx + d, cy + d),
+                           (cx + d, cy - d, cx - d, cy + d)):
+        draw.line((x1, y1, x2, y2), fill=(255, 255, 255, 190), width=6)
+
+    mark = white_knockout(wordmark, 640)
+    mark_y = 100
+    card.paste(mark, ((width - mark.width) // 2, mark_y), mark)
+
+    def centered(text: str, font: ImageFont.FreeTypeFont, y: int,
+                 fill: tuple) -> None:
+        w = draw.textlength(text, font=font)
+        draw.text(((width - w) / 2, y), text, font=font, fill=fill)
+
+    title_y = mark_y + mark.height + 56
+    centered("AUA AI Hub", _card_font(92, bold=True), title_y,
+             (255, 255, 255, 255))
+    centered("Artificial intelligence, curated for medical education.",
+             _card_font(36), title_y + 136, (255, 255, 255, 235))
+    return card
+
+
 def main():
     ASSETS.mkdir(parents=True, exist_ok=True)
     seal = Image.open(GRAPHICS / "Plain Logo.png")
     wordmark = Image.open(GRAPHICS / "Text Logo.png")
+
+    if "--social-only" in sys.argv:
+        path = ASSETS / "social-card.png"
+        social_card(wordmark).save(path, optimize=True)
+        print(f"wrote {path.relative_to(REPO)} "
+              f"(1200x630, {path.stat().st_size // 1024} KB)")
+        return
 
     print("seal blue     :", dominant_color(seal))
     print("wordmark navy :", dominant_color(wordmark))
