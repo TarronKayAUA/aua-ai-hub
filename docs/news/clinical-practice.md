@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Agents AMIE and MIRA are reported to demonstrate improved clinical capabilities, indicating notable progress in the use of medical AI agents for enhanced clinical practice <a href="https://www.nature.com/articles/d41591-026-00034-2">[4]</a>. A pragmatic, cluster-randomized trial evaluated a generative AI-enabled clinical decision support system in primary care, offering evidence for how AI applications can function in real-world clinical settings <a href="https://www.nature.com/articles/s41591-026-04503-6">[11]</a>. Studies also describe locally deployable AI for clinical decision support in hematological malignancies <a href="https://www.nature.com/articles/s41591-026-04494-4">[5]</a>, and structured evaluation of large language models for postoperative orthopaedic patient inquiries, with assessment of both locally deployed and commercial systems <a href="https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">[7]</a>. In addition, a multicenter machine learning study developed predictive models for early hospital admission after stroke to support efficient patient triage <a href="https://medinform.jmir.org/2026/1/e90852">[14]</a>.</p>
-<p class="section-brief-date">The picture as of June 30, 2026; numbered links go to the items below.</p>
+<p>A peer-reviewed study highlights reasoning failures in large language models when interpreting clinical oncology notes, raising concerns about their reliability in nuanced clinical documentation tasks <a href="https://www.nature.com/articles/s41746-026-02951-5">[3]</a>. Meanwhile, advances in medical AI agents, such as AMIE and MIRA, are noted for expanding clinical capabilities and supporting decision making across varied specialties <a href="https://www.nature.com/articles/d41591-026-00034-2">[5]</a>. Locally deployable AI agents are now assisting with clinical decision support in hematological malignancies, suggesting broader applications in complex case management <a href="https://www.nature.com/articles/s41591-026-04494-4">[6]</a>. In surgical care, artificial intelligence is enhancing anatomical recognition during pelvic lymph node dissection, pointing to improvements in intraoperative guidance <a href="https://www.nature.com/articles/s41746-026-02936-4">[4]</a>. The role of AI in scoliosis surgical planning and postoperative outcome prediction is also examined, signaling further integration in procedural and outcome forecasting <a href="https://www.nature.com/articles/s41746-026-02934-6">[1]</a>.</p>
+<p class="section-brief-date">The picture as of July 1, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02934-6">Artificial intelligence for scoliosis surgical planning and postoperative prediction</a>
+    <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine examines artificial intelligence for scoliosis surgical planning and postoperative outcome prediction.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
@@ -52,6 +59,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 30, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04494-4">Clinical decision support in hematological malignancies using a case-grounded AI agent</a>
     <p class="news-card-summary">Nature Medicine describes a locally deployable AI agent for clinical decision support in hematological malignancies.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02944-4">AFP assistant: a retrieval-augmented generation and large language model-powered multilingual polio chatbot for low-resource language communities</a>
+    <p class="news-card-summary">AFP assistant combines retrieval-augmented generation and large language models to provide multilingual polio health information in low-resource settings.</p>
   </div>
 </div>
 <div class="news-card">
@@ -110,21 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 25, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02898-7">Towards trustworthy AI-driven cuffless blood pressure monitoring</a>
     <p class="news-card-summary">Study addresses trustworthiness of AI systems for cuffless blood pressure monitoring without traditional sensors.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90852">Prediction of Early Hospital Admission (≤24 Hours) After Stroke Using Machine Learning and Deep Learning: Multicenter Study From China</a>
-    <p class="news-card-summary">Multicenter machine learning study from China develops models to predict early hospital admission within 24 hours after stroke for improved patient triage.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/5023dc89505869aa37a36470fcc9b5ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02780-6">Reconstruction from multi-planar MRI with foundation models for uterine fibroid analysis</a>
-    <p class="news-card-summary">Foundation models enable multi-planar MRI reconstruction for analysis of uterine fibroids, advancing imaging analysis with minimal manual segmentation.</p>
   </div>
 </div>
 </div>

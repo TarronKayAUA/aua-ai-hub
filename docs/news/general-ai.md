@@ -20,11 +20,56 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.31033">CORTEX: Token-Level Hallucination Detection in RAG via Comparative Internal Representations</a>
+    <p class="news-card-summary">CORTEX proposes token-level hallucination detection in retrieval-augmented generation systems via comparative internal model representations.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.31039">Truth or Sophistry? LoFa: A Benchmark for LLM Robustness Against Logical Fallacies</a>
+    <p class="news-card-summary">LoFa benchmark evaluates large language model robustness against logical fallacies in reasoning tasks.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2606.31145">SeKV: Resolution-Adaptive KV Cache with Hierarchical Semantic Memory for Long-Context LLM Inference</a>
+    <p class="news-card-summary">SeKV introduces resolution-adaptive key-value cache with hierarchical semantic memory to improve long-context large language model inference efficiency.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/30/claude-sonnet-5">What&#x27;s new in Claude Sonnet 5</a>
+    <p class="news-card-summary">Claude Sonnet 5 released with improvements detailed in Simon Willison&#x27;s analysis of new capabilities.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/sonnet-5-pelican.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/ibm-research/scarfbench">ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration</a>
+    <p class="news-card-summary">ScarfBench benchmark evaluates artificial intelligence agents on enterprise Java framework migration tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/649c1276a83f996b4191a8f1/iYCwB2Hl8qPTA8DCgDilB.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 30, 2026</span></div>
     <a class="news-card-title" href="https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable">Why Specialization Is Inevitable</a>
     <p class="news-card-summary">Hugging Face analysis of model specialization trends in artificial intelligence development and deployment.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Av4v9_l94sEUj-etRFOLb.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_openpangu20flash_92b_total6b">Huawei open-sources OpenPangu-2.0-Flash - 92B total,6B active</a>
+    <p class="news-card-summary">Huawei open-sources OpenPangu-2.0-Flash, a 92-billion-parameter model with 6 billion active parameters.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/29tji3noteah1.png?width=140&amp;height=79&amp;auto=webp&amp;s=8e1b8705ac867254bf81d890012ab45ba820cea2" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -84,49 +129,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">DeepSeek&#x27;s DSpark method uses speculative decoding to accelerate large language model inference speed.</p>
   </div>
   <img class="news-card-thumb" src="https://opengraph.githubassets.com/ea272ca2bbf5c56f91240ee0fc4892bb5800442ef3a5c96fb0ed556503386540/deepseek-ai/DeepSpec" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://openai.com/index/previewing-gpt-5-6-sol">Previewing GPT‑5.6 Sol: a next-generation model</a>
-    <p class="news-card-summary">OpenAI releases system card and preview for GPT-5.6 Sol, a next-generation large language model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/48XpR5dxhE6jJQ03HTUnWZ/ac68fbfb7761fa72ac7442c6744dba56/_.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities">Anthropic says Alibaba must be punished for largest Claude cloning attack</a>
-    <p class="news-card-summary">Anthropic reports that Alibaba conducted a large-scale coordinated account campaign to extract Claude capabilities through millions of model exchanges.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2271847932-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.24952">Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models</a>
-    <p class="news-card-summary">Mechanistic interpretability research reveals a gap between detecting harmful capabilities in language models and successfully steering or controlling them.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25057">LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges</a>
-    <p class="news-card-summary">Preprint examines methods, benchmarks, and reliability challenges for using large language models to conduct peer review of scientific papers.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25182">What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics</a>
-    <p class="news-card-summary">Method detects jailbreak attacks on large language models by analyzing entropy dynamics in intermediate layers without requiring knowledge of attack prompts.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25338">Hybrid-IR: Dual-Path Hybrid Retrieval with Iterative Reasoning for Complex Medical Question Answering</a>
-    <p class="news-card-summary">Hybrid-IR combines dual-path hybrid retrieval with iterative reasoning to improve large language model performance on complex medical question answering tasks.</p>
-  </div>
 </div>
 </div>

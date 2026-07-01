@@ -2,7 +2,7 @@
 
 # Community Exchange
 
-Every prompt shared on the community board, mirrored here nightly (as of June 30, 2026) and sorted by votes. Posts appear as their authors wrote them and are not reviewed; the best are tested and promoted into the [reviewed library](index.md) with credit. Voting and replying happen on GitHub and need a free [GitHub account](https://github.com/signup). Keep posts professional, and never include patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](../governance/policy.md); posts are subject to moderation.
+Every prompt shared on the community board, mirrored here nightly (as of July 1, 2026) and sorted by votes. Posts appear as their authors wrote them and are not reviewed; the best are tested and promoted into the [reviewed library](index.md) with credit. Voting and replying happen on GitHub and need a free [GitHub account](https://github.com/signup). Keep posts professional, and never include patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](../governance/policy.md); posts are subject to moderation.
 
 [Share a prompt](https://github.com/TarronKayAUA/aua-ai-hub/discussions/new/choose){ .md-button .md-button--primary }
 

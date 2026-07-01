@@ -24,6 +24,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=tIyQoLeTT3s" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/tIyQoLeTT3s/hqdefault.jpg" alt="Video: Claude Sonnet 5 Is HERE, Hands-On With Anthropic’s NEW Model!" loading="lazy">
+  <span class="video-card-title">Claude Sonnet 5 Is HERE, Hands-On With Anthropic’s NEW Model!</span>
+  <span class="video-card-meta">Bijan Bowen, June 30, 2026</span>
+  <span class="video-card-desc">Hands-on technical demonstration of Anthropic&#x27;s Claude Sonnet 5 model, covering capabilities and browser integration testing.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=o0gkdZBtwEg" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/o0gkdZBtwEg/hqdefault.jpg" alt="Video: How KV Cache Speeds Up LLMs for Faster AI Models on GPUs" loading="lazy">
   <span class="video-card-title">How KV Cache Speeds Up LLMs for Faster AI Models on GPUs</span>
@@ -137,12 +143,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!</span>
   <span class="video-card-meta">WorldofAI, June 13, 2026</span>
   <span class="video-card-desc">Overview of Minimax M3 Coder, an open-source local language model for code generation and development tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=-Jm-Bf3g9r8" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/-Jm-Bf3g9r8/hqdefault.jpg" alt="Video: How Preply combines AI and human tutors to personalize learning" loading="lazy">
-  <span class="video-card-title">How Preply combines AI and human tutors to personalize learning</span>
-  <span class="video-card-meta">OpenAI, June 12, 2026</span>
-  <span class="video-card-desc">Preply integrates language models with human tutors to personalize learning experiences on its platform.</span>
 </a>
 </div>
 
