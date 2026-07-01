@@ -48,6 +48,9 @@ llm:
     digest_selection:
       provider: anthropic
       model: claude-haiku-4-5
+    conference_watch:
+      provider: anthropic
+      model: claude-haiku-4-5
     digest_narrative:
       provider: anthropic
       model: claude-opus-4-8
@@ -150,6 +153,18 @@ committee_updates:
   category_id: ""
   items: 10
   body_chars: 3000
+
+# Conference watch (owner approved 2026-07-01). mode auto applies a changed
+# calendar field only when it passes every gate: the model's evidence quote
+# appears in the fetched official page, the dates stay coherent, and the
+# same value was extracted on stability_runs consecutive runs. Gate failures
+# become issue proposals; new conferences are always propose-only. Set mode
+# to propose to turn all writing off. Roughly 2 to 3 cents per run on the
+# claude-haiku-4-5 task above.
+conference_watch:
+  mode: auto
+  stability_runs: 2
+  page_chars: 6000
 
 # Weekly digest settings. The digest is a second-stage highlights selection
 # over everything kept since the previous digest, generated on the configured

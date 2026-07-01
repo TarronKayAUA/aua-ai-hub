@@ -1,7 +1,9 @@
-# Watchlist for the monthly conference-watch workflow: recurring events not
-# yet (or not currently) in data/conferences.yaml whose official pages are
-# checked for newly announced editions. Owner-owned; the workflow only reads
-# this file and proposes additions in a GitHub issue, it never edits data.
+# Watchlist for the conference-watch workflow: recurring events not yet
+# (or not currently) in data/conferences.yaml whose official pages are
+# checked for newly announced editions. Owner-owned; the workflow only
+# reads this file, and watchlist findings are always proposed in a GitHub
+# issue, never applied. (Auto-apply exists only for events already in the
+# calendar; see the conference_watch block in feeds.yaml.)
 #
 # All URLs verified fetchable 2026-06-10. amia.org was considered and dropped
 # because it blocks scripted requests (HTTP 403).

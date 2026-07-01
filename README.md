@@ -108,9 +108,16 @@ format; mirrored to the site nightly once `category_id` is set in the
 `committee_updates` block of feeds.yaml). The current-projects list is
 `data/committee_work.yaml`; keep summaries public-safe.
 
-**Apply a conference-watch proposal** — open the monthly "Conference watch"
-issue, check each proposal against its linked source, edit
-`data/conferences.yaml` yourself, build strict, commit, close the issue.
+**Conference calendar upkeep** — mostly automatic since 2026-07-01: the
+conference-watch workflow (every second day) applies date and location
+changes it can ground in the official page, keep coherent, and confirm on
+two consecutive runs, committing them with an inline auto-verified
+comment. What still needs you: "Conference watch" issues carry anything
+that failed a gate plus newly announced editions of watchlist events;
+check each against its linked source, edit `data/conferences.yaml`
+yourself, and close the issue. Set `mode: propose` in the feeds.yaml
+`conference_watch` block to turn all automatic writing off. Never
+hand-edit `data/conference_watch_state.json`.
 
 **Tune what the curator keeps or how it writes** — edit `prompts/curator.md`
 (no code changes); test with a pipeline dry run with `GITHUB_TOKEN` set.
