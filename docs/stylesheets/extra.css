@@ -106,6 +106,19 @@
 .badge-deadline { background-color: #ff8f00; color: #1a1a1a; }
 .badge-unconfirmed { background-color: #757575; color: #ffffff; }
 
+/* The homepage H1 stays in the document for accessibility and search, but
+   the hero wordmark already announces the site; rendering both reads as a
+   stutter, most visibly on phones (mobile audit, 2026-07-01). */
+.md-typeset .hp-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* === Homepage hero ======================================================== */
 
 .hub-hero {

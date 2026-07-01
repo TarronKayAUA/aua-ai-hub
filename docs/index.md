@@ -1,4 +1,4 @@
-# AUA AI Hub
+# AUA AI Hub { .hp-hidden }
 
 <div class="hub-hero" markdown>
 
