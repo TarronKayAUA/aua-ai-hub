@@ -49,6 +49,10 @@ MANUALLY_VERIFIED = {
     # claude.com/design redirects logged-out visitors to a login URL that
     # returns 403 to scripts; product confirmed live 2026-06-12.
     "claude.com": "2026-06-12",
+    # Began rejecting the checker's plain user agent between June and July
+    # 2026; serves 200 with full content to browser headers (verified
+    # 2026-07-01).
+    "openevidence.com": "2026-07-01",
 }
 BOT_BLOCK_STATUSES = {400, 403, 429}
 
