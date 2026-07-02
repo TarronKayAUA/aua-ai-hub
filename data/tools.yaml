@@ -12,7 +12,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface.
 
 - name: ChatGPT
@@ -22,7 +22,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: Widely used artificial intelligence chat assistant for drafting, summarizing, brainstorming, and general question answering.
 
 - name: Gemini
@@ -42,7 +42,7 @@
   cost: institutional
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
 
 - name: DeepSeek
@@ -175,7 +175,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: Literature research assistant that finds papers and extracts key findings into structured tables.
 
 - name: Consensus
@@ -195,7 +195,7 @@
   cost: paid
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
 - name: NotebookLM
@@ -225,7 +225,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
 
 - name: Claude Science
@@ -319,7 +319,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: Writing assistant that checks grammar, clarity, and tone in documents, email, and browser text fields.
 
 - name: Whisper
@@ -329,7 +329,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review. Runs locally; audio never leaves your computer.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-02
   blurb: Open-source speech-to-text model that transcribes audio recordings on your own computer.
 
 - name: Microsoft Teams transcription
