@@ -11225,6 +11225,32 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zdhY9ZXn410",
+   "title_hash": "eabb41ca78a8ce3f623548875bbeaf4d",
+   "first_seen": "2026-07-02T23:44:44.984429+00:00",
+   "kept": true,
+   "title": "GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?",
+   "source": "Bijan Bowen",
+   "published": "2026-06-29T15:57:44+00:00",
+   "summary": "Benchmark comparison of GLM-5.2 and Claude Opus 4.8 across multiple test scenarios.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/zdhY9ZXn410/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=y24lF1q4SFY",
+   "title_hash": "8e61e7a5d55ca9bcc3ca2cf9041eb646",
+   "first_seen": "2026-07-02T23:44:44.984429+00:00",
+   "kept": true,
+   "title": "Fable 5 vs GPT 5.6 Sol: The Early Results",
+   "source": "AI Explained",
+   "published": "2026-07-02T16:27:26+00:00",
+   "summary": "Hands-on comparison of Fable 5 and GPT 5.6 Sol model performance across benchmark tasks.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/y24lF1q4SFY/hqdefault.jpg"
   }
  ],
  "digests": [

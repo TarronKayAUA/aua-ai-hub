@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=y24lF1q4SFY" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/y24lF1q4SFY/hqdefault.jpg" alt="Video: Fable 5 vs GPT 5.6 Sol: The Early Results" loading="lazy">
+  <span class="video-card-title">Fable 5 vs GPT 5.6 Sol: The Early Results</span>
+  <span class="video-card-meta">AI Explained, July 2, 2026</span>
+  <span class="video-card-desc">Hands-on comparison of Fable 5 and GPT 5.6 Sol model performance across benchmark tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=tIyQoLeTT3s" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/tIyQoLeTT3s/hqdefault.jpg" alt="Video: Claude Sonnet 5 Is HERE, Hands-On With Anthropic’s NEW Model!" loading="lazy">
   <span class="video-card-title">Claude Sonnet 5 Is HERE, Hands-On With Anthropic’s NEW Model!</span>
@@ -65,6 +71,12 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">How KV Cache Speeds Up LLMs for Faster AI Models on GPUs</span>
   <span class="video-card-meta">IBM Technology, June 30, 2026</span>
   <span class="video-card-desc">Explains how key-value cache optimization reduces computational overhead in large language model inference on GPUs.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=zdhY9ZXn410" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/zdhY9ZXn410/hqdefault.jpg" alt="Video: GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?" loading="lazy">
+  <span class="video-card-title">GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?</span>
+  <span class="video-card-meta">Bijan Bowen, June 29, 2026</span>
+  <span class="video-card-desc">Benchmark comparison of GLM-5.2 and Claude Opus 4.8 across multiple test scenarios.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
@@ -161,18 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!</span>
   <span class="video-card-meta">Bijan Bowen, June 14, 2026</span>
   <span class="video-card-desc">Diffusion Gemma is a new generative image model that runs locally; this video demonstrates its capabilities and technical details for practitioners working with open-weights models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=V1EPXfZV0Ew" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/V1EPXfZV0Ew/hqdefault.jpg" alt="Video: GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?" loading="lazy">
-  <span class="video-card-title">GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?</span>
-  <span class="video-card-meta">Bijan Bowen, June 13, 2026</span>
-  <span class="video-card-desc">Demonstration and evaluation of GLM-5.2, an open-source language model, across coding and reasoning tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=uqNpKVpmajw" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/uqNpKVpmajw/hqdefault.jpg" alt="Video: Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!" loading="lazy">
-  <span class="video-card-title">Minimax M3 Coder IS INCREDIBLE! Opensource Local 24/7 AI OS!</span>
-  <span class="video-card-meta">WorldofAI, June 13, 2026</span>
-  <span class="video-card-desc">Overview of Minimax M3 Coder, an open-source local language model for code generation and development tasks.</span>
 </a>
 </div>
 
