@@ -340,6 +340,63 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* === Token estimator (docs/basics/better-answers.md) ======================= */
+
+.tok-estimator {
+  margin: 1rem 0 1.4rem;
+  padding: 0.9rem 1.1rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-left: 0.2rem solid var(--md-primary-fg-color);
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--md-code-bg-color);
+}
+
+.tok-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.tok-estimator textarea {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 0.05rem solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-color);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.tok-result {
+  margin-top: 0.5rem;
+  font-size: 0.74rem;
+}
+
+.tok-result p {
+  margin: 0 0 0.35rem;
+}
+
+.tok-bar {
+  height: 0.5rem;
+  margin: 0.1rem 0 0.6rem;
+  border-radius: 0.25rem;
+  background: var(--md-default-fg-color--lightest);
+  overflow: hidden;
+}
+
+.tok-fill {
+  height: 100%;
+  border-radius: 0.25rem;
+  background: var(--md-primary-fg-color);
+}
+
+.tok-note {
+  color: var(--md-default-fg-color--light);
+}
+
 /* === Inline figures (educational pages) ==================================== */
 
 .figure {
