@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic’s Fable and Mythos AI models are now available globally following clearance by US regulators after safety testing, a move that may influence the broader adoption and regulatory standards for advanced language models <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[1]</a>. Meanwhile, concerns about reasoning quality and output reliability are addressed by initiatives such as the LoFa benchmark, which evaluates large language model robustness against logical fallacies <a href="https://arxiv.org/abs/2606.31039">[3]</a>, and CORTEX, which proposes token-level hallucination detection in retrieval-augmented generation systems <a href="https://arxiv.org/abs/2606.31033">[2]</a>. Efficiency and scalability are driving further innovation, with LongCat-2.0 offering a large open-weights mixture-of-experts architecture designed for high parameter capacity <a href="https://longcat.chat/blog/longcat-2.0">[9]</a> and SeKV introducing hierarchical semantic memory for improved long-context inference <a href="https://arxiv.org/abs/2606.31145">[4]</a>.</p>
-<p class="section-brief-date">The picture as of July 1, 2026; numbered links go to the items below.</p>
+<p>Google’s 37 percent increase in electricity consumption reflects the growing demands of AI infrastructure, raising questions about balancing emissions with clean energy sources <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[1]</a>. US regulators have cleared Anthropic’s Fable and Mythos AI models for global distribution, following safety testing prompted by concerns from political leaders <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[2]</a>. On the technical front, CORTEX offers a token-level approach to hallucination detection in retrieval-augmented generation systems, potentially sharpening the accuracy of large language models used for critical applications <a href="https://arxiv.org/abs/2606.31033">[3]</a>. Meanwhile, SeKV presents an efficiency improvement for inference with long-context models through a resolution-adaptive key-value cache and hierarchical semantic memory <a href="https://arxiv.org/abs/2606.31145">[5]</a>.</p>
+<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">Google’s AI buildout drove 37% increase in electricity use in 2025</a>
+    <p class="news-card-summary">Google reports 37 percent increase in electricity consumption driven by AI infrastructure buildout in 2025, amid efforts to balance emissions with clean energy.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2246163658-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 1, 2026</span></div>
@@ -121,13 +129,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.27705">Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling</a>
     <p class="news-card-summary">Study of layer-specific positional embedding scaling to mitigate position bias problem in large language models for long-context tasks.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27786">SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation</a>
-    <p class="news-card-summary">SHIFT method uses gate-modulated activation steering to resolve knowledge conflicts in retrieval-augmented generation systems.</p>
   </div>
 </div>
 </div>

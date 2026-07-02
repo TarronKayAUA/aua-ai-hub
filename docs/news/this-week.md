@@ -11,11 +11,53 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Implementation of the FEED Protocol in surgical residency shows how artificial intelligence can accelerate curricular reform by systematically collecting feedback to tailor educational improvement <a href="https://pubmed.ncbi.nlm.nih.gov/42385587?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">[3]</a>. Current research also highlights notable gaps between medical students&#x27; demand for artificial intelligence training and its actual inclusion in medical curricula, a trend seen across Turkish and Korean medical faculties <a href="https://pubmed.ncbi.nlm.nih.gov/42381025?fc=20260609215449&amp;ff=20260701121028&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0">[8]</a>. The integration of open educational resources and generative AI with shared governance is under discussion as a strategy to address educator shortages globally <a href="https://pubmed.ncbi.nlm.nih.gov/42384915?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">[4]</a>. Evaluations of large language models in ophthalmology training demonstrate strong potential for supporting specialty education with reliable content <a href="https://pubmed.ncbi.nlm.nih.gov/42382821?fc=20260609215449&amp;ff=20260701121028&amp;v=2.20.0">[1]</a>.</p>
+<p>A new survey of clinical medicine undergraduates has revealed low awareness and limited preparation for artificial intelligence and medical big data, underscoring major curriculum gaps and highlighting specific student preferences for educational programs in this area <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[3]</a>. This need echoes findings from another cross-sectional study where Korean medical students reported insufficient readiness for effective AI integration in their training <a href="https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0">[14]</a>. In response to these gaps, research on AI-powered systems for medical history-taking shows that undergraduate students are willing to accept and interact with such technology, suggesting openness to digital tools in clinical education <a href="https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[6]</a>. Meanwhile, AI methods are also being explored for improving surgical residency feedback mechanisms, such as the FEED Protocol, which rapidly collects and acts on input to optimize curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42385587?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e85666">Exploring Ambient Artificial Intelligence to Enhance Learning and Feedback During Operating Room-to-Intensive Care Unit Handoffs: Co-Design and Simulation Study</a>
+    <p class="news-card-summary">Co-design study explores use of ambient AI to enhance learning and feedback during operating room-to-intensive care unit clinical handoffs.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e86569">Voice Cloning Using AI vs Traditional Audio Recording for Prerecorded Courses in Medical Pedagogy: Randomized Controlled Trial</a>
+    <p class="news-card-summary">Randomized controlled trial compares voice-cloned versus traditionally recorded audio for prerecorded medical courses, evaluating learning outcomes and student perception.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Awareness, Educational Needs, and Curriculum Preferences Regarding AI and Medical Big Data Education Among Clinical Medicine Undergraduates: Cross-Sectional Survey Study</a>
+    <p class="news-card-summary">Survey of clinical medicine undergraduates reveals limited AI familiarity and identifies curriculum needs and student preferences for AI and medical big data education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42389691?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Artificial intelligence in veterinary education: self-perceived knowledge, use, and attitudes among veterinary students in Spain and Portugal</a>
+    <p class="news-card-summary">Survey of veterinary students in Spain and Portugal assesses self-perceived knowledge, use, and attitudes toward AI and generative AI in veterinary education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42388626?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Knowledge localization is associated with higher performance of domestic large language models in a Chinese radiation oncology examination</a>
+    <p class="news-card-summary">Study demonstrates that large language models with domain-specific knowledge localization outperform standard models on Chinese radiation oncology board examination questions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">User Acceptance of an AI-Powered Medical History-Taking Training System Among Undergraduate Medical Students: Mixed Methods Study</a>
+    <p class="news-card-summary">Mixed methods study evaluates undergraduate medical student acceptance and interaction with an AI-powered system for training in patient history-taking.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 1, 2026</span></div>
@@ -209,13 +251,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&amp;ff=20260625120948&amp;v=2.20.0">Performance of large language models in delivering accurate and comprehensible patient information on heart failure and cardiomyopathy</a>
-    <p class="news-card-summary">Study evaluates how well large language models deliver accurate and understandable patient information about heart failure and cardiomyopathy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351124?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Acceptance and use of GenAI among medical and health sciences students in Saudi Arabia: an extended TAM study</a>
     <p class="news-card-summary">Extended Technology Acceptance Model study examines acceptance and use of generative AI among medical and health sciences students in Saudi Arabia.</p>
   </div>
@@ -227,24 +262,52 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Large language model-based clinical simulator for gastroenterology education demonstrates high accuracy, realism, and adaptability in pilot evaluation.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87959">Effectiveness of Artificial Intelligence, Assisted Peer Teaching in Orthopedic Clinical Education: Historical Cohort Study</a>
-    <p class="news-card-summary">Historical cohort study examines effectiveness of AI-assisted peer teaching in orthopedic clinical education compared to traditional peer teaching.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/c1ebd4f1d6710c903c129408430f160e.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A peer-reviewed study highlights reasoning failures in large language models when interpreting clinical oncology notes, raising concerns about their reliability in nuanced clinical documentation tasks <a href="https://www.nature.com/articles/s41746-026-02951-5">[3]</a>. Meanwhile, advances in medical AI agents, such as AMIE and MIRA, are noted for expanding clinical capabilities and supporting decision making across varied specialties <a href="https://www.nature.com/articles/d41591-026-00034-2">[5]</a>. Locally deployable AI agents are now assisting with clinical decision support in hematological malignancies, suggesting broader applications in complex case management <a href="https://www.nature.com/articles/s41591-026-04494-4">[6]</a>. In surgical care, artificial intelligence is enhancing anatomical recognition during pelvic lymph node dissection, pointing to improvements in intraoperative guidance <a href="https://www.nature.com/articles/s41746-026-02936-4">[4]</a>. The role of AI in scoliosis surgical planning and postoperative outcome prediction is also examined, signaling further integration in procedural and outcome forecasting <a href="https://www.nature.com/articles/s41746-026-02934-6">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 1, 2026; numbered links go to the source items.</p>
+<p>Clinical AI research is highlighting gaps between physician and AI evaluations on clinical reasoning tasks, prompting questions about the readiness of large language models for healthcare deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. High benchmark scores alone have been shown not to predict clinical utility, urging closer scrutiny before broad adoption <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>. Studies are also documenting structured reasoning failures by large language models in interpreting clinical oncology notes, underscoring limitations for use in complex clinical contexts <a href="https://www.nature.com/articles/s41746-026-02951-5">[8]</a>. Alongside these cautionary findings, advances in medical AI agents demonstrate improved clinical capabilities, suggesting progress in application development <a href="https://www.nature.com/articles/d41591-026-00034-2">[10]</a>. AI’s role in leukemia diagnostics continues to expand, complementing pathologist workflow from morphology to molecular analysis <a href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[3]</a>.</p>
+<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92193">Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study</a>
+    <p class="news-card-summary">Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81445">Clinician Perspectives on Ambient AI Scribes in the Intensive Care Unit: Qualitative Interview Study</a>
+    <p class="news-card-summary">Qualitative interview study explores intensive care unit clinician perspectives on ambient AI scribes for documentation and team communication support.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">AI In Leukemia Diagnostics: Complementing the Pathologist&#x27;s Role</a>
+    <p class="news-card-summary">Review discusses artificial intelligence applications across leukemia diagnostic stages, from morphology to molecular analysis, and pathologist integration.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02942-6">Physicians and artificial intelligence diverge in evaluating large language models on real clinical cases</a>
+    <p class="news-card-summary">Study finds divergence between physician and AI model evaluations on clinical reasoning tasks, raising questions about readiness for health AI deployment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04500-9">Why high scores do not mean application readiness for health AI</a>
+    <p class="news-card-summary">Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04500-9/MediaObjects/41591_2026_4500_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 1, 2026</span></div>
@@ -346,31 +409,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Nature Medicine study evaluates robustness and readiness of large frontier models in health AI applications through adversarial evaluation methods.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02898-7">Towards trustworthy AI-driven cuffless blood pressure monitoring</a>
-    <p class="news-card-summary">Study addresses trustworthiness of AI systems for cuffless blood pressure monitoring without traditional sensors.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90852">Prediction of Early Hospital Admission (≤24 Hours) After Stroke Using Machine Learning and Deep Learning: Multicenter Study From China</a>
-    <p class="news-card-summary">Multicenter machine learning study from China develops models to predict early hospital admission within 24 hours after stroke for improved patient triage.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/5023dc89505869aa37a36470fcc9b5ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic’s Fable and Mythos AI models are now available globally following clearance by US regulators after safety testing, a move that may influence the broader adoption and regulatory standards for advanced language models <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[1]</a>. Meanwhile, concerns about reasoning quality and output reliability are addressed by initiatives such as the LoFa benchmark, which evaluates large language model robustness against logical fallacies <a href="https://arxiv.org/abs/2606.31039">[3]</a>, and CORTEX, which proposes token-level hallucination detection in retrieval-augmented generation systems <a href="https://arxiv.org/abs/2606.31033">[2]</a>. Efficiency and scalability are driving further innovation, with LongCat-2.0 offering a large open-weights mixture-of-experts architecture designed for high parameter capacity <a href="https://longcat.chat/blog/longcat-2.0">[9]</a> and SeKV introducing hierarchical semantic memory for improved long-context inference <a href="https://arxiv.org/abs/2606.31145">[4]</a>.</p>
-<p class="section-brief-date">The picture as of July 1, 2026; numbered links go to the source items.</p>
+<p>Google’s 37 percent increase in electricity consumption reflects the growing demands of AI infrastructure, raising questions about balancing emissions with clean energy sources <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[1]</a>. US regulators have cleared Anthropic’s Fable and Mythos AI models for global distribution, following safety testing prompted by concerns from political leaders <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[2]</a>. On the technical front, CORTEX offers a token-level approach to hallucination detection in retrieval-augmented generation systems, potentially sharpening the accuracy of large language models used for critical applications <a href="https://arxiv.org/abs/2606.31033">[3]</a>. Meanwhile, SeKV presents an efficiency improvement for inference with long-context models through a resolution-adaptive key-value cache and hierarchical semantic memory <a href="https://arxiv.org/abs/2606.31145">[5]</a>.</p>
+<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">Google’s AI buildout drove 37% increase in electricity use in 2025</a>
+    <p class="news-card-summary">Google reports 37 percent increase in electricity consumption driven by AI infrastructure buildout in 2025, amid efforts to balance emissions with clean energy.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2246163658-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 1, 2026</span></div>
@@ -507,88 +563,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2271847932-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.24952">Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models</a>
-    <p class="news-card-summary">Mechanistic interpretability research reveals a gap between detecting harmful capabilities in language models and successfully steering or controlling them.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25057">LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges</a>
-    <p class="news-card-summary">Preprint examines methods, benchmarks, and reliability challenges for using large language models to conduct peer review of scientific papers.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25182">What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics</a>
-    <p class="news-card-summary">Method detects jailbreak attacks on large language models by analyzing entropy dynamics in intermediate layers without requiring knowledge of attack prompts.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25338">Hybrid-IR: Dual-Path Hybrid Retrieval with Iterative Reasoning for Complex Medical Question Answering</a>
-    <p class="news-card-summary">Hybrid-IR combines dual-path hybrid retrieval with iterative reasoning to improve large language model performance on complex medical question answering tasks.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.25380">A Survey of Toxicity Detection and Mitigation Strategies for Multilingual Language Models</a>
-    <p class="news-card-summary">Survey reviews detection and mitigation strategies for toxicity in multilingual large language models as they are increasingly deployed globally.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models">The Unbearable Cheapness of Open Weight Models</a>
-    <p class="news-card-summary">Analysis of why open-weight models have become inexpensive and implications for the machine learning landscape.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 24, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale">OpenAI and Broadcom announce chip designed for LLM inference at scale</a>
-    <p class="news-card-summary">OpenAI and Broadcom announce a custom silicon chip designed to handle large language model inference at scale amid growing computational demand.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image-500x500.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uar4e2/glm_52_98_of_max_level_intelligence_with_less">GLM 5.2: 98% of max level intelligence with less than half of tokens usage</a>
-    <p class="news-card-summary">GLM-5.2 achieves 98 percent of maximum reasoning capability while using less than half the inference tokens required by its predecessor.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/vxL3J4B1cStZzAInWQ5D4gqyaUYke8i4-GOuqdek2Vw.png?width=140&amp;height=73&amp;auto=webp&amp;s=d484efdefc2f79b158ceffc4b991b53ed1cf183f" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9yt6v/new_agentic_benchmark_out_claude_fable_and_glm_52">New Agentic Benchmark Out: Claude Fable and GLM 5.2 Top Their Cohorts</a>
-    <p class="news-card-summary">New benchmark ranks agentic language models, with Claude Fable and GLM 5.2 leading their respective cohorts.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/9xcqvw4ny78h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=05cfa185a68113c44c5d17e79359162874d6a2b5" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9vfhf/glm52_can_now_run_locally_in_llamacpp_and_unsloth">GLM-5.2 can now run locally in llama.cpp and Unsloth Studio.</a>
-    <p class="news-card-summary">GLM-5.2 is now runnable locally via llama.cpp and Unsloth Studio after compression from 1.51TB to 238GB while retaining 82 percent accuracy.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/3hzm5bu8078h1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=6629b2c33de56c2f3492a28d93aede6ca8917d8c" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1u9b2i3/poolsidelagunam1_hugging_face_225ba23b">poolside/Laguna-M.1 · Hugging Face - 225B-A23B</a>
-    <p class="news-card-summary">Laguna M.1, a 225 billion parameter mixture-of-experts model with 23 billion activated parameters, is now available on Hugging Face.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/vHCU5AFU0BwrXZl0c0jt_f_O2yQ-jV1nc7SNtokYWKU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=09eca81f311eecad4b4ad37a95cabbddf0e51bf0" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ## Videos
@@ -628,12 +602,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">Victoria Hedlund on AI bias: What every teacher needs to know</span>
   <span class="video-card-meta">AI in Education Podcast, June 25, 2026</span>
   <span class="video-card-desc">Victoria Hedlund discusses AI bias in educational systems and implications for teachers and students.</span>
-</a>
-<a class="video-card" href="https://share.transistor.fm/s/e039d1ca" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg" alt="Video: AIUC-1: Building trust in AI agents" loading="lazy">
-  <span class="video-card-title">AIUC-1: Building trust in AI agents</span>
-  <span class="video-card-meta">Practical AI, June 25, 2026</span>
-  <span class="video-card-desc">Discussion of how to build trust in AI agents, with Emil Lassen from the Artificial Intelligence Upstart Committee.</span>
 </a>
 </div>
 

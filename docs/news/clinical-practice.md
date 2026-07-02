@@ -13,11 +13,47 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A peer-reviewed study highlights reasoning failures in large language models when interpreting clinical oncology notes, raising concerns about their reliability in nuanced clinical documentation tasks <a href="https://www.nature.com/articles/s41746-026-02951-5">[3]</a>. Meanwhile, advances in medical AI agents, such as AMIE and MIRA, are noted for expanding clinical capabilities and supporting decision making across varied specialties <a href="https://www.nature.com/articles/d41591-026-00034-2">[5]</a>. Locally deployable AI agents are now assisting with clinical decision support in hematological malignancies, suggesting broader applications in complex case management <a href="https://www.nature.com/articles/s41591-026-04494-4">[6]</a>. In surgical care, artificial intelligence is enhancing anatomical recognition during pelvic lymph node dissection, pointing to improvements in intraoperative guidance <a href="https://www.nature.com/articles/s41746-026-02936-4">[4]</a>. The role of AI in scoliosis surgical planning and postoperative outcome prediction is also examined, signaling further integration in procedural and outcome forecasting <a href="https://www.nature.com/articles/s41746-026-02934-6">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 1, 2026; numbered links go to the items below.</p>
+<p>Clinical AI research is highlighting gaps between physician and AI evaluations on clinical reasoning tasks, prompting questions about the readiness of large language models for healthcare deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. High benchmark scores alone have been shown not to predict clinical utility, urging closer scrutiny before broad adoption <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>. Studies are also documenting structured reasoning failures by large language models in interpreting clinical oncology notes, underscoring limitations for use in complex clinical contexts <a href="https://www.nature.com/articles/s41746-026-02951-5">[8]</a>. Alongside these cautionary findings, advances in medical AI agents demonstrate improved clinical capabilities, suggesting progress in application development <a href="https://www.nature.com/articles/d41591-026-00034-2">[10]</a>. AI’s role in leukemia diagnostics continues to expand, complementing pathologist workflow from morphology to molecular analysis <a href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[3]</a>.</p>
+<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92193">Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study</a>
+    <p class="news-card-summary">Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81445">Clinician Perspectives on Ambient AI Scribes in the Intensive Care Unit: Qualitative Interview Study</a>
+    <p class="news-card-summary">Qualitative interview study explores intensive care unit clinician perspectives on ambient AI scribes for documentation and team communication support.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">AI In Leukemia Diagnostics: Complementing the Pathologist&#x27;s Role</a>
+    <p class="news-card-summary">Review discusses artificial intelligence applications across leukemia diagnostic stages, from morphology to molecular analysis, and pathologist integration.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02942-6">Physicians and artificial intelligence diverge in evaluating large language models on real clinical cases</a>
+    <p class="news-card-summary">Study finds divergence between physician and AI model evaluations on clinical reasoning tasks, raising questions about readiness for health AI deployment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04500-9">Why high scores do not mean application readiness for health AI</a>
+    <p class="news-card-summary">Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04500-9/MediaObjects/41591_2026_4500_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 1, 2026</span></div>
@@ -88,42 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 29, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02939-1">Translation of frozen sections into FFPE images for skin cancer resection margins using generative AI</a>
     <p class="news-card-summary">Generative artificial intelligence system translates frozen section pathology images to standard formalin-fixed paraffin-embedded format for skin cancer margin assessment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Interstitial lung disease pattern recognition on full high resolution computed tomography volume: Development and evaluation of a decision-support tool for less-experimented radiologists</a>
-    <p class="news-card-summary">AI system classifies interstitial lung disease patterns on high-resolution CT and assists less-experienced radiologists in pattern recognition.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87450">Selecting, Scaling, and Measuring the Value of Ambient AI in a Nonacademic Health System: Multiphase Pilot Study</a>
-    <p class="news-card-summary">Multiphase pilot study of implementing and measuring the clinical and financial value of ambient AI in a regional health system.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/d7c5d376154c2e1c6e7f2101efc740ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04503-6">Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial</a>
-    <p class="news-card-summary">Pragmatic cluster-randomized trial published in Nature Medicine evaluates a generative AI-enabled clinical decision support system in primary care.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04501-8">Evaluating the robustness and readiness of large frontier models in health AI applications</a>
-    <p class="news-card-summary">Nature Medicine study evaluates robustness and readiness of large frontier models in health AI applications through adversarial evaluation methods.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02898-7">Towards trustworthy AI-driven cuffless blood pressure monitoring</a>
-    <p class="news-card-summary">Study addresses trustworthiness of AI systems for cuffless blood pressure monitoring without traditional sensors.</p>
   </div>
 </div>
 </div>
