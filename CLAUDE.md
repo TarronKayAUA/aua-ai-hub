@@ -53,6 +53,7 @@ These rules apply to everything rendered on the site, including pipeline-generat
 ## Process
 
 - For any new feature or structural change, present a short plan and wait for approval before writing code. Routine maintenance covered by the README playbook needs no plan.
+- Issue triage sessions (acting on the automation's GitHub issues) follow .claude/commands/triage.md, invocable in Claude Code as /triage; the file is self-contained instructions for any model.
 - When SPEC.md and the code disagree, surface the conflict. Do not silently change either one.
 - Work in small steps with verification after each. Do not chain multiple unverified changes.
 - When uncertain about anything external (a feed URL, a schema, a current model id, a conference date), check rather than guess.
