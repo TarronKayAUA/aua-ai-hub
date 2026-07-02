@@ -254,6 +254,27 @@ video_feeds:
       channel_id: UCiHlZ1osvJ_1C8K5MCnJp7w
       group: medical
       lookback_days: 90
+    # Stanford MedAI group: monthly research seminar series on artificial
+    # intelligence in medicine (MedAI #158-162 in 2026). Channel id from
+    # the canonical link, feed verified 2026-07-02.
+    - name: Stanford MedAI
+      channel_id: UCOkkljs06NPPkjNysCdQV4w
+      group: medical
+      lookback_days: 90
+    # The Medical Futurist (Dr. Bertalan Mesko): accessible explainers on
+    # artificial intelligence in healthcare, roughly biweekly. Channel id
+    # from the canonical link, feed verified 2026-07-02.
+    - name: The Medical Futurist
+      channel_id: UC8vwN4Sju7ER6KZzDADBKBQ
+      group: medical
+      lookback_days: 90
+    # Radiology Artificial Intelligence, the RSNA journal's channel:
+    # monthly episodes on clinical imaging AI. Channel id from the
+    # canonical link, feed verified 2026-07-02.
+    - name: "Radiology: Artificial Intelligence"
+      channel_id: UCVoDpF44Od36RhpLv9S2_BQ
+      group: medical
+      lookback_days: 90
     - name: Matthew Berman
       channel_id: UCawZsQWqfGSbCI5yjkdVkTA
     - name: Two Minute Papers
