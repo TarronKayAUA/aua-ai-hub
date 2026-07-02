@@ -132,12 +132,20 @@
             "model.</p>");
         }
       } else {
+        var RAM_BW = 90; // dual-channel DDR5-class system memory, GB/s
+        var ramCeiling = RAM_BW / (m.active_b * q.bpp);
+        var ramReal = ramCeiling * REALWORLD;
         lines.push(
-          "<p><strong>Does not fit:</strong> needs " + need.toFixed(1) +
-          " GB but this hardware has " + t.memory_gb +
-          " GB. Spilling the difference into slower memory drags every " +
-          "token down to the slowest link, and speed collapses toward a " +
-          "crawl. Choose a smaller model or a stronger quantization.</p>");
+          "<p><strong>Larger than this tier's " + t.memory_gb +
+          " GB.</strong> Runners can split the model, keeping what fits " +
+          "in fast memory and reading the rest from system RAM, so speed " +
+          "lands between tiers, weighted toward RAM. If your machine has " +
+          "the " + need.toFixed(0) +
+          " GB in total (video memory plus system RAM), expect very " +
+          "roughly <strong>" + Math.round(ramReal) +
+          " tokens/second</strong>: " + band(ramReal) +
+          ". Without the total capacity, it does not run usably at " +
+          "all.</p>");
       }
       document.getElementById("hw-result").innerHTML = lines.join("");
     }

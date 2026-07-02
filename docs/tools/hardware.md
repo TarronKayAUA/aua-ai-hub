@@ -35,7 +35,11 @@ Real systems achieve roughly half to two thirds of that ceiling. Memory bandwidt
 | Solid-state drive (SSD) | 3 to 7 GB/s | A model spilling here slows to a crawl |
 | Hard disk (HDD) | ~0.2 GB/s | Not usable for inference at all |
 
-Two consequences worth internalizing. First, **VRAM versus RAM is not about speed of the chips near your processor; it is about the width of the pipe**: a midrange graphics card moves data four to six times faster than excellent system memory. Second, **a model must fit entirely in the fast tier to stay fast**. When a 15 GB model meets a 12 GB card, the overflow lands in system memory, every token waits for the slowest link, and the speed collapses toward the bottom of the table. Fitting is binary; there is no graceful degradation.
+Two consequences worth internalizing. First, **VRAM versus RAM is not about speed of the chips near your processor; it is about the width of the pipe**: a midrange graphics card moves data four to six times faster than excellent system memory. Second, **speed follows where the bytes live**. A model entirely in the fast tier runs at the fast tier's rate; every byte it reads from a slower tier is paid for at that tier's rate.
+
+### When it does not quite fit: partial offloading
+
+Runners like Ollama and LM Studio do not give up when a model exceeds video memory; they split it, keeping as many layers as fit on the graphics card and reading the rest from system memory. The arithmetic on this page still works, applied per tier: the spilled fraction is read at system-memory speed, so the result is a blend weighted toward the slower tier. For **dense** models that blend is punishing, and a large dense model living mostly in RAM does crawl. For **mixture-of-experts** models it is surprisingly livable, because only the small active fraction is read per token: gpt-oss-120b split across a 16 GB laptop graphics card and 64 GB of system RAM reads roughly 3 GB per token, mostly from RAM at around 90 GB/s, which pencils out to the teens of tokens per second. That is reading speed, from a model four times larger than the card, and it is a real configuration people run today. The refined rule: **total capacity across VRAM plus RAM decides what is possible; where the bytes sit, and how many of them are active per token, decides how fast.** Spilling past RAM onto an SSD remains a hard stop.
 
 ### Unified memory, the interesting middle
 

@@ -425,6 +425,10 @@ Owner actions:
 - Replace TBD conference dates as they are confirmed.
 - Seed the Prompt Exchange with first real community prompts.
 
+Builder actions, next session:
+
+- Working-with-models guide (owner requested 2026-07-02, shape agreed in principle, placement to confirm: likely the Learn/AI Basics cluster): context length split by input and output, context flooding and why long inputs strangle long outputs, managing what goes into the window, LLM memory features, and system instructions. Cross-link from the hardware page's KV-cache paragraph, the prompt library, and the pathway.
+
 Builder actions, triggered by owner events:
 
 - On ratification of the revised AI Responsible Use Policy: replace the policy page verbatim (archiving the superseded version), build the student "Can I use AI for this?" FAQ on the ratified text, align site wording to the AI Responsible Use Subcommittee naming and reporting contact, and update pathway module 3 and the agents-page guardrails to the new provisions.
