@@ -88,6 +88,7 @@ nav:
       - Directory: tools/index.md
       - AI Agents: tools/agents.md
       - Running Models Locally: tools/local.md
+      - AI for Research: tools/research.md
   - Prompts:
       - Library: prompts/index.md
       - Community Exchange: prompts/exchange.md

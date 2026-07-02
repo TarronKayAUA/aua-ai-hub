@@ -214,8 +214,8 @@
   url: https://www.openevidence.com
   cost: free
   governance_status: under_review
-  status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  status_note: Awaiting AI Committee review. Verification requires US credentials (NPI or US medical school); withdrew from the UK and EU in spring 2026.
+  last_reviewed: 2026-07-01
   blurb: Clinical question-answering tool for verified health professionals, with answers cited to the medical literature.
 
 - name: Semantic Scholar
@@ -227,6 +227,26 @@
   status_note: Awaiting AI Committee review.
   last_reviewed: 2026-06-09
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
+
+- name: Claude Science
+  vendor: Anthropic
+  category: research
+  url: https://claude.com/science
+  cost: paid
+  governance_status: under_review
+  status_note: Awaiting AI Committee review. Beta on paid Claude plans; macOS and Linux (Windows via WSL).
+  last_reviewed: 2026-07-01
+  blurb: Local-first research workbench pairing an agent with curated scientific skills (genomics, proteomics, cheminformatics), local code execution, and a reviewer agent that checks citations and calculations.
+
+- name: ResearchRabbit
+  vendor: ResearchRabbit
+  category: research
+  url: https://www.researchrabbit.ai/
+  cost: free
+  governance_status: under_review
+  status_note: Awaiting AI Committee review.
+  last_reviewed: 2026-07-01
+  blurb: Visual literature mapping from seed papers, surfacing related work, shared authorship, and citation neighborhoods, with a feature-complete free tier.
 
 # Medical Learning: student-facing study tools. Listings are not
 # endorsements (see About disclaimer); exam-prep accuracy claims are the
