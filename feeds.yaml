@@ -51,6 +51,16 @@ llm:
     conference_watch:
       provider: anthropic
       model: claude-haiku-4-5
+    # Weekly content-watch synthesis: judgment call over the week's news
+    # against the rosters. claude-sonnet-5 verified against the model docs
+    # 2026-07-01 ($3/$15 per MTok list, $2/$10 introductory through
+    # 2026-08-31); one call per week.
+    content_watch:
+      provider: anthropic
+      model: claude-sonnet-5
+    content_verify:
+      provider: anthropic
+      model: claude-haiku-4-5
     digest_narrative:
       provider: anthropic
       model: claude-opus-4-8
@@ -165,6 +175,18 @@ conference_watch:
   mode: auto
   stability_runs: 2
   page_chars: 6000
+
+# Weekly content watch (owner approved 2026-07-01): the week's kept news is
+# read against the tools and open-models rosters (one content_watch call),
+# and the rotation_size tools entries with the oldest last_reviewed dates
+# get their pages fetched and verified (one content_verify call). The only
+# automatic write is bumping last_reviewed on verified-unchanged entries;
+# every substantive change is proposed in a GitHub issue. Roughly 25 to 50
+# cents per month total.
+content_watch:
+  rotation_size: 12
+  news_days: 7
+  page_chars: 5000
 
 # Weekly digest settings. The digest is a second-stage highlights selection
 # over everything kept since the previous digest, generated on the configured

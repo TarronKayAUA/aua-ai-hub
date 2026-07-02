@@ -162,7 +162,11 @@ the regenerated files in `docs/assets/`, build strict, commit.
 
 **When automation emails you** — each workflow opens or updates a GitHub
 issue when something needs a human: `feed-health` (a feed died),
-`link-health` (a link died), `conference-watch` (proposed calendar updates).
+`link-health` (a link died), `conference-watch` (calendar items that
+failed an auto-apply gate, plus new conferences), `content-watch` (weekly
+roster recommendations: tools that launched, died, or changed, with
+evidence links and the entries to edit; verified-unchanged entries get
+their `last_reviewed` dates bumped automatically).
 Nightly `refresh` and push-triggered `deploy` failures arrive as Actions
 failure notifications; the run log's verification block says what happened.
 
