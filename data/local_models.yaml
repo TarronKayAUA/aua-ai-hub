@@ -1,0 +1,45 @@
+# Model examples for the Hardware for Local AI estimator widget
+# (docs/tools/hardware.md, rendered by scripts/render_data.py).
+# Owner-owned; edit this file only.
+#
+# total_b: total parameters in billions, verified from each model's
+# Hugging Face safetensors metadata on 2026-07-02. active_b: parameters
+# active per token (equals total_b for dense models; from the model card
+# for mixture-of-experts models). The estimator sizes memory from total_b
+# and speed from active_b.
+
+- name: Qwen3 4B
+  arch: dense
+  total_b: 4.0
+  active_b: 4.0
+  note: Small dense model; runs on almost anything.
+
+- name: Qwen3 8B
+  arch: dense
+  total_b: 8.2
+  active_b: 8.2
+  note: The classic laptop-class dense size.
+
+- name: gpt-oss-20b
+  arch: moe
+  total_b: 21.5
+  active_b: 3.6
+  note: OpenAI's smaller open-weights model; mixture-of-experts, so it needs a 20B-class memory footprint but runs at small-model speed.
+
+- name: Qwen3 30B (A3B)
+  arch: moe
+  total_b: 30.5
+  active_b: 3.3
+  note: Mixture-of-experts with only 3.3B active per token; fast wherever it fits.
+
+- name: Llama 4 Scout
+  arch: moe
+  total_b: 108.6
+  active_b: 17.0
+  note: Meta's smaller Llama 4; needs high-tier unified memory or better.
+
+- name: gpt-oss-120b
+  arch: moe
+  total_b: 120.4
+  active_b: 5.1
+  note: OpenAI's larger open-weights model; out of reach for consumer graphics cards, plausible on 96GB+ unified memory.

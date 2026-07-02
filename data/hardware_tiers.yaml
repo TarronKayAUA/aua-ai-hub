@@ -1,0 +1,50 @@
+# Hardware tiers for the Hardware for Local AI page and its estimator
+# widget (docs/tools/hardware.md, rendered by scripts/render_data.py).
+# Owner-owned; edit this file only.
+#
+# Tiers are deliberately capacity-based rather than product rankings:
+# specific cards and chips churn monthly, but "a 12 GB card" stays true.
+# bandwidth_gbs is a REPRESENTATIVE memory bandwidth for the tier in
+# gigabytes per second, used for the teaching estimate on the page; every
+# spec sheet lists the real number for a specific device. Values checked
+# against vendor specifications 2026-07-02.
+
+- name: Laptop GPU, 6 GB VRAM
+  memory_gb: 6
+  bandwidth_gbs: 250
+  note: Entry gaming laptops. Thermal limits mean sustained speed runs below these estimates.
+
+- name: Desktop GPU, 8 GB VRAM
+  memory_gb: 8
+  bandwidth_gbs: 350
+  note: Common midrange cards from recent generations.
+
+- name: Desktop GPU, 12 to 16 GB VRAM
+  memory_gb: 16
+  bandwidth_gbs: 500
+  note: Enthusiast cards; the practical sweet spot for local language models.
+
+- name: Desktop GPU, 24 GB VRAM
+  memory_gb: 24
+  bandwidth_gbs: 900
+  note: Flagship consumer cards.
+
+- name: Unified memory, base tier (16 GB)
+  memory_gb: 16
+  bandwidth_gbs: 120
+  note: Base Apple silicon MacBooks and similar unified-memory laptops.
+
+- name: Unified memory, mid tier (36 GB)
+  memory_gb: 36
+  bandwidth_gbs: 270
+  note: Pro-class unified-memory chips.
+
+- name: Unified memory, high tier (64 to 128 GB)
+  memory_gb: 96
+  bandwidth_gbs: 550
+  note: Max-class unified memory; fits models no consumer graphics card can.
+
+- name: CPU only, dual-channel DDR5 (32 GB)
+  memory_gb: 32
+  bandwidth_gbs: 90
+  note: An ordinary desktop or laptop without a usable GPU. Capacity is cheap here; bandwidth is the ceiling.

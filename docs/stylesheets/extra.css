@@ -270,6 +270,76 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* === Hardware page widgets (docs/tools/hardware.md) ======================= */
+
+.tps-demo,
+.hw-estimator {
+  margin: 1rem 0 1.4rem;
+  padding: 0.9rem 1.1rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-left: 0.2rem solid var(--md-primary-fg-color);
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--md-code-bg-color);
+}
+
+.tps-demo button {
+  margin: 0 0.4rem 0.6rem 0;
+  padding: 0.25rem 0.8rem;
+  border: 0.05rem solid var(--md-primary-fg-color);
+  border-radius: 0.3rem;
+  background: transparent;
+  color: var(--md-primary-fg-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tps-demo button.tps-active {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.tps-demo-output {
+  min-height: 6.5rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.hw-label {
+  display: inline-block;
+  margin: 0 0.9rem 0.6rem 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.hw-estimator select {
+  display: block;
+  margin-top: 0.2rem;
+  padding: 0.25rem 0.4rem;
+  border: 0.05rem solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-color);
+  font-size: 0.72rem;
+  max-width: 100%;
+}
+
+.hw-result {
+  margin-top: 0.4rem;
+  font-size: 0.74rem;
+}
+
+.hw-result p {
+  margin: 0 0 0.5rem;
+}
+
+.hw-note {
+  color: var(--md-default-fg-color--light);
+}
+
 /* === Inline figures (educational pages) ==================================== */
 
 .figure {

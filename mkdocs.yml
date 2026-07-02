@@ -48,6 +48,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/counter.js
+  - javascripts/hardware.js
 
 plugins:
   - search
@@ -88,6 +89,7 @@ nav:
       - Directory: tools/index.md
       - AI Agents: tools/agents.md
       - Running Models Locally: tools/local.md
+      - Hardware for Local AI: tools/hardware.md
       - AI for Research: tools/research.md
   - Prompts:
       - Library: prompts/index.md

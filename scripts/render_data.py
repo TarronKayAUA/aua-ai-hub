@@ -16,6 +16,7 @@ Verification counts are printed on every build and the hook raises (failing
 the build) if totals do not cross-check (CLAUDE.md working rule 2).
 """
 
+import json
 import re
 from datetime import date
 from pathlib import Path
@@ -31,6 +32,7 @@ LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
 PROMPT_RESOURCES_MARKER = "<!-- render:prompt-resources -->"
 COMMITTEE_MARKER = "<!-- render:committee -->"
+HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
 
 PROMPT_CATEGORY_LABELS = {
     "research": "Research",
@@ -119,6 +121,51 @@ def _badge(label: str, css: str, title: str = "") -> str:
 
 
 # --- tools -----------------------------------------------------------------
+
+
+def _render_hardware_estimator(config) -> str:
+    """Data island + container for the hardware estimator widget
+    (docs/javascripts/hardware.js), plus a static Q4 sizing table that
+    serves as the no-JavaScript fallback and a quick reference. All
+    numbers come from data/local_models.yaml and data/hardware_tiers.yaml;
+    the widget computes from the same arithmetic the page teaches."""
+    models = _load(_data_dir(config) / "local_models.yaml")
+    tiers = _load(_data_dir(config) / "hardware_tiers.yaml")
+    for m in models:
+        if m["arch"] not in ("dense", "moe"):
+            raise ValueError(
+                f"render_data hook: unknown arch {m['arch']!r} "
+                f"on {m['name']!r}")
+    payload = json.dumps({"models": models, "tiers": tiers},
+                         ensure_ascii=False)
+    rows = [
+        "<table><thead><tr><th>Model</th><th>Type</th>"
+        "<th>Total parameters</th>"
+        "<th>Memory needed at Q4 (approx.)</th></tr></thead><tbody>"
+    ]
+    for m in models:
+        need = m["total_b"] * 0.57 + 1.5
+        kind = "Mixture-of-experts" if m["arch"] == "moe" else "Dense"
+        rows.append(
+            f"<tr><td>{m['name']}</td><td>{kind}</td>"
+            f"<td>{m['total_b']:g}B</td>"
+            f"<td>about {need:.0f} GB</td></tr>")
+    rows.append("</tbody></table>")
+
+    print("render_data: hardware estimator verification")
+    print(f"  models read : {len(models)}")
+    print(f"  tiers read  : {len(tiers)}")
+    print(f"  table rows  : {len(rows) - 2} (cross-check "
+          f"{'ok' if len(rows) - 2 == len(models) else 'MISMATCH'})")
+    if len(rows) - 2 != len(models):
+        raise AssertionError(
+            "render_data hook: hardware table count mismatch")
+
+    return (
+        f'<script type="application/json" id="hw-data">{payload}</script>\n'
+        '<div class="hw-estimator" id="hw-estimator"></div>\n\n'
+        + "".join(rows) + "\n"
+    )
 
 
 def _favicon_img(url: str) -> str:
@@ -760,6 +807,15 @@ def on_page_markdown(markdown, page, config, files):
         return markdown.replace(
             GUIDE_VIDEOS_LOCAL_MARKER,
             _render_guide_videos_group(config, "local"),
+        )
+    if src == "tools/hardware.md":
+        if HARDWARE_ESTIMATOR_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: tools/hardware.md is missing the "
+                f"{HARDWARE_ESTIMATOR_MARKER} marker"
+            )
+        return markdown.replace(
+            HARDWARE_ESTIMATOR_MARKER, _render_hardware_estimator(config)
         )
     if src == "conferences.md":
         if CONFERENCES_MARKER not in markdown:

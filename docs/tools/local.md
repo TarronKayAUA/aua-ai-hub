@@ -16,6 +16,8 @@ Memory is the main constraint. A model has to fit in your computer's memory (RAM
 - **32 GB or a recent gaming graphics card** opens up the 20 to 30 billion parameter class, where local models start feeling genuinely useful.
 - Apple silicon Macs share memory between the processor and graphics, which makes them popular for local models; the same memory math applies.
 
+For the full picture (what tokens per second feels like, why video memory beats system memory, quantization trade-offs, mixture-of-experts models, and an interactive estimator for your own machine), see [Hardware for Local AI](hardware.md).
+
 ## The simple path: a local chat assistant
 
 1. **Install a runner.** [LM Studio](https://lmstudio.ai) is the easiest start: a desktop application where you browse models, click download, and chat, no command line involved. [Ollama](https://ollama.com) is the command-line equivalent, and pairs with [Open WebUI](https://openwebui.com) if you want a browser chat interface on top. All three are free and listed in the [directory](index.md).
