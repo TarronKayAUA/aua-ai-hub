@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://share.transistor.fm/s/6d8dad5f" target="_blank" rel="noopener">
+  <img src="https://img.transistorcdn.com/Lm2mEDqafZACT7FMC2M7-KVb80vV2pNbxRXD28BQVg0/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9jYWRm/N2UzOWQ2NmRjOTll/NTBiMDEwMjc1ZjVm/YjNlYy5wbmc.jpg" alt="Video: Image Generation and Visual Intelligence with Black Forest Labs" loading="lazy">
+  <span class="video-card-title">Image Generation and Visual Intelligence with Black Forest Labs</span>
+  <span class="video-card-meta">Practical AI, July 2, 2026</span>
+  <span class="video-card-desc">Discussion of the evolution of AI image generation capabilities and visual intelligence models with Black Forest Labs.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/victoria-hedlund-on-ai-bias-what-every-teacher-needs-to-know" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Victoria Hedlund on AI bias: What every teacher needs to know" loading="lazy">
   <span class="video-card-title">Victoria Hedlund on AI bias: What every teacher needs to know</span>
