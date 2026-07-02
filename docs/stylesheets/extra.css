@@ -399,9 +399,14 @@
 
 /* === Inline figures (educational pages) ==================================== */
 
-.figure {
+.md-typeset .figure {
+  /* Material's own `figure { width: fit-content; max-width: 100% }` wins
+     specificity over a bare .figure and shrink-wraps the SVG to its
+     default 150px height (~505px wide). This selector outranks it and
+     gives figures a real width; the SVG canvases are ~660 units. */
+  width: 100%;
+  max-width: 42rem;
   margin: 1.6rem auto;
-  max-width: 38rem;
   text-align: center;
 }
 

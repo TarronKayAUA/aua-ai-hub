@@ -33,7 +33,7 @@ The second stage shapes that raw predictor into a useful assistant. Companies fi
 <text x="555" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">The assistant</text>
 <text x="555" y="90" text-anchor="middle" font-size="11" fill="#ffffff">you actually talk to</text>
 <line x1="100" y1="118" x2="100" y2="140" stroke="var(--md-default-fg-color--light)" stroke-dasharray="4 3"/>
-<text x="100" y="158" text-anchor="middle" font-size="11" fill="var(--md-default-fg-color--light)">training data ends here: the knowledge cutoff</text>
+<text x="108" y="158" text-anchor="start" font-size="11" fill="var(--md-default-fg-color--light)">training data ends here: the knowledge cutoff</text>
 </svg>
 <figcaption>Training happens once, in stages, before you ever type anything.</figcaption>
 </figure>
@@ -120,7 +120,7 @@ Hallucination is not a glitch. It follows directly from how the model works. The
 <rect x="415" y="125" width="235" height="52" rx="8" fill="var(--md-default-fg-color--lightest)" stroke="#c62828" stroke-width="2"/>
 <text x="532" y="147" text-anchor="middle" font-size="11.5" font-weight="bold" fill="var(--md-typeset-color)">plausible but invented</text>
 <text x="532" y="165" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">a hallucination, equally confident</text>
-<text x="532" y="203" text-anchor="middle" font-size="10.5" font-style="italic" fill="var(--md-default-fg-color--light)">both read identically; only checking the source tells them apart</text>
+<text x="650" y="203" text-anchor="end" font-size="10.5" font-style="italic" fill="var(--md-default-fg-color--light)">both read identically; only checking the source tells them apart</text>
 </svg>
 <figcaption>Hallucination is not a glitch; it is what plausible-text generation does when the fact is missing.</figcaption>
 </figure>
