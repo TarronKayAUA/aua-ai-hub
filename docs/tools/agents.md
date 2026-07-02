@@ -6,6 +6,35 @@ A chat assistant answers you. An agent acts for you: given a goal, it plans step
 
 Under the hood an agent is the same kind of model you chat with, run in a loop with three additions: **tools** it may call (search the web, read a file, run code, click a button), **permissions** that define what it may touch, and a **stopping rule** for when to report back. The model proposes an action, the system executes it, the result feeds back in, and the loop continues. Nothing mystical is added; the capability and the failure modes are both the chat model's, amplified by the ability to act.
 
+<figure class="figure">
+<svg viewBox="0 0 660 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The agent loop: the model proposes an action, a tool executes it, the result feeds back, all inside a permissions boundary, until it reports back done or needing input">
+<defs><marker id="ag-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<rect x="15" y="95" width="105" height="44" rx="6" fill="var(--md-primary-fg-color)"/>
+<text x="67" y="121" text-anchor="middle" font-size="10" fill="#ffffff">your goal</text>
+<rect x="140" y="28" width="390" height="170" rx="10" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="255" y="40" width="160" height="40" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="335" y="57" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">the model proposes</text>
+<text x="335" y="71" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">an action</text>
+<rect x="360" y="140" width="160" height="40" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="440" y="157" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">a tool executes it:</text>
+<text x="440" y="171" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">search, read, run, click</text>
+<rect x="160" y="140" width="160" height="40" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="240" y="157" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">the result</text>
+<text x="240" y="171" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">feeds back in</text>
+<line x1="120" y1="112" x2="252" y2="70" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ag-ar)"/>
+<line x1="400" y1="82" x2="433" y2="136" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ag-ar)"/>
+<line x1="358" y1="160" x2="324" y2="160" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ag-ar)"/>
+<line x1="245" y1="136" x2="272" y2="84" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ag-ar)"/>
+<line x1="522" y1="160" x2="543" y2="160" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ag-ar)"/>
+<rect x="545" y="132" width="100" height="56" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="595" y="152" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">reports back:</text>
+<text x="595" y="166" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">done, or it needs</text>
+<text x="595" y="180" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">your input</text>
+<text x="335" y="212" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">everything inside the dashed line runs within the permissions you granted</text>
+</svg>
+<figcaption>The same model you chat with, run in a loop with tools, permissions, and a stopping rule.</figcaption>
+</figure>
+
 ## What they are good and bad at
 
 Agents shine on tasks that are tedious but verifiable: assembling a document from scattered sources, reformatting and cross-checking data, multi-step web research with a concrete deliverable, drafting and revising across many files. They remain weak where a wrong step is costly and hard to check: judgment calls, anything requiring genuine domain expertise to evaluate, and long chains where an early error compounds silently. The practical rule mirrors the rest of this site: delegate the assembly, keep the judgment.

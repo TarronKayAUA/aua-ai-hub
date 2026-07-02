@@ -18,6 +18,29 @@ Two different worlds share the word "clinical," and the rules differ sharply bet
 
 **The absolute rule.** Patient health information never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
 
+<figure class="figure">
+<svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels: learning clinical medicine with AI is encouraged with discipline; AI in patient care is extreme caution; patient information never enters a public tool in either world">
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">two worlds share the word clinical</text>
+<rect x="20" y="30" width="300" height="125" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<text x="170" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">learning clinical medicine</text>
+<text x="170" y="68" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">encouraged, with discipline</text>
+<text x="170" y="92" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">practice differentials on AI cases</text>
+<text x="170" y="110" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">mechanism explanations</text>
+<text x="170" y="128" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">generated practice questions</text>
+<text x="170" y="146" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">the literature stays primary</text>
+<rect x="340" y="30" width="300" height="125" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="490" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">AI in patient care</text>
+<text x="490" y="68" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">extreme caution, by policy</text>
+<text x="490" y="92" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">augments decisions,</text>
+<text x="490" y="110" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">never automates them</text>
+<text x="490" y="128" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">never between you and your supervisor</text>
+<text x="490" y="146" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">accountability stays human</text>
+<rect x="20" y="170" width="620" height="30" rx="6" fill="var(--md-primary-fg-color)"/>
+<text x="330" y="189" text-anchor="middle" font-size="9.5" fill="#ffffff">the absolute rule in both worlds: patient information never enters a public AI tool, no informal exceptions</text>
+</svg>
+<figcaption>Same word, different rules; the data floor is identical in both.</figcaption>
+</figure>
+
 **At clinical sites.** Hospitals and clinics have their own AI policies, often stricter than the university's and sometimes covering specific tools (ambient scribes, documentation assistants) that the site has or has not sanctioned. During rotations you are under both sets of rules; when they differ, follow the stricter one, and when you are unsure, ask before you use.
 
 **Bias is a clinical issue here.** Models reflect their training data, and documented performance gaps across populations make uncritical clinical use an equity problem, not just an accuracy one. The policy's requirement to identify and mitigate bias applies with most force exactly here.

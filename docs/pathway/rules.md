@@ -20,6 +20,37 @@ AUA encourages AI use where it helps you do your work, inside guardrails set by 
 
 4. **Check before you trust a tool.** The [tools directory](../tools/index.md) shows each tool's governance status, and [How Tools Are Reviewed](../governance/review-process.md) explains what the statuses mean and how they are assigned. Whatever the status, the data rules above always apply.
 
+<figure class="figure">
+<svg viewBox="0 0 660 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A gate before every paste: if the text contains patient information, student records, personnel information, or unpublished work, it stays out of public tools; otherwise proceed with accountability, labeling, and verification">
+<defs><marker id="rl-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<rect x="20" y="85" width="150" height="50" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<text x="95" y="106" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">what you are</text>
+<text x="95" y="120" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">about to type</text>
+<line x1="172" y1="110" x2="216" y2="110" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rl-ar)"/>
+<rect x="220" y="30" width="220" height="175" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="330" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">does it contain:</text>
+<text x="330" y="74" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">patient information (PHI)</text>
+<text x="330" y="92" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">student records (FERPA)</text>
+<text x="330" y="110" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">personnel information</text>
+<text x="330" y="128" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">unpublished or proprietary work</text>
+<text x="330" y="152" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">the policy's list is not exhaustive:</text>
+<text x="330" y="165" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">if you would not email it outside</text>
+<text x="330" y="178" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">the university, treat it the same</text>
+<line x1="442" y1="80" x2="478" y2="80" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rl-ar)"/>
+<rect x="482" y="45" width="160" height="62" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="562" y="66" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">yes: it stays out;</text>
+<text x="562" y="80" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">use an approved tool</text>
+<text x="562" y="94" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">or de-identify first</text>
+<line x1="442" y1="160" x2="478" y2="160" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rl-ar)"/>
+<rect x="482" y="128" width="160" height="62" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<text x="562" y="149" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">no: go ahead;</text>
+<text x="562" y="163" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">you stay accountable,</text>
+<text x="562" y="177" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">label and verify</text>
+<text x="330" y="226" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the gate comes before every paste; a tool's status never relaxes it</text>
+</svg>
+<figcaption>Rule 2 as a habit: run the gate before anything enters a public tool.</figcaption>
+</figure>
+
 If you see misuse, a data exposure, or a tool producing harmful or discriminatory output, the policy expects you to report it to the AI Responsible Use Subcommittee; the [About page](../about.md) has the contact route. Reports are handled confidentially, and retaliation against good-faith reporters is prohibited.
 
 ## Self-check
