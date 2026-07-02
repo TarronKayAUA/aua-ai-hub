@@ -5,6 +5,10 @@
 # issue, never applied. (Auto-apply exists only for events already in the
 # calendar; see the conference_watch block in feeds.yaml.)
 #
+# Candidates follow the calendar's selection criteria (see the header of
+# data/conferences.yaml): medical AI and medical education first, higher
+# education second, general education third; English-language only.
+#
 # All URLs verified fetchable 2026-06-10. amia.org was considered and dropped
 # because it blocks scripted requests (HTTP 403).
 
@@ -16,9 +20,9 @@
   url: https://med.stanford.edu/content/sm/raisehealth/events/healthaiweek.html
   note: Part of Stanford Health AI Week.
 
-- name: ASU+GSV Summit
-  url: https://www.asugsvsummit.com/
-  note: Large AI-in-education summit, usually April, San Diego.
+# ASU+GSV moved to data/conferences.yaml on 2026-07-01 (2027 edition,
+# owner approved via conference-watch issue #5); the calendar entry is
+# monitored directly by the conference-watch workflow now.
 
 # EDUCAUSE moved to data/conferences.yaml on 2026-06-11; the calendar entry
 # is monitored directly by the conference-watch workflow now.
