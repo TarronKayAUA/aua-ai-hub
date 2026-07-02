@@ -82,6 +82,7 @@ nav:
       - "6. Clinical Contexts": pathway/clinical.md
       - Reference:
           - How LLMs Work: basics/how-llms-work.md
+          - Getting Better Answers: basics/better-answers.md
           - Glossary: basics/glossary.md
           - Common Misconceptions: basics/misconceptions.md
       - Courses and Resources: learning/index.md

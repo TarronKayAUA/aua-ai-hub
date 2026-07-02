@@ -55,7 +55,7 @@ The memory a model needs is its parameter count times the bytes stored per param
 | Q8 (8-bit) | ~1.06 | Indistinguishable from full for most use |
 | Q4 (4-bit) | ~0.57 | The standard choice; small, measurable quality loss |
 
-So an 8 billion parameter model is roughly 16 GB at full precision, 8.5 GB at Q8, and 4.7 GB at Q4. Q4 is the default the community settled on because the quality loss is modest and the size halves twice; below Q4 (Q3, Q2) degradation gets noticeable quickly, and those are best avoided except in emergencies. On top of the weights, budget **1 to 2 GB of working memory** for short conversations, and more for long ones: the model keeps notes on everything in the current context (the KV cache), and a very long document or chat can add several gigabytes. People who size for the weights alone are the people wondering why their 32,000-token context will not load.
+So an 8 billion parameter model is roughly 16 GB at full precision, 8.5 GB at Q8, and 4.7 GB at Q4. Q4 is the default the community settled on because the quality loss is modest and the size halves twice; below Q4 (Q3, Q2) degradation gets noticeable quickly, and those are best avoided except in emergencies. On top of the weights, budget **1 to 2 GB of working memory** for short conversations, and more for long ones: the model keeps notes on everything in the current context (the KV cache), and a very long document or chat can add several gigabytes. People who size for the weights alone are the people wondering why their 32,000-token context will not load. (What the context window means for how you use a model, local or cloud, is covered in [Getting Better Answers](../basics/better-answers.md).)
 
 ## Dense, mixture-of-experts, and multimodal
 

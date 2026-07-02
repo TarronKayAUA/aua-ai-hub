@@ -90,6 +90,8 @@ Everything the model can see at once, your conversation so far plus any document
 <figcaption>Working memory is large but finite; what falls outside it is invisible to the model.</figcaption>
 </figure>
 
+Using that working memory well, what to put in it, what to keep out of it, and when to start a fresh conversation, is a skill of its own; [Getting Better Answers](better-answers.md) covers it.
+
 There is also a setting called temperature that controls how predictable the output is. Low temperature makes the model pick the most likely next token nearly every time, which produces consistent but sometimes flat responses. Higher temperature allows more variety. This is one reason the same question can produce different answers on different tries.
 
 ## Why models make things up
