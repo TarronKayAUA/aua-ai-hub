@@ -59,6 +59,30 @@
   last_reviewed: 2026-06-10
   blurb: French lab Mistral's open-weight range, from the small Ministral models to Mistral Large 3, with most flagship releases under Apache 2.0.
 
+# The next three were added 2026-07-02 via content-watch issue #6 (owner
+# approved). Licenses verified from each Hugging Face model card.
+
+- name: GLM 5.2
+  vendor: Z.ai (Zhipu AI)
+  url: https://huggingface.co/zai-org/GLM-5.2
+  license: MIT
+  last_reviewed: 2026-07-02
+  blurb: The current flagship of the GLM open-weight family behind the Z.ai assistant, a mixture-of-experts model published under the permissive MIT license and supported by local toolchains including llama.cpp.
+
+- name: LongCat 2.0
+  vendor: Meituan
+  url: https://huggingface.co/meituan-longcat/LongCat-2.0
+  license: MIT
+  last_reviewed: 2026-07-02
+  blurb: A very large open-weight mixture-of-experts model from Chinese company Meituan, 1.6 trillion total parameters with about 48 billion active per token and a 1 million token context window, under MIT.
+
+- name: openPangu 2.0 Flash
+  vendor: Huawei
+  url: https://huggingface.co/openpangu/openPangu-2.0-Flash
+  license: OpenPangu license
+  last_reviewed: 2026-07-02
+  blurb: Huawei's open-weight mixture-of-experts model, 92 billion total parameters with 6 billion active and a 512k context window, trained on Huawei's own accelerators under a custom license.
+
 # --- Image generation (owner approved 2026-06-12) ---------------------------
 
 - name: FLUX.1
