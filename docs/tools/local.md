@@ -7,6 +7,33 @@ Every assistant in the [tools directory](index.md) runs in a vendor's cloud: wha
 !!! warning "Local does not mean exempt"
     Running a model locally removes the vendor from the picture, but institutional rules still apply. The [AI Responsible Use Policy](../governance/policy.md) governs work with patient information and student records regardless of where the model runs.
 
+<figure class="figure">
+<svg viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Where your text goes: to vendor servers with a cloud assistant, nowhere with a local model, to a rented server with cloud GPUs">
+<defs><marker id="lo-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">where your text goes</text>
+<text x="24" y="59" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">cloud assistant</text>
+<rect x="150" y="36" width="130" height="36" rx="6" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.4" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<text x="215" y="58" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your text</text>
+<text x="360" y="46" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">leaves your machine</text>
+<line x1="282" y1="54" x2="438" y2="54" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#lo-ar)"/>
+<rect x="440" y="36" width="180" height="36" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="530" y="58" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">the vendor's servers</text>
+<text x="24" y="124" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">local model</text>
+<rect x="150" y="101" width="250" height="36" rx="6" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<text x="275" y="123" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your text stays on this machine</text>
+<text x="420" y="123" text-anchor="start" font-size="9.5" fill="var(--md-default-fg-color--light)">nothing leaves; works offline</text>
+<text x="24" y="189" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">rented GPU</text>
+<rect x="150" y="166" width="130" height="36" rx="6" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.4" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<text x="215" y="188" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your text</text>
+<text x="360" y="176" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">leaves, to hardware you control</text>
+<line x1="282" y1="184" x2="438" y2="184" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#lo-ar)"/>
+<rect x="440" y="166" width="180" height="36" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="530" y="188" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">a server you rent</text>
+<text x="330" y="222" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the policy's data rules apply in all three lanes</text>
+</svg>
+<figcaption>Privacy is the headline reason to run locally: the middle lane is the only one where nothing leaves.</figcaption>
+</figure>
+
 ## What you need
 
 Memory is the main constraint. A model has to fit in your computer's memory (RAM), or better, in the video memory of a graphics card. Most local models are used in quantized form, meaning compressed versions that trade a small amount of quality for a much smaller size. Rough expectations:

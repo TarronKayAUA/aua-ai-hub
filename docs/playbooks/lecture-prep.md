@@ -12,6 +12,35 @@ Turn a topic and a set of learning objectives into a session plan: a structure, 
 
 AI is strong at structure and variation: organizing content against objectives, generating clinical openers, drafting check questions, proposing analogies, and producing alternative explanations for a concept students struggle with. It is weak exactly where your expertise lives: knowing what this cohort needs, judging clinical accuracy and currency, and deciding what to cut. Use it to multiply your drafting, never to outsource your judgment about content.
 
+<figure class="figure">
+<svg viewBox="0 0 660 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Swimlane diagram alternating between what the model drafts and what you decide, ending in source verification">
+<defs><marker id="lp-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="28" y="22" text-anchor="start" font-size="10" font-weight="bold" fill="var(--md-default-fg-color--light)">the model drafts</text>
+<rect x="20" y="30" width="620" height="60" rx="6" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.25"/>
+<text x="28" y="102" text-anchor="start" font-size="10" font-weight="bold" fill="var(--md-default-fg-color--light)">you decide</text>
+<rect x="20" y="110" width="620" height="60" rx="6" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.25"/>
+<rect x="40" y="118" width="125" height="44" rx="6" fill="var(--md-primary-fg-color)"/>
+<text x="102" y="136" text-anchor="middle" font-size="9.5" fill="#ffffff">your objectives</text>
+<text x="102" y="150" text-anchor="middle" font-size="9.5" fill="#ffffff">and materials</text>
+<rect x="190" y="38" width="125" height="44" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="252" y="56" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">timed outline</text>
+<text x="252" y="70" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">with checks</text>
+<rect x="340" y="118" width="125" height="44" rx="6" fill="var(--md-primary-fg-color)"/>
+<text x="402" y="136" text-anchor="middle" font-size="9.5" fill="#ffffff">judge, cut, refit</text>
+<text x="402" y="150" text-anchor="middle" font-size="9.5" fill="#ffffff">for your cohort</text>
+<rect x="490" y="38" width="125" height="44" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="552" y="56" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">support materials</text>
+<text x="552" y="70" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">on request</text>
+<line x1="168" y1="130" x2="198" y2="86" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#lp-ar)"/>
+<line x1="318" y1="78" x2="348" y2="116" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#lp-ar)"/>
+<line x1="468" y1="130" x2="498" y2="86" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#lp-ar)"/>
+<line x1="552" y1="84" x2="552" y2="182" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#lp-ar)"/>
+<rect x="40" y="185" width="575" height="30" rx="6" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<text x="327" y="204" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">every claim that survives gets checked against a current source</text>
+</svg>
+<figcaption>The ping-pong that works: you supply and judge, the model drafts and varies, and nothing ships unverified.</figcaption>
+</figure>
+
 ## Gather first
 
 - Your learning objectives for the session (the single highest-value input).

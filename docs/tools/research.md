@@ -9,6 +9,44 @@ Artificial intelligence tools now cover most stages of a research project, from 
 
     **Unpublished data stays out of consumer tools.** Data covered by an Institutional Review Board (IRB) protocol, participant information, and unpublished results do not belong in free web tools, whose terms often permit training on your inputs. The [AI Responsible Use Policy](../governance/policy.md) applies to research exactly as it does to teaching.
 
+<figure class="figure">
+<svg viewBox="0 0 660 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six research stages from finding literature to writing, each mapped to the tools covered below">
+<defs><marker id="rs-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipeline, mapped to tools</text>
+<rect x="20" y="32" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="117" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">1. find and map</text>
+<text x="117" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Semantic Scholar,</text>
+<text x="117" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">ResearchRabbit,</text>
+<text x="117" y="100" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">deep research modes</text>
+<rect x="232" y="32" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="329" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">2. screen and extract</text>
+<text x="329" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Elicit, plus the library's</text>
+<text x="329" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">screening prompt</text>
+<rect x="444" y="32" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="541" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">3. evidence questions</text>
+<text x="541" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Consensus, Scite,</text>
+<text x="541" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">OpenEvidence</text>
+<rect x="20" y="152" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="117" y="172" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">4. synthesize your sources</text>
+<text x="117" y="192" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">NotebookLM, grounded</text>
+<text x="117" y="206" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">in what you upload</text>
+<rect x="232" y="152" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="329" y="172" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">5. analyze</text>
+<text x="329" y="192" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Claude Science,</text>
+<text x="329" y="206" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">analysis plan prompt</text>
+<rect x="444" y="152" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="541" y="172" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">6. write and disclose</text>
+<text x="541" y="192" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">verify every citation,</text>
+<text x="541" y="206" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">check the journal's AI policy</text>
+<line x1="217" y1="76" x2="230" y2="76" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rs-ar)"/>
+<line x1="429" y1="76" x2="442" y2="76" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rs-ar)"/>
+<path d="M 541 120 L 541 136 L 117 136 L 117 150" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rs-ar)"/>
+<line x1="217" y1="196" x2="230" y2="196" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rs-ar)"/>
+<line x1="429" y1="196" x2="442" y2="196" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rs-ar)"/>
+</svg>
+<figcaption>Each stage has a section below; every stage ends with your own verification at the source.</figcaption>
+</figure>
+
 ## Finding and mapping literature
 
 [Semantic Scholar](https://www.semanticscholar.org) remains the strongest free starting point: a search engine over 200+ million papers including the PubMed corpus, with citation graphs and one-line paper summaries. It complements PubMed rather than replacing it; for anything clinical, run both.

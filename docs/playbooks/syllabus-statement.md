@@ -22,6 +22,31 @@ A model can help you draft and stress-test your statement (feed it your assessme
 
 Adapt freely; the bracketed parts are yours to fill. Each is written to be specific enough to enforce.
 
+<figure class="figure">
+<svg viewBox="0 0 660 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three syllabus tiers standing on one shared policy floor">
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">three workable tiers, one shared floor</text>
+<rect x="20" y="30" width="195" height="100" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="117" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">restrictive</text>
+<text x="117" y="76" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">AI not permitted</text>
+<text x="117" y="90" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">for graded work</text>
+<text x="117" y="114" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">say what is allowed</text>
+<rect x="232" y="30" width="195" height="100" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="329" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">disclosure-based</text>
+<text x="329" y="76" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">named uses permitted,</text>
+<text x="329" y="90" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">with disclosure</text>
+<text x="329" y="114" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">you own any errors</text>
+<rect x="444" y="30" width="195" height="100" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="541" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">encouraged</text>
+<text x="541" y="76" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">professional use,</text>
+<text x="541" y="90" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">verify and disclose</text>
+<text x="541" y="114" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">defend it without the tool</text>
+<rect x="20" y="150" width="619" height="44" rx="6" fill="var(--md-primary-fg-color)"/>
+<text x="330" y="168" text-anchor="middle" font-size="9.5" fill="#ffffff">the floor no course statement can relax: accountability stays with the student,</text>
+<text x="330" y="182" text-anchor="middle" font-size="9.5" fill="#ffffff">AI work is never presented as original, data rules hold, secure exams stay AI-free</text>
+</svg>
+<figcaption>Choose per course, even per assessment; the floor comes from the university policy and cannot be lowered by a syllabus.</figcaption>
+</figure>
+
 **Restrictive (AI not permitted for graded work):**
 
 ```text

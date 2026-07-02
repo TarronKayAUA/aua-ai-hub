@@ -10,6 +10,26 @@ A large language model (LLM) does not retrieve stored answers. It generates text
 
 Fluency and accuracy are unrelated in these systems. The model produces equally polished prose whether it is right or wrong, because confidence in the writing style carries no information about the underlying facts. Calibrate your trust to the type of task: transformation of material you supplied is usually reliable, while specific facts, numbers, and citations pulled from the model's memory need verification.
 
+<figure class="figure">
+<svg viewBox="0 0 660 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-panel diagram: tasks grounded in material you supplied are usually reliable; facts pulled from the model's memory need source verification">
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">calibrate trust by task, not by tone</text>
+<rect x="20" y="30" width="300" height="125" rx="8" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.25" stroke="#2e7d32" stroke-width="2"/>
+<text x="170" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">grounded in what you supplied</text>
+<text x="170" y="76" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">summarizing your article</text>
+<text x="170" y="94" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">restructuring your notes</text>
+<text x="170" y="112" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">critiquing your draft</text>
+<text x="170" y="138" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">usually reliable; still read it</text>
+<rect x="340" y="30" width="300" height="125" rx="8" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.25" stroke="#c62828" stroke-width="2"/>
+<text x="490" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">pulled from the model's memory</text>
+<text x="490" y="76" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">specific facts and numbers</text>
+<text x="490" y="94" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">dosages, criteria, thresholds</text>
+<text x="490" y="112" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">citations and references</text>
+<text x="490" y="138" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">verify at the source before use</text>
+<text x="330" y="180" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the prose reads identically in both cases; the writing style tells you nothing</text>
+</svg>
+<figcaption>Fluency is constant; reliability is not. Sort by where the content came from, not by how it sounds.</figcaption>
+</figure>
+
 ## :material-keyboard-outline: "It is just fancy autocomplete, so it cannot do anything useful"
 
 The mechanism really is next-word prediction, but the conclusion does not follow. Predicting text well across the breadth of human writing required these models to internalize grammar, facts, reasoning patterns, and style. The practical capabilities, summarizing, drafting, translating, critiquing, tutoring, are real and measurable. Dismissing the technology outright is as much an error as trusting it blindly.

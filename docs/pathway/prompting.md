@@ -21,6 +21,30 @@ The quality of what you get is mostly determined by what you give. Modern assist
 
 And one meta-habit: **ask for reasoning you can check, not bare answers.** A response that shows its steps, cites its sources, or flags its own uncertainty gives you something to verify. The [prompt library](../prompts/index.md) is built around these habits; every template there shows them in action, and the [Learning to prompt](../prompts/index.md#learning-to-prompt) resources go deeper, from Anthropic's 24-minute Prompting 101 video to Google's beginner guide.
 
+<figure class="figure">
+<svg viewBox="0 0 660 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a strong request: role, materials, task, and output shape, plus an iteration loop with the reply">
+<defs><marker id="pf-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">a strong request, anatomized</text>
+<rect x="100" y="28" width="310" height="152" rx="10" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.2" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<rect x="114" y="40" width="282" height="30" rx="5" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.9"/>
+<text x="255" y="59" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">role: who it is, who you are</text>
+<rect x="114" y="76" width="282" height="30" rx="5" fill="var(--md-primary-fg-color)"/>
+<text x="255" y="89" text-anchor="middle" font-size="9" fill="#ffffff">materials: objectives, drafts, criteria</text>
+<text x="255" y="100" text-anchor="middle" font-size="9" fill="#ffffff">(the single biggest upgrade)</text>
+<rect x="114" y="112" width="282" height="30" rx="5" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.9"/>
+<text x="255" y="131" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">task: what you want done</text>
+<rect x="114" y="148" width="282" height="30" rx="5" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.9"/>
+<text x="255" y="167" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">output: format, length, level, how many</text>
+<rect x="480" y="70" width="150" height="44" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="555" y="88" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">a first draft,</text>
+<text x="555" y="102" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">not a verdict</text>
+<line x1="412" y1="80" x2="478" y2="80" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#pf-ar)"/>
+<path d="M 555 116 L 555 150 L 414 150" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#pf-ar)"/>
+<text x="510" y="168" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">iterate: point at what is wrong, push back</text>
+</svg>
+<figcaption>Two rounds of targeted iteration routinely beat one elaborate prompt.</figcaption>
+</figure>
+
 Calibrate verification to stakes: a brainstorm needs a sniff test, a lecture slide needs a source check, and anything touching assessment, research, or patient care needs full verification at the original source, per the [AI Responsible Use Policy](../governance/policy.md).
 
 ## Self-check
