@@ -4,6 +4,12 @@
 # governance_status values: approved | conditional | restricted | under_review
 # All statuses are provisional until the AI Committee ratifies them.
 # Only the owner changes governance_status.
+#
+# Content-watch keys (optional, per entry): the weekly content-watch
+# workflow verifies entries against their pages and bumps last_reviewed
+# when unchanged. verify_url points it at a fetchable marketing page when
+# the product url is a login wall; `verify: skip` excludes an entry whose
+# pages never yield text to a scripted fetch (those stay owner-reviewed).
 
 - name: Claude
   vendor: Anthropic
@@ -29,6 +35,9 @@
   vendor: Google
   category: assistants
   url: https://gemini.google.com
+  # The app URL is a login wall; verification reads the marketing page
+  # (1,900+ words of fetchable text, checked 2026-07-02).
+  verify_url: https://gemini.google/about/
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
@@ -179,6 +188,9 @@
   blurb: Literature research assistant that finds papers and extracts key findings into structured tables.
 
 - name: Consensus
+  # Pages never yield text to a scripted fetch (login wall or
+  # client-rendered); excluded from content-watch verification 2026-07-02.
+  verify: skip
   vendor: Consensus
   category: research
   url: https://consensus.app
@@ -199,6 +211,9 @@
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
 - name: NotebookLM
+  # Pages never yield text to a scripted fetch (login wall or
+  # client-rendered); excluded from content-watch verification 2026-07-02.
+  verify: skip
   vendor: Google
   category: research
   url: https://notebooklm.google.com
@@ -303,6 +318,9 @@
   blurb: Adaptive USMLE study platform whose lessons, flashcards, and quizzes adjust to performance, with a built-in tutoring chatbot.
 
 - name: Gamma
+  # Pages never yield text to a scripted fetch (login wall or
+  # client-rendered); excluded from content-watch verification 2026-07-02.
+  verify: skip
   vendor: Gamma
   category: presentations_design
   url: https://gamma.app

@@ -196,11 +196,16 @@ def main() -> int:
     def review_age(entry: dict) -> str:
         return str(entry.get("last_reviewed") or "")
 
-    rotation = sorted(tools, key=review_age)[:rotation_size]
+    # Entries marked `verify: skip` (login walls, client-side rendering,
+    # bot blockers) yield no fetchable text and would flag "unknown" every
+    # cycle; they are excluded from rotation and stay owner-reviewed.
+    verifiable = [t for t in tools if t.get("verify") != "skip"]
+    rotation = sorted(verifiable, key=review_age)[:rotation_size]
     blocks = []
     for entry in rotation:
         try:
-            page = strip_page(entry["url"], page_chars)
+            page = strip_page(entry.get("verify_url") or entry["url"],
+                              page_chars)
         except requests.RequestException as exc:
             failures.append(f"{entry['name']}: fetch {type(exc).__name__}")
             continue
