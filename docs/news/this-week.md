@@ -11,11 +11,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A new survey of clinical medicine undergraduates has revealed low awareness and limited preparation for artificial intelligence and medical big data, underscoring major curriculum gaps and highlighting specific student preferences for educational programs in this area <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[3]</a>. This need echoes findings from another cross-sectional study where Korean medical students reported insufficient readiness for effective AI integration in their training <a href="https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0">[14]</a>. In response to these gaps, research on AI-powered systems for medical history-taking shows that undergraduate students are willing to accept and interact with such technology, suggesting openness to digital tools in clinical education <a href="https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[6]</a>. Meanwhile, AI methods are also being explored for improving surgical residency feedback mechanisms, such as the FEED Protocol, which rapidly collects and acts on input to optimize curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42385587?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">[9]</a>.</p>
+<p>Ambient artificial intelligence is being explored to enhance clinical handoff learning and feedback, with a co-design and simulation study investigating its applications during transitions from the operating room to intensive care units <a href="https://mededu.jmir.org/2026/1/e85666">[3]</a>. Faculty and students are also focusing on effective digital simulation-based ultrasound training for physiotherapy, as a randomized controlled trial compares it to traditional methods <a href="https://mededu.jmir.org/2026/1/e87897">[2]</a>. Meanwhile, a bibliometric and thematic mapping study provides an overview of artificial intelligence tools employed for assessment and feedback throughout medical education <a href="https://mededu.jmir.org/2026/1/e98949">[1]</a>. Survey data show limited undergraduate familiarity with AI and highlight unmet curriculum needs for training in medical big data <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98949">Artificial Intelligence for Assessment and Feedback in Medical Education: Bibliometric Mapping Study and Thematic Evidence Map</a>
+    <p class="news-card-summary">Bibliometric and thematic mapping study of artificial intelligence applications for assessment and feedback in medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87897">Digital Simulation, Based Ultrasound Training for Physiotherapy Students: Prospective Randomized Controlled Trial</a>
+    <p class="news-card-summary">Prospective randomized controlled trial of digital simulation-based ultrasound training for physiotherapy students compared to traditional on-site methods.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
@@ -56,6 +70,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">User Acceptance of an AI-Powered Medical History-Taking Training System Among Undergraduate Medical Students: Mixed Methods Study</a>
     <p class="news-card-summary">Mixed methods study evaluates undergraduate medical student acceptance and interaction with an AI-powered system for training in patient history-taking.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42391624?fc=20260609215449&amp;ff=20260702194001&amp;v=2.20.0">Agreement Between Reasoning-Oriented Generative AI Models and Clinical Educators in Evaluating Japanese Objective Structured Clinical Examination Transcripts: Preliminary Comparative Study</a>
+    <p class="news-card-summary">Single-center study comparing reasoning-oriented generative AI models to clinical educators in evaluating Japanese objective structured clinical exams.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42391038?fc=20260609215449&amp;ff=20260702194001&amp;v=2.20.0">Artificial intelligence teaching assistants: a scalable solution for supporting struggling medical students</a>
+    <p class="news-card-summary">Study of AI teaching assistants shows correlation with improved exam performance and reduced academic difficulty in medical students.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42391026?fc=20260609215449&amp;ff=20260702194001&amp;v=2.20.0">MDCU MedUMORE: a national digital platform for equitable and lifelong medical education in Thailand and beyond</a>
+    <p class="news-card-summary">National digital platform for medical education in Thailand addressing inequities in infrastructure, faculty availability, and continuing professional development access.</p>
   </div>
 </div>
 <div class="news-card">
@@ -267,7 +302,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Clinical AI research is highlighting gaps between physician and AI evaluations on clinical reasoning tasks, prompting questions about the readiness of large language models for healthcare deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. High benchmark scores alone have been shown not to predict clinical utility, urging closer scrutiny before broad adoption <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>. Studies are also documenting structured reasoning failures by large language models in interpreting clinical oncology notes, underscoring limitations for use in complex clinical contexts <a href="https://www.nature.com/articles/s41746-026-02951-5">[8]</a>. Alongside these cautionary findings, advances in medical AI agents demonstrate improved clinical capabilities, suggesting progress in application development <a href="https://www.nature.com/articles/d41591-026-00034-2">[10]</a>. AI’s role in leukemia diagnostics continues to expand, complementing pathologist workflow from morphology to molecular analysis <a href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[3]</a>.</p>
+<p>A retrospective cohort study highlights the effect of ambient AI scribes on reducing documentation burden and clinician workload in emergency departments, particularly in high-burnout settings <a href="https://ai.jmir.org/2026/1/e92193">[1]</a>. Insights from intensive care unit clinicians further illuminate the role of ambient AI scribes in supporting documentation and team communication during complex patient care <a href="https://medinform.jmir.org/2026/1/e81445">[2]</a>. Concurrently, research indicates substantial divergence between physician and AI model evaluations on clinical reasoning, underscoring persistent gaps in AI readiness for real-world deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. A related article contends high benchmark scores for large language models do not translate to clinical application readiness, emphasizing the importance of rigorous validation in practice <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -307,6 +342,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.</p>
   </div>
   <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04500-9/MediaObjects/41591_2026_4500_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02943-5">KGRD: a knowledge-graph-augmented automated reasoning framework for diagnosis and counselling of paediatric rare genetic disorders</a>
+    <p class="news-card-summary">Knowledge-graph-augmented automated reasoning framework for diagnosis and counseling of pediatric rare genetic disorders published in npj Digital Medicine.</p>
+  </div>
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -580,17 +622,53 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-meta">IBM Technology, June 30, 2026</span>
   <span class="video-card-desc">Explains how key-value cache optimization reduces computational overhead in large language model inference on GPUs.</span>
 </a>
+<a class="video-card" href="https://www.youtube.com/watch?v=b0dZjfQ1rpc" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg" alt="Video: 5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist" loading="lazy">
+  <span class="video-card-title">5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist</span>
+  <span class="video-card-meta">The Medical Futurist, June 30, 2026</span>
+  <span class="video-card-desc">Examination of AI scribes as a near-term healthcare AI tool with direct clinical utility and physician acceptance.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
   <span class="video-card-title">The Promptware Kill Chain: How Prompt Injection Becomes AI Malware</span>
   <span class="video-card-meta">IBM Technology, June 28, 2026</span>
   <span class="video-card-desc">IBM Security explains prompt injection attacks and how they can be weaponized as AI malware, covering attack methods and defenses.</span>
 </a>
+<a class="video-card" href="https://www.youtube.com/watch?v=_pkjyDSwO7I" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/_pkjyDSwO7I/hqdefault.jpg" alt="Video: MedAI #162: Clinical Environment Simulator | Luyang Luo" loading="lazy">
+  <span class="video-card-title">MedAI #162: Clinical Environment Simulator | Luyang Luo</span>
+  <span class="video-card-meta">Stanford MedAI, May 28, 2026</span>
+  <span class="video-card-desc">Clinical Environment Simulator addresses limitations of current medical LLM benchmarks by providing more realistic evaluation contexts.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=Os_wohQDErw" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/Os_wohQDErw/hqdefault.jpg" alt="Video: MedAI #161: A prospective trial of a conversational AI in a primary care clinic | Jacob Koshy" loading="lazy">
+  <span class="video-card-title">MedAI #161: A prospective trial of a conversational AI in a primary care clinic | Jacob Koshy</span>
+  <span class="video-card-meta">Stanford MedAI, May 5, 2026</span>
+  <span class="video-card-desc">Prospective trial results from deployment of conversational AI in primary care clinic practice.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=gp4pHq9FRDI" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/gp4pHq9FRDI/hqdefault.jpg" alt="Video: MedAI #160: AI and LLMs for Advancing Clinical Research and Practice | Rui Zhang" loading="lazy">
+  <span class="video-card-title">MedAI #160: AI and LLMs for Advancing Clinical Research and Practice | Rui Zhang</span>
+  <span class="video-card-meta">Stanford MedAI, April 23, 2026</span>
+  <span class="video-card-desc">Overview of applications of AI and large language models for advancing clinical research and practice.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=mBTp5WTcDhk" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/mBTp5WTcDhk/hqdefault.jpg" alt="Video: MedAI #159: The Alignment Tax: How the Same Helpful LLMs Training Makes Them Dangerous | Mahmud Omar" loading="lazy">
+  <span class="video-card-title">MedAI #159: The Alignment Tax: How the Same Helpful LLMs Training Makes Them Dangerous | Mahmud Omar</span>
+  <span class="video-card-meta">Stanford MedAI, April 15, 2026</span>
+  <span class="video-card-desc">Analysis of safety tradeoffs in large language model training: how alignment techniques can create unexpected risks.</span>
+</a>
 </div>
 
 ## Podcasts
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/weve-read-the-ai-reports-so-you-dont-have-to-series-17-episode-9" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9" loading="lazy">
+  <span class="video-card-title">We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9</span>
+  <span class="video-card-meta">AI in Education Podcast, July 2, 2026</span>
+  <span class="video-card-desc">Ray and Dan survey recent research on artificial intelligence in education, summarizing findings for educators and students.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/6d8dad5f" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/Lm2mEDqafZACT7FMC2M7-KVb80vV2pNbxRXD28BQVg0/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9jYWRm/N2UzOWQ2NmRjOTll/NTBiMDEwMjc1ZjVm/YjNlYy5wbmc.jpg" alt="Video: Image Generation and Visual Intelligence with Black Forest Labs" loading="lazy">
   <span class="video-card-title">Image Generation and Visual Intelligence with Black Forest Labs</span>

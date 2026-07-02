@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Clinical AI research is highlighting gaps between physician and AI evaluations on clinical reasoning tasks, prompting questions about the readiness of large language models for healthcare deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. High benchmark scores alone have been shown not to predict clinical utility, urging closer scrutiny before broad adoption <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>. Studies are also documenting structured reasoning failures by large language models in interpreting clinical oncology notes, underscoring limitations for use in complex clinical contexts <a href="https://www.nature.com/articles/s41746-026-02951-5">[8]</a>. Alongside these cautionary findings, advances in medical AI agents demonstrate improved clinical capabilities, suggesting progress in application development <a href="https://www.nature.com/articles/d41591-026-00034-2">[10]</a>. AI’s role in leukemia diagnostics continues to expand, complementing pathologist workflow from morphology to molecular analysis <a href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[3]</a>.</p>
+<p>A retrospective cohort study highlights the effect of ambient AI scribes on reducing documentation burden and clinician workload in emergency departments, particularly in high-burnout settings <a href="https://ai.jmir.org/2026/1/e92193">[1]</a>. Insights from intensive care unit clinicians further illuminate the role of ambient AI scribes in supporting documentation and team communication during complex patient care <a href="https://medinform.jmir.org/2026/1/e81445">[2]</a>. Concurrently, research indicates substantial divergence between physician and AI model evaluations on clinical reasoning, underscoring persistent gaps in AI readiness for real-world deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. A related article contends high benchmark scores for large language models do not translate to clinical application readiness, emphasizing the importance of rigorous validation in practice <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -53,6 +53,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.</p>
   </div>
   <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04500-9/MediaObjects/41591_2026_4500_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02943-5">KGRD: a knowledge-graph-augmented automated reasoning framework for diagnosis and counselling of paediatric rare genetic disorders</a>
+    <p class="news-card-summary">Knowledge-graph-augmented automated reasoning framework for diagnosis and counseling of pediatric rare genetic disorders published in npj Digital Medicine.</p>
+  </div>
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Promising performance of locally deployed large language models for postoperative orthopaedic patient questions: An In Silico analysis</a>
     <p class="news-card-summary">Structured evaluation of locally deployed and commercial large language models for responding to postoperative orthopaedic patient questions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02939-1">Translation of frozen sections into FFPE images for skin cancer resection margins using generative AI</a>
-    <p class="news-card-summary">Generative artificial intelligence system translates frozen section pathology images to standard formalin-fixed paraffin-embedded format for skin cancer margin assessment.</p>
   </div>
 </div>
 </div>

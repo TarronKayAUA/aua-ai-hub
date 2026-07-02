@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new survey of clinical medicine undergraduates has revealed low awareness and limited preparation for artificial intelligence and medical big data, underscoring major curriculum gaps and highlighting specific student preferences for educational programs in this area <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[3]</a>. This need echoes findings from another cross-sectional study where Korean medical students reported insufficient readiness for effective AI integration in their training <a href="https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0">[14]</a>. In response to these gaps, research on AI-powered systems for medical history-taking shows that undergraduate students are willing to accept and interact with such technology, suggesting openness to digital tools in clinical education <a href="https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[6]</a>. Meanwhile, AI methods are also being explored for improving surgical residency feedback mechanisms, such as the FEED Protocol, which rapidly collects and acts on input to optimize curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42385587?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">[9]</a>.</p>
+<p>Ambient artificial intelligence is being explored to enhance clinical handoff learning and feedback, with a co-design and simulation study investigating its applications during transitions from the operating room to intensive care units <a href="https://mededu.jmir.org/2026/1/e85666">[3]</a>. Faculty and students are also focusing on effective digital simulation-based ultrasound training for physiotherapy, as a randomized controlled trial compares it to traditional methods <a href="https://mededu.jmir.org/2026/1/e87897">[2]</a>. Meanwhile, a bibliometric and thematic mapping study provides an overview of artificial intelligence tools employed for assessment and feedback throughout medical education <a href="https://mededu.jmir.org/2026/1/e98949">[1]</a>. Survey data show limited undergraduate familiarity with AI and highlight unmet curriculum needs for training in medical big data <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98949">Artificial Intelligence for Assessment and Feedback in Medical Education: Bibliometric Mapping Study and Thematic Evidence Map</a>
+    <p class="news-card-summary">Bibliometric and thematic mapping study of artificial intelligence applications for assessment and feedback in medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87897">Digital Simulation, Based Ultrasound Training for Physiotherapy Students: Prospective Randomized Controlled Trial</a>
+    <p class="news-card-summary">Prospective randomized controlled trial of digital simulation-based ultrasound training for physiotherapy students compared to traditional on-site methods.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
@@ -62,6 +76,27 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42391624?fc=20260609215449&amp;ff=20260702194001&amp;v=2.20.0">Agreement Between Reasoning-Oriented Generative AI Models and Clinical Educators in Evaluating Japanese Objective Structured Clinical Examination Transcripts: Preliminary Comparative Study</a>
+    <p class="news-card-summary">Single-center study comparing reasoning-oriented generative AI models to clinical educators in evaluating Japanese objective structured clinical exams.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42391038?fc=20260609215449&amp;ff=20260702194001&amp;v=2.20.0">Artificial intelligence teaching assistants: a scalable solution for supporting struggling medical students</a>
+    <p class="news-card-summary">Study of AI teaching assistants shows correlation with improved exam performance and reduced academic difficulty in medical students.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42391026?fc=20260609215449&amp;ff=20260702194001&amp;v=2.20.0">MDCU MedUMORE: a national digital platform for equitable and lifelong medical education in Thailand and beyond</a>
+    <p class="news-card-summary">National digital platform for medical education in Thailand addressing inequities in infrastructure, faculty availability, and continuing professional development access.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 1, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42382821?fc=20260609215449&amp;ff=20260701121028&amp;v=2.20.0">Large Language Models for Ophthalmology Training in China: A Prospective Evaluation</a>
     <p class="news-card-summary">Prospective evaluation shows large language models possess solid ophthalmic knowledge and can effectively support ophthalmology training in China.</p>
@@ -86,41 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 1, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42384915?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">Toward a global ecosystem for health professions education: harnessing open educational resources and generative AI with shared governance</a>
     <p class="news-card-summary">Article explores using open educational resources and generative AI with shared governance to address the global shortage of health professions educators.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42376226?fc=20260609215449&amp;ff=20260630092944&amp;v=2.20.0">Unmasking bias in artificial intelligence: sex and racial representation in critical care medicine through text-to-image generators</a>
-    <p class="news-card-summary">Research documents significant sex and racial biases in critical care physician images generated by text-to-image AI systems.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42376175?fc=20260609215449&amp;ff=20260630092944&amp;v=2.20.0">Evaluating artificial intelligence-generated multiple-choice questions in clinical pathology</a>
-    <p class="news-card-summary">Study evaluates whether large language models can reliably generate multiple-choice questions for clinical pathology education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42377065?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0">Artificial Intelligence Use Among Occupational Therapy Students in Academic and Fieldwork Education</a>
-    <p class="news-card-summary">Study documents how occupational therapy students are integrating artificial intelligence into academic and fieldwork education with measured caution.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0">Exploring medical Artificial Intelligence Readiness among Korean medical students: a cross-sectional study</a>
-    <p class="news-card-summary">Cross-sectional study finds Korean medical students lack sufficient preparation to effectively utilize artificial intelligence in their training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42376779?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0">Turning AI hallucinations into scaffolds for morphologic reasoning: A pilot randomized trial of prompt-guided virtual microscopy learning during a focused histology module</a>
-    <p class="news-card-summary">Pilot randomized trial tests whether AI-guided prompts in virtual microscopy can scaffold morphologic reasoning skills in medical students.</p>
   </div>
 </div>
 </div>

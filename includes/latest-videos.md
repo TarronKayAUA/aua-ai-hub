@@ -13,6 +13,12 @@
   <span class="video-card-meta">IBM Technology, June 30, 2026</span>
   <span class="video-card-desc">Explains how key-value cache optimization reduces computational overhead in large language model inference on GPUs.</span>
 </a>
+<a class="video-card" href="https://www.youtube.com/watch?v=b0dZjfQ1rpc" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg" alt="Video: 5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist" loading="lazy">
+  <span class="video-card-title">5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist</span>
+  <span class="video-card-meta">The Medical Futurist, June 30, 2026</span>
+  <span class="video-card-desc">Examination of AI scribes as a near-term healthcare AI tool with direct clinical utility and physician acceptance.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
   <span class="video-card-title">The Promptware Kill Chain: How Prompt Injection Becomes AI Malware</span>
@@ -30,11 +36,5 @@
   <span class="video-card-title">5 AI Agent Terms You Need to Know</span>
   <span class="video-card-meta">IBM Technology, June 23, 2026</span>
   <span class="video-card-desc">IBM Technology explains foundational concepts and terminology for understanding frontier AI agents and their capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=mG4SmhWyeFA" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/mG4SmhWyeFA/hqdefault.jpg" alt="Video: DeepSeek Just Solved AI&#x27;s Billion Dollar Problem" loading="lazy">
-  <span class="video-card-title">DeepSeek Just Solved AI&#x27;s Billion Dollar Problem</span>
-  <span class="video-card-meta">Two Minute Papers, June 22, 2026</span>
-  <span class="video-card-desc">Overview of DeepSeek&#x27;s approach to reducing AI inference costs, a significant technical and economic development in large language model deployment.</span>
 </a>
 </div>

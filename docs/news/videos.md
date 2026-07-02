@@ -13,11 +13,41 @@ Cards link to YouTube; nothing plays on this site.
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=b0dZjfQ1rpc" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg" alt="Video: 5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist" loading="lazy">
+  <span class="video-card-title">5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist</span>
+  <span class="video-card-meta">The Medical Futurist, June 30, 2026</span>
+  <span class="video-card-desc">Examination of AI scribes as a near-term healthcare AI tool with direct clinical utility and physician acceptance.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=_pkjyDSwO7I" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/_pkjyDSwO7I/hqdefault.jpg" alt="Video: MedAI #162: Clinical Environment Simulator | Luyang Luo" loading="lazy">
+  <span class="video-card-title">MedAI #162: Clinical Environment Simulator | Luyang Luo</span>
+  <span class="video-card-meta">Stanford MedAI, May 28, 2026</span>
+  <span class="video-card-desc">Clinical Environment Simulator addresses limitations of current medical LLM benchmarks by providing more realistic evaluation contexts.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=Os_wohQDErw" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/Os_wohQDErw/hqdefault.jpg" alt="Video: MedAI #161: A prospective trial of a conversational AI in a primary care clinic | Jacob Koshy" loading="lazy">
+  <span class="video-card-title">MedAI #161: A prospective trial of a conversational AI in a primary care clinic | Jacob Koshy</span>
+  <span class="video-card-meta">Stanford MedAI, May 5, 2026</span>
+  <span class="video-card-desc">Prospective trial results from deployment of conversational AI in primary care clinic practice.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=9K9TR1GVec0" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/9K9TR1GVec0/hqdefault.jpg" alt="Video: IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks" loading="lazy">
   <span class="video-card-title">IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks</span>
   <span class="video-card-meta">Stanford AIMI, April 25, 2026</span>
   <span class="video-card-desc">Susan Shelmerdine argues that successful healthcare artificial intelligence requires organizational and system changes beyond isolated task automation.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=gp4pHq9FRDI" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/gp4pHq9FRDI/hqdefault.jpg" alt="Video: MedAI #160: AI and LLMs for Advancing Clinical Research and Practice | Rui Zhang" loading="lazy">
+  <span class="video-card-title">MedAI #160: AI and LLMs for Advancing Clinical Research and Practice | Rui Zhang</span>
+  <span class="video-card-meta">Stanford MedAI, April 23, 2026</span>
+  <span class="video-card-desc">Overview of applications of AI and large language models for advancing clinical research and practice.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=mBTp5WTcDhk" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/mBTp5WTcDhk/hqdefault.jpg" alt="Video: MedAI #159: The Alignment Tax: How the Same Helpful LLMs Training Makes Them Dangerous | Mahmud Omar" loading="lazy">
+  <span class="video-card-title">MedAI #159: The Alignment Tax: How the Same Helpful LLMs Training Makes Them Dangerous | Mahmud Omar</span>
+  <span class="video-card-meta">Stanford MedAI, April 15, 2026</span>
+  <span class="video-card-desc">Analysis of safety tradeoffs in large language model training: how alignment techniques can create unexpected risks.</span>
 </a>
 </div>
 
