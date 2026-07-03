@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Ambient artificial intelligence is being explored to enhance clinical handoff learning and feedback, with a co-design and simulation study investigating its applications during transitions from the operating room to intensive care units <a href="https://mededu.jmir.org/2026/1/e85666">[3]</a>. Faculty and students are also focusing on effective digital simulation-based ultrasound training for physiotherapy, as a randomized controlled trial compares it to traditional methods <a href="https://mededu.jmir.org/2026/1/e87897">[2]</a>. Meanwhile, a bibliometric and thematic mapping study provides an overview of artificial intelligence tools employed for assessment and feedback throughout medical education <a href="https://mededu.jmir.org/2026/1/e98949">[1]</a>. Survey data show limited undergraduate familiarity with AI and highlight unmet curriculum needs for training in medical big data <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the items below.</p>
+<p>FaithMed introduces a language model that generates faithful, evidence-based medical reasoning grounded in cited knowledge, pointing to advancing reliability in AI-driven education resources <a href="https://arxiv.org/abs/2607.01440">[1]</a>. Meanwhile, a detailed bibliometric and thematic mapping study tracks how artificial intelligence is already being integrated into assessment and feedback mechanisms within medical education <a href="https://mededu.jmir.org/2026/1/e98949">[2]</a>. Amid these developments, a randomized controlled trial compares digital versus traditional ultrasound training methods for physiotherapy students, providing rigorous evidence about technology-driven skill acquisition <a href="https://mededu.jmir.org/2026/1/e87897">[3]</a>. Survey data highlight that clinical undergraduates show limited familiarity with AI, signaling clear curricular needs for medical big data education <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.01440">FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning</a>
+    <p class="news-card-summary">FaithMed trains language models to produce faithful evidence-based medical reasoning by grounding outputs in cited medical knowledge.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 1, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42385587?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">Closing the Feedback Loop: The Feed Protocol for AI-Driven Curricular Reform in Surgical Residency</a>
     <p class="news-card-summary">Study describes the FEED Protocol, a method using artificial intelligence to rapidly collect and act on feedback for improving surgical residency curricula.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 1, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42384915?fc=20260609215449&amp;ff=20260702062112&amp;v=2.20.0">Toward a global ecosystem for health professions education: harnessing open educational resources and generative AI with shared governance</a>
-    <p class="news-card-summary">Article explores using open educational resources and generative AI with shared governance to address the global shortage of health professions educators.</p>
   </div>
 </div>
 </div>

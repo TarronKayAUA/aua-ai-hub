@@ -11,11 +11,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Ambient artificial intelligence is being explored to enhance clinical handoff learning and feedback, with a co-design and simulation study investigating its applications during transitions from the operating room to intensive care units <a href="https://mededu.jmir.org/2026/1/e85666">[3]</a>. Faculty and students are also focusing on effective digital simulation-based ultrasound training for physiotherapy, as a randomized controlled trial compares it to traditional methods <a href="https://mededu.jmir.org/2026/1/e87897">[2]</a>. Meanwhile, a bibliometric and thematic mapping study provides an overview of artificial intelligence tools employed for assessment and feedback throughout medical education <a href="https://mededu.jmir.org/2026/1/e98949">[1]</a>. Survey data show limited undergraduate familiarity with AI and highlight unmet curriculum needs for training in medical big data <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
+<p>FaithMed introduces a language model that generates faithful, evidence-based medical reasoning grounded in cited knowledge, pointing to advancing reliability in AI-driven education resources <a href="https://arxiv.org/abs/2607.01440">[1]</a>. Meanwhile, a detailed bibliometric and thematic mapping study tracks how artificial intelligence is already being integrated into assessment and feedback mechanisms within medical education <a href="https://mededu.jmir.org/2026/1/e98949">[2]</a>. Amid these developments, a randomized controlled trial compares digital versus traditional ultrasound training methods for physiotherapy students, providing rigorous evidence about technology-driven skill acquisition <a href="https://mededu.jmir.org/2026/1/e87897">[3]</a>. Survey data highlight that clinical undergraduates show limited familiarity with AI, signaling clear curricular needs for medical big data education <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.01440">FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning</a>
+    <p class="news-card-summary">FaithMed trains language models to produce faithful evidence-based medical reasoning by grounding outputs in cited medical knowledge.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
@@ -302,11 +309,39 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A retrospective cohort study highlights the effect of ambient AI scribes on reducing documentation burden and clinician workload in emergency departments, particularly in high-burnout settings <a href="https://ai.jmir.org/2026/1/e92193">[1]</a>. Insights from intensive care unit clinicians further illuminate the role of ambient AI scribes in supporting documentation and team communication during complex patient care <a href="https://medinform.jmir.org/2026/1/e81445">[2]</a>. Concurrently, research indicates substantial divergence between physician and AI model evaluations on clinical reasoning, underscoring persistent gaps in AI readiness for real-world deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. A related article contends high benchmark scores for large language models do not translate to clinical application readiness, emphasizing the importance of rigorous validation in practice <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
+<p>A generalizable AI model known as COMPASS is now able to predict immunotherapy outcomes across a range of cancers and treatments, marking a notable step toward integrating artificial intelligence into oncology decision making <a href="https://www.nature.com/articles/s41591-026-04502-7">[4]</a>. Ambient AI scribes are being evaluated for their impact on documentation burden in high-burnout emergency department and intensive care unit settings, with studies examining both measurable workload changes and clinician perspectives on team communication <a href="https://ai.jmir.org/2026/1/e92193">[5]</a> <a href="https://medinform.jmir.org/2026/1/e81445">[6]</a>. Meanwhile, questions persist about the application readiness of large language models for real clinical use, as recent research highlights divergence between physician and AI evaluations on clinical tasks and suggests high benchmark scores may not reflect practical reliability <a href="https://www.nature.com/articles/s41746-026-02942-6">[8]</a> <a href="https://www.nature.com/articles/s41591-026-04500-9">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02885-y">BCGNet: an AI model trained on 600 K hours of sleep data for a novel under-pillow contactless monitoring device</a>
+    <p class="news-card-summary">BCGNet is an AI model trained on 600,000 hours of sleep data for contactless under-pillow monitoring of sleep patterns.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02909-7">Fast information and slow evidence in the large language models era</a>
+    <p class="news-card-summary">Article examines how large language models generate fast information but may conflict with slower evidence-based clinical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02952-4">Automated diagnosis of keratitis from low-quality slit-lamp images using an improved generative adversarial network</a>
+    <p class="news-card-summary">Improved generative adversarial network automatically diagnoses keratitis from low-quality slit-lamp images.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04502-7">Generalizable AI predicts immunotherapy outcomes across cancers and treatments</a>
+    <p class="news-card-summary">COMPASS, a generalizable AI model, predicts immunotherapy outcomes across multiple cancer types and treatments.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
@@ -456,11 +491,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Google’s 37 percent increase in electricity consumption reflects the growing demands of AI infrastructure, raising questions about balancing emissions with clean energy sources <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[1]</a>. US regulators have cleared Anthropic’s Fable and Mythos AI models for global distribution, following safety testing prompted by concerns from political leaders <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[2]</a>. On the technical front, CORTEX offers a token-level approach to hallucination detection in retrieval-augmented generation systems, potentially sharpening the accuracy of large language models used for critical applications <a href="https://arxiv.org/abs/2606.31033">[3]</a>. Meanwhile, SeKV presents an efficiency improvement for inference with long-context models through a resolution-adaptive key-value cache and hierarchical semantic memory <a href="https://arxiv.org/abs/2606.31145">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the source items.</p>
+<p>US regulators&#x27; approval of Anthropic’s Fable and Mythos AI models for global release, following safety evaluations, removes export restrictions on these systems and may lead to wider adoption and scrutiny of AI safety practices <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. At the same time, benchmarks such as IsoSci assess whether large language models genuinely reason through isomorphic cross-domain science problems or simply retrieve stored knowledge, reflecting ongoing concerns about capabilities versus limitations <a href="https://arxiv.org/abs/2607.01431">[1]</a>. Environmental impact is rising as Google’s report indicates a 37 percent increase in electricity consumption due to AI infrastructure growth, intensifying the need for sustainable technology solutions in machine learning <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>.</p>
+<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.01431">IsoSci: A Benchmark of Isomorphic Cross-Domain Science Problems for Evaluating Reasoning versus Knowledge Retrieval in LLMs</a>
+    <p class="news-card-summary">IsoSci benchmark uses isomorphic cross-domain science problems to evaluate whether large language models reason or retrieve knowledge.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 2, 2026</span></div>

@@ -13,11 +13,39 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A retrospective cohort study highlights the effect of ambient AI scribes on reducing documentation burden and clinician workload in emergency departments, particularly in high-burnout settings <a href="https://ai.jmir.org/2026/1/e92193">[1]</a>. Insights from intensive care unit clinicians further illuminate the role of ambient AI scribes in supporting documentation and team communication during complex patient care <a href="https://medinform.jmir.org/2026/1/e81445">[2]</a>. Concurrently, research indicates substantial divergence between physician and AI model evaluations on clinical reasoning, underscoring persistent gaps in AI readiness for real-world deployment <a href="https://www.nature.com/articles/s41746-026-02942-6">[4]</a>. A related article contends high benchmark scores for large language models do not translate to clinical application readiness, emphasizing the importance of rigorous validation in practice <a href="https://www.nature.com/articles/s41591-026-04500-9">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the items below.</p>
+<p>A generalizable AI model known as COMPASS is now able to predict immunotherapy outcomes across a range of cancers and treatments, marking a notable step toward integrating artificial intelligence into oncology decision making <a href="https://www.nature.com/articles/s41591-026-04502-7">[4]</a>. Ambient AI scribes are being evaluated for their impact on documentation burden in high-burnout emergency department and intensive care unit settings, with studies examining both measurable workload changes and clinician perspectives on team communication <a href="https://ai.jmir.org/2026/1/e92193">[5]</a> <a href="https://medinform.jmir.org/2026/1/e81445">[6]</a>. Meanwhile, questions persist about the application readiness of large language models for real clinical use, as recent research highlights divergence between physician and AI evaluations on clinical tasks and suggests high benchmark scores may not reflect practical reliability <a href="https://www.nature.com/articles/s41746-026-02942-6">[8]</a> <a href="https://www.nature.com/articles/s41591-026-04500-9">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02885-y">BCGNet: an AI model trained on 600 K hours of sleep data for a novel under-pillow contactless monitoring device</a>
+    <p class="news-card-summary">BCGNet is an AI model trained on 600,000 hours of sleep data for contactless under-pillow monitoring of sleep patterns.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02909-7">Fast information and slow evidence in the large language models era</a>
+    <p class="news-card-summary">Article examines how large language models generate fast information but may conflict with slower evidence-based clinical practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02952-4">Automated diagnosis of keratitis from low-quality slit-lamp images using an improved generative adversarial network</a>
+    <p class="news-card-summary">Improved generative adversarial network automatically diagnoses keratitis from low-quality slit-lamp images.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04502-7">Generalizable AI predicts immunotherapy outcomes across cancers and treatments</a>
+    <p class="news-card-summary">COMPASS, a generalizable AI model, predicts immunotherapy outcomes across multiple cancer types and treatments.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
@@ -96,34 +124,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Nature Medicine reports advances in two medical AI agents, AMIE and MIRA, demonstrating improved clinical capabilities.</p>
   </div>
   <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00034-2/d41591-026-00034-2_52857458.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04494-4">Clinical decision support in hematological malignancies using a case-grounded AI agent</a>
-    <p class="news-card-summary">Nature Medicine describes a locally deployable AI agent for clinical decision support in hematological malignancies.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02944-4">AFP assistant: a retrieval-augmented generation and large language model-powered multilingual polio chatbot for low-resource language communities</a>
-    <p class="news-card-summary">AFP assistant combines retrieval-augmented generation and large language models to provide multilingual polio health information in low-resource settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92817">AI Chatbot Suicide Risk Detection and Response: Human Validation Study of the Open-Source VERA-MH Safety Evaluation</a>
-    <p class="news-card-summary">Validation study examines the open-source VERA-MH tool for detecting and responding to suicide risk through AI chatbot conversations.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6d96933a42610f3c37be622d536e427d.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Promising performance of locally deployed large language models for postoperative orthopaedic patient questions: An In Silico analysis</a>
-    <p class="news-card-summary">Structured evaluation of locally deployed and commercial large language models for responding to postoperative orthopaedic patient questions.</p>
-  </div>
 </div>
 </div>

@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Google’s 37 percent increase in electricity consumption reflects the growing demands of AI infrastructure, raising questions about balancing emissions with clean energy sources <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[1]</a>. US regulators have cleared Anthropic’s Fable and Mythos AI models for global distribution, following safety testing prompted by concerns from political leaders <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[2]</a>. On the technical front, CORTEX offers a token-level approach to hallucination detection in retrieval-augmented generation systems, potentially sharpening the accuracy of large language models used for critical applications <a href="https://arxiv.org/abs/2606.31033">[3]</a>. Meanwhile, SeKV presents an efficiency improvement for inference with long-context models through a resolution-adaptive key-value cache and hierarchical semantic memory <a href="https://arxiv.org/abs/2606.31145">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 2, 2026; numbered links go to the items below.</p>
+<p>US regulators&#x27; approval of Anthropic’s Fable and Mythos AI models for global release, following safety evaluations, removes export restrictions on these systems and may lead to wider adoption and scrutiny of AI safety practices <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. At the same time, benchmarks such as IsoSci assess whether large language models genuinely reason through isomorphic cross-domain science problems or simply retrieve stored knowledge, reflecting ongoing concerns about capabilities versus limitations <a href="https://arxiv.org/abs/2607.01431">[1]</a>. Environmental impact is rising as Google’s report indicates a 37 percent increase in electricity consumption due to AI infrastructure growth, intensifying the need for sustainable technology solutions in machine learning <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>.</p>
+<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.01431">IsoSci: A Benchmark of Isomorphic Cross-Domain Science Problems for Evaluating Reasoning versus Knowledge Retrieval in LLMs</a>
+    <p class="news-card-summary">IsoSci benchmark uses isomorphic cross-domain science problems to evaluate whether large language models reason or retrieve knowledge.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 2, 2026</span></div>
@@ -122,13 +129,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.27550">EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction</a>
     <p class="news-card-summary">EntMTP accelerates large language model inference by using entropy-guided multi-token prediction to improve speed and efficiency.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27705">Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling</a>
-    <p class="news-card-summary">Study of layer-specific positional embedding scaling to mitigate position bias problem in large language models for long-context tasks.</p>
   </div>
 </div>
 </div>
