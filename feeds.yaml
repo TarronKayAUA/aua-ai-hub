@@ -45,9 +45,15 @@ llm:
     curation:
       provider: anthropic
       model: claude-haiku-4-5
+    # Weekly digest selection: picks the week's highlights for the emailed
+    # digest, one call per week, so the Sonnet premium costs pennies a
+    # month. claude-sonnet-5 pricing re-verified against the live docs
+    # 2026-07-02 ($2/$10 per MTok introductory through 2026-08-31, then
+    # $3/$15). Owner approved 2026-07-02; curation stays on Haiku pending
+    # a week of drop-reason logs.
     digest_selection:
       provider: anthropic
-      model: claude-haiku-4-5
+      model: claude-sonnet-5
     conference_watch:
       provider: anthropic
       model: claude-haiku-4-5
