@@ -39,14 +39,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       # GitHub Pages intermittently rejects deployments with a transient
-      # "try again later" (four times on 2026-07-02 alone, each fine on a
-      # manual rerun minutes later). Absorb that class of failure with one
-      # automatic retry after a pause instead of emailing the owner.
+      # "try again later" (repeatedly on 2026-07-02/03; one bad stretch
+      # outlasted a 60-second retry). Absorb that class of failure with
+      # two automatic retries on a lengthening backoff instead of
+      # emailing the owner; a genuinely persistent outage still fails
+      # the run on the third attempt.
       - id: deployment
         uses: actions/deploy-pages@v5
         continue-on-error: true
       - if: steps.deployment.outcome == 'failure'
-        run: sleep 60
-      - id: deployment-retry
+        run: sleep 90
+      - id: deployment_retry
         if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - if: steps.deployment_retry.outcome == 'failure'
+        run: sleep 180
+      - id: deployment_final
+        if: steps.deployment_retry.outcome == 'failure'
         uses: actions/deploy-pages@v5

@@ -75,14 +75,21 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       # Same transient-failure retry as deploy.yml: Pages occasionally
-      # rejects a deployment with "try again later"; one automatic retry
-      # after a pause absorbs it. Content is additionally self-healing
-      # here because every one of the six daily slots deploys.
+      # rejects deployments with "try again later"; two retries on a
+      # lengthening backoff absorb it. Content is additionally
+      # self-healing here because every one of the six daily slots
+      # deploys.
       - id: deployment
         uses: actions/deploy-pages@v5
         continue-on-error: true
       - if: steps.deployment.outcome == 'failure'
-        run: sleep 60
-      - id: deployment-retry
+        run: sleep 90
+      - id: deployment_retry
         if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - if: steps.deployment_retry.outcome == 'failure'
+        run: sleep 180
+      - id: deployment_final
+        if: steps.deployment_retry.outcome == 'failure'
         uses: actions/deploy-pages@v5
