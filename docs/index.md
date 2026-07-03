@@ -33,6 +33,14 @@ One reliable place for the AUACOM community to learn how AI works, find reviewed
 
     [Open the directory](tools/index.md)
 
+- :material-account-school:{ .lg .middle } __For Students__
+
+    ---
+
+    Where to start as a student: three short modules, study tools, the rules in brief, and how to get better answers.
+
+    [Start here](students.md)
+
 - :material-school:{ .lg .middle } __Playbooks__
 
     ---
@@ -40,6 +48,14 @@ One reliable place for the AUACOM community to learn how AI works, find reviewed
     Task-by-task walkthroughs for faculty: preparing a lecture, writing exam questions safely, and your syllabus AI statement.
 
     [Open the playbooks](playbooks/index.md)
+
+- :material-message-text:{ .lg .middle } __Prompts__
+
+    ---
+
+    Reusable, tested prompt templates for study and faculty tasks, plus a community exchange with public voting.
+
+    [Open the library](prompts/index.md)
 
 - :material-calendar-star:{ .lg .middle } __Conferences__
 

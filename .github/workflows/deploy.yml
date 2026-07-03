@@ -38,5 +38,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # GitHub Pages intermittently rejects deployments with a transient
+      # "try again later" (four times on 2026-07-02 alone, each fine on a
+      # manual rerun minutes later). Absorb that class of failure with one
+      # automatic retry after a pause instead of emailing the owner.
       - id: deployment
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 60
+      - id: deployment-retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
