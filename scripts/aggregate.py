@@ -116,6 +116,7 @@ class Item:
     score: float = 0.0
     first_seen: str = ""
     thumbnail: str = ""
+    drop_reason: str = ""
 
     def to_ledger(self, kept: bool, now_iso: str) -> dict:
         record = {
@@ -124,6 +125,9 @@ class Item:
             "first_seen": now_iso,
             "kept": kept,
         }
+        if not kept and self.drop_reason:
+            # audit trail: why the curator (or the code path) declined this
+            record["reason"] = self.drop_reason
         if kept:
             record.update(
                 title=self.title,
@@ -1039,25 +1043,39 @@ def resolve_task_llm(config: dict, task: str):
     return None, None, None
 
 
-def parse_curator_json(text: str, candidate_ids: set, categories: dict) -> list[dict]:
-    """Parse and validate the strict JSON contract. Raises ValueError on any problem."""
+def parse_curator_json(text: str, candidate_ids: set, categories: dict,
+                       strict_coverage: bool = True) -> tuple[list[dict], list[dict]]:
+    """Parse and validate the strict JSON contract. Returns (keeps, drops):
+    keeps as decision dicts, drops as {"id", "reason"} for the audit trail.
+    The contract requires one entry per candidate; with strict_coverage a
+    shortfall raises ValueError so the corrective retry fires, otherwise
+    unaccounted ids become drops with a placeholder reason (so a model that
+    truncates its response can never silently discard candidates again).
+    Raises ValueError on any other problem."""
     text = text.strip()
     text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)  # tolerate code fences
     data = json.loads(text)
     items = data["items"]
     if not isinstance(items, list):
         raise ValueError("items is not a list")
-    decisions = []
+    keeps: list[dict] = []
+    drops: list[dict] = []
+    seen_ids: set = set()
     for entry in items:
-        if not entry.get("keep"):
-            continue
         item_id = str(entry["id"])
         if item_id not in candidate_ids:
             raise ValueError(f"unknown candidate id {item_id!r}")
+        if item_id in seen_ids:
+            raise ValueError(f"duplicate entry for candidate id {item_id!r}")
+        seen_ids.add(item_id)
+        if not entry.get("keep"):
+            reason = clean_text(str(entry.get("reason", "")), 160)
+            drops.append({"id": item_id, "reason": reason or "(no reason given)"})
+            continue
         category = entry.get("category", "")
         if category not in categories and category not in ("videos", "podcasts"):
             raise ValueError(f"unknown category {category!r}")
-        decisions.append(
+        keeps.append(
             {
                 "id": item_id,
                 "category": category,
@@ -1066,7 +1084,17 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict) -> list[
                 "is_cfp": bool(entry.get("is_cfp", False)),
             }
         )
-    return decisions
+    missing = candidate_ids - seen_ids
+    if missing:
+        if strict_coverage:
+            raise ValueError(
+                f"response omitted {len(missing)} of {len(candidate_ids)} candidates"
+            )
+        drops.extend(
+            {"id": mid, "reason": "(not accounted for by the model)"}
+            for mid in sorted(missing)
+        )
+    return keeps, drops
 
 
 def _pack_candidates(ordered: list, budget: int, verbose: bool):
@@ -1112,8 +1140,13 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
     by_id, payload = _pack_candidates(
         ordered, cfg.get("max_payload_chars", 22000), verbose
     )
+    # audit trail: candidates the model never saw are drops with a stated cause
+    offered = {id(i) for i in by_id.values()}
+    for item in fresh:
+        if id(item) not in offered:
+            item.drop_reason = "(not offered to the model: candidate or payload budget)"
 
-    decisions = None
+    parsed = None
     for attempt, user_msg in enumerate(
         [
             payload,
@@ -1123,7 +1156,9 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
     ):
         try:
             raw = call(system, user_msg, cfg, timeout)
-            decisions = parse_curator_json(raw, set(by_id), categories)
+            parsed = parse_curator_json(
+                raw, set(by_id), categories, strict_coverage=(attempt == 0)
+            )
             break
         except (requests.RequestException, KeyError) as exc:
             # transport or schema error: no point retrying with a corrective
@@ -1134,12 +1169,25 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
         except (ValueError, json.JSONDecodeError) as exc:
             if verbose:
                 print(f"  llm json invalid (attempt {attempt + 1}): {exc}")
-    if decisions is None:
+    if parsed is None:
         return None
+    decisions, model_drops = parsed
+    for d in model_drops:
+        item = by_id[d["id"]]
+        item.drop_reason = d["reason"]
+        if verbose:
+            print(f"  drop: {item.source}: {item.title[:60]} | {d['reason']}")
 
     news_decisions = [d for d in decisions if d["category"] != "videos"]
     news_decisions.sort(key=lambda d: -d["importance"])
     news_decisions = news_decisions[: llm_cfg["max_keep"]]
+    # model keeps discarded by code carry an audit reason too
+    final_ids = {d["id"] for d in news_decisions}
+    for d in decisions:
+        if d["id"] not in final_ids:
+            why = ("model assigned it to videos in the news call"
+                   if d["category"] == "videos" else "over the news keep cap")
+            by_id[d["id"]].drop_reason = f"(kept by the model, discarded: {why})"
 
     kept_by_category = {k: [] for k in categories}
     cfp_items = []
@@ -1176,8 +1224,13 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
     by_id, payload = _pack_candidates(
         ordered, cfg.get("max_payload_chars", 22000), verbose
     )
+    # audit trail: candidates the model never saw are drops with a stated cause
+    offered = {id(i) for i in by_id.values()}
+    for item in fresh_media:
+        if id(item) not in offered:
+            item.drop_reason = "(not offered to the model: candidate or payload budget)"
 
-    decisions = None
+    parsed = None
     for attempt, user_msg in enumerate(
         [
             payload,
@@ -1187,7 +1240,9 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
     ):
         try:
             raw = call(system, user_msg, cfg, timeout)
-            decisions = parse_curator_json(raw, set(by_id), categories)
+            parsed = parse_curator_json(
+                raw, set(by_id), categories, strict_coverage=(attempt == 0)
+            )
             break
         except (requests.RequestException, KeyError) as exc:
             if verbose:
@@ -1197,8 +1252,14 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
             if verbose:
                 print(f"  {media_label} llm json invalid "
                       f"(attempt {attempt + 1}): {exc}")
-    if decisions is None:
+    if parsed is None:
         return None
+    decisions, model_drops = parsed
+    for d in model_drops:
+        item = by_id[d["id"]]
+        item.drop_reason = d["reason"]
+        if verbose:
+            print(f"  drop: {item.source}: {item.title[:60]} | {d['reason']}")
 
     # Every candidate in this call is the same media type, so any kept
     # decision belongs to it regardless of the category label the model
@@ -1207,6 +1268,9 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
         print(f"  {media_label} llm: {len(by_id)} candidates sent, "
               f"{len(decisions)} kept by model")
     decisions.sort(key=lambda d: -d["importance"])
+    cut = decisions[max_keep:]
+    for d in cut:
+        by_id[d["id"]].drop_reason = "(kept by the model, cut by the keep cap)"
     decisions = decisions[:max_keep]
     kept_items = []
     cfp_items = []
@@ -2381,6 +2445,11 @@ def main() -> int:
     print(f"episodes window  : {len(episodes_window)}, fresh after dedupe: "
           f"{len(fresh_episodes)}, kept: {len(kept_episodes)}")
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
+    all_fresh = fresh + fresh_videos + fresh_episodes
+    dropped_fresh = [i for i in all_fresh if id(i) not in kept_set]
+    with_reason = sum(1 for i in dropped_fresh if i.drop_reason)
+    print(f"drop reasons     : {with_reason} of {len(dropped_fresh)} drops "
+          "carry an audit reason (llm mode only)")
     print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
     print(f"livebench table  : {livebench_status}")
     print(f"section briefs   : {briefs_status}")

@@ -49,7 +49,8 @@ Flags:
 Output contract, strict:
 
 - Respond with a single JSON object and nothing else. No prose, no code fences.
-- Include one entry for every candidate id you keep. Omit dropped candidates.
+- Include one entry for every candidate id in the input, kept or dropped. A response that leaves any candidate unaccounted for is invalid.
+- For each dropped candidate set "keep" to false and write "reason": one short clause naming the selection rule that applies (for example "vendor marketing", "title is rumor-framed", "duplicate of a kept candidate", "minor release notes", "off-topic for this audience"). Dropped entries need no category, summary, importance, or is_cfp.
 - Schema:
 
-{"items": [{"id": "", "keep": true, "category": "general_ai", "summary": "", "importance": 3, "is_cfp": false}]}
+{"items": [{"id": "", "keep": true, "category": "general_ai", "summary": "", "importance": 3, "is_cfp": false}, {"id": "", "keep": false, "reason": ""}]}

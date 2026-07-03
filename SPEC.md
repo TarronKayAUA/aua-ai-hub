@@ -242,10 +242,10 @@ Digest contract (consumed by Power Automate): `docs/digest.xml` is valid RSS 2.0
 ## 9. LLM curation (Phase 3)
 
 - The curator system prompt lives in `prompts/curator.md` so the owner can tune it without touching code. Requirements for that prompt: audience is medical school faculty and students; plain language; neutral on vendors; no hype or superlatives; select at most 12 items per run; prefer model releases, benchmark movements, open-weights and local-model news, peer-reviewed medical education findings, and clinical deployment or regulatory news; drop funding gossip, listicles, and near-duplicates of already-covered stories; write a one-sentence summary of at most 35 words per kept item; set `is_cfp` true for conference or call-for-papers announcements.
-- Strict JSON output contract:
+- Strict JSON output contract (full coverage, owner approved 2026-07-02): the model returns one entry for every candidate sent, kept or dropped. Dropped entries carry `"keep": false` and a short `reason` naming the rule applied; the reasons flow to the verbose run log and to the dropped item's ledger stub, so any curation decision can be audited afterward instead of guessed at (the change that motivated it: four wrongly dropped videos whose reasons were unrecoverable). Full coverage also makes silent truncation detectable: a response that omits candidates fails parsing on the first attempt (corrective retry), and on the second attempt unaccounted candidates become drops with a placeholder reason. Reasons are the model's self-report, useful for prompt debugging, not ground truth.
 
 ```json
-{"items": [{"id": "", "keep": true, "category": "general_ai", "summary": "", "importance": 3, "is_cfp": false}]}
+{"items": [{"id": "", "keep": true, "category": "general_ai", "summary": "", "importance": 3, "is_cfp": false}, {"id": "", "keep": false, "reason": ""}]}
 ```
 
 - One batched call per run for news (a second, separate batched call covers video candidates; see section 14). Cap news candidates sent to the LLM at 120, selected by keyword score descending; truncate each candidate to a 140-character title plus a 100-character summary, and greedily pack candidates under the provider's payload budget (GitHub Models' free tier caps requests at 8,000 tokens; the budget lives in the `llm:` block of feeds.yaml). On JSON parse failure, retry once with a corrective instruction, then fall back to keyword mode. Log the outcome in the verification block.
