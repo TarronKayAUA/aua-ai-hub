@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Grounding concerns continue to shape how large language models are integrated into problem-based learning, with impacts on their instructional effectiveness <a href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[3]</a>. New training approaches such as FaithMed seek to address this by enabling language models to produce evidence-based medical reasoning grounded in cited sources <a href="https://arxiv.org/abs/2607.01440">[7]</a>. Meanwhile, practical design frameworks like the relevance index offer guidance to better structure laboratory sessions that teach artificial intelligence concepts in medicine <a href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[5]</a>. Surveys highlight that personality traits, more than technical experience, influence AI readiness among diverse groups of medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[6]</a>. Curricular studies also reveal gaps in familiarity and highlight specific educational needs for AI and medical big data training among undergraduates <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[12]</a>.</p>
+<p>FaithMed’s effort to train large language models for faithful, evidence-based medical reasoning centers on grounding outputs directly in cited medical sources, addressing concerns about the reliability of AI-generated conclusions in medical education <a href="https://arxiv.org/abs/2607.01440">[8]</a>. Meanwhile, the practical relevance index framework offers guidance for designing laboratory sessions that effectively teach artificial intelligence concepts to medical students, emphasizing applicability in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[6]</a>. Cross-sectional studies reveal that while medical students display positive attitudes toward AI, gaps remain in practical application skills and readiness, with personality traits playing a more significant role in preparedness than technology affinity <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[7]</a>. Frameworks and targeted curricula are increasingly needed as students report limited familiarity with AI and its integration into medical big data education <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[13]</a>.</p>
 <p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e96129">Multimodule Human, Artificial Intelligence Collaboration Pipeline for Large Language Model, Assisted Thematic Analysis Across Digital Health Interview Studies: Comparative Evaluation Study</a>
+    <p class="news-card-summary">Multi-module pipeline combining human researchers and large language models for thematic analysis of digital health qualitative data.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42388626?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Knowledge localization is associated with higher performance of domestic large language models in a Chinese radiation oncology examination</a>
     <p class="news-card-summary">Study demonstrates that large language models with domain-specific knowledge localization outperform standard models on Chinese radiation oncology board examination questions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">User Acceptance of an AI-Powered Medical History-Taking Training System Among Undergraduate Medical Students: Mixed Methods Study</a>
-    <p class="news-card-summary">Mixed methods study evaluates undergraduate medical student acceptance and interaction with an AI-powered system for training in patient history-taking.</p>
   </div>
 </div>
 </div>

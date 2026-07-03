@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A generalizable AI model known as COMPASS is now able to predict immunotherapy outcomes across a range of cancers and treatments, marking a notable step toward integrating artificial intelligence into oncology decision making <a href="https://www.nature.com/articles/s41591-026-04502-7">[4]</a>. Ambient AI scribes are being evaluated for their impact on documentation burden in high-burnout emergency department and intensive care unit settings, with studies examining both measurable workload changes and clinician perspectives on team communication <a href="https://ai.jmir.org/2026/1/e92193">[5]</a> <a href="https://medinform.jmir.org/2026/1/e81445">[6]</a>. Meanwhile, questions persist about the application readiness of large language models for real clinical use, as recent research highlights divergence between physician and AI evaluations on clinical tasks and suggests high benchmark scores may not reflect practical reliability <a href="https://www.nature.com/articles/s41746-026-02942-6">[8]</a> <a href="https://www.nature.com/articles/s41591-026-04500-9">[9]</a>.</p>
+<p>Large language models are now being implemented in real-world clinical settings to generate discharge summaries inside secure data environments, marking a practical step forward in hospital documentation <a href="https://ai.jmir.org/2026/1/e88816">[1]</a>. Meanwhile, the complexities of clinical decision-making are highlighted by ongoing divergence between physician assessments and AI evaluations in clinical reasoning tasks, which may temper expectations for rapid health AI adoption <a href="https://www.nature.com/articles/s41746-026-02942-6">[13]</a>. Articles caution that strong benchmark scores for AI models do not guarantee clinical readiness, raising concerns about overreliance on automated systems <a href="https://www.nature.com/articles/s41591-026-04500-9">[14]</a>. Ambient AI scribes continue to influence documentation burden and workflow in emergency departments, especially in high-burnout environments <a href="https://ai.jmir.org/2026/1/e92193">[10]</a>. Ethical questions surrounding patient autonomy and consent are emerging as ambient clinical AI systems grow increasingly prevalent <a href="https://www.nature.com/articles/s41746-026-02973-z">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88816">Real-World Implementation of Large Language Models for Writing Clinical Discharge Summaries Within a Secure Data Environment: Development and Expert Evaluation Study</a>
+    <p class="news-card-summary">Large language models generated clinical discharge summaries within a secure data environment, demonstrating real-world implementation for hospital documentation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85248">Prediction of Type 2 Diabetes Mellitus From Chest X-Rays Using a Suite of Previously Developed Chronic Disease Deep Learning Models in an Ethnically Diverse Cohort: Observational Study</a>
+    <p class="news-card-summary">Deep learning models previously developed for chronic disease detection predicted type 2 diabetes risk from chest X-rays in an external validation cohort.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
@@ -62,6 +76,13 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02973-z">The ethics of listening walls: patient autonomy and consent in the age of ambient clinical AI</a>
+    <p class="news-card-summary">Ethics perspective on ambient clinical artificial intelligence systems and their implications for patient autonomy and informed consent.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92193">Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study</a>
     <p class="news-card-summary">Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.</p>
@@ -101,27 +122,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02943-5">KGRD: a knowledge-graph-augmented automated reasoning framework for diagnosis and counselling of paediatric rare genetic disorders</a>
     <p class="news-card-summary">Knowledge-graph-augmented automated reasoning framework for diagnosis and counseling of pediatric rare genetic disorders published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02934-6">Artificial intelligence for scoliosis surgical planning and postoperative prediction</a>
-    <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine examines artificial intelligence for scoliosis surgical planning and postoperative outcome prediction.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02925-7">FedFound: a federated foundation model for lifespan brain morphological connectome analysis</a>
-    <p class="news-card-summary">FedFound, a federated foundation model, enables brain morphological connectome analysis across lifespan while preserving data privacy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02951-5">Structured reasoning failures compromise LLM interpretation of clinical oncology notes</a>
-    <p class="news-card-summary">Study in npj Digital Medicine shows large language models fail to correctly interpret clinical oncology notes due to reasoning limitations.</p>
   </div>
 </div>
 </div>

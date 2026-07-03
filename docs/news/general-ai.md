@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>US regulators&#x27; approval of Anthropic’s Fable and Mythos AI models for global release, following safety evaluations, removes export restrictions on these systems and may lead to wider adoption and scrutiny of AI safety practices <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. At the same time, benchmarks such as IsoSci assess whether large language models genuinely reason through isomorphic cross-domain science problems or simply retrieve stored knowledge, reflecting ongoing concerns about capabilities versus limitations <a href="https://arxiv.org/abs/2607.01431">[1]</a>. Environmental impact is rising as Google’s report indicates a 37 percent increase in electricity consumption due to AI infrastructure growth, intensifying the need for sustainable technology solutions in machine learning <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>.</p>
+<p>The global release of Anthropic’s Fable and Mythos AI models follows US regulatory safety assessments and marks a shift in model availability after previous export controls were lifted <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Meanwhile, Google’s expansion of AI infrastructure resulted in a 37 percent rise in electricity usage in 2025, as the company works to offset emissions with clean energy measures <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Innovations such as the CORTEX method for token-level hallucination detection in retrieval-augmented generation systems advance reliability in AI outputs <a href="https://arxiv.org/abs/2606.31033">[4]</a>. New benchmarks, including IsoSci, are designed to test whether large language models reason or simply retrieve information from their training data, highlighting ongoing concerns about the true capabilities of these systems <a href="https://arxiv.org/abs/2607.01431">[1]</a>.</p>
 <p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1umgdhx/mistral_released_leanstral15119ba6b">Mistral released Leanstral-1.5-119B-A6B</a>
+    <p class="news-card-summary">Mistral released Leansral 1.5, a 119-billion-parameter open-weights model with 6-billion active parameters under Apache 2.0 license.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/ODJmTYJPSSbtKSPmO8gS3EmI__gMc5r8LJxlf8jL8KI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e875cb86d094c38614bc35319ea7422fcd655e2d" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
@@ -122,13 +130,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.27472">Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents</a>
     <p class="news-card-summary">Diagnostic study and training method for memory-update gap problem in large language model agents operating over long contexts.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27550">EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction</a>
-    <p class="news-card-summary">EntMTP accelerates large language model inference by using entropy-guided multi-token prediction to improve speed and efficiency.</p>
   </div>
 </div>
 </div>

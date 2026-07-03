@@ -11,11 +11,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Grounding concerns continue to shape how large language models are integrated into problem-based learning, with impacts on their instructional effectiveness <a href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[3]</a>. New training approaches such as FaithMed seek to address this by enabling language models to produce evidence-based medical reasoning grounded in cited sources <a href="https://arxiv.org/abs/2607.01440">[7]</a>. Meanwhile, practical design frameworks like the relevance index offer guidance to better structure laboratory sessions that teach artificial intelligence concepts in medicine <a href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[5]</a>. Surveys highlight that personality traits, more than technical experience, influence AI readiness among diverse groups of medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[6]</a>. Curricular studies also reveal gaps in familiarity and highlight specific educational needs for AI and medical big data training among undergraduates <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[12]</a>.</p>
+<p>FaithMed’s effort to train large language models for faithful, evidence-based medical reasoning centers on grounding outputs directly in cited medical sources, addressing concerns about the reliability of AI-generated conclusions in medical education <a href="https://arxiv.org/abs/2607.01440">[8]</a>. Meanwhile, the practical relevance index framework offers guidance for designing laboratory sessions that effectively teach artificial intelligence concepts to medical students, emphasizing applicability in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[6]</a>. Cross-sectional studies reveal that while medical students display positive attitudes toward AI, gaps remain in practical application skills and readiness, with personality traits playing a more significant role in preparedness than technology affinity <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[7]</a>. Frameworks and targeted curricula are increasingly needed as students report limited familiarity with AI and its integration into medical big data education <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[13]</a>.</p>
 <p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e96129">Multimodule Human, Artificial Intelligence Collaboration Pipeline for Large Language Model, Assisted Thematic Analysis Across Digital Health Interview Studies: Comparative Evaluation Study</a>
+    <p class="news-card-summary">Multi-module pipeline combining human researchers and large language models for thematic analysis of digital health qualitative data.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
@@ -302,11 +309,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A generalizable AI model known as COMPASS is now able to predict immunotherapy outcomes across a range of cancers and treatments, marking a notable step toward integrating artificial intelligence into oncology decision making <a href="https://www.nature.com/articles/s41591-026-04502-7">[4]</a>. Ambient AI scribes are being evaluated for their impact on documentation burden in high-burnout emergency department and intensive care unit settings, with studies examining both measurable workload changes and clinician perspectives on team communication <a href="https://ai.jmir.org/2026/1/e92193">[5]</a> <a href="https://medinform.jmir.org/2026/1/e81445">[6]</a>. Meanwhile, questions persist about the application readiness of large language models for real clinical use, as recent research highlights divergence between physician and AI evaluations on clinical tasks and suggests high benchmark scores may not reflect practical reliability <a href="https://www.nature.com/articles/s41746-026-02942-6">[8]</a> <a href="https://www.nature.com/articles/s41591-026-04500-9">[9]</a>.</p>
+<p>Large language models are now being implemented in real-world clinical settings to generate discharge summaries inside secure data environments, marking a practical step forward in hospital documentation <a href="https://ai.jmir.org/2026/1/e88816">[1]</a>. Meanwhile, the complexities of clinical decision-making are highlighted by ongoing divergence between physician assessments and AI evaluations in clinical reasoning tasks, which may temper expectations for rapid health AI adoption <a href="https://www.nature.com/articles/s41746-026-02942-6">[13]</a>. Articles caution that strong benchmark scores for AI models do not guarantee clinical readiness, raising concerns about overreliance on automated systems <a href="https://www.nature.com/articles/s41591-026-04500-9">[14]</a>. Ambient AI scribes continue to influence documentation burden and workflow in emergency departments, especially in high-burnout environments <a href="https://ai.jmir.org/2026/1/e92193">[10]</a>. Ethical questions surrounding patient autonomy and consent are emerging as ambient clinical AI systems grow increasingly prevalent <a href="https://www.nature.com/articles/s41746-026-02973-z">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88816">Real-World Implementation of Large Language Models for Writing Clinical Discharge Summaries Within a Secure Data Environment: Development and Expert Evaluation Study</a>
+    <p class="news-card-summary">Large language models generated clinical discharge summaries within a secure data environment, demonstrating real-world implementation for hospital documentation.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85248">Prediction of Type 2 Diabetes Mellitus From Chest X-Rays Using a Suite of Previously Developed Chronic Disease Deep Learning Models in an Ethnically Diverse Cohort: Observational Study</a>
+    <p class="news-card-summary">Deep learning models previously developed for chronic disease detection predicted type 2 diabetes risk from chest X-rays in an external validation cohort.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
@@ -347,6 +368,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02938-2">Whole body CT attenuation and volume charts from routine clinical scans via LLM report filtering</a>
     <p class="news-card-summary">Large language models extract whole-body CT attenuation and volume data from routine clinical reports to generate population-based charts.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02973-z">The ethics of listening walls: patient autonomy and consent in the age of ambient clinical AI</a>
+    <p class="news-card-summary">Ethics perspective on ambient clinical artificial intelligence systems and their implications for patient autonomy and informed consent.</p>
   </div>
 </div>
 <div class="news-card">
@@ -484,11 +512,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>US regulators&#x27; approval of Anthropic’s Fable and Mythos AI models for global release, following safety evaluations, removes export restrictions on these systems and may lead to wider adoption and scrutiny of AI safety practices <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. At the same time, benchmarks such as IsoSci assess whether large language models genuinely reason through isomorphic cross-domain science problems or simply retrieve stored knowledge, reflecting ongoing concerns about capabilities versus limitations <a href="https://arxiv.org/abs/2607.01431">[1]</a>. Environmental impact is rising as Google’s report indicates a 37 percent increase in electricity consumption due to AI infrastructure growth, intensifying the need for sustainable technology solutions in machine learning <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>.</p>
+<p>The global release of Anthropic’s Fable and Mythos AI models follows US regulatory safety assessments and marks a shift in model availability after previous export controls were lifted <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Meanwhile, Google’s expansion of AI infrastructure resulted in a 37 percent rise in electricity usage in 2025, as the company works to offset emissions with clean energy measures <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Innovations such as the CORTEX method for token-level hallucination detection in retrieval-augmented generation systems advance reliability in AI outputs <a href="https://arxiv.org/abs/2606.31033">[4]</a>. New benchmarks, including IsoSci, are designed to test whether large language models reason or simply retrieve information from their training data, highlighting ongoing concerns about the true capabilities of these systems <a href="https://arxiv.org/abs/2607.01431">[1]</a>.</p>
 <p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1umgdhx/mistral_released_leanstral15119ba6b">Mistral released Leanstral-1.5-119B-A6B</a>
+    <p class="news-card-summary">Mistral released Leansral 1.5, a 119-billion-parameter open-weights model with 6-billion active parameters under Apache 2.0 license.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/ODJmTYJPSSbtKSPmO8gS3EmI__gMc5r8LJxlf8jL8KI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e875cb86d094c38614bc35319ea7422fcd655e2d" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>

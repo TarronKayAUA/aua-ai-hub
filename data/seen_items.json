@@ -11671,6 +11671,137 @@
    "summary": "Large language models extract whole-body CT attenuation and volume data from routine clinical reports to generate population-based charts.",
    "category": "clinical_practice",
    "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map",
+   "title_hash": "d540af3f2afdfe303848fa24cd1f7dd9",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "vendor marketing and organizational announcement without technical substance"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e88816",
+   "title_hash": "b70634f1dc9dd5e01207913b7bbc98b1",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": true,
+   "title": "Real-World Implementation of Large Language Models for Writing Clinical Discharge Summaries Within a Secure Data Environment: Development and Expert Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-07-03T21:30:52+00:00",
+   "summary": "Large language models generated clinical discharge summaries within a secure data environment, demonstrating real-world implementation for hospital documentation.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e85248",
+   "title_hash": "f5f8f8ced53ee041678effed58edd149",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": true,
+   "title": "Prediction of Type 2 Diabetes Mellitus From Chest X-Rays Using a Suite of Previously Developed Chronic Disease Deep Learning Models in an Ethnically Diverse Cohort: Observational Study",
+   "source": "JMIR AI",
+   "published": "2026-07-03T21:30:17+00:00",
+   "summary": "Deep learning models previously developed for chronic disease detection predicted type 2 diabetes risk from chest X-rays in an external validation cohort.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/3/josh-w-comeau",
+   "title_hash": "6c4b433dd37f322c0485588c7f34a076",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, personal course announcement unrelated to AI"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e96129",
+   "title_hash": "a6b1b2569f5b2a992801e77566b31234",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": true,
+   "title": "Multimodule Human, Artificial Intelligence Collaboration Pipeline for Large Language Model, Assisted Thematic Analysis Across Digital Health Interview Studies: Comparative Evaluation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-03T21:01:18+00:00",
+   "summary": "Multi-module pipeline combining human researchers and large language models for thematic analysis of digital health qualitative data.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e81145",
+   "title_hash": "32e0f179ec86bf750d93d82a5e432f00",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "narrow domain application, incremental method paper without broad significance"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/3/judgement",
+   "title_hash": "4d54f2bd909467c2503e00dcd479dd5a",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "personal opinion piece without new information or technical substance"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86278",
+   "title_hash": "afaf8a17e3ae24bcce1f8ebcf6d44e58",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "narrow vendor-specific repeatability study, limited significance beyond single system validation"
+  },
+  {
+   "url": "https://github.com/teamchong/pxpipe",
+   "title_hash": "8527334a5a856bbbb44e9073891fe0ac",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "performance-tinkering discussion, minor optimization technique without broad significance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1umgdhx/mistral_released_leanstral15119ba6b",
+   "title_hash": "daedb4333e519a79d2f49aa3225184de",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": true,
+   "title": "Mistral released Leanstral-1.5-119B-A6B",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-03T14:44:12+00:00",
+   "summary": "Mistral released Leansral 1.5, a 119-billion-parameter open-weights model with 6-billion active parameters under Apache 2.0 license.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://external-preview.redd.it/ODJmTYJPSSbtKSPmO8gS3EmI__gMc5r8LJxlf8jL8KI.png?width=640&crop=smart&auto=webp&s=e875cb86d094c38614bc35319ea7422fcd655e2d"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1umbw0v/palantir_is_a_free_org_on_hf_with_0_opensource",
+   "title_hash": "38ee598542e06da6606740b30a1d8cbf",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "community meta-discussion and gossip without substantive news"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02973-z",
+   "title_hash": "f971a94f614f6a0208c0f195d1cabdf8",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": true,
+   "title": "The ethics of listening walls: patient autonomy and consent in the age of ambient clinical AI",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-03T00:00:00+00:00",
+   "summary": "Ethics perspective on ambient clinical artificial intelligence systems and their implications for patient autonomy and informed consent.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ulymml/llamacpp_patch_deepseek_v4_flash_running_with",
+   "title_hash": "811a671be36f8f56b442a51848fb7ebb",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread about local model optimization, minor technical discussion"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uO5cvkzh3P0",
+   "title_hash": "39d58fd4f77f00b98f49b8531330f305",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "incomplete candidate data; title lacks substance and appears clickbait-framed"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=IOwvXarh72Y",
+   "title_hash": "9c0f6fc5397d5e89c7cfb5af328d57ec",
+   "first_seen": "2026-07-03T23:48:45.730897+00:00",
+   "kept": false,
+   "reason": "title is drama-framed; incomplete summary suggests reaction content rather than substantive test"
   }
  ],
  "digests": [
@@ -11793,18 +11924,18 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Grounding concerns continue to shape how large language models are integrated into problem-based learning, with impacts on their instructional effectiveness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[3]</a>. New training approaches such as FaithMed seek to address this by enabling language models to produce evidence-based medical reasoning grounded in cited sources <a href=\"https://arxiv.org/abs/2607.01440\">[7]</a>. Meanwhile, practical design frameworks like the relevance index offer guidance to better structure laboratory sessions that teach artificial intelligence concepts in medicine <a href=\"https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[5]</a>. Surveys highlight that personality traits, more than technical experience, influence AI readiness among diverse groups of medical students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[6]</a>. Curricular studies also reveal gaps in familiarity and highlight specific educational needs for AI and medical big data training among undergraduates <a href=\"https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0\">[12]</a>.",
-   "hash": "7a8da18ce640f210",
+   "text": "FaithMed’s effort to train large language models for faithful, evidence-based medical reasoning centers on grounding outputs directly in cited medical sources, addressing concerns about the reliability of AI-generated conclusions in medical education <a href=\"https://arxiv.org/abs/2607.01440\">[8]</a>. Meanwhile, the practical relevance index framework offers guidance for designing laboratory sessions that effectively teach artificial intelligence concepts to medical students, emphasizing applicability in clinical contexts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[6]</a>. Cross-sectional studies reveal that while medical students display positive attitudes toward AI, gaps remain in practical application skills and readiness, with personality traits playing a more significant role in preparedness than technology affinity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[2]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[7]</a>. Frameworks and targeted curricula are increasingly needed as students report limited familiarity with AI and its integration into medical big data education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0\">[13]</a>.",
+   "hash": "1b4a516660e37683",
    "date": "July 3, 2026"
   },
   "clinical_practice": {
-   "text": "A generalizable AI model known as COMPASS is now able to predict immunotherapy outcomes across a range of cancers and treatments, marking a notable step toward integrating artificial intelligence into oncology decision making <a href=\"https://www.nature.com/articles/s41591-026-04502-7\">[4]</a>. Ambient AI scribes are being evaluated for their impact on documentation burden in high-burnout emergency department and intensive care unit settings, with studies examining both measurable workload changes and clinician perspectives on team communication <a href=\"https://ai.jmir.org/2026/1/e92193\">[5]</a> <a href=\"https://medinform.jmir.org/2026/1/e81445\">[6]</a>. Meanwhile, questions persist about the application readiness of large language models for real clinical use, as recent research highlights divergence between physician and AI evaluations on clinical tasks and suggests high benchmark scores may not reflect practical reliability <a href=\"https://www.nature.com/articles/s41746-026-02942-6\">[8]</a> <a href=\"https://www.nature.com/articles/s41591-026-04500-9\">[9]</a>.",
-   "hash": "6dde924b16ddc794",
+   "text": "Large language models are now being implemented in real-world clinical settings to generate discharge summaries inside secure data environments, marking a practical step forward in hospital documentation <a href=\"https://ai.jmir.org/2026/1/e88816\">[1]</a>. Meanwhile, the complexities of clinical decision-making are highlighted by ongoing divergence between physician assessments and AI evaluations in clinical reasoning tasks, which may temper expectations for rapid health AI adoption <a href=\"https://www.nature.com/articles/s41746-026-02942-6\">[13]</a>. Articles caution that strong benchmark scores for AI models do not guarantee clinical readiness, raising concerns about overreliance on automated systems <a href=\"https://www.nature.com/articles/s41591-026-04500-9\">[14]</a>. Ambient AI scribes continue to influence documentation burden and workflow in emergency departments, especially in high-burnout environments <a href=\"https://ai.jmir.org/2026/1/e92193\">[10]</a>. Ethical questions surrounding patient autonomy and consent are emerging as ambient clinical AI systems grow increasingly prevalent <a href=\"https://www.nature.com/articles/s41746-026-02973-z\">[9]</a>.",
+   "hash": "935a7fb512ac6ecb",
    "date": "July 3, 2026"
   },
   "general_ai": {
-   "text": "US regulators&#x27; approval of Anthropic’s Fable and Mythos AI models for global release, following safety evaluations, removes export restrictions on these systems and may lead to wider adoption and scrutiny of AI safety practices <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. At the same time, benchmarks such as IsoSci assess whether large language models genuinely reason through isomorphic cross-domain science problems or simply retrieve stored knowledge, reflecting ongoing concerns about capabilities versus limitations <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a>. Environmental impact is rising as Google’s report indicates a 37 percent increase in electricity consumption due to AI infrastructure growth, intensifying the need for sustainable technology solutions in machine learning <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>.",
-   "hash": "34d58df33ca8283f",
+   "text": "The global release of Anthropic’s Fable and Mythos AI models follows US regulatory safety assessments and marks a shift in model availability after previous export controls were lifted <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. Meanwhile, Google’s expansion of AI infrastructure resulted in a 37 percent rise in electricity usage in 2025, as the company works to offset emissions with clean energy measures <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. Innovations such as the CORTEX method for token-level hallucination detection in retrieval-augmented generation systems advance reliability in AI outputs <a href=\"https://arxiv.org/abs/2606.31033\">[4]</a>. New benchmarks, including IsoSci, are designed to test whether large language models reason or simply retrieve information from their training data, highlighting ongoing concerns about the true capabilities of these systems <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a>.",
+   "hash": "e6121f405c2ee232",
    "date": "July 3, 2026"
   }
  }
