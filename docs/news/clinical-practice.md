@@ -20,6 +20,13 @@ Items are selected nightly by an automated pipeline and link to their original s
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Artificial intelligence as a second reader for pneumothorax detection: redirecting rather than reducing chest CT use</a>
+    <p class="news-card-summary">AI assistance for pneumothorax detection redirects rather than reduces chest CT use in simulated clinical workflows.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02885-y">BCGNet: an AI model trained on 600 K hours of sleep data for a novel under-pillow contactless monitoring device</a>
     <p class="news-card-summary">BCGNet is an AI model trained on 600,000 hours of sleep data for contactless under-pillow monitoring of sleep patterns.</p>
@@ -44,6 +51,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04502-7">Generalizable AI predicts immunotherapy outcomes across cancers and treatments</a>
     <p class="news-card-summary">COMPASS, a generalizable AI model, predicts immunotherapy outcomes across multiple cancer types and treatments.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02938-2">Whole body CT attenuation and volume charts from routine clinical scans via LLM report filtering</a>
+    <p class="news-card-summary">Large language models extract whole-body CT attenuation and volume data from routine clinical reports to generate population-based charts.</p>
   </div>
 </div>
 <div class="news-card">
@@ -109,20 +123,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02951-5">Structured reasoning failures compromise LLM interpretation of clinical oncology notes</a>
     <p class="news-card-summary">Study in npj Digital Medicine shows large language models fail to correctly interpret clinical oncology notes due to reasoning limitations.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02936-4">Enhancing anatomical recognition by surgeons during pelvic lymph node dissection using artificial intelligence</a>
-    <p class="news-card-summary">npj Digital Medicine reports artificial intelligence enhancement of anatomical recognition during pelvic lymph node dissection surgery.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00034-2">Agents AMIE and MIRA advance medical AI capabilities</a>
-    <p class="news-card-summary">Nature Medicine reports advances in two medical AI agents, AMIE and MIRA, demonstrating improved clinical capabilities.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00034-2/d41591-026-00034-2_52857458.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

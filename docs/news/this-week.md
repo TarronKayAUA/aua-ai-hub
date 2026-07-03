@@ -11,11 +11,53 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>FaithMed introduces a language model that generates faithful, evidence-based medical reasoning grounded in cited knowledge, pointing to advancing reliability in AI-driven education resources <a href="https://arxiv.org/abs/2607.01440">[1]</a>. Meanwhile, a detailed bibliometric and thematic mapping study tracks how artificial intelligence is already being integrated into assessment and feedback mechanisms within medical education <a href="https://mededu.jmir.org/2026/1/e98949">[2]</a>. Amid these developments, a randomized controlled trial compares digital versus traditional ultrasound training methods for physiotherapy students, providing rigorous evidence about technology-driven skill acquisition <a href="https://mededu.jmir.org/2026/1/e87897">[3]</a>. Survey data highlight that clinical undergraduates show limited familiarity with AI, signaling clear curricular needs for medical big data education <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[6]</a>.</p>
+<p>Grounding concerns continue to shape how large language models are integrated into problem-based learning, with impacts on their instructional effectiveness <a href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[3]</a>. New training approaches such as FaithMed seek to address this by enabling language models to produce evidence-based medical reasoning grounded in cited sources <a href="https://arxiv.org/abs/2607.01440">[7]</a>. Meanwhile, practical design frameworks like the relevance index offer guidance to better structure laboratory sessions that teach artificial intelligence concepts in medicine <a href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[5]</a>. Surveys highlight that personality traits, more than technical experience, influence AI readiness among diverse groups of medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[6]</a>. Curricular studies also reveal gaps in familiarity and highlight specific educational needs for AI and medical big data training among undergraduates <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[12]</a>.</p>
 <p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Knowledge, Attitudes, and Practices Related to AI in Learning and Research Among Medical Students in Vietnam: Cross-Sectional Study</a>
+    <p class="news-card-summary">Medical students in Vietnam demonstrated favorable knowledge and positive attitudes toward AI, though practical skills remain limited.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42396275?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Historical Perspectives in Medicine using a Large Language Model: Emulating an 18th Century Physician</a>
+    <p class="news-card-summary">Large language models configured with historical constraints can simulate decision-making of 18th-century physicians for educational purposes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">LLMs in Problem-Based Learning: The Grounding Issue</a>
+    <p class="news-card-summary">Large language models used in problem-based learning face grounding issues that affect their pedagogical effectiveness.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394077?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Vibe Coding to Democratize Dementia mHealth Development: Preliminary Findings</a>
+    <p class="news-card-summary">Vibe coding enables health professionals without programming expertise to develop dementia-focused mobile health applications.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Designing Effective Laboratory Sessions of AI in Medicine: A Practical Relevance Index</a>
+    <p class="news-card-summary">A practical relevance index framework guides design of effective laboratory sessions for teaching artificial intelligence in medicine.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Personality traits, technology affinity, and artificial intelligence readiness in medical students: a multinational cross-sectional study</a>
+    <p class="news-card-summary">Personality traits independently predict AI readiness in medical students across multiple countries, more so than technology affinity.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
@@ -251,57 +293,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Artificial intelligence in undergraduate medical education clinical skills curricula: a scoping review of implementations since 2022</a>
-    <p class="news-card-summary">Scoping review finds AI implementation in clinical skills education has accelerated substantially since 2022, with emerging applications across simulation and assessment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Use of large language models for providing automated feedback in medical imaging education: a systematic review</a>
-    <p class="news-card-summary">Systematic review finds large language models show promising potential as supportive tools for providing automated feedback in medical imaging education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Complementary Error Patterns Between Human Evaluators and GPT-4o in Video-Based Cardiopulmonary Resuscitation Skills Assessment: Implications for Artificial Intelligence-Assisted Second Reading</a>
-    <p class="news-card-summary">Study identifies complementary error patterns between human evaluators and GPT-4o in video-based CPR skills assessment, suggesting potential for hybrid evaluation approaches.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42355546?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">The Impact of Artificial Intelligence on BI-RADS Classification and Diagnostic Confidence in Mammography Interpretation by Radiology Residents</a>
-    <p class="news-card-summary">Study examines how AI assistance influences BI-RADS classification reassessment and diagnostic confidence among radiology residents in mammography interpretation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351276?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Artificial intelligence to support debriefing in simulation-based healthcare education: a scoping review</a>
-    <p class="news-card-summary">Scoping review identifies artificial intelligence as an emerging supportive tool for debriefing in simulation-based healthcare education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42361810?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">The Avatar Advantage: AI-Powered Faculty Development to Enhance Feedback Delivery Skills</a>
     <p class="news-card-summary">Study demonstrates AI-powered avatars provide reliable and consistent feedback delivery for faculty development in teaching skills.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351124?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Acceptance and use of GenAI among medical and health sciences students in Saudi Arabia: an extended TAM study</a>
-    <p class="news-card-summary">Extended Technology Acceptance Model study examines acceptance and use of generative AI among medical and health sciences students in Saudi Arabia.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42351097?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0">Development and pilot evaluation of a large language model-based clinical simulation system for medical education in gastroenterology</a>
-    <p class="news-card-summary">Large language model-based clinical simulator for gastroenterology education demonstrates high accuracy, realism, and adaptability in pilot evaluation.</p>
   </div>
 </div>
 </div>
@@ -314,6 +307,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Artificial intelligence as a second reader for pneumothorax detection: redirecting rather than reducing chest CT use</a>
+    <p class="news-card-summary">AI assistance for pneumothorax detection redirects rather than reduces chest CT use in simulated clinical workflows.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
@@ -340,6 +340,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04502-7">Generalizable AI predicts immunotherapy outcomes across cancers and treatments</a>
     <p class="news-card-summary">COMPASS, a generalizable AI model, predicts immunotherapy outcomes across multiple cancer types and treatments.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02938-2">Whole body CT attenuation and volume charts from routine clinical scans via LLM report filtering</a>
+    <p class="news-card-summary">Large language models extract whole-body CT attenuation and volume data from routine clinical reports to generate population-based charts.</p>
   </div>
 </div>
 <div class="news-card">
@@ -471,20 +478,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Multiphase pilot study of implementing and measuring the clinical and financial value of ambient AI in a regional health system.</p>
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/d7c5d376154c2e1c6e7f2101efc740ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04503-6">Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial</a>
-    <p class="news-card-summary">Pragmatic cluster-randomized trial published in Nature Medicine evaluates a generative AI-enabled clinical decision support system in primary care.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04501-8">Evaluating the robustness and readiness of large frontier models in health AI applications</a>
-    <p class="news-card-summary">Nature Medicine study evaluates robustness and readiness of large frontier models in health AI applications through adversarial evaluation methods.</p>
-  </div>
 </div>
 </div>
 
@@ -639,14 +632,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   </div>
   <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/48XpR5dxhE6jJQ03HTUnWZ/ac68fbfb7761fa72ac7442c6744dba56/_.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">June 25, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities">Anthropic says Alibaba must be punished for largest Claude cloning attack</a>
-    <p class="news-card-summary">Anthropic reports that Alibaba conducted a large-scale coordinated account campaign to extract Claude capabilities through millions of model exchanges.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2271847932-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ## Videos
@@ -728,12 +713,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">Image Generation and Visual Intelligence with Black Forest Labs</span>
   <span class="video-card-meta">Practical AI, July 2, 2026</span>
   <span class="video-card-desc">Discussion of the evolution of AI image generation capabilities and visual intelligence models with Black Forest Labs.</span>
-</a>
-<a class="video-card" href="https://aipodcast.education/victoria-hedlund-on-ai-bias-what-every-teacher-needs-to-know" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Victoria Hedlund on AI bias: What every teacher needs to know" loading="lazy">
-  <span class="video-card-title">Victoria Hedlund on AI bias: What every teacher needs to know</span>
-  <span class="video-card-meta">AI in Education Podcast, June 25, 2026</span>
-  <span class="video-card-desc">Victoria Hedlund discusses AI bias in educational systems and implications for teachers and students.</span>
 </a>
 </div>
 
