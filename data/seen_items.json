@@ -11927,6 +11927,20 @@
    "summary": "A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.",
    "category": "clinical_practice",
    "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes",
+   "title_hash": "64a039d3e531d85ee9615ceeb127b324",
+   "first_seen": "2026-07-04T23:46:32.932134+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools",
+   "title_hash": "53a9b2e7b536c211b2238079b7504260",
+   "first_seen": "2026-07-04T23:46:32.932134+00:00",
+   "kept": false,
+   "reason": "opinion piece with no new information"
   }
  ],
  "digests": [
