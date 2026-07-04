@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Deep learning models are advancing predictive capabilities in clinical practice, notably with risk prediction for type 2 diabetes from chest X-rays validated in an ethnically diverse population <a href="https://ai.jmir.org/2026/1/e85248">[3]</a>. Generalizable artificial intelligence tools such as COMPASS have been shown to predict immunotherapy outcomes across different cancers and treatments, supporting outcome forecasting across broad patient groups <a href="https://www.nature.com/articles/s41591-026-04502-7">[8]</a>. Large language models are also being implemented in secure hospital environments to generate clinical discharge summaries, reflecting integration of AI in routine documentation workflows <a href="https://ai.jmir.org/2026/1/e88816">[2]</a>. The ethics of ambient clinical AI systems-including impacts on patient autonomy and consent-are drawing increased scrutiny from medical professionals and policymakers <a href="https://www.nature.com/articles/s41746-026-02973-z">[10]</a>.</p>
+<p>Large language models are being used to generate clinical discharge summaries within secure hospital environments, indicating practical advances in medical documentation <a href="https://ai.jmir.org/2026/1/e88816">[4]</a>. AI applications extend to predicting the risk of type 2 diabetes from chest X-ray images in diverse populations through validated deep learning models <a href="https://ai.jmir.org/2026/1/e85248">[5]</a>. A foundation model leveraging retinal fundus images provides explainable screening and risk stratification for dementia, highlighting developments in diagnostic support <a href="https://www.nature.com/articles/s41746-026-02968-w">[2]</a>. Ethical concerns are raised about large language model research on public biosignals data, with calls for improved patient privacy safeguards <a href="https://www.nature.com/articles/s41746-026-02872-3">[3]</a>. Ambient AI scribes are evaluated for their impact on emergency department documentation burden and clinician workload <a href="https://ai.jmir.org/2026/1/e92193">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -23,6 +23,20 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02959-x">Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction</a>
     <p class="news-card-summary">Study reports implementation and validation of conversational AI for preparing patients before medical procedures and measures patient satisfaction.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02968-w">Explainable foundation model for dementia screening and risk stratification using retinal fundus images</a>
+    <p class="news-card-summary">A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02872-3">LLM research on public biosignals data is needed to protect patients</a>
+    <p class="news-card-summary">A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.</p>
   </div>
 </div>
 <div class="news-card">
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81445">Clinician Perspectives on Ambient AI Scribes in the Intensive Care Unit: Qualitative Interview Study</a>
     <p class="news-card-summary">Qualitative interview study explores intensive care unit clinician perspectives on ambient AI scribes for documentation and team communication support.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">AI In Leukemia Diagnostics: Complementing the Pathologist&#x27;s Role</a>
-    <p class="news-card-summary">Review discusses artificial intelligence applications across leukemia diagnostic stages, from morphology to molecular analysis, and pathologist integration.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02942-6">Physicians and artificial intelligence diverge in evaluating large language models on real clinical cases</a>
-    <p class="news-card-summary">Study finds divergence between physician and AI model evaluations on clinical reasoning tasks, raising questions about readiness for health AI deployment.</p>
   </div>
 </div>
 </div>

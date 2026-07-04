@@ -301,7 +301,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Deep learning models are advancing predictive capabilities in clinical practice, notably with risk prediction for type 2 diabetes from chest X-rays validated in an ethnically diverse population <a href="https://ai.jmir.org/2026/1/e85248">[3]</a>. Generalizable artificial intelligence tools such as COMPASS have been shown to predict immunotherapy outcomes across different cancers and treatments, supporting outcome forecasting across broad patient groups <a href="https://www.nature.com/articles/s41591-026-04502-7">[8]</a>. Large language models are also being implemented in secure hospital environments to generate clinical discharge summaries, reflecting integration of AI in routine documentation workflows <a href="https://ai.jmir.org/2026/1/e88816">[2]</a>. The ethics of ambient clinical AI systems-including impacts on patient autonomy and consent-are drawing increased scrutiny from medical professionals and policymakers <a href="https://www.nature.com/articles/s41746-026-02973-z">[10]</a>.</p>
+<p>Large language models are being used to generate clinical discharge summaries within secure hospital environments, indicating practical advances in medical documentation <a href="https://ai.jmir.org/2026/1/e88816">[4]</a>. AI applications extend to predicting the risk of type 2 diabetes from chest X-ray images in diverse populations through validated deep learning models <a href="https://ai.jmir.org/2026/1/e85248">[5]</a>. A foundation model leveraging retinal fundus images provides explainable screening and risk stratification for dementia, highlighting developments in diagnostic support <a href="https://www.nature.com/articles/s41746-026-02968-w">[2]</a>. Ethical concerns are raised about large language model research on public biosignals data, with calls for improved patient privacy safeguards <a href="https://www.nature.com/articles/s41746-026-02872-3">[3]</a>. Ambient AI scribes are evaluated for their impact on emergency department documentation burden and clinician workload <a href="https://ai.jmir.org/2026/1/e92193">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -311,6 +311,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02959-x">Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction</a>
     <p class="news-card-summary">Study reports implementation and validation of conversational AI for preparing patients before medical procedures and measures patient satisfaction.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02968-w">Explainable foundation model for dementia screening and risk stratification using retinal fundus images</a>
+    <p class="news-card-summary">A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02872-3">LLM research on public biosignals data is needed to protect patients</a>
+    <p class="news-card-summary">A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.</p>
   </div>
 </div>
 <div class="news-card">
@@ -510,11 +524,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>The global release of Anthropic’s Fable and Mythos AI models follows US regulatory safety assessments and marks a shift in model availability after previous export controls were lifted <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Meanwhile, Google’s expansion of AI infrastructure resulted in a 37 percent rise in electricity usage in 2025, as the company works to offset emissions with clean energy measures <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Innovations such as the CORTEX method for token-level hallucination detection in retrieval-augmented generation systems advance reliability in AI outputs <a href="https://arxiv.org/abs/2606.31033">[4]</a>. New benchmarks, including IsoSci, are designed to test whether large language models reason or simply retrieve information from their training data, highlighting ongoing concerns about the true capabilities of these systems <a href="https://arxiv.org/abs/2607.01431">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
+<p>US regulators have cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations that removed prior export restrictions, highlighting ongoing scrutiny of large language model deployments <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. The IsoSci benchmark has been introduced to gauge whether such models rely on genuine reasoning or simple knowledge retrieval when solving cross-domain science problems, offering a new lens for evaluating model capabilities <a href="https://arxiv.org/abs/2607.01431">[1]</a>. Meanwhile, Google attributed a 37 percent increase in electricity usage to its expansive AI infrastructure buildout in 2025, emphasizing challenges in balancing environmental impact with technical advancement <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Model robustness is further being examined with the LoFa benchmark, which targets logical fallacy resistance in reasoning tasks <a href="https://arxiv.org/abs/2606.31039">[5]</a>.</p>
+<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100">google/tabfm-1.0.0</a>
+    <p class="news-card-summary">Google Research released TabFM, a zero-shot foundation model for tabular data supporting classification and regression tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/J-WwzolBRQVriyFjrSxJJXj_RBqoGjl9IqtDCzg_QIU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=15aaf1d34804b9ad9d9e2115446764ba26b824f6" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>

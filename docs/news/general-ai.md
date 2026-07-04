@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>The global release of Anthropic’s Fable and Mythos AI models follows US regulatory safety assessments and marks a shift in model availability after previous export controls were lifted <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Meanwhile, Google’s expansion of AI infrastructure resulted in a 37 percent rise in electricity usage in 2025, as the company works to offset emissions with clean energy measures <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Innovations such as the CORTEX method for token-level hallucination detection in retrieval-augmented generation systems advance reliability in AI outputs <a href="https://arxiv.org/abs/2606.31033">[4]</a>. New benchmarks, including IsoSci, are designed to test whether large language models reason or simply retrieve information from their training data, highlighting ongoing concerns about the true capabilities of these systems <a href="https://arxiv.org/abs/2607.01431">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
+<p>US regulators have cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations that removed prior export restrictions, highlighting ongoing scrutiny of large language model deployments <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. The IsoSci benchmark has been introduced to gauge whether such models rely on genuine reasoning or simple knowledge retrieval when solving cross-domain science problems, offering a new lens for evaluating model capabilities <a href="https://arxiv.org/abs/2607.01431">[1]</a>. Meanwhile, Google attributed a 37 percent increase in electricity usage to its expansive AI infrastructure buildout in 2025, emphasizing challenges in balancing environmental impact with technical advancement <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Model robustness is further being examined with the LoFa benchmark, which targets logical fallacy resistance in reasoning tasks <a href="https://arxiv.org/abs/2606.31039">[5]</a>.</p>
+<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100">google/tabfm-1.0.0</a>
+    <p class="news-card-summary">Google Research released TabFM, a zero-shot foundation model for tabular data supporting classification and regression tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/J-WwzolBRQVriyFjrSxJJXj_RBqoGjl9IqtDCzg_QIU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=15aaf1d34804b9ad9d9e2115446764ba26b824f6" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
@@ -124,12 +132,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">DiScoFormer uses a single transformer architecture to learn both density and score functions across multiple probability distributions.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/AnOX0pzQm-Hep_CLFOVM7.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27472">Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents</a>
-    <p class="news-card-summary">Diagnostic study and training method for memory-update gap problem in large language model agents operating over long contexts.</p>
-  </div>
 </div>
 </div>

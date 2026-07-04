@@ -11890,6 +11890,43 @@
    "first_seen": "2026-07-04T15:49:19.939408+00:00",
    "kept": false,
    "reason": "community meta-discussion"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100",
+   "title_hash": "0c6ee0bcb17bde89e5ead468cf0a12cb",
+   "first_seen": "2026-07-04T20:16:07.872157+00:00",
+   "kept": true,
+   "title": "google/tabfm-1.0.0",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-04T10:20:58+00:00",
+   "summary": "Google Research released TabFM, a zero-shot foundation model for tabular data supporting classification and regression tasks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/J-WwzolBRQVriyFjrSxJJXj_RBqoGjl9IqtDCzg_QIU.png?width=640&crop=smart&auto=webp&s=15aaf1d34804b9ad9d9e2115446764ba26b824f6"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02968-w",
+   "title_hash": "9f3ada3b58410525651ae2281bf12e5a",
+   "first_seen": "2026-07-04T20:16:07.872157+00:00",
+   "kept": true,
+   "title": "Explainable foundation model for dementia screening and risk stratification using retinal fundus images",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-04T00:00:00+00:00",
+   "summary": "A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02872-3",
+   "title_hash": "1f0febc9949ea4a47b2c1365ed96cb76",
+   "first_seen": "2026-07-04T20:16:07.872157+00:00",
+   "kept": true,
+   "title": "LLM research on public biosignals data is needed to protect patients",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-04T00:00:00+00:00",
+   "summary": "A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.",
+   "category": "clinical_practice",
+   "score": 3.0
   }
  ],
  "digests": [
@@ -12017,14 +12054,14 @@
    "date": "July 4, 2026"
   },
   "clinical_practice": {
-   "text": "Deep learning models are advancing predictive capabilities in clinical practice, notably with risk prediction for type 2 diabetes from chest X-rays validated in an ethnically diverse population <a href=\"https://ai.jmir.org/2026/1/e85248\">[3]</a>. Generalizable artificial intelligence tools such as COMPASS have been shown to predict immunotherapy outcomes across different cancers and treatments, supporting outcome forecasting across broad patient groups <a href=\"https://www.nature.com/articles/s41591-026-04502-7\">[8]</a>. Large language models are also being implemented in secure hospital environments to generate clinical discharge summaries, reflecting integration of AI in routine documentation workflows <a href=\"https://ai.jmir.org/2026/1/e88816\">[2]</a>. The ethics of ambient clinical AI systems-including impacts on patient autonomy and consent-are drawing increased scrutiny from medical professionals and policymakers <a href=\"https://www.nature.com/articles/s41746-026-02973-z\">[10]</a>.",
-   "hash": "108b41aaa4ba5b69",
+   "text": "Large language models are being used to generate clinical discharge summaries within secure hospital environments, indicating practical advances in medical documentation <a href=\"https://ai.jmir.org/2026/1/e88816\">[4]</a>. AI applications extend to predicting the risk of type 2 diabetes from chest X-ray images in diverse populations through validated deep learning models <a href=\"https://ai.jmir.org/2026/1/e85248\">[5]</a>. A foundation model leveraging retinal fundus images provides explainable screening and risk stratification for dementia, highlighting developments in diagnostic support <a href=\"https://www.nature.com/articles/s41746-026-02968-w\">[2]</a>. Ethical concerns are raised about large language model research on public biosignals data, with calls for improved patient privacy safeguards <a href=\"https://www.nature.com/articles/s41746-026-02872-3\">[3]</a>. Ambient AI scribes are evaluated for their impact on emergency department documentation burden and clinician workload <a href=\"https://ai.jmir.org/2026/1/e92193\">[14]</a>.",
+   "hash": "b80655a9e60b4d4e",
    "date": "July 4, 2026"
   },
   "general_ai": {
-   "text": "The global release of Anthropic’s Fable and Mythos AI models follows US regulatory safety assessments and marks a shift in model availability after previous export controls were lifted <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. Meanwhile, Google’s expansion of AI infrastructure resulted in a 37 percent rise in electricity usage in 2025, as the company works to offset emissions with clean energy measures <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. Innovations such as the CORTEX method for token-level hallucination detection in retrieval-augmented generation systems advance reliability in AI outputs <a href=\"https://arxiv.org/abs/2606.31033\">[4]</a>. New benchmarks, including IsoSci, are designed to test whether large language models reason or simply retrieve information from their training data, highlighting ongoing concerns about the true capabilities of these systems <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a>.",
-   "hash": "e6121f405c2ee232",
-   "date": "July 3, 2026"
+   "text": "US regulators have cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations that removed prior export restrictions, highlighting ongoing scrutiny of large language model deployments <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. The IsoSci benchmark has been introduced to gauge whether such models rely on genuine reasoning or simple knowledge retrieval when solving cross-domain science problems, offering a new lens for evaluating model capabilities <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a>. Meanwhile, Google attributed a 37 percent increase in electricity usage to its expansive AI infrastructure buildout in 2025, emphasizing challenges in balancing environmental impact with technical advancement <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. Model robustness is further being examined with the LoFa benchmark, which targets logical fallacy resistance in reasoning tasks <a href=\"https://arxiv.org/abs/2606.31039\">[5]</a>.",
+   "hash": "c4b8b483bcaec046",
+   "date": "July 4, 2026"
   }
  }
 }
