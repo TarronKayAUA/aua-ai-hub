@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>FaithMed’s effort to train large language models for faithful, evidence-based medical reasoning centers on grounding outputs directly in cited medical sources, addressing concerns about the reliability of AI-generated conclusions in medical education <a href="https://arxiv.org/abs/2607.01440">[8]</a>. Meanwhile, the practical relevance index framework offers guidance for designing laboratory sessions that effectively teach artificial intelligence concepts to medical students, emphasizing applicability in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[6]</a>. Cross-sectional studies reveal that while medical students display positive attitudes toward AI, gaps remain in practical application skills and readiness, with personality traits playing a more significant role in preparedness than technology affinity <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[7]</a>. Frameworks and targeted curricula are increasingly needed as students report limited familiarity with AI and its integration into medical big data education <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[13]</a>.</p>
-<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
+<p>A student-partnered Delphi study has proposed guiding principles for medical students&#x27; responsible use of generative artificial intelligence in medical education, highlighting a need for structured standards as AI technologies become increasingly prevalent <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Concurrently, medical students in Vietnam show favorable knowledge and positive attitudes toward AI, though practical skills remain limited, suggesting gaps between awareness and implementation <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[3]</a>. A multinational study finds that personality traits independently predict AI readiness among medical students, indicating that technology affinity alone does not determine preparedness for AI integration <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[8]</a>. These findings underscore the importance of both foundational principles and tailored educational approaches for effective adoption of AI in medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[15]</a>.</p>
+<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Principles for medical students&#x27; responsible use of generative AI: a student-partnered Delphi study</a>
+    <p class="news-card-summary">Delphi study with student partners identifies principles for responsible generative AI use in medical education.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 3, 2026</span></div>
@@ -69,6 +76,13 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study</a>
+    <p class="news-card-summary">Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.01440">FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning</a>
     <p class="news-card-summary">FaithMed trains language models to produce faithful evidence-based medical reasoning by grounding outputs in cited medical knowledge.</p>
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Awareness, Educational Needs, and Curriculum Preferences Regarding AI and Medical Big Data Education Among Clinical Medicine Undergraduates: Cross-Sectional Survey Study</a>
     <p class="news-card-summary">Survey of clinical medicine undergraduates reveals limited AI familiarity and identifies curriculum needs and student preferences for AI and medical big data education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42389691?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Artificial intelligence in veterinary education: self-perceived knowledge, use, and attitudes among veterinary students in Spain and Portugal</a>
-    <p class="news-card-summary">Survey of veterinary students in Spain and Portugal assesses self-perceived knowledge, use, and attitudes toward AI and generative AI in veterinary education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42388626?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Knowledge localization is associated with higher performance of domestic large language models in a Chinese radiation oncology examination</a>
-    <p class="news-card-summary">Study demonstrates that large language models with domain-specific knowledge localization outperform standard models on Chinese radiation oncology board examination questions.</p>
   </div>
 </div>
 </div>

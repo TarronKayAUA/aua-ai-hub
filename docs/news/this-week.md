@@ -11,11 +11,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>FaithMed’s effort to train large language models for faithful, evidence-based medical reasoning centers on grounding outputs directly in cited medical sources, addressing concerns about the reliability of AI-generated conclusions in medical education <a href="https://arxiv.org/abs/2607.01440">[8]</a>. Meanwhile, the practical relevance index framework offers guidance for designing laboratory sessions that effectively teach artificial intelligence concepts to medical students, emphasizing applicability in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[6]</a>. Cross-sectional studies reveal that while medical students display positive attitudes toward AI, gaps remain in practical application skills and readiness, with personality traits playing a more significant role in preparedness than technology affinity <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[7]</a>. Frameworks and targeted curricula are increasingly needed as students report limited familiarity with AI and its integration into medical big data education <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[13]</a>.</p>
-<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
+<p>A student-partnered Delphi study has proposed guiding principles for medical students&#x27; responsible use of generative artificial intelligence in medical education, highlighting a need for structured standards as AI technologies become increasingly prevalent <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Concurrently, medical students in Vietnam show favorable knowledge and positive attitudes toward AI, though practical skills remain limited, suggesting gaps between awareness and implementation <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[3]</a>. A multinational study finds that personality traits independently predict AI readiness among medical students, indicating that technology affinity alone does not determine preparedness for AI integration <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[8]</a>. These findings underscore the importance of both foundational principles and tailored educational approaches for effective adoption of AI in medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[15]</a>.</p>
+<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Principles for medical students&#x27; responsible use of generative AI: a student-partnered Delphi study</a>
+    <p class="news-card-summary">Delphi study with student partners identifies principles for responsible generative AI use in medical education.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 3, 2026</span></div>
@@ -63,6 +70,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Personality traits, technology affinity, and artificial intelligence readiness in medical students: a multinational cross-sectional study</a>
     <p class="news-card-summary">Personality traits independently predict AI readiness in medical students across multiple countries, more so than technology affinity.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study</a>
+    <p class="news-card-summary">Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.</p>
   </div>
 </div>
 <div class="news-card">
@@ -309,11 +323,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Large language models are now being implemented in real-world clinical settings to generate discharge summaries inside secure data environments, marking a practical step forward in hospital documentation <a href="https://ai.jmir.org/2026/1/e88816">[1]</a>. Meanwhile, the complexities of clinical decision-making are highlighted by ongoing divergence between physician assessments and AI evaluations in clinical reasoning tasks, which may temper expectations for rapid health AI adoption <a href="https://www.nature.com/articles/s41746-026-02942-6">[13]</a>. Articles caution that strong benchmark scores for AI models do not guarantee clinical readiness, raising concerns about overreliance on automated systems <a href="https://www.nature.com/articles/s41591-026-04500-9">[14]</a>. Ambient AI scribes continue to influence documentation burden and workflow in emergency departments, especially in high-burnout environments <a href="https://ai.jmir.org/2026/1/e92193">[10]</a>. Ethical questions surrounding patient autonomy and consent are emerging as ambient clinical AI systems grow increasingly prevalent <a href="https://www.nature.com/articles/s41746-026-02973-z">[9]</a>.</p>
-<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the source items.</p>
+<p>Deep learning models are advancing predictive capabilities in clinical practice, notably with risk prediction for type 2 diabetes from chest X-rays validated in an ethnically diverse population <a href="https://ai.jmir.org/2026/1/e85248">[3]</a>. Generalizable artificial intelligence tools such as COMPASS have been shown to predict immunotherapy outcomes across different cancers and treatments, supporting outcome forecasting across broad patient groups <a href="https://www.nature.com/articles/s41591-026-04502-7">[8]</a>. Large language models are also being implemented in secure hospital environments to generate clinical discharge summaries, reflecting integration of AI in routine documentation workflows <a href="https://ai.jmir.org/2026/1/e88816">[2]</a>. The ethics of ambient clinical AI systems-including impacts on patient autonomy and consent-are drawing increased scrutiny from medical professionals and policymakers <a href="https://www.nature.com/articles/s41746-026-02973-z">[10]</a>.</p>
+<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02959-x">Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction</a>
+    <p class="news-card-summary">Study reports implementation and validation of conversational AI for preparing patients before medical procedures and measures patient satisfaction.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
@@ -375,6 +396,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02973-z">The ethics of listening walls: patient autonomy and consent in the age of ambient clinical AI</a>
     <p class="news-card-summary">Ethics perspective on ambient clinical artificial intelligence systems and their implications for patient autonomy and informed consent.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02947-1">Predicting response to neoadjuvant therapy using artificial intelligence on digitized histopathology slides: a systematic review</a>
+    <p class="news-card-summary">Systematic review of artificial intelligence methods for predicting treatment response from digitized histopathology slides.</p>
   </div>
 </div>
 <div class="news-card">

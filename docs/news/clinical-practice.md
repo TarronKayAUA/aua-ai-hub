@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models are now being implemented in real-world clinical settings to generate discharge summaries inside secure data environments, marking a practical step forward in hospital documentation <a href="https://ai.jmir.org/2026/1/e88816">[1]</a>. Meanwhile, the complexities of clinical decision-making are highlighted by ongoing divergence between physician assessments and AI evaluations in clinical reasoning tasks, which may temper expectations for rapid health AI adoption <a href="https://www.nature.com/articles/s41746-026-02942-6">[13]</a>. Articles caution that strong benchmark scores for AI models do not guarantee clinical readiness, raising concerns about overreliance on automated systems <a href="https://www.nature.com/articles/s41591-026-04500-9">[14]</a>. Ambient AI scribes continue to influence documentation burden and workflow in emergency departments, especially in high-burnout environments <a href="https://ai.jmir.org/2026/1/e92193">[10]</a>. Ethical questions surrounding patient autonomy and consent are emerging as ambient clinical AI systems grow increasingly prevalent <a href="https://www.nature.com/articles/s41746-026-02973-z">[9]</a>.</p>
-<p class="section-brief-date">The picture as of July 3, 2026; numbered links go to the items below.</p>
+<p>Deep learning models are advancing predictive capabilities in clinical practice, notably with risk prediction for type 2 diabetes from chest X-rays validated in an ethnically diverse population <a href="https://ai.jmir.org/2026/1/e85248">[3]</a>. Generalizable artificial intelligence tools such as COMPASS have been shown to predict immunotherapy outcomes across different cancers and treatments, supporting outcome forecasting across broad patient groups <a href="https://www.nature.com/articles/s41591-026-04502-7">[8]</a>. Large language models are also being implemented in secure hospital environments to generate clinical discharge summaries, reflecting integration of AI in routine documentation workflows <a href="https://ai.jmir.org/2026/1/e88816">[2]</a>. The ethics of ambient clinical AI systems-including impacts on patient autonomy and consent-are drawing increased scrutiny from medical professionals and policymakers <a href="https://www.nature.com/articles/s41746-026-02973-z">[10]</a>.</p>
+<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02959-x">Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction</a>
+    <p class="news-card-summary">Study reports implementation and validation of conversational AI for preparing patients before medical procedures and measures patient satisfaction.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
@@ -83,6 +90,13 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02947-1">Predicting response to neoadjuvant therapy using artificial intelligence on digitized histopathology slides: a systematic review</a>
+    <p class="news-card-summary">Systematic review of artificial intelligence methods for predicting treatment response from digitized histopathology slides.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92193">Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study</a>
     <p class="news-card-summary">Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.</p>
@@ -107,21 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02942-6">Physicians and artificial intelligence diverge in evaluating large language models on real clinical cases</a>
     <p class="news-card-summary">Study finds divergence between physician and AI model evaluations on clinical reasoning tasks, raising questions about readiness for health AI deployment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04500-9">Why high scores do not mean application readiness for health AI</a>
-    <p class="news-card-summary">Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04500-9/MediaObjects/41591_2026_4500_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02943-5">KGRD: a knowledge-graph-augmented automated reasoning framework for diagnosis and counselling of paediatric rare genetic disorders</a>
-    <p class="news-card-summary">Knowledge-graph-augmented automated reasoning framework for diagnosis and counseling of pediatric rare genetic disorders published in npj Digital Medicine.</p>
   </div>
 </div>
 </div>
