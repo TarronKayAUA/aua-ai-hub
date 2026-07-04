@@ -11,7 +11,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A student-partnered Delphi study has proposed guiding principles for medical students&#x27; responsible use of generative artificial intelligence in medical education, highlighting a need for structured standards as AI technologies become increasingly prevalent <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Concurrently, medical students in Vietnam show favorable knowledge and positive attitudes toward AI, though practical skills remain limited, suggesting gaps between awareness and implementation <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[3]</a>. A multinational study finds that personality traits independently predict AI readiness among medical students, indicating that technology affinity alone does not determine preparedness for AI integration <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[8]</a>. These findings underscore the importance of both foundational principles and tailored educational approaches for effective adoption of AI in medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[15]</a>.</p>
+<p>The identification of principles for medical students’ responsible use of generative artificial intelligence, informed by a Delphi study with student partners, is shaping best practices and ethical standards in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Evaluations comparing generative AI’s anatomical accuracy to cadaveric dissection and atlases raise questions about the reliability of AI-generated images as instructional tools <a href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">[2]</a>. Meanwhile, combining human researchers with large language models in multi-module pipelines is being assessed for the thematic analysis of qualitative health data, directly impacting research methodologies <a href="https://medinform.jmir.org/2026/1/e96129">[3]</a>. Medical students’ positive knowledge and attitudes toward AI are accompanied by limited practical skills, highlighting a need for targeted skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[4]</a>. Personality traits, more than technology affinity, are found to predict readiness for AI integration among medical students internationally <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -21,6 +21,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Principles for medical students&#x27; responsible use of generative AI: a student-partnered Delphi study</a>
     <p class="news-card-summary">Delphi study with student partners identifies principles for responsible generative AI use in medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation</a>
+    <p class="news-card-summary">Study evaluates anatomical accuracy of text-to-image generative AI models compared to cadaveric dissection and professional atlases for medical education.</p>
   </div>
 </div>
 <div class="news-card">
@@ -285,37 +292,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363535?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Large language models in radiology exams: A cross-sectional comparative analysis of performance in Turkish and English</a>
-    <p class="news-card-summary">Cross-sectional analysis of large language model performance on radiology exam questions in Turkish and English languages.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363443?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">Comparative evaluation of radiological anatomy knowledge and accuracy of ChatGPT-5, Gemini 2.5, and Grok 4 across normal and thinking modes</a>
-    <p class="news-card-summary">Comparative evaluation of ChatGPT-5, Gemini 2.5, and Grok 4 performance on radiological anatomy knowledge with standard and extended thinking modes.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Methodological Considerations in Evaluating Large Language Models for Anatomy Education</a>
     <p class="news-card-summary">Study examines methodological issues in evaluating large language models for anatomy education, relevant to rigorous AI assessment in medical curricula.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e86974">Supporting Radiology Resident Education and Clinical Decision-Making With Large Language Models: Comparative Study of Reasoning Models DeepSeek-R1 and ChatGPT-o1</a>
-    <p class="news-card-summary">Study comparing reasoning models for supporting radiology resident education and clinical decision-making with large language models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/7e0f19bead3613bae49a99c49ae44da4.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42361810?fc=20260609215449&amp;ff=20260627075739&amp;v=2.20.0">The Avatar Advantage: AI-Powered Faculty Development to Enhance Feedback Delivery Skills</a>
-    <p class="news-card-summary">Study demonstrates AI-powered avatars provide reliable and consistent feedback delivery for faculty development in teaching skills.</p>
   </div>
 </div>
 </div>
@@ -527,14 +505,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">AI system classifies interstitial lung disease patterns on high-resolution CT and assists less-experienced radiologists in pattern recognition.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87450">Selecting, Scaling, and Measuring the Value of Ambient AI in a Nonacademic Health System: Multiphase Pilot Study</a>
-    <p class="news-card-summary">Multiphase pilot study of implementing and measuring the clinical and financial value of ambient AI in a regional health system.</p>
-  </div>
-  <img class="news-card-thumb" src="https://asset.jmir.pub/assets/d7c5d376154c2e1c6e7f2101efc740ea.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ## General AI
@@ -679,22 +649,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <a class="news-card-title" href="https://arxiv.org/abs/2606.27786">SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation</a>
     <p class="news-card-summary">SHIFT method uses gate-modulated activation steering to resolve knowledge conflicts in retrieval-augmented generation systems.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 27, 2026</span></div>
-    <a class="news-card-title" href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">DSpark: Speculative decoding accelerates LLM inference [pdf]</a>
-    <p class="news-card-summary">DeepSeek&#x27;s DSpark method uses speculative decoding to accelerate large language model inference speed.</p>
-  </div>
-  <img class="news-card-thumb" src="https://opengraph.githubassets.com/ea272ca2bbf5c56f91240ee0fc4892bb5800442ef3a5c96fb0ed556503386540/deepseek-ai/DeepSpec" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 26, 2026</span></div>
-    <a class="news-card-title" href="https://openai.com/index/previewing-gpt-5-6-sol">Previewing GPT‑5.6 Sol: a next-generation model</a>
-    <p class="news-card-summary">OpenAI releases system card and preview for GPT-5.6 Sol, a next-generation large language model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/48XpR5dxhE6jJQ03HTUnWZ/ac68fbfb7761fa72ac7442c6744dba56/_.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
 

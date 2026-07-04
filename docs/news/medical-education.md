@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A student-partnered Delphi study has proposed guiding principles for medical students&#x27; responsible use of generative artificial intelligence in medical education, highlighting a need for structured standards as AI technologies become increasingly prevalent <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Concurrently, medical students in Vietnam show favorable knowledge and positive attitudes toward AI, though practical skills remain limited, suggesting gaps between awareness and implementation <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[3]</a>. A multinational study finds that personality traits independently predict AI readiness among medical students, indicating that technology affinity alone does not determine preparedness for AI integration <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[8]</a>. These findings underscore the importance of both foundational principles and tailored educational approaches for effective adoption of AI in medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">[15]</a>.</p>
+<p>The identification of principles for medical students’ responsible use of generative artificial intelligence, informed by a Delphi study with student partners, is shaping best practices and ethical standards in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Evaluations comparing generative AI’s anatomical accuracy to cadaveric dissection and atlases raise questions about the reliability of AI-generated images as instructional tools <a href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">[2]</a>. Meanwhile, combining human researchers with large language models in multi-module pipelines is being assessed for the thematic analysis of qualitative health data, directly impacting research methodologies <a href="https://medinform.jmir.org/2026/1/e96129">[3]</a>. Medical students’ positive knowledge and attitudes toward AI are accompanied by limited practical skills, highlighting a need for targeted skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[4]</a>. Personality traits, more than technology affinity, are found to predict readiness for AI integration among medical students internationally <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -23,6 +23,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Principles for medical students&#x27; responsible use of generative AI: a student-partnered Delphi study</a>
     <p class="news-card-summary">Delphi study with student partners identifies principles for responsible generative AI use in medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation</a>
+    <p class="news-card-summary">Study evaluates anatomical accuracy of text-to-image generative AI models compared to cadaveric dissection and professional atlases for medical education.</p>
   </div>
 </div>
 <div class="news-card">
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e86569">Voice Cloning Using AI vs Traditional Audio Recording for Prerecorded Courses in Medical Pedagogy: Randomized Controlled Trial</a>
     <p class="news-card-summary">Randomized controlled trial compares voice-cloned versus traditionally recorded audio for prerecorded medical courses, evaluating learning outcomes and student perception.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Awareness, Educational Needs, and Curriculum Preferences Regarding AI and Medical Big Data Education Among Clinical Medicine Undergraduates: Cross-Sectional Survey Study</a>
-    <p class="news-card-summary">Survey of clinical medicine undergraduates reveals limited AI familiarity and identifies curriculum needs and student preferences for AI and medical big data education.</p>
   </div>
 </div>
 </div>
