@@ -978,25 +978,37 @@ LAST_ANTHROPIC_USAGE: dict = {}
 
 
 def call_anthropic(system: str, user: str, cfg: dict, timeout: int) -> str:
-    resp = requests.post(
-        cfg["endpoint"],
-        headers={
-            "x-api-key": os.environ["ANTHROPIC_API_KEY"],
-            "anthropic-version": cfg["api_version"],
-            "content-type": "application/json",
-        },
-        json={
-            "model": cfg["model"],
-            "max_tokens": 4000,
-            "system": system,
-            "messages": [{"role": "user", "content": user}],
-        },
-        timeout=timeout,
-    )
+    headers = {
+        "x-api-key": os.environ["ANTHROPIC_API_KEY"],
+        "anthropic-version": cfg["api_version"],
+        "content-type": "application/json",
+    }
+    body = {
+        "model": cfg["model"],
+        "max_tokens": int(cfg.get("max_tokens", 4000)),
+        "system": system,
+        "messages": [{"role": "user", "content": user}],
+    }
+    # Fable-class models: safety classifiers can decline a benign-adjacent
+    # request (stop_reason "refusal"); the server-side fallback re-serves
+    # the call on the named fallback model inside the same request, so the
+    # weekly artifact still ships. Configured per task in feeds.yaml.
+    if cfg.get("fallback_model"):
+        headers["anthropic-beta"] = "server-side-fallback-2026-06-01"
+        body["fallbacks"] = [{"model": cfg["fallback_model"]}]
+    resp = requests.post(cfg["endpoint"], headers=headers, json=body,
+                         timeout=timeout)
     resp.raise_for_status()
     data = resp.json()
     LAST_ANTHROPIC_USAGE.clear()
     LAST_ANTHROPIC_USAGE.update(data.get("usage") or {})
+    if data.get("stop_reason") == "refusal":
+        # Double refusal (primary and fallback both declined) or no
+        # fallback configured: return empty so the caller's validator and
+        # retry machinery treat it as a rejected draft, never as content.
+        return ""
+    # Join text blocks only: thinking-enabled models (always-on for
+    # Fable-class) prepend thinking blocks that must not reach the page.
     return "".join(
         b["text"] for b in data["content"] if b.get("type") == "text")
 
@@ -1035,8 +1047,9 @@ def resolve_task_llm(config: dict, task: str):
     if (spec.get("provider") == "anthropic"
             and os.environ.get("ANTHROPIC_API_KEY")):
         cfg = dict(llm_cfg["anthropic"])
-        if spec.get("model"):
-            cfg["model"] = spec["model"]
+        for key in ("model", "fallback_model", "max_tokens"):
+            if spec.get(key):
+                cfg[key] = spec[key]
         return "anthropic", call_anthropic, cfg
     if os.environ.get("GITHUB_TOKEN"):
         return "github_models", call_github_models, dict(llm_cfg["github_models"])

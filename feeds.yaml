@@ -67,13 +67,24 @@ llm:
     content_verify:
       provider: anthropic
       model: claude-haiku-4-5
+    # Weekly digest narrative: owner editorial decision 2026-07-04, made
+    # knowing the benchmark picture (LiveBench has Opus 4.8 slightly ahead
+    # globally): Fable 5 writes denser short-form prose, and Opus's
+    # tendency to expound works against a 320-word ceiling. One call per
+    # week, ~13 cents on Fable vs ~6 on Opus. Fable's safety layer can
+    # rarely refuse; the fallback re-serves the same call on Opus 4.8
+    # in-request (a rescued call bills at Opus rates, so the cost line
+    # slightly overstates that week). max_tokens is raised because
+    # Fable's always-on thinking shares the output budget.
     digest_narrative:
       provider: anthropic
-      model: claude-opus-4-8
+      model: claude-fable-5
+      fallback_model: claude-opus-4-8
+      max_tokens: 8000
       # List prices for the cost line in the verification block (USD per
-      # million tokens, verified against Anthropic pricing 2026-06-11).
-      usd_per_m_input: 5
-      usd_per_m_output: 25
+      # million tokens, verified against the live pricing docs 2026-07-04).
+      usd_per_m_input: 10
+      usd_per_m_output: 50
   # Section briefs: one short narrative per news category page, regenerated
   # only when that page's item set changes. Three small calls at most per
   # night, so they ride the strongest free GitHub Models entry (high tier,
