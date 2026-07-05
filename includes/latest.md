@@ -3,5 +3,5 @@
 - [google/tabfm-1.0.0](https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100) (r/LocalLLaMA weekly top, July 4, 2026)
 - [Principles for medical students' responsible use of generative AI: a student-partnered Delphi study](https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&ff=20260704051042&v=2.20.0) (PubMed AI in medical education, July 4, 2026)
 - [Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation](https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&ff=20260704114920&v=2.20.0) (PubMed AI in medical education, July 4, 2026)
-- [Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction](https://www.nature.com/articles/s41746-026-02959-x) (npj Digital Medicine, July 4, 2026)
-- [Explainable foundation model for dementia screening and risk stratification using retinal fundus images](https://www.nature.com/articles/s41746-026-02968-w) (npj Digital Medicine, July 4, 2026)
+- [Precise ECG diagnosis and validation of educational utility for acute myocardial infarction using deep learning and explainable artificial intelligence](https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&ff=20260705055257&v=2.20.0) (PubMed AI in medical education, July 4, 2026)
+- [Familiar but unprepared: Artificial intelligence training needs in graduate medical education](https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&ff=20260705055257&v=2.20.0) (PubMed AI in medical education, July 4, 2026)

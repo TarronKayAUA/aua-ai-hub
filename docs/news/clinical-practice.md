@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models are being used to generate clinical discharge summaries within secure hospital environments, indicating practical advances in medical documentation <a href="https://ai.jmir.org/2026/1/e88816">[4]</a>. AI applications extend to predicting the risk of type 2 diabetes from chest X-ray images in diverse populations through validated deep learning models <a href="https://ai.jmir.org/2026/1/e85248">[5]</a>. A foundation model leveraging retinal fundus images provides explainable screening and risk stratification for dementia, highlighting developments in diagnostic support <a href="https://www.nature.com/articles/s41746-026-02968-w">[2]</a>. Ethical concerns are raised about large language model research on public biosignals data, with calls for improved patient privacy safeguards <a href="https://www.nature.com/articles/s41746-026-02872-3">[3]</a>. Ambient AI scribes are evaluated for their impact on emergency department documentation burden and clinician workload <a href="https://ai.jmir.org/2026/1/e92193">[14]</a>.</p>
-<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
+<p>A foundation model using retinal fundus images has enabled explainable screening and risk stratification for dementia, offering new clinical decision support tools for practitioners <a href="https://www.nature.com/articles/s41746-026-02968-w">[3]</a>. In hospital documentation, large language models are being implemented securely to generate discharge summaries evaluated by experts for quality and accuracy <a href="https://ai.jmir.org/2026/1/e88816">[5]</a>. The real-world use of ambient AI scribes in emergency departments is being examined for its potential to reduce documentation burden in high-burnout clinical environments <a href="https://ai.jmir.org/2026/1/e92193">[15]</a>. Ethical considerations around ambient AI, including patient autonomy and consent, are also highlighted as integral to the deployment of clinical artificial intelligence systems <a href="https://www.nature.com/articles/s41746-026-02973-z">[13]</a>.</p>
+<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Precise ECG diagnosis and validation of educational utility for acute myocardial infarction using deep learning and explainable artificial intelligence</a>
+    <p class="news-card-summary">Deep learning system for electrocardiogram analysis demonstrates improved diagnostic accuracy for acute myocardial infarction with explainable outputs.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92193">Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study</a>
     <p class="news-card-summary">Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81445">Clinician Perspectives on Ambient AI Scribes in the Intensive Care Unit: Qualitative Interview Study</a>
-    <p class="news-card-summary">Qualitative interview study explores intensive care unit clinician perspectives on ambient AI scribes for documentation and team communication support.</p>
   </div>
 </div>
 </div>

@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>The identification of principles for medical students’ responsible use of generative artificial intelligence, informed by a Delphi study with student partners, is shaping best practices and ethical standards in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Evaluations comparing generative AI’s anatomical accuracy to cadaveric dissection and atlases raise questions about the reliability of AI-generated images as instructional tools <a href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">[2]</a>. Meanwhile, combining human researchers with large language models in multi-module pipelines is being assessed for the thematic analysis of qualitative health data, directly impacting research methodologies <a href="https://medinform.jmir.org/2026/1/e96129">[3]</a>. Medical students’ positive knowledge and attitudes toward AI are accompanied by limited practical skills, highlighting a need for targeted skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[4]</a>. Personality traits, more than technology affinity, are found to predict readiness for AI integration among medical students internationally <a href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[9]</a>.</p>
-<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
+<p>A national survey indicates that nearly all Canadian medical students are using large language models, with students expressing generally positive perceptions about their impact on education <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[4]</a>. Despite this widespread adoption, graduate medical trainees are exposed to artificial intelligence but lack structured training, highlighting a significant gap in preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[3]</a>. Attempts to define principles for responsible generative AI use through student-partnered Delphi studies are underway, aiming to guide educators and learners <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Additionally, the anatomical fidelity of text-to-image generative AI models is being assessed against traditional methods, addressing quality concerns in educational resources <a href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">[2]</a>.</p>
+<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -30,6 +30,20 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation</a>
     <p class="news-card-summary">Study evaluates anatomical accuracy of text-to-image generative AI models compared to cadaveric dissection and professional atlases for medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Familiar but unprepared: Artificial intelligence training needs in graduate medical education</a>
+    <p class="news-card-summary">Survey finds graduate medical education trainees have high artificial intelligence exposure but lack formal training in the field.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Medical students&#x27; use of large language models: a national survey</a>
+    <p class="news-card-summary">National survey documents nearly universal large language model adoption among Canadian medical students with generally positive student perceptions.</p>
   </div>
 </div>
 <div class="news-card">
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87897">Digital Simulation, Based Ultrasound Training for Physiotherapy Students: Prospective Randomized Controlled Trial</a>
     <p class="news-card-summary">Prospective randomized controlled trial of digital simulation-based ultrasound training for physiotherapy students compared to traditional on-site methods.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e85666">Exploring Ambient Artificial Intelligence to Enhance Learning and Feedback During Operating Room-to-Intensive Care Unit Handoffs: Co-Design and Simulation Study</a>
-    <p class="news-card-summary">Co-design study explores use of ambient AI to enhance learning and feedback during operating room-to-intensive care unit clinical handoffs.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e86569">Voice Cloning Using AI vs Traditional Audio Recording for Prerecorded Courses in Medical Pedagogy: Randomized Controlled Trial</a>
-    <p class="news-card-summary">Randomized controlled trial compares voice-cloned versus traditionally recorded audio for prerecorded medical courses, evaluating learning outcomes and student perception.</p>
   </div>
 </div>
 </div>
