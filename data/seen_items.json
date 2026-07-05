@@ -12033,6 +12033,27 @@
    "first_seen": "2026-07-05T09:52:57.058655+00:00",
    "kept": false,
    "reason": "title uses shock phrasing and gossip framing; content appears to be reaction recap rather than substantive explanation or hands-on test"
+  },
+  {
+   "url": "https://dthain.github.io/books/compiler",
+   "title_hash": "a336c77457c0df655106f2603b075277",
+   "first_seen": "2026-07-05T16:18:01.774492+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1ItQnh3LWeg",
+   "title_hash": "2c630bec6c2907292bfdcedfa13f9b16",
+   "first_seen": "2026-07-05T16:18:01.774492+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Job-Positions-of-the-AI-Future-e3lm4ub",
+   "title_hash": "79a61ca7ae45417aa63f57fcbd019220",
+   "first_seen": "2026-07-05T16:18:01.774492+00:00",
+   "kept": false,
+   "reason": "opinion piece with no new information"
   }
  ],
  "digests": [

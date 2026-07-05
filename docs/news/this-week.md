@@ -303,13 +303,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Study describes integrating stakeholder input and evidence synthesis into AI-enabled patient decision aids for older adults.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Methodological Considerations in Evaluating Large Language Models for Anatomy Education</a>
-    <p class="news-card-summary">Study examines methodological issues in evaluating large language models for anatomy education, relevant to rigorous AI assessment in medical curricula.</p>
-  </div>
-</div>
 </div>
 
 ## Clinical Practice
@@ -533,13 +526,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Generative artificial intelligence system translates frozen section pathology images to standard formalin-fixed paraffin-embedded format for skin cancer margin assessment.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&amp;ff=20260628080852&amp;v=2.20.0">Interstitial lung disease pattern recognition on full high resolution computed tomography volume: Development and evaluation of a decision-support tool for less-experimented radiologists</a>
-    <p class="news-card-summary">AI system classifies interstitial lung disease patterns on high-resolution CT and assists less-experienced radiologists in pattern recognition.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
@@ -727,12 +713,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?</span>
   <span class="video-card-meta">Bijan Bowen, June 29, 2026</span>
   <span class="video-card-desc">Benchmark comparison of GLM-5.2 and Claude Opus 4.8 across multiple test scenarios.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
-  <span class="video-card-title">The Promptware Kill Chain: How Prompt Injection Becomes AI Malware</span>
-  <span class="video-card-meta">IBM Technology, June 28, 2026</span>
-  <span class="video-card-desc">IBM Security explains prompt injection attacks and how they can be weaponized as AI malware, covering attack methods and defenses.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=_pkjyDSwO7I" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/_pkjyDSwO7I/hqdefault.jpg" alt="Video: MedAI #162: Clinical Environment Simulator | Luyang Luo" loading="lazy">
