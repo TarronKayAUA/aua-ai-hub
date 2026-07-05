@@ -12054,6 +12054,26 @@
    "first_seen": "2026-07-05T16:18:01.774492+00:00",
    "kept": false,
    "reason": "opinion piece with no new information"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unyvnz/longcat_20_16t_48b_active_weights_are_now_open",
+   "title_hash": "e46899a7938e2dcb6b8146f981a45c65",
+   "first_seen": "2026-07-05T20:33:37.156548+00:00",
+   "kept": true,
+   "title": "longcat 2.0 (1.6T, ~48B active) weights are now open under MIT license",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-05T10:35:23+00:00",
+   "summary": "Longcat 2.0, a 48-billion-parameter open-weights model, is released under MIT license.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/Tl4T00m03mXi9dnysuPMT3ZoHlKwgeMAyvE7uTJqM4o.png?width=640&crop=smart&auto=webp&s=13c43b98a88d05ab28ba5000aec6daa339a442bf"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42402141?fc=20260609215449&ff=20260705163337&v=2.20.0",
+   "title_hash": "eb51062ce28b03ff0957f46544aa8acf",
+   "first_seen": "2026-07-05T20:33:37.156548+00:00",
+   "kept": false,
+   "reason": "abstract fragment; full peer-reviewed findings not evaluable from provided text"
   }
  ],
  "digests": [
@@ -12186,9 +12206,9 @@
    "date": "July 5, 2026"
   },
   "general_ai": {
-   "text": "US regulators have cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations that removed prior export restrictions, highlighting ongoing scrutiny of large language model deployments <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. The IsoSci benchmark has been introduced to gauge whether such models rely on genuine reasoning or simple knowledge retrieval when solving cross-domain science problems, offering a new lens for evaluating model capabilities <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a>. Meanwhile, Google attributed a 37 percent increase in electricity usage to its expansive AI infrastructure buildout in 2025, emphasizing challenges in balancing environmental impact with technical advancement <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. Model robustness is further being examined with the LoFa benchmark, which targets logical fallacy resistance in reasoning tasks <a href=\"https://arxiv.org/abs/2606.31039\">[5]</a>.",
-   "hash": "c4b8b483bcaec046",
-   "date": "July 4, 2026"
+   "text": "Anthropic’s Fable and Mythos AI models have received global clearance by US regulators following safety testing, marking a notable shift in international AI deployment and lifting previous export restrictions <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. Meanwhile, increased infrastructure investment for large language models continues to raise sustainability questions as Google reported a 37 percent increase in electricity usage driven by its AI expansion and ongoing clean energy efforts <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. Researchers are actively improving large model reasoning and reliability, with benchmarks like IsoSci assessing reasoning versus knowledge retrieval in science problems <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a> and LoFa challenging models’ robustness against logical fallacies <a href=\"https://arxiv.org/abs/2606.31039\">[5]</a>; token-level hallucination detection has also advanced, as demonstrated by the new CORTEX approach for retrieval-augmented generation <a href=\"https://arxiv.org/abs/2606.31033\">[4]</a>.",
+   "hash": "e7adb5a94b3b20a4",
+   "date": "July 5, 2026"
   }
  }
 }

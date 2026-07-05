@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>US regulators have cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations that removed prior export restrictions, highlighting ongoing scrutiny of large language model deployments <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. The IsoSci benchmark has been introduced to gauge whether such models rely on genuine reasoning or simple knowledge retrieval when solving cross-domain science problems, offering a new lens for evaluating model capabilities <a href="https://arxiv.org/abs/2607.01431">[1]</a>. Meanwhile, Google attributed a 37 percent increase in electricity usage to its expansive AI infrastructure buildout in 2025, emphasizing challenges in balancing environmental impact with technical advancement <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Model robustness is further being examined with the LoFa benchmark, which targets logical fallacy resistance in reasoning tasks <a href="https://arxiv.org/abs/2606.31039">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 4, 2026; numbered links go to the items below.</p>
+<p>Anthropic’s Fable and Mythos AI models have received global clearance by US regulators following safety testing, marking a notable shift in international AI deployment and lifting previous export restrictions <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Meanwhile, increased infrastructure investment for large language models continues to raise sustainability questions as Google reported a 37 percent increase in electricity usage driven by its AI expansion and ongoing clean energy efforts <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Researchers are actively improving large model reasoning and reliability, with benchmarks like IsoSci assessing reasoning versus knowledge retrieval in science problems <a href="https://arxiv.org/abs/2607.01431">[1]</a> and LoFa challenging models’ robustness against logical fallacies <a href="https://arxiv.org/abs/2606.31039">[5]</a>; token-level hallucination detection has also advanced, as demonstrated by the new CORTEX approach for retrieval-augmented generation <a href="https://arxiv.org/abs/2606.31033">[4]</a>.</p>
+<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unyvnz/longcat_20_16t_48b_active_weights_are_now_open">longcat 2.0 (1.6T, ~48B active) weights are now open under MIT license</a>
+    <p class="news-card-summary">Longcat 2.0, a 48-billion-parameter open-weights model, is released under MIT license.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/Tl4T00m03mXi9dnysuPMT3ZoHlKwgeMAyvE7uTJqM4o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=13c43b98a88d05ab28ba5000aec6daa339a442bf" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 4, 2026</span></div>
@@ -124,13 +132,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">LongCat-2.0 is a large open-weights mixture-of-experts model with 1.6 trillion total parameters and 48 billion active per token.</p>
   </div>
   <img class="news-card-thumb" src="https://s3plus.meituan.net/aigc-media-resources/longcat/big-cat-logo.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/allenai/discoformer">DiScoFormer: One transformer for density and score, across distributions</a>
-    <p class="news-card-summary">DiScoFormer uses a single transformer architecture to learn both density and score functions across multiple probability distributions.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/AnOX0pzQm-Hep_CLFOVM7.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
