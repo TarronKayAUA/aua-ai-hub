@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic’s Fable and Mythos AI models have received global clearance by US regulators following safety testing, marking a notable shift in international AI deployment and lifting previous export restrictions <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Meanwhile, increased infrastructure investment for large language models continues to raise sustainability questions as Google reported a 37 percent increase in electricity usage driven by its AI expansion and ongoing clean energy efforts <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Researchers are actively improving large model reasoning and reliability, with benchmarks like IsoSci assessing reasoning versus knowledge retrieval in science problems <a href="https://arxiv.org/abs/2607.01431">[1]</a> and LoFa challenging models’ robustness against logical fallacies <a href="https://arxiv.org/abs/2606.31039">[5]</a>; token-level hallucination detection has also advanced, as demonstrated by the new CORTEX approach for retrieval-augmented generation <a href="https://arxiv.org/abs/2606.31033">[4]</a>.</p>
-<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the items below.</p>
+<p>US regulators have cleared Anthropic&#x27;s Fable and Mythos artificial intelligence models for worldwide deployment after safety testing, removing prior export restrictions and marking an important shift in global accessibility for advanced AI systems <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Concurrently, Google&#x27;s expansion of AI infrastructure contributed to a 37 percent rise in electricity consumption in 2025, highlighting energy demands that accompany technological progress and ongoing efforts to balance emissions with clean energy sources <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. On the technical front, new benchmarks such as IsoSci now evaluate whether large language models demonstrate genuine reasoning or rely on knowledge retrieval when solving cross-domain science problems <a href="https://arxiv.org/abs/2607.01431">[1]</a>.</p>
+<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uoozt4/new_open_model_from_tencent_hy_hy3_295b_total_21b">New open model from Tencent Hy: Hy3 (295B total 21B active - apache 2.0)</a>
+    <p class="news-card-summary">Tencent releases Hy3, an open-weight 295-billion-parameter model with 21-billion active parameters under Apache 2.0 license.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/CkiY6sxiegNB9XeJzbgeatsW70zO1W7TkruSJDZ22s8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=38ea195e9d5b3ec7d9ec35718ee6a1aa4e413114" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
@@ -25,6 +33,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Longcat 2.0, a 48-billion-parameter open-weights model, is released under MIT license.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/Tl4T00m03mXi9dnysuPMT3ZoHlKwgeMAyvE7uTJqM4o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=13c43b98a88d05ab28ba5000aec6daa339a442bf" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to">I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads</a>
+    <p class="news-card-summary">Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.</p>
+  </div>
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -117,20 +132,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Huawei open-sources OpenPangu-2.0-Flash, a 92-billion-parameter model with 6 billion active parameters.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/29tji3noteah1.png?width=140&amp;height=79&amp;auto=webp&amp;s=8e1b8705ac867254bf81d890012ab45ba820cea2" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.28524">Developmental Trajectories of Situation Modeling and Mentalizing in Transformer Language Models</a>
-    <p class="news-card-summary">Preprint analyzes how transformer language models develop situation modeling and mentalizing abilities during training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://longcat.chat/blog/longcat-2.0">LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active</a>
-    <p class="news-card-summary">LongCat-2.0 is a large open-weights mixture-of-experts model with 1.6 trillion total parameters and 48 billion active per token.</p>
-  </div>
-  <img class="news-card-thumb" src="https://s3plus.meituan.net/aigc-media-resources/longcat/big-cat-logo.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

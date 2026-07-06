@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=mIVHFU94Xhc" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg" alt="Video: Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?" loading="lazy">
+  <span class="video-card-title">Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?</span>
+  <span class="video-card-meta">Bijan Bowen, July 6, 2026</span>
+  <span class="video-card-desc">Technical comparison and evaluation of Tencent&#x27;s HY3 model against GLM and DeepSeek competitors.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=y24lF1q4SFY" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/y24lF1q4SFY/hqdefault.jpg" alt="Video: Fable 5 vs GPT 5.6 Sol: The Early Results" loading="lazy">
   <span class="video-card-title">Fable 5 vs GPT 5.6 Sol: The Early Results</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">What Is AI Pair Programming? AI Coding Tools for Developers</span>
   <span class="video-card-meta">IBM Technology, June 15, 2026</span>
   <span class="video-card-desc">Overview of AI pair programming tools and their application to software development workflows.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=gRFhacXrP1s" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/gRFhacXrP1s/hqdefault.jpg" alt="Video: Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!" loading="lazy">
-  <span class="video-card-title">Diffusion Gemma First Look &amp; Demo, A BIG Step for Local AI Models!</span>
-  <span class="video-card-meta">Bijan Bowen, June 14, 2026</span>
-  <span class="video-card-desc">Diffusion Gemma is a new generative image model that runs locally; this video demonstrates its capabilities and technical details for practitioners working with open-weights models.</span>
 </a>
 </div>
 

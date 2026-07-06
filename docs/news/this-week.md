@@ -11,7 +11,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A comprehensive analysis of medical education research from 2000 to 2024 shows a steady movement toward technology and artificial intelligence as central themes <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. Despite widespread exposure among graduate trainees, formal instruction in artificial intelligence remains scarce, highlighting a training gap <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[6]</a>. Medical students nationally now report nearly universal use of large language models, usually viewed positively <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[7]</a>, but there are still significant concerns about issues such as grounding in problem-based learning <a href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[11]</a>. Research also points to the need for explicit governance guidelines tailored to medical education, particularly in regions like Pakistan where frameworks are urgently required <a href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[3]</a>.</p>
+<p>A large-scale analysis of medical education research over the past 24 years shows a steady shift toward technology and artificial intelligence as central themes <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. Despite high exposure to artificial intelligence among graduate medical trainees, formal training remains limited and unaddressed, indicating substantial gaps in preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[8]</a>. Student-driven studies highlight the need for clear principles supporting responsible generative AI use in education <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[6]</a>, while nearly universal adoption of large language models by Canadian medical students points to generally positive perceptions but raises questions regarding the quality and guidance of AI use <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[9]</a>. Additionally, peer-reviewed evaluations suggest generative AI can produce synthetic radiology images suitable for pediatric medical education, reinforcing its growing role in teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -35,6 +35,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan</a>
     <p class="news-card-summary">Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Ars Longa, Data Brevis: the science of disease and the art of care</a>
+    <p class="news-card-summary">Peer-reviewed examination of how artificial intelligence has changed diagnostic and therapeutic approaches in modern medical practice and education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Widely available, general-purpose generative AI applications for radiology education: determining the teaching quality of synthetic pediatric neuroradiology images</a>
+    <p class="news-card-summary">Peer-reviewed study evaluating synthetic pediatric radiology images from general-purpose generative AI for medical education quality.</p>
   </div>
 </div>
 <div class="news-card">
@@ -278,41 +292,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42370260?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Artificial Intelligence Integration in U.S. Healthcare Professional Degree Programs: A Rapid Scoping Review</a>
-    <p class="news-card-summary">Rapid scoping review of artificial intelligence integration across U.S.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42368831?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Building CAR-E: A Novel Artificial Intelligence Agent for Coaching Conversations</a>
-    <p class="news-card-summary">Development of CAR-E, an artificial intelligence agent that enables scalable coaching conversations in medical education settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367557?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Knowledge, Utilization, and Perceptions of Artificial Intelligence in Medical Education Among Preclinical Osteopathic Medical Students and Faculty: A Cross-Sectional Study</a>
-    <p class="news-card-summary">Survey of preclinical osteopathic medical students&#x27; knowledge, use, and perceptions of artificial intelligence and generative large language models in medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367454?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Future-Ready Doctors: A Cross-Sectional Study of Undergraduate Knowledge of Artificial Intelligence in Clinical Biochemistry</a>
-    <p class="news-card-summary">Cross-sectional study of undergraduate medical students&#x27; knowledge of artificial intelligence in clinical biochemistry reveals gaps between awareness and competency.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367417?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">A Study to Assess the Awareness and Attitudes Towards Artificial Intelligence (AI) Tools Among Medical Trainees and Practitioners</a>
-    <p class="news-card-summary">Study of awareness and attitudes toward artificial intelligence tools among medical trainees and practitioners in healthcare settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42373164?fc=20260609215449&amp;ff=20260630092944&amp;v=2.20.0">Integrating Artificial Intelligence into Endoscopy Training</a>
     <p class="news-card-summary">Review addresses practical integration of artificial intelligence into gastrointestinal endoscopy training programs.</p>
   </div>
@@ -547,30 +526,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   </div>
   <img class="news-card-thumb" src="https://asset.jmir.pub/assets/6d96933a42610f3c37be622d536e427d.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42367364?fc=20260609215449&amp;ff=20260629131807&amp;v=2.20.0">Promising performance of locally deployed large language models for postoperative orthopaedic patient questions: An In Silico analysis</a>
-    <p class="news-card-summary">Structured evaluation of locally deployed and commercial large language models for responding to postoperative orthopaedic patient questions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02939-1">Translation of frozen sections into FFPE images for skin cancer resection margins using generative AI</a>
-    <p class="news-card-summary">Generative artificial intelligence system translates frozen section pathology images to standard formalin-fixed paraffin-embedded format for skin cancer margin assessment.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic’s Fable and Mythos AI models have received global clearance by US regulators following safety testing, marking a notable shift in international AI deployment and lifting previous export restrictions <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Meanwhile, increased infrastructure investment for large language models continues to raise sustainability questions as Google reported a 37 percent increase in electricity usage driven by its AI expansion and ongoing clean energy efforts <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. Researchers are actively improving large model reasoning and reliability, with benchmarks like IsoSci assessing reasoning versus knowledge retrieval in science problems <a href="https://arxiv.org/abs/2607.01431">[1]</a> and LoFa challenging models’ robustness against logical fallacies <a href="https://arxiv.org/abs/2606.31039">[5]</a>; token-level hallucination detection has also advanced, as demonstrated by the new CORTEX approach for retrieval-augmented generation <a href="https://arxiv.org/abs/2606.31033">[4]</a>.</p>
-<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the source items.</p>
+<p>US regulators have cleared Anthropic&#x27;s Fable and Mythos artificial intelligence models for worldwide deployment after safety testing, removing prior export restrictions and marking an important shift in global accessibility for advanced AI systems <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Concurrently, Google&#x27;s expansion of AI infrastructure contributed to a 37 percent rise in electricity consumption in 2025, highlighting energy demands that accompany technological progress and ongoing efforts to balance emissions with clean energy sources <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. On the technical front, new benchmarks such as IsoSci now evaluate whether large language models demonstrate genuine reasoning or rely on knowledge retrieval when solving cross-domain science problems <a href="https://arxiv.org/abs/2607.01431">[1]</a>.</p>
+<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uoozt4/new_open_model_from_tencent_hy_hy3_295b_total_21b">New open model from Tencent Hy: Hy3 (295B total 21B active - apache 2.0)</a>
+    <p class="news-card-summary">Tencent releases Hy3, an open-weight 295-billion-parameter model with 21-billion active parameters under Apache 2.0 license.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/CkiY6sxiegNB9XeJzbgeatsW70zO1W7TkruSJDZ22s8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=38ea195e9d5b3ec7d9ec35718ee6a1aa4e413114" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
@@ -578,6 +551,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Longcat 2.0, a 48-billion-parameter open-weights model, is released under MIT license.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/Tl4T00m03mXi9dnysuPMT3ZoHlKwgeMAyvE7uTJqM4o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=13c43b98a88d05ab28ba5000aec6daa339a442bf" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to">I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads</a>
+    <p class="news-card-summary">Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.</p>
+  </div>
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -686,47 +666,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   </div>
   <img class="news-card-thumb" src="https://s3plus.meituan.net/aigc-media-resources/longcat/big-cat-logo.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/allenai/discoformer">DiScoFormer: One transformer for density and score, across distributions</a>
-    <p class="news-card-summary">DiScoFormer uses a single transformer architecture to learn both density and score functions across multiple probability distributions.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/AnOX0pzQm-Hep_CLFOVM7.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27472">Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents</a>
-    <p class="news-card-summary">Diagnostic study and training method for memory-update gap problem in large language model agents operating over long contexts.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27550">EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction</a>
-    <p class="news-card-summary">EntMTP accelerates large language model inference by using entropy-guided multi-token prediction to improve speed and efficiency.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27705">Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling</a>
-    <p class="news-card-summary">Study of layer-specific positional embedding scaling to mitigate position bias problem in large language models for long-context tasks.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">June 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.27786">SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation</a>
-    <p class="news-card-summary">SHIFT method uses gate-modulated activation steering to resolve knowledge conflicts in retrieval-augmented generation systems.</p>
-  </div>
-</div>
 </div>
 
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=mIVHFU94Xhc" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg" alt="Video: Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?" loading="lazy">
+  <span class="video-card-title">Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?</span>
+  <span class="video-card-meta">Bijan Bowen, July 6, 2026</span>
+  <span class="video-card-desc">Technical comparison and evaluation of Tencent&#x27;s HY3 model against GLM and DeepSeek competitors.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=y24lF1q4SFY" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/y24lF1q4SFY/hqdefault.jpg" alt="Video: Fable 5 vs GPT 5.6 Sol: The Early Results" loading="lazy">
   <span class="video-card-title">Fable 5 vs GPT 5.6 Sol: The Early Results</span>

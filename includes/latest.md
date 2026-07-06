@@ -3,5 +3,5 @@
 - [Thematic Evolution in Medical Education Research (2000-2024): A Large-Scale BERTopic Analysis](https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&ff=20260706100904&v=2.20.0) (PubMed AI in medical education, July 6, 2026)
 - [Incorporating AI-Driven Vision Systems to Quantify Learning Curve in EVD Placement](https://pubmed.ncbi.nlm.nih.gov/42404183?fc=20260609215449&ff=20260706100904&v=2.20.0) (PubMed AI in medical education, July 6, 2026)
 - [The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan](https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&ff=20260706100904&v=2.20.0) (PubMed AI in medical education, July 6, 2026)
-- [Large language models are powerful electronic health record encoders](https://www.nature.com/articles/s41746-026-02915-9) (npj Digital Medicine, July 6, 2026)
-- [Bridging the gap from clinical to home ECG: quantifying and overcoming accuracy loss in AI-enabled single-lead ECG models](https://www.nature.com/articles/s41746-026-02919-5) (npj Digital Medicine, July 6, 2026)
+- [Ars Longa, Data Brevis: the science of disease and the art of care](https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&ff=20260706175123&v=2.20.0) (PubMed AI in medical education, July 6, 2026)
+- [Widely available, general-purpose generative AI applications for radiology education: determining the teaching quality of synthetic pediatric neuroradiology images](https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&ff=20260706175123&v=2.20.0) (PubMed AI in medical education, July 6, 2026)

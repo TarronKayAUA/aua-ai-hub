@@ -12211,6 +12211,145 @@
    "first_seen": "2026-07-06T14:09:02.489160+00:00",
    "kept": false,
    "reason": "vendor marketing"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e104447",
+   "title_hash": "a97937a564129885442788c5a998dfd1",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "no substantive content; abstract unavailable"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e101696",
+   "title_hash": "7378ed90bcac91759dc22b9488de0f6e",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "letter to editor; no new findings or framework presented"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e87551",
+   "title_hash": "0c3ef8afb586cd90b803e6f83a854e38",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "narrow clinical study without AI component"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/anthropic-outed-for-claude-tracker-that-secretly-monitored-chinese-users",
+   "title_hash": "e91d56a1337a58978a72f72069e5aba0",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "rumor-framed speculation about unverified incident"
+  },
+  {
+   "url": "https://huggingface.co/blog/Photoroom/prx-part4-data",
+   "title_hash": "8330ba911294544a292299e63134321a",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "empty summary; insufficient content to evaluate"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/uk-regulator-warns-of-arms-race-to-keep-up-with-ai-use-in-financial-services",
+   "title_hash": "fdb7c9cbacc8b9a131e06fe69dfeebea",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "regulatory news without medical or educational relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&ff=20260706175123&v=2.20.0",
+   "title_hash": "9627147341c266be68f89af2b7210652",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": true,
+   "title": "Ars Longa, Data Brevis: the science of disease and the art of care",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-06T10:00:00+00:00",
+   "summary": "Peer-reviewed examination of how artificial intelligence has changed diagnostic and therapeutic approaches in modern medical practice and education.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&ff=20260706175123&v=2.20.0",
+   "title_hash": "2994f75f4204c8be4e49b2a973af8cce",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": true,
+   "title": "Widely available, general-purpose generative AI applications for radiology education: determining the teaching quality of synthetic pediatric neuroradiology images",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-06T10:00:00+00:00",
+   "summary": "Peer-reviewed study evaluating synthetic pediatric radiology images from general-purpose generative AI for medical education quality.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uoppuz/qwen_gemma_on_deadlock_situation_for_benchmarks",
+   "title_hash": "b858d3a24670f0878461df78ae69602e",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "forum speculation without substantive analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uoozt4/new_open_model_from_tencent_hy_hy3_295b_total_21b",
+   "title_hash": "ba27ca1e7abcf5202c22443ccaa30055",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": true,
+   "title": "New open model from Tencent Hy: Hy3 (295B total 21B active - apache 2.0)",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-06T06:09:27+00:00",
+   "summary": "Tencent releases Hy3, an open-weight 295-billion-parameter model with 21-billion active parameters under Apache 2.0 license.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/CkiY6sxiegNB9XeJzbgeatsW70zO1W7TkruSJDZ22s8.png?width=640&crop=smart&auto=webp&s=38ea195e9d5b3ec7d9ec35718ee6a1aa4e413114"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02931-9",
+   "title_hash": "6ae130d00a62c9b1785c640800a9a5b5",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "narrow clinical study; radiogenomics application without broader medical-education relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to",
+   "title_hash": "09426427bd7c25ae421018cbdabe1b70",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": true,
+   "title": "I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-05T03:37:23+00:00",
+   "summary": "Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mIVHFU94Xhc",
+   "title_hash": "09e53f3c36b1f1d5f2a98b2c36a84bc0",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": true,
+   "title": "Tencent HY3 Is VERY Good, Is This a GLM & DeepSeek Competitor?",
+   "source": "Bijan Bowen",
+   "published": "2026-07-06T17:03:23+00:00",
+   "summary": "Technical comparison and evaluation of Tencent's HY3 model against GLM and DeepSeek competitors.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=rKV5JcALQoQ",
+   "title_hash": "7e4cdfd42e86fdc7b4ec4f74eb261b4e",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "promotional content without substantive technical or research announcement"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4sexN3yE8xg",
+   "title_hash": "d563d96f918ed1d93b0372a38a05a661",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "routine interview, not a significant announcement or development"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=sha3EL1ngN8",
+   "title_hash": "7979653207d1536cbff7249cb7a36b74",
+   "first_seen": "2026-07-06T21:51:22.875117+00:00",
+   "kept": false,
+   "reason": "vendor marketing, not a significant development or capability announcement"
   }
  ],
  "digests": [
@@ -12333,8 +12472,8 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A comprehensive analysis of medical education research from 2000 to 2024 shows a steady movement toward technology and artificial intelligence as central themes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[1]</a>. Despite widespread exposure among graduate trainees, formal instruction in artificial intelligence remains scarce, highlighting a training gap <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[6]</a>. Medical students nationally now report nearly universal use of large language models, usually viewed positively <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[7]</a>, but there are still significant concerns about issues such as grounding in problem-based learning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[11]</a>. Research also points to the need for explicit governance guidelines tailored to medical education, particularly in regions like Pakistan where frameworks are urgently required <a href=\"https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[3]</a>.",
-   "hash": "783b278edc7d109c",
+   "text": "A large-scale analysis of medical education research over the past 24 years shows a steady shift toward technology and artificial intelligence as central themes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[1]</a>. Despite high exposure to artificial intelligence among graduate medical trainees, formal training remains limited and unaddressed, indicating substantial gaps in preparedness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[8]</a>. Student-driven studies highlight the need for clear principles supporting responsible generative AI use in education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0\">[6]</a>, while nearly universal adoption of large language models by Canadian medical students points to generally positive perceptions but raises questions regarding the quality and guidance of AI use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[9]</a>. Additionally, peer-reviewed evaluations suggest generative AI can produce synthetic radiology images suitable for pediatric medical education, reinforcing its growing role in teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0\">[5]</a>.",
+   "hash": "8ca79a4641586a67",
    "date": "July 6, 2026"
   },
   "clinical_practice": {
@@ -12343,9 +12482,9 @@
    "date": "July 6, 2026"
   },
   "general_ai": {
-   "text": "Anthropic’s Fable and Mythos AI models have received global clearance by US regulators following safety testing, marking a notable shift in international AI deployment and lifting previous export restrictions <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. Meanwhile, increased infrastructure investment for large language models continues to raise sustainability questions as Google reported a 37 percent increase in electricity usage driven by its AI expansion and ongoing clean energy efforts <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. Researchers are actively improving large model reasoning and reliability, with benchmarks like IsoSci assessing reasoning versus knowledge retrieval in science problems <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a> and LoFa challenging models’ robustness against logical fallacies <a href=\"https://arxiv.org/abs/2606.31039\">[5]</a>; token-level hallucination detection has also advanced, as demonstrated by the new CORTEX approach for retrieval-augmented generation <a href=\"https://arxiv.org/abs/2606.31033\">[4]</a>.",
-   "hash": "e7adb5a94b3b20a4",
-   "date": "July 5, 2026"
+   "text": "US regulators have cleared Anthropic&#x27;s Fable and Mythos artificial intelligence models for worldwide deployment after safety testing, removing prior export restrictions and marking an important shift in global accessibility for advanced AI systems <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. Concurrently, Google&#x27;s expansion of AI infrastructure contributed to a 37 percent rise in electricity consumption in 2025, highlighting energy demands that accompany technological progress and ongoing efforts to balance emissions with clean energy sources <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. On the technical front, new benchmarks such as IsoSci now evaluate whether large language models demonstrate genuine reasoning or rely on knowledge retrieval when solving cross-domain science problems <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a>.",
+   "hash": "6b5a3de756f19faf",
+   "date": "July 6, 2026"
   }
  }
 }

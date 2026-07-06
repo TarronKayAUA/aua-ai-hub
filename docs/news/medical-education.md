@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A comprehensive analysis of medical education research from 2000 to 2024 shows a steady movement toward technology and artificial intelligence as central themes <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. Despite widespread exposure among graduate trainees, formal instruction in artificial intelligence remains scarce, highlighting a training gap <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[6]</a>. Medical students nationally now report nearly universal use of large language models, usually viewed positively <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[7]</a>, but there are still significant concerns about issues such as grounding in problem-based learning <a href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[11]</a>. Research also points to the need for explicit governance guidelines tailored to medical education, particularly in regions like Pakistan where frameworks are urgently required <a href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[3]</a>.</p>
+<p>A large-scale analysis of medical education research over the past 24 years shows a steady shift toward technology and artificial intelligence as central themes <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. Despite high exposure to artificial intelligence among graduate medical trainees, formal training remains limited and unaddressed, indicating substantial gaps in preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[8]</a>. Student-driven studies highlight the need for clear principles supporting responsible generative AI use in education <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[6]</a>, while nearly universal adoption of large language models by Canadian medical students points to generally positive perceptions but raises questions regarding the quality and guidance of AI use <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[9]</a>. Additionally, peer-reviewed evaluations suggest generative AI can produce synthetic radiology images suitable for pediatric medical education, reinforcing its growing role in teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -37,6 +37,20 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan</a>
     <p class="news-card-summary">Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Ars Longa, Data Brevis: the science of disease and the art of care</a>
+    <p class="news-card-summary">Peer-reviewed examination of how artificial intelligence has changed diagnostic and therapeutic approaches in modern medical practice and education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Widely available, general-purpose generative AI applications for radiology education: determining the teaching quality of synthetic pediatric neuroradiology images</a>
+    <p class="news-card-summary">Peer-reviewed study evaluating synthetic pediatric radiology images from general-purpose generative AI for medical education quality.</p>
   </div>
 </div>
 <div class="news-card">
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Designing Effective Laboratory Sessions of AI in Medicine: A Practical Relevance Index</a>
     <p class="news-card-summary">A practical relevance index framework guides design of effective laboratory sessions for teaching artificial intelligence in medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Personality traits, technology affinity, and artificial intelligence readiness in medical students: a multinational cross-sectional study</a>
-    <p class="news-card-summary">Personality traits independently predict AI readiness in medical students across multiple countries, more so than technology affinity.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study</a>
-    <p class="news-card-summary">Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.</p>
   </div>
 </div>
 </div>
