@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A national survey indicates that nearly all Canadian medical students are using large language models, with students expressing generally positive perceptions about their impact on education <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[4]</a>. Despite this widespread adoption, graduate medical trainees are exposed to artificial intelligence but lack structured training, highlighting a significant gap in preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[3]</a>. Attempts to define principles for responsible generative AI use through student-partnered Delphi studies are underway, aiming to guide educators and learners <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Additionally, the anatomical fidelity of text-to-image generative AI models is being assessed against traditional methods, addressing quality concerns in educational resources <a href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">[2]</a>.</p>
-<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the items below.</p>
+<p>A comprehensive analysis of medical education research from 2000 to 2024 shows a steady movement toward technology and artificial intelligence as central themes <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. Despite widespread exposure among graduate trainees, formal instruction in artificial intelligence remains scarce, highlighting a training gap <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[6]</a>. Medical students nationally now report nearly universal use of large language models, usually viewed positively <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[7]</a>, but there are still significant concerns about issues such as grounding in problem-based learning <a href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[11]</a>. Research also points to the need for explicit governance guidelines tailored to medical education, particularly in regions like Pakistan where frameworks are urgently required <a href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[3]</a>.</p>
+<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Thematic Evolution in Medical Education Research (2000-2024): A Large-Scale BERTopic Analysis</a>
+    <p class="news-card-summary">Large-scale analysis of 24 years of medical education research reveals a gradual shift in emphasis toward technology and artificial intelligence topics.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404183?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Incorporating AI-Driven Vision Systems to Quantify Learning Curve in EVD Placement</a>
+    <p class="news-card-summary">Artificial intelligence vision system platform quantifies the learning curve for external ventricular drain placement in surgical training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan</a>
+    <p class="news-card-summary">Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
@@ -100,27 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study</a>
     <p class="news-card-summary">Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.01440">FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning</a>
-    <p class="news-card-summary">FaithMed trains language models to produce faithful evidence-based medical reasoning by grounding outputs in cited medical knowledge.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98949">Artificial Intelligence for Assessment and Feedback in Medical Education: Bibliometric Mapping Study and Thematic Evidence Map</a>
-    <p class="news-card-summary">Bibliometric and thematic mapping study of artificial intelligence applications for assessment and feedback in medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87897">Digital Simulation, Based Ultrasound Training for Physiotherapy Students: Prospective Randomized Controlled Trial</a>
-    <p class="news-card-summary">Prospective randomized controlled trial of digital simulation-based ultrasound training for physiotherapy students compared to traditional on-site methods.</p>
   </div>
 </div>
 </div>

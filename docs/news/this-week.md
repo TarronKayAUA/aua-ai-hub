@@ -11,11 +11,32 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A national survey indicates that nearly all Canadian medical students are using large language models, with students expressing generally positive perceptions about their impact on education <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[4]</a>. Despite this widespread adoption, graduate medical trainees are exposed to artificial intelligence but lack structured training, highlighting a significant gap in preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[3]</a>. Attempts to define principles for responsible generative AI use through student-partnered Delphi studies are underway, aiming to guide educators and learners <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[1]</a>. Additionally, the anatomical fidelity of text-to-image generative AI models is being assessed against traditional methods, addressing quality concerns in educational resources <a href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">[2]</a>.</p>
-<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the source items.</p>
+<p>A comprehensive analysis of medical education research from 2000 to 2024 shows a steady movement toward technology and artificial intelligence as central themes <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. Despite widespread exposure among graduate trainees, formal instruction in artificial intelligence remains scarce, highlighting a training gap <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[6]</a>. Medical students nationally now report nearly universal use of large language models, usually viewed positively <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[7]</a>, but there are still significant concerns about issues such as grounding in problem-based learning <a href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[11]</a>. Research also points to the need for explicit governance guidelines tailored to medical education, particularly in regions like Pakistan where frameworks are urgently required <a href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[3]</a>.</p>
+<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Thematic Evolution in Medical Education Research (2000-2024): A Large-Scale BERTopic Analysis</a>
+    <p class="news-card-summary">Large-scale analysis of 24 years of medical education research reveals a gradual shift in emphasis toward technology and artificial intelligence topics.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404183?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Incorporating AI-Driven Vision Systems to Quantify Learning Curve in EVD Placement</a>
+    <p class="news-card-summary">Artificial intelligence vision system platform quantifies the learning curve for external ventricular drain placement in surgical training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan</a>
+    <p class="news-card-summary">Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
@@ -308,11 +329,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A foundation model using retinal fundus images has enabled explainable screening and risk stratification for dementia, offering new clinical decision support tools for practitioners <a href="https://www.nature.com/articles/s41746-026-02968-w">[3]</a>. In hospital documentation, large language models are being implemented securely to generate discharge summaries evaluated by experts for quality and accuracy <a href="https://ai.jmir.org/2026/1/e88816">[5]</a>. The real-world use of ambient AI scribes in emergency departments is being examined for its potential to reduce documentation burden in high-burnout clinical environments <a href="https://ai.jmir.org/2026/1/e92193">[15]</a>. Ethical considerations around ambient AI, including patient autonomy and consent, are also highlighted as integral to the deployment of clinical artificial intelligence systems <a href="https://www.nature.com/articles/s41746-026-02973-z">[13]</a>.</p>
-<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the source items.</p>
+<p>Deep learning models now predict type 2 diabetes risk from chest X-rays within ethnically diverse populations, highlighting broader applicability for chronic disease screening beyond specialized contexts <a href="https://ai.jmir.org/2026/1/e85248">[8]</a>. Large language models are demonstrating effective clinical discharge summary generation within secure environments, raising both operational benefits and privacy concerns tied to the use of public biosignals data <a href="https://ai.jmir.org/2026/1/e88816">[7]</a> <a href="https://www.nature.com/articles/s41746-026-02872-3">[6]</a>. Meanwhile, deep learning systems achieve improved diagnostic accuracy for acute myocardial infarction from ECGs and offer educational utility through explainable outputs, suggesting advancements for both patient care and teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[3]</a>. Finally, AI assistance for pneumothorax detection affects chest CT workflow by redirecting rather than reducing imaging utilization <a href="https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02915-9">Large language models are powerful electronic health record encoders</a>
+    <p class="news-card-summary">Peer-reviewed study demonstrates that large language models perform effectively as electronic health record encoders for clinical data extraction and processing.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02919-5">Bridging the gap from clinical to home ECG: quantifying and overcoming accuracy loss in AI-enabled single-lead ECG models</a>
+    <p class="news-card-summary">Study quantifies accuracy loss when single-lead ECG artificial intelligence models transition from clinical to home settings and proposes mitigation strategies.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>

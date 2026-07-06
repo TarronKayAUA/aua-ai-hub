@@ -12074,6 +12074,143 @@
    "first_seen": "2026-07-05T20:33:37.156548+00:00",
    "kept": false,
    "reason": "abstract fragment; full peer-reviewed findings not evaluable from provided text"
+  },
+  {
+   "url": "https://huggingface.co/blog/lerobot-release-v060",
+   "title_hash": "f6e8d6866ab6cf0450238f6d4cb79b48",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "insufficient information in summary"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e86893",
+   "title_hash": "c60c82e27e3407108c1fc2502156983a",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&ff=20260706100904&v=2.20.0",
+   "title_hash": "6bceed506bfff258c472ad6f5a2ccfdb",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": true,
+   "title": "Thematic Evolution in Medical Education Research (2000-2024): A Large-Scale BERTopic Analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-06T10:00:00+00:00",
+   "summary": "Large-scale analysis of 24 years of medical education research reveals a gradual shift in emphasis toward technology and artificial intelligence topics.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42404183?fc=20260609215449&ff=20260706100904&v=2.20.0",
+   "title_hash": "7890393beb0fc8042b1ebfab6fb7c57e",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": true,
+   "title": "Incorporating AI-Driven Vision Systems to Quantify Learning Curve in EVD Placement",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-06T10:00:00+00:00",
+   "summary": "Artificial intelligence vision system platform quantifies the learning curve for external ventricular drain placement in surgical training.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&ff=20260706100904&v=2.20.0",
+   "title_hash": "1241b4436749c57831c3b0806be15107",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": true,
+   "title": "The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-06T10:00:00+00:00",
+   "summary": "Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/6/sqlite-utils",
+   "title_hash": "bc99dd4f83d1e54ac24ed49b9aa5367d",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uoij3s/if_trends_hold_mythosclass_capability_may_be",
+   "title_hash": "6c821e9c23a1239519b89bd829317780",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "speculation and trend projection without evidence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02966-y",
+   "title_hash": "74a3652774fa3ae03c3185493762730a",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02845-6",
+   "title_hash": "e4c761a51a88b48ad848bcbbb0d5d1f0",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02915-9",
+   "title_hash": "2870eeae0b49a0213c5ecf960ed34377",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": true,
+   "title": "Large language models are powerful electronic health record encoders",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-06T00:00:00+00:00",
+   "summary": "Peer-reviewed study demonstrates that large language models perform effectively as electronic health record encoders for clinical data extraction and processing.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02919-5",
+   "title_hash": "679d09dcebad3134248536dc3c04646a",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": true,
+   "title": "Bridging the gap from clinical to home ECG: quantifying and overcoming accuracy loss in AI-enabled single-lead ECG models",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-06T00:00:00+00:00",
+   "summary": "Study quantifies accuracy loss when single-lead ECG artificial intelligence models transition from clinical to home settings and proposes mitigation strategies.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04506-3",
+   "title_hash": "a22a443377f15d6487b82efc8bc4584d",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04551-y",
+   "title_hash": "5e7c259d8e708884ed2581d20d0fe278",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://huggingface.co/blog/revamped-kernels",
+   "title_hash": "b62d9d8518cf33c68c8b9f0e2587ba8e",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "insufficient information in summary"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=NY_V8mFL1Gg",
+   "title_hash": "e67dc39848b5042cc202df078e7e93c9",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "title is rumor-framed; speculation without confirmed information"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=f84XbvASkk4",
+   "title_hash": "a6c435298506debf2c85dfe88b5c3a2b",
+   "first_seen": "2026-07-06T14:09:02.489160+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
   }
  ],
  "digests": [
@@ -12196,14 +12333,14 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A national survey indicates that nearly all Canadian medical students are using large language models, with students expressing generally positive perceptions about their impact on education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[4]</a>. Despite this widespread adoption, graduate medical trainees are exposed to artificial intelligence but lack structured training, highlighting a significant gap in preparedness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[3]</a>. Attempts to define principles for responsible generative AI use through student-partnered Delphi studies are underway, aiming to guide educators and learners <a href=\"https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0\">[1]</a>. Additionally, the anatomical fidelity of text-to-image generative AI models is being assessed against traditional methods, addressing quality concerns in educational resources <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0\">[2]</a>.",
-   "hash": "cb6eb16e975bd256",
-   "date": "July 5, 2026"
+   "text": "A comprehensive analysis of medical education research from 2000 to 2024 shows a steady movement toward technology and artificial intelligence as central themes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[1]</a>. Despite widespread exposure among graduate trainees, formal instruction in artificial intelligence remains scarce, highlighting a training gap <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[6]</a>. Medical students nationally now report nearly universal use of large language models, usually viewed positively <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[7]</a>, but there are still significant concerns about issues such as grounding in problem-based learning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[11]</a>. Research also points to the need for explicit governance guidelines tailored to medical education, particularly in regions like Pakistan where frameworks are urgently required <a href=\"https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[3]</a>.",
+   "hash": "783b278edc7d109c",
+   "date": "July 6, 2026"
   },
   "clinical_practice": {
-   "text": "A foundation model using retinal fundus images has enabled explainable screening and risk stratification for dementia, offering new clinical decision support tools for practitioners <a href=\"https://www.nature.com/articles/s41746-026-02968-w\">[3]</a>. In hospital documentation, large language models are being implemented securely to generate discharge summaries evaluated by experts for quality and accuracy <a href=\"https://ai.jmir.org/2026/1/e88816\">[5]</a>. The real-world use of ambient AI scribes in emergency departments is being examined for its potential to reduce documentation burden in high-burnout clinical environments <a href=\"https://ai.jmir.org/2026/1/e92193\">[15]</a>. Ethical considerations around ambient AI, including patient autonomy and consent, are also highlighted as integral to the deployment of clinical artificial intelligence systems <a href=\"https://www.nature.com/articles/s41746-026-02973-z\">[13]</a>.",
-   "hash": "a1a7b5b4f66e3024",
-   "date": "July 5, 2026"
+   "text": "Deep learning models now predict type 2 diabetes risk from chest X-rays within ethnically diverse populations, highlighting broader applicability for chronic disease screening beyond specialized contexts <a href=\"https://ai.jmir.org/2026/1/e85248\">[8]</a>. Large language models are demonstrating effective clinical discharge summary generation within secure environments, raising both operational benefits and privacy concerns tied to the use of public biosignals data <a href=\"https://ai.jmir.org/2026/1/e88816\">[7]</a> <a href=\"https://www.nature.com/articles/s41746-026-02872-3\">[6]</a>. Meanwhile, deep learning systems achieve improved diagnostic accuracy for acute myocardial infarction from ECGs and offer educational utility through explainable outputs, suggesting advancements for both patient care and teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[3]</a>. Finally, AI assistance for pneumothorax detection affects chest CT workflow by redirecting rather than reducing imaging utilization <a href=\"https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[9]</a>.",
+   "hash": "c966b6260e489fd1",
+   "date": "July 6, 2026"
   },
   "general_ai": {
    "text": "Anthropic’s Fable and Mythos AI models have received global clearance by US regulators following safety testing, marking a notable shift in international AI deployment and lifting previous export restrictions <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. Meanwhile, increased infrastructure investment for large language models continues to raise sustainability questions as Google reported a 37 percent increase in electricity usage driven by its AI expansion and ongoing clean energy efforts <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. Researchers are actively improving large model reasoning and reliability, with benchmarks like IsoSci assessing reasoning versus knowledge retrieval in science problems <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a> and LoFa challenging models’ robustness against logical fallacies <a href=\"https://arxiv.org/abs/2606.31039\">[5]</a>; token-level hallucination detection has also advanced, as demonstrated by the new CORTEX approach for retrieval-augmented generation <a href=\"https://arxiv.org/abs/2606.31033\">[4]</a>.",

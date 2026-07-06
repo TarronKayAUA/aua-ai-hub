@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A foundation model using retinal fundus images has enabled explainable screening and risk stratification for dementia, offering new clinical decision support tools for practitioners <a href="https://www.nature.com/articles/s41746-026-02968-w">[3]</a>. In hospital documentation, large language models are being implemented securely to generate discharge summaries evaluated by experts for quality and accuracy <a href="https://ai.jmir.org/2026/1/e88816">[5]</a>. The real-world use of ambient AI scribes in emergency departments is being examined for its potential to reduce documentation burden in high-burnout clinical environments <a href="https://ai.jmir.org/2026/1/e92193">[15]</a>. Ethical considerations around ambient AI, including patient autonomy and consent, are also highlighted as integral to the deployment of clinical artificial intelligence systems <a href="https://www.nature.com/articles/s41746-026-02973-z">[13]</a>.</p>
-<p class="section-brief-date">The picture as of July 5, 2026; numbered links go to the items below.</p>
+<p>Deep learning models now predict type 2 diabetes risk from chest X-rays within ethnically diverse populations, highlighting broader applicability for chronic disease screening beyond specialized contexts <a href="https://ai.jmir.org/2026/1/e85248">[8]</a>. Large language models are demonstrating effective clinical discharge summary generation within secure environments, raising both operational benefits and privacy concerns tied to the use of public biosignals data <a href="https://ai.jmir.org/2026/1/e88816">[7]</a> <a href="https://www.nature.com/articles/s41746-026-02872-3">[6]</a>. Meanwhile, deep learning systems achieve improved diagnostic accuracy for acute myocardial infarction from ECGs and offer educational utility through explainable outputs, suggesting advancements for both patient care and teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[3]</a>. Finally, AI assistance for pneumothorax detection affects chest CT workflow by redirecting rather than reducing imaging utilization <a href="https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02915-9">Large language models are powerful electronic health record encoders</a>
+    <p class="news-card-summary">Peer-reviewed study demonstrates that large language models perform effectively as electronic health record encoders for clinical data extraction and processing.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02919-5">Bridging the gap from clinical to home ECG: quantifying and overcoming accuracy loss in AI-enabled single-lead ECG models</a>
+    <p class="news-card-summary">Study quantifies accuracy loss when single-lead ECG artificial intelligence models transition from clinical to home settings and proposes mitigation strategies.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02973-z">The ethics of listening walls: patient autonomy and consent in the age of ambient clinical AI</a>
     <p class="news-card-summary">Ethics perspective on ambient clinical artificial intelligence systems and their implications for patient autonomy and informed consent.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02947-1">Predicting response to neoadjuvant therapy using artificial intelligence on digitized histopathology slides: a systematic review</a>
-    <p class="news-card-summary">Systematic review of artificial intelligence methods for predicting treatment response from digitized histopathology slides.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92193">Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study</a>
-    <p class="news-card-summary">Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.</p>
   </div>
 </div>
 </div>
