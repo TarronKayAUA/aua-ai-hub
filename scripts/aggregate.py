@@ -1110,10 +1110,15 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict,
     return keeps, drops
 
 
-def _pack_candidates(ordered: list, budget: int, verbose: bool):
+def _pack_candidates(ordered: list, budget: int, verbose: bool,
+                     title_chars: int = 140, summary_chars: int = 100):
     """Greedy payload packing under the provider's character budget.
     GitHub Models' free tier caps requests at 8,000 tokens, so candidates
-    beyond the budget simply are not curated this run."""
+    beyond the budget simply are not curated this run. Per-candidate
+    truncation is provider-configurable: the July 3-7 drop-reason audit
+    showed the curator dropping items as "incomplete candidate data"
+    because the 140/100 defaults, sized for the free tier, starve it on
+    the Anthropic path where the budget is 75x larger."""
     by_id = {}
     entries = []
     used = 200  # wrapper overhead allowance
@@ -1122,8 +1127,8 @@ def _pack_candidates(ordered: list, budget: int, verbose: bool):
             "id": str(idx),
             "feed_category": item.category,
             "source": item.source,
-            "title": item.title[:140],
-            "summary": item.summary[:100],
+            "title": item.title[:title_chars],
+            "summary": item.summary[:summary_chars],
         }
         entry_len = len(json.dumps(entry, ensure_ascii=False))
         if used + entry_len > budget:
@@ -1151,7 +1156,9 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
 
     ordered = sorted(fresh, key=lambda i: -i.score)[: llm_cfg["max_candidates"]]
     by_id, payload = _pack_candidates(
-        ordered, cfg.get("max_payload_chars", 22000), verbose
+        ordered, cfg.get("max_payload_chars", 22000), verbose,
+        title_chars=int(cfg.get("candidate_title_chars", 140)),
+        summary_chars=int(cfg.get("candidate_summary_chars", 100)),
     )
     # audit trail: candidates the model never saw are drops with a stated cause
     offered = {id(i) for i in by_id.values()}
@@ -1235,7 +1242,9 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
 
     ordered = sorted(fresh_media, key=lambda i: -i.published.timestamp())[:60]
     by_id, payload = _pack_candidates(
-        ordered, cfg.get("max_payload_chars", 22000), verbose
+        ordered, cfg.get("max_payload_chars", 22000), verbose,
+        title_chars=int(cfg.get("candidate_title_chars", 140)),
+        summary_chars=int(cfg.get("candidate_summary_chars", 100)),
     )
     # audit trail: candidates the model never saw are drops with a stated cause
     offered = {id(i) for i in by_id.values()}

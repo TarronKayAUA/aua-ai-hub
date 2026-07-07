@@ -34,6 +34,14 @@ llm:
     model: claude-haiku-4-5
     api_version: "2023-06-01"
     max_payload_chars: 600000
+    # Per-candidate truncation for curation payloads. The 140/100
+    # defaults were sized for the free tier's 8,000-token cap; the
+    # July 3-7 drop-reason audit showed the curator dropping items as
+    # "incomplete candidate data" because of them. The Anthropic budget
+    # is 75x larger, so candidates travel near-whole here (stored
+    # summaries cap at 500 characters). Adds roughly a cent a day.
+    candidate_title_chars: 200
+    candidate_summary_chars: 400
   # Per-task provider assignments (owner spend plan, 2026-06-11). The
   # Anthropic key activates ONLY the tasks that name anthropic here; each
   # falls back to the free GitHub Models path (then keyword mode) whenever
