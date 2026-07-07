@@ -41,7 +41,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-07
   blurb: Google's artificial intelligence assistant, integrated with Google Workspace apps such as Docs and Gmail.
 
 - name: Microsoft 365 Copilot
@@ -71,7 +71,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-06-10
+  last_reviewed: 2026-07-07
   blurb: Alibaba's chat assistant, built on the Qwen model family, with document, image, and voice input alongside text chat.
 
 - name: Kimi
@@ -81,7 +81,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-06-10
+  last_reviewed: 2026-07-07
   blurb: Chat assistant from Moonshot AI, built on the Kimi K2 model family, with long-document reading and agent features.
 
 - name: Perplexity
@@ -274,7 +274,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-10
+  last_reviewed: 2026-07-07
   blurb: Study platform for medical, nursing, and physician assistant students with flashcard generation from your own materials, board-style questions, and simulated patient encounters for clinical exam practice.
 
 - name: Thea
@@ -284,7 +284,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-10
+  last_reviewed: 2026-07-07
   blurb: General-purpose study app widely used by medical students. Upload readings or lecture notes and it builds flashcards, practice tests, and summaries with spaced repetition.
 
 - name: Medical Student AI
@@ -294,7 +294,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-10
+  last_reviewed: 2026-07-07
   blurb: Tutoring app with a question bank in the style of the United States Medical Licensing Examination (USMLE), cited explanations, and custom quizzes built from uploaded study materials.
 
 - name: Nabu Tutor
@@ -357,7 +357,7 @@
   cost: institutional
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-07
   blurb: Built-in live transcription for Teams meetings under the institutional Microsoft 365 license.
 
 - name: Ollama
@@ -367,7 +367,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-07
   blurb: Command-line tool for downloading and running open-weights language models on your own computer.
 
 - name: LM Studio
@@ -377,7 +377,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-07
   blurb: Desktop application with a graphical interface for downloading and chatting with local language models.
 
 - name: Open WebUI
@@ -387,7 +387,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-09
+  last_reviewed: 2026-07-07
   blurb: Self-hosted web interface for chatting with local models served by tools such as Ollama.
 
 # --- Presentations and Design (owner approved 2026-06-12) -------------------
