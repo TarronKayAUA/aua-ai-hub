@@ -1,0 +1,50 @@
+# Opportunities for the Opportunities page (docs/opportunities.md).
+# Owner-owned: the weekly opportunity-watch workflow proposes new entries
+# through GitHub issues and never edits this file; all additions and
+# changes are the owner's (or an owner-approved session's).
+#
+# Scope (owner directive 2026-07-06): global, not regional. List any
+# opportunity for which AUA faculty or students would be eligible and
+# that is relevant to artificial intelligence in medicine or the fields
+# around it (health, higher education, or high-value general AI
+# skill-building).
+#
+# Vetting bar, every entry: the official page is reachable, the
+# organizer is identifiable, participation is free (no pay-to-compete
+# listings), and the deadline is confirmed from the official source on
+# the `verified` date. Prize and support figures are always framed as
+# organizer-stated, never as site-verified facts. Official URLs only,
+# never shortened links (an email may arrive with bit.ly links; resolve
+# to the canonical site before listing).
+#
+# Fields:
+#   name         display name
+#   url          official site (canonical, https)
+#   organizer    who runs it, as identified on the official page
+#   type         buildathon | hackathon | challenge | datathon |
+#                competition | fellowship | program
+#   format       virtual | hybrid | in_person
+#   eligibility  one line, who can take part
+#   deadline     a date, or a string shown verbatim ("Rolling", "TBD",
+#                "Closed"); date deadlines get a countdown badge and
+#                flip to Passed automatically
+#   start_date   optional date or "TBD"; event or program window
+#   end_date     optional date; entries archive automatically once the
+#                event end has passed (or once a date deadline passes
+#                for entries with no event dates)
+#   support      optional one line, organizer-stated prizes or support
+#   relevance    one line, why this belongs in front of this audience
+#   verified     date the official page was last checked by a human
+
+- name: Future Caribbean Global Agentic AI Buildathon
+  url: https://futurecaribbean.com
+  organizer: Future Caribbean (founder Lily Dash; partners include ACTAI Global and IDB Invest)
+  type: buildathon
+  format: virtual
+  eligibility: Open worldwide to students, faculty, researchers, and founders; team-based, 40 teams selected
+  deadline: Rolling
+  start_date: 2026-07-17
+  end_date: 2026-09-01
+  support: "Organizer-stated: US$50,000 in cash prizes, US$20,000+ in hardware, compute for qualifying teams, and an investor showcase at the New York Stock Exchange"
+  relevance: Open-source agentic AI across ten tracks including healthcare; 21-day remote build sprint July 17 to August 7, winners announced September 1. Applications extended past the original July 3 cutoff and reviewed on a rolling basis.
+  verified: 2026-07-06

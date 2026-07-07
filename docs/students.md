@@ -38,4 +38,4 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 
 ## Take part
 
-The [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting, and news pages carry a comments section (free GitHub account required; posts are public; standards on the [About page](about.md#comments-and-feedback)). If something on this site is wrong, missing, or confusing, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) is five questions and about two minutes.
+The [Opportunities page](opportunities.md) lists buildathons, hackathons, and challenges you are eligible for, wherever in the world they run. The [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting, and news pages carry a comments section (free GitHub account required; posts are public; standards on the [About page](about.md#comments-and-feedback)). If something on this site is wrong, missing, or confusing, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) is five questions and about two minutes.

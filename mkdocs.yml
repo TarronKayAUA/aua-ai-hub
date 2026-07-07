@@ -117,6 +117,7 @@ nav:
       - Image Generation: benchmarks/image.md
       - Video Generation: benchmarks/video.md
   - Conferences: conferences.md
+  - Opportunities: opportunities.md
   - Governance:
       - AI Responsible Use Policy: governance/policy.md
       - AI Committee: governance/committee.md

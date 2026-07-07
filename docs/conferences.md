@@ -4,4 +4,4 @@ Meetings relevant to artificial intelligence (AI) in medical education and clini
 
 <!-- render:conferences -->
 
-Know of a conference that belongs here? See the [About page](about.md) for contact information.
+Know of a conference that belongs here? See the [About page](about.md) for contact information. Looking to build or compete rather than attend? See the [Opportunities page](opportunities.md).

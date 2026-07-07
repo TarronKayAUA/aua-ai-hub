@@ -28,6 +28,7 @@ TOOLS_MARKER = "<!-- render:tools -->"
 OPEN_MODELS_MARKER = "<!-- render:open-models -->"
 GUIDE_VIDEOS_LOCAL_MARKER = "<!-- render:guide-videos:local -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
+OPPORTUNITIES_MARKER = "<!-- render:opportunities -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
 PROMPT_RESOURCES_MARKER = "<!-- render:prompt-resources -->"
@@ -727,6 +728,136 @@ CONFERENCE_HEADER = (
     "| --- | --- | --- | --- | --- | --- |"
 )
 
+OPPORTUNITY_TYPE_LABELS = {
+    "buildathon": "Buildathon",
+    "hackathon": "Hackathon",
+    "challenge": "Challenge",
+    "datathon": "Datathon",
+    "competition": "Competition",
+    "fellowship": "Fellowship",
+    "program": "Program",
+}
+
+OPPORTUNITY_HEADER = (
+    "| Opportunity | Type | Application deadline | Event dates | Format "
+    "| Eligibility |\n"
+    "| --- | --- | --- | --- | --- | --- |"
+)
+
+
+def _opportunity_deadline_cell(deadline, today) -> str:
+    # String deadlines ("Rolling", "TBD", "Closed") render verbatim;
+    # date deadlines get the conference-style countdown badge and flip
+    # to Passed on their own.
+    if isinstance(deadline, str):
+        return deadline
+    return _deadline_cell(deadline, today)
+
+
+def _opportunity_row(opp, today) -> str:
+    detail = " ".join(str(opp["relevance"]).split())
+    if opp.get("support"):
+        detail += " " + " ".join(str(opp["support"]).split())
+    name_cell = (
+        f"[{opp['name']}]({opp['url']})<br>"
+        f"<small>{opp['organizer']}. {detail}</small>"
+    )
+    start, end = opp.get("start_date"), opp.get("end_date")
+    dates_cell = _fmt_range(start, end) if start and end else (
+        "TBD" if isinstance(start, str) else "See site")
+    return (
+        f"| {name_cell} | {OPPORTUNITY_TYPE_LABELS[opp['type']]} "
+        f"| {_opportunity_deadline_cell(opp['deadline'], today)} "
+        f"| {dates_cell} | {FORMAT_LABELS[opp['format']]} "
+        f"| {opp['eligibility']} |"
+    )
+
+
+def _opportunity_sort_key(opp, today):
+    """Ascending by next relevant date; undated entries last."""
+    deadline, start = opp["deadline"], opp.get("start_date")
+    if not isinstance(deadline, str) and deadline >= today:
+        return (0, deadline)
+    if start and not isinstance(start, str):
+        return (0, start)
+    return (1, date.max)
+
+
+def _render_opportunities(config) -> str:
+    opportunities = _load(_data_dir(config) / "opportunities.yaml")
+    today = date.today()
+
+    required = ("name", "url", "organizer", "type", "format",
+                "eligibility", "deadline", "relevance", "verified")
+    open_now, past = [], []
+    for opp in opportunities:
+        for field in required:
+            if not opp.get(field):
+                raise ValueError(
+                    f"render_data hook: opportunity "
+                    f"{opp.get('name', '?')!r} is missing {field!r}"
+                )
+        if opp["type"] not in OPPORTUNITY_TYPE_LABELS:
+            raise ValueError(
+                f"render_data hook: unknown opportunity type "
+                f"{opp['type']!r} on {opp['name']!r}"
+            )
+        if opp["format"] not in FORMAT_LABELS:
+            raise ValueError(
+                f"render_data hook: unknown format {opp['format']!r} "
+                f"on {opp['name']!r}"
+            )
+        deadline, end = opp["deadline"], opp.get("end_date")
+        deadline_passed = (not isinstance(deadline, str)
+                           and deadline < today)
+        event_over = end is not None and not isinstance(end, str) \
+            and end < today
+        closed = str(deadline).lower() == "closed"
+        if event_over or closed or (deadline_passed and end is None):
+            past.append(opp)
+        else:
+            open_now.append(opp)
+
+    open_now.sort(key=lambda o: _opportunity_sort_key(o, today))
+    past.sort(key=lambda o: str(o.get("end_date") or o["deadline"]),
+              reverse=True)
+
+    lines = ["## Open and upcoming", ""]
+    if open_now:
+        lines.append(OPPORTUNITY_HEADER)
+        lines.extend(_opportunity_row(o, today) for o in open_now)
+    else:
+        lines.append(
+            "No open opportunities are listed at the moment. Know of "
+            "one? See the note below."
+        )
+    lines.append("")
+
+    if past:
+        lines.append('??? note "Past opportunities"')
+        lines.append("")
+        for row in [OPPORTUNITY_HEADER] + [
+            _opportunity_row(o, today) for o in past
+        ]:
+            for inner in row.split("\n"):
+                lines.append("    " + inner)
+        lines.append("")
+
+    if len(open_now) + len(past) != len(opportunities):
+        raise AssertionError(
+            f"render_data hook: opportunity count mismatch, read "
+            f"{len(opportunities)} but split into {len(open_now)} open "
+            f"+ {len(past)} past"
+        )
+
+    print("render_data: opportunities verification")
+    print(f"  entries read : {len(opportunities)}")
+    print(f"  open         : {len(open_now)}")
+    print(f"  past         : {len(past)}")
+    print(f"  total        : {len(open_now) + len(past)} (cross-check ok)")
+
+    return "\n".join(lines)
+
 
 def _render_conferences(config) -> str:
     conferences = _load(_data_dir(config) / "conferences.yaml")
@@ -824,6 +955,15 @@ def on_page_markdown(markdown, page, config, files):
                 f"{CONFERENCES_MARKER} marker"
             )
         return markdown.replace(CONFERENCES_MARKER, _render_conferences(config))
+    if src == "opportunities.md":
+        if OPPORTUNITIES_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: opportunities.md is missing the "
+                f"{OPPORTUNITIES_MARKER} marker"
+            )
+        return markdown.replace(
+            OPPORTUNITIES_MARKER, _render_opportunities(config)
+        )
     if src == "governance/updates.md":
         if COMMITTEE_WORK_MARKER not in markdown:
             raise AssertionError(

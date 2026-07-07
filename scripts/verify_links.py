@@ -53,6 +53,10 @@ MANUALLY_VERIFIED = {
     # 2026; serves 200 with full content to browser headers (verified
     # 2026-07-01).
     "openevidence.com": "2026-07-01",
+    # The /ml4h/ subpath began returning 403 to scripted clients between
+    # 2026-07-02 (passed the sweep) and 2026-07-06; the AHLI root page is
+    # live and lists ML4H 2026 (December 2026, details coming soon).
+    "ahli.cc": "2026-07-06",
 }
 BOT_BLOCK_STATUSES = {400, 403, 429}
 
@@ -70,6 +74,7 @@ def collect() -> list[tuple[str, str]]:
         "data/guide_videos.yaml",
         "data/learning_resources.yaml",
         "data/committee_work.yaml",
+        "data/opportunities.yaml",
     ):
         path = REPO / yaml_rel
         if not path.exists():

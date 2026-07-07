@@ -67,6 +67,11 @@ llm:
     content_verify:
       provider: anthropic
       model: claude-haiku-4-5
+    # Weekly opportunity screen: small candidate list, strict JSON
+    # contract, relevance and eligibility filter. Pennies per run.
+    opportunity_watch:
+      provider: anthropic
+      model: claude-haiku-4-5
     # Weekly digest narrative: owner editorial decision 2026-07-04, made
     # knowing the benchmark picture (LiveBench has Opus 4.8 slightly ahead
     # globally): Fable 5 writes denser short-form prose, and Opus's
@@ -184,6 +189,28 @@ committee_updates:
 # Conference watch (owner approved 2026-07-01). mode auto applies a changed
 # calendar field only when it passes every gate: the model's evidence quote
 # appears in the fetched official page, the dates stay coherent, and the
+# Weekly opportunity watch (scripts/opportunity_watch.py): sources for
+# buildathons, hackathons, and challenges the community may be eligible
+# for. Propose-only: keeps become GitHub issues; data/opportunities.yaml
+# stays owner-owned. Every source below was fetched and parsed before
+# being committed (2026-07-06). Probed and rejected the same day, so
+# future sessions do not re-litigate: MLH events (page is script-rendered,
+# no parseable markup), PhysioNet news RSS (feed empty), NIH Guide
+# funding RSS (near-empty feed and mostly US-institution-limited
+# awards), Kaggle competitions (requires an API key; revisit if the
+# owner wants to add one). Devpost is filtered to online events because
+# in-person hackathons elsewhere rarely fit an Antigua-based community;
+# community submissions cover exceptions.
+opportunity_watch:
+  max_candidates: 60
+  sources:
+    - name: Devpost online hackathons
+      kind: devpost
+      url: "https://devpost.com/api/hackathons?challenge_type[]=online&status[]=open&status[]=upcoming"
+    - name: Grand Challenge medical AI challenges
+      kind: grand_challenge
+      url: https://grand-challenge.org/api/v1/challenges/
+
 # same value was extracted on stability_runs consecutive runs. Gate failures
 # become issue proposals; new conferences are always propose-only. Set mode
 # to propose to turn all writing off. Roughly 2 to 3 cents per run on the

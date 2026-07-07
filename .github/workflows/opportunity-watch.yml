@@ -1,0 +1,58 @@
+name: Weekly opportunity watch
+
+on:
+  schedule:
+    # Mondays. GitHub cron is best-effort; the exact hour doesn't matter
+    # for a weekly proposal pass.
+    - cron: "40 13 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: opportunity-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Screen opportunity sources for the community
+        id: watch
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python scripts/opportunity_watch.py --report opportunity-watch.md \
+            | tee watch-log.txt
+          n=$(grep -oE 'actionable=[0-9]+' watch-log.txt | grep -oE '[0-9]+')
+          echo "actionable=$n" >> "$GITHUB_OUTPUT"
+      - name: Commit the seen-candidates state
+        run: |
+          git add data/opportunity_watch_state.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(opportunities): watch state $(date -u +%F)"
+            git pull --rebase origin main
+            git push
+          else
+            echo "No state changes; skipping commit."
+          fi
+      - name: Open a proposals issue when there is something to review
+        if: steps.watch.outputs.actionable != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          day=$(date -u +%Y-%m-%d)
+          gh issue create \
+            --title "Opportunity watch ${day}: ${{ steps.watch.outputs.actionable }} item(s) to review" \
+            --body-file opportunity-watch.md
