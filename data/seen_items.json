@@ -12683,6 +12683,194 @@
    "first_seen": "2026-07-07T11:26:03.522282+00:00",
    "kept": false,
    "reason": "opinion piece with no new information relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e85015",
+   "title_hash": "f50741d6fc4fac7ed5d32746443ba7ad",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "Feasibility of Tailoring Artificial Intelligence, Assisted Ambient Scribes for Intensive Care Unit Rounds: Algorithm Development and Validation",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-07T18:00:20+00:00",
+   "summary": "Peer-reviewed study validates feasibility of AI-assisted ambient scribes to reduce documentation burden for intensive care unit physicians.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-to-make-its-own-chips",
+   "title_hash": "29952f66e75f3e2e8ce90949fda69602",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "geopolitics and business strategy, not AI capability or medical relevance"
+  },
+  {
+   "url": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
+   "title_hash": "c9e4feff32bdcf63e63305414ab7ed44",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "vendor marketing, insufficient substantive detail"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1upvw37/beijing_is_not_looking_at_curbing_overseas_access",
+   "title_hash": "a83709d38d15cf494a6390478f17cc41",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "forum meta-discussion and rumor debunking, not primary news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uprmso/beijing_is_looking_at_curbing_overseas_access_to",
+   "title_hash": "3f19de14f23f9bdac39ae51e5d0afb50",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "geopolitics rumor, not AI capability or medical relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&ff=20260707152037&v=2.20.0",
+   "title_hash": "663347f6783a85de6a5892a4e1f52ea6",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "Twelve tips for teaching research skills in the age of agentic AI: A guide for health professions educators",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-07T10:00:00+00:00",
+   "summary": "Peer-reviewed guidance for health professions educators on teaching research skills when students use agentic AI tools.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42412017?fc=20260609215449&ff=20260707152037&v=2.20.0",
+   "title_hash": "bf573995d8725cd4b55b6db8da66eea0",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "The Role of Artificial Intelligence in Nephrology Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-07T10:00:00+00:00",
+   "summary": "Review article examines role of AI and large language models in nephrology education.",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&ff=20260707152037&v=2.20.0",
+   "title_hash": "73d0fe2317f86eb2c6b86a8f1616dea1",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "Development and Evaluation of a Standardized Nursing Language Clinical Decision Support System for Long-Term Care Nurses Using GPT-4.0-Generated Nursing Scenarios",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-07T10:00:00+00:00",
+   "summary": "Study evaluates a GPT-4 clinical decision support system for long-term care nursing using standardized language.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02978-8",
+   "title_hash": "be972a18bc7e1954b415e9ab8a07d9ae",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "Human-in-the-loop validation of a sequential multi-LLM medical education pipeline",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-07T00:00:00+00:00",
+   "summary": "Peer-reviewed research describes a multi-language model medical education pipeline with human-in-the-loop validation.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02976-w",
+   "title_hash": "efb6455b86426b0be70b8f1d5a9bae67",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "Intelligent surgical workflow recognition-based skill assessment for minimally invasive submandibular gland resection",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-07T00:00:00+00:00",
+   "summary": "Published method uses AI to recognize surgical workflow and assess surgeon skill during minimally invasive submandibular gland resection.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02967-x",
+   "title_hash": "39d6aab97e6ccfb08af5c78e0cc1113e",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "title and summary too truncated to assess; appears to be narrow clinical application"
+  },
+  {
+   "url": "https://huggingface.co/blog/skypilot-hf-storage",
+   "title_hash": "4cfddf7aede3fd1926a04d8a23cd371b",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "vendor marketing, cloud infrastructure tooling without substantive news"
+  },
+  {
+   "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
+   "title_hash": "66c72e4a738d2e1f1d2553b023d1033c",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "Small AI Models Gain Traction In places with unreliable networks",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-06T23:59:54+00:00",
+   "summary": "Analysis of small language models gaining adoption in regions with unreliable network infrastructure.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/image.jpg?id=67101133&width=1200&height=600&coordinates=0%2C889%2C0%2C361"
+  },
+  {
+   "url": "https://ternlight-demo.vercel.app/",
+   "title_hash": "993595da83538de0b9ca12315a7f578a",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "minor tool release, embedding model announcement without broader significance"
+  },
+  {
+   "url": "https://www.anthropic.com/research/global-workspace",
+   "title_hash": "08b71ff1c469f03054948fb20ec49338",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "A global workspace in language models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-06T17:44:08+00:00",
+   "summary": "Anthropic research paper describes global workspace mechanism in language models relevant to understanding model reasoning.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.sanity.io/images/4zrzovbb/website/fbdc967f9f3d88566f25b21cce7ef523b3fabbbb-1280x720.jpg"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.01504",
+   "title_hash": "a380e44bbc7cbdf1bec0866e8488d52b",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, Rust model checker unrelated to medical AI"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1yBU41auQhw",
+   "title_hash": "5f21f9b1388134e3b01036e06302741c",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": true,
+   "title": "DeepSeek's New AI Speed Hack Is Amazing",
+   "source": "Two Minute Papers",
+   "published": "2026-07-07T16:33:29+00:00",
+   "summary": "Overview of DeepSeek's efficiency improvements in large language model inference and their technical implementation.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/1yBU41auQhw/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6CljfqMX9i4",
+   "title_hash": "ec1570a0a7e693e0491171eaea33c8b9",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "title is shock-framed speculation with no substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SRXJevuTnNI",
+   "title_hash": "e65ca4aefff0393aa5287b0805ef352c",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Anthropic-Can-Now-Read-Claudes-Mind-e3lphgm",
+   "title_hash": "0d13906b1728cd717c7b7eb4c3548bdb",
+   "first_seen": "2026-07-07T19:20:37.451784+00:00",
+   "kept": false,
+   "reason": "incomplete candidate data; summary cuts off mid-sentence"
   }
  ],
  "digests": [
@@ -12805,18 +12993,18 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A large-scale analysis of medical education research has documented a gradual shift toward technology and artificial intelligence as central topics over the past two decades <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[1]</a>. This transition is reflected in studies evaluating generative AI in medical imaging education, where synthetic pediatric radiology images from general-purpose systems are subjected to quality assessments for teaching use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0\">[5]</a>. Anatomical fidelity is being scrutinized by comparative research on text-to-image AI models, measuring their accuracy against cadaveric dissection and professional atlases <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0\">[8]</a>. Meanwhile, survey findings indicate nearly universal adoption of large language models among Canadian medical students, accompanied by generally positive perceptions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[10]</a>. However, exposure often outpaces formal AI training in graduate medical education settings <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[9]</a>.",
-   "hash": "f67dbbcfff11edbd",
+   "text": "Peer-reviewed research has demonstrated the use of GPT-4-generated scenarios to enhance clinical decision support for long-term care nurses, indicating ongoing integration of generative AI in practical medical education applications <a href=\"https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0\">[3]</a>. A large-scale analysis covering more than two decades has shown a steady shift in medical education research priorities toward technology and artificial intelligence, highlighting the increasing relevance of these tools across curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[5]</a>. At the same time, surveys of medical students reveal widespread adoption and positive perceptions of large language models, although formal training remains limited <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[14]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[13]</a>. Responsible guidance for educators on teaching research skills in the context of agentic AI tools is now available, addressing the evolving needs of health professions education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0\">[1]</a>.",
+   "hash": "88eb176e2ddbc152",
    "date": "July 7, 2026"
   },
   "clinical_practice": {
-   "text": "Deep learning models now predict type 2 diabetes risk from chest X-rays within ethnically diverse populations, highlighting broader applicability for chronic disease screening beyond specialized contexts <a href=\"https://ai.jmir.org/2026/1/e85248\">[8]</a>. Large language models are demonstrating effective clinical discharge summary generation within secure environments, raising both operational benefits and privacy concerns tied to the use of public biosignals data <a href=\"https://ai.jmir.org/2026/1/e88816\">[7]</a> <a href=\"https://www.nature.com/articles/s41746-026-02872-3\">[6]</a>. Meanwhile, deep learning systems achieve improved diagnostic accuracy for acute myocardial infarction from ECGs and offer educational utility through explainable outputs, suggesting advancements for both patient care and teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[3]</a>. Finally, AI assistance for pneumothorax detection affects chest CT workflow by redirecting rather than reducing imaging utilization <a href=\"https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[9]</a>.",
-   "hash": "c966b6260e489fd1",
-   "date": "July 6, 2026"
+   "text": "Large language models have demonstrated effective performance in clinical data extraction and processing, serving as electronic health record encoders <a href=\"https://www.nature.com/articles/s41746-026-02915-9\">[3]</a>. These models have also undergone real-world implementation by generating clinical discharge summaries within secure data environments <a href=\"https://ai.jmir.org/2026/1/e88816\">[9]</a>. In diagnostic roles, AI-enabled systems deliver improved accuracy for acute myocardial infarction from electrocardiogram analysis with explainable outputs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[5]</a> and predict type 2 diabetes risk from chest X-rays across diverse populations <a href=\"https://ai.jmir.org/2026/1/e85248\">[10]</a>. Additionally, studies have validated the feasibility of AI-assisted ambient scribes to reduce documentation burden for intensive care unit physicians <a href=\"https://medinform.jmir.org/2026/1/e85015\">[1]</a>, highlighting developments that address both workflow efficiency and clinical diagnosis.",
+   "hash": "70af84652c50c621",
+   "date": "July 7, 2026"
   },
   "general_ai": {
-   "text": "Tencent released Hy3, a 295-billion-parameter mixture-of-experts language model under an open license, expanding access to high-capacity models for research and application <a href=\"https://simonwillison.net/2026/Jul/6/hy3\">[3]</a>. At the same time, Google has published Gemma 4, continuing its series of open-weights models with upgraded capabilities <a href=\"https://arxiv.org/abs/2607.02770\">[1]</a>. Ongoing technical advances focus on handling longer contexts efficiently, with recent proposals for hierarchical sparse attention methods and resolution-adaptive key-value caches to make large language models more effective at processing extended input <a href=\"https://arxiv.org/abs/2607.02980\">[2]</a> <a href=\"https://arxiv.org/abs/2606.31145\">[9]</a>. Benchmarks such as IsoSci and LoFa now offer ways to measure reasoning and logical robustness, providing tools to assess whether models genuinely understand scientific problems or resist common fallacies <a href=\"https://arxiv.org/abs/2607.01431\">[4]</a> <a href=\"https://arxiv.org/abs/2606.31039\">[8]</a>.",
-   "hash": "c282460701d07ceb",
+   "text": "Google’s release of Gemma 4 introduces a new generation of open-weights language models with enhanced capabilities, potentially broadening access for research and clinical applications <a href=\"https://arxiv.org/abs/2607.02770\">[1]</a>. Concurrently, hierarchical sparse attention techniques are under investigation to support efficient infinite context modeling, which may facilitate handling lengthier medical records and case histories <a href=\"https://arxiv.org/abs/2607.02980\">[2]</a>. Small language models are showing adoption where network reliability is an issue, making advanced AI tools more accessible to faculty and students in regions with infrastructure challenges <a href=\"https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals\">[3]</a>. Meanwhile, Tencent’s Hy3, a large mixture-of-experts model, is now available under an open license, offering new opportunities for customization and local deployment <a href=\"https://simonwillison.net/2026/Jul/6/hy3\">[4]</a>.",
+   "hash": "d14ff0b0c269a6bf",
    "date": "July 7, 2026"
   }
  }

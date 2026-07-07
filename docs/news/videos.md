@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=1yBU41auQhw" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/1yBU41auQhw/hqdefault.jpg" alt="Video: DeepSeek&#x27;s New AI Speed Hack Is Amazing" loading="lazy">
+  <span class="video-card-title">DeepSeek&#x27;s New AI Speed Hack Is Amazing</span>
+  <span class="video-card-meta">Two Minute Papers, July 7, 2026</span>
+  <span class="video-card-desc">Overview of DeepSeek&#x27;s efficiency improvements in large language model inference and their technical implementation.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=twIpCciU7VE" target="_blank" rel="noopener">
   <img src="https://i1.ytimg.com/vi/twIpCciU7VE/hqdefault.jpg" alt="Video: Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)" loading="lazy">
   <span class="video-card-title">Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">They Looked Inside Claude’s AI&#x27;s Mind. It Got Weird</span>
   <span class="video-card-meta">Two Minute Papers, June 16, 2026</span>
   <span class="video-card-desc">Researchers examine interpretability findings from Claude&#x27;s internal representations, revealing unexpected patterns in how the model processes information.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=4vfvvzzwcwI" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/4vfvvzzwcwI/hqdefault.jpg" alt="Video: Kagenti’s Approach to Multi-Agent Security for AI Agents" loading="lazy">
-  <span class="video-card-title">Kagenti’s Approach to Multi-Agent Security for AI Agents</span>
-  <span class="video-card-meta">IBM Technology, June 16, 2026</span>
-  <span class="video-card-desc">Security approaches for multi-agent AI systems, covering data leakage risks and safeguards for autonomous agent deployments.</span>
 </a>
 </div>
 

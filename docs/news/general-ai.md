@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Tencent released Hy3, a 295-billion-parameter mixture-of-experts language model under an open license, expanding access to high-capacity models for research and application <a href="https://simonwillison.net/2026/Jul/6/hy3">[3]</a>. At the same time, Google has published Gemma 4, continuing its series of open-weights models with upgraded capabilities <a href="https://arxiv.org/abs/2607.02770">[1]</a>. Ongoing technical advances focus on handling longer contexts efficiently, with recent proposals for hierarchical sparse attention methods and resolution-adaptive key-value caches to make large language models more effective at processing extended input <a href="https://arxiv.org/abs/2607.02980">[2]</a> <a href="https://arxiv.org/abs/2606.31145">[9]</a>. Benchmarks such as IsoSci and LoFa now offer ways to measure reasoning and logical robustness, providing tools to assess whether models genuinely understand scientific problems or resist common fallacies <a href="https://arxiv.org/abs/2607.01431">[4]</a> <a href="https://arxiv.org/abs/2606.31039">[8]</a>.</p>
+<p>Google’s release of Gemma 4 introduces a new generation of open-weights language models with enhanced capabilities, potentially broadening access for research and clinical applications <a href="https://arxiv.org/abs/2607.02770">[1]</a>. Concurrently, hierarchical sparse attention techniques are under investigation to support efficient infinite context modeling, which may facilitate handling lengthier medical records and case histories <a href="https://arxiv.org/abs/2607.02980">[2]</a>. Small language models are showing adoption where network reliability is an issue, making advanced AI tools more accessible to faculty and students in regions with infrastructure challenges <a href="https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals">[3]</a>. Meanwhile, Tencent’s Hy3, a large mixture-of-experts model, is now available under an open license, offering new opportunities for customization and local deployment <a href="https://simonwillison.net/2026/Jul/6/hy3">[4]</a>.</p>
 <p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -34,10 +34,26 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals">Small AI Models Gain Traction In places with unreliable networks</a>
+    <p class="news-card-summary">Analysis of small language models gaining adoption in regions with unreliable network infrastructure.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/image.jpg?id=67101133&amp;width=1200&amp;height=600&amp;coordinates=0%2C889%2C0%2C361" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://simonwillison.net/2026/Jul/6/hy3">tencent/Hy3</a>
     <p class="news-card-summary">Tencent released Hy3, a 295-billion-parameter open-weights mixture-of-experts model under Apache 2.0 license.</p>
   </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.anthropic.com/research/global-workspace">A global workspace in language models</a>
+    <p class="news-card-summary">Anthropic research paper describes global workspace mechanism in language models relevant to understanding model reasoning.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.sanity.io/images/4zrzovbb/website/fbdc967f9f3d88566f25b21cce7ef523b3fabbbb-1280x720.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -114,20 +130,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2606.31033">CORTEX: Token-Level Hallucination Detection in RAG via Comparative Internal Representations</a>
     <p class="news-card-summary">CORTEX proposes token-level hallucination detection in retrieval-augmented generation systems via comparative internal model representations.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.31039">Truth or Sophistry? LoFa: A Benchmark for LLM Robustness Against Logical Fallacies</a>
-    <p class="news-card-summary">LoFa benchmark evaluates large language model robustness against logical fallacies in reasoning tasks.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.31145">SeKV: Resolution-Adaptive KV Cache with Hierarchical Semantic Memory for Long-Context LLM Inference</a>
-    <p class="news-card-summary">SeKV introduces resolution-adaptive key-value cache with hierarchical semantic memory to improve long-context large language model inference efficiency.</p>
   </div>
 </div>
 </div>
