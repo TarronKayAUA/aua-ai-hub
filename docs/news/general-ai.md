@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>US regulators have cleared Anthropic&#x27;s Fable and Mythos artificial intelligence models for worldwide deployment after safety testing, removing prior export restrictions and marking an important shift in global accessibility for advanced AI systems <a href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">[3]</a>. Concurrently, Google&#x27;s expansion of AI infrastructure contributed to a 37 percent rise in electricity consumption in 2025, highlighting energy demands that accompany technological progress and ongoing efforts to balance emissions with clean energy sources <a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">[2]</a>. On the technical front, new benchmarks such as IsoSci now evaluate whether large language models demonstrate genuine reasoning or rely on knowledge retrieval when solving cross-domain science problems <a href="https://arxiv.org/abs/2607.01431">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the items below.</p>
+<p>Tencent released Hy3, a 295-billion-parameter mixture-of-experts language model under an open license, expanding access to high-capacity models for research and application <a href="https://simonwillison.net/2026/Jul/6/hy3">[3]</a>. At the same time, Google has published Gemma 4, continuing its series of open-weights models with upgraded capabilities <a href="https://arxiv.org/abs/2607.02770">[1]</a>. Ongoing technical advances focus on handling longer contexts efficiently, with recent proposals for hierarchical sparse attention methods and resolution-adaptive key-value caches to make large language models more effective at processing extended input <a href="https://arxiv.org/abs/2607.02980">[2]</a> <a href="https://arxiv.org/abs/2606.31145">[9]</a>. Benchmarks such as IsoSci and LoFa now offer ways to measure reasoning and logical robustness, providing tools to assess whether models genuinely understand scientific problems or resist common fallacies <a href="https://arxiv.org/abs/2607.01431">[4]</a> <a href="https://arxiv.org/abs/2606.31039">[8]</a>.</p>
+<p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.02770">Gemma 4 Technical Report</a>
+    <p class="news-card-summary">Google released Gemma 4, a new generation of open-weights language models with improved capabilities.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.02980">Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling</a>
+    <p class="news-card-summary">Research on hierarchical sparse attention methods to enable large language models to handle longer context windows efficiently.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/6/hy3">tencent/Hy3</a>
+    <p class="news-card-summary">Tencent released Hy3, a 295-billion-parameter open-weights mixture-of-experts model under Apache 2.0 license.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 6, 2026</span></div>
@@ -56,6 +77,14 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Mistral released Leansral 1.5, a 119-billion-parameter open-weights model with 6-billion active parameters under Apache 2.0 license.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/ODJmTYJPSSbtKSPmO8gS3EmI__gMc5r8LJxlf8jL8KI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e875cb86d094c38614bc35319ea7422fcd655e2d" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1um84bd/followup_deepseek_v4_flash_on_2x_rtx_pro_6000">Follow-up: DeepSeek V4 Flash on 2x RTX PRO 6000 finishes real coding tasks faster than Sonnet and Opus, at about Sonnet quality</a>
+    <p class="news-card-summary">DeepSeek V4 Flash local model demonstrates coding performance comparable to Claude Sonnet at lower cost on consumer GPUs.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/ofq8evjmmyah1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d367345aaa68ac30b7d90d7843dc95e7e8911e2f" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -100,37 +129,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://arxiv.org/abs/2606.31145">SeKV: Resolution-Adaptive KV Cache with Hierarchical Semantic Memory for Long-Context LLM Inference</a>
     <p class="news-card-summary">SeKV introduces resolution-adaptive key-value cache with hierarchical semantic memory to improve long-context large language model inference efficiency.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jun/30/claude-sonnet-5">What&#x27;s new in Claude Sonnet 5</a>
-    <p class="news-card-summary">Claude Sonnet 5 released with improvements detailed in Simon Willison&#x27;s analysis of new capabilities.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/sonnet-5-pelican.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/ibm-research/scarfbench">ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration</a>
-    <p class="news-card-summary">ScarfBench benchmark evaluates artificial intelligence agents on enterprise Java framework migration tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/649c1276a83f996b4191a8f1/iYCwB2Hl8qPTA8DCgDilB.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable">Why Specialization Is Inevitable</a>
-    <p class="news-card-summary">Hugging Face analysis of model specialization trends in artificial intelligence development and deployment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Av4v9_l94sEUj-etRFOLb.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">June 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_openpangu20flash_92b_total6b">Huawei open-sources OpenPangu-2.0-Flash - 92B total,6B active</a>
-    <p class="news-card-summary">Huawei open-sources OpenPangu-2.0-Flash, a 92-billion-parameter model with 6 billion active parameters.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/29tji3noteah1.png?width=140&amp;height=79&amp;auto=webp&amp;s=8e1b8705ac867254bf81d890012ab45ba820cea2" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

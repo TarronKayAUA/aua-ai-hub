@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=twIpCciU7VE" target="_blank" rel="noopener">
+  <img src="https://i1.ytimg.com/vi/twIpCciU7VE/hqdefault.jpg" alt="Video: Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)" loading="lazy">
+  <span class="video-card-title">Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)</span>
+  <span class="video-card-meta">WorldofAI, July 7, 2026</span>
+  <span class="video-card-desc">Tencent released HY3, an open-weight language model available for free use and local deployment.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=mIVHFU94Xhc" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg" alt="Video: Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?" loading="lazy">
   <span class="video-card-title">Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Kagenti’s Approach to Multi-Agent Security for AI Agents</span>
   <span class="video-card-meta">IBM Technology, June 16, 2026</span>
   <span class="video-card-desc">Security approaches for multi-agent AI systems, covering data leakage risks and safeguards for autonomous agent deployments.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=MTmhgIVhpag" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/MTmhgIVhpag/hqdefault.jpg" alt="Video: What Is AI Pair Programming? AI Coding Tools for Developers" loading="lazy">
-  <span class="video-card-title">What Is AI Pair Programming? AI Coding Tools for Developers</span>
-  <span class="video-card-meta">IBM Technology, June 15, 2026</span>
-  <span class="video-card-desc">Overview of AI pair programming tools and their application to software development workflows.</span>
 </a>
 </div>
 

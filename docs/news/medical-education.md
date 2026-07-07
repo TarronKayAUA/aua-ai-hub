@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A large-scale analysis of medical education research over the past 24 years shows a steady shift toward technology and artificial intelligence as central themes <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. Despite high exposure to artificial intelligence among graduate medical trainees, formal training remains limited and unaddressed, indicating substantial gaps in preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[8]</a>. Student-driven studies highlight the need for clear principles supporting responsible generative AI use in education <a href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">[6]</a>, while nearly universal adoption of large language models by Canadian medical students points to generally positive perceptions but raises questions regarding the quality and guidance of AI use <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[9]</a>. Additionally, peer-reviewed evaluations suggest generative AI can produce synthetic radiology images suitable for pediatric medical education, reinforcing its growing role in teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 6, 2026; numbered links go to the items below.</p>
+<p>A large-scale analysis of medical education research has documented a gradual shift toward technology and artificial intelligence as central topics over the past two decades <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[1]</a>. This transition is reflected in studies evaluating generative AI in medical imaging education, where synthetic pediatric radiology images from general-purpose systems are subjected to quality assessments for teaching use <a href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">[5]</a>. Anatomical fidelity is being scrutinized by comparative research on text-to-image AI models, measuring their accuracy against cadaveric dissection and professional atlases <a href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">[8]</a>. Meanwhile, survey findings indicate nearly universal adoption of large language models among Canadian medical students, accompanied by generally positive perceptions <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[10]</a>. However, exposure often outpaces formal AI training in graduate medical education settings <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -51,6 +51,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Widely available, general-purpose generative AI applications for radiology education: determining the teaching quality of synthetic pediatric neuroradiology images</a>
     <p class="news-card-summary">Peer-reviewed study evaluating synthetic pediatric radiology images from general-purpose generative AI for medical education quality.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42409437?fc=20260609215449&amp;ff=20260707072603&amp;v=2.20.0">The Role of Artificial Intelligence in Medical Education and Training: Implications for Rheumatology</a>
+    <p class="news-card-summary">A review of artificial intelligence applications in rheumatology medical education and training.</p>
   </div>
 </div>
 <div class="news-card">
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394077?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Vibe Coding to Democratize Dementia mHealth Development: Preliminary Findings</a>
     <p class="news-card-summary">Vibe coding enables health professionals without programming expertise to develop dementia-focused mobile health applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Designing Effective Laboratory Sessions of AI in Medicine: A Practical Relevance Index</a>
-    <p class="news-card-summary">A practical relevance index framework guides design of effective laboratory sessions for teaching artificial intelligence in medicine.</p>
   </div>
 </div>
 </div>

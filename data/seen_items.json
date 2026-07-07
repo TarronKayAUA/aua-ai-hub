@@ -12350,6 +12350,339 @@
    "first_seen": "2026-07-06T21:51:22.875117+00:00",
    "kept": false,
    "reason": "vendor marketing, not a significant development or capability announcement"
+  },
+  {
+   "url": "https://arstechnica.com/features/2026/07/robot-workers-rising-how-ai-may-drive-general-purpose-autonomy-in-robotics",
+   "title_hash": "57f8ab75b12eb76fea99875609eed8ea",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42411007?fc=20260609215449&ff=20260707072603&v=2.20.0",
+   "title_hash": "ae486beb1f78c40fe4d0e9ca9b1d8534",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02668",
+   "title_hash": "bc1088f75cff1fd0151d81d9003fd3dc",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02734",
+   "title_hash": "be25b38539f3e9558e93467e03d034ca",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02757",
+   "title_hash": "01cd2b6dfc7dc98da9aa8fad24034edf",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02763",
+   "title_hash": "b87ddeb253581c5a82bd2cc4e88534c5",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02770",
+   "title_hash": "556838fd2fc859e2d51c7f59004b1c78",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": true,
+   "title": "Gemma 4 Technical Report",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-07T04:00:00+00:00",
+   "summary": "Google released Gemma 4, a new generation of open-weights language models with improved capabilities.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02802",
+   "title_hash": "78c5b5beb354a76d8a72d767a1269072",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02862",
+   "title_hash": "122736b1fe1f9b2e8fd91c076722df31",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02881",
+   "title_hash": "cf8f57c827ec5dd10fc62b7683b191c3",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02885",
+   "title_hash": "533c35a1116c85d238c0243256e2efca",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02966",
+   "title_hash": "03168c2f85cf53d3cf00fc794ecc9794",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.02980",
+   "title_hash": "2feb6c8d594633ea7982bcb2966b5a0d",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": true,
+   "title": "Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-07T04:00:00+00:00",
+   "summary": "Research on hierarchical sparse attention methods to enable large language models to handle longer context windows efficiently.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03003",
+   "title_hash": "a24a9bad228bcba8d9d97683feee09d9",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03049",
+   "title_hash": "3e369cbb0f75f0d62ff672076cbcfd4e",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03093",
+   "title_hash": "54935ee8b2ae49ff79343c63e44f69f3",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03154",
+   "title_hash": "2e1244529b6ad9b794258571de1239a0",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03160",
+   "title_hash": "06c22dbb17db8f6106352a2b041d091a",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03166",
+   "title_hash": "0e406c6e4df6b1d6c57703618fec1ddf",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03207",
+   "title_hash": "0b917bfbfdd54727e430faba3b35219b",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03236",
+   "title_hash": "36d74f01fe3758c3c57293cc829cf2b3",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03323",
+   "title_hash": "7175dd8906c04bf3ba68a6529f5f764c",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03325",
+   "title_hash": "cdf01d1aadfe73744c5f932930bf9a5c",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03346",
+   "title_hash": "7e114a132c6108f3fdd629d5c3fc658b",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03377",
+   "title_hash": "5f3f4570204ad3b28ce75563a007e53e",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03414",
+   "title_hash": "d71e7fc5b3a7c191b4b2d461cd5ffb3a",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.03466",
+   "title_hash": "4b0c77477e40f29cf6ef3f00cd71f48b",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04472-w",
+   "title_hash": "110b95ca1023495300d9cb552a4203a1",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04411-9",
+   "title_hash": "9e92621cd7869a39b15823f40ac09576",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04511-6",
+   "title_hash": "590acefdbfb452b9e82b000d8cd04aa5",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/6/hy3",
+   "title_hash": "17486037db93a202cd73c25a22e12ce7",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": true,
+   "title": "tencent/Hy3",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-06T23:57:35+00:00",
+   "summary": "Tencent released Hy3, a 295-billion-parameter open-weights mixture-of-experts model under Apache 2.0 license.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1up9x38/so_anyone_copped_one_of_these",
+   "title_hash": "b1eaf551e78cb531e6d5db011b6b89eb",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42409437?fc=20260609215449&ff=20260707072603&v=2.20.0",
+   "title_hash": "2d8447f583527818420ac701a7d46a7a",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": true,
+   "title": "The Role of Artificial Intelligence in Medical Education and Training: Implications for Rheumatology",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-06T10:00:00+00:00",
+   "summary": "A review of artificial intelligence applications in rheumatology medical education and training.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42407166?fc=20260609215449&ff=20260707072603&v=2.20.0",
+   "title_hash": "e898aa4e50013d72a1b2d40df61c5f2a",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42406767?fc=20260609215449&ff=20260707072603&v=2.20.0",
+   "title_hash": "ee39c62027edfff58e5cad4c2dd568cf",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uoauvk/i_developed_a_270_million_parameter_language",
+   "title_hash": "4198973c386f31ddbbca8545e2886d04",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1um84bd/followup_deepseek_v4_flash_on_2x_rtx_pro_6000",
+   "title_hash": "b570a2d8df0f69b51a207be3ce89102c",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": true,
+   "title": "Follow-up: DeepSeek V4 Flash on 2x RTX PRO 6000 finishes real coding tasks faster than Sonnet and Opus, at about Sonnet quality",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-03T07:55:54+00:00",
+   "summary": "DeepSeek V4 Flash local model demonstrates coding performance comparable to Claude Sonnet at lower cost on consumer GPUs.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/ofq8evjmmyah1.png?width=640&crop=smart&auto=webp&s=d367345aaa68ac30b7d90d7843dc95e7e8911e2f"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1KKB_UiW6ls",
+   "title_hash": "38ab1fd65ab040f036bae5ebc510c0da",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=twIpCciU7VE",
+   "title_hash": "5400c1423a61fe3ad2aae37db90723d4",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": true,
+   "title": "Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)",
+   "source": "WorldofAI",
+   "published": "2026-07-07T04:09:21+00:00",
+   "summary": "Tencent released HY3, an open-weight language model available for free use and local deployment.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/twIpCciU7VE/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=sLYXRA5Ay9g",
+   "title_hash": "6df3e0066f666fcd8ffe1628025b2729",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0x4KRxmRGz4",
+   "title_hash": "d5b4d1b0b4370592d922e62fe2656193",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=goU9VIXA8II",
+   "title_hash": "70c361fb17e20afb9d0297fa3c592c6a",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Is-Making-One-Person-Million-Dollar-Companies-More-Common-e3lo4bm",
+   "title_hash": "247cc029c48f0d6c450fab16ce17c36a",
+   "first_seen": "2026-07-07T11:26:03.522282+00:00",
+   "kept": false,
+   "reason": "opinion piece with no new information relevant to medical education or clinical practice"
   }
  ],
  "digests": [
@@ -12472,9 +12805,9 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A large-scale analysis of medical education research over the past 24 years shows a steady shift toward technology and artificial intelligence as central themes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[1]</a>. Despite high exposure to artificial intelligence among graduate medical trainees, formal training remains limited and unaddressed, indicating substantial gaps in preparedness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[8]</a>. Student-driven studies highlight the need for clear principles supporting responsible generative AI use in education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0\">[6]</a>, while nearly universal adoption of large language models by Canadian medical students points to generally positive perceptions but raises questions regarding the quality and guidance of AI use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[9]</a>. Additionally, peer-reviewed evaluations suggest generative AI can produce synthetic radiology images suitable for pediatric medical education, reinforcing its growing role in teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0\">[5]</a>.",
-   "hash": "8ca79a4641586a67",
-   "date": "July 6, 2026"
+   "text": "A large-scale analysis of medical education research has documented a gradual shift toward technology and artificial intelligence as central topics over the past two decades <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[1]</a>. This transition is reflected in studies evaluating generative AI in medical imaging education, where synthetic pediatric radiology images from general-purpose systems are subjected to quality assessments for teaching use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0\">[5]</a>. Anatomical fidelity is being scrutinized by comparative research on text-to-image AI models, measuring their accuracy against cadaveric dissection and professional atlases <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0\">[8]</a>. Meanwhile, survey findings indicate nearly universal adoption of large language models among Canadian medical students, accompanied by generally positive perceptions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[10]</a>. However, exposure often outpaces formal AI training in graduate medical education settings <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[9]</a>.",
+   "hash": "f67dbbcfff11edbd",
+   "date": "July 7, 2026"
   },
   "clinical_practice": {
    "text": "Deep learning models now predict type 2 diabetes risk from chest X-rays within ethnically diverse populations, highlighting broader applicability for chronic disease screening beyond specialized contexts <a href=\"https://ai.jmir.org/2026/1/e85248\">[8]</a>. Large language models are demonstrating effective clinical discharge summary generation within secure environments, raising both operational benefits and privacy concerns tied to the use of public biosignals data <a href=\"https://ai.jmir.org/2026/1/e88816\">[7]</a> <a href=\"https://www.nature.com/articles/s41746-026-02872-3\">[6]</a>. Meanwhile, deep learning systems achieve improved diagnostic accuracy for acute myocardial infarction from ECGs and offer educational utility through explainable outputs, suggesting advancements for both patient care and teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[3]</a>. Finally, AI assistance for pneumothorax detection affects chest CT workflow by redirecting rather than reducing imaging utilization <a href=\"https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0\">[9]</a>.",
@@ -12482,9 +12815,9 @@
    "date": "July 6, 2026"
   },
   "general_ai": {
-   "text": "US regulators have cleared Anthropic&#x27;s Fable and Mythos artificial intelligence models for worldwide deployment after safety testing, removing prior export restrictions and marking an important shift in global accessibility for advanced AI systems <a href=\"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release\">[3]</a>. Concurrently, Google&#x27;s expansion of AI infrastructure contributed to a 37 percent rise in electricity consumption in 2025, highlighting energy demands that accompany technological progress and ongoing efforts to balance emissions with clean energy sources <a href=\"https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025\">[2]</a>. On the technical front, new benchmarks such as IsoSci now evaluate whether large language models demonstrate genuine reasoning or rely on knowledge retrieval when solving cross-domain science problems <a href=\"https://arxiv.org/abs/2607.01431\">[1]</a>.",
-   "hash": "6b5a3de756f19faf",
-   "date": "July 6, 2026"
+   "text": "Tencent released Hy3, a 295-billion-parameter mixture-of-experts language model under an open license, expanding access to high-capacity models for research and application <a href=\"https://simonwillison.net/2026/Jul/6/hy3\">[3]</a>. At the same time, Google has published Gemma 4, continuing its series of open-weights models with upgraded capabilities <a href=\"https://arxiv.org/abs/2607.02770\">[1]</a>. Ongoing technical advances focus on handling longer contexts efficiently, with recent proposals for hierarchical sparse attention methods and resolution-adaptive key-value caches to make large language models more effective at processing extended input <a href=\"https://arxiv.org/abs/2607.02980\">[2]</a> <a href=\"https://arxiv.org/abs/2606.31145\">[9]</a>. Benchmarks such as IsoSci and LoFa now offer ways to measure reasoning and logical robustness, providing tools to assess whether models genuinely understand scientific problems or resist common fallacies <a href=\"https://arxiv.org/abs/2607.01431\">[4]</a> <a href=\"https://arxiv.org/abs/2606.31039\">[8]</a>.",
+   "hash": "c282460701d07ceb",
+   "date": "July 7, 2026"
   }
  }
 }
