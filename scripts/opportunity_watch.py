@@ -36,10 +36,21 @@ import requests
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate import resolve_task_llm  # noqa: E402
+from aggregate import remove_dashes, resolve_task_llm  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
 STATE_PATH = REPO / "data" / "opportunity_watch_state.json"
+OPPORTUNITIES_PATH = REPO / "data" / "opportunities.yaml"
+
+# Tiered autonomy (owner approved 2026-07-08): keeps hosted on managed
+# platforms, where the platform itself vets organizers, may be applied
+# automatically when every mechanical gate passes; keeps on unknown
+# domains are always proposals. feeds.yaml `opportunity_watch.mode:
+# propose` is the kill switch that returns everything to proposals.
+MANAGED_HOST_SUFFIXES = ("devpost.com", "grand-challenge.org")
+ALLOWED_TYPES = {"buildathon", "hackathon", "challenge", "datathon",
+                 "competition", "fellowship", "program"}
+ALLOWED_FORMATS = {"virtual", "hybrid", "in_person"}
 BROWSER_UA = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -72,6 +83,128 @@ no prose:
   "type": "buildathon" or "hackathon" or "challenge" or "datathon" or
           "competition" or "fellowship" or "program",
   "why": "one sentence for the site owner, plain language, no em dashes"}]}"""
+
+GATE_SYSTEM = """You verify one candidate opportunity against text
+fetched today from its own page, for automated listing on a university
+site. Judge only from the page text; answer "unknown" whenever the text
+is insufficient. Output only a JSON object, no prose, no em dashes in
+any string:
+
+{"page_matches": true or false (the page is about this opportunity and
+  it is currently open or upcoming, not a concluded edition),
+ "organizer": "who runs it, as named on the page" or "unknown",
+ "free_entry": true or false or "unknown",
+ "deadline": "YYYY-MM-DD" or "rolling" or "unknown",
+ "start_date": "YYYY-MM-DD" or null,
+ "end_date": "YYYY-MM-DD" or null,
+ "eligibility": "one line: who may take part" or "unknown",
+ "format": "virtual" or "hybrid" or "in_person" or "unknown",
+ "support": "one line of organizer-stated prizes or support" or null}"""
+
+
+def strip_page(url: str, page_chars: int = 9000) -> str:
+    resp = requests.get(url, headers=BROWSER_UA, timeout=25)
+    resp.raise_for_status()
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", resp.text,
+                  flags=re.S | re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", text)[:page_chars]
+
+
+def is_managed_host(url: str) -> bool:
+    host = re.sub(r"^https?://", "", url).split("/")[0].lower()
+    return any(host == s or host.endswith("." + s)
+               for s in MANAGED_HOST_SUFFIXES)
+
+
+def check_gates(keep: dict, verdict: dict, existing_names: set,
+                title: str) -> list[str]:
+    """Return the list of failed gates; empty means auto-apply."""
+    failed = []
+    if verdict.get("page_matches") is not True:
+        failed.append("page does not confirm a current opportunity")
+    organizer = verdict.get("organizer")
+    if not organizer or organizer == "unknown":
+        failed.append("organizer not named on the page")
+    if verdict.get("free_entry") is not True:
+        failed.append("free entry not confirmed")
+    deadline = str(verdict.get("deadline") or "unknown").strip().lower()
+    if deadline == "rolling":
+        pass
+    elif re.fullmatch(r"\d{4}-\d{2}-\d{2}", deadline):
+        if deadline < date.today().isoformat():
+            failed.append("deadline already passed")
+    else:
+        failed.append("deadline not confirmed on the page")
+    if keep.get("type") not in ALLOWED_TYPES:
+        failed.append(f"unknown type {keep.get('type')!r}")
+    fmt = verdict.get("format")
+    if fmt not in ALLOWED_FORMATS:
+        failed.append("format not confirmed")
+    for field in ("start_date", "end_date"):
+        v = verdict.get(field)
+        if v is not None and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(v)):
+            failed.append(f"{field} not a plain date")
+    if title.lower() in existing_names:
+        failed.append("already listed")
+    return failed
+
+
+def build_entry_yaml(title: str, url: str, keep: dict, verdict: dict,
+                     today_iso: str) -> str:
+    """Render one opportunities.yaml entry with an auto-verified comment.
+    Every string is dash-scrubbed to hold the site style in generated
+    copy."""
+    def clean(text: str) -> str:
+        return remove_dashes(" ".join(str(text).split()))
+
+    deadline = str(verdict["deadline"]).strip()
+    deadline_out = ("Rolling" if deadline.lower() == "rolling"
+                    else deadline)
+    support = verdict.get("support")
+    lines = [
+        f"# Auto-verified {today_iso} from the official page (managed "
+        "platform; gates: current, organizer named, free entry, "
+        "deadline confirmed).",
+        f"- name: {clean(title)}",
+        f"  url: {url}",
+        f"  organizer: {clean(verdict['organizer'])}",
+        f"  type: {keep['type']}",
+        f"  format: {verdict['format']}",
+        f"  eligibility: {clean(verdict['eligibility'])}",
+        f"  deadline: {deadline_out}",
+    ]
+    if verdict.get("start_date"):
+        lines.append(f"  start_date: {verdict['start_date']}")
+    if verdict.get("end_date"):
+        lines.append(f"  end_date: {verdict['end_date']}")
+    if support:
+        support_clean = clean(support)
+        if not support_clean.lower().startswith("organizer-stated"):
+            support_clean = f"Organizer-stated: {support_clean}"
+        lines.append(f'  support: "{support_clean}"')
+    lines.append(f"  relevance: {clean(keep.get('why', ''))}")
+    lines.append(f"  verified: {today_iso}")
+    return "\n".join(lines)
+
+
+def append_opportunity(entry_yaml: str, entry_name: str) -> None:
+    """Append the entry, then prove the file still parses and the entry
+    landed exactly once; restore on any failure."""
+    original = OPPORTUNITIES_PATH.read_text(encoding="utf-8")
+    updated = original.rstrip("\n") + "\n\n" + entry_yaml + "\n"
+    parsed = yaml.safe_load(updated)
+    names = [e["name"] for e in parsed]
+    if names.count(entry_name) != 1:
+        raise ValueError(f"entry {entry_name!r} would appear "
+                         f"{names.count(entry_name)} times")
+    required = ("name", "url", "organizer", "type", "format",
+                "eligibility", "deadline", "relevance", "verified")
+    new_entry = next(e for e in parsed if e["name"] == entry_name)
+    for field in required:
+        if not new_entry.get(field):
+            raise ValueError(f"auto entry missing {field!r}")
+    OPPORTUNITIES_PATH.write_text(updated, encoding="utf-8", newline="\n")
 
 
 def fetch_devpost(url: str) -> list[dict]:
@@ -221,22 +354,80 @@ def main() -> int:
             json.dumps(state, indent=1, ensure_ascii=False),
             encoding="utf-8", newline="\n")
 
+    # Tiered autonomy: gate-verify keeps from managed platforms and apply
+    # the passers; everything else stays a proposal.
+    mode = str(watch_cfg.get("mode", "propose")).lower()
+    today_iso = date.today().isoformat()
+    applied, proposals = [], []
+    gate_call = gate_cfg = None
+    if keeps and mode == "auto" and not args.no_state:
+        _, gate_call, gate_cfg = resolve_task_llm(config, "gate_verify")
+    existing_names = set()
+    if OPPORTUNITIES_PATH.exists():
+        existing_names = {
+            str(e["name"]).lower()
+            for e in yaml.safe_load(
+                OPPORTUNITIES_PATH.read_text(encoding="utf-8"))
+        }
+    for keep in keeps:
+        c = by_url[keep["url"]]
+        if gate_call is None or not is_managed_host(keep["url"]):
+            proposals.append((keep, None))
+            continue
+        try:
+            page = strip_page(keep["url"])
+            raw = gate_call(
+                GATE_SYSTEM,
+                (f"OPPORTUNITY: {c['title']}\nURL: {keep['url']}\n"
+                 f"SOURCE DETAIL: {c['detail']}\nPAGE TEXT: {page}"),
+                gate_cfg, 120).strip()
+            raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)
+            verdict = json.loads(raw)
+        except (requests.RequestException, ValueError, KeyError,
+                json.JSONDecodeError) as exc:
+            proposals.append(
+                (keep, f"gate check errored ({type(exc).__name__}), "
+                       "left as a proposal"))
+            continue
+        failed = check_gates(keep, verdict, existing_names, c["title"])
+        if failed:
+            proposals.append((keep, "gates failed: " + "; ".join(failed)))
+            continue
+        try:
+            entry_yaml = build_entry_yaml(c["title"], keep["url"], keep,
+                                          verdict, today_iso)
+            clean_name = remove_dashes(" ".join(str(c["title"]).split()))
+            append_opportunity(entry_yaml, clean_name)
+            existing_names.add(clean_name.lower())
+            applied.append((clean_name, keep["url"]))
+        except (ValueError, OSError) as exc:
+            failures.append(f"apply {c['title'][:50]}: {exc}")
+
     report_lines = [
-        "Weekly automated opportunity watch. Everything below is a "
-        "proposal: verify each on its official page (organizer "
-        "identifiable, free to enter, deadline confirmed) before adding "
-        "it to `data/opportunities.yaml`; the vetting bar and field "
-        "definitions are in that file's header. Support figures are "
-        "always framed as organizer-stated.",
+        "Weekly automated opportunity watch. Gate-passing finds from "
+        "managed platforms were applied to `data/opportunities.yaml` "
+        "with auto-verified comments (they reach the live page on the "
+        "next site build); everything under Proposals needs a human "
+        "check against the official page before listing. The vetting "
+        "bar and field definitions are in the data file's header.",
         "",
     ]
-    if keeps:
+    if applied:
+        report_lines.extend(["## Auto-applied", ""])
+        for name, url in applied:
+            report_lines.append(f"- [{name}]({url})")
+        report_lines.append("")
+    if proposals:
         report_lines.extend(["## Proposed opportunities", ""])
-        for keep in keeps:
+        for keep, note in proposals:
             c = by_url[keep["url"]]
             report_lines.extend([
                 f"### {c['title']}",
                 "",
+            ])
+            if note:
+                report_lines.extend([f"_{note}_", ""])
+            report_lines.extend([
                 f"- why: {keep.get('why', '')}",
                 f"- source detail: {c['detail']}",
                 "",
@@ -272,11 +463,13 @@ def main() -> int:
     print(f"candidates       : {fetched_total} fetched, "
           f"{len(candidates)} new (unseen), sent to model: "
           f"{len(candidates) if decided else 0}")
-    print(f"keeps proposed   : {len(keeps)}")
+    print(f"mode             : {mode}")
+    print(f"keeps            : {len(keeps)} "
+          f"({len(applied)} auto-applied, {len(proposals)} proposed)")
     print(f"dropped ungrounded: {dropped_ungrounded}")
     print(f"state written    : {'no (--no-state or undecided)' if (args.no_state or not decided) else f'{len(candidates)} urls marked seen'}")
     print(f"failures         : {len(failures)}")
-    print(f"actionable={len(keeps) + len(failures)}")
+    print(f"actionable={len(proposals) + len(failures)}")
     return 0
 
 

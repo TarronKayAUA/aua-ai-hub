@@ -1350,6 +1350,7 @@ def load_ledger() -> dict:
     ledger.setdefault("digests", [])
     ledger.setdefault("last_digest_week", "")
     ledger.setdefault("conference_snapshot", {})
+    ledger.setdefault("opportunity_snapshot", {})
     return ledger
 
 
@@ -1491,11 +1492,20 @@ def render_latest_include(records: list[dict]) -> str:
 
 def digest_description_html(categories: dict, news_by_category: dict,
                             media_sections: dict,
-                            conf_updates: list[dict]) -> str:
+                            conf_updates: list[dict],
+                            opp_updates: list[dict] | None = None) -> str:
     parts = []
     if conf_updates:
         parts.append("<h3>Conference calendar updates</h3><ul>")
         for u in conf_updates:
+            parts.append(
+                f'<li><a href="{escape(u["url"])}">{escape(u["name"])}</a>: '
+                f"{escape(u['note'])}</li>"
+            )
+        parts.append("</ul>")
+    if opp_updates:
+        parts.append("<h3>New opportunities</h3><ul>")
+        for u in opp_updates:
             parts.append(
                 f'<li><a href="{escape(u["url"])}">{escape(u["name"])}</a>: '
                 f"{escape(u['note'])}</li>"
@@ -1557,6 +1567,54 @@ def conference_updates(snapshot: dict, current: dict, today_iso: str) -> list[di
                 detail += f", {entry['location']}"
             updates.append({"name": name, "url": entry["url"],
                             "note": f"added to the calendar ({detail})"})
+            continue
+        changes = [
+            f"{field.replace('_', ' ')}: {old[field]} is now {entry[field]}"
+            for field in fields if old.get(field) != entry[field]
+        ]
+        if changes:
+            updates.append({"name": name, "url": entry["url"],
+                            "note": "; ".join(changes)})
+    return updates
+
+
+def opportunity_state() -> dict:
+    """Current opportunities as comparable strings, keyed by name."""
+    opportunities = yaml.safe_load(
+        (REPO / "data" / "opportunities.yaml").read_text(encoding="utf-8"))
+    state = {}
+    for opp in opportunities:
+        state[opp["name"]] = {
+            "deadline": str(opp.get("deadline") or "TBD"),
+            "start_date": str(opp.get("start_date") or "TBD"),
+            "end_date": str(opp.get("end_date") or "TBD"),
+            "url": opp.get("url", ""),
+        }
+    return state
+
+
+def opportunity_updates(snapshot: dict, current: dict,
+                        today_iso: str) -> list[dict]:
+    """Opportunity listings added or redated since the last digest, for
+    entries whose window has not already passed."""
+    updates = []
+    fields = ("deadline", "start_date", "end_date")
+    for name, entry in current.items():
+        end = entry["end_date"]
+        deadline = entry["deadline"]
+        if end != "TBD" and end < today_iso:
+            continue
+        if (end == "TBD" and len(deadline) == 10
+                and deadline < today_iso):
+            continue
+        old = snapshot.get(name)
+        if old is None:
+            detail = f"application deadline {entry['deadline']}"
+            if entry["start_date"] != "TBD":
+                detail += (f"; runs {entry['start_date']} "
+                           f"to {entry['end_date']}")
+            updates.append({"name": name, "url": entry["url"],
+                            "note": f"newly listed ({detail})"})
             continue
         changes = [
             f"{field.replace('_', ' ')}: {old[field]} is now {entry[field]}"
@@ -1830,7 +1888,8 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
 def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
                           media_sections: dict, conf_updates: list[dict],
                           also: list[dict], window_label: str,
-                          narrative: list[str] | None = None) -> str:
+                          narrative: list[str] | None = None,
+                          opp_updates: list[dict] | None = None) -> str:
     """Stable weekly digest page: the email's highlights plus a link list of
     everything else kept in the same window."""
     lines = [
@@ -1859,6 +1918,12 @@ def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
     if conf_updates:
         lines.extend(["## Conference calendar updates", ""])
         for u in conf_updates:
+            lines.append(f"- [{md_escape(u['name'])}]({u['url']}): "
+                         f"{u['note']}")
+        lines.append("")
+    if opp_updates:
+        lines.extend(["## New opportunities", ""])
+        for u in opp_updates:
             lines.append(f"- [{md_escape(u['name'])}]({u['url']}): "
                          f"{u['note']}")
         lines.append("")
@@ -2329,6 +2394,13 @@ def main() -> int:
             now.date().isoformat())
         if not ledger["conference_snapshot"]:
             conf_updates = []  # first digest baselines without announcing
+        # Unlike the conference snapshot, the first opportunity digest
+        # announces everything currently open: the section launched days
+        # before its first digest, so its listings genuinely are new.
+        opp_now = opportunity_state()
+        opp_updates = opportunity_updates(
+            ledger["opportunity_snapshot"], opp_now,
+            now.date().isoformat())
         ordered, digest_note = select_digest_highlights(
             candidates, config, llm_available, args.verbose)
         news_budget = digest_cfg.get("news_items", 8)
@@ -2370,12 +2442,13 @@ def main() -> int:
             "link": read_site_url() + f"news/archive/{archive_name}/",
             "pub_date": format_datetime(now),
             "description": narrative_html + digest_description_html(
-                categories, news_by_cat, media_sections, conf_updates),
+                categories, news_by_cat, media_sections, conf_updates,
+                opp_updates),
         }
         archive_md = render_digest_archive(
             f"Week {iso.week}, {iso.year}", categories, news_by_cat,
             media_sections, conf_updates, also, window_label,
-            narrative=narrative)
+            narrative=narrative, opp_updates=opp_updates)
         write(ARCHIVE_DIR / f"{archive_name}.md", archive_md,
               len(highlight_ids))
         if not args.dry_run:
@@ -2384,6 +2457,7 @@ def main() -> int:
             ledger["last_digest_week"] = week_key
             ledger["last_digest_at"] = now_iso
             ledger["conference_snapshot"] = conf_now
+            ledger["opportunity_snapshot"] = opp_now
         digests_newest_first = list(reversed(ledger["digests"] + (
             [digest_entry] if args.dry_run else [])))
         # On dry runs the entry was not appended; the line above previews it.
@@ -2403,10 +2477,13 @@ def main() -> int:
                          f"{len(video_high)} videos + {len(podcast_high)} "
                          f"podcasts of {len(candidates)} candidates, "
                          f"{len(conf_updates)} conference updates, "
+                         f"{len(opp_updates)} opportunity updates, "
                          f"{digest_note})")
     else:
         # Baseline the calendar snapshot outside digest day so the first
-        # Friday digest reports only changes made after this point.
+        # Friday digest reports only changes made after this point. The
+        # opportunity snapshot deliberately gets no such baseline: its
+        # first digest announces everything currently open.
         if not ledger["conference_snapshot"] and not args.dry_run:
             ledger["conference_snapshot"] = conference_state()
 

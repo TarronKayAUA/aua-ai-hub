@@ -39,7 +39,7 @@ import requests
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate import resolve_task_llm  # noqa: E402
+from aggregate import remove_dashes, resolve_task_llm  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
 TOOLS_PATH = REPO / "data" / "tools.yaml"
@@ -81,6 +81,82 @@ Judge only from the page text. Output only a JSON object, no prose:
 alive means the page still presents an operating product (not a shutdown
 notice, domain-parking page, or redirect to something unrelated). Mark
 "unknown" whenever the text is insufficient to judge."""
+
+
+# Tiered autonomy (owner approved 2026-07-08): open-weights model adds
+# with a mechanically verifiable license may be applied automatically.
+# Only these Hugging Face license tags qualify; anything else (including
+# "other", which hides custom terms like TabFM's non-commercial license)
+# stays a proposal for a human license read. feeds.yaml
+# `content_watch.models_add_mode: propose` is the kill switch.
+LICENSE_LABELS = {"apache-2.0": "Apache 2.0", "mit": "MIT"}
+
+MODEL_GATE_SYSTEM = """You identify the official Hugging Face repository
+for a newly released open-weights model and draft its one-line roster
+entry. You receive the recommendation, text fetched from the news
+evidence page, and Hugging Face search results. Choose a repository only
+from the provided search results, and only when its organization is
+plainly the model's own vendor; when unsure, answer null for repo.
+Output only a JSON object, no prose, no em dashes in any string:
+
+{"repo": "org/name exactly as it appears in the search results" or null,
+ "vendor": "the company behind the model",
+ "blurb": "one sentence in the roster's style: what the model or family
+  is, naming the vendor (and that it is a Chinese company when it is),
+  notable parameter and context figures from the evidence, ending by
+  naming the license"}"""
+
+
+def hf_search_models(name: str) -> list[dict]:
+    resp = requests.get(
+        f"https://huggingface.co/api/models?search={name}&limit=10",
+        headers=BROWSER_UA, timeout=20)
+    resp.raise_for_status()
+    results = []
+    for m in resp.json():
+        tags = [t.split(":", 1)[1] for t in m.get("tags", [])
+                if t.startswith("license:")]
+        results.append({"id": m.get("id", ""),
+                        "license": tags[0] if tags else None,
+                        "downloads": m.get("downloads", 0)})
+    return results
+
+
+def hf_license_tag(repo: str) -> str | None:
+    resp = requests.get(f"https://huggingface.co/api/models/{repo}",
+                        headers=BROWSER_UA, timeout=20)
+    resp.raise_for_status()
+    tags = [t.split(":", 1)[1] for t in resp.json().get("tags", [])
+            if t.startswith("license:")]
+    return tags[0] if tags else None
+
+
+def append_open_model(name: str, vendor: str, repo: str, license_label: str,
+                      license_tag: str, blurb: str, today_iso: str) -> None:
+    """Append a verified entry to open_models.yaml, then prove the file
+    still parses and the entry landed exactly once."""
+    blurb = remove_dashes(" ".join(blurb.split()))
+    if license_label.lower() not in blurb.lower():
+        blurb = blurb.rstrip(".") + f", under {license_label}."
+    entry = (
+        f"# Auto-verified {today_iso}: license {license_tag} from the "
+        "Hugging Face card tag; repository chosen from search results "
+        "against the news evidence.\n"
+        f"- name: {remove_dashes(name)}\n"
+        f"  vendor: {remove_dashes(vendor)}\n"
+        f"  url: https://huggingface.co/{repo}\n"
+        f"  license: {license_label}\n"
+        f"  last_reviewed: {today_iso}\n"
+        f"  blurb: {blurb}"
+    )
+    original = MODELS_PATH.read_text(encoding="utf-8")
+    updated = original.rstrip("\n") + "\n\n" + entry + "\n"
+    parsed = yaml.safe_load(updated)
+    names = [e["name"] for e in parsed]
+    if names.count(remove_dashes(name)) != 1:
+        raise ValueError(f"model {name!r} would appear "
+                         f"{names.count(remove_dashes(name))} times")
+    MODELS_PATH.write_text(updated, encoding="utf-8", newline="\n")
 
 
 def strip_page(url: str, page_chars: int) -> str:
@@ -139,6 +215,55 @@ def bump_last_reviewed(text: str, name: str, today_iso: str) -> str:
     return new_text
 
 
+def try_auto_add_model(config: dict, rec: dict, today_iso: str):
+    """Gate-verified open-models add. Returns True on success or a short
+    reason string when the item must stay a proposal."""
+    name = str(rec.get("entry", "")).strip()
+    if not name:
+        return "no entry name"
+    existing = yaml.safe_load(MODELS_PATH.read_text(encoding="utf-8"))
+    if any(str(e["name"]).lower() == name.lower() for e in existing):
+        return "already on the roster"
+    try:
+        search = hf_search_models(name)
+        evidence = strip_page(rec["evidence_url"], 6000)
+    except (requests.RequestException, KeyError) as exc:
+        return f"lookup failed ({type(exc).__name__})"
+    if not search:
+        return "no Hugging Face search results"
+    search_block = "\n".join(
+        f"- {s['id']} (license: {s['license']}, downloads: {s['downloads']})"
+        for s in search)
+    user = (f"RECOMMENDATION: add {name}; reason: {rec.get('reason', '')}\n\n"
+            f"EVIDENCE PAGE TEXT:\n{evidence}\n\n"
+            f"HUGGING FACE SEARCH RESULTS:\n{search_block}")
+    try:
+        verdict = call_task(config, "gate_verify", MODEL_GATE_SYSTEM, user)
+    except (requests.RequestException, ValueError, KeyError,
+            json.JSONDecodeError, RuntimeError) as exc:
+        return f"gate check errored ({type(exc).__name__})"
+    repo = verdict.get("repo")
+    if not repo or repo not in {s["id"] for s in search}:
+        return "official repository not confidently identified"
+    try:
+        tag = hf_license_tag(repo)
+    except requests.RequestException as exc:
+        return f"license fetch failed ({type(exc).__name__})"
+    if tag not in LICENSE_LABELS:
+        return (f"license tag {tag!r} needs a human read "
+                "(only apache-2.0 and mit auto-apply)")
+    blurb = str(verdict.get("blurb", "")).strip()
+    if len(blurb) < 40:
+        return "blurb too thin"
+    try:
+        append_open_model(name, str(verdict.get("vendor", "")).strip()
+                          or "Unknown", repo, LICENSE_LABELS[tag], tag,
+                          blurb, today_iso)
+    except (ValueError, OSError) as exc:
+        return f"apply failed ({exc})"
+    return True
+
+
 def main() -> int:
     argp = argparse.ArgumentParser(description=__doc__)
     argp.add_argument("--report", default=None)
@@ -157,7 +282,7 @@ def main() -> int:
     tools = yaml.safe_load(tools_text)
     models = yaml.safe_load(MODELS_PATH.read_text(encoding="utf-8"))
 
-    recommendations, failures, bumped = [], [], []
+    recommendations, failures, bumped, auto_added = [], [], [], []
 
     # --- Input 1: news-driven synthesis -----------------------------------
     items = week_items(news_days)
@@ -177,17 +302,30 @@ def main() -> int:
         ]
         user = ("CURRENT ROSTERS\n" + "\n".join(roster_lines)
                 + "\n\nTHIS WEEK'S NEWS ITEMS\n" + "\n".join(news_lines))
+        models_add_mode = str(
+            watch_cfg.get("models_add_mode", "propose")).lower()
         try:
             data = call_task(config, "content_watch", SYNTHESIS_SYSTEM, user)
             for rec in (data.get("recommendations") or [])[:20]:
                 if rec.get("evidence_url") not in allowed_urls:
                     dropped_ungrounded += 1
                     continue
+                gate_note = ""
+                if (models_add_mode == "auto"
+                        and rec.get("target") == "open_models.yaml"
+                        and rec.get("change") == "add"
+                        and not args.no_bump):
+                    outcome = try_auto_add_model(config, rec, today_iso)
+                    if outcome is True:
+                        auto_added.append(rec.get("entry", "?"))
+                        continue
+                    gate_note = f"\n  - auto-add declined: {outcome}"
                 recommendations.append(
                     f"### {rec.get('entry', '?')} "
                     f"({rec.get('target', '?')}, {rec.get('change', '?')})\n"
                     f"  - reason: {rec.get('reason', '')}\n"
-                    f"  - evidence: {rec.get('evidence_url')}")
+                    f"  - evidence: {rec.get('evidence_url')}"
+                    + gate_note)
         except (requests.RequestException, ValueError, KeyError,
                 json.JSONDecodeError, RuntimeError) as exc:
             failures.append(f"news synthesis: {type(exc).__name__}: {exc}")
@@ -261,6 +399,12 @@ def main() -> int:
         "session with the items you approve.",
         "",
     ]
+    if auto_added:
+        lines.extend(
+            ["## Auto-applied", "",
+             "Added to `data/open_models.yaml` with the license verified "
+             "from the Hugging Face card tag (auto-verified comments "
+             "inline): " + ", ".join(auto_added) + ".", ""])
     if recommendations:
         lines.extend(["## Recommendations", ""] + recommendations + [""])
     if bumped:
@@ -280,6 +424,7 @@ def main() -> int:
     print(f"news items in    : {len(items)}")
     print(f"rotation checked : {len(rotation)}")
     print(f"bumped           : {len(bumped)}")
+    print(f"auto-added models: {len(auto_added)}")
     print(f"recommendations  : {len(recommendations)}")
     print(f"dropped ungrounded: {dropped_ungrounded}")
     print(f"failures         : {len(failures)}")

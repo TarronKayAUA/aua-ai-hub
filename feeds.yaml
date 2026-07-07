@@ -80,6 +80,14 @@ llm:
     opportunity_watch:
       provider: anthropic
       model: claude-haiku-4-5
+    # Gate verification for tiered autonomy (owner approved 2026-07-08):
+    # structured checklist extraction from fetched official pages before
+    # any automatic application. Sonnet for instruction-following
+    # fidelity; a handful of small calls per week, well under a dollar
+    # a month.
+    gate_verify:
+      provider: anthropic
+      model: claude-sonnet-5
     # Weekly digest narrative: owner editorial decision 2026-07-04, made
     # knowing the benchmark picture (LiveBench has Opus 4.8 slightly ahead
     # globally): Fable 5 writes denser short-form prose, and Opus's
@@ -210,6 +218,12 @@ committee_updates:
 # in-person hackathons elsewhere rarely fit an Antigua-based community;
 # community submissions cover exceptions.
 opportunity_watch:
+  # auto: keeps hosted on managed platforms (Devpost, grand-challenge)
+  # that pass every mechanical gate (current, organizer named, free
+  # entry, deadline confirmed from the page) are applied with
+  # auto-verified comments; unknown domains and gate failures stay
+  # proposals. Set to propose to return everything to proposals.
+  mode: auto
   max_candidates: 60
   sources:
     - name: Devpost online hackathons
@@ -239,6 +253,14 @@ content_watch:
   rotation_size: 12
   news_days: 7
   page_chars: 5000
+  # auto: open-weights model adds whose Hugging Face license tag is
+  # apache-2.0 or mit are applied with auto-verified comments after the
+  # gate_verify model identifies the official repository against the
+  # news evidence; any other license tag (including "other", which
+  # hides custom terms) stays a proposal for a human license read, as
+  # do all tool changes and removals. Set to propose to return
+  # everything to proposals.
+  models_add_mode: auto
 
 # Weekly digest settings. The digest is a second-stage highlights selection
 # over everything kept since the previous digest, generated on the configured
