@@ -51,7 +51,8 @@ jobs:
               gh issue edit "$existing" --title "$title" --body-file body.md
               gh issue comment "$existing" --body "Still failing as of $(date -u +%F)."
             else
-              gh issue create --title "$title" --body-file body.md
+              gh issue create --title "$title" --body-file body.md \
+                --assignee TarronKayAUA
             fi
           elif [[ -n "$existing" ]]; then
             gh issue close "$existing" \

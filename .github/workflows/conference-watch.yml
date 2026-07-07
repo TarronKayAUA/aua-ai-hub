@@ -59,6 +59,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           day=$(date -u +%Y-%m-%d)
+          # Assigned to the owner so the Power Automate GitHub connector's
+          # "issue assigned to me" trigger can email the AUA inbox.
           gh issue create \
             --title "Conference watch ${day}: ${{ steps.watch.outputs.actionable }} item(s) to review" \
-            --body-file conference-watch.md
+            --body-file conference-watch.md \
+            --assignee TarronKayAUA
