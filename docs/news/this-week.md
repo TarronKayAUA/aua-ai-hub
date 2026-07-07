@@ -294,7 +294,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Large language models have demonstrated effective performance in clinical data extraction and processing, serving as electronic health record encoders <a href="https://www.nature.com/articles/s41746-026-02915-9">[3]</a>. These models have also undergone real-world implementation by generating clinical discharge summaries within secure data environments <a href="https://ai.jmir.org/2026/1/e88816">[9]</a>. In diagnostic roles, AI-enabled systems deliver improved accuracy for acute myocardial infarction from electrocardiogram analysis with explainable outputs <a href="https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[5]</a> and predict type 2 diabetes risk from chest X-rays across diverse populations <a href="https://ai.jmir.org/2026/1/e85248">[10]</a>. Additionally, studies have validated the feasibility of AI-assisted ambient scribes to reduce documentation burden for intensive care unit physicians <a href="https://medinform.jmir.org/2026/1/e85015">[1]</a>, highlighting developments that address both workflow efficiency and clinical diagnosis.</p>
+<p>AI applications for clinical practice now include validated tools that streamline physician documentation during intensive care unit rounds, suggesting tangible reduction in administrative workload <a href="https://medinform.jmir.org/2026/1/e85015">[1]</a>. Advances in surgical skill assessment leverage artificial intelligence to provide workflow recognition and objective evaluation for minimally invasive procedures <a href="https://www.nature.com/articles/s41746-026-02976-w">[2]</a>. In solid organ transplantation, reviews highlight ongoing clinical trials and regulatory studies with implications for rare disease management, signaling increasing integration of AI in complex medical specialties <a href="https://www.nature.com/articles/s41746-026-02963-1">[3]</a>. Large language models also demonstrate real-world success in generating clinical discharge summaries within secure hospital environments <a href="https://ai.jmir.org/2026/1/e88816">[13]</a>, while deep learning extends disease prediction capabilities by analyzing chest X-rays in diverse patient cohorts <a href="https://ai.jmir.org/2026/1/e85248">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -311,6 +311,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02976-w">Intelligent surgical workflow recognition-based skill assessment for minimally invasive submandibular gland resection</a>
     <p class="news-card-summary">Published method uses AI to recognize surgical workflow and assess surgeon skill during minimally invasive submandibular gland resection.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02963-1">Clinical trials and evaluation of AI tools in solid organ transplantation: implications for clinical care, regulatory science, and rare diseases</a>
+    <p class="news-card-summary">Review examines clinical trials and regulatory evaluation of AI tools in solid organ transplantation with implications for rare disease care.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02859-0">An Interpretable AI System for Oral Leukoplakia Progression: From Early Screening to Lesion Delineation</a>
+    <p class="news-card-summary">Study presents an interpretable AI system for detecting and delineating oral leukoplakia lesions with early screening capability.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02974-y">Attachment, loneliness, and social support as moderators of conversational AI, based mental health outcomes</a>
+    <p class="news-card-summary">Research examines how attachment, loneliness, and social support affect mental health outcomes from conversational AI interventions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02852-7">Benchmarking large language models against practicing clinicians on psychopathological assessment</a>
+    <p class="news-card-summary">Study compares large language models to practicing clinicians on standardized psychopathological assessment tasks.</p>
   </div>
 </div>
 <div class="news-card">

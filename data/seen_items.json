@@ -12871,6 +12871,110 @@
    "first_seen": "2026-07-07T19:20:37.451784+00:00",
    "kept": false,
    "reason": "incomplete candidate data; summary cuts off mid-sentence"
+  },
+  {
+   "url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
+   "title_hash": "a210f18dd6f0d267807f6c23436cf6c5",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/us-manufacturers-energy-costs-soar-because-of-ai-data-center-demand",
+   "title_hash": "81d695822231e205e7103c6b71b28e71",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4",
+   "title_hash": "abe3aedfe2e3dd9bc444f5ea58e00566",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/7/sqlite-migrate",
+   "title_hash": "a7f7d3e686f7230a1ca0a8007be41aa2",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/7/github-code-component",
+   "title_hash": "9966df8fb9857fc29d51ddf8e6596f85",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils",
+   "title_hash": "62df974f15af65e16e26ebdbe4acd7e6",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42412625?fc=20260609215449&ff=20260707193356&v=2.20.0",
+   "title_hash": "1942351f5155a215b0ed1eb0684f45eb",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2",
+   "title_hash": "a67eaa5971f05e5504eb629e41e99af9",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02963-1",
+   "title_hash": "a2dc948e875afc1230c3429b15240644",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": true,
+   "title": "Clinical trials and evaluation of AI tools in solid organ transplantation: implications for clinical care, regulatory science, and rare diseases",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-07T00:00:00+00:00",
+   "summary": "Review examines clinical trials and regulatory evaluation of AI tools in solid organ transplantation with implications for rare disease care.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02859-0",
+   "title_hash": "063e57ee08cc18d51a65ad85c297ff87",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": true,
+   "title": "An Interpretable AI System for Oral Leukoplakia Progression: From Early Screening to Lesion Delineation",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-07T00:00:00+00:00",
+   "summary": "Study presents an interpretable AI system for detecting and delineating oral leukoplakia lesions with early screening capability.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02974-y",
+   "title_hash": "237776bf426d6c164b54a60ce09b6719",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": true,
+   "title": "Attachment, loneliness, and social support as moderators of conversational AI, based mental health outcomes",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-07T00:00:00+00:00",
+   "summary": "Research examines how attachment, loneliness, and social support affect mental health outcomes from conversational AI interventions.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02852-7",
+   "title_hash": "ae544b1a2352dbfc8d651af233f17387",
+   "first_seen": "2026-07-07T23:33:56.155440+00:00",
+   "kept": true,
+   "title": "Benchmarking large language models against practicing clinicians on psychopathological assessment",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-07T00:00:00+00:00",
+   "summary": "Study compares large language models to practicing clinicians on standardized psychopathological assessment tasks.",
+   "category": "clinical_practice",
+   "score": 4.0
   }
  ],
  "digests": [
@@ -12998,8 +13102,8 @@
    "date": "July 7, 2026"
   },
   "clinical_practice": {
-   "text": "Large language models have demonstrated effective performance in clinical data extraction and processing, serving as electronic health record encoders <a href=\"https://www.nature.com/articles/s41746-026-02915-9\">[3]</a>. These models have also undergone real-world implementation by generating clinical discharge summaries within secure data environments <a href=\"https://ai.jmir.org/2026/1/e88816\">[9]</a>. In diagnostic roles, AI-enabled systems deliver improved accuracy for acute myocardial infarction from electrocardiogram analysis with explainable outputs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[5]</a> and predict type 2 diabetes risk from chest X-rays across diverse populations <a href=\"https://ai.jmir.org/2026/1/e85248\">[10]</a>. Additionally, studies have validated the feasibility of AI-assisted ambient scribes to reduce documentation burden for intensive care unit physicians <a href=\"https://medinform.jmir.org/2026/1/e85015\">[1]</a>, highlighting developments that address both workflow efficiency and clinical diagnosis.",
-   "hash": "70af84652c50c621",
+   "text": "AI applications for clinical practice now include validated tools that streamline physician documentation during intensive care unit rounds, suggesting tangible reduction in administrative workload <a href=\"https://medinform.jmir.org/2026/1/e85015\">[1]</a>. Advances in surgical skill assessment leverage artificial intelligence to provide workflow recognition and objective evaluation for minimally invasive procedures <a href=\"https://www.nature.com/articles/s41746-026-02976-w\">[2]</a>. In solid organ transplantation, reviews highlight ongoing clinical trials and regulatory studies with implications for rare disease management, signaling increasing integration of AI in complex medical specialties <a href=\"https://www.nature.com/articles/s41746-026-02963-1\">[3]</a>. Large language models also demonstrate real-world success in generating clinical discharge summaries within secure hospital environments <a href=\"https://ai.jmir.org/2026/1/e88816\">[13]</a>, while deep learning extends disease prediction capabilities by analyzing chest X-rays in diverse patient cohorts <a href=\"https://ai.jmir.org/2026/1/e85248\">[14]</a>.",
+   "hash": "a1b2abdb54f28db1",
    "date": "July 7, 2026"
   },
   "general_ai": {
@@ -13007,5 +13111,6 @@
    "hash": "d14ff0b0c269a6bf",
    "date": "July 7, 2026"
   }
- }
+ },
+ "opportunity_snapshot": {}
 }
