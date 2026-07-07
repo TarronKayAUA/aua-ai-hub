@@ -58,6 +58,10 @@
   vendor: DeepSeek
   category: assistants
   url: https://chat.deepseek.com
+  # chat.deepseek.com is a client-rendered app with no fetchable text;
+  # the API documentation site serves stable English text (content
+  # watch, 2026-07-07).
+  verify_url: https://api-docs.deepseek.com/
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
@@ -98,6 +102,10 @@
   vendor: Z.ai (Zhipu AI)
   category: assistants
   url: https://chat.z.ai
+  # Client-rendered app; both z.ai and chat.z.ai serve a title only
+  # (53 characters), too little to verify against. Owner-reviewed
+  # (content watch, 2026-07-07).
+  verify: skip
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.

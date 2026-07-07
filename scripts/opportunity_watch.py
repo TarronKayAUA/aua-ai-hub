@@ -97,6 +97,13 @@ def fetch_devpost(url: str) -> list[dict]:
 
 def fetch_grand_challenge(url: str) -> list[dict]:
     today_iso = date.today().isoformat()
+    # Grand Challenge keeps concluded editions open for leaderboard
+    # submissions for years (SynthRAD2025's leaderboard runs to 2030),
+    # so a future end_date does not mean a current opportunity. Require
+    # a start date within the last ~13 months or in the future, which
+    # keeps current and upcoming editions and drops leaderboard-only
+    # zombies (first-run lesson, 2026-07-07).
+    start_cutoff = (date.today() - timedelta(days=400)).isoformat()
     candidates = []
     offset, page_size = 0, 100
     while offset < 400:
@@ -112,6 +119,9 @@ def fetch_grand_challenge(url: str) -> list[dict]:
             end = str(c.get("end_date") or "")[:10]
             if not end or end < today_iso:
                 continue  # active or upcoming challenges only
+            start = str(c.get("start_date") or "")[:10]
+            if not start or start < start_cutoff:
+                continue  # concluded edition, leaderboard-only
             desc = re.sub(r"<[^>]+>", " ", str(c.get("description", "")))
             desc = re.sub(r"\s+", " ", desc).strip()[:200]
             candidates.append({

@@ -83,6 +83,7 @@ MODALITY_LABELS = {
     "image": "Image generation",
     "video": "Video generation",
     "audio": "Music and audio",
+    "data": "Tabular data",
 }
 
 GUIDE_VIDEO_GROUPS = {"agents", "local"}

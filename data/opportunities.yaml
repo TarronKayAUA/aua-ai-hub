@@ -36,6 +36,34 @@
 #   relevance    one line, why this belongs in front of this audience
 #   verified     date the official page was last checked by a human
 
+# Verified 2026-07-07 on the Devpost page: submissions May 19 to
+# August 17, 2026; US$2,000,000 organizer-stated prize pool; free entry.
+- name: Build with Gemini XPRIZE
+  url: https://xprize.devpost.com/
+  organizer: XPRIZE with Google (on Devpost)
+  type: competition
+  format: virtual
+  eligibility: Open worldwide to adults (a standard excluded-territories list applies); teams of any size
+  deadline: 2026-08-17
+  start_date: 2026-05-19
+  end_date: 2026-08-17
+  support: "Organizer-stated: US$2,000,000 in total prizes, top prize US$500,000"
+  relevance: A major agent-building competition, teams build a functioning business operated primarily by AI agents on Google Cloud, with education among the themes. Free to enter.
+  verified: 2026-07-07
+
+# Verified 2026-07-07 on the Devpost page: submissions close July 9,
+# 2026; the deadline badge and auto-archiving handle the short window.
+- name: Global AI Hackathon Series with Qwen Cloud
+  url: https://qwencloud-hackathon.devpost.com/
+  organizer: Alibaba Cloud (on Devpost)
+  type: hackathon
+  format: virtual
+  eligibility: Open worldwide to adults (a standard excluded-territories list applies)
+  deadline: 2026-07-09
+  support: "Organizer-stated: US$70,000+ across five tracks, plus complimentary cloud credits to build with"
+  relevance: Online AI-application hackathon across five tracks with free build credits. Submissions close July 9, so this one is for teams ready to move immediately.
+  verified: 2026-07-07
+
 - name: Future Caribbean Global Agentic AI Buildathon
   url: https://futurecaribbean.com
   organizer: Future Caribbean (founder Lily Dash; partners include ACTAI Global and IDB Invest)

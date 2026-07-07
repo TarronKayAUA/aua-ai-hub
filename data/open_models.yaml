@@ -6,7 +6,7 @@
 # instead of a cost and governance badge. Blurbs may name current flagship
 # releases; refresh them (and last_reviewed) when a family moves on.
 #
-# modality: language (default when absent) | image | video | audio.
+# modality: language (default when absent) | image | video | audio | data.
 # The section renders one subsection per modality. License names follow the
 # Hugging Face model card license tag, verified at authoring.
 
@@ -82,6 +82,26 @@
   license: OpenPangu license
   last_reviewed: 2026-07-02
   blurb: Huawei's open-weight mixture-of-experts model, 92 billion total parameters with 6 billion active and a 512k context window, trained on Huawei's own accelerators under a custom license.
+
+# Verified 2026-07-07: license apache-2.0 from the Hugging Face card tag;
+# 295B total (298.8B incl. MTP layers per safetensors), 21B active, 256k
+# context per the release coverage (simonwillison.net/2026/Jul/6/hy3).
+- name: Hy3
+  vendor: Tencent
+  url: https://huggingface.co/tencent/Hy3
+  license: Apache 2.0
+  last_reviewed: 2026-07-07
+  blurb: A large open-weight mixture-of-experts model from Chinese company Tencent, about 295 billion total parameters with 21 billion active per token and a 256,000 token context window, under Apache 2.0.
+
+# Verified 2026-07-07: license tag "other" resolves to
+# tabfm-non-commercial-v1.0 on the Hugging Face card; named verbatim.
+- name: TabFM
+  vendor: Google Research
+  url: https://huggingface.co/google/tabfm-1.0.0-pytorch
+  license: TabFM Non-Commercial v1.0
+  modality: data
+  last_reviewed: 2026-07-07
+  blurb: Google Research's open-weight foundation model for tabular data, making zero-shot predictions on spreadsheet-style datasets without task-specific training. Relevant to research data analysis; weights are licensed for non-commercial use.
 
 # --- Image generation (owner approved 2026-06-12) ---------------------------
 
