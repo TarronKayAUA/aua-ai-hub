@@ -241,6 +241,23 @@
   last_reviewed: 2026-07-01
   blurb: Clinical question-answering tool for verified health professionals, with answers cited to the medical literature.
 
+# Verified 2026-07-08: AUA's institution-wide Scopus license (arranged
+# through the AUA Library, live 2026-07) explicitly includes the Scopus
+# AI layer, confirmed by the owner in the live product. The url is the
+# library's proxy sign-in link (tested, HTTP 200); verify_url points at
+# Elsevier's product page because the proxy serves only a login page to
+# the content-watch verifier.
+- name: Scopus with AI
+  vendor: Elsevier
+  category: research
+  url: http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home
+  verify_url: https://www.elsevier.com/products/scopus/scopus-ai
+  cost: AUA-licensed
+  governance_status: approved
+  status_note: "Licensed institution-wide through the AUA Library (2026) and reviewed ahead of procurement. Sign in with AUA credentials via the library link. The policy's data rules apply here as everywhere."
+  last_reviewed: 2026-07-08
+  blurb: Elsevier's Scopus citation database with its Scopus AI layer, answering plain-language questions with cited summaries, concept maps, and an agentic Deep Research mode, grounded in the abstracts of the indexed peer-reviewed literature.
+
 - name: Semantic Scholar
   vendor: Allen Institute for AI
   category: research

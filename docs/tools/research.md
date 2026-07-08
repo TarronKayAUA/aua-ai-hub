@@ -15,8 +15,8 @@ Artificial intelligence tools now cover most stages of a research project, from 
 <text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipeline, mapped to tools</text>
 <rect x="20" y="32" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="117" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">1. find and map</text>
-<text x="117" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Semantic Scholar,</text>
-<text x="117" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">ResearchRabbit,</text>
+<text x="117" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Scopus with AI (AUA-licensed),</text>
+<text x="117" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Semantic Scholar, ResearchRabbit,</text>
 <text x="117" y="100" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">deep research modes</text>
 <rect x="232" y="32" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="329" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">2. screen and extract</text>
@@ -46,6 +46,12 @@ Artificial intelligence tools now cover most stages of a research project, from 
 </svg>
 <figcaption>Each stage has a section below; every stage ends with your own verification at the source.</figcaption>
 </figure>
+
+## Scopus with AI, licensed for AUA
+
+AUA holds an institution-wide license to [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home), Elsevier's citation database of peer-reviewed literature, arranged through the AUA Library in 2026, and the license includes [Scopus AI](https://www.elsevier.com/products/scopus/scopus-ai), the generative layer built on top of it. Ask a question in plain language and it returns a summary with citations and confidence indicators, a concept map of the surrounding topic, the foundational papers behind the answer, and emerging research themes; a Deep Research mode plans and runs a longer investigation and produces a downloadable report. Sign in with your AUA credentials through the library link above.
+
+Know what it is grounded in before you lean on it: Scopus AI works from titles, abstracts, and metadata rather than full text, its coverage concentrates on literature from 2003 onward, and Elsevier itself states that the summaries are not citable. Treat it as the fastest way to orient in an unfamiliar literature and surface the papers that matter, then read those papers; the verification rules at the top of this page apply unchanged.
 
 ## Finding and mapping literature
 
@@ -87,6 +93,7 @@ Prices are approximate, checked July 2026 from vendor pages, and change often; t
 
 | Tool | Cost | Best fit for AUA researchers |
 | --- | --- | --- |
+| Scopus with AI | AUA institutional license; no cost to AUA users | Everyone; cited orientation summaries plus citation-database depth |
 | Semantic Scholar | Free | Everyone; all fields including medical education |
 | ResearchRabbit | Free (feature-complete tier) | Everyone; literature mapping in any field |
 | NotebookLM | Free; higher limits on Google's paid AI plans | Everyone; synthesis from your own paper set |
@@ -96,6 +103,6 @@ Prices are approximate, checked July 2026 from vendor pages, and change often; t
 | OpenEvidence | Free for verified US clinicians and US medical students | Clinical questions; US-credential holders only |
 | Claude Science | Included in paid Claude plans (beta) | Computational and laboratory science; statistics-heavy work |
 
-Field notes: **medical education researchers** get the most from Semantic Scholar, Elicit, NotebookLM, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
+Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, NotebookLM, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
 
 Suggest a tool for this page through the [About page](../about.md) contact, and expect the directory's governance statuses to lag new tools: reviewed slowly is the point.
