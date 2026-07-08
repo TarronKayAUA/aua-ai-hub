@@ -24,8 +24,8 @@ Artificial intelligence tools now cover most stages of a research project, from 
 <text x="329" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">screening prompt</text>
 <rect x="444" y="32" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="541" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">3. evidence questions</text>
-<text x="541" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Consensus, Scite,</text>
-<text x="541" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">OpenEvidence</text>
+<text x="541" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Scopus AI, Consensus,</text>
+<text x="541" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Scite, OpenEvidence</text>
 <rect x="20" y="152" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="117" y="172" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">4. synthesize your sources</text>
 <text x="117" y="192" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">NotebookLM, grounded</text>
@@ -53,11 +53,15 @@ AUA holds an institution-wide license to [Scopus](http://auamed.idm.oclc.org/log
 
 Know what it is grounded in before you lean on it: Scopus AI works from titles, abstracts, and metadata rather than full text, its coverage concentrates on literature from 2003 onward, and Elsevier itself states that the summaries are not citable. Treat it as the fastest way to orient in an unfamiliar literature and surface the papers that matter, then read those papers; the verification rules at the top of this page apply unchanged.
 
+Because it is licensed, comprehensive, and the directory's one approved research tool, this page's default is Scopus first: where Scopus does a task well, start there. The tools below earn their places by doing things Scopus does not, and those recommendations are unchanged.
+
 ## Finding and mapping literature
 
-[Semantic Scholar](https://www.semanticscholar.org) remains the strongest free starting point: a search engine over 200+ million papers including the PubMed corpus, with citation graphs and one-line paper summaries. It complements PubMed rather than replacing it; for anything clinical, run both.
+Start with [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) for searching, orientation summaries, and citation chasing: it is licensed, curated, and its AI layer turns a plain-language question into a cited map of the territory. For anything clinical, PubMed remains its peer rather than its subset; run both.
 
-[ResearchRabbit](https://www.researchrabbit.ai/) takes a different angle: give it a few seed papers and it maps the surrounding literature visually, surfacing related work, shared authorship, and citation neighborhoods. Its free tier is genuinely feature-complete (the company commits to keeping it that way), which makes it the lowest-risk recommendation on this page.
+[Semantic Scholar](https://www.semanticscholar.org) is the strongest open alternative: a free, no-sign-in search engine over 200+ million papers including the PubMed corpus, with citation graphs and one-line paper summaries. Reach for it off campus, for quick checks, or when you want a second index's view of the same question.
+
+[ResearchRabbit](https://www.researchrabbit.ai/) does one thing Scopus AI's concept maps do not: give it a few seed papers you already trust and it maps the literature *around them* visually, surfacing related work, shared authorship, and citation neighborhoods. Its free tier is genuinely feature-complete (the company commits to keeping it that way). Use Scopus to find your seeds, ResearchRabbit to grow them.
 
 The **deep research modes** inside the general assistants (ChatGPT, Gemini, and Claude all have one on their paid plans) will search the open web and produce a cited report on a topic. They are useful for orientation in an unfamiliar area and weaker for exhaustive coverage: they miss paywalled work and their recall is not systematic-review grade. Treat their output as a scouting report, never as the review itself.
 
@@ -66,6 +70,8 @@ The **deep research modes** inside the general assistants (ChatGPT, Gemini, and 
 [Elicit](https://elicit.com) is the established tool for the middle of a literature review: it finds empirical papers, screens them against your criteria, and extracts study characteristics (population, intervention, outcomes, effect sizes) into structured tables you can audit column by column. The free tier covers light use; serious extraction work lands on the paid tiers. Pair it with the [Literature screening assistant](../prompts/index.md) prompt in the library, which turns any capable assistant into a conservative second screener with an audit trail.
 
 ## Answering evidence questions
+
+For a first pass at "what does the literature say about X," licensed [Scopus AI](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) now covers this ground well: a cited, confidence-scored summary that tells you which papers to read. The tools below each add something it lacks.
 
 [Consensus](https://consensus.app) answers "does X help with Y?" questions by synthesizing across published studies, with a meter summarizing which way the evidence leans. It is quick and honest about disagreement in the literature, and best treated as a first pass that tells you which papers to actually read.
 
