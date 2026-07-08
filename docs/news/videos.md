@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=K-fYBO8t3-A" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/K-fYBO8t3-A/hqdefault.jpg" alt="Video: Listening &amp; Speaking with GPT-Live" loading="lazy">
+  <span class="video-card-title">Listening &amp; Speaking with GPT-Live</span>
+  <span class="video-card-meta">OpenAI, July 8, 2026</span>
+  <span class="video-card-desc">OpenAI demonstrates GPT-Live voice capabilities including listening, speaking, and natural conversation features.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=1yBU41auQhw" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/1yBU41auQhw/hqdefault.jpg" alt="Video: DeepSeek&#x27;s New AI Speed Hack Is Amazing" loading="lazy">
   <span class="video-card-title">DeepSeek&#x27;s New AI Speed Hack Is Amazing</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Why Tejal Patwardhan stopped underestimating the models - Episode 21</span>
   <span class="video-card-meta">OpenAI, June 16, 2026</span>
   <span class="video-card-desc">OpenAI&#x27;s frontier evaluations lead discusses how standard benchmarks are becoming too easy for current models, requiring new evaluation approaches.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=l72ufA-4SzE" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/l72ufA-4SzE/hqdefault.jpg" alt="Video: They Looked Inside Claude’s AI&#x27;s Mind. It Got Weird" loading="lazy">
-  <span class="video-card-title">They Looked Inside Claude’s AI&#x27;s Mind. It Got Weird</span>
-  <span class="video-card-meta">Two Minute Papers, June 16, 2026</span>
-  <span class="video-card-desc">Researchers examine interpretability findings from Claude&#x27;s internal representations, revealing unexpected patterns in how the model processes information.</span>
 </a>
 </div>
 

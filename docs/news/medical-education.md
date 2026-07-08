@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A standardized nursing language clinical decision support system using GPT-4 scenarios has been evaluated for long-term care nurses, highlighting the practical integration of generative AI in clinical training processes <a href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[3]</a>. Alongside this, a tutoring system built with large language models improved medical record writing and documentation efficiency for resident physicians, illustrating direct educational benefits of AI tools in real-world settings <a href="https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[4]</a>. Meanwhile, curricular interventions aiming to teach internal medicine residents about AI ethics and clinical prompting techniques have demonstrated measurable competency gains, moving educational approaches beyond mere attitude shifts <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[5]</a>. Guidance targeting health professions educators addresses best practices for teaching research skills as agentic AI becomes more prevalent among students <a href="https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[1]</a>.</p>
+<p>A national survey of academic critical care physicians highlights the rapid adoption of generative artificial intelligence in clinical practice, while also identifying a persistent gap between uptake and effective integration and pointing to a need for structured training in its use <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[3]</a>. Educational interventions addressing resident knowledge of AI ethics and clinical prompting techniques have shown measurable improvements in competency, beyond changes in attitude <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[8]</a>. Game-based learning tools combined with context-aware AI and retrieval-augmented generation are being tested to foster metacognition in anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42417702?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[2]</a>. Large-scale analysis of medical education research indicates an ongoing shift in focus toward technology and artificial intelligence topics <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[12]</a>.</p>
 <p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">Prompt engineering in medical education. Dissecting the new technological frontier in Digestive Surgery</a>
+    <p class="news-card-summary">Peer-reviewed editorial on prompt engineering techniques for generative AI in surgical education, structured around context, request, persona, and format.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42417702?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">Fostering Metacognition in Anatomy Education Through Game-Based Learning and a Context-Aware AI Assistant</a>
+    <p class="news-card-summary">Peer-reviewed study of mobile application combining game-based learning with context-aware AI and retrieval-augmented generation for anatomy education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">The &quot;DeepSeek effect&quot; and the adoption-integration gap of generative artificial intelligence in clinical practice: a national online convenience cross-sectional survey of academic critical care physicians in China</a>
+    <p class="news-card-summary">Survey of critical care physicians reveals rapid generative AI adoption but persistent gap between uptake and integration, suggesting need for structured training.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
@@ -100,27 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Ars Longa, Data Brevis: the science of disease and the art of care</a>
     <p class="news-card-summary">Peer-reviewed examination of how artificial intelligence has changed diagnostic and therapeutic approaches in modern medical practice and education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Widely available, general-purpose generative AI applications for radiology education: determining the teaching quality of synthetic pediatric neuroradiology images</a>
-    <p class="news-card-summary">Peer-reviewed study evaluating synthetic pediatric radiology images from general-purpose generative AI for medical education quality.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42409437?fc=20260609215449&amp;ff=20260707072603&amp;v=2.20.0">The Role of Artificial Intelligence in Medical Education and Training: Implications for Rheumatology</a>
-    <p class="news-card-summary">A review of artificial intelligence applications in rheumatology medical education and training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Principles for medical students&#x27; responsible use of generative AI: a student-partnered Delphi study</a>
-    <p class="news-card-summary">Delphi study with student partners identifies principles for responsible generative AI use in medical education.</p>
   </div>
 </div>
 </div>
