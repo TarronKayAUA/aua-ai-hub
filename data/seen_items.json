@@ -12975,6 +12975,307 @@
    "summary": "Study compares large language models to practicing clinicians on standardized psychopathological assessment tasks.",
    "category": "clinical_practice",
    "score": 4.0
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets",
+   "title_hash": "dffbbf01589cc668aaf82daa0c185f2f",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
+   "source": "Ars Technica AI",
+   "published": "2026-07-08T07:00:51+00:00",
+   "summary": "Security research demonstrates that popular AI tools can be weaponized to assemble botnets by exploiting models' tendency to generate plausible answers to unknown queries.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/rogue-ai-agent-500x500.jpg"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05398",
+   "title_hash": "e901091cbfba5275dee6b2e564756a85",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "narrow behavioral study of personas in game scenarios; no clinical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05399",
+   "title_hash": "b4245b63e67a897e1fafcf727e8cc0b9",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-08T04:00:00+00:00",
+   "summary": "Benchmark compares key-value cache compression techniques across models and tasks to address long-context serving bottlenecks in large language model inference.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05416",
+   "title_hash": "0f5236b2fb03fd007be6c2b113310115",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "algorithmic information theory method for sequence analysis; insufficient significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05545",
+   "title_hash": "b3ee49ffd0eb5ff8dd654df28cce16e4",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "narrow behavioral analysis of marginal methodological relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05552",
+   "title_hash": "e3e459402d7039cb58556ab807243e8a",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "behavioral artifact analysis of marginal methodological interest"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05554",
+   "title_hash": "de1c6a1fb788738ae3dcc0a0df907049",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "study of prompt robustness in political and social questions; insufficient relevance to medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05583",
+   "title_hash": "0b98a9c96116431a88e3d0ee1fb3f1f2",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "preprint on alternative transformer architecture; narrow infrastructure work without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05612",
+   "title_hash": "a9626e5df718c3e5386b901041e3f823",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "narrow technical study of speech recognition and language model perplexity; insufficient relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05614",
+   "title_hash": "d5f353765d25d2f49e3e62c2ba740fad",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "dataset announcement for low-resource language; belongs with domain corpora, not general AI"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05623",
+   "title_hash": "e9e1f48e8aba6b620c444d15bd3f92c3",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "minor system re-implementation for shared task; incremental engineering work"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05626",
+   "title_hash": "d0f6e6ac8947bbf7fe06800ac677956b",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "exploratory NLP application to psychiatric symptom analysis on social media; narrow domain study"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05644",
+   "title_hash": "3cad3f3ab7b25b54d930edfb9b33084b",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "methodology guidance on NLP projects; preprint of marginal significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05679",
+   "title_hash": "731f2ad8983f19eabee198640d0288b2",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "narrow evaluation metric for language model bias; insufficient broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05689",
+   "title_hash": "7f6d0479a1801916a89d191d9c0aab46",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "competition system description for shared task; incremental engineering work"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05691",
+   "title_hash": "1a6c8cd30b29673d2b62331b7b07ed8e",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "tokenizer study for chemistry language models; narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05721",
+   "title_hash": "0ff16d8e8646582a55cac2247f013c10",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "span-level uncertainty quantification technique; infrastructure work of insufficient broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05722",
+   "title_hash": "a4c468a70ca6d6e2b48b1332dc7d7a59",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-08T04:00:00+00:00",
+   "summary": "NVIDIA introduces Nemotron-Labs-Diffusion, which unifies autoregressive, diffusion, and speculative decoding in a single model architecture for flexible deployment.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05752",
+   "title_hash": "781d5618bd47bab8c19744cdd458a47f",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "technique for routing search calls in language models; infrastructure work of limited broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05764",
+   "title_hash": "0a89daab4b2c490e91ad0c4b0f3eeca0",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "retrieval optimization for legal document analysis; narrow application domain"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05849",
+   "title_hash": "1a770d3971cb8f608f64b3bc675c5072",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "machine translation for low-resource Mongolian; narrow language-specific application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05861",
+   "title_hash": "f625d5c3c3682f7de3e6f6bf16a657a6",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "mitigation technique for hallucination in reasoning models; narrow technical contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05937",
+   "title_hash": "12beb0e6e78d629ce8badaf9ce920825",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "case study of frozen-backbone domain adaptation; narrow empirical study of limited significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05964",
+   "title_hash": "46b399b493a992dcb9c2175b7ebac3a1",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "linguistic analysis of filled pauses in parliamentary speech; narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05968",
+   "title_hash": "ab6198c383b3e09e74e5c59fb0eb3918",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "influencer-matching system; vendor application with no relevance to medical or educational audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.05969",
+   "title_hash": "00923daf8f0cdfe4c819f61202131a34",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "memory optimization technique for latent memory paradigm; narrow infrastructure work"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1upsdmi/nvidianvidianemotronlabs3puzzle75ba9bbf16_hugging",
+   "title_hash": "876361409d8e2e86d6caa714ba4c1b40",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 · Hugging Face",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-07T11:32:56+00:00",
+   "summary": "NVIDIA releases Nemotron-Labs-3-Puzzle-75B, an open-weights 75-billion-parameter model optimized for inference efficiency using post-training compression.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/9KNaWiT3A0U4xGNY8hRs0D9rkm6EHuN3dalCNZwcLHU.png?width=640&crop=smart&auto=webp&s=b0d143bd966f1a0a0f333cc427e60fa7f9d18c15"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&ff=20260708053252&v=2.20.0",
+   "title_hash": "f2292bd235b51f05fa7af64e09ed374a",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "Construction and application of an intelligent tutoring system for resident physicians' medical record writing based on large language models",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-07T10:00:00+00:00",
+   "summary": "Large-language-model-based tutoring system improved medical record writing quality and documentation efficiency for residents in a training setting.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42414451?fc=20260609215449&ff=20260708053252&v=2.20.0",
+   "title_hash": "2de4bf8818aea66548614e62bcb583f4",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "off-topic; machine learning for electric vehicle charging, not medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&ff=20260708053252&v=2.20.0",
+   "title_hash": "552cc3f32cfe4fab289a11280abdab4b",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "Improving Resident Knowledge of Artificial Intelligence Ethics and Prompting for Clinical Use",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-07T10:00:00+00:00",
+   "summary": "Pilot curricular intervention taught internal medicine residents AI ethics and clinical prompting techniques beyond attitudes, with measured competency outcomes.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42413427?fc=20260609215449&ff=20260708053252&v=2.20.0",
+   "title_hash": "8fe39eec3b79a05762db99522716b011",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "off-topic; machine learning application to insomnia epidemiology, not AI in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42413233?fc=20260609215449&ff=20260708053252&v=2.20.0",
+   "title_hash": "eb6131742d10bc2785909a5ee81c8ce5",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "incremental educational study with mixed results on feedback type"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42414978?fc=20260609215449&ff=20260708053252&v=2.20.0",
+   "title_hash": "20333bc4109602aebae596b4fe156c6f",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "Determinants of medical students' attitudes toward artificial intelligence: a cross-sectional study and implications for medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-07T10:00:00+00:00",
+   "summary": "Survey of medical students finds positive attitudes toward AI correlated with higher paternal education, technological interest, and optimistic evaluation of AI developments.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42413800?fc=20260609215449&ff=20260708053252&v=2.20.0",
+   "title_hash": "db434891db502f7a93335fc2ae3e6f9b",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": true,
+   "title": "Comment on \"Evaluating Generative Artificial Intelligence as an Educational Tool for Radiology Resident Report Drafting\"",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-07T10:00:00+00:00",
+   "summary": "Commentary raises methodological concerns about claims that GPT-4o reliably identifies radiology report errors and provides feedback for resident learning.",
+   "category": "medical_education",
+   "score": 2.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=bjHuGNo3spk",
+   "title_hash": "f55c961dcc593a9558c1406588d971b5",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "speculation and interpretability video without peer-reviewed findings or authoritative source"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xjt7ulpGTZ4",
+   "title_hash": "9bd61eb4fd8ad57bce0874a580ed6f9c",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "title is shock-phrased and rumor-framed"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=pE1ljLVY1Rg",
+   "title_hash": "bd477d6741606bc5960153db727aa6e4",
+   "first_seen": "2026-07-08T09:32:49.198412+00:00",
+   "kept": false,
+   "reason": "vendor marketing for financial services deployment"
   }
  ],
  "digests": [
@@ -13097,9 +13398,9 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Peer-reviewed research has demonstrated the use of GPT-4-generated scenarios to enhance clinical decision support for long-term care nurses, indicating ongoing integration of generative AI in practical medical education applications <a href=\"https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0\">[3]</a>. A large-scale analysis covering more than two decades has shown a steady shift in medical education research priorities toward technology and artificial intelligence, highlighting the increasing relevance of these tools across curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[5]</a>. At the same time, surveys of medical students reveal widespread adoption and positive perceptions of large language models, although formal training remains limited <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[14]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0\">[13]</a>. Responsible guidance for educators on teaching research skills in the context of agentic AI tools is now available, addressing the evolving needs of health professions education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0\">[1]</a>.",
-   "hash": "88eb176e2ddbc152",
-   "date": "July 7, 2026"
+   "text": "A standardized nursing language clinical decision support system using GPT-4 scenarios has been evaluated for long-term care nurses, highlighting the practical integration of generative AI in clinical training processes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0\">[3]</a>. Alongside this, a tutoring system built with large language models improved medical record writing and documentation efficiency for resident physicians, illustrating direct educational benefits of AI tools in real-world settings <a href=\"https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0\">[4]</a>. Meanwhile, curricular interventions aiming to teach internal medicine residents about AI ethics and clinical prompting techniques have demonstrated measurable competency gains, moving educational approaches beyond mere attitude shifts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0\">[5]</a>. Guidance targeting health professions educators addresses best practices for teaching research skills as agentic AI becomes more prevalent among students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0\">[1]</a>.",
+   "hash": "8bb3b695324bf0c9",
+   "date": "July 8, 2026"
   },
   "clinical_practice": {
    "text": "AI applications for clinical practice now include validated tools that streamline physician documentation during intensive care unit rounds, suggesting tangible reduction in administrative workload <a href=\"https://medinform.jmir.org/2026/1/e85015\">[1]</a>. Advances in surgical skill assessment leverage artificial intelligence to provide workflow recognition and objective evaluation for minimally invasive procedures <a href=\"https://www.nature.com/articles/s41746-026-02976-w\">[2]</a>. In solid organ transplantation, reviews highlight ongoing clinical trials and regulatory studies with implications for rare disease management, signaling increasing integration of AI in complex medical specialties <a href=\"https://www.nature.com/articles/s41746-026-02963-1\">[3]</a>. Large language models also demonstrate real-world success in generating clinical discharge summaries within secure hospital environments <a href=\"https://ai.jmir.org/2026/1/e88816\">[13]</a>, while deep learning extends disease prediction capabilities by analyzing chest X-rays in diverse patient cohorts <a href=\"https://ai.jmir.org/2026/1/e85248\">[14]</a>.",
@@ -13107,9 +13408,9 @@
    "date": "July 7, 2026"
   },
   "general_ai": {
-   "text": "Google’s release of Gemma 4 introduces a new generation of open-weights language models with enhanced capabilities, potentially broadening access for research and clinical applications <a href=\"https://arxiv.org/abs/2607.02770\">[1]</a>. Concurrently, hierarchical sparse attention techniques are under investigation to support efficient infinite context modeling, which may facilitate handling lengthier medical records and case histories <a href=\"https://arxiv.org/abs/2607.02980\">[2]</a>. Small language models are showing adoption where network reliability is an issue, making advanced AI tools more accessible to faculty and students in regions with infrastructure challenges <a href=\"https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals\">[3]</a>. Meanwhile, Tencent’s Hy3, a large mixture-of-experts model, is now available under an open license, offering new opportunities for customization and local deployment <a href=\"https://simonwillison.net/2026/Jul/6/hy3\">[4]</a>.",
-   "hash": "d14ff0b0c269a6bf",
-   "date": "July 7, 2026"
+   "text": "Security concerns are highlighted as recent research shows that nine popular AI tools can be exploited to build large botnets by manipulating their ability to provide credible responses to unfamiliar prompts <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[1]</a>. Meanwhile, model architecture advances are evident in NVIDIA’s release of Nemotron-Labs-Diffusion, which integrates three decoding modes in a single framework for broader applications <a href=\"https://arxiv.org/abs/2607.05722\">[3]</a>. Google’s introduction of Gemma 4 brings improved open-weights language models, continuing the trend of publicly available high-capability systems <a href=\"https://arxiv.org/abs/2607.02770\">[4]</a>. Technical work also focuses on optimizing long-context serving, with benchmarking of key-value cache compression techniques addressing performance challenges in inference for large language models <a href=\"https://arxiv.org/abs/2607.05399\">[2]</a>.",
+   "hash": "6ce61f1168a16987",
+   "date": "July 8, 2026"
   }
  },
  "opportunity_snapshot": {}

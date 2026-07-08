@@ -11,8 +11,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Peer-reviewed research has demonstrated the use of GPT-4-generated scenarios to enhance clinical decision support for long-term care nurses, indicating ongoing integration of generative AI in practical medical education applications <a href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[3]</a>. A large-scale analysis covering more than two decades has shown a steady shift in medical education research priorities toward technology and artificial intelligence, highlighting the increasing relevance of these tools across curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[5]</a>. At the same time, surveys of medical students reveal widespread adoption and positive perceptions of large language models, although formal training remains limited <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[14]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[13]</a>. Responsible guidance for educators on teaching research skills in the context of agentic AI tools is now available, addressing the evolving needs of health professions education <a href="https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the source items.</p>
+<p>A standardized nursing language clinical decision support system using GPT-4 scenarios has been evaluated for long-term care nurses, highlighting the practical integration of generative AI in clinical training processes <a href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[3]</a>. Alongside this, a tutoring system built with large language models improved medical record writing and documentation efficiency for resident physicians, illustrating direct educational benefits of AI tools in real-world settings <a href="https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[4]</a>. Meanwhile, curricular interventions aiming to teach internal medicine residents about AI ethics and clinical prompting techniques have demonstrated measurable competency gains, moving educational approaches beyond mere attitude shifts <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[5]</a>. Guidance targeting health professions educators addresses best practices for teaching research skills as agentic AI becomes more prevalent among students <a href="https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[1]</a>.</p>
+<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
@@ -35,6 +35,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">Development and Evaluation of a Standardized Nursing Language Clinical Decision Support System for Long-Term Care Nurses Using GPT-4.0-Generated Nursing Scenarios</a>
     <p class="news-card-summary">Study evaluates a GPT-4 clinical decision support system for long-term care nursing using standardized language.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Construction and application of an intelligent tutoring system for resident physicians&#x27; medical record writing based on large language models</a>
+    <p class="news-card-summary">Large-language-model-based tutoring system improved medical record writing quality and documentation efficiency for residents in a training setting.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Improving Resident Knowledge of Artificial Intelligence Ethics and Prompting for Clinical Use</a>
+    <p class="news-card-summary">Pilot curricular intervention taught internal medicine residents AI ethics and clinical prompting techniques beyond attitudes, with measured competency outcomes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42414978?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Determinants of medical students&#x27; attitudes toward artificial intelligence: a cross-sectional study and implications for medical education</a>
+    <p class="news-card-summary">Survey of medical students finds positive attitudes toward AI correlated with higher paternal education, technological interest, and optimistic evaluation of AI developments.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413800?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Comment on &quot;Evaluating Generative Artificial Intelligence as an Educational Tool for Radiology Resident Report Drafting&quot;</a>
+    <p class="news-card-summary">Commentary raises methodological concerns about claims that GPT-4o reliably identifies radiology report errors and provides feedback for resident learning.</p>
   </div>
 </div>
 <div class="news-card">
@@ -515,11 +543,41 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Google’s release of Gemma 4 introduces a new generation of open-weights language models with enhanced capabilities, potentially broadening access for research and clinical applications <a href="https://arxiv.org/abs/2607.02770">[1]</a>. Concurrently, hierarchical sparse attention techniques are under investigation to support efficient infinite context modeling, which may facilitate handling lengthier medical records and case histories <a href="https://arxiv.org/abs/2607.02980">[2]</a>. Small language models are showing adoption where network reliability is an issue, making advanced AI tools more accessible to faculty and students in regions with infrastructure challenges <a href="https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals">[3]</a>. Meanwhile, Tencent’s Hy3, a large mixture-of-experts model, is now available under an open license, offering new opportunities for customization and local deployment <a href="https://simonwillison.net/2026/Jul/6/hy3">[4]</a>.</p>
-<p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the source items.</p>
+<p>Security concerns are highlighted as recent research shows that nine popular AI tools can be exploited to build large botnets by manipulating their ability to provide credible responses to unfamiliar prompts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[1]</a>. Meanwhile, model architecture advances are evident in NVIDIA’s release of Nemotron-Labs-Diffusion, which integrates three decoding modes in a single framework for broader applications <a href="https://arxiv.org/abs/2607.05722">[3]</a>. Google’s introduction of Gemma 4 brings improved open-weights language models, continuing the trend of publicly available high-capability systems <a href="https://arxiv.org/abs/2607.02770">[4]</a>. Technical work also focuses on optimizing long-context serving, with benchmarking of key-value cache compression techniques addressing performance challenges in inference for large language models <a href="https://arxiv.org/abs/2607.05399">[2]</a>.</p>
+<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">Hackers can use 9 of the most popular AI tools to assemble massive botnets</a>
+    <p class="news-card-summary">Security research demonstrates that popular AI tools can be weaponized to assemble botnets by exploiting models&#x27; tendency to generate plausible answers to unknown queries.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/rogue-ai-agent-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.05399">Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving</a>
+    <p class="news-card-summary">Benchmark compares key-value cache compression techniques across models and tasks to address long-context serving bottlenecks in large language model inference.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.05722">Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding</a>
+    <p class="news-card-summary">NVIDIA introduces Nemotron-Labs-Diffusion, which unifies autoregressive, diffusion, and speculative decoding in a single model architecture for flexible deployment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1upsdmi/nvidianvidianemotronlabs3puzzle75ba9bbf16_hugging">nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 · Hugging Face</a>
+    <p class="news-card-summary">NVIDIA releases Nemotron-Labs-3-Puzzle-75B, an open-weights 75-billion-parameter model optimized for inference efficiency using post-training compression.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/9KNaWiT3A0U4xGNY8hRs0D9rkm6EHuN3dalCNZwcLHU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b0d143bd966f1a0a0f333cc427e60fa7f9d18c15" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>

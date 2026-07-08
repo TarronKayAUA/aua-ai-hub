@@ -13,11 +13,41 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Google’s release of Gemma 4 introduces a new generation of open-weights language models with enhanced capabilities, potentially broadening access for research and clinical applications <a href="https://arxiv.org/abs/2607.02770">[1]</a>. Concurrently, hierarchical sparse attention techniques are under investigation to support efficient infinite context modeling, which may facilitate handling lengthier medical records and case histories <a href="https://arxiv.org/abs/2607.02980">[2]</a>. Small language models are showing adoption where network reliability is an issue, making advanced AI tools more accessible to faculty and students in regions with infrastructure challenges <a href="https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals">[3]</a>. Meanwhile, Tencent’s Hy3, a large mixture-of-experts model, is now available under an open license, offering new opportunities for customization and local deployment <a href="https://simonwillison.net/2026/Jul/6/hy3">[4]</a>.</p>
-<p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the items below.</p>
+<p>Security concerns are highlighted as recent research shows that nine popular AI tools can be exploited to build large botnets by manipulating their ability to provide credible responses to unfamiliar prompts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[1]</a>. Meanwhile, model architecture advances are evident in NVIDIA’s release of Nemotron-Labs-Diffusion, which integrates three decoding modes in a single framework for broader applications <a href="https://arxiv.org/abs/2607.05722">[3]</a>. Google’s introduction of Gemma 4 brings improved open-weights language models, continuing the trend of publicly available high-capability systems <a href="https://arxiv.org/abs/2607.02770">[4]</a>. Technical work also focuses on optimizing long-context serving, with benchmarking of key-value cache compression techniques addressing performance challenges in inference for large language models <a href="https://arxiv.org/abs/2607.05399">[2]</a>.</p>
+<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">Hackers can use 9 of the most popular AI tools to assemble massive botnets</a>
+    <p class="news-card-summary">Security research demonstrates that popular AI tools can be weaponized to assemble botnets by exploiting models&#x27; tendency to generate plausible answers to unknown queries.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/rogue-ai-agent-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.05399">Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving</a>
+    <p class="news-card-summary">Benchmark compares key-value cache compression techniques across models and tasks to address long-context serving bottlenecks in large language model inference.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.05722">Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding</a>
+    <p class="news-card-summary">NVIDIA introduces Nemotron-Labs-Diffusion, which unifies autoregressive, diffusion, and speculative decoding in a single model architecture for flexible deployment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1upsdmi/nvidianvidianemotronlabs3puzzle75ba9bbf16_hugging">nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 · Hugging Face</a>
+    <p class="news-card-summary">NVIDIA releases Nemotron-Labs-3-Puzzle-75B, an open-weights 75-billion-parameter model optimized for inference efficiency using post-training compression.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/9KNaWiT3A0U4xGNY8hRs0D9rkm6EHuN3dalCNZwcLHU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b0d143bd966f1a0a0f333cc427e60fa7f9d18c15" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
@@ -101,35 +131,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">DeepSeek V4 Flash local model demonstrates coding performance comparable to Claude Sonnet at lower cost on consumer GPUs.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/ofq8evjmmyah1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d367345aaa68ac30b7d90d7843dc95e7e8911e2f" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.01431">IsoSci: A Benchmark of Isomorphic Cross-Domain Science Problems for Evaluating Reasoning versus Knowledge Retrieval in LLMs</a>
-    <p class="news-card-summary">IsoSci benchmark uses isomorphic cross-domain science problems to evaluate whether large language models reason or retrieve knowledge.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">Google’s AI buildout drove 37% increase in electricity use in 2025</a>
-    <p class="news-card-summary">Google reports 37 percent increase in electricity consumption driven by AI infrastructure buildout in 2025, amid efforts to balance emissions with clean energy.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2246163658-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 1, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release">After spooking Trump into safety testing, Anthropic AI models get global release</a>
-    <p class="news-card-summary">US regulators cleared Anthropic&#x27;s Fable and Mythos AI models for global release after safety evaluations, removing previous export restrictions.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2280258777-500x500-1782918942.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 1, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2606.31033">CORTEX: Token-Level Hallucination Detection in RAG via Comparative Internal Representations</a>
-    <p class="news-card-summary">CORTEX proposes token-level hallucination detection in retrieval-augmented generation systems via comparative internal model representations.</p>
-  </div>
 </div>
 </div>

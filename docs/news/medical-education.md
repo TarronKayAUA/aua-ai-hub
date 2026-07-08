@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Peer-reviewed research has demonstrated the use of GPT-4-generated scenarios to enhance clinical decision support for long-term care nurses, indicating ongoing integration of generative AI in practical medical education applications <a href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[3]</a>. A large-scale analysis covering more than two decades has shown a steady shift in medical education research priorities toward technology and artificial intelligence, highlighting the increasing relevance of these tools across curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[5]</a>. At the same time, surveys of medical students reveal widespread adoption and positive perceptions of large language models, although formal training remains limited <a href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[14]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[13]</a>. Responsible guidance for educators on teaching research skills in the context of agentic AI tools is now available, addressing the evolving needs of health professions education <a href="https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 7, 2026; numbered links go to the items below.</p>
+<p>A standardized nursing language clinical decision support system using GPT-4 scenarios has been evaluated for long-term care nurses, highlighting the practical integration of generative AI in clinical training processes <a href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[3]</a>. Alongside this, a tutoring system built with large language models improved medical record writing and documentation efficiency for resident physicians, illustrating direct educational benefits of AI tools in real-world settings <a href="https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[4]</a>. Meanwhile, curricular interventions aiming to teach internal medicine residents about AI ethics and clinical prompting techniques have demonstrated measurable competency gains, moving educational approaches beyond mere attitude shifts <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[5]</a>. Guidance targeting health professions educators addresses best practices for teaching research skills as agentic AI becomes more prevalent among students <a href="https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">[1]</a>.</p>
+<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -37,6 +37,34 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">Development and Evaluation of a Standardized Nursing Language Clinical Decision Support System for Long-Term Care Nurses Using GPT-4.0-Generated Nursing Scenarios</a>
     <p class="news-card-summary">Study evaluates a GPT-4 clinical decision support system for long-term care nursing using standardized language.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Construction and application of an intelligent tutoring system for resident physicians&#x27; medical record writing based on large language models</a>
+    <p class="news-card-summary">Large-language-model-based tutoring system improved medical record writing quality and documentation efficiency for residents in a training setting.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Improving Resident Knowledge of Artificial Intelligence Ethics and Prompting for Clinical Use</a>
+    <p class="news-card-summary">Pilot curricular intervention taught internal medicine residents AI ethics and clinical prompting techniques beyond attitudes, with measured competency outcomes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42414978?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Determinants of medical students&#x27; attitudes toward artificial intelligence: a cross-sectional study and implications for medical education</a>
+    <p class="news-card-summary">Survey of medical students finds positive attitudes toward AI correlated with higher paternal education, technological interest, and optimistic evaluation of AI developments.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413800?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Comment on &quot;Evaluating Generative Artificial Intelligence as an Educational Tool for Radiology Resident Report Drafting&quot;</a>
+    <p class="news-card-summary">Commentary raises methodological concerns about claims that GPT-4o reliably identifies radiology report errors and provides feedback for resident learning.</p>
   </div>
 </div>
 <div class="news-card">
@@ -93,34 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Principles for medical students&#x27; responsible use of generative AI: a student-partnered Delphi study</a>
     <p class="news-card-summary">Delphi study with student partners identifies principles for responsible generative AI use in medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation</a>
-    <p class="news-card-summary">Study evaluates anatomical accuracy of text-to-image generative AI models compared to cadaveric dissection and professional atlases for medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Familiar but unprepared: Artificial intelligence training needs in graduate medical education</a>
-    <p class="news-card-summary">Survey finds graduate medical education trainees have high artificial intelligence exposure but lack formal training in the field.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Medical students&#x27; use of large language models: a national survey</a>
-    <p class="news-card-summary">National survey documents nearly universal large language model adoption among Canadian medical students with generally positive student perceptions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e96129">Multimodule Human, Artificial Intelligence Collaboration Pipeline for Large Language Model, Assisted Thematic Analysis Across Digital Health Interview Studies: Comparative Evaluation Study</a>
-    <p class="news-card-summary">Multi-module pipeline combining human researchers and large language models for thematic analysis of digital health qualitative data.</p>
   </div>
 </div>
 </div>
