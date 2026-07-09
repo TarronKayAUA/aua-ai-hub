@@ -95,16 +95,20 @@
   url: https://aime26.aimedicine.info/
   tags: [ai, clinical]
 
-# ML4H 2026 dates were not announced as of 2026-06-09; the official site still
-# lists the December 2025 symposium. Check ahli.cc/ml4h.
+# Verified 2026-07-09 from ml4h.ahli.cc, the dedicated 2026 site (owner
+# confirmed it loads in a browser; it also serves scripted clients, HTTP
+# 200 checked the same day). The former ahli.cc/ml4h subpath began 403ing
+# scripted clients in early July 2026 and is superseded; AHLI uses the
+# same subdomain pattern for CHIL. Page states December 6-7, 2026,
+# Sydney, Australia, in-person, submission deadline September 10, 2026.
 - name: ML4H Symposium 2026
   organizer: Association for Health Learning and Inference (AHLI)
-  start_date: TBD
-  end_date: TBD
-  location: TBD
+  start_date: 2026-12-06
+  end_date: 2026-12-07
+  location: Sydney, Australia
   format: in_person
-  abstract_deadline: TBD
-  url: https://ahli.cc/ml4h/
+  abstract_deadline: 2026-09-10
+  url: https://ml4h.ahli.cc/
   tags: [ai, clinical]
 
 # Verified 2026-06-10 from events.educause.edu/annual-conference (via the

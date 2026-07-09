@@ -53,10 +53,10 @@ MANUALLY_VERIFIED = {
     # 2026; serves 200 with full content to browser headers (verified
     # 2026-07-01).
     "openevidence.com": "2026-07-01",
-    # The /ml4h/ subpath began returning 403 to scripted clients between
-    # 2026-07-02 (passed the sweep) and 2026-07-06; the AHLI root page is
-    # live and lists ML4H 2026 (December 2026, details coming soon).
-    "ahli.cc": "2026-07-06",
+    # ahli.cc was allowlisted 2026-07-06 when its /ml4h/ subpath began
+    # 403ing scripted clients; removed 2026-07-09 when the listing moved
+    # to the dedicated ml4h.ahli.cc site, which serves scripts normally
+    # (matching is exact-host, so this entry never covered subdomains).
 }
 BOT_BLOCK_STATUSES = {400, 403, 429}
 
