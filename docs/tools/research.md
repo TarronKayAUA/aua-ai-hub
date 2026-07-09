@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-08
+---
+
 # AI for Research
 
 Artificial intelligence tools now cover most stages of a research project, from finding literature to checking a manuscript's citations. This page maps the current landscape to the tasks researchers actually do, with honest notes on cost, field fit, and where each tool falls short. Entries here also appear in the [tools directory](index.md) with their governance status; statuses are provisional pending AI Committee review.

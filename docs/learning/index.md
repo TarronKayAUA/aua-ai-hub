@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-06-11
+---
+
 # Courses and Resources
 
 Curated external starting points for building artificial intelligence (AI) skills, organized by what you are trying to do. Every link was verified live when added, and all resources are free unless noted. For this site's own structured introduction, start with the [AI Literacy Pathway](../pathway/index.md).

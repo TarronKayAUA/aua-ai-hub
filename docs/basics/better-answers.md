@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Getting Better Answers
 
 The model you use is fixed; what you control is everything around it. This page covers the three levers that decide answer quality in practice: what goes into the **context window** (and what you keep out of it), what persists across conversations as **memory**, and the standing **instructions** that govern how the model behaves. [How LLMs Work](how-llms-work.md), the primer on large language models (LLMs), explains what the context window is; this page is about using it well. No technical background needed.

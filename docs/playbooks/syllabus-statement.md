@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Playbook: Your Syllabus AI Statement
 
 **For faculty · templates below are starting points, adapt to your course**

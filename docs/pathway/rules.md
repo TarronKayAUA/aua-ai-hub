@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Module 3: The Rules
 
 **For everyone · about 10 minutes · CGEA competency domain: Ethical Use of AI**

@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Running AI Models Locally
 
 Every assistant in the [tools directory](index.md) runs in a vendor's cloud: what you type travels to their servers. There is another way. The [open-weights models](index.md#open-weights-models) at the bottom of the directory can be downloaded and run entirely on your own computer, where nothing you type leaves the machine. This page is a practical starting point.

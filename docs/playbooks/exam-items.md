@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Playbook: Writing and Vetting Exam Questions
 
 **For faculty · the highest-stakes playbook, read the guardrails first**

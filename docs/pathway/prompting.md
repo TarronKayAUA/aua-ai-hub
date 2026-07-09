@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Module 2: Prompting Fundamentals
 
 **For everyone · about 15 minutes · CGEA competency domains: Working with AI, Critical Appraisal of AI Outputs**

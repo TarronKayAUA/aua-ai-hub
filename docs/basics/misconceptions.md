@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Common Misconceptions
 
 Frequent misunderstandings about artificial intelligence (AI) tools, and what is actually true. Each section is short and self-contained.

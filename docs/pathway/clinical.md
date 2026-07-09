@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Module 6: Clinical Contexts
 
 **For students and clinical faculty · about 10 minutes · CGEA competency domain: AI Enhanced Clinical Encounters**

@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Prompt Library
 
 Reusable prompts for common faculty tasks: research, assessment writing, data analysis, and content creation. Each prompt is a starting template; replace the bracketed placeholders with your specifics, and use the copy button in the corner of each block.

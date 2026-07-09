@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-06-09
+---
+
 # Glossary
 
 Short, plain-language definitions of the artificial intelligence (AI) terms you will meet on this site and in the wider literature. Entries are alphabetized.

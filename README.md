@@ -167,6 +167,17 @@ failed an auto-apply gate, plus new conferences), `content-watch` (weekly
 roster recommendations: tools that launched, died, or changed, with
 evidence links and the entries to edit; verified-unchanged entries get
 their `last_reviewed` dates bumped automatically).
+Content-watch also re-reviews evergreen prose pages on budgets computed
+from each page's own volatile-claim census: machine-verified pages get
+their front-matter `last_reviewed` date bumped, and a drifted claim
+reaches the issue only after persisting two consecutive runs, quoting
+the exact sentence. After substantively editing an enrolled page, update
+its `last_reviewed` yourself or just leave it; an early clean machine
+review bumps it for you. To check a page immediately, run the
+content-watch workflow with its `review_page` input (e.g.
+`tools/hardware.md`), or locally:
+`python scripts/content_watch.py --no-bump --review-page tools/hardware.md`
+(claim verdicts print in the log).
 Nightly `refresh` and push-triggered `deploy` failures arrive as Actions
 failure notifications; the run log's verification block says what happened.
 

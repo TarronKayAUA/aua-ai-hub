@@ -1,6 +1,7 @@
 """Weekly content watch: keep the curated rosters current, propose-first.
 
-Two inputs, one report, one narrow auto-apply (owner approved 2026-07-01):
+Three inputs, one report, narrow auto-applies (owner approved 2026-07-01
+and 2026-07-08):
 
 1. News-driven synthesis (free input, one paid call): the week's kept news
    items from data/seen_items.json are read against the current tools and
@@ -12,9 +13,15 @@ Two inputs, one report, one narrow auto-apply (owner approved 2026-07-01):
    last_reviewed dates get their own pages fetched; the llm.tasks
    content_verify model checks each against its blurb and cost tier.
    An entry verified alive-and-accurate gets its last_reviewed date
-   bumped in place (the only field this script ever writes; the bump IS
-   the rotation state). Anything negative or unclear becomes a
-   recommendation for a human.
+   bumped in place (the only tools.yaml field this script ever writes;
+   the bump IS the rotation state). Anything negative or unclear becomes
+   a recommendation for a human.
+3. Prose page review (scripts/page_review.py): evergreen docs pages carry
+   a last_reviewed front-matter key; each page's review budget is
+   computed from its own volatile-claim census and the observed drift
+   rates in feeds.yaml. Due pages get a claims check grounded in fetched
+   tool pages; clean pages have their front-matter date bumped, drift
+   must persist two consecutive runs before escalating.
 
 All substantive changes (add, remove, reword, recost) are propose-only:
 the report carries paste-ready YAML so the owner, or any future model
@@ -38,8 +45,14 @@ from pathlib import Path
 import requests
 import yaml
 
+# Page text and claim quotes can carry characters outside the Windows
+# console's cp1252; degrade them in stdout rather than crash the run.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from aggregate import remove_dashes, resolve_task_llm  # noqa: E402
+from page_review import build_mention_map, run_page_review  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
 TOOLS_PATH = REPO / "data" / "tools.yaml"
@@ -269,6 +282,9 @@ def main() -> int:
     argp.add_argument("--report", default=None)
     argp.add_argument("--no-bump", action="store_true",
                       help="never write data files")
+    argp.add_argument("--review-page", default=None,
+                      help="force one prose page through review regardless "
+                           "of its due date (path relative to docs/)")
     args = argp.parse_args()
 
     config = yaml.safe_load((REPO / "feeds.yaml").read_text(encoding="utf-8"))
@@ -283,6 +299,19 @@ def main() -> int:
     models = yaml.safe_load(MODELS_PATH.read_text(encoding="utf-8"))
 
     recommendations, failures, bumped, auto_added = [], [], [], []
+
+    # Tool-mention tripwire: when a roster entry's facts move, the prose
+    # pages naming it need a recheck the same week, not when their own
+    # review budgets expire. The map is a free census over enrolled pages.
+    roster_names = ([t["name"] for t in tools] + [m["name"] for m in models])
+    mention_map = build_mention_map(roster_names)
+
+    def prose_note(name: str) -> str:
+        pages = mention_map.get(name, [])
+        if not pages:
+            return ""
+        return ("\n  - prose pages naming it (recheck if applied): "
+                + ", ".join(pages))
 
     # --- Input 1: news-driven synthesis -----------------------------------
     items = week_items(news_days)
@@ -325,7 +354,7 @@ def main() -> int:
                     f"({rec.get('target', '?')}, {rec.get('change', '?')})\n"
                     f"  - reason: {rec.get('reason', '')}\n"
                     f"  - evidence: {rec.get('evidence_url')}"
-                    + gate_note)
+                    + gate_note + prose_note(rec.get("entry", "")))
         except (requests.RequestException, ValueError, KeyError,
                 json.JSONDecodeError, RuntimeError) as exc:
             failures.append(f"news synthesis: {type(exc).__name__}: {exc}")
@@ -385,10 +414,17 @@ def main() -> int:
                 f"### {entry['name']} (tools.yaml, verify)\n"
                 f"  - flags: {flags}\n"
                 f"  - note: {v.get('note', '')}\n"
-                f"  - source: {entry['url']}")
+                f"  - source: {entry['url']}"
+                + prose_note(entry["name"]))
 
     if bumped and not args.no_bump:
         TOOLS_PATH.write_text(tools_text, encoding="utf-8", newline="\n")
+
+    # --- Input 3: prose page review (docstring in scripts/page_review.py) --
+    pr = run_page_review(config, tools, models, call_task, strip_page,
+                         args.no_bump, args.review_page, date.today())
+    recommendations.extend(pr["escalations"])
+    failures.extend(pr["failures"])
 
     lines = [
         "Weekly automated content watch. Verified-unchanged entries had "
@@ -410,6 +446,16 @@ def main() -> int:
     if bumped:
         lines.append(f"Verified unchanged (last_reviewed bumped to "
                      f"{today_iso}): {', '.join(bumped)}.")
+    if pr["bumped"] or pr["held"]:
+        lines.extend(["", "## Page review", ""])
+        if pr["bumped"]:
+            lines.append("Machine-verified current, front-matter "
+                         "last_reviewed bumped: " + "; ".join(pr["bumped"])
+                         + ".")
+        if pr["held"]:
+            lines.append("Possible drift, held for confirmation on the "
+                         "next run before escalating: "
+                         + "; ".join(pr["held"]) + ".")
     if failures:
         lines.extend(["", "## Check failures", ""]
                      + [f"- {f}" for f in failures])
@@ -420,11 +466,22 @@ def main() -> int:
     else:
         print(report)
 
+    if args.review_page and pr["notes"]:
+        print("\n=== forced page review: claim verdicts ===")
+        for note in pr["notes"]:
+            print(f"  {note}")
+
     print("\n=== verification ===")
     print(f"news items in    : {len(items)}")
     print(f"rotation checked : {len(rotation)}")
     print(f"bumped           : {len(bumped)}")
     print(f"auto-added models: {len(auto_added)}")
+    print(f"pages enrolled   : {pr['enrolled']}")
+    print(f"pages due        : {pr['due']}")
+    print(f"pages reviewed   : {pr['reviewed']}")
+    print(f"pages bumped     : {len(pr['bumped'])}")
+    print(f"pages held       : {len(pr['held'])}")
+    print(f"pages escalated  : {len(pr['escalations'])}")
     print(f"recommendations  : {len(recommendations)}")
     print(f"dropped ungrounded: {dropped_ungrounded}")
     print(f"failures         : {len(failures)}")

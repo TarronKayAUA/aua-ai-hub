@@ -88,6 +88,13 @@ llm:
     gate_verify:
       provider: anthropic
       model: claude-sonnet-5
+    # Weekly prose page review (owner approved 2026-07-08): claims check
+    # of due evergreen pages against fetched tool pages. A wrong drift
+    # call costs an owner email, so this rides the same verification
+    # tier as gate_verify. A few pages per week, pennies per month.
+    page_review:
+      provider: anthropic
+      model: claude-sonnet-5
     # Weekly digest narrative: owner editorial decision 2026-07-04, made
     # knowing the benchmark picture (LiveBench has Opus 4.8 slightly ahead
     # globally): Fable 5 writes denser short-form prose, and Opus's
@@ -261,6 +268,34 @@ content_watch:
   # do all tool changes and removals. Set to propose to return
   # everything to proposals.
   models_add_mode: auto
+  # Prose page review (owner approved 2026-07-08): evergreen docs pages
+  # enrolled via a last_reviewed front-matter key are re-reviewed when
+  # their census-derived budget expires:
+  #   budget_days = 30 * target_expected_drift / sum(claims * lambda)
+  # clamped to [floor_days, cap_days]. The lambda_per_month rates are
+  # per-claim drift probabilities per 30 days, cold-started 2026-07-08
+  # from one month of observed drift (content-watch proposal rates over
+  # the tool directory; the research page needing a substantive rewrite
+  # within four weeks of authoring). data/page_review_state.json keeps a
+  # drift ledger (claims checked vs drifted) so the rates get
+  # re-estimated from observation as reviews accumulate; the costs are
+  # asymmetric (an early check costs about a cent, a stale claim sits on
+  # an institutional site), so estimates round down.
+  page_review:
+    # Kill switch: off stops the pass entirely (forced --review-page
+    # runs still work, being explicit human requests).
+    mode: auto
+    max_pages_per_run: 3
+    page_chars: 12000
+    tool_page_chars: 3000
+    max_tool_pages: 4
+    target_expected_drift: 0.5
+    floor_days: 45
+    cap_days: 365
+    lambda_per_month:
+      model_price: 0.1
+      tool_mention: 0.03
+      dated_phrase: 0.05
 
 # Weekly digest settings. The digest is a second-stage highlights selection
 # over everything kept since the previous digest, generated on the configured

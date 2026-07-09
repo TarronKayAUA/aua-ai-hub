@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-06-10
+---
+
 # Module 1: How AI Works
 
 **For everyone · about 10 minutes · CGEA competency domain: Understanding AI**

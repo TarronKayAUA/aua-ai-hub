@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-06-11
+---
+
 # Image Generation Benchmarks
 
 Text-to-image models are judged differently from language models. There is no answer key for a picture, so the field's standard is the **arena**: thousands of people are shown two images generated from the same prompt, without knowing which model made which, and vote for the better one. Votes become Elo-style ratings, the same math used to rank chess players. It measures human preference at scale, which is most of what matters for generated images, with one caveat: preference rewards what looks good, which is not always what is accurate.

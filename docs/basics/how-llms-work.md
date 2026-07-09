@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # How LLMs Work
 
 A plain-language primer for medical educators and students. No math, no code, about a ten-minute read.

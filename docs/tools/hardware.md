@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Hardware for Local AI
 
 [Running Models Locally](local.md) gets you started in ten minutes. This page is the deeper layer: what actually determines whether a model runs on your machine and how fast it feels, taught through one piece of arithmetic you can do on a napkin. By the end you should be able to estimate, for any model and any computer, whether it fits and roughly how fast it will run, without buying anything or trusting a benchmark chart.

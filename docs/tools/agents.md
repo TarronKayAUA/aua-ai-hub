@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # AI Agents
 
 A chat assistant answers you. An agent acts for you: given a goal, it plans steps, uses tools (a browser, your files, a terminal, connected apps), checks its own progress, and keeps going until the task is done or it needs your input. That difference, from answering to acting, is the biggest shift in how these systems are used since chat itself, and it changes both what you can delegate and what you must supervise.

@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Playbook: Preparing a Lecture
 
 **For faculty · works with any capable assistant in the [tools directory](../tools/index.md)**

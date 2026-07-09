@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-02
+---
+
 # Module 4: Teaching and Assessment
 
 **For faculty · about 15 minutes · CGEA competency domain: AI Possibilities in Medical Education**
