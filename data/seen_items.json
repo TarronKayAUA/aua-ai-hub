@@ -13991,6 +13991,302 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://img.transistorcdn.com/XNr1FlUMRqcgOINlwzJryJUFzx05IMXfyCxfiSMMXkc/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iMTUx/NmM0ODdlNGI0YTdh/YjUxNjYwNTEyMzll/ZmVkMy5wbmc.jpg"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e85621",
+   "title_hash": "021a018463e86798bcbcdcccc33bbffb",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Effectiveness of Humanized AI Avatars and Messenger Gender for Dental Postprocedure Instructions: Two Randomized Experiments",
+   "source": "JMIR AI",
+   "published": "2026-07-09T20:45:14+00:00",
+   "summary": "Randomized experiments evaluate AI avatars with varied gender presentation for delivering dental postprocedure instructions.",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e80377",
+   "title_hash": "d45b378ea307528ba583f5109bbc2e0c",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Quantifying the Predictive Power of Social Determinants of Health in Cardiovascular Disease and Type 2 Diabetes Progression Using XGBoost: Retrospective Cohort Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-09T20:45:14+00:00",
+   "summary": "Machine-learning study quantifies social determinants of health contribution to cardiovascular disease and type 2 diabetes risk prediction.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs",
+   "title_hash": "677595a3e78ad7f187af567817ea4ad7",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Humanoid robots controlled by surgeons did world-first operation on live pigs",
+   "source": "Ars Technica AI",
+   "published": "2026-07-09T20:12:03+00:00",
+   "summary": "Preclinical trial demonstrates feasibility of surgeon-controlled humanoid robots performing live animal surgery.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/humanoid-robot-surgeons-500x500.png"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e104943",
+   "title_hash": "3133026fd0733d54dc33599d38d295d1",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "correction notice with no substantive content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6",
+   "title_hash": "f6ddce8c7ff0a600148decf73e43840e",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "unverified rumor; no confirmed OpenAI announcement of GPT-5.6 family"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/openai-faked-inability-to-search-training-data-hid-billions-of-logs-nyt-says",
+   "title_hash": "709a50dc54a3dd8f3d6c771d4aec08a1",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "litigation and policy gossip without significance for medical education or clinical AI deployment"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e90563",
+   "title_hash": "b83d9ef97829d8c6250985e59feec579",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Medical Students’ Experiences With an Integrated Surgical Suturing Training Module Using Simulation Models and Asynchronous Videos: Interpretive Qualitative Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-07-09T18:30:18+00:00",
+   "summary": "Qualitative study of medical students' experiences integrating asynchronous video and simulation models for surgical suturing skills training.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1",
+   "title_hash": "a67dc4ad4908f82a4183d9cefe98e48f",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Introducing Muse Spark 1.1",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-09T16:24:09+00:00",
+   "summary": "Meta releases Muse Spark 1.1 with API availability and improved agentic tool calling and computer use capabilities.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/9/llm-meta-ai",
+   "title_hash": "4ec1ddca379cdf825e96c639856f80f7",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/9/llm",
+   "title_hash": "219a7a7d4198436afa7757ea4a5eb540",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42424017?fc=20260609215449&ff=20260709170800&v=2.20.0",
+   "title_hash": "37c6c483afa525f6b1b827b14bae59c6",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "epidemiologic study of social determinants; not AI-focused research in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&ff=20260709170800&v=2.20.0",
+   "title_hash": "5dd6410a6ca31d7f39638498def4fad4",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Performance of next-generation AI chatbots in colorectal cancer knowledge assessment: a comparative pilot study of ChatGPT-5.1, Gemini-3Pro Preview, DeepSeek-V3.2, Kimi K2 Thinking, Qwen3-Max and Claude Opus 4.5",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-09T10:00:00+00:00",
+   "summary": "Comparative pilot study assessing six advanced AI chatbots on colorectal cancer knowledge, safety, and reasoning using multiple-choice questions.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42423737?fc=20260609215449&ff=20260709170800&v=2.20.0",
+   "title_hash": "6d838b17bd769439270e5243b230d34e",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "narrow domain application; incremental fine-tuning study"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02970-2",
+   "title_hash": "6bc9209ea62aa5b9923d8cbeaed6d63c",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Sleep EEG foundation models reveal within-stage microstructure that improves health screening beyond traditional stages",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-09T00:00:00+00:00",
+   "summary": "Foundation models trained on sleep EEG detect within-stage microstructure patterns improving health screening beyond traditional sleep staging.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02929-3",
+   "title_hash": "ddf3cfecb0081ac5109f66c27e956813",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Automated risk scoring for venous thromboembolism using large language models with expert knowledge-augmented prompting: a multicenter validation study",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-09T00:00:00+00:00",
+   "summary": "Multicenter validation study demonstrates large language models with expert-augmented prompting for automated venous thromboembolism risk scoring.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=roGmNXASYOM",
+   "title_hash": "c5688ed88cc1148bdaf4d2f8a17e4157",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "title is rumor-framed; speculative content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mD1F5DsC5tc",
+   "title_hash": "4e3f1dd45e0a7530ee70d45382fbe0df",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "title is shock-framed; promotional content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=GphgJjaKKhw",
+   "title_hash": "5d8470f00a4b0c92bbc27e5f1ed4cced",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5X5CALvYvp0",
+   "title_hash": "537fc4c85f5b0ec7dbf1a5e2de0c44d3",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Meet a mathematician solving previously unsolvable math problems with GPT-5.6",
+   "source": "OpenAI",
+   "published": "2026-07-09T20:00:35+00:00",
+   "summary": "OpenAI demonstrates GPT-5.6 solving previously unsolvable mathematics problems with real-world application.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/5X5CALvYvp0/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=hWhfrR9WJ_c",
+   "title_hash": "731f85630dc8d3710f2e156360ae81fb",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing use-case demonstration"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=A5VgJ0KZgKs",
+   "title_hash": "f3929d982993c5b5d984a685fe182c1b",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing use-case demonstration"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=8sUXGKDUEzI",
+   "title_hash": "c628f429c99ec53f53893a5331110a76",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Ga792ftrBu4",
+   "title_hash": "cda54ad8cc334df70e934dc0d700ae3c",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jEtR3PLaWos",
+   "title_hash": "c7855ec4662388b8a9e2f443d75565cd",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=M3yEJEDFaEg",
+   "title_hash": "de9acee9413e5c81a6f318bddacb2a43",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RlS2dDeAfDw",
+   "title_hash": "4fabfff52c934b42599477cf293b1afc",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=l-YPBP5jTVs",
+   "title_hash": "15aef12f95fd8484e22ec1e98b413abb",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Wq45rvPGNHs",
+   "title_hash": "2fb5e36a0dfe50f2c063a909a08d6c8c",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Introducing ChatGPT Work, powered by Codex and GPT-5.6",
+   "source": "OpenAI",
+   "published": "2026-07-09T18:17:42+00:00",
+   "summary": "OpenAI announces ChatGPT Work with Codex and GPT-5.6, demonstrating new agentic capabilities for task automation.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/Wq45rvPGNHs/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=-MPGU2a67Ls",
+   "title_hash": "da6e8936202274e1174e21b513b9cbfa",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Meet GPT-5.6",
+   "source": "OpenAI",
+   "published": "2026-07-09T17:55:26+00:00",
+   "summary": "GPT-5.6 demonstrates code generation capabilities by building a playable card game from an open-ended prompt.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/-MPGU2a67Ls/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ELh8R7bGlxE",
+   "title_hash": "5d3a9cf308fc24d4bba15e5ef97fca6f",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": true,
+   "title": "Sol, Terra, and Luna, our GPT‑5.6 family of models are here.",
+   "source": "OpenAI",
+   "published": "2026-07-09T17:51:13+00:00",
+   "summary": "OpenAI releases GPT-5.6 family of models Sol, Terra, Luna across ChatGPT, Codex, and the API.",
+   "category": "videos",
+   "score": 5.0,
+   "thumbnail": "https://i2.ytimg.com/vi/ELh8R7bGlxE/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=yRc5HcGJ-Cs",
+   "title_hash": "3b3910d9c1cd0093fa17b8e874a8f99d",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "duplicate of kept candidate 11"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-the-4-New-AI-Models-Change-How-You-Work-e3lsgnh",
+   "title_hash": "0ccbd3d5df74249332c760c60b1ed973",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "unverified model announcements; implausible version numbering suggests unreliable source"
+  },
+  {
+   "url": "https://aipodcast.education/what-schools-and-small-business-can-teach-each-other-about-ai",
+   "title_hash": "6979dc4871ab5525cca5d5b4c5315db0",
+   "first_seen": "2026-07-09T21:08:00.032741+00:00",
+   "kept": false,
+   "reason": "opinion and career guidance without new AI developments"
   }
  ],
  "digests": [
@@ -14113,18 +14409,18 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "DeepSeek-V3.2 demonstrated superior performance to ChatGPT on the 2025 Chinese National Medical Licensing Examination, though both models showed limited improvement from iterative updates when measured against the previous year’s exam <a href=\"https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[1]</a>. Despite advances, comparative analysis indicates that large language models still require human oversight in high-stakes clinical exam grading because of calibration issues and inconsistent agreement, precluding autonomous deployment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[2]</a>. Concurrently, studies highlight the growing gap between rapid generative AI adoption and meaningful integration among critical care physicians, underscoring the need for structured training approaches <a href=\"https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[7]</a>. Prompt engineering in surgical education continues to evolve, with professional discourse focused on optimizing AI outputs through specialized techniques <a href=\"https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[5]</a>.",
-   "hash": "3c0f7dd5708442d9",
+   "text": "Large language models continue to show promise in medical education but require careful human oversight, with recent comparative analyses revealing strong rank-order grading performance yet persistent calibration issues in high-stakes clinical assessment environments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[3]</a>. Advanced chatbots, including DeepSeek-V3.2 and others, have been tested on clinical knowledge and reasoning tasks, leading to insights on their safety and reliability in subject-specific medical contexts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0\">[6]</a>. Studies of critical care physicians and trainees show rapid adoption of generative AI technologies, though a gap remains between uptake and comprehensive integration into clinical workflows, highlighting the ongoing need for structured training programs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[9]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0\">[14]</a>.",
+   "hash": "fde80fe33dc3274c",
    "date": "July 9, 2026"
   },
   "clinical_practice": {
-   "text": "An AI-based algorithm has improved early detection of paroxysmal nocturnal hemoglobinuria in real-world clinical practice, potentially enabling faster intervention for this rare blood disorder <a href=\"https://www.nature.com/articles/s41746-026-02980-0\">[1]</a>. Large language models are also being shown to encode electronic health records effectively, advancing clinical data extraction and supporting patient care workflows <a href=\"https://www.nature.com/articles/s41746-026-02915-9\">[13]</a>. Comparative evaluation of AI-assisted nuclear medicine reports highlights that tools like ChatGPT-4o may enhance clinical impressions generated by trainees, pointing toward broader integration of AI in radiology reporting <a href=\"https://ai.jmir.org/2026/1/e94833\">[3]</a>. In musculoskeletal imaging, hierarchical deep learning models are being developed to classify supraspinatus tendon pathologies, promoting greater consistency and reliability in MRI interpretation <a href=\"https://medinform.jmir.org/2026/1/e84804\">[2]</a>.",
-   "hash": "98b99b450c10c592",
+   "text": "The feasibility of surgeon-controlled humanoid robots performing live animal surgery marks a significant step toward integrating robotics into procedural clinical practice <a href=\"https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs\">[3]</a>. Alongside robotics, AI-driven diagnostic algorithms have improved early detection rates for paroxysmal nocturnal hemoglobinuria, demonstrating tangible impact in real-world clinical settings <a href=\"https://www.nature.com/articles/s41746-026-02980-0\">[4]</a>. Large language models with expert-augmented prompting are now validated for automated venous thromboembolism risk scoring across multiple centers, highlighting advances in scalable risk prediction <a href=\"https://www.nature.com/articles/s41746-026-02929-3\">[6]</a>. Sleep EEG foundation models introduce nuanced within-stage microstructure detection that enhances health screening beyond conventional sleep staging methods <a href=\"https://www.nature.com/articles/s41746-026-02970-2\">[5]</a>. Finally, a hierarchical deep learning model is improving diagnostic consistency for supraspinatus tendon pathologies in musculoskeletal imaging workflows <a href=\"https://medinform.jmir.org/2026/1/e84804\">[7]</a>.",
+   "hash": "59ef4daa75aff7e5",
    "date": "July 9, 2026"
   },
   "general_ai": {
-   "text": "Security risks remain a pressing concern in AI, as research shows widespread susceptibility among popular tools to botnet assembly via exploitation of model behavior <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[3]</a>. Meanwhile, retrieval-augmented generation is being used to improve public health question answering reliability by grounding model outputs in authoritative documents <a href=\"https://arxiv.org/abs/2607.06641\">[1]</a>. Advances in model architecture continue, with NVIDIA&#x27;s Nemotron-Labs-Diffusion integrating three decoding methods to offer flexible deployment options <a href=\"https://arxiv.org/abs/2607.05722\">[5]</a>, and Google&#x27;s Gemma 4 offers open weights and enhanced performance for development and research <a href=\"https://arxiv.org/abs/2607.02770\">[6]</a>. Performance bottlenecks in serving long contexts are also being addressed through comparative benchmarking of key-value cache compression strategies <a href=\"https://arxiv.org/abs/2607.05399\">[4]</a>.",
-   "hash": "6e6acaa63bc5c29e",
+   "text": "OpenAI has upgraded ChatGPT&#x27;s voice mode model and enabled delegation to GPT-4o for tasks that require web search or complex reasoning, expanding the range of accessible capabilities for real-time interaction <a href=\"https://simonwillison.net/2026/Jul/8/introducing-gptlive\">[3]</a>. Meanwhile, retrieval-augmented generation offers a promising strategy to mitigate hallucinations and outdated knowledge in public health question answering by grounding language model responses in current guidance documents <a href=\"https://arxiv.org/abs/2607.06641\">[2]</a>. Security research highlights the risks associated with widely used AI tools, demonstrating that models can be exploited to build large botnets if their tendency to generate plausible responses to unknown queries is not carefully managed <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[4]</a>. Google’s release of Gemma 4 provides improved open-weights language model options for deployment <a href=\"https://arxiv.org/abs/2607.02770\">[7]</a>.",
+   "hash": "1b7b6696e27e45ba",
    "date": "July 9, 2026"
   }
  },

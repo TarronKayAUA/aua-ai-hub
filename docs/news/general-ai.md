@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Security risks remain a pressing concern in AI, as research shows widespread susceptibility among popular tools to botnet assembly via exploitation of model behavior <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[3]</a>. Meanwhile, retrieval-augmented generation is being used to improve public health question answering reliability by grounding model outputs in authoritative documents <a href="https://arxiv.org/abs/2607.06641">[1]</a>. Advances in model architecture continue, with NVIDIA&#x27;s Nemotron-Labs-Diffusion integrating three decoding methods to offer flexible deployment options <a href="https://arxiv.org/abs/2607.05722">[5]</a>, and Google&#x27;s Gemma 4 offers open weights and enhanced performance for development and research <a href="https://arxiv.org/abs/2607.02770">[6]</a>. Performance bottlenecks in serving long contexts are also being addressed through comparative benchmarking of key-value cache compression strategies <a href="https://arxiv.org/abs/2607.05399">[4]</a>.</p>
+<p>OpenAI has upgraded ChatGPT&#x27;s voice mode model and enabled delegation to GPT-4o for tasks that require web search or complex reasoning, expanding the range of accessible capabilities for real-time interaction <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[3]</a>. Meanwhile, retrieval-augmented generation offers a promising strategy to mitigate hallucinations and outdated knowledge in public health question answering by grounding language model responses in current guidance documents <a href="https://arxiv.org/abs/2607.06641">[2]</a>. Security research highlights the risks associated with widely used AI tools, demonstrating that models can be exploited to build large botnets if their tendency to generate plausible responses to unknown queries is not carefully managed <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[4]</a>. Google’s release of Gemma 4 provides improved open-weights language model options for deployment <a href="https://arxiv.org/abs/2607.02770">[7]</a>.</p>
 <p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1">Introducing Muse Spark 1.1</a>
+    <p class="news-card-summary">Meta releases Muse Spark 1.1 with API availability and improved agentic tool calling and computer use capabilities.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 9, 2026</span></div>
@@ -121,13 +128,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to">I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads</a>
     <p class="news-card-summary">Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100">google/tabfm-1.0.0</a>
-    <p class="news-card-summary">Google Research released TabFM, a zero-shot foundation model for tabular data supporting classification and regression tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/J-WwzolBRQVriyFjrSxJJXj_RBqoGjl9IqtDCzg_QIU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=15aaf1d34804b9ad9d9e2115446764ba26b824f6" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

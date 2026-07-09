@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>DeepSeek-V3.2 demonstrated superior performance to ChatGPT on the 2025 Chinese National Medical Licensing Examination, though both models showed limited improvement from iterative updates when measured against the previous year’s exam <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[1]</a>. Despite advances, comparative analysis indicates that large language models still require human oversight in high-stakes clinical exam grading because of calibration issues and inconsistent agreement, precluding autonomous deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[2]</a>. Concurrently, studies highlight the growing gap between rapid generative AI adoption and meaningful integration among critical care physicians, underscoring the need for structured training approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[7]</a>. Prompt engineering in surgical education continues to evolve, with professional discourse focused on optimizing AI outputs through specialized techniques <a href="https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[5]</a>.</p>
+<p>Large language models continue to show promise in medical education but require careful human oversight, with recent comparative analyses revealing strong rank-order grading performance yet persistent calibration issues in high-stakes clinical assessment environments <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[3]</a>. Advanced chatbots, including DeepSeek-V3.2 and others, have been tested on clinical knowledge and reasoning tasks, leading to insights on their safety and reliability in subject-specific medical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">[6]</a>. Studies of critical care physicians and trainees show rapid adoption of generative AI technologies, though a gap remains between uptake and comprehensive integration into clinical workflows, highlighting the ongoing need for structured training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[9]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90563">Medical Students’ Experiences With an Integrated Surgical Suturing Training Module Using Simulation Models and Asynchronous Videos: Interpretive Qualitative Study</a>
+    <p class="news-card-summary">Qualitative study of medical students&#x27; experiences integrating asynchronous video and simulation models for surgical suturing skills training.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
@@ -44,6 +51,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Artificial intelligence literacy, rather than artificial intelligence anxiety, is associated with career optimism in physiotherapy and rehabilitation students: a cross-sectional study</a>
     <p class="news-card-summary">Physiotherapy and rehabilitation students showed stronger career optimism linked to AI literacy than to AI anxiety, suggesting educational focus on competence over concern.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">Performance of next-generation AI chatbots in colorectal cancer knowledge assessment: a comparative pilot study of ChatGPT-5.1, Gemini-3Pro Preview, DeepSeek-V3.2, Kimi K2 Thinking, Qwen3-Max and Claude Opus 4.5</a>
+    <p class="news-card-summary">Comparative pilot study assessing six advanced AI chatbots on colorectal cancer knowledge, safety, and reasoning using multiple-choice questions.</p>
   </div>
 </div>
 <div class="news-card">
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42414978?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Determinants of medical students&#x27; attitudes toward artificial intelligence: a cross-sectional study and implications for medical education</a>
     <p class="news-card-summary">Survey of medical students finds positive attitudes toward AI correlated with higher paternal education, technological interest, and optimistic evaluation of AI developments.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413800?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Comment on &quot;Evaluating Generative Artificial Intelligence as an Educational Tool for Radiology Resident Report Drafting&quot;</a>
-    <p class="news-card-summary">Commentary raises methodological concerns about claims that GPT-4o reliably identifies radiology report errors and provides feedback for resident learning.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02978-8">Human-in-the-loop validation of a sequential multi-LLM medical education pipeline</a>
-    <p class="news-card-summary">Peer-reviewed research describes a multi-language model medical education pipeline with human-in-the-loop validation.</p>
   </div>
 </div>
 </div>

@@ -11,11 +11,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>DeepSeek-V3.2 demonstrated superior performance to ChatGPT on the 2025 Chinese National Medical Licensing Examination, though both models showed limited improvement from iterative updates when measured against the previous year’s exam <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[1]</a>. Despite advances, comparative analysis indicates that large language models still require human oversight in high-stakes clinical exam grading because of calibration issues and inconsistent agreement, precluding autonomous deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[2]</a>. Concurrently, studies highlight the growing gap between rapid generative AI adoption and meaningful integration among critical care physicians, underscoring the need for structured training approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[7]</a>. Prompt engineering in surgical education continues to evolve, with professional discourse focused on optimizing AI outputs through specialized techniques <a href="https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[5]</a>.</p>
+<p>Large language models continue to show promise in medical education but require careful human oversight, with recent comparative analyses revealing strong rank-order grading performance yet persistent calibration issues in high-stakes clinical assessment environments <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[3]</a>. Advanced chatbots, including DeepSeek-V3.2 and others, have been tested on clinical knowledge and reasoning tasks, leading to insights on their safety and reliability in subject-specific medical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">[6]</a>. Studies of critical care physicians and trainees show rapid adoption of generative AI technologies, though a gap remains between uptake and comprehensive integration into clinical workflows, highlighting the ongoing need for structured training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[9]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90563">Medical Students’ Experiences With an Integrated Surgical Suturing Training Module Using Simulation Models and Asynchronous Videos: Interpretive Qualitative Study</a>
+    <p class="news-card-summary">Qualitative study of medical students&#x27; experiences integrating asynchronous video and simulation models for surgical suturing skills training.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
@@ -42,6 +49,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Artificial intelligence literacy, rather than artificial intelligence anxiety, is associated with career optimism in physiotherapy and rehabilitation students: a cross-sectional study</a>
     <p class="news-card-summary">Physiotherapy and rehabilitation students showed stronger career optimism linked to AI literacy than to AI anxiety, suggesting educational focus on competence over concern.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">Performance of next-generation AI chatbots in colorectal cancer knowledge assessment: a comparative pilot study of ChatGPT-5.1, Gemini-3Pro Preview, DeepSeek-V3.2, Kimi K2 Thinking, Qwen3-Max and Claude Opus 4.5</a>
+    <p class="news-card-summary">Comparative pilot study assessing six advanced AI chatbots on colorectal cancer knowledge, safety, and reasoning using multiple-choice questions.</p>
   </div>
 </div>
 <div class="news-card">
@@ -270,48 +284,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e85666">Exploring Ambient Artificial Intelligence to Enhance Learning and Feedback During Operating Room-to-Intensive Care Unit Handoffs: Co-Design and Simulation Study</a>
-    <p class="news-card-summary">Co-design study explores use of ambient AI to enhance learning and feedback during operating room-to-intensive care unit clinical handoffs.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e86569">Voice Cloning Using AI vs Traditional Audio Recording for Prerecorded Courses in Medical Pedagogy: Randomized Controlled Trial</a>
-    <p class="news-card-summary">Randomized controlled trial compares voice-cloned versus traditionally recorded audio for prerecorded medical courses, evaluating learning outcomes and student perception.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Awareness, Educational Needs, and Curriculum Preferences Regarding AI and Medical Big Data Education Among Clinical Medicine Undergraduates: Cross-Sectional Survey Study</a>
-    <p class="news-card-summary">Survey of clinical medicine undergraduates reveals limited AI familiarity and identifies curriculum needs and student preferences for AI and medical big data education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42389691?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Artificial intelligence in veterinary education: self-perceived knowledge, use, and attitudes among veterinary students in Spain and Portugal</a>
-    <p class="news-card-summary">Survey of veterinary students in Spain and Portugal assesses self-perceived knowledge, use, and attitudes toward AI and generative AI in veterinary education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42388626?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">Knowledge localization is associated with higher performance of domestic large language models in a Chinese radiation oncology examination</a>
-    <p class="news-card-summary">Study demonstrates that large language models with domain-specific knowledge localization outperform standard models on Chinese radiation oncology board examination questions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">User Acceptance of an AI-Powered Medical History-Taking Training System Among Undergraduate Medical Students: Mixed Methods Study</a>
-    <p class="news-card-summary">Mixed methods study evaluates undergraduate medical student acceptance and interaction with an AI-powered system for training in patient history-taking.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42391624?fc=20260609215449&amp;ff=20260702194001&amp;v=2.20.0">Agreement Between Reasoning-Oriented Generative AI Models and Clinical Educators in Evaluating Japanese Objective Structured Clinical Examination Transcripts: Preliminary Comparative Study</a>
     <p class="news-card-summary">Single-center study comparing reasoning-oriented generative AI models to clinical educators in evaluating Japanese objective structured clinical exams.</p>
@@ -336,16 +308,52 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>An AI-based algorithm has improved early detection of paroxysmal nocturnal hemoglobinuria in real-world clinical practice, potentially enabling faster intervention for this rare blood disorder <a href="https://www.nature.com/articles/s41746-026-02980-0">[1]</a>. Large language models are also being shown to encode electronic health records effectively, advancing clinical data extraction and supporting patient care workflows <a href="https://www.nature.com/articles/s41746-026-02915-9">[13]</a>. Comparative evaluation of AI-assisted nuclear medicine reports highlights that tools like ChatGPT-4o may enhance clinical impressions generated by trainees, pointing toward broader integration of AI in radiology reporting <a href="https://ai.jmir.org/2026/1/e94833">[3]</a>. In musculoskeletal imaging, hierarchical deep learning models are being developed to classify supraspinatus tendon pathologies, promoting greater consistency and reliability in MRI interpretation <a href="https://medinform.jmir.org/2026/1/e84804">[2]</a>.</p>
+<p>The feasibility of surgeon-controlled humanoid robots performing live animal surgery marks a significant step toward integrating robotics into procedural clinical practice <a href="https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs">[3]</a>. Alongside robotics, AI-driven diagnostic algorithms have improved early detection rates for paroxysmal nocturnal hemoglobinuria, demonstrating tangible impact in real-world clinical settings <a href="https://www.nature.com/articles/s41746-026-02980-0">[4]</a>. Large language models with expert-augmented prompting are now validated for automated venous thromboembolism risk scoring across multiple centers, highlighting advances in scalable risk prediction <a href="https://www.nature.com/articles/s41746-026-02929-3">[6]</a>. Sleep EEG foundation models introduce nuanced within-stage microstructure detection that enhances health screening beyond conventional sleep staging methods <a href="https://www.nature.com/articles/s41746-026-02970-2">[5]</a>. Finally, a hierarchical deep learning model is improving diagnostic consistency for supraspinatus tendon pathologies in musculoskeletal imaging workflows <a href="https://medinform.jmir.org/2026/1/e84804">[7]</a>.</p>
 <p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85621">Effectiveness of Humanized AI Avatars and Messenger Gender for Dental Postprocedure Instructions: Two Randomized Experiments</a>
+    <p class="news-card-summary">Randomized experiments evaluate AI avatars with varied gender presentation for delivering dental postprocedure instructions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80377">Quantifying the Predictive Power of Social Determinants of Health in Cardiovascular Disease and Type 2 Diabetes Progression Using XGBoost: Retrospective Cohort Study</a>
+    <p class="news-card-summary">Machine-learning study quantifies social determinants of health contribution to cardiovascular disease and type 2 diabetes risk prediction.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs">Humanoid robots controlled by surgeons did world-first operation on live pigs</a>
+    <p class="news-card-summary">Preclinical trial demonstrates feasibility of surgeon-controlled humanoid robots performing live animal surgery.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/humanoid-robot-surgeons-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02980-0">AI-driven diagnostic algorithm enhances early detection of paroxysmal nocturnal hemoglobinuria in real-world settings</a>
     <p class="news-card-summary">An AI diagnostic algorithm improved early detection of paroxysmal nocturnal hemoglobinuria in real-world clinical settings.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02970-2">Sleep EEG foundation models reveal within-stage microstructure that improves health screening beyond traditional stages</a>
+    <p class="news-card-summary">Foundation models trained on sleep EEG detect within-stage microstructure patterns improving health screening beyond traditional sleep staging.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02929-3">Automated risk scoring for venous thromboembolism using large language models with expert knowledge-augmented prompting: a multicenter validation study</a>
+    <p class="news-card-summary">Multicenter validation study demonstrates large language models with expert-augmented prompting for automated venous thromboembolism risk scoring.</p>
   </div>
 </div>
 <div class="news-card">
@@ -539,42 +547,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92193">Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study</a>
-    <p class="news-card-summary">Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81445">Clinician Perspectives on Ambient AI Scribes in the Intensive Care Unit: Qualitative Interview Study</a>
-    <p class="news-card-summary">Qualitative interview study explores intensive care unit clinician perspectives on ambient AI scribes for documentation and team communication support.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&amp;ff=20260702141946&amp;v=2.20.0">AI In Leukemia Diagnostics: Complementing the Pathologist&#x27;s Role</a>
-    <p class="news-card-summary">Review discusses artificial intelligence applications across leukemia diagnostic stages, from morphology to molecular analysis, and pathologist integration.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02942-6">Physicians and artificial intelligence diverge in evaluating large language models on real clinical cases</a>
-    <p class="news-card-summary">Study finds divergence between physician and AI model evaluations on clinical reasoning tasks, raising questions about readiness for health AI deployment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04500-9">Why high scores do not mean application readiness for health AI</a>
-    <p class="news-card-summary">Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04500-9/MediaObjects/41591_2026_4500_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 2, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02943-5">KGRD: a knowledge-graph-augmented automated reasoning framework for diagnosis and counselling of paediatric rare genetic disorders</a>
     <p class="news-card-summary">Knowledge-graph-augmented automated reasoning framework for diagnosis and counseling of pediatric rare genetic disorders published in npj Digital Medicine.</p>
@@ -585,11 +557,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Security risks remain a pressing concern in AI, as research shows widespread susceptibility among popular tools to botnet assembly via exploitation of model behavior <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[3]</a>. Meanwhile, retrieval-augmented generation is being used to improve public health question answering reliability by grounding model outputs in authoritative documents <a href="https://arxiv.org/abs/2607.06641">[1]</a>. Advances in model architecture continue, with NVIDIA&#x27;s Nemotron-Labs-Diffusion integrating three decoding methods to offer flexible deployment options <a href="https://arxiv.org/abs/2607.05722">[5]</a>, and Google&#x27;s Gemma 4 offers open weights and enhanced performance for development and research <a href="https://arxiv.org/abs/2607.02770">[6]</a>. Performance bottlenecks in serving long contexts are also being addressed through comparative benchmarking of key-value cache compression strategies <a href="https://arxiv.org/abs/2607.05399">[4]</a>.</p>
+<p>OpenAI has upgraded ChatGPT&#x27;s voice mode model and enabled delegation to GPT-4o for tasks that require web search or complex reasoning, expanding the range of accessible capabilities for real-time interaction <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[3]</a>. Meanwhile, retrieval-augmented generation offers a promising strategy to mitigate hallucinations and outdated knowledge in public health question answering by grounding language model responses in current guidance documents <a href="https://arxiv.org/abs/2607.06641">[2]</a>. Security research highlights the risks associated with widely used AI tools, demonstrating that models can be exploited to build large botnets if their tendency to generate plausible responses to unknown queries is not carefully managed <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[4]</a>. Google’s release of Gemma 4 provides improved open-weights language model options for deployment <a href="https://arxiv.org/abs/2607.02770">[7]</a>.</p>
 <p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1">Introducing Muse Spark 1.1</a>
+    <p class="news-card-summary">Meta releases Muse Spark 1.1 with API availability and improved agentic tool calling and computer use capabilities.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 9, 2026</span></div>
@@ -725,19 +704,35 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">IsoSci benchmark uses isomorphic cross-domain science problems to evaluate whether large language models reason or retrieve knowledge.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 2, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025">Google’s AI buildout drove 37% increase in electricity use in 2025</a>
-    <p class="news-card-summary">Google reports 37 percent increase in electricity consumption driven by AI infrastructure buildout in 2025, amid efforts to balance emissions with clean energy.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2246163658-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=5X5CALvYvp0" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/5X5CALvYvp0/hqdefault.jpg" alt="Video: Meet a mathematician solving previously unsolvable math problems with GPT-5.6" loading="lazy">
+  <span class="video-card-title">Meet a mathematician solving previously unsolvable math problems with GPT-5.6</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">OpenAI demonstrates GPT-5.6 solving previously unsolvable mathematics problems with real-world application.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=Wq45rvPGNHs" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/Wq45rvPGNHs/hqdefault.jpg" alt="Video: Introducing ChatGPT Work, powered by Codex and GPT-5.6" loading="lazy">
+  <span class="video-card-title">Introducing ChatGPT Work, powered by Codex and GPT-5.6</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">OpenAI announces ChatGPT Work with Codex and GPT-5.6, demonstrating new agentic capabilities for task automation.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=-MPGU2a67Ls" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/-MPGU2a67Ls/hqdefault.jpg" alt="Video: Meet GPT-5.6" loading="lazy">
+  <span class="video-card-title">Meet GPT-5.6</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">GPT-5.6 demonstrates code generation capabilities by building a playable card game from an open-ended prompt.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=ELh8R7bGlxE" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/ELh8R7bGlxE/hqdefault.jpg" alt="Video: Sol, Terra, and Luna, our GPT‑5.6 family of models are here." loading="lazy">
+  <span class="video-card-title">Sol, Terra, and Luna, our GPT‑5.6 family of models are here.</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">OpenAI releases GPT-5.6 family of models Sol, Terra, Luna across ChatGPT, Codex, and the API.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=ZVPlLaehjLk" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/ZVPlLaehjLk/hqdefault.jpg" alt="Video: Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production" loading="lazy">
   <span class="video-card-title">Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production</span>

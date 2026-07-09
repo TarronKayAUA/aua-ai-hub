@@ -54,6 +54,30 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=5X5CALvYvp0" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/5X5CALvYvp0/hqdefault.jpg" alt="Video: Meet a mathematician solving previously unsolvable math problems with GPT-5.6" loading="lazy">
+  <span class="video-card-title">Meet a mathematician solving previously unsolvable math problems with GPT-5.6</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">OpenAI demonstrates GPT-5.6 solving previously unsolvable mathematics problems with real-world application.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=Wq45rvPGNHs" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/Wq45rvPGNHs/hqdefault.jpg" alt="Video: Introducing ChatGPT Work, powered by Codex and GPT-5.6" loading="lazy">
+  <span class="video-card-title">Introducing ChatGPT Work, powered by Codex and GPT-5.6</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">OpenAI announces ChatGPT Work with Codex and GPT-5.6, demonstrating new agentic capabilities for task automation.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=-MPGU2a67Ls" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/-MPGU2a67Ls/hqdefault.jpg" alt="Video: Meet GPT-5.6" loading="lazy">
+  <span class="video-card-title">Meet GPT-5.6</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">GPT-5.6 demonstrates code generation capabilities by building a playable card game from an open-ended prompt.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=ELh8R7bGlxE" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/ELh8R7bGlxE/hqdefault.jpg" alt="Video: Sol, Terra, and Luna, our GPT‑5.6 family of models are here." loading="lazy">
+  <span class="video-card-title">Sol, Terra, and Luna, our GPT‑5.6 family of models are here.</span>
+  <span class="video-card-meta">OpenAI, July 9, 2026</span>
+  <span class="video-card-desc">OpenAI releases GPT-5.6 family of models Sol, Terra, Luna across ChatGPT, Codex, and the API.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=ZVPlLaehjLk" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/ZVPlLaehjLk/hqdefault.jpg" alt="Video: Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production" loading="lazy">
   <span class="video-card-title">Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production</span>
@@ -149,30 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">What Codex Unlocks for NTT Data</span>
   <span class="video-card-meta">OpenAI, June 19, 2026</span>
   <span class="video-card-desc">OpenAI describes how Codex, a code generation model, grew to over 10,000 active users and applications in enterprise software development.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=UxY8zJKRrHU" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/UxY8zJKRrHU/hqdefault.jpg" alt="Video: Improving health intelligence in ChatGPT" loading="lazy">
-  <span class="video-card-title">Improving health intelligence in ChatGPT</span>
-  <span class="video-card-meta">OpenAI, June 18, 2026</span>
-  <span class="video-card-desc">OpenAI describes improvements to health intelligence features in ChatGPT, including enhanced medical information handling for its 230 million weekly health-related user queries.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=tFiJMUNJdJU" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/tFiJMUNJdJU/hqdefault.jpg" alt="Video: Liquid LFM2.5-8B First Test, An On-Device MoE Model!" loading="lazy">
-  <span class="video-card-title">Liquid LFM2.5-8B First Test, An On-Device MoE Model!</span>
-  <span class="video-card-meta">Bijan Bowen, June 18, 2026</span>
-  <span class="video-card-desc">Demonstration of Liquid LFM2.5-8B, an on-device mixture-of-experts model suitable for local deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=4Vg2aVtrX8k" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/4Vg2aVtrX8k/hqdefault.jpg" alt="Video: Building AI Agents for Real-World Problems &amp; Workflows" loading="lazy">
-  <span class="video-card-title">Building AI Agents for Real-World Problems &amp; Workflows</span>
-  <span class="video-card-meta">IBM Technology, June 18, 2026</span>
-  <span class="video-card-desc">IBM&#x27;s overview of building and evaluating AI agents for real-world applications and clinical workflows.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=w2hpXlyMrAA" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/w2hpXlyMrAA/hqdefault.jpg" alt="Video: Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)" loading="lazy">
-  <span class="video-card-title">Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)</span>
-  <span class="video-card-meta">WorldofAI, June 17, 2026</span>
-  <span class="video-card-desc">Hands-on evaluation of Kimi K2.7 Code, an open-weights model, comparing its performance on code tasks against proprietary alternatives.</span>
 </a>
 </div>
 
