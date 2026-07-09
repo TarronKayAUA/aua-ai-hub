@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Security concerns are highlighted as recent research shows that nine popular AI tools can be exploited to build large botnets by manipulating their ability to provide credible responses to unfamiliar prompts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[1]</a>. Meanwhile, model architecture advances are evident in NVIDIA’s release of Nemotron-Labs-Diffusion, which integrates three decoding modes in a single framework for broader applications <a href="https://arxiv.org/abs/2607.05722">[3]</a>. Google’s introduction of Gemma 4 brings improved open-weights language models, continuing the trend of publicly available high-capability systems <a href="https://arxiv.org/abs/2607.02770">[4]</a>. Technical work also focuses on optimizing long-context serving, with benchmarking of key-value cache compression techniques addressing performance challenges in inference for large language models <a href="https://arxiv.org/abs/2607.05399">[2]</a>.</p>
-<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the items below.</p>
+<p>OpenAI has upgraded its ChatGPT voice mode model, enabling automatic delegation to GPT-4o for tasks that require web search or more complex reasoning, which may impact how medical users interact with AI assistants <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[1]</a>. Security considerations are highlighted by research showing that widely used AI tools can be exploited to construct extensive botnets by generating plausible yet unreliable responses, raising concerns for deployments in clinical contexts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[2]</a>. Advances in long-context handling, notably benchmarked key-value cache compression techniques, aim to reduce inference bottlenecks and improve performance in scenarios where medical faculty or students require processing lengthy documents <a href="https://arxiv.org/abs/2607.05399">[3]</a>. NVIDIA&#x27;s Nemotron-Labs-Diffusion model introduces unified decoding methods, offering greater flexibility in AI applications <a href="https://arxiv.org/abs/2607.05722">[4]</a>.</p>
+<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">Introducing GPT‑Live</a>
+    <p class="news-card-summary">OpenAI upgraded ChatGPT&#x27;s voice mode model and added delegation to GPT-4o for tasks requiring web search or complex reasoning.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 8, 2026</span></div>
@@ -123,13 +130,5 @@ Items are selected nightly by an automated pipeline and link to their original s
     <p class="news-card-summary">Mistral released Leansral 1.5, a 119-billion-parameter open-weights model with 6-billion active parameters under Apache 2.0 license.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/ODJmTYJPSSbtKSPmO8gS3EmI__gMc5r8LJxlf8jL8KI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e875cb86d094c38614bc35319ea7422fcd655e2d" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1um84bd/followup_deepseek_v4_flash_on_2x_rtx_pro_6000">Follow-up: DeepSeek V4 Flash on 2x RTX PRO 6000 finishes real coding tasks faster than Sonnet and Opus, at about Sonnet quality</a>
-    <p class="news-card-summary">DeepSeek V4 Flash local model demonstrates coding performance comparable to Claude Sonnet at lower cost on consumer GPUs.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/ofq8evjmmyah1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d367345aaa68ac30b7d90d7843dc95e7e8911e2f" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

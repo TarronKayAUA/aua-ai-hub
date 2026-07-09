@@ -322,11 +322,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>AI tools are being implemented in hospital environments to streamline clinical documentation, as shown by large language models generating discharge summaries in secure settings <a href="https://ai.jmir.org/2026/1/e88816">[15]</a>, and validated ambient scribe systems decreasing the documentation burden for intensive care unit physicians <a href="https://medinform.jmir.org/2026/1/e85015">[3]</a>. Diagnostic applications are advancing as interpretable AI systems offer early lesion screening for oral leukoplakia <a href="https://www.nature.com/articles/s41746-026-02859-0">[6]</a>, while deep learning and explainable AI improve diagnostic accuracy for acute myocardial infarction in educational contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[11]</a>. Transition challenges with AI-enabled ECG models between clinical and home settings are being quantified and addressed <a href="https://www.nature.com/articles/s41746-026-02919-5">[10]</a>. Comparisons of large language models against clinicians in psychopathological assessment highlight ongoing evaluation of AI performance in clinical practice <a href="https://www.nature.com/articles/s41746-026-02852-7">[8]</a>.</p>
-<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the source items.</p>
+<p>AI-driven frameworks are making advances in predictive clinical decision-support, with systems now able to estimate injury risk among elite women’s football players <a href="https://www.nature.com/articles/s41746-026-02937-3">[4]</a> and predict incident atrial fibrillation from retinal fundus images using multimodal models <a href="https://www.nature.com/articles/s41746-026-02969-9">[5]</a>. These capabilities are complemented by digital twin architectures that support adaptive intervention and longitudinal tracking in cognitive aging <a href="https://ai.jmir.org/2026/1/e87768">[3]</a>. For clinicians, methods leveraging large language models streamline clinical data extraction from electronic health records, showing promise for improving both workflow efficiency and accuracy <a href="https://www.nature.com/articles/s41746-026-02915-9">[12]</a>. Meanwhile, the evaluation of AI-assisted scribe technology demonstrates feasibility in reducing documentation burden for intensive care unit rounds <a href="https://medinform.jmir.org/2026/1/e85015">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84804">AI-Assisted Detection of Supraspinatus Tendon Pathologies Using a Hierarchical Deep Learning Model to Improve Clinical Applicability: Development and Evaluation Study</a>
+    <p class="news-card-summary">A hierarchical deep learning model classifies supraspinatus tendon pathologies on MRI to improve diagnostic consistency in musculoskeletal imaging workflows.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 8, 2026</span></div>
@@ -339,6 +346,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87768">AI-Driven Digital Twin Architecture for Multimodal Prediction and Adaptive Intervention in Cognitive Aging</a>
     <p class="news-card-summary">Peer-reviewed conceptual framework for AI-driven digital twin system for cognitive aging prediction, monitoring, and adaptive intervention.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02937-3">Injury prediction in elite women’s football: an integrative machine learning-based decision-support framework</a>
+    <p class="news-card-summary">A machine learning framework predicts injury risk in elite women&#x27;s football players, supporting clinical decision-making.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02969-9">Prediction of incident atrial fibrillation from retinal fundus images using a multimodal foundation model</a>
+    <p class="news-card-summary">A multimodal foundation model predicts incident atrial fibrillation from retinal fundus images.</p>
   </div>
 </div>
 <div class="news-card">
@@ -543,11 +564,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Security concerns are highlighted as recent research shows that nine popular AI tools can be exploited to build large botnets by manipulating their ability to provide credible responses to unfamiliar prompts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[1]</a>. Meanwhile, model architecture advances are evident in NVIDIA’s release of Nemotron-Labs-Diffusion, which integrates three decoding modes in a single framework for broader applications <a href="https://arxiv.org/abs/2607.05722">[3]</a>. Google’s introduction of Gemma 4 brings improved open-weights language models, continuing the trend of publicly available high-capability systems <a href="https://arxiv.org/abs/2607.02770">[4]</a>. Technical work also focuses on optimizing long-context serving, with benchmarking of key-value cache compression techniques addressing performance challenges in inference for large language models <a href="https://arxiv.org/abs/2607.05399">[2]</a>.</p>
-<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the source items.</p>
+<p>OpenAI has upgraded its ChatGPT voice mode model, enabling automatic delegation to GPT-4o for tasks that require web search or more complex reasoning, which may impact how medical users interact with AI assistants <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[1]</a>. Security considerations are highlighted by research showing that widely used AI tools can be exploited to construct extensive botnets by generating plausible yet unreliable responses, raising concerns for deployments in clinical contexts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[2]</a>. Advances in long-context handling, notably benchmarked key-value cache compression techniques, aim to reduce inference bottlenecks and improve performance in scenarios where medical faculty or students require processing lengthy documents <a href="https://arxiv.org/abs/2607.05399">[3]</a>. NVIDIA&#x27;s Nemotron-Labs-Diffusion model introduces unified decoding methods, offering greater flexibility in AI applications <a href="https://arxiv.org/abs/2607.05722">[4]</a>.</p>
+<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">Introducing GPT‑Live</a>
+    <p class="news-card-summary">OpenAI upgraded ChatGPT&#x27;s voice mode model and added delegation to GPT-4o for tasks requiring web search or complex reasoning.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 8, 2026</span></div>
@@ -682,6 +710,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9f-Ew_lDtxc" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/9f-Ew_lDtxc/hqdefault.jpg" alt="Video: The next generation of ChatGPT Voice" loading="lazy">
+  <span class="video-card-title">The next generation of ChatGPT Voice</span>
+  <span class="video-card-meta">OpenAI, July 8, 2026</span>
+  <span class="video-card-desc">OpenAI engineers demonstrate the next generation of ChatGPT voice models with live demonstrations of capabilities and features.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=K-fYBO8t3-A" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/K-fYBO8t3-A/hqdefault.jpg" alt="Video: Listening &amp; Speaking with GPT-Live" loading="lazy">
   <span class="video-card-title">Listening &amp; Speaking with GPT-Live</span>

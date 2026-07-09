@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>AI tools are being implemented in hospital environments to streamline clinical documentation, as shown by large language models generating discharge summaries in secure settings <a href="https://ai.jmir.org/2026/1/e88816">[15]</a>, and validated ambient scribe systems decreasing the documentation burden for intensive care unit physicians <a href="https://medinform.jmir.org/2026/1/e85015">[3]</a>. Diagnostic applications are advancing as interpretable AI systems offer early lesion screening for oral leukoplakia <a href="https://www.nature.com/articles/s41746-026-02859-0">[6]</a>, while deep learning and explainable AI improve diagnostic accuracy for acute myocardial infarction in educational contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">[11]</a>. Transition challenges with AI-enabled ECG models between clinical and home settings are being quantified and addressed <a href="https://www.nature.com/articles/s41746-026-02919-5">[10]</a>. Comparisons of large language models against clinicians in psychopathological assessment highlight ongoing evaluation of AI performance in clinical practice <a href="https://www.nature.com/articles/s41746-026-02852-7">[8]</a>.</p>
-<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the items below.</p>
+<p>AI-driven frameworks are making advances in predictive clinical decision-support, with systems now able to estimate injury risk among elite women’s football players <a href="https://www.nature.com/articles/s41746-026-02937-3">[4]</a> and predict incident atrial fibrillation from retinal fundus images using multimodal models <a href="https://www.nature.com/articles/s41746-026-02969-9">[5]</a>. These capabilities are complemented by digital twin architectures that support adaptive intervention and longitudinal tracking in cognitive aging <a href="https://ai.jmir.org/2026/1/e87768">[3]</a>. For clinicians, methods leveraging large language models streamline clinical data extraction from electronic health records, showing promise for improving both workflow efficiency and accuracy <a href="https://www.nature.com/articles/s41746-026-02915-9">[12]</a>. Meanwhile, the evaluation of AI-assisted scribe technology demonstrates feasibility in reducing documentation burden for intensive care unit rounds <a href="https://medinform.jmir.org/2026/1/e85015">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84804">AI-Assisted Detection of Supraspinatus Tendon Pathologies Using a Hierarchical Deep Learning Model to Improve Clinical Applicability: Development and Evaluation Study</a>
+    <p class="news-card-summary">A hierarchical deep learning model classifies supraspinatus tendon pathologies on MRI to improve diagnostic consistency in musculoskeletal imaging workflows.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 8, 2026</span></div>
@@ -30,6 +37,20 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87768">AI-Driven Digital Twin Architecture for Multimodal Prediction and Adaptive Intervention in Cognitive Aging</a>
     <p class="news-card-summary">Peer-reviewed conceptual framework for AI-driven digital twin system for cognitive aging prediction, monitoring, and adaptive intervention.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02937-3">Injury prediction in elite women’s football: an integrative machine learning-based decision-support framework</a>
+    <p class="news-card-summary">A machine learning framework predicts injury risk in elite women&#x27;s football players, supporting clinical decision-making.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02969-9">Prediction of incident atrial fibrillation from retinal fundus images using a multimodal foundation model</a>
+    <p class="news-card-summary">A multimodal foundation model predicts incident atrial fibrillation from retinal fundus images.</p>
   </div>
 </div>
 <div class="news-card">
@@ -100,27 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02959-x">Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction</a>
     <p class="news-card-summary">Study reports implementation and validation of conversational AI for preparing patients before medical procedures and measures patient satisfaction.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02968-w">Explainable foundation model for dementia screening and risk stratification using retinal fundus images</a>
-    <p class="news-card-summary">A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02872-3">LLM research on public biosignals data is needed to protect patients</a>
-    <p class="news-card-summary">A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88816">Real-World Implementation of Large Language Models for Writing Clinical Discharge Summaries Within a Secure Data Environment: Development and Expert Evaluation Study</a>
-    <p class="news-card-summary">Large language models generated clinical discharge summaries within a secure data environment, demonstrating real-world implementation for hospital documentation.</p>
   </div>
 </div>
 </div>

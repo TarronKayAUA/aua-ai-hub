@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9f-Ew_lDtxc" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/9f-Ew_lDtxc/hqdefault.jpg" alt="Video: The next generation of ChatGPT Voice" loading="lazy">
+  <span class="video-card-title">The next generation of ChatGPT Voice</span>
+  <span class="video-card-meta">OpenAI, July 8, 2026</span>
+  <span class="video-card-desc">OpenAI engineers demonstrate the next generation of ChatGPT voice models with live demonstrations of capabilities and features.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=K-fYBO8t3-A" target="_blank" rel="noopener">
   <img src="https://i4.ytimg.com/vi/K-fYBO8t3-A/hqdefault.jpg" alt="Video: Listening &amp; Speaking with GPT-Live" loading="lazy">
   <span class="video-card-title">Listening &amp; Speaking with GPT-Live</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">New #1 open-source AI model is here!</span>
   <span class="video-card-meta">AI Search, June 17, 2026</span>
   <span class="video-card-desc">Review of GLM 5.2, a new open-source large language model claiming top performance in open-weights benchmarks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=CFqjjKp9Y-Q" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/CFqjjKp9Y-Q/hqdefault.jpg" alt="Video: Why Tejal Patwardhan stopped underestimating the models - Episode 21" loading="lazy">
-  <span class="video-card-title">Why Tejal Patwardhan stopped underestimating the models - Episode 21</span>
-  <span class="video-card-meta">OpenAI, June 16, 2026</span>
-  <span class="video-card-desc">OpenAI&#x27;s frontier evaluations lead discusses how standard benchmarks are becoming too easy for current models, requiring new evaluation approaches.</span>
 </a>
 </div>
 
