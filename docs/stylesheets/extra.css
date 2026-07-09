@@ -653,3 +653,12 @@
   font-size: 0.72rem;
   color: var(--md-default-fg-color--light);
 }
+
+/* Announcement banner: links inherit the brand-blue primary, which is
+   unreadable on the banner's dark strip (measured ~2.4:1). Use the
+   amber accent, matching the hero's primary button. */
+.md-banner a,
+.md-banner a:focus,
+.md-banner a:hover {
+  color: var(--md-accent-fg-color);
+}

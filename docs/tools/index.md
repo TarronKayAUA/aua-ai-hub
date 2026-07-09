@@ -2,7 +2,7 @@
 last_reviewed: 2026-06-12
 ---
 
-# Recommended Tools
+# Tool Directory
 
 A directory of artificial intelligence (AI) tools relevant to teaching, learning, research, and clinical education at the American University of Antigua College of Medicine (AUACOM). Each entry carries a governance status assigned through institutional review.
 

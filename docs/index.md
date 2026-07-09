@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # AUA AI Hub { .hp-hidden }
 
 <div class="hub-hero" markdown>
