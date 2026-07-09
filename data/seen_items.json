@@ -13606,6 +13606,391 @@
    "first_seen": "2026-07-09T00:20:27.014828+00:00",
    "kept": false,
    "reason": "daily news show recap with no standout relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "d962ffd7cf83226ab56952d2753e738b",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "Performance stability despite iteration: evaluating DeepSeek and ChatGPT on Chinese medical licensing examinations",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-09T10:00:00+00:00",
+   "summary": "DeepSeek-V3.2 outperformed ChatGPT on the 2025 Chinese National Medical Licensing Examination, though iterative updates to both models did not produce significant gains on the 2024 exam.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42422616?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "aeb8a05fa84bbf4d8630b2a304ad18a9",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow survey of student attitudes without clear implications for medical education practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42422598?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "e6c4e5413cc9abeef20beceb4c953ab4",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; concerns a pain assessment device unrelated to AI in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42422508?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "0d115497a73807252ad8b1810027eece",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; smartphone addiction survey unrelated to AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "0e32a57f8b2ed66bf33fd2dd84edfc04",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "Agreement, calibration, and failure of three large language models as high-stakes multimodal ospe graders: a comparative psychometric analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-09T10:00:00+00:00",
+   "summary": "Large language models showed strong rank-order correlation but poor calibration and disagreement patterns in high-stakes clinical exam grading, requiring human oversight rather than autonomous deployment.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42421134?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "d09047bb45aee245afcc2df37063c2fc",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "Large language model based simplification of ophthalmological clinical and ancillary results for patient readability",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-09T10:00:00+00:00",
+   "summary": "Language models can simplify ophthalmology clinical reports for patients while preserving clinical accuracy when given specific prompts, though human review remains necessary.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "4dcf8861c342aa49774037db58ebbe35",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "Artificial intelligence literacy, rather than artificial intelligence anxiety, is associated with career optimism in physiotherapy and rehabilitation students: a cross-sectional study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-09T10:00:00+00:00",
+   "summary": "Physiotherapy and rehabilitation students showed stronger career optimism linked to AI literacy than to AI anxiety, suggesting educational focus on competence over concern.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1urh2mg/now_brothers_we_know_why_we_are_so_fucked_up",
+   "title_hash": "5424a118e21adbe6ce4bfd6b4f5706cd",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; semiconductor industry economics unrelated to medical AI"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.06611",
+   "title_hash": "b1bd99e70ff904f779324e03bd3f7d5f",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow application in sentiment analysis with no medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.06641",
+   "title_hash": "542b4f9011bbdb84c7773460f5ba3284",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "Healthier LLMs: Retrieval-Augmented Generation for Public Health Question Answering",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-09T04:00:00+00:00",
+   "summary": "Retrieval-augmented generation mitigates hallucinations and outdated knowledge in language models for public health question answering by grounding responses in maintained guidance documents.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.06818",
+   "title_hash": "b4e1205796011172fe54bab35e0d550d",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow application in e-commerce with no medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.06831",
+   "title_hash": "08eb5732c494a5774be1e4757a2081b2",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow technical method for speech-to-text alignment without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.06845",
+   "title_hash": "21ced34947b15008d5c4bd7abd931ab7",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "preprint on dialect bias in LLMs without medical education or clinical deployment significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.06940",
+   "title_hash": "b65a958ae4645134e10eec1ce55763c6",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow evaluation framework without clear significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.06974",
+   "title_hash": "d02c53eec21636f79d7a7f61c7219413",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow technical method for reasoning without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07047",
+   "title_hash": "029fb268fe876a0d552971cd52f21725",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow analysis of embedding geometry without clear significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07050",
+   "title_hash": "f9cb13faf673ed37ecd7ad3ffce23b3f",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow technical problem in agentic LLM training without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07141",
+   "title_hash": "7cb56595519961ef6d0800c175c9108b",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow application to psychometric item calibration without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07251",
+   "title_hash": "2edf87df64955df0eb96e8ada6bce6cb",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow evaluation of spatial reasoning in vision-language models without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07277",
+   "title_hash": "61c10ce68d5d3a69c9899fa51235cdf7",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; study of cybercrime communication without medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07282",
+   "title_hash": "aec4c08ef47cec1d8a28e5d5a1191266",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; Sanskrit text annotation tool without medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07302",
+   "title_hash": "f4eb7f92343c0033faa74e14bce5e01e",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow evaluation of RAG metrics in e-commerce without medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07318",
+   "title_hash": "8f537f0e95332a04dc7054bf56712ea1",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow application with no medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07388",
+   "title_hash": "eeb1e7104c7f6f4f98a5c7202f8cbc3c",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization for LLM memory without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07408",
+   "title_hash": "b5fe50fb386a0e9979022ce204ea4def",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow language-specific application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07409",
+   "title_hash": "e9d5e5f4c8303485a8c911cb1123b5ff",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization for LLM inference without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07469",
+   "title_hash": "896a7d64070cddb889993a2ea871051a",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow e-commerce application without medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07548",
+   "title_hash": "7aac6b615812a5c1251239cad478a020",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow study of multi-agent architecture without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07557",
+   "title_hash": "29f412d5a77aa4673bfce5481c9a4bfa",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow pruning technique without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07626",
+   "title_hash": "0394a4eed567d42360575a3d91b829f5",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow technical method for confidence estimation without demonstrated clinical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07669",
+   "title_hash": "1db4d4f82b8f0688e72c941fd8544073",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow study of dialect generation in LLMs without medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07670",
+   "title_hash": "3d0de5a701d598977cfd06d03e1c9f18",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow investigation of entity familiarity in Polish language models without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07702",
+   "title_hash": "53698e0c97500e401b55efbcd0e9fc82",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "narrow technical method for agent optimization without demonstrated significance for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02980-0",
+   "title_hash": "083a639e4d1b256b2dc22152de693b8b",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "AI-driven diagnostic algorithm enhances early detection of paroxysmal nocturnal hemoglobinuria in real-world settings",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-09T00:00:00+00:00",
+   "summary": "An AI diagnostic algorithm improved early detection of paroxysmal nocturnal hemoglobinuria in real-world clinical settings.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04512-5",
+   "title_hash": "3d3a79011196428f8a55c589a12706c4",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; gene therapy clinical trial without AI involvement"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04490-8",
+   "title_hash": "a19546cd1e319f7f06ec68f62d3d359c",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; clinical neurology without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04484-6",
+   "title_hash": "87159ac2b556fdf391f6d074ffed42a6",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; general clinical trials methodology without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04538-9",
+   "title_hash": "530c7a6cf4e9c4001d0d0424b6914cc7",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; oncology trial unrelated to AI"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04525-0",
+   "title_hash": "697b6d11f81ee5107f50553b46851475",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; stem cell therapy trial without AI involvement"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04495-3",
+   "title_hash": "b3ff9c69e581a2fe25b8571e0208e360",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; review of biological aging clocks without AI focus"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ur4tz5/what_china_said_at_the_uns_first_global_dialogue",
+   "title_hash": "5fd6e2f5eb5908c17e27fb60fe15bc00",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "opinion and policy commentary without substantive new information"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ur0egl/ai_has_completely_revolutionized_how_i_play_rpgs",
+   "title_hash": "79b11b6c742f1a656c413096e967d67c",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; gaming application with no medical education or clinical relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42420313?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "981e5d00bd3c55484700a4deb54bdad8",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; climate science unrelated to AI in medicine"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42419190?fc=20260609215449&ff=20260709101140&v=2.20.0",
+   "title_hash": "c7d86bc85bb37c28d533f1115a62c55d",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "off-topic; food waste measurement unrelated to medical education or AI"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=DYDF_UZc0n4",
+   "title_hash": "3afe1ee1d2a9205556f8e44cd4188d30",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "title uses emphatic framing and speculation; duplicate coverage of Grok 4.5 model comparison"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Uhn9Zght9zY",
+   "title_hash": "6bf40227d5b8e1a5c5c5debc1391a26b",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "title is hype-framed and reaction-focused; duplicate coverage of Grok 4.5 model comparison"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=CMjTfpTd-NY",
+   "title_hash": "72cc5928984be1c723e92d097638964b",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": false,
+   "reason": "title is hype-framed with sensational language; includes promotional affiliate link; duplicate coverage of Grok 4.5"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ZVPlLaehjLk",
+   "title_hash": "377bd25c71a4507a451e720d8fc1f8ea",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production",
+   "source": "IBM Technology",
+   "published": "2026-07-09T11:00:08+00:00",
+   "summary": "Overview of agentic AI frameworks, covering workflow design, multi-agent systems, and production deployment considerations.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/ZVPlLaehjLk/hqdefault.jpg"
+  },
+  {
+   "url": "https://share.transistor.fm/s/facb92e2",
+   "title_hash": "bc9178f77d790a88f9e3e0061c7fb431",
+   "first_seen": "2026-07-09T14:11:39.958868+00:00",
+   "kept": true,
+   "title": "Building Durable AI Agents",
+   "source": "Practical AI",
+   "published": "2026-07-09T09:00:00+00:00",
+   "summary": "Hamza Tahir discusses MLOps principles for moving AI agents from demos to reliable production systems, covering workflows, harnesses, fleets, and infrastructure.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://img.transistorcdn.com/XNr1FlUMRqcgOINlwzJryJUFzx05IMXfyCxfiSMMXkc/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iMTUx/NmM0ODdlNGI0YTdh/YjUxNjYwNTEyMzll/ZmVkMy5wbmc.jpg"
   }
  ],
  "digests": [
@@ -13728,18 +14113,18 @@
  "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A national survey of academic critical care physicians highlights the rapid adoption of generative artificial intelligence in clinical practice, while also identifying a persistent gap between uptake and effective integration and pointing to a need for structured training in its use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[3]</a>. Educational interventions addressing resident knowledge of AI ethics and clinical prompting techniques have shown measurable improvements in competency, beyond changes in attitude <a href=\"https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0\">[8]</a>. Game-based learning tools combined with context-aware AI and retrieval-augmented generation are being tested to foster metacognition in anatomy education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42417702?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[2]</a>. Large-scale analysis of medical education research indicates an ongoing shift in focus toward technology and artificial intelligence topics <a href=\"https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0\">[12]</a>.",
-   "hash": "a7f02e04990224ce",
-   "date": "July 8, 2026"
+   "text": "DeepSeek-V3.2 demonstrated superior performance to ChatGPT on the 2025 Chinese National Medical Licensing Examination, though both models showed limited improvement from iterative updates when measured against the previous year’s exam <a href=\"https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[1]</a>. Despite advances, comparative analysis indicates that large language models still require human oversight in high-stakes clinical exam grading because of calibration issues and inconsistent agreement, precluding autonomous deployment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[2]</a>. Concurrently, studies highlight the growing gap between rapid generative AI adoption and meaningful integration among critical care physicians, underscoring the need for structured training approaches <a href=\"https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[7]</a>. Prompt engineering in surgical education continues to evolve, with professional discourse focused on optimizing AI outputs through specialized techniques <a href=\"https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[5]</a>.",
+   "hash": "3c0f7dd5708442d9",
+   "date": "July 9, 2026"
   },
   "clinical_practice": {
-   "text": "AI-driven frameworks are making advances in predictive clinical decision-support, with systems now able to estimate injury risk among elite women’s football players <a href=\"https://www.nature.com/articles/s41746-026-02937-3\">[4]</a> and predict incident atrial fibrillation from retinal fundus images using multimodal models <a href=\"https://www.nature.com/articles/s41746-026-02969-9\">[5]</a>. These capabilities are complemented by digital twin architectures that support adaptive intervention and longitudinal tracking in cognitive aging <a href=\"https://ai.jmir.org/2026/1/e87768\">[3]</a>. For clinicians, methods leveraging large language models streamline clinical data extraction from electronic health records, showing promise for improving both workflow efficiency and accuracy <a href=\"https://www.nature.com/articles/s41746-026-02915-9\">[12]</a>. Meanwhile, the evaluation of AI-assisted scribe technology demonstrates feasibility in reducing documentation burden for intensive care unit rounds <a href=\"https://medinform.jmir.org/2026/1/e85015\">[6]</a>.",
-   "hash": "b9da01a9346a56dd",
+   "text": "An AI-based algorithm has improved early detection of paroxysmal nocturnal hemoglobinuria in real-world clinical practice, potentially enabling faster intervention for this rare blood disorder <a href=\"https://www.nature.com/articles/s41746-026-02980-0\">[1]</a>. Large language models are also being shown to encode electronic health records effectively, advancing clinical data extraction and supporting patient care workflows <a href=\"https://www.nature.com/articles/s41746-026-02915-9\">[13]</a>. Comparative evaluation of AI-assisted nuclear medicine reports highlights that tools like ChatGPT-4o may enhance clinical impressions generated by trainees, pointing toward broader integration of AI in radiology reporting <a href=\"https://ai.jmir.org/2026/1/e94833\">[3]</a>. In musculoskeletal imaging, hierarchical deep learning models are being developed to classify supraspinatus tendon pathologies, promoting greater consistency and reliability in MRI interpretation <a href=\"https://medinform.jmir.org/2026/1/e84804\">[2]</a>.",
+   "hash": "98b99b450c10c592",
    "date": "July 9, 2026"
   },
   "general_ai": {
-   "text": "OpenAI has upgraded its ChatGPT voice mode model, enabling automatic delegation to GPT-4o for tasks that require web search or more complex reasoning, which may impact how medical users interact with AI assistants <a href=\"https://simonwillison.net/2026/Jul/8/introducing-gptlive\">[1]</a>. Security considerations are highlighted by research showing that widely used AI tools can be exploited to construct extensive botnets by generating plausible yet unreliable responses, raising concerns for deployments in clinical contexts <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[2]</a>. Advances in long-context handling, notably benchmarked key-value cache compression techniques, aim to reduce inference bottlenecks and improve performance in scenarios where medical faculty or students require processing lengthy documents <a href=\"https://arxiv.org/abs/2607.05399\">[3]</a>. NVIDIA&#x27;s Nemotron-Labs-Diffusion model introduces unified decoding methods, offering greater flexibility in AI applications <a href=\"https://arxiv.org/abs/2607.05722\">[4]</a>.",
-   "hash": "2f6189cf5ed4277d",
+   "text": "Security risks remain a pressing concern in AI, as research shows widespread susceptibility among popular tools to botnet assembly via exploitation of model behavior <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[3]</a>. Meanwhile, retrieval-augmented generation is being used to improve public health question answering reliability by grounding model outputs in authoritative documents <a href=\"https://arxiv.org/abs/2607.06641\">[1]</a>. Advances in model architecture continue, with NVIDIA&#x27;s Nemotron-Labs-Diffusion integrating three decoding methods to offer flexible deployment options <a href=\"https://arxiv.org/abs/2607.05722\">[5]</a>, and Google&#x27;s Gemma 4 offers open weights and enhanced performance for development and research <a href=\"https://arxiv.org/abs/2607.02770\">[6]</a>. Performance bottlenecks in serving long contexts are also being addressed through comparative benchmarking of key-value cache compression strategies <a href=\"https://arxiv.org/abs/2607.05399\">[4]</a>.",
+   "hash": "6e6acaa63bc5c29e",
    "date": "July 9, 2026"
   }
  },

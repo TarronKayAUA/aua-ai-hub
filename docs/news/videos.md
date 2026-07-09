@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=ZVPlLaehjLk" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/ZVPlLaehjLk/hqdefault.jpg" alt="Video: Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production" loading="lazy">
+  <span class="video-card-title">Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production</span>
+  <span class="video-card-meta">IBM Technology, July 9, 2026</span>
+  <span class="video-card-desc">Overview of agentic AI frameworks, covering workflow design, multi-agent systems, and production deployment considerations.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=9f-Ew_lDtxc" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/9f-Ew_lDtxc/hqdefault.jpg" alt="Video: The next generation of ChatGPT Voice" loading="lazy">
   <span class="video-card-title">The next generation of ChatGPT Voice</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Kimi K2.7 Code: BEST Open Source Model? REALLY Cheap and Beats Opus 4.8 and GPT 5.5? (Fully Tested)</span>
   <span class="video-card-meta">WorldofAI, June 17, 2026</span>
   <span class="video-card-desc">Hands-on evaluation of Kimi K2.7 Code, an open-weights model, comparing its performance on code tasks against proprietary alternatives.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=6d__WOpZswY" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/6d__WOpZswY/hqdefault.jpg" alt="Video: New #1 open-source AI model is here!" loading="lazy">
-  <span class="video-card-title">New #1 open-source AI model is here!</span>
-  <span class="video-card-meta">AI Search, June 17, 2026</span>
-  <span class="video-card-desc">Review of GLM 5.2, a new open-source large language model claiming top performance in open-weights benchmarks.</span>
 </a>
 </div>
 

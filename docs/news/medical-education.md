@@ -13,11 +13,39 @@ Items are selected nightly by an automated pipeline and link to their original s
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A national survey of academic critical care physicians highlights the rapid adoption of generative artificial intelligence in clinical practice, while also identifying a persistent gap between uptake and effective integration and pointing to a need for structured training in its use <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[3]</a>. Educational interventions addressing resident knowledge of AI ethics and clinical prompting techniques have shown measurable improvements in competency, beyond changes in attitude <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[8]</a>. Game-based learning tools combined with context-aware AI and retrieval-augmented generation are being tested to foster metacognition in anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42417702?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[2]</a>. Large-scale analysis of medical education research indicates an ongoing shift in focus toward technology and artificial intelligence topics <a href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">[12]</a>.</p>
-<p class="section-brief-date">The picture as of July 8, 2026; numbered links go to the items below.</p>
+<p>DeepSeek-V3.2 demonstrated superior performance to ChatGPT on the 2025 Chinese National Medical Licensing Examination, though both models showed limited improvement from iterative updates when measured against the previous year’s exam <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[1]</a>. Despite advances, comparative analysis indicates that large language models still require human oversight in high-stakes clinical exam grading because of calibration issues and inconsistent agreement, precluding autonomous deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[2]</a>. Concurrently, studies highlight the growing gap between rapid generative AI adoption and meaningful integration among critical care physicians, underscoring the need for structured training approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[7]</a>. Prompt engineering in surgical education continues to evolve, with professional discourse focused on optimizing AI outputs through specialized techniques <a href="https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[5]</a>.</p>
+<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Performance stability despite iteration: evaluating DeepSeek and ChatGPT on Chinese medical licensing examinations</a>
+    <p class="news-card-summary">DeepSeek-V3.2 outperformed ChatGPT on the 2025 Chinese National Medical Licensing Examination, though iterative updates to both models did not produce significant gains on the 2024 exam.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Agreement, calibration, and failure of three large language models as high-stakes multimodal ospe graders: a comparative psychometric analysis</a>
+    <p class="news-card-summary">Large language models showed strong rank-order correlation but poor calibration and disagreement patterns in high-stakes clinical exam grading, requiring human oversight rather than autonomous deployment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421134?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Large language model based simplification of ophthalmological clinical and ancillary results for patient readability</a>
+    <p class="news-card-summary">Language models can simplify ophthalmology clinical reports for patients while preserving clinical accuracy when given specific prompts, though human review remains necessary.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Artificial intelligence literacy, rather than artificial intelligence anxiety, is associated with career optimism in physiotherapy and rehabilitation students: a cross-sectional study</a>
+    <p class="news-card-summary">Physiotherapy and rehabilitation students showed stronger career optimism linked to AI literacy than to AI anxiety, suggesting educational focus on competence over concern.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
@@ -93,34 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02978-8">Human-in-the-loop validation of a sequential multi-LLM medical education pipeline</a>
     <p class="news-card-summary">Peer-reviewed research describes a multi-language model medical education pipeline with human-in-the-loop validation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Thematic Evolution in Medical Education Research (2000-2024): A Large-Scale BERTopic Analysis</a>
-    <p class="news-card-summary">Large-scale analysis of 24 years of medical education research reveals a gradual shift in emphasis toward technology and artificial intelligence topics.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404183?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Incorporating AI-Driven Vision Systems to Quantify Learning Curve in EVD Placement</a>
-    <p class="news-card-summary">Artificial intelligence vision system platform quantifies the learning curve for external ventricular drain placement in surgical training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan</a>
-    <p class="news-card-summary">Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Ars Longa, Data Brevis: the science of disease and the art of care</a>
-    <p class="news-card-summary">Peer-reviewed examination of how artificial intelligence has changed diagnostic and therapeutic approaches in modern medical practice and education.</p>
   </div>
 </div>
 </div>

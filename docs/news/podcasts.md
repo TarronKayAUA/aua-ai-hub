@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://share.transistor.fm/s/facb92e2" target="_blank" rel="noopener">
+  <img src="https://img.transistorcdn.com/XNr1FlUMRqcgOINlwzJryJUFzx05IMXfyCxfiSMMXkc/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iMTUx/NmM0ODdlNGI0YTdh/YjUxNjYwNTEyMzll/ZmVkMy5wbmc.jpg" alt="Video: Building Durable AI Agents" loading="lazy">
+  <span class="video-card-title">Building Durable AI Agents</span>
+  <span class="video-card-meta">Practical AI, July 9, 2026</span>
+  <span class="video-card-desc">Hamza Tahir discusses MLOps principles for moving AI agents from demos to reliable production systems, covering workflows, harnesses, fleets, and infrastructure.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/weve-read-the-ai-reports-so-you-dont-have-to-series-17-episode-9" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9" loading="lazy">
   <span class="video-card-title">We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9</span>
