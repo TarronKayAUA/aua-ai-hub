@@ -5,10 +5,16 @@
   the announce.dismiss theme feature; Material remembers the dismissal
   per visitor until the text below changes. Edit or empty this block to
   change or retire the banner.
+
+  The dismissal is keyed to a hash of the banner's rendered content, so
+  everything here must be identical on every page: use config.site_url
+  for links, never the page-relative `| url` filter, whose output (and
+  therefore the hash) differs per page and makes the banner reappear on
+  every page until dismissed there too (owner-reported 2026-07-09).
 #}
 {% block announce %}
   The AUA AI Hub is rolling out institution-wide this July. New here?
-  <a href="{{ 'pathway/' | url }}"><strong>Start with the literacy pathway</strong></a>.
+  <a href="{{ config.site_url }}pathway/"><strong>Start with the literacy pathway</strong></a>.
 {% endblock %}
 
 {#
