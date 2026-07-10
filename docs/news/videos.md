@@ -6,7 +6,7 @@ comments: true
 
 # Videos
 
-Recent videos from a curated set of channels covering artificial intelligence developments, explanations, and announcements. Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
+Recent videos from a curated set of channels covering artificial intelligence developments, explanations, and announcements. Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 Cards link to YouTube; nothing plays on this site.
 
@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)" loading="lazy">
+  <span class="video-card-title">GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)</span>
+  <span class="video-card-meta">WorldofAI, July 10, 2026</span>
+  <span class="video-card-desc">Hands-on benchmark comparison of GPT-5.6 against competing models, testing performance, speed, and cost across multiple tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=5X5CALvYvp0" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/5X5CALvYvp0/hqdefault.jpg" alt="Video: Meet a mathematician solving previously unsolvable math problems with GPT-5.6" loading="lazy">
   <span class="video-card-title">Meet a mathematician solving previously unsolvable math problems with GPT-5.6</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!</span>
   <span class="video-card-meta">Bijan Bowen, June 20, 2026</span>
   <span class="video-card-desc">Demonstration and technical walkthrough of Cohere&#x27;s North Mini, a local agentic coding model suitable for running without cloud infrastructure.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=0JIbgZ544wU" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/0JIbgZ544wU/hqdefault.jpg" alt="Video: What Codex Unlocks for NTT Data" loading="lazy">
-  <span class="video-card-title">What Codex Unlocks for NTT Data</span>
-  <span class="video-card-meta">OpenAI, June 19, 2026</span>
-  <span class="video-card-desc">OpenAI describes how Codex, a code generation model, grew to over 10,000 active users and applications in enterprise software development.</span>
 </a>
 </div>
 

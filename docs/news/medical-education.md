@@ -8,16 +8,30 @@ comments: true
 
 Research and news on artificial intelligence in medical education.
 
-Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
+Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models continue to show promise in medical education but require careful human oversight, with recent comparative analyses revealing strong rank-order grading performance yet persistent calibration issues in high-stakes clinical assessment environments <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[3]</a>. Advanced chatbots, including DeepSeek-V3.2 and others, have been tested on clinical knowledge and reasoning tasks, leading to insights on their safety and reliability in subject-specific medical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">[6]</a>. Studies of critical care physicians and trainees show rapid adoption of generative AI technologies, though a gap remains between uptake and comprehensive integration into clinical workflows, highlighting the ongoing need for structured training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[9]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">[14]</a>.</p>
-<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
+<p>Researchers are actively evaluating large language models for clinical knowledge and exam grading, with studies showing that models like ChatGPT and DeepSeek match provider-level accuracy in neonatal resuscitation assessments <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[2]</a> and outperform certain peers in Chinese licensing examinations, although performance improvements across model iterations remain limited <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[4]</a>. However, psychometric analysis highlights the need for human oversight due to poor calibration and inconsistent grading in high-stakes clinical exams <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[5]</a>. Elsewhere, pilot comparisons of next-generation AI chatbots reveal diverse capabilities in knowledge and reasoning across colorectal cancer content <a href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">[8]</a>. These findings underscore both the promise and current limitations of AI-based tools in medical education.</p>
+<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42428959?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Reflection: AI as a catalyst for change in postgraduate medical education</a>
+    <p class="news-card-summary">Peer-reviewed reflection on AI&#x27;s potential to modernize postgraduate medical education through administrative streamlining, personalized learning, and mentorship support while managing risks of uncritical adoption.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Performance of large language models in neonatal resuscitation assessments versus healthcare providers: an exploratory study</a>
+    <p class="news-card-summary">ChatGPT and DeepSeek achieved comparable accuracy to healthcare providers on neonatal resuscitation written assessments, warranting further study of their integration in training.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 9, 2026</span></div>
@@ -62,6 +76,20 @@ Items are selected nightly by an automated pipeline and link to their original s
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42424554?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Entering the era of photorealistic AI-generated medical images</a>
+    <p class="news-card-summary">AI-generated medical images now approach photorealistic quality, enabling customizable teaching materials for visual specialties while raising concerns about hallucinations and distinguishing real from synthetic images.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42424114?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Artificial Intelligence Enhanced Content Review for Curriculum Evaluation in Nursing Education: A Pilot Study</a>
+    <p class="news-card-summary">Retrieval-augmented generation language model system shows promising reliability for automated nursing curriculum screening as an assistive tool alongside human judgment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">Prompt engineering in medical education. Dissecting the new technological frontier in Digestive Surgery</a>
     <p class="news-card-summary">Peer-reviewed editorial on prompt engineering techniques for generative AI in surgical education, structured around context, request, persona, and format.</p>
@@ -93,34 +121,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42412017?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">The Role of Artificial Intelligence in Nephrology Education</a>
     <p class="news-card-summary">Review article examines role of AI and large language models in nephrology education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42411859?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">Development and Evaluation of a Standardized Nursing Language Clinical Decision Support System for Long-Term Care Nurses Using GPT-4.0-Generated Nursing Scenarios</a>
-    <p class="news-card-summary">Study evaluates a GPT-4 clinical decision support system for long-term care nursing using standardized language.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Construction and application of an intelligent tutoring system for resident physicians&#x27; medical record writing based on large language models</a>
-    <p class="news-card-summary">Large-language-model-based tutoring system improved medical record writing quality and documentation efficiency for residents in a training setting.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Improving Resident Knowledge of Artificial Intelligence Ethics and Prompting for Clinical Use</a>
-    <p class="news-card-summary">Pilot curricular intervention taught internal medicine residents AI ethics and clinical prompting techniques beyond attitudes, with measured competency outcomes.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42414978?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Determinants of medical students&#x27; attitudes toward artificial intelligence: a cross-sectional study and implications for medical education</a>
-    <p class="news-card-summary">Survey of medical students finds positive attitudes toward AI correlated with higher paternal education, technological interest, and optimistic evaluation of AI developments.</p>
   </div>
 </div>
 </div>

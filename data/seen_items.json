@@ -14287,6 +14287,424 @@
    "first_seen": "2026-07-09T21:08:00.032741+00:00",
    "kept": false,
    "reason": "opinion and career guidance without new AI developments"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42428959?fc=20260609215449&ff=20260710072857&v=2.20.0",
+   "title_hash": "94b13a093b3ec98b5dd4ede3a3eb14f1",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Reflection: AI as a catalyst for change in postgraduate medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-10T10:00:00+00:00",
+   "summary": "Peer-reviewed reflection on AI's potential to modernize postgraduate medical education through administrative streamlining, personalized learning, and mentorship support while managing risks of uncritical adoption.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&ff=20260710072857&v=2.20.0",
+   "title_hash": "9a78aaafd9af009bbddba55ccf4e9cbb",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Performance of large language models in neonatal resuscitation assessments versus healthcare providers: an exploratory study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-10T10:00:00+00:00",
+   "summary": "ChatGPT and DeepSeek achieved comparable accuracy to healthcare providers on neonatal resuscitation written assessments, warranting further study of their integration in training.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07772",
+   "title_hash": "4714274938d591752926644d34a03378",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07779",
+   "title_hash": "db97a31d141d0e9bdbdac831f64cab48",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-10T04:00:00+00:00",
+   "summary": "Preprint study examines large language models for advancing formal mathematics at the research frontier beyond well-defined problems, using interactive theorem proving.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07820",
+   "title_hash": "75b676bc102fb87847176dd51b677ea4",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07891",
+   "title_hash": "fca895234682582e7bf6bf53740462ae",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07895",
+   "title_hash": "dbce8c85435115833417acff4a9ed888",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07937",
+   "title_hash": "0c738c8b131e792545e06adbeb4ddc00",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07974",
+   "title_hash": "2ebb2918c275482ceb402b963e0a68a0",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07976",
+   "title_hash": "3de6716eaa24133d790e72a2ec57147e",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07985",
+   "title_hash": "49a0e07395e72be479088829d70f096b",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.07993",
+   "title_hash": "d07d3cae47769c2c2c6f71a0e3e16faa",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08009",
+   "title_hash": "87a25592024d554078263c9283e232be",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "From Execution to Education: A Bloom-Aligned Framework for Measuring Educational Control in LLMs",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-10T04:00:00+00:00",
+   "summary": "Preprint introduces a Bloom-aligned framework for measuring educational control in large language models, applied to assess shifts in cognitive demand for programming tasks.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08010",
+   "title_hash": "d56df1f6cef002361e27e2bf9efe1232",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08017",
+   "title_hash": "7c8f4c4504032a18a4facc0c81dacc05",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08027",
+   "title_hash": "33cae0ba6ee10a98b8f08a2f5cfe3d96",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08034",
+   "title_hash": "55ce20ed0a12200b7ca5611673e6cb24",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "PLURAL: A Global Dataset for Value Alignment",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-10T04:00:00+00:00",
+   "summary": "PLURAL dataset grounds value-focused preferences in a nationally representative survey spanning 92 countries to better represent diverse value systems in large language models.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08046",
+   "title_hash": "aa7c66c727afa927b54c433d2d28ea2e",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08063",
+   "title_hash": "9179a6759cd4df565f3b4bf62a78a213",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08071",
+   "title_hash": "87b0cf777ff0c5be84ef4cbb74f71cff",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08080",
+   "title_hash": "e904adee5d36714676aebd9a19396807",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08117",
+   "title_hash": "91536c79dcf6a39ff9ea811627199f98",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08143",
+   "title_hash": "4345fa4ebeb987461ba30a396e671507",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08152",
+   "title_hash": "d54e2b3b62abdf13c8a8982c854a7155",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08161",
+   "title_hash": "567cdbdd9893c0166fa4430e9497b8bd",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08186",
+   "title_hash": "40ffe17e5fb82480e57e581adebf0b12",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08208",
+   "title_hash": "4e0240233595835e7fc7b2bbac08dc59",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04475-7",
+   "title_hash": "a176a7a9bc14edddf970db1ee13945c5",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04497-1",
+   "title_hash": "d5d07c205318a73b4f912549e2f1e472",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Health system learning enables generalist neuroimaging models",
+   "source": "Nature Medicine",
+   "published": "2026-07-10T00:00:00+00:00",
+   "summary": "NeuroVFM, trained on routine health system neuroimaging scans, learns general representations that improve diagnosis, report generation, and triage while demonstrating safety advantages of private clinical data.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://huggingface.co/blog/torch-attention-profile",
+   "title_hash": "830f9969677f61a09f3f0ee23fce655b",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1us5m0g/glm52_744b_moe_on_a_25gbram_consumer_machine",
+   "title_hash": "3aaf5a63a144af02c2fd74136c3b939e",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "community meta-discussion"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you",
+   "title_hash": "3d6c945bca62626aefb399033563393f",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "OpenAI wants its new tool to do your work for you and with you",
+   "source": "Ars Technica AI",
+   "published": "2026-07-09T21:25:55+00:00",
+   "summary": "OpenAI announced a tool rebranded from Codex capable of independent workflows that can run for extended durations.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/gptwork-500x500-1783630553.webp"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42424554?fc=20260609215449&ff=20260710072857&v=2.20.0",
+   "title_hash": "49a7bbb3a20f6fcb46d541e0e1de64ff",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Entering the era of photorealistic AI-generated medical images",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-09T10:00:00+00:00",
+   "summary": "AI-generated medical images now approach photorealistic quality, enabling customizable teaching materials for visual specialties while raising concerns about hallucinations and distinguishing real from synthetic images.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42424233?fc=20260609215449&ff=20260710072857&v=2.20.0",
+   "title_hash": "7dffb21d0df107f0d4167e11a3b63824",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42424114?fc=20260609215449&ff=20260710072857&v=2.20.0",
+   "title_hash": "115a38a69c5d7ed812b451224679dd37",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence Enhanced Content Review for Curriculum Evaluation in Nursing Education: A Pilot Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-09T10:00:00+00:00",
+   "summary": "Retrieval-augmented generation language model system shows promising reliability for automated nursing curriculum screening as an assistive tool alongside human judgment.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1urhzox/glm52_fearmongering_in_the_press",
+   "title_hash": "d0e2972b8c2e8c79e005cb3247e3fef5",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "opinion piece with no new information"
+  },
+  {
+   "url": "https://www.alecscollon.com/blog/llm-burnout",
+   "title_hash": "15f7c6f9a2df73203b1ff97d90029603",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "opinion piece with no new information"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02957-z",
+   "title_hash": "f64f0241744c9e003309e70c0d8239a3",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Treatment effects prediction and clinical decision-making system for retinal vein occlusion by artificial intelligence",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-09T00:00:00+00:00",
+   "summary": "Published study describes an AI system for predicting treatment effects and clinical decision-making in retinal vein occlusion.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://microsoft.github.io/flint-chart",
+   "title_hash": "e1c8117360a57ed1df0f599116aeea4a",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-08T17:46:12+00:00",
+   "summary": "Microsoft released Flint, a visualization language designed to help AI agents generate reliable and detailed charts with explicit specifications rather than relying on system defaults.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://mistral.ai/news/robostral-navigate",
+   "title_hash": "f8219d75bc8d774f3baa4d85430e02b4",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-08T14:09:17+00:00",
+   "summary": "Mistral released Robostral Navigate, a state-of-the-art model for robotics navigation tasks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://mistral.ai/cms-media/api/media/file/Robostral-navigate.jpg"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1upsezw/chinese_ai_models_are_gaining_ground_with_us",
+   "title_hash": "f87dabface471abfaa6289273cad52e3",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "vendor marketing and industry gossip"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uphzhj/qwen_36_27b_absolutely_fails_at_agentic_work",
+   "title_hash": "f43e5ccda43c64cd2899d0b2b17b1f9f",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "community meta-discussion"
+  },
+  {
+   "url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
+   "title_hash": "2dff68f53e59bc2c26a82d0fdf5e1d89",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=euoJuJC6vh4",
+   "title_hash": "f4248a370f6e44d24ff0da0895f3a6d9",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "title is drama-framed"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=FU0cl9_3DUQ",
+   "title_hash": "89450249ea175ec744b314193f4cdcba",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": true,
+   "title": "GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, & Cheaper! (Fully Tested)",
+   "source": "WorldofAI",
+   "published": "2026-07-10T06:44:09+00:00",
+   "summary": "Hands-on benchmark comparison of GPT-5.6 against competing models, testing performance, speed, and cost across multiple tasks.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SettwwX2cCI",
+   "title_hash": "dd01a1bf3b6ad22d6390c4aa538118bb",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xKg7O46HpH8",
+   "title_hash": "0ffee04f436ee5999c1dfbf62ec21dd1",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "title is drama-framed"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SvGLxXHYCd8",
+   "title_hash": "46b9c37a7be2c7ef98f10a646678dfb1",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xYVfknDQHU4",
+   "title_hash": "ec586c71dc1003b509d54acfe875d2e3",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=sqXsMDOxP0Y",
+   "title_hash": "c588f4f6982dff371e34d9f5910cac4a",
+   "first_seen": "2026-07-10T11:28:57.661066+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
   }
  ],
  "digests": [
@@ -14317,9 +14735,16 @@
    "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w27/",
    "pub_date": "Fri, 03 Jul 2026 00:01:21 +0000",
    "description": "<h3>The week in brief</h3><p>A pragmatic, cluster-randomized trial in 16 primary care facilities in Kenya offers some of the first real-world evidence on large language models in low-resource clinical settings. Across 9,691 patients managed by 103 clinical officers, treatment failure within 14 days occurred in 2.2 percent of the group with LLM assistance and 2.0 percent of the control group, a difference that was not statistically significant <a href=\"https://www.nature.com/articles/s41591-026-04503-6\">[2]</a>. The authors report that LLM assistance was safe, with no serious adverse events judged related to the intervention, but that any benefit, if present, is probably modest <a href=\"https://www.nature.com/articles/s41591-026-04503-6\">[2]</a>. This tempers vignette-based comparisons that had suggested LLMs can match or exceed provider performance on some tasks <a href=\"https://www.nature.com/articles/s41591-026-04503-6\">[2]</a>.</p><p>Several reports this coverage window converge on how models are evaluated. A stress-test study of frontier models such as GPT-5 and Gemini found prevalent brittleness: systems could guess correct answers with key inputs removed yet be confused by minor prompt changes while producing convincing but flawed reasoning traces <a href=\"https://www.nature.com/articles/s41591-026-04501-8\">[3]</a>. An accompanying summary argues that high benchmark scores do not establish readiness for medical decision support or patient-facing use <a href=\"https://www.nature.com/articles/s41591-026-04500-9\">[5]</a>. In authentic oncology notes, GPT-4 produced reasoning errors in 23.1 percent of interpretations, often reflecting cognitive bias patterns; GPT-5.1 reduced error rates but retained the same structured failure patterns <a href=\"https://www.nature.com/articles/s41746-026-02951-5\">[7]</a>.</p><p>For educators, agent-based systems show measured progress: HemaGuide reported 82.8 percent concordance in a prospective silent trial and hallucinations in 0.3 percent of evaluated cases <a href=\"https://www.nature.com/articles/s41591-026-04494-4\">[4]</a>, while agents such as AMIE and MIRA target multi-step clinical problems <a href=\"https://www.nature.com/articles/d41591-026-00034-2\">[1]</a>. A scoping review documents accelerating AI use in undergraduate clinical skills curricula since 2022 <a href=\"https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">[6]</a>, and a pilot randomized trial tested prompt-guided virtual microscopy in a histology module <a href=\"https://pubmed.ncbi.nlm.nih.gov/42376779?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0\">[8]</a>.</p><h3>Conference calendar updates</h3><ul><li><a href=\"https://www.asugsvsummit.com/\">ASU+GSV Summit 2027</a>: added to the calendar (2027-04-04 to 2027-04-07, San Diego, California, USA)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&amp;ff=20260626113417&amp;v=2.20.0\">Artificial intelligence in undergraduate medical education clinical skills curricula: a scoping review of implementations since 2022</a> (PubMed AI in medical education). Scoping review finds AI implementation in clinical skills education has accelerated substantially since 2022, with emerging applications across simulation and assessment.</li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42376779?fc=20260609215449&amp;ff=20260630132631&amp;v=2.20.0\">Turning AI hallucinations into scaffolds for morphologic reasoning: A pilot randomized trial of prompt-guided virtual microscopy learning during a focused histology module</a> (PubMed AI in medical education). Pilot randomized trial tests whether AI-guided prompts in virtual microscopy can scaffold morphologic reasoning skills in medical students.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/d41591-026-00034-2\">Agents AMIE and MIRA advance medical AI capabilities</a> (Nature Medicine). Nature Medicine reports advances in two medical AI agents, AMIE and MIRA, demonstrating improved clinical capabilities.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04503-6\">Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial</a> (Nature Medicine). Pragmatic cluster-randomized trial published in Nature Medicine evaluates a generative AI-enabled clinical decision support system in primary care.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04501-8\">Evaluating the robustness and readiness of large frontier models in health AI applications</a> (Nature Medicine). Nature Medicine study evaluates robustness and readiness of large frontier models in health AI applications through adversarial evaluation methods.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04494-4\">Clinical decision support in hematological malignancies using a case-grounded AI agent</a> (Nature Medicine). Nature Medicine describes a locally deployable AI agent for clinical decision support in hematological malignancies.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04500-9\">Why high scores do not mean application readiness for health AI</a> (Nature Medicine). Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.</li><li><a href=\"https://www.nature.com/articles/s41746-026-02951-5\">Structured reasoning failures compromise LLM interpretation of clinical oncology notes</a> (npj Digital Medicine). Study in npj Digital Medicine shows large language models fail to correctly interpret clinical oncology notes due to reasoning limitations.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=Os_wohQDErw\">MedAI #161: A prospective trial of a conversational AI in a primary care clinic | Jacob Koshy</a> (Stanford MedAI)</li><li><a href=\"https://www.youtube.com/watch?v=_pkjyDSwO7I\">MedAI #162: Clinical Environment Simulator | Luyang Luo</a> (Stanford MedAI)</li><li><a href=\"https://www.youtube.com/watch?v=gp4pHq9FRDI\">MedAI #160: AI and LLMs for Advancing Clinical Research and Practice | Rui Zhang</a> (Stanford MedAI)</li><li><a href=\"https://www.youtube.com/watch?v=mBTp5WTcDhk\">MedAI #159: The Alignment Tax: How the Same Helpful LLMs Training Makes Them Dangerous | Mahmud Omar</a> (Stanford MedAI)</li></ul>"
+  },
+  {
+   "guid": "aua-ai-digest-2026-W28",
+   "title": "AUA AI Hub Digest: Week of July 6, 2026",
+   "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w28/",
+   "pub_date": "Fri, 10 Jul 2026 11:28:57 +0000",
+   "description": "<h3>The week in brief</h3><p>Foundation models trained on real clinical data posted concrete gains this week. COMPASS, a pan-cancer model built on 10,184 tumors across 33 cancer types, predicted immune checkpoint inhibitor response from bulk tumor transcriptomes, improving average accuracy by 8.5 percent over 22 comparison methods and generalizing to cancer types and treatments not seen during fine-tuning <a href=\"https://www.nature.com/articles/s41591-026-04502-7\">[1]</a>. In neuroimaging, NeuroVFM was trained on 5.24 million clinical magnetic resonance imaging and computed tomography volumes drawn from routine care, an approach its authors call health system learning, and generated radiology reports that outperformed frontier models on accuracy and triage while reducing hallucinated findings <a href=\"https://www.nature.com/articles/s41591-026-04497-1\">[2]</a>. A separate report found that general-purpose large language models can encode electronic health record data into embeddings that match a specialized model across 15 clinical tasks, trading computational efficiency for portability <a href=\"https://www.nature.com/articles/s41746-026-02915-9\">[4]</a>.</p><p>For educators, these results matter alongside more cautious findings. A retinal fundus model detected dementia with an area under the curve of 0.750 but its authors flagged the need for validation in ethnically diverse populations <a href=\"https://www.nature.com/articles/s41746-026-02968-w\">[3]</a>. Documentation studies examined ambient scribes for intensive care unit rounds <a href=\"https://medinform.jmir.org/2026/1/e85015\">[5]</a> and large language model discharge summaries within a secure data environment <a href=\"https://ai.jmir.org/2026/1/e88816\">[6]</a>, both framed as feasibility work.</p><p>Two items address teaching directly: a student-partnered Delphi study proposing principles for responsible generative AI use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0\">[7]</a>, and a commentary arguing that model outputs enter clinical settings as information and become evidence only through appraisal and validation <a href=\"https://www.nature.com/articles/s41746-026-02909-7\">[8]</a>.</p><h3>Conference calendar updates</h3><ul><li><a href=\"https://ml4h.ahli.cc/\">ML4H Symposium 2026</a>: start date: TBD is now 2026-12-06; end date: TBD is now 2026-12-07; abstract deadline: TBD is now 2026-09-10; location: TBD is now Sydney, Australia</li></ul><h3>New opportunities</h3><ul><li><a href=\"https://xprize.devpost.com/\">Build with Gemini XPRIZE</a>: newly listed (application deadline 2026-08-17; runs 2026-05-19 to 2026-08-17)</li><li><a href=\"https://futurecaribbean.com\">Future Caribbean Global Agentic AI Buildathon</a>: newly listed (application deadline Rolling; runs 2026-07-17 to 2026-09-01)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0\">Principles for medical students' responsible use of generative AI: a student-partnered Delphi study</a> (PubMed AI in medical education). Delphi study with student partners identifies principles for responsible generative AI use in medical education.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41591-026-04502-7\">Generalizable AI predicts immunotherapy outcomes across cancers and treatments</a> (Nature Medicine). COMPASS, a generalizable AI model, predicts immunotherapy outcomes across multiple cancer types and treatments.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04497-1\">Health system learning enables generalist neuroimaging models</a> (Nature Medicine). NeuroVFM, trained on routine health system neuroimaging scans, learns general representations that improve diagnosis, report generation, and triage while demonstrating safety advantages of private clinical data.</li><li><a href=\"https://www.nature.com/articles/s41746-026-02968-w\">Explainable foundation model for dementia screening and risk stratification using retinal fundus images</a> (npj Digital Medicine). A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.</li><li><a href=\"https://www.nature.com/articles/s41746-026-02915-9\">Large language models are powerful electronic health record encoders</a> (npj Digital Medicine). Peer-reviewed study demonstrates that large language models perform effectively as electronic health record encoders for clinical data extraction and processing.</li><li><a href=\"https://medinform.jmir.org/2026/1/e85015\">Feasibility of Tailoring Artificial Intelligence, Assisted Ambient Scribes for Intensive Care Unit Rounds: Algorithm Development and Validation</a> (JMIR Medical Informatics). Peer-reviewed study validates feasibility of AI-assisted ambient scribes to reduce documentation burden for intensive care unit physicians.</li><li><a href=\"https://ai.jmir.org/2026/1/e88816\">Real-World Implementation of Large Language Models for Writing Clinical Discharge Summaries Within a Secure Data Environment: Development and Expert Evaluation Study</a> (JMIR AI). Large language models generated clinical discharge summaries within a secure data environment, demonstrating real-world implementation for hospital documentation.</li><li><a href=\"https://www.nature.com/articles/s41746-026-02909-7\">Fast information and slow evidence in the large language models era</a> (npj Digital Medicine). Article examines how large language models generate fast information but may conflict with slower evidence-based clinical practice.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=ELh8R7bGlxE\">Sol, Terra, and Luna, our GPT‑5.6 family of models are here.</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=K-fYBO8t3-A\">Listening &amp; Speaking with GPT-Live</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=Wq45rvPGNHs\">Introducing ChatGPT Work, powered by Codex and GPT-5.6</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=twIpCciU7VE\">Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)</a> (WorldofAI)</li></ul><h3>Podcasts</h3><ul><li><a href=\"https://share.transistor.fm/s/facb92e2\">Building Durable AI Agents</a> (Practical AI)</li></ul>"
   }
  ],
- "last_digest_week": "2026-W27",
+ "last_digest_week": "2026-W28",
  "conference_snapshot": {
   "AMEE 2026": {
    "start_date": "2026-08-22",
@@ -14371,11 +14796,11 @@
    "url": "https://aime26.aimedicine.info/"
   },
   "ML4H Symposium 2026": {
-   "start_date": "TBD",
-   "end_date": "TBD",
-   "abstract_deadline": "TBD",
-   "location": "TBD",
-   "url": "https://ahli.cc/ml4h/"
+   "start_date": "2026-12-06",
+   "end_date": "2026-12-07",
+   "abstract_deadline": "2026-09-10",
+   "location": "Sydney, Australia",
+   "url": "https://ml4h.ahli.cc/"
   },
   "EDUCAUSE Annual Conference 2026": {
    "start_date": "2026-09-29",
@@ -14406,23 +14831,42 @@
    "url": "https://www.asugsvsummit.com/"
   }
  },
- "last_digest_at": "2026-07-03T00:01:21.056104+00:00",
+ "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Large language models continue to show promise in medical education but require careful human oversight, with recent comparative analyses revealing strong rank-order grading performance yet persistent calibration issues in high-stakes clinical assessment environments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[3]</a>. Advanced chatbots, including DeepSeek-V3.2 and others, have been tested on clinical knowledge and reasoning tasks, leading to insights on their safety and reliability in subject-specific medical contexts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0\">[6]</a>. Studies of critical care physicians and trainees show rapid adoption of generative AI technologies, though a gap remains between uptake and comprehensive integration into clinical workflows, highlighting the ongoing need for structured training programs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[9]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0\">[14]</a>.",
-   "hash": "fde80fe33dc3274c",
-   "date": "July 9, 2026"
+   "text": "Researchers are actively evaluating large language models for clinical knowledge and exam grading, with studies showing that models like ChatGPT and DeepSeek match provider-level accuracy in neonatal resuscitation assessments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0\">[2]</a> and outperform certain peers in Chinese licensing examinations, although performance improvements across model iterations remain limited <a href=\"https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[4]</a>. However, psychometric analysis highlights the need for human oversight due to poor calibration and inconsistent grading in high-stakes clinical exams <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[5]</a>. Elsewhere, pilot comparisons of next-generation AI chatbots reveal diverse capabilities in knowledge and reasoning across colorectal cancer content <a href=\"https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0\">[8]</a>. These findings underscore both the promise and current limitations of AI-based tools in medical education.",
+   "hash": "a449728e7d021a4e",
+   "date": "July 10, 2026"
   },
   "clinical_practice": {
-   "text": "The feasibility of surgeon-controlled humanoid robots performing live animal surgery marks a significant step toward integrating robotics into procedural clinical practice <a href=\"https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs\">[3]</a>. Alongside robotics, AI-driven diagnostic algorithms have improved early detection rates for paroxysmal nocturnal hemoglobinuria, demonstrating tangible impact in real-world clinical settings <a href=\"https://www.nature.com/articles/s41746-026-02980-0\">[4]</a>. Large language models with expert-augmented prompting are now validated for automated venous thromboembolism risk scoring across multiple centers, highlighting advances in scalable risk prediction <a href=\"https://www.nature.com/articles/s41746-026-02929-3\">[6]</a>. Sleep EEG foundation models introduce nuanced within-stage microstructure detection that enhances health screening beyond conventional sleep staging methods <a href=\"https://www.nature.com/articles/s41746-026-02970-2\">[5]</a>. Finally, a hierarchical deep learning model is improving diagnostic consistency for supraspinatus tendon pathologies in musculoskeletal imaging workflows <a href=\"https://medinform.jmir.org/2026/1/e84804\">[7]</a>.",
-   "hash": "59ef4daa75aff7e5",
-   "date": "July 9, 2026"
+   "text": "Generalist neuroimaging models trained on routine health system data, such as NeuroVFM, are improving diagnostic accuracy and report generation while highlighting the safety benefits of private clinical datasets <a href=\"https://www.nature.com/articles/s41591-026-04497-1\">[1]</a>. Large language models, when combined with expert-driven prompts, have demonstrated their ability to automate venous thromboembolism risk scoring in multicenter validations <a href=\"https://www.nature.com/articles/s41746-026-02929-3\">[7]</a>. Advancements in AI-powered diagnostic tools are also improving early identification of rare diseases, with algorithms enhancing recognition of paroxysmal nocturnal hemoglobinuria in clinical practice <a href=\"https://www.nature.com/articles/s41746-026-02980-0\">[5]</a>. Meanwhile, survey studies have quantified the influence of social determinants of health in predicting cardiovascular disease and type 2 diabetes progression using machine-learning approaches <a href=\"https://medinform.jmir.org/2026/1/e80377\">[3]</a>.",
+   "hash": "b35cdb3c0b3ba86d",
+   "date": "July 10, 2026"
   },
   "general_ai": {
-   "text": "OpenAI has upgraded ChatGPT&#x27;s voice mode model and enabled delegation to GPT-4o for tasks that require web search or complex reasoning, expanding the range of accessible capabilities for real-time interaction <a href=\"https://simonwillison.net/2026/Jul/8/introducing-gptlive\">[3]</a>. Meanwhile, retrieval-augmented generation offers a promising strategy to mitigate hallucinations and outdated knowledge in public health question answering by grounding language model responses in current guidance documents <a href=\"https://arxiv.org/abs/2607.06641\">[2]</a>. Security research highlights the risks associated with widely used AI tools, demonstrating that models can be exploited to build large botnets if their tendency to generate plausible responses to unknown queries is not carefully managed <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[4]</a>. Google’s release of Gemma 4 provides improved open-weights language model options for deployment <a href=\"https://arxiv.org/abs/2607.02770\">[7]</a>.",
-   "hash": "1b7b6696e27e45ba",
-   "date": "July 9, 2026"
+   "text": "The PLURAL dataset is a notable resource for grounding value-focused preferences in nationally representative surveys across 92 countries, enabling large language models to better reflect diverse cultural value systems <a href=\"https://arxiv.org/abs/2607.08034\">[3]</a>. Security research has highlighted vulnerabilities in popular AI tools, showing that models generating plausible responses to unknown queries can be exploited to assemble large botnets <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[10]</a>. Retrieval-augmented generation is further improving reliability in public health question answering by reducing hallucinations and referencing maintained guidance documents <a href=\"https://arxiv.org/abs/2607.06641\">[6]</a>. Meanwhile, new hierarchical sparse attention methods support more efficient modeling of longer context windows, addressing a key challenge for large language model scalability <a href=\"https://arxiv.org/abs/2607.02980\">[14]</a>.",
+   "hash": "d9c6a2e4d07c96ee",
+   "date": "July 10, 2026"
   }
  },
- "opportunity_snapshot": {}
+ "opportunity_snapshot": {
+  "Build with Gemini XPRIZE": {
+   "deadline": "2026-08-17",
+   "start_date": "2026-05-19",
+   "end_date": "2026-08-17",
+   "url": "https://xprize.devpost.com/"
+  },
+  "Global AI Hackathon Series with Qwen Cloud": {
+   "deadline": "2026-07-09",
+   "start_date": "TBD",
+   "end_date": "TBD",
+   "url": "https://qwencloud-hackathon.devpost.com/"
+  },
+  "Future Caribbean Global Agentic AI Buildathon": {
+   "deadline": "Rolling",
+   "start_date": "2026-07-17",
+   "end_date": "2026-09-01",
+   "url": "https://futurecaribbean.com"
+  }
+ }
 }

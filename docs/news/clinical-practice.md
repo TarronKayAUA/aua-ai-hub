@@ -8,16 +8,23 @@ comments: true
 
 Artificial intelligence in clinical care, deployment, and regulation.
 
-Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
+Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The feasibility of surgeon-controlled humanoid robots performing live animal surgery marks a significant step toward integrating robotics into procedural clinical practice <a href="https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs">[3]</a>. Alongside robotics, AI-driven diagnostic algorithms have improved early detection rates for paroxysmal nocturnal hemoglobinuria, demonstrating tangible impact in real-world clinical settings <a href="https://www.nature.com/articles/s41746-026-02980-0">[4]</a>. Large language models with expert-augmented prompting are now validated for automated venous thromboembolism risk scoring across multiple centers, highlighting advances in scalable risk prediction <a href="https://www.nature.com/articles/s41746-026-02929-3">[6]</a>. Sleep EEG foundation models introduce nuanced within-stage microstructure detection that enhances health screening beyond conventional sleep staging methods <a href="https://www.nature.com/articles/s41746-026-02970-2">[5]</a>. Finally, a hierarchical deep learning model is improving diagnostic consistency for supraspinatus tendon pathologies in musculoskeletal imaging workflows <a href="https://medinform.jmir.org/2026/1/e84804">[7]</a>.</p>
-<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
+<p>Generalist neuroimaging models trained on routine health system data, such as NeuroVFM, are improving diagnostic accuracy and report generation while highlighting the safety benefits of private clinical datasets <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Large language models, when combined with expert-driven prompts, have demonstrated their ability to automate venous thromboembolism risk scoring in multicenter validations <a href="https://www.nature.com/articles/s41746-026-02929-3">[7]</a>. Advancements in AI-powered diagnostic tools are also improving early identification of rare diseases, with algorithms enhancing recognition of paroxysmal nocturnal hemoglobinuria in clinical practice <a href="https://www.nature.com/articles/s41746-026-02980-0">[5]</a>. Meanwhile, survey studies have quantified the influence of social determinants of health in predicting cardiovascular disease and type 2 diabetes progression using machine-learning approaches <a href="https://medinform.jmir.org/2026/1/e80377">[3]</a>.</p>
+<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04497-1">Health system learning enables generalist neuroimaging models</a>
+    <p class="news-card-summary">NeuroVFM, trained on routine health system neuroimaging scans, learns general representations that improve diagnosis, report generation, and triage while demonstrating safety advantages of private clinical data.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 9, 2026</span></div>
@@ -59,6 +66,13 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02929-3">Automated risk scoring for venous thromboembolism using large language models with expert knowledge-augmented prompting: a multicenter validation study</a>
     <p class="news-card-summary">Multicenter validation study demonstrates large language models with expert-augmented prompting for automated venous thromboembolism risk scoring.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02957-z">Treatment effects prediction and clinical decision-making system for retinal vein occlusion by artificial intelligence</a>
+    <p class="news-card-summary">Published study describes an AI system for predicting treatment effects and clinical decision-making in retinal vein occlusion.</p>
   </div>
 </div>
 <div class="news-card">
@@ -108,20 +122,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02976-w">Intelligent surgical workflow recognition-based skill assessment for minimally invasive submandibular gland resection</a>
     <p class="news-card-summary">Published method uses AI to recognize surgical workflow and assess surgeon skill during minimally invasive submandibular gland resection.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02963-1">Clinical trials and evaluation of AI tools in solid organ transplantation: implications for clinical care, regulatory science, and rare diseases</a>
-    <p class="news-card-summary">Review examines clinical trials and regulatory evaluation of AI tools in solid organ transplantation with implications for rare disease care.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02859-0">An Interpretable AI System for Oral Leukoplakia Progression: From Early Screening to Lesion Delineation</a>
-    <p class="news-card-summary">Study presents an interpretable AI system for detecting and delineating oral leukoplakia lesions with early screening capability.</p>
   </div>
 </div>
 </div>

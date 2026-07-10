@@ -8,16 +8,45 @@ comments: true
 
 Model releases, benchmarks, and developments in general artificial intelligence.
 
-Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
+Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI has upgraded ChatGPT&#x27;s voice mode model and enabled delegation to GPT-4o for tasks that require web search or complex reasoning, expanding the range of accessible capabilities for real-time interaction <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[3]</a>. Meanwhile, retrieval-augmented generation offers a promising strategy to mitigate hallucinations and outdated knowledge in public health question answering by grounding language model responses in current guidance documents <a href="https://arxiv.org/abs/2607.06641">[2]</a>. Security research highlights the risks associated with widely used AI tools, demonstrating that models can be exploited to build large botnets if their tendency to generate plausible responses to unknown queries is not carefully managed <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[4]</a>. Google’s release of Gemma 4 provides improved open-weights language model options for deployment <a href="https://arxiv.org/abs/2607.02770">[7]</a>.</p>
-<p class="section-brief-date">The picture as of July 9, 2026; numbered links go to the items below.</p>
+<p>The PLURAL dataset is a notable resource for grounding value-focused preferences in nationally representative surveys across 92 countries, enabling large language models to better reflect diverse cultural value systems <a href="https://arxiv.org/abs/2607.08034">[3]</a>. Security research has highlighted vulnerabilities in popular AI tools, showing that models generating plausible responses to unknown queries can be exploited to assemble large botnets <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[10]</a>. Retrieval-augmented generation is further improving reliability in public health question answering by reducing hallucinations and referencing maintained guidance documents <a href="https://arxiv.org/abs/2607.06641">[6]</a>. Meanwhile, new hierarchical sparse attention methods support more efficient modeling of longer context windows, addressing a key challenge for large language model scalability <a href="https://arxiv.org/abs/2607.02980">[14]</a>.</p>
+<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.07779">From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier</a>
+    <p class="news-card-summary">Preprint study examines large language models for advancing formal mathematics at the research frontier beyond well-defined problems, using interactive theorem proving.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.08009">From Execution to Education: A Bloom-Aligned Framework for Measuring Educational Control in LLMs</a>
+    <p class="news-card-summary">Preprint introduces a Bloom-aligned framework for measuring educational control in large language models, applied to assess shifts in cognitive demand for programming tasks.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.08034">PLURAL: A Global Dataset for Value Alignment</a>
+    <p class="news-card-summary">PLURAL dataset grounds value-focused preferences in a nationally representative survey spanning 92 countries to better represent diverse value systems in large language models.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 9, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you">OpenAI wants its new tool to do your work for you and with you</a>
+    <p class="news-card-summary">OpenAI announced a tool rebranded from Codex capable of independent workflows that can run for extended durations.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/gptwork-500x500-1783630553.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 9, 2026</span></div>
@@ -38,6 +67,21 @@ Items are selected nightly by an automated pipeline and link to their original s
     <a class="news-card-title" href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">Introducing GPT‑Live</a>
     <p class="news-card-summary">OpenAI upgraded ChatGPT&#x27;s voice mode model and added delegation to GPT-4o for tasks requiring web search or complex reasoning.</p>
   </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://microsoft.github.io/flint-chart">Show HN: Microsoft releases Flint, a visualization language for AI agents</a>
+    <p class="news-card-summary">Microsoft released Flint, a visualization language designed to help AI agents generate reliable and detailed charts with explicit specifications rather than relying on system defaults.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 8, 2026</span></div>
+    <a class="news-card-title" href="https://mistral.ai/news/robostral-navigate">Mistral&#x27;s Robostral Navigate: a state of the art robotics navigation model</a>
+    <p class="news-card-summary">Mistral released Robostral Navigate, a state-of-the-art model for robotics navigation tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://mistral.ai/cms-media/api/media/file/Robostral-navigate.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -81,52 +125,6 @@ Items are selected nightly by an automated pipeline and link to their original s
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.02980">Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling</a>
     <p class="news-card-summary">Research on hierarchical sparse attention methods to enable large language models to handle longer context windows efficiently.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals">Small AI Models Gain Traction In places with unreliable networks</a>
-    <p class="news-card-summary">Analysis of small language models gaining adoption in regions with unreliable network infrastructure.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/image.jpg?id=67101133&amp;width=1200&amp;height=600&amp;coordinates=0%2C889%2C0%2C361" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/6/hy3">tencent/Hy3</a>
-    <p class="news-card-summary">Tencent released Hy3, a 295-billion-parameter open-weights mixture-of-experts model under Apache 2.0 license.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.anthropic.com/research/global-workspace">A global workspace in language models</a>
-    <p class="news-card-summary">Anthropic research paper describes global workspace mechanism in language models relevant to understanding model reasoning.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.sanity.io/images/4zrzovbb/website/fbdc967f9f3d88566f25b21cce7ef523b3fabbbb-1280x720.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uoozt4/new_open_model_from_tencent_hy_hy3_295b_total_21b">New open model from Tencent Hy: Hy3 (295B total 21B active - apache 2.0)</a>
-    <p class="news-card-summary">Tencent releases Hy3, an open-weight 295-billion-parameter model with 21-billion active parameters under Apache 2.0 license.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/CkiY6sxiegNB9XeJzbgeatsW70zO1W7TkruSJDZ22s8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=38ea195e9d5b3ec7d9ec35718ee6a1aa4e413114" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unyvnz/longcat_20_16t_48b_active_weights_are_now_open">longcat 2.0 (1.6T, ~48B active) weights are now open under MIT license</a>
-    <p class="news-card-summary">Longcat 2.0, a 48-billion-parameter open-weights model, is released under MIT license.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/Tl4T00m03mXi9dnysuPMT3ZoHlKwgeMAyvE7uTJqM4o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=13c43b98a88d05ab28ba5000aec6daa339a442bf" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to">I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads</a>
-    <p class="news-card-summary">Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.</p>
   </div>
 </div>
 </div>

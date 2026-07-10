@@ -6,7 +6,7 @@ comments: true
 
 # Podcasts
 
-Recent episodes from a curated set of shows on artificial intelligence in medicine, education, and beyond. Items are selected nightly by an automated pipeline and link to their original sources. See [About](../about.md) for how selection works.
+Recent episodes from a curated set of shows on artificial intelligence in medicine, education, and beyond. Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 Cards link to each episode's own page; nothing plays on this site.
 
