@@ -12,7 +12,7 @@ hide:
 
 **Artificial intelligence, curated for medical education.**
 
-One reliable place for the AUACOM community to learn how AI works, find reviewed tools, follow the developments that matter, and plan for conferences. Selected for accuracy and usefulness, not hype.
+One reliable place for the AUACOM community to learn how AI works, find the right tools, follow the developments that matter, and plan for conferences. Selected for accuracy and usefulness, not hype.
 
 [Start the literacy pathway](pathway/index.md){ .md-button .md-button--primary }
 [Browse the tools](tools/index.md){ .md-button }
@@ -35,7 +35,7 @@ One reliable place for the AUACOM community to learn how AI works, find reviewed
 
     ---
 
-    A reviewed directory of AI tools with governance status badges, grouped by what you want to get done.
+    A curated directory of AI tools, each carrying a visible governance status, grouped by what you want to get done.
 
     [Open the directory](tools/index.md)
 
@@ -47,19 +47,19 @@ One reliable place for the AUACOM community to learn how AI works, find reviewed
 
     [Start here](students.md)
 
-- :material-school:{ .lg .middle } __Playbooks__
+- :material-human-male-board:{ .lg .middle } __For Faculty & Staff__
 
     ---
 
-    Task-by-task walkthroughs for faculty: preparing a lecture, writing exam questions safely, and your syllabus AI statement.
+    Task-based routes for teaching and administrative work: lectures, exam items, syllabus statements, research, and the data rules.
 
-    [Open the playbooks](playbooks/index.md)
+    [Start here](faculty.md)
 
 - :material-message-text:{ .lg .middle } __Prompts__
 
     ---
 
-    Reusable, tested prompt templates for study and faculty tasks, plus a community exchange with public voting.
+    Reusable prompt templates for study and faculty tasks, each with a clear Draft or Reviewed status.
 
     [Open the library](prompts/index.md)
 

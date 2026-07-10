@@ -1,6 +1,6 @@
 # Opportunities
 
-Buildathons, hackathons, challenges, and programs that AUA faculty or students can take part in, anywhere in the world, selected for relevance to artificial intelligence (AI) in medicine and the fields around it. Every listing is checked against its official page on the date it is added; deadlines move, so confirm details on the organizer's site before planning around one. Prize and support figures are the organizer's own statements, and a listing is not an endorsement.
+Buildathons, hackathons, challenges, and programs that AUA faculty or students can take part in, anywhere in the world, selected for relevance to artificial intelligence (AI) in medicine and the fields around it. Every listing is checked against its official page on the date it is added; deadlines move, so confirm details on the organizer's site before planning around one. Deadline dates are the organizer's own, in the organizer's time zone unless their page says otherwise. Prize and support figures are the organizer's own statements, and a listing is not an endorsement.
 
 <!-- render:opportunities -->
 

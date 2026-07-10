@@ -696,7 +696,13 @@ def _deadline_cell(deadline, today) -> str:
     cell = deadline.strftime("%b %d, %Y").replace(" 0", " ")
     days_left = (deadline - today).days
     if days_left <= DEADLINE_BADGE_WINDOW_DAYS:
-        cell += " " + _badge(f"deadline in {days_left} days", "badge-deadline")
+        if days_left == 0:
+            label = "closes today"
+        elif days_left == 1:
+            label = "closes tomorrow"
+        else:
+            label = f"closes in {days_left} days"
+        cell += " " + _badge(label, "badge-deadline")
     return cell
 
 
@@ -915,8 +921,27 @@ def _render_conferences(config) -> str:
 # --- hook entry point -------------------------------------------------------
 
 
+def _reviewed_footer(meta, src: str) -> str:
+    """Freshness line for pages enrolled in prose page review (owner
+    approved 2026-07-09): surfaces the last_reviewed front-matter date
+    that the weekly machine review keeps current. Returns "" for pages
+    without the key. The About link is a markdown link (source-relative)
+    so MkDocs rewrites and validates it; raw HTML hrefs would not be."""
+    reviewed = (meta or {}).get("last_reviewed")
+    if not reviewed:
+        return ""
+    if isinstance(reviewed, str):
+        reviewed = date.fromisoformat(reviewed)
+    stamp = f"{reviewed.strftime('%B')} {reviewed.day}, {reviewed.year}"
+    about = "../" * src.count("/") + "about.md"
+    return (f'\n\n<p class="page-reviewed" markdown>Content last reviewed '
+            f'{stamp}. Review dates are maintained as described on the '
+            f'[About page]({about}).</p>\n')
+
+
 def on_page_markdown(markdown, page, config, files):
     src = page.file.src_uri
+    markdown += _reviewed_footer(page.meta, src)
     if src == "tools/index.md":
         for marker in (TOOLS_MARKER, OPEN_MODELS_MARKER):
             if marker not in markdown:

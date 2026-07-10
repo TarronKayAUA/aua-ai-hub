@@ -56,7 +56,9 @@ Most of this site is written and reviewed by people; the News, Videos, Podcasts,
 <figcaption>The pipeline writes only the generated sections; every hand-written page stays human-maintained.</figcaption>
 </figure>
 
-Human oversight: the source lists, selection criteria, and summarization instructions are all maintained by the site owner, and the pipeline cannot modify any hand-written page. Even so, summaries and descriptions are machine-generated; read them as pointers to the original sources, not as substitutes.
+Human oversight: the source lists, selection criteria, and summarization instructions are all maintained by the site owner, and the pipeline cannot modify any hand-written page (with one narrow exception below). Even so, summaries and descriptions are machine-generated; read them as pointers to the original sources, not as substitutes.
+
+Freshness: guide and reference pages carry a "Content last reviewed" date in their footer. A weekly automated check re-reads each page on a schedule set by how quickly its facts tend to change, verifies the page's checkable claims against current sources, and updates the date when everything holds (the one edit the pipeline may make to a hand-written page); anything that looks out of date is escalated to the maintainer for a human correction. The date moves only when a review actually happened, by machine or by hand.
 
 ## Governance note
 

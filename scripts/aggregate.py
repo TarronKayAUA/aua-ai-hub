@@ -98,10 +98,37 @@ PAGE_INTROS = {
 def selection_note(rel_prefix: str) -> str:
     """rel_prefix is the path from the page's directory up to docs/."""
     return (
-        "Items are selected nightly by an automated pipeline and link to "
-        f"their original sources. See [About]({rel_prefix}about.md) for how "
-        "selection works."
+        "Items are selected nightly by an automated pipeline and the "
+        "summaries are machine generated; follow the links to the original "
+        f"sources. See [About]({rel_prefix}about.md) for how selection "
+        "works."
     )
+
+
+def diversify_by_source(records: list[dict], limit: int,
+                        max_per_source: int) -> list[dict]:
+    """Newest-first homepage selection with a per-channel cap, so one
+    channel's launch-day burst cannot fill the homepage grid (owner
+    approved 2026-07-09, prompted by an external review that caught an
+    OpenAI-heavy day). When the cap leaves slots empty, they are topped
+    up with the newest remaining items. The Videos page is unaffected."""
+    chosen: list[dict] = []
+    counts: dict[str, int] = {}
+    for r in records:
+        source = r.get("source", "")
+        if counts.get(source, 0) >= max_per_source:
+            continue
+        chosen.append(r)
+        counts[source] = counts.get(source, 0) + 1
+        if len(chosen) == limit:
+            return chosen
+    picked = {id(r) for r in chosen}
+    for r in records:
+        if len(chosen) == limit:
+            break
+        if id(r) not in picked:
+            chosen.append(r)
+    return chosen
 
 
 @dataclass
@@ -2338,7 +2365,9 @@ def main() -> int:
         render_videos_page(video_sections),
         sum(len(rs) for _, rs in video_sections),
     )
-    home_videos = video_records[: video_cfg.get("home_items", 3)]
+    home_videos = diversify_by_source(
+        video_records, int(video_cfg.get("home_items", 3)),
+        int(video_cfg.get("home_max_per_channel", 2)))
     home_include = GENERATED_HEADER + "\n\n" + (
         _video_grid_html(home_videos) if home_videos
         else "No videos yet. The pipeline adds videos nightly."

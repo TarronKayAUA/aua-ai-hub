@@ -341,6 +341,10 @@ video_feeds:
   lookback_days: 14
   max_keep_per_run: 12
   home_items: 6
+  # Homepage grid only: at most this many videos from any one channel,
+  # so a single channel's launch-day burst cannot fill the grid (owner
+  # approved 2026-07-09). The Videos page itself stays uncapped.
+  home_max_per_channel: 2
   # The Videos page renders one section per group, in this order. A video's
   # group comes from its channel's optional `group` key (default: general),
   # never from model-assigned labels, which are known to be unreliable for

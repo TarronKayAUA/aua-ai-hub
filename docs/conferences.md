@@ -1,6 +1,6 @@
 # Conferences
 
-Meetings relevant to artificial intelligence (AI) in medical education and clinical practice. Dates and deadlines are confirmed against each conference's official site; anything that could not be confirmed is shown as TBD rather than estimated. Always verify details on the conference site before making travel plans.
+Meetings relevant to artificial intelligence (AI) in medical education and clinical practice. Dates and deadlines are confirmed against each conference's official site; anything that could not be confirmed is shown as TBD rather than estimated. Deadlines are dates as the organizer publishes them, in the organizer's own time zone unless their site says otherwise. Always verify details on the conference site before making travel plans.
 
 <!-- render:conferences -->
 

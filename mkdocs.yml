@@ -107,6 +107,7 @@ nav:
       - Preparing a Lecture: playbooks/lecture-prep.md
       - Writing Exam Questions: playbooks/exam-items.md
       - Syllabus AI Statement: playbooks/syllabus-statement.md
+  - For Faculty & Staff: faculty.md
   - For Students: students.md
   - News:
       - This Week: news/this-week.md
