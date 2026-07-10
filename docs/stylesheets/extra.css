@@ -654,16 +654,6 @@
   color: var(--md-default-fg-color--light);
 }
 
-/* With 14 top-level sections, Material's default tab padding (0 12px)
-   overflows the tab bar between its 1220px breakpoint and ~1310px,
-   silently clipping the last tabs on common laptops (measured
-   2026-07-09 when For Faculty & Staff was added). Tightened spacing
-   fits all tabs down to the breakpoint; remove this if the nav is
-   consolidated to fewer sections. */
-.md-tabs__item {
-  padding: 0 0.4rem;
-}
-
 /* Freshness footer on pages enrolled in prose page review: quiet,
    separated from content, but present (owner approved 2026-07-09). */
 .md-typeset .page-reviewed {
