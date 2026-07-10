@@ -14705,6 +14705,56 @@
    "first_seen": "2026-07-10T11:28:57.661066+00:00",
    "kept": false,
    "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02894-x",
+   "title_hash": "38955da8e92cd4c6f5eed0143da648e2",
+   "first_seen": "2026-07-10T15:03:32.492316+00:00",
+   "kept": true,
+   "title": "BrainSeg: a generalized framework for comprehensive multimodal brain tissue segmentation, parcellation, and lesion labeling",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-10T00:00:00+00:00",
+   "summary": "Peer-reviewed study presents BrainSeg, a framework for automated segmentation, parcellation, and lesion labeling across multiple brain imaging modalities.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02941-7",
+   "title_hash": "c78da8e3b7fb5b945893e46e7f6f152c",
+   "first_seen": "2026-07-10T15:03:32.492316+00:00",
+   "kept": true,
+   "title": "A vision transformer deep learning model for assessing pediatric ileocolic intussusception severity using ultrasound images",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-10T00:00:00+00:00",
+   "summary": "Vision transformer model trained to assess severity of pediatric ileocolic intussusception from ultrasound images, published in peer-reviewed journal.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uqbug5/this_is_what_hy3_is_capable_of_mother_of_god",
+   "title_hash": "f8ead31176948ea15985d1598d894203",
+   "first_seen": "2026-07-10T15:03:32.492316+00:00",
+   "kept": false,
+   "reason": "reaction content and anecdotal performance report without substantive analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1umo8zu/longcat_2_model_weights_have_been_published",
+   "title_hash": "b9c148b0cf7fc977f6cc9e9bfd250a5a",
+   "first_seen": "2026-07-10T15:03:32.492316+00:00",
+   "kept": true,
+   "title": "Longcat 2 model weights have been published",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-03T19:49:38+00:00",
+   "summary": "Meituan released open-weights Longcat 2 model in INT8 and FP8 quantized formats on Hugging Face.",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+   "title_hash": "f941b61953732a20a711ba4dd97dce2d",
+   "first_seen": "2026-07-10T15:03:32.492316+00:00",
+   "kept": false,
+   "reason": "title is rumor-framed and speculative; no confirmed model releases documented"
   }
  ],
  "digests": [
@@ -14839,8 +14889,8 @@
    "date": "July 10, 2026"
   },
   "clinical_practice": {
-   "text": "Generalist neuroimaging models trained on routine health system data, such as NeuroVFM, are improving diagnostic accuracy and report generation while highlighting the safety benefits of private clinical datasets <a href=\"https://www.nature.com/articles/s41591-026-04497-1\">[1]</a>. Large language models, when combined with expert-driven prompts, have demonstrated their ability to automate venous thromboembolism risk scoring in multicenter validations <a href=\"https://www.nature.com/articles/s41746-026-02929-3\">[7]</a>. Advancements in AI-powered diagnostic tools are also improving early identification of rare diseases, with algorithms enhancing recognition of paroxysmal nocturnal hemoglobinuria in clinical practice <a href=\"https://www.nature.com/articles/s41746-026-02980-0\">[5]</a>. Meanwhile, survey studies have quantified the influence of social determinants of health in predicting cardiovascular disease and type 2 diabetes progression using machine-learning approaches <a href=\"https://medinform.jmir.org/2026/1/e80377\">[3]</a>.",
-   "hash": "b35cdb3c0b3ba86d",
+   "text": "NeuroVFM, a generalist neuroimaging model trained on routine health system scans, offers improved diagnosis, report generation, and triage, with added safety advantages related to private clinical data <a href=\"https://www.nature.com/articles/s41591-026-04497-1\">[1]</a>. Complementing this, BrainSeg provides automated segmentation, lesion labeling, and parcellation across multiple brain imaging modalities, broadening the utility of AI in neuroimaging workflows <a href=\"https://www.nature.com/articles/s41746-026-02894-x\">[2]</a>. Automated systems for clinical risk and disease prediction are also advancing, including a multicenter validation of language models for venous thromboembolism risk scoring <a href=\"https://www.nature.com/articles/s41746-026-02929-3\">[9]</a> and AI algorithms that enhance early detection of paroxysmal nocturnal hemoglobinuria in real-world practice <a href=\"https://www.nature.com/articles/s41746-026-02980-0\">[7]</a>. Foundation models applied to sleep EEG reveal within-stage microstructure, yielding improved health screening capabilities beyond traditional approaches <a href=\"https://www.nature.com/articles/s41746-026-02970-2\">[8]</a>.",
+   "hash": "d4f58179e1b5b09a",
    "date": "July 10, 2026"
   },
   "general_ai": {

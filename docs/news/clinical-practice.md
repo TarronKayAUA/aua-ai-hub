@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Generalist neuroimaging models trained on routine health system data, such as NeuroVFM, are improving diagnostic accuracy and report generation while highlighting the safety benefits of private clinical datasets <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Large language models, when combined with expert-driven prompts, have demonstrated their ability to automate venous thromboembolism risk scoring in multicenter validations <a href="https://www.nature.com/articles/s41746-026-02929-3">[7]</a>. Advancements in AI-powered diagnostic tools are also improving early identification of rare diseases, with algorithms enhancing recognition of paroxysmal nocturnal hemoglobinuria in clinical practice <a href="https://www.nature.com/articles/s41746-026-02980-0">[5]</a>. Meanwhile, survey studies have quantified the influence of social determinants of health in predicting cardiovascular disease and type 2 diabetes progression using machine-learning approaches <a href="https://medinform.jmir.org/2026/1/e80377">[3]</a>.</p>
+<p>NeuroVFM, a generalist neuroimaging model trained on routine health system scans, offers improved diagnosis, report generation, and triage, with added safety advantages related to private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Complementing this, BrainSeg provides automated segmentation, lesion labeling, and parcellation across multiple brain imaging modalities, broadening the utility of AI in neuroimaging workflows <a href="https://www.nature.com/articles/s41746-026-02894-x">[2]</a>. Automated systems for clinical risk and disease prediction are also advancing, including a multicenter validation of language models for venous thromboembolism risk scoring <a href="https://www.nature.com/articles/s41746-026-02929-3">[9]</a> and AI algorithms that enhance early detection of paroxysmal nocturnal hemoglobinuria in real-world practice <a href="https://www.nature.com/articles/s41746-026-02980-0">[7]</a>. Foundation models applied to sleep EEG reveal within-stage microstructure, yielding improved health screening capabilities beyond traditional approaches <a href="https://www.nature.com/articles/s41746-026-02970-2">[8]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -23,6 +23,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04497-1">Health system learning enables generalist neuroimaging models</a>
     <p class="news-card-summary">NeuroVFM, trained on routine health system neuroimaging scans, learns general representations that improve diagnosis, report generation, and triage while demonstrating safety advantages of private clinical data.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02894-x">BrainSeg: a generalized framework for comprehensive multimodal brain tissue segmentation, parcellation, and lesion labeling</a>
+    <p class="news-card-summary">Peer-reviewed study presents BrainSeg, a framework for automated segmentation, parcellation, and lesion labeling across multiple brain imaging modalities.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02941-7">A vision transformer deep learning model for assessing pediatric ileocolic intussusception severity using ultrasound images</a>
+    <p class="news-card-summary">Vision transformer model trained to assess severity of pediatric ileocolic intussusception from ultrasound images, published in peer-reviewed journal.</p>
   </div>
 </div>
 <div class="news-card">
@@ -108,20 +122,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02969-9">Prediction of incident atrial fibrillation from retinal fundus images using a multimodal foundation model</a>
     <p class="news-card-summary">A multimodal foundation model predicts incident atrial fibrillation from retinal fundus images.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e85015">Feasibility of Tailoring Artificial Intelligence, Assisted Ambient Scribes for Intensive Care Unit Rounds: Algorithm Development and Validation</a>
-    <p class="news-card-summary">Peer-reviewed study validates feasibility of AI-assisted ambient scribes to reduce documentation burden for intensive care unit physicians.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02976-w">Intelligent surgical workflow recognition-based skill assessment for minimally invasive submandibular gland resection</a>
-    <p class="news-card-summary">Published method uses AI to recognize surgical workflow and assess surgeon skill during minimally invasive submandibular gland resection.</p>
   </div>
 </div>
 </div>
