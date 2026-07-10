@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>NeuroVFM, developed using routine health system neuroimaging, advances both diagnostic accuracy and report generation while offering safety benefits through the use of private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Meanwhile, BrainSeg delivers automated segmentation and lesion labeling across diverse brain imaging modalities, supporting broad applicability in neuroimaging analysis <a href="https://www.nature.com/articles/s41746-026-02894-x">[2]</a>. In musculoskeletal imaging, a hierarchical deep learning model enhances detection consistency for supraspinatus tendon pathologies on MRI <a href="https://medinform.jmir.org/2026/1/e84804">[13]</a>. Automated risk scoring for venous thromboembolism has been validated across centers with large language models using expert-augmented prompting <a href="https://www.nature.com/articles/s41746-026-02929-3">[11]</a>. An AI diagnostic algorithm is also improving early detection of paroxysmal nocturnal hemoglobinuria in clinical settings <a href="https://www.nature.com/articles/s41746-026-02980-0">[9]</a>.</p>
+<p>A mixed methods study evaluating an AI medical scribe across multiple care levels in a European health system offers direct evidence of widespread integration, with over 236,000 clinical notes generated and assessed for real-world performance <a href="https://medinform.jmir.org/2026/1/e90052">[1]</a>. Large language models are further explored for their ability to support primary care physicians by handling clinical, communication, and administrative tasks, highlighting the practical roles of AI in physician workflows <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>. In neuroimaging, models trained on routine health system scans demonstrate improved diagnosis, report generation, and triage while showing safety benefits linked to private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[4]</a>. Automated segmentation and lesion labeling across varied brain imaging modalities provide additional precision for diagnosing neurological conditions <a href="https://www.nature.com/articles/s41746-026-02894-x">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90052">Evaluation of an AI Medical Scribe After 236,153 Notes Generated Across Care Levels in a European Health System: Mixed Methods Retrospective Observational Study</a>
+    <p class="news-card-summary">Mixed methods study evaluates real-world performance of an AI medical scribe across care levels in a European health system based on over 236,000 generated notes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91249">Natural Language Processing Applied to Psychiatric Clinical Notes: Scoping Review</a>
+    <p class="news-card-summary">Scoping review examines natural language processing applications to psychiatric clinical notes in electronic health records for earlier illness identification and personalized treatment planning.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91652">Exploring the Role of Large Language Models in Primary Care: Qualitative Study of Physicians in the United States and the Netherlands</a>
+    <p class="news-card-summary">Qualitative study explores how large language models can support primary care physicians with clinical, administrative, and communication tasks in their workflows.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 10, 2026</span></div>
@@ -55,6 +76,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03002-9">Psychometric characterization of human and artificial intelligence performance on cardiology residency in-service examination items</a>
+    <p class="news-card-summary">Study characterizes psychometric performance of artificial intelligence and human physicians on cardiology residency examination items.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02989-5">Real-time anatomy recognition in laparoscopic liver resection using video segmentation AI model</a>
+    <p class="news-card-summary">Published study describes video segmentation artificial intelligence model for real-time anatomy recognition during laparoscopic liver resection.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85621">Effectiveness of Humanized AI Avatars and Messenger Gender for Dental Postprocedure Instructions: Two Randomized Experiments</a>
     <p class="news-card-summary">Randomized experiments evaluate AI avatars with varied gender presentation for delivering dental postprocedure instructions.</p>
@@ -87,41 +122,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02970-2">Sleep EEG foundation models reveal within-stage microstructure that improves health screening beyond traditional stages</a>
     <p class="news-card-summary">Foundation models trained on sleep EEG detect within-stage microstructure patterns improving health screening beyond traditional sleep staging.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02929-3">Automated risk scoring for venous thromboembolism using large language models with expert knowledge-augmented prompting: a multicenter validation study</a>
-    <p class="news-card-summary">Multicenter validation study demonstrates large language models with expert-augmented prompting for automated venous thromboembolism risk scoring.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02957-z">Treatment effects prediction and clinical decision-making system for retinal vein occlusion by artificial intelligence</a>
-    <p class="news-card-summary">Published study describes an AI system for predicting treatment effects and clinical decision-making in retinal vein occlusion.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84804">AI-Assisted Detection of Supraspinatus Tendon Pathologies Using a Hierarchical Deep Learning Model to Improve Clinical Applicability: Development and Evaluation Study</a>
-    <p class="news-card-summary">A hierarchical deep learning model classifies supraspinatus tendon pathologies on MRI to improve diagnostic consistency in musculoskeletal imaging workflows.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94833">Exploring the Role of AI in Enhancing Nuclear Medicine Report Impressions Generated by Trainees and ChatGPT-4o: Comparative Evaluation Study</a>
-    <p class="news-card-summary">Peer-reviewed study comparing AI-assisted and trainee-generated nuclear medicine reports, evaluating ChatGPT-4o&#x27;s role in enhancing clinical impressions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87768">AI-Driven Digital Twin Architecture for Multimodal Prediction and Adaptive Intervention in Cognitive Aging</a>
-    <p class="news-card-summary">Peer-reviewed conceptual framework for AI-driven digital twin system for cognitive aging prediction, monitoring, and adaptive intervention.</p>
   </div>
 </div>
 </div>

@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Researchers are actively evaluating large language models for clinical knowledge and exam grading, with studies showing that models like ChatGPT and DeepSeek match provider-level accuracy in neonatal resuscitation assessments <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[2]</a> and outperform certain peers in Chinese licensing examinations, although performance improvements across model iterations remain limited <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[4]</a>. However, psychometric analysis highlights the need for human oversight due to poor calibration and inconsistent grading in high-stakes clinical exams <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[5]</a>. Elsewhere, pilot comparisons of next-generation AI chatbots reveal diverse capabilities in knowledge and reasoning across colorectal cancer content <a href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">[8]</a>. These findings underscore both the promise and current limitations of AI-based tools in medical education.</p>
+<p>The emergence of large language models in medical education is prompting close evaluation of their abilities and limitations. Studies show that ChatGPT and DeepSeek demonstrate accuracy comparable to healthcare providers on neonatal resuscitation assessments, encouraging consideration of their role in clinical training <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[3]</a>. However, performance stability research indicates that iterative improvements do not consistently enhance exam outcomes and that model selection matters <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[5]</a>. Furthermore, concerns persist regarding calibration and disagreement in high-stakes clinical exam grading, highlighting the necessity of human oversight rather than autonomous use <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[6]</a>. Faculty and students are also navigating rapid adoption of generative AI, with evidence suggesting a gap between uptake and full integration in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e79418">e-Learning, Distance Education, and Virtual and Augmented Reality in Orthopedic Training: European Cross-Sectional Survey of Trainee Acceptance Guided by the Technology Acceptance Model and Unified Theory of Acceptance and Use of Technology</a>
+    <p class="news-card-summary">European survey assesses trainee acceptance of digital learning technologies in orthopedic training using technology adoption models to identify barriers and facilitators.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">Twelve tips for teaching research skills in the age of agentic AI: A guide for health professions educators</a>
     <p class="news-card-summary">Peer-reviewed guidance for health professions educators on teaching research skills when students use agentic AI tools.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42412017?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">The Role of Artificial Intelligence in Nephrology Education</a>
-    <p class="news-card-summary">Review article examines role of AI and large language models in nephrology education.</p>
   </div>
 </div>
 </div>

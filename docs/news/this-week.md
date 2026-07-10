@@ -11,11 +11,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Researchers are actively evaluating large language models for clinical knowledge and exam grading, with studies showing that models like ChatGPT and DeepSeek match provider-level accuracy in neonatal resuscitation assessments <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[2]</a> and outperform certain peers in Chinese licensing examinations, although performance improvements across model iterations remain limited <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[4]</a>. However, psychometric analysis highlights the need for human oversight due to poor calibration and inconsistent grading in high-stakes clinical exams <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[5]</a>. Elsewhere, pilot comparisons of next-generation AI chatbots reveal diverse capabilities in knowledge and reasoning across colorectal cancer content <a href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">[8]</a>. These findings underscore both the promise and current limitations of AI-based tools in medical education.</p>
+<p>The emergence of large language models in medical education is prompting close evaluation of their abilities and limitations. Studies show that ChatGPT and DeepSeek demonstrate accuracy comparable to healthcare providers on neonatal resuscitation assessments, encouraging consideration of their role in clinical training <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[3]</a>. However, performance stability research indicates that iterative improvements do not consistently enhance exam outcomes and that model selection matters <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[5]</a>. Furthermore, concerns persist regarding calibration and disagreement in high-stakes clinical exam grading, highlighting the necessity of human oversight rather than autonomous use <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[6]</a>. Faculty and students are also navigating rapid adoption of generative AI, with evidence suggesting a gap between uptake and full integration in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e79418">e-Learning, Distance Education, and Virtual and Augmented Reality in Orthopedic Training: European Cross-Sectional Survey of Trainee Acceptance Guided by the Technology Acceptance Model and Unified Theory of Acceptance and Use of Technology</a>
+    <p class="news-card-summary">European survey assesses trainee acceptance of digital learning technologies in orthopedic training using technology adoption models to identify barriers and facilitators.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
@@ -252,11 +259,32 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>NeuroVFM, developed using routine health system neuroimaging, advances both diagnostic accuracy and report generation while offering safety benefits through the use of private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Meanwhile, BrainSeg delivers automated segmentation and lesion labeling across diverse brain imaging modalities, supporting broad applicability in neuroimaging analysis <a href="https://www.nature.com/articles/s41746-026-02894-x">[2]</a>. In musculoskeletal imaging, a hierarchical deep learning model enhances detection consistency for supraspinatus tendon pathologies on MRI <a href="https://medinform.jmir.org/2026/1/e84804">[13]</a>. Automated risk scoring for venous thromboembolism has been validated across centers with large language models using expert-augmented prompting <a href="https://www.nature.com/articles/s41746-026-02929-3">[11]</a>. An AI diagnostic algorithm is also improving early detection of paroxysmal nocturnal hemoglobinuria in clinical settings <a href="https://www.nature.com/articles/s41746-026-02980-0">[9]</a>.</p>
+<p>A mixed methods study evaluating an AI medical scribe across multiple care levels in a European health system offers direct evidence of widespread integration, with over 236,000 clinical notes generated and assessed for real-world performance <a href="https://medinform.jmir.org/2026/1/e90052">[1]</a>. Large language models are further explored for their ability to support primary care physicians by handling clinical, communication, and administrative tasks, highlighting the practical roles of AI in physician workflows <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>. In neuroimaging, models trained on routine health system scans demonstrate improved diagnosis, report generation, and triage while showing safety benefits linked to private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[4]</a>. Automated segmentation and lesion labeling across varied brain imaging modalities provide additional precision for diagnosing neurological conditions <a href="https://www.nature.com/articles/s41746-026-02894-x">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90052">Evaluation of an AI Medical Scribe After 236,153 Notes Generated Across Care Levels in a European Health System: Mixed Methods Retrospective Observational Study</a>
+    <p class="news-card-summary">Mixed methods study evaluates real-world performance of an AI medical scribe across care levels in a European health system based on over 236,000 generated notes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91249">Natural Language Processing Applied to Psychiatric Clinical Notes: Scoping Review</a>
+    <p class="news-card-summary">Scoping review examines natural language processing applications to psychiatric clinical notes in electronic health records for earlier illness identification and personalized treatment planning.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91652">Exploring the Role of Large Language Models in Primary Care: Qualitative Study of Physicians in the United States and the Netherlands</a>
+    <p class="news-card-summary">Qualitative study explores how large language models can support primary care physicians with clinical, administrative, and communication tasks in their workflows.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 10, 2026</span></div>
@@ -290,6 +318,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02876-z">An information bottleneck-based optimal transport network for automated diagnosis of spinal diseases</a>
     <p class="news-card-summary">Peer-reviewed study presents an information bottleneck-based optimal transport network for automated diagnosis of spinal diseases.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03002-9">Psychometric characterization of human and artificial intelligence performance on cardiology residency in-service examination items</a>
+    <p class="news-card-summary">Study characterizes psychometric performance of artificial intelligence and human physicians on cardiology residency examination items.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02989-5">Real-time anatomy recognition in laparoscopic liver resection using video segmentation AI model</a>
+    <p class="news-card-summary">Published study describes video segmentation artificial intelligence model for real-time anatomy recognition during laparoscopic liver resection.</p>
   </div>
 </div>
 <div class="news-card">
