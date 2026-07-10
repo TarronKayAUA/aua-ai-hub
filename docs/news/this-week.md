@@ -243,48 +243,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Knowledge, Attitudes, and Practices Related to AI in Learning and Research Among Medical Students in Vietnam: Cross-Sectional Study</a>
-    <p class="news-card-summary">Medical students in Vietnam demonstrated favorable knowledge and positive attitudes toward AI, though practical skills remain limited.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42396275?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Historical Perspectives in Medicine using a Large Language Model: Emulating an 18th Century Physician</a>
-    <p class="news-card-summary">Large language models configured with historical constraints can simulate decision-making of 18th-century physicians for educational purposes.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">LLMs in Problem-Based Learning: The Grounding Issue</a>
-    <p class="news-card-summary">Large language models used in problem-based learning face grounding issues that affect their pedagogical effectiveness.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394077?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Vibe Coding to Democratize Dementia mHealth Development: Preliminary Findings</a>
-    <p class="news-card-summary">Vibe coding enables health professionals without programming expertise to develop dementia-focused mobile health applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Designing Effective Laboratory Sessions of AI in Medicine: A Practical Relevance Index</a>
-    <p class="news-card-summary">A practical relevance index framework guides design of effective laboratory sessions for teaching artificial intelligence in medicine.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Personality traits, technology affinity, and artificial intelligence readiness in medical students: a multinational cross-sectional study</a>
-    <p class="news-card-summary">Personality traits independently predict AI readiness in medical students across multiple countries, more so than technology affinity.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study</a>
     <p class="news-card-summary">Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.</p>
   </div>
@@ -294,7 +252,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>NeuroVFM, a generalist neuroimaging model trained on routine health system scans, offers improved diagnosis, report generation, and triage, with added safety advantages related to private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Complementing this, BrainSeg provides automated segmentation, lesion labeling, and parcellation across multiple brain imaging modalities, broadening the utility of AI in neuroimaging workflows <a href="https://www.nature.com/articles/s41746-026-02894-x">[2]</a>. Automated systems for clinical risk and disease prediction are also advancing, including a multicenter validation of language models for venous thromboembolism risk scoring <a href="https://www.nature.com/articles/s41746-026-02929-3">[9]</a> and AI algorithms that enhance early detection of paroxysmal nocturnal hemoglobinuria in real-world practice <a href="https://www.nature.com/articles/s41746-026-02980-0">[7]</a>. Foundation models applied to sleep EEG reveal within-stage microstructure, yielding improved health screening capabilities beyond traditional approaches <a href="https://www.nature.com/articles/s41746-026-02970-2">[8]</a>.</p>
+<p>NeuroVFM, developed using routine health system neuroimaging, advances both diagnostic accuracy and report generation while offering safety benefits through the use of private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Meanwhile, BrainSeg delivers automated segmentation and lesion labeling across diverse brain imaging modalities, supporting broad applicability in neuroimaging analysis <a href="https://www.nature.com/articles/s41746-026-02894-x">[2]</a>. In musculoskeletal imaging, a hierarchical deep learning model enhances detection consistency for supraspinatus tendon pathologies on MRI <a href="https://medinform.jmir.org/2026/1/e84804">[13]</a>. Automated risk scoring for venous thromboembolism has been validated across centers with large language models using expert-augmented prompting <a href="https://www.nature.com/articles/s41746-026-02929-3">[11]</a>. An AI diagnostic algorithm is also improving early detection of paroxysmal nocturnal hemoglobinuria in clinical settings <a href="https://www.nature.com/articles/s41746-026-02980-0">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -318,6 +276,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02941-7">A vision transformer deep learning model for assessing pediatric ileocolic intussusception severity using ultrasound images</a>
     <p class="news-card-summary">Vision transformer model trained to assess severity of pediatric ileocolic intussusception from ultrasound images, published in peer-reviewed journal.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02956-0">Simulation of covariate and concept drift in machine learning hospital admission prediction from emergency triage</a>
+    <p class="news-card-summary">Peer-reviewed study examines how covariate and concept drift affect machine learning models for hospital admission prediction from emergency triage data.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02876-z">An information bottleneck-based optimal transport network for automated diagnosis of spinal diseases</a>
+    <p class="news-card-summary">Peer-reviewed study presents an information bottleneck-based optimal transport network for automated diagnosis of spinal diseases.</p>
   </div>
 </div>
 <div class="news-card">
@@ -505,20 +477,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&amp;ff=20260703130545&amp;v=2.20.0">Artificial intelligence as a second reader for pneumothorax detection: redirecting rather than reducing chest CT use</a>
-    <p class="news-card-summary">AI assistance for pneumothorax detection redirects rather than reduces chest CT use in simulated clinical workflows.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02938-2">Whole body CT attenuation and volume charts from routine clinical scans via LLM report filtering</a>
-    <p class="news-card-summary">Large language models extract whole-body CT attenuation and volume data from routine clinical reports to generate population-based charts.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02973-z">The ethics of listening walls: patient autonomy and consent in the age of ambient clinical AI</a>
     <p class="news-card-summary">Ethics perspective on ambient clinical artificial intelligence systems and their implications for patient autonomy and informed consent.</p>
@@ -536,11 +494,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>The PLURAL dataset is a notable resource for grounding value-focused preferences in nationally representative surveys across 92 countries, enabling large language models to better reflect diverse cultural value systems <a href="https://arxiv.org/abs/2607.08034">[3]</a>. Security research has highlighted vulnerabilities in popular AI tools, showing that models generating plausible responses to unknown queries can be exploited to assemble large botnets <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[10]</a>. Retrieval-augmented generation is further improving reliability in public health question answering by reducing hallucinations and referencing maintained guidance documents <a href="https://arxiv.org/abs/2607.06641">[6]</a>. Meanwhile, new hierarchical sparse attention methods support more efficient modeling of longer context windows, addressing a key challenge for large language model scalability <a href="https://arxiv.org/abs/2607.02980">[14]</a>.</p>
+<p>OpenAI has upgraded ChatGPT with a new voice mode model and enabled task delegation to GPT-4o, which expands the system’s capacity for handling web search and complex reasoning tasks <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[7]</a>. The PLURAL dataset introduces a globally representative survey of value preferences across 92 countries, aiming to improve how large language models address diverse value systems <a href="https://arxiv.org/abs/2607.08034">[3]</a>. Retrieval-augmented generation methods are being used to reduce hallucinations and keep responses grounded in current public health guidance, increasing reliability for health-related applications <a href="https://arxiv.org/abs/2607.06641">[6]</a>. Meanwhile, security research highlights that widely used AI tools are susceptible to abuse for assembling botnets if their answer generation practices are exploited <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[10]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants">2.5x faster Qwen3.6 NVFP4 Unsloth quants</a>
+    <p class="news-card-summary">Unsloth released 2.5x faster quantized inference for Qwen 3.6 using 4-bit tensor cores with FP8 key-value cache support.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/yoxm16aijech1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=68cb2bb669bbaee024fb2f7d1cb9aa832e4530de" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
@@ -732,6 +698,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=1DtMiRKg-cs" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg" alt="Video: Understanding the inner thoughts of AI" loading="lazy">
+  <span class="video-card-title">Understanding the inner thoughts of AI</span>
+  <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
+  <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)" loading="lazy">
   <span class="video-card-title">GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)</span>

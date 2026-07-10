@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>The PLURAL dataset is a notable resource for grounding value-focused preferences in nationally representative surveys across 92 countries, enabling large language models to better reflect diverse cultural value systems <a href="https://arxiv.org/abs/2607.08034">[3]</a>. Security research has highlighted vulnerabilities in popular AI tools, showing that models generating plausible responses to unknown queries can be exploited to assemble large botnets <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[10]</a>. Retrieval-augmented generation is further improving reliability in public health question answering by reducing hallucinations and referencing maintained guidance documents <a href="https://arxiv.org/abs/2607.06641">[6]</a>. Meanwhile, new hierarchical sparse attention methods support more efficient modeling of longer context windows, addressing a key challenge for large language model scalability <a href="https://arxiv.org/abs/2607.02980">[14]</a>.</p>
+<p>OpenAI has upgraded ChatGPT with a new voice mode model and enabled task delegation to GPT-4o, which expands the system’s capacity for handling web search and complex reasoning tasks <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[7]</a>. The PLURAL dataset introduces a globally representative survey of value preferences across 92 countries, aiming to improve how large language models address diverse value systems <a href="https://arxiv.org/abs/2607.08034">[3]</a>. Retrieval-augmented generation methods are being used to reduce hallucinations and keep responses grounded in current public health guidance, increasing reliability for health-related applications <a href="https://arxiv.org/abs/2607.06641">[6]</a>. Meanwhile, security research highlights that widely used AI tools are susceptible to abuse for assembling botnets if their answer generation practices are exploited <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[10]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants">2.5x faster Qwen3.6 NVFP4 Unsloth quants</a>
+    <p class="news-card-summary">Unsloth released 2.5x faster quantized inference for Qwen 3.6 using 4-bit tensor cores with FP8 key-value cache support.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/yoxm16aijech1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=68cb2bb669bbaee024fb2f7d1cb9aa832e4530de" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.02770">Gemma 4 Technical Report</a>
     <p class="news-card-summary">Google released Gemma 4, a new generation of open-weights language models with improved capabilities.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.02980">Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling</a>
-    <p class="news-card-summary">Research on hierarchical sparse attention methods to enable large language models to handle longer context windows efficiently.</p>
   </div>
 </div>
 </div>

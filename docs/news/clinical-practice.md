@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>NeuroVFM, a generalist neuroimaging model trained on routine health system scans, offers improved diagnosis, report generation, and triage, with added safety advantages related to private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Complementing this, BrainSeg provides automated segmentation, lesion labeling, and parcellation across multiple brain imaging modalities, broadening the utility of AI in neuroimaging workflows <a href="https://www.nature.com/articles/s41746-026-02894-x">[2]</a>. Automated systems for clinical risk and disease prediction are also advancing, including a multicenter validation of language models for venous thromboembolism risk scoring <a href="https://www.nature.com/articles/s41746-026-02929-3">[9]</a> and AI algorithms that enhance early detection of paroxysmal nocturnal hemoglobinuria in real-world practice <a href="https://www.nature.com/articles/s41746-026-02980-0">[7]</a>. Foundation models applied to sleep EEG reveal within-stage microstructure, yielding improved health screening capabilities beyond traditional approaches <a href="https://www.nature.com/articles/s41746-026-02970-2">[8]</a>.</p>
+<p>NeuroVFM, developed using routine health system neuroimaging, advances both diagnostic accuracy and report generation while offering safety benefits through the use of private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[1]</a>. Meanwhile, BrainSeg delivers automated segmentation and lesion labeling across diverse brain imaging modalities, supporting broad applicability in neuroimaging analysis <a href="https://www.nature.com/articles/s41746-026-02894-x">[2]</a>. In musculoskeletal imaging, a hierarchical deep learning model enhances detection consistency for supraspinatus tendon pathologies on MRI <a href="https://medinform.jmir.org/2026/1/e84804">[13]</a>. Automated risk scoring for venous thromboembolism has been validated across centers with large language models using expert-augmented prompting <a href="https://www.nature.com/articles/s41746-026-02929-3">[11]</a>. An AI diagnostic algorithm is also improving early detection of paroxysmal nocturnal hemoglobinuria in clinical settings <a href="https://www.nature.com/articles/s41746-026-02980-0">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -37,6 +37,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02941-7">A vision transformer deep learning model for assessing pediatric ileocolic intussusception severity using ultrasound images</a>
     <p class="news-card-summary">Vision transformer model trained to assess severity of pediatric ileocolic intussusception from ultrasound images, published in peer-reviewed journal.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02956-0">Simulation of covariate and concept drift in machine learning hospital admission prediction from emergency triage</a>
+    <p class="news-card-summary">Peer-reviewed study examines how covariate and concept drift affect machine learning models for hospital admission prediction from emergency triage data.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02876-z">An information bottleneck-based optimal transport network for automated diagnosis of spinal diseases</a>
+    <p class="news-card-summary">Peer-reviewed study presents an information bottleneck-based optimal transport network for automated diagnosis of spinal diseases.</p>
   </div>
 </div>
 <div class="news-card">
@@ -108,20 +122,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87768">AI-Driven Digital Twin Architecture for Multimodal Prediction and Adaptive Intervention in Cognitive Aging</a>
     <p class="news-card-summary">Peer-reviewed conceptual framework for AI-driven digital twin system for cognitive aging prediction, monitoring, and adaptive intervention.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02937-3">Injury prediction in elite women’s football: an integrative machine learning-based decision-support framework</a>
-    <p class="news-card-summary">A machine learning framework predicts injury risk in elite women&#x27;s football players, supporting clinical decision-making.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02969-9">Prediction of incident atrial fibrillation from retinal fundus images using a multimodal foundation model</a>
-    <p class="news-card-summary">A multimodal foundation model predicts incident atrial fibrillation from retinal fundus images.</p>
   </div>
 </div>
 </div>

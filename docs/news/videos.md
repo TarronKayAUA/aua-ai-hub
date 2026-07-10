@@ -54,6 +54,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=1DtMiRKg-cs" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg" alt="Video: Understanding the inner thoughts of AI" loading="lazy">
+  <span class="video-card-title">Understanding the inner thoughts of AI</span>
+  <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
+  <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener">
   <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)" loading="lazy">
   <span class="video-card-title">GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)</span>
@@ -167,12 +173,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">DeepSeek Just Solved AI&#x27;s Billion Dollar Problem</span>
   <span class="video-card-meta">Two Minute Papers, June 22, 2026</span>
   <span class="video-card-desc">Overview of DeepSeek&#x27;s approach to reducing AI inference costs, a significant technical and economic development in large language model deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=qdf6UvCUlu4" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/qdf6UvCUlu4/hqdefault.jpg" alt="Video: North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!" loading="lazy">
-  <span class="video-card-title">North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!</span>
-  <span class="video-card-meta">Bijan Bowen, June 20, 2026</span>
-  <span class="video-card-desc">Demonstration and technical walkthrough of Cohere&#x27;s North Mini, a local agentic coding model suitable for running without cloud infrastructure.</span>
 </a>
 </div>
 
