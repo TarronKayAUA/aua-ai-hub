@@ -496,20 +496,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Deep learning system for electrocardiogram analysis demonstrates improved diagnostic accuracy for acute myocardial infarction with explainable outputs.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02968-w">Explainable foundation model for dementia screening and risk stratification using retinal fundus images</a>
-    <p class="news-card-summary">A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02872-3">LLM research on public biosignals data is needed to protect patients</a>
-    <p class="news-card-summary">A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
@@ -682,14 +668,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to">I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads</a>
     <p class="news-card-summary">Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100">google/tabfm-1.0.0</a>
-    <p class="news-card-summary">Google Research released TabFM, a zero-shot foundation model for tabular data supporting classification and regression tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/J-WwzolBRQVriyFjrSxJJXj_RBqoGjl9IqtDCzg_QIU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=15aaf1d34804b9ad9d9e2115446764ba26b824f6" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">
