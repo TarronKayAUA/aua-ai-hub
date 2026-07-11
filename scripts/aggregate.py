@@ -1083,6 +1083,29 @@ def resolve_task_llm(config: dict, task: str):
     return None, None, None
 
 
+def parse_llm_json(raw: str):
+    """Parse the JSON value in an LLM reply, tolerating code fences and
+    prose before or after it. Added 2026-07-10 after the conference watch
+    failed with 'Extra data' when the extraction model followed its JSON
+    object with commentary; every LLM JSON parse in the pipeline and the
+    watch scripts now goes through here. A reply whose JSON itself is
+    malformed still raises json.JSONDecodeError."""
+    cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip())
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError as exc:
+        decoder = json.JSONDecoder()
+        starts = sorted(i for i in (cleaned.find("{"), cleaned.find("["))
+                        if i >= 0)
+        for start in starts:
+            try:
+                value, _ = decoder.raw_decode(cleaned[start:])
+                return value
+            except json.JSONDecodeError:
+                continue
+        raise exc
+
+
 def parse_curator_json(text: str, candidate_ids: set, categories: dict,
                        strict_coverage: bool = True) -> tuple[list[dict], list[dict]]:
     """Parse and validate the strict JSON contract. Returns (keeps, drops):
@@ -1092,9 +1115,7 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict,
     unaccounted ids become drops with a placeholder reason (so a model that
     truncates its response can never silently discard candidates again).
     Raises ValueError on any other problem."""
-    text = text.strip()
-    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)  # tolerate code fences
-    data = json.loads(text)
+    data = parse_llm_json(text)
     items = data["items"]
     if not isinstance(items, list):
         raise ValueError("items is not a list")
@@ -1675,8 +1696,7 @@ def select_digest_highlights(candidates: list[dict], config: dict,
         try:
             raw = call(system, budgets + "\n\n" + payload, cfg,
                        llm_cfg["request_timeout_seconds"])
-            raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip())
-            ids = [str(i) for i in json.loads(raw)["highlights"]]
+            ids = [str(i) for i in parse_llm_json(raw)["highlights"]]
             valid = [i for i in ids if i in by_id]
             if valid:
                 return [by_id[i] for i in valid], f"llm ({provider}, {cfg['model']})"

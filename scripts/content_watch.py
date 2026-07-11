@@ -51,7 +51,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate import remove_dashes, resolve_task_llm  # noqa: E402
+from aggregate import parse_llm_json, remove_dashes, resolve_task_llm  # noqa: E402
 from page_review import build_mention_map, run_page_review  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
@@ -185,9 +185,8 @@ def call_task(config: dict, task: str, system: str, user: str) -> dict:
     provider, call, cfg = resolve_task_llm(config, task)
     if call is None:
         raise RuntimeError("no LLM credentials")
-    raw = call(system, user, cfg, 120).strip()
-    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)
-    return json.loads(raw)
+    raw = call(system, user, cfg, 120)
+    return parse_llm_json(raw)
 
 
 def week_items(days: int) -> list[dict]:

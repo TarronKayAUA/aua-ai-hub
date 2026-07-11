@@ -44,7 +44,7 @@ import requests
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate import resolve_task_llm  # noqa: E402
+from aggregate import parse_llm_json, resolve_task_llm  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
 CONFERENCES_PATH = REPO / "data" / "conferences.yaml"
@@ -88,9 +88,8 @@ def extract(name: str, text: str, config: dict) -> dict:
                            "GITHUB_TOKEN)")
     user = (f"Today is {date.today().isoformat()}. Event: {name}.\n"
             f"Page text:\n{text}")
-    raw = call(EXTRACT_SYSTEM, user, cfg, 90).strip()
-    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)
-    return json.loads(raw)
+    raw = call(EXTRACT_SYSTEM, user, cfg, 90)
+    return parse_llm_json(raw)
 
 
 def yaml_value(value) -> str:

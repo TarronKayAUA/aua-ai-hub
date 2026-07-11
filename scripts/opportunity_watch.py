@@ -36,7 +36,7 @@ import requests
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate import remove_dashes, resolve_task_llm  # noqa: E402
+from aggregate import parse_llm_json, remove_dashes, resolve_task_llm  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
 STATE_PATH = REPO / "data" / "opportunity_watch_state.json"
@@ -334,9 +334,8 @@ def main() -> int:
             failures.append("screen: no LLM credentials")
         else:
             try:
-                raw = call(WATCH_SYSTEM, "\n".join(lines), cfg, 120).strip()
-                raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)
-                data = json.loads(raw)
+                raw = call(WATCH_SYSTEM, "\n".join(lines), cfg, 120)
+                data = parse_llm_json(raw)
                 for keep in (data.get("keeps") or [])[:15]:
                     if keep.get("url") not in by_url:
                         dropped_ungrounded += 1
@@ -380,9 +379,8 @@ def main() -> int:
                 GATE_SYSTEM,
                 (f"OPPORTUNITY: {c['title']}\nURL: {keep['url']}\n"
                  f"SOURCE DETAIL: {c['detail']}\nPAGE TEXT: {page}"),
-                gate_cfg, 120).strip()
-            raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)
-            verdict = json.loads(raw)
+                gate_cfg, 120)
+            verdict = parse_llm_json(raw)
         except (requests.RequestException, ValueError, KeyError,
                 json.JSONDecodeError) as exc:
             proposals.append(
