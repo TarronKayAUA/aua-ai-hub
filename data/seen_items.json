@@ -14959,6 +14959,20 @@
    "summary": "Cross-sectional study finds patients support AI for cervical lesion screening efficiency and diagnosis but cite privacy, reliability, and trust concerns.",
    "category": "clinical_practice",
    "score": 2.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uswlq8/training_an_llm_from_scratch_on_1800s_texts_160gb",
+   "title_hash": "0bc97aae8d6f0f8baa8f1821a1d441d0",
+   "first_seen": "2026-07-11T06:27:48.574541+00:00",
+   "kept": false,
+   "reason": "community project with no significance for medical educators; not a model release, benchmark, or capability advancement with broad relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=sztx56CxgCE",
+   "title_hash": "4f921bad94de61afbe138ebe9c109595",
+   "first_seen": "2026-07-11T06:27:48.574541+00:00",
+   "kept": false,
+   "reason": "title is shock-phrased and promotional"
   }
  ],
  "digests": [
