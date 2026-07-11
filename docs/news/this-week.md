@@ -229,13 +229,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation</a>
-    <p class="news-card-summary">Study evaluates anatomical accuracy of text-to-image generative AI models compared to cadaveric dissection and professional atlases for medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Familiar but unprepared: Artificial intelligence training needs in graduate medical education</a>
     <p class="news-card-summary">Survey finds graduate medical education trainees have high artificial intelligence exposure but lack formal training in the field.</p>
   </div>
@@ -252,7 +245,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Passive early screening for Alzheimer&#x27;s disease and related dementias is now possible using machine learning on electronic health record comorbidity patterns, signaling a shift in identifying cognitive decline without active intervention <a href="https://www.nature.com/articles/s41746-026-02954-2">[1]</a>. Real-world evaluation of an AI medical scribe across care levels demonstrates practical integration, showing reliability across over 236,000 clinical notes in a major health system <a href="https://medinform.jmir.org/2026/1/e90052">[3]</a>. Large language models are also being examined for their roles in supporting primary care workflow, including clinical and administrative tasks, with qualitative input from physicians in different countries <a href="https://medinform.jmir.org/2026/1/e91652">[5]</a>. Natural language processing is further reviewed for its impact on psychiatric clinical notes, with attention to earlier identification and personalized treatment options <a href="https://medinform.jmir.org/2026/1/e91249">[4]</a>.</p>
+<p>A peer-reviewed study demonstrates passive early screening for Alzheimer’s disease and related dementias through machine learning analysis of comorbidity patterns within electronic health records, which may inform intervention decisions in clinical practice <a href="https://www.nature.com/articles/s41746-026-02954-2">[1]</a>. Another key study argues for embedding transparency and interpretability into artificial intelligence models in clinical trial infrastructure to help prevent amplification of health disparities and ensure equitable evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[3]</a>. Research further investigates the performance and real-world integration of AI medical scribes by evaluating over 236,000 generated notes across various care levels in a European health system <a href="https://medinform.jmir.org/2026/1/e90052">[4]</a>. Finally, a scoping review highlights the use of natural language processing on psychiatric clinical notes, supporting earlier identification of illness and personalized treatment planning <a href="https://medinform.jmir.org/2026/1/e91249">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -269,6 +262,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02646-x">Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease</a>
     <p class="news-card-summary">Peer-reviewed study reports machine learning detection of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02987-7">Embedded transparency in artificial intelligence: a prerequisite for equity and representation in AI-enabled clinical trials</a>
+    <p class="news-card-summary">Peer-reviewed study argues that transparent, interpretable AI models in clinical trial infrastructure are essential to prevent amplification of existing health disparities in evidence generation.</p>
   </div>
 </div>
 <div class="news-card">

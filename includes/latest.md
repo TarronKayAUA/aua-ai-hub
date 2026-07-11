@@ -3,5 +3,5 @@
 - [Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives](https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&ff=20260711095618&v=2.20.0) (PubMed AI in medical education, July 11, 2026)
 - [Passive early screening for Alzheimer’s disease and related dementias using EHR comorbidity patterns](https://www.nature.com/articles/s41746-026-02954-2) (npj Digital Medicine, July 11, 2026)
 - [Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease](https://www.nature.com/articles/s41746-026-02646-x) (npj Digital Medicine, July 11, 2026)
+- [Embedded transparency in artificial intelligence: a prerequisite for equity and representation in AI-enabled clinical trials](https://www.nature.com/articles/s41746-026-02987-7) (npj Digital Medicine, July 11, 2026)
 - [Evaluation of an AI Medical Scribe After 236,153 Notes Generated Across Care Levels in a European Health System: Mixed Methods Retrospective Observational Study](https://medinform.jmir.org/2026/1/e90052) (JMIR Medical Informatics, July 10, 2026)
-- [Natural Language Processing Applied to Psychiatric Clinical Notes: Scoping Review](https://medinform.jmir.org/2026/1/e91249) (JMIR Medical Informatics, July 10, 2026)
