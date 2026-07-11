@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models are demonstrating comparable performance to healthcare providers in written neonatal resuscitation assessments, prompting consideration of their role in training and knowledge evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[3]</a>. However, their use as autonomous graders in clinical exams remains limited due to calibration and agreement issues, emphasizing the necessity for ongoing human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[7]</a>. Medical students and faculty are increasingly accepting generative AI as a feasible and useful educational tool, though most agree it cannot substitute for human teachers in nuanced clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">[4]</a>. Structured training is suggested as generative AI adoption in clinical practice outpaces effective integration, particularly among academic critical care physicians <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[15]</a>.</p>
+<p>Large language models and generative AI tools are beginning to perform comparably to healthcare providers in specific training assessments such as neonatal resuscitation, prompting further evaluation of their integration into medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[4]</a>. Despite their growing feasibility and practical acceptance among students, these technologies are not positioned to replace human teachers and still require oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[8]</a>. AI literacy is emerging as a critical factor in promoting career optimism among physiotherapy and rehabilitation students, highlighting the importance of educational strategies that focus on building competence with AI rather than emphasizing anxiety <a href="https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[10]</a>. AI also offers opportunities for curriculum review, supporting nursing education with automated content screening while maintaining a need for human judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42424114?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[13]</a>.</p>
 <p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&amp;ff=20260711095618&amp;v=2.20.0">Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives</a>
+    <p class="news-card-summary">Machine learning and deep learning show promise for improving airway assessment accuracy in anesthesia beyond conventional subjective tools.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 10, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42417702?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">Fostering Metacognition in Anatomy Education Through Game-Based Learning and a Context-Aware AI Assistant</a>
     <p class="news-card-summary">Peer-reviewed study of mobile application combining game-based learning with context-aware AI and retrieval-augmented generation for anatomy education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">The &quot;DeepSeek effect&quot; and the adoption-integration gap of generative artificial intelligence in clinical practice: a national online convenience cross-sectional survey of academic critical care physicians in China</a>
-    <p class="news-card-summary">Survey of critical care physicians reveals rapid generative AI adoption but persistent gap between uptake and integration, suggesting need for structured training.</p>
   </div>
 </div>
 </div>

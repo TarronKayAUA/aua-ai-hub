@@ -15037,6 +15037,32 @@
    "first_seen": "2026-07-11T09:49:52.240760+00:00",
    "kept": false,
    "reason": "environmental health study; no artificial intelligence methods or focus"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42434788?fc=20260609215449&ff=20260711095618&v=2.20.0",
+   "title_hash": "880513c24403cf7d0ac74075f991bc28",
+   "first_seen": "2026-07-11T13:56:18.374878+00:00",
+   "kept": false,
+   "reason": "abstract unavailable; insufficient information to evaluate"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&ff=20260711095618&v=2.20.0",
+   "title_hash": "5e9b11a58ad6b82283d440fa6ab322bb",
+   "first_seen": "2026-07-11T13:56:18.374878+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-11T10:00:00+00:00",
+   "summary": "Machine learning and deep learning show promise for improving airway assessment accuracy in anesthesia beyond conventional subjective tools.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42433425?fc=20260609215449&ff=20260711095618&v=2.20.0",
+   "title_hash": "1e7c0d0f878c2a522de8b8b9e70defff",
+   "first_seen": "2026-07-11T13:56:18.374878+00:00",
+   "kept": false,
+   "reason": "narrow domain application; epidemiologic study using machine learning without focus on AI methods or medical education"
   }
  ],
  "digests": [
@@ -15166,8 +15192,8 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Large language models are demonstrating comparable performance to healthcare providers in written neonatal resuscitation assessments, prompting consideration of their role in training and knowledge evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0\">[3]</a>. However, their use as autonomous graders in clinical exams remains limited due to calibration and agreement issues, emphasizing the necessity for ongoing human oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[7]</a>. Medical students and faculty are increasingly accepting generative AI as a feasible and useful educational tool, though most agree it cannot substitute for human teachers in nuanced clinical contexts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0\">[4]</a>. Structured training is suggested as generative AI adoption in clinical practice outpaces effective integration, particularly among academic critical care physicians <a href=\"https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0\">[15]</a>.",
-   "hash": "43da1f8cb8428ad8",
+   "text": "Large language models and generative AI tools are beginning to perform comparably to healthcare providers in specific training assessments such as neonatal resuscitation, prompting further evaluation of their integration into medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0\">[4]</a>. Despite their growing feasibility and practical acceptance among students, these technologies are not positioned to replace human teachers and still require oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0\">[5]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[8]</a>. AI literacy is emerging as a critical factor in promoting career optimism among physiotherapy and rehabilitation students, highlighting the importance of educational strategies that focus on building competence with AI rather than emphasizing anxiety <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[10]</a>. AI also offers opportunities for curriculum review, supporting nursing education with automated content screening while maintaining a need for human judgment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42424114?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0\">[13]</a>.",
+   "hash": "adc144e9f952d7d4",
    "date": "July 11, 2026"
   },
   "clinical_practice": {
