@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>The emergence of large language models in medical education is prompting close evaluation of their abilities and limitations. Studies show that ChatGPT and DeepSeek demonstrate accuracy comparable to healthcare providers on neonatal resuscitation assessments, encouraging consideration of their role in clinical training <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[3]</a>. However, performance stability research indicates that iterative improvements do not consistently enhance exam outcomes and that model selection matters <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[5]</a>. Furthermore, concerns persist regarding calibration and disagreement in high-stakes clinical exam grading, highlighting the necessity of human oversight rather than autonomous use <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[6]</a>. Faculty and students are also navigating rapid adoption of generative AI, with evidence suggesting a gap between uptake and full integration in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[14]</a>.</p>
-<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
+<p>Large language models are demonstrating comparable performance to healthcare providers in written neonatal resuscitation assessments, prompting consideration of their role in training and knowledge evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[3]</a>. However, their use as autonomous graders in clinical exams remains limited due to calibration and agreement issues, emphasizing the necessity for ongoing human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[7]</a>. Medical students and faculty are increasingly accepting generative AI as a feasible and useful educational tool, though most agree it cannot substitute for human teachers in nuanced clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">[4]</a>. Structured training is suggested as generative AI adoption in clinical practice outpaces effective integration, particularly among academic critical care physicians <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[15]</a>.</p>
+<p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -37,6 +37,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Performance of large language models in neonatal resuscitation assessments versus healthcare providers: an exploratory study</a>
     <p class="news-card-summary">ChatGPT and DeepSeek achieved comparable accuracy to healthcare providers on neonatal resuscitation written assessments, warranting further study of their integration in training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">From hype to reality: the feasibility, dilemmas, and solutions of Gen AI in medical education from students&#x27; perspectives</a>
+    <p class="news-card-summary">Peer-reviewed study finds medical students accept generative AI in education based on perceived feasibility and usefulness rather than ethical concerns, though AI cannot yet replace human teachers.</p>
   </div>
 </div>
 <div class="news-card">
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">The &quot;DeepSeek effect&quot; and the adoption-integration gap of generative artificial intelligence in clinical practice: a national online convenience cross-sectional survey of academic critical care physicians in China</a>
     <p class="news-card-summary">Survey of critical care physicians reveals rapid generative AI adoption but persistent gap between uptake and integration, suggesting need for structured training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42412521?fc=20260609215449&amp;ff=20260707152037&amp;v=2.20.0">Twelve tips for teaching research skills in the age of agentic AI: A guide for health professions educators</a>
-    <p class="news-card-summary">Peer-reviewed guidance for health professions educators on teaching research skills when students use agentic AI tools.</p>
   </div>
 </div>
 </div>

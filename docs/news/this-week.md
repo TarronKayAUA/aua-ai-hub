@@ -11,8 +11,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>The emergence of large language models in medical education is prompting close evaluation of their abilities and limitations. Studies show that ChatGPT and DeepSeek demonstrate accuracy comparable to healthcare providers on neonatal resuscitation assessments, encouraging consideration of their role in clinical training <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[3]</a>. However, performance stability research indicates that iterative improvements do not consistently enhance exam outcomes and that model selection matters <a href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[5]</a>. Furthermore, concerns persist regarding calibration and disagreement in high-stakes clinical exam grading, highlighting the necessity of human oversight rather than autonomous use <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[6]</a>. Faculty and students are also navigating rapid adoption of generative AI, with evidence suggesting a gap between uptake and full integration in clinical practice <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[14]</a>.</p>
-<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the source items.</p>
+<p>Large language models are demonstrating comparable performance to healthcare providers in written neonatal resuscitation assessments, prompting consideration of their role in training and knowledge evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[3]</a>. However, their use as autonomous graders in clinical exams remains limited due to calibration and agreement issues, emphasizing the necessity for ongoing human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[7]</a>. Medical students and faculty are increasingly accepting generative AI as a feasible and useful educational tool, though most agree it cannot substitute for human teachers in nuanced clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">[4]</a>. Structured training is suggested as generative AI adoption in clinical practice outpaces effective integration, particularly among academic critical care physicians <a href="https://pubmed.ncbi.nlm.nih.gov/42415807?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">[15]</a>.</p>
+<p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
@@ -35,6 +35,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Performance of large language models in neonatal resuscitation assessments versus healthcare providers: an exploratory study</a>
     <p class="news-card-summary">ChatGPT and DeepSeek achieved comparable accuracy to healthcare providers on neonatal resuscitation written assessments, warranting further study of their integration in training.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">From hype to reality: the feasibility, dilemmas, and solutions of Gen AI in medical education from students&#x27; perspectives</a>
+    <p class="news-card-summary">Peer-reviewed study finds medical students accept generative AI in education based on perceived feasibility and usefulness rather than ethical concerns, though AI cannot yet replace human teachers.</p>
   </div>
 </div>
 <div class="news-card">
@@ -215,13 +222,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Principles for medical students&#x27; responsible use of generative AI: a student-partnered Delphi study</a>
-    <p class="news-card-summary">Delphi study with student partners identifies principles for responsible generative AI use in medical education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&amp;ff=20260704114920&amp;v=2.20.0">Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation</a>
     <p class="news-card-summary">Study evaluates anatomical accuracy of text-to-image generative AI models compared to cadaveric dissection and professional atlases for medical education.</p>
   </div>
@@ -240,23 +240,30 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">National survey documents nearly universal large language model adoption among Canadian medical students with generally positive student perceptions.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study</a>
-    <p class="news-card-summary">Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.</p>
-  </div>
-</div>
 </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Large language models are increasingly integrated into primary care workflows, supporting physicians with clinical, administrative, and communication tasks <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>, while health system learning approaches enable general neuroimaging models to improve diagnosis, report generation, and triage using routine scans and private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[5]</a>. AI has demonstrated enhanced early detection capabilities for rare blood disorders in real-world clinical contexts <a href="https://www.nature.com/articles/s41746-026-02980-0">[15]</a>, and automated frameworks now offer comprehensive multimodal segmentation and lesion labeling across brain imaging modalities <a href="https://www.nature.com/articles/s41746-026-02894-x">[6]</a>. Patients express support for AI in cervical lesion screening for efficiency and diagnosis but highlight ongoing privacy, reliability, and trust concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">[4]</a>.</p>
+<p>Passive early screening for Alzheimer&#x27;s disease and related dementias is now possible using machine learning on electronic health record comorbidity patterns, signaling a shift in identifying cognitive decline without active intervention <a href="https://www.nature.com/articles/s41746-026-02954-2">[1]</a>. Real-world evaluation of an AI medical scribe across care levels demonstrates practical integration, showing reliability across over 236,000 clinical notes in a major health system <a href="https://medinform.jmir.org/2026/1/e90052">[3]</a>. Large language models are also being examined for their roles in supporting primary care workflow, including clinical and administrative tasks, with qualitative input from physicians in different countries <a href="https://medinform.jmir.org/2026/1/e91652">[5]</a>. Natural language processing is further reviewed for its impact on psychiatric clinical notes, with attention to earlier identification and personalized treatment options <a href="https://medinform.jmir.org/2026/1/e91249">[4]</a>.</p>
 <p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02954-2">Passive early screening for Alzheimer’s disease and related dementias using EHR comorbidity patterns</a>
+    <p class="news-card-summary">Peer-reviewed study describes passive screening for Alzheimer&#x27;s disease and related dementias using machine learning patterns in electronic health records.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02646-x">Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease</a>
+    <p class="news-card-summary">Peer-reviewed study reports machine learning detection of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
@@ -485,13 +492,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02959-x">Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction</a>
-    <p class="news-card-summary">Study reports implementation and validation of conversational AI for preparing patients before medical procedures and measures patient satisfaction.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02968-w">Explainable foundation model for dementia screening and risk stratification using retinal fundus images</a>
     <p class="news-card-summary">A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.</p>
   </div>
@@ -501,13 +501,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 4, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02872-3">LLM research on public biosignals data is needed to protect patients</a>
     <p class="news-card-summary">A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02947-1">Predicting response to neoadjuvant therapy using artificial intelligence on digitized histopathology slides: a systematic review</a>
-    <p class="news-card-summary">Systematic review of artificial intelligence methods for predicting treatment response from digitized histopathology slides.</p>
   </div>
 </div>
 </div>

@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models are increasingly integrated into primary care workflows, supporting physicians with clinical, administrative, and communication tasks <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>, while health system learning approaches enable general neuroimaging models to improve diagnosis, report generation, and triage using routine scans and private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[5]</a>. AI has demonstrated enhanced early detection capabilities for rare blood disorders in real-world clinical contexts <a href="https://www.nature.com/articles/s41746-026-02980-0">[15]</a>, and automated frameworks now offer comprehensive multimodal segmentation and lesion labeling across brain imaging modalities <a href="https://www.nature.com/articles/s41746-026-02894-x">[6]</a>. Patients express support for AI in cervical lesion screening for efficiency and diagnosis but highlight ongoing privacy, reliability, and trust concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">[4]</a>.</p>
+<p>Passive early screening for Alzheimer&#x27;s disease and related dementias is now possible using machine learning on electronic health record comorbidity patterns, signaling a shift in identifying cognitive decline without active intervention <a href="https://www.nature.com/articles/s41746-026-02954-2">[1]</a>. Real-world evaluation of an AI medical scribe across care levels demonstrates practical integration, showing reliability across over 236,000 clinical notes in a major health system <a href="https://medinform.jmir.org/2026/1/e90052">[3]</a>. Large language models are also being examined for their roles in supporting primary care workflow, including clinical and administrative tasks, with qualitative input from physicians in different countries <a href="https://medinform.jmir.org/2026/1/e91652">[5]</a>. Natural language processing is further reviewed for its impact on psychiatric clinical notes, with attention to earlier identification and personalized treatment options <a href="https://medinform.jmir.org/2026/1/e91249">[4]</a>.</p>
 <p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02954-2">Passive early screening for Alzheimer’s disease and related dementias using EHR comorbidity patterns</a>
+    <p class="news-card-summary">Peer-reviewed study describes passive screening for Alzheimer&#x27;s disease and related dementias using machine learning patterns in electronic health records.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02646-x">Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease</a>
+    <p class="news-card-summary">Peer-reviewed study reports machine learning detection of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
@@ -107,21 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80377">Quantifying the Predictive Power of Social Determinants of Health in Cardiovascular Disease and Type 2 Diabetes Progression Using XGBoost: Retrospective Cohort Study</a>
     <p class="news-card-summary">Machine-learning study quantifies social determinants of health contribution to cardiovascular disease and type 2 diabetes risk prediction.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs">Humanoid robots controlled by surgeons did world-first operation on live pigs</a>
-    <p class="news-card-summary">Preclinical trial demonstrates feasibility of surgeon-controlled humanoid robots performing live animal surgery.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/humanoid-robot-surgeons-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02980-0">AI-driven diagnostic algorithm enhances early detection of paroxysmal nocturnal hemoglobinuria in real-world settings</a>
-    <p class="news-card-summary">An AI diagnostic algorithm improved early detection of paroxysmal nocturnal hemoglobinuria in real-world clinical settings.</p>
   </div>
 </div>
 </div>
