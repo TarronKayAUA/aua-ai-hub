@@ -242,13 +242,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e96129">Multimodule Human, Artificial Intelligence Collaboration Pipeline for Large Language Model, Assisted Thematic Analysis Across Digital Health Interview Studies: Comparative Evaluation Study</a>
-    <p class="news-card-summary">Multi-module pipeline combining human researchers and large language models for thematic analysis of digital health qualitative data.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&amp;ff=20260704051042&amp;v=2.20.0">Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study</a>
     <p class="news-card-summary">Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.</p>
@@ -259,8 +252,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A mixed methods study evaluating an AI medical scribe across multiple care levels in a European health system offers direct evidence of widespread integration, with over 236,000 clinical notes generated and assessed for real-world performance <a href="https://medinform.jmir.org/2026/1/e90052">[1]</a>. Large language models are further explored for their ability to support primary care physicians by handling clinical, communication, and administrative tasks, highlighting the practical roles of AI in physician workflows <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>. In neuroimaging, models trained on routine health system scans demonstrate improved diagnosis, report generation, and triage while showing safety benefits linked to private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[4]</a>. Automated segmentation and lesion labeling across varied brain imaging modalities provide additional precision for diagnosing neurological conditions <a href="https://www.nature.com/articles/s41746-026-02894-x">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the source items.</p>
+<p>Large language models are increasingly integrated into primary care workflows, supporting physicians with clinical, administrative, and communication tasks <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>, while health system learning approaches enable general neuroimaging models to improve diagnosis, report generation, and triage using routine scans and private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[5]</a>. AI has demonstrated enhanced early detection capabilities for rare blood disorders in real-world clinical contexts <a href="https://www.nature.com/articles/s41746-026-02980-0">[15]</a>, and automated frameworks now offer comprehensive multimodal segmentation and lesion labeling across brain imaging modalities <a href="https://www.nature.com/articles/s41746-026-02894-x">[6]</a>. Patients express support for AI in cervical lesion screening for efficiency and diagnosis but highlight ongoing privacy, reliability, and trust concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">[4]</a>.</p>
+<p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
@@ -283,6 +276,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91652">Exploring the Role of Large Language Models in Primary Care: Qualitative Study of Physicians in the United States and the Netherlands</a>
     <p class="news-card-summary">Qualitative study explores how large language models can support primary care physicians with clinical, administrative, and communication tasks in their workflows.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">Artificial Intelligence for Cervical HPV Infection and Lesion Screening: A Cross-Sectional Analysis of Its Application Potential and Patient Satisfaction</a>
+    <p class="news-card-summary">Cross-sectional study finds patients support AI for cervical lesion screening efficiency and diagnosis but cite privacy, reliability, and trust concerns.</p>
   </div>
 </div>
 <div class="news-card">
@@ -505,27 +505,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88816">Real-World Implementation of Large Language Models for Writing Clinical Discharge Summaries Within a Secure Data Environment: Development and Expert Evaluation Study</a>
-    <p class="news-card-summary">Large language models generated clinical discharge summaries within a secure data environment, demonstrating real-world implementation for hospital documentation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85248">Prediction of Type 2 Diabetes Mellitus From Chest X-Rays Using a Suite of Previously Developed Chronic Disease Deep Learning Models in an Ethnically Diverse Cohort: Observational Study</a>
-    <p class="news-card-summary">Deep learning models previously developed for chronic disease detection predicted type 2 diabetes risk from chest X-rays in an external validation cohort.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02973-z">The ethics of listening walls: patient autonomy and consent in the age of ambient clinical AI</a>
-    <p class="news-card-summary">Ethics perspective on ambient clinical artificial intelligence systems and their implications for patient autonomy and informed consent.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02947-1">Predicting response to neoadjuvant therapy using artificial intelligence on digitized histopathology slides: a systematic review</a>
     <p class="news-card-summary">Systematic review of artificial intelligence methods for predicting treatment response from digitized histopathology slides.</p>
@@ -718,14 +697,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1umo8zu/longcat_2_model_weights_have_been_published">Longcat 2 model weights have been published</a>
     <p class="news-card-summary">Meituan released open-weights Longcat 2 model in INT8 and FP8 quantized formats on Hugging Face.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1umgdhx/mistral_released_leanstral15119ba6b">Mistral released Leanstral-1.5-119B-A6B</a>
-    <p class="news-card-summary">Mistral released Leansral 1.5, a 119-billion-parameter open-weights model with 6-billion active parameters under Apache 2.0 license.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/ODJmTYJPSSbtKSPmO8gS3EmI__gMc5r8LJxlf8jL8KI.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e875cb86d094c38614bc35319ea7422fcd655e2d" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card">
   <div class="news-card-body">

@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A mixed methods study evaluating an AI medical scribe across multiple care levels in a European health system offers direct evidence of widespread integration, with over 236,000 clinical notes generated and assessed for real-world performance <a href="https://medinform.jmir.org/2026/1/e90052">[1]</a>. Large language models are further explored for their ability to support primary care physicians by handling clinical, communication, and administrative tasks, highlighting the practical roles of AI in physician workflows <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>. In neuroimaging, models trained on routine health system scans demonstrate improved diagnosis, report generation, and triage while showing safety benefits linked to private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[4]</a>. Automated segmentation and lesion labeling across varied brain imaging modalities provide additional precision for diagnosing neurological conditions <a href="https://www.nature.com/articles/s41746-026-02894-x">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
+<p>Large language models are increasingly integrated into primary care workflows, supporting physicians with clinical, administrative, and communication tasks <a href="https://medinform.jmir.org/2026/1/e91652">[3]</a>, while health system learning approaches enable general neuroimaging models to improve diagnosis, report generation, and triage using routine scans and private clinical data <a href="https://www.nature.com/articles/s41591-026-04497-1">[5]</a>. AI has demonstrated enhanced early detection capabilities for rare blood disorders in real-world clinical contexts <a href="https://www.nature.com/articles/s41746-026-02980-0">[15]</a>, and automated frameworks now offer comprehensive multimodal segmentation and lesion labeling across brain imaging modalities <a href="https://www.nature.com/articles/s41746-026-02894-x">[6]</a>. Patients express support for AI in cervical lesion screening for efficiency and diagnosis but highlight ongoing privacy, reliability, and trust concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">[4]</a>.</p>
+<p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -37,6 +37,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91652">Exploring the Role of Large Language Models in Primary Care: Qualitative Study of Physicians in the United States and the Netherlands</a>
     <p class="news-card-summary">Qualitative study explores how large language models can support primary care physicians with clinical, administrative, and communication tasks in their workflows.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">Artificial Intelligence for Cervical HPV Infection and Lesion Screening: A Cross-Sectional Analysis of Its Application Potential and Patient Satisfaction</a>
+    <p class="news-card-summary">Cross-sectional study finds patients support AI for cervical lesion screening efficiency and diagnosis but cite privacy, reliability, and trust concerns.</p>
   </div>
 </div>
 <div class="news-card">
@@ -115,13 +122,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02980-0">AI-driven diagnostic algorithm enhances early detection of paroxysmal nocturnal hemoglobinuria in real-world settings</a>
     <p class="news-card-summary">An AI diagnostic algorithm improved early detection of paroxysmal nocturnal hemoglobinuria in real-world clinical settings.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02970-2">Sleep EEG foundation models reveal within-stage microstructure that improves health screening beyond traditional stages</a>
-    <p class="news-card-summary">Foundation models trained on sleep EEG detect within-stage microstructure patterns improving health screening beyond traditional sleep staging.</p>
   </div>
 </div>
 </div>
