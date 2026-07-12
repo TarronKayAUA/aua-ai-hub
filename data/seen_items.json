@@ -15200,6 +15200,13 @@
    "first_seen": "2026-07-12T06:47:14.457479+00:00",
    "kept": false,
    "reason": "title is rumor-framed and shock-phrased"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=GtrWMNsXghA",
+   "title_hash": "14ac7ca6855653995e901d1b4185daf4",
+   "first_seen": "2026-07-12T10:02:41.516725+00:00",
+   "kept": false,
+   "reason": "vendor marketing and off-topic for this audience"
   }
  ],
  "digests": [

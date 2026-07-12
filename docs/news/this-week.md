@@ -254,20 +254,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">A review of artificial intelligence applications in rheumatology medical education and training.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Familiar but unprepared: Artificial intelligence training needs in graduate medical education</a>
-    <p class="news-card-summary">Survey finds graduate medical education trainees have high artificial intelligence exposure but lack formal training in the field.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Medical students&#x27; use of large language models: a national survey</a>
-    <p class="news-card-summary">National survey documents nearly universal large language model adoption among Canadian medical students with generally positive student perceptions.</p>
-  </div>
-</div>
 </div>
 
 ## Clinical Practice
@@ -515,13 +501,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02919-5">Bridging the gap from clinical to home ECG: quantifying and overcoming accuracy loss in AI-enabled single-lead ECG models</a>
     <p class="news-card-summary">Study quantifies accuracy loss when single-lead ECG artificial intelligence models transition from clinical to home settings and proposes mitigation strategies.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&amp;ff=20260705055257&amp;v=2.20.0">Precise ECG diagnosis and validation of educational utility for acute myocardial infarction using deep learning and explainable artificial intelligence</a>
-    <p class="news-card-summary">Deep learning system for electrocardiogram analysis demonstrates improved diagnostic accuracy for acute myocardial infarction with explainable outputs.</p>
   </div>
 </div>
 </div>
