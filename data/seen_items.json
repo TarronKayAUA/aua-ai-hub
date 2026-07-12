@@ -15082,6 +15082,41 @@
    "first_seen": "2026-07-11T17:17:16.775630+00:00",
    "kept": false,
    "reason": "title is rumor-framed and promotional; Meta Muse Spark 1.1 is not a notable frontier model release"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/11/sqlite-utils",
+   "title_hash": "34493e2736465a2f649fe087bec5b29b",
+   "first_seen": "2026-07-12T03:59:59.037902+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1utpxo6/i_created_a_super_harmful_model_d_by_tweaking_its",
+   "title_hash": "73a81d802574c291fc8820ab82d08694",
+   "first_seen": "2026-07-12T03:59:59.037902+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread, no significant capability news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uthozd/the_us_tech_industry_is_increasingly_anxious",
+   "title_hash": "315080bdc0b7387f47b07c57af8b79fc",
+   "first_seen": "2026-07-12T03:59:59.037902+00:00",
+   "kept": false,
+   "reason": "rumor and gossip about policy and competitive positioning, not substantive news"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02982-y",
+   "title_hash": "665209529e58db962852a12ea2f55f94",
+   "first_seen": "2026-07-12T03:59:59.037902+00:00",
+   "kept": false,
+   "reason": "preprint announcement without substantive summary; narrow domain application"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Ti1V7OI2Rro",
+   "title_hash": "9501989a697b28762d6d76345cff2e94",
+   "first_seen": "2026-07-12T03:59:59.037902+00:00",
+   "kept": false,
+   "reason": "title is rumor-framed and sensationalized; content appears to be speculation and clickbait rather than substantive reporting"
   }
  ],
  "digests": [
