@@ -15297,6 +15297,20 @@
    "first_seen": "2026-07-12T17:19:59.339557+00:00",
    "kept": false,
    "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uuga40/local_image_to_3d_2gb_ram_20s_apple_silicon_iphone",
+   "title_hash": "4d8fc4a59fce7dd750e9fbddfffcaa9a",
+   "first_seen": "2026-07-12T21:08:26.734935+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://odinbook.com/",
+   "title_hash": "c3803bb75ee557bf70f8c04988482f31",
+   "first_seen": "2026-07-12T21:08:26.734935+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [

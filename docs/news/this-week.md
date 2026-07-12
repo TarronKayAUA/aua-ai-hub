@@ -692,14 +692,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unyvnz/longcat_20_16t_48b_active_weights_are_now_open">longcat 2.0 (1.6T, ~48B active) weights are now open under MIT license</a>
-    <p class="news-card-summary">Longcat 2.0, a 48-billion-parameter open-weights model, is released under MIT license.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/Tl4T00m03mXi9dnysuPMT3ZoHlKwgeMAyvE7uTJqM4o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=13c43b98a88d05ab28ba5000aec6daa339a442bf" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to">I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads</a>
     <p class="news-card-summary">Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.</p>
   </div>
