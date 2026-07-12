@@ -13,11 +13,32 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>AI-assisted teaching continues to improve clinical training outcomes for radiology residents, especially when combined with expert-led instruction, outperforming standalone traditional or AI methods in diagnostic accuracy and clinical reasoning <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[2]</a>. Across dental education, literature reviews document expanding use of AI for teaching, assessment, and projecting academic performance, highlighting its growing relevance <a href="https://pubmed.ncbi.nlm.nih.gov/42435734?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[3]</a>. Integration of AI in objective structured clinical examinations is mapped through scoping reviews, demonstrating its role in evaluating clinical competence <a href="https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[5]</a>. Meanwhile, large language models used for grading high-stakes clinical exams display strong rank-order agreement but lack adequate calibration, reinforcing the need for human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[12]</a>. Medical student perspectives emphasize generative AI feasibility and utility but note AI cannot fully replace faculty <a href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">[9]</a>.</p>
+<p>A randomized controlled trial reports that combining artificial intelligence-assisted teaching with expert-led sessions significantly improves diagnostic performance and clinical reasoning for radiology residents, suggesting greater educational benefit than either approach alone <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[5]</a>. Comparative assessments highlight that large language model choice influences text quality and readability in tuberculosis Q&amp;A systems for health education <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[2]</a>, while performance in clinical exam grading is limited by poor calibration and inconsistent agreement, underscoring the continued need for human oversight in high-stakes assessment contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[15]</a>. Medical students in the UAE exhibit gaps in readiness and training for integrating artificial intelligence into clinical practice, with identified barriers to curriculum adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[1]</a>.</p>
 <p class="section-brief-date">The picture as of July 12, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Readiness and Knowledge of Medical Students and Staff in the UAE Toward the Integration of Artificial Intelligence in Medicine</a>
+    <p class="news-card-summary">Study examines medical students&#x27; and staff readiness to integrate artificial intelligence into clinical practice in the UAE, identifying training gaps and barriers to curriculum adoption.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Performance evaluation of five major large language models in tuberculosis Q&amp;A systems: A multidimensional assessment of readability, quality, and reliability</a>
+    <p class="news-card-summary">Comparative evaluation of five large language models for tuberculosis education shows model type significantly affects text quality and readability in AI-assisted health education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436873?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Agentic artificial intelligence in medicine and biomedical research: A primer and framework for clinicians and researchers</a>
+    <p class="news-card-summary">Primer and framework for clinicians and researchers on agentic artificial intelligence applications in medicine and biomedical research.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
@@ -100,27 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Agreement, calibration, and failure of three large language models as high-stakes multimodal ospe graders: a comparative psychometric analysis</a>
     <p class="news-card-summary">Large language models showed strong rank-order correlation but poor calibration and disagreement patterns in high-stakes clinical exam grading, requiring human oversight rather than autonomous deployment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421134?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Large language model based simplification of ophthalmological clinical and ancillary results for patient readability</a>
-    <p class="news-card-summary">Language models can simplify ophthalmology clinical reports for patients while preserving clinical accuracy when given specific prompts, though human review remains necessary.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Artificial intelligence literacy, rather than artificial intelligence anxiety, is associated with career optimism in physiotherapy and rehabilitation students: a cross-sectional study</a>
-    <p class="news-card-summary">Physiotherapy and rehabilitation students showed stronger career optimism linked to AI literacy than to AI anxiety, suggesting educational focus on competence over concern.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">Performance of next-generation AI chatbots in colorectal cancer knowledge assessment: a comparative pilot study of ChatGPT-5.1, Gemini-3Pro Preview, DeepSeek-V3.2, Kimi K2 Thinking, Qwen3-Max and Claude Opus 4.5</a>
-    <p class="news-card-summary">Comparative pilot study assessing six advanced AI chatbots on colorectal cancer knowledge, safety, and reasoning using multiple-choice questions.</p>
   </div>
 </div>
 </div>

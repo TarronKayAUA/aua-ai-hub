@@ -15207,6 +15207,77 @@
    "first_seen": "2026-07-12T10:02:41.516725+00:00",
    "kept": false,
    "reason": "vendor marketing and off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&ff=20260712095756&v=2.20.0",
+   "title_hash": "ace7fa7a77b6742f7895c5fefbc0e63d",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": true,
+   "title": "Readiness and Knowledge of Medical Students and Staff in the UAE Toward the Integration of Artificial Intelligence in Medicine",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-12T10:00:00+00:00",
+   "summary": "Study examines medical students' and staff readiness to integrate artificial intelligence into clinical practice in the UAE, identifying training gaps and barriers to curriculum adoption.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&ff=20260712095756&v=2.20.0",
+   "title_hash": "ccc3b57e9fdde7c7755330e15b962f1c",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": true,
+   "title": "Performance evaluation of five major large language models in tuberculosis Q&A systems: A multidimensional assessment of readability, quality, and reliability",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-12T10:00:00+00:00",
+   "summary": "Comparative evaluation of five large language models for tuberculosis education shows model type significantly affects text quality and readability in AI-assisted health education.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42436873?fc=20260609215449&ff=20260712095756&v=2.20.0",
+   "title_hash": "ae50fd96d02a6257310d01b6784231e7",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": true,
+   "title": "Agentic artificial intelligence in medicine and biomedical research: A primer and framework for clinicians and researchers",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-12T10:00:00+00:00",
+   "summary": "Primer and framework for clinicians and researchers on agentic artificial intelligence applications in medicine and biomedical research.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42436605?fc=20260609215449&ff=20260712095756&v=2.20.0",
+   "title_hash": "a1373e5d73ea13cdc7e403f919f08f56",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": false,
+   "reason": "narrow clinical application, not primarily about AI education or broader deployment"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uu15mz/chinas_deepseek_developing_its_own_ai_chip",
+   "title_hash": "c43b9eec43c726afc746ebc88a8d0850",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": false,
+   "reason": "rumor and industry gossip without primary source confirmation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1usy9ie/tencenthy3_is_the_real_deal_on_128gb",
+   "title_hash": "e91209856a9c037e91c7480441f08b76",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": false,
+   "reason": "personal blog post / forum discussion without substantive news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SVAwzodyFUo",
+   "title_hash": "03fd428e9bf992854e0db6262803babe",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Help-People-Thrive-with-AI-e3lvj3p",
+   "title_hash": "6a09e35a500eefade7588f66fa257403",
+   "first_seen": "2026-07-12T13:57:56.077500+00:00",
+   "kept": false,
+   "reason": "daily news show recap with no specific development or interview subject named"
   }
  ],
  "digests": [
@@ -15336,8 +15407,8 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "AI-assisted teaching continues to improve clinical training outcomes for radiology residents, especially when combined with expert-led instruction, outperforming standalone traditional or AI methods in diagnostic accuracy and clinical reasoning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0\">[2]</a>. Across dental education, literature reviews document expanding use of AI for teaching, assessment, and projecting academic performance, highlighting its growing relevance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42435734?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0\">[3]</a>. Integration of AI in objective structured clinical examinations is mapped through scoping reviews, demonstrating its role in evaluating clinical competence <a href=\"https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0\">[5]</a>. Meanwhile, large language models used for grading high-stakes clinical exams display strong rank-order agreement but lack adequate calibration, reinforcing the need for human oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[12]</a>. Medical student perspectives emphasize generative AI feasibility and utility but note AI cannot fully replace faculty <a href=\"https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0\">[9]</a>.",
-   "hash": "ae0f3008c75270ff",
+   "text": "A randomized controlled trial reports that combining artificial intelligence-assisted teaching with expert-led sessions significantly improves diagnostic performance and clinical reasoning for radiology residents, suggesting greater educational benefit than either approach alone <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0\">[5]</a>. Comparative assessments highlight that large language model choice influences text quality and readability in tuberculosis Q&amp;A systems for health education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0\">[2]</a>, while performance in clinical exam grading is limited by poor calibration and inconsistent agreement, underscoring the continued need for human oversight in high-stakes assessment contexts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[15]</a>. Medical students in the UAE exhibit gaps in readiness and training for integrating artificial intelligence into clinical practice, with identified barriers to curriculum adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0\">[1]</a>.",
+   "hash": "7b239a50489f76b6",
    "date": "July 12, 2026"
   },
   "clinical_practice": {
