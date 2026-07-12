@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models and generative AI tools are beginning to perform comparably to healthcare providers in specific training assessments such as neonatal resuscitation, prompting further evaluation of their integration into medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42428008?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[4]</a>. Despite their growing feasibility and practical acceptance among students, these technologies are not positioned to replace human teachers and still require oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[8]</a>. AI literacy is emerging as a critical factor in promoting career optimism among physiotherapy and rehabilitation students, highlighting the importance of educational strategies that focus on building competence with AI rather than emphasizing anxiety <a href="https://pubmed.ncbi.nlm.nih.gov/42421004?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[10]</a>. AI also offers opportunities for curriculum review, supporting nursing education with automated content screening while maintaining a need for human judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42424114?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">[13]</a>.</p>
-<p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the items below.</p>
+<p>AI-assisted teaching continues to improve clinical training outcomes for radiology residents, especially when combined with expert-led instruction, outperforming standalone traditional or AI methods in diagnostic accuracy and clinical reasoning <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[2]</a>. Across dental education, literature reviews document expanding use of AI for teaching, assessment, and projecting academic performance, highlighting its growing relevance <a href="https://pubmed.ncbi.nlm.nih.gov/42435734?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[3]</a>. Integration of AI in objective structured clinical examinations is mapped through scoping reviews, demonstrating its role in evaluating clinical competence <a href="https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[5]</a>. Meanwhile, large language models used for grading high-stakes clinical exams display strong rank-order agreement but lack adequate calibration, reinforcing the need for human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[12]</a>. Medical student perspectives emphasize generative AI feasibility and utility but note AI cannot fully replace faculty <a href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 12, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -23,6 +23,34 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&amp;ff=20260711095618&amp;v=2.20.0">Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives</a>
     <p class="news-card-summary">Machine learning and deep learning show promise for improving airway assessment accuracy in anesthesia beyond conventional subjective tools.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Application Effectiveness Analysis of Artificial Intelligence-assisted Teaching in Standardized Training for Medical Imaging Residents</a>
+    <p class="news-card-summary">Randomized controlled trial shows AI-assisted teaching combined with expert-led sessions improves radiology residents&#x27; diagnostic performance and clinical reasoning more than either method alone.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42435734?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Artificial Intelligence in Dental Education: Overview of Teaching, Assessment and Academic Performance Prediction</a>
+    <p class="news-card-summary">Literature overview of artificial intelligence applications in dental education, examining impact on teaching, assessment, and prediction of academic performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42435465?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Aspects of the use of artificial intelligence in medical education: Results of a cross-sectional survey conducted at Bogomolets national medical university</a>
+    <p class="news-card-summary">Cross-sectional survey at a Ukrainian medical university documents normalization of AI in academic practice as cognitive extension while identifying risks of reduced autonomy and ethical challenges.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Mapping artificial intelligence integration in objective structured clinical examinations: A scoping review</a>
+    <p class="news-card-summary">Scoping review mapping artificial intelligence applications in objective structured clinical examinations for assessment of clinical competence.</p>
   </div>
 </div>
 <div class="news-card">
@@ -93,34 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42423944?fc=20260609215449&amp;ff=20260709170800&amp;v=2.20.0">Performance of next-generation AI chatbots in colorectal cancer knowledge assessment: a comparative pilot study of ChatGPT-5.1, Gemini-3Pro Preview, DeepSeek-V3.2, Kimi K2 Thinking, Qwen3-Max and Claude Opus 4.5</a>
     <p class="news-card-summary">Comparative pilot study assessing six advanced AI chatbots on colorectal cancer knowledge, safety, and reasoning using multiple-choice questions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42424554?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Entering the era of photorealistic AI-generated medical images</a>
-    <p class="news-card-summary">AI-generated medical images now approach photorealistic quality, enabling customizable teaching materials for visual specialties while raising concerns about hallucinations and distinguishing real from synthetic images.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42424114?fc=20260609215449&amp;ff=20260710072857&amp;v=2.20.0">Artificial Intelligence Enhanced Content Review for Curriculum Evaluation in Nursing Education: A Pilot Study</a>
-    <p class="news-card-summary">Retrieval-augmented generation language model system shows promising reliability for automated nursing curriculum screening as an assistive tool alongside human judgment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42417731?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">Prompt engineering in medical education. Dissecting the new technological frontier in Digestive Surgery</a>
-    <p class="news-card-summary">Peer-reviewed editorial on prompt engineering techniques for generative AI in surgical education, structured around context, request, persona, and format.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42417702?fc=20260609215449&amp;ff=20260708135626&amp;v=2.20.0">Fostering Metacognition in Anatomy Education Through Game-Based Learning and a Context-Aware AI Assistant</a>
-    <p class="news-card-summary">Peer-reviewed study of mobile application combining game-based learning with context-aware AI and retrieval-augmented generation for anatomy education.</p>
   </div>
 </div>
 </div>
