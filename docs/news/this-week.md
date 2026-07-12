@@ -280,11 +280,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A peer-reviewed study demonstrates passive early screening for Alzheimer’s disease and related dementias through machine learning analysis of comorbidity patterns within electronic health records, which may inform intervention decisions in clinical practice <a href="https://www.nature.com/articles/s41746-026-02954-2">[1]</a>. Another key study argues for embedding transparency and interpretability into artificial intelligence models in clinical trial infrastructure to help prevent amplification of health disparities and ensure equitable evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[3]</a>. Research further investigates the performance and real-world integration of AI medical scribes by evaluating over 236,000 generated notes across various care levels in a European health system <a href="https://medinform.jmir.org/2026/1/e90052">[4]</a>. Finally, a scoping review highlights the use of natural language processing on psychiatric clinical notes, supporting earlier identification of illness and personalized treatment planning <a href="https://medinform.jmir.org/2026/1/e91249">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 11, 2026; numbered links go to the source items.</p>
+<p>Automated detection and passive screening are advancing in clinical practice, with machine learning enabling identification of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease <a href="https://www.nature.com/articles/s41746-026-02646-x">[3]</a> and supporting early Alzheimer’s disease screening through electronic health record comorbidity patterns <a href="https://www.nature.com/articles/s41746-026-02954-2">[2]</a>. Efforts to align vision-language AI frameworks with clinician workflows are increasing, as shown in models for stepwise interpretation of fundus fluorescein angiography images <a href="https://www.nature.com/articles/s41746-026-02932-8">[1]</a>. The importance of transparent and interpretable AI models persists as a prerequisite for equity in clinical trials to ensure evidence generation does not amplify existing health disparities <a href="https://www.nature.com/articles/s41746-026-02987-7">[4]</a>. Neuroimaging initiatives such as NeuroVFM leverage routine health system scans to improve diagnosis, report generation, and triage with safety advantages <a href="https://www.nature.com/articles/s41591-026-04497-1">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 12, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02932-8">A clinician aligned vision language framework for stepwise interpretation in fundus fluorescein angiography</a>
+    <p class="news-card-summary">Researchers developed a vision-language AI framework aligned with clinician workflows for interpreting fundus fluorescein angiography images step-by-step.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>

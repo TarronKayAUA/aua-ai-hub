@@ -15278,6 +15278,25 @@
    "first_seen": "2026-07-12T13:57:56.077500+00:00",
    "kept": false,
    "reason": "daily news show recap with no specific development or interview subject named"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02932-8",
+   "title_hash": "b62249ead6f91ac60d86151ad5b07561",
+   "first_seen": "2026-07-12T17:19:59.339557+00:00",
+   "kept": true,
+   "title": "A clinician aligned vision language framework for stepwise interpretation in fundus fluorescein angiography",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-12T00:00:00+00:00",
+   "summary": "Researchers developed a vision-language AI framework aligned with clinician workflows for interpreting fundus fluorescein angiography images step-by-step.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Ae9q7KsRbuI",
+   "title_hash": "2c89090999a5ce3e78c2a2a3d9add14e",
+   "first_seen": "2026-07-12T17:19:59.339557+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
   }
  ],
  "digests": [
@@ -15412,9 +15431,9 @@
    "date": "July 12, 2026"
   },
   "clinical_practice": {
-   "text": "A peer-reviewed study demonstrates passive early screening for Alzheimer’s disease and related dementias through machine learning analysis of comorbidity patterns within electronic health records, which may inform intervention decisions in clinical practice <a href=\"https://www.nature.com/articles/s41746-026-02954-2\">[1]</a>. Another key study argues for embedding transparency and interpretability into artificial intelligence models in clinical trial infrastructure to help prevent amplification of health disparities and ensure equitable evidence generation <a href=\"https://www.nature.com/articles/s41746-026-02987-7\">[3]</a>. Research further investigates the performance and real-world integration of AI medical scribes by evaluating over 236,000 generated notes across various care levels in a European health system <a href=\"https://medinform.jmir.org/2026/1/e90052\">[4]</a>. Finally, a scoping review highlights the use of natural language processing on psychiatric clinical notes, supporting earlier identification of illness and personalized treatment planning <a href=\"https://medinform.jmir.org/2026/1/e91249\">[5]</a>.",
-   "hash": "95a35e5c82857565",
-   "date": "July 11, 2026"
+   "text": "Automated detection and passive screening are advancing in clinical practice, with machine learning enabling identification of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease <a href=\"https://www.nature.com/articles/s41746-026-02646-x\">[3]</a> and supporting early Alzheimer’s disease screening through electronic health record comorbidity patterns <a href=\"https://www.nature.com/articles/s41746-026-02954-2\">[2]</a>. Efforts to align vision-language AI frameworks with clinician workflows are increasing, as shown in models for stepwise interpretation of fundus fluorescein angiography images <a href=\"https://www.nature.com/articles/s41746-026-02932-8\">[1]</a>. The importance of transparent and interpretable AI models persists as a prerequisite for equity in clinical trials to ensure evidence generation does not amplify existing health disparities <a href=\"https://www.nature.com/articles/s41746-026-02987-7\">[4]</a>. Neuroimaging initiatives such as NeuroVFM leverage routine health system scans to improve diagnosis, report generation, and triage with safety advantages <a href=\"https://www.nature.com/articles/s41591-026-04497-1\">[9]</a>.",
+   "hash": "c4287345d9daaf44",
+   "date": "July 12, 2026"
   },
   "general_ai": {
    "text": "OpenAI has upgraded ChatGPT with a new voice mode model and enabled task delegation to GPT-4o, which expands the system’s capacity for handling web search and complex reasoning tasks <a href=\"https://simonwillison.net/2026/Jul/8/introducing-gptlive\">[7]</a>. The PLURAL dataset introduces a globally representative survey of value preferences across 92 countries, aiming to improve how large language models address diverse value systems <a href=\"https://arxiv.org/abs/2607.08034\">[3]</a>. Retrieval-augmented generation methods are being used to reduce hallucinations and keep responses grounded in current public health guidance, increasing reliability for health-related applications <a href=\"https://arxiv.org/abs/2607.06641\">[6]</a>. Meanwhile, security research highlights that widely used AI tools are susceptible to abuse for assembling botnets if their answer generation practices are exploited <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[10]</a>.",
