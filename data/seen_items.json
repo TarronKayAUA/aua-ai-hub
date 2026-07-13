@@ -15860,6 +15860,178 @@
    "first_seen": "2026-07-13T19:41:50.574988+00:00",
    "kept": false,
    "reason": "litigation gossip without substantive AI development or policy impact"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uvlwz0/this_is_why_we_need_local_models_and_opensource",
+   "title_hash": "eb5de954211684803a10601cebaf1fa1",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": false,
+   "reason": "forum discussion without substantive news or analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1qXnLiSxFgs",
+   "title_hash": "a02d86f5c30f77a853bb4822e75b1866",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": false,
+   "reason": "closing remarks only, no substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=q0PRCtu_eOs",
+   "title_hash": "b35757911ba399006412c966feb37837",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T20:08:52+00:00",
+   "summary": "Panel discussion on balancing publication-focused versus patient-outcome-focused applications of AI in pediatric medicine.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WiK924ZLarE",
+   "title_hash": "9905d9c03e5cda1ae617590870b8bee9",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T20:07:29+00:00",
+   "summary": "Lightning talks on AI applications in pediatric radiology and diagnostic imaging, with emphasis on sharper image analysis and clinical insights.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=yEXbXbESX4w",
+   "title_hash": "0da75cd302670fe6de97560b5eb06df2",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T20:06:22+00:00",
+   "summary": "Lightning talks on adapting and validating AI models specifically for pediatric clinical use, addressing safety and efficacy considerations.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=IbJFb6Q2GD0",
+   "title_hash": "11a0edaa6a4abd3683d6088d410adb4a",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T20:04:24+00:00",
+   "summary": "Discussion of pediatric data fragmentation challenges and strategies for organizing data infrastructure to support pediatric AI development.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7nwO85lEYFw",
+   "title_hash": "9e9a4093e133b5f73f2777576d8e1255",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T20:02:22+00:00",
+   "summary": "Keynote on the long history and current trajectory of AI adoption in pediatric medicine, featuring practitioners from academia and digital health.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Hq2XKbjF-MI",
+   "title_hash": "d04b9ef17dee5d44176203e1f7e9cdf8",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": false,
+   "reason": "opening remarks only, no substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=OLXgupmDtfE",
+   "title_hash": "d3bf0ac6cc387691b4f60df9d2bf822b",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": false,
+   "reason": "closing remarks only, no substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=m1nAWwAL4FI",
+   "title_hash": "413db3acc250d0b60b80f0017ed54e49",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T19:55:38+00:00",
+   "summary": "Panel on regulatory pathways, risk assessment, and organizational decision-making in deploying health AI systems in clinical practice.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/m1nAWwAL4FI/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VamomgkqsuE",
+   "title_hash": "32a9f73779616bd7a17249f00acb7d9b",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T19:55:35+00:00",
+   "summary": "Panel on building and scaling AI products for healthcare markets, covering economic, operational, and regulatory challenges in practice.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i3.ytimg.com/vi/VamomgkqsuE/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zrM2gAjXLx8",
+   "title_hash": "230362dbbddddaab6b4496f187c25f5e",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T19:55:31+00:00",
+   "summary": "Real-world examples of AI systems integrated into clinical workflows, with focus on human-AI interaction design and clinical acceptance drivers.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i3.ytimg.com/vi/zrM2gAjXLx8/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qS4rKbAkI7U",
+   "title_hash": "c47017923fbee803865acbfbb4d79dfb",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "Data as the Foundation for Clinical AI | AIMI Symposium 2026 #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T19:55:27+00:00",
+   "summary": "Overview of AIMI's vision for building large-scale, AI-ready clinical data infrastructure to support development and deployment of health AI.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/qS4rKbAkI7U/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=HglH-xztThA",
+   "title_hash": "498f3ce4347b53c983650bc28272ade6",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": false,
+   "reason": "generic session title without specific substantive content identifiable from summary"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=c2ifjyHDFJ8",
+   "title_hash": "4951a9290034c85c5b959ad7b4c5b44e",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": true,
+   "title": "The Art of Artificial Reasoning with Yejin Choi | AIMI Symposium 2026 #AIMI26",
+   "source": "Stanford AIMI",
+   "published": "2026-07-13T19:55:21+00:00",
+   "summary": "Keynote on artificial reasoning in AI systems and implications for clinical intelligence, featuring computer scientist Yejin Choi.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/c2ifjyHDFJ8/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zZe06LHD2zE",
+   "title_hash": "0283a3bcd9d3cd423738258dc0dabd0b",
+   "first_seen": "2026-07-13T21:13:55.262399+00:00",
+   "kept": false,
+   "reason": "opening remarks only, no substantive content"
   }
  ],
  "digests": [
