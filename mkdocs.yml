@@ -96,6 +96,7 @@ nav:
   - Use AI:
       - tools/index.md
       - AI Agents: tools/agents.md
+      - Choosing Your Interface: tools/interfaces.md
       - Running Models Locally: tools/local.md
       - Hardware for Local AI: tools/hardware.md
       - AI for Research: tools/research.md
