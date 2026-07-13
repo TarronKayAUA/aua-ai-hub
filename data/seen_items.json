@@ -15853,6 +15853,13 @@
    "first_seen": "2026-07-13T19:04:39.625558+00:00",
    "kept": false,
    "reason": "opinion piece with no new information; speculation about legal and market dynamics without substantive reporting"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets",
+   "title_hash": "cf167ac1346b1a438ad68a979ae7f26c",
+   "first_seen": "2026-07-13T19:41:50.574988+00:00",
+   "kept": false,
+   "reason": "litigation gossip without substantive AI development or policy impact"
   }
  ],
  "digests": [
