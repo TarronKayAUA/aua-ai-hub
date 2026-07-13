@@ -52,7 +52,7 @@ For the full picture (what tokens per second feels like, why video memory beats 
 ## The simple path: a local chat assistant
 
 1. **Install a runner.** [LM Studio](https://lmstudio.ai) is the easiest start: a desktop application where you browse models, click download, and chat, no command line involved. [Ollama](https://ollama.com) is the command-line equivalent, and pairs with [Open WebUI](https://openwebui.com) if you want a browser chat interface on top. All three are free and listed in the [directory](index.md).
-2. **Pick a small model first.** Start with something in the 4 billion parameter class (a small Gemma or Qwen variant), confirm it runs smoothly, then work upward to the largest model your memory allows. The [open-weights section](index.md#open-weights-models) lists the major families; both runners show curated, ready-to-download versions of all of them.
+2. **Pick a small model first.** Start with something in the 4 billion parameter class (a small Gemma or Qwen variant), confirm it runs smoothly, then work upward to the largest model your memory allows. The [open-weights section](index.md#open-weights-models) lists the major families, the [Benchmarks page](../benchmarks.md) tracks how they currently rank, and both runners show curated, ready-to-download versions of all of them.
 3. **Calibrate expectations.** Replies stream more slowly than cloud assistants, knowledge cutoffs are real, and there is no web search unless you add one. Treat outputs with the same verification habits as any other model, per the [misconceptions page](../basics/misconceptions.md).
 
 ## Beyond chat: images, video, and voice
