@@ -11,11 +11,46 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A multidimensional evaluation shows that the choice of large language model substantially affects the readability and quality of tuberculosis-related educational text, emphasizing the importance of model selection for AI-assisted health training <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[2]</a>. Further, prompt framing and requirements for evidence-citing in dental education directly influence model responses, with more rigorous evidence demands increasing factual citations and shaping the pedagogical approach <a href="https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0">[4]</a>. Simulation and asynchronous video integration in surgical suturing training highlights advancements in practical skill acquisition for medical students <a href="https://mededu.jmir.org/2026/1/e90563">[14]</a>. A randomized controlled trial in radiology suggests combining AI-assisted teaching with expert-led sessions can improve diagnostic accuracy and clinical reasoning in resident education <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[6]</a>.</p>
+<p>Research demonstrates that generative AI can reliably score open-ended question assessments in undergraduate medical education, supporting its potential to streamline evaluation processes <a href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[4]</a>. The development and validation of a generative AI tool also assist educators in classifying assessment items by Bloom&#x27;s Taxonomy level, highlighting AI&#x27;s role in enhancing assessment validity <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[1]</a>. Meanwhile, medical students report varied experiences and expectations regarding the integration of large language models into education, suggesting a need for careful implementation that addresses student concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[3]</a>. As medical educators adapt to generative AI, qualitative findings reveal shifting perceptions of professional roles and underscore evolving responsibilities in this technological context <a href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[2]</a>. A practical guide provides evidence-informed tips for responsible AI use, emphasizing safeguards in course design <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Improving Medical Assessment Validity with Generative AI: Lessons from Human-AI Interaction in Bloom&#x27;s Taxonomy Classification</a>
+    <p class="news-card-summary">Research develops and validates a generative AI tool to help educators classify assessment items by Bloom&#x27;s Taxonomy level.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Expanding the Roles of Medical Educators in the Generative Artificial Intelligence Era: A Qualitative Study</a>
+    <p class="news-card-summary">Qualitative study explores how medical educators perceive their professional roles evolving in response to generative AI integration.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">A Student-Centered Approach Towards Implementing Large Language Models (LLMs) in Medical Education</a>
+    <p class="news-card-summary">Study examines medical students&#x27; self-reported experiences with large language models and expectations for their integration into education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Can Generative Artificial Intelligence Reliably Score Open-Ended Question Assessments in Undergraduate Medical Education?</a>
+    <p class="news-card-summary">Study evaluates whether generative AI can accurately score open-ended question assessments in undergraduate medical education.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Eleven Tips for Designing and Implementing Responsible AI Use in Health Professions Education Courses</a>
+    <p class="news-card-summary">Practical guide offers eleven evidence-informed tips for educators designing and implementing responsible AI use in health professions courses.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>

@@ -15591,6 +15591,108 @@
    "first_seen": "2026-07-13T07:41:25.463487+00:00",
    "kept": false,
    "reason": "title is drama-framed and speculative; content appears to be reaction and rumor coverage rather than substantive explanation or announcement"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42439001?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "83429b34bd9546f909ff2c0b111a3059",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": false,
+   "reason": "model performance benchmark of limited scope; repeats well-known capability assessment pattern"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "5918cb74702da3b2c88125d0cd83e1ac",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": true,
+   "title": "Improving Medical Assessment Validity with Generative AI: Lessons from Human-AI Interaction in Bloom's Taxonomy Classification",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-13T10:00:00+00:00",
+   "summary": "Research develops and validates a generative AI tool to help educators classify assessment items by Bloom's Taxonomy level.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438554?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "19b15b0f8cc951538f9c48844d8035e5",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": false,
+   "reason": "narrow application study; teaches specific subject matter rather than advancing AI in medical education broadly"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "3e19d3adba7340ddb9e6473c72d4f083",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": true,
+   "title": "Expanding the Roles of Medical Educators in the Generative Artificial Intelligence Era: A Qualitative Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-13T10:00:00+00:00",
+   "summary": "Qualitative study explores how medical educators perceive their professional roles evolving in response to generative AI integration.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "55feecdccdd2911b1995ae7af04cc8d5",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": true,
+   "title": "A Student-Centered Approach Towards Implementing Large Language Models (LLMs) in Medical Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-13T10:00:00+00:00",
+   "summary": "Study examines medical students' self-reported experiences with large language models and expectations for their integration into education.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438523?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "df1dbbcd770572cf95ffab8a6ef5d3ff",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": false,
+   "reason": "describes specific tool implementation rather than peer-reviewed finding on AI in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "0ec56134b9109fee1ab98760ab04a5eb",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": true,
+   "title": "Can Generative Artificial Intelligence Reliably Score Open-Ended Question Assessments in Undergraduate Medical Education?",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-13T10:00:00+00:00",
+   "summary": "Study evaluates whether generative AI can accurately score open-ended question assessments in undergraduate medical education.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "b8d4e10cbab23a85cfff24515bb40e31",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": true,
+   "title": "Eleven Tips for Designing and Implementing Responsible AI Use in Health Professions Education Courses",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-13T10:00:00+00:00",
+   "summary": "Practical guide offers eleven evidence-informed tips for educators designing and implementing responsible AI use in health professions courses.",
+   "category": "medical_education",
+   "score": 4.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42438379?fc=20260609215449&ff=20260713073036&v=2.20.0",
+   "title_hash": "6d97a65f02531abbd38eefeba9f0987e",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": false,
+   "reason": "off-topic; basic virology research unrelated to AI"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04518-z",
+   "title_hash": "96786b30366237210ecf3be8c4545503",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": false,
+   "reason": "off-topic; clinical oncology trial unrelated to AI"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=oanQrXEiCy4",
+   "title_hash": "a83c2ff3673eac1b276e05379f33c882",
+   "first_seen": "2026-07-13T11:30:34.261957+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
   }
  ],
  "digests": [
@@ -15720,8 +15822,8 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A multidimensional evaluation shows that the choice of large language model substantially affects the readability and quality of tuberculosis-related educational text, emphasizing the importance of model selection for AI-assisted health training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0\">[2]</a>. Further, prompt framing and requirements for evidence-citing in dental education directly influence model responses, with more rigorous evidence demands increasing factual citations and shaping the pedagogical approach <a href=\"https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0\">[4]</a>. Simulation and asynchronous video integration in surgical suturing training highlights advancements in practical skill acquisition for medical students <a href=\"https://mededu.jmir.org/2026/1/e90563\">[14]</a>. A randomized controlled trial in radiology suggests combining AI-assisted teaching with expert-led sessions can improve diagnostic accuracy and clinical reasoning in resident education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0\">[6]</a>.",
-   "hash": "4e4b5f9326e91006",
+   "text": "Research demonstrates that generative AI can reliably score open-ended question assessments in undergraduate medical education, supporting its potential to streamline evaluation processes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[4]</a>. The development and validation of a generative AI tool also assist educators in classifying assessment items by Bloom&#x27;s Taxonomy level, highlighting AI&#x27;s role in enhancing assessment validity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[1]</a>. Meanwhile, medical students report varied experiences and expectations regarding the integration of large language models into education, suggesting a need for careful implementation that addresses student concerns <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[3]</a>. As medical educators adapt to generative AI, qualitative findings reveal shifting perceptions of professional roles and underscore evolving responsibilities in this technological context <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[2]</a>. A practical guide provides evidence-informed tips for responsible AI use, emphasizing safeguards in course design <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[5]</a>.",
+   "hash": "956541bc221341ef",
    "date": "July 13, 2026"
   },
   "clinical_practice": {
