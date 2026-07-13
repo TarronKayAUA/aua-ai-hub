@@ -54,6 +54,10 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "chore(news): refresh $(date -u +%F)"
+            # A human push can land between this run's checkout and its
+            # push (it did on 2026-07-13, failing the run); rebase first,
+            # matching the three watch workflows.
+            git pull --rebase origin main
             git push
           else
             echo "No content changes; skipping commit."
