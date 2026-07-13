@@ -76,3 +76,17 @@
   support: "Organizer-stated: US$50,000 in cash prizes, US$20,000+ in hardware, compute for qualifying teams, and an investor showcase at the New York Stock Exchange"
   relevance: Open-source agentic AI across ten tracks including healthcare; 21-day remote build sprint July 17 to August 7, winners announced September 1. Applications extended past the original July 3 cutoff and reviewed on a rolling basis.
   verified: 2026-07-06
+
+# Auto-verified 2026-07-13 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: OpenAI Build Week
+  url: https://openai.devpost.com/
+  organizer: OpenAI
+  type: hackathon
+  format: virtual
+  eligibility: Individuals above legal age of majority in eligible countries/territories
+  deadline: 2026-07-21
+  start_date: 2026-07-13
+  end_date: 2026-07-21
+  support: "Organizer-stated: $100,000 in total cash prizes, Dev Day/Exchange passes, Pro Account for 1 year, promotion by OpenAI Developers, meeting with the Codex Team"
+  relevance: Major AI model provider hackathon with substantial prizes, online format open to international participants, and relevant ML/AI focus for medical students and faculty.
+  verified: 2026-07-13
