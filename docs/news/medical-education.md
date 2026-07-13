@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A randomized controlled trial reports that combining artificial intelligence-assisted teaching with expert-led sessions significantly improves diagnostic performance and clinical reasoning for radiology residents, suggesting greater educational benefit than either approach alone <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[5]</a>. Comparative assessments highlight that large language model choice influences text quality and readability in tuberculosis Q&amp;A systems for health education <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[2]</a>, while performance in clinical exam grading is limited by poor calibration and inconsistent agreement, underscoring the continued need for human oversight in high-stakes assessment contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[15]</a>. Medical students in the UAE exhibit gaps in readiness and training for integrating artificial intelligence into clinical practice, with identified barriers to curriculum adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 12, 2026; numbered links go to the items below.</p>
+<p>A multidimensional evaluation shows that the choice of large language model substantially affects the readability and quality of tuberculosis-related educational text, emphasizing the importance of model selection for AI-assisted health training <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[2]</a>. Further, prompt framing and requirements for evidence-citing in dental education directly influence model responses, with more rigorous evidence demands increasing factual citations and shaping the pedagogical approach <a href="https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0">[4]</a>. Simulation and asynchronous video integration in surgical suturing training highlights advancements in practical skill acquisition for medical students <a href="https://mededu.jmir.org/2026/1/e90563">[14]</a>. A randomized controlled trial in radiology suggests combining AI-assisted teaching with expert-led sessions can improve diagnostic accuracy and clinical reasoning in resident education <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
@@ -37,6 +37,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436873?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Agentic artificial intelligence in medicine and biomedical research: A primer and framework for clinicians and researchers</a>
     <p class="news-card-summary">Primer and framework for clinicians and researchers on agentic artificial intelligence applications in medicine and biomedical research.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0">Prompt Framing and Evidence Requirements for AI-Generated Educational Responses in Dental Education: An Experimental Study</a>
+    <p class="news-card-summary">Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.</p>
   </div>
 </div>
 <div class="news-card">
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Performance stability despite iteration: evaluating DeepSeek and ChatGPT on Chinese medical licensing examinations</a>
     <p class="news-card-summary">DeepSeek-V3.2 outperformed ChatGPT on the 2025 Chinese National Medical Licensing Examination, though iterative updates to both models did not produce significant gains on the 2024 exam.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">Agreement, calibration, and failure of three large language models as high-stakes multimodal ospe graders: a comparative psychometric analysis</a>
-    <p class="news-card-summary">Large language models showed strong rank-order correlation but poor calibration and disagreement patterns in high-stakes clinical exam grading, requiring human oversight rather than autonomous deployment.</p>
   </div>
 </div>
 </div>

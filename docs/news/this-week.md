@@ -11,8 +11,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A randomized controlled trial reports that combining artificial intelligence-assisted teaching with expert-led sessions significantly improves diagnostic performance and clinical reasoning for radiology residents, suggesting greater educational benefit than either approach alone <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[5]</a>. Comparative assessments highlight that large language model choice influences text quality and readability in tuberculosis Q&amp;A systems for health education <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[2]</a>, while performance in clinical exam grading is limited by poor calibration and inconsistent agreement, underscoring the continued need for human oversight in high-stakes assessment contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0">[15]</a>. Medical students in the UAE exhibit gaps in readiness and training for integrating artificial intelligence into clinical practice, with identified barriers to curriculum adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[1]</a>.</p>
-<p class="section-brief-date">The picture as of July 12, 2026; numbered links go to the source items.</p>
+<p>A multidimensional evaluation shows that the choice of large language model substantially affects the readability and quality of tuberculosis-related educational text, emphasizing the importance of model selection for AI-assisted health training <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[2]</a>. Further, prompt framing and requirements for evidence-citing in dental education directly influence model responses, with more rigorous evidence demands increasing factual citations and shaping the pedagogical approach <a href="https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0">[4]</a>. Simulation and asynchronous video integration in surgical suturing training highlights advancements in practical skill acquisition for medical students <a href="https://mededu.jmir.org/2026/1/e90563">[14]</a>. A randomized controlled trial in radiology suggests combining AI-assisted teaching with expert-led sessions can improve diagnostic accuracy and clinical reasoning in resident education <a href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
@@ -35,6 +35,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436873?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Agentic artificial intelligence in medicine and biomedical research: A primer and framework for clinicians and researchers</a>
     <p class="news-card-summary">Primer and framework for clinicians and researchers on agentic artificial intelligence applications in medicine and biomedical research.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0">Prompt Framing and Evidence Requirements for AI-Generated Educational Responses in Dental Education: An Experimental Study</a>
+    <p class="news-card-summary">Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.</p>
   </div>
 </div>
 <div class="news-card">
@@ -280,11 +287,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Automated detection and passive screening are advancing in clinical practice, with machine learning enabling identification of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease <a href="https://www.nature.com/articles/s41746-026-02646-x">[3]</a> and supporting early Alzheimer’s disease screening through electronic health record comorbidity patterns <a href="https://www.nature.com/articles/s41746-026-02954-2">[2]</a>. Efforts to align vision-language AI frameworks with clinician workflows are increasing, as shown in models for stepwise interpretation of fundus fluorescein angiography images <a href="https://www.nature.com/articles/s41746-026-02932-8">[1]</a>. The importance of transparent and interpretable AI models persists as a prerequisite for equity in clinical trials to ensure evidence generation does not amplify existing health disparities <a href="https://www.nature.com/articles/s41746-026-02987-7">[4]</a>. Neuroimaging initiatives such as NeuroVFM leverage routine health system scans to improve diagnosis, report generation, and triage with safety advantages <a href="https://www.nature.com/articles/s41591-026-04497-1">[9]</a>.</p>
-<p class="section-brief-date">The picture as of July 12, 2026; numbered links go to the source items.</p>
+<p>Entity attribution failures found in some clinical retrieval-augmented generation systems underscore the risks of inaccurate evidence mapping, even when models pass standard evaluation processes <a href="https://arxiv.org/abs/2607.09349">[1]</a>. Passive early screening for Alzheimer&#x27;s disease and related dementias using electronic health record comorbidity patterns demonstrates how machine learning can identify patients before clinical symptoms emerge <a href="https://www.nature.com/articles/s41746-026-02954-2">[3]</a>. Meanwhile, transparent and interpretable artificial intelligence models are considered necessary for equitable clinical trial design, aiming to prevent exacerbating health disparities in evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[5]</a>. Studies also examine artificial intelligence&#x27;s integration into primary care workflows, highlighting support for clinical, administrative, and communication tasks with an eye toward practical implementation for physicians <a href="https://medinform.jmir.org/2026/1/e91652">[8]</a>.</p>
+<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09349">Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation</a>
+    <p class="news-card-summary">Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 12, 2026</span></div>
@@ -536,11 +550,39 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI has upgraded ChatGPT with a new voice mode model and enabled task delegation to GPT-4o, which expands the system’s capacity for handling web search and complex reasoning tasks <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[7]</a>. The PLURAL dataset introduces a globally representative survey of value preferences across 92 countries, aiming to improve how large language models address diverse value systems <a href="https://arxiv.org/abs/2607.08034">[3]</a>. Retrieval-augmented generation methods are being used to reduce hallucinations and keep responses grounded in current public health guidance, increasing reliability for health-related applications <a href="https://arxiv.org/abs/2607.06641">[6]</a>. Meanwhile, security research highlights that widely used AI tools are susceptible to abuse for assembling botnets if their answer generation practices are exploited <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[10]</a>.</p>
-<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the source items.</p>
+<p>Open-source foundation models are advancing with the release of Soofi S 30B-A3B, which offers efficient long-context processing for both German and English using a Mixture-of-Experts hybrid architecture built on Mamba-Transformer technology <a href="https://arxiv.org/abs/2607.09424">[3]</a>. Meanwhile, progress in benchmarking long-context reasoning is being made through WILDTRACE, a new evaluation framework for language models that integrates evidence from distant passages in documents <a href="https://arxiv.org/abs/2607.09328">[1]</a>. Security research points out a vulnerability in widely-used AI tools, showing they can be exploited for assembling botnets by leveraging their capability to generate plausible answers to unknown prompts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[14]</a>. In public health, retrieval-augmented generation methods are helping reduce hallucinations by grounding responses in updated guidance documents <a href="https://arxiv.org/abs/2607.06641">[10]</a>.</p>
+<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09328">WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning</a>
+    <p class="news-card-summary">WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09415">Self-Guided Test-Time Training for Long-Context LLMs</a>
+    <p class="news-card-summary">Self-guided test-time training method improves long-context language model performance by helping models better identify and use relevant evidence from long inputs.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09424">A Sovereign, Open-Source Foundation Model for German and English</a>
+    <p class="news-card-summary">Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.08780">Sticky Routing: Training MoE Models for Memory-Efficient Inference</a>
+    <p class="news-card-summary">Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 10, 2026</span></div>

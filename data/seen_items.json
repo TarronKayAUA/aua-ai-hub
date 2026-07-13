@@ -15311,6 +15311,253 @@
    "first_seen": "2026-07-12T21:08:26.734935+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08775",
+   "title_hash": "70905b17a8d4b6edd28a298689131b04",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "incremental fine-tuning study"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09053",
+   "title_hash": "f7c7f2cee5fa9a4e31c3c33285a3e216",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09092",
+   "title_hash": "09084636527042346c39b9055384cade",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09094",
+   "title_hash": "d1d504ce67e9bc55037e1b64a56f42b8",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09121",
+   "title_hash": "100d8b2dfedbdda794e6da89db0d1e7e",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09204",
+   "title_hash": "13864fcd1131d59bde0cff5fd44cf1ea",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "incremental fine-tuning study"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09291",
+   "title_hash": "ee473d3482ea076dc0e9f25f009b16de",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09306",
+   "title_hash": "6edf408ea2e9f49ded2c6871bbbb7fc4",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09316",
+   "title_hash": "2c8da4e95a0e34692fea88b6bec400c8",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09324",
+   "title_hash": "f735b825f16577cac2f48b0b3fa1a1f7",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09328",
+   "title_hash": "06a431185cf5960c93bacfa4ea412f69",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": true,
+   "title": "WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-13T04:00:00+00:00",
+   "summary": "WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09338",
+   "title_hash": "55dfa88032a9ace69fae10a3ee5b9561",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09348",
+   "title_hash": "c446cc45459ca5c58912fa5eb50779a6",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09349",
+   "title_hash": "3079ee7ddddb2e718132138bbeb51c32",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": true,
+   "title": "Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-13T04:00:00+00:00",
+   "summary": "Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09415",
+   "title_hash": "5a0096b75e7aeeb45ff4af55df959e91",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": true,
+   "title": "Self-Guided Test-Time Training for Long-Context LLMs",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-13T04:00:00+00:00",
+   "summary": "Self-guided test-time training method improves long-context language model performance by helping models better identify and use relevant evidence from long inputs.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09424",
+   "title_hash": "c74ad58db4f4547d32a693e05ccd5ebc",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": true,
+   "title": "A Sovereign, Open-Source Foundation Model for German and English",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-13T04:00:00+00:00",
+   "summary": "Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09438",
+   "title_hash": "faf27d9753b8703236495fbb3a3f1ead",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09501",
+   "title_hash": "4113ba7d36ba50929943e62c4e7eff03",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09530",
+   "title_hash": "7073fb0184c9e755c0a5e1caa3ef8ff1",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09576",
+   "title_hash": "dbfe82b43aef774f944f322766017430",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09598",
+   "title_hash": "ab0d6b4409cd2f5b41ca7ca01c75a5e2",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09611",
+   "title_hash": "90b14c90bb02f5b4fbd0d78f6ed2ffb3",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09623",
+   "title_hash": "ed23ad1db7bde9da1d9c6a0ef1f13a41",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08776",
+   "title_hash": "9e8e3c7595592f546c7b2b72bb11486a",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.08780",
+   "title_hash": "ca1652fdf41d8b7567955f49672d0c77",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": true,
+   "title": "Sticky Routing: Training MoE Models for Memory-Efficient Inference",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-13T04:00:00+00:00",
+   "summary": "Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.",
+   "category": "general_ai",
+   "score": 2.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals",
+   "title_hash": "88bf1a108db19c0dca0fbce6aa482069",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/12/shot-scraper",
+   "title_hash": "322dd3cd4d953387a75cb886ede542f9",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uus189/apple_sues_openai_alleging_trade_secret_theft",
+   "title_hash": "9264842534a185c418a04cd31b36cb08",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "rumor and gossip"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/12/bump",
+   "title_hash": "f5d320325e4756716259f08ef7d5badf",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/12/sqlite-utils",
+   "title_hash": "312303a0c31b038fb161f2e02cd969bf",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&ff=20260713000220&v=2.20.0",
+   "title_hash": "4f796645bc609f7c15f2e6d9b61c95e1",
+   "first_seen": "2026-07-13T04:02:15.848752+00:00",
+   "kept": true,
+   "title": "Prompt Framing and Evidence Requirements for AI-Generated Educational Responses in Dental Education: An Experimental Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-12T10:00:00+00:00",
+   "summary": "Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.",
+   "category": "medical_education",
+   "score": 3.0
   }
  ],
  "digests": [
@@ -15440,19 +15687,19 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A randomized controlled trial reports that combining artificial intelligence-assisted teaching with expert-led sessions significantly improves diagnostic performance and clinical reasoning for radiology residents, suggesting greater educational benefit than either approach alone <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0\">[5]</a>. Comparative assessments highlight that large language model choice influences text quality and readability in tuberculosis Q&amp;A systems for health education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0\">[2]</a>, while performance in clinical exam grading is limited by poor calibration and inconsistent agreement, underscoring the continued need for human oversight in high-stakes assessment contexts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42421433?fc=20260609215449&amp;ff=20260709101140&amp;v=2.20.0\">[15]</a>. Medical students in the UAE exhibit gaps in readiness and training for integrating artificial intelligence into clinical practice, with identified barriers to curriculum adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0\">[1]</a>.",
-   "hash": "7b239a50489f76b6",
-   "date": "July 12, 2026"
+   "text": "A multidimensional evaluation shows that the choice of large language model substantially affects the readability and quality of tuberculosis-related educational text, emphasizing the importance of model selection for AI-assisted health training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0\">[2]</a>. Further, prompt framing and requirements for evidence-citing in dental education directly influence model responses, with more rigorous evidence demands increasing factual citations and shaping the pedagogical approach <a href=\"https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0\">[4]</a>. Simulation and asynchronous video integration in surgical suturing training highlights advancements in practical skill acquisition for medical students <a href=\"https://mededu.jmir.org/2026/1/e90563\">[14]</a>. A randomized controlled trial in radiology suggests combining AI-assisted teaching with expert-led sessions can improve diagnostic accuracy and clinical reasoning in resident education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0\">[6]</a>.",
+   "hash": "4e4b5f9326e91006",
+   "date": "July 13, 2026"
   },
   "clinical_practice": {
-   "text": "Automated detection and passive screening are advancing in clinical practice, with machine learning enabling identification of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease <a href=\"https://www.nature.com/articles/s41746-026-02646-x\">[3]</a> and supporting early Alzheimer’s disease screening through electronic health record comorbidity patterns <a href=\"https://www.nature.com/articles/s41746-026-02954-2\">[2]</a>. Efforts to align vision-language AI frameworks with clinician workflows are increasing, as shown in models for stepwise interpretation of fundus fluorescein angiography images <a href=\"https://www.nature.com/articles/s41746-026-02932-8\">[1]</a>. The importance of transparent and interpretable AI models persists as a prerequisite for equity in clinical trials to ensure evidence generation does not amplify existing health disparities <a href=\"https://www.nature.com/articles/s41746-026-02987-7\">[4]</a>. Neuroimaging initiatives such as NeuroVFM leverage routine health system scans to improve diagnosis, report generation, and triage with safety advantages <a href=\"https://www.nature.com/articles/s41591-026-04497-1\">[9]</a>.",
-   "hash": "c4287345d9daaf44",
-   "date": "July 12, 2026"
+   "text": "Entity attribution failures found in some clinical retrieval-augmented generation systems underscore the risks of inaccurate evidence mapping, even when models pass standard evaluation processes <a href=\"https://arxiv.org/abs/2607.09349\">[1]</a>. Passive early screening for Alzheimer&#x27;s disease and related dementias using electronic health record comorbidity patterns demonstrates how machine learning can identify patients before clinical symptoms emerge <a href=\"https://www.nature.com/articles/s41746-026-02954-2\">[3]</a>. Meanwhile, transparent and interpretable artificial intelligence models are considered necessary for equitable clinical trial design, aiming to prevent exacerbating health disparities in evidence generation <a href=\"https://www.nature.com/articles/s41746-026-02987-7\">[5]</a>. Studies also examine artificial intelligence&#x27;s integration into primary care workflows, highlighting support for clinical, administrative, and communication tasks with an eye toward practical implementation for physicians <a href=\"https://medinform.jmir.org/2026/1/e91652\">[8]</a>.",
+   "hash": "7b45ec4eb43344e4",
+   "date": "July 13, 2026"
   },
   "general_ai": {
-   "text": "OpenAI has upgraded ChatGPT with a new voice mode model and enabled task delegation to GPT-4o, which expands the system’s capacity for handling web search and complex reasoning tasks <a href=\"https://simonwillison.net/2026/Jul/8/introducing-gptlive\">[7]</a>. The PLURAL dataset introduces a globally representative survey of value preferences across 92 countries, aiming to improve how large language models address diverse value systems <a href=\"https://arxiv.org/abs/2607.08034\">[3]</a>. Retrieval-augmented generation methods are being used to reduce hallucinations and keep responses grounded in current public health guidance, increasing reliability for health-related applications <a href=\"https://arxiv.org/abs/2607.06641\">[6]</a>. Meanwhile, security research highlights that widely used AI tools are susceptible to abuse for assembling botnets if their answer generation practices are exploited <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[10]</a>.",
-   "hash": "977422ea99ff559c",
-   "date": "July 10, 2026"
+   "text": "Open-source foundation models are advancing with the release of Soofi S 30B-A3B, which offers efficient long-context processing for both German and English using a Mixture-of-Experts hybrid architecture built on Mamba-Transformer technology <a href=\"https://arxiv.org/abs/2607.09424\">[3]</a>. Meanwhile, progress in benchmarking long-context reasoning is being made through WILDTRACE, a new evaluation framework for language models that integrates evidence from distant passages in documents <a href=\"https://arxiv.org/abs/2607.09328\">[1]</a>. Security research points out a vulnerability in widely-used AI tools, showing they can be exploited for assembling botnets by leveraging their capability to generate plausible answers to unknown prompts <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[14]</a>. In public health, retrieval-augmented generation methods are helping reduce hallucinations by grounding responses in updated guidance documents <a href=\"https://arxiv.org/abs/2607.06641\">[10]</a>.",
+   "hash": "f144b76792cea7a6",
+   "date": "July 13, 2026"
   }
  },
  "opportunity_snapshot": {

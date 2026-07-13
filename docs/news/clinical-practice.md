@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Automated detection and passive screening are advancing in clinical practice, with machine learning enabling identification of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease <a href="https://www.nature.com/articles/s41746-026-02646-x">[3]</a> and supporting early Alzheimer’s disease screening through electronic health record comorbidity patterns <a href="https://www.nature.com/articles/s41746-026-02954-2">[2]</a>. Efforts to align vision-language AI frameworks with clinician workflows are increasing, as shown in models for stepwise interpretation of fundus fluorescein angiography images <a href="https://www.nature.com/articles/s41746-026-02932-8">[1]</a>. The importance of transparent and interpretable AI models persists as a prerequisite for equity in clinical trials to ensure evidence generation does not amplify existing health disparities <a href="https://www.nature.com/articles/s41746-026-02987-7">[4]</a>. Neuroimaging initiatives such as NeuroVFM leverage routine health system scans to improve diagnosis, report generation, and triage with safety advantages <a href="https://www.nature.com/articles/s41591-026-04497-1">[9]</a>.</p>
-<p class="section-brief-date">The picture as of July 12, 2026; numbered links go to the items below.</p>
+<p>Entity attribution failures found in some clinical retrieval-augmented generation systems underscore the risks of inaccurate evidence mapping, even when models pass standard evaluation processes <a href="https://arxiv.org/abs/2607.09349">[1]</a>. Passive early screening for Alzheimer&#x27;s disease and related dementias using electronic health record comorbidity patterns demonstrates how machine learning can identify patients before clinical symptoms emerge <a href="https://www.nature.com/articles/s41746-026-02954-2">[3]</a>. Meanwhile, transparent and interpretable artificial intelligence models are considered necessary for equitable clinical trial design, aiming to prevent exacerbating health disparities in evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[5]</a>. Studies also examine artificial intelligence&#x27;s integration into primary care workflows, highlighting support for clinical, administrative, and communication tasks with an eye toward practical implementation for physicians <a href="https://medinform.jmir.org/2026/1/e91652">[8]</a>.</p>
+<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09349">Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation</a>
+    <p class="news-card-summary">Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 12, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03002-9">Psychometric characterization of human and artificial intelligence performance on cardiology residency in-service examination items</a>
     <p class="news-card-summary">Study characterizes psychometric performance of artificial intelligence and human physicians on cardiology residency examination items.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02989-5">Real-time anatomy recognition in laparoscopic liver resection using video segmentation AI model</a>
-    <p class="news-card-summary">Published study describes video segmentation artificial intelligence model for real-time anatomy recognition during laparoscopic liver resection.</p>
   </div>
 </div>
 </div>

@@ -13,11 +13,39 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI has upgraded ChatGPT with a new voice mode model and enabled task delegation to GPT-4o, which expands the system’s capacity for handling web search and complex reasoning tasks <a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">[7]</a>. The PLURAL dataset introduces a globally representative survey of value preferences across 92 countries, aiming to improve how large language models address diverse value systems <a href="https://arxiv.org/abs/2607.08034">[3]</a>. Retrieval-augmented generation methods are being used to reduce hallucinations and keep responses grounded in current public health guidance, increasing reliability for health-related applications <a href="https://arxiv.org/abs/2607.06641">[6]</a>. Meanwhile, security research highlights that widely used AI tools are susceptible to abuse for assembling botnets if their answer generation practices are exploited <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[10]</a>.</p>
-<p class="section-brief-date">The picture as of July 10, 2026; numbered links go to the items below.</p>
+<p>Open-source foundation models are advancing with the release of Soofi S 30B-A3B, which offers efficient long-context processing for both German and English using a Mixture-of-Experts hybrid architecture built on Mamba-Transformer technology <a href="https://arxiv.org/abs/2607.09424">[3]</a>. Meanwhile, progress in benchmarking long-context reasoning is being made through WILDTRACE, a new evaluation framework for language models that integrates evidence from distant passages in documents <a href="https://arxiv.org/abs/2607.09328">[1]</a>. Security research points out a vulnerability in widely-used AI tools, showing they can be exploited for assembling botnets by leveraging their capability to generate plausible answers to unknown prompts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[14]</a>. In public health, retrieval-augmented generation methods are helping reduce hallucinations by grounding responses in updated guidance documents <a href="https://arxiv.org/abs/2607.06641">[10]</a>.</p>
+<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09328">WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning</a>
+    <p class="news-card-summary">WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09415">Self-Guided Test-Time Training for Long-Context LLMs</a>
+    <p class="news-card-summary">Self-guided test-time training method improves long-context language model performance by helping models better identify and use relevant evidence from long inputs.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09424">A Sovereign, Open-Source Foundation Model for German and English</a>
+    <p class="news-card-summary">Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.08780">Sticky Routing: Training MoE Models for Memory-Efficient Inference</a>
+    <p class="news-card-summary">Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 10, 2026</span></div>
@@ -98,34 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Security research demonstrates that popular AI tools can be weaponized to assemble botnets by exploiting models&#x27; tendency to generate plausible answers to unknown queries.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/rogue-ai-agent-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.05399">Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving</a>
-    <p class="news-card-summary">Benchmark compares key-value cache compression techniques across models and tasks to address long-context serving bottlenecks in large language model inference.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.05722">Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding</a>
-    <p class="news-card-summary">NVIDIA introduces Nemotron-Labs-Diffusion, which unifies autoregressive, diffusion, and speculative decoding in a single model architecture for flexible deployment.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1upsdmi/nvidianvidianemotronlabs3puzzle75ba9bbf16_hugging">nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 · Hugging Face</a>
-    <p class="news-card-summary">NVIDIA releases Nemotron-Labs-3-Puzzle-75B, an open-weights 75-billion-parameter model optimized for inference efficiency using post-training compression.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/9KNaWiT3A0U4xGNY8hRs0D9rkm6EHuN3dalCNZwcLHU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b0d143bd966f1a0a0f333cc427e60fa7f9d18c15" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.02770">Gemma 4 Technical Report</a>
-    <p class="news-card-summary">Google released Gemma 4, a new generation of open-weights language models with improved capabilities.</p>
-  </div>
 </div>
 </div>
