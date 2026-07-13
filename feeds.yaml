@@ -329,7 +329,11 @@ digest:
 benchmarks:
   livebench:
     base_url: https://livebench.ai
-    fallback_version: "2026_01_08"
+    # Last resort only: discovery probes the site's own release list and
+    # normally never falls back. Bump this when touching the file anyway
+    # (a stale pin served a January table for weeks in July 2026 after
+    # the site's bundle format changed and old discovery failed quietly).
+    fallback_version: "2026_06_25"
     rows: 15
 
 # Curated YouTube channels for the Videos page. Feed URLs derive from

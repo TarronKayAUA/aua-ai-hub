@@ -852,8 +852,16 @@ def update_committee_updates(config: dict, now: datetime, dry_run: bool,
 
 
 def _livebench_discover_version(base_url: str, timeout: int) -> str | None:
-    """Find the current LiveBench release id by reading the site's app bundle.
-    Returns the underscored form used in data file names, or None."""
+    """Find the newest LiveBench release id. The site's app bundle stopped
+    labeling releases with a "LiveBench-" prefix at some point before
+    2026-07-13, which made the old regex return None and left the table on
+    the pinned fallback for weeks (owner-reported: no Fable 5, no GPT-5.6).
+    Discovery now treats every date-like token in the bundle as a candidate
+    and probes table_{date}.csv newest-first; the newest candidate whose
+    table actually exists is the release, so a future bundle restructuring
+    can only make discovery fail loudly, never pick a wrong-but-plausible
+    version. Returns the underscored form used in data file names, or
+    None."""
     headers = {"User-Agent": USER_AGENT}
     page = requests.get(base_url + "/", headers=headers, timeout=timeout)
     page.raise_for_status()
@@ -863,10 +871,18 @@ def _livebench_discover_version(base_url: str, timeout: int) -> str | None:
     bundle_url = base_url + bundle_match.group(1).lstrip(".")
     bundle = requests.get(bundle_url, headers=headers, timeout=timeout)
     bundle.raise_for_status()
-    version_match = re.search(r"LiveBench-(\d{4}-\d{2}-\d{2})", bundle.text)
-    if not version_match:
-        return None
-    return version_match.group(1).replace("-", "_")
+    candidates = sorted(set(re.findall(r"\d{4}-\d{2}-\d{2}", bundle.text)),
+                        reverse=True)
+    for candidate in candidates[:8]:
+        version = candidate.replace("-", "_")
+        try:
+            probe = requests.head(f"{base_url}/table_{version}.csv",
+                                  headers=headers, timeout=timeout)
+        except requests.RequestException:
+            continue
+        if probe.status_code == 200:
+            return version
+    return None
 
 
 def update_livebench(config: dict, now: datetime, dry_run: bool,
