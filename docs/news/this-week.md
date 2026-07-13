@@ -550,7 +550,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Open-source foundation models are advancing with the release of Soofi S 30B-A3B, which offers efficient long-context processing for both German and English using a Mixture-of-Experts hybrid architecture built on Mamba-Transformer technology <a href="https://arxiv.org/abs/2607.09424">[3]</a>. Meanwhile, progress in benchmarking long-context reasoning is being made through WILDTRACE, a new evaluation framework for language models that integrates evidence from distant passages in documents <a href="https://arxiv.org/abs/2607.09328">[1]</a>. Security research points out a vulnerability in widely-used AI tools, showing they can be exploited for assembling botnets by leveraging their capability to generate plausible answers to unknown prompts <a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">[14]</a>. In public health, retrieval-augmented generation methods are helping reduce hallucinations by grounding responses in updated guidance documents <a href="https://arxiv.org/abs/2607.06641">[10]</a>.</p>
+<p>Advances in long-context processing continue to shape language model development, with the Soofi S 30B-A3B open-source Mixture-of-Experts hybrid model offering efficient handling of extended inputs in both German and English through its Mamba-Transformer architecture <a href="https://arxiv.org/abs/2607.09424">[3]</a>. Complementing these capabilities, recent benchmarks and training methods-such as WILDTRACE&#x27;s evaluation of evidence integration skills <a href="https://arxiv.org/abs/2607.09328">[1]</a> and self-guided test-time training strategies-support improved performance in extracting relevant information from lengthy sources <a href="https://arxiv.org/abs/2607.09415">[2]</a>. Additionally, approaches like Sticky Routing enable more memory-efficient inference for Mixture-of-Experts models, making such architectures practical for edge devices <a href="https://arxiv.org/abs/2607.08780">[4]</a>. Efforts to mitigate inaccuracies are evident in retrieval-augmented generation techniques targeting public health question answering by rooting output in maintained reference documents <a href="https://arxiv.org/abs/2607.06641">[10]</a>.</p>
 <p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -581,6 +581,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.08780">Sticky Routing: Training MoE Models for Memory-Efficient Inference</a>
     <p class="news-card-summary">Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uu8d1v/xiaomi_quietly_uploaded_mimov25dflash_official">Xiaomi quietly uploaded MiMo-V2.5-DFlash, official DFlash weights are now on Hugging Face</a>
+    <p class="news-card-summary">Xiaomi released open-weight MiMo-V2.5-DFlash model on Hugging Face, a 300-billion-parameter model optimized for local inference on consumer hardware.</p>
   </div>
 </div>
 <div class="news-card">

@@ -15558,6 +15558,39 @@
    "summary": "Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.",
    "category": "medical_education",
    "score": 3.0
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42437956?fc=20260609215449&ff=20260713034129&v=2.20.0",
+   "title_hash": "b83d19f00ae5fd3381f47832a8a40bc8",
+   "first_seen": "2026-07-13T07:41:25.463487+00:00",
+   "kept": false,
+   "reason": "narrow domain application; incremental machine learning study on public health topic without broader significance for medical AI educators"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uu8d1v/xiaomi_quietly_uploaded_mimov25dflash_official",
+   "title_hash": "0761677fefd9512ab260773e78639b2c",
+   "first_seen": "2026-07-13T07:41:25.463487+00:00",
+   "kept": true,
+   "title": "Xiaomi quietly uploaded MiMo-V2.5-DFlash, official DFlash weights are now on Hugging Face",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-12T07:11:43+00:00",
+   "summary": "Xiaomi released open-weight MiMo-V2.5-DFlash model on Hugging Face, a 300-billion-parameter model optimized for local inference on consumer hardware.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uu32z6/interactive_jacobianlens_visualizer_and_live",
+   "title_hash": "6eea385342ae7f09279936512c4d437f",
+   "first_seen": "2026-07-13T07:41:25.463487+00:00",
+   "kept": false,
+   "reason": "minor tool release; niche developer tooling without broad significance for medical educators"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=LgGJz528Boo",
+   "title_hash": "0234461b4ea8bbb7fa59ffdf26c7ad15",
+   "first_seen": "2026-07-13T07:41:25.463487+00:00",
+   "kept": false,
+   "reason": "title is drama-framed and speculative; content appears to be reaction and rumor coverage rather than substantive explanation or announcement"
   }
  ],
  "digests": [
@@ -15697,8 +15730,8 @@
    "date": "July 13, 2026"
   },
   "general_ai": {
-   "text": "Open-source foundation models are advancing with the release of Soofi S 30B-A3B, which offers efficient long-context processing for both German and English using a Mixture-of-Experts hybrid architecture built on Mamba-Transformer technology <a href=\"https://arxiv.org/abs/2607.09424\">[3]</a>. Meanwhile, progress in benchmarking long-context reasoning is being made through WILDTRACE, a new evaluation framework for language models that integrates evidence from distant passages in documents <a href=\"https://arxiv.org/abs/2607.09328\">[1]</a>. Security research points out a vulnerability in widely-used AI tools, showing they can be exploited for assembling botnets by leveraging their capability to generate plausible answers to unknown prompts <a href=\"https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets\">[14]</a>. In public health, retrieval-augmented generation methods are helping reduce hallucinations by grounding responses in updated guidance documents <a href=\"https://arxiv.org/abs/2607.06641\">[10]</a>.",
-   "hash": "f144b76792cea7a6",
+   "text": "Advances in long-context processing continue to shape language model development, with the Soofi S 30B-A3B open-source Mixture-of-Experts hybrid model offering efficient handling of extended inputs in both German and English through its Mamba-Transformer architecture <a href=\"https://arxiv.org/abs/2607.09424\">[3]</a>. Complementing these capabilities, recent benchmarks and training methods-such as WILDTRACE&#x27;s evaluation of evidence integration skills <a href=\"https://arxiv.org/abs/2607.09328\">[1]</a> and self-guided test-time training strategies-support improved performance in extracting relevant information from lengthy sources <a href=\"https://arxiv.org/abs/2607.09415\">[2]</a>. Additionally, approaches like Sticky Routing enable more memory-efficient inference for Mixture-of-Experts models, making such architectures practical for edge devices <a href=\"https://arxiv.org/abs/2607.08780\">[4]</a>. Efforts to mitigate inaccuracies are evident in retrieval-augmented generation techniques targeting public health question answering by rooting output in maintained reference documents <a href=\"https://arxiv.org/abs/2607.06641\">[10]</a>.",
+   "hash": "772d73429b42011f",
    "date": "July 13, 2026"
   }
  },
