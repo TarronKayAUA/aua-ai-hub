@@ -34,6 +34,9 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 - **Research and literature work**: the [literature review playbook](playbooks/literature-reviews.md) walks the workflow from question to appraised evidence; the [AI for Research guide](tools/research.md) maps the licensed and free tools to each stage, Scopus first where it is strongest; and the [Research and Scholarship module](pathway/research.md) covers scholarly integrity, authorship, and disclosure.
 - **Reusable prompts**: the [prompt library](prompts/index.md) holds templates for teaching and administrative tasks, each carrying a Draft or Reviewed status.
 - **Choosing a tool for anything else**: the [tool directory](tools/index.md) is grouped by task, and every entry carries a governance status; statuses are provisional until the AI Committee ratifies them, and a listing is not an endorsement.
+- **Feedback on student writing**: the [writing feedback playbook](playbooks/writing-feedback.md) covers rubric-grounded formative feedback with the records rules built in; grades stay entirely human.
+- **Memos, minutes, and reports**: the [administrative drafting playbook](playbooks/admin-drafting.md) keeps every fact yours while the model does the arranging.
+- **Set it up once**: [Standing Setups](tools/standing-setups.md) shows how a project per course, with your syllabus and objectives attached, ends the re-explaining; [Your First Agent Session](tools/first-session.md) is the 20-minute walkthrough for file-based work.
 - **Getting better answers from any tool**: [Getting Better Answers](basics/better-answers.md) explains the three levers that decide output quality: context, memory, and standing instructions.
 
 ## Staying current

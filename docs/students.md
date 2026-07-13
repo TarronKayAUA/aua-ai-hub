@@ -31,7 +31,7 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 ## Studying with AI
 
 - The [Medical Learning tools](tools/index.md#medical-learning) in the directory are built for exactly this: practice questions, case practice, tutoring. Statuses there are provisional until the AI Committee ratifies them, and listings are not endorsements.
-- The [prompt library](prompts/index.md)'s National Board of Medical Examiners (NBME)-style question tutor was co-written with faculty and reviewed: a study mode that explains as you go, and an exam mode that drills first and debriefs after.
+- The [prompt library](prompts/index.md)'s National Board of Medical Examiners (NBME)-style question tutor was co-written with faculty and reviewed: a study mode that explains as you go, and an exam mode that drills first and debriefs after. Set it up once per course, with your lecture notes attached, using [Standing Setups](tools/standing-setups.md).
 - Practicing differentials against an AI case is legitimate and effective, with one discipline: a real encounter gets stripped to a teaching abstraction first (age band, presentation pattern, nothing identifiable). [Clinical Contexts](pathway/clinical.md) shows exactly where that line sits.
 - [Getting Better Answers](basics/better-answers.md) explains the three levers that decide answer quality: what goes into the context window, what persists as memory, and standing instructions. The token estimator there is worth two minutes of playing.
 - Fluency is not accuracy. The [misconceptions page](basics/misconceptions.md) covers how to calibrate trust by task, and it matters double for anything you might carry into an exam or a ward.

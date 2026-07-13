@@ -97,6 +97,8 @@ nav:
       - tools/index.md
       - AI Agents: tools/agents.md
       - Choosing Your Interface: tools/interfaces.md
+      - Standing Setups: tools/standing-setups.md
+      - Your First Agent Session: tools/first-session.md
       - Running Models Locally: tools/local.md
       - Hardware for Local AI: tools/hardware.md
       - AI for Research: tools/research.md
@@ -109,6 +111,8 @@ nav:
           - Writing Exam Questions: playbooks/exam-items.md
           - Syllabus AI Statement: playbooks/syllabus-statement.md
           - Reviewing the Literature: playbooks/literature-reviews.md
+          - Feedback on Student Writing: playbooks/writing-feedback.md
+          - Administrative Drafting: playbooks/admin-drafting.md
   - For Faculty & Staff: faculty.md
   - For Students: students.md
   - News & Events:
