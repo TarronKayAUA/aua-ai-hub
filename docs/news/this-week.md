@@ -278,27 +278,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Thematic Evolution in Medical Education Research (2000-2024): A Large-Scale BERTopic Analysis</a>
-    <p class="news-card-summary">Large-scale analysis of 24 years of medical education research reveals a gradual shift in emphasis toward technology and artificial intelligence topics.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42404183?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">Incorporating AI-Driven Vision Systems to Quantify Learning Curve in EVD Placement</a>
-    <p class="news-card-summary">Artificial intelligence vision system platform quantifies the learning curve for external ventricular drain placement in surgical training.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&amp;ff=20260706100904&amp;v=2.20.0">The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan</a>
-    <p class="news-card-summary">Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Ars Longa, Data Brevis: the science of disease and the art of care</a>
     <p class="news-card-summary">Peer-reviewed examination of how artificial intelligence has changed diagnostic and therapeutic approaches in modern medical practice and education.</p>
   </div>
@@ -322,16 +301,58 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Entity attribution failures found in some clinical retrieval-augmented generation systems underscore the risks of inaccurate evidence mapping, even when models pass standard evaluation processes <a href="https://arxiv.org/abs/2607.09349">[1]</a>. Passive early screening for Alzheimer&#x27;s disease and related dementias using electronic health record comorbidity patterns demonstrates how machine learning can identify patients before clinical symptoms emerge <a href="https://www.nature.com/articles/s41746-026-02954-2">[3]</a>. Meanwhile, transparent and interpretable artificial intelligence models are considered necessary for equitable clinical trial design, aiming to prevent exacerbating health disparities in evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[5]</a>. Studies also examine artificial intelligence&#x27;s integration into primary care workflows, highlighting support for clinical, administrative, and communication tasks with an eye toward practical implementation for physicians <a href="https://medinform.jmir.org/2026/1/e91652">[8]</a>.</p>
+<p>Entity attribution failures in clinical retrieval-augmented generation systems may lead to misattributing evidence to incorrect drugs or entities, despite passing automated evaluation checks <a href="https://arxiv.org/abs/2607.09349">[3]</a>. This issue intersects with ongoing efforts to deploy deep learning for rapid, point-of-care stroke type detection using portable radiofrequency brain scanners <a href="https://www.nature.com/articles/s41746-026-02996-6">[4]</a>, and the development of deep learning models for predicting circulatory and respiratory instability from high-resolution vital signs to aid expert judgment <a href="https://www.nature.com/articles/s41746-026-02993-9">[7]</a>. Studies are also evaluating how AI algorithms predicting incident atrial fibrillation influence clinical decisions and workflow <a href="https://www.nature.com/articles/s41746-026-02950-6">[6]</a>, while frameworks propose staged integration of humanoid robots in surgical settings to balance embodied AI capabilities with safety and established workflows <a href="https://www.nature.com/articles/s41746-026-02853-6">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e71219">AI as the Interpreter for Identifying Root Causes and Emotional Themes in Mental Health Narratives on Reddit Using AutoML and PaLM 2: Mixed Methods Study</a>
+    <p class="news-card-summary">Study applied automated machine learning and large language models to interpret mental health narratives from social media, testing whether AI can identify root causes and emotional themes with alignment to human judgment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90228">A Controlled Comparison of Human and AI-Assisted Automated Revision of Delphi Statements on RNA-Based Medicines: Parallel, 2-Arm Study</a>
+    <p class="news-card-summary">Study compared human experts and AI-assisted methods for revising Delphi consensus statements on RNA medicines, testing whether large language models with retrieval-augmented generation can accelerate expert consensus.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09349">Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation</a>
     <p class="news-card-summary">Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02996-6">Portable RF brain scanner enables stroke type detection using deep learning</a>
+    <p class="news-card-summary">Portable radiofrequency brain scanner using deep learning enables rapid stroke type detection at point of care.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02853-6">Humanoid robots in the operating room : a framework for staged integration of embodied AI in surgery</a>
+    <p class="news-card-summary">Framework proposes a staged integration approach for deploying humanoid robots in surgical settings, balancing embodied AI capabilities with safety and workflow constraints.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02950-6">Impact of an AI algorithm for multi-day prediction of incident atrial fibrillation on clinical decision-making: PROVISION-AF study</a>
+    <p class="news-card-summary">Study evaluated how an AI algorithm predicting incident atrial fibrillation over multiple days affects clinical decision-making and workflow in practice.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02993-9">Expert Augmented Prediction of Circulatory and Respiratory Instability from High Resolution Vital Signs</a>
+    <p class="news-card-summary">Study developed a deep learning model to predict circulatory and respiratory instability from high-resolution vital signs, augmenting expert clinical judgment.</p>
   </div>
 </div>
 <div class="news-card">
@@ -566,30 +587,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Study compares large language models to practicing clinicians on standardized psychopathological assessment tasks.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02915-9">Large language models are powerful electronic health record encoders</a>
-    <p class="news-card-summary">Peer-reviewed study demonstrates that large language models perform effectively as electronic health record encoders for clinical data extraction and processing.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02919-5">Bridging the gap from clinical to home ECG: quantifying and overcoming accuracy loss in AI-enabled single-lead ECG models</a>
-    <p class="news-card-summary">Study quantifies accuracy loss when single-lead ECG artificial intelligence models transition from clinical to home settings and proposes mitigation strategies.</p>
-  </div>
-</div>
 </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Advances in long-context processing continue to shape language model development, with the Soofi S 30B-A3B open-source Mixture-of-Experts hybrid model offering efficient handling of extended inputs in both German and English through its Mamba-Transformer architecture <a href="https://arxiv.org/abs/2607.09424">[3]</a>. Complementing these capabilities, recent benchmarks and training methods-such as WILDTRACE&#x27;s evaluation of evidence integration skills <a href="https://arxiv.org/abs/2607.09328">[1]</a> and self-guided test-time training strategies-support improved performance in extracting relevant information from lengthy sources <a href="https://arxiv.org/abs/2607.09415">[2]</a>. Additionally, approaches like Sticky Routing enable more memory-efficient inference for Mixture-of-Experts models, making such architectures practical for edge devices <a href="https://arxiv.org/abs/2607.08780">[4]</a>. Efforts to mitigate inaccuracies are evident in retrieval-augmented generation techniques targeting public health question answering by rooting output in maintained reference documents <a href="https://arxiv.org/abs/2607.06641">[10]</a>.</p>
+<p>Improvements in long-context reasoning for large language models are notable, with new self-guided test-time training methods allowing models to more reliably identify relevant evidence across lengthy inputs <a href="https://arxiv.org/abs/2607.09415">[3]</a>, while the WILDTRACE benchmark evaluates how effectively models integrate information from distant text passages <a href="https://arxiv.org/abs/2607.09328">[2]</a>. Efficient architectures such as the open-source Soofi S 30B-A3B model provide enhanced long-context processing for both German and English <a href="https://arxiv.org/abs/2607.09424">[4]</a>. Memory efficiency has advanced through Sticky Routing, a technique that optimizes Mixture-of-Experts models for edge device inference <a href="https://arxiv.org/abs/2607.08780">[5]</a>. Additionally, retrieval-augmented generation demonstrates ways to ground responses in maintained documents, reducing hallucinations in public health applications <a href="https://arxiv.org/abs/2607.06641">[11]</a>.</p>
 <p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models">Simulating everything, sort of: The promise and limits of world models</a>
+    <p class="news-card-summary">Ars Technica explains how world models work, their current capabilities, and open questions in the field.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>

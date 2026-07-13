@@ -15693,6 +15693,140 @@
    "first_seen": "2026-07-13T11:30:34.261957+00:00",
    "kept": false,
    "reason": "vendor marketing"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e71219",
+   "title_hash": "a8d1636bc57604abc1cff3beb6b24ea8",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": true,
+   "title": "AI as the Interpreter for Identifying Root Causes and Emotional Themes in Mental Health Narratives on Reddit Using AutoML and PaLM 2: Mixed Methods Study",
+   "source": "JMIR AI",
+   "published": "2026-07-13T18:00:22+00:00",
+   "summary": "Study applied automated machine learning and large language models to interpret mental health narratives from social media, testing whether AI can identify root causes and emotional themes with alignment to human judgment.",
+   "category": "clinical_practice",
+   "score": 2.0
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e70324",
+   "title_hash": "c110f94eca16510f401731d03c3d2dc9",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": false,
+   "reason": "no AI relevance; general medical education scoping review"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e90228",
+   "title_hash": "691765eb2238b181e57eef4235709367",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": true,
+   "title": "A Controlled Comparison of Human and AI-Assisted Automated Revision of Delphi Statements on RNA-Based Medicines: Parallel, 2-Arm Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-13T15:15:02+00:00",
+   "summary": "Study compared human experts and AI-assisted methods for revising Delphi consensus statements on RNA medicines, testing whether large language models with retrieval-augmented generation can accelerate expert consensus.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too",
+   "title_hash": "0b1d6f9df733e48393cb87d9aa69a515",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": false,
+   "reason": "narrow security technique; limited significance for medical educators"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uvbzul/apple_m7_ultra_chip_planned_with_up_to_15_tb_of",
+   "title_hash": "d349b0936837b5d911ddb78dfdb84268",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": false,
+   "reason": "hardware rumor without AI capability implications; forum post"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models",
+   "title_hash": "9c7f694946136e25a36736d335901432",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": true,
+   "title": "Simulating everything, sort of: The promise and limits of world models",
+   "source": "Ars Technica AI",
+   "published": "2026-07-13T11:00:51+00:00",
+   "summary": "Ars Technica explains how world models work, their current capabilities, and open questions in the field.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42440272?fc=20260609215449&ff=20260713141040&v=2.20.0",
+   "title_hash": "507e8993f057613221645b23c61f5da5",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": false,
+   "reason": "no AI focus; general literature review on clinical anatomy education innovation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02996-6",
+   "title_hash": "1182b7f6b5e3e150df6c51414aa3695b",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": true,
+   "title": "Portable RF brain scanner enables stroke type detection using deep learning",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-13T00:00:00+00:00",
+   "summary": "Portable radiofrequency brain scanner using deep learning enables rapid stroke type detection at point of care.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02853-6",
+   "title_hash": "9f69190b343dc9b4e8ce0e7d74bb9b3e",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": true,
+   "title": "Humanoid robots in the operating room : a framework for staged integration of embodied AI in surgery",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-13T00:00:00+00:00",
+   "summary": "Framework proposes a staged integration approach for deploying humanoid robots in surgical settings, balancing embodied AI capabilities with safety and workflow constraints.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02955-1",
+   "title_hash": "b705356f258289545fa90140a444c6ad",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": false,
+   "reason": "narrow domain application; incremental deep learning study on cancer immunotherapy"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02950-6",
+   "title_hash": "dc0b46dfadd37ef1bbfc093380c8e5af",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": true,
+   "title": "Impact of an AI algorithm for multi-day prediction of incident atrial fibrillation on clinical decision-making: PROVISION-AF study",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-13T00:00:00+00:00",
+   "summary": "Study evaluated how an AI algorithm predicting incident atrial fibrillation over multiple days affects clinical decision-making and workflow in practice.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02993-9",
+   "title_hash": "9278a739d5aab5845dae063d8a04feb1",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": true,
+   "title": "Expert Augmented Prediction of Circulatory and Respiratory Instability from High Resolution Vital Signs",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-13T00:00:00+00:00",
+   "summary": "Study developed a deep learning model to predict circulatory and respiratory instability from high-resolution vital signs, augmenting expert clinical judgment.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=_PeGsOQs1v8",
+   "title_hash": "9d0d7c3c755b44af4656e32c0e21f715",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": false,
+   "reason": "vendor marketing and product demonstration without significance for medical educators"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=q571PxpsdoA",
+   "title_hash": "7e466fa8b8d24b760c026f0815fe57ea",
+   "first_seen": "2026-07-13T18:10:39.927321+00:00",
+   "kept": false,
+   "reason": "vendor marketing; no educational or clinical relevance to this audience"
   }
  ],
  "digests": [
@@ -15827,13 +15961,13 @@
    "date": "July 13, 2026"
   },
   "clinical_practice": {
-   "text": "Entity attribution failures found in some clinical retrieval-augmented generation systems underscore the risks of inaccurate evidence mapping, even when models pass standard evaluation processes <a href=\"https://arxiv.org/abs/2607.09349\">[1]</a>. Passive early screening for Alzheimer&#x27;s disease and related dementias using electronic health record comorbidity patterns demonstrates how machine learning can identify patients before clinical symptoms emerge <a href=\"https://www.nature.com/articles/s41746-026-02954-2\">[3]</a>. Meanwhile, transparent and interpretable artificial intelligence models are considered necessary for equitable clinical trial design, aiming to prevent exacerbating health disparities in evidence generation <a href=\"https://www.nature.com/articles/s41746-026-02987-7\">[5]</a>. Studies also examine artificial intelligence&#x27;s integration into primary care workflows, highlighting support for clinical, administrative, and communication tasks with an eye toward practical implementation for physicians <a href=\"https://medinform.jmir.org/2026/1/e91652\">[8]</a>.",
-   "hash": "7b45ec4eb43344e4",
+   "text": "Entity attribution failures in clinical retrieval-augmented generation systems may lead to misattributing evidence to incorrect drugs or entities, despite passing automated evaluation checks <a href=\"https://arxiv.org/abs/2607.09349\">[3]</a>. This issue intersects with ongoing efforts to deploy deep learning for rapid, point-of-care stroke type detection using portable radiofrequency brain scanners <a href=\"https://www.nature.com/articles/s41746-026-02996-6\">[4]</a>, and the development of deep learning models for predicting circulatory and respiratory instability from high-resolution vital signs to aid expert judgment <a href=\"https://www.nature.com/articles/s41746-026-02993-9\">[7]</a>. Studies are also evaluating how AI algorithms predicting incident atrial fibrillation influence clinical decisions and workflow <a href=\"https://www.nature.com/articles/s41746-026-02950-6\">[6]</a>, while frameworks propose staged integration of humanoid robots in surgical settings to balance embodied AI capabilities with safety and established workflows <a href=\"https://www.nature.com/articles/s41746-026-02853-6\">[5]</a>.",
+   "hash": "f5b016a1d2d5ed8a",
    "date": "July 13, 2026"
   },
   "general_ai": {
-   "text": "Advances in long-context processing continue to shape language model development, with the Soofi S 30B-A3B open-source Mixture-of-Experts hybrid model offering efficient handling of extended inputs in both German and English through its Mamba-Transformer architecture <a href=\"https://arxiv.org/abs/2607.09424\">[3]</a>. Complementing these capabilities, recent benchmarks and training methods-such as WILDTRACE&#x27;s evaluation of evidence integration skills <a href=\"https://arxiv.org/abs/2607.09328\">[1]</a> and self-guided test-time training strategies-support improved performance in extracting relevant information from lengthy sources <a href=\"https://arxiv.org/abs/2607.09415\">[2]</a>. Additionally, approaches like Sticky Routing enable more memory-efficient inference for Mixture-of-Experts models, making such architectures practical for edge devices <a href=\"https://arxiv.org/abs/2607.08780\">[4]</a>. Efforts to mitigate inaccuracies are evident in retrieval-augmented generation techniques targeting public health question answering by rooting output in maintained reference documents <a href=\"https://arxiv.org/abs/2607.06641\">[10]</a>.",
-   "hash": "772d73429b42011f",
+   "text": "Improvements in long-context reasoning for large language models are notable, with new self-guided test-time training methods allowing models to more reliably identify relevant evidence across lengthy inputs <a href=\"https://arxiv.org/abs/2607.09415\">[3]</a>, while the WILDTRACE benchmark evaluates how effectively models integrate information from distant text passages <a href=\"https://arxiv.org/abs/2607.09328\">[2]</a>. Efficient architectures such as the open-source Soofi S 30B-A3B model provide enhanced long-context processing for both German and English <a href=\"https://arxiv.org/abs/2607.09424\">[4]</a>. Memory efficiency has advanced through Sticky Routing, a technique that optimizes Mixture-of-Experts models for edge device inference <a href=\"https://arxiv.org/abs/2607.08780\">[5]</a>. Additionally, retrieval-augmented generation demonstrates ways to ground responses in maintained documents, reducing hallucinations in public health applications <a href=\"https://arxiv.org/abs/2607.06641\">[11]</a>.",
+   "hash": "aaf38d00ee4063c0",
    "date": "July 13, 2026"
   }
  },

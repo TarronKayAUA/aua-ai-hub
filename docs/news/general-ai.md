@@ -13,11 +13,19 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Advances in long-context processing continue to shape language model development, with the Soofi S 30B-A3B open-source Mixture-of-Experts hybrid model offering efficient handling of extended inputs in both German and English through its Mamba-Transformer architecture <a href="https://arxiv.org/abs/2607.09424">[3]</a>. Complementing these capabilities, recent benchmarks and training methods-such as WILDTRACE&#x27;s evaluation of evidence integration skills <a href="https://arxiv.org/abs/2607.09328">[1]</a> and self-guided test-time training strategies-support improved performance in extracting relevant information from lengthy sources <a href="https://arxiv.org/abs/2607.09415">[2]</a>. Additionally, approaches like Sticky Routing enable more memory-efficient inference for Mixture-of-Experts models, making such architectures practical for edge devices <a href="https://arxiv.org/abs/2607.08780">[4]</a>. Efforts to mitigate inaccuracies are evident in retrieval-augmented generation techniques targeting public health question answering by rooting output in maintained reference documents <a href="https://arxiv.org/abs/2607.06641">[10]</a>.</p>
+<p>Improvements in long-context reasoning for large language models are notable, with new self-guided test-time training methods allowing models to more reliably identify relevant evidence across lengthy inputs <a href="https://arxiv.org/abs/2607.09415">[3]</a>, while the WILDTRACE benchmark evaluates how effectively models integrate information from distant text passages <a href="https://arxiv.org/abs/2607.09328">[2]</a>. Efficient architectures such as the open-source Soofi S 30B-A3B model provide enhanced long-context processing for both German and English <a href="https://arxiv.org/abs/2607.09424">[4]</a>. Memory efficiency has advanced through Sticky Routing, a technique that optimizes Mixture-of-Experts models for edge device inference <a href="https://arxiv.org/abs/2607.08780">[5]</a>. Additionally, retrieval-augmented generation demonstrates ways to ground responses in maintained documents, reducing hallucinations in public health applications <a href="https://arxiv.org/abs/2607.06641">[11]</a>.</p>
 <p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models">Simulating everything, sort of: The promise and limits of world models</a>
+    <p class="news-card-summary">Ars Technica explains how world models work, their current capabilities, and open questions in the field.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
@@ -117,13 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://microsoft.github.io/flint-chart">Show HN: Microsoft releases Flint, a visualization language for AI agents</a>
     <p class="news-card-summary">Microsoft released Flint, a visualization language designed to help AI agents generate reliable and detailed charts with explicit specifications rather than relying on system defaults.</p>
   </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://mistral.ai/news/robostral-navigate">Mistral&#x27;s Robostral Navigate: a state of the art robotics navigation model</a>
-    <p class="news-card-summary">Mistral released Robostral Navigate, a state-of-the-art model for robotics navigation tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://mistral.ai/cms-media/api/media/file/Robostral-navigate.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
