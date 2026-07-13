@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Entity attribution failures in clinical retrieval-augmented generation systems may lead to misattributing evidence to incorrect drugs or entities, despite passing automated evaluation checks <a href="https://arxiv.org/abs/2607.09349">[3]</a>. This issue intersects with ongoing efforts to deploy deep learning for rapid, point-of-care stroke type detection using portable radiofrequency brain scanners <a href="https://www.nature.com/articles/s41746-026-02996-6">[4]</a>, and the development of deep learning models for predicting circulatory and respiratory instability from high-resolution vital signs to aid expert judgment <a href="https://www.nature.com/articles/s41746-026-02993-9">[7]</a>. Studies are also evaluating how AI algorithms predicting incident atrial fibrillation influence clinical decisions and workflow <a href="https://www.nature.com/articles/s41746-026-02950-6">[6]</a>, while frameworks propose staged integration of humanoid robots in surgical settings to balance embodied AI capabilities with safety and established workflows <a href="https://www.nature.com/articles/s41746-026-02853-6">[5]</a>.</p>
+<p>Addressing risks in clinical AI deployment, one study highlights entity attribution failures in retrieval-augmented generation systems, where evidence is misattributed to incorrect drugs or clinical entities despite passing automated checks <a href="https://arxiv.org/abs/2607.09349">[4]</a>. Alongside this, researchers have compared human and AI-assisted methods for revising Delphi consensus statements, testing whether large language models with retrieval-augmented generation can speed expert agreement in specialized topics such as RNA-based medicines <a href="https://medinform.jmir.org/2026/1/e90228">[3]</a>. In practical application, a peer-reviewed analysis found that transparent, interpretable AI models in clinical trial infrastructure are a prerequisite for ensuring equity and preventing health disparities in evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[12]</a>. Portable deep learning-based radiofrequency scanners have further expanded rapid stroke type detection at the point of care <a href="https://www.nature.com/articles/s41746-026-02996-6">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78942">Design and Preliminary Testing of the CardioCare System in Health Checkup Centers: Implementation Report</a>
+    <p class="news-card-summary">CardioCare is a digital system combining cardiovascular disease risk prediction with personalized health management for screening programs in Chinese health checkup centers.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 13, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91652">Exploring the Role of Large Language Models in Primary Care: Qualitative Study of Physicians in the United States and the Netherlands</a>
     <p class="news-card-summary">Qualitative study explores how large language models can support primary care physicians with clinical, administrative, and communication tasks in their workflows.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">Artificial Intelligence for Cervical HPV Infection and Lesion Screening: A Cross-Sectional Analysis of Its Application Potential and Patient Satisfaction</a>
-    <p class="news-card-summary">Cross-sectional study finds patients support AI for cervical lesion screening efficiency and diagnosis but cite privacy, reliability, and trust concerns.</p>
   </div>
 </div>
 </div>
