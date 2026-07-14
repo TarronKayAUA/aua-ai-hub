@@ -62,4 +62,10 @@ Calibrate verification to stakes: a brainstorm needs a sniff test, a lecture sli
 ??? question "What does 'ask for reasoning you can check' buy you that a bare answer does not?"
     A verification surface. Steps, sources, and stated assumptions can each be checked independently, so errors surface before you rely on them. A bare answer offers nothing to inspect except your trust.
 
+## Going deeper
+
+- [Getting Better Answers](../basics/better-answers.md): the three levers behind everything here: context, memory, and standing instructions.
+- [Standing Setups](../tools/standing-setups.md): make good prompting permanent with a project per course or a folder brief.
+- [Prompt Library](../prompts/index.md): reusable templates with clear review statuses.
+
 **Next:** [Module 3: The Rules](rules.md)

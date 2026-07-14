@@ -27,7 +27,7 @@ One reliable place for the AUACOM community to learn how AI works, find the righ
 
     ---
 
-    A six-module AI literacy pathway, from how models work to clinical contexts, with self-checks. Plain language, no math.
+    A three-stage AI literacy pathway, from how models work to working with agents, with self-checks. Plain language, no math.
 
     [Start the pathway](pathway/index.md)
 

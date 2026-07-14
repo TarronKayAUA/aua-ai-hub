@@ -64,4 +64,10 @@ Research rewards AI assistance more than almost any other academic activity (lit
 ??? question "Where does your accountability sit when AI helped with the analysis code and the drafting?"
     Exactly where it sat before AI: with you and your coauthors. Disclose the assistance per the venue's rules, verify what the tool produced, and stand behind every number and sentence. No disclosure transfers responsibility to the tool.
 
+## Going deeper
+
+- [AI for Research](../tools/research.md): the tool landscape mapped to each stage of a project, Scopus first where it is strongest.
+- [Reviewing the Literature](../playbooks/literature-reviews.md): the full workflow from question to appraised evidence.
+- [Research prompts](../prompts/index.md): the question coach, pre-submission reviewer, and reporting guideline auditor.
+
 **Next:** [Module 6: Clinical Contexts](clinical.md)

@@ -60,4 +60,9 @@ Two different worlds share the word "clinical," and the rules differ sharply bet
 ??? question "An AI tool suggests a diagnosis your attending disagrees with. What does the policy say about whose call it is?"
     The human's, categorically. AI augments judgment; it does not arbitrate it. The tool's suggestion can prompt a question or a second look at the evidence, but clinical authority and accountability stay with the clinicians.
 
-**Done with the pathway?** The [Playbooks](../playbooks/index.md) turn these foundations into task-by-task workflows, and the [News](../news/this-week.md) section keeps you current from here.
+## Going deeper
+
+- [Medical Learning tools](../tools/index.md#medical-learning): the directory's category built for study and case practice.
+- [Image Generation benchmarks](../benchmarks/image.md): including the medical-contexts section and its institutional line.
+
+**Done with the core pathway?** Stage 3 is waiting when you are: [Module 7: Working with Agents](working-with-agents.md). The [Playbooks](../playbooks/index.md) turn these foundations into task-by-task workflows, and the [News](../news/this-week.md) section keeps you current from here.

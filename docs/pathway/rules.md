@@ -68,4 +68,10 @@ If you see misuse, a data exposure, or a tool producing harmful or discriminator
 ??? question "A tool in the directory is marked Under review. Does that mean you cannot use it?"
     No. Under review means evaluation is in progress; use personal judgment. What it never means is that the data rules are relaxed: no PHI, no student records, no confidential information in any public tool regardless of status.
 
+## Going deeper
+
+- [How Tools Are Reviewed](../governance/review-process.md): what the directory's status badges mean and how they are earned.
+- [Your Syllabus AI Statement](../playbooks/syllabus-statement.md): for faculty, turning the policy's delegation into course-level rules.
+- [For Students](../students.md): the rules restated in student terms, with the lines that never move.
+
 **Next:** [Module 4: Teaching and Assessment](teaching-assessment.md), [Module 5: Research and Scholarship](research.md), or [Module 6: Clinical Contexts](clinical.md), depending on your role.

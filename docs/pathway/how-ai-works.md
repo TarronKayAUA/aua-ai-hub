@@ -35,4 +35,10 @@ Three consequences worth internalizing:
 ??? question "When is the model's confident tone evidence that its answer is correct?"
     Never. Tone is a property of the text generation, not of the underlying accuracy. Treat confidence and correctness as fully independent until verified.
 
+## Going deeper
+
+- [How LLMs Work](../basics/how-llms-work.md): the same mechanics, one level down (already linked above; it rewards a second pass).
+- [Common Misconceptions](../basics/misconceptions.md): calibrating trust by task.
+- [Benchmarks](../benchmarks.md): how capability actually gets measured, updated nightly.
+
 **Next:** [Module 2: Prompting Fundamentals](prompting.md)

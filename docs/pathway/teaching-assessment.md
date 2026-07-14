@@ -56,4 +56,10 @@ For educators, AI is at its best on structured generation from your materials: o
 ??? question "Why are AI-drafted exam items kept out of public AI tools after they are finalized for use?"
     Because a live exam item is secure assessment material: pasting it into a public tool risks exposing it (some tools learn from or store inputs), which compromises the assessment. Drafting with AI happens before items become secure; once they are finalized for use, they stay out of public tools.
 
+## Going deeper
+
+- [Feedback on Student Writing](../playbooks/writing-feedback.md): the highest-caution zone above, as a full guarded workflow.
+- [Administrative Drafting](../playbooks/admin-drafting.md): the same discipline applied to memos, minutes, and reports.
+- [Standing Setups](../tools/standing-setups.md): a project per course, so the model knows your objectives all term.
+
 **Next:** [Module 5: Research and Scholarship](research.md) or [Module 6: Clinical Contexts](clinical.md)

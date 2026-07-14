@@ -87,6 +87,7 @@ nav:
       - "4. Teaching and Assessment": pathway/teaching-assessment.md
       - "5. Research and Scholarship": pathway/research.md
       - "6. Clinical Contexts": pathway/clinical.md
+      - "7. Working with Agents": pathway/working-with-agents.md
       - Reference:
           - How LLMs Work: basics/how-llms-work.md
           - Getting Better Answers: basics/better-answers.md
