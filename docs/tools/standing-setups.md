@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-07-14
 ---
 
 # Standing Setups: Assistants that Remember
@@ -59,6 +59,31 @@ The same shape serves research: one project per manuscript or study, with your a
 Agent interfaces have their own version, and it is just a text file. Claude Code reads `CLAUDE.md` files (personal ones in your home directory apply everywhere; a `CLAUDE.md` in the folder applies to work there), and Codex reads `AGENTS.md` files the same way, layered from global to folder, before doing any work. What belongs in one is what you would otherwise repeat: where things are, what conventions to follow, the "always do X" rules. Two practical notes from the vendors' own guidance: Claude Code can generate a starting brief for you (run `/init` in a folder and it drafts one from what it finds), and keep the file short, since the docs recommend under 200 lines; a brief the length of a policy manual stops being read carefully, by models as by people.
 
 The heuristic for what to add: **when the agent makes the same mistake twice, or you type the same correction twice, that correction belongs in the brief.** Standing setups are how one-time feedback becomes permanent behavior.
+
+<figure class="figure">
+<svg viewBox="0 0 660 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How folder briefs layer: a personal brief in your home directory applies to all your work, the working folder's brief adds this project's rules on top, the agent reads both before any session, and corrections you find yourself repeating flow back into the folder's brief">
+<defs><marker id="ss-lay" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">how folder briefs layer</text>
+<rect x="20" y="52" width="180" height="64" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
+<text x="110" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">your personal brief</text>
+<text x="110" y="90" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">home directory: the defaults</text>
+<text x="110" y="103" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">that apply to all your work</text>
+<line x1="202" y1="84" x2="234" y2="84" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ss-lay)"/>
+<rect x="238" y="52" width="184" height="64" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="330" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">the folder's brief</text>
+<text x="330" y="90" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">CLAUDE.md or AGENTS.md:</text>
+<text x="330" y="103" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">this project's rules, on top</text>
+<line x1="424" y1="84" x2="456" y2="84" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ss-lay)"/>
+<rect x="460" y="52" width="180" height="64" rx="8" fill="var(--md-primary-fg-color)"/>
+<text x="550" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">the session</text>
+<text x="550" y="90" text-anchor="middle" font-size="8.5" fill="#ffffff">the agent reads both briefs,</text>
+<text x="550" y="103" text-anchor="middle" font-size="8.5" fill="#ffffff">global to folder, before any work</text>
+<path d="M 550 118 L 550 160 L 330 160 L 330 122" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ss-lay)"/>
+<text x="440" y="178" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">the same correction twice becomes a line in the brief</text>
+<text x="330" y="218" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the personal brief carries your voice everywhere; the folder's brief speaks for the project</text>
+</svg>
+<figcaption>Layered, not merged: the broad rules travel with you, the specific ones live with the work, and repeated feedback flows back in.</figcaption>
+</figure>
 
 ## Guardrails
 

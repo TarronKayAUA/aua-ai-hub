@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-07-14
 ---
 
 # Your First Agent Session
@@ -91,6 +91,42 @@ This site's recommendation, stated as a table so you can disagree with it precis
 | Effort | The default | Low for mechanical batches; xhigh or max for the genuinely hard step | Max as an always-on default |
 | Orchestration (ultracode / Ultra) | Off | On for large, decomposable tasks, accepting the time and token cost | On for routine questions |
 | Folder access | One task-specific folder | Additional folders added deliberately | Your whole home directory or disk |
+
+<figure class="figure">
+<svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The permission trust ladder: start at ask-first where every tool call prompts, graduate a proven workflow to auto-approved edits, then to checked autonomy where an automatic reviewer surfaces only flagged actions; Plan mode reads without changing anything and is useful at every rung; the bypass and full access modes sit behind a wall, for isolated machines only">
+<defs><marker id="fs-lad" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">permissions: a ladder you climb per workflow, not a dial you set once</text>
+<rect x="20" y="34" width="180" height="42" rx="7" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="110" y="51" text-anchor="middle" font-size="8.5" fill="var(--md-typeset-color)">Plan mode: read and propose,</text>
+<text x="110" y="64" text-anchor="middle" font-size="8.5" fill="var(--md-typeset-color)">change nothing; useful at every rung</text>
+<rect x="20" y="156" width="150" height="52" rx="7" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<text x="95" y="177" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">ask first</text>
+<text x="95" y="192" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">Manual · Ask for approval</text>
+<line x1="172" y1="172" x2="196" y2="152" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-lad)"/>
+<rect x="200" y="126" width="150" height="82" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="275" y="147" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">edits flow</text>
+<text x="275" y="162" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">Accept edits, for a workflow</text>
+<text x="275" y="175" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">that has earned it</text>
+<line x1="352" y1="142" x2="376" y2="122" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-lad)"/>
+<rect x="380" y="96" width="150" height="112" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="455" y="117" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">checked autonomy</text>
+<text x="455" y="132" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">Auto · Approve for me:</text>
+<text x="455" y="145" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">a reviewer surfaces only</text>
+<text x="455" y="158" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">what it flags, and it can</text>
+<text x="455" y="171" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">be wrong: keep reading</text>
+<text x="455" y="184" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">the surprises</text>
+<line x1="552" y1="96" x2="552" y2="208" stroke="#c62828" stroke-width="2" stroke-dasharray="5 4"/>
+<rect x="566" y="96" width="80" height="112" rx="7" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="606" y="130" text-anchor="middle" font-size="9" font-weight="bold" fill="var(--md-typeset-color)">Bypass ·</text>
+<text x="606" y="144" text-anchor="middle" font-size="9" font-weight="bold" fill="var(--md-typeset-color)">Full access</text>
+<text x="606" y="165" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">isolated</text>
+<text x="606" y="177" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">machines only,</text>
+<text x="606" y="189" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">never one you</text>
+<text x="606" y="201" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">care about</text>
+<text x="330" y="230" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">every new kind of task starts back at ask first; the ladder is climbed by workflows, not by people</text>
+</svg>
+<figcaption>Trust is granted to a proven workflow, one rung at a time, and the wall on the right is not a rung.</figcaption>
+</figure>
 
 ## Guardrails
 
