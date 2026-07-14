@@ -282,13 +282,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Peer-reviewed research describes a multi-language model medical education pipeline with human-in-the-loop validation.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42409437?fc=20260609215449&amp;ff=20260707072603&amp;v=2.20.0">The Role of Artificial Intelligence in Medical Education and Training: Implications for Rheumatology</a>
-    <p class="news-card-summary">A review of artificial intelligence applications in rheumatology medical education and training.</p>
-  </div>
-</div>
 </div>
 
 ## Clinical Practice
@@ -815,32 +808,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.02770">Gemma 4 Technical Report</a>
-    <p class="news-card-summary">Google released Gemma 4, a new generation of open-weights language models with improved capabilities.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.02980">Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling</a>
-    <p class="news-card-summary">Research on hierarchical sparse attention methods to enable large language models to handle longer context windows efficiently.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals">Small AI Models Gain Traction In places with unreliable networks</a>
     <p class="news-card-summary">Analysis of small language models gaining adoption in regions with unreliable network infrastructure.</p>
   </div>
   <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/image.jpg?id=67101133&amp;width=1200&amp;height=600&amp;coordinates=0%2C889%2C0%2C361" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/6/hy3">tencent/Hy3</a>
-    <p class="news-card-summary">Tencent released Hy3, a 295-billion-parameter open-weights mixture-of-experts model under Apache 2.0 license.</p>
-  </div>
 </div>
 <div class="news-card">
   <div class="news-card-body">
@@ -857,19 +829,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <p class="news-card-summary">Meituan released open-weights Longcat 2 model in INT8 and FP8 quantized formats on Hugging Face.</p>
   </div>
 </div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1um84bd/followup_deepseek_v4_flash_on_2x_rtx_pro_6000">Follow-up: DeepSeek V4 Flash on 2x RTX PRO 6000 finishes real coding tasks faster than Sonnet and Opus, at about Sonnet quality</a>
-    <p class="news-card-summary">DeepSeek V4 Flash local model demonstrates coding performance comparable to Claude Sonnet at lower cost on consumer GPUs.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/ofq8evjmmyah1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d367345aaa68ac30b7d90d7843dc95e7e8911e2f" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=OWPRU_Pc4Ng" target="_blank" rel="noopener" title="5 More AI Myths &amp; The Truth Behind Them: ML, Context, Agents &amp; More">
+  <img src="https://i4.ytimg.com/vi/OWPRU_Pc4Ng/hqdefault.jpg" alt="Video: Five AI myths explained" loading="lazy">
+  <span class="video-card-title">Five AI myths explained</span>
+  <span class="video-card-meta">IBM Technology, July 14, 2026</span>
+  <span class="video-card-desc">IBM explainer on common misconceptions about machine learning, context windows, AI agents, and related topics.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=gI5d2czu9JE" target="_blank" rel="noopener" title="Meta Muse Spark 1.1 IS UNDERRATED! Beats Opus 4.8 &amp; Grok 4.5! (Fully Tested)">
+  <img src="https://i4.ytimg.com/vi/gI5d2czu9JE/hqdefault.jpg" alt="Video: Meta Muse Spark 1.1 benchmark testing" loading="lazy">
+  <span class="video-card-title">Meta Muse Spark 1.1 benchmark testing</span>
+  <span class="video-card-meta">WorldofAI, July 14, 2026</span>
+  <span class="video-card-desc">Hands-on benchmark comparison of Meta Muse Spark 1.1 against Claude Opus 4.8 and Grok 4.5 across multiple tests.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26" loading="lazy">
   <span class="video-card-title">AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26</span>
@@ -930,15 +906,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Keynote on artificial reasoning in AI systems and implications for clinical intelligence, featuring computer scientist Yejin Choi.</span>
 </a>
+<a class="video-card" href="https://www.youtube.com/watch?v=oanQrXEiCy4" target="_blank" rel="noopener" title="What is an AI Code Generator? LLM Coding, Productivity, &amp; Risk">
+  <img src="https://i4.ytimg.com/vi/oanQrXEiCy4/hqdefault.jpg" alt="Video: AI code generators and their risks" loading="lazy">
+  <span class="video-card-title">AI code generators and their risks</span>
+  <span class="video-card-meta">IBM Technology, July 13, 2026</span>
+  <span class="video-card-desc">IBM overview of how AI code generators work, their productivity benefits, and associated risks and trust considerations.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=SVAwzodyFUo" target="_blank" rel="noopener" title="How to Manage Your AI Before It Makes the Wrong Decision">
+  <img src="https://i4.ytimg.com/vi/SVAwzodyFUo/hqdefault.jpg" alt="Video: Managing AI systems and decision-making" loading="lazy">
+  <span class="video-card-title">Managing AI systems and decision-making</span>
+  <span class="video-card-meta">IBM Technology, July 12, 2026</span>
+  <span class="video-card-desc">IBM explanation of AI governance and decision management practices to ensure responsible deployment and reduce model errors.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=1DtMiRKg-cs" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg" alt="Video: Understanding the inner thoughts of AI" loading="lazy">
   <span class="video-card-title">Understanding the inner thoughts of AI</span>
   <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
   <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)" loading="lazy">
-  <span class="video-card-title">GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener" title="GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)">
+  <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: Testing GPT-5.6 AI model performance and features" loading="lazy">
+  <span class="video-card-title">Testing GPT-5.6 AI model performance and features</span>
   <span class="video-card-meta">WorldofAI, July 10, 2026</span>
   <span class="video-card-desc">Hands-on benchmark comparison of GPT-5.6 against competing models, testing performance, speed, and cost across multiple tasks.</span>
 </a>
@@ -989,12 +977,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">DeepSeek&#x27;s New AI Speed Hack Is Amazing</span>
   <span class="video-card-meta">Two Minute Papers, July 7, 2026</span>
   <span class="video-card-desc">Overview of DeepSeek&#x27;s efficiency improvements in large language model inference and their technical implementation.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=twIpCciU7VE" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/twIpCciU7VE/hqdefault.jpg" alt="Video: Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)" loading="lazy">
-  <span class="video-card-title">Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)</span>
-  <span class="video-card-meta">WorldofAI, July 7, 2026</span>
-  <span class="video-card-desc">Tencent released HY3, an open-weight language model available for free use and local deployment.</span>
 </a>
 </div>
 

@@ -66,15 +66,39 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=OWPRU_Pc4Ng" target="_blank" rel="noopener" title="5 More AI Myths &amp; The Truth Behind Them: ML, Context, Agents &amp; More">
+  <img src="https://i4.ytimg.com/vi/OWPRU_Pc4Ng/hqdefault.jpg" alt="Video: Five AI myths explained" loading="lazy">
+  <span class="video-card-title">Five AI myths explained</span>
+  <span class="video-card-meta">IBM Technology, July 14, 2026</span>
+  <span class="video-card-desc">IBM explainer on common misconceptions about machine learning, context windows, AI agents, and related topics.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=gI5d2czu9JE" target="_blank" rel="noopener" title="Meta Muse Spark 1.1 IS UNDERRATED! Beats Opus 4.8 &amp; Grok 4.5! (Fully Tested)">
+  <img src="https://i4.ytimg.com/vi/gI5d2czu9JE/hqdefault.jpg" alt="Video: Meta Muse Spark 1.1 benchmark testing" loading="lazy">
+  <span class="video-card-title">Meta Muse Spark 1.1 benchmark testing</span>
+  <span class="video-card-meta">WorldofAI, July 14, 2026</span>
+  <span class="video-card-desc">Hands-on benchmark comparison of Meta Muse Spark 1.1 against Claude Opus 4.8 and Grok 4.5 across multiple tests.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=oanQrXEiCy4" target="_blank" rel="noopener" title="What is an AI Code Generator? LLM Coding, Productivity, &amp; Risk">
+  <img src="https://i4.ytimg.com/vi/oanQrXEiCy4/hqdefault.jpg" alt="Video: AI code generators and their risks" loading="lazy">
+  <span class="video-card-title">AI code generators and their risks</span>
+  <span class="video-card-meta">IBM Technology, July 13, 2026</span>
+  <span class="video-card-desc">IBM overview of how AI code generators work, their productivity benefits, and associated risks and trust considerations.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=SVAwzodyFUo" target="_blank" rel="noopener" title="How to Manage Your AI Before It Makes the Wrong Decision">
+  <img src="https://i4.ytimg.com/vi/SVAwzodyFUo/hqdefault.jpg" alt="Video: Managing AI systems and decision-making" loading="lazy">
+  <span class="video-card-title">Managing AI systems and decision-making</span>
+  <span class="video-card-meta">IBM Technology, July 12, 2026</span>
+  <span class="video-card-desc">IBM explanation of AI governance and decision management practices to ensure responsible deployment and reduce model errors.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=1DtMiRKg-cs" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg" alt="Video: Understanding the inner thoughts of AI" loading="lazy">
   <span class="video-card-title">Understanding the inner thoughts of AI</span>
   <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
   <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)" loading="lazy">
-  <span class="video-card-title">GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener" title="GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)">
+  <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: Testing GPT-5.6 AI model performance and features" loading="lazy">
+  <span class="video-card-title">Testing GPT-5.6 AI model performance and features</span>
   <span class="video-card-meta">WorldofAI, July 10, 2026</span>
   <span class="video-card-desc">Hands-on benchmark comparison of GPT-5.6 against competing models, testing performance, speed, and cost across multiple tasks.</span>
 </a>
@@ -126,15 +150,15 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">Two Minute Papers, July 7, 2026</span>
   <span class="video-card-desc">Overview of DeepSeek&#x27;s efficiency improvements in large language model inference and their technical implementation.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=twIpCciU7VE" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/twIpCciU7VE/hqdefault.jpg" alt="Video: Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)" loading="lazy">
-  <span class="video-card-title">Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=twIpCciU7VE" target="_blank" rel="noopener" title="Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)">
+  <img src="https://i1.ytimg.com/vi/twIpCciU7VE/hqdefault.jpg" alt="Video: Assessment of Tencent HY3 open-weight AI model" loading="lazy">
+  <span class="video-card-title">Assessment of Tencent HY3 open-weight AI model</span>
   <span class="video-card-meta">WorldofAI, July 7, 2026</span>
   <span class="video-card-desc">Tencent released HY3, an open-weight language model available for free use and local deployment.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=mIVHFU94Xhc" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg" alt="Video: Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?" loading="lazy">
-  <span class="video-card-title">Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=mIVHFU94Xhc" target="_blank" rel="noopener" title="Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?">
+  <img src="https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg" alt="Video: Evaluation of Tencent HY3 as GLM and DeepSeek competitor" loading="lazy">
+  <span class="video-card-title">Evaluation of Tencent HY3 as GLM and DeepSeek competitor</span>
   <span class="video-card-meta">Bijan Bowen, July 6, 2026</span>
   <span class="video-card-desc">Technical comparison and evaluation of Tencent&#x27;s HY3 model against GLM and DeepSeek competitors.</span>
 </a>
@@ -144,9 +168,9 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">AI Explained, July 2, 2026</span>
   <span class="video-card-desc">Hands-on comparison of Fable 5 and GPT 5.6 Sol model performance across benchmark tasks.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=tIyQoLeTT3s" target="_blank" rel="noopener">
-  <img src="https://i1.ytimg.com/vi/tIyQoLeTT3s/hqdefault.jpg" alt="Video: Claude Sonnet 5 Is HERE, Hands-On With Anthropic’s NEW Model!" loading="lazy">
-  <span class="video-card-title">Claude Sonnet 5 Is HERE, Hands-On With Anthropic’s NEW Model!</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=tIyQoLeTT3s" target="_blank" rel="noopener" title="Claude Sonnet 5 Is HERE, Hands-On With Anthropic’s NEW Model!">
+  <img src="https://i1.ytimg.com/vi/tIyQoLeTT3s/hqdefault.jpg" alt="Video: Hands-on with Anthropic&#x27;s Claude Sonnet 5 model" loading="lazy">
+  <span class="video-card-title">Hands-on with Anthropic&#x27;s Claude Sonnet 5 model</span>
   <span class="video-card-meta">Bijan Bowen, June 30, 2026</span>
   <span class="video-card-desc">Hands-on technical demonstration of Anthropic&#x27;s Claude Sonnet 5 model, covering capabilities and browser integration testing.</span>
 </a>
@@ -156,35 +180,11 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">IBM Technology, June 30, 2026</span>
   <span class="video-card-desc">Explains how key-value cache optimization reduces computational overhead in large language model inference on GPUs.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=zdhY9ZXn410" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/zdhY9ZXn410/hqdefault.jpg" alt="Video: GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?" loading="lazy">
-  <span class="video-card-title">GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=zdhY9ZXn410" target="_blank" rel="noopener" title="GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?">
+  <img src="https://i3.ytimg.com/vi/zdhY9ZXn410/hqdefault.jpg" alt="Video: Comparison of GLM-5.2 and Claude Opus 4.8 AI models" loading="lazy">
+  <span class="video-card-title">Comparison of GLM-5.2 and Claude Opus 4.8 AI models</span>
   <span class="video-card-meta">Bijan Bowen, June 29, 2026</span>
   <span class="video-card-desc">Benchmark comparison of GLM-5.2 and Claude Opus 4.8 across multiple test scenarios.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=K68sqG18270" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg" alt="Video: The Promptware Kill Chain: How Prompt Injection Becomes AI Malware" loading="lazy">
-  <span class="video-card-title">The Promptware Kill Chain: How Prompt Injection Becomes AI Malware</span>
-  <span class="video-card-meta">IBM Technology, June 28, 2026</span>
-  <span class="video-card-desc">IBM Security explains prompt injection attacks and how they can be weaponized as AI malware, covering attack methods and defenses.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=V04bm-3d6EQ" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/V04bm-3d6EQ/hqdefault.jpg" alt="Video: When millions of AI agents meet" loading="lazy">
-  <span class="video-card-title">When millions of AI agents meet</span>
-  <span class="video-card-meta">Google DeepMind, June 23, 2026</span>
-  <span class="video-card-desc">Google DeepMind explores the emerging landscape of AI agents and their differences from traditional language models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=k5jYwyhDMxA" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/k5jYwyhDMxA/hqdefault.jpg" alt="Video: 5 AI Agent Terms You Need to Know" loading="lazy">
-  <span class="video-card-title">5 AI Agent Terms You Need to Know</span>
-  <span class="video-card-meta">IBM Technology, June 23, 2026</span>
-  <span class="video-card-desc">IBM Technology explains foundational concepts and terminology for understanding frontier AI agents and their capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=mG4SmhWyeFA" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/mG4SmhWyeFA/hqdefault.jpg" alt="Video: DeepSeek Just Solved AI&#x27;s Billion Dollar Problem" loading="lazy">
-  <span class="video-card-title">DeepSeek Just Solved AI&#x27;s Billion Dollar Problem</span>
-  <span class="video-card-meta">Two Minute Papers, June 22, 2026</span>
-  <span class="video-card-desc">Overview of DeepSeek&#x27;s approach to reducing AI inference costs, a significant technical and economic development in large language model deployment.</span>
 </a>
 </div>
 
