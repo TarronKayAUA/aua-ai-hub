@@ -42,7 +42,8 @@ TIMEOUT = 15
 # Re-verify in a browser when touching an entry that uses one.
 MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
-    "nabututor.com": "2026-06-10",
+    # 403s all scripted clients; confirmed live in a browser.
+    "nabututor.com": "2026-07-14",
     "llama.com": "2026-06-10",
     # Cloudflare-blocks scripted clients; confirmed live in a browser.
     "midjourney.com": "2026-06-12",

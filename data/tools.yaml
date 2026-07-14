@@ -95,7 +95,9 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-11
+  # Page serves a script-only shell to fetchers; verified live in a
+  # browser by the owner and by HTTP 200 probe, 2026-07-14.
+  last_reviewed: 2026-07-14
   blurb: Search-centered assistant that answers questions with citations to live web sources, useful when you need traceable answers rather than open-ended chat.
 
 - name: Z.ai
@@ -158,13 +160,17 @@
   blurb: OpenAI's agent mode for finished work, the successor to Agent Mode after the July 2026 desktop merge. Takes an outcome and returns documents, spreadsheets, slides, or web apps; on the desktop it can use local files and applications with permission.
 
 - name: Manus
-  vendor: Manus AI
+  # Vendor updated 2026-07-14: acquisition announced 2025-12-30, verified
+  # from the manus.im banner ("Manus is now part of Meta") and CNBC.
+  vendor: Meta
   category: agents
   url: https://manus.im
   cost: freemium
   governance_status: under_review
-  status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-11
+  status_note: Awaiting AI Committee review. Part of Meta since December
+    2025; the service and subscriptions continue, with data handling now
+    under Meta's terms.
+  last_reviewed: 2026-07-14
   blurb: General-purpose autonomous agent that breaks a goal into steps and executes them in a cloud workspace, producing research, documents, slides, and simple applications.
 
 - name: Comet
@@ -331,7 +337,9 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-10
+  # Site 403s all scripted clients (content watch included); confirmed
+  # live in a browser 2026-07-14.
+  last_reviewed: 2026-07-14
   blurb: Tutor for USMLE and Comprehensive Osteopathic Medical Licensing Examination (COMLEX) preparation that works through cases Socratically with follow-up questions and builds a study plan around weak areas.
 
 - name: Oncourse AI

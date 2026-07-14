@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-14
 ---
 
 # AI Agents
@@ -90,7 +90,7 @@ More: [ChatGPT Work and the desktop app](https://learn.chatgpt.com/docs/app).
 
 ### Manus
 
-A general-purpose autonomous agent in a cloud workspace: it decomposes a goal into steps and works them on its own infrastructure, returning research, documents, slides, and simple applications. Free credits to start, subscriptions beyond.
+A general-purpose autonomous agent in a cloud workspace: it decomposes a goal into steps and works them on its own infrastructure, returning research, documents, slides, and simple applications. Free credits to start, subscriptions beyond. Originally built by the startup Butterfly Effect, Manus has been part of Meta since December 2025; the service and subscriptions continue under Meta.
 
 <!-- render:guide-videos:agents:manus -->
 
