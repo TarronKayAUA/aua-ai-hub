@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-06-11
+last_reviewed: 2026-07-13
 ---
 
 # Video Generation Benchmarks
 
-Video generation is ranked the same way as [image generation](image.md): blind human-preference arenas, where voters compare two clips generated from the same prompt and an Elo-style rating accumulates. Video adds dimensions that images do not have, and the good leaderboards split them into separate tasks: **text-to-video** (a clip from a written prompt), **image-to-video** (animating a supplied still while preserving its composition), and increasingly video editing (instruction-based changes to an existing clip). A model can lead one task and trail badly on another, so check the task that matches your use before comparing ranks.
+Video generation is ranked the same way as [image generation](image.md): blind human-preference arenas, where voters compare two clips generated from the same prompt and an Elo-style rating accumulates (the image page has [a diagram of the mechanism](image.md)). Video adds dimensions that images do not have, and the good leaderboards split them into separate tasks: **text-to-video** (a clip from a written prompt), **image-to-video** (animating a supplied still while preserving its composition), and increasingly video editing (instruction-based changes to an existing clip). A model can lead one task and trail badly on another, so check the task that matches your use before comparing ranks.
 
 What separates video models in practice: temporal consistency (objects keep their identity across frames), motion plausibility (physics that does not distract), prompt adherence over time (events happening in the requested order), and clip length before quality decays. Audio is the newest frontier, with some arenas now ranking with and without generated sound.
 
