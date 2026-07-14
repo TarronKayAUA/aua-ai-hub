@@ -64,7 +64,7 @@ Automated upkeep goes one careful step further for the calendar and roster data.
 
 ## Governance note
 
-The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) carries governance status badges, and the [prompt library](prompts/index.md) carries review status badges; both are provisional until ratified through the committee process. Nothing else on this site is institutional policy unless explicitly marked as such.
+The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) carries governance status badges describing the institution's relationship with each tool (a listing is not an endorsement, and committee review is available on request), and the [prompt library](prompts/index.md) carries review status badges that are provisional until ratified through the committee process. Nothing else on this site is institutional policy unless explicitly marked as such.
 
 ## Privacy
 

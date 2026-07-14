@@ -1,15 +1,15 @@
 ---
-last_reviewed: 2026-06-12
+last_reviewed: 2026-07-14
 ---
 
 # Tool Directory
 
-A directory of artificial intelligence (AI) tools relevant to teaching, learning, research, and clinical education at the American University of Antigua College of Medicine (AUACOM). Each entry carries a governance status assigned through institutional review.
+A directory of artificial intelligence (AI) tools relevant to teaching, learning, research, and clinical education at the American University of Antigua College of Medicine (AUACOM). Each entry carries a status describing the institution's relationship with the tool.
 
-!!! warning "Provisional statuses"
-    Governance statuses are provisional pending AI Committee ratification.
+!!! note "A listing is not an endorsement"
+    Statuses describe where the institution actually stands with a tool, not a quality verdict. Committee review of any tool can be requested through the [review process](../governance/review-process.md), and the data rules below apply everywhere, whatever a tool's status.
 
-**How to read the statuses:** <span class="badge badge-approved">Approved</span> cleared for institutional use within the noted conditions. <span class="badge badge-conditional">Conditional</span> usable with specific restrictions stated in the entry. <span class="badge badge-restricted">Restricted</span> not for institutional use. <span class="badge badge-under-review">Under review</span> evaluation in progress; use personal judgment and never enter patient or student data.
+**How to read the statuses:** <span class="badge badge-listed">Listed</span>: in the directory because it is relevant and live; not an endorsement; use personal judgment. <span class="badge badge-licensed">Licensed</span>: institutionally licensed or procured by the university. <span class="badge badge-reviewed">Reviewed</span>: examined by the AI Committee; conclusions in the entry's note. <span class="badge badge-caution">Use with caution</span>: a specific concern is documented in the entry's note; read it before using the tool. <span class="badge badge-restricted">Restricted</span>: reviewed and found unsuitable for institutional use. Hover any badge for the entry's note; expand a category to browse it.
 
 Whatever a tool's status, two rules always apply: never enter protected health information (PHI), and never enter student records covered by the Family Educational Rights and Privacy Act (FERPA). See [PHI and FERPA considerations](../basics/glossary.md) in the glossary.
 
@@ -23,4 +23,4 @@ The major open-weight families as of June 2026:
 
 <!-- render:open-models -->
 
-To suggest a tool for review, see the [About page](../about.md) for contact information. This directory is maintained in a data file; statuses are updated through the review process described in [How Tools Are Reviewed](../governance/review-process.md).
+To suggest a tool, or to request committee review of one, see the [About page](../about.md) for contact information. This directory is maintained in a data file; review-bearing statuses are assigned through the process described in [How Tools Are Reviewed](../governance/review-process.md), while Listed and Licensed reflect cataloging and procurement facts.

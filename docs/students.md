@@ -58,7 +58,7 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 
 ## Studying with AI
 
-- **Finding study tools**: the [Medical Learning tools](tools/index.md#medical-learning) in the directory are built for exactly this: practice questions, case practice, tutoring. Statuses there are provisional until the AI Committee ratifies them, and listings are not endorsements.
+- **Finding study tools**: the [Medical Learning tools](tools/index.md#medical-learning) in the directory are built for exactly this: practice questions, case practice, tutoring. Statuses there describe the institution's relationship with each tool, and a listing is not an endorsement.
 - **Drilling exam-style questions**: the [prompt library](prompts/index.md)'s National Board of Medical Examiners (NBME)-style question tutor was co-written with faculty and reviewed: a study mode that explains as you go, and an exam mode that drills first and debriefs after. Set it up once per course, with your lecture notes attached, using [Standing Setups](tools/standing-setups.md).
 - **After an exam**: the [score reports playbook](playbooks/score-reports.md) turns your NBME INSIGHTS report or in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it.
 - **Practicing differentials**: working a case against an AI is legitimate and effective, with one discipline: a real encounter gets stripped to a teaching abstraction first (age band, presentation pattern, nothing identifiable). [Clinical Contexts](pathway/clinical.md) shows exactly where that line sits.

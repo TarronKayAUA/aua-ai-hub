@@ -43,7 +43,7 @@ AUA encourages AI use where it helps you do your work, inside guardrails set by 
 <line x1="442" y1="80" x2="478" y2="80" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rl-ar)"/>
 <rect x="482" y="45" width="160" height="62" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
 <text x="562" y="66" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">yes: it stays out;</text>
-<text x="562" y="80" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">use an approved tool</text>
+<text x="562" y="80" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">use a tool cleared for it</text>
 <text x="562" y="94" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">or de-identify first</text>
 <line x1="442" y1="160" x2="478" y2="160" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rl-ar)"/>
 <rect x="482" y="128" width="160" height="62" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
@@ -65,12 +65,12 @@ If you see misuse, a data exposure, or a tool producing harmful or discriminator
 ??? question "You used a chatbot to draft a paragraph of a committee report and edited it lightly. What does the policy expect?"
     That the AI contribution is acknowledged per the applicable guidelines, that you verified any factual claims in it, and that you stand behind the final text as your own responsibility. Light editing does not transfer accountability to the tool.
 
-??? question "A tool in the directory is marked Under review. Does that mean you cannot use it?"
-    No. Under review means evaluation is in progress; use personal judgment. What it never means is that the data rules are relaxed: no PHI, no student records, no confidential information in any public tool regardless of status.
+??? question "A tool in the directory is marked Listed. Does that mean the university has vetted it?"
+    No. Listed means the tool is in the directory because it is relevant and live; it is not an endorsement, and using it is your judgment call. What a status never changes is the data rules: no PHI, no student records, no confidential information in any public tool, whatever its badge says.
 
 ## Going deeper
 
-- [How Tools Are Reviewed](../governance/review-process.md): what the directory's status badges mean and how they are earned.
+- [How Tools Are Reviewed](../governance/review-process.md): what the directory's status badges mean and how they are assigned.
 - [Your Syllabus AI Statement](../playbooks/syllabus-statement.md): for faculty, turning the policy's delegation into course-level rules.
 - [For Students](../students.md): the rules restated in student terms, with the lines that never move.
 

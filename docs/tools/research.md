@@ -4,7 +4,7 @@ last_reviewed: 2026-07-08
 
 # AI for Research
 
-Artificial intelligence tools now cover most stages of a research project, from finding literature to checking a manuscript's citations. This page maps the current landscape to the tasks researchers actually do, with honest notes on cost, field fit, and where each tool falls short. Entries here also appear in the [tools directory](index.md) with their governance status; statuses are provisional pending AI Committee review.
+Artificial intelligence tools now cover most stages of a research project, from finding literature to checking a manuscript's citations. This page maps the current landscape to the tasks researchers actually do, with honest notes on cost, field fit, and where each tool falls short. Entries here also appear in the [tools directory](index.md) with their governance status; a listing is not an endorsement.
 
 !!! warning "Three rules before any of the tools"
     **Verify every citation.** Language models fabricate plausible references, and a fabricated citation in a submitted manuscript is a career-level error. Every reference an AI surfaces gets checked against the actual paper before it enters your work.
@@ -57,7 +57,7 @@ AUA holds an institution-wide license to [Scopus](http://auamed.idm.oclc.org/log
 
 Know what it is grounded in before you lean on it: Scopus AI works from titles, abstracts, and metadata rather than full text, its coverage concentrates on literature from 2003 onward, and Elsevier itself states that the summaries are not citable. Treat it as the fastest way to orient in an unfamiliar literature and surface the papers that matter, then read those papers; the verification rules at the top of this page apply unchanged.
 
-Because it is licensed, comprehensive, and the directory's one approved research tool, this page's default is Scopus first: where Scopus does a task well, start there. The tools below earn their places by doing things Scopus does not, and those recommendations are unchanged.
+Because it is comprehensive and the directory's one institutionally licensed research tool, this page's default is Scopus first: where Scopus does a task well, start there. The tools below earn their places by doing things Scopus does not, and those recommendations are unchanged.
 
 ## Finding and mapping literature
 
@@ -119,4 +119,4 @@ Field notes: **medical education researchers** get the most from Scopus with AI,
 
 None of these tools changes what your work is measured against. AI-assisted research is held to the same instruments as any research: the reporting guideline for your design (the EQUATOR Network's checklists, such as STROBE for observational studies or CONSORT for trials), rigor instruments like the Medical Education Research Study Quality Instrument (MERSQI) in medical education, and the International Committee of Medical Journal Editors (ICMJE) rules on authorship, which are explicit that an AI tool cannot be an author, that AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods, and that responsibility for every AI-assisted sentence stays with the humans who sign the paper. The prompt library's [Pre-submission reviewer and Reporting guideline auditor](../prompts/index.md) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
 
-Suggest a tool for this page through the [About page](../about.md) contact, and expect the directory's governance statuses to lag new tools: reviewed slowly is the point.
+Suggest a tool for this page through the [About page](../about.md) contact. New tools enter the directory as Listed, a catalog fact rather than a verdict; committee review of any tool can be requested through the [review process](../governance/review-process.md).

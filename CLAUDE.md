@@ -21,7 +21,7 @@ These rules apply to everything rendered on the site, including pipeline-generat
 - No em dashes anywhere in site copy. Use commas, periods, colons, or parentheses instead. The pipeline post-processes LLM output to enforce this; check generated output too.
 - Plain language for medical educators and students. Expand acronyms on first use per page. US English.
 - Neutral tone. No hype, no vendor editorializing, no superlatives in news summaries.
-- Governance statuses in the tools directory and review statuses in the prompt library are provisional until the AI Committee ratifies them. Provisional banners stay in place. Only the owner changes statuses.
+- Governance statuses in the tools directory describe the institution's relationship with a tool (listed | licensed | reviewed | caution | restricted; reframed 2026-07-14 from the review-pipeline vocabulary, owner approved). A listing is not an endorsement, and committee review is request-driven. Review statuses in the prompt library remain provisional until the AI Committee ratifies them, and that provisional framing stays. Only the owner changes statuses in either file.
 - Authority register (owner preference, 2026-06-12): status language describes where material is in its process, never an endorsement the owner grants. Authority is attributed to the AI Committee and the policy, not to the Assistant Dean; the role appears as maintainer and contact point only, always without "Office of the". The PHI and FERPA floors stay strict; everything else stays modest.
 
 ## Stack and commands

@@ -90,11 +90,16 @@ MODALITY_LABELS = {
 GUIDE_VIDEO_GROUPS = {"agents", "local"}
 
 STATUS_LABELS = {
-    "approved": ("Approved", "badge-approved"),
-    "conditional": ("Conditional", "badge-conditional"),
+    "listed": ("Listed", "badge-listed"),
+    "licensed": ("Licensed", "badge-licensed"),
+    "reviewed": ("Reviewed", "badge-reviewed"),
+    "caution": ("Use with caution", "badge-caution"),
     "restricted": ("Restricted", "badge-restricted"),
-    "under_review": ("Under review", "badge-under-review"),
 }
+
+# Standings worth calling out on a collapsed category bar; listed is the
+# unmarked default and stays silent.
+STATUS_EXCEPTIONS = ("licensed", "reviewed", "caution", "restricted")
 
 FORMAT_LABELS = {
     "in_person": "In person",
@@ -202,6 +207,7 @@ def _render_tools(config) -> str:
     lines = []
     rendered = 0
     per_category_counts = {}
+    standing_counts: dict[str, int] = {}
     for category, label in CATEGORY_LABELS.items():
         group = by_category.get(category, [])
         if not group:
@@ -213,11 +219,25 @@ def _render_tools(config) -> str:
         if intro:
             lines.append(intro)
             lines.append("")
-        lines.append('<div class="tool-grid">')
+        # Collapsed by default; the bar advertises the count and every
+        # non-listed standing so no signal hides behind the toggle.
+        # Arriving by link auto-expands (docs/javascripts/prompts.js).
+        exceptions = []
+        for standing in STATUS_EXCEPTIONS:
+            n = sum(1 for t in group if t["governance_status"] == standing)
+            if n:
+                exceptions.append(f"{n} {STATUS_LABELS[standing][0].lower()}")
+        noun = "tool" if len(group) == 1 else "tools"
+        summary = f"Show the {len(group)} {noun}"
+        if exceptions:
+            summary += f" ({', '.join(exceptions)})"
+        lines.append(f'??? abstract "{summary}"')
+        lines.append("")
+        body = ['<div class="tool-grid">']
         for tool in sorted(group, key=lambda t: t["name"].lower()):
             status_label, status_css = STATUS_LABELS[tool["governance_status"]]
             badge = _badge(status_label, status_css, tool.get("status_note", ""))
-            lines.append(
+            body.append(
                 '<div class="tool-card">\n'
                 '  <div class="tool-card-head">'
                 f'<a href="{tool["url"]}">{_favicon_img(tool["url"])}'
@@ -228,7 +248,12 @@ def _render_tools(config) -> str:
                 "</div>"
             )
             rendered += 1
-        lines.append("</div>")
+            standing = tool["governance_status"]
+            standing_counts[standing] = standing_counts.get(standing, 0) + 1
+        body.append("</div>")
+        for chunk in body:
+            for line in chunk.split("\n"):
+                lines.append(f"    {line}" if line else "")
         lines.append("")
 
     if rendered != len(tools):
@@ -241,6 +266,8 @@ def _render_tools(config) -> str:
     print(f"  entries read    : {len(tools)}")
     for label, count in per_category_counts.items():
         print(f"  {label:<16}: {count}")
+    standings = ", ".join(f"{k} {v}" for k, v in sorted(standing_counts.items()))
+    print(f"  standings       : {standings}")
     print(f"  rendered total  : {rendered} (cross-check ok)")
 
     return "\n".join(lines)

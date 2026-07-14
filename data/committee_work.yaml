@@ -22,10 +22,12 @@
 
 - project: Tool review process
   status: Pending ratification
-  updated: June 2026
-  summary: The rubric behind the tools directory's governance statuses is
-    published for transparency and awaits committee ratification; statuses
-    across the directory remain provisional until then.
+  updated: July 2026
+  summary: The rubric behind committee tool reviews is published for
+    transparency and awaits ratification. In July 2026 the directory moved
+    to statuses that state the institution's actual relationship with each
+    tool (a listing is not an endorsement), with committee review
+    available on request through the published process.
 
 - project: Responsible AI use training
   status: Under consideration

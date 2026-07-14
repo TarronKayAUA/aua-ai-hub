@@ -34,7 +34,8 @@ Owner's instruction for this run: $ARGUMENTS
   criteria in data/conferences.yaml's header (medicine and medical
   education first, higher education second, general education third;
   English-language only). New tools enter `governance_status:
-  under_review` with the standard "Awaiting AI Committee review." note;
+  listed` with the standard "Listed for discovery, not endorsement; the
+  policy's data rules apply." note;
   services operated from China carry the standard data-handling note;
   copy conventions from neighboring entries. New open-weights models need
   their license verified from the Hugging Face model card tag.

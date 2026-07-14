@@ -103,6 +103,10 @@
 .badge-conditional { background-color: #ff8f00; color: #1a1a1a; }
 .badge-restricted { background-color: #c62828; color: #ffffff; }
 .badge-under-review { background-color: #757575; color: #ffffff; }
+.badge-listed { background-color: #757575; color: #ffffff; }
+.badge-licensed { background-color: #2e7d32; color: #ffffff; }
+.badge-reviewed { background-color: #1565c0; color: #ffffff; }
+.badge-caution { background-color: #ff8f00; color: #1a1a1a; }
 .badge-deadline { background-color: #ff8f00; color: #1a1a1a; }
 .badge-unconfirmed { background-color: #757575; color: #ffffff; }
 
