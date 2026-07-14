@@ -6,7 +6,35 @@ last_reviewed: 2026-07-14
 
 **For faculty and staff · a map of what this site offers you**
 
-This site was built for the whole American University of Antigua College of Medicine (AUACOM) community, and the working half of it, the playbooks, prompts, and tool guidance, was written for your tasks first. Artificial intelligence (AI) can take real work off your desk, and it can also fabricate a citation or leak a student record in the same confident tone. This page routes you to the right material by task, with the guardrails already attached.
+This site was built for the whole American University of Antigua College of Medicine (AUACOM) community, and the working half of it, the playbooks, prompts, and tool guidance, was written for your tasks first. Artificial intelligence (AI) can take real work off your desk, and it can also fabricate a citation or leak a student record in the same confident tone. Three doors cover most visits; the full map, routed by task, follows below.
+
+<div class="grid cards" markdown>
+
+- :material-clipboard-text:{ .lg .middle } __Playbooks__
+
+    ---
+
+    One task walked end to end: lectures, exam items, feedback, advising, and more, guardrails attached.
+
+    [Pick your task](playbooks/index.md)
+
+- :material-message-text:{ .lg .middle } __Prompt library__
+
+    ---
+
+    Reusable, tested prompt templates with visible review statuses, ready to copy.
+
+    [Browse the library](prompts/index.md)
+
+- :material-briefcase:{ .lg .middle } __Set it up once__
+
+    ---
+
+    A project per course, your materials attached, and nothing re-explained all term.
+
+    [Build a standing setup](tools/standing-setups.md)
+
+</div>
 
 ## Forty-five minutes of grounding
 

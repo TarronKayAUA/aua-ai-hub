@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-14
 ---
 
 # Prompt Library
 
-Reusable prompts for common faculty tasks: research, assessment writing, data analysis, and content creation. Each prompt is a starting template; replace the bracketed placeholders with your specifics, and use the copy button in the corner of each block.
+Reusable prompts for teaching, research, and studying: pick from the at-a-glance table below, or browse by section. Each prompt is a starting template; replace the bracketed placeholders with your specifics, and use the copy button in the corner of each block. The full text of each prompt sits behind a "Show the prompt" toggle to keep the page scannable; following any link to a prompt opens its toggle for you.
 
 !!! warning "Drafts pending review"
     Prompts marked Draft are still being tested and refined; Reviewed means a prompt has been through that process, not that its outputs are guaranteed. Treat outputs as first drafts: verify accuracy yourself, and never paste protected health information or student records into any AI tool.

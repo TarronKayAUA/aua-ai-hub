@@ -53,6 +53,7 @@ extra_css:
 extra_javascript:
   - javascripts/counter.js
   - javascripts/hardware.js
+  - javascripts/prompts.js
   - javascripts/better-answers.js
 
 plugins:

@@ -3,6 +3,7 @@
 #
 # category values: research | mcq_generation | mcq_vetting | data_analysis | content_generation | study_strategy
 # audience values: faculty | students | both
+# tagline: one line (about 12 words) for the at-a-glance table; required.
 # status values: draft | reviewed   (drafts carry a visible Draft badge;
 # the owner flips status to reviewed after checking a prompt personally)
 #
@@ -10,6 +11,7 @@
 # The owner replaces or refines them with institution-tested prompts.
 
 - title: Literature screening assistant
+  tagline: Second-screens titles and abstracts against your stated inclusion criteria
   category: research
   audience: faculty
   status: draft
@@ -79,6 +81,7 @@
       rubric.
 
 - title: Single best answer item writer
+  tagline: Drafts exam-quality single best answer items from your learning objectives
   category: mcq_generation
   audience: faculty
   status: draft
@@ -164,6 +167,7 @@
     class; recall its site of action).
 
 - title: NBME-style question tutor
+  tagline: Drills exam-style questions generated from your own course materials
   category: mcq_generation
   audience: students
   status: reviewed
@@ -349,6 +353,7 @@
       committed to a letter.
 
 - title: Item flaw checker
+  tagline: Audits draft exam items against standard technical flaw criteria
   category: mcq_vetting
   audience: faculty
   status: draft
@@ -421,6 +426,7 @@
       generic example, not my item.
 
 - title: Analysis plan reviewer
+  tagline: Reviews a study's analysis plan before any data is collected
   category: data_analysis
   audience: faculty
   status: draft
@@ -490,6 +496,7 @@
       plan with placeholders for every number, never invented values.
 
 - title: Lecture outline builder
+  tagline: Turns objectives into a session outline with active-learning checks
   category: content_generation
   audience: faculty
   status: draft
@@ -564,6 +571,7 @@
       and flag slide-heavy sections.
 
 - title: Research question coach
+  tagline: Sharpens a vague idea into an answerable research question
   category: research
   audience: both
   status: draft
@@ -640,6 +648,7 @@
       would ask about this question, no answers.
 
 - title: Pre-submission reviewer
+  tagline: A skeptical peer review of your manuscript before you submit
   category: research
   audience: both
   status: draft
@@ -714,6 +723,7 @@
       previous flags, naming what improved and what did not.
 
 - title: Reporting guideline auditor
+  tagline: Maps a manuscript against its reporting guideline, item by item
   category: research
   audience: faculty
   status: draft
@@ -772,6 +782,7 @@
       extension when one exists, and say when none does.
 
 - title: Score report study planner
+  tagline: Turns an exam performance report into an honest, interleaved study plan
   category: study_strategy
   audience: students
   status: draft
@@ -871,6 +882,7 @@
       teaches me to ignore plans.
 
 - title: Study plan progress check
+  tagline: Compares two reports and says honestly whether the plan is working
   category: study_strategy
   audience: students
   status: draft

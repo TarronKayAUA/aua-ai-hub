@@ -6,7 +6,35 @@ last_reviewed: 2026-07-14
 
 **For medical students · a map of what this site offers you**
 
-This site was built for the whole American University of Antigua College of Medicine (AUACOM) community, and much of it was built with you specifically in mind. Nothing here replaces your course materials or your own judgment; artificial intelligence (AI) tools are study aids with sharp edges, and knowing where the edges are is most of the skill. This page is the map.
+This site was built for the whole American University of Antigua College of Medicine (AUACOM) community, and much of it was built with you specifically in mind. Nothing here replaces your course materials or your own judgment; artificial intelligence (AI) tools are study aids with sharp edges, and knowing where the edges are is most of the skill. Three doors cover most visits; the full map follows below.
+
+<div class="grid cards" markdown>
+
+- :material-head-lightbulb:{ .lg .middle } __Learn the basics__
+
+    ---
+
+    Three short modules cover most of what you need: how AI works, prompting habits, and the rules.
+
+    [Start the pathway](pathway/index.md)
+
+- :material-book-open-variant:{ .lg .middle } __Study with AI__
+
+    ---
+
+    An exam-style question tutor built from your own lecture notes, set up once per course.
+
+    [Set it up](tools/standing-setups.md)
+
+- :material-chart-line:{ .lg .middle } __After an exam__
+
+    ---
+
+    Turn a score report into an honest study plan your advisor can hold you to.
+
+    [Read your reports](playbooks/score-reports.md)
+
+</div>
 
 ## Thirty-five minutes that cover most of it
 
@@ -30,12 +58,12 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 
 ## Studying with AI
 
-- The [Medical Learning tools](tools/index.md#medical-learning) in the directory are built for exactly this: practice questions, case practice, tutoring. Statuses there are provisional until the AI Committee ratifies them, and listings are not endorsements.
-- The [prompt library](prompts/index.md)'s National Board of Medical Examiners (NBME)-style question tutor was co-written with faculty and reviewed: a study mode that explains as you go, and an exam mode that drills first and debriefs after. Set it up once per course, with your lecture notes attached, using [Standing Setups](tools/standing-setups.md).
-- After an exam, the [score reports playbook](playbooks/score-reports.md) turns your NBME INSIGHTS report or in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it.
-- Practicing differentials against an AI case is legitimate and effective, with one discipline: a real encounter gets stripped to a teaching abstraction first (age band, presentation pattern, nothing identifiable). [Clinical Contexts](pathway/clinical.md) shows exactly where that line sits.
-- [Getting Better Answers](basics/better-answers.md) explains the three levers that decide answer quality: what goes into the context window, what persists as memory, and standing instructions. The token estimator there is worth two minutes of playing.
-- Fluency is not accuracy. The [misconceptions page](basics/misconceptions.md) covers how to calibrate trust by task, and it matters double for anything you might carry into an exam or a ward.
+- **Finding study tools**: the [Medical Learning tools](tools/index.md#medical-learning) in the directory are built for exactly this: practice questions, case practice, tutoring. Statuses there are provisional until the AI Committee ratifies them, and listings are not endorsements.
+- **Drilling exam-style questions**: the [prompt library](prompts/index.md)'s National Board of Medical Examiners (NBME)-style question tutor was co-written with faculty and reviewed: a study mode that explains as you go, and an exam mode that drills first and debriefs after. Set it up once per course, with your lecture notes attached, using [Standing Setups](tools/standing-setups.md).
+- **After an exam**: the [score reports playbook](playbooks/score-reports.md) turns your NBME INSIGHTS report or in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it.
+- **Practicing differentials**: working a case against an AI is legitimate and effective, with one discipline: a real encounter gets stripped to a teaching abstraction first (age band, presentation pattern, nothing identifiable). [Clinical Contexts](pathway/clinical.md) shows exactly where that line sits.
+- **Getting better answers**: [Getting Better Answers](basics/better-answers.md) explains the three levers that decide answer quality: what goes into the context window, what persists as memory, and standing instructions. The token estimator there is worth two minutes of playing.
+- **Calibrating trust**: fluency is not accuracy. The [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, and it matters double for anything you might carry into an exam or a ward.
 
 ## Staying current
 

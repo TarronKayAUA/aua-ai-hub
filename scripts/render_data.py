@@ -494,6 +494,15 @@ def _render_prompt_resources_general(grouped: dict[str, list]) -> str:
 # --- prompts ------------------------------------------------------------------
 
 
+def _prompt_slug(title: str) -> str:
+    """Stable anchor for a prompt heading, from the title alone.
+
+    The default toc slug would include the badge text, so a link would
+    break the day a prompt's status flips from Draft to Reviewed.
+    """
+    return re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+
+
 def _render_prompts(config, resource_groups: dict[str, list]) -> str:
     prompts = _load(_data_dir(config) / "prompts.yaml")
 
@@ -508,9 +517,30 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
             raise ValueError(
                 f"render_data hook: unknown prompt status {entry['status']!r}"
             )
+        if not entry.get("tagline"):
+            raise ValueError(
+                f"render_data hook: prompt {entry['title']!r} has no tagline "
+                "(required for the at-a-glance table)"
+            )
         by_category.setdefault(category, []).append(entry)
 
-    lines = []
+    slugs = [_prompt_slug(e["title"]) for e in prompts]
+    if len(set(slugs)) != len(slugs):
+        raise ValueError("render_data hook: duplicate prompt anchor slugs")
+
+    lines = ["## The library at a glance", ""]
+    lines.append("| Prompt | For | Status | What it does |")
+    lines.append("| --- | --- | --- | --- |")
+    for category, label in PROMPT_CATEGORY_LABELS.items():
+        for entry in by_category.get(category, []):
+            status_label, _ = PROMPT_STATUS_LABELS[entry["status"]]
+            lines.append(
+                f"| [{entry['title']}](#{_prompt_slug(entry['title'])}) "
+                f"| {entry['audience']} | {status_label} "
+                f"| {entry['tagline'].strip()} |"
+            )
+    lines.append("")
+
     rendered = 0
     resources_placed = 0
     per_category = {}
@@ -524,14 +554,21 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
             status_label, status_css = PROMPT_STATUS_LABELS[entry["status"]]
             badge = _badge(status_label, status_css)
             audience = _badge(entry["audience"], "badge-unconfirmed")
-            lines.append(f"### {entry['title']} {badge} {audience}")
+            slug = _prompt_slug(entry["title"])
+            lines.append(
+                f"### {entry['title']} {badge} {audience} "
+                f"{{: #{slug} data-toc-label=\"{entry['title']}\" }}"
+            )
             lines.append("")
             if entry.get("notes"):
                 lines.append(f"*{entry['notes'].strip()}*")
                 lines.append("")
-            lines.append("```text")
-            lines.append(entry["prompt"].rstrip())
-            lines.append("```")
+            lines.append('??? example "Show the prompt"')
+            lines.append("")
+            lines.append("    ```text")
+            for prompt_line in entry["prompt"].rstrip().split("\n"):
+                lines.append(f"    {prompt_line}" if prompt_line else "")
+            lines.append("    ```")
             lines.append("")
             rendered += 1
         category_resources = resource_groups.get(category, [])
