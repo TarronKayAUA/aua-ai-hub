@@ -287,7 +287,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A machine learning model that combines multiple data types for robust treatment response prediction in ovarian cancer is advancing personalized approaches to oncology care <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. In emergency medicine, a unified multi-modal foundation model is designed to support end-to-end workflows, reflecting the expanding integration of AI across acute clinical environments <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Fairness concerns in multimodal clinical decision support applications continue to be systematically reviewed to inform equitable deployment <a href="https://www.nature.com/articles/s41746-026-03000-x">[5]</a>. Additionally, a transformer-based AI model predicts both ischemic and bleeding risks in patients on dual antiplatelet therapy following coronary intervention, contributing to risk stratification for cardiac care <a href="https://www.nature.com/articles/s41746-026-02977-9">[6]</a>.</p>
+<p>A machine learning model that fuses multiple data types to predict treatment response in ovarian cancer is advancing precision population health and personalized oncology <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Meanwhile, a unified multi-modal foundation model is supporting end-to-end emergency care, underscoring the growing adoption of comprehensive AI tools in clinical workflows <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Addressing concerns about the equity of such systems, a systematic review has documented fairness issues in multimodal clinical decision support, highlighting the need for balanced development <a href="https://www.nature.com/articles/s41746-026-03000-x">[5]</a>. Recent benchmarking efforts are evaluating language models on complex question answering tasks involving irregular clinical time series, which informs risk assessment and patient monitoring <a href="https://arxiv.org/abs/2607.09880">[1]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -332,6 +332,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02977-9">Transformer-DAPT: AI-based dynamic assessment of ischemic and bleeding risks in patients on DAPT following PCI</a>
     <p class="news-card-summary">Peer-reviewed study describes a transformer-based model for predicting ischemic and bleeding risks in patients receiving dual antiplatelet therapy after coronary intervention.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03001-w">Multimodal AI for predicting comorbid REM sleep behavior disorder in major depressive disorder</a>
+    <p class="news-card-summary">Peer-reviewed study uses multimodal AI to predict comorbid REM sleep behavior disorder in patients with major depressive disorder.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03003-8">Smartphone-based kinematic biomarkers for degenerative cervical myelopathy screening robust to physiological aging</a>
+    <p class="news-card-summary">Peer-reviewed study develops smartphone-based kinematic biomarkers for screening degenerative cervical myelopathy that remain robust across ages.</p>
   </div>
 </div>
 <div class="news-card">
