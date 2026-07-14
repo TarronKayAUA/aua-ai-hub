@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A machine learning model that fuses multiple data types to predict treatment response in ovarian cancer is advancing precision population health and personalized oncology <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Meanwhile, a unified multi-modal foundation model is supporting end-to-end emergency care, underscoring the growing adoption of comprehensive AI tools in clinical workflows <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Addressing concerns about the equity of such systems, a systematic review has documented fairness issues in multimodal clinical decision support, highlighting the need for balanced development <a href="https://www.nature.com/articles/s41746-026-03000-x">[5]</a>. Recent benchmarking efforts are evaluating language models on complex question answering tasks involving irregular clinical time series, which informs risk assessment and patient monitoring <a href="https://arxiv.org/abs/2607.09880">[1]</a>.</p>
+<p>A machine learning model integrating multiple data types has demonstrated robust prediction of treatment response in ovarian cancer, marking progress toward personalized population health in oncology <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Meanwhile, systematic review highlights fairness challenges in multimodal machine learning applications supporting clinical decision making, emphasizing the need for equitable practices as these technologies advance <a href="https://www.nature.com/articles/s41746-026-03000-x">[5]</a>. A unified multi-modal foundation model has been developed for end-to-end emergency care, offering potential improvements to workflow integration and patient management across settings <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Researchers have also introduced a new benchmark to evaluate language models&#x27; performance in answering questions from irregular clinical time series data sourced from patient monitoring and risk assessments <a href="https://arxiv.org/abs/2607.09880">[1]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -76,6 +76,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02985-9">Safety boundary maintenance in consumer AI systems responding to pediatric health queries: a cross-platform benchmark evaluation under naturalistic and adversarially pressured conditions</a>
+    <p class="news-card-summary">A benchmark evaluation tests how consumer AI systems maintain safety boundaries when answering pediatric health questions under both realistic and adversarial conditions.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78942">Design and Preliminary Testing of the CardioCare System in Health Checkup Centers: Implementation Report</a>
     <p class="news-card-summary">CardioCare is a digital system combining cardiovascular disease risk prediction with personalized health management for screening programs in Chinese health checkup centers.</p>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02853-6">Humanoid robots in the operating room : a framework for staged integration of embodied AI in surgery</a>
     <p class="news-card-summary">Framework proposes a staged integration approach for deploying humanoid robots in surgical settings, balancing embodied AI capabilities with safety and workflow constraints.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02950-6">Impact of an AI algorithm for multi-day prediction of incident atrial fibrillation on clinical decision-making: PROVISION-AF study</a>
-    <p class="news-card-summary">Study evaluated how an AI algorithm predicting incident atrial fibrillation over multiple days affects clinical decision-making and workflow in practice.</p>
   </div>
 </div>
 </div>
