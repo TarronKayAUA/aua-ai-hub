@@ -295,9 +295,15 @@ def _render_open_models(config) -> str:
         per_modality[label] = len(group)
         lines.append(f"### {label}")
         lines.append("")
-        lines.append('<div class="tool-grid">')
+        # Collapsed like the tool categories above; prompts.js expands on
+        # arrival by link. Models carry licenses, not statuses, so the bar
+        # needs only the count.
+        noun = "model family" if len(group) == 1 else "model families"
+        lines.append(f'??? abstract "Show the {len(group)} {noun}"')
+        lines.append("")
+        body = ['<div class="tool-grid">']
         for entry in sorted(group, key=lambda m: m["name"].lower()):
-            lines.append(
+            body.append(
                 '<div class="tool-card">\n'
                 '  <div class="tool-card-head">'
                 f'<a href="{entry["url"]}">{entry["name"]}</a></div>\n'
@@ -307,7 +313,10 @@ def _render_open_models(config) -> str:
                 "</div>"
             )
             rendered += 1
-        lines.append("</div>")
+        body.append("</div>")
+        for chunk in body:
+            for line in chunk.split("\n"):
+                lines.append(f"    {line}" if line else "")
         lines.append("")
 
     print("render_data: open models verification")

@@ -17,7 +17,7 @@ Whatever a tool's status, two rules always apply: never enter protected health i
 
 ## Open-weights models
 
-The assistants above run in their vendor's cloud. Open-weights models are different: the model file itself is published for anyone to download and run on their own hardware, so nothing you type leaves your machine. The Local Models tools above are the usual way to run them; [Running AI Models Locally](local.md) is a practical walkthrough. Capability rankings shift quickly; the [Benchmarks page](../benchmarks.md) tracks current standings. Licenses differ by family, so check the license before any use beyond personal experimentation.
+The assistants above run in their vendor's cloud. Open-weights models are different: the model file itself is published for anyone to download and run on their own hardware, so nothing you type leaves your machine. The Local Models tools above are the usual way to run them; [Running AI Models Locally](local.md) is a practical walkthrough. Capability rankings shift quickly; the [Benchmarks page](../benchmarks.md) tracks current standings. Model families carry a license instead of a governance status, because there is no service operator to have a relationship with; as everywhere in this directory, a listing is not an endorsement, and the license named on each entry is the fact to check before any use beyond personal experimentation.
 
 The major open-weight families as of June 2026:
 
