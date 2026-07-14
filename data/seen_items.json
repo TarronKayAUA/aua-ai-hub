@@ -16103,6 +16103,230 @@
    "first_seen": "2026-07-14T03:37:00.962758+00:00",
    "kept": false,
    "reason": "vendor marketing"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&ff=20260714022646&v=2.20.0",
+   "title_hash": "099a2370fdc46265509c2639acb514cc",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": true,
+   "title": "Medical students' attitudes, usage patterns, and associated factors with DeepSeek adoption in education: a cross-sectional study in China",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-14T10:00:00+00:00",
+   "summary": "Cross-sectional survey of Chinese medical students found 94.8% willing to use DeepSeek for education but expressed caution about privacy, reliability, and dependency.",
+   "category": "medical_education",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09880",
+   "title_hash": "9678a89dfd3ed9172157ac36c0aa7936",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": true,
+   "title": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-14T04:00:00+00:00",
+   "summary": "New benchmark evaluates language models on question answering over sparse, irregularly sampled clinical time series data from patient monitoring and risk assessment.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09885",
+   "title_hash": "3634bed3e0a89f2b3fb9cf4fbce33585",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": true,
+   "title": "Index SLM Technical Report",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-14T04:00:00+00:00",
+   "summary": "Index-1.9B open small language model series from Bilibili includes base, pure, and instruction-tuned variants trained on 2.8 trillion Chinese and English tokens.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09908",
+   "title_hash": "8484f849c84ae334f0dc38e15b58fb77",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09921",
+   "title_hash": "631807a1c5b02d76653aca2f0fdd6d5f",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09932",
+   "title_hash": "d31d66bcdfb9bd6622bb9249ff4b9746",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": true,
+   "title": "Faithful by Design: Evaluating and Improving LLM-Generated Clinical Trial Summaries for Multi-Stakeholder Audiences",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-14T04:00:00+00:00",
+   "summary": "Study introduces evaluation framework for measuring faithfulness of language model summaries of clinical trial results across healthcare provider, patient, and payer audiences.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09957",
+   "title_hash": "cc053f2b6c484ef295fc2fe077063820",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.09999",
+   "title_hash": "ed9b093f79379f6ac30bd7a8ab25f1d7",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": true,
+   "title": "Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-14T04:00:00+00:00",
+   "summary": "Study shows quantization can silently alter language model reasoning patterns even when task accuracy remains unchanged, using validated taxonomy of reasoning failures.",
+   "category": "general_ai",
+   "score": 4.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10020",
+   "title_hash": "403343999f2f868d0e81362f13f63e66",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10092",
+   "title_hash": "da0f884136daf7311cb58d829d37842a",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10114",
+   "title_hash": "f972c80a5b1653d219c66647a19014eb",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10194",
+   "title_hash": "831cde5442727493134b44036fbf8bb5",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10198",
+   "title_hash": "3609c7b5793f8a521bba51a55e6145cd",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10235",
+   "title_hash": "c191cccdfdc8831ce4d5eb5b9b904fc1",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10245",
+   "title_hash": "653561ac79733c48b9a69a5db7f4d1b6",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10248",
+   "title_hash": "b9500dd080283e526731f1d538ad5244",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10256",
+   "title_hash": "db3b81a8a72daf78b9531a5de7ab0291",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10268",
+   "title_hash": "6622053f28cfe754f9693acab33b67a0",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10310",
+   "title_hash": "e54de6b9a118c7afd874c84027181b55",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10312",
+   "title_hash": "c605fd086f6a8e1318d518471c172e6e",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10317",
+   "title_hash": "625c4c1730c3e4d4de7caf7b3dc392ee",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10380",
+   "title_hash": "7d9d2074b0ae542564d8d658cd8ca7bf",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10386",
+   "title_hash": "478c1e04641a66e92b76cad0134379ce",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": true,
+   "title": "Structured Thoughts For Improved Reasoning And Context Pruning",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-14T04:00:00+00:00",
+   "summary": "Open-source platform for compound AI system evaluation provides design-of-experiments methodology to determine which components most affect system quality.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10390",
+   "title_hash": "15d2c13c36b8a106783596605377b3aa",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10428",
+   "title_hash": "f5e80eeb5e61f00bf7aa5c747e684c3b",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.10476",
+   "title_hash": "0f8fcceaf7c6ae38d94004a4b0de1d81",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": true,
+   "title": "Hallucination Detection in Large Language Models Using Diversion Decoding",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-14T04:00:00+00:00",
+   "summary": "Method using diversion decoding detects hallucinations in language models by identifying factually incorrect or fabricated statements.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uvcjd0/i_benchmarked_15_ewaste_gpus_with_modern_workloads",
+   "title_hash": "b74659ed61fdba8455cecb1dc2be767a",
+   "first_seen": "2026-07-14T06:26:45.923086+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
@@ -16232,18 +16456,18 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Research demonstrates that generative AI can reliably score open-ended question assessments in undergraduate medical education, supporting its potential to streamline evaluation processes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[4]</a>. The development and validation of a generative AI tool also assist educators in classifying assessment items by Bloom&#x27;s Taxonomy level, highlighting AI&#x27;s role in enhancing assessment validity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[1]</a>. Meanwhile, medical students report varied experiences and expectations regarding the integration of large language models into education, suggesting a need for careful implementation that addresses student concerns <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[3]</a>. As medical educators adapt to generative AI, qualitative findings reveal shifting perceptions of professional roles and underscore evolving responsibilities in this technological context <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[2]</a>. A practical guide provides evidence-informed tips for responsible AI use, emphasizing safeguards in course design <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[5]</a>.",
-   "hash": "956541bc221341ef",
-   "date": "July 13, 2026"
+   "text": "The development and validation of a generative artificial intelligence tool for classifying assessment items by Bloom&#x27;s Taxonomy level signals a shift toward leveraging AI to increase medical assessment validity and streamline educational processes for faculty <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[2]</a>. Studies indicate medical students show high willingness to adopt AI-driven systems such as DeepSeek, although concerns about privacy, reliability, and dependency remain <a href=\"https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0\">[1]</a>. Qualitative research reports that medical educators perceive their professional roles changing in response to generative AI integration, requiring new competencies and adaptations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[3]</a>. Meanwhile, practical guidance is emerging to support responsible implementation of AI in health professions education, addressing ethical and operational challenges for course designers <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[6]</a>.",
+   "hash": "a92b23ad909929d0",
+   "date": "July 14, 2026"
   },
   "clinical_practice": {
-   "text": "A portable radiofrequency brain scanner using deep learning has enabled rapid stroke type detection at the point of care, signaling important advances in diagnostic speed and mobility <a href=\"https://www.nature.com/articles/s41746-026-02996-6\">[6]</a>. Studies are also evaluating AI algorithms for predicting incident atrial fibrillation and how these tools affect clinical decision-making and workflow in practice <a href=\"https://www.nature.com/articles/s41746-026-02950-6\">[8]</a>. In another area, machine learning models that combine diverse data types are now improving predictions of treatment response in ovarian cancer, supporting personalized oncology approaches <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[1]</a>. The deployment and effectiveness of AI agents in clinical practice are systematically mapped, with implementation outcomes highlighted <a href=\"https://www.nature.com/articles/s41746-026-02960-4\">[10]</a>. Investigations have also identified risks of entity attribution failure in clinical retrieval-augmented generation, underscoring ongoing concerns about accuracy in AI-generated evidence <a href=\"https://arxiv.org/abs/2607.09349\">[5]</a>.",
-   "hash": "a8c205a47a8aa0d6",
+   "text": "A machine learning model capable of predicting treatment response in ovarian cancer by combining multiple data types demonstrates progress in personalized oncology and population health <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[3]</a>. Ongoing implementation of digital systems for cardiovascular disease risk prediction and individualized health management is documented in Chinese health checkup centers, reflecting adoption in real-world screening programs <a href=\"https://medinform.jmir.org/2026/1/e78942\">[4]</a>. Portable radiofrequency brain scanning, enabled by deep learning, supports rapid stroke type detection at the point of care <a href=\"https://www.nature.com/articles/s41746-026-02996-6\">[8]</a>. A recent systematic evidence map outlines the effectiveness and implementation of AI agents across clinical practice settings, highlighting growing integration with existing workflows <a href=\"https://www.nature.com/articles/s41746-026-02960-4\">[12]</a>.",
+   "hash": "6c100d0f4f46c555",
    "date": "July 14, 2026"
   },
   "general_ai": {
-   "text": "Recent analysis draws attention to the real operational costs of frontier large language models, underlining the need for careful budgeting and planning in medical applications <a href=\"https://playcode.io/blog/real-price-of-frontier-models\">[1]</a>. Advances in benchmarking are evident with the WILDTRACE evaluation, which tests long-context models on reasoning tasks involving integration of evidence across distant parts of documents-a relevant challenge for clinical case reviews or academic research <a href=\"https://arxiv.org/abs/2607.09328\">[3]</a>. Meanwhile, a self-guided test-time training method demonstrates improved performance for these long-context models by enabling more effective identification and use of relevant information within lengthy texts <a href=\"https://arxiv.org/abs/2607.09415\">[4]</a>. Finally, the PLURAL dataset addresses value alignment, offering data on value-focused preferences from 92 countries to help tailor models toward culturally representative outcomes <a href=\"https://arxiv.org/abs/2607.08034\">[9]</a>.",
-   "hash": "0b7c9f0ba1e4b096",
+   "text": "Quantization in large language models can change their reasoning patterns in subtle ways without affecting task accuracy, raising concerns for faculty and students about silent failure modes during clinical or research applications <a href=\"https://arxiv.org/abs/2607.09999\">[2]</a>. Effective evaluation of compound AI systems is essential; a new open-source platform offers design-of-experiments tools to pinpoint which components most impact overall system quality <a href=\"https://arxiv.org/abs/2607.10386\">[3]</a>. Detecting factual inaccuracies or hallucinations has become more practical using diversion decoding, a method that helps identify when models generate incorrect or fabricated statements <a href=\"https://arxiv.org/abs/2607.10476\">[4]</a>. The real-world operational costs of deploying frontier models, including inference expenses and overhead, may affect choices in adoption and use <a href=\"https://playcode.io/blog/real-price-of-frontier-models\">[5]</a>.",
+   "hash": "1c11d2e4c8a303b4",
    "date": "July 14, 2026"
   }
  },

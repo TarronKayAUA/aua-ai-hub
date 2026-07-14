@@ -11,11 +11,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Research demonstrates that generative AI can reliably score open-ended question assessments in undergraduate medical education, supporting its potential to streamline evaluation processes <a href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[4]</a>. The development and validation of a generative AI tool also assist educators in classifying assessment items by Bloom&#x27;s Taxonomy level, highlighting AI&#x27;s role in enhancing assessment validity <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[1]</a>. Meanwhile, medical students report varied experiences and expectations regarding the integration of large language models into education, suggesting a need for careful implementation that addresses student concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[3]</a>. As medical educators adapt to generative AI, qualitative findings reveal shifting perceptions of professional roles and underscore evolving responsibilities in this technological context <a href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[2]</a>. A practical guide provides evidence-informed tips for responsible AI use, emphasizing safeguards in course design <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
+<p>The development and validation of a generative artificial intelligence tool for classifying assessment items by Bloom&#x27;s Taxonomy level signals a shift toward leveraging AI to increase medical assessment validity and streamline educational processes for faculty <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[2]</a>. Studies indicate medical students show high willingness to adopt AI-driven systems such as DeepSeek, although concerns about privacy, reliability, and dependency remain <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[1]</a>. Qualitative research reports that medical educators perceive their professional roles changing in response to generative AI integration, requiring new competencies and adaptations <a href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[3]</a>. Meanwhile, practical guidance is emerging to support responsible implementation of AI in health professions education, addressing ethical and operational challenges for course designers <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">Medical students&#x27; attitudes, usage patterns, and associated factors with DeepSeek adoption in education: a cross-sectional study in China</a>
+    <p class="news-card-summary">Cross-sectional survey of Chinese medical students found 94.8% willing to use DeepSeek for education but expressed caution about privacy, reliability, and dependency.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
@@ -287,11 +294,25 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A portable radiofrequency brain scanner using deep learning has enabled rapid stroke type detection at the point of care, signaling important advances in diagnostic speed and mobility <a href="https://www.nature.com/articles/s41746-026-02996-6">[6]</a>. Studies are also evaluating AI algorithms for predicting incident atrial fibrillation and how these tools affect clinical decision-making and workflow in practice <a href="https://www.nature.com/articles/s41746-026-02950-6">[8]</a>. In another area, machine learning models that combine diverse data types are now improving predictions of treatment response in ovarian cancer, supporting personalized oncology approaches <a href="https://www.nature.com/articles/s41746-026-02991-x">[1]</a>. The deployment and effectiveness of AI agents in clinical practice are systematically mapped, with implementation outcomes highlighted <a href="https://www.nature.com/articles/s41746-026-02960-4">[10]</a>. Investigations have also identified risks of entity attribution failure in clinical retrieval-augmented generation, underscoring ongoing concerns about accuracy in AI-generated evidence <a href="https://arxiv.org/abs/2607.09349">[5]</a>.</p>
+<p>A machine learning model capable of predicting treatment response in ovarian cancer by combining multiple data types demonstrates progress in personalized oncology and population health <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Ongoing implementation of digital systems for cardiovascular disease risk prediction and individualized health management is documented in Chinese health checkup centers, reflecting adoption in real-world screening programs <a href="https://medinform.jmir.org/2026/1/e78942">[4]</a>. Portable radiofrequency brain scanning, enabled by deep learning, supports rapid stroke type detection at the point of care <a href="https://www.nature.com/articles/s41746-026-02996-6">[8]</a>. A recent systematic evidence map outlines the effectiveness and implementation of AI agents across clinical practice settings, highlighting growing integration with existing workflows <a href="https://www.nature.com/articles/s41746-026-02960-4">[12]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09880">CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series</a>
+    <p class="news-card-summary">New benchmark evaluates language models on question answering over sparse, irregularly sampled clinical time series data from patient monitoring and risk assessment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09932">Faithful by Design: Evaluating and Improving LLM-Generated Clinical Trial Summaries for Multi-Stakeholder Audiences</a>
+    <p class="news-card-summary">Study introduces evaluation framework for measuring faithfulness of language model summaries of clinical trial results across healthcare provider, patient, and payer audiences.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
@@ -599,11 +620,39 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Recent analysis draws attention to the real operational costs of frontier large language models, underlining the need for careful budgeting and planning in medical applications <a href="https://playcode.io/blog/real-price-of-frontier-models">[1]</a>. Advances in benchmarking are evident with the WILDTRACE evaluation, which tests long-context models on reasoning tasks involving integration of evidence across distant parts of documents-a relevant challenge for clinical case reviews or academic research <a href="https://arxiv.org/abs/2607.09328">[3]</a>. Meanwhile, a self-guided test-time training method demonstrates improved performance for these long-context models by enabling more effective identification and use of relevant information within lengthy texts <a href="https://arxiv.org/abs/2607.09415">[4]</a>. Finally, the PLURAL dataset addresses value alignment, offering data on value-focused preferences from 92 countries to help tailor models toward culturally representative outcomes <a href="https://arxiv.org/abs/2607.08034">[9]</a>.</p>
+<p>Quantization in large language models can change their reasoning patterns in subtle ways without affecting task accuracy, raising concerns for faculty and students about silent failure modes during clinical or research applications <a href="https://arxiv.org/abs/2607.09999">[2]</a>. Effective evaluation of compound AI systems is essential; a new open-source platform offers design-of-experiments tools to pinpoint which components most impact overall system quality <a href="https://arxiv.org/abs/2607.10386">[3]</a>. Detecting factual inaccuracies or hallucinations has become more practical using diversion decoding, a method that helps identify when models generate incorrect or fabricated statements <a href="https://arxiv.org/abs/2607.10476">[4]</a>. The real-world operational costs of deploying frontier models, including inference expenses and overhead, may affect choices in adoption and use <a href="https://playcode.io/blog/real-price-of-frontier-models">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09885">Index SLM Technical Report</a>
+    <p class="news-card-summary">Index-1.9B open small language model series from Bilibili includes base, pure, and instruction-tuned variants trained on 2.8 trillion Chinese and English tokens.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09999">Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts</a>
+    <p class="news-card-summary">Study shows quantization can silently alter language model reasoning patterns even when task accuracy remains unchanged, using validated taxonomy of reasoning failures.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.10386">Structured Thoughts For Improved Reasoning And Context Pruning</a>
+    <p class="news-card-summary">Open-source platform for compound AI system evaluation provides design-of-experiments methodology to determine which components most affect system quality.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.10476">Hallucination Detection in Large Language Models Using Diversion Decoding</a>
+    <p class="news-card-summary">Method using diversion decoding detects hallucinations in language models by identifying factually incorrect or fabricated statements.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 13, 2026</span></div>

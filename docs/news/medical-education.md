@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Research demonstrates that generative AI can reliably score open-ended question assessments in undergraduate medical education, supporting its potential to streamline evaluation processes <a href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[4]</a>. The development and validation of a generative AI tool also assist educators in classifying assessment items by Bloom&#x27;s Taxonomy level, highlighting AI&#x27;s role in enhancing assessment validity <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[1]</a>. Meanwhile, medical students report varied experiences and expectations regarding the integration of large language models into education, suggesting a need for careful implementation that addresses student concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[3]</a>. As medical educators adapt to generative AI, qualitative findings reveal shifting perceptions of professional roles and underscore evolving responsibilities in this technological context <a href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[2]</a>. A practical guide provides evidence-informed tips for responsible AI use, emphasizing safeguards in course design <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
+<p>The development and validation of a generative artificial intelligence tool for classifying assessment items by Bloom&#x27;s Taxonomy level signals a shift toward leveraging AI to increase medical assessment validity and streamline educational processes for faculty <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[2]</a>. Studies indicate medical students show high willingness to adopt AI-driven systems such as DeepSeek, although concerns about privacy, reliability, and dependency remain <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[1]</a>. Qualitative research reports that medical educators perceive their professional roles changing in response to generative AI integration, requiring new competencies and adaptations <a href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[3]</a>. Meanwhile, practical guidance is emerging to support responsible implementation of AI in health professions education, addressing ethical and operational challenges for course designers <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[6]</a>.</p>
+<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">Medical students&#x27; attitudes, usage patterns, and associated factors with DeepSeek adoption in education: a cross-sectional study in China</a>
+    <p class="news-card-summary">Cross-sectional survey of Chinese medical students found 94.8% willing to use DeepSeek for education but expressed caution about privacy, reliability, and dependency.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Mapping artificial intelligence integration in objective structured clinical examinations: A scoping review</a>
     <p class="news-card-summary">Scoping review mapping artificial intelligence applications in objective structured clinical examinations for assessment of clinical competence.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e79418">e-Learning, Distance Education, and Virtual and Augmented Reality in Orthopedic Training: European Cross-Sectional Survey of Trainee Acceptance Guided by the Technology Acceptance Model and Unified Theory of Acceptance and Use of Technology</a>
-    <p class="news-card-summary">European survey assesses trainee acceptance of digital learning technologies in orthopedic training using technology adoption models to identify barriers and facilitators.</p>
   </div>
 </div>
 </div>

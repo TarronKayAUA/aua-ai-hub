@@ -13,11 +13,25 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A portable radiofrequency brain scanner using deep learning has enabled rapid stroke type detection at the point of care, signaling important advances in diagnostic speed and mobility <a href="https://www.nature.com/articles/s41746-026-02996-6">[6]</a>. Studies are also evaluating AI algorithms for predicting incident atrial fibrillation and how these tools affect clinical decision-making and workflow in practice <a href="https://www.nature.com/articles/s41746-026-02950-6">[8]</a>. In another area, machine learning models that combine diverse data types are now improving predictions of treatment response in ovarian cancer, supporting personalized oncology approaches <a href="https://www.nature.com/articles/s41746-026-02991-x">[1]</a>. The deployment and effectiveness of AI agents in clinical practice are systematically mapped, with implementation outcomes highlighted <a href="https://www.nature.com/articles/s41746-026-02960-4">[10]</a>. Investigations have also identified risks of entity attribution failure in clinical retrieval-augmented generation, underscoring ongoing concerns about accuracy in AI-generated evidence <a href="https://arxiv.org/abs/2607.09349">[5]</a>.</p>
+<p>A machine learning model capable of predicting treatment response in ovarian cancer by combining multiple data types demonstrates progress in personalized oncology and population health <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Ongoing implementation of digital systems for cardiovascular disease risk prediction and individualized health management is documented in Chinese health checkup centers, reflecting adoption in real-world screening programs <a href="https://medinform.jmir.org/2026/1/e78942">[4]</a>. Portable radiofrequency brain scanning, enabled by deep learning, supports rapid stroke type detection at the point of care <a href="https://www.nature.com/articles/s41746-026-02996-6">[8]</a>. A recent systematic evidence map outlines the effectiveness and implementation of AI agents across clinical practice settings, highlighting growing integration with existing workflows <a href="https://www.nature.com/articles/s41746-026-02960-4">[12]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09880">CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series</a>
+    <p class="news-card-summary">New benchmark evaluates language models on question answering over sparse, irregularly sampled clinical time series data from patient monitoring and risk assessment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09932">Faithful by Design: Evaluating and Improving LLM-Generated Clinical Trial Summaries for Multi-Stakeholder Audiences</a>
+    <p class="news-card-summary">Study introduces evaluation framework for measuring faithfulness of language model summaries of clinical trial results across healthcare provider, patient, and payer audiences.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02646-x">Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease</a>
     <p class="news-card-summary">Peer-reviewed study reports machine learning detection of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02987-7">Embedded transparency in artificial intelligence: a prerequisite for equity and representation in AI-enabled clinical trials</a>
-    <p class="news-card-summary">Peer-reviewed study argues that transparent, interpretable AI models in clinical trial infrastructure are essential to prevent amplification of existing health disparities in evidence generation.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90052">Evaluation of an AI Medical Scribe After 236,153 Notes Generated Across Care Levels in a European Health System: Mixed Methods Retrospective Observational Study</a>
-    <p class="news-card-summary">Mixed methods study evaluates real-world performance of an AI medical scribe across care levels in a European health system based on over 236,000 generated notes.</p>
   </div>
 </div>
 </div>

@@ -13,11 +13,39 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Recent analysis draws attention to the real operational costs of frontier large language models, underlining the need for careful budgeting and planning in medical applications <a href="https://playcode.io/blog/real-price-of-frontier-models">[1]</a>. Advances in benchmarking are evident with the WILDTRACE evaluation, which tests long-context models on reasoning tasks involving integration of evidence across distant parts of documents-a relevant challenge for clinical case reviews or academic research <a href="https://arxiv.org/abs/2607.09328">[3]</a>. Meanwhile, a self-guided test-time training method demonstrates improved performance for these long-context models by enabling more effective identification and use of relevant information within lengthy texts <a href="https://arxiv.org/abs/2607.09415">[4]</a>. Finally, the PLURAL dataset addresses value alignment, offering data on value-focused preferences from 92 countries to help tailor models toward culturally representative outcomes <a href="https://arxiv.org/abs/2607.08034">[9]</a>.</p>
+<p>Quantization in large language models can change their reasoning patterns in subtle ways without affecting task accuracy, raising concerns for faculty and students about silent failure modes during clinical or research applications <a href="https://arxiv.org/abs/2607.09999">[2]</a>. Effective evaluation of compound AI systems is essential; a new open-source platform offers design-of-experiments tools to pinpoint which components most impact overall system quality <a href="https://arxiv.org/abs/2607.10386">[3]</a>. Detecting factual inaccuracies or hallucinations has become more practical using diversion decoding, a method that helps identify when models generate incorrect or fabricated statements <a href="https://arxiv.org/abs/2607.10476">[4]</a>. The real-world operational costs of deploying frontier models, including inference expenses and overhead, may affect choices in adoption and use <a href="https://playcode.io/blog/real-price-of-frontier-models">[5]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09885">Index SLM Technical Report</a>
+    <p class="news-card-summary">Index-1.9B open small language model series from Bilibili includes base, pure, and instruction-tuned variants trained on 2.8 trillion Chinese and English tokens.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.09999">Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts</a>
+    <p class="news-card-summary">Study shows quantization can silently alter language model reasoning patterns even when task accuracy remains unchanged, using validated taxonomy of reasoning failures.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.10386">Structured Thoughts For Improved Reasoning And Context Pruning</a>
+    <p class="news-card-summary">Open-source platform for compound AI system evaluation provides design-of-experiments methodology to determine which components most affect system quality.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.10476">Hallucination Detection in Large Language Models Using Diversion Decoding</a>
+    <p class="news-card-summary">Method using diversion decoding detects hallucinations in language models by identifying factually incorrect or fabricated statements.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 13, 2026</span></div>
@@ -95,35 +123,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.08034">PLURAL: A Global Dataset for Value Alignment</a>
     <p class="news-card-summary">PLURAL dataset grounds value-focused preferences in a nationally representative survey spanning 92 countries to better represent diverse value systems in large language models.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you">OpenAI wants its new tool to do your work for you and with you</a>
-    <p class="news-card-summary">OpenAI announced a tool rebranded from Codex capable of independent workflows that can run for extended durations.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/gptwork-500x500-1783630553.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1">Introducing Muse Spark 1.1</a>
-    <p class="news-card-summary">Meta releases Muse Spark 1.1 with API availability and improved agentic tool calling and computer use capabilities.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 9, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.06641">Healthier LLMs: Retrieval-Augmented Generation for Public Health Question Answering</a>
-    <p class="news-card-summary">Retrieval-augmented generation mitigates hallucinations and outdated knowledge in language models for public health question answering by grounding responses in maintained guidance documents.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">Introducing GPT‑Live</a>
-    <p class="news-card-summary">OpenAI upgraded ChatGPT&#x27;s voice mode model and added delegation to GPT-4o for tasks requiring web search or complex reasoning.</p>
   </div>
 </div>
 </div>
