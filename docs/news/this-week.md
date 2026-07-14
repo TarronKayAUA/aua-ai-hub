@@ -287,7 +287,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A machine learning model combining multi-omics data has enabled robust prediction of treatment response in ovarian cancer, advancing personalized approaches in oncology <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. In emergency care, researchers have developed a unified multi-modal foundation model to support end-to-end workflows, pointing to integrated AI solutions across acute care settings <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Evaluation frameworks for large language models are being introduced to assess the faithfulness of generated clinical trial summaries for multiple healthcare audiences, addressing concerns about accuracy in evidence dissemination <a href="https://arxiv.org/abs/2607.09932">[2]</a>. Meanwhile, benchmarks now test language models on question answering using sparse clinical time series, reflecting growing interest in AI’s ability to manage complex and irregular patient data <a href="https://arxiv.org/abs/2607.09880">[1]</a>.</p>
+<p>Comprehensive approaches to clinical decision support are advancing, including new multi-modal models designed for emergency care workflows that integrate diverse patient data for more unified triage and intervention <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Multi-omics machine learning models are also demonstrating improved prediction of ovarian cancer treatment response, supporting personalized oncology efforts <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Evidence mapping of AI agent deployment in clinical practice provides an overview of effectiveness and implementation outcomes, informing ongoing integration <a href="https://www.nature.com/articles/s41746-026-02960-4">[14]</a>. Addressing fairness remains critical, as systematic reviews highlight challenges in ensuring equitable performance across multimodal machine learning applications <a href="https://www.nature.com/articles/s41746-026-03000-x">[5]</a>. Entity attribution failures in clinical retrieval-augmented generation systems underscore the need for rigorous evaluation to prevent misattribution of clinical evidence <a href="https://arxiv.org/abs/2607.09349">[9]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -318,6 +318,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02981-z">A unified multi-modal foundation model for end-to-end emergency care</a>
     <p class="news-card-summary">A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03000-x">Fairness in multimodal machine learning applications in clinical decision support: a systematic review</a>
+    <p class="news-card-summary">Systematic review of fairness issues in multimodal machine learning systems for clinical decision support.</p>
   </div>
 </div>
 <div class="news-card">
@@ -911,6 +918,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">AI code generators and their risks</span>
   <span class="video-card-meta">IBM Technology, July 13, 2026</span>
   <span class="video-card-desc">IBM overview of how AI code generators work, their productivity benefits, and associated risks and trust considerations.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=LgGJz528Boo" target="_blank" rel="noopener" title="DeepSeek V4.1 GA Soon, GPT-5.6 SOL Nerfed? HUGE Fable Update, US AI BAN Protests, &amp; More! AI NEWS">
+  <img src="https://i1.ytimg.com/vi/LgGJz528Boo/hqdefault.jpg" alt="Video: AI news roundup with model updates and benchmarks" loading="lazy">
+  <span class="video-card-title">AI news roundup with model updates and benchmarks</span>
+  <span class="video-card-meta">WorldofAI, July 13, 2026</span>
+  <span class="video-card-desc">AI news roundup covering DeepSeek V4.1, model updates, and regulatory developments with benchmark comparisons.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=SVAwzodyFUo" target="_blank" rel="noopener" title="How to Manage Your AI Before It Makes the Wrong Decision">
   <img src="https://i4.ytimg.com/vi/SVAwzodyFUo/hqdefault.jpg" alt="Video: Managing AI systems and decision-making" loading="lazy">

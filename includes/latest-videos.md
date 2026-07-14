@@ -31,10 +31,10 @@
   <span class="video-card-meta">IBM Technology, July 13, 2026</span>
   <span class="video-card-desc">IBM overview of how AI code generators work, their productivity benefits, and associated risks and trust considerations.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=1DtMiRKg-cs" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg" alt="Video: Understanding the inner thoughts of AI" loading="lazy">
-  <span class="video-card-title">Understanding the inner thoughts of AI</span>
-  <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
-  <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=LgGJz528Boo" target="_blank" rel="noopener" title="DeepSeek V4.1 GA Soon, GPT-5.6 SOL Nerfed? HUGE Fable Update, US AI BAN Protests, &amp; More! AI NEWS">
+  <img src="https://i1.ytimg.com/vi/LgGJz528Boo/hqdefault.jpg" alt="Video: AI news roundup with model updates and benchmarks" loading="lazy">
+  <span class="video-card-title">AI news roundup with model updates and benchmarks</span>
+  <span class="video-card-meta">WorldofAI, July 13, 2026</span>
+  <span class="video-card-desc">AI news roundup covering DeepSeek V4.1, model updates, and regulatory developments with benchmark comparisons.</span>
 </a>
 </div>

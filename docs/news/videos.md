@@ -84,6 +84,12 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">IBM Technology, July 13, 2026</span>
   <span class="video-card-desc">IBM overview of how AI code generators work, their productivity benefits, and associated risks and trust considerations.</span>
 </a>
+<a class="video-card" href="https://www.youtube.com/watch?v=LgGJz528Boo" target="_blank" rel="noopener" title="DeepSeek V4.1 GA Soon, GPT-5.6 SOL Nerfed? HUGE Fable Update, US AI BAN Protests, &amp; More! AI NEWS">
+  <img src="https://i1.ytimg.com/vi/LgGJz528Boo/hqdefault.jpg" alt="Video: AI news roundup with model updates and benchmarks" loading="lazy">
+  <span class="video-card-title">AI news roundup with model updates and benchmarks</span>
+  <span class="video-card-meta">WorldofAI, July 13, 2026</span>
+  <span class="video-card-desc">AI news roundup covering DeepSeek V4.1, model updates, and regulatory developments with benchmark comparisons.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=SVAwzodyFUo" target="_blank" rel="noopener" title="How to Manage Your AI Before It Makes the Wrong Decision">
   <img src="https://i4.ytimg.com/vi/SVAwzodyFUo/hqdefault.jpg" alt="Video: Managing AI systems and decision-making" loading="lazy">
   <span class="video-card-title">Managing AI systems and decision-making</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">How KV Cache Speeds Up LLMs for Faster AI Models on GPUs</span>
   <span class="video-card-meta">IBM Technology, June 30, 2026</span>
   <span class="video-card-desc">Explains how key-value cache optimization reduces computational overhead in large language model inference on GPUs.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=zdhY9ZXn410" target="_blank" rel="noopener" title="GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?">
-  <img src="https://i3.ytimg.com/vi/zdhY9ZXn410/hqdefault.jpg" alt="Video: Comparison of GLM-5.2 and Claude Opus 4.8 AI models" loading="lazy">
-  <span class="video-card-title">Comparison of GLM-5.2 and Claude Opus 4.8 AI models</span>
-  <span class="video-card-meta">Bijan Bowen, June 29, 2026</span>
-  <span class="video-card-desc">Benchmark comparison of GLM-5.2 and Claude Opus 4.8 across multiple test scenarios.</span>
 </a>
 </div>
 
