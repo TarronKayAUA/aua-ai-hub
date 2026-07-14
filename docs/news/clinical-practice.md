@@ -13,61 +13,71 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A machine learning model that fuses multiple data types to predict treatment response in ovarian cancer is advancing precision population health and personalized oncology <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Meanwhile, a unified multi-modal foundation model is supporting end-to-end emergency care, underscoring the growing adoption of comprehensive AI tools in clinical workflows <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Addressing concerns about the equity of such systems, a systematic review has documented fairness issues in multimodal clinical decision support, highlighting the need for balanced development <a href="https://www.nature.com/articles/s41746-026-03000-x">[5]</a>. Recent benchmarking efforts are evaluating language models on complex question answering tasks involving irregular clinical time series, which informs risk assessment and patient monitoring <a href="https://arxiv.org/abs/2607.09880">[1]</a>.</p>
+<p>A peer-reviewed study has detailed a new multi-modal foundation model capable of supporting end-to-end emergency care, integrating diverse data sources to inform acute decision making <a href="https://www.nature.com/articles/s41746-026-02981-z">[5]</a>. Research in model reliability has continued with the development of an evaluation framework to assess the faithfulness of large language model-generated clinical trial summaries for distinct stakeholder groups, addressing concerns of accuracy and audience alignment <a href="https://arxiv.org/abs/2607.09932">[3]</a>. Safety and evaluation efforts are also advancing, as researchers benchmark how consumer AI systems respond to pediatric health issues under both everyday and adversarial scenarios, emphasizing the importance of robust boundary maintenance <a href="https://www.nature.com/articles/s41746-026-02985-9">[10]</a>. In clinical decision support, a systematic review has examined fairness in multimodal machine learning systems, highlighting equity as an ongoing focus <a href="https://www.nature.com/articles/s41746-026-03000-x">[6]</a>. Additionally, a machine learning model that fuses multi-omics data shows promise in predicting ovarian cancer treatment response, contributing to more personalized oncology approaches <a href="https://www.nature.com/articles/s41746-026-02991-x">[4]</a>.</p>
+<p>Also this week: studies assess the performance of language models on irregular clinical time series, implement smartphone-based diagnostics for cervical myelopathy, explore entity attribution failures in retrieval-augmented generation, and evaluate AI tools for interpreting mental health narratives-drawing from eight clinical decision support papers, four analyses on safety or evaluation, and two new imaging or diagnostic applications.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+
 <div class="news-list">
 <div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90146">The Swiss Personalized Health Network Metadata Catalog: Platform for Health Data Discovery and Exploration Based on Findable, Accessible, Interoperable, and Reusable Principles</a>
+    <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09880">CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series</a>
     <p class="news-card-summary">New benchmark evaluates language models on question answering over sparse, irregularly sampled clinical time series data from patient monitoring and risk assessment.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09932">Faithful by Design: Evaluating and Improving LLM-Generated Clinical Trial Summaries for Multi-Stakeholder Audiences</a>
     <p class="news-card-summary">Study introduces evaluation framework for measuring faithfulness of language model summaries of clinical trial results across healthcare provider, patient, and payer audiences.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02991-x">Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health</a>
     <p class="news-card-summary">Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02981-z">A unified multi-modal foundation model for end-to-end emergency care</a>
     <p class="news-card-summary">A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03000-x">Fairness in multimodal machine learning applications in clinical decision support: a systematic review</a>
     <p class="news-card-summary">Systematic review of fairness issues in multimodal machine learning systems for clinical decision support.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02977-9">Transformer-DAPT: AI-based dynamic assessment of ischemic and bleeding risks in patients on DAPT following PCI</a>
     <p class="news-card-summary">Peer-reviewed study describes a transformer-based model for predicting ischemic and bleeding risks in patients receiving dual antiplatelet therapy after coronary intervention.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03001-w">Multimodal AI for predicting comorbid REM sleep behavior disorder in major depressive disorder</a>
     <p class="news-card-summary">Peer-reviewed study uses multimodal AI to predict comorbid REM sleep behavior disorder in patients with major depressive disorder.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03003-8">Smartphone-based kinematic biomarkers for degenerative cervical myelopathy screening robust to physiological aging</a>
@@ -76,51 +86,44 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02985-9">Safety boundary maintenance in consumer AI systems responding to pediatric health queries: a cross-platform benchmark evaluation under naturalistic and adversarially pressured conditions</a>
+    <p class="news-card-summary">A benchmark evaluation tests how consumer AI systems maintain safety boundaries when answering pediatric health questions under both realistic and adversarial conditions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78942">Design and Preliminary Testing of the CardioCare System in Health Checkup Centers: Implementation Report</a>
     <p class="news-card-summary">CardioCare is a digital system combining cardiovascular disease risk prediction with personalized health management for screening programs in Chinese health checkup centers.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="other">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e71219">AI as the Interpreter for Identifying Root Causes and Emotional Themes in Mental Health Narratives on Reddit Using AutoML and PaLM 2: Mixed Methods Study</a>
     <p class="news-card-summary">Study applied automated machine learning and large language models to interpret mental health narratives from social media, testing whether AI can identify root causes and emotional themes with alignment to human judgment.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="other">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90228">A Controlled Comparison of Human and AI-Assisted Automated Revision of Delphi Statements on RNA-Based Medicines: Parallel, 2-Arm Study</a>
     <p class="news-card-summary">Study compared human experts and AI-assisted methods for revising Delphi consensus statements on RNA medicines, testing whether large language models with retrieval-augmented generation can accelerate expert consensus.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09349">Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation</a>
     <p class="news-card-summary">Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02996-6">Portable RF brain scanner enables stroke type detection using deep learning</a>
     <p class="news-card-summary">Portable radiofrequency brain scanner using deep learning enables rapid stroke type detection at point of care.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02853-6">Humanoid robots in the operating room : a framework for staged integration of embodied AI in surgery</a>
-    <p class="news-card-summary">Framework proposes a staged integration approach for deploying humanoid robots in surgical settings, balancing embodied AI capabilities with safety and workflow constraints.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02950-6">Impact of an AI algorithm for multi-day prediction of incident atrial fibrillation on clinical decision-making: PROVISION-AF study</a>
-    <p class="news-card-summary">Study evaluated how an AI algorithm predicting incident atrial fibrillation over multiple days affects clinical decision-making and workflow in practice.</p>
   </div>
 </div>
 </div>

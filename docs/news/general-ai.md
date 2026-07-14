@@ -13,47 +13,50 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Quantization in large language models can change their reasoning patterns in subtle ways without affecting task accuracy, raising concerns for faculty and students about silent failure modes during clinical or research applications <a href="https://arxiv.org/abs/2607.09999">[2]</a>. Effective evaluation of compound AI systems is essential; a new open-source platform offers design-of-experiments tools to pinpoint which components most impact overall system quality <a href="https://arxiv.org/abs/2607.10386">[3]</a>. Detecting factual inaccuracies or hallucinations has become more practical using diversion decoding, a method that helps identify when models generate incorrect or fabricated statements <a href="https://arxiv.org/abs/2607.10476">[4]</a>. The real-world operational costs of deploying frontier models, including inference expenses and overhead, may affect choices in adoption and use <a href="https://playcode.io/blog/real-price-of-frontier-models">[5]</a>.</p>
+<p>A technical report on the Index-1.9B series introduces new open-source small language models trained on large Chinese and English datasets, expanding options for research and instruction-tuned applications <a href="https://arxiv.org/abs/2607.09885">[1]</a>. Recent analyses highlight that quantization can change reasoning in language models without affecting task accuracy, raising concerns about silent reliability failures <a href="https://arxiv.org/abs/2607.09999">[2]</a>. Researchers have developed an open-source platform to systematically evaluate which components drive quality in compound AI systems, supporting more transparent benchmarking efforts <a href="https://arxiv.org/abs/2607.10386">[3]</a>. Hallucination detection methods, such as diversion decoding, are being refined to identify factual errors in outputs from large language models, which remains a key safety priority <a href="https://arxiv.org/abs/2607.10476">[4]</a>. Additionally, discussion of operational costs for frontier models addresses financial and practical factors shaping large-scale deployment <a href="https://playcode.io/blog/real-price-of-frontier-models">[5]</a>.</p>
+<p>Also this week: eight research papers cover assessment techniques and benchmarks, including the WILDTRACE benchmark and self-guided test-time training for long-context tasks. Two new model releases target efficient inference and multilingual performance. Industry, policy, and value alignment topics are represented, with PLURAL introducing a global dataset for LLM preference diversity.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+
 <div class="news-list">
-<div class="news-card">
+<div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09885">Index SLM Technical Report</a>
     <p class="news-card-summary">Index-1.9B open small language model series from Bilibili includes base, pure, and instruction-tuned variants trained on 2.8 trillion Chinese and English tokens.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09999">Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts</a>
     <p class="news-card-summary">Study shows quantization can silently alter language model reasoning patterns even when task accuracy remains unchanged, using validated taxonomy of reasoning failures.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.10386">Structured Thoughts For Improved Reasoning And Context Pruning</a>
     <p class="news-card-summary">Open-source platform for compound AI system evaluation provides design-of-experiments methodology to determine which components most affect system quality.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.10476">Hallucination Detection in Large Language Models Using Diversion Decoding</a>
     <p class="news-card-summary">Method using diversion decoding detects hallucinations in language models by identifying factually incorrect or fabricated statements.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://playcode.io/blog/real-price-of-frontier-models">The real prices of frontier models</a>
     <p class="news-card-summary">Analysis of actual costs of frontier large language models including inference expenses and operational overhead.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models">Simulating everything, sort of: The promise and limits of world models</a>
@@ -61,42 +64,42 @@ Items are selected nightly by an automated pipeline and the summaries are machin
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09328">WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning</a>
     <p class="news-card-summary">WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09415">Self-Guided Test-Time Training for Long-Context LLMs</a>
     <p class="news-card-summary">Self-guided test-time training method improves long-context language model performance by helping models better identify and use relevant evidence from long inputs.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09424">A Sovereign, Open-Source Foundation Model for German and English</a>
     <p class="news-card-summary">Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.08780">Sticky Routing: Training MoE Models for Memory-Efficient Inference</a>
     <p class="news-card-summary">Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 12, 2026</span></div>
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uu8d1v/xiaomi_quietly_uploaded_mimov25dflash_official">Xiaomi quietly uploaded MiMo-V2.5-DFlash, official DFlash weights are now on Hugging Face</a>
     <p class="news-card-summary">Xiaomi released open-weight MiMo-V2.5-DFlash model on Hugging Face, a 300-billion-parameter model optimized for local inference on consumer hardware.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants">2.5x faster Qwen3.6 NVFP4 Unsloth quants</a>
@@ -104,21 +107,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/yoxm16aijech1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=68cb2bb669bbaee024fb2f7d1cb9aa832e4530de" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.07779">From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier</a>
     <p class="news-card-summary">Preprint study examines large language models for advancing formal mathematics at the research frontier beyond well-defined problems, using interactive theorem proving.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.08009">From Execution to Education: A Bloom-Aligned Framework for Measuring Educational Control in LLMs</a>
     <p class="news-card-summary">Preprint introduces a Bloom-aligned framework for measuring educational control in large language models, applied to assess shifts in cognitive demand for programming tasks.</p>
   </div>
 </div>
-<div class="news-card">
+<div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.08034">PLURAL: A Global Dataset for Value Alignment</a>
