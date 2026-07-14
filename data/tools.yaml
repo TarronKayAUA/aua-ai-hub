@@ -65,7 +65,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review. Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-06-10
+  last_reviewed: 2026-07-14
   blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
 
 - name: Qwen Chat
@@ -132,7 +132,7 @@
   cost: paid
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-11
+  last_reviewed: 2026-07-14
   blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
 - name: Codex
@@ -174,7 +174,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-11
+  last_reviewed: 2026-07-14
   blurb: Web browser with a built-in agent that can summarize, navigate, and act across your open tabs and accounts. Free to use, with higher limits on paid plans.
 
 - name: OpenClaw
@@ -184,7 +184,7 @@
   cost: free
   governance_status: under_review
   status_note: Awaiting AI Committee review. Self-hosted software with broad system access; for technically confident users who scope its permissions deliberately.
-  last_reviewed: 2026-06-11
+  last_reviewed: 2026-07-14
   blurb: Open-source, self-hosted personal agent that connects a model of your choice to the messaging apps you already use. Free software; you supply the model, hardware, and judgment.
 
 - name: Elicit
@@ -341,7 +341,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-10
+  last_reviewed: 2026-07-14
   blurb: Adaptive USMLE study platform whose lessons, flashcards, and quizzes adjust to performance, with a built-in tutoring chatbot.
 
 - name: Gamma
@@ -426,7 +426,7 @@
   cost: paid
   governance_status: under_review
   status_note: Awaiting AI Committee review. Research preview on paid Claude plans; sign-in required.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-14
   blurb: Design tool from Anthropic Labs that turns prompts and uploaded files into slides, one-pagers, and graphics. Imports PowerPoint files and exports finished work back to PowerPoint, PDF, or Canva.
 
 - name: PowerPoint Designer
@@ -436,7 +436,7 @@
   cost: institutional
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-14
   blurb: Built into PowerPoint under the institutional Microsoft 365 license. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
 
 - name: Canva
@@ -446,7 +446,7 @@
   cost: freemium
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-14
   blurb: Design platform with prompt-based Magic Design features and a large asset library. Imports an existing PowerPoint deck for restyling and exports the result back to PowerPoint.
 
 - name: Beautiful.ai
@@ -456,7 +456,7 @@
   cost: paid
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-14
   blurb: Presentation tool whose built-in design rules keep slides tidy as content changes. Works in its own format but exports to PowerPoint cleanly.
 
 # --- Image Generation (owner approved 2026-06-12) ---------------------------
