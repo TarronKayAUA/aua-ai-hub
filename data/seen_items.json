@@ -16327,6 +16327,39 @@
    "first_seen": "2026-07-14T06:26:45.923086+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02981-z",
+   "title_hash": "a4e79a30a92b434dceb5cbe86cf21c64",
+   "first_seen": "2026-07-14T10:11:56.207387+00:00",
+   "kept": true,
+   "title": "A unified multi-modal foundation model for end-to-end emergency care",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-14T00:00:00+00:00",
+   "summary": "A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ut7tis/grok_build_cli_uploads_your_whole_repo_full_git",
+   "title_hash": "9fd63e46c283ce8fe2ebb0c451110cfd",
+   "first_seen": "2026-07-14T10:11:56.207387+00:00",
+   "kept": false,
+   "reason": "security rumor and speculation; not substantive news about model release or capability"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gI5d2czu9JE",
+   "title_hash": "88b6f948db5259e4271dad31c10bd60b",
+   "first_seen": "2026-07-14T10:11:56.207387+00:00",
+   "kept": false,
+   "reason": "title is shock-phrased and rumor-framed"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=cwf2vEAigKA",
+   "title_hash": "5ada67c5e745d080a965f8c59117d875",
+   "first_seen": "2026-07-14T10:11:56.207387+00:00",
+   "kept": false,
+   "reason": "vendor marketing and tool tutorial, not substantive news or development"
   }
  ],
  "digests": [
@@ -16461,8 +16494,8 @@
    "date": "July 14, 2026"
   },
   "clinical_practice": {
-   "text": "A machine learning model capable of predicting treatment response in ovarian cancer by combining multiple data types demonstrates progress in personalized oncology and population health <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[3]</a>. Ongoing implementation of digital systems for cardiovascular disease risk prediction and individualized health management is documented in Chinese health checkup centers, reflecting adoption in real-world screening programs <a href=\"https://medinform.jmir.org/2026/1/e78942\">[4]</a>. Portable radiofrequency brain scanning, enabled by deep learning, supports rapid stroke type detection at the point of care <a href=\"https://www.nature.com/articles/s41746-026-02996-6\">[8]</a>. A recent systematic evidence map outlines the effectiveness and implementation of AI agents across clinical practice settings, highlighting growing integration with existing workflows <a href=\"https://www.nature.com/articles/s41746-026-02960-4\">[12]</a>.",
-   "hash": "6c100d0f4f46c555",
+   "text": "A machine learning model combining multi-omics data has enabled robust prediction of treatment response in ovarian cancer, advancing personalized approaches in oncology <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[3]</a>. In emergency care, researchers have developed a unified multi-modal foundation model to support end-to-end workflows, pointing to integrated AI solutions across acute care settings <a href=\"https://www.nature.com/articles/s41746-026-02981-z\">[4]</a>. Evaluation frameworks for large language models are being introduced to assess the faithfulness of generated clinical trial summaries for multiple healthcare audiences, addressing concerns about accuracy in evidence dissemination <a href=\"https://arxiv.org/abs/2607.09932\">[2]</a>. Meanwhile, benchmarks now test language models on question answering using sparse clinical time series, reflecting growing interest in AI’s ability to manage complex and irregular patient data <a href=\"https://arxiv.org/abs/2607.09880\">[1]</a>.",
+   "hash": "8aad27aba27ec074",
    "date": "July 14, 2026"
   },
   "general_ai": {

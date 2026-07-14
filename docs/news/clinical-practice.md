@@ -13,7 +13,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A machine learning model capable of predicting treatment response in ovarian cancer by combining multiple data types demonstrates progress in personalized oncology and population health <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Ongoing implementation of digital systems for cardiovascular disease risk prediction and individualized health management is documented in Chinese health checkup centers, reflecting adoption in real-world screening programs <a href="https://medinform.jmir.org/2026/1/e78942">[4]</a>. Portable radiofrequency brain scanning, enabled by deep learning, supports rapid stroke type detection at the point of care <a href="https://www.nature.com/articles/s41746-026-02996-6">[8]</a>. A recent systematic evidence map outlines the effectiveness and implementation of AI agents across clinical practice settings, highlighting growing integration with existing workflows <a href="https://www.nature.com/articles/s41746-026-02960-4">[12]</a>.</p>
+<p>A machine learning model combining multi-omics data has enabled robust prediction of treatment response in ovarian cancer, advancing personalized approaches in oncology <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. In emergency care, researchers have developed a unified multi-modal foundation model to support end-to-end workflows, pointing to integrated AI solutions across acute care settings <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Evaluation frameworks for large language models are being introduced to assess the faithfulness of generated clinical trial summaries for multiple healthcare audiences, addressing concerns about accuracy in evidence dissemination <a href="https://arxiv.org/abs/2607.09932">[2]</a>. Meanwhile, benchmarks now test language models on question answering using sparse clinical time series, reflecting growing interest in AI’s ability to manage complex and irregular patient data <a href="https://arxiv.org/abs/2607.09880">[1]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -37,6 +37,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02991-x">Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health</a>
     <p class="news-card-summary">Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02981-z">A unified multi-modal foundation model for end-to-end emergency care</a>
+    <p class="news-card-summary">A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.</p>
   </div>
 </div>
 <div class="news-card">
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02954-2">Passive early screening for Alzheimer’s disease and related dementias using EHR comorbidity patterns</a>
     <p class="news-card-summary">Peer-reviewed study describes passive screening for Alzheimer&#x27;s disease and related dementias using machine learning patterns in electronic health records.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02646-x">Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease</a>
-    <p class="news-card-summary">Peer-reviewed study reports machine learning detection of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease.</p>
   </div>
 </div>
 </div>
