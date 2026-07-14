@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=avpZWh6sm9M" target="_blank" rel="noopener" title="Improved Intelligence with GPT-Live">
+  <img src="https://i2.ytimg.com/vi/avpZWh6sm9M/hqdefault.jpg" alt="Video: GPT-Live next-generation voice model" loading="lazy">
+  <span class="video-card-title">GPT-Live next-generation voice model</span>
+  <span class="video-card-meta">OpenAI, July 14, 2026</span>
+  <span class="video-card-desc">OpenAI presents GPT-Live, a next-generation voice model with improved capabilities for real-time interaction.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=OWPRU_Pc4Ng" target="_blank" rel="noopener" title="5 More AI Myths &amp; The Truth Behind Them: ML, Context, Agents &amp; More">
   <img src="https://i4.ytimg.com/vi/OWPRU_Pc4Ng/hqdefault.jpg" alt="Video: Five AI myths explained" loading="lazy">
   <span class="video-card-title">Five AI myths explained</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Hands-on with Anthropic&#x27;s Claude Sonnet 5 model</span>
   <span class="video-card-meta">Bijan Bowen, June 30, 2026</span>
   <span class="video-card-desc">Hands-on technical demonstration of Anthropic&#x27;s Claude Sonnet 5 model, covering capabilities and browser integration testing.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=o0gkdZBtwEg" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/o0gkdZBtwEg/hqdefault.jpg" alt="Video: How KV Cache Speeds Up LLMs for Faster AI Models on GPUs" loading="lazy">
-  <span class="video-card-title">How KV Cache Speeds Up LLMs for Faster AI Models on GPUs</span>
-  <span class="video-card-meta">IBM Technology, June 30, 2026</span>
-  <span class="video-card-desc">Explains how key-value cache optimization reduces computational overhead in large language model inference on GPUs.</span>
 </a>
 </div>
 

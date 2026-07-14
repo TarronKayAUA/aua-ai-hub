@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A conceptual framework highlights how AI-augmented mentorship can expand orthopedic surgery training opportunities for underrepresented and less-resourced students, addressing equity gaps in access to specialty education <a href="https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">[3]</a>. Research shows medical students express strong interest in adopting generative AI tools for learning but remain cautious regarding privacy, reliability, and dependency risks <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[2]</a>. Although large language models have seen rapid research proliferation in medical education, concerns persist over a lack of empirical evidence and the slow development of governance standards <a href="https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">[4]</a>. Meanwhile, generative AI is being validated for improving assessment item classification by Bloom&#x27;s Taxonomy, supporting more precise educational measurement <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[5]</a>.</p>
+<p>Research into large language model adoption among medical students in China reveals substantial willingness to use tools like DeepSeek but highlights concerns about privacy, reliability, and dependency that may influence usage and acceptance <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[3]</a>. Rapid growth in medical education research on large language models has also exposed gaps in empirical evidence and imbalances among research themes, suggesting a need for more robust studies and updated governance frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">[5]</a>. Meanwhile, practical implementation guides offer evidence-informed recommendations for responsible AI use, addressing educators&#x27; needs as generative AI shapes instructional design in health professions courses <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[10]</a>. Studies further emphasize variations in AI tool performance, impacting the quality and readability of content delivered in specialized medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[12]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92420">A National Exploration of Medical Students’ Views Surrounding Skin Color Terminology in Undergraduate Education</a>
+    <p class="news-card-summary">Study examines UK medical students&#x27; preferences for skin color terminology in medical education to support more inclusive clinical language.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&amp;ff=20260711095618&amp;v=2.20.0">Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives</a>
     <p class="news-card-summary">Machine learning and deep learning show promise for improving airway assessment accuracy in anesthesia beyond conventional subjective tools.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Application Effectiveness Analysis of Artificial Intelligence-assisted Teaching in Standardized Training for Medical Imaging Residents</a>
-    <p class="news-card-summary">Randomized controlled trial shows AI-assisted teaching combined with expert-led sessions improves radiology residents&#x27; diagnostic performance and clinical reasoning more than either method alone.</p>
   </div>
 </div>
 </div>

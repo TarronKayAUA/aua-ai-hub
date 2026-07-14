@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A machine learning model integrating multiple data types has demonstrated robust prediction of treatment response in ovarian cancer, marking progress toward personalized population health in oncology <a href="https://www.nature.com/articles/s41746-026-02991-x">[3]</a>. Meanwhile, systematic review highlights fairness challenges in multimodal machine learning applications supporting clinical decision making, emphasizing the need for equitable practices as these technologies advance <a href="https://www.nature.com/articles/s41746-026-03000-x">[5]</a>. A unified multi-modal foundation model has been developed for end-to-end emergency care, offering potential improvements to workflow integration and patient management across settings <a href="https://www.nature.com/articles/s41746-026-02981-z">[4]</a>. Researchers have also introduced a new benchmark to evaluate language models&#x27; performance in answering questions from irregular clinical time series data sourced from patient monitoring and risk assessments <a href="https://arxiv.org/abs/2607.09880">[1]</a>.</p>
+<p>A new evaluation framework addresses the faithfulness of large language model-generated clinical trial summaries for healthcare providers, patients, and payers, responding to the need for accurate AI-generated content in multi-stakeholder audiences <a href="https://arxiv.org/abs/2607.09932">[3]</a>. Researchers have also benchmarked language models on their ability to answer questions using sparse clinical time series data, which reflects increasing attention to robustness in real-world scenarios <a href="https://arxiv.org/abs/2607.09880">[2]</a>. The development of multimodal models for comprehensive emergency care illustrates growing integration of AI in acute clinical workflows <a href="https://www.nature.com/articles/s41746-026-02981-z">[5]</a>, while systematic review highlights the ongoing challenges of fairness in clinical decision support using multimodal machine learning <a href="https://www.nature.com/articles/s41746-026-03000-x">[6]</a>. Entity attribution failures in retrieval-augmented generation systems have been documented, raising concerns about evidence misattribution <a href="https://arxiv.org/abs/2607.09349">[14]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90146">The Swiss Personalized Health Network Metadata Catalog: Platform for Health Data Discovery and Exploration Based on Findable, Accessible, Interoperable, and Reusable Principles</a>
+    <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
@@ -114,13 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02996-6">Portable RF brain scanner enables stroke type detection using deep learning</a>
     <p class="news-card-summary">Portable radiofrequency brain scanner using deep learning enables rapid stroke type detection at point of care.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02853-6">Humanoid robots in the operating room : a framework for staged integration of embodied AI in surgery</a>
-    <p class="news-card-summary">Framework proposes a staged integration approach for deploying humanoid robots in surgical settings, balancing embodied AI capabilities with safety and workflow constraints.</p>
   </div>
 </div>
 </div>
