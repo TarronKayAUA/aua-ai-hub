@@ -23,7 +23,7 @@ The quality of what you get is mostly determined by what you give. Modern assist
 3. **Specify the output.** Format, length, level, what to include and exclude. If you want options rather than one answer, say how many.
 4. **Iterate.** The first response is a first draft. Ask for what is missing, point at what is wrong, push back. Models respond well to specific correction, and two rounds of iteration routinely beat one elaborate prompt.
 
-And one meta-habit: **ask for reasoning you can check, not bare answers.** A response that shows its steps, cites its sources, or flags its own uncertainty gives you something to verify. The [prompt library](../prompts/index.md) is built around these habits; every template there shows them in action, and the [Learning to prompt](../prompts/index.md#learning-to-prompt) resources go deeper, from Anthropic's 24-minute Prompting 101 video to Google's beginner guide.
+And one meta-habit: **ask for reasoning you can check, not bare answers.** A response that shows its steps, cites its sources, or flags its own uncertainty gives you something to verify. The [prompt library](../prompts/index.md) is built around these habits; every template there shows them in action, and the [Learning to Prompt](../prompts/learning.md) resources go deeper, from Anthropic's 24-minute Prompting 101 video to Google's beginner guide.
 
 <figure class="figure">
 <svg viewBox="0 0 660 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a strong request: role, materials, task, and output shape, plus an iteration loop with the reply">

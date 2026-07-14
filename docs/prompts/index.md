@@ -12,15 +12,7 @@ Reusable prompts for teaching, research, and studying: pick from the at-a-glance
 !!! note "What to expect across different models"
     These prompts are written for and tested against current frontier assistants from Anthropic, OpenAI, and Google. The same prompt will not give identical results everywhere: output depends on the model's capability, the company that trained it, the material and context you provide, and the model version, which changes over time. Treat a weaker or older model's output as a rough draft, give the model your real source material rather than a blank-page request, and judge every result against your own expertise. The structure and rules in each prompt carry across models even when the exact wording of the output does not.
 
-Two habits make every prompt here work better: give the model your actual materials (objectives, criteria, draft items) rather than asking from a blank page, and ask it to show reasoning you can check rather than bare answers. For the mechanics behind both, what fits in a conversation, when to start a fresh one, and where standing instructions belong, see [Getting Better Answers](../basics/better-answers.md).
-
-## Learning to prompt
-
-Curated starting points on prompting current models, from short guides to peer-reviewed studies. Prompting advice ages quickly; everything here reflects how today's assistants work, and the list stays short on purpose. Journal links may require library access.
-
-<!-- render:prompt-resources -->
-
-Category-specific studies appear as further reading under each section below.
+Two habits make every prompt here work better: give the model your actual materials (objectives, criteria, draft items) rather than asking from a blank page, and ask it to show reasoning you can check rather than bare answers. For the mechanics behind both, what fits in a conversation, when to start a fresh one, and where standing instructions belong, see [Getting Better Answers](../basics/better-answers.md). New to prompting altogether? Start with the guides and videos on [Learning to Prompt](learning.md); studies specific to one kind of task appear as further reading under that task's section below.
 
 <!-- render:prompts -->
 

@@ -1052,19 +1052,25 @@ def on_page_markdown(markdown, page, config, files):
             )
         return markdown.replace(COMMITTEE_MARKER, _render_committee(config))
     if src == "prompts/index.md":
-        for marker in (PROMPTS_MARKER, PROMPT_RESOURCES_MARKER):
-            if marker not in markdown:
-                raise AssertionError(
-                    f"render_data hook: prompts/index.md is missing the "
-                    f"{marker} marker"
-                )
+        if PROMPTS_MARKER not in markdown:
+            raise AssertionError(
+                f"render_data hook: prompts/index.md is missing the "
+                f"{PROMPTS_MARKER} marker"
+            )
         resource_groups = _load_prompt_resources(config)
-        markdown = markdown.replace(
-            PROMPT_RESOURCES_MARKER,
-            _render_prompt_resources_general(resource_groups),
-        )
         return markdown.replace(
             PROMPTS_MARKER, _render_prompts(config, resource_groups)
+        )
+    if src == "prompts/learning.md":
+        if PROMPT_RESOURCES_MARKER not in markdown:
+            raise AssertionError(
+                f"render_data hook: prompts/learning.md is missing the "
+                f"{PROMPT_RESOURCES_MARKER} marker"
+            )
+        resource_groups = _load_prompt_resources(config)
+        return markdown.replace(
+            PROMPT_RESOURCES_MARKER,
+            _render_prompt_resources_general(resource_groups),
         )
     if src == "index.md" and LAST_UPDATED_MARKER in markdown:
         stamp = date.today().strftime("%B %d, %Y").replace(" 0", " ")

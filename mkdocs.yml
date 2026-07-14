@@ -41,6 +41,8 @@ theme:
     - navigation.indexes
     - navigation.top
     - navigation.footer
+    - search.suggest
+    - search.highlight
     - toc.follow
     - search.suggest
     - search.highlight
@@ -106,6 +108,7 @@ nav:
       - AI for Research: tools/research.md
       - Prompts:
           - prompts/index.md
+          - Learning to Prompt: prompts/learning.md
           - Community Exchange: prompts/exchange.md
       - Playbooks:
           - playbooks/index.md
