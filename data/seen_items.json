@@ -16436,6 +16436,32 @@
    "first_seen": "2026-07-14T12:09:03.189961+00:00",
    "kept": false,
    "reason": "product demo and tutorial from independent channel with no news content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02977-9",
+   "title_hash": "c57e073f1e608e9d7e756190b3cb09d7",
+   "first_seen": "2026-07-14T14:15:26.831384+00:00",
+   "kept": true,
+   "title": "Transformer-DAPT: AI-based dynamic assessment of ischemic and bleeding risks in patients on DAPT following PCI",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-14T00:00:00+00:00",
+   "summary": "Peer-reviewed study describes a transformer-based model for predicting ischemic and bleeding risks in patients receiving dual antiplatelet therapy after coronary intervention.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=kRX6YEje9Bs",
+   "title_hash": "fe68b2eedeff53572bf1eb2feada3cd6",
+   "first_seen": "2026-07-14T14:15:26.831384+00:00",
+   "kept": false,
+   "reason": "speculative model versions and drama-focused comparison format with no substantive educational content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=R-Yqes8AotY",
+   "title_hash": "e03e943b74bc4355fc035f68c3a62bb4",
+   "first_seen": "2026-07-14T14:15:26.831384+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
@@ -16570,8 +16596,8 @@
    "date": "July 14, 2026"
   },
   "clinical_practice": {
-   "text": "Comprehensive approaches to clinical decision support are advancing, including new multi-modal models designed for emergency care workflows that integrate diverse patient data for more unified triage and intervention <a href=\"https://www.nature.com/articles/s41746-026-02981-z\">[4]</a>. Multi-omics machine learning models are also demonstrating improved prediction of ovarian cancer treatment response, supporting personalized oncology efforts <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[3]</a>. Evidence mapping of AI agent deployment in clinical practice provides an overview of effectiveness and implementation outcomes, informing ongoing integration <a href=\"https://www.nature.com/articles/s41746-026-02960-4\">[14]</a>. Addressing fairness remains critical, as systematic reviews highlight challenges in ensuring equitable performance across multimodal machine learning applications <a href=\"https://www.nature.com/articles/s41746-026-03000-x\">[5]</a>. Entity attribution failures in clinical retrieval-augmented generation systems underscore the need for rigorous evaluation to prevent misattribution of clinical evidence <a href=\"https://arxiv.org/abs/2607.09349\">[9]</a>.",
-   "hash": "4ce34458c7ffda7e",
+   "text": "A machine learning model that combines multiple data types for robust treatment response prediction in ovarian cancer is advancing personalized approaches to oncology care <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[3]</a>. In emergency medicine, a unified multi-modal foundation model is designed to support end-to-end workflows, reflecting the expanding integration of AI across acute clinical environments <a href=\"https://www.nature.com/articles/s41746-026-02981-z\">[4]</a>. Fairness concerns in multimodal clinical decision support applications continue to be systematically reviewed to inform equitable deployment <a href=\"https://www.nature.com/articles/s41746-026-03000-x\">[5]</a>. Additionally, a transformer-based AI model predicts both ischemic and bleeding risks in patients on dual antiplatelet therapy following coronary intervention, contributing to risk stratification for cardiac care <a href=\"https://www.nature.com/articles/s41746-026-02977-9\">[6]</a>.",
+   "hash": "c6eb984fd24fc084",
    "date": "July 14, 2026"
   },
   "general_ai": {
