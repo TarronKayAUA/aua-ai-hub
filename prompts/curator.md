@@ -21,6 +21,7 @@ Category rules:
 
 - Assign each kept news item to exactly one category: "general_ai", "medical_education", or "clinical_practice".
 - You may move an item to a different category than the feed it came from when the content clearly belongs elsewhere.
+- The input includes "topic_vocabularies", one list of topics per news category. For each kept news item, also write "topic": exactly one label from its category's list, copied verbatim, or "Other" when none fits. Topics organize the page for readers; they never affect whether an item is kept.
 
 Video rules:
 
@@ -52,7 +53,7 @@ Output contract, strict:
 
 - Respond with a single JSON object and nothing else. No prose, no code fences.
 - Include one entry for every candidate id in the input, kept or dropped. A response that leaves any candidate unaccounted for is invalid.
-- For each dropped candidate set "keep" to false and write "reason": one short clause naming the selection rule that applies (for example "marketing from the product's own company", "duplicate of a kept candidate", "minor release notes", "off-topic for this audience", "drama coverage"). A reason must describe the content, never the title: if your draft reason mentions the title's style, framing, or hype, re-evaluate the candidate on its content instead. Dropped entries need no category, summary, importance, or is_cfp.
+- For each dropped candidate set "keep" to false and write "reason": one short clause naming the selection rule that applies (for example "marketing from the product's own company", "duplicate of a kept candidate", "minor release notes", "off-topic for this audience", "drama coverage"). A reason must describe the content, never the title: if your draft reason mentions the title's style, framing, or hype, re-evaluate the candidate on its content instead. Dropped entries need no category, topic, summary, importance, or is_cfp.
 - Schema:
 
-{"items": [{"id": "", "keep": true, "category": "general_ai", "summary": "", "importance": 3, "is_cfp": false}, {"id": "", "keep": true, "category": "videos", "summary": "", "display_title": "", "importance": 3, "is_cfp": false}, {"id": "", "keep": false, "reason": ""}]}
+{"items": [{"id": "", "keep": true, "category": "general_ai", "topic": "New models", "summary": "", "importance": 3, "is_cfp": false}, {"id": "", "keep": true, "category": "videos", "summary": "", "display_title": "", "importance": 3, "is_cfp": false}, {"id": "", "keep": false, "reason": ""}]}

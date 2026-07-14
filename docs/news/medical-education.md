@@ -13,44 +13,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Research into large language model adoption among medical students in China reveals substantial willingness to use tools like DeepSeek but highlights concerns about privacy, reliability, and dependency that may influence usage and acceptance <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[3]</a>. Rapid growth in medical education research on large language models has also exposed gaps in empirical evidence and imbalances among research themes, suggesting a need for more robust studies and updated governance frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">[5]</a>. Meanwhile, practical implementation guides offer evidence-informed recommendations for responsible AI use, addressing educators&#x27; needs as generative AI shapes instructional design in health professions courses <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[10]</a>. Studies further emphasize variations in AI tool performance, impacting the quality and readability of content delivered in specialized medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[12]</a>.</p>
+<p>The development and validation of a generative artificial intelligence tool for classifying assessment items by Bloom&#x27;s Taxonomy level signals a shift toward leveraging AI to increase medical assessment validity and streamline educational processes for faculty <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[2]</a>. Studies indicate medical students show high willingness to adopt AI-driven systems such as DeepSeek, although concerns about privacy, reliability, and dependency remain <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[1]</a>. Qualitative research reports that medical educators perceive their professional roles changing in response to generative AI integration, requiring new competencies and adaptations <a href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[3]</a>. Meanwhile, practical guidance is emerging to support responsible implementation of AI in health professions education, addressing ethical and operational challenges for course designers <a href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[6]</a>.</p>
 <p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92420">A National Exploration of Medical Students’ Views Surrounding Skin Color Terminology in Undergraduate Education</a>
-    <p class="news-card-summary">Study examines UK medical students&#x27; preferences for skin color terminology in medical education to support more inclusive clinical language.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88695">AI-Generated Microlearning for Plastic Surgery Residency: Single-Arm Pre-Post Feasibility Study</a>
-    <p class="news-card-summary">A feasibility study evaluates AI-generated microlearning modules for plastic surgery residency training, assessing whether language models can support brief, focused education within fragmented clinical schedules.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">Medical students&#x27; attitudes, usage patterns, and associated factors with DeepSeek adoption in education: a cross-sectional study in China</a>
     <p class="news-card-summary">Cross-sectional survey of Chinese medical students found 94.8% willing to use DeepSeek for education but expressed caution about privacy, reliability, and dependency.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">AI-Augmented Mentorship in Orthopedic Surgery: A Conceptual Framework for Expanding Access for Underrepresented and Less-Resourced Students</a>
-    <p class="news-card-summary">A conceptual framework proposes AI-augmented mentorship to expand access to orthopedic surgery training for underrepresented students and trainees from lower-resourced institutions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">Hotspot Evolution and Future Prospects of Large Language Models in Medical Education: A Bibliometric Analysis</a>
-    <p class="news-card-summary">Bibliometric analysis identifies rapid growth in large language model medical education research but flags gaps in empirical evidence, imbalanced research themes, and delayed governance frameworks.</p>
   </div>
 </div>
 <div class="news-card">
@@ -121,6 +93,34 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&amp;ff=20260711095618&amp;v=2.20.0">Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives</a>
     <p class="news-card-summary">Machine learning and deep learning show promise for improving airway assessment accuracy in anesthesia beyond conventional subjective tools.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Application Effectiveness Analysis of Artificial Intelligence-assisted Teaching in Standardized Training for Medical Imaging Residents</a>
+    <p class="news-card-summary">Randomized controlled trial shows AI-assisted teaching combined with expert-led sessions improves radiology residents&#x27; diagnostic performance and clinical reasoning more than either method alone.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42435734?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Artificial Intelligence in Dental Education: Overview of Teaching, Assessment and Academic Performance Prediction</a>
+    <p class="news-card-summary">Literature overview of artificial intelligence applications in dental education, examining impact on teaching, assessment, and prediction of academic performance.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42435465?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Aspects of the use of artificial intelligence in medical education: Results of a cross-sectional survey conducted at Bogomolets national medical university</a>
+    <p class="news-card-summary">Cross-sectional survey at a Ukrainian medical university documents normalization of AI in academic practice as cognitive extension while identifying risks of reduced autonomy and ethical challenges.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Mapping artificial intelligence integration in objective structured clinical examinations: A scoping review</a>
+    <p class="news-card-summary">Scoping review mapping artificial intelligence applications in objective structured clinical examinations for assessment of clinical competence.</p>
   </div>
 </div>
 </div>

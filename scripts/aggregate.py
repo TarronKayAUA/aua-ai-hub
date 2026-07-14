@@ -148,6 +148,7 @@ class Item:
     # 2026-07-14): YouTube titles exaggerate by convention, so kept videos
     # render this restatement while the click-through keeps the original.
     display_title: str = ""
+    topic: str = ""
 
     def to_ledger(self, kept: bool, now_iso: str) -> dict:
         record = {
@@ -172,6 +173,8 @@ class Item:
                 record["thumbnail"] = self.thumbnail
             if self.display_title:
                 record["display_title"] = self.display_title
+            if self.topic:
+                record["topic"] = self.topic
         return record
 
 
@@ -705,10 +708,21 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
 def _brief_sanitize(text: str) -> str:
     """Dash policy for model prose: a dash joining two words is a compound
     (AI-driven) and becomes a hyphen; spaced or stray dashes become commas,
-    matching the site-wide no-em-dash rule without garbling grammar."""
+    matching the site-wide no-em-dash rule without garbling grammar.
+    Whitespace collapses within paragraphs; blank lines between them stay,
+    since the brief contract is two paragraphs."""
     text = re.sub(r"(?<=\w)[–—](?=\w)", "-", text)
-    text = re.sub(r"\s*[–—]+\s*", ", ", text)
-    return " ".join(text.split())
+    paragraphs = [p for p in re.split(r"\n\s*\n", text) if p.strip()]
+    cleaned = []
+    for p in paragraphs:
+        p = re.sub(r"\s*[–—]+\s*", ", ", p)
+        cleaned.append(" ".join(p.split()))
+    return "\n\n".join(cleaned)
+
+
+def _brief_paragraphs_html(text: str) -> str:
+    """Stored brief text (escaped, linked) to one <p> per paragraph."""
+    return "\n".join(f"<p>{p}</p>" for p in text.split("\n\n"))
 
 
 def update_section_briefs(config: dict, categories: dict, ledger: dict,
@@ -750,9 +764,19 @@ def update_section_briefs(config: dict, categories: dict, ledger: dict,
                 f"{r.get('summary', '')}"
                 for i, r in enumerate(eligible, 1)
             )
+            # Topic tallies ground the breadth paragraph in arithmetic
+            # rather than the model's impression of the list.
+            tallies: dict[str, int] = {}
+            for r in eligible:
+                t = r.get("topic") or "Other"
+                tallies[t] = tallies.get(t, 0) + 1
+            topic_counts = ", ".join(
+                f"{t}: {n}" for t, n in
+                sorted(tallies.items(), key=lambda kv: -kv[1]))
             raw = call_github_models(
                 "Follow the instructions in the message exactly.",
-                template.format(label=label, items=items_block),
+                template.format(label=label, items=items_block,
+                                topic_counts=topic_counts),
                 gh_cfg, timeout,
             )
             text = _brief_sanitize(raw)
@@ -762,8 +786,10 @@ def update_section_briefs(config: dict, categories: dict, ledger: dict,
                 raise ValueError(f"reference count {len(refs)} out of range")
             if any(not 1 <= n <= len(eligible) for n in refs):
                 raise ValueError("brief references a nonexistent item")
-            if not 40 <= words <= 140:
+            if not 60 <= words <= 200:
                 raise ValueError(f"word count {words} out of range")
+            if "\n\n" not in text or "Also this week:" not in text:
+                raise ValueError("brief missing the two-paragraph structure")
             escaped = html.escape(text)
             linked = re.sub(
                 r"\[(\d+)\]",
@@ -1186,6 +1212,7 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict,
                 "category": category,
                 "summary": str(entry.get("summary", "")),
                 "display_title": str(entry.get("display_title", "")),
+                "topic": str(entry.get("topic", "")),
                 "importance": int(entry.get("importance", 3)),
                 "is_cfp": bool(entry.get("is_cfp", False)),
             }
@@ -1248,11 +1275,23 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
         return None
 
     ordered = sorted(fresh, key=lambda i: -i.score)[: llm_cfg["max_candidates"]]
+    # Topic vocabularies ride in the payload so the curator can tag each
+    # kept news item; the lists live in feeds.yaml (owner-tunable). Their
+    # size is reserved out of the packing budget so the GitHub Models
+    # 8,000-token request cap still holds on a maximally packed run.
+    vocab_extra = 0
+    if config.get("topics"):
+        vocab_extra = len(json.dumps(
+            {"topic_vocabularies": config["topics"]}, ensure_ascii=False))
     by_id, payload = _pack_candidates(
-        ordered, cfg.get("max_payload_chars", 22000), verbose,
+        ordered, cfg.get("max_payload_chars", 22000) - vocab_extra, verbose,
         title_chars=int(cfg.get("candidate_title_chars", 140)),
         summary_chars=int(cfg.get("candidate_summary_chars", 100)),
     )
+    if config.get("topics"):
+        payload_obj = json.loads(payload)
+        payload_obj["topic_vocabularies"] = config["topics"]
+        payload = json.dumps(payload_obj, ensure_ascii=False)
     # audit trail: candidates the model never saw are drops with a stated cause
     offered = {id(i) for i in by_id.values()}
     for item in fresh:
@@ -1291,15 +1330,17 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
         if verbose:
             print(f"  drop: {item.source}: {item.title[:60]} | {d['reason']}")
 
-    news_decisions = [d for d in decisions if d["category"] != "videos"]
+    news_decisions = [d for d in decisions
+                      if d["category"] not in ("videos", "podcasts")]
     news_decisions.sort(key=lambda d: -d["importance"])
     news_decisions = news_decisions[: llm_cfg["max_keep"]]
     # model keeps discarded by code carry an audit reason too
     final_ids = {d["id"] for d in news_decisions}
     for d in decisions:
         if d["id"] not in final_ids:
-            why = ("model assigned it to videos in the news call"
-                   if d["category"] == "videos" else "over the news keep cap")
+            why = ("model assigned it to a media category in the news call"
+                   if d["category"] in ("videos", "podcasts")
+                   else "over the news keep cap")
             by_id[d["id"]].drop_reason = f"(kept by the model, discarded: {why})"
 
     kept_by_category = {k: [] for k in categories}
@@ -1311,6 +1352,12 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
             decision["summary"], item.summary, llm_cfg["summary_word_cap"]
         )
         item.score = float(decision["importance"])
+        # Topics are presentation-only and fail soft: an unknown or
+        # missing tag lands in Other, never affects the keep.
+        vocab = config.get("topics", {}).get(decision["category"], [])
+        raw_topic = str(decision.get("topic", "")).strip()
+        if vocab:
+            item.topic = raw_topic if raw_topic in vocab else "Other"
         kept_by_category[decision["category"]].append(item)
         if decision["is_cfp"]:
             cfp_items.append(item)
@@ -1494,6 +1541,34 @@ def display_summary(record: dict) -> str:
     return first
 
 
+def _topic_slug(topic: str) -> str:
+    # A label with no ASCII alphanumerics must not slug to "", which the
+    # chip script would read as the All filter.
+    return re.sub(r"[^a-z0-9]+", "-", topic.lower()).strip("-") or "topic"
+
+
+def _topic_chips_html(records: list[dict]) -> str:
+    """Filter-chip row for a news list. Chips render only when at least
+    two real topics are present; docs/javascripts/topics.js does the
+    filtering, and without it the chips are inert and the full list shows."""
+    counts: dict[str, int] = {}
+    for r in records:
+        t = r.get("topic") or "Other"
+        counts[t] = counts.get(t, 0) + 1
+    if len([t for t in counts if t != "Other"]) < 2:
+        return ""
+    chips = [
+        '<button class="topic-chip is-active" data-topic="">'
+        f"All ({len(records)})</button>"
+    ]
+    for t in sorted(counts, key=lambda t: (t == "Other", -counts[t], t)):
+        chips.append(
+            f'<button class="topic-chip" data-topic="{_topic_slug(t)}">'
+            f"{html.escape(t)} ({counts[t]})</button>"
+        )
+    return '<div class="topic-chips">' + "".join(chips) + "</div>"
+
+
 def render_item_md(record: dict, suppress: frozenset = frozenset()) -> str:
     published = datetime.fromisoformat(record["published"])
     title = html.escape(record["title"])
@@ -1519,7 +1594,11 @@ def render_item_md(record: dict, suppress: frozenset = frozenset()) -> str:
             'alt="" loading="lazy" '
             "onerror=\"this.style.display='none'\">"
         ]
-    return "\n".join(['<div class="news-card">'] + body + thumb + ["</div>"])
+    topic_attr = ""
+    if record.get("topic"):
+        topic_attr = f' data-topic="{_topic_slug(record["topic"])}"'
+    return "\n".join([f'<div class="news-card"{topic_attr}>']
+                     + body + thumb + ["</div>"])
 
 
 def _generic_thumbnails(records: list[dict]) -> frozenset:
@@ -1556,7 +1635,7 @@ def render_category_page(label: str, intro: str, records: list[dict],
     if brief and brief.get("text"):
         lines.append(
             '<div class="section-brief">\n'
-            f"<p>{brief['text']}</p>\n"
+            f"{_brief_paragraphs_html(brief['text'])}\n"
             f'<p class="section-brief-date">The picture as of '
             f"{brief['date']}; numbered links go to the items below.</p>\n"
             "</div>"
@@ -1564,6 +1643,10 @@ def render_category_page(label: str, intro: str, records: list[dict],
         lines.append("")
     if records:
         suppress = _generic_thumbnails(records)
+        chips = _topic_chips_html(records)
+        if chips:
+            lines.append(chips)
+            lines.append("")
         lines.append('<div class="news-list">')
         lines.extend(render_item_md(r, suppress) for r in records)
         lines.append("</div>")
@@ -1970,7 +2053,7 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
         if brief and brief.get("text"):
             lines.append(
                 '<div class="section-brief">\n'
-                f"<p>{brief['text']}</p>\n"
+                f"{_brief_paragraphs_html(brief['text'])}\n"
                 f'<p class="section-brief-date">The picture as of '
                 f"{brief['date']}; numbered links go to the source "
                 "items.</p>\n"
@@ -1978,11 +2061,13 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
             )
             lines.append("")
         noun = "item" if len(records) == 1 else "items"
+        chips = _topic_chips_html(records)
         lines.extend(_collapsed_block(
             f"Show the {len(records)} {noun}",
-            ['<div class="news-list">',
-             *(render_item_md(r, suppress) for r in records),
-             "</div>"]))
+            ([chips] if chips else [])
+            + ['<div class="news-list">',
+               *(render_item_md(r, suppress) for r in records),
+               "</div>"]))
         lines.append("")
     if videos:
         empty = False
@@ -2069,10 +2154,22 @@ def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
         lines.append("No items were kept this week.")
     if also:
         lines.extend(["## Also this week", ""])
+        groups: dict[str, list] = {}
         for r in also:
-            lines.append(f"- [{md_escape(r['title'])}]({r['url']}) "
-                         f"({r['source']})")
-        lines.append("")
+            groups.setdefault(r.get("topic") or "Other", []).append(r)
+        if len(groups) > 1:
+            for topic in sorted(groups, key=lambda t: (t == "Other", t)):
+                lines.append(f"**{topic}**")
+                lines.append("")
+                for r in groups[topic]:
+                    lines.append(f"- [{md_escape(r['title'])}]({r['url']}) "
+                                 f"({r['source']})")
+                lines.append("")
+        else:
+            for r in also:
+                lines.append(f"- [{md_escape(r['title'])}]({r['url']}) "
+                             f"({r['source']})")
+            lines.append("")
     return "\n".join(lines) + "\n"
 
 

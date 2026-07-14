@@ -129,6 +129,34 @@ llm:
 
 # Category order is meaningful: it sets the section order in the weekly
 # digest and mirrors the nav (medical education first, per owner preference).
+# Topic vocabularies for the news sub-navigation chips (owner-tunable).
+# Derived from a 28-day census of kept items, 2026-07-14: every listed
+# topic cleared roughly 8 items over 4 weeks. The curator tags each kept
+# news item with one topic from its category's list; tags are
+# presentation-only and never affect keep or drop. Unknown or missing
+# tags fail soft to Other, which is always available and never listed.
+# Rename, merge, or split by editing these lists; changes apply to new
+# items from the next pipeline run (existing tags stay as written).
+topics:
+  general_ai:
+    - New models
+    - Research and methods
+    - Benchmarks and evaluation
+    - Safety and reliability
+    - Industry and policy
+  medical_education:
+    - Exams and benchmarks
+    - Assessment and feedback
+    - Teaching and curriculum
+    - Simulation and skills
+    - Attitudes and adoption
+  clinical_practice:
+    - Imaging and diagnostics
+    - Clinical decision support
+    - Clinical documentation
+    - Safety and evaluation
+    - Patient facing tools
+
 categories:
   medical_education:
     label: Medical Education

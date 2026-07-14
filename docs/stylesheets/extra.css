@@ -114,6 +114,32 @@
   margin: 1.1em 0 0.25em;
   font-size: 0.8rem;
 }
+
+/* News topic chips (filtering handled by javascripts/topics.js). */
+.md-typeset .topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.8rem;
+}
+.md-typeset .topic-chip {
+  border: 1px solid var(--md-default-fg-color--light);
+  background: transparent;
+  color: var(--md-typeset-color);
+  border-radius: 1rem;
+  padding: 0.1rem 0.65rem;
+  font-size: 0.68rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.md-typeset .topic-chip:hover {
+  border-color: var(--md-primary-fg-color);
+}
+.md-typeset .topic-chip.is-active {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: #ffffff;
+}
 .badge-deadline { background-color: #ff8f00; color: #1a1a1a; }
 .badge-unconfirmed { background-color: #757575; color: #ffffff; }
 

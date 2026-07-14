@@ -56,6 +56,7 @@ extra_javascript:
   - javascripts/counter.js
   - javascripts/hardware.js
   - javascripts/prompts.js
+  - javascripts/topics.js
   - javascripts/better-answers.js
 
 plugins:
