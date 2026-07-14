@@ -65,8 +65,26 @@ CATEGORY_LABELS = {
     "local": "Local Models",
 }
 
-# Optional intro paragraph rendered under a category heading, for guidance
-# that belongs to the category rather than any one tool.
+# One-line descriptor rendered under every category heading, above the
+# collapsed bar, so readers know what they are about to expand. Required:
+# the renderer fails on a category without one. Keep each to one short
+# sentence; longer guidance belongs in CATEGORY_INTROS below.
+CATEGORY_DESCRIPTORS = {
+    "assistants": "General-purpose chat assistants for questions, drafting, and analysis.",
+    "agents": "Tools that plan and carry out multi-step tasks on your behalf.",
+    "research": "Literature search, evidence synthesis, and manuscript checking.",
+    "medical_learning": "Practice questions, case work, and tutoring for medical study.",
+    "presentations_design": "Slide decks, posters, and visual design.",
+    "image_generation": "Still images from text prompts and references.",
+    "video_generation": "Short video clips from text or image prompts.",
+    "music_audio": "Music, voice, and sound generation.",
+    "writing_slides": "Drafting, editing, and grammar support.",
+    "meetings_transcription": "Meeting capture, transcription, and notes.",
+    "local": "Apps for running open-weights models on your own machine.",
+}
+
+# Optional longer guidance that belongs to the category rather than any
+# one tool; renders inside the collapsed block, above the cards.
 CATEGORY_INTROS = {
     "presentations_design": (
         "To improve an existing PowerPoint deck without rebuilding it, "
@@ -85,6 +103,15 @@ MODALITY_LABELS = {
     "video": "Video generation",
     "audio": "Music and audio",
     "data": "Tabular data",
+}
+
+# Same idea for the open-weights modality subsections.
+MODALITY_DESCRIPTORS = {
+    "language": "Chat, reasoning, and coding model families to run on your own hardware.",
+    "image": "Image generators for local or self-hosted pipelines.",
+    "video": "Video generators; the heaviest hardware demands on this page.",
+    "audio": "Music and sound generation models.",
+    "data": "Models for tabular and structured data.",
 }
 
 GUIDE_VIDEO_GROUPS = {"agents", "local"}
@@ -215,10 +242,13 @@ def _render_tools(config) -> str:
         per_category_counts[label] = len(group)
         lines.append(f"## {label}")
         lines.append("")
-        intro = CATEGORY_INTROS.get(category)
-        if intro:
-            lines.append(intro)
-            lines.append("")
+        descriptor = CATEGORY_DESCRIPTORS.get(category)
+        if not descriptor:
+            raise ValueError(
+                f"render_data hook: category {category!r} has no descriptor"
+            )
+        lines.append(descriptor)
+        lines.append("")
         # Collapsed by default; the bar advertises the count and every
         # non-listed standing so no signal hides behind the toggle.
         # Arriving by link auto-expands (docs/javascripts/prompts.js).
@@ -233,6 +263,10 @@ def _render_tools(config) -> str:
             summary += f" ({', '.join(exceptions)})"
         lines.append(f'??? abstract "{summary}"')
         lines.append("")
+        intro = CATEGORY_INTROS.get(category)
+        if intro:
+            lines.append(f"    {intro}")
+            lines.append("")
         body = ['<div class="tool-grid">']
         for tool in sorted(group, key=lambda t: t["name"].lower()):
             status_label, status_css = STATUS_LABELS[tool["governance_status"]]
@@ -294,6 +328,13 @@ def _render_open_models(config) -> str:
             continue
         per_modality[label] = len(group)
         lines.append(f"### {label}")
+        lines.append("")
+        descriptor = MODALITY_DESCRIPTORS.get(modality)
+        if not descriptor:
+            raise ValueError(
+                f"render_data hook: modality {modality!r} has no descriptor"
+            )
+        lines.append(descriptor)
         lines.append("")
         # Collapsed like the tool categories above; prompts.js expands on
         # arrival by link. Models carry licenses, not statuses, so the bar
