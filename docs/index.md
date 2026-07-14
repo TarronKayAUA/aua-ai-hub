@@ -12,7 +12,7 @@ hide:
 
 **Artificial intelligence, curated for medical education.**
 
-One reliable place for the AUACOM community to learn how AI works, find the right tools, follow the developments that matter, and plan for conferences. Selected for accuracy and usefulness, not hype.
+One reliable place for the AUACOM community to learn how AI works, find the right tools, follow the developments that matter, and see how the university governs AI use. Selected for accuracy and usefulness, not hype.
 
 [Start the literacy pathway](pathway/index.md){ .md-button .md-button--primary }
 [Browse the tools](tools/index.md){ .md-button }
@@ -71,6 +71,30 @@ One reliable place for the AUACOM community to learn how AI works, find the righ
 
     [See the calendar](conferences.md)
 
+- :material-scale-balance:{ .lg .middle } __Governance__
+
+    ---
+
+    The university's AI Responsible Use Policy, the committee behind it, and how tools get reviewed.
+
+    [See how AI is governed](governance/index.md)
+
+- :material-clipboard-text:{ .lg .middle } __Playbooks__
+
+    ---
+
+    One task walked end to end: lectures, exam questions, feedback, score reports, and more, guardrails attached.
+
+    [Pick your task](playbooks/index.md)
+
+- :material-newspaper-variant:{ .lg .middle } __Follow the Field__
+
+    ---
+
+    The last seven days of curated news, videos, and podcasts, refreshed nightly.
+
+    [See this week](news/this-week.md)
+
 </div>
 
 ## Latest items
@@ -85,9 +109,9 @@ More in the [News section](news/this-week.md), including the weekly digest.
 
 More on the [Videos page](news/videos.md).
 
-## Pinned announcements
+## Announcements
 
-- [Welcome to the AUA AI Hub](announcements/2026-06-09-aua-ai-hub-launch.md): the site is live, what is here now, and what is coming next.
+Institutional updates and committee polls live on the [Announcements page](announcements/index.md).
 
 ---
 

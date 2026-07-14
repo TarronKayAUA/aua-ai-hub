@@ -97,6 +97,10 @@ The new category in 2026 is the **agentic research workbench**, and [Claude Scie
 
 For general-purpose agents (coding assistants, computer-use tools) that also serve research workflows, see [AI Agents](agents.md).
 
+## Judged by the same rulers
+
+The pipeline's last stage, writing and disclosure, is the one no tool changes. AI-assisted research is held to the same instruments as any research: the reporting guideline for your design (the EQUATOR Network's checklists, such as STROBE for observational studies or CONSORT for trials), rigor instruments like the Medical Education Research Study Quality Instrument (MERSQI) in medical education, and the International Committee of Medical Journal Editors (ICMJE) rules on authorship, which are explicit that an AI tool cannot be an author, that AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods, and that responsibility for every AI-assisted sentence stays with the humans who sign the paper. The prompt library's [Pre-submission reviewer and Reporting guideline auditor](../prompts/index.md) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
+
 ## Cost and field fit at a glance
 
 Prices are approximate, checked July 2026 from vendor pages, and change often; the vendor's pricing page is authoritative.
@@ -114,9 +118,5 @@ Prices are approximate, checked July 2026 from vendor pages, and change often; t
 | Claude Science | Included in paid Claude plans (beta) | Computational and laboratory science; statistics-heavy work |
 
 Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, NotebookLM, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
-
-## Judged by the same rulers
-
-None of these tools changes what your work is measured against. AI-assisted research is held to the same instruments as any research: the reporting guideline for your design (the EQUATOR Network's checklists, such as STROBE for observational studies or CONSORT for trials), rigor instruments like the Medical Education Research Study Quality Instrument (MERSQI) in medical education, and the International Committee of Medical Journal Editors (ICMJE) rules on authorship, which are explicit that an AI tool cannot be an author, that AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods, and that responsibility for every AI-assisted sentence stays with the humans who sign the paper. The prompt library's [Pre-submission reviewer and Reporting guideline auditor](../prompts/index.md) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
 
 Suggest a tool for this page through the [About page](../about.md) contact. New tools enter the directory as Listed, a catalog fact rather than a verdict; committee review of any tool can be requested through the [review process](../governance/review-process.md).

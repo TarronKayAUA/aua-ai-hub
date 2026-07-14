@@ -56,11 +56,14 @@ Most of this site is written and reviewed by people; the News, Videos, Podcasts,
 <figcaption>The pipeline writes only the generated sections; every hand-written page stays human-maintained.</figcaption>
 </figure>
 
-Human oversight: the source lists, selection criteria, and summarization instructions are all maintained by the site owner, and the pipeline cannot modify any hand-written page (with one narrow exception below). Even so, summaries and descriptions are machine-generated; read them as pointers to the original sources, not as substitutes.
+**Human oversight.** The source lists, selection criteria, and summarization instructions are all maintained by the site owner, and the pipeline cannot modify any hand-written page (with one narrow exception below). Even so, summaries and descriptions are machine-generated; read them as pointers to the original sources, not as substitutes.
 
-Freshness: guide and reference pages carry a "Content last reviewed" date in their footer. A weekly automated check re-reads each page on a schedule set by how quickly its facts tend to change, verifies the page's checkable claims against current sources, and updates the date when everything holds (the one edit the pipeline may make to a hand-written page); anything that looks out of date is escalated to the maintainer for a human correction. The date moves only when a review actually happened, by machine or by hand.
+**Freshness.** Guide and reference pages carry a "Content last reviewed" date in their footer. A weekly automated check re-reads each page on a schedule set by how quickly its facts tend to change, verifies the page's checkable claims against current sources, and updates the date when everything holds (the one edit the pipeline may make to a hand-written page); anything that looks out of date is escalated to the maintainer for a human correction. The date moves only when a review actually happened, by machine or by hand.
 
-Automated upkeep goes one careful step further for the calendar and roster data. Watch processes re-check conference pages, opportunity listings, and tool pages against their official sources on a schedule, and a narrow class of changes is applied automatically, but only when every mechanical gate passes: the change must be grounded in the official page itself, the details must be coherent, and date changes must hold across two consecutive checks. Every automatic change lands in the public data files with a comment recording when and how it was verified, so the full audit trail is one click away in the site's repository. Everything that requires judgment stays human: tool governance statuses, prompt review statuses, the policy text, and all removals are never changed by automation, and anything that fails a gate is escalated to the maintainer instead of applied.
+**Automated upkeep.** For calendar and roster data, watch processes re-check official sources on a schedule, and a narrow class of changes is applied automatically; everything that requires judgment stays human.
+
+??? note "How automated changes are gated, in detail"
+    A change is applied automatically only when every mechanical gate passes: it must be grounded in the item's own official page, the details must be coherent, and date changes must hold across two consecutive checks. Every automatic change lands in the public data files with a comment recording when and how it was verified, so the full audit trail is one click away in the site's repository. Tool governance statuses, prompt review statuses, the policy text, and all removals are never changed by automation, and anything that fails a gate is escalated to the maintainer instead of applied.
 
 ## Governance note
 
@@ -87,7 +90,7 @@ This site is informational. AI-generated summaries and descriptions may contain 
 
 The fastest way to tell us what works, what does not, and what to fix: the [feedback form](https://forms.office.com/r/5a8RCi2YKP), five questions, about two minutes, including a field for corrections to anything on this site.
 
-News, video, podcast, and digest pages also carry a comments section where you can discuss items and react to them, and the [Prompt Exchange](prompts/index.md) accepts community prompt contributions with public voting. Both run on the site's [GitHub Discussions board](https://github.com/TarronKayAUA/aua-ai-hub/discussions) and require a free [GitHub account](https://github.com/signup) to post.
+News, video, podcast, and digest pages also carry a comments section where you can discuss items and react to them, and the [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting. Both run on the site's [GitHub Discussions board](https://github.com/TarronKayAUA/aua-ai-hub/discussions) and require a free [GitHub account](https://github.com/signup) to post.
 
 **Community standards.** Comments and posts are public. Keep discussion professional, and never post patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](governance/policy.md). Content is subject to moderation, and repeated misuse may result in loss of posting access.
 

@@ -11,7 +11,7 @@ A directory of artificial intelligence (AI) tools relevant to teaching, learning
 
 **How to read the statuses:** <span class="badge badge-listed">Listed</span>: in the directory because it is relevant and live; not an endorsement; use personal judgment. <span class="badge badge-licensed">Licensed</span>: institutionally licensed or procured by the university. <span class="badge badge-reviewed">Reviewed</span>: examined by the AI Committee; conclusions in the entry's note. <span class="badge badge-caution">Use with caution</span>: a specific concern is documented in the entry's note; read it before using the tool. <span class="badge badge-restricted">Restricted</span>: reviewed and found unsuitable for institutional use. Hover any badge for the entry's note; expand a category to browse it.
 
-Whatever a tool's status, two rules always apply: never enter protected health information (PHI), and never enter student records covered by the Family Educational Rights and Privacy Act (FERPA). See [PHI and FERPA considerations](../basics/glossary.md) in the glossary.
+Whatever a tool's status, two rules always apply: never enter protected health information (PHI), and never enter student records covered by the Family Educational Rights and Privacy Act (FERPA). See [PHI and FERPA considerations](../basics/glossary.md#phi-and-ferpa-considerations) in the glossary.
 
 <!-- render:tools -->
 

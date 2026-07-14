@@ -14,7 +14,7 @@ Three cautions keep benchmark numbers useful:
 2. **Contamination inflates scores.** When a benchmark's questions leak into training data, models can score well by memory rather than ability. Newer benchmarks fight this by refreshing their questions on a schedule, which is why LiveBench, featured below, regenerates its question set and delays publishing recent questions.
 3. **Small gaps are noise.** A point or two of difference between models is rarely meaningful. Pay attention to tiers, trends over months, and category strengths (a model can be strong at coding and middling at instruction following), not single-rank differences.
 
-For the vocabulary, see [benchmark, eval, and leaderboard](basics/glossary.md) in the glossary.
+For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics/glossary.md#eval), and [leaderboard](basics/glossary.md#leaderboard) in the glossary.
 
 ## The leaderboards worth knowing
 

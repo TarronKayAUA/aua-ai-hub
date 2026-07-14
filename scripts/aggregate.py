@@ -31,7 +31,7 @@ import statistics
 import sys
 import time
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.utils import format_datetime
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -1931,6 +1931,20 @@ def generate_digest_narrative(highlights: list[dict], window_label: str,
     return None, f"{last_failure} after 2 attempts"
 
 
+def _collapsed_block(summary: str, chunks: list[str]) -> list[str]:
+    """Wrap raw-HTML chunks in a collapsed admonition (pymdownx.details).
+
+    Mirrors the tools-directory idiom in scripts/render_data.py: content
+    indented four spaces under a ??? abstract bar; docs/javascripts/
+    prompts.js auto-expands the block when a reader arrives by link.
+    """
+    out = [f'??? abstract "{summary}"', ""]
+    for chunk in chunks:
+        for line in chunk.split("\n"):
+            out.append(f"    {line}" if line else "")
+    return out
+
+
 def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                      podcasts: list[dict],
                      briefs: dict | None = None) -> str:
@@ -1963,18 +1977,28 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                 "</div>"
             )
             lines.append("")
-        lines.append('<div class="news-list">')
-        lines.extend(render_item_md(r, suppress) for r in records)
-        lines.append("</div>")
+        noun = "item" if len(records) == 1 else "items"
+        lines.extend(_collapsed_block(
+            f"Show the {len(records)} {noun}",
+            ['<div class="news-list">',
+             *(render_item_md(r, suppress) for r in records),
+             "</div>"]))
         lines.append("")
     if videos:
         empty = False
-        lines.extend(["## Videos", "", _video_grid_html(videos), ""])
+        noun = "video" if len(videos) == 1 else "videos"
+        lines.extend(["## Videos", ""])
+        lines.extend(_collapsed_block(f"Show the {len(videos)} {noun}",
+                                      [_video_grid_html(videos)]))
+        lines.append("")
     if podcasts:
         empty = False
-        lines.extend(["## Podcasts", "",
-                      _video_grid_html(podcasts, extra_class="podcast-grid"),
-                      ""])
+        noun = "episode" if len(podcasts) == 1 else "episodes"
+        lines.extend(["## Podcasts", ""])
+        lines.extend(_collapsed_block(
+            f"Show the {len(podcasts)} {noun}",
+            [_video_grid_html(podcasts, extra_class="podcast-grid")]))
+        lines.append("")
     if empty:
         lines.append("No items were kept in the last seven days.")
     return "\n".join(lines) + "\n"
@@ -2089,7 +2113,23 @@ def render_archive_index(archive_files: list[str]) -> str:
     for name in archive_files:
         stem = name.removesuffix(".md")
         year, week = stem.split("-w")
-        lines.append(f"- [Week {int(week)}, {year}]({name})")
+        # ISO week numbers are opaque to most readers; spell out the range.
+        # A malformed filename degrades to the plain label, never a crash.
+        try:
+            start = date.fromisocalendar(int(year), int(week), 1)
+            end = date.fromisocalendar(int(year), int(week), 7)
+        except ValueError:
+            lines.append(f"- [Week {int(week)}, {year}]({name})")
+            continue
+        if start.year != int(year) or end.year != int(year):
+            span = (f"{start.strftime('%B')} {start.day}, {start.year} to "
+                    f"{end.strftime('%B')} {end.day}, {end.year}")
+        elif start.month == end.month:
+            span = f"{start.strftime('%B')} {start.day} to {end.day}"
+        else:
+            span = (f"{start.strftime('%B')} {start.day} to "
+                    f"{end.strftime('%B')} {end.day}")
+        lines.append(f"- [Week {int(week)}, {year}]({name}): {span}")
     if not archive_files:
         lines.append("No archived weeks yet.")
     return "\n".join(lines) + "\n"

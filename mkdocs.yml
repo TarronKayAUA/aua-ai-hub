@@ -136,6 +136,7 @@ nav:
       - Conferences: conferences.md
       - Opportunities: opportunities.md
   - Governance:
+      - governance/index.md
       - AI Responsible Use Policy: governance/policy.md
       - AI Committee: governance/committee.md
       - Committee Updates: governance/updates.md
