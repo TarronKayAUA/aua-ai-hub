@@ -144,6 +144,10 @@ class Item:
     first_seen: str = ""
     thumbnail: str = ""
     drop_reason: str = ""
+    # Curator-written neutral title for media cards (owner approved
+    # 2026-07-14): YouTube titles exaggerate by convention, so kept videos
+    # render this restatement while the click-through keeps the original.
+    display_title: str = ""
 
     def to_ledger(self, kept: bool, now_iso: str) -> dict:
         record = {
@@ -166,6 +170,8 @@ class Item:
             )
             if self.thumbnail:
                 record["thumbnail"] = self.thumbnail
+            if self.display_title:
+                record["display_title"] = self.display_title
         return record
 
 
@@ -176,6 +182,23 @@ def strip_html(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text)
     text = html.unescape(text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+def post_process_display_title(text: str) -> str:
+    """Sanitize a curator-written display title: plain text, house style,
+    bounded length. Returns "" when nothing usable remains, in which case
+    the original title renders as before."""
+    text = remove_dashes(strip_html(str(text)))
+    text = text.strip().strip('"').strip("'").rstrip(".").strip()
+    if len(text) > 90:
+        text = text[:90].rsplit(" ", 1)[0].rstrip(",;:")
+    return text
+
+
+def display_title_of(record: dict) -> str:
+    """The title a media card shows: the curator's neutral restatement
+    when present, the original otherwise."""
+    return record.get("display_title") or record.get("title", "")
 
 
 def remove_dashes(text: str) -> str:
@@ -505,7 +528,12 @@ def _video_grid_html(records: list[dict], extra_class: str = "") -> str:
     cards = []
     for r in records:
         published = datetime.fromisoformat(r["published"])
-        title = html.escape(r["title"])
+        shown = html.escape(display_title_of(r))
+        # Transparency: when the card shows the curator's neutral title,
+        # the creator's original stays one hover away (and on the click).
+        tooltip = ""
+        if r.get("display_title") and r.get("title"):
+            tooltip = f' title="{html.escape(r["title"])}"'
         description = ""
         if r.get("summary"):
             description = (
@@ -514,10 +542,10 @@ def _video_grid_html(records: list[dict], extra_class: str = "") -> str:
             )
         cards.append(
             f'<a class="video-card" href="{html.escape(r["url"])}" '
-            'target="_blank" rel="noopener">\n'
+            f'target="_blank" rel="noopener"{tooltip}>\n'
             f'  <img src="{html.escape(r.get("thumbnail", ""))}" '
-            f'alt="Video: {title}" loading="lazy">\n'
-            f'  <span class="video-card-title">{title}</span>\n'
+            f'alt="Video: {shown}" loading="lazy">\n'
+            f'  <span class="video-card-title">{shown}</span>\n'
             f'  <span class="video-card-meta">{html.escape(r["source"])}, '
             f"{fmt_date(published)}</span>{description}\n"
             "</a>"
@@ -1157,6 +1185,7 @@ def parse_curator_json(text: str, candidate_ids: set, categories: dict,
                 "id": item_id,
                 "category": category,
                 "summary": str(entry.get("summary", "")),
+                "display_title": str(entry.get("display_title", "")),
                 "importance": int(entry.get("importance", 3)),
                 "is_cfp": bool(entry.get("is_cfp", False)),
             }
@@ -1370,6 +1399,8 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
         item.summary = post_process_summary(
             decision["summary"], "", llm_cfg["summary_word_cap"]
         )
+        item.display_title = post_process_display_title(
+            decision.get("display_title", ""))
         kept_items.append(item)
         if decision["is_cfp"]:
             cfp_items.append(item)
@@ -1592,7 +1623,8 @@ def digest_description_html(categories: dict, news_by_category: dict,
         parts.append(f"<h3>{escape(label)}</h3><ul>")
         for r in records:
             parts.append(
-                f'<li><a href="{escape(r["url"])}">{escape(r["title"])}</a> '
+                f'<li><a href="{escape(r["url"])}">'
+                f'{escape(display_title_of(r))}</a> '
                 f"({escape(r['source'])})</li>"
             )
         parts.append("</ul>")
