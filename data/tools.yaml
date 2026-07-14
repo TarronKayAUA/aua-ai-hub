@@ -122,8 +122,8 @@
   cost: paid
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-11
-  blurb: Anthropic's agent for software work, run from the terminal. Plans and executes multi-step coding tasks against your own files; included with paid Claude plans.
+  last_reviewed: 2026-07-13
+  blurb: Anthropic's agent for software work, available in the terminal, IDE extensions, a desktop app, and the browser. Plans and executes multi-step tasks against your own files; included with paid Claude plans.
 
 - name: Cowork
   vendor: Anthropic
@@ -142,18 +142,20 @@
   cost: paid
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-11
-  blurb: OpenAI's software agent, available as a command-line tool, app, and cloud service; included with paid ChatGPT plans.
+  last_reviewed: 2026-07-13
+  blurb: OpenAI's software agent, now a mode of the ChatGPT desktop app (merged July 2026) alongside a command-line tool and cloud service. Works with local folders, repositories, and terminals; included with paid ChatGPT plans.
 
-- name: ChatGPT Agent Mode
+# Renamed from "ChatGPT Agent Mode" 2026-07-13: Agent Mode was
+# consolidated into ChatGPT Work in the 2026-07-09 desktop app merge.
+- name: ChatGPT Work
   vendor: OpenAI
   category: agents
-  url: https://help.openai.com/en/articles/11752874-chatgpt-agent
+  url: https://learn.chatgpt.com/docs/app
   cost: paid
   governance_status: under_review
   status_note: Awaiting AI Committee review.
-  last_reviewed: 2026-06-11
-  blurb: Agent built into ChatGPT's paid plans. Browses, fills forms, and works with files and connected apps in a sandboxed virtual computer, asking for confirmation before consequential steps.
+  last_reviewed: 2026-07-13
+  blurb: OpenAI's agent mode for finished work, the successor to Agent Mode after the July 2026 desktop merge. Takes an outcome and returns documents, spreadsheets, slides, or web apps; on the desktop it can use local files and applications with permission.
 
 - name: Manus
   vendor: Manus AI

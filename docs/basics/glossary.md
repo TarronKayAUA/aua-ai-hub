@@ -1,12 +1,12 @@
 ---
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-13
 ---
 
 # Glossary
 
 Short, plain-language definitions of the artificial intelligence (AI) terms you will meet on this site and in the wider literature. Entries are alphabetized.
 
-**Agent**: an AI system that does more than answer a single question. It plans steps, uses tools such as web search or code execution, and works toward a goal with limited supervision.
+**Agent**: an AI system that does more than answer a single question. It plans steps, uses tools such as web search or code execution, checks its own results, and works toward a goal with limited supervision. [Module 7 of the pathway](../pathway/working-with-agents.md) is the 12-minute introduction.
 
 **Alignment**: the research effort to make AI systems pursue the goals their developers and users intend, including being honest and declining harmful requests.
 
@@ -20,11 +20,15 @@ Short, plain-language definitions of the artificial intelligence (AI) terms you 
 
 **Context window**: the model's working memory, measured in tokens. It holds the conversation and any documents you provide. Content that falls outside it is invisible to the model.
 
+**Effort (reasoning effort)**: a user-facing setting for how hard a model thinks before answering, typically from low to a maximum. Higher effort is deeper, slower, and costlier; the skill is matching the setting to the task rather than leaving it high for everything.
+
 **Embedding**: a list of numbers representing the meaning of a piece of text, such that similar texts get similar numbers. Embeddings power semantic search, where results match meaning rather than exact keywords.
 
 **Eval**: short for evaluation, a structured test of model behavior. Running evals is how teams check whether a model is good enough, and stays good enough, for a specific use.
 
 **Fine-tuning**: additional training that adapts a pretrained model to a narrower purpose, such as following instructions politely or specializing in a domain.
+
+**Folder brief**: a plain text file of standing instructions that an agent reads before working in a folder (Claude Code reads `CLAUDE.md`, Codex reads `AGENTS.md`). The place for conventions and "always do X" rules you would otherwise repeat. See [Standing Setups](../tools/standing-setups.md).
 
 **GPU and VRAM**: the graphics processing unit (GPU) is the chip that does AI computation; video random access memory (VRAM) is its onboard memory. VRAM size determines how large a model a computer can run locally.
 
@@ -54,11 +58,17 @@ Short, plain-language definitions of the artificial intelligence (AI) terms you 
 
 **Open weights vs. open source**: open weights means the trained model file is downloadable and runnable locally. Fully open source additionally releases the training data and code. Many popular "open" models are open weights only.
 
+**Orchestration (subagents)**: splitting a large task across multiple AI agents working in parallel, with the results combined at the end. The vendors' highest-effort modes work this way; markedly more thorough on big decomposable tasks, and markedly more expensive.
+
 **Parameters**: the billions of adjustable internal values that store what a model learned during training. Loosely, more parameters means more capacity.
+
+**Permission prompt**: the pause where an agent asks your approval before an action (writing a file, running a command). Enforced by the interface software rather than by the model, which makes it the user's main safety control: approve what matches your request, question what surprises you.
 
 **PHI and FERPA considerations**: protected health information (PHI) is patient data covered by privacy law; the Family Educational Rights and Privacy Act (FERPA) covers student education records. Neither belongs in a consumer AI tool. Use only tools approved for such data, and when in doubt, leave the data out.
 
 **Pretraining**: the first and largest stage of training, where a model learns language and world knowledge by predicting hidden words across enormous text collections.
+
+**Project (standing setup)**: a persistent container on an assistant platform holding instructions and uploaded materials that apply to every conversation inside it, so a course or a manuscript never has to be re-explained. See [Standing Setups](../tools/standing-setups.md).
 
 **Prompt**: everything you type to an AI model: the question, instructions, and any pasted material. Clearer, more specific prompts produce better responses.
 
@@ -82,7 +92,7 @@ Short, plain-language definitions of the artificial intelligence (AI) terms you 
 
 **Token**: the unit of text a model reads and writes, roughly three quarters of an English word. Context windows, pricing, and rate limits are all measured in tokens.
 
-**Tool use (function calling)**: a model's ability to invoke external tools, such as a calculator, a search engine, or a database query, and incorporate the results into its answer.
+**Tool use (tool calls, function calling)**: a model pausing text generation to request an action (read a file, run a command, search), with the result feeding back into its answer. The mechanism that turns a chat model into an agent; consequential calls pass through a permission prompt first.
 
 **Training vs. inference**: training is the slow, expensive process of building a model. Inference is using the finished model to answer questions. Your conversations are inference; they do not update the model's parameters.
 
@@ -91,5 +101,7 @@ Short, plain-language definitions of the artificial intelligence (AI) terms you 
 **Vision model**: a model that can interpret images, such as reading a chart, a slide, or a photograph, and answer questions about them.
 
 **Weights**: another name for a model's learned parameter values. "Downloading a model" means downloading its weights.
+
+**Working session**: the interface tier between chat and code agents (Claude Cowork, ChatGPT Work): you give a task rather than a message, and the system plans, works, and returns finished documents, spreadsheets, or slides. See [Choosing Your Interface](../tools/interfaces.md).
 
 **Zero-shot and few-shot**: zero-shot means asking a model to do a task with instructions only. Few-shot means including a handful of worked examples in the prompt, which often improves consistency.

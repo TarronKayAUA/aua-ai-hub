@@ -138,7 +138,7 @@ Most consumer assistants now offer a **memory feature**: facts and preferences c
 
 Every assistant offers some form of standing instructions: custom instructions in settings, or per-workspace versions such as Projects in Claude and ChatGPT. Text placed there applies to every conversation and carries extra weight (a direct request in a message can still override it for that reply), which makes it the right home for things you would otherwise repeat: who you are and who your output is for ("I teach preclinical pharmacology; default to US medical education conventions"), format defaults ("no tables unless asked"), and verbosity preferences.
 
-Two habits keep standing instructions useful. **Keep them short and stable**: a page of rules dilutes itself, and the model follows five clear standing instructions better than thirty. **Put role and defaults in the instructions, put the task in the message**: instructions describe how you always want the assistant to behave; the message describes what you want right now. The [prompt library](../prompts/index.md)'s longer prompts are designed for exactly this split, which is why their notes say to paste them into a Project's instructions rather than into the chat.
+Two habits keep standing instructions useful. **Keep them short and stable**: a page of rules dilutes itself, and the model follows five clear standing instructions better than thirty. **Put role and defaults in the instructions, put the task in the message**: instructions describe how you always want the assistant to behave; the message describes what you want right now. The [prompt library](../prompts/index.md)'s longer prompts are designed for exactly this split, which is why their notes say to paste them into a Project's instructions rather than into the chat; [Standing Setups](../tools/standing-setups.md) walks through building those containers.
 
 ## The checklist
 
@@ -152,3 +152,5 @@ Before a task that matters, thirty seconds of setup:
 6. **Drift check:** the moment the model regresses to a corrected mistake, summarize and carry to a fresh chat.
 
 None of this is model-specific, and all of it matters more as tasks get longer. Curious what context physically costs? The [hardware page](../tools/hardware.md) shows how conversation length consumes memory when you run models on your own machine. For prompt patterns to use inside the window, see the [Prompting Fundamentals module](../pathway/prompting.md) and the [prompt library](../prompts/index.md).
+
+This page is also the first step of the pathway's operator stage: the same three levers, pointed at agents, are what [Choosing Your Interface](../tools/interfaces.md), [Standing Setups](../tools/standing-setups.md), and [Your First Agent Session](../tools/first-session.md) build on.

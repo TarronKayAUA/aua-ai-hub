@@ -44,7 +44,10 @@
   url: https://www.youtube.com/watch?v=px7XlbYgk7I
   note: Official onboarding covering the command line, app, and editor extension.
 
-- tool: ChatGPT Agent Mode
+# Tool renamed 2026-07-13 (Agent Mode became ChatGPT Work in the
+# 2026-07-09 desktop merge). The video predates the merge; swap it for
+# an official ChatGPT Work walkthrough at the next guide-videos refresh.
+- tool: ChatGPT Work
   slug: chatgpt-agent
   group: agents
   title: Introduction to ChatGPT agent
@@ -52,7 +55,7 @@
   length: 25 min
   published: July 2025
   url: https://www.youtube.com/watch?v=1jn_RpbPbEc
-  note: The official introduction; the feature has gained safeguards since, but the workflow shown still holds.
+  note: The official introduction to the former Agent Mode, which became ChatGPT Work in the July 2026 desktop merge; the interface has changed, the agent concepts shown still hold.
 
 - tool: Manus
   slug: manus

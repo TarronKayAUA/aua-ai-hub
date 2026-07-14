@@ -18,6 +18,35 @@ AI is strong at the mechanical layer of feedback: applying your rubric consisten
 
 One more failure mode is yours rather than the model's: feedback that arrives in a voice that is not yours teaches students that your feedback is not worth reading. The model drafts observations; the words that reach the student are yours.
 
+<figure class="figure">
+<svg viewBox="0 0 660 205" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The feedback pipeline: student work is de-identified first, the model produces quote-anchored observations against a frozen rubric, you judge and rewrite in your voice, and grades never enter the pipeline">
+<defs><marker id="wf-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipeline, with its two hard walls</text>
+<rect x="20" y="46" width="140" height="54" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="90" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">de-identify first</text>
+<text x="90" y="81" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">names, IDs, traceable details</text>
+<text x="90" y="93" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">out before any upload</text>
+<line x1="162" y1="73" x2="192" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#wf-ar)"/>
+<rect x="196" y="46" width="150" height="54" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="271" y="66" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">frozen rubric,</text>
+<text x="271" y="81" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">observations only,</text>
+<text x="271" y="94" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">each anchored to a quote</text>
+<line x1="348" y1="73" x2="378" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#wf-ar)"/>
+<rect x="382" y="46" width="130" height="54" rx="8" fill="var(--md-primary-fg-color)"/>
+<text x="447" y="66" text-anchor="middle" font-size="10" fill="#ffffff">you judge, cut,</text>
+<text x="447" y="81" text-anchor="middle" font-size="10" fill="#ffffff">and rewrite</text>
+<text x="447" y="94" text-anchor="middle" font-size="8.5" fill="#ffffff">in your voice</text>
+<line x1="514" y1="73" x2="544" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#wf-ar)"/>
+<rect x="548" y="46" width="92" height="54" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<text x="594" y="70" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">feedback,</text>
+<text x="594" y="85" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">disclosed</text>
+<rect x="20" y="130" width="620" height="34" rx="6" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="330" y="151" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">grades, scores, and rankings never enter this pipeline at any step</text>
+<text x="330" y="192" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the wall on the left protects the student's records; the wall below protects your judgment</text>
+</svg>
+<figcaption>Observations flow through; identities and grades never do.</figcaption>
+</figure>
+
 ## Gather first
 
 - Your rubric or feedback criteria, written out (if they live in your head, this task is the reason to write them down).

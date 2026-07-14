@@ -15,6 +15,40 @@ last_reviewed: 2026-07-13
 
 ## The walkthrough
 
+<figure class="figure">
+<svg viewBox="0 0 660 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The first session in five beats: a folder of copies, one real task, permission prompts you actually read, the agent's work loop, and your own review of the output">
+<defs><marker id="fs-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">twenty minutes, five beats</text>
+<rect x="20" y="40" width="112" height="66" rx="7" fill="none" stroke="#2e7d32" stroke-width="2"/>
+<text x="76" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">a folder</text>
+<text x="76" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">of copies,</text>
+<text x="76" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">never originals</text>
+<line x1="134" y1="73" x2="150" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
+<rect x="153" y="40" width="112" height="66" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="209" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">one real task</text>
+<text x="209" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">a deliverable,</text>
+<text x="209" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">not a question</text>
+<line x1="267" y1="73" x2="283" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
+<rect x="286" y="40" width="112" height="66" rx="7" fill="none" stroke="#ff8f00" stroke-width="2"/>
+<text x="342" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">the prompts</text>
+<text x="342" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">read each one;</text>
+<text x="342" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">you are the gate</text>
+<line x1="400" y1="73" x2="416" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
+<rect x="419" y="40" width="112" height="66" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
+<text x="475" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">the loop</text>
+<text x="475" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">read, write, check,</text>
+<text x="475" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">continue</text>
+<line x1="533" y1="73" x2="549" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
+<rect x="552" y="40" width="88" height="66" rx="7" fill="var(--md-primary-fg-color)"/>
+<text x="596" y="66" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#ffffff">you review</text>
+<text x="596" y="82" text-anchor="middle" font-size="9" fill="#ffffff">the output,</text>
+<text x="596" y="95" text-anchor="middle" font-size="9" fill="#ffffff">yourself</text>
+<text x="330" y="136" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">green: your safety net · amber: your control · filled: your judgment</text>
+<text x="330" y="158" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">the beats repeat for every new kind of task, not just the first one ever</text>
+</svg>
+<figcaption>Copies, a task, the gate, the loop, and your own eyes on the result.</figcaption>
+</figure>
+
 1. **Make a practice folder of copies.** Create a folder on your desktop and copy four or five course readings or papers into it (PDFs are perfect). Copies, not originals: your first session should be one where no mistake matters.
 2. **Open the agent in that folder.** In Claude Code, open the folder; in the ChatGPT app, switch to Codex and open the folder as a local project. That folder is now the agent's whole world: by default it works there and asks before going beyond it.
 3. **Give it a real task.** Paste this, or your own version:

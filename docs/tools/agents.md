@@ -58,7 +58,7 @@ The [Agents category in the tools directory](index.md#agents) carries every entr
 
 ### Claude Code (Anthropic)
 
-Anthropic's agent for software work, run from the terminal. Built for coding, but increasingly used for any file-based task by people comfortable with a command line: it plans multi-step work against your own files and executes it step by step. Included with paid Claude plans.
+Anthropic's agent for software work, available in the terminal, IDE extensions, a desktop app, and the browser. Built for coding, but increasingly used for any file-based task: it plans multi-step work against your own files and executes it step by step. Included with paid Claude plans.
 
 <!-- render:guide-videos:agents:claude-code -->
 
@@ -74,19 +74,19 @@ More: [Cowork](https://claude.com/product/cowork).
 
 ### Codex (OpenAI)
 
-OpenAI's software agent, available as a command-line tool, app, and cloud service. Like Claude Code it is developer-oriented, and the official onboarding below is the most thorough video on this page. Included with paid ChatGPT plans.
+OpenAI's software agent. Since the July 2026 merge it is a mode of the ChatGPT desktop app, working with local folders, repositories, and terminals, alongside a command-line tool and cloud service. Like Claude Code it is developer-oriented, and the official onboarding below is the most thorough video on this page. Included with paid ChatGPT plans.
 
 <!-- render:guide-videos:agents:codex -->
 
-More: [Codex](https://openai.com/codex/) and its [quickstart](https://developers.openai.com/codex/quickstart).
+More: [Codex](https://openai.com/codex/) and its [quickstart](https://learn.chatgpt.com/docs/quickstart).
 
-### ChatGPT Agent Mode (OpenAI)
+### ChatGPT Work (OpenAI)
 
-An agent inside an ordinary ChatGPT conversation: select agent mode and it works in a sandboxed virtual computer, browsing, filling forms, and handling files, with confirmation prompts before consequential steps. The gentlest entry point on this page.
+OpenAI's agent for finished work, and the successor to the former Agent Mode after the July 2026 desktop app merge: give it an outcome and it researches, works in steps, and returns documents, spreadsheets, slides, or web apps rather than chat, with confirmation prompts before consequential steps. On the desktop app it can use local files and applications with your permission. Still the gentlest entry point on this page. The walkthrough below predates the merge: the interface has changed, the concepts have not.
 
 <!-- render:guide-videos:agents:chatgpt-agent -->
 
-More: [ChatGPT agent help article](https://help.openai.com/en/articles/11752874-chatgpt-agent).
+More: [ChatGPT Work and the desktop app](https://learn.chatgpt.com/docs/app).
 
 ### Manus
 
@@ -114,4 +114,6 @@ More: [OpenClaw](https://openclaw.ai) and its [documentation](https://docs.openc
 
 ## Where to start
 
-If you have never used an agent, start with ChatGPT Agent Mode or Cowork on a task you can fully verify: assembling a comparison table from web sources, or reorganizing a folder of documents you know well. Watch what it does, note where it asks permission, and calibrate from there. The [Prompting Fundamentals module](../pathway/prompting.md) applies doubly here: agents reward precise goals, stated constraints, and explicit deliverables.
+If you have never used an agent, start with ChatGPT Work or Cowork on a task you can fully verify: assembling a comparison table from web sources, or reorganizing a folder of documents you know well. Watch what it does, note where it asks permission, and calibrate from there. The [Prompting Fundamentals module](../pathway/prompting.md) applies doubly here: agents reward precise goals, stated constraints, and explicit deliverables.
+
+This page is the field guide; the rest of the site now carries the working layer. [Choosing Your Interface](interfaces.md) compares chat, working sessions, and code agents and explains the economics; [Module 7 of the pathway](../pathway/working-with-agents.md) is the 12-minute concept primer; [Your First Agent Session](first-session.md) walks your first 20 minutes step by step, including the settings worth changing; and [Standing Setups](standing-setups.md) makes your preferences permanent once you are running sessions routinely.
