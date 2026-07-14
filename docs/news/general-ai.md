@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Improvements in long-context reasoning for large language models are notable, with new self-guided test-time training methods allowing models to more reliably identify relevant evidence across lengthy inputs <a href="https://arxiv.org/abs/2607.09415">[3]</a>, while the WILDTRACE benchmark evaluates how effectively models integrate information from distant text passages <a href="https://arxiv.org/abs/2607.09328">[2]</a>. Efficient architectures such as the open-source Soofi S 30B-A3B model provide enhanced long-context processing for both German and English <a href="https://arxiv.org/abs/2607.09424">[4]</a>. Memory efficiency has advanced through Sticky Routing, a technique that optimizes Mixture-of-Experts models for edge device inference <a href="https://arxiv.org/abs/2607.08780">[5]</a>. Additionally, retrieval-augmented generation demonstrates ways to ground responses in maintained documents, reducing hallucinations in public health applications <a href="https://arxiv.org/abs/2607.06641">[11]</a>.</p>
-<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
+<p>Recent analysis draws attention to the real operational costs of frontier large language models, underlining the need for careful budgeting and planning in medical applications <a href="https://playcode.io/blog/real-price-of-frontier-models">[1]</a>. Advances in benchmarking are evident with the WILDTRACE evaluation, which tests long-context models on reasoning tasks involving integration of evidence across distant parts of documents-a relevant challenge for clinical case reviews or academic research <a href="https://arxiv.org/abs/2607.09328">[3]</a>. Meanwhile, a self-guided test-time training method demonstrates improved performance for these long-context models by enabling more effective identification and use of relevant information within lengthy texts <a href="https://arxiv.org/abs/2607.09415">[4]</a>. Finally, the PLURAL dataset addresses value alignment, offering data on value-focused preferences from 92 countries to help tailor models toward culturally representative outcomes <a href="https://arxiv.org/abs/2607.08034">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://playcode.io/blog/real-price-of-frontier-models">The real prices of frontier models</a>
+    <p class="news-card-summary">Analysis of actual costs of frontier large language models including inference expenses and operational overhead.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 13, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 8, 2026</span></div>
     <a class="news-card-title" href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">Introducing GPT‑Live</a>
     <p class="news-card-summary">OpenAI upgraded ChatGPT&#x27;s voice mode model and added delegation to GPT-4o for tasks requiring web search or complex reasoning.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 8, 2026</span></div>
-    <a class="news-card-title" href="https://microsoft.github.io/flint-chart">Show HN: Microsoft releases Flint, a visualization language for AI agents</a>
-    <p class="news-card-summary">Microsoft released Flint, a visualization language designed to help AI agents generate reliable and detailed charts with explicit specifications rather than relying on system defaults.</p>
   </div>
 </div>
 </div>

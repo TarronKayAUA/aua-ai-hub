@@ -16032,6 +16032,77 @@
    "first_seen": "2026-07-13T21:13:55.262399+00:00",
    "kept": false,
    "reason": "opening remarks only, no substantive content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache",
+   "title_hash": "4588efca5687b68970c6465c30794ec3",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": false,
+   "reason": "developer tooling tip with no medical or educational relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02991-x",
+   "title_hash": "012dea7bbf8c025973bac1f489df12b4",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": true,
+   "title": "Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-14T00:00:00+00:00",
+   "summary": "Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.",
+   "category": "clinical_practice",
+   "score": 3.0
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/13/doomql",
+   "title_hash": "245dc6a6e2aca9876e212fc2faf86225",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": false,
+   "reason": "creative project demo with no relevance to medical education or practice"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency",
+   "title_hash": "588a0f1b4f0116b47d305eaaffe4c93d",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": false,
+   "reason": "personal observation on coding productivity without substantive news or findings"
+  },
+  {
+   "url": "https://playcode.io/blog/real-price-of-frontier-models",
+   "title_hash": "4fa1e749fcf3491f0487f0e02ed4cd44",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": true,
+   "title": "The real prices of frontier models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-13T18:32:27+00:00",
+   "summary": "Analysis of actual costs of frontier large language models including inference expenses and operational overhead.",
+   "category": "general_ai",
+   "score": 3.0
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uv66by/i_got_gemma_4_running_directly_inside_godot_using",
+   "title_hash": "a6858328518d493e095308b522c2e6f7",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": false,
+   "reason": "narrow technical proof-of-concept with no significance for medical educators or practitioners"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02960-4",
+   "title_hash": "c2ab299bea6cddaccbe9a21a564736e3",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": true,
+   "title": "AI agents in clinical practice: an evidence map",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-13T00:00:00+00:00",
+   "summary": "Systematic evidence map of AI agents deployed in clinical practice settings, covering effectiveness and implementation outcomes.",
+   "category": "clinical_practice",
+   "score": 4.0
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=-J5KoSMfPLk",
+   "title_hash": "d00042a2f995e54a9d622b527ea34d14",
+   "first_seen": "2026-07-14T03:37:00.962758+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
   }
  ],
  "digests": [
@@ -16166,14 +16237,14 @@
    "date": "July 13, 2026"
   },
   "clinical_practice": {
-   "text": "Addressing risks in clinical AI deployment, one study highlights entity attribution failures in retrieval-augmented generation systems, where evidence is misattributed to incorrect drugs or clinical entities despite passing automated checks <a href=\"https://arxiv.org/abs/2607.09349\">[4]</a>. Alongside this, researchers have compared human and AI-assisted methods for revising Delphi consensus statements, testing whether large language models with retrieval-augmented generation can speed expert agreement in specialized topics such as RNA-based medicines <a href=\"https://medinform.jmir.org/2026/1/e90228\">[3]</a>. In practical application, a peer-reviewed analysis found that transparent, interpretable AI models in clinical trial infrastructure are a prerequisite for ensuring equity and preventing health disparities in evidence generation <a href=\"https://www.nature.com/articles/s41746-026-02987-7\">[12]</a>. Portable deep learning-based radiofrequency scanners have further expanded rapid stroke type detection at the point of care <a href=\"https://www.nature.com/articles/s41746-026-02996-6\">[5]</a>.",
-   "hash": "414c65dc2f1df14f",
-   "date": "July 13, 2026"
+   "text": "A portable radiofrequency brain scanner using deep learning has enabled rapid stroke type detection at the point of care, signaling important advances in diagnostic speed and mobility <a href=\"https://www.nature.com/articles/s41746-026-02996-6\">[6]</a>. Studies are also evaluating AI algorithms for predicting incident atrial fibrillation and how these tools affect clinical decision-making and workflow in practice <a href=\"https://www.nature.com/articles/s41746-026-02950-6\">[8]</a>. In another area, machine learning models that combine diverse data types are now improving predictions of treatment response in ovarian cancer, supporting personalized oncology approaches <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[1]</a>. The deployment and effectiveness of AI agents in clinical practice are systematically mapped, with implementation outcomes highlighted <a href=\"https://www.nature.com/articles/s41746-026-02960-4\">[10]</a>. Investigations have also identified risks of entity attribution failure in clinical retrieval-augmented generation, underscoring ongoing concerns about accuracy in AI-generated evidence <a href=\"https://arxiv.org/abs/2607.09349\">[5]</a>.",
+   "hash": "a8c205a47a8aa0d6",
+   "date": "July 14, 2026"
   },
   "general_ai": {
-   "text": "Improvements in long-context reasoning for large language models are notable, with new self-guided test-time training methods allowing models to more reliably identify relevant evidence across lengthy inputs <a href=\"https://arxiv.org/abs/2607.09415\">[3]</a>, while the WILDTRACE benchmark evaluates how effectively models integrate information from distant text passages <a href=\"https://arxiv.org/abs/2607.09328\">[2]</a>. Efficient architectures such as the open-source Soofi S 30B-A3B model provide enhanced long-context processing for both German and English <a href=\"https://arxiv.org/abs/2607.09424\">[4]</a>. Memory efficiency has advanced through Sticky Routing, a technique that optimizes Mixture-of-Experts models for edge device inference <a href=\"https://arxiv.org/abs/2607.08780\">[5]</a>. Additionally, retrieval-augmented generation demonstrates ways to ground responses in maintained documents, reducing hallucinations in public health applications <a href=\"https://arxiv.org/abs/2607.06641\">[11]</a>.",
-   "hash": "aaf38d00ee4063c0",
-   "date": "July 13, 2026"
+   "text": "Recent analysis draws attention to the real operational costs of frontier large language models, underlining the need for careful budgeting and planning in medical applications <a href=\"https://playcode.io/blog/real-price-of-frontier-models\">[1]</a>. Advances in benchmarking are evident with the WILDTRACE evaluation, which tests long-context models on reasoning tasks involving integration of evidence across distant parts of documents-a relevant challenge for clinical case reviews or academic research <a href=\"https://arxiv.org/abs/2607.09328\">[3]</a>. Meanwhile, a self-guided test-time training method demonstrates improved performance for these long-context models by enabling more effective identification and use of relevant information within lengthy texts <a href=\"https://arxiv.org/abs/2607.09415\">[4]</a>. Finally, the PLURAL dataset addresses value alignment, offering data on value-focused preferences from 92 countries to help tailor models toward culturally representative outcomes <a href=\"https://arxiv.org/abs/2607.08034\">[9]</a>.",
+   "hash": "0b7c9f0ba1e4b096",
+   "date": "July 14, 2026"
   }
  },
  "opportunity_snapshot": {

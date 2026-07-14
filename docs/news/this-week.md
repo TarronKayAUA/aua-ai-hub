@@ -278,20 +278,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42406323?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Ars Longa, Data Brevis: the science of disease and the art of care</a>
-    <p class="news-card-summary">Peer-reviewed examination of how artificial intelligence has changed diagnostic and therapeutic approaches in modern medical practice and education.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42405980?fc=20260609215449&amp;ff=20260706175123&amp;v=2.20.0">Widely available, general-purpose generative AI applications for radiology education: determining the teaching quality of synthetic pediatric neuroradiology images</a>
-    <p class="news-card-summary">Peer-reviewed study evaluating synthetic pediatric radiology images from general-purpose generative AI for medical education quality.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42409437?fc=20260609215449&amp;ff=20260707072603&amp;v=2.20.0">The Role of Artificial Intelligence in Medical Education and Training: Implications for Rheumatology</a>
     <p class="news-card-summary">A review of artificial intelligence applications in rheumatology medical education and training.</p>
   </div>
@@ -301,11 +287,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Addressing risks in clinical AI deployment, one study highlights entity attribution failures in retrieval-augmented generation systems, where evidence is misattributed to incorrect drugs or clinical entities despite passing automated checks <a href="https://arxiv.org/abs/2607.09349">[4]</a>. Alongside this, researchers have compared human and AI-assisted methods for revising Delphi consensus statements, testing whether large language models with retrieval-augmented generation can speed expert agreement in specialized topics such as RNA-based medicines <a href="https://medinform.jmir.org/2026/1/e90228">[3]</a>. In practical application, a peer-reviewed analysis found that transparent, interpretable AI models in clinical trial infrastructure are a prerequisite for ensuring equity and preventing health disparities in evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[12]</a>. Portable deep learning-based radiofrequency scanners have further expanded rapid stroke type detection at the point of care <a href="https://www.nature.com/articles/s41746-026-02996-6">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
+<p>A portable radiofrequency brain scanner using deep learning has enabled rapid stroke type detection at the point of care, signaling important advances in diagnostic speed and mobility <a href="https://www.nature.com/articles/s41746-026-02996-6">[6]</a>. Studies are also evaluating AI algorithms for predicting incident atrial fibrillation and how these tools affect clinical decision-making and workflow in practice <a href="https://www.nature.com/articles/s41746-026-02950-6">[8]</a>. In another area, machine learning models that combine diverse data types are now improving predictions of treatment response in ovarian cancer, supporting personalized oncology approaches <a href="https://www.nature.com/articles/s41746-026-02991-x">[1]</a>. The deployment and effectiveness of AI agents in clinical practice are systematically mapped, with implementation outcomes highlighted <a href="https://www.nature.com/articles/s41746-026-02960-4">[10]</a>. Investigations have also identified risks of entity attribution failure in clinical retrieval-augmented generation, underscoring ongoing concerns about accuracy in AI-generated evidence <a href="https://arxiv.org/abs/2607.09349">[5]</a>.</p>
+<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02991-x">Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health</a>
+    <p class="news-card-summary">Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
@@ -360,6 +353,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02993-9">Expert Augmented Prediction of Circulatory and Respiratory Instability from High Resolution Vital Signs</a>
     <p class="news-card-summary">Study developed a deep learning model to predict circulatory and respiratory instability from high-resolution vital signs, augmenting expert clinical judgment.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02960-4">AI agents in clinical practice: an evidence map</a>
+    <p class="news-card-summary">Systematic evidence map of AI agents deployed in clinical practice settings, covering effectiveness and implementation outcomes.</p>
   </div>
 </div>
 <div class="news-card">
@@ -599,11 +599,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Improvements in long-context reasoning for large language models are notable, with new self-guided test-time training methods allowing models to more reliably identify relevant evidence across lengthy inputs <a href="https://arxiv.org/abs/2607.09415">[3]</a>, while the WILDTRACE benchmark evaluates how effectively models integrate information from distant text passages <a href="https://arxiv.org/abs/2607.09328">[2]</a>. Efficient architectures such as the open-source Soofi S 30B-A3B model provide enhanced long-context processing for both German and English <a href="https://arxiv.org/abs/2607.09424">[4]</a>. Memory efficiency has advanced through Sticky Routing, a technique that optimizes Mixture-of-Experts models for edge device inference <a href="https://arxiv.org/abs/2607.08780">[5]</a>. Additionally, retrieval-augmented generation demonstrates ways to ground responses in maintained documents, reducing hallucinations in public health applications <a href="https://arxiv.org/abs/2607.06641">[11]</a>.</p>
-<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the source items.</p>
+<p>Recent analysis draws attention to the real operational costs of frontier large language models, underlining the need for careful budgeting and planning in medical applications <a href="https://playcode.io/blog/real-price-of-frontier-models">[1]</a>. Advances in benchmarking are evident with the WILDTRACE evaluation, which tests long-context models on reasoning tasks involving integration of evidence across distant parts of documents-a relevant challenge for clinical case reviews or academic research <a href="https://arxiv.org/abs/2607.09328">[3]</a>. Meanwhile, a self-guided test-time training method demonstrates improved performance for these long-context models by enabling more effective identification and use of relevant information within lengthy texts <a href="https://arxiv.org/abs/2607.09415">[4]</a>. Finally, the PLURAL dataset addresses value alignment, offering data on value-focused preferences from 92 countries to help tailor models toward culturally representative outcomes <a href="https://arxiv.org/abs/2607.08034">[9]</a>.</p>
+<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the source items.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://playcode.io/blog/real-price-of-frontier-models">The real prices of frontier models</a>
+    <p class="news-card-summary">Analysis of actual costs of frontier large language models including inference expenses and operational overhead.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 13, 2026</span></div>
@@ -789,21 +796,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 </div>
 <div class="news-card">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uoozt4/new_open_model_from_tencent_hy_hy3_295b_total_21b">New open model from Tencent Hy: Hy3 (295B total 21B active - apache 2.0)</a>
-    <p class="news-card-summary">Tencent releases Hy3, an open-weight 295-billion-parameter model with 21-billion active parameters under Apache 2.0 license.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/CkiY6sxiegNB9XeJzbgeatsW70zO1W7TkruSJDZ22s8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=38ea195e9d5b3ec7d9ec35718ee6a1aa4e413114" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1unrse9/i_benchmarked_13_models_at_65k128k_context_to">I benchmarked 13 models at 65K-128K context to find out what actually matters for agentic workloads</a>
-    <p class="news-card-summary">Benchmark study of 13 language models at extended context lengths to determine which capabilities matter most for agentic workloads.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1umo8zu/longcat_2_model_weights_have_been_published">Longcat 2 model weights have been published</a>
     <p class="news-card-summary">Meituan released open-weights Longcat 2 model in INT8 and FP8 quantized formats on Hugging Face.</p>
@@ -947,12 +939,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
   <span class="video-card-title">Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)</span>
   <span class="video-card-meta">WorldofAI, July 7, 2026</span>
   <span class="video-card-desc">Tencent released HY3, an open-weight language model available for free use and local deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=mIVHFU94Xhc" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg" alt="Video: Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?" loading="lazy">
-  <span class="video-card-title">Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?</span>
-  <span class="video-card-meta">Bijan Bowen, July 6, 2026</span>
-  <span class="video-card-desc">Technical comparison and evaluation of Tencent&#x27;s HY3 model against GLM and DeepSeek competitors.</span>
 </a>
 </div>
 

@@ -13,11 +13,18 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Addressing risks in clinical AI deployment, one study highlights entity attribution failures in retrieval-augmented generation systems, where evidence is misattributed to incorrect drugs or clinical entities despite passing automated checks <a href="https://arxiv.org/abs/2607.09349">[4]</a>. Alongside this, researchers have compared human and AI-assisted methods for revising Delphi consensus statements, testing whether large language models with retrieval-augmented generation can speed expert agreement in specialized topics such as RNA-based medicines <a href="https://medinform.jmir.org/2026/1/e90228">[3]</a>. In practical application, a peer-reviewed analysis found that transparent, interpretable AI models in clinical trial infrastructure are a prerequisite for ensuring equity and preventing health disparities in evidence generation <a href="https://www.nature.com/articles/s41746-026-02987-7">[12]</a>. Portable deep learning-based radiofrequency scanners have further expanded rapid stroke type detection at the point of care <a href="https://www.nature.com/articles/s41746-026-02996-6">[5]</a>.</p>
-<p class="section-brief-date">The picture as of July 13, 2026; numbered links go to the items below.</p>
+<p>A portable radiofrequency brain scanner using deep learning has enabled rapid stroke type detection at the point of care, signaling important advances in diagnostic speed and mobility <a href="https://www.nature.com/articles/s41746-026-02996-6">[6]</a>. Studies are also evaluating AI algorithms for predicting incident atrial fibrillation and how these tools affect clinical decision-making and workflow in practice <a href="https://www.nature.com/articles/s41746-026-02950-6">[8]</a>. In another area, machine learning models that combine diverse data types are now improving predictions of treatment response in ovarian cancer, supporting personalized oncology approaches <a href="https://www.nature.com/articles/s41746-026-02991-x">[1]</a>. The deployment and effectiveness of AI agents in clinical practice are systematically mapped, with implementation outcomes highlighted <a href="https://www.nature.com/articles/s41746-026-02960-4">[10]</a>. Investigations have also identified risks of entity attribution failure in clinical retrieval-augmented generation, underscoring ongoing concerns about accuracy in AI-generated evidence <a href="https://arxiv.org/abs/2607.09349">[5]</a>.</p>
+<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="news-list">
+<div class="news-card">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02991-x">Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health</a>
+    <p class="news-card-summary">Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
@@ -76,6 +83,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02960-4">AI agents in clinical practice: an evidence map</a>
+    <p class="news-card-summary">Systematic evidence map of AI agents deployed in clinical practice settings, covering effectiveness and implementation outcomes.</p>
+  </div>
+</div>
+<div class="news-card">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02932-8">A clinician aligned vision language framework for stepwise interpretation in fundus fluorescein angiography</a>
     <p class="news-card-summary">Researchers developed a vision-language AI framework aligned with clinician workflows for interpreting fundus fluorescein angiography images step-by-step.</p>
@@ -107,20 +121,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90052">Evaluation of an AI Medical Scribe After 236,153 Notes Generated Across Care Levels in a European Health System: Mixed Methods Retrospective Observational Study</a>
     <p class="news-card-summary">Mixed methods study evaluates real-world performance of an AI medical scribe across care levels in a European health system based on over 236,000 generated notes.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91249">Natural Language Processing Applied to Psychiatric Clinical Notes: Scoping Review</a>
-    <p class="news-card-summary">Scoping review examines natural language processing applications to psychiatric clinical notes in electronic health records for earlier illness identification and personalized treatment planning.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91652">Exploring the Role of Large Language Models in Primary Care: Qualitative Study of Physicians in the United States and the Netherlands</a>
-    <p class="news-card-summary">Qualitative study explores how large language models can support primary care physicians with clinical, administrative, and communication tasks in their workflows.</p>
   </div>
 </div>
 </div>
