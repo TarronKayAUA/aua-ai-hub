@@ -133,3 +133,21 @@
   url: https://doi.org/10.2147/AMEP.S492895
   blurb: Reviews how generated questions fit into examination workflows,
     including the points where human review cannot be skipped.
+
+- title: INSIGHTS interactive demo
+  source: NBME
+  type: guide
+  category: study_strategy
+  url: https://www.nbme.org/insights-demo/
+  blurb: The National Board of Medical Examiners' own clickable demo of the
+    examinee dashboard, the fastest way to see what your report will look
+    like before your first exam.
+
+- title: INSIGHTS user guide
+  source: NBME
+  type: guide
+  category: study_strategy
+  url: https://www.nbme.org/wp-content/uploads/2026/04/INSIGHTS_User_Guide.pdf
+  blurb: The official walkthrough of every tab of the dashboard, including
+    what the comparison flags mean, which reports carry per-question timing,
+    and how to export your data.

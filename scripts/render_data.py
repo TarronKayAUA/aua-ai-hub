@@ -41,6 +41,7 @@ PROMPT_CATEGORY_LABELS = {
     "mcq_vetting": "MCQ Vetting",
     "data_analysis": "Data Analysis",
     "content_generation": "Content Generation",
+    "study_strategy": "Study Strategy",
 }
 
 PROMPT_STATUS_LABELS = {

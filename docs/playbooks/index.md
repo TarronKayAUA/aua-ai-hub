@@ -12,6 +12,7 @@ Task-level walkthroughs for getting real work done with artificial intelligence 
 | [Reviewing the Literature](literature-reviews.md) | Faculty and graduate students | From question to appraised evidence, with citations that check out |
 | [Feedback on Student Writing](writing-feedback.md) | Faculty | Rubric-grounded formative feedback at scale, with students' records protected |
 | [Administrative Drafting](admin-drafting.md) | Faculty and staff | Memos, minutes, and reports where every fact is yours and only the arranging is AI |
+| [Making Sense of Your Score Reports](score-reports.md) | Students and their advisors | From an exam performance report to an honest, interleaved study plan your advisor can hold you to |
 
 To request the next playbook, use the [feedback form](https://forms.office.com/r/5a8RCi2YKP).
 
