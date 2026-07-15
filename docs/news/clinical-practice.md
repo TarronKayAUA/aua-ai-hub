@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Agentic and interpretable AI systems are drawing increased attention for their potential to inform clinical decision making. A study has evaluated language model performance in generating breast cancer treatment recommendations, highlighting safety and reliability factors critical for oncology support tools <a href="https://arxiv.org/abs/2607.12051">[1]</a>. In radiology, an interpretable agentic AI model has been introduced, emphasizing transparent localized reasoning in medical image analysis <a href="https://www.nature.com/articles/s41746-026-02994-8">[5]</a>. Machine learning approaches are also expanding into multimodal data, with recent reviews and models addressing both the interpretability of clinical predictions <a href="https://www.nature.com/articles/s41746-026-02953-3">[3]</a> and long-term risk forecasting for cognitive impairment <a href="https://www.nature.com/articles/s41746-026-03023-4">[4]</a>. These developments reflect a broader trend toward AI systems that are both explainable and clinically actionable.</p>
-<p>Also this week: Five new studies focus on safety and evaluation, including a benchmark testing consumer AI on pediatric health questions and a framework for assessing the faithfulness of language model-generated clinical trial summaries. Other items address regulatory landscapes for digital devices, prediction of treatment responses in oncology, fairness reviews, and a unified AI model for emergency care.</p>
+<p>A new evaluation of language model systems for breast cancer treatment recommendations scrutinizes the reliability and safety of these AI-driven decision support tools in oncology, drawing attention to both clinical promise and essential safeguards <a href="https://arxiv.org/abs/2607.12051">[3]</a>. The emergence of interpretable agentic systems with localized reasoning in radiology further highlights the ongoing push for transparency in AI-assisted diagnostics <a href="https://www.nature.com/articles/s41746-026-02994-8">[7]</a>. At the same time, systematic reviews reveal critical strengths and gaps in chatbot applications for cancer genetic risk assessment and counseling, as well as broader fairness and interpretability challenges facing clinical decision support platforms <a href="https://ai.jmir.org/2026/1/e76400">[1]</a> <a href="https://www.nature.com/articles/s41746-026-02953-3">[5]</a> <a href="https://www.nature.com/articles/s41746-026-03000-x">[13]</a>. Developments in both explainable and multimodal AI are shaping the landscape for how clinical information is generated, made accessible, and evaluated for use by medical practitioners and researchers.</p>
+<p>Also this week: eight studies address clinical decision support, six focus on safety or evaluation, and coverage includes new machine learning models for treatment response in ovarian cancer and risk prediction after coronary intervention. One new peer-reviewed report presents an AI-enabled workflow for radiology.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e76400">Metrics Used for the Evaluation of Chatbots Providing Cancer Genetic Risk Assessment and Education: Systematic Review</a>
+    <p class="news-card-summary">Systematic review of metrics used to evaluate chatbots delivering cancer genetic risk assessment and counseling, identifying strengths and weaknesses of chatbot-assisted applications.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90611">Research on the Improvement Path of Human-AI Collaborative Consultation Effectiveness From the Perspective of Information Ecology: Configurational Analysis</a>
+    <p class="news-card-summary">Configurational analysis of pathways to improve human-AI collaborative consultation effectiveness in online health communities from an information ecology perspective.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03001-w">Multimodal AI for predicting comorbid REM sleep behavior disorder in major depressive disorder</a>
     <p class="news-card-summary">Peer-reviewed study uses multimodal AI to predict comorbid REM sleep behavior disorder in patients with major depressive disorder.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03003-8">Smartphone-based kinematic biomarkers for degenerative cervical myelopathy screening robust to physiological aging</a>
-    <p class="news-card-summary">Peer-reviewed study develops smartphone-based kinematic biomarkers for screening degenerative cervical myelopathy that remain robust across ages.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02985-9">Safety boundary maintenance in consumer AI systems responding to pediatric health queries: a cross-platform benchmark evaluation under naturalistic and adversarially pressured conditions</a>
-    <p class="news-card-summary">A benchmark evaluation tests how consumer AI systems maintain safety boundaries when answering pediatric health questions under both realistic and adversarial conditions.</p>
   </div>
 </div>
 </div>

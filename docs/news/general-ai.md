@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI’s development of GPT-Red marks a focused effort to enhance model safety by actively searching for cybersecurity vulnerabilities and fortifying future systems like GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[1]</a>. This emphasis on adversarial testing coincides with research demonstrating a substantial data exfiltration risk in current agent tooling, notably in Claude’s web-fetch feature, highlighting the complexity of securing AI system integrations <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[3]</a>. Recognition of vulnerabilities across leading language models has prompted renewed arguments for slower rollout and greater transparency in deployment standards <a href="https://spectrum.ieee.org/jailbreaking-llms">[8]</a>. In policy news, Google DeepMind’s leadership advocates a global regulatory approach anchored in the US to monitor frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[9]</a>. Methods to reliably assess AI factuality are also advancing, as evidenced by new leaderboards ranking models for both accuracy and user preference <a href="https://arena.ai/blog/factuality-in-arena">[2]</a>.</p>
-<p>Also this week: studies analyze the silent failure modes of quantized language models, the scaling of point-in-time models for causal inference, and the rapid upload of private codebases in commercial tools. The section includes six items on safety and reliability, as well as two new model releases such as Bonsai 27B.</p>
+<p>OpenAI has introduced an adversarial language model called GPT-Red, which was developed to actively probe for cybersecurity vulnerabilities in its own systems and strengthen the security of GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[1]</a>. Meanwhile, a recent demonstration revealed a significant data exfiltration flaw in Claude&#x27;s web-fetch tool, underscoring the critical importance of secure tool design for agent integration <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[3]</a>. Concerns regarding fundamental model reliability continue, as research has identified systemic vulnerabilities that enable bypassing safety measures across widely used language models; these findings have prompted calls for more transparent practices and slower deployment cycles <a href="https://spectrum.ieee.org/jailbreaking-llms">[8]</a>. In efforts to evaluate model performance, a new leaderboard is ranking language models based on both human preference and factual accuracy, addressing ongoing challenges with proper assessment <a href="https://arena.ai/blog/factuality-in-arena">[2]</a>.</p>
+<p>Also this week: there are six articles focused on various safety and reliability aspects, two releases of new models including Bonsai 27B, a large model optimized for phones, and the Index SLM series. Policy perspectives feature proposals for a global AI regulatory body and updates to data center regulation, while technical research includes studies on quantization failures in LLM reasoning.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uxdv34/thinking_machines_releases_first_openweight_model">Thinking Machines releases first open-weight model “Inkling”</a>
+    <p class="news-card-summary">Thinking Machines released Inkling, an open-weight language model.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/d7s0z8kqpfdh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f56cf81af181e41f80e2963533db6f6e5408fad2" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 15, 2026</span></div>
@@ -125,13 +133,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09999">Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts</a>
     <p class="news-card-summary">Study shows quantization can silently alter language model reasoning patterns even when task accuracy remains unchanged, using validated taxonomy of reasoning failures.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.10386">Structured Thoughts For Improved Reasoning And Context Pruning</a>
-    <p class="news-card-summary">Open-source platform for compound AI system evaluation provides design-of-experiments methodology to determine which components most affect system quality.</p>
   </div>
 </div>
 </div>

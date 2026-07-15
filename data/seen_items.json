@@ -17810,6 +17810,141 @@
    "first_seen": "2026-07-15T17:40:21.706542+00:00",
    "kept": false,
    "reason": "marketing from a commercial product's own channel without substantive educational or technical content"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e89942",
+   "title_hash": "32f9e2145f818c18b6adecfb14f7e9f3",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": true,
+   "title": "Digital Training for Lay Health Care Workers’ Knowledge and Skills in HIV Index Case Testing: Cluster Randomized Trial",
+   "source": "JMIR Medical Education",
+   "published": "2026-07-15T20:30:14+00:00",
+   "summary": "Cluster randomized trial evaluating digital training for lay health care workers learning HIV index case testing in low-resource settings.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e77034",
+   "title_hash": "05191f13d219c6a9ee048ac47858769e",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": true,
+   "title": "Synchronous Remote Teaching for Neurological Examination Training in Fifth-Year Medical Students: Quasi-Experimental Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-07-15T20:30:14+00:00",
+   "summary": "Quasi-experimental study comparing synchronous remote teaching with in-person instruction for teaching neurological examination skills including tendon reflex assessment to medical students.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e76400",
+   "title_hash": "e3024ad569edc6b654bd822d8b21835b",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": true,
+   "title": "Metrics Used for the Evaluation of Chatbots Providing Cancer Genetic Risk Assessment and Education: Systematic Review",
+   "source": "JMIR AI",
+   "published": "2026-07-15T20:30:14+00:00",
+   "summary": "Systematic review of metrics used to evaluate chatbots delivering cancer genetic risk assessment and counseling, identifying strengths and weaknesses of chatbot-assisted applications.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood",
+   "title_hash": "79f7ff0473260691b54916c627f84f44",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e96244",
+   "title_hash": "04d26806466694c1f7b64bf8e04d78b0",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": true,
+   "title": "Systemic Barriers to Curriculum Adaptation for Rapidly Changing Knowledge in Medical Education: Qualitative Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-07-15T19:30:04+00:00",
+   "summary": "Qualitative study identifying systemic barriers to rapid curriculum adaptation in medical education, using digitalization in medicine as an illustrative case.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e90611",
+   "title_hash": "270116a3874519ca92c73446394c0149",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": true,
+   "title": "Research on the Improvement Path of Human-AI Collaborative Consultation Effectiveness From the Perspective of Information Ecology: Configurational Analysis",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-15T19:00:05+00:00",
+   "summary": "Configurational analysis of pathways to improve human-AI collaborative consultation effectiveness in online health communities from an information ecology perspective.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e80431",
+   "title_hash": "9b659e55e2ea845d1600bbd9c9b13d89",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "narrow healthcare informatics application without AI relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxdv34/thinking_machines_releases_first_openweight_model",
+   "title_hash": "0cd8e10adc013f1aec142e88d352b68f",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": true,
+   "title": "Thinking Machines releases first open-weight model “Inkling”",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-15T18:12:43+00:00",
+   "summary": "Thinking Machines released Inkling, an open-weight language model.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://preview.redd.it/d7s0z8kqpfdh1.jpeg?width=640&crop=smart&auto=webp&s=f56cf81af181e41f80e2963533db6f6e5408fad2",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
+   "title_hash": "1ae9d0b711aeba39e3069c2db931c1fc",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxbrw4/linus_torvalds_tells_people_to_stop_attacking",
+   "title_hash": "93189ac1b3860117fe41d899dde4d35b",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "community meta-discussion without substantive news or analysis for medical educators"
+  },
+  {
+   "url": "https://huggingface.co/blog/thinkingmachines-inkling",
+   "title_hash": "1691ef04e9eea18b7de89fcb750d2e62",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 4 from more authoritative source already kept"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5HTqWgt6ctk",
+   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "news roundup video without substantive coverage details; cannot assess content merit from summary"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WMiylHobhBM",
+   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "news roundup video without substantive coverage details; cannot assess content merit from summary"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=m8uUUUsMD3Y",
+   "title_hash": "83b4118b5dae047abf46872c23a8e1b2",
+   "first_seen": "2026-07-15T21:16:13.985694+00:00",
+   "kept": false,
+   "reason": "hardware product marketing from OpenAI's own channel; unrelated to medical education or AI capability"
   }
  ],
  "digests": [
@@ -17939,18 +18074,18 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Concerns over reliability and citation accuracy in anatomy-related question answering by large language models continue to shape expectations for their use in medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[1]</a>. Meanwhile, surveys and studies across specialties report high willingness among medical students and professionals to adopt AI, although questions about trust, privacy, and the impact of training and experience influence attitudes and uptake <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[3]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0\">[8]</a>. Simulation applications show positive effects, with generative AI-assisted training linked to improved diagnostic communication scores across multiple clinical scenarios <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[4]</a>. At the same time, bibliometric analysis of research output highlights both expansion in the field and ongoing gaps in empirical evidence and governance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0\">[10]</a>. AI integration is also bringing changes to mentorship and access for students from less-resourced institutions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0\">[9]</a>.\n\nAlso this week: educators explore expanded roles during generative AI adoption, and new tools are developed to increase assessment validity. The section also includes eight new model releases, five papers on assessment and feedback, and two studies on teaching and curriculum in AI-supported medical education.",
-   "hash": "bedf1b1c101d4e64",
+   "text": "The identification of systemic barriers to updating medical curricula with new digital tools <a href=\"https://mededu.jmir.org/2026/1/e96244\">[3]</a> is matched by an increased focus on digital and AI-assisted teaching methods. Research comparing remote and in-person neurological examination instruction for medical students shows that virtual platforms can deliver key clinical skills, though outcomes may vary depending on the skill assessed <a href=\"https://mededu.jmir.org/2026/1/e77034\">[2]</a>. AI-powered simulation training has also led to improved communication scores in diagnostic scenarios, suggesting real benefits for integrating AI in medical education, especially in complex cases such as diabetes and cancer <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[7]</a>. However, a qualitative analysis warns of frequent reference hallucinations and unreliable citations generated by large language models, raising concerns about their academic value for anatomy-related instruction and writing <a href=\"https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[4]</a>. In parallel, studies highlight the ongoing challenge of adopting AI tools in practice, with interest reported among family medicine faculty but persistent barriers to workflow integration and data reliability <a href=\"https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[5]</a>.\n\nAlso this week: research covers eight new model releases and five papers on assessment. Studies explore adaptation of skin color terminology for inclusive education, feasibility of AI-generated microlearning in clinical surgery, and uptake patterns with AI-based OSCE platforms during licensure preparation.",
+   "hash": "2b0501d74286de56",
    "date": "July 15, 2026"
   },
   "clinical_practice": {
-   "text": "Agentic and interpretable AI systems are drawing increased attention for their potential to inform clinical decision making. A study has evaluated language model performance in generating breast cancer treatment recommendations, highlighting safety and reliability factors critical for oncology support tools <a href=\"https://arxiv.org/abs/2607.12051\">[1]</a>. In radiology, an interpretable agentic AI model has been introduced, emphasizing transparent localized reasoning in medical image analysis <a href=\"https://www.nature.com/articles/s41746-026-02994-8\">[5]</a>. Machine learning approaches are also expanding into multimodal data, with recent reviews and models addressing both the interpretability of clinical predictions <a href=\"https://www.nature.com/articles/s41746-026-02953-3\">[3]</a> and long-term risk forecasting for cognitive impairment <a href=\"https://www.nature.com/articles/s41746-026-03023-4\">[4]</a>. These developments reflect a broader trend toward AI systems that are both explainable and clinically actionable.\n\nAlso this week: Five new studies focus on safety and evaluation, including a benchmark testing consumer AI on pediatric health questions and a framework for assessing the faithfulness of language model-generated clinical trial summaries. Other items address regulatory landscapes for digital devices, prediction of treatment responses in oncology, fairness reviews, and a unified AI model for emergency care.",
-   "hash": "ab1e1736bf60abff",
+   "text": "A new evaluation of language model systems for breast cancer treatment recommendations scrutinizes the reliability and safety of these AI-driven decision support tools in oncology, drawing attention to both clinical promise and essential safeguards <a href=\"https://arxiv.org/abs/2607.12051\">[3]</a>. The emergence of interpretable agentic systems with localized reasoning in radiology further highlights the ongoing push for transparency in AI-assisted diagnostics <a href=\"https://www.nature.com/articles/s41746-026-02994-8\">[7]</a>. At the same time, systematic reviews reveal critical strengths and gaps in chatbot applications for cancer genetic risk assessment and counseling, as well as broader fairness and interpretability challenges facing clinical decision support platforms <a href=\"https://ai.jmir.org/2026/1/e76400\">[1]</a> <a href=\"https://www.nature.com/articles/s41746-026-02953-3\">[5]</a> <a href=\"https://www.nature.com/articles/s41746-026-03000-x\">[13]</a>. Developments in both explainable and multimodal AI are shaping the landscape for how clinical information is generated, made accessible, and evaluated for use by medical practitioners and researchers.\n\nAlso this week: eight studies address clinical decision support, six focus on safety or evaluation, and coverage includes new machine learning models for treatment response in ovarian cancer and risk prediction after coronary intervention. One new peer-reviewed report presents an AI-enabled workflow for radiology.",
+   "hash": "95f3239fc8eaeeb4",
    "date": "July 15, 2026"
   },
   "general_ai": {
-   "text": "OpenAI’s development of GPT-Red marks a focused effort to enhance model safety by actively searching for cybersecurity vulnerabilities and fortifying future systems like GPT-5.6 <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[1]</a>. This emphasis on adversarial testing coincides with research demonstrating a substantial data exfiltration risk in current agent tooling, notably in Claude’s web-fetch feature, highlighting the complexity of securing AI system integrations <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[3]</a>. Recognition of vulnerabilities across leading language models has prompted renewed arguments for slower rollout and greater transparency in deployment standards <a href=\"https://spectrum.ieee.org/jailbreaking-llms\">[8]</a>. In policy news, Google DeepMind’s leadership advocates a global regulatory approach anchored in the US to monitor frontier model safety <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[9]</a>. Methods to reliably assess AI factuality are also advancing, as evidenced by new leaderboards ranking models for both accuracy and user preference <a href=\"https://arena.ai/blog/factuality-in-arena\">[2]</a>.\n\nAlso this week: studies analyze the silent failure modes of quantized language models, the scaling of point-in-time models for causal inference, and the rapid upload of private codebases in commercial tools. The section includes six items on safety and reliability, as well as two new model releases such as Bonsai 27B.",
-   "hash": "29a9556e3edcbd10",
+   "text": "OpenAI has introduced an adversarial language model called GPT-Red, which was developed to actively probe for cybersecurity vulnerabilities in its own systems and strengthen the security of GPT-5.6 <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[1]</a>. Meanwhile, a recent demonstration revealed a significant data exfiltration flaw in Claude&#x27;s web-fetch tool, underscoring the critical importance of secure tool design for agent integration <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[3]</a>. Concerns regarding fundamental model reliability continue, as research has identified systemic vulnerabilities that enable bypassing safety measures across widely used language models; these findings have prompted calls for more transparent practices and slower deployment cycles <a href=\"https://spectrum.ieee.org/jailbreaking-llms\">[8]</a>. In efforts to evaluate model performance, a new leaderboard is ranking language models based on both human preference and factual accuracy, addressing ongoing challenges with proper assessment <a href=\"https://arena.ai/blog/factuality-in-arena\">[2]</a>.\n\nAlso this week: there are six articles focused on various safety and reliability aspects, two releases of new models including Bonsai 27B, a large model optimized for phones, and the Index SLM series. Policy perspectives feature proposals for a global AI regulatory body and updates to data center regulation, while technical research includes studies on quantization failures in LLM reasoning.",
+   "hash": "0eb27c8193d24390",
    "date": "July 15, 2026"
   }
  },
