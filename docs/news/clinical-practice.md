@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A peer-reviewed study has detailed a new multi-modal foundation model capable of supporting end-to-end emergency care, integrating diverse data sources to inform acute decision making <a href="https://www.nature.com/articles/s41746-026-02981-z">[5]</a>. Research in model reliability has continued with the development of an evaluation framework to assess the faithfulness of large language model-generated clinical trial summaries for distinct stakeholder groups, addressing concerns of accuracy and audience alignment <a href="https://arxiv.org/abs/2607.09932">[3]</a>. Safety and evaluation efforts are also advancing, as researchers benchmark how consumer AI systems respond to pediatric health issues under both everyday and adversarial scenarios, emphasizing the importance of robust boundary maintenance <a href="https://www.nature.com/articles/s41746-026-02985-9">[10]</a>. In clinical decision support, a systematic review has examined fairness in multimodal machine learning systems, highlighting equity as an ongoing focus <a href="https://www.nature.com/articles/s41746-026-03000-x">[6]</a>. Additionally, a machine learning model that fuses multi-omics data shows promise in predicting ovarian cancer treatment response, contributing to more personalized oncology approaches <a href="https://www.nature.com/articles/s41746-026-02991-x">[4]</a>.</p>
-<p>Also this week: studies assess the performance of language models on irregular clinical time series, implement smartphone-based diagnostics for cervical myelopathy, explore entity attribution failures in retrieval-augmented generation, and evaluate AI tools for interpreting mental health narratives-drawing from eight clinical decision support papers, four analyses on safety or evaluation, and two new imaging or diagnostic applications.</p>
-<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
+<p>A new multi-modal foundation model for emergency care offers an integrated approach to supporting clinical teams throughout emergency workflows, highlighting the potential for end-to-end application in acute care settings <a href="https://www.nature.com/articles/s41746-026-02981-z">[5]</a>. In oncology, a machine learning model leveraging multi-omics data has demonstrated improved ability to predict treatment responses in ovarian cancer, contributing to advances in precision health <a href="https://www.nature.com/articles/s41746-026-02991-x">[4]</a>. Safety and evaluation in clinical AI also remain active areas of concern, with researchers evaluating how faithfully large language models can summarize clinical trial results for different user groups, emphasizing the need for trustworthy outputs in medical communication <a href="https://arxiv.org/abs/2607.09932">[3]</a>. Benchmarking efforts target both clinical question answering over irregular patient data <a href="https://arxiv.org/abs/2607.09880">[2]</a> and the maintenance of safety boundaries in AI systems that answer pediatric health queries, underlining ongoing attempts to assess and improve AI reliability in high-risk clinical scenarios <a href="https://www.nature.com/articles/s41746-026-02985-9">[10]</a>.</p>
+<p>Also this week: eight new clinical decision support model releases and four systematic reviews on fairness, safety, evaluation, and clinical workflows. A smartphone-based approach for screening cervical myelopathy across ages appears, and a new metadata catalog from the Swiss health network demonstrates progress in health data discoverability.</p>
+<p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
 
 <div class="news-list">
 <div class="news-card">
@@ -91,6 +91,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A benchmark evaluation tests how consumer AI systems maintain safety boundaries when answering pediatric health questions under both realistic and adversarial conditions.</p>
   </div>
 </div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02999-3">CLEO closed loop framework for synthesizing medical privacy preserving tabular data</a>
+    <p class="news-card-summary">CLEO is a closed-loop framework for generating privacy-preserving synthetic medical tabular data.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
@@ -112,18 +119,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Study compared human experts and AI-assisted methods for revising Delphi consensus statements on RNA medicines, testing whether large language models with retrieval-augmented generation can accelerate expert consensus.</p>
   </div>
 </div>
-<div class="news-card" data-topic="safety-and-evaluation">
+<div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09349">Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation</a>
-    <p class="news-card-summary">Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.</p>
+    <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.sensible-med.com/p/5-considerations-for-a-new-nature">Can AI tell you who needs an ICD?</a>
+    <p class="news-card-summary">An analysis of whether artificial intelligence can improve patient selection for implantable cardiac defibrillators to prevent sudden cardiac death.</p>
   </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02996-6">Portable RF brain scanner enables stroke type detection using deep learning</a>
-    <p class="news-card-summary">Portable radiofrequency brain scanner using deep learning enables rapid stroke type detection at point of care.</p>
-  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gPwI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c278069-5e85-4f84-8d76-23884fd0cc41_790x647.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

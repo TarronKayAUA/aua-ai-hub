@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A technical report on the Index-1.9B series introduces new open-source small language models trained on large Chinese and English datasets, expanding options for research and instruction-tuned applications <a href="https://arxiv.org/abs/2607.09885">[1]</a>. Recent analyses highlight that quantization can change reasoning in language models without affecting task accuracy, raising concerns about silent reliability failures <a href="https://arxiv.org/abs/2607.09999">[2]</a>. Researchers have developed an open-source platform to systematically evaluate which components drive quality in compound AI systems, supporting more transparent benchmarking efforts <a href="https://arxiv.org/abs/2607.10386">[3]</a>. Hallucination detection methods, such as diversion decoding, are being refined to identify factual errors in outputs from large language models, which remains a key safety priority <a href="https://arxiv.org/abs/2607.10476">[4]</a>. Additionally, discussion of operational costs for frontier models addresses financial and practical factors shaping large-scale deployment <a href="https://playcode.io/blog/real-price-of-frontier-models">[5]</a>.</p>
-<p>Also this week: eight research papers cover assessment techniques and benchmarks, including the WILDTRACE benchmark and self-guided test-time training for long-context tasks. Two new model releases target efficient inference and multilingual performance. Industry, policy, and value alignment topics are represented, with PLURAL introducing a global dataset for LLM preference diversity.</p>
-<p class="section-brief-date">The picture as of July 14, 2026; numbered links go to the items below.</p>
+<p>Bonsai 27B introduces a 27-billion-parameter language model optimized to run on mobile phones, highlighting growing efforts to democratize access to advanced AI capabilities <a href="https://prismml.com/news/bonsai-27b">[1]</a>. Researchers are scrutinizing how quantization silently affects language model reasoning, showing that performance metrics may not capture shifts in underlying logic or emergence of new error types <a href="https://arxiv.org/abs/2607.09999">[3]</a>. Alongside this, structured evaluation techniques are helping to identify which parts of compound AI systems most impact output quality, paving the way for more reliable applications in complex tasks <a href="https://arxiv.org/abs/2607.10386">[4]</a>. Techniques that detect hallucinations in language models are gaining traction as safeguards against factual inaccuracies, targeting the challenge of maintaining trustworthy AI outputs <a href="https://arxiv.org/abs/2607.10476">[5]</a>. Cost analysis of frontier models sheds light on operational realities, giving stakeholders concrete data for decisions about resource allocation and deployment <a href="https://playcode.io/blog/real-price-of-frontier-models">[6]</a>.</p>
+<p>Also this week: three new models join the section, including Soofi S 30B-A3B with long-context handling for German and English, and Index SLM’s multilingual variants. Six recent studies investigate research methods and performance assessment, covering areas from memory-efficient inference to benchmarking long-context reasoning.</p>
+<p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://prismml.com/news/bonsai-27b">Bonsai 27B: A 27B-Class model that runs on a phone</a>
+    <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model designed to run efficiently on mobile phones.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
@@ -55,6 +62,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://playcode.io/blog/real-price-of-frontier-models">The real prices of frontier models</a>
     <p class="news-card-summary">Analysis of actual costs of frontier large language models including inference expenses and operational overhead.</p>
   </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show">What Anthropic’s latest AI discovery does, and doesn’t, show</a>
+    <p class="news-card-summary">MIT Technology Review examines what Anthropic&#x27;s recent research on internal model representations reveals and what it does not yet show about AI systems.</p>
+  </div>
+  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/thinking2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
@@ -112,20 +127,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.07779">From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier</a>
     <p class="news-card-summary">Preprint study examines large language models for advancing formal mathematics at the research frontier beyond well-defined problems, using interactive theorem proving.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.08009">From Execution to Education: A Bloom-Aligned Framework for Measuring Educational Control in LLMs</a>
-    <p class="news-card-summary">Preprint introduces a Bloom-aligned framework for measuring educational control in large language models, applied to assess shifts in cognitive demand for programming tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.08034">PLURAL: A Global Dataset for Value Alignment</a>
-    <p class="news-card-summary">PLURAL dataset grounds value-focused preferences in a nationally representative survey spanning 92 countries to better represent diverse value systems in large language models.</p>
   </div>
 </div>
 </div>

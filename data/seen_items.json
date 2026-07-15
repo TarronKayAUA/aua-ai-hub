@@ -16791,6 +16791,234 @@
    "first_seen": "2026-07-14T21:16:18.159227+00:00",
    "kept": false,
    "reason": "opinion and commentary without new information"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/14/github-changeling",
+   "title_hash": "b28b84b93fd23dfec837a4aecbce4056",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "minor release notes unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/14/pedalican",
+   "title_hash": "1bc1f72f400fdefb2f67536b15d322a0",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "minor tool release notes unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://prismml.com/news/bonsai-27b",
+   "title_hash": "c57252d0ecad7ef51323f226b5811e48",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": true,
+   "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-14T17:50:48+00:00",
+   "summary": "Bonsai 27B is a 27-billion-parameter language model designed to run efficiently on mobile phones.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42447193?fc=20260609215449&ff=20260714225000&v=2.20.0",
+   "title_hash": "0def44914546c290d6fd071c0d0f60a1",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": true,
+   "title": "Research on the application of LLaVA model based on QLoRA fine-tuning in medical teaching",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-14T10:00:00+00:00",
+   "summary": "An augmented reality system integrates a fine-tuned medical large language model with AR glasses to support medical education on resource-constrained devices.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/is-universal-testing-for-lpa-warranted",
+   "title_hash": "f46aec1eb516a1e71cd0ee606f9009a6",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "summary too sparse to evaluate; source material not accessible"
+  },
+  {
+   "url": "https://medicalfuturist.com/quantum-computing-in-healthcare",
+   "title_hash": "f98b013ecf069f622143de44366f5d71",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "speculative futurism without grounding in current or near-term developments"
+  },
+  {
+   "url": "https://medicalfuturist.com/3-things-transhumanism-can-give-to-healthcare",
+   "title_hash": "b09dcb104c4b92eea1f18e48512f57b5",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "speculative commentary on transhumanism without substantive analysis or evidence"
+  },
+  {
+   "url": "https://medicalfuturist.com/digital-health-menopause-and-the-150-billion-ignorance",
+   "title_hash": "72a94121fea1e01673a4ae02f1e5ffa5",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "healthcare industry commentary without AI relevance"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/14/ai-proof-lawyers-some-law-schools-restrict",
+   "title_hash": "0ae4b2e63d1f1d79e977e7c037f6defd",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; policy at law schools without medical education focus"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/governance/executive-leadership/2026/07/14/western-governors-u-president-state-online-ed",
+   "title_hash": "89869fc1d4e4a825cfdc93f98452e6ec",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general higher education administration without AI focus"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/learning-innovation/2026/07/14/charged-ev-batteries-online-learning",
+   "title_hash": "217e3e77d96460e76af9f7ff12e5c3d4",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; electric vehicle and online education without medical focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02999-3",
+   "title_hash": "1bfcd52b406f84cc78d3fe3ef01e2058",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": true,
+   "title": "CLEO closed loop framework for synthesizing medical privacy preserving tabular data",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-14T00:00:00+00:00",
+   "summary": "CLEO is a closed-loop framework for generating privacy-preserving synthetic medical tabular data.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
+   "title_hash": "0c0afd748394d4fc26a4aa5d7e274a63",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "summary too sparse to evaluate; keynote abstract without substantive content"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show",
+   "title_hash": "1e84ed24f7e09bc61ff80185d026415c",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": true,
+   "title": "What Anthropic’s latest AI discovery does, and doesn’t, show",
+   "source": "MIT Technology Review AI",
+   "published": "2026-07-13T18:00:00+00:00",
+   "summary": "MIT Technology Review examines what Anthropic's recent research on internal model representations reveals and what it does not yet show about AI systems.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/thinking2.jpg?resize=1200,600",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://academicmedicineblog.org/100-years-of-academic-medicine",
+   "title_hash": "bb5bd7290f21ed049be7c3bcb8e43aa5",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; journal anniversary retrospective without AI focus"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/5-considerations-for-a-new-nature",
+   "title_hash": "9b7524dc64bd67d076f9be214ad89e9f",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": true,
+   "title": "Can AI tell you who needs an ICD?",
+   "source": "Sensible Medicine",
+   "published": "2026-07-13T10:18:02+00:00",
+   "summary": "An analysis of whether artificial intelligence can improve patient selection for implantable cardiac defibrillators to prevent sudden cardiac death.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://substackcdn.com/image/fetch/$s_!gPwI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c278069-5e85-4f84-8d76-23884fd0cc41_790x647.png",
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/views/2026/07/13/ai-slop-tenure-problem-opinion",
+   "title_hash": "79bd0faff977470d5548424b1f33e9d2",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": true,
+   "title": "AI Slop Is a Tenure Problem, Not Just a Tech Problem",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-07-13T03:00:00+00:00",
+   "summary": "Academic publishing and tenure incentive structures enable proliferation of low-quality AI-generated content in scholarship, requiring systemic reform.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-2258401562.jpg?itok=3EaGdXAq",
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/a-daughter-of-the-cane-fields",
+   "title_hash": "4c87ea977d7f567c1d28281a0f690b4c",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; personal memoir without AI relevance"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/a-hippocratic-oath-for-2026",
+   "title_hash": "2fe9bab714181043340c3a99fbadd9b6",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; ethics commentary without substantive AI focus"
+  },
+  {
+   "url": "https://www.normaltech.ai/p/up-the-stack-how-ais-escape-from",
+   "title_hash": "723bdc7f477346fc84225971efbede87",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "industry analysis without clear relevance to medical educators or medical students"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts",
+   "title_hash": "55ef8aa4eb6f6ae13f8f4c1350f42af8",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": true,
+   "title": "Anthropic found a hidden space where Claude puzzles over concepts",
+   "source": "MIT Technology Review AI",
+   "published": "2026-07-09T20:22:28+00:00",
+   "summary": "Anthropic's Jacobian lens technique reveals interpretable internal representations in large language models that structure how they reason about concepts.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/llm-crystal-globe_1.jpg?resize=1200,600",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/the-nuances-of-the-impact-factor",
+   "title_hash": "5aac9f9975f9b55b07a54b590c1b1aa9",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; publishing metrics commentary without AI focus"
+  },
+  {
+   "url": "https://icenet.blog/2026/07/09/managed-transparency-navigating-resistance-in-a-competency-based-veterinary-curriculum-revitalization",
+   "title_hash": "14fb0a5a0d57b552b34dad0c38bdaea1",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; curriculum revision in veterinary medicine without AI focus"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/are-ssris-good-or-evil",
+   "title_hash": "026acf912b5bc524c42cb28b351dc97e",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical opinion without AI relevance"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/semi-automated-offsides-technology",
+   "title_hash": "fd2a025773a93def4103bdd21da9c969",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; sports analytics analogy without substantive medical education or AI content"
+  },
+  {
+   "url": "https://icenet.blog/2026/07/07/ice-book-review-dont-call-it-art",
+   "title_hash": "d155fbdd8542f99d7b75c5ce019de988",
+   "first_seen": "2026-07-15T02:49:47.598617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; book review unrelated to AI or medical education"
   }
  ],
  "digests": [
@@ -16920,19 +17148,19 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Medical students’ adoption of new large language model tools is a central focus, with a cross-sectional survey in China revealing both widespread willingness and strong concerns about privacy and dependency <a href=\"https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0\">[3]</a>. Feasibility studies suggest AI-generated microlearning modules can offer targeted training for plastic surgery residents within limited clinical time <a href=\"https://mededu.jmir.org/2026/1/e88695\">[2]</a>. In addition, AI-augmented mentorship is being explored to help underrepresented students access orthopedic surgery training, proposing frameworks to support inclusion for those at less-resourced institutions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0\">[4]</a>. Integration of generative AI into assessment practices is an evolving area, with recent work validating new tools for classifying items by Bloom’s Taxonomy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[6]</a>, while educators report shifting professional roles as generative AI shapes course delivery and curriculum <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[7]</a>.\n\nAlso this week: eight new model releases are reviewed across instructional and assessment contexts, five papers examine the impact of AI on medical education assessment and feedback, and recent research on terminology preferences in skin color education highlights issues of clinical language inclusiveness.",
-   "hash": "82446f1ac78900c1",
-   "date": "July 14, 2026"
+   "text": "The section features new insights into how medical students and educators are adopting artificial intelligence technologies. A survey of medical students in China shows widespread willingness to use AI tools such as DeepSeek, paired with concerns about privacy and reliability <a href=\"https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0\">[3]</a>. Research on the use of generative AI in medical assessment highlights both validation efforts and the practical development of tools for classifying exam items by Bloom&#x27;s Taxonomy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[7]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[10]</a>. Studies are examining faculty and student readiness for curriculum integration, revealing knowledge gaps and systemic barriers in places like the UAE <a href=\"https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0\">[13]</a>. Meanwhile, the evolving roles of medical educators and proposals for AI-augmented mentorship suggest changes in professional responsibilities and expanded access for underrepresented groups <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[8]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0\">[4]</a>.\n\nAlso this week: the section includes eight new model releases, five papers on assessment, and two studies on teaching and curriculum. Guidance on responsible AI practices and the performance evaluation of major large language models in tuberculosis education are featured.",
+   "hash": "ab3a5c422bc36c20",
+   "date": "July 15, 2026"
   },
   "clinical_practice": {
-   "text": "A peer-reviewed study has detailed a new multi-modal foundation model capable of supporting end-to-end emergency care, integrating diverse data sources to inform acute decision making <a href=\"https://www.nature.com/articles/s41746-026-02981-z\">[5]</a>. Research in model reliability has continued with the development of an evaluation framework to assess the faithfulness of large language model-generated clinical trial summaries for distinct stakeholder groups, addressing concerns of accuracy and audience alignment <a href=\"https://arxiv.org/abs/2607.09932\">[3]</a>. Safety and evaluation efforts are also advancing, as researchers benchmark how consumer AI systems respond to pediatric health issues under both everyday and adversarial scenarios, emphasizing the importance of robust boundary maintenance <a href=\"https://www.nature.com/articles/s41746-026-02985-9\">[10]</a>. In clinical decision support, a systematic review has examined fairness in multimodal machine learning systems, highlighting equity as an ongoing focus <a href=\"https://www.nature.com/articles/s41746-026-03000-x\">[6]</a>. Additionally, a machine learning model that fuses multi-omics data shows promise in predicting ovarian cancer treatment response, contributing to more personalized oncology approaches <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[4]</a>.\n\nAlso this week: studies assess the performance of language models on irregular clinical time series, implement smartphone-based diagnostics for cervical myelopathy, explore entity attribution failures in retrieval-augmented generation, and evaluate AI tools for interpreting mental health narratives-drawing from eight clinical decision support papers, four analyses on safety or evaluation, and two new imaging or diagnostic applications.",
-   "hash": "042fd4277f90c317",
-   "date": "July 14, 2026"
+   "text": "A new multi-modal foundation model for emergency care offers an integrated approach to supporting clinical teams throughout emergency workflows, highlighting the potential for end-to-end application in acute care settings <a href=\"https://www.nature.com/articles/s41746-026-02981-z\">[5]</a>. In oncology, a machine learning model leveraging multi-omics data has demonstrated improved ability to predict treatment responses in ovarian cancer, contributing to advances in precision health <a href=\"https://www.nature.com/articles/s41746-026-02991-x\">[4]</a>. Safety and evaluation in clinical AI also remain active areas of concern, with researchers evaluating how faithfully large language models can summarize clinical trial results for different user groups, emphasizing the need for trustworthy outputs in medical communication <a href=\"https://arxiv.org/abs/2607.09932\">[3]</a>. Benchmarking efforts target both clinical question answering over irregular patient data <a href=\"https://arxiv.org/abs/2607.09880\">[2]</a> and the maintenance of safety boundaries in AI systems that answer pediatric health queries, underlining ongoing attempts to assess and improve AI reliability in high-risk clinical scenarios <a href=\"https://www.nature.com/articles/s41746-026-02985-9\">[10]</a>.\n\nAlso this week: eight new clinical decision support model releases and four systematic reviews on fairness, safety, evaluation, and clinical workflows. A smartphone-based approach for screening cervical myelopathy across ages appears, and a new metadata catalog from the Swiss health network demonstrates progress in health data discoverability.",
+   "hash": "d99cd027f8cbccda",
+   "date": "July 15, 2026"
   },
   "general_ai": {
-   "text": "A technical report on the Index-1.9B series introduces new open-source small language models trained on large Chinese and English datasets, expanding options for research and instruction-tuned applications <a href=\"https://arxiv.org/abs/2607.09885\">[1]</a>. Recent analyses highlight that quantization can change reasoning in language models without affecting task accuracy, raising concerns about silent reliability failures <a href=\"https://arxiv.org/abs/2607.09999\">[2]</a>. Researchers have developed an open-source platform to systematically evaluate which components drive quality in compound AI systems, supporting more transparent benchmarking efforts <a href=\"https://arxiv.org/abs/2607.10386\">[3]</a>. Hallucination detection methods, such as diversion decoding, are being refined to identify factual errors in outputs from large language models, which remains a key safety priority <a href=\"https://arxiv.org/abs/2607.10476\">[4]</a>. Additionally, discussion of operational costs for frontier models addresses financial and practical factors shaping large-scale deployment <a href=\"https://playcode.io/blog/real-price-of-frontier-models\">[5]</a>.\n\nAlso this week: eight research papers cover assessment techniques and benchmarks, including the WILDTRACE benchmark and self-guided test-time training for long-context tasks. Two new model releases target efficient inference and multilingual performance. Industry, policy, and value alignment topics are represented, with PLURAL introducing a global dataset for LLM preference diversity.",
-   "hash": "1c11d2e4c8a303b4",
-   "date": "July 14, 2026"
+   "text": "Bonsai 27B introduces a 27-billion-parameter language model optimized to run on mobile phones, highlighting growing efforts to democratize access to advanced AI capabilities <a href=\"https://prismml.com/news/bonsai-27b\">[1]</a>. Researchers are scrutinizing how quantization silently affects language model reasoning, showing that performance metrics may not capture shifts in underlying logic or emergence of new error types <a href=\"https://arxiv.org/abs/2607.09999\">[3]</a>. Alongside this, structured evaluation techniques are helping to identify which parts of compound AI systems most impact output quality, paving the way for more reliable applications in complex tasks <a href=\"https://arxiv.org/abs/2607.10386\">[4]</a>. Techniques that detect hallucinations in language models are gaining traction as safeguards against factual inaccuracies, targeting the challenge of maintaining trustworthy AI outputs <a href=\"https://arxiv.org/abs/2607.10476\">[5]</a>. Cost analysis of frontier models sheds light on operational realities, giving stakeholders concrete data for decisions about resource allocation and deployment <a href=\"https://playcode.io/blog/real-price-of-frontier-models\">[6]</a>.\n\nAlso this week: three new models join the section, including Soofi S 30B-A3B with long-context handling for German and English, and Index SLM’s multilingual variants. Six recent studies investigate research methods and performance assessment, covering areas from memory-efficient inference to benchmarking long-context reasoning.",
+   "hash": "6965ec8bbcfdc60e",
+   "date": "July 15, 2026"
   }
  },
  "opportunity_snapshot": {

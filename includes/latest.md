@@ -3,5 +3,5 @@
 - [The Swiss Personalized Health Network Metadata Catalog: Platform for Health Data Discovery and Exploration Based on Findable, Accessible, Interoperable, and Reusable Principles](https://medinform.jmir.org/2026/1/e90146) (JMIR Medical Informatics, July 14, 2026)
 - [A National Exploration of Medical Students’ Views Surrounding Skin Color Terminology in Undergraduate Education](https://mededu.jmir.org/2026/1/e92420) (JMIR Medical Education, July 14, 2026)
 - [AI-Generated Microlearning for Plastic Surgery Residency: Single-Arm Pre-Post Feasibility Study](https://mededu.jmir.org/2026/1/e88695) (JMIR Medical Education, July 14, 2026)
+- [Bonsai 27B: A 27B-Class model that runs on a phone](https://prismml.com/news/bonsai-27b) (Hacker News (LLM, 100+ points), July 14, 2026)
 - [Medical students' attitudes, usage patterns, and associated factors with DeepSeek adoption in education: a cross-sectional study in China](https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&ff=20260714022646&v=2.20.0) (PubMed AI in medical education, July 14, 2026)
-- [AI-Augmented Mentorship in Orthopedic Surgery: A Conceptual Framework for Expanding Access for Underrepresented and Less-Resourced Students](https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&ff=20260714151534&v=2.20.0) (PubMed AI in medical education, July 14, 2026)
