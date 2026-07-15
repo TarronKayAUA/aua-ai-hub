@@ -44,6 +44,8 @@ MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
     # 403s all scripted clients; confirmed live in a browser.
     "nabututor.com": "2026-07-14",
+    # 403s all scripted clients; confirmed live in a browser.
+    "osmosis.org": "2026-07-15",
     "llama.com": "2026-06-10",
     # Cloudflare-blocks scripted clients; confirmed live in a browser.
     "midjourney.com": "2026-06-12",

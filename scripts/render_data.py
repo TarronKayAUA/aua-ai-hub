@@ -89,7 +89,7 @@ CATEGORY_INTROS = {
     "presentations_design": (
         "To improve an existing PowerPoint deck without rebuilding it, "
         "start with tools that work on the .pptx file itself: PowerPoint "
-        "Designer applies suggestions inside the file, and Claude Design "
+        "Design Suggestions applies suggestions inside the file, and Claude Design "
         "and Canva import a PowerPoint deck and export the result back to "
         "one. Gamma builds in its own format first and its PowerPoint "
         "export can shift layouts; Beautiful.ai also works in its own "

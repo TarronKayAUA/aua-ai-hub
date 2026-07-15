@@ -223,7 +223,7 @@
   blurb: Search engine that answers questions by summarizing findings across published, peer-reviewed studies.
 
 - name: Scite
-  vendor: Scite
+  vendor: Scite (Research Solutions)
   category: research
   url: https://scite.ai
   cost: paid
@@ -373,7 +373,7 @@
   blurb: Tool that drafts presentations, documents, and simple web pages from a text prompt or outline.
 
 - name: Grammarly
-  vendor: Grammarly
+  vendor: Superhuman (formerly Grammarly, Inc.)
   category: writing_slides
   url: https://www.grammarly.com
   cost: freemium
@@ -409,8 +409,8 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
-  blurb: Command-line tool for downloading and running open-weights language models on your own computer.
+  last_reviewed: 2026-07-15
+  blurb: Tool for downloading and running open-weights models on your own computer, through a command line or an official desktop chat app. The local app is free; the company separately sells an optional cloud service for models too large to run locally.
 
 - name: LM Studio
   vendor: LM Studio
@@ -444,15 +444,15 @@
   last_reviewed: 2026-07-14
   blurb: Design tool from Anthropic Labs that turns prompts and uploaded files into slides, one-pagers, and graphics. Imports PowerPoint files and exports finished work back to PowerPoint, PDF, or Canva.
 
-- name: PowerPoint Designer
+- name: PowerPoint Design Suggestions
   vendor: Microsoft
   category: presentations_design
   url: https://support.microsoft.com/en-us/office/create-professional-slide-layouts-with-designer-53c77d7b-dc40-45c2-b684-81415eac0617
   cost: institutional
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-14
-  blurb: Built into PowerPoint under the institutional Microsoft 365 license. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
+  last_reviewed: 2026-07-15
+  blurb: Built into PowerPoint under the institutional Microsoft 365 license, where Microsoft now calls the feature Design Suggestions and delivers it through Copilot. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
 
 - name: Canva
   vendor: Canva
@@ -496,16 +496,6 @@
   last_reviewed: 2026-06-12
   blurb: OpenAI's image generation inside ChatGPT, strong at following detailed instructions and rendering readable text, which suits diagrams and slide artwork.
 
-- name: ImageFX
-  vendor: Google
-  category: image_generation
-  url: https://labs.google/fx/tools/image-fx
-  cost: free
-  governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-12
-  blurb: Google's free image generation tool built on its Imagen models, with prompt chips for exploring variations. Requires a Google account.
-
 - name: Adobe Firefly
   vendor: Adobe
   category: image_generation
@@ -529,15 +519,15 @@
 # --- Video Generation (owner approved 2026-06-12; OpenAI's Sora was
 # discontinued April 2026 and is deliberately absent) ------------------------
 
-- name: Veo (Flow)
+- name: Flow
   vendor: Google
   category: video_generation
   url: https://labs.google/fx/tools/flow
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-12
-  blurb: Google's Veo video models used through the Flow editor. Generates clips up to about a minute with synchronized audio and leads mid-2026 quality comparisons.
+  last_reviewed: 2026-07-15
+  blurb: Google's creative studio for video and image generation, combining the Veo 3.1 and Gemini Omni video models with Nano Banana image generation. It absorbed Google's earlier ImageFX and Whisk tools.
 
 - name: Runway
   vendor: Runway
@@ -556,8 +546,8 @@
   cost: freemium
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-06-12
-  blurb: Video generator from the Chinese company Kuaishou, competitive with the best Western models on cinematic motion, with clips up to two minutes.
+  last_reviewed: 2026-07-15
+  blurb: Video generator from the Chinese company Kuaishou. The Kling 3.0 family generates clips with native synchronized audio and multi-language lip sync, and ranks among the leading models in mid-2026 comparisons.
 
 - name: Hailuo
   vendor: MiniMax
@@ -608,8 +598,8 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-12
-  blurb: Song generator that settled with Universal Music Group in 2025 and is relaunching as a label-licensed platform, currently the cleanest licensing story in music generation.
+  last_reviewed: 2026-07-15
+  blurb: Song generator that settled with Universal Music Group in 2025 and holds agreements with major labels. During the transition to its licensed platform, downloads of generated audio are disabled, so tracks currently cannot leave the platform.
 
 - name: ElevenLabs
   vendor: ElevenLabs
@@ -618,5 +608,152 @@
   cost: freemium
   governance_status: caution
   status_note: Voice cloning requires documented consent from the person whose voice is used.
-  last_reviewed: 2026-06-12
-  blurb: Speech synthesis and voice tools for narrating course material or producing audio versions of written content in natural-sounding voices.
+  last_reviewed: 2026-07-15
+  blurb: Speech synthesis, voice, music, and sound effect generation for narrating course material or producing audio versions of written content. The music model is trained on licensed data, with generated tracks cleared for commercial use.
+
+# Discovery survey additions (owner approved 2026-07-15): every
+# entry's site, cost, and description verified against the vendor's
+# own pages the same day. Borderline candidates from the survey were
+# held for owner review, not added.
+
+- name: Vibe
+  vendor: Mistral AI
+  category: assistants
+  url: https://chat.mistral.ai
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Chat assistant from the French lab Mistral, renamed from Le Chat in June 2026. Combines a conversational mode with work and coding agent modes that connect to tools such as email, calendar, and code repositories.
+
+- name: Antigravity
+  vendor: Google
+  category: agents
+  url: https://antigravity.google
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply. Public preview; free-tier quotas have changed several times.
+  last_reviewed: 2026-07-15
+  blurb: "Google's development platform built around agents: an editor and a command-line tool plan and execute multi-step coding tasks using Gemini and other models. It replaced Google's earlier Gemini Command Line Interface for individual users in June 2026."
+
+- name: SciSpace
+  vendor: SciSpace
+  category: research
+  url: https://scispace.com
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Research workspace that combines literature search, question answering over uploaded papers, data extraction into tables, and citation formatting in one interface.
+
+- name: Undermind
+  vendor: Undermind
+  category: research
+  url: https://www.undermind.ai
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Literature search assistant that runs a deep, iterative search on a topic you describe and returns a structured report with citations. Suited to thorough searches such as novelty checks rather than quick lookups.
+
+- name: Asta
+  vendor: Allen Institute for AI
+  category: research
+  url: https://asta.allen.ai
+  cost: free
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Scholarly research assistant from the Allen Institute for AI, the makers of Semantic Scholar, that finds papers, answers questions with citations to the literature, and summarizes evidence. Free to use with a sign-in.
+
+- name: Paperpal
+  vendor: Cactus Communications
+  category: writing_slides
+  url: https://paperpal.com
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Academic writing assistant with grammar and language checking tuned to scholarly text, plus paraphrasing, plagiarism checks, and journal submission readiness checks. Works in Microsoft Word, Google Docs, Overleaf, and a web editor.
+
+- name: Writefull
+  vendor: Digital Science
+  category: writing_slides
+  url: https://www.writefull.com
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Language feedback for research manuscripts from models trained on published journal articles, used through Microsoft Word and Overleaf add-ins, with a revision tool for checking a full document before submission.
+
+- name: UAsk
+  vendor: UWorld
+  category: medical_learning
+  url: https://medical.uworld.com/usmle/features/uask/
+  cost: paid
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Artificial intelligence study assistant built into UWorld's question banks for the United States Medical Licensing Examination (USMLE) Steps 1 through 3. Answers questions about the item on screen, walks through the clinical reasoning, and can turn responses into flashcards and notebook entries.
+
+- name: AMBOSS
+  vendor: AMBOSS
+  category: medical_learning
+  url: https://www.amboss.com/us
+  cost: paid
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Medical knowledge platform and question bank with a built-in artificial intelligence study mode (AI Mode Learning) that answers questions grounded in the AMBOSS library, plus a beta collection of Assistants for case simulation, checklists, and consult preparation.
+
+- name: Osmosis AI
+  vendor: Elsevier
+  category: medical_learning
+  url: https://www.osmosis.org/features/osmosis-ai
+  # Site 403s all scripted clients; confirmed live in a browser 2026-07-15.
+  verify: skip
+  cost: paid
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Conversational study companion from Elsevier included with Osmosis subscriptions. Answers medical study questions with citations to Elsevier textbooks, links answers to Osmosis videos, and generates flashcards and quiz questions on request.
+
+- name: Otter
+  vendor: Otter.ai
+  category: meetings_transcription
+  url: https://otter.ai
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Meeting assistant that transcribes and summarizes video calls, with live transcripts that participants can highlight and comment on during the meeting. The free plan includes 300 transcription minutes per month.
+
+- name: Fathom
+  vendor: Fathom
+  category: meetings_transcription
+  url: https://fathom.ai
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Meeting notetaker that joins video calls to record, transcribe, and summarize them, delivering the summary shortly after the call ends. The free plan does not cap recordings or transcription.
+
+- name: Napkin AI
+  vendor: Napkin AI
+  category: presentations_design
+  url: https://www.napkin.ai
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Generates editable diagrams, flowcharts, and infographics from pasted or imported text, a quick way to add visuals to lectures and handouts. Exports to PowerPoint, image, and PDF formats; the free plan places a small watermark on exported visuals.
+
+- name: Jan
+  vendor: Jan (open source)
+  category: local
+  url: https://jan.ai
+  cost: free
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-15
+  blurb: Open-source desktop application for downloading and chatting with open-weights models fully offline, similar in role to LM Studio but Apache 2.0 licensed. Runs on Windows, macOS, and Linux.
