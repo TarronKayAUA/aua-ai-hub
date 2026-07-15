@@ -105,13 +105,16 @@
 
 # --- Image generation (owner approved 2026-06-12) ---------------------------
 
-- name: FLUX.1
+# License verified 2026-07-15 from the FLUX.2-dev model card tag
+# (flux-non-commercial-license). The smaller klein variant's repo is
+# gated, so its license is not asserted here.
+- name: FLUX.2
   vendor: Black Forest Labs
-  url: https://huggingface.co/black-forest-labs/FLUX.1-dev
-  license: Non-commercial (dev)
+  url: https://huggingface.co/black-forest-labs/FLUX.2-dev
+  license: FLUX Non-Commercial (dev)
   modality: image
-  last_reviewed: 2026-06-12
-  blurb: The most capable open-weight image family. The dev variant is licensed for non-commercial use; the faster schnell variant is Apache 2.0. Runs locally in ComfyUI.
+  last_reviewed: 2026-07-15
+  blurb: The most capable open-weight image family. FLUX.2 dev (32 billion parameters) generates and edits images under a non-commercial license, with a smaller klein variant for lighter hardware. Runs locally in ComfyUI.
 
 - name: Stable Diffusion 3.5
   vendor: Stability AI
@@ -147,13 +150,15 @@
   last_reviewed: 2026-06-12
   blurb: Tencent's open-weight video model, strongest at natural motion and physics such as fluids, cloth, and object interactions.
 
-- name: LTX-Video
+# License verified 2026-07-15 from the LTX-2 model card tag
+# (ltx-2-community-license-agreement).
+- name: LTX-2
   vendor: Lightricks
-  url: https://huggingface.co/Lightricks/LTX-Video
-  license: Open weights license
+  url: https://huggingface.co/Lightricks/LTX-2
+  license: LTX-2 Community License
   modality: video
-  last_reviewed: 2026-06-12
-  blurb: The fastest open-weight video model and the most accessible, generating usable clips on a 16 gigabyte graphics card.
+  last_reviewed: 2026-07-15
+  blurb: Open-weight video family generating synchronized audio and video, free for academic use under its community license. Succeeds the earlier LTX-Video model known for running on modest hardware.
 
 # --- Music and audio (owner approved 2026-06-12) ----------------------------
 
@@ -165,13 +170,15 @@
   last_reviewed: 2026-06-12
   blurb: Meta's research model for generating instrumental music from text descriptions, licensed for non-commercial use.
 
-- name: Stable Audio Open
+# License verified 2026-07-15 from the stable-audio-3-medium model card
+# tag (stable-audio-community).
+- name: Stable Audio 3
   vendor: Stability AI
-  url: https://huggingface.co/stabilityai/stable-audio-open-1.0
-  license: Community License
+  url: https://huggingface.co/stabilityai/stable-audio-3-medium
+  license: Stable Audio Community
   modality: audio
-  last_reviewed: 2026-06-12
-  blurb: Generates short audio samples, sound effects, and production elements from text, suited to clips rather than full songs.
+  last_reviewed: 2026-07-15
+  blurb: Generates music, sound effects, and production elements from text, with structured compositions up to several minutes. The small and medium weights are open on Hugging Face; the largest model is not released.
 
 - name: ACE-Step
   vendor: ACE Studio and StepFun
@@ -180,3 +187,21 @@
   modality: audio
   last_reviewed: 2026-06-12
   blurb: Open-weight song generation model producing full tracks with vocals across many languages, under a fully permissive license.
+
+# Discovery survey additions (owner-directed open-weights audit,
+# 2026-07-15): licenses read verbatim from each Hugging Face model card
+# tag the same day.
+
+- name: MiniMax M3
+  vendor: MiniMax
+  url: https://huggingface.co/MiniMaxAI/MiniMax-M3
+  license: MiniMax Community
+  last_reviewed: 2026-07-15
+  blurb: Large open-weight mixture-of-experts model from the Chinese company MiniMax, with about 428 billion total parameters and 23 billion active per token. Accepts text, image, and video input with a 1 million token context window.
+
+- name: MedGemma
+  vendor: Google
+  url: https://huggingface.co/google/medgemma-1.5-4b-it
+  license: Health AI Developer Foundations
+  last_reviewed: 2026-07-15
+  blurb: Google's open medical variants of Gemma, trained for medical text and image comprehension across radiology, pathology, dermatology, and medical records. Downloading requires accepting Google's Health AI Developer Foundations terms, which permit research and commercial use.
