@@ -334,6 +334,12 @@ def normalize(parsed, source: str, category: str, weight: float, max_items: int,
         if not link or not title:
             counters["no_link_or_title"] += 1
             continue
+        # Vendor-sponsored posts are tagged in some feeds (MIT Technology
+        # Review); drop them at ingest so they never reach the curator.
+        tags = {t.get("term", "").lower() for t in entry.get("tags", []) or []}
+        if "sponsored" in tags:
+            counters["sponsored"] = counters.get("sponsored", 0) + 1
+            continue
         published = parse_entry_date(entry)
         if published is None:
             counters["no_date"] += 1

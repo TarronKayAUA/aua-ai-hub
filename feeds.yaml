@@ -173,6 +173,18 @@ categories:
         url: https://pubmed.ncbi.nlm.nih.gov/rss/search/145VRaMa7R_CRyMjetta0WfN1w_GEomALtgrOcpWwLN4WceQ4l/?limit=50&utm_campaign=pubmed-2&fc=20260609215449
       - name: JMIR Medical Education
         url: https://mededu.jmir.org/feed/atom
+      # Accessible-commentary expansion (owner approved 2026-07-14): trusted
+      # secondary sources to balance the journal density; feeds verified
+      # fetching and parsing with July 2026 entries the same day.
+      - name: ICE Blog
+        url: https://icenetblog.royalcollege.ca/feed
+      - name: AM Rounds
+        url: https://academicmedicineblog.org/feed/
+      # Item dates use Drupal's format, unreadable to feedparser but parsed
+      # by the raw-string fallback in aggregate.parse_entry_date (verified
+      # 2026-07-14 against dateutil).
+      - name: Inside Higher Ed AI
+        url: https://www.insidehighered.com/taxonomy/term/596/feed
 
   clinical_practice:
     label: Clinical Practice
@@ -194,6 +206,13 @@ categories:
       - name: Nature Medicine
         url: https://www.nature.com/nm.rss
         weight: 0.7
+      # Accessible-commentary expansion (owner approved 2026-07-14).
+      - name: Ground Truths
+        url: https://erictopol.substack.com/feed
+      - name: Sensible Medicine
+        url: https://www.sensible-med.com/feed
+      - name: The Medical Futurist blog
+        url: https://medicalfuturist.com/feed
 
   general_ai:
     label: General AI
@@ -213,6 +232,15 @@ categories:
         url: https://arstechnica.com/ai/feed/
       - name: LMArena blog
         url: https://news.lmarena.ai/rss/
+      # Accessible-commentary expansion (owner approved 2026-07-14). The
+      # MIT Technology Review feed mixes vendor-sponsored posts tagged
+      # "sponsored"; aggregate.normalize drops that tag at ingest.
+      - name: MIT Technology Review AI
+        url: https://www.technologyreview.com/topic/artificial-intelligence/feed
+      - name: One Useful Thing
+        url: https://www.oneusefulthing.org/feed
+      - name: AI as Normal Technology
+        url: https://www.normaltech.ai/feed
 
 # Community Prompt Exchange (GitHub Discussions). The nightly pipeline pulls
 # the top-upvoted discussions from this category into the Prompts page.
