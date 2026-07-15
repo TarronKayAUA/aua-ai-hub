@@ -241,6 +241,26 @@ categories:
         url: https://www.oneusefulthing.org/feed
       - name: AI as Normal Technology
         url: https://www.normaltech.ai/feed
+      # Second expansion round (owner approved 2026-07-15). Feeds verified
+      # fetching and parsing with June-July 2026 entries before addition.
+      - name: IEEE Spectrum AI
+        url: https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss
+      - name: Quanta Magazine AI
+        url: https://www.quantamagazine.org/tag/artificial-intelligence/feed/
+      # epoch.ai publishes no feed on its own domain; the Substack mirror
+      # carries the blog, Gradient Updates, and Epoch Brief.
+      - name: Epoch AI
+        url: https://epochai.substack.com/feed
+      - name: Import AI
+        url: https://jack-clark.net/feed/
+      - name: AI Policy Perspectives
+        url: https://www.aipolicyperspectives.com/feed
+      # High volume (5-8 items/day); down-weighted so it flavors the
+      # candidate pool without dominating it (builder judgment, owner
+      # delegated 2026-07-15).
+      - name: The Verge AI
+        url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+        weight: 0.6
 
 # Community Prompt Exchange (GitHub Discussions). The nightly pipeline pulls
 # the top-upvoted discussions from this category into the Prompts page.
