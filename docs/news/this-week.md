@@ -11,15 +11,43 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>The section features new insights into how medical students and educators are adopting artificial intelligence technologies. A survey of medical students in China shows widespread willingness to use AI tools such as DeepSeek, paired with concerns about privacy and reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[3]</a>. Research on the use of generative AI in medical assessment highlights both validation efforts and the practical development of tools for classifying exam items by Bloom&#x27;s Taxonomy <a href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[7]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[10]</a>. Studies are examining faculty and student readiness for curriculum integration, revealing knowledge gaps and systemic barriers in places like the UAE <a href="https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">[13]</a>. Meanwhile, the evolving roles of medical educators and proposals for AI-augmented mentorship suggest changes in professional responsibilities and expanded access for underrepresented groups <a href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[8]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">[4]</a>.</p>
-<p>Also this week: the section includes eight new model releases, five papers on assessment, and two studies on teaching and curriculum. Guidance on responsible AI practices and the performance evaluation of major large language models in tuberculosis education are featured.</p>
+<p>Reliability and accuracy of large language models remain central concerns for medical educators and students, as highlighted by frequent hallucination of references and citations in anatomy-related question answering tasks <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[1]</a>. These issues impact not only student trust but also the broader adoption of AI tools, with surveys indicating both enthusiasm for AI integration and caution due to data quality and workflow challenges <a href="https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[7]</a>. Research shows that training and experience influence faculty and student attitudes toward AI, particularly in dentistry, where varied backgrounds shape acceptance levels <a href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[3]</a>. Meanwhile, generative AI-assisted simulation training has been linked to improved diagnostic communication scores in key clinical scenarios, suggesting potential for skill development in undergraduate medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[4]</a>. Ongoing studies assess whether generative AI can reliably score open-ended assessments, further informing its role in educational evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[14]</a>.</p>
+<p>Also this week: studies explore inclusive clinical language, with a national analysis on skin color terminology in medical education, and assess rapid growth trends in large language model research. Eight new items examine adoption attitudes, teaching practices, assessment, simulation training, and mentorship expansion.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (10)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (10)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">Reference Hallucination, Citation Reliability, and Readability of Large Language Models in Anatomy-Related Question Answering</a>
+        <p class="news-card-summary">ChatGPT, Gemini Pro, and DeepSeek V3 frequently hallucinate anatomical references and citations, raising concerns about their reliability for medical education and academic writing.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">AI-powered tools in family medicine: Bridging technology and practice</a>
+        <p class="news-card-summary">Survey of family physicians in Saudi Arabia shows interest in AI training but identifies barriers including concerns about reliability, data quality, and workflow integration.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">Influence of Oral and Maxillofacial Radiology Training and Experience on Attitudes Toward Artificial Intelligence in Dentistry: A Cross-Sectional Questionnaire Study</a>
+        <p class="news-card-summary">Cross-sectional study of dental professionals and students shows that training and experience level influence attitudes toward AI in dentistry.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">Generative AI-Assisted Simulation Training Is Associated with Higher Post-Intervention Diagnostic Communication Scores Across Type 2 Diabetes, Obesity, and Breast Cancer Scenarios</a>
+        <p class="news-card-summary">Undergraduate medical students using generative AI-assisted simulation training achieved higher diagnostic communication scores across diabetes, obesity, and cancer scenarios.</p>
+      </div>
+    </div>
     <div class="news-card">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
@@ -665,15 +693,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A major vulnerability in language model safety protocols has been documented, highlighting persistent gaps across several widely used systems and prompting some experts to call for slower model deployment and better transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, Google DeepMind&#x27;s leadership advocates for a US-led global regulatory body focused on frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technical research into quantized models reveals that reasoning patterns may shift without affecting task accuracy, suggesting that silent failures remain difficult to detect <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Advances in hallucination detection propose new methods to identify fabricated outputs in large language models <a href="https://arxiv.org/abs/2607.10476">[10]</a>. There has also been continued discussion about operational costs for frontier models, with recent analysis outlining complex price structures <a href="https://playcode.io/blog/real-price-of-frontier-models">[11]</a>.</p>
-<p>Also this week: four new papers cover diverse research and methods topics, including structured reasoning and context pruning <a href="https://arxiv.org/abs/2607.10386">[9]</a>. The section includes four safety-focused studies and two new model releases, such as a 27-billion-parameter language model optimized for mobile phones. Three industry and policy updates touch on data center permits and cloud privacy issues.</p>
+<p>A significant vulnerability was discovered in SpaceXAI’s Grok programming tool, which was uploading entire user codebases to cloud storage without obtaining permission; this issue has been resolved by disabling the feature, highlighting ongoing safety and reliability challenges for AI tools <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[3]</a>. In related developments, researchers have identified systemic gaps in safety mechanisms across several large language models, prompting calls for slower deployment and greater transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[5]</a>. Regulatory discussions are advancing as Google DeepMind’s Demis Hassabis suggests establishing a US-led global AI watchdog to oversee frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[6]</a>. Meanwhile, technical research continues, including methods to detect hallucinations in language models using diversion decoding, addressing the reliability of factual outputs <a href="https://arxiv.org/abs/2607.10476">[11]</a>, and studies analyzing quantization-induced reasoning shifts that may not be evident in task accuracy <a href="https://arxiv.org/abs/2607.09999">[9]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment contribute to advances in research and methods. The Bonsai 27B model demonstrates efficient large-model deployment on mobile phones, while the Index-1.9B technical report details a multilingual model series from Bilibili.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 34 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">AI Policy Perspectives</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.aipolicyperspectives.com/p/conjecture-machines">Conjecture Machines</a>
+        <p class="news-card-summary">Analysis of how AI agents create a validation bottleneck in science by generating claims faster than researchers can verify them.</p>
+      </div>
+      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!uI0t!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f84fabc-d39b-4bec-b24b-6644b4652e02_2048x1143.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
@@ -1086,9 +1122,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 1 episode"
+??? abstract "Show the 2 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://ai-podcast.nejm.org/e/weave-s-brandon-rice-on-rebuilding-drug-regulation-with-ai" target="_blank" rel="noopener">
+      <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Video: Weave’s Brandon Rice on Rebuilding Drug Regulation with AI" loading="lazy">
+      <span class="video-card-title">Weave’s Brandon Rice on Rebuilding Drug Regulation with AI</span>
+      <span class="video-card-meta">NEJM AI Grand Rounds, July 15, 2026</span>
+      <span class="video-card-desc">Brandon Rice from Weave discusses using AI to modernize pharmaceutical regulatory infrastructure and organize scientific knowledge for drug development.</span>
+    </a>
     <a class="video-card" href="https://share.transistor.fm/s/facb92e2" target="_blank" rel="noopener">
       <img src="https://img.transistorcdn.com/XNr1FlUMRqcgOINlwzJryJUFzx05IMXfyCxfiSMMXkc/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iMTUx/NmM0ODdlNGI0YTdh/YjUxNjYwNTEyMzll/ZmVkMy5wbmc.jpg" alt="Video: Building Durable AI Agents" loading="lazy">
       <span class="video-card-title">Building Durable AI Agents</span>

@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A major vulnerability in language model safety protocols has been documented, highlighting persistent gaps across several widely used systems and prompting some experts to call for slower model deployment and better transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, Google DeepMind&#x27;s leadership advocates for a US-led global regulatory body focused on frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technical research into quantized models reveals that reasoning patterns may shift without affecting task accuracy, suggesting that silent failures remain difficult to detect <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Advances in hallucination detection propose new methods to identify fabricated outputs in large language models <a href="https://arxiv.org/abs/2607.10476">[10]</a>. There has also been continued discussion about operational costs for frontier models, with recent analysis outlining complex price structures <a href="https://playcode.io/blog/real-price-of-frontier-models">[11]</a>.</p>
-<p>Also this week: four new papers cover diverse research and methods topics, including structured reasoning and context pruning <a href="https://arxiv.org/abs/2607.10386">[9]</a>. The section includes four safety-focused studies and two new model releases, such as a 27-billion-parameter language model optimized for mobile phones. Three industry and policy updates touch on data center permits and cloud privacy issues.</p>
+<p>A significant vulnerability was discovered in SpaceXAI’s Grok programming tool, which was uploading entire user codebases to cloud storage without obtaining permission; this issue has been resolved by disabling the feature, highlighting ongoing safety and reliability challenges for AI tools <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[3]</a>. In related developments, researchers have identified systemic gaps in safety mechanisms across several large language models, prompting calls for slower deployment and greater transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[5]</a>. Regulatory discussions are advancing as Google DeepMind’s Demis Hassabis suggests establishing a US-led global AI watchdog to oversee frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[6]</a>. Meanwhile, technical research continues, including methods to detect hallucinations in language models using diversion decoding, addressing the reliability of factual outputs <a href="https://arxiv.org/abs/2607.10476">[11]</a>, and studies analyzing quantization-induced reasoning shifts that may not be evident in task accuracy <a href="https://arxiv.org/abs/2607.09999">[9]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment contribute to advances in research and methods. The Bonsai 27B model demonstrates efficient large-model deployment on mobile phones, while the Index-1.9B technical report details a multilingual model series from Bilibili.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">AI Policy Perspectives</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.aipolicyperspectives.com/p/conjecture-machines">Conjecture Machines</a>
+    <p class="news-card-summary">Analysis of how AI agents create a validation bottleneck in science by generating claims faster than researchers can verify them.</p>
+  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!uI0t!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f84fabc-d39b-4bec-b24b-6644b4652e02_2048x1143.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
@@ -124,13 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">MIT Technology Review examines what Anthropic&#x27;s recent research on internal model representations reveals and what it does not yet show about AI systems.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/thinking2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models">Simulating everything, sort of: The promise and limits of world models</a>
-    <p class="news-card-summary">Ars Technica explains how world models work, their current capabilities, and open questions in the field.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
