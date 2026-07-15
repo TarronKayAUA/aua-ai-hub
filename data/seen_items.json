@@ -17433,6 +17433,75 @@
    "first_seen": "2026-07-15T06:29:22.503180+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/this-fortnight-in-medicine-xxx",
+   "title_hash": "70ee7e0488e8ea43ed9388ea3cb9fc88",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/online-trending-now/2026/07/15/what-if-us-government-owned-stock-ai-companies",
+   "title_hash": "75297807f7345421da24d3921e49b5ff",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": false,
+   "reason": "policy commentary without substantive AI education or deployment content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02994-8",
+   "title_hash": "c7c5565e557ccf97a8e8483e115e72c7",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": true,
+   "title": "Interpretable agentic AI system with localized reasoning for radiology",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-15T00:00:00+00:00",
+   "summary": "Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uwfva9/bonsai_27b_1bit_dense_llm_running_locally_in_your",
+   "title_hash": "8437019cf65118e850ebd07645ff17cc",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": true,
+   "title": "Bonsai 27B: 1-bit dense LLM running locally in your browser using custom WebGPU kernels",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-14T17:48:27+00:00",
+   "summary": "PrismML released Bonsai 27B, a 1-bit quantized large language model that compresses to 3.8GB while retaining 90% of capability, runnable in web browsers via custom WebGPU kernels.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://external-preview.redd.it/cGZwaWYxanQ3OGRoMXn7IuFtrK_hbLC66wg8SQ4wFJyBLQaa2tVzFGmUcDuQ.png?width=640&crop=smart&auto=webp&s=cc6dcc927df912a535cbcce268b4dd27331b0df0",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=bVGZd6UsQ0k",
+   "title_hash": "c5cb5b6f19be52218d8db5d200c85154",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": false,
+   "reason": "speculation and rumor about unreleased model versions without substantive news or benchmark data"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=eiQgljOrkWU",
+   "title_hash": "d80347f62750300658a3178e8af24f03",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": false,
+   "reason": "vendor marketing of product updates from OpenAI's own channel with no medical or educational relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=matzTxfrhJU",
+   "title_hash": "56feda117465079b8adbb7be8b827235",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": false,
+   "reason": "vendor marketing of product feature from OpenAI's own channel with no medical or educational relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qXGJ7pi-XOo",
+   "title_hash": "73e6cfa1892bc939b7d1691816b8a287",
+   "first_seen": "2026-07-15T10:16:18.997467+00:00",
+   "kept": false,
+   "reason": "podcast episode mislabeled as video; content is about security vulnerabilities in code models, not medical education or clinical practice"
   }
  ],
  "digests": [
@@ -17567,13 +17636,13 @@
    "date": "July 15, 2026"
   },
   "clinical_practice": {
-   "text": "A new evaluation of language model systems for breast cancer treatment recommendations draws attention to reliability and safety concerns when using artificial intelligence in oncology decision support <a href=\"https://arxiv.org/abs/2607.12051\">[1]</a>. Researchers highlight that these agentic systems, while promising, require thorough vetting before real clinical integration. Complementing this, a systematic review explores fairness in multimodal machine learning for clinical decision support, signaling persistent equity challenges as clinical AI matures <a href=\"https://www.nature.com/articles/s41746-026-03000-x\">[10]</a>. Advances in interpretable models are also documented, including a machine learning system designed to predict cognitive impairment risk over a decade with an emphasis on transparent reasoning <a href=\"https://www.nature.com/articles/s41746-026-03023-4\">[4]</a> and a comprehensive review of explainable AI methods for medical multimodal data <a href=\"https://www.nature.com/articles/s41746-026-02953-3\">[3]</a>. These studies converge on the critical issues of safety, fairness, and interpretability in clinical AI applications, reinforcing the focus on responsible deployment in healthcare.\n\nAlso this week: new releases span six clinical decision support tools, one imaging and diagnostic application, and multiple reports on safety and evaluation in medical AI. The lineup features an analysis of regulatory trends for medical devices in South Korea and a metadata catalog launched by the Swiss Personalized Health Network.",
-   "hash": "c8f9930b87717816",
+   "text": "Agentic and interpretable AI systems are drawing increased attention for their potential to inform clinical decision making. A study has evaluated language model performance in generating breast cancer treatment recommendations, highlighting safety and reliability factors critical for oncology support tools <a href=\"https://arxiv.org/abs/2607.12051\">[1]</a>. In radiology, an interpretable agentic AI model has been introduced, emphasizing transparent localized reasoning in medical image analysis <a href=\"https://www.nature.com/articles/s41746-026-02994-8\">[5]</a>. Machine learning approaches are also expanding into multimodal data, with recent reviews and models addressing both the interpretability of clinical predictions <a href=\"https://www.nature.com/articles/s41746-026-02953-3\">[3]</a> and long-term risk forecasting for cognitive impairment <a href=\"https://www.nature.com/articles/s41746-026-03023-4\">[4]</a>. These developments reflect a broader trend toward AI systems that are both explainable and clinically actionable.\n\nAlso this week: Five new studies focus on safety and evaluation, including a benchmark testing consumer AI on pediatric health questions and a framework for assessing the faithfulness of language model-generated clinical trial summaries. Other items address regulatory landscapes for digital devices, prediction of treatment responses in oncology, fairness reviews, and a unified AI model for emergency care.",
+   "hash": "ab1e1736bf60abff",
    "date": "July 15, 2026"
   },
   "general_ai": {
-   "text": "Detection of systemic safety vulnerabilities in large language models draws attention to ongoing risks and the need for greater transparency from developers and deployers <a href=\"https://spectrum.ieee.org/jailbreaking-llms\">[4]</a>. Meanwhile, calls for a global regulatory body to oversee advanced AI models highlight growing policy debates about how to manage safety at scale <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[5]</a>. Technological progress continues, with Bonsai 27B demonstrating that substantial language models can now be run on mobile devices <a href=\"https://prismml.com/news/bonsai-27b\">[3]</a>. Research on quantized model reasoning cautions that accuracy alone may not reveal silent failures, signaling new challenges in model assessment and reliability <a href=\"https://arxiv.org/abs/2607.09999\">[8]</a>. Operational concerns, such as unauthorized code uploads by a major programming tool, raise questions about user privacy and oversight in AI-powered platforms <a href=\"https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload\">[2]</a>.\n\nAlso this week: researchers introduce eight new model releases and four papers on assessment and evaluation, including a benchmark for evidence-trail reasoning tasks and taxonomies of reasoning failures. Policy developments include New York&#x27;s data center moratorium and analysis of frontier model costs.",
-   "hash": "d295bf44c517f99c",
+   "text": "A major vulnerability in language model safety protocols has been documented, highlighting persistent gaps across several widely used systems and prompting some experts to call for slower model deployment and better transparency <a href=\"https://spectrum.ieee.org/jailbreaking-llms\">[4]</a>. Meanwhile, Google DeepMind&#x27;s leadership advocates for a US-led global regulatory body focused on frontier model safety <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[5]</a>. Technical research into quantized models reveals that reasoning patterns may shift without affecting task accuracy, suggesting that silent failures remain difficult to detect <a href=\"https://arxiv.org/abs/2607.09999\">[8]</a>. Advances in hallucination detection propose new methods to identify fabricated outputs in large language models <a href=\"https://arxiv.org/abs/2607.10476\">[10]</a>. There has also been continued discussion about operational costs for frontier models, with recent analysis outlining complex price structures <a href=\"https://playcode.io/blog/real-price-of-frontier-models\">[11]</a>.\n\nAlso this week: four new papers cover diverse research and methods topics, including structured reasoning and context pruning <a href=\"https://arxiv.org/abs/2607.10386\">[9]</a>. The section includes four safety-focused studies and two new model releases, such as a 27-billion-parameter language model optimized for mobile phones. Three industry and policy updates touch on data center permits and cloud privacy issues.",
+   "hash": "a41a41fab89f26ea",
    "date": "July 15, 2026"
   }
  },

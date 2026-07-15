@@ -16,9 +16,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (10)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (10)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
     <div class="news-card">
       <div class="news-card-body">
@@ -273,47 +273,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Survey of critical care physicians reveals rapid generative AI adoption but persistent gap between uptake and integration, suggesting need for structured training.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42415016?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Construction and application of an intelligent tutoring system for resident physicians&#x27; medical record writing based on large language models</a>
-        <p class="news-card-summary">Large-language-model-based tutoring system improved medical record writing quality and documentation efficiency for residents in a training setting.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413962?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Improving Resident Knowledge of Artificial Intelligence Ethics and Prompting for Clinical Use</a>
-        <p class="news-card-summary">Pilot curricular intervention taught internal medicine residents AI ethics and clinical prompting techniques beyond attitudes, with measured competency outcomes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42414978?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Determinants of medical students&#x27; attitudes toward artificial intelligence: a cross-sectional study and implications for medical education</a>
-        <p class="news-card-summary">Survey of medical students finds positive attitudes toward AI correlated with higher paternal education, technological interest, and optimistic evaluation of AI developments.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 7, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42413800?fc=20260609215449&amp;ff=20260708053252&amp;v=2.20.0">Comment on &quot;Evaluating Generative Artificial Intelligence as an Educational Tool for Radiology Resident Report Drafting&quot;</a>
-        <p class="news-card-summary">Commentary raises methodological concerns about claims that GPT-4o reliably identifies radiology report errors and provides feedback for resident learning.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new evaluation of language model systems for breast cancer treatment recommendations draws attention to reliability and safety concerns when using artificial intelligence in oncology decision support <a href="https://arxiv.org/abs/2607.12051">[1]</a>. Researchers highlight that these agentic systems, while promising, require thorough vetting before real clinical integration. Complementing this, a systematic review explores fairness in multimodal machine learning for clinical decision support, signaling persistent equity challenges as clinical AI matures <a href="https://www.nature.com/articles/s41746-026-03000-x">[10]</a>. Advances in interpretable models are also documented, including a machine learning system designed to predict cognitive impairment risk over a decade with an emphasis on transparent reasoning <a href="https://www.nature.com/articles/s41746-026-03023-4">[4]</a> and a comprehensive review of explainable AI methods for medical multimodal data <a href="https://www.nature.com/articles/s41746-026-02953-3">[3]</a>. These studies converge on the critical issues of safety, fairness, and interpretability in clinical AI applications, reinforcing the focus on responsible deployment in healthcare.</p>
-<p>Also this week: new releases span six clinical decision support tools, one imaging and diagnostic application, and multiple reports on safety and evaluation in medical AI. The lineup features an analysis of regulatory trends for medical devices in South Korea and a metadata catalog launched by the Swiss Personalized Health Network.</p>
+<p>Agentic and interpretable AI systems are drawing increased attention for their potential to inform clinical decision making. A study has evaluated language model performance in generating breast cancer treatment recommendations, highlighting safety and reliability factors critical for oncology support tools <a href="https://arxiv.org/abs/2607.12051">[1]</a>. In radiology, an interpretable agentic AI model has been introduced, emphasizing transparent localized reasoning in medical image analysis <a href="https://www.nature.com/articles/s41746-026-02994-8">[5]</a>. Machine learning approaches are also expanding into multimodal data, with recent reviews and models addressing both the interpretability of clinical predictions <a href="https://www.nature.com/articles/s41746-026-02953-3">[3]</a> and long-term risk forecasting for cognitive impairment <a href="https://www.nature.com/articles/s41746-026-03023-4">[4]</a>. These developments reflect a broader trend toward AI systems that are both explainable and clinically actionable.</p>
+<p>Also this week: Five new studies focus on safety and evaluation, including a benchmark testing consumer AI on pediatric health questions and a framework for assessing the faithfulness of language model-generated clinical trial summaries. Other items address regulatory landscapes for digital devices, prediction of treatment responses in oncology, fairness reviews, and a unified AI model for emergency care.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 53 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -341,6 +313,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03023-4">Explainable machine learning for 10-year prediction of cognitive impairment in a rural Chinese population</a>
         <p class="news-card-summary">Machine learning model with interpretability features predicts cognitive impairment risk over ten years in a rural Chinese cohort.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02994-8">Interpretable agentic AI system with localized reasoning for radiology</a>
+        <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.</p>
       </div>
     </div>
     <div class="news-card">
@@ -686,14 +665,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Detection of systemic safety vulnerabilities in large language models draws attention to ongoing risks and the need for greater transparency from developers and deployers <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, calls for a global regulatory body to oversee advanced AI models highlight growing policy debates about how to manage safety at scale <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technological progress continues, with Bonsai 27B demonstrating that substantial language models can now be run on mobile devices <a href="https://prismml.com/news/bonsai-27b">[3]</a>. Research on quantized model reasoning cautions that accuracy alone may not reveal silent failures, signaling new challenges in model assessment and reliability <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Operational concerns, such as unauthorized code uploads by a major programming tool, raise questions about user privacy and oversight in AI-powered platforms <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[2]</a>.</p>
-<p>Also this week: researchers introduce eight new model releases and four papers on assessment and evaluation, including a benchmark for evidence-trail reasoning tasks and taxonomies of reasoning failures. Policy developments include New York&#x27;s data center moratorium and analysis of frontier model costs.</p>
+<p>A major vulnerability in language model safety protocols has been documented, highlighting persistent gaps across several widely used systems and prompting some experts to call for slower model deployment and better transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, Google DeepMind&#x27;s leadership advocates for a US-led global regulatory body focused on frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technical research into quantized models reveals that reasoning patterns may shift without affecting task accuracy, suggesting that silent failures remain difficult to detect <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Advances in hallucination detection propose new methods to identify fabricated outputs in large language models <a href="https://arxiv.org/abs/2607.10476">[10]</a>. There has also been continued discussion about operational costs for frontier models, with recent analysis outlining complex price structures <a href="https://playcode.io/blog/real-price-of-frontier-models">[11]</a>.</p>
+<p>Also this week: four new papers cover diverse research and methods topics, including structured reasoning and context pruning <a href="https://arxiv.org/abs/2607.10386">[9]</a>. The section includes four safety-focused studies and two new model releases, such as a 27-billion-parameter language model optimized for mobile phones. Three industry and policy updates touch on data center permits and cloud privacy issues.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -723,6 +702,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://prismml.com/news/bonsai-27b">Bonsai 27B: A 27B-Class model that runs on a phone</a>
         <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model designed to run efficiently on mobile phones.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwfva9/bonsai_27b_1bit_dense_llm_running_locally_in_your">Bonsai 27B: 1-bit dense LLM running locally in your browser using custom WebGPU kernels</a>
+        <p class="news-card-summary">PrismML released Bonsai 27B, a 1-bit quantized large language model that compresses to 3.8GB while retaining 90% of capability, runnable in web browsers via custom WebGPU kernels.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/cGZwaWYxanQ3OGRoMXn7IuFtrK_hbLC66wg8SQ4wFJyBLQaa2tVzFGmUcDuQ.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cc6dcc927df912a535cbcce268b4dd27331b0df0" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -930,36 +917,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Research reveals that step-by-step reasoning in LLMs introduces vulnerability allowing attackers to degrade system performance through computational exploitation.</p>
       </div>
       <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-dozen-security-lasers-pointed-in-the-wrong-direction-around-a-password-thus-ironically-creating-a.jpg?id=67107951&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets">Hackers can use 9 of the most popular AI tools to assemble massive botnets</a>
-        <p class="news-card-summary">Security research demonstrates that popular AI tools can be weaponized to assemble botnets by exploiting models&#x27; tendency to generate plausible answers to unknown queries.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/rogue-ai-agent-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.05399">Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving</a>
-        <p class="news-card-summary">Benchmark compares key-value cache compression techniques across models and tasks to address long-context serving bottlenecks in large language model inference.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.05722">Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding</a>
-        <p class="news-card-summary">NVIDIA introduces Nemotron-Labs-Diffusion, which unifies autoregressive, diffusion, and speculative decoding in a single model architecture for flexible deployment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 7, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1upsdmi/nvidianvidianemotronlabs3puzzle75ba9bbf16_hugging">nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 · Hugging Face</a>
-        <p class="news-card-summary">NVIDIA releases Nemotron-Labs-3-Puzzle-75B, an open-weights 75-billion-parameter model optimized for inference efficiency using post-training compression.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/9KNaWiT3A0U4xGNY8hRs0D9rkm6EHuN3dalCNZwcLHU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b0d143bd966f1a0a0f333cc427e60fa7f9d18c15" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

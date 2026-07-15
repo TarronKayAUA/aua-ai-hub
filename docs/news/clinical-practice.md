@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new evaluation of language model systems for breast cancer treatment recommendations draws attention to reliability and safety concerns when using artificial intelligence in oncology decision support <a href="https://arxiv.org/abs/2607.12051">[1]</a>. Researchers highlight that these agentic systems, while promising, require thorough vetting before real clinical integration. Complementing this, a systematic review explores fairness in multimodal machine learning for clinical decision support, signaling persistent equity challenges as clinical AI matures <a href="https://www.nature.com/articles/s41746-026-03000-x">[10]</a>. Advances in interpretable models are also documented, including a machine learning system designed to predict cognitive impairment risk over a decade with an emphasis on transparent reasoning <a href="https://www.nature.com/articles/s41746-026-03023-4">[4]</a> and a comprehensive review of explainable AI methods for medical multimodal data <a href="https://www.nature.com/articles/s41746-026-02953-3">[3]</a>. These studies converge on the critical issues of safety, fairness, and interpretability in clinical AI applications, reinforcing the focus on responsible deployment in healthcare.</p>
-<p>Also this week: new releases span six clinical decision support tools, one imaging and diagnostic application, and multiple reports on safety and evaluation in medical AI. The lineup features an analysis of regulatory trends for medical devices in South Korea and a metadata catalog launched by the Swiss Personalized Health Network.</p>
+<p>Agentic and interpretable AI systems are drawing increased attention for their potential to inform clinical decision making. A study has evaluated language model performance in generating breast cancer treatment recommendations, highlighting safety and reliability factors critical for oncology support tools <a href="https://arxiv.org/abs/2607.12051">[1]</a>. In radiology, an interpretable agentic AI model has been introduced, emphasizing transparent localized reasoning in medical image analysis <a href="https://www.nature.com/articles/s41746-026-02994-8">[5]</a>. Machine learning approaches are also expanding into multimodal data, with recent reviews and models addressing both the interpretability of clinical predictions <a href="https://www.nature.com/articles/s41746-026-02953-3">[3]</a> and long-term risk forecasting for cognitive impairment <a href="https://www.nature.com/articles/s41746-026-03023-4">[4]</a>. These developments reflect a broader trend toward AI systems that are both explainable and clinically actionable.</p>
+<p>Also this week: Five new studies focus on safety and evaluation, including a benchmark testing consumer AI on pediatric health questions and a framework for assessing the faithfulness of language model-generated clinical trial summaries. Other items address regulatory landscapes for digital devices, prediction of treatment responses in oncology, fairness reviews, and a unified AI model for emergency care.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -47,6 +47,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03023-4">Explainable machine learning for 10-year prediction of cognitive impairment in a rural Chinese population</a>
     <p class="news-card-summary">Machine learning model with interpretability features predicts cognitive impairment risk over ten years in a rural Chinese cohort.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02994-8">Interpretable agentic AI system with localized reasoning for radiology</a>
+    <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.</p>
   </div>
 </div>
 <div class="news-card">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02985-9">Safety boundary maintenance in consumer AI systems responding to pediatric health queries: a cross-platform benchmark evaluation under naturalistic and adversarially pressured conditions</a>
     <p class="news-card-summary">A benchmark evaluation tests how consumer AI systems maintain safety boundaries when answering pediatric health questions under both realistic and adversarial conditions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02999-3">CLEO closed loop framework for synthesizing medical privacy preserving tabular data</a>
-    <p class="news-card-summary">CLEO is a closed-loop framework for generating privacy-preserving synthetic medical tabular data.</p>
   </div>
 </div>
 </div>

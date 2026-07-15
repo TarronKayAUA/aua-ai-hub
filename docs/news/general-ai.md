@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Detection of systemic safety vulnerabilities in large language models draws attention to ongoing risks and the need for greater transparency from developers and deployers <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, calls for a global regulatory body to oversee advanced AI models highlight growing policy debates about how to manage safety at scale <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technological progress continues, with Bonsai 27B demonstrating that substantial language models can now be run on mobile devices <a href="https://prismml.com/news/bonsai-27b">[3]</a>. Research on quantized model reasoning cautions that accuracy alone may not reveal silent failures, signaling new challenges in model assessment and reliability <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Operational concerns, such as unauthorized code uploads by a major programming tool, raise questions about user privacy and oversight in AI-powered platforms <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[2]</a>.</p>
-<p>Also this week: researchers introduce eight new model releases and four papers on assessment and evaluation, including a benchmark for evidence-trail reasoning tasks and taxonomies of reasoning failures. Policy developments include New York&#x27;s data center moratorium and analysis of frontier model costs.</p>
+<p>A major vulnerability in language model safety protocols has been documented, highlighting persistent gaps across several widely used systems and prompting some experts to call for slower model deployment and better transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, Google DeepMind&#x27;s leadership advocates for a US-led global regulatory body focused on frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technical research into quantized models reveals that reasoning patterns may shift without affecting task accuracy, suggesting that silent failures remain difficult to detect <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Advances in hallucination detection propose new methods to identify fabricated outputs in large language models <a href="https://arxiv.org/abs/2607.10476">[10]</a>. There has also been continued discussion about operational costs for frontier models, with recent analysis outlining complex price structures <a href="https://playcode.io/blog/real-price-of-frontier-models">[11]</a>.</p>
+<p>Also this week: four new papers cover diverse research and methods topics, including structured reasoning and context pruning <a href="https://arxiv.org/abs/2607.10386">[9]</a>. The section includes four safety-focused studies and two new model releases, such as a 27-billion-parameter language model optimized for mobile phones. Three industry and policy updates touch on data center permits and cloud privacy issues.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="research-and-methods">
@@ -49,6 +49,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://prismml.com/news/bonsai-27b">Bonsai 27B: A 27B-Class model that runs on a phone</a>
     <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model designed to run efficiently on mobile phones.</p>
   </div>
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwfva9/bonsai_27b_1bit_dense_llm_running_locally_in_your">Bonsai 27B: 1-bit dense LLM running locally in your browser using custom WebGPU kernels</a>
+    <p class="news-card-summary">PrismML released Bonsai 27B, a 1-bit quantized large language model that compresses to 3.8GB while retaining 90% of capability, runnable in web browsers via custom WebGPU kernels.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/cGZwaWYxanQ3OGRoMXn7IuFtrK_hbLC66wg8SQ4wFJyBLQaa2tVzFGmUcDuQ.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cc6dcc927df912a535cbcce268b4dd27331b0df0" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -124,12 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Ars Technica explains how world models work, their current capabilities, and open questions in the field.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09328">WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning</a>
-    <p class="news-card-summary">WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.</p>
-  </div>
 </div>
 </div>
