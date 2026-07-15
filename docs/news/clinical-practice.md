@@ -13,14 +13,42 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new multi-modal foundation model for emergency care offers an integrated approach to supporting clinical teams throughout emergency workflows, highlighting the potential for end-to-end application in acute care settings <a href="https://www.nature.com/articles/s41746-026-02981-z">[5]</a>. In oncology, a machine learning model leveraging multi-omics data has demonstrated improved ability to predict treatment responses in ovarian cancer, contributing to advances in precision health <a href="https://www.nature.com/articles/s41746-026-02991-x">[4]</a>. Safety and evaluation in clinical AI also remain active areas of concern, with researchers evaluating how faithfully large language models can summarize clinical trial results for different user groups, emphasizing the need for trustworthy outputs in medical communication <a href="https://arxiv.org/abs/2607.09932">[3]</a>. Benchmarking efforts target both clinical question answering over irregular patient data <a href="https://arxiv.org/abs/2607.09880">[2]</a> and the maintenance of safety boundaries in AI systems that answer pediatric health queries, underlining ongoing attempts to assess and improve AI reliability in high-risk clinical scenarios <a href="https://www.nature.com/articles/s41746-026-02985-9">[10]</a>.</p>
-<p>Also this week: eight new clinical decision support model releases and four systematic reviews on fairness, safety, evaluation, and clinical workflows. A smartphone-based approach for screening cervical myelopathy across ages appears, and a new metadata catalog from the Swiss health network demonstrates progress in health data discoverability.</p>
+<p>A new evaluation of language model systems for breast cancer treatment recommendations draws attention to reliability and safety concerns when using artificial intelligence in oncology decision support <a href="https://arxiv.org/abs/2607.12051">[1]</a>. Researchers highlight that these agentic systems, while promising, require thorough vetting before real clinical integration. Complementing this, a systematic review explores fairness in multimodal machine learning for clinical decision support, signaling persistent equity challenges as clinical AI matures <a href="https://www.nature.com/articles/s41746-026-03000-x">[10]</a>. Advances in interpretable models are also documented, including a machine learning system designed to predict cognitive impairment risk over a decade with an emphasis on transparent reasoning <a href="https://www.nature.com/articles/s41746-026-03023-4">[4]</a> and a comprehensive review of explainable AI methods for medical multimodal data <a href="https://www.nature.com/articles/s41746-026-02953-3">[3]</a>. These studies converge on the critical issues of safety, fairness, and interpretability in clinical AI applications, reinforcing the focus on responsible deployment in healthcare.</p>
+<p>Also this week: new releases span six clinical decision support tools, one imaging and diagnostic application, and multiple reports on safety and evaluation in medical AI. The lineup features an analysis of regulatory trends for medical devices in South Korea and a metadata catalog launched by the Swiss Personalized Health Network.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.12051">Agentic systems for breast cancer treatment recommendations</a>
+    <p class="news-card-summary">Evaluation of language model systems for breast cancer treatment recommendations across clinical stages shows reliability and safety considerations for oncology decision support.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02983-x">Landscape of regulatory clinical investigations status of traditional and digital medical devices in the Republic of Korea (2003, mid 2024)</a>
+    <p class="news-card-summary">Regulatory analysis of clinical investigations for traditional and digital medical devices in South Korea from 2003 to mid-2024 documents approval pathways and oversight trends.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02953-3">A scoping review of explainable artificial intelligence for medical multimodal data</a>
+    <p class="news-card-summary">Scoping review of explainable artificial intelligence methods for medical multimodal data documents interpretability approaches in clinical applications.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03023-4">Explainable machine learning for 10-year prediction of cognitive impairment in a rural Chinese population</a>
+    <p class="news-card-summary">Machine learning model with interpretability features predicts cognitive impairment risk over ten years in a rural Chinese cohort.</p>
+  </div>
+</div>
 <div class="news-card">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 14, 2026</span></div>
@@ -97,34 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02999-3">CLEO closed loop framework for synthesizing medical privacy preserving tabular data</a>
     <p class="news-card-summary">CLEO is a closed-loop framework for generating privacy-preserving synthetic medical tabular data.</p>
   </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78942">Design and Preliminary Testing of the CardioCare System in Health Checkup Centers: Implementation Report</a>
-    <p class="news-card-summary">CardioCare is a digital system combining cardiovascular disease risk prediction with personalized health management for screening programs in Chinese health checkup centers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e71219">AI as the Interpreter for Identifying Root Causes and Emotional Themes in Mental Health Narratives on Reddit Using AutoML and PaLM 2: Mixed Methods Study</a>
-    <p class="news-card-summary">Study applied automated machine learning and large language models to interpret mental health narratives from social media, testing whether AI can identify root causes and emotional themes with alignment to human judgment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90228">A Controlled Comparison of Human and AI-Assisted Automated Revision of Delphi Statements on RNA-Based Medicines: Parallel, 2-Arm Study</a>
-    <p class="news-card-summary">Study compared human experts and AI-assisted methods for revising Delphi consensus statements on RNA medicines, testing whether large language models with retrieval-augmented generation can accelerate expert consensus.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.sensible-med.com/p/5-considerations-for-a-new-nature">Can AI tell you who needs an ICD?</a>
-    <p class="news-card-summary">An analysis of whether artificial intelligence can improve patient selection for implantable cardiac defibrillators to prevent sudden cardiac death.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gPwI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c278069-5e85-4f84-8d76-23884fd0cc41_790x647.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

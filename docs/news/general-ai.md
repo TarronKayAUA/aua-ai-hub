@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A major vulnerability has emerged involving large language model safety bypasses, with researchers calling for greater transparency and slower deployment after identifying systemic weaknesses across the leading models <a href="https://spectrum.ieee.org/jailbreaking-llms">[3]</a>. At the same time, SpaceXAI’s Grok programming tool attracted concern after it was found uploading users’ entire codebase to cloud storage without permission, prompting the company to disable the feature <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[1]</a>. Discussions about oversight intensified, as Google DeepMind’s CEO publicly advocated for a global AI regulatory body led by the US to address frontier model safety and coordination <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[4]</a>. On the technical front, quantization was shown to silently shift reasoning patterns in large models, suggesting that accuracy alone may not capture all reliability risks <a href="https://arxiv.org/abs/2607.09999">[7]</a>.</p>
-<p>Also this week: the section includes eight new model releases and five papers on assessment, along with analysis of real costs of frontier models. Current items cover safety and reliability, industry policy, and benchmarks such as WILDTRACE for evidence-based long-context reasoning.</p>
+<p>Detection of systemic safety vulnerabilities in large language models draws attention to ongoing risks and the need for greater transparency from developers and deployers <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, calls for a global regulatory body to oversee advanced AI models highlight growing policy debates about how to manage safety at scale <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technological progress continues, with Bonsai 27B demonstrating that substantial language models can now be run on mobile devices <a href="https://prismml.com/news/bonsai-27b">[3]</a>. Research on quantized model reasoning cautions that accuracy alone may not reveal silent failures, signaling new challenges in model assessment and reliability <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Operational concerns, such as unauthorized code uploads by a major programming tool, raise questions about user privacy and oversight in AI-powered platforms <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[2]</a>.</p>
+<p>Also this week: researchers introduce eight new model releases and four papers on assessment and evaluation, including a benchmark for evidence-trail reasoning tasks and taxonomies of reasoning failures. Policy developments include New York&#x27;s data center moratorium and analysis of frontier model costs.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.11889">Scaling Point-in-Time Language Models</a>
+    <p class="news-card-summary">Point-in-time language models trained only on temporally prior text eliminate lookahead bias for valid backtesting and causal inference.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
@@ -28,6 +35,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">SpaceX&#x27;s Grok Build tool was found uploading entire user codebases to cloud storage without permission before the company disabled the feature.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK262_GROK_B_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhukq/bonsai_27b_the_first_27bclass_model_to_run_on_a">Bonsai 27B: The First 27B-Class Model to Run on a Phone</a>
+    <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model capable of running on mobile phones.</p>
+  </div>
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -116,20 +130,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09328">WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning</a>
     <p class="news-card-summary">WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09415">Self-Guided Test-Time Training for Long-Context LLMs</a>
-    <p class="news-card-summary">Self-guided test-time training method improves long-context language model performance by helping models better identify and use relevant evidence from long inputs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09424">A Sovereign, Open-Source Foundation Model for German and English</a>
-    <p class="news-card-summary">Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.</p>
   </div>
 </div>
 </div>

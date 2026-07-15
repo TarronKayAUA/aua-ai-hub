@@ -306,15 +306,43 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new multi-modal foundation model for emergency care offers an integrated approach to supporting clinical teams throughout emergency workflows, highlighting the potential for end-to-end application in acute care settings <a href="https://www.nature.com/articles/s41746-026-02981-z">[5]</a>. In oncology, a machine learning model leveraging multi-omics data has demonstrated improved ability to predict treatment responses in ovarian cancer, contributing to advances in precision health <a href="https://www.nature.com/articles/s41746-026-02991-x">[4]</a>. Safety and evaluation in clinical AI also remain active areas of concern, with researchers evaluating how faithfully large language models can summarize clinical trial results for different user groups, emphasizing the need for trustworthy outputs in medical communication <a href="https://arxiv.org/abs/2607.09932">[3]</a>. Benchmarking efforts target both clinical question answering over irregular patient data <a href="https://arxiv.org/abs/2607.09880">[2]</a> and the maintenance of safety boundaries in AI systems that answer pediatric health queries, underlining ongoing attempts to assess and improve AI reliability in high-risk clinical scenarios <a href="https://www.nature.com/articles/s41746-026-02985-9">[10]</a>.</p>
-<p>Also this week: eight new clinical decision support model releases and four systematic reviews on fairness, safety, evaluation, and clinical workflows. A smartphone-based approach for screening cervical myelopathy across ages appears, and a new metadata catalog from the Swiss health network demonstrates progress in health data discoverability.</p>
+<p>A new evaluation of language model systems for breast cancer treatment recommendations draws attention to reliability and safety concerns when using artificial intelligence in oncology decision support <a href="https://arxiv.org/abs/2607.12051">[1]</a>. Researchers highlight that these agentic systems, while promising, require thorough vetting before real clinical integration. Complementing this, a systematic review explores fairness in multimodal machine learning for clinical decision support, signaling persistent equity challenges as clinical AI matures <a href="https://www.nature.com/articles/s41746-026-03000-x">[10]</a>. Advances in interpretable models are also documented, including a machine learning system designed to predict cognitive impairment risk over a decade with an emphasis on transparent reasoning <a href="https://www.nature.com/articles/s41746-026-03023-4">[4]</a> and a comprehensive review of explainable AI methods for medical multimodal data <a href="https://www.nature.com/articles/s41746-026-02953-3">[3]</a>. These studies converge on the critical issues of safety, fairness, and interpretability in clinical AI applications, reinforcing the focus on responsible deployment in healthcare.</p>
+<p>Also this week: new releases span six clinical decision support tools, one imaging and diagnostic application, and multiple reports on safety and evaluation in medical AI. The lineup features an analysis of regulatory trends for medical devices in South Korea and a metadata catalog launched by the Swiss Personalized Health Network.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.12051">Agentic systems for breast cancer treatment recommendations</a>
+        <p class="news-card-summary">Evaluation of language model systems for breast cancer treatment recommendations across clinical stages shows reliability and safety considerations for oncology decision support.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02983-x">Landscape of regulatory clinical investigations status of traditional and digital medical devices in the Republic of Korea (2003, mid 2024)</a>
+        <p class="news-card-summary">Regulatory analysis of clinical investigations for traditional and digital medical devices in South Korea from 2003 to mid-2024 documents approval pathways and oversight trends.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02953-3">A scoping review of explainable artificial intelligence for medical multimodal data</a>
+        <p class="news-card-summary">Scoping review of explainable artificial intelligence methods for medical multimodal data documents interpretability approaches in clinical applications.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03023-4">Explainable machine learning for 10-year prediction of cognitive impairment in a rural Chinese population</a>
+        <p class="news-card-summary">Machine learning model with interpretability features predicts cognitive impairment risk over ten years in a rural Chinese cohort.</p>
+      </div>
+    </div>
     <div class="news-card">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 14, 2026</span></div>
@@ -658,15 +686,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A major vulnerability has emerged involving large language model safety bypasses, with researchers calling for greater transparency and slower deployment after identifying systemic weaknesses across the leading models <a href="https://spectrum.ieee.org/jailbreaking-llms">[3]</a>. At the same time, SpaceXAI’s Grok programming tool attracted concern after it was found uploading users’ entire codebase to cloud storage without permission, prompting the company to disable the feature <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[1]</a>. Discussions about oversight intensified, as Google DeepMind’s CEO publicly advocated for a global AI regulatory body led by the US to address frontier model safety and coordination <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[4]</a>. On the technical front, quantization was shown to silently shift reasoning patterns in large models, suggesting that accuracy alone may not capture all reliability risks <a href="https://arxiv.org/abs/2607.09999">[7]</a>.</p>
-<p>Also this week: the section includes eight new model releases and five papers on assessment, along with analysis of real costs of frontier models. Current items cover safety and reliability, industry policy, and benchmarks such as WILDTRACE for evidence-based long-context reasoning.</p>
+<p>Detection of systemic safety vulnerabilities in large language models draws attention to ongoing risks and the need for greater transparency from developers and deployers <a href="https://spectrum.ieee.org/jailbreaking-llms">[4]</a>. Meanwhile, calls for a global regulatory body to oversee advanced AI models highlight growing policy debates about how to manage safety at scale <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[5]</a>. Technological progress continues, with Bonsai 27B demonstrating that substantial language models can now be run on mobile devices <a href="https://prismml.com/news/bonsai-27b">[3]</a>. Research on quantized model reasoning cautions that accuracy alone may not reveal silent failures, signaling new challenges in model assessment and reliability <a href="https://arxiv.org/abs/2607.09999">[8]</a>. Operational concerns, such as unauthorized code uploads by a major programming tool, raise questions about user privacy and oversight in AI-powered platforms <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[2]</a>.</p>
+<p>Also this week: researchers introduce eight new model releases and four papers on assessment and evaluation, including a benchmark for evidence-trail reasoning tasks and taxonomies of reasoning failures. Policy developments include New York&#x27;s data center moratorium and analysis of frontier model costs.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.11889">Scaling Point-in-Time Language Models</a>
+        <p class="news-card-summary">Point-in-time language models trained only on temporally prior text eliminate lookahead bias for valid backtesting and causal inference.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
@@ -674,6 +709,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">SpaceX&#x27;s Grok Build tool was found uploading entire user codebases to cloud storage without permission before the company disabled the feature.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK262_GROK_B_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhukq/bonsai_27b_the_first_27bclass_model_to_run_on_a">Bonsai 27B: The First 27B-Class Model to Run on a Phone</a>
+        <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model capable of running on mobile phones.</p>
+      </div>
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
