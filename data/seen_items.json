@@ -17672,6 +17672,144 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg"
+  },
+  {
+   "url": "https://huggingface.co/blog/allenai/shippy-tech-blog",
+   "title_hash": "7e211a67e340d69964869f4da9844a8f",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "vendor marketing from company's own blog"
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt",
+   "title_hash": "31b20b5966a9e79222781618e1c661dc",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "vendor marketing from company's own blog"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer",
+   "title_hash": "00e8b09cc97c96802a9fbe65a183106a",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": true,
+   "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+   "source": "MIT Technology Review AI",
+   "published": "2026-07-15T17:09:37+00:00",
+   "summary": "OpenAI built GPT-Red, an adversarial language model that tests its systems for cybersecurity vulnerabilities, and used it to strengthen GPT-5.6 against attacks.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arena.ai/blog/factuality-in-arena",
+   "title_hash": "314452adfe9b5e8915920ee118f05315",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": true,
+   "title": "Factuality in the Arena",
+   "source": "LMArena blog",
+   "published": "2026-07-15T16:28:25+00:00",
+   "summary": "A new leaderboard ranks language models by both human preference and factual accuracy of responses, addressing a persistent evaluation challenge.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://storage.ghost.io/c/37/18/37180a6f-127b-4177-bb4a-98f4f26f9e5d/content/images/2026/07/Factuality_Blog_Header_Web_Optimized.jpg",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard",
+   "title_hash": "99b22f5d53a24dba74c119cabfb29f58",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "hardware product announcement without substantive AI capability news"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
+   "title_hash": "f68e896891bfeae511fe771ff328f07b",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 6, same hardware announcement"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ux9xze/the_best_model_is_the_one_you_can_actually_run",
+   "title_hash": "01b508cadf16efad6e45494b34ac048d",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "personal user experience from forum, no significant news or instructive analysis"
+  },
+  {
+   "url": "https://spectrum.ieee.org/eliza-chatbot-source-code",
+   "title_hash": "b3cb660f2c80c8c89547a9deabd88019",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "historical retrospective without current relevance to this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration",
+   "title_hash": "67c4df8fe3ae5022a32b06e02cb8b05e",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": true,
+   "title": "How I tricked Claude into leaking your deepest, darkest secrets",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-15T14:21:54+00:00",
+   "summary": "A researcher demonstrated a data exfiltration vulnerability in Claude's web-fetch tool, showing how agent security requires careful design of tool integrations.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://briarproject.org/news/2026-maintenance-mode",
+   "title_hash": "54b789d3b0837f4f0a9012e846aa7cd0",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "off-topic news about privacy software project"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42455100?fc=20260609215449&ff=20260715134021&v=2.20.0",
+   "title_hash": "0f0f3021937f6d244172015b1bdae33b",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "environmental health study, off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02988-6",
+   "title_hash": "3cbdfd56a1dca0b023adfdfb92d51209",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "narrow domain application without AI significance to this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03024-3",
+   "title_hash": "441066ab2d06ce40d798bf7400ea4eb6",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": true,
+   "title": "Naturalistic adoption and deliberate practice use of an AI-based OSCE platform during national licensure preparation",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-15T00:00:00+00:00",
+   "summary": "A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04547-8",
+   "title_hash": "4861b1e410624f15f2ffc3f10e6ea639",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "clinical trial in non-AI domain, off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00035-1",
+   "title_hash": "39298de0ea43cbac728808a86b9f14a4",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "clinical genetics trial without AI component, off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=nxr20lcqagg",
+   "title_hash": "c47a4a538e268fd6ca06010444fee1c7",
+   "first_seen": "2026-07-15T17:40:21.706542+00:00",
+   "kept": false,
+   "reason": "marketing from a commercial product's own channel without substantive educational or technical content"
   }
  ],
  "digests": [
@@ -17801,8 +17939,8 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Reliability and accuracy of large language models remain central concerns for medical educators and students, as highlighted by frequent hallucination of references and citations in anatomy-related question answering tasks <a href=\"https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[1]</a>. These issues impact not only student trust but also the broader adoption of AI tools, with surveys indicating both enthusiasm for AI integration and caution due to data quality and workflow challenges <a href=\"https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[2]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0\">[7]</a>. Research shows that training and experience influence faculty and student attitudes toward AI, particularly in dentistry, where varied backgrounds shape acceptance levels <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[3]</a>. Meanwhile, generative AI-assisted simulation training has been linked to improved diagnostic communication scores in key clinical scenarios, suggesting potential for skill development in undergraduate medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[4]</a>. Ongoing studies assess whether generative AI can reliably score open-ended assessments, further informing its role in educational evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0\">[14]</a>.\n\nAlso this week: studies explore inclusive clinical language, with a national analysis on skin color terminology in medical education, and assess rapid growth trends in large language model research. Eight new items examine adoption attitudes, teaching practices, assessment, simulation training, and mentorship expansion.",
-   "hash": "e130e5c9238dc2c8",
+   "text": "Concerns over reliability and citation accuracy in anatomy-related question answering by large language models continue to shape expectations for their use in medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[1]</a>. Meanwhile, surveys and studies across specialties report high willingness among medical students and professionals to adopt AI, although questions about trust, privacy, and the impact of training and experience influence attitudes and uptake <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[3]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0\">[8]</a>. Simulation applications show positive effects, with generative AI-assisted training linked to improved diagnostic communication scores across multiple clinical scenarios <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[4]</a>. At the same time, bibliometric analysis of research output highlights both expansion in the field and ongoing gaps in empirical evidence and governance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0\">[10]</a>. AI integration is also bringing changes to mentorship and access for students from less-resourced institutions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0\">[9]</a>.\n\nAlso this week: educators explore expanded roles during generative AI adoption, and new tools are developed to increase assessment validity. The section also includes eight new model releases, five papers on assessment and feedback, and two studies on teaching and curriculum in AI-supported medical education.",
+   "hash": "bedf1b1c101d4e64",
    "date": "July 15, 2026"
   },
   "clinical_practice": {
@@ -17811,8 +17949,8 @@
    "date": "July 15, 2026"
   },
   "general_ai": {
-   "text": "A significant vulnerability was discovered in SpaceXAI’s Grok programming tool, which was uploading entire user codebases to cloud storage without obtaining permission; this issue has been resolved by disabling the feature, highlighting ongoing safety and reliability challenges for AI tools <a href=\"https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload\">[3]</a>. In related developments, researchers have identified systemic gaps in safety mechanisms across several large language models, prompting calls for slower deployment and greater transparency <a href=\"https://spectrum.ieee.org/jailbreaking-llms\">[5]</a>. Regulatory discussions are advancing as Google DeepMind’s Demis Hassabis suggests establishing a US-led global AI watchdog to oversee frontier model safety <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[6]</a>. Meanwhile, technical research continues, including methods to detect hallucinations in language models using diversion decoding, addressing the reliability of factual outputs <a href=\"https://arxiv.org/abs/2607.10476\">[11]</a>, and studies analyzing quantization-induced reasoning shifts that may not be evident in task accuracy <a href=\"https://arxiv.org/abs/2607.09999\">[9]</a>.\n\nAlso this week: eight new model releases and five papers on assessment contribute to advances in research and methods. The Bonsai 27B model demonstrates efficient large-model deployment on mobile phones, while the Index-1.9B technical report details a multilingual model series from Bilibili.",
-   "hash": "c1e96e30fb72dd7e",
+   "text": "OpenAI’s development of GPT-Red marks a focused effort to enhance model safety by actively searching for cybersecurity vulnerabilities and fortifying future systems like GPT-5.6 <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[1]</a>. This emphasis on adversarial testing coincides with research demonstrating a substantial data exfiltration risk in current agent tooling, notably in Claude’s web-fetch feature, highlighting the complexity of securing AI system integrations <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[3]</a>. Recognition of vulnerabilities across leading language models has prompted renewed arguments for slower rollout and greater transparency in deployment standards <a href=\"https://spectrum.ieee.org/jailbreaking-llms\">[8]</a>. In policy news, Google DeepMind’s leadership advocates a global regulatory approach anchored in the US to monitor frontier model safety <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[9]</a>. Methods to reliably assess AI factuality are also advancing, as evidenced by new leaderboards ranking models for both accuracy and user preference <a href=\"https://arena.ai/blog/factuality-in-arena\">[2]</a>.\n\nAlso this week: studies analyze the silent failure modes of quantized language models, the scaling of point-in-time models for causal inference, and the rapid upload of private codebases in commercial tools. The section includes six items on safety and reliability, as well as two new model releases such as Bonsai 27B.",
+   "hash": "29a9556e3edcbd10",
    "date": "July 15, 2026"
   }
  },

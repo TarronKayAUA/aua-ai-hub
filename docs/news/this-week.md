@@ -11,14 +11,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Reliability and accuracy of large language models remain central concerns for medical educators and students, as highlighted by frequent hallucination of references and citations in anatomy-related question answering tasks <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[1]</a>. These issues impact not only student trust but also the broader adoption of AI tools, with surveys indicating both enthusiasm for AI integration and caution due to data quality and workflow challenges <a href="https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[7]</a>. Research shows that training and experience influence faculty and student attitudes toward AI, particularly in dentistry, where varied backgrounds shape acceptance levels <a href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[3]</a>. Meanwhile, generative AI-assisted simulation training has been linked to improved diagnostic communication scores in key clinical scenarios, suggesting potential for skill development in undergraduate medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[4]</a>. Ongoing studies assess whether generative AI can reliably score open-ended assessments, further informing its role in educational evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">[14]</a>.</p>
-<p>Also this week: studies explore inclusive clinical language, with a national analysis on skin color terminology in medical education, and assess rapid growth trends in large language model research. Eight new items examine adoption attitudes, teaching practices, assessment, simulation training, and mentorship expansion.</p>
+<p>Concerns over reliability and citation accuracy in anatomy-related question answering by large language models continue to shape expectations for their use in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[1]</a>. Meanwhile, surveys and studies across specialties report high willingness among medical students and professionals to adopt AI, although questions about trust, privacy, and the impact of training and experience influence attitudes and uptake <a href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[3]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">[8]</a>. Simulation applications show positive effects, with generative AI-assisted training linked to improved diagnostic communication scores across multiple clinical scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[4]</a>. At the same time, bibliometric analysis of research output highlights both expansion in the field and ongoing gaps in empirical evidence and governance <a href="https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">[10]</a>. AI integration is also bringing changes to mentorship and access for students from less-resourced institutions <a href="https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">[9]</a>.</p>
+<p>Also this week: educators explore expanded roles during generative AI adoption, and new tools are developed to increase assessment validity. The section also includes eight new model releases, five papers on assessment and feedback, and two studies on teaching and curriculum in AI-supported medical education.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -46,6 +46,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">Generative AI-Assisted Simulation Training Is Associated with Higher Post-Intervention Diagnostic Communication Scores Across Type 2 Diabetes, Obesity, and Breast Cancer Scenarios</a>
         <p class="news-card-summary">Undergraduate medical students using generative AI-assisted simulation training achieved higher diagnostic communication scores across diabetes, obesity, and cancer scenarios.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03024-3">Naturalistic adoption and deliberate practice use of an AI-based OSCE platform during national licensure preparation</a>
+        <p class="news-card-summary">A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.</p>
       </div>
     </div>
     <div class="news-card">
@@ -693,15 +700,38 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A significant vulnerability was discovered in SpaceXAI’s Grok programming tool, which was uploading entire user codebases to cloud storage without obtaining permission; this issue has been resolved by disabling the feature, highlighting ongoing safety and reliability challenges for AI tools <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[3]</a>. In related developments, researchers have identified systemic gaps in safety mechanisms across several large language models, prompting calls for slower deployment and greater transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[5]</a>. Regulatory discussions are advancing as Google DeepMind’s Demis Hassabis suggests establishing a US-led global AI watchdog to oversee frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[6]</a>. Meanwhile, technical research continues, including methods to detect hallucinations in language models using diversion decoding, addressing the reliability of factual outputs <a href="https://arxiv.org/abs/2607.10476">[11]</a>, and studies analyzing quantization-induced reasoning shifts that may not be evident in task accuracy <a href="https://arxiv.org/abs/2607.09999">[9]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment contribute to advances in research and methods. The Bonsai 27B model demonstrates efficient large-model deployment on mobile phones, while the Index-1.9B technical report details a multilingual model series from Bilibili.</p>
+<p>OpenAI’s development of GPT-Red marks a focused effort to enhance model safety by actively searching for cybersecurity vulnerabilities and fortifying future systems like GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[1]</a>. This emphasis on adversarial testing coincides with research demonstrating a substantial data exfiltration risk in current agent tooling, notably in Claude’s web-fetch feature, highlighting the complexity of securing AI system integrations <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[3]</a>. Recognition of vulnerabilities across leading language models has prompted renewed arguments for slower rollout and greater transparency in deployment standards <a href="https://spectrum.ieee.org/jailbreaking-llms">[8]</a>. In policy news, Google DeepMind’s leadership advocates a global regulatory approach anchored in the US to monitor frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[9]</a>. Methods to reliably assess AI factuality are also advancing, as evidenced by new leaderboards ranking models for both accuracy and user preference <a href="https://arena.ai/blog/factuality-in-arena">[2]</a>.</p>
+<p>Also this week: studies analyze the silent failure modes of quantized language models, the scaling of point-in-time models for causal inference, and the rapid upload of private codebases in commercial tools. The section includes six items on safety and reliability, as well as two new model releases such as Bonsai 27B.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer</a>
+        <p class="news-card-summary">OpenAI built GPT-Red, an adversarial language model that tests its systems for cybersecurity vulnerabilities, and used it to strengthen GPT-5.6 against attacks.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">LMArena blog</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://arena.ai/blog/factuality-in-arena">Factuality in the Arena</a>
+        <p class="news-card-summary">A new leaderboard ranks language models by both human preference and factual accuracy of responses, addressing a persistent evaluation challenge.</p>
+      </div>
+      <img class="news-card-thumb" src="https://storage.ghost.io/c/37/18/37180a6f-127b-4177-bb4a-98f4f26f9e5d/content/images/2026/07/Factuality_Blog_Header_Web_Optimized.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">How I tricked Claude into leaking your deepest, darkest secrets</a>
+        <p class="news-card-summary">A researcher demonstrated a data exfiltration vulnerability in Claude&#x27;s web-fetch tool, showing how agent security requires careful design of tool integrations.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">AI Policy Perspectives</span><span class="news-card-date">July 15, 2026</span></div>

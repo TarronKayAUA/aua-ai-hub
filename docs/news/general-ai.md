@@ -13,14 +13,37 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A significant vulnerability was discovered in SpaceXAI’s Grok programming tool, which was uploading entire user codebases to cloud storage without obtaining permission; this issue has been resolved by disabling the feature, highlighting ongoing safety and reliability challenges for AI tools <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[3]</a>. In related developments, researchers have identified systemic gaps in safety mechanisms across several large language models, prompting calls for slower deployment and greater transparency <a href="https://spectrum.ieee.org/jailbreaking-llms">[5]</a>. Regulatory discussions are advancing as Google DeepMind’s Demis Hassabis suggests establishing a US-led global AI watchdog to oversee frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[6]</a>. Meanwhile, technical research continues, including methods to detect hallucinations in language models using diversion decoding, addressing the reliability of factual outputs <a href="https://arxiv.org/abs/2607.10476">[11]</a>, and studies analyzing quantization-induced reasoning shifts that may not be evident in task accuracy <a href="https://arxiv.org/abs/2607.09999">[9]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment contribute to advances in research and methods. The Bonsai 27B model demonstrates efficient large-model deployment on mobile phones, while the Index-1.9B technical report details a multilingual model series from Bilibili.</p>
+<p>OpenAI’s development of GPT-Red marks a focused effort to enhance model safety by actively searching for cybersecurity vulnerabilities and fortifying future systems like GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[1]</a>. This emphasis on adversarial testing coincides with research demonstrating a substantial data exfiltration risk in current agent tooling, notably in Claude’s web-fetch feature, highlighting the complexity of securing AI system integrations <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[3]</a>. Recognition of vulnerabilities across leading language models has prompted renewed arguments for slower rollout and greater transparency in deployment standards <a href="https://spectrum.ieee.org/jailbreaking-llms">[8]</a>. In policy news, Google DeepMind’s leadership advocates a global regulatory approach anchored in the US to monitor frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[9]</a>. Methods to reliably assess AI factuality are also advancing, as evidenced by new leaderboards ranking models for both accuracy and user preference <a href="https://arena.ai/blog/factuality-in-arena">[2]</a>.</p>
+<p>Also this week: studies analyze the silent failure modes of quantized language models, the scaling of point-in-time models for causal inference, and the rapid upload of private codebases in commercial tools. The section includes six items on safety and reliability, as well as two new model releases such as Bonsai 27B.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer</a>
+    <p class="news-card-summary">OpenAI built GPT-Red, an adversarial language model that tests its systems for cybersecurity vulnerabilities, and used it to strengthen GPT-5.6 against attacks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">LMArena blog</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://arena.ai/blog/factuality-in-arena">Factuality in the Arena</a>
+    <p class="news-card-summary">A new leaderboard ranks language models by both human preference and factual accuracy of responses, addressing a persistent evaluation challenge.</p>
+  </div>
+  <img class="news-card-thumb" src="https://storage.ghost.io/c/37/18/37180a6f-127b-4177-bb4a-98f4f26f9e5d/content/images/2026/07/Factuality_Blog_Header_Web_Optimized.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">How I tricked Claude into leaking your deepest, darkest secrets</a>
+    <p class="news-card-summary">A researcher demonstrated a data exfiltration vulnerability in Claude&#x27;s web-fetch tool, showing how agent security requires careful design of tool integrations.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">AI Policy Perspectives</span><span class="news-card-date">July 15, 2026</span></div>
@@ -110,27 +133,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2607.10386">Structured Thoughts For Improved Reasoning And Context Pruning</a>
     <p class="news-card-summary">Open-source platform for compound AI system evaluation provides design-of-experiments methodology to determine which components most affect system quality.</p>
   </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.10476">Hallucination Detection in Large Language Models Using Diversion Decoding</a>
-    <p class="news-card-summary">Method using diversion decoding detects hallucinations in language models by identifying factually incorrect or fabricated statements.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://playcode.io/blog/real-price-of-frontier-models">The real prices of frontier models</a>
-    <p class="news-card-summary">Analysis of actual costs of frontier large language models including inference expenses and operational overhead.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show">What Anthropic’s latest AI discovery does, and doesn’t, show</a>
-    <p class="news-card-summary">MIT Technology Review examines what Anthropic&#x27;s recent research on internal model representations reveals and what it does not yet show about AI systems.</p>
-  </div>
-  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/thinking2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
