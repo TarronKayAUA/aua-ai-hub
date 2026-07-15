@@ -17019,6 +17019,167 @@
    "first_seen": "2026-07-15T02:49:47.598617+00:00",
    "kept": false,
    "reason": "off-topic for this audience; book review unrelated to AI or medical education"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/965670/openai-chatgpt-ai-smart-speaker-hardware-device",
+   "title_hash": "0789c8c6fc2ed579c6142ea4fc7d4d0c",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "product rumor and corporate hardware gossip, not a confirmed capability or deployment"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
+   "title_hash": "eaad63c2e65bcc7032ae73b9b4276217",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": true,
+   "title": "SpaceXAI’s Grok programming tool was uploading its users’ entire codebase to cloud storage",
+   "source": "The Verge AI",
+   "published": "2026-07-14T19:25:00+00:00",
+   "summary": "SpaceX's Grok Build tool was found uploading entire user codebases to cloud storage without permission before the company disabled the feature.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK262_GROK_B_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+   "title_hash": "6726bddd747e682458362c3dadabd4c5",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "employment litigation, not a development in AI technology or deployment affecting this audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/965138/google-images-homepage-ai-overviews-search-nano-banana",
+   "title_hash": "f5446584152d15cd487855d978c46db1",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "product feature announcement of marginal relevance to medical educators"
+  },
+  {
+   "url": "https://spectrum.ieee.org/jailbreaking-llms",
+   "title_hash": "f2d04fa73a1836d3708985eb80890f87",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": true,
+   "title": "How I Turned AI to the Dark Side",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-07-14T15:59:35+00:00",
+   "summary": "Researcher identified systemic vulnerabilities allowing bypass of LLM safety measures across major models, calling for slower deployment and increased transparency.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/glossy-red-robot-devil-standing-on-a-bundle-of-dynamite-against-blue-glow-background.png?id=67154492&width=980",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/entertainment/965358/spotify-ai-chatbot-interface-music-audiobooks-podcasts",
+   "title_hash": "89dde3672116e1fbd18767eedd5ca9fc",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "vendor marketing of a music platform feature, not relevant to medical education or practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
+   "title_hash": "66f276ba6eab8b49105e58b29d6ef584",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "commentary on litigation covered elsewhere, no technical or policy substance"
+  },
+  {
+   "url": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
+   "title_hash": "de102ab45cb1b8b19223431039089465",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": true,
+   "title": "Google’s Demis Hassabis says it’s time for a global AI watchdog, led by the US",
+   "source": "The Verge AI",
+   "published": "2026-07-14T11:43:29+00:00",
+   "summary": "Google DeepMind CEO proposes creation of a global AI regulatory body led by the US to oversee frontier model safety.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/gettyimages-2194484502.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+   "title_hash": "db06f855873d80c02e32163777ba9e3d",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": true,
+   "title": "New York becomes the first state to enact a data center moratorium",
+   "source": "The Verge AI",
+   "published": "2026-07-14T09:00:00+00:00",
+   "summary": "New York becomes the first state to enact a moratorium on new hyperscale data center permits for up to one year.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
+   "title_hash": "fc88300f8010e320bd5ed39c60cfe803",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "product review of operating system features, not AI capability relevant to medical education or practice"
+  },
+  {
+   "url": "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims",
+   "title_hash": "9bc7ff081e510d0dbe2dedfaffad1bf9",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "litigation and corporate dispute gossip, not a development in AI capability or deployment"
+  },
+  {
+   "url": "https://spectrum.ieee.org/technical-interview-ai-arms-race",
+   "title_hash": "ee4b52141f38a06348e5adb5e67c0123",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "employment market speculation and hiring trends, not a development in AI capability or technical deployment"
+  },
+  {
+   "url": "https://spectrum.ieee.org/x-square-robot-embodied-ai-stack",
+   "title_hash": "b66cc57d41ec2bea6b45737457ddd54c",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "vendor marketing from X Square Robot, disguised as article content"
+  },
+  {
+   "url": "https://spectrum.ieee.org/large-tabular-models-nexus",
+   "title_hash": "46b49f206564ec6fe8384270fba5e189",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": true,
+   "title": "Large Tabular Models Excel Where LLMs Fail",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-07-09T12:00:01+00:00",
+   "summary": "Large tabular models address limitations of LLMs in analyzing structured data, offering new capability for data analysis tasks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/three-people-smiling-while-seated-on-a-couch-in-a-casual-office-environment.jpg?id=67114725&width=980",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.aipolicyperspectives.com/p/the-science-of-learning",
+   "title_hash": "49cc65eb437bc3a58394a287fb897eaf",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "incomplete summary with no substantive detail about content or relevance"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-reasoning-models-security-risk",
+   "title_hash": "ee921281c24f9b4e9bdd3a05295f399b",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": true,
+   "title": "AI Models Overthink Problems, and It’s a Security Risk",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-07-08T11:00:01+00:00",
+   "summary": "Research reveals that step-by-step reasoning in LLMs introduces vulnerability allowing attackers to degrade system performance through computational exploitation.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-dozen-security-lasers-pointed-in-the-wrong-direction-around-a-password-thus-ironically-creating-a.jpg?id=67107951&width=980",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-art-market",
+   "title_hash": "b8d11bdea74dcc53a0941966fe7ea4ce",
+   "first_seen": "2026-07-15T03:06:26.781569+00:00",
+   "kept": false,
+   "reason": "art criticism and cultural commentary, off-topic for medical educators and students"
   }
  ],
  "digests": [
@@ -17158,8 +17319,8 @@
    "date": "July 15, 2026"
   },
   "general_ai": {
-   "text": "Bonsai 27B introduces a 27-billion-parameter language model optimized to run on mobile phones, highlighting growing efforts to democratize access to advanced AI capabilities <a href=\"https://prismml.com/news/bonsai-27b\">[1]</a>. Researchers are scrutinizing how quantization silently affects language model reasoning, showing that performance metrics may not capture shifts in underlying logic or emergence of new error types <a href=\"https://arxiv.org/abs/2607.09999\">[3]</a>. Alongside this, structured evaluation techniques are helping to identify which parts of compound AI systems most impact output quality, paving the way for more reliable applications in complex tasks <a href=\"https://arxiv.org/abs/2607.10386\">[4]</a>. Techniques that detect hallucinations in language models are gaining traction as safeguards against factual inaccuracies, targeting the challenge of maintaining trustworthy AI outputs <a href=\"https://arxiv.org/abs/2607.10476\">[5]</a>. Cost analysis of frontier models sheds light on operational realities, giving stakeholders concrete data for decisions about resource allocation and deployment <a href=\"https://playcode.io/blog/real-price-of-frontier-models\">[6]</a>.\n\nAlso this week: three new models join the section, including Soofi S 30B-A3B with long-context handling for German and English, and Index SLM’s multilingual variants. Six recent studies investigate research methods and performance assessment, covering areas from memory-efficient inference to benchmarking long-context reasoning.",
-   "hash": "6965ec8bbcfdc60e",
+   "text": "A major vulnerability has emerged involving large language model safety bypasses, with researchers calling for greater transparency and slower deployment after identifying systemic weaknesses across the leading models <a href=\"https://spectrum.ieee.org/jailbreaking-llms\">[3]</a>. At the same time, SpaceXAI’s Grok programming tool attracted concern after it was found uploading users’ entire codebase to cloud storage without permission, prompting the company to disable the feature <a href=\"https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload\">[1]</a>. Discussions about oversight intensified, as Google DeepMind’s CEO publicly advocated for a global AI regulatory body led by the US to address frontier model safety and coordination <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[4]</a>. On the technical front, quantization was shown to silently shift reasoning patterns in large models, suggesting that accuracy alone may not capture all reliability risks <a href=\"https://arxiv.org/abs/2607.09999\">[7]</a>.\n\nAlso this week: the section includes eight new model releases and five papers on assessment, along with analysis of real costs of frontier models. Current items cover safety and reliability, industry policy, and benchmarks such as WILDTRACE for evidence-based long-context reasoning.",
+   "hash": "572e13df516c60ec",
    "date": "July 15, 2026"
   }
  },

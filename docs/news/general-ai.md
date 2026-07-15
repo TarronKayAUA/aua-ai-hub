@@ -13,20 +13,52 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Bonsai 27B introduces a 27-billion-parameter language model optimized to run on mobile phones, highlighting growing efforts to democratize access to advanced AI capabilities <a href="https://prismml.com/news/bonsai-27b">[1]</a>. Researchers are scrutinizing how quantization silently affects language model reasoning, showing that performance metrics may not capture shifts in underlying logic or emergence of new error types <a href="https://arxiv.org/abs/2607.09999">[3]</a>. Alongside this, structured evaluation techniques are helping to identify which parts of compound AI systems most impact output quality, paving the way for more reliable applications in complex tasks <a href="https://arxiv.org/abs/2607.10386">[4]</a>. Techniques that detect hallucinations in language models are gaining traction as safeguards against factual inaccuracies, targeting the challenge of maintaining trustworthy AI outputs <a href="https://arxiv.org/abs/2607.10476">[5]</a>. Cost analysis of frontier models sheds light on operational realities, giving stakeholders concrete data for decisions about resource allocation and deployment <a href="https://playcode.io/blog/real-price-of-frontier-models">[6]</a>.</p>
-<p>Also this week: three new models join the section, including Soofi S 30B-A3B with long-context handling for German and English, and Index SLM’s multilingual variants. Six recent studies investigate research methods and performance assessment, covering areas from memory-efficient inference to benchmarking long-context reasoning.</p>
+<p>A major vulnerability has emerged involving large language model safety bypasses, with researchers calling for greater transparency and slower deployment after identifying systemic weaknesses across the leading models <a href="https://spectrum.ieee.org/jailbreaking-llms">[3]</a>. At the same time, SpaceXAI’s Grok programming tool attracted concern after it was found uploading users’ entire codebase to cloud storage without permission, prompting the company to disable the feature <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">[1]</a>. Discussions about oversight intensified, as Google DeepMind’s CEO publicly advocated for a global AI regulatory body led by the US to address frontier model safety and coordination <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[4]</a>. On the technical front, quantization was shown to silently shift reasoning patterns in large models, suggesting that accuracy alone may not capture all reliability risks <a href="https://arxiv.org/abs/2607.09999">[7]</a>.</p>
+<p>Also this week: the section includes eight new model releases and five papers on assessment, along with analysis of real costs of frontier models. Current items cover safety and reliability, industry policy, and benchmarks such as WILDTRACE for evidence-based long-context reasoning.</p>
 <p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">SpaceXAI’s Grok programming tool was uploading its users’ entire codebase to cloud storage</a>
+    <p class="news-card-summary">SpaceX&#x27;s Grok Build tool was found uploading entire user codebases to cloud storage without permission before the company disabled the feature.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK262_GROK_B_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://prismml.com/news/bonsai-27b">Bonsai 27B: A 27B-Class model that runs on a phone</a>
     <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model designed to run efficiently on mobile phones.</p>
   </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/jailbreaking-llms">How I Turned AI to the Dark Side</a>
+    <p class="news-card-summary">Researcher identified systemic vulnerabilities allowing bypass of LLM safety measures across major models, calling for slower deployment and increased transparency.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/glossy-red-robot-devil-standing-on-a-bundle-of-dynamite-against-blue-glow-background.png?id=67154492&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">Google’s Demis Hassabis says it’s time for a global AI watchdog, led by the US</a>
+    <p class="news-card-summary">Google DeepMind CEO proposes creation of a global AI regulatory body led by the US to oversee frontier model safety.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/gettyimages-2194484502.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium">New York becomes the first state to enact a data center moratorium</a>
+    <p class="news-card-summary">New York becomes the first state to enact a moratorium on new hyperscale data center permits for up to one year.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -98,35 +130,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09424">A Sovereign, Open-Source Foundation Model for German and English</a>
     <p class="news-card-summary">Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.08780">Sticky Routing: Training MoE Models for Memory-Efficient Inference</a>
-    <p class="news-card-summary">Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uu8d1v/xiaomi_quietly_uploaded_mimov25dflash_official">Xiaomi quietly uploaded MiMo-V2.5-DFlash, official DFlash weights are now on Hugging Face</a>
-    <p class="news-card-summary">Xiaomi released open-weight MiMo-V2.5-DFlash model on Hugging Face, a 300-billion-parameter model optimized for local inference on consumer hardware.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants">2.5x faster Qwen3.6 NVFP4 Unsloth quants</a>
-    <p class="news-card-summary">Unsloth released 2.5x faster quantized inference for Qwen 3.6 using 4-bit tensor cores with FP8 key-value cache support.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/yoxm16aijech1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=68cb2bb669bbaee024fb2f7d1cb9aa832e4530de" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 10, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.07779">From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier</a>
-    <p class="news-card-summary">Preprint study examines large language models for advancing formal mathematics at the research frontier beyond well-defined problems, using interactive theorem proving.</p>
   </div>
 </div>
 </div>
