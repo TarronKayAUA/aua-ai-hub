@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new evaluation of language model systems for breast cancer treatment recommendations scrutinizes the reliability and safety of these AI-driven decision support tools in oncology, drawing attention to both clinical promise and essential safeguards <a href="https://arxiv.org/abs/2607.12051">[3]</a>. The emergence of interpretable agentic systems with localized reasoning in radiology further highlights the ongoing push for transparency in AI-assisted diagnostics <a href="https://www.nature.com/articles/s41746-026-02994-8">[7]</a>. At the same time, systematic reviews reveal critical strengths and gaps in chatbot applications for cancer genetic risk assessment and counseling, as well as broader fairness and interpretability challenges facing clinical decision support platforms <a href="https://ai.jmir.org/2026/1/e76400">[1]</a> <a href="https://www.nature.com/articles/s41746-026-02953-3">[5]</a> <a href="https://www.nature.com/articles/s41746-026-03000-x">[13]</a>. Developments in both explainable and multimodal AI are shaping the landscape for how clinical information is generated, made accessible, and evaluated for use by medical practitioners and researchers.</p>
-<p>Also this week: eight studies address clinical decision support, six focus on safety or evaluation, and coverage includes new machine learning models for treatment response in ovarian cancer and risk prediction after coronary intervention. One new peer-reviewed report presents an AI-enabled workflow for radiology.</p>
-<p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
+<p>A new evaluation of Chinese medical large language models has mapped out critical performance gaps and paths for optimization, adding to the understanding of how these tools can be safely deployed in clinical practice <a href="https://ai.jmir.org/2026/1/e86864">[1]</a>. In parallel, efforts to assess the reliability of language model-driven cancer treatment recommendation systems continue to highlight safety and clinical validity as central concerns when artificial intelligence is used to support oncological decision making <a href="https://arxiv.org/abs/2607.12051">[4]</a>. Research into the effectiveness of human-AI collaborative consultation also underscores the importance of considering information ecology in shaping optimal workflows and outcomes within online health communities <a href="https://medinform.jmir.org/2026/1/e90611">[3]</a>. Reviews addressing how chatbots assess cancer genetic risk and how fairness is managed in multimodal machine learning for clinical decision support illustrate ongoing attention to both evaluation metrics and ethical considerations in clinical AI <a href="https://ai.jmir.org/2026/1/e76400">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03000-x">[14]</a>.</p>
+<p>Also this week: Seven new studies address safety and evaluation across model types. One peer-reviewed paper presents an interpretable AI system for radiology; another examines explainable models for long-term cognitive risk in a rural population. Analysis of clinical investigation landscapes in South Korea is now included.</p>
+<p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e86864">Performance Gaps and Optimization Strategies in Chinese Medical Large Language Models Based on MedBench: Evaluation Study</a>
+    <p class="news-card-summary">Study evaluates Chinese medical language models on a benchmark dataset, identifying performance gaps and optimization strategies for clinical deployment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02977-9">Transformer-DAPT: AI-based dynamic assessment of ischemic and bleeding risks in patients on DAPT following PCI</a>
     <p class="news-card-summary">Peer-reviewed study describes a transformer-based model for predicting ischemic and bleeding risks in patients receiving dual antiplatelet therapy after coronary intervention.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03001-w">Multimodal AI for predicting comorbid REM sleep behavior disorder in major depressive disorder</a>
-    <p class="news-card-summary">Peer-reviewed study uses multimodal AI to predict comorbid REM sleep behavior disorder in patients with major depressive disorder.</p>
   </div>
 </div>
 </div>

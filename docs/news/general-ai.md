@@ -13,14 +13,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI has introduced an adversarial language model called GPT-Red, which was developed to actively probe for cybersecurity vulnerabilities in its own systems and strengthen the security of GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[1]</a>. Meanwhile, a recent demonstration revealed a significant data exfiltration flaw in Claude&#x27;s web-fetch tool, underscoring the critical importance of secure tool design for agent integration <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[3]</a>. Concerns regarding fundamental model reliability continue, as research has identified systemic vulnerabilities that enable bypassing safety measures across widely used language models; these findings have prompted calls for more transparent practices and slower deployment cycles <a href="https://spectrum.ieee.org/jailbreaking-llms">[8]</a>. In efforts to evaluate model performance, a new leaderboard is ranking language models based on both human preference and factual accuracy, addressing ongoing challenges with proper assessment <a href="https://arena.ai/blog/factuality-in-arena">[2]</a>.</p>
-<p>Also this week: there are six articles focused on various safety and reliability aspects, two releases of new models including Bonsai 27B, a large model optimized for phones, and the Index SLM series. Policy perspectives feature proposals for a global AI regulatory body and updates to data center regulation, while technical research includes studies on quantization failures in LLM reasoning.</p>
-<p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the items below.</p>
+<p>OpenAI’s deployment of GPT-Red marks a notable step in testing and strengthening model safety, using an adversarial system to identify and mitigate cybersecurity vulnerabilities before wider release <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[2]</a>. Factual accuracy receives renewed focus with the launch of a leaderboard that ranks models by both human preference and real-world correctness, helping address the longstanding challenge of reliable evaluation <a href="https://arena.ai/blog/factuality-in-arena">[3]</a>. Meanwhile, concerns around data privacy and tool integration are highlighted by a demonstration of data exfiltration risks in Claude’s web-fetch functionality <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[4]</a>. Industry attention also turns to the regulatory landscape, as Google DeepMind’s CEO proposes a new global AI watchdog to oversee frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[10]</a>.</p>
+<p>Also this week: two new models are released, including Inkling, an open-weights language model with 975 billion parameters, and Bonsai 27B, which can run on mobile devices. Five items address safety and reliability, alongside policy analysis and a benchmark for model evaluation.</p>
+<p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uxfu4k/google_is_updating_gemma_4s_chat_templates">Google is updating Gemma 4&#x27;s chat templates, bringing major fixes to tool calling and reducing &quot;laziness&quot;, and enabling Flash Attention 4 on Hopper GPUs, plus an interactive guide on how to work with and improve its vision!</a>
+    <p class="news-card-summary">Google updates Gemma 4 with fixes to tool calling, reduced latency, and Flash Attention 4 support on Hopper GPUs.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/9j0dofv61gdh1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=297238a83604eb277cd8f270d08df7e91d8b721b" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 15, 2026</span></div>
+    <a class="news-card-title" href="https://thinkingmachines.ai/news/introducing-inkling">Inkling: Our Open-Weights Model</a>
+    <p class="news-card-summary">Thinking Machines releases Inkling, an open-weights 975-billion-parameter language model.</p>
+  </div>
+  <img class="news-card-thumb" src="https://thinkingmachines.ai/news/introducing-inkling/images/cover-social-inkling-post.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
@@ -120,19 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">New York becomes the first state to enact a moratorium on new hyperscale data center permits for up to one year.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09885">Index SLM Technical Report</a>
-    <p class="news-card-summary">Index-1.9B open small language model series from Bilibili includes base, pure, and instruction-tuned variants trained on 2.8 trillion Chinese and English tokens.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09999">Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts</a>
-    <p class="news-card-summary">Study shows quantization can silently alter language model reasoning patterns even when task accuracy remains unchanged, using validated taxonomy of reasoning failures.</p>
-  </div>
 </div>
 </div>

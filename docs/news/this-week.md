@@ -313,15 +313,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new evaluation of language model systems for breast cancer treatment recommendations scrutinizes the reliability and safety of these AI-driven decision support tools in oncology, drawing attention to both clinical promise and essential safeguards <a href="https://arxiv.org/abs/2607.12051">[3]</a>. The emergence of interpretable agentic systems with localized reasoning in radiology further highlights the ongoing push for transparency in AI-assisted diagnostics <a href="https://www.nature.com/articles/s41746-026-02994-8">[7]</a>. At the same time, systematic reviews reveal critical strengths and gaps in chatbot applications for cancer genetic risk assessment and counseling, as well as broader fairness and interpretability challenges facing clinical decision support platforms <a href="https://ai.jmir.org/2026/1/e76400">[1]</a> <a href="https://www.nature.com/articles/s41746-026-02953-3">[5]</a> <a href="https://www.nature.com/articles/s41746-026-03000-x">[13]</a>. Developments in both explainable and multimodal AI are shaping the landscape for how clinical information is generated, made accessible, and evaluated for use by medical practitioners and researchers.</p>
-<p>Also this week: eight studies address clinical decision support, six focus on safety or evaluation, and coverage includes new machine learning models for treatment response in ovarian cancer and risk prediction after coronary intervention. One new peer-reviewed report presents an AI-enabled workflow for radiology.</p>
-<p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
+<p>A new evaluation of Chinese medical large language models has mapped out critical performance gaps and paths for optimization, adding to the understanding of how these tools can be safely deployed in clinical practice <a href="https://ai.jmir.org/2026/1/e86864">[1]</a>. In parallel, efforts to assess the reliability of language model-driven cancer treatment recommendation systems continue to highlight safety and clinical validity as central concerns when artificial intelligence is used to support oncological decision making <a href="https://arxiv.org/abs/2607.12051">[4]</a>. Research into the effectiveness of human-AI collaborative consultation also underscores the importance of considering information ecology in shaping optimal workflows and outcomes within online health communities <a href="https://medinform.jmir.org/2026/1/e90611">[3]</a>. Reviews addressing how chatbots assess cancer genetic risk and how fairness is managed in multimodal machine learning for clinical decision support illustrate ongoing attention to both evaluation metrics and ethical considerations in clinical AI <a href="https://ai.jmir.org/2026/1/e76400">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03000-x">[14]</a>.</p>
+<p>Also this week: Seven new studies address safety and evaluation across model types. One peer-reviewed paper presents an interpretable AI system for radiology; another examines explainable models for long-term cognitive risk in a rural population. Analysis of clinical investigation landscapes in South Korea is now included.</p>
+<p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 53 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e86864">Performance Gaps and Optimization Strategies in Chinese Medical Large Language Models Based on MedBench: Evaluation Study</a>
+        <p class="news-card-summary">Study evaluates Chinese medical language models on a benchmark dataset, identifying performance gaps and optimization strategies for clinical deployment.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
@@ -674,41 +681,36 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Published study describes an AI system for predicting treatment effects and clinical decision-making in retinal vein occlusion.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84804">AI-Assisted Detection of Supraspinatus Tendon Pathologies Using a Hierarchical Deep Learning Model to Improve Clinical Applicability: Development and Evaluation Study</a>
-        <p class="news-card-summary">A hierarchical deep learning model classifies supraspinatus tendon pathologies on MRI to improve diagnostic consistency in musculoskeletal imaging workflows.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02937-3">Injury prediction in elite women’s football: an integrative machine learning-based decision-support framework</a>
-        <p class="news-card-summary">A machine learning framework predicts injury risk in elite women&#x27;s football players, supporting clinical decision-making.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02969-9">Prediction of incident atrial fibrillation from retinal fundus images using a multimodal foundation model</a>
-        <p class="news-card-summary">A multimodal foundation model predicts incident atrial fibrillation from retinal fundus images.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI has introduced an adversarial language model called GPT-Red, which was developed to actively probe for cybersecurity vulnerabilities in its own systems and strengthen the security of GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[1]</a>. Meanwhile, a recent demonstration revealed a significant data exfiltration flaw in Claude&#x27;s web-fetch tool, underscoring the critical importance of secure tool design for agent integration <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[3]</a>. Concerns regarding fundamental model reliability continue, as research has identified systemic vulnerabilities that enable bypassing safety measures across widely used language models; these findings have prompted calls for more transparent practices and slower deployment cycles <a href="https://spectrum.ieee.org/jailbreaking-llms">[8]</a>. In efforts to evaluate model performance, a new leaderboard is ranking language models based on both human preference and factual accuracy, addressing ongoing challenges with proper assessment <a href="https://arena.ai/blog/factuality-in-arena">[2]</a>.</p>
-<p>Also this week: there are six articles focused on various safety and reliability aspects, two releases of new models including Bonsai 27B, a large model optimized for phones, and the Index SLM series. Policy perspectives feature proposals for a global AI regulatory body and updates to data center regulation, while technical research includes studies on quantization failures in LLM reasoning.</p>
-<p class="section-brief-date">The picture as of July 15, 2026; numbered links go to the source items.</p>
+<p>OpenAI’s deployment of GPT-Red marks a notable step in testing and strengthening model safety, using an adversarial system to identify and mitigate cybersecurity vulnerabilities before wider release <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[2]</a>. Factual accuracy receives renewed focus with the launch of a leaderboard that ranks models by both human preference and real-world correctness, helping address the longstanding challenge of reliable evaluation <a href="https://arena.ai/blog/factuality-in-arena">[3]</a>. Meanwhile, concerns around data privacy and tool integration are highlighted by a demonstration of data exfiltration risks in Claude’s web-fetch functionality <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[4]</a>. Industry attention also turns to the regulatory landscape, as Google DeepMind’s CEO proposes a new global AI watchdog to oversee frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[10]</a>.</p>
+<p>Also this week: two new models are released, including Inkling, an open-weights language model with 975 billion parameters, and Bonsai 27B, which can run on mobile devices. Five items address safety and reliability, alongside policy analysis and a benchmark for model evaluation.</p>
+<p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uxfu4k/google_is_updating_gemma_4s_chat_templates">Google is updating Gemma 4&#x27;s chat templates, bringing major fixes to tool calling and reducing &quot;laziness&quot;, and enabling Flash Attention 4 on Hopper GPUs, plus an interactive guide on how to work with and improve its vision!</a>
+        <p class="news-card-summary">Google updates Gemma 4 with fixes to tool calling, reduced latency, and Flash Attention 4 support on Hopper GPUs.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/9j0dofv61gdh1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=297238a83604eb277cd8f270d08df7e91d8b721b" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 15, 2026</span></div>
+        <a class="news-card-title" href="https://thinkingmachines.ai/news/introducing-inkling">Inkling: Our Open-Weights Model</a>
+        <p class="news-card-summary">Thinking Machines releases Inkling, an open-weights 975-billion-parameter language model.</p>
+      </div>
+      <img class="news-card-thumb" src="https://thinkingmachines.ai/news/introducing-inkling/images/cover-social-inkling-post.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
@@ -962,13 +964,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Retrieval-augmented generation mitigates hallucinations and outdated knowledge in language models for public health question answering by grounding responses in maintained guidance documents.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/8/introducing-gptlive">Introducing GPT‑Live</a>
-        <p class="news-card-summary">OpenAI upgraded ChatGPT&#x27;s voice mode model and added delegation to GPT-4o for tasks requiring web search or complex reasoning.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="other">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 8, 2026</span></div>
@@ -1003,7 +998,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 24 videos"
+??? abstract "Show the 23 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=avpZWh6sm9M" target="_blank" rel="noopener" title="Improved Intelligence with GPT-Live">
@@ -1143,12 +1138,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production</span>
       <span class="video-card-meta">IBM Technology, July 9, 2026</span>
       <span class="video-card-desc">Overview of agentic AI frameworks, covering workflow design, multi-agent systems, and production deployment considerations.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=9f-Ew_lDtxc" target="_blank" rel="noopener">
-      <img src="https://i2.ytimg.com/vi/9f-Ew_lDtxc/hqdefault.jpg" alt="Video: The next generation of ChatGPT Voice" loading="lazy">
-      <span class="video-card-title">The next generation of ChatGPT Voice</span>
-      <span class="video-card-meta">OpenAI, July 8, 2026</span>
-      <span class="video-card-desc">OpenAI engineers demonstrate the next generation of ChatGPT voice models with live demonstrations of capabilities and features.</span>
     </a>
     </div>
 
