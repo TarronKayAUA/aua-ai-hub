@@ -13,6 +13,17 @@ A directory of artificial intelligence (AI) tools relevant to teaching, learning
 
 Whatever a tool's status, two rules always apply: never enter protected health information (PHI), and never enter student records covered by the Family Educational Rights and Privacy Act (FERPA). See [PHI and FERPA considerations](../basics/glossary.md#phi-and-ferpa-considerations) in the glossary.
 
+## Not sure where to start?
+
+The directory catalogs; the guides recommend. Route by what you need:
+
+- **A general assistant for questions and drafting**: browse [Assistants](#assistants), and [Choosing Your Interface](interfaces.md) explains which kind of tool fits which work.
+- **Study tools**: [Medical Learning](#medical-learning), with the study workflow routed on the [students page](../students.md).
+- **Literature and research**: [AI for Research](research.md) maps tools to each stage of a project, the licensed library tools first.
+- **Slides, posters, and diagrams**: [Presentations and Design](#presentations-and-design).
+- **Keeping data on your own machine**: [Local Models](#local-models), with [Running Models Locally](local.md) as the walkthrough.
+- **A task walked end to end, guardrails included**: the [playbooks](../playbooks/index.md).
+
 <!-- render:tools -->
 
 ---

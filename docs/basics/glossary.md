@@ -30,7 +30,7 @@ Systematic skew in model behavior, usually inherited from training data. In medi
 
 #### Chain of thought
 
-A model's written step-by-step reasoning before its final answer. Asking a model to work step by step often improves accuracy on multi-step problems.
+A model's written step-by-step reasoning before its final answer. Asking a model to work step by step often improves accuracy on multi-step problems. When your goal is to check the work, ask for its assumptions, evidence, and a checkable explanation rather than its private reasoning, which current models may summarize or withhold.
 
 #### Context window
 

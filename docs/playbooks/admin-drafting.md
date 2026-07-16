@@ -65,7 +65,7 @@ The second hazard is voice. Administrative documents signed by you should sound 
 
 ## Guardrails for this task
 
-- Minutes of confidential sessions (personnel, individual student matters, legal consultations) are drafted without AI assistance, full stop.
+- Minutes of confidential sessions (personnel, individual student matters, legal consultations) are drafted without AI assistance, full stop. If the institution ever vets and approves a system for that class of data, this line changes with the policy; no public tool qualifies today.
 - A drafted commitment is a real commitment: dates and promises in AI-arranged prose bind you exactly as if you had typed them, so verify them, not just the spelling.
 - Colleagues named in a document have not consented to being described to an AI tool; keep characterizations of identifiable people out of prompts.
 - An AI-assisted document that becomes an official record is subject to every records practice the manual version would be; assistance changes the drafting, not the document's status.

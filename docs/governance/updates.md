@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-15
+---
+
 # Committee Updates
 
 What the [AI Committee](committee.md) is working on, and its announcements to the AUACOM community. The projects list below is maintained by the committee chair; the updates feed mirrors the committee's posts nightly.

@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-15
+---
+
 # Playbooks
 
 --8<-- "includes/prompt-maturity-note.md"

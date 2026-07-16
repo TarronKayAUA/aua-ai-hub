@@ -1,5 +1,7 @@
 # How Tools Are Reviewed
 
+**A working draft, published for transparency and comment ahead of AI Committee ratification.**
+
 The [tools directory](../tools/index.md) gives every entry a status describing the institution's relationship with the tool. Most entries are Listed, which is a catalog fact rather than a review outcome: the tool is relevant and live, and nothing more is claimed. This page describes the rubric applied when a tool is actually reviewed, so that process is visible rather than implied. Reviews are request-driven: a tool is examined when someone at the American University of Antigua College of Medicine (AUACOM) needs a decision about it, not on a rolling schedule across the whole directory.
 
 !!! warning "Provisional"

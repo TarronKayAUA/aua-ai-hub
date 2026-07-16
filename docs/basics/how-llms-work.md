@@ -25,7 +25,7 @@ The second stage shapes that raw predictor into a useful assistant. Companies fi
 <defs><marker id="ar1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
 <rect x="10" y="40" width="180" height="70" rx="8" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-primary-fg-color)"/>
 <text x="100" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="var(--md-typeset-color)">Pretraining</text>
-<text x="100" y="88" text-anchor="middle" font-size="11" fill="var(--md-typeset-color)">predicts hidden words across</text>
+<text x="100" y="88" text-anchor="middle" font-size="11" fill="var(--md-typeset-color)">predicts the next word across</text>
 <text x="100" y="102" text-anchor="middle" font-size="11" fill="var(--md-typeset-color)">trillions of words of text</text>
 <line x1="190" y1="75" x2="230" y2="75" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ar1)"/>
 <rect x="235" y="40" width="180" height="70" rx="8" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-primary-fg-color)"/>
@@ -102,7 +102,7 @@ There is also a setting called temperature that controls how predictable the out
 
 The failure mode everyone in medicine needs to understand is hallucination, sometimes called confabulation: the model states something false with complete fluency and confidence. A fabricated citation with a plausible journal name, real author names, and a fake page range is the classic example.
 
-Hallucination is not a glitch. It follows directly from how the model works. The model produces text that is statistically plausible given its training. Most of the time, plausible and true coincide. But when the model lacks the specific fact you need, it does not return an error message. It produces the most plausible-sounding continuation anyway, because generating plausible text is the only thing it does. The model has no internal flag that distinguishes remembering from inventing.
+Hallucination is not a glitch. It follows directly from how the model works. The model produces text that is statistically plausible given its training. Most of the time, plausible and true coincide. But when the model lacks the specific fact you need, it does not return an error message. It produces the most plausible-sounding continuation anyway, because generating plausible text is the only thing it does. The model has no reliable signal it can surface that distinguishes remembering from inventing.
 
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of why hallucination happens">

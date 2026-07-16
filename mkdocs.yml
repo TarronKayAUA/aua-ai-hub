@@ -145,3 +145,4 @@ nav:
   - About:
       - about.md
       - Announcements: announcements/index.md
+      - Accessibility: accessibility.md

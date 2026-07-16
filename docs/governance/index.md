@@ -1,3 +1,7 @@
+---
+last_reviewed: 2026-07-15
+---
+
 # Governance
 
 How the American University of Antigua College of Medicine (AUACOM) governs artificial intelligence (AI) use: a published policy, a standing committee, and a request-driven tool review process. This page is the map.
