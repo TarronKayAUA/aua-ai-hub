@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Systemic challenges to incorporating artificial intelligence into medical curricula continue to emerge, with recent work detailing how entrenched barriers slow rapid adaptation of educational materials in response to new technologies <a href="https://mededu.jmir.org/2026/1/e96244">[5]</a>. Several studies investigate how both faculty and students perceive and approach AI in medical learning: surveys highlight variable knowledge and attitudes among nursing students, especially those from vocational and disadvantaged backgrounds <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[1]</a>, and show that prior radiology training strongly shapes dental professionals’ views on AI’s role in their field <a href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[8]</a>. Meanwhile, new digital and AI-assisted teaching methods are being tested for both skills and communication training, including remote neurological exam instruction <a href="https://mededu.jmir.org/2026/1/e77034">[4]</a> and simulation-based diagnostic scenarios with improved outcomes in diabetes, obesity, and cancer education <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[9]</a>.</p>
-<p>Also this week: eight new model releases, five papers on assessment, and studies on curriculum adaptation and feedback. Featured items include data on students’ adoption of an AI-powered OSCE exam platform, and faculty perspectives on AI integration in family medicine.</p>
+<p>AI-driven educational tools continue to reshape how medical students and faculty approach both foundational and clinical knowledge. Recent comparative research highlights notable improvements in knowledge retention and reduced cognitive load when generative AI-powered game-based instruction is used for emergency medical response training <a href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[4]</a>. Studies on anatomy illustrate strong student perception of AI tool effectiveness, especially concerning question quality and content validity <a href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[3]</a>, but also flag reliability concerns in reference and citation accuracy from large language models <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[10]</a>. Adoption patterns among medical students depend on study context and uncertainty, with selective reliance on AI in nephrology education <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[2]</a>. Meanwhile, systemic barriers to curriculum adaptation, such as digitalization in medicine, suggest ongoing challenges for academic integration of AI technologies <a href="https://mededu.jmir.org/2026/1/e96244">[9]</a>.</p>
+<p>Also this week: survey-based research documents variable student and faculty attitudes toward AI in clinical fields and dentistry, with training and experience strongly impacting viewpoints. The section includes seven teaching and curriculum developments, two simulation studies, and practical models such as an AI-powered oral exam template.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -26,6 +26,34 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">Knowledge, attitudes, practices and ethics related to artificial intelligence among nursing students: a national cross-sectional survey in China</a>
     <p class="news-card-summary">Survey of nursing students in China found variable knowledge and attitudes toward AI use, with educational gaps particularly acute among vocational and socioeconomically disadvantaged students.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Medical student reliance on artificial intelligence in nephrology education</a>
+    <p class="news-card-summary">Medical students in nephrology selectively relied on AI recommendations when uncertain or studying foundational material, indicating context-dependent adoption patterns.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">The Perceived Effectiveness of AI-Powered Tools in Undergraduate Anatomy Education: A Cross-Sectional Multifaceted Evaluation</a>
+    <p class="news-card-summary">A cross-sectional study evaluated student-perceived effectiveness of AI-powered tools in undergraduate anatomy education, assessing content validity and question quality.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Enhancing Emergency Medical Response Education through Generative AI-Powered Game-Based Learning: A Retrospective Comparative Study</a>
+    <p class="news-card-summary">AI-enhanced game-based learning for emergency medical response training improved knowledge retention and reduced cognitive load compared to standard approaches.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Simulator development using natural language: clinician-led innovation through artificial intelligence</a>
+    <p class="news-card-summary">Natural language-driven development enables clinicians without programming expertise to create authentic educational simulation tools while maintaining need for technical oversight.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -97,34 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03024-3">Naturalistic adoption and deliberate practice use of an AI-based OSCE platform during national licensure preparation</a>
     <p class="news-card-summary">A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92420">A National Exploration of Medical Students’ Views Surrounding Skin Color Terminology in Undergraduate Education</a>
-    <p class="news-card-summary">Study examines UK medical students&#x27; preferences for skin color terminology in medical education to support more inclusive clinical language.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88695">AI-Generated Microlearning for Plastic Surgery Residency: Single-Arm Pre-Post Feasibility Study</a>
-    <p class="news-card-summary">A feasibility study evaluates AI-generated microlearning modules for plastic surgery residency training, assessing whether language models can support brief, focused education within fragmented clinical schedules.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">Medical students&#x27; attitudes, usage patterns, and associated factors with DeepSeek adoption in education: a cross-sectional study in China</a>
-    <p class="news-card-summary">Cross-sectional survey of Chinese medical students found 94.8% willing to use DeepSeek for education but expressed caution about privacy, reliability, and dependency.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">AI-Augmented Mentorship in Orthopedic Surgery: A Conceptual Framework for Expanding Access for Underrepresented and Less-Resourced Students</a>
-    <p class="news-card-summary">A conceptual framework proposes AI-augmented mentorship to expand access to orthopedic surgery training for underrepresented students and trainees from lower-resourced institutions.</p>
   </div>
 </div>
 </div>

@@ -18324,6 +18324,168 @@
    "first_seen": "2026-07-16T10:21:44.179582+00:00",
    "kept": false,
    "reason": "vendor marketing for a design tool, not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/16/linus-torvalds",
+   "title_hash": "889b1e14b0c2768cd77bf7ed72589597",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; commentary on Linux kernel development philosophy"
+  },
+  {
+   "url": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
+   "title_hash": "0e3cfe3cec4b4421d598ecf1ca81b83d",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company; feature announcement for Claude integration"
+  },
+  {
+   "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+   "title_hash": "773e3d7aadefa0b612f8502d8d47919d",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": true,
+   "title": "Google ordered to open Android and Search to rivals in Europe",
+   "source": "The Verge AI",
+   "published": "2026-07-16T12:06:51+00:00",
+   "summary": "European Union antitrust ruling requires Google to grant rival AI assistants and search engines greater access to Android and Google Search platforms.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STK450_EU_E-2-1.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://spectrum.ieee.org/fishery-satellite-surveillance",
+   "title_hash": "01074680fa2a0088ee6a5bab8c8a5cad",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; fishery surveillance application unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
+   "title_hash": "e07886951e963c7b7bc6a8159d6c6386",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "insufficient content; summary empty"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/965066/ai-police-cops",
+   "title_hash": "ff8d91b19fce9d64f5a3afcd2f07fb79",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; policing and surveillance essay unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&ff=20260716102519&v=2.20.0",
+   "title_hash": "cb3ec101863a50238ef98b8a73c9cacc",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": true,
+   "title": "Medical student reliance on artificial intelligence in nephrology education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-16T10:00:00+00:00",
+   "summary": "Medical students in nephrology selectively relied on AI recommendations when uncertain or studying foundational material, indicating context-dependent adoption patterns.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&ff=20260716102519&v=2.20.0",
+   "title_hash": "97c41f3694378870ebb03bd8a83b2b56",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": true,
+   "title": "The Perceived Effectiveness of AI-Powered Tools in Undergraduate Anatomy Education: A Cross-Sectional Multifaceted Evaluation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-16T10:00:00+00:00",
+   "summary": "A cross-sectional study evaluated student-perceived effectiveness of AI-powered tools in undergraduate anatomy education, assessing content validity and question quality.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42458863?fc=20260609215449&ff=20260716102519&v=2.20.0",
+   "title_hash": "6f850803bb7c0fc5fcb1ff17fe5c8cb3",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "no abstract or substantive summary provided; cannot assess content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&ff=20260716102519&v=2.20.0",
+   "title_hash": "373da45a3de3aae2a18e03bec8a89aa6",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": true,
+   "title": "Enhancing Emergency Medical Response Education through Generative AI-Powered Game-Based Learning: A Retrospective Comparative Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-16T10:00:00+00:00",
+   "summary": "AI-enhanced game-based learning for emergency medical response training improved knowledge retention and reduced cognitive load compared to standard approaches.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&ff=20260716102519&v=2.20.0",
+   "title_hash": "dc367129c90034539beabe73a211ce29",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": true,
+   "title": "Simulator development using natural language: clinician-led innovation through artificial intelligence",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-16T10:00:00+00:00",
+   "summary": "Natural language-driven development enables clinicians without programming expertise to create authentic educational simulation tools while maintaining need for technical oversight.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02990-y",
+   "title_hash": "3fe688eaedfacb5d308b2419c4a2ddcd",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": true,
+   "title": "Transparent chest radiograph foundation model enables explainable human disease profiling",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-16T00:00:00+00:00",
+   "summary": "A transparent foundation model for chest radiograph analysis enables explainable disease profiling, combining diagnostic capability with interpretability.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03015-4",
+   "title_hash": "f15e90a1a4b074fdfc65834879dd5e82",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": true,
+   "title": "Artificial intelligence in deep brain stimulation for movement disorders: a systematic review and technology readiness assessment",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-16T00:00:00+00:00",
+   "summary": "A systematic review and technology readiness assessment examined artificial intelligence applications in deep brain stimulation for movement disorders.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00036-0",
+   "title_hash": "7244ccbda00431b190486930052f3ac1",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; malaria vaccine research unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://huggingface.co/blog/security-incident-july-2026",
+   "title_hash": "c02f71df3977140a626cb136f3229385",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "insufficient content; summary empty"
+  },
+  {
+   "url": "https://davidobando.github.io/gsharp",
+   "title_hash": "0e4730385b69f562840f9691825f1d03",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; programming language release unrelated to AI in medicine or medical education"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=3G6AVkp4Rf0",
+   "title_hash": "1382a030985bc0e4a3b071d0bafad00e",
+   "first_seen": "2026-07-16T14:25:19.176457+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
@@ -18453,8 +18615,8 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Systemic challenges to incorporating artificial intelligence into medical curricula continue to emerge, with recent work detailing how entrenched barriers slow rapid adaptation of educational materials in response to new technologies <a href=\"https://mededu.jmir.org/2026/1/e96244\">[5]</a>. Several studies investigate how both faculty and students perceive and approach AI in medical learning: surveys highlight variable knowledge and attitudes among nursing students, especially those from vocational and disadvantaged backgrounds <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0\">[1]</a>, and show that prior radiology training strongly shapes dental professionals’ views on AI’s role in their field <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[8]</a>. Meanwhile, new digital and AI-assisted teaching methods are being tested for both skills and communication training, including remote neurological exam instruction <a href=\"https://mededu.jmir.org/2026/1/e77034\">[4]</a> and simulation-based diagnostic scenarios with improved outcomes in diabetes, obesity, and cancer education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[9]</a>.\n\nAlso this week: eight new model releases, five papers on assessment, and studies on curriculum adaptation and feedback. Featured items include data on students’ adoption of an AI-powered OSCE exam platform, and faculty perspectives on AI integration in family medicine.",
-   "hash": "0e50489b0cef1c51",
+   "text": "AI-driven educational tools continue to reshape how medical students and faculty approach both foundational and clinical knowledge. Recent comparative research highlights notable improvements in knowledge retention and reduced cognitive load when generative AI-powered game-based instruction is used for emergency medical response training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[4]</a>. Studies on anatomy illustrate strong student perception of AI tool effectiveness, especially concerning question quality and content validity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[3]</a>, but also flag reliability concerns in reference and citation accuracy from large language models <a href=\"https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[10]</a>. Adoption patterns among medical students depend on study context and uncertainty, with selective reliance on AI in nephrology education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[2]</a>. Meanwhile, systemic barriers to curriculum adaptation, such as digitalization in medicine, suggest ongoing challenges for academic integration of AI technologies <a href=\"https://mededu.jmir.org/2026/1/e96244\">[9]</a>.\n\nAlso this week: survey-based research documents variable student and faculty attitudes toward AI in clinical fields and dentistry, with training and experience strongly impacting viewpoints. The section includes seven teaching and curriculum developments, two simulation studies, and practical models such as an AI-powered oral exam template.",
+   "hash": "5fccaf66195e92c2",
    "date": "July 16, 2026"
   },
   "clinical_practice": {
@@ -18463,8 +18625,8 @@
    "date": "July 16, 2026"
   },
   "general_ai": {
-   "text": "OpenAI’s deployment of GPT-Red marks a notable step in testing and strengthening model safety, using an adversarial system to identify and mitigate cybersecurity vulnerabilities before wider release <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[2]</a>. Factual accuracy receives renewed focus with the launch of a leaderboard that ranks models by both human preference and real-world correctness, helping address the longstanding challenge of reliable evaluation <a href=\"https://arena.ai/blog/factuality-in-arena\">[3]</a>. Meanwhile, concerns around data privacy and tool integration are highlighted by a demonstration of data exfiltration risks in Claude’s web-fetch functionality <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[4]</a>. Industry attention also turns to the regulatory landscape, as Google DeepMind’s CEO proposes a new global AI watchdog to oversee frontier model safety <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[10]</a>.\n\nAlso this week: two new models are released, including Inkling, an open-weights language model with 975 billion parameters, and Bonsai 27B, which can run on mobile devices. Five items address safety and reliability, alongside policy analysis and a benchmark for model evaluation.",
-   "hash": "1ec7251b3103d51e",
+   "text": "OpenAI’s approach to improving model safety has advanced with GPT-Red, an adversarial language model engineered to identify cybersecurity vulnerabilities in OpenAI’s systems. Using insights from GPT-Red, OpenAI strengthened GPT-5.6 against attacks, signaling a practical step in addressing model robustness <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[3]</a>. Demonstrations of serious vulnerabilities persist, as shown by a researcher who manipulated Claude’s web-fetch tool to expose sensitive information, underscoring ongoing challenges in agent and tool integration security <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[5]</a>. The industry continues to face calls for regulation, with Google DeepMind’s CEO proposing the establishment of a global AI oversight body led by the US to manage frontier safety risks <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[11]</a>. Meanwhile, recent industry developments include the launch of open-weights large language models designed for research accessibility and efficiency <a href=\"https://thinkingmachines.ai/news/introducing-inkling\">[2]</a>, and new evaluation frameworks that incorporate both human preference and factual accuracy to benchmark model reliability <a href=\"https://arena.ai/blog/factuality-in-arena\">[4]</a>.\n\nAlso this week: there are five new items addressing safety and reliability, two new model releases, and updates in AI evaluation methods and benchmark design. Industry and regulatory topics are covered in two recent analyses, including Google’s required platform access for competing assistants in Europe.",
+   "hash": "317965c677eeba14",
    "date": "July 16, 2026"
   }
  },

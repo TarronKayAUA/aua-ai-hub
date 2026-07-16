@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -40,6 +40,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03005-6">Enhancing out-of-hospital emergency care via lexical machine learning modeling of chief complaints</a>
     <p class="news-card-summary">Machine learning analysis of chief complaint language improves out-of-hospital emergency care triage and response.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02990-y">Transparent chest radiograph foundation model enables explainable human disease profiling</a>
+    <p class="news-card-summary">A transparent foundation model for chest radiograph analysis enables explainable disease profiling, combining diagnostic capability with interpretability.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03015-4">Artificial intelligence in deep brain stimulation for movement disorders: a systematic review and technology readiness assessment</a>
+    <p class="news-card-summary">A systematic review and technology readiness assessment examined artificial intelligence applications in deep brain stimulation for movement disorders.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.09880">CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series</a>
     <p class="news-card-summary">New benchmark evaluates language models on question answering over sparse, irregularly sampled clinical time series data from patient monitoring and risk assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09932">Faithful by Design: Evaluating and Improving LLM-Generated Clinical Trial Summaries for Multi-Stakeholder Audiences</a>
-    <p class="news-card-summary">Study introduces evaluation framework for measuring faithfulness of language model summaries of clinical trial results across healthcare provider, patient, and payer audiences.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02991-x">Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health</a>
-    <p class="news-card-summary">Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.</p>
   </div>
 </div>
 </div>

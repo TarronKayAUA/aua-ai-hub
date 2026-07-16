@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI’s deployment of GPT-Red marks a notable step in testing and strengthening model safety, using an adversarial system to identify and mitigate cybersecurity vulnerabilities before wider release <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[2]</a>. Factual accuracy receives renewed focus with the launch of a leaderboard that ranks models by both human preference and real-world correctness, helping address the longstanding challenge of reliable evaluation <a href="https://arena.ai/blog/factuality-in-arena">[3]</a>. Meanwhile, concerns around data privacy and tool integration are highlighted by a demonstration of data exfiltration risks in Claude’s web-fetch functionality <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[4]</a>. Industry attention also turns to the regulatory landscape, as Google DeepMind’s CEO proposes a new global AI watchdog to oversee frontier model safety <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[10]</a>.</p>
-<p>Also this week: two new models are released, including Inkling, an open-weights language model with 975 billion parameters, and Bonsai 27B, which can run on mobile devices. Five items address safety and reliability, alongside policy analysis and a benchmark for model evaluation.</p>
+<p>OpenAI’s approach to improving model safety has advanced with GPT-Red, an adversarial language model engineered to identify cybersecurity vulnerabilities in OpenAI’s systems. Using insights from GPT-Red, OpenAI strengthened GPT-5.6 against attacks, signaling a practical step in addressing model robustness <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[3]</a>. Demonstrations of serious vulnerabilities persist, as shown by a researcher who manipulated Claude’s web-fetch tool to expose sensitive information, underscoring ongoing challenges in agent and tool integration security <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[5]</a>. The industry continues to face calls for regulation, with Google DeepMind’s CEO proposing the establishment of a global AI oversight body led by the US to manage frontier safety risks <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[11]</a>. Meanwhile, recent industry developments include the launch of open-weights large language models designed for research accessibility and efficiency <a href="https://thinkingmachines.ai/news/introducing-inkling">[2]</a>, and new evaluation frameworks that incorporate both human preference and factual accuracy to benchmark model reliability <a href="https://arena.ai/blog/factuality-in-arena">[4]</a>.</p>
+<p>Also this week: there are five new items addressing safety and reliability, two new model releases, and updates in AI evaluation methods and benchmark design. Industry and regulatory topics are covered in two recent analyses, including Google’s required platform access for competing assistants in Europe.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma">Google ordered to open Android and Search to rivals in Europe</a>
+    <p class="news-card-summary">European Union antitrust ruling requires Google to grant rival AI assistants and search engines greater access to Android and Google Search platforms.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STK450_EU_E-2-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
@@ -128,13 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Google DeepMind CEO proposes creation of a global AI regulatory body led by the US to oversee frontier model safety.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/gettyimages-2194484502.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium">New York becomes the first state to enact a data center moratorium</a>
-    <p class="news-card-summary">New York becomes the first state to enact a moratorium on new hyperscale data center permits for up to one year.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
