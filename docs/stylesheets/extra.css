@@ -123,6 +123,9 @@
   background-color: rgba(255, 255, 255, 0.16);
   border-radius: 1rem;
   padding: 0.15rem 0.7rem;
+  /* Material's fixed .8rem top margin plus the pill padding leaves the pill
+     4px below center of the 2.4rem bar; pull it back to vertical center. */
+  margin-top: 0.6rem;
 }
 .md-tabs__item + .md-tabs__item {
   position: relative;
