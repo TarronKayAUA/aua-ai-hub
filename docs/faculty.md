@@ -49,10 +49,11 @@ If you read nothing else, the literacy pathway's plain-language modules cover th
 
 The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md); the short version:
 
-- Protected health information (PHI) never goes into a public AI tool.
-- Student records covered by the Family Educational Rights and Privacy Act (FERPA), including grades, evaluations, and identifiable student work, never go into a public AI tool.
-- Finalized secure examination items, answer keys, and licensed question-bank content never enter public AI tools; the [exam questions playbook](playbooks/exam-items.md) works entirely on the safe side of that line.
-- Whatever a tool contributed, the work you sign and its errors are yours, and AI-generated teaching material needs expert review before it reaches students.
+!!! danger "Never crossed, whatever the tool"
+    - Protected health information (PHI) never goes into a public AI tool.
+    - Student records covered by the Family Educational Rights and Privacy Act (FERPA), including grades, evaluations, and identifiable student work, never go into a public AI tool.
+    - Finalized secure examination items, answer keys, and licensed question-bank content never enter public AI tools; the [exam questions playbook](playbooks/exam-items.md) works entirely on the safe side of that line.
+    - Whatever a tool contributed, the work you sign and its errors are yours, and AI-generated teaching material needs expert review before it reaches students.
 
 ## Working with AI, by task
 

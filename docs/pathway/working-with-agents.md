@@ -4,7 +4,7 @@ last_reviewed: 2026-07-13
 
 # Module 7: Working with Agents
 
-**Optional, for when the basics feel comfortable · about 12 minutes · CGEA competency domains: Working with AI, Critical Appraisal of AI Outputs**
+<span class="meta-chip">Optional, for when the basics feel comfortable</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">CGEA competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
 
 ## What you will be able to do
 

@@ -4,7 +4,7 @@ last_reviewed: 2026-07-02
 
 # Module 5: Research and Scholarship
 
-**For faculty and student researchers · about 10 minutes · CGEA competency domain: Using AI in Research and Scholarship**
+<span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">CGEA competency domain: Using AI in Research and Scholarship</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 

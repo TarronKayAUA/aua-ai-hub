@@ -17,12 +17,45 @@ Whatever a tool's status, two rules always apply: never enter protected health i
 
 The directory catalogs; the guides recommend. Route by what you need:
 
-- **A general assistant for questions and drafting**: browse [Assistants](#assistants), and [Choosing Your Interface](interfaces.md) explains which kind of tool fits which work.
-- **Study tools**: [Medical Learning](#medical-learning), with the study workflow routed on the [students page](../students.md).
-- **Literature and research**: [AI for Research](research.md) maps tools to each stage of a project, the licensed library tools first.
-- **Slides, posters, and diagrams**: [Presentations and Design](#presentations-and-design).
-- **Keeping data on your own machine**: [Local Models](#local-models), with [Running Models Locally](local.md) as the walkthrough.
-- **A task walked end to end, guardrails included**: the [playbooks](../playbooks/index.md).
+<div class="grid cards" markdown>
+
+- :material-chat:{ .lg .middle } __A general assistant__
+
+    ---
+
+    Questions and drafting: browse [Assistants](#assistants), and [Choosing Your Interface](interfaces.md) explains which kind of tool fits which work.
+
+- :material-school:{ .lg .middle } __Study tools__
+
+    ---
+
+    [Medical Learning](#medical-learning), with the study workflow routed on the [students page](../students.md).
+
+- :material-magnify:{ .lg .middle } __Literature and research__
+
+    ---
+
+    [AI for Research](research.md) maps tools to each stage of a project, the licensed library tools first.
+
+- :material-presentation:{ .lg .middle } __Slides and diagrams__
+
+    ---
+
+    [Presentations and Design](#presentations-and-design) covers decks, posters, and text-to-diagram tools.
+
+- :material-laptop:{ .lg .middle } __Data stays on your machine__
+
+    ---
+
+    [Local Models](#local-models), with [Running Models Locally](local.md) as the walkthrough.
+
+- :material-clipboard-text:{ .lg .middle } __A task end to end__
+
+    ---
+
+    The [playbooks](../playbooks/index.md) walk one task at a time, guardrails included.
+
+</div>
 
 <!-- render:tools -->
 

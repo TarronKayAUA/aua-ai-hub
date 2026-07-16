@@ -4,7 +4,7 @@ last_reviewed: 2026-07-14
 
 # Your First Agent Session
 
-**About 20 minutes · works with Claude Code or Codex in the ChatGPT desktop app**
+<span class="meta-chip">About 20 minutes</span> <span class="meta-note">Works with Claude Code or Codex in the ChatGPT desktop app</span>
 
 [Choosing Your Interface](interfaces.md) explains why agents change what artificial intelligence (AI) can do for you; this page has you run one, once, on a folder that cannot be hurt. By the end you will have watched a model read files, ask your permission, run a tool, and hand back verified work, and you will know which settings to change and which to leave alone.
 

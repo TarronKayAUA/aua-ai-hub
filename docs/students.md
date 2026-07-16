@@ -50,11 +50,12 @@ When you start rotations, add [Clinical Contexts](pathway/clinical.md): the shar
 
 The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md); the short version:
 
-- Patient information never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart.
-- A classmate's identifiable work is not yours to paste into a tool either.
-- Your course's syllabus sets the rules for assignments; the policy delegates that line to your instructors. When you are not sure whether a use is allowed, ask before using.
-- Unauthorized AI use in secure examinations is academic dishonesty under the existing integrity rules.
-- Whatever a tool contributed, the work you submit and its errors are yours.
+!!! danger "Never crossed, whatever the tool"
+    - Patient information never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart.
+    - A classmate's identifiable work is not yours to paste into a tool either.
+    - Your course's syllabus sets the rules for assignments; the policy delegates that line to your instructors. When you are not sure whether a use is allowed, ask before using.
+    - Unauthorized AI use in secure examinations is academic dishonesty under the existing integrity rules.
+    - Whatever a tool contributed, the work you submit and its errors are yours.
 
 ## Studying with AI
 

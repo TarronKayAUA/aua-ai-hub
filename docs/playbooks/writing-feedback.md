@@ -4,7 +4,7 @@ last_reviewed: 2026-07-13
 
 # Playbook: Feedback on Student Writing
 
-**For faculty · works with any capable assistant in the [tools directory](../tools/index.md)**
+<span class="meta-chip">For faculty</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 

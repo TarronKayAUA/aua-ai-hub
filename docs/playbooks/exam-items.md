@@ -4,7 +4,7 @@ last_reviewed: 2026-07-02
 
 # Playbook: Writing and Vetting Exam Questions
 
-**For faculty · the highest-stakes playbook, read the guardrails first**
+<span class="meta-chip">For faculty</span> <span class="meta-note">The highest-stakes playbook, read the guardrails first</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 

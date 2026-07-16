@@ -4,7 +4,7 @@ last_reviewed: 2026-07-02
 
 # Playbook: Your Syllabus AI Statement
 
-**For faculty · templates below are starting points, adapt to your course**
+<span class="meta-chip">For faculty</span> <span class="meta-note">Templates below are starting points, adapt to your course</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 

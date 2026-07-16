@@ -115,6 +115,22 @@
   font-size: 0.8rem;
 }
 
+/* Page metadata chips (audience, time) under module and playbook titles;
+   non-interactive, paired with a muted note for the remainder. */
+.md-typeset .meta-chip {
+  display: inline-block;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 1rem;
+  padding: 0.05rem 0.6rem;
+  margin: 0 0.3rem 0.2rem 0;
+  font-size: 0.75rem;
+  color: var(--md-typeset-color);
+}
+.md-typeset .meta-note {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
 /* News topic chips (filtering handled by javascripts/topics.js). */
 .md-typeset .topic-chips {
   display: flex;

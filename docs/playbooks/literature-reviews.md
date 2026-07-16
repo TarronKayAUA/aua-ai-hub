@@ -4,7 +4,7 @@ last_reviewed: 2026-07-10
 
 # Reviewing the Literature
 
-**For faculty and graduate student researchers · from question to appraised evidence**
+<span class="meta-chip">For faculty and graduate student researchers</span> <span class="meta-note">From question to appraised evidence</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 
