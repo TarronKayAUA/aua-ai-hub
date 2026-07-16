@@ -512,7 +512,11 @@ podcast_feeds:
     - name: Me, Myself, and AI
       url: https://feeds.megaphone.fm/TPG7603691495
     - name: AI in Education Podcast
-      url: https://aipodcast.education/rss
+      # The show's custom domain (aipodcast.education/rss) serves an
+      # incomplete TLS chain that Python rejects (verified failing since
+      # 2026-07-15); this is the feed's own atom:link rel=self canonical
+      # Libsyn URL, verified fetching and parsing 2026-07-16.
+      url: https://rss.libsyn.com/shows/216230/destinations/1569005.xml
     - name: Latent Space
       url: https://api.substack.com/feed/podcast/1084089.rss
 

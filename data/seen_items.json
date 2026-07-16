@@ -17926,20 +17926,6 @@
    "reason": "duplicate of candidate 4 from more authoritative source already kept"
   },
   {
-   "url": "https://www.youtube.com/watch?v=5HTqWgt6ctk",
-   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "news roundup video without substantive coverage details; cannot assess content merit from summary"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=WMiylHobhBM",
-   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "news roundup video without substantive coverage details; cannot assess content merit from summary"
-  },
-  {
    "url": "https://www.youtube.com/watch?v=m8uUUUsMD3Y",
    "title_hash": "83b4118b5dae047abf46872c23a8e1b2",
    "first_seen": "2026-07-15T21:16:13.985694+00:00",

@@ -2438,10 +2438,28 @@ def main() -> int:
     videos_by_url: dict[str, Item] = {}
     for video in videos_unblocked:
         videos_by_url.setdefault(video.url, video)
+    # Cross-run dedupe for videos is by URL only: recurring shows reuse the
+    # exact same title for distinct streams (both July 15 "AI NEWS LIVE"
+    # entries hash identically), so a title-hash match would silently block
+    # every later installment once one is judged. Within-run dedupe above is
+    # URL-keyed for the same reason.
     fresh_videos = [
-        v for v in videos_by_url.values()
-        if v.url not in seen_urls and title_hash(v.title) not in seen_hashes
+        v for v in videos_by_url.values() if v.url not in seen_urls
     ]
+    # Livestream placeholders: a YouTube entry that arrives while the stream
+    # is live carries no description yet, so the curator has nothing to judge
+    # and the one-shot ledger would burn the video for good. Defer these:
+    # they stay off the candidate list and out of the ledger, and re-enter as
+    # candidates once the published VOD has a description. After defer_hours
+    # the video is offered anyway (title only), so a channel that never
+    # writes descriptions is not silenced forever.
+    defer_cutoff = now - timedelta(hours=video_cfg.get("defer_hours", 72))
+    deferred_videos = [
+        v for v in fresh_videos
+        if not v.summary.strip() and v.published >= defer_cutoff
+    ]
+    deferred_ids = {id(v) for v in deferred_videos}
+    fresh_videos = [v for v in fresh_videos if id(v) not in deferred_ids]
 
     # podcasts: same treatment as videos
     podcast_cutoff = now - timedelta(days=podcast_cfg.get("lookback_days", 14))
@@ -2782,7 +2800,10 @@ def main() -> int:
     for label, count in per_cat_counts.items():
         print(f"  {label:<18}: {count}")
     print(f"videos in window : {len(videos_window)}, fresh after dedupe: "
-          f"{len(fresh_videos)}, kept: {len(kept_videos)}")
+          f"{len(fresh_videos)}, deferred (no description yet): "
+          f"{len(deferred_videos)}, kept: {len(kept_videos)}")
+    for v in deferred_videos:
+        print(f"  deferred: {v.source}: {v.title[:60]}")
     print("videos page      : " + (", ".join(
         f"{label or 'all'} {len(rs)}" for label, rs in video_sections)
         or "empty"))
