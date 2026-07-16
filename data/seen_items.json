@@ -18269,6 +18269,61 @@
    "first_seen": "2026-07-16T06:32:57.257971+00:00",
    "kept": false,
    "reason": "daily news show recap with no standout substance for medical educators"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/when-do-you-need-a-disease-expert",
+   "title_hash": "beb8b8860486825b21bc7d81c2825365",
+   "first_seen": "2026-07-16T10:21:44.179582+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; commentary on when to consult specialists, unrelated to AI"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion",
+   "title_hash": "3c2a38fc2cbf2437d20538501799af36",
+   "first_seen": "2026-07-16T10:21:44.179582+00:00",
+   "kept": true,
+   "title": "A Practical, Scalable Template for Oral Exams",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-07-16T03:00:00+00:00",
+   "summary": "Practical template for conducting oral examinations at scale in large classes using AI.",
+   "category": "medical_education",
+   "score": 2.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-173682323.jpg?itok=uUngwbBj",
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03005-6",
+   "title_hash": "ae4a7709bc863ab89fdd947a4bb03e59",
+   "first_seen": "2026-07-16T10:21:44.179582+00:00",
+   "kept": true,
+   "title": "Enhancing out-of-hospital emergency care via lexical machine learning modeling of chief complaints",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-16T00:00:00+00:00",
+   "summary": "Machine learning analysis of chief complaint language improves out-of-hospital emergency care triage and response.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04533-0",
+   "title_hash": "cbff1ca3652fe0bafdaacd368fd0353c",
+   "first_seen": "2026-07-16T10:21:44.179582+00:00",
+   "kept": false,
+   "reason": "clinical trial result in non-Hodgkin lymphoma, not about artificial intelligence in medicine"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ZJQ4mopAenk",
+   "title_hash": "5ccdf66e3bb863969d2b6f5cfeffe354",
+   "first_seen": "2026-07-16T10:21:44.179582+00:00",
+   "kept": false,
+   "reason": "product demo and testing of a general-purpose design tool, not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=_cUHTq7cCMM",
+   "title_hash": "b5e1e44060ce7daa03668da1732fdac6",
+   "first_seen": "2026-07-16T10:21:44.179582+00:00",
+   "kept": false,
+   "reason": "vendor marketing for a design tool, not relevant to medical education or clinical practice"
   }
  ],
  "digests": [
@@ -18398,13 +18453,13 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A national survey of nursing students in China documents persistent educational gaps and varied attitudes toward artificial intelligence, especially among vocational and socioeconomically disadvantaged groups, emphasizing the need for targeted instructional improvements <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0\">[1]</a>. Meanwhile, systemic barriers hamper the swift adaptation of medical curricula to evolving digital knowledge, with qualitative evidence indicating that institutions continue to struggle with updating educational content efficiently <a href=\"https://mededu.jmir.org/2026/1/e96244\">[4]</a>. Studies also reveal that the reliability and citation accuracy of large language models in anatomy-related questions remain problematic, raising concerns among faculty and students who rely on these tools for academic writing and learning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[5]</a>. Medical students using generative AI-assisted simulation training achieved higher diagnostic communication scores, highlighting the potential for AI integration to enhance skills in common clinical scenarios <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[8]</a>. Further, the natural adoption and deliberate practice of AI-based OSCE platforms suggest changing patterns in licensure preparation among medical students <a href=\"https://www.nature.com/articles/s41746-026-03024-3\">[10]</a>.\n\nAlso this week: five papers cover teaching and curriculum themes, four explore attitudes and adoption, and another four address topics ranging from dermatology terminology to conceptual frameworks for AI-augmented mentorship. One study details simulation and skills, while another assesses feedback within medical education platforms.",
-   "hash": "e0b29b31dc663133",
+   "text": "Systemic challenges to incorporating artificial intelligence into medical curricula continue to emerge, with recent work detailing how entrenched barriers slow rapid adaptation of educational materials in response to new technologies <a href=\"https://mededu.jmir.org/2026/1/e96244\">[5]</a>. Several studies investigate how both faculty and students perceive and approach AI in medical learning: surveys highlight variable knowledge and attitudes among nursing students, especially those from vocational and disadvantaged backgrounds <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0\">[1]</a>, and show that prior radiology training strongly shapes dental professionals’ views on AI’s role in their field <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[8]</a>. Meanwhile, new digital and AI-assisted teaching methods are being tested for both skills and communication training, including remote neurological exam instruction <a href=\"https://mededu.jmir.org/2026/1/e77034\">[4]</a> and simulation-based diagnostic scenarios with improved outcomes in diabetes, obesity, and cancer education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[9]</a>.\n\nAlso this week: eight new model releases, five papers on assessment, and studies on curriculum adaptation and feedback. Featured items include data on students’ adoption of an AI-powered OSCE exam platform, and faculty perspectives on AI integration in family medicine.",
+   "hash": "0e50489b0cef1c51",
    "date": "July 16, 2026"
   },
   "clinical_practice": {
-   "text": "A new benchmark aimed at improving large language model safety in psychiatry assesses whether models request clarification or abstain from diagnosis when information is incomplete, addressing a core concern in clinical deployment <a href=\"https://arxiv.org/abs/2607.13036\">[1]</a>. Research continues to identify performance gaps in Chinese medical language models, highlighting both the challenges and the potential for targeted optimization as these systems move toward real-world use <a href=\"https://ai.jmir.org/2026/1/e86864\">[3]</a>. Decision support for breast cancer treatment, especially across varying clinical stages, is under evaluation for reliability and safety, raising important considerations for adoption in oncology <a href=\"https://arxiv.org/abs/2607.12051\">[6]</a>. Building on these advances, reviewers have examined explainable AI methods for clinical data, focusing on interpretability and the ability to make AI-driven findings more transparent for practitioners <a href=\"https://www.nature.com/articles/s41746-026-02953-3\">[8]</a>. Ongoing assessment of information flow in human-AI collaborations rounds out the picture of how these systems integrate with current clinical workflows <a href=\"https://medinform.jmir.org/2026/1/e90611\">[5]</a>.\n\nAlso this week: seven papers on AI safety and evaluation, five items on clinical decision support, and studies on clinical documentation and imaging systems. Regulatory investigations into medical devices in South Korea and a metadata catalog for Swiss health data are included. The section covers both new evaluation benchmarks and multi-omics machine learning approaches for cancer care.",
-   "hash": "67680643441e63ba",
+   "text": "A new benchmark now evaluates how reliably large language models used in psychiatry avoid unsupported diagnoses by seeking clarification or choosing to abstain when given inadequate information, raising discussion about safety in AI-aided clinical decision making <a href=\"https://arxiv.org/abs/2607.13036\">[1]</a>. Complementing this, researchers assessed machine learning models&#x27; ability to analyze free-text chief complaints, showing improved triage and emergency response outside hospital settings <a href=\"https://www.nature.com/articles/s41746-026-03005-6\">[3]</a>. Advances in oncology practice are reflected in new work evaluating language model systems that generate breast cancer treatment recommendations, emphasizing the need for careful attention to safety and staging criteria in deploying such systems for clinical decision support <a href=\"https://arxiv.org/abs/2607.12051\">[7]</a>. China&#x27;s medical AI models are undergoing close evaluation as well, where recent studies have identified both significant performance gaps and optimization strategies relevant for clinical deployment <a href=\"https://ai.jmir.org/2026/1/e86864\">[4]</a>.\n\nAlso this week: the section highlights a systematic review covering evaluation metrics for cancer genetic risk chatbots, and introduces new work on interpretable and agentic AI for radiology and cognitive risk prediction. Eight safety and evaluation studies and five reports on clinical decision support are featured, with new research on explainable AI and multimodal health data.",
+   "hash": "67217a758bc13a24",
    "date": "July 16, 2026"
   },
   "general_ai": {

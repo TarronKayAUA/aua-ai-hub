@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A national survey of nursing students in China documents persistent educational gaps and varied attitudes toward artificial intelligence, especially among vocational and socioeconomically disadvantaged groups, emphasizing the need for targeted instructional improvements <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[1]</a>. Meanwhile, systemic barriers hamper the swift adaptation of medical curricula to evolving digital knowledge, with qualitative evidence indicating that institutions continue to struggle with updating educational content efficiently <a href="https://mededu.jmir.org/2026/1/e96244">[4]</a>. Studies also reveal that the reliability and citation accuracy of large language models in anatomy-related questions remain problematic, raising concerns among faculty and students who rely on these tools for academic writing and learning <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[5]</a>. Medical students using generative AI-assisted simulation training achieved higher diagnostic communication scores, highlighting the potential for AI integration to enhance skills in common clinical scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[8]</a>. Further, the natural adoption and deliberate practice of AI-based OSCE platforms suggest changing patterns in licensure preparation among medical students <a href="https://www.nature.com/articles/s41746-026-03024-3">[10]</a>.</p>
-<p>Also this week: five papers cover teaching and curriculum themes, four explore attitudes and adoption, and another four address topics ranging from dermatology terminology to conceptual frameworks for AI-augmented mentorship. One study details simulation and skills, while another assesses feedback within medical education platforms.</p>
+<p>Systemic challenges to incorporating artificial intelligence into medical curricula continue to emerge, with recent work detailing how entrenched barriers slow rapid adaptation of educational materials in response to new technologies <a href="https://mededu.jmir.org/2026/1/e96244">[5]</a>. Several studies investigate how both faculty and students perceive and approach AI in medical learning: surveys highlight variable knowledge and attitudes among nursing students, especially those from vocational and disadvantaged backgrounds <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[1]</a>, and show that prior radiology training strongly shapes dental professionals’ views on AI’s role in their field <a href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[8]</a>. Meanwhile, new digital and AI-assisted teaching methods are being tested for both skills and communication training, including remote neurological exam instruction <a href="https://mededu.jmir.org/2026/1/e77034">[4]</a> and simulation-based diagnostic scenarios with improved outcomes in diabetes, obesity, and cancer education <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[9]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment, and studies on curriculum adaptation and feedback. Featured items include data on students’ adoption of an AI-powered OSCE exam platform, and faculty perspectives on AI integration in family medicine.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (3)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -27,6 +27,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">Knowledge, attitudes, practices and ethics related to artificial intelligence among nursing students: a national cross-sectional survey in China</a>
     <p class="news-card-summary">Survey of nursing students in China found variable knowledge and attitudes toward AI use, with educational gaps particularly acute among vocational and socioeconomically disadvantaged students.</p>
   </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion">A Practical, Scalable Template for Oral Exams</a>
+    <p class="news-card-summary">Practical template for conducting oral examinations at scale in large classes using AI.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-173682323.jpg?itok=uUngwbBj" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">AI-Augmented Mentorship in Orthopedic Surgery: A Conceptual Framework for Expanding Access for Underrepresented and Less-Resourced Students</a>
     <p class="news-card-summary">A conceptual framework proposes AI-augmented mentorship to expand access to orthopedic surgery training for underrepresented students and trainees from lower-resourced institutions.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">Hotspot Evolution and Future Prospects of Large Language Models in Medical Education: A Bibliometric Analysis</a>
-    <p class="news-card-summary">Bibliometric analysis identifies rapid growth in large language model medical education research but flags gaps in empirical evidence, imbalanced research themes, and delayed governance frameworks.</p>
   </div>
 </div>
 </div>

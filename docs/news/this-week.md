@@ -11,14 +11,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A national survey of nursing students in China documents persistent educational gaps and varied attitudes toward artificial intelligence, especially among vocational and socioeconomically disadvantaged groups, emphasizing the need for targeted instructional improvements <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[1]</a>. Meanwhile, systemic barriers hamper the swift adaptation of medical curricula to evolving digital knowledge, with qualitative evidence indicating that institutions continue to struggle with updating educational content efficiently <a href="https://mededu.jmir.org/2026/1/e96244">[4]</a>. Studies also reveal that the reliability and citation accuracy of large language models in anatomy-related questions remain problematic, raising concerns among faculty and students who rely on these tools for academic writing and learning <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[5]</a>. Medical students using generative AI-assisted simulation training achieved higher diagnostic communication scores, highlighting the potential for AI integration to enhance skills in common clinical scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[8]</a>. Further, the natural adoption and deliberate practice of AI-based OSCE platforms suggest changing patterns in licensure preparation among medical students <a href="https://www.nature.com/articles/s41746-026-03024-3">[10]</a>.</p>
-<p>Also this week: five papers cover teaching and curriculum themes, four explore attitudes and adoption, and another four address topics ranging from dermatology terminology to conceptual frameworks for AI-augmented mentorship. One study details simulation and skills, while another assesses feedback within medical education platforms.</p>
+<p>Systemic challenges to incorporating artificial intelligence into medical curricula continue to emerge, with recent work detailing how entrenched barriers slow rapid adaptation of educational materials in response to new technologies <a href="https://mededu.jmir.org/2026/1/e96244">[5]</a>. Several studies investigate how both faculty and students perceive and approach AI in medical learning: surveys highlight variable knowledge and attitudes among nursing students, especially those from vocational and disadvantaged backgrounds <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[1]</a>, and show that prior radiology training strongly shapes dental professionals’ views on AI’s role in their field <a href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[8]</a>. Meanwhile, new digital and AI-assisted teaching methods are being tested for both skills and communication training, including remote neurological exam instruction <a href="https://mededu.jmir.org/2026/1/e77034">[4]</a> and simulation-based diagnostic scenarios with improved outcomes in diabetes, obesity, and cancer education <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[9]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment, and studies on curriculum adaptation and feedback. Featured items include data on students’ adoption of an AI-powered OSCE exam platform, and faculty perspectives on AI integration in family medicine.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
@@ -26,6 +26,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">Knowledge, attitudes, practices and ethics related to artificial intelligence among nursing students: a national cross-sectional survey in China</a>
         <p class="news-card-summary">Survey of nursing students in China found variable knowledge and attitudes toward AI use, with educational gaps particularly acute among vocational and socioeconomically disadvantaged students.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion">A Practical, Scalable Template for Oral Exams</a>
+        <p class="news-card-summary">Practical template for conducting oral examinations at scale in large classes using AI.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-173682323.jpg?itok=uUngwbBj" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -327,14 +335,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new benchmark aimed at improving large language model safety in psychiatry assesses whether models request clarification or abstain from diagnosis when information is incomplete, addressing a core concern in clinical deployment <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Research continues to identify performance gaps in Chinese medical language models, highlighting both the challenges and the potential for targeted optimization as these systems move toward real-world use <a href="https://ai.jmir.org/2026/1/e86864">[3]</a>. Decision support for breast cancer treatment, especially across varying clinical stages, is under evaluation for reliability and safety, raising important considerations for adoption in oncology <a href="https://arxiv.org/abs/2607.12051">[6]</a>. Building on these advances, reviewers have examined explainable AI methods for clinical data, focusing on interpretability and the ability to make AI-driven findings more transparent for practitioners <a href="https://www.nature.com/articles/s41746-026-02953-3">[8]</a>. Ongoing assessment of information flow in human-AI collaborations rounds out the picture of how these systems integrate with current clinical workflows <a href="https://medinform.jmir.org/2026/1/e90611">[5]</a>.</p>
-<p>Also this week: seven papers on AI safety and evaluation, five items on clinical decision support, and studies on clinical documentation and imaging systems. Regulatory investigations into medical devices in South Korea and a metadata catalog for Swiss health data are included. The section covers both new evaluation benchmarks and multi-omics machine learning approaches for cancer care.</p>
+<p>A new benchmark now evaluates how reliably large language models used in psychiatry avoid unsupported diagnoses by seeking clarification or choosing to abstain when given inadequate information, raising discussion about safety in AI-aided clinical decision making <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Complementing this, researchers assessed machine learning models&#x27; ability to analyze free-text chief complaints, showing improved triage and emergency response outside hospital settings <a href="https://www.nature.com/articles/s41746-026-03005-6">[3]</a>. Advances in oncology practice are reflected in new work evaluating language model systems that generate breast cancer treatment recommendations, emphasizing the need for careful attention to safety and staging criteria in deploying such systems for clinical decision support <a href="https://arxiv.org/abs/2607.12051">[7]</a>. China&#x27;s medical AI models are undergoing close evaluation as well, where recent studies have identified both significant performance gaps and optimization strategies relevant for clinical deployment <a href="https://ai.jmir.org/2026/1/e86864">[4]</a>.</p>
+<p>Also this week: the section highlights a systematic review covering evaluation metrics for cancer genetic risk chatbots, and introduces new work on interpretable and agentic AI for radiology and cognitive risk prediction. Eight safety and evaluation studies and five reports on clinical decision support are featured, with new research on explainable AI and multimodal health data.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 53 items"
+??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -348,6 +356,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2607.13430">Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet</a>
         <p class="news-card-summary">Study compares post-training methods for small language models generating patient-friendly medication leaflets from structured biomedical data.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03005-6">Enhancing out-of-hospital emergency care via lexical machine learning modeling of chief complaints</a>
+        <p class="news-card-summary">Machine learning analysis of chief complaint language improves out-of-hospital emergency care triage and response.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">

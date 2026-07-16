@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new benchmark aimed at improving large language model safety in psychiatry assesses whether models request clarification or abstain from diagnosis when information is incomplete, addressing a core concern in clinical deployment <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Research continues to identify performance gaps in Chinese medical language models, highlighting both the challenges and the potential for targeted optimization as these systems move toward real-world use <a href="https://ai.jmir.org/2026/1/e86864">[3]</a>. Decision support for breast cancer treatment, especially across varying clinical stages, is under evaluation for reliability and safety, raising important considerations for adoption in oncology <a href="https://arxiv.org/abs/2607.12051">[6]</a>. Building on these advances, reviewers have examined explainable AI methods for clinical data, focusing on interpretability and the ability to make AI-driven findings more transparent for practitioners <a href="https://www.nature.com/articles/s41746-026-02953-3">[8]</a>. Ongoing assessment of information flow in human-AI collaborations rounds out the picture of how these systems integrate with current clinical workflows <a href="https://medinform.jmir.org/2026/1/e90611">[5]</a>.</p>
-<p>Also this week: seven papers on AI safety and evaluation, five items on clinical decision support, and studies on clinical documentation and imaging systems. Regulatory investigations into medical devices in South Korea and a metadata catalog for Swiss health data are included. The section covers both new evaluation benchmarks and multi-omics machine learning approaches for cancer care.</p>
+<p>A new benchmark now evaluates how reliably large language models used in psychiatry avoid unsupported diagnoses by seeking clarification or choosing to abstain when given inadequate information, raising discussion about safety in AI-aided clinical decision making <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Complementing this, researchers assessed machine learning models&#x27; ability to analyze free-text chief complaints, showing improved triage and emergency response outside hospital settings <a href="https://www.nature.com/articles/s41746-026-03005-6">[3]</a>. Advances in oncology practice are reflected in new work evaluating language model systems that generate breast cancer treatment recommendations, emphasizing the need for careful attention to safety and staging criteria in deploying such systems for clinical decision support <a href="https://arxiv.org/abs/2607.12051">[7]</a>. China&#x27;s medical AI models are undergoing close evaluation as well, where recent studies have identified both significant performance gaps and optimization strategies relevant for clinical deployment <a href="https://ai.jmir.org/2026/1/e86864">[4]</a>.</p>
+<p>Also this week: the section highlights a systematic review covering evaluation metrics for cancer genetic risk chatbots, and introduces new work on interpretable and agentic AI for radiology and cognitive risk prediction. Eight safety and evaluation studies and five reports on clinical decision support are featured, with new research on explainable AI and multimodal health data.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -33,6 +33,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.13430">Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet</a>
     <p class="news-card-summary">Study compares post-training methods for small language models generating patient-friendly medication leaflets from structured biomedical data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03005-6">Enhancing out-of-hospital emergency care via lexical machine learning modeling of chief complaints</a>
+    <p class="news-card-summary">Machine learning analysis of chief complaint language improves out-of-hospital emergency care triage and response.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02991-x">Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health</a>
     <p class="news-card-summary">Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02981-z">A unified multi-modal foundation model for end-to-end emergency care</a>
-    <p class="news-card-summary">A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.</p>
   </div>
 </div>
 </div>

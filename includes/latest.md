@@ -3,5 +3,5 @@
 - [Knowledge, attitudes, practices and ethics related to artificial intelligence among nursing students: a national cross-sectional survey in China](https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&ff=20260716023257&v=2.20.0) (PubMed AI in medical education, July 16, 2026)
 - [Ask Before You Diagnose: Safe-Psych, a Sequential Evaluation Benchmark for LLMs in Psychiatry](https://arxiv.org/abs/2607.13036) (arXiv cs.CL, July 16, 2026)
 - [Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet](https://arxiv.org/abs/2607.13430) (arXiv cs.CL, July 16, 2026)
-- [Performance Gaps and Optimization Strategies in Chinese Medical Large Language Models Based on MedBench: Evaluation Study](https://ai.jmir.org/2026/1/e86864) (JMIR AI, July 15, 2026)
-- [Digital Training for Lay Health Care Workers’ Knowledge and Skills in HIV Index Case Testing: Cluster Randomized Trial](https://mededu.jmir.org/2026/1/e89942) (JMIR Medical Education, July 15, 2026)
+- [A Practical, Scalable Template for Oral Exams](https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion) (Inside Higher Ed AI, July 16, 2026)
+- [Enhancing out-of-hospital emergency care via lexical machine learning modeling of chief complaints](https://www.nature.com/articles/s41746-026-03005-6) (npj Digital Medicine, July 16, 2026)
