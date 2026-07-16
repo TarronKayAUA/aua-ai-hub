@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new benchmark now evaluates how reliably large language models used in psychiatry avoid unsupported diagnoses by seeking clarification or choosing to abstain when given inadequate information, raising discussion about safety in AI-aided clinical decision making <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Complementing this, researchers assessed machine learning models&#x27; ability to analyze free-text chief complaints, showing improved triage and emergency response outside hospital settings <a href="https://www.nature.com/articles/s41746-026-03005-6">[3]</a>. Advances in oncology practice are reflected in new work evaluating language model systems that generate breast cancer treatment recommendations, emphasizing the need for careful attention to safety and staging criteria in deploying such systems for clinical decision support <a href="https://arxiv.org/abs/2607.12051">[7]</a>. China&#x27;s medical AI models are undergoing close evaluation as well, where recent studies have identified both significant performance gaps and optimization strategies relevant for clinical deployment <a href="https://ai.jmir.org/2026/1/e86864">[4]</a>.</p>
-<p>Also this week: the section highlights a systematic review covering evaluation metrics for cancer genetic risk chatbots, and introduces new work on interpretable and agentic AI for radiology and cognitive risk prediction. Eight safety and evaluation studies and five reports on clinical decision support are featured, with new research on explainable AI and multimodal health data.</p>
+<p>A new benchmark for evaluating large language models in psychiatric contexts assesses whether these systems can safely identify when patient information is insufficient for diagnosis, with an emphasis on abstaining or requesting clarification as needed <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Advances in human-AI collaboration have also been reported, with recent research analyzing how information flow and ecological factors can improve the effectiveness of online health consultations using AI <a href="https://medinform.jmir.org/2026/1/e90611">[10]</a>. In emergency medicine, lexical machine learning models are being leveraged to improve the triage and response process based on how patients describe their chief complaints, contributing to enhanced out-of-hospital care <a href="https://www.nature.com/articles/s41746-026-03005-6">[3]</a>. The role of AI in decision support continues to expand in oncology, where agentic systems are now being evaluated for their reliability and safety across breast cancer treatment planning <a href="https://arxiv.org/abs/2607.12051">[11]</a>. In radiology, the development of interpretable and locally reasoned AI tools is facilitating more transparent decision making for medical imaging applications <a href="https://www.nature.com/articles/s41746-026-02994-8">[15]</a>.</p>
+<p>Also this week: eight new model releases include work on multilingual evaluation and ten-year risk prediction of cognitive impairment. Five papers address clinical evaluation and safety, and two focus on patient-facing health technologies, such as meta-analyses of mental health apps and chatbot-guided cancer risk assessment.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -54,6 +54,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03015-4">Artificial intelligence in deep brain stimulation for movement disorders: a systematic review and technology readiness assessment</a>
     <p class="news-card-summary">A systematic review and technology readiness assessment examined artificial intelligence applications in deep brain stimulation for movement disorders.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03014-5">Public availability of evidence-based mental health apps: a systematic review and meta-analysis of self-guided apps</a>
+    <p class="news-card-summary">Systematic review and meta-analysis examining the public availability and effectiveness of evidence-based self-guided mental health applications.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04498-0">A neuroprosthesis for restoring hand movement and sensation in a person with complete tetraplegia</a>
+    <p class="news-card-summary">Bidirectional neuroprosthetic system restored hand motor and sensory function in a person with complete tetraplegia using brain signal decoding and targeted neuromodulation.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02994-8">Interpretable agentic AI system with localized reasoning for radiology</a>
     <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.</p>
-  </div>
-</div>
-<div class="news-card">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90146">The Swiss Personalized Health Network Metadata Catalog: Platform for Health Data Discovery and Exploration Based on Findable, Accessible, Interoperable, and Reusable Principles</a>
-    <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.09880">CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series</a>
-    <p class="news-card-summary">New benchmark evaluates language models on question answering over sparse, irregularly sampled clinical time series data from patient monitoring and risk assessment.</p>
   </div>
 </div>
 </div>

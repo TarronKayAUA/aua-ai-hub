@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI’s approach to improving model safety has advanced with GPT-Red, an adversarial language model engineered to identify cybersecurity vulnerabilities in OpenAI’s systems. Using insights from GPT-Red, OpenAI strengthened GPT-5.6 against attacks, signaling a practical step in addressing model robustness <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[3]</a>. Demonstrations of serious vulnerabilities persist, as shown by a researcher who manipulated Claude’s web-fetch tool to expose sensitive information, underscoring ongoing challenges in agent and tool integration security <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[5]</a>. The industry continues to face calls for regulation, with Google DeepMind’s CEO proposing the establishment of a global AI oversight body led by the US to manage frontier safety risks <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[11]</a>. Meanwhile, recent industry developments include the launch of open-weights large language models designed for research accessibility and efficiency <a href="https://thinkingmachines.ai/news/introducing-inkling">[2]</a>, and new evaluation frameworks that incorporate both human preference and factual accuracy to benchmark model reliability <a href="https://arena.ai/blog/factuality-in-arena">[4]</a>.</p>
-<p>Also this week: there are five new items addressing safety and reliability, two new model releases, and updates in AI evaluation methods and benchmark design. Industry and regulatory topics are covered in two recent analyses, including Google’s required platform access for competing assistants in Europe.</p>
+<p>A new vulnerability demonstration in Claude’s web-fetch tool highlights ongoing concerns around safety and reliability in AI agent design, emphasizing the importance of rigorous integration practices <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[6]</a>. OpenAI introduced GPT-Red, a specialized adversarial model used to harden GPT-5.6 against cybersecurity threats, signaling continued investment in robust evaluation strategies <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[4]</a>. Leading model releases include Inkling, a high-parameter open-weights language model, as well as Bonsai 27B, designed for efficient mobile deployment <a href="https://thinkingmachines.ai/news/introducing-inkling">[3]</a> <a href="https://prismml.com/news/bonsai-27b">[10]</a>. NVIDIA’s Nemotron 3 Embed has set a new benchmark for agentic retrieval, supporting industry progress in embedding technology <a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb">[1]</a>. Discussions on factual accuracy persist, with a new leaderboard measuring human preferences alongside objective model outputs <a href="https://arena.ai/blog/factuality-in-arena">[5]</a>.</p>
+<p>Also this week: there are five safety and reliability reports, two benchmarking and evaluation studies, and analyses devoted to industry policy and emerging research methods. The section includes an assessment of Grok Build’s user code upload issue, and a review of AI agents’ effect on scientific validation bottlenecks.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb">NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval</a>
+    <p class="news-card-summary">NVIDIA released Nemotron 3 Embed, an embedding model achieving top performance on the Retrieval Text Embedding Benchmark for agentic retrieval applications.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/697fa5ae089a7f9330c5078f/AaXgkciE-wvxSPrA4wg0n.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 16, 2026</span></div>
@@ -128,13 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Researcher identified systemic vulnerabilities allowing bypass of LLM safety measures across major models, calling for slower deployment and increased transparency.</p>
   </div>
   <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/glossy-red-robot-devil-standing-on-a-bundle-of-dynamite-against-blue-glow-background.png?id=67154492&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">Google’s Demis Hassabis says it’s time for a global AI watchdog, led by the US</a>
-    <p class="news-card-summary">Google DeepMind CEO proposes creation of a global AI regulatory body led by the US to oversee frontier model safety.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/gettyimages-2194484502.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -335,14 +335,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new benchmark now evaluates how reliably large language models used in psychiatry avoid unsupported diagnoses by seeking clarification or choosing to abstain when given inadequate information, raising discussion about safety in AI-aided clinical decision making <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Complementing this, researchers assessed machine learning models&#x27; ability to analyze free-text chief complaints, showing improved triage and emergency response outside hospital settings <a href="https://www.nature.com/articles/s41746-026-03005-6">[3]</a>. Advances in oncology practice are reflected in new work evaluating language model systems that generate breast cancer treatment recommendations, emphasizing the need for careful attention to safety and staging criteria in deploying such systems for clinical decision support <a href="https://arxiv.org/abs/2607.12051">[7]</a>. China&#x27;s medical AI models are undergoing close evaluation as well, where recent studies have identified both significant performance gaps and optimization strategies relevant for clinical deployment <a href="https://ai.jmir.org/2026/1/e86864">[4]</a>.</p>
-<p>Also this week: the section highlights a systematic review covering evaluation metrics for cancer genetic risk chatbots, and introduces new work on interpretable and agentic AI for radiology and cognitive risk prediction. Eight safety and evaluation studies and five reports on clinical decision support are featured, with new research on explainable AI and multimodal health data.</p>
+<p>A new benchmark for evaluating large language models in psychiatric contexts assesses whether these systems can safely identify when patient information is insufficient for diagnosis, with an emphasis on abstaining or requesting clarification as needed <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Advances in human-AI collaboration have also been reported, with recent research analyzing how information flow and ecological factors can improve the effectiveness of online health consultations using AI <a href="https://medinform.jmir.org/2026/1/e90611">[10]</a>. In emergency medicine, lexical machine learning models are being leveraged to improve the triage and response process based on how patients describe their chief complaints, contributing to enhanced out-of-hospital care <a href="https://www.nature.com/articles/s41746-026-03005-6">[3]</a>. The role of AI in decision support continues to expand in oncology, where agentic systems are now being evaluated for their reliability and safety across breast cancer treatment planning <a href="https://arxiv.org/abs/2607.12051">[11]</a>. In radiology, the development of interpretable and locally reasoned AI tools is facilitating more transparent decision making for medical imaging applications <a href="https://www.nature.com/articles/s41746-026-02994-8">[15]</a>.</p>
+<p>Also this week: eight new model releases include work on multilingual evaluation and ten-year risk prediction of cognitive impairment. Five papers address clinical evaluation and safety, and two focus on patient-facing health technologies, such as meta-analyses of mental health apps and chatbot-guided cancer risk assessment.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 55 items"
+??? abstract "Show the 57 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (57)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (7)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -377,6 +377,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03015-4">Artificial intelligence in deep brain stimulation for movement disorders: a systematic review and technology readiness assessment</a>
         <p class="news-card-summary">A systematic review and technology readiness assessment examined artificial intelligence applications in deep brain stimulation for movement disorders.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03014-5">Public availability of evidence-based mental health apps: a systematic review and meta-analysis of self-guided apps</a>
+        <p class="news-card-summary">Systematic review and meta-analysis examining the public availability and effectiveness of evidence-based self-guided mental health applications.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04498-0">A neuroprosthesis for restoring hand movement and sensation in a person with complete tetraplegia</a>
+        <p class="news-card-summary">Bidirectional neuroprosthetic system restored hand motor and sensory function in a person with complete tetraplegia using brain signal decoding and targeted neuromodulation.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -736,15 +750,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI’s approach to improving model safety has advanced with GPT-Red, an adversarial language model engineered to identify cybersecurity vulnerabilities in OpenAI’s systems. Using insights from GPT-Red, OpenAI strengthened GPT-5.6 against attacks, signaling a practical step in addressing model robustness <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[3]</a>. Demonstrations of serious vulnerabilities persist, as shown by a researcher who manipulated Claude’s web-fetch tool to expose sensitive information, underscoring ongoing challenges in agent and tool integration security <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[5]</a>. The industry continues to face calls for regulation, with Google DeepMind’s CEO proposing the establishment of a global AI oversight body led by the US to manage frontier safety risks <a href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">[11]</a>. Meanwhile, recent industry developments include the launch of open-weights large language models designed for research accessibility and efficiency <a href="https://thinkingmachines.ai/news/introducing-inkling">[2]</a>, and new evaluation frameworks that incorporate both human preference and factual accuracy to benchmark model reliability <a href="https://arena.ai/blog/factuality-in-arena">[4]</a>.</p>
-<p>Also this week: there are five new items addressing safety and reliability, two new model releases, and updates in AI evaluation methods and benchmark design. Industry and regulatory topics are covered in two recent analyses, including Google’s required platform access for competing assistants in Europe.</p>
+<p>A new vulnerability demonstration in Claude’s web-fetch tool highlights ongoing concerns around safety and reliability in AI agent design, emphasizing the importance of rigorous integration practices <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[6]</a>. OpenAI introduced GPT-Red, a specialized adversarial model used to harden GPT-5.6 against cybersecurity threats, signaling continued investment in robust evaluation strategies <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[4]</a>. Leading model releases include Inkling, a high-parameter open-weights language model, as well as Bonsai 27B, designed for efficient mobile deployment <a href="https://thinkingmachines.ai/news/introducing-inkling">[3]</a> <a href="https://prismml.com/news/bonsai-27b">[10]</a>. NVIDIA’s Nemotron 3 Embed has set a new benchmark for agentic retrieval, supporting industry progress in embedding technology <a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb">[1]</a>. Discussions on factual accuracy persist, with a new leaderboard measuring human preferences alongside objective model outputs <a href="https://arena.ai/blog/factuality-in-arena">[5]</a>.</p>
+<p>Also this week: there are five safety and reliability reports, two benchmarking and evaluation studies, and analyses devoted to industry policy and emerging research methods. The section includes an assessment of Grok Build’s user code upload issue, and a review of AI agents’ effect on scientific validation bottlenecks.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb">NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval</a>
+        <p class="news-card-summary">NVIDIA released Nemotron 3 Embed, an embedding model achieving top performance on the Retrieval Text Embedding Benchmark for agentic retrieval applications.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/697fa5ae089a7f9330c5078f/AaXgkciE-wvxSPrA4wg0n.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 16, 2026</span></div>
@@ -1051,9 +1073,21 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 22 videos"
+??? abstract "Show the 24 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=axOcn--n_lM" target="_blank" rel="noopener" title="The Dangerous Illusion of AI Coding Skills">
+      <img src="https://i2.ytimg.com/vi/axOcn--n_lM/hqdefault.jpg" alt="Video: Limitations of AI coding models in practice" loading="lazy">
+      <span class="video-card-title">Limitations of AI coding models in practice</span>
+      <span class="video-card-meta">Two Minute Papers, July 16, 2026</span>
+      <span class="video-card-desc">Analysis of limitations in AI coding models and the gap between marketed capabilities and real-world performance in software development.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=-56F0u0xN1A" target="_blank" rel="noopener" title="Bonsai 27B Deep Dive, 1-Bit, Ternary &amp; Full Precision Compared!">
+      <img src="https://i2.ytimg.com/vi/-56F0u0xN1A/hqdefault.jpg" alt="Video: Bonsai 27B model quantization comparison and local deployment" loading="lazy">
+      <span class="video-card-title">Bonsai 27B model quantization comparison and local deployment</span>
+      <span class="video-card-meta">Bijan Bowen, July 16, 2026</span>
+      <span class="video-card-desc">Technical comparison of Bonsai 27B model across quantization methods including 1-bit, ternary, and full precision with local setup guidance.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=avpZWh6sm9M" target="_blank" rel="noopener" title="Improved Intelligence with GPT-Live">
       <img src="https://i2.ytimg.com/vi/avpZWh6sm9M/hqdefault.jpg" alt="Video: GPT-Live next-generation voice model" loading="lazy">
       <span class="video-card-title">GPT-Live next-generation voice model</span>

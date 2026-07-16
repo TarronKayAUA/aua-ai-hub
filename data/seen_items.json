@@ -18472,6 +18472,179 @@
    "first_seen": "2026-07-16T14:25:19.176457+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+   "title_hash": "003d2b4e8b24d052bccb246fa7113eaf",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": true,
+   "title": "NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval",
+   "source": "Hugging Face blog",
+   "published": "2026-07-16T16:01:21+00:00",
+   "summary": "NVIDIA released Nemotron 3 Embed, an embedding model achieving top performance on the Retrieval Text Embedding Benchmark for agentic retrieval applications.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/697fa5ae089a7f9330c5078f/AaXgkciE-wvxSPrA4wg0n.png",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
+   "title_hash": "244338ad91ccf5563695e9410c59ddc8",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "product rebrand and naming announcement; purely administrative news without capability or deployment significance"
+  },
+  {
+   "url": "https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom",
+   "title_hash": "f1cfc7759fe48acafad921ef6cb014e3",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "industry and finance coverage with no relevance to medical education or AI development"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy3a0q/kimi_k3_released_on_web_and_app",
+   "title_hash": "1085d9891ce36e5934042d034e881a0c",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "forum post lacking substantive analysis; model specs alone do not constitute news for this audience"
+  },
+  {
+   "url": "https://www.theocharis.dev/blog/llm-critics-are-right-i-use-llms-anyway",
+   "title_hash": "19bcf66e3ed6cd17614c416b8640ac1a",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "personal essay on tool adoption; carries no new information or instructive analysis for medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03014-5",
+   "title_hash": "083163115b8c79aeda7e5b62ba0b784c",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": true,
+   "title": "Public availability of evidence-based mental health apps: a systematic review and meta-analysis of self-guided apps",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-16T00:00:00+00:00",
+   "summary": "Systematic review and meta-analysis examining the public availability and effectiveness of evidence-based self-guided mental health applications.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04569-2",
+   "title_hash": "25309c2e353acaf265e74ed573f38275",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "author correction to prior article; not news and unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04581-6",
+   "title_hash": "f6e997b933664598b9567b1865d1d189",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "author correction to prior article; not news and unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04498-0",
+   "title_hash": "7d8462197573d8c5b43a5a9644c57d2c",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": true,
+   "title": "A neuroprosthesis for restoring hand movement and sensation in a person with complete tetraplegia",
+   "source": "Nature Medicine",
+   "published": "2026-07-16T00:00:00+00:00",
+   "summary": "Bidirectional neuroprosthetic system restored hand motor and sensory function in a person with complete tetraplegia using brain signal decoding and targeted neuromodulation.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5HTqWgt6ctk",
+   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "news recap show; without specific episode topic, insufficient to assess substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WMiylHobhBM",
+   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "news recap show; without specific episode topic, insufficient to assess substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=axOcn--n_lM",
+   "title_hash": "8c3409e870df7b2bf02a63bfeca53434",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": true,
+   "title": "The Dangerous Illusion of AI Coding Skills",
+   "source": "Two Minute Papers",
+   "published": "2026-07-16T15:39:17+00:00",
+   "summary": "Analysis of limitations in AI coding models and the gap between marketed capabilities and real-world performance in software development.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/axOcn--n_lM/hqdefault.jpg",
+   "display_title": "Limitations of AI coding models in practice"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=-56F0u0xN1A",
+   "title_hash": "9297c37904c4d767492b40318f517180",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": true,
+   "title": "Bonsai 27B Deep Dive, 1-Bit, Ternary & Full Precision Compared!",
+   "source": "Bijan Bowen",
+   "published": "2026-07-16T14:12:00+00:00",
+   "summary": "Technical comparison of Bonsai 27B model across quantization methods including 1-bit, ternary, and full precision with local setup guidance.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/-56F0u0xN1A/hqdefault.jpg",
+   "display_title": "Bonsai 27B model quantization comparison and local deployment"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=KNPjRpNtQ7s",
+   "title_hash": "8128af25983fbcddc86a4ed7555fd814",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "marketing and vendor promotion from OpenAI's own channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Xk-X1TI2pQ4",
+   "title_hash": "9d6eaf57d80761b8b14c90a16c06ce58",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Fu3WWi-pAv4",
+   "title_hash": "83debf38cfc7178713b9ec740677d0bb",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1fL_lwsdMd4",
+   "title_hash": "a5581487490a8c558216d9a3d1b2b924",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=W0mU8zgop60",
+   "title_hash": "8a16d3be3fde800d079955d5cf9bd92a",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=K9_G-v8AE_s",
+   "title_hash": "b86eac873130dea1008642cc7f763f7f",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jaYDbeQTUR0",
+   "title_hash": "cd87f74d2d373179b6bbb6b97bc4d8d0",
+   "first_seen": "2026-07-16T17:41:18.924756+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
@@ -18606,13 +18779,13 @@
    "date": "July 16, 2026"
   },
   "clinical_practice": {
-   "text": "A new benchmark now evaluates how reliably large language models used in psychiatry avoid unsupported diagnoses by seeking clarification or choosing to abstain when given inadequate information, raising discussion about safety in AI-aided clinical decision making <a href=\"https://arxiv.org/abs/2607.13036\">[1]</a>. Complementing this, researchers assessed machine learning models&#x27; ability to analyze free-text chief complaints, showing improved triage and emergency response outside hospital settings <a href=\"https://www.nature.com/articles/s41746-026-03005-6\">[3]</a>. Advances in oncology practice are reflected in new work evaluating language model systems that generate breast cancer treatment recommendations, emphasizing the need for careful attention to safety and staging criteria in deploying such systems for clinical decision support <a href=\"https://arxiv.org/abs/2607.12051\">[7]</a>. China&#x27;s medical AI models are undergoing close evaluation as well, where recent studies have identified both significant performance gaps and optimization strategies relevant for clinical deployment <a href=\"https://ai.jmir.org/2026/1/e86864\">[4]</a>.\n\nAlso this week: the section highlights a systematic review covering evaluation metrics for cancer genetic risk chatbots, and introduces new work on interpretable and agentic AI for radiology and cognitive risk prediction. Eight safety and evaluation studies and five reports on clinical decision support are featured, with new research on explainable AI and multimodal health data.",
-   "hash": "67217a758bc13a24",
+   "text": "A new benchmark for evaluating large language models in psychiatric contexts assesses whether these systems can safely identify when patient information is insufficient for diagnosis, with an emphasis on abstaining or requesting clarification as needed <a href=\"https://arxiv.org/abs/2607.13036\">[1]</a>. Advances in human-AI collaboration have also been reported, with recent research analyzing how information flow and ecological factors can improve the effectiveness of online health consultations using AI <a href=\"https://medinform.jmir.org/2026/1/e90611\">[10]</a>. In emergency medicine, lexical machine learning models are being leveraged to improve the triage and response process based on how patients describe their chief complaints, contributing to enhanced out-of-hospital care <a href=\"https://www.nature.com/articles/s41746-026-03005-6\">[3]</a>. The role of AI in decision support continues to expand in oncology, where agentic systems are now being evaluated for their reliability and safety across breast cancer treatment planning <a href=\"https://arxiv.org/abs/2607.12051\">[11]</a>. In radiology, the development of interpretable and locally reasoned AI tools is facilitating more transparent decision making for medical imaging applications <a href=\"https://www.nature.com/articles/s41746-026-02994-8\">[15]</a>.\n\nAlso this week: eight new model releases include work on multilingual evaluation and ten-year risk prediction of cognitive impairment. Five papers address clinical evaluation and safety, and two focus on patient-facing health technologies, such as meta-analyses of mental health apps and chatbot-guided cancer risk assessment.",
+   "hash": "6a70fe1fcf36bd99",
    "date": "July 16, 2026"
   },
   "general_ai": {
-   "text": "OpenAI’s approach to improving model safety has advanced with GPT-Red, an adversarial language model engineered to identify cybersecurity vulnerabilities in OpenAI’s systems. Using insights from GPT-Red, OpenAI strengthened GPT-5.6 against attacks, signaling a practical step in addressing model robustness <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[3]</a>. Demonstrations of serious vulnerabilities persist, as shown by a researcher who manipulated Claude’s web-fetch tool to expose sensitive information, underscoring ongoing challenges in agent and tool integration security <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[5]</a>. The industry continues to face calls for regulation, with Google DeepMind’s CEO proposing the establishment of a global AI oversight body led by the US to manage frontier safety risks <a href=\"https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog\">[11]</a>. Meanwhile, recent industry developments include the launch of open-weights large language models designed for research accessibility and efficiency <a href=\"https://thinkingmachines.ai/news/introducing-inkling\">[2]</a>, and new evaluation frameworks that incorporate both human preference and factual accuracy to benchmark model reliability <a href=\"https://arena.ai/blog/factuality-in-arena\">[4]</a>.\n\nAlso this week: there are five new items addressing safety and reliability, two new model releases, and updates in AI evaluation methods and benchmark design. Industry and regulatory topics are covered in two recent analyses, including Google’s required platform access for competing assistants in Europe.",
-   "hash": "317965c677eeba14",
+   "text": "A new vulnerability demonstration in Claude’s web-fetch tool highlights ongoing concerns around safety and reliability in AI agent design, emphasizing the importance of rigorous integration practices <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[6]</a>. OpenAI introduced GPT-Red, a specialized adversarial model used to harden GPT-5.6 against cybersecurity threats, signaling continued investment in robust evaluation strategies <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[4]</a>. Leading model releases include Inkling, a high-parameter open-weights language model, as well as Bonsai 27B, designed for efficient mobile deployment <a href=\"https://thinkingmachines.ai/news/introducing-inkling\">[3]</a> <a href=\"https://prismml.com/news/bonsai-27b\">[10]</a>. NVIDIA’s Nemotron 3 Embed has set a new benchmark for agentic retrieval, supporting industry progress in embedding technology <a href=\"https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb\">[1]</a>. Discussions on factual accuracy persist, with a new leaderboard measuring human preferences alongside objective model outputs <a href=\"https://arena.ai/blog/factuality-in-arena\">[5]</a>.\n\nAlso this week: there are five safety and reliability reports, two benchmarking and evaluation studies, and analyses devoted to industry policy and emerging research methods. The section includes an assessment of Grok Build’s user code upload issue, and a review of AI agents’ effect on scientific validation bottlenecks.",
+   "hash": "a4efc40ddc6ab354",
    "date": "July 16, 2026"
   }
  },
