@@ -6,6 +6,8 @@ last_reviewed: 2026-06-11
 
 Curated external starting points for building artificial intelligence (AI) skills, organized by what you are trying to do. Every link was verified live when added, and all resources are free unless noted. For this site's own structured introduction, start with the [AI Literacy Pathway](../pathway/index.md).
 
+<img class="section-banner" src="../assets/section-learning.svg" alt="">
+
 ## Getting started
 
 For anyone who has not used AI tools seriously yet and wants a structured, non-technical foundation. Read [How LLMs Work](../basics/how-llms-work.md) on this site first; it makes both courses land better.

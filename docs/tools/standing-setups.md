@@ -4,6 +4,8 @@ last_reviewed: 2026-07-14
 
 # Standing Setups: Assistants that Remember
 
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Longer if you build your first project as you read</span>
+
 [Getting Better Answers](../basics/better-answers.md) explains the three levers that decide output quality: context, memory, and standing instructions. This page is about making the third lever permanent. If you find yourself re-explaining your course, your project, or your preferences at the start of every conversation, you are doing setup work that the tools are designed to hold for you. Set it up once, and every future session starts already knowing your job.
 
 ## The three containers
@@ -39,7 +41,9 @@ The common idea: **instructions plus materials, attached to the work instead of 
 <text x="330" y="200" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">set up once; every conversation inside inherits both boxes above it</text>
 </svg>
 <figcaption>The container holds what you would otherwise repeat; the chats just use it.</figcaption>
-</figure> Claude keeps each project's memory separate from your other work; on the OpenAI side, note that context does not automatically flow between chats unless it is in the project's sources, and OpenAI's own guidance is to keep rules that must always apply in the instructions file rather than relying on automatic memory: "Treat memories as a helpful recall layer, not as the only source for rules that must always apply."
+</figure>
+
+Claude keeps each project's memory separate from your other work; on the OpenAI side, note that context does not automatically flow between chats unless it is in the project's sources, and OpenAI's own guidance is to keep rules that must always apply in the instructions file rather than relying on automatic memory: "Treat memories as a helpful recall layer, not as the only source for rules that must always apply."
 
 ## Worked pattern: a course assistant
 

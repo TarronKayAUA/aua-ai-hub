@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07618c"/>
+      <stop offset="1" stop-color="#1b4165"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="140" rx="10" fill="url(#bg)"/>
+  <!-- a task walked end to end: numbered stops along a route, a check at the end -->
+  <path d="M 140 92 C 240 92 260 48 360 48 C 460 48 480 92 580 92 C 680 92 700 48 800 48 C 900 48 920 92 1020 92"
+        fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7">
+    <circle cx="140" cy="92" r="15"/>
+    <circle cx="360" cy="48" r="15"/>
+    <circle cx="580" cy="92" r="15"/>
+    <circle cx="800" cy="48" r="15"/>
+  </g>
+  <g fill="#ffffff" opacity="0.85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">
+    <text x="140" y="97">1</text>
+    <text x="360" y="53">2</text>
+    <text x="580" y="97">3</text>
+    <text x="800" y="53">4</text>
+  </g>
+  <g opacity="0.85">
+    <circle cx="1020" cy="92" r="16" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 1012 92 L 1018 98 L 1029 86" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.3">
+    <line x1="122" y1="122" x2="196" y2="122"/>
+    <line x1="342" y1="24" x2="404" y2="24"/>
+    <line x1="562" y1="122" x2="628" y2="122"/>
+    <line x1="782" y1="24" x2="848" y2="24"/>
+  </g>
+  <g fill="#ffffff" opacity="0.25">
+    <circle cx="1090" cy="46" r="4"/><circle cx="1120" cy="70" r="4"/><circle cx="1090" cy="94" r="4"/>
+  </g>
+</svg>

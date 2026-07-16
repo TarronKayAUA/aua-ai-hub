@@ -18,7 +18,15 @@ AUA encourages AI use where it helps you do your work, inside guardrails set by 
 
 1. **You are accountable.** Whatever a tool contributed, the work, the decisions, and the errors are yours. "The AI wrote it" is not a defense; the policy makes human oversight and final responsibility explicit.
 
-2. **Some data never goes in.** Public AI tools may store, learn from, or expose what you type. Entering sensitive information into them is prohibited unless a tool has been specifically vetted and approved for that data. The prohibited categories include patient health information (PHI), student education records protected by the Family Educational Rights and Privacy Act (FERPA), confidential personnel information, and AUA proprietary information including unpublished research data. The policy states this list is not exhaustive: treat secure assessment materials, unpublished manuscripts, and anything you would not email outside the university with the same caution.
+2. **Some data never goes in.** Public AI tools may store, learn from, or expose what you type, so entering sensitive information into them is prohibited unless a tool has been specifically vetted and approved for that data.
+
+    !!! danger "Never in a public AI tool"
+        - Patient health information (PHI)
+        - Student education records protected by the Family Educational Rights and Privacy Act (FERPA)
+        - Confidential personnel information
+        - AUA proprietary information, including unpublished research data
+
+    The policy states this list is not exhaustive: treat secure assessment materials, unpublished manuscripts, and anything you would not email outside the university with the same caution.
 
 3. **Label and verify.** AI-generated content must be identified and attributed according to academic standards and your course or department's guidelines, never presented as your own original work. Anything an AI produces that you intend to rely on (especially references, which models fabricate fluently) must be verified at the original source. AI is also not a primary source for foundational knowledge; your course materials and the academic literature are.
 

@@ -4,6 +4,8 @@ last_reviewed: 2026-07-14
 
 # AI Agents
 
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">The field guide; the hands-on pages are linked at the end</span>
+
 A chat assistant answers you. An agent acts for you: given a goal, it plans steps, uses tools (a browser, your files, a terminal, connected apps), checks its own progress, and keeps going until the task is done or it needs your input. That difference, from answering to acting, is the biggest shift in how these systems are used since chat itself, and it changes both what you can delegate and what you must supervise.
 
 ## How an agent works
@@ -55,6 +57,16 @@ The [AI Responsible Use Policy](../governance/policy.md)'s existing rules carry 
 ## The agents
 
 The [Agents category in the tools directory](index.md#agents) carries every entry with its status and cost. Below, each agent gets its own section: what it is, where it lives, one verified video walkthrough (official-channel videos where they exist), and its official starting documentation. Video links reviewed June 2026; tutorials in this space age within months, so check a video's date against the tool's current version.
+
+| Agent | Maker | The short version |
+| --- | --- | --- |
+| [Claude Code](#claude-code-anthropic) | Anthropic | Built for software work, increasingly used for any file-based task |
+| [Cowork](#cowork-anthropic) | Anthropic | The natural starting agent for faculty and staff who live in documents |
+| [Codex](#codex-openai) | OpenAI | Developer-oriented, with the most thorough onboarding video on this page |
+| [ChatGPT Work](#chatgpt-work-openai) | OpenAI | The gentlest entry point: give it an outcome, get finished documents |
+| [Manus](#manus) | Butterfly Effect, now Meta | Autonomous agent in a cloud workspace, working steps on its own infrastructure |
+| [Comet](#comet-perplexity) | Perplexity | The agent built into a web browser, acting across your open tabs |
+| [OpenClaw](#openclaw-open-source) | Open source | The self-hosted path: the most control and the most responsibility |
 
 ### Claude Code (Anthropic)
 
@@ -116,4 +128,40 @@ More: [OpenClaw](https://openclaw.ai) and its [documentation](https://docs.openc
 
 If you have never used an agent, start with ChatGPT Work or Cowork on a task you can fully verify: assembling a comparison table from web sources, or reorganizing a folder of documents you know well. Watch what it does, note where it asks permission, and calibrate from there. The [Prompting Fundamentals module](../pathway/prompting.md) applies doubly here: agents reward precise goals, stated constraints, and explicit deliverables.
 
-This page is the field guide; the rest of the site now carries the working layer. [Choosing Your Interface](interfaces.md) compares chat, working sessions, and code agents and explains the economics; [Module 7 of the pathway](../pathway/working-with-agents.md) is the 12-minute concept primer; [Your First Agent Session](first-session.md) walks your first 20 minutes step by step, including the settings worth changing; and [Standing Setups](standing-setups.md) makes your preferences permanent once you are running sessions routinely.
+This page is the field guide; the rest of the site carries the working layer:
+
+<div class="grid cards" markdown>
+
+- :material-compare:{ .lg .middle } __Choosing Your Interface__
+
+    ---
+
+    Compares chat, working sessions, and code agents, and explains the economics.
+
+    [Compare the rooms](interfaces.md)
+
+- :material-school:{ .lg .middle } __Working with Agents__
+
+    ---
+
+    Module 7 of the pathway: the 12-minute concept primer.
+
+    [Read the module](../pathway/working-with-agents.md)
+
+- :material-play-circle:{ .lg .middle } __Your First Agent Session__
+
+    ---
+
+    Your first 20 minutes step by step, including the settings worth changing.
+
+    [Run one session](first-session.md)
+
+- :material-briefcase:{ .lg .middle } __Standing Setups__
+
+    ---
+
+    Makes your preferences permanent once you are running sessions routinely.
+
+    [Set it up once](standing-setups.md)
+
+</div>

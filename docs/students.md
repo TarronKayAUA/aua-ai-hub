@@ -4,7 +4,7 @@ last_reviewed: 2026-07-14
 
 # For Students
 
-**For medical students · a map of what this site offers you**
+<span class="meta-chip">For medical students</span> <span class="meta-note">A map of what this site offers you</span>
 
 This site was built for the whole American University of Antigua College of Medicine (AUACOM) community, and much of it was built with you specifically in mind. Nothing here replaces your course materials or your own judgment; artificial intelligence (AI) tools are study aids with sharp edges, and knowing where the edges are is most of the skill. Three doors cover most visits; the full map follows below.
 

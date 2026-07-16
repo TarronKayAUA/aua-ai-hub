@@ -48,4 +48,8 @@ What separates video models in practice: temporal consistency (objects keep thei
 
 ## A note on medical use
 
-Everything on the [image generation page about medical contexts](image.md#medical-images-are-a-different-question) applies with more force here: there is no public benchmark for clinically accurate generated video, preference scores say nothing about anatomical or procedural correctness, and a fluent clip of a procedure can be confidently wrong in ways a non-expert will not catch. Generated video in teaching needs expert review and AI-generated labeling per the [AI Responsible Use Policy](../governance/policy.md), and patient-identifiable material never enters a generation tool. Synthetic media depicting real, identifiable people without consent is prohibited territory regardless of intent.
+Everything on the [image generation page about medical contexts](image.md#medical-images-are-a-different-question) applies with more force here: there is no public benchmark for clinically accurate generated video, preference scores say nothing about anatomical or procedural correctness, and a fluent clip of a procedure can be confidently wrong in ways a non-expert will not catch. Generated video in teaching needs expert review and AI-generated labeling per the [AI Responsible Use Policy](../governance/policy.md).
+
+!!! danger "Never crossed, whatever the tool"
+    - Patient-identifiable material never enters a generation tool.
+    - Synthetic media depicting real, identifiable people without consent is prohibited territory regardless of intent.

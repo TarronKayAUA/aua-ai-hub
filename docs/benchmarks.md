@@ -6,6 +6,8 @@ last_reviewed: 2026-06-11
 
 How do you know whether one artificial intelligence (AI) model is better than another? Benchmarks are the field's answer: standardized test sets that every model takes, so results can be compared. This page covers language models: how to read their leaderboards, the ones worth knowing, and a live snapshot of one of them. Generative media is ranked differently; see the companion pages on [image generation](benchmarks/image.md) and [video generation](benchmarks/video.md).
 
+<img class="section-banner" src="../assets/section-benchmarks.svg" alt="">
+
 ## How to read a leaderboard
 
 Three cautions keep benchmark numbers useful:
@@ -58,4 +60,5 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
 --8<-- "includes/livebench.md"
 
-A note on method: this table is rebuilt nightly by the same pipeline that refreshes the News section, using LiveBench's published per-task data. Category scores are the mean of each category's task scores, and the global average is the mean of the categories, matching how LiveBench presents its own leaderboard. If the upstream data is unreachable, the most recent successful snapshot stays in place and the date above tells you how fresh it is.
+??? note "How this table is built"
+    This table is rebuilt nightly by the same pipeline that refreshes the News section, using LiveBench's published per-task data. Category scores are the mean of each category's task scores, and the global average is the mean of the categories, matching how LiveBench presents its own leaderboard. If the upstream data is unreachable, the most recent successful snapshot stays in place and the date above tells you how fresh it is.

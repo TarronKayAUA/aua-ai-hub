@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07618c"/>
+      <stop offset="1" stop-color="#1b4165"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="140" rx="10" fill="url(#bg)"/>
+  <!-- a rolling seven-day strip, the newest day filled -->
+  <g fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.4">
+    <rect x="130" y="38" width="110" height="64" rx="7"/>
+    <rect x="260" y="38" width="110" height="64" rx="7"/>
+    <rect x="390" y="38" width="110" height="64" rx="7"/>
+    <rect x="520" y="38" width="110" height="64" rx="7"/>
+    <rect x="650" y="38" width="110" height="64" rx="7"/>
+    <rect x="780" y="38" width="110" height="64" rx="7"/>
+  </g>
+  <rect x="910" y="38" width="110" height="64" rx="7" fill="#ffffff" opacity="0.2"/>
+  <rect x="910" y="38" width="110" height="64" rx="7" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85"/>
+  <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.5">
+    <line x1="146" y1="58" x2="200" y2="58"/>
+    <line x1="276" y1="58" x2="340" y2="58"/>
+    <line x1="406" y1="58" x2="454" y2="58"/>
+    <line x1="536" y1="58" x2="600" y2="58"/>
+    <line x1="666" y1="58" x2="722" y2="58"/>
+    <line x1="796" y1="58" x2="856" y2="58"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.3">
+    <line x1="146" y1="76" x2="182" y2="76"/>
+    <line x1="276" y1="76" x2="318" y2="76"/>
+    <line x1="406" y1="76" x2="436" y2="76"/>
+    <line x1="536" y1="76" x2="578" y2="76"/>
+    <line x1="666" y1="76" x2="700" y2="76"/>
+    <line x1="796" y1="76" x2="834" y2="76"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.85">
+    <line x1="926" y1="58" x2="990" y2="58"/>
+    <line x1="926" y1="76" x2="968" y2="76"/>
+  </g>
+  <g fill="#ffffff" opacity="0.25">
+    <circle cx="1080" cy="46" r="4"/><circle cx="1110" cy="70" r="4"/><circle cx="1080" cy="94" r="4"/>
+  </g>
+</svg>

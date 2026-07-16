@@ -51,7 +51,7 @@ Adapt freely; the bracketed parts are yours to fill. Each is written to be speci
 <figcaption>Choose per course, even per assessment; the floor comes from the university policy and cannot be lowered by a syllabus.</figcaption>
 </figure>
 
-**Restrictive (AI not permitted for graded work):**
+### Restrictive: AI not permitted for graded work
 
 ```text
 In this course, the work you submit must be your own without the assistance
@@ -64,7 +64,7 @@ artifact is AI-produced]. If you are unsure whether a use is permitted, ask
 before using it.
 ```
 
-**Disclosure-based (permitted for specified uses, with attribution):**
+### Disclosure-based: permitted for specified uses, with attribution
 
 ```text
 You may use generative AI tools in this course for [brainstorming, outlining,
@@ -77,7 +77,7 @@ integrity matter. Never enter patient information or other students'
 identifiable work into any AI tool.
 ```
 
-**Encouraged (integrated, with verification standards):**
+### Encouraged: integrated, with verification standards
 
 ```text
 This course treats AI tools as professional instruments and you are

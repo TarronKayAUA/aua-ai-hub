@@ -4,7 +4,9 @@ last_reviewed: 2026-07-02
 
 # How LLMs Work
 
-A plain-language primer for medical educators and students. No math, no code, about a ten-minute read.
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">No math, no code</span>
+
+A plain-language primer for medical educators and students.
 
 ## What a large language model is
 
@@ -135,9 +137,9 @@ Newer systems reduce this in two main ways. Retrieval-augmented generation (RAG)
 
 A few rules of thumb follow directly from the mechanics described above.
 
-LLMs are strongest at transforming text you give them: summarizing an article, restructuring notes into a table, drafting questions from your lecture content, adjusting the reading level of patient instructions, or critiquing a draft. In these tasks the source material is in the context window, so the model leans less on its imperfect memory.
+**Strongest: transforming text you give them.** Summarizing an article, restructuring notes into a table, drafting questions from your lecture content, adjusting the reading level of patient instructions, or critiquing a draft. In these tasks the source material is in the context window, so the model leans less on its imperfect memory.
 
-They are weakest when treated as a search engine or an oracle: asked for specific citations, exact dosages, current guidelines, or anything where the precise fact matters and is not supplied in the conversation. These are the situations where hallucination does real damage.
+**Weakest: treated as a search engine or an oracle.** Asked for specific citations, exact dosages, current guidelines, or anything where the precise fact matters and is not supplied in the conversation. These are the situations where hallucination does real damage.
 
 Treat outputs as a competent first draft from an assistant who has read widely but verifies nothing. Check claims against primary sources before they reach students or patients. Never paste protected health information (PHI) or student records covered by the Family Educational Rights and Privacy Act (FERPA) into consumer AI tools; see the [tools directory](../tools/index.md) for the governance status of each tool at our institution.
 

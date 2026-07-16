@@ -2,11 +2,13 @@
 last_reviewed: 2026-07-10
 ---
 
-# Reviewing the Literature
+# Playbook: Reviewing the Literature
 
 <span class="meta-chip">For faculty and graduate student researchers</span> <span class="meta-note">From question to appraised evidence</span>
 
 --8<-- "includes/prompt-maturity-note.md"
+
+## The task
 
 Artificial intelligence (AI) has changed literature work more than any other research task: tools now find, screen, and summarize papers at a speed no human matches. What has not changed is the standard your review will be judged by, and the failure that sinks manuscripts fastest, citations that do not check out, is a signature AI failure. This playbook walks the workflow that captures the speed without inheriting the risk. The [AI for Research guide](../tools/research.md) describes the tools themselves; this page is the discipline for using them in sequence.
 
@@ -77,7 +79,7 @@ Artificial intelligence (AI) has changed literature work more than any other res
 - Manuscripts you receive for peer review, and other people's unpublished work, never enter any AI tool.
 - Disclose AI assistance per your target venue's instructions; the International Committee of Medical Journal Editors (ICMJE) recommendations are the baseline: writing assistance in the acknowledgments, AI used in data collection or analysis in the methods, and responsibility for all of it stays with the authors.
 
-## Verify before you rely on it
+## Before you rely on it
 
 - [ ] The search is reproducible: databases, query strings, dates, and counts are recorded.
 - [ ] Screening criteria were frozen before screening began, and every AI screening decision carries its evidence quote.

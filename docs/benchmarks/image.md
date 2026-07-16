@@ -72,8 +72,16 @@ When you read an image arena, look past the overall rank to the things that sepa
 
 ## Medical images are a different question
 
-No public leaderboard ranks models on generating *accurate* medical imagery, and the peer-reviewed evidence says the gap between pretty and correct is wide. A 2025 study in the Journal of Pediatric Ophthalmology and Strabismus had general text-to-image models depict common pediatric eye pathologies and scored them against human medical illustration: the generated images rated poorly overall and worse on pathological accuracy specifically ([DOI](https://doi.org/10.3928/01913913-20250724-03)). A clinical perspective in Cureus reaches the same balance point for practice: generated imagery may eventually enrich patient communication and teaching, but inaccuracy and bias demand that it supplement, never substitute for, verified clinical material ([DOI](https://doi.org/10.7759/cureus.68313)). The technical literature on medical image synthesis and translation is advancing quickly, with its own evaluation metrics distinct from preference arenas; a 2025 review in Medical Image Analysis maps that landscape ([DOI](https://doi.org/10.1016/j.media.2025.103605)).
+No public leaderboard ranks models on generating *accurate* medical imagery, and the peer-reviewed evidence says the gap between pretty and correct is wide:
 
-The practical guidance for AUACOM follows directly: treat general-purpose image models as illustration tools, not anatomy references. A generated image used in teaching needs expert review for accuracy and labeling as AI-generated per the [AI Responsible Use Policy](../governance/policy.md), and generated imagery has no place in diagnosis. Never upload identifiable patient images to a generation tool; that is patient data in a public tool, regardless of creative intent.
+- A 2025 study in the Journal of Pediatric Ophthalmology and Strabismus had general text-to-image models depict common pediatric eye pathologies and scored them against human medical illustration: the generated images rated poorly overall and worse on pathological accuracy specifically ([DOI](https://doi.org/10.3928/01913913-20250724-03)).
+- A clinical perspective in Cureus reaches the same balance point for practice: generated imagery may eventually enrich patient communication and teaching, but inaccuracy and bias demand that it supplement, never substitute for, verified clinical material ([DOI](https://doi.org/10.7759/cureus.68313)).
+- The technical literature on medical image synthesis and translation is advancing quickly, with its own evaluation metrics distinct from preference arenas; a 2025 review in Medical Image Analysis maps that landscape ([DOI](https://doi.org/10.1016/j.media.2025.103605)).
+
+The practical guidance for the American University of Antigua College of Medicine (AUACOM) follows directly: treat general-purpose image models as illustration tools, not anatomy references. A generated image used in teaching needs expert review for accuracy and labeling as AI-generated per the [AI Responsible Use Policy](../governance/policy.md).
+
+!!! danger "Never crossed, whatever the tool"
+    - Identifiable patient images never enter a generation tool; that is patient data in a public tool, regardless of creative intent.
+    - Generated imagery has no place in diagnosis.
 
 For how these models work and how to run open ones yourself, see [Running Models Locally](../tools/local.md). For language model rankings, see [Language Model Benchmarks](../benchmarks.md); for video generation, the [Video Generation Benchmarks](video.md).

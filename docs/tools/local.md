@@ -4,6 +4,8 @@ last_reviewed: 2026-07-02
 
 # Running AI Models Locally
 
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">A working local model by the end</span>
+
 Every assistant in the [tools directory](index.md) runs in a vendor's cloud: what you type travels to their servers. There is another way. The [open-weights models](index.md#open-weights-models) at the bottom of the directory can be downloaded and run entirely on your own computer, where nothing you type leaves the machine. This page is a practical starting point.
 
 **Why bother.** Three reasons people run models locally: privacy (your text never leaves your hardware), cost (the models and the tools below are free), and learning (nothing demystifies a language model like running one yourself). The honest trade-off: local models are smaller and noticeably less capable than frontier cloud models, and they run slower. For drafting an email that is fine; for hard reasoning you will notice the gap.

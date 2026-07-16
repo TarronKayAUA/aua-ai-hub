@@ -4,6 +4,8 @@ last_reviewed: 2026-07-02
 
 # Hardware for Local AI
 
+<span class="meta-chip">About 12 minutes</span> <span class="meta-note">For sizing a machine before you buy, rent, or reuse one</span>
+
 [Running Models Locally](local.md) gets you started in ten minutes. This page is the deeper layer: what actually determines whether a model runs on your machine and how fast it feels, taught through one piece of arithmetic you can do on a napkin. By the end you should be able to estimate, for any model and any computer, whether it fits and roughly how fast it will run, without buying anything or trusting a benchmark chart.
 
 !!! note "Should you run models locally at all?"
@@ -40,6 +42,38 @@ Real systems achieve roughly half to two thirds of that ceiling. Memory bandwidt
 | Hard disk (HDD) | ~0.2 GB/s | Not usable for inference at all |
 
 Two consequences worth internalizing. First, **VRAM versus RAM is not about speed of the chips near your processor; it is about the width of the pipe**: a midrange graphics card moves data four to six times faster than excellent system memory. Second, **speed follows where the bytes live**. A model entirely in the fast tier runs at the fast tier's rate; every byte it reads from a slower tier is paid for at that tier's rate.
+
+<figure class="figure">
+<svg viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Memory tiers drawn as pipes of very different widths: video memory moves hundreds of gigabytes per second, system memory tens, a solid-state drive single digits. A model split across tiers pays each tier's rate for the bytes living there, and the tokens-per-second ceiling is bandwidth divided by bytes read per token">
+<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipe decides the speed</text>
+<rect x="20" y="36" width="180" height="52" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
+<text x="110" y="57" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">graphics memory (VRAM)</text>
+<text x="110" y="74" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">250 to 1,000+ GB/s</text>
+<rect x="20" y="102" width="180" height="52" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.2"/>
+<text x="110" y="123" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">system memory (RAM)</text>
+<text x="110" y="140" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">60 to 100 GB/s</text>
+<rect x="20" y="168" width="180" height="52" rx="7" fill="none" stroke="#c62828" stroke-width="1.2"/>
+<text x="110" y="189" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">solid-state drive (SSD)</text>
+<text x="110" y="206" text-anchor="middle" font-size="9" fill="#c62828">3 to 7 GB/s: a hard stop</text>
+<rect x="204" y="48" width="236" height="28" fill="var(--md-primary-fg-color)" opacity="0.85"/>
+<rect x="204" y="122" width="236" height="10" fill="var(--md-primary-fg-color)" opacity="0.55"/>
+<rect x="204" y="192" width="236" height="3" fill="#c62828" opacity="0.7"/>
+<text x="322" y="94" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">pipe width is the published</text>
+<text x="322" y="107" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">"memory bandwidth" number</text>
+<rect x="444" y="36" width="196" height="184" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2"/>
+<text x="542" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">the processor</text>
+<text x="542" y="80" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">every token generated</text>
+<text x="542" y="94" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">rereads all the model's</text>
+<text x="542" y="108" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">active weights, and each</text>
+<text x="542" y="122" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">byte moves at the speed</text>
+<text x="542" y="136" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">of the tier it lives in</text>
+<rect x="460" y="152" width="164" height="52" rx="7" fill="var(--md-primary-fg-color)"/>
+<text x="542" y="173" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#ffffff">tokens/s ceiling ≈ bandwidth</text>
+<text x="542" y="189" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#ffffff">÷ bytes read per token</text>
+<text x="330" y="242" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">real systems reach roughly half to two thirds of the ceiling; a model split across tiers pays each tier's rate</text>
+</svg>
+<figcaption>Speed follows where the bytes live: the same model is instant from the wide pipe and a crawl from the narrow one.</figcaption>
+</figure>
 
 ### When it does not quite fit: partial offloading
 

@@ -16,7 +16,16 @@ Turn an exam performance report (a comprehensive exam, a shelf exam, a self-asse
 
 Before any artificial intelligence (AI) enters the picture, know your data. If you have taken a National Board of Medical Examiners (NBME) exam, you already have a dashboard: **INSIGHTS**, reached through the [MyNBME examinee portal](https://www.mynbme.org/). It collects your NBME self-assessments from the past two years and your subject and comprehensive exams from early 2024 onward, under the account email the exam was tied to (United States Medical Licensing Examination results are not included, and older score reports come from the school), across four tabs: your exam list with downloadable score reports, per-exam results, question-level detail, and comparisons across multiple takes of the same exam type.
 
-For the basic science comprehensive exam, the results view shows your total score as an equated percent correct (EPC), an estimated probability of passing Step 1 if you tested within a week, and each content area scored against a national comparison group of Step 1 first-takers, flagged lower, about the same, or higher, with suggested areas of focus, up to six, split between organ systems and disciplines. The clinical science comprehensive exam is scored differently: a 1 to 300 scale estimating Step 2 Clinical Knowledge performance, with the pass probability tied to that exam instead. Most tables export to a spreadsheet, and self-assessments additionally record time spent per question, the only NBME report with pacing data; if timing is your suspected problem, a self-assessment is where the evidence lives. Your in-house exams produce category and question-level reports through the exam platform, and the same method below applies to them.
+The reports carry different rulers, so read yours against the right row:
+
+| Report | Score scale | Pass estimate | What only this report has |
+| --- | --- | --- | --- |
+| Basic science comprehensive exam | Equated percent correct (EPC) | Probability of passing Step 1 if you had tested within a week | Each content area scored against a national comparison group of Step 1 first-takers, flagged lower, about the same, or higher, with up to six suggested areas of focus split between organ systems and disciplines |
+| Clinical science comprehensive exam | 1 to 300, estimating Step 2 Clinical Knowledge performance | Tied to Step 2 Clinical Knowledge instead | |
+| NBME self-assessment | | | Time spent per question, the only NBME report with pacing data; if timing is your suspected problem, this is where the evidence lives |
+| In-house exam | | | Category and question-level reports through the exam platform; the same method below applies to them |
+
+Most tables in INSIGHTS export to a spreadsheet.
 
 <figure class="figure">
 <svg viewBox="0 0 660 305" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic of the INSIGHTS exam results view: four tabs across the top, a total score gauge on the left which for the basic science comprehensive exam adds an estimated probability of passing Step 1, content areas on the right scored against a national comparison group and flagged lower, same, or higher, and a suggested areas of focus strip along the bottom">

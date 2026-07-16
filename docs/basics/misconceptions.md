@@ -4,6 +4,8 @@ last_reviewed: 2026-07-02
 
 # Common Misconceptions
 
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 5 minutes</span>
+
 Frequent misunderstandings about artificial intelligence (AI) tools, and what is actually true. Each section is short and self-contained.
 
 ## :material-database-off: "It looks up answers in a database"

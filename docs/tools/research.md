@@ -4,6 +4,8 @@ last_reviewed: 2026-07-08
 
 # AI for Research
 
+<span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 12 minutes</span>
+
 Artificial intelligence tools now cover most stages of a research project, from finding literature to checking a manuscript's citations. This page maps the current landscape to the tasks researchers actually do, with honest notes on cost, field fit, and where each tool falls short. Entries here also appear in the [tools directory](index.md) with their governance status; a listing is not an endorsement.
 
 !!! warning "Three rules before any of the tools"
@@ -99,7 +101,13 @@ For general-purpose agents (coding assistants, computer-use tools) that also ser
 
 ## Judged by the same rulers
 
-The pipeline's last stage, writing and disclosure, is the one no tool changes. AI-assisted research is held to the same instruments as any research: the reporting guideline for your design (the EQUATOR Network's checklists, such as STROBE for observational studies or CONSORT for trials), rigor instruments like the Medical Education Research Study Quality Instrument (MERSQI) in medical education, and the International Committee of Medical Journal Editors (ICMJE) rules on authorship, which are explicit that an AI tool cannot be an author, that AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods, and that responsibility for every AI-assisted sentence stays with the humans who sign the paper. The prompt library's [Pre-submission reviewer and Reporting guideline auditor](../prompts/index.md) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
+The pipeline's last stage, writing and disclosure, is the one no tool changes. AI-assisted research is held to the same instruments as any research:
+
+- **Reporting guidelines** for your design: the EQUATOR Network's checklists, such as STROBE for observational studies or CONSORT for trials.
+- **Rigor instruments** like the Medical Education Research Study Quality Instrument (MERSQI) in medical education.
+- **The International Committee of Medical Journal Editors (ICMJE) authorship rules**, which are explicit on three points: an AI tool cannot be an author; AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods; and responsibility for every AI-assisted sentence stays with the humans who sign the paper.
+
+The prompt library's [Pre-submission reviewer and Reporting guideline auditor](../prompts/index.md) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
 
 ## Cost and field fit at a glance
 
@@ -107,15 +115,15 @@ Prices are approximate, checked July 2026 from vendor pages, and change often; t
 
 | Tool | Cost | Best fit for AUA researchers |
 | --- | --- | --- |
-| Scopus with AI | AUA institutional license; no cost to AUA users | Everyone; cited orientation summaries plus citation-database depth |
-| Semantic Scholar | Free | Everyone; all fields including medical education |
-| ResearchRabbit | Free (feature-complete tier) | Everyone; literature mapping in any field |
-| NotebookLM | Free; higher limits on Google's paid AI plans | Everyone; synthesis from your own paper set |
-| Consensus | Free tier; Pro about $10/month, student discounts | Clinical and biomedical evidence questions |
-| Elicit | Free tier; paid tiers roughly $7 to $49/month | Systematic-review style screening and extraction |
-| Scite | About $20/month, free trial | Verifying how key claims held up; biomedical depth |
-| OpenEvidence | Free for verified US clinicians and US medical students | Clinical questions; US-credential holders only |
-| Claude Science | Included in paid Claude plans (beta) | Computational and laboratory science; statistics-heavy work |
+| [Scopus with AI](#scopus-with-ai-licensed-for-aua) | AUA institutional license; no cost to AUA users | Everyone; cited orientation summaries plus citation-database depth |
+| [Semantic Scholar](#finding-and-mapping-literature) | Free | Everyone; all fields including medical education |
+| [ResearchRabbit](#finding-and-mapping-literature) | Free (feature-complete tier) | Everyone; literature mapping in any field |
+| [NotebookLM](#synthesizing-from-your-own-sources) | Free; higher limits on Google's paid AI plans | Everyone; synthesis from your own paper set |
+| [Consensus](#answering-evidence-questions) | Free tier; Pro about $10/month, student discounts | Clinical and biomedical evidence questions |
+| [Elicit](#screening-and-extracting) | Free tier; paid tiers roughly $7 to $49/month | Systematic-review style screening and extraction |
+| [Scite](#answering-evidence-questions) | About $20/month, free trial | Verifying how key claims held up; biomedical depth |
+| [OpenEvidence](#answering-evidence-questions) | Free for verified US clinicians and US medical students | Clinical questions; US-credential holders only |
+| [Claude Science](#analysis-and-agentic-workbenches) | Included in paid Claude plans (beta) | Computational and laboratory science; statistics-heavy work |
 
 Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, NotebookLM, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
 

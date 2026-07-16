@@ -4,6 +4,8 @@ last_reviewed: 2026-07-13
 
 # Chat, Work, or Code: Choosing Your AI Interface
 
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 12 minutes</span>
+
 The same model behaves very differently depending on the room you put it in. A web chat, a working session, and a code agent can all run the identical frontier model, but the interface decides what the model can actually do, how much of your material it can see, and what the work costs. This page explains the three kinds of interface, what a tool call is, why letting a model run tools on your machine is dramatically cheaper for heavy work, and how to equip a computer so an agent can do real work on it.
 
 !!! note "This page is not about running models locally"

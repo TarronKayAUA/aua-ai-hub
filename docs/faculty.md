@@ -4,7 +4,7 @@ last_reviewed: 2026-07-14
 
 # For Faculty & Staff
 
-**For faculty and staff · a map of what this site offers you**
+<span class="meta-chip">For faculty and staff</span> <span class="meta-note">A map of what this site offers you</span>
 
 This site was built for the whole American University of Antigua College of Medicine (AUACOM) community, and the working half of it, the playbooks, prompts, and tool guidance, was written for your tasks first. Artificial intelligence (AI) can take real work off your desk, and it can also fabricate a citation or leak a student record in the same confident tone. Three doors cover most visits; the full map, routed by task, follows below.
 
@@ -57,17 +57,19 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 
 ## Working with AI, by task
 
-- **Preparing or revising a lecture**: the [lecture preparation playbook](playbooks/lecture-prep.md) walks the full workflow, from source gathering to slide outlines, with verification steps built in.
-- **Writing and vetting exam questions**: the [exam questions playbook](playbooks/exam-items.md) covers item drafting and quality checks without exposing secure content.
-- **Setting expectations for your course**: the [syllabus AI statement playbook](playbooks/syllabus-statement.md) offers three adaptable template tiers, from restrictive to encouraged, because the policy delegates assignment-level rules to you.
-- **Research and literature work**: the [literature review playbook](playbooks/literature-reviews.md) walks the workflow from question to appraised evidence; the [AI for Research guide](tools/research.md) maps the licensed and free tools to each stage, Scopus first where it is strongest; and the [Research and Scholarship module](pathway/research.md) covers scholarly integrity, authorship, and disclosure.
-- **Reusable prompts**: the [prompt library](prompts/index.md) holds templates for teaching and administrative tasks, each carrying a Draft or Reviewed status.
-- **Choosing a tool for anything else**: the [tool directory](tools/index.md) is grouped by task, and every entry carries a status describing the institution's relationship with the tool; a listing is not an endorsement, and committee review of any tool can be requested through the [review process](governance/review-process.md).
-- **Feedback on student writing**: the [writing feedback playbook](playbooks/writing-feedback.md) covers rubric-grounded formative feedback with the records rules built in; grades stay entirely human.
-- **Memos, minutes, and reports**: the [administrative drafting playbook](playbooks/admin-drafting.md) keeps every fact yours while the model does the arranging.
-- **Advising students on exam performance**: the [score reports playbook](playbooks/score-reports.md) is written for students and their advisors: honest study plans from National Board of Medical Examiners (NBME) INSIGHTS data, the records rules built in, and an advisor note on using it in meetings with the student driving.
-- **Set it up once**: [Standing Setups](tools/standing-setups.md) shows how a project per course, with your syllabus and objectives attached, ends the re-explaining; [Your First Agent Session](tools/first-session.md) is the 20-minute walkthrough for file-based work.
-- **Getting better answers from any tool**: [Getting Better Answers](basics/better-answers.md) explains the three levers that decide output quality: context, memory, and standing instructions.
+| Your task | Start here | Worth knowing |
+| --- | --- | --- |
+| Preparing or revising a lecture | [Preparing a Lecture](playbooks/lecture-prep.md) | From source gathering to slide outlines, verification steps built in |
+| Writing and vetting exam questions | [Writing and Vetting Exam Questions](playbooks/exam-items.md) | Item drafting and quality checks without exposing secure content |
+| Setting expectations for your course | [Your Syllabus AI Statement](playbooks/syllabus-statement.md) | Three adaptable template tiers; the policy delegates assignment-level rules to you |
+| Research and literature work | [Reviewing the Literature](playbooks/literature-reviews.md) | [AI for Research](tools/research.md) maps tools to each stage; [Research and Scholarship](pathway/research.md) covers integrity, authorship, and disclosure |
+| Reusable prompts | [Prompt library](prompts/index.md) | Templates for teaching and administrative tasks, each with a Draft or Reviewed status |
+| Choosing a tool for anything else | [Tool directory](tools/index.md) | Grouped by task; a listing is not an endorsement, and review can be [requested](governance/review-process.md) |
+| Feedback on student writing | [Feedback on Student Writing](playbooks/writing-feedback.md) | Rubric-grounded, records rules built in; grades stay entirely human |
+| Memos, minutes, and reports | [Administrative Drafting](playbooks/admin-drafting.md) | Every fact yours while the model does the arranging |
+| Advising students on exam performance | [Making Sense of Your Score Reports](playbooks/score-reports.md) | Written for students and their advisors, with an advisor note; honest plans from National Board of Medical Examiners (NBME) INSIGHTS data |
+| Ending the re-explaining | [Standing Setups](tools/standing-setups.md) | A project per course; [Your First Agent Session](tools/first-session.md) is the 20-minute walkthrough for file-based work |
+| Getting better answers from any tool | [Getting Better Answers](basics/better-answers.md) | The three levers that decide output quality: context, memory, and standing instructions |
 
 ## Staying current
 

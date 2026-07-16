@@ -2046,6 +2046,11 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
         "Everything kept in the last seven days, refreshed nightly. "
         + selection_note("../"),
         "",
+        # Raw HTML is not path-rewritten by MkDocs: the page serves from
+        # /news/this-week/, so docs/assets needs ../../ here.
+        '<img class="section-banner" '
+        'src="../../assets/section-this-week.svg" alt="">',
+        "",
     ]
     all_records = [r for records in by_category.values() for r in records]
     suppress = _generic_thumbnails(all_records)
