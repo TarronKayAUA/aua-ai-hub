@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new evaluation of Chinese medical large language models has mapped out critical performance gaps and paths for optimization, adding to the understanding of how these tools can be safely deployed in clinical practice <a href="https://ai.jmir.org/2026/1/e86864">[1]</a>. In parallel, efforts to assess the reliability of language model-driven cancer treatment recommendation systems continue to highlight safety and clinical validity as central concerns when artificial intelligence is used to support oncological decision making <a href="https://arxiv.org/abs/2607.12051">[4]</a>. Research into the effectiveness of human-AI collaborative consultation also underscores the importance of considering information ecology in shaping optimal workflows and outcomes within online health communities <a href="https://medinform.jmir.org/2026/1/e90611">[3]</a>. Reviews addressing how chatbots assess cancer genetic risk and how fairness is managed in multimodal machine learning for clinical decision support illustrate ongoing attention to both evaluation metrics and ethical considerations in clinical AI <a href="https://ai.jmir.org/2026/1/e76400">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03000-x">[14]</a>.</p>
-<p>Also this week: Seven new studies address safety and evaluation across model types. One peer-reviewed paper presents an interpretable AI system for radiology; another examines explainable models for long-term cognitive risk in a rural population. Analysis of clinical investigation landscapes in South Korea is now included.</p>
+<p>A new benchmark aimed at improving large language model safety in psychiatry assesses whether models request clarification or abstain from diagnosis when information is incomplete, addressing a core concern in clinical deployment <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Research continues to identify performance gaps in Chinese medical language models, highlighting both the challenges and the potential for targeted optimization as these systems move toward real-world use <a href="https://ai.jmir.org/2026/1/e86864">[3]</a>. Decision support for breast cancer treatment, especially across varying clinical stages, is under evaluation for reliability and safety, raising important considerations for adoption in oncology <a href="https://arxiv.org/abs/2607.12051">[6]</a>. Building on these advances, reviewers have examined explainable AI methods for clinical data, focusing on interpretability and the ability to make AI-driven findings more transparent for practitioners <a href="https://www.nature.com/articles/s41746-026-02953-3">[8]</a>. Ongoing assessment of information flow in human-AI collaborations rounds out the picture of how these systems integrate with current clinical workflows <a href="https://medinform.jmir.org/2026/1/e90611">[5]</a>.</p>
+<p>Also this week: seven papers on AI safety and evaluation, five items on clinical decision support, and studies on clinical documentation and imaging systems. Regulatory investigations into medical devices in South Korea and a metadata catalog for Swiss health data are included. The section covers both new evaluation benchmarks and multi-omics machine learning approaches for cancer care.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.13036">Ask Before You Diagnose: Safe-Psych, a Sequential Evaluation Benchmark for LLMs in Psychiatry</a>
+    <p class="news-card-summary">Safe-Psych benchmark evaluates whether large language models in psychiatry request clarification or abstain when given insufficient information rather than providing unsupported diagnoses.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.13430">Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet</a>
+    <p class="news-card-summary">Study compares post-training methods for small language models generating patient-friendly medication leaflets from structured biomedical data.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02981-z">A unified multi-modal foundation model for end-to-end emergency care</a>
     <p class="news-card-summary">A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03000-x">Fairness in multimodal machine learning applications in clinical decision support: a systematic review</a>
-    <p class="news-card-summary">Systematic review of fairness issues in multimodal machine learning systems for clinical decision support.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02977-9">Transformer-DAPT: AI-based dynamic assessment of ischemic and bleeding risks in patients on DAPT following PCI</a>
-    <p class="news-card-summary">Peer-reviewed study describes a transformer-based model for predicting ischemic and bleeding risks in patients receiving dual antiplatelet therapy after coronary intervention.</p>
   </div>
 </div>
 </div>
