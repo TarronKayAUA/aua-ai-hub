@@ -4,6 +4,8 @@ last_reviewed: 2026-07-14
 
 # Prompt Library
 
+<img class="section-banner" src="../assets/section-prompts.svg" alt="">
+
 Reusable prompts for teaching, research, and studying: pick from the at-a-glance table below, or browse by section. Each prompt is a starting template; replace the bracketed placeholders with your specifics, and use the copy button in the corner of each block. The full text of each prompt sits behind a "Show the prompt" toggle to keep the page scannable; following any link to a prompt opens its toggle for you.
 
 !!! warning "Drafts pending review"
@@ -15,6 +17,8 @@ Reusable prompts for teaching, research, and studying: pick from the at-a-glance
 Two habits make every prompt here work better: give the model your actual materials (objectives, criteria, draft items) rather than asking from a blank page, and ask it to show reasoning you can check rather than bare answers. For the mechanics behind both, what fits in a conversation, when to start a fresh one, and where standing instructions belong, see [Getting Better Answers](../basics/better-answers.md). New to prompting altogether? Start with the guides and videos on [Learning to Prompt](learning.md); studies specific to one kind of task appear as further reading under that task's section below.
 
 <!-- render:prompts -->
+
+---
 
 ## Community Prompt Exchange
 

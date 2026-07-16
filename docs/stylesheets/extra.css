@@ -115,6 +115,40 @@
   font-size: 0.8rem;
 }
 
+/* Navigation orientation: the active top tab gets a pill, tabs get thin
+   separators, and the active sidebar items get an accent rail. All are
+   orientation signals, not decoration. */
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link--active {
+  background-color: rgba(255, 255, 255, 0.16);
+  border-radius: 1rem;
+  padding: 0.15rem 0.7rem;
+}
+.md-tabs__item + .md-tabs__item {
+  position: relative;
+}
+
+.md-tabs__item + .md-tabs__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.9rem;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.22);
+}
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--secondary .md-nav__link--active {
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding-left: 0.45rem;
+  margin-left: -0.65rem;
+}
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  border-left-color: var(--md-primary-fg-color--light);
+}
+
 /* Page metadata chips (audience, time) under module and playbook titles;
    non-interactive, paired with a muted note for the remainder. */
 .md-typeset .meta-chip {

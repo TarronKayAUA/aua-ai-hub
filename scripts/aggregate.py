@@ -2075,6 +2075,11 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                *(render_item_md(r, suppress) for r in records),
                "</div>"]))
         lines.append("")
+    if videos or podcasts:
+        # Curated articles above, media below: a change of kind, marked
+        # the same way the tools page splits services from model files.
+        if not empty:
+            lines.extend(["---", ""])
     if videos:
         empty = False
         noun = "video" if len(videos) == 1 else "videos"

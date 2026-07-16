@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07618c"/>
+      <stop offset="1" stop-color="#1b4165"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="140" rx="10" fill="url(#bg)"/>
+  <!-- abstract tool-card grid with status dots -->
+  <g fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.35">
+    <rect x="120" y="28" width="150" height="36" rx="7"/>
+    <rect x="290" y="28" width="150" height="36" rx="7"/>
+    <rect x="460" y="28" width="150" height="36" rx="7"/>
+    <rect x="630" y="28" width="150" height="36" rx="7"/>
+    <rect x="800" y="28" width="150" height="36" rx="7"/>
+    <rect x="120" y="76" width="150" height="36" rx="7"/>
+    <rect x="290" y="76" width="150" height="36" rx="7"/>
+    <rect x="460" y="76" width="150" height="36" rx="7"/>
+    <rect x="630" y="76" width="150" height="36" rx="7"/>
+    <rect x="800" y="76" width="150" height="36" rx="7"/>
+  </g>
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="248" cy="46" r="5"/><circle cx="418" cy="46" r="5"/>
+    <circle cx="588" cy="46" r="5"/><circle cx="758" cy="46" r="5"/>
+    <circle cx="928" cy="46" r="5"/><circle cx="248" cy="94" r="5"/>
+    <circle cx="418" cy="94" r="5"/><circle cx="588" cy="94" r="5"/>
+    <circle cx="758" cy="94" r="5"/><circle cx="928" cy="94" r="5"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.5">
+    <line x1="136" y1="46" x2="196" y2="46"/><line x1="306" y1="46" x2="376" y2="46"/>
+    <line x1="476" y1="46" x2="536" y2="46"/><line x1="646" y1="46" x2="716" y2="46"/>
+    <line x1="816" y1="46" x2="886" y2="46"/><line x1="136" y1="94" x2="206" y2="94"/>
+    <line x1="306" y1="94" x2="366" y2="94"/><line x1="476" y1="94" x2="546" y2="94"/>
+    <line x1="646" y1="94" x2="706" y2="94"/><line x1="816" y1="94" x2="876" y2="94"/>
+  </g>
+  <g fill="#ffffff" opacity="0.25">
+    <circle cx="1040" cy="46" r="4"/><circle cx="1080" cy="70" r="4"/><circle cx="1040" cy="94" r="4"/>
+  </g>
+</svg>
