@@ -45,12 +45,16 @@
   last_reviewed: 2026-06-10
   blurb: DeepSeek publishes the weights of its flagship chat and reasoning models, including the V4 series, under the permissive MIT license.
 
-- name: Kimi K2
+- name: Kimi
   vendor: Moonshot AI
   url: https://huggingface.co/moonshotai
+  # License is the published K2 line's, read from the HF card
+  # (license_name modified-mit on Kimi-K2.6, checked 2026-07-16). The
+  # announced K3's license is nowhere stated yet; when its weights
+  # publish, read the license from its own card before naming it here.
   license: Modified MIT
-  last_reviewed: 2026-06-10
-  blurb: Moonshot AI's open-weight family, among the strongest published models on coding and agentic benchmarks as of mid 2026.
+  last_reviewed: 2026-07-16
+  blurb: Moonshot AI's open-weight family, among the strongest published models on coding and agentic benchmarks. The flagship K3, announced July 2026 at 2.8 trillion total parameters and by the vendor's own testing second only to the leading proprietary models, has open weights promised but not yet published; a model that size needs data-center hardware, not a consumer graphics card.
 
 - name: Mistral
   vendor: Mistral AI
