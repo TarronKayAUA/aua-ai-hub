@@ -66,6 +66,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=xPcZ0w3ouo8" target="_blank" rel="noopener" title="Kimi K3 Is INSANE, Is THIS a Sol &amp; Fable Competitor?">
+  <img src="https://i1.ytimg.com/vi/xPcZ0w3ouo8/hqdefault.jpg" alt="Video: Testing Kimi K3 multimodal model performance" loading="lazy">
+  <span class="video-card-title">Testing Kimi K3 multimodal model performance</span>
+  <span class="video-card-meta">Bijan Bowen, July 16, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Kimi K3, a multimodal AI model, with technical review and performance evaluation across browser and application tasks.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=dB6pOolO7io" target="_blank" rel="noopener" title="ChatGPT can now complete tasks on your computer">
+  <img src="https://i1.ytimg.com/vi/dB6pOolO7io/hqdefault.jpg" alt="Video: GPT-5.6 computer control and task automation" loading="lazy">
+  <span class="video-card-title">GPT-5.6 computer control and task automation</span>
+  <span class="video-card-meta">OpenAI, July 16, 2026</span>
+  <span class="video-card-desc">Demonstration of GPT-5.6 computer use capability, showing how the model can control applications and browsers to complete tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=axOcn--n_lM" target="_blank" rel="noopener" title="The Dangerous Illusion of AI Coding Skills">
   <img src="https://i2.ytimg.com/vi/axOcn--n_lM/hqdefault.jpg" alt="Video: Limitations of AI coding models in practice" loading="lazy">
   <span class="video-card-title">Limitations of AI coding models in practice</span>
@@ -173,18 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">DeepSeek&#x27;s New AI Speed Hack Is Amazing</span>
   <span class="video-card-meta">Two Minute Papers, July 7, 2026</span>
   <span class="video-card-desc">Overview of DeepSeek&#x27;s efficiency improvements in large language model inference and their technical implementation.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=twIpCciU7VE" target="_blank" rel="noopener" title="Tencent HY3 IS REALLY GOOD! Best Open-Weight Model? (FULLY FREE)">
-  <img src="https://i1.ytimg.com/vi/twIpCciU7VE/hqdefault.jpg" alt="Video: Assessment of Tencent HY3 open-weight AI model" loading="lazy">
-  <span class="video-card-title">Assessment of Tencent HY3 open-weight AI model</span>
-  <span class="video-card-meta">WorldofAI, July 7, 2026</span>
-  <span class="video-card-desc">Tencent released HY3, an open-weight language model available for free use and local deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=mIVHFU94Xhc" target="_blank" rel="noopener" title="Tencent HY3 Is VERY Good, Is This a GLM &amp; DeepSeek Competitor?">
-  <img src="https://i2.ytimg.com/vi/mIVHFU94Xhc/hqdefault.jpg" alt="Video: Evaluation of Tencent HY3 as GLM and DeepSeek competitor" loading="lazy">
-  <span class="video-card-title">Evaluation of Tencent HY3 as GLM and DeepSeek competitor</span>
-  <span class="video-card-meta">Bijan Bowen, July 6, 2026</span>
-  <span class="video-card-desc">Technical comparison and evaluation of Tencent&#x27;s HY3 model against GLM and DeepSeek competitors.</span>
 </a>
 </div>
 

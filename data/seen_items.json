@@ -18645,6 +18645,190 @@
    "first_seen": "2026-07-16T17:41:18.924756+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e100467",
+   "title_hash": "4b4ad6de573b83d1600273c3667adba1",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "AI-Simulated Patients for Training Shared Decision-Making: Feasibility Study in Medical Education",
+   "source": "JMIR Medical Education",
+   "published": "2026-07-16T21:15:02+00:00",
+   "summary": "A feasibility study of AI chatbot simulations for training shared decision-making communication skills with automated feedback in medical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android",
+   "title_hash": "7f21955768db9e77aedf14498234f01d",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "policy news not specific to medical education or clinical AI"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users",
+   "title_hash": "fcedb67caccf7eb8480dbde5bb89e260",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "litigation and product safety incident outside scope of medical education and clinical practice"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/16/kimi-k3",
+   "title_hash": "0e023d91611a2d487fc98399e0ca8695",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-16T20:19:30+00:00",
+   "summary": "Moonshot AI announced Kimi K3, a 2.8 trillion parameter model, with open-weight release promised by July 27, 2026.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://static.simonwillison.net/static/2026/kimi-3-pelican.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e82230",
+   "title_hash": "4d746ac0c80b0ad81a588f044e9a7afa",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "Machine Learning, Augmented Traditional Analysis of Lactate vs Lactate-to-Albumin Ratio for Predicting Mortality Risk in Patients With Sepsis: Large-Scale Retrospective Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-16T20:15:02+00:00",
+   "summary": "Machine learning analysis of lactate and lactate-to-albumin ratio for mortality risk prediction in sepsis patients using large-scale retrospective data.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory",
+   "title_hash": "240de83377c09633e237e6f12102cb5f",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "labor relations and robotics deployment unrelated to medical education or clinical AI"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/linus-torvalds-to-critics-of-ai-coding-in-linux-fork-it-or-just-walk-away",
+   "title_hash": "c37001ad5df6abc7f05be71757c10e09",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "open source development meta-discussion without medical relevance"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
+   "title_hash": "0c8c675dcec7d9bf2408de4d9ea15a34",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "administrative policy news without specific medical or educational application"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/16/bad-codex-bug",
+   "title_hash": "4bfc965bbe64c1813809278f9cf414d3",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "product bug report without broader significance to this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy9cft/kimi_k3_benchmarks",
+   "title_hash": "575e13257d9da6a19fe33afc2a595634",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "forum link without substantive analysis or summary"
+  },
+  {
+   "url": "https://blog.lyc8503.net/en/post/llm-classifier",
+   "title_hash": "a1ddd8707522e29d2c7c0245a9c6adac",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "detection of AI-generated text has no direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.spaceweather.gov/news/goes-19-safe-hold",
+   "title_hash": "4dd53191d821ec1911e2536a60a362ba",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "satellite operations incident unrelated to medical education or AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42460692?fc=20260609215449&ff=20260716171756&v=2.20.0",
+   "title_hash": "58e47e12af6da9615cd37c4521c1656e",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "narrow curricular case study without clear AI focus or method"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42460590?fc=20260609215449&ff=20260716171756&v=2.20.0",
+   "title_hash": "f97ffb422457c755f47d136c4984e336",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "A Methodological Framework for Designing Clinically Coherent Generative AI Simulated Patients: A Physiotherapy Education Case Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-16T10:00:00+00:00",
+   "summary": "A methodological framework for designing clinically coherent generative AI simulated patients, demonstrated with a physiotherapy education chatbot.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42460585?fc=20260609215449&ff=20260716171756&v=2.20.0",
+   "title_hash": "9d49c5ad734d4dfb2ea2ba93bbe28b5e",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "A Preliminary Approach to Fall Risk Assessment in Aged Care Facilities Using Generative AI Technologies",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-16T10:00:00+00:00",
+   "summary": "An approach using generative AI to assess fall risk in elderly residential aged care residents from unstructured electronic health record data.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
+   "title_hash": "55c72efdbeceac0c08240897aebd099c",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": false,
+   "reason": "network configuration tutorial without medical or educational relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xPcZ0w3ouo8",
+   "title_hash": "6c4e805732d073b5589e01c4f8e398b6",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "Kimi K3 Is INSANE, Is THIS a Sol & Fable Competitor?",
+   "source": "Bijan Bowen",
+   "published": "2026-07-16T20:52:47+00:00",
+   "summary": "Hands-on testing of Kimi K3, a multimodal AI model, with technical review and performance evaluation across browser and application tasks.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/xPcZ0w3ouo8/hqdefault.jpg",
+   "display_title": "Testing Kimi K3 multimodal model performance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=dB6pOolO7io",
+   "title_hash": "f27b08d0bfc2529122268fb1b8f19087",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "ChatGPT can now complete tasks on your computer",
+   "source": "OpenAI",
+   "published": "2026-07-16T18:00:16+00:00",
+   "summary": "Demonstration of GPT-5.6 computer use capability, showing how the model can control applications and browsers to complete tasks.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/dB6pOolO7io/hqdefault.jpg",
+   "display_title": "GPT-5.6 computer control and task automation"
+  },
+  {
+   "url": "https://aipodcast.education/higher-marks-lower-learning-ais-favourite-magic-trick",
+   "title_hash": "22d875c1732b4cd6a74b9e543b62da17",
+   "first_seen": "2026-07-16T21:17:56.513249+00:00",
+   "kept": true,
+   "title": "Higher Marks, Lower Learning? AI's Favourite Magic Trick",
+   "source": "AI in Education Podcast",
+   "published": "2026-07-16T20:24:00+00:00",
+   "summary": "A discussion of whether AI tools improve student learning or merely raise test scores, drawing on recent research and cases including findings from Brown University.",
+   "category": "podcasts",
+   "score": 4.0,
+   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
   }
  ],
  "digests": [
@@ -18774,18 +18958,18 @@
  "last_digest_at": "2026-07-10T11:28:57.661066+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "AI-driven educational tools continue to reshape how medical students and faculty approach both foundational and clinical knowledge. Recent comparative research highlights notable improvements in knowledge retention and reduced cognitive load when generative AI-powered game-based instruction is used for emergency medical response training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[4]</a>. Studies on anatomy illustrate strong student perception of AI tool effectiveness, especially concerning question quality and content validity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[3]</a>, but also flag reliability concerns in reference and citation accuracy from large language models <a href=\"https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[10]</a>. Adoption patterns among medical students depend on study context and uncertainty, with selective reliance on AI in nephrology education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[2]</a>. Meanwhile, systemic barriers to curriculum adaptation, such as digitalization in medicine, suggest ongoing challenges for academic integration of AI technologies <a href=\"https://mededu.jmir.org/2026/1/e96244\">[9]</a>.\n\nAlso this week: survey-based research documents variable student and faculty attitudes toward AI in clinical fields and dentistry, with training and experience strongly impacting viewpoints. The section includes seven teaching and curriculum developments, two simulation studies, and practical models such as an AI-powered oral exam template.",
-   "hash": "5fccaf66195e92c2",
+   "text": "Generative AI-assisted simulation is showing measurable impact in communication training, as undergraduate medical students demonstrated significant gains in diagnostic communication skills across diabetes, obesity, and cancer scenarios <a href=\"https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0\">[15]</a>. Progress is also being made in developing AI-simulated patient tools for shared decision-making, with feasibility studies suggesting automated feedback may be ready for wider adoption <a href=\"https://mededu.jmir.org/2026/1/e100467\">[1]</a>. Concurrently, simulation platforms built through natural language interfaces are increasing accessibility for clinicians seeking to author custom educational tools without technical training, although oversight remains important <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[6]</a>. Studies of reliance on AI systems within nephrology training highlight how student adoption is shaped by uncertainty and foundational subject matter <a href=\"https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[3]</a>, while recent evaluations of AI-powered anatomy tools focus on student perceptions of validity and question quality <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[4]</a>.\n\nAlso this week: the section tracks six developments in teaching and curriculum, four simulation and skills projects, four studies on attitudes or adoption, and one on exams. Oral examination scaling with AI <a href=\"https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion\">[8]</a> and systemic barriers to curriculum adaptation join digital training for HIV testing, remote teaching in neurology, and citation reliability research among the current highlights.",
+   "hash": "1bb9df924b2c1b9c",
    "date": "July 16, 2026"
   },
   "clinical_practice": {
-   "text": "A new benchmark for evaluating large language models in psychiatric contexts assesses whether these systems can safely identify when patient information is insufficient for diagnosis, with an emphasis on abstaining or requesting clarification as needed <a href=\"https://arxiv.org/abs/2607.13036\">[1]</a>. Advances in human-AI collaboration have also been reported, with recent research analyzing how information flow and ecological factors can improve the effectiveness of online health consultations using AI <a href=\"https://medinform.jmir.org/2026/1/e90611\">[10]</a>. In emergency medicine, lexical machine learning models are being leveraged to improve the triage and response process based on how patients describe their chief complaints, contributing to enhanced out-of-hospital care <a href=\"https://www.nature.com/articles/s41746-026-03005-6\">[3]</a>. The role of AI in decision support continues to expand in oncology, where agentic systems are now being evaluated for their reliability and safety across breast cancer treatment planning <a href=\"https://arxiv.org/abs/2607.12051\">[11]</a>. In radiology, the development of interpretable and locally reasoned AI tools is facilitating more transparent decision making for medical imaging applications <a href=\"https://www.nature.com/articles/s41746-026-02994-8\">[15]</a>.\n\nAlso this week: eight new model releases include work on multilingual evaluation and ten-year risk prediction of cognitive impairment. Five papers address clinical evaluation and safety, and two focus on patient-facing health technologies, such as meta-analyses of mental health apps and chatbot-guided cancer risk assessment.",
-   "hash": "6a70fe1fcf36bd99",
+   "text": "A transparent foundation model for chest radiograph analysis is enabling more interpretable diagnostics, addressing explainability concerns in medical imaging and supporting more reliable disease profiling <a href=\"https://www.nature.com/articles/s41746-026-02990-y\">[6]</a>. In parallel, new benchmarking for large language models in psychiatry focuses on safe evaluation-specifically, whether these models avoid making unsupported diagnoses and instead request further information when appropriate <a href=\"https://arxiv.org/abs/2607.13036\">[3]</a>. There is also ongoing evaluation of language model-based systems for breast cancer treatment recommendations, emphasizing the need for both reliability and safety in oncology decision support <a href=\"https://arxiv.org/abs/2607.12051\">[13]</a>. Investigations into human-artificial intelligence collaboration are identifying new pathways to improve consultation effectiveness within online health communities, informed by information ecology frameworks <a href=\"https://medinform.jmir.org/2026/1/e90611\">[12]</a>.\n\nAlso this week: machine learning studies examine sepsis mortality risk factors and chief complaint language in emergency care, while systematic reviews cover topics from deep brain stimulation applications to evaluation metrics for cancer genetic counseling chatbots. The section holds seven new clinical decision support studies and five on safety and evaluation.",
+   "hash": "5a16b909bf47c904",
    "date": "July 16, 2026"
   },
   "general_ai": {
-   "text": "A new vulnerability demonstration in Claude’s web-fetch tool highlights ongoing concerns around safety and reliability in AI agent design, emphasizing the importance of rigorous integration practices <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[6]</a>. OpenAI introduced GPT-Red, a specialized adversarial model used to harden GPT-5.6 against cybersecurity threats, signaling continued investment in robust evaluation strategies <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[4]</a>. Leading model releases include Inkling, a high-parameter open-weights language model, as well as Bonsai 27B, designed for efficient mobile deployment <a href=\"https://thinkingmachines.ai/news/introducing-inkling\">[3]</a> <a href=\"https://prismml.com/news/bonsai-27b\">[10]</a>. NVIDIA’s Nemotron 3 Embed has set a new benchmark for agentic retrieval, supporting industry progress in embedding technology <a href=\"https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb\">[1]</a>. Discussions on factual accuracy persist, with a new leaderboard measuring human preferences alongside objective model outputs <a href=\"https://arena.ai/blog/factuality-in-arena\">[5]</a>.\n\nAlso this week: there are five safety and reliability reports, two benchmarking and evaluation studies, and analyses devoted to industry policy and emerging research methods. The section includes an assessment of Grok Build’s user code upload issue, and a review of AI agents’ effect on scientific validation bottlenecks.",
-   "hash": "a4efc40ddc6ab354",
+   "text": "The European Union has imposed a ruling that requires Google to give rival AI assistants and search engines increased access to Android and Google Search platforms, which is expected to reshape competition and integration in mobile AI technologies <a href=\"https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma\">[3]</a>. Security vulnerabilities in agent systems are again in focus, with recent demonstrations showing how tool integration can unintentionally expose sensitive user data <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[7]</a>. Meanwhile, companies are prioritizing safer and more robust models, as seen in OpenAI’s use of GPT-Red to probe and improve GPT-5.6 against cybersecurity threats <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[5]</a>. Model development continues at pace, highlighted by Moonshot AI’s announcement of Kimi K3, a large-scale language model expected to release with open weights, and the introduction of lower-resource mobile models such as Bonsai 27B targeting accessibility <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[1]</a> <a href=\"https://prismml.com/news/bonsai-27b\">[11]</a>.\n\nAlso this week: three new model releases, four items on safety and reliability, two papers addressing benchmarks and evaluation, and ongoing discussions about policy and research methods. Recent leaderboard efforts have sought to balance human preference against factual accuracy in language model outputs.",
+   "hash": "5e2edfdae89002f1",
    "date": "July 16, 2026"
   }
  },

@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new benchmark for evaluating large language models in psychiatric contexts assesses whether these systems can safely identify when patient information is insufficient for diagnosis, with an emphasis on abstaining or requesting clarification as needed <a href="https://arxiv.org/abs/2607.13036">[1]</a>. Advances in human-AI collaboration have also been reported, with recent research analyzing how information flow and ecological factors can improve the effectiveness of online health consultations using AI <a href="https://medinform.jmir.org/2026/1/e90611">[10]</a>. In emergency medicine, lexical machine learning models are being leveraged to improve the triage and response process based on how patients describe their chief complaints, contributing to enhanced out-of-hospital care <a href="https://www.nature.com/articles/s41746-026-03005-6">[3]</a>. The role of AI in decision support continues to expand in oncology, where agentic systems are now being evaluated for their reliability and safety across breast cancer treatment planning <a href="https://arxiv.org/abs/2607.12051">[11]</a>. In radiology, the development of interpretable and locally reasoned AI tools is facilitating more transparent decision making for medical imaging applications <a href="https://www.nature.com/articles/s41746-026-02994-8">[15]</a>.</p>
-<p>Also this week: eight new model releases include work on multilingual evaluation and ten-year risk prediction of cognitive impairment. Five papers address clinical evaluation and safety, and two focus on patient-facing health technologies, such as meta-analyses of mental health apps and chatbot-guided cancer risk assessment.</p>
+<p>A transparent foundation model for chest radiograph analysis is enabling more interpretable diagnostics, addressing explainability concerns in medical imaging and supporting more reliable disease profiling <a href="https://www.nature.com/articles/s41746-026-02990-y">[6]</a>. In parallel, new benchmarking for large language models in psychiatry focuses on safe evaluation-specifically, whether these models avoid making unsupported diagnoses and instead request further information when appropriate <a href="https://arxiv.org/abs/2607.13036">[3]</a>. There is also ongoing evaluation of language model-based systems for breast cancer treatment recommendations, emphasizing the need for both reliability and safety in oncology decision support <a href="https://arxiv.org/abs/2607.12051">[13]</a>. Investigations into human-artificial intelligence collaboration are identifying new pathways to improve consultation effectiveness within online health communities, informed by information ecology frameworks <a href="https://medinform.jmir.org/2026/1/e90611">[12]</a>.</p>
+<p>Also this week: machine learning studies examine sepsis mortality risk factors and chief complaint language in emergency care, while systematic reviews cover topics from deep brain stimulation applications to evaluation metrics for cancer genetic counseling chatbots. The section holds seven new clinical decision support studies and five on safety and evaluation.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82230">Machine Learning, Augmented Traditional Analysis of Lactate vs Lactate-to-Albumin Ratio for Predicting Mortality Risk in Patients With Sepsis: Large-Scale Retrospective Study</a>
+    <p class="news-card-summary">Machine learning analysis of lactate and lactate-to-albumin ratio for mortality risk prediction in sepsis patients using large-scale retrospective data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42460585?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">A Preliminary Approach to Fall Risk Assessment in Aged Care Facilities Using Generative AI Technologies</a>
+    <p class="news-card-summary">An approach using generative AI to assess fall risk in elderly residential aged care residents from unstructured electronic health record data.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02953-3">A scoping review of explainable artificial intelligence for medical multimodal data</a>
     <p class="news-card-summary">Scoping review of explainable artificial intelligence methods for medical multimodal data documents interpretability approaches in clinical applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03023-4">Explainable machine learning for 10-year prediction of cognitive impairment in a rural Chinese population</a>
-    <p class="news-card-summary">Machine learning model with interpretability features predicts cognitive impairment risk over ten years in a rural Chinese cohort.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02994-8">Interpretable agentic AI system with localized reasoning for radiology</a>
-    <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.</p>
   </div>
 </div>
 </div>

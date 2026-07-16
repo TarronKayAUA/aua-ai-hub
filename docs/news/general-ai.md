@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A new vulnerability demonstration in Claude’s web-fetch tool highlights ongoing concerns around safety and reliability in AI agent design, emphasizing the importance of rigorous integration practices <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[6]</a>. OpenAI introduced GPT-Red, a specialized adversarial model used to harden GPT-5.6 against cybersecurity threats, signaling continued investment in robust evaluation strategies <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[4]</a>. Leading model releases include Inkling, a high-parameter open-weights language model, as well as Bonsai 27B, designed for efficient mobile deployment <a href="https://thinkingmachines.ai/news/introducing-inkling">[3]</a> <a href="https://prismml.com/news/bonsai-27b">[10]</a>. NVIDIA’s Nemotron 3 Embed has set a new benchmark for agentic retrieval, supporting industry progress in embedding technology <a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb">[1]</a>. Discussions on factual accuracy persist, with a new leaderboard measuring human preferences alongside objective model outputs <a href="https://arena.ai/blog/factuality-in-arena">[5]</a>.</p>
-<p>Also this week: there are five safety and reliability reports, two benchmarking and evaluation studies, and analyses devoted to industry policy and emerging research methods. The section includes an assessment of Grok Build’s user code upload issue, and a review of AI agents’ effect on scientific validation bottlenecks.</p>
+<p>The European Union has imposed a ruling that requires Google to give rival AI assistants and search engines increased access to Android and Google Search platforms, which is expected to reshape competition and integration in mobile AI technologies <a href="https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma">[3]</a>. Security vulnerabilities in agent systems are again in focus, with recent demonstrations showing how tool integration can unintentionally expose sensitive user data <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[7]</a>. Meanwhile, companies are prioritizing safer and more robust models, as seen in OpenAI’s use of GPT-Red to probe and improve GPT-5.6 against cybersecurity threats <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[5]</a>. Model development continues at pace, highlighted by Moonshot AI’s announcement of Kimi K3, a large-scale language model expected to release with open weights, and the introduction of lower-resource mobile models such as Bonsai 27B targeting accessibility <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[1]</a> <a href="https://prismml.com/news/bonsai-27b">[11]</a>.</p>
+<p>Also this week: three new model releases, four items on safety and reliability, two papers addressing benchmarks and evaluation, and ongoing discussions about policy and research methods. Recent leaderboard efforts have sought to balance human preference against factual accuracy in language model outputs.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/16/kimi-k3">Kimi K3, and what we can still learn from the pelican benchmark</a>
+    <p class="news-card-summary">Moonshot AI announced Kimi K3, a 2.8 trillion parameter model, with open-weight release promised by July 27, 2026.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/kimi-3-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">July 16, 2026</span></div>
@@ -128,13 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">PrismML released Bonsai 27B, a 1-bit quantized large language model that compresses to 3.8GB while retaining 90% of capability, runnable in web browsers via custom WebGPU kernels.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/cGZwaWYxanQ3OGRoMXn7IuFtrK_hbLC66wg8SQ4wFJyBLQaa2tVzFGmUcDuQ.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cc6dcc927df912a535cbcce268b4dd27331b0df0" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/jailbreaking-llms">How I Turned AI to the Dark Side</a>
-    <p class="news-card-summary">Researcher identified systemic vulnerabilities allowing bypass of LLM safety measures across major models, calling for slower deployment and increased transparency.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/glossy-red-robot-devil-standing-on-a-bundle-of-dynamite-against-blue-glow-background.png?id=67154492&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

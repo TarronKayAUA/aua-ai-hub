@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>AI-driven educational tools continue to reshape how medical students and faculty approach both foundational and clinical knowledge. Recent comparative research highlights notable improvements in knowledge retention and reduced cognitive load when generative AI-powered game-based instruction is used for emergency medical response training <a href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[4]</a>. Studies on anatomy illustrate strong student perception of AI tool effectiveness, especially concerning question quality and content validity <a href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[3]</a>, but also flag reliability concerns in reference and citation accuracy from large language models <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[10]</a>. Adoption patterns among medical students depend on study context and uncertainty, with selective reliance on AI in nephrology education <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[2]</a>. Meanwhile, systemic barriers to curriculum adaptation, such as digitalization in medicine, suggest ongoing challenges for academic integration of AI technologies <a href="https://mededu.jmir.org/2026/1/e96244">[9]</a>.</p>
-<p>Also this week: survey-based research documents variable student and faculty attitudes toward AI in clinical fields and dentistry, with training and experience strongly impacting viewpoints. The section includes seven teaching and curriculum developments, two simulation studies, and practical models such as an AI-powered oral exam template.</p>
+<p>Generative AI-assisted simulation is showing measurable impact in communication training, as undergraduate medical students demonstrated significant gains in diagnostic communication skills across diabetes, obesity, and cancer scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[15]</a>. Progress is also being made in developing AI-simulated patient tools for shared decision-making, with feasibility studies suggesting automated feedback may be ready for wider adoption <a href="https://mededu.jmir.org/2026/1/e100467">[1]</a>. Concurrently, simulation platforms built through natural language interfaces are increasing accessibility for clinicians seeking to author custom educational tools without technical training, although oversight remains important <a href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[6]</a>. Studies of reliance on AI systems within nephrology training highlight how student adoption is shaped by uncertainty and foundational subject matter <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[3]</a>, while recent evaluations of AI-powered anatomy tools focus on student perceptions of validity and question quality <a href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[4]</a>.</p>
+<p>Also this week: the section tracks six developments in teaching and curriculum, four simulation and skills projects, four studies on attitudes or adoption, and one on exams. Oral examination scaling with AI <a href="https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion">[8]</a> and systemic barriers to curriculum adaptation join digital training for HIV testing, remote teaching in neurology, and citation reliability research among the current highlights.</p>
 <p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e100467">AI-Simulated Patients for Training Shared Decision-Making: Feasibility Study in Medical Education</a>
+    <p class="news-card-summary">A feasibility study of AI chatbot simulations for training shared decision-making communication skills with automated feedback in medical education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
@@ -54,6 +61,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Simulator development using natural language: clinician-led innovation through artificial intelligence</a>
     <p class="news-card-summary">Natural language-driven development enables clinicians without programming expertise to create authentic educational simulation tools while maintaining need for technical oversight.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42460590?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">A Methodological Framework for Designing Clinically Coherent Generative AI Simulated Patients: A Physiotherapy Education Case Study</a>
+    <p class="news-card-summary">A methodological framework for designing clinically coherent generative AI simulated patients, demonstrated with a physiotherapy education chatbot.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">Generative AI-Assisted Simulation Training Is Associated with Higher Post-Intervention Diagnostic Communication Scores Across Type 2 Diabetes, Obesity, and Breast Cancer Scenarios</a>
     <p class="news-card-summary">Undergraduate medical students using generative AI-assisted simulation training achieved higher diagnostic communication scores across diabetes, obesity, and cancer scenarios.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458430?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">Artificial intelligence in urological education: a systematic review</a>
-    <p class="news-card-summary">Systematic review finds AI can enhance urological education by improving learning efficiency, knowledge retention, and clinical skills development when integrated thoughtfully into teaching.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03024-3">Naturalistic adoption and deliberate practice use of an AI-based OSCE platform during national licensure preparation</a>
-    <p class="news-card-summary">A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.</p>
   </div>
 </div>
 </div>
