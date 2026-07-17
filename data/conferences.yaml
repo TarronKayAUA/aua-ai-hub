@@ -39,14 +39,17 @@
   url: https://amee.org/events/amee-2026/
   tags: [meded]
 
-# Verified 2026-06-09 from iamse.org/annual-conference
-- name: IAMSE 2026 Annual Conference
+# Verified 2026-07-17 from iamse.org/annual-conference (page now shows
+# the 31st Annual Conference; details beyond dates and venue still TBD).
+# Rolled forward from the 2026 edition (June 6-9, Augusta, Georgia),
+# which is past.
+- name: IAMSE 2027 Annual Conference
   organizer: International Association of Medical Science Educators
-  start_date: 2026-06-06
-  end_date: 2026-06-09
-  location: Augusta, Georgia, USA
+  start_date: 2027-06-05
+  end_date: 2027-06-08
+  location: Bellevue, Washington, USA
   format: in_person
-  abstract_deadline: passed
+  abstract_deadline: TBD
   url: https://www.iamse.org/annual-conference/
   tags: [meded]
 
