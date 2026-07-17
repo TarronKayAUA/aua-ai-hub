@@ -13,14 +13,35 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A transparent foundation model for chest radiograph analysis is enabling more interpretable diagnostics, addressing explainability concerns in medical imaging and supporting more reliable disease profiling <a href="https://www.nature.com/articles/s41746-026-02990-y">[6]</a>. In parallel, new benchmarking for large language models in psychiatry focuses on safe evaluation-specifically, whether these models avoid making unsupported diagnoses and instead request further information when appropriate <a href="https://arxiv.org/abs/2607.13036">[3]</a>. There is also ongoing evaluation of language model-based systems for breast cancer treatment recommendations, emphasizing the need for both reliability and safety in oncology decision support <a href="https://arxiv.org/abs/2607.12051">[13]</a>. Investigations into human-artificial intelligence collaboration are identifying new pathways to improve consultation effectiveness within online health communities, informed by information ecology frameworks <a href="https://medinform.jmir.org/2026/1/e90611">[12]</a>.</p>
-<p>Also this week: machine learning studies examine sepsis mortality risk factors and chief complaint language in emergency care, while systematic reviews cover topics from deep brain stimulation applications to evaluation metrics for cancer genetic counseling chatbots. The section holds seven new clinical decision support studies and five on safety and evaluation.</p>
-<p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
+<p>The introduction of a bidirectional neuroprosthetic system that restored both hand movement and sensation in a person with complete tetraplegia highlights the significant clinical potential of artificial intelligence-guided neurotechnology, offering a demonstration of sensory-motor recovery through brain signal decoding and targeted neuromodulation <a href="https://www.nature.com/articles/s41591-026-04498-0">[12]</a>. Advances in clinical decision support remain prominent, with reinforcement learning being used to provide dynamic, individualized suggestions for coagulation management <a href="https://www.nature.com/articles/s41746-026-03039-w">[2]</a> and machine learning enabling more accurate mortality risk predictions among sepsis patients using combined lactate markers <a href="https://medinform.jmir.org/2026/1/e82230">[4]</a>. AI-supported neuroscience also continues to progress as models analyze task-based brain activity to predict opioid craving in individuals, offering pathways to personalized addiction treatment <a href="https://www.nature.com/articles/s41746-026-02948-0">[3]</a>. Evaluation of emerging systems maintains focus on safety, illustrated by efforts to ensure psychiatric large language models request clarifying information rather than deliver unsupported diagnoses <a href="https://arxiv.org/abs/2607.13036">[6]</a>.</p>
+<p>Also this week: there are studies on biosignal-based screening of depressive symptoms with virtual humans, an approach for fall risk assessment in aged care using generative AI, optimization of Chinese medical language models, and methods to manage missing data in survival prediction for lung cancer. The section features eight new clinical decision support projects and four papers on safety and evaluation.</p>
+<p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03017-2">Biosignal-based screening of depressive symptoms during affective conversations with virtual humans</a>
+    <p class="news-card-summary">Study uses physiological signals measured during conversations with virtual humans to screen for depressive symptoms.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03039-w">A distributional reinforcement learning model for temporal coagulation balance evaluation and state‑guided supportive suggestions</a>
+    <p class="news-card-summary">Reinforcement learning model evaluates blood coagulation balance over time and generates state-guided clinical suggestions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02948-0">Individualized prediction of heroin cue-induced craving using task-based EEG functional connectivity</a>
+    <p class="news-card-summary">Machine learning model predicts opioid cue-induced craving in individual patients using task-based brain electrical activity patterns.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 16, 2026</span></div>
@@ -84,6 +105,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Bidirectional neuroprosthetic system restored hand motor and sensory function in a person with complete tetraplegia using brain signal decoding and targeted neuromodulation.</p>
   </div>
 </div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03019-0">Handling missing data: AI approach for survival prediction in lung cancer despite missing data</a>
+    <p class="news-card-summary">Machine learning model predicts lung cancer survival from incomplete multimodal patient data including imaging, biopsy, and clinical records.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
@@ -96,34 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e76400">Metrics Used for the Evaluation of Chatbots Providing Cancer Genetic Risk Assessment and Education: Systematic Review</a>
     <p class="news-card-summary">Systematic review of metrics used to evaluate chatbots delivering cancer genetic risk assessment and counseling, identifying strengths and weaknesses of chatbot-assisted applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90611">Research on the Improvement Path of Human-AI Collaborative Consultation Effectiveness From the Perspective of Information Ecology: Configurational Analysis</a>
-    <p class="news-card-summary">Configurational analysis of pathways to improve human-AI collaborative consultation effectiveness in online health communities from an information ecology perspective.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.12051">Agentic systems for breast cancer treatment recommendations</a>
-    <p class="news-card-summary">Evaluation of language model systems for breast cancer treatment recommendations across clinical stages shows reliability and safety considerations for oncology decision support.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02983-x">Landscape of regulatory clinical investigations status of traditional and digital medical devices in the Republic of Korea (2003, mid 2024)</a>
-    <p class="news-card-summary">Regulatory analysis of clinical investigations for traditional and digital medical devices in South Korea from 2003 to mid-2024 documents approval pathways and oversight trends.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02953-3">A scoping review of explainable artificial intelligence for medical multimodal data</a>
-    <p class="news-card-summary">Scoping review of explainable artificial intelligence methods for medical multimodal data documents interpretability approaches in clinical applications.</p>
   </div>
 </div>
 </div>

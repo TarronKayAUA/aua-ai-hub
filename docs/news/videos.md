@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=LEnYkEIOhIY" target="_blank" rel="noopener" title="Kimi K3 IS INSANE! Best Open Model EVER That BEATS FABLE 5 &amp; GPT-5.6! (Fully Tested)">
+  <img src="https://i1.ytimg.com/vi/LEnYkEIOhIY/hqdefault.jpg" alt="Video: Testing Kimi K3 open model against GPT and other frontier systems" loading="lazy">
+  <span class="video-card-title">Testing Kimi K3 open model against GPT and other frontier systems</span>
+  <span class="video-card-meta">WorldofAI, July 17, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Moonshot AI&#x27;s Kimi K3, a 2.8 trillion parameter open model with 1 million token context, comparing its performance against other frontier models.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=xPcZ0w3ouo8" target="_blank" rel="noopener" title="Kimi K3 Is INSANE, Is THIS a Sol &amp; Fable Competitor?">
   <img src="https://i1.ytimg.com/vi/xPcZ0w3ouo8/hqdefault.jpg" alt="Video: Testing Kimi K3 multimodal model performance" loading="lazy">
   <span class="video-card-title">Testing Kimi K3 multimodal model performance</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Listening &amp; Speaking with GPT-Live</span>
   <span class="video-card-meta">OpenAI, July 8, 2026</span>
   <span class="video-card-desc">OpenAI demonstrates GPT-Live voice capabilities including listening, speaking, and natural conversation features.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=1yBU41auQhw" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/1yBU41auQhw/hqdefault.jpg" alt="Video: DeepSeek&#x27;s New AI Speed Hack Is Amazing" loading="lazy">
-  <span class="video-card-title">DeepSeek&#x27;s New AI Speed Hack Is Amazing</span>
-  <span class="video-card-meta">Two Minute Papers, July 7, 2026</span>
-  <span class="video-card-desc">Overview of DeepSeek&#x27;s efficiency improvements in large language model inference and their technical implementation.</span>
 </a>
 </div>
 

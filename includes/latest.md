@@ -2,6 +2,6 @@
 
 - [Information-Theoretic Limits of Reliability and Scaling in Language Models](https://arxiv.org/abs/2607.14112) (arXiv cs.CL, July 17, 2026)
 - [Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak](https://arxiv.org/abs/2607.14147) (arXiv cs.CL, July 17, 2026)
-- [AI-Simulated Patients for Training Shared Decision-Making: Feasibility Study in Medical Education](https://mededu.jmir.org/2026/1/e100467) (JMIR Medical Education, July 16, 2026)
-- [Kimi K3, and what we can still learn from the pelican benchmark](https://simonwillison.net/2026/Jul/16/kimi-k3) (Simon Willison's weblog, July 16, 2026)
-- [LM Studio Bionic: the AI agent for open models](https://lmstudio.ai/blog/introducing-lm-studio-bionic) (Hacker News (LLM, 100+ points), July 16, 2026)
+- [Biosignal-based screening of depressive symptoms during affective conversations with virtual humans](https://www.nature.com/articles/s41746-026-03017-2) (npj Digital Medicine, July 17, 2026)
+- [A distributional reinforcement learning model for temporal coagulation balance evaluation and state‑guided supportive suggestions](https://www.nature.com/articles/s41746-026-03039-w) (npj Digital Medicine, July 17, 2026)
+- [Individualized prediction of heroin cue-induced craving using task-based EEG functional connectivity](https://www.nature.com/articles/s41746-026-02948-0) (npj Digital Medicine, July 17, 2026)

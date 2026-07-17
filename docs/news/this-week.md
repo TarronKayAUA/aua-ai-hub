@@ -13,8 +13,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Simulator development using natural language allows clinicians to create educational tools for medical training without coding expertise, while still requiring technical oversight to ensure accuracy <a href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[6]</a>. Emerging frameworks for AI-generated simulated patients are being studied for their clinical coherence and potential use in fields like physiotherapy education <a href="https://pubmed.ncbi.nlm.nih.gov/42460590?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">[7]</a>. Recent research assesses AI-powered tools for anatomy education, examining how students perceive their effectiveness in providing valid content and well-formulated questions <a href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[4]</a>. Surveys of nursing and dental students across various regions highlight uneven knowledge and attitudes toward AI, with educational gaps more pronounced among those with less training or from disadvantaged backgrounds <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[2]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[15]</a>.</p>
-<p>Also this week: seven new items on teaching and curriculum and three on simulation and skills detail advances from game-based learning for emergency response to digital training for HIV case testing. Four papers discuss attitudes and adoption, such as barriers identified by family medicine practitioners, and one item presents a practical template for conducting oral exams at scale using AI.</p>
+<p>The integration of AI-powered tools and simulations is shaping medical education through innovations in teaching methods, curriculum, and assessment. Studies explore the feasibility and methodology of AI-simulated patients for shared decision-making training and physiotherapy chatbot design, emphasizing the practical application of generative AI in skills development <a href="https://mededu.jmir.org/2026/1/e100467">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42460590?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">[7]</a>. Game-based learning powered by AI in emergency medical response courses has demonstrated improvements in knowledge retention and reduced cognitive load compared to traditional instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[5]</a>. Meanwhile, analysis of medical student reliance on AI in nephrology shows context-dependent adoption, highlighting factors that influence acceptance and trust in educational tools <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[3]</a>. Ongoing concerns about reference reliability and citation accuracy in anatomy-related AI outputs focus attention on the importance of quality control in content generation <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[14]</a>.</p>
+<p>Also this week: the section features seven new developments in teaching and curriculum, four studies covering student and physician attitudes toward AI, three items on simulation and skills, and one report introducing a scalable template for oral exams using AI <a href="https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion">[10]</a>.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -351,15 +351,36 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A transparent foundation model for chest radiograph analysis is enabling more interpretable diagnostics, addressing explainability concerns in medical imaging and supporting more reliable disease profiling <a href="https://www.nature.com/articles/s41746-026-02990-y">[6]</a>. In parallel, new benchmarking for large language models in psychiatry focuses on safe evaluation-specifically, whether these models avoid making unsupported diagnoses and instead request further information when appropriate <a href="https://arxiv.org/abs/2607.13036">[3]</a>. There is also ongoing evaluation of language model-based systems for breast cancer treatment recommendations, emphasizing the need for both reliability and safety in oncology decision support <a href="https://arxiv.org/abs/2607.12051">[13]</a>. Investigations into human-artificial intelligence collaboration are identifying new pathways to improve consultation effectiveness within online health communities, informed by information ecology frameworks <a href="https://medinform.jmir.org/2026/1/e90611">[12]</a>.</p>
-<p>Also this week: machine learning studies examine sepsis mortality risk factors and chief complaint language in emergency care, while systematic reviews cover topics from deep brain stimulation applications to evaluation metrics for cancer genetic counseling chatbots. The section holds seven new clinical decision support studies and five on safety and evaluation.</p>
-<p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the source items.</p>
+<p>The introduction of a bidirectional neuroprosthetic system that restored both hand movement and sensation in a person with complete tetraplegia highlights the significant clinical potential of artificial intelligence-guided neurotechnology, offering a demonstration of sensory-motor recovery through brain signal decoding and targeted neuromodulation <a href="https://www.nature.com/articles/s41591-026-04498-0">[12]</a>. Advances in clinical decision support remain prominent, with reinforcement learning being used to provide dynamic, individualized suggestions for coagulation management <a href="https://www.nature.com/articles/s41746-026-03039-w">[2]</a> and machine learning enabling more accurate mortality risk predictions among sepsis patients using combined lactate markers <a href="https://medinform.jmir.org/2026/1/e82230">[4]</a>. AI-supported neuroscience also continues to progress as models analyze task-based brain activity to predict opioid craving in individuals, offering pathways to personalized addiction treatment <a href="https://www.nature.com/articles/s41746-026-02948-0">[3]</a>. Evaluation of emerging systems maintains focus on safety, illustrated by efforts to ensure psychiatric large language models request clarifying information rather than deliver unsupported diagnoses <a href="https://arxiv.org/abs/2607.13036">[6]</a>.</p>
+<p>Also this week: there are studies on biosignal-based screening of depressive symptoms with virtual humans, an approach for fall risk assessment in aged care using generative AI, optimization of Chinese medical language models, and methods to manage missing data in survival prediction for lung cancer. The section features eight new clinical decision support projects and four papers on safety and evaluation.</p>
+<p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 54 items"
+??? abstract "Show the 58 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (17)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (58)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03017-2">Biosignal-based screening of depressive symptoms during affective conversations with virtual humans</a>
+        <p class="news-card-summary">Study uses physiological signals measured during conversations with virtual humans to screen for depressive symptoms.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03039-w">A distributional reinforcement learning model for temporal coagulation balance evaluation and state‑guided supportive suggestions</a>
+        <p class="news-card-summary">Reinforcement learning model evaluates blood coagulation balance over time and generates state-guided clinical suggestions.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02948-0">Individualized prediction of heroin cue-induced craving using task-based EEG functional connectivity</a>
+        <p class="news-card-summary">Machine learning model predicts opioid cue-induced craving in individual patients using task-based brain electrical activity patterns.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 16, 2026</span></div>
@@ -421,6 +442,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 16, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04498-0">A neuroprosthesis for restoring hand movement and sensation in a person with complete tetraplegia</a>
         <p class="news-card-summary">Bidirectional neuroprosthetic system restored hand motor and sensory function in a person with complete tetraplegia using brain signal decoding and targeted neuromodulation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03019-0">Handling missing data: AI approach for survival prediction in lung cancer despite missing data</a>
+        <p class="news-card-summary">Machine learning model predicts lung cancer survival from incomplete multimodal patient data including imaging, biopsy, and clinical records.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -1098,9 +1126,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 22 videos"
+??? abstract "Show the 23 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=LEnYkEIOhIY" target="_blank" rel="noopener" title="Kimi K3 IS INSANE! Best Open Model EVER That BEATS FABLE 5 &amp; GPT-5.6! (Fully Tested)">
+      <img src="https://i1.ytimg.com/vi/LEnYkEIOhIY/hqdefault.jpg" alt="Video: Testing Kimi K3 open model against GPT and other frontier systems" loading="lazy">
+      <span class="video-card-title">Testing Kimi K3 open model against GPT and other frontier systems</span>
+      <span class="video-card-meta">WorldofAI, July 17, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Moonshot AI&#x27;s Kimi K3, a 2.8 trillion parameter open model with 1 million token context, comparing its performance against other frontier models.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=xPcZ0w3ouo8" target="_blank" rel="noopener" title="Kimi K3 Is INSANE, Is THIS a Sol &amp; Fable Competitor?">
       <img src="https://i1.ytimg.com/vi/xPcZ0w3ouo8/hqdefault.jpg" alt="Video: Testing Kimi K3 multimodal model performance" loading="lazy">
       <span class="video-card-title">Testing Kimi K3 multimodal model performance</span>
