@@ -1,3 +1,19 @@
 {
- "pending": {}
+ "pending": {
+  "IAMSE 2026 Annual Conference\u001fstart_date": {
+   "value": "2027-06-05",
+   "first_seen": "2026-07-17T12:20:40.133347+00:00",
+   "count": 1
+  },
+  "IAMSE 2026 Annual Conference\u001fend_date": {
+   "value": "2027-06-08",
+   "first_seen": "2026-07-17T12:20:40.133347+00:00",
+   "count": 1
+  },
+  "IAMSE 2026 Annual Conference\u001flocation": {
+   "value": "Bellevue, WA, USA",
+   "first_seen": "2026-07-17T12:20:40.133347+00:00",
+   "count": 1
+  }
+ }
 }
