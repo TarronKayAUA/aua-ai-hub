@@ -42,6 +42,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Machine learning model predicts opioid cue-induced craving in individual patients using task-based brain electrical activity patterns.</p>
   </div>
 </div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03041-2">Artificial intelligence needs better health systems to reduce inequalities</a>
+    <p class="news-card-summary">Commentary on how AI deployment in healthcare requires stronger health systems to avoid widening existing health inequalities.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 16, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e86864">Performance Gaps and Optimization Strategies in Chinese Medical Large Language Models Based on MedBench: Evaluation Study</a>
     <p class="news-card-summary">Study evaluates Chinese medical language models on a benchmark dataset, identifying performance gaps and optimization strategies for clinical deployment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e76400">Metrics Used for the Evaluation of Chatbots Providing Cancer Genetic Risk Assessment and Education: Systematic Review</a>
-    <p class="news-card-summary">Systematic review of metrics used to evaluate chatbots delivering cancer genetic risk assessment and counseling, identifying strengths and weaknesses of chatbot-assisted applications.</p>
   </div>
 </div>
 </div>

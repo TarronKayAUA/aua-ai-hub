@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>The integration of AI-powered tools and simulations is shaping medical education through innovations in teaching methods, curriculum, and assessment. Studies explore the feasibility and methodology of AI-simulated patients for shared decision-making training and physiotherapy chatbot design, emphasizing the practical application of generative AI in skills development <a href="https://mededu.jmir.org/2026/1/e100467">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42460590?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">[7]</a>. Game-based learning powered by AI in emergency medical response courses has demonstrated improvements in knowledge retention and reduced cognitive load compared to traditional instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[5]</a>. Meanwhile, analysis of medical student reliance on AI in nephrology shows context-dependent adoption, highlighting factors that influence acceptance and trust in educational tools <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[3]</a>. Ongoing concerns about reference reliability and citation accuracy in anatomy-related AI outputs focus attention on the importance of quality control in content generation <a href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">[14]</a>.</p>
-<p>Also this week: the section features seven new developments in teaching and curriculum, four studies covering student and physician attitudes toward AI, three items on simulation and skills, and one report introducing a scalable template for oral exams using AI <a href="https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion">[10]</a>.</p>
+<p>An AI-augmented teacher feedback model demonstrated measurable alignment with expert ratings and preliminary advantages in supporting medical students’ clinical documentation skills, suggesting a shift toward integrated AI feedback in formative assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[1]</a>. Simulation tools developed via natural language inputs allow clinicians to create educational modules without coding, broadening accessibility but still requiring technical oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[8]</a>. Game-based learning powered by generative AI improved knowledge retention and reduced cognitive load for emergency response training, indicating tangible benefits in high-stakes simulation environments <a href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[7]</a>. Surveys of nursing students in China highlighted educational gaps and uneven attitudes toward AI, especially among disadvantaged groups, raising questions about equitable curriculum integration <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[4]</a>. Feasibility research with AI-simulated patients for shared decision-making training offered automated feedback, expanding the scope of virtual communication skills programs <a href="https://mededu.jmir.org/2026/1/e100467">[3]</a>.</p>
+<p>Also this week: studies cover six teaching and curriculum innovations and four simulation or skills initiatives. One practical item describes scalable oral exam templates for large classes. Additional articles report on digital HIV training for lay health workers and systemic barriers to adapting medical curricula rapidly.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Effectiveness of an AI-augmented teacher feedback model in improving medical students&#x27; clinical documentation skills: a retrospective cohort study</a>
+    <p class="news-card-summary">A generative AI scoring tool based on large language models provided feedback on clinical documentation that aligned with expert ratings and showed preliminary benefits over traditional teacher feedback alone.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning</a>
+    <p class="news-card-summary">An AI-assisted platform integrated into ultrasound residency training showed potential to improve residents&#x27; diagnostic accuracy for breast cancer detection in an exploratory study.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 16, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e96244">Systemic Barriers to Curriculum Adaptation for Rapidly Changing Knowledge in Medical Education: Qualitative Study</a>
     <p class="news-card-summary">Qualitative study identifying systemic barriers to rapid curriculum adaptation in medical education, using digitalization in medicine as an illustrative case.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">Reference Hallucination, Citation Reliability, and Readability of Large Language Models in Anatomy-Related Question Answering</a>
-    <p class="news-card-summary">ChatGPT, Gemini Pro, and DeepSeek V3 frequently hallucinate anatomical references and citations, raising concerns about their reliability for medical education and academic writing.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">AI-powered tools in family medicine: Bridging technology and practice</a>
-    <p class="news-card-summary">Survey of family physicians in Saudi Arabia shows interest in AI training but identifies barriers including concerns about reliability, data quality, and workflow integration.</p>
   </div>
 </div>
 </div>

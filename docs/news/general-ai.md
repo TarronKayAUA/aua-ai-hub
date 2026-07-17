@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A new study establishes that there are fundamental information-theoretic limits governing the reliability and scaling of language models, clarifying that every generative task has a ceiling on attainable performance which cannot be surpassed due to inherent output uncertainty <a href="https://arxiv.org/abs/2607.14112">[1]</a>. OpenAI&#x27;s development of GPT-Red, an adversarial super-hacker model, has led to improved robustness in GPT-5.6 against cybersecurity attacks, offering a proactive approach to system safety <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[9]</a>. Meanwhile, prefill jailbreak attacks on aligned models have been shown to reveal persistent harm representations even when compliance is achieved, pointing to persistent challenges in decision formation rather than information encoding <a href="https://arxiv.org/abs/2607.14147">[2]</a>. Among new models, Kimi K3 was announced as a 2.8 trillion parameter system with open weights promised by mid-2026, marking a milestone in open-access model development <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[3]</a>.</p>
-<p>Also this week: the section includes eight new model releases and five papers on safety and reliability. Benchmarks and evaluation are represented by a leaderboard ranking models in factual accuracy and user preference, and a top-performing embedding model for agentic retrieval. Policy developments appear in coverage of an EU antitrust ruling affecting Google.</p>
+<p>A new study demonstrates that generative models face fixed information-theoretic limits, highlighting the importance of grounding expectations for model reliability and the potential for unresolved output uncertainty to impact performance across all tasks <a href="https://arxiv.org/abs/2607.14112">[1]</a>. Research on prefill jailbreaks reveals that even when aligned models comply with requests, representations of harm remain detectable, suggesting flaws in how decisions are produced rather than in underlying knowledge <a href="https://arxiv.org/abs/2607.14147">[2]</a>. Several advanced open-weight models have been released, including Kimi K3 and Inkling, with promised transparency and rapid scaling underscoring ongoing interest in expanding access and benchmarking capabilities <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[9]</a>. Meanwhile, recent developments in model safety, such as OpenAI&#x27;s use of adversarial systems like GPT-Red to improve the security of its flagship models, indicate a growing emphasis on robustness against attacks <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[10]</a>.</p>
+<p>Also this week: the section covers eight new model releases, five papers on assessment and reliability, benchmarks such as the Retrieval Text Embedding Benchmark and LMArena&#x27;s factuality leaderboard, and one analysis of how AI agents create a validation bottleneck in scientific research.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -34,6 +34,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2607.14147">Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak</a>
     <p class="news-card-summary">Study of prefill jailbreak attacks on aligned language models reveals that harm representations remain detectable even when models switch to compliance, suggesting failures in output decision formation rather than representation.</p>
   </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00037-z">An AI co-scientist to accelerate biomedical research</a>
+    <p class="news-card-summary">Biomni, an AI agent system, performs diverse biomedical research tasks and could serve as a research partner for scientists with further development.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00037-z/d41591-026-00037-z_52987696.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -129,12 +137,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Analysis of how AI agents create a validation bottleneck in science by generating claims faster than researchers can verify them.</p>
   </div>
   <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!uI0t!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f84fabc-d39b-4bec-b24b-6644b4652e02_2048x1143.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.11889">Scaling Point-in-Time Language Models</a>
-    <p class="news-card-summary">Point-in-time language models trained only on temporally prior text eliminate lookahead bias for valid backtesting and causal inference.</p>
-  </div>
 </div>
 </div>
