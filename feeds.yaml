@@ -420,6 +420,11 @@ benchmarks:
 video_feeds:
   lookback_days: 14
   max_keep_per_run: 12
+  # A candidate with an empty description (a stream live at fetch time)
+  # is deferred, not judged, until its VOD description exists; after this
+  # many hours it is offered title-only so descriptionless channels are
+  # not silenced forever. Added 2026-07-16 with the livestream fix.
+  defer_hours: 72
   home_items: 6
   # Homepage grid only: at most this many videos from any one channel,
   # so a single channel's launch-day burst cannot fill the grid (owner

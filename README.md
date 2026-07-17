@@ -20,7 +20,7 @@ Validation build (run after any nav or content change):
 
 ## How the data-driven pages work
 
-The conferences table (`docs/conferences.md`), the tools directory and its open-weights section (`docs/tools/index.md`), the prompt library and its learning resources (`docs/prompts/index.md`), and the committee page (`docs/governance/committee.md`) are rendered from their matching files under `data/` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`.
+Render markers under `docs/` are replaced at build time from their matching files under `data/` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`. Hook-rendered surfaces: the conferences table (`docs/conferences.md`), the opportunities board (`docs/opportunities.md`), the tools directory and its open-weights section (`docs/tools/index.md`), the prompt library (`docs/prompts/index.md`) and the Learning to Prompt resources (`docs/prompts/learning.md`), the Courses and Resources cards (`docs/learning/index.md`), the committee page (`docs/governance/committee.md`), the polls block (`docs/announcements/index.md`), the guide-video lists (`docs/tools/agents.md`, `docs/tools/local.md`), the hardware estimator's data island (`docs/tools/hardware.md`), and the homepage last-updated stamp.
 
 Why a hook instead of a pre-build script: the hook runs automatically inside both `mkdocs serve` and `mkdocs build --strict`, so there is no extra workflow step to forget, and the rendered tables are injected in memory only. Nothing generated is ever written into hand-authored files under `docs/`.
 
@@ -28,9 +28,9 @@ To update the conferences table or the tools directory, edit the YAML files only
 
 ## Content classes
 
-- Hand-authored: everything under `docs/` except `docs/news/` and `docs/digest.xml`; `feeds.yaml`; `data/conferences.yaml`; `data/tools.yaml`; `data/prompts.yaml`; `data/prompt_resources.yaml`; `data/open_models.yaml`; `data/committee.yaml`; `prompts/curator.md`.
-- Data-driven: the conferences table, tools directory, open-weights models section, prompt library, prompt learning resources, and committee page, rendered from YAML at build time.
-- Generated (never hand-edit): `docs/news/**`, `docs/prompts/exchange.md`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `includes/community-prompts.md`, `data/seen_items.json`, `data/conference_flags.md`.
+- Hand-authored: everything under `docs/` except `docs/news/**`, `docs/prompts/exchange.md`, and `docs/digest.xml`; `feeds.yaml`; the owner-owned data files (`data/conferences.yaml`, `data/conference_watchlist.yaml`, `data/opportunities.yaml`, `data/tools.yaml`, `data/open_models.yaml`, `data/local_models.yaml`, `data/hardware_tiers.yaml`, `data/prompts.yaml`, `data/prompt_resources.yaml`, `data/guide_videos.yaml`, `data/learning_resources.yaml`, `data/committee.yaml`, `data/committee_work.yaml`, `data/polls.yaml`); and the four owner-tunable prompt files (`prompts/curator.md`, `prompts/digest.md`, `prompts/digest_narrative.md`, `prompts/section_brief.md`).
+- Data-driven: every hook-rendered surface listed above, rendered from YAML at build time.
+- Generated (never hand-edit): `docs/news/**`, `docs/prompts/exchange.md`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `includes/community-prompts.md`, `includes/committee-updates.md` (`includes/prompt-maturity-note.md` is the hand-authored exception), `data/seen_items.json`, `data/conference_flags.md` (created on demand), `data/conference_watch_state.json`, `data/opportunity_watch_state.json`, `data/page_review_state.json`.
 
 ## Videos and podcasts
 
@@ -77,10 +77,11 @@ clients go in the `MANUALLY_VERIFIED` allowlist in `scripts/verify_links.py`
 with the date they were confirmed live in a browser.
 
 **Add a prompt learning resource** — edit `data/prompt_resources.yaml`
-(category `general` renders at the top of the Prompts page, a prompt
-category renders as Further reading under that section); the bar is
-evergreen quality reflecting current practice; verify the link, build
-strict, commit.
+(category `general` renders on the Learning to Prompt page,
+`docs/prompts/learning.md`; a prompt category renders as Further
+reading under that section of the library); the bar is evergreen
+quality reflecting current practice; verify the link, build strict,
+commit.
 
 **Update the open-weights model list** — edit `data/open_models.yaml`;
 blurbs may name current flagships, so refresh blurb and `last_reviewed`
@@ -163,10 +164,14 @@ the regenerated files in `docs/assets/`, build strict, commit.
 **When automation emails you** — each workflow opens or updates a GitHub
 issue when something needs a human: `feed-health` (a feed died),
 `link-health` (a link died), `conference-watch` (calendar items that
-failed an auto-apply gate, plus new conferences), `content-watch` (weekly
-roster recommendations: tools that launched, died, or changed, with
-evidence links and the entries to edit; verified-unchanged entries get
-their `last_reviewed` dates bumped automatically).
+failed an auto-apply gate, plus new conferences), `opportunity-watch`
+(weekly open calls and deadlines with paste-ready YAML for
+`data/opportunities.yaml`), the monthly tool-discovery scheduled task
+(directory candidates, propose-only; the task lives outside the repo in
+the maintainer's Claude Code scheduled tasks), and `content-watch`
+(weekly roster recommendations: tools that launched, died, or changed,
+with evidence links and the entries to edit; verified-unchanged entries
+get their `last_reviewed` dates bumped automatically).
 Content-watch also re-reviews evergreen prose pages on budgets computed
 from each page's own volatile-claim census: machine-verified pages get
 their front-matter `last_reviewed` date bumped, and a drifted claim
@@ -181,9 +186,33 @@ content-watch workflow with its `review_page` input (e.g.
 Nightly `refresh` and push-triggered `deploy` failures arrive as Actions
 failure notifications; the run log's verification block says what happened.
 
-**Never hand-edit** `docs/news/**`, `docs/digest.xml`, `includes/*.md`
-generated by the pipeline, `data/seen_items.json`, or
-`data/conference_flags.md`; the next nightly run overwrites them.
+**Force an immediate site refresh** — run the `Nightly news refresh`
+workflow manually (Actions tab, workflow_dispatch, or
+`gh workflow run refresh.yml`); it curates, commits, builds, and
+deploys itself. For a local write-mode run instead, always dry-run
+first (`python scripts/aggregate.py --dry-run --verbose`), review the
+verification block, then rerun without `--dry-run`; pull before and
+push promptly after, because the nightly runs commit to main and races
+corrupt the ledger merge.
+
+**Regenerate a week's digest** — clear `last_digest_week` and
+`last_digest_at` and drop that week's entry from `digests` in
+`data/seen_items.json` via a one-time script that prints before/after
+state, then run the refresh; selection and narrative rerun and the
+archive page is overwritten under the same guid. The narrative is
+skipped on dry runs because the call is paid.
+
+**Tune the news topic chips** — the per-category topic vocabularies
+live in the `topics:` block of `feeds.yaml` (owner-tunable; the
+curator copies labels verbatim, anything unmatched lands in Other).
+Renaming or adding a label is forward-looking only; already-tagged
+ledger items keep their stored topic.
+
+**Never hand-edit** `docs/news/**`, `docs/prompts/exchange.md`,
+`docs/digest.xml`, the pipeline-generated `includes/*.md`,
+`data/seen_items.json`, `data/conference_flags.md`, or the
+`*_watch_state.json` and `page_review_state.json` files under `data/`;
+the automation owns them and the next run overwrites them.
 
 ## Custom domain (future)
 

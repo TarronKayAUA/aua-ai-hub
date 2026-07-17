@@ -527,13 +527,15 @@ def render_podcasts_page(records: list[dict]) -> str:
         "",
     ]
     if records:
-        lines.append(_video_grid_html(records, extra_class="podcast-grid"))
+        lines.append(_video_grid_html(records, extra_class="podcast-grid",
+                                      kind="Podcast"))
     else:
         lines.append("No episodes yet. The pipeline adds episodes nightly.")
     return "\n".join(lines) + "\n"
 
 
-def _video_grid_html(records: list[dict], extra_class: str = "") -> str:
+def _video_grid_html(records: list[dict], extra_class: str = "",
+                     kind: str = "Video") -> str:
     cards = []
     for r in records:
         published = datetime.fromisoformat(r["published"])
@@ -553,7 +555,7 @@ def _video_grid_html(records: list[dict], extra_class: str = "") -> str:
             f'<a class="video-card" href="{html.escape(r["url"])}" '
             f'target="_blank" rel="noopener"{tooltip}>\n'
             f'  <img src="{html.escape(r.get("thumbnail", ""))}" '
-            f'alt="Video: {shown}" loading="lazy">\n'
+            f'alt="{kind}: {shown}" loading="lazy">\n'
             f'  <span class="video-card-title">{shown}</span>\n'
             f'  <span class="video-card-meta">{html.escape(r["source"])}, '
             f"{fmt_date(published)}</span>{description}\n"
@@ -2098,7 +2100,8 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
         lines.extend(["## Podcasts", ""])
         lines.extend(_collapsed_block(
             f"Show the {len(podcasts)} {noun}",
-            [_video_grid_html(podcasts, extra_class="podcast-grid")]))
+            [_video_grid_html(podcasts, extra_class="podcast-grid",
+                              kind="Podcast")]))
         lines.append("")
     if empty:
         lines.append("No items were kept in the last seven days.")
@@ -2164,8 +2167,10 @@ def render_digest_archive(title: str, categories: dict, news_by_cat: dict,
             continue
         empty = False
         extra = "podcast-grid" if label == "Podcasts" else ""
+        kind = "Podcast" if label == "Podcasts" else "Video"
         lines.extend([f"## {label}", "",
-                      _video_grid_html(records, extra_class=extra), ""])
+                      _video_grid_html(records, extra_class=extra, kind=kind),
+                      ""])
     if empty:
         lines.append("No items were kept this week.")
     if also:

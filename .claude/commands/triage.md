@@ -13,10 +13,14 @@ Owner's instruction for this run: $ARGUMENTS
    every step below (verify external facts yourself, dry-run before
    write-mode, `mkdocs build --strict` before commit, published-content
    style rules including no em dashes, the authority register).
-2. Issues come from four workflows: **Content watch** (weekly roster
-   recommendations with evidence links), **Conference watch** (calendar
-   changes that failed an auto-apply gate, plus newly announced
-   conferences), **Feed health** (a feed died), **Link health** (a link
+2. Issues come from six automated sources: **Content watch** (weekly
+   roster recommendations with evidence links), **Conference watch**
+   (calendar changes that failed an auto-apply gate, plus newly
+   announced conferences), **Opportunity watch** (weekly open calls and
+   deadlines with paste-ready YAML for data/opportunities.yaml),
+   **Tool discovery** (a monthly scheduled survey proposing new
+   directory candidates; roster edits from it follow the content-watch
+   rules), **Feed health** (a feed died), **Link health** (a link
    died). Anything else is a human-filed issue; summarize it but do not
    act without explicit instruction.
 3. If the owner's instruction above names an issue and items, act on
@@ -42,6 +46,10 @@ Owner's instruction for this run: $ARGUMENTS
 - **Conference watch items**: confirm dates on the official page; edit
   data/conferences.yaml with a `# Verified YYYY-MM-DD from <source>`
   comment. Dates you cannot confirm stay TBD, never estimated.
+- **Opportunity watch items**: confirm the call and its deadline on the
+  official page; edit data/opportunities.yaml following its header
+  conventions with a verified comment. Past-deadline entries archive
+  automatically; never delete them by hand.
 - **Feed and link health items**: follow the README playbook section
   "When automation emails you". A site that blocks scripted clients but
   is live in a browser belongs in the MANUALLY_VERIFIED allowlist in
