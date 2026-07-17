@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>The European Union has imposed a ruling that requires Google to give rival AI assistants and search engines increased access to Android and Google Search platforms, which is expected to reshape competition and integration in mobile AI technologies <a href="https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma">[3]</a>. Security vulnerabilities in agent systems are again in focus, with recent demonstrations showing how tool integration can unintentionally expose sensitive user data <a href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">[7]</a>. Meanwhile, companies are prioritizing safer and more robust models, as seen in OpenAI’s use of GPT-Red to probe and improve GPT-5.6 against cybersecurity threats <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[5]</a>. Model development continues at pace, highlighted by Moonshot AI’s announcement of Kimi K3, a large-scale language model expected to release with open weights, and the introduction of lower-resource mobile models such as Bonsai 27B targeting accessibility <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[1]</a> <a href="https://prismml.com/news/bonsai-27b">[11]</a>.</p>
-<p>Also this week: three new model releases, four items on safety and reliability, two papers addressing benchmarks and evaluation, and ongoing discussions about policy and research methods. Recent leaderboard efforts have sought to balance human preference against factual accuracy in language model outputs.</p>
-<p class="section-brief-date">The picture as of July 16, 2026; numbered links go to the items below.</p>
+<p>A new study establishes that there are fundamental information-theoretic limits governing the reliability and scaling of language models, clarifying that every generative task has a ceiling on attainable performance which cannot be surpassed due to inherent output uncertainty <a href="https://arxiv.org/abs/2607.14112">[1]</a>. OpenAI&#x27;s development of GPT-Red, an adversarial super-hacker model, has led to improved robustness in GPT-5.6 against cybersecurity attacks, offering a proactive approach to system safety <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[9]</a>. Meanwhile, prefill jailbreak attacks on aligned models have been shown to reveal persistent harm representations even when compliance is achieved, pointing to persistent challenges in decision formation rather than information encoding <a href="https://arxiv.org/abs/2607.14147">[2]</a>. Among new models, Kimi K3 was announced as a 2.8 trillion parameter system with open weights promised by mid-2026, marking a milestone in open-access model development <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[3]</a>.</p>
+<p>Also this week: the section includes eight new model releases and five papers on safety and reliability. Benchmarks and evaluation are represented by a leaderboard ranking models in factual accuracy and user preference, and a top-performing embedding model for agentic retrieval. Policy developments appear in coverage of an EU antitrust ruling affecting Google.</p>
+<p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.14112">Information-Theoretic Limits of Reliability and Scaling in Language Models</a>
+    <p class="news-card-summary">Research demonstrates that every generative task has an information-theoretic reliability ceiling beyond which no model can perform, with gaps determined by resolvable output uncertainty from context.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.14147">Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak</a>
+    <p class="news-card-summary">Study of prefill jailbreak attacks on aligned language models reveals that harm representations remain detectable even when models switch to compliance, suggesting failures in output decision formation rather than representation.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 16, 2026</span></div>
@@ -28,6 +42,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Moonshot AI announced Kimi K3, a 2.8 trillion parameter model, with open-weight release promised by July 27, 2026.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/kimi-3-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://lmstudio.ai/blog/introducing-lm-studio-bionic">LM Studio Bionic: the AI agent for open models</a>
+    <p class="news-card-summary">LM Studio releases Bionic, an AI agent framework for deploying and orchestrating open-weight language models on local machines.</p>
+  </div>
+  <img class="news-card-thumb" src="https://files.lmstudio.ai/bionic/lm-studio-bionic-og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">German AI consortium releases Soofi S, an open 30B model that tops benchmarks</a>
+    <p class="news-card-summary">German consortium releases Soofi S, a 30-billion-parameter open-weight model ranking among top performers on English and German language benchmarks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://the-decoder.com/wp-content/uploads/2026/07/soofi-s-german-llm-nano-banana-pro.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
@@ -106,35 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2607.11889">Scaling Point-in-Time Language Models</a>
     <p class="news-card-summary">Point-in-time language models trained only on temporally prior text eliminate lookahead bias for valid backtesting and causal inference.</p>
   </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">SpaceXAI’s Grok programming tool was uploading its users’ entire codebase to cloud storage</a>
-    <p class="news-card-summary">SpaceX&#x27;s Grok Build tool was found uploading entire user codebases to cloud storage without permission before the company disabled the feature.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK262_GROK_B_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhukq/bonsai_27b_the_first_27bclass_model_to_run_on_a">Bonsai 27B: The First 27B-Class Model to Run on a Phone</a>
-    <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model capable of running on mobile phones.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://prismml.com/news/bonsai-27b">Bonsai 27B: A 27B-Class model that runs on a phone</a>
-    <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model designed to run efficiently on mobile phones.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwfva9/bonsai_27b_1bit_dense_llm_running_locally_in_your">Bonsai 27B: 1-bit dense LLM running locally in your browser using custom WebGPU kernels</a>
-    <p class="news-card-summary">PrismML released Bonsai 27B, a 1-bit quantized large language model that compresses to 3.8GB while retaining 90% of capability, runnable in web browsers via custom WebGPU kernels.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/cGZwaWYxanQ3OGRoMXn7IuFtrK_hbLC66wg8SQ4wFJyBLQaa2tVzFGmUcDuQ.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cc6dcc927df912a535cbcce268b4dd27331b0df0" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

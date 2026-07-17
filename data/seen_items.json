@@ -18905,6 +18905,241 @@
    "first_seen": "2026-07-17T03:40:17.932462+00:00",
    "kept": false,
    "reason": "daily news show recap with no standout episode substance; speculative framing about enterprise battles rather than substantive coverage of a model release"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14099",
+   "title_hash": "9d59e69920a2de2b3127aacc78651c2f",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "narrow research on vision-language model robustness; evaluation method of marginal relevance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14100",
+   "title_hash": "48d77a6f1772755591fcfdf40f18b185",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "specialized research on quantum natural language processing for Arabic; outside scope of medical AI"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14101",
+   "title_hash": "294054e5ed8dcdd7b7137dd108eadf91",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on adversarial attacks; narrow security focus without relevance to medical education or practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14102",
+   "title_hash": "3a67f3b1ea173e58737ff05a8677445f",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "data structure research on heterogeneous hierarchical information; no medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14103",
+   "title_hash": "08aa9d18d891f0e1e123d2a8832cd3e3",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on multi-agent communication mechanisms; narrow focus without direct relevance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14104",
+   "title_hash": "7b28a263dd3c771f626ff47a24114ef7",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "language learning application for Uzbek; outside scope of medical education and clinical AI"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14105",
+   "title_hash": "db0bc0a9b18d412375868b0b8bf93ed0",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on prompt engineering; incremental method development without broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14106",
+   "title_hash": "b8344bed1336d21e4b84b963c48b4dde",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on diffusion-based language model architecture; narrow method contribution without demonstrated impact"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14107",
+   "title_hash": "c8c717f7509d5c841a92243af601b1d1",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "inference optimization for diffusion language models; narrow infrastructure improvement without broad relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14108",
+   "title_hash": "e0022f26d8fba011da9c3d29d29c2341",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "narrow metric definition for LLM agent tool use; technical detail without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14109",
+   "title_hash": "5d03a0af6436c0984a0aca70633e287c",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on prompting and evaluation methods; incremental findings on multiple-choice question answering"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14110",
+   "title_hash": "ab6e70bb4256ec6f84ed8a46f1557564",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on multi-agent dialogue modeling; narrow focus on cognitive representation without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14111",
+   "title_hash": "438c9c540451b05ae942e14fa0edc25b",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on activation steering in small language models; specialized mechanistic study without broad applicability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14112",
+   "title_hash": "68db883b19ad571ca20dc01de9d6fee3",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": true,
+   "title": "Information-Theoretic Limits of Reliability and Scaling in Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-17T04:00:00+00:00",
+   "summary": "Research demonstrates that every generative task has an information-theoretic reliability ceiling beyond which no model can perform, with gaps determined by resolvable output uncertainty from context.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14113",
+   "title_hash": "653dc2a96f85008ebc75214fc93296b4",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on AI-generated text detection robustness; security-focused application without relevance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14114",
+   "title_hash": "42f9f86ef855eb4c031f01793970e175",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on graph-language model reasoning under distribution shift; narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14116",
+   "title_hash": "866ee016ae946a09d63237ce2d130924",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "domain-specific application with narrow medical focus; belongs in clinical_practice if kept, but arXiv medical imaging papers are outside scope when not…"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14117",
+   "title_hash": "0ce3c411ff7850d660d2f62baa8661bc",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on document differencing; specialized application to scientific publishing without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14118",
+   "title_hash": "d5d8d92e1ec7f38db68850811b422261",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "narrow domain application in research methodology; incremental research on LLM-assisted idea generation without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14119",
+   "title_hash": "a2f146e5a26150b25ff80f8b2b773389",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on semantic compression in multi-agent LLM systems; narrow infrastructure issue without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14131",
+   "title_hash": "58ced3ebc1df2c857fbbb64221fb0505",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on Urdu fake news detection; language-specific application outside scope of medical AI"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14147",
+   "title_hash": "ea2037bd5d1a5f1c116d4fd461209a8e",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": true,
+   "title": "Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-17T04:00:00+00:00",
+   "summary": "Study of prefill jailbreak attacks on aligned language models reveals that harm representations remain detectable even when models switch to compliance, suggesting failures in output decision formation rather than representation.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14242",
+   "title_hash": "72113ee9e3e42e825cfd62b19a68e790",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on implicit reasoning steering via concept chaining; narrow method for biasing model outputs without broad applicability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14250",
+   "title_hash": "1f63b9d6d86b9959be18fc771b37a433",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on personal AI assistant behavior; application-specific issues without relevance to medical education or clinical deployment"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.14277",
+   "title_hash": "2c5885f8f0a0f86501a205d40b571665",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "research on agent decision-making interface; narrow infrastructure contribution without demonstrated impact or broad significance"
+  },
+  {
+   "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+   "title_hash": "339c56fde371fec02b431dae52fa0747",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": true,
+   "title": "LM Studio Bionic: the AI agent for open models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-16T20:18:15+00:00",
+   "summary": "LM Studio releases Bionic, an AI agent framework for deploying and orchestrating open-weight language models on local machines.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://files.lmstudio.ai/bionic/lm-studio-bionic-og.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german",
+   "title_hash": "413e36b731f351a7288b4fd470ea09cf",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": true,
+   "title": "German AI consortium releases Soofi S, an open 30B model that tops benchmarks",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-16T17:44:46+00:00",
+   "summary": "German consortium releases Soofi S, a 30-billion-parameter open-weight model ranking among top performers on English and German language benchmarks.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://the-decoder.com/wp-content/uploads/2026/07/soofi-s-german-llm-nano-banana-pro.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.zhinit.dev/blog/training-a-kick-drum-diffusion-model",
+   "title_hash": "90bd20eac0eb20038e401e43dc1c7ef6",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": false,
+   "reason": "narrow tutorial on music generation; outside scope of medical education and AI in medicine"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42463212?fc=20260609215449&ff=20260717022849&v=2.20.0",
+   "title_hash": "d612fafcf2e9c786b8d7ab96beafd4fc",
+   "first_seen": "2026-07-17T06:28:49.072125+00:00",
+   "kept": true,
+   "title": "Awareness, knowledge and attitudes towards artificial intelligence among nursing students: a systematic review protocol",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-16T10:00:00+00:00",
+   "summary": "Systematic review protocol examining nursing students' awareness, knowledge, and attitudes toward artificial intelligence in an underresearched Gulf Cooperation Council region.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
   }
  ],
  "digests": [
@@ -19051,9 +19286,9 @@
    "date": "July 16, 2026"
   },
   "general_ai": {
-   "text": "The European Union has imposed a ruling that requires Google to give rival AI assistants and search engines increased access to Android and Google Search platforms, which is expected to reshape competition and integration in mobile AI technologies <a href=\"https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma\">[3]</a>. Security vulnerabilities in agent systems are again in focus, with recent demonstrations showing how tool integration can unintentionally expose sensitive user data <a href=\"https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration\">[7]</a>. Meanwhile, companies are prioritizing safer and more robust models, as seen in OpenAI’s use of GPT-Red to probe and improve GPT-5.6 against cybersecurity threats <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[5]</a>. Model development continues at pace, highlighted by Moonshot AI’s announcement of Kimi K3, a large-scale language model expected to release with open weights, and the introduction of lower-resource mobile models such as Bonsai 27B targeting accessibility <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[1]</a> <a href=\"https://prismml.com/news/bonsai-27b\">[11]</a>.\n\nAlso this week: three new model releases, four items on safety and reliability, two papers addressing benchmarks and evaluation, and ongoing discussions about policy and research methods. Recent leaderboard efforts have sought to balance human preference against factual accuracy in language model outputs.",
-   "hash": "5e2edfdae89002f1",
-   "date": "July 16, 2026"
+   "text": "A new study establishes that there are fundamental information-theoretic limits governing the reliability and scaling of language models, clarifying that every generative task has a ceiling on attainable performance which cannot be surpassed due to inherent output uncertainty <a href=\"https://arxiv.org/abs/2607.14112\">[1]</a>. OpenAI&#x27;s development of GPT-Red, an adversarial super-hacker model, has led to improved robustness in GPT-5.6 against cybersecurity attacks, offering a proactive approach to system safety <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[9]</a>. Meanwhile, prefill jailbreak attacks on aligned models have been shown to reveal persistent harm representations even when compliance is achieved, pointing to persistent challenges in decision formation rather than information encoding <a href=\"https://arxiv.org/abs/2607.14147\">[2]</a>. Among new models, Kimi K3 was announced as a 2.8 trillion parameter system with open weights promised by mid-2026, marking a milestone in open-access model development <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[3]</a>.\n\nAlso this week: the section includes eight new model releases and five papers on safety and reliability. Benchmarks and evaluation are represented by a leaderboard ranking models in factual accuracy and user preference, and a top-performing embedding model for agentic retrieval. Policy developments appear in coverage of an EU antitrust ruling affecting Google.",
+   "hash": "44f312f8d49339bb",
+   "date": "July 17, 2026"
   }
  },
  "opportunity_snapshot": {

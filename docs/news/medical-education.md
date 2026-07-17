@@ -77,6 +77,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A scoping review finds insufficient evidence for AI-enhanced predictive analytics in rural tele-oncology, highlighting underrepresentation of underserved populations in digital health research.</p>
   </div>
 </div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42463212?fc=20260609215449&amp;ff=20260717022849&amp;v=2.20.0">Awareness, knowledge and attitudes towards artificial intelligence among nursing students: a systematic review protocol</a>
+    <p class="news-card-summary">Systematic review protocol examining nursing students&#x27; awareness, knowledge, and attitudes toward artificial intelligence in an underresearched Gulf Cooperation Council region.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 16, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">AI-powered tools in family medicine: Bridging technology and practice</a>
     <p class="news-card-summary">Survey of family physicians in Saudi Arabia shows interest in AI training but identifies barriers including concerns about reliability, data quality, and workflow integration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&amp;ff=20260715101248&amp;v=2.20.0">Influence of Oral and Maxillofacial Radiology Training and Experience on Attitudes Toward Artificial Intelligence in Dentistry: A Cross-Sectional Questionnaire Study</a>
-    <p class="news-card-summary">Cross-sectional study of dental professionals and students shows that training and experience level influence attitudes toward AI in dentistry.</p>
   </div>
 </div>
 </div>
