@@ -19336,6 +19336,73 @@
    "first_seen": "2026-07-17T14:04:56.166022+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says",
+   "title_hash": "c0471938e34bf9ed3e1c3578c1317541",
+   "first_seen": "2026-07-17T17:32:02.326421+00:00",
+   "kept": false,
+   "reason": "regulatory action on commercial nudity-synthesis apps, unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+   "title_hash": "7d228d4bd68a71db90dc54cf498e7a33",
+   "first_seen": "2026-07-17T17:32:02.326421+00:00",
+   "kept": false,
+   "reason": "vendor marketing from Hugging Face and NVIDIA about fine-tuning infrastructure"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e91071",
+   "title_hash": "cf4949d198f933c9c96090c76114ef04",
+   "first_seen": "2026-07-17T17:32:02.326421+00:00",
+   "kept": false,
+   "reason": "gender differences in self-assessment are not specific to artificial intelligence in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&ff=20260717133202&v=2.20.0",
+   "title_hash": "8113cc8fc6a743d33a330c1a528f39f7",
+   "first_seen": "2026-07-17T17:32:02.326421+00:00",
+   "kept": true,
+   "title": "Knowledge, Attitude, and Perception of Artificial Intelligence in Healthcare Among Postgraduate Residents: A Cross-sectional Survey",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-17T10:00:00+00:00",
+   "summary": "A survey of postgraduate residents found significant gaps in artificial intelligence knowledge despite support for AI integration, highlighting the need for structured AI training in medical education.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&ff=20260717133202&v=2.20.0",
+   "title_hash": "87cbae83eb188c7faeb85536e1b1d106",
+   "first_seen": "2026-07-17T17:32:02.326421+00:00",
+   "kept": true,
+   "title": "Construction of a virtual simulation teaching system for medical imaging education: a single-center experience",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-17T10:00:00+00:00",
+   "summary": "Virtual simulation systems integrating computer graphics, dynamic modeling, and artificial intelligence have become a core teaching methodology in medical imaging education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uylutc/anyone_else_completely_tuning_out_these_massive",
+   "title_hash": "bab9c7fe9196b3dafb923d86a9fd1229",
+   "first_seen": "2026-07-17T17:32:02.326421+00:00",
+   "kept": false,
+   "reason": "forum discussion about model size versus practical local deployment, not significant news"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03020-7",
+   "title_hash": "1d83af27bb5a674bdc0dc0cc3b683cb4",
+   "first_seen": "2026-07-17T17:32:02.326421+00:00",
+   "kept": true,
+   "title": "Deep learning, based automatic measurement of spinal alignment and implant detection in scoliosis radiographs",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-17T00:00:00+00:00",
+   "summary": "Deep learning automatically measures spinal alignment and detects implants in scoliosis radiographs, supporting diagnostic accuracy.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
   }
  ],
  "digests": [
@@ -19472,13 +19539,13 @@
  "last_digest_at": "2026-07-17T03:40:17.932462+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "An AI-augmented teacher feedback model demonstrated measurable alignment with expert ratings and preliminary advantages in supporting medical students’ clinical documentation skills, suggesting a shift toward integrated AI feedback in formative assessment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[1]</a>. Simulation tools developed via natural language inputs allow clinicians to create educational modules without coding, broadening accessibility but still requiring technical oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[8]</a>. Game-based learning powered by generative AI improved knowledge retention and reduced cognitive load for emergency response training, indicating tangible benefits in high-stakes simulation environments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[7]</a>. Surveys of nursing students in China highlighted educational gaps and uneven attitudes toward AI, especially among disadvantaged groups, raising questions about equitable curriculum integration <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0\">[4]</a>. Feasibility research with AI-simulated patients for shared decision-making training offered automated feedback, expanding the scope of virtual communication skills programs <a href=\"https://mededu.jmir.org/2026/1/e100467\">[3]</a>.\n\nAlso this week: studies cover six teaching and curriculum innovations and four simulation or skills initiatives. One practical item describes scalable oral exam templates for large classes. Additional articles report on digital HIV training for lay health workers and systemic barriers to adapting medical curricula rapidly.",
-   "hash": "94819cb829d4ed56",
+   "text": "AI-driven tools are seeing increased use in both clinical skills training and curriculum support. Feedback models powered by large language models are helping improve medical students&#x27; documentation skills, with preliminary evidence that AI feedback may outperform traditional approaches <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[1]</a>. AI-assisted learning platforms in specialist training, such as breast cancer ultrasound diagnosis, are also showing potential benefits in diagnostic accuracy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[2]</a>. Despite these advances, surveys continue to find that postgraduate residents and nursing students have significant knowledge gaps and variable attitudes regarding AI, underscoring the need for structured educational interventions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[3]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0\">[6]</a>. Virtual simulation systems that combine computer graphics, dynamic modeling, and artificial intelligence are becoming central in teaching medical imaging and allied subjects <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[4]</a>.\n\nAlso this week: the section includes five simulation and skills items, studies of attitudes and adoption among both medical and nursing students, and evaluations of AI-powered tools in anatomy education and emergency response training. A practical template for oral exams using AI is newly introduced.",
+   "hash": "b4ef8758033f3d15",
    "date": "July 17, 2026"
   },
   "clinical_practice": {
-   "text": "The introduction of a bidirectional neuroprosthetic system that restored both hand movement and sensation in a person with complete tetraplegia highlights the significant clinical potential of artificial intelligence-guided neurotechnology, offering a demonstration of sensory-motor recovery through brain signal decoding and targeted neuromodulation <a href=\"https://www.nature.com/articles/s41591-026-04498-0\">[12]</a>. Advances in clinical decision support remain prominent, with reinforcement learning being used to provide dynamic, individualized suggestions for coagulation management <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[2]</a> and machine learning enabling more accurate mortality risk predictions among sepsis patients using combined lactate markers <a href=\"https://medinform.jmir.org/2026/1/e82230\">[4]</a>. AI-supported neuroscience also continues to progress as models analyze task-based brain activity to predict opioid craving in individuals, offering pathways to personalized addiction treatment <a href=\"https://www.nature.com/articles/s41746-026-02948-0\">[3]</a>. Evaluation of emerging systems maintains focus on safety, illustrated by efforts to ensure psychiatric large language models request clarifying information rather than deliver unsupported diagnoses <a href=\"https://arxiv.org/abs/2607.13036\">[6]</a>.\n\nAlso this week: there are studies on biosignal-based screening of depressive symptoms with virtual humans, an approach for fall risk assessment in aged care using generative AI, optimization of Chinese medical language models, and methods to manage missing data in survival prediction for lung cancer. The section features eight new clinical decision support projects and four papers on safety and evaluation.",
-   "hash": "3cbd3a21a4fddf33",
+   "text": "A bidirectional neuroprosthesis has demonstrated restored hand movement and sensation in a person with complete tetraplegia through combined brain signal decoding and targeted neuromodulation, highlighting ongoing advances in functional restoration <a href=\"https://www.nature.com/articles/s41591-026-04498-0\">[14]</a>. At the same time, deep learning applications to diagnostic imaging are becoming more transparent and explainable, as shown by a chest radiograph foundation model enabling disease profiling with improved interpretability <a href=\"https://www.nature.com/articles/s41746-026-02990-y\">[11]</a>. Automated analysis is also supporting clinical decision making and risk assessment in varied contexts, such as using chief complaint language to improve out-of-hospital emergency triage <a href=\"https://www.nature.com/articles/s41746-026-03005-6\">[10]</a>, leveraging machine learning for timely mortality predictions in sepsis patients <a href=\"https://medinform.jmir.org/2026/1/e82230\">[6]</a>, and reinforcing continuous evaluation of coagulation balance with state-guided clinical suggestions <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[2]</a>.\n\nAlso this week: an approach to fall risk assessment in aged care using generative AI, new benchmarks for evaluating large language models in psychiatric safety, and machine learning analysis for handling missing data in lung cancer survival prediction. Seven new clinical decision support studies and three safety evaluation reports expand the breadth of available resources.",
+   "hash": "3c767b84ffe5187d",
    "date": "July 17, 2026"
   },
   "general_ai": {

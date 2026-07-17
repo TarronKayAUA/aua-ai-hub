@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An AI-augmented teacher feedback model demonstrated measurable alignment with expert ratings and preliminary advantages in supporting medical students’ clinical documentation skills, suggesting a shift toward integrated AI feedback in formative assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[1]</a>. Simulation tools developed via natural language inputs allow clinicians to create educational modules without coding, broadening accessibility but still requiring technical oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[8]</a>. Game-based learning powered by generative AI improved knowledge retention and reduced cognitive load for emergency response training, indicating tangible benefits in high-stakes simulation environments <a href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[7]</a>. Surveys of nursing students in China highlighted educational gaps and uneven attitudes toward AI, especially among disadvantaged groups, raising questions about equitable curriculum integration <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[4]</a>. Feasibility research with AI-simulated patients for shared decision-making training offered automated feedback, expanding the scope of virtual communication skills programs <a href="https://mededu.jmir.org/2026/1/e100467">[3]</a>.</p>
-<p>Also this week: studies cover six teaching and curriculum innovations and four simulation or skills initiatives. One practical item describes scalable oral exam templates for large classes. Additional articles report on digital HIV training for lay health workers and systemic barriers to adapting medical curricula rapidly.</p>
+<p>AI-driven tools are seeing increased use in both clinical skills training and curriculum support. Feedback models powered by large language models are helping improve medical students&#x27; documentation skills, with preliminary evidence that AI feedback may outperform traditional approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[1]</a>. AI-assisted learning platforms in specialist training, such as breast cancer ultrasound diagnosis, are also showing potential benefits in diagnostic accuracy <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. Despite these advances, surveys continue to find that postgraduate residents and nursing students have significant knowledge gaps and variable attitudes regarding AI, underscoring the need for structured educational interventions <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[3]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[6]</a>. Virtual simulation systems that combine computer graphics, dynamic modeling, and artificial intelligence are becoming central in teaching medical imaging and allied subjects <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a>.</p>
+<p>Also this week: the section includes five simulation and skills items, studies of attitudes and adoption among both medical and nursing students, and evaluations of AI-powered tools in anatomy education and emergency response training. A practical template for oral exams using AI is newly introduced.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -33,6 +33,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning</a>
     <p class="news-card-summary">An AI-assisted platform integrated into ultrasound residency training showed potential to improve residents&#x27; diagnostic accuracy for breast cancer detection in an exploratory study.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Knowledge, Attitude, and Perception of Artificial Intelligence in Healthcare Among Postgraduate Residents: A Cross-sectional Survey</a>
+    <p class="news-card-summary">A survey of postgraduate residents found significant gaps in artificial intelligence knowledge despite support for AI integration, highlighting the need for structured AI training in medical education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Construction of a virtual simulation teaching system for medical imaging education: a single-center experience</a>
+    <p class="news-card-summary">Virtual simulation systems integrating computer graphics, dynamic modeling, and artificial intelligence have become a core teaching methodology in medical imaging education.</p>
   </div>
 </div>
 <div class="news-card" data-topic="simulation-and-skills">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 15, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e89942">Digital Training for Lay Health Care Workers’ Knowledge and Skills in HIV Index Case Testing: Cluster Randomized Trial</a>
     <p class="news-card-summary">Cluster randomized trial evaluating digital training for lay health care workers learning HIV index case testing in low-resource settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e77034">Synchronous Remote Teaching for Neurological Examination Training in Fifth-Year Medical Students: Quasi-Experimental Study</a>
-    <p class="news-card-summary">Quasi-experimental study comparing synchronous remote teaching with in-person instruction for teaching neurological examination skills including tendon reflex assessment to medical students.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e96244">Systemic Barriers to Curriculum Adaptation for Rapidly Changing Knowledge in Medical Education: Qualitative Study</a>
-    <p class="news-card-summary">Qualitative study identifying systemic barriers to rapid curriculum adaptation in medical education, using digitalization in medicine as an illustrative case.</p>
   </div>
 </div>
 </div>

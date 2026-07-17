@@ -2,6 +2,6 @@
 
 - [Effectiveness of an AI-augmented teacher feedback model in improving medical students' clinical documentation skills: a retrospective cohort study](https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&ff=20260717100456&v=2.20.0) (PubMed AI in medical education, July 17, 2026)
 - [Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning](https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&ff=20260717100456&v=2.20.0) (PubMed AI in medical education, July 17, 2026)
+- [Knowledge, Attitude, and Perception of Artificial Intelligence in Healthcare Among Postgraduate Residents: A Cross-sectional Survey](https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&ff=20260717133202&v=2.20.0) (PubMed AI in medical education, July 17, 2026)
+- [Construction of a virtual simulation teaching system for medical imaging education: a single-center experience](https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&ff=20260717133202&v=2.20.0) (PubMed AI in medical education, July 17, 2026)
 - [Information-Theoretic Limits of Reliability and Scaling in Language Models](https://arxiv.org/abs/2607.14112) (arXiv cs.CL, July 17, 2026)
-- [Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak](https://arxiv.org/abs/2607.14147) (arXiv cs.CL, July 17, 2026)
-- [Biosignal-based screening of depressive symptoms during affective conversations with virtual humans](https://www.nature.com/articles/s41746-026-03017-2) (npj Digital Medicine, July 17, 2026)

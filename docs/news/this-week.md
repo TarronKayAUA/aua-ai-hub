@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>An AI-augmented teacher feedback model demonstrated measurable alignment with expert ratings and preliminary advantages in supporting medical students’ clinical documentation skills, suggesting a shift toward integrated AI feedback in formative assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[1]</a>. Simulation tools developed via natural language inputs allow clinicians to create educational modules without coding, broadening accessibility but still requiring technical oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[8]</a>. Game-based learning powered by generative AI improved knowledge retention and reduced cognitive load for emergency response training, indicating tangible benefits in high-stakes simulation environments <a href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[7]</a>. Surveys of nursing students in China highlighted educational gaps and uneven attitudes toward AI, especially among disadvantaged groups, raising questions about equitable curriculum integration <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[4]</a>. Feasibility research with AI-simulated patients for shared decision-making training offered automated feedback, expanding the scope of virtual communication skills programs <a href="https://mededu.jmir.org/2026/1/e100467">[3]</a>.</p>
-<p>Also this week: studies cover six teaching and curriculum innovations and four simulation or skills initiatives. One practical item describes scalable oral exam templates for large classes. Additional articles report on digital HIV training for lay health workers and systemic barriers to adapting medical curricula rapidly.</p>
+<p>AI-driven tools are seeing increased use in both clinical skills training and curriculum support. Feedback models powered by large language models are helping improve medical students&#x27; documentation skills, with preliminary evidence that AI feedback may outperform traditional approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[1]</a>. AI-assisted learning platforms in specialist training, such as breast cancer ultrasound diagnosis, are also showing potential benefits in diagnostic accuracy <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. Despite these advances, surveys continue to find that postgraduate residents and nursing students have significant knowledge gaps and variable attitudes regarding AI, underscoring the need for structured educational interventions <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[3]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[6]</a>. Virtual simulation systems that combine computer graphics, dynamic modeling, and artificial intelligence are becoming central in teaching medical imaging and allied subjects <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a>.</p>
+<p>Also this week: the section includes five simulation and skills items, studies of attitudes and adoption among both medical and nursing students, and evaluations of AI-powered tools in anatomy education and emergency response training. A practical template for oral exams using AI is newly introduced.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -34,6 +34,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning</a>
         <p class="news-card-summary">An AI-assisted platform integrated into ultrasound residency training showed potential to improve residents&#x27; diagnostic accuracy for breast cancer detection in an exploratory study.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Knowledge, Attitude, and Perception of Artificial Intelligence in Healthcare Among Postgraduate Residents: A Cross-sectional Survey</a>
+        <p class="news-card-summary">A survey of postgraduate residents found significant gaps in artificial intelligence knowledge despite support for AI integration, highlighting the need for structured AI training in medical education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Construction of a virtual simulation teaching system for medical imaging education: a single-center experience</a>
+        <p class="news-card-summary">Virtual simulation systems integrating computer graphics, dynamic modeling, and artificial intelligence have become a core teaching methodology in medical imaging education.</p>
       </div>
     </div>
     <div class="news-card" data-topic="simulation-and-skills">
@@ -337,14 +351,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>The introduction of a bidirectional neuroprosthetic system that restored both hand movement and sensation in a person with complete tetraplegia highlights the significant clinical potential of artificial intelligence-guided neurotechnology, offering a demonstration of sensory-motor recovery through brain signal decoding and targeted neuromodulation <a href="https://www.nature.com/articles/s41591-026-04498-0">[12]</a>. Advances in clinical decision support remain prominent, with reinforcement learning being used to provide dynamic, individualized suggestions for coagulation management <a href="https://www.nature.com/articles/s41746-026-03039-w">[2]</a> and machine learning enabling more accurate mortality risk predictions among sepsis patients using combined lactate markers <a href="https://medinform.jmir.org/2026/1/e82230">[4]</a>. AI-supported neuroscience also continues to progress as models analyze task-based brain activity to predict opioid craving in individuals, offering pathways to personalized addiction treatment <a href="https://www.nature.com/articles/s41746-026-02948-0">[3]</a>. Evaluation of emerging systems maintains focus on safety, illustrated by efforts to ensure psychiatric large language models request clarifying information rather than deliver unsupported diagnoses <a href="https://arxiv.org/abs/2607.13036">[6]</a>.</p>
-<p>Also this week: there are studies on biosignal-based screening of depressive symptoms with virtual humans, an approach for fall risk assessment in aged care using generative AI, optimization of Chinese medical language models, and methods to manage missing data in survival prediction for lung cancer. The section features eight new clinical decision support projects and four papers on safety and evaluation.</p>
+<p>A bidirectional neuroprosthesis has demonstrated restored hand movement and sensation in a person with complete tetraplegia through combined brain signal decoding and targeted neuromodulation, highlighting ongoing advances in functional restoration <a href="https://www.nature.com/articles/s41591-026-04498-0">[14]</a>. At the same time, deep learning applications to diagnostic imaging are becoming more transparent and explainable, as shown by a chest radiograph foundation model enabling disease profiling with improved interpretability <a href="https://www.nature.com/articles/s41746-026-02990-y">[11]</a>. Automated analysis is also supporting clinical decision making and risk assessment in varied contexts, such as using chief complaint language to improve out-of-hospital emergency triage <a href="https://www.nature.com/articles/s41746-026-03005-6">[10]</a>, leveraging machine learning for timely mortality predictions in sepsis patients <a href="https://medinform.jmir.org/2026/1/e82230">[6]</a>, and reinforcing continuous evaluation of coagulation balance with state-guided clinical suggestions <a href="https://www.nature.com/articles/s41746-026-03039-w">[2]</a>.</p>
+<p>Also this week: an approach to fall risk assessment in aged care using generative AI, new benchmarks for evaluating large language models in psychiatric safety, and machine learning analysis for handling missing data in lung cancer survival prediction. Seven new clinical decision support studies and three safety evaluation reports expand the breadth of available resources.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 57 items"
+??? abstract "Show the 56 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (57)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
@@ -372,6 +386,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03041-2">Artificial intelligence needs better health systems to reduce inequalities</a>
         <p class="news-card-summary">Commentary on how AI deployment in healthcare requires stronger health systems to avoid widening existing health inequalities.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03020-7">Deep learning, based automatic measurement of spinal alignment and implant detection in scoliosis radiographs</a>
+        <p class="news-card-summary">Deep learning automatically measures spinal alignment and detects implants in scoliosis radiographs, supporting diagnostic accuracy.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -704,20 +725,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Cross-sectional study finds patients support AI for cervical lesion screening efficiency and diagnosis but cite privacy, reliability, and trust concerns.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02894-x">BrainSeg: a generalized framework for comprehensive multimodal brain tissue segmentation, parcellation, and lesion labeling</a>
-        <p class="news-card-summary">Peer-reviewed study presents BrainSeg, a framework for automated segmentation, parcellation, and lesion labeling across multiple brain imaging modalities.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02941-7">A vision transformer deep learning model for assessing pediatric ileocolic intussusception severity using ultrasound images</a>
-        <p class="news-card-summary">Vision transformer model trained to assess severity of pediatric ileocolic intussusception from ultrasound images, published in peer-reviewed journal.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
@@ -756,9 +763,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -1055,13 +1062,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Research reveals that step-by-step reasoning in LLMs introduces vulnerability allowing attackers to degrade system performance through computational exploitation.</p>
       </div>
       <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-dozen-security-lasers-pointed-in-the-wrong-direction-around-a-password-thus-ironically-creating-a.jpg?id=67107951&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1umo8zu/longcat_2_model_weights_have_been_published">Longcat 2 model weights have been published</a>
-        <p class="news-card-summary">Meituan released open-weights Longcat 2 model in INT8 and FP8 quantized formats on Hugging Face.</p>
-      </div>
     </div>
     </div>
 
