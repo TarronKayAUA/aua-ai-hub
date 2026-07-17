@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>AI-driven tools are seeing increased use in both clinical skills training and curriculum support. Feedback models powered by large language models are helping improve medical students&#x27; documentation skills, with preliminary evidence that AI feedback may outperform traditional approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[1]</a>. AI-assisted learning platforms in specialist training, such as breast cancer ultrasound diagnosis, are also showing potential benefits in diagnostic accuracy <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. Despite these advances, surveys continue to find that postgraduate residents and nursing students have significant knowledge gaps and variable attitudes regarding AI, underscoring the need for structured educational interventions <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[3]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[6]</a>. Virtual simulation systems that combine computer graphics, dynamic modeling, and artificial intelligence are becoming central in teaching medical imaging and allied subjects <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a>.</p>
-<p>Also this week: the section includes five simulation and skills items, studies of attitudes and adoption among both medical and nursing students, and evaluations of AI-powered tools in anatomy education and emergency response training. A practical template for oral exams using AI is newly introduced.</p>
+<p>An exploratory study demonstrated that AI-assisted platforms may improve diagnostic accuracy in breast cancer ultrasound training for resident physicians <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[3]</a>. Meanwhile, generative AI scoring tools have shown preliminary promise in enhancing clinical documentation skills through automated feedback that aligns with expert ratings and may outperform traditional approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. Two recent surveys highlight persistent gaps in artificial intelligence knowledge among both postgraduate resident physicians and nursing students, despite widespread support for further integration-underscoring the need for structured AI training <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[7]</a>. Additionally, simulation systems combining computer graphics and artificial intelligence are becoming a core methodology within medical imaging education <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[5]</a>, pointing to broader adoption of technology-assisted learning.</p>
+<p>Also this week: studies assess student reliance on AI in nephrology, feasibility of AI chatbot simulations for shared decision-making training, and perceived effectiveness of AI-powered tools in undergraduate anatomy education. The section includes five papers focused on simulation and skill development, five on attitudes and adoption, and practical innovations such as a scalable AI template for oral exams.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89750">Current Landscape of Generative AI Use as a Search Engine Among Resident Physicians: Cross-Sectional Study</a>
+        <p class="news-card-summary">Cross-sectional study examines generative AI use as a search tool among resident physicians and identifies patterns of adoption and knowledge gaps in this population.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
@@ -351,15 +358,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A bidirectional neuroprosthesis has demonstrated restored hand movement and sensation in a person with complete tetraplegia through combined brain signal decoding and targeted neuromodulation, highlighting ongoing advances in functional restoration <a href="https://www.nature.com/articles/s41591-026-04498-0">[14]</a>. At the same time, deep learning applications to diagnostic imaging are becoming more transparent and explainable, as shown by a chest radiograph foundation model enabling disease profiling with improved interpretability <a href="https://www.nature.com/articles/s41746-026-02990-y">[11]</a>. Automated analysis is also supporting clinical decision making and risk assessment in varied contexts, such as using chief complaint language to improve out-of-hospital emergency triage <a href="https://www.nature.com/articles/s41746-026-03005-6">[10]</a>, leveraging machine learning for timely mortality predictions in sepsis patients <a href="https://medinform.jmir.org/2026/1/e82230">[6]</a>, and reinforcing continuous evaluation of coagulation balance with state-guided clinical suggestions <a href="https://www.nature.com/articles/s41746-026-03039-w">[2]</a>.</p>
-<p>Also this week: an approach to fall risk assessment in aged care using generative AI, new benchmarks for evaluating large language models in psychiatric safety, and machine learning analysis for handling missing data in lung cancer survival prediction. Seven new clinical decision support studies and three safety evaluation reports expand the breadth of available resources.</p>
+<p>A machine learning analysis advancing sepsis care found that lactate and lactate-to-albumin ratios can enhance risk prediction for mortality in large patient cohorts <a href="https://medinform.jmir.org/2026/1/e82230">[8]</a>. Approaches using physiologic and biosignal data are emerging both for inpatient monitoring-such as screening depressive symptoms during virtual human interactions <a href="https://www.nature.com/articles/s41746-026-03017-2">[3]</a>, and for outpatient management, including individualized craving prediction in patients with opioid use disorder using task-based EEG <a href="https://www.nature.com/articles/s41746-026-02948-0">[5]</a>. The development of a reinforcement learning model to track coagulation balance contributes to the emergence of state-guided clinical suggestions and decision support <a href="https://www.nature.com/articles/s41746-026-03039-w">[4]</a>. Meanwhile, benchmarks addressing the safety of language models in psychiatry stress the importance of ensuring models request clarification when information is insufficient, rather than generating potentially harmful unsupported diagnoses <a href="https://arxiv.org/abs/2607.13036">[10]</a>.</p>
+<p>Also this week: researchers introduced eight new clinical decision support tools, five studies in safety and evaluation, and systematic reviews on technologies for deep brain stimulation in movement disorders and the public availability of evidence-based mental health applications. Two studies addressed diagnostic imaging using deep learning models.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 56 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82924">Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines</a>
+        <p class="news-card-summary">Study benchmarks Fast Healthcare Interoperability Resources analytics tools to measure performance of RESTful queries and data engines for electronic health records research.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e75561">Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study</a>
+        <p class="news-card-summary">Study uses data augmentation and large language models to identify and prioritize medical terms in electronic health record notes to improve patient comprehension through OpenNotes.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
@@ -728,20 +749,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02956-0">Simulation of covariate and concept drift in machine learning hospital admission prediction from emergency triage</a>
-        <p class="news-card-summary">Peer-reviewed study examines how covariate and concept drift affect machine learning models for hospital admission prediction from emergency triage data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02876-z">An information bottleneck-based optimal transport network for automated diagnosis of spinal diseases</a>
-        <p class="news-card-summary">Peer-reviewed study presents an information bottleneck-based optimal transport network for automated diagnosis of spinal diseases.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 10, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03002-9">Psychometric characterization of human and artificial intelligence performance on cardiology residency in-service examination items</a>
         <p class="news-card-summary">Study characterizes psychometric performance of artificial intelligence and human physicians on cardiology residency examination items.</p>
       </div>
@@ -763,9 +770,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -1033,14 +1040,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants">2.5x faster Qwen3.6 NVFP4 Unsloth quants</a>
-        <p class="news-card-summary">Unsloth released 2.5x faster quantized inference for Qwen 3.6 using 4-bit tensor cores with FP8 key-value cache support.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/yoxm16aijech1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=68cb2bb669bbaee024fb2f7d1cb9aa832e4530de" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 9, 2026</span></div>
         <a class="news-card-title" href="https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts">Anthropic found a hidden space where Claude puzzles over concepts</a>
         <p class="news-card-summary">Anthropic&#x27;s Jacobian lens technique reveals interpretable internal representations in large language models that structure how they reason about concepts.</p>
@@ -1069,7 +1068,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 22 videos"
+??? abstract "Show the 21 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=LEnYkEIOhIY" target="_blank" rel="noopener" title="Kimi K3 IS INSANE! Best Open Model EVER That BEATS FABLE 5 &amp; GPT-5.6! (Fully Tested)">
@@ -1198,12 +1197,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">IBM Technology, July 12, 2026</span>
       <span class="video-card-desc">IBM explanation of AI governance and decision management practices to ensure responsible deployment and reduce model errors.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=1DtMiRKg-cs" target="_blank" rel="noopener">
-      <img src="https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg" alt="Video: Understanding the inner thoughts of AI" loading="lazy">
-      <span class="video-card-title">Understanding the inner thoughts of AI</span>
-      <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
-      <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
-    </a>
     </div>
 
 ## Podcasts
@@ -1212,13 +1205,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://aipodcast.education/higher-marks-lower-learning-ais-favourite-magic-trick" target="_blank" rel="noopener">
-      <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick" loading="lazy">
+      <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick" loading="lazy">
       <span class="video-card-title">Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick</span>
       <span class="video-card-meta">AI in Education Podcast, July 16, 2026</span>
       <span class="video-card-desc">A discussion of whether AI tools improve student learning or merely raise test scores, drawing on recent research and cases including findings from Brown University.</span>
     </a>
     <a class="video-card" href="https://ai-podcast.nejm.org/e/weave-s-brandon-rice-on-rebuilding-drug-regulation-with-ai" target="_blank" rel="noopener">
-      <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Video: Weave’s Brandon Rice on Rebuilding Drug Regulation with AI" loading="lazy">
+      <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Weave’s Brandon Rice on Rebuilding Drug Regulation with AI" loading="lazy">
       <span class="video-card-title">Weave’s Brandon Rice on Rebuilding Drug Regulation with AI</span>
       <span class="video-card-meta">NEJM AI Grand Rounds, July 15, 2026</span>
       <span class="video-card-desc">Brandon Rice from Weave discusses using AI to modernize pharmaceutical regulatory infrastructure and organize scientific knowledge for drug development.</span>

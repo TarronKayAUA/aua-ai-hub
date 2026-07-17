@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A bidirectional neuroprosthesis has demonstrated restored hand movement and sensation in a person with complete tetraplegia through combined brain signal decoding and targeted neuromodulation, highlighting ongoing advances in functional restoration <a href="https://www.nature.com/articles/s41591-026-04498-0">[14]</a>. At the same time, deep learning applications to diagnostic imaging are becoming more transparent and explainable, as shown by a chest radiograph foundation model enabling disease profiling with improved interpretability <a href="https://www.nature.com/articles/s41746-026-02990-y">[11]</a>. Automated analysis is also supporting clinical decision making and risk assessment in varied contexts, such as using chief complaint language to improve out-of-hospital emergency triage <a href="https://www.nature.com/articles/s41746-026-03005-6">[10]</a>, leveraging machine learning for timely mortality predictions in sepsis patients <a href="https://medinform.jmir.org/2026/1/e82230">[6]</a>, and reinforcing continuous evaluation of coagulation balance with state-guided clinical suggestions <a href="https://www.nature.com/articles/s41746-026-03039-w">[2]</a>.</p>
-<p>Also this week: an approach to fall risk assessment in aged care using generative AI, new benchmarks for evaluating large language models in psychiatric safety, and machine learning analysis for handling missing data in lung cancer survival prediction. Seven new clinical decision support studies and three safety evaluation reports expand the breadth of available resources.</p>
+<p>A machine learning analysis advancing sepsis care found that lactate and lactate-to-albumin ratios can enhance risk prediction for mortality in large patient cohorts <a href="https://medinform.jmir.org/2026/1/e82230">[8]</a>. Approaches using physiologic and biosignal data are emerging both for inpatient monitoring-such as screening depressive symptoms during virtual human interactions <a href="https://www.nature.com/articles/s41746-026-03017-2">[3]</a>, and for outpatient management, including individualized craving prediction in patients with opioid use disorder using task-based EEG <a href="https://www.nature.com/articles/s41746-026-02948-0">[5]</a>. The development of a reinforcement learning model to track coagulation balance contributes to the emergence of state-guided clinical suggestions and decision support <a href="https://www.nature.com/articles/s41746-026-03039-w">[4]</a>. Meanwhile, benchmarks addressing the safety of language models in psychiatry stress the importance of ensuring models request clarification when information is insufficient, rather than generating potentially harmful unsupported diagnoses <a href="https://arxiv.org/abs/2607.13036">[10]</a>.</p>
+<p>Also this week: researchers introduced eight new clinical decision support tools, five studies in safety and evaluation, and systematic reviews on technologies for deep brain stimulation in movement disorders and the public availability of evidence-based mental health applications. Two studies addressed diagnostic imaging using deep learning models.</p>
 <p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82924">Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines</a>
+    <p class="news-card-summary">Study benchmarks Fast Healthcare Interoperability Resources analytics tools to measure performance of RESTful queries and data engines for electronic health records research.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e75561">Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study</a>
+    <p class="news-card-summary">Study uses data augmentation and large language models to identify and prioritize medical terms in electronic health record notes to improve patient comprehension through OpenNotes.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03014-5">Public availability of evidence-based mental health apps: a systematic review and meta-analysis of self-guided apps</a>
     <p class="news-card-summary">Systematic review and meta-analysis examining the public availability and effectiveness of evidence-based self-guided mental health applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04498-0">A neuroprosthesis for restoring hand movement and sensation in a person with complete tetraplegia</a>
-    <p class="news-card-summary">Bidirectional neuroprosthetic system restored hand motor and sensory function in a person with complete tetraplegia using brain signal decoding and targeted neuromodulation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03019-0">Handling missing data: AI approach for survival prediction in lung cancer despite missing data</a>
-    <p class="news-card-summary">Machine learning model predicts lung cancer survival from incomplete multimodal patient data including imaging, biopsy, and clinical records.</p>
   </div>
 </div>
 </div>

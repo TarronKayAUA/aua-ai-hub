@@ -12,85 +12,85 @@ Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
 <a class="video-card" href="https://aipodcast.education/higher-marks-lower-learning-ais-favourite-magic-trick" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick" loading="lazy">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick" loading="lazy">
   <span class="video-card-title">Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick</span>
   <span class="video-card-meta">AI in Education Podcast, July 16, 2026</span>
   <span class="video-card-desc">A discussion of whether AI tools improve student learning or merely raise test scores, drawing on recent research and cases including findings from Brown University.</span>
 </a>
 <a class="video-card" href="https://ai-podcast.nejm.org/e/weave-s-brandon-rice-on-rebuilding-drug-regulation-with-ai" target="_blank" rel="noopener">
-  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Video: Weave’s Brandon Rice on Rebuilding Drug Regulation with AI" loading="lazy">
+  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Weave’s Brandon Rice on Rebuilding Drug Regulation with AI" loading="lazy">
   <span class="video-card-title">Weave’s Brandon Rice on Rebuilding Drug Regulation with AI</span>
   <span class="video-card-meta">NEJM AI Grand Rounds, July 15, 2026</span>
   <span class="video-card-desc">Brandon Rice from Weave discusses using AI to modernize pharmaceutical regulatory infrastructure and organize scientific knowledge for drug development.</span>
 </a>
 <a class="video-card" href="https://share.transistor.fm/s/facb92e2" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/XNr1FlUMRqcgOINlwzJryJUFzx05IMXfyCxfiSMMXkc/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iMTUx/NmM0ODdlNGI0YTdh/YjUxNjYwNTEyMzll/ZmVkMy5wbmc.jpg" alt="Video: Building Durable AI Agents" loading="lazy">
+  <img src="https://img.transistorcdn.com/XNr1FlUMRqcgOINlwzJryJUFzx05IMXfyCxfiSMMXkc/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9iMTUx/NmM0ODdlNGI0YTdh/YjUxNjYwNTEyMzll/ZmVkMy5wbmc.jpg" alt="Podcast: Building Durable AI Agents" loading="lazy">
   <span class="video-card-title">Building Durable AI Agents</span>
   <span class="video-card-meta">Practical AI, July 9, 2026</span>
   <span class="video-card-desc">Hamza Tahir discusses MLOps principles for moving AI agents from demos to reliable production systems, covering workflows, harnesses, fleets, and infrastructure.</span>
 </a>
 <a class="video-card" href="https://aipodcast.education/weve-read-the-ai-reports-so-you-dont-have-to-series-17-episode-9" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9" loading="lazy">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9" loading="lazy">
   <span class="video-card-title">We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9</span>
   <span class="video-card-meta">AI in Education Podcast, July 2, 2026</span>
   <span class="video-card-desc">Ray and Dan survey recent research on artificial intelligence in education, summarizing findings for educators and students.</span>
 </a>
 <a class="video-card" href="https://share.transistor.fm/s/6d8dad5f" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/Lm2mEDqafZACT7FMC2M7-KVb80vV2pNbxRXD28BQVg0/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9jYWRm/N2UzOWQ2NmRjOTll/NTBiMDEwMjc1ZjVm/YjNlYy5wbmc.jpg" alt="Video: Image Generation and Visual Intelligence with Black Forest Labs" loading="lazy">
+  <img src="https://img.transistorcdn.com/Lm2mEDqafZACT7FMC2M7-KVb80vV2pNbxRXD28BQVg0/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9jYWRm/N2UzOWQ2NmRjOTll/NTBiMDEwMjc1ZjVm/YjNlYy5wbmc.jpg" alt="Podcast: Image Generation and Visual Intelligence with Black Forest Labs" loading="lazy">
   <span class="video-card-title">Image Generation and Visual Intelligence with Black Forest Labs</span>
   <span class="video-card-meta">Practical AI, July 2, 2026</span>
   <span class="video-card-desc">Discussion of the evolution of AI image generation capabilities and visual intelligence models with Black Forest Labs.</span>
 </a>
 <a class="video-card" href="https://aipodcast.education/victoria-hedlund-on-ai-bias-what-every-teacher-needs-to-know" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Victoria Hedlund on AI bias: What every teacher needs to know" loading="lazy">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Victoria Hedlund on AI bias: What every teacher needs to know" loading="lazy">
   <span class="video-card-title">Victoria Hedlund on AI bias: What every teacher needs to know</span>
   <span class="video-card-meta">AI in Education Podcast, June 25, 2026</span>
   <span class="video-card-desc">Victoria Hedlund discusses AI bias in educational systems and implications for teachers and students.</span>
 </a>
 <a class="video-card" href="https://share.transistor.fm/s/e039d1ca" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg" alt="Video: AIUC-1: Building trust in AI agents" loading="lazy">
+  <img src="https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg" alt="Podcast: AIUC-1: Building trust in AI agents" loading="lazy">
   <span class="video-card-title">AIUC-1: Building trust in AI agents</span>
   <span class="video-card-meta">Practical AI, June 25, 2026</span>
   <span class="video-card-desc">Discussion of how to build trust in AI agents, with Emil Lassen from the Artificial Intelligence Upstart Committee.</span>
 </a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Local-AI-Matters-and-How-to-Use-It-e3l344o" target="_blank" rel="noopener">
-  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Video: Why Local AI Matters and How to Use It" loading="lazy">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why Local AI Matters and How to Use It" loading="lazy">
   <span class="video-card-title">Why Local AI Matters and How to Use It</span>
   <span class="video-card-meta">The AI Daily Brief, June 21, 2026</span>
   <span class="video-card-desc">Practical overview of local AI systems, their advantages over cloud-based models, and deployment considerations for institutions and individuals.</span>
 </a>
 <a class="video-card" href="https://aipodcast.education/more-as-more-fails-what-ai-is-really-doing-to-student-performance" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance" loading="lazy">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance" loading="lazy">
   <span class="video-card-title">More A&#x27;s, More Fails: What AI Is Really Doing to Student Performance</span>
   <span class="video-card-meta">AI in Education Podcast, June 18, 2026</span>
   <span class="video-card-desc">Episode explores the paradoxical effects of AI on student performance, examining why AI tutoring correlates with both higher grades and increased failure rates.</span>
 </a>
 <a class="video-card" href="https://ai-podcast.nejm.org/e/openai-s-karan-singal-on-healthbench-and-the-future-of-medical-ai" target="_blank" rel="noopener">
-  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Video: OpenAI’s Karan Singal on HealthBench and the Future of Medical AI" loading="lazy">
+  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: OpenAI’s Karan Singal on HealthBench and the Future of Medical AI" loading="lazy">
   <span class="video-card-title">OpenAI’s Karan Singal on HealthBench and the Future of Medical AI</span>
   <span class="video-card-meta">NEJM AI Grand Rounds, June 17, 2026</span>
   <span class="video-card-desc">Karan Singal from OpenAI discusses HealthBench, a benchmark for evaluating AI performance on medical tasks, and the role of AI in addressing medical expertise gaps.</span>
 </a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Fable-5-Raises-the-Bar-for-AI-Ambition-e3kk9rp" target="_blank" rel="noopener">
-  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Video: Fable 5 Raises the Bar for AI Ambition" loading="lazy">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Fable 5 Raises the Bar for AI Ambition" loading="lazy">
   <span class="video-card-title">Fable 5 Raises the Bar for AI Ambition</span>
   <span class="video-card-meta">The AI Daily Brief, June 10, 2026</span>
   <span class="video-card-desc">This podcast episode discusses the new features and user expectations set by Anthropic&#x27;s Fable 5 in advancing frontier artificial intelligence.</span>
 </a>
 <a class="video-card" href="https://aipodcast.education/why-one-law-school-just-banned-ai" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Video: Why One Law School Just Banned AI" loading="lazy">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Why One Law School Just Banned AI" loading="lazy">
   <span class="video-card-title">Why One Law School Just Banned AI</span>
   <span class="video-card-meta">AI in Education Podcast, June 4, 2026</span>
   <span class="video-card-desc">A law school explains its decision to ban artificial intelligence use entirely, contrasting with countries promoting wide AI access and raising questions about AI&#x27;s role in legal education.</span>
 </a>
 <a class="video-card" href="https://share.transistor.fm/s/302b36f8" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/ipFlPl0Z0kkjjiMc1n8f9T_9pB23QEviqZIzZXO9pig/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9hYjA0/MjAxZGQ2Nzg4Yzk4/YzYxODg0OThmM2U0/ZmE0My5wbmc.jpg" alt="Video: Breaking down the 2026 Stanford AI Index Report" loading="lazy">
+  <img src="https://img.transistorcdn.com/ipFlPl0Z0kkjjiMc1n8f9T_9pB23QEviqZIzZXO9pig/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9hYjA0/MjAxZGQ2Nzg4Yzk4/YzYxODg0OThmM2U0/ZmE0My5wbmc.jpg" alt="Podcast: Breaking down the 2026 Stanford AI Index Report" loading="lazy">
   <span class="video-card-title">Breaking down the 2026 Stanford AI Index Report</span>
   <span class="video-card-meta">Practical AI, June 4, 2026</span>
   <span class="video-card-desc">An analysis of the 2026 Stanford AI Index Report highlights AI models&#x27; success in math competitions alongside ongoing struggles with basic tasks like reading analog clocks.</span>
 </a>
 <a class="video-card" href="https://sloanreview.mit.edu/audio/ai-for-interoperability-in-health-care-philipss-carla-goulart-peron" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/499218be-4f0b-11f1-b37f-0b0591ec3021/image/ae291127f6965432b65f8770e58490c6.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Video: AI for Interoperability in Health Care: Philips’s Carla Goulart Peron" loading="lazy">
+  <img src="https://megaphone.imgix.net/podcasts/499218be-4f0b-11f1-b37f-0b0591ec3021/image/ae291127f6965432b65f8770e58490c6.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI for Interoperability in Health Care: Philips’s Carla Goulart Peron" loading="lazy">
   <span class="video-card-title">AI for Interoperability in Health Care: Philips’s Carla Goulart Peron</span>
   <span class="video-card-meta">Me, Myself, and AI, June 1, 2026</span>
   <span class="video-card-desc">Philips’s chief medical officer Carla Goulart Peron discusses how artificial intelligence supports interoperability in health care systems to improve patient outcomes and clinical workflows.</span>
