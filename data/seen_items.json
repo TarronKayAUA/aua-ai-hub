@@ -19652,6 +19652,19 @@
    "first_seen": "2026-07-18T13:51:50.391500+00:00",
    "kept": false,
    "reason": "forum discussion of performance speculation, not substantive analysis or documented finding"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03004-7",
+   "title_hash": "85141226434c9f254335b6e353bf448f",
+   "first_seen": "2026-07-18T17:16:20.699876+00:00",
+   "kept": true,
+   "title": "Research landscape of robot-assisted reconstructive and plastic surgery",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-18T00:00:00+00:00",
+   "summary": "Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
   }
  ],
  "digests": [
@@ -19793,8 +19806,8 @@
    "date": "July 18, 2026"
   },
   "clinical_practice": {
-   "text": "A government pilot program is now testing artificial intelligence for automated insurance coverage decisions, spurring discussion about the potential ripple effects on clinical efficiency and administrative tasks in practice settings <a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">[1]</a>. In clinical decision-making, recent studies review reinforcement learning models aimed at managing conditions such as sepsis and blood coagulation, emphasizing both opportunities and challenges in applying machine learning for treatment guidance <a href=\"https://www.nature.com/articles/s41746-026-03034-1\">[2]</a> <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[6]</a>. Diagnostic advancements also include the use of deep learning to automatically measure spinal alignment and identify implants in scoliosis radiographs, contributing to improvements in imaging analysis workflows <a href=\"https://www.nature.com/articles/s41746-026-03020-7\">[9]</a>. For patient communication, researchers are leveraging large language models to identify key medical terms in electronic health records, with the aim of improving patient comprehension through data-driven approaches <a href=\"https://ai.jmir.org/2026/1/e75561\">[4]</a>. Additionally, a benchmark for psychiatric large language models evaluates safety by assessing whether models seek clarification before diagnosis, highlighting emerging priorities around responsible clinical AI deployment <a href=\"https://arxiv.org/abs/2607.13036\">[13]</a>.\n\nAlso this week: machine learning techniques are assessed for their role in out-of-hospital emergency care triage, individualized prediction of opioid-related cravings, and fall risk detection in aged care facilities. The section updates include eight safety and evaluation studies and five clinical decision support reports.",
-   "hash": "1f27ef441ab38bc1",
+   "text": "A federal pilot program is drawing attention to the risks and benefits of using artificial intelligence in automated insurance coverage decisions, prompting renewed debate among clinicians and administrators about prior authorization and its clinical consequences <a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">[1]</a>. In sepsis care, reinforcement learning models are being systematically reviewed to clarify how machine learning might aid decision making for critically ill patients <a href=\"https://www.nature.com/articles/s41746-026-03034-1\">[2]</a>. Meanwhile, state-guided reinforcement learning models are emerging to support ongoing assessments of blood coagulation and offer targeted suggestions to providers in real time <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[7]</a>. Advances in imaging include automatic deep learning methods now able to measure spinal alignment and detect surgical implants in scoliosis radiographs with potential for improved diagnostic workflows <a href=\"https://www.nature.com/articles/s41746-026-03020-7\">[10]</a>. On the documentation front, researchers show promise in using synthesized clinical notes to train robust multimodal models in dermatology by augmenting limited imaging data with generated text <a href=\"https://www.nature.com/articles/s41746-026-03040-3\">[11]</a>.\n\nAlso this week: seven studies address safety and model evaluation, including a benchmark for psychiatric decision-making with large language models and a commentary on health system readiness. Clinical support tools span sepsis mortality prediction and real time fall risk screening in aged care facilities.",
+   "hash": "1f9c7a57ea929c56",
    "date": "July 18, 2026"
   },
   "general_ai": {

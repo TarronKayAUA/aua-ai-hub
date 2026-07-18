@@ -4,4 +4,4 @@
 - [Exploring the role of generative artificial intelligence in enhancing clinical skills training: A bibliometric analysis](https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&ff=20260718095150&v=2.20.0) (PubMed AI in medical education, July 18, 2026)
 - [Attitudes, usage patterns, and learning interests of medical students toward DeepSeek in medical education: A cross-sectional survey](https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&ff=20260718095150&v=2.20.0) (PubMed AI in medical education, July 18, 2026)
 - [Reinforcement learning for treatment decision-making in sepsis: a scoping review](https://www.nature.com/articles/s41746-026-03034-1) (npj Digital Medicine, July 18, 2026)
-- [Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines](https://medinform.jmir.org/2026/1/e82924) (JMIR Medical Informatics, July 17, 2026)
+- [Research landscape of robot-assisted reconstructive and plastic surgery](https://www.nature.com/articles/s41746-026-03004-7) (npj Digital Medicine, July 18, 2026)

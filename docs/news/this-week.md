@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -339,13 +339,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&amp;ff=20260711095618&amp;v=2.20.0">Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives</a>
-        <p class="news-card-summary">Machine learning and deep learning show promise for improving airway assessment accuracy in anesthesia beyond conventional subjective tools.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
@@ -379,14 +372,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A government pilot program is now testing artificial intelligence for automated insurance coverage decisions, spurring discussion about the potential ripple effects on clinical efficiency and administrative tasks in practice settings <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In clinical decision-making, recent studies review reinforcement learning models aimed at managing conditions such as sepsis and blood coagulation, emphasizing both opportunities and challenges in applying machine learning for treatment guidance <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03039-w">[6]</a>. Diagnostic advancements also include the use of deep learning to automatically measure spinal alignment and identify implants in scoliosis radiographs, contributing to improvements in imaging analysis workflows <a href="https://www.nature.com/articles/s41746-026-03020-7">[9]</a>. For patient communication, researchers are leveraging large language models to identify key medical terms in electronic health records, with the aim of improving patient comprehension through data-driven approaches <a href="https://ai.jmir.org/2026/1/e75561">[4]</a>. Additionally, a benchmark for psychiatric large language models evaluates safety by assessing whether models seek clarification before diagnosis, highlighting emerging priorities around responsible clinical AI deployment <a href="https://arxiv.org/abs/2607.13036">[13]</a>.</p>
-<p>Also this week: machine learning techniques are assessed for their role in out-of-hospital emergency care triage, individualized prediction of opioid-related cravings, and fall risk detection in aged care facilities. The section updates include eight safety and evaluation studies and five clinical decision support reports.</p>
+<p>A federal pilot program is drawing attention to the risks and benefits of using artificial intelligence in automated insurance coverage decisions, prompting renewed debate among clinicians and administrators about prior authorization and its clinical consequences <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In sepsis care, reinforcement learning models are being systematically reviewed to clarify how machine learning might aid decision making for critically ill patients <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a>. Meanwhile, state-guided reinforcement learning models are emerging to support ongoing assessments of blood coagulation and offer targeted suggestions to providers in real time <a href="https://www.nature.com/articles/s41746-026-03039-w">[7]</a>. Advances in imaging include automatic deep learning methods now able to measure spinal alignment and detect surgical implants in scoliosis radiographs with potential for improved diagnostic workflows <a href="https://www.nature.com/articles/s41746-026-03020-7">[10]</a>. On the documentation front, researchers show promise in using synthesized clinical notes to train robust multimodal models in dermatology by augmenting limited imaging data with generated text <a href="https://www.nature.com/articles/s41746-026-03040-3">[11]</a>.</p>
+<p>Also this week: seven studies address safety and model evaluation, including a benchmark for psychiatric decision-making with large language models and a commentary on health system readiness. Clinical support tools span sepsis mortality prediction and real time fall risk screening in aged care facilities.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -401,6 +394,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03034-1">Reinforcement learning for treatment decision-making in sepsis: a scoping review</a>
         <p class="news-card-summary">Scoping review examines reinforcement learning methods for sepsis treatment decision-making, synthesizing evidence on machine learning approaches to optimize clinical interventions.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03004-7">Research landscape of robot-assisted reconstructive and plastic surgery</a>
+        <p class="news-card-summary">Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
