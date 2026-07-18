@@ -19477,6 +19477,60 @@
    "first_seen": "2026-07-17T21:09:17.322907+00:00",
    "kept": false,
    "reason": "drama coverage and speculation; the episode frames itself around hype claims rather than substantive analysis of the model's capabilities or deployment"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uza5wb/kimi_k3_is_top_of_nextjs_eval",
+   "title_hash": "a2747ac6c0516e9aae1b0a61b8ac7792",
+   "first_seen": "2026-07-18T03:34:17.311320+00:00",
+   "kept": false,
+   "reason": "insufficient substance; forum post without details on benchmark or method"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uyz9n2/bonsai_27b_runs_locally_on_an_iphone_a_27b_model",
+   "title_hash": "092a365a3dab685239bb29706dfedcdc",
+   "first_seen": "2026-07-18T03:34:17.311320+00:00",
+   "kept": true,
+   "title": "Bonsai 27B runs locally on an iPhone - a 27B model in 3.9GB",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-17T13:08:58+00:00",
+   "summary": "PrismML created Bonsai, a 27-billion-parameter model quantized to 1.125 bits per weight, fitting in 3.9GB while retaining approximately 90 percent of benchmark performance and running on mobile devices.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/Z29wbnZ0ZjFoc2RoMYNmW7XUoGPceguvH8OPb5Eb_TxAIeLh42MnMxNtDYX4.png?width=640&crop=smart&auto=webp&s=d0c914491c817a040cf9c0ecf6c840d097a47716",
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&ff=20260717233417&v=2.20.0",
+   "title_hash": "f4a905470529eb4ba40039214ab7f24c",
+   "first_seen": "2026-07-18T03:34:17.311320+00:00",
+   "kept": true,
+   "title": "PEPCAL: A Heuristic Framework for Teaching Generative AI to Continuing Professional Education Providers and Faculty Developers",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-17T10:00:00+00:00",
+   "summary": "PEPCAL, a framework addressing pedagogical, ethical, preparation, creative, administrative, and data considerations, guides continuing professional education providers and faculty developers in integrating generative AI responsibly.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42467502?fc=20260609215449&ff=20260717233417&v=2.20.0",
+   "title_hash": "27c7fe64ec02b19780f7c7c585158be1",
+   "first_seen": "2026-07-18T03:34:17.311320+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; article on scientific writing instruction without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03040-3",
+   "title_hash": "a380af3fbda4a1312d264d002003644d",
+   "first_seen": "2026-07-18T03:34:17.311320+00:00",
+   "kept": true,
+   "title": "Synthesized clinical notes enable training robust multimodal AI models from unimodal dermatology datasets",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-17T00:00:00+00:00",
+   "summary": "Researchers demonstrated that synthesized clinical notes can train robust multimodal AI models from single-modality dermatology datasets, addressing data imbalance in medical image analysis.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
   }
  ],
  "digests": [
@@ -19613,19 +19667,19 @@
  "last_digest_at": "2026-07-17T03:40:17.932462+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "An exploratory study demonstrated that AI-assisted platforms may improve diagnostic accuracy in breast cancer ultrasound training for resident physicians <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[3]</a>. Meanwhile, generative AI scoring tools have shown preliminary promise in enhancing clinical documentation skills through automated feedback that aligns with expert ratings and may outperform traditional approaches <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[2]</a>. Two recent surveys highlight persistent gaps in artificial intelligence knowledge among both postgraduate resident physicians and nursing students, despite widespread support for further integration-underscoring the need for structured AI training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[4]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0\">[7]</a>. Additionally, simulation systems combining computer graphics and artificial intelligence are becoming a core methodology within medical imaging education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[5]</a>, pointing to broader adoption of technology-assisted learning.\n\nAlso this week: studies assess student reliance on AI in nephrology, feasibility of AI chatbot simulations for shared decision-making training, and perceived effectiveness of AI-powered tools in undergraduate anatomy education. The section includes five papers focused on simulation and skill development, five on attitudes and adoption, and practical innovations such as a scalable AI template for oral exams.",
-   "hash": "e6d5217fe64181b9",
-   "date": "July 17, 2026"
+   "text": "Medical educators face both opportunities and challenges as generative AI tools become increasingly integrated into training and practice. Recent studies highlight knowledge gaps among resident physicians and postgraduate trainees, indicating the need for formal instruction on artificial intelligence in healthcare <a href=\"https://ai.jmir.org/2026/1/e89750\">[1]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[4]</a>. Meanwhile, AI-assisted learning platforms for ultrasound diagnosis suggest improvements in residents’ clinical accuracy, pointing to the promise of advanced simulation in specialty education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[3]</a>. Efforts to compare AI-augmented feedback models with traditional teacher guidance show alignment and preliminary benefits, raising important questions about the role of automation in skill development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[2]</a>. At the same time, the creation of virtual simulation systems illustrates how AI-driven approaches are shaping core teaching methodologies in medical imaging <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[5]</a>.\n\nAlso this week: the section covers five cross-sectional surveys of attitude and adoption, five studies focused on simulation and skills, and four items on teaching practices. One highlighted framework, PEPCAL, offers guidance for faculty developers integrating generative AI responsibly.",
+   "hash": "4664499457183e75",
+   "date": "July 18, 2026"
   },
   "clinical_practice": {
-   "text": "A machine learning analysis advancing sepsis care found that lactate and lactate-to-albumin ratios can enhance risk prediction for mortality in large patient cohorts <a href=\"https://medinform.jmir.org/2026/1/e82230\">[8]</a>. Approaches using physiologic and biosignal data are emerging both for inpatient monitoring-such as screening depressive symptoms during virtual human interactions <a href=\"https://www.nature.com/articles/s41746-026-03017-2\">[3]</a>, and for outpatient management, including individualized craving prediction in patients with opioid use disorder using task-based EEG <a href=\"https://www.nature.com/articles/s41746-026-02948-0\">[5]</a>. The development of a reinforcement learning model to track coagulation balance contributes to the emergence of state-guided clinical suggestions and decision support <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[4]</a>. Meanwhile, benchmarks addressing the safety of language models in psychiatry stress the importance of ensuring models request clarification when information is insufficient, rather than generating potentially harmful unsupported diagnoses <a href=\"https://arxiv.org/abs/2607.13036\">[10]</a>.\n\nAlso this week: researchers introduced eight new clinical decision support tools, five studies in safety and evaluation, and systematic reviews on technologies for deep brain stimulation in movement disorders and the public availability of evidence-based mental health applications. Two studies addressed diagnostic imaging using deep learning models.",
-   "hash": "44c3b6021bdad6fa",
-   "date": "July 17, 2026"
+   "text": "A reinforcement learning model that evaluates blood coagulation balance over time and produces supportive clinical suggestions highlights recent efforts to integrate advanced AI into care processes <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[4]</a>. In mental health, biosignal-based screening leverages virtual human conversations and physiological data to detect depressive symptoms, reflecting continued interest in patient state monitoring <a href=\"https://www.nature.com/articles/s41746-026-03017-2\">[3]</a>. Patient comprehension is addressed through large language models that use data augmentation to identify and prioritize complex medical terms in electronic health record notes, especially for OpenNotes initiatives <a href=\"https://ai.jmir.org/2026/1/e75561\">[2]</a>. At the same time, machine learning is being explored for fall risk assessment in elderly residents, indicating growing use of generative AI for risk stratification in aged care <a href=\"https://pubmed.ncbi.nlm.nih.gov/42460585?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0\">[10]</a>. Benchmarking studies on electronic health record analytics platforms aim to improve the speed and reliability of big-data queries for research and clinical quality improvement <a href=\"https://medinform.jmir.org/2026/1/e82924\">[1]</a>.\n\nAlso this week: Five new publications analyze AI system safety or evaluation, while machine learning models are applied to imaging and diagnostic tasks such as spinal alignment measurement and chest radiograph analysis. There are two new studies on patient facing tools and one on clinical documentation using synthesized notes.",
+   "hash": "4c3b5009609d48dc",
+   "date": "July 18, 2026"
   },
   "general_ai": {
-   "text": "A new study demonstrates that generative models face fixed information-theoretic limits, highlighting the importance of grounding expectations for model reliability and the potential for unresolved output uncertainty to impact performance across all tasks <a href=\"https://arxiv.org/abs/2607.14112\">[1]</a>. Research on prefill jailbreaks reveals that even when aligned models comply with requests, representations of harm remain detectable, suggesting flaws in how decisions are produced rather than in underlying knowledge <a href=\"https://arxiv.org/abs/2607.14147\">[2]</a>. Several advanced open-weight models have been released, including Kimi K3 and Inkling, with promised transparency and rapid scaling underscoring ongoing interest in expanding access and benchmarking capabilities <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[4]</a> <a href=\"https://thinkingmachines.ai/news/introducing-inkling\">[9]</a>. Meanwhile, recent developments in model safety, such as OpenAI&#x27;s use of adversarial systems like GPT-Red to improve the security of its flagship models, indicate a growing emphasis on robustness against attacks <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[10]</a>.\n\nAlso this week: the section covers eight new model releases, five papers on assessment and reliability, benchmarks such as the Retrieval Text Embedding Benchmark and LMArena&#x27;s factuality leaderboard, and one analysis of how AI agents create a validation bottleneck in scientific research.",
-   "hash": "8bdd28470e69937f",
-   "date": "July 17, 2026"
+   "text": "Limits to language model reliability and scaling have been clarified, with new research showing that all generative tasks have information-theoretic boundaries marking how reliably models can perform them, shaped by uncertainty in the context provided <a href=\"https://arxiv.org/abs/2607.14112\">[1]</a>. Meanwhile, studies of model refusal and jailbreak attacks demonstrate that harmful representations remain accessible in aligned models, signaling gaps in output decision mechanisms even when compliance is forced <a href=\"https://arxiv.org/abs/2607.14147\">[2]</a>. OpenAI introduced GPT-Red, a novel adversarial model deployed to discover and patch cybersecurity weaknesses in their systems, notably enhancing the robustness of GPT-5.6 <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[10]</a>. Biomedical research is seeing early deployment of AI co-scientists, such as Biomni, capable of handling varied research tasks and promising partnership potential as development advances <a href=\"https://www.nature.com/articles/d41591-026-00037-z\">[3]</a>. With benchmark performance gaining attention, Soofi S, a 30-billion-parameter open model from a German consortium, tops English and German language evaluations <a href=\"https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german\">[6]</a>.\n\nAlso this week: four new model releases add to the pool of open-weight frameworks, including Kimi K3, a high-parameter language model slated for release in 2026, and Inkling, the latest from Thinking Machines. Two evaluation papers assess factuality and retrieval, and agent security research continues.",
+   "hash": "2a47d6d8615bdc7d",
+   "date": "July 18, 2026"
   }
  },
  "opportunity_snapshot": {

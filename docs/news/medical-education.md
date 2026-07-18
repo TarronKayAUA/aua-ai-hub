@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An exploratory study demonstrated that AI-assisted platforms may improve diagnostic accuracy in breast cancer ultrasound training for resident physicians <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[3]</a>. Meanwhile, generative AI scoring tools have shown preliminary promise in enhancing clinical documentation skills through automated feedback that aligns with expert ratings and may outperform traditional approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. Two recent surveys highlight persistent gaps in artificial intelligence knowledge among both postgraduate resident physicians and nursing students, despite widespread support for further integration-underscoring the need for structured AI training <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[7]</a>. Additionally, simulation systems combining computer graphics and artificial intelligence are becoming a core methodology within medical imaging education <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[5]</a>, pointing to broader adoption of technology-assisted learning.</p>
-<p>Also this week: studies assess student reliance on AI in nephrology, feasibility of AI chatbot simulations for shared decision-making training, and perceived effectiveness of AI-powered tools in undergraduate anatomy education. The section includes five papers focused on simulation and skill development, five on attitudes and adoption, and practical innovations such as a scalable AI template for oral exams.</p>
-<p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
+<p>Medical educators face both opportunities and challenges as generative AI tools become increasingly integrated into training and practice. Recent studies highlight knowledge gaps among resident physicians and postgraduate trainees, indicating the need for formal instruction on artificial intelligence in healthcare <a href="https://ai.jmir.org/2026/1/e89750">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a>. Meanwhile, AI-assisted learning platforms for ultrasound diagnosis suggest improvements in residents’ clinical accuracy, pointing to the promise of advanced simulation in specialty education <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[3]</a>. Efforts to compare AI-augmented feedback models with traditional teacher guidance show alignment and preliminary benefits, raising important questions about the role of automation in skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. At the same time, the creation of virtual simulation systems illustrates how AI-driven approaches are shaping core teaching methodologies in medical imaging <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: the section covers five cross-sectional surveys of attitude and adoption, five studies focused on simulation and skills, and four items on teaching practices. One highlighted framework, PEPCAL, offers guidance for faculty developers integrating generative AI responsibly.</p>
+<p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -54,6 +54,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Construction of a virtual simulation teaching system for medical imaging education: a single-center experience</a>
     <p class="news-card-summary">Virtual simulation systems integrating computer graphics, dynamic modeling, and artificial intelligence have become a core teaching methodology in medical imaging education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0">PEPCAL: A Heuristic Framework for Teaching Generative AI to Continuing Professional Education Providers and Faculty Developers</a>
+    <p class="news-card-summary">PEPCAL, a framework addressing pedagogical, ethical, preparation, creative, administrative, and data considerations, guides continuing professional education providers and faculty developers in integrating generative AI responsibly.</p>
   </div>
 </div>
 <div class="news-card" data-topic="simulation-and-skills">
@@ -118,13 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42463212?fc=20260609215449&amp;ff=20260717022849&amp;v=2.20.0">Awareness, knowledge and attitudes towards artificial intelligence among nursing students: a systematic review protocol</a>
     <p class="news-card-summary">Systematic review protocol examining nursing students&#x27; awareness, knowledge, and attitudes toward artificial intelligence in an underresearched Gulf Cooperation Council region.</p>
   </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/16/practical-scalable-template-oral-exams-opinion">A Practical, Scalable Template for Oral Exams</a>
-    <p class="news-card-summary">Practical template for conducting oral examinations at scale in large classes using AI.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-173682323.jpg?itok=uUngwbBj" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

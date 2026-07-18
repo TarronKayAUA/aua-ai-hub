@@ -3,5 +3,5 @@
 - [Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines](https://medinform.jmir.org/2026/1/e82924) (JMIR Medical Informatics, July 17, 2026)
 - [Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study](https://ai.jmir.org/2026/1/e75561) (JMIR AI, July 17, 2026)
 - [Current Landscape of Generative AI Use as a Search Engine Among Resident Physicians: Cross-Sectional Study](https://ai.jmir.org/2026/1/e89750) (JMIR AI, July 17, 2026)
+- [Bonsai 27B runs locally on an iPhone - a 27B model in 3.9GB](https://www.reddit.com/r/LocalLLaMA/comments/1uyz9n2/bonsai_27b_runs_locally_on_an_iphone_a_27b_model) (r/LocalLLaMA weekly top, July 17, 2026)
 - [Effectiveness of an AI-augmented teacher feedback model in improving medical students' clinical documentation skills: a retrospective cohort study](https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&ff=20260717100456&v=2.20.0) (PubMed AI in medical education, July 17, 2026)
-- [Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning](https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&ff=20260717100456&v=2.20.0) (PubMed AI in medical education, July 17, 2026)

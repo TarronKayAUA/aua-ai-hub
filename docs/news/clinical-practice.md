@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A machine learning analysis advancing sepsis care found that lactate and lactate-to-albumin ratios can enhance risk prediction for mortality in large patient cohorts <a href="https://medinform.jmir.org/2026/1/e82230">[8]</a>. Approaches using physiologic and biosignal data are emerging both for inpatient monitoring-such as screening depressive symptoms during virtual human interactions <a href="https://www.nature.com/articles/s41746-026-03017-2">[3]</a>, and for outpatient management, including individualized craving prediction in patients with opioid use disorder using task-based EEG <a href="https://www.nature.com/articles/s41746-026-02948-0">[5]</a>. The development of a reinforcement learning model to track coagulation balance contributes to the emergence of state-guided clinical suggestions and decision support <a href="https://www.nature.com/articles/s41746-026-03039-w">[4]</a>. Meanwhile, benchmarks addressing the safety of language models in psychiatry stress the importance of ensuring models request clarification when information is insufficient, rather than generating potentially harmful unsupported diagnoses <a href="https://arxiv.org/abs/2607.13036">[10]</a>.</p>
-<p>Also this week: researchers introduced eight new clinical decision support tools, five studies in safety and evaluation, and systematic reviews on technologies for deep brain stimulation in movement disorders and the public availability of evidence-based mental health applications. Two studies addressed diagnostic imaging using deep learning models.</p>
-<p class="section-brief-date">The picture as of July 17, 2026; numbered links go to the items below.</p>
+<p>A reinforcement learning model that evaluates blood coagulation balance over time and produces supportive clinical suggestions highlights recent efforts to integrate advanced AI into care processes <a href="https://www.nature.com/articles/s41746-026-03039-w">[4]</a>. In mental health, biosignal-based screening leverages virtual human conversations and physiological data to detect depressive symptoms, reflecting continued interest in patient state monitoring <a href="https://www.nature.com/articles/s41746-026-03017-2">[3]</a>. Patient comprehension is addressed through large language models that use data augmentation to identify and prioritize complex medical terms in electronic health record notes, especially for OpenNotes initiatives <a href="https://ai.jmir.org/2026/1/e75561">[2]</a>. At the same time, machine learning is being explored for fall risk assessment in elderly residents, indicating growing use of generative AI for risk stratification in aged care <a href="https://pubmed.ncbi.nlm.nih.gov/42460585?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">[10]</a>. Benchmarking studies on electronic health record analytics platforms aim to improve the speed and reliability of big-data queries for research and clinical quality improvement <a href="https://medinform.jmir.org/2026/1/e82924">[1]</a>.</p>
+<p>Also this week: Five new publications analyze AI system safety or evaluation, while machine learning models are applied to imaging and diagnostic tasks such as spinal alignment measurement and chest radiograph analysis. There are two new studies on patient facing tools and one on clinical documentation using synthesized notes.</p>
+<p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -70,6 +70,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Deep learning automatically measures spinal alignment and detects implants in scoliosis radiographs, supporting diagnostic accuracy.</p>
   </div>
 </div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03040-3">Synthesized clinical notes enable training robust multimodal AI models from unimodal dermatology datasets</a>
+    <p class="news-card-summary">Researchers demonstrated that synthesized clinical notes can train robust multimodal AI models from single-modality dermatology datasets, addressing data imbalance in medical image analysis.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 16, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03015-4">Artificial intelligence in deep brain stimulation for movement disorders: a systematic review and technology readiness assessment</a>
     <p class="news-card-summary">A systematic review and technology readiness assessment examined artificial intelligence applications in deep brain stimulation for movement disorders.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03014-5">Public availability of evidence-based mental health apps: a systematic review and meta-analysis of self-guided apps</a>
-    <p class="news-card-summary">Systematic review and meta-analysis examining the public availability and effectiveness of evidence-based self-guided mental health applications.</p>
   </div>
 </div>
 </div>
