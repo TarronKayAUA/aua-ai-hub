@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A scoping review examining reinforcement learning for treatment decisions in sepsis highlights the increasing use of advanced machine learning methods to optimize disease management and support clinicians in complex scenarios <a href="https://www.nature.com/articles/s41746-026-03034-1">[1]</a>. Studies in this section address model-driven strategies for clinical evaluation, with reinforcement learning frameworks informing approaches to blood coagulation balance and providing targeted suggestions at the bedside <a href="https://www.nature.com/articles/s41746-026-03039-w">[5]</a>. Improvements in electronic health record analysis are evident as large language models, enhanced by data augmentation, are being tested to better identify key medical terms and promote clearer communication with patients <a href="https://ai.jmir.org/2026/1/e75561">[3]</a>. Additional research covers machine learning applications in mortality risk prediction among sepsis cases <a href="https://medinform.jmir.org/2026/1/e82230">[10]</a> and efforts to support out-of-hospital emergency care through analysis of patient chief complaints using lexical models <a href="https://www.nature.com/articles/s41746-026-03005-6">[14]</a>.</p>
-<p>Also this week: new work on biosignal-based screening tools for depressive symptoms, individualized craving prediction in opioid use disorder, and AI-based spinal radiograph analysis. The section features five new clinical decision support tools, five projects focused on safety and evaluation, and additional studies in imaging, documentation, and patient-facing AI.</p>
+<p>A government pilot program is now testing artificial intelligence for automated insurance coverage decisions, spurring discussion about the potential ripple effects on clinical efficiency and administrative tasks in practice settings <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In clinical decision-making, recent studies review reinforcement learning models aimed at managing conditions such as sepsis and blood coagulation, emphasizing both opportunities and challenges in applying machine learning for treatment guidance <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03039-w">[6]</a>. Diagnostic advancements also include the use of deep learning to automatically measure spinal alignment and identify implants in scoliosis radiographs, contributing to improvements in imaging analysis workflows <a href="https://www.nature.com/articles/s41746-026-03020-7">[9]</a>. For patient communication, researchers are leveraging large language models to identify key medical terms in electronic health records, with the aim of improving patient comprehension through data-driven approaches <a href="https://ai.jmir.org/2026/1/e75561">[4]</a>. Additionally, a benchmark for psychiatric large language models evaluates safety by assessing whether models seek clarification before diagnosis, highlighting emerging priorities around responsible clinical AI deployment <a href="https://arxiv.org/abs/2607.13036">[13]</a>.</p>
+<p>Also this week: machine learning techniques are assessed for their role in out-of-hospital emergency care triage, individualized prediction of opioid-related cravings, and fall risk detection in aged care facilities. The section updates include eight safety and evaluation studies and five clinical decision support reports.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 18, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">Will AI fix prior authorization, or make it worse?</a>
+    <p class="news-card-summary">Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264310821-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03005-6">Enhancing out-of-hospital emergency care via lexical machine learning modeling of chief complaints</a>
     <p class="news-card-summary">Machine learning analysis of chief complaint language improves out-of-hospital emergency care triage and response.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02990-y">Transparent chest radiograph foundation model enables explainable human disease profiling</a>
-    <p class="news-card-summary">A transparent foundation model for chest radiograph analysis enables explainable disease profiling, combining diagnostic capability with interpretability.</p>
   </div>
 </div>
 </div>

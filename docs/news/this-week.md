@@ -13,15 +13,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Integration of artificial intelligence into medical education continues to gain momentum, driven by developments in simulation and clinical skills training. Controlled studies have indicated that AI-assisted platforms may enhance diagnostic accuracy among residents learning breast cancer ultrasound interpretation <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[3]</a>, and virtual simulation systems have become a mainstay in medical imaging instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[5]</a>. Generative AI scoring tools are now providing feedback on clinical documentation, showing promise when compared to traditional teacher evaluation methods <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. Shifts in adoption patterns are evident, as trainees report selective reliance on AI recommendations in nephrology education, especially when encountering uncertain material <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[11]</a>. Despite these advances, recent surveys document persistent gaps in AI knowledge among postgraduate residents and nursing students, underscoring the need for more structured education and support <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[10]</a>.</p>
-<p>Also this week: research details five distinct simulation and skills topics, including the use of AI chatbots for shared decision-making practice and natural language-driven simulator development. Four items address attitudes and adoption, while assessment and feedback are examined in two new studies.</p>
+<p>Integration of generative artificial intelligence into clinical training and teaching has accelerated, as recent bibliometric analysis documents growing research interest in language models for clinical skills and ethical considerations surrounding their use <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[1]</a>. AI-powered tools are being evaluated for their capacity to enhance diagnostic accuracy and student learning across specialties, including ultrasound training for breast cancer diagnosis among residents <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[5]</a> and undergraduate anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[14]</a>. Studies highlight both the potential and limitations of AI-assisted feedback in improving clinical documentation, with alignment to expert ratings and some advantages over traditional teacher feedback for medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[4]</a>. Despite ongoing adoption, surveys point to substantial gaps in AI understanding among postgraduate residents, reinforcing calls for structured curriculum and targeted faculty development <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[6]</a>. Context-dependent reliance on AI by medical students, particularly in nephrology, also underscores variability in confidence and adoption patterns <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[13]</a>.</p>
+<p>Also this week: five new studies address teaching and curriculum topics, alongside five items on attitudes and adoption. Simulation and skills training are featured in three reports. Two items examine assessment tools for AI literacy and clinical documentation feedback.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Exploring the role of generative artificial intelligence in enhancing clinical skills training: A bibliometric analysis</a>
+        <p class="news-card-summary">Bibliometric analysis shows generative AI in clinical skills training is rapidly expanding with growing attention to language models and ethical issues.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Attitudes, usage patterns, and learning interests of medical students toward DeepSeek in medical education: A cross-sectional survey</a>
+        <p class="news-card-summary">Survey of medical students&#x27; attitudes, usage patterns, and learning interests regarding DeepSeek in medical education.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
@@ -360,27 +374,28 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Scoping review mapping artificial intelligence applications in objective structured clinical examinations for assessment of clinical competence.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&amp;ff=20260711054952&amp;v=2.20.0">From hype to reality: the feasibility, dilemmas, and solutions of Gen AI in medical education from students&#x27; perspectives</a>
-        <p class="news-card-summary">Peer-reviewed study finds medical students accept generative AI in education based on perceived feasibility and usefulness rather than ethical concerns, though AI cannot yet replace human teachers.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A scoping review examining reinforcement learning for treatment decisions in sepsis highlights the increasing use of advanced machine learning methods to optimize disease management and support clinicians in complex scenarios <a href="https://www.nature.com/articles/s41746-026-03034-1">[1]</a>. Studies in this section address model-driven strategies for clinical evaluation, with reinforcement learning frameworks informing approaches to blood coagulation balance and providing targeted suggestions at the bedside <a href="https://www.nature.com/articles/s41746-026-03039-w">[5]</a>. Improvements in electronic health record analysis are evident as large language models, enhanced by data augmentation, are being tested to better identify key medical terms and promote clearer communication with patients <a href="https://ai.jmir.org/2026/1/e75561">[3]</a>. Additional research covers machine learning applications in mortality risk prediction among sepsis cases <a href="https://medinform.jmir.org/2026/1/e82230">[10]</a> and efforts to support out-of-hospital emergency care through analysis of patient chief complaints using lexical models <a href="https://www.nature.com/articles/s41746-026-03005-6">[14]</a>.</p>
-<p>Also this week: new work on biosignal-based screening tools for depressive symptoms, individualized craving prediction in opioid use disorder, and AI-based spinal radiograph analysis. The section features five new clinical decision support tools, five projects focused on safety and evaluation, and additional studies in imaging, documentation, and patient-facing AI.</p>
+<p>A government pilot program is now testing artificial intelligence for automated insurance coverage decisions, spurring discussion about the potential ripple effects on clinical efficiency and administrative tasks in practice settings <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In clinical decision-making, recent studies review reinforcement learning models aimed at managing conditions such as sepsis and blood coagulation, emphasizing both opportunities and challenges in applying machine learning for treatment guidance <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03039-w">[6]</a>. Diagnostic advancements also include the use of deep learning to automatically measure spinal alignment and identify implants in scoliosis radiographs, contributing to improvements in imaging analysis workflows <a href="https://www.nature.com/articles/s41746-026-03020-7">[9]</a>. For patient communication, researchers are leveraging large language models to identify key medical terms in electronic health records, with the aim of improving patient comprehension through data-driven approaches <a href="https://ai.jmir.org/2026/1/e75561">[4]</a>. Additionally, a benchmark for psychiatric large language models evaluates safety by assessing whether models seek clarification before diagnosis, highlighting emerging priorities around responsible clinical AI deployment <a href="https://arxiv.org/abs/2607.13036">[13]</a>.</p>
+<p>Also this week: machine learning techniques are assessed for their role in out-of-hospital emergency care triage, individualized prediction of opioid-related cravings, and fall risk detection in aged care facilities. The section updates include eight safety and evaluation studies and five clinical decision support reports.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 18, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">Will AI fix prior authorization, or make it worse?</a>
+        <p class="news-card-summary">Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264310821-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
@@ -723,20 +738,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 12, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02932-8">A clinician aligned vision language framework for stepwise interpretation in fundus fluorescein angiography</a>
         <p class="news-card-summary">Researchers developed a vision-language AI framework aligned with clinician workflows for interpreting fundus fluorescein angiography images step-by-step.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02954-2">Passive early screening for Alzheimer’s disease and related dementias using EHR comorbidity patterns</a>
-        <p class="news-card-summary">Peer-reviewed study describes passive screening for Alzheimer&#x27;s disease and related dementias using machine learning patterns in electronic health records.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02646-x">Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease</a>
-        <p class="news-card-summary">Peer-reviewed study reports machine learning detection of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
