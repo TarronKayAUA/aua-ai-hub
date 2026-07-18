@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Medical educators face both opportunities and challenges as generative AI tools become increasingly integrated into training and practice. Recent studies highlight knowledge gaps among resident physicians and postgraduate trainees, indicating the need for formal instruction on artificial intelligence in healthcare <a href="https://ai.jmir.org/2026/1/e89750">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a>. Meanwhile, AI-assisted learning platforms for ultrasound diagnosis suggest improvements in residents’ clinical accuracy, pointing to the promise of advanced simulation in specialty education <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[3]</a>. Efforts to compare AI-augmented feedback models with traditional teacher guidance show alignment and preliminary benefits, raising important questions about the role of automation in skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. At the same time, the creation of virtual simulation systems illustrates how AI-driven approaches are shaping core teaching methodologies in medical imaging <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: the section covers five cross-sectional surveys of attitude and adoption, five studies focused on simulation and skills, and four items on teaching practices. One highlighted framework, PEPCAL, offers guidance for faculty developers integrating generative AI responsibly.</p>
+<p>Integration of artificial intelligence into medical education continues to gain momentum, driven by developments in simulation and clinical skills training. Controlled studies have indicated that AI-assisted platforms may enhance diagnostic accuracy among residents learning breast cancer ultrasound interpretation <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[3]</a>, and virtual simulation systems have become a mainstay in medical imaging instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[5]</a>. Generative AI scoring tools are now providing feedback on clinical documentation, showing promise when compared to traditional teacher evaluation methods <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[2]</a>. Shifts in adoption patterns are evident, as trainees report selective reliance on AI recommendations in nephrology education, especially when encountering uncertain material <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[11]</a>. Despite these advances, recent surveys document persistent gaps in AI knowledge among postgraduate residents and nursing students, underscoring the need for more structured education and support <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">[10]</a>.</p>
+<p>Also this week: research details five distinct simulation and skills topics, including the use of AI chatbots for shared decision-making practice and natural language-driven simulator development. Four items address attitudes and adoption, while assessment and feedback are examined in two new studies.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
@@ -62,6 +62,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0">PEPCAL: A Heuristic Framework for Teaching Generative AI to Continuing Professional Education Providers and Faculty Developers</a>
         <p class="news-card-summary">PEPCAL, a framework addressing pedagogical, ethical, preparation, creative, administrative, and data considerations, guides continuing professional education providers and faculty developers in integrating generative AI responsibly.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42469353?fc=20260609215449&amp;ff=20260718022132&amp;v=2.20.0">Cross-cultural adaptation and psychometric evaluation of the Japanese version of the scale for the assessment of non-experts&#x27; AI literacy among medical trainees in a multicenter cross-sectional study</a>
+        <p class="news-card-summary">Cross-cultural adaptation of an AI literacy assessment scale for medical trainees, with psychometric evaluation of the Japanese version.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42468505?fc=20260609215449&amp;ff=20260718022132&amp;v=2.20.0">Enhancing medical imaging teaching on scoliosis: Efficacy of learning method integrating 3D printing and artificial intelligence technologies</a>
+        <p class="news-card-summary">Integration of 3D printing and artificial intelligence into scoliosis teaching improves student comprehension, practical skills, and overall educational outcomes.</p>
       </div>
     </div>
     <div class="news-card" data-topic="simulation-and-skills">
@@ -363,9 +377,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -723,13 +737,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02987-7">Embedded transparency in artificial intelligence: a prerequisite for equity and representation in AI-enabled clinical trials</a>
         <p class="news-card-summary">Peer-reviewed study argues that transparent, interpretable AI models in clinical trial infrastructure are essential to prevent amplification of existing health disparities in evidence generation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&amp;ff=20260710234436&amp;v=2.20.0">Artificial Intelligence for Cervical HPV Infection and Lesion Screening: A Cross-Sectional Analysis of Its Application Potential and Patient Satisfaction</a>
-        <p class="news-card-summary">Cross-sectional study finds patients support AI for cervical lesion screening efficiency and diagnosis but cite privacy, reliability, and trust concerns.</p>
       </div>
     </div>
     </div>

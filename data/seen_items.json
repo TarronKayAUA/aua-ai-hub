@@ -19531,6 +19531,53 @@
    "category": "clinical_practice",
    "score": 3.0,
    "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent",
+   "title_hash": "d1de7ce4fb59dbd899c62276fe0f4858",
+   "first_seen": "2026-07-18T06:21:31.965293+00:00",
+   "kept": false,
+   "reason": "vendor marketing and incomplete summary"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/18/quixote",
+   "title_hash": "6cab2e56c101ac396a7855698cd779e6",
+   "first_seen": "2026-07-18T06:21:31.965293+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42469353?fc=20260609215449&ff=20260718022132&v=2.20.0",
+   "title_hash": "9b0b4d0c1c4ea73928b70f143b49d2a6",
+   "first_seen": "2026-07-18T06:21:31.965293+00:00",
+   "kept": true,
+   "title": "Cross-cultural adaptation and psychometric evaluation of the Japanese version of the scale for the assessment of non-experts' AI literacy among medical trainees in a multicenter cross-sectional study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-17T10:00:00+00:00",
+   "summary": "Cross-cultural adaptation of an AI literacy assessment scale for medical trainees, with psychometric evaluation of the Japanese version.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42468505?fc=20260609215449&ff=20260718022132&v=2.20.0",
+   "title_hash": "6f6a2e5a57563b313b8060654d1a032d",
+   "first_seen": "2026-07-18T06:21:31.965293+00:00",
+   "kept": true,
+   "title": "Enhancing medical imaging teaching on scoliosis: Efficacy of learning method integrating 3D printing and artificial intelligence technologies",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-17T10:00:00+00:00",
+   "summary": "Integration of 3D printing and artificial intelligence into scoliosis teaching improves student comprehension, practical skills, and overall educational outcomes.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4fPLsmJNaMI",
+   "title_hash": "235df08d5ce89aecbd39da102b3cb738",
+   "first_seen": "2026-07-18T06:21:31.965293+00:00",
+   "kept": false,
+   "reason": "drama and speculation focus; title and framing indicate reaction content rather than substantive analysis or demonstration"
   }
  ],
  "digests": [
@@ -19667,8 +19714,8 @@
  "last_digest_at": "2026-07-17T03:40:17.932462+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Medical educators face both opportunities and challenges as generative AI tools become increasingly integrated into training and practice. Recent studies highlight knowledge gaps among resident physicians and postgraduate trainees, indicating the need for formal instruction on artificial intelligence in healthcare <a href=\"https://ai.jmir.org/2026/1/e89750\">[1]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[4]</a>. Meanwhile, AI-assisted learning platforms for ultrasound diagnosis suggest improvements in residents’ clinical accuracy, pointing to the promise of advanced simulation in specialty education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[3]</a>. Efforts to compare AI-augmented feedback models with traditional teacher guidance show alignment and preliminary benefits, raising important questions about the role of automation in skill development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[2]</a>. At the same time, the creation of virtual simulation systems illustrates how AI-driven approaches are shaping core teaching methodologies in medical imaging <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[5]</a>.\n\nAlso this week: the section covers five cross-sectional surveys of attitude and adoption, five studies focused on simulation and skills, and four items on teaching practices. One highlighted framework, PEPCAL, offers guidance for faculty developers integrating generative AI responsibly.",
-   "hash": "4664499457183e75",
+   "text": "Integration of artificial intelligence into medical education continues to gain momentum, driven by developments in simulation and clinical skills training. Controlled studies have indicated that AI-assisted platforms may enhance diagnostic accuracy among residents learning breast cancer ultrasound interpretation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[3]</a>, and virtual simulation systems have become a mainstay in medical imaging instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[5]</a>. Generative AI scoring tools are now providing feedback on clinical documentation, showing promise when compared to traditional teacher evaluation methods <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[2]</a>. Shifts in adoption patterns are evident, as trainees report selective reliance on AI recommendations in nephrology education, especially when encountering uncertain material <a href=\"https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0\">[11]</a>. Despite these advances, recent surveys document persistent gaps in AI knowledge among postgraduate residents and nursing students, underscoring the need for more structured education and support <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[4]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0\">[10]</a>.\n\nAlso this week: research details five distinct simulation and skills topics, including the use of AI chatbots for shared decision-making practice and natural language-driven simulator development. Four items address attitudes and adoption, while assessment and feedback are examined in two new studies.",
+   "hash": "23d6d523bbd24f50",
    "date": "July 18, 2026"
   },
   "clinical_practice": {
