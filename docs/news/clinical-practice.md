@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A reinforcement learning model that evaluates blood coagulation balance over time and produces supportive clinical suggestions highlights recent efforts to integrate advanced AI into care processes <a href="https://www.nature.com/articles/s41746-026-03039-w">[4]</a>. In mental health, biosignal-based screening leverages virtual human conversations and physiological data to detect depressive symptoms, reflecting continued interest in patient state monitoring <a href="https://www.nature.com/articles/s41746-026-03017-2">[3]</a>. Patient comprehension is addressed through large language models that use data augmentation to identify and prioritize complex medical terms in electronic health record notes, especially for OpenNotes initiatives <a href="https://ai.jmir.org/2026/1/e75561">[2]</a>. At the same time, machine learning is being explored for fall risk assessment in elderly residents, indicating growing use of generative AI for risk stratification in aged care <a href="https://pubmed.ncbi.nlm.nih.gov/42460585?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">[10]</a>. Benchmarking studies on electronic health record analytics platforms aim to improve the speed and reliability of big-data queries for research and clinical quality improvement <a href="https://medinform.jmir.org/2026/1/e82924">[1]</a>.</p>
-<p>Also this week: Five new publications analyze AI system safety or evaluation, while machine learning models are applied to imaging and diagnostic tasks such as spinal alignment measurement and chest radiograph analysis. There are two new studies on patient facing tools and one on clinical documentation using synthesized notes.</p>
+<p>A scoping review examining reinforcement learning for treatment decisions in sepsis highlights the increasing use of advanced machine learning methods to optimize disease management and support clinicians in complex scenarios <a href="https://www.nature.com/articles/s41746-026-03034-1">[1]</a>. Studies in this section address model-driven strategies for clinical evaluation, with reinforcement learning frameworks informing approaches to blood coagulation balance and providing targeted suggestions at the bedside <a href="https://www.nature.com/articles/s41746-026-03039-w">[5]</a>. Improvements in electronic health record analysis are evident as large language models, enhanced by data augmentation, are being tested to better identify key medical terms and promote clearer communication with patients <a href="https://ai.jmir.org/2026/1/e75561">[3]</a>. Additional research covers machine learning applications in mortality risk prediction among sepsis cases <a href="https://medinform.jmir.org/2026/1/e82230">[10]</a> and efforts to support out-of-hospital emergency care through analysis of patient chief complaints using lexical models <a href="https://www.nature.com/articles/s41746-026-03005-6">[14]</a>.</p>
+<p>Also this week: new work on biosignal-based screening tools for depressive symptoms, individualized craving prediction in opioid use disorder, and AI-based spinal radiograph analysis. The section features five new clinical decision support tools, five projects focused on safety and evaluation, and additional studies in imaging, documentation, and patient-facing AI.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03034-1">Reinforcement learning for treatment decision-making in sepsis: a scoping review</a>
+    <p class="news-card-summary">Scoping review examines reinforcement learning methods for sepsis treatment decision-making, synthesizing evidence on machine learning approaches to optimize clinical interventions.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 17, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02990-y">Transparent chest radiograph foundation model enables explainable human disease profiling</a>
     <p class="news-card-summary">A transparent foundation model for chest radiograph analysis enables explainable disease profiling, combining diagnostic capability with interpretability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03015-4">Artificial intelligence in deep brain stimulation for movement disorders: a systematic review and technology readiness assessment</a>
-    <p class="news-card-summary">A systematic review and technology readiness assessment examined artificial intelligence applications in deep brain stimulation for movement disorders.</p>
   </div>
 </div>
 </div>
