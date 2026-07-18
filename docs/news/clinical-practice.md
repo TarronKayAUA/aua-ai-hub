@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A federal pilot program is drawing attention to the risks and benefits of using artificial intelligence in automated insurance coverage decisions, prompting renewed debate among clinicians and administrators about prior authorization and its clinical consequences <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In sepsis care, reinforcement learning models are being systematically reviewed to clarify how machine learning might aid decision making for critically ill patients <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a>. Meanwhile, state-guided reinforcement learning models are emerging to support ongoing assessments of blood coagulation and offer targeted suggestions to providers in real time <a href="https://www.nature.com/articles/s41746-026-03039-w">[7]</a>. Advances in imaging include automatic deep learning methods now able to measure spinal alignment and detect surgical implants in scoliosis radiographs with potential for improved diagnostic workflows <a href="https://www.nature.com/articles/s41746-026-03020-7">[10]</a>. On the documentation front, researchers show promise in using synthesized clinical notes to train robust multimodal models in dermatology by augmenting limited imaging data with generated text <a href="https://www.nature.com/articles/s41746-026-03040-3">[11]</a>.</p>
-<p>Also this week: seven studies address safety and model evaluation, including a benchmark for psychiatric decision-making with large language models and a commentary on health system readiness. Clinical support tools span sepsis mortality prediction and real time fall risk screening in aged care facilities.</p>
+<p>A new government pilot program is testing artificial intelligence for automated prior authorization in insurance coverage, raising important questions about clinical workflow and administrative processes <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In critical care settings, recent studies have reviewed and advanced reinforcement learning techniques to support treatment decisions for sepsis and manage temporal coagulation balance, with models generating state-guided clinical suggestions to optimize interventions <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03039-w">[8]</a>. Researchers are also mapping the research landscape for robot-assisted reconstructive and plastic surgery, identifying evidence gaps that may inform future clinical AI investment <a href="https://www.nature.com/articles/s41746-026-03004-7">[3]</a>. On the governance front, machine unlearning techniques are now being positioned as necessary tools to address the challenges of data retention and model accountability in clinical AI systems <a href="https://www.nature.com/articles/s41746-026-03050-1">[4]</a>. These efforts are paralleled by broader commentary highlighting the need for stronger health systems to prevent AI from amplifying existing healthcare inequalities <a href="https://www.nature.com/articles/s41746-026-03041-2">[10]</a>.</p>
+<p>Also this week: eight studies evaluate AI safety and clinical effectiveness, four items present decision support applications, and the section includes topics spanning patient-facing screening, benchmarking of clinical analytics infrastructure, and new research in imaging and diagnostics.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -41,6 +41,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03004-7">Research landscape of robot-assisted reconstructive and plastic surgery</a>
     <p class="news-card-summary">Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03050-1">Machine unlearning as a governance imperative for clinical AI</a>
+    <p class="news-card-summary">Machine unlearning techniques offer governance approaches for clinical AI systems to manage data retention and model accountability.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.13036">Ask Before You Diagnose: Safe-Psych, a Sequential Evaluation Benchmark for LLMs in Psychiatry</a>
     <p class="news-card-summary">Safe-Psych benchmark evaluates whether large language models in psychiatry request clarification or abstain when given insufficient information rather than providing unsupported diagnoses.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.13430">Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet</a>
-    <p class="news-card-summary">Study compares post-training methods for small language models generating patient-friendly medication leaflets from structured biomedical data.</p>
   </div>
 </div>
 </div>

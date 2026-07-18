@@ -19665,6 +19665,235 @@
    "category": "clinical_practice",
    "score": 3.0,
    "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+   "title_hash": "e475aebbad90c0bd1e4c0e75ef7ee54a",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "drama and cultural commentary unrelated to AI capabilities, policy, or education"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer",
+   "title_hash": "e466b6b1f96de2763dcf5c82a2c3424f",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "tool announcement unrelated to medicine, medical education, or AI literacy"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uzifq8/internlminterns2preview397b_huggingface",
+   "title_hash": "d750332b95b787ed8ab4c5badcc19de6",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "minor model announcement without context or significance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03050-1",
+   "title_hash": "0d07189894b57592f567a48fefb9e2c7",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": true,
+   "title": "Machine unlearning as a governance imperative for clinical AI",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-18T00:00:00+00:00",
+   "summary": "Machine unlearning techniques offer governance approaches for clinical AI systems to manage data retention and model accountability.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uz0z0t/user_experience_of_bonsaiternary27b_on_4060ti",
+   "title_hash": "f20aaf199311df91a2fbe7a2bf21e3a0",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "personal user experience thread without broader significance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uyl5xv/introducing_lm_studio_bionic",
+   "title_hash": "82515d39272012237611da5bf300f02f",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "minor tool release without substantive content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uyita5/im_taking_a_break",
+   "title_hash": "e751385ef71c0f8bfc495cd018ea7be2",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "personal blog post about hobby management, no instructive analysis or news value"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uyghw0/how_do_you_plan_to_run_kimi_k3_locally",
+   "title_hash": "752d32c943462abec4acec77f7e458a3",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "community discussion speculation without news or instructive analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uyg3za/i_tested_all_llamacpps_speculative_decoding",
+   "title_hash": "8d0dc47ab36aa411bff6f3cb78d0591a",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": true,
+   "title": "I tested all llama.cpp's speculative decoding methods on Qwen 3.6 27B: MTP ~2.7x, DFlash ~3.7x, n-gram stack ~6x on real coding. Local AI win. My findings on RTX 6000 PRO.",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-16T21:35:55+00:00",
+   "summary": "Benchmarks of speculative decoding methods in llama.cpp show n-gram stacking achieves 6x speedup on coding tasks with Qwen 27B.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/qrorl17ssndh1.png?width=140&height=75&auto=webp&s=ba1cd82947a97771a9e4738d98dc125450b263db",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy9a8f/openllmfranceluciole23binstruct11_apache_20",
+   "title_hash": "928351510ffae87ab48728e32da5f75a",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "open model release announcement without evaluation or benchmark data"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy8dlg/kimi_k3_is_28t_will_need_to_have_an_aggressive",
+   "title_hash": "a408233cb35971f7aa1c467144399166",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "speculation about model size with no confirmed information"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy35n6/mozillas_state_of_open_source_ai_report",
+   "title_hash": "02faef34b7f0055ca075bdfd2cb5e470",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": true,
+   "title": "Mozilla’s State of Open Source AI Report",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-16T13:38:22+00:00",
+   "summary": "Mozilla released a State of Open Source AI Report surveying the landscape and trends in open source artificial intelligence.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/WG38hVMvNeqHveQUgQ6_mE6AWlldObs0g87kFxfzSXA.png?width=640&crop=smart&auto=webp&s=1e41718d1acc71b72caf775fef32aa8ad0dc15a2",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy0k62/nvidia_h200_disassembly_liquidcooling",
+   "title_hash": "5bdf59f0c15932c3734402e27b4a5a04",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "hardware teardown and cooling installation, not relevant to this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxqgke/qwen35_122ba10b_rocmfp4_imatrix",
+   "title_hash": "8e525684c2655856efeb75e9fa3c29d3",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "model quantization variant without broader significance or evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxm627/kimiai_teasing_a_video_with_lots_of_3s_in_it",
+   "title_hash": "b80b781746517f4076ecd18357274032",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "rumor and speculation about unreleased model with no confirmed news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxgi4c/the_benchmarks_of_thinking_machines_first",
+   "title_hash": "742bf929ee024ba596b08772b0236bd2",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "forum discussion without substantive content or link to actual benchmarks"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uwhwt8/gemma431bantihal_gemma_steered_to_push_back_on",
+   "title_hash": "1c80ac7c62d4be82de176fc00230ebc5",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": true,
+   "title": "Gemma-4-31B-AntiHal: Gemma steered to push back on false premises instead of hallucinating, without any impact to benchmark performance",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-14T18:59:33+00:00",
+   "summary": "Interpretability work on Gemma 4 31B steered the model to challenge false premises and hallucinations without degrading benchmark performance.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uvwbb2/model_add_hy3_hy_v3_support_with_mtp_speculative",
+   "title_hash": "828408e8aa282832a499c2808d7f217d",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": true,
+   "title": "model: add Hy3 (hy_v3) support with MTP speculative decoding by satindergrewal · Pull Request #25395 · ggml-org/llama.cpp",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-14T02:46:34+00:00",
+   "summary": "Support for Tencent Hy3 299B mixture of experts model added to llama.cpp with multi-token prediction speculative decoding.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/G2jNnfzK27ZTXrG6Y-0EB93m36H972oatYe_gbB26M0.png?width=640&crop=smart&auto=webp&s=f063c3ac0a0efb096da3e1247c7868728667c94a",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uvtf7h/new_set_of_fp4_attention_kernels_for_b300",
+   "title_hash": "b814930854fc68e97cfec2f4d5c3f713",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "minor kernel optimization without context or benchmark results"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uvk1if/qwen3635ba3buncensoredgenesishermesv2gguf",
+   "title_hash": "2dfd5da1aa455d0eeabbfc59e9c759e4",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "model quantization variant announcement without evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uv8orn/colibri_streaming_for_hy3_run_hy3_on_10gb_vram",
+   "title_hash": "83d28cfcf11a94dd361ecd6253305dcb",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "narrow technical implementation for specialized use case"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uv3wnt/experiment_autonomous_npcs_powered_by_gemma_4_e2b",
+   "title_hash": "92a9227d523066a06e9003b87c23dfe5",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "hobbyist project without broader relevance to medical educators or students"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uv1f1q/flashmsa_accelerating_milliontoken_training_with",
+   "title_hash": "9b1f9a8116d6c237eda246055aeec0a8",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "narrow optimization research without context or significance statement"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uuwrc0/running_qwen35122b_on_mac_studio_96gb_fixed_3",
+   "title_hash": "4d7be135a66c00b37d8660502e36c9f7",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "personal technical debugging post for niche hardware configuration"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uuue5p/llamacpp_agentic_workflows_ctx_checkpoints_fix",
+   "title_hash": "a032850b84b9aa2e2b1c879f86c5aab5",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "minor bug fix announcement without broader context"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uueuks/if_you_use_open_code_or_other_agenting_programs",
+   "title_hash": "621a322293ecacb2dfb351022826b353",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread about parallel agent execution, niche technical detail"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uu6qvh/i_would_like_to_share_my_experience_working_with",
+   "title_hash": "62c278e82ce4832e3fe9b2a7d8641a08",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "personal experience report about workarounds for hardware constraints"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uu3545/qwenthropic",
+   "title_hash": "f078f6e8effe42116d807213cea90848",
+   "first_seen": "2026-07-18T21:07:24.641809+00:00",
+   "kept": false,
+   "reason": "personal comparison of local model with commercial product, no news or analysis"
   }
  ],
  "digests": [
@@ -19806,13 +20035,13 @@
    "date": "July 18, 2026"
   },
   "clinical_practice": {
-   "text": "A federal pilot program is drawing attention to the risks and benefits of using artificial intelligence in automated insurance coverage decisions, prompting renewed debate among clinicians and administrators about prior authorization and its clinical consequences <a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">[1]</a>. In sepsis care, reinforcement learning models are being systematically reviewed to clarify how machine learning might aid decision making for critically ill patients <a href=\"https://www.nature.com/articles/s41746-026-03034-1\">[2]</a>. Meanwhile, state-guided reinforcement learning models are emerging to support ongoing assessments of blood coagulation and offer targeted suggestions to providers in real time <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[7]</a>. Advances in imaging include automatic deep learning methods now able to measure spinal alignment and detect surgical implants in scoliosis radiographs with potential for improved diagnostic workflows <a href=\"https://www.nature.com/articles/s41746-026-03020-7\">[10]</a>. On the documentation front, researchers show promise in using synthesized clinical notes to train robust multimodal models in dermatology by augmenting limited imaging data with generated text <a href=\"https://www.nature.com/articles/s41746-026-03040-3\">[11]</a>.\n\nAlso this week: seven studies address safety and model evaluation, including a benchmark for psychiatric decision-making with large language models and a commentary on health system readiness. Clinical support tools span sepsis mortality prediction and real time fall risk screening in aged care facilities.",
-   "hash": "1f9c7a57ea929c56",
+   "text": "A new government pilot program is testing artificial intelligence for automated prior authorization in insurance coverage, raising important questions about clinical workflow and administrative processes <a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">[1]</a>. In critical care settings, recent studies have reviewed and advanced reinforcement learning techniques to support treatment decisions for sepsis and manage temporal coagulation balance, with models generating state-guided clinical suggestions to optimize interventions <a href=\"https://www.nature.com/articles/s41746-026-03034-1\">[2]</a> <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[8]</a>. Researchers are also mapping the research landscape for robot-assisted reconstructive and plastic surgery, identifying evidence gaps that may inform future clinical AI investment <a href=\"https://www.nature.com/articles/s41746-026-03004-7\">[3]</a>. On the governance front, machine unlearning techniques are now being positioned as necessary tools to address the challenges of data retention and model accountability in clinical AI systems <a href=\"https://www.nature.com/articles/s41746-026-03050-1\">[4]</a>. These efforts are paralleled by broader commentary highlighting the need for stronger health systems to prevent AI from amplifying existing healthcare inequalities <a href=\"https://www.nature.com/articles/s41746-026-03041-2\">[10]</a>.\n\nAlso this week: eight studies evaluate AI safety and clinical effectiveness, four items present decision support applications, and the section includes topics spanning patient-facing screening, benchmarking of clinical analytics infrastructure, and new research in imaging and diagnostics.",
+   "hash": "a72e56e164ec0b36",
    "date": "July 18, 2026"
   },
   "general_ai": {
-   "text": "Limits to language model reliability and scaling have been clarified, with new research showing that all generative tasks have information-theoretic boundaries marking how reliably models can perform them, shaped by uncertainty in the context provided <a href=\"https://arxiv.org/abs/2607.14112\">[1]</a>. Meanwhile, studies of model refusal and jailbreak attacks demonstrate that harmful representations remain accessible in aligned models, signaling gaps in output decision mechanisms even when compliance is forced <a href=\"https://arxiv.org/abs/2607.14147\">[2]</a>. OpenAI introduced GPT-Red, a novel adversarial model deployed to discover and patch cybersecurity weaknesses in their systems, notably enhancing the robustness of GPT-5.6 <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[10]</a>. Biomedical research is seeing early deployment of AI co-scientists, such as Biomni, capable of handling varied research tasks and promising partnership potential as development advances <a href=\"https://www.nature.com/articles/d41591-026-00037-z\">[3]</a>. With benchmark performance gaining attention, Soofi S, a 30-billion-parameter open model from a German consortium, tops English and German language evaluations <a href=\"https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german\">[6]</a>.\n\nAlso this week: four new model releases add to the pool of open-weight frameworks, including Kimi K3, a high-parameter language model slated for release in 2026, and Inkling, the latest from Thinking Machines. Two evaluation papers assess factuality and retrieval, and agent security research continues.",
-   "hash": "2a47d6d8615bdc7d",
+   "text": "A study outlining the information-theoretic limits in language model reliability has drawn attention to fundamental ceilings in generative performance, influencing expectations for model development and assessment <a href=\"https://arxiv.org/abs/2607.14112\">[1]</a>. Security research on prefill jailbreak attacks indicates ongoing challenges in aligning model outputs, with implications for safety protocols and harm mitigation strategies <a href=\"https://arxiv.org/abs/2607.14147\">[2]</a>. The introduction of Biomni, an AI agent system designed to assist biomedical research, demonstrates potential for collaborative research automation in the sciences <a href=\"https://www.nature.com/articles/d41591-026-00037-z\">[3]</a>. Open-weight releases remain a focus, with Moonshot AI&#x27;s announcement of Kimi K3-a model with 2.8 trillion parameters-showing evolving ambitions and benchmarking priorities in the field <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[4]</a>. Addressing AI system robustness, OpenAI deployed GPT-Red as a vulnerability tester to enhance the security of future releases such as GPT-5.6 <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[10]</a>.\n\nAlso this week: four new model launches include Soofi S and Inkling, with Soofi S ranking high on language benchmarks and Inkling introducing a high-parameter open model. Three recent studies address safety and reliability, joined by one paper on research methods and one on evaluation benchmarks.",
+   "hash": "bb30defed8021ca8",
    "date": "July 18, 2026"
   }
  },

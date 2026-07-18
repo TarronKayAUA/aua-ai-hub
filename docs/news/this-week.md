@@ -372,8 +372,8 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A federal pilot program is drawing attention to the risks and benefits of using artificial intelligence in automated insurance coverage decisions, prompting renewed debate among clinicians and administrators about prior authorization and its clinical consequences <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In sepsis care, reinforcement learning models are being systematically reviewed to clarify how machine learning might aid decision making for critically ill patients <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a>. Meanwhile, state-guided reinforcement learning models are emerging to support ongoing assessments of blood coagulation and offer targeted suggestions to providers in real time <a href="https://www.nature.com/articles/s41746-026-03039-w">[7]</a>. Advances in imaging include automatic deep learning methods now able to measure spinal alignment and detect surgical implants in scoliosis radiographs with potential for improved diagnostic workflows <a href="https://www.nature.com/articles/s41746-026-03020-7">[10]</a>. On the documentation front, researchers show promise in using synthesized clinical notes to train robust multimodal models in dermatology by augmenting limited imaging data with generated text <a href="https://www.nature.com/articles/s41746-026-03040-3">[11]</a>.</p>
-<p>Also this week: seven studies address safety and model evaluation, including a benchmark for psychiatric decision-making with large language models and a commentary on health system readiness. Clinical support tools span sepsis mortality prediction and real time fall risk screening in aged care facilities.</p>
+<p>A new government pilot program is testing artificial intelligence for automated prior authorization in insurance coverage, raising important questions about clinical workflow and administrative processes <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In critical care settings, recent studies have reviewed and advanced reinforcement learning techniques to support treatment decisions for sepsis and manage temporal coagulation balance, with models generating state-guided clinical suggestions to optimize interventions <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03039-w">[8]</a>. Researchers are also mapping the research landscape for robot-assisted reconstructive and plastic surgery, identifying evidence gaps that may inform future clinical AI investment <a href="https://www.nature.com/articles/s41746-026-03004-7">[3]</a>. On the governance front, machine unlearning techniques are now being positioned as necessary tools to address the challenges of data retention and model accountability in clinical AI systems <a href="https://www.nature.com/articles/s41746-026-03050-1">[4]</a>. These efforts are paralleled by broader commentary highlighting the need for stronger health systems to prevent AI from amplifying existing healthcare inequalities <a href="https://www.nature.com/articles/s41746-026-03041-2">[10]</a>.</p>
+<p>Also this week: eight studies evaluate AI safety and clinical effectiveness, four items present decision support applications, and the section includes topics spanning patient-facing screening, benchmarking of clinical analytics infrastructure, and new research in imaging and diagnostics.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
@@ -401,6 +401,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03004-7">Research landscape of robot-assisted reconstructive and plastic surgery</a>
         <p class="news-card-summary">Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03050-1">Machine unlearning as a governance imperative for clinical AI</a>
+        <p class="news-card-summary">Machine unlearning techniques offer governance approaches for clinical AI systems to manage data retention and model accountability.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -740,26 +747,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Researchers developed a vision-language AI framework aligned with clinician workflows for interpreting fundus fluorescein angiography images step-by-step.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02987-7">Embedded transparency in artificial intelligence: a prerequisite for equity and representation in AI-enabled clinical trials</a>
-        <p class="news-card-summary">Peer-reviewed study argues that transparent, interpretable AI models in clinical trial infrastructure are essential to prevent amplification of existing health disparities in evidence generation.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Limits to language model reliability and scaling have been clarified, with new research showing that all generative tasks have information-theoretic boundaries marking how reliably models can perform them, shaped by uncertainty in the context provided <a href="https://arxiv.org/abs/2607.14112">[1]</a>. Meanwhile, studies of model refusal and jailbreak attacks demonstrate that harmful representations remain accessible in aligned models, signaling gaps in output decision mechanisms even when compliance is forced <a href="https://arxiv.org/abs/2607.14147">[2]</a>. OpenAI introduced GPT-Red, a novel adversarial model deployed to discover and patch cybersecurity weaknesses in their systems, notably enhancing the robustness of GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[10]</a>. Biomedical research is seeing early deployment of AI co-scientists, such as Biomni, capable of handling varied research tasks and promising partnership potential as development advances <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. With benchmark performance gaining attention, Soofi S, a 30-billion-parameter open model from a German consortium, tops English and German language evaluations <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[6]</a>.</p>
-<p>Also this week: four new model releases add to the pool of open-weight frameworks, including Kimi K3, a high-parameter language model slated for release in 2026, and Inkling, the latest from Thinking Machines. Two evaluation papers assess factuality and retrieval, and agent security research continues.</p>
+<p>A study outlining the information-theoretic limits in language model reliability has drawn attention to fundamental ceilings in generative performance, influencing expectations for model development and assessment <a href="https://arxiv.org/abs/2607.14112">[1]</a>. Security research on prefill jailbreak attacks indicates ongoing challenges in aligning model outputs, with implications for safety protocols and harm mitigation strategies <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The introduction of Biomni, an AI agent system designed to assist biomedical research, demonstrates potential for collaborative research automation in the sciences <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Open-weight releases remain a focus, with Moonshot AI&#x27;s announcement of Kimi K3-a model with 2.8 trillion parameters-showing evolving ambitions and benchmarking priorities in the field <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Addressing AI system robustness, OpenAI deployed GPT-Red as a vulnerability tester to enhance the security of future releases such as GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[10]</a>.</p>
+<p>Also this week: four new model launches include Soofi S and Inkling, with Soofi S ranking high on language benchmarks and Inkling introducing a high-parameter open model. Three recent studies address safety and reliability, joined by one paper on research methods and one on evaluation benchmarks.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -790,6 +790,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Biomni, an AI agent system, performs diverse biomedical research tasks and could serve as a research partner for scientists with further development.</p>
       </div>
       <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00037-z/d41591-026-00037-z_52987696.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uyg3za/i_tested_all_llamacpps_speculative_decoding">I tested all llama.cpp&#x27;s speculative decoding methods on Qwen 3.6 27B: MTP ~2.7x, DFlash ~3.7x, n-gram stack ~6x on real coding. Local AI win. My findings on RTX 6000 PRO.</a>
+        <p class="news-card-summary">Benchmarks of speculative decoding methods in llama.cpp show n-gram stacking achieves 6x speedup on coding tasks with Qwen 27B.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/qrorl17ssndh1.png?width=140&amp;height=75&amp;auto=webp&amp;s=ba1cd82947a97771a9e4738d98dc125450b263db" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -822,6 +830,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">NVIDIA released Nemotron 3 Embed, an embedding model achieving top performance on the Retrieval Text Embedding Benchmark for agentic retrieval applications.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/697fa5ae089a7f9330c5078f/AaXgkciE-wvxSPrA4wg0n.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uy35n6/mozillas_state_of_open_source_ai_report">Mozilla’s State of Open Source AI Report</a>
+        <p class="news-card-summary">Mozilla released a State of Open Source AI Report surveying the landscape and trends in open source artificial intelligence.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/WG38hVMvNeqHveQUgQ6_mE6AWlldObs0g87kFxfzSXA.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1e41718d1acc71b72caf775fef32aa8ad0dc15a2" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -901,6 +917,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK262_GROK_B_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhwt8/gemma431bantihal_gemma_steered_to_push_back_on">Gemma-4-31B-AntiHal: Gemma steered to push back on false premises instead of hallucinating, without any impact to benchmark performance</a>
+        <p class="news-card-summary">Interpretability work on Gemma 4 31B steered the model to challenge false premises and hallucinations without degrading benchmark performance.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
@@ -974,6 +997,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2607.10476">Hallucination Detection in Large Language Models Using Diversion Decoding</a>
         <p class="news-card-summary">Method using diversion decoding detects hallucinations in language models by identifying factually incorrect or fabricated statements.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uvwbb2/model_add_hy3_hy_v3_support_with_mtp_speculative">model: add Hy3 (hy_v3) support with MTP speculative decoding by satindergrewal · Pull Request #25395 · ggml-org/llama.cpp</a>
+        <p class="news-card-summary">Support for Tencent Hy3 299B mixture of experts model added to llama.cpp with multi-token prediction speculative decoding.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/G2jNnfzK27ZTXrG6Y-0EB93m36H972oatYe_gbB26M0.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=f063c3ac0a0efb096da3e1247c7868728667c94a" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">

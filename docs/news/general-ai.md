@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Limits to language model reliability and scaling have been clarified, with new research showing that all generative tasks have information-theoretic boundaries marking how reliably models can perform them, shaped by uncertainty in the context provided <a href="https://arxiv.org/abs/2607.14112">[1]</a>. Meanwhile, studies of model refusal and jailbreak attacks demonstrate that harmful representations remain accessible in aligned models, signaling gaps in output decision mechanisms even when compliance is forced <a href="https://arxiv.org/abs/2607.14147">[2]</a>. OpenAI introduced GPT-Red, a novel adversarial model deployed to discover and patch cybersecurity weaknesses in their systems, notably enhancing the robustness of GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[10]</a>. Biomedical research is seeing early deployment of AI co-scientists, such as Biomni, capable of handling varied research tasks and promising partnership potential as development advances <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. With benchmark performance gaining attention, Soofi S, a 30-billion-parameter open model from a German consortium, tops English and German language evaluations <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[6]</a>.</p>
-<p>Also this week: four new model releases add to the pool of open-weight frameworks, including Kimi K3, a high-parameter language model slated for release in 2026, and Inkling, the latest from Thinking Machines. Two evaluation papers assess factuality and retrieval, and agent security research continues.</p>
+<p>A study outlining the information-theoretic limits in language model reliability has drawn attention to fundamental ceilings in generative performance, influencing expectations for model development and assessment <a href="https://arxiv.org/abs/2607.14112">[1]</a>. Security research on prefill jailbreak attacks indicates ongoing challenges in aligning model outputs, with implications for safety protocols and harm mitigation strategies <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The introduction of Biomni, an AI agent system designed to assist biomedical research, demonstrates potential for collaborative research automation in the sciences <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Open-weight releases remain a focus, with Moonshot AI&#x27;s announcement of Kimi K3-a model with 2.8 trillion parameters-showing evolving ambitions and benchmarking priorities in the field <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Addressing AI system robustness, OpenAI deployed GPT-Red as a vulnerability tester to enhance the security of future releases such as GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[10]</a>.</p>
+<p>Also this week: four new model launches include Soofi S and Inkling, with Soofi S ranking high on language benchmarks and Inkling introducing a high-parameter open model. Three recent studies address safety and reliability, joined by one paper on research methods and one on evaluation benchmarks.</p>
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="new-models">
@@ -51,6 +51,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
   </div>
   <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00037-z/d41591-026-00037-z_52987696.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uyg3za/i_tested_all_llamacpps_speculative_decoding">I tested all llama.cpp&#x27;s speculative decoding methods on Qwen 3.6 27B: MTP ~2.7x, DFlash ~3.7x, n-gram stack ~6x on real coding. Local AI win. My findings on RTX 6000 PRO.</a>
+    <p class="news-card-summary">Benchmarks of speculative decoding methods in llama.cpp show n-gram stacking achieves 6x speedup on coding tasks with Qwen 27B.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/qrorl17ssndh1.png?width=140&amp;height=75&amp;auto=webp&amp;s=ba1cd82947a97771a9e4738d98dc125450b263db" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 16, 2026</span></div>
@@ -82,6 +90,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">NVIDIA released Nemotron 3 Embed, an embedding model achieving top performance on the Retrieval Text Embedding Benchmark for agentic retrieval applications.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/697fa5ae089a7f9330c5078f/AaXgkciE-wvxSPrA4wg0n.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uy35n6/mozillas_state_of_open_source_ai_report">Mozilla’s State of Open Source AI Report</a>
+    <p class="news-card-summary">Mozilla released a State of Open Source AI Report surveying the landscape and trends in open source artificial intelligence.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/WG38hVMvNeqHveQUgQ6_mE6AWlldObs0g87kFxfzSXA.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1e41718d1acc71b72caf775fef32aa8ad0dc15a2" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
@@ -122,20 +138,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">OpenAI built GPT-Red, an adversarial language model that tests its systems for cybersecurity vulnerabilities, and used it to strengthen GPT-5.6 against attacks.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">LMArena blog</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://arena.ai/blog/factuality-in-arena">Factuality in the Arena</a>
-    <p class="news-card-summary">A new leaderboard ranks language models by both human preference and factual accuracy of responses, addressing a persistent evaluation challenge.</p>
-  </div>
-  <img class="news-card-thumb" src="https://storage.ghost.io/c/37/18/37180a6f-127b-4177-bb4a-98f4f26f9e5d/content/images/2026/07/Factuality_Blog_Header_Web_Optimized.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">How I tricked Claude into leaking your deepest, darkest secrets</a>
-    <p class="news-card-summary">A researcher demonstrated a data exfiltration vulnerability in Claude&#x27;s web-fetch tool, showing how agent security requires careful design of tool integrations.</p>
-  </div>
 </div>
 </div>
