@@ -19983,6 +19983,66 @@
    "category": "medical_education",
    "score": 4.0,
    "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&ff=20260719095641&v=2.20.0",
+   "title_hash": "c568e79b8920c7183f9f1cddd801f58a",
+   "first_seen": "2026-07-19T13:56:41.470763+00:00",
+   "kept": true,
+   "title": "Accuracy and stability of DeepSeek-R1 and GPT-4o on pediatric questions",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-19T10:00:00+00:00",
+   "summary": "DeepSeek-R1 outperformed GPT-4o on pediatric medical questions, but both models showed performance variability across runs, raising concerns for clinical applications requiring consistency.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&ff=20260719095641&v=2.20.0",
+   "title_hash": "636c917bfa3b1ff49932a3c0323e907c",
+   "first_seen": "2026-07-19T13:56:41.470763+00:00",
+   "kept": true,
+   "title": "Automating Case-Based Learning in Obstetrics and Gynecology: Validation of a Locally Deployed Large Language Model",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-19T10:00:00+00:00",
+   "summary": "Locally deployed large language models can efficiently generate case-based learning databases in obstetrics and gynecology, but require human clinician review to validate accuracy and capture tacit knowledge.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&ff=20260719095641&v=2.20.0",
+   "title_hash": "4f9a06be4426d2c4f6f396860f21a2d0",
+   "first_seen": "2026-07-19T13:56:41.470763+00:00",
+   "kept": true,
+   "title": "Integrating Artificial Intelligence with Gamification in Medical Education: A Pedagogically Grounded Framework and Critical Review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-19T10:00:00+00:00",
+   "summary": "Integration of artificial intelligence with gamification in medical education offers potential to personalize learning and improve engagement, though empirical evidence of combined effects remains limited.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0lewq/prepare_your_vram_qwen38_is_coming",
+   "title_hash": "c70d7544e005bd882349b4c7e6430076",
+   "first_seen": "2026-07-19T13:56:41.470763+00:00",
+   "kept": false,
+   "reason": "minor release notes and rumor, not substantive news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xc63tFIIfeA",
+   "title_hash": "72762958d76655a9c2ef0e704a74930e",
+   "first_seen": "2026-07-19T13:56:41.470763+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Self-Driving-Company-e3m91l5",
+   "title_hash": "e9943ff849d589ff10d0dcc0d352cf07",
+   "first_seen": "2026-07-19T13:56:41.470763+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
