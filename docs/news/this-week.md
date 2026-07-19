@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -34,6 +34,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Attitudes, usage patterns, and learning interests of medical students toward DeepSeek in medical education: A cross-sectional survey</a>
         <p class="news-card-summary">Survey of medical students&#x27; attitudes, usage patterns, and learning interests regarding DeepSeek in medical education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42471688?fc=20260609215449&amp;ff=20260719024348&amp;v=2.20.0">Technology anxiety and artificial intelligence readiness in nursing students: a cross-sectional study</a>
+        <p class="news-card-summary">A study finds that nursing students with greater AI preparation report less technology anxiety, suggesting curriculum-integrated AI training and digital skills development may reduce adoption barriers.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470331?fc=20260609215449&amp;ff=20260719024348&amp;v=2.20.0">Artificial Intelligence and the Art of Medicine: A Framework for Clinical Wisdom in a Digital Age</a>
+        <p class="news-card-summary">A framework examining how AI transforms clinical practice and medical education while addressing ethical, legal, and professional challenges in the physician-patient relationship and clinical decision-making.</p>
       </div>
     </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
@@ -752,15 +766,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A study outlining the information-theoretic limits in language model reliability has drawn attention to fundamental ceilings in generative performance, influencing expectations for model development and assessment <a href="https://arxiv.org/abs/2607.14112">[1]</a>. Security research on prefill jailbreak attacks indicates ongoing challenges in aligning model outputs, with implications for safety protocols and harm mitigation strategies <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The introduction of Biomni, an AI agent system designed to assist biomedical research, demonstrates potential for collaborative research automation in the sciences <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Open-weight releases remain a focus, with Moonshot AI&#x27;s announcement of Kimi K3-a model with 2.8 trillion parameters-showing evolving ambitions and benchmarking priorities in the field <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Addressing AI system robustness, OpenAI deployed GPT-Red as a vulnerability tester to enhance the security of future releases such as GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[10]</a>.</p>
-<p>Also this week: four new model launches include Soofi S and Inkling, with Soofi S ranking high on language benchmarks and Inkling introducing a high-parameter open model. Three recent studies address safety and reliability, joined by one paper on research methods and one on evaluation benchmarks.</p>
-<p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
+<p>The release of Biomni, an AI system designed to assist with biomedical research, marks an advance toward integrating AI as a collaborative partner for faculty and researchers <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Meanwhile, new studies on the limits of reliability and techniques for manipulating model behavior highlight ongoing challenges in both model performance and safety, with research showing a fundamental ceiling for generative task reliability and vulnerabilities in model alignment <a href="https://arxiv.org/abs/2607.14112">[1]</a> <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The launch of Kimi K3, a large-scale open-weight language model, underscores industry trends toward increased transparency and power in model development, with its performance assessed against emerging benchmarks <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Recent open-weight model releases such as Inkling and Soofi S draw attention to competition in model architecture for multilingual and specialized applications <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[6]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[9]</a>.</p>
+<p>Also this week: the section holds four new model releases, two safety and reliability studies, one paper on research methods, a benchmark comparison, and an industry policy ruling affecting platform access. NVIDIA’s Nemotron 3 Embed stands out for achieving top benchmark performance in agentic retrieval applications.</p>
+<p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v0czbk/head_of_strategic_futures_from_openai_on">head of strategic futures from openai on open-weight chinese models.</a>
+        <p class="news-card-summary">An analysis of China&#x27;s open-weight AI models and their potential effects on capital expenditure and US regulatory response in the context of strategic competition.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/fzdusgco73eh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d32d1aaa09ce0461d200358ff5b96cf12e4633d5" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 17, 2026</span></div>

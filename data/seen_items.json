@@ -19915,6 +19915,74 @@
    "first_seen": "2026-07-19T03:56:57.443668+00:00",
    "kept": false,
    "reason": "news roundup video with speculation and rumor framing as primary content rather than substantive coverage of real developments"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/19/ai-mania",
+   "title_hash": "ec95d88209359fbfe42e2ebb2fc4a4d7",
+   "first_seen": "2026-07-19T06:43:48.488671+00:00",
+   "kept": false,
+   "reason": "commentary on corporate decision-making trends rather than substantive analysis of AI development or deployment relevant to medical education"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust",
+   "title_hash": "2ab5790bed4cfa27667d65a8e6cb465c",
+   "first_seen": "2026-07-19T06:43:48.488671+00:00",
+   "kept": false,
+   "reason": "minor release notes and implementation detail not relevant to medical educators"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0czbk/head_of_strategic_futures_from_openai_on",
+   "title_hash": "46ff961070acf9868cc04c90fa71095f",
+   "first_seen": "2026-07-19T06:43:48.488671+00:00",
+   "kept": true,
+   "title": "head of strategic futures from openai on open-weight chinese models.",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-19T01:15:23+00:00",
+   "summary": "An analysis of China's open-weight AI models and their potential effects on capital expenditure and US regulatory response in the context of strategic competition.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/fzdusgco73eh1.png?width=640&crop=smart&auto=webp&s=d32d1aaa09ce0461d200358ff5b96cf12e4633d5",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42471688?fc=20260609215449&ff=20260719024348&v=2.20.0",
+   "title_hash": "41a0cc4faf7e436f75b134df58bc4011",
+   "first_seen": "2026-07-19T06:43:48.488671+00:00",
+   "kept": true,
+   "title": "Technology anxiety and artificial intelligence readiness in nursing students: a cross-sectional study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-18T10:00:00+00:00",
+   "summary": "A study finds that nursing students with greater AI preparation report less technology anxiety, suggesting curriculum-integrated AI training and digital skills development may reduce adoption barriers.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42471045?fc=20260609215449&ff=20260719024348&v=2.20.0",
+   "title_hash": "d8496276c224af3a573671c5fd758782",
+   "first_seen": "2026-07-19T06:43:48.488671+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; vaccine development review with no focus on artificial intelligence"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42470613?fc=20260609215449&ff=20260719024348&v=2.20.0",
+   "title_hash": "02a6991ddc71783be9386dde608d5ff6",
+   "first_seen": "2026-07-19T06:43:48.488671+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; focuses on clinical education logistics in emergency departments, not artificial intelligence"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42470331?fc=20260609215449&ff=20260719024348&v=2.20.0",
+   "title_hash": "1b1b5d8226a2a4b971f5d7d8934be0a0",
+   "first_seen": "2026-07-19T06:43:48.488671+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence and the Art of Medicine: A Framework for Clinical Wisdom in a Digital Age",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-18T10:00:00+00:00",
+   "summary": "A framework examining how AI transforms clinical practice and medical education while addressing ethical, legal, and professional challenges in the physician-patient relationship and clinical decision-making.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
   }
  ],
  "digests": [
@@ -20061,9 +20129,9 @@
    "date": "July 18, 2026"
   },
   "general_ai": {
-   "text": "A study outlining the information-theoretic limits in language model reliability has drawn attention to fundamental ceilings in generative performance, influencing expectations for model development and assessment <a href=\"https://arxiv.org/abs/2607.14112\">[1]</a>. Security research on prefill jailbreak attacks indicates ongoing challenges in aligning model outputs, with implications for safety protocols and harm mitigation strategies <a href=\"https://arxiv.org/abs/2607.14147\">[2]</a>. The introduction of Biomni, an AI agent system designed to assist biomedical research, demonstrates potential for collaborative research automation in the sciences <a href=\"https://www.nature.com/articles/d41591-026-00037-z\">[3]</a>. Open-weight releases remain a focus, with Moonshot AI&#x27;s announcement of Kimi K3-a model with 2.8 trillion parameters-showing evolving ambitions and benchmarking priorities in the field <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[4]</a>. Addressing AI system robustness, OpenAI deployed GPT-Red as a vulnerability tester to enhance the security of future releases such as GPT-5.6 <a href=\"https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer\">[10]</a>.\n\nAlso this week: four new model launches include Soofi S and Inkling, with Soofi S ranking high on language benchmarks and Inkling introducing a high-parameter open model. Three recent studies address safety and reliability, joined by one paper on research methods and one on evaluation benchmarks.",
-   "hash": "bb30defed8021ca8",
-   "date": "July 18, 2026"
+   "text": "The release of Biomni, an AI system designed to assist with biomedical research, marks an advance toward integrating AI as a collaborative partner for faculty and researchers <a href=\"https://www.nature.com/articles/d41591-026-00037-z\">[3]</a>. Meanwhile, new studies on the limits of reliability and techniques for manipulating model behavior highlight ongoing challenges in both model performance and safety, with research showing a fundamental ceiling for generative task reliability and vulnerabilities in model alignment <a href=\"https://arxiv.org/abs/2607.14112\">[1]</a> <a href=\"https://arxiv.org/abs/2607.14147\">[2]</a>. The launch of Kimi K3, a large-scale open-weight language model, underscores industry trends toward increased transparency and power in model development, with its performance assessed against emerging benchmarks <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[4]</a>. Recent open-weight model releases such as Inkling and Soofi S draw attention to competition in model architecture for multilingual and specialized applications <a href=\"https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german\">[6]</a> <a href=\"https://thinkingmachines.ai/news/introducing-inkling\">[9]</a>.\n\nAlso this week: the section holds four new model releases, two safety and reliability studies, one paper on research methods, a benchmark comparison, and an industry policy ruling affecting platform access. NVIDIA’s Nemotron 3 Embed stands out for achieving top benchmark performance in agentic retrieval applications.",
+   "hash": "c527bd7c9724898f",
+   "date": "July 19, 2026"
   }
  },
  "opportunity_snapshot": {

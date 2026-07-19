@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A study outlining the information-theoretic limits in language model reliability has drawn attention to fundamental ceilings in generative performance, influencing expectations for model development and assessment <a href="https://arxiv.org/abs/2607.14112">[1]</a>. Security research on prefill jailbreak attacks indicates ongoing challenges in aligning model outputs, with implications for safety protocols and harm mitigation strategies <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The introduction of Biomni, an AI agent system designed to assist biomedical research, demonstrates potential for collaborative research automation in the sciences <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Open-weight releases remain a focus, with Moonshot AI&#x27;s announcement of Kimi K3-a model with 2.8 trillion parameters-showing evolving ambitions and benchmarking priorities in the field <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Addressing AI system robustness, OpenAI deployed GPT-Red as a vulnerability tester to enhance the security of future releases such as GPT-5.6 <a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">[10]</a>.</p>
-<p>Also this week: four new model launches include Soofi S and Inkling, with Soofi S ranking high on language benchmarks and Inkling introducing a high-parameter open model. Three recent studies address safety and reliability, joined by one paper on research methods and one on evaluation benchmarks.</p>
-<p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
+<p>The release of Biomni, an AI system designed to assist with biomedical research, marks an advance toward integrating AI as a collaborative partner for faculty and researchers <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Meanwhile, new studies on the limits of reliability and techniques for manipulating model behavior highlight ongoing challenges in both model performance and safety, with research showing a fundamental ceiling for generative task reliability and vulnerabilities in model alignment <a href="https://arxiv.org/abs/2607.14112">[1]</a> <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The launch of Kimi K3, a large-scale open-weight language model, underscores industry trends toward increased transparency and power in model development, with its performance assessed against emerging benchmarks <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Recent open-weight model releases such as Inkling and Soofi S draw attention to competition in model architecture for multilingual and specialized applications <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[6]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[9]</a>.</p>
+<p>Also this week: the section holds four new model releases, two safety and reliability studies, one paper on research methods, a benchmark comparison, and an industry policy ruling affecting platform access. NVIDIA’s Nemotron 3 Embed stands out for achieving top benchmark performance in agentic retrieval applications.</p>
+<p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v0czbk/head_of_strategic_futures_from_openai_on">head of strategic futures from openai on open-weight chinese models.</a>
+    <p class="news-card-summary">An analysis of China&#x27;s open-weight AI models and their potential effects on capital expenditure and US regulatory response in the context of strategic competition.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/fzdusgco73eh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d32d1aaa09ce0461d200358ff5b96cf12e4633d5" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 17, 2026</span></div>
@@ -130,13 +138,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Thinking Machines released Inkling, an open-weight language model.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/d7s0z8kqpfdh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f56cf81af181e41f80e2963533db6f6e5408fad2" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer</a>
-    <p class="news-card-summary">OpenAI built GPT-Red, an adversarial language model that tests its systems for cybersecurity vulnerabilities, and used it to strengthen GPT-5.6 against attacks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
