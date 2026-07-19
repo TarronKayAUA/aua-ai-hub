@@ -3,5 +3,5 @@
 - [Accuracy and stability of DeepSeek-R1 and GPT-4o on pediatric questions](https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&ff=20260719095641&v=2.20.0) (PubMed AI in medical education, July 19, 2026)
 - [Automating Case-Based Learning in Obstetrics and Gynecology: Validation of a Locally Deployed Large Language Model](https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&ff=20260719095641&v=2.20.0) (PubMed AI in medical education, July 19, 2026)
 - [Integrating Artificial Intelligence with Gamification in Medical Education: A Pedagogically Grounded Framework and Critical Review](https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&ff=20260719095641&v=2.20.0) (PubMed AI in medical education, July 19, 2026)
+- [OpenAI reduces Codex Model Context Size from 372k to 272k](https://github.com/openai/codex/pull/33972/files) (Hacker News (LLM, 100+ points), July 19, 2026)
 - [head of strategic futures from openai on open-weight chinese models.](https://www.reddit.com/r/LocalLLaMA/comments/1v0czbk/head_of_strategic_futures_from_openai_on) (r/LocalLLaMA weekly top, July 19, 2026)
-- [Will AI fix prior authorization, or make it worse?](https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse) (Ars Technica AI, July 18, 2026)

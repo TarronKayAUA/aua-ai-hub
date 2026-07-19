@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>The release of Biomni, an AI system designed to assist with biomedical research, marks an advance toward integrating AI as a collaborative partner for faculty and researchers <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Meanwhile, new studies on the limits of reliability and techniques for manipulating model behavior highlight ongoing challenges in both model performance and safety, with research showing a fundamental ceiling for generative task reliability and vulnerabilities in model alignment <a href="https://arxiv.org/abs/2607.14112">[1]</a> <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The launch of Kimi K3, a large-scale open-weight language model, underscores industry trends toward increased transparency and power in model development, with its performance assessed against emerging benchmarks <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Recent open-weight model releases such as Inkling and Soofi S draw attention to competition in model architecture for multilingual and specialized applications <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[6]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[9]</a>.</p>
-<p>Also this week: the section holds four new model releases, two safety and reliability studies, one paper on research methods, a benchmark comparison, and an industry policy ruling affecting platform access. NVIDIA’s Nemotron 3 Embed stands out for achieving top benchmark performance in agentic retrieval applications.</p>
+<p>A mechanistic study analyzing jailbreak attacks on aligned language models highlights how models may switch to compliance while still carrying traces of harmful representations, raising questions about the formation of output decisions and vulnerabilities in model alignment strategies <a href="https://arxiv.org/abs/2607.14147">[3]</a>. Another foundational thread is a theoretical analysis establishing information limits for reliability and scaling in generative tasks, suggesting there are ceilings for model performance set by the uncertainty in their output contexts <a href="https://arxiv.org/abs/2607.14112">[2]</a>. The landscape of open models continues to expand, with major releases such as a 975-billion-parameter open-weights model and a 30-billion-parameter multilingual model topping benchmarks, reflecting ongoing innovation in language model accessibility and evaluation <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[7]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[10]</a>. Meanwhile, frameworks like LM Studio Bionic aim to streamline deployment and orchestration of open-weight models for wider computational use <a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic">[6]</a>.</p>
+<p>Also this week: five new model releases highlight current trends in scaling, accessibility, and multilingual capabilities, including the announcement of Kimi K3 with a planned open-weight release <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[5]</a>. There are two items on safety and reliability, one on benchmarking, one on research methods, and a report on Google’s EU antitrust ruling affecting Android and Search platforms.</p>
 <p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 19, 2026</span></div>
+    <a class="news-card-title" href="https://github.com/openai/codex/pull/33972/files">OpenAI reduces Codex Model Context Size from 372k to 272k</a>
+    <p class="news-card-summary">OpenAI reduced the maximum context window for the Codex model from 372k to 272k tokens.</p>
+  </div>
+  <img class="news-card-thumb" src="https://avatars.githubusercontent.com/u/244841968?s=400&amp;v=4" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
@@ -130,13 +138,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Thinking Machines releases Inkling, an open-weights 975-billion-parameter language model.</p>
   </div>
   <img class="news-card-thumb" src="https://thinkingmachines.ai/news/introducing-inkling/images/cover-social-inkling-post.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uxdv34/thinking_machines_releases_first_openweight_model">Thinking Machines releases first open-weight model “Inkling”</a>
-    <p class="news-card-summary">Thinking Machines released Inkling, an open-weight language model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/d7s0z8kqpfdh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f56cf81af181e41f80e2963533db6f6e5408fad2" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

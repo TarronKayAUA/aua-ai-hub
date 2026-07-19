@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Integration of generative artificial intelligence into clinical training and teaching has accelerated, as recent bibliometric analysis documents growing research interest in language models for clinical skills and ethical considerations surrounding their use <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[1]</a>. AI-powered tools are being evaluated for their capacity to enhance diagnostic accuracy and student learning across specialties, including ultrasound training for breast cancer diagnosis among residents <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[5]</a> and undergraduate anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[14]</a>. Studies highlight both the potential and limitations of AI-assisted feedback in improving clinical documentation, with alignment to expert ratings and some advantages over traditional teacher feedback for medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[4]</a>. Despite ongoing adoption, surveys point to substantial gaps in AI understanding among postgraduate residents, reinforcing calls for structured curriculum and targeted faculty development <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[6]</a>. Context-dependent reliance on AI by medical students, particularly in nephrology, also underscores variability in confidence and adoption patterns <a href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">[13]</a>.</p>
-<p>Also this week: five new studies address teaching and curriculum topics, alongside five items on attitudes and adoption. Simulation and skills training are featured in three reports. Two items examine assessment tools for AI literacy and clinical documentation feedback.</p>
-<p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
+<p>DeepSeek-R1 has shown higher accuracy than GPT-4o on pediatric medical questions, but performance variability across test runs highlights a need for greater model stability before wider clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[1]</a>. Locally deployed language models are increasingly applied to automate creation of case-based learning materials in obstetrics and gynecology, although human clinician review remains necessary to ensure both factual correctness and nuance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[2]</a>. Integration of artificial intelligence with gamification is gaining attention as a way to personalize medical education and foster engagement, but supporting evidence for combined effects still requires further study <a href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Survey data on medical students&#x27; use of DeepSeek shed light on prevailing attitudes and learning interests as generative models become more common in classrooms <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[5]</a>. There is a growing focus on how generative AI enhances clinical skills training, alongside attention to ethical and practical constraints <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[4]</a>.</p>
+<p>Also this week: six new papers address teaching and curriculum, and four examine attitudes and adoption of artificial intelligence in medical education. There are two studies on simulation and skills, including integration of 3D printing with AI for teaching scoliosis. Assessment and feedback topics include a retrospective study on AI-augmented teacher feedback for clinical documentation.</p>
+<p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -345,27 +345,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Academic publishing and tenure incentive structures enable proliferation of low-quality AI-generated content in scholarship, requiring systemic reform.</p>
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-2258401562.jpg?itok=3EaGdXAq" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Readiness and Knowledge of Medical Students and Staff in the UAE Toward the Integration of Artificial Intelligence in Medicine</a>
-        <p class="news-card-summary">Study examines medical students&#x27; and staff readiness to integrate artificial intelligence into clinical practice in the UAE, identifying training gaps and barriers to curriculum adoption.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Performance evaluation of five major large language models in tuberculosis Q&amp;A systems: A multidimensional assessment of readability, quality, and reliability</a>
-        <p class="news-card-summary">Comparative evaluation of five large language models for tuberculosis education shows model type significantly affects text quality and readability in AI-assisted health education.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436873?fc=20260609215449&amp;ff=20260712095756&amp;v=2.20.0">Agentic artificial intelligence in medicine and biomedical research: A primer and framework for clinicians and researchers</a>
-        <p class="news-card-summary">Primer and framework for clinicians and researchers on agentic artificial intelligence applications in medicine and biomedical research.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -759,15 +738,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>The release of Biomni, an AI system designed to assist with biomedical research, marks an advance toward integrating AI as a collaborative partner for faculty and researchers <a href="https://www.nature.com/articles/d41591-026-00037-z">[3]</a>. Meanwhile, new studies on the limits of reliability and techniques for manipulating model behavior highlight ongoing challenges in both model performance and safety, with research showing a fundamental ceiling for generative task reliability and vulnerabilities in model alignment <a href="https://arxiv.org/abs/2607.14112">[1]</a> <a href="https://arxiv.org/abs/2607.14147">[2]</a>. The launch of Kimi K3, a large-scale open-weight language model, underscores industry trends toward increased transparency and power in model development, with its performance assessed against emerging benchmarks <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[4]</a>. Recent open-weight model releases such as Inkling and Soofi S draw attention to competition in model architecture for multilingual and specialized applications <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[6]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[9]</a>.</p>
-<p>Also this week: the section holds four new model releases, two safety and reliability studies, one paper on research methods, a benchmark comparison, and an industry policy ruling affecting platform access. NVIDIA’s Nemotron 3 Embed stands out for achieving top benchmark performance in agentic retrieval applications.</p>
+<p>A mechanistic study analyzing jailbreak attacks on aligned language models highlights how models may switch to compliance while still carrying traces of harmful representations, raising questions about the formation of output decisions and vulnerabilities in model alignment strategies <a href="https://arxiv.org/abs/2607.14147">[3]</a>. Another foundational thread is a theoretical analysis establishing information limits for reliability and scaling in generative tasks, suggesting there are ceilings for model performance set by the uncertainty in their output contexts <a href="https://arxiv.org/abs/2607.14112">[2]</a>. The landscape of open models continues to expand, with major releases such as a 975-billion-parameter open-weights model and a 30-billion-parameter multilingual model topping benchmarks, reflecting ongoing innovation in language model accessibility and evaluation <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[7]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[10]</a>. Meanwhile, frameworks like LM Studio Bionic aim to streamline deployment and orchestration of open-weight models for wider computational use <a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic">[6]</a>.</p>
+<p>Also this week: five new model releases highlight current trends in scaling, accessibility, and multilingual capabilities, including the announcement of Kimi K3 with a planned open-weight release <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[5]</a>. There are two items on safety and reliability, one on benchmarking, one on research methods, and a report on Google’s EU antitrust ruling affecting Android and Search platforms.</p>
 <p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 19, 2026</span></div>
+        <a class="news-card-title" href="https://github.com/openai/codex/pull/33972/files">OpenAI reduces Codex Model Context Size from 372k to 272k</a>
+        <p class="news-card-summary">OpenAI reduced the maximum context window for the Codex model from 372k to 272k tokens.</p>
+      </div>
+      <img class="news-card-thumb" src="https://avatars.githubusercontent.com/u/244841968?s=400&amp;v=4" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
