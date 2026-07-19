@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -351,34 +351,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0">Prompt Framing and Evidence Requirements for AI-Generated Educational Responses in Dental Education: An Experimental Study</a>
         <p class="news-card-summary">Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Application Effectiveness Analysis of Artificial Intelligence-assisted Teaching in Standardized Training for Medical Imaging Residents</a>
-        <p class="news-card-summary">Randomized controlled trial shows AI-assisted teaching combined with expert-led sessions improves radiology residents&#x27; diagnostic performance and clinical reasoning more than either method alone.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42435734?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Artificial Intelligence in Dental Education: Overview of Teaching, Assessment and Academic Performance Prediction</a>
-        <p class="news-card-summary">Literature overview of artificial intelligence applications in dental education, examining impact on teaching, assessment, and prediction of academic performance.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42435465?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Aspects of the use of artificial intelligence in medical education: Results of a cross-sectional survey conducted at Bogomolets national medical university</a>
-        <p class="news-card-summary">Cross-sectional survey at a Ukrainian medical university documents normalization of AI in academic practice as cognitive extension while identifying risks of reduced autonomy and ethical challenges.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 11, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&amp;ff=20260712024714&amp;v=2.20.0">Mapping artificial intelligence integration in objective structured clinical examinations: A scoping review</a>
-        <p class="news-card-summary">Scoping review mapping artificial intelligence applications in objective structured clinical examinations for assessment of clinical competence.</p>
       </div>
     </div>
     </div>
