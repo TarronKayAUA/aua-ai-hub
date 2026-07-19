@@ -19894,6 +19894,27 @@
    "first_seen": "2026-07-18T21:07:24.641809+00:00",
    "kept": false,
    "reason": "personal comparison of local model with commercial product, no news or analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uzzecz/kimi_k3_ranks_1_on_afterquerys_spreadsheetbench_2",
+   "title_hash": "59c1ee3eb0d8c6f22628e07002cc88d5",
+   "first_seen": "2026-07-19T03:56:57.443668+00:00",
+   "kept": false,
+   "reason": "benchmark claim from Reddit forum without independent verification or primary source"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uziqyt/kimi_moment_i_think_the_writing_is_on_the_wall",
+   "title_hash": "07abf4e5f12ba5faee456b5f2a1d5cce",
+   "first_seen": "2026-07-19T03:56:57.443668+00:00",
+   "kept": false,
+   "reason": "speculation and opinion from forum user, not substantive news or analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uQ2Hqg5MZ-8",
+   "title_hash": "cd6e829594c16f555178a180ab8f4f0c",
+   "first_seen": "2026-07-19T03:56:57.443668+00:00",
+   "kept": false,
+   "reason": "news roundup video with speculation and rumor framing as primary content rather than substantive coverage of real developments"
   }
  ],
  "digests": [
