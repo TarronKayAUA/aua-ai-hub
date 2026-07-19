@@ -20064,6 +20064,27 @@
    "score": 2.0,
    "thumbnail": "https://avatars.githubusercontent.com/u/244841968?s=400&v=4",
    "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+   "title_hash": "9dd3fef63105d9e1e648fc2fcfe6cf7b",
+   "first_seen": "2026-07-19T21:09:01.087978+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0t1g2/please_qwen_can_we_have_more_3x35ba3b_please",
+   "title_hash": "78fb1267b2c694e9ee5de16d9669ab72",
+   "first_seen": "2026-07-19T21:09:01.087978+00:00",
+   "kept": false,
+   "reason": "community meta-discussion with no substantive news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=AopewjYV1Ho",
+   "title_hash": "2835e405e1544e99aee372a4e5becb46",
+   "first_seen": "2026-07-19T21:09:01.087978+00:00",
+   "kept": false,
+   "reason": "marketing and celebration content without technical or educational substance"
   }
  ],
  "digests": [
