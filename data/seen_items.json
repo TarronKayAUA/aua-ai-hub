@@ -20085,6 +20085,233 @@
    "first_seen": "2026-07-19T21:09:01.087978+00:00",
    "kept": false,
    "reason": "marketing and celebration content without technical or educational substance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15380",
+   "title_hash": "9f268cacb6f52f756d74f71fc2cf5a5d",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": true,
+   "title": "Large Language Models as Unified Multimodal Learners for Clinical Prediction",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-20T04:00:00+00:00",
+   "summary": "Researchers developed a unified multimodal language model that combines free-text clinical narratives with structured measurements from electronic health records for clinical prediction tasks.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15495",
+   "title_hash": "b77e542123ae3e4b4945af451f206c17",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow mechanistic research without broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15498",
+   "title_hash": "d7fe8dd2501da97d21f2890cd037ac22",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow infrastructure optimization without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15544",
+   "title_hash": "1d102b54c3e72e2794eb654c5da57d35",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": true,
+   "title": "EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-20T04:00:00+00:00",
+   "summary": "Researchers developed an agentic system to generate clear, grounded public health narratives from epidemiological projections for policymakers and the general public.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15557",
+   "title_hash": "9cba58e5b573dff60dd33e04f1d39609",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow ecosystem evaluation without broad significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15610",
+   "title_hash": "517aed2db3309156d6ea81bbaadae056",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow reinforcement learning method without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15648",
+   "title_hash": "79d2775a74d0c470d2c7836137d31d39",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow dialogue system component outside medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15655",
+   "title_hash": "7e72182c02be06ed725a7026445fff36",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow decoding optimization without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15736",
+   "title_hash": "91d8235039e8d3c2f2e65c7cfce67dcb",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow distillation method without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15766",
+   "title_hash": "3e24ac8bfbf4a03de281d3a5ad1a7044",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15829",
+   "title_hash": "626785a56da322a32698efa2c4295f0e",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": true,
+   "title": "Cost-efficient generative AI summarization for scalable automated essay scoring in educational assessment",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-20T04:00:00+00:00",
+   "summary": "A study proposes generative AI-assisted summarization to improve automated essay scoring by addressing transformer input-length limitations in long-form assessment.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15847",
+   "title_hash": "46edcbe81fac79c71a916239b6c4b575",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "language-specific NLP research without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15856",
+   "title_hash": "ddd25e935ec644e346d82742552ecd36",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "neuroscience research on language comprehension without AI development relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15861",
+   "title_hash": "bebf8ca02725edaf621d2d4b8a06856c",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow NLP research on toxicity detection outside medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15865",
+   "title_hash": "d240490c10534b6948944fe6be02c600",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow compiler infrastructure optimization without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15870",
+   "title_hash": "a2c71d98d8eb133ebcd47748a4fdd82a",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow NLP dataset analysis without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15879",
+   "title_hash": "277d55849e6e02e18577ccd92c8a2614",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "domain-specific application outside medicine and medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15893",
+   "title_hash": "8613352f1f620fb263c98eeb473c0bfb",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow mechanistic analysis of diffusion language models without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.15957",
+   "title_hash": "5262a28ec6b804d9702fc18efb06c9c7",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow conceptual analysis without actionable findings for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.16001",
+   "title_hash": "fb844028dbaf4b4c99824efb02abe5b0",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow prompt optimization method without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.16021",
+   "title_hash": "be32e50cff4bc31648df28a2e224c2f1",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow dialogue system component outside medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.16051",
+   "title_hash": "e2847b63aa6a35a417ce520c5ec60a9d",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "minor model release announcement with limited significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.16057",
+   "title_hash": "e3136f810999aa8f1ad11aa64769f449",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": true,
+   "title": "Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-20T04:00:00+00:00",
+   "summary": "A benchmark evaluated frontier language models on analytical knowledge work tasks across business disciplines, measuring capabilities beyond factual recall and coding.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.16072",
+   "title_hash": "5afd0fa1ff3774cfbe1623d8296b19e8",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow analysis of transformer failure mode without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.16085",
+   "title_hash": "9731300532e84a7c016af0fd09882e5b",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "narrow language processing application outside medical context"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/20/sam-altman",
+   "title_hash": "a3191cf01231c0a075e910ffc5cd6ac6",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "historical quote with no current development or news value"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker",
+   "title_hash": "ef5dbfe8fddedc6d6923cffcd0f98b95",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": true,
+   "title": "HuggingFace security incident report: \"the attacker was bound by no usage policy, while our own forensic work was blocked by the guardrails\"",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-19T19:00:20+00:00",
+   "summary": "HuggingFace reported a production security incident driven end-to-end by an autonomous AI agent system, detected and analyzed primarily with AI-assisted methods.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://external-preview.redd.it/tLa80cLashFk8b1qvSyhZgFagKqpQuDcINxc0lC5Ebw.png?width=640&crop=smart&auto=webp&s=6fe429dfc13f9591a4f1976d5a7ce567c412231c",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://ollama.com/blog/all-aboard-open-models",
+   "title_hash": "0dfec0cf444209875582a496b85974ce",
+   "first_seen": "2026-07-20T04:06:25.878332+00:00",
+   "kept": false,
+   "reason": "link aggregation without substantive content or news value"
   }
  ],
  "digests": [
@@ -20221,19 +20448,19 @@
  "last_digest_at": "2026-07-17T03:40:17.932462+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "DeepSeek-R1 has shown higher accuracy than GPT-4o on pediatric medical questions, but performance variability across test runs highlights a need for greater model stability before wider clinical use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[1]</a>. Locally deployed language models are increasingly applied to automate creation of case-based learning materials in obstetrics and gynecology, although human clinician review remains necessary to ensure both factual correctness and nuance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[2]</a>. Integration of artificial intelligence with gamification is gaining attention as a way to personalize medical education and foster engagement, but supporting evidence for combined effects still requires further study <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[3]</a>. Survey data on medical students&#x27; use of DeepSeek shed light on prevailing attitudes and learning interests as generative models become more common in classrooms <a href=\"https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0\">[5]</a>. There is a growing focus on how generative AI enhances clinical skills training, alongside attention to ethical and practical constraints <a href=\"https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0\">[4]</a>.\n\nAlso this week: six new papers address teaching and curriculum, and four examine attitudes and adoption of artificial intelligence in medical education. There are two studies on simulation and skills, including integration of 3D printing with AI for teaching scoliosis. Assessment and feedback topics include a retrospective study on AI-augmented teacher feedback for clinical documentation.",
-   "hash": "4761fc091af1ee84",
-   "date": "July 19, 2026"
+   "text": "Automated assessment tools and generative AI models are reshaping medical education, with several studies evaluating their accuracy and practical integration. Locally deployed large language models now support case-based learning in obstetrics and gynecology, but require continuous oversight by clinicians to ensure quality and relevance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[3]</a>. Comparative testing on pediatric questions shows DeepSeek-R1 performs more accurately than GPT-4o, though both systems lack stable consistency, raising concerns for clinical reliability <a href=\"https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[2]</a>. AI-powered platforms are also being validated for clinical documentation feedback and breast cancer diagnostic training, demonstrating promise for improving skill acquisition and assessment processes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[10]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[11]</a>. The expansion of generative AI in clinical skills training underscores ethical and implementation challenges being addressed by new pedagogical frameworks <a href=\"https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0\">[5]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0\">[14]</a>.\n\nAlso this week: five items review teaching and curriculum development, including a virtual simulation system for medical imaging education and a cost-efficient approach to automated essay scoring. Studies cover technology adoption attitudes among students and residents, three assessment-related papers, and ongoing debates about professional readiness and gaps in AI knowledge.",
+   "hash": "acab9dc53b1da8fd",
+   "date": "July 20, 2026"
   },
   "clinical_practice": {
-   "text": "A new government pilot program is testing artificial intelligence for automated prior authorization in insurance coverage, raising important questions about clinical workflow and administrative processes <a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">[1]</a>. In critical care settings, recent studies have reviewed and advanced reinforcement learning techniques to support treatment decisions for sepsis and manage temporal coagulation balance, with models generating state-guided clinical suggestions to optimize interventions <a href=\"https://www.nature.com/articles/s41746-026-03034-1\">[2]</a> <a href=\"https://www.nature.com/articles/s41746-026-03039-w\">[8]</a>. Researchers are also mapping the research landscape for robot-assisted reconstructive and plastic surgery, identifying evidence gaps that may inform future clinical AI investment <a href=\"https://www.nature.com/articles/s41746-026-03004-7\">[3]</a>. On the governance front, machine unlearning techniques are now being positioned as necessary tools to address the challenges of data retention and model accountability in clinical AI systems <a href=\"https://www.nature.com/articles/s41746-026-03050-1\">[4]</a>. These efforts are paralleled by broader commentary highlighting the need for stronger health systems to prevent AI from amplifying existing healthcare inequalities <a href=\"https://www.nature.com/articles/s41746-026-03041-2\">[10]</a>.\n\nAlso this week: eight studies evaluate AI safety and clinical effectiveness, four items present decision support applications, and the section includes topics spanning patient-facing screening, benchmarking of clinical analytics infrastructure, and new research in imaging and diagnostics.",
-   "hash": "a72e56e164ec0b36",
-   "date": "July 18, 2026"
+   "text": "The pilot program using artificial intelligence for prior authorization automates insurance coverage decisions and has sparked debate over the clinical and administrative effects in medical practice <a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">[3]</a>. Advances in clinical prediction are highlighted by unified multimodal language models that synthesize free-text narratives and structured electronic health record data <a href=\"https://arxiv.org/abs/2607.15380\">[1]</a>. Researchers have mapped evidence gaps in robot-assisted reconstructive and plastic surgery, clarifying areas of strength and need within current literature <a href=\"https://www.nature.com/articles/s41746-026-03004-7\">[5]</a>. Governance remains a concern for clinical AI systems, with machine unlearning proposed as an approach to manage data retention and accountability <a href=\"https://www.nature.com/articles/s41746-026-03050-1\">[6]</a>. Reinforcement learning methods have been surveyed in sepsis treatment, aiming to refine clinical intervention strategies via machine learning <a href=\"https://www.nature.com/articles/s41746-026-03034-1\">[4]</a>.\n\nAlso this week: eight new model releases focus on safety and evaluation, clinical decision support, and patient-facing tools. Five papers provide assessment comparisons, while individualized prediction and automated diagnostics are demonstrated with EEG-based craving models and deep learning spinal measurement, respectively.",
+   "hash": "2e9896659c60178b",
+   "date": "July 20, 2026"
   },
   "general_ai": {
-   "text": "A mechanistic study analyzing jailbreak attacks on aligned language models highlights how models may switch to compliance while still carrying traces of harmful representations, raising questions about the formation of output decisions and vulnerabilities in model alignment strategies <a href=\"https://arxiv.org/abs/2607.14147\">[3]</a>. Another foundational thread is a theoretical analysis establishing information limits for reliability and scaling in generative tasks, suggesting there are ceilings for model performance set by the uncertainty in their output contexts <a href=\"https://arxiv.org/abs/2607.14112\">[2]</a>. The landscape of open models continues to expand, with major releases such as a 975-billion-parameter open-weights model and a 30-billion-parameter multilingual model topping benchmarks, reflecting ongoing innovation in language model accessibility and evaluation <a href=\"https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german\">[7]</a> <a href=\"https://thinkingmachines.ai/news/introducing-inkling\">[10]</a>. Meanwhile, frameworks like LM Studio Bionic aim to streamline deployment and orchestration of open-weight models for wider computational use <a href=\"https://lmstudio.ai/blog/introducing-lm-studio-bionic\">[6]</a>.\n\nAlso this week: five new model releases highlight current trends in scaling, accessibility, and multilingual capabilities, including the announcement of Kimi K3 with a planned open-weight release <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[5]</a>. There are two items on safety and reliability, one on benchmarking, one on research methods, and a report on Google’s EU antitrust ruling affecting Android and Search platforms.",
-   "hash": "743f7a5334a2e499",
-   "date": "July 19, 2026"
+   "text": "New research underscores a fundamental limit in language model reliability, showing that every generative task has an information-theoretic ceiling beyond which model accuracy cannot improve, with gaps defined by output uncertainty from context <a href=\"https://arxiv.org/abs/2607.14112\">[3]</a>. Meanwhile, a study of prefill jailbreak attacks reveals that even when aligned models comply with prompts, harmful representations persist internally, indicating that failures arise in output decisions rather than content encoding <a href=\"https://arxiv.org/abs/2607.14147\">[4]</a>. In model development, the German AI consortium has released Soofi S, a 30-billion-parameter open-weight model leading benchmarks in both English and German, reflecting ongoing advances in publicly accessible models <a href=\"https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german\">[8]</a>. Moonshot AI introduced Kimi K3, a 2.8 trillion parameter model, with open weights scheduled for future release; the case-grounded benchmark of frontier models on business analytical tasks further examines capabilities beyond standard coding and recall <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[6]</a> <a href=\"https://arxiv.org/abs/2607.16057\">[1]</a>.\n\nAlso this week: eight new model releases, two benchmarks and evaluation updates, and two items centered on safety and reliability. One paper explores the use of AI agents in biomedical research; another covers EU antitrust action requiring Google to provide wider platform access to rival AI assistants.",
+   "hash": "bc50a274b3c2eba2",
+   "date": "July 20, 2026"
   }
  },
  "opportunity_snapshot": {

@@ -13,14 +13,29 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A mechanistic study analyzing jailbreak attacks on aligned language models highlights how models may switch to compliance while still carrying traces of harmful representations, raising questions about the formation of output decisions and vulnerabilities in model alignment strategies <a href="https://arxiv.org/abs/2607.14147">[3]</a>. Another foundational thread is a theoretical analysis establishing information limits for reliability and scaling in generative tasks, suggesting there are ceilings for model performance set by the uncertainty in their output contexts <a href="https://arxiv.org/abs/2607.14112">[2]</a>. The landscape of open models continues to expand, with major releases such as a 975-billion-parameter open-weights model and a 30-billion-parameter multilingual model topping benchmarks, reflecting ongoing innovation in language model accessibility and evaluation <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[7]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[10]</a>. Meanwhile, frameworks like LM Studio Bionic aim to streamline deployment and orchestration of open-weight models for wider computational use <a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic">[6]</a>.</p>
-<p>Also this week: five new model releases highlight current trends in scaling, accessibility, and multilingual capabilities, including the announcement of Kimi K3 with a planned open-weight release <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[5]</a>. There are two items on safety and reliability, one on benchmarking, one on research methods, and a report on Google’s EU antitrust ruling affecting Android and Search platforms.</p>
-<p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the items below.</p>
+<p>New research underscores a fundamental limit in language model reliability, showing that every generative task has an information-theoretic ceiling beyond which model accuracy cannot improve, with gaps defined by output uncertainty from context <a href="https://arxiv.org/abs/2607.14112">[3]</a>. Meanwhile, a study of prefill jailbreak attacks reveals that even when aligned models comply with prompts, harmful representations persist internally, indicating that failures arise in output decisions rather than content encoding <a href="https://arxiv.org/abs/2607.14147">[4]</a>. In model development, the German AI consortium has released Soofi S, a 30-billion-parameter open-weight model leading benchmarks in both English and German, reflecting ongoing advances in publicly accessible models <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[8]</a>. Moonshot AI introduced Kimi K3, a 2.8 trillion parameter model, with open weights scheduled for future release; the case-grounded benchmark of frontier models on business analytical tasks further examines capabilities beyond standard coding and recall <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[6]</a> <a href="https://arxiv.org/abs/2607.16057">[1]</a>.</p>
+<p>Also this week: eight new model releases, two benchmarks and evaluation updates, and two items centered on safety and reliability. One paper explores the use of AI agents in biomedical research; another covers EU antitrust action requiring Google to provide wider platform access to rival AI assistants.</p>
+<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.16057">Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning</a>
+    <p class="news-card-summary">A benchmark evaluated frontier language models on analytical knowledge work tasks across business disciplines, measuring capabilities beyond factual recall and coding.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker">HuggingFace security incident report: &quot;the attacker was bound by no usage policy, while our own forensic work was blocked by the guardrails&quot;</a>
+    <p class="news-card-summary">HuggingFace reported a production security incident driven end-to-end by an autonomous AI agent system, detected and analyzed primarily with AI-assisted methods.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/tLa80cLashFk8b1qvSyhZgFagKqpQuDcINxc0lC5Ebw.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6fe429dfc13f9591a4f1976d5a7ce567c412231c" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 19, 2026</span></div>
@@ -122,21 +137,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">European Union antitrust ruling requires Google to grant rival AI assistants and search engines greater access to Android and Google Search platforms.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STK450_EU_E-2-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uxfu4k/google_is_updating_gemma_4s_chat_templates">Google is updating Gemma 4&#x27;s chat templates, bringing major fixes to tool calling and reducing &quot;laziness&quot;, and enabling Flash Attention 4 on Hopper GPUs, plus an interactive guide on how to work with and improve its vision!</a>
-    <p class="news-card-summary">Google updates Gemma 4 with fixes to tool calling, reduced latency, and Flash Attention 4 support on Hopper GPUs.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/9j0dofv61gdh1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=297238a83604eb277cd8f270d08df7e91d8b721b" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 15, 2026</span></div>
-    <a class="news-card-title" href="https://thinkingmachines.ai/news/introducing-inkling">Inkling: Our Open-Weights Model</a>
-    <p class="news-card-summary">Thinking Machines releases Inkling, an open-weights 975-billion-parameter language model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://thinkingmachines.ai/news/introducing-inkling/images/cover-social-inkling-post.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

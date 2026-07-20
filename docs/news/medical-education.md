@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>DeepSeek-R1 has shown higher accuracy than GPT-4o on pediatric medical questions, but performance variability across test runs highlights a need for greater model stability before wider clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[1]</a>. Locally deployed language models are increasingly applied to automate creation of case-based learning materials in obstetrics and gynecology, although human clinician review remains necessary to ensure both factual correctness and nuance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[2]</a>. Integration of artificial intelligence with gamification is gaining attention as a way to personalize medical education and foster engagement, but supporting evidence for combined effects still requires further study <a href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Survey data on medical students&#x27; use of DeepSeek shed light on prevailing attitudes and learning interests as generative models become more common in classrooms <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[5]</a>. There is a growing focus on how generative AI enhances clinical skills training, alongside attention to ethical and practical constraints <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[4]</a>.</p>
-<p>Also this week: six new papers address teaching and curriculum, and four examine attitudes and adoption of artificial intelligence in medical education. There are two studies on simulation and skills, including integration of 3D printing with AI for teaching scoliosis. Assessment and feedback topics include a retrospective study on AI-augmented teacher feedback for clinical documentation.</p>
-<p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the items below.</p>
+<p>Automated assessment tools and generative AI models are reshaping medical education, with several studies evaluating their accuracy and practical integration. Locally deployed large language models now support case-based learning in obstetrics and gynecology, but require continuous oversight by clinicians to ensure quality and relevance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Comparative testing on pediatric questions shows DeepSeek-R1 performs more accurately than GPT-4o, though both systems lack stable consistency, raising concerns for clinical reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[2]</a>. AI-powered platforms are also being validated for clinical documentation feedback and breast cancer diagnostic training, demonstrating promise for improving skill acquisition and assessment processes <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[10]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[11]</a>. The expansion of generative AI in clinical skills training underscores ethical and implementation challenges being addressed by new pedagogical frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0">[14]</a>.</p>
+<p>Also this week: five items review teaching and curriculum development, including a virtual simulation system for medical imaging education and a cost-efficient approach to automated essay scoring. Studies cover technology adoption attitudes among students and residents, three assessment-related papers, and ongoing debates about professional readiness and gaps in AI knowledge.</p>
+<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.15829">Cost-efficient generative AI summarization for scalable automated essay scoring in educational assessment</a>
+    <p class="news-card-summary">A study proposes generative AI-assisted summarization to improve automated essay scoring by addressing transformer input-length limitations in long-form assessment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 19, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42469353?fc=20260609215449&amp;ff=20260718022132&amp;v=2.20.0">Cross-cultural adaptation and psychometric evaluation of the Japanese version of the scale for the assessment of non-experts&#x27; AI literacy among medical trainees in a multicenter cross-sectional study</a>
     <p class="news-card-summary">Cross-cultural adaptation of an AI literacy assessment scale for medical trainees, with psychometric evaluation of the Japanese version.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42468505?fc=20260609215449&amp;ff=20260718022132&amp;v=2.20.0">Enhancing medical imaging teaching on scoliosis: Efficacy of learning method integrating 3D printing and artificial intelligence technologies</a>
-    <p class="news-card-summary">Integration of 3D printing and artificial intelligence into scoliosis teaching improves student comprehension, practical skills, and overall educational outcomes.</p>
   </div>
 </div>
 </div>

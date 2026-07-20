@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>DeepSeek-R1 has shown higher accuracy than GPT-4o on pediatric medical questions, but performance variability across test runs highlights a need for greater model stability before wider clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[1]</a>. Locally deployed language models are increasingly applied to automate creation of case-based learning materials in obstetrics and gynecology, although human clinician review remains necessary to ensure both factual correctness and nuance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[2]</a>. Integration of artificial intelligence with gamification is gaining attention as a way to personalize medical education and foster engagement, but supporting evidence for combined effects still requires further study <a href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Survey data on medical students&#x27; use of DeepSeek shed light on prevailing attitudes and learning interests as generative models become more common in classrooms <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[5]</a>. There is a growing focus on how generative AI enhances clinical skills training, alongside attention to ethical and practical constraints <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[4]</a>.</p>
-<p>Also this week: six new papers address teaching and curriculum, and four examine attitudes and adoption of artificial intelligence in medical education. There are two studies on simulation and skills, including integration of 3D printing with AI for teaching scoliosis. Assessment and feedback topics include a retrospective study on AI-augmented teacher feedback for clinical documentation.</p>
-<p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the source items.</p>
+<p>Automated assessment tools and generative AI models are reshaping medical education, with several studies evaluating their accuracy and practical integration. Locally deployed large language models now support case-based learning in obstetrics and gynecology, but require continuous oversight by clinicians to ensure quality and relevance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Comparative testing on pediatric questions shows DeepSeek-R1 performs more accurately than GPT-4o, though both systems lack stable consistency, raising concerns for clinical reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[2]</a>. AI-powered platforms are also being validated for clinical documentation feedback and breast cancer diagnostic training, demonstrating promise for improving skill acquisition and assessment processes <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[10]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[11]</a>. The expansion of generative AI in clinical skills training underscores ethical and implementation challenges being addressed by new pedagogical frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0">[14]</a>.</p>
+<p>Also this week: five items review teaching and curriculum development, including a virtual simulation system for medical imaging education and a cost-efficient approach to automated essay scoring. Studies cover technology adoption attitudes among students and residents, three assessment-related papers, and ongoing debates about professional readiness and gaps in AI knowledge.</p>
+<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.15829">Cost-efficient generative AI summarization for scalable automated essay scoring in educational assessment</a>
+        <p class="news-card-summary">A study proposes generative AI-assisted summarization to improve automated essay scoring by addressing transformer input-length limitations in long-form assessment.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 19, 2026</span></div>
@@ -346,27 +353,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-2258401562.jpg?itok=3EaGdXAq" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 12, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&amp;ff=20260713000220&amp;v=2.20.0">Prompt Framing and Evidence Requirements for AI-Generated Educational Responses in Dental Education: An Experimental Study</a>
-        <p class="news-card-summary">Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new government pilot program is testing artificial intelligence for automated prior authorization in insurance coverage, raising important questions about clinical workflow and administrative processes <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In critical care settings, recent studies have reviewed and advanced reinforcement learning techniques to support treatment decisions for sepsis and manage temporal coagulation balance, with models generating state-guided clinical suggestions to optimize interventions <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03039-w">[8]</a>. Researchers are also mapping the research landscape for robot-assisted reconstructive and plastic surgery, identifying evidence gaps that may inform future clinical AI investment <a href="https://www.nature.com/articles/s41746-026-03004-7">[3]</a>. On the governance front, machine unlearning techniques are now being positioned as necessary tools to address the challenges of data retention and model accountability in clinical AI systems <a href="https://www.nature.com/articles/s41746-026-03050-1">[4]</a>. These efforts are paralleled by broader commentary highlighting the need for stronger health systems to prevent AI from amplifying existing healthcare inequalities <a href="https://www.nature.com/articles/s41746-026-03041-2">[10]</a>.</p>
-<p>Also this week: eight studies evaluate AI safety and clinical effectiveness, four items present decision support applications, and the section includes topics spanning patient-facing screening, benchmarking of clinical analytics infrastructure, and new research in imaging and diagnostics.</p>
-<p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the source items.</p>
+<p>The pilot program using artificial intelligence for prior authorization automates insurance coverage decisions and has sparked debate over the clinical and administrative effects in medical practice <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[3]</a>. Advances in clinical prediction are highlighted by unified multimodal language models that synthesize free-text narratives and structured electronic health record data <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Researchers have mapped evidence gaps in robot-assisted reconstructive and plastic surgery, clarifying areas of strength and need within current literature <a href="https://www.nature.com/articles/s41746-026-03004-7">[5]</a>. Governance remains a concern for clinical AI systems, with machine unlearning proposed as an approach to manage data retention and accountability <a href="https://www.nature.com/articles/s41746-026-03050-1">[6]</a>. Reinforcement learning methods have been surveyed in sepsis treatment, aiming to refine clinical intervention strategies via machine learning <a href="https://www.nature.com/articles/s41746-026-03034-1">[4]</a>.</p>
+<p>Also this week: eight new model releases focus on safety and evaluation, clinical decision support, and patient-facing tools. Five papers provide assessment comparisons, while individualized prediction and automated diagnostics are demonstrated with EEG-based craving models and deep learning spinal measurement, respectively.</p>
+<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (20)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.15380">Large Language Models as Unified Multimodal Learners for Clinical Prediction</a>
+        <p class="news-card-summary">Researchers developed a unified multimodal language model that combines free-text clinical narratives with structured measurements from electronic health records for clinical prediction tasks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.15544">EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections</a>
+        <p class="news-card-summary">Researchers developed an agentic system to generate clear, grounded public health narratives from epidemiological projections for policymakers and the general public.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 18, 2026</span></div>
@@ -684,13 +698,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gPwI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c278069-5e85-4f84-8d76-23884fd0cc41_790x647.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09349">Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation</a>
-        <p class="news-card-summary">Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
@@ -731,15 +738,30 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A mechanistic study analyzing jailbreak attacks on aligned language models highlights how models may switch to compliance while still carrying traces of harmful representations, raising questions about the formation of output decisions and vulnerabilities in model alignment strategies <a href="https://arxiv.org/abs/2607.14147">[3]</a>. Another foundational thread is a theoretical analysis establishing information limits for reliability and scaling in generative tasks, suggesting there are ceilings for model performance set by the uncertainty in their output contexts <a href="https://arxiv.org/abs/2607.14112">[2]</a>. The landscape of open models continues to expand, with major releases such as a 975-billion-parameter open-weights model and a 30-billion-parameter multilingual model topping benchmarks, reflecting ongoing innovation in language model accessibility and evaluation <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[7]</a> <a href="https://thinkingmachines.ai/news/introducing-inkling">[10]</a>. Meanwhile, frameworks like LM Studio Bionic aim to streamline deployment and orchestration of open-weight models for wider computational use <a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic">[6]</a>.</p>
-<p>Also this week: five new model releases highlight current trends in scaling, accessibility, and multilingual capabilities, including the announcement of Kimi K3 with a planned open-weight release <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[5]</a>. There are two items on safety and reliability, one on benchmarking, one on research methods, and a report on Google’s EU antitrust ruling affecting Android and Search platforms.</p>
-<p class="section-brief-date">The picture as of July 19, 2026; numbered links go to the source items.</p>
+<p>New research underscores a fundamental limit in language model reliability, showing that every generative task has an information-theoretic ceiling beyond which model accuracy cannot improve, with gaps defined by output uncertainty from context <a href="https://arxiv.org/abs/2607.14112">[3]</a>. Meanwhile, a study of prefill jailbreak attacks reveals that even when aligned models comply with prompts, harmful representations persist internally, indicating that failures arise in output decisions rather than content encoding <a href="https://arxiv.org/abs/2607.14147">[4]</a>. In model development, the German AI consortium has released Soofi S, a 30-billion-parameter open-weight model leading benchmarks in both English and German, reflecting ongoing advances in publicly accessible models <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[8]</a>. Moonshot AI introduced Kimi K3, a 2.8 trillion parameter model, with open weights scheduled for future release; the case-grounded benchmark of frontier models on business analytical tasks further examines capabilities beyond standard coding and recall <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[6]</a> <a href="https://arxiv.org/abs/2607.16057">[1]</a>.</p>
+<p>Also this week: eight new model releases, two benchmarks and evaluation updates, and two items centered on safety and reliability. One paper explores the use of AI agents in biomedical research; another covers EU antitrust action requiring Google to provide wider platform access to rival AI assistants.</p>
+<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.16057">Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning</a>
+        <p class="news-card-summary">A benchmark evaluated frontier language models on analytical knowledge work tasks across business disciplines, measuring capabilities beyond factual recall and coding.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker">HuggingFace security incident report: &quot;the attacker was bound by no usage policy, while our own forensic work was blocked by the guardrails&quot;</a>
+        <p class="news-card-summary">HuggingFace reported a production security incident driven end-to-end by an autonomous AI agent system, detected and analyzed primarily with AI-assisted methods.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/tLa80cLashFk8b1qvSyhZgFagKqpQuDcINxc0lC5Ebw.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6fe429dfc13f9591a4f1976d5a7ce567c412231c" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 19, 2026</span></div>
@@ -1023,34 +1045,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Ars Technica explains how world models work, their current capabilities, and open questions in the field.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09328">WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning</a>
-        <p class="news-card-summary">WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09415">Self-Guided Test-Time Training for Long-Context LLMs</a>
-        <p class="news-card-summary">Self-guided test-time training method improves long-context language model performance by helping models better identify and use relevant evidence from long inputs.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09424">A Sovereign, Open-Source Foundation Model for German and English</a>
-        <p class="news-card-summary">Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.08780">Sticky Routing: Training MoE Models for Memory-Efficient Inference</a>
-        <p class="news-card-summary">Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new government pilot program is testing artificial intelligence for automated prior authorization in insurance coverage, raising important questions about clinical workflow and administrative processes <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[1]</a>. In critical care settings, recent studies have reviewed and advanced reinforcement learning techniques to support treatment decisions for sepsis and manage temporal coagulation balance, with models generating state-guided clinical suggestions to optimize interventions <a href="https://www.nature.com/articles/s41746-026-03034-1">[2]</a> <a href="https://www.nature.com/articles/s41746-026-03039-w">[8]</a>. Researchers are also mapping the research landscape for robot-assisted reconstructive and plastic surgery, identifying evidence gaps that may inform future clinical AI investment <a href="https://www.nature.com/articles/s41746-026-03004-7">[3]</a>. On the governance front, machine unlearning techniques are now being positioned as necessary tools to address the challenges of data retention and model accountability in clinical AI systems <a href="https://www.nature.com/articles/s41746-026-03050-1">[4]</a>. These efforts are paralleled by broader commentary highlighting the need for stronger health systems to prevent AI from amplifying existing healthcare inequalities <a href="https://www.nature.com/articles/s41746-026-03041-2">[10]</a>.</p>
-<p>Also this week: eight studies evaluate AI safety and clinical effectiveness, four items present decision support applications, and the section includes topics spanning patient-facing screening, benchmarking of clinical analytics infrastructure, and new research in imaging and diagnostics.</p>
-<p class="section-brief-date">The picture as of July 18, 2026; numbered links go to the items below.</p>
+<p>The pilot program using artificial intelligence for prior authorization automates insurance coverage decisions and has sparked debate over the clinical and administrative effects in medical practice <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[3]</a>. Advances in clinical prediction are highlighted by unified multimodal language models that synthesize free-text narratives and structured electronic health record data <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Researchers have mapped evidence gaps in robot-assisted reconstructive and plastic surgery, clarifying areas of strength and need within current literature <a href="https://www.nature.com/articles/s41746-026-03004-7">[5]</a>. Governance remains a concern for clinical AI systems, with machine unlearning proposed as an approach to manage data retention and accountability <a href="https://www.nature.com/articles/s41746-026-03050-1">[6]</a>. Reinforcement learning methods have been surveyed in sepsis treatment, aiming to refine clinical intervention strategies via machine learning <a href="https://www.nature.com/articles/s41746-026-03034-1">[4]</a>.</p>
+<p>Also this week: eight new model releases focus on safety and evaluation, clinical decision support, and patient-facing tools. Five papers provide assessment comparisons, while individualized prediction and automated diagnostics are demonstrated with EEG-based craving models and deep learning spinal measurement, respectively.</p>
+<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.15380">Large Language Models as Unified Multimodal Learners for Clinical Prediction</a>
+    <p class="news-card-summary">Researchers developed a unified multimodal language model that combines free-text clinical narratives with structured measurements from electronic health records for clinical prediction tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.15544">EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections</a>
+    <p class="news-card-summary">Researchers developed an agentic system to generate clear, grounded public health narratives from epidemiological projections for policymakers and the general public.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 18, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 16, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82230">Machine Learning, Augmented Traditional Analysis of Lactate vs Lactate-to-Albumin Ratio for Predicting Mortality Risk in Patients With Sepsis: Large-Scale Retrospective Study</a>
     <p class="news-card-summary">Machine learning analysis of lactate and lactate-to-albumin ratio for mortality risk prediction in sepsis patients using large-scale retrospective data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42460585?fc=20260609215449&amp;ff=20260716171756&amp;v=2.20.0">A Preliminary Approach to Fall Risk Assessment in Aged Care Facilities Using Generative AI Technologies</a>
-    <p class="news-card-summary">An approach using generative AI to assess fall risk in elderly residential aged care residents from unstructured electronic health record data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.13036">Ask Before You Diagnose: Safe-Psych, a Sequential Evaluation Benchmark for LLMs in Psychiatry</a>
-    <p class="news-card-summary">Safe-Psych benchmark evaluates whether large language models in psychiatry request clarification or abstain when given insufficient information rather than providing unsupported diagnoses.</p>
   </div>
 </div>
 </div>
