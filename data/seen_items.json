@@ -20365,6 +20365,88 @@
    "score": 3.0,
    "thumbnail": "https://i2.ytimg.com/vi/A61WYw5-FLM/hqdefault.jpg",
    "display_title": "Qwen 3.8 Max benchmark testing and comparison"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/against-the-instinct-to-act",
+   "title_hash": "07c412e1be8f6eff3f5a53e1696b5455",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+   "title_hash": "e43e76f6a1cf273d8e3b294415c3780b",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": true,
+   "title": "China delivers a one-two punch to America’s AI dominance",
+   "source": "The Verge AI",
+   "published": "2026-07-20T10:16:33+00:00",
+   "summary": "Chinese AI companies Moonshot and Alibaba released models claiming competitive performance with OpenAI and Anthropic at lower cost.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2286623351.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&ff=20260720071459&v=2.20.0",
+   "title_hash": "5bcdd715b981ffa9cec3001218391697",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": true,
+   "title": "Medical Students' Attitudes, Perceptions, and Self-Reported Familiarity With Artificial Intelligence in Healthcare: A Systematic Review and Meta-Analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-20T10:00:00+00:00",
+   "summary": "Systematic review finds medical students hold broadly favorable attitudes toward artificial intelligence in healthcare, though estimates vary substantially across studies.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42473401?fc=20260609215449&ff=20260720071459&v=2.20.0",
+   "title_hash": "989d13cc875ba71b670685d8ba068983",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42473329?fc=20260609215449&ff=20260720071459&v=2.20.0",
+   "title_hash": "43e1b262a3437d7e52cb8dd42ad0421e",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance for medical education or clinical practice"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans",
+   "title_hash": "46ec6fe2c8b6e94fdccc9162130d400e",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": true,
+   "title": "AI is more likely than humans to form biases when hiring",
+   "source": "MIT Technology Review AI",
+   "published": "2026-07-20T08:39:01+00:00",
+   "summary": "Research shows large language models can develop hiring biases independently of training data, raising fairness concerns for employment screening.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/ai-slant1b.jpg?resize=1200,600",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03048-9",
+   "title_hash": "ef953f0613c6456c048db8d2e83caafb",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": true,
+   "title": "A multimodal evidence-driven framework for clinical decision support in cognitive impairment",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-20T00:00:00+00:00",
+   "summary": "Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9LfJq4xXifg",
+   "title_hash": "2321da4ebdde64c730296614089ab1fa",
+   "first_seen": "2026-07-20T11:14:59.239700+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
@@ -20501,13 +20583,13 @@
  "last_digest_at": "2026-07-17T03:40:17.932462+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Automated assessment tools and generative AI models are reshaping medical education, with several studies evaluating their accuracy and practical integration. Locally deployed large language models now support case-based learning in obstetrics and gynecology, but require continuous oversight by clinicians to ensure quality and relevance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[3]</a>. Comparative testing on pediatric questions shows DeepSeek-R1 performs more accurately than GPT-4o, though both systems lack stable consistency, raising concerns for clinical reliability <a href=\"https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[2]</a>. AI-powered platforms are also being validated for clinical documentation feedback and breast cancer diagnostic training, demonstrating promise for improving skill acquisition and assessment processes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[10]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[11]</a>. The expansion of generative AI in clinical skills training underscores ethical and implementation challenges being addressed by new pedagogical frameworks <a href=\"https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0\">[5]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0\">[14]</a>.\n\nAlso this week: five items review teaching and curriculum development, including a virtual simulation system for medical imaging education and a cost-efficient approach to automated essay scoring. Studies cover technology adoption attitudes among students and residents, three assessment-related papers, and ongoing debates about professional readiness and gaps in AI knowledge.",
-   "hash": "acab9dc53b1da8fd",
+   "text": "DeepSeek-R1 demonstrated accuracy advantages over GPT-4o in answering pediatric medical questions, although results fluctuated between testing runs, raising reliability concerns for clinical use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[3]</a>. Medical students and residents continue to show broadly favorable attitudes toward artificial intelligence in healthcare, yet systematic reviews and surveys reveal significant knowledge gaps and varying familiarity, underscoring the importance of formal AI education and training programs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0\">[1]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0\">[13]</a>. Locally deployed large language models have been validated for automating case-based learning in obstetrics and gynecology, but human oversight remains essential to address accuracy and nuance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[4]</a>. Research on integrating AI with gamification points to personalized learning as a future direction but highlights limited evidence on effectiveness so far <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[5]</a>.\n\nAlso this week: eight new model releases, five papers on assessment, and five investigations into how AI influences teaching curricula and clinical skills. A framework for responsible AI integration is outlined in the PEPCAL resource, while studies document technology anxiety among nursing students and the expansion of virtual simulation in medical imaging education.",
+   "hash": "22c53cab33ce6301",
    "date": "July 20, 2026"
   },
   "clinical_practice": {
-   "text": "A unified multimodal language model now merges text narratives and structured electronic health record measurements to improve clinical prediction accuracy, potentially supporting nuanced decision-making in patient care <a href=\"https://arxiv.org/abs/2607.15380\">[1]</a>. Research on guideline-concordant recommendations for diabetic kidney disease management demonstrates how retrieval-augmented models can contribute to safer, evidence-based clinical guidance <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[4]</a>. Model-assisted reasoning for atrial fibrillation management adds further focus to domain-specific application of artificial intelligence <a href=\"https://www.nature.com/articles/s41746-026-03038-x\">[5]</a>. Meanwhile, benchmarking studies are identifying performance metrics for interoperability analytics tools, which could inform clinical documentation and big data research workflows <a href=\"https://medinform.jmir.org/2026/1/e82924\">[10]</a>. Comparisons between human evaluators and language-model judges raise questions about scaling assessment of generative AI outputs in global health contexts <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[3]</a>.\n\nAlso this week: there are seven new studies addressing safety and evaluation, alongside five items targeting clinical decision support. Two tools are highlighted for patient-facing uses and a paper investigates documentation improvements. Notably, biosignal-driven screening during virtual human conversations and machine unlearning for governance of clinical AI systems are among the developments captured.",
-   "hash": "1cfdef4d622282a9",
+   "text": "The application of large language models continues to advance clinical decision support, including a unified multimodal model that integrates free-text clinical narratives and structured electronic health record measurements to improve clinical prediction tasks <a href=\"https://arxiv.org/abs/2607.15380\">[1]</a>. Safety and evaluation remain central, as recent work compares human and language model-based assessment of generative AI tools in global health, aiming for scalable evaluation processes <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[3]</a>. Retrieval-augmented models are also generating guideline-concordant recommendations for diabetic kidney disease management, reflecting efforts to align AI outputs with established clinical guidelines <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[4]</a>. Researchers have introduced domain-aware agents for atrial fibrillation management, illustrating knowledge enhancements designed to support complex clinical scenarios <a href=\"https://www.nature.com/articles/s41746-026-03038-x\">[5]</a>. AI frameworks are increasingly evidence-driven in support of diagnostic decisions, such as cognitive impairment assessment <a href=\"https://www.nature.com/articles/s41746-026-03048-9\">[6]</a>.\n\nAlso this week: six new clinical decision support studies, six items on safety and evaluation, two research efforts on patient-facing tools, and one new approach for clinical documentation. Specific releases include a systematic review of robot-assisted surgery research and a benchmarking study of analytics tools for electronic health records.",
+   "hash": "c6fd0dbc37957608",
    "date": "July 20, 2026"
   },
   "general_ai": {

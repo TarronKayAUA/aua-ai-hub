@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Automated assessment tools and generative AI models are reshaping medical education, with several studies evaluating their accuracy and practical integration. Locally deployed large language models now support case-based learning in obstetrics and gynecology, but require continuous oversight by clinicians to ensure quality and relevance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Comparative testing on pediatric questions shows DeepSeek-R1 performs more accurately than GPT-4o, though both systems lack stable consistency, raising concerns for clinical reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[2]</a>. AI-powered platforms are also being validated for clinical documentation feedback and breast cancer diagnostic training, demonstrating promise for improving skill acquisition and assessment processes <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[10]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[11]</a>. The expansion of generative AI in clinical skills training underscores ethical and implementation challenges being addressed by new pedagogical frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0">[14]</a>.</p>
-<p>Also this week: five items review teaching and curriculum development, including a virtual simulation system for medical imaging education and a cost-efficient approach to automated essay scoring. Studies cover technology adoption attitudes among students and residents, three assessment-related papers, and ongoing debates about professional readiness and gaps in AI knowledge.</p>
+<p>DeepSeek-R1 demonstrated accuracy advantages over GPT-4o in answering pediatric medical questions, although results fluctuated between testing runs, raising reliability concerns for clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Medical students and residents continue to show broadly favorable attitudes toward artificial intelligence in healthcare, yet systematic reviews and surveys reveal significant knowledge gaps and varying familiarity, underscoring the importance of formal AI education and training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[13]</a>. Locally deployed large language models have been validated for automating case-based learning in obstetrics and gynecology, but human oversight remains essential to address accuracy and nuance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[4]</a>. Research on integrating AI with gamification points to personalized learning as a future direction but highlights limited evidence on effectiveness so far <a href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment, and five investigations into how AI influences teaching curricula and clinical skills. A framework for responsible AI integration is outlined in the PEPCAL resource, while studies document technology anxiety among nursing students and the expansion of virtual simulation in medical imaging education.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">Medical Students&#x27; Attitudes, Perceptions, and Self-Reported Familiarity With Artificial Intelligence in Healthcare: A Systematic Review and Meta-Analysis</a>
+        <p class="news-card-summary">Systematic review finds medical students hold broadly favorable attitudes toward artificial intelligence in healthcare, though estimates vary substantially across studies.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
@@ -358,14 +365,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A unified multimodal language model now merges text narratives and structured electronic health record measurements to improve clinical prediction accuracy, potentially supporting nuanced decision-making in patient care <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Research on guideline-concordant recommendations for diabetic kidney disease management demonstrates how retrieval-augmented models can contribute to safer, evidence-based clinical guidance <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Model-assisted reasoning for atrial fibrillation management adds further focus to domain-specific application of artificial intelligence <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. Meanwhile, benchmarking studies are identifying performance metrics for interoperability analytics tools, which could inform clinical documentation and big data research workflows <a href="https://medinform.jmir.org/2026/1/e82924">[10]</a>. Comparisons between human evaluators and language-model judges raise questions about scaling assessment of generative AI outputs in global health contexts <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>.</p>
-<p>Also this week: there are seven new studies addressing safety and evaluation, alongside five items targeting clinical decision support. Two tools are highlighted for patient-facing uses and a paper investigates documentation improvements. Notably, biosignal-driven screening during virtual human conversations and machine unlearning for governance of clinical AI systems are among the developments captured.</p>
+<p>The application of large language models continues to advance clinical decision support, including a unified multimodal model that integrates free-text clinical narratives and structured electronic health record measurements to improve clinical prediction tasks <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Safety and evaluation remain central, as recent work compares human and language model-based assessment of generative AI tools in global health, aiming for scalable evaluation processes <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>. Retrieval-augmented models are also generating guideline-concordant recommendations for diabetic kidney disease management, reflecting efforts to align AI outputs with established clinical guidelines <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Researchers have introduced domain-aware agents for atrial fibrillation management, illustrating knowledge enhancements designed to support complex clinical scenarios <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. AI frameworks are increasingly evidence-driven in support of diagnostic decisions, such as cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[6]</a>.</p>
+<p>Also this week: six new clinical decision support studies, six items on safety and evaluation, two research efforts on patient-facing tools, and one new approach for clinical documentation. Specific releases include a systematic review of robot-assisted surgery research and a benchmarking study of analytics tools for electronic health records.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 55 items"
+??? abstract "Show the 56 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (22)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (23)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -400,6 +407,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03038-x">A knowledge-enhanced domain-aware large language model agent for atrial fibrillation management</a>
         <p class="news-card-summary">Knowledge-enhanced language model agent assists with atrial fibrillation management using domain-aware reasoning.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03048-9">A multimodal evidence-driven framework for clinical decision support in cognitive impairment</a>
+        <p class="news-card-summary">Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -764,10 +778,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">China delivers a one-two punch to America’s AI dominance</a>
+        <p class="news-card-summary">Chinese AI companies Moonshot and Alibaba released models claiming competitive performance with OpenAI and Anthropic at lower cost.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2286623351.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">AI is more likely than humans to form biases when hiring</a>
+        <p class="news-card-summary">Research shows large language models can develop hiring biases independently of training data, raising fairness concerns for employment screening.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/ai-slant1b.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
@@ -1066,13 +1096,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Ars Technica explains how world models work, their current capabilities, and open questions in the field.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uu8d1v/xiaomi_quietly_uploaded_mimov25dflash_official">Xiaomi quietly uploaded MiMo-V2.5-DFlash, official DFlash weights are now on Hugging Face</a>
-        <p class="news-card-summary">Xiaomi released open-weight MiMo-V2.5-DFlash model on Hugging Face, a 300-billion-parameter model optimized for local inference on consumer hardware.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
