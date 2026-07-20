@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
@@ -317,41 +317,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An augmented reality system integrates a fine-tuned medical large language model with AR glasses to support medical education on resource-constrained devices.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438556?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Improving Medical Assessment Validity with Generative AI: Lessons from Human-AI Interaction in Bloom&#x27;s Taxonomy Classification</a>
-        <p class="news-card-summary">Research develops and validates a generative AI tool to help educators classify assessment items by Bloom&#x27;s Taxonomy level.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438541?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Expanding the Roles of Medical Educators in the Generative Artificial Intelligence Era: A Qualitative Study</a>
-        <p class="news-card-summary">Qualitative study explores how medical educators perceive their professional roles evolving in response to generative AI integration.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438538?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">A Student-Centered Approach Towards Implementing Large Language Models (LLMs) in Medical Education</a>
-        <p class="news-card-summary">Study examines medical students&#x27; self-reported experiences with large language models and expectations for their integration into education.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438518?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Can Generative Artificial Intelligence Reliably Score Open-Ended Question Assessments in Undergraduate Medical Education?</a>
-        <p class="news-card-summary">Study evaluates whether generative AI can accurately score open-ended question assessments in undergraduate medical education.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42438508?fc=20260609215449&amp;ff=20260713073036&amp;v=2.20.0">Eleven Tips for Designing and Implementing Responsible AI Use in Health Professions Education Courses</a>
-        <p class="news-card-summary">Practical guide offers eleven evidence-informed tips for educators designing and implementing responsible AI use in health professions courses.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 13, 2026</span></div>
@@ -365,14 +330,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>The application of large language models continues to advance clinical decision support, including a unified multimodal model that integrates free-text clinical narratives and structured electronic health record measurements to improve clinical prediction tasks <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Safety and evaluation remain central, as recent work compares human and language model-based assessment of generative AI tools in global health, aiming for scalable evaluation processes <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>. Retrieval-augmented models are also generating guideline-concordant recommendations for diabetic kidney disease management, reflecting efforts to align AI outputs with established clinical guidelines <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Researchers have introduced domain-aware agents for atrial fibrillation management, illustrating knowledge enhancements designed to support complex clinical scenarios <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. AI frameworks are increasingly evidence-driven in support of diagnostic decisions, such as cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[6]</a>.</p>
-<p>Also this week: six new clinical decision support studies, six items on safety and evaluation, two research efforts on patient-facing tools, and one new approach for clinical documentation. Specific releases include a systematic review of robot-assisted surgery research and a benchmarking study of analytics tools for electronic health records.</p>
+<p>A unified multimodal language model has been introduced for clinical prediction, integrating free-text clinical narratives with structured electronic health record data to support decision-making in patient care <a href="https://arxiv.org/abs/2607.15380">[1]</a>. New retrieval-augmented models are generating guideline-concordant recommendations for diabetic kidney disease management, enhancing reliability in clinical recommendations <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Developments in domain-aware reasoning are advancing disease-specific management, exemplified by a knowledge-enhanced agent for atrial fibrillation that can assist clinicians in delivering appropriate care <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. Additionally, a multimodal evidence-driven framework is enabling artificial intelligence-assisted cognitive impairment assessments, supporting clinical evaluation from multiple data sources <a href="https://www.nature.com/articles/s41746-026-03048-9">[6]</a>. The examination of scalable evaluation methods, comparing human experts with AI judges in global health applications, highlights ongoing efforts to assess generative AI performance in clinical settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>.</p>
+<p>Also this week: researchers mapped the research landscape in robot-assisted surgery, and a government pilot tested AI for prior authorization by insurers. This section holds eight new model releases, five papers focused on AI safety and evaluation, two items on patient-facing tools, and research spanning clinical documentation and diagnostic imaging.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 56 items"
+??? abstract "Show the 57 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (23)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (57)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (23)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -414,6 +379,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03048-9">A multimodal evidence-driven framework for clinical decision support in cognitive impairment</a>
         <p class="news-card-summary">Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03027-0">Interpretable multimodal deep learning for time-resolved survival prediction after hepatocellular carcinoma resection</a>
+        <p class="news-card-summary">Peer-reviewed study presents an interpretable multimodal deep learning model for predicting survival outcomes after hepatocellular carcinoma resection.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -778,10 +750,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan</a>
+        <p class="news-card-summary">UK government analysis finds the performance gap between open and closed weight models on cybersecurity tasks is narrowing.</p>
+      </div>
+      <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-jWGEYJ.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 20, 2026</span></div>
@@ -1127,9 +1107,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 22 videos"
+??? abstract "Show the 23 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=Wlh1na7rB4o" target="_blank" rel="noopener" title="Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?">
+      <img src="https://i4.ytimg.com/vi/Wlh1na7rB4o/hqdefault.jpg" alt="Video: Testing Qwen 3.8 MAX open-weight model" loading="lazy">
+      <span class="video-card-title">Testing Qwen 3.8 MAX open-weight model</span>
+      <span class="video-card-meta">Bijan Bowen, July 20, 2026</span>
+      <span class="video-card-desc">Hands-on testing and benchmarking of the Qwen 3.8 MAX open-weight model across vision, reasoning, and coding tasks.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=A61WYw5-FLM" target="_blank" rel="noopener" title="Qwen 3.8 Max IS INSANE! Second To Fable? New Open Model King? (Fully Tested)">
       <img src="https://i2.ytimg.com/vi/A61WYw5-FLM/hqdefault.jpg" alt="Video: Qwen 3.8 Max benchmark testing and comparison" loading="lazy">
       <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>

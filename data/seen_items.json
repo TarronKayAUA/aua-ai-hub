@@ -20447,6 +20447,68 @@
    "first_seen": "2026-07-20T11:14:59.239700+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan",
+   "title_hash": "09cc779a128ace46e2d4702ff5e6f6fd",
+   "first_seen": "2026-07-20T14:34:26.998946+00:00",
+   "kept": true,
+   "title": "Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan",
+   "source": "Import AI",
+   "published": "2026-07-20T12:31:45+00:00",
+   "summary": "UK government analysis finds the performance gap between open and closed weight models on cybersecurity tasks is narrowing.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-jWGEYJ.png?fit=258%2C258&ssl=1",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v1k3pw/kimi_k3_just_fixed_15_critical_security_bugs_that",
+   "title_hash": "060493edf1f47d6daf1958f6a185f7f9",
+   "first_seen": "2026-07-20T14:34:26.998946+00:00",
+   "kept": false,
+   "reason": "forum thread discussing speculation and hearsay without verified sourcing"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness",
+   "title_hash": "4f36811a822452f4f2ee8508e63dc418",
+   "first_seen": "2026-07-20T14:34:26.998946+00:00",
+   "kept": false,
+   "reason": "vendor marketing for a commercial coding product"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03027-0",
+   "title_hash": "835dd75c4d39a0d689a7e72e9c114d8f",
+   "first_seen": "2026-07-20T14:34:26.998946+00:00",
+   "kept": true,
+   "title": "Interpretable multimodal deep learning for time-resolved survival prediction after hepatocellular carcinoma resection",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-20T00:00:00+00:00",
+   "summary": "Peer-reviewed study presents an interpretable multimodal deep learning model for predicting survival outcomes after hepatocellular carcinoma resection.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Wlh1na7rB4o",
+   "title_hash": "7dd16b987585b04ff514e15ee4953299",
+   "first_seen": "2026-07-20T14:34:26.998946+00:00",
+   "kept": true,
+   "title": "Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?",
+   "source": "Bijan Bowen",
+   "published": "2026-07-20T13:18:16+00:00",
+   "summary": "Hands-on testing and benchmarking of the Qwen 3.8 MAX open-weight model across vision, reasoning, and coding tasks.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/Wlh1na7rB4o/hqdefault.jpg",
+   "display_title": "Testing Qwen 3.8 MAX open-weight model"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=MmYCdNhrhfA",
+   "title_hash": "1790dea4860f09c970d43ae037972ce2",
+   "first_seen": "2026-07-20T14:34:26.998946+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company"
   }
  ],
  "digests": [
@@ -20588,8 +20650,8 @@
    "date": "July 20, 2026"
   },
   "clinical_practice": {
-   "text": "The application of large language models continues to advance clinical decision support, including a unified multimodal model that integrates free-text clinical narratives and structured electronic health record measurements to improve clinical prediction tasks <a href=\"https://arxiv.org/abs/2607.15380\">[1]</a>. Safety and evaluation remain central, as recent work compares human and language model-based assessment of generative AI tools in global health, aiming for scalable evaluation processes <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[3]</a>. Retrieval-augmented models are also generating guideline-concordant recommendations for diabetic kidney disease management, reflecting efforts to align AI outputs with established clinical guidelines <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[4]</a>. Researchers have introduced domain-aware agents for atrial fibrillation management, illustrating knowledge enhancements designed to support complex clinical scenarios <a href=\"https://www.nature.com/articles/s41746-026-03038-x\">[5]</a>. AI frameworks are increasingly evidence-driven in support of diagnostic decisions, such as cognitive impairment assessment <a href=\"https://www.nature.com/articles/s41746-026-03048-9\">[6]</a>.\n\nAlso this week: six new clinical decision support studies, six items on safety and evaluation, two research efforts on patient-facing tools, and one new approach for clinical documentation. Specific releases include a systematic review of robot-assisted surgery research and a benchmarking study of analytics tools for electronic health records.",
-   "hash": "c6fd0dbc37957608",
+   "text": "A unified multimodal language model has been introduced for clinical prediction, integrating free-text clinical narratives with structured electronic health record data to support decision-making in patient care <a href=\"https://arxiv.org/abs/2607.15380\">[1]</a>. New retrieval-augmented models are generating guideline-concordant recommendations for diabetic kidney disease management, enhancing reliability in clinical recommendations <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[4]</a>. Developments in domain-aware reasoning are advancing disease-specific management, exemplified by a knowledge-enhanced agent for atrial fibrillation that can assist clinicians in delivering appropriate care <a href=\"https://www.nature.com/articles/s41746-026-03038-x\">[5]</a>. Additionally, a multimodal evidence-driven framework is enabling artificial intelligence-assisted cognitive impairment assessments, supporting clinical evaluation from multiple data sources <a href=\"https://www.nature.com/articles/s41746-026-03048-9\">[6]</a>. The examination of scalable evaluation methods, comparing human experts with AI judges in global health applications, highlights ongoing efforts to assess generative AI performance in clinical settings <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[3]</a>.\n\nAlso this week: researchers mapped the research landscape in robot-assisted surgery, and a government pilot tested AI for prior authorization by insurers. This section holds eight new model releases, five papers focused on AI safety and evaluation, two items on patient-facing tools, and research spanning clinical documentation and diagnostic imaging.",
+   "hash": "895ee9c1507cb28a",
    "date": "July 20, 2026"
   },
   "general_ai": {

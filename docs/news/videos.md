@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=Wlh1na7rB4o" target="_blank" rel="noopener" title="Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?">
+  <img src="https://i4.ytimg.com/vi/Wlh1na7rB4o/hqdefault.jpg" alt="Video: Testing Qwen 3.8 MAX open-weight model" loading="lazy">
+  <span class="video-card-title">Testing Qwen 3.8 MAX open-weight model</span>
+  <span class="video-card-meta">Bijan Bowen, July 20, 2026</span>
+  <span class="video-card-desc">Hands-on testing and benchmarking of the Qwen 3.8 MAX open-weight model across vision, reasoning, and coding tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=A61WYw5-FLM" target="_blank" rel="noopener" title="Qwen 3.8 Max IS INSANE! Second To Fable? New Open Model King? (Fully Tested)">
   <img src="https://i2.ytimg.com/vi/A61WYw5-FLM/hqdefault.jpg" alt="Video: Qwen 3.8 Max benchmark testing and comparison" loading="lazy">
   <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production</span>
   <span class="video-card-meta">IBM Technology, July 9, 2026</span>
   <span class="video-card-desc">Overview of agentic AI frameworks, covering workflow design, multi-agent systems, and production deployment considerations.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=9f-Ew_lDtxc" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/9f-Ew_lDtxc/hqdefault.jpg" alt="Video: The next generation of ChatGPT Voice" loading="lazy">
-  <span class="video-card-title">The next generation of ChatGPT Voice</span>
-  <span class="video-card-meta">OpenAI, July 8, 2026</span>
-  <span class="video-card-desc">OpenAI engineers demonstrate the next generation of ChatGPT voice models with live demonstrations of capabilities and features.</span>
 </a>
 </div>
 

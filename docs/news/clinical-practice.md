@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The application of large language models continues to advance clinical decision support, including a unified multimodal model that integrates free-text clinical narratives and structured electronic health record measurements to improve clinical prediction tasks <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Safety and evaluation remain central, as recent work compares human and language model-based assessment of generative AI tools in global health, aiming for scalable evaluation processes <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>. Retrieval-augmented models are also generating guideline-concordant recommendations for diabetic kidney disease management, reflecting efforts to align AI outputs with established clinical guidelines <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Researchers have introduced domain-aware agents for atrial fibrillation management, illustrating knowledge enhancements designed to support complex clinical scenarios <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. AI frameworks are increasingly evidence-driven in support of diagnostic decisions, such as cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[6]</a>.</p>
-<p>Also this week: six new clinical decision support studies, six items on safety and evaluation, two research efforts on patient-facing tools, and one new approach for clinical documentation. Specific releases include a systematic review of robot-assisted surgery research and a benchmarking study of analytics tools for electronic health records.</p>
+<p>A unified multimodal language model has been introduced for clinical prediction, integrating free-text clinical narratives with structured electronic health record data to support decision-making in patient care <a href="https://arxiv.org/abs/2607.15380">[1]</a>. New retrieval-augmented models are generating guideline-concordant recommendations for diabetic kidney disease management, enhancing reliability in clinical recommendations <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Developments in domain-aware reasoning are advancing disease-specific management, exemplified by a knowledge-enhanced agent for atrial fibrillation that can assist clinicians in delivering appropriate care <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. Additionally, a multimodal evidence-driven framework is enabling artificial intelligence-assisted cognitive impairment assessments, supporting clinical evaluation from multiple data sources <a href="https://www.nature.com/articles/s41746-026-03048-9">[6]</a>. The examination of scalable evaluation methods, comparing human experts with AI judges in global health applications, highlights ongoing efforts to assess generative AI performance in clinical settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>.</p>
+<p>Also this week: researchers mapped the research landscape in robot-assisted surgery, and a government pilot tested AI for prior authorization by insurers. This section holds eight new model releases, five papers focused on AI safety and evaluation, two items on patient-facing tools, and research spanning clinical documentation and diagnostic imaging.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -61,6 +61,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03048-9">A multimodal evidence-driven framework for clinical decision support in cognitive impairment</a>
     <p class="news-card-summary">Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03027-0">Interpretable multimodal deep learning for time-resolved survival prediction after hepatocellular carcinoma resection</a>
+    <p class="news-card-summary">Peer-reviewed study presents an interpretable multimodal deep learning model for predicting survival outcomes after hepatocellular carcinoma resection.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03039-w">A distributional reinforcement learning model for temporal coagulation balance evaluation and state‑guided supportive suggestions</a>
     <p class="news-card-summary">Reinforcement learning model evaluates blood coagulation balance over time and generates state-guided clinical suggestions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02948-0">Individualized prediction of heroin cue-induced craving using task-based EEG functional connectivity</a>
-    <p class="news-card-summary">Machine learning model predicts opioid cue-induced craving in individual patients using task-based brain electrical activity patterns.</p>
   </div>
 </div>
 </div>
