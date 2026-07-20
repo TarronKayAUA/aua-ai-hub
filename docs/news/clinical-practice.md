@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A unified multimodal language model now links free-text clinical narratives with structured EHR measurements for a range of clinical prediction tasks <a href="https://arxiv.org/abs/2607.15380">[2]</a>. The continuing integration of evidence-driven frameworks in decision making is reflected in new work supporting cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[7]</a> and survival outcome prediction after hepatocellular carcinoma resection <a href="https://www.nature.com/articles/s41746-026-03027-0">[8]</a>. Recommendations in diabetic kidney disease management have been improved using a hierarchical retrieval-augmented language model designed to produce guideline-concordant, safe guidance <a href="https://www.nature.com/articles/s41746-026-03035-0">[5]</a>. Researchers have also compared human and language model evaluators for measuring generative AI performance in global health, which may influence approaches to assessing AI tools <a href="https://www.nature.com/articles/s41746-026-02992-w">[4]</a>. Meanwhile, agent-driven generation of grounded public health narratives from epidemiological projections aims to provide clarity for policymakers and the public <a href="https://arxiv.org/abs/2607.15544">[3]</a>.</p>
-<p>Also this week: users can find eight new model releases, five papers on assessment and safety in clinical settings, and tutorials for secure testing and benchmarking of medical AI. Patient-facing tools have expanded, including biosignal-based screening for depressive symptoms and work on improving medical jargon comprehension in EHR notes.</p>
+<p>The unified multimodal model introduced for clinical prediction tasks combines textual clinical narratives and structured electronic health record measurements, suggesting potential improvements in accuracy for complex patient cases <a href="https://arxiv.org/abs/2607.15380">[3]</a>. In parallel, clinical decision support advances include frameworks and agents designed for cognitive impairment and atrial fibrillation management, which leverage AI for more evidence-driven and domain-aware reasoning <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>. A peer-reviewed interpretable deep learning model for survival prediction after hepatocellular carcinoma resection highlights the growing emphasis on transparent methods for prognosis <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Several studies remain focused on safety and evaluation, including approaches to benchmark analytical tools and comparing human evaluators against AI-based judges for global health applications <a href="https://medinform.jmir.org/2026/1/e82924">[14]</a> <a href="https://www.nature.com/articles/s41746-026-02992-w">[5]</a>.</p>
+<p>Also this week: eight papers on safety and evaluation, five developments in clinical decision support, and individual work on AI-driven clinical documentation and patient-facing tools. Real-world clinical imaging data and robot-assisted surgery each receive dedicated coverage, expanding the range of practical use cases explored on this page.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88202">Real-World Imaging Data: Opportunities and Challenges</a>
+    <p class="news-card-summary">Analysis of how artificial intelligence and advanced analytical methods can extract deeper insights from real-world clinical imaging data for evidence generation.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e75561">Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study</a>
     <p class="news-card-summary">Study uses data augmentation and large language models to identify and prioritize medical terms in electronic health record notes to improve patient comprehension through OpenNotes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03017-2">Biosignal-based screening of depressive symptoms during affective conversations with virtual humans</a>
-    <p class="news-card-summary">Study uses physiological signals measured during conversations with virtual humans to screen for depressive symptoms.</p>
   </div>
 </div>
 </div>

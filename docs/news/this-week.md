@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>DeepSeek-R1 demonstrated accuracy advantages over GPT-4o in answering pediatric medical questions, although results fluctuated between testing runs, raising reliability concerns for clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Medical students and residents continue to show broadly favorable attitudes toward artificial intelligence in healthcare, yet systematic reviews and surveys reveal significant knowledge gaps and varying familiarity, underscoring the importance of formal AI education and training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[13]</a>. Locally deployed large language models have been validated for automating case-based learning in obstetrics and gynecology, but human oversight remains essential to address accuracy and nuance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[4]</a>. Research on integrating AI with gamification points to personalized learning as a future direction but highlights limited evidence on effectiveness so far <a href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: eight new model releases, five papers on assessment, and five investigations into how AI influences teaching curricula and clinical skills. A framework for responsible AI integration is outlined in the PEPCAL resource, while studies document technology anxiety among nursing students and the expansion of virtual simulation in medical imaging education.</p>
+<p>New evidence from a cross-sectional survey highlights that medical students’ adoption and learning interests toward DeepSeek, a generative AI tool, reflect evolving integration patterns in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[8]</a>. Locally deployed large language models are now able to automate case-based learning in specialty areas such as obstetrics and gynecology, though their outputs require further clinician review to ensure accuracy and capture tacit knowledge <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[5]</a>. Comparisons of DeepSeek-R1 and GPT-4o models show that while DeepSeek-R1 achieved higher accuracy on pediatric questions, both systems exhibited variable performance, which raises concerns about reliability when used in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[4]</a>. Students’ attitudes toward AI remain broadly positive, yet knowledge gaps persist, underscoring the need for structured training within curriculum frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[2]</a>.</p>
+<p>Also this week: eight new studies examine attitudes and adoption among medical students and residents, four items cover teaching and curriculum integration, and two focus on simulation and clinical skills. One report investigates curriculum-based strategies for reducing technology anxiety and improving AI readiness in nursing students.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91345">Perceptions, Attitudes, and Use of AI by Medical Students: Mixed Methods Study</a>
+        <p class="news-card-summary">Mixed-methods study examining how medical students perceive, view, and use artificial intelligence in their training and future practice.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
@@ -330,15 +337,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A unified multimodal language model now links free-text clinical narratives with structured EHR measurements for a range of clinical prediction tasks <a href="https://arxiv.org/abs/2607.15380">[2]</a>. The continuing integration of evidence-driven frameworks in decision making is reflected in new work supporting cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[7]</a> and survival outcome prediction after hepatocellular carcinoma resection <a href="https://www.nature.com/articles/s41746-026-03027-0">[8]</a>. Recommendations in diabetic kidney disease management have been improved using a hierarchical retrieval-augmented language model designed to produce guideline-concordant, safe guidance <a href="https://www.nature.com/articles/s41746-026-03035-0">[5]</a>. Researchers have also compared human and language model evaluators for measuring generative AI performance in global health, which may influence approaches to assessing AI tools <a href="https://www.nature.com/articles/s41746-026-02992-w">[4]</a>. Meanwhile, agent-driven generation of grounded public health narratives from epidemiological projections aims to provide clarity for policymakers and the public <a href="https://arxiv.org/abs/2607.15544">[3]</a>.</p>
-<p>Also this week: users can find eight new model releases, five papers on assessment and safety in clinical settings, and tutorials for secure testing and benchmarking of medical AI. Patient-facing tools have expanded, including biosignal-based screening for depressive symptoms and work on improving medical jargon comprehension in EHR notes.</p>
+<p>The unified multimodal model introduced for clinical prediction tasks combines textual clinical narratives and structured electronic health record measurements, suggesting potential improvements in accuracy for complex patient cases <a href="https://arxiv.org/abs/2607.15380">[3]</a>. In parallel, clinical decision support advances include frameworks and agents designed for cognitive impairment and atrial fibrillation management, which leverage AI for more evidence-driven and domain-aware reasoning <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>. A peer-reviewed interpretable deep learning model for survival prediction after hepatocellular carcinoma resection highlights the growing emphasis on transparent methods for prognosis <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Several studies remain focused on safety and evaluation, including approaches to benchmark analytical tools and comparing human evaluators against AI-based judges for global health applications <a href="https://medinform.jmir.org/2026/1/e82924">[14]</a> <a href="https://www.nature.com/articles/s41746-026-02992-w">[5]</a>.</p>
+<p>Also this week: eight papers on safety and evaluation, five developments in clinical decision support, and individual work on AI-driven clinical documentation and patient-facing tools. Real-world clinical imaging data and robot-assisted surgery each receive dedicated coverage, expanding the range of practical use cases explored on this page.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (21)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (20)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (20)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88202">Real-World Imaging Data: Opportunities and Challenges</a>
+        <p class="news-card-summary">Analysis of how artificial intelligence and advanced analytical methods can extract deeper insights from real-world clinical imaging data for evidence generation.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
@@ -681,13 +695,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02999-3">CLEO closed loop framework for synthesizing medical privacy preserving tabular data</a>
         <p class="news-card-summary">CLEO is a closed-loop framework for generating privacy-preserving synthetic medical tabular data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78942">Design and Preliminary Testing of the CardioCare System in Health Checkup Centers: Implementation Report</a>
-        <p class="news-card-summary">CardioCare is a digital system combining cardiovascular disease risk prediction with personalized health management for screening programs in Chinese health checkup centers.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -1064,7 +1071,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 23 videos"
+??? abstract "Show the 13 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=Wlh1na7rB4o" target="_blank" rel="noopener" title="Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?">
@@ -1126,66 +1133,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Meta Muse Spark 1.1 benchmark testing</span>
       <span class="video-card-meta">WorldofAI, July 14, 2026</span>
       <span class="video-card-desc">Hands-on benchmark comparison of Meta Muse Spark 1.1 against Claude Opus 4.8 and Grok 4.5 across multiple tests.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener">
-      <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26" loading="lazy">
-      <span class="video-card-title">AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Panel discussion on balancing publication-focused versus patient-outcome-focused applications of AI in pediatric medicine.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=WiK924ZLarE" target="_blank" rel="noopener">
-      <img src="https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg" alt="Video: Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26" loading="lazy">
-      <span class="video-card-title">Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Lightning talks on AI applications in pediatric radiology and diagnostic imaging, with emphasis on sharper image analysis and clinical insights.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=yEXbXbESX4w" target="_blank" rel="noopener">
-      <img src="https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg" alt="Video: Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26" loading="lazy">
-      <span class="video-card-title">Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, addressing safety and efficacy considerations.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=IbJFb6Q2GD0" target="_blank" rel="noopener">
-      <img src="https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg" alt="Video: From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026" loading="lazy">
-      <span class="video-card-title">From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Discussion of pediatric data fragmentation challenges and strategies for organizing data infrastructure to support pediatric AI development.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=7nwO85lEYFw" target="_blank" rel="noopener">
-      <img src="https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg" alt="Video: The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026" loading="lazy">
-      <span class="video-card-title">The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Keynote on the long history and current trajectory of AI adoption in pediatric medicine, featuring practitioners from academia and digital health.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=m1nAWwAL4FI" target="_blank" rel="noopener">
-      <img src="https://i2.ytimg.com/vi/m1nAWwAL4FI/hqdefault.jpg" alt="Video: Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26" loading="lazy">
-      <span class="video-card-title">Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Panel on regulatory pathways, risk assessment, and organizational decision-making in deploying health AI systems in clinical practice.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=VamomgkqsuE" target="_blank" rel="noopener">
-      <img src="https://i3.ytimg.com/vi/VamomgkqsuE/hqdefault.jpg" alt="Video: Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26" loading="lazy">
-      <span class="video-card-title">Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Panel on building and scaling AI products for healthcare markets, covering economic, operational, and regulatory challenges in practice.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=zrM2gAjXLx8" target="_blank" rel="noopener">
-      <img src="https://i3.ytimg.com/vi/zrM2gAjXLx8/hqdefault.jpg" alt="Video: Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26" loading="lazy">
-      <span class="video-card-title">Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Real-world examples of AI systems integrated into clinical workflows, with focus on human-AI interaction design and clinical acceptance drivers.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=qS4rKbAkI7U" target="_blank" rel="noopener">
-      <img src="https://i2.ytimg.com/vi/qS4rKbAkI7U/hqdefault.jpg" alt="Video: Data as the Foundation for Clinical AI | AIMI Symposium 2026 #AIMI26" loading="lazy">
-      <span class="video-card-title">Data as the Foundation for Clinical AI | AIMI Symposium 2026 #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Overview of AIMI&#x27;s vision for building large-scale, AI-ready clinical data infrastructure to support development and deployment of health AI.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=c2ifjyHDFJ8" target="_blank" rel="noopener">
-      <img src="https://i4.ytimg.com/vi/c2ifjyHDFJ8/hqdefault.jpg" alt="Video: The Art of Artificial Reasoning with Yejin Choi | AIMI Symposium 2026 #AIMI26" loading="lazy">
-      <span class="video-card-title">The Art of Artificial Reasoning with Yejin Choi | AIMI Symposium 2026 #AIMI26</span>
-      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-      <span class="video-card-desc">Keynote on artificial reasoning in AI systems and implications for clinical intelligence, featuring computer scientist Yejin Choi.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=oanQrXEiCy4" target="_blank" rel="noopener" title="What is an AI Code Generator? LLM Coding, Productivity, &amp; Risk">
       <img src="https://i4.ytimg.com/vi/oanQrXEiCy4/hqdefault.jpg" alt="Video: AI code generators and their risks" loading="lazy">

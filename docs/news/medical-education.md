@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>DeepSeek-R1 demonstrated accuracy advantages over GPT-4o in answering pediatric medical questions, although results fluctuated between testing runs, raising reliability concerns for clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[3]</a>. Medical students and residents continue to show broadly favorable attitudes toward artificial intelligence in healthcare, yet systematic reviews and surveys reveal significant knowledge gaps and varying familiarity, underscoring the importance of formal AI education and training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">[13]</a>. Locally deployed large language models have been validated for automating case-based learning in obstetrics and gynecology, but human oversight remains essential to address accuracy and nuance <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[4]</a>. Research on integrating AI with gamification points to personalized learning as a future direction but highlights limited evidence on effectiveness so far <a href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: eight new model releases, five papers on assessment, and five investigations into how AI influences teaching curricula and clinical skills. A framework for responsible AI integration is outlined in the PEPCAL resource, while studies document technology anxiety among nursing students and the expansion of virtual simulation in medical imaging education.</p>
+<p>New evidence from a cross-sectional survey highlights that medical students’ adoption and learning interests toward DeepSeek, a generative AI tool, reflect evolving integration patterns in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[8]</a>. Locally deployed large language models are now able to automate case-based learning in specialty areas such as obstetrics and gynecology, though their outputs require further clinician review to ensure accuracy and capture tacit knowledge <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[5]</a>. Comparisons of DeepSeek-R1 and GPT-4o models show that while DeepSeek-R1 achieved higher accuracy on pediatric questions, both systems exhibited variable performance, which raises concerns about reliability when used in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[4]</a>. Students’ attitudes toward AI remain broadly positive, yet knowledge gaps persist, underscoring the need for structured training within curriculum frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[2]</a>.</p>
+<p>Also this week: eight new studies examine attitudes and adoption among medical students and residents, four items cover teaching and curriculum integration, and two focus on simulation and clinical skills. One report investigates curriculum-based strategies for reducing technology anxiety and improving AI readiness in nursing students.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91345">Perceptions, Attitudes, and Use of AI by Medical Students: Mixed Methods Study</a>
+    <p class="news-card-summary">Mixed-methods study examining how medical students perceive, view, and use artificial intelligence in their training and future practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Construction of a virtual simulation teaching system for medical imaging education: a single-center experience</a>
     <p class="news-card-summary">Virtual simulation systems integrating computer graphics, dynamic modeling, and artificial intelligence have become a core teaching methodology in medical imaging education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0">PEPCAL: A Heuristic Framework for Teaching Generative AI to Continuing Professional Education Providers and Faculty Developers</a>
-    <p class="news-card-summary">PEPCAL, a framework addressing pedagogical, ethical, preparation, creative, administrative, and data considerations, guides continuing professional education providers and faculty developers in integrating generative AI responsibly.</p>
   </div>
 </div>
 </div>
