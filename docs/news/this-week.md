@@ -330,15 +330,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A unified multimodal language model has been introduced for clinical prediction, integrating free-text clinical narratives with structured electronic health record data to support decision-making in patient care <a href="https://arxiv.org/abs/2607.15380">[1]</a>. New retrieval-augmented models are generating guideline-concordant recommendations for diabetic kidney disease management, enhancing reliability in clinical recommendations <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Developments in domain-aware reasoning are advancing disease-specific management, exemplified by a knowledge-enhanced agent for atrial fibrillation that can assist clinicians in delivering appropriate care <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. Additionally, a multimodal evidence-driven framework is enabling artificial intelligence-assisted cognitive impairment assessments, supporting clinical evaluation from multiple data sources <a href="https://www.nature.com/articles/s41746-026-03048-9">[6]</a>. The examination of scalable evaluation methods, comparing human experts with AI judges in global health applications, highlights ongoing efforts to assess generative AI performance in clinical settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>.</p>
-<p>Also this week: researchers mapped the research landscape in robot-assisted surgery, and a government pilot tested AI for prior authorization by insurers. This section holds eight new model releases, five papers focused on AI safety and evaluation, two items on patient-facing tools, and research spanning clinical documentation and diagnostic imaging.</p>
+<p>A unified multimodal language model now links free-text clinical narratives with structured EHR measurements for a range of clinical prediction tasks <a href="https://arxiv.org/abs/2607.15380">[2]</a>. The continuing integration of evidence-driven frameworks in decision making is reflected in new work supporting cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[7]</a> and survival outcome prediction after hepatocellular carcinoma resection <a href="https://www.nature.com/articles/s41746-026-03027-0">[8]</a>. Recommendations in diabetic kidney disease management have been improved using a hierarchical retrieval-augmented language model designed to produce guideline-concordant, safe guidance <a href="https://www.nature.com/articles/s41746-026-03035-0">[5]</a>. Researchers have also compared human and language model evaluators for measuring generative AI performance in global health, which may influence approaches to assessing AI tools <a href="https://www.nature.com/articles/s41746-026-02992-w">[4]</a>. Meanwhile, agent-driven generation of grounded public health narratives from epidemiological projections aims to provide clarity for policymakers and the public <a href="https://arxiv.org/abs/2607.15544">[3]</a>.</p>
+<p>Also this week: users can find eight new model releases, five papers on assessment and safety in clinical settings, and tutorials for secure testing and benchmarking of medical AI. Patient-facing tools have expanded, including biosignal-based screening for depressive symptoms and work on improving medical jargon comprehension in EHR notes.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 57 items"
+??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (57)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (23)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (21)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83216">A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial</a>
+        <p class="news-card-summary">Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
@@ -683,20 +690,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">CardioCare is a digital system combining cardiovascular disease risk prediction with personalized health management for screening programs in Chinese health checkup centers.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e71219">AI as the Interpreter for Identifying Root Causes and Emotional Themes in Mental Health Narratives on Reddit Using AutoML and PaLM 2: Mixed Methods Study</a>
-        <p class="news-card-summary">Study applied automated machine learning and large language models to interpret mental health narratives from social media, testing whether AI can identify root causes and emotional themes with alignment to human judgment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90228">A Controlled Comparison of Human and AI-Assisted Automated Revision of Delphi Statements on RNA-Based Medicines: Parallel, 2-Arm Study</a>
-        <p class="news-card-summary">Study compared human experts and AI-assisted methods for revising Delphi consensus statements on RNA medicines, testing whether large language models with retrieval-augmented generation can accelerate expert consensus.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 13, 2026</span></div>
@@ -704,34 +697,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An analysis of whether artificial intelligence can improve patient selection for implantable cardiac defibrillators to prevent sudden cardiac death.</p>
       </div>
       <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gPwI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c278069-5e85-4f84-8d76-23884fd0cc41_790x647.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02996-6">Portable RF brain scanner enables stroke type detection using deep learning</a>
-        <p class="news-card-summary">Portable radiofrequency brain scanner using deep learning enables rapid stroke type detection at point of care.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02853-6">Humanoid robots in the operating room : a framework for staged integration of embodied AI in surgery</a>
-        <p class="news-card-summary">Framework proposes a staged integration approach for deploying humanoid robots in surgical settings, balancing embodied AI capabilities with safety and workflow constraints.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02950-6">Impact of an AI algorithm for multi-day prediction of incident atrial fibrillation on clinical decision-making: PROVISION-AF study</a>
-        <p class="news-card-summary">Study evaluated how an AI algorithm predicting incident atrial fibrillation over multiple days affects clinical decision-making and workflow in practice.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02993-9">Expert Augmented Prediction of Circulatory and Respiratory Instability from High Resolution Vital Signs</a>
-        <p class="news-card-summary">Study developed a deep learning model to predict circulatory and respiratory instability from high-resolution vital signs, augmenting expert clinical judgment.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -745,14 +710,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>New research underscores a fundamental limit in language model reliability, showing that every generative task has an information-theoretic ceiling beyond which model accuracy cannot improve, with gaps defined by output uncertainty from context <a href="https://arxiv.org/abs/2607.14112">[3]</a>. Meanwhile, a study of prefill jailbreak attacks reveals that even when aligned models comply with prompts, harmful representations persist internally, indicating that failures arise in output decisions rather than content encoding <a href="https://arxiv.org/abs/2607.14147">[4]</a>. In model development, the German AI consortium has released Soofi S, a 30-billion-parameter open-weight model leading benchmarks in both English and German, reflecting ongoing advances in publicly accessible models <a href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">[8]</a>. Moonshot AI introduced Kimi K3, a 2.8 trillion parameter model, with open weights scheduled for future release; the case-grounded benchmark of frontier models on business analytical tasks further examines capabilities beyond standard coding and recall <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[6]</a> <a href="https://arxiv.org/abs/2607.16057">[1]</a>.</p>
-<p>Also this week: eight new model releases, two benchmarks and evaluation updates, and two items centered on safety and reliability. One paper explores the use of AI agents in biomedical research; another covers EU antitrust action requiring Google to provide wider platform access to rival AI assistants.</p>
+<p>Advances in open-weight model development are drawing attention, with multiple releases demonstrating performance improvements and growing competitiveness. Chinese firms Moonshot and Alibaba have presented new models that challenge American AI leadership on benchmarks while claiming lower operating costs, signaling intensifying global competition <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[2]</a>. The gap between open and closed-weight models is shrinking on cybersecurity tasks, as highlighted in UK government analysis <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[1]</a>, and Moonshot’s Kimi K3 announcement sets ambitious targets for future open model capabilities <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[9]</a>. Meanwhile, benchmarking work is evaluating frontier language models across knowledge and analytical tasks in business disciplines, identifying strengths beyond factual recall and coding <a href="https://arxiv.org/abs/2607.16057">[4]</a>. New research into hiring bias shows that large language models can develop independent biases, introducing questions about algorithmic fairness and oversight in employment settings <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[3]</a>.</p>
+<p>Also this week: five new model releases and four papers provide fresh insight into safety practices and reliability limits, including mechanistic studies of jailbreak attacks and theoretical scaling ceilings. An open 30-billion-parameter model, Soofi S, now tops benchmarks in English and German language tasks.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -1068,14 +1033,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">MIT Technology Review examines what Anthropic&#x27;s recent research on internal model representations reveals and what it does not yet show about AI systems.</p>
       </div>
       <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/thinking2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models">Simulating everything, sort of: The promise and limits of world models</a>
-        <p class="news-card-summary">Ars Technica explains how world models work, their current capabilities, and open questions in the field.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/cracking-open-world-model-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">

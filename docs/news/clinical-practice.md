@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A unified multimodal language model has been introduced for clinical prediction, integrating free-text clinical narratives with structured electronic health record data to support decision-making in patient care <a href="https://arxiv.org/abs/2607.15380">[1]</a>. New retrieval-augmented models are generating guideline-concordant recommendations for diabetic kidney disease management, enhancing reliability in clinical recommendations <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Developments in domain-aware reasoning are advancing disease-specific management, exemplified by a knowledge-enhanced agent for atrial fibrillation that can assist clinicians in delivering appropriate care <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. Additionally, a multimodal evidence-driven framework is enabling artificial intelligence-assisted cognitive impairment assessments, supporting clinical evaluation from multiple data sources <a href="https://www.nature.com/articles/s41746-026-03048-9">[6]</a>. The examination of scalable evaluation methods, comparing human experts with AI judges in global health applications, highlights ongoing efforts to assess generative AI performance in clinical settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>.</p>
-<p>Also this week: researchers mapped the research landscape in robot-assisted surgery, and a government pilot tested AI for prior authorization by insurers. This section holds eight new model releases, five papers focused on AI safety and evaluation, two items on patient-facing tools, and research spanning clinical documentation and diagnostic imaging.</p>
+<p>A unified multimodal language model now links free-text clinical narratives with structured EHR measurements for a range of clinical prediction tasks <a href="https://arxiv.org/abs/2607.15380">[2]</a>. The continuing integration of evidence-driven frameworks in decision making is reflected in new work supporting cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[7]</a> and survival outcome prediction after hepatocellular carcinoma resection <a href="https://www.nature.com/articles/s41746-026-03027-0">[8]</a>. Recommendations in diabetic kidney disease management have been improved using a hierarchical retrieval-augmented language model designed to produce guideline-concordant, safe guidance <a href="https://www.nature.com/articles/s41746-026-03035-0">[5]</a>. Researchers have also compared human and language model evaluators for measuring generative AI performance in global health, which may influence approaches to assessing AI tools <a href="https://www.nature.com/articles/s41746-026-02992-w">[4]</a>. Meanwhile, agent-driven generation of grounded public health narratives from epidemiological projections aims to provide clarity for policymakers and the public <a href="https://arxiv.org/abs/2607.15544">[3]</a>.</p>
+<p>Also this week: users can find eight new model releases, five papers on assessment and safety in clinical settings, and tutorials for secure testing and benchmarking of medical AI. Patient-facing tools have expanded, including biosignal-based screening for depressive symptoms and work on improving medical jargon comprehension in EHR notes.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83216">A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial</a>
+    <p class="news-card-summary">Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03017-2">Biosignal-based screening of depressive symptoms during affective conversations with virtual humans</a>
     <p class="news-card-summary">Study uses physiological signals measured during conversations with virtual humans to screen for depressive symptoms.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03039-w">A distributional reinforcement learning model for temporal coagulation balance evaluation and state‑guided supportive suggestions</a>
-    <p class="news-card-summary">Reinforcement learning model evaluates blood coagulation balance over time and generates state-guided clinical suggestions.</p>
   </div>
 </div>
 </div>

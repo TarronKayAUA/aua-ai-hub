@@ -20509,6 +20509,75 @@
    "first_seen": "2026-07-20T14:34:26.998946+00:00",
    "kept": false,
    "reason": "vendor marketing from the product's own company"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models",
+   "title_hash": "90dd03bbc2b5a3b6192b09bc0e2e1548",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "policy commentary without new actionable information or substantive analysis instructive to this audience"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e83216",
+   "title_hash": "9bce78124bc91623026fc084babd5c97",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": true,
+   "title": "A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-20T17:00:13+00:00",
+   "summary": "Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+   "title_hash": "0b9055cda953a17fa8853536868ef4dc",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "off-topic for medical education and clinical practice; general consumer photography tool"
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+   "title_hash": "1d56ea503550d00647eb83f26033f564",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "candidate summary is empty; insufficient information to evaluate"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03007-4",
+   "title_hash": "7e40c5ab58b8e4ae52a9a6c123862336",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance for medical educators and students"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03025-2",
+   "title_hash": "a1fed5dcf1b209c67c955c6a8cdf6f8d",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance for medical educators and students"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02979-7",
+   "title_hash": "7f6293b57af7932183aa61602696b4ca",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance for medical educators and students"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WwxZeU4WH14",
+   "title_hash": "6a78ca9d3a8cae53740a89e5f93306a9",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Get-the-Most-Out-of-Fable-5-and-GPT-5-6-Sol-e3maada",
+   "title_hash": "a2ed2ddccdb0a485e86d79fdc20b544e",
+   "first_seen": "2026-07-20T18:21:29.314418+00:00",
+   "kept": false,
+   "reason": "promotional episode with sponsored content"
   }
  ],
  "digests": [
@@ -20650,13 +20719,13 @@
    "date": "July 20, 2026"
   },
   "clinical_practice": {
-   "text": "A unified multimodal language model has been introduced for clinical prediction, integrating free-text clinical narratives with structured electronic health record data to support decision-making in patient care <a href=\"https://arxiv.org/abs/2607.15380\">[1]</a>. New retrieval-augmented models are generating guideline-concordant recommendations for diabetic kidney disease management, enhancing reliability in clinical recommendations <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[4]</a>. Developments in domain-aware reasoning are advancing disease-specific management, exemplified by a knowledge-enhanced agent for atrial fibrillation that can assist clinicians in delivering appropriate care <a href=\"https://www.nature.com/articles/s41746-026-03038-x\">[5]</a>. Additionally, a multimodal evidence-driven framework is enabling artificial intelligence-assisted cognitive impairment assessments, supporting clinical evaluation from multiple data sources <a href=\"https://www.nature.com/articles/s41746-026-03048-9\">[6]</a>. The examination of scalable evaluation methods, comparing human experts with AI judges in global health applications, highlights ongoing efforts to assess generative AI performance in clinical settings <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[3]</a>.\n\nAlso this week: researchers mapped the research landscape in robot-assisted surgery, and a government pilot tested AI for prior authorization by insurers. This section holds eight new model releases, five papers focused on AI safety and evaluation, two items on patient-facing tools, and research spanning clinical documentation and diagnostic imaging.",
-   "hash": "895ee9c1507cb28a",
+   "text": "A unified multimodal language model now links free-text clinical narratives with structured EHR measurements for a range of clinical prediction tasks <a href=\"https://arxiv.org/abs/2607.15380\">[2]</a>. The continuing integration of evidence-driven frameworks in decision making is reflected in new work supporting cognitive impairment assessment <a href=\"https://www.nature.com/articles/s41746-026-03048-9\">[7]</a> and survival outcome prediction after hepatocellular carcinoma resection <a href=\"https://www.nature.com/articles/s41746-026-03027-0\">[8]</a>. Recommendations in diabetic kidney disease management have been improved using a hierarchical retrieval-augmented language model designed to produce guideline-concordant, safe guidance <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[5]</a>. Researchers have also compared human and language model evaluators for measuring generative AI performance in global health, which may influence approaches to assessing AI tools <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[4]</a>. Meanwhile, agent-driven generation of grounded public health narratives from epidemiological projections aims to provide clarity for policymakers and the public <a href=\"https://arxiv.org/abs/2607.15544\">[3]</a>.\n\nAlso this week: users can find eight new model releases, five papers on assessment and safety in clinical settings, and tutorials for secure testing and benchmarking of medical AI. Patient-facing tools have expanded, including biosignal-based screening for depressive symptoms and work on improving medical jargon comprehension in EHR notes.",
+   "hash": "8fce1db0dd362cff",
    "date": "July 20, 2026"
   },
   "general_ai": {
-   "text": "New research underscores a fundamental limit in language model reliability, showing that every generative task has an information-theoretic ceiling beyond which model accuracy cannot improve, with gaps defined by output uncertainty from context <a href=\"https://arxiv.org/abs/2607.14112\">[3]</a>. Meanwhile, a study of prefill jailbreak attacks reveals that even when aligned models comply with prompts, harmful representations persist internally, indicating that failures arise in output decisions rather than content encoding <a href=\"https://arxiv.org/abs/2607.14147\">[4]</a>. In model development, the German AI consortium has released Soofi S, a 30-billion-parameter open-weight model leading benchmarks in both English and German, reflecting ongoing advances in publicly accessible models <a href=\"https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german\">[8]</a>. Moonshot AI introduced Kimi K3, a 2.8 trillion parameter model, with open weights scheduled for future release; the case-grounded benchmark of frontier models on business analytical tasks further examines capabilities beyond standard coding and recall <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[6]</a> <a href=\"https://arxiv.org/abs/2607.16057\">[1]</a>.\n\nAlso this week: eight new model releases, two benchmarks and evaluation updates, and two items centered on safety and reliability. One paper explores the use of AI agents in biomedical research; another covers EU antitrust action requiring Google to provide wider platform access to rival AI assistants.",
-   "hash": "bc50a274b3c2eba2",
+   "text": "Advances in open-weight model development are drawing attention, with multiple releases demonstrating performance improvements and growing competitiveness. Chinese firms Moonshot and Alibaba have presented new models that challenge American AI leadership on benchmarks while claiming lower operating costs, signaling intensifying global competition <a href=\"https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen\">[2]</a>. The gap between open and closed-weight models is shrinking on cybersecurity tasks, as highlighted in UK government analysis <a href=\"https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan\">[1]</a>, and Moonshot’s Kimi K3 announcement sets ambitious targets for future open model capabilities <a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3\">[9]</a>. Meanwhile, benchmarking work is evaluating frontier language models across knowledge and analytical tasks in business disciplines, identifying strengths beyond factual recall and coding <a href=\"https://arxiv.org/abs/2607.16057\">[4]</a>. New research into hiring bias shows that large language models can develop independent biases, introducing questions about algorithmic fairness and oversight in employment settings <a href=\"https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans\">[3]</a>.\n\nAlso this week: five new model releases and four papers provide fresh insight into safety practices and reliability limits, including mechanistic studies of jailbreak attacks and theoretical scaling ceilings. An open 30-billion-parameter model, Soofi S, now tops benchmarks in English and German language tasks.",
+   "hash": "a5e84544da511e5e",
    "date": "July 20, 2026"
   }
  },
