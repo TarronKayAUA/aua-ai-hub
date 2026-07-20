@@ -358,14 +358,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>The pilot program using artificial intelligence for prior authorization automates insurance coverage decisions and has sparked debate over the clinical and administrative effects in medical practice <a href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">[3]</a>. Advances in clinical prediction are highlighted by unified multimodal language models that synthesize free-text narratives and structured electronic health record data <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Researchers have mapped evidence gaps in robot-assisted reconstructive and plastic surgery, clarifying areas of strength and need within current literature <a href="https://www.nature.com/articles/s41746-026-03004-7">[5]</a>. Governance remains a concern for clinical AI systems, with machine unlearning proposed as an approach to manage data retention and accountability <a href="https://www.nature.com/articles/s41746-026-03050-1">[6]</a>. Reinforcement learning methods have been surveyed in sepsis treatment, aiming to refine clinical intervention strategies via machine learning <a href="https://www.nature.com/articles/s41746-026-03034-1">[4]</a>.</p>
-<p>Also this week: eight new model releases focus on safety and evaluation, clinical decision support, and patient-facing tools. Five papers provide assessment comparisons, while individualized prediction and automated diagnostics are demonstrated with EEG-based craving models and deep learning spinal measurement, respectively.</p>
+<p>A unified multimodal language model now merges text narratives and structured electronic health record measurements to improve clinical prediction accuracy, potentially supporting nuanced decision-making in patient care <a href="https://arxiv.org/abs/2607.15380">[1]</a>. Research on guideline-concordant recommendations for diabetic kidney disease management demonstrates how retrieval-augmented models can contribute to safer, evidence-based clinical guidance <a href="https://www.nature.com/articles/s41746-026-03035-0">[4]</a>. Model-assisted reasoning for atrial fibrillation management adds further focus to domain-specific application of artificial intelligence <a href="https://www.nature.com/articles/s41746-026-03038-x">[5]</a>. Meanwhile, benchmarking studies are identifying performance metrics for interoperability analytics tools, which could inform clinical documentation and big data research workflows <a href="https://medinform.jmir.org/2026/1/e82924">[10]</a>. Comparisons between human evaluators and language-model judges raise questions about scaling assessment of generative AI outputs in global health contexts <a href="https://www.nature.com/articles/s41746-026-02992-w">[3]</a>.</p>
+<p>Also this week: there are seven new studies addressing safety and evaluation, alongside five items targeting clinical decision support. Two tools are highlighted for patient-facing uses and a paper investigates documentation improvements. Notably, biosignal-driven screening during virtual human conversations and machine unlearning for governance of clinical AI systems are among the developments captured.</p>
 <p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 55 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (20)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (22)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -379,6 +379,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2607.15544">EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections</a>
         <p class="news-card-summary">Researchers developed an agentic system to generate clear, grounded public health narratives from epidemiological projections for policymakers and the general public.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02992-w">Human evaluators vs. LLM-as-a-Judge: toward scalable evaluation of GenAI in global health</a>
+        <p class="news-card-summary">Study compares human evaluation with language model judges for assessing generative AI performance in global health applications.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03035-0">Generating guideline-concordant and safe recommendations for diabetic kidney disease management via a hierarchical retrieval-augmented large language model</a>
+        <p class="news-card-summary">Retrieval-augmented language model generates guideline-concordant recommendations for diabetic kidney disease management.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03038-x">A knowledge-enhanced domain-aware large language model agent for atrial fibrillation management</a>
+        <p class="news-card-summary">Knowledge-enhanced language model agent assists with atrial fibrillation management using domain-aware reasoning.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -1083,9 +1104,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 21 videos"
+??? abstract "Show the 22 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=A61WYw5-FLM" target="_blank" rel="noopener" title="Qwen 3.8 Max IS INSANE! Second To Fable? New Open Model King? (Fully Tested)">
+      <img src="https://i2.ytimg.com/vi/A61WYw5-FLM/hqdefault.jpg" alt="Video: Qwen 3.8 Max benchmark testing and comparison" loading="lazy">
+      <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>
+      <span class="video-card-meta">WorldofAI, July 20, 2026</span>
+      <span class="video-card-desc">Hands-on benchmark testing of the Qwen 3.8 Max model against competitors, with reproducible methodology shared for independent verification.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=LEnYkEIOhIY" target="_blank" rel="noopener" title="Kimi K3 IS INSANE! Best Open Model EVER That BEATS FABLE 5 &amp; GPT-5.6! (Fully Tested)">
       <img src="https://i1.ytimg.com/vi/LEnYkEIOhIY/hqdefault.jpg" alt="Video: Testing Kimi K3 open model against GPT and other frontier systems" loading="lazy">
       <span class="video-card-title">Testing Kimi K3 open model against GPT and other frontier systems</span>

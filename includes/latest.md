@@ -4,4 +4,4 @@
 - [EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections](https://arxiv.org/abs/2607.15544) (arXiv cs.CL, July 20, 2026)
 - [Cost-efficient generative AI summarization for scalable automated essay scoring in educational assessment](https://arxiv.org/abs/2607.15829) (arXiv cs.CL, July 20, 2026)
 - [Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning](https://arxiv.org/abs/2607.16057) (arXiv cs.CL, July 20, 2026)
-- [HuggingFace security incident report: "the attacker was bound by no usage policy, while our own forensic work was blocked by the guardrails"](https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker) (r/LocalLLaMA weekly top, July 19, 2026)
+- [Human evaluators vs. LLM-as-a-Judge: toward scalable evaluation of GenAI in global health](https://www.nature.com/articles/s41746-026-02992-w) (npj Digital Medicine, July 20, 2026)

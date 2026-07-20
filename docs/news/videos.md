@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=A61WYw5-FLM" target="_blank" rel="noopener" title="Qwen 3.8 Max IS INSANE! Second To Fable? New Open Model King? (Fully Tested)">
+  <img src="https://i2.ytimg.com/vi/A61WYw5-FLM/hqdefault.jpg" alt="Video: Qwen 3.8 Max benchmark testing and comparison" loading="lazy">
+  <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>
+  <span class="video-card-meta">WorldofAI, July 20, 2026</span>
+  <span class="video-card-desc">Hands-on benchmark testing of the Qwen 3.8 Max model against competitors, with reproducible methodology shared for independent verification.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=LEnYkEIOhIY" target="_blank" rel="noopener" title="Kimi K3 IS INSANE! Best Open Model EVER That BEATS FABLE 5 &amp; GPT-5.6! (Fully Tested)">
   <img src="https://i1.ytimg.com/vi/LEnYkEIOhIY/hqdefault.jpg" alt="Video: Testing Kimi K3 open model against GPT and other frontier systems" loading="lazy">
   <span class="video-card-title">Testing Kimi K3 open model against GPT and other frontier systems</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">The next generation of ChatGPT Voice</span>
   <span class="video-card-meta">OpenAI, July 8, 2026</span>
   <span class="video-card-desc">OpenAI engineers demonstrate the next generation of ChatGPT voice models with live demonstrations of capabilities and features.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=K-fYBO8t3-A" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/K-fYBO8t3-A/hqdefault.jpg" alt="Video: Listening &amp; Speaking with GPT-Live" loading="lazy">
-  <span class="video-card-title">Listening &amp; Speaking with GPT-Live</span>
-  <span class="video-card-meta">OpenAI, July 8, 2026</span>
-  <span class="video-card-desc">OpenAI demonstrates GPT-Live voice capabilities including listening, speaking, and natural conversation features.</span>
 </a>
 </div>
 
