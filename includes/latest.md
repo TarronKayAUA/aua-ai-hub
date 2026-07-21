@@ -2,6 +2,6 @@
 
 - [Perceptions, Attitudes, and Use of AI by Medical Students: Mixed Methods Study](https://mededu.jmir.org/2026/1/e91345) (JMIR Medical Education, July 20, 2026)
 - [Real-World Imaging Data: Opportunities and Challenges](https://medinform.jmir.org/2026/1/e88202) (JMIR Medical Informatics, July 20, 2026)
+- [Nativ: Run frontier open models locally on your Mac](https://blaizzy.github.io/nativ) (Hacker News (LLM, 100+ points), July 20, 2026)
+- [Agent swarms and the new model economics](https://cursor.com/blog/agent-swarm-model-economics) (Hacker News (LLM, 100+ points), July 20, 2026)
 - [A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial](https://medinform.jmir.org/2026/1/e83216) (JMIR Medical Informatics, July 20, 2026)
-- [Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan](https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan) (Import AI, July 20, 2026)
-- [China delivers a one-two punch to America’s AI dominance](https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen) (The Verge AI, July 20, 2026)

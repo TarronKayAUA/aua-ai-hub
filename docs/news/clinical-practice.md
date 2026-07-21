@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The unified multimodal model introduced for clinical prediction tasks combines textual clinical narratives and structured electronic health record measurements, suggesting potential improvements in accuracy for complex patient cases <a href="https://arxiv.org/abs/2607.15380">[3]</a>. In parallel, clinical decision support advances include frameworks and agents designed for cognitive impairment and atrial fibrillation management, which leverage AI for more evidence-driven and domain-aware reasoning <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>. A peer-reviewed interpretable deep learning model for survival prediction after hepatocellular carcinoma resection highlights the growing emphasis on transparent methods for prognosis <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Several studies remain focused on safety and evaluation, including approaches to benchmark analytical tools and comparing human evaluators against AI-based judges for global health applications <a href="https://medinform.jmir.org/2026/1/e82924">[14]</a> <a href="https://www.nature.com/articles/s41746-026-02992-w">[5]</a>.</p>
-<p>Also this week: eight papers on safety and evaluation, five developments in clinical decision support, and individual work on AI-driven clinical documentation and patient-facing tools. Real-world clinical imaging data and robot-assisted surgery each receive dedicated coverage, expanding the range of practical use cases explored on this page.</p>
-<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
+<p>The development of unified and multimodal artificial intelligence models is shaping the future of clinical prediction by integrating free-text narratives and structured electronic health record data <a href="https://arxiv.org/abs/2607.15380">[3]</a>, while new evidence-driven frameworks are supporting clinical decision making in cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a>. Peer-reviewed research demonstrates interpretable multimodal deep learning for survival prediction after hepatocellular carcinoma resection, offering clinicians more transparent models for outcome forecasting <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Meanwhile, studies are addressing the challenges and opportunities presented by using real-world imaging data in evidence generation <a href="https://medinform.jmir.org/2026/1/e88202">[1]</a>. Researchers have also advanced retrieval-augmented and domain-aware large language models, now capable of producing guideline-concordant recommendations for chronic disease management and assisting with atrial fibrillation treatment <a href="https://www.nature.com/articles/s41746-026-03035-0">[6]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment contribute additional insights into safety, evaluation, and decision-support. Tutorials feature secure sandboxes for testing patient portal messaging models, while a government pilot explores artificial intelligence in insurance prior-authorization. The section includes a review on reinforcement learning for sepsis care and a discussion on machine unlearning for governance, rounding out topics from clinical documentation to surgical robotics.</p>
+<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -86,6 +86,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03011-8">Brain contrastive modeling reveals depression subtypes with distinct treatment response and progression</a>
+    <p class="news-card-summary">Contrastive learning methods identify depression subtypes with distinct treatment responses, offering a data-driven approach to treatment selection.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 18, 2026</span></div>
     <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">Will AI fix prior authorization, or make it worse?</a>
     <p class="news-card-summary">Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</p>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82924">Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines</a>
     <p class="news-card-summary">Study benchmarks Fast Healthcare Interoperability Resources analytics tools to measure performance of RESTful queries and data engines for electronic health records research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e75561">Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study</a>
-    <p class="news-card-summary">Study uses data augmentation and large language models to identify and prioritize medical terms in electronic health record notes to improve patient comprehension through OpenNotes.</p>
   </div>
 </div>
 </div>

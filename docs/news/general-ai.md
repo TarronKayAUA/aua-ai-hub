@@ -13,14 +13,29 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Advances in open-weight model development are drawing attention, with multiple releases demonstrating performance improvements and growing competitiveness. Chinese firms Moonshot and Alibaba have presented new models that challenge American AI leadership on benchmarks while claiming lower operating costs, signaling intensifying global competition <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[2]</a>. The gap between open and closed-weight models is shrinking on cybersecurity tasks, as highlighted in UK government analysis <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[1]</a>, and Moonshot’s Kimi K3 announcement sets ambitious targets for future open model capabilities <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[9]</a>. Meanwhile, benchmarking work is evaluating frontier language models across knowledge and analytical tasks in business disciplines, identifying strengths beyond factual recall and coding <a href="https://arxiv.org/abs/2607.16057">[4]</a>. New research into hiring bias shows that large language models can develop independent biases, introducing questions about algorithmic fairness and oversight in employment settings <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[3]</a>.</p>
-<p>Also this week: five new model releases and four papers provide fresh insight into safety practices and reliability limits, including mechanistic studies of jailbreak attacks and theoretical scaling ceilings. An open 30-billion-parameter model, Soofi S, now tops benchmarks in English and German language tasks.</p>
-<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
+<p>Chinese companies Moonshot and Alibaba have released new models that aim to match the performance of OpenAI and Anthropic systems at a lower cost, highlighting growing competition in global AI development <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[4]</a>. A UK government analysis finds that the difference in cybersecurity task performance between open-weight and closed-weight models is narrowing, which may signal increasing viability of open approaches in sensitive applications <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[3]</a>. Researchers have further shown that large language models can independently develop hiring biases, raising concerns regarding fairness in automated employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[5]</a>. Information-theoretic research underlines that model reliability is fundamentally limited by output uncertainty, establishing practical bounds for generative AI performance <a href="https://arxiv.org/abs/2607.14112">[8]</a>. Additionally, studies on prefill jailbreak attacks expose weaknesses in decision-making mechanisms within aligned language models, suggesting harm can persist even when models change their compliance behavior <a href="https://arxiv.org/abs/2607.14147">[9]</a>.</p>
+<p>Also this week: four new model releases and four topics addressing safety and reliability feature prominently. The section also covers agent swarm economics, benchmarking for analytical and knowledge work, and a tool for running frontier models locally on Mac computers.</p>
+<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://blaizzy.github.io/nativ">Nativ: Run frontier open models locally on your Mac</a>
+    <p class="news-card-summary">A new tool enables running frontier open-source language models locally on Mac computers without relying on cloud services.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://cursor.com/blog/agent-swarm-model-economics">Agent swarms and the new model economics</a>
+    <p class="news-card-summary">Analysis of how agent swarms and multi-model deployments are changing the economics and accessibility of AI system development.</p>
+  </div>
+  <img class="news-card-thumb" src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/swarm-og.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">July 20, 2026</span></div>
@@ -121,21 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Moonshot AI announced Kimi K3, a 2.8 trillion parameter model, with open-weight release promised by July 27, 2026.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/kimi-3-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://lmstudio.ai/blog/introducing-lm-studio-bionic">LM Studio Bionic: the AI agent for open models</a>
-    <p class="news-card-summary">LM Studio releases Bionic, an AI agent framework for deploying and orchestrating open-weight language models on local machines.</p>
-  </div>
-  <img class="news-card-thumb" src="https://files.lmstudio.ai/bionic/lm-studio-bionic-og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german">German AI consortium releases Soofi S, an open 30B model that tops benchmarks</a>
-    <p class="news-card-summary">German consortium releases Soofi S, a 30-billion-parameter open-weight model ranking among top performers on English and German language benchmarks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://the-decoder.com/wp-content/uploads/2026/07/soofi-s-german-llm-nano-banana-pro.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

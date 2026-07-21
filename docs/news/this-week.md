@@ -337,14 +337,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>The unified multimodal model introduced for clinical prediction tasks combines textual clinical narratives and structured electronic health record measurements, suggesting potential improvements in accuracy for complex patient cases <a href="https://arxiv.org/abs/2607.15380">[3]</a>. In parallel, clinical decision support advances include frameworks and agents designed for cognitive impairment and atrial fibrillation management, which leverage AI for more evidence-driven and domain-aware reasoning <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>. A peer-reviewed interpretable deep learning model for survival prediction after hepatocellular carcinoma resection highlights the growing emphasis on transparent methods for prognosis <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Several studies remain focused on safety and evaluation, including approaches to benchmark analytical tools and comparing human evaluators against AI-based judges for global health applications <a href="https://medinform.jmir.org/2026/1/e82924">[14]</a> <a href="https://www.nature.com/articles/s41746-026-02992-w">[5]</a>.</p>
-<p>Also this week: eight papers on safety and evaluation, five developments in clinical decision support, and individual work on AI-driven clinical documentation and patient-facing tools. Real-world clinical imaging data and robot-assisted surgery each receive dedicated coverage, expanding the range of practical use cases explored on this page.</p>
-<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
+<p>The development of unified and multimodal artificial intelligence models is shaping the future of clinical prediction by integrating free-text narratives and structured electronic health record data <a href="https://arxiv.org/abs/2607.15380">[3]</a>, while new evidence-driven frameworks are supporting clinical decision making in cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a>. Peer-reviewed research demonstrates interpretable multimodal deep learning for survival prediction after hepatocellular carcinoma resection, offering clinicians more transparent models for outcome forecasting <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Meanwhile, studies are addressing the challenges and opportunities presented by using real-world imaging data in evidence generation <a href="https://medinform.jmir.org/2026/1/e88202">[1]</a>. Researchers have also advanced retrieval-augmented and domain-aware large language models, now capable of producing guideline-concordant recommendations for chronic disease management and assisting with atrial fibrillation treatment <a href="https://www.nature.com/articles/s41746-026-03035-0">[6]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment contribute additional insights into safety, evaluation, and decision-support. Tutorials feature secure sandboxes for testing patient portal messaging models, while a government pilot explores artificial intelligence in insurance prior-authorization. The section includes a review on reinforcement learning for sepsis care and a discussion on machine unlearning for governance, rounding out topics from clinical documentation to surgical robotics.</p>
+<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (20)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (20)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (20)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -407,6 +407,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03027-0">Interpretable multimodal deep learning for time-resolved survival prediction after hepatocellular carcinoma resection</a>
         <p class="news-card-summary">Peer-reviewed study presents an interpretable multimodal deep learning model for predicting survival outcomes after hepatocellular carcinoma resection.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03011-8">Brain contrastive modeling reveals depression subtypes with distinct treatment response and progression</a>
+        <p class="news-card-summary">Contrastive learning methods identify depression subtypes with distinct treatment responses, offering a data-driven approach to treatment selection.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -644,13 +651,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02991-x">Multi-omics fusion with machine learning enables robust prediction of treatment response in ovarian cancer for precision population health</a>
-        <p class="news-card-summary">Machine learning model combining multiple data types predicts treatment response in ovarian cancer, advancing personalized oncology.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02981-z">A unified multi-modal foundation model for end-to-end emergency care</a>
         <p class="news-card-summary">A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.</p>
       </div>
@@ -705,27 +705,35 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gPwI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c278069-5e85-4f84-8d76-23884fd0cc41_790x647.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02960-4">AI agents in clinical practice: an evidence map</a>
-        <p class="news-card-summary">Systematic evidence map of AI agents deployed in clinical practice settings, covering effectiveness and implementation outcomes.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Advances in open-weight model development are drawing attention, with multiple releases demonstrating performance improvements and growing competitiveness. Chinese firms Moonshot and Alibaba have presented new models that challenge American AI leadership on benchmarks while claiming lower operating costs, signaling intensifying global competition <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[2]</a>. The gap between open and closed-weight models is shrinking on cybersecurity tasks, as highlighted in UK government analysis <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[1]</a>, and Moonshot’s Kimi K3 announcement sets ambitious targets for future open model capabilities <a href="https://simonwillison.net/2026/Jul/16/kimi-k3">[9]</a>. Meanwhile, benchmarking work is evaluating frontier language models across knowledge and analytical tasks in business disciplines, identifying strengths beyond factual recall and coding <a href="https://arxiv.org/abs/2607.16057">[4]</a>. New research into hiring bias shows that large language models can develop independent biases, introducing questions about algorithmic fairness and oversight in employment settings <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[3]</a>.</p>
-<p>Also this week: five new model releases and four papers provide fresh insight into safety practices and reliability limits, including mechanistic studies of jailbreak attacks and theoretical scaling ceilings. An open 30-billion-parameter model, Soofi S, now tops benchmarks in English and German language tasks.</p>
-<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
+<p>Chinese companies Moonshot and Alibaba have released new models that aim to match the performance of OpenAI and Anthropic systems at a lower cost, highlighting growing competition in global AI development <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[4]</a>. A UK government analysis finds that the difference in cybersecurity task performance between open-weight and closed-weight models is narrowing, which may signal increasing viability of open approaches in sensitive applications <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[3]</a>. Researchers have further shown that large language models can independently develop hiring biases, raising concerns regarding fairness in automated employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[5]</a>. Information-theoretic research underlines that model reliability is fundamentally limited by output uncertainty, establishing practical bounds for generative AI performance <a href="https://arxiv.org/abs/2607.14112">[8]</a>. Additionally, studies on prefill jailbreak attacks expose weaknesses in decision-making mechanisms within aligned language models, suggesting harm can persist even when models change their compliance behavior <a href="https://arxiv.org/abs/2607.14147">[9]</a>.</p>
+<p>Also this week: four new model releases and four topics addressing safety and reliability feature prominently. The section also covers agent swarm economics, benchmarking for analytical and knowledge work, and a tool for running frontier models locally on Mac computers.</p>
+<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://blaizzy.github.io/nativ">Nativ: Run frontier open models locally on your Mac</a>
+        <p class="news-card-summary">A new tool enables running frontier open-source language models locally on Mac computers without relying on cloud services.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://cursor.com/blog/agent-swarm-model-economics">Agent swarms and the new model economics</a>
+        <p class="news-card-summary">Analysis of how agent swarms and multi-model deployments are changing the economics and accessibility of AI system development.</p>
+      </div>
+      <img class="news-card-thumb" src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/swarm-og.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">July 20, 2026</span></div>
@@ -1025,13 +1033,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Support for Tencent Hy3 299B mixture of experts model added to llama.cpp with multi-token prediction speculative decoding.</p>
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/G2jNnfzK27ZTXrG6Y-0EB93m36H972oatYe_gbB26M0.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=f063c3ac0a0efb096da3e1247c7868728667c94a" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://playcode.io/blog/real-price-of-frontier-models">The real prices of frontier models</a>
-        <p class="news-card-summary">Analysis of actual costs of frontier large language models including inference expenses and operational overhead.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
