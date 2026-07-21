@@ -286,10 +286,13 @@
   vendor: Anthropic
   category: research
   url: https://claude.com/science
+  # Content-watch cost flag 2026-07-21 was a false positive: the page
+  # shows no standalone price because access comes with paid Claude
+  # plans, which is what cost: paid and the status note already say.
   cost: paid
   governance_status: listed
   status_note: Beta on paid Claude plans; macOS and Linux (Windows via WSL).
-  last_reviewed: 2026-07-01
+  last_reviewed: 2026-07-21
   blurb: Local-first research workbench pairing an agent with curated scientific skills (genomics, proteomics, cheminformatics), local code execution, and a reviewer agent that checks citations and calculations.
 
 - name: ResearchRabbit
@@ -500,10 +503,14 @@
   vendor: Adobe
   category: image_generation
   url: https://firefly.adobe.com
+  # Page is client-rendered and yields no text to scripted fetches
+  # (content watch 2026-07-21); owner confirmed live in a browser
+  # 2026-07-21.
+  verify: skip
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-21
   blurb: Adobe's image generation, trained on licensed and public-domain content, which makes it the conservative choice when questions about training-data provenance or commercial use matter.
 
 - name: Ideogram
@@ -556,7 +563,10 @@
   cost: freemium
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-06-12
+  # Re-read 2026-07-21 against the live page (content-watch flag): video
+  # generation and the free tier both confirmed; the page now also
+  # offers image generation, not claimed in the blurb.
+  last_reviewed: 2026-07-21
   blurb: Fast video generator from the Chinese lab MiniMax with a usable free tier, a practical way to try video generation without paying.
 
 - name: HeyGen
@@ -757,3 +767,47 @@
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-07-15
   blurb: Open-source desktop application for downloading and chatting with open-weights models fully offline, similar in role to LM Studio but Apache 2.0 licensed. Runs on Windows, macOS, and Linux.
+
+# The next four were added 2026-07-21 from tool-discovery issue #21
+# (owner approved). Facts and blurbs come from the survey's fetched-page
+# verification with its audit corrections applied, recorded in the issue.
+
+- name: Rayyan
+  vendor: Rayyan Systems
+  category: research
+  url: https://www.rayyan.ai/
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-21
+  blurb: Web platform for systematic and literature reviews that handles reference import, duplicate detection, and title and abstract screening across a review team. Artificial intelligence features rank records by predicted relevance on every plan including the free one, while automated data extraction requires the Advanced plan or higher.
+
+- name: Covidence
+  vendor: Covidence
+  category: research
+  url: https://www.covidence.org/
+  cost: paid
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-21
+  blurb: Web platform for managing systematic reviews with a team, covering screening, data extraction, and reporting aligned to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) standard. Artificial intelligence features sort records by predicted relevance, tag randomized controlled trials, and suggest data extraction values that reviewers accept or reject one at a time.
+
+- name: BioRender
+  vendor: BioRender
+  category: presentations_design
+  url: https://www.biorender.com
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply. The free tier is for educational use only and grants no publication rights; check your plan before a figure goes into a manuscript.
+  last_reviewed: 2026-07-21
+  blurb: Web-based tool for building scientific figures, slides, and posters from a library of biomedical icons and templates. Its artificial intelligence features convert uploaded images to the platform's style, edit icons from text prompts, and draft flowcharts, protocols, and timelines from written descriptions.
+
+- name: Adobe Podcast
+  vendor: Adobe
+  category: music_audio
+  url: https://podcast.adobe.com
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-21
+  blurb: Web tool from Adobe for cleaning up and editing spoken audio. Its Enhance Speech filter removes background noise and echo from voice recordings, and can separate speech, background noise, and music into layers that are adjusted independently.

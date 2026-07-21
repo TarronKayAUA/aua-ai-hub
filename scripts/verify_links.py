@@ -42,6 +42,10 @@ TIMEOUT = 15
 # Re-verify in a browser when touching an entry that uses one.
 MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
+    # 403s scripted clients; project confirmed alive via its GitHub
+    # repository (tool survey 2026-07-15); owner-approved allowlist
+    # 2026-07-21.
+    "openwebui.com": "2026-07-21",
     # 403s all scripted clients; confirmed live in a browser.
     "nabututor.com": "2026-07-14",
     # 403s all scripted clients; confirmed live in a browser.

@@ -90,3 +90,18 @@
   support: "Organizer-stated: $100,000 in total cash prizes, Dev Day/Exchange passes, Pro Account for 1 year, promotion by OpenAI Developers, meeting with the Codex Team"
   relevance: Major AI model provider hackathon with substantial prizes, online format open to international participants, and relevant ML/AI focus for medical students and faculty.
   verified: 2026-07-13
+
+# Verified 2026-07-21 on the grand-challenge.org page: registration
+# opened July 15, 2026; Phase I submissions due September 14, 2026 with
+# evaluation through September 30 and a Phase II for the top five teams;
+# containerized submissions run on the platform; no entry fee stated.
+- name: CLEAR-EC
+  url: https://clear-ec.grand-challenge.org/
+  organizer: University of Pennsylvania (on grand-challenge.org)
+  type: challenge
+  format: virtual
+  eligibility: Open registration through the grand-challenge.org platform; no restrictions stated on the official page
+  deadline: 2026-09-14
+  start_date: 2026-07-15
+  relevance: Medical imaging challenge (predicting corneal graft quality metrics from specular microscopy images), a concrete entry point into clinical AI for students and faculty.
+  verified: 2026-07-21
