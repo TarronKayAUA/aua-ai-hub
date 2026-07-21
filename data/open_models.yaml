@@ -209,3 +209,19 @@
   license: Health AI Developer Foundations
   last_reviewed: 2026-07-15
   blurb: Google's open medical variants of Gemma, trained for medical text and image comprehension across radiology, pathology, dermatology, and medical records. Downloading requires accepting Google's Health AI Developer Foundations terms, which permit research and commercial use.
+
+# Auto-verified 2026-07-21: license apache-2.0 from the Hugging Face card tag; repository chosen from search results against the news evidence.
+- name: Bonsai 27B
+  vendor: PrismML
+  url: https://huggingface.co/prism-ml/Bonsai-27B-gguf
+  license: Apache 2.0
+  last_reviewed: 2026-07-21
+  blurb: Bonsai 27B is PrismML's 27B-parameter open-weight model, built on Qwen3.6 27B and compressed via ternary and 1-bit quantization to run locally on phones and laptops with a 262K-token context, released under the Apache 2.0 license.
+
+# Auto-verified 2026-07-21: license apache-2.0 from the Hugging Face card tag; repository chosen from search results against the news evidence.
+- name: Inkling
+  vendor: Thinking Machines Lab
+  url: https://huggingface.co/thinkingmachines/Inkling
+  license: Apache 2.0
+  last_reviewed: 2026-07-21
+  blurb: Inkling is Thinking Machines Lab's first open-weights model, a Mixture-of-Experts transformer with 975B total parameters (41B active) and up to a 1M token context window, released under the Apache 2.0 license.

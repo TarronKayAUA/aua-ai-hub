@@ -299,7 +299,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-01
+  last_reviewed: 2026-07-21
   blurb: Visual literature mapping from seed papers, surfacing related work, shared authorship, and citation neighborhoods, with a feature-complete free tier.
 
 # Medical Learning: student-facing study tools. Listings are not
@@ -493,7 +493,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-21
   blurb: OpenAI's image generation inside ChatGPT, strong at following detailed instructions and rendering readable text, which suits diagrams and slide artwork.
 
 - name: Adobe Firefly
@@ -513,7 +513,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-21
   blurb: Image generator particularly good at legible text inside images, useful for posters, badges, and labeled figures.
 
 # --- Video Generation (owner approved 2026-06-12; OpenAI's Sora was
@@ -536,7 +536,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-21
   blurb: Video generation and editing platform aimed at production work, with fine control over camera moves, motion, and character consistency.
 
 - name: Kling
@@ -566,7 +566,7 @@
   cost: freemium
   governance_status: caution
   status_note: Avatar and voice features require documented consent before using any real person's face or voice.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-21
   blurb: Generates presenter-style videos with artificial intelligence avatars, including translated, lip-synced versions of existing recordings.
 
 - name: Synthesia
@@ -576,7 +576,7 @@
   cost: freemium
   governance_status: caution
   status_note: Avatar and voice features require documented consent before using any real person's face or voice.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-21
   blurb: Avatar video platform for training and instructional content. Turns a script or document into a narrated presenter video without filming.
 
 # --- Music and Audio (owner approved 2026-06-12) ----------------------------
@@ -588,7 +588,7 @@
   cost: freemium
   governance_status: caution
   status_note: Training-data copyright litigation is ongoing; check output-use terms before publishing generated music.
-  last_reviewed: 2026-06-12
+  last_reviewed: 2026-07-21
   blurb: Generates complete songs with vocals from a text description. The most widely used music generator, with a free tier.
 
 - name: Udio
