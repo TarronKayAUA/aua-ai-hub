@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=-W2JdSl1v48" target="_blank" rel="noopener" title="Is Fine-Tuning Still Needed? LLMs, RAG, &amp; LoRA">
+  <img src="https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg" alt="Video: Fine-tuning, RAG, and LoRA in modern LLM workflows" loading="lazy">
+  <span class="video-card-title">Fine-tuning, RAG, and LoRA in modern LLM workflows</span>
+  <span class="video-card-meta">IBM Technology, July 21, 2026</span>
+  <span class="video-card-desc">Exploration of whether fine-tuning remains necessary in modern AI workflows, comparing it with retrieval-augmented generation and parameter-efficient methods like LoRA.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Wlh1na7rB4o" target="_blank" rel="noopener" title="Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?">
   <img src="https://i4.ytimg.com/vi/Wlh1na7rB4o/hqdefault.jpg" alt="Video: Testing Qwen 3.8 MAX open-weight model" loading="lazy">
   <span class="video-card-title">Testing Qwen 3.8 MAX open-weight model</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Sol, Terra, and Luna, our GPT‑5.6 family of models are here.</span>
   <span class="video-card-meta">OpenAI, July 9, 2026</span>
   <span class="video-card-desc">OpenAI releases GPT-5.6 family of models Sol, Terra, Luna across ChatGPT, Codex, and the API.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=ZVPlLaehjLk" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/ZVPlLaehjLk/hqdefault.jpg" alt="Video: Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production" loading="lazy">
-  <span class="video-card-title">Agentic AI Frameworks Explained: Workflows, Multi-Agent, &amp; Production</span>
-  <span class="video-card-meta">IBM Technology, July 9, 2026</span>
-  <span class="video-card-desc">Overview of agentic AI frameworks, covering workflow design, multi-agent systems, and production deployment considerations.</span>
 </a>
 </div>
 

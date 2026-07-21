@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A secure sandbox interface is now available for testing artificial intelligence tools in patient portal message management, allowing evaluation without risk to clinical systems or patient data <a href="https://medinform.jmir.org/2026/1/e83216">[3]</a>. Clinical practice is further shaped by the incorporation of large language models that combine clinical text and structured measurements, supporting prediction tasks drawing from multimodal patient data <a href="https://arxiv.org/abs/2607.15380">[4]</a>. Efforts to generate guideline-concordant recommendations for diabetic kidney disease management through retrieval-augmented models address safety and regulatory requirements <a href="https://www.nature.com/articles/s41746-026-03035-0">[7]</a>. Recent studies compare human and AI judgments in assessing generative AI performance, with implications for scalability and reliability in global health settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[6]</a>. The application of interpretable multimodal deep learning improves time-resolved survival prediction after hepatocellular carcinoma resection, demonstrating advances in precision medicine <a href="https://www.nature.com/articles/s41746-026-03027-0">[10]</a>.</p>
-<p>Also this week: the section holds eight new model releases, five papers on assessment, two items on clinical documentation, and one analysis of imaging and diagnostics. Coverage includes machine unlearning for governance in clinical AI and reinforcement learning for sepsis treatment decision-making.</p>
+<p>Medical AI systems are advancing in clinical decision support, with recent research highlighting the evolution from traditional tools to agents capable of planning, action, reflection, and memory for workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Language models are increasingly integrated into clinical guidelines, but concerns remain regarding the risk of false confidence in automated recommendations <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>. Locally executable AI platforms are now being evaluated for preoperative patient communication, showing promise in reducing risks related to hallucination and privacy compromise compared to cloud-based systems <a href="https://medinform.jmir.org/2026/1/e89173">[2]</a>. Comprehensive frameworks for multimodal clinical prediction tasks are under development, combining free-text narratives and structured electronic health data to enhance accuracy <a href="https://arxiv.org/abs/2607.15380">[7]</a>. Studies also address guideline-concordant recommendations for chronic disease management and interpretable AI models for survival prediction in complex cases <a href="https://www.nature.com/articles/s41746-026-03035-0">[10]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[13]</a>.</p>
+<p>Also this week: six items on clinical decision support and five studies focused on safety and evaluation are included. The section covers AI tools for imaging data analysis and secure testing interfaces for patient message management, as well as research on agent-based narrative generation for public health and practical automation of research impact summaries.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92584">Medical AI Agents for Clinical Decision Support: Viewpoint Using the Planning, Action, Reflection, and Memory (PARM) Analytical Lens</a>
+    <p class="news-card-summary">A viewpoint describes medical AI agents incorporating planning, action, reflection, and memory as an evolution beyond traditional clinical decision support toward multistep workflow-oriented assistance.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89173">A Locally Executable AI System for Improving Preoperative Patient Communication: Multidomain Clinical Evaluation</a>
+    <p class="news-card-summary">A locally executable AI system improves preoperative patient communication by mitigating hallucination risk, protecting data privacy, and reducing energy costs compared to cloud-based large language models.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 21, 2026</span></div>
@@ -113,19 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264310821-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03034-1">Reinforcement learning for treatment decision-making in sepsis: a scoping review</a>
-    <p class="news-card-summary">Scoping review examines reinforcement learning methods for sepsis treatment decision-making, synthesizing evidence on machine learning approaches to optimize clinical interventions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03004-7">Research landscape of robot-assisted reconstructive and plastic surgery</a>
-    <p class="news-card-summary">Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.</p>
-  </div>
 </div>
 </div>

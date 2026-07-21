@@ -21028,6 +21028,108 @@
    "first_seen": "2026-07-21T10:34:25.583401+00:00",
    "kept": false,
    "reason": "speculation and rumor coverage without substantive news; clickbait framing obscures actual content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/21/nativ",
+   "title_hash": "fcb7035ec14473e178f964ee5fcc69db",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": true,
+   "title": "Nativ: Run AI models locally on your Mac",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-21T14:22:27+00:00",
+   "summary": "Nativ, a new macOS application, enables local execution of vision and language models via MLX with a chat interface and API server.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e92584",
+   "title_hash": "600eef42720792a2a4d3a71c9b39a82a",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": true,
+   "title": "Medical AI Agents for Clinical Decision Support: Viewpoint Using the Planning, Action, Reflection, and Memory (PARM) Analytical Lens",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-21T13:30:12+00:00",
+   "summary": "A viewpoint describes medical AI agents incorporating planning, action, reflection, and memory as an evolution beyond traditional clinical decision support toward multistep workflow-oriented assistance.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e89173",
+   "title_hash": "b00451ca169e5faced7e8482caeae880",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": true,
+   "title": "A Locally Executable AI System for Improving Preoperative Patient Communication: Multidomain Clinical Evaluation",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-21T13:30:12+00:00",
+   "summary": "A locally executable AI system improves preoperative patient communication by mitigating hallucination risk, protecting data privacy, and reducing energy costs compared to cloud-based large language models.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.theverge.com/tech/968255/halliday-gen-2-smart-glasses-hands-on-ai-wearables",
+   "title_hash": "ffb0387e2252f3ba4b96d67daffa8123",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": false,
+   "reason": "off-topic hardware review with no AI relevance"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq",
+   "title_hash": "76edf04cf95096a910849782fa2e4147",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": false,
+   "reason": "discussion transcript with no new announcement or development"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-coding-assistant-china-anthropic",
+   "title_hash": "3707ffa90af65e4ef97c5b0ae3cf061e",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": true,
+   "title": "China’s Low-Priced Z.ai Model Is Exposing Costly Coder Habits",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-07-21T12:00:01+00:00",
+   "summary": "China's Z.ai model demonstrates competitive coding capability at lower cost, prompting developers to adopt cost-aware strategies that route straightforward tasks to cheaper models and complex problems to frontier systems.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/a-smartphone-running-a-chinese-ai-application-called-z-ai.jpg?id=67508250&width=980",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2g9bc/ceo_of_hugging_face_banning_opensource_ai_would",
+   "title_hash": "a770f1b16cc571ce1fa5e28b8a53d220",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": false,
+   "reason": "policy speculation and rumor without confirmed reporting"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/968136/chinese-ai-models-another-sputnik-moment",
+   "title_hash": "6929c82ee8b77a33f217569c1978c77b",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": false,
+   "reason": "commentary without substantive new information about specific developments"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2bf3t/us_govt_lobbied_by_major_us_labs_is_about_to_ban",
+   "title_hash": "9aeefc1dbb7f67f878e50f2a21659121",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": false,
+   "reason": "unsubstantiated rumor with no reporting or primary source"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=-W2JdSl1v48",
+   "title_hash": "da6e2945a028a587d910b1ab68fdc987",
+   "first_seen": "2026-07-21T14:25:02.448660+00:00",
+   "kept": true,
+   "title": "Is Fine-Tuning Still Needed? LLMs, RAG, & LoRA",
+   "source": "IBM Technology",
+   "published": "2026-07-21T11:00:28+00:00",
+   "summary": "Exploration of whether fine-tuning remains necessary in modern AI workflows, comparing it with retrieval-augmented generation and parameter-efficient methods like LoRA.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg",
+   "display_title": "Fine-tuning, RAG, and LoRA in modern LLM workflows"
   }
  ],
  "digests": [
@@ -21169,13 +21271,13 @@
    "date": "July 21, 2026"
   },
   "clinical_practice": {
-   "text": "A secure sandbox interface is now available for testing artificial intelligence tools in patient portal message management, allowing evaluation without risk to clinical systems or patient data <a href=\"https://medinform.jmir.org/2026/1/e83216\">[3]</a>. Clinical practice is further shaped by the incorporation of large language models that combine clinical text and structured measurements, supporting prediction tasks drawing from multimodal patient data <a href=\"https://arxiv.org/abs/2607.15380\">[4]</a>. Efforts to generate guideline-concordant recommendations for diabetic kidney disease management through retrieval-augmented models address safety and regulatory requirements <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[7]</a>. Recent studies compare human and AI judgments in assessing generative AI performance, with implications for scalability and reliability in global health settings <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[6]</a>. The application of interpretable multimodal deep learning improves time-resolved survival prediction after hepatocellular carcinoma resection, demonstrating advances in precision medicine <a href=\"https://www.nature.com/articles/s41746-026-03027-0\">[10]</a>.\n\nAlso this week: the section holds eight new model releases, five papers on assessment, two items on clinical documentation, and one analysis of imaging and diagnostics. Coverage includes machine unlearning for governance in clinical AI and reinforcement learning for sepsis treatment decision-making.",
-   "hash": "8123cdca861a83b0",
+   "text": "Medical AI systems are advancing in clinical decision support, with recent research highlighting the evolution from traditional tools to agents capable of planning, action, reflection, and memory for workflow-oriented assistance <a href=\"https://medinform.jmir.org/2026/1/e92584\">[1]</a>. Language models are increasingly integrated into clinical guidelines, but concerns remain regarding the risk of false confidence in automated recommendations <a href=\"https://www.sensible-med.com/p/guidelines-llms-and-the-laundering\">[3]</a>. Locally executable AI platforms are now being evaluated for preoperative patient communication, showing promise in reducing risks related to hallucination and privacy compromise compared to cloud-based systems <a href=\"https://medinform.jmir.org/2026/1/e89173\">[2]</a>. Comprehensive frameworks for multimodal clinical prediction tasks are under development, combining free-text narratives and structured electronic health data to enhance accuracy <a href=\"https://arxiv.org/abs/2607.15380\">[7]</a>. Studies also address guideline-concordant recommendations for chronic disease management and interpretable AI models for survival prediction in complex cases <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[10]</a> <a href=\"https://www.nature.com/articles/s41746-026-03027-0\">[13]</a>.\n\nAlso this week: six items on clinical decision support and five studies focused on safety and evaluation are included. The section covers AI tools for imaging data analysis and secure testing interfaces for patient message management, as well as research on agent-based narrative generation for public health and practical automation of research impact summaries.",
+   "hash": "6f4a803773d01098",
    "date": "July 21, 2026"
   },
   "general_ai": {
-   "text": "Studies have shown that language models may commit to answers before completing their reasoning, then post-hoc justify those answers or even contradict core task premises, with neural evidence indicating early answer activation <a href=\"https://arxiv.org/abs/2607.16451\">[1]</a>. A conformal prediction framework has been proposed to improve self-correction and enhance statistical validity in scientific outputs from these models <a href=\"https://arxiv.org/abs/2607.16704\">[3]</a>. Meanwhile, benchmarks have evaluated frontier models&#x27; performance across knowledge work and analytical business tasks, going beyond coding or simple recall to measure analytical reasoning <a href=\"https://arxiv.org/abs/2607.16057\">[9]</a>. Research indicates that a reliability ceiling exists for generative tasks, governed by information-theoretic factors and context uncertainty <a href=\"https://arxiv.org/abs/2607.14112\">[11]</a>. Evidence also suggests models can develop hiring biases independently from their training data, raising concerns for fair employment screening <a href=\"https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans\">[8]</a>.\n\nAlso this week: the page includes four new model releases and six safety and reliability papers. Nativ enables local deployment of frontier language models on Mac computers, while OpenLanguageModel offers a transparent pretraining library for educational and research use.",
-   "hash": "75b7a0963ab89b47",
+   "text": "A study has provided preliminary neural evidence that language models may commit to answers before completing their reasoning, sometimes justifying responses post-hoc even when they contradict task premises <a href=\"https://arxiv.org/abs/2607.16451\">[3]</a>. This behavioral finding is relevant as attention turns to AI model safety and reliability, particularly in scientific applications. A new approach using conformal prediction offers statistical validity for language model outputs in scientific generation, addressing current concerns over frequent violations of scientific principles <a href=\"https://arxiv.org/abs/2607.16704\">[5]</a>. Meanwhile, industry developments continue, including a UK government analysis indicating that open-weight models are closing the performance gap with closed systems in cybersecurity tasks <a href=\"https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan\">[8]</a>, and major Chinese companies reporting competitive models with lower cost claims compared to leading American providers <a href=\"https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen\">[9]</a>.\n\nAlso this week: there are six new model releases, including tools that allow vision and language models to run locally on Mac computers <a href=\"https://simonwillison.net/2026/Jul/21/nativ\">[1]</a>. Four papers address safety and reliability, such as research showing language models may form biases in hiring decisions. One benchmark explored frontier model performance in business and analytical tasks.",
+   "hash": "1760cb465b8c86b3",
    "date": "July 21, 2026"
   }
  },

@@ -358,15 +358,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A secure sandbox interface is now available for testing artificial intelligence tools in patient portal message management, allowing evaluation without risk to clinical systems or patient data <a href="https://medinform.jmir.org/2026/1/e83216">[3]</a>. Clinical practice is further shaped by the incorporation of large language models that combine clinical text and structured measurements, supporting prediction tasks drawing from multimodal patient data <a href="https://arxiv.org/abs/2607.15380">[4]</a>. Efforts to generate guideline-concordant recommendations for diabetic kidney disease management through retrieval-augmented models address safety and regulatory requirements <a href="https://www.nature.com/articles/s41746-026-03035-0">[7]</a>. Recent studies compare human and AI judgments in assessing generative AI performance, with implications for scalability and reliability in global health settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[6]</a>. The application of interpretable multimodal deep learning improves time-resolved survival prediction after hepatocellular carcinoma resection, demonstrating advances in precision medicine <a href="https://www.nature.com/articles/s41746-026-03027-0">[10]</a>.</p>
-<p>Also this week: the section holds eight new model releases, five papers on assessment, two items on clinical documentation, and one analysis of imaging and diagnostics. Coverage includes machine unlearning for governance in clinical AI and reinforcement learning for sepsis treatment decision-making.</p>
+<p>Medical AI systems are advancing in clinical decision support, with recent research highlighting the evolution from traditional tools to agents capable of planning, action, reflection, and memory for workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Language models are increasingly integrated into clinical guidelines, but concerns remain regarding the risk of false confidence in automated recommendations <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>. Locally executable AI platforms are now being evaluated for preoperative patient communication, showing promise in reducing risks related to hallucination and privacy compromise compared to cloud-based systems <a href="https://medinform.jmir.org/2026/1/e89173">[2]</a>. Comprehensive frameworks for multimodal clinical prediction tasks are under development, combining free-text narratives and structured electronic health data to enhance accuracy <a href="https://arxiv.org/abs/2607.15380">[7]</a>. Studies also address guideline-concordant recommendations for chronic disease management and interpretable AI models for survival prediction in complex cases <a href="https://www.nature.com/articles/s41746-026-03035-0">[10]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[13]</a>.</p>
+<p>Also this week: six items on clinical decision support and five studies focused on safety and evaluation are included. The section covers AI tools for imaging data analysis and secure testing interfaces for patient message management, as well as research on agent-based narrative generation for public health and practical automation of research impact summaries.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92584">Medical AI Agents for Clinical Decision Support: Viewpoint Using the Planning, Action, Reflection, and Memory (PARM) Analytical Lens</a>
+        <p class="news-card-summary">A viewpoint describes medical AI agents incorporating planning, action, reflection, and memory as an evolution beyond traditional clinical decision support toward multistep workflow-oriented assistance.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89173">A Locally Executable AI System for Improving Preoperative Patient Communication: Multidomain Clinical Evaluation</a>
+        <p class="news-card-summary">A locally executable AI system improves preoperative patient communication by mitigating hallucination risk, protecting data privacy, and reducing energy costs compared to cloud-based large language models.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 21, 2026</span></div>
@@ -670,20 +684,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03000-x">Fairness in multimodal machine learning applications in clinical decision support: a systematic review</a>
-        <p class="news-card-summary">Systematic review of fairness issues in multimodal machine learning systems for clinical decision support.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02977-9">Transformer-DAPT: AI-based dynamic assessment of ischemic and bleeding risks in patients on DAPT following PCI</a>
-        <p class="news-card-summary">Peer-reviewed study describes a transformer-based model for predicting ischemic and bleeding risks in patients receiving dual antiplatelet therapy after coronary intervention.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
@@ -725,15 +725,30 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Studies have shown that language models may commit to answers before completing their reasoning, then post-hoc justify those answers or even contradict core task premises, with neural evidence indicating early answer activation <a href="https://arxiv.org/abs/2607.16451">[1]</a>. A conformal prediction framework has been proposed to improve self-correction and enhance statistical validity in scientific outputs from these models <a href="https://arxiv.org/abs/2607.16704">[3]</a>. Meanwhile, benchmarks have evaluated frontier models&#x27; performance across knowledge work and analytical business tasks, going beyond coding or simple recall to measure analytical reasoning <a href="https://arxiv.org/abs/2607.16057">[9]</a>. Research indicates that a reliability ceiling exists for generative tasks, governed by information-theoretic factors and context uncertainty <a href="https://arxiv.org/abs/2607.14112">[11]</a>. Evidence also suggests models can develop hiring biases independently from their training data, raising concerns for fair employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[8]</a>.</p>
-<p>Also this week: the page includes four new model releases and six safety and reliability papers. Nativ enables local deployment of frontier language models on Mac computers, while OpenLanguageModel offers a transparent pretraining library for educational and research use.</p>
+<p>A study has provided preliminary neural evidence that language models may commit to answers before completing their reasoning, sometimes justifying responses post-hoc even when they contradict task premises <a href="https://arxiv.org/abs/2607.16451">[3]</a>. This behavioral finding is relevant as attention turns to AI model safety and reliability, particularly in scientific applications. A new approach using conformal prediction offers statistical validity for language model outputs in scientific generation, addressing current concerns over frequent violations of scientific principles <a href="https://arxiv.org/abs/2607.16704">[5]</a>. Meanwhile, industry developments continue, including a UK government analysis indicating that open-weight models are closing the performance gap with closed systems in cybersecurity tasks <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[8]</a>, and major Chinese companies reporting competitive models with lower cost claims compared to leading American providers <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[9]</a>.</p>
+<p>Also this week: there are six new model releases, including tools that allow vision and language models to run locally on Mac computers <a href="https://simonwillison.net/2026/Jul/21/nativ">[1]</a>. Four papers address safety and reliability, such as research showing language models may form biases in hiring decisions. One benchmark explored frontier model performance in business and analytical tasks.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="new-models">New models (17)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/21/nativ">Nativ: Run AI models locally on your Mac</a>
+        <p class="news-card-summary">Nativ, a new macOS application, enables local execution of vision and language models via MLX with a chat interface and API server.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/ai-coding-assistant-china-anthropic">China’s Low-Priced Z.ai Model Is Exposing Costly Coder Habits</a>
+        <p class="news-card-summary">China&#x27;s Z.ai model demonstrates competitive coding capability at lower cost, prompting developers to adopt cost-aware strategies that route straightforward tasks to cheaper models and complex problems to frontier systems.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-smartphone-running-a-chinese-ai-application-called-z-ai.jpg?id=67508250&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
@@ -1080,9 +1095,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 13 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=-W2JdSl1v48" target="_blank" rel="noopener" title="Is Fine-Tuning Still Needed? LLMs, RAG, &amp; LoRA">
+      <img src="https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg" alt="Video: Fine-tuning, RAG, and LoRA in modern LLM workflows" loading="lazy">
+      <span class="video-card-title">Fine-tuning, RAG, and LoRA in modern LLM workflows</span>
+      <span class="video-card-meta">IBM Technology, July 21, 2026</span>
+      <span class="video-card-desc">Exploration of whether fine-tuning remains necessary in modern AI workflows, comparing it with retrieval-augmented generation and parameter-efficient methods like LoRA.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=Wlh1na7rB4o" target="_blank" rel="noopener" title="Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?">
       <img src="https://i4.ytimg.com/vi/Wlh1na7rB4o/hqdefault.jpg" alt="Video: Testing Qwen 3.8 MAX open-weight model" loading="lazy">
       <span class="video-card-title">Testing Qwen 3.8 MAX open-weight model</span>
@@ -1130,36 +1151,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">GPT-Live next-generation voice model</span>
       <span class="video-card-meta">OpenAI, July 14, 2026</span>
       <span class="video-card-desc">OpenAI presents GPT-Live, a next-generation voice model with improved capabilities for real-time interaction.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=OWPRU_Pc4Ng" target="_blank" rel="noopener" title="5 More AI Myths &amp; The Truth Behind Them: ML, Context, Agents &amp; More">
-      <img src="https://i4.ytimg.com/vi/OWPRU_Pc4Ng/hqdefault.jpg" alt="Video: Five AI myths explained" loading="lazy">
-      <span class="video-card-title">Five AI myths explained</span>
-      <span class="video-card-meta">IBM Technology, July 14, 2026</span>
-      <span class="video-card-desc">IBM explainer on common misconceptions about machine learning, context windows, AI agents, and related topics.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=gI5d2czu9JE" target="_blank" rel="noopener" title="Meta Muse Spark 1.1 IS UNDERRATED! Beats Opus 4.8 &amp; Grok 4.5! (Fully Tested)">
-      <img src="https://i4.ytimg.com/vi/gI5d2czu9JE/hqdefault.jpg" alt="Video: Meta Muse Spark 1.1 benchmark testing" loading="lazy">
-      <span class="video-card-title">Meta Muse Spark 1.1 benchmark testing</span>
-      <span class="video-card-meta">WorldofAI, July 14, 2026</span>
-      <span class="video-card-desc">Hands-on benchmark comparison of Meta Muse Spark 1.1 against Claude Opus 4.8 and Grok 4.5 across multiple tests.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=oanQrXEiCy4" target="_blank" rel="noopener" title="What is an AI Code Generator? LLM Coding, Productivity, &amp; Risk">
-      <img src="https://i4.ytimg.com/vi/oanQrXEiCy4/hqdefault.jpg" alt="Video: AI code generators and their risks" loading="lazy">
-      <span class="video-card-title">AI code generators and their risks</span>
-      <span class="video-card-meta">IBM Technology, July 13, 2026</span>
-      <span class="video-card-desc">IBM overview of how AI code generators work, their productivity benefits, and associated risks and trust considerations.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=LgGJz528Boo" target="_blank" rel="noopener" title="DeepSeek V4.1 GA Soon, GPT-5.6 SOL Nerfed? HUGE Fable Update, US AI BAN Protests, &amp; More! AI NEWS">
-      <img src="https://i1.ytimg.com/vi/LgGJz528Boo/hqdefault.jpg" alt="Video: AI news roundup with model updates and benchmarks" loading="lazy">
-      <span class="video-card-title">AI news roundup with model updates and benchmarks</span>
-      <span class="video-card-meta">WorldofAI, July 13, 2026</span>
-      <span class="video-card-desc">AI news roundup covering DeepSeek V4.1, model updates, and regulatory developments with benchmark comparisons.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=SVAwzodyFUo" target="_blank" rel="noopener" title="How to Manage Your AI Before It Makes the Wrong Decision">
-      <img src="https://i4.ytimg.com/vi/SVAwzodyFUo/hqdefault.jpg" alt="Video: Managing AI systems and decision-making" loading="lazy">
-      <span class="video-card-title">Managing AI systems and decision-making</span>
-      <span class="video-card-meta">IBM Technology, July 12, 2026</span>
-      <span class="video-card-desc">IBM explanation of AI governance and decision management practices to ensure responsible deployment and reduce model errors.</span>
     </a>
     </div>
 

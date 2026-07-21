@@ -13,14 +13,29 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Studies have shown that language models may commit to answers before completing their reasoning, then post-hoc justify those answers or even contradict core task premises, with neural evidence indicating early answer activation <a href="https://arxiv.org/abs/2607.16451">[1]</a>. A conformal prediction framework has been proposed to improve self-correction and enhance statistical validity in scientific outputs from these models <a href="https://arxiv.org/abs/2607.16704">[3]</a>. Meanwhile, benchmarks have evaluated frontier models&#x27; performance across knowledge work and analytical business tasks, going beyond coding or simple recall to measure analytical reasoning <a href="https://arxiv.org/abs/2607.16057">[9]</a>. Research indicates that a reliability ceiling exists for generative tasks, governed by information-theoretic factors and context uncertainty <a href="https://arxiv.org/abs/2607.14112">[11]</a>. Evidence also suggests models can develop hiring biases independently from their training data, raising concerns for fair employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[8]</a>.</p>
-<p>Also this week: the page includes four new model releases and six safety and reliability papers. Nativ enables local deployment of frontier language models on Mac computers, while OpenLanguageModel offers a transparent pretraining library for educational and research use.</p>
+<p>A study has provided preliminary neural evidence that language models may commit to answers before completing their reasoning, sometimes justifying responses post-hoc even when they contradict task premises <a href="https://arxiv.org/abs/2607.16451">[3]</a>. This behavioral finding is relevant as attention turns to AI model safety and reliability, particularly in scientific applications. A new approach using conformal prediction offers statistical validity for language model outputs in scientific generation, addressing current concerns over frequent violations of scientific principles <a href="https://arxiv.org/abs/2607.16704">[5]</a>. Meanwhile, industry developments continue, including a UK government analysis indicating that open-weight models are closing the performance gap with closed systems in cybersecurity tasks <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[8]</a>, and major Chinese companies reporting competitive models with lower cost claims compared to leading American providers <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[9]</a>.</p>
+<p>Also this week: there are six new model releases, including tools that allow vision and language models to run locally on Mac computers <a href="https://simonwillison.net/2026/Jul/21/nativ">[1]</a>. Four papers address safety and reliability, such as research showing language models may form biases in hiring decisions. One benchmark explored frontier model performance in business and analytical tasks.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/21/nativ">Nativ: Run AI models locally on your Mac</a>
+    <p class="news-card-summary">Nativ, a new macOS application, enables local execution of vision and language models via MLX with a chat interface and API server.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-coding-assistant-china-anthropic">China’s Low-Priced Z.ai Model Is Exposing Costly Coder Habits</a>
+    <p class="news-card-summary">China&#x27;s Z.ai model demonstrates competitive coding capability at lower cost, prompting developers to adopt cost-aware strategies that route straightforward tasks to cheaper models and complex problems to frontier systems.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-smartphone-running-a-chinese-ai-application-called-z-ai.jpg?id=67508250&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
@@ -119,19 +134,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">PrismML created Bonsai, a 27-billion-parameter model quantized to 1.125 bits per weight, fitting in 3.9GB while retaining approximately 90 percent of benchmark performance and running on mobile devices.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/Z29wbnZ0ZjFoc2RoMYNmW7XUoGPceguvH8OPb5Eb_TxAIeLh42MnMxNtDYX4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d0c914491c817a040cf9c0ecf6c840d097a47716" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.14112">Information-Theoretic Limits of Reliability and Scaling in Language Models</a>
-    <p class="news-card-summary">Research demonstrates that every generative task has an information-theoretic reliability ceiling beyond which no model can perform, with gaps determined by resolvable output uncertainty from context.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.14147">Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak</a>
-    <p class="news-card-summary">Study of prefill jailbreak attacks on aligned language models reveals that harm representations remain detectable even when models switch to compliance, suggesting failures in output decision formation rather than representation.</p>
-  </div>
 </div>
 </div>
