@@ -42,6 +42,11 @@ TIMEOUT = 15
 # Re-verify in a browser when touching an entry that uses one.
 MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
+    # Began 403ing scripted clients in July 2026 (conference watch and
+    # link check, 2026-07-17 to 07-21); owner confirmed live in a
+    # browser 2026-07-21, page still showing SAIL 2026, May 5-8,
+    # Rio Grande, matching the calendar entry.
+    "sail.health": "2026-07-21",
     # 403s scripted clients; project confirmed alive via its GitHub
     # repository (tool survey 2026-07-15); owner-approved allowlist
     # 2026-07-21.
