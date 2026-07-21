@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
@@ -331,34 +331,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.</p>
       </div>
     </div>
-    <div class="news-card">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92420">A National Exploration of Medical Students’ Views Surrounding Skin Color Terminology in Undergraduate Education</a>
-        <p class="news-card-summary">Study examines UK medical students&#x27; preferences for skin color terminology in medical education to support more inclusive clinical language.</p>
-      </div>
-    </div>
-    <div class="news-card">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88695">AI-Generated Microlearning for Plastic Surgery Residency: Single-Arm Pre-Post Feasibility Study</a>
-        <p class="news-card-summary">A feasibility study evaluates AI-generated microlearning modules for plastic surgery residency training, assessing whether language models can support brief, focused education within fragmented clinical schedules.</p>
-      </div>
-    </div>
-    <div class="news-card">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">AI-Augmented Mentorship in Orthopedic Surgery: A Conceptual Framework for Expanding Access for Underrepresented and Less-Resourced Students</a>
-        <p class="news-card-summary">A conceptual framework proposes AI-augmented mentorship to expand access to orthopedic surgery training for underrepresented students and trainees from lower-resourced institutions.</p>
-      </div>
-    </div>
-    <div class="news-card">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&amp;ff=20260714151534&amp;v=2.20.0">Hotspot Evolution and Future Prospects of Large Language Models in Medical Education: A Bibliometric Analysis</a>
-        <p class="news-card-summary">Bibliometric analysis identifies rapid growth in large language model medical education research but flags gaps in empirical evidence, imbalanced research themes, and delayed governance frameworks.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
@@ -379,14 +351,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Medical AI systems are advancing in clinical decision support, with recent research highlighting the evolution from traditional tools to agents capable of planning, action, reflection, and memory for workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Language models are increasingly integrated into clinical guidelines, but concerns remain regarding the risk of false confidence in automated recommendations <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>. Locally executable AI platforms are now being evaluated for preoperative patient communication, showing promise in reducing risks related to hallucination and privacy compromise compared to cloud-based systems <a href="https://medinform.jmir.org/2026/1/e89173">[2]</a>. Comprehensive frameworks for multimodal clinical prediction tasks are under development, combining free-text narratives and structured electronic health data to enhance accuracy <a href="https://arxiv.org/abs/2607.15380">[7]</a>. Studies also address guideline-concordant recommendations for chronic disease management and interpretable AI models for survival prediction in complex cases <a href="https://www.nature.com/articles/s41746-026-03035-0">[10]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[13]</a>.</p>
-<p>Also this week: six items on clinical decision support and five studies focused on safety and evaluation are included. The section covers AI tools for imaging data analysis and secure testing interfaces for patient message management, as well as research on agent-based narrative generation for public health and practical automation of research impact summaries.</p>
+<p>Emerging work on guideline-adherent recommendations highlights retrieval-augmented large language models supporting diabetic kidney disease care as a way to anchor AI recommendations to established clinical standards <a href="https://www.nature.com/articles/s41746-026-03035-0">[11]</a>. Ongoing evolution is evident as medical AI agents integrate planning, action, reflection, and memory for multistep workflow assistance, potentially extending the reach of clinical decision support <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Multimodal learning approaches are advancing, as unified models combine clinical narratives and structured measurements for prediction tasks, and interpretable multimodal frameworks support survival prediction and cognitive impairment assessment <a href="https://arxiv.org/abs/2607.15380">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03048-9">[13]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[14]</a>. The interaction between large language models and clinical guidelines introduces renewed focus on the risks inherent to automated recommendations and potential false confidence, underscoring a need for careful evaluation <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>.</p>
+<p>Also this week: real-world deployment of remote sleep monitoring technologies highlights patterns linked to cognitive decline, and locally executable AI systems address privacy concerns in preoperative patient communication. Eight studies and systems explore clinical decision support, five focus on safety and evaluation, with contributions in imaging and diagnostics, clinical documentation, and patient-facing tools.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -415,6 +387,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2607.16989">Real-World Evaluation of an AI Agent Drafting Translational Impact Summaries</a>
         <p class="news-card-summary">Real-world evaluation of AI agent that automates assembly of research impact documentation for clinical and translational science programs, reducing manual staff work from 15 hours per scholar.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02964-0">Real-world deployment of remote sleep monitoring technologies reveals distinct patterns associated with cognitive decline</a>
+        <p class="news-card-summary">Real-world deployment of remote sleep monitoring identifies patterns associated with cognitive decline in older adults.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -696,20 +675,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02994-8">Interpretable agentic AI system with localized reasoning for radiology</a>
         <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.</p>
-      </div>
-    </div>
-    <div class="news-card">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90146">The Swiss Personalized Health Network Metadata Catalog: Platform for Health Data Discovery and Exploration Based on Findable, Accessible, Interoperable, and Reusable Principles</a>
-        <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
-      </div>
-    </div>
-    <div class="news-card">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02985-9">Safety boundary maintenance in consumer AI systems responding to pediatric health queries: a cross-platform benchmark evaluation under naturalistic and adversarially pressured conditions</a>
-        <p class="news-card-summary">A benchmark evaluation tests how consumer AI systems maintain safety boundaries when answering pediatric health questions under both realistic and adversarial conditions.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -1129,6 +1094,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=XSHTyq8Z9jA" target="_blank" rel="noopener" title="Gemini 3.6 Flash Is HERE, Testing Google’s BEST Model Yet!">
+      <img src="https://i1.ytimg.com/vi/XSHTyq8Z9jA/hqdefault.jpg" alt="Video: Gemini 3.6 Flash testing and technical overview" loading="lazy">
+      <span class="video-card-title">Gemini 3.6 Flash testing and technical overview</span>
+      <span class="video-card-meta">Bijan Bowen, July 21, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=-W2JdSl1v48" target="_blank" rel="noopener" title="Is Fine-Tuning Still Needed? LLMs, RAG, &amp; LoRA">
       <img src="https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg" alt="Video: Fine-tuning, RAG, and LoRA in modern LLM workflows" loading="lazy">
       <span class="video-card-title">Fine-tuning, RAG, and LoRA in modern LLM workflows</span>
@@ -1176,12 +1147,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Bonsai 27B model quantization comparison and local deployment</span>
       <span class="video-card-meta">Bijan Bowen, July 16, 2026</span>
       <span class="video-card-desc">Technical comparison of Bonsai 27B model across quantization methods including 1-bit, ternary, and full precision with local setup guidance.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=avpZWh6sm9M" target="_blank" rel="noopener" title="Improved Intelligence with GPT-Live">
-      <img src="https://i2.ytimg.com/vi/avpZWh6sm9M/hqdefault.jpg" alt="Video: GPT-Live next-generation voice model" loading="lazy">
-      <span class="video-card-title">GPT-Live next-generation voice model</span>
-      <span class="video-card-meta">OpenAI, July 14, 2026</span>
-      <span class="video-card-desc">OpenAI presents GPT-Live, a next-generation voice model with improved capabilities for real-time interaction.</span>
     </a>
     </div>
 

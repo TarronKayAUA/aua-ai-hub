@@ -21239,6 +21239,75 @@
    "first_seen": "2026-07-21T17:47:14.082131+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
+   "title_hash": "5738ed33556b47eb29efbabed504b249",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool",
+   "title_hash": "38d472d518b3f4df304b22b765ee58ef",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2ky1e/anthropic_claims_local_models_are_stealing_from",
+   "title_hash": "36e49a1fbc5959e1771f9525bf0484cb",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02964-0",
+   "title_hash": "d7d71e209388356cf66ac6d94851fcea",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": true,
+   "title": "Real-world deployment of remote sleep monitoring technologies reveals distinct patterns associated with cognitive decline",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-21T00:00:00+00:00",
+   "summary": "Real-world deployment of remote sleep monitoring identifies patterns associated with cognitive decline in older adults.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6BtIQIGqGJc",
+   "title_hash": "740055208075a588fa1083f8a6d0d101",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": false,
+   "reason": "promotional content with marketing integration, no substantive AI development or educational value"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XSHTyq8Z9jA",
+   "title_hash": "d22a196b50ca8455783a9bfc077a13cf",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": true,
+   "title": "Gemini 3.6 Flash Is HERE, Testing Google’s BEST Model Yet!",
+   "source": "Bijan Bowen",
+   "published": "2026-07-21T21:06:10+00:00",
+   "summary": "Hands-on testing of Google's Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/XSHTyq8Z9jA/hqdefault.jpg",
+   "display_title": "Gemini 3.6 Flash testing and technical overview"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=pKwRNdDtai0",
+   "title_hash": "929963a6949e6d2ff36d0bd3f0a4682e",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": false,
+   "reason": "routine product feature announcement from vendor's own channel, minor feature integration rather than significant capability change"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Fight-Over-Which-AI-Models-You-Can-Use-e3mceub",
+   "title_hash": "df761b0e95e81024325a9182a5cb746a",
+   "first_seen": "2026-07-21T21:33:58.397837+00:00",
+   "kept": false,
+   "reason": "daily news recap without substantive analysis or expert guest; policy coverage belongs only when it offers detailed explanation or informed perspective"
   }
  ],
  "digests": [
@@ -21380,8 +21449,8 @@
    "date": "July 21, 2026"
   },
   "clinical_practice": {
-   "text": "Medical AI systems are advancing in clinical decision support, with recent research highlighting the evolution from traditional tools to agents capable of planning, action, reflection, and memory for workflow-oriented assistance <a href=\"https://medinform.jmir.org/2026/1/e92584\">[1]</a>. Language models are increasingly integrated into clinical guidelines, but concerns remain regarding the risk of false confidence in automated recommendations <a href=\"https://www.sensible-med.com/p/guidelines-llms-and-the-laundering\">[3]</a>. Locally executable AI platforms are now being evaluated for preoperative patient communication, showing promise in reducing risks related to hallucination and privacy compromise compared to cloud-based systems <a href=\"https://medinform.jmir.org/2026/1/e89173\">[2]</a>. Comprehensive frameworks for multimodal clinical prediction tasks are under development, combining free-text narratives and structured electronic health data to enhance accuracy <a href=\"https://arxiv.org/abs/2607.15380\">[7]</a>. Studies also address guideline-concordant recommendations for chronic disease management and interpretable AI models for survival prediction in complex cases <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[10]</a> <a href=\"https://www.nature.com/articles/s41746-026-03027-0\">[13]</a>.\n\nAlso this week: six items on clinical decision support and five studies focused on safety and evaluation are included. The section covers AI tools for imaging data analysis and secure testing interfaces for patient message management, as well as research on agent-based narrative generation for public health and practical automation of research impact summaries.",
-   "hash": "6f4a803773d01098",
+   "text": "Emerging work on guideline-adherent recommendations highlights retrieval-augmented large language models supporting diabetic kidney disease care as a way to anchor AI recommendations to established clinical standards <a href=\"https://www.nature.com/articles/s41746-026-03035-0\">[11]</a>. Ongoing evolution is evident as medical AI agents integrate planning, action, reflection, and memory for multistep workflow assistance, potentially extending the reach of clinical decision support <a href=\"https://medinform.jmir.org/2026/1/e92584\">[1]</a>. Multimodal learning approaches are advancing, as unified models combine clinical narratives and structured measurements for prediction tasks, and interpretable multimodal frameworks support survival prediction and cognitive impairment assessment <a href=\"https://arxiv.org/abs/2607.15380\">[8]</a> <a href=\"https://www.nature.com/articles/s41746-026-03048-9\">[13]</a> <a href=\"https://www.nature.com/articles/s41746-026-03027-0\">[14]</a>. The interaction between large language models and clinical guidelines introduces renewed focus on the risks inherent to automated recommendations and potential false confidence, underscoring a need for careful evaluation <a href=\"https://www.sensible-med.com/p/guidelines-llms-and-the-laundering\">[3]</a>.\n\nAlso this week: real-world deployment of remote sleep monitoring technologies highlights patterns linked to cognitive decline, and locally executable AI systems address privacy concerns in preoperative patient communication. Eight studies and systems explore clinical decision support, five focus on safety and evaluation, with contributions in imaging and diagnostics, clinical documentation, and patient-facing tools.",
+   "hash": "ca23170986ae1b52",
    "date": "July 21, 2026"
   },
   "general_ai": {

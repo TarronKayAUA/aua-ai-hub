@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=XSHTyq8Z9jA" target="_blank" rel="noopener" title="Gemini 3.6 Flash Is HERE, Testing Google’s BEST Model Yet!">
+  <img src="https://i1.ytimg.com/vi/XSHTyq8Z9jA/hqdefault.jpg" alt="Video: Gemini 3.6 Flash testing and technical overview" loading="lazy">
+  <span class="video-card-title">Gemini 3.6 Flash testing and technical overview</span>
+  <span class="video-card-meta">Bijan Bowen, July 21, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=-W2JdSl1v48" target="_blank" rel="noopener" title="Is Fine-Tuning Still Needed? LLMs, RAG, &amp; LoRA">
   <img src="https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg" alt="Video: Fine-tuning, RAG, and LoRA in modern LLM workflows" loading="lazy">
   <span class="video-card-title">Fine-tuning, RAG, and LoRA in modern LLM workflows</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Meet GPT-5.6</span>
   <span class="video-card-meta">OpenAI, July 9, 2026</span>
   <span class="video-card-desc">GPT-5.6 demonstrates code generation capabilities by building a playable card game from an open-ended prompt.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=ELh8R7bGlxE" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/ELh8R7bGlxE/hqdefault.jpg" alt="Video: Sol, Terra, and Luna, our GPT‑5.6 family of models are here." loading="lazy">
-  <span class="video-card-title">Sol, Terra, and Luna, our GPT‑5.6 family of models are here.</span>
-  <span class="video-card-meta">OpenAI, July 9, 2026</span>
-  <span class="video-card-desc">OpenAI releases GPT-5.6 family of models Sol, Terra, Luna across ChatGPT, Codex, and the API.</span>
 </a>
 </div>
 

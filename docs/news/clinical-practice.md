@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Medical AI systems are advancing in clinical decision support, with recent research highlighting the evolution from traditional tools to agents capable of planning, action, reflection, and memory for workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Language models are increasingly integrated into clinical guidelines, but concerns remain regarding the risk of false confidence in automated recommendations <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>. Locally executable AI platforms are now being evaluated for preoperative patient communication, showing promise in reducing risks related to hallucination and privacy compromise compared to cloud-based systems <a href="https://medinform.jmir.org/2026/1/e89173">[2]</a>. Comprehensive frameworks for multimodal clinical prediction tasks are under development, combining free-text narratives and structured electronic health data to enhance accuracy <a href="https://arxiv.org/abs/2607.15380">[7]</a>. Studies also address guideline-concordant recommendations for chronic disease management and interpretable AI models for survival prediction in complex cases <a href="https://www.nature.com/articles/s41746-026-03035-0">[10]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[13]</a>.</p>
-<p>Also this week: six items on clinical decision support and five studies focused on safety and evaluation are included. The section covers AI tools for imaging data analysis and secure testing interfaces for patient message management, as well as research on agent-based narrative generation for public health and practical automation of research impact summaries.</p>
+<p>Emerging work on guideline-adherent recommendations highlights retrieval-augmented large language models supporting diabetic kidney disease care as a way to anchor AI recommendations to established clinical standards <a href="https://www.nature.com/articles/s41746-026-03035-0">[11]</a>. Ongoing evolution is evident as medical AI agents integrate planning, action, reflection, and memory for multistep workflow assistance, potentially extending the reach of clinical decision support <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Multimodal learning approaches are advancing, as unified models combine clinical narratives and structured measurements for prediction tasks, and interpretable multimodal frameworks support survival prediction and cognitive impairment assessment <a href="https://arxiv.org/abs/2607.15380">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03048-9">[13]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[14]</a>. The interaction between large language models and clinical guidelines introduces renewed focus on the risks inherent to automated recommendations and potential false confidence, underscoring a need for careful evaluation <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>.</p>
+<p>Also this week: real-world deployment of remote sleep monitoring technologies highlights patterns linked to cognitive decline, and locally executable AI systems address privacy concerns in preoperative patient communication. Eight studies and systems explore clinical decision support, five focus on safety and evaluation, with contributions in imaging and diagnostics, clinical documentation, and patient-facing tools.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -48,6 +48,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.16989">Real-World Evaluation of an AI Agent Drafting Translational Impact Summaries</a>
     <p class="news-card-summary">Real-world evaluation of AI agent that automates assembly of research impact documentation for clinical and translational science programs, reducing manual staff work from 15 hours per scholar.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02964-0">Real-world deployment of remote sleep monitoring technologies reveals distinct patterns associated with cognitive decline</a>
+    <p class="news-card-summary">Real-world deployment of remote sleep monitoring identifies patterns associated with cognitive decline in older adults.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -119,13 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03011-8">Brain contrastive modeling reveals depression subtypes with distinct treatment response and progression</a>
     <p class="news-card-summary">Contrastive learning methods identify depression subtypes with distinct treatment responses, offering a data-driven approach to treatment selection.</p>
   </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">Will AI fix prior authorization, or make it worse?</a>
-    <p class="news-card-summary">Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264310821-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
