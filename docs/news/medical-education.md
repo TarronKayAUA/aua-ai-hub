@@ -13,19 +13,40 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A comparative study has evaluated the anatomical accuracy of text-to-image generative AI models for creating illustrations used in anatomy education, highlighting the potential and limitations of current tools for medical teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[1]</a>. Progress is also seen in automating the generation of study materials from spoken content, with new workflows improving transcript readability and terminology restoration in lectures using mixed-language audio <a href="https://arxiv.org/abs/2607.17237">[3]</a>. In clinical education, locally deployed large language models have been validated for generating case-based learning databases, underscoring human review as necessary for maintaining accuracy and capturing tacit knowledge not present in model outputs <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[9]</a>. Meanwhile, perceptions among medical students remain a focus, with mixed-methods and systematic reviews revealing broadly favorable attitudes toward AI in healthcare, though student familiarity and confidence vary widely across contexts <a href="https://mededu.jmir.org/2026/1/e91345">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: the section includes six studies on teaching and curriculum design, and five that explore attitudes and adoption among learners. Two assessment papers examine AI’s performance on clinical and pediatric exams, while a survey details technology anxiety and readiness in nursing students.</p>
+<p>A two-tiered rescue protocol was proposed to help large language models achieve over 95 percent accuracy on difficult exam questions, addressing performance drops on the German M2 medical examination <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[3]</a>. Comparative studies have evaluated generative AI for producing anatomically accurate illustrations, underscoring its potential to support teaching in anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[2]</a>. Research has also assessed the accuracy and consistency of DeepSeek-R1 and GPT-4o on pediatric questions, highlighting concerns about variability across runs for clinical or exam use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[11]</a>. Efforts to integrate AI into case-based learning in obstetrics and gynecology show efficient database generation but stress the need for ongoing clinician review to capture tacit knowledge and ensure educational value <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[12]</a>. Attitudinal surveys and reviews reveal that medical students generally have favorable perceptions of AI’s role in healthcare, though self-reported familiarity and estimates of adoption vary <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[8]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[15]</a>.</p>
+<p>Also this week: six items cover teaching and curriculum, three address exams and benchmarks, and there are five papers on medical student attitudes and adoption. Single studies examine AI in feedback, clinical skills simulation, and generative summarization for automated essay scoring.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88580">Enhancing Psychiatry Training Using an Agentic AI Simulated Consultation Tool: Prospective Cohort Study</a>
+    <p class="news-card-summary">Study evaluates an agentic AI system for psychiatry consultation training, assessing feasibility for helping residents practice and receive feedback on standardized clinical encounters.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">Evaluation of Generative Artificial Intelligence Models in Producing Anatomically Accurate Illustrations: A Comparative Study of Text-to-Image Generators</a>
     <p class="news-card-summary">A comparative study evaluates the anatomical accuracy of text-to-image generative AI models for creating medical illustrations in anatomy education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">A 2-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT (GPT-5) and Gemini on the German M2 Medical Examination: Evaluation Study</a>
+    <p class="news-card-summary">Study identifies accuracy decline in large language models on harder German medical exam questions and proposes a two-tiered rescue system to achieve over 95 percent accuracy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis</a>
+    <p class="news-card-summary">National exam analysis suggests AI may support cardiovascular surgery residents&#x27; theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.</p>
   </div>
 </div>
 <div class="news-card" data-topic="other">
@@ -103,27 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Attitudes, usage patterns, and learning interests of medical students toward DeepSeek in medical education: A cross-sectional survey</a>
     <p class="news-card-summary">Survey of medical students&#x27; attitudes, usage patterns, and learning interests regarding DeepSeek in medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42471688?fc=20260609215449&amp;ff=20260719024348&amp;v=2.20.0">Technology anxiety and artificial intelligence readiness in nursing students: a cross-sectional study</a>
-    <p class="news-card-summary">A study finds that nursing students with greater AI preparation report less technology anxiety, suggesting curriculum-integrated AI training and digital skills development may reduce adoption barriers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470331?fc=20260609215449&amp;ff=20260719024348&amp;v=2.20.0">Artificial Intelligence and the Art of Medicine: A Framework for Clinical Wisdom in a Digital Age</a>
-    <p class="news-card-summary">A framework examining how AI transforms clinical practice and medical education while addressing ethical, legal, and professional challenges in the physician-patient relationship and clinical decision-making.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89750">Current Landscape of Generative AI Use as a Search Engine Among Resident Physicians: Cross-Sectional Study</a>
-    <p class="news-card-summary">Cross-sectional study examines generative AI use as a search tool among resident physicians and identifies patterns of adoption and knowledge gaps in this population.</p>
   </div>
 </div>
 </div>

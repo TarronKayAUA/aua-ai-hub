@@ -13,14 +13,38 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>A study has provided preliminary neural evidence that language models may commit to answers before completing their reasoning, sometimes justifying responses post-hoc even when they contradict task premises <a href="https://arxiv.org/abs/2607.16451">[3]</a>. This behavioral finding is relevant as attention turns to AI model safety and reliability, particularly in scientific applications. A new approach using conformal prediction offers statistical validity for language model outputs in scientific generation, addressing current concerns over frequent violations of scientific principles <a href="https://arxiv.org/abs/2607.16704">[5]</a>. Meanwhile, industry developments continue, including a UK government analysis indicating that open-weight models are closing the performance gap with closed systems in cybersecurity tasks <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[8]</a>, and major Chinese companies reporting competitive models with lower cost claims compared to leading American providers <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[9]</a>.</p>
-<p>Also this week: there are six new model releases, including tools that allow vision and language models to run locally on Mac computers <a href="https://simonwillison.net/2026/Jul/21/nativ">[1]</a>. Four papers address safety and reliability, such as research showing language models may form biases in hiring decisions. One benchmark explored frontier model performance in business and analytical tasks.</p>
+<p>Anthropic’s $1.5 billion copyright settlement for alleged book piracy underscores the legal and ethical challenges raised by training large language models on proprietary content <a href="https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved">[3]</a>. Meanwhile, Google has released new Gemini models and cybersecurity tools, supporting both ongoing model innovation and industry push towards improved reliability in AI outputs <a href="https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing">[2]</a>. China is broadening access and changing economic dynamics with Z.ai, a new coding model encouraging developers to adopt cost-aware deployment strategies for both routine and complex tasks <a href="https://spectrum.ieee.org/ai-coding-assistant-china-anthropic">[5]</a>. Experimental frameworks like conformal prediction are advancing practical safeguards for scientific validity in AI-generated outputs, specifically targeting frequent principle violations in language models <a href="https://arxiv.org/abs/2607.16704">[8]</a>. Research continues to expose shortcomings including answer pre-commitment, where models justify responses that contradict task premises without adequate reasoning <a href="https://arxiv.org/abs/2607.16451">[6]</a>.</p>
+<p>Also this week: six new model releases, four safety-focused studies, and two items on industry and policy. The section holds two benchmarks, including an evaluation of frontier model performance in business knowledge work and analytical reasoning tasks.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-agent-benchmark">Why AI Needs a “Genie Coefficient”</a>
+    <p class="news-card-summary">Proposes the Genie coefficient, a metric measuring alignment between an AI system&#x27;s behavior and a user&#x27;s unstated assumptions, addressing gaps current benchmarks do not capture.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/cartoon-digital-genie-emerging-from-a-smartphone-towering-over-a-surprised-user.png?id=67508222&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing">Google announces Gemini 3.6 Flash and cybersecurity AI, teases 3.5 Pro and Gemini 4</a>
+    <p class="news-card-summary">Google releases Gemini 3.6 Flash and 3.5 Flash Cyber models, with 3.5 Pro and Gemini 4 in development.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-7-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved">Anthropic’s $1.5 billion book piracy settlement approved by judge</a>
+    <p class="news-card-summary">Federal judge approves Anthropic&#x27;s 1.5 billion dollar copyright settlement with authors whose works were used in AI training.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 21, 2026</span></div>
@@ -110,29 +134,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">HuggingFace reported a production security incident driven end-to-end by an autonomous AI agent system, detected and analyzed primarily with AI-assisted methods.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/tLa80cLashFk8b1qvSyhZgFagKqpQuDcINxc0lC5Ebw.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6fe429dfc13f9591a4f1976d5a7ce567c412231c" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 19, 2026</span></div>
-    <a class="news-card-title" href="https://github.com/openai/codex/pull/33972/files">OpenAI reduces Codex Model Context Size from 372k to 272k</a>
-    <p class="news-card-summary">OpenAI reduced the maximum context window for the Codex model from 372k to 272k tokens.</p>
-  </div>
-  <img class="news-card-thumb" src="https://avatars.githubusercontent.com/u/244841968?s=400&amp;v=4" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v0czbk/head_of_strategic_futures_from_openai_on">head of strategic futures from openai on open-weight chinese models.</a>
-    <p class="news-card-summary">An analysis of China&#x27;s open-weight AI models and their potential effects on capital expenditure and US regulatory response in the context of strategic competition.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/fzdusgco73eh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d32d1aaa09ce0461d200358ff5b96cf12e4633d5" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uyz9n2/bonsai_27b_runs_locally_on_an_iphone_a_27b_model">Bonsai 27B runs locally on an iPhone - a 27B model in 3.9GB</a>
-    <p class="news-card-summary">PrismML created Bonsai, a 27-billion-parameter model quantized to 1.125 bits per weight, fitting in 3.9GB while retaining approximately 90 percent of benchmark performance and running on mobile devices.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/Z29wbnZ0ZjFoc2RoMYNmW7XUoGPceguvH8OPb5Eb_TxAIeLh42MnMxNtDYX4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d0c914491c817a040cf9c0ecf6c840d097a47716" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

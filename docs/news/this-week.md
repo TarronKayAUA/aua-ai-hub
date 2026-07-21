@@ -13,20 +13,41 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A comparative study has evaluated the anatomical accuracy of text-to-image generative AI models for creating illustrations used in anatomy education, highlighting the potential and limitations of current tools for medical teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[1]</a>. Progress is also seen in automating the generation of study materials from spoken content, with new workflows improving transcript readability and terminology restoration in lectures using mixed-language audio <a href="https://arxiv.org/abs/2607.17237">[3]</a>. In clinical education, locally deployed large language models have been validated for generating case-based learning databases, underscoring human review as necessary for maintaining accuracy and capturing tacit knowledge not present in model outputs <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[9]</a>. Meanwhile, perceptions among medical students remain a focus, with mixed-methods and systematic reviews revealing broadly favorable attitudes toward AI in healthcare, though student familiarity and confidence vary widely across contexts <a href="https://mededu.jmir.org/2026/1/e91345">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: the section includes six studies on teaching and curriculum design, and five that explore attitudes and adoption among learners. Two assessment papers examine AI’s performance on clinical and pediatric exams, while a survey details technology anxiety and readiness in nursing students.</p>
+<p>A two-tiered rescue protocol was proposed to help large language models achieve over 95 percent accuracy on difficult exam questions, addressing performance drops on the German M2 medical examination <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[3]</a>. Comparative studies have evaluated generative AI for producing anatomically accurate illustrations, underscoring its potential to support teaching in anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[2]</a>. Research has also assessed the accuracy and consistency of DeepSeek-R1 and GPT-4o on pediatric questions, highlighting concerns about variability across runs for clinical or exam use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[11]</a>. Efforts to integrate AI into case-based learning in obstetrics and gynecology show efficient database generation but stress the need for ongoing clinician review to capture tacit knowledge and ensure educational value <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[12]</a>. Attitudinal surveys and reviews reveal that medical students generally have favorable perceptions of AI’s role in healthcare, though self-reported familiarity and estimates of adoption vary <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[8]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[15]</a>.</p>
+<p>Also this week: six items cover teaching and curriculum, three address exams and benchmarks, and there are five papers on medical student attitudes and adoption. Single studies examine AI in feedback, clinical skills simulation, and generative summarization for automated essay scoring.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88580">Enhancing Psychiatry Training Using an Agentic AI Simulated Consultation Tool: Prospective Cohort Study</a>
+        <p class="news-card-summary">Study evaluates an agentic AI system for psychiatry consultation training, assessing feasibility for helping residents practice and receive feedback on standardized clinical encounters.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">Evaluation of Generative Artificial Intelligence Models in Producing Anatomically Accurate Illustrations: A Comparative Study of Text-to-Image Generators</a>
         <p class="news-card-summary">A comparative study evaluates the anatomical accuracy of text-to-image generative AI models for creating medical illustrations in anatomy education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">A 2-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT (GPT-5) and Gemini on the German M2 Medical Examination: Evaluation Study</a>
+        <p class="news-card-summary">Study identifies accuracy decline in large language models on harder German medical exam questions and proposes a two-tiered rescue system to achieve over 95 percent accuracy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis</a>
+        <p class="news-card-summary">National exam analysis suggests AI may support cardiovascular surgery residents&#x27; theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.</p>
       </div>
     </div>
     <div class="news-card" data-topic="other">
@@ -363,9 +384,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -684,20 +705,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03001-w">Multimodal AI for predicting comorbid REM sleep behavior disorder in major depressive disorder</a>
-        <p class="news-card-summary">Peer-reviewed study uses multimodal AI to predict comorbid REM sleep behavior disorder in patients with major depressive disorder.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03003-8">Smartphone-based kinematic biomarkers for degenerative cervical myelopathy screening robust to physiological aging</a>
-        <p class="news-card-summary">Peer-reviewed study develops smartphone-based kinematic biomarkers for screening degenerative cervical myelopathy that remain robust across ages.</p>
-      </div>
-    </div>
     <div class="news-card">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
@@ -725,15 +732,39 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A study has provided preliminary neural evidence that language models may commit to answers before completing their reasoning, sometimes justifying responses post-hoc even when they contradict task premises <a href="https://arxiv.org/abs/2607.16451">[3]</a>. This behavioral finding is relevant as attention turns to AI model safety and reliability, particularly in scientific applications. A new approach using conformal prediction offers statistical validity for language model outputs in scientific generation, addressing current concerns over frequent violations of scientific principles <a href="https://arxiv.org/abs/2607.16704">[5]</a>. Meanwhile, industry developments continue, including a UK government analysis indicating that open-weight models are closing the performance gap with closed systems in cybersecurity tasks <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[8]</a>, and major Chinese companies reporting competitive models with lower cost claims compared to leading American providers <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[9]</a>.</p>
-<p>Also this week: there are six new model releases, including tools that allow vision and language models to run locally on Mac computers <a href="https://simonwillison.net/2026/Jul/21/nativ">[1]</a>. Four papers address safety and reliability, such as research showing language models may form biases in hiring decisions. One benchmark explored frontier model performance in business and analytical tasks.</p>
+<p>Anthropic’s $1.5 billion copyright settlement for alleged book piracy underscores the legal and ethical challenges raised by training large language models on proprietary content <a href="https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved">[3]</a>. Meanwhile, Google has released new Gemini models and cybersecurity tools, supporting both ongoing model innovation and industry push towards improved reliability in AI outputs <a href="https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing">[2]</a>. China is broadening access and changing economic dynamics with Z.ai, a new coding model encouraging developers to adopt cost-aware deployment strategies for both routine and complex tasks <a href="https://spectrum.ieee.org/ai-coding-assistant-china-anthropic">[5]</a>. Experimental frameworks like conformal prediction are advancing practical safeguards for scientific validity in AI-generated outputs, specifically targeting frequent principle violations in language models <a href="https://arxiv.org/abs/2607.16704">[8]</a>. Research continues to expose shortcomings including answer pre-commitment, where models justify responses that contradict task premises without adequate reasoning <a href="https://arxiv.org/abs/2607.16451">[6]</a>.</p>
+<p>Also this week: six new model releases, four safety-focused studies, and two items on industry and policy. The section holds two benchmarks, including an evaluation of frontier model performance in business knowledge work and analytical reasoning tasks.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="new-models">New models (17)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="new-models">New models (18)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/ai-agent-benchmark">Why AI Needs a “Genie Coefficient”</a>
+        <p class="news-card-summary">Proposes the Genie coefficient, a metric measuring alignment between an AI system&#x27;s behavior and a user&#x27;s unstated assumptions, addressing gaps current benchmarks do not capture.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/cartoon-digital-genie-emerging-from-a-smartphone-towering-over-a-surprised-user.png?id=67508222&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing">Google announces Gemini 3.6 Flash and cybersecurity AI, teases 3.5 Pro and Gemini 4</a>
+        <p class="news-card-summary">Google releases Gemini 3.6 Flash and 3.5 Flash Cyber models, with 3.5 Pro and Gemini 4 in development.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-7-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved">Anthropic’s $1.5 billion book piracy settlement approved by judge</a>
+        <p class="news-card-summary">Federal judge approves Anthropic&#x27;s 1.5 billion dollar copyright settlement with authors whose works were used in AI training.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 21, 2026</span></div>

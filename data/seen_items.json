@@ -21130,6 +21130,115 @@
    "score": 2.0,
    "thumbnail": "https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg",
    "display_title": "Fine-tuning, RAG, and LoRA in modern LLM workflows"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-agent-benchmark",
+   "title_hash": "a8be008316245792ff24d1f685f2b7d0",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": true,
+   "title": "Why AI Needs a “Genie Coefficient”",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-07-21T17:41:11+00:00",
+   "summary": "Proposes the Genie coefficient, a metric measuring alignment between an AI system's behavior and a user's unstated assumptions, addressing gaps current benchmarks do not capture.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/cartoon-digital-genie-emerging-from-a-smartphone-towering-over-a-surprised-user.png?id=67508222&width=980",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors",
+   "title_hash": "30e5a578ff03f1affcbb6a4661d52402",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e88580",
+   "title_hash": "9906bd3c56d788a8d7f6482b73212067",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": true,
+   "title": "Enhancing Psychiatry Training Using an Agentic AI Simulated Consultation Tool: Prospective Cohort Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-07-21T17:00:18+00:00",
+   "summary": "Study evaluates an agentic AI system for psychiatry consultation training, assessing feasibility for helping residents practice and receive feedback on standardized clinical encounters.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing",
+   "title_hash": "bb23c78b11e785bf92b1da13efa16784",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": true,
+   "title": "Google announces Gemini 3.6 Flash and cybersecurity AI, teases 3.5 Pro and Gemini 4",
+   "source": "Ars Technica AI",
+   "published": "2026-07-21T16:58:25+00:00",
+   "summary": "Google releases Gemini 3.6 Flash and 3.5 Flash Cyber models, with 3.5 Pro and Gemini 4 in development.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-7-500x500.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved",
+   "title_hash": "c51d6385652ed6100cf078d3a6ad9097",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": true,
+   "title": "Anthropic’s $1.5 billion book piracy settlement approved by judge",
+   "source": "The Verge AI",
+   "published": "2026-07-21T16:53:37+00:00",
+   "summary": "Federal judge approves Anthropic's 1.5 billion dollar copyright settlement with authors whose works were used in AI training.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK269_ANTHROPIC_2_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model",
+   "title_hash": "4f9f0288f91210e736095cf3e75dce3c",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&ff=20260721134714&v=2.20.0",
+   "title_hash": "7b5608da6d0f435560e91519759e23e8",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": true,
+   "title": "A 2-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT (GPT-5) and Gemini on the German M2 Medical Examination: Evaluation Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-21T10:00:00+00:00",
+   "summary": "Study identifies accuracy decline in large language models on harder German medical exam questions and proposes a two-tiered rescue system to achieve over 95 percent accuracy.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&ff=20260721134714&v=2.20.0",
+   "title_hash": "538c328eae0746f3f1f5d8065a86677e",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": true,
+   "title": "Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-21T10:00:00+00:00",
+   "summary": "National exam analysis suggests AI may support cardiovascular surgery residents' theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://fidget-spinner.github.io/posts/ultra-fast-tracing.html",
+   "title_hash": "87d778a39dbc0ac60a6f03a3bf7d6fe0",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qr2CuMmKzH0",
+   "title_hash": "10cef35da0b41ede640f634569dcfe99",
+   "first_seen": "2026-07-21T17:47:14.082131+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
@@ -21266,8 +21375,8 @@
  "last_digest_at": "2026-07-17T03:40:17.932462+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A comparative study has evaluated the anatomical accuracy of text-to-image generative AI models for creating illustrations used in anatomy education, highlighting the potential and limitations of current tools for medical teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0\">[1]</a>. Progress is also seen in automating the generation of study materials from spoken content, with new workflows improving transcript readability and terminology restoration in lectures using mixed-language audio <a href=\"https://arxiv.org/abs/2607.17237\">[3]</a>. In clinical education, locally deployed large language models have been validated for generating case-based learning databases, underscoring human review as necessary for maintaining accuracy and capturing tacit knowledge not present in model outputs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[9]</a>. Meanwhile, perceptions among medical students remain a focus, with mixed-methods and systematic reviews revealing broadly favorable attitudes toward AI in healthcare, though student familiarity and confidence vary widely across contexts <a href=\"https://mededu.jmir.org/2026/1/e91345\">[4]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0\">[5]</a>.\n\nAlso this week: the section includes six studies on teaching and curriculum design, and five that explore attitudes and adoption among learners. Two assessment papers examine AI’s performance on clinical and pediatric exams, while a survey details technology anxiety and readiness in nursing students.",
-   "hash": "19328af2750f988d",
+   "text": "A two-tiered rescue protocol was proposed to help large language models achieve over 95 percent accuracy on difficult exam questions, addressing performance drops on the German M2 medical examination <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0\">[3]</a>. Comparative studies have evaluated generative AI for producing anatomically accurate illustrations, underscoring its potential to support teaching in anatomy education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0\">[2]</a>. Research has also assessed the accuracy and consistency of DeepSeek-R1 and GPT-4o on pediatric questions, highlighting concerns about variability across runs for clinical or exam use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[11]</a>. Efforts to integrate AI into case-based learning in obstetrics and gynecology show efficient database generation but stress the need for ongoing clinician review to capture tacit knowledge and ensure educational value <a href=\"https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0\">[12]</a>. Attitudinal surveys and reviews reveal that medical students generally have favorable perceptions of AI’s role in healthcare, though self-reported familiarity and estimates of adoption vary <a href=\"https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0\">[8]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0\">[15]</a>.\n\nAlso this week: six items cover teaching and curriculum, three address exams and benchmarks, and there are five papers on medical student attitudes and adoption. Single studies examine AI in feedback, clinical skills simulation, and generative summarization for automated essay scoring.",
+   "hash": "e5e2023a4b5b313a",
    "date": "July 21, 2026"
   },
   "clinical_practice": {
@@ -21276,8 +21385,8 @@
    "date": "July 21, 2026"
   },
   "general_ai": {
-   "text": "A study has provided preliminary neural evidence that language models may commit to answers before completing their reasoning, sometimes justifying responses post-hoc even when they contradict task premises <a href=\"https://arxiv.org/abs/2607.16451\">[3]</a>. This behavioral finding is relevant as attention turns to AI model safety and reliability, particularly in scientific applications. A new approach using conformal prediction offers statistical validity for language model outputs in scientific generation, addressing current concerns over frequent violations of scientific principles <a href=\"https://arxiv.org/abs/2607.16704\">[5]</a>. Meanwhile, industry developments continue, including a UK government analysis indicating that open-weight models are closing the performance gap with closed systems in cybersecurity tasks <a href=\"https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan\">[8]</a>, and major Chinese companies reporting competitive models with lower cost claims compared to leading American providers <a href=\"https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen\">[9]</a>.\n\nAlso this week: there are six new model releases, including tools that allow vision and language models to run locally on Mac computers <a href=\"https://simonwillison.net/2026/Jul/21/nativ\">[1]</a>. Four papers address safety and reliability, such as research showing language models may form biases in hiring decisions. One benchmark explored frontier model performance in business and analytical tasks.",
-   "hash": "1760cb465b8c86b3",
+   "text": "Anthropic’s $1.5 billion copyright settlement for alleged book piracy underscores the legal and ethical challenges raised by training large language models on proprietary content <a href=\"https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved\">[3]</a>. Meanwhile, Google has released new Gemini models and cybersecurity tools, supporting both ongoing model innovation and industry push towards improved reliability in AI outputs <a href=\"https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing\">[2]</a>. China is broadening access and changing economic dynamics with Z.ai, a new coding model encouraging developers to adopt cost-aware deployment strategies for both routine and complex tasks <a href=\"https://spectrum.ieee.org/ai-coding-assistant-china-anthropic\">[5]</a>. Experimental frameworks like conformal prediction are advancing practical safeguards for scientific validity in AI-generated outputs, specifically targeting frequent principle violations in language models <a href=\"https://arxiv.org/abs/2607.16704\">[8]</a>. Research continues to expose shortcomings including answer pre-commitment, where models justify responses that contradict task premises without adequate reasoning <a href=\"https://arxiv.org/abs/2607.16451\">[6]</a>.\n\nAlso this week: six new model releases, four safety-focused studies, and two items on industry and policy. The section holds two benchmarks, including an evaluation of frontier model performance in business knowledge work and analytical reasoning tasks.",
+   "hash": "ded3320abff7a70d",
    "date": "July 21, 2026"
   }
  },
