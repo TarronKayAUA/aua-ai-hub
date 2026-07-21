@@ -13,15 +13,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>New evidence from a cross-sectional survey highlights that medical students’ adoption and learning interests toward DeepSeek, a generative AI tool, reflect evolving integration patterns in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[8]</a>. Locally deployed large language models are now able to automate case-based learning in specialty areas such as obstetrics and gynecology, though their outputs require further clinician review to ensure accuracy and capture tacit knowledge <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[5]</a>. Comparisons of DeepSeek-R1 and GPT-4o models show that while DeepSeek-R1 achieved higher accuracy on pediatric questions, both systems exhibited variable performance, which raises concerns about reliability when used in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[4]</a>. Students’ attitudes toward AI remain broadly positive, yet knowledge gaps persist, underscoring the need for structured training within curriculum frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[2]</a>.</p>
-<p>Also this week: eight new studies examine attitudes and adoption among medical students and residents, four items cover teaching and curriculum integration, and two focus on simulation and clinical skills. One report investigates curriculum-based strategies for reducing technology anxiety and improving AI readiness in nursing students.</p>
-<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the source items.</p>
+<p>A new mixed-methods study highlights medical students&#x27; perceptions and use of artificial intelligence in their training, indicating both interest and active engagement <a href="https://mededu.jmir.org/2026/1/e91345">[3]</a>. This aligns with findings from a systematic review showing broadly favorable attitudes toward AI in healthcare, though levels of familiarity and optimism vary across studies <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[4]</a>. Evaluations of AI model accuracy on key medical benchmarks, such as geriatrics exams, illustrate strengths in theoretical domains but point to limitations with clinical scenario variability <a href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">[5]</a>. Emerging workflows for summarizing doctor-patient conversations without intermediate transcription are advancing capabilities in generating usable medical notes from multilinguistic audio <a href="https://arxiv.org/abs/2607.17230">[1]</a>. Meanwhile, innovative applications like AI-augmented teacher feedback models demonstrate improved alignment with expert ratings when assessing clinical documentation skills <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[15]</a>.</p>
+<p>Also this week: five studies focus on attitudes and adoption, and several items explore teaching and curriculum innovations such as gamified frameworks and case-based learning with large language models. There are two new papers on assessment and feedback, and ongoing research addresses technology anxiety in nursing students.</p>
+<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="other">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.17230">Robust Summarization of Doctor-Patient Conversations: TalTech Systems for the Beyond Transcription Challenge</a>
+        <p class="news-card-summary">System for generating SOAP notes directly from doctor-patient conversation audio without intermediate transcription, tested on Korean-English medical encounters.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.17237">AI_LectureNote: A Retrospective Pilot Study of a Post-ASR Workflow for English-Script Rendering and Semantic Drift in Korean-English Medical Lectures</a>
+        <p class="news-card-summary">Workflow for post-processing speech-to-text output of medical lectures to restore Latin-script terminology and improve readability of study transcripts.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 20, 2026</span></div>
@@ -34,6 +48,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">Medical Students&#x27; Attitudes, Perceptions, and Self-Reported Familiarity With Artificial Intelligence in Healthcare: A Systematic Review and Meta-Analysis</a>
         <p class="news-card-summary">Systematic review finds medical students hold broadly favorable attitudes toward artificial intelligence in healthcare, though estimates vary substantially across studies.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">Would artificial intelligence pass a Geriatrics exam?: evaluating conversational responses and their accuracy</a>
+        <p class="news-card-summary">Study evaluates AI model performance on geriatrics exam questions, finding high accuracy on theoretical questions but limitations in variability of real clinical scenarios.</p>
       </div>
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
@@ -296,13 +317,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A feasibility study evaluates AI-generated microlearning modules for plastic surgery residency training, assessing whether language models can support brief, focused education within fragmented clinical schedules.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42443861?fc=20260609215449&amp;ff=20260714022646&amp;v=2.20.0">Medical students&#x27; attitudes, usage patterns, and associated factors with DeepSeek adoption in education: a cross-sectional study in China</a>
-        <p class="news-card-summary">Cross-sectional survey of Chinese medical students found 94.8% willing to use DeepSeek for education but expressed caution about privacy, reliability, and dependency.</p>
-      </div>
-    </div>
     <div class="news-card">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
@@ -337,15 +351,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>The development of unified and multimodal artificial intelligence models is shaping the future of clinical prediction by integrating free-text narratives and structured electronic health record data <a href="https://arxiv.org/abs/2607.15380">[3]</a>, while new evidence-driven frameworks are supporting clinical decision making in cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a>. Peer-reviewed research demonstrates interpretable multimodal deep learning for survival prediction after hepatocellular carcinoma resection, offering clinicians more transparent models for outcome forecasting <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Meanwhile, studies are addressing the challenges and opportunities presented by using real-world imaging data in evidence generation <a href="https://medinform.jmir.org/2026/1/e88202">[1]</a>. Researchers have also advanced retrieval-augmented and domain-aware large language models, now capable of producing guideline-concordant recommendations for chronic disease management and assisting with atrial fibrillation treatment <a href="https://www.nature.com/articles/s41746-026-03035-0">[6]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment contribute additional insights into safety, evaluation, and decision-support. Tutorials feature secure sandboxes for testing patient portal messaging models, while a government pilot explores artificial intelligence in insurance prior-authorization. The section includes a review on reinforcement learning for sepsis care and a discussion on machine unlearning for governance, rounding out topics from clinical documentation to surgical robotics.</p>
+<p>A secure sandbox interface is now available for testing artificial intelligence tools in patient portal message management, allowing evaluation without risk to clinical systems or patient data <a href="https://medinform.jmir.org/2026/1/e83216">[3]</a>. Clinical practice is further shaped by the incorporation of large language models that combine clinical text and structured measurements, supporting prediction tasks drawing from multimodal patient data <a href="https://arxiv.org/abs/2607.15380">[4]</a>. Efforts to generate guideline-concordant recommendations for diabetic kidney disease management through retrieval-augmented models address safety and regulatory requirements <a href="https://www.nature.com/articles/s41746-026-03035-0">[7]</a>. Recent studies compare human and AI judgments in assessing generative AI performance, with implications for scalability and reliability in global health settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[6]</a>. The application of interpretable multimodal deep learning improves time-resolved survival prediction after hepatocellular carcinoma resection, demonstrating advances in precision medicine <a href="https://www.nature.com/articles/s41746-026-03027-0">[10]</a>.</p>
+<p>Also this week: the section holds eight new model releases, five papers on assessment, two items on clinical documentation, and one analysis of imaging and diagnostics. Coverage includes machine unlearning for governance in clinical AI and reinforcement learning for sepsis treatment decision-making.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (20)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.16989">Real-World Evaluation of an AI Agent Drafting Translational Impact Summaries</a>
+        <p class="news-card-summary">Real-world evaluation of AI agent that automates assembly of research impact documentation for clinical and translational science programs, reducing manual staff work from 15 hours per scholar.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
@@ -634,20 +655,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09880">CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series</a>
-        <p class="news-card-summary">New benchmark evaluates language models on question answering over sparse, irregularly sampled clinical time series data from patient monitoring and risk assessment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09932">Faithful by Design: Evaluating and Improving LLM-Generated Clinical Trial Summaries for Multi-Stakeholder Audiences</a>
-        <p class="news-card-summary">Study introduces evaluation framework for measuring faithfulness of language model summaries of clinical trial results across healthcare provider, patient, and payer audiences.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
@@ -710,15 +717,36 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Chinese companies Moonshot and Alibaba have released new models that aim to match the performance of OpenAI and Anthropic systems at a lower cost, highlighting growing competition in global AI development <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[4]</a>. A UK government analysis finds that the difference in cybersecurity task performance between open-weight and closed-weight models is narrowing, which may signal increasing viability of open approaches in sensitive applications <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[3]</a>. Researchers have further shown that large language models can independently develop hiring biases, raising concerns regarding fairness in automated employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[5]</a>. Information-theoretic research underlines that model reliability is fundamentally limited by output uncertainty, establishing practical bounds for generative AI performance <a href="https://arxiv.org/abs/2607.14112">[8]</a>. Additionally, studies on prefill jailbreak attacks expose weaknesses in decision-making mechanisms within aligned language models, suggesting harm can persist even when models change their compliance behavior <a href="https://arxiv.org/abs/2607.14147">[9]</a>.</p>
-<p>Also this week: four new model releases and four topics addressing safety and reliability feature prominently. The section also covers agent swarm economics, benchmarking for analytical and knowledge work, and a tool for running frontier models locally on Mac computers.</p>
+<p>Studies have shown that language models may commit to answers before completing their reasoning, then post-hoc justify those answers or even contradict core task premises, with neural evidence indicating early answer activation <a href="https://arxiv.org/abs/2607.16451">[1]</a>. A conformal prediction framework has been proposed to improve self-correction and enhance statistical validity in scientific outputs from these models <a href="https://arxiv.org/abs/2607.16704">[3]</a>. Meanwhile, benchmarks have evaluated frontier models&#x27; performance across knowledge work and analytical business tasks, going beyond coding or simple recall to measure analytical reasoning <a href="https://arxiv.org/abs/2607.16057">[9]</a>. Research indicates that a reliability ceiling exists for generative tasks, governed by information-theoretic factors and context uncertainty <a href="https://arxiv.org/abs/2607.14112">[11]</a>. Evidence also suggests models can develop hiring biases independently from their training data, raising concerns for fair employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[8]</a>.</p>
+<p>Also this week: the page includes four new model releases and six safety and reliability papers. Nativ enables local deployment of frontier language models on Mac computers, while OpenLanguageModel offers a transparent pretraining library for educational and research use.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.16451">Committed Before Reasoning: Behavioral Reproduction and Preliminary Activation-Level Evidence of Answer Pre-Commitment in an Open-Weight LLM</a>
+        <p class="news-card-summary">Study documents that language models sometimes commit to answers before reasoning and justify them post-hoc, even when contradicting task premises, with preliminary neural evidence.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.16669">OpenLanguageModel: Readable and Composable Small-Language-Model Pretraining for Education and Research</a>
+        <p class="news-card-summary">Open-source PyTorch library for transparent construction and pretraining of small language models designed for education and research with readable composable components.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.16704">Though Language Models Err While They Strive: Conformal Prediction for Self-Correcting Scientific Generation</a>
+        <p class="news-card-summary">Framework using conformal prediction to provide statistical guarantees for scientific validity in language model outputs, addressing frequent violations of scientific principles.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 20, 2026</span></div>
@@ -997,34 +1025,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">New York becomes the first state to enact a moratorium on new hyperscale data center permits for up to one year.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09885">Index SLM Technical Report</a>
-        <p class="news-card-summary">Index-1.9B open small language model series from Bilibili includes base, pure, and instruction-tuned variants trained on 2.8 trillion Chinese and English tokens.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.09999">Silent Failures in Quantized LLM Reasoning: A Taxonomy-Based Analysis of Hollow Convergence and Failure Mode Shifts</a>
-        <p class="news-card-summary">Study shows quantization can silently alter language model reasoning patterns even when task accuracy remains unchanged, using validated taxonomy of reasoning failures.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.10386">Structured Thoughts For Improved Reasoning And Context Pruning</a>
-        <p class="news-card-summary">Open-source platform for compound AI system evaluation provides design-of-experiments methodology to determine which components most affect system quality.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.10476">Hallucination Detection in Large Language Models Using Diversion Decoding</a>
-        <p class="news-card-summary">Method using diversion decoding detects hallucinations in language models by identifying factually incorrect or fabricated statements.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">

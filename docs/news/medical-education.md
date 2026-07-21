@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>New evidence from a cross-sectional survey highlights that medical students’ adoption and learning interests toward DeepSeek, a generative AI tool, reflect evolving integration patterns in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[8]</a>. Locally deployed large language models are now able to automate case-based learning in specialty areas such as obstetrics and gynecology, though their outputs require further clinician review to ensure accuracy and capture tacit knowledge <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[5]</a>. Comparisons of DeepSeek-R1 and GPT-4o models show that while DeepSeek-R1 achieved higher accuracy on pediatric questions, both systems exhibited variable performance, which raises concerns about reliability when used in clinical contexts <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[4]</a>. Students’ attitudes toward AI remain broadly positive, yet knowledge gaps persist, underscoring the need for structured training within curriculum frameworks <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[2]</a>.</p>
-<p>Also this week: eight new studies examine attitudes and adoption among medical students and residents, four items cover teaching and curriculum integration, and two focus on simulation and clinical skills. One report investigates curriculum-based strategies for reducing technology anxiety and improving AI readiness in nursing students.</p>
-<p class="section-brief-date">The picture as of July 20, 2026; numbered links go to the items below.</p>
+<p>A new mixed-methods study highlights medical students&#x27; perceptions and use of artificial intelligence in their training, indicating both interest and active engagement <a href="https://mededu.jmir.org/2026/1/e91345">[3]</a>. This aligns with findings from a systematic review showing broadly favorable attitudes toward AI in healthcare, though levels of familiarity and optimism vary across studies <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[4]</a>. Evaluations of AI model accuracy on key medical benchmarks, such as geriatrics exams, illustrate strengths in theoretical domains but point to limitations with clinical scenario variability <a href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">[5]</a>. Emerging workflows for summarizing doctor-patient conversations without intermediate transcription are advancing capabilities in generating usable medical notes from multilinguistic audio <a href="https://arxiv.org/abs/2607.17230">[1]</a>. Meanwhile, innovative applications like AI-augmented teacher feedback models demonstrate improved alignment with expert ratings when assessing clinical documentation skills <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[15]</a>.</p>
+<p>Also this week: five studies focus on attitudes and adoption, and several items explore teaching and curriculum innovations such as gamified frameworks and case-based learning with large language models. There are two new papers on assessment and feedback, and ongoing research addresses technology anxiety in nursing students.</p>
+<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.17230">Robust Summarization of Doctor-Patient Conversations: TalTech Systems for the Beyond Transcription Challenge</a>
+    <p class="news-card-summary">System for generating SOAP notes directly from doctor-patient conversation audio without intermediate transcription, tested on Korean-English medical encounters.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.17237">AI_LectureNote: A Retrospective Pilot Study of a Post-ASR Workflow for English-Script Rendering and Semantic Drift in Korean-English Medical Lectures</a>
+    <p class="news-card-summary">Workflow for post-processing speech-to-text output of medical lectures to restore Latin-script terminology and improve readability of study transcripts.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 20, 2026</span></div>
@@ -33,6 +47,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">Medical Students&#x27; Attitudes, Perceptions, and Self-Reported Familiarity With Artificial Intelligence in Healthcare: A Systematic Review and Meta-Analysis</a>
     <p class="news-card-summary">Systematic review finds medical students hold broadly favorable attitudes toward artificial intelligence in healthcare, though estimates vary substantially across studies.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">Would artificial intelligence pass a Geriatrics exam?: evaluating conversational responses and their accuracy</a>
+    <p class="news-card-summary">Study evaluates AI model performance on geriatrics exam questions, finding high accuracy on theoretical questions but limitations in variability of real clinical scenarios.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -103,27 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Effectiveness of an AI-augmented teacher feedback model in improving medical students&#x27; clinical documentation skills: a retrospective cohort study</a>
     <p class="news-card-summary">A generative AI scoring tool based on large language models provided feedback on clinical documentation that aligned with expert ratings and showed preliminary benefits over traditional teacher feedback alone.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning</a>
-    <p class="news-card-summary">An AI-assisted platform integrated into ultrasound residency training showed potential to improve residents&#x27; diagnostic accuracy for breast cancer detection in an exploratory study.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Knowledge, Attitude, and Perception of Artificial Intelligence in Healthcare Among Postgraduate Residents: A Cross-sectional Survey</a>
-    <p class="news-card-summary">A survey of postgraduate residents found significant gaps in artificial intelligence knowledge despite support for AI integration, highlighting the need for structured AI training in medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&amp;ff=20260717133202&amp;v=2.20.0">Construction of a virtual simulation teaching system for medical imaging education: a single-center experience</a>
-    <p class="news-card-summary">Virtual simulation systems integrating computer graphics, dynamic modeling, and artificial intelligence have become a core teaching methodology in medical imaging education.</p>
   </div>
 </div>
 </div>

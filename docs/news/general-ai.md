@@ -13,14 +13,35 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Chinese companies Moonshot and Alibaba have released new models that aim to match the performance of OpenAI and Anthropic systems at a lower cost, highlighting growing competition in global AI development <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">[4]</a>. A UK government analysis finds that the difference in cybersecurity task performance between open-weight and closed-weight models is narrowing, which may signal increasing viability of open approaches in sensitive applications <a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">[3]</a>. Researchers have further shown that large language models can independently develop hiring biases, raising concerns regarding fairness in automated employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[5]</a>. Information-theoretic research underlines that model reliability is fundamentally limited by output uncertainty, establishing practical bounds for generative AI performance <a href="https://arxiv.org/abs/2607.14112">[8]</a>. Additionally, studies on prefill jailbreak attacks expose weaknesses in decision-making mechanisms within aligned language models, suggesting harm can persist even when models change their compliance behavior <a href="https://arxiv.org/abs/2607.14147">[9]</a>.</p>
-<p>Also this week: four new model releases and four topics addressing safety and reliability feature prominently. The section also covers agent swarm economics, benchmarking for analytical and knowledge work, and a tool for running frontier models locally on Mac computers.</p>
+<p>Studies have shown that language models may commit to answers before completing their reasoning, then post-hoc justify those answers or even contradict core task premises, with neural evidence indicating early answer activation <a href="https://arxiv.org/abs/2607.16451">[1]</a>. A conformal prediction framework has been proposed to improve self-correction and enhance statistical validity in scientific outputs from these models <a href="https://arxiv.org/abs/2607.16704">[3]</a>. Meanwhile, benchmarks have evaluated frontier models&#x27; performance across knowledge work and analytical business tasks, going beyond coding or simple recall to measure analytical reasoning <a href="https://arxiv.org/abs/2607.16057">[9]</a>. Research indicates that a reliability ceiling exists for generative tasks, governed by information-theoretic factors and context uncertainty <a href="https://arxiv.org/abs/2607.14112">[11]</a>. Evidence also suggests models can develop hiring biases independently from their training data, raising concerns for fair employment screening <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">[8]</a>.</p>
+<p>Also this week: the page includes four new model releases and six safety and reliability papers. Nativ enables local deployment of frontier language models on Mac computers, while OpenLanguageModel offers a transparent pretraining library for educational and research use.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.16451">Committed Before Reasoning: Behavioral Reproduction and Preliminary Activation-Level Evidence of Answer Pre-Commitment in an Open-Weight LLM</a>
+    <p class="news-card-summary">Study documents that language models sometimes commit to answers before reasoning and justify them post-hoc, even when contradicting task premises, with preliminary neural evidence.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.16669">OpenLanguageModel: Readable and Composable Small-Language-Model Pretraining for Education and Research</a>
+    <p class="news-card-summary">Open-source PyTorch library for transparent construction and pretraining of small language models designed for education and research with readable composable components.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.16704">Though Language Models Err While They Strive: Conformal Prediction for Self-Correcting Scientific Generation</a>
+    <p class="news-card-summary">Framework using conformal prediction to provide statistical guarantees for scientific validity in language model outputs, addressing frequent violations of scientific principles.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 20, 2026</span></div>
@@ -112,29 +133,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2607.14147">Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak</a>
     <p class="news-card-summary">Study of prefill jailbreak attacks on aligned language models reveals that harm representations remain detectable even when models switch to compliance, suggesting failures in output decision formation rather than representation.</p>
   </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00037-z">An AI co-scientist to accelerate biomedical research</a>
-    <p class="news-card-summary">Biomni, an AI agent system, performs diverse biomedical research tasks and could serve as a research partner for scientists with further development.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00037-z/d41591-026-00037-z_52987696.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uyg3za/i_tested_all_llamacpps_speculative_decoding">I tested all llama.cpp&#x27;s speculative decoding methods on Qwen 3.6 27B: MTP ~2.7x, DFlash ~3.7x, n-gram stack ~6x on real coding. Local AI win. My findings on RTX 6000 PRO.</a>
-    <p class="news-card-summary">Benchmarks of speculative decoding methods in llama.cpp show n-gram stacking achieves 6x speedup on coding tasks with Qwen 27B.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/qrorl17ssndh1.png?width=140&amp;height=75&amp;auto=webp&amp;s=ba1cd82947a97771a9e4738d98dc125450b263db" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 16, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/16/kimi-k3">Kimi K3, and what we can still learn from the pelican benchmark</a>
-    <p class="news-card-summary">Moonshot AI announced Kimi K3, a 2.8 trillion parameter model, with open-weight release promised by July 27, 2026.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/kimi-3-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

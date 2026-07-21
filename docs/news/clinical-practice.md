@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The development of unified and multimodal artificial intelligence models is shaping the future of clinical prediction by integrating free-text narratives and structured electronic health record data <a href="https://arxiv.org/abs/2607.15380">[3]</a>, while new evidence-driven frameworks are supporting clinical decision making in cognitive impairment assessment <a href="https://www.nature.com/articles/s41746-026-03048-9">[8]</a>. Peer-reviewed research demonstrates interpretable multimodal deep learning for survival prediction after hepatocellular carcinoma resection, offering clinicians more transparent models for outcome forecasting <a href="https://www.nature.com/articles/s41746-026-03027-0">[9]</a>. Meanwhile, studies are addressing the challenges and opportunities presented by using real-world imaging data in evidence generation <a href="https://medinform.jmir.org/2026/1/e88202">[1]</a>. Researchers have also advanced retrieval-augmented and domain-aware large language models, now capable of producing guideline-concordant recommendations for chronic disease management and assisting with atrial fibrillation treatment <a href="https://www.nature.com/articles/s41746-026-03035-0">[6]</a> <a href="https://www.nature.com/articles/s41746-026-03038-x">[7]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment contribute additional insights into safety, evaluation, and decision-support. Tutorials feature secure sandboxes for testing patient portal messaging models, while a government pilot explores artificial intelligence in insurance prior-authorization. The section includes a review on reinforcement learning for sepsis care and a discussion on machine unlearning for governance, rounding out topics from clinical documentation to surgical robotics.</p>
+<p>A secure sandbox interface is now available for testing artificial intelligence tools in patient portal message management, allowing evaluation without risk to clinical systems or patient data <a href="https://medinform.jmir.org/2026/1/e83216">[3]</a>. Clinical practice is further shaped by the incorporation of large language models that combine clinical text and structured measurements, supporting prediction tasks drawing from multimodal patient data <a href="https://arxiv.org/abs/2607.15380">[4]</a>. Efforts to generate guideline-concordant recommendations for diabetic kidney disease management through retrieval-augmented models address safety and regulatory requirements <a href="https://www.nature.com/articles/s41746-026-03035-0">[7]</a>. Recent studies compare human and AI judgments in assessing generative AI performance, with implications for scalability and reliability in global health settings <a href="https://www.nature.com/articles/s41746-026-02992-w">[6]</a>. The application of interpretable multimodal deep learning improves time-resolved survival prediction after hepatocellular carcinoma resection, demonstrating advances in precision medicine <a href="https://www.nature.com/articles/s41746-026-03027-0">[10]</a>.</p>
+<p>Also this week: the section holds eight new model releases, five papers on assessment, two items on clinical documentation, and one analysis of imaging and diagnostics. Coverage includes machine unlearning for governance in clinical AI and reinforcement learning for sepsis treatment decision-making.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.16989">Real-World Evaluation of an AI Agent Drafting Translational Impact Summaries</a>
+    <p class="news-card-summary">Real-world evaluation of AI agent that automates assembly of research impact documentation for clinical and translational science programs, reducing manual staff work from 15 hours per scholar.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03050-1">Machine unlearning as a governance imperative for clinical AI</a>
     <p class="news-card-summary">Machine unlearning techniques offer governance approaches for clinical AI systems to manage data retention and model accountability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82924">Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines</a>
-    <p class="news-card-summary">Study benchmarks Fast Healthcare Interoperability Resources analytics tools to measure performance of RESTful queries and data engines for electronic health records research.</p>
   </div>
 </div>
 </div>
