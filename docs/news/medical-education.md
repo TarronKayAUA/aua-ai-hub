@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new mixed-methods study highlights medical students&#x27; perceptions and use of artificial intelligence in their training, indicating both interest and active engagement <a href="https://mededu.jmir.org/2026/1/e91345">[3]</a>. This aligns with findings from a systematic review showing broadly favorable attitudes toward AI in healthcare, though levels of familiarity and optimism vary across studies <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[4]</a>. Evaluations of AI model accuracy on key medical benchmarks, such as geriatrics exams, illustrate strengths in theoretical domains but point to limitations with clinical scenario variability <a href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">[5]</a>. Emerging workflows for summarizing doctor-patient conversations without intermediate transcription are advancing capabilities in generating usable medical notes from multilinguistic audio <a href="https://arxiv.org/abs/2607.17230">[1]</a>. Meanwhile, innovative applications like AI-augmented teacher feedback models demonstrate improved alignment with expert ratings when assessing clinical documentation skills <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[15]</a>.</p>
-<p>Also this week: five studies focus on attitudes and adoption, and several items explore teaching and curriculum innovations such as gamified frameworks and case-based learning with large language models. There are two new papers on assessment and feedback, and ongoing research addresses technology anxiety in nursing students.</p>
+<p>A comparative study has evaluated the anatomical accuracy of text-to-image generative AI models for creating illustrations used in anatomy education, highlighting the potential and limitations of current tools for medical teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[1]</a>. Progress is also seen in automating the generation of study materials from spoken content, with new workflows improving transcript readability and terminology restoration in lectures using mixed-language audio <a href="https://arxiv.org/abs/2607.17237">[3]</a>. In clinical education, locally deployed large language models have been validated for generating case-based learning databases, underscoring human review as necessary for maintaining accuracy and capturing tacit knowledge not present in model outputs <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[9]</a>. Meanwhile, perceptions among medical students remain a focus, with mixed-methods and systematic reviews revealing broadly favorable attitudes toward AI in healthcare, though student familiarity and confidence vary widely across contexts <a href="https://mededu.jmir.org/2026/1/e91345">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: the section includes six studies on teaching and curriculum design, and five that explore attitudes and adoption among learners. Two assessment papers examine AI’s performance on clinical and pediatric exams, while a survey details technology anxiety and readiness in nursing students.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">Evaluation of Generative Artificial Intelligence Models in Producing Anatomically Accurate Illustrations: A Comparative Study of Text-to-Image Generators</a>
+    <p class="news-card-summary">A comparative study evaluates the anatomical accuracy of text-to-image generative AI models for creating medical illustrations in anatomy education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="other">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89750">Current Landscape of Generative AI Use as a Search Engine Among Resident Physicians: Cross-Sectional Study</a>
     <p class="news-card-summary">Cross-sectional study examines generative AI use as a search tool among resident physicians and identifies patterns of adoption and knowledge gaps in this population.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Effectiveness of an AI-augmented teacher feedback model in improving medical students&#x27; clinical documentation skills: a retrospective cohort study</a>
-    <p class="news-card-summary">A generative AI scoring tool based on large language models provided feedback on clinical documentation that aligned with expert ratings and showed preliminary benefits over traditional teacher feedback alone.</p>
   </div>
 </div>
 </div>

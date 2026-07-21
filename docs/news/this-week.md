@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A new mixed-methods study highlights medical students&#x27; perceptions and use of artificial intelligence in their training, indicating both interest and active engagement <a href="https://mededu.jmir.org/2026/1/e91345">[3]</a>. This aligns with findings from a systematic review showing broadly favorable attitudes toward AI in healthcare, though levels of familiarity and optimism vary across studies <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[4]</a>. Evaluations of AI model accuracy on key medical benchmarks, such as geriatrics exams, illustrate strengths in theoretical domains but point to limitations with clinical scenario variability <a href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">[5]</a>. Emerging workflows for summarizing doctor-patient conversations without intermediate transcription are advancing capabilities in generating usable medical notes from multilinguistic audio <a href="https://arxiv.org/abs/2607.17230">[1]</a>. Meanwhile, innovative applications like AI-augmented teacher feedback models demonstrate improved alignment with expert ratings when assessing clinical documentation skills <a href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">[15]</a>.</p>
-<p>Also this week: five studies focus on attitudes and adoption, and several items explore teaching and curriculum innovations such as gamified frameworks and case-based learning with large language models. There are two new papers on assessment and feedback, and ongoing research addresses technology anxiety in nursing students.</p>
+<p>A comparative study has evaluated the anatomical accuracy of text-to-image generative AI models for creating illustrations used in anatomy education, highlighting the potential and limitations of current tools for medical teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[1]</a>. Progress is also seen in automating the generation of study materials from spoken content, with new workflows improving transcript readability and terminology restoration in lectures using mixed-language audio <a href="https://arxiv.org/abs/2607.17237">[3]</a>. In clinical education, locally deployed large language models have been validated for generating case-based learning databases, underscoring human review as necessary for maintaining accuracy and capturing tacit knowledge not present in model outputs <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[9]</a>. Meanwhile, perceptions among medical students remain a focus, with mixed-methods and systematic reviews revealing broadly favorable attitudes toward AI in healthcare, though student familiarity and confidence vary widely across contexts <a href="https://mededu.jmir.org/2026/1/e91345">[4]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: the section includes six studies on teaching and curriculum design, and five that explore attitudes and adoption among learners. Two assessment papers examine AI’s performance on clinical and pediatric exams, while a survey details technology anxiety and readiness in nursing students.</p>
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">Evaluation of Generative Artificial Intelligence Models in Producing Anatomically Accurate Illustrations: A Comparative Study of Text-to-Image Generators</a>
+        <p class="news-card-summary">A comparative study evaluates the anatomical accuracy of text-to-image generative AI models for creating medical illustrations in anatomy education.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="other">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
@@ -360,6 +367,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
     <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">Guidelines, LLMs, and the Laundering of Uncertainty</a>
+        <p class="news-card-summary">Commentary examines how large language models and clinical guidelines interact and the risks of false confidence in automated clinical recommendations.</p>
+      </div>
+      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!l_TJ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8251ac79-ca1e-42ca-906d-5914f140b7d1_8256x5504.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
@@ -653,13 +668,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 14, 2026</span></div>
         <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90146">The Swiss Personalized Health Network Metadata Catalog: Platform for Health Data Discovery and Exploration Based on Findable, Accessible, Interoperable, and Reusable Principles</a>
         <p class="news-card-summary">Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02981-z">A unified multi-modal foundation model for end-to-end emergency care</a>
-        <p class="news-card-summary">A peer-reviewed study describes a multi-modal foundation model designed for comprehensive emergency care workflows.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">

@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">Guidelines, LLMs, and the Laundering of Uncertainty</a>
+    <p class="news-card-summary">Commentary examines how large language models and clinical guidelines interact and the risks of false confidence in automated clinical recommendations.</p>
+  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!l_TJ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8251ac79-ca1e-42ca-906d-5914f140b7d1_8256x5504.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03004-7">Research landscape of robot-assisted reconstructive and plastic surgery</a>
     <p class="news-card-summary">Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03050-1">Machine unlearning as a governance imperative for clinical AI</a>
-    <p class="news-card-summary">Machine unlearning techniques offer governance approaches for clinical AI systems to manage data retention and model accountability.</p>
   </div>
 </div>
 </div>
