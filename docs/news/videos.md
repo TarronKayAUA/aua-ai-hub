@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=g4CNcUAqM4Q" target="_blank" rel="noopener" title="GPT-Red: Can AI read teams stop prompt injections?">
+  <img src="https://i4.ytimg.com/vi/g4CNcUAqM4Q/hqdefault.jpg" alt="Video: Prompt injection attacks and AI security defenses" loading="lazy">
+  <span class="video-card-title">Prompt injection attacks and AI security defenses</span>
+  <span class="video-card-meta">IBM Technology, July 22, 2026</span>
+  <span class="video-card-desc">IBM researchers discuss prompt injection attacks on large language models and strategies for defending AI systems against such exploits.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=XSHTyq8Z9jA" target="_blank" rel="noopener" title="Gemini 3.6 Flash Is HERE, Testing Google’s BEST Model Yet!">
   <img src="https://i1.ytimg.com/vi/XSHTyq8Z9jA/hqdefault.jpg" alt="Video: Gemini 3.6 Flash testing and technical overview" loading="lazy">
   <span class="video-card-title">Gemini 3.6 Flash testing and technical overview</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Introducing ChatGPT Work, powered by Codex and GPT-5.6</span>
   <span class="video-card-meta">OpenAI, July 9, 2026</span>
   <span class="video-card-desc">OpenAI announces ChatGPT Work with Codex and GPT-5.6, demonstrating new agentic capabilities for task automation.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=-MPGU2a67Ls" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/-MPGU2a67Ls/hqdefault.jpg" alt="Video: Meet GPT-5.6" loading="lazy">
-  <span class="video-card-title">Meet GPT-5.6</span>
-  <span class="video-card-meta">OpenAI, July 9, 2026</span>
-  <span class="video-card-desc">GPT-5.6 demonstrates code generation capabilities by building a playable card game from an open-ended prompt.</span>
 </a>
 </div>
 

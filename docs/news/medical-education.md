@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new study suggests that AI-based simulated consultation tools may be feasible for psychiatry training, giving residents a platform to practice and receive feedback on standardized clinical encounters <a href="https://mededu.jmir.org/2026/1/e88580">[1]</a>. In anatomy education, comparative evaluation shows text-to-image generative AI models produce illustrations with varying anatomical accuracy, raising questions about their instructional reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[2]</a>. Exam-focused research has identified performance declines in large language models on difficult medical test items, but a two-tiered protocol has been proposed to mitigate such failures and achieve high accuracy in these scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[3]</a>. National exam analysis indicates that AI could help cardiovascular surgery residents strengthen theoretical knowledge, possibly freeing curriculum time for hands-on training and skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[4]</a>. AI-driven virtual patient systems have improved objective clinical exam performance, especially among students needing structured feedback aligned with assessment standards <a href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: studies address students’ perceptions and self-reported familiarity with artificial intelligence, with estimates differing across contexts. The section also includes eight new model releases and five papers on medical assessment, such as cost-efficient generative AI for automated essay scoring.</p>
+<p>AI’s role in practical medical training is receiving close scrutiny as simulation tools and exam support systems evolve. A prospective cohort study suggests agentic AI simulations may help psychiatry residents develop clinical consultation skills and receive targeted feedback <a href="https://mededu.jmir.org/2026/1/e88580">[2]</a>. In anatomy education, a comparative evaluation found generative AI models produced illustrations with varying anatomical accuracy, highlighting current technology’s limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[3]</a>. Efforts to bolster language model performance on medical exams include employing tiered rescue protocols to address accuracy declines on complex questions <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[4]</a>. National exam data further indicate AI can support cardiovascular surgery trainees by reinforcing theoretical knowledge, which may allow greater focus on operative skills <a href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment, and continued attention to teaching and curriculum approaches. Studies explore perceptions of artificial intelligence among medical students and examine automated summarization for essay scoring. Locally deployed language models are now validated for generating case-based learning databases in obstetrics and gynecology.</p>
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/07/22/chart-brown-isnt-really-about-cheating-opinion">That Chart From Brown Isn’t Really About Cheating</a>
+    <p class="news-card-summary">An analysis of Brown University data on student grades suggests AI&#x27;s impact on academic integrity reflects broader shifts in how educational institutions measure and value performance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1489365739.jpg?itok=3EbBMSjR" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 21, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 19, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">Integrating Artificial Intelligence with Gamification in Medical Education: A Pedagogically Grounded Framework and Critical Review</a>
     <p class="news-card-summary">Integration of artificial intelligence with gamification in medical education offers potential to personalize learning and improve engagement, though empirical evidence of combined effects remains limited.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Exploring the role of generative artificial intelligence in enhancing clinical skills training: A bibliometric analysis</a>
-    <p class="news-card-summary">Bibliometric analysis shows generative AI in clinical skills training is rapidly expanding with growing attention to language models and ethical issues.</p>
   </div>
 </div>
 </div>

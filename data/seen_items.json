@@ -21557,6 +21557,69 @@
    "category": "clinical_practice",
    "score": 4.0,
    "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
+   "title_hash": "ce519f6034cbbc6f7c3eca181decef6a",
+   "first_seen": "2026-07-22T10:34:55.682509+00:00",
+   "kept": false,
+   "reason": "industry and policy news without substantive information about AI capabilities, deployment, or safety; reports on corporate pledges rather than governance or…"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/views/2026/07/22/chart-brown-isnt-really-about-cheating-opinion",
+   "title_hash": "5d1da63b47b9220ccbdc2a9f52d6d5a8",
+   "first_seen": "2026-07-22T10:34:55.682509+00:00",
+   "kept": true,
+   "title": "That Chart From Brown Isn’t Really About Cheating",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-07-22T03:00:00+00:00",
+   "summary": "An analysis of Brown University data on student grades suggests AI's impact on academic integrity reflects broader shifts in how educational institutions measure and value performance.",
+   "category": "medical_education",
+   "score": 2.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1489365739.jpg?itok=3EbBMSjR",
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04535-y",
+   "title_hash": "2bedf4bde799b663093a6fd2d9ec0abd",
+   "first_seen": "2026-07-22T10:34:55.682509+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; addresses health system governance and unpaid care accounting, not artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04522-3",
+   "title_hash": "897f63efe71433bd70d4d5b988c67290",
+   "first_seen": "2026-07-22T10:34:55.682509+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical trial of a bispecific antibody, not artificial intelligence"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2pg99/laguna_s_21_released_cheaper_than_deepseek_v4",
+   "title_hash": "593135554b573bfe06efbfcee8dfad29",
+   "first_seen": "2026-07-22T10:34:55.682509+00:00",
+   "kept": false,
+   "reason": "forum post about a model release without independent verification or substantive analysis; belongs on a model-tracking site, not an educational news page"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WQhYlsQOKhc",
+   "title_hash": "3dc9ccadb7e12a89e370df5f43424d08",
+   "first_seen": "2026-07-22T10:34:55.682509+00:00",
+   "kept": false,
+   "reason": "speculation and rumors with no substantive developments; drama and leak coverage without educational payload"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=g4CNcUAqM4Q",
+   "title_hash": "7d7446219ce2be49dc6f6a3ca7e2a143",
+   "first_seen": "2026-07-22T10:34:55.682509+00:00",
+   "kept": true,
+   "title": "GPT-Red: Can AI read teams stop prompt injections?",
+   "source": "IBM Technology",
+   "published": "2026-07-22T10:00:36+00:00",
+   "summary": "IBM researchers discuss prompt injection attacks on large language models and strategies for defending AI systems against such exploits.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/g4CNcUAqM4Q/hqdefault.jpg",
+   "display_title": "Prompt injection attacks and AI security defenses"
   }
  ],
  "digests": [
@@ -21693,8 +21756,8 @@
  "last_digest_at": "2026-07-17T03:40:17.932462+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A new study suggests that AI-based simulated consultation tools may be feasible for psychiatry training, giving residents a platform to practice and receive feedback on standardized clinical encounters <a href=\"https://mededu.jmir.org/2026/1/e88580\">[1]</a>. In anatomy education, comparative evaluation shows text-to-image generative AI models produce illustrations with varying anatomical accuracy, raising questions about their instructional reliability <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0\">[2]</a>. Exam-focused research has identified performance declines in large language models on difficult medical test items, but a two-tiered protocol has been proposed to mitigate such failures and achieve high accuracy in these scenarios <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0\">[3]</a>. National exam analysis indicates that AI could help cardiovascular surgery residents strengthen theoretical knowledge, possibly freeing curriculum time for hands-on training and skill development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0\">[4]</a>. AI-driven virtual patient systems have improved objective clinical exam performance, especially among students needing structured feedback aligned with assessment standards <a href=\"https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0\">[5]</a>.\n\nAlso this week: studies address students’ perceptions and self-reported familiarity with artificial intelligence, with estimates differing across contexts. The section also includes eight new model releases and five papers on medical assessment, such as cost-efficient generative AI for automated essay scoring.",
-   "hash": "a1e0cdcfaa86c442",
+   "text": "AI’s role in practical medical training is receiving close scrutiny as simulation tools and exam support systems evolve. A prospective cohort study suggests agentic AI simulations may help psychiatry residents develop clinical consultation skills and receive targeted feedback <a href=\"https://mededu.jmir.org/2026/1/e88580\">[2]</a>. In anatomy education, a comparative evaluation found generative AI models produced illustrations with varying anatomical accuracy, highlighting current technology’s limitations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0\">[3]</a>. Efforts to bolster language model performance on medical exams include employing tiered rescue protocols to address accuracy declines on complex questions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0\">[4]</a>. National exam data further indicate AI can support cardiovascular surgery trainees by reinforcing theoretical knowledge, which may allow greater focus on operative skills <a href=\"https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0\">[5]</a>.\n\nAlso this week: eight new model releases, five papers on assessment, and continued attention to teaching and curriculum approaches. Studies explore perceptions of artificial intelligence among medical students and examine automated summarization for essay scoring. Locally deployed language models are now validated for generating case-based learning databases in obstetrics and gynecology.",
+   "hash": "ec58e654713cb636",
    "date": "July 22, 2026"
   },
   "clinical_practice": {
