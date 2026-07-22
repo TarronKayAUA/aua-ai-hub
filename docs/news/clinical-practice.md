@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The section highlights a shift toward advanced, workflow-based clinical decision support using medical AI agents that integrate planning, action, reflection, and memory to manage complex clinical tasks <a href="https://medinform.jmir.org/2026/1/e92584">[3]</a>. Research demonstrates new approaches in generating guideline-concordant recommendations for diabetic kidney disease management, utilizing retrieval-augmented language models to improve safety and adherence <a href="https://www.nature.com/articles/s41746-026-03035-0">[13]</a>. Locally executable AI systems are improving preoperative patient communication by reducing hallucination risk and protecting patient privacy compared to cloud-based models <a href="https://medinform.jmir.org/2026/1/e89173">[4]</a>. Large language models are also explored for interpreting health checkup results, offering potential for streamlined clinical assessments <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. Real-world evaluation shows that automating research impact documentation reduces significant manual effort, signaling operational advances for clinical and translational sciences <a href="https://arxiv.org/abs/2607.16989">[6]</a>.</p>
-<p>Also this week: eight studies on clinical decision support-including tools for atrial fibrillation and cognitive impairment management-three advances in clinical documentation, four evaluations of AI safety and effectiveness, and one item on patient portal message management. The section also features analysis of real-world imaging data and deployment of remote sleep monitoring linked to cognitive decline.</p>
+<p>Deployment of advanced artificial intelligence agents is shaping clinical decision support and workflow management, with new research highlighting models that extend beyond conventional recommendation systems by incorporating planning and reflective functions <a href="https://medinform.jmir.org/2026/1/e92584">[4]</a>. Multimodal approaches are gaining traction, as models that synthesize free-text narratives with structured electronic health record data present opportunities for improved clinical prediction <a href="https://arxiv.org/abs/2607.15380">[11]</a>. Efforts to benchmark pathology report generation address challenges with heterogeneous datasets, aiming to improve the quality and reliability of reporting tools <a href="https://arxiv.org/abs/2607.18448">[1]</a>. Recent studies also examine large language models for interpreting routine health checkup results, suggesting potential integration into everyday clinical processes <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. The safety and evaluative landscape evolves as researchers compare human evaluators and language model judges for scalable assessment of generative AI applied in global health <a href="https://www.nature.com/articles/s41746-026-02992-w">[13]</a>.</p>
+<p>Also this week: section topics cover eight new developments in clinical decision support, four items on safety and evaluation, and three advances in clinical documentation. Patient-facing tools are represented by new systems for preoperative communication and secure message management in patient portals.</p>
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-documentation">
@@ -33,6 +33,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02467-y">Large language models for interpretation of health checkup results</a>
     <p class="news-card-summary">Study examines large language models for interpreting health checkup results and their potential role in clinical practice.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03049-8">Video observed therapy (VOT) for people with tuberculosis (TB): a scoping review</a>
+    <p class="news-card-summary">A scoping review examines video observed therapy for tuberculosis treatment adherence and outcomes.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03038-x">A knowledge-enhanced domain-aware large language model agent for atrial fibrillation management</a>
     <p class="news-card-summary">Knowledge-enhanced language model agent assists with atrial fibrillation management using domain-aware reasoning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03048-9">A multimodal evidence-driven framework for clinical decision support in cognitive impairment</a>
-    <p class="news-card-summary">Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.</p>
   </div>
 </div>
 </div>
