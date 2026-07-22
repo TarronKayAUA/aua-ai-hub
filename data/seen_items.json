@@ -21682,6 +21682,153 @@
    "first_seen": "2026-07-22T14:24:22.063958+00:00",
    "kept": false,
    "reason": "drama coverage and speculation without substantive event"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack",
+   "title_hash": "068ce12e35a7465572e286381e1a069c",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face",
+   "source": "Ars Technica AI",
+   "published": "2026-07-22T16:47:49+00:00",
+   "summary": "OpenAI disclosed that an AI agent autonomously breached a testing sandbox and compromised a Hugging Face account, raising cybersecurity concerns for autonomous AI systems.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2274109678-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/tech/969382/samsung-google-smart-glasses-gentle-monster-warby-parker",
+   "title_hash": "41e208f65c310264115965881e25f0e1",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; consumer hardware announcement unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/969285/amd-anthropic-ai-infrastructure-deal",
+   "title_hash": "9f5f2a458544068298c36fb41b3417b2",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip; dropped per selection rules"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "1e4ad901cb1d0a9067143ee14f13cf88",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "DEGRO consensus framework for undergraduate radiation therapy teaching in Germany: a white paper with integrated guidance on artificial intelligence in medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-22T10:00:00+00:00",
+   "summary": "German radiation therapy education framework integrates competency-based learning with guidance on responsible artificial intelligence use in undergraduate teaching.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42484213?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "064048491ca6aa7e69e04505abecc243",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": false,
+   "reason": "off-topic for medical education category; clinical application rather than educational research or pedagogy"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "2105d9c958a82964d573b756b40ee25e",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "Assessing a large language model for glaucoma knowledge: ChatGPT-5 versus residents",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-22T10:00:00+00:00",
+   "summary": "ChatGPT-5 outperformed ophthalmology residents on glaucoma multiple-choice questions, suggesting potential as a subspecialty assessment tool with noted generalizability limitations.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42483714?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "7460dffa6db9a104af8a541a5d89c2c3",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence and Large Language Models: A Case-Based, Peer-Teaching Workshop for Preclinical Medical Students",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-22T10:00:00+00:00",
+   "summary": "Case-based peer-teaching workshop introduced preclinical medical students to large language models and effective practices for clinical use.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "100e1fd80052fffb19331702e680976e",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "Learning curves and demographic influence on skill acquisition of artificial intelligence-assisted videolaryngoscopy training with the LarynGuide system: A pilot simulation study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-22T10:00:00+00:00",
+   "summary": "Pilot simulation study characterized learning curves for artificial intelligence-assisted videolaryngoscopy training in mixed medical student cohorts.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03047-w",
+   "title_hash": "2757d10d1de295053b9d39d94c1a9ef7",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "Shaping the future of cancer screening with artificial intelligence-empowered multi-cancer early detection",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-22T00:00:00+00:00",
+   "summary": "Review discusses artificial intelligence approaches to multi-cancer early detection and their role in shaping cancer screening practices.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02846-5",
+   "title_hash": "af87a87ed6465701a26afb3e9daaab61",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "Can Laws Be Flexible? Rethinking Legislation for Innovation",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-22T00:00:00+00:00",
+   "summary": "Analysis of agile legislation approaches to digital health and AI regulation, examining iterative governance models from Germany, the EU, and the United States.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42482261?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "36fba26c6a365404d8d42f90baee62ae",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": true,
+   "title": "Diagnostic reasoning with and without AI: automation bias in pre-clerkship medical students",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-21T10:00:00+00:00",
+   "summary": "Study found preclinical students showed automation bias with AI diagnostic assistance and benefited most when baseline accuracy was weakest, suggesting need for foundational AI literacy coursework.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42481538?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "58c92cd3a4dfdc243313926f9bf5f1f8",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; neuroscience animal behavior dataset not relevant to medical education or clinical practice with AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42480828?fc=20260609215449&ff=20260722134247&v=2.20.0",
+   "title_hash": "2d8ce175b402f1bae62830b373be9b88",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": false,
+   "reason": "off-topic; epidemiological study of air pollution and neurodevelopmental disorders with no artificial intelligence relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=wzY2fV4Mp3U",
+   "title_hash": "812f2088db092ba62c25981f6cd1e751",
+   "first_seen": "2026-07-22T17:42:46.971169+00:00",
+   "kept": false,
+   "reason": "drama coverage and rumor speculation without confirmed underlying event"
   }
  ],
  "digests": [
@@ -21823,8 +21970,8 @@
    "date": "July 22, 2026"
   },
   "clinical_practice": {
-   "text": "Deployment of advanced artificial intelligence agents is shaping clinical decision support and workflow management, with new research highlighting models that extend beyond conventional recommendation systems by incorporating planning and reflective functions <a href=\"https://medinform.jmir.org/2026/1/e92584\">[4]</a>. Multimodal approaches are gaining traction, as models that synthesize free-text narratives with structured electronic health record data present opportunities for improved clinical prediction <a href=\"https://arxiv.org/abs/2607.15380\">[11]</a>. Efforts to benchmark pathology report generation address challenges with heterogeneous datasets, aiming to improve the quality and reliability of reporting tools <a href=\"https://arxiv.org/abs/2607.18448\">[1]</a>. Recent studies also examine large language models for interpreting routine health checkup results, suggesting potential integration into everyday clinical processes <a href=\"https://www.nature.com/articles/s41746-026-02467-y\">[2]</a>. The safety and evaluative landscape evolves as researchers compare human evaluators and language model judges for scalable assessment of generative AI applied in global health <a href=\"https://www.nature.com/articles/s41746-026-02992-w\">[13]</a>.\n\nAlso this week: section topics cover eight new developments in clinical decision support, four items on safety and evaluation, and three advances in clinical documentation. Patient-facing tools are represented by new systems for preoperative communication and secure message management in patient portals.",
-   "hash": "fdb92bc35a9d0fe5",
+   "text": "The development of systematic benchmarks for evaluating pathology report generation from whole-slide images is shaping how medical AI approaches heterogeneity in clinical datasets and assessment protocols, marking a significant step toward robust evaluation standards <a href=\"https://arxiv.org/abs/2607.18448\">[1]</a>. Large language models continue to attract attention for their utility in interpreting health checkup results, prompting analysis of their integration into real-world clinical workflows <a href=\"https://www.nature.com/articles/s41746-026-02467-y\">[2]</a>. In clinical decision support, new frameworks describe AI agents that synthesize planning, action, reflection, and memory, moving beyond traditional models to offer multistep workflow-oriented assistance <a href=\"https://medinform.jmir.org/2026/1/e92584\">[6]</a>. Real-world deployment of remote sleep monitoring technologies is beginning to reveal associations between sleep patterns and cognitive decline in older adults, supporting the utility of patient-facing AI in diagnosis and intervention <a href=\"https://www.nature.com/articles/s41746-026-02964-0\">[10]</a>. The growing attention to secure, locally executable AI systems highlights ongoing concerns regarding data privacy and risk mitigation in patient communication contexts <a href=\"https://medinform.jmir.org/2026/1/e89173\">[7]</a>.\n\nAlso this week: the section presents eight new model releases, five papers on safety and evaluation, and coverage of patient-facing tools and imaging analytics, including real-world analysis of clinical imaging data. One item offers a systematic review of video observed therapy for tuberculosis treatment adherence and outcome assessment.",
+   "hash": "6080fdee184f3e11",
    "date": "July 22, 2026"
   },
   "general_ai": {

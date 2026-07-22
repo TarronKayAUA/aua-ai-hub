@@ -18,9 +18,37 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">DEGRO consensus framework for undergraduate radiation therapy teaching in Germany: a white paper with integrated guidance on artificial intelligence in medical education</a>
+    <p class="news-card-summary">German radiation therapy education framework integrates competency-based learning with guidance on responsible artificial intelligence use in undergraduate teaching.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Assessing a large language model for glaucoma knowledge: ChatGPT-5 versus residents</a>
+    <p class="news-card-summary">ChatGPT-5 outperformed ophthalmology residents on glaucoma multiple-choice questions, suggesting potential as a subspecialty assessment tool with noted generalizability limitations.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42483714?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Artificial Intelligence and Large Language Models: A Case-Based, Peer-Teaching Workshop for Preclinical Medical Students</a>
+    <p class="news-card-summary">Case-based peer-teaching workshop introduced preclinical medical students to large language models and effective practices for clinical use.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Learning curves and demographic influence on skill acquisition of artificial intelligence-assisted videolaryngoscopy training with the LarynGuide system: A pilot simulation study</a>
+    <p class="news-card-summary">Pilot simulation study characterized learning curves for artificial intelligence-assisted videolaryngoscopy training in mixed medical student cohorts.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 22, 2026</span></div>
@@ -64,6 +92,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">AI virtual patient system improved objective structured clinical examination performance in medical students, particularly those needing structured support, with tailored feedback aligned to exam standards.</p>
   </div>
 </div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42482261?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Diagnostic reasoning with and without AI: automation bias in pre-clerkship medical students</a>
+    <p class="news-card-summary">Study found preclinical students showed automation bias with AI diagnostic assistance and benefited most when baseline accuracy was weakest, suggesting need for foundational AI literacy coursework.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="other">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
@@ -90,41 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">Medical Students&#x27; Attitudes, Perceptions, and Self-Reported Familiarity With Artificial Intelligence in Healthcare: A Systematic Review and Meta-Analysis</a>
     <p class="news-card-summary">Systematic review finds medical students hold broadly favorable attitudes toward artificial intelligence in healthcare, though estimates vary substantially across studies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">Would artificial intelligence pass a Geriatrics exam?: evaluating conversational responses and their accuracy</a>
-    <p class="news-card-summary">Study evaluates AI model performance on geriatrics exam questions, finding high accuracy on theoretical questions but limitations in variability of real clinical scenarios.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.15829">Cost-efficient generative AI summarization for scalable automated essay scoring in educational assessment</a>
-    <p class="news-card-summary">A study proposes generative AI-assisted summarization to improve automated essay scoring by addressing transformer input-length limitations in long-form assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">Accuracy and stability of DeepSeek-R1 and GPT-4o on pediatric questions</a>
-    <p class="news-card-summary">DeepSeek-R1 outperformed GPT-4o on pediatric medical questions, but both models showed performance variability across runs, raising concerns for clinical applications requiring consistency.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">Automating Case-Based Learning in Obstetrics and Gynecology: Validation of a Locally Deployed Large Language Model</a>
-    <p class="news-card-summary">Locally deployed large language models can efficiently generate case-based learning databases in obstetrics and gynecology, but require human clinician review to validate accuracy and capture tacit knowledge.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">Integrating Artificial Intelligence with Gamification in Medical Education: A Pedagogically Grounded Framework and Critical Review</a>
-    <p class="news-card-summary">Integration of artificial intelligence with gamification in medical education offers potential to personalize learning and improve engagement, though empirical evidence of combined effects remains limited.</p>
   </div>
 </div>
 </div>

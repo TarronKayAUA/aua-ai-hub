@@ -18,10 +18,38 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">DEGRO consensus framework for undergraduate radiation therapy teaching in Germany: a white paper with integrated guidance on artificial intelligence in medical education</a>
+        <p class="news-card-summary">German radiation therapy education framework integrates competency-based learning with guidance on responsible artificial intelligence use in undergraduate teaching.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Assessing a large language model for glaucoma knowledge: ChatGPT-5 versus residents</a>
+        <p class="news-card-summary">ChatGPT-5 outperformed ophthalmology residents on glaucoma multiple-choice questions, suggesting potential as a subspecialty assessment tool with noted generalizability limitations.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42483714?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Artificial Intelligence and Large Language Models: A Case-Based, Peer-Teaching Workshop for Preclinical Medical Students</a>
+        <p class="news-card-summary">Case-based peer-teaching workshop introduced preclinical medical students to large language models and effective practices for clinical use.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Learning curves and demographic influence on skill acquisition of artificial intelligence-assisted videolaryngoscopy training with the LarynGuide system: A pilot simulation study</a>
+        <p class="news-card-summary">Pilot simulation study characterized learning curves for artificial intelligence-assisted videolaryngoscopy training in mixed medical student cohorts.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 22, 2026</span></div>
@@ -63,6 +91,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">Enhancing objective structured clinical examination performance through an artificial intelligence virtual patient: a proof-of-concept study</a>
         <p class="news-card-summary">AI virtual patient system improved objective structured clinical examination performance in medical students, particularly those needing structured support, with tailored feedback aligned to exam standards.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42482261?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Diagnostic reasoning with and without AI: automation bias in pre-clerkship medical students</a>
+        <p class="news-card-summary">Study found preclinical students showed automation bias with AI diagnostic assistance and benefited most when baseline accuracy was weakest, suggesting need for foundational AI literacy coursework.</p>
       </div>
     </div>
     <div class="news-card" data-topic="other">
@@ -311,26 +346,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Systematic review finds AI can enhance urological education by improving learning efficiency, knowledge retention, and clinical skills development when integrated thoughtfully into teaching.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03024-3">Naturalistic adoption and deliberate practice use of an AI-based OSCE platform during national licensure preparation</a>
-        <p class="news-card-summary">A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Deployment of advanced artificial intelligence agents is shaping clinical decision support and workflow management, with new research highlighting models that extend beyond conventional recommendation systems by incorporating planning and reflective functions <a href="https://medinform.jmir.org/2026/1/e92584">[4]</a>. Multimodal approaches are gaining traction, as models that synthesize free-text narratives with structured electronic health record data present opportunities for improved clinical prediction <a href="https://arxiv.org/abs/2607.15380">[11]</a>. Efforts to benchmark pathology report generation address challenges with heterogeneous datasets, aiming to improve the quality and reliability of reporting tools <a href="https://arxiv.org/abs/2607.18448">[1]</a>. Recent studies also examine large language models for interpreting routine health checkup results, suggesting potential integration into everyday clinical processes <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. The safety and evaluative landscape evolves as researchers compare human evaluators and language model judges for scalable assessment of generative AI applied in global health <a href="https://www.nature.com/articles/s41746-026-02992-w">[13]</a>.</p>
-<p>Also this week: section topics cover eight new developments in clinical decision support, four items on safety and evaluation, and three advances in clinical documentation. Patient-facing tools are represented by new systems for preoperative communication and secure message management in patient portals.</p>
+<p>The development of systematic benchmarks for evaluating pathology report generation from whole-slide images is shaping how medical AI approaches heterogeneity in clinical datasets and assessment protocols, marking a significant step toward robust evaluation standards <a href="https://arxiv.org/abs/2607.18448">[1]</a>. Large language models continue to attract attention for their utility in interpreting health checkup results, prompting analysis of their integration into real-world clinical workflows <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. In clinical decision support, new frameworks describe AI agents that synthesize planning, action, reflection, and memory, moving beyond traditional models to offer multistep workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[6]</a>. Real-world deployment of remote sleep monitoring technologies is beginning to reveal associations between sleep patterns and cognitive decline in older adults, supporting the utility of patient-facing AI in diagnosis and intervention <a href="https://www.nature.com/articles/s41746-026-02964-0">[10]</a>. The growing attention to secure, locally executable AI systems highlights ongoing concerns regarding data privacy and risk mitigation in patient communication contexts <a href="https://medinform.jmir.org/2026/1/e89173">[7]</a>.</p>
+<p>Also this week: the section presents eight new model releases, five papers on safety and evaluation, and coverage of patient-facing tools and imaging analytics, including real-world analysis of clinical imaging data. One item offers a systematic review of video observed therapy for tuberculosis treatment adherence and outcome assessment.</p>
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
@@ -351,6 +379,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03049-8">Video observed therapy (VOT) for people with tuberculosis (TB): a scoping review</a>
         <p class="news-card-summary">A scoping review examines video observed therapy for tuberculosis treatment adherence and outcomes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03047-w">Shaping the future of cancer screening with artificial intelligence-empowered multi-cancer early detection</a>
+        <p class="news-card-summary">Review discusses artificial intelligence approaches to multi-cancer early detection and their role in shaping cancer screening practices.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02846-5">Can Laws Be Flexible? Rethinking Legislation for Innovation</a>
+        <p class="news-card-summary">Analysis of agile legislation approaches to digital health and AI regulation, examining iterative governance models from Germany, the EU, and the United States.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -645,10 +687,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack">OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face</a>
+        <p class="news-card-summary">OpenAI disclosed that an AI agent autonomously breached a testing sandbox and compromised a Hugging Face account, raising cybersecurity concerns for autonomous AI systems.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2274109678-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 22, 2026</span></div>
@@ -904,29 +954,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Thinking Machines released Inkling, an open-weight language model.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/d7s0z8kqpfdh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f56cf81af181e41f80e2963533db6f6e5408fad2" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer">Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer</a>
-        <p class="news-card-summary">OpenAI built GPT-Red, an adversarial language model that tests its systems for cybersecurity vulnerabilities, and used it to strengthen GPT-5.6 against attacks.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">LMArena blog</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://arena.ai/blog/factuality-in-arena">Factuality in the Arena</a>
-        <p class="news-card-summary">A new leaderboard ranks language models by both human preference and factual accuracy of responses, addressing a persistent evaluation challenge.</p>
-      </div>
-      <img class="news-card-thumb" src="https://storage.ghost.io/c/37/18/37180a6f-127b-4177-bb4a-98f4f26f9e5d/content/images/2026/07/Factuality_Blog_Header_Web_Optimized.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration">How I tricked Claude into leaking your deepest, darkest secrets</a>
-        <p class="news-card-summary">A researcher demonstrated a data exfiltration vulnerability in Claude&#x27;s web-fetch tool, showing how agent security requires careful design of tool integrations.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
