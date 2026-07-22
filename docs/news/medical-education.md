@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>AI’s role in practical medical training is receiving close scrutiny as simulation tools and exam support systems evolve. A prospective cohort study suggests agentic AI simulations may help psychiatry residents develop clinical consultation skills and receive targeted feedback <a href="https://mededu.jmir.org/2026/1/e88580">[2]</a>. In anatomy education, a comparative evaluation found generative AI models produced illustrations with varying anatomical accuracy, highlighting current technology’s limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[3]</a>. Efforts to bolster language model performance on medical exams include employing tiered rescue protocols to address accuracy declines on complex questions <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[4]</a>. National exam data further indicate AI can support cardiovascular surgery trainees by reinforcing theoretical knowledge, which may allow greater focus on operative skills <a href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: eight new model releases, five papers on assessment, and continued attention to teaching and curriculum approaches. Studies explore perceptions of artificial intelligence among medical students and examine automated summarization for essay scoring. Locally deployed language models are now validated for generating case-based learning databases in obstetrics and gynecology.</p>
+<p>A consensus study has established guiding principles for responsible use of artificial intelligence across health professions education, research, and care <a href="https://mededu.jmir.org/2026/1/e91626">[1]</a>. Evaluations of large language models in clinical knowledge assessments and exam scenarios now compare their performance directly to trainees, identifying both strengths and limitations in subspecialty and general medical knowledge <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[3]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[9]</a>. New frameworks for curriculum design and undergraduate teaching integrate targeted guidance on artificial intelligence, supporting competency-based models and responsible practice <a href="https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[2]</a>. Simulation and feedback tools using generative and agentic AI demonstrate feasibility in skills training, including psychiatry consultation and videolaryngoscopy, while also highlighting influences of learner demographics and the importance of structured support <a href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[5]</a> <a href="https://mededu.jmir.org/2026/1/e88580">[7]</a>.</p>
+<p>Also this week: six new items on teaching and curriculum, studies exploring automation bias and foundational AI literacy, ongoing analyses of how AI impacts academic integrity, and comparative research on generative AI for anatomy illustration. Perceptions and adoption by medical students were assessed in a mixed-methods study.</p>
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91626">Principles for Responsible AI in Health Professions Education, Research, and Care: Health CARE-AI (Contextual, Accountable, Responsible, and Equitable Artificial Intelligence) Framework Delphi Consensus Study</a>
+    <p class="news-card-summary">A Delphi consensus framework establishes principles for contextual, accountable, responsible, and equitable artificial intelligence in health professions education, research, and clinical practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91345">Perceptions, Attitudes, and Use of AI by Medical Students: Mixed Methods Study</a>
     <p class="news-card-summary">Mixed-methods study examining how medical students perceive, view, and use artificial intelligence in their training and future practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">Medical Students&#x27; Attitudes, Perceptions, and Self-Reported Familiarity With Artificial Intelligence in Healthcare: A Systematic Review and Meta-Analysis</a>
-    <p class="news-card-summary">Systematic review finds medical students hold broadly favorable attitudes toward artificial intelligence in healthcare, though estimates vary substantially across studies.</p>
   </div>
 </div>
 </div>
