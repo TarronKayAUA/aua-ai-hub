@@ -343,15 +343,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Emerging work on guideline-adherent recommendations highlights retrieval-augmented large language models supporting diabetic kidney disease care as a way to anchor AI recommendations to established clinical standards <a href="https://www.nature.com/articles/s41746-026-03035-0">[11]</a>. Ongoing evolution is evident as medical AI agents integrate planning, action, reflection, and memory for multistep workflow assistance, potentially extending the reach of clinical decision support <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Multimodal learning approaches are advancing, as unified models combine clinical narratives and structured measurements for prediction tasks, and interpretable multimodal frameworks support survival prediction and cognitive impairment assessment <a href="https://arxiv.org/abs/2607.15380">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03048-9">[13]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[14]</a>. The interaction between large language models and clinical guidelines introduces renewed focus on the risks inherent to automated recommendations and potential false confidence, underscoring a need for careful evaluation <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>.</p>
-<p>Also this week: real-world deployment of remote sleep monitoring technologies highlights patterns linked to cognitive decline, and locally executable AI systems address privacy concerns in preoperative patient communication. Eight studies and systems explore clinical decision support, five focus on safety and evaluation, with contributions in imaging and diagnostics, clinical documentation, and patient-facing tools.</p>
-<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
+<p>The section highlights a shift toward advanced, workflow-based clinical decision support using medical AI agents that integrate planning, action, reflection, and memory to manage complex clinical tasks <a href="https://medinform.jmir.org/2026/1/e92584">[3]</a>. Research demonstrates new approaches in generating guideline-concordant recommendations for diabetic kidney disease management, utilizing retrieval-augmented language models to improve safety and adherence <a href="https://www.nature.com/articles/s41746-026-03035-0">[13]</a>. Locally executable AI systems are improving preoperative patient communication by reducing hallucination risk and protecting patient privacy compared to cloud-based models <a href="https://medinform.jmir.org/2026/1/e89173">[4]</a>. Large language models are also explored for interpreting health checkup results, offering potential for streamlined clinical assessments <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. Real-world evaluation shows that automating research impact documentation reduces significant manual effort, signaling operational advances for clinical and translational sciences <a href="https://arxiv.org/abs/2607.16989">[6]</a>.</p>
+<p>Also this week: eight studies on clinical decision support-including tools for atrial fibrillation and cognitive impairment management-three advances in clinical documentation, four evaluations of AI safety and effectiveness, and one item on patient portal message management. The section also features analysis of real-world imaging data and deployment of remote sleep monitoring linked to cognitive decline.</p>
+<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (17)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.18448">PathReportEval: A Systematic Benchmark for Pathology Report Generation</a>
+        <p class="news-card-summary">Benchmark for evaluating pathology report generation from whole-slide images addresses heterogeneous datasets and evaluation protocols in multimodal medical AI.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02467-y">Large language models for interpretation of health checkup results</a>
+        <p class="news-card-summary">Study examines large language models for interpreting health checkup results and their potential role in clinical practice.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
@@ -634,34 +648,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Configurational analysis of pathways to improve human-AI collaborative consultation effectiveness in online health communities from an information ecology perspective.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.12051">Agentic systems for breast cancer treatment recommendations</a>
-        <p class="news-card-summary">Evaluation of language model systems for breast cancer treatment recommendations across clinical stages shows reliability and safety considerations for oncology decision support.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02983-x">Landscape of regulatory clinical investigations status of traditional and digital medical devices in the Republic of Korea (2003, mid 2024)</a>
-        <p class="news-card-summary">Regulatory analysis of clinical investigations for traditional and digital medical devices in South Korea from 2003 to mid-2024 documents approval pathways and oversight trends.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02953-3">A scoping review of explainable artificial intelligence for medical multimodal data</a>
-        <p class="news-card-summary">Scoping review of explainable artificial intelligence methods for medical multimodal data documents interpretability approaches in clinical applications.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03023-4">Explainable machine learning for 10-year prediction of cognitive impairment in a rural Chinese population</a>
-        <p class="news-card-summary">Machine learning model with interpretability features predicts cognitive impairment risk over ten years in a rural Chinese cohort.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 15, 2026</span></div>
@@ -679,9 +665,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -962,25 +948,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!uI0t!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f84fabc-d39b-4bec-b24b-6644b4652e02_2048x1143.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.11889">Scaling Point-in-Time Language Models</a>
-        <p class="news-card-summary">Point-in-time language models trained only on temporally prior text eliminate lookahead bias for valid backtesting and causal inference.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
         <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhwt8/gemma431bantihal_gemma_steered_to_push_back_on">Gemma-4-31B-AntiHal: Gemma steered to push back on false premises instead of hallucinating, without any impact to benchmark performance</a>
         <p class="news-card-summary">Interpretability work on Gemma 4 31B steered the model to challenge false premises and hallucinations without degrading benchmark performance.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhukq/bonsai_27b_the_first_27bclass_model_to_run_on_a">Bonsai 27B: The First 27B-Class Model to Run on a Phone</a>
-        <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model capable of running on mobile phones.</p>
       </div>
     </div>
     <div class="news-card" data-topic="new-models">

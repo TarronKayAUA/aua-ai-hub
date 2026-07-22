@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Emerging work on guideline-adherent recommendations highlights retrieval-augmented large language models supporting diabetic kidney disease care as a way to anchor AI recommendations to established clinical standards <a href="https://www.nature.com/articles/s41746-026-03035-0">[11]</a>. Ongoing evolution is evident as medical AI agents integrate planning, action, reflection, and memory for multistep workflow assistance, potentially extending the reach of clinical decision support <a href="https://medinform.jmir.org/2026/1/e92584">[1]</a>. Multimodal learning approaches are advancing, as unified models combine clinical narratives and structured measurements for prediction tasks, and interpretable multimodal frameworks support survival prediction and cognitive impairment assessment <a href="https://arxiv.org/abs/2607.15380">[8]</a> <a href="https://www.nature.com/articles/s41746-026-03048-9">[13]</a> <a href="https://www.nature.com/articles/s41746-026-03027-0">[14]</a>. The interaction between large language models and clinical guidelines introduces renewed focus on the risks inherent to automated recommendations and potential false confidence, underscoring a need for careful evaluation <a href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">[3]</a>.</p>
-<p>Also this week: real-world deployment of remote sleep monitoring technologies highlights patterns linked to cognitive decline, and locally executable AI systems address privacy concerns in preoperative patient communication. Eight studies and systems explore clinical decision support, five focus on safety and evaluation, with contributions in imaging and diagnostics, clinical documentation, and patient-facing tools.</p>
-<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
+<p>The section highlights a shift toward advanced, workflow-based clinical decision support using medical AI agents that integrate planning, action, reflection, and memory to manage complex clinical tasks <a href="https://medinform.jmir.org/2026/1/e92584">[3]</a>. Research demonstrates new approaches in generating guideline-concordant recommendations for diabetic kidney disease management, utilizing retrieval-augmented language models to improve safety and adherence <a href="https://www.nature.com/articles/s41746-026-03035-0">[13]</a>. Locally executable AI systems are improving preoperative patient communication by reducing hallucination risk and protecting patient privacy compared to cloud-based models <a href="https://medinform.jmir.org/2026/1/e89173">[4]</a>. Large language models are also explored for interpreting health checkup results, offering potential for streamlined clinical assessments <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. Real-world evaluation shows that automating research impact documentation reduces significant manual effort, signaling operational advances for clinical and translational sciences <a href="https://arxiv.org/abs/2607.16989">[6]</a>.</p>
+<p>Also this week: eight studies on clinical decision support-including tools for atrial fibrillation and cognitive impairment management-three advances in clinical documentation, four evaluations of AI safety and effectiveness, and one item on patient portal message management. The section also features analysis of real-world imaging data and deployment of remote sleep monitoring linked to cognitive decline.</p>
+<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.18448">PathReportEval: A Systematic Benchmark for Pathology Report Generation</a>
+    <p class="news-card-summary">Benchmark for evaluating pathology report generation from whole-slide images addresses heterogeneous datasets and evaluation protocols in multimodal medical AI.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02467-y">Large language models for interpretation of health checkup results</a>
+    <p class="news-card-summary">Study examines large language models for interpreting health checkup results and their potential role in clinical practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03048-9">A multimodal evidence-driven framework for clinical decision support in cognitive impairment</a>
     <p class="news-card-summary">Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03027-0">Interpretable multimodal deep learning for time-resolved survival prediction after hepatocellular carcinoma resection</a>
-    <p class="news-card-summary">Peer-reviewed study presents an interpretable multimodal deep learning model for predicting survival outcomes after hepatocellular carcinoma resection.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03011-8">Brain contrastive modeling reveals depression subtypes with distinct treatment response and progression</a>
-    <p class="news-card-summary">Contrastive learning methods identify depression subtypes with distinct treatment responses, offering a data-driven approach to treatment selection.</p>
   </div>
 </div>
 </div>
