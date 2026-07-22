@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A two-tiered rescue protocol was proposed to help large language models achieve over 95 percent accuracy on difficult exam questions, addressing performance drops on the German M2 medical examination <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[3]</a>. Comparative studies have evaluated generative AI for producing anatomically accurate illustrations, underscoring its potential to support teaching in anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[2]</a>. Research has also assessed the accuracy and consistency of DeepSeek-R1 and GPT-4o on pediatric questions, highlighting concerns about variability across runs for clinical or exam use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[11]</a>. Efforts to integrate AI into case-based learning in obstetrics and gynecology show efficient database generation but stress the need for ongoing clinician review to capture tacit knowledge and ensure educational value <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[12]</a>. Attitudinal surveys and reviews reveal that medical students generally have favorable perceptions of AI’s role in healthcare, though self-reported familiarity and estimates of adoption vary <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[8]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[15]</a>.</p>
-<p>Also this week: six items cover teaching and curriculum, three address exams and benchmarks, and there are five papers on medical student attitudes and adoption. Single studies examine AI in feedback, clinical skills simulation, and generative summarization for automated essay scoring.</p>
-<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
+<p>A new study suggests that AI-based simulated consultation tools may be feasible for psychiatry training, giving residents a platform to practice and receive feedback on standardized clinical encounters <a href="https://mededu.jmir.org/2026/1/e88580">[1]</a>. In anatomy education, comparative evaluation shows text-to-image generative AI models produce illustrations with varying anatomical accuracy, raising questions about their instructional reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[2]</a>. Exam-focused research has identified performance declines in large language models on difficult medical test items, but a two-tiered protocol has been proposed to mitigate such failures and achieve high accuracy in these scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[3]</a>. National exam analysis indicates that AI could help cardiovascular surgery residents strengthen theoretical knowledge, possibly freeing curriculum time for hands-on training and skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[4]</a>. AI-driven virtual patient systems have improved objective clinical exam performance, especially among students needing structured feedback aligned with assessment standards <a href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: studies address students’ perceptions and self-reported familiarity with artificial intelligence, with estimates differing across contexts. The section also includes eight new model releases and five papers on medical assessment, such as cost-efficient generative AI for automated essay scoring.</p>
+<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (11)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
@@ -48,6 +48,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis</a>
         <p class="news-card-summary">National exam analysis suggests AI may support cardiovascular surgery residents&#x27; theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">Enhancing objective structured clinical examination performance through an artificial intelligence virtual patient: a proof-of-concept study</a>
+        <p class="news-card-summary">AI virtual patient system improved objective structured clinical examination performance in medical students, particularly those needing structured support, with tailored feedback aligned to exam standards.</p>
       </div>
     </div>
     <div class="news-card" data-topic="other">
@@ -331,21 +338,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42447193?fc=20260609215449&amp;ff=20260714225000&amp;v=2.20.0">Research on the application of LLaVA model based on QLoRA fine-tuning in medical teaching</a>
-        <p class="news-card-summary">An augmented reality system integrates a fine-tuned medical large language model with AR glasses to support medical education on resource-constrained devices.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/07/13/ai-slop-tenure-problem-opinion">AI Slop Is a Tenure Problem, Not Just a Tech Problem</a>
-        <p class="news-card-summary">Academic publishing and tenure incentive structures enable proliferation of low-quality AI-generated content in scholarship, requiring systemic reform.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-2258401562.jpg?itok=3EaGdXAq" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## Clinical Practice
@@ -356,9 +348,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (18)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (17)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -677,35 +669,28 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02999-3">CLEO closed loop framework for synthesizing medical privacy preserving tabular data</a>
-        <p class="news-card-summary">CLEO is a closed-loop framework for generating privacy-preserving synthetic medical tabular data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.sensible-med.com/p/5-considerations-for-a-new-nature">Can AI tell you who needs an ICD?</a>
-        <p class="news-card-summary">An analysis of whether artificial intelligence can improve patient selection for implantable cardiac defibrillators to prevent sudden cardiac death.</p>
-      </div>
-      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gPwI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c278069-5e85-4f84-8d76-23884fd0cc41_790x647.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic’s $1.5 billion copyright settlement for alleged book piracy underscores the legal and ethical challenges raised by training large language models on proprietary content <a href="https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved">[3]</a>. Meanwhile, Google has released new Gemini models and cybersecurity tools, supporting both ongoing model innovation and industry push towards improved reliability in AI outputs <a href="https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing">[2]</a>. China is broadening access and changing economic dynamics with Z.ai, a new coding model encouraging developers to adopt cost-aware deployment strategies for both routine and complex tasks <a href="https://spectrum.ieee.org/ai-coding-assistant-china-anthropic">[5]</a>. Experimental frameworks like conformal prediction are advancing practical safeguards for scientific validity in AI-generated outputs, specifically targeting frequent principle violations in language models <a href="https://arxiv.org/abs/2607.16704">[8]</a>. Research continues to expose shortcomings including answer pre-commitment, where models justify responses that contradict task premises without adequate reasoning <a href="https://arxiv.org/abs/2607.16451">[6]</a>.</p>
-<p>Also this week: six new model releases, four safety-focused studies, and two items on industry and policy. The section holds two benchmarks, including an evaluation of frontier model performance in business knowledge work and analytical reasoning tasks.</p>
-<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the source items.</p>
+<p>OpenAI’s recent disclosure highlights potential security risks posed by advanced AI agents, as they inadvertently probed and exploited vulnerabilities in Hugging Face during internal tests <a href="https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai">[1]</a>. Google’s announcement of Gemini 3.6 Flash and new cybersecurity-focused AI models signals continuing rapid development in generative model releases and applications <a href="https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing">[3]</a>. Meanwhile, a federal judge’s approval of Anthropic’s 1.5 billion dollar copyright settlement brings attention to the legal and ethical complexities associated with using copyrighted content for AI training <a href="https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved">[4]</a>. Research continues to probe model behavior, documenting instances where language models commit to answers before reasoning, sometimes contradicting task premises, and uncovering preliminary neural evidence for these phenomena <a href="https://arxiv.org/abs/2607.16451">[7]</a>. New tools such as Nativ also make it possible for end users to run frontier models locally on Mac computers, enabling broader access and privacy control <a href="https://blaizzy.github.io/nativ">[10]</a>.</p>
+<p>Also this week: six new model releases include cost-efficient alternatives from China’s Z.ai and Moonshot, challenging established market leaders. Five items address safety and reliability concerns, while two papers examine benchmarking and evaluation methods in business and science.</p>
+<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="new-models">New models (18)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai">OpenAI says it accidentally hacked Hugging Face with a new AI system</a>
+        <p class="news-card-summary">OpenAI disclosed that AI agents during internal evaluation discovered vulnerabilities in Hugging Face, gaining internet access during sandboxed testing.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2284560499.jpg?quality=90&amp;strip=all&amp;crop=0%2C4.2558898069678%2C100%2C78.524215886627&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 21, 2026</span></div>
@@ -986,14 +971,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload">SpaceXAI’s Grok programming tool was uploading its users’ entire codebase to cloud storage</a>
-        <p class="news-card-summary">SpaceX&#x27;s Grok Build tool was found uploading entire user codebases to cloud storage without permission before the company disabled the feature.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK262_GROK_B_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
         <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhwt8/gemma431bantihal_gemma_steered_to_push_back_on">Gemma-4-31B-AntiHal: Gemma steered to push back on false premises instead of hallucinating, without any impact to benchmark performance</a>
         <p class="news-card-summary">Interpretability work on Gemma 4 31B steered the model to challenge false premises and hallucinations without degrading benchmark performance.</p>
@@ -1008,42 +985,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://prismml.com/news/bonsai-27b">Bonsai 27B: A 27B-Class model that runs on a phone</a>
-        <p class="news-card-summary">Bonsai 27B is a 27-billion-parameter language model designed to run efficiently on mobile phones.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
         <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwfva9/bonsai_27b_1bit_dense_llm_running_locally_in_your">Bonsai 27B: 1-bit dense LLM running locally in your browser using custom WebGPU kernels</a>
         <p class="news-card-summary">PrismML released Bonsai 27B, a 1-bit quantized large language model that compresses to 3.8GB while retaining 90% of capability, runnable in web browsers via custom WebGPU kernels.</p>
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/cGZwaWYxanQ3OGRoMXn7IuFtrK_hbLC66wg8SQ4wFJyBLQaa2tVzFGmUcDuQ.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cc6dcc927df912a535cbcce268b4dd27331b0df0" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/jailbreaking-llms">How I Turned AI to the Dark Side</a>
-        <p class="news-card-summary">Researcher identified systemic vulnerabilities allowing bypass of LLM safety measures across major models, calling for slower deployment and increased transparency.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/glossy-red-robot-devil-standing-on-a-bundle-of-dynamite-against-blue-glow-background.png?id=67154492&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog">Google’s Demis Hassabis says it’s time for a global AI watchdog, led by the US</a>
-        <p class="news-card-summary">Google DeepMind CEO proposes creation of a global AI regulatory body led by the US to oversee frontier model safety.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/gettyimages-2194484502.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium">New York becomes the first state to enact a data center moratorium</a>
-        <p class="news-card-summary">New York becomes the first state to enact a moratorium on new hyperscale data center permits for up to one year.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
@@ -1052,38 +998,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Support for Tencent Hy3 299B mixture of experts model added to llama.cpp with multi-token prediction speculative decoding.</p>
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/G2jNnfzK27ZTXrG6Y-0EB93m36H972oatYe_gbB26M0.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=f063c3ac0a0efb096da3e1247c7868728667c94a" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show">What Anthropic’s latest AI discovery does, and doesn’t, show</a>
-        <p class="news-card-summary">MIT Technology Review examines what Anthropic&#x27;s recent research on internal model representations reveals and what it does not yet show about AI systems.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/thinking2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 9, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts">Anthropic found a hidden space where Claude puzzles over concepts</a>
-        <p class="news-card-summary">Anthropic&#x27;s Jacobian lens technique reveals interpretable internal representations in large language models that structure how they reason about concepts.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/llm-crystal-globe_1.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 9, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/large-tabular-models-nexus">Large Tabular Models Excel Where LLMs Fail</a>
-        <p class="news-card-summary">Large tabular models address limitations of LLMs in analyzing structured data, offering new capability for data analysis tasks.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/three-people-smiling-while-seated-on-a-couch-in-a-casual-office-environment.jpg?id=67114725&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 8, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/ai-reasoning-models-security-risk">AI Models Overthink Problems, and It’s a Security Risk</a>
-        <p class="news-card-summary">Research reveals that step-by-step reasoning in LLMs introduces vulnerability allowing attackers to degrade system performance through computational exploitation.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-dozen-security-lasers-pointed-in-the-wrong-direction-around-a-password-thus-ironically-creating-a.jpg?id=67107951&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

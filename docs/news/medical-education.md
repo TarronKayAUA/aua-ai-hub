@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A two-tiered rescue protocol was proposed to help large language models achieve over 95 percent accuracy on difficult exam questions, addressing performance drops on the German M2 medical examination <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[3]</a>. Comparative studies have evaluated generative AI for producing anatomically accurate illustrations, underscoring its potential to support teaching in anatomy education <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[2]</a>. Research has also assessed the accuracy and consistency of DeepSeek-R1 and GPT-4o on pediatric questions, highlighting concerns about variability across runs for clinical or exam use <a href="https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[11]</a>. Efforts to integrate AI into case-based learning in obstetrics and gynecology show efficient database generation but stress the need for ongoing clinician review to capture tacit knowledge and ensure educational value <a href="https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&amp;ff=20260719095641&amp;v=2.20.0">[12]</a>. Attitudinal surveys and reviews reveal that medical students generally have favorable perceptions of AI’s role in healthcare, though self-reported familiarity and estimates of adoption vary <a href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">[8]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">[15]</a>.</p>
-<p>Also this week: six items cover teaching and curriculum, three address exams and benchmarks, and there are five papers on medical student attitudes and adoption. Single studies examine AI in feedback, clinical skills simulation, and generative summarization for automated essay scoring.</p>
-<p class="section-brief-date">The picture as of July 21, 2026; numbered links go to the items below.</p>
+<p>A new study suggests that AI-based simulated consultation tools may be feasible for psychiatry training, giving residents a platform to practice and receive feedback on standardized clinical encounters <a href="https://mededu.jmir.org/2026/1/e88580">[1]</a>. In anatomy education, comparative evaluation shows text-to-image generative AI models produce illustrations with varying anatomical accuracy, raising questions about their instructional reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">[2]</a>. Exam-focused research has identified performance declines in large language models on difficult medical test items, but a two-tiered protocol has been proposed to mitigate such failures and achieve high accuracy in these scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[3]</a>. National exam analysis indicates that AI could help cardiovascular surgery residents strengthen theoretical knowledge, possibly freeing curriculum time for hands-on training and skill development <a href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[4]</a>. AI-driven virtual patient systems have improved objective clinical exam performance, especially among students needing structured feedback aligned with assessment standards <a href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: studies address students’ perceptions and self-reported familiarity with artificial intelligence, with estimates differing across contexts. The section also includes eight new model releases and five papers on medical assessment, such as cost-efficient generative AI for automated essay scoring.</p>
+<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="simulation-and-skills">
@@ -47,6 +47,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis</a>
     <p class="news-card-summary">National exam analysis suggests AI may support cardiovascular surgery residents&#x27; theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">Enhancing objective structured clinical examination performance through an artificial intelligence virtual patient: a proof-of-concept study</a>
+    <p class="news-card-summary">AI virtual patient system improved objective structured clinical examination performance in medical students, particularly those needing structured support, with tailored feedback aligned to exam standards.</p>
   </div>
 </div>
 <div class="news-card" data-topic="other">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Exploring the role of generative artificial intelligence in enhancing clinical skills training: A bibliometric analysis</a>
     <p class="news-card-summary">Bibliometric analysis shows generative AI in clinical skills training is rapidly expanding with growing attention to language models and ethical issues.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Attitudes, usage patterns, and learning interests of medical students toward DeepSeek in medical education: A cross-sectional survey</a>
-    <p class="news-card-summary">Survey of medical students&#x27; attitudes, usage patterns, and learning interests regarding DeepSeek in medical education.</p>
   </div>
 </div>
 </div>
