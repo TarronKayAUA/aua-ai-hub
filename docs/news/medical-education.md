@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A Delphi consensus framework establishes principles for contextual, accountable, responsible, and equitable artificial intelligence use in health professions education, research, and care, supporting safer integration across multiple domains <a href="https://mededu.jmir.org/2026/1/e91626">[5]</a>. Meta-synthesis of recent AI applications demonstrates that adaptive learning pathways and data-driven instruction are now enabling greater engagement and equity for medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[3]</a>. Studies show that vision-language models can generate board examination questions, though quality gaps persist compared to human-authored items, highlighting a need for human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[2]</a>. Evaluations of large language models for assessment suggest prioritizing reliability through task-specific piloting and semantic supervision prior to deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[4]</a>. Ongoing concerns among students regarding AI integration, especially with respect to ethics and clinical errors, point to gaps in formal training and persistent apprehensions even as awareness grows <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[1]</a>.</p>
-<p>Also this week: seven new teaching and curriculum studies, three reports on exam benchmarks, two assessment papers, and two simulation-related items, including a pilot study on AI-assisted videolaryngoscopy training and a comparative evaluation of generative models for anatomy illustration.</p>
+<p>A detailed comparison of GPT-4o and Claude Sonnet 4 in medical ethics scenarios highlights model-specific strengths and limitations in specialty-based cases, illustrating the evolving challenges in deploying artificial intelligence for critical clinical decision making <a href="https://mededu.jmir.org/2026/1/e70199">[1]</a>. As more subspecialties examine language model performance, recent work shows that advanced models like ChatGPT-5 can surpass resident accuracy in glaucoma knowledge assessment-though generalizability remains a concern <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[8]</a>. Responsible integration is increasingly emphasized, with Delphi consensus frameworks guiding equitable and accountable AI adoption for education, research, and care <a href="https://mededu.jmir.org/2026/1/e91626">[6]</a>. Automated question generation by vision-language models offers efficiency for credentialing organizations, yet underscores the need for careful human oversight to maintain content quality <a href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[3]</a>. The reliability of large language model-driven assessment tools is being addressed through task-specific piloting and enhanced metadata extraction to limit errors in medical evaluation processes <a href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a>.</p>
+<p>Also this week: items explore simulation-based skill acquisition, with two pilot studies on videolaryngoscopy and psychiatry consultation training. Six new papers address competency-based curriculum, adaptive learning, and peer-teaching practices, while three discuss benchmarks for examination performance and feedback.</p>
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e70199">Performance of GPT-4o and Claude in Medical Ethics Scenarios: Comparative Study</a>
+    <p class="news-card-summary">Peer-reviewed comparison of GPT-4o and Claude Sonnet 4 performance on medical ethics scenarios including specialty-based cases.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">A 2-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT (GPT-5) and Gemini on the German M2 Medical Examination: Evaluation Study</a>
     <p class="news-card-summary">Study identifies accuracy decline in large language models on harder German medical exam questions and proposes a two-tiered rescue system to achieve over 95 percent accuracy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis</a>
-    <p class="news-card-summary">National exam analysis suggests AI may support cardiovascular surgery residents&#x27; theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.</p>
   </div>
 </div>
 </div>

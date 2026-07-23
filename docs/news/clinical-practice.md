@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A blood-based circular RNA signature has been shown to detect Alzheimer’s disease with high accuracy and to predict symptom onset before clinical evidence appears, offering potentially earlier intervention compared to current biomarker approaches <a href="https://www.nature.com/articles/s41591-026-04563-8">[1]</a>. Human oversight in medical AI is addressed with an analysis proposing structured guidance beyond simple clinician involvement, responding to challenges in safety and trust <a href="https://www.nature.com/articles/s41746-026-02971-1">[2]</a>. Large language models are being actively evaluated for their capacity to assess psychosis risk in patients, linking natural language processing to real-world clinical judgment <a href="https://www.nature.com/articles/s41746-026-02928-4">[3]</a>. Efforts to enhance pathology report generation from whole-slide images are also underway, with new benchmarks developed to handle heterogeneous data and protocols in multimodal medical AI <a href="https://arxiv.org/abs/2607.18448">[4]</a>. Additionally, studies are examining how large language models can contribute to interpreting health checkup results and support clinical workflows for improved practice outcomes <a href="https://www.nature.com/articles/s41746-026-02467-y">[5]</a>.</p>
-<p>Also this week: the section includes six new items on safety and evaluation, three on clinical decision support, and new research on imaging and diagnostics. Other topics cover patient-facing tools and clinical documentation, with examples such as secure interfaces for artificial intelligence in patient communication and real-world performance testing of sleep monitoring technologies.</p>
+<p>Detection and prediction of Alzheimer’s disease using blood-based circular RNA signatures shows promise for identifying the condition earlier than current biomarker approaches, offering potential for intervention before clinical symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[3]</a>. At the same time, research into the oversight of medical AI proposes frameworks for more robust and meaningful supervision that go beyond nominal human involvement, aiming to address critical safety and evaluation questions <a href="https://www.nature.com/articles/s41746-026-02971-1">[4]</a>. Studies exploring large language models in clinical assessment highlight their possible role in psychosis risk evaluations <a href="https://www.nature.com/articles/s41746-026-02928-4">[5]</a>, while emerging systems are also being validated for monitoring fidelity of lay-delivered mental health interventions and patient communication, reflecting ongoing expansion of patient-facing tools <a href="https://ai.jmir.org/2026/1/e95063">[1]</a> <a href="https://medinform.jmir.org/2026/1/e89173">[14]</a>.</p>
+<p>Also this week: the section features a benchmark for pathology report generation, reviews on multi-cancer early detection, and recent analyses of legislative approaches to digital health and AI regulation. Five papers address safety and evaluation, including information quality in YouTube’s medical ecosystem and risks of false confidence from automated guidelines.</p>
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95063">Automated Fidelity Monitoring of Lay-Delivered Mental Health Interventions Using Large Language Models: Development and Pilot Validation of shamiriAI in Kenya</a>
+    <p class="news-card-summary">Development and validation of an LLM-based system to monitor fidelity of lay-delivered mental health interventions in Kenya using session recordings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89054">Large Language Model Few-Shot Learning for Predicting Individual Treatment Response to Smartphone-Based Mindfulness in Autistic Adults With Anxiety: Secondary Analysis of a Randomized Controlled Trial</a>
+    <p class="news-card-summary">Secondary analysis using machine learning to predict individual response to smartphone-based mindfulness interventions for anxiety in autistic adults.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 23, 2026</span></div>
@@ -41,6 +55,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02928-4">Evaluating large language models for assessment of psychosis risk</a>
     <p class="news-card-summary">Peer-reviewed study evaluates large language models for their ability to assess psychosis risk in patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03046-x">The credibility paradox: clickbait, engagement, and information quality in YouTube’s medical ecosystem</a>
+    <p class="news-card-summary">Peer-reviewed analysis of how clickbait and engagement incentives affect information quality in medical content on YouTube.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02972-0">Generative AI mental health chatbots: a scoping review of intervention design and user experience</a>
+    <p class="news-card-summary">Scoping review of generative AI mental health chatbots examining intervention design approaches and user experience outcomes.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -99,33 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Commentary examines how large language models and clinical guidelines interact and the risks of false confidence in automated clinical recommendations.</p>
   </div>
   <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!l_TJ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8251ac79-ca1e-42ca-906d-5914f140b7d1_8256x5504.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.16989">Real-World Evaluation of an AI Agent Drafting Translational Impact Summaries</a>
-    <p class="news-card-summary">Real-world evaluation of AI agent that automates assembly of research impact documentation for clinical and translational science programs, reducing manual staff work from 15 hours per scholar.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02964-0">Real-world deployment of remote sleep monitoring technologies reveals distinct patterns associated with cognitive decline</a>
-    <p class="news-card-summary">Real-world deployment of remote sleep monitoring identifies patterns associated with cognitive decline in older adults.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88202">Real-World Imaging Data: Opportunities and Challenges</a>
-    <p class="news-card-summary">Analysis of how artificial intelligence and advanced analytical methods can extract deeper insights from real-world clinical imaging data for evidence generation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83216">A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial</a>
-    <p class="news-card-summary">Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.</p>
-  </div>
 </div>
 </div>
