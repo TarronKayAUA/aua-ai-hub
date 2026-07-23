@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A consensus study has established guiding principles for responsible use of artificial intelligence across health professions education, research, and care <a href="https://mededu.jmir.org/2026/1/e91626">[1]</a>. Evaluations of large language models in clinical knowledge assessments and exam scenarios now compare their performance directly to trainees, identifying both strengths and limitations in subspecialty and general medical knowledge <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[3]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">[9]</a>. New frameworks for curriculum design and undergraduate teaching integrate targeted guidance on artificial intelligence, supporting competency-based models and responsible practice <a href="https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[2]</a>. Simulation and feedback tools using generative and agentic AI demonstrate feasibility in skills training, including psychiatry consultation and videolaryngoscopy, while also highlighting influences of learner demographics and the importance of structured support <a href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[5]</a> <a href="https://mededu.jmir.org/2026/1/e88580">[7]</a>.</p>
-<p>Also this week: six new items on teaching and curriculum, studies exploring automation bias and foundational AI literacy, ongoing analyses of how AI impacts academic integrity, and comparative research on generative AI for anatomy illustration. Perceptions and adoption by medical students were assessed in a mixed-methods study.</p>
-<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
+<p>The release of a Delphi consensus framework for responsible artificial intelligence in health professions education, research, and clinical care introduces standardized principles for contextualized and equitable AI integration <a href="https://mededu.jmir.org/2026/1/e91626">[1]</a>. Competency-based approaches to AI are also reflected in guidance for undergraduate radiation therapy teaching, which addresses ethical and practical adaptation in curriculum design <a href="https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[2]</a>. Performance studies demonstrate that large language models like ChatGPT-5 can outperform ophthalmology residents on subspecialty knowledge assessments, highlighting potential roles in benchmarking and identifying domain limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[3]</a>. Pilot simulation research details diverse learning curves in AI-assisted videolaryngoscopy, underscoring both skill acquisition challenges and the influence of participant demographics <a href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[5]</a>. Additionally, structured workshops equip preclinical students with foundational practices for clinical use of large language models <a href="https://pubmed.ncbi.nlm.nih.gov/42483714?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[4]</a>.</p>
+<p>Also this week: the section includes studies on agentic AI consultation tools in psychiatry training, comparative analysis of generative AI for anatomy illustration, proposed rescue protocols for challenging exam questions, and objective clinical examination performance improvements with AI virtual patients. There are seven teaching and curriculum items and three focused on simulation skills.</p>
+<p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -54,6 +54,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Learning curves and demographic influence on skill acquisition of artificial intelligence-assisted videolaryngoscopy training with the LarynGuide system: A pilot simulation study</a>
     <p class="news-card-summary">Pilot simulation study characterized learning curves for artificial intelligence-assisted videolaryngoscopy training in mixed medical student cohorts.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42485339?fc=20260609215449&amp;ff=20260722234724&amp;v=2.20.0">The Challenge of Integrating Artificial Intelligence into Clinical Reasoning by Augmenting the Physician&#x27;s Central Cognitive Role</a>
+    <p class="news-card-summary">Commentary proposes Clinical Cognitive Interaction as a framework for understanding how repeated physician-LLM dialogue shapes clinical reasoning and epistemic practice.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.17237">AI_LectureNote: A Retrospective Pilot Study of a Post-ASR Workflow for English-Script Rendering and Semantic Drift in Korean-English Medical Lectures</a>
     <p class="news-card-summary">Workflow for post-processing speech-to-text output of medical lectures to restore Latin-script terminology and improve readability of study transcripts.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91345">Perceptions, Attitudes, and Use of AI by Medical Students: Mixed Methods Study</a>
-    <p class="news-card-summary">Mixed-methods study examining how medical students perceive, view, and use artificial intelligence in their training and future practice.</p>
   </div>
 </div>
 </div>
