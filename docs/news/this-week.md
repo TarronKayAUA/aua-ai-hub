@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -271,13 +271,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">Knowledge, attitudes, practices and ethics related to artificial intelligence among nursing students: a national cross-sectional survey in China</a>
-        <p class="news-card-summary">Survey of nursing students in China found variable knowledge and attitudes toward AI use, with educational gaps particularly acute among vocational and socioeconomically disadvantaged students.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Medical student reliance on artificial intelligence in nephrology education</a>
         <p class="news-card-summary">Medical students in nephrology selectively relied on AI recommendations when uncertain or studying foundational material, indicating context-dependent adoption patterns.</p>
       </div>
@@ -332,13 +325,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-173682323.jpg?itok=uUngwbBj" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 15, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458430?fc=20260609215449&amp;ff=20260716023257&amp;v=2.20.0">Artificial intelligence in urological education: a systematic review</a>
-        <p class="news-card-summary">Systematic review finds AI can enhance urological education by improving learning efficiency, knowledge retention, and clinical skills development when integrated thoughtfully into teaching.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -349,9 +335,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
@@ -593,20 +579,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An approach using generative AI to assess fall risk in elderly residential aged care residents from unstructured electronic health record data.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.13036">Ask Before You Diagnose: Safe-Psych, a Sequential Evaluation Benchmark for LLMs in Psychiatry</a>
-        <p class="news-card-summary">Safe-Psych benchmark evaluates whether large language models in psychiatry request clarification or abstain when given insufficient information rather than providing unsupported diagnoses.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.13430">Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet</a>
-        <p class="news-card-summary">Study compares post-training methods for small language models generating patient-friendly medication leaflets from structured biomedical data.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
@@ -659,10 +631,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 34 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.19361">Stateful Guardrails for Multi-Turn LLM Systems: A Conversational Risk Accumulation Framework</a>
+        <p class="news-card-summary">Research identifies conversational risk accumulation in multi-turn language model dialogues, where benign individual turns compose into harm over conversation flow.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 22, 2026</span></div>

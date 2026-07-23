@@ -21966,6 +21966,215 @@
    "first_seen": "2026-07-23T03:47:24.541733+00:00",
    "kept": false,
    "reason": "off-topic for this audience; wildlife observation unrelated to artificial intelligence or medicine"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/23/seth-larson",
+   "title_hash": "04645ea2d2febcb491b6fc9afa23082d",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19361",
+   "title_hash": "48f516719bd6221d892764878d7e694a",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": true,
+   "title": "Stateful Guardrails for Multi-Turn LLM Systems: A Conversational Risk Accumulation Framework",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-23T04:00:00+00:00",
+   "summary": "Research identifies conversational risk accumulation in multi-turn language model dialogues, where benign individual turns compose into harm over conversation flow.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19523",
+   "title_hash": "b9ca8a67b9ded8904e9b753c718b75f9",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19573",
+   "title_hash": "01757dbddf9c69efa371a6f21a330588",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19604",
+   "title_hash": "152784757bde56a268cbdd10a98a539d",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19608",
+   "title_hash": "c17bf36402df9482d82aad4ea6e7fab1",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19629",
+   "title_hash": "1422376669898b433e47790dc2a0d48f",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19678",
+   "title_hash": "22c58038ffcf46c59bf88731ff9754c6",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19686",
+   "title_hash": "de34891a925457c0732592aa51c3a959",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19691",
+   "title_hash": "cf0537b2227e82cd2dd5eea59c5649b5",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19718",
+   "title_hash": "374be12b326c45accc32671dec833e38",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19747",
+   "title_hash": "caef6bd45658a83b324a98b961114704",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19751",
+   "title_hash": "5cf0d96246050dd342fc6b16db04c475",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19794",
+   "title_hash": "62c023f998a72f75489ac6a4c515fb92",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19830",
+   "title_hash": "e46f2d02e0f2313e8a6fa7f4a88ce98a",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19834",
+   "title_hash": "d90e53e6f95fb2e6d7565053ee7a0a00",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19845",
+   "title_hash": "597b743e98740322bcfcb48b95979bc7",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19848",
+   "title_hash": "560943c662cbed8b684e1cc75b308ec8",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19856",
+   "title_hash": "f5728d094adec6b6c0412528d2b75c1e",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19867",
+   "title_hash": "8b30ace667dd4c92ea83c03d44d42bc2",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19932",
+   "title_hash": "fee7127849b2e2843a349471438614ec",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19954",
+   "title_hash": "48dcff3b45430df3165f6f868c67ac3b",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19956",
+   "title_hash": "2b9c852b67138d02dc1f4c4e02fee94d",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.19992",
+   "title_hash": "96d999f8951079e65cf04c7fa28d40b8",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.20009",
+   "title_hash": "716b2e002eb8ead069d8f6867b3c6711",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.20056",
+   "title_hash": "c9e1ee1f2962055301eb4a52d1db3c37",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03013-6",
+   "title_hash": "a3f9b6d36a612d53bfff72dc15fc7482",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v3v75j/sanctions_on_open_source_hope_they_dont_do",
+   "title_hash": "d8f6c89ed9ec22942a4fe2d068ac268e",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "forum discussion without substantive analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ERCdFgTXNY4",
+   "title_hash": "7bbe2b5233b7452d91048780e2214d82",
+   "first_seen": "2026-07-23T06:41:20.289439+00:00",
+   "kept": false,
+   "reason": "speculation and clickbait framing with insufficient substantive benchmark analysis"
   }
  ],
  "digests": [
