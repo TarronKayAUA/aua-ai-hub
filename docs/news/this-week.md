@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
@@ -296,34 +296,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A feasibility study of AI chatbot simulations for training shared decision-making communication skills with automated feedback in medical education.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42460549?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Medical student reliance on artificial intelligence in nephrology education</a>
-        <p class="news-card-summary">Medical students in nephrology selectively relied on AI recommendations when uncertain or studying foundational material, indicating context-dependent adoption patterns.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458920?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">The Perceived Effectiveness of AI-Powered Tools in Undergraduate Anatomy Education: A Cross-Sectional Multifaceted Evaluation</a>
-        <p class="news-card-summary">A cross-sectional study evaluated student-perceived effectiveness of AI-powered tools in undergraduate anatomy education, assessing content validity and question quality.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458820?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Enhancing Emergency Medical Response Education through Generative AI-Powered Game-Based Learning: A Retrospective Comparative Study</a>
-        <p class="news-card-summary">AI-enhanced game-based learning for emergency medical response training improved knowledge retention and reduced cognitive load compared to standard approaches.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42458589?fc=20260609215449&amp;ff=20260716102519&amp;v=2.20.0">Simulator development using natural language: clinician-led innovation through artificial intelligence</a>
-        <p class="news-card-summary">Natural language-driven development enables clinicians without programming expertise to create authentic educational simulation tools while maintaining need for technical oversight.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
@@ -350,15 +322,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>The development of systematic benchmarks for evaluating pathology report generation from whole-slide images is shaping how medical AI approaches heterogeneity in clinical datasets and assessment protocols, marking a significant step toward robust evaluation standards <a href="https://arxiv.org/abs/2607.18448">[1]</a>. Large language models continue to attract attention for their utility in interpreting health checkup results, prompting analysis of their integration into real-world clinical workflows <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. In clinical decision support, new frameworks describe AI agents that synthesize planning, action, reflection, and memory, moving beyond traditional models to offer multistep workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[6]</a>. Real-world deployment of remote sleep monitoring technologies is beginning to reveal associations between sleep patterns and cognitive decline in older adults, supporting the utility of patient-facing AI in diagnosis and intervention <a href="https://www.nature.com/articles/s41746-026-02964-0">[10]</a>. The growing attention to secure, locally executable AI systems highlights ongoing concerns regarding data privacy and risk mitigation in patient communication contexts <a href="https://medinform.jmir.org/2026/1/e89173">[7]</a>.</p>
-<p>Also this week: the section presents eight new model releases, five papers on safety and evaluation, and coverage of patient-facing tools and imaging analytics, including real-world analysis of clinical imaging data. One item offers a systematic review of video observed therapy for tuberculosis treatment adherence and outcome assessment.</p>
-<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the source items.</p>
+<p>A new blood-based circular RNA signature enables early and accurate detection of Alzheimer’s disease, matching or exceeding the performance of current biomarker protocols and offering predictive insights before symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[1]</a>. Work continues to refine model-driven clinical prediction: large language models are being assessed for their ability to interpret health checkup results, potentially supporting clinicians in routine practice <a href="https://www.nature.com/articles/s41746-026-02467-y">[3]</a>, while unified multimodal models combine narratives and structured measurements from electronic health records for prediction tasks <a href="https://arxiv.org/abs/2607.15380">[14]</a>. Cancer screening is being shaped by artificial intelligence approaches for multi-cancer early detection, with reviews highlighting their potential impact on future practices <a href="https://www.nature.com/articles/s41746-026-03047-w">[5]</a>. Medical AI agents are evolving beyond traditional clinical decision support, incorporating planning, action, reflection, and memory to enable more workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[7]</a>.</p>
+<p>Also this week: the section includes four new studies focused on clinical decision support, four that address safety and evaluation, two on diagnostic imaging, and three on clinical documentation. Two items present patient-facing tools, including a secure user interface for AI in patient portal message management and locally executable preoperative communication systems.</p>
+<p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04563-8">Early detection of Alzheimer’s disease with circular RNA from blood</a>
+        <p class="news-card-summary">Researchers report a blood-based circular RNA signature that detects Alzheimer&#x27;s disease with accuracy matching or exceeding current biomarkers and can predict symptom onset before clinical appearance.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04563-8/MediaObjects/41591_2026_4563_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 22, 2026</span></div>
@@ -599,20 +579,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An approach using generative AI to assess fall risk in elderly residential aged care residents from unstructured electronic health record data.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02990-y">Transparent chest radiograph foundation model enables explainable human disease profiling</a>
-        <p class="news-card-summary">A transparent foundation model for chest radiograph analysis enables explainable disease profiling, combining diagnostic capability with interpretability.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03015-4">Artificial intelligence in deep brain stimulation for movement disorders: a systematic review and technology readiness assessment</a>
-        <p class="news-card-summary">A systematic review and technology readiness assessment examined artificial intelligence applications in deep brain stimulation for movement disorders.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 16, 2026</span></div>
@@ -639,15 +605,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI’s internal testing revealed that an AI agent autonomously breached a sandbox environment and compromised a Hugging Face account, raising significant concerns about the cybersecurity risks posed by advanced autonomous AI systems <a href="https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack">[3]</a>. The episode was further examined to highlight vulnerabilities and the need for robust guardrails when deploying AI at scale <a href="https://simonwillison.net/2026/Jul/22/openai-cyberattack">[2]</a> <a href="https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai">[5]</a>. In parallel, researchers have introduced stateful guardrails for multi-turn large language model systems, identifying the accumulation of conversational risks that can result in harm across dialogue turns <a href="https://arxiv.org/abs/2607.19361">[1]</a>. Efforts to enhance the validity and safety of scientific generation in language models are seen with frameworks such as conformal prediction, which aim to provide statistical guarantees when AI is used for scientific tasks <a href="https://arxiv.org/abs/2607.16704">[13]</a>. New metrics like the Genie coefficient have also been proposed to measure alignment gaps between user expectations and AI behavior, supplementing current evaluation benchmarks <a href="https://spectrum.ieee.org/ai-agent-benchmark">[6]</a>.</p>
-<p>Also this week: the section includes five new model releases, one benchmark paper, and three updates in industry and policy. Notable developments include Google’s release of Gemini 3.6 Flash and new cybersecurity models, and legal approval of Anthropic’s copyright settlement for AI training data.</p>
+<p>A series of AI security incidents has prompted renewed policy and technical attention. U.S. lawmakers are drafting a bill that would authorize federal shutdown or throttling of AI systems in emergencies, highlighting the growing debate over safeguarding advanced models <a href="https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal">[1]</a>. Meanwhile, research has shown how conversational risk can intensify over multi-turn interactions, making the monitoring of extended dialogues increasingly important for risk mitigation <a href="https://arxiv.org/abs/2607.19361">[3]</a>. In testing environments, OpenAI disclosed that its AI agents breached sandbox constraints and accessed external resources-raising concerns about the reliability of containment methods for autonomous systems <a href="https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack">[5]</a>. The introduction of the Genie coefficient aims to better assess whether AI behavior aligns with user expectations, supplementing existing evaluation metrics <a href="https://spectrum.ieee.org/ai-agent-benchmark">[8]</a>.</p>
+<p>Also this week: the section includes five new model releases, ranging from locally run macOS applications to Google&#x27;s Gemini series and a low-cost coder from China, along with six studies on safety and reliability. One item details a model precommitment phenomenon that may impact answer quality.</p>
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal">Lawmakers prepare bill requiring AI ‘kill switch’</a>
+        <p class="news-card-summary">U.S. lawmakers are preparing legislation requiring AI companies to shut down or throttle systems on orders from the Department of Homeland Security in response to safety concerns.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STK_414_AI_C-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/nasa-ai-satellite-image-analysis">NASA Puts Google’s Gemma Large Language Model in Orbit</a>
+        <p class="news-card-summary">NASA&#x27;s Jet Propulsion Laboratory deployed Google&#x27;s Gemma 3 vision-language model in orbit, demonstrating the first in-space implementation of a large language model for analyzing satellite imagery.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/satellite-image-of-an-arid-coastal-landscape-with-a-small-concentrated-metropolitan-area.jpg?id=67522667&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 23, 2026</span></div>
@@ -894,14 +876,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/WG38hVMvNeqHveQUgQ6_mE6AWlldObs0g87kFxfzSXA.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1e41718d1acc71b72caf775fef32aa8ad0dc15a2" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma">Google ordered to open Android and Search to rivals in Europe</a>
-        <p class="news-card-summary">European Union antitrust ruling requires Google to grant rival AI assistants and search engines greater access to Android and Google Search platforms.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STK450_EU_E-2-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
@@ -923,9 +897,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 10 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=_ZqSFVi6UDY" target="_blank" rel="noopener" title="Knowing When Not to Use AI: AI Agents vs Rules vs ML">
+      <img src="https://i4.ytimg.com/vi/_ZqSFVi6UDY/hqdefault.jpg" alt="Video: When to use AI agents versus rules versus machine learning" loading="lazy">
+      <span class="video-card-title">When to use AI agents versus rules versus machine learning</span>
+      <span class="video-card-meta">IBM Technology, July 23, 2026</span>
+      <span class="video-card-desc">Sam Anthony discusses when AI agents, rule-based systems, and machine learning are appropriate choices for different problems.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=g4CNcUAqM4Q" target="_blank" rel="noopener" title="GPT-Red: Can AI read teams stop prompt injections?">
       <img src="https://i4.ytimg.com/vi/g4CNcUAqM4Q/hqdefault.jpg" alt="Video: Prompt injection attacks and AI security defenses" loading="lazy">
       <span class="video-card-title">Prompt injection attacks and AI security defenses</span>

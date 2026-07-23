@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=_ZqSFVi6UDY" target="_blank" rel="noopener" title="Knowing When Not to Use AI: AI Agents vs Rules vs ML">
+  <img src="https://i4.ytimg.com/vi/_ZqSFVi6UDY/hqdefault.jpg" alt="Video: When to use AI agents versus rules versus machine learning" loading="lazy">
+  <span class="video-card-title">When to use AI agents versus rules versus machine learning</span>
+  <span class="video-card-meta">IBM Technology, July 23, 2026</span>
+  <span class="video-card-desc">Sam Anthony discusses when AI agents, rule-based systems, and machine learning are appropriate choices for different problems.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=g4CNcUAqM4Q" target="_blank" rel="noopener" title="GPT-Red: Can AI read teams stop prompt injections?">
   <img src="https://i4.ytimg.com/vi/g4CNcUAqM4Q/hqdefault.jpg" alt="Video: Prompt injection attacks and AI security defenses" loading="lazy">
   <span class="video-card-title">Prompt injection attacks and AI security defenses</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Meet a mathematician solving previously unsolvable math problems with GPT-5.6</span>
   <span class="video-card-meta">OpenAI, July 9, 2026</span>
   <span class="video-card-desc">OpenAI demonstrates GPT-5.6 solving previously unsolvable mathematics problems with real-world application.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Wq45rvPGNHs" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/Wq45rvPGNHs/hqdefault.jpg" alt="Video: Introducing ChatGPT Work, powered by Codex and GPT-5.6" loading="lazy">
-  <span class="video-card-title">Introducing ChatGPT Work, powered by Codex and GPT-5.6</span>
-  <span class="video-card-meta">OpenAI, July 9, 2026</span>
-  <span class="video-card-desc">OpenAI announces ChatGPT Work with Codex and GPT-5.6, demonstrating new agentic capabilities for task automation.</span>
 </a>
 </div>
 

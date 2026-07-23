@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The development of systematic benchmarks for evaluating pathology report generation from whole-slide images is shaping how medical AI approaches heterogeneity in clinical datasets and assessment protocols, marking a significant step toward robust evaluation standards <a href="https://arxiv.org/abs/2607.18448">[1]</a>. Large language models continue to attract attention for their utility in interpreting health checkup results, prompting analysis of their integration into real-world clinical workflows <a href="https://www.nature.com/articles/s41746-026-02467-y">[2]</a>. In clinical decision support, new frameworks describe AI agents that synthesize planning, action, reflection, and memory, moving beyond traditional models to offer multistep workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[6]</a>. Real-world deployment of remote sleep monitoring technologies is beginning to reveal associations between sleep patterns and cognitive decline in older adults, supporting the utility of patient-facing AI in diagnosis and intervention <a href="https://www.nature.com/articles/s41746-026-02964-0">[10]</a>. The growing attention to secure, locally executable AI systems highlights ongoing concerns regarding data privacy and risk mitigation in patient communication contexts <a href="https://medinform.jmir.org/2026/1/e89173">[7]</a>.</p>
-<p>Also this week: the section presents eight new model releases, five papers on safety and evaluation, and coverage of patient-facing tools and imaging analytics, including real-world analysis of clinical imaging data. One item offers a systematic review of video observed therapy for tuberculosis treatment adherence and outcome assessment.</p>
-<p class="section-brief-date">The picture as of July 22, 2026; numbered links go to the items below.</p>
+<p>A new blood-based circular RNA signature enables early and accurate detection of Alzheimer’s disease, matching or exceeding the performance of current biomarker protocols and offering predictive insights before symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[1]</a>. Work continues to refine model-driven clinical prediction: large language models are being assessed for their ability to interpret health checkup results, potentially supporting clinicians in routine practice <a href="https://www.nature.com/articles/s41746-026-02467-y">[3]</a>, while unified multimodal models combine narratives and structured measurements from electronic health records for prediction tasks <a href="https://arxiv.org/abs/2607.15380">[14]</a>. Cancer screening is being shaped by artificial intelligence approaches for multi-cancer early detection, with reviews highlighting their potential impact on future practices <a href="https://www.nature.com/articles/s41746-026-03047-w">[5]</a>. Medical AI agents are evolving beyond traditional clinical decision support, incorporating planning, action, reflection, and memory to enable more workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[7]</a>.</p>
+<p>Also this week: the section includes four new studies focused on clinical decision support, four that address safety and evaluation, two on diagnostic imaging, and three on clinical documentation. Two items present patient-facing tools, including a secure user interface for AI in patient portal message management and locally executable preoperative communication systems.</p>
+<p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04563-8">Early detection of Alzheimer’s disease with circular RNA from blood</a>
+    <p class="news-card-summary">Researchers report a blood-based circular RNA signature that detects Alzheimer&#x27;s disease with accuracy matching or exceeding current biomarkers and can predict symptom onset before clinical appearance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04563-8/MediaObjects/41591_2026_4563_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 22, 2026</span></div>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.15544">EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections</a>
     <p class="news-card-summary">Researchers developed an agentic system to generate clear, grounded public health narratives from epidemiological projections for policymakers and the general public.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02992-w">Human evaluators vs. LLM-as-a-Judge: toward scalable evaluation of GenAI in global health</a>
-    <p class="news-card-summary">Study compares human evaluation with language model judges for assessing generative AI performance in global health applications.</p>
   </div>
 </div>
 </div>
