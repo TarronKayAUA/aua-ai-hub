@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new blood-based circular RNA signature enables early and accurate detection of Alzheimer’s disease, matching or exceeding the performance of current biomarker protocols and offering predictive insights before symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[1]</a>. Work continues to refine model-driven clinical prediction: large language models are being assessed for their ability to interpret health checkup results, potentially supporting clinicians in routine practice <a href="https://www.nature.com/articles/s41746-026-02467-y">[3]</a>, while unified multimodal models combine narratives and structured measurements from electronic health records for prediction tasks <a href="https://arxiv.org/abs/2607.15380">[14]</a>. Cancer screening is being shaped by artificial intelligence approaches for multi-cancer early detection, with reviews highlighting their potential impact on future practices <a href="https://www.nature.com/articles/s41746-026-03047-w">[5]</a>. Medical AI agents are evolving beyond traditional clinical decision support, incorporating planning, action, reflection, and memory to enable more workflow-oriented assistance <a href="https://medinform.jmir.org/2026/1/e92584">[7]</a>.</p>
-<p>Also this week: the section includes four new studies focused on clinical decision support, four that address safety and evaluation, two on diagnostic imaging, and three on clinical documentation. Two items present patient-facing tools, including a secure user interface for AI in patient portal message management and locally executable preoperative communication systems.</p>
+<p>A blood-based circular RNA signature has been shown to detect Alzheimer’s disease with high accuracy and to predict symptom onset before clinical evidence appears, offering potentially earlier intervention compared to current biomarker approaches <a href="https://www.nature.com/articles/s41591-026-04563-8">[1]</a>. Human oversight in medical AI is addressed with an analysis proposing structured guidance beyond simple clinician involvement, responding to challenges in safety and trust <a href="https://www.nature.com/articles/s41746-026-02971-1">[2]</a>. Large language models are being actively evaluated for their capacity to assess psychosis risk in patients, linking natural language processing to real-world clinical judgment <a href="https://www.nature.com/articles/s41746-026-02928-4">[3]</a>. Efforts to enhance pathology report generation from whole-slide images are also underway, with new benchmarks developed to handle heterogeneous data and protocols in multimodal medical AI <a href="https://arxiv.org/abs/2607.18448">[4]</a>. Additionally, studies are examining how large language models can contribute to interpreting health checkup results and support clinical workflows for improved practice outcomes <a href="https://www.nature.com/articles/s41746-026-02467-y">[5]</a>.</p>
+<p>Also this week: the section includes six new items on safety and evaluation, three on clinical decision support, and new research on imaging and diagnostics. Other topics cover patient-facing tools and clinical documentation, with examples such as secure interfaces for artificial intelligence in patient communication and real-world performance testing of sleep monitoring technologies.</p>
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -28,6 +28,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Researchers report a blood-based circular RNA signature that detects Alzheimer&#x27;s disease with accuracy matching or exceeding current biomarkers and can predict symptom onset before clinical appearance.</p>
   </div>
   <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04563-8/MediaObjects/41591_2026_4563_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02971-1">Meaningful oversight of medical AI beyond human in the loop</a>
+    <p class="news-card-summary">Peer-reviewed analysis proposes four conditions for meaningful human oversight of medical AI systems beyond nominal clinician presence.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02928-4">Evaluating large language models for assessment of psychosis risk</a>
+    <p class="news-card-summary">Peer-reviewed study evaluates large language models for their ability to assess psychosis risk in patients.</p>
+  </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
@@ -112,20 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83216">A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial</a>
     <p class="news-card-summary">Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.15380">Large Language Models as Unified Multimodal Learners for Clinical Prediction</a>
-    <p class="news-card-summary">Researchers developed a unified multimodal language model that combines free-text clinical narratives with structured measurements from electronic health records for clinical prediction tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.15544">EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections</a>
-    <p class="news-card-summary">Researchers developed an agentic system to generate clear, grounded public health narratives from epidemiological projections for policymakers and the general public.</p>
   </div>
 </div>
 </div>
