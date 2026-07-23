@@ -13,14 +13,42 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>The release of a Delphi consensus framework for responsible artificial intelligence in health professions education, research, and clinical care introduces standardized principles for contextualized and equitable AI integration <a href="https://mededu.jmir.org/2026/1/e91626">[1]</a>. Competency-based approaches to AI are also reflected in guidance for undergraduate radiation therapy teaching, which addresses ethical and practical adaptation in curriculum design <a href="https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[2]</a>. Performance studies demonstrate that large language models like ChatGPT-5 can outperform ophthalmology residents on subspecialty knowledge assessments, highlighting potential roles in benchmarking and identifying domain limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[3]</a>. Pilot simulation research details diverse learning curves in AI-assisted videolaryngoscopy, underscoring both skill acquisition challenges and the influence of participant demographics <a href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[5]</a>. Additionally, structured workshops equip preclinical students with foundational practices for clinical use of large language models <a href="https://pubmed.ncbi.nlm.nih.gov/42483714?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[4]</a>.</p>
-<p>Also this week: the section includes studies on agentic AI consultation tools in psychiatry training, comparative analysis of generative AI for anatomy illustration, proposed rescue protocols for challenging exam questions, and objective clinical examination performance improvements with AI virtual patients. There are seven teaching and curriculum items and three focused on simulation skills.</p>
+<p>A Delphi consensus framework establishes principles for contextual, accountable, responsible, and equitable artificial intelligence use in health professions education, research, and care, supporting safer integration across multiple domains <a href="https://mededu.jmir.org/2026/1/e91626">[5]</a>. Meta-synthesis of recent AI applications demonstrates that adaptive learning pathways and data-driven instruction are now enabling greater engagement and equity for medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[3]</a>. Studies show that vision-language models can generate board examination questions, though quality gaps persist compared to human-authored items, highlighting a need for human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[2]</a>. Evaluations of large language models for assessment suggest prioritizing reliability through task-specific piloting and semantic supervision prior to deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[4]</a>. Ongoing concerns among students regarding AI integration, especially with respect to ethics and clinical errors, point to gaps in formal training and persistent apprehensions even as awareness grows <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[1]</a>.</p>
+<p>Also this week: seven new teaching and curriculum studies, three reports on exam benchmarks, two assessment papers, and two simulation-related items, including a pilot study on AI-assisted videolaryngoscopy training and a comparative evaluation of generative models for anatomy illustration.</p>
 <p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Awareness, Perceptions, and Concerns among medical students regarding Artificial Intelligence integration in Healthcare: A Comprehensive Analysis</a>
+    <p class="news-card-summary">Medical students show moderate awareness of AI in healthcare but lack formal training, with persistent concerns about ethics, job displacement, and clinical errors despite recognizing AI&#x27;s potential.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Automated Generation and Human Evaluation of Neurosurgical Board Examination Self-Assessment Questions</a>
+    <p class="news-card-summary">Vision-language models can generate neurosurgical board exam questions with identified quality gaps compared to human-authored items, reducing burden on credentialing organizations.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Mapping Personalized Learning in Medical Education: A Meta-Synthesis of Artificial Intelligence Applications</a>
+    <p class="news-card-summary">Meta-synthesis finds AI integration enables adaptive learning pathways and data-driven instruction in medical education, enhancing engagement and equity in learning outcomes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Beyond accuracy: evaluating the reliability of large language models for medical assessment</a>
+    <p class="news-card-summary">Large language model deployment for automated assessment metadata extraction should prioritize reliability over accuracy and use task-specific piloting with human oversight of semantic fields.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 22, 2026</span></div>
@@ -97,34 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis</a>
     <p class="news-card-summary">National exam analysis suggests AI may support cardiovascular surgery residents&#x27; theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">Enhancing objective structured clinical examination performance through an artificial intelligence virtual patient: a proof-of-concept study</a>
-    <p class="news-card-summary">AI virtual patient system improved objective structured clinical examination performance in medical students, particularly those needing structured support, with tailored feedback aligned to exam standards.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42482261?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Diagnostic reasoning with and without AI: automation bias in pre-clerkship medical students</a>
-    <p class="news-card-summary">Study found preclinical students showed automation bias with AI diagnostic assistance and benefited most when baseline accuracy was weakest, suggesting need for foundational AI literacy coursework.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.17230">Robust Summarization of Doctor-Patient Conversations: TalTech Systems for the Beyond Transcription Challenge</a>
-    <p class="news-card-summary">System for generating SOAP notes directly from doctor-patient conversation audio without intermediate transcription, tested on Korean-English medical encounters.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.17237">AI_LectureNote: A Retrospective Pilot Study of a Post-ASR Workflow for English-Script Rendering and Semantic Drift in Korean-English Medical Lectures</a>
-    <p class="news-card-summary">Workflow for post-processing speech-to-text output of medical lectures to restore Latin-script terminology and improve readability of study transcripts.</p>
   </div>
 </div>
 </div>
