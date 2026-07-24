@@ -1,0 +1,50 @@
+name: Model comparison
+
+# Manual only. Runs a real pipeline prompt against several models on the
+# real current inputs and prints the results blind in the run log, so a
+# model choice is made on the output rather than on benchmark headlines.
+# Read-only: it commits nothing, writes no page, and never touches the
+# seen-items ledger, so it cannot affect the site.
+#
+# Added 2026-07-25 for the section-brief comparison (GPT-4.1 against
+# Haiku 4.5 against Opus 5). The same harness answers the Sonnet 5 versus
+# Sonnet 4.6 question when Sonnet 5's introductory pricing ends on
+# 2026-08-31, and every model release after that.
+
+on:
+  workflow_dispatch:
+    inputs:
+      models:
+        description: "Space-separated provider:model pairs"
+        required: false
+        default: "github:openai/gpt-4.1 anthropic:claude-haiku-4-5 anthropic:claude-opus-5"
+      category:
+        description: "Limit to one category key (blank runs all three)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Compare models on the section-brief prompt
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS="--models ${{ inputs.models }}"
+          if [ -n "${{ inputs.category }}" ]; then
+            ARGS="$ARGS --category ${{ inputs.category }}"
+          fi
+          python scripts/compare_brief_models.py $ARGS

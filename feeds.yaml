@@ -100,14 +100,19 @@ llm:
     # globally): Fable 5 writes denser short-form prose, and Opus's
     # tendency to expound works against a 320-word ceiling. One call per
     # week, ~13 cents on Fable vs ~6 on Opus. Fable's safety layer can
-    # rarely refuse; the fallback re-serves the same call on Opus 4.8
+    # rarely refuse; the fallback re-serves the same call on Opus 5
     # in-request (a rescued call bills at Opus rates, so the cost line
     # slightly overstates that week). max_tokens is raised because
     # Fable's always-on thinking shares the output budget.
+    # Fallback moved from claude-opus-4-8 to claude-opus-5 on 2026-07-25:
+    # identical list price ($5/$25 per million, verified from the pricing
+    # docs that day), newer model, so the swap is free. The primary stays
+    # Fable pending a side-by-side; the July 4 choice was about dense
+    # short-form prose under a 320-word ceiling, not raw capability.
     digest_narrative:
       provider: anthropic
       model: claude-fable-5
-      fallback_model: claude-opus-4-8
+      fallback_model: claude-opus-5
       max_tokens: 8000
       # List prices for the cost line in the verification block (USD per
       # million tokens, verified against the live pricing docs 2026-07-04).
