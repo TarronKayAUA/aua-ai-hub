@@ -55,14 +55,18 @@
   url: https://www.iamse.org/annual-conference/
   tags: [meded]
 
-# Verified 2026-06-09 from aamc.org/learn-network/learn-serve-lead
+# Verified 2026-06-09 from aamc.org/learn-network/learn-serve-lead.
+# Deadline changed TBD to passed 2026-07-24 (owner-confirmed from the
+# official page): the page has moved to registration-phase messaging
+# ("Registration is Now Open") with no open call for submissions, so TBD,
+# which this file defines as "not yet announced", was wrong.
 - name: Learn Serve Lead 2026, The AAMC Annual Meeting
   organizer: Association of American Medical Colleges
   start_date: 2026-11-06
   end_date: 2026-11-10
   location: Anaheim, California, USA
   format: in_person
-  abstract_deadline: TBD
+  abstract_deadline: passed
   url: https://www.aamc.org/learn-network/learn-serve-lead
   tags: [meded]
 
@@ -119,13 +123,17 @@
 # Verified 2026-06-10 from events.educause.edu/annual-conference (via the
 # conference-watch report, evidence: "September 29-October 2, 2026 | Denver, CO").
 # Owner approved adding 2026-06-11.
+# Deadline changed TBD to passed 2026-07-24 (owner-confirmed from the
+# official page): the Key Dates block now lists only registration
+# milestones (early bird July 28, advance September 2, conference
+# September 29) with no open call for proposals.
 - name: EDUCAUSE Annual Conference 2026
   organizer: EDUCAUSE
   start_date: 2026-09-29
   end_date: 2026-10-02
   location: Denver, Colorado, USA
   format: in_person
-  abstract_deadline: TBD
+  abstract_deadline: passed
   url: https://events.educause.edu/annual-conference
   tags: [ai]
 

@@ -70,7 +70,11 @@
   type: buildathon
   format: virtual
   eligibility: Open worldwide to students, faculty, researchers, and founders; team-based, 40 teams selected
-  deadline: Rolling
+  # Was the string "Rolling", which never flips to Passed, so the entry
+  # would have shown as open until its September end_date. The organizer's
+  # page states "Applications Open Until July 24" (re-verified
+  # 2026-07-24), so the real date goes here and the badge expires itself.
+  deadline: 2026-07-24
   start_date: 2026-07-17
   end_date: 2026-09-01
   support: "Organizer-stated: US$50,000 in cash prizes, US$20,000+ in hardware, compute for qualifying teams, and an investor showcase at the New York Stock Exchange"

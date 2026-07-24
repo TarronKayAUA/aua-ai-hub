@@ -11,7 +11,15 @@
 # so the question wording below is confirmed against the owner's form
 # directly rather than fetched.
 
-active: []
+# A standing invitation rather than a timed poll (owner decision
+# 2026-07-24): no `closes`, so the renderer omits the closing clause and
+# this stays up until the owner replaces it. Same form as the footer's
+# Feedback link, on the forms.cloud.microsoft domain.
+active:
+  - question: How are you using the AI Hub, and what should we build or fix next?
+    url: https://forms.cloud.microsoft/r/5a8RCi2YKP
+    note: Five questions, about two minutes.
+    button: Share your feedback
 
 closed:
   - question: Which AI workshop would you be interested in attending?

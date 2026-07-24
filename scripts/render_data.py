@@ -716,17 +716,24 @@ def _render_polls(config) -> str:
     if active:
         for poll in active:
             note = f" {poll['note']}" if poll.get("note") else ""
+            # `closes` and `button` are both optional: a standing invitation
+            # has no end date (owner decision 2026-07-24), so the closing
+            # clause is omitted rather than filled with a placeholder, and
+            # the label can describe the form it opens. Length claims live
+            # in the per-poll `note` so they stay accurate per form.
+            closes = (f" *Closes {poll['closes']}.*"
+                      if poll.get("closes") else "")
+            button = poll.get("button", "Answer the poll")
             lines.append(
                 # Committee polls are restricted to the AUA organization in
                 # Forms (owner-confirmed 2026-06-11). If a public poll ever
                 # runs, move this sentence into a per-poll field.
                 f'!!! question "The AI Committee is asking"\n'
                 f"    **{poll['question']}**{note} Responses are collected "
-                f"through Microsoft Forms, need an AUA account to access, "
-                f"and take under a minute.\n\n"
-                f"    [Answer the poll]({poll['url']})"
-                f"{{ .md-button .md-button--primary }} "
-                f"*Closes {poll['closes']}.*"
+                f"through Microsoft Forms and need an AUA account to "
+                f"access.\n\n"
+                f"    [{button}]({poll['url']})"
+                f"{{ .md-button .md-button--primary }}{closes}"
             )
     else:
         lines.append(
