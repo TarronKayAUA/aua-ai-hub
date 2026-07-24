@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A blood-based circular RNA signature has demonstrated accuracy in detecting Alzheimer’s disease that matches or exceeds current biomarkers, and researchers report it can predict symptom onset before clinical appearance, which may shift diagnostic practice <a href="https://www.nature.com/articles/s41591-026-04563-8">[5]</a>. Overlapping efforts in medical AI oversight are highlighted by proposals for meaningful clinician involvement beyond simple human-in-the-loop intervention <a href="https://www.nature.com/articles/s41746-026-02971-1">[6]</a>. Evaluations of large language models as clinical tools continue, with new frameworks showing improved detection of cutaneous immune-related adverse events compared to manual review, emphasizing both safety and inter-rater agreement <a href="https://arxiv.org/abs/2607.20428">[1]</a>. Studies that validate LLM-based monitoring of mental health intervention fidelity in non-traditional settings, such as Kenya, suggest expanding scopes for patient-facing tools <a href="https://ai.jmir.org/2026/1/e95063">[3]</a>. Ongoing critical analysis of therapeutic chatbot quality assurance in mental health underscores the role of decision support systems in maintaining intervention standards <a href="https://medinform.jmir.org/2026/1/e87887">[2]</a>.</p>
-<p>Also this week: six new studies address safety and evaluation, including assessment of psychosis risk and benchmarks for pathology report generation. Three papers focus on clinical decision support, and patient-facing tools for interpreting health checkup results or improving tuberculosis treatment adherence feature prominently.</p>
+<p>Detection and risk assessment methods have advanced as a human-in-the-loop large language model framework demonstrated improved accuracy for identifying cutaneous immune-related adverse events compared to manual review <a href="https://arxiv.org/abs/2607.20428">[1]</a>. A multicenter clinical trial showed that an AI-driven system for diagnosing inherited retinal diseases reached high diagnostic accuracy by integrating imaging and clinical data <a href="https://www.nature.com/articles/s41591-026-04545-w">[2]</a>. Studies have also piloted quality assurance frameworks for therapeutic AI in mental health services, focusing on the evaluation of chatbot-based interventions <a href="https://medinform.jmir.org/2026/1/e87887">[3]</a>. Blood-based circular RNA signatures for early detection of Alzheimer’s disease matched or exceeded current biomarkers and predicted symptom onset before clinical symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[6]</a>. Researchers further explored how large language models could assist with interpreting health data from routine checkups, signaling more potential uses in direct clinical support <a href="https://www.nature.com/articles/s41746-026-02467-y">[12]</a>.</p>
+<p>Also this week: items span six studies on safety and evaluation, including analysis of human oversight in AI and the credibility of medical content online. Clinical decision support is covered by three new systems, and patient-facing AI tools are discussed in three papers. Two items address medical imaging, and one benchmarks pathology report generation.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -26,6 +26,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.20428">Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events</a>
     <p class="news-card-summary">A human-in-the-loop large language model framework detected cutaneous immune-related adverse events from clinical notes with higher accuracy and inter-rater agreement than manual review alone.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04545-w">AI-based clinician decision support system for diagnosis of inherited retinal diseases: a multicenter, randomized trial</a>
+    <p class="news-card-summary">An AI system for inherited retinal disease diagnosis integrating multimodal imaging and clinical data achieved 88.5% accuracy in a randomized multicenter trial.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02846-5">Can Laws Be Flexible? Rethinking Legislation for Innovation</a>
     <p class="news-card-summary">Analysis of agile legislation approaches to digital health and AI regulation, examining iterative governance models from Germany, the EU, and the United States.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92584">Medical AI Agents for Clinical Decision Support: Viewpoint Using the Planning, Action, Reflection, and Memory (PARM) Analytical Lens</a>
-    <p class="news-card-summary">A viewpoint describes medical AI agents incorporating planning, action, reflection, and memory as an evolution beyond traditional clinical decision support toward multistep workflow-oriented assistance.</p>
   </div>
 </div>
 </div>
