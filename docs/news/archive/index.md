@@ -4,6 +4,7 @@
 
 Weekly digests, newest first.
 
+- [Week 30, 2026](2026-w30.md): July 20 to 26
 - [Week 29, 2026](2026-w29.md): July 13 to 19
 - [Week 28, 2026](2026-w28.md): July 6 to 12
 - [Week 27, 2026](2026-w27.md): June 29 to July 5

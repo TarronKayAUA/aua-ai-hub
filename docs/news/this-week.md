@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A detailed comparison of GPT-4o and Claude Sonnet 4 in medical ethics scenarios highlights model-specific strengths and limitations in specialty-based cases, illustrating the evolving challenges in deploying artificial intelligence for critical clinical decision making <a href="https://mededu.jmir.org/2026/1/e70199">[1]</a>. As more subspecialties examine language model performance, recent work shows that advanced models like ChatGPT-5 can surpass resident accuracy in glaucoma knowledge assessment-though generalizability remains a concern <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[8]</a>. Responsible integration is increasingly emphasized, with Delphi consensus frameworks guiding equitable and accountable AI adoption for education, research, and care <a href="https://mededu.jmir.org/2026/1/e91626">[6]</a>. Automated question generation by vision-language models offers efficiency for credentialing organizations, yet underscores the need for careful human oversight to maintain content quality <a href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[3]</a>. The reliability of large language model-driven assessment tools is being addressed through task-specific piloting and enhanced metadata extraction to limit errors in medical evaluation processes <a href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a>.</p>
-<p>Also this week: items explore simulation-based skill acquisition, with two pilot studies on videolaryngoscopy and psychiatry consultation training. Six new papers address competency-based curriculum, adaptive learning, and peer-teaching practices, while three discuss benchmarks for examination performance and feedback.</p>
-<p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the source items.</p>
+<p>A new experimental study demonstrates that chain-of-thought prompting enhances large language model performance during clinical record evaluation by medical faculty, identifying improvements in student assessment reliability <a href="https://mededu.jmir.org/2026/1/e88652">[1]</a>. Complementary research documents how large language model deployment for automated assessment should focus on reliability and task-specific piloting, emphasizing the importance of human oversight in extracting assessment metadata <a href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[6]</a>. Progress in assessment tools continues as vision-language models show potential for generating neurosurgical board exam questions, although further quality assurance against human-authored items is still needed <a href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[4]</a>. Meta-synthesis findings suggest that AI integration is enabling personalized learning pathways and data-driven instruction for medical students, with reported benefits in engagement and learning equity <a href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a>. Meanwhile, medical students reveal moderate awareness but persistent concerns regarding the ethical and practical impact of artificial intelligence, alongside gaps in formal training for its integration in healthcare settings <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[3]</a>.</p>
+<p>Also this week: six studies discuss advances in teaching and curriculum, three examine assessment and feedback methods, and three focus on exams and benchmarking. The page features two consensus frameworks for responsible AI implementation and new findings related to skill acquisition in simulation-based training.</p>
+<p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88652">Benefits of Chain-of-Thought Prompting for Clinical Record Rubric Evaluation in Undergraduate Medical Education: Experimental Evaluation Study With Medical Faculty</a>
+        <p class="news-card-summary">Experimental study demonstrates that chain-of-thought prompting improves large language model performance for evaluating clinical records in medical student assessment.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 23, 2026</span></div>
@@ -55,6 +62,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Beyond accuracy: evaluating the reliability of large language models for medical assessment</a>
         <p class="news-card-summary">Large language model deployment for automated assessment metadata extraction should prioritize reliability over accuracy and use task-specific piloting with human oversight of semantic fields.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491933?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Integrating Artificial Intelligence into Medical Education in LMICs: A Narrative Review</a>
+        <p class="news-card-summary">Narrative review examines artificial intelligence integration in medical education across low- and middle-income countries, with focus on sub-Saharan Africa and barriers to adoption.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491928?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">USE OF ARTIFICIAL INTELLIGENCE FOR THE EVALUATION OF THE ENTRANCE EXAMINATION OF THE BRAZILIAN SOCIETY OF SHOULDER AND ELBOW SURGERY</a>
+        <p class="news-card-summary">Comparative study evaluates multiple large language models on Brazilian orthopedic surgery board exam, with ChatGPT-o1-pro exceeding human performance and others matching or lagging.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491647?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Will artificial intelligence change medical life? Bridging the gap between innovation and medical student adoption: a cross-sectional study among university medical students</a>
+        <p class="news-card-summary">Cross-sectional study finds medical students show positive attitudes toward artificial intelligence but lack formal training, with concerns about ethics and human interaction.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491368?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Application effect and teaching evaluation of case-based learning combined with ChatGPT in ophthalmology clinical teaching</a>
+        <p class="news-card-summary">Case-based learning combined with ChatGPT significantly improved learning outcomes and satisfaction in ophthalmology clinical education, especially for lower-performing students.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -296,13 +331,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Integration of 3D printing and artificial intelligence into scoliosis teaching improves student comprehension, practical skills, and overall educational outcomes.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42461982?fc=20260609215449&amp;ff=20260716234018&amp;v=2.20.0">AI-Enhanced Predictive Analytics to Optimize Tele-Oncology Implementation in Rural Settings: Scoping Review</a>
-        <p class="news-card-summary">A scoping review finds insufficient evidence for AI-enhanced predictive analytics in rural tele-oncology, highlighting underrepresentation of underserved populations in digital health research.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 16, 2026</span></div>
@@ -315,15 +343,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Detection and prediction of Alzheimer’s disease using blood-based circular RNA signatures shows promise for identifying the condition earlier than current biomarker approaches, offering potential for intervention before clinical symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[3]</a>. At the same time, research into the oversight of medical AI proposes frameworks for more robust and meaningful supervision that go beyond nominal human involvement, aiming to address critical safety and evaluation questions <a href="https://www.nature.com/articles/s41746-026-02971-1">[4]</a>. Studies exploring large language models in clinical assessment highlight their possible role in psychosis risk evaluations <a href="https://www.nature.com/articles/s41746-026-02928-4">[5]</a>, while emerging systems are also being validated for monitoring fidelity of lay-delivered mental health interventions and patient communication, reflecting ongoing expansion of patient-facing tools <a href="https://ai.jmir.org/2026/1/e95063">[1]</a> <a href="https://medinform.jmir.org/2026/1/e89173">[14]</a>.</p>
-<p>Also this week: the section features a benchmark for pathology report generation, reviews on multi-cancer early detection, and recent analyses of legislative approaches to digital health and AI regulation. Five papers address safety and evaluation, including information quality in YouTube’s medical ecosystem and risks of false confidence from automated guidelines.</p>
-<p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the source items.</p>
+<p>The introduction of EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots, highlights ongoing efforts to standardize AI tools in mental health services <a href="https://medinform.jmir.org/2026/1/e87887">[1]</a>. Studying large language models for psychosis risk assessment is another significant focus, as researchers evaluate their capacity to determine risk in clinical settings <a href="https://www.nature.com/articles/s41746-026-02928-4">[6]</a>. The use of machine learning to predict individual responses to smartphone-based mindfulness interventions for autistic adults with anxiety suggests advancements in personalized care <a href="https://ai.jmir.org/2026/1/e89054">[3]</a>. Ongoing analyses also explore human oversight beyond simple clinician involvement, pointing to a shift toward more robust governance models for medical AI systems <a href="https://www.nature.com/articles/s41746-026-02971-1">[5]</a>. Research into blood-based circular RNA for early Alzheimer&#x27;s detection indicates progress in integrating novel diagnostic biomarkers with AI approaches <a href="https://www.nature.com/articles/s41591-026-04563-8">[4]</a>.</p>
+<p>Also this week: a scoping review of generative AI mental health chatbots and user experience, and a benchmarking protocol for pathology report generation from whole-slide images. The section includes six new items on safety and evaluation, four on patient-facing tools, and two each covering imaging and clinical decision support.</p>
+<p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 23, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87887">Decision Support Framework for Quality Assurance and Enhancement of Therapeutic Artificial Intelligence Systems: Mixed Methods Pilot Study</a>
+        <p class="news-card-summary">Pilot study introduces EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots in digital mental health services.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>

@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Detection and prediction of Alzheimer’s disease using blood-based circular RNA signatures shows promise for identifying the condition earlier than current biomarker approaches, offering potential for intervention before clinical symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[3]</a>. At the same time, research into the oversight of medical AI proposes frameworks for more robust and meaningful supervision that go beyond nominal human involvement, aiming to address critical safety and evaluation questions <a href="https://www.nature.com/articles/s41746-026-02971-1">[4]</a>. Studies exploring large language models in clinical assessment highlight their possible role in psychosis risk evaluations <a href="https://www.nature.com/articles/s41746-026-02928-4">[5]</a>, while emerging systems are also being validated for monitoring fidelity of lay-delivered mental health interventions and patient communication, reflecting ongoing expansion of patient-facing tools <a href="https://ai.jmir.org/2026/1/e95063">[1]</a> <a href="https://medinform.jmir.org/2026/1/e89173">[14]</a>.</p>
-<p>Also this week: the section features a benchmark for pathology report generation, reviews on multi-cancer early detection, and recent analyses of legislative approaches to digital health and AI regulation. Five papers address safety and evaluation, including information quality in YouTube’s medical ecosystem and risks of false confidence from automated guidelines.</p>
-<p class="section-brief-date">The picture as of July 23, 2026; numbered links go to the items below.</p>
+<p>The introduction of EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots, highlights ongoing efforts to standardize AI tools in mental health services <a href="https://medinform.jmir.org/2026/1/e87887">[1]</a>. Studying large language models for psychosis risk assessment is another significant focus, as researchers evaluate their capacity to determine risk in clinical settings <a href="https://www.nature.com/articles/s41746-026-02928-4">[6]</a>. The use of machine learning to predict individual responses to smartphone-based mindfulness interventions for autistic adults with anxiety suggests advancements in personalized care <a href="https://ai.jmir.org/2026/1/e89054">[3]</a>. Ongoing analyses also explore human oversight beyond simple clinician involvement, pointing to a shift toward more robust governance models for medical AI systems <a href="https://www.nature.com/articles/s41746-026-02971-1">[5]</a>. Research into blood-based circular RNA for early Alzheimer&#x27;s detection indicates progress in integrating novel diagnostic biomarkers with AI approaches <a href="https://www.nature.com/articles/s41591-026-04563-8">[4]</a>.</p>
+<p>Also this week: a scoping review of generative AI mental health chatbots and user experience, and a benchmarking protocol for pathology report generation from whole-slide images. The section includes six new items on safety and evaluation, four on patient-facing tools, and two each covering imaging and clinical decision support.</p>
+<p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 23, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87887">Decision Support Framework for Quality Assurance and Enhancement of Therapeutic Artificial Intelligence Systems: Mixed Methods Pilot Study</a>
+    <p class="news-card-summary">Pilot study introduces EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots in digital mental health services.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>
@@ -119,13 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89173">A Locally Executable AI System for Improving Preoperative Patient Communication: Multidomain Clinical Evaluation</a>
     <p class="news-card-summary">A locally executable AI system improves preoperative patient communication by mitigating hallucination risk, protecting data privacy, and reducing energy costs compared to cloud-based large language models.</p>
   </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">Guidelines, LLMs, and the Laundering of Uncertainty</a>
-    <p class="news-card-summary">Commentary examines how large language models and clinical guidelines interact and the risks of false confidence in automated clinical recommendations.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!l_TJ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8251ac79-ca1e-42ca-906d-5914f140b7d1_8256x5504.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
