@@ -74,6 +74,13 @@ def validate(text, eligible):
         problems.append("not two paragraphs")
     if "Also this week:" not in text:
         problems.append("missing the 'Also this week:' opener")
+    # Not a pipeline check, but a real defect the pipeline would ship:
+    # a model that opens with its own title renders a stray heading inside
+    # the brief box (observed from Haiku 4.5, 2026-07-25).
+    first = text.strip().split("\n", 1)[0].strip()
+    if first.startswith("#") or (len(first.split()) <= 4
+                                 and not first.endswith(".")):
+        problems.append(f"stray title line: {first!r}")
     return words, len(set(refs)), problems
 
 
@@ -85,7 +92,11 @@ def run_model(spec, config, prompt, timeout):
         cfg = dict(config["llm"]["anthropic"])
         cfg["model"] = model
         cfg.pop("fallback_model", None)
-        cfg["max_tokens"] = 4000
+        # Generous ceiling so Fable-class models, whose always-on thinking
+        # shares the output budget, are not truncated into a contract
+        # failure that belongs to the harness rather than the model.
+        # max_tokens is a cap, not a charge, so this costs nothing.
+        cfg["max_tokens"] = 8000
         call = aggregate.call_anthropic
     elif provider == "github":
         if not os.environ.get("GITHUB_TOKEN"):
@@ -108,6 +119,8 @@ def main() -> int:
     ap.add_argument("--models", nargs="+", default=DEFAULT_MODELS,
                     help="provider:model pairs")
     ap.add_argument("--category", help="limit to one news category key")
+    ap.add_argument("--repeat", type=int, default=1,
+                    help="samples per model per category (default 1)")
     args = ap.parse_args()
 
     config = yaml.safe_load(
@@ -116,10 +129,14 @@ def main() -> int:
     categories = config["categories"]
     timeout = config["llm"].get("request_timeout_seconds", 90)
 
-    print(f"comparing {len(args.models)} models on the live brief payload")
+    print(f"comparing {len(args.models)} models on the live brief payload, "
+          f"{args.repeat} sample(s) each")
     print("candidates are labelled blind; the key is at the end\n")
 
     key_lines = []
+    tally = {spec: {"pass": 0, "total": 0, "words": [], "problems": []}
+             for spec in args.models}
+    step = 0
     for idx, (cat_key, cat) in enumerate(categories.items()):
         if args.category and cat_key != args.category:
             continue
@@ -132,25 +149,56 @@ def main() -> int:
         if prompt is None:
             print("  skipped: fewer than 3 eligible items\n")
             continue
-        # Rotate the blind labels per category so position never encodes
-        # the model across the whole report.
-        order = args.models[idx % len(args.models):] + \
-            args.models[:idx % len(args.models)]
-        for slot, spec in enumerate(order):
-            tag = chr(ord("A") + slot)
-            text, err = run_model(spec, config, prompt, timeout)
-            key_lines.append(f"  {label} / {tag} = {spec}")
-            print(f"\n--- candidate {tag} ---")
-            if err:
-                print(f"  FAILED: {err}")
-                continue
-            words, links, problems = validate(text, eligible)
-            verdict = "contract ok" if not problems else \
-                "CONTRACT FAILURES: " + "; ".join(problems)
-            print(f"  [{words} words, {links} linked references, {verdict}]\n")
-            print(text)
+        for rep in range(args.repeat):
+            if args.repeat > 1:
+                print(f"\n### sample {rep + 1} of {args.repeat}")
+            # Rotate the blind labels every category and every sample, so
+            # position never encodes the model anywhere in the report.
+            shift = step % len(args.models)
+            step += 1
+            order = args.models[shift:] + args.models[:shift]
+            for slot, spec in enumerate(order):
+                tag = chr(ord("A") + slot)
+                text, err = run_model(spec, config, prompt, timeout)
+                key_lines.append(
+                    f"  {label} sample {rep + 1} / {tag} = {spec}")
+                tally[spec]["total"] += 1
+                print(f"\n--- candidate {tag} ---")
+                if err:
+                    print(f"  FAILED: {err}")
+                    tally[spec]["problems"].append(f"call failed: {err}")
+                    continue
+                words, links, problems = validate(text, eligible)
+                tally[spec]["words"].append(words)
+                if problems:
+                    tally[spec]["problems"].extend(problems)
+                else:
+                    tally[spec]["pass"] += 1
+                verdict = "contract ok" if not problems else \
+                    "CONTRACT FAILURES: " + "; ".join(problems)
+                print(f"  [{words} words, {links} linked references, "
+                      f"{verdict}]\n")
+                print(text)
         print()
 
+    print("=" * 72)
+    print("CONTRACT PASS RATE")
+    print("=" * 72)
+    for spec, t in sorted(tally.items(),
+                          key=lambda kv: -(kv[1]["pass"] /
+                                           max(kv[1]["total"], 1))):
+        avg = (sum(t["words"]) / len(t["words"])) if t["words"] else 0
+        print(f"  {spec:<34} {t['pass']}/{t['total']} pass"
+              f"   mean {avg:.0f} words")
+        seen = []
+        for p in t["problems"]:
+            kind = p.split(":")[0].split(" outside")[0]
+            if kind not in seen:
+                seen.append(kind)
+        if seen:
+            print(f"      failure kinds: {', '.join(seen)}")
+
+    print()
     print("=" * 72)
     print("KEY")
     print("=" * 72)
