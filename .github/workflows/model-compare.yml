@@ -10,6 +10,16 @@ name: Model comparison
 # Haiku 4.5 against Opus 5). The same harness answers the Sonnet 5 versus
 # Sonnet 4.6 question when Sonnet 5's introductory pricing ends on
 # 2026-08-31, and every model release after that.
+#
+# COST WARNING, from measured experience on 2026-07-25: a six-model
+# three-sample sweep including claude-fable-5 cost roughly $2 to $3 and
+# hit the workspace monthly cap. Fable dominates the bill: its always-on
+# thinking is charged as output tokens at $50 per million, so a single
+# Fable brief call can cost 20 to 30 cents against fractions of a cent
+# for Haiku. Before dispatching: drop Fable from the model list unless
+# its answer is specifically needed, prefer repeat=1 with a follow-up
+# only where results disagree, and check the month's remaining budget in
+# the Claude Console first.
 
 on:
   workflow_dispatch:
