@@ -21,7 +21,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
 ## Start here
 
-<div class="grid cards" markdown>
+<div class="grid cards hp-cards" markdown>
 
 - :material-head-lightbulb:{ .lg .middle } __Learn__
 

@@ -21,6 +21,12 @@
 }
 
 .section-brief {
+  /* The brief is the page's main narrative and sits directly under capped
+     body prose, so it takes the same reading measure; left full width it
+     ran 99 characters a line against the paragraph's 78 immediately above
+     (2026-07-25). Accessory boxes such as admonitions stay full width, the
+     line being that flowing prose is capped and contained elements are not. */
+  max-width: 74ch;
   margin: 0 0 1.4rem;
   padding: 0.9rem 1.1rem;
   border-left: 0.2rem solid var(--md-primary-fg-color);
@@ -78,12 +84,56 @@
   padding-right: 0.7em;
 }
 
+/* Reading measure. The content grid is capped at 78rem so wide tables and
+   card grids have room to breathe, but that let running prose reach about
+   104 characters a line on a maximized desktop window (measured
+   2026-07-25), well past the 60 to 75 that reads comfortably. Cap the text
+   flow itself rather than the column, so every wide element keeps the full
+   width: tables, figures, card grids, banners, admonitions and collapse
+   blocks are all direct children too, and the selector below deliberately
+   names only the prose. `ch` tracks the font size, so this holds if the
+   type scale ever changes. */
+.md-typeset > p,
+.md-typeset > ul,
+.md-typeset > ol,
+.md-typeset > blockquote,
+.md-typeset > dl {
+  max-width: 74ch;
+}
+
+/* Markdown wraps a bare <img> in a paragraph, so the rule above shrank the
+   full-bleed section banners along with the prose. Release any paragraph
+   that exists only to hold a banner or a figure. Browsers without :has()
+   simply keep the narrower banner, which is tidy rather than broken. */
+.md-typeset > p:has(> .section-banner),
+.md-typeset > p:has(> img) {
+  max-width: none;
+}
+
 [data-md-color-scheme="default"] {
   --md-typeset-a-color: #07618c;
 }
 
 [data-md-color-scheme="slate"] {
   --md-typeset-a-color: #5aa3c7;
+}
+
+/* Material sets headings at weight 300. Light strokes hold their shape on a
+   white page but lose definition as light-on-dark, where the headings ended
+   up reading thinner than the body text they outrank (2026-07-25). Restore
+   the hierarchy in the dark scheme only; the light scheme is fine as it is. */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  font-weight: 400;
+}
+
+/* The section banners are a dark brand gradient, which reads as a strong
+   band on a white page and half-dissolves into the dark one. A hairline
+   keeps the block's edge in the slate scheme without touching the art. */
+[data-md-color-scheme="slate"] .section-banner {
+  outline: 1px solid var(--md-default-fg-color--lightest);
+  outline-offset: -1px;
 }
 
 /* === Badges (governance statuses, SPEC section 6) ======================== */
@@ -257,11 +307,34 @@
 .md-typeset .grid.cards > ul > li {
   border-radius: 0.5rem;
   transition: transform 0.15s, box-shadow 0.15s;
+  /* Cards in a row have descriptions of different lengths, which left the
+     closing link sitting at a different height in each one (visible on the
+     homepage's top row, 2026-07-25). Making the card a column and pushing
+     its last block down aligns every call to action along the row. */
+  display: flex;
+  flex-direction: column;
+}
+
+.md-typeset .grid.cards > ul > li > p:last-child {
+  margin-top: auto;
 }
 
 .md-typeset .grid.cards > ul > li:hover {
   transform: translateY(-2px);
   box-shadow: var(--md-shadow-z2);
+}
+
+/* The homepage's nine doors fall as 4 + 4 + 1 in Material's auto-fit grid,
+   leaving the last card alone beside three empty slots. Three columns make
+   it three full rows and give each card more room for its text. Below the
+   breakpoint the grid falls back to auto-fit as usual. */
+@media screen and (min-width: 60em) {
+  /* Material puts the grid on the wrapper and gives the inner list
+     `display: contents`, so the columns have to be set here, not on the
+     list. */
+  .md-typeset .grid.cards.hp-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* === News cards =========================================================== */
