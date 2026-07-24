@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The introduction of EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots, highlights ongoing efforts to standardize AI tools in mental health services <a href="https://medinform.jmir.org/2026/1/e87887">[1]</a>. Studying large language models for psychosis risk assessment is another significant focus, as researchers evaluate their capacity to determine risk in clinical settings <a href="https://www.nature.com/articles/s41746-026-02928-4">[6]</a>. The use of machine learning to predict individual responses to smartphone-based mindfulness interventions for autistic adults with anxiety suggests advancements in personalized care <a href="https://ai.jmir.org/2026/1/e89054">[3]</a>. Ongoing analyses also explore human oversight beyond simple clinician involvement, pointing to a shift toward more robust governance models for medical AI systems <a href="https://www.nature.com/articles/s41746-026-02971-1">[5]</a>. Research into blood-based circular RNA for early Alzheimer&#x27;s detection indicates progress in integrating novel diagnostic biomarkers with AI approaches <a href="https://www.nature.com/articles/s41591-026-04563-8">[4]</a>.</p>
-<p>Also this week: a scoping review of generative AI mental health chatbots and user experience, and a benchmarking protocol for pathology report generation from whole-slide images. The section includes six new items on safety and evaluation, four on patient-facing tools, and two each covering imaging and clinical decision support.</p>
+<p>A blood-based circular RNA signature has demonstrated accuracy in detecting Alzheimer’s disease that matches or exceeds current biomarkers, and researchers report it can predict symptom onset before clinical appearance, which may shift diagnostic practice <a href="https://www.nature.com/articles/s41591-026-04563-8">[5]</a>. Overlapping efforts in medical AI oversight are highlighted by proposals for meaningful clinician involvement beyond simple human-in-the-loop intervention <a href="https://www.nature.com/articles/s41746-026-02971-1">[6]</a>. Evaluations of large language models as clinical tools continue, with new frameworks showing improved detection of cutaneous immune-related adverse events compared to manual review, emphasizing both safety and inter-rater agreement <a href="https://arxiv.org/abs/2607.20428">[1]</a>. Studies that validate LLM-based monitoring of mental health intervention fidelity in non-traditional settings, such as Kenya, suggest expanding scopes for patient-facing tools <a href="https://ai.jmir.org/2026/1/e95063">[3]</a>. Ongoing critical analysis of therapeutic chatbot quality assurance in mental health underscores the role of decision support systems in maintaining intervention standards <a href="https://medinform.jmir.org/2026/1/e87887">[2]</a>.</p>
+<p>Also this week: six new studies address safety and evaluation, including assessment of psychosis risk and benchmarks for pathology report generation. Three papers focus on clinical decision support, and patient-facing tools for interpreting health checkup results or improving tuberculosis treatment adherence feature prominently.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.20428">Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events</a>
+    <p class="news-card-summary">A human-in-the-loop large language model framework detected cutaneous immune-related adverse events from clinical notes with higher accuracy and inter-rater agreement than manual review alone.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 23, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92584">Medical AI Agents for Clinical Decision Support: Viewpoint Using the Planning, Action, Reflection, and Memory (PARM) Analytical Lens</a>
     <p class="news-card-summary">A viewpoint describes medical AI agents incorporating planning, action, reflection, and memory as an evolution beyond traditional clinical decision support toward multistep workflow-oriented assistance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89173">A Locally Executable AI System for Improving Preoperative Patient Communication: Multidomain Clinical Evaluation</a>
-    <p class="news-card-summary">A locally executable AI system improves preoperative patient communication by mitigating hallucination risk, protecting data privacy, and reducing energy costs compared to cloud-based large language models.</p>
   </div>
 </div>
 </div>

@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.20446">Distinguishing Artificial from Authentic: Evaluating LLMs for Detecting LLM-Generated Content</a>
+    <p class="news-card-summary">Large language models show limited ability to reliably detect their own generated content across student submissions and program code.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 23, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42483714?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Artificial Intelligence and Large Language Models: A Case-Based, Peer-Teaching Workshop for Preclinical Medical Students</a>
     <p class="news-card-summary">Case-based peer-teaching workshop introduced preclinical medical students to large language models and effective practices for clinical use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42482980?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Learning curves and demographic influence on skill acquisition of artificial intelligence-assisted videolaryngoscopy training with the LarynGuide system: A pilot simulation study</a>
-    <p class="news-card-summary">Pilot simulation study characterized learning curves for artificial intelligence-assisted videolaryngoscopy training in mixed medical student cohorts.</p>
   </div>
 </div>
 </div>
