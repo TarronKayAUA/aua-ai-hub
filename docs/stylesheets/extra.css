@@ -21,12 +21,6 @@
 }
 
 .section-brief {
-  /* The brief is the page's main narrative and sits directly under capped
-     body prose, so it takes the same reading measure; left full width it
-     ran 99 characters a line against the paragraph's 78 immediately above
-     (2026-07-25). Accessory boxes such as admonitions stay full width, the
-     line being that flowing prose is capped and contained elements are not. */
-  max-width: 74ch;
   margin: 0 0 1.4rem;
   padding: 0.9rem 1.1rem;
   border-left: 0.2rem solid var(--md-primary-fg-color);
@@ -84,31 +78,21 @@
   padding-right: 0.7em;
 }
 
-/* Reading measure. The content grid is capped at 78rem so wide tables and
-   card grids have room to breathe, but that let running prose reach about
-   104 characters a line on a maximized desktop window (measured
-   2026-07-25), well past the 60 to 75 that reads comfortably. Cap the text
-   flow itself rather than the column, so every wide element keeps the full
-   width: tables, figures, card grids, banners, admonitions and collapse
-   blocks are all direct children too, and the selector below deliberately
-   names only the prose. `ch` tracks the font size, so this holds if the
-   type scale ever changes. */
-.md-typeset > p,
-.md-typeset > ul,
-.md-typeset > ol,
-.md-typeset > blockquote,
-.md-typeset > dl {
-  max-width: 74ch;
-}
-
-/* Markdown wraps a bare <img> in a paragraph, so the rule above shrank the
-   full-bleed section banners along with the prose. Release any paragraph
-   that exists only to hold a banner or a figure. Browsers without :has()
-   simply keep the narrower banner, which is tidy rather than broken. */
-.md-typeset > p:has(> .section-banner),
-.md-typeset > p:has(> img) {
-  max-width: none;
-}
+/* Reading measure: tried and reverted 2026-07-25, recorded so it is not
+   re-attempted blind. Prose reaches about 104 characters a line on a
+   maximized desktop window, past the 60 to 75 that reads comfortably, so
+   the text flow was capped at 74ch while tables, grids and banners kept
+   the full column. It measured well (104 to 78 characters) and looked
+   wrong: figures already cap at 42rem, so pages ended up with three
+   widths (prose 810px, figure 924px, everything else 1102px) and the
+   prose read as wrapping early for no reason.
+   The coherent fix is one width, not an exception: lower the .md-grid cap
+   to about 64rem and drop any per-element capping, which yields the same
+   78-character prose with every element aligned. Measured cost at 64rem:
+   the tool grid keeps two cards per row (527px to 387px each) and the
+   ten-column LiveBench table starts needing horizontal scroll, which is
+   exactly what the 78rem cap above was widened to avoid. That trade is
+   the owner's call, so the column stays wide until he takes it. */
 
 [data-md-color-scheme="default"] {
   --md-typeset-a-color: #07618c;
