@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A Delphi consensus framework now defines best practices for responsible artificial intelligence integration across medical education, research, and clinical care, emphasizing context and equity <a href="https://mededu.jmir.org/2026/1/e91626">[12]</a>. In parallel, a meta-synthesis underscores the growing impact of adaptive AI-driven learning pathways on student engagement and the promotion of equitable outcomes in medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[6]</a>. Multiple assessment studies report improved performance and reliability of large language models when chain-of-thought prompting is used for clinical record evaluation <a href="https://mededu.jmir.org/2026/1/e88652">[2]</a>, and automated exam question generation is emerging, though quality remains mixed compared to human-authored items <a href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a>. Attitudinal research highlights medical students&#x27; moderate awareness of artificial intelligence in healthcare amid persistent concerns over ethics and job displacement, matched by a lack of formal training <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[4]</a>.</p>
-<p>Also this week: six new studies address teaching and curriculum, including the integration of competency-based learning with artificial intelligence guidance in German radiation therapy education. The section includes four papers on assessment and feedback, as well as comparative analyses of language model performance in subspecialty exams and ethics scenarios.</p>
+<p>AI tools are increasingly present in medical education with studies highlighting both their promise and limitations for assessment and teaching. Chain-of-thought prompting has improved large language model performance when medical faculty use these models for evaluating clinical record rubrics, suggesting potential for supporting student assessment <a href="https://mededu.jmir.org/2026/1/e88652">[3]</a>. Comparative analyses show that new models can match or exceed human specialists in certain exams, but performance varies across scenarios and specialties <a href="https://pubmed.ncbi.nlm.nih.gov/42491928?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">[10]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[15]</a>. There is moderate agreement between AI models and experts in question quality review, yet weak alignment regarding learning outcomes, reinforcing the need for expert oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Medical students and faculty report positive attitudes toward AI, but ethical concerns and gaps in formal training persist despite growing recognition of AI&#x27;s role in healthcare <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42491647?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">[11]</a>.</p>
+<p>Also this week: five papers on assessment and feedback address reliability, question quality, and clinical record evaluation. Studies cover competency-based frameworks for responsible AI use, including new guidance in radiation therapy education and consensus principles for equitable AI adoption. Three examinations of entrance and subspecialty board exams reflect ongoing evaluation of model capabilities across medical fields.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">Assessing multiple-choice question quality in internal medicine: a comparative analysis of three large language models against expert consensus</a>
+    <p class="news-card-summary">Claude and Gemini show moderate to strong agreement with experts on multiple-choice question cognitive level and technical flaws, but weak agreement on learning outcomes, indicating they can support but not replace expert review.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Assessing a large language model for glaucoma knowledge: ChatGPT-5 versus residents</a>
     <p class="news-card-summary">ChatGPT-5 outperformed ophthalmology residents on glaucoma multiple-choice questions, suggesting potential as a subspecialty assessment tool with noted generalizability limitations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42483714?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Artificial Intelligence and Large Language Models: A Case-Based, Peer-Teaching Workshop for Preclinical Medical Students</a>
-    <p class="news-card-summary">Case-based peer-teaching workshop introduced preclinical medical students to large language models and effective practices for clinical use.</p>
   </div>
 </div>
 </div>

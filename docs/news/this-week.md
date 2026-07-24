@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A Delphi consensus framework now defines best practices for responsible artificial intelligence integration across medical education, research, and clinical care, emphasizing context and equity <a href="https://mededu.jmir.org/2026/1/e91626">[12]</a>. In parallel, a meta-synthesis underscores the growing impact of adaptive AI-driven learning pathways on student engagement and the promotion of equitable outcomes in medical training <a href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[6]</a>. Multiple assessment studies report improved performance and reliability of large language models when chain-of-thought prompting is used for clinical record evaluation <a href="https://mededu.jmir.org/2026/1/e88652">[2]</a>, and automated exam question generation is emerging, though quality remains mixed compared to human-authored items <a href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a>. Attitudinal research highlights medical students&#x27; moderate awareness of artificial intelligence in healthcare amid persistent concerns over ethics and job displacement, matched by a lack of formal training <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[4]</a>.</p>
-<p>Also this week: six new studies address teaching and curriculum, including the integration of competency-based learning with artificial intelligence guidance in German radiation therapy education. The section includes four papers on assessment and feedback, as well as comparative analyses of language model performance in subspecialty exams and ethics scenarios.</p>
+<p>AI tools are increasingly present in medical education with studies highlighting both their promise and limitations for assessment and teaching. Chain-of-thought prompting has improved large language model performance when medical faculty use these models for evaluating clinical record rubrics, suggesting potential for supporting student assessment <a href="https://mededu.jmir.org/2026/1/e88652">[3]</a>. Comparative analyses show that new models can match or exceed human specialists in certain exams, but performance varies across scenarios and specialties <a href="https://pubmed.ncbi.nlm.nih.gov/42491928?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">[10]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[15]</a>. There is moderate agreement between AI models and experts in question quality review, yet weak alignment regarding learning outcomes, reinforcing the need for expert oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Medical students and faculty report positive attitudes toward AI, but ethical concerns and gaps in formal training persist despite growing recognition of AI&#x27;s role in healthcare <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42491647?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">[11]</a>.</p>
+<p>Also this week: five papers on assessment and feedback address reliability, question quality, and clinical record evaluation. Studies cover competency-based frameworks for responsible AI use, including new guidance in radiation therapy education and consensus principles for equitable AI adoption. Three examinations of entrance and subspecialty board exams reflect ongoing evaluation of model capabilities across medical fields.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">Assessing multiple-choice question quality in internal medicine: a comparative analysis of three large language models against expert consensus</a>
+        <p class="news-card-summary">Claude and Gemini show moderate to strong agreement with experts on multiple-choice question cognitive level and technical flaws, but weak agreement on learning outcomes, indicating they can support but not replace expert review.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
@@ -289,20 +296,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Cross-sectional study examines generative AI use as a search tool among resident physicians and identifies patterns of adoption and knowledge gaps in this population.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Effectiveness of an AI-augmented teacher feedback model in improving medical students&#x27; clinical documentation skills: a retrospective cohort study</a>
-        <p class="news-card-summary">A generative AI scoring tool based on large language models provided feedback on clinical documentation that aligned with expert ratings and showed preliminary benefits over traditional teacher feedback alone.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0">Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning</a>
-        <p class="news-card-summary">An AI-assisted platform integrated into ultrasound residency training showed potential to improve residents&#x27; diagnostic accuracy for breast cancer detection in an exploratory study.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
@@ -343,15 +336,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Detection and risk assessment methods have advanced as a human-in-the-loop large language model framework demonstrated improved accuracy for identifying cutaneous immune-related adverse events compared to manual review <a href="https://arxiv.org/abs/2607.20428">[1]</a>. A multicenter clinical trial showed that an AI-driven system for diagnosing inherited retinal diseases reached high diagnostic accuracy by integrating imaging and clinical data <a href="https://www.nature.com/articles/s41591-026-04545-w">[2]</a>. Studies have also piloted quality assurance frameworks for therapeutic AI in mental health services, focusing on the evaluation of chatbot-based interventions <a href="https://medinform.jmir.org/2026/1/e87887">[3]</a>. Blood-based circular RNA signatures for early detection of Alzheimer’s disease matched or exceeded current biomarkers and predicted symptom onset before clinical symptoms appear <a href="https://www.nature.com/articles/s41591-026-04563-8">[6]</a>. Researchers further explored how large language models could assist with interpreting health data from routine checkups, signaling more potential uses in direct clinical support <a href="https://www.nature.com/articles/s41746-026-02467-y">[12]</a>.</p>
-<p>Also this week: items span six studies on safety and evaluation, including analysis of human oversight in AI and the credibility of medical content online. Clinical decision support is covered by three new systems, and patient-facing AI tools are discussed in three papers. Two items address medical imaging, and one benchmarks pathology report generation.</p>
+<p>Integration of artificial intelligence models into clinical practice continues to advance in both diagnostic and decision-support areas. An AI-based clinician decision support system achieved high accuracy in diagnosing inherited retinal diseases during a multicenter randomized trial, using multimodal clinical data <a href="https://www.nature.com/articles/s41591-026-04545-w">[3]</a>. Blood-based circular RNA signatures now match or outperform existing biomarkers for early Alzheimer&#x27;s detection, with the ability to predict symptom onset before clinical signs emerge <a href="https://www.nature.com/articles/s41591-026-04563-8">[7]</a>. Deep learning models are improving differentiation between nail unit melanoma and melanonychia, resulting in better agreement among evaluators and promising utility as screening aids <a href="https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Large language models are also demonstrating value in the identification of cutaneous immune-related adverse events from clinical notes, offering higher accuracy than manual review methods <a href="https://arxiv.org/abs/2607.20428">[2]</a>. Peer-reviewed research is proposing new frameworks for meaningful clinician oversight of medical AI systems, moving beyond nominal involvement toward robust accountability measures <a href="https://www.nature.com/articles/s41746-026-02971-1">[8]</a>.</p>
+<p>Also this week: eight new model releases and five papers on safety and evaluation span topics from psychosis risk assessment to quality assurance in digital mental health chatbots, as well as benchmarking pathology report generation and interpreting health checkup results. Video observed therapy for tuberculosis and multi-cancer early detection by AI are both featured.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">AI-assisted diagnosis of nail unit melanoma and melanonychia using a clinical deep learning model</a>
+        <p class="news-card-summary">A convolutional neural network model improved diagnostic accuracy for nail unit melanoma versus melanonychia and increased agreement among human evaluators, showing promise as a screening aid.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
@@ -607,13 +607,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study uses data augmentation and large language models to identify and prioritize medical terms in electronic health record notes to improve patient comprehension through OpenNotes.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03041-2">Artificial intelligence needs better health systems to reduce inequalities</a>
-        <p class="news-card-summary">Commentary on how AI deployment in healthcare requires stronger health systems to avoid widening existing health inequalities.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
@@ -638,9 +631,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -893,14 +886,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/Z29wbnZ0ZjFoc2RoMYNmW7XUoGPceguvH8OPb5Eb_TxAIeLh42MnMxNtDYX4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d0c914491c817a040cf9c0ecf6c840d097a47716" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00037-z">An AI co-scientist to accelerate biomedical research</a>
-        <p class="news-card-summary">Biomni, an AI agent system, performs diverse biomedical research tasks and could serve as a research partner for scientists with further development.</p>
-      </div>
-      <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00037-z/d41591-026-00037-z_52987696.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
@@ -938,9 +923,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 6 videos"
+??? abstract "Show the 7 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=t6uhTLEOpzU" target="_blank" rel="noopener" title="Poolside Laguna S2.1 First Test, A VERY Creative Local Model!">
+      <img src="https://i1.ytimg.com/vi/t6uhTLEOpzU/hqdefault.jpg" alt="Video: Testing Poolside Laguna S2.1 local model" loading="lazy">
+      <span class="video-card-title">Testing Poolside Laguna S2.1 local model</span>
+      <span class="video-card-meta">Bijan Bowen, July 24, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Poolside Laguna S2.1, a local open-weights model, across browser, operating system, and coding tasks.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=_ZqSFVi6UDY" target="_blank" rel="noopener" title="Knowing When Not to Use AI: AI Agents vs Rules vs ML">
       <img src="https://i4.ytimg.com/vi/_ZqSFVi6UDY/hqdefault.jpg" alt="Video: When to use AI agents versus rules versus machine learning" loading="lazy">
       <span class="video-card-title">When to use AI agents versus rules versus machine learning</span>
