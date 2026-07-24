@@ -2225,29 +2225,34 @@ def render_archive_index(archive_files: list[str]) -> str:
         "",
         "# News Archive",
         "",
-        "Weekly digests, newest first.",
+        "Weekly digests, newest first. Each digest is also published to the "
+        "[digest feed](../../digest.xml), which any feed reader can follow.",
         "",
     ]
     for name in archive_files:
         stem = name.removesuffix(".md")
         year, week = stem.split("-w")
-        # ISO week numbers are opaque to most readers; spell out the range.
-        # A malformed filename degrades to the plain label, never a crash.
+        # The range shown here must agree with the page it links to. Each
+        # digest states its own collection window, which runs Friday to
+        # Friday and is NOT the ISO Monday-to-Sunday span the filename
+        # encodes: computing the ISO span made every row contradict its own
+        # page, by as much as two weeks on the oldest (fixed 2026-07-24).
+        # Read the window back from the page so the two cannot diverge; a
+        # missing or unreadable page degrades to the plain label.
+        span = ""
         try:
-            start = date.fromisocalendar(int(year), int(week), 1)
-            end = date.fromisocalendar(int(year), int(week), 7)
-        except ValueError:
-            lines.append(f"- [Week {int(week)}, {year}]({name})")
-            continue
-        if start.year != int(year) or end.year != int(year):
-            span = (f"{start.strftime('%B')} {start.day}, {start.year} to "
-                    f"{end.strftime('%B')} {end.day}, {end.year}")
-        elif start.month == end.month:
-            span = f"{start.strftime('%B')} {start.day} to {end.day}"
-        else:
-            span = (f"{start.strftime('%B')} {start.day} to "
-                    f"{end.strftime('%B')} {end.day}")
-        lines.append(f"- [Week {int(week)}, {year}]({name}): {span}")
+            page = (ARCHIVE_DIR / name).read_text(encoding="utf-8")
+            match = re.search(
+                r"Highlights selected from everything kept between "
+                r"(.+?) and (.+?)\.",
+                page,
+            )
+            if match:
+                span = f"{match.group(1)} to {match.group(2)}"
+        except OSError:
+            pass
+        label = f"- [Week {int(week)}, {year}]({name})"
+        lines.append(f"{label}: {span}" if span else label)
     if not archive_files:
         lines.append("No archived weeks yet.")
     return "\n".join(lines) + "\n"

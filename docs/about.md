@@ -15,7 +15,7 @@ Most of this site is written and reviewed by people; the News, Videos, Podcasts,
 1. **News.** The pipeline reads a fixed, public list of sources: established AI publications and blogs, PubMed literature searches, and medical education and digital health journals. New items are filtered to a recent window, screened against a blocklist of promotional content, and de-duplicated. A language model then selects the items most relevant to medical educators and writes a one-sentence summary of each; when the language model is unavailable, a simpler keyword ranking runs instead.
 2. **Videos and podcasts.** The same pipeline follows a hand-picked roster of YouTube channels and podcast shows. The language model selects relevant uploads and episodes and writes a one-sentence description for each, so you know what you are getting into before you click. Everything links out to the original platform; nothing is embedded or tracked here.
 3. **Benchmarks.** The [Benchmarks page](benchmarks.md) carries a snapshot of the LiveBench leaderboard, rebuilt nightly from LiveBench's published data, with the calculation method described on that page.
-4. **Weekly digest.** Every Friday a second selection pass picks the most significant items of the week, news, videos, and podcasts, plus any updates made to the conference calendar, into a digest feed for email distribution, with each week's digest preserved in the [News Archive](news/archive/index.md). The [This Week page](news/this-week.md) is separate: a rolling view of everything kept in the last seven days, refreshed nightly.
+4. **Weekly digest.** Every Friday a second selection pass picks the most significant items of the week, news, videos, and podcasts, plus any updates made to the conference calendar, into a weekly digest. Each week's digest is preserved in the [News Archive](news/archive/index.md) and published to a [digest feed](digest.xml) that any feed reader can follow. The [This Week page](news/this-week.md) is separate: a rolling view of everything kept in the last seven days, refreshed nightly.
 
 <figure class="figure">
 <svg viewBox="0 0 660 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline diagram: fixed public sources flow through the nightly pipeline into the site's generated sections, with a Friday digest branch">
@@ -55,7 +55,7 @@ Most of this site is written and reviewed by people; the News, Videos, Podcasts,
 <line x1="332" y1="162" x2="332" y2="188" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ab-ar)"/>
 <rect x="242" y="190" width="180" height="34" rx="6" fill="var(--md-primary-fg-color)"/>
 <text x="332" y="204" text-anchor="middle" font-size="9.5" fill="#ffffff">Fridays: weekly digest,</text>
-<text x="332" y="217" text-anchor="middle" font-size="9.5" fill="#ffffff">archived and emailed</text>
+<text x="332" y="217" text-anchor="middle" font-size="9.5" fill="#ffffff">archived and published</text>
 </svg>
 <figcaption>The pipeline writes only the generated sections; every hand-written page stays human-maintained.</figcaption>
 </figure>
@@ -100,4 +100,6 @@ News, video, podcast, and digest pages also carry a comments section where you c
 
 ## Contact
 
-Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact the Assistant Dean of AI in Medical Education, AUACOM.
+Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact Dr. Tarron Kayalackakom, Assistant Dean of AI in Medical Education, AUACOM, at [tkayalackakom@auamed.net](mailto:tkayalackakom@auamed.net).
+
+For general feedback about the site, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) takes about two minutes and routes to the same place.

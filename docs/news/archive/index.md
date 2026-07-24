@@ -2,12 +2,12 @@
 
 # News Archive
 
-Weekly digests, newest first.
+Weekly digests, newest first. Each digest is also published to the [digest feed](../../digest.xml), which any feed reader can follow.
 
-- [Week 30, 2026](2026-w30.md): July 20 to 26
-- [Week 29, 2026](2026-w29.md): July 13 to 19
-- [Week 28, 2026](2026-w28.md): July 6 to 12
-- [Week 27, 2026](2026-w27.md): June 29 to July 5
-- [Week 26, 2026](2026-w26.md): June 22 to 28
-- [Week 25, 2026](2026-w25.md): June 15 to 21
-- [Week 24, 2026](2026-w24.md): June 8 to 14
+- [Week 30, 2026](2026-w30.md): July 17, 2026 to July 24, 2026
+- [Week 29, 2026](2026-w29.md): July 10, 2026 to July 17, 2026
+- [Week 28, 2026](2026-w28.md): July 3, 2026 to July 10, 2026
+- [Week 27, 2026](2026-w27.md): June 26, 2026 to July 3, 2026
+- [Week 26, 2026](2026-w26.md): June 19, 2026 to June 26, 2026
+- [Week 25, 2026](2026-w25.md): June 12, 2026 to June 19, 2026
+- [Week 24, 2026](2026-w24.md): May 29, 2026 to June 12, 2026

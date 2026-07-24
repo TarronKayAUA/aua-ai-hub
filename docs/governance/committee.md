@@ -8,4 +8,4 @@ The AI Committee stewards the university's approach to artificial intelligence (
 
 <!-- render:committee -->
 
-To reach the committee with a question, a concern, or a report under the policy's reporting provisions, contact the Assistant Dean of AI in Medical Education.
+To reach the committee with a question, a concern, or a report under the policy's reporting provisions, contact Dr. Tarron Kayalackakom, Assistant Dean of AI in Medical Education, at [tkayalackakom@auamed.net](mailto:tkayalackakom@auamed.net). Reports made in good faith are handled confidentially, and the policy prohibits retaliation against anyone who makes one.

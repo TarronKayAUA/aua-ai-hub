@@ -12,7 +12,7 @@ hide:
 
 **Artificial intelligence, curated for medical education.**
 
-One reliable place for the AUACOM community to learn how AI works, find the right tools, follow the developments that matter, and see how the university governs AI use. Selected for accuracy and usefulness, not hype.
+One reliable place for the American University of Antigua College of Medicine (AUACOM) community to learn how AI works, find the right tools, follow the developments that matter, and see how the university governs AI use. Selected for accuracy and usefulness, not hype.
 
 [Start the literacy pathway](pathway/index.md){ .md-button .md-button--primary }
 [Browse the tools](tools/index.md){ .md-button }

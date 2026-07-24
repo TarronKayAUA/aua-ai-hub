@@ -11,6 +11,6 @@ What is here today:
 - [Learning](../learning/index.md): curated learning paths for faculty and students, from first steps to technical depth.
 - [Conferences](../conferences.md): a calendar of AI and medical education meetings with verified dates and deadlines.
 
-What is coming next: an automated news section covering general AI developments, medical education research, and clinical practice, refreshed nightly, plus a weekly digest delivered by email.
+What is coming next: an automated news section covering general AI developments, medical education research, and clinical practice, refreshed nightly, plus a weekly highlights digest. *(Update, July 2026: both shipped. The [News section](../news/this-week.md) refreshes nightly and the Friday digest is archived in the [news archive](../news/archive/index.md).)*
 
 Questions, corrections, and suggestions are welcome; contact information is on the [About page](../about.md).

@@ -11,9 +11,8 @@
 # so the question wording below is confirmed against the owner's form
 # directly rather than fetched.
 
-active:
-  - question: Which AI workshop would you be interested in attending?
-    url: https://forms.office.com/r/5EiqpXHJAL
-    closes: Sunday, July 19, 2026, at 11:59 PM
+active: []
 
-closed: []
+closed:
+  - question: Which AI workshop would you be interested in attending?
+    outcome: Closed July 19, 2026; results are with the committee.

@@ -13,7 +13,7 @@
   every page until dismissed there too (owner-reported 2026-07-09).
 #}
 {% block announce %}
-  The AUA AI Hub is rolling out institution-wide this July. New here?
+  Welcome to the AUA AI Hub. New here?
   <a href="{{ config.site_url }}pathway/"><strong>Start with the literacy pathway</strong></a>.
 {% endblock %}
 
@@ -43,4 +43,13 @@
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ config.site_description }}">
   <meta name="twitter:image" content="{{ config.site_url }}assets/social-card.png">
+
+  {#
+    Feed autodiscovery for the weekly digest. Without this the generated
+    digest.xml is unreachable: no page linked it and no reader could find
+    it (2026-07-24). The News archive page also links it visibly.
+  #}
+  <link rel="alternate" type="application/rss+xml"
+        title="{{ config.site_name }} weekly digest"
+        href="{{ config.site_url }}digest.xml">
 {% endblock %}
