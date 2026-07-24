@@ -23180,6 +23180,135 @@
    "first_seen": "2026-07-24T17:53:36.312436+00:00",
    "kept": false,
    "reason": "promotional content for creator's newsletter with no substantive technical or educational payload"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap",
+   "title_hash": "4e1b9797be45fd743ec4536f4724fa1d",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": true,
+   "title": "Anthropic's Opus 5 is about token efficiency, not a capability leap",
+   "source": "Ars Technica AI",
+   "published": "2026-07-24T21:05:51+00:00",
+   "summary": "Anthropic released Claude Opus 5 optimized for token efficiency and cost rather than absolute capability gains over its predecessor.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/opus-5-500x500.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e87831",
+   "title_hash": "9f8462054e99bc4bcaa78cb55f24e4ab",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": false,
+   "reason": "narrow domain application; dataset and method study without broad significance"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86145",
+   "title_hash": "ff163f487ba0487c5580d326deb35243",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": true,
+   "title": "Large Language Models for Endodontic Symptom Assessment and Treatment Planning Using Image-Free Clinical Records: Comparative Evaluation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-24T20:30:15+00:00",
+   "summary": "Large language models assessed pulpal status and treatment planning in endodontics using clinical records alone, achieving comparable accuracy to models using radiographic images.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e105550",
+   "title_hash": "5b2be9c1c30df7e998ede3c22b14337c",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": false,
+   "reason": "correction notice only, no new substantive content"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e91960",
+   "title_hash": "e71b43676c10dc10dc3312d3b1bd62d2",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": true,
+   "title": "R-R Interval Histogram-Based Deep Learning for 3-Class Atrial Fibrillation Screening in Garment-Type Wearable Holter Electrocardiogram Monitoring: Algorithm Development and Validation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-24T19:30:15+00:00",
+   "summary": "A deep learning algorithm detected atrial fibrillation from wearable ECG data using R-R interval histograms, addressing noise contamination in real-world recordings.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e81942",
+   "title_hash": "e09bae50b2ce8c16ddd087561750dbc9",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": true,
+   "title": "Clinically Interpretable Deep Learning for Differentiating Vitiligo and Postinflammatory Hypopigmentation: Diagnostic Accuracy Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-24T19:30:14+00:00",
+   "summary": "An interpretable deep learning model distinguished vitiligo from postinflammatory hypopigmentation with diagnostic accuracy and feature visualization for clinical transparency.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
+   "title_hash": "3dbf0ed93664a087eac6f1e6ee7a5658",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; acquisition gossip with no medical or education relevance"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e82647",
+   "title_hash": "2c7ba6846f6afdaa797019d9c515565d",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general clinical intervention trial unrelated to AI literacy or medical AI"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e79808",
+   "title_hash": "b1aa1d09a3de6da7c666ec508aa11e7f",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": true,
+   "title": "From Paper to Digital Medical Documentation in the Field: The Rapid Development and Deployment of the Digital Casualty Card System During a War",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-24T19:00:03+00:00",
+   "summary": "The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v5g4tl/it_appears_that_the_anti_opensource_ai_lobby_is",
+   "title_hash": "5f642773ef8564639a736959a80a350f",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": false,
+   "reason": "forum discussion with no news or substantive analysis; community meta-discussion"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+   "title_hash": "203c34e1e51e6c31b5bc296efb9733e4",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": true,
+   "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-24T13:32:30+00:00",
+   "summary": "Nvidia, Microsoft, and Meta issued a letter cautioning against overregulation of open-weight artificial intelligence models.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://image.cnbcfm.com/api/v1/image/108173882-1752844539526-gettyimages-2225696381-mms28707_1cm2uml7.jpeg?v=1752844582&w=1920&h=1080",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jyuyY86GJnA",
+   "title_hash": "9900ff2121af1e85cbfe82fd6aed3053",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": false,
+   "reason": "routine product demo from the product's own company without significant new capability announcement"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Hasnt-Increased-Unemployment--According-to-Anthropic-e3mgkqc",
+   "title_hash": "bf396d968cebde8cf1267f9580300746",
+   "first_seen": "2026-07-24T21:29:39.098997+00:00",
+   "kept": false,
+   "reason": "daily news show recap without standout analysis or guest significance"
   }
  ],
  "digests": [
@@ -23328,13 +23457,13 @@
    "date": "July 24, 2026"
   },
   "clinical_practice": {
-   "text": "Diagnosis models for specific diseases are advancing, with newly validated systems showing improved accuracy and practical utility. A convolutional neural network increased correct diagnosis rates and consensus for nail unit melanoma, presenting promise as a screening aid for melanonychia and melanoma differentiation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0\">[1]</a>. An AI-based decision support solution achieved 88.5 percent accuracy for inherited retinal diseases in a multicenter trial, combining imaging and clinical data <a href=\"https://www.nature.com/articles/s41591-026-04545-w\">[3]</a>. Multimodal AI models are also predicting major adverse cardiovascular events using incomplete clinical records while offering interpretability suited for clinical use <a href=\"https://www.nature.com/articles/s41746-026-03008-3\">[4]</a>. Research into human oversight of medical AI proposes four conditions for meaningful integration beyond merely including a clinician in the workflow <a href=\"https://www.nature.com/articles/s41746-026-02971-1\">[9]</a>. Additionally, pilot frameworks address quality assurance in therapeutic chatbots within digital mental health care <a href=\"https://medinform.jmir.org/2026/1/e87887\">[5]</a>.\n\nAlso this week: studies include eight new evaluation or safety papers, four clinical decision support initiatives, and advances in patient-facing tools for mind-body and mental health interventions. Two items focus on diagnostic imaging and pathology reporting. Clinical documentation topics, such as the use of large language models for health checkup result interpretation, are also represented.",
-   "hash": "8095b155e54a3729",
+   "text": "Early detection and clinical transparency in diagnostics remain key focuses, with an interpretable deep learning model demonstrating reliable differentiation between vitiligo and postinflammatory hypopigmentation alongside clear feature visualization for clinicians <a href=\"https://medinform.jmir.org/2026/1/e81942\">[3]</a>. A randomized multicenter trial has validated an AI-assisted clinician support system that integrates multimodal imaging and clinical data, achieving notable accuracy for inherited retinal disease diagnosis <a href=\"https://www.nature.com/articles/s41591-026-04545-w\">[7]</a>. Blood-based circular RNA signatures are emerging as accurate tools for early detection of Alzheimer’s disease, potentially predicting symptom onset before it is clinically visible <a href=\"https://www.nature.com/articles/s41591-026-04563-8\">[12]</a>. Meanwhile, the transition from paper to digital medical documentation in conflict settings has been realized by the Israeli Defense Forces, rapidly deploying a digital casualty card system to improve prehospital care logistics <a href=\"https://medinform.jmir.org/2026/1/e79808\">[4]</a>. Quality assurance frameworks for therapeutic AI systems are also advancing, with pilot studies introducing new methods for evaluating chatbots in mental health <a href=\"https://medinform.jmir.org/2026/1/e87887\">[9]</a>.\n\nAlso this week: safety and evaluation featured in five papers, including studies of human oversight, risk assessment, and information quality in digital medical content. Four new releases cover clinical decision support, including evaluation platforms and prediction of cardiovascular events. Four studies address imaging-focused diagnostics, and a new system monitors fidelity in lay-led mental health sessions in Kenya.",
+   "hash": "cd9726985e50bd13",
    "date": "July 24, 2026"
   },
   "general_ai": {
-   "text": "Improving AI safety and reliability remains central, as teams use AlphaFold to redesign gene-editing proteins to reduce errors <a href=\"https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer\">[1]</a>, and new research finds that expert-aware contrast decoding in mixture-of-experts models helps to mitigate hallucinations and supports cross-domain generalization <a href=\"https://arxiv.org/abs/2607.20426\">[3]</a>. Investigations into model routing reveal a principle akin to Huffman Coding, which shapes how advanced models allocate computation across tasks <a href=\"https://arxiv.org/abs/2607.20427\">[4]</a>. Further analysis warns that large language models can deliver deceptive responses with high confidence, amplifying the risks posed by misleading information <a href=\"https://arxiv.org/abs/2607.20444\">[6]</a>. Audits of fine-tuned models are showing mismatches between evaluation and deployment, raising concerns over unseen safety risks <a href=\"https://arxiv.org/abs/2607.20436\">[5]</a>.\n\nAlso this week: four new model releases expand the section’s coverage, including NASA’s deployment of Google’s vision-language model for satellite imagery analysis. Six studies on safety and reliability, two papers on research methods, and industry updates such as the proposed AI kill switch legislation are included, alongside a practical guide to selecting useful AI tools.",
-   "hash": "6758c2044419e0b1",
+   "text": "An analysis of the OpenAI security incident is prompting renewed attention to safety risks associated with aggressive model development and deployment practices <a href=\"https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident\">[12]</a>. In parallel, lawmakers are preparing a bill to require an AI ‘kill switch’, underscoring growing concerns about system oversight and regulatory controls <a href=\"https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal\">[13]</a>. Researchers have advanced the safety of gene-editing technology, employing AlphaFold to redesign problematic protein segments and reduce error rates <a href=\"https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer\">[2]</a>. Meanwhile, Anthropic has released Claude Opus 5, focusing on improved token efficiency rather than a capability jump, although its abilities are reportedly close to those of Claude Fable 5 <a href=\"https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap\">[1]</a> <a href=\"https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release\">[3]</a>. Large language models continue to raise questions about reliability, with new research indicating that models often exhibit high confidence in deceptive responses, amplifying risks for users <a href=\"https://arxiv.org/abs/2607.20444\">[8]</a>.\n\nAlso this week: five new model releases, including Domyn-Small, an open-weight reasoning language model, and NASA&#x27;s orbital deployment of Gemma 3 for satellite imagery analysis. Four papers address AI safety and reliability, while two items explore mixture-of-experts model methods.",
+   "hash": "5113a6b00d72537a",
    "date": "July 24, 2026"
   }
  },

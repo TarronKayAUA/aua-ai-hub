@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -303,13 +303,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A framework examining how AI transforms clinical practice and medical education while addressing ethical, legal, and professional challenges in the physician-patient relationship and clinical decision-making.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89750">Current Landscape of Generative AI Use as a Search Engine Among Resident Physicians: Cross-Sectional Study</a>
-        <p class="news-card-summary">Cross-sectional study examines generative AI use as a search tool among resident physicians and identifies patterns of adoption and knowledge gaps in this population.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
@@ -336,15 +329,43 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Diagnosis models for specific diseases are advancing, with newly validated systems showing improved accuracy and practical utility. A convolutional neural network increased correct diagnosis rates and consensus for nail unit melanoma, presenting promise as a screening aid for melanonychia and melanoma differentiation <a href="https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. An AI-based decision support solution achieved 88.5 percent accuracy for inherited retinal diseases in a multicenter trial, combining imaging and clinical data <a href="https://www.nature.com/articles/s41591-026-04545-w">[3]</a>. Multimodal AI models are also predicting major adverse cardiovascular events using incomplete clinical records while offering interpretability suited for clinical use <a href="https://www.nature.com/articles/s41746-026-03008-3">[4]</a>. Research into human oversight of medical AI proposes four conditions for meaningful integration beyond merely including a clinician in the workflow <a href="https://www.nature.com/articles/s41746-026-02971-1">[9]</a>. Additionally, pilot frameworks address quality assurance in therapeutic chatbots within digital mental health care <a href="https://medinform.jmir.org/2026/1/e87887">[5]</a>.</p>
-<p>Also this week: studies include eight new evaluation or safety papers, four clinical decision support initiatives, and advances in patient-facing tools for mind-body and mental health interventions. Two items focus on diagnostic imaging and pathology reporting. Clinical documentation topics, such as the use of large language models for health checkup result interpretation, are also represented.</p>
+<p>Early detection and clinical transparency in diagnostics remain key focuses, with an interpretable deep learning model demonstrating reliable differentiation between vitiligo and postinflammatory hypopigmentation alongside clear feature visualization for clinicians <a href="https://medinform.jmir.org/2026/1/e81942">[3]</a>. A randomized multicenter trial has validated an AI-assisted clinician support system that integrates multimodal imaging and clinical data, achieving notable accuracy for inherited retinal disease diagnosis <a href="https://www.nature.com/articles/s41591-026-04545-w">[7]</a>. Blood-based circular RNA signatures are emerging as accurate tools for early detection of Alzheimer’s disease, potentially predicting symptom onset before it is clinically visible <a href="https://www.nature.com/articles/s41591-026-04563-8">[12]</a>. Meanwhile, the transition from paper to digital medical documentation in conflict settings has been realized by the Israeli Defense Forces, rapidly deploying a digital casualty card system to improve prehospital care logistics <a href="https://medinform.jmir.org/2026/1/e79808">[4]</a>. Quality assurance frameworks for therapeutic AI systems are also advancing, with pilot studies introducing new methods for evaluating chatbots in mental health <a href="https://medinform.jmir.org/2026/1/e87887">[9]</a>.</p>
+<p>Also this week: safety and evaluation featured in five papers, including studies of human oversight, risk assessment, and information quality in digital medical content. Four new releases cover clinical decision support, including evaluation platforms and prediction of cardiovascular events. Four studies address imaging-focused diagnostics, and a new system monitors fidelity in lay-led mental health sessions in Kenya.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86145">Large Language Models for Endodontic Symptom Assessment and Treatment Planning Using Image-Free Clinical Records: Comparative Evaluation Study</a>
+        <p class="news-card-summary">Large language models assessed pulpal status and treatment planning in endodontics using clinical records alone, achieving comparable accuracy to models using radiographic images.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91960">R-R Interval Histogram-Based Deep Learning for 3-Class Atrial Fibrillation Screening in Garment-Type Wearable Holter Electrocardiogram Monitoring: Algorithm Development and Validation Study</a>
+        <p class="news-card-summary">A deep learning algorithm detected atrial fibrillation from wearable ECG data using R-R interval histograms, addressing noise contamination in real-world recordings.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81942">Clinically Interpretable Deep Learning for Differentiating Vitiligo and Postinflammatory Hypopigmentation: Diagnostic Accuracy Study</a>
+        <p class="news-card-summary">An interpretable deep learning model distinguished vitiligo from postinflammatory hypopigmentation with diagnostic accuracy and feature visualization for clinical transparency.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79808">From Paper to Digital Medical Documentation in the Field: The Rapid Development and Deployment of the Digital Casualty Card System During a War</a>
+        <p class="news-card-summary">The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
@@ -602,20 +623,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82924">Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines</a>
-        <p class="news-card-summary">Study benchmarks Fast Healthcare Interoperability Resources analytics tools to measure performance of RESTful queries and data engines for electronic health records research.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e75561">Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study</a>
-        <p class="news-card-summary">Study uses data augmentation and large language models to identify and prioritize medical terms in electronic health record notes to improve patient comprehension through OpenNotes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03040-3">Synthesized clinical notes enable training robust multimodal AI models from unimodal dermatology datasets</a>
         <p class="news-card-summary">Researchers demonstrated that synthesized clinical notes can train robust multimodal AI models from single-modality dermatology datasets, addressing data imbalance in medical image analysis.</p>
@@ -626,15 +633,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Improving AI safety and reliability remains central, as teams use AlphaFold to redesign gene-editing proteins to reduce errors <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[1]</a>, and new research finds that expert-aware contrast decoding in mixture-of-experts models helps to mitigate hallucinations and supports cross-domain generalization <a href="https://arxiv.org/abs/2607.20426">[3]</a>. Investigations into model routing reveal a principle akin to Huffman Coding, which shapes how advanced models allocate computation across tasks <a href="https://arxiv.org/abs/2607.20427">[4]</a>. Further analysis warns that large language models can deliver deceptive responses with high confidence, amplifying the risks posed by misleading information <a href="https://arxiv.org/abs/2607.20444">[6]</a>. Audits of fine-tuned models are showing mismatches between evaluation and deployment, raising concerns over unseen safety risks <a href="https://arxiv.org/abs/2607.20436">[5]</a>.</p>
-<p>Also this week: four new model releases expand the section’s coverage, including NASA’s deployment of Google’s vision-language model for satellite imagery analysis. Six studies on safety and reliability, two papers on research methods, and industry updates such as the proposed AI kill switch legislation are included, alongside a practical guide to selecting useful AI tools.</p>
+<p>An analysis of the OpenAI security incident is prompting renewed attention to safety risks associated with aggressive model development and deployment practices <a href="https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident">[12]</a>. In parallel, lawmakers are preparing a bill to require an AI ‘kill switch’, underscoring growing concerns about system oversight and regulatory controls <a href="https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal">[13]</a>. Researchers have advanced the safety of gene-editing technology, employing AlphaFold to redesign problematic protein segments and reduce error rates <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[2]</a>. Meanwhile, Anthropic has released Claude Opus 5, focusing on improved token efficiency rather than a capability jump, although its abilities are reportedly close to those of Claude Fable 5 <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[1]</a> <a href="https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release">[3]</a>. Large language models continue to raise questions about reliability, with new research indicating that models often exhibit high confidence in deceptive responses, amplifying risks for users <a href="https://arxiv.org/abs/2607.20444">[8]</a>.</p>
+<p>Also this week: five new model releases, including Domyn-Small, an open-weight reasoning language model, and NASA&#x27;s orbital deployment of Gemma 3 for satellite imagery analysis. Four papers address AI safety and reliability, while two items explore mixture-of-experts model methods.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">Anthropic&#x27;s Opus 5 is about token efficiency, not a capability leap</a>
+        <p class="news-card-summary">Anthropic released Claude Opus 5 optimized for token efficiency and cost rather than absolute capability gains over its predecessor.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/opus-5-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
@@ -658,6 +673,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Twenty companies including NVIDIA, Meta, and Microsoft signed a letter urging policymakers to avoid premature restrictions on open-weight AI models.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/4yvf9z8xm6fh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=268ac51182255d3c2a12f1562b616750fe340e19" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html">Nvidia, Microsoft, Meta warn against overregulating open-weight models</a>
+        <p class="news-card-summary">Nvidia, Microsoft, and Meta issued a letter cautioning against overregulation of open-weight artificial intelligence models.</p>
+      </div>
+      <img class="news-card-thumb" src="https://image.cnbcfm.com/api/v1/image/108173882-1752844539526-gettyimages-2225696381-mms28707_1cm2uml7.jpeg?v=1752844582&amp;w=1920&amp;h=1080" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
