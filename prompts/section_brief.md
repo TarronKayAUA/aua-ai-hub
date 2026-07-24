@@ -24,8 +24,18 @@ two individual items. No bracketed references in this paragraph.
 
 Rules:
 - In paragraph 1, reference items only as bracketed numbers like [3],
-  placed immediately after the claim they support. ONE number per bracket:
-  write [2] [3], never [2,3]. Use 3 to 6 references total.
+  placed immediately after the claim they support. ONE number per bracket
+  (a formatting rule only, not an invitation to cite items in pairs):
+  write [2], never [2,3].
+- HARD LIMIT: the entire brief contains at least 3 and at most 6
+  bracketed references. Count your brackets before answering; a brief
+  with 7 or more is rejected and never published. When several items
+  support the same claim, cite only the single most significant one.
+  Covering a thread does not require citing it: paragraph 2 describes
+  breadth with no references at all.
+- HARD LIMIT: a brief over 200 words is rejected and never published.
+  Aim for the 90 to 170 target; when trimming, cut references and
+  clauses, never the "Also this week:" opener.
 - Never use a number that is not in the list. Do not invent anything beyond
   the titles, summaries, and tally given.
 - Write narratives, not lists.
