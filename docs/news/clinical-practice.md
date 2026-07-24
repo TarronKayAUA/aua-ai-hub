@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Integration of artificial intelligence models into clinical practice continues to advance in both diagnostic and decision-support areas. An AI-based clinician decision support system achieved high accuracy in diagnosing inherited retinal diseases during a multicenter randomized trial, using multimodal clinical data <a href="https://www.nature.com/articles/s41591-026-04545-w">[3]</a>. Blood-based circular RNA signatures now match or outperform existing biomarkers for early Alzheimer&#x27;s detection, with the ability to predict symptom onset before clinical signs emerge <a href="https://www.nature.com/articles/s41591-026-04563-8">[7]</a>. Deep learning models are improving differentiation between nail unit melanoma and melanonychia, resulting in better agreement among evaluators and promising utility as screening aids <a href="https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Large language models are also demonstrating value in the identification of cutaneous immune-related adverse events from clinical notes, offering higher accuracy than manual review methods <a href="https://arxiv.org/abs/2607.20428">[2]</a>. Peer-reviewed research is proposing new frameworks for meaningful clinician oversight of medical AI systems, moving beyond nominal involvement toward robust accountability measures <a href="https://www.nature.com/articles/s41746-026-02971-1">[8]</a>.</p>
-<p>Also this week: eight new model releases and five papers on safety and evaluation span topics from psychosis risk assessment to quality assurance in digital mental health chatbots, as well as benchmarking pathology report generation and interpreting health checkup results. Video observed therapy for tuberculosis and multi-cancer early detection by AI are both featured.</p>
+<p>Diagnosis models for specific diseases are advancing, with newly validated systems showing improved accuracy and practical utility. A convolutional neural network increased correct diagnosis rates and consensus for nail unit melanoma, presenting promise as a screening aid for melanonychia and melanoma differentiation <a href="https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. An AI-based decision support solution achieved 88.5 percent accuracy for inherited retinal diseases in a multicenter trial, combining imaging and clinical data <a href="https://www.nature.com/articles/s41591-026-04545-w">[3]</a>. Multimodal AI models are also predicting major adverse cardiovascular events using incomplete clinical records while offering interpretability suited for clinical use <a href="https://www.nature.com/articles/s41746-026-03008-3">[4]</a>. Research into human oversight of medical AI proposes four conditions for meaningful integration beyond merely including a clinician in the workflow <a href="https://www.nature.com/articles/s41746-026-02971-1">[9]</a>. Additionally, pilot frameworks address quality assurance in therapeutic chatbots within digital mental health care <a href="https://medinform.jmir.org/2026/1/e87887">[5]</a>.</p>
+<p>Also this week: studies include eight new evaluation or safety papers, four clinical decision support initiatives, and advances in patient-facing tools for mind-body and mental health interventions. Two items focus on diagnostic imaging and pathology reporting. Clinical documentation topics, such as the use of large language models for health checkup result interpretation, are also represented.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -40,6 +40,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04545-w">AI-based clinician decision support system for diagnosis of inherited retinal diseases: a multicenter, randomized trial</a>
     <p class="news-card-summary">An AI system for inherited retinal disease diagnosis integrating multimodal imaging and clinical data achieved 88.5% accuracy in a randomized multicenter trial.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03008-3">Predicting major adverse cardiovascular events from incomplete clinical data through interpretable multimodal AI system</a>
+    <p class="news-card-summary">Multimodal AI system predicts major adverse cardiovascular events from incomplete clinical data with interpretability for clinical use.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03049-8">Video observed therapy (VOT) for people with tuberculosis (TB): a scoping review</a>
     <p class="news-card-summary">A scoping review examines video observed therapy for tuberculosis treatment adherence and outcomes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03047-w">Shaping the future of cancer screening with artificial intelligence-empowered multi-cancer early detection</a>
-    <p class="news-card-summary">Review discusses artificial intelligence approaches to multi-cancer early detection and their role in shaping cancer screening practices.</p>
   </div>
 </div>
 </div>

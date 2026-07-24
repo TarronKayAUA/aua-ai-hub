@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>AI tools are increasingly present in medical education with studies highlighting both their promise and limitations for assessment and teaching. Chain-of-thought prompting has improved large language model performance when medical faculty use these models for evaluating clinical record rubrics, suggesting potential for supporting student assessment <a href="https://mededu.jmir.org/2026/1/e88652">[3]</a>. Comparative analyses show that new models can match or exceed human specialists in certain exams, but performance varies across scenarios and specialties <a href="https://pubmed.ncbi.nlm.nih.gov/42491928?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">[10]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">[15]</a>. There is moderate agreement between AI models and experts in question quality review, yet weak alignment regarding learning outcomes, reinforcing the need for expert oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Medical students and faculty report positive attitudes toward AI, but ethical concerns and gaps in formal training persist despite growing recognition of AI&#x27;s role in healthcare <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[5]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/42491647?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">[11]</a>.</p>
-<p>Also this week: five papers on assessment and feedback address reliability, question quality, and clinical record evaluation. Studies cover competency-based frameworks for responsible AI use, including new guidance in radiation therapy education and consensus principles for equitable AI adoption. Three examinations of entrance and subspecialty board exams reflect ongoing evaluation of model capabilities across medical fields.</p>
+<p>Recent research highlights the integration and evaluation of artificial intelligence in medical assessment and education. Comparative studies show that large language models can support the review process of multiple-choice questions in internal medicine but are not yet capable of replacing expert oversight due to gaps in aligning with learning outcomes <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. The use of chain-of-thought prompting has been found to improve model performance in evaluating clinical records for undergraduate assessment, suggesting advancements in model-guided grading <a href="https://mededu.jmir.org/2026/1/e88652">[5]</a>. In pediatric emergency medicine, a perspective discusses the role of AI in clinical decision support, stakeholder engagement, and medical education, emphasizing the importance of child-centered approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42496469?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[2]</a>. Meanwhile, concerns about AI-induced deskilling in interventional pulmonology have prompted international surveys examining risk perception and strategies for mitigation among practitioners <a href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[3]</a>.</p>
+<p>Also this week: the section features eight new model releases and five papers on assessment, including studies on automated generation of board exam questions and the reliability of model-driven assessment. Two studies focus on medical student attitudes toward AI, noting gaps in formal training and ongoing ethical concerns.</p>
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -26,6 +26,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">Assessing multiple-choice question quality in internal medicine: a comparative analysis of three large language models against expert consensus</a>
     <p class="news-card-summary">Claude and Gemini show moderate to strong agreement with experts on multiple-choice question cognitive level and technical flaws, but weak agreement on learning outcomes, indicating they can support but not replace expert review.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42496469?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">Toward Child-Centred Artificial Intelligence in Pediatric Emergency Medicine: A Perspective on Clinical Decision Support, Stakeholder Engagement and Education</a>
+    <p class="news-card-summary">Perspective on integrating AI and machine learning into pediatric emergency departments across clinical decision support, stakeholder engagement, and education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">Artificial Intelligence-Induced Deskilling in Interventional Pulmonology: An International Cross-Sectional Survey on Risk Perception and Mitigation Strategies</a>
+    <p class="news-card-summary">International survey of interventional pulmonologists examines perceptions of AI-induced deskilling and mitigation strategies in their specialty.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 22, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91626">Principles for Responsible AI in Health Professions Education, Research, and Care: Health CARE-AI (Contextual, Accountable, Responsible, and Equitable Artificial Intelligence) Framework Delphi Consensus Study</a>
     <p class="news-card-summary">A Delphi consensus framework establishes principles for contextual, accountable, responsible, and equitable artificial intelligence in health professions education, research, and clinical practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42484645?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">DEGRO consensus framework for undergraduate radiation therapy teaching in Germany: a white paper with integrated guidance on artificial intelligence in medical education</a>
-    <p class="news-card-summary">German radiation therapy education framework integrates competency-based learning with guidance on responsible artificial intelligence use in undergraduate teaching.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0">Assessing a large language model for glaucoma knowledge: ChatGPT-5 versus residents</a>
-    <p class="news-card-summary">ChatGPT-5 outperformed ophthalmology residents on glaucoma multiple-choice questions, suggesting potential as a subspecialty assessment tool with noted generalizability limitations.</p>
   </div>
 </div>
 </div>

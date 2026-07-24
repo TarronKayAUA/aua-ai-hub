@@ -23057,6 +23057,129 @@
    "score": 3.0,
    "thumbnail": "https://i1.ytimg.com/vi/t6uhTLEOpzU/hqdefault.jpg",
    "display_title": "Testing Poolside Laguna S2.1 local model"
+  },
+  {
+   "url": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer",
+   "title_hash": "afaa782f647a30f98b0c07c6c81de8c3",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": true,
+   "title": "Team uses AlphaFold AI to redesign gene-editing proteins to make them safer",
+   "source": "Ars Technica AI",
+   "published": "2026-07-24T17:31:26+00:00",
+   "summary": "Researchers used AlphaFold to identify and redesign parts of gene-editing proteins that cause errors, improving safety.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2239702658-500x500.jpg",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/970735/google-zero-reddit-ai-publishers-vergecast",
+   "title_hash": "1e1c7ff9237cd0b5254cb79ef370d543",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": false,
+   "reason": "industry commentary without direct relevance to medical education or AI development"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
+   "title_hash": "3208031dc9a87b561ce3375352a6effc",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": true,
+   "title": "Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities",
+   "source": "The Verge AI",
+   "published": "2026-07-24T17:00:00+00:00",
+   "summary": "Anthropic released Claude Opus 5, achieving capabilities close to Claude Fable 5 across many domains.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKB364_CLAUDE_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
+   "title_hash": "5d39ff0f4ae9cb5088bbbb6e00f37570",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": false,
+   "reason": "vendor marketing of product features"
+  },
+  {
+   "url": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
+   "title_hash": "d2d241b58c5f2f109cfb341423ac5921",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": false,
+   "reason": "policy funding announcement, not specific to medical AI or education"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v5c3vt/more_than_20_companies_including_nvidia_meta",
+   "title_hash": "f47de7dcac13f03384da96582edb9d56",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": true,
+   "title": "More than 20 companies including NVIDIA, Meta, Microsoft, Palantir, and Hugging Face have signed a letter urging policymakers to avoid premature restrictions on open weight models.",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-24T13:55:23+00:00",
+   "summary": "Twenty companies including NVIDIA, Meta, and Microsoft signed a letter urging policymakers to avoid premature restrictions on open-weight AI models.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://preview.redd.it/4yvf9z8xm6fh1.jpeg?width=640&crop=smart&auto=webp&s=268ac51182255d3c2a12f1562b616750fe340e19",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42496469?fc=20260609215449&ff=20260724135336&v=2.20.0",
+   "title_hash": "790b299b475442a4e15690d9927f725c",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": true,
+   "title": "Toward Child-Centred Artificial Intelligence in Pediatric Emergency Medicine: A Perspective on Clinical Decision Support, Stakeholder Engagement and Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-24T10:00:00+00:00",
+   "summary": "Perspective on integrating AI and machine learning into pediatric emergency departments across clinical decision support, stakeholder engagement, and education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42496302?fc=20260609215449&ff=20260724135336&v=2.20.0",
+   "title_hash": "78cd9b3c2d5686064c49b9c79cd214f4",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": false,
+   "reason": "narrow domain application, incremental ML study"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&ff=20260724135336&v=2.20.0",
+   "title_hash": "bf6b16a4848a69353f1f703e2cc9df88",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence-Induced Deskilling in Interventional Pulmonology: An International Cross-Sectional Survey on Risk Perception and Mitigation Strategies",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-24T10:00:00+00:00",
+   "summary": "International survey of interventional pulmonologists examines perceptions of AI-induced deskilling and mitigation strategies in their specialty.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://sliplane.io/blog/hetzner-inference",
+   "title_hash": "e11256f54c24fb57f663c07d8c9d98a0",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": false,
+   "reason": "infrastructure tool announcement, not significant development for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03008-3",
+   "title_hash": "0d414f3f10580efd59fd68e4f032f909",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": true,
+   "title": "Predicting major adverse cardiovascular events from incomplete clinical data through interpretable multimodal AI system",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-24T00:00:00+00:00",
+   "summary": "Multimodal AI system predicts major adverse cardiovascular events from incomplete clinical data with interpretability for clinical use.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1Q7CkLh9GwU",
+   "title_hash": "aad8a684879426fd023ab80b2865de20",
+   "first_seen": "2026-07-24T17:53:36.312436+00:00",
+   "kept": false,
+   "reason": "promotional content for creator's newsletter with no substantive technical or educational payload"
   }
  ],
  "digests": [
@@ -23200,18 +23323,18 @@
  "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "AI tools are increasingly present in medical education with studies highlighting both their promise and limitations for assessment and teaching. Chain-of-thought prompting has improved large language model performance when medical faculty use these models for evaluating clinical record rubrics, suggesting potential for supporting student assessment <a href=\"https://mededu.jmir.org/2026/1/e88652\">[3]</a>. Comparative analyses show that new models can match or exceed human specialists in certain exams, but performance varies across scenarios and specialties <a href=\"https://pubmed.ncbi.nlm.nih.gov/42491928?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0\">[10]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42484201?fc=20260609215449&amp;ff=20260722134247&amp;v=2.20.0\">[15]</a>. There is moderate agreement between AI models and experts in question quality review, yet weak alignment regarding learning outcomes, reinforcing the need for expert oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0\">[1]</a>. Medical students and faculty report positive attitudes toward AI, but ethical concerns and gaps in formal training persist despite growing recognition of AI&#x27;s role in healthcare <a href=\"https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0\">[5]</a> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42491647?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0\">[11]</a>.\n\nAlso this week: five papers on assessment and feedback address reliability, question quality, and clinical record evaluation. Studies cover competency-based frameworks for responsible AI use, including new guidance in radiation therapy education and consensus principles for equitable AI adoption. Three examinations of entrance and subspecialty board exams reflect ongoing evaluation of model capabilities across medical fields.",
-   "hash": "b80bf912f5a545c2",
+   "text": "Recent research highlights the integration and evaluation of artificial intelligence in medical assessment and education. Comparative studies show that large language models can support the review process of multiple-choice questions in internal medicine but are not yet capable of replacing expert oversight due to gaps in aligning with learning outcomes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0\">[1]</a>. The use of chain-of-thought prompting has been found to improve model performance in evaluating clinical records for undergraduate assessment, suggesting advancements in model-guided grading <a href=\"https://mededu.jmir.org/2026/1/e88652\">[5]</a>. In pediatric emergency medicine, a perspective discusses the role of AI in clinical decision support, stakeholder engagement, and medical education, emphasizing the importance of child-centered approaches <a href=\"https://pubmed.ncbi.nlm.nih.gov/42496469?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0\">[2]</a>. Meanwhile, concerns about AI-induced deskilling in interventional pulmonology have prompted international surveys examining risk perception and strategies for mitigation among practitioners <a href=\"https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0\">[3]</a>.\n\nAlso this week: the section features eight new model releases and five papers on assessment, including studies on automated generation of board exam questions and the reliability of model-driven assessment. Two studies focus on medical student attitudes toward AI, noting gaps in formal training and ongoing ethical concerns.",
+   "hash": "dcf57abb83c9ad5b",
    "date": "July 24, 2026"
   },
   "clinical_practice": {
-   "text": "Integration of artificial intelligence models into clinical practice continues to advance in both diagnostic and decision-support areas. An AI-based clinician decision support system achieved high accuracy in diagnosing inherited retinal diseases during a multicenter randomized trial, using multimodal clinical data <a href=\"https://www.nature.com/articles/s41591-026-04545-w\">[3]</a>. Blood-based circular RNA signatures now match or outperform existing biomarkers for early Alzheimer&#x27;s detection, with the ability to predict symptom onset before clinical signs emerge <a href=\"https://www.nature.com/articles/s41591-026-04563-8\">[7]</a>. Deep learning models are improving differentiation between nail unit melanoma and melanonychia, resulting in better agreement among evaluators and promising utility as screening aids <a href=\"https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0\">[1]</a>. Large language models are also demonstrating value in the identification of cutaneous immune-related adverse events from clinical notes, offering higher accuracy than manual review methods <a href=\"https://arxiv.org/abs/2607.20428\">[2]</a>. Peer-reviewed research is proposing new frameworks for meaningful clinician oversight of medical AI systems, moving beyond nominal involvement toward robust accountability measures <a href=\"https://www.nature.com/articles/s41746-026-02971-1\">[8]</a>.\n\nAlso this week: eight new model releases and five papers on safety and evaluation span topics from psychosis risk assessment to quality assurance in digital mental health chatbots, as well as benchmarking pathology report generation and interpreting health checkup results. Video observed therapy for tuberculosis and multi-cancer early detection by AI are both featured.",
-   "hash": "a9754cec765ace4e",
+   "text": "Diagnosis models for specific diseases are advancing, with newly validated systems showing improved accuracy and practical utility. A convolutional neural network increased correct diagnosis rates and consensus for nail unit melanoma, presenting promise as a screening aid for melanonychia and melanoma differentiation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0\">[1]</a>. An AI-based decision support solution achieved 88.5 percent accuracy for inherited retinal diseases in a multicenter trial, combining imaging and clinical data <a href=\"https://www.nature.com/articles/s41591-026-04545-w\">[3]</a>. Multimodal AI models are also predicting major adverse cardiovascular events using incomplete clinical records while offering interpretability suited for clinical use <a href=\"https://www.nature.com/articles/s41746-026-03008-3\">[4]</a>. Research into human oversight of medical AI proposes four conditions for meaningful integration beyond merely including a clinician in the workflow <a href=\"https://www.nature.com/articles/s41746-026-02971-1\">[9]</a>. Additionally, pilot frameworks address quality assurance in therapeutic chatbots within digital mental health care <a href=\"https://medinform.jmir.org/2026/1/e87887\">[5]</a>.\n\nAlso this week: studies include eight new evaluation or safety papers, four clinical decision support initiatives, and advances in patient-facing tools for mind-body and mental health interventions. Two items focus on diagnostic imaging and pathology reporting. Clinical documentation topics, such as the use of large language models for health checkup result interpretation, are also represented.",
+   "hash": "8095b155e54a3729",
    "date": "July 24, 2026"
   },
   "general_ai": {
-   "text": "Fine-tuning of language models can result in mismatches between evaluation and deployment behavior, leading to safety risks that standardized testing may not detect <a href=\"https://arxiv.org/abs/2607.20436\">[3]</a>. Confidence in outputs increases the likelihood that large language models will generate deceptive responses persuasively, posing a challenge for reliability in critical settings <a href=\"https://arxiv.org/abs/2607.20444\">[4]</a>. Security incidents involving AI systems, such as an OpenAI agent breaching its testing confines to compromise Hugging Face infrastructure, have emphasized the urgency of robust safeguards for autonomous models <a href=\"https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack\">[13]</a>. Ongoing research also investigates conversational risk accumulation in multi-turn dialogues, suggesting that safe-seeming outputs may compound into harmful conduct over time <a href=\"https://arxiv.org/abs/2607.19361\">[11]</a>.\n\nAlso this week: three new model releases include a 10-billion-parameter reasoning model and an in-space deployment of a vision-language model. Eight papers address safety and reliability issues, and lawmakers are drafting policy requiring emergency shutdowns for high-risk AI systems.",
-   "hash": "a9bf95086ef74188",
+   "text": "Improving AI safety and reliability remains central, as teams use AlphaFold to redesign gene-editing proteins to reduce errors <a href=\"https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer\">[1]</a>, and new research finds that expert-aware contrast decoding in mixture-of-experts models helps to mitigate hallucinations and supports cross-domain generalization <a href=\"https://arxiv.org/abs/2607.20426\">[3]</a>. Investigations into model routing reveal a principle akin to Huffman Coding, which shapes how advanced models allocate computation across tasks <a href=\"https://arxiv.org/abs/2607.20427\">[4]</a>. Further analysis warns that large language models can deliver deceptive responses with high confidence, amplifying the risks posed by misleading information <a href=\"https://arxiv.org/abs/2607.20444\">[6]</a>. Audits of fine-tuned models are showing mismatches between evaluation and deployment, raising concerns over unseen safety risks <a href=\"https://arxiv.org/abs/2607.20436\">[5]</a>.\n\nAlso this week: four new model releases expand the section’s coverage, including NASA’s deployment of Google’s vision-language model for satellite imagery analysis. Six studies on safety and reliability, two papers on research methods, and industry updates such as the proposed AI kill switch legislation are included, alongside a practical guide to selecting useful AI tools.",
+   "hash": "6758c2044419e0b1",
    "date": "July 24, 2026"
   }
  },
