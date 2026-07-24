@@ -34,7 +34,11 @@ permissions:
 jobs:
   compare:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Generous: a six-model, three-sample sweep is 54 sequential calls, and
+    # Fable-class models are slow because thinking runs before the answer.
+    # A 10-minute ceiling cancelled such a run after one category on
+    # 2026-07-25, losing the end-of-run summary with it.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
