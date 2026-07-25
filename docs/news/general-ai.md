@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>An analysis of the OpenAI security incident is prompting renewed attention to safety risks associated with aggressive model development and deployment practices <a href="https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident">[12]</a>. In parallel, lawmakers are preparing a bill to require an AI ‘kill switch’, underscoring growing concerns about system oversight and regulatory controls <a href="https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal">[13]</a>. Researchers have advanced the safety of gene-editing technology, employing AlphaFold to redesign problematic protein segments and reduce error rates <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[2]</a>. Meanwhile, Anthropic has released Claude Opus 5, focusing on improved token efficiency rather than a capability jump, although its abilities are reportedly close to those of Claude Fable 5 <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[1]</a> <a href="https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release">[3]</a>. Large language models continue to raise questions about reliability, with new research indicating that models often exhibit high confidence in deceptive responses, amplifying risks for users <a href="https://arxiv.org/abs/2607.20444">[8]</a>.</p>
-<p>Also this week: five new model releases, including Domyn-Small, an open-weight reasoning language model, and NASA&#x27;s orbital deployment of Gemma 3 for satellite imagery analysis. Four papers address AI safety and reliability, while two items explore mixture-of-experts model methods.</p>
-<p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
+<p>Anthropic’s latest model, Claude Opus 5, is generating discussion for its improved resistance to prompt injection attacks, as noted in initial evaluations and red-team tests <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[1]</a>. In addition, its release highlights a shift toward optimizing token efficiency and lowering costs rather than solely pursuing maximal capability gains <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[3]</a>. Researchers are also focusing on safety and reliability through the use of AlphaFold to redesign gene-editing proteins, reducing sources of errors in biotechnological applications <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[4]</a>. Meanwhile, ongoing investigations into fine-tuned language models and their deployment show evidence of mismatches between intended behaviors and real-world use, raising questions about unaddressed safety risks <a href="https://arxiv.org/abs/2607.20436">[9]</a>.</p>
+<p>Also this week: five new model releases, including European open-weight reasoning models and expanded voice mode support. Advances in assessment include methods to mitigate hallucinations and studies uncovering principles in computation allocation. Industry voices caution against overregulation of open-weight models, and a guide offers practical advice for tool selection.</p>
+<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 25, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/25/boris-cherny">Quoting Boris Cherny</a>
+    <p class="news-card-summary">Claude Opus 5 shows improved resistance to prompt injection attacks across evaluations and red teaming, according to Anthropic&#x27;s system card.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5">Introducing Claude Opus 5</a>
+    <p class="news-card-summary">Anthropic released Claude Opus 5, described as approaching frontier intelligence at half the cost of previous top-tier models.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
@@ -119,21 +133,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Analysis of security incident at OpenAI and implications of aggressive model training practices for safety risks.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/05/AI-chatbot-icons-on-smartphone-1-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal">Lawmakers prepare bill requiring AI ‘kill switch’</a>
-    <p class="news-card-summary">U.S. lawmakers are preparing legislation requiring AI companies to shut down or throttle systems on orders from the Department of Homeland Security in response to safety concerns.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STK_414_AI_C-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/nasa-ai-satellite-image-analysis">NASA Puts Google’s Gemma Large Language Model in Orbit</a>
-    <p class="news-card-summary">NASA&#x27;s Jet Propulsion Laboratory deployed Google&#x27;s Gemma 3 vision-language model in orbit, demonstrating the first in-space implementation of a large language model for analyzing satellite imagery.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/satellite-image-of-an-arid-coastal-landscape-with-a-small-concentrated-metropolitan-area.jpg?id=67522667&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

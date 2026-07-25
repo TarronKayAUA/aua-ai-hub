@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -303,13 +303,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A framework examining how AI transforms clinical practice and medical education while addressing ethical, legal, and professional challenges in the physician-patient relationship and clinical decision-making.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&amp;ff=20260717233417&amp;v=2.20.0">PEPCAL: A Heuristic Framework for Teaching Generative AI to Continuing Professional Education Providers and Faculty Developers</a>
-        <p class="news-card-summary">PEPCAL, a framework addressing pedagogical, ethical, preparation, creative, administrative, and data considerations, guides continuing professional education providers and faculty developers in integrating generative AI responsibly.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 17, 2026</span></div>
@@ -334,9 +327,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -621,27 +614,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Machine unlearning techniques offer governance approaches for clinical AI systems to manage data retention and model accountability.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03040-3">Synthesized clinical notes enable training robust multimodal AI models from unimodal dermatology datasets</a>
-        <p class="news-card-summary">Researchers demonstrated that synthesized clinical notes can train robust multimodal AI models from single-modality dermatology datasets, addressing data imbalance in medical image analysis.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>An analysis of the OpenAI security incident is prompting renewed attention to safety risks associated with aggressive model development and deployment practices <a href="https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident">[12]</a>. In parallel, lawmakers are preparing a bill to require an AI ‘kill switch’, underscoring growing concerns about system oversight and regulatory controls <a href="https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal">[13]</a>. Researchers have advanced the safety of gene-editing technology, employing AlphaFold to redesign problematic protein segments and reduce error rates <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[2]</a>. Meanwhile, Anthropic has released Claude Opus 5, focusing on improved token efficiency rather than a capability jump, although its abilities are reportedly close to those of Claude Fable 5 <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[1]</a> <a href="https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release">[3]</a>. Large language models continue to raise questions about reliability, with new research indicating that models often exhibit high confidence in deceptive responses, amplifying risks for users <a href="https://arxiv.org/abs/2607.20444">[8]</a>.</p>
-<p>Also this week: five new model releases, including Domyn-Small, an open-weight reasoning language model, and NASA&#x27;s orbital deployment of Gemma 3 for satellite imagery analysis. Four papers address AI safety and reliability, while two items explore mixture-of-experts model methods.</p>
-<p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
+<p>Anthropic’s latest model, Claude Opus 5, is generating discussion for its improved resistance to prompt injection attacks, as noted in initial evaluations and red-team tests <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[1]</a>. In addition, its release highlights a shift toward optimizing token efficiency and lowering costs rather than solely pursuing maximal capability gains <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[3]</a>. Researchers are also focusing on safety and reliability through the use of AlphaFold to redesign gene-editing proteins, reducing sources of errors in biotechnological applications <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[4]</a>. Meanwhile, ongoing investigations into fine-tuned language models and their deployment show evidence of mismatches between intended behaviors and real-world use, raising questions about unaddressed safety risks <a href="https://arxiv.org/abs/2607.20436">[9]</a>.</p>
+<p>Also this week: five new model releases, including European open-weight reasoning models and expanded voice mode support. Advances in assessment include methods to mitigate hallucinations and studies uncovering principles in computation allocation. Industry voices caution against overregulation of open-weight models, and a guide offers practical advice for tool selection.</p>
+<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 25, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/25/boris-cherny">Quoting Boris Cherny</a>
+        <p class="news-card-summary">Claude Opus 5 shows improved resistance to prompt injection attacks across evaluations and red teaming, according to Anthropic&#x27;s system card.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 24, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5">Introducing Claude Opus 5</a>
+        <p class="news-card-summary">Anthropic released Claude Opus 5, described as approaching frontier intelligence at half the cost of previous top-tier models.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
@@ -925,14 +925,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/fzdusgco73eh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d32d1aaa09ce0461d200358ff5b96cf12e4633d5" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uyz9n2/bonsai_27b_runs_locally_on_an_iphone_a_27b_model">Bonsai 27B runs locally on an iPhone - a 27B model in 3.9GB</a>
-        <p class="news-card-summary">PrismML created Bonsai, a 27-billion-parameter model quantized to 1.125 bits per weight, fitting in 3.9GB while retaining approximately 90 percent of benchmark performance and running on mobile devices.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/Z29wbnZ0ZjFoc2RoMYNmW7XUoGPceguvH8OPb5Eb_TxAIeLh42MnMxNtDYX4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d0c914491c817a040cf9c0ecf6c840d097a47716" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
@@ -970,9 +962,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 7 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
+      <img src="https://i4.ytimg.com/vi/Wf1hgNfGtEs/hqdefault.jpg" alt="Video: Benchmark testing of Claude Opus 5 against competitors" loading="lazy">
+      <span class="video-card-title">Benchmark testing of Claude Opus 5 against competitors</span>
+      <span class="video-card-meta">WorldofAI, July 25, 2026</span>
+      <span class="video-card-desc">Hands-on benchmark testing of Claude Opus 5 against competing models, with reproducible methodology and cost comparison.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=t6uhTLEOpzU" target="_blank" rel="noopener" title="Poolside Laguna S2.1 First Test, A VERY Creative Local Model!">
       <img src="https://i1.ytimg.com/vi/t6uhTLEOpzU/hqdefault.jpg" alt="Video: Testing Poolside Laguna S2.1 local model" loading="lazy">
       <span class="video-card-title">Testing Poolside Laguna S2.1 local model</span>

@@ -66,6 +66,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
+  <img src="https://i4.ytimg.com/vi/Wf1hgNfGtEs/hqdefault.jpg" alt="Video: Benchmark testing of Claude Opus 5 against competitors" loading="lazy">
+  <span class="video-card-title">Benchmark testing of Claude Opus 5 against competitors</span>
+  <span class="video-card-meta">WorldofAI, July 25, 2026</span>
+  <span class="video-card-desc">Hands-on benchmark testing of Claude Opus 5 against competing models, with reproducible methodology and cost comparison.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=t6uhTLEOpzU" target="_blank" rel="noopener" title="Poolside Laguna S2.1 First Test, A VERY Creative Local Model!">
   <img src="https://i1.ytimg.com/vi/t6uhTLEOpzU/hqdefault.jpg" alt="Video: Testing Poolside Laguna S2.1 local model" loading="lazy">
   <span class="video-card-title">Testing Poolside Laguna S2.1 local model</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Understanding the inner thoughts of AI</span>
   <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
   <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=FU0cl9_3DUQ" target="_blank" rel="noopener" title="GPT-5.6 IS HERE! BEST AI Model Ever? Beats Fable, Faster, &amp; Cheaper! (Fully Tested)">
-  <img src="https://i3.ytimg.com/vi/FU0cl9_3DUQ/hqdefault.jpg" alt="Video: Testing GPT-5.6 AI model performance and features" loading="lazy">
-  <span class="video-card-title">Testing GPT-5.6 AI model performance and features</span>
-  <span class="video-card-meta">WorldofAI, July 10, 2026</span>
-  <span class="video-card-desc">Hands-on benchmark comparison of GPT-5.6 against competing models, testing performance, speed, and cost across multiple tasks.</span>
 </a>
 </div>
 
