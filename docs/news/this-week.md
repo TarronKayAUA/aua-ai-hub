@@ -327,9 +327,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -606,13 +606,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Contrastive learning methods identify depression subtypes with distinct treatment responses, offering a data-driven approach to treatment selection.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03050-1">Machine unlearning as a governance imperative for clinical AI</a>
-        <p class="news-card-summary">Machine unlearning techniques offer governance approaches for clinical AI systems to manage data retention and model accountability.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -623,9 +616,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -923,37 +916,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An analysis of China&#x27;s open-weight AI models and their potential effects on capital expenditure and US regulatory response in the context of strategic competition.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/fzdusgco73eh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d32d1aaa09ce0461d200358ff5b96cf12e4633d5" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uyg3za/i_tested_all_llamacpps_speculative_decoding">I tested all llama.cpp&#x27;s speculative decoding methods on Qwen 3.6 27B: MTP ~2.7x, DFlash ~3.7x, n-gram stack ~6x on real coding. Local AI win. My findings on RTX 6000 PRO.</a>
-        <p class="news-card-summary">Benchmarks of speculative decoding methods in llama.cpp show n-gram stacking achieves 6x speedup on coding tasks with Qwen 27B.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/qrorl17ssndh1.png?width=140&amp;height=75&amp;auto=webp&amp;s=ba1cd82947a97771a9e4738d98dc125450b263db" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 16, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uy35n6/mozillas_state_of_open_source_ai_report">Mozilla’s State of Open Source AI Report</a>
-        <p class="news-card-summary">Mozilla released a State of Open Source AI Report surveying the landscape and trends in open source artificial intelligence.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/WG38hVMvNeqHveQUgQ6_mE6AWlldObs0g87kFxfzSXA.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1e41718d1acc71b72caf775fef32aa8ad0dc15a2" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uwhwt8/gemma431bantihal_gemma_steered_to_push_back_on">Gemma-4-31B-AntiHal: Gemma steered to push back on false premises instead of hallucinating, without any impact to benchmark performance</a>
-        <p class="news-card-summary">Interpretability work on Gemma 4 31B steered the model to challenge false premises and hallucinations without degrading benchmark performance.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1uvwbb2/model_add_hy3_hy_v3_support_with_mtp_speculative">model: add Hy3 (hy_v3) support with MTP speculative decoding by satindergrewal · Pull Request #25395 · ggml-org/llama.cpp</a>
-        <p class="news-card-summary">Support for Tencent Hy3 299B mixture of experts model added to llama.cpp with multi-token prediction speculative decoding.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/G2jNnfzK27ZTXrG6Y-0EB93m36H972oatYe_gbB26M0.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=f063c3ac0a0efb096da3e1247c7868728667c94a" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
