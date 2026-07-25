@@ -440,13 +440,18 @@ video_feeds:
   # never from model-assigned labels, which are known to be unreliable for
   # media. Adding a medical channel is one `channels` entry with
   # `group: medical`.
+  # Order flipped 2026-07-25 (owner decision): General AI leads because
+  # its channels post daily, while the medical channels run on seminar
+  # cadence (AIMI posts in symposium bursts, MedAI every few weeks), so
+  # leading with Medical AI showed week-old content first on a page that
+  # refreshes nightly. Freshest section first; medical follows.
   groups:
-    medical:
-      label: Medical AI
-      page_items: 8
     general:
       label: General AI
       page_items: 20
+    medical:
+      label: Medical AI
+      page_items: 8
   channels:
     # Stanford Center for Artificial Intelligence in Medicine and Imaging:
     # seminar and grand-rounds recordings. Channel id from the channel
