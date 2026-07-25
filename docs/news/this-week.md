@@ -13,15 +13,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Analysis of multiple-choice question generation in internal medicine finds that large language models like Claude and Gemini can assist experts with identifying flaws and cognitive levels, but their limited agreement on learning outcomes highlights the need for ongoing expert review <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Deskilling risks posed by AI in interventional pulmonology have prompted specialists to consider mitigation strategies, as shown in an international survey <a href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[3]</a>. Studies comparing multimodal language models with clinicians in radiographic knee osteoarthritis grading report high sensitivity but lower specificity and reproducibility for models <a href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">[4]</a>. Chain-of-thought prompting has also improved performance of language models in evaluating clinical records for undergraduate assessment, suggesting potential workflow benefits for medical faculty <a href="https://mededu.jmir.org/2026/1/e88652">[7]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment, including work on the Brazilian orthopedic surgery board exam and approaches to automated metadata extraction. The section covers attitudes and adoption as well, reflected in studies of medical student concerns and international reviews of barriers in low- and middle-income countries.</p>
+<p>Performance evaluations of large language models are advancing, with comparative studies exploring their accuracy on medical board-style questions and clinical scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[1]</a>. Recent analyses show that models such as Gemini-2.0 and Claude demonstrate moderate to strong alignment with expert judgments in question quality, but their assessment of learning outcomes remains weak-suggesting they may supplement but not fully substitute expert review <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[3]</a>. There is continued investigation into the models’ specificity and reproducibility compared to clinicians when interpreting radiographic images <a href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">[6]</a>. On the educational front, chain-of-thought prompting is proving beneficial for assessments of clinical records, improving model reliability in undergraduate medical education <a href="https://mededu.jmir.org/2026/1/e88652">[9]</a>. Faculty and student attitudes reflect both recognition of AI’s potential and ongoing concerns about training, ethics, and job displacement.</p>
+<p>Also this week: the section includes eight new model releases and five papers on assessment and feedback. Other topics cover international perspectives on AI-induced deskilling among pulmonologists, barriers to AI adoption in low- and middle-income countries, and the effectiveness of generative AI in long-term care.</p>
 <p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">Can artificial intelligence pass the test? Evaluating chatbot scores on pediatric gastroenterology board-style questions</a>
+        <p class="news-card-summary">Study evaluates large language model performance on pediatric gastroenterology board-style examination questions.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">Artificial Intelligence Performance Under Different Conditions in Answering China&#x27;s Standardized Training Examination for Resident Physician in Radiology: A Comparative Analysis</a>
+        <p class="news-card-summary">Comparative analysis shows Gemini-2.0 achieved highest accuracy on China&#x27;s radiology resident examination, though self-doubt prompting did not improve LLM performance.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
@@ -289,20 +303,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Integration of artificial intelligence with gamification in medical education offers potential to personalize learning and improve engagement, though empirical evidence of combined effects remains limited.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Exploring the role of generative artificial intelligence in enhancing clinical skills training: A bibliometric analysis</a>
-        <p class="news-card-summary">Bibliometric analysis shows generative AI in clinical skills training is rapidly expanding with growing attention to language models and ethical issues.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&amp;ff=20260718095150&amp;v=2.20.0">Attitudes, usage patterns, and learning interests of medical students toward DeepSeek in medical education: A cross-sectional survey</a>
-        <p class="news-card-summary">Survey of medical students&#x27; attitudes, usage patterns, and learning interests regarding DeepSeek in medical education.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 18, 2026</span></div>
@@ -327,9 +327,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -598,14 +598,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03011-8">Brain contrastive modeling reveals depression subtypes with distinct treatment response and progression</a>
         <p class="news-card-summary">Contrastive learning methods identify depression subtypes with distinct treatment responses, offering a data-driven approach to treatment selection.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 18, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse">Will AI fix prior authorization, or make it worse?</a>
-        <p class="news-card-summary">Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264310821-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">

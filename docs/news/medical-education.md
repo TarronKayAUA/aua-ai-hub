@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Analysis of multiple-choice question generation in internal medicine finds that large language models like Claude and Gemini can assist experts with identifying flaws and cognitive levels, but their limited agreement on learning outcomes highlights the need for ongoing expert review <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Deskilling risks posed by AI in interventional pulmonology have prompted specialists to consider mitigation strategies, as shown in an international survey <a href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[3]</a>. Studies comparing multimodal language models with clinicians in radiographic knee osteoarthritis grading report high sensitivity but lower specificity and reproducibility for models <a href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">[4]</a>. Chain-of-thought prompting has also improved performance of language models in evaluating clinical records for undergraduate assessment, suggesting potential workflow benefits for medical faculty <a href="https://mededu.jmir.org/2026/1/e88652">[7]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment, including work on the Brazilian orthopedic surgery board exam and approaches to automated metadata extraction. The section covers attitudes and adoption as well, reflected in studies of medical student concerns and international reviews of barriers in low- and middle-income countries.</p>
+<p>Performance evaluations of large language models are advancing, with comparative studies exploring their accuracy on medical board-style questions and clinical scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[1]</a>. Recent analyses show that models such as Gemini-2.0 and Claude demonstrate moderate to strong alignment with expert judgments in question quality, but their assessment of learning outcomes remains weak-suggesting they may supplement but not fully substitute expert review <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[3]</a>. There is continued investigation into the models’ specificity and reproducibility compared to clinicians when interpreting radiographic images <a href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">[6]</a>. On the educational front, chain-of-thought prompting is proving beneficial for assessments of clinical records, improving model reliability in undergraduate medical education <a href="https://mededu.jmir.org/2026/1/e88652">[9]</a>. Faculty and student attitudes reflect both recognition of AI’s potential and ongoing concerns about training, ethics, and job displacement.</p>
+<p>Also this week: the section includes eight new model releases and five papers on assessment and feedback. Other topics cover international perspectives on AI-induced deskilling among pulmonologists, barriers to AI adoption in low- and middle-income countries, and the effectiveness of generative AI in long-term care.</p>
 <p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">Can artificial intelligence pass the test? Evaluating chatbot scores on pediatric gastroenterology board-style questions</a>
+    <p class="news-card-summary">Study evaluates large language model performance on pediatric gastroenterology board-style examination questions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">Artificial Intelligence Performance Under Different Conditions in Answering China&#x27;s Standardized Training Examination for Resident Physician in Radiology: A Comparative Analysis</a>
+    <p class="news-card-summary">Comparative analysis shows Gemini-2.0 achieved highest accuracy on China&#x27;s radiology resident examination, though self-doubt prompting did not improve LLM performance.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491933?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Integrating Artificial Intelligence into Medical Education in LMICs: A Narrative Review</a>
     <p class="news-card-summary">Narrative review examines artificial intelligence integration in medical education across low- and middle-income countries, with focus on sub-Saharan Africa and barriers to adoption.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491928?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">USE OF ARTIFICIAL INTELLIGENCE FOR THE EVALUATION OF THE ENTRANCE EXAMINATION OF THE BRAZILIAN SOCIETY OF SHOULDER AND ELBOW SURGERY</a>
-    <p class="news-card-summary">Comparative study evaluates multiple large language models on Brazilian orthopedic surgery board exam, with ChatGPT-o1-pro exceeding human performance and others matching or lagging.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491647?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Will artificial intelligence change medical life? Bridging the gap between innovation and medical student adoption: a cross-sectional study among university medical students</a>
-    <p class="news-card-summary">Cross-sectional study finds medical students show positive attitudes toward artificial intelligence but lack formal training, with concerns about ethics and human interaction.</p>
   </div>
 </div>
 </div>
