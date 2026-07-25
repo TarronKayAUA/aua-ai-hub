@@ -10,59 +10,6 @@ Recent videos from a curated set of channels covering artificial intelligence de
 
 Cards link to YouTube; nothing plays on this site.
 
-## Medical AI
-
-<div class="video-grid">
-<a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Panel discussion on balancing publication-focused versus patient-outcome-focused applications of AI in pediatric medicine.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=WiK924ZLarE" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg" alt="Video: Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26" loading="lazy">
-  <span class="video-card-title">Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Lightning talks on AI applications in pediatric radiology and diagnostic imaging, with emphasis on sharper image analysis and clinical insights.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=yEXbXbESX4w" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg" alt="Video: Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26" loading="lazy">
-  <span class="video-card-title">Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, addressing safety and efficacy considerations.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=IbJFb6Q2GD0" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg" alt="Video: From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026" loading="lazy">
-  <span class="video-card-title">From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Discussion of pediatric data fragmentation challenges and strategies for organizing data infrastructure to support pediatric AI development.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=7nwO85lEYFw" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg" alt="Video: The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026" loading="lazy">
-  <span class="video-card-title">The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Keynote on the long history and current trajectory of AI adoption in pediatric medicine, featuring practitioners from academia and digital health.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=m1nAWwAL4FI" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/m1nAWwAL4FI/hqdefault.jpg" alt="Video: Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Panel on regulatory pathways, risk assessment, and organizational decision-making in deploying health AI systems in clinical practice.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=VamomgkqsuE" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/VamomgkqsuE/hqdefault.jpg" alt="Video: Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Panel on building and scaling AI products for healthcare markets, covering economic, operational, and regulatory challenges in practice.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=zrM2gAjXLx8" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/zrM2gAjXLx8/hqdefault.jpg" alt="Video: Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Real-world examples of AI systems integrated into clinical workflows, with focus on human-AI interaction design and clinical acceptance drivers.</span>
-</a>
-</div>
-
 ## General AI
 
 <div class="video-grid">
@@ -113,6 +60,12 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>
   <span class="video-card-meta">WorldofAI, July 20, 2026</span>
   <span class="video-card-desc">Hands-on benchmark testing of the Qwen 3.8 Max model against competitors, with reproducible methodology shared for independent verification.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
+  <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">
+  <span class="video-card-title">Kimi K3 and Fable model comparison</span>
+  <span class="video-card-meta">Wes Roth, July 18, 2026</span>
+  <span class="video-card-desc">Comparison of Kimi K3 and Fable models covering recent developments in large language models.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=LEnYkEIOhIY" target="_blank" rel="noopener" title="Kimi K3 IS INSANE! Best Open Model EVER That BEATS FABLE 5 &amp; GPT-5.6! (Fully Tested)">
   <img src="https://i1.ytimg.com/vi/LEnYkEIOhIY/hqdefault.jpg" alt="Video: Testing Kimi K3 open model against GPT and other frontier systems" loading="lazy">
@@ -180,11 +133,58 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">IBM Technology, July 12, 2026</span>
   <span class="video-card-desc">IBM explanation of AI governance and decision management practices to ensure responsible deployment and reduce model errors.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=1DtMiRKg-cs" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg" alt="Video: Understanding the inner thoughts of AI" loading="lazy">
-  <span class="video-card-title">Understanding the inner thoughts of AI</span>
-  <span class="video-card-meta">Google DeepMind, July 10, 2026</span>
-  <span class="video-card-desc">A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.</span>
+</div>
+
+## Medical AI
+
+<div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26" loading="lazy">
+  <span class="video-card-title">AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Panel discussion on balancing publication-focused versus patient-outcome-focused applications of AI in pediatric medicine.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=WiK924ZLarE" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg" alt="Video: Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26" loading="lazy">
+  <span class="video-card-title">Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Lightning talks on AI applications in pediatric radiology and diagnostic imaging, with emphasis on sharper image analysis and clinical insights.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=yEXbXbESX4w" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg" alt="Video: Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26" loading="lazy">
+  <span class="video-card-title">Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, addressing safety and efficacy considerations.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=IbJFb6Q2GD0" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg" alt="Video: From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026" loading="lazy">
+  <span class="video-card-title">From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Discussion of pediatric data fragmentation challenges and strategies for organizing data infrastructure to support pediatric AI development.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=7nwO85lEYFw" target="_blank" rel="noopener">
+  <img src="https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg" alt="Video: The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026" loading="lazy">
+  <span class="video-card-title">The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Keynote on the long history and current trajectory of AI adoption in pediatric medicine, featuring practitioners from academia and digital health.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=m1nAWwAL4FI" target="_blank" rel="noopener">
+  <img src="https://i2.ytimg.com/vi/m1nAWwAL4FI/hqdefault.jpg" alt="Video: Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26" loading="lazy">
+  <span class="video-card-title">Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Panel on regulatory pathways, risk assessment, and organizational decision-making in deploying health AI systems in clinical practice.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=VamomgkqsuE" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/VamomgkqsuE/hqdefault.jpg" alt="Video: Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26" loading="lazy">
+  <span class="video-card-title">Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Panel on building and scaling AI products for healthcare markets, covering economic, operational, and regulatory challenges in practice.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=zrM2gAjXLx8" target="_blank" rel="noopener">
+  <img src="https://i3.ytimg.com/vi/zrM2gAjXLx8/hqdefault.jpg" alt="Video: Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26" loading="lazy">
+  <span class="video-card-title">Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26</span>
+  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+  <span class="video-card-desc">Real-world examples of AI systems integrated into clinical workflows, with focus on human-AI interaction design and clinical acceptance drivers.</span>
 </a>
 </div>
 

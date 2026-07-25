@@ -322,14 +322,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new foundation model for clinical analysis with multimodal reasoning, QoQ-Med3, now supports integration of text, imaging, and structured data to assist medical decision making <a href="https://www.nature.com/articles/s41746-026-02945-3">[1]</a>. AI-based clinical decision support systems are advancing diagnostic workflows, such as using biomarkers to rule out negative lupus anticoagulant cases early <a href="https://www.nature.com/articles/s41746-026-03012-7">[2]</a>. Deep learning continues to improve interpretation of diagnostic data, seen in wearable ECG monitoring for atrial fibrillation screening <a href="https://medinform.jmir.org/2026/1/e91960">[4]</a>. Additionally, interpretable deep learning models are being used to distinguish similar skin conditions with feature visualization, promoting clinical transparency <a href="https://medinform.jmir.org/2026/1/e81942">[5]</a>. In medical documentation, rapid deployment of digital systems has replaced paper-based workflows, as with the Israeli Defense Forces&#x27; digital casualty card during armed conflict <a href="https://medinform.jmir.org/2026/1/e79808">[6]</a>.</p>
-<p>Also this week: the section includes eight new model releases, five papers on assessment and safety of AI systems, and several studies in imaging-including a randomized multicenter trial of retinal disease diagnosis and early detection of Alzheimer’s from blood-based biomarkers. Model-assisted evaluation and quality assurance tools for therapeutic AI are also featured.</p>
+<p>A new multimodal reasoning foundation model has been introduced to support clinical analysis across text, imaging, and structured data, potentially improving diagnostic workflows and decision support capabilities in medical practice <a href="https://www.nature.com/articles/s41746-026-02945-3">[1]</a>. Advances in disease screening are evident with interpretable artificial intelligence models for real-time leukemia screening leveraging routine blood tests in multicenter settings <a href="https://www.nature.com/articles/s41746-026-03016-3">[3]</a>, and deep learning algorithms applied to wearable ECG data for detecting atrial fibrillation in real-world scenarios <a href="https://medinform.jmir.org/2026/1/e91960">[5]</a>. Clinical transparency is further emphasized with deep learning approaches that enable feature visualization in differentiating skin disorders like vitiligo and postinflammatory hypopigmentation <a href="https://medinform.jmir.org/2026/1/e81942">[6]</a>. Additionally, long-standing challenges in early exclusion of negative cases in lupus anticoagulant diagnostics are being addressed by biomarker-driven decision support systems <a href="https://www.nature.com/articles/s41746-026-03012-7">[2]</a>.</p>
+<p>Also this week: the section features eight new model releases and several peer-reviewed papers on assessment, clinical decision support, patient-facing tools, and digital documentation in medical and prehospital care. Notable additions include a digital casualty card system deployed by the Israeli Defense Forces and a blood-based RNA marker for early Alzheimer&#x27;s detection.</p>
 <p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -343,6 +343,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03012-7">Digital decision support using a phospholipid-dependent biomarker for early exclusion of negative cases in lupus anticoagulant diagnostics</a>
         <p class="news-card-summary">Digital decision support system uses phospholipid-dependent biomarker analysis to exclude negative lupus anticoagulant cases early in diagnostic workflow.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03016-3">An interpretable artificial intelligence model for real-time leukemia screening via routine blood tests across multicenter cohorts</a>
+        <p class="news-card-summary">Multicenter study develops an interpretable AI model for leukemia screening using routine blood test results in real-time clinical settings.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -597,13 +604,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03011-8">Brain contrastive modeling reveals depression subtypes with distinct treatment response and progression</a>
         <p class="news-card-summary">Contrastive learning methods identify depression subtypes with distinct treatment responses, offering a data-driven approach to treatment selection.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03004-7">Research landscape of robot-assisted reconstructive and plastic surgery</a>
-        <p class="news-card-summary">Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -961,7 +961,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
@@ -1011,6 +1011,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>
       <span class="video-card-meta">WorldofAI, July 20, 2026</span>
       <span class="video-card-desc">Hands-on benchmark testing of the Qwen 3.8 Max model against competitors, with reproducible methodology shared for independent verification.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
+      <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">
+      <span class="video-card-title">Kimi K3 and Fable model comparison</span>
+      <span class="video-card-meta">Wes Roth, July 18, 2026</span>
+      <span class="video-card-desc">Comparison of Kimi K3 and Fable models covering recent developments in large language models.</span>
     </a>
     </div>
 
