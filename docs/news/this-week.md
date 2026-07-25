@@ -322,15 +322,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Early detection and clinical transparency in diagnostics remain key focuses, with an interpretable deep learning model demonstrating reliable differentiation between vitiligo and postinflammatory hypopigmentation alongside clear feature visualization for clinicians <a href="https://medinform.jmir.org/2026/1/e81942">[3]</a>. A randomized multicenter trial has validated an AI-assisted clinician support system that integrates multimodal imaging and clinical data, achieving notable accuracy for inherited retinal disease diagnosis <a href="https://www.nature.com/articles/s41591-026-04545-w">[7]</a>. Blood-based circular RNA signatures are emerging as accurate tools for early detection of Alzheimer’s disease, potentially predicting symptom onset before it is clinically visible <a href="https://www.nature.com/articles/s41591-026-04563-8">[12]</a>. Meanwhile, the transition from paper to digital medical documentation in conflict settings has been realized by the Israeli Defense Forces, rapidly deploying a digital casualty card system to improve prehospital care logistics <a href="https://medinform.jmir.org/2026/1/e79808">[4]</a>. Quality assurance frameworks for therapeutic AI systems are also advancing, with pilot studies introducing new methods for evaluating chatbots in mental health <a href="https://medinform.jmir.org/2026/1/e87887">[9]</a>.</p>
-<p>Also this week: safety and evaluation featured in five papers, including studies of human oversight, risk assessment, and information quality in digital medical content. Four new releases cover clinical decision support, including evaluation platforms and prediction of cardiovascular events. Four studies address imaging-focused diagnostics, and a new system monitors fidelity in lay-led mental health sessions in Kenya.</p>
-<p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the source items.</p>
+<p>A new foundation model for clinical analysis with multimodal reasoning, QoQ-Med3, now supports integration of text, imaging, and structured data to assist medical decision making <a href="https://www.nature.com/articles/s41746-026-02945-3">[1]</a>. AI-based clinical decision support systems are advancing diagnostic workflows, such as using biomarkers to rule out negative lupus anticoagulant cases early <a href="https://www.nature.com/articles/s41746-026-03012-7">[2]</a>. Deep learning continues to improve interpretation of diagnostic data, seen in wearable ECG monitoring for atrial fibrillation screening <a href="https://medinform.jmir.org/2026/1/e91960">[4]</a>. Additionally, interpretable deep learning models are being used to distinguish similar skin conditions with feature visualization, promoting clinical transparency <a href="https://medinform.jmir.org/2026/1/e81942">[5]</a>. In medical documentation, rapid deployment of digital systems has replaced paper-based workflows, as with the Israeli Defense Forces&#x27; digital casualty card during armed conflict <a href="https://medinform.jmir.org/2026/1/e79808">[6]</a>.</p>
+<p>Also this week: the section includes eight new model releases, five papers on assessment and safety of AI systems, and several studies in imaging-including a randomized multicenter trial of retinal disease diagnosis and early detection of Alzheimer’s from blood-based biomarkers. Model-assisted evaluation and quality assurance tools for therapeutic AI are also featured.</p>
+<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02945-3">QoQ-Med3: a multimodal reasoning foundation model for clinical analysis</a>
+        <p class="news-card-summary">QoQ-Med3 is a multimodal reasoning foundation model designed to support clinical analysis across text, imaging, and structured data.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03012-7">Digital decision support using a phospholipid-dependent biomarker for early exclusion of negative cases in lupus anticoagulant diagnostics</a>
+        <p class="news-card-summary">Digital decision support system uses phospholipid-dependent biomarker analysis to exclude negative lupus anticoagulant cases early in diagnostic workflow.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
@@ -592,13 +606,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264310821-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03034-1">Reinforcement learning for treatment decision-making in sepsis: a scoping review</a>
-        <p class="news-card-summary">Scoping review examines reinforcement learning methods for sepsis treatment decision-making, synthesizing evidence on machine learning approaches to optimize clinical interventions.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
