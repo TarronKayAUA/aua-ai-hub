@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Recent research highlights the integration and evaluation of artificial intelligence in medical assessment and education. Comparative studies show that large language models can support the review process of multiple-choice questions in internal medicine but are not yet capable of replacing expert oversight due to gaps in aligning with learning outcomes <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. The use of chain-of-thought prompting has been found to improve model performance in evaluating clinical records for undergraduate assessment, suggesting advancements in model-guided grading <a href="https://mededu.jmir.org/2026/1/e88652">[5]</a>. In pediatric emergency medicine, a perspective discusses the role of AI in clinical decision support, stakeholder engagement, and medical education, emphasizing the importance of child-centered approaches <a href="https://pubmed.ncbi.nlm.nih.gov/42496469?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[2]</a>. Meanwhile, concerns about AI-induced deskilling in interventional pulmonology have prompted international surveys examining risk perception and strategies for mitigation among practitioners <a href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[3]</a>.</p>
-<p>Also this week: the section features eight new model releases and five papers on assessment, including studies on automated generation of board exam questions and the reliability of model-driven assessment. Two studies focus on medical student attitudes toward AI, noting gaps in formal training and ongoing ethical concerns.</p>
-<p class="section-brief-date">The picture as of July 24, 2026; numbered links go to the items below.</p>
+<p>Analysis of multiple-choice question generation in internal medicine finds that large language models like Claude and Gemini can assist experts with identifying flaws and cognitive levels, but their limited agreement on learning outcomes highlights the need for ongoing expert review <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[1]</a>. Deskilling risks posed by AI in interventional pulmonology have prompted specialists to consider mitigation strategies, as shown in an international survey <a href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[3]</a>. Studies comparing multimodal language models with clinicians in radiographic knee osteoarthritis grading report high sensitivity but lower specificity and reproducibility for models <a href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">[4]</a>. Chain-of-thought prompting has also improved performance of language models in evaluating clinical records for undergraduate assessment, suggesting potential workflow benefits for medical faculty <a href="https://mededu.jmir.org/2026/1/e88652">[7]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment, including work on the Brazilian orthopedic surgery board exam and approaches to automated metadata extraction. The section covers attitudes and adoption as well, reflected in studies of medical student concerns and international reviews of barriers in low- and middle-income countries.</p>
+<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -40,6 +40,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">Artificial Intelligence-Induced Deskilling in Interventional Pulmonology: An International Cross-Sectional Survey on Risk Perception and Mitigation Strategies</a>
     <p class="news-card-summary">International survey of interventional pulmonologists examines perceptions of AI-induced deskilling and mitigation strategies in their specialty.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">Performance of multimodal large language models versus clinicians for radiographic knee osteoarthritis grading: A multiobserver study</a>
+    <p class="news-card-summary">Multimodal large language models including ChatGPT-5.0 show high sensitivity but inferior specificity and reproducibility compared to clinicians for knee osteoarthritis grading on radiographs.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42497596?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">Applications of generative artificial intelligence in long-term care services: A systematic review of the evidence on efficacy for improving resident health related quality of life</a>
+    <p class="news-card-summary">Systematic review finds generative AI shows promise for quality and personalization in long-term care but lacks evidence on effectiveness, safety, and cost-effectiveness needed for responsible deployment.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491647?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Will artificial intelligence change medical life? Bridging the gap between innovation and medical student adoption: a cross-sectional study among university medical students</a>
     <p class="news-card-summary">Cross-sectional study finds medical students show positive attitudes toward artificial intelligence but lack formal training, with concerns about ethics and human interaction.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491368?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Application effect and teaching evaluation of case-based learning combined with ChatGPT in ophthalmology clinical teaching</a>
-    <p class="news-card-summary">Case-based learning combined with ChatGPT significantly improved learning outcomes and satisfaction in ophthalmology clinical education, especially for lower-performing students.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 22, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91626">Principles for Responsible AI in Health Professions Education, Research, and Care: Health CARE-AI (Contextual, Accountable, Responsible, and Equitable Artificial Intelligence) Framework Delphi Consensus Study</a>
-    <p class="news-card-summary">A Delphi consensus framework establishes principles for contextual, accountable, responsible, and equitable artificial intelligence in health professions education, research, and clinical practice.</p>
   </div>
 </div>
 </div>
