@@ -23573,6 +23573,20 @@
    "first_seen": "2026-07-26T03:57:38.550431+00:00",
    "kept": false,
    "reason": "speculation and rumor without substantive underlying events; titles name unconfirmed models and products"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6dy7w/great_arguments_by_member_of_technical_staff_at",
+   "title_hash": "51c9bb49cdf2ee5f0c0386fc36bf8e91",
+   "first_seen": "2026-07-26T07:05:43.870651+00:00",
+   "kept": false,
+   "reason": "forum discussion of a tweet; lacks substance for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7gUV_Wil3Jo",
+   "title_hash": "ca6b1ab9c2ebbc37213290436b5bead9",
+   "first_seen": "2026-07-26T07:05:43.870651+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; simulated world environment has no relevance to medical education or clinical practice"
   }
  ],
  "digests": [
