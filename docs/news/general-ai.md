@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic’s latest model, Claude Opus 5, is generating discussion for its improved resistance to prompt injection attacks, as noted in initial evaluations and red-team tests <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[1]</a>. In addition, its release highlights a shift toward optimizing token efficiency and lowering costs rather than solely pursuing maximal capability gains <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[3]</a>. Researchers are also focusing on safety and reliability through the use of AlphaFold to redesign gene-editing proteins, reducing sources of errors in biotechnological applications <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[4]</a>. Meanwhile, ongoing investigations into fine-tuned language models and their deployment show evidence of mismatches between intended behaviors and real-world use, raising questions about unaddressed safety risks <a href="https://arxiv.org/abs/2607.20436">[9]</a>.</p>
-<p>Also this week: five new model releases, including European open-weight reasoning models and expanded voice mode support. Advances in assessment include methods to mitigate hallucinations and studies uncovering principles in computation allocation. Industry voices caution against overregulation of open-weight models, and a guide offers practical advice for tool selection.</p>
-<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the items below.</p>
+<p>The release of Claude Opus 5 has driven renewed attention to frontier model capabilities and cost optimization, with multiple sources highlighting its token efficiency as a substantial improvement over previous versions, although absolute performance gains remain more incremental <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[4]</a>. Anthropic has published updated guidance on prompt engineering for Claude 5-generation models, emphasizing new context window strategies for optimized use <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">[1]</a>. Safety remains a focus, as evaluations of Claude Opus 5 report improved resistance to prompt injection attacks, backed by red teaming and system card analysis <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[2]</a>. Research on mixture-of-experts models continues to shed light on mitigation strategies for hallucinations, including expert-aware decoding methods that enable improved reliability in diverse tasks <a href="https://arxiv.org/abs/2607.20426">[8]</a>.</p>
+<p>Also this week: eight new model releases and four papers on safety and reliability expand the section’s coverage, including Domyn-Small, a large European reasoning model, and fine-tuning studies that highlight deployment risks. One industry policy item addresses concerns about overregulation of open-weight AI models.</p>
+<p class="section-brief-date">The picture as of July 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 25, 2026</span></div>
+    <a class="news-card-title" href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">The new rules of context engineering for Claude 5 generation models</a>
+    <p class="news-card-summary">Anthropic published guidance on optimizing prompt engineering for Claude 5 generation models, including new context window strategies.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a639c6b2e881afef80764c6_og_the-new-rules-of-context-engineering-for-claude-5-generation-models.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 25, 2026</span></div>
@@ -125,13 +133,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Practical guide from established expert on selecting appropriate AI tools for different tasks and use cases.</p>
   </div>
   <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!3bzW!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd28dff26-3041-4f2d-afaf-2011b1c59d39_1672x941.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident">AI arms race in line for a reckoning after OpenAI hacking incident</a>
-    <p class="news-card-summary">Analysis of security incident at OpenAI and implications of aggressive model training practices for safety risks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/05/AI-chatbot-icons-on-smartphone-1-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

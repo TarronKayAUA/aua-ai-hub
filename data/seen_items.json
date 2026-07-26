@@ -23510,6 +23510,69 @@
    "first_seen": "2026-07-25T17:17:41.722555+00:00",
    "kept": false,
    "reason": "generic news roundup with boilerplate description and no substantive content summary"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/25/ruff",
+   "title_hash": "f0f8a04b1000585d2a3bd803c1488d18",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/andrew-foy-says-there-is-efficacy",
+   "title_hash": "e8408ad4794ecbf88b9585d9fcdf6706",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+   "title_hash": "da5fed8900ee54d90efadbacde98299a",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": true,
+   "title": "The new rules of context engineering for Claude 5 generation models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-25T20:42:35+00:00",
+   "summary": "Anthropic published guidance on optimizing prompt engineering for Claude 5 generation models, including new context window strategies.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a639c6b2e881afef80764c6_og_the-new-rules-of-context-engineering-for-claude-5-generation-models.jpg",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.debian.org/vote/2026/vote_002",
+   "title_hash": "4e7e6483b3255a0a51c3019384752592",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://github.com/slvDev/esp32-ai",
+   "title_hash": "d561b1ee33f3dcfa956b1f5b6902641e",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v5ve6v/i_released_inflect_v2_two_ultratiny_complete_tts",
+   "title_hash": "9529ea9b3e538deea6a79c4fbed69e61",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://shukla.io/blog/2026-07/cccx.html",
+   "title_hash": "2be46346a8e938d0a7a6fbf60caacbd6",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fMaPaK4gcNE",
+   "title_hash": "4ef1f439fcba82ed276a7e54728c8686",
+   "first_seen": "2026-07-26T03:57:38.550431+00:00",
+   "kept": false,
+   "reason": "speculation and rumor without substantive underlying events; titles name unconfirmed models and products"
   }
  ],
  "digests": [
@@ -23663,9 +23726,9 @@
    "date": "July 25, 2026"
   },
   "general_ai": {
-   "text": "Anthropic’s latest model, Claude Opus 5, is generating discussion for its improved resistance to prompt injection attacks, as noted in initial evaluations and red-team tests <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[1]</a>. In addition, its release highlights a shift toward optimizing token efficiency and lowering costs rather than solely pursuing maximal capability gains <a href=\"https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap\">[3]</a>. Researchers are also focusing on safety and reliability through the use of AlphaFold to redesign gene-editing proteins, reducing sources of errors in biotechnological applications <a href=\"https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer\">[4]</a>. Meanwhile, ongoing investigations into fine-tuned language models and their deployment show evidence of mismatches between intended behaviors and real-world use, raising questions about unaddressed safety risks <a href=\"https://arxiv.org/abs/2607.20436\">[9]</a>.\n\nAlso this week: five new model releases, including European open-weight reasoning models and expanded voice mode support. Advances in assessment include methods to mitigate hallucinations and studies uncovering principles in computation allocation. Industry voices caution against overregulation of open-weight models, and a guide offers practical advice for tool selection.",
-   "hash": "265db0600336addc",
-   "date": "July 25, 2026"
+   "text": "The release of Claude Opus 5 has driven renewed attention to frontier model capabilities and cost optimization, with multiple sources highlighting its token efficiency as a substantial improvement over previous versions, although absolute performance gains remain more incremental <a href=\"https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap\">[4]</a>. Anthropic has published updated guidance on prompt engineering for Claude 5-generation models, emphasizing new context window strategies for optimized use <a href=\"https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models\">[1]</a>. Safety remains a focus, as evaluations of Claude Opus 5 report improved resistance to prompt injection attacks, backed by red teaming and system card analysis <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[2]</a>. Research on mixture-of-experts models continues to shed light on mitigation strategies for hallucinations, including expert-aware decoding methods that enable improved reliability in diverse tasks <a href=\"https://arxiv.org/abs/2607.20426\">[8]</a>.\n\nAlso this week: eight new model releases and four papers on safety and reliability expand the section’s coverage, including Domyn-Small, a large European reasoning model, and fine-tuning studies that highlight deployment risks. One industry policy item addresses concerns about overregulation of open-weight AI models.",
+   "hash": "335452e30540c790",
+   "date": "July 26, 2026"
   }
  },
  "opportunity_snapshot": {
