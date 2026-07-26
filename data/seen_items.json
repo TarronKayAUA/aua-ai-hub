@@ -23622,6 +23622,13 @@
    "first_seen": "2026-07-26T13:59:11.490585+00:00",
    "kept": false,
    "reason": "promotional episode for a product launch (AI Summer Adventure)"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v72jft/ceo_of_hugging_face_in_the_spirit_of_transparency",
+   "title_hash": "936cc22d5b5411bc13b5794386f1e71e",
+   "first_seen": "2026-07-26T17:17:36.513677+00:00",
+   "kept": false,
+   "reason": "incomplete candidate with truncated summary; cannot assess full content"
   }
  ],
  "digests": [
