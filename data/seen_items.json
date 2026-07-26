@@ -23594,6 +23594,34 @@
    "first_seen": "2026-07-26T10:13:44.721207+00:00",
    "kept": false,
    "reason": "personnel gossip without confirmed news value"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-in-robotics",
+   "title_hash": "daeb8afcc9a48298fba38ee45d71bc87",
+   "first_seen": "2026-07-26T13:59:11.490585+00:00",
+   "kept": false,
+   "reason": "robotics and optical hardware engineering, not artificial intelligence development or capability relevant to this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6hosb/seriously_what_do_you_do_with_them",
+   "title_hash": "ac4e72912989c75fe0f91b4aec8e434b",
+   "first_seen": "2026-07-26T13:59:11.490585+00:00",
+   "kept": false,
+   "reason": "community discussion thread with no news or analysis, off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=l-QPwk_f4eE",
+   "title_hash": "3564f0b07d2bd0033ea0fb67b5cd19a0",
+   "first_seen": "2026-07-26T13:59:11.490585+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Get-the-Most-from-AI-This-Summer-e3migrs",
+   "title_hash": "60b32c8706870061b49f9e9819a2a697",
+   "first_seen": "2026-07-26T13:59:11.490585+00:00",
+   "kept": false,
+   "reason": "promotional episode for a product launch (AI Summer Adventure)"
   }
  ],
  "digests": [
