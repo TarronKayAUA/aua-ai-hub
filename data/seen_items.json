@@ -23629,6 +23629,20 @@
    "first_seen": "2026-07-26T17:17:36.513677+00:00",
    "kept": false,
    "reason": "incomplete candidate with truncated summary; cannot assess full content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/26/relay-market",
+   "title_hash": "ea545953f5e0aee4a11d210dd943d476",
+   "first_seen": "2026-07-26T21:12:51.568081+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns cryptocurrency and fraud rather than AI capabilities or medical applications"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v74j62/sources_openai_and_anthropic_quietly_lobby",
+   "title_hash": "9a252f14ca30cc6027e9ce72db93a1c3",
+   "first_seen": "2026-07-26T21:12:51.568081+00:00",
+   "kept": false,
+   "reason": "forum gossip and unverified lobbying claims; does not meet the bar for substantive policy news"
   }
  ],
  "digests": [

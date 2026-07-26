@@ -581,9 +581,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -873,14 +873,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">HuggingFace reported a production security incident driven end-to-end by an autonomous AI agent system, detected and analyzed primarily with AI-assisted methods.</p>
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/tLa80cLashFk8b1qvSyhZgFagKqpQuDcINxc0lC5Ebw.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6fe429dfc13f9591a4f1976d5a7ce567c412231c" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 19, 2026</span></div>
-        <a class="news-card-title" href="https://github.com/openai/codex/pull/33972/files">OpenAI reduces Codex Model Context Size from 372k to 272k</a>
-        <p class="news-card-summary">OpenAI reduced the maximum context window for the Codex model from 372k to 272k tokens.</p>
-      </div>
-      <img class="news-card-thumb" src="https://avatars.githubusercontent.com/u/244841968?s=400&amp;v=4" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
