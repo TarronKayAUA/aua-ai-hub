@@ -2,6 +2,6 @@
 
 - [Scaling Native Multimodal Pre-Training From Scratch](https://arxiv.org/abs/2607.22043) (arXiv cs.CL, July 27, 2026)
 - [From Isolated Tasks to Structured Capabilities: A Multilayer Taxonomy for Large Language Models](https://arxiv.org/abs/2607.22182) (arXiv cs.CL, July 27, 2026)
+- [Navigating AI with pedagogical purpose: Toward an anatomy-centered framework for AI-enhanced learning](https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&ff=20260727035403&v=2.20.0) (PubMed AI in medical education, July 26, 2026)
 - [The new rules of context engineering for Claude 5 generation models](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models) (Hacker News (LLM, 100+ points), July 25, 2026)
 - [Can artificial intelligence pass the test? Evaluating chatbot scores on pediatric gastroenterology board-style questions](https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&ff=20260725100347&v=2.20.0) (PubMed AI in medical education, July 25, 2026)
-- [Artificial Intelligence Performance Under Different Conditions in Answering China's Standardized Training Examination for Resident Physician in Radiology: A Comparative Analysis](https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&ff=20260725100347&v=2.20.0) (PubMed AI in medical education, July 25, 2026)

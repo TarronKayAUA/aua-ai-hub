@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Performance evaluations of large language models are advancing, with comparative studies exploring their accuracy on medical board-style questions and clinical scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[1]</a>. Recent analyses show that models such as Gemini-2.0 and Claude demonstrate moderate to strong alignment with expert judgments in question quality, but their assessment of learning outcomes remains weak-suggesting they may supplement but not fully substitute expert review <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[3]</a>. There is continued investigation into the models’ specificity and reproducibility compared to clinicians when interpreting radiographic images <a href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">[6]</a>. On the educational front, chain-of-thought prompting is proving beneficial for assessments of clinical records, improving model reliability in undergraduate medical education <a href="https://mededu.jmir.org/2026/1/e88652">[9]</a>. Faculty and student attitudes reflect both recognition of AI’s potential and ongoing concerns about training, ethics, and job displacement.</p>
-<p>Also this week: the section includes eight new model releases and five papers on assessment and feedback. Other topics cover international perspectives on AI-induced deskilling among pulmonologists, barriers to AI adoption in low- and middle-income countries, and the effectiveness of generative AI in long-term care.</p>
-<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
+<p>A peer-reviewed framework outlines how artificial intelligence can enhance anatomy education, focusing on personalized learning and pedagogical intent within clinical curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0">[1]</a>. At the same time, comparative analyses continue to benchmark large language model performance on medical board-style exams-recent studies show these models, while improving, remain inconsistent across specialties and types of assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[3]</a>. Research also evaluates AI’s role in supporting expert-driven question writing, indicating models can identify technical flaws but are not yet reliable for learning outcome assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[4]</a>. Meanwhile, survey data reveal medical students are moderately aware of AI’s benefits and risks but lack substantial training, with ongoing concerns about ethical challenges and job displacement <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[12]</a>.</p>
+<p>Also this week: eight new model releases are covered, along with five papers on assessment and feedback. Three studies address teaching and curriculum design, while three explore attitudes and adoption. Items include a comparative study of GPT-4o and Claude Sonnet 4 in medical ethics scenarios, and an international survey on perceptions of AI-induced deskilling among interventional pulmonologists.</p>
+<p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 26, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0">Navigating AI with pedagogical purpose: Toward an anatomy-centered framework for AI-enhanced learning</a>
+        <p class="news-card-summary">Peer-reviewed framework examines how artificial intelligence can enhance anatomy education through customized learning, feedback, and immersive experiences grounded in pedagogical principles.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
@@ -275,13 +282,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study evaluates AI model performance on geriatrics exam questions, finding high accuracy on theoretical questions but limitations in variability of real clinical scenarios.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.15829">Cost-efficient generative AI summarization for scalable automated essay scoring in educational assessment</a>
-        <p class="news-card-summary">A study proposes generative AI-assisted summarization to improve automated essay scoring by addressing transformer input-length limitations in long-form assessment.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -292,9 +292,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -517,41 +517,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.15380">Large Language Models as Unified Multimodal Learners for Clinical Prediction</a>
-        <p class="news-card-summary">Researchers developed a unified multimodal language model that combines free-text clinical narratives with structured measurements from electronic health records for clinical prediction tasks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.15544">EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections</a>
-        <p class="news-card-summary">Researchers developed an agentic system to generate clear, grounded public health narratives from epidemiological projections for policymakers and the general public.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02992-w">Human evaluators vs. LLM-as-a-Judge: toward scalable evaluation of GenAI in global health</a>
-        <p class="news-card-summary">Study compares human evaluation with language model judges for assessing generative AI performance in global health applications.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03035-0">Generating guideline-concordant and safe recommendations for diabetic kidney disease management via a hierarchical retrieval-augmented large language model</a>
-        <p class="news-card-summary">Retrieval-augmented language model generates guideline-concordant recommendations for diabetic kidney disease management.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03038-x">A knowledge-enhanced domain-aware large language model agent for atrial fibrillation management</a>
-        <p class="news-card-summary">Knowledge-enhanced language model agent assists with atrial fibrillation management using domain-aware reasoning.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03048-9">A multimodal evidence-driven framework for clinical decision support in cognitive impairment</a>
         <p class="news-card-summary">Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.</p>
@@ -581,9 +546,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -873,28 +838,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/ai-slant1b.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.16057">Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning</a>
-        <p class="news-card-summary">A benchmark evaluated frontier language models on analytical knowledge work tasks across business disciplines, measuring capabilities beyond factual recall and coding.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker">HuggingFace security incident report: &quot;the attacker was bound by no usage policy, while our own forensic work was blocked by the guardrails&quot;</a>
-        <p class="news-card-summary">HuggingFace reported a production security incident driven end-to-end by an autonomous AI agent system, detected and analyzed primarily with AI-assisted methods.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/tLa80cLashFk8b1qvSyhZgFagKqpQuDcINxc0lC5Ebw.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=6fe429dfc13f9591a4f1976d5a7ce567c412231c" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 9 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
@@ -938,12 +888,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Testing Qwen 3.8 MAX open-weight model</span>
       <span class="video-card-meta">Bijan Bowen, July 20, 2026</span>
       <span class="video-card-desc">Hands-on testing and benchmarking of the Qwen 3.8 MAX open-weight model across vision, reasoning, and coding tasks.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=A61WYw5-FLM" target="_blank" rel="noopener" title="Qwen 3.8 Max IS INSANE! Second To Fable? New Open Model King? (Fully Tested)">
-      <img src="https://i2.ytimg.com/vi/A61WYw5-FLM/hqdefault.jpg" alt="Video: Qwen 3.8 Max benchmark testing and comparison" loading="lazy">
-      <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>
-      <span class="video-card-meta">WorldofAI, July 20, 2026</span>
-      <span class="video-card-desc">Hands-on benchmark testing of the Qwen 3.8 Max model against competitors, with reproducible methodology shared for independent verification.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
       <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">

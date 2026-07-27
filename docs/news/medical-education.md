@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Performance evaluations of large language models are advancing, with comparative studies exploring their accuracy on medical board-style questions and clinical scenarios <a href="https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[1]</a>. Recent analyses show that models such as Gemini-2.0 and Claude demonstrate moderate to strong alignment with expert judgments in question quality, but their assessment of learning outcomes remains weak-suggesting they may supplement but not fully substitute expert review <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[3]</a>. There is continued investigation into the models’ specificity and reproducibility compared to clinicians when interpreting radiographic images <a href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">[6]</a>. On the educational front, chain-of-thought prompting is proving beneficial for assessments of clinical records, improving model reliability in undergraduate medical education <a href="https://mededu.jmir.org/2026/1/e88652">[9]</a>. Faculty and student attitudes reflect both recognition of AI’s potential and ongoing concerns about training, ethics, and job displacement.</p>
-<p>Also this week: the section includes eight new model releases and five papers on assessment and feedback. Other topics cover international perspectives on AI-induced deskilling among pulmonologists, barriers to AI adoption in low- and middle-income countries, and the effectiveness of generative AI in long-term care.</p>
-<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the items below.</p>
+<p>A peer-reviewed framework outlines how artificial intelligence can enhance anatomy education, focusing on personalized learning and pedagogical intent within clinical curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0">[1]</a>. At the same time, comparative analyses continue to benchmark large language model performance on medical board-style exams-recent studies show these models, while improving, remain inconsistent across specialties and types of assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[3]</a>. Research also evaluates AI’s role in supporting expert-driven question writing, indicating models can identify technical flaws but are not yet reliable for learning outcome assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[4]</a>. Meanwhile, survey data reveal medical students are moderately aware of AI’s benefits and risks but lack substantial training, with ongoing concerns about ethical challenges and job displacement <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[12]</a>.</p>
+<p>Also this week: eight new model releases are covered, along with five papers on assessment and feedback. Three studies address teaching and curriculum design, while three explore attitudes and adoption. Items include a comparative study of GPT-4o and Claude Sonnet 4 in medical ethics scenarios, and an international survey on perceptions of AI-induced deskilling among interventional pulmonologists.</p>
+<p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0">Navigating AI with pedagogical purpose: Toward an anatomy-centered framework for AI-enhanced learning</a>
+    <p class="news-card-summary">Peer-reviewed framework examines how artificial intelligence can enhance anatomy education through customized learning, feedback, and immersive experiences grounded in pedagogical principles.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Beyond accuracy: evaluating the reliability of large language models for medical assessment</a>
     <p class="news-card-summary">Large language model deployment for automated assessment metadata extraction should prioritize reliability over accuracy and use task-specific piloting with human oversight of semantic fields.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42491933?fc=20260609215449&amp;ff=20260723234606&amp;v=2.20.0">Integrating Artificial Intelligence into Medical Education in LMICs: A Narrative Review</a>
-    <p class="news-card-summary">Narrative review examines artificial intelligence integration in medical education across low- and middle-income countries, with focus on sub-Saharan Africa and barriers to adoption.</p>
   </div>
 </div>
 </div>
