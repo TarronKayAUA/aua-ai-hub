@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -268,13 +268,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Mixed-methods study examining how medical students perceive, view, and use artificial intelligence in their training and future practice.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42473727?fc=20260609215449&amp;ff=20260720071459&amp;v=2.20.0">Medical Students&#x27; Attitudes, Perceptions, and Self-Reported Familiarity With Artificial Intelligence in Healthcare: A Systematic Review and Meta-Analysis</a>
-        <p class="news-card-summary">Systematic review finds medical students hold broadly favorable attitudes toward artificial intelligence in healthcare, though estimates vary substantially across studies.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
@@ -287,15 +280,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new multimodal reasoning foundation model has been introduced to support clinical analysis across text, imaging, and structured data, potentially improving diagnostic workflows and decision support capabilities in medical practice <a href="https://www.nature.com/articles/s41746-026-02945-3">[1]</a>. Advances in disease screening are evident with interpretable artificial intelligence models for real-time leukemia screening leveraging routine blood tests in multicenter settings <a href="https://www.nature.com/articles/s41746-026-03016-3">[3]</a>, and deep learning algorithms applied to wearable ECG data for detecting atrial fibrillation in real-world scenarios <a href="https://medinform.jmir.org/2026/1/e91960">[5]</a>. Clinical transparency is further emphasized with deep learning approaches that enable feature visualization in differentiating skin disorders like vitiligo and postinflammatory hypopigmentation <a href="https://medinform.jmir.org/2026/1/e81942">[6]</a>. Additionally, long-standing challenges in early exclusion of negative cases in lupus anticoagulant diagnostics are being addressed by biomarker-driven decision support systems <a href="https://www.nature.com/articles/s41746-026-03012-7">[2]</a>.</p>
-<p>Also this week: the section features eight new model releases and several peer-reviewed papers on assessment, clinical decision support, patient-facing tools, and digital documentation in medical and prehospital care. Notable additions include a digital casualty card system deployed by the Israeli Defense Forces and a blood-based RNA marker for early Alzheimer&#x27;s detection.</p>
-<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the source items.</p>
+<p>A new multilevel AI-driven quality control system is now able to identify errors in medical records automatically, offering more consistent and comprehensive review compared to manual methods <a href="https://medinform.jmir.org/2026/1/e80580">[1]</a>. At the model level, advances in multimodal reasoning are expanding clinical analysis capabilities, as demonstrated by the introduction of QoQ-Med3 for handling text, imaging, and structured data <a href="https://www.nature.com/articles/s41746-026-02945-3">[3]</a>. In diagnostic practice, AI systems are being deployed to assist in both disease detection and screening, including interpretable models for differentiating skin conditions and supporting leukemia screening based on routine blood tests <a href="https://medinform.jmir.org/2026/1/e81942">[8]</a>. Meanwhile, a major commentary argues for a critical reassessment of medical AI evaluation standards, recommending more rigorous task-based benchmarks to accurately measure system performance <a href="https://www.nature.com/articles/s41591-026-04539-8">[2]</a>.</p>
+<p>Also this week: digital decision support tools are assisting early exclusion of negative cases in lupus anticoagulant diagnostics, and wearable device data is powering new algorithms in atrial fibrillation screening. The section also includes eight new model releases, five papers on assessment frameworks, and two items addressing digital clinical documentation improvements.</p>
+<p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 34 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 27, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80580">Dynamic Closed-Loop Medical Record Quality Management Using an AI-Driven Multilevel Quality Control System: Development and Implementation Study</a>
+        <p class="news-card-summary">A multilevel AI-driven quality control system automatically reviews and flags medical record errors in real time, improving documentation coverage and consistency compared to manual review.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 27, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04539-8">Toward a test of medical AI superintelligence</a>
+        <p class="news-card-summary">A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
@@ -515,13 +522,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03048-9">A multimodal evidence-driven framework for clinical decision support in cognitive impairment</a>
-        <p class="news-card-summary">Multimodal evidence-driven framework uses artificial intelligence to support clinical decision making in cognitive impairment assessment.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
@@ -541,15 +541,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic’s release of Claude Opus 5 marks a notable development among new model launches, highlighted for its focus on token efficiency and competitive cost without major leaps in capability over prior versions <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[6]</a>. Guidance on context engineering for Claude 5 models outlines practical prompt optimization strategies, aiming to refine how users interact with these systems <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">[3]</a>. The system card for Claude Opus 5 reports improved resistance to prompt injection attacks, reinforcing reliability and safety in adversarial evaluation settings <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[4]</a>. Advances in mixture-of-experts models, including expert-aware decoding techniques, are mitigating hallucinations and improving cross-domain generalization in language model results <a href="https://arxiv.org/abs/2607.20426">[10]</a>. Safety concerns are also addressed by studies that show how tuning and high confidence in LLM outputs can amplify risks of deceptive responses <a href="https://arxiv.org/abs/2607.20444">[13]</a>.</p>
-<p>Also this week: five model introductions cover reasoning, multimodal integration, and efficiency developments. Four recent papers explore safety and reliability, including fine-tuning mismatches and hallucination reduction. Three items present new research directions, while industry and policy commentary appears in one item warning against overregulating open-weight models.</p>
+<p>NVIDIA has released Cosmos-H-Dreams, a generative simulation model built for real-time surgical robotics, marking a notable advance in cross-disciplinary applications of artificial intelligence <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[1]</a>. Multiple research teams investigated safety and reliability, including efforts using AlphaFold to redesign gene-editing proteins and decrease error rates <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[8]</a>, as well as new findings on confidence amplifying the risk of deception in language models <a href="https://arxiv.org/abs/2607.20444">[14]</a>. Anthropic introduced Claude Opus 5, focusing on improved resistance to prompt injection attacks and token efficiency rather than raw capability gains <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[5]</a>. Cross-study evaluation of large language models received attention with the introduction of a multilayer taxonomy aimed at structuring capability comparisons <a href="https://arxiv.org/abs/2607.22182">[3]</a>.</p>
+<p>Also this week: five new model releases, four studies on safety and reliability, and several research papers exploring expert-aware decoding and multimodal pre-training. One industry item covers major AI companies’ concerns regarding overregulating open-weight models. The section also offers a methodology paper examining mismatches between evaluation and deployment in fine-tuned models.</p>
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">July 27, 2026</span></div>
+        <a class="news-card-title" href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics</a>
+        <p class="news-card-summary">NVIDIA released Cosmos-H-Dreams, a generative simulation model designed for real-time surgical robotics applications.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/68c1279544f671330c604f4c/Cj0RZwvOSUhFGFEFKgyDw.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 27, 2026</span></div>
@@ -821,22 +829,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">UK government analysis finds the performance gap between open and closed weight models on cybersecurity tasks is narrowing.</p>
       </div>
       <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-jWGEYJ.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen">China delivers a one-two punch to America’s AI dominance</a>
-        <p class="news-card-summary">Chinese AI companies Moonshot and Alibaba released models claiming competitive performance with OpenAI and Anthropic at lower cost.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2286623351.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans">AI is more likely than humans to form biases when hiring</a>
-        <p class="news-card-summary">Research shows large language models can develop hiring biases independently of training data, raising fairness concerns for employment screening.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/ai-slant1b.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

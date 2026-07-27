@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic’s release of Claude Opus 5 marks a notable development among new model launches, highlighted for its focus on token efficiency and competitive cost without major leaps in capability over prior versions <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[6]</a>. Guidance on context engineering for Claude 5 models outlines practical prompt optimization strategies, aiming to refine how users interact with these systems <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">[3]</a>. The system card for Claude Opus 5 reports improved resistance to prompt injection attacks, reinforcing reliability and safety in adversarial evaluation settings <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[4]</a>. Advances in mixture-of-experts models, including expert-aware decoding techniques, are mitigating hallucinations and improving cross-domain generalization in language model results <a href="https://arxiv.org/abs/2607.20426">[10]</a>. Safety concerns are also addressed by studies that show how tuning and high confidence in LLM outputs can amplify risks of deceptive responses <a href="https://arxiv.org/abs/2607.20444">[13]</a>.</p>
-<p>Also this week: five model introductions cover reasoning, multimodal integration, and efficiency developments. Four recent papers explore safety and reliability, including fine-tuning mismatches and hallucination reduction. Three items present new research directions, while industry and policy commentary appears in one item warning against overregulating open-weight models.</p>
+<p>NVIDIA has released Cosmos-H-Dreams, a generative simulation model built for real-time surgical robotics, marking a notable advance in cross-disciplinary applications of artificial intelligence <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[1]</a>. Multiple research teams investigated safety and reliability, including efforts using AlphaFold to redesign gene-editing proteins and decrease error rates <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[8]</a>, as well as new findings on confidence amplifying the risk of deception in language models <a href="https://arxiv.org/abs/2607.20444">[14]</a>. Anthropic introduced Claude Opus 5, focusing on improved resistance to prompt injection attacks and token efficiency rather than raw capability gains <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[5]</a>. Cross-study evaluation of large language models received attention with the introduction of a multilayer taxonomy aimed at structuring capability comparisons <a href="https://arxiv.org/abs/2607.22182">[3]</a>.</p>
+<p>Also this week: five new model releases, four studies on safety and reliability, and several research papers exploring expert-aware decoding and multimodal pre-training. One industry item covers major AI companies’ concerns regarding overregulating open-weight models. The section also offers a methodology paper examining mismatches between evaluation and deployment in fine-tuned models.</p>
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics</a>
+    <p class="news-card-summary">NVIDIA released Cosmos-H-Dreams, a generative simulation model designed for real-time surgical robotics applications.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/68c1279544f671330c604f4c/Cj0RZwvOSUhFGFEFKgyDw.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 27, 2026</span></div>
@@ -123,13 +131,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.20444">Confidently Deceptive: How Confidence Amplifies the Risk of LLM Deception</a>
     <p class="news-card-summary">Large language models can produce deceptive responses with high confidence, and higher confidence may increase persuasiveness of false information to users.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.20448">Domyn-Small: A European 10B Reasoning Language Model</a>
-    <p class="news-card-summary">Domyn-Small, a 10-billion-parameter open-weight reasoning model trained on 9 trillion multilingual tokens, is released under the MIT license.</p>
   </div>
 </div>
 </div>

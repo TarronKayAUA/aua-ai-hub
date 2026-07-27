@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new multimodal reasoning foundation model has been introduced to support clinical analysis across text, imaging, and structured data, potentially improving diagnostic workflows and decision support capabilities in medical practice <a href="https://www.nature.com/articles/s41746-026-02945-3">[1]</a>. Advances in disease screening are evident with interpretable artificial intelligence models for real-time leukemia screening leveraging routine blood tests in multicenter settings <a href="https://www.nature.com/articles/s41746-026-03016-3">[3]</a>, and deep learning algorithms applied to wearable ECG data for detecting atrial fibrillation in real-world scenarios <a href="https://medinform.jmir.org/2026/1/e91960">[5]</a>. Clinical transparency is further emphasized with deep learning approaches that enable feature visualization in differentiating skin disorders like vitiligo and postinflammatory hypopigmentation <a href="https://medinform.jmir.org/2026/1/e81942">[6]</a>. Additionally, long-standing challenges in early exclusion of negative cases in lupus anticoagulant diagnostics are being addressed by biomarker-driven decision support systems <a href="https://www.nature.com/articles/s41746-026-03012-7">[2]</a>.</p>
-<p>Also this week: the section features eight new model releases and several peer-reviewed papers on assessment, clinical decision support, patient-facing tools, and digital documentation in medical and prehospital care. Notable additions include a digital casualty card system deployed by the Israeli Defense Forces and a blood-based RNA marker for early Alzheimer&#x27;s detection.</p>
-<p class="section-brief-date">The picture as of July 25, 2026; numbered links go to the items below.</p>
+<p>A new multilevel AI-driven quality control system is now able to identify errors in medical records automatically, offering more consistent and comprehensive review compared to manual methods <a href="https://medinform.jmir.org/2026/1/e80580">[1]</a>. At the model level, advances in multimodal reasoning are expanding clinical analysis capabilities, as demonstrated by the introduction of QoQ-Med3 for handling text, imaging, and structured data <a href="https://www.nature.com/articles/s41746-026-02945-3">[3]</a>. In diagnostic practice, AI systems are being deployed to assist in both disease detection and screening, including interpretable models for differentiating skin conditions and supporting leukemia screening based on routine blood tests <a href="https://medinform.jmir.org/2026/1/e81942">[8]</a>. Meanwhile, a major commentary argues for a critical reassessment of medical AI evaluation standards, recommending more rigorous task-based benchmarks to accurately measure system performance <a href="https://www.nature.com/articles/s41591-026-04539-8">[2]</a>.</p>
+<p>Also this week: digital decision support tools are assisting early exclusion of negative cases in lupus anticoagulant diagnostics, and wearable device data is powering new algorithms in atrial fibrillation screening. The section also includes eight new model releases, five papers on assessment frameworks, and two items addressing digital clinical documentation improvements.</p>
+<p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80580">Dynamic Closed-Loop Medical Record Quality Management Using an AI-Driven Multilevel Quality Control System: Development and Implementation Study</a>
+    <p class="news-card-summary">A multilevel AI-driven quality control system automatically reviews and flags medical record errors in real time, improving documentation coverage and consistency compared to manual review.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04539-8">Toward a test of medical AI superintelligence</a>
+    <p class="news-card-summary">A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
@@ -111,20 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95063">Automated Fidelity Monitoring of Lay-Delivered Mental Health Interventions Using Large Language Models: Development and Pilot Validation of shamiriAI in Kenya</a>
     <p class="news-card-summary">Development and validation of an LLM-based system to monitor fidelity of lay-delivered mental health interventions in Kenya using session recordings.</p>
   </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89054">Large Language Model Few-Shot Learning for Predicting Individual Treatment Response to Smartphone-Based Mindfulness in Autistic Adults With Anxiety: Secondary Analysis of a Randomized Controlled Trial</a>
-    <p class="news-card-summary">Secondary analysis using machine learning to predict individual response to smartphone-based mindfulness interventions for anxiety in autistic adults.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04563-8">Early detection of Alzheimer’s disease with circular RNA from blood</a>
-    <p class="news-card-summary">Researchers report a blood-based circular RNA signature that detects Alzheimer&#x27;s disease with accuracy matching or exceeding current biomarkers and can predict symptom onset before clinical appearance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04563-8/MediaObjects/41591_2026_4563_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
