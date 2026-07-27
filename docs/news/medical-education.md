@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A peer-reviewed framework outlines how artificial intelligence can enhance anatomy education, focusing on personalized learning and pedagogical intent within clinical curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0">[1]</a>. At the same time, comparative analyses continue to benchmark large language model performance on medical board-style exams-recent studies show these models, while improving, remain inconsistent across specialties and types of assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[3]</a>. Research also evaluates AI’s role in supporting expert-driven question writing, indicating models can identify technical flaws but are not yet reliable for learning outcome assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[4]</a>. Meanwhile, survey data reveal medical students are moderately aware of AI’s benefits and risks but lack substantial training, with ongoing concerns about ethical challenges and job displacement <a href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">[12]</a>.</p>
-<p>Also this week: eight new model releases are covered, along with five papers on assessment and feedback. Three studies address teaching and curriculum design, while three explore attitudes and adoption. Items include a comparative study of GPT-4o and Claude Sonnet 4 in medical ethics scenarios, and an international survey on perceptions of AI-induced deskilling among interventional pulmonologists.</p>
+<p>A comparative analysis of large language model performance on national board and specialty exams reveals both advances and ongoing limitations in AI-supported medical assessment, with Gemini-2.0 achieving the highest accuracy in radiology resident testing under standardized conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">[4]</a>. Evaluations of LLM-generated multiple-choice questions show moderate to strong agreement with expert review on cognitive level and technical flaws, but weak alignment on learning outcomes, indicating that AI tools can assist but not replace expert input in educational content development <a href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">[5]</a>. Chain-of-thought prompting methods have improved model effectiveness for faculty in clinical record evaluation tasks, suggesting more refined prompting strategies may enhance assessment reliability <a href="https://mededu.jmir.org/2026/1/e88652">[11]</a>. Meanwhile, a structured framework proposes integrating AI into anatomy education in ways that foster customized feedback and immersive learning, tying advancements in model capabilities to pedagogical principles <a href="https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0">[2]</a>.</p>
+<p>Also this week: the section features eight new model releases and five papers on assessment, as well as studies on student perceptions, curriculum mapping, and generative AI applications in long-term care and pediatric emergency medicine. Medical students express concern over ethics and job displacement, and vision-language models are evaluated for generating self-assessment questions in neurosurgery.</p>
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">Hollow Documentation: Forensic and Educational Risks of Artificial Intelligence-Generated Clinical Records</a>
+    <p class="news-card-summary">Study examines risks of AI-generated clinical documentation in medical education and forensic contexts.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 26, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Mapping Personalized Learning in Medical Education: A Meta-Synthesis of Artificial Intelligence Applications</a>
     <p class="news-card-summary">Meta-synthesis finds AI integration enables adaptive learning pathways and data-driven instruction in medical education, enhancing engagement and equity in learning outcomes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Beyond accuracy: evaluating the reliability of large language models for medical assessment</a>
-    <p class="news-card-summary">Large language model deployment for automated assessment metadata extraction should prioritize reliability over accuracy and use task-specific piloting with human oversight of semantic fields.</p>
   </div>
 </div>
 </div>

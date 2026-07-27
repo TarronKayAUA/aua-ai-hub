@@ -13,14 +13,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>NVIDIA&#x27;s release of Cosmos-H-Dreams introduces a generative simulation model aimed at real-time surgical robotics, signaling possible shifts in AI applications for medical procedures <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[3]</a>. Anthropic&#x27;s Claude Opus 5 draws attention for its improved resistance to prompt injection attacks, a notable advance in model safety and reliability <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[7]</a>. Efforts to benchmark AI capabilities also continue, with the new MirrorCode framework evaluating how AI systems perform week-long programming tasks, highlighting ongoing challenges with difficult task completion <a href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker">[1]</a>. Meanwhile, decoders exploiting expert-aware contrast in mixture-of-experts models show promise for mitigating hallucinations and strengthening generalization across domains <a href="https://arxiv.org/abs/2607.20426">[13]</a>. Industry collaborations are forming around open AI security tools, as seen in the establishment of the Open Secure AI Alliance by Nvidia, Microsoft, and others, reflecting heightened attention to safety concerns <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">[2]</a>.</p>
-<p>Also this week: five new model releases are covered, including guidance and strategy updates for prompt engineering. Researchers present three studies on improving AI reliability and combating hallucinations, alongside two evaluations focused on benchmarking and taxonomy. Industry commentary includes policy concerns about open-weight model regulation and improved multimodal training methods.</p>
+<p>The Open Secure AI Alliance formed by Nvidia, Microsoft, SpaceX, and IBM aims to advance open-source AI security tools amid rising concerns about system safety and reliability <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">[3]</a>. Anthropic’s launch of Claude Opus 5 marks a shift toward efficiency, with improvements in prompt injection resistance and operational cost noted, though absolute capability gains remain incremental <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[8]</a>. Meanwhile, NVIDIA’s Cosmos-H-Dreams introduces real-time generative simulation for surgical robotics, expanding AI’s reach into medical procedural training and research <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[4]</a>. Researchers continue to explore evaluation frameworks, adopting multilayer taxonomies to organize large language model assessment and to pinpoint benchmarking gaps that affect comparison across studies <a href="https://arxiv.org/abs/2607.22182">[6]</a>.</p>
+<p>Also this week: five new model releases, three studies centered on safety and reliability, and two papers on evaluation advances bring additional coverage to this section. Policy developments include Nvidia, Microsoft, and Meta’s caution against overregulating open-weight models, and AlphaFold was applied to enhance gene-editing protein safety.</p>
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling">ChatGPT starts blocking direct requests to copy an author&#x27;s style</a>
+    <p class="news-card-summary">OpenAI implemented restrictions on ChatGPT to prevent direct copying of author writing styles.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264560291-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v8364f/kimi_k3_weights_now_released">Kimi K3 weights now released.</a>
+    <p class="news-card-summary">Kimi K3, a Chinese language model, has released open weights.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/nlw2mqk9gsfh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=45fcb7df195400c006c65e9cde0c40c5436c40c6" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">July 27, 2026</span></div>
@@ -120,19 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Nvidia, Microsoft, and Meta issued a letter cautioning against overregulation of open-weight artificial intelligence models.</p>
   </div>
   <img class="news-card-thumb" src="https://image.cnbcfm.com/api/v1/image/108173882-1752844539526-gettyimages-2225696381-mms28707_1cm2uml7.jpeg?v=1752844582&amp;w=1920&amp;h=1080" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.20426">Knowledge Injection Exists in MoE? Exploring Expert-Aware Contrast Decoding in MoE for Mitigating LLMs&#x27;Hallucinations</a>
-    <p class="news-card-summary">Expert-aware contrast decoding in mixture-of-experts models mitigates hallucinations by exploiting layer-wise differences and enables cross-domain generalization.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.20427">Is MoE Routing a Huffman Code? Discovering the Frequency-Diversity Law in Chain-of-Thought</a>
-    <p class="news-card-summary">Mixture-of-experts routing operates according to a Huffman Coding principle, revealing a frequency-diversity law governing how state-of-the-art models allocate computation.</p>
-  </div>
 </div>
 </div>
