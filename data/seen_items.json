@@ -24043,6 +24043,34 @@
    "category": "medical_education",
    "score": 4.0,
    "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/google-wont-give-up-odd-war-against-ai-web-scraping-despite-court-loss",
+   "title_hash": "ee43e1fa51180f2069878514e1b21f9f",
+   "first_seen": "2026-07-27T21:30:54.762951+00:00",
+   "kept": false,
+   "reason": "legal and policy gossip, not development or capability news relevant to this audience"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google",
+   "title_hash": "e66345fbead8415847f7fcd3b79157ac",
+   "first_seen": "2026-07-27T21:30:54.762951+00:00",
+   "kept": false,
+   "reason": "infrastructure investment news without technical or capability significance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/07/27/1140836/openai-hugging-face-attack-precedent",
+   "title_hash": "923da2412b2efbe82c396f5d4265c81d",
+   "first_seen": "2026-07-27T21:30:54.762951+00:00",
+   "kept": false,
+   "reason": "incomplete or truncated summary prevents assessment; appears to be commentary on a prior story rather than primary reporting"
+  },
+  {
+   "url": "https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems",
+   "title_hash": "20a5bff7428c35f55960a2b0952d8ea2",
+   "first_seen": "2026-07-27T21:30:54.762951+00:00",
+   "kept": false,
+   "reason": "military and defense application, off-topic for medical education and clinical practice audience"
   }
  ],
  "digests": [

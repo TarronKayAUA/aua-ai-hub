@@ -292,9 +292,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 34 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
@@ -520,13 +520,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
         <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88202">Real-World Imaging Data: Opportunities and Challenges</a>
         <p class="news-card-summary">Analysis of how artificial intelligence and advanced analytical methods can extract deeper insights from real-world clinical imaging data for evidence generation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83216">A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial</a>
-        <p class="news-card-summary">Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
