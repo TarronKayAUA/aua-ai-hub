@@ -23643,6 +23643,207 @@
    "first_seen": "2026-07-26T21:12:51.568081+00:00",
    "kept": false,
    "reason": "forum gossip and unverified lobbying claims; does not meet the bar for substantive policy news"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21619",
+   "title_hash": "c5ba32c6fd8ba71e0cbf0a2d84a1927c",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow adversarial attack study without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21632",
+   "title_hash": "4c0f597324c77324e4b8b56538152216",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow evaluation methodology study without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21685",
+   "title_hash": "d3117f38c94790937a7b9a2938a82fd2",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "domain-specific benchmark study without broad methodological significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21758",
+   "title_hash": "748f591fa3941fa71261f5bd19a9fc6a",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "tool release for collaborative writing without broad AI research significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21774",
+   "title_hash": "9480ba4d33c86cdb6272f2411e821e59",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow demographic inference analysis on one model without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21780",
+   "title_hash": "aab800c291cae61e66980341e4786c6d",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow domain application for low-resource language document processing"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21799",
+   "title_hash": "b47d7edd22b360a986fe86fe347bdd6f",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow legal compliance evaluation without broad AI significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21861",
+   "title_hash": "b0e08f6b2dda14ce327148da512cd67e",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "incremental fine-tuning study on document internalization"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21936",
+   "title_hash": "aae9fbe5d389ac20ae83a70800ae4e50",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow domain application for historical document restoration"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21961",
+   "title_hash": "c92fa58527705495e2d48b29309441f0",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow application study on podcast generation faithfulness"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21962",
+   "title_hash": "deb29c2ee2b4563fcd1ed9a5dfc70a1e",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow agent memory benchmark study without broad methodological significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21978",
+   "title_hash": "9dcbab1824a2b8ecd2cbc342da115ae7",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "incremental parameter-efficient fine-tuning method for MoE models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21980",
+   "title_hash": "6b990578d7ef628a289c2ee251244ff1",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "domain-specific social media toxicity study without broad AI significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21981",
+   "title_hash": "e83fe25b6af590e86cce315efa5fdc7c",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow reasoning method variant without significant capability advance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.21988",
+   "title_hash": "3d11a0b672f9c5c29a7f4e53e5b44dd5",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow self-harm detection analysis without broad applicability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22026",
+   "title_hash": "8d516abead7f5a52ce4d8e586cfb0e72",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "incremental method for LLM-generated text detection"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22039",
+   "title_hash": "4e88d1b45b1c1bb73714a6b99e614078",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow study on reinforcement learning effects on model merging"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22041",
+   "title_hash": "fbbd206c79ec96166940591ce8cc26d8",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "scale validation study for psychological dependency instrument without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22043",
+   "title_hash": "8403bc17fa2c706e0a513317d761fbf9",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": true,
+   "title": "Scaling Native Multimodal Pre-Training From Scratch",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-27T04:00:00+00:00",
+   "summary": "Scaling native multimodal pre-training from scratch on multimodal inputs achieves deeper cross-modal integration than text-only language model training.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22067",
+   "title_hash": "3ac708c54ca06568b7263883fe7c5ffb",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "domain-specific fine-tuning study for nuclear industry application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22075",
+   "title_hash": "f80935b2322484e18ff864c20c0cfbe3",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow domain method for named entity recognition continual learning"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22100",
+   "title_hash": "ddabdff709ee90a2bd110acfb80611b5",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "incremental tool release for speech-language model integration"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22136",
+   "title_hash": "2903ece1b85ca3cd702589e461cc51a9",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow application study on empathetic response generation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22182",
+   "title_hash": "db9678a97558c2b7fafa9bbde693b3f5",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": true,
+   "title": "From Isolated Tasks to Structured Capabilities: A Multilayer Taxonomy for Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-27T04:00:00+00:00",
+   "summary": "A multilayer taxonomy organizing LLM evaluation across fourteen capability domains to improve cross-study comparison and identify coverage gaps in benchmarking.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.22218",
+   "title_hash": "3b0bad8b13cdc2b7f2ed7526365722c8",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "narrow study on LLM and human creativity evaluation alignment without broad significance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v770ee/do_you_want_new_gemma",
+   "title_hash": "505ad2d60743400393e4c5e0a73e3f71",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "social media post without substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RCsBJz4W4bA",
+   "title_hash": "462484a24aa6050c501a2ee217fc9e73",
+   "first_seen": "2026-07-27T04:04:23.633263+00:00",
+   "kept": false,
+   "reason": "hype-styled title with generic boilerplate description and sponsor integration suggests reaction video rather than substantive model analysis or comparison"
   }
  ],
  "digests": [
@@ -23796,9 +23997,9 @@
    "date": "July 25, 2026"
   },
   "general_ai": {
-   "text": "The release of Claude Opus 5 has driven renewed attention to frontier model capabilities and cost optimization, with multiple sources highlighting its token efficiency as a substantial improvement over previous versions, although absolute performance gains remain more incremental <a href=\"https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap\">[4]</a>. Anthropic has published updated guidance on prompt engineering for Claude 5-generation models, emphasizing new context window strategies for optimized use <a href=\"https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models\">[1]</a>. Safety remains a focus, as evaluations of Claude Opus 5 report improved resistance to prompt injection attacks, backed by red teaming and system card analysis <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[2]</a>. Research on mixture-of-experts models continues to shed light on mitigation strategies for hallucinations, including expert-aware decoding methods that enable improved reliability in diverse tasks <a href=\"https://arxiv.org/abs/2607.20426\">[8]</a>.\n\nAlso this week: eight new model releases and four papers on safety and reliability expand the section’s coverage, including Domyn-Small, a large European reasoning model, and fine-tuning studies that highlight deployment risks. One industry policy item addresses concerns about overregulation of open-weight AI models.",
-   "hash": "335452e30540c790",
-   "date": "July 26, 2026"
+   "text": "Anthropic’s release of Claude Opus 5 marks a notable development among new model launches, highlighted for its focus on token efficiency and competitive cost without major leaps in capability over prior versions <a href=\"https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap\">[6]</a>. Guidance on context engineering for Claude 5 models outlines practical prompt optimization strategies, aiming to refine how users interact with these systems <a href=\"https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models\">[3]</a>. The system card for Claude Opus 5 reports improved resistance to prompt injection attacks, reinforcing reliability and safety in adversarial evaluation settings <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[4]</a>. Advances in mixture-of-experts models, including expert-aware decoding techniques, are mitigating hallucinations and improving cross-domain generalization in language model results <a href=\"https://arxiv.org/abs/2607.20426\">[10]</a>. Safety concerns are also addressed by studies that show how tuning and high confidence in LLM outputs can amplify risks of deceptive responses <a href=\"https://arxiv.org/abs/2607.20444\">[13]</a>.\n\nAlso this week: five model introductions cover reasoning, multimodal integration, and efficiency developments. Four recent papers explore safety and reliability, including fine-tuning mismatches and hallucination reduction. Three items present new research directions, while industry and policy commentary appears in one item warning against overregulating open-weight models.",
+   "hash": "3ea4516f36c6de5c",
+   "date": "July 27, 2026"
   }
  },
  "opportunity_snapshot": {

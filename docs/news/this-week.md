@@ -576,15 +576,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>The release of Claude Opus 5 has driven renewed attention to frontier model capabilities and cost optimization, with multiple sources highlighting its token efficiency as a substantial improvement over previous versions, although absolute performance gains remain more incremental <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[4]</a>. Anthropic has published updated guidance on prompt engineering for Claude 5-generation models, emphasizing new context window strategies for optimized use <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">[1]</a>. Safety remains a focus, as evaluations of Claude Opus 5 report improved resistance to prompt injection attacks, backed by red teaming and system card analysis <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[2]</a>. Research on mixture-of-experts models continues to shed light on mitigation strategies for hallucinations, including expert-aware decoding methods that enable improved reliability in diverse tasks <a href="https://arxiv.org/abs/2607.20426">[8]</a>.</p>
-<p>Also this week: eight new model releases and four papers on safety and reliability expand the section’s coverage, including Domyn-Small, a large European reasoning model, and fine-tuning studies that highlight deployment risks. One industry policy item addresses concerns about overregulation of open-weight AI models.</p>
-<p class="section-brief-date">The picture as of July 26, 2026; numbered links go to the source items.</p>
+<p>Anthropic’s release of Claude Opus 5 marks a notable development among new model launches, highlighted for its focus on token efficiency and competitive cost without major leaps in capability over prior versions <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[6]</a>. Guidance on context engineering for Claude 5 models outlines practical prompt optimization strategies, aiming to refine how users interact with these systems <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">[3]</a>. The system card for Claude Opus 5 reports improved resistance to prompt injection attacks, reinforcing reliability and safety in adversarial evaluation settings <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[4]</a>. Advances in mixture-of-experts models, including expert-aware decoding techniques, are mitigating hallucinations and improving cross-domain generalization in language model results <a href="https://arxiv.org/abs/2607.20426">[10]</a>. Safety concerns are also addressed by studies that show how tuning and high confidence in LLM outputs can amplify risks of deceptive responses <a href="https://arxiv.org/abs/2607.20444">[13]</a>.</p>
+<p>Also this week: five model introductions cover reasoning, multimodal integration, and efficiency developments. Four recent papers explore safety and reliability, including fine-tuning mismatches and hallucination reduction. Three items present new research directions, while industry and policy commentary appears in one item warning against overregulating open-weight models.</p>
+<p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 27, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.22043">Scaling Native Multimodal Pre-Training From Scratch</a>
+        <p class="news-card-summary">Scaling native multimodal pre-training from scratch on multimodal inputs achieves deeper cross-modal integration than text-only language model training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 27, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.22182">From Isolated Tasks to Structured Capabilities: A Multilayer Taxonomy for Large Language Models</a>
+        <p class="news-card-summary">A multilayer taxonomy organizing LLM evaluation across fourteen capability domains to improve cross-study comparison and identify coverage gaps in benchmarking.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 25, 2026</span></div>
