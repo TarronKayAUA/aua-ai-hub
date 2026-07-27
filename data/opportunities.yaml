@@ -109,3 +109,31 @@
   start_date: 2026-07-15
   relevance: Medical imaging challenge (predicting corneal graft quality metrics from specular microscopy images), a concrete entry point into clinical AI for students and faculty.
   verified: 2026-07-21
+
+# Auto-verified 2026-07-27 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: VoltHacks
+  url: https://volthacks.devpost.com/
+  organizer: Dialogate
+  type: hackathon
+  format: virtual
+  eligibility: Students, ages 13+, individuals from all countries/territories excluding standard exceptions; companies/professional organizations excluded
+  deadline: 2026-09-05
+  start_date: 2026-05-22
+  end_date: 2026-09-05
+  support: "Organizer-stated: $32,585 in cash and prizes including Grand Prize $1,020 cash, Featherless.ai credits, CodeCrafters VIP memberships, .xyz domains, Dialogate lifetime subscriptions, and Tin Computer Growth Plan credits"
+  relevance: Online AI and machine learning hackathon with beginner-friendly track open to international participants.
+  verified: 2026-07-27
+
+# Auto-verified 2026-07-27 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: Prometheus July AI Challenge
+  url: https://prometheus-july-ai-challenge.devpost.com/
+  organizer: Prometheus
+  type: challenge
+  format: virtual
+  eligibility: Ages 13+, students only, no companies or professional organizations
+  deadline: 2026-07-30
+  start_date: 2026-07-17
+  end_date: 2026-07-30
+  support: "Organizer-stated: $1,500+ in cash prizes (1st $1,000, 2nd $400, 3rd $100, plus certificates for other placements)"
+  relevance: Online AI challenge open internationally with machine learning focus suitable for medical students and faculty.
+  verified: 2026-07-27
