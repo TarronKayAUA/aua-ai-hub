@@ -42,6 +42,22 @@
     techniques (clear instructions, examples, structured output, giving the
     model room to think) carry over to any modern assistant.
 
+# Claude-specific by design (the owner weighed this 2026-07-27): the file
+# already carries per-vendor guides, and this is the vendor's current
+# doctrine on context structure for the model family most of the
+# audience uses. The page serves no og:image (checked 2026-07-27), so
+# the card renders text-only like the docs entry above.
+- title: The new rules of context engineering
+  source: Anthropic
+  type: guide
+  category: general
+  url: https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models
+  blurb: Anthropic's guidance for the Claude 5 generation on structuring
+    context, fewer rules and more judgment, progressive disclosure over
+    upfront loading, and concise references over repetition. Most useful
+    once you are building agents or standing setups; Claude-specific, but
+    the principles translate.
+
 - title: Prompting guide 101
   source: Google
   type: guide
