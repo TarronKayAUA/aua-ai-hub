@@ -23925,6 +23925,76 @@
    "first_seen": "2026-07-27T11:42:06.674126+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker",
+   "title_hash": "f769230709fff620aee7ebfcd37c0ab5",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": true,
+   "title": "Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI’s accidental AI hacker",
+   "source": "Import AI",
+   "published": "2026-07-27T13:30:53+00:00",
+   "summary": "Epoch and METR released MirrorCode, a benchmark measuring how well AI systems handle week-long programming tasks, finding current systems cannot yet solve the hardest tasks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-MrVmhb.png?fit=258%2C258&ssl=1",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://medicalfuturist.com/6-healthcare-examples-of-virtual-augmented-and-mixed-reality",
+   "title_hash": "662de1326eeb8d4fcc97ba80c6f9c3d2",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": false,
+   "reason": "listicle and vendor marketing without substantive analysis"
+  },
+  {
+   "url": "https://medicalfuturist.com/digital-front-doors-in-healthcare",
+   "title_hash": "8cd02885c60bf8e5cfb1a05d75f123c0",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": false,
+   "reason": "vendor marketing without substantive analysis"
+  },
+  {
+   "url": "https://medicalfuturist.com/health-equity-in-the-ai-and-digital-health-era-promise-or-peril",
+   "title_hash": "5943fb27df6e53c5b7bf95a284f0560e",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": false,
+   "reason": "commentary without new information or instructive analysis"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
+   "title_hash": "d0f4f2c1131119f36e1d8a2c637d2010",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": true,
+   "title": "Nvidia, Microsoft launch open AI security alliance, without OpenAI, Google, or Anthropic",
+   "source": "The Verge AI",
+   "published": "2026-07-27T12:06:22+00:00",
+   "summary": "Nvidia, Microsoft, SpaceX, IBM and others formed the Open Secure AI Alliance to develop and share open-source AI security tools in response to growing safety concerns.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/the-curious-case-of-using-beta-blockers",
+   "title_hash": "23bc847ba740cc729f6de0e06902faeb",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v7yand/jensen_huang_during_the_hugging_face_incident",
+   "title_hash": "425efaef6f2fb1d03925f2629f87cef5",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": false,
+   "reason": "forum post derivative of news reported elsewhere"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=oXu6JGxW_YM",
+   "title_hash": "30ba9fb7b10a187a301e5e550497c3ca",
+   "first_seen": "2026-07-27T15:15:43.216547+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company channel"
   }
  ],
  "digests": [
@@ -24078,8 +24148,8 @@
    "date": "July 27, 2026"
   },
   "general_ai": {
-   "text": "NVIDIA has released Cosmos-H-Dreams, a generative simulation model built for real-time surgical robotics, marking a notable advance in cross-disciplinary applications of artificial intelligence <a href=\"https://huggingface.co/blog/nvidia/cosmos-h-dreams\">[1]</a>. Multiple research teams investigated safety and reliability, including efforts using AlphaFold to redesign gene-editing proteins and decrease error rates <a href=\"https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer\">[8]</a>, as well as new findings on confidence amplifying the risk of deception in language models <a href=\"https://arxiv.org/abs/2607.20444\">[14]</a>. Anthropic introduced Claude Opus 5, focusing on improved resistance to prompt injection attacks and token efficiency rather than raw capability gains <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[5]</a>. Cross-study evaluation of large language models received attention with the introduction of a multilayer taxonomy aimed at structuring capability comparisons <a href=\"https://arxiv.org/abs/2607.22182\">[3]</a>.\n\nAlso this week: five new model releases, four studies on safety and reliability, and several research papers exploring expert-aware decoding and multimodal pre-training. One industry item covers major AI companies’ concerns regarding overregulating open-weight models. The section also offers a methodology paper examining mismatches between evaluation and deployment in fine-tuned models.",
-   "hash": "ac821267c91113e0",
+   "text": "NVIDIA&#x27;s release of Cosmos-H-Dreams introduces a generative simulation model aimed at real-time surgical robotics, signaling possible shifts in AI applications for medical procedures <a href=\"https://huggingface.co/blog/nvidia/cosmos-h-dreams\">[3]</a>. Anthropic&#x27;s Claude Opus 5 draws attention for its improved resistance to prompt injection attacks, a notable advance in model safety and reliability <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[7]</a>. Efforts to benchmark AI capabilities also continue, with the new MirrorCode framework evaluating how AI systems perform week-long programming tasks, highlighting ongoing challenges with difficult task completion <a href=\"https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker\">[1]</a>. Meanwhile, decoders exploiting expert-aware contrast in mixture-of-experts models show promise for mitigating hallucinations and strengthening generalization across domains <a href=\"https://arxiv.org/abs/2607.20426\">[13]</a>. Industry collaborations are forming around open AI security tools, as seen in the establishment of the Open Secure AI Alliance by Nvidia, Microsoft, and others, reflecting heightened attention to safety concerns <a href=\"https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity\">[2]</a>.\n\nAlso this week: five new model releases are covered, including guidance and strategy updates for prompt engineering. Researchers present three studies on improving AI reliability and combating hallucinations, alongside two evaluations focused on benchmarking and taxonomy. Industry commentary includes policy concerns about open-weight model regulation and improved multimodal training methods.",
+   "hash": "517d656741ff05b5",
    "date": "July 27, 2026"
   }
  },

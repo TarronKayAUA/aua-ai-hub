@@ -285,9 +285,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
@@ -522,13 +522,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03027-0">Interpretable multimodal deep learning for time-resolved survival prediction after hepatocellular carcinoma resection</a>
-        <p class="news-card-summary">Peer-reviewed study presents an interpretable multimodal deep learning model for predicting survival outcomes after hepatocellular carcinoma resection.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 20, 2026</span></div>
@@ -541,15 +534,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>NVIDIA has released Cosmos-H-Dreams, a generative simulation model built for real-time surgical robotics, marking a notable advance in cross-disciplinary applications of artificial intelligence <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[1]</a>. Multiple research teams investigated safety and reliability, including efforts using AlphaFold to redesign gene-editing proteins and decrease error rates <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[8]</a>, as well as new findings on confidence amplifying the risk of deception in language models <a href="https://arxiv.org/abs/2607.20444">[14]</a>. Anthropic introduced Claude Opus 5, focusing on improved resistance to prompt injection attacks and token efficiency rather than raw capability gains <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[5]</a>. Cross-study evaluation of large language models received attention with the introduction of a multilayer taxonomy aimed at structuring capability comparisons <a href="https://arxiv.org/abs/2607.22182">[3]</a>.</p>
-<p>Also this week: five new model releases, four studies on safety and reliability, and several research papers exploring expert-aware decoding and multimodal pre-training. One industry item covers major AI companies’ concerns regarding overregulating open-weight models. The section also offers a methodology paper examining mismatches between evaluation and deployment in fine-tuned models.</p>
+<p>NVIDIA&#x27;s release of Cosmos-H-Dreams introduces a generative simulation model aimed at real-time surgical robotics, signaling possible shifts in AI applications for medical procedures <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[3]</a>. Anthropic&#x27;s Claude Opus 5 draws attention for its improved resistance to prompt injection attacks, a notable advance in model safety and reliability <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[7]</a>. Efforts to benchmark AI capabilities also continue, with the new MirrorCode framework evaluating how AI systems perform week-long programming tasks, highlighting ongoing challenges with difficult task completion <a href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker">[1]</a>. Meanwhile, decoders exploiting expert-aware contrast in mixture-of-experts models show promise for mitigating hallucinations and strengthening generalization across domains <a href="https://arxiv.org/abs/2607.20426">[13]</a>. Industry collaborations are forming around open AI security tools, as seen in the establishment of the Open Secure AI Alliance by Nvidia, Microsoft, and others, reflecting heightened attention to safety concerns <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">[2]</a>.</p>
+<p>Also this week: five new model releases are covered, including guidance and strategy updates for prompt engineering. Researchers present three studies on improving AI reliability and combating hallucinations, alongside two evaluations focused on benchmarking and taxonomy. Industry commentary includes policy concerns about open-weight model regulation and improved multimodal training methods.</p>
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">July 27, 2026</span></div>
+        <a class="news-card-title" href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker">Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI’s accidental AI hacker</a>
+        <p class="news-card-summary">Epoch and METR released MirrorCode, a benchmark measuring how well AI systems handle week-long programming tasks, finding current systems cannot yet solve the hardest tasks.</p>
+      </div>
+      <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-MrVmhb.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 27, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">Nvidia, Microsoft launch open AI security alliance, without OpenAI, Google, or Anthropic</a>
+        <p class="news-card-summary">Nvidia, Microsoft, SpaceX, IBM and others formed the Open Secure AI Alliance to develop and share open-source AI security tools in response to growing safety concerns.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">July 27, 2026</span></div>
@@ -822,21 +831,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/swarm-og.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan">Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan</a>
-        <p class="news-card-summary">UK government analysis finds the performance gap between open and closed weight models on cybersecurity tasks is narrowing.</p>
-      </div>
-      <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-jWGEYJ.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 7 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
@@ -874,12 +875,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Fine-tuning, RAG, and LoRA in modern LLM workflows</span>
       <span class="video-card-meta">IBM Technology, July 21, 2026</span>
       <span class="video-card-desc">Exploration of whether fine-tuning remains necessary in modern AI workflows, comparing it with retrieval-augmented generation and parameter-efficient methods like LoRA.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=Wlh1na7rB4o" target="_blank" rel="noopener" title="Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?">
-      <img src="https://i4.ytimg.com/vi/Wlh1na7rB4o/hqdefault.jpg" alt="Video: Testing Qwen 3.8 MAX open-weight model" loading="lazy">
-      <span class="video-card-title">Testing Qwen 3.8 MAX open-weight model</span>
-      <span class="video-card-meta">Bijan Bowen, July 20, 2026</span>
-      <span class="video-card-desc">Hands-on testing and benchmarking of the Qwen 3.8 MAX open-weight model across vision, reasoning, and coding tasks.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
       <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">

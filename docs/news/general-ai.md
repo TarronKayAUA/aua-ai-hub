@@ -13,14 +13,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>NVIDIA has released Cosmos-H-Dreams, a generative simulation model built for real-time surgical robotics, marking a notable advance in cross-disciplinary applications of artificial intelligence <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[1]</a>. Multiple research teams investigated safety and reliability, including efforts using AlphaFold to redesign gene-editing proteins and decrease error rates <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[8]</a>, as well as new findings on confidence amplifying the risk of deception in language models <a href="https://arxiv.org/abs/2607.20444">[14]</a>. Anthropic introduced Claude Opus 5, focusing on improved resistance to prompt injection attacks and token efficiency rather than raw capability gains <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[5]</a>. Cross-study evaluation of large language models received attention with the introduction of a multilayer taxonomy aimed at structuring capability comparisons <a href="https://arxiv.org/abs/2607.22182">[3]</a>.</p>
-<p>Also this week: five new model releases, four studies on safety and reliability, and several research papers exploring expert-aware decoding and multimodal pre-training. One industry item covers major AI companies’ concerns regarding overregulating open-weight models. The section also offers a methodology paper examining mismatches between evaluation and deployment in fine-tuned models.</p>
+<p>NVIDIA&#x27;s release of Cosmos-H-Dreams introduces a generative simulation model aimed at real-time surgical robotics, signaling possible shifts in AI applications for medical procedures <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[3]</a>. Anthropic&#x27;s Claude Opus 5 draws attention for its improved resistance to prompt injection attacks, a notable advance in model safety and reliability <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[7]</a>. Efforts to benchmark AI capabilities also continue, with the new MirrorCode framework evaluating how AI systems perform week-long programming tasks, highlighting ongoing challenges with difficult task completion <a href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker">[1]</a>. Meanwhile, decoders exploiting expert-aware contrast in mixture-of-experts models show promise for mitigating hallucinations and strengthening generalization across domains <a href="https://arxiv.org/abs/2607.20426">[13]</a>. Industry collaborations are forming around open AI security tools, as seen in the establishment of the Open Secure AI Alliance by Nvidia, Microsoft, and others, reflecting heightened attention to safety concerns <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">[2]</a>.</p>
+<p>Also this week: five new model releases are covered, including guidance and strategy updates for prompt engineering. Researchers present three studies on improving AI reliability and combating hallucinations, alongside two evaluations focused on benchmarking and taxonomy. Industry commentary includes policy concerns about open-weight model regulation and improved multimodal training methods.</p>
 <p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker">Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI’s accidental AI hacker</a>
+    <p class="news-card-summary">Epoch and METR released MirrorCode, a benchmark measuring how well AI systems handle week-long programming tasks, finding current systems cannot yet solve the hardest tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-MrVmhb.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">Nvidia, Microsoft launch open AI security alliance, without OpenAI, Google, or Anthropic</a>
+    <p class="news-card-summary">Nvidia, Microsoft, SpaceX, IBM and others formed the Open Secure AI Alliance to develop and share open-source AI security tools in response to growing safety concerns.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">July 27, 2026</span></div>
@@ -117,20 +133,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.20427">Is MoE Routing a Huffman Code? Discovering the Frequency-Diversity Law in Chain-of-Thought</a>
     <p class="news-card-summary">Mixture-of-experts routing operates according to a Huffman Coding principle, revealing a frequency-diversity law governing how state-of-the-art models allocate computation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.20436">Routing Subspaces: Auditing Evaluation-to-Deployment Mismatch in Fine-Tuned Language Models</a>
-    <p class="news-card-summary">Fine-tuning can create mismatches between model behavior under evaluation and ordinary use, revealing safety risks not captured by standard testing.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.20444">Confidently Deceptive: How Confidence Amplifies the Risk of LLM Deception</a>
-    <p class="news-card-summary">Large language models can produce deceptive responses with high confidence, and higher confidence may increase persuasiveness of false information to users.</p>
   </div>
 </div>
 </div>
