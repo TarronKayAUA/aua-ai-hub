@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>New research on automating clinical documentation review evaluates the ability of language models to detect inconsistencies in discharge summaries, highlighting limits and failure modes that may affect reliability in real-world applications <a href="https://arxiv.org/abs/2607.22954">[3]</a>. The section also features advances in imaging and diagnostics, including fully automated biometric measurement in prenatal ultrasound screening to enhance detection of total anomalous pulmonary venous connection <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[2]</a>, and a pilot study on ChatGPT-5.1’s performance in predicting intracranial injuries and guiding CT use for mild traumatic brain injury <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Population-specific dementia risk prediction using deep transfer learning is explored, focusing on equitable risk stratification across diverse groups <a href="https://www.nature.com/articles/s41746-026-03065-8">[7]</a>, while deployment studies of AI-driven quality control in medical record review report increased consistency compared to manual approaches <a href="https://medinform.jmir.org/2026/1/e80580">[8]</a>.</p>
-<p>Also this week: eight new model releases, five papers on assessment methods or clinical decision support, and three items on safety and evaluation. The clinical documentation thread is illustrated by deployment of a multilevel AI quality control system and continued analysis of language model reliability.</p>
+<p>Automated systems for clinical documentation and quality management are gaining attention, with new research demonstrating multilevel AI-driven review for medical records, which improves error detection and consistency compared to manual methods <a href="https://medinform.jmir.org/2026/1/e80580">[10]</a>. Advances in federated learning allow institutions to securely collaborate on clinical decision support without sharing sensitive data, as shown in nationwide deployments for histopathology and resource-limited settings <a href="https://www.nature.com/articles/s41746-026-02958-y">[5]</a>. Patient education tools powered by large language models exhibit significant differences in reliability and readability, suggesting that careful evaluation is needed for clinical adoption <a href="https://medinform.jmir.org/2026/1/e91016">[1]</a>. In imaging and diagnostics, foundation models are being developed for clinical analysis across various modalities, and novel AI applications in ultrasound screening promise enhanced detection of rare congenital heart conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>.</p>
+<p>Also this week: the section includes eight clinical decision support developments, three papers on imaging and diagnostics, and three items focused on safety and evaluation. Recent studies address interpretable real-time leukemia screening and automated detection of documentation inconsistencies in electronic health records.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91016">Mapping the Reliability-Readability Gap in the Education of Patients With Age-Related Macular Degeneration Across 6 Large Language Models: Comparative Evaluation Study</a>
+    <p class="news-card-summary">Comparative evaluation of six large language models for patient education on age-related macular degeneration found significant variation in reliability and readability.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
@@ -70,6 +77,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Deep transfer learning models predict dementia risk in diverse populations, addressing disparities in risk stratification across demographic groups.</p>
   </div>
 </div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03006-5">Federated modular clinical decision support networks for collaborative learning in resource-limited settings</a>
+    <p class="news-card-summary">Federated learning approach enables clinical decision support networks to train collaboratively across resource-limited settings while preserving data privacy.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 27, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86145">Large Language Models for Endodontic Symptom Assessment and Treatment Planning Using Image-Free Clinical Records: Comparative Evaluation Study</a>
     <p class="news-card-summary">Large language models assessed pulpal status and treatment planning in endodontics using clinical records alone, achieving comparable accuracy to models using radiographic images.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91960">R-R Interval Histogram-Based Deep Learning for 3-Class Atrial Fibrillation Screening in Garment-Type Wearable Holter Electrocardiogram Monitoring: Algorithm Development and Validation Study</a>
-    <p class="news-card-summary">A deep learning algorithm detected atrial fibrillation from wearable ECG data using R-R interval histograms, addressing noise contamination in real-world recordings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81942">Clinically Interpretable Deep Learning for Differentiating Vitiligo and Postinflammatory Hypopigmentation: Diagnostic Accuracy Study</a>
-    <p class="news-card-summary">An interpretable deep learning model distinguished vitiligo from postinflammatory hypopigmentation with diagnostic accuracy and feature visualization for clinical transparency.</p>
   </div>
 </div>
 </div>
