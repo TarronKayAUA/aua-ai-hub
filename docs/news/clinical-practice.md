@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new multilevel AI-driven quality control system is now able to identify errors in medical records automatically, offering more consistent and comprehensive review compared to manual methods <a href="https://medinform.jmir.org/2026/1/e80580">[1]</a>. At the model level, advances in multimodal reasoning are expanding clinical analysis capabilities, as demonstrated by the introduction of QoQ-Med3 for handling text, imaging, and structured data <a href="https://www.nature.com/articles/s41746-026-02945-3">[3]</a>. In diagnostic practice, AI systems are being deployed to assist in both disease detection and screening, including interpretable models for differentiating skin conditions and supporting leukemia screening based on routine blood tests <a href="https://medinform.jmir.org/2026/1/e81942">[8]</a>. Meanwhile, a major commentary argues for a critical reassessment of medical AI evaluation standards, recommending more rigorous task-based benchmarks to accurately measure system performance <a href="https://www.nature.com/articles/s41591-026-04539-8">[2]</a>.</p>
-<p>Also this week: digital decision support tools are assisting early exclusion of negative cases in lupus anticoagulant diagnostics, and wearable device data is powering new algorithms in atrial fibrillation screening. The section also includes eight new model releases, five papers on assessment frameworks, and two items addressing digital clinical documentation improvements.</p>
-<p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
+<p>Advances in clinical decision support are highlighted by randomized multicenter validation of an AI system for inherited retinal diseases, which integrates data across imaging and clinical sources to deliver diagnostic accuracy improvements <a href="https://www.nature.com/articles/s41591-026-04545-w">[13]</a>. In medical imaging and diagnostics, a new foundation model, QoQ-Med3, demonstrates multimodal reasoning capabilities intended for clinical tasks involving text, imaging, and structured data <a href="https://www.nature.com/articles/s41746-026-02945-3">[4]</a>. Within safety and evaluation, commentary in Nature Medicine stresses the need for stronger benchmarking to reliably measure medical AI performance and impact <a href="https://www.nature.com/articles/s41591-026-04539-8">[3]</a>. Progress in medical documentation is evident, including real-time quality management systems leveraging AI to flag errors and support record consistency <a href="https://medinform.jmir.org/2026/1/e80580">[2]</a>. Wearable ECG-based screening, interpretable models for leukemia detection, and federated learning for secure histopathology development in Germany further reinforce the section’s focus on practical deployment of AI models in diverse patient-care settings <a href="https://www.nature.com/articles/s41746-026-02958-y">[1]</a>.</p>
+<p>Also this week: the section includes eight new model releases across radiology, dermatology, hematology, and cardiology. Five papers cover assessment, quality assurance, and transparency, with topics spanning clinical documentation accuracy and human-in-the-loop symptom recognition. Two studies address digital record deployment and paper-to-digital field systems, including the rapid rollout of digital casualty cards during armed conflict by the Israeli Defense Forces.</p>
+<p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02958-y">Nationwide federated learning for histopathology: secure deployment across Germany behind firewalls</a>
+    <p class="news-card-summary">Federated learning enabled secure deployment of histopathology AI across German hospitals while keeping data behind institutional firewalls.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 27, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 23, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87887">Decision Support Framework for Quality Assurance and Enhancement of Therapeutic Artificial Intelligence Systems: Mixed Methods Pilot Study</a>
     <p class="news-card-summary">Pilot study introduces EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots in digital mental health services.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95063">Automated Fidelity Monitoring of Lay-Delivered Mental Health Interventions Using Large Language Models: Development and Pilot Validation of shamiriAI in Kenya</a>
-    <p class="news-card-summary">Development and validation of an LLM-based system to monitor fidelity of lay-delivered mental health interventions in Kenya using session recordings.</p>
   </div>
 </div>
 </div>

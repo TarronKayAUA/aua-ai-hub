@@ -24071,6 +24071,80 @@
    "first_seen": "2026-07-27T21:30:54.762951+00:00",
    "kept": false,
    "reason": "military and defense application, off-topic for medical education and clinical practice audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02958-y",
+   "title_hash": "0a002bf640b65c3d6d0b1025125b6d9b",
+   "first_seen": "2026-07-28T03:38:58.769959+00:00",
+   "kept": true,
+   "title": "Nationwide federated learning for histopathology: secure deployment across Germany behind firewalls",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-28T00:00:00+00:00",
+   "summary": "Federated learning enabled secure deployment of histopathology AI across German hospitals while keeping data behind institutional firewalls.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/27/kimi-k3",
+   "title_hash": "d4e7d82c2bc83c75231f70d1351df8cb",
+   "first_seen": "2026-07-28T03:38:58.769959+00:00",
+   "kept": true,
+   "title": "moonshotai/Kimi-K3",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-27T23:39:04+00:00",
+   "summary": "Moonshot AI released open weights for Kimi K3, a 2.8 trillion parameter model, on Hugging Face with a modified MIT license.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.anthropic.com/news/position-open-weights-models",
+   "title_hash": "b9d7fad2376f117e8dff610587d059f4",
+   "first_seen": "2026-07-28T03:38:58.769959+00:00",
+   "kept": true,
+   "title": "Our position on open-weights models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-07-27T22:03:49+00:00",
+   "summary": "Anthropic published a position statement on open-weights models addressing their approach to model release and licensing.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.sanity.io/images/4zrzovbb/website/62993bb857986e2808c2a75024f384e7b85312b6-2400x1254.png",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms",
+   "title_hash": "730518b06f506f9c761663e8f00e1e8b",
+   "first_seen": "2026-07-28T03:38:58.769959+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&ff=20260727233858&v=2.20.0",
+   "title_hash": "a38e55fb4fa809bbe5e54616394ff27c",
+   "first_seen": "2026-07-28T03:38:58.769959+00:00",
+   "kept": true,
+   "title": "Performance of multimodal large language models in interpreting lateral cephalometric superimpositions: A comparative observer-performance study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-27T10:00:00+00:00",
+   "summary": "Multimodal large language models substantially underperformed a second-year orthodontic resident at interpreting cephalometric superimpositions without expert review.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03044-z",
+   "title_hash": "4c2d9bdc85ca49567faf172515e9bf9d",
+   "first_seen": "2026-07-28T03:38:58.769959+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; digital mental health interventions without AI focus"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Where-Claude-Opus-5-Fits-in-Your-Model-Rotation-e3mkfcc",
+   "title_hash": "f97a9f824456b1f580f349d3d8e2bed2",
+   "first_seen": "2026-07-28T03:38:58.769959+00:00",
+   "kept": false,
+   "reason": "daily news recap from a generalist channel without substantive analysis of medical or educational relevance"
   }
  ],
  "digests": [
@@ -24214,19 +24288,19 @@
  "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A comparative analysis of large language model performance on national board and specialty exams reveals both advances and ongoing limitations in AI-supported medical assessment, with Gemini-2.0 achieving the highest accuracy in radiology resident testing under standardized conditions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0\">[4]</a>. Evaluations of LLM-generated multiple-choice questions show moderate to strong agreement with expert review on cognitive level and technical flaws, but weak alignment on learning outcomes, indicating that AI tools can assist but not replace expert input in educational content development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0\">[5]</a>. Chain-of-thought prompting methods have improved model effectiveness for faculty in clinical record evaluation tasks, suggesting more refined prompting strategies may enhance assessment reliability <a href=\"https://mededu.jmir.org/2026/1/e88652\">[11]</a>. Meanwhile, a structured framework proposes integrating AI into anatomy education in ways that foster customized feedback and immersive learning, tying advancements in model capabilities to pedagogical principles <a href=\"https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0\">[2]</a>.\n\nAlso this week: the section features eight new model releases and five papers on assessment, as well as studies on student perceptions, curriculum mapping, and generative AI applications in long-term care and pediatric emergency medicine. Medical students express concern over ethics and job displacement, and vision-language models are evaluated for generating self-assessment questions in neurosurgery.",
-   "hash": "90be57fa3edf2b29",
-   "date": "July 27, 2026"
+   "text": "Comparative studies continue to shape the discussion around artificial intelligence in medical education, with new evidence highlighting both the strengths and limitations of large language models in exam settings and clinical evaluations. Gemini-2.0 achieved the highest accuracy on China’s radiology resident exam but did not benefit from self-doubt prompting <a href=\"https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0\">[5]</a>, while multimodal models fell short of human performance on cephalometric imaging interpretation without expert involvement <a href=\"https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0\">[2]</a>. Chain-of-thought prompting was shown to improve assessment of medical student clinical records, suggesting practical pathways for better integration in student evaluation <a href=\"https://mededu.jmir.org/2026/1/e88652\">[12]</a>. Survey results indicate that medical students recognize AI’s potential but remain concerned about ethical risks and lack formal training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0\">[14]</a>. Meanwhile, targeted frameworks are emerging for anatomy education, focusing on leveraging AI-driven feedback and customization while maintaining strong pedagogical grounding <a href=\"https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0\">[3]</a>.\n\nAlso this week: the section covers eight new model releases, five papers on assessment and feedback, five studies evaluating AI on medical exams or benchmarks, and three investigations into attitudes toward adoption in clinical and educational settings. The survey of interventional pulmonologists explores perceptions of AI-related deskilling in practice.",
+   "hash": "dd3a8dc0cfcb385c",
+   "date": "July 28, 2026"
   },
   "clinical_practice": {
-   "text": "A new multilevel AI-driven quality control system is now able to identify errors in medical records automatically, offering more consistent and comprehensive review compared to manual methods <a href=\"https://medinform.jmir.org/2026/1/e80580\">[1]</a>. At the model level, advances in multimodal reasoning are expanding clinical analysis capabilities, as demonstrated by the introduction of QoQ-Med3 for handling text, imaging, and structured data <a href=\"https://www.nature.com/articles/s41746-026-02945-3\">[3]</a>. In diagnostic practice, AI systems are being deployed to assist in both disease detection and screening, including interpretable models for differentiating skin conditions and supporting leukemia screening based on routine blood tests <a href=\"https://medinform.jmir.org/2026/1/e81942\">[8]</a>. Meanwhile, a major commentary argues for a critical reassessment of medical AI evaluation standards, recommending more rigorous task-based benchmarks to accurately measure system performance <a href=\"https://www.nature.com/articles/s41591-026-04539-8\">[2]</a>.\n\nAlso this week: digital decision support tools are assisting early exclusion of negative cases in lupus anticoagulant diagnostics, and wearable device data is powering new algorithms in atrial fibrillation screening. The section also includes eight new model releases, five papers on assessment frameworks, and two items addressing digital clinical documentation improvements.",
-   "hash": "d186588a8754b137",
-   "date": "July 27, 2026"
+   "text": "Advances in clinical decision support are highlighted by randomized multicenter validation of an AI system for inherited retinal diseases, which integrates data across imaging and clinical sources to deliver diagnostic accuracy improvements <a href=\"https://www.nature.com/articles/s41591-026-04545-w\">[13]</a>. In medical imaging and diagnostics, a new foundation model, QoQ-Med3, demonstrates multimodal reasoning capabilities intended for clinical tasks involving text, imaging, and structured data <a href=\"https://www.nature.com/articles/s41746-026-02945-3\">[4]</a>. Within safety and evaluation, commentary in Nature Medicine stresses the need for stronger benchmarking to reliably measure medical AI performance and impact <a href=\"https://www.nature.com/articles/s41591-026-04539-8\">[3]</a>. Progress in medical documentation is evident, including real-time quality management systems leveraging AI to flag errors and support record consistency <a href=\"https://medinform.jmir.org/2026/1/e80580\">[2]</a>. Wearable ECG-based screening, interpretable models for leukemia detection, and federated learning for secure histopathology development in Germany further reinforce the section’s focus on practical deployment of AI models in diverse patient-care settings <a href=\"https://www.nature.com/articles/s41746-026-02958-y\">[1]</a>.\n\nAlso this week: the section includes eight new model releases across radiology, dermatology, hematology, and cardiology. Five papers cover assessment, quality assurance, and transparency, with topics spanning clinical documentation accuracy and human-in-the-loop symptom recognition. Two studies address digital record deployment and paper-to-digital field systems, including the rapid rollout of digital casualty cards during armed conflict by the Israeli Defense Forces.",
+   "hash": "82c09b69a4675809",
+   "date": "July 28, 2026"
   },
   "general_ai": {
-   "text": "The Open Secure AI Alliance formed by Nvidia, Microsoft, SpaceX, and IBM aims to advance open-source AI security tools amid rising concerns about system safety and reliability <a href=\"https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity\">[3]</a>. Anthropic’s launch of Claude Opus 5 marks a shift toward efficiency, with improvements in prompt injection resistance and operational cost noted, though absolute capability gains remain incremental <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[8]</a>. Meanwhile, NVIDIA’s Cosmos-H-Dreams introduces real-time generative simulation for surgical robotics, expanding AI’s reach into medical procedural training and research <a href=\"https://huggingface.co/blog/nvidia/cosmos-h-dreams\">[4]</a>. Researchers continue to explore evaluation frameworks, adopting multilayer taxonomies to organize large language model assessment and to pinpoint benchmarking gaps that affect comparison across studies <a href=\"https://arxiv.org/abs/2607.22182\">[6]</a>.\n\nAlso this week: five new model releases, three studies centered on safety and reliability, and two papers on evaluation advances bring additional coverage to this section. Policy developments include Nvidia, Microsoft, and Meta’s caution against overregulating open-weight models, and AlphaFold was applied to enhance gene-editing protein safety.",
-   "hash": "ca1889409cd0c6da",
-   "date": "July 27, 2026"
+   "text": "Moonshot AI released open weights for Kimi K3, a large model with 2.8 trillion parameters and a modified MIT license, marking a notable shift in openness around model development <a href=\"https://simonwillison.net/2026/Jul/27/kimi-k3\">[1]</a>. Anthropic launched Claude Opus 5, highlighting improved token efficiency and cost reductions without claiming a major jump in overall capability <a href=\"https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap\">[12]</a>. The sector saw increased efforts on safety and reliability: Claude Opus 5 demonstrated better resistance to prompt injection attacks <a href=\"https://simonwillison.net/2026/Jul/25/boris-cherny\">[10]</a>, and AlphaFold was used to redesign gene-editing proteins, targeting fewer errors and greater safety in biomedical contexts <a href=\"https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer\">[13]</a>. Benchmarking advances included the introduction of MirrorCode, measuring AI performance in week-long programming tasks, which current systems could not fully tackle <a href=\"https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker\">[4]</a>.\n\nAlso this week: six new models, three safety and reliability papers, two research methods publications, and two benchmark or evaluation updates were posted. There is one item focused on policy, and Nvidia released Cosmos-H-Dreams, a real-time generative simulation model for surgical robotics.",
+   "hash": "0e3223ade2d9c6a3",
+   "date": "July 28, 2026"
   }
  },
  "opportunity_snapshot": {

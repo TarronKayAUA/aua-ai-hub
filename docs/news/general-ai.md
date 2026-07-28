@@ -13,14 +13,29 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>The Open Secure AI Alliance formed by Nvidia, Microsoft, SpaceX, and IBM aims to advance open-source AI security tools amid rising concerns about system safety and reliability <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">[3]</a>. Anthropic’s launch of Claude Opus 5 marks a shift toward efficiency, with improvements in prompt injection resistance and operational cost noted, though absolute capability gains remain incremental <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[8]</a>. Meanwhile, NVIDIA’s Cosmos-H-Dreams introduces real-time generative simulation for surgical robotics, expanding AI’s reach into medical procedural training and research <a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams">[4]</a>. Researchers continue to explore evaluation frameworks, adopting multilayer taxonomies to organize large language model assessment and to pinpoint benchmarking gaps that affect comparison across studies <a href="https://arxiv.org/abs/2607.22182">[6]</a>.</p>
-<p>Also this week: five new model releases, three studies centered on safety and reliability, and two papers on evaluation advances bring additional coverage to this section. Policy developments include Nvidia, Microsoft, and Meta’s caution against overregulating open-weight models, and AlphaFold was applied to enhance gene-editing protein safety.</p>
-<p class="section-brief-date">The picture as of July 27, 2026; numbered links go to the items below.</p>
+<p>Moonshot AI released open weights for Kimi K3, a large model with 2.8 trillion parameters and a modified MIT license, marking a notable shift in openness around model development <a href="https://simonwillison.net/2026/Jul/27/kimi-k3">[1]</a>. Anthropic launched Claude Opus 5, highlighting improved token efficiency and cost reductions without claiming a major jump in overall capability <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[12]</a>. The sector saw increased efforts on safety and reliability: Claude Opus 5 demonstrated better resistance to prompt injection attacks <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[10]</a>, and AlphaFold was used to redesign gene-editing proteins, targeting fewer errors and greater safety in biomedical contexts <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[13]</a>. Benchmarking advances included the introduction of MirrorCode, measuring AI performance in week-long programming tasks, which current systems could not fully tackle <a href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker">[4]</a>.</p>
+<p>Also this week: six new models, three safety and reliability papers, two research methods publications, and two benchmark or evaluation updates were posted. There is one item focused on policy, and Nvidia released Cosmos-H-Dreams, a real-time generative simulation model for surgical robotics.</p>
+<p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Jul/27/kimi-k3">moonshotai/Kimi-K3</a>
+    <p class="news-card-summary">Moonshot AI released open weights for Kimi K3, a 2.8 trillion parameter model, on Hugging Face with a modified MIT license.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.anthropic.com/news/position-open-weights-models">Our position on open-weights models</a>
+    <p class="news-card-summary">Anthropic published a position statement on open-weights models addressing their approach to model release and licensing.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.sanity.io/images/4zrzovbb/website/62993bb857986e2808c2a75024f384e7b85312b6-2400x1254.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 27, 2026</span></div>
@@ -120,21 +135,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Anthropic released Claude Opus 5, achieving capabilities close to Claude Fable 5 across many domains.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKB364_CLAUDE_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v5c3vt/more_than_20_companies_including_nvidia_meta">More than 20 companies including NVIDIA, Meta, Microsoft, Palantir, and Hugging Face have signed a letter urging policymakers to avoid premature restrictions on open weight models.</a>
-    <p class="news-card-summary">Twenty companies including NVIDIA, Meta, and Microsoft signed a letter urging policymakers to avoid premature restrictions on open-weight AI models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/4yvf9z8xm6fh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=268ac51182255d3c2a12f1562b616750fe340e19" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html">Nvidia, Microsoft, Meta warn against overregulating open-weight models</a>
-    <p class="news-card-summary">Nvidia, Microsoft, and Meta issued a letter cautioning against overregulation of open-weight artificial intelligence models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://image.cnbcfm.com/api/v1/image/108173882-1752844539526-gettyimages-2225696381-mms28707_1cm2uml7.jpeg?v=1752844582&amp;w=1920&amp;h=1080" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
