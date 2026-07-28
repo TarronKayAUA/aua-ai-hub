@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new multilevel AI-driven quality control system is improving medical record accuracy by automatically flagging documentation errors in real time, offering enhanced coverage and consistency over manual review processes <a href="https://medinform.jmir.org/2026/1/e80580">[3]</a>. Large language models are also being applied to clinical documentation, where researchers examine their ability to detect inconsistencies and identify reliability limitations in automated review <a href="https://arxiv.org/abs/2607.22954">[1]</a>. Advances in clinical decision support include an interpretable AI model enabling real-time leukemia screening through multicenter routine blood tests <a href="https://www.nature.com/articles/s41746-026-03016-3">[7]</a> and a multimodal reasoning foundation model designed to support clinical analysis across diverse data types <a href="https://www.nature.com/articles/s41746-026-02945-3">[5]</a>. Meanwhile, efforts to define and measure medical AI capabilities are taking shape, with a call for more rigorous benchmarks and task-based frameworks to guide evaluation <a href="https://www.nature.com/articles/s41591-026-04539-8">[4]</a>.</p>
-<p>Also this week: eight new model releases, five papers on assessment or diagnosis, and three items covering digital clinical documentation. Topics range from interpretable deep learning for dermatological diagnosis to secure federated learning deployment for histopathology AI. The Israeli Defense Forces&#x27; rapid field deployment of digital documentation technology during wartime demonstrates evolving solutions in emergency care.</p>
+<p>A pilot study evaluated ChatGPT-5.1 for predicting intracranial injury and guiding CT decisions in patients with mild traumatic brain injury, highlighting ongoing exploration of large language models in diagnostic workflows <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Advances in prenatal ultrasound also saw the development of an automated biometric measurement system aimed at improving early detection of complex congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[2]</a>. Attention to digital documentation continues with research on automated detection of inconsistencies in electronic health records, underlining challenges in reliability as hospitals increase reliance on AI review systems <a href="https://arxiv.org/abs/2607.22954">[3]</a>. At a national scale, secure deployment of histopathology AI through federated learning has been demonstrated, supporting clinical data privacy while enabling collaborative model training <a href="https://www.nature.com/articles/s41746-026-02958-y">[4]</a>.</p>
+<p>Also this week: clinical practice items cover imaging and diagnostics innovations, new clinical decision support tools, and documentation management developments. The section features eight contributions in imaging and diagnostics and four on decision support, including a Nature Medicine commentary proposing new medical AI benchmarks and an interpretable real-time leukemia screening model validated across institutions.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Evaluation of ChatGPT-5 for CT Imaging in Canadian CT Head Rule-Positive Mild Traumatic Brain Injury: A Pilot Study</a>
+    <p class="news-card-summary">Pilot study evaluates ChatGPT-5.1 for predicting intracranial injury and determining computed tomography necessity in mild traumatic brain injury.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Fully Automated Biometric Parameter Measurement in Prenatal Ultrasound Screening for Total Anomalous Pulmonary Venous Connection</a>
+    <p class="news-card-summary">Study develops fully automated biometric measurement in prenatal ultrasound to improve detection of total anomalous pulmonary venous connection.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
@@ -33,6 +47,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02958-y">Nationwide federated learning for histopathology: secure deployment across Germany behind firewalls</a>
     <p class="news-card-summary">Federated learning enabled secure deployment of histopathology AI across German hospitals while keeping data behind institutional firewalls.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03051-0">Grounding Radiology Report Findings into Medical Image Segmentation</a>
+    <p class="news-card-summary">Peer-reviewed research on grounding radiology report findings into medical image segmentation to link text descriptions with image regions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03073-8">Operationalizing the EU AI Act in a comprehensive cancer center through an institutional governance framework</a>
+    <p class="news-card-summary">Peer-reviewed study describes institutional governance framework for operationalizing the European Union AI Act in a comprehensive cancer center.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -96,34 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79808">From Paper to Digital Medical Documentation in the Field: The Rapid Development and Deployment of the Digital Casualty Card System During a War</a>
     <p class="news-card-summary">The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">AI-assisted diagnosis of nail unit melanoma and melanonychia using a clinical deep learning model</a>
-    <p class="news-card-summary">A convolutional neural network model improved diagnostic accuracy for nail unit melanoma versus melanonychia and increased agreement among human evaluators, showing promise as a screening aid.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.20428">Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events</a>
-    <p class="news-card-summary">A human-in-the-loop large language model framework detected cutaneous immune-related adverse events from clinical notes with higher accuracy and inter-rater agreement than manual review alone.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04545-w">AI-based clinician decision support system for diagnosis of inherited retinal diseases: a multicenter, randomized trial</a>
-    <p class="news-card-summary">An AI system for inherited retinal disease diagnosis integrating multimodal imaging and clinical data achieved 88.5% accuracy in a randomized multicenter trial.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03008-3">Predicting major adverse cardiovascular events from incomplete clinical data through interpretable multimodal AI system</a>
-    <p class="news-card-summary">Multimodal AI system predicts major adverse cardiovascular events from incomplete clinical data with interpretability for clinical use.</p>
   </div>
 </div>
 </div>

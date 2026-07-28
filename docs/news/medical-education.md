@@ -13,20 +13,42 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Alignment and performance of artificial intelligence in medical education are the focus of several studies. Research exploring reinforcement learning methods redirects large language models from direct answering toward Socratic guidance in student inquiry <a href="https://arxiv.org/abs/2607.22996">[1]</a>. Separate observer-performance analyses indicate weaknesses of multimodal language models at clinical interpretation tasks, such as cephalometric superimpositions and radiographic knee osteoarthritis grading, with performance falling short of expert review in both accuracy and reproducibility <a href="https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0">[3]</a>. Surveys of clinicians and trainees provide insight into their current confidence and training as well as perceived risks-including concerns over AI-induced deskilling and mitigation strategies in interventional pulmonology <a href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[10]</a>. Efforts continue to refine assessment tools, with experiments demonstrating that chain-of-thought prompting can improve model reliability for evaluating clinical records <a href="https://mededu.jmir.org/2026/1/e88652">[14]</a>.</p>
-<p>Also this week: anatomy-centered curricular frameworks, systematic reviews of AI’s effectiveness in long-term care, and analysis of clinical documentation risks broaden coverage. Eight new model releases and five papers on assessment reflect ongoing research into model benchmarking, quality of exam questions, and adoption attitudes.</p>
+<p>A new study finds that efficiency in detecting targets with low-power microscopy is a modifiable cognitive biomarker, offering better prediction of diagnostic accuracy than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Elsewhere, efforts to improve educational outcomes include aligning language models as Socratic guides to foster student inquiry rather than simply providing answers <a href="https://arxiv.org/abs/2607.22996">[3]</a>. Multimodal large language models continue to see comparative evaluation for their ability to interpret medical images, with results showing underperformance relative to trained clinicians in orthodontics <a href="https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0">[6]</a>. Ongoing research examines risks associated with AI-generated clinical documentation in both educational and forensic settings <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[5]</a>, while faculty attitudes are shifting, with some moving from resistance to actively assessing AI readiness across institutions <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance">[4]</a>.</p>
+<p>Also this week: Eight new model releases and five papers on assessment add breadth, including studies on multiple-choice question quality and chatbot performance on pediatric gastroenterology board-style exams. The section also reports on survey findings from hematology-oncology fellows and presents a peer-reviewed framework for anatomy-centered AI-enhanced learning.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Screening efficiency over experience: Rapid target detection in low-power field as a modifiable cognitive biomarker for diagnostic accuracy in digital cytology</a>
+    <p class="news-card-summary">Research identifies efficiency in detecting targets in low-power field microscopy as a modifiable cognitive biomarker predicting diagnostic accuracy better than experience alone.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42512654?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">LLMs in Medical Education for Autism Caregivers: A Comparative Evaluation of Accuracy, Readability, Actionability, and Neurodiversity-Affirming Language</a>
+    <p class="news-card-summary">Study evaluates three large language models as health information tools for autism caregivers in Saudi Arabia, comparing accuracy, readability, actionability, and neurodiversity-affirming language.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.22996">Beyond Direct Answering: Aligning Educational LLMs as Socratic Guides via Heuristic Reinforcement Learning</a>
     <p class="news-card-summary">Research aligns a language model toward Socratic tutoring through reinforcement learning, guiding student inquiry instead of direct answering.</p>
   </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance">Why One Professor Abandoned the AI Resistance</a>
+    <p class="news-card-summary">Profile of a professor who shifted from resisting artificial intelligence to measuring AI readiness across colleges and universities.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1705108764.jpg?itok=bdB9Rlla" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
@@ -103,27 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42497596?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">Applications of generative artificial intelligence in long-term care services: A systematic review of the evidence on efficacy for improving resident health related quality of life</a>
     <p class="news-card-summary">Systematic review finds generative AI shows promise for quality and personalization in long-term care but lacks evidence on effectiveness, safety, and cost-effectiveness needed for responsible deployment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.20446">Distinguishing Artificial from Authentic: Evaluating LLMs for Detecting LLM-Generated Content</a>
-    <p class="news-card-summary">Large language models show limited ability to reliably detect their own generated content across student submissions and program code.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88652">Benefits of Chain-of-Thought Prompting for Clinical Record Rubric Evaluation in Undergraduate Medical Education: Experimental Evaluation Study With Medical Faculty</a>
-    <p class="news-card-summary">Experimental study demonstrates that chain-of-thought prompting improves large language model performance for evaluating clinical records in medical student assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e70199">Performance of GPT-4o and Claude in Medical Ethics Scenarios: Comparative Study</a>
-    <p class="news-card-summary">Peer-reviewed comparison of GPT-4o and Claude Sonnet 4 performance on medical ethics scenarios including specialty-based cases.</p>
   </div>
 </div>
 </div>

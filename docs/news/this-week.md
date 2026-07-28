@@ -13,21 +13,43 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Alignment and performance of artificial intelligence in medical education are the focus of several studies. Research exploring reinforcement learning methods redirects large language models from direct answering toward Socratic guidance in student inquiry <a href="https://arxiv.org/abs/2607.22996">[1]</a>. Separate observer-performance analyses indicate weaknesses of multimodal language models at clinical interpretation tasks, such as cephalometric superimpositions and radiographic knee osteoarthritis grading, with performance falling short of expert review in both accuracy and reproducibility <a href="https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0">[3]</a>. Surveys of clinicians and trainees provide insight into their current confidence and training as well as perceived risks-including concerns over AI-induced deskilling and mitigation strategies in interventional pulmonology <a href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">[10]</a>. Efforts continue to refine assessment tools, with experiments demonstrating that chain-of-thought prompting can improve model reliability for evaluating clinical records <a href="https://mededu.jmir.org/2026/1/e88652">[14]</a>.</p>
-<p>Also this week: anatomy-centered curricular frameworks, systematic reviews of AI’s effectiveness in long-term care, and analysis of clinical documentation risks broaden coverage. Eight new model releases and five papers on assessment reflect ongoing research into model benchmarking, quality of exam questions, and adoption attitudes.</p>
+<p>A new study finds that efficiency in detecting targets with low-power microscopy is a modifiable cognitive biomarker, offering better prediction of diagnostic accuracy than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Elsewhere, efforts to improve educational outcomes include aligning language models as Socratic guides to foster student inquiry rather than simply providing answers <a href="https://arxiv.org/abs/2607.22996">[3]</a>. Multimodal large language models continue to see comparative evaluation for their ability to interpret medical images, with results showing underperformance relative to trained clinicians in orthodontics <a href="https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0">[6]</a>. Ongoing research examines risks associated with AI-generated clinical documentation in both educational and forensic settings <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[5]</a>, while faculty attitudes are shifting, with some moving from resistance to actively assessing AI readiness across institutions <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance">[4]</a>.</p>
+<p>Also this week: Eight new model releases and five papers on assessment add breadth, including studies on multiple-choice question quality and chatbot performance on pediatric gastroenterology board-style exams. The section also reports on survey findings from hematology-oncology fellows and presents a peer-reviewed framework for anatomy-centered AI-enhanced learning.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Screening efficiency over experience: Rapid target detection in low-power field as a modifiable cognitive biomarker for diagnostic accuracy in digital cytology</a>
+        <p class="news-card-summary">Research identifies efficiency in detecting targets in low-power field microscopy as a modifiable cognitive biomarker predicting diagnostic accuracy better than experience alone.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42512654?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">LLMs in Medical Education for Autism Caregivers: A Comparative Evaluation of Accuracy, Readability, Actionability, and Neurodiversity-Affirming Language</a>
+        <p class="news-card-summary">Study evaluates three large language models as health information tools for autism caregivers in Saudi Arabia, comparing accuracy, readability, actionability, and neurodiversity-affirming language.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2607.22996">Beyond Direct Answering: Aligning Educational LLMs as Socratic Guides via Heuristic Reinforcement Learning</a>
         <p class="news-card-summary">Research aligns a language model toward Socratic tutoring through reinforcement learning, guiding student inquiry instead of direct answering.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance">Why One Professor Abandoned the AI Resistance</a>
+        <p class="news-card-summary">Profile of a professor who shifted from resisting artificial intelligence to measuring AI readiness across colleges and universities.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1705108764.jpg?itok=bdB9Rlla" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -240,13 +262,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study evaluates an agentic AI system for psychiatry consultation training, assessing feasibility for helping residents practice and receive feedback on standardized clinical encounters.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478089?fc=20260609215449&amp;ff=20260721063425&amp;v=2.20.0">Evaluation of Generative Artificial Intelligence Models in Producing Anatomically Accurate Illustrations: A Comparative Study of Text-to-Image Generators</a>
-        <p class="news-card-summary">A comparative study evaluates the anatomical accuracy of text-to-image generative AI models for creating medical illustrations in anatomy education.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
@@ -275,41 +290,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study found preclinical students showed automation bias with AI diagnostic assistance and benefited most when baseline accuracy was weakest, suggesting need for foundational AI literacy coursework.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.17230">Robust Summarization of Doctor-Patient Conversations: TalTech Systems for the Beyond Transcription Challenge</a>
-        <p class="news-card-summary">System for generating SOAP notes directly from doctor-patient conversation audio without intermediate transcription, tested on Korean-English medical encounters.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.17237">AI_LectureNote: A Retrospective Pilot Study of a Post-ASR Workflow for English-Script Rendering and Semantic Drift in Korean-English Medical Lectures</a>
-        <p class="news-card-summary">Workflow for post-processing speech-to-text output of medical lectures to restore Latin-script terminology and improve readability of study transcripts.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 20, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42476037?fc=20260609215449&amp;ff=20260721024244&amp;v=2.20.0">Would artificial intelligence pass a Geriatrics exam?: evaluating conversational responses and their accuracy</a>
-        <p class="news-card-summary">Study evaluates AI model performance on geriatrics exam questions, finding high accuracy on theoretical questions but limitations in variability of real clinical scenarios.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A new multilevel AI-driven quality control system is improving medical record accuracy by automatically flagging documentation errors in real time, offering enhanced coverage and consistency over manual review processes <a href="https://medinform.jmir.org/2026/1/e80580">[3]</a>. Large language models are also being applied to clinical documentation, where researchers examine their ability to detect inconsistencies and identify reliability limitations in automated review <a href="https://arxiv.org/abs/2607.22954">[1]</a>. Advances in clinical decision support include an interpretable AI model enabling real-time leukemia screening through multicenter routine blood tests <a href="https://www.nature.com/articles/s41746-026-03016-3">[7]</a> and a multimodal reasoning foundation model designed to support clinical analysis across diverse data types <a href="https://www.nature.com/articles/s41746-026-02945-3">[5]</a>. Meanwhile, efforts to define and measure medical AI capabilities are taking shape, with a call for more rigorous benchmarks and task-based frameworks to guide evaluation <a href="https://www.nature.com/articles/s41591-026-04539-8">[4]</a>.</p>
-<p>Also this week: eight new model releases, five papers on assessment or diagnosis, and three items covering digital clinical documentation. Topics range from interpretable deep learning for dermatological diagnosis to secure federated learning deployment for histopathology AI. The Israeli Defense Forces&#x27; rapid field deployment of digital documentation technology during wartime demonstrates evolving solutions in emergency care.</p>
+<p>A pilot study evaluated ChatGPT-5.1 for predicting intracranial injury and guiding CT decisions in patients with mild traumatic brain injury, highlighting ongoing exploration of large language models in diagnostic workflows <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Advances in prenatal ultrasound also saw the development of an automated biometric measurement system aimed at improving early detection of complex congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[2]</a>. Attention to digital documentation continues with research on automated detection of inconsistencies in electronic health records, underlining challenges in reliability as hospitals increase reliance on AI review systems <a href="https://arxiv.org/abs/2607.22954">[3]</a>. At a national scale, secure deployment of histopathology AI through federated learning has been demonstrated, supporting clinical data privacy while enabling collaborative model training <a href="https://www.nature.com/articles/s41746-026-02958-y">[4]</a>.</p>
+<p>Also this week: clinical practice items cover imaging and diagnostics innovations, new clinical decision support tools, and documentation management developments. The section features eight contributions in imaging and diagnostics and four on decision support, including a Nature Medicine commentary proposing new medical AI benchmarks and an interpretable real-time leukemia screening model validated across institutions.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Evaluation of ChatGPT-5 for CT Imaging in Canadian CT Head Rule-Positive Mild Traumatic Brain Injury: A Pilot Study</a>
+        <p class="news-card-summary">Pilot study evaluates ChatGPT-5.1 for predicting intracranial injury and determining computed tomography necessity in mild traumatic brain injury.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Fully Automated Biometric Parameter Measurement in Prenatal Ultrasound Screening for Total Anomalous Pulmonary Venous Connection</a>
+        <p class="news-card-summary">Study develops fully automated biometric measurement in prenatal ultrasound to improve detection of total anomalous pulmonary venous connection.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
@@ -322,6 +330,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02958-y">Nationwide federated learning for histopathology: secure deployment across Germany behind firewalls</a>
         <p class="news-card-summary">Federated learning enabled secure deployment of histopathology AI across German hospitals while keeping data behind institutional firewalls.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03051-0">Grounding Radiology Report Findings into Medical Image Segmentation</a>
+        <p class="news-card-summary">Peer-reviewed research on grounding radiology report findings into medical image segmentation to link text descriptions with image regions.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03073-8">Operationalizing the EU AI Act in a comprehensive cancer center through an institutional governance framework</a>
+        <p class="news-card-summary">Peer-reviewed study describes institutional governance framework for operationalizing the European Union AI Act in a comprehensive cancer center.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-documentation">
@@ -521,21 +543,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A locally executable AI system improves preoperative patient communication by mitigating hallucination risk, protecting data privacy, and reducing energy costs compared to cloud-based large language models.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://www.sensible-med.com/p/guidelines-llms-and-the-laundering">Guidelines, LLMs, and the Laundering of Uncertainty</a>
-        <p class="news-card-summary">Commentary examines how large language models and clinical guidelines interact and the risks of false confidence in automated clinical recommendations.</p>
-      </div>
-      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!l_TJ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8251ac79-ca1e-42ca-906d-5914f140b7d1_8256x5504.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.16989">Real-World Evaluation of an AI Agent Drafting Translational Impact Summaries</a>
-        <p class="news-card-summary">Real-world evaluation of AI agent that automates assembly of research impact documentation for clinical and translational science programs, reducing manual staff work from 15 hours per scholar.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 21, 2026</span></div>
@@ -553,9 +560,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -861,27 +868,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">China&#x27;s Z.ai model demonstrates competitive coding capability at lower cost, prompting developers to adopt cost-aware strategies that route straightforward tasks to cheaper models and complex problems to frontier systems.</p>
       </div>
       <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-smartphone-running-a-chinese-ai-application-called-z-ai.jpg?id=67508250&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.16451">Committed Before Reasoning: Behavioral Reproduction and Preliminary Activation-Level Evidence of Answer Pre-Commitment in an Open-Weight LLM</a>
-        <p class="news-card-summary">Study documents that language models sometimes commit to answers before reasoning and justify them post-hoc, even when contradicting task premises, with preliminary neural evidence.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.16669">OpenLanguageModel: Readable and Composable Small-Language-Model Pretraining for Education and Research</a>
-        <p class="news-card-summary">Open-source PyTorch library for transparent construction and pretraining of small language models designed for education and research with readable composable components.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.16704">Though Language Models Err While They Strive: Conformal Prediction for Self-Correcting Scientific Generation</a>
-        <p class="news-card-summary">Framework using conformal prediction to provide statistical guarantees for scientific validity in language model outputs, addressing frequent violations of scientific principles.</p>
-      </div>
     </div>
     </div>
 

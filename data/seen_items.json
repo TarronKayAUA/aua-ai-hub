@@ -24385,6 +24385,182 @@
    "category": "medical_education",
    "score": 3.0,
    "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42516116?fc=20260609215449&ff=20260728064545&v=2.20.0",
+   "title_hash": "e5d66b4a54360d29b9f0c8e5ab6dcd62",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&ff=20260728064545&v=2.20.0",
+   "title_hash": "94cc91fe524e34ca23581474f408c56f",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": true,
+   "title": "Screening efficiency over experience: Rapid target detection in low-power field as a modifiable cognitive biomarker for diagnostic accuracy in digital cytology",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-28T10:00:00+00:00",
+   "summary": "Research identifies efficiency in detecting targets in low-power field microscopy as a modifiable cognitive biomarker predicting diagnostic accuracy better than experience alone.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42514301?fc=20260609215449&ff=20260728064545&v=2.20.0",
+   "title_hash": "2c0634d88dc8c9a4f55c829d9c52e409",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "narrow domain application with limited relevance to medical education AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42512654?fc=20260609215449&ff=20260728064545&v=2.20.0",
+   "title_hash": "05a2cc1bff9419eaf37e33408406e2b4",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": true,
+   "title": "LLMs in Medical Education for Autism Caregivers: A Comparative Evaluation of Accuracy, Readability, Actionability, and Neurodiversity-Affirming Language",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-28T10:00:00+00:00",
+   "summary": "Study evaluates three large language models as health information tools for autism caregivers in Saudi Arabia, comparing accuracy, readability, actionability, and neurodiversity-affirming language.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&ff=20260728064545&v=2.20.0",
+   "title_hash": "e73b5c980beb41aa7f13e9e0f7f54679",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": true,
+   "title": "Evaluation of ChatGPT-5 for CT Imaging in Canadian CT Head Rule-Positive Mild Traumatic Brain Injury: A Pilot Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-28T10:00:00+00:00",
+   "summary": "Pilot study evaluates ChatGPT-5.1 for predicting intracranial injury and determining computed tomography necessity in mild traumatic brain injury.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&ff=20260728064545&v=2.20.0",
+   "title_hash": "49f1d57598fb8a3dabc05e3358ac6eb2",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": true,
+   "title": "Fully Automated Biometric Parameter Measurement in Prenatal Ultrasound Screening for Total Anomalous Pulmonary Venous Connection",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-28T10:00:00+00:00",
+   "summary": "Study develops fully automated biometric measurement in prenatal ultrasound to improve detection of total anomalous pulmonary venous connection.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/how-not-to-get-fooled-by-the-medical-432",
+   "title_hash": "3caf08296caa0809791da454211e60f9",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "incomplete information; series announcement without substantive content"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix",
+   "title_hash": "864cce1f2e0512b8478458a0fac16a13",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance",
+   "title_hash": "4b78da5cc2870d9576675808fac0f6e1",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": true,
+   "title": "Why One Professor Abandoned the AI Resistance",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-07-28T03:00:00+00:00",
+   "summary": "Profile of a professor who shifted from resisting artificial intelligence to measuring AI readiness across colleges and universities.",
+   "category": "medical_education",
+   "score": 2.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1705108764.jpg?itok=bdB9Rlla",
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/28/why-its-not-x-its-y-framing-pernicious-opinion",
+   "title_hash": "f8a011f39d25ed5b2d402e3a7d77d50e",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "generic commentary without new information or instructive analysis for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03051-0",
+   "title_hash": "e4922d5935ed965f18065d7a5d4513a2",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": true,
+   "title": "Grounding Radiology Report Findings into Medical Image Segmentation",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-28T00:00:00+00:00",
+   "summary": "Peer-reviewed research on grounding radiology report findings into medical image segmentation to link text descriptions with image regions.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03073-8",
+   "title_hash": "f7af8b031f37fa009651cdd0d136cdd1",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": true,
+   "title": "Operationalizing the EU AI Act in a comprehensive cancer center through an institutional governance framework",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-28T00:00:00+00:00",
+   "summary": "Peer-reviewed study describes institutional governance framework for operationalizing the European Union AI Act in a comprehensive cancer center.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04542-z",
+   "title_hash": "54a82c81cb90edf9ccd83c40a8597f67",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04552-x",
+   "title_hash": "cb0da4cabbbb9622f95924ee9bde5544",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04548-7",
+   "title_hash": "6de31865c1018df37b9fea9de6b24690",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04558-5",
+   "title_hash": "a4923822379ba1837e7370ce7ff5a564",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04492-6",
+   "title_hash": "4102e1c0c9f9e64e7df6eec2a10dfaca",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8hk6b/anthropic_is_calling_for_a_ban_on_openweights",
+   "title_hash": "8a4eb729b87bf394dbc75d196ac0d3e8",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "forum discussion of unconfirmed claims without substantive analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XMpGJXm2_Ts",
+   "title_hash": "976dd9fde32fc827400f7fa3830d816b",
+   "first_seen": "2026-07-28T10:45:44.983768+00:00",
+   "kept": false,
+   "reason": "speculation and rumor video with no underlying confirmed events"
   }
  ],
  "digests": [
@@ -24528,13 +24704,13 @@
  "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Alignment and performance of artificial intelligence in medical education are the focus of several studies. Research exploring reinforcement learning methods redirects large language models from direct answering toward Socratic guidance in student inquiry <a href=\"https://arxiv.org/abs/2607.22996\">[1]</a>. Separate observer-performance analyses indicate weaknesses of multimodal language models at clinical interpretation tasks, such as cephalometric superimpositions and radiographic knee osteoarthritis grading, with performance falling short of expert review in both accuracy and reproducibility <a href=\"https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0\">[3]</a>. Surveys of clinicians and trainees provide insight into their current confidence and training as well as perceived risks-including concerns over AI-induced deskilling and mitigation strategies in interventional pulmonology <a href=\"https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0\">[10]</a>. Efforts continue to refine assessment tools, with experiments demonstrating that chain-of-thought prompting can improve model reliability for evaluating clinical records <a href=\"https://mededu.jmir.org/2026/1/e88652\">[14]</a>.\n\nAlso this week: anatomy-centered curricular frameworks, systematic reviews of AI’s effectiveness in long-term care, and analysis of clinical documentation risks broaden coverage. Eight new model releases and five papers on assessment reflect ongoing research into model benchmarking, quality of exam questions, and adoption attitudes.",
-   "hash": "9b0d8c34735edc6b",
+   "text": "A new study finds that efficiency in detecting targets with low-power microscopy is a modifiable cognitive biomarker, offering better prediction of diagnostic accuracy than experience alone <a href=\"https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[1]</a>. Elsewhere, efforts to improve educational outcomes include aligning language models as Socratic guides to foster student inquiry rather than simply providing answers <a href=\"https://arxiv.org/abs/2607.22996\">[3]</a>. Multimodal large language models continue to see comparative evaluation for their ability to interpret medical images, with results showing underperformance relative to trained clinicians in orthodontics <a href=\"https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0\">[6]</a>. Ongoing research examines risks associated with AI-generated clinical documentation in both educational and forensic settings <a href=\"https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0\">[5]</a>, while faculty attitudes are shifting, with some moving from resistance to actively assessing AI readiness across institutions <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance\">[4]</a>.\n\nAlso this week: Eight new model releases and five papers on assessment add breadth, including studies on multiple-choice question quality and chatbot performance on pediatric gastroenterology board-style exams. The section also reports on survey findings from hematology-oncology fellows and presents a peer-reviewed framework for anatomy-centered AI-enhanced learning.",
+   "hash": "cce82d59abf320b5",
    "date": "July 28, 2026"
   },
   "clinical_practice": {
-   "text": "A new multilevel AI-driven quality control system is improving medical record accuracy by automatically flagging documentation errors in real time, offering enhanced coverage and consistency over manual review processes <a href=\"https://medinform.jmir.org/2026/1/e80580\">[3]</a>. Large language models are also being applied to clinical documentation, where researchers examine their ability to detect inconsistencies and identify reliability limitations in automated review <a href=\"https://arxiv.org/abs/2607.22954\">[1]</a>. Advances in clinical decision support include an interpretable AI model enabling real-time leukemia screening through multicenter routine blood tests <a href=\"https://www.nature.com/articles/s41746-026-03016-3\">[7]</a> and a multimodal reasoning foundation model designed to support clinical analysis across diverse data types <a href=\"https://www.nature.com/articles/s41746-026-02945-3\">[5]</a>. Meanwhile, efforts to define and measure medical AI capabilities are taking shape, with a call for more rigorous benchmarks and task-based frameworks to guide evaluation <a href=\"https://www.nature.com/articles/s41591-026-04539-8\">[4]</a>.\n\nAlso this week: eight new model releases, five papers on assessment or diagnosis, and three items covering digital clinical documentation. Topics range from interpretable deep learning for dermatological diagnosis to secure federated learning deployment for histopathology AI. The Israeli Defense Forces&#x27; rapid field deployment of digital documentation technology during wartime demonstrates evolving solutions in emergency care.",
-   "hash": "68ae1fb3448ad0bc",
+   "text": "A pilot study evaluated ChatGPT-5.1 for predicting intracranial injury and guiding CT decisions in patients with mild traumatic brain injury, highlighting ongoing exploration of large language models in diagnostic workflows <a href=\"https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[1]</a>. Advances in prenatal ultrasound also saw the development of an automated biometric measurement system aimed at improving early detection of complex congenital conditions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[2]</a>. Attention to digital documentation continues with research on automated detection of inconsistencies in electronic health records, underlining challenges in reliability as hospitals increase reliance on AI review systems <a href=\"https://arxiv.org/abs/2607.22954\">[3]</a>. At a national scale, secure deployment of histopathology AI through federated learning has been demonstrated, supporting clinical data privacy while enabling collaborative model training <a href=\"https://www.nature.com/articles/s41746-026-02958-y\">[4]</a>.\n\nAlso this week: clinical practice items cover imaging and diagnostics innovations, new clinical decision support tools, and documentation management developments. The section features eight contributions in imaging and diagnostics and four on decision support, including a Nature Medicine commentary proposing new medical AI benchmarks and an interpretable real-time leukemia screening model validated across institutions.",
+   "hash": "e838a98f46bbdbf0",
    "date": "July 28, 2026"
   },
   "general_ai": {
