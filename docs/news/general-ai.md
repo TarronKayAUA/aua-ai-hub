@@ -13,14 +13,36 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Moonshot AI released open weights for Kimi K3, a large model with 2.8 trillion parameters and a modified MIT license, marking a notable shift in openness around model development <a href="https://simonwillison.net/2026/Jul/27/kimi-k3">[1]</a>. Anthropic launched Claude Opus 5, highlighting improved token efficiency and cost reductions without claiming a major jump in overall capability <a href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">[12]</a>. The sector saw increased efforts on safety and reliability: Claude Opus 5 demonstrated better resistance to prompt injection attacks <a href="https://simonwillison.net/2026/Jul/25/boris-cherny">[10]</a>, and AlphaFold was used to redesign gene-editing proteins, targeting fewer errors and greater safety in biomedical contexts <a href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">[13]</a>. Benchmarking advances included the introduction of MirrorCode, measuring AI performance in week-long programming tasks, which current systems could not fully tackle <a href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker">[4]</a>.</p>
-<p>Also this week: six new models, three safety and reliability papers, two research methods publications, and two benchmark or evaluation updates were posted. There is one item focused on policy, and Nvidia released Cosmos-H-Dreams, a real-time generative simulation model for surgical robotics.</p>
+<p>Anthropic released Claude Opus 5, a new model that aims to deliver high performance at reduced cost, which is of interest to those following advances in large language models <a href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5">[14]</a>. Meanwhile, fine-tuning efforts continue to challenge frontier models, with a low-cost reinforcement learning approach on a 9 billion parameter open model achieving outcomes comparable to leading systems in product review tasks <a href="https://fermisense.com/when-machines-take-the-wheel">[3]</a>. Interpretability and safety questions remain active topics, as research finds frontier language models can use hidden reasoning through irrelevant tokens, underscoring challenges for transparency in AI <a href="https://arxiv.org/abs/2607.22925">[2]</a>. Efforts to improve benchmarking include new frameworks for organizing large language model evaluations, with the goal of identifying capability gaps and facilitating comparison across studies <a href="https://arxiv.org/abs/2607.22182">[11]</a>.</p>
+<p>Also this week: five new model releases and four items focused on safety and reliability feature in the section. Industry developments include a position statement from Anthropic about open-weights models and the formation of the Open Secure AI Alliance by Nvidia and Microsoft. The section also covers multimodal pre-training and surgical robotics applications.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.22553">Evaluating the Impact of Reviewer Guideline Design on LLM-Based Automated Peer Review</a>
+    <p class="news-card-summary">Study evaluates how different types of reviewer guidelines affect the performance of language models in automated peer review tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.22925">Not All LLM Reasoning is Visible in the Chain-of-Thought</a>
+    <p class="news-card-summary">Research demonstrates that frontier language models can use irrelevant tokens to perform hidden reasoning not visible in their output, raising implications for interpretability and safety.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://fermisense.com/when-machines-take-the-wheel">A $500 RL fine-tune of a 9B open model beat frontier models on catalog review</a>
+    <p class="news-card-summary">A 500-dollar reinforcement learning fine-tune of a 9-billion parameter open model achieved competitive performance with frontier models on a product review task.</p>
+  </div>
+  <img class="news-card-thumb" src="https://fermisense.com/when-machines-take-the-wheel/og.png?v=2" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 27, 2026</span></div>
@@ -111,29 +133,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5">Introducing Claude Opus 5</a>
     <p class="news-card-summary">Anthropic released Claude Opus 5, described as approaching frontier intelligence at half the cost of previous top-tier models.</p>
   </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">Anthropic&#x27;s Opus 5 is about token efficiency, not a capability leap</a>
-    <p class="news-card-summary">Anthropic released Claude Opus 5 optimized for token efficiency and cost rather than absolute capability gains over its predecessor.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/opus-5-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">Team uses AlphaFold AI to redesign gene-editing proteins to make them safer</a>
-    <p class="news-card-summary">Researchers used AlphaFold to identify and redesign parts of gene-editing proteins that cause errors, improving safety.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2239702658-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release">Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities</a>
-    <p class="news-card-summary">Anthropic released Claude Opus 5, achieving capabilities close to Claude Fable 5 across many domains.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKB364_CLAUDE_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

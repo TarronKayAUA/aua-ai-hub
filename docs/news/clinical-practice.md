@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Advances in clinical decision support are highlighted by randomized multicenter validation of an AI system for inherited retinal diseases, which integrates data across imaging and clinical sources to deliver diagnostic accuracy improvements <a href="https://www.nature.com/articles/s41591-026-04545-w">[13]</a>. In medical imaging and diagnostics, a new foundation model, QoQ-Med3, demonstrates multimodal reasoning capabilities intended for clinical tasks involving text, imaging, and structured data <a href="https://www.nature.com/articles/s41746-026-02945-3">[4]</a>. Within safety and evaluation, commentary in Nature Medicine stresses the need for stronger benchmarking to reliably measure medical AI performance and impact <a href="https://www.nature.com/articles/s41591-026-04539-8">[3]</a>. Progress in medical documentation is evident, including real-time quality management systems leveraging AI to flag errors and support record consistency <a href="https://medinform.jmir.org/2026/1/e80580">[2]</a>. Wearable ECG-based screening, interpretable models for leukemia detection, and federated learning for secure histopathology development in Germany further reinforce the section’s focus on practical deployment of AI models in diverse patient-care settings <a href="https://www.nature.com/articles/s41746-026-02958-y">[1]</a>.</p>
-<p>Also this week: the section includes eight new model releases across radiology, dermatology, hematology, and cardiology. Five papers cover assessment, quality assurance, and transparency, with topics spanning clinical documentation accuracy and human-in-the-loop symptom recognition. Two studies address digital record deployment and paper-to-digital field systems, including the rapid rollout of digital casualty cards during armed conflict by the Israeli Defense Forces.</p>
+<p>A new multilevel AI-driven quality control system is improving medical record accuracy by automatically flagging documentation errors in real time, offering enhanced coverage and consistency over manual review processes <a href="https://medinform.jmir.org/2026/1/e80580">[3]</a>. Large language models are also being applied to clinical documentation, where researchers examine their ability to detect inconsistencies and identify reliability limitations in automated review <a href="https://arxiv.org/abs/2607.22954">[1]</a>. Advances in clinical decision support include an interpretable AI model enabling real-time leukemia screening through multicenter routine blood tests <a href="https://www.nature.com/articles/s41746-026-03016-3">[7]</a> and a multimodal reasoning foundation model designed to support clinical analysis across diverse data types <a href="https://www.nature.com/articles/s41746-026-02945-3">[5]</a>. Meanwhile, efforts to define and measure medical AI capabilities are taking shape, with a call for more rigorous benchmarks and task-based frameworks to guide evaluation <a href="https://www.nature.com/articles/s41591-026-04539-8">[4]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment or diagnosis, and three items covering digital clinical documentation. Topics range from interpretable deep learning for dermatological diagnosis to secure federated learning deployment for histopathology AI. The Israeli Defense Forces&#x27; rapid field deployment of digital documentation technology during wartime demonstrates evolving solutions in emergency care.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.22954">Toward Automated Detection of Documentation Inconsistencies in Electronic Health Records</a>
+    <p class="news-card-summary">Study applies language models to detect inconsistencies in discharge summaries and characterizes failure modes limiting reliability of automated documentation review.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03008-3">Predicting major adverse cardiovascular events from incomplete clinical data through interpretable multimodal AI system</a>
     <p class="news-card-summary">Multimodal AI system predicts major adverse cardiovascular events from incomplete clinical data with interpretability for clinical use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 23, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e87887">Decision Support Framework for Quality Assurance and Enhancement of Therapeutic Artificial Intelligence Systems: Mixed Methods Pilot Study</a>
-    <p class="news-card-summary">Pilot study introduces EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots in digital mental health services.</p>
   </div>
 </div>
 </div>
