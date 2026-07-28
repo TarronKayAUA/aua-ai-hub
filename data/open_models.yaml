@@ -225,3 +225,18 @@
   license: Apache 2.0
   last_reviewed: 2026-07-21
   blurb: Inkling is Thinking Machines Lab's first open-weights model, a Mixture-of-Experts transformer with 975B total parameters (41B active) and up to a 1M token context window, released under the Apache 2.0 license.
+
+# Verified 2026-07-28 (content-watch issue #28, owner approved): the HF
+# card tag is "other" with license_name mit; there is no LICENSE file in
+# the repo, and the actual text at
+# https://www.domyn.com/legal/software-licenses/domyn-small was read in
+# full the same day. It is an MIT-pattern grant naming the model:
+# commercial use, modification, redistribution, and sale allowed, notice
+# preservation the only condition, no acceptable-use or field-of-use
+# limits. Label the license from that read, not from the "other" tag.
+- name: Domyn-Small
+  vendor: Domyn (formerly iGenius)
+  url: https://huggingface.co/domyn/Domyn-Small-v1.0
+  license: MIT-style (text on domyn.com)
+  last_reviewed: 2026-07-28
+  blurb: European 10 billion parameter reasoning model from the Milan company Domyn, with a dual thinking mode toggleable from the system prompt, a 32K native context extensible to 128K, and coverage optimized for English, Italian, Spanish, French, and German. Its MIT-style license permits commercial use.

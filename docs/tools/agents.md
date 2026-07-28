@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-14
+last_reviewed: 2026-07-28
 ---
 
 # AI Agents
@@ -86,7 +86,7 @@ More: [Cowork](https://claude.com/product/cowork).
 
 ### Codex (OpenAI)
 
-OpenAI's software agent. Since the July 2026 merge it is a mode of the ChatGPT desktop app, working with local folders, repositories, and terminals, alongside a command-line tool and cloud service. Like Claude Code it is developer-oriented, and the official onboarding below is the most thorough video on this page. Included with paid ChatGPT plans.
+OpenAI's coding agent. Since the July 2026 merge it is part of the ChatGPT desktop app, working with local folders, repositories, and terminals, alongside a command-line tool, an IDE extension, and a cloud service. Like Claude Code it is developer-oriented, and the official onboarding below is the most thorough video on this page. Included with every ChatGPT plan, including Free.
 
 <!-- render:guide-videos:agents:codex -->
 
@@ -94,7 +94,7 @@ More: [Codex](https://openai.com/codex/) and its [quickstart](https://learn.chat
 
 ### ChatGPT Work (OpenAI)
 
-OpenAI's agent for finished work, and the successor to the former Agent Mode after the July 2026 desktop app merge: give it an outcome and it researches, works in steps, and returns documents, spreadsheets, slides, or web apps rather than chat, with confirmation prompts before consequential steps. On the desktop app it can use local files and applications with your permission. Still the gentlest entry point on this page. The walkthrough below predates the merge: the interface has changed, the concepts have not.
+OpenAI's agent for finished work: give it an outcome and it researches, works in steps, and returns documents, spreadsheets, slides, sites, or analyses rather than chat, with confirmation prompts before consequential steps. On the desktop app it can use local files and applications with your permission; included with every ChatGPT plan on desktop, with web and mobile on paid plans. Still the gentlest entry point on this page. The walkthrough below predates the July 2026 desktop app merge, when the former Agent Mode became ChatGPT Work: the interface has changed, the concepts have not.
 
 <!-- render:guide-videos:agents:chatgpt-agent -->
 

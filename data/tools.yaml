@@ -143,15 +143,20 @@
   last_reviewed: 2026-07-14
   blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
+# Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
+# learn.chatgpt.com pricing page states Codex is included in every
+# ChatGPT plan including Free, so the paid-only framing was stale. CLI
+# releases remain active (0.145.0, 2026-07-21) and Codex cloud has its
+# own live docs, so the multi-surface framing stays.
 - name: Codex
   vendor: OpenAI
   category: agents
   url: https://openai.com/codex/
-  cost: paid
+  cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-13
-  blurb: OpenAI's software agent, now a mode of the ChatGPT desktop app (merged July 2026) alongside a command-line tool and cloud service. Works with local folders, repositories, and terminals; included with paid ChatGPT plans.
+  last_reviewed: 2026-07-28
+  blurb: OpenAI's coding agent, part of the ChatGPT desktop app since the July 2026 merge, alongside a command-line tool, an IDE extension, and a cloud service. Works with local folders, repositories, and terminals; included with every ChatGPT plan, including Free.
 
 # Renamed from "ChatGPT Agent Mode" 2026-07-13: Agent Mode was
 # consolidated into ChatGPT Work in the 2026-07-09 desktop app merge.
@@ -164,11 +169,17 @@
   vendor: OpenAI
   category: agents
   url: https://openai.com/chatgpt-work/
-  cost: paid
+  cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-13
-  blurb: OpenAI's agent mode for finished work, the successor to Agent Mode after the July 2026 desktop merge. Takes an outcome and returns documents, spreadsheets, slides, or web apps; on the desktop it can use local files and applications with permission.
+  last_reviewed: 2026-07-28
+  # Blurb and cost updated 2026-07-28 (issue #28, owner approved): the
+  # successor-to-Agent-Mode framing no longer appears on any official
+  # page (the renamed-from comment above preserves that history), the
+  # product spans web and mobile as well as desktop, and the marketing
+  # page states availability for all plans on desktop with web and
+  # mobile on paid plans.
+  blurb: "OpenAI's agent for finished work: give it an outcome and it returns documents, spreadsheets, slides, sites, or analyses. On the desktop it can use local files and applications with permission; included with every ChatGPT plan on desktop, with web and mobile on paid plans."
 
 - name: Manus
   # Vendor updated 2026-07-14: acquisition announced 2025-12-30, verified
@@ -442,15 +453,23 @@
   last_reviewed: 2026-07-15
   blurb: Tool for downloading and running open-weights models on your own computer, through a command line or an official desktop chat app. The local app is free; the company separately sells an optional cloud service for models too large to run locally.
 
+# Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
+# vendor's lead product is now LM Studio Bionic, "the AI agent for open
+# models" (announced 2026-07-16), with free local use, paid cloud-model
+# credits, and a not-yet-priced Bionic Pass tier. The original app
+# stays a free separate download per the announcement post ("you can
+# continue to use LM Studio alongside Bionic"); the download page does
+# not label it "Classic" (checked 2026-07-28), so the blurb does not
+# either.
 - name: LM Studio
   vendor: LM Studio
   category: local
   url: https://lmstudio.ai
-  cost: free
+  cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
-  blurb: Desktop application with a graphical interface for downloading and chatting with local language models.
+  last_reviewed: 2026-07-28
+  blurb: Desktop application with a graphical interface for downloading and chatting with local language models, which remains a free download. The vendor's lead product is now LM Studio Bionic, an agent for open models with free local use and optional paid cloud models.
 
 - name: Open WebUI
   vendor: Open WebUI
