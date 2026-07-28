@@ -155,10 +155,15 @@
 
 # Renamed from "ChatGPT Agent Mode" 2026-07-13: Agent Mode was
 # consolidated into ChatGPT Work in the 2026-07-09 desktop app merge.
+# url moved off learn.chatgpt.com/docs/app 2026-07-28 (issue #28): that
+# docs page is a generic index the weekly verifier could not read the
+# product from. The marketing page below serves full text to the
+# pipeline's browser-UA fetch (~800 words, probed 2026-07-28) and was
+# confirmed live in a browser by the owner the same day.
 - name: ChatGPT Work
   vendor: OpenAI
   category: agents
-  url: https://learn.chatgpt.com/docs/app
+  url: https://openai.com/chatgpt-work/
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
@@ -188,6 +193,24 @@
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-07-14
   blurb: Web browser with a built-in agent that can summarize, navigate, and act across your open tabs and accounts. Free to use, with higher limits on paid plans.
+
+# Verified 2026-07-28 from Perplexity's own pages (the Windows product
+# page below, plus the hub posts of 2026-04-16 and 2026-06-03): the
+# official name is just "Personal Computer"; the vendor prefix here
+# keeps the name unambiguous in prose and in the content-watch mention
+# map, which greps pages for roster names. Windows rollout to Pro and
+# Max subscribers confirmed on the product page; Mac general
+# availability from the 2026-05-10 changelog entry. Owner approved the
+# add 2026-07-28 (issue #28).
+- name: Perplexity Personal Computer
+  vendor: Perplexity
+  category: agents
+  url: https://www.perplexity.ai/hub/products/computer-for-windows
+  cost: freemium
+  governance_status: listed
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
+  last_reviewed: 2026-07-28
+  blurb: Perplexity's desktop agent, which orchestrates multiple models across local files, native applications, and the web from a single request. Generally available in the Mac app; rolling out to Pro and Max subscribers on Windows.
 
 - name: OpenClaw
   vendor: OpenClaw (open source)
