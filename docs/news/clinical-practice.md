@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Automated systems for clinical documentation and quality management are gaining attention, with new research demonstrating multilevel AI-driven review for medical records, which improves error detection and consistency compared to manual methods <a href="https://medinform.jmir.org/2026/1/e80580">[10]</a>. Advances in federated learning allow institutions to securely collaborate on clinical decision support without sharing sensitive data, as shown in nationwide deployments for histopathology and resource-limited settings <a href="https://www.nature.com/articles/s41746-026-02958-y">[5]</a>. Patient education tools powered by large language models exhibit significant differences in reliability and readability, suggesting that careful evaluation is needed for clinical adoption <a href="https://medinform.jmir.org/2026/1/e91016">[1]</a>. In imaging and diagnostics, foundation models are being developed for clinical analysis across various modalities, and novel AI applications in ultrasound screening promise enhanced detection of rare congenital heart conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>.</p>
-<p>Also this week: the section includes eight clinical decision support developments, three papers on imaging and diagnostics, and three items focused on safety and evaluation. Recent studies address interpretable real-time leukemia screening and automated detection of documentation inconsistencies in electronic health records.</p>
+<p>AI models continue to advance clinical decision support, particularly in imaging and diagnostics. A pilot study assesses the performance of ChatGPT-5.1 in predicting intracranial injury and guiding CT use for mild traumatic brain injury, illustrating the potential and current boundaries of model deployment in emergency care <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Fully automated biometric measurement tools are being developed to enhance fetal ultrasound screening, with aims to increase detection accuracy for congenital heart anomalies <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Federated learning approaches enable collaborative training of decision support systems in resource-limited settings while maintaining data privacy, supporting wider clinical adoption across diverse sites <a href="https://www.nature.com/articles/s41746-026-03006-5">[10]</a>. Alongside these advances, there is a focus on quality management tools, such as AI-driven multilevel systems for reviewing medical records, which improve error detection and documentation consistency compared to manual processes <a href="https://medinform.jmir.org/2026/1/e80580">[12]</a>.</p>
+<p>Also this week: the section includes eight new model releases, several papers on clinical documentation and decision support, and ongoing studies in patient education, risk prediction, and governance frameworks for AI regulation. The comparative evaluation of large language models for patient education on macular degeneration and institutional deployment of secure histopathology AI illustrate the expanding range of topics covered.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88734">Propagation of Interpreter Errors by Ambient AI Scribes: Study Using Simulated Clinical Encounters</a>
+    <p class="news-card-summary">Ambient AI scribes propagated interpreter errors into clinical notes during simulated multilingual encounters, with error patterns varying by speaker role and error type.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
@@ -84,6 +91,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Federated learning approach enables clinical decision support networks to train collaboratively across resource-limited settings while preserving data privacy.</p>
   </div>
 </div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03037-y">AI assistance for fetal ultrasound interpretation in a multi-reader study</a>
+    <p class="news-card-summary">Multi-reader study evaluates AI assistance for fetal ultrasound interpretation, examining model performance across different clinical readers.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 27, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03012-7">Digital decision support using a phospholipid-dependent biomarker for early exclusion of negative cases in lupus anticoagulant diagnostics</a>
     <p class="news-card-summary">Digital decision support system uses phospholipid-dependent biomarker analysis to exclude negative lupus anticoagulant cases early in diagnostic workflow.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03016-3">An interpretable artificial intelligence model for real-time leukemia screening via routine blood tests across multicenter cohorts</a>
-    <p class="news-card-summary">Multicenter study develops an interpretable AI model for leukemia screening using routine blood test results in real-time clinical settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86145">Large Language Models for Endodontic Symptom Assessment and Treatment Planning Using Image-Free Clinical Records: Comparative Evaluation Study</a>
-    <p class="news-card-summary">Large language models assessed pulpal status and treatment planning in endodontics using clinical records alone, achieving comparable accuracy to models using radiographic images.</p>
   </div>
 </div>
 </div>

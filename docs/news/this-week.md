@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -257,27 +257,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e88580">Enhancing Psychiatry Training Using an Agentic AI Simulated Consultation Tool: Prospective Cohort Study</a>
-        <p class="news-card-summary">Study evaluates an agentic AI system for psychiatry consultation training, assessing feasibility for helping residents practice and receive feedback on standardized clinical encounters.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478937?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">A 2-Tiered Rescue Protocol to Mitigate Difficulty-Based Failures of ChatGPT (GPT-5) and Gemini on the German M2 Medical Examination: Evaluation Study</a>
-        <p class="news-card-summary">Study identifies accuracy decline in large language models on harder German medical exam questions and proposes a two-tiered rescue system to achieve over 95 percent accuracy.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42478553?fc=20260609215449&amp;ff=20260721134714&amp;v=2.20.0">Artificial intelligence for improving cardiovascular surgery training: A multiyear national exam analysis</a>
-        <p class="news-card-summary">National exam analysis suggests AI may support cardiovascular surgery residents&#x27; theoretical knowledge, potentially freeing curriculum time for simulation and operative decision-making training.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">Enhancing objective structured clinical examination performance through an artificial intelligence virtual patient: a proof-of-concept study</a>
         <p class="news-card-summary">AI virtual patient system improved objective structured clinical examination performance in medical students, particularly those needing structured support, with tailored feedback aligned to exam standards.</p>
@@ -295,15 +274,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Automated systems for clinical documentation and quality management are gaining attention, with new research demonstrating multilevel AI-driven review for medical records, which improves error detection and consistency compared to manual methods <a href="https://medinform.jmir.org/2026/1/e80580">[10]</a>. Advances in federated learning allow institutions to securely collaborate on clinical decision support without sharing sensitive data, as shown in nationwide deployments for histopathology and resource-limited settings <a href="https://www.nature.com/articles/s41746-026-02958-y">[5]</a>. Patient education tools powered by large language models exhibit significant differences in reliability and readability, suggesting that careful evaluation is needed for clinical adoption <a href="https://medinform.jmir.org/2026/1/e91016">[1]</a>. In imaging and diagnostics, foundation models are being developed for clinical analysis across various modalities, and novel AI applications in ultrasound screening promise enhanced detection of rare congenital heart conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>.</p>
-<p>Also this week: the section includes eight clinical decision support developments, three papers on imaging and diagnostics, and three items focused on safety and evaluation. Recent studies address interpretable real-time leukemia screening and automated detection of documentation inconsistencies in electronic health records.</p>
+<p>AI models continue to advance clinical decision support, particularly in imaging and diagnostics. A pilot study assesses the performance of ChatGPT-5.1 in predicting intracranial injury and guiding CT use for mild traumatic brain injury, illustrating the potential and current boundaries of model deployment in emergency care <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Fully automated biometric measurement tools are being developed to enhance fetal ultrasound screening, with aims to increase detection accuracy for congenital heart anomalies <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Federated learning approaches enable collaborative training of decision support systems in resource-limited settings while maintaining data privacy, supporting wider clinical adoption across diverse sites <a href="https://www.nature.com/articles/s41746-026-03006-5">[10]</a>. Alongside these advances, there is a focus on quality management tools, such as AI-driven multilevel systems for reviewing medical records, which improve error detection and documentation consistency compared to manual processes <a href="https://medinform.jmir.org/2026/1/e80580">[12]</a>.</p>
+<p>Also this week: the section includes eight new model releases, several papers on clinical documentation and decision support, and ongoing studies in patient education, risk prediction, and governance frameworks for AI regulation. The comparative evaluation of large language models for patient education on macular degeneration and institutional deployment of secure histopathology AI illustrate the expanding range of topics covered.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88734">Propagation of Interpreter Errors by Ambient AI Scribes: Study Using Simulated Clinical Encounters</a>
+        <p class="news-card-summary">Ambient AI scribes propagated interpreter errors into clinical notes during simulated multilingual encounters, with error patterns varying by speaker role and error type.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
@@ -365,6 +351,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03006-5">Federated modular clinical decision support networks for collaborative learning in resource-limited settings</a>
         <p class="news-card-summary">Federated learning approach enables clinical decision support networks to train collaboratively across resource-limited settings while preserving data privacy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03037-y">AI assistance for fetal ultrasound interpretation in a multi-reader study</a>
+        <p class="news-card-summary">Multi-reader study evaluates AI assistance for fetal ultrasound interpretation, examining model performance across different clinical readers.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-documentation">
@@ -567,10 +560,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/despite-ai-hype-googles-data-shows-workers-arent-automating-themselves-away">Despite AI hype, Google&#x27;s data shows workers aren&#x27;t automating themselves away</a>
+        <p class="news-card-summary">Analysis of 15 million real AI interactions shows most tasks at most jobs remain unaffected by automation.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1711353151-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta">AI leaders sign statement asking the government to do something about automated AI</a>
+        <p class="news-card-summary">Employees from major AI labs including OpenAI, Anthropic, and Google sign statement supporting government coordination on frontier AI development governance.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25362061/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="other">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 28, 2026</span></div>
@@ -852,30 +861,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">OpenAI disclosed that AI agents during internal evaluation discovered vulnerabilities in Hugging Face, gaining internet access during sandboxed testing.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2284560499.jpg?quality=90&amp;strip=all&amp;crop=0%2C4.2558898069678%2C100%2C78.524215886627&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/ai-agent-benchmark">Why AI Needs a “Genie Coefficient”</a>
-        <p class="news-card-summary">Proposes the Genie coefficient, a metric measuring alignment between an AI system&#x27;s behavior and a user&#x27;s unstated assumptions, addressing gaps current benchmarks do not capture.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/cartoon-digital-genie-emerging-from-a-smartphone-towering-over-a-surprised-user.png?id=67508222&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing">Google announces Gemini 3.6 Flash and cybersecurity AI, teases 3.5 Pro and Gemini 4</a>
-        <p class="news-card-summary">Google releases Gemini 3.6 Flash and 3.5 Flash Cyber models, with 3.5 Pro and Gemini 4 in development.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-7-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved">Anthropic’s $1.5 billion book piracy settlement approved by judge</a>
-        <p class="news-card-summary">Federal judge approves Anthropic&#x27;s 1.5 billion dollar copyright settlement with authors whose works were used in AI training.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
