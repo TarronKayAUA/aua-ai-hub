@@ -69,9 +69,15 @@ llm:
     # against the rosters. claude-sonnet-5 verified against the model docs
     # 2026-07-01 ($3/$15 per MTok list, $2/$10 introductory through
     # 2026-08-31); one call per week.
+    # max_tokens raised 2026-07-28: thinking shares the response budget
+    # on Claude 5 generation models, and the large payload (full rosters
+    # plus a week of news) let it eat the 4000-token default, truncating
+    # the JSON reply (issues #20 and #27). A ceiling costs nothing unless
+    # used; worst case at 16000 is about 16 cents for the weekly call.
     content_watch:
       provider: anthropic
       model: claude-sonnet-5
+      max_tokens: 16000
     content_verify:
       provider: anthropic
       model: claude-haiku-4-5

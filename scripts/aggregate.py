@@ -1077,9 +1077,11 @@ def post_process_summary(text: str, fallback: str, word_cap: int) -> str:
     return text
 
 
-# Token usage from the most recent Anthropic call, for the cost line on
-# paid tasks (the pipeline is single-threaded, so one slot is enough).
+# Token usage and stop reason from the most recent Anthropic call, for
+# the cost line on paid tasks and for truncation diagnostics (the
+# pipeline is single-threaded, so one slot of each is enough).
 LAST_ANTHROPIC_USAGE: dict = {}
+LAST_ANTHROPIC_STOP: dict = {}
 
 
 def call_anthropic(system: str, user: str, cfg: dict, timeout: int) -> str:
@@ -1107,6 +1109,8 @@ def call_anthropic(system: str, user: str, cfg: dict, timeout: int) -> str:
     data = resp.json()
     LAST_ANTHROPIC_USAGE.clear()
     LAST_ANTHROPIC_USAGE.update(data.get("usage") or {})
+    LAST_ANTHROPIC_STOP.clear()
+    LAST_ANTHROPIC_STOP["reason"] = data.get("stop_reason")
     if data.get("stop_reason") == "refusal":
         # Double refusal (primary and fallback both declined) or no
         # fallback configured: return empty so the caller's validator and

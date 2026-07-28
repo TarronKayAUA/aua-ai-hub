@@ -249,6 +249,10 @@
   vendor: OpenEvidence
   category: research
   url: https://www.openevidence.com
+  # Rejects scripted fetches even with browser headers (content watch
+  # HTTPError 2026-07-21 and 2026-07-28); serves browsers normally and
+  # is allowlisted in verify_links.py. Owner-reviewed.
+  verify: skip
   cost: free
   governance_status: listed
   status_note: Verification requires US credentials (NPI or US medical school); withdrew from the UK and EU in spring 2026.
@@ -483,6 +487,10 @@
   vendor: Midjourney
   category: image_generation
   url: https://www.midjourney.com
+  # Cloudflare-blocks all scripted clients (content watch HTTPError
+  # 2026-07-21 and 2026-07-28); confirmed live in a browser and
+  # allowlisted in verify_links.py. Owner-reviewed.
+  verify: skip
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.

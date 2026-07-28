@@ -51,7 +51,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate import parse_llm_json, remove_dashes, resolve_task_llm  # noqa: E402
+from aggregate import (LAST_ANTHROPIC_STOP, parse_llm_json, remove_dashes,
+                       resolve_task_llm)  # noqa: E402
 from page_review import build_mention_map, run_page_review  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
@@ -185,7 +186,20 @@ def call_task(config: dict, task: str, system: str, user: str) -> dict:
     provider, call, cfg = resolve_task_llm(config, task)
     if call is None:
         raise RuntimeError("no LLM credentials")
-    raw = call(system, user, cfg, 120)
+    # 300s, not the pipeline's 90 to 120: the synthesis task's raised
+    # 16000-token ceiling (thinking included) must be generatable before
+    # the request timeout binds, or the ceiling is unreachable. Timeouts
+    # only bind on failure, so normal runs are unaffected.
+    raw = call(system, user, cfg, 300)
+    # A reply cut off at the max_tokens ceiling surfaces as a JSON parse
+    # error that hides the real cause (issues #20 and #27, where model
+    # thinking consumed most of the budget). Name the cause instead.
+    if (provider == "anthropic"
+            and LAST_ANTHROPIC_STOP.get("reason") == "max_tokens"):
+        raise RuntimeError(
+            f"reply truncated at the max_tokens ceiling "
+            f"({cfg.get('max_tokens', 4000)}); raise max_tokens under "
+            f"llm.tasks.{task} in feeds.yaml")
     return parse_llm_json(raw)
 
 
