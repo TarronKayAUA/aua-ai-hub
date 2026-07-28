@@ -23,7 +23,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface.
 
 - name: ChatGPT
@@ -33,7 +33,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: Widely used artificial intelligence chat assistant for drafting, summarizing, brainstorming, and general question answering.
 
 - name: Gemini
@@ -46,7 +46,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: Google's artificial intelligence assistant, integrated with Google Workspace apps such as Docs and Gmail.
 
 - name: Microsoft 365 Copilot
@@ -56,7 +56,7 @@
   cost: institutional
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
 
 - name: DeepSeek
@@ -80,7 +80,7 @@
   cost: free
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: Alibaba's chat assistant, built on the Qwen model family, with document, image, and voice input alongside text chat.
 
 - name: Kimi
@@ -206,7 +206,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: Literature research assistant that finds papers and extracts key findings into structured tables.
 
 - name: Consensus
@@ -229,7 +229,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
 - name: NotebookLM
@@ -279,7 +279,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
 
 - name: Claude Science
@@ -382,7 +382,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: Writing assistant that checks grammar, clarity, and tone in documents, email, and browser text fields.
 
 - name: Whisper
@@ -392,7 +392,7 @@
   cost: free
   governance_status: listed
   status_note: Runs locally; audio never leaves your computer.
-  last_reviewed: 2026-07-02
+  last_reviewed: 2026-07-28
   blurb: Open-source speech-to-text model that transcribes audio recordings on your own computer.
 
 - name: Microsoft Teams transcription
