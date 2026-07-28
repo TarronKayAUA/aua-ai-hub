@@ -70,7 +70,7 @@
   cost: free
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-07-28
   blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
 
 - name: Qwen Chat
@@ -90,7 +90,7 @@
   cost: freemium
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: Chat assistant from Moonshot AI, built on the Kimi K2 model family, with long-document reading and agent features.
 
 - name: Perplexity
@@ -130,7 +130,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-13
+  last_reviewed: 2026-07-28
   blurb: Anthropic's agent for software work, available in the terminal, IDE extensions, a desktop app, and the browser. Plans and executes multi-step tasks against your own files; included with paid Claude plans.
 
 - name: Cowork
@@ -273,7 +273,7 @@
   cost: AUA-licensed
   governance_status: licensed
   status_note: "Licensed institution-wide through the AUA Library (2026) and reviewed ahead of procurement. Sign in with AUA credentials via the library link. The policy's data rules apply here as everywhere."
-  last_reviewed: 2026-07-08
+  last_reviewed: 2026-07-28
   blurb: Elsevier's Scopus citation database with its Scopus AI layer, answering plain-language questions with cited summaries, concept maps, and an agentic Deep Research mode, grounded in the abstracts of the indexed peer-reviewed literature.
 
 - name: Semantic Scholar
@@ -320,7 +320,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: Study platform for medical, nursing, and physician assistant students with flashcard generation from your own materials, board-style questions, and simulated patient encounters for clinical exam practice.
 
 - name: Thea
@@ -330,7 +330,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: General-purpose study app widely used by medical students. Upload readings or lecture notes and it builds flashcards, practice tests, and summaries with spaced repetition.
 
 - name: Medical Student AI
@@ -340,7 +340,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: Tutoring app with a question bank in the style of the United States Medical Licensing Examination (USMLE), cited explanations, and custom quizzes built from uploaded study materials.
 
 - name: Nabu Tutor
@@ -406,7 +406,7 @@
   cost: institutional
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: Built-in live transcription for Teams meetings under the institutional Microsoft 365 license.
 
 - name: Ollama
@@ -436,7 +436,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-07
+  last_reviewed: 2026-07-28
   blurb: Self-hosted web interface for chatting with local models served by tools such as Ollama.
 
 # --- Presentations and Design (owner approved 2026-06-12) -------------------
