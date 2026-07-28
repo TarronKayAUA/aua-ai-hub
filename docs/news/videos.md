@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=0ujh7hfutq0" target="_blank" rel="noopener" title="Llama.cpp vs vLLM: Which Local LLM Engine Actually Scales?">
+  <img src="https://i1.ytimg.com/vi/0ujh7hfutq0/hqdefault.jpg" alt="Video: Llama.cpp versus vLLM: local LLM inference engine performance comparison" loading="lazy">
+  <span class="video-card-title">Llama.cpp versus vLLM: local LLM inference engine performance comparison</span>
+  <span class="video-card-meta">IBM Technology, July 28, 2026</span>
+  <span class="video-card-desc">Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
   <img src="https://i4.ytimg.com/vi/Wf1hgNfGtEs/hqdefault.jpg" alt="Video: Benchmark testing of Claude Opus 5 against competitors" loading="lazy">
   <span class="video-card-title">Benchmark testing of Claude Opus 5 against competitors</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI news roundup with model updates and benchmarks</span>
   <span class="video-card-meta">WorldofAI, July 13, 2026</span>
   <span class="video-card-desc">AI news roundup covering DeepSeek V4.1, model updates, and regulatory developments with benchmark comparisons.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=SVAwzodyFUo" target="_blank" rel="noopener" title="How to Manage Your AI Before It Makes the Wrong Decision">
-  <img src="https://i4.ytimg.com/vi/SVAwzodyFUo/hqdefault.jpg" alt="Video: Managing AI systems and decision-making" loading="lazy">
-  <span class="video-card-title">Managing AI systems and decision-making</span>
-  <span class="video-card-meta">IBM Technology, July 12, 2026</span>
-  <span class="video-card-desc">IBM explanation of AI governance and decision management practices to ensure responsible deployment and reduce model errors.</span>
 </a>
 </div>
 

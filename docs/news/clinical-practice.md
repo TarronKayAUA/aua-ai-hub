@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A pilot study evaluated ChatGPT-5.1 for predicting intracranial injury and guiding CT decisions in patients with mild traumatic brain injury, highlighting ongoing exploration of large language models in diagnostic workflows <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Advances in prenatal ultrasound also saw the development of an automated biometric measurement system aimed at improving early detection of complex congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[2]</a>. Attention to digital documentation continues with research on automated detection of inconsistencies in electronic health records, underlining challenges in reliability as hospitals increase reliance on AI review systems <a href="https://arxiv.org/abs/2607.22954">[3]</a>. At a national scale, secure deployment of histopathology AI through federated learning has been demonstrated, supporting clinical data privacy while enabling collaborative model training <a href="https://www.nature.com/articles/s41746-026-02958-y">[4]</a>.</p>
-<p>Also this week: clinical practice items cover imaging and diagnostics innovations, new clinical decision support tools, and documentation management developments. The section features eight contributions in imaging and diagnostics and four on decision support, including a Nature Medicine commentary proposing new medical AI benchmarks and an interpretable real-time leukemia screening model validated across institutions.</p>
+<p>New research on automating clinical documentation review evaluates the ability of language models to detect inconsistencies in discharge summaries, highlighting limits and failure modes that may affect reliability in real-world applications <a href="https://arxiv.org/abs/2607.22954">[3]</a>. The section also features advances in imaging and diagnostics, including fully automated biometric measurement in prenatal ultrasound screening to enhance detection of total anomalous pulmonary venous connection <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[2]</a>, and a pilot study on ChatGPT-5.1’s performance in predicting intracranial injuries and guiding CT use for mild traumatic brain injury <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Population-specific dementia risk prediction using deep transfer learning is explored, focusing on equitable risk stratification across diverse groups <a href="https://www.nature.com/articles/s41746-026-03065-8">[7]</a>, while deployment studies of AI-driven quality control in medical record review report increased consistency compared to manual approaches <a href="https://medinform.jmir.org/2026/1/e80580">[8]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment methods or clinical decision support, and three items on safety and evaluation. The clinical documentation thread is illustrated by deployment of a multilevel AI quality control system and continued analysis of language model reliability.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -61,6 +61,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03073-8">Operationalizing the EU AI Act in a comprehensive cancer center through an institutional governance framework</a>
     <p class="news-card-summary">Peer-reviewed study describes institutional governance framework for operationalizing the European Union AI Act in a comprehensive cancer center.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03065-8">Population-specific dementia risk prediction using deep transfer learning in diverse populations</a>
+    <p class="news-card-summary">Deep transfer learning models predict dementia risk in diverse populations, addressing disparities in risk stratification across demographic groups.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81942">Clinically Interpretable Deep Learning for Differentiating Vitiligo and Postinflammatory Hypopigmentation: Diagnostic Accuracy Study</a>
     <p class="news-card-summary">An interpretable deep learning model distinguished vitiligo from postinflammatory hypopigmentation with diagnostic accuracy and feature visualization for clinical transparency.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79808">From Paper to Digital Medical Documentation in the Field: The Rapid Development and Deployment of the Digital Casualty Card System During a War</a>
-    <p class="news-card-summary">The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.</p>
   </div>
 </div>
 </div>

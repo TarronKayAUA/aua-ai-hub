@@ -24561,6 +24561,117 @@
    "first_seen": "2026-07-28T10:45:44.983768+00:00",
    "kept": false,
    "reason": "speculation and rumor video with no underlying confirmed events"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents",
+   "title_hash": "6c3877862eb235d083eae5e2b33eac55",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": true,
+   "title": "Perplexity’s Personal Computer turns Windows PCs into AI agents",
+   "source": "The Verge AI",
+   "published": "2026-07-28T12:30:00+00:00",
+   "summary": "Perplexity expanded its agentic AI system to Windows PCs, enabling local access to files and applications for automated task execution.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472503/STK271_PERPLEXITY_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Other"
+  },
+  {
+   "url": "https://www.theverge.com/gadgets/971744/smart-ring-ai-gadget-stream-index",
+   "title_hash": "17acbe11f63fa65ebedb6c46d9623c27",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "personal commentary without substantive news or educational content"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children",
+   "title_hash": "7f80b0dd709a267839aa6c809b5c4a69",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": true,
+   "title": "Hugging Face is being used to easily undress women and children",
+   "source": "The Verge AI",
+   "published": "2026-07-28T09:07:14+00:00",
+   "summary": "Study documents that image editing models on Hugging Face readily generate nonconsensual deepfakes, revealing inadequate content safeguards in open-source repositories.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK419_DEEPFAKE_CVIRGINIA_F.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03065-8",
+   "title_hash": "d0f1ef23097bef87c58a0d6a546d5dcf",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": true,
+   "title": "Population-specific dementia risk prediction using deep transfer learning in diverse populations",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-28T00:00:00+00:00",
+   "summary": "Deep transfer learning models predict dementia risk in diverse populations, addressing disparities in risk stratification across demographic groups.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03056-9",
+   "title_hash": "2ab58d1855b669ff28562a23929c8c73",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "narrow domain application without AI component relevant to this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8e36c/openai_management_decided_earlier_today_not_to",
+   "title_hash": "3a8ef6afe20c18002c88704aadfc74fc",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "industry gossip and internal company politics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6hlMmq7lKsk",
+   "title_hash": "8885a06404436697f25466a1bc3d357b",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=g-g6E-qtCjA",
+   "title_hash": "6655f90f61ff9b4d8aaedac818f84245",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5DbZAMGZ5oM",
+   "title_hash": "528810a76222f347f1d41a783c6d3cdd",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=hjXi7b01s2c",
+   "title_hash": "7c24d0abc1f5f092db9afda2d5aa86c0",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=q9TPE7pKkIo",
+   "title_hash": "46e08c5d98fbf4c296ce2785164a3ce9",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0ujh7hfutq0",
+   "title_hash": "ee5f579bfa3247909c795a58f4559e83",
+   "first_seen": "2026-07-28T14:40:06.931751+00:00",
+   "kept": true,
+   "title": "Llama.cpp vs vLLM: Which Local LLM Engine Actually Scales?",
+   "source": "IBM Technology",
+   "published": "2026-07-28T11:00:05+00:00",
+   "summary": "Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/0ujh7hfutq0/hqdefault.jpg",
+   "display_title": "Llama.cpp versus vLLM: local LLM inference engine performance comparison"
   }
  ],
  "digests": [
@@ -24709,13 +24820,13 @@
    "date": "July 28, 2026"
   },
   "clinical_practice": {
-   "text": "A pilot study evaluated ChatGPT-5.1 for predicting intracranial injury and guiding CT decisions in patients with mild traumatic brain injury, highlighting ongoing exploration of large language models in diagnostic workflows <a href=\"https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[1]</a>. Advances in prenatal ultrasound also saw the development of an automated biometric measurement system aimed at improving early detection of complex congenital conditions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[2]</a>. Attention to digital documentation continues with research on automated detection of inconsistencies in electronic health records, underlining challenges in reliability as hospitals increase reliance on AI review systems <a href=\"https://arxiv.org/abs/2607.22954\">[3]</a>. At a national scale, secure deployment of histopathology AI through federated learning has been demonstrated, supporting clinical data privacy while enabling collaborative model training <a href=\"https://www.nature.com/articles/s41746-026-02958-y\">[4]</a>.\n\nAlso this week: clinical practice items cover imaging and diagnostics innovations, new clinical decision support tools, and documentation management developments. The section features eight contributions in imaging and diagnostics and four on decision support, including a Nature Medicine commentary proposing new medical AI benchmarks and an interpretable real-time leukemia screening model validated across institutions.",
-   "hash": "e838a98f46bbdbf0",
+   "text": "New research on automating clinical documentation review evaluates the ability of language models to detect inconsistencies in discharge summaries, highlighting limits and failure modes that may affect reliability in real-world applications <a href=\"https://arxiv.org/abs/2607.22954\">[3]</a>. The section also features advances in imaging and diagnostics, including fully automated biometric measurement in prenatal ultrasound screening to enhance detection of total anomalous pulmonary venous connection <a href=\"https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[2]</a>, and a pilot study on ChatGPT-5.1’s performance in predicting intracranial injuries and guiding CT use for mild traumatic brain injury <a href=\"https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[1]</a>. Population-specific dementia risk prediction using deep transfer learning is explored, focusing on equitable risk stratification across diverse groups <a href=\"https://www.nature.com/articles/s41746-026-03065-8\">[7]</a>, while deployment studies of AI-driven quality control in medical record review report increased consistency compared to manual approaches <a href=\"https://medinform.jmir.org/2026/1/e80580\">[8]</a>.\n\nAlso this week: eight new model releases, five papers on assessment methods or clinical decision support, and three items on safety and evaluation. The clinical documentation thread is illustrated by deployment of a multilevel AI quality control system and continued analysis of language model reliability.",
+   "hash": "1706c8fc028e7c89",
    "date": "July 28, 2026"
   },
   "general_ai": {
-   "text": "Anthropic released Claude Opus 5, a new model that aims to deliver high performance at reduced cost, which is of interest to those following advances in large language models <a href=\"https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5\">[14]</a>. Meanwhile, fine-tuning efforts continue to challenge frontier models, with a low-cost reinforcement learning approach on a 9 billion parameter open model achieving outcomes comparable to leading systems in product review tasks <a href=\"https://fermisense.com/when-machines-take-the-wheel\">[3]</a>. Interpretability and safety questions remain active topics, as research finds frontier language models can use hidden reasoning through irrelevant tokens, underscoring challenges for transparency in AI <a href=\"https://arxiv.org/abs/2607.22925\">[2]</a>. Efforts to improve benchmarking include new frameworks for organizing large language model evaluations, with the goal of identifying capability gaps and facilitating comparison across studies <a href=\"https://arxiv.org/abs/2607.22182\">[11]</a>.\n\nAlso this week: five new model releases and four items focused on safety and reliability feature in the section. Industry developments include a position statement from Anthropic about open-weights models and the formation of the Open Secure AI Alliance by Nvidia and Microsoft. The section also covers multimodal pre-training and surgical robotics applications.",
-   "hash": "8afd72c65706da5d",
+   "text": "The most significant development covered is the exposure of nonconsensual deepfakes being generated by image editing models on Hugging Face, highlighting gaps in current content safety measures and the risks associated with open-source model repositories <a href=\"https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children\">[2]</a>. Several new models were released, including Moonshot AI&#x27;s Kimi K3, now available with open weights and a modified MIT license, marking one of the largest openly accessible models to date <a href=\"https://simonwillison.net/2026/Jul/27/kimi-k3\">[6]</a>. Safety and reliability remain a key theme, as studies demonstrate hidden reasoning tactics in frontier language models that pose interpretability challenges <a href=\"https://arxiv.org/abs/2607.22925\">[4]</a>, and industry players respond with security alliances aimed at strengthening defenses against misuse <a href=\"https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity\">[10]</a>. In parallel, fine-tuning methods have enabled smaller models to achieve competitive performance in review tasks, emphasizing ongoing progress in practical model deployment <a href=\"https://fermisense.com/when-machines-take-the-wheel\">[5]</a>.\n\nAlso this week: four new model releases and four items related to safety and reliability, as well as five research papers and benchmarks on assessment, taxonomy, and context engineering. An update documents OpenAI restricting ChatGPT from mimicking author writing styles, while Nvidia released a real-time simulation model for surgical robotics.",
+   "hash": "f2b301b2abac7530",
    "date": "July 28, 2026"
   }
  },

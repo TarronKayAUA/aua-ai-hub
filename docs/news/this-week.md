@@ -295,14 +295,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A pilot study evaluated ChatGPT-5.1 for predicting intracranial injury and guiding CT decisions in patients with mild traumatic brain injury, highlighting ongoing exploration of large language models in diagnostic workflows <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Advances in prenatal ultrasound also saw the development of an automated biometric measurement system aimed at improving early detection of complex congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[2]</a>. Attention to digital documentation continues with research on automated detection of inconsistencies in electronic health records, underlining challenges in reliability as hospitals increase reliance on AI review systems <a href="https://arxiv.org/abs/2607.22954">[3]</a>. At a national scale, secure deployment of histopathology AI through federated learning has been demonstrated, supporting clinical data privacy while enabling collaborative model training <a href="https://www.nature.com/articles/s41746-026-02958-y">[4]</a>.</p>
-<p>Also this week: clinical practice items cover imaging and diagnostics innovations, new clinical decision support tools, and documentation management developments. The section features eight contributions in imaging and diagnostics and four on decision support, including a Nature Medicine commentary proposing new medical AI benchmarks and an interpretable real-time leukemia screening model validated across institutions.</p>
+<p>New research on automating clinical documentation review evaluates the ability of language models to detect inconsistencies in discharge summaries, highlighting limits and failure modes that may affect reliability in real-world applications <a href="https://arxiv.org/abs/2607.22954">[3]</a>. The section also features advances in imaging and diagnostics, including fully automated biometric measurement in prenatal ultrasound screening to enhance detection of total anomalous pulmonary venous connection <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[2]</a>, and a pilot study on ChatGPT-5.1’s performance in predicting intracranial injuries and guiding CT use for mild traumatic brain injury <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Population-specific dementia risk prediction using deep transfer learning is explored, focusing on equitable risk stratification across diverse groups <a href="https://www.nature.com/articles/s41746-026-03065-8">[7]</a>, while deployment studies of AI-driven quality control in medical record review report increased consistency compared to manual approaches <a href="https://medinform.jmir.org/2026/1/e80580">[8]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment methods or clinical decision support, and three items on safety and evaluation. The clinical documentation thread is illustrated by deployment of a multilevel AI quality control system and continued analysis of language model reliability.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -344,6 +344,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03073-8">Operationalizing the EU AI Act in a comprehensive cancer center through an institutional governance framework</a>
         <p class="news-card-summary">Peer-reviewed study describes institutional governance framework for operationalizing the European Union AI Act in a comprehensive cancer center.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03065-8">Population-specific dementia risk prediction using deep transfer learning in diverse populations</a>
+        <p class="news-card-summary">Deep transfer learning models predict dementia risk in diverse populations, addressing disparities in risk stratification across demographic groups.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-documentation">
@@ -529,20 +536,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Analysis of agile legislation approaches to digital health and AI regulation, examining iterative governance models from Germany, the EU, and the United States.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92584">Medical AI Agents for Clinical Decision Support: Viewpoint Using the Planning, Action, Reflection, and Memory (PARM) Analytical Lens</a>
-        <p class="news-card-summary">A viewpoint describes medical AI agents incorporating planning, action, reflection, and memory as an evolution beyond traditional clinical decision support toward multistep workflow-oriented assistance.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89173">A Locally Executable AI System for Improving Preoperative Patient Communication: Multidomain Clinical Evaluation</a>
-        <p class="news-card-summary">A locally executable AI system improves preoperative patient communication by mitigating hallucination risk, protecting data privacy, and reducing energy costs compared to cloud-based large language models.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 21, 2026</span></div>
@@ -555,15 +548,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic released Claude Opus 5, a new model that aims to deliver high performance at reduced cost, which is of interest to those following advances in large language models <a href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5">[14]</a>. Meanwhile, fine-tuning efforts continue to challenge frontier models, with a low-cost reinforcement learning approach on a 9 billion parameter open model achieving outcomes comparable to leading systems in product review tasks <a href="https://fermisense.com/when-machines-take-the-wheel">[3]</a>. Interpretability and safety questions remain active topics, as research finds frontier language models can use hidden reasoning through irrelevant tokens, underscoring challenges for transparency in AI <a href="https://arxiv.org/abs/2607.22925">[2]</a>. Efforts to improve benchmarking include new frameworks for organizing large language model evaluations, with the goal of identifying capability gaps and facilitating comparison across studies <a href="https://arxiv.org/abs/2607.22182">[11]</a>.</p>
-<p>Also this week: five new model releases and four items focused on safety and reliability feature in the section. Industry developments include a position statement from Anthropic about open-weights models and the formation of the Open Secure AI Alliance by Nvidia and Microsoft. The section also covers multimodal pre-training and surgical robotics applications.</p>
+<p>The most significant development covered is the exposure of nonconsensual deepfakes being generated by image editing models on Hugging Face, highlighting gaps in current content safety measures and the risks associated with open-source model repositories <a href="https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children">[2]</a>. Several new models were released, including Moonshot AI&#x27;s Kimi K3, now available with open weights and a modified MIT license, marking one of the largest openly accessible models to date <a href="https://simonwillison.net/2026/Jul/27/kimi-k3">[6]</a>. Safety and reliability remain a key theme, as studies demonstrate hidden reasoning tactics in frontier language models that pose interpretability challenges <a href="https://arxiv.org/abs/2607.22925">[4]</a>, and industry players respond with security alliances aimed at strengthening defenses against misuse <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">[10]</a>. In parallel, fine-tuning methods have enabled smaller models to achieve competitive performance in review tasks, emphasizing ongoing progress in practical model deployment <a href="https://fermisense.com/when-machines-take-the-wheel">[5]</a>.</p>
+<p>Also this week: four new model releases and four items related to safety and reliability, as well as five research papers and benchmarks on assessment, taxonomy, and context engineering. An update documents OpenAI restricting ChatGPT from mimicking author writing styles, while Nvidia released a real-time simulation model for surgical robotics.</p>
 <p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="other">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents">Perplexity’s Personal Computer turns Windows PCs into AI agents</a>
+        <p class="news-card-summary">Perplexity expanded its agentic AI system to Windows PCs, enabling local access to files and applications for automated task execution.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472503/STK271_PERPLEXITY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children">Hugging Face is being used to easily undress women and children</a>
+        <p class="news-card-summary">Study documents that image editing models on Hugging Face readily generate nonconsensual deepfakes, revealing inadequate content safeguards in open-source repositories.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK419_DEEPFAKE_CVIRGINIA_F.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
@@ -854,21 +863,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/21/nativ">Nativ: Run AI models locally on your Mac</a>
-        <p class="news-card-summary">Nativ, a new macOS application, enables local execution of vision and language models via MLX with a chat interface and API server.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/ai-coding-assistant-china-anthropic">China’s Low-Priced Z.ai Model Is Exposing Costly Coder Habits</a>
-        <p class="news-card-summary">China&#x27;s Z.ai model demonstrates competitive coding capability at lower cost, prompting developers to adopt cost-aware strategies that route straightforward tasks to cheaper models and complex problems to frontier systems.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-smartphone-running-a-chinese-ai-application-called-z-ai.jpg?id=67508250&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
@@ -878,6 +872,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ??? abstract "Show the 7 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=0ujh7hfutq0" target="_blank" rel="noopener" title="Llama.cpp vs vLLM: Which Local LLM Engine Actually Scales?">
+      <img src="https://i1.ytimg.com/vi/0ujh7hfutq0/hqdefault.jpg" alt="Video: Llama.cpp versus vLLM: local LLM inference engine performance comparison" loading="lazy">
+      <span class="video-card-title">Llama.cpp versus vLLM: local LLM inference engine performance comparison</span>
+      <span class="video-card-meta">IBM Technology, July 28, 2026</span>
+      <span class="video-card-desc">Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
       <img src="https://i4.ytimg.com/vi/Wf1hgNfGtEs/hqdefault.jpg" alt="Video: Benchmark testing of Claude Opus 5 against competitors" loading="lazy">
       <span class="video-card-title">Benchmark testing of Claude Opus 5 against competitors</span>
@@ -907,12 +907,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Gemini 3.6 Flash testing and technical overview</span>
       <span class="video-card-meta">Bijan Bowen, July 21, 2026</span>
       <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=-W2JdSl1v48" target="_blank" rel="noopener" title="Is Fine-Tuning Still Needed? LLMs, RAG, &amp; LoRA">
-      <img src="https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg" alt="Video: Fine-tuning, RAG, and LoRA in modern LLM workflows" loading="lazy">
-      <span class="video-card-title">Fine-tuning, RAG, and LoRA in modern LLM workflows</span>
-      <span class="video-card-meta">IBM Technology, July 21, 2026</span>
-      <span class="video-card-desc">Exploration of whether fine-tuning remains necessary in modern AI workflows, comparing it with retrieval-augmented generation and parameter-efficient methods like LoRA.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
       <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">
