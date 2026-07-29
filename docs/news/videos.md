@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=MLehRytu9Zo" target="_blank" rel="noopener" title="We&#x27;re giving 100,000 academic researchers free access to our frontier models">
+  <img src="https://i2.ytimg.com/vi/MLehRytu9Zo/hqdefault.jpg" alt="Video: OpenAI frontier models access for academic researchers" loading="lazy">
+  <span class="video-card-title">OpenAI frontier models access for academic researchers</span>
+  <span class="video-card-meta">OpenAI, July 29, 2026</span>
+  <span class="video-card-desc">OpenAI announces a program providing 100,000 academic researchers free access to its frontier AI models including GPT-4o and o1.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=WeP9VUf1OoE" target="_blank" rel="noopener" title="Introducing gpt-transcribe and gpt-live-transcribe">
   <img src="https://i4.ytimg.com/vi/WeP9VUf1OoE/hqdefault.jpg" alt="Video: OpenAI gpt-transcribe and gpt-live-transcribe models" loading="lazy">
   <span class="video-card-title">OpenAI gpt-transcribe and gpt-live-transcribe models</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Meta Muse Spark 1.1 benchmark testing</span>
   <span class="video-card-meta">WorldofAI, July 14, 2026</span>
   <span class="video-card-desc">Hands-on benchmark comparison of Meta Muse Spark 1.1 against Claude Opus 4.8 and Grok 4.5 across multiple tests.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=oanQrXEiCy4" target="_blank" rel="noopener" title="What is an AI Code Generator? LLM Coding, Productivity, &amp; Risk">
-  <img src="https://i4.ytimg.com/vi/oanQrXEiCy4/hqdefault.jpg" alt="Video: AI code generators and their risks" loading="lazy">
-  <span class="video-card-title">AI code generators and their risks</span>
-  <span class="video-card-meta">IBM Technology, July 13, 2026</span>
-  <span class="video-card-desc">IBM overview of how AI code generators work, their productivity benefits, and associated risks and trust considerations.</span>
 </a>
 </div>
 
