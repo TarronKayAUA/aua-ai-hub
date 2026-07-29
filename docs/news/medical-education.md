@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Comparative evaluations of large language models in clinical exam settings continue to generate attention, as significant performance differences are reported in both orthopaedic proficiency testing and radiology training, with implications for assessment reliability and AI adoption in education <a href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[3]</a>. Parallel studies suggest that efficiency in microscopic target detection may serve as a modifiable cognitive biomarker, potentially predicting diagnostic accuracy more effectively than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. The role and perception of AI in medical research workflows are developing, highlighted by findings that brief educational sessions clarify internal medicine physicians&#x27; views of AI tool boundaries and opportunities <a href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Ongoing analysis of AI-generated clinical documentation exposes potential forensic and educational risks in record-keeping for trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[9]</a>.</p>
-<p>Also this week: recent studies cover four new approaches to teaching and curriculum, four papers on assessment and feedback, and four investigations of exams and benchmarks. Research evaluating three language models for autism caregiver support and a multicenter survey of hematology-oncology fellows&#x27; AI training needs adds wider perspective.</p>
+<p>An expanded set of studies highlights how large language models are being evaluated in clinically realistic benchmarking scenarios, with MyoCardBench offering performance assessment in cardiovascular care that moves beyond isolated examination tasks <a href="https://arxiv.org/abs/2607.25186">[2]</a>. Meanwhile, the use of reinforcement learning to align educational language models as Socratic guides suggests new directions for AI-enabled student questioning and exploration rather than just answer delivery <a href="https://arxiv.org/abs/2607.22996">[10]</a>. Research continues to examine comparative proficiency of AI tools in national medical exams and the implications for assessment reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[5]</a>. The integration of AI in medical coding receives attention for its impact on clinical documentation accuracy and efficiency <a href="https://arxiv.org/abs/2607.25129">[1]</a>, while ongoing scrutiny addresses risks, such as hollow educational records, associated with AI-generated documentation.</p>
+<p>Also this week: eight new model releases, five papers on assessment and feedback, and three items addressing attitudes and adoption of AI tools among medical educators and physicians. The section includes topics ranging from professional identity formation to a multicenter survey of hematology-oncology fellow confidence with AI tools.</p>
 <p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.25129">Deep Label-Wise Attentive Temporal Convolutional Networks Improve Medical Coding</a>
+    <p class="news-card-summary">Deep learning attention networks improve automated medical coding by better aggregating information from clinical notes and focusing on relevant sections for individual diagnosis and procedure codes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.25186">MyoCardBench: A Real-World Data Benchmark for Evaluating Large Language Models in Clinically Authentic Cardiovascular Care Scenarios</a>
+    <p class="news-card-summary">MyoCardBench is a real-world benchmark for evaluating large language models in longitudinal, multimodal cardiovascular care scenarios beyond isolated examination tasks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
@@ -65,6 +79,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42521959?fc=20260609215449&amp;ff=20260729024626&amp;v=2.20.0">Artificial Intelligence in Psychiatric Graduate Medical Education</a>
+    <p class="news-card-summary">Responsible AI integration in psychiatry graduate medical education requires staged introduction, faculty engagement, human oversight, transparent communication, and prioritization of tools that deepen rather than replace human connection.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.22996">Beyond Direct Answering: Aligning Educational LLMs as Socratic Guides via Heuristic Reinforcement Learning</a>
     <p class="news-card-summary">Research aligns a language model toward Socratic tutoring through reinforcement learning, guiding student inquiry instead of direct answering.</p>
@@ -104,27 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&amp;ff=20260727035403&amp;v=2.20.0">Navigating AI with pedagogical purpose: Toward an anatomy-centered framework for AI-enhanced learning</a>
     <p class="news-card-summary">Peer-reviewed framework examines how artificial intelligence can enhance anatomy education through customized learning, feedback, and immersive experiences grounded in pedagogical principles.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">Can artificial intelligence pass the test? Evaluating chatbot scores on pediatric gastroenterology board-style questions</a>
-    <p class="news-card-summary">Study evaluates large language model performance on pediatric gastroenterology board-style examination questions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&amp;ff=20260725100347&amp;v=2.20.0">Artificial Intelligence Performance Under Different Conditions in Answering China&#x27;s Standardized Training Examination for Resident Physician in Radiology: A Comparative Analysis</a>
-    <p class="news-card-summary">Comparative analysis shows Gemini-2.0 achieved highest accuracy on China&#x27;s radiology resident examination, though self-doubt prompting did not improve LLM performance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">Assessing multiple-choice question quality in internal medicine: a comparative analysis of three large language models against expert consensus</a>
-    <p class="news-card-summary">Claude and Gemini show moderate to strong agreement with experts on multiple-choice question cognitive level and technical flaws, but weak agreement on learning outcomes, indicating they can support but not replace expert review.</p>
   </div>
 </div>
 </div>

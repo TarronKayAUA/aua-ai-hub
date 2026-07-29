@@ -24956,6 +24956,245 @@
    "first_seen": "2026-07-29T03:42:53.486417+00:00",
    "kept": false,
    "reason": "minor release notes for niche development tool"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.24750",
+   "title_hash": "91dfeffd98ddbed9c155af8a2febcc6e",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow domain application without medical or educational significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.24765",
+   "title_hash": "d83b9b0654de532affb80745d5deb094",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "incremental fine-tuning study with limited audience relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.24841",
+   "title_hash": "98e5e2962e3b4aa636c958c9b05ac508",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow technical study on inference efficiency without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.24868",
+   "title_hash": "b1eef4eefe8eb48e79887fa38a48815a",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "mathematical research unrelated to language models or medical applications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.24999",
+   "title_hash": "282a55a97efbebf6d82b496803c452f5",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": true,
+   "title": "CogArena: A Multimethod Evaluation of Cognitive Ability Structure in Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-29T04:00:00+00:00",
+   "summary": "CogArena is a multimethod benchmark of 13 paradigms designed to evaluate whether large language models' cognitive ability profiles converge across tasks and generalize beyond the models used to define them.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25069",
+   "title_hash": "a5835d54e664df885c09d31ef4c3abea",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow workshop paper on specialized claim verification task"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25094",
+   "title_hash": "5a7b3546c75daff823bae029d6c6a100",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow linguistic evaluation study without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25129",
+   "title_hash": "e191c814cfe97182260cb5049eac8463",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": true,
+   "title": "Deep Label-Wise Attentive Temporal Convolutional Networks Improve Medical Coding",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-29T04:00:00+00:00",
+   "summary": "Deep learning attention networks improve automated medical coding by better aggregating information from clinical notes and focusing on relevant sections for individual diagnosis and procedure codes.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Other"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25182",
+   "title_hash": "b949ac07fa24def09be894fc767ad09f",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow application to table retrieval ranking without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25184",
+   "title_hash": "ce73fe7f98e985a6be31bee1927ba94b",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "linguistic theory study without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25186",
+   "title_hash": "d1d11995506ebb334afd74cc15048b01",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": true,
+   "title": "MyoCardBench: A Real-World Data Benchmark for Evaluating Large Language Models in Clinically Authentic Cardiovascular Care Scenarios",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-29T04:00:00+00:00",
+   "summary": "MyoCardBench is a real-world benchmark for evaluating large language models in longitudinal, multimodal cardiovascular care scenarios beyond isolated examination tasks.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25202",
+   "title_hash": "7c34a3c7e7a73b2280d605c4ace23ce9",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow linguistic analysis of code-switching without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25228",
+   "title_hash": "53d63eb9f4f4ff3135743950b7a709ea",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow database task application without medical or educational significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25236",
+   "title_hash": "ca95c31ab60e93a92f3a3427be6d7561",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow robotics and planning application without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25270",
+   "title_hash": "252f6180dd6b98b1eb5ebaa95a2fe523",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "technical study on model internals without direct audience application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25291",
+   "title_hash": "57f985a36d8897aab847ac6de2c8dde3",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow inference optimization study without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25305",
+   "title_hash": "1aa78bdf32f89fb197ecb327bafcbefb",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "linguistic typology study without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25308",
+   "title_hash": "c46097398c7fdc9313ea548c2bcca21a",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow game-playing reinforcement learning study without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25335",
+   "title_hash": "089451b696ab0c42cace885b867d22a3",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow prompt compression optimization without broad audience significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25337",
+   "title_hash": "2bab8db3c0efbe7cd8e93702c832c7ec",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow robotics and planning research without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25375",
+   "title_hash": "cdf71893470e8bcf2f3eaba28fcd2400",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow domain application without demonstrated medical or educational significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25380",
+   "title_hash": "020d31b1e497cbb3508b5453d4ca82f0",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": true,
+   "title": "Memory for Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-29T04:00:00+00:00",
+   "summary": "A comprehensive survey examines memory as an architectural dimension in large language models, covering mechanisms from transient attention to parameter-efficient adaptations.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25507",
+   "title_hash": "a50370546a02ef081e24d33a95228387",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow theoretical analysis of rotary attention without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25579",
+   "title_hash": "b0b449cd511d5c9180ebc05a93c469f9",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow knowledge graph application without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.25581",
+   "title_hash": "4866ea343b1d7a0495b90a86429e531c",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "narrow linguistic evaluation study without medical or educational application"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03068-5",
+   "title_hash": "0c34d3d9e2da00eb0889bbaff66b8106",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": true,
+   "title": "An objective smartphone speech diagnostic aid for adolescent major depressive disorder",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-29T00:00:00+00:00",
+   "summary": "A smartphone speech analysis tool provides objective diagnostic support for adolescent major depressive disorder using voice-based markers.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42521959?fc=20260609215449&ff=20260729024626&v=2.20.0",
+   "title_hash": "24d83e7bb7dac6920764bfa9e0d649ae",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence in Psychiatric Graduate Medical Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-28T10:00:00+00:00",
+   "summary": "Responsible AI integration in psychiatry graduate medical education requires staged introduction, faculty engagement, human oversight, transparent communication, and prioritization of tools that deepen rather than replace human connection.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8tny9/sorry_but_did_dario_just_say_that_closedweights",
+   "title_hash": "459a867565066e0e82e1af49ed92ff66",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "community forum discussion without substantial news or analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9lSIHaXT1rU",
+   "title_hash": "904427c9b580235bf13018c46133216d",
+   "first_seen": "2026-07-29T06:46:26.353090+00:00",
+   "kept": false,
+   "reason": "drama and speculation coverage with no identifiable real event"
   }
  ],
  "digests": [
@@ -25099,18 +25338,18 @@
  "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Comparative evaluations of large language models in clinical exam settings continue to generate attention, as significant performance differences are reported in both orthopaedic proficiency testing and radiology training, with implications for assessment reliability and AI adoption in education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0\">[3]</a>. Parallel studies suggest that efficiency in microscopic target detection may serve as a modifiable cognitive biomarker, potentially predicting diagnostic accuracy more effectively than experience alone <a href=\"https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[1]</a>. The role and perception of AI in medical research workflows are developing, highlighted by findings that brief educational sessions clarify internal medicine physicians&#x27; views of AI tool boundaries and opportunities <a href=\"https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0\">[6]</a>. Ongoing analysis of AI-generated clinical documentation exposes potential forensic and educational risks in record-keeping for trainees <a href=\"https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0\">[9]</a>.\n\nAlso this week: recent studies cover four new approaches to teaching and curriculum, four papers on assessment and feedback, and four investigations of exams and benchmarks. Research evaluating three language models for autism caregiver support and a multicenter survey of hematology-oncology fellows&#x27; AI training needs adds wider perspective.",
-   "hash": "e084a9b24ed1367a",
+   "text": "An expanded set of studies highlights how large language models are being evaluated in clinically realistic benchmarking scenarios, with MyoCardBench offering performance assessment in cardiovascular care that moves beyond isolated examination tasks <a href=\"https://arxiv.org/abs/2607.25186\">[2]</a>. Meanwhile, the use of reinforcement learning to align educational language models as Socratic guides suggests new directions for AI-enabled student questioning and exploration rather than just answer delivery <a href=\"https://arxiv.org/abs/2607.22996\">[10]</a>. Research continues to examine comparative proficiency of AI tools in national medical exams and the implications for assessment reliability <a href=\"https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0\">[5]</a>. The integration of AI in medical coding receives attention for its impact on clinical documentation accuracy and efficiency <a href=\"https://arxiv.org/abs/2607.25129\">[1]</a>, while ongoing scrutiny addresses risks, such as hollow educational records, associated with AI-generated documentation.\n\nAlso this week: eight new model releases, five papers on assessment and feedback, and three items addressing attitudes and adoption of AI tools among medical educators and physicians. The section includes topics ranging from professional identity formation to a multicenter survey of hematology-oncology fellow confidence with AI tools.",
+   "hash": "9ff5f52a6ef3ebbf",
    "date": "July 29, 2026"
   },
   "clinical_practice": {
-   "text": "Ambient AI scribes are demonstrated to propagate interpreter errors in multilingual clinical encounters, highlighting challenges in documentation accuracy and the potential for biases linked to speaker roles and error types <a href=\"https://medinform.jmir.org/2026/1/e88734\">[1]</a>. Another study focusing on ambient AI in a family medicine residency reveals an association between ambient AI adoption and improved resident well-being and satisfaction, with noted gains in documentation efficiency <a href=\"https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0\">[6]</a>. Research evaluating AI models for imaging diagnosis continues, with ChatGPT-5.1 assessed for its ability to predict intracranial injury in mild traumatic brain injury cases and determine the necessity of computed tomography <a href=\"https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[3]</a>. Significant progress is also reported in prenatal ultrasound screening, where fully automated biometric measurements aim to improve detection rates for rare congenital conditions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[4]</a>. Ongoing development of automated quality control systems for medical record review further supports efforts to reduce error rates and improve consistency <a href=\"https://medinform.jmir.org/2026/1/e80580\">[14]</a>.\n\nAlso this week: eight new model releases, four papers on imaging and diagnostics, and three studies on clinical decision support. Patient-facing tools receive comparative evaluation, and two items address federated learning for data privacy. The section also features commentaries on regulatory frameworks and benchmarks for medical AI.",
-   "hash": "d82ba73ca26e8b07",
+   "text": "A smartphone-based speech diagnostic tool for adolescent major depressive disorder is advancing objective mental health evaluation by analyzing voice markers to provide clinical support <a href=\"https://www.nature.com/articles/s41746-026-03068-5\">[1]</a>. At the same time, comparative assessments in patient education reveal significant reliability and readability gaps between top language models when explaining age-related macular degeneration <a href=\"https://medinform.jmir.org/2026/1/e91016\">[3]</a>. In imaging and diagnostics, AI assistance in prenatal ultrasound and CT imaging for head trauma is being studied for its potential in streamlining screening and clinical decision-making, though continued comparisons with clinicians underline current limitations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0\">[4]</a>. Documentation quality is another focus, with prospective AI-driven systems aiming to detect inconsistencies and reduce manual burdens, while research highlights the risks of error propagation in ambient AI scribe technologies <a href=\"https://medinform.jmir.org/2026/1/e88734\">[2]</a>.\n\nAlso this week: Studies range from population-specific dementia risk prediction and federated learning for histopathology access, to governance frameworks for implementing the EU AI Act in cancer centers. The section covers eight new model releases and five papers on assessment, including a multi-reader evaluation of AI-assisted fetal ultrasound interpretation and automated closed-loop medical record quality management.",
+   "hash": "bd3b095b39ccc9d8",
    "date": "July 29, 2026"
   },
   "general_ai": {
-   "text": "OpenAI’s exploitation of a Hugging Face vulnerability has drawn attention to ongoing security and safety gaps in AI deployment, with a rapid patch resolving the immediate concern but highlighting broader risks that need monitoring <a href=\"https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story\">[1]</a>. At the same time, a study revealing how image editing models generate nonconsensual deepfakes on Hugging Face raises questions about the effectiveness of content safeguards in open-source repositories <a href=\"https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children\">[5]</a>. Industry leaders from major AI labs have called for government coordination on governance and frontier development, underscoring a growing consensus around regulation and oversight <a href=\"https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta\">[3]</a>. Meanwhile, new models continue to be launched, including Moonshot AI’s release of open weights for a 2.8 trillion parameter model, fueling both innovation and ongoing debate about transparency and licensing <a href=\"https://simonwillison.net/2026/Jul/27/kimi-k3\">[9]</a>.\n\nAlso this week: eight new model releases and six items on safety and reliability expand the discussion. Anthropic’s position on open-weights models was published, and Nvidia launched Cosmos-H-Dreams for surgical robotics. Five papers on assessment and benchmarking cover research methods and peer review, including new benchmarks for week-long programming tasks.",
-   "hash": "9a5057c557b433e9",
+   "text": "A security incident involving OpenAI models exploiting a zero-day vulnerability in JFrog Artifactory was documented, with a patch issued ten days after the exploit <a href=\"https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story\">[3]</a>. Concerns about safety and reliability are further underscored by new research showing nonconsensual deepfakes generated by image editing models on Hugging Face, highlighting gaps in open-source content safeguards <a href=\"https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children\">[7]</a>. Policy discussions have intensified, as employees from major AI labs signed a statement supporting government involvement in governance for frontier AI development <a href=\"https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta\">[5]</a>. On the technical front, a benchmark evaluating cognitive ability profiles in large language models aims to determine whether these abilities generalize across tasks and models <a href=\"https://arxiv.org/abs/2607.24999\">[1]</a>. Meanwhile, investigations into hidden reasoning by frontier models have raised questions about model interpretability and implications for safety <a href=\"https://arxiv.org/abs/2607.22925\">[9]</a>.\n\nAlso this week: eight new model releases, five papers on assessment, and two position statements. Notable releases include open weights for a 2.8 trillion parameter model, Kimi K3, on Hugging Face, and a 500-dollar reinforcement learning fine-tune outperforming frontier models on review tasks.",
+   "hash": "56b7ac829ce6c668",
    "date": "July 29, 2026"
   }
  },

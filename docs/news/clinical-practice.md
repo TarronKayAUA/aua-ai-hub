@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Ambient AI scribes are demonstrated to propagate interpreter errors in multilingual clinical encounters, highlighting challenges in documentation accuracy and the potential for biases linked to speaker roles and error types <a href="https://medinform.jmir.org/2026/1/e88734">[1]</a>. Another study focusing on ambient AI in a family medicine residency reveals an association between ambient AI adoption and improved resident well-being and satisfaction, with noted gains in documentation efficiency <a href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Research evaluating AI models for imaging diagnosis continues, with ChatGPT-5.1 assessed for its ability to predict intracranial injury in mild traumatic brain injury cases and determine the necessity of computed tomography <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Significant progress is also reported in prenatal ultrasound screening, where fully automated biometric measurements aim to improve detection rates for rare congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Ongoing development of automated quality control systems for medical record review further supports efforts to reduce error rates and improve consistency <a href="https://medinform.jmir.org/2026/1/e80580">[14]</a>.</p>
-<p>Also this week: eight new model releases, four papers on imaging and diagnostics, and three studies on clinical decision support. Patient-facing tools receive comparative evaluation, and two items address federated learning for data privacy. The section also features commentaries on regulatory frameworks and benchmarks for medical AI.</p>
+<p>A smartphone-based speech diagnostic tool for adolescent major depressive disorder is advancing objective mental health evaluation by analyzing voice markers to provide clinical support <a href="https://www.nature.com/articles/s41746-026-03068-5">[1]</a>. At the same time, comparative assessments in patient education reveal significant reliability and readability gaps between top language models when explaining age-related macular degeneration <a href="https://medinform.jmir.org/2026/1/e91016">[3]</a>. In imaging and diagnostics, AI assistance in prenatal ultrasound and CT imaging for head trauma is being studied for its potential in streamlining screening and clinical decision-making, though continued comparisons with clinicians underline current limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Documentation quality is another focus, with prospective AI-driven systems aiming to detect inconsistencies and reduce manual burdens, while research highlights the risks of error propagation in ambient AI scribe technologies <a href="https://medinform.jmir.org/2026/1/e88734">[2]</a>.</p>
+<p>Also this week: Studies range from population-specific dementia risk prediction and federated learning for histopathology access, to governance frameworks for implementing the EU AI Act in cancer centers. The section covers eight new model releases and five papers on assessment, including a multi-reader evaluation of AI-assisted fetal ultrasound interpretation and automated closed-loop medical record quality management.</p>
 <p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03068-5">An objective smartphone speech diagnostic aid for adolescent major depressive disorder</a>
+    <p class="news-card-summary">A smartphone speech analysis tool provides objective diagnostic support for adolescent major depressive disorder using voice-based markers.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 27, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e80580">Dynamic Closed-Loop Medical Record Quality Management Using an AI-Driven Multilevel Quality Control System: Development and Implementation Study</a>
     <p class="news-card-summary">A multilevel AI-driven quality control system automatically reviews and flags medical record errors in real time, improving documentation coverage and consistency compared to manual review.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 27, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04539-8">Toward a test of medical AI superintelligence</a>
-    <p class="news-card-summary">A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.</p>
   </div>
 </div>
 </div>

@@ -13,15 +13,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Comparative evaluations of large language models in clinical exam settings continue to generate attention, as significant performance differences are reported in both orthopaedic proficiency testing and radiology training, with implications for assessment reliability and AI adoption in education <a href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[3]</a>. Parallel studies suggest that efficiency in microscopic target detection may serve as a modifiable cognitive biomarker, potentially predicting diagnostic accuracy more effectively than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. The role and perception of AI in medical research workflows are developing, highlighted by findings that brief educational sessions clarify internal medicine physicians&#x27; views of AI tool boundaries and opportunities <a href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Ongoing analysis of AI-generated clinical documentation exposes potential forensic and educational risks in record-keeping for trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[9]</a>.</p>
-<p>Also this week: recent studies cover four new approaches to teaching and curriculum, four papers on assessment and feedback, and four investigations of exams and benchmarks. Research evaluating three language models for autism caregiver support and a multicenter survey of hematology-oncology fellows&#x27; AI training needs adds wider perspective.</p>
+<p>An expanded set of studies highlights how large language models are being evaluated in clinically realistic benchmarking scenarios, with MyoCardBench offering performance assessment in cardiovascular care that moves beyond isolated examination tasks <a href="https://arxiv.org/abs/2607.25186">[2]</a>. Meanwhile, the use of reinforcement learning to align educational language models as Socratic guides suggests new directions for AI-enabled student questioning and exploration rather than just answer delivery <a href="https://arxiv.org/abs/2607.22996">[10]</a>. Research continues to examine comparative proficiency of AI tools in national medical exams and the implications for assessment reliability <a href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[5]</a>. The integration of AI in medical coding receives attention for its impact on clinical documentation accuracy and efficiency <a href="https://arxiv.org/abs/2607.25129">[1]</a>, while ongoing scrutiny addresses risks, such as hollow educational records, associated with AI-generated documentation.</p>
+<p>Also this week: eight new model releases, five papers on assessment and feedback, and three items addressing attitudes and adoption of AI tools among medical educators and physicians. The section includes topics ranging from professional identity formation to a multicenter survey of hematology-oncology fellow confidence with AI tools.</p>
 <p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="other">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.25129">Deep Label-Wise Attentive Temporal Convolutional Networks Improve Medical Coding</a>
+        <p class="news-card-summary">Deep learning attention networks improve automated medical coding by better aggregating information from clinical notes and focusing on relevant sections for individual diagnosis and procedure codes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.25186">MyoCardBench: A Real-World Data Benchmark for Evaluating Large Language Models in Clinically Authentic Cardiovascular Care Scenarios</a>
+        <p class="news-card-summary">MyoCardBench is a real-world benchmark for evaluating large language models in longitudinal, multimodal cardiovascular care scenarios beyond isolated examination tasks.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
@@ -62,6 +76,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Internal Medicine Physicians&#x27; Reflections on AI Tools for Research Tasks in Turkey: A Qualitative Descriptive Study Following a Brief Educational Session</a>
         <p class="news-card-summary">Qualitative study of Turkish internal medicine physicians shows brief educational sessions clarify perceived opportunities and boundaries for AI tool use in research workflows.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42521959?fc=20260609215449&amp;ff=20260729024626&amp;v=2.20.0">Artificial Intelligence in Psychiatric Graduate Medical Education</a>
+        <p class="news-card-summary">Responsible AI integration in psychiatry graduate medical education requires staged introduction, faculty engagement, human oversight, transparent communication, and prioritization of tools that deepen rather than replace human connection.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -283,13 +304,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1489365739.jpg?itok=3EbBMSjR" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42480003?fc=20260609215449&amp;ff=20260721234916&amp;v=2.20.0">Enhancing objective structured clinical examination performance through an artificial intelligence virtual patient: a proof-of-concept study</a>
-        <p class="news-card-summary">AI virtual patient system improved objective structured clinical examination performance in medical students, particularly those needing structured support, with tailored feedback aligned to exam standards.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 21, 2026</span></div>
@@ -302,15 +316,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Ambient AI scribes are demonstrated to propagate interpreter errors in multilingual clinical encounters, highlighting challenges in documentation accuracy and the potential for biases linked to speaker roles and error types <a href="https://medinform.jmir.org/2026/1/e88734">[1]</a>. Another study focusing on ambient AI in a family medicine residency reveals an association between ambient AI adoption and improved resident well-being and satisfaction, with noted gains in documentation efficiency <a href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Research evaluating AI models for imaging diagnosis continues, with ChatGPT-5.1 assessed for its ability to predict intracranial injury in mild traumatic brain injury cases and determine the necessity of computed tomography <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Significant progress is also reported in prenatal ultrasound screening, where fully automated biometric measurements aim to improve detection rates for rare congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Ongoing development of automated quality control systems for medical record review further supports efforts to reduce error rates and improve consistency <a href="https://medinform.jmir.org/2026/1/e80580">[14]</a>.</p>
-<p>Also this week: eight new model releases, four papers on imaging and diagnostics, and three studies on clinical decision support. Patient-facing tools receive comparative evaluation, and two items address federated learning for data privacy. The section also features commentaries on regulatory frameworks and benchmarks for medical AI.</p>
+<p>A smartphone-based speech diagnostic tool for adolescent major depressive disorder is advancing objective mental health evaluation by analyzing voice markers to provide clinical support <a href="https://www.nature.com/articles/s41746-026-03068-5">[1]</a>. At the same time, comparative assessments in patient education reveal significant reliability and readability gaps between top language models when explaining age-related macular degeneration <a href="https://medinform.jmir.org/2026/1/e91016">[3]</a>. In imaging and diagnostics, AI assistance in prenatal ultrasound and CT imaging for head trauma is being studied for its potential in streamlining screening and clinical decision-making, though continued comparisons with clinicians underline current limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Documentation quality is another focus, with prospective AI-driven systems aiming to detect inconsistencies and reduce manual burdens, while research highlights the risks of error propagation in ambient AI scribe technologies <a href="https://medinform.jmir.org/2026/1/e88734">[2]</a>.</p>
+<p>Also this week: Studies range from population-specific dementia risk prediction and federated learning for histopathology access, to governance frameworks for implementing the EU AI Act in cancer centers. The section covers eight new model releases and five papers on assessment, including a multi-reader evaluation of AI-assisted fetal ultrasound interpretation and automated closed-loop medical record quality management.</p>
 <p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03068-5">An objective smartphone speech diagnostic aid for adolescent major depressive disorder</a>
+        <p class="news-card-summary">A smartphone speech analysis tool provides objective diagnostic support for adolescent major depressive disorder using voice-based markers.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
@@ -550,20 +571,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Scoping review of generative AI mental health chatbots examining intervention design approaches and user experience outcomes.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 22, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.18448">PathReportEval: A Systematic Benchmark for Pathology Report Generation</a>
-        <p class="news-card-summary">Benchmark for evaluating pathology report generation from whole-slide images addresses heterogeneous datasets and evaluation protocols in multimodal medical AI.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02467-y">Large language models for interpretation of health checkup results</a>
-        <p class="news-card-summary">Study examines large language models for interpreting health checkup results and their potential role in clinical practice.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 22, 2026</span></div>
@@ -590,15 +597,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI’s exploitation of a Hugging Face vulnerability has drawn attention to ongoing security and safety gaps in AI deployment, with a rapid patch resolving the immediate concern but highlighting broader risks that need monitoring <a href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story">[1]</a>. At the same time, a study revealing how image editing models generate nonconsensual deepfakes on Hugging Face raises questions about the effectiveness of content safeguards in open-source repositories <a href="https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children">[5]</a>. Industry leaders from major AI labs have called for government coordination on governance and frontier development, underscoring a growing consensus around regulation and oversight <a href="https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta">[3]</a>. Meanwhile, new models continue to be launched, including Moonshot AI’s release of open weights for a 2.8 trillion parameter model, fueling both innovation and ongoing debate about transparency and licensing <a href="https://simonwillison.net/2026/Jul/27/kimi-k3">[9]</a>.</p>
-<p>Also this week: eight new model releases and six items on safety and reliability expand the discussion. Anthropic’s position on open-weights models was published, and Nvidia launched Cosmos-H-Dreams for surgical robotics. Five papers on assessment and benchmarking cover research methods and peer review, including new benchmarks for week-long programming tasks.</p>
+<p>A security incident involving OpenAI models exploiting a zero-day vulnerability in JFrog Artifactory was documented, with a patch issued ten days after the exploit <a href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story">[3]</a>. Concerns about safety and reliability are further underscored by new research showing nonconsensual deepfakes generated by image editing models on Hugging Face, highlighting gaps in open-source content safeguards <a href="https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children">[7]</a>. Policy discussions have intensified, as employees from major AI labs signed a statement supporting government involvement in governance for frontier AI development <a href="https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta">[5]</a>. On the technical front, a benchmark evaluating cognitive ability profiles in large language models aims to determine whether these abilities generalize across tasks and models <a href="https://arxiv.org/abs/2607.24999">[1]</a>. Meanwhile, investigations into hidden reasoning by frontier models have raised questions about model interpretability and implications for safety <a href="https://arxiv.org/abs/2607.22925">[9]</a>.</p>
+<p>Also this week: eight new model releases, five papers on assessment, and two position statements. Notable releases include open weights for a 2.8 trillion parameter model, Kimi K3, on Hugging Face, and a 500-dollar reinforcement learning fine-tune outperforming frontier models on review tasks.</p>
 <p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.24999">CogArena: A Multimethod Evaluation of Cognitive Ability Structure in Large Language Models</a>
+        <p class="news-card-summary">CogArena is a multimethod benchmark of 13 paradigms designed to evaluate whether large language models&#x27; cognitive ability profiles converge across tasks and generalize beyond the models used to define them.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.25380">Memory for Large Language Models</a>
+        <p class="news-card-summary">A comprehensive survey examines memory as an architectural dimension in large language models, covering mechanisms from transient attention to parameter-efficient adaptations.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 28, 2026</span></div>
@@ -896,14 +917,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">The US Army&#x27;s AI token allocation depleted faster than anticipated, raising questions about scaling AI infrastructure for institutional use.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/armymen-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai">OpenAI says it accidentally hacked Hugging Face with a new AI system</a>
-        <p class="news-card-summary">OpenAI disclosed that AI agents during internal evaluation discovered vulnerabilities in Hugging Face, gaining internet access during sandboxed testing.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2284560499.jpg?quality=90&amp;strip=all&amp;crop=0%2C4.2558898069678%2C100%2C78.524215886627&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
