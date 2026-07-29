@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A new study finds that efficiency in detecting targets with low-power microscopy is a modifiable cognitive biomarker, offering better prediction of diagnostic accuracy than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Elsewhere, efforts to improve educational outcomes include aligning language models as Socratic guides to foster student inquiry rather than simply providing answers <a href="https://arxiv.org/abs/2607.22996">[3]</a>. Multimodal large language models continue to see comparative evaluation for their ability to interpret medical images, with results showing underperformance relative to trained clinicians in orthodontics <a href="https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0">[6]</a>. Ongoing research examines risks associated with AI-generated clinical documentation in both educational and forensic settings <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[5]</a>, while faculty attitudes are shifting, with some moving from resistance to actively assessing AI readiness across institutions <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance">[4]</a>.</p>
-<p>Also this week: Eight new model releases and five papers on assessment add breadth, including studies on multiple-choice question quality and chatbot performance on pediatric gastroenterology board-style exams. The section also reports on survey findings from hematology-oncology fellows and presents a peer-reviewed framework for anatomy-centered AI-enhanced learning.</p>
-<p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
+<p>Comparative evaluations of large language models in clinical exam settings continue to generate attention, as significant performance differences are reported in both orthopaedic proficiency testing and radiology training, with implications for assessment reliability and AI adoption in education <a href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[3]</a>. Parallel studies suggest that efficiency in microscopic target detection may serve as a modifiable cognitive biomarker, potentially predicting diagnostic accuracy more effectively than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. The role and perception of AI in medical research workflows are developing, highlighted by findings that brief educational sessions clarify internal medicine physicians&#x27; views of AI tool boundaries and opportunities <a href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Ongoing analysis of AI-generated clinical documentation exposes potential forensic and educational risks in record-keeping for trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[9]</a>.</p>
+<p>Also this week: recent studies cover four new approaches to teaching and curriculum, four papers on assessment and feedback, and four investigations of exams and benchmarks. Research evaluating three language models for autism caregiver support and a multicenter survey of hematology-oncology fellows&#x27; AI training needs adds wider perspective.</p>
+<p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -34,6 +34,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42512654?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">LLMs in Medical Education for Autism Caregivers: A Comparative Evaluation of Accuracy, Readability, Actionability, and Neurodiversity-Affirming Language</a>
         <p class="news-card-summary">Study evaluates three large language models as health information tools for autism caregivers in Saudi Arabia, comparing accuracy, readability, actionability, and neurodiversity-affirming language.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Evaluation of large language models in a national orthopaedic proficiency examination: Implications for health informatics and medical education</a>
+        <p class="news-card-summary">Comparative evaluation of five large language models on a national orthopaedic proficiency examination reveals significant performance variation and implications for medical education assessment.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520225?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Large Language Models in German Continuing Medical Education Assessments: Protocol for a Fully Crossed Experimental Study</a>
+        <p class="news-card-summary">Study protocol evaluates how document format affects large language model performance on continuing medical education tests to inform safeguards against AI-assisted test manipulation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520201?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">From doing to being: Generative AI, workplace affordances, and professional identity</a>
+        <p class="news-card-summary">Analysis argues that medical AI education discourse should examine professional identity formation and clinical learning affordances alongside technical tool assessment and risk management.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Internal Medicine Physicians&#x27; Reflections on AI Tools for Research Tasks in Turkey: A Qualitative Descriptive Study Following a Brief Educational Session</a>
+        <p class="news-card-summary">Qualitative study of Turkish internal medicine physicians shows brief educational sessions clarify perceived opportunities and boundaries for AI tool use in research workflows.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -274,14 +302,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>AI models continue to advance clinical decision support, particularly in imaging and diagnostics. A pilot study assesses the performance of ChatGPT-5.1 in predicting intracranial injury and guiding CT use for mild traumatic brain injury, illustrating the potential and current boundaries of model deployment in emergency care <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Fully automated biometric measurement tools are being developed to enhance fetal ultrasound screening, with aims to increase detection accuracy for congenital heart anomalies <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Federated learning approaches enable collaborative training of decision support systems in resource-limited settings while maintaining data privacy, supporting wider clinical adoption across diverse sites <a href="https://www.nature.com/articles/s41746-026-03006-5">[10]</a>. Alongside these advances, there is a focus on quality management tools, such as AI-driven multilevel systems for reviewing medical records, which improve error detection and documentation consistency compared to manual processes <a href="https://medinform.jmir.org/2026/1/e80580">[12]</a>.</p>
-<p>Also this week: the section includes eight new model releases, several papers on clinical documentation and decision support, and ongoing studies in patient education, risk prediction, and governance frameworks for AI regulation. The comparative evaluation of large language models for patient education on macular degeneration and institutional deployment of secure histopathology AI illustrate the expanding range of topics covered.</p>
-<p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
+<p>Ambient AI scribes are demonstrated to propagate interpreter errors in multilingual clinical encounters, highlighting challenges in documentation accuracy and the potential for biases linked to speaker roles and error types <a href="https://medinform.jmir.org/2026/1/e88734">[1]</a>. Another study focusing on ambient AI in a family medicine residency reveals an association between ambient AI adoption and improved resident well-being and satisfaction, with noted gains in documentation efficiency <a href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Research evaluating AI models for imaging diagnosis continues, with ChatGPT-5.1 assessed for its ability to predict intracranial injury in mild traumatic brain injury cases and determine the necessity of computed tomography <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Significant progress is also reported in prenatal ultrasound screening, where fully automated biometric measurements aim to improve detection rates for rare congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Ongoing development of automated quality control systems for medical record review further supports efforts to reduce error rates and improve consistency <a href="https://medinform.jmir.org/2026/1/e80580">[14]</a>.</p>
+<p>Also this week: eight new model releases, four papers on imaging and diagnostics, and three studies on clinical decision support. Patient-facing tools receive comparative evaluation, and two items address federated learning for data privacy. The section also features commentaries on regulatory frameworks and benchmarks for medical AI.</p>
+<p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
@@ -309,6 +337,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Fully Automated Biometric Parameter Measurement in Prenatal Ultrasound Screening for Total Anomalous Pulmonary Venous Connection</a>
         <p class="news-card-summary">Study develops fully automated biometric measurement in prenatal ultrasound to improve detection of total anomalous pulmonary venous connection.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518755?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Artificial intelligence for pulmonary embolism detection: Is it comparable to radiology residents?</a>
+        <p class="news-card-summary">Comparative study finds radiology residents outperformed AI software for pulmonary embolism detection overall, though AI performed well for proximal emboli.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">The Impact of Ambient AI on Resident Documentation and Well-Being: A Pilot Study</a>
+        <p class="news-card-summary">Pilot study of ambient AI in family medicine residency shows association with improved resident well-being, satisfaction, and documentation efficiency.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-documentation">
@@ -543,27 +585,28 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Analysis of agile legislation approaches to digital health and AI regulation, examining iterative governance models from Germany, the EU, and the United States.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 21, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02964-0">Real-world deployment of remote sleep monitoring technologies reveals distinct patterns associated with cognitive decline</a>
-        <p class="news-card-summary">Real-world deployment of remote sleep monitoring identifies patterns associated with cognitive decline in older adults.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>The most significant development covered is the exposure of nonconsensual deepfakes being generated by image editing models on Hugging Face, highlighting gaps in current content safety measures and the risks associated with open-source model repositories <a href="https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children">[2]</a>. Several new models were released, including Moonshot AI&#x27;s Kimi K3, now available with open weights and a modified MIT license, marking one of the largest openly accessible models to date <a href="https://simonwillison.net/2026/Jul/27/kimi-k3">[6]</a>. Safety and reliability remain a key theme, as studies demonstrate hidden reasoning tactics in frontier language models that pose interpretability challenges <a href="https://arxiv.org/abs/2607.22925">[4]</a>, and industry players respond with security alliances aimed at strengthening defenses against misuse <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity">[10]</a>. In parallel, fine-tuning methods have enabled smaller models to achieve competitive performance in review tasks, emphasizing ongoing progress in practical model deployment <a href="https://fermisense.com/when-machines-take-the-wheel">[5]</a>.</p>
-<p>Also this week: four new model releases and four items related to safety and reliability, as well as five research papers and benchmarks on assessment, taxonomy, and context engineering. An update documents OpenAI restricting ChatGPT from mimicking author writing styles, while Nvidia released a real-time simulation model for surgical robotics.</p>
-<p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the source items.</p>
+<p>OpenAI’s exploitation of a Hugging Face vulnerability has drawn attention to ongoing security and safety gaps in AI deployment, with a rapid patch resolving the immediate concern but highlighting broader risks that need monitoring <a href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story">[1]</a>. At the same time, a study revealing how image editing models generate nonconsensual deepfakes on Hugging Face raises questions about the effectiveness of content safeguards in open-source repositories <a href="https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children">[5]</a>. Industry leaders from major AI labs have called for government coordination on governance and frontier development, underscoring a growing consensus around regulation and oversight <a href="https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta">[3]</a>. Meanwhile, new models continue to be launched, including Moonshot AI’s release of open weights for a 2.8 trillion parameter model, fueling both innovation and ongoing debate about transparency and licensing <a href="https://simonwillison.net/2026/Jul/27/kimi-k3">[9]</a>.</p>
+<p>Also this week: eight new model releases and six items on safety and reliability expand the discussion. Anthropic’s position on open-weights models was published, and Nvidia launched Cosmos-H-Dreams for surgical robotics. Five papers on assessment and benchmarking cover research methods and peer review, including new benchmarks for week-long programming tasks.</p>
+<p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 28, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story">We now have a better understanding how OpenAI hacked into Hugging Face</a>
+        <p class="news-card-summary">Security incident analysis shows OpenAI models exploited a JFrog Artifactory zero-day vulnerability; patch released ten days after initial exploit.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 28, 2026</span></div>
@@ -868,7 +911,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 7 videos"
+??? abstract "Show the 6 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=0ujh7hfutq0" target="_blank" rel="noopener" title="Llama.cpp vs vLLM: Which Local LLM Engine Actually Scales?">
@@ -900,12 +943,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Prompt injection attacks and AI security defenses</span>
       <span class="video-card-meta">IBM Technology, July 22, 2026</span>
       <span class="video-card-desc">IBM researchers discuss prompt injection attacks on large language models and strategies for defending AI systems against such exploits.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=XSHTyq8Z9jA" target="_blank" rel="noopener" title="Gemini 3.6 Flash Is HERE, Testing Google’s BEST Model Yet!">
-      <img src="https://i1.ytimg.com/vi/XSHTyq8Z9jA/hqdefault.jpg" alt="Video: Gemini 3.6 Flash testing and technical overview" loading="lazy">
-      <span class="video-card-title">Gemini 3.6 Flash testing and technical overview</span>
-      <span class="video-card-meta">Bijan Bowen, July 21, 2026</span>
-      <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
       <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">

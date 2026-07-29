@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>AI models continue to advance clinical decision support, particularly in imaging and diagnostics. A pilot study assesses the performance of ChatGPT-5.1 in predicting intracranial injury and guiding CT use for mild traumatic brain injury, illustrating the potential and current boundaries of model deployment in emergency care <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Fully automated biometric measurement tools are being developed to enhance fetal ultrasound screening, with aims to increase detection accuracy for congenital heart anomalies <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Federated learning approaches enable collaborative training of decision support systems in resource-limited settings while maintaining data privacy, supporting wider clinical adoption across diverse sites <a href="https://www.nature.com/articles/s41746-026-03006-5">[10]</a>. Alongside these advances, there is a focus on quality management tools, such as AI-driven multilevel systems for reviewing medical records, which improve error detection and documentation consistency compared to manual processes <a href="https://medinform.jmir.org/2026/1/e80580">[12]</a>.</p>
-<p>Also this week: the section includes eight new model releases, several papers on clinical documentation and decision support, and ongoing studies in patient education, risk prediction, and governance frameworks for AI regulation. The comparative evaluation of large language models for patient education on macular degeneration and institutional deployment of secure histopathology AI illustrate the expanding range of topics covered.</p>
-<p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
+<p>Ambient AI scribes are demonstrated to propagate interpreter errors in multilingual clinical encounters, highlighting challenges in documentation accuracy and the potential for biases linked to speaker roles and error types <a href="https://medinform.jmir.org/2026/1/e88734">[1]</a>. Another study focusing on ambient AI in a family medicine residency reveals an association between ambient AI adoption and improved resident well-being and satisfaction, with noted gains in documentation efficiency <a href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Research evaluating AI models for imaging diagnosis continues, with ChatGPT-5.1 assessed for its ability to predict intracranial injury in mild traumatic brain injury cases and determine the necessity of computed tomography <a href="https://pubmed.ncbi.nlm.nih.gov/42512028?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[3]</a>. Significant progress is also reported in prenatal ultrasound screening, where fully automated biometric measurements aim to improve detection rates for rare congenital conditions <a href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[4]</a>. Ongoing development of automated quality control systems for medical record review further supports efforts to reduce error rates and improve consistency <a href="https://medinform.jmir.org/2026/1/e80580">[14]</a>.</p>
+<p>Also this week: eight new model releases, four papers on imaging and diagnostics, and three studies on clinical decision support. Patient-facing tools receive comparative evaluation, and two items address federated learning for data privacy. The section also features commentaries on regulatory frameworks and benchmarks for medical AI.</p>
+<p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-documentation">
@@ -47,6 +47,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Fully Automated Biometric Parameter Measurement in Prenatal Ultrasound Screening for Total Anomalous Pulmonary Venous Connection</a>
     <p class="news-card-summary">Study develops fully automated biometric measurement in prenatal ultrasound to improve detection of total anomalous pulmonary venous connection.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518755?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Artificial intelligence for pulmonary embolism detection: Is it comparable to radiology residents?</a>
+    <p class="news-card-summary">Comparative study finds radiology residents outperformed AI software for pulmonary embolism detection overall, though AI performed well for proximal emboli.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">The Impact of Ambient AI on Resident Documentation and Well-Being: A Pilot Study</a>
+    <p class="news-card-summary">Pilot study of ambient AI in family medicine residency shows association with improved resident well-being, satisfaction, and documentation efficiency.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 27, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04539-8">Toward a test of medical AI superintelligence</a>
     <p class="news-card-summary">A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02945-3">QoQ-Med3: a multimodal reasoning foundation model for clinical analysis</a>
-    <p class="news-card-summary">QoQ-Med3 is a multimodal reasoning foundation model designed to support clinical analysis across text, imaging, and structured data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03012-7">Digital decision support using a phospholipid-dependent biomarker for early exclusion of negative cases in lupus anticoagulant diagnostics</a>
-    <p class="news-card-summary">Digital decision support system uses phospholipid-dependent biomarker analysis to exclude negative lupus anticoagulant cases early in diagnostic workflow.</p>
   </div>
 </div>
 </div>

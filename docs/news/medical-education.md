@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new study finds that efficiency in detecting targets with low-power microscopy is a modifiable cognitive biomarker, offering better prediction of diagnostic accuracy than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. Elsewhere, efforts to improve educational outcomes include aligning language models as Socratic guides to foster student inquiry rather than simply providing answers <a href="https://arxiv.org/abs/2607.22996">[3]</a>. Multimodal large language models continue to see comparative evaluation for their ability to interpret medical images, with results showing underperformance relative to trained clinicians in orthodontics <a href="https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0">[6]</a>. Ongoing research examines risks associated with AI-generated clinical documentation in both educational and forensic settings <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[5]</a>, while faculty attitudes are shifting, with some moving from resistance to actively assessing AI readiness across institutions <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance">[4]</a>.</p>
-<p>Also this week: Eight new model releases and five papers on assessment add breadth, including studies on multiple-choice question quality and chatbot performance on pediatric gastroenterology board-style exams. The section also reports on survey findings from hematology-oncology fellows and presents a peer-reviewed framework for anatomy-centered AI-enhanced learning.</p>
-<p class="section-brief-date">The picture as of July 28, 2026; numbered links go to the items below.</p>
+<p>Comparative evaluations of large language models in clinical exam settings continue to generate attention, as significant performance differences are reported in both orthopaedic proficiency testing and radiology training, with implications for assessment reliability and AI adoption in education <a href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[3]</a>. Parallel studies suggest that efficiency in microscopic target detection may serve as a modifiable cognitive biomarker, potentially predicting diagnostic accuracy more effectively than experience alone <a href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">[1]</a>. The role and perception of AI in medical research workflows are developing, highlighted by findings that brief educational sessions clarify internal medicine physicians&#x27; views of AI tool boundaries and opportunities <a href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[6]</a>. Ongoing analysis of AI-generated clinical documentation exposes potential forensic and educational risks in record-keeping for trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">[9]</a>.</p>
+<p>Also this week: recent studies cover four new approaches to teaching and curriculum, four papers on assessment and feedback, and four investigations of exams and benchmarks. Research evaluating three language models for autism caregiver support and a multicenter survey of hematology-oncology fellows&#x27; AI training needs adds wider perspective.</p>
+<p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -33,6 +33,34 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42512654?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">LLMs in Medical Education for Autism Caregivers: A Comparative Evaluation of Accuracy, Readability, Actionability, and Neurodiversity-Affirming Language</a>
     <p class="news-card-summary">Study evaluates three large language models as health information tools for autism caregivers in Saudi Arabia, comparing accuracy, readability, actionability, and neurodiversity-affirming language.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Evaluation of large language models in a national orthopaedic proficiency examination: Implications for health informatics and medical education</a>
+    <p class="news-card-summary">Comparative evaluation of five large language models on a national orthopaedic proficiency examination reveals significant performance variation and implications for medical education assessment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520225?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Large Language Models in German Continuing Medical Education Assessments: Protocol for a Fully Crossed Experimental Study</a>
+    <p class="news-card-summary">Study protocol evaluates how document format affects large language model performance on continuing medical education tests to inform safeguards against AI-assisted test manipulation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520201?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">From doing to being: Generative AI, workplace affordances, and professional identity</a>
+    <p class="news-card-summary">Analysis argues that medical AI education discourse should examine professional identity formation and clinical learning affordances alongside technical tool assessment and risk management.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Internal Medicine Physicians&#x27; Reflections on AI Tools for Research Tasks in Turkey: A Qualitative Descriptive Study Following a Brief Educational Session</a>
+    <p class="news-card-summary">Qualitative study of Turkish internal medicine physicians shows brief educational sessions clarify perceived opportunities and boundaries for AI tool use in research workflows.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -97,34 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">Assessing multiple-choice question quality in internal medicine: a comparative analysis of three large language models against expert consensus</a>
     <p class="news-card-summary">Claude and Gemini show moderate to strong agreement with experts on multiple-choice question cognitive level and technical flaws, but weak agreement on learning outcomes, indicating they can support but not replace expert review.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42496469?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">Toward Child-Centred Artificial Intelligence in Pediatric Emergency Medicine: A Perspective on Clinical Decision Support, Stakeholder Engagement and Education</a>
-    <p class="news-card-summary">Perspective on integrating AI and machine learning into pediatric emergency departments across clinical decision support, stakeholder engagement, and education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">Artificial Intelligence-Induced Deskilling in Interventional Pulmonology: An International Cross-Sectional Survey on Risk Perception and Mitigation Strategies</a>
-    <p class="news-card-summary">International survey of interventional pulmonologists examines perceptions of AI-induced deskilling and mitigation strategies in their specialty.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">Performance of multimodal large language models versus clinicians for radiographic knee osteoarthritis grading: A multiobserver study</a>
-    <p class="news-card-summary">Multimodal large language models including ChatGPT-5.0 show high sensitivity but inferior specificity and reproducibility compared to clinicians for knee osteoarthritis grading on radiographs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42497596?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">Applications of generative artificial intelligence in long-term care services: A systematic review of the evidence on efficacy for improving resident health related quality of life</a>
-    <p class="news-card-summary">Systematic review finds generative AI shows promise for quality and personalization in long-term care but lacks evidence on effectiveness, safety, and cost-effectiveness needed for responsible deployment.</p>
   </div>
 </div>
 </div>
