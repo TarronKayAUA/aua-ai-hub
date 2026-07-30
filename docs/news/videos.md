@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=CiTPDm7PKW0" target="_blank" rel="noopener" title="Multi-robot collaboration with Gemini Robotics 2">
+  <img src="https://i4.ytimg.com/vi/CiTPDm7PKW0/hqdefault.jpg" alt="Video: Multi-robot collaboration with Gemini Robotics 2" loading="lazy">
+  <span class="video-card-title">Multi-robot collaboration with Gemini Robotics 2</span>
+  <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
+  <span class="video-card-desc">Google DeepMind demonstrates Gemini Robotics 2 enabling different robot types to communicate and coordinate on complex multi-robot tasks.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=O9-650iHAls" target="_blank" rel="noopener" title="Advanced dexterity with Gemini Robotics 2">
+  <img src="https://i4.ytimg.com/vi/O9-650iHAls/hqdefault.jpg" alt="Video: Advanced dexterity with Gemini Robotics 2" loading="lazy">
+  <span class="video-card-title">Advanced dexterity with Gemini Robotics 2</span>
+  <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
+  <span class="video-card-desc">Google DeepMind demonstrates advanced physical dexterity capabilities in Gemini Robotics 2 for practical household and workplace tasks.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=4lSQnrMC6nY" target="_blank" rel="noopener" title="Gemini Robotics 2 brings whole body intelligence to robots">
+  <img src="https://i1.ytimg.com/vi/4lSQnrMC6nY/hqdefault.jpg" alt="Video: Gemini Robotics 2 whole body control overview" loading="lazy">
+  <span class="video-card-title">Gemini Robotics 2 whole body control overview</span>
+  <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
+  <span class="video-card-desc">Google DeepMind introduces Gemini Robotics 2, enabling robots to perform whole-body movements in human environments.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=MLehRytu9Zo" target="_blank" rel="noopener" title="We&#x27;re giving 100,000 academic researchers free access to our frontier models">
   <img src="https://i2.ytimg.com/vi/MLehRytu9Zo/hqdefault.jpg" alt="Video: OpenAI frontier models access for academic researchers" loading="lazy">
   <span class="video-card-title">OpenAI frontier models access for academic researchers</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Bonsai 27B model quantization comparison and local deployment</span>
   <span class="video-card-meta">Bijan Bowen, July 16, 2026</span>
   <span class="video-card-desc">Technical comparison of Bonsai 27B model across quantization methods including 1-bit, ternary, and full precision with local setup guidance.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=avpZWh6sm9M" target="_blank" rel="noopener" title="Improved Intelligence with GPT-Live">
-  <img src="https://i2.ytimg.com/vi/avpZWh6sm9M/hqdefault.jpg" alt="Video: GPT-Live next-generation voice model" loading="lazy">
-  <span class="video-card-title">GPT-Live next-generation voice model</span>
-  <span class="video-card-meta">OpenAI, July 14, 2026</span>
-  <span class="video-card-desc">OpenAI presents GPT-Live, a next-generation voice model with improved capabilities for real-time interaction.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=OWPRU_Pc4Ng" target="_blank" rel="noopener" title="5 More AI Myths &amp; The Truth Behind Them: ML, Context, Agents &amp; More">
-  <img src="https://i4.ytimg.com/vi/OWPRU_Pc4Ng/hqdefault.jpg" alt="Video: Five AI myths explained" loading="lazy">
-  <span class="video-card-title">Five AI myths explained</span>
-  <span class="video-card-meta">IBM Technology, July 14, 2026</span>
-  <span class="video-card-desc">IBM explainer on common misconceptions about machine learning, context windows, AI agents, and related topics.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=gI5d2czu9JE" target="_blank" rel="noopener" title="Meta Muse Spark 1.1 IS UNDERRATED! Beats Opus 4.8 &amp; Grok 4.5! (Fully Tested)">
-  <img src="https://i4.ytimg.com/vi/gI5d2czu9JE/hqdefault.jpg" alt="Video: Meta Muse Spark 1.1 benchmark testing" loading="lazy">
-  <span class="video-card-title">Meta Muse Spark 1.1 benchmark testing</span>
-  <span class="video-card-meta">WorldofAI, July 14, 2026</span>
-  <span class="video-card-desc">Hands-on benchmark comparison of Meta Muse Spark 1.1 against Claude Opus 4.8 and Grok 4.5 across multiple tests.</span>
 </a>
 </div>
 

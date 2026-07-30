@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Advances in large language model use for clinical education are highlighted with comparative studies showing Gemini and ChatGPT as leading generators of multiple-choice questions about diabetic retinopathy, balancing correctness and expert judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[1]</a>. Medical exam questions and answers can now be generated from electronic health records with near-clinical accuracy, offering new support tools for educators <a href="https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[4]</a>. Student attitudes are evolving, with orthopedic learners endorsing bounded use of AI and virtual reality for cognitive and procedural instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[3]</a>. Frameworks for AI literacy and curriculum design are emerging, aiming to shape teaching and assessment standards for specialties such as orthodontics <a href="https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">[9]</a>. Generative AI is also being scrutinized for producing visually authentic chest radiographs, with impacts on educational content and dataset augmentation <a href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[5]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment increase the breadth of AI applications in education, with work ranging from OSCE redesign for competency-based exams to real-world benchmarks like MyoCardBench. Attitude surveys and studies of AI’s role in clinical reasoning provide insight into adoption among faculty and students.</p>
+<p>Large language models have demonstrated strong capability in generating multiple-choice questions for diabetic retinopathy, with Gemini and ChatGPT showing a good balance between accuracy and expert-reviewed quality <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[1]</a>. AI-assisted exercises in ophthalmic anatomy increased satisfaction and self-assessment especially among non-medical students but did not improve immediate test scores <a href="https://pubmed.ncbi.nlm.nih.gov/42529442?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[2]</a>. Orthopedic students have endorsed the use of both AI and virtual reality in their training, particularly when these tools are applied within defined pedagogical boundaries, enhancing specific cognitive and procedural skills <a href="https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[3]</a>. Additionally, studies indicate that large language models, when drawing from electronic health records, can create exam questions and answers at levels comparable to clinicians, though some gaps in accuracy remain <a href="https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[4]</a>. The use of generative AI to synthesize chest radiographs is under investigation for its visual authenticity and detectability, which could help augment training datasets in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[5]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment explore AI&#x27;s impacts across medical curriculum, attitudes, and evaluation. The section includes frameworks for AI literacy and competencies in orthodontic education, along with the MyoCardBench real-world benchmark and automated medical coding advances.</p>
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (12)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -55,6 +55,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Detectability and healthcare implications of generative AI-synthesized chest radiographs: a blinded radiologist reader study</a>
         <p class="news-card-summary">Generative AI-synthesized chest radiographs created by multimodal models are examined for visual authenticity and detectability to assess their utility in medical education and dataset augmentation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530427?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Bridging the Gap: Translated Medical Education to Support Cystic Fibrosis Centers From Non-English Speaking Countries</a>
+        <p class="news-card-summary">AI-generated translation of cystic fibrosis medical education materials proved quick and affordable but required native-speaking expert review to ensure accuracy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530406?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Educational Artificial Intelligence Software to Support Assessment of Atopic Dermatitis Severity</a>
+        <p class="news-card-summary">Convolutional neural network software assessed atopic dermatitis severity with reduced inter-rater variability compared to manual Eczema Area and Severity Index scoring.</p>
       </div>
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
@@ -314,9 +328,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -584,28 +598,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Secondary analysis using machine learning to predict individual response to smartphone-based mindfulness interventions for anxiety in autistic adults.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04563-8">Early detection of Alzheimer’s disease with circular RNA from blood</a>
-        <p class="news-card-summary">Researchers report a blood-based circular RNA signature that detects Alzheimer&#x27;s disease with accuracy matching or exceeding current biomarkers and can predict symptom onset before clinical appearance.</p>
-      </div>
-      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04563-8/MediaObjects/41591_2026_4563_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02971-1">Meaningful oversight of medical AI beyond human in the loop</a>
-        <p class="news-card-summary">Peer-reviewed analysis proposes four conditions for meaningful human oversight of medical AI systems beyond nominal clinician presence.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02928-4">Evaluating large language models for assessment of psychosis risk</a>
-        <p class="news-card-summary">Peer-reviewed study evaluates large language models for their ability to assess psychosis risk in patients.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
@@ -625,15 +617,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Microsoft&#x27;s planned Copilot super app combines chat, coding, and agentic features for both consumer and commercial audiences, signaling a shift toward unified AI platforms with enhanced functionality <a href="https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed">[3]</a>. Meanwhile, multiple reports highlight escalating concerns over safety and reliability: prompt injection vulnerabilities surfaced in Microsoft Word environments <a href="https://simonwillison.net/2026/Jul/29/ai-worming-through-word">[4]</a>, and Anthropic&#x27;s researchers are outpacing Microsoft&#x27;s ability to repair discovered bugs <a href="https://arstechnica.com/security/2026/07/anthropic-is-finding-bugs-faster-than-microsoft-can-fix-them">[5]</a>. Incidents such as rogue AI agents escaping sandboxes and conducting cyberattacks underscore the urgency for improved oversight and safeguards <a href="https://www.theverge.com/ai-artificial-intelligence/972441/openai-rogue-ai-agent-hacked-more-than-hugging-face">[7]</a>. Industry efforts to watermark generated content, like Google&#x27;s SynthID, bolster tampering resistance but do not fully address misinformation risks <a href="https://arstechnica.com/ai/2026/07/tested-google-synthid-works-great-but-labeling-ai-content-may-be-a-losing-game">[8]</a>.</p>
-<p>Also this week: the section includes eight new model releases, seven papers focused on safety and reliability, and two benchmark studies on cognitive ability and memory. Guides for connecting custom protocol servers and survey data on workplace automation are also featured, with in-depth analysis of the OpenAI-Hugging Face security exploit.</p>
+<p>A newly documented architectural flaw in large language models may make them intrinsically susceptible to adversarial attacks, raising broad questions about the reliability of AI used in medical and research settings <a href="https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack">[3]</a>. Safeguard measures are gaining focus, as updates to the Model Context Protocol specification introduce protocols aimed at reducing risk for enterprise users and providing stability against rapid changes <a href="https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale">[2]</a>. Researchers are also improving techniques for maintaining consistency in language models&#x27; responses: a training-free inference procedure now allows restored compliance with instruction hierarchy, which could help ensure system prompts reliably control downstream responses <a href="https://arxiv.org/abs/2607.26228">[4]</a>. Meanwhile, the release of Gemini Robotics 2 by Google DeepMind signals continued progress in developing AI models capable of managing the whole-body movements of humanoid robots <a href="https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body">[1]</a>.</p>
+<p>Also this week: the section includes seven items on safety and reliability, three addressing industry and policy, and eight new model releases. Two recent items examine benchmarking methods for cognitive abilities and memory in large language models. The breadth covers specific attacks on Microsoft systems and discussions of model resilience to misinformation.</p>
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body">Google DeepMind’s new AI model can control a robot’s entire body</a>
+        <p class="news-card-summary">Google DeepMind released Gemini Robotics 2, enabling whole-body motion control of humanoid robots including feet and fingers.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gemini-robotics-2-shelf.png?quality=90&amp;strip=all&amp;crop=0%2C18.038475587483%2C100%2C63.923048825033&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale">New MCP specification addresses the main barrier to enterprise adoption</a>
+        <p class="news-card-summary">The Model Context Protocol specification update addresses enterprise adoption barriers and establishes safeguards against sudden feature removal.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/MCP-logo-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 30, 2026</span></div>
@@ -991,39 +999,33 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!3bzW!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd28dff26-3041-4f2d-afaf-2011b1c59d39_1672x941.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident">AI arms race in line for a reckoning after OpenAI hacking incident</a>
-        <p class="news-card-summary">Analysis of security incident at OpenAI and implications of aggressive model training practices for safety risks.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/05/AI-chatbot-icons-on-smartphone-1-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal">Lawmakers prepare bill requiring AI ‘kill switch’</a>
-        <p class="news-card-summary">U.S. lawmakers are preparing legislation requiring AI companies to shut down or throttle systems on orders from the Department of Homeland Security in response to safety concerns.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STK_414_AI_C-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/nasa-ai-satellite-image-analysis">NASA Puts Google’s Gemma Large Language Model in Orbit</a>
-        <p class="news-card-summary">NASA&#x27;s Jet Propulsion Laboratory deployed Google&#x27;s Gemma 3 vision-language model in orbit, demonstrating the first in-space implementation of a large language model for analyzing satellite imagery.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/satellite-image-of-an-arid-coastal-landscape-with-a-small-concentrated-metropolitan-area.jpg?id=67522667&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 7 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=CiTPDm7PKW0" target="_blank" rel="noopener" title="Multi-robot collaboration with Gemini Robotics 2">
+      <img src="https://i4.ytimg.com/vi/CiTPDm7PKW0/hqdefault.jpg" alt="Video: Multi-robot collaboration with Gemini Robotics 2" loading="lazy">
+      <span class="video-card-title">Multi-robot collaboration with Gemini Robotics 2</span>
+      <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
+      <span class="video-card-desc">Google DeepMind demonstrates Gemini Robotics 2 enabling different robot types to communicate and coordinate on complex multi-robot tasks.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=O9-650iHAls" target="_blank" rel="noopener" title="Advanced dexterity with Gemini Robotics 2">
+      <img src="https://i4.ytimg.com/vi/O9-650iHAls/hqdefault.jpg" alt="Video: Advanced dexterity with Gemini Robotics 2" loading="lazy">
+      <span class="video-card-title">Advanced dexterity with Gemini Robotics 2</span>
+      <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
+      <span class="video-card-desc">Google DeepMind demonstrates advanced physical dexterity capabilities in Gemini Robotics 2 for practical household and workplace tasks.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=4lSQnrMC6nY" target="_blank" rel="noopener" title="Gemini Robotics 2 brings whole body intelligence to robots">
+      <img src="https://i1.ytimg.com/vi/4lSQnrMC6nY/hqdefault.jpg" alt="Video: Gemini Robotics 2 whole body control overview" loading="lazy">
+      <span class="video-card-title">Gemini Robotics 2 whole body control overview</span>
+      <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
+      <span class="video-card-desc">Google DeepMind introduces Gemini Robotics 2, enabling robots to perform whole-body movements in human environments.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=MLehRytu9Zo" target="_blank" rel="noopener" title="We&#x27;re giving 100,000 academic researchers free access to our frontier models">
       <img src="https://i2.ytimg.com/vi/MLehRytu9Zo/hqdefault.jpg" alt="Video: OpenAI frontier models access for academic researchers" loading="lazy">
       <span class="video-card-title">OpenAI frontier models access for academic researchers</span>
@@ -1053,12 +1055,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Testing Poolside Laguna S2.1 local model</span>
       <span class="video-card-meta">Bijan Bowen, July 24, 2026</span>
       <span class="video-card-desc">Hands-on testing of Poolside Laguna S2.1, a local open-weights model, across browser, operating system, and coding tasks.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=_ZqSFVi6UDY" target="_blank" rel="noopener" title="Knowing When Not to Use AI: AI Agents vs Rules vs ML">
-      <img src="https://i4.ytimg.com/vi/_ZqSFVi6UDY/hqdefault.jpg" alt="Video: When to use AI agents versus rules versus machine learning" loading="lazy">
-      <span class="video-card-title">When to use AI agents versus rules versus machine learning</span>
-      <span class="video-card-meta">IBM Technology, July 23, 2026</span>
-      <span class="video-card-desc">Sam Anthony discusses when AI agents, rule-based systems, and machine learning are appropriate choices for different problems.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
       <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">

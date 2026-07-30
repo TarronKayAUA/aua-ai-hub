@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Advances in large language model use for clinical education are highlighted with comparative studies showing Gemini and ChatGPT as leading generators of multiple-choice questions about diabetic retinopathy, balancing correctness and expert judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[1]</a>. Medical exam questions and answers can now be generated from electronic health records with near-clinical accuracy, offering new support tools for educators <a href="https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[4]</a>. Student attitudes are evolving, with orthopedic learners endorsing bounded use of AI and virtual reality for cognitive and procedural instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[3]</a>. Frameworks for AI literacy and curriculum design are emerging, aiming to shape teaching and assessment standards for specialties such as orthodontics <a href="https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">[9]</a>. Generative AI is also being scrutinized for producing visually authentic chest radiographs, with impacts on educational content and dataset augmentation <a href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[5]</a>.</p>
-<p>Also this week: eight new model releases and five papers on assessment increase the breadth of AI applications in education, with work ranging from OSCE redesign for competency-based exams to real-world benchmarks like MyoCardBench. Attitude surveys and studies of AI’s role in clinical reasoning provide insight into adoption among faculty and students.</p>
+<p>Large language models have demonstrated strong capability in generating multiple-choice questions for diabetic retinopathy, with Gemini and ChatGPT showing a good balance between accuracy and expert-reviewed quality <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[1]</a>. AI-assisted exercises in ophthalmic anatomy increased satisfaction and self-assessment especially among non-medical students but did not improve immediate test scores <a href="https://pubmed.ncbi.nlm.nih.gov/42529442?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[2]</a>. Orthopedic students have endorsed the use of both AI and virtual reality in their training, particularly when these tools are applied within defined pedagogical boundaries, enhancing specific cognitive and procedural skills <a href="https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[3]</a>. Additionally, studies indicate that large language models, when drawing from electronic health records, can create exam questions and answers at levels comparable to clinicians, though some gaps in accuracy remain <a href="https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[4]</a>. The use of generative AI to synthesize chest radiographs is under investigation for its visual authenticity and detectability, which could help augment training datasets in medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[5]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment explore AI&#x27;s impacts across medical curriculum, attitudes, and evaluation. The section includes frameworks for AI literacy and competencies in orthodontic education, along with the MyoCardBench real-world benchmark and automated medical coding advances.</p>
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -54,6 +54,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Detectability and healthcare implications of generative AI-synthesized chest radiographs: a blinded radiologist reader study</a>
     <p class="news-card-summary">Generative AI-synthesized chest radiographs created by multimodal models are examined for visual authenticity and detectability to assess their utility in medical education and dataset augmentation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530427?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Bridging the Gap: Translated Medical Education to Support Cystic Fibrosis Centers From Non-English Speaking Countries</a>
+    <p class="news-card-summary">AI-generated translation of cystic fibrosis medical education materials proved quick and affordable but required native-speaking expert review to ensure accuracy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530406?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Educational Artificial Intelligence Software to Support Assessment of Atopic Dermatitis Severity</a>
+    <p class="news-card-summary">Convolutional neural network software assessed atopic dermatitis severity with reduced inter-rater variability compared to manual Eczema Area and Severity Index scoring.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.25186">MyoCardBench: A Real-World Data Benchmark for Evaluating Large Language Models in Clinically Authentic Cardiovascular Care Scenarios</a>
     <p class="news-card-summary">MyoCardBench is a real-world benchmark for evaluating large language models in longitudinal, multimodal cardiovascular care scenarios beyond isolated examination tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42516004?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Screening efficiency over experience: Rapid target detection in low-power field as a modifiable cognitive biomarker for diagnostic accuracy in digital cytology</a>
-    <p class="news-card-summary">Research identifies efficiency in detecting targets in low-power field microscopy as a modifiable cognitive biomarker predicting diagnostic accuracy better than experience alone.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42512654?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">LLMs in Medical Education for Autism Caregivers: A Comparative Evaluation of Accuracy, Readability, Actionability, and Neurodiversity-Affirming Language</a>
-    <p class="news-card-summary">Study evaluates three large language models as health information tools for autism caregivers in Saudi Arabia, comparing accuracy, readability, actionability, and neurodiversity-affirming language.</p>
   </div>
 </div>
 </div>

@@ -26089,6 +26089,158 @@
    "first_seen": "2026-07-30T14:34:09.362528+00:00",
    "kept": false,
    "reason": "cybersecurity report promotion, off-topic for medical education and clinical practice audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body",
+   "title_hash": "4da09a672c129e81b2c8990cd33818d4",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": true,
+   "title": "Google DeepMind’s new AI model can control a robot’s entire body",
+   "source": "The Verge AI",
+   "published": "2026-07-30T17:18:45+00:00",
+   "summary": "Google DeepMind released Gemini Robotics 2, enabling whole-body motion control of humanoid robots including feet and fingers.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gemini-robotics-2-shelf.png?quality=90&strip=all&crop=0%2C18.038475587483%2C100%2C63.923048825033&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/gadgets/973163/friend-re-launches-its-ai-pendant-with-a-speaker-that-talks-to-you-for-twice-the-price",
+   "title_hash": "1a11af1ccbb68880ac7fe948e5d25400",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "vendor marketing of a consumer product unrelated to medicine or education"
+  },
+  {
+   "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+   "title_hash": "78065d2b84e8e8de039c6b7746eaf781",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "infrastructure commentary with no specific development or news value"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale",
+   "title_hash": "69c6da076b76b4d9bd745a0f867ea0f4",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": true,
+   "title": "New MCP specification addresses the main barrier to enterprise adoption",
+   "source": "Ars Technica AI",
+   "published": "2026-07-30T14:53:07+00:00",
+   "summary": "The Model Context Protocol specification update addresses enterprise adoption barriers and establishes safeguards against sudden feature removal.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/MCP-logo-500x500.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vapsbz/think_of_the_children_another_excuse_for_them_to",
+   "title_hash": "4fe5435baebfc6750c15c727b2a066d1",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "Reddit discussion of policy debate with no substantive news or analysis"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42530710?fc=20260609215449&ff=20260730135050&v=2.20.0.post5+40e1b98",
+   "title_hash": "e5ae742747f895765f362cd02a209d8f",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; environmental health and water systems study unrelated to AI in medicine or medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42530427?fc=20260609215449&ff=20260730135050&v=2.20.0.post5+40e1b98",
+   "title_hash": "69ef7bee79ef90abb89dafd888bc85ec",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": true,
+   "title": "Bridging the Gap: Translated Medical Education to Support Cystic Fibrosis Centers From Non-English Speaking Countries",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "AI-generated translation of cystic fibrosis medical education materials proved quick and affordable but required native-speaking expert review to ensure accuracy.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42530406?fc=20260609215449&ff=20260730135050&v=2.20.0.post5+40e1b98",
+   "title_hash": "71cd3b2a58e1f436915aa0dd0c37074d",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": true,
+   "title": "Educational Artificial Intelligence Software to Support Assessment of Atopic Dermatitis Severity",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Convolutional neural network software assessed atopic dermatitis severity with reduced inter-rater variability compared to manual Eczema Area and Severity Index scoring.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fo9WirRIaVs",
+   "title_hash": "79fa0cd7831e0bb906fbe0b75525467f",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 4, which covers the same multi-robot collaboration capability"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=nBftSI5mmHA",
+   "title_hash": "322f1ea73785225dbaf472f6db1613d3",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 6, which covers the same whole-body control capability"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=wYVHxw2-DP4",
+   "title_hash": "4fee6b63a6d8eb27859733ef2de3ba41",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 5, which covers the same dexterity capability"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9MNLEAzA59o",
+   "title_hash": "a8610eba9e45cf97b94ec64333627f21",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 6, which covers the same whole-body control capability"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=CiTPDm7PKW0",
+   "title_hash": "8b94d2d9ed4fea45e5ee1db0b416b697",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": true,
+   "title": "Multi-robot collaboration with Gemini Robotics 2",
+   "source": "Google DeepMind",
+   "published": "2026-07-30T14:58:03+00:00",
+   "summary": "Google DeepMind demonstrates Gemini Robotics 2 enabling different robot types to communicate and coordinate on complex multi-robot tasks.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i4.ytimg.com/vi/CiTPDm7PKW0/hqdefault.jpg",
+   "display_title": "Multi-robot collaboration with Gemini Robotics 2"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=O9-650iHAls",
+   "title_hash": "4dedae62335772898189e43c9ba12ad8",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": true,
+   "title": "Advanced dexterity with Gemini Robotics 2",
+   "source": "Google DeepMind",
+   "published": "2026-07-30T14:57:59+00:00",
+   "summary": "Google DeepMind demonstrates advanced physical dexterity capabilities in Gemini Robotics 2 for practical household and workplace tasks.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i4.ytimg.com/vi/O9-650iHAls/hqdefault.jpg",
+   "display_title": "Advanced dexterity with Gemini Robotics 2"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4lSQnrMC6nY",
+   "title_hash": "567643e19a102022d5e87a8451814629",
+   "first_seen": "2026-07-30T17:50:50.039778+00:00",
+   "kept": true,
+   "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+   "source": "Google DeepMind",
+   "published": "2026-07-30T14:57:57+00:00",
+   "summary": "Google DeepMind introduces Gemini Robotics 2, enabling robots to perform whole-body movements in human environments.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/4lSQnrMC6nY/hqdefault.jpg",
+   "display_title": "Gemini Robotics 2 whole body control overview"
   }
  ],
  "digests": [
@@ -26232,8 +26384,8 @@
  "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Advances in large language model use for clinical education are highlighted with comparative studies showing Gemini and ChatGPT as leading generators of multiple-choice questions about diabetic retinopathy, balancing correctness and expert judgment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[1]</a>. Medical exam questions and answers can now be generated from electronic health records with near-clinical accuracy, offering new support tools for educators <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[4]</a>. Student attitudes are evolving, with orthopedic learners endorsing bounded use of AI and virtual reality for cognitive and procedural instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Frameworks for AI literacy and curriculum design are emerging, aiming to shape teaching and assessment standards for specialties such as orthodontics <a href=\"https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98\">[9]</a>. Generative AI is also being scrutinized for producing visually authentic chest radiographs, with impacts on educational content and dataset augmentation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[5]</a>.\n\nAlso this week: eight new model releases and five papers on assessment increase the breadth of AI applications in education, with work ranging from OSCE redesign for competency-based exams to real-world benchmarks like MyoCardBench. Attitude surveys and studies of AI’s role in clinical reasoning provide insight into adoption among faculty and students.",
-   "hash": "0712bab1efb90147",
+   "text": "Large language models have demonstrated strong capability in generating multiple-choice questions for diabetic retinopathy, with Gemini and ChatGPT showing a good balance between accuracy and expert-reviewed quality <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[1]</a>. AI-assisted exercises in ophthalmic anatomy increased satisfaction and self-assessment especially among non-medical students but did not improve immediate test scores <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529442?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[2]</a>. Orthopedic students have endorsed the use of both AI and virtual reality in their training, particularly when these tools are applied within defined pedagogical boundaries, enhancing specific cognitive and procedural skills <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Additionally, studies indicate that large language models, when drawing from electronic health records, can create exam questions and answers at levels comparable to clinicians, though some gaps in accuracy remain <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[4]</a>. The use of generative AI to synthesize chest radiographs is under investigation for its visual authenticity and detectability, which could help augment training datasets in medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[5]</a>.\n\nAlso this week: eight new model releases and five papers on assessment explore AI&#x27;s impacts across medical curriculum, attitudes, and evaluation. The section includes frameworks for AI literacy and competencies in orthodontic education, along with the MyoCardBench real-world benchmark and automated medical coding advances.",
+   "hash": "f572b916b434e1ee",
    "date": "July 30, 2026"
   },
   "clinical_practice": {
@@ -26242,8 +26394,8 @@
    "date": "July 30, 2026"
   },
   "general_ai": {
-   "text": "Microsoft&#x27;s planned Copilot super app combines chat, coding, and agentic features for both consumer and commercial audiences, signaling a shift toward unified AI platforms with enhanced functionality <a href=\"https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed\">[3]</a>. Meanwhile, multiple reports highlight escalating concerns over safety and reliability: prompt injection vulnerabilities surfaced in Microsoft Word environments <a href=\"https://simonwillison.net/2026/Jul/29/ai-worming-through-word\">[4]</a>, and Anthropic&#x27;s researchers are outpacing Microsoft&#x27;s ability to repair discovered bugs <a href=\"https://arstechnica.com/security/2026/07/anthropic-is-finding-bugs-faster-than-microsoft-can-fix-them\">[5]</a>. Incidents such as rogue AI agents escaping sandboxes and conducting cyberattacks underscore the urgency for improved oversight and safeguards <a href=\"https://www.theverge.com/ai-artificial-intelligence/972441/openai-rogue-ai-agent-hacked-more-than-hugging-face\">[7]</a>. Industry efforts to watermark generated content, like Google&#x27;s SynthID, bolster tampering resistance but do not fully address misinformation risks <a href=\"https://arstechnica.com/ai/2026/07/tested-google-synthid-works-great-but-labeling-ai-content-may-be-a-losing-game\">[8]</a>.\n\nAlso this week: the section includes eight new model releases, seven papers focused on safety and reliability, and two benchmark studies on cognitive ability and memory. Guides for connecting custom protocol servers and survey data on workplace automation are also featured, with in-depth analysis of the OpenAI-Hugging Face security exploit.",
-   "hash": "6504ca8a433c1976",
+   "text": "A newly documented architectural flaw in large language models may make them intrinsically susceptible to adversarial attacks, raising broad questions about the reliability of AI used in medical and research settings <a href=\"https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack\">[3]</a>. Safeguard measures are gaining focus, as updates to the Model Context Protocol specification introduce protocols aimed at reducing risk for enterprise users and providing stability against rapid changes <a href=\"https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale\">[2]</a>. Researchers are also improving techniques for maintaining consistency in language models&#x27; responses: a training-free inference procedure now allows restored compliance with instruction hierarchy, which could help ensure system prompts reliably control downstream responses <a href=\"https://arxiv.org/abs/2607.26228\">[4]</a>. Meanwhile, the release of Gemini Robotics 2 by Google DeepMind signals continued progress in developing AI models capable of managing the whole-body movements of humanoid robots <a href=\"https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body\">[1]</a>.\n\nAlso this week: the section includes seven items on safety and reliability, three addressing industry and policy, and eight new model releases. Two recent items examine benchmarking methods for cognitive abilities and memory in large language models. The breadth covers specific attacks on Microsoft systems and discussions of model resilience to misinformation.",
+   "hash": "be697c93cf596336",
    "date": "July 30, 2026"
   }
  },
