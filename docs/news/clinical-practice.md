@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A study on large language models used in oncology trial classification highlights concern about reliance on pretraining knowledge, which may undermine grounding and the integrity of clinical documentation <a href="https://ai.jmir.org/2026/1/e95565">[1]</a>. Work in retrieval-augmented generation found that embedding model degradation affects clinical document retrieval, and tested methods for identifying and correcting this issue <a href="https://medinform.jmir.org/2026/1/e99639">[2]</a>. A pilot evaluation of ambient AI in family medicine residency demonstrated improved resident documentation and well-being, emphasizing its impact on workflow efficiency <a href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[12]</a>. Research into ambient AI scribes revealed the propagation of interpreter errors into clinical notes for multilingual encounters, with variation by speaker role and error type <a href="https://medinform.jmir.org/2026/1/e88734">[7]</a>. The comparative performance of AI and radiology residents in pulmonary embolism detection showed that while residents outperformed current AI tools overall, AI performed well for proximal emboli <a href="https://pubmed.ncbi.nlm.nih.gov/42518755?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[11]</a>.</p>
-<p>Also this week: the section features eight new model releases, five papers on assessment and evaluation, and three patient-facing tools. Topics include secure federated learning deployment across hospitals and automated detection of inconsistencies in discharge summaries, alongside recent work mapping reliability and readability gaps in patient education efforts.</p>
-<p class="section-brief-date">The picture as of July 29, 2026; numbered links go to the items below.</p>
+<p>Large language models are increasingly influencing clinical workflows, as seen in recent studies analyzing their effectiveness in both oncology trial classification and clinical documentation retrieval <a href="https://ai.jmir.org/2026/1/e95565">[1]</a>. The findings highlight ongoing concerns about grounding and reliability when models lean on prior knowledge rather than supplied text. Advances in imaging and diagnostics continue, with new frameworks integrating multimodal models to generate treatment recommendations for acute ischemic stroke <a href="https://www.nature.com/articles/s41746-026-03066-7">[8]</a> and automated tools for prenatal ultrasound measurement. In patient-facing tools, objective smartphone speech analysis is helping identify adolescent major depressive disorder, showing promise for mental health diagnostics <a href="https://www.nature.com/articles/s41746-026-03068-5">[5]</a>. Meanwhile, discussions address persistent gaps in AI-driven pathological analysis, including performance limitations across different tissue types.</p>
+<p>Also this week: the section includes eight new model releases, five papers on assessment, four items on clinical documentation, and multiple studies examining patient trust and physician well-being. Papers detail methods for automated detection of inconsistencies in electronic health records and compare AI performance with radiology residents for pulmonary embolism detection.</p>
+<p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -33,6 +33,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e99639">Effects of Model Choice, Corpus Context, and Post Hoc Correction on Layer-Level Embedding Degradation in Clinical Document Retrieval: Experimental Study</a>
     <p class="news-card-summary">Experimental study identifies embedding model degradation in clinical retrieval-augmented generation and tests methods to detect and correct it.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42527464?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">AI solutions to the radiology workforce shortage</a>
+    <p class="news-card-summary">Reviews AI solutions addressing radiology workforce shortages caused by aging populations, chronic disease demand, and supply constraints in residency positions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42527096?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">Pitfalls and Emerging Trends in AI-driven Pathological Analysis of Metastatic Brain Tumors</a>
+    <p class="news-card-summary">Analyzes challenges in AI-driven pathological analysis of metastatic brain tumors, including model performance gaps when applied to intracranial versus extracranial tissues.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.22954">Toward Automated Detection of Documentation Inconsistencies in Electronic Health Records</a>
     <p class="news-card-summary">Study applies language models to detect inconsistencies in discharge summaries and characterizes failure modes limiting reliability of automated documentation review.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02958-y">Nationwide federated learning for histopathology: secure deployment across Germany behind firewalls</a>
-    <p class="news-card-summary">Federated learning enabled secure deployment of histopathology AI across German hospitals while keeping data behind institutional firewalls.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03051-0">Grounding Radiology Report Findings into Medical Image Segmentation</a>
-    <p class="news-card-summary">Peer-reviewed research on grounding radiology report findings into medical image segmentation to link text descriptions with image regions.</p>
   </div>
 </div>
 </div>

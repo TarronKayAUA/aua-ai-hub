@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Medical schools and faculty are examining how artificial intelligence is reshaping both clinical reasoning and curriculum design. Surveys show second-year students are already using AI tools for diagnostic thinking, but educators are urged to highlight the importance of critical evaluation and independent judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98">[3]</a>. Meanwhile, new frameworks are emerging to define AI literacy as an observable competency for undergraduate training, with efforts to anchor curriculum and assessment standards <a href="https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">[2]</a>. Ongoing research also considers the impact of AI on professional identity formation in medical education, emphasizing the need to balance technical skills with development of clinical learning affordances <a href="https://pubmed.ncbi.nlm.nih.gov/42520201?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[10]</a>. Comparative evaluations bring to light performance differences among large language models in benchmark assessments, raising questions about reliability and future health informatics practices <a href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[8]</a>.</p>
-<p>Also this week: investigations address integration attitudes among Saudi medical students and highlight approaches in psychiatric graduate education. Recent work explores document format effects in German continuing medical education assessments and examines cognitive biomarkers in digital cytology. Studies evaluate large language models for autism caregiver guidance and reflect on the risks of AI-generated clinical documentation.</p>
+<p>Competency-based approaches are shaping both curriculum and assessment in medical education, with new frameworks for AI literacy defining it as a measurable skill for undergraduate learners <a href="https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">[3]</a>. As AI becomes integrated into clinical reasoning, educators are encouraged to stress critical evaluation and careful use of AI to support diagnostic independence <a href="https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98">[4]</a>. Studies report that Saudi medical students see generative AI mainly as a support in basic sciences and simulated environments, reinforcing its role as a supplement rather than a substitute to traditional instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42524542?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">[2]</a>. Orthodontic education is beginning to address the need for competencies that navigate algorithm-augmented practice, identifying curriculum design and implementation challenges for new AI-centered teaching models <a href="https://pubmed.ncbi.nlm.nih.gov/42526900?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">[5]</a>.</p>
+<p>Also this week: the section covers six items on teaching and curriculum and three on assessment and feedback. There are two papers evaluating large language models on formal exams or benchmarks, and three papers exploring attitudes and adoption across diverse contexts. The Saudi caregiver study compares LLM accuracy and neurodiversity-affirming language in autism care.</p>
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">ICE Blog</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://icenet.blog/2026/07/30/reimagining-the-osce-for-learning-in-competency-based-education">Reimagining the OSCE for Learning in Competency-based Education</a>
+    <p class="news-card-summary">Examines how Objective Structured Clinical Examinations adapt to competency-based education frameworks and their role in assessing clinical learning outcomes.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
@@ -40,6 +47,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98">Abstract: Artificial Intelligence Use in Clinical Reasoning Among Second-Year Medical Students: A Cross-Sectional Survey Study</a>
     <p class="news-card-summary">Survey of second-year medical students shows AI is already integrated into clinical reasoning; educators should emphasize critical evaluation and calibrated AI use to support independent diagnostic thinking.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42526900?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">Training the algorithmically augmented orthodontist: competencies, curriculum design, and implementation challenges</a>
+    <p class="news-card-summary">Proposes a framework for integrating AI competencies into orthodontic education, addressing curriculum design and implementation challenges for algorithm-augmented practice.</p>
   </div>
 </div>
 <div class="news-card" data-topic="other">
@@ -110,21 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.22996">Beyond Direct Answering: Aligning Educational LLMs as Socratic Guides via Heuristic Reinforcement Learning</a>
     <p class="news-card-summary">Research aligns a language model toward Socratic tutoring through reinforcement learning, guiding student inquiry instead of direct answering.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/28/why-one-professor-abandoned-ai-resistance">Why One Professor Abandoned the AI Resistance</a>
-    <p class="news-card-summary">Profile of a professor who shifted from resisting artificial intelligence to measuring AI readiness across colleges and universities.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1705108764.jpg?itok=bdB9Rlla" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42505126?fc=20260609215449&amp;ff=20260727135628&amp;v=2.20.0">Hollow Documentation: Forensic and Educational Risks of Artificial Intelligence-Generated Clinical Records</a>
-    <p class="news-card-summary">Study examines risks of AI-generated clinical documentation in medical education and forensic contexts.</p>
   </div>
 </div>
 </div>
