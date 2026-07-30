@@ -25969,6 +25969,126 @@
    "first_seen": "2026-07-30T10:34:36.803962+00:00",
    "kept": false,
    "reason": "drama coverage and misleading framing; the actual content concerns a security research exercise, not agents escaping or going rogue"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e87034",
+   "title_hash": "dd4873c001fbd59d751f2999a031d608",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": true,
+   "title": "Measuring Consistency Between Large Language Models’ Responses to Preventive Care Queries and Official US Preventive Services Task Force (USPSTF) Recommendations: Systematic Test Involving All USPSTF Preventive Care Topics via Simulated User Prompts",
+   "source": "JMIR AI",
+   "published": "2026-07-30T14:15:02+00:00",
+   "summary": "A systematic evaluation of multiple large language models found mixed alignment with official US preventive care recommendations, raising concerns about clinical use for preventive care guidance.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.aipolicyperspectives.com/p/the-ai-papers-6",
+   "title_hash": "b754d75fc4422cd12a16fe9e8c37eb5b",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": false,
+   "reason": "listicle or roundup article without substantive analysis or teaching content"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack",
+   "title_hash": "da019ca2eb6dbf0d4abe448d0a3c111a",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": true,
+   "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+   "source": "MIT Technology Review AI",
+   "published": "2026-07-30T10:15:19+00:00",
+   "summary": "Researchers presented evidence at a top machine learning conference that large language models contain a fundamental architectural flaw making them inherently vulnerable to adversarial attacks.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/chain-link.jpg?resize=1200,600",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&ff=20260730103409&v=2.20.0.post5+40e1b98",
+   "title_hash": "d05c11ee97855e16a7a8f43eab156135",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": true,
+   "title": "Evaluating large language models for diabetic retinopathy multiple-choice question generation in clinical ophthalmic education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Five large language models generated structurally sound multiple-choice questions on diabetic retinopathy with varying accuracy; Gemini and ChatGPT showed the best balance between correctness and expert-rated quality.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42529442?fc=20260609215449&ff=20260730103409&v=2.20.0.post5+40e1b98",
+   "title_hash": "e2c266709a3762b21d491786bd450397",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": true,
+   "title": "Learning ophthalmic anatomy with AI-generated visual resource: the moderating role of educational background",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "An AI-assisted comparative exercise for ophthalmic anatomy did not significantly improve immediate test scores but increased satisfaction and self-assessed performance in non-medical students without increasing cognitive load.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&ff=20260730103409&v=2.20.0.post5+40e1b98",
+   "title_hash": "47da5b6eeac35e777aac67fdf35d4bb1",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": true,
+   "title": "Beyond acceptance: bounded use of AI and VR in orthopedic education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Orthopedic students supported AI and virtual reality in education within clear pedagogical boundaries, with AI enhancing cognitive learning and VR supporting procedural training under faculty oversight.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&ff=20260730103409&v=2.20.0.post5+40e1b98",
+   "title_hash": "eefb5a9640ee47dcf18f8adb1f4ac121",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": true,
+   "title": "The potential of LLMs in generating questions and answers with EHRs",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Large language models can generate medical exam questions and answers from electronic health records at levels comparable to clinicians, though with some accuracy gaps, suggesting potential as assisted tools for medical educators.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&ff=20260730103409&v=2.20.0.post5+40e1b98",
+   "title_hash": "6a17f5339aba790f47daa02a3c949767",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": true,
+   "title": "Detectability and healthcare implications of generative AI-synthesized chest radiographs: a blinded radiologist reader study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Generative AI-synthesized chest radiographs created by multimodal models are examined for visual authenticity and detectability to assess their utility in medical education and dataset augmentation.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6ihwf/ive_seen_this_movie_before",
+   "title_hash": "42e6be721490fec397c135f14815708c",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": false,
+   "reason": "community forum thread with no clear news or analysis content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=si2v74T2AVY",
+   "title_hash": "10d2253f8c94842cf80127476ed3a03c",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": false,
+   "reason": "product demonstration and coding tutorial with promotional framing, not substantive model comparison or capability analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=b2PESRl7De4",
+   "title_hash": "dd22ac11e0de4899b1a0f69e0cd0c545",
+   "first_seen": "2026-07-30T14:34:09.362528+00:00",
+   "kept": false,
+   "reason": "cybersecurity report promotion, off-topic for medical education and clinical practice audience"
   }
  ],
  "digests": [
@@ -26112,13 +26232,13 @@
  "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Efforts to redesign medical education to incorporate artificial intelligence are expanding, with frameworks emerging for AI literacy as a measurable competency within undergraduate curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98\">[4]</a>. Assessments like Objective Structured Clinical Examinations are adapting to competency-based models, reflecting shifts in how clinical skills are evaluated with AI support <a href=\"https://icenet.blog/2026/07/30/reimagining-the-osce-for-learning-in-competency-based-education\">[1]</a>. Studies show medical students are already applying AI in clinical reasoning and view it as an enhancement for learning basic sciences and simulations, underscoring the need for guidance on critical evaluation and optimal integration strategies <a href=\"https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98\">[5]</a>. Concerns around professional identity and the boundaries of AI-assisted practice continue to surface, suggesting the importance of discourse that situates AI adoption in the broader context of workplace and interpersonal development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42520201?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0\">[13]</a>.\n\nAlso this week: five new papers address assessment and feedback, alongside two items examining exams and proficiency benchmarks. The section features the comparative evaluation of large language models in national orthopaedic testing and the MyoCardBench benchmark for cardiovascular care scenarios, broadening the discussion of AI’s role in both specialty training and authentically modeled clinical settings.",
-   "hash": "7a2b79b9b4dffa46",
+   "text": "Advances in large language model use for clinical education are highlighted with comparative studies showing Gemini and ChatGPT as leading generators of multiple-choice questions about diabetic retinopathy, balancing correctness and expert judgment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[1]</a>. Medical exam questions and answers can now be generated from electronic health records with near-clinical accuracy, offering new support tools for educators <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[4]</a>. Student attitudes are evolving, with orthopedic learners endorsing bounded use of AI and virtual reality for cognitive and procedural instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Frameworks for AI literacy and curriculum design are emerging, aiming to shape teaching and assessment standards for specialties such as orthodontics <a href=\"https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98\">[9]</a>. Generative AI is also being scrutinized for producing visually authentic chest radiographs, with impacts on educational content and dataset augmentation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[5]</a>.\n\nAlso this week: eight new model releases and five papers on assessment increase the breadth of AI applications in education, with work ranging from OSCE redesign for competency-based exams to real-world benchmarks like MyoCardBench. Attitude surveys and studies of AI’s role in clinical reasoning provide insight into adoption among faculty and students.",
+   "hash": "0712bab1efb90147",
    "date": "July 30, 2026"
   },
   "clinical_practice": {
-   "text": "Large language models are increasingly influencing clinical workflows, as seen in recent studies analyzing their effectiveness in both oncology trial classification and clinical documentation retrieval <a href=\"https://ai.jmir.org/2026/1/e95565\">[1]</a>. The findings highlight ongoing concerns about grounding and reliability when models lean on prior knowledge rather than supplied text. Advances in imaging and diagnostics continue, with new frameworks integrating multimodal models to generate treatment recommendations for acute ischemic stroke <a href=\"https://www.nature.com/articles/s41746-026-03066-7\">[8]</a> and automated tools for prenatal ultrasound measurement. In patient-facing tools, objective smartphone speech analysis is helping identify adolescent major depressive disorder, showing promise for mental health diagnostics <a href=\"https://www.nature.com/articles/s41746-026-03068-5\">[5]</a>. Meanwhile, discussions address persistent gaps in AI-driven pathological analysis, including performance limitations across different tissue types.\n\nAlso this week: the section includes eight new model releases, five papers on assessment, four items on clinical documentation, and multiple studies examining patient trust and physician well-being. Papers detail methods for automated detection of inconsistencies in electronic health records and compare AI performance with radiology residents for pulmonary embolism detection.",
-   "hash": "6ba309a93d9f8d69",
+   "text": "Mixed alignment between large language model responses and US Preventive Services Task Force recommendations in preventive care highlights concerns about the reliability of AI guidance in clinical settings <a href=\"https://ai.jmir.org/2026/1/e87034\">[1]</a>. At the same time, researchers demonstrated that large language models might classify oncology trials based largely on prior knowledge, rather than information in the trial documents themselves, raising issues about evidence grounding <a href=\"https://ai.jmir.org/2026/1/e95565\">[2]</a>. Ongoing studies are investigating embedding degradation in clinical document retrieval, with methods tested for error detection and correction <a href=\"https://medinform.jmir.org/2026/1/e99639\">[3]</a>. AI solutions for workforce shortages in radiology are under active review, given increasing demands and limited clinician supply <a href=\"https://pubmed.ncbi.nlm.nih.gov/42527464?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98\">[4]</a>. Meanwhile, smartphone speech analysis tools are being developed for objective diagnostic support in adolescent major depressive disorder <a href=\"https://www.nature.com/articles/s41746-026-03068-5\">[6]</a>.\n\nAlso this week: The section holds eight new model releases and five papers on clinical assessment, including comparative evaluations of AI and resident performance in pulmonary embolism detection and improved prenatal ultrasound screening. Three studies explore clinical documentation with ambient AI scribes, and patient facing tools are reviewed for reliability and readability in education about age-related macular degeneration.",
+   "hash": "b4bb8f8d3d670881",
    "date": "July 30, 2026"
   },
   "general_ai": {

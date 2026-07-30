@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models are increasingly influencing clinical workflows, as seen in recent studies analyzing their effectiveness in both oncology trial classification and clinical documentation retrieval <a href="https://ai.jmir.org/2026/1/e95565">[1]</a>. The findings highlight ongoing concerns about grounding and reliability when models lean on prior knowledge rather than supplied text. Advances in imaging and diagnostics continue, with new frameworks integrating multimodal models to generate treatment recommendations for acute ischemic stroke <a href="https://www.nature.com/articles/s41746-026-03066-7">[8]</a> and automated tools for prenatal ultrasound measurement. In patient-facing tools, objective smartphone speech analysis is helping identify adolescent major depressive disorder, showing promise for mental health diagnostics <a href="https://www.nature.com/articles/s41746-026-03068-5">[5]</a>. Meanwhile, discussions address persistent gaps in AI-driven pathological analysis, including performance limitations across different tissue types.</p>
-<p>Also this week: the section includes eight new model releases, five papers on assessment, four items on clinical documentation, and multiple studies examining patient trust and physician well-being. Papers detail methods for automated detection of inconsistencies in electronic health records and compare AI performance with radiology residents for pulmonary embolism detection.</p>
+<p>Mixed alignment between large language model responses and US Preventive Services Task Force recommendations in preventive care highlights concerns about the reliability of AI guidance in clinical settings <a href="https://ai.jmir.org/2026/1/e87034">[1]</a>. At the same time, researchers demonstrated that large language models might classify oncology trials based largely on prior knowledge, rather than information in the trial documents themselves, raising issues about evidence grounding <a href="https://ai.jmir.org/2026/1/e95565">[2]</a>. Ongoing studies are investigating embedding degradation in clinical document retrieval, with methods tested for error detection and correction <a href="https://medinform.jmir.org/2026/1/e99639">[3]</a>. AI solutions for workforce shortages in radiology are under active review, given increasing demands and limited clinician supply <a href="https://pubmed.ncbi.nlm.nih.gov/42527464?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">[4]</a>. Meanwhile, smartphone speech analysis tools are being developed for objective diagnostic support in adolescent major depressive disorder <a href="https://www.nature.com/articles/s41746-026-03068-5">[6]</a>.</p>
+<p>Also this week: The section holds eight new model releases and five papers on clinical assessment, including comparative evaluations of AI and resident performance in pulmonary embolism detection and improved prenatal ultrasound screening. Three studies explore clinical documentation with ambient AI scribes, and patient facing tools are reviewed for reliability and readability in education about age-related macular degeneration.</p>
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87034">Measuring Consistency Between Large Language Models’ Responses to Preventive Care Queries and Official US Preventive Services Task Force (USPSTF) Recommendations: Systematic Test Involving All USPSTF Preventive Care Topics via Simulated User Prompts</a>
+    <p class="news-card-summary">A systematic evaluation of multiple large language models found mixed alignment with official US preventive care recommendations, raising concerns about clinical use for preventive care guidance.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 29, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">The Impact of Ambient AI on Resident Documentation and Well-Being: A Pilot Study</a>
     <p class="news-card-summary">Pilot study of ambient AI in family medicine residency shows association with improved resident well-being, satisfaction, and documentation efficiency.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.22954">Toward Automated Detection of Documentation Inconsistencies in Electronic Health Records</a>
-    <p class="news-card-summary">Study applies language models to detect inconsistencies in discharge summaries and characterizes failure modes limiting reliability of automated documentation review.</p>
   </div>
 </div>
 </div>

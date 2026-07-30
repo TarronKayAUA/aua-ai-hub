@@ -13,15 +13,50 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Efforts to redesign medical education to incorporate artificial intelligence are expanding, with frameworks emerging for AI literacy as a measurable competency within undergraduate curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">[4]</a>. Assessments like Objective Structured Clinical Examinations are adapting to competency-based models, reflecting shifts in how clinical skills are evaluated with AI support <a href="https://icenet.blog/2026/07/30/reimagining-the-osce-for-learning-in-competency-based-education">[1]</a>. Studies show medical students are already applying AI in clinical reasoning and view it as an enhancement for learning basic sciences and simulations, underscoring the need for guidance on critical evaluation and optimal integration strategies <a href="https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98">[5]</a>. Concerns around professional identity and the boundaries of AI-assisted practice continue to surface, suggesting the importance of discourse that situates AI adoption in the broader context of workplace and interpersonal development <a href="https://pubmed.ncbi.nlm.nih.gov/42520201?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">[13]</a>.</p>
-<p>Also this week: five new papers address assessment and feedback, alongside two items examining exams and proficiency benchmarks. The section features the comparative evaluation of large language models in national orthopaedic testing and the MyoCardBench benchmark for cardiovascular care scenarios, broadening the discussion of AI’s role in both specialty training and authentically modeled clinical settings.</p>
+<p>Advances in large language model use for clinical education are highlighted with comparative studies showing Gemini and ChatGPT as leading generators of multiple-choice questions about diabetic retinopathy, balancing correctness and expert judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[1]</a>. Medical exam questions and answers can now be generated from electronic health records with near-clinical accuracy, offering new support tools for educators <a href="https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[4]</a>. Student attitudes are evolving, with orthopedic learners endorsing bounded use of AI and virtual reality for cognitive and procedural instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[3]</a>. Frameworks for AI literacy and curriculum design are emerging, aiming to shape teaching and assessment standards for specialties such as orthodontics <a href="https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">[9]</a>. Generative AI is also being scrutinized for producing visually authentic chest radiographs, with impacts on educational content and dataset augmentation <a href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[5]</a>.</p>
+<p>Also this week: eight new model releases and five papers on assessment increase the breadth of AI applications in education, with work ranging from OSCE redesign for competency-based exams to real-world benchmarks like MyoCardBench. Attitude surveys and studies of AI’s role in clinical reasoning provide insight into adoption among faculty and students.</p>
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Evaluating large language models for diabetic retinopathy multiple-choice question generation in clinical ophthalmic education</a>
+        <p class="news-card-summary">Five large language models generated structurally sound multiple-choice questions on diabetic retinopathy with varying accuracy; Gemini and ChatGPT showed the best balance between correctness and expert-rated quality.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42529442?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Learning ophthalmic anatomy with AI-generated visual resource: the moderating role of educational background</a>
+        <p class="news-card-summary">An AI-assisted comparative exercise for ophthalmic anatomy did not significantly improve immediate test scores but increased satisfaction and self-assessed performance in non-medical students without increasing cognitive load.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Beyond acceptance: bounded use of AI and VR in orthopedic education</a>
+        <p class="news-card-summary">Orthopedic students supported AI and virtual reality in education within clear pedagogical boundaries, with AI enhancing cognitive learning and VR supporting procedural training under faculty oversight.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">The potential of LLMs in generating questions and answers with EHRs</a>
+        <p class="news-card-summary">Large language models can generate medical exam questions and answers from electronic health records at levels comparable to clinicians, though with some accuracy gaps, suggesting potential as assisted tools for medical educators.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Detectability and healthcare implications of generative AI-synthesized chest radiographs: a blinded radiologist reader study</a>
+        <p class="news-card-summary">Generative AI-synthesized chest radiographs created by multimodal models are examined for visual authenticity and detectability to assess their utility in medical education and dataset augmentation.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">ICE Blog</span><span class="news-card-date">July 30, 2026</span></div>
@@ -241,34 +276,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Peer-reviewed comparison of GPT-4o and Claude Sonnet 4 performance on medical ethics scenarios including specialty-based cases.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Awareness, Perceptions, and Concerns among medical students regarding Artificial Intelligence integration in Healthcare: A Comprehensive Analysis</a>
-        <p class="news-card-summary">Medical students show moderate awareness of AI in healthcare but lack formal training, with persistent concerns about ethics, job displacement, and clinical errors despite recognizing AI&#x27;s potential.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Automated Generation and Human Evaluation of Neurosurgical Board Examination Self-Assessment Questions</a>
-        <p class="news-card-summary">Vision-language models can generate neurosurgical board exam questions with identified quality gaps compared to human-authored items, reducing burden on credentialing organizations.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Mapping Personalized Learning in Medical Education: A Meta-Synthesis of Artificial Intelligence Applications</a>
-        <p class="news-card-summary">Meta-synthesis finds AI integration enables adaptive learning pathways and data-driven instruction in medical education, enhancing engagement and equity in learning outcomes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&amp;ff=20260723063539&amp;v=2.20.0">Beyond accuracy: evaluating the reliability of large language models for medical assessment</a>
-        <p class="news-card-summary">Large language model deployment for automated assessment metadata extraction should prioritize reliability over accuracy and use task-specific piloting with human oversight of semantic fields.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
@@ -302,15 +309,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Large language models are increasingly influencing clinical workflows, as seen in recent studies analyzing their effectiveness in both oncology trial classification and clinical documentation retrieval <a href="https://ai.jmir.org/2026/1/e95565">[1]</a>. The findings highlight ongoing concerns about grounding and reliability when models lean on prior knowledge rather than supplied text. Advances in imaging and diagnostics continue, with new frameworks integrating multimodal models to generate treatment recommendations for acute ischemic stroke <a href="https://www.nature.com/articles/s41746-026-03066-7">[8]</a> and automated tools for prenatal ultrasound measurement. In patient-facing tools, objective smartphone speech analysis is helping identify adolescent major depressive disorder, showing promise for mental health diagnostics <a href="https://www.nature.com/articles/s41746-026-03068-5">[5]</a>. Meanwhile, discussions address persistent gaps in AI-driven pathological analysis, including performance limitations across different tissue types.</p>
-<p>Also this week: the section includes eight new model releases, five papers on assessment, four items on clinical documentation, and multiple studies examining patient trust and physician well-being. Papers detail methods for automated detection of inconsistencies in electronic health records and compare AI performance with radiology residents for pulmonary embolism detection.</p>
+<p>Mixed alignment between large language model responses and US Preventive Services Task Force recommendations in preventive care highlights concerns about the reliability of AI guidance in clinical settings <a href="https://ai.jmir.org/2026/1/e87034">[1]</a>. At the same time, researchers demonstrated that large language models might classify oncology trials based largely on prior knowledge, rather than information in the trial documents themselves, raising issues about evidence grounding <a href="https://ai.jmir.org/2026/1/e95565">[2]</a>. Ongoing studies are investigating embedding degradation in clinical document retrieval, with methods tested for error detection and correction <a href="https://medinform.jmir.org/2026/1/e99639">[3]</a>. AI solutions for workforce shortages in radiology are under active review, given increasing demands and limited clinician supply <a href="https://pubmed.ncbi.nlm.nih.gov/42527464?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">[4]</a>. Meanwhile, smartphone speech analysis tools are being developed for objective diagnostic support in adolescent major depressive disorder <a href="https://www.nature.com/articles/s41746-026-03068-5">[6]</a>.</p>
+<p>Also this week: The section holds eight new model releases and five papers on clinical assessment, including comparative evaluations of AI and resident performance in pulmonary embolism detection and improved prenatal ultrasound screening. Three studies explore clinical documentation with ambient AI scribes, and patient facing tools are reviewed for reliability and readability in education about age-related macular degeneration.</p>
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87034">Measuring Consistency Between Large Language Models’ Responses to Preventive Care Queries and Official US Preventive Services Task Force (USPSTF) Recommendations: Systematic Test Involving All USPSTF Preventive Care Topics via Simulated User Prompts</a>
+        <p class="news-card-summary">A systematic evaluation of multiple large language models found mixed alignment with official US preventive care recommendations, raising concerns about clinical use for preventive care guidance.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 29, 2026</span></div>
@@ -616,10 +630,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack">A fundamental flaw leaves LLMs strikingly vulnerable to attack</a>
+        <p class="news-card-summary">Researchers presented evidence at a top machine learning conference that large language models contain a fundamental architectural flaw making them inherently vulnerable to adversarial attacks.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/chain-link.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 30, 2026</span></div>
