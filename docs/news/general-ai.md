@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety">Google reveals Gemini Robotics 2.0, promising improved dexterity and safety</a>
+    <p class="news-card-summary">Google announced Gemini Robotics 2.0 with three models focusing on improved robotic dexterity and safety, with one model currently publicly available.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/gemini-robotics-2-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 30, 2026</span></div>
@@ -36,6 +44,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">The Model Context Protocol specification update addresses enterprise adoption barriers and establishes safeguards against sudden feature removal.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/MCP-logo-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-energy-weightless-neural-networks">Are AI Models Working Harder Than They Need to?</a>
+    <p class="news-card-summary">University of Texas researcher examines whether neural networks perform redundant computations and explores potential efficiency gains in modern AI systems.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-middle-aged-indian-woman-in-professional-attire-smiling-while-holding-an-fpga-board.jpg?id=67554240&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -121,19 +137,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">MIT Technology Review surveys recent developments in practical AI applications including robotics and domestic automation, covering both real capabilities and hype in near-term AI deployment.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/JUL26-thumb.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.24999">CogArena: A Multimethod Evaluation of Cognitive Ability Structure in Large Language Models</a>
-    <p class="news-card-summary">CogArena is a multimethod benchmark of 13 paradigms designed to evaluate whether large language models&#x27; cognitive ability profiles converge across tasks and generalize beyond the models used to define them.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.25380">Memory for Large Language Models</a>
-    <p class="news-card-summary">A comprehensive survey examines memory as an architectural dimension in large language models, covering mechanisms from transient attention to parameter-efficient adaptations.</p>
-  </div>
 </div>
 </div>

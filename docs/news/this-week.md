@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (12)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -283,13 +283,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Experimental study demonstrates that chain-of-thought prompting improves large language model performance for evaluating clinical records in medical student assessment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e70199">Performance of GPT-4o and Claude in Medical Ethics Scenarios: Comparative Study</a>
-        <p class="news-card-summary">Peer-reviewed comparison of GPT-4o and Claude Sonnet 4 performance on medical ethics scenarios including specialty-based cases.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 23, 2026</span></div>
@@ -328,10 +321,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90590">Improving Clinical Validity in Synthetic Electronic Health Record Generation Using Best-of-N Sampling: Comparative Evaluation Study</a>
+        <p class="news-card-summary">Study evaluated best-of-N sampling to improve clinical validity of synthetic electronic health records by enforcing structural, physiological, and relational constraints.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e94846">Regulatory Approaches to Cybersecurity Risk Management for AI-Enabled Medical Device Software in Korea, the United States, and the European Union: Comparative Document Analysis</a>
+        <p class="news-card-summary">Comparative analysis of how Korea, the United States, and European Union regulate cybersecurity risk management for AI-enabled medical device software.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
@@ -584,34 +591,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Pilot study introduces EvaluationPlus, a decision support framework for quality assurance of therapeutic chatbots in digital mental health services.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95063">Automated Fidelity Monitoring of Lay-Delivered Mental Health Interventions Using Large Language Models: Development and Pilot Validation of shamiriAI in Kenya</a>
-        <p class="news-card-summary">Development and validation of an LLM-based system to monitor fidelity of lay-delivered mental health interventions in Kenya using session recordings.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89054">Large Language Model Few-Shot Learning for Predicting Individual Treatment Response to Smartphone-Based Mindfulness in Autistic Adults With Anxiety: Secondary Analysis of a Randomized Controlled Trial</a>
-        <p class="news-card-summary">Secondary analysis using machine learning to predict individual response to smartphone-based mindfulness interventions for anxiety in autistic adults.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03046-x">The credibility paradox: clickbait, engagement, and information quality in YouTube’s medical ecosystem</a>
-        <p class="news-card-summary">Peer-reviewed analysis of how clickbait and engagement incentives affect information quality in medical content on YouTube.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02972-0">Generative AI mental health chatbots: a scoping review of intervention design and user experience</a>
-        <p class="news-card-summary">Scoping review of generative AI mental health chatbots examining intervention design approaches and user experience outcomes.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -624,8 +603,16 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety">Google reveals Gemini Robotics 2.0, promising improved dexterity and safety</a>
+        <p class="news-card-summary">Google announced Gemini Robotics 2.0 with three models focusing on improved robotic dexterity and safety, with one model currently publicly available.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/gemini-robotics-2-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 30, 2026</span></div>
@@ -641,6 +628,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">The Model Context Protocol specification update addresses enterprise adoption barriers and establishes safeguards against sudden feature removal.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/MCP-logo-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/ai-energy-weightless-neural-networks">Are AI Models Working Harder Than They Need to?</a>
+        <p class="news-card-summary">University of Texas researcher examines whether neural networks perform redundant computations and explores potential efficiency gains in modern AI systems.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-middle-aged-indian-woman-in-professional-attire-smiling-while-holding-an-fpga-board.jpg?id=67554240&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -983,22 +978,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Domyn-Small, a 10-billion-parameter open-weight reasoning model trained on 9 trillion multilingual tokens, is released under the MIT license.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai">Claude’s voice mode is now available for Opus and Sonnet</a>
-        <p class="news-card-summary">Anthropic extends voice mode capability to Claude Opus and Sonnet models with integration into Gmail, Slack, and Canva.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Claude-Voice-2-3-up.png?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">One Useful Thing</span><span class="news-card-date">July 23, 2026</span></div>
-        <a class="news-card-title" href="https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22">An opinionated guide to which AI to use to do stuff</a>
-        <p class="news-card-summary">Practical guide from established expert on selecting appropriate AI tools for different tasks and use cases.</p>
-      </div>
-      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!3bzW!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd28dff26-3041-4f2d-afaf-2011b1c59d39_1672x941.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
@@ -1061,19 +1040,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Kimi K3 and Fable model comparison</span>
       <span class="video-card-meta">Wes Roth, July 18, 2026</span>
       <span class="video-card-desc">Comparison of Kimi K3 and Fable models covering recent developments in large language models.</span>
-    </a>
-    </div>
-
-## Podcasts
-
-??? abstract "Show the 1 episode"
-
-    <div class="video-grid podcast-grid">
-    <a class="video-card" href="https://aipodcast.education/why-ai-in-education-starts-with-better-conversations-dr-jo-orlando" target="_blank" rel="noopener">
-      <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Why AI in Education Starts With Better Conversations: Dr Jo Orlando" loading="lazy">
-      <span class="video-card-title">Why AI in Education Starts With Better Conversations: Dr Jo Orlando</span>
-      <span class="video-card-meta">AI in Education Podcast, July 23, 2026</span>
-      <span class="video-card-desc">Digital wellbeing researcher discusses how schools and parents can help young people develop critical thinking while navigating artificial intelligence in education.</span>
     </a>
     </div>
 

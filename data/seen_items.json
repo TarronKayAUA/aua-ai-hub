@@ -26241,6 +26241,95 @@
    "score": 2.0,
    "thumbnail": "https://i1.ytimg.com/vi/4lSQnrMC6nY/hqdefault.jpg",
    "display_title": "Gemini Robotics 2 whole body control overview"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/chrome-may-get-faster-updates-with-no-restart-required",
+   "title_hash": "de92e6e0e3d0b88c9792704e29c28d46",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e90590",
+   "title_hash": "ff0d5e06085645f901be2090b619c408",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": true,
+   "title": "Improving Clinical Validity in Synthetic Electronic Health Record Generation Using Best-of-N Sampling: Comparative Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-07-30T19:00:18+00:00",
+   "summary": "Study evaluated best-of-N sampling to improve clinical validity of synthetic electronic health records by enforcing structural, physiological, and relational constraints.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/30/bruce-schneier",
+   "title_hash": "78af152ed7b62a532d0c1675bbf66447",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": false,
+   "reason": "commentary on general pedagogy without AI substance"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e94846",
+   "title_hash": "30e30f92dfb4ea9f5890edf4709b878b",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": true,
+   "title": "Regulatory Approaches to Cybersecurity Risk Management for AI-Enabled Medical Device Software in Korea, the United States, and the European Union: Comparative Document Analysis",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-30T18:00:19+00:00",
+   "summary": "Comparative analysis of how Korea, the United States, and European Union regulate cybersecurity risk management for AI-enabled medical device software.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety",
+   "title_hash": "9c1c8cf62a41511fa22af4b4469108c5",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": true,
+   "title": "Google reveals Gemini Robotics 2.0, promising improved dexterity and safety",
+   "source": "Ars Technica AI",
+   "published": "2026-07-30T17:58:02+00:00",
+   "summary": "Google announced Gemini Robotics 2.0 with three models focusing on improved robotic dexterity and safety, with one model currently publicly available.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/gemini-robotics-2-500x500.png",
+   "topic": "New models"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-energy-weightless-neural-networks",
+   "title_hash": "09c8fcaf6a83ff857559d81130a2de00",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": true,
+   "title": "Are AI Models Working Harder Than They Need to?",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-07-30T13:35:32+00:00",
+   "summary": "University of Texas researcher examines whether neural networks perform redundant computations and explores potential efficiency gains in modern AI systems.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/a-middle-aged-indian-woman-in-professional-attire-smiling-while-holding-an-fpga-board.jpg?id=67554240&width=980",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=J3MHGRAqms0",
+   "title_hash": "74edbbfa893ef6af43c10e65721417bd",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/6-Questions-Every-Enterprise-Has-to-Answer-About-AI-e3mook3",
+   "title_hash": "05ec5d2d47132f85175a288dacccaf2c",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": false,
+   "reason": "daily news recap format; enterprise AI strategy discussion lacks relevance to medical educators and students"
+  },
+  {
+   "url": "https://aipodcast.education/two-free-ai-resources-every-teacher-should-download",
+   "title_hash": "b02ddd877022dba9a15835b66ca3a629",
+   "first_seen": "2026-07-30T21:33:37.434732+00:00",
+   "kept": false,
+   "reason": "promotional episode with generic boilerplate summary lacking substantive content details"
   }
  ],
  "digests": [

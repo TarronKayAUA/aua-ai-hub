@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90590">Improving Clinical Validity in Synthetic Electronic Health Record Generation Using Best-of-N Sampling: Comparative Evaluation Study</a>
+    <p class="news-card-summary">Study evaluated best-of-N sampling to improve clinical validity of synthetic electronic health records by enforcing structural, physiological, and relational constraints.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 30, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e94846">Regulatory Approaches to Cybersecurity Risk Management for AI-Enabled Medical Device Software in Korea, the United States, and the European Union: Comparative Document Analysis</a>
+    <p class="news-card-summary">Comparative analysis of how Korea, the United States, and European Union regulate cybersecurity risk management for AI-enabled medical device software.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42510487?fc=20260609215449&amp;ff=20260728064545&amp;v=2.20.0">Fully Automated Biometric Parameter Measurement in Prenatal Ultrasound Screening for Total Anomalous Pulmonary Venous Connection</a>
     <p class="news-card-summary">Study develops fully automated biometric measurement in prenatal ultrasound to improve detection of total anomalous pulmonary venous connection.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518755?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Artificial intelligence for pulmonary embolism detection: Is it comparable to radiology residents?</a>
-    <p class="news-card-summary">Comparative study finds radiology residents outperformed AI software for pulmonary embolism detection overall, though AI performed well for proximal emboli.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">The Impact of Ambient AI on Resident Documentation and Well-Being: A Pilot Study</a>
-    <p class="news-card-summary">Pilot study of ambient AI in family medicine residency shows association with improved resident well-being, satisfaction, and documentation efficiency.</p>
   </div>
 </div>
 </div>
