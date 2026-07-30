@@ -25920,6 +25920,55 @@
    "category": "medical_education",
    "score": 3.0,
    "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/editors-note/2026/07/30/lawsuit-tests-what-universities-are-owed-ai-research",
+   "title_hash": "8dcef2e99e8e1cb00c3c4109ea225152",
+   "first_seen": "2026-07-30T10:34:36.803962+00:00",
+   "kept": false,
+   "reason": "legal and institutional gossip rather than substantive education or AI development news"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/views/2026/07/30/law-schools-are-asking-wrong-question-about-ai-opinion",
+   "title_hash": "6cbd5274db231b409c7e0f24cc0561cc",
+   "first_seen": "2026-07-30T10:34:36.803962+00:00",
+   "kept": true,
+   "title": "Law Schools Are Asking the Wrong Question About AI",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-07-30T03:00:00+00:00",
+   "summary": "Legal educators argue that assessing professional competence in a field rapidly transformed by AI requires reconsidering evaluation beyond academic integrity.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-2192059335.jpg?itok=awZJA4gq",
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/career-advice/teaching/2026/07/30/students-conscientious-objectors-gen-ai-opinion",
+   "title_hash": "a8fa9cf82223fc8caffac7930c121048",
+   "first_seen": "2026-07-30T10:34:36.803962+00:00",
+   "kept": false,
+   "reason": "opinion piece without substantive analysis or new information for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v911as/gemini_distillation_service",
+   "title_hash": "4a081eef1cc19797b92927b8019d3a47",
+   "first_seen": "2026-07-30T10:34:36.803962+00:00",
+   "kept": false,
+   "reason": "forum gossip and speculation without confirmation of a substantive service announcement"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=hMb1ivZyFLU",
+   "title_hash": "f61d4dea55baf789d8ca1d15fc2bcb0b",
+   "first_seen": "2026-07-30T10:34:36.803962+00:00",
+   "kept": false,
+   "reason": "marketing for a commercial service disguised as tutorial"
+  },
+  {
+   "url": "https://share.transistor.fm/s/9d74230b",
+   "title_hash": "e4c80b6c3e5c4bfcfd2bfa22a40ca023",
+   "first_seen": "2026-07-30T10:34:36.803962+00:00",
+   "kept": false,
+   "reason": "drama coverage and misleading framing; the actual content concerns a security research exercise, not agents escaping or going rogue"
   }
  ],
  "digests": [
@@ -26063,8 +26112,8 @@
  "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Competency-based approaches are shaping both curriculum and assessment in medical education, with new frameworks for AI literacy defining it as a measurable skill for undergraduate learners <a href=\"https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98\">[3]</a>. As AI becomes integrated into clinical reasoning, educators are encouraged to stress critical evaluation and careful use of AI to support diagnostic independence <a href=\"https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98\">[4]</a>. Studies report that Saudi medical students see generative AI mainly as a support in basic sciences and simulated environments, reinforcing its role as a supplement rather than a substitute to traditional instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42524542?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98\">[2]</a>. Orthodontic education is beginning to address the need for competencies that navigate algorithm-augmented practice, identifying curriculum design and implementation challenges for new AI-centered teaching models <a href=\"https://pubmed.ncbi.nlm.nih.gov/42526900?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98\">[5]</a>.\n\nAlso this week: the section covers six items on teaching and curriculum and three on assessment and feedback. There are two papers evaluating large language models on formal exams or benchmarks, and three papers exploring attitudes and adoption across diverse contexts. The Saudi caregiver study compares LLM accuracy and neurodiversity-affirming language in autism care.",
-   "hash": "65fd1a7c1083baf5",
+   "text": "Efforts to redesign medical education to incorporate artificial intelligence are expanding, with frameworks emerging for AI literacy as a measurable competency within undergraduate curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98\">[4]</a>. Assessments like Objective Structured Clinical Examinations are adapting to competency-based models, reflecting shifts in how clinical skills are evaluated with AI support <a href=\"https://icenet.blog/2026/07/30/reimagining-the-osce-for-learning-in-competency-based-education\">[1]</a>. Studies show medical students are already applying AI in clinical reasoning and view it as an enhancement for learning basic sciences and simulations, underscoring the need for guidance on critical evaluation and optimal integration strategies <a href=\"https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98\">[5]</a>. Concerns around professional identity and the boundaries of AI-assisted practice continue to surface, suggesting the importance of discourse that situates AI adoption in the broader context of workplace and interpersonal development <a href=\"https://pubmed.ncbi.nlm.nih.gov/42520201?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0\">[13]</a>.\n\nAlso this week: five new papers address assessment and feedback, alongside two items examining exams and proficiency benchmarks. The section features the comparative evaluation of large language models in national orthopaedic testing and the MyoCardBench benchmark for cardiovascular care scenarios, broadening the discussion of AI’s role in both specialty training and authentically modeled clinical settings.",
+   "hash": "7a2b79b9b4dffa46",
    "date": "July 30, 2026"
   },
   "clinical_practice": {

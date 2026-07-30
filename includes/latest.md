@@ -3,5 +3,5 @@
 - [Reimagining the OSCE for Learning in Competency-based Education](https://icenet.blog/2026/07/30/reimagining-the-osce-for-learning-in-competency-based-education) (ICE Blog, July 30, 2026)
 - [Steering Instruction Hierarchies at Inference Time](https://arxiv.org/abs/2607.26228) (arXiv cs.CL, July 30, 2026)
 - [Which RAG Paradigm Wins at Scale? A Scaling Study of Retrieval-Augmented Generation Paradigms](https://arxiv.org/abs/2607.26497) (arXiv cs.CL, July 30, 2026)
+- [Law Schools Are Asking the Wrong Question About AI](https://www.insidehighered.com/opinion/views/2026/07/30/law-schools-are-asking-wrong-question-about-ai-opinion) (Inside Higher Ed AI, July 30, 2026)
 - [Microsoft confirms Copilot ‘super app’ coming this year](https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed) (The Verge AI, July 29, 2026)
-- [Evidence Use and Identifier-Conditioned Prior Knowledge in Large Language Model Classification of Oncology Trials Assessed Through Progressive Content Removal and Counterfactual Testing: Comparative Analysis](https://ai.jmir.org/2026/1/e95565) (JMIR AI, July 29, 2026)
