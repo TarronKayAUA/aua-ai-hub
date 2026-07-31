@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -290,13 +290,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Systematic review finds generative AI shows promise for quality and personalization in long-term care but lacks evidence on effectiveness, safety, and cost-effectiveness needed for responsible deployment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.20446">Distinguishing Artificial from Authentic: Evaluating LLMs for Detecting LLM-Generated Content</a>
-        <p class="news-card-summary">Large language models show limited ability to reliably detect their own generated content across student submissions and program code.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -307,10 +300,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.27384">Same Facts, Different Diagnosis: Measuring and Mitigating Narrative Anchoring in Clinical Language Models</a>
+        <p class="news-card-summary">Study identifies and measures narrative anchoring, where clinical language models produce different diagnoses for identical facts expressed in different linguistic registers, affecting diagnostic reliability.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02933-7">Benchmarking and developing large language models using one million clinical trials</a>
+        <p class="news-card-summary">Peer-reviewed study benchmarks and develops large language models using one million clinical trials to evaluate performance on clinical tasks.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
@@ -330,6 +337,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
         <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87034">Measuring Consistency Between Large Language Models’ Responses to Preventive Care Queries and Official US Preventive Services Task Force (USPSTF) Recommendations: Systematic Test Involving All USPSTF Preventive Care Topics via Simulated User Prompts</a>
         <p class="news-card-summary">A systematic evaluation of multiple large language models found mixed alignment with official US preventive care recommendations, raising concerns about clinical use for preventive care guidance.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42532980?fc=20260609215449&amp;ff=20260731031517&amp;v=2.20.0.post5+40e1b98">Sentence-Level Provenance for AI Medical Record Summarization: Formative Usability Evaluation of a Click-to-Inspect Interface</a>
+        <p class="news-card-summary">Usability study evaluates sentence-level provenance in AI medical record summarization, allowing clinicians to inspect individual claims and reducing verification burden in clinical workflows.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -551,13 +565,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.20428">Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events</a>
-        <p class="news-card-summary">A human-in-the-loop large language model framework detected cutaneous immune-related adverse events from clinical notes with higher accuracy and inter-rater agreement than manual review alone.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 24, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04545-w">AI-based clinician decision support system for diagnosis of inherited retinal diseases: a multicenter, randomized trial</a>
         <p class="news-card-summary">An AI system for inherited retinal disease diagnosis integrating multimodal imaging and clinical data achieved 88.5% accuracy in a randomized multicenter trial.</p>
@@ -580,10 +587,38 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.27353">LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation</a>
+        <p class="news-card-summary">LayerRAG-Bench is a cross-layer reliability benchmark for agentic retrieval-augmented generation covering evidence, tool-contract, authorization, and session-state faults across enterprise domains.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.27405">Benchmarking LLM Competence on Logical Inference over Probability Operators</a>
+        <p class="news-card-summary">Benchmark evaluates large language model competence on logical inference over probability operators, relevant to high-stakes domains including medicine.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.27421">Selecting Open-Weight Language Models for Zero-Shot Intent Classification: A Systematic Evaluation of 41 Models</a>
+        <p class="news-card-summary">Systematic evaluation of 41 open-weight language models for zero-shot intent classification provides guidance for practitioners selecting models under compute, latency, and robustness constraints.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.27506">Models for minimalist RAG: B1ade 335M Embedding and 1B Parameter Small Language Models</a>
+        <p class="news-card-summary">B1ade is an efficient retrieval-augmented generation architecture combining a 335M parameter embedding model with a 1B parameter small language model for resource-constrained deployment.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 30, 2026</span></div>
@@ -935,41 +970,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Nvidia, Microsoft, and Meta issued a letter cautioning against overregulation of open-weight artificial intelligence models.</p>
       </div>
       <img class="news-card-thumb" src="https://image.cnbcfm.com/api/v1/image/108173882-1752844539526-gettyimages-2225696381-mms28707_1cm2uml7.jpeg?v=1752844582&amp;w=1920&amp;h=1080" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.20426">Knowledge Injection Exists in MoE? Exploring Expert-Aware Contrast Decoding in MoE for Mitigating LLMs&#x27;Hallucinations</a>
-        <p class="news-card-summary">Expert-aware contrast decoding in mixture-of-experts models mitigates hallucinations by exploiting layer-wise differences and enables cross-domain generalization.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.20427">Is MoE Routing a Huffman Code? Discovering the Frequency-Diversity Law in Chain-of-Thought</a>
-        <p class="news-card-summary">Mixture-of-experts routing operates according to a Huffman Coding principle, revealing a frequency-diversity law governing how state-of-the-art models allocate computation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.20436">Routing Subspaces: Auditing Evaluation-to-Deployment Mismatch in Fine-Tuned Language Models</a>
-        <p class="news-card-summary">Fine-tuning can create mismatches between model behavior under evaluation and ordinary use, revealing safety risks not captured by standard testing.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.20444">Confidently Deceptive: How Confidence Amplifies the Risk of LLM Deception</a>
-        <p class="news-card-summary">Large language models can produce deceptive responses with high confidence, and higher confidence may increase persuasiveness of false information to users.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.20448">Domyn-Small: A European 10B Reasoning Language Model</a>
-        <p class="news-card-summary">Domyn-Small, a 10-billion-parameter open-weight reasoning model trained on 9 trillion multilingual tokens, is released under the MIT license.</p>
-      </div>
     </div>
     </div>
 

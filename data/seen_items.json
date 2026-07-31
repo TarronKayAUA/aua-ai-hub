@@ -26444,6 +26444,244 @@
    "first_seen": "2026-07-31T03:52:19.435381+00:00",
    "kept": false,
    "reason": "marketing content with promotional offer embedded in video description"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27210",
+   "title_hash": "b12088c39f118a30cd0ef741249bdc39",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27228",
+   "title_hash": "be9f3389aef7cdf74859dbd9ae64c79f",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27232",
+   "title_hash": "3763752d81febf87e3e982942b5057f8",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27353",
+   "title_hash": "509be27de2681dc65d3b519054f1040f",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": true,
+   "title": "LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-31T04:00:00+00:00",
+   "summary": "LayerRAG-Bench is a cross-layer reliability benchmark for agentic retrieval-augmented generation covering evidence, tool-contract, authorization, and session-state faults across enterprise domains.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27366",
+   "title_hash": "8db02288a8dd98684d8e8116bbe28a2c",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27379",
+   "title_hash": "b702b4680a9f1f2958b31a30dd209a02",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27384",
+   "title_hash": "27f7cc9edf9559002d73b70bdeaf6521",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": true,
+   "title": "Same Facts, Different Diagnosis: Measuring and Mitigating Narrative Anchoring in Clinical Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-31T04:00:00+00:00",
+   "summary": "Study identifies and measures narrative anchoring, where clinical language models produce different diagnoses for identical facts expressed in different linguistic registers, affecting diagnostic reliability.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27393",
+   "title_hash": "04d369fa5df2014faba2202ed4c5169f",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27405",
+   "title_hash": "0fdc26f40df84a1f690f41989a8adefc",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": true,
+   "title": "Benchmarking LLM Competence on Logical Inference over Probability Operators",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-31T04:00:00+00:00",
+   "summary": "Benchmark evaluates large language model competence on logical inference over probability operators, relevant to high-stakes domains including medicine.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27421",
+   "title_hash": "fc9f3b7599d52cdec93d14968f4ed8f9",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": true,
+   "title": "Selecting Open-Weight Language Models for Zero-Shot Intent Classification: A Systematic Evaluation of 41 Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-31T04:00:00+00:00",
+   "summary": "Systematic evaluation of 41 open-weight language models for zero-shot intent classification provides guidance for practitioners selecting models under compute, latency, and robustness constraints.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27497",
+   "title_hash": "2555d9907b6db2a3eb7ff57e488d61cc",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27506",
+   "title_hash": "fbc325d5539dce37a2ea7a6802623563",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": true,
+   "title": "Models for minimalist RAG: B1ade 335M Embedding and 1B Parameter Small Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-07-31T04:00:00+00:00",
+   "summary": "B1ade is an efficient retrieval-augmented generation architecture combining a 335M parameter embedding model with a 1B parameter small language model for resource-constrained deployment.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27512",
+   "title_hash": "6b8920cfab890c048269abf2e22a03ce",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow theoretical application; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27557",
+   "title_hash": "5a97a38fb4b511ba166add709835c339",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27595",
+   "title_hash": "3c39fa5f3a5c5fc5f796557686d1a166",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27611",
+   "title_hash": "ffd38de96951712ddbc6300296391164",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27614",
+   "title_hash": "1a86f65d09400b40411699055e060a13",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27652",
+   "title_hash": "1407fea65fa1599d1b515241e0b5ecdf",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27654",
+   "title_hash": "bded13bc0d080d0f6d0519ecb340a382",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27671",
+   "title_hash": "50e8e2609196802818156d92c4af7bbc",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27692",
+   "title_hash": "9ed65240d28ef2e5e14adc9b2beb2d8c",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27735",
+   "title_hash": "86ea0fd62a637bd51f5f4037cbf29f4f",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27747",
+   "title_hash": "50a09713dc8bf2b83ec707f98dbeea79",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27766",
+   "title_hash": "ddbe928f04f48800994e8e78feb7e22a",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow technical application; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.27773",
+   "title_hash": "8987643ff180b4e78b00ed716791aa24",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "narrow application domain; off-topic for medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02933-7",
+   "title_hash": "03e67c44e86fdbd432db9e4e52eb2f9b",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": true,
+   "title": "Benchmarking and developing large language models using one million clinical trials",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-31T00:00:00+00:00",
+   "summary": "Peer-reviewed study benchmarks and develops large language models using one million clinical trials to evaluate performance on clinical tasks.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42533269?fc=20260609215449&ff=20260731031517&v=2.20.0.post5+40e1b98",
+   "title_hash": "aba2418208b165772c00dd952520ebb6",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; curriculum description without AI focus"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42532980?fc=20260609215449&ff=20260731031517&v=2.20.0.post5+40e1b98",
+   "title_hash": "cf1b53863c348c191287e5de1efdb27d",
+   "first_seen": "2026-07-31T07:15:17.808166+00:00",
+   "kept": true,
+   "title": "Sentence-Level Provenance for AI Medical Record Summarization: Formative Usability Evaluation of a Click-to-Inspect Interface",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Usability study evaluates sentence-level provenance in AI medical record summarization, allowing clinicians to inspect individual claims and reducing verification burden in clinical workflows.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
   }
  ],
  "digests": [
