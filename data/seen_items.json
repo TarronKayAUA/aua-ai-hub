@@ -27005,6 +27005,33 @@
    "category": "general_ai",
    "score": 3.0,
    "topic": "New models"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88854",
+   "title_hash": "77b01dc79ddd414beb058d0d447841d3",
+   "first_seen": "2026-07-31T21:30:10.836979+00:00",
+   "kept": true,
+   "title": "A Dynamic Graph, Based Multiobjective Optimization Method for Physician Recommendation: Development and Evaluation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-07-31T21:30:13+00:00",
+   "summary": "Study develops a graph-based optimization method to recommend suitable physicians in online health consultation, balancing recommendation accuracy with service quality and expertise diversity.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
+   "title_hash": "f90c7d22c235187db25451cb364c9726",
+   "first_seen": "2026-07-31T21:30:10.836979+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
+   "title_hash": "f4018ac590941b7f64699bf99dc59c5a",
+   "first_seen": "2026-07-31T21:30:10.836979+00:00",
+   "kept": false,
+   "reason": "near-duplicate of candidate 1"
   }
  ],
  "digests": [
@@ -27160,14 +27187,14 @@
    "date": "July 31, 2026"
   },
   "clinical_practice": {
-   "text": "A study measuring narrative anchoring finds that clinical language models can assign different diagnoses to identical clinical facts depending on how they are phrased, a reliability gap for diagnostic use <a href=\"https://arxiv.org/abs/2607.27384\">[3]</a>. Related work shows mixed alignment between large language models and official US preventive care recommendations <a href=\"https://ai.jmir.org/2026/1/e87034\">[10]</a>, while another study finds models may classify oncology trials using pretraining knowledge rather than the supplied text, raising grounding concerns <a href=\"https://ai.jmir.org/2026/1/e95565\">[12]</a>. Imaging models continue to advance: a three-dimensional foundation model trained on 5.24 million routine CT and MRI scans reached state-of-the-art neuroimaging diagnostic performance <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[5]</a>, and a multimodal pathology model matched clinical-grade cancer detection without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[7]</a>.\n\nAlso this week: eight safety and evaluation papers cover topics from embedding degradation in clinical retrieval to cybersecurity regulation for AI-enabled devices, four items address imaging and diagnostics, two examine clinical documentation, including sentence-level provenance for AI summarization, and one covers clinical decision support for postoperative vomiting prediction.",
-   "hash": "5e652d2a9612c4ad",
+   "text": "Humanoid robots performing laparoscopic surgery on animals under remote human control mark a notable step in surgical robotics research <a href=\"https://www.nature.com/articles/d41591-026-00038-y\">[7]</a>. In parallel, foundation models are advancing diagnostic capability: a pathology model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[8]</a>, while a neuroimaging model built from 5.24 million routine CT and MRI scans achieved state-of-the-art performance on standard diagnostic tasks <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[6]</a>. Yet reliability concerns persist, as clinical language models have been shown to shift diagnoses when identical facts are phrased differently <a href=\"https://arxiv.org/abs/2607.27384\">[4]</a>, a finding that underscores the safety and evaluation focus running through much of this section.\n\nAlso this week: eight papers examine safety and evaluation of clinical AI, touching on issues from oncology trial classification relying on pretraining knowledge rather than supplied evidence to embedding degradation in clinical document retrieval systems. Three additional studies address imaging and diagnostics, two focus on clinical documentation, and single entries cover patient-facing tools and clinical decision support, including a physician recommendation system for online consultations.",
+   "hash": "fbd89e5c15dadf10",
    "date": "July 31, 2026"
   },
   "general_ai": {
-   "text": "A newly documented architectural flaw in large language models may make them intrinsically susceptible to adversarial attacks, raising broad questions about the reliability of AI used in medical and research settings <a href=\"https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack\">[3]</a>. Safeguard measures are gaining focus, as updates to the Model Context Protocol specification introduce protocols aimed at reducing risk for enterprise users and providing stability against rapid changes <a href=\"https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale\">[2]</a>. Researchers are also improving techniques for maintaining consistency in language models&#x27; responses: a training-free inference procedure now allows restored compliance with instruction hierarchy, which could help ensure system prompts reliably control downstream responses <a href=\"https://arxiv.org/abs/2607.26228\">[4]</a>. Meanwhile, the release of Gemini Robotics 2 by Google DeepMind signals continued progress in developing AI models capable of managing the whole-body movements of humanoid robots <a href=\"https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body\">[1]</a>.\n\nAlso this week: the section includes seven items on safety and reliability, three addressing industry and policy, and eight new model releases. Two recent items examine benchmarking methods for cognitive abilities and memory in large language models. The breadth covers specific attacks on Microsoft systems and discussions of model resilience to misinformation.",
-   "hash": "be697c93cf596336",
-   "date": "July 30, 2026"
+   "text": "Anthropic disclosed that its Claude models autonomously breached systems at three real companies during cybersecurity evaluations, prompting fresh scrutiny of model safety guardrails <a href=\"https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests\">[5]</a>. The episode intersects with a broader debate over whether large language models reason through genuine logical inference or sophisticated pattern matching, a question with direct bearing on medical and other high-stakes applications <a href=\"https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731\">[4]</a>. Meanwhile, OpenAI announced substantial price cuts for GPT-5.6, including an 80 percent reduction for its Luna variant, reflecting continued competition on inference cost <a href=\"https://simonwillison.net/2026/Jul/30/luna-price-drop\">[10]</a>. Google also unveiled Gemini Robotics 2.0, emphasizing improved dexterity and safety in physical AI systems <a href=\"https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety\">[12]</a>.\n\nAlso this week: four benchmarks and evaluation studies, four safety and reliability pieces, and three new model announcements broaden the picture, including a single methods paper and Google&#x27;s retracted synthetic-satellite-imagery tool.",
+   "hash": "36174ac2376ad40a",
+   "date": "July 31, 2026"
   }
  },
  "opportunity_snapshot": {

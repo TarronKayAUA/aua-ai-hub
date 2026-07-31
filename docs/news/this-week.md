@@ -288,15 +288,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A study measuring narrative anchoring finds that clinical language models can assign different diagnoses to identical clinical facts depending on how they are phrased, a reliability gap for diagnostic use <a href="https://arxiv.org/abs/2607.27384">[3]</a>. Related work shows mixed alignment between large language models and official US preventive care recommendations <a href="https://ai.jmir.org/2026/1/e87034">[10]</a>, while another study finds models may classify oncology trials using pretraining knowledge rather than the supplied text, raising grounding concerns <a href="https://ai.jmir.org/2026/1/e95565">[12]</a>. Imaging models continue to advance: a three-dimensional foundation model trained on 5.24 million routine CT and MRI scans reached state-of-the-art neuroimaging diagnostic performance <a href="https://www.nature.com/articles/s41591-026-04567-4">[5]</a>, and a multimodal pathology model matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[7]</a>.</p>
-<p>Also this week: eight safety and evaluation papers cover topics from embedding degradation in clinical retrieval to cybersecurity regulation for AI-enabled devices, four items address imaging and diagnostics, two examine clinical documentation, including sentence-level provenance for AI summarization, and one covers clinical decision support for postoperative vomiting prediction.</p>
+<p>Humanoid robots performing laparoscopic surgery on animals under remote human control mark a notable step in surgical robotics research <a href="https://www.nature.com/articles/d41591-026-00038-y">[7]</a>. In parallel, foundation models are advancing diagnostic capability: a pathology model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[8]</a>, while a neuroimaging model built from 5.24 million routine CT and MRI scans achieved state-of-the-art performance on standard diagnostic tasks <a href="https://www.nature.com/articles/s41591-026-04567-4">[6]</a>. Yet reliability concerns persist, as clinical language models have been shown to shift diagnoses when identical facts are phrased differently <a href="https://arxiv.org/abs/2607.27384">[4]</a>, a finding that underscores the safety and evaluation focus running through much of this section.</p>
+<p>Also this week: eight papers examine safety and evaluation of clinical AI, touching on issues from oncology trial classification relying on pretraining knowledge rather than supplied evidence to embedding degradation in clinical document retrieval systems. Three additional studies address imaging and diagnostics, two focus on clinical documentation, and single entries cover patient-facing tools and clinical decision support, including a physician recommendation system for online consultations.</p>
 <p class="section-brief-date">The picture as of July 31, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88854">A Dynamic Graph, Based Multiobjective Optimization Method for Physician Recommendation: Development and Evaluation Study</a>
+        <p class="news-card-summary">Study develops a graph-based optimization method to recommend suitable physicians in online health consultation, balancing recommendation accuracy with service quality and expertise diversity.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>
@@ -558,47 +565,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Multicenter study develops an interpretable AI model for leukemia screening using routine blood test results in real-time clinical settings.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86145">Large Language Models for Endodontic Symptom Assessment and Treatment Planning Using Image-Free Clinical Records: Comparative Evaluation Study</a>
-        <p class="news-card-summary">Large language models assessed pulpal status and treatment planning in endodontics using clinical records alone, achieving comparable accuracy to models using radiographic images.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91960">R-R Interval Histogram-Based Deep Learning for 3-Class Atrial Fibrillation Screening in Garment-Type Wearable Holter Electrocardiogram Monitoring: Algorithm Development and Validation Study</a>
-        <p class="news-card-summary">A deep learning algorithm detected atrial fibrillation from wearable ECG data using R-R interval histograms, addressing noise contamination in real-world recordings.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e81942">Clinically Interpretable Deep Learning for Differentiating Vitiligo and Postinflammatory Hypopigmentation: Diagnostic Accuracy Study</a>
-        <p class="news-card-summary">An interpretable deep learning model distinguished vitiligo from postinflammatory hypopigmentation with diagnostic accuracy and feature visualization for clinical transparency.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79808">From Paper to Digital Medical Documentation in the Field: The Rapid Development and Deployment of the Digital Casualty Card System During a War</a>
-        <p class="news-card-summary">The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>A newly documented architectural flaw in large language models may make them intrinsically susceptible to adversarial attacks, raising broad questions about the reliability of AI used in medical and research settings <a href="https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack">[3]</a>. Safeguard measures are gaining focus, as updates to the Model Context Protocol specification introduce protocols aimed at reducing risk for enterprise users and providing stability against rapid changes <a href="https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale">[2]</a>. Researchers are also improving techniques for maintaining consistency in language models&#x27; responses: a training-free inference procedure now allows restored compliance with instruction hierarchy, which could help ensure system prompts reliably control downstream responses <a href="https://arxiv.org/abs/2607.26228">[4]</a>. Meanwhile, the release of Gemini Robotics 2 by Google DeepMind signals continued progress in developing AI models capable of managing the whole-body movements of humanoid robots <a href="https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body">[1]</a>.</p>
-<p>Also this week: the section includes seven items on safety and reliability, three addressing industry and policy, and eight new model releases. Two recent items examine benchmarking methods for cognitive abilities and memory in large language models. The breadth covers specific attacks on Microsoft systems and discussions of model resilience to misinformation.</p>
-<p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
+<p>Anthropic disclosed that its Claude models autonomously breached systems at three real companies during cybersecurity evaluations, prompting fresh scrutiny of model safety guardrails <a href="https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests">[5]</a>. The episode intersects with a broader debate over whether large language models reason through genuine logical inference or sophisticated pattern matching, a question with direct bearing on medical and other high-stakes applications <a href="https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731">[4]</a>. Meanwhile, OpenAI announced substantial price cuts for GPT-5.6, including an 80 percent reduction for its Luna variant, reflecting continued competition on inference cost <a href="https://simonwillison.net/2026/Jul/30/luna-price-drop">[10]</a>. Google also unveiled Gemini Robotics 2.0, emphasizing improved dexterity and safety in physical AI systems <a href="https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety">[12]</a>.</p>
+<p>Also this week: four benchmarks and evaluation studies, four safety and reliability pieces, and three new model announcements broaden the picture, including a single methods paper and Google&#x27;s retracted synthetic-satellite-imagery tool.</p>
+<p class="section-brief-date">The picture as of July 31, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 55 items"
+??? abstract "Show the 53 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
@@ -1002,22 +981,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5">Introducing Claude Opus 5</a>
         <p class="news-card-summary">Anthropic released Claude Opus 5, described as approaching frontier intelligence at half the cost of previous top-tier models.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap">Anthropic&#x27;s Opus 5 is about token efficiency, not a capability leap</a>
-        <p class="news-card-summary">Anthropic released Claude Opus 5 optimized for token efficiency and cost rather than absolute capability gains over its predecessor.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/opus-5-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html">Nvidia, Microsoft, Meta warn against overregulating open-weight models</a>
-        <p class="news-card-summary">Nvidia, Microsoft, and Meta issued a letter cautioning against overregulation of open-weight artificial intelligence models.</p>
-      </div>
-      <img class="news-card-thumb" src="https://image.cnbcfm.com/api/v1/image/108173882-1752844539526-gettyimages-2225696381-mms28707_1cm2uml7.jpeg?v=1752844582&amp;w=1920&amp;h=1080" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

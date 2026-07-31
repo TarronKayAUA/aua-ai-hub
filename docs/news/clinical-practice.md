@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A study measuring narrative anchoring finds that clinical language models can assign different diagnoses to identical clinical facts depending on how they are phrased, a reliability gap for diagnostic use <a href="https://arxiv.org/abs/2607.27384">[3]</a>. Related work shows mixed alignment between large language models and official US preventive care recommendations <a href="https://ai.jmir.org/2026/1/e87034">[10]</a>, while another study finds models may classify oncology trials using pretraining knowledge rather than the supplied text, raising grounding concerns <a href="https://ai.jmir.org/2026/1/e95565">[12]</a>. Imaging models continue to advance: a three-dimensional foundation model trained on 5.24 million routine CT and MRI scans reached state-of-the-art neuroimaging diagnostic performance <a href="https://www.nature.com/articles/s41591-026-04567-4">[5]</a>, and a multimodal pathology model matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[7]</a>.</p>
-<p>Also this week: eight safety and evaluation papers cover topics from embedding degradation in clinical retrieval to cybersecurity regulation for AI-enabled devices, four items address imaging and diagnostics, two examine clinical documentation, including sentence-level provenance for AI summarization, and one covers clinical decision support for postoperative vomiting prediction.</p>
+<p>Humanoid robots performing laparoscopic surgery on animals under remote human control mark a notable step in surgical robotics research <a href="https://www.nature.com/articles/d41591-026-00038-y">[7]</a>. In parallel, foundation models are advancing diagnostic capability: a pathology model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[8]</a>, while a neuroimaging model built from 5.24 million routine CT and MRI scans achieved state-of-the-art performance on standard diagnostic tasks <a href="https://www.nature.com/articles/s41591-026-04567-4">[6]</a>. Yet reliability concerns persist, as clinical language models have been shown to shift diagnoses when identical facts are phrased differently <a href="https://arxiv.org/abs/2607.27384">[4]</a>, a finding that underscores the safety and evaluation focus running through much of this section.</p>
+<p>Also this week: eight papers examine safety and evaluation of clinical AI, touching on issues from oncology trial classification relying on pretraining knowledge rather than supplied evidence to embedding degradation in clinical document retrieval systems. Three additional studies address imaging and diagnostics, two focus on clinical documentation, and single entries cover patient-facing tools and clinical decision support, including a physician recommendation system for online consultations.</p>
 <p class="section-brief-date">The picture as of July 31, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88854">A Dynamic Graph, Based Multiobjective Optimization Method for Physician Recommendation: Development and Evaluation Study</a>
+    <p class="news-card-summary">Study develops a graph-based optimization method to recommend suitable physicians in online health consultation, balancing recommendation accuracy with service quality and expertise diversity.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42527464?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">AI solutions to the radiology workforce shortage</a>
     <p class="news-card-summary">Reviews AI solutions addressing radiology workforce shortages caused by aging populations, chronic disease demand, and supply constraints in residency positions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42527096?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">Pitfalls and Emerging Trends in AI-driven Pathological Analysis of Metastatic Brain Tumors</a>
-    <p class="news-card-summary">Analyzes challenges in AI-driven pathological analysis of metastatic brain tumors, including model performance gaps when applied to intracranial versus extracranial tissues.</p>
   </div>
 </div>
 </div>
