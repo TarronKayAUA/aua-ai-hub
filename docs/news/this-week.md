@@ -300,9 +300,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -316,6 +316,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 31, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02933-7">Benchmarking and developing large language models using one million clinical trials</a>
         <p class="news-card-summary">Peer-reviewed study benchmarks and develops large language models using one million clinical trials to evaluate performance on clinical tasks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04567-4">Learning from routine health system data builds better neuroimaging AI models</a>
+        <p class="news-card-summary">A three-dimensional visual foundation model trained on 5.24 million routine clinical CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04567-4/MediaObjects/41591_2026_4567_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00038-y">Humanoid robots perform successful surgery in animals</a>
+        <p class="news-card-summary">A humanoid robot controlled by a remote human surgeon performed laparoscopic gallbladder removal in pigs, generating findings for future surgical robotics development.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00038-y/d41591-026-00038-y_53047252.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04521-4">End-to-end multimodal pathology foundation model with clinical dialogue</a>
+        <p class="news-card-summary">PRISM2, a multimodal foundation model trained on 2.3 million whole-slide images and 14 million clinical question-answer pairs, matched clinical-grade cancer detection without task-specific training.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -565,13 +588,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04545-w">AI-based clinician decision support system for diagnosis of inherited retinal diseases: a multicenter, randomized trial</a>
-        <p class="news-card-summary">An AI system for inherited retinal disease diagnosis integrating multimodal imaging and clinical data achieved 88.5% accuracy in a randomized multicenter trial.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 24, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03008-3">Predicting major adverse cardiovascular events from incomplete clinical data through interpretable multimodal AI system</a>
         <p class="news-card-summary">Multimodal AI system predicts major adverse cardiovascular events from incomplete clinical data with interpretability for clinical use.</p>
@@ -587,10 +603,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vbidkp/deepseekv4flash_has_been_updated_the_official">DeepSeek-V4-Flash has been updated, &quot;The official release of DeepSeek-V4-Pro will follow soon&quot;</a>
+        <p class="news-card-summary">DeepSeek released an updated V4-Flash model with an announcement that DeepSeek-V4-Pro will follow.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/mbz7sdwbaigh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=c858c5f22db0a92b1df972971b49d9c9aa7c6ef1" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>

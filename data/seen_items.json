@@ -26682,6 +26682,89 @@
    "category": "clinical_practice",
    "score": 3.0,
    "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/six-things-i-love-about-being-a-general",
+   "title_hash": "ccd405d3fa9123cf001654a5fab8bed4",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; personal reflection without AI content"
+  },
+  {
+   "url": "https://medicalfuturist.com/science-needs-a-better-way-to-think-about-the-future",
+   "title_hash": "d4ac87d4770ac1bb4fc0548d4509430a",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general science policy commentary without AI focus"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vbidkp/deepseekv4flash_has_been_updated_the_official",
+   "title_hash": "190d82527391ef9496d4af1ea91936b3",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": true,
+   "title": "DeepSeek-V4-Flash has been updated, \"The official release of DeepSeek-V4-Pro will follow soon\"",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-31T06:04:59+00:00",
+   "summary": "DeepSeek released an updated V4-Flash model with an announcement that DeepSeek-V4-Pro will follow.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/mbz7sdwbaigh1.jpeg?width=640&crop=smart&auto=webp&s=c858c5f22db0a92b1df972971b49d9c9aa7c6ef1",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04567-4",
+   "title_hash": "478fe7d1f00672b9ebe4a7efcc601504",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": true,
+   "title": "Learning from routine health system data builds better neuroimaging AI models",
+   "source": "Nature Medicine",
+   "published": "2026-07-31T00:00:00+00:00",
+   "summary": "A three-dimensional visual foundation model trained on 5.24 million routine clinical CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04567-4/MediaObjects/41591_2026_4567_Fig1_HTML.png",
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00038-y",
+   "title_hash": "7e1b2aee916e06dd07165702ba291538",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": true,
+   "title": "Humanoid robots perform successful surgery in animals",
+   "source": "Nature Medicine",
+   "published": "2026-07-31T00:00:00+00:00",
+   "summary": "A humanoid robot controlled by a remote human surgeon performed laparoscopic gallbladder removal in pigs, generating findings for future surgical robotics development.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://media.nature.com/lw1200/magazine-assets/d41591-026-00038-y/d41591-026-00038-y_53047252.jpg",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04521-4",
+   "title_hash": "d25142ff0ae11019f82f9301469fcd9a",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": true,
+   "title": "End-to-end multimodal pathology foundation model with clinical dialogue",
+   "source": "Nature Medicine",
+   "published": "2026-07-31T00:00:00+00:00",
+   "summary": "PRISM2, a multimodal foundation model trained on 2.3 million whole-slide images and 14 million clinical question-answer pairs, matched clinical-grade cancer detection without task-specific training.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=F2bWWfAgmdc",
+   "title_hash": "975bf157492416a22031ca0649f7614a",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": false,
+   "reason": "rumor and speculation without confirmed subjects"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=yb8Chvj--3c",
+   "title_hash": "3b8c46c2fa8d23661080a97bc03e81d3",
+   "first_seen": "2026-07-31T11:00:23.648930+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

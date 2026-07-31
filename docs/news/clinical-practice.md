@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -33,6 +33,29 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 31, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02933-7">Benchmarking and developing large language models using one million clinical trials</a>
     <p class="news-card-summary">Peer-reviewed study benchmarks and develops large language models using one million clinical trials to evaluate performance on clinical tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04567-4">Learning from routine health system data builds better neuroimaging AI models</a>
+    <p class="news-card-summary">A three-dimensional visual foundation model trained on 5.24 million routine clinical CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04567-4/MediaObjects/41591_2026_4567_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00038-y">Humanoid robots perform successful surgery in animals</a>
+    <p class="news-card-summary">A humanoid robot controlled by a remote human surgeon performed laparoscopic gallbladder removal in pigs, generating findings for future surgical robotics development.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00038-y/d41591-026-00038-y_53047252.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04521-4">End-to-end multimodal pathology foundation model with clinical dialogue</a>
+    <p class="news-card-summary">PRISM2, a multimodal foundation model trained on 2.3 million whole-slide images and 14 million clinical question-answer pairs, matched clinical-grade cancer detection without task-specific training.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -103,27 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03072-9">Causal machine learning for exploring radiation dose effects on mandibular osteoradionecrosis</a>
     <p class="news-card-summary">Causal machine learning identifies radiation dose relationships in mandibular osteoradionecrosis risk to improve treatment planning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03022-5">Perceptions of simulated artificial intelligence in medical consultations: associations with stress, memory, and perceived credibility</a>
-    <p class="news-card-summary">Study examines how simulated AI in medical consultations affects patient stress, memory retention, and trust in clinical recommendations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03066-7">A Multi-Agent MLLM Framework for Imaging-Grounded Treatment Recommendation in Acute Ischemic Stroke</a>
-    <p class="news-card-summary">Multi-agent multimodal large language model framework integrates stroke imaging to generate evidence-based treatment recommendations for acute ischemic stroke.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88734">Propagation of Interpreter Errors by Ambient AI Scribes: Study Using Simulated Clinical Encounters</a>
-    <p class="news-card-summary">Ambient AI scribes propagated interpreter errors into clinical notes during simulated multilingual encounters, with error patterns varying by speaker role and error type.</p>
   </div>
 </div>
 </div>
