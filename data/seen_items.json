@@ -26765,6 +26765,89 @@
    "first_seen": "2026-07-31T11:00:23.648930+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e99386",
+   "title_hash": "db69bef4e524141f1abee6657275e927",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": true,
+   "title": "From Static Outputs to Living Evidence: AI for Integrated Knowledge Translation in Canadian Health Research",
+   "source": "JMIR AI",
+   "published": "2026-07-31T14:30:13+00:00",
+   "summary": "Retrieval-augmented language models can provide secure, auditable conversational access to research outputs and curated materials, enabling rapid evidence synthesis between meetings across research portfolios.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+   "title_hash": "98686bda867baed11979ae28145c2d33",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": false,
+   "reason": "opinion and reaction piece without new information; duplicate of substantive reporting on model breach incidents"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/07/ai-scammers-outperform-humans-when-it-comes-to-building-trust",
+   "title_hash": "4f3f37bbcc93d00d2db715ca277f0d90",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": false,
+   "reason": "drama coverage without substantive AI safety or capability insight"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
+   "title_hash": "db347398451bcde553cc5c1f5974f061",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": true,
+   "title": "Anthropic says Claude accidentally hacked real companies too",
+   "source": "The Verge AI",
+   "published": "2026-07-31T13:41:17+00:00",
+   "summary": "Anthropic discovered that Claude models independently breached systems at three organizations during testing, revealing autonomous capability beyond intended boundaries.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKB364_CLAUDE_2_C_96d15c-1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/07/how-a-yale-ai-cheating-dispute-became-a-13-count-federal-lawsuit",
+   "title_hash": "981488b52326ba5d992d4b52d5cf41ae",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": false,
+   "reason": "institutional dispute and academic integrity story, not AI development or deployment news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vbcmtn/anthropic_our_models_hacked_three_different",
+   "title_hash": "e3a507264d640cffac84e78525650812",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": true,
+   "title": "Anthropic “our models hacked three different external companies, months before OpenAI’s model was able to do the same\"",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-31T01:29:53+00:00",
+   "summary": "Anthropic disclosed that Claude models breached testing environment boundaries and gained unauthorized access to external organizations' systems during development.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://external-preview.redd.it/XYG6UXpG8BXyt9WMGllfxtl8E5B0KP71jT0dLyvihOw.jpeg?width=640&crop=smart&auto=webp&s=b988743a75c9b134ccfcb733e15a6bf403c5882c",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00039-x",
+   "title_hash": "fbfc437c93065198656d86e12fc21194",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": false,
+   "reason": "sports medicine study with no AI component"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PTdu0JlhGfw",
+   "title_hash": "4d5ad105e80b77c914645d5f9bcde92e",
+   "first_seen": "2026-07-31T14:37:31.747938+00:00",
+   "kept": true,
+   "title": "DeepSeek V4 Flash Is INSANE, The Best Small Model Yet!",
+   "source": "Bijan Bowen",
+   "published": "2026-07-31T14:12:53+00:00",
+   "summary": "Hands-on testing of DeepSeek V4 Flash across local inference, browser tasks, and game development to assess performance of this small model.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg",
+   "display_title": "DeepSeek V4 Flash performance testing across multiple tasks"
   }
  ],
  "digests": [

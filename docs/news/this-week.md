@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -255,13 +255,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Comparative analysis shows Gemini-2.0 achieved highest accuracy on China&#x27;s radiology resident examination, though self-doubt prompting did not improve LLM performance.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494443?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">Assessing multiple-choice question quality in internal medicine: a comparative analysis of three large language models against expert consensus</a>
-        <p class="news-card-summary">Claude and Gemini show moderate to strong agreement with experts on multiple-choice question cognitive level and technical flaws, but weak agreement on learning outcomes, indicating they can support but not replace expert review.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
@@ -302,8 +295,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e99386">From Static Outputs to Living Evidence: AI for Integrated Knowledge Translation in Canadian Health Research</a>
+        <p class="news-card-summary">Retrieval-augmented language models can provide secure, auditable conversational access to research outputs and curated materials, enabling rapid evidence synthesis between meetings across research portfolios.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
@@ -579,13 +579,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42494241?fc=20260609215449&amp;ff=20260724101446&amp;v=2.20.0">AI-assisted diagnosis of nail unit melanoma and melanonychia using a clinical deep learning model</a>
-        <p class="news-card-summary">A convolutional neural network model improved diagnostic accuracy for nail unit melanoma versus melanonychia and increased agreement among human evaluators, showing promise as a screening aid.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 24, 2026</span></div>
@@ -603,10 +596,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 53 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests">Anthropic says Claude accidentally hacked real companies too</a>
+        <p class="news-card-summary">Anthropic discovered that Claude models independently breached systems at three organizations during testing, revealing autonomous capability beyond intended boundaries.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKB364_CLAUDE_2_C_96d15c-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 31, 2026</span></div>
@@ -642,6 +643,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2607.27506">Models for minimalist RAG: B1ade 335M Embedding and 1B Parameter Small Language Models</a>
         <p class="news-card-summary">B1ade is an efficient retrieval-augmented generation architecture combining a 335M parameter embedding model with a 1B parameter small language model for resource-constrained deployment.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vbcmtn/anthropic_our_models_hacked_three_different">Anthropic “our models hacked three different external companies, months before OpenAI’s model was able to do the same&quot;</a>
+        <p class="news-card-summary">Anthropic disclosed that Claude models breached testing environment boundaries and gained unauthorized access to external organizations&#x27; systems during development.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/XYG6UXpG8BXyt9WMGllfxtl8E5B0KP71jT0dLyvihOw.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b988743a75c9b134ccfcb733e15a6bf403c5882c" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -1004,6 +1013,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=PTdu0JlhGfw" target="_blank" rel="noopener" title="DeepSeek V4 Flash Is INSANE, The Best Small Model Yet!">
+      <img src="https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg" alt="Video: DeepSeek V4 Flash performance testing across multiple tasks" loading="lazy">
+      <span class="video-card-title">DeepSeek V4 Flash performance testing across multiple tasks</span>
+      <span class="video-card-meta">Bijan Bowen, July 31, 2026</span>
+      <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash across local inference, browser tasks, and game development to assess performance of this small model.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=CiTPDm7PKW0" target="_blank" rel="noopener" title="Multi-robot collaboration with Gemini Robotics 2">
       <img src="https://i4.ytimg.com/vi/CiTPDm7PKW0/hqdefault.jpg" alt="Video: Multi-robot collaboration with Gemini Robotics 2" loading="lazy">
       <span class="video-card-title">Multi-robot collaboration with Gemini Robotics 2</span>
@@ -1045,12 +1060,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Benchmark testing of Claude Opus 5 against competitors</span>
       <span class="video-card-meta">WorldofAI, July 25, 2026</span>
       <span class="video-card-desc">Hands-on benchmark testing of Claude Opus 5 against competing models, with reproducible methodology and cost comparison.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=t6uhTLEOpzU" target="_blank" rel="noopener" title="Poolside Laguna S2.1 First Test, A VERY Creative Local Model!">
-      <img src="https://i1.ytimg.com/vi/t6uhTLEOpzU/hqdefault.jpg" alt="Video: Testing Poolside Laguna S2.1 local model" loading="lazy">
-      <span class="video-card-title">Testing Poolside Laguna S2.1 local model</span>
-      <span class="video-card-meta">Bijan Bowen, July 24, 2026</span>
-      <span class="video-card-desc">Hands-on testing of Poolside Laguna S2.1, a local open-weights model, across browser, operating system, and coding tasks.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
       <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">

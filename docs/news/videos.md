@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=PTdu0JlhGfw" target="_blank" rel="noopener" title="DeepSeek V4 Flash Is INSANE, The Best Small Model Yet!">
+  <img src="https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg" alt="Video: DeepSeek V4 Flash performance testing across multiple tasks" loading="lazy">
+  <span class="video-card-title">DeepSeek V4 Flash performance testing across multiple tasks</span>
+  <span class="video-card-meta">Bijan Bowen, July 31, 2026</span>
+  <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash across local inference, browser tasks, and game development to assess performance of this small model.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=CiTPDm7PKW0" target="_blank" rel="noopener" title="Multi-robot collaboration with Gemini Robotics 2">
   <img src="https://i4.ytimg.com/vi/CiTPDm7PKW0/hqdefault.jpg" alt="Video: Multi-robot collaboration with Gemini Robotics 2" loading="lazy">
   <span class="video-card-title">Multi-robot collaboration with Gemini Robotics 2</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Limitations of AI coding models in practice</span>
   <span class="video-card-meta">Two Minute Papers, July 16, 2026</span>
   <span class="video-card-desc">Analysis of limitations in AI coding models and the gap between marketed capabilities and real-world performance in software development.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=-56F0u0xN1A" target="_blank" rel="noopener" title="Bonsai 27B Deep Dive, 1-Bit, Ternary &amp; Full Precision Compared!">
-  <img src="https://i2.ytimg.com/vi/-56F0u0xN1A/hqdefault.jpg" alt="Video: Bonsai 27B model quantization comparison and local deployment" loading="lazy">
-  <span class="video-card-title">Bonsai 27B model quantization comparison and local deployment</span>
-  <span class="video-card-meta">Bijan Bowen, July 16, 2026</span>
-  <span class="video-card-desc">Technical comparison of Bonsai 27B model across quantization methods including 1-bit, ternary, and full precision with local setup guidance.</span>
 </a>
 </div>
 
