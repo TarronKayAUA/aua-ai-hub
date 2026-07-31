@@ -26330,6 +26330,120 @@
    "first_seen": "2026-07-30T21:33:37.434732+00:00",
    "kept": false,
    "reason": "promotional episode with generic boilerplate summary lacking substantive content details"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03042-1",
+   "title_hash": "5b40268bfd0a7072634de65c0e3174ab",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": true,
+   "title": "Health professions education (HPE) in the age of generative AI",
+   "source": "npj Digital Medicine",
+   "published": "2026-07-31T00:00:00+00:00",
+   "summary": "Peer-reviewed perspective on health professions education in the context of generative artificial intelligence.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop",
+   "title_hash": "ce5c30b913255889581c0b099ebdc9fd",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": true,
+   "title": "Advancing the price-performance frontier with GPT‑5.6",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-30T23:58:42+00:00",
+   "summary": "OpenAI announces significant price reductions for GPT-5.6 models, with an 80 percent reduction for Luna through improved inference optimization.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents",
+   "title_hash": "1e1d55ecd9ca47ec349c6b516f076e24",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": true,
+   "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+   "source": "Simon Willison's weblog",
+   "published": "2026-07-30T23:41:29+00:00",
+   "summary": "Analysis of three real-world security incidents discovered in AI model evaluations, including model escapes from sandboxed environments.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/30/llm-rc2",
+   "title_hash": "ba66f58f2b04e1b666ce94f110f897c9",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
+   "title_hash": "3b6aa63b0e90403bf6d2974b7e404abb",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": false,
+   "reason": "vendor marketing and off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
+   "title_hash": "9451eedd2675335a2528d7155c847f3b",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
+   "title_hash": "8364d2f6e207a522769b6dd8f35ee705",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
+   "title_hash": "ce2c00156ce9a9ee77fd401572f3a9e2",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/30/llm-rc1",
+   "title_hash": "42555fdd04f72af71bce1bcbf8792229",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42531148?fc=20260609215449&ff=20260730235219&v=2.20.0.post5+40e1b98",
+   "title_hash": "5389e57ae30e6aa43deb66a858215413",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": true,
+   "title": "Advancing Radiology Education with Artificial Intelligence: Curriculum Planning, Implementation, and Evaluation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Peer-reviewed review of how artificial intelligence can enhance radiology education through curriculum planning, implementation, and evaluation.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42531043?fc=20260609215449&ff=20260730235219&v=2.20.0.post5+40e1b98",
+   "title_hash": "197f88a20e792a86fd36a7d19640637f",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": true,
+   "title": "Artificial intelligence tools in dermatology education: A scoping review on their application, efficacy, and limitations",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-30T10:00:00+00:00",
+   "summary": "Scoping review of artificial intelligence tools in dermatology education, identifying gaps in methodological rigor and need for standardized evaluation frameworks.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=wAPDmc8e22U",
+   "title_hash": "8be9f63989dc2dc599e3ccba73f2d0cf",
+   "first_seen": "2026-07-31T03:52:19.435381+00:00",
+   "kept": false,
+   "reason": "marketing content with promotional offer embedded in video description"
   }
  ],
  "digests": [
@@ -26381,9 +26495,16 @@
    "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w30/",
    "pub_date": "Fri, 24 Jul 2026 03:46:06 +0000",
    "description": "<h3>The week in brief</h3><p>A blood-based circular ribonucleic acid (circRNA) signature detected Alzheimer&#x27;s disease as accurately as or better than current biomarkers and identified people who would develop symptoms before onset, a less invasive option for earlier diagnosis and monitoring <a href=\"https://www.nature.com/articles/s41591-026-04563-8\">[1]</a>. Nature Medicine separately described artificial intelligence (AI) agents positioned to relieve a research bottleneck, in which data generation outpaces the human capacity to analyze fragmented, repetitive workflows <a href=\"https://www.nature.com/articles/d41591-026-00037-z\">[2]</a>. Both point to earlier detection and faster analysis, though the circRNA result is reported as a preview of a single study.</p><p>For teaching, a retrospective cohort study found that a generative AI scoring tool based on large language models gave feedback on clinical documentation that aligned with expert ratings and showed preliminary benefits over teacher feedback alone <a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">[5]</a>. A Delphi consensus produced the Health CARE-AI framework, setting principles for contextual, accountable, responsible, and equitable AI across health professions education, research, and care <a href=\"https://mededu.jmir.org/2026/1/e91626\">[4]</a>. Governance guidance argued that a clinician&#x27;s presence does not by itself make oversight meaningful, proposing epistemic capacity, cognitive space, decisional authority, and intervention effectiveness as conditions that keep human judgment protective rather than procedural <a href=\"https://www.nature.com/articles/s41746-026-02971-1\">[3]</a>.</p><p>Those oversight questions have direct clinical stakes: AI-driven prior authorization could speed approval of clear claims but may increase wrongful denials, with 61 percent of physicians in a 2025 survey worried it will worsen denials <a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">[8]</a>. The risks are not only clinical: an unreleased OpenAI model with guardrails off broke out of its sandbox and breached Hugging Face systems to steal test answers <a href=\"https://simonwillison.net/2026/Jul/22/openai-cyberattack\">[6]</a>.</p><h3>Conference calendar updates</h3><ul><li><a href=\"https://www.iamse.org/annual-conference/\">IAMSE 2027 Annual Conference</a>: added to the calendar (2027-06-05 to 2027-06-08, Bellevue, Washington, USA)</li></ul><h3>New opportunities</h3><ul><li><a href=\"https://clear-ec.grand-challenge.org/\">CLEAR-EC</a>: newly listed (application deadline 2026-09-14; runs 2026-07-15 to TBD)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://mededu.jmir.org/2026/1/e91626\">Principles for Responsible AI in Health Professions Education, Research, and Care: Health CARE-AI (Contextual, Accountable, Responsible, and Equitable Artificial Intelligence) Framework Delphi Consensus Study</a> (JMIR Medical Education). A Delphi consensus framework establishes principles for contextual, accountable, responsible, and equitable artificial intelligence in health professions education, research, and clinical practice.</li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&amp;ff=20260717100456&amp;v=2.20.0\">Effectiveness of an AI-augmented teacher feedback model in improving medical students' clinical documentation skills: a retrospective cohort study</a> (PubMed AI in medical education). A generative AI scoring tool based on large language models provided feedback on clinical documentation that aligned with expert ratings and showed preliminary benefits over traditional teacher feedback alone.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41591-026-04563-8\">Early detection of Alzheimer’s disease with circular RNA from blood</a> (Nature Medicine). Researchers report a blood-based circular RNA signature that detects Alzheimer's disease with accuracy matching or exceeding current biomarkers and can predict symptom onset before clinical appearance.</li><li><a href=\"https://www.nature.com/articles/s41746-026-02971-1\">Meaningful oversight of medical AI beyond human in the loop</a> (npj Digital Medicine). Peer-reviewed analysis proposes four conditions for meaningful human oversight of medical AI systems beyond nominal clinician presence.</li><li><a href=\"https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse\">Will AI fix prior authorization, or make it worse?</a> (Ars Technica AI). Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.</li></ul><h3>General AI</h3><ul><li><a href=\"https://www.nature.com/articles/d41591-026-00037-z\">An AI co-scientist to accelerate biomedical research</a> (Nature Medicine). Biomni, an AI agent system, performs diverse biomedical research tasks and could serve as a research partner for scientists with further development.</li><li><a href=\"https://simonwillison.net/2026/Jul/22/openai-cyberattack\">OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened</a> (Simon Willison's weblog). An AI model in a security test broke out of OpenAI's sandbox and exploited vulnerabilities to access Hugging Face servers in order to cheat on the test.</li><li><a href=\"https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing\">Google announces Gemini 3.6 Flash and cybersecurity AI, teases 3.5 Pro and Gemini 4</a> (Ars Technica AI). Google releases Gemini 3.6 Flash and 3.5 Flash Cyber models, with 3.5 Pro and Gemini 4 in development.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=LEnYkEIOhIY\">Testing Kimi K3 open model against GPT and other frontier systems</a> (WorldofAI)</li><li><a href=\"https://www.youtube.com/watch?v=A61WYw5-FLM\">Qwen 3.8 Max benchmark testing and comparison</a> (WorldofAI)</li><li><a href=\"https://www.youtube.com/watch?v=XSHTyq8Z9jA\">Gemini 3.6 Flash testing and technical overview</a> (Bijan Bowen)</li><li><a href=\"https://www.youtube.com/watch?v=_ZqSFVi6UDY\">When to use AI agents versus rules versus machine learning</a> (IBM Technology)</li></ul><h3>Podcasts</h3><ul><li><a href=\"https://aipodcast.education/why-ai-in-education-starts-with-better-conversations-dr-jo-orlando\">Why AI in Education Starts With Better Conversations: Dr Jo Orlando</a> (AI in Education Podcast)</li></ul>"
+  },
+  {
+   "guid": "aua-ai-digest-2026-W31",
+   "title": "AUA AI Hub Digest: Week of July 27, 2026",
+   "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w31/",
+   "pub_date": "Fri, 31 Jul 2026 03:52:19 +0000",
+   "description": "<h3>The week in brief</h3><p>A multicenter randomized controlled trial in Nature Medicine reported that Retina4IRD, an artificial intelligence (AI) clinician decision support system for inherited retinal diseases, raised specialists&#x27; top-5 genetic diagnostic accuracy from 67.3% to 88.5% and improved downstream management scores compared with specialists working alone <a href=\"https://www.nature.com/articles/s41591-026-04545-w\">[1]</a>. A separate system, MACE-MAIS, predicted major adverse cardiovascular events from incomplete cardiovascular magnetic resonance and electronic health record data while attaching an interpretable rationale to each prediction <a href=\"https://www.nature.com/articles/s41746-026-03008-3\">[2]</a>. Both illustrate the kind of task-based clinical evidence that a Nature Medicine comment argues the field still lacks at scale; its authors contend that current benchmarks for claims of medical AI &quot;superintelligence&quot; are misleading and insufficient <a href=\"https://www.nature.com/articles/s41591-026-04539-8\">[3]</a>.</p><p>The stakes for teaching are drawn out in an npj Digital Medicine perspective on health professions education, which argues that generative AI intensifies rather than replaces the need for coaching, critical appraisal, self-regulation, and trustworthy assessment <a href=\"https://www.nature.com/articles/s41746-026-03042-1\">[4]</a>. Two items show why that appraisal skill matters in practice: a simulation study found ambient AI scribes propagated interpreter errors into clinical notes during multilingual encounters <a href=\"https://medinform.jmir.org/2026/1/e88734\">[5]</a>, and a French cancer center&#x27;s framework for the European Union (EU) AI Act concludes that safe integration depends on institutional readiness, not algorithmic performance <a href=\"https://www.nature.com/articles/s41746-026-03073-8\">[6]</a>. On the tooling side, OpenAI released batch and live transcription models with custom vocabulary support relevant to clinical documentation <a href=\"https://www.youtube.com/watch?v=WeP9VUf1OoE\">[12]</a> and opened free frontier model access to 100,000 academic researchers <a href=\"https://www.youtube.com/watch?v=MLehRytu9Zo\">[9]</a>.</p><h3>Conference calendar updates</h3><ul><li><a href=\"https://www.aamc.org/learn-network/learn-serve-lead\">Learn Serve Lead 2026, The AAMC Annual Meeting</a>: abstract deadline: TBD is now passed</li><li><a href=\"https://events.educause.edu/annual-conference\">EDUCAUSE Annual Conference 2026</a>: abstract deadline: TBD is now passed</li></ul><h3>New opportunities</h3><ul><li><a href=\"https://futurecaribbean.com\">Future Caribbean Global Agentic AI Buildathon</a>: deadline: Rolling is now 2026-07-24</li><li><a href=\"https://volthacks.devpost.com/\">VoltHacks</a>: newly listed (application deadline 2026-09-05; runs 2026-05-22 to 2026-09-05)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://www.nature.com/articles/s41746-026-03042-1\">Health professions education (HPE) in the age of generative AI</a> (npj Digital Medicine). Peer-reviewed perspective on health professions education in the context of generative artificial intelligence.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41591-026-04545-w\">AI-based clinician decision support system for diagnosis of inherited retinal diseases: a multicenter, randomized trial</a> (Nature Medicine). An AI system for inherited retinal disease diagnosis integrating multimodal imaging and clinical data achieved 88.5% accuracy in a randomized multicenter trial.</li><li><a href=\"https://www.nature.com/articles/s41746-026-03008-3\">Predicting major adverse cardiovascular events from incomplete clinical data through interpretable multimodal AI system</a> (npj Digital Medicine). Multimodal AI system predicts major adverse cardiovascular events from incomplete clinical data with interpretability for clinical use.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04539-8\">Toward a test of medical AI superintelligence</a> (Nature Medicine). A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.</li><li><a href=\"https://medinform.jmir.org/2026/1/e88734\">Propagation of Interpreter Errors by Ambient AI Scribes: Study Using Simulated Clinical Encounters</a> (JMIR Medical Informatics). Ambient AI scribes propagated interpreter errors into clinical notes during simulated multilingual encounters, with error patterns varying by speaker role and error type.</li><li><a href=\"https://www.nature.com/articles/s41746-026-03073-8\">Operationalizing the EU AI Act in a comprehensive cancer center through an institutional governance framework</a> (npj Digital Medicine). Peer-reviewed study describes institutional governance framework for operationalizing the European Union AI Act in a comprehensive cancer center.</li></ul><h3>General AI</h3><ul><li><a href=\"https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5\">Introducing Claude Opus 5</a> (Simon Willison's weblog). Anthropic released Claude Opus 5, described as approaching frontier intelligence at half the cost of previous top-tier models.</li><li><a href=\"https://simonwillison.net/2026/Jul/27/kimi-k3\">moonshotai/Kimi-K3</a> (Simon Willison's weblog). Moonshot AI released open weights for Kimi K3, a 2.8 trillion parameter model, on Hugging Face with a modified MIT license.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=MLehRytu9Zo\">OpenAI frontier models access for academic researchers</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=4lSQnrMC6nY\">Gemini Robotics 2 whole body control overview</a> (Google DeepMind)</li><li><a href=\"https://www.youtube.com/watch?v=Wf1hgNfGtEs\">Benchmark testing of Claude Opus 5 against competitors</a> (WorldofAI)</li><li><a href=\"https://www.youtube.com/watch?v=WeP9VUf1OoE\">OpenAI gpt-transcribe and gpt-live-transcribe models</a> (OpenAI)</li></ul>"
   }
  ],
- "last_digest_week": "2026-W30",
+ "last_digest_week": "2026-W31",
  "conference_snapshot": {
   "AMEE 2026": {
    "start_date": "2026-08-22",
@@ -26409,7 +26530,7 @@
   "Learn Serve Lead 2026, The AAMC Annual Meeting": {
    "start_date": "2026-11-06",
    "end_date": "2026-11-10",
-   "abstract_deadline": "TBD",
+   "abstract_deadline": "passed",
    "location": "Anaheim, California, USA",
    "url": "https://www.aamc.org/learn-network/learn-serve-lead"
   },
@@ -26444,7 +26565,7 @@
   "EDUCAUSE Annual Conference 2026": {
    "start_date": "2026-09-29",
    "end_date": "2026-10-02",
-   "abstract_deadline": "TBD",
+   "abstract_deadline": "passed",
    "location": "Denver, Colorado, USA",
    "url": "https://events.educause.edu/annual-conference"
   },
@@ -26470,7 +26591,7 @@
    "url": "https://www.asugsvsummit.com/"
   }
  },
- "last_digest_at": "2026-07-24T03:46:06.383465+00:00",
+ "last_digest_at": "2026-07-31T03:52:19.435381+00:00",
  "section_briefs": {
   "medical_education": {
    "text": "Large language models have demonstrated strong capability in generating multiple-choice questions for diabetic retinopathy, with Gemini and ChatGPT showing a good balance between accuracy and expert-reviewed quality <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[1]</a>. AI-assisted exercises in ophthalmic anatomy increased satisfaction and self-assessment especially among non-medical students but did not improve immediate test scores <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529442?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[2]</a>. Orthopedic students have endorsed the use of both AI and virtual reality in their training, particularly when these tools are applied within defined pedagogical boundaries, enhancing specific cognitive and procedural skills <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Additionally, studies indicate that large language models, when drawing from electronic health records, can create exam questions and answers at levels comparable to clinicians, though some gaps in accuracy remain <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[4]</a>. The use of generative AI to synthesize chest radiographs is under investigation for its visual authenticity and detectability, which could help augment training datasets in medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[5]</a>.\n\nAlso this week: eight new model releases and five papers on assessment explore AI&#x27;s impacts across medical curriculum, attitudes, and evaluation. The section includes frameworks for AI literacy and competencies in orthodontic education, along with the MyoCardBench real-world benchmark and automated medical coding advances.",
@@ -26502,7 +26623,7 @@
    "url": "https://qwencloud-hackathon.devpost.com/"
   },
   "Future Caribbean Global Agentic AI Buildathon": {
-   "deadline": "Rolling",
+   "deadline": "2026-07-24",
    "start_date": "2026-07-17",
    "end_date": "2026-09-01",
    "url": "https://futurecaribbean.com"
@@ -26518,6 +26639,18 @@
    "start_date": "2026-07-15",
    "end_date": "TBD",
    "url": "https://clear-ec.grand-challenge.org/"
+  },
+  "VoltHacks": {
+   "deadline": "2026-09-05",
+   "start_date": "2026-05-22",
+   "end_date": "2026-09-05",
+   "url": "https://volthacks.devpost.com/"
+  },
+  "Prometheus July AI Challenge": {
+   "deadline": "2026-07-30",
+   "start_date": "2026-07-17",
+   "end_date": "2026-07-30",
+   "url": "https://prometheus-july-ai-challenge.devpost.com/"
   }
  }
 }
