@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Quanta Magazine AI</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731">Is AI Reasoning Right for the Wrong Reasons?</a>
+    <p class="news-card-summary">An analysis of whether AI systems perform reasoning tasks through genuine logical processes or pattern matching, examining the gap between intuitive explanations and empirical evidence.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/07/AI-Reasoning-cr.Celsius-Pictor-Default.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 31, 2026</span></div>
@@ -126,12 +134,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Researchers presented evidence at a top machine learning conference that large language models contain a fundamental architectural flaw making them inherently vulnerable to adversarial attacks.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/chain-link.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.26228">Steering Instruction Hierarchies at Inference Time</a>
-    <p class="news-card-summary">Presents V-Steer, a training-free inference method that restores instruction hierarchy compliance in language models, addressing violations of system prompt prioritization.</p>
-  </div>
 </div>
 </div>

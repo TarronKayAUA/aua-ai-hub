@@ -26848,6 +26848,74 @@
    "score": 3.0,
    "thumbnail": "https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg",
    "display_title": "DeepSeek V4 Flash performance testing across multiple tasks"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
+   "title_hash": "e06489b49f501154585ee659ef0344a6",
+   "first_seen": "2026-07-31T17:54:14.466832+00:00",
+   "kept": false,
+   "reason": "music industry policy outside scope of medical education and clinical practice"
+  },
+  {
+   "url": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731",
+   "title_hash": "c6ef1416765a067cf16afa9b62bfb8e3",
+   "first_seen": "2026-07-31T17:54:14.466832+00:00",
+   "kept": true,
+   "title": "Is AI Reasoning Right for the Wrong Reasons?",
+   "source": "Quanta Magazine AI",
+   "published": "2026-07-31T14:50:11+00:00",
+   "summary": "An analysis of whether AI systems perform reasoning tasks through genuine logical processes or pattern matching, examining the gap between intuitive explanations and empirical evidence.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://www.quantamagazine.org/wp-content/uploads/2026/07/AI-Reasoning-cr.Celsius-Pictor-Default.webp",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vbr5zj/the_chinese_llm_release_carousel_never_stops",
+   "title_hash": "9c14c8cc1553865b99e04c2aa411e46a",
+   "first_seen": "2026-07-31T17:54:14.466832+00:00",
+   "kept": false,
+   "reason": "forum discussion of rumored releases, not a confirmed development or substantive analysis"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42536197?fc=20260609215449&ff=20260731135414&v=2.20.0.post5+40e1b98",
+   "title_hash": "3c9c94e9a3c09859e21298f5fba586d3",
+   "first_seen": "2026-07-31T17:54:14.466832+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; environmental epidemiology with no AI relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&ff=20260731135414&v=2.20.0.post5+40e1b98",
+   "title_hash": "9fc9ac6b561167ad122d31ff84d356bb",
+   "first_seen": "2026-07-31T17:54:14.466832+00:00",
+   "kept": true,
+   "title": "Evaluating Large Language Model-Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: A Cross-Sectional Agreement Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-31T10:00:00+00:00",
+   "summary": "Large language models showed moderate agreement with faculty in scoring voice-based virtual patient interactions, suitable for formative assessment but not independent high-stakes evaluation due to rater variability and bias.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&ff=20260731135414&v=2.20.0.post5+40e1b98",
+   "title_hash": "9ae6a64a06ad28407ea95dfbcdf4a641",
+   "first_seen": "2026-07-31T17:54:14.466832+00:00",
+   "kept": true,
+   "title": "Designing AI-resilient assessment in higher education: a four-pillar conceptual framework",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-31T10:00:00+00:00",
+   "summary": "A framework for designing assessments resistant to generative AI misuse, addressing limitations of detection-based approaches and proposing structural changes to course evaluation.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vbk5ob/new_deepseek_v4flash_achieves_50_on",
+   "title_hash": "fab091122f105e300725d742b651d22e",
+   "first_seen": "2026-07-31T17:54:14.466832+00:00",
+   "kept": false,
+   "reason": "forum post about benchmark scores without analysis or broader significance"
   }
  ],
  "digests": [

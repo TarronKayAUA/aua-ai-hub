@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Evaluating Large Language Model-Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: A Cross-Sectional Agreement Study</a>
+    <p class="news-card-summary">Large language models showed moderate agreement with faculty in scoring voice-based virtual patient interactions, suitable for formative assessment but not independent high-stakes evaluation due to rater variability and bias.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Designing AI-resilient assessment in higher education: a four-pillar conceptual framework</a>
+    <p class="news-card-summary">A framework for designing assessments resistant to generative AI misuse, addressing limitations of detection-based approaches and proposing structural changes to course evaluation.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 31, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42524542?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">Saudi Medical Students&#x27; Perceptions and Attitudes of Integrating Generative Artificial Intelligence Integration in Medical Education: A Cross-Sectional Study</a>
     <p class="news-card-summary">Saudi medical students view generative AI as a complementary tool for basic sciences and simulation, not a replacement for human instruction.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">AI literacy in undergraduate medical education: a competency-based interpretive framework for curriculum and assessment</a>
-    <p class="news-card-summary">Framework for defining and teaching artificial intelligence literacy as a bounded, observable competency in undergraduate medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42526014?fc=20260609215449&amp;ff=20260729233145&amp;v=2.20.0.post5+40e1b98">Abstract: Artificial Intelligence Use in Clinical Reasoning Among Second-Year Medical Students: A Cross-Sectional Survey Study</a>
-    <p class="news-card-summary">Survey of second-year medical students shows AI is already integrated into clinical reasoning; educators should emphasize critical evaluation and calibrated AI use to support independent diagnostic thinking.</p>
   </div>
 </div>
 </div>

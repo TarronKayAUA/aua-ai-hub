@@ -20,8 +20,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Evaluating Large Language Model-Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: A Cross-Sectional Agreement Study</a>
+        <p class="news-card-summary">Large language models showed moderate agreement with faculty in scoring voice-based virtual patient interactions, suitable for formative assessment but not independent high-stakes evaluation due to rater variability and bias.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Designing AI-resilient assessment in higher education: a four-pillar conceptual framework</a>
+        <p class="news-card-summary">A framework for designing assessments resistant to generative AI misuse, addressing limitations of detection-based approaches and proposing structural changes to course evaluation.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 31, 2026</span></div>
@@ -255,20 +269,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Comparative analysis shows Gemini-2.0 achieved highest accuracy on China&#x27;s radiology resident examination, though self-doubt prompting did not improve LLM performance.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42496469?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">Toward Child-Centred Artificial Intelligence in Pediatric Emergency Medicine: A Perspective on Clinical Decision Support, Stakeholder Engagement and Education</a>
-        <p class="news-card-summary">Perspective on integrating AI and machine learning into pediatric emergency departments across clinical decision support, stakeholder engagement, and education.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42496257?fc=20260609215449&amp;ff=20260724135336&amp;v=2.20.0">Artificial Intelligence-Induced Deskilling in Interventional Pulmonology: An International Cross-Sectional Survey on Risk Perception and Mitigation Strategies</a>
-        <p class="news-card-summary">International survey of interventional pulmonologists examines perceptions of AI-induced deskilling and mitigation strategies in their specialty.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
@@ -293,9 +293,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -579,13 +579,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03008-3">Predicting major adverse cardiovascular events from incomplete clinical data through interpretable multimodal AI system</a>
-        <p class="news-card-summary">Multimodal AI system predicts major adverse cardiovascular events from incomplete clinical data with interpretability for clinical use.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -596,10 +589,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 53 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Quanta Magazine AI</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731">Is AI Reasoning Right for the Wrong Reasons?</a>
+        <p class="news-card-summary">An analysis of whether AI systems perform reasoning tasks through genuine logical processes or pattern matching, examining the gap between intuitive explanations and empirical evidence.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/07/AI-Reasoning-cr.Celsius-Pictor-Default.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 31, 2026</span></div>
@@ -971,30 +972,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Anthropic released Claude Opus 5 optimized for token efficiency and cost rather than absolute capability gains over its predecessor.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/opus-5-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer">Team uses AlphaFold AI to redesign gene-editing proteins to make them safer</a>
-        <p class="news-card-summary">Researchers used AlphaFold to identify and redesign parts of gene-editing proteins that cause errors, improving safety.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2239702658-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release">Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities</a>
-        <p class="news-card-summary">Anthropic released Claude Opus 5, achieving capabilities close to Claude Fable 5 across many domains.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKB364_CLAUDE_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v5c3vt/more_than_20_companies_including_nvidia_meta">More than 20 companies including NVIDIA, Meta, Microsoft, Palantir, and Hugging Face have signed a letter urging policymakers to avoid premature restrictions on open weight models.</a>
-        <p class="news-card-summary">Twenty companies including NVIDIA, Meta, and Microsoft signed a letter urging policymakers to avoid premature restrictions on open-weight AI models.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/4yvf9z8xm6fh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=268ac51182255d3c2a12f1562b616750fe340e19" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
