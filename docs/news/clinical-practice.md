@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Mixed alignment between large language model responses and US Preventive Services Task Force recommendations in preventive care highlights concerns about the reliability of AI guidance in clinical settings <a href="https://ai.jmir.org/2026/1/e87034">[1]</a>. At the same time, researchers demonstrated that large language models might classify oncology trials based largely on prior knowledge, rather than information in the trial documents themselves, raising issues about evidence grounding <a href="https://ai.jmir.org/2026/1/e95565">[2]</a>. Ongoing studies are investigating embedding degradation in clinical document retrieval, with methods tested for error detection and correction <a href="https://medinform.jmir.org/2026/1/e99639">[3]</a>. AI solutions for workforce shortages in radiology are under active review, given increasing demands and limited clinician supply <a href="https://pubmed.ncbi.nlm.nih.gov/42527464?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">[4]</a>. Meanwhile, smartphone speech analysis tools are being developed for objective diagnostic support in adolescent major depressive disorder <a href="https://www.nature.com/articles/s41746-026-03068-5">[6]</a>.</p>
-<p>Also this week: The section holds eight new model releases and five papers on clinical assessment, including comparative evaluations of AI and resident performance in pulmonary embolism detection and improved prenatal ultrasound screening. Three studies explore clinical documentation with ambient AI scribes, and patient facing tools are reviewed for reliability and readability in education about age-related macular degeneration.</p>
-<p class="section-brief-date">The picture as of July 30, 2026; numbered links go to the items below.</p>
+<p>A study measuring narrative anchoring finds that clinical language models can assign different diagnoses to identical clinical facts depending on how they are phrased, a reliability gap for diagnostic use <a href="https://arxiv.org/abs/2607.27384">[3]</a>. Related work shows mixed alignment between large language models and official US preventive care recommendations <a href="https://ai.jmir.org/2026/1/e87034">[10]</a>, while another study finds models may classify oncology trials using pretraining knowledge rather than the supplied text, raising grounding concerns <a href="https://ai.jmir.org/2026/1/e95565">[12]</a>. Imaging models continue to advance: a three-dimensional foundation model trained on 5.24 million routine CT and MRI scans reached state-of-the-art neuroimaging diagnostic performance <a href="https://www.nature.com/articles/s41591-026-04567-4">[5]</a>, and a multimodal pathology model matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[7]</a>.</p>
+<p>Also this week: eight safety and evaluation papers cover topics from embedding degradation in clinical retrieval to cybersecurity regulation for AI-enabled devices, four items address imaging and diagnostics, two examine clinical documentation, including sentence-level provenance for AI summarization, and one covers clinical decision support for postoperative vomiting prediction.</p>
+<p class="section-brief-date">The picture as of July 31, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84260">Prediction of Postoperative Vomiting Within 24 Hours Using Machine Learning With Large Language Model, Enhanced Interpretability: Development and Validation Study</a>
+    <p class="news-card-summary">Researchers developed and validated machine learning models using perioperative data and clinical text to predict postoperative vomiting within 24 hours with enhanced interpretability.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 31, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42527096?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">Pitfalls and Emerging Trends in AI-driven Pathological Analysis of Metastatic Brain Tumors</a>
     <p class="news-card-summary">Analyzes challenges in AI-driven pathological analysis of metastatic brain tumors, including model performance gaps when applied to intracranial versus extracranial tissues.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03068-5">An objective smartphone speech diagnostic aid for adolescent major depressive disorder</a>
-    <p class="news-card-summary">A smartphone speech analysis tool provides objective diagnostic support for adolescent major depressive disorder using voice-based markers.</p>
   </div>
 </div>
 </div>
