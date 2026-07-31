@@ -933,3 +933,75 @@
       or exam identifier, stop. Do not repeat it, do not analyze
       anything, and ask me to paste the material again with the
       identifiers removed.
+
+# The next two were added 2026-07-31 after a student's questions surfaced
+# the gap (owner approved): the library had question-drilling and
+# score-report prompts for students but nothing for the teaching pass
+# through a lecture or for building a grounded review sheet. Both were
+# adversarially reviewed for pedagogy before entering (retrieval-first,
+# grounded in the attached lecture only, time-capped, with an
+# anti-drift reset command).
+
+- title: Lecture tutor
+  tagline: Teaches an attached lecture one objective at a time, checking you as it goes
+  category: study_strategy
+  audience: students
+  status: draft
+  last_reviewed: 2026-07-31
+  notes: Works in any assistant that accepts file uploads, and in the
+    tutor modes of study platforms. Attach the lecture first. AI tutors
+    drift back into lecturing over long sessions; if it stops asking
+    you questions, say "back to the protocol". A session should cover
+    one lecture in about 45 minutes; past an hour, stop, note the
+    remaining objectives, and switch to practice questions. This builds
+    retrieval into your first pass, but it does not replace closed-book
+    recall. Later the same day, write out what you remember with
+    everything closed, then use "review" on what you missed.
+  prompt: |
+    You are my tutor for the attached lecture. Work only from the
+    attached slides and their learning objectives; do not add outside
+    material. Teach me one learning objective at a time, in order. For
+    each one: first ask me what I already know about it; then explain
+    the concept in plain language in under 150 words, including the
+    specific details the slides emphasize (names, steps, values,
+    classifications); then ask me one question that checks whether I
+    can use the idea, not just repeat it. If my answer is wrong or
+    incomplete, give me a hint and let me try again before you explain.
+    After every three objectives, ask me to summarize what we have
+    covered in my own words, and correct anything I get wrong. Keep a
+    running list of the objectives I struggle with, and when I say
+    "review", quiz me again on just those. If I say "back to the
+    protocol", return to this exact format.
+
+- title: Daily review sheet builder
+  tagline: Builds a detail-preserving review sheet with self-test questions from one lecture
+  category: study_strategy
+  audience: students
+  status: draft
+  last_reviewed: 2026-07-31
+  notes: Check the sheet against the slides once before trusting it;
+    the checking is itself a review pass. Building it should take
+    twenty to thirty minutes, not hours; if it becomes a project, it
+    has become the trap of producing materials instead of practicing
+    recall. Use it daily by covering the sheet and answering the ten
+    questions from memory. The recall is the work, not the rereading.
+  prompt: |
+    Using the attached lecture slides, build me a daily review sheet.
+    Organize it by the lecture's learning objectives. For each
+    objective give me: the core idea in one or two sentences; the
+    specific details the slides emphasize that I must know exactly
+    (names, numbers, steps, classifications, drugs, whatever the
+    lecture actually contains); and one comparison or distinction that
+    is easy to confuse. Use only what is in the slides, and where the
+    slides give a specific value or term, use it exactly. Every
+    specific fact the slides tie to a learning objective must appear on
+    the sheet. Aim for one page, but if everything does not fit, keep
+    every specific detail and let the sheet run longer; never drop a
+    name, number, or step to save space. At the end, add ten
+    rapid-recall questions drawn only from the sheet, with the answers
+    in a separate list at the bottom, so I can quiz myself each day.
+    Here are concepts I have missed in recent practice questions. If a
+    concept is covered in these slides, make sure it appears on the
+    sheet; if it is not, do not add outside material, and instead list
+    it under a "Not in this lecture" heading at the bottom so I know to
+    review it from its own lecture: [PASTE YOUR MISSED CONCEPTS]

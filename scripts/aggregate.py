@@ -743,10 +743,11 @@ def update_section_briefs(config: dict, categories: dict, ledger: dict,
     cfg = config.get("llm", {}).get("briefs")
     if not cfg:
         return "not configured"
-    if not os.environ.get("GITHUB_TOKEN"):
-        return "skipped (no GITHUB_TOKEN); stored briefs kept"
-    gh_cfg = dict(config["llm"]["github_models"])
-    gh_cfg["model"] = cfg["model"]
+    # Provider resolution moved to the per-task path 2026-07-31, when
+    # GitHub Models (the briefs' original free home) was retired.
+    provider, call, model_cfg = resolve_task_llm(config, "section_briefs")
+    if call is None:
+        return "skipped (no LLM credentials); stored briefs kept"
     timeout = config["llm"].get("request_timeout_seconds", 90)
     template = SECTION_BRIEF_PROMPT_PATH.read_text(encoding="utf-8")
     exclude = cfg.get("exclude_domains", [])
@@ -781,11 +782,11 @@ def update_section_briefs(config: dict, categories: dict, ledger: dict,
             topic_counts = ", ".join(
                 f"{t}: {n}" for t, n in
                 sorted(tallies.items(), key=lambda kv: -kv[1]))
-            raw = call_github_models(
+            raw = call(
                 "Follow the instructions in the message exactly.",
                 template.format(label=label, items=items_block,
                                 topic_counts=topic_counts),
-                gh_cfg, timeout,
+                model_cfg, timeout,
             )
             text = _brief_sanitize(raw)
             refs = [int(n) for n in re.findall(r"\[(\d+)\]", text)]

@@ -78,6 +78,18 @@ llm:
       provider: anthropic
       model: claude-sonnet-5
       max_tokens: 16000
+    # Section briefs moved off the free tier 2026-07-31: GitHub Models
+    # was fully retired 2026-07-30 (docs.github.com, checked 2026-07-31;
+    # the nightly runs began failing with HTTP 410 the same day, with
+    # keep-last-good holding the stored briefs). Sonnet 5 was the
+    # pre-agreed replacement from the July blind eval (8 of 8 contract
+    # passes); at most three small calls per night, well under a dollar
+    # a month. max_tokens set consciously: thinking shares the response
+    # budget on Claude 5 generation models (issues #20 and #27).
+    section_briefs:
+      provider: anthropic
+      model: claude-sonnet-5
+      max_tokens: 8000
     content_verify:
       provider: anthropic
       model: claude-haiku-4-5
@@ -125,12 +137,11 @@ llm:
       usd_per_m_input: 10
       usd_per_m_output: 50
   # Section briefs: one short narrative per news category page, regenerated
-  # only when that page's item set changes. Three small calls at most per
-  # night, so they ride the strongest free GitHub Models entry (high tier,
-  # ~3 calls fit easily) rather than the bulk-curation mini model. Verified
-  # available on the free plan 2026-06-11; the GPT-5 family is gated.
+  # only when that page's item set changes. Model wiring lives in
+  # llm.tasks.section_briefs (moved off the retired GitHub Models free
+  # tier 2026-07-31; it rode openai/gpt-4.1 there from 2026-06-11 until
+  # the service ended). This block keeps the feature-level settings.
   briefs:
-    model: openai/gpt-4.1
     # Forum/community sources stay on the page but are not offered to the
     # brief writer; the brief cites journals, labs, and primary sources.
     exclude_domains:
