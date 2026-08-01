@@ -286,9 +286,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -549,13 +549,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 27, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04539-8">Toward a test of medical AI superintelligence</a>
         <p class="news-card-summary">A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03016-3">An interpretable artificial intelligence model for real-time leukemia screening via routine blood tests across multicenter cohorts</a>
-        <p class="news-card-summary">Multicenter study develops an interpretable AI model for leukemia screening using routine blood test results in real-time clinical settings.</p>
       </div>
     </div>
     </div>
@@ -991,7 +984,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 9 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=wT42SgaOPK4" target="_blank" rel="noopener" title="DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, &amp; Fast! (Fully Tested)">
@@ -1041,12 +1034,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Llama.cpp versus vLLM: local LLM inference engine performance comparison</span>
       <span class="video-card-meta">IBM Technology, July 28, 2026</span>
       <span class="video-card-desc">Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
-      <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">
-      <span class="video-card-title">Kimi K3 and Fable model comparison</span>
-      <span class="video-card-meta">Wes Roth, July 18, 2026</span>
-      <span class="video-card-desc">Comparison of Kimi K3 and Fable models covering recent developments in large language models.</span>
     </a>
     </div>
 

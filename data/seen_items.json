@@ -27244,6 +27244,27 @@
    "first_seen": "2026-08-01T17:16:39.093137+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
+   "title_hash": "090e48521a3f39aa49efb77c18293000",
+   "first_seen": "2026-08-01T21:10:42.669597+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Jul/31/slack-emoji-maker",
+   "title_hash": "5c6c0d305df3c7479ded4b14a37fd1db",
+   "first_seen": "2026-08-01T21:10:42.669597+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vbjdby/deepseekv4flash0731_is_going_to_cause_another",
+   "title_hash": "622ec5e3f6b6608964c968cb8e2ab578",
+   "first_seen": "2026-08-01T21:10:42.669597+00:00",
+   "kept": false,
+   "reason": "forum thread on model performance without substantive analysis"
   }
  ],
  "digests": [
