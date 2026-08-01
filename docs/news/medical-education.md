@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Assessment methodology takes center stage, led by a cross-sectional study finding large language models achieve only moderate agreement with faculty when scoring voice-based virtual standardized patient encounters, useful for formative feedback but not high-stakes grading <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[1]</a>. That caution echoes in a four-pillar framework for building AI-resilient assessments that address generative AI misuse through structural course redesign rather than detection tools <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[2]</a>. Elsewhere, five large language models generated diabetic retinopathy multiple-choice questions with uneven accuracy, though Gemini and ChatGPT balanced correctness and quality <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[4]</a>. Orthopedic students favored AI and virtual reality only within bounded pedagogical limits, with faculty oversight preserved <a href="https://pubmed.ncbi.nlm.nih.gov/42529305?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[6]</a>, while a broader review reconsiders how OSCEs can adapt to competency-based frameworks <a href="https://icenet.blog/2026/07/30/reimagining-the-osce-for-learning-in-competency-based-education">[13]</a>.</p>
-<p>Also this week: the section adds seven papers on assessment and feedback and six on teaching and curriculum, spanning radiology, dermatology, and cystic fibrosis translation efforts, alongside two studies on attitudes toward adoption, including Saudi medical students&#x27; view of generative AI as a complementary tool rather than a replacement for instruction.</p>
-<p class="section-brief-date">The picture as of July 31, 2026; numbered links go to the items below.</p>
+<p>Large language models are being tested as scorers of clinical skills, and one study found only moderate agreement with faculty raters when grading voice-based virtual standardized patient encounters, a gap that limits use to formative rather than high-stakes assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[1]</a>. That reliability question feeds into broader efforts to redesign assessment itself, including a four-pillar framework for building courses and exams that resist generative AI misuse without relying on detection software <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[2]</a>. Elsewhere, generative models are taking on curriculum tasks such as producing multiple-choice questions on diabetic retinopathy at a quality level comparable to expert writers <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[6]</a>, while an AI constraint-optimization scheduler cut inequities in pediatric residency on-call assignments <a href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[4]</a>.</p>
+<p>Also this week: the section holds seven items on teaching and curriculum, ranging from AI-generated ophthalmic anatomy visuals to dermatology education tool reviews, alongside six pieces on assessment and feedback covering eczema severity scoring and OSCE redesign. Two additional items examine attitudes and adoption, including student views on AI and virtual reality use in orthopedic training.</p>
+<p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -33,6 +33,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Designing AI-resilient assessment in higher education: a four-pillar conceptual framework</a>
     <p class="news-card-summary">A framework for designing assessments resistant to generative AI misuse, addressing limitations of detection-based approaches and proposing structural changes to course evaluation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">Artificial intelligence as a clinical tutor in telemedicine: Opportunities and challenges in medical education</a>
+    <p class="news-card-summary">Study of pediatric trainees&#x27; confidence and engagement with AI in telemedicine identified gaps in digital competence and critical evaluation skills, informing curriculum updates.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">Evaluation of an AI-Based Constraint-Optimization Scheduler to Optimize On-Call Schedule Equity and Reduce Administrative Burden in a Pediatric Residency: Retrospective Comparative Study</a>
+    <p class="news-card-summary">Retrospective study found an AI constraint-optimization scheduler improved on-call equity and reduced high-risk shift sequences in pediatric residency training.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -110,21 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">ICE Blog</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://icenet.blog/2026/07/30/reimagining-the-osce-for-learning-in-competency-based-education">Reimagining the OSCE for Learning in Competency-based Education</a>
     <p class="news-card-summary">Examines how Objective Structured Clinical Examinations adapt to competency-based education frameworks and their role in assessing clinical learning outcomes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/07/30/law-schools-are-asking-wrong-question-about-ai-opinion">Law Schools Are Asking the Wrong Question About AI</a>
-    <p class="news-card-summary">Legal educators argue that assessing professional competence in a field rapidly transformed by AI requires reconsidering evaluation beyond academic integrity.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-2192059335.jpg?itok=awZJA4gq" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42524542?fc=20260609215449&amp;ff=20260729171324&amp;v=2.20.0.post5+40e1b98">Saudi Medical Students&#x27; Perceptions and Attitudes of Integrating Generative Artificial Intelligence Integration in Medical Education: A Cross-Sectional Study</a>
-    <p class="news-card-summary">Saudi medical students view generative AI as a complementary tool for basic sciences and simulation, not a replacement for human instruction.</p>
   </div>
 </div>
 </div>
