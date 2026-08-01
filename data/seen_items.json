@@ -27188,6 +27188,34 @@
    "score": 3.0,
    "thumbnail": "https://i4.ytimg.com/vi/wT42SgaOPK4/hqdefault.jpg",
    "display_title": "DeepSeek V4 Flash benchmarking and performance testing"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/reddit-ceo-on-ai-overviews-were-still-looking-for-that-win-win",
+   "title_hash": "dac55ba7c8807bc7170b54e58523d427",
+   "first_seen": "2026-08-01T13:57:22.813751+00:00",
+   "kept": false,
+   "reason": "business and licensing gossip, not AI capability or deployment news"
+  },
+  {
+   "url": "https://spectrum.ieee.org/risk",
+   "title_hash": "6c5461ac575bfa351e8c97bf3434f308",
+   "first_seen": "2026-08-01T13:57:22.813751+00:00",
+   "kept": false,
+   "reason": "personnel column, not news or substantive analysis for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42539344?fc=20260609215449&ff=20260801095723&v=2.20.0.post5+40e1b98",
+   "title_hash": "fcc51c0a936930a5cfb34b947cc704f8",
+   "first_seen": "2026-08-01T13:57:22.813751+00:00",
+   "kept": false,
+   "reason": "domain-specific epidemiology application unrelated to AI in medical education or clinical practice"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03031-4",
+   "title_hash": "fe99321d3eb1d2564817294aaf273c7d",
+   "first_seen": "2026-08-01T13:57:22.813751+00:00",
+   "kept": false,
+   "reason": "author correction to previously published article, not substantive news"
   }
  ],
  "digests": [
