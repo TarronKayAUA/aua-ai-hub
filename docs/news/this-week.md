@@ -300,9 +300,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -563,20 +563,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 27, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04539-8">Toward a test of medical AI superintelligence</a>
         <p class="news-card-summary">A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02945-3">QoQ-Med3: a multimodal reasoning foundation model for clinical analysis</a>
-        <p class="news-card-summary">QoQ-Med3 is a multimodal reasoning foundation model designed to support clinical analysis across text, imaging, and structured data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 25, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03012-7">Digital decision support using a phospholipid-dependent biomarker for early exclusion of negative cases in lupus anticoagulant diagnostics</a>
-        <p class="news-card-summary">Digital decision support system uses phospholipid-dependent biomarker analysis to exclude negative lupus anticoagulant cases early in diagnostic workflow.</p>
       </div>
     </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -1011,9 +997,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=wT42SgaOPK4" target="_blank" rel="noopener" title="DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, &amp; Fast! (Fully Tested)">
+      <img src="https://i4.ytimg.com/vi/wT42SgaOPK4/hqdefault.jpg" alt="Video: DeepSeek V4 Flash benchmarking and performance testing" loading="lazy">
+      <span class="video-card-title">DeepSeek V4 Flash benchmarking and performance testing</span>
+      <span class="video-card-meta">WorldofAI, August 1, 2026</span>
+      <span class="video-card-desc">Hands-on benchmarking of DeepSeek V4 Flash covering performance, cost, and speed across tasks relevant to users and educators.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=PTdu0JlhGfw" target="_blank" rel="noopener" title="DeepSeek V4 Flash Is INSANE, The Best Small Model Yet!">
       <img src="https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg" alt="Video: DeepSeek V4 Flash performance testing across multiple tasks" loading="lazy">
       <span class="video-card-title">DeepSeek V4 Flash performance testing across multiple tasks</span>

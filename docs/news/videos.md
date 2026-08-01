@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=wT42SgaOPK4" target="_blank" rel="noopener" title="DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, &amp; Fast! (Fully Tested)">
+  <img src="https://i4.ytimg.com/vi/wT42SgaOPK4/hqdefault.jpg" alt="Video: DeepSeek V4 Flash benchmarking and performance testing" loading="lazy">
+  <span class="video-card-title">DeepSeek V4 Flash benchmarking and performance testing</span>
+  <span class="video-card-meta">WorldofAI, August 1, 2026</span>
+  <span class="video-card-desc">Hands-on benchmarking of DeepSeek V4 Flash covering performance, cost, and speed across tasks relevant to users and educators.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=PTdu0JlhGfw" target="_blank" rel="noopener" title="DeepSeek V4 Flash Is INSANE, The Best Small Model Yet!">
   <img src="https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg" alt="Video: DeepSeek V4 Flash performance testing across multiple tasks" loading="lazy">
   <span class="video-card-title">DeepSeek V4 Flash performance testing across multiple tasks</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">GPT-5.6 computer control and task automation</span>
   <span class="video-card-meta">OpenAI, July 16, 2026</span>
   <span class="video-card-desc">Demonstration of GPT-5.6 computer use capability, showing how the model can control applications and browsers to complete tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=axOcn--n_lM" target="_blank" rel="noopener" title="The Dangerous Illusion of AI Coding Skills">
-  <img src="https://i2.ytimg.com/vi/axOcn--n_lM/hqdefault.jpg" alt="Video: Limitations of AI coding models in practice" loading="lazy">
-  <span class="video-card-title">Limitations of AI coding models in practice</span>
-  <span class="video-card-meta">Two Minute Papers, July 16, 2026</span>
-  <span class="video-card-desc">Analysis of limitations in AI coding models and the gap between marketed capabilities and real-world performance in software development.</span>
 </a>
 </div>
 
