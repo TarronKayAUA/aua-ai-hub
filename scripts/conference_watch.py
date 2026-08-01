@@ -224,9 +224,17 @@ def main() -> int:
 
     applied, pending_report = [], []
     proposals, findings, failures, unchanged = [], [], [], []
+    skipped = []
 
     for conf in conferences:
         name = conf["name"]
+        # watch_skip (added 2026-08-01, issues #29 and #30): entries whose
+        # official pages block all scripted clients are excluded from the
+        # fetch instead of failing every run; their dates stay
+        # owner-verified, mirroring tools.yaml's verify: skip.
+        if conf.get("watch_skip"):
+            skipped.append(name)
+            continue
         try:
             page = page_text(conf["url"], page_chars)
             data = extract(name, page, config)
@@ -302,6 +310,9 @@ def main() -> int:
 
     for item in watchlist:
         name = item["name"]
+        if item.get("watch_skip"):
+            skipped.append(f"{name} (watchlist)")
+            continue
         try:
             data = extract(name, page_text(item["url"], page_chars), config)
         except Exception as exc:
@@ -357,6 +368,11 @@ def main() -> int:
         lines.extend(["## Check failures", ""]
                      + [f"- {f}" for f in failures] + [""])
     lines.append(f"Checked and unchanged: {', '.join(unchanged) or 'none'}.")
+    if skipped:
+        lines.append("")
+        lines.append(
+            "Skipped by watch_skip (pages block scripted clients; dates "
+            f"stay owner-verified): {', '.join(skipped)}.")
     report = "\n".join(lines)
 
     if args.report:
@@ -366,7 +382,8 @@ def main() -> int:
 
     print("\n=== verification ===")
     print(f"mode           : {mode}")
-    print(f"events checked : {len(conferences) + len(watchlist)}")
+    print(f"events checked : {len(conferences) + len(watchlist) - len(skipped)}")
+    print(f"skipped        : {len(skipped)}")
     print(f"applied        : {len(applied)}")
     print(f"pending        : {len(pending_report)}")
     print(f"proposals      : {len(proposals)}")

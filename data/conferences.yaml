@@ -8,6 +8,11 @@
 # abstract_deadline: YYYY-MM-DD, or "passed" when the deadline has closed,
 # or TBD when not yet announced.
 #
+# watch_skip: true excludes an entry from the conference watch's page
+# fetch, for sites that block all scripted clients (added 2026-08-01,
+# issues #29 and #30). Its dates stay owner-verified, and the render
+# hook ignores the key. Mirrors tools.yaml's verify: skip.
+#
 # Selection criteria (owner, 2026-07-01): tier 1 is AI in medicine and
 # clinical practice plus AI in medical education; tier 2 is AI in higher
 # education; tier 3 is AI in general education. English-language
@@ -135,6 +140,12 @@
   format: in_person
   abstract_deadline: passed
   url: https://events.educause.edu/annual-conference
+  # events.educause.edu began returning 403 to all scripted clients in
+  # late July 2026 (watch failures in issues #29 and #30; both EDUCAUSE
+  # URLs probed with the pipeline's browser-UA fetcher 2026-07-31).
+  # Dates above stay owner-verified; the watch skips this entry rather
+  # than failing daily.
+  watch_skip: true
   tags: [ai]
 
 # Verified 2026-06-09 from chil.ahli.cc

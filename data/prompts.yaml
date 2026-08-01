@@ -946,8 +946,11 @@
   tagline: Teaches an attached lecture one objective at a time, checking you as it goes
   category: study_strategy
   audience: students
-  status: draft
-  last_reviewed: 2026-07-31
+  # Owner flipped to reviewed 2026-08-01 after working through both
+  # texts personally during the student correspondence that produced
+  # them.
+  status: reviewed
+  last_reviewed: 2026-08-01
   notes: Works in any assistant that accepts file uploads, and in the
     tutor modes of study platforms. Attach the lecture first. AI tutors
     drift back into lecturing over long sessions; if it stops asking
@@ -977,8 +980,9 @@
   tagline: Builds a detail-preserving review sheet with self-test questions from one lecture
   category: study_strategy
   audience: students
-  status: draft
-  last_reviewed: 2026-07-31
+  # Owner flipped to reviewed 2026-08-01, same review as Lecture tutor.
+  status: reviewed
+  last_reviewed: 2026-08-01
   notes: Check the sheet against the slides once before trusting it;
     the checking is itself a review pass. Building it should take
     twenty to thirty minutes, not hours; if it becomes a project, it
