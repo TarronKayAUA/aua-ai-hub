@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Humanoid robots performing laparoscopic surgery on animals under remote human control mark a notable step in surgical robotics research <a href="https://www.nature.com/articles/d41591-026-00038-y">[7]</a>. In parallel, foundation models are advancing diagnostic capability: a pathology model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[8]</a>, while a neuroimaging model built from 5.24 million routine CT and MRI scans achieved state-of-the-art performance on standard diagnostic tasks <a href="https://www.nature.com/articles/s41591-026-04567-4">[6]</a>. Yet reliability concerns persist, as clinical language models have been shown to shift diagnoses when identical facts are phrased differently <a href="https://arxiv.org/abs/2607.27384">[4]</a>, a finding that underscores the safety and evaluation focus running through much of this section.</p>
-<p>Also this week: eight papers examine safety and evaluation of clinical AI, touching on issues from oncology trial classification relying on pretraining knowledge rather than supplied evidence to embedding degradation in clinical document retrieval systems. Three additional studies address imaging and diagnostics, two focus on clinical documentation, and single entries cover patient-facing tools and clinical decision support, including a physician recommendation system for online consultations.</p>
-<p class="section-brief-date">The picture as of July 31, 2026; numbered links go to the items below.</p>
+<p>A humanoid robot under remote human control performed a full laparoscopic gallbladder removal in pigs, a step framed as groundwork for future surgical robotics <a href="https://www.nature.com/articles/d41591-026-00038-y">[9]</a>. Foundation models are advancing in imaging and pathology, with one trained on 5.24 million CT and MRI scans matching state-of-the-art neuroimaging diagnosis <a href="https://www.nature.com/articles/s41591-026-04567-4">[8]</a> and another, built on 2.3 million pathology slides, matching clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[10]</a>. Evaluation work continues to flag reliability gaps, including clinical language models that shift diagnoses depending on phrasing <a href="https://arxiv.org/abs/2607.27384">[6]</a> and a synthesis of chatbot risks in youth suicide prevention calling for a dedicated research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[1]</a>.</p>
+<p>Also this week: safety and evaluation work makes up the bulk of the section, with nine papers spanning oncology trial classification, preventive care guidance consistency, and synthetic health record validity. Two papers address patient-facing tools, two cover imaging and diagnostics, and single studies cover clinical decision support and a click-to-inspect interface for verifying AI-generated medical record summaries.</p>
+<p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03080-9">AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda</a>
+    <p class="news-card-summary">A peer-reviewed synthesis of evidence on AI chatbot risks and benefits for youth suicide prevention, identifying research gaps and outlining a clinical agenda.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02842-9">Real-world use of large language models for mental health in 2024</a>
+    <p class="news-card-summary">A peer-reviewed study of how large language models were actually deployed and used for mental health applications during 2024.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>
@@ -112,20 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 29, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95565">Evidence Use and Identifier-Conditioned Prior Knowledge in Large Language Model Classification of Oncology Trials Assessed Through Progressive Content Removal and Counterfactual Testing: Comparative Analysis</a>
     <p class="news-card-summary">Study demonstrates that large language models may classify oncology trials accurately by relying on pretraining knowledge rather than the supplied text, raising concerns about grounding.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e99639">Effects of Model Choice, Corpus Context, and Post Hoc Correction on Layer-Level Embedding Degradation in Clinical Document Retrieval: Experimental Study</a>
-    <p class="news-card-summary">Experimental study identifies embedding model degradation in clinical retrieval-augmented generation and tests methods to detect and correct it.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42527464?fc=20260609215449&amp;ff=20260730024306&amp;v=2.20.0.post5+40e1b98">AI solutions to the radiology workforce shortage</a>
-    <p class="news-card-summary">Reviews AI solutions addressing radiology workforce shortages caused by aging populations, chronic disease demand, and supply constraints in residency positions.</p>
   </div>
 </div>
 </div>

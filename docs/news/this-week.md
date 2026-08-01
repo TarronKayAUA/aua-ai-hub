@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Large language models are being tested as scorers of clinical skills, and one study found only moderate agreement with faculty raters when grading voice-based virtual standardized patient encounters, a gap that limits use to formative rather than high-stakes assessment <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[1]</a>. That reliability question feeds into broader efforts to redesign assessment itself, including a four-pillar framework for building courses and exams that resist generative AI misuse without relying on detection software <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[2]</a>. Elsewhere, generative models are taking on curriculum tasks such as producing multiple-choice questions on diabetic retinopathy at a quality level comparable to expert writers <a href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">[6]</a>, while an AI constraint-optimization scheduler cut inequities in pediatric residency on-call assignments <a href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[4]</a>.</p>
-<p>Also this week: the section holds seven items on teaching and curriculum, ranging from AI-generated ophthalmic anatomy visuals to dermatology education tool reviews, alongside six pieces on assessment and feedback covering eczema severity scoring and OSCE redesign. Two additional items examine attitudes and adoption, including student views on AI and virtual reality use in orthopedic training.</p>
+<p>Designing assessment for the AI era took center stage this week, with a new four-pillar framework offering medical educators a structural alternative to detection-based anti-cheating measures <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[2]</a>. That shift toward rethinking evaluation appears alongside evidence that large language models can score voice-based virtual standardized patient encounters with moderate reliability, useful for formative feedback but not high-stakes grading <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[1]</a>. Elsewhere, an AI constraint-optimization scheduler improved equity in pediatric residency on-call assignments, cutting burdensome shift patterns <a href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[4]</a>. A scoping review found ChatGPT unreliable for complex infectious disease diagnosis and antimicrobial decisions, reinforcing caution about clinical reliance <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[5]</a>. A broader perspective piece frames generative AI&#x27;s implications for health professions education as a whole <a href="https://www.nature.com/articles/s41746-026-03042-1">[6]</a>.</p>
+<p>Also this week: the curriculum thread continues to dominate, with seven pieces spanning radiology, dermatology, ophthalmology, and telemedicine training, including AI-generated multiple-choice questions for diabetic retinopathy and AI-assisted anatomy visuals for ophthalmic education. Five more works address assessment and feedback, from atopic dermatitis severity scoring to synthetic chest radiograph detection, while two examine learner attitudes toward AI and VR adoption.</p>
 <p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -48,6 +48,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">Evaluation of an AI-Based Constraint-Optimization Scheduler to Optimize On-Call Schedule Equity and Reduce Administrative Burden in a Pediatric Residency: Retrospective Comparative Study</a>
         <p class="news-card-summary">Retrospective study found an AI constraint-optimization scheduler improved on-call equity and reduced high-risk shift sequences in pediatric residency training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">Can ChatGPT match physicians in the diagnosis, triage, management and prevention of infectious diseases? A scoping review</a>
+        <p class="news-card-summary">A scoping review of ChatGPT performance on infectious disease diagnosis, triage, and management tasks finds it unreliable for complex cases and antimicrobial decisions.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -283,34 +290,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Comparative analysis shows Gemini-2.0 achieved highest accuracy on China&#x27;s radiology resident examination, though self-doubt prompting did not improve LLM performance.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42498839?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">Performance of multimodal large language models versus clinicians for radiographic knee osteoarthritis grading: A multiobserver study</a>
-        <p class="news-card-summary">Multimodal large language models including ChatGPT-5.0 show high sensitivity but inferior specificity and reproducibility compared to clinicians for knee osteoarthritis grading on radiographs.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 24, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42497596?fc=20260609215449&amp;ff=20260725023013&amp;v=2.20.0">Applications of generative artificial intelligence in long-term care services: A systematic review of the evidence on efficacy for improving resident health related quality of life</a>
-        <p class="news-card-summary">Systematic review finds generative AI shows promise for quality and personalization in long-term care but lacks evidence on effectiveness, safety, and cost-effectiveness needed for responsible deployment.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Humanoid robots performing laparoscopic surgery on animals under remote human control mark a notable step in surgical robotics research <a href="https://www.nature.com/articles/d41591-026-00038-y">[7]</a>. In parallel, foundation models are advancing diagnostic capability: a pathology model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[8]</a>, while a neuroimaging model built from 5.24 million routine CT and MRI scans achieved state-of-the-art performance on standard diagnostic tasks <a href="https://www.nature.com/articles/s41591-026-04567-4">[6]</a>. Yet reliability concerns persist, as clinical language models have been shown to shift diagnoses when identical facts are phrased differently <a href="https://arxiv.org/abs/2607.27384">[4]</a>, a finding that underscores the safety and evaluation focus running through much of this section.</p>
-<p>Also this week: eight papers examine safety and evaluation of clinical AI, touching on issues from oncology trial classification relying on pretraining knowledge rather than supplied evidence to embedding degradation in clinical document retrieval systems. Three additional studies address imaging and diagnostics, two focus on clinical documentation, and single entries cover patient-facing tools and clinical decision support, including a physician recommendation system for online consultations.</p>
-<p class="section-brief-date">The picture as of July 31, 2026; numbered links go to the source items.</p>
+<p>A humanoid robot under remote human control performed a full laparoscopic gallbladder removal in pigs, a step framed as groundwork for future surgical robotics <a href="https://www.nature.com/articles/d41591-026-00038-y">[9]</a>. Foundation models are advancing in imaging and pathology, with one trained on 5.24 million CT and MRI scans matching state-of-the-art neuroimaging diagnosis <a href="https://www.nature.com/articles/s41591-026-04567-4">[8]</a> and another, built on 2.3 million pathology slides, matching clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[10]</a>. Evaluation work continues to flag reliability gaps, including clinical language models that shift diagnoses depending on phrasing <a href="https://arxiv.org/abs/2607.27384">[6]</a> and a synthesis of chatbot risks in youth suicide prevention calling for a dedicated research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[1]</a>.</p>
+<p>Also this week: safety and evaluation work makes up the bulk of the section, with nine papers spanning oncology trial classification, preventive care guidance consistency, and synthetic health record validity. Two papers address patient-facing tools, two cover imaging and diagnostics, and single studies cover clinical decision support and a click-to-inspect interface for verifying AI-generated medical record summaries.</p>
+<p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 1, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03080-9">AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda</a>
+        <p class="news-card-summary">A peer-reviewed synthesis of evidence on AI chatbot risks and benefits for youth suicide prevention, identifying research gaps and outlining a clinical agenda.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 1, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02842-9">Real-world use of large language models for mental health in 2024</a>
+        <p class="news-card-summary">A peer-reviewed study of how large language models were actually deployed and used for mental health applications during 2024.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>

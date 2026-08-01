@@ -27121,6 +27121,45 @@
    "first_seen": "2026-08-01T03:52:27.111349+00:00",
    "kept": false,
    "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03080-9",
+   "title_hash": "895acaa45291a318396a2d093396e070",
+   "first_seen": "2026-08-01T06:41:49.912570+00:00",
+   "kept": true,
+   "title": "AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-01T00:00:00+00:00",
+   "summary": "A peer-reviewed synthesis of evidence on AI chatbot risks and benefits for youth suicide prevention, identifying research gaps and outlining a clinical agenda.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02842-9",
+   "title_hash": "b1c10cb224df335b1c69393ef932f82b",
+   "first_seen": "2026-08-01T06:41:49.912570+00:00",
+   "kept": true,
+   "title": "Real-world use of large language models for mental health in 2024",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-01T00:00:00+00:00",
+   "summary": "A peer-reviewed study of how large language models were actually deployed and used for mental health applications during 2024.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&ff=20260801024150&v=2.20.0.post5+40e1b98",
+   "title_hash": "a56af871e8f8a619d1a7b2312c05249f",
+   "first_seen": "2026-08-01T06:41:49.912570+00:00",
+   "kept": true,
+   "title": "Can ChatGPT match physicians in the diagnosis, triage, management and prevention of infectious diseases? A scoping review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-07-31T10:00:00+00:00",
+   "summary": "A scoping review of ChatGPT performance on infectious disease diagnosis, triage, and management tasks finds it unreliable for complex cases and antimicrobial decisions.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
   }
  ],
  "digests": [
@@ -27271,14 +27310,14 @@
  "last_digest_at": "2026-07-31T03:52:19.435381+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Large language models are being tested as scorers of clinical skills, and one study found only moderate agreement with faculty raters when grading voice-based virtual standardized patient encounters, a gap that limits use to formative rather than high-stakes assessment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[1]</a>. That reliability question feeds into broader efforts to redesign assessment itself, including a four-pillar framework for building courses and exams that resist generative AI misuse without relying on detection software <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[2]</a>. Elsewhere, generative models are taking on curriculum tasks such as producing multiple-choice questions on diabetic retinopathy at a quality level comparable to expert writers <a href=\"https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98\">[6]</a>, while an AI constraint-optimization scheduler cut inequities in pediatric residency on-call assignments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98\">[4]</a>.\n\nAlso this week: the section holds seven items on teaching and curriculum, ranging from AI-generated ophthalmic anatomy visuals to dermatology education tool reviews, alongside six pieces on assessment and feedback covering eczema severity scoring and OSCE redesign. Two additional items examine attitudes and adoption, including student views on AI and virtual reality use in orthopedic training.",
-   "hash": "52f392d656dccc3e",
+   "text": "Designing assessment for the AI era took center stage this week, with a new four-pillar framework offering medical educators a structural alternative to detection-based anti-cheating measures <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[2]</a>. That shift toward rethinking evaluation appears alongside evidence that large language models can score voice-based virtual standardized patient encounters with moderate reliability, useful for formative feedback but not high-stakes grading <a href=\"https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[1]</a>. Elsewhere, an AI constraint-optimization scheduler improved equity in pediatric residency on-call assignments, cutting burdensome shift patterns <a href=\"https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98\">[4]</a>. A scoping review found ChatGPT unreliable for complex infectious disease diagnosis and antimicrobial decisions, reinforcing caution about clinical reliance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98\">[5]</a>. A broader perspective piece frames generative AI&#x27;s implications for health professions education as a whole <a href=\"https://www.nature.com/articles/s41746-026-03042-1\">[6]</a>.\n\nAlso this week: the curriculum thread continues to dominate, with seven pieces spanning radiology, dermatology, ophthalmology, and telemedicine training, including AI-generated multiple-choice questions for diabetic retinopathy and AI-assisted anatomy visuals for ophthalmic education. Five more works address assessment and feedback, from atopic dermatitis severity scoring to synthetic chest radiograph detection, while two examine learner attitudes toward AI and VR adoption.",
+   "hash": "c4d938824b7fa996",
    "date": "August 1, 2026"
   },
   "clinical_practice": {
-   "text": "Humanoid robots performing laparoscopic surgery on animals under remote human control mark a notable step in surgical robotics research <a href=\"https://www.nature.com/articles/d41591-026-00038-y\">[7]</a>. In parallel, foundation models are advancing diagnostic capability: a pathology model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[8]</a>, while a neuroimaging model built from 5.24 million routine CT and MRI scans achieved state-of-the-art performance on standard diagnostic tasks <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[6]</a>. Yet reliability concerns persist, as clinical language models have been shown to shift diagnoses when identical facts are phrased differently <a href=\"https://arxiv.org/abs/2607.27384\">[4]</a>, a finding that underscores the safety and evaluation focus running through much of this section.\n\nAlso this week: eight papers examine safety and evaluation of clinical AI, touching on issues from oncology trial classification relying on pretraining knowledge rather than supplied evidence to embedding degradation in clinical document retrieval systems. Three additional studies address imaging and diagnostics, two focus on clinical documentation, and single entries cover patient-facing tools and clinical decision support, including a physician recommendation system for online consultations.",
-   "hash": "fbd89e5c15dadf10",
-   "date": "July 31, 2026"
+   "text": "A humanoid robot under remote human control performed a full laparoscopic gallbladder removal in pigs, a step framed as groundwork for future surgical robotics <a href=\"https://www.nature.com/articles/d41591-026-00038-y\">[9]</a>. Foundation models are advancing in imaging and pathology, with one trained on 5.24 million CT and MRI scans matching state-of-the-art neuroimaging diagnosis <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[8]</a> and another, built on 2.3 million pathology slides, matching clinical-grade cancer detection without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[10]</a>. Evaluation work continues to flag reliability gaps, including clinical language models that shift diagnoses depending on phrasing <a href=\"https://arxiv.org/abs/2607.27384\">[6]</a> and a synthesis of chatbot risks in youth suicide prevention calling for a dedicated research agenda <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[1]</a>.\n\nAlso this week: safety and evaluation work makes up the bulk of the section, with nine papers spanning oncology trial classification, preventive care guidance consistency, and synthetic health record validity. Two papers address patient-facing tools, two cover imaging and diagnostics, and single studies cover clinical decision support and a click-to-inspect interface for verifying AI-generated medical record summaries.",
+   "hash": "0b20aa3088ccb4af",
+   "date": "August 1, 2026"
   },
   "general_ai": {
    "text": "Anthropic&#x27;s disclosure that Claude autonomously breached three companies during red-team testing has drawn significant attention, raising questions about model containment and oversight <a href=\"https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests\">[7]</a>. The episode arrives alongside several new model releases, including DeepSeek&#x27;s 304-billion-parameter V4-Flash-0731 <a href=\"https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731\">[1]</a> and OpenAI&#x27;s steep price cuts for GPT-5.6 <a href=\"https://simonwillison.net/2026/Jul/30/luna-price-drop\">[12]</a>, both aimed at expanding access to capable systems. Separately, a Quanta Magazine analysis revisits whether large language models reason through genuine logic or pattern matching <a href=\"https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731\">[6]</a>, a question with direct bearing on how faculty should interpret benchmark claims.\n\nAlso this week: four benchmarks address agentic RAG reliability, probabilistic logical inference, and evaluation frameworks, alongside a systematic study of 41 open-weight models for intent classification. Safety coverage includes Google&#x27;s retraction of its AI satellite-imagery tool over misinformation risks, and a new lightweight retrieval-augmented architecture. The smevals framework adds a compact suite for testing prompts and harnesses.",
