@@ -27462,6 +27462,20 @@
    "category": "podcasts",
    "score": 2.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vdcgpm/setting_up_of_a_16xgb10_dgx_spark_cluster",
+   "title_hash": "762cbe9d8136eb7ed68f188d13ed1c33",
+   "first_seen": "2026-08-02T17:17:14.958369+00:00",
+   "kept": false,
+   "reason": "community meta-discussion about personal infrastructure setup, not a development or capability change significant to this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=8B05cy3UuSE",
+   "title_hash": "9ff24cd0f674fb36d5b0c2e751274f84",
+   "first_seen": "2026-08-02T17:17:14.958369+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
