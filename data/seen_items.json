@@ -27393,6 +27393,20 @@
    "first_seen": "2026-08-02T06:46:36.808534+00:00",
    "kept": false,
    "reason": "marketing without educational payload"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vcav6l/me_worn_out_from_all_the_new_model_drops_this",
+   "title_hash": "dec837ed0e2545e4c4462e670cd2dfa9",
+   "first_seen": "2026-08-02T10:09:30.337049+00:00",
+   "kept": false,
+   "reason": "forum post with no substantive analysis; lists model names without context or evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=TjUxBdiut1k",
+   "title_hash": "065119f8a31ab6827dc6abf691b46c3a",
+   "first_seen": "2026-08-02T10:09:30.337049+00:00",
+   "kept": false,
+   "reason": "speculation and drama coverage without substantive content"
   }
  ],
  "digests": [
