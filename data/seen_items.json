@@ -27265,6 +27265,40 @@
    "first_seen": "2026-08-01T21:10:42.669597+00:00",
    "kept": false,
    "reason": "forum thread on model performance without substantive analysis"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/1/greg-brockman",
+   "title_hash": "42d867215678951c324e237fcb3fd21f",
+   "first_seen": "2026-08-02T03:54:59.120622+00:00",
+   "kept": false,
+   "reason": "anecdotal observation without substantive analysis or new information"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/1/datasette-apps",
+   "title_hash": "a04a69182ce9ed00e46bb7f9f6db2fd2",
+   "first_seen": "2026-08-02T03:54:59.120622+00:00",
+   "kept": false,
+   "reason": "minor release notes for niche software"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v81qw0/kimi_k3_weights_drop_today_were_deploying_on",
+   "title_hash": "3627d42664efc504c96cb81c9aca333d",
+   "first_seen": "2026-08-02T03:54:59.120622+00:00",
+   "kept": true,
+   "title": "Kimi K3 weights drop today. We're deploying on A100s, H200s and B300s this week and the A100 math is already rough",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-07-27T14:18:45+00:00",
+   "summary": "Kimi K3, a mixture-of-experts model with 2.8 trillion parameters, weights released; deployment on various accelerator types underway.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=OrcBSpADCGk",
+   "title_hash": "dfcea3b039e1c7994afa4024fb008b48",
+   "first_seen": "2026-08-02T03:54:59.120622+00:00",
+   "kept": false,
+   "reason": "speculation and rumor video with no substantive educational content; title-driven hype without documented real events"
   }
  ],
  "digests": [
