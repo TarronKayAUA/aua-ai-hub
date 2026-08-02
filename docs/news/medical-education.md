@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Designing assessment for the AI era took center stage this week, with a new four-pillar framework offering medical educators a structural alternative to detection-based anti-cheating measures <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[2]</a>. That shift toward rethinking evaluation appears alongside evidence that large language models can score voice-based virtual standardized patient encounters with moderate reliability, useful for formative feedback but not high-stakes grading <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[1]</a>. Elsewhere, an AI constraint-optimization scheduler improved equity in pediatric residency on-call assignments, cutting burdensome shift patterns <a href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[4]</a>. A scoping review found ChatGPT unreliable for complex infectious disease diagnosis and antimicrobial decisions, reinforcing caution about clinical reliance <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[5]</a>. A broader perspective piece frames generative AI&#x27;s implications for health professions education as a whole <a href="https://www.nature.com/articles/s41746-026-03042-1">[6]</a>.</p>
-<p>Also this week: the curriculum thread continues to dominate, with seven pieces spanning radiology, dermatology, ophthalmology, and telemedicine training, including AI-generated multiple-choice questions for diabetic retinopathy and AI-assisted anatomy visuals for ophthalmic education. Five more works address assessment and feedback, from atopic dermatitis severity scoring to synthetic chest radiograph detection, while two examine learner attitudes toward AI and VR adoption.</p>
-<p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the items below.</p>
+<p>A pre-matriculation curriculum using AI to teach evidence-based study strategies showed feasibility and positive perceived impact among incoming medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[1]</a>. Assessment work drew particular attention: large language models scoring voice-based virtual standardized patient encounters showed only moderate agreement with faculty raters, limiting their use to formative feedback rather than high-stakes evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[3]</a>, while a four-pillar framework proposed structural redesigns to make assessments resistant to generative AI misuse <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[4]</a>. A scoping review found ChatGPT still unreliable for complex infectious disease diagnosis and antimicrobial management <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[7]</a>, and a constraint-optimization scheduler improved on-call equity in a pediatric residency <a href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[6]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum topics, including AI-assisted tutoring in telemedicine for pediatric trainees, while five focus on assessment and feedback. Two pieces explore attitudes toward AI and VR adoption in orthopedic education, and the section&#x27;s lone benchmark study examines the detectability of AI-generated chest radiographs used in medical education.</p>
+<p class="section-brief-date">The picture as of August 2, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">Feasibility and Perceived Impact of an AI-Assisted Pre-Matriculation Study Strategies Curriculum for Incoming Medical Students</a>
+    <p class="news-card-summary">A study evaluated an AI-assisted curriculum teaching incoming medical students evidence-based study strategies like retrieval practice and spaced repetition before matriculation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42539916?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">A primer on artificial intelligence for palliative care educators</a>
+    <p class="news-card-summary">A narrative primer on artificial intelligence for palliative care educators addresses the field&#x27;s relational, prognostic, and cultural sensitivities overlooked in general health professions education primers.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530406?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Educational Artificial Intelligence Software to Support Assessment of Atopic Dermatitis Severity</a>
     <p class="news-card-summary">Convolutional neural network software assessed atopic dermatitis severity with reduced inter-rater variability compared to manual Eczema Area and Severity Index scoring.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42531148?fc=20260609215449&amp;ff=20260730235219&amp;v=2.20.0.post5+40e1b98">Advancing Radiology Education with Artificial Intelligence: Curriculum Planning, Implementation, and Evaluation</a>
-    <p class="news-card-summary">Peer-reviewed review of how artificial intelligence can enhance radiology education through curriculum planning, implementation, and evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42531043?fc=20260609215449&amp;ff=20260730235219&amp;v=2.20.0.post5+40e1b98">Artificial intelligence tools in dermatology education: A scoping review on their application, efficacy, and limitations</a>
-    <p class="news-card-summary">Scoping review of artificial intelligence tools in dermatology education, identifying gaps in methodological rigor and need for standardized evaluation frameworks.</p>
   </div>
 </div>
 </div>

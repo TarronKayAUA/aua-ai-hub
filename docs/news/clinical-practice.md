@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A humanoid robot under remote human control performed a full laparoscopic gallbladder removal in pigs, a step framed as groundwork for future surgical robotics <a href="https://www.nature.com/articles/d41591-026-00038-y">[9]</a>. Foundation models are advancing in imaging and pathology, with one trained on 5.24 million CT and MRI scans matching state-of-the-art neuroimaging diagnosis <a href="https://www.nature.com/articles/s41591-026-04567-4">[8]</a> and another, built on 2.3 million pathology slides, matching clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[10]</a>. Evaluation work continues to flag reliability gaps, including clinical language models that shift diagnoses depending on phrasing <a href="https://arxiv.org/abs/2607.27384">[6]</a> and a synthesis of chatbot risks in youth suicide prevention calling for a dedicated research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[1]</a>.</p>
-<p>Also this week: safety and evaluation work makes up the bulk of the section, with nine papers spanning oncology trial classification, preventive care guidance consistency, and synthetic health record validity. Two papers address patient-facing tools, two cover imaging and diagnostics, and single studies cover clinical decision support and a click-to-inspect interface for verifying AI-generated medical record summaries.</p>
-<p class="section-brief-date">The picture as of August 1, 2026; numbered links go to the items below.</p>
+<p>A three-dimensional foundation model trained on 5.24 million routine CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance <a href="https://www.nature.com/articles/s41591-026-04567-4">[9]</a>, while a companion multimodal pathology model, PRISM2, matched clinical-grade cancer detection using 2.3 million whole-slide images without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[11]</a>. Surgical robotics also advanced, as a humanoid robot controlled by a remote surgeon completed laparoscopic gallbladder removal in pigs <a href="https://www.nature.com/articles/d41591-026-00038-y">[10]</a>. These gains arrive alongside sober findings on model reliability: one study found clinical language models produce different diagnoses for identical facts phrased in different registers <a href="https://arxiv.org/abs/2607.27384">[7]</a>, and another found only mixed alignment between multiple large language models and official US preventive care recommendations <a href="https://ai.jmir.org/2026/1/e87034">[14]</a>.</p>
+<p>Also this week: eight safety and evaluation entries cover chatbot risks in youth suicide prevention, synthetic record validity, and AI device cybersecurity rules in Korea, the US, and the EU. Two entries address clinical decision support, including a physician recommendation system, while imaging, patient-facing tools, and documentation add coverage, the latter via a click-to-inspect summarization interface.</p>
+<p class="section-brief-date">The picture as of August 2, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (1)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">Retrieval-augmented clinical decision support for structured hip-joint disease assessment</a>
+    <p class="news-card-summary">A retrieval-augmented system for hip-joint disease assessment showed feasible retrospective performance but lower accuracy in complex cases, warranting caution and prospective workflow evaluation.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 1, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42532980?fc=20260609215449&amp;ff=20260731031517&amp;v=2.20.0.post5+40e1b98">Sentence-Level Provenance for AI Medical Record Summarization: Formative Usability Evaluation of a Click-to-Inspect Interface</a>
     <p class="news-card-summary">Usability study evaluates sentence-level provenance in AI medical record summarization, allowing clinicians to inspect individual claims and reducing verification burden in clinical workflows.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 29, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95565">Evidence Use and Identifier-Conditioned Prior Knowledge in Large Language Model Classification of Oncology Trials Assessed Through Progressive Content Removal and Counterfactual Testing: Comparative Analysis</a>
-    <p class="news-card-summary">Study demonstrates that large language models may classify oncology trials accurately by relying on pretraining knowledge rather than the supplied text, raising concerns about grounding.</p>
   </div>
 </div>
 </div>
