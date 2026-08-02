@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Everything You Need to Know About AI Tokens" loading="lazy">
+  <span class="video-card-title">Everything You Need to Know About AI Tokens</span>
+  <span class="video-card-meta">The AI Daily Brief, August 2, 2026</span>
+  <span class="video-card-desc">Nufar Gaspar explains how AI tokens work, why agentic workflows inflate costs, and how to measure cost-effectiveness of model deployments.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/why-ai-in-education-starts-with-better-conversations-dr-jo-orlando" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Why AI in Education Starts With Better Conversations: Dr Jo Orlando" loading="lazy">
   <span class="video-card-title">Why AI in Education Starts With Better Conversations: Dr Jo Orlando</span>

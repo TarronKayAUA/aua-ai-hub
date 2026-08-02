@@ -27407,6 +27407,61 @@
    "first_seen": "2026-08-02T10:09:30.337049+00:00",
    "kept": false,
    "reason": "speculation and drama coverage without substantive content"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
+   "title_hash": "e5453ed24b937a79547942a7ed3dc1c6",
+   "first_seen": "2026-08-02T13:58:08.107635+00:00",
+   "kept": false,
+   "reason": "industry gossip about artist compensation and AI training; not relevant to medical educators or medical AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42542720?fc=20260609215449&ff=20260802095808&v=2.20.0.post5+40e1b98",
+   "title_hash": "dc7391a85b0b83e10e9d6e129ffb4445",
+   "first_seen": "2026-08-02T13:58:08.107635+00:00",
+   "kept": false,
+   "reason": "narrow domain application without evidence of broad significance for AI in medical education"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1va0rce/first_kimi_k3_results_on_home_lab_4ts",
+   "title_hash": "f063e559acece0c2f158b453530b12ba",
+   "first_seen": "2026-08-02T13:58:08.107635+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread from community forum, not a model release or significant capability development"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1nf7VqduM3Y",
+   "title_hash": "6d4a437fe8d6280bb04f42d93a8f8295",
+   "first_seen": "2026-08-02T13:58:08.107635+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased model; no confirmed OpenAI product named GPT-5.6 Luna exists"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=bNRhppHct54",
+   "title_hash": "aafceee1013b38bf15b83767c951811a",
+   "first_seen": "2026-08-02T13:58:08.107635+00:00",
+   "kept": true,
+   "title": "Understanding AI Agent Hallucination in AI Systems",
+   "source": "IBM Technology",
+   "published": "2026-08-02T11:00:16+00:00",
+   "summary": "IBM explainer on how large language models generate confident but false answers and why hallucination occurs in AI systems.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i3.ytimg.com/vi/bNRhppHct54/hqdefault.jpg",
+   "display_title": "Understanding AI agent hallucination in AI systems"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1",
+   "title_hash": "2a1aa345b40f53d9370839d23d82bd8b",
+   "first_seen": "2026-08-02T13:58:08.107635+00:00",
+   "kept": true,
+   "title": "Everything You Need to Know About AI Tokens",
+   "source": "The AI Daily Brief",
+   "published": "2026-08-02T12:17:43+00:00",
+   "summary": "Nufar Gaspar explains how AI tokens work, why agentic workflows inflate costs, and how to measure cost-effectiveness of model deployments.",
+   "category": "podcasts",
+   "score": 2.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [

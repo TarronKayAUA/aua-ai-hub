@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=bNRhppHct54" target="_blank" rel="noopener" title="Understanding AI Agent Hallucination in AI Systems">
+  <img src="https://i3.ytimg.com/vi/bNRhppHct54/hqdefault.jpg" alt="Video: Understanding AI agent hallucination in AI systems" loading="lazy">
+  <span class="video-card-title">Understanding AI agent hallucination in AI systems</span>
+  <span class="video-card-meta">IBM Technology, August 2, 2026</span>
+  <span class="video-card-desc">IBM explainer on how large language models generate confident but false answers and why hallucination occurs in AI systems.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=wT42SgaOPK4" target="_blank" rel="noopener" title="DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, &amp; Fast! (Fully Tested)">
   <img src="https://i4.ytimg.com/vi/wT42SgaOPK4/hqdefault.jpg" alt="Video: DeepSeek V4 Flash benchmarking and performance testing" loading="lazy">
   <span class="video-card-title">DeepSeek V4 Flash benchmarking and performance testing</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing Kimi K3 multimodal model performance</span>
   <span class="video-card-meta">Bijan Bowen, July 16, 2026</span>
   <span class="video-card-desc">Hands-on testing of Kimi K3, a multimodal AI model, with technical review and performance evaluation across browser and application tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=dB6pOolO7io" target="_blank" rel="noopener" title="ChatGPT can now complete tasks on your computer">
-  <img src="https://i1.ytimg.com/vi/dB6pOolO7io/hqdefault.jpg" alt="Video: GPT-5.6 computer control and task automation" loading="lazy">
-  <span class="video-card-title">GPT-5.6 computer control and task automation</span>
-  <span class="video-card-meta">OpenAI, July 16, 2026</span>
-  <span class="video-card-desc">Demonstration of GPT-5.6 computer use capability, showing how the model can control applications and browsers to complete tasks.</span>
 </a>
 </div>
 
