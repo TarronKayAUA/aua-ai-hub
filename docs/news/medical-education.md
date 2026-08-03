@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A four-pillar framework for designing assessments resistant to generative AI misuse addresses a problem many educators now face directly, proposing structural changes rather than relying on detection tools <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[5]</a>. That concern is echoed in a cross-sectional study finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient interactions, judged adequate for formative feedback but not high-stakes grading <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[4]</a>. Curriculum design is also adapting: a pre-matriculation program used AI to teach incoming medical students evidence-based study strategies such as spaced repetition <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[2]</a>, while a scoping review cautioned that ChatGPT remains unreliable for complex infectious disease diagnosis and antimicrobial decisions <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[8]</a>.</p>
-<p>Also this week: the section&#x27;s 15 items skew heavily toward teaching and curriculum, with seven entries, alongside five on assessment and feedback and two on attitudes and adoption. Coverage extends to AI as a telemedicine clinical tutor for pediatric trainees and an AI-generated visual resource for teaching ophthalmic anatomy.</p>
+<p>An AI-supervised remote exam failed so badly that 58,000 students must retake it, after anomalous score distributions were traced to system errors <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[1]</a>. The episode lands amid a broader push to rethink assessment for the AI era: a four-pillar framework for AI-resilient exam design replaces detection-based policing with structural changes to how courses are evaluated <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[6]</a>. Other work probes where AI can and cannot be trusted to judge learners, finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient encounters <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[5]</a>. A separate scoping review found ChatGPT still unreliable for diagnosis and treatment decisions in infectious disease, underscoring limits on using such tools as stand-ins for expert judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[9]</a>.</p>
+<p>Also this week: curriculum efforts make up six items, including a pre-matriculation study-skills program and a primer on AI for palliative care educators. Five entries cover assessment and feedback, such as automated item-difficulty prediction and residency scheduling equity. Two items address exam benchmarks, and two examine attitudes toward AI adoption, including support for AI and VR tools within bounded roles.</p>
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 3, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">An AI-supervised remote exam went so badly that 58,000 students must retake it</a>
+    <p class="news-card-summary">An AI-supervised remote exam for 58,000 students was invalidated due to system failures that produced anomalous score distributions, requiring retesting.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-82955454-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Detectability and healthcare implications of generative AI-synthesized chest radiographs: a blinded radiologist reader study</a>
     <p class="news-card-summary">Generative AI-synthesized chest radiographs created by multimodal models are examined for visual authenticity and detectability to assess their utility in medical education and dataset augmentation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530427?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Bridging the Gap: Translated Medical Education to Support Cystic Fibrosis Centers From Non-English Speaking Countries</a>
-    <p class="news-card-summary">AI-generated translation of cystic fibrosis medical education materials proved quick and affordable but required native-speaking expert review to ensure accuracy.</p>
   </div>
 </div>
 </div>

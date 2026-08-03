@@ -13,15 +13,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A four-pillar framework for designing assessments resistant to generative AI misuse addresses a problem many educators now face directly, proposing structural changes rather than relying on detection tools <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[5]</a>. That concern is echoed in a cross-sectional study finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient interactions, judged adequate for formative feedback but not high-stakes grading <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[4]</a>. Curriculum design is also adapting: a pre-matriculation program used AI to teach incoming medical students evidence-based study strategies such as spaced repetition <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[2]</a>, while a scoping review cautioned that ChatGPT remains unreliable for complex infectious disease diagnosis and antimicrobial decisions <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[8]</a>.</p>
-<p>Also this week: the section&#x27;s 15 items skew heavily toward teaching and curriculum, with seven entries, alongside five on assessment and feedback and two on attitudes and adoption. Coverage extends to AI as a telemedicine clinical tutor for pediatric trainees and an AI-generated visual resource for teaching ophthalmic anatomy.</p>
+<p>An AI-supervised remote exam failed so badly that 58,000 students must retake it, after anomalous score distributions were traced to system errors <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[1]</a>. The episode lands amid a broader push to rethink assessment for the AI era: a four-pillar framework for AI-resilient exam design replaces detection-based policing with structural changes to how courses are evaluated <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[6]</a>. Other work probes where AI can and cannot be trusted to judge learners, finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient encounters <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[5]</a>. A separate scoping review found ChatGPT still unreliable for diagnosis and treatment decisions in infectious disease, underscoring limits on using such tools as stand-ins for expert judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[9]</a>.</p>
+<p>Also this week: curriculum efforts make up six items, including a pre-matriculation study-skills program and a primer on AI for palliative care educators. Five entries cover assessment and feedback, such as automated item-difficulty prediction and residency scheduling equity. Two items address exam benchmarks, and two examine attitudes toward AI adoption, including support for AI and VR tools within bounded roles.</p>
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">An AI-supervised remote exam went so badly that 58,000 students must retake it</a>
+        <p class="news-card-summary">An AI-supervised remote exam for 58,000 students was invalidated due to system failures that produced anomalous score distributions, requiring retesting.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-82955454-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
@@ -603,9 +611,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 53 items"
+??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -842,6 +850,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Microsoft is developing a Copilot super app combining chat, coding, and agentic capabilities for consumer and commercial use, launching this year.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK259_MICROSOFT_COPILOT_3__D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 29, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1va6ot2/kimi_k3_for_local_use_156tb_594gb_compressed_and">Kimi K3 for local use (1.56TB → 594GB) compressed and released by Unsloth</a>
+        <p class="news-card-summary">Unsloth released quantized versions of Kimi K3 ranging from 8-bit to 1-bit, with the smallest 594 GB model retaining 78.9% accuracy.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/-Pi0PiNmpJmI17QD0uo-SnFZHONDxkrCISpiFrdpHa8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=48f4e0f32c02df68aeb40a87995bb8f7d6d7cc0f" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
