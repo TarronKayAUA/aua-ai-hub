@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A peer-reviewed synthesis on AI chatbots and youth suicide risk finds critical evidence gaps and calls for a dedicated clinical research agenda before wider deployment <a href="https://www.nature.com/articles/s41746-026-03080-9">[7]</a>. Separate research on narrative anchoring shows clinical language models can reach different diagnoses for identical facts depending on phrasing, a reliability concern for diagnostic support tools <a href="https://arxiv.org/abs/2607.27384">[12]</a>. In imaging, a foundation model trained on more than five million routine CT and MRI scans reached state-of-the-art neuroimaging diagnostic performance, underscoring the value of routine health system data <a href="https://www.nature.com/articles/s41591-026-04567-4">[14]</a>. In surgery, a humanoid robot under remote human control completed laparoscopic gallbladder removal in pigs, an early step toward new surgical robotics <a href="https://www.nature.com/articles/d41591-026-00038-y">[15]</a>.</p>
-<p>Also this week: safety and evaluation work spans seven items, from fairness auditing in vision-language models to benchmarking large language models against one million clinical trials. Patient-facing tools account for four entries, including comparisons of AI and human coaching for diabetes prevention, while imaging and diagnostics and clinical decision support each contribute two studies.</p>
+<p>A neuroimaging foundation model trained on 5.24 million routine CT and MRI scans achieved state-of-the-art diagnostic performance, underscoring how large-scale routine health system data can improve imaging AI <a href="https://www.nature.com/articles/s41591-026-04567-4">[15]</a>. Diagnostic reliability concerns also surfaced elsewhere: a study of clinical language models found that identical clinical facts, phrased in different linguistic registers, could yield different diagnoses, a phenomenon researchers termed narrative anchoring <a href="https://arxiv.org/abs/2607.27384">[13]</a>. Separately, a synthesis of evidence on AI chatbots and youth suicide risk highlighted critical gaps in current safety research and called for a formal clinical research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[8]</a>. Fairness concerns in medical image classification models across demographic groups were also examined <a href="https://www.nature.com/articles/s41746-026-03030-5">[3]</a>.</p>
+<p>Also this week: coverage spans six safety and evaluation studies, four patient-facing tool evaluations, three imaging and diagnostics papers, and two clinical decision support studies, including work on AI-assisted physician recommendation and machine learning models predicting postoperative vomiting.</p>
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 3, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42545563?fc=20260609215449&amp;ff=20260803140809&amp;v=2.20.0.post5+40e1b98">Diagnostic performance with sensitivity/specificity optimized computer-aided detection to detect common abnormalities in chest radiography</a>
+    <p class="news-card-summary">Study comparing sensitivity-optimized and specificity-optimized computer-aided detection for chest radiography found that specificity-prioritized systems improved specificity without significantly reducing sensitivity.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
@@ -119,13 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A three-dimensional visual foundation model trained on 5.24 million routine clinical CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance.</p>
   </div>
   <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04567-4/MediaObjects/41591_2026_4567_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00038-y">Humanoid robots perform successful surgery in animals</a>
-    <p class="news-card-summary">A humanoid robot controlled by a remote human surgeon performed laparoscopic gallbladder removal in pigs, generating findings for future surgical robotics development.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00038-y/d41591-026-00038-y_53047252.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
