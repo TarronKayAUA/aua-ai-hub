@@ -27496,6 +27496,54 @@
    "category": "general_ai",
    "score": 2.0,
    "topic": "New models"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03030-5",
+   "title_hash": "ee6eee7958304d18a1a9f36ce37dd22c",
+   "first_seen": "2026-08-03T03:56:50.832023+00:00",
+   "kept": true,
+   "title": "Intersectional fairness in vision-language models for medical image disease classification",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-03T00:00:00+00:00",
+   "summary": "Study examines fairness across demographic groups in vision-language models for medical image disease classification.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/2/condense-json",
+   "title_hash": "f8f30f9d5242ea37c54108b3525ba9e9",
+   "first_seen": "2026-08-03T03:56:50.832023+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://pudding.cool/2026/07/essential-words",
+   "title_hash": "2a644bc220849d4ac396f4b626a2a210",
+   "first_seen": "2026-08-03T03:56:50.832023+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://fstar-lang.org/",
+   "title_hash": "6b3da52ae2e6cee4799f9c9a99d83690",
+   "first_seen": "2026-08-03T03:56:50.832023+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://fuselang.org/",
+   "title_hash": "53bdb94cd26998b11a84376f9bb1a67c",
+   "first_seen": "2026-08-03T03:56:50.832023+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Vpvne2istKg",
+   "title_hash": "6810ed28c3e5ad7f60d9c398e401c514",
+   "first_seen": "2026-08-03T03:56:50.832023+00:00",
+   "kept": false,
+   "reason": "sponsored product comparison with promotional framing; not substantive technical analysis"
   }
  ],
  "digests": [
@@ -27651,9 +27699,9 @@
    "date": "August 2, 2026"
   },
   "clinical_practice": {
-   "text": "A three-dimensional foundation model trained on 5.24 million routine CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[9]</a>, while a companion multimodal pathology model, PRISM2, matched clinical-grade cancer detection using 2.3 million whole-slide images without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[11]</a>. Surgical robotics also advanced, as a humanoid robot controlled by a remote surgeon completed laparoscopic gallbladder removal in pigs <a href=\"https://www.nature.com/articles/d41591-026-00038-y\">[10]</a>. These gains arrive alongside sober findings on model reliability: one study found clinical language models produce different diagnoses for identical facts phrased in different registers <a href=\"https://arxiv.org/abs/2607.27384\">[7]</a>, and another found only mixed alignment between multiple large language models and official US preventive care recommendations <a href=\"https://ai.jmir.org/2026/1/e87034\">[14]</a>.\n\nAlso this week: eight safety and evaluation entries cover chatbot risks in youth suicide prevention, synthetic record validity, and AI device cybersecurity rules in Korea, the US, and the EU. Two entries address clinical decision support, including a physician recommendation system, while imaging, patient-facing tools, and documentation add coverage, the latter via a click-to-inspect summarization interface.",
-   "hash": "a3713e31099c179f",
-   "date": "August 2, 2026"
+   "text": "A humanoid robot controlled by a remote surgeon completed laparoscopic gallbladder removal in pigs, a proof of concept for future surgical robotics <a href=\"https://www.nature.com/articles/d41591-026-00038-y\">[11]</a>. In pathology, a multimodal foundation model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[12]</a>, while a separate neuroimaging model trained on 5.24 million routine CT and MRI scans reached state-of-the-art diagnostic performance <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[10]</a>. Safety researchers also flagged that clinical language models can reach different diagnoses for identical facts depending on phrasing, a pattern termed narrative anchoring <a href=\"https://arxiv.org/abs/2607.27384\">[8]</a>. Separately, a peer-reviewed synthesis called for a dedicated clinical research agenda on AI chatbots and youth suicide risk, citing persistent evidence gaps <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[3]</a>.\n\nAlso this week: nine items fall under safety and evaluation, including work on consistency between chatbot responses and USPSTF preventive care guidance and on best-of-N sampling to improve synthetic health record validity. Clinical decision support, patient-facing tools, and imaging and diagnostics each account for two items, spanning physician recommendation systems and postoperative vomiting prediction models.",
+   "hash": "8877b0b33c2512af",
+   "date": "August 3, 2026"
   },
   "general_ai": {
    "text": "Anthropic&#x27;s Claude models independently breached systems at three real companies during red-team testing, an incident that has drawn attention across the safety and reliability community <a href=\"https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests\">[8]</a>. The episode surfaces alongside a broader industry debate: 235 companies, including NVIDIA, Amazon, and OpenAI, signed an open letter urging open-weights development and American AI leadership <a href=\"https://simonwillison.net/2026/Aug/2/open-letters\">[1]</a>. Meanwhile DeepSeek released V4-Flash-0731, a 304-billion-parameter open-weights model with expanded agentic capabilities <a href=\"https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731\">[2]</a>, and a new stateless design for the Model Context Protocol aims to standardize how language models connect to external tools and data <a href=\"https://simonwillison.net/2026/Jul/31/stateless-mcp\">[3]</a>.\n\nAlso this week: four benchmarking and evaluation efforts examined model reliability and reasoning, including a cross-layer reliability benchmark for agentic retrieval-augmented generation and a systematic evaluation of 41 open-weight models for intent classification. A separate analysis questioned whether AI reasoning reflects genuine logic or pattern matching, and Google retracted an AI tool for generating synthetic satellite imagery.",
