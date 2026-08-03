@@ -27544,6 +27544,220 @@
    "first_seen": "2026-08-03T03:56:50.832023+00:00",
    "kept": false,
    "reason": "sponsored product comparison with promotional framing; not substantive technical analysis"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28634",
+   "title_hash": "ef9dac4882acd833084dac92af9b9a41",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": true,
+   "title": "Can LLMs Really Understand Item Difficulty Levels? Implications for Automated Item Generation Using LLMs",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-03T04:00:00+00:00",
+   "summary": "Study investigates whether large language models can accurately predict item difficulty levels for educational assessments using various prompting strategies.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28635",
+   "title_hash": "8a60346599b8a067d7fe5470d9dd2bb4",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow NLP technique unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28636",
+   "title_hash": "98e116f6efa59fefc3525f77ce553096",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "preprint on LLM bias auditing without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28637",
+   "title_hash": "41a6f612c20fc65bd7649a7be2861c8a",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow domain competition entry unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28638",
+   "title_hash": "ae43be06af8f726c4de398edc572e6f4",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow technical preprint on LLM agent learning without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28639",
+   "title_hash": "65b55910ae1df34428244817d8c9c2f4",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow preprint on knowledge distillation bias without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28640",
+   "title_hash": "db943cfb7ab7326d87cb0a89a2e3eeaf",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow technical research with no clear application to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28641",
+   "title_hash": "2d7f79610f40e00e12f0e2ef320dc2af",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "preprint on LLM evaluation methodology without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28658",
+   "title_hash": "e0f1423626540449c8b90eff0515d6cb",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow technical research on federated pre-training methodology with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28661",
+   "title_hash": "5194c38765f8720713e8fed546f4390f",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "domain-specific financial reasoning evaluation unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28666",
+   "title_hash": "05e1a9e6cffe67970b28c38886432390",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "financial services deployment study unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28680",
+   "title_hash": "9b1cc10bdb426ab6bc4b0cb51afb50d7",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow NLP task unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28707",
+   "title_hash": "7037e65a1a0af3e218f59f6de65bc5ad",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow preprint on reasoning compression without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28766",
+   "title_hash": "5f73816217f1d0b0e3b07a934ad3ebec",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "linguistics research on Dungan morphology unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28777",
+   "title_hash": "89dde307634de31f319cee77747e6582",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow preprint on LLM agent skill optimization without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28801",
+   "title_hash": "96562179c7117558151120f47adcfb74",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "preprint on general benchmark methodology without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28814",
+   "title_hash": "8fc6b79e6e0a7a0bdb7f5e584f861d0a",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": true,
+   "title": "Rolling With Resistance: Preference-Optimized LLM Counselors Can Trade Goal Persistence for Relational Attunement in Motivational Interviewing",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-03T04:00:00+00:00",
+   "summary": "Research evaluates preference-optimized language models as counselors in motivational interviewing, examining tradeoffs between goal persistence and relational attunement.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28840",
+   "title_hash": "6358f7ac18254386d4fcff8287ac5e52",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "financial domain application unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28862",
+   "title_hash": "6286b7967f920ad27e4f9cb77aed1456",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "preprint on data privacy defense mechanism without direct medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28906",
+   "title_hash": "a673b462a1716e0a3affd449bb1810e7",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "preprint on sycophancy diagnosis without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28934",
+   "title_hash": "b4e358cc5eb6e062b26a4f96c9e83518",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "preprint on bias in resource allocation without medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28966",
+   "title_hash": "5a3d14c56138d6333f1049f7b25a47be",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow preprint on LLM inference optimization without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28979",
+   "title_hash": "7b7e8459d7c48d46e203989d5a180439",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow technical preprint on key-value cache translation without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.28982",
+   "title_hash": "12621cb47d591b053b94c8819132eb56",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "narrow preprint on model training methodology without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2607.29044",
+   "title_hash": "d939d60e6049941e9cb1cf95267bf5d6",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "classical Chinese linguistics research unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ve0psn/qwen3827b_announced_alongside_qwen38max",
+   "title_hash": "99e64a89a030a55bba3186107a72412c",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "minor model announcement from Reddit forum without substantive analysis"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03062-x",
+   "title_hash": "9606edab1f0713be3e75e4bde2382823",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": true,
+   "title": "Multimodal deep learning for preoperative invasiveness stratification of lung adenocarcinoma spectrum nodules",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-03T00:00:00+00:00",
+   "summary": "Peer-reviewed study on multimodal deep learning for preoperative assessment of lung adenocarcinoma nodule invasiveness.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=KbYio-N8_LU",
+   "title_hash": "c7df43e02140f84f32a0a84975ed45ed",
+   "first_seen": "2026-08-03T07:48:52.373419+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models with no underlying real event"
   }
  ],
  "digests": [
@@ -27694,13 +27908,13 @@
  "last_digest_at": "2026-07-31T03:52:19.435381+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A pre-matriculation curriculum using AI to teach evidence-based study strategies showed feasibility and positive perceived impact among incoming medical students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[1]</a>. Assessment work drew particular attention: large language models scoring voice-based virtual standardized patient encounters showed only moderate agreement with faculty raters, limiting their use to formative feedback rather than high-stakes evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[3]</a>, while a four-pillar framework proposed structural redesigns to make assessments resistant to generative AI misuse <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[4]</a>. A scoping review found ChatGPT still unreliable for complex infectious disease diagnosis and antimicrobial management <a href=\"https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98\">[7]</a>, and a constraint-optimization scheduler improved on-call equity in a pediatric residency <a href=\"https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98\">[6]</a>.\n\nAlso this week: seven items address teaching and curriculum topics, including AI-assisted tutoring in telemedicine for pediatric trainees, while five focus on assessment and feedback. Two pieces explore attitudes toward AI and VR adoption in orthopedic education, and the section&#x27;s lone benchmark study examines the detectability of AI-generated chest radiographs used in medical education.",
-   "hash": "6832556c6dbeefaf",
-   "date": "August 2, 2026"
+   "text": "A four-pillar framework for designing assessments resistant to generative AI misuse addresses a problem many educators now face directly, proposing structural changes rather than relying on detection tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[5]</a>. That concern is echoed in a cross-sectional study finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient interactions, judged adequate for formative feedback but not high-stakes grading <a href=\"https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[4]</a>. Curriculum design is also adapting: a pre-matriculation program used AI to teach incoming medical students evidence-based study strategies such as spaced repetition <a href=\"https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[2]</a>, while a scoping review cautioned that ChatGPT remains unreliable for complex infectious disease diagnosis and antimicrobial decisions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98\">[8]</a>.\n\nAlso this week: the section&#x27;s 15 items skew heavily toward teaching and curriculum, with seven entries, alongside five on assessment and feedback and two on attitudes and adoption. Coverage extends to AI as a telemedicine clinical tutor for pediatric trainees and an AI-generated visual resource for teaching ophthalmic anatomy.",
+   "hash": "54f7be0b91b07ea1",
+   "date": "August 3, 2026"
   },
   "clinical_practice": {
-   "text": "A humanoid robot controlled by a remote surgeon completed laparoscopic gallbladder removal in pigs, a proof of concept for future surgical robotics <a href=\"https://www.nature.com/articles/d41591-026-00038-y\">[11]</a>. In pathology, a multimodal foundation model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[12]</a>, while a separate neuroimaging model trained on 5.24 million routine CT and MRI scans reached state-of-the-art diagnostic performance <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[10]</a>. Safety researchers also flagged that clinical language models can reach different diagnoses for identical facts depending on phrasing, a pattern termed narrative anchoring <a href=\"https://arxiv.org/abs/2607.27384\">[8]</a>. Separately, a peer-reviewed synthesis called for a dedicated clinical research agenda on AI chatbots and youth suicide risk, citing persistent evidence gaps <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[3]</a>.\n\nAlso this week: nine items fall under safety and evaluation, including work on consistency between chatbot responses and USPSTF preventive care guidance and on best-of-N sampling to improve synthetic health record validity. Clinical decision support, patient-facing tools, and imaging and diagnostics each account for two items, spanning physician recommendation systems and postoperative vomiting prediction models.",
-   "hash": "8877b0b33c2512af",
+   "text": "A new study on narrative anchoring finds that clinical language models can reach different diagnoses for identical patient facts depending on how those facts are phrased, raising fresh questions about diagnostic reliability <a href=\"https://arxiv.org/abs/2607.27384\">[10]</a>. Foundation models are advancing on parallel fronts: a three-dimensional model trained on 5.24 million routine CT and MRI scans achieved state-of-the-art neuroimaging diagnosis <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[12]</a>, while a separate multimodal pathology model matched clinical-grade cancer detection without task-specific training <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[14]</a>. In surgery, a humanoid robot guided by a remote surgeon performed gallbladder removal in pigs <a href=\"https://www.nature.com/articles/d41591-026-00038-y\">[13]</a>. Meanwhile, a synthesis on AI chatbots and youth suicide risk outlines a clinical research agenda addressing safety gaps <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[5]</a>.\n\nAlso this week: seven items focus on safety and evaluation, three on patient-facing tools, and three on imaging and diagnostics, covering ground from model fairness to preoperative nodule staging. Two clinical decision support studies stand out: a retrieval-augmented system for hip-joint disease assessment and a machine learning model predicting postoperative vomiting within 24 hours.",
+   "hash": "0854e0b21f71d139",
    "date": "August 3, 2026"
   },
   "general_ai": {

@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A pre-matriculation curriculum using AI to teach evidence-based study strategies showed feasibility and positive perceived impact among incoming medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[1]</a>. Assessment work drew particular attention: large language models scoring voice-based virtual standardized patient encounters showed only moderate agreement with faculty raters, limiting their use to formative feedback rather than high-stakes evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[3]</a>, while a four-pillar framework proposed structural redesigns to make assessments resistant to generative AI misuse <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[4]</a>. A scoping review found ChatGPT still unreliable for complex infectious disease diagnosis and antimicrobial management <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[7]</a>, and a constraint-optimization scheduler improved on-call equity in a pediatric residency <a href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[6]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum topics, including AI-assisted tutoring in telemedicine for pediatric trainees, while five focus on assessment and feedback. Two pieces explore attitudes toward AI and VR adoption in orthopedic education, and the section&#x27;s lone benchmark study examines the detectability of AI-generated chest radiographs used in medical education.</p>
-<p class="section-brief-date">The picture as of August 2, 2026; numbered links go to the items below.</p>
+<p>A four-pillar framework for designing assessments resistant to generative AI misuse addresses a problem many educators now face directly, proposing structural changes rather than relying on detection tools <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[5]</a>. That concern is echoed in a cross-sectional study finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient interactions, judged adequate for formative feedback but not high-stakes grading <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[4]</a>. Curriculum design is also adapting: a pre-matriculation program used AI to teach incoming medical students evidence-based study strategies such as spaced repetition <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[2]</a>, while a scoping review cautioned that ChatGPT remains unreliable for complex infectious disease diagnosis and antimicrobial decisions <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[8]</a>.</p>
+<p>Also this week: the section&#x27;s 15 items skew heavily toward teaching and curriculum, with seven entries, alongside five on assessment and feedback and two on attitudes and adoption. Coverage extends to AI as a telemedicine clinical tutor for pediatric trainees and an AI-generated visual resource for teaching ophthalmic anatomy.</p>
+<p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2607.28634">Can LLMs Really Understand Item Difficulty Levels? Implications for Automated Item Generation Using LLMs</a>
+    <p class="news-card-summary">Study investigates whether large language models can accurately predict item difficulty levels for educational assessments using various prompting strategies.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530427?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Bridging the Gap: Translated Medical Education to Support Cystic Fibrosis Centers From Non-English Speaking Countries</a>
     <p class="news-card-summary">AI-generated translation of cystic fibrosis medical education materials proved quick and affordable but required native-speaking expert review to ensure accuracy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42530406?fc=20260609215449&amp;ff=20260730135050&amp;v=2.20.0.post5+40e1b98">Educational Artificial Intelligence Software to Support Assessment of Atopic Dermatitis Severity</a>
-    <p class="news-card-summary">Convolutional neural network software assessed atopic dermatitis severity with reduced inter-rater variability compared to manual Eczema Area and Severity Index scoring.</p>
   </div>
 </div>
 </div>

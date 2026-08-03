@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A pre-matriculation curriculum using AI to teach evidence-based study strategies showed feasibility and positive perceived impact among incoming medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[1]</a>. Assessment work drew particular attention: large language models scoring voice-based virtual standardized patient encounters showed only moderate agreement with faculty raters, limiting their use to formative feedback rather than high-stakes evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[3]</a>, while a four-pillar framework proposed structural redesigns to make assessments resistant to generative AI misuse <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[4]</a>. A scoping review found ChatGPT still unreliable for complex infectious disease diagnosis and antimicrobial management <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[7]</a>, and a constraint-optimization scheduler improved on-call equity in a pediatric residency <a href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[6]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum topics, including AI-assisted tutoring in telemedicine for pediatric trainees, while five focus on assessment and feedback. Two pieces explore attitudes toward AI and VR adoption in orthopedic education, and the section&#x27;s lone benchmark study examines the detectability of AI-generated chest radiographs used in medical education.</p>
-<p class="section-brief-date">The picture as of August 2, 2026; numbered links go to the source items.</p>
+<p>A four-pillar framework for designing assessments resistant to generative AI misuse addresses a problem many educators now face directly, proposing structural changes rather than relying on detection tools <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[5]</a>. That concern is echoed in a cross-sectional study finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient interactions, judged adequate for formative feedback but not high-stakes grading <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[4]</a>. Curriculum design is also adapting: a pre-matriculation program used AI to teach incoming medical students evidence-based study strategies such as spaced repetition <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[2]</a>, while a scoping review cautioned that ChatGPT remains unreliable for complex infectious disease diagnosis and antimicrobial decisions <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[8]</a>.</p>
+<p>Also this week: the section&#x27;s 15 items skew heavily toward teaching and curriculum, with seven entries, alongside five on assessment and feedback and two on attitudes and adoption. Coverage extends to AI as a telemedicine clinical tutor for pediatric trainees and an AI-generated visual resource for teaching ophthalmic anatomy.</p>
+<p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.28634">Can LLMs Really Understand Item Difficulty Levels? Implications for Automated Item Generation Using LLMs</a>
+        <p class="news-card-summary">Study investigates whether large language models can accurately predict item difficulty levels for educational assessments using various prompting strategies.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
@@ -295,20 +302,34 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A humanoid robot controlled by a remote surgeon completed laparoscopic gallbladder removal in pigs, a proof of concept for future surgical robotics <a href="https://www.nature.com/articles/d41591-026-00038-y">[11]</a>. In pathology, a multimodal foundation model trained on 2.3 million whole-slide images matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[12]</a>, while a separate neuroimaging model trained on 5.24 million routine CT and MRI scans reached state-of-the-art diagnostic performance <a href="https://www.nature.com/articles/s41591-026-04567-4">[10]</a>. Safety researchers also flagged that clinical language models can reach different diagnoses for identical facts depending on phrasing, a pattern termed narrative anchoring <a href="https://arxiv.org/abs/2607.27384">[8]</a>. Separately, a peer-reviewed synthesis called for a dedicated clinical research agenda on AI chatbots and youth suicide risk, citing persistent evidence gaps <a href="https://www.nature.com/articles/s41746-026-03080-9">[3]</a>.</p>
-<p>Also this week: nine items fall under safety and evaluation, including work on consistency between chatbot responses and USPSTF preventive care guidance and on best-of-N sampling to improve synthetic health record validity. Clinical decision support, patient-facing tools, and imaging and diagnostics each account for two items, spanning physician recommendation systems and postoperative vomiting prediction models.</p>
+<p>A new study on narrative anchoring finds that clinical language models can reach different diagnoses for identical patient facts depending on how those facts are phrased, raising fresh questions about diagnostic reliability <a href="https://arxiv.org/abs/2607.27384">[10]</a>. Foundation models are advancing on parallel fronts: a three-dimensional model trained on 5.24 million routine CT and MRI scans achieved state-of-the-art neuroimaging diagnosis <a href="https://www.nature.com/articles/s41591-026-04567-4">[12]</a>, while a separate multimodal pathology model matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[14]</a>. In surgery, a humanoid robot guided by a remote surgeon performed gallbladder removal in pigs <a href="https://www.nature.com/articles/d41591-026-00038-y">[13]</a>. Meanwhile, a synthesis on AI chatbots and youth suicide risk outlines a clinical research agenda addressing safety gaps <a href="https://www.nature.com/articles/s41746-026-03080-9">[5]</a>.</p>
+<p>Also this week: seven items focus on safety and evaluation, three on patient-facing tools, and three on imaging and diagnostics, covering ground from model fairness to preoperative nodule staging. Two clinical decision support studies stand out: a retrieval-augmented system for hip-joint disease assessment and a machine learning model predicting postoperative vomiting within 24 hours.</p>
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.28814">Rolling With Resistance: Preference-Optimized LLM Counselors Can Trade Goal Persistence for Relational Attunement in Motivational Interviewing</a>
+        <p class="news-card-summary">Research evaluates preference-optimized language models as counselors in motivational interviewing, examining tradeoffs between goal persistence and relational attunement.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03030-5">Intersectional fairness in vision-language models for medical image disease classification</a>
         <p class="news-card-summary">Study examines fairness across demographic groups in vision-language models for medical image disease classification.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03062-x">Multimodal deep learning for preoperative invasiveness stratification of lung adenocarcinoma spectrum nodules</a>
+        <p class="news-card-summary">Peer-reviewed study on multimodal deep learning for preoperative assessment of lung adenocarcinoma nodule invasiveness.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -589,9 +610,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 2, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 56 items"
+??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -1004,20 +1025,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">NVIDIA released Cosmos-H-Dreams, a generative simulation model designed for real-time surgical robotics applications.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/68c1279544f671330c604f4c/Cj0RZwvOSUhFGFEFKgyDw.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 27, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.22043">Scaling Native Multimodal Pre-Training From Scratch</a>
-        <p class="news-card-summary">Scaling native multimodal pre-training from scratch on multimodal inputs achieves deeper cross-modal integration than text-only language model training.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 27, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.22182">From Isolated Tasks to Structured Capabilities: A Multilayer Taxonomy for Large Language Models</a>
-        <p class="news-card-summary">A multilayer taxonomy organizing LLM evaluation across fourteen capability domains to improve cross-study comparison and identify coverage gaps in benchmarking.</p>
-      </div>
     </div>
     </div>
 
