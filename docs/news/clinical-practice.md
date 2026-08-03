@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new study on narrative anchoring finds that clinical language models can reach different diagnoses for identical patient facts depending on how those facts are phrased, raising fresh questions about diagnostic reliability <a href="https://arxiv.org/abs/2607.27384">[10]</a>. Foundation models are advancing on parallel fronts: a three-dimensional model trained on 5.24 million routine CT and MRI scans achieved state-of-the-art neuroimaging diagnosis <a href="https://www.nature.com/articles/s41591-026-04567-4">[12]</a>, while a separate multimodal pathology model matched clinical-grade cancer detection without task-specific training <a href="https://www.nature.com/articles/s41591-026-04521-4">[14]</a>. In surgery, a humanoid robot guided by a remote surgeon performed gallbladder removal in pigs <a href="https://www.nature.com/articles/d41591-026-00038-y">[13]</a>. Meanwhile, a synthesis on AI chatbots and youth suicide risk outlines a clinical research agenda addressing safety gaps <a href="https://www.nature.com/articles/s41746-026-03080-9">[5]</a>.</p>
-<p>Also this week: seven items focus on safety and evaluation, three on patient-facing tools, and three on imaging and diagnostics, covering ground from model fairness to preoperative nodule staging. Two clinical decision support studies stand out: a retrieval-augmented system for hip-joint disease assessment and a machine learning model predicting postoperative vomiting within 24 hours.</p>
+<p>A peer-reviewed synthesis on AI chatbots and youth suicide risk finds critical evidence gaps and calls for a dedicated clinical research agenda before wider deployment <a href="https://www.nature.com/articles/s41746-026-03080-9">[7]</a>. Separate research on narrative anchoring shows clinical language models can reach different diagnoses for identical facts depending on phrasing, a reliability concern for diagnostic support tools <a href="https://arxiv.org/abs/2607.27384">[12]</a>. In imaging, a foundation model trained on more than five million routine CT and MRI scans reached state-of-the-art neuroimaging diagnostic performance, underscoring the value of routine health system data <a href="https://www.nature.com/articles/s41591-026-04567-4">[14]</a>. In surgery, a humanoid robot under remote human control completed laparoscopic gallbladder removal in pigs, an early step toward new surgical robotics <a href="https://www.nature.com/articles/d41591-026-00038-y">[15]</a>.</p>
+<p>Also this week: safety and evaluation work spans seven items, from fairness auditing in vision-language models to benchmarking large language models against one million clinical trials. Patient-facing tools account for four entries, including comparisons of AI and human coaching for diabetes prevention, while imaging and diagnostics and clinical decision support each contribute two studies.</p>
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="patient-facing-tools">
@@ -40,6 +40,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03062-x">Multimodal deep learning for preoperative invasiveness stratification of lung adenocarcinoma spectrum nodules</a>
     <p class="news-card-summary">Peer-reviewed study on multimodal deep learning for preoperative assessment of lung adenocarcinoma nodule invasiveness.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03063-w">Patient engagement, acceptability, and preference of artificial intelligence versus human coaching for diabetes prevention</a>
+    <p class="news-card-summary">A study compares patient engagement and preference between AI coaching and human coaching for diabetes prevention.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02813-0">Interpreting the clinical utility and generalizability of a multitask perioperative prediction model</a>
+    <p class="news-card-summary">A multitask model for perioperative prediction is evaluated for clinical utility and generalizability across patient populations and settings.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -113,19 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A humanoid robot controlled by a remote human surgeon performed laparoscopic gallbladder removal in pigs, generating findings for future surgical robotics development.</p>
   </div>
   <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00038-y/d41591-026-00038-y_53047252.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04521-4">End-to-end multimodal pathology foundation model with clinical dialogue</a>
-    <p class="news-card-summary">PRISM2, a multimodal foundation model trained on 2.3 million whole-slide images and 14 million clinical question-answer pairs, matched clinical-grade cancer detection without task-specific training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90590">Improving Clinical Validity in Synthetic Electronic Health Record Generation Using Best-of-N Sampling: Comparative Evaluation Study</a>
-    <p class="news-card-summary">Study evaluated best-of-N sampling to improve clinical validity of synthetic electronic health records by enforcing structural, physiological, and relational constraints.</p>
-  </div>
 </div>
 </div>
