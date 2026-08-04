@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A peer-reviewed synthesis on AI chatbots and youth suicide risk highlights gaps in evidence and calls for a dedicated clinical research agenda, underscoring persistent safety concerns <a href="https://www.nature.com/articles/s41746-026-03080-9">[11]</a>. Diagnostic imaging work shows measurable tradeoffs: a chest radiography study found that specificity-optimized computer-aided detection improved specificity without meaningfully reducing sensitivity <a href="https://pubmed.ncbi.nlm.nih.gov/42545563?fc=20260609215449&amp;ff=20260803140809&amp;v=2.20.0.post5+40e1b98">[2]</a>. On decision support, a retrieval-augmented system for hip-joint disease assessment performed well retrospectively but showed lower accuracy in complex cases, suggesting prospective evaluation before clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[10]</a>. Patient-facing tools also draw scrutiny, as a study comparing AI and human coaching for diabetes prevention examined patient acceptability and engagement <a href="https://www.nature.com/articles/s41746-026-03063-w">[6]</a>.</p>
-<p>Also this week: the section includes five papers on safety and evaluation, four on clinical decision support, and four on patient-facing tools. Coverage extends to knowledge graph construction for evolving medical information, alongside imaging research on preoperative lung adenocarcinoma nodule stratification.</p>
+<p>A Nature Medicine study finds that explainable AI for dermatological diagnosis shapes clinician and lay-user trust differently <a href="https://www.nature.com/articles/s41591-026-04553-w">[2]</a>. Similar caution appears in a synthesis on AI chatbots and youth suicide risk, which flags evidence gaps and calls for a dedicated clinical research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[12]</a>. Decision-support tools face parallel scrutiny, as a retrieval-augmented system for hip-joint disease assessment showed reduced accuracy in complex cases, prompting calls for prospective validation <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[11]</a>. A comparison of AI and human coaching for diabetes prevention also found differences in patient engagement and preference <a href="https://www.nature.com/articles/s41746-026-03063-w">[7]</a>.</p>
+<p>Also this week: the section adds six pieces on safety and evaluation, four on patient-facing tools, three on clinical decision support, and two on imaging and diagnostics, including work on medical knowledge graph construction and postoperative vomiting prediction models informed by large language models.</p>
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -26,6 +26,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03058-7">MedKGent: a large language model agent framework for constructing temporally evolving medical knowledge graph</a>
     <p class="news-card-summary">MedKGent presents a framework using language model agents to automatically construct and maintain medical knowledge graphs that evolve over time as new information becomes available.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04553-w">Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people</a>
+    <p class="news-card-summary">A study in Nature Medicine shows that explainable AI for dermatology diagnosis affects clinician and lay-user trust and decision-making differently.</p>
   </div>
 </div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 31, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84260">Prediction of Postoperative Vomiting Within 24 Hours Using Machine Learning With Large Language Model, Enhanced Interpretability: Development and Validation Study</a>
     <p class="news-card-summary">Researchers developed and validated machine learning models using perioperative data and clinical text to predict postoperative vomiting within 24 hours with enhanced interpretability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e99386">From Static Outputs to Living Evidence: AI for Integrated Knowledge Translation in Canadian Health Research</a>
-    <p class="news-card-summary">Retrieval-augmented language models can provide secure, auditable conversational access to research outputs and curated materials, enabling rapid evidence synthesis between meetings across research portfolios.</p>
   </div>
 </div>
 </div>

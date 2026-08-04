@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=vmLwsoVRo30" target="_blank" rel="noopener" title="Qwen 3.8 Max IS OUT! Best Open Model? (Fully Tested)">
+  <img src="https://i3.ytimg.com/vi/vmLwsoVRo30/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Max against leading open models" loading="lazy">
+  <span class="video-card-title">Testing Qwen 3.8 Max against leading open models</span>
+  <span class="video-card-meta">WorldofAI, August 4, 2026</span>
+  <span class="video-card-desc">Hands-on testing and evaluation of Alibaba&#x27;s Qwen 3.8 Max open-source model against leading alternatives.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=bNRhppHct54" target="_blank" rel="noopener" title="Understanding AI Agent Hallucination in AI Systems">
   <img src="https://i3.ytimg.com/vi/bNRhppHct54/hqdefault.jpg" alt="Video: Understanding AI agent hallucination in AI systems" loading="lazy">
   <span class="video-card-title">Understanding AI agent hallucination in AI systems</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing Kimi K3 open model against GPT and other frontier systems</span>
   <span class="video-card-meta">WorldofAI, July 17, 2026</span>
   <span class="video-card-desc">Hands-on testing of Moonshot AI&#x27;s Kimi K3, a 2.8 trillion parameter open model with 1 million token context, comparing its performance against other frontier models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=xPcZ0w3ouo8" target="_blank" rel="noopener" title="Kimi K3 Is INSANE, Is THIS a Sol &amp; Fable Competitor?">
-  <img src="https://i1.ytimg.com/vi/xPcZ0w3ouo8/hqdefault.jpg" alt="Video: Testing Kimi K3 multimodal model performance" loading="lazy">
-  <span class="video-card-title">Testing Kimi K3 multimodal model performance</span>
-  <span class="video-card-meta">Bijan Bowen, July 16, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Kimi K3, a multimodal AI model, with technical review and performance evaluation across browser and application tasks.</span>
 </a>
 </div>
 
