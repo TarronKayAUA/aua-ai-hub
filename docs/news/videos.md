@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=f0Y3tQp2OqQ" target="_blank" rel="noopener" title="Fable 5 &amp; Qwen 27B, Traycer Multi-Agent Hands-On Test!">
+  <img src="https://i3.ytimg.com/vi/f0Y3tQp2OqQ/hqdefault.jpg" alt="Video: Fable 5 and Qwen 27B multi-agent hands-on test" loading="lazy">
+  <span class="video-card-title">Fable 5 and Qwen 27B multi-agent hands-on test</span>
+  <span class="video-card-meta">Bijan Bowen, August 4, 2026</span>
+  <span class="video-card-desc">Hands-on demonstration of Fable 5 and Qwen 27B models with multi-agent testing and technical overview.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=vmLwsoVRo30" target="_blank" rel="noopener" title="Qwen 3.8 Max IS OUT! Best Open Model? (Fully Tested)">
   <img src="https://i3.ytimg.com/vi/vmLwsoVRo30/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Max against leading open models" loading="lazy">
   <span class="video-card-title">Testing Qwen 3.8 Max against leading open models</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Kimi K3 and Fable model comparison</span>
   <span class="video-card-meta">Wes Roth, July 18, 2026</span>
   <span class="video-card-desc">Comparison of Kimi K3 and Fable models covering recent developments in large language models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=LEnYkEIOhIY" target="_blank" rel="noopener" title="Kimi K3 IS INSANE! Best Open Model EVER That BEATS FABLE 5 &amp; GPT-5.6! (Fully Tested)">
-  <img src="https://i1.ytimg.com/vi/LEnYkEIOhIY/hqdefault.jpg" alt="Video: Testing Kimi K3 open model against GPT and other frontier systems" loading="lazy">
-  <span class="video-card-title">Testing Kimi K3 open model against GPT and other frontier systems</span>
-  <span class="video-card-meta">WorldofAI, July 17, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Moonshot AI&#x27;s Kimi K3, a 2.8 trillion parameter open model with 1 million token context, comparing its performance against other frontier models.</span>
 </a>
 </div>
 

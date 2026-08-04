@@ -28410,6 +28410,69 @@
    "first_seen": "2026-08-04T10:57:54.600689+00:00",
    "kept": false,
    "reason": "duplicate of a kept candidate; covers same Qwen release with speculation-focused framing"
+  },
+  {
+   "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+   "title_hash": "8399b7795758d892eb48565ab5d0ae86",
+   "first_seen": "2026-08-04T14:40:59.678046+00:00",
+   "kept": false,
+   "reason": "insufficient information to evaluate; candidate has empty summary"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages",
+   "title_hash": "b6f0929669b54551ebfe6504f826a20f",
+   "first_seen": "2026-08-04T14:40:59.678046+00:00",
+   "kept": false,
+   "reason": "off-topic for medical educators; legal dispute coverage not relevant to AI literacy or medical applications"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/973098/reddit-ai-search-seo-marketing-brands-spam",
+   "title_hash": "f8adeac51cfda4bc7ae89024b84d1de8",
+   "first_seen": "2026-08-04T14:40:59.678046+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns social media spam, not artificial intelligence in medicine or education"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03055-w",
+   "title_hash": "01d702f975d1e05fa20e45ad527122bc",
+   "first_seen": "2026-08-04T14:40:59.678046+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns virtual reality therapy effectiveness, not artificial intelligence in education or clinical practice"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vellf2/qwen38max_matches_kimi_k3_and_deepseek_v4_flash",
+   "title_hash": "e593d2fc88383ab2b4ac1341cec3e672",
+   "first_seen": "2026-08-04T14:40:59.678046+00:00",
+   "kept": true,
+   "title": "Qwen3.8-Max matches Kimi K3 and DeepSeek V4 Flash",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-03T18:25:12+00:00",
+   "summary": "Qwen3.8-Max performs comparably to Kimi K3 and DeepSeek V4 Flash across benchmarks with particular strength in coding; open-weight 27B version coming soon.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://preview.redd.it/14mqdzhzb7hh1.png?width=640&crop=smart&auto=webp&s=53a5f1f5ea4dd8a66ef78591cbea34554cb1a2ed",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=f0Y3tQp2OqQ",
+   "title_hash": "228b617aa7c1e5760a87b00a23825729",
+   "first_seen": "2026-08-04T14:40:59.678046+00:00",
+   "kept": true,
+   "title": "Fable 5 & Qwen 27B, Traycer Multi-Agent Hands-On Test!",
+   "source": "Bijan Bowen",
+   "published": "2026-08-04T11:37:05+00:00",
+   "summary": "Hands-on demonstration of Fable 5 and Qwen 27B models with multi-agent testing and technical overview.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/f0Y3tQp2OqQ/hqdefault.jpg",
+   "display_title": "Fable 5 and Qwen 27B multi-agent hands-on test"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uU1EP9_4qBU",
+   "title_hash": "3e01e60668eb57bb87565dabeb5a8d56",
+   "first_seen": "2026-08-04T14:40:59.678046+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

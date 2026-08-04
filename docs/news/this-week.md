@@ -279,9 +279,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -547,13 +547,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03065-8">Population-specific dementia risk prediction using deep transfer learning in diverse populations</a>
-        <p class="news-card-summary">Deep transfer learning models predict dementia risk in diverse populations, addressing disparities in risk stratification across demographic groups.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03006-5">Federated modular clinical decision support networks for collaborative learning in resource-limited settings</a>
         <p class="news-card-summary">Federated learning approach enables clinical decision support networks to train collaboratively across resource-limited settings while preserving data privacy.</p>
       </div>
@@ -575,9 +568,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 59 items"
+??? abstract "Show the 58 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (59)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (58)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
@@ -641,6 +634,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.00311">SeDeM: Selective Decompression of Hidden-State Memories for Long-Context Question Answering</a>
         <p class="news-card-summary">SeDeM addresses long-context inference costs by selectively decompressing hidden-state memories, reducing key-value cache size while preserving evidence retrieval for question-answering.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vellf2/qwen38max_matches_kimi_k3_and_deepseek_v4_flash">Qwen3.8-Max matches Kimi K3 and DeepSeek V4 Flash</a>
+        <p class="news-card-summary">Qwen3.8-Max performs comparably to Kimi K3 and DeepSeek V4 Flash across benchmarks with particular strength in coding; open-weight 27B version coming soon.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/14mqdzhzb7hh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=53a5f1f5ea4dd8a66ef78591cbea34554cb1a2ed" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -994,22 +995,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25362061/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents">Perplexity’s Personal Computer turns Windows PCs into AI agents</a>
-        <p class="news-card-summary">Perplexity expanded its agentic AI system to Windows PCs, enabling local access to files and applications for automated task execution.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472503/STK271_PERPLEXITY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children">Hugging Face is being used to easily undress women and children</a>
-        <p class="news-card-summary">Study documents that image editing models on Hugging Face readily generate nonconsensual deepfakes, revealing inadequate content safeguards in open-source repositories.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK419_DEEPFAKE_CVIRGINIA_F.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 27, 2026</span></div>
@@ -1033,6 +1018,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ??? abstract "Show the 10 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=f0Y3tQp2OqQ" target="_blank" rel="noopener" title="Fable 5 &amp; Qwen 27B, Traycer Multi-Agent Hands-On Test!">
+      <img src="https://i3.ytimg.com/vi/f0Y3tQp2OqQ/hqdefault.jpg" alt="Video: Fable 5 and Qwen 27B multi-agent hands-on test" loading="lazy">
+      <span class="video-card-title">Fable 5 and Qwen 27B multi-agent hands-on test</span>
+      <span class="video-card-meta">Bijan Bowen, August 4, 2026</span>
+      <span class="video-card-desc">Hands-on demonstration of Fable 5 and Qwen 27B models with multi-agent testing and technical overview.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=vmLwsoVRo30" target="_blank" rel="noopener" title="Qwen 3.8 Max IS OUT! Best Open Model? (Fully Tested)">
       <img src="https://i3.ytimg.com/vi/vmLwsoVRo30/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Max against leading open models" loading="lazy">
       <span class="video-card-title">Testing Qwen 3.8 Max against leading open models</span>
@@ -1086,12 +1077,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">OpenAI gpt-transcribe and gpt-live-transcribe models</span>
       <span class="video-card-meta">OpenAI, July 28, 2026</span>
       <span class="video-card-desc">OpenAI releases two transcription models for batch and live audio processing with custom vocabulary support, relevant for clinical documentation workflows.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=0ujh7hfutq0" target="_blank" rel="noopener" title="Llama.cpp vs vLLM: Which Local LLM Engine Actually Scales?">
-      <img src="https://i1.ytimg.com/vi/0ujh7hfutq0/hqdefault.jpg" alt="Video: Llama.cpp versus vLLM: local LLM inference engine performance comparison" loading="lazy">
-      <span class="video-card-title">Llama.cpp versus vLLM: local LLM inference engine performance comparison</span>
-      <span class="video-card-meta">IBM Technology, July 28, 2026</span>
-      <span class="video-card-desc">Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.</span>
     </a>
     </div>
 

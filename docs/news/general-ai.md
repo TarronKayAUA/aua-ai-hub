@@ -84,6 +84,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">SeDeM addresses long-context inference costs by selectively decompressing hidden-state memories, reducing key-value cache size while preserving evidence retrieval for question-answering.</p>
   </div>
 </div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vellf2/qwen38max_matches_kimi_k3_and_deepseek_v4_flash">Qwen3.8-Max matches Kimi K3 and DeepSeek V4 Flash</a>
+    <p class="news-card-summary">Qwen3.8-Max performs comparably to Kimi K3 and DeepSeek V4 Flash across benchmarks with particular strength in coding; open-weight 27B version coming soon.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/14mqdzhzb7hh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=53a5f1f5ea4dd8a66ef78591cbea34554cb1a2ed" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 3, 2026</span></div>
@@ -122,12 +130,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">MiniMax-H3, a multimodal generative system supporting text, images, video, and audio, is now available on Hugging Face with video generation capability.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/WyIvGqO4ylsfEfqo7vAaNtLhBYgl2urdqW5R5dAOYG4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=9db3c969c5d772a76d5b69447a853988e20f5dd8" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vd874t/i_pushed_kimi_k3_onto_one_cpu_with_8_gb_of_ram">I pushed Kimi K3 onto one CPU with 8 GB of RAM</a>
-    <p class="news-card-summary">A developer implemented CPU-based inference for Kimi K3, a large mixture-of-experts model, by loading routed experts on demand from storage rather than keeping the full checkpoint resident.</p>
-  </div>
 </div>
 </div>
