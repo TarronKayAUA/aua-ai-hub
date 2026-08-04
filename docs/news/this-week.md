@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -277,13 +277,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1705108764.jpg?itok=bdB9Rlla" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 27, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42508094?fc=20260609215449&amp;ff=20260727233858&amp;v=2.20.0">Performance of multimodal large language models in interpreting lateral cephalometric superimpositions: A comparative observer-performance study</a>
-        <p class="news-card-summary">Multimodal large language models substantially underperformed a second-year orthodontic resident at interpreting cephalometric superimpositions without expert review.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 27, 2026</span></div>
@@ -296,14 +289,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A neuroimaging foundation model trained on 5.24 million routine CT and MRI scans achieved state-of-the-art diagnostic performance, underscoring how large-scale routine health system data can improve imaging AI <a href="https://www.nature.com/articles/s41591-026-04567-4">[15]</a>. Diagnostic reliability concerns also surfaced elsewhere: a study of clinical language models found that identical clinical facts, phrased in different linguistic registers, could yield different diagnoses, a phenomenon researchers termed narrative anchoring <a href="https://arxiv.org/abs/2607.27384">[13]</a>. Separately, a synthesis of evidence on AI chatbots and youth suicide risk highlighted critical gaps in current safety research and called for a formal clinical research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[8]</a>. Fairness concerns in medical image classification models across demographic groups were also examined <a href="https://www.nature.com/articles/s41746-026-03030-5">[3]</a>.</p>
-<p>Also this week: coverage spans six safety and evaluation studies, four patient-facing tool evaluations, three imaging and diagnostics papers, and two clinical decision support studies, including work on AI-assisted physician recommendation and machine learning models predicting postoperative vomiting.</p>
-<p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the source items.</p>
+<p>Clinical language models are drawing new scrutiny over consistency and safety. A study on narrative anchoring found that clinical language models can reach different diagnoses from identical facts phrased differently, raising reliability concerns <a href="https://arxiv.org/abs/2607.27384">[15]</a>. Youth suicide risk from AI chatbots is under review, with a synthesis outlining evidence gaps and a research agenda for safer deployment <a href="https://www.nature.com/articles/s41746-026-03080-9">[10]</a>. Decision support tools also show mixed results: a retrieval-augmented system for hip-joint disease assessment performed reasonably in retrospective testing but faltered on complex cases, prompting calls for prospective evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[9]</a>. Meanwhile, patient-facing AI coaching for diabetes prevention showed different engagement patterns compared with human coaches <a href="https://www.nature.com/articles/s41746-026-03063-w">[5]</a>.</p>
+<p>Also this week: coverage spans six items on safety and evaluation, four on patient-facing tools, three on clinical decision support, and two on imaging and diagnostics, including intersectional fairness testing in vision-language models and a chest radiography study showing that specificity-optimized detection did not reduce sensitivity.</p>
+<p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -345,6 +338,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02813-0">Interpreting the clinical utility and generalizability of a multitask perioperative prediction model</a>
         <p class="news-card-summary">A multitask model for perioperative prediction is evaluated for clinical utility and generalizability across patient populations and settings.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02997-5">Predicting Alzheimer progression using EEG-based digital twins</a>
+        <p class="news-card-summary">EEG-based digital twins were developed to predict Alzheimer disease progression, offering a computational approach to clinical outcome forecasting.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03053-y">Cross-linguistic benchmarking of NLP metrics for psychosis research</a>
+        <p class="news-card-summary">Cross-linguistic natural language processing metrics were benchmarked for psychosis research, establishing standardized evaluation approaches across languages.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -559,13 +566,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study applies language models to detect inconsistencies in discharge summaries and characterizes failure modes limiting reliability of automated documentation review.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02958-y">Nationwide federated learning for histopathology: secure deployment across Germany behind firewalls</a>
-        <p class="news-card-summary">Federated learning enabled secure deployment of histopathology AI across German hospitals while keeping data behind institutional firewalls.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
@@ -611,9 +611,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 54 items"
+??? abstract "Show the 53 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -645,6 +645,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Explainer examining why AI agents sometimes employ deception and rule-breaking as instrumental strategies toward their objectives.</p>
       </div>
       <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/paperclips3.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1ve1mvh/minimaxh3_now_on_huggingface">MiniMax-H3 now on huggingface</a>
+        <p class="news-card-summary">MiniMax-H3, a multimodal generative system supporting text, images, video, and audio, is now available on Hugging Face with video generation capability.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/WyIvGqO4ylsfEfqo7vAaNtLhBYgl2urdqW5R5dAOYG4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=9db3c969c5d772a76d5b69447a853988e20f5dd8" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -996,21 +1004,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A 500-dollar reinforcement learning fine-tune of a 9-billion parameter open model achieved competitive performance with frontier models on a product review task.</p>
       </div>
       <img class="news-card-thumb" src="https://fermisense.com/when-machines-take-the-wheel/og.png?v=2" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 27, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/27/kimi-k3">moonshotai/Kimi-K3</a>
-        <p class="news-card-summary">Moonshot AI released open weights for Kimi K3, a 2.8 trillion parameter model, on Hugging Face with a modified MIT license.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 27, 2026</span></div>
-        <a class="news-card-title" href="https://www.anthropic.com/news/position-open-weights-models">Our position on open-weights models</a>
-        <p class="news-card-summary">Anthropic published a position statement on open-weights models addressing their approach to model release and licensing.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.sanity.io/images/4zrzovbb/website/62993bb857986e2808c2a75024f384e7b85312b6-2400x1254.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
