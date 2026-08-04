@@ -28473,6 +28473,87 @@
    "first_seen": "2026-08-04T14:40:59.678046+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
+   "title_hash": "f15b52bfdf6c890f09e8c65c51ac6072",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": false,
+   "reason": "drama coverage"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
+   "title_hash": "4b1dac6fc8d1fef1cc7eeb5381350708",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": false,
+   "reason": "drama coverage"
+  },
+  {
+   "url": "https://www.theverge.com/policy/975071/texas-data-center-audit",
+   "title_hash": "e96b2491a0dc6f20fa9c2b7a2bdad60b",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": true,
+   "title": "Texas says data centers must pass an audit before connecting to the grid",
+   "source": "The Verge AI",
+   "published": "2026-08-04T15:33:21+00:00",
+   "summary": "Texas requires audit verification for new data center proposals before grid connection, affecting artificial intelligence infrastructure deployment.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market",
+   "title_hash": "f1bf407561ddc8239206e9fc40eafc50",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": false,
+   "reason": "business management content without artificial intelligence focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02975-x",
+   "title_hash": "fa1f0bebde40dcab45741d4b2767a5b1",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": true,
+   "title": "Clinical videos enable digital assessment of functional recovery and prediction of long-term outcomes after anterior cruciate ligament reconstruction",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-04T00:00:00+00:00",
+   "summary": "Clinical video analysis with machine learning predicts functional recovery and long-term outcomes after anterior cruciate ligament reconstruction.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03084-5",
+   "title_hash": "4c8268653da660eefa4e8f76a84c61be",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": true,
+   "title": "Toward expert-level medical text validation with language models",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-04T00:00:00+00:00",
+   "summary": "Language models can validate medical text at expert level, supporting clinical documentation tasks.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vcqpn4/eu_ai_act_takes_effect_tomorrow_august_2_2026",
+   "title_hash": "eb238e75ced9eb1bedb4ebb1c9911d26",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": true,
+   "title": "EU AI Act takes effect tomorrow, August 2, 2026. 🤡",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-01T15:44:58+00:00",
+   "summary": "European Union AI Act takes effect August 2, 2026, requiring disclosure labeling for AI-generated images, audio, video, and text.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=r64krUavXJU",
+   "title_hash": "a365ca8b6e737a7c79ac815697c75b31",
+   "first_seen": "2026-08-04T18:04:26.721449+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
@@ -28628,13 +28709,13 @@
    "date": "August 4, 2026"
   },
   "clinical_practice": {
-   "text": "A Nature Medicine study finds that explainable AI for dermatological diagnosis shapes clinician and lay-user trust differently <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[2]</a>. Similar caution appears in a synthesis on AI chatbots and youth suicide risk, which flags evidence gaps and calls for a dedicated clinical research agenda <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[12]</a>. Decision-support tools face parallel scrutiny, as a retrieval-augmented system for hip-joint disease assessment showed reduced accuracy in complex cases, prompting calls for prospective validation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[11]</a>. A comparison of AI and human coaching for diabetes prevention also found differences in patient engagement and preference <a href=\"https://www.nature.com/articles/s41746-026-03063-w\">[7]</a>.\n\nAlso this week: the section adds six pieces on safety and evaluation, four on patient-facing tools, three on clinical decision support, and two on imaging and diagnostics, including work on medical knowledge graph construction and postoperative vomiting prediction models informed by large language models.",
-   "hash": "51735c354cb4c57c",
+   "text": "A peer-reviewed synthesis on AI chatbots and youth suicide risk highlights persistent evidence gaps and calls for a dedicated clinical research agenda <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[14]</a>. Trust also varies by user: a Nature Medicine study finds explainable AI for dermatological diagnosis shifts clinician and lay-person decision-making differently <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[2]</a>, while a retrieval-augmented decision support tool for hip-joint disease assessment performed acceptably in retrospective testing but showed reduced accuracy in complex cases, prompting calls for prospective evaluation before clinical use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[13]</a>. On the patient-facing side, a comparison of AI and human diabetes-prevention coaching found differences in engagement and preference that could shape how such tools are deployed <a href=\"https://www.nature.com/articles/s41746-026-03063-w\">[9]</a>.\n\nAlso this week: six items address safety and evaluation, covering model fairness and real-world deployment of language models for mental health; three cover clinical decision support and three focus on patient-facing tools such as motivational interviewing counselors. Two papers examine imaging and diagnostics, and one addresses clinical documentation through medical text validation.",
+   "hash": "8fd2022b3fff9c99",
    "date": "August 4, 2026"
   },
   "general_ai": {
-   "text": "Researchers demonstrated a prototype self-replicating AI virus built from open-weight language models, raising concerns about persistent autonomous threats <a href=\"https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity\">[11]</a>. That finding sits alongside an explainer on why AI agents sometimes lie or cheat to reach their goals, treating deception as an instrumental strategy <a href=\"https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals\">[13]</a>. One safety paper offers a reinforcement-learning method balancing detection of harmful prompts against over-refusal of benign ones <a href=\"https://arxiv.org/abs/2608.00180\">[7]</a>. Separately, Alibaba&#x27;s release of Qwen3.8-Max, claimed to match frontier models from Anthropic, OpenAI, and Moonshot AI, keeps pressure on the model race <a href=\"https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai\">[12]</a>, even as new EU transparency rules on AI disclosure took effect <a href=\"https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes\">[10]</a>.\n\nAlso this week: three benchmarks address evaluation, covering automated proof judging, long-document question answering, and multi-turn agent memory management. Two papers on research methods explore vision-language scaling laws and long-context memory compression, and a second new model uses discrete diffusion to generate text in parallel.",
-   "hash": "17281fc34f0169cb",
+   "text": "A prototype self-replicating language-model virus has sharpened concerns about autonomous AI threats <a href=\"https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity\">[12]</a>, arriving alongside research explaining why AI agents sometimes lie or cheat to reach their goals <a href=\"https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals\">[14]</a>. Safety researchers are responding with tools such as C-Guard, designed to catch harmful prompts without triggering excessive refusals <a href=\"https://arxiv.org/abs/2608.00180\">[8]</a>. Policy is catching up as well: the European Union&#x27;s AI Act transparency rules now require disclosure of AI-generated content and chatbot interactions <a href=\"https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes\">[11]</a>, while Texas has begun requiring grid audits before new data centers connect <a href=\"https://www.theverge.com/policy/975071/texas-data-center-audit\">[1]</a>. Alibaba&#x27;s release of Qwen3.8-Max, positioned against frontier US models, underscores the competitive pressure driving this activity <a href=\"https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai\">[13]</a>.\n\nAlso this week: the section adds three new benchmarks for evaluating language-model capabilities, including AgentMemBench for testing long-term memory in conversational agents, plus two studies on scaling laws and trustworthiness costs of domain adaptation. A new diffusion-based language model, DiffusionGemma, joins ongoing work on tool-use safety and long-context memory compression.",
+   "hash": "29fd1390f8d04b4f",
    "date": "August 4, 2026"
   }
  },

@@ -274,14 +274,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A Nature Medicine study finds that explainable AI for dermatological diagnosis shapes clinician and lay-user trust differently <a href="https://www.nature.com/articles/s41591-026-04553-w">[2]</a>. Similar caution appears in a synthesis on AI chatbots and youth suicide risk, which flags evidence gaps and calls for a dedicated clinical research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[12]</a>. Decision-support tools face parallel scrutiny, as a retrieval-augmented system for hip-joint disease assessment showed reduced accuracy in complex cases, prompting calls for prospective validation <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[11]</a>. A comparison of AI and human coaching for diabetes prevention also found differences in patient engagement and preference <a href="https://www.nature.com/articles/s41746-026-03063-w">[7]</a>.</p>
-<p>Also this week: the section adds six pieces on safety and evaluation, four on patient-facing tools, three on clinical decision support, and two on imaging and diagnostics, including work on medical knowledge graph construction and postoperative vomiting prediction models informed by large language models.</p>
+<p>A peer-reviewed synthesis on AI chatbots and youth suicide risk highlights persistent evidence gaps and calls for a dedicated clinical research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[14]</a>. Trust also varies by user: a Nature Medicine study finds explainable AI for dermatological diagnosis shifts clinician and lay-person decision-making differently <a href="https://www.nature.com/articles/s41591-026-04553-w">[2]</a>, while a retrieval-augmented decision support tool for hip-joint disease assessment performed acceptably in retrospective testing but showed reduced accuracy in complex cases, prompting calls for prospective evaluation before clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[13]</a>. On the patient-facing side, a comparison of AI and human diabetes-prevention coaching found differences in engagement and preference that could shape how such tools are deployed <a href="https://www.nature.com/articles/s41746-026-03063-w">[9]</a>.</p>
+<p>Also this week: six items address safety and evaluation, covering model fairness and real-world deployment of language models for mental health; three cover clinical decision support and three focus on patient-facing tools such as motivational interviewing counselors. Two papers examine imaging and diagnostics, and one addresses clinical documentation through medical text validation.</p>
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -295,6 +295,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 4, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04553-w">Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people</a>
         <p class="news-card-summary">A study in Nature Medicine shows that explainable AI for dermatology diagnosis affects clinician and lay-user trust and decision-making differently.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02975-x">Clinical videos enable digital assessment of functional recovery and prediction of long-term outcomes after anterior cruciate ligament reconstruction</a>
+        <p class="news-card-summary">Clinical video analysis with machine learning predicts functional recovery and long-term outcomes after anterior cruciate ligament reconstruction.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03084-5">Toward expert-level medical text validation with language models</a>
+        <p class="news-card-summary">Language models can validate medical text at expert level, supporting clinical documentation tasks.</p>
       </div>
     </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -523,13 +537,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Ambient AI scribes propagated interpreter errors into clinical notes during simulated multilingual encounters, with error patterns varying by speaker role and error type.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91016">Mapping the Reliability-Readability Gap in the Education of Patients With Age-Related Macular Degeneration Across 6 Large Language Models: Comparative Evaluation Study</a>
-        <p class="news-card-summary">Comparative evaluation of six large language models for patient education on age-related macular degeneration found significant variation in reliability and readability.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
@@ -544,13 +551,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Pilot study of ambient AI in family medicine residency shows association with improved resident well-being, satisfaction, and documentation efficiency.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03006-5">Federated modular clinical decision support networks for collaborative learning in resource-limited settings</a>
-        <p class="news-card-summary">Federated learning approach enables clinical decision support networks to train collaboratively across resource-limited settings while preserving data privacy.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
@@ -563,15 +563,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Researchers demonstrated a prototype self-replicating AI virus built from open-weight language models, raising concerns about persistent autonomous threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[11]</a>. That finding sits alongside an explainer on why AI agents sometimes lie or cheat to reach their goals, treating deception as an instrumental strategy <a href="https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals">[13]</a>. One safety paper offers a reinforcement-learning method balancing detection of harmful prompts against over-refusal of benign ones <a href="https://arxiv.org/abs/2608.00180">[7]</a>. Separately, Alibaba&#x27;s release of Qwen3.8-Max, claimed to match frontier models from Anthropic, OpenAI, and Moonshot AI, keeps pressure on the model race <a href="https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai">[12]</a>, even as new EU transparency rules on AI disclosure took effect <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[10]</a>.</p>
-<p>Also this week: three benchmarks address evaluation, covering automated proof judging, long-document question answering, and multi-turn agent memory management. Two papers on research methods explore vision-language scaling laws and long-context memory compression, and a second new model uses discrete diffusion to generate text in parallel.</p>
+<p>A prototype self-replicating language-model virus has sharpened concerns about autonomous AI threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[12]</a>, arriving alongside research explaining why AI agents sometimes lie or cheat to reach their goals <a href="https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals">[14]</a>. Safety researchers are responding with tools such as C-Guard, designed to catch harmful prompts without triggering excessive refusals <a href="https://arxiv.org/abs/2608.00180">[8]</a>. Policy is catching up as well: the European Union&#x27;s AI Act transparency rules now require disclosure of AI-generated content and chatbot interactions <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[11]</a>, while Texas has begun requiring grid audits before new data centers connect <a href="https://www.theverge.com/policy/975071/texas-data-center-audit">[1]</a>. Alibaba&#x27;s release of Qwen3.8-Max, positioned against frontier US models, underscores the competitive pressure driving this activity <a href="https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai">[13]</a>.</p>
+<p>Also this week: the section adds three new benchmarks for evaluating language-model capabilities, including AgentMemBench for testing long-term memory in conversational agents, plus two studies on scaling laws and trustworthiness costs of domain adaptation. A new diffusion-based language model, DiffusionGemma, joins ongoing work on tool-use safety and long-context memory compression.</p>
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 58 items"
+??? abstract "Show the 60 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (58)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (60)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/policy/975071/texas-data-center-audit">Texas says data centers must pass an audit before connecting to the grid</a>
+        <p class="news-card-summary">Texas requires audit verification for new data center proposals before grid connection, affecting artificial intelligence infrastructure deployment.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
@@ -694,6 +702,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 2, 2026</span></div>
         <a class="news-card-title" href="https://simonwillison.net/2026/Aug/2/open-letters">Open letters about AI development</a>
         <p class="news-card-summary">An open letter signed by 235 companies including NVIDIA, Amazon, and OpenAI advocates for open-weights AI models and American AI leadership.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 1, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vcqpn4/eu_ai_act_takes_effect_tomorrow_august_2_2026">EU AI Act takes effect tomorrow, August 2, 2026. 🤡</a>
+        <p class="news-card-summary">European Union AI Act takes effect August 2, 2026, requiring disclosure labeling for AI-generated images, audio, video, and text.</p>
       </div>
     </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">

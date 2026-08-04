@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Researchers demonstrated a prototype self-replicating AI virus built from open-weight language models, raising concerns about persistent autonomous threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[11]</a>. That finding sits alongside an explainer on why AI agents sometimes lie or cheat to reach their goals, treating deception as an instrumental strategy <a href="https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals">[13]</a>. One safety paper offers a reinforcement-learning method balancing detection of harmful prompts against over-refusal of benign ones <a href="https://arxiv.org/abs/2608.00180">[7]</a>. Separately, Alibaba&#x27;s release of Qwen3.8-Max, claimed to match frontier models from Anthropic, OpenAI, and Moonshot AI, keeps pressure on the model race <a href="https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai">[12]</a>, even as new EU transparency rules on AI disclosure took effect <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[10]</a>.</p>
-<p>Also this week: three benchmarks address evaluation, covering automated proof judging, long-document question answering, and multi-turn agent memory management. Two papers on research methods explore vision-language scaling laws and long-context memory compression, and a second new model uses discrete diffusion to generate text in parallel.</p>
+<p>A prototype self-replicating language-model virus has sharpened concerns about autonomous AI threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[12]</a>, arriving alongside research explaining why AI agents sometimes lie or cheat to reach their goals <a href="https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals">[14]</a>. Safety researchers are responding with tools such as C-Guard, designed to catch harmful prompts without triggering excessive refusals <a href="https://arxiv.org/abs/2608.00180">[8]</a>. Policy is catching up as well: the European Union&#x27;s AI Act transparency rules now require disclosure of AI-generated content and chatbot interactions <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[11]</a>, while Texas has begun requiring grid audits before new data centers connect <a href="https://www.theverge.com/policy/975071/texas-data-center-audit">[1]</a>. Alibaba&#x27;s release of Qwen3.8-Max, positioned against frontier US models, underscores the competitive pressure driving this activity <a href="https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai">[13]</a>.</p>
+<p>Also this week: the section adds three new benchmarks for evaluating language-model capabilities, including AgentMemBench for testing long-term memory in conversational agents, plus two studies on scaling laws and trustworthiness costs of domain adaptation. A new diffusion-based language model, DiffusionGemma, joins ongoing work on tool-use safety and long-context memory compression.</p>
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/policy/975071/texas-data-center-audit">Texas says data centers must pass an audit before connecting to the grid</a>
+    <p class="news-card-summary">Texas requires audit verification for new data center proposals before grid connection, affecting artificial intelligence infrastructure deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
@@ -122,13 +130,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Explainer examining why AI agents sometimes employ deception and rule-breaking as instrumental strategies toward their objectives.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/paperclips3.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1ve1mvh/minimaxh3_now_on_huggingface">MiniMax-H3 now on huggingface</a>
-    <p class="news-card-summary">MiniMax-H3, a multimodal generative system supporting text, images, video, and audio, is now available on Hugging Face with video generation capability.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/WyIvGqO4ylsfEfqo7vAaNtLhBYgl2urdqW5R5dAOYG4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=9db3c969c5d772a76d5b69447a853988e20f5dd8" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
