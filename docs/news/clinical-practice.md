@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Clinical language models are drawing new scrutiny over consistency and safety. A study on narrative anchoring found that clinical language models can reach different diagnoses from identical facts phrased differently, raising reliability concerns <a href="https://arxiv.org/abs/2607.27384">[15]</a>. Youth suicide risk from AI chatbots is under review, with a synthesis outlining evidence gaps and a research agenda for safer deployment <a href="https://www.nature.com/articles/s41746-026-03080-9">[10]</a>. Decision support tools also show mixed results: a retrieval-augmented system for hip-joint disease assessment performed reasonably in retrospective testing but faltered on complex cases, prompting calls for prospective evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[9]</a>. Meanwhile, patient-facing AI coaching for diabetes prevention showed different engagement patterns compared with human coaches <a href="https://www.nature.com/articles/s41746-026-03063-w">[5]</a>.</p>
-<p>Also this week: coverage spans six items on safety and evaluation, four on patient-facing tools, three on clinical decision support, and two on imaging and diagnostics, including intersectional fairness testing in vision-language models and a chest radiography study showing that specificity-optimized detection did not reduce sensitivity.</p>
+<p>A peer-reviewed synthesis on AI chatbots and youth suicide risk highlights gaps in evidence and calls for a dedicated clinical research agenda, underscoring persistent safety concerns <a href="https://www.nature.com/articles/s41746-026-03080-9">[11]</a>. Diagnostic imaging work shows measurable tradeoffs: a chest radiography study found that specificity-optimized computer-aided detection improved specificity without meaningfully reducing sensitivity <a href="https://pubmed.ncbi.nlm.nih.gov/42545563?fc=20260609215449&amp;ff=20260803140809&amp;v=2.20.0.post5+40e1b98">[2]</a>. On decision support, a retrieval-augmented system for hip-joint disease assessment performed well retrospectively but showed lower accuracy in complex cases, suggesting prospective evaluation before clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[10]</a>. Patient-facing tools also draw scrutiny, as a study comparing AI and human coaching for diabetes prevention examined patient acceptability and engagement <a href="https://www.nature.com/articles/s41746-026-03063-w">[6]</a>.</p>
+<p>Also this week: the section includes five papers on safety and evaluation, four on clinical decision support, and four on patient-facing tools. Coverage extends to knowledge graph construction for evolving medical information, alongside imaging research on preoperative lung adenocarcinoma nodule stratification.</p>
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03058-7">MedKGent: a large language model agent framework for constructing temporally evolving medical knowledge graph</a>
+    <p class="news-card-summary">MedKGent presents a framework using language model agents to automatically construct and maintain medical knowledge graphs that evolve over time as new information becomes available.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 3, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 31, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e99386">From Static Outputs to Living Evidence: AI for Integrated Knowledge Translation in Canadian Health Research</a>
     <p class="news-card-summary">Retrieval-augmented language models can provide secure, auditable conversational access to research outputs and curated materials, enabling rapid evidence synthesis between meetings across research portfolios.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2607.27384">Same Facts, Different Diagnosis: Measuring and Mitigating Narrative Anchoring in Clinical Language Models</a>
-    <p class="news-card-summary">Study identifies and measures narrative anchoring, where clinical language models produce different diagnoses for identical facts expressed in different linguistic registers, affecting diagnostic reliability.</p>
   </div>
 </div>
 </div>

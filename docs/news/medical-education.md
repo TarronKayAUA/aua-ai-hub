@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An AI-supervised remote exam failed so badly that 58,000 students must retake it, after anomalous score distributions were traced to system errors <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[1]</a>. The episode lands amid a broader push to rethink assessment for the AI era: a four-pillar framework for AI-resilient exam design replaces detection-based policing with structural changes to how courses are evaluated <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[6]</a>. Other work probes where AI can and cannot be trusted to judge learners, finding only moderate agreement between large language models and faculty when scoring voice-based virtual standardized patient encounters <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[5]</a>. A separate scoping review found ChatGPT still unreliable for diagnosis and treatment decisions in infectious disease, underscoring limits on using such tools as stand-ins for expert judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&amp;ff=20260801024150&amp;v=2.20.0.post5+40e1b98">[9]</a>.</p>
-<p>Also this week: curriculum efforts make up six items, including a pre-matriculation study-skills program and a primer on AI for palliative care educators. Five entries cover assessment and feedback, such as automated item-difficulty prediction and residency scheduling equity. Two items address exam benchmarks, and two examine attitudes toward AI adoption, including support for AI and VR tools within bounded roles.</p>
-<p class="section-brief-date">The picture as of August 3, 2026; numbered links go to the items below.</p>
+<p>An AI-supervised remote exam covering 58,000 students was invalidated after system failures produced anomalous score distributions, forcing a full retake <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[2]</a>. The episode arrives as institutions rethink assessment design for the generative-AI era: a four-pillar framework proposes structural changes to coursework rather than relying on detection tools <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[7]</a>, while a cross-sectional study of a voice-based virtual standardized patient platform finds large language models reach only moderate agreement with faculty graders, useful for formative feedback but not high-stakes scoring <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[6]</a>. Curriculum efforts also extend earlier, with a pre-matriculation program teaching incoming students retrieval practice and spaced repetition through an AI-assisted format <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[4]</a>.</p>
+<p>Also this week: the section carries six items on teaching and curriculum design, including a primer on AI for palliative care educators and a study of an AI scheduler that improved on-call equity in pediatric residency. Five further papers address assessment and feedback, two cover exam benchmarks, and two explore attitudes toward AI adoption across specialties.</p>
+<p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.00207">Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection</a>
+    <p class="news-card-summary">Research identifies that English-Arabic performance gaps in medical language models stem from missing knowledge access rather than absent training data, enabling targeted fine-tuning improvements.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 3, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42529250?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">The potential of LLMs in generating questions and answers with EHRs</a>
     <p class="news-card-summary">Large language models can generate medical exam questions and answers from electronic health records at levels comparable to clinicians, though with some accuracy gaps, suggesting potential as assisted tools for medical educators.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42528564?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Detectability and healthcare implications of generative AI-synthesized chest radiographs: a blinded radiologist reader study</a>
-    <p class="news-card-summary">Generative AI-synthesized chest radiographs created by multimodal models are examined for visual authenticity and detectability to assess their utility in medical education and dataset augmentation.</p>
   </div>
 </div>
 </div>
