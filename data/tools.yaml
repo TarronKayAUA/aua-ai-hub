@@ -397,7 +397,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-08-04
   blurb: Adaptive USMLE study platform whose lessons, flashcards, and quizzes adjust to performance, with a built-in tutoring chatbot.
 
 - name: Gamma
@@ -668,7 +668,7 @@
   cost: freemium
   governance_status: caution
   status_note: Voice cloning requires documented consent from the person whose voice is used.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Speech synthesis, voice, music, and sound effect generation for narrating course material or producing audio versions of written content. The music model is trained on licensed data, with generated tracks cleared for commercial use.
 
 # Discovery survey additions (owner approved 2026-07-15): every
@@ -693,7 +693,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply. Public preview; free-tier quotas have changed several times.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: "Google's development platform built around agents: an editor and a command-line tool plan and execute multi-step coding tasks using Gemini and other models. It replaced Google's earlier Gemini Command Line Interface for individual users in June 2026."
 
 - name: SciSpace
@@ -713,7 +713,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Literature search assistant that runs a deep, iterative search on a topic you describe and returns a structured report with citations. Suited to thorough searches such as novelty checks rather than quick lookups.
 
 - name: Asta
@@ -733,7 +733,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Academic writing assistant with grammar and language checking tuned to scholarly text, plus paraphrasing, plagiarism checks, and journal submission readiness checks. Works in Microsoft Word, Google Docs, Overleaf, and a web editor.
 
 - name: Writefull
@@ -743,7 +743,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Language feedback for research manuscripts from models trained on published journal articles, used through Microsoft Word and Overleaf add-ins, with a revision tool for checking a full document before submission.
 
 - name: UAsk
@@ -753,7 +753,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Artificial intelligence study assistant built into UWorld's question banks for the United States Medical Licensing Examination (USMLE) Steps 1 through 3. Answers questions about the item on screen, walks through the clinical reasoning, and can turn responses into flashcards and notebook entries.
 
 - name: AMBOSS
