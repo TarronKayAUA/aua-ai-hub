@@ -1157,7 +1157,8 @@ def resolve_task_llm(config: dict, task: str):
     if (spec.get("provider") == "anthropic"
             and os.environ.get("ANTHROPIC_API_KEY")):
         cfg = dict(llm_cfg["anthropic"])
-        for key in ("model", "fallback_model", "max_tokens"):
+        for key in ("model", "fallback_model", "max_tokens",
+                    "refusal_fallback_models"):
             if spec.get(key):
                 cfg[key] = spec[key]
         return "anthropic", call_anthropic, cfg

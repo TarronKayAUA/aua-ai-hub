@@ -202,17 +202,37 @@ def call_task(config: dict, task: str, system: str, user: str) -> dict:
             f"llm.tasks.{task} in feeds.yaml")
     # An empty reply is what a refusal stop returns by design, and it
     # otherwise surfaces as "Expecting value: char 0" with no hint of
-    # the cause (issues #20 and #32). Borderline refusals on benign
-    # payloads are stochastic, so retry once before failing with the
-    # stop reason named. Retry added 2026-08-04.
+    # the cause (issues #20 and #32). One same-model retry covers
+    # borderline flips; the refusal_fallback_models chain (issue #33,
+    # where Sonnet 5 declined the same payload twice) covers a
+    # classifier that consistently dislikes a week's payload. The chain
+    # deliberately ends on a previous-generation model: classifiers
+    # within a generation are correlated, so the decorrelated model is
+    # the one most likely to read a benign payload as benign.
     if provider == "anthropic" and not raw.strip():
+        tried = [cfg["model"]]
         raw = call(system, user, cfg, 300)
+        for alt in cfg.get("refusal_fallback_models") or []:
+            if raw.strip():
+                break
+            tried.append(alt)
+            alt_cfg = dict(cfg)
+            alt_cfg["model"] = alt
+            raw = call(system, user, alt_cfg, 300)
         if not raw.strip():
             raise RuntimeError(
-                "empty reply on two attempts (last stop reason "
+                "empty reply from every model tried "
+                f"({', '.join(tried)}; last stop reason "
                 f"{LAST_ANTHROPIC_STOP.get('reason')!r}); a refusal "
                 "stop returns empty text by design")
-    return parse_llm_json(raw)
+    try:
+        return parse_llm_json(raw)
+    except json.JSONDecodeError:
+        # One fresh sample on malformed JSON too (2026-08-04): the
+        # rotation verification returned syntactically broken JSON
+        # once in the issue #33 run; a second draw usually parses.
+        raw = call(system, user, cfg, 300)
+        return parse_llm_json(raw)
 
 
 def week_items(days: int) -> list[dict]:
