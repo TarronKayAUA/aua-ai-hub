@@ -137,3 +137,17 @@
   support: "Organizer-stated: $1,500+ in cash prizes (1st $1,000, 2nd $400, 3rd $100, plus certificates for other placements)"
   relevance: Online AI challenge open internationally with machine learning focus suitable for medical students and faculty.
   verified: 2026-07-27
+
+# Auto-verified 2026-08-04 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "Agentic Cinema: The Blockbuster Hackathon"
+  url: https://agentic-cinema.devpost.com/
+  organizer: "Google"
+  type: hackathon
+  format: virtual
+  eligibility: "Individuals above legal age of majority in country of residence, excluding certain listed countries/territories"
+  deadline: 2026-09-07
+  start_date: 2026-07-27
+  end_date: 2026-09-07
+  support: "Organizer-stated: $75,000 in cash prizes across five partner tracks (IBM, Grafana, Parallel, Clickhouse, Replit), each with 1st ($7,500), 2nd ($4,500), and 3rd ($3,000) place cash prizes plus social media promotion opportunity"
+  relevance: "Online AI and machine learning hackathon hosted by Google with substantial prizes, relevant to medical AI applications and general AI skills development."
+  verified: 2026-08-04
