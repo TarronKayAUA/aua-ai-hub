@@ -140,7 +140,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-08-04
   blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
 # Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
@@ -202,7 +202,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-08-04
   blurb: Web browser with a built-in agent that can summarize, navigate, and act across your open tabs and accounts. Free to use, with higher limits on paid plans.
 
 # Verified 2026-07-28 from Perplexity's own pages (the Windows product
@@ -230,7 +230,7 @@
   cost: free
   governance_status: caution
   status_note: Self-hosted software with broad system access; it is intended for technically confident users who scope its permissions deliberately.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-08-04
   blurb: Open-source, self-hosted personal agent that connects a model of your choice to the messaging apps you already use. Free software; you supply the model, hardware, and judgment.
 
 - name: Elicit
@@ -450,7 +450,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Tool for downloading and running open-weights models on your own computer, through a command line or an official desktop chat app. The local app is free; the company separately sells an optional cloud service for models too large to run locally.
 
 # Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
@@ -490,7 +490,7 @@
   cost: paid
   governance_status: listed
   status_note: Research preview on paid Claude plans; sign-in required.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-08-04
   blurb: Design tool from Anthropic Labs that turns prompts and uploaded files into slides, one-pagers, and graphics. Imports PowerPoint files and exports finished work back to PowerPoint, PDF, or Canva.
 
 - name: PowerPoint Design Suggestions
@@ -500,7 +500,7 @@
   cost: institutional
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Built into PowerPoint under the institutional Microsoft 365 license, where Microsoft now calls the feature Design Suggestions and delivers it through Copilot. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
 
 - name: Canva
@@ -510,7 +510,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-08-04
   blurb: Design platform with prompt-based Magic Design features and a large asset library. Imports an existing PowerPoint deck for restyling and exports the result back to PowerPoint.
 
 - name: Beautiful.ai
@@ -520,7 +520,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-08-04
   blurb: Presentation tool whose built-in design rules keep slides tidy as content changes. Works in its own format but exports to PowerPoint cleanly.
 
 # --- Image Generation (owner approved 2026-06-12) ---------------------------
@@ -583,7 +583,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Google's creative studio for video and image generation, combining the Veo 3.1 and Gemini Omni video models with Nano Banana image generation. It absorbed Google's earlier ImageFX and Whisk tools.
 
 - name: Runway
@@ -603,7 +603,7 @@
   cost: freemium
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-04
   blurb: Video generator from the Chinese company Kuaishou. The Kling 3.0 family generates clips with native synchronized audio and multi-language lip sync, and ranks among the leading models in mid-2026 comparisons.
 
 - name: Hailuo
