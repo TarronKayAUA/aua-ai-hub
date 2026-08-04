@@ -655,6 +655,12 @@
   vendor: Udio
   category: music_audio
   url: https://www.udio.com
+  # App and landing page are client-rendered (8 words of static text);
+  # the blog serves ~130 words, too thin to check the blurb or cost
+  # tier against. HTTP 200 everywhere and the blog carries current
+  # announcements, so the product is active (probed 2026-08-04, issue
+  # #34). Owner-reviewed.
+  verify: skip
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
@@ -680,6 +686,11 @@
   vendor: Mistral AI
   category: assistants
   url: https://chat.mistral.ai
+  # The chat app is client-rendered (6 words of static text); the
+  # product page serves ~1,200 words including "Mistral Vibe (formerly
+  # Le Chat)" and the work/code agent split the blurb describes
+  # (probed 2026-08-04, issue #34).
+  verify_url: https://mistral.ai/products/vibe
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
@@ -700,6 +711,11 @@
   vendor: SciSpace
   category: research
   url: https://scispace.com
+  # scispace.com and the legacy typeset.io both serve empty
+  # client-rendered shells to scripted fetches, and /about returns an
+  # HTTP error (probed 2026-08-04, issue #34). HTTP 200 on the main
+  # page. Owner-reviewed.
+  verify: skip
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
@@ -720,6 +736,10 @@
   vendor: Allen Institute for AI
   category: research
   url: https://asta.allen.ai
+  # The app is client-rendered (a JavaScript error message to scripted
+  # fetches); the vendor's product page serves ~420 words describing
+  # Asta (probed 2026-08-04, issue #34).
+  verify_url: https://allenai.org/asta
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
