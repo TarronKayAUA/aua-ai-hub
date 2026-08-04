@@ -158,6 +158,15 @@ def build_entry_yaml(title: str, url: str, keep: dict, verdict: dict,
     def clean(text: str) -> str:
         return remove_dashes(" ".join(str(text).split()))
 
+    def q(text: str) -> str:
+        """JSON-quote a free-text scalar. A JSON string is a valid YAML
+        double-quoted scalar, so colons, quotes, and hash marks in
+        candidate text cannot break the file (the 2026-08-03 crash: an
+        unquoted structural character in a candidate field failed the
+        post-append parse). Dates, enums, and URLs stay unquoted; they
+        are gate-validated against strict patterns."""
+        return json.dumps(clean(text), ensure_ascii=False)
+
     deadline = str(verdict["deadline"]).strip()
     deadline_out = ("Rolling" if deadline.lower() == "rolling"
                     else deadline)
@@ -166,12 +175,12 @@ def build_entry_yaml(title: str, url: str, keep: dict, verdict: dict,
         f"# Auto-verified {today_iso} from the official page (managed "
         "platform; gates: current, organizer named, free entry, "
         "deadline confirmed).",
-        f"- name: {clean(title)}",
+        f"- name: {q(title)}",
         f"  url: {url}",
-        f"  organizer: {clean(verdict['organizer'])}",
+        f"  organizer: {q(verdict['organizer'])}",
         f"  type: {keep['type']}",
         f"  format: {verdict['format']}",
-        f"  eligibility: {clean(verdict['eligibility'])}",
+        f"  eligibility: {q(verdict['eligibility'])}",
         f"  deadline: {deadline_out}",
     ]
     if verdict.get("start_date"):
@@ -182,8 +191,9 @@ def build_entry_yaml(title: str, url: str, keep: dict, verdict: dict,
         support_clean = clean(support)
         if not support_clean.lower().startswith("organizer-stated"):
             support_clean = f"Organizer-stated: {support_clean}"
-        lines.append(f'  support: "{support_clean}"')
-    lines.append(f"  relevance: {clean(keep.get('why', ''))}")
+        lines.append(
+            "  support: " + json.dumps(support_clean, ensure_ascii=False))
+    lines.append(f"  relevance: {q(keep.get('why', ''))}")
     lines.append(f"  verified: {today_iso}")
     return "\n".join(lines)
 
@@ -398,7 +408,11 @@ def main() -> int:
             append_opportunity(entry_yaml, clean_name)
             existing_names.add(clean_name.lower())
             applied.append((clean_name, keep["url"]))
-        except (ValueError, OSError) as exc:
+        except (ValueError, OSError, yaml.YAMLError) as exc:
+            # yaml.YAMLError added 2026-08-04: the post-append parse
+            # raises it for candidate text that breaks the file, and it
+            # is not a ValueError subclass; uncaught, it killed the
+            # whole 2026-08-03 run before any report was filed.
             failures.append(f"apply {c['title'][:50]}: {exc}")
 
     report_lines = [

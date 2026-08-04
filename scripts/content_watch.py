@@ -200,6 +200,18 @@ def call_task(config: dict, task: str, system: str, user: str) -> dict:
             f"reply truncated at the max_tokens ceiling "
             f"({cfg.get('max_tokens', 4000)}); raise max_tokens under "
             f"llm.tasks.{task} in feeds.yaml")
+    # An empty reply is what a refusal stop returns by design, and it
+    # otherwise surfaces as "Expecting value: char 0" with no hint of
+    # the cause (issues #20 and #32). Borderline refusals on benign
+    # payloads are stochastic, so retry once before failing with the
+    # stop reason named. Retry added 2026-08-04.
+    if provider == "anthropic" and not raw.strip():
+        raw = call(system, user, cfg, 300)
+        if not raw.strip():
+            raise RuntimeError(
+                "empty reply on two attempts (last stop reason "
+                f"{LAST_ANTHROPIC_STOP.get('reason')!r}); a refusal "
+                "stop returns empty text by design")
     return parse_llm_json(raw)
 
 

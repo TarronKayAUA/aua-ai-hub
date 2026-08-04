@@ -252,8 +252,14 @@ categories:
         weight: 0.5
       - name: Ars Technica AI
         url: https://arstechnica.com/ai/feed/
-      - name: LMArena blog
-        url: https://news.lmarena.ai/rss/
+      # LMArena blog disabled 2026-08-04 (feed-health issue #31): after
+      # their blog platform migration, every feed path on
+      # news.lmarena.ai (rss/, feed/, rss.xml, feed.xml, atom.xml,
+      # probed with browser headers) serves an HTML page with embedded
+      # scripts instead of XML, so parsing yields 0 entries. Re-probe
+      # when their blog stabilizes and re-enable by uncommenting.
+      # - name: LMArena blog
+      #   url: https://news.lmarena.ai/rss/
       # Accessible-commentary expansion (owner approved 2026-07-14). The
       # MIT Technology Review feed mixes vendor-sponsored posts tagged
       # "sponsored"; aggregate.normalize drops that tag at ingest.
