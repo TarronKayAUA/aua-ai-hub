@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=SJJBPwlPpww" target="_blank" rel="noopener" title="How AI Helps Solve Medical Mysteries at Boston Children’s Hospital | OpenAI Forum">
+  <img src="https://i4.ytimg.com/vi/SJJBPwlPpww/hqdefault.jpg" alt="Video: AI application for rare disease diagnosis at Boston Children&#x27;s Hospital" loading="lazy">
+  <span class="video-card-title">AI application for rare disease diagnosis at Boston Children&#x27;s Hospital</span>
+  <span class="video-card-meta">OpenAI, August 4, 2026</span>
+  <span class="video-card-desc">Boston Children&#x27;s Hospital uses AI to help clinicians diagnose rare genetic diseases when conventional testing leaves patients without answers.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=f0Y3tQp2OqQ" target="_blank" rel="noopener" title="Fable 5 &amp; Qwen 27B, Traycer Multi-Agent Hands-On Test!">
   <img src="https://i3.ytimg.com/vi/f0Y3tQp2OqQ/hqdefault.jpg" alt="Video: Fable 5 and Qwen 27B multi-agent hands-on test" loading="lazy">
   <span class="video-card-title">Fable 5 and Qwen 27B multi-agent hands-on test</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Qwen 3.8 Max benchmark testing and comparison</span>
   <span class="video-card-meta">WorldofAI, July 20, 2026</span>
   <span class="video-card-desc">Hands-on benchmark testing of the Qwen 3.8 Max model against competitors, with reproducible methodology shared for independent verification.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=4fPLsmJNaMI" target="_blank" rel="noopener" title="Kimi K3 CRUSHED Fable">
-  <img src="https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg" alt="Video: Kimi K3 and Fable model comparison" loading="lazy">
-  <span class="video-card-title">Kimi K3 and Fable model comparison</span>
-  <span class="video-card-meta">Wes Roth, July 18, 2026</span>
-  <span class="video-card-desc">Comparison of Kimi K3 and Fable models covering recent developments in large language models.</span>
 </a>
 </div>
 

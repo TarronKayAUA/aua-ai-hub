@@ -28554,6 +28554,153 @@
    "first_seen": "2026-08-04T18:04:26.721449+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+   "title_hash": "c954fc0c14d2524a9f2e1b22eed8a39f",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": false,
+   "reason": "industry and policy news without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
+   "title_hash": "a3c413affbdfddb3130a2fd624f1b96b",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": false,
+   "reason": "industry and policy news without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand",
+   "title_hash": "4559153f0344ee4fd1fb45df7602865a",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": false,
+   "reason": "industry and policy news without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e91061",
+   "title_hash": "7c0521a28a14b010c6ceb7a9f7c85bb1",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "Mapping the Evolving AI Preferences and Care Needs in Orthopedic Transitional Care From Hospitals to Home: Cross-Sectional Study",
+   "source": "JMIR AI",
+   "published": "2026-08-04T20:00:24+00:00",
+   "summary": "Cross-sectional study mapped patient and family preferences for AI-powered digital systems supporting orthopedic recovery after discharge from hospital.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e90848",
+   "title_hash": "155225b65d1522838717724ce0777132",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "AI in Disaster Medicine: Scoping Review of Methods, Validation, and System Integration",
+   "source": "JMIR AI",
+   "published": "2026-08-04T20:00:24+00:00",
+   "summary": "Scoping review systematically mapped AI methods for disaster medicine, assessing progress from research toward operationally validated clinical systems.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e88581",
+   "title_hash": "16363a31344da18d68266b5a8010fc2e",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "Correctness, Harmfulness, and Diversity of Large Language Models for Colonoscopy Preparation Assistance: Comparative Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-08-04T20:00:24+00:00",
+   "summary": "Comparative study evaluated large language models for correctness, safety, and diversity of guidance on colonoscopy preparation instructions for patients.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e89259",
+   "title_hash": "6627e0011d83568f0dd802a438bc210c",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; addresses climate and sustainability education without AI as subject"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e83889",
+   "title_hash": "6e054a1fd7ae59a9a025105b1f4963b9",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "Prediction of Blood Transfusion Need and Dose in Patients With Upper Gastrointestinal Bleeding: Retrospective Multicenter Prediction Model Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-04T19:45:13+00:00",
+   "summary": "Multicenter study developed a gradient boosting model to predict transfusion need and dose in upper gastrointestinal bleeding with calibrated individualized risk estimates.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://icenet.blog/2026/08/04/rolling-for-resuscitation-designing-a-board-game-for-learning-about-the-icu",
+   "title_hash": "262cd018beff8183c5a20afd439d2da0",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; board game design without AI component"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e98207",
+   "title_hash": "17c94bbe36aa3c3d5421cbb671de3d8a",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "Large Language Model, Based Clinical Decision Support for Antibiotic Selection and Dose Recommendation in Hospitalized Patients With Pneumonia: Multicenter Retrospective Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-04T19:30:16+00:00",
+   "summary": "Retrospective multicenter study evaluated large language model performance for antibiotic selection and dose recommendation in hospitalized pneumonia patients.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx",
+   "title_hash": "cebb2c0956fa9d86252ca9fdcc0d5e5e",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche software package"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e78485",
+   "title_hash": "6be94c0feb0eedeaa91e1ffb932fbff9",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "Benchmarking AI-Powered Translation of the EQ-5D-5L Patient-Reported Outcome Measure Using Automated Metrics: Comparative Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-08-04T18:30:16+00:00",
+   "summary": "Study benchmarked AI translation of the EQ-5D-5L patient outcome measure against human translation standards to assess feasibility for multinational clinical research.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SJJBPwlPpww",
+   "title_hash": "a1bf110dd50748999aae99bd1ddfd082",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "How AI Helps Solve Medical Mysteries at Boston Children’s Hospital | OpenAI Forum",
+   "source": "OpenAI",
+   "published": "2026-08-04T20:29:24+00:00",
+   "summary": "Boston Children's Hospital uses AI to help clinicians diagnose rare genetic diseases when conventional testing leaves patients without answers.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/SJJBPwlPpww/hqdefault.jpg",
+   "display_title": "AI application for rare disease diagnosis at Boston Children's Hospital"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Washing-Wont-Work-Much-Longer-e3mvkl0",
+   "title_hash": "fa419e0032328d6925e84c08ca56cff2",
+   "first_seen": "2026-08-04T21:37:58.722511+00:00",
+   "kept": true,
+   "title": "Why AI Washing Won’t Work Much Longer",
+   "source": "The AI Daily Brief",
+   "published": "2026-08-04T18:45:32+00:00",
+   "summary": "Discussion of how open models and organizational sophistication are raising scrutiny of corporate AI claims and shallow implementations.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [
@@ -28709,8 +28856,8 @@
    "date": "August 4, 2026"
   },
   "clinical_practice": {
-   "text": "A peer-reviewed synthesis on AI chatbots and youth suicide risk highlights persistent evidence gaps and calls for a dedicated clinical research agenda <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[14]</a>. Trust also varies by user: a Nature Medicine study finds explainable AI for dermatological diagnosis shifts clinician and lay-person decision-making differently <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[2]</a>, while a retrieval-augmented decision support tool for hip-joint disease assessment performed acceptably in retrospective testing but showed reduced accuracy in complex cases, prompting calls for prospective evaluation before clinical use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[13]</a>. On the patient-facing side, a comparison of AI and human diabetes-prevention coaching found differences in engagement and preference that could shape how such tools are deployed <a href=\"https://www.nature.com/articles/s41746-026-03063-w\">[9]</a>.\n\nAlso this week: six items address safety and evaluation, covering model fairness and real-world deployment of language models for mental health; three cover clinical decision support and three focus on patient-facing tools such as motivational interviewing counselors. Two papers examine imaging and diagnostics, and one addresses clinical documentation through medical text validation.",
-   "hash": "8fd2022b3fff9c99",
+   "text": "Explainable AI is emerging as a double-edged tool in diagnosis: a Nature Medicine study of dermatology decision support found that showing the same AI explanations to clinicians and to lay users changed their trust and choices in different, sometimes conflicting, ways <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[8]</a>. Patient-facing language models are drawing similar scrutiny, with a comparative evaluation of colonoscopy preparation guidance finding meaningful differences in correctness, harm potential, and consistency across models <a href=\"https://ai.jmir.org/2026/1/e88581\">[3]</a>. Clinical decision support is expanding past diagnosis into treatment logistics, as multicenter research tested large language models for antibiotic selection and dosing in hospitalized pneumonia patients <a href=\"https://medinform.jmir.org/2026/1/e98207\">[5]</a>. Fairness questions also persist, with new work examining how vision-language classifiers perform across intersecting demographic groups in medical imaging <a href=\"https://www.nature.com/articles/s41746-026-03030-5\">[13]</a>.\n\nAlso this week: the section adds five papers on safety and evaluation, four on patient-facing tools including AI versus human coaching for diabetes prevention, three on clinical decision support, two on imaging and diagnostics such as chest radiography detection thresholds, and one on documentation-focused text validation.",
+   "hash": "e4f03f49878cc062",
    "date": "August 4, 2026"
   },
   "general_ai": {

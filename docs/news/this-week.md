@@ -274,15 +274,57 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A peer-reviewed synthesis on AI chatbots and youth suicide risk highlights persistent evidence gaps and calls for a dedicated clinical research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[14]</a>. Trust also varies by user: a Nature Medicine study finds explainable AI for dermatological diagnosis shifts clinician and lay-person decision-making differently <a href="https://www.nature.com/articles/s41591-026-04553-w">[2]</a>, while a retrieval-augmented decision support tool for hip-joint disease assessment performed acceptably in retrospective testing but showed reduced accuracy in complex cases, prompting calls for prospective evaluation before clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[13]</a>. On the patient-facing side, a comparison of AI and human diabetes-prevention coaching found differences in engagement and preference that could shape how such tools are deployed <a href="https://www.nature.com/articles/s41746-026-03063-w">[9]</a>.</p>
-<p>Also this week: six items address safety and evaluation, covering model fairness and real-world deployment of language models for mental health; three cover clinical decision support and three focus on patient-facing tools such as motivational interviewing counselors. Two papers examine imaging and diagnostics, and one addresses clinical documentation through medical text validation.</p>
+<p>Explainable AI is emerging as a double-edged tool in diagnosis: a Nature Medicine study of dermatology decision support found that showing the same AI explanations to clinicians and to lay users changed their trust and choices in different, sometimes conflicting, ways <a href="https://www.nature.com/articles/s41591-026-04553-w">[8]</a>. Patient-facing language models are drawing similar scrutiny, with a comparative evaluation of colonoscopy preparation guidance finding meaningful differences in correctness, harm potential, and consistency across models <a href="https://ai.jmir.org/2026/1/e88581">[3]</a>. Clinical decision support is expanding past diagnosis into treatment logistics, as multicenter research tested large language models for antibiotic selection and dosing in hospitalized pneumonia patients <a href="https://medinform.jmir.org/2026/1/e98207">[5]</a>. Fairness questions also persist, with new work examining how vision-language classifiers perform across intersecting demographic groups in medical imaging <a href="https://www.nature.com/articles/s41746-026-03030-5">[13]</a>.</p>
+<p>Also this week: the section adds five papers on safety and evaluation, four on patient-facing tools including AI versus human coaching for diabetes prevention, three on clinical decision support, two on imaging and diagnostics such as chest radiography detection thresholds, and one on documentation-focused text validation.</p>
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e91061">Mapping the Evolving AI Preferences and Care Needs in Orthopedic Transitional Care From Hospitals to Home: Cross-Sectional Study</a>
+        <p class="news-card-summary">Cross-sectional study mapped patient and family preferences for AI-powered digital systems supporting orthopedic recovery after discharge from hospital.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90848">AI in Disaster Medicine: Scoping Review of Methods, Validation, and System Integration</a>
+        <p class="news-card-summary">Scoping review systematically mapped AI methods for disaster medicine, assessing progress from research toward operationally validated clinical systems.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88581">Correctness, Harmfulness, and Diversity of Large Language Models for Colonoscopy Preparation Assistance: Comparative Evaluation Study</a>
+        <p class="news-card-summary">Comparative study evaluated large language models for correctness, safety, and diversity of guidance on colonoscopy preparation instructions for patients.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83889">Prediction of Blood Transfusion Need and Dose in Patients With Upper Gastrointestinal Bleeding: Retrospective Multicenter Prediction Model Study</a>
+        <p class="news-card-summary">Multicenter study developed a gradient boosting model to predict transfusion need and dose in upper gastrointestinal bleeding with calibrated individualized risk estimates.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e98207">Large Language Model, Based Clinical Decision Support for Antibiotic Selection and Dose Recommendation in Hospitalized Patients With Pneumonia: Multicenter Retrospective Study</a>
+        <p class="news-card-summary">Retrospective multicenter study evaluated large language model performance for antibiotic selection and dose recommendation in hospitalized pneumonia patients.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e78485">Benchmarking AI-Powered Translation of the EQ-5D-5L Patient-Reported Outcome Measure Using Automated Metrics: Comparative Evaluation Study</a>
+        <p class="news-card-summary">Study benchmarked AI translation of the EQ-5D-5L patient outcome measure against human translation standards to assess feasibility for multinational clinical research.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
@@ -530,13 +572,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Multi-agent multimodal large language model framework integrates stroke imaging to generate evidence-based treatment recommendations for acute ischemic stroke.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88734">Propagation of Interpreter Errors by Ambient AI Scribes: Study Using Simulated Clinical Encounters</a>
-        <p class="news-card-summary">Ambient AI scribes propagated interpreter errors into clinical notes during simulated multilingual encounters, with error patterns varying by speaker role and error type.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
@@ -551,13 +586,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Pilot study of ambient AI in family medicine residency shows association with improved resident well-being, satisfaction, and documentation efficiency.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03037-y">AI assistance for fetal ultrasound interpretation in a multi-reader study</a>
-        <p class="news-card-summary">Multi-reader study evaluates AI assistance for fetal ultrasound interpretation, examining model performance across different clinical readers.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -568,9 +596,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 60 items"
+??? abstract "Show the 58 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (60)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (58)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -994,22 +1022,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/despite-ai-hype-googles-data-shows-workers-arent-automating-themselves-away">Despite AI hype, Google&#x27;s data shows workers aren&#x27;t automating themselves away</a>
-        <p class="news-card-summary">Analysis of 15 million real AI interactions shows most tasks at most jobs remain unaffected by automation.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1711353151-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta">AI leaders sign statement asking the government to do something about automated AI</a>
-        <p class="news-card-summary">Employees from major AI labs including OpenAI, Anthropic, and Google sign statement supporting government coordination on frontier AI development governance.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25362061/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 27, 2026</span></div>
@@ -1030,9 +1042,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 10 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=SJJBPwlPpww" target="_blank" rel="noopener" title="How AI Helps Solve Medical Mysteries at Boston Children’s Hospital | OpenAI Forum">
+      <img src="https://i4.ytimg.com/vi/SJJBPwlPpww/hqdefault.jpg" alt="Video: AI application for rare disease diagnosis at Boston Children&#x27;s Hospital" loading="lazy">
+      <span class="video-card-title">AI application for rare disease diagnosis at Boston Children&#x27;s Hospital</span>
+      <span class="video-card-meta">OpenAI, August 4, 2026</span>
+      <span class="video-card-desc">Boston Children&#x27;s Hospital uses AI to help clinicians diagnose rare genetic diseases when conventional testing leaves patients without answers.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=f0Y3tQp2OqQ" target="_blank" rel="noopener" title="Fable 5 &amp; Qwen 27B, Traycer Multi-Agent Hands-On Test!">
       <img src="https://i3.ytimg.com/vi/f0Y3tQp2OqQ/hqdefault.jpg" alt="Video: Fable 5 and Qwen 27B multi-agent hands-on test" loading="lazy">
       <span class="video-card-title">Fable 5 and Qwen 27B multi-agent hands-on test</span>
@@ -1097,9 +1115,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 1 episode"
+??? abstract "Show the 2 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Washing-Wont-Work-Much-Longer-e3mvkl0" target="_blank" rel="noopener">
+      <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why AI Washing Won’t Work Much Longer" loading="lazy">
+      <span class="video-card-title">Why AI Washing Won’t Work Much Longer</span>
+      <span class="video-card-meta">The AI Daily Brief, August 4, 2026</span>
+      <span class="video-card-desc">Discussion of how open models and organizational sophistication are raising scrutiny of corporate AI claims and shallow implementations.</span>
+    </a>
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1" target="_blank" rel="noopener">
       <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Everything You Need to Know About AI Tokens" loading="lazy">
       <span class="video-card-title">Everything You Need to Know About AI Tokens</span>

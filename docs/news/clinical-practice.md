@@ -13,14 +13,56 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A peer-reviewed synthesis on AI chatbots and youth suicide risk highlights persistent evidence gaps and calls for a dedicated clinical research agenda <a href="https://www.nature.com/articles/s41746-026-03080-9">[14]</a>. Trust also varies by user: a Nature Medicine study finds explainable AI for dermatological diagnosis shifts clinician and lay-person decision-making differently <a href="https://www.nature.com/articles/s41591-026-04553-w">[2]</a>, while a retrieval-augmented decision support tool for hip-joint disease assessment performed acceptably in retrospective testing but showed reduced accuracy in complex cases, prompting calls for prospective evaluation before clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[13]</a>. On the patient-facing side, a comparison of AI and human diabetes-prevention coaching found differences in engagement and preference that could shape how such tools are deployed <a href="https://www.nature.com/articles/s41746-026-03063-w">[9]</a>.</p>
-<p>Also this week: six items address safety and evaluation, covering model fairness and real-world deployment of language models for mental health; three cover clinical decision support and three focus on patient-facing tools such as motivational interviewing counselors. Two papers examine imaging and diagnostics, and one addresses clinical documentation through medical text validation.</p>
+<p>Explainable AI is emerging as a double-edged tool in diagnosis: a Nature Medicine study of dermatology decision support found that showing the same AI explanations to clinicians and to lay users changed their trust and choices in different, sometimes conflicting, ways <a href="https://www.nature.com/articles/s41591-026-04553-w">[8]</a>. Patient-facing language models are drawing similar scrutiny, with a comparative evaluation of colonoscopy preparation guidance finding meaningful differences in correctness, harm potential, and consistency across models <a href="https://ai.jmir.org/2026/1/e88581">[3]</a>. Clinical decision support is expanding past diagnosis into treatment logistics, as multicenter research tested large language models for antibiotic selection and dosing in hospitalized pneumonia patients <a href="https://medinform.jmir.org/2026/1/e98207">[5]</a>. Fairness questions also persist, with new work examining how vision-language classifiers perform across intersecting demographic groups in medical imaging <a href="https://www.nature.com/articles/s41746-026-03030-5">[13]</a>.</p>
+<p>Also this week: the section adds five papers on safety and evaluation, four on patient-facing tools including AI versus human coaching for diabetes prevention, three on clinical decision support, two on imaging and diagnostics such as chest radiography detection thresholds, and one on documentation-focused text validation.</p>
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e91061">Mapping the Evolving AI Preferences and Care Needs in Orthopedic Transitional Care From Hospitals to Home: Cross-Sectional Study</a>
+    <p class="news-card-summary">Cross-sectional study mapped patient and family preferences for AI-powered digital systems supporting orthopedic recovery after discharge from hospital.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90848">AI in Disaster Medicine: Scoping Review of Methods, Validation, and System Integration</a>
+    <p class="news-card-summary">Scoping review systematically mapped AI methods for disaster medicine, assessing progress from research toward operationally validated clinical systems.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88581">Correctness, Harmfulness, and Diversity of Large Language Models for Colonoscopy Preparation Assistance: Comparative Evaluation Study</a>
+    <p class="news-card-summary">Comparative study evaluated large language models for correctness, safety, and diversity of guidance on colonoscopy preparation instructions for patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83889">Prediction of Blood Transfusion Need and Dose in Patients With Upper Gastrointestinal Bleeding: Retrospective Multicenter Prediction Model Study</a>
+    <p class="news-card-summary">Multicenter study developed a gradient boosting model to predict transfusion need and dose in upper gastrointestinal bleeding with calibrated individualized risk estimates.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e98207">Large Language Model, Based Clinical Decision Support for Antibiotic Selection and Dose Recommendation in Hospitalized Patients With Pneumonia: Multicenter Retrospective Study</a>
+    <p class="news-card-summary">Retrospective multicenter study evaluated large language model performance for antibiotic selection and dose recommendation in hospitalized pneumonia patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e78485">Benchmarking AI-Powered Translation of the EQ-5D-5L Patient-Reported Outcome Measure Using Automated Metrics: Comparative Evaluation Study</a>
+    <p class="news-card-summary">Study benchmarked AI translation of the EQ-5D-5L patient outcome measure against human translation standards to assess feasibility for multinational clinical research.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
@@ -82,48 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03063-w">Patient engagement, acceptability, and preference of artificial intelligence versus human coaching for diabetes prevention</a>
     <p class="news-card-summary">A study compares patient engagement and preference between AI coaching and human coaching for diabetes prevention.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02813-0">Interpreting the clinical utility and generalizability of a multitask perioperative prediction model</a>
-    <p class="news-card-summary">A multitask model for perioperative prediction is evaluated for clinical utility and generalizability across patient populations and settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02997-5">Predicting Alzheimer progression using EEG-based digital twins</a>
-    <p class="news-card-summary">EEG-based digital twins were developed to predict Alzheimer disease progression, offering a computational approach to clinical outcome forecasting.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03053-y">Cross-linguistic benchmarking of NLP metrics for psychosis research</a>
-    <p class="news-card-summary">Cross-linguistic natural language processing metrics were benchmarked for psychosis research, establishing standardized evaluation approaches across languages.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">Retrieval-augmented clinical decision support for structured hip-joint disease assessment</a>
-    <p class="news-card-summary">A retrieval-augmented system for hip-joint disease assessment showed feasible retrospective performance but lower accuracy in complex cases, warranting caution and prospective workflow evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03080-9">AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda</a>
-    <p class="news-card-summary">A peer-reviewed synthesis of evidence on AI chatbot risks and benefits for youth suicide prevention, identifying research gaps and outlining a clinical agenda.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02842-9">Real-world use of large language models for mental health in 2024</a>
-    <p class="news-card-summary">A peer-reviewed study of how large language models were actually deployed and used for mental health applications during 2024.</p>
   </div>
 </div>
 </div>

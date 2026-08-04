@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Washing-Wont-Work-Much-Longer-e3mvkl0" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why AI Washing Won’t Work Much Longer" loading="lazy">
+  <span class="video-card-title">Why AI Washing Won’t Work Much Longer</span>
+  <span class="video-card-meta">The AI Daily Brief, August 4, 2026</span>
+  <span class="video-card-desc">Discussion of how open models and organizational sophistication are raising scrutiny of corporate AI claims and shallow implementations.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Everything You Need to Know About AI Tokens" loading="lazy">
   <span class="video-card-title">Everything You Need to Know About AI Tokens</span>
