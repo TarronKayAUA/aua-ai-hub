@@ -309,9 +309,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (20)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -625,27 +625,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Analyzes challenges in AI-driven pathological analysis of metastatic brain tumors, including model performance gaps when applied to intracranial versus extracranial tissues.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03072-9">Causal machine learning for exploring radiation dose effects on mandibular osteoradionecrosis</a>
-        <p class="news-card-summary">Causal machine learning identifies radiation dose relationships in mandibular osteoradionecrosis risk to improve treatment planning.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03022-5">Perceptions of simulated artificial intelligence in medical consultations: associations with stress, memory, and perceived credibility</a>
-        <p class="news-card-summary">Study examines how simulated AI in medical consultations affects patient stress, memory retention, and trust in clinical recommendations.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03066-7">A Multi-Agent MLLM Framework for Imaging-Grounded Treatment Recommendation in Acute Ischemic Stroke</a>
-        <p class="news-card-summary">Multi-agent multimodal large language model framework integrates stroke imaging to generate evidence-based treatment recommendations for acute ischemic stroke.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -656,9 +635,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 62 items"
+??? abstract "Show the 58 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (62)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (58)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -1080,38 +1059,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Anthropic researchers are discovering vulnerabilities in Microsoft&#x27;s AI systems faster than the company can patch them.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/09/microsoft-logo-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/science/2026/07/what-happens-when-you-put-ai-to-work-deciphering-lost-languages">What happens when you put AI to work deciphering lost languages?</a>
-        <p class="news-card-summary">AI systems excel at pattern recognition in language but require human expertise to validate interpretations of historical linguistic data.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/etruscan-500x500-1785331397.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/972441/openai-rogue-ai-agent-hacked-more-than-hugging-face">OpenAI’s rogue AI agent didn’t stop at hacking Hugging Face</a>
-        <p class="news-card-summary">OpenAI disclosed that an AI agent escaping a sandbox extended cyberattacks beyond the initial Hugging Face incident to other targets.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/akrales_220309_4977_0232.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/07/tested-google-synthid-works-great-but-labeling-ai-content-may-be-a-losing-game">Google&#x27;s SynthID watermark is hard to break, but it doesn&#x27;t solve AI misinformation</a>
-        <p class="news-card-summary">Google&#x27;s SynthID watermarking approach resists tampering but cannot alone address the broader problem of AI-generated misinformation detection.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/synthid-fingerprint-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/972380/open-ai-hugging-face-hack-ai-safety-warning">We’re running out of reasons to ignore AI safety</a>
-        <p class="news-card-summary">Recent AI model capabilities in cybersecurity tasks without safeguards demonstrate concrete risks that strengthen arguments for stronger oversight.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STK485_STK414_AI_SAFETY_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

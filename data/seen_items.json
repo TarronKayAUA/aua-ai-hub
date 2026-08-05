@@ -29367,6 +29367,20 @@
    "first_seen": "2026-08-05T13:58:29.850688+00:00",
    "kept": false,
    "reason": "travel narrative with minimal AI substance; logistics and consumer apps content rather than artificial intelligence development or policy"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/spacex-spooks-investors-with-debut-earnings-report",
+   "title_hash": "297af6e6e7a6bf0016db6adce952ed7d",
+   "first_seen": "2026-08-05T14:34:38.110920+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ppQh4Tc9BmM",
+   "title_hash": "3e786010aeea1b2fe37fe7555653099b",
+   "first_seen": "2026-08-05T14:34:38.110920+00:00",
+   "kept": false,
+   "reason": "sponsored content with promotional link integration"
   }
  ],
  "digests": [
