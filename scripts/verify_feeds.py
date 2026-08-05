@@ -29,7 +29,7 @@ TIMEOUT = 20
 
 def collect() -> list[tuple[str, str]]:
     if len(sys.argv) > 1:
-        return [("cli", url) for url in sys.argv[1:]]
+        return [("cli", url, False) for url in sys.argv[1:]]
     config = yaml.safe_load((REPO / "feeds.yaml").read_text(encoding="utf-8"))
     pairs = []
     for category, spec in config["categories"].items():
@@ -37,19 +37,28 @@ def collect() -> list[tuple[str, str]]:
             if feed["url"] == "TODO-OWNER":
                 print(f"skip {feed['name']} (URL pending owner action)")
                 continue
-            pairs.append((f"{category}:{feed['name']}", feed["url"]))
+            pairs.append((f"{category}:{feed['name']}", feed["url"],
+                          feed.get("browser_ua", False)))
     for channel in config.get("video_feeds", {}).get("channels", []):
         url = ("https://www.youtube.com/feeds/videos.xml?channel_id="
                + channel["channel_id"])
-        pairs.append((f"videos:{channel['name']}", url))
+        pairs.append((f"videos:{channel['name']}", url, False))
     for show in config.get("podcast_feeds", {}).get("shows", []):
-        pairs.append((f"podcasts:{show['name']}", show["url"]))
+        pairs.append((f"podcasts:{show['name']}", show["url"], False))
     return pairs
 
 
-def check(url: str) -> tuple[bool, str]:
+def check(url: str, browser_ua: bool = False) -> tuple[bool, str]:
+    # browser_ua mirrors the pipeline's per-feed override (2026-08-05):
+    # hosts like Mayo Clinic Platform reject plain client user agents.
+    headers = dict(HEADERS)
+    if browser_ua:
+        headers["User-Agent"] = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                 "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                 "Chrome/126.0.0.0 Safari/537.36 "
+                                 "(AUA-AI-Hub feed checker)")
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+        resp = requests.get(url, headers=headers, timeout=TIMEOUT)
         if resp.status_code >= 400:
             return False, f"HTTP {resp.status_code}"
     except requests.RequestException as exc:
@@ -69,8 +78,8 @@ def check(url: str) -> tuple[bool, str]:
 def main() -> int:
     pairs = collect()
     failures = []
-    for source, url in pairs:
-        ok, detail = check(url)
+    for source, url, browser_ua in pairs:
+        ok, detail = check(url, browser_ua)
         marker = "ok  " if ok else "FAIL"
         print(f"{marker} {detail}\n     {url}  ({source})")
         if not ok:

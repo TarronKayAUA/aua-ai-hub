@@ -237,8 +237,26 @@ categories:
         url: https://www.nature.com/nm.rss
         weight: 0.7
       # Accessible-commentary expansion (owner approved 2026-07-14).
+      # Substack began 403ing GitHub Actions datacenter IPs about
+      # 2026-08-02 (issue #31); the block keys on *.substack.com and
+      # api.substack.com hostnames (custom domains like sensible-med.com
+      # still pass). Ground Truths stays in the roster failing soft so
+      # it resumes automatically if the policy is tuned; Mayo Clinic
+      # Platform below is its replacement meanwhile (owner approved
+      # 2026-08-05).
       - name: Ground Truths
         url: https://erictopol.substack.com/feed
+      # Replacement for Ground Truths (owner approved 2026-08-05,
+      # selection delegated): STAT's dedicated AI-in-medicine desk,
+      # verified parsing under the pipeline's own user agent the same
+      # day (20 entries, fresh that morning). Mayo Clinic Platform was
+      # evaluated first as the closer editorial match, but its firewall
+      # escalated from blocking plain clients to blocking browser-styled
+      # ones within hours of probing, too fragile for an unattended
+      # pipeline. Some STAT links land on the STAT+ paywall; the feed
+      # itself carries open summaries, which is what curation reads.
+      - name: STAT News AI
+        url: https://www.statnews.com/topic/artificial-intelligence/feed/
       - name: Sensible Medicine
         url: https://www.sensible-med.com/feed
       - name: The Medical Futurist blog
@@ -284,9 +302,19 @@ categories:
       - name: Quanta Magazine AI
         url: https://www.quantamagazine.org/tag/artificial-intelligence/feed/
       # epoch.ai publishes no feed on its own domain; the Substack mirror
-      # carries the blog, Gradient Updates, and Epoch Brief.
+      # carries the blog, Gradient Updates, and Epoch Brief. Blocked for
+      # Actions IPs since about 2026-08-02 (issue #31); stays in the
+      # roster failing soft so it resumes automatically if Substack
+      # tunes the policy. Ahead of AI below is its replacement
+      # meanwhile (owner approved 2026-08-05).
       - name: Epoch AI
         url: https://epochai.substack.com/feed
+      # Sebastian Raschka's data-grounded analysis of model
+      # architectures, open-weight releases, and benchmarks, on his own
+      # domain. Verified parsing 2026-08-05 (139 entries, active).
+      # Feed summaries are short, so curation leans on titles here.
+      - name: Ahead of AI
+        url: https://sebastianraschka.com/rss_feed.xml
       - name: Import AI
         url: https://jack-clark.net/feed/
       - name: AI Policy Perspectives
@@ -563,8 +591,21 @@ podcast_feeds:
       # 2026-07-15); this is the feed's own atom:link rel=self canonical
       # Libsyn URL, verified fetching and parsing 2026-07-16.
       url: https://rss.libsyn.com/shows/216230/destinations/1569005.xml
+    # Blocked for Actions IPs since about 2026-08-02 (issue #31): the
+    # api.substack.com hostname is in the blocked class and the show
+    # has no non-Substack canonical feed (Apple's directory resolves to
+    # this same URL; latent.space/feed is the mixed newsletter feed,
+    # verified 2026-08-05). Stays failing soft in case the policy is
+    # tuned; The Cognitive Revolution below is its replacement.
     - name: Latent Space
       url: https://api.substack.com/feed/podcast/1084089.rss
+    # Long-form, measured interviews with AI builders and researchers,
+    # the closest match to Latent Space's niche. megaphone.fm host
+    # already proven CI-fetchable in this roster (Me, Myself, and AI).
+    # Verified parsing 2026-08-05 (362 entries, 2 to 3 episodes/week;
+    # per-feed caps handle the cadence). Owner approved 2026-08-05.
+    - name: The Cognitive Revolution
+      url: https://feeds.megaphone.fm/RINTP3108857801
 
 keyword_block:
   - sponsored

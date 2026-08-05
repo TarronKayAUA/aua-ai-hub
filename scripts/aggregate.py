@@ -247,12 +247,24 @@ def fmt_date(dt: datetime) -> str:
 # --- fetch and normalize ----------------------------------------------------
 
 
-def fetch_feed(url: str, timeout: int, verbose: bool) -> bytes:
+# Some hosts' firewalls reject plain client user agents but serve
+# browser-styled ones (Mayo Clinic Platform, 2026-08-05). Feeds carrying
+# `browser_ua: true` in feeds.yaml fetch with this instead; the suffix
+# keeps the client identifiable.
+BROWSER_STYLE_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/126.0.0.0 Safari/537.36 "
+                    "(AUA-AI-Hub pipeline)")
+
+
+def fetch_feed(url: str, timeout: int, verbose: bool,
+               browser_ua: bool = False) -> bytes:
     last_error = None
+    ua = BROWSER_STYLE_UA if browser_ua else USER_AGENT
     for attempt in range(1 + RETRIES):
         try:
             resp = requests.get(
-                url, headers={"User-Agent": USER_AGENT}, timeout=timeout
+                url, headers={"User-Agent": ua}, timeout=timeout
             )
             if resp.status_code >= 400:
                 raise requests.HTTPError(f"HTTP {resp.status_code}")
@@ -2316,7 +2328,8 @@ def main() -> int:
             if args.verbose:
                 print(f"fetching {name} ({url})")
             try:
-                content = fetch_feed(url, timeout, args.verbose)
+                content = fetch_feed(url, timeout, args.verbose,
+                                     feed.get("browser_ua", False))
             except RuntimeError as exc:
                 feeds_failed.append(f"{name}: {exc}")
                 continue
