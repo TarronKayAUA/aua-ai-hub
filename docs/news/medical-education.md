@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An AI-supervised remote exam that forced 58,000 students to retest after anomalous scoring <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[4]</a> underscores mounting scrutiny of automated assessment tools, even as other studies report gains from AI in teaching. A randomized trial found deep learning guidance improved novice ultrasound image acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[1]</a>, and a pre-matriculation curriculum using AI-assisted study strategies showed feasibility for incoming medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[6]</a>. Meanwhile, large language models scoring voice-based virtual patient encounters showed only moderate agreement with faculty raters <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[8]</a>, and a four-pillar framework for AI-resilient assessment design responds to concerns about generative AI misuse in coursework <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[9]</a>.</p>
-<p>Also this week: the section adds to a broad curriculum literature spanning eight items, including new looks at AI clinical tutoring in telemedicine and constraint-optimization scheduling for pediatric residencies, alongside four papers on assessment and feedback, two exam and benchmark studies, and a single report on adoption attitudes among trainees.</p>
-<p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the items below.</p>
+<p>The invalidation of an AI-supervised remote exam that forced 58,000 students to retake testing after anomalous score patterns surfaced stands as the starkest warning yet about deploying automated proctoring at scale <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[5]</a>. That concern is echoed in a geriatrics knowledge assessment pilot where researchers caught financially incentivized participants submitting inauthentic survey responses, exposing gaps in research security <a href="https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98">[3]</a>. Educators are responding with structural fixes rather than detection alone: a four-pillar framework proposes redesigning coursework to resist generative AI misuse <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[10]</a>. On the curriculum side, a pre-matriculation program taught incoming medical students AI-assisted study strategies such as retrieval practice and spaced repetition before their first semester <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
+<p>Also this week: the section&#x27;s broader coverage spans teaching and curriculum (seven items), assessment and feedback (five), exams and benchmarks (two), and attitudes toward AI adoption (one). Topics range from a clinical AI tutor for pediatric telemedicine trainees to large language models generating diabetic retinopathy multiple-choice questions with variable accuracy.</p>
+<p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -33,6 +33,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42547997?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">Effects of AI on Nursing Education: Protocol for a Systematic Review and Meta-Analysis</a>
     <p class="news-card-summary">A systematic review protocol will synthesize evidence on how AI-assisted teaching affects nursing students&#x27; knowledge, practical ability, satisfaction, and confidence.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98">Survey Authentication Challenges During a Geriatrics Knowledge Assessment Pilot</a>
+    <p class="news-card-summary">A multi-institutional geriatrics knowledge assessment pilot detected inauthentic survey responses from financially incentivized participants, highlighting the need for security measures in educational research.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42529502?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Evaluating large language models for diabetic retinopathy multiple-choice question generation in clinical ophthalmic education</a>
     <p class="news-card-summary">Five large language models generated structurally sound multiple-choice questions on diabetic retinopathy with varying accuracy; Gemini and ChatGPT showed the best balance between correctness and expert-rated quality.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42529442?fc=20260609215449&amp;ff=20260730103409&amp;v=2.20.0.post5+40e1b98">Learning ophthalmic anatomy with AI-generated visual resource: the moderating role of educational background</a>
-    <p class="news-card-summary">An AI-assisted comparative exercise for ophthalmic anatomy did not significantly improve immediate test scores but increased satisfaction and self-assessed performance in non-medical students without increasing cognitive load.</p>
   </div>
 </div>
 </div>

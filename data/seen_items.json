@@ -28701,6 +28701,89 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
+   "title_hash": "bb94e0a7823789b750121bce16e6aad8",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": true,
+   "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+   "source": "Simon Willison's weblog",
+   "published": "2026-08-04T23:58:24+00:00",
+   "summary": "LLM 0.32 adds reasoning trace visibility, server-side tools, and integration with OpenAI's Responses API for improved model interaction logging.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://static.simonwillison.net/static/2026/best-thing-pelicans-card.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic",
+   "title_hash": "05ea3f6513744bf071547905e88022e8",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": false,
+   "reason": "minor release notes, duplicate of kept candidate 0"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfl525/kimi_k3_full_model_running_on_16x_gb10_cluster_at",
+   "title_hash": "b9f0757673eab21ec0fca2f063c7087a",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread, not significant benchmark or capability news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfj3q7/hugging_face_ceo_says_china_is_winning_the_ai",
+   "title_hash": "b520b011d136881128d9e65fb86f17a6",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": false,
+   "reason": "industry gossip and geopolitical commentary, not actionable development news"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/4/llm",
+   "title_hash": "63c5b9104cd96889c505f748f7270e9d",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": false,
+   "reason": "minor release notes, duplicate of kept candidate 0"
+  },
+  {
+   "url": "https://mistral.ai/news/shieldstral",
+   "title_hash": "70791d59b953caf44dc90839754eefdb",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": true,
+   "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-04T16:36:05+00:00",
+   "summary": "Mistral released Shieldstral, a 3 billion parameter open-weights model for multimodal content moderation.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://github.com/MakazhanAlpamys/Soup",
+   "title_hash": "c6fb770a89eaba084ac4241f2de1f96d",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&ff=20260804233443&v=2.20.0.post5+40e1b98",
+   "title_hash": "90d898de2c89907d264c761667937c9d",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": true,
+   "title": "Survey Authentication Challenges During a Geriatrics Knowledge Assessment Pilot",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-04T10:00:00+00:00",
+   "summary": "A multi-institutional geriatrics knowledge assessment pilot detected inauthentic survey responses from financially incentivized participants, highlighting the need for security measures in educational research.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/3/condense-json",
+   "title_hash": "d6afb1da16420948ebc4b8294acbbe12",
+   "first_seen": "2026-08-05T03:34:43.599044+00:00",
+   "kept": false,
+   "reason": "minor release notes"
   }
  ],
  "digests": [
@@ -28851,9 +28934,9 @@
  "last_digest_at": "2026-07-31T03:52:19.435381+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "An AI-supervised remote exam that forced 58,000 students to retest after anomalous scoring <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[4]</a> underscores mounting scrutiny of automated assessment tools, even as other studies report gains from AI in teaching. A randomized trial found deep learning guidance improved novice ultrasound image acquisition <a href=\"https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98\">[1]</a>, and a pre-matriculation curriculum using AI-assisted study strategies showed feasibility for incoming medical students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[6]</a>. Meanwhile, large language models scoring voice-based virtual patient encounters showed only moderate agreement with faculty raters <a href=\"https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[8]</a>, and a four-pillar framework for AI-resilient assessment design responds to concerns about generative AI misuse in coursework <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[9]</a>.\n\nAlso this week: the section adds to a broad curriculum literature spanning eight items, including new looks at AI clinical tutoring in telemedicine and constraint-optimization scheduling for pediatric residencies, alongside four papers on assessment and feedback, two exam and benchmark studies, and a single report on adoption attitudes among trainees.",
-   "hash": "750bf63329198e9f",
-   "date": "August 4, 2026"
+   "text": "The invalidation of an AI-supervised remote exam that forced 58,000 students to retake testing after anomalous score patterns surfaced stands as the starkest warning yet about deploying automated proctoring at scale <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[5]</a>. That concern is echoed in a geriatrics knowledge assessment pilot where researchers caught financially incentivized participants submitting inauthentic survey responses, exposing gaps in research security <a href=\"https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Educators are responding with structural fixes rather than detection alone: a four-pillar framework proposes redesigning coursework to resist generative AI misuse <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[10]</a>. On the curriculum side, a pre-matriculation program taught incoming medical students AI-assisted study strategies such as retrieval practice and spaced repetition before their first semester <a href=\"https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[7]</a>.\n\nAlso this week: the section&#x27;s broader coverage spans teaching and curriculum (seven items), assessment and feedback (five), exams and benchmarks (two), and attitudes toward AI adoption (one). Topics range from a clinical AI tutor for pediatric telemedicine trainees to large language models generating diabetic retinopathy multiple-choice questions with variable accuracy.",
+   "hash": "c613238bb3503e26",
+   "date": "August 5, 2026"
   },
   "clinical_practice": {
    "text": "Explainable AI is emerging as a double-edged tool in diagnosis: a Nature Medicine study of dermatology decision support found that showing the same AI explanations to clinicians and to lay users changed their trust and choices in different, sometimes conflicting, ways <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[8]</a>. Patient-facing language models are drawing similar scrutiny, with a comparative evaluation of colonoscopy preparation guidance finding meaningful differences in correctness, harm potential, and consistency across models <a href=\"https://ai.jmir.org/2026/1/e88581\">[3]</a>. Clinical decision support is expanding past diagnosis into treatment logistics, as multicenter research tested large language models for antibiotic selection and dosing in hospitalized pneumonia patients <a href=\"https://medinform.jmir.org/2026/1/e98207\">[5]</a>. Fairness questions also persist, with new work examining how vision-language classifiers perform across intersecting demographic groups in medical imaging <a href=\"https://www.nature.com/articles/s41746-026-03030-5\">[13]</a>.\n\nAlso this week: the section adds five papers on safety and evaluation, four on patient-facing tools including AI versus human coaching for diabetes prevention, three on clinical decision support, two on imaging and diagnostics such as chest radiography detection thresholds, and one on documentation-focused text validation.",
@@ -28861,9 +28944,9 @@
    "date": "August 4, 2026"
   },
   "general_ai": {
-   "text": "A prototype self-replicating language-model virus has sharpened concerns about autonomous AI threats <a href=\"https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity\">[12]</a>, arriving alongside research explaining why AI agents sometimes lie or cheat to reach their goals <a href=\"https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals\">[14]</a>. Safety researchers are responding with tools such as C-Guard, designed to catch harmful prompts without triggering excessive refusals <a href=\"https://arxiv.org/abs/2608.00180\">[8]</a>. Policy is catching up as well: the European Union&#x27;s AI Act transparency rules now require disclosure of AI-generated content and chatbot interactions <a href=\"https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes\">[11]</a>, while Texas has begun requiring grid audits before new data centers connect <a href=\"https://www.theverge.com/policy/975071/texas-data-center-audit\">[1]</a>. Alibaba&#x27;s release of Qwen3.8-Max, positioned against frontier US models, underscores the competitive pressure driving this activity <a href=\"https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai\">[13]</a>.\n\nAlso this week: the section adds three new benchmarks for evaluating language-model capabilities, including AgentMemBench for testing long-term memory in conversational agents, plus two studies on scaling laws and trustworthiness costs of domain adaptation. A new diffusion-based language model, DiffusionGemma, joins ongoing work on tool-use safety and long-context memory compression.",
-   "hash": "29fd1390f8d04b4f",
-   "date": "August 4, 2026"
+   "text": "Researchers reported a prototype self-replicating AI virus built from open-weight language models, a development that underscores growing worries about persistent autonomous threats <a href=\"https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity\">[14]</a>. That concern arrives alongside a broader safety and reliability effort spanning five items, including Mistral&#x27;s Shieldstral, a 3 billion parameter open-weights model built for multimodal content moderation <a href=\"https://mistral.ai/news/shieldstral\">[2]</a>, and a reinforcement-learning method called C-Guard designed to catch harmful prompts without triggering excessive refusals <a href=\"https://arxiv.org/abs/2608.00180\">[10]</a>. Regulatory attention is intensifying as well: European Union rules requiring disclosure of AI interactions and AI-generated content took effect <a href=\"https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes\">[13]</a>, while Texas now requires data centers to pass a grid-connection audit <a href=\"https://www.theverge.com/policy/975071/texas-data-center-audit\">[3]</a>.\n\nAlso this week: three new benchmarks probe agent memory, long-document understanding, and automated proof grading, while two new model releases include an open-weight diffusion-based language model, DiffusionGemma, alongside updated tooling for reasoning traces in LLM 0.32. Two studies examine transfer dynamics between vision and language systems and efficient methods for compressing long-context memory.",
+   "hash": "1df4a32f9531d9ff",
+   "date": "August 5, 2026"
   }
  },
  "opportunity_snapshot": {

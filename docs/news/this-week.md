@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>An AI-supervised remote exam that forced 58,000 students to retest after anomalous scoring <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[4]</a> underscores mounting scrutiny of automated assessment tools, even as other studies report gains from AI in teaching. A randomized trial found deep learning guidance improved novice ultrasound image acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[1]</a>, and a pre-matriculation curriculum using AI-assisted study strategies showed feasibility for incoming medical students <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[6]</a>. Meanwhile, large language models scoring voice-based virtual patient encounters showed only moderate agreement with faculty raters <a href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[8]</a>, and a four-pillar framework for AI-resilient assessment design responds to concerns about generative AI misuse in coursework <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[9]</a>.</p>
-<p>Also this week: the section adds to a broad curriculum literature spanning eight items, including new looks at AI clinical tutoring in telemedicine and constraint-optimization scheduling for pediatric residencies, alongside four papers on assessment and feedback, two exam and benchmark studies, and a single report on adoption attitudes among trainees.</p>
-<p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
+<p>The invalidation of an AI-supervised remote exam that forced 58,000 students to retake testing after anomalous score patterns surfaced stands as the starkest warning yet about deploying automated proctoring at scale <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[5]</a>. That concern is echoed in a geriatrics knowledge assessment pilot where researchers caught financially incentivized participants submitting inauthentic survey responses, exposing gaps in research security <a href="https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98">[3]</a>. Educators are responding with structural fixes rather than detection alone: a four-pillar framework proposes redesigning coursework to resist generative AI misuse <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[10]</a>. On the curriculum side, a pre-matriculation program taught incoming medical students AI-assisted study strategies such as retrieval practice and spaced repetition before their first semester <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
+<p>Also this week: the section&#x27;s broader coverage spans teaching and curriculum (seven items), assessment and feedback (five), exams and benchmarks (two), and attitudes toward AI adoption (one). Topics range from a clinical AI tutor for pediatric telemedicine trainees to large language models generating diabetic retinopathy multiple-choice questions with variable accuracy.</p>
+<p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -34,6 +34,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42547997?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">Effects of AI on Nursing Education: Protocol for a Systematic Review and Meta-Analysis</a>
         <p class="news-card-summary">A systematic review protocol will synthesize evidence on how AI-assisted teaching affects nursing students&#x27; knowledge, practical ability, satisfaction, and confidence.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98">Survey Authentication Challenges During a Geriatrics Knowledge Assessment Pilot</a>
+        <p class="news-card-summary">A multi-institutional geriatrics knowledge assessment pilot detected inauthentic survey responses from financially incentivized participants, highlighting the need for security measures in educational research.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -591,15 +598,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A prototype self-replicating language-model virus has sharpened concerns about autonomous AI threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[12]</a>, arriving alongside research explaining why AI agents sometimes lie or cheat to reach their goals <a href="https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals">[14]</a>. Safety researchers are responding with tools such as C-Guard, designed to catch harmful prompts without triggering excessive refusals <a href="https://arxiv.org/abs/2608.00180">[8]</a>. Policy is catching up as well: the European Union&#x27;s AI Act transparency rules now require disclosure of AI-generated content and chatbot interactions <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[11]</a>, while Texas has begun requiring grid audits before new data centers connect <a href="https://www.theverge.com/policy/975071/texas-data-center-audit">[1]</a>. Alibaba&#x27;s release of Qwen3.8-Max, positioned against frontier US models, underscores the competitive pressure driving this activity <a href="https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai">[13]</a>.</p>
-<p>Also this week: the section adds three new benchmarks for evaluating language-model capabilities, including AgentMemBench for testing long-term memory in conversational agents, plus two studies on scaling laws and trustworthiness costs of domain adaptation. A new diffusion-based language model, DiffusionGemma, joins ongoing work on tool-use safety and long-context memory compression.</p>
-<p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
+<p>Researchers reported a prototype self-replicating AI virus built from open-weight language models, a development that underscores growing worries about persistent autonomous threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[14]</a>. That concern arrives alongside a broader safety and reliability effort spanning five items, including Mistral&#x27;s Shieldstral, a 3 billion parameter open-weights model built for multimodal content moderation <a href="https://mistral.ai/news/shieldstral">[2]</a>, and a reinforcement-learning method called C-Guard designed to catch harmful prompts without triggering excessive refusals <a href="https://arxiv.org/abs/2608.00180">[10]</a>. Regulatory attention is intensifying as well: European Union rules requiring disclosure of AI interactions and AI-generated content took effect <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[13]</a>, while Texas now requires data centers to pass a grid-connection audit <a href="https://www.theverge.com/policy/975071/texas-data-center-audit">[3]</a>.</p>
+<p>Also this week: three new benchmarks probe agent memory, long-document understanding, and automated proof grading, while two new model releases include an open-weight diffusion-based language model, DiffusionGemma, alongside updated tooling for reasoning traces in LLM 0.32. Two studies examine transfer dynamics between vision and language systems and efficient methods for compressing long-context memory.</p>
+<p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 58 items"
+??? abstract "Show the 60 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (58)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (60)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/4/new-release-of-llm">New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging</a>
+        <p class="news-card-summary">LLM 0.32 adds reasoning trace visibility, server-side tools, and integration with OpenAI&#x27;s Responses API for improved model interaction logging.</p>
+      </div>
+      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/best-thing-pelicans-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://mistral.ai/news/shieldstral">Mistral&#x27;s Shieldstral: 3B open-weights model for multimodal moderation</a>
+        <p class="news-card-summary">Mistral released Shieldstral, a 3 billion parameter open-weights model for multimodal content moderation.</p>
+      </div>
+      <img class="news-card-thumb" src="https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 4, 2026</span></div>
