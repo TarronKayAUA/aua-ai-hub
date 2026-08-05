@@ -13,15 +13,58 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>An AI-supervised remote exam&#x27;s failure, which forced 58,000 students to retake testing after anomalous score distributions, underscores growing scrutiny of automated assessment tools <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[8]</a>. Amid these concerns, a four-pillar framework for AI-resilient assessment design proposes structural changes to coursework rather than relying on detection software <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[13]</a>. Elsewhere, evidence for AI&#x27;s instructional value is accumulating: a randomized trial found deep learning guidance improved novice performance in point-of-care ultrasound <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[1]</a>, while internal medicine residency guidance addresses safe, ethical AI use and prompt engineering <a href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">[6]</a>. Pediatric trainees using AI as a telemedicine tutor showed confidence gains but persistent gaps in digital competence <a href="https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[14]</a>.</p>
-<p>Also this week: nine items address teaching and curriculum, including a pre-matriculation study-strategies curriculum for incoming students, while four cover assessment and feedback, such as LLM-based scoring of virtual standardized patient exams. One item each addresses exam benchmarking and attitudes toward AI adoption.</p>
+<p>A remote exam proctored by AI invalidated results for 58,000 students after anomalous score distributions forced a mass retake <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[14]</a>, underscoring reliability concerns that echo findings that GPT-4&#x27;s performance on UK medical licensing practice questions shifts over time <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Such instability is pushing institutions to move past AI detectors toward redesigned assessment methods <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[6]</a>. Meanwhile a randomized trial found deep learning guidance improved novice point-of-care ultrasound acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[7]</a>, and a survey of first-year medical students showed widespread adoption of generative AI tools alongside calls for structured AI literacy <a href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[2]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum integration, including guidance for internal medicine residency on safe AI use. Four more cover assessment and feedback, such as endoscopy skill evaluation via vision transformers, and the remaining items span exam benchmark performance, simulation training, and student attitudes toward AI adoption.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553746?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Large language model-based simulated patient training for heart failure palliative care communication: a pilot study</a>
+        <p class="news-card-summary">Pilot study shows feasibility of web-based large language model simulated patient system for palliative care communication training with early signals of improved physician self-efficacy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Use and Perceptions of Generative Artificial Intelligence Tools Among First-Year Medical Students: A Cross-Sectional Survey</a>
+        <p class="news-card-summary">Survey of first-year medical students finds AI tools widely adopted and seen as enhancing traditional study methods, with structured AI literacy potentially affecting content evaluation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">The temporal changes in GPT-4 performance on UKMLA practice questions: educational and clinical implications</a>
+        <p class="news-card-summary">Longitudinal study shows GPT-4 performance on UKMLA practice questions varies over time, raising questions about stability of AI performance on medical licensing exams.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552577?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">The hidden patterns of alignment: exploring variability between generative AI and human</a>
+        <p class="news-card-summary">Study finds generative AI can consistently align pharmacological content with curricula but lacks the contextual judgment of human experts with diverse perspectives.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552483?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">See more, detect more: investigating colonic inspection techniques and polyp detection using machine learning</a>
+        <p class="news-card-summary">Vision Transformer machine learning model objectively assesses colonic inspection techniques and polyp detection rates, enabling targeted feedback to improve endoscopy performance.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">AI Detectors Are Out, New Assessments Are In</a>
+        <p class="news-card-summary">Universities increasingly abandon AI detectors as unreliable, prompting faculty to develop alternative assessment strategies for the age of generative AI.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robots_leaving_entering_gates.jpg?itok=q4gbxvzU" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
@@ -248,41 +291,55 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Proposes a framework for integrating AI competencies into orthodontic education, addressing curriculum design and implementation challenges for algorithm-augmented practice.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.25129">Deep Label-Wise Attentive Temporal Convolutional Networks Improve Medical Coding</a>
-        <p class="news-card-summary">Deep learning attention networks improve automated medical coding by better aggregating information from clinical notes and focusing on relevant sections for individual diagnosis and procedure codes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.25186">MyoCardBench: A Real-World Data Benchmark for Evaluating Large Language Models in Clinically Authentic Cardiovascular Care Scenarios</a>
-        <p class="news-card-summary">MyoCardBench is a real-world benchmark for evaluating large language models in longitudinal, multimodal cardiovascular care scenarios beyond isolated examination tasks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42521959?fc=20260609215449&amp;ff=20260729024626&amp;v=2.20.0">Artificial Intelligence in Psychiatric Graduate Medical Education</a>
-        <p class="news-card-summary">Responsible AI integration in psychiatry graduate medical education requires staged introduction, faculty engagement, human oversight, transparent communication, and prioritization of tools that deepen rather than replace human connection.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Explainable AI is emerging as a double-edged tool in diagnosis: a Nature Medicine study of dermatology decision support found that showing the same AI explanations to clinicians and to lay users changed their trust and choices in different, sometimes conflicting, ways <a href="https://www.nature.com/articles/s41591-026-04553-w">[8]</a>. Patient-facing language models are drawing similar scrutiny, with a comparative evaluation of colonoscopy preparation guidance finding meaningful differences in correctness, harm potential, and consistency across models <a href="https://ai.jmir.org/2026/1/e88581">[3]</a>. Clinical decision support is expanding past diagnosis into treatment logistics, as multicenter research tested large language models for antibiotic selection and dosing in hospitalized pneumonia patients <a href="https://medinform.jmir.org/2026/1/e98207">[5]</a>. Fairness questions also persist, with new work examining how vision-language classifiers perform across intersecting demographic groups in medical imaging <a href="https://www.nature.com/articles/s41746-026-03030-5">[13]</a>.</p>
-<p>Also this week: the section adds five papers on safety and evaluation, four on patient-facing tools including AI versus human coaching for diabetes prevention, three on clinical decision support, two on imaging and diagnostics such as chest radiography detection thresholds, and one on documentation-focused text validation.</p>
-<p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
+<p>A modified Delphi study found that ChatGPT-4 responses to identical COPD management prompts vary meaningfully in accuracy and clinical impact, reinforcing calls for physician oversight and guideline-anchored review <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[1]</a>. Similar retrospective work on antibiotic selection for hospitalized pneumonia patients reports comparable performance gaps, suggesting language models still need calibration against local protocols <a href="https://medinform.jmir.org/2026/1/e98207">[10]</a>. Separately, an explainable AI system for dermatological diagnosis shaped clinician and lay-user trust in divergent ways, complicating assumptions that transparency alone builds confidence <a href="https://www.nature.com/articles/s41591-026-04553-w">[13]</a>. At the workflow level, a tertiary hospital&#x27;s deployment of language model-based referral triage automation shows these tools reshaping administrative decision paths <a href="https://www.nature.com/articles/s41746-026-03067-6">[5]</a>.</p>
+<p>Also this week: the section adds five decision-support studies spanning transfusion prediction, disaster medicine mapping, and knowledge graph construction, alongside three patient-facing tools addressing translation, orthopedic recovery preferences, and colonoscopy-prep guidance. A single imaging study validates AI-assisted blood morphology analysis, and one paper addresses expert-level clinical documentation validation.</p>
+<p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Accuracy, Usefulness, and Impact Variability of ChatGPT-4 for COPD Medication Management: A Modified Delphi Study</a>
+        <p class="news-card-summary">Modified Delphi study demonstrates ChatGPT-4 responses to identical COPD prompts show material variability in accuracy and clinical impact, supporting oversight and guideline grounding.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03088-1">Conversational AI should fill the white space in mental health care, not replace humans</a>
+        <p class="news-card-summary">Commentary argues conversational AI should address gaps in mental health care delivery rather than replace human clinicians.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03089-0">AI-assisted digital peripheral blood morphology multicenter randomized paired method clinical validation study</a>
+        <p class="news-card-summary">Multicenter randomized clinical validation study demonstrates feasibility and efficacy of AI-assisted digital peripheral blood morphology analysis.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03071-w">Dynamic prediction of preterm birth and gestational age at delivery based on longitudinal electronic health records</a>
+        <p class="news-card-summary">Study presents machine learning model for dynamic prediction of preterm birth and gestational age delivery from longitudinal electronic health records.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03067-6">Large language model-assisted referral triage automation in a tertiary hospital</a>
+        <p class="news-card-summary">Large language model deployment automates referral triage routing in a tertiary hospital setting.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
@@ -544,13 +601,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Analyzes challenges in AI-driven pathological analysis of metastatic brain tumors, including model performance gaps when applied to intracranial versus extracranial tissues.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03068-5">An objective smartphone speech diagnostic aid for adolescent major depressive disorder</a>
-        <p class="news-card-summary">A smartphone speech analysis tool provides objective diagnostic support for adolescent major depressive disorder using voice-based markers.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 29, 2026</span></div>
@@ -577,15 +627,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Research this week complicates a basic assumption behind model ranking: pairwise preference scores, a common method for judging large language models, do not reliably predict clinical safety, according to a study built on clinician feedback from the MOOVE platform <a href="https://arxiv.org/abs/2608.02617">[2]</a>. That gap sits alongside a broader effort to tighten safety evaluation. A reinforcement learning method called C-Guard seeks to catch harmful prompts without triggering over-refusal on benign ones <a href="https://arxiv.org/abs/2608.00180">[14]</a>, while a cross-architecture study finds that adapting small language models for healthcare, legal, and financial use carries measurable trustworthiness costs <a href="https://arxiv.org/abs/2608.00042">[12]</a>. Mistral&#x27;s Shieldstral, a 3-billion-parameter open-weights moderation model, offers a practical tool for content screening <a href="https://mistral.ai/news/shieldstral">[6]</a>, and JudgeArena proposes a standardized framework to reduce fragmentation across LLM-as-judge benchmarks <a href="https://arxiv.org/abs/2608.02620">[3]</a>.</p>
-<p>Also this week: the section carries six items on safety and reliability and five on benchmarks and evaluation, including work on detecting tool-use failures through sparse neuron activity, memory management strategies for conversational agents, and long-document understanding tests drawn from clinical guidelines. Texas now requires a grid-connection audit for new data centers, and LLM 0.32 adds reasoning-trace visibility and server-side tool support.</p>
+<p>New research on clinical safety evaluation finds that reviewer preference between model answers does not reliably predict which response is actually safer for patients <a href="https://arxiv.org/abs/2608.02617">[3]</a>, raising questions for health systems validating AI tools before deployment. A related study on domain-adapted small language models shows that fine-tuning for healthcare can quietly erode trustworthiness in ways standard benchmarks miss <a href="https://arxiv.org/abs/2608.00042">[13]</a>. Regulatory oversight faces similar gaps: the Trump administration&#x27;s proposed AI testing framework skips cybersecurity evaluation and excludes open models <a href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">[1]</a>. Meanwhile, a new framework seeks to standardize how models are judged as evaluators, addressing inconsistency across current LLM-as-judge protocols <a href="https://arxiv.org/abs/2608.02620">[4]</a>.</p>
+<p>Also this week: two new model releases include Mistral&#x27;s Shieldstral, an open-weight moderation model, and a diffusion-based language model eliminating autoregressive decoding. Five further papers on benchmarks and evaluation cover document understanding, mathematical proof judging, and multimodal agent memory, while additional safety work addresses reinforcement learning trade-offs between over-refusal and harm detection. One item covers Texas data center grid requirements.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 63 items"
+??? abstract "Show the 62 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (63)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (62)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">Trump’s AI testing plan is limited and vague</a>
+        <p class="news-card-summary">Trump administration AI testing framework excludes open models and lacks technical evaluation capacity for cybersecurity risk assessment.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
@@ -1022,20 +1080,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">MIT Technology Review surveys recent developments in practical AI applications including robotics and domestic automation, covering both real capabilities and hype in near-term AI deployment.</p>
       </div>
       <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/JUL26-thumb.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.24999">CogArena: A Multimethod Evaluation of Cognitive Ability Structure in Large Language Models</a>
-        <p class="news-card-summary">CogArena is a multimethod benchmark of 13 paradigms designed to evaluate whether large language models&#x27; cognitive ability profiles converge across tasks and generalize beyond the models used to define them.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.25380">Memory for Large Language Models</a>
-        <p class="news-card-summary">A comprehensive survey examines memory as an architectural dimension in large language models, covering mechanisms from transient attention to parameter-efficient adaptations.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

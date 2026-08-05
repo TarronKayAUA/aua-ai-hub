@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Research this week complicates a basic assumption behind model ranking: pairwise preference scores, a common method for judging large language models, do not reliably predict clinical safety, according to a study built on clinician feedback from the MOOVE platform <a href="https://arxiv.org/abs/2608.02617">[2]</a>. That gap sits alongside a broader effort to tighten safety evaluation. A reinforcement learning method called C-Guard seeks to catch harmful prompts without triggering over-refusal on benign ones <a href="https://arxiv.org/abs/2608.00180">[14]</a>, while a cross-architecture study finds that adapting small language models for healthcare, legal, and financial use carries measurable trustworthiness costs <a href="https://arxiv.org/abs/2608.00042">[12]</a>. Mistral&#x27;s Shieldstral, a 3-billion-parameter open-weights moderation model, offers a practical tool for content screening <a href="https://mistral.ai/news/shieldstral">[6]</a>, and JudgeArena proposes a standardized framework to reduce fragmentation across LLM-as-judge benchmarks <a href="https://arxiv.org/abs/2608.02620">[3]</a>.</p>
-<p>Also this week: the section carries six items on safety and reliability and five on benchmarks and evaluation, including work on detecting tool-use failures through sparse neuron activity, memory management strategies for conversational agents, and long-document understanding tests drawn from clinical guidelines. Texas now requires a grid-connection audit for new data centers, and LLM 0.32 adds reasoning-trace visibility and server-side tool support.</p>
+<p>New research on clinical safety evaluation finds that reviewer preference between model answers does not reliably predict which response is actually safer for patients <a href="https://arxiv.org/abs/2608.02617">[3]</a>, raising questions for health systems validating AI tools before deployment. A related study on domain-adapted small language models shows that fine-tuning for healthcare can quietly erode trustworthiness in ways standard benchmarks miss <a href="https://arxiv.org/abs/2608.00042">[13]</a>. Regulatory oversight faces similar gaps: the Trump administration&#x27;s proposed AI testing framework skips cybersecurity evaluation and excludes open models <a href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">[1]</a>. Meanwhile, a new framework seeks to standardize how models are judged as evaluators, addressing inconsistency across current LLM-as-judge protocols <a href="https://arxiv.org/abs/2608.02620">[4]</a>.</p>
+<p>Also this week: two new model releases include Mistral&#x27;s Shieldstral, an open-weight moderation model, and a diffusion-based language model eliminating autoregressive decoding. Five further papers on benchmarks and evaluation cover document understanding, mathematical proof judging, and multimodal agent memory, while additional safety work addresses reinforcement learning trade-offs between over-refusal and harm detection. One item covers Texas data center grid requirements.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">Trump’s AI testing plan is limited and vague</a>
+    <p class="news-card-summary">Trump administration AI testing framework excludes open models and lacks technical evaluation capacity for cybersecurity risk assessment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
@@ -120,13 +128,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.00180">A Constitution-Grid Instrument for Data-Efficient RL Alignment (C-Guard)</a>
     <p class="news-card-summary">C-Guard applies reinforcement learning to balance two conflicting safety objectives: catching harmful prompts while avoiding over-refusal on benign requests.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.00218">A Few Neurons Reveal When LLMs Misuse Tools: Sparse Detection and Selective Steering for Reliable Tool Use</a>
-    <p class="news-card-summary">Study shows that small sets of neurons reveal when language models fail at tool use, enabling sparse detection and steering for more reliable agentic systems.</p>
   </div>
 </div>
 </div>

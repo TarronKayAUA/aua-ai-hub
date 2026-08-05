@@ -13,14 +13,57 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An AI-supervised remote exam&#x27;s failure, which forced 58,000 students to retake testing after anomalous score distributions, underscores growing scrutiny of automated assessment tools <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[8]</a>. Amid these concerns, a four-pillar framework for AI-resilient assessment design proposes structural changes to coursework rather than relying on detection software <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[13]</a>. Elsewhere, evidence for AI&#x27;s instructional value is accumulating: a randomized trial found deep learning guidance improved novice performance in point-of-care ultrasound <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[1]</a>, while internal medicine residency guidance addresses safe, ethical AI use and prompt engineering <a href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">[6]</a>. Pediatric trainees using AI as a telemedicine tutor showed confidence gains but persistent gaps in digital competence <a href="https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[14]</a>.</p>
-<p>Also this week: nine items address teaching and curriculum, including a pre-matriculation study-strategies curriculum for incoming students, while four cover assessment and feedback, such as LLM-based scoring of virtual standardized patient exams. One item each addresses exam benchmarking and attitudes toward AI adoption.</p>
+<p>A remote exam proctored by AI invalidated results for 58,000 students after anomalous score distributions forced a mass retake <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[14]</a>, underscoring reliability concerns that echo findings that GPT-4&#x27;s performance on UK medical licensing practice questions shifts over time <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Such instability is pushing institutions to move past AI detectors toward redesigned assessment methods <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[6]</a>. Meanwhile a randomized trial found deep learning guidance improved novice point-of-care ultrasound acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[7]</a>, and a survey of first-year medical students showed widespread adoption of generative AI tools alongside calls for structured AI literacy <a href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[2]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum integration, including guidance for internal medicine residency on safe AI use. Four more cover assessment and feedback, such as endoscopy skill evaluation via vision transformers, and the remaining items span exam benchmark performance, simulation training, and student attitudes toward AI adoption.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553746?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Large language model-based simulated patient training for heart failure palliative care communication: a pilot study</a>
+    <p class="news-card-summary">Pilot study shows feasibility of web-based large language model simulated patient system for palliative care communication training with early signals of improved physician self-efficacy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Use and Perceptions of Generative Artificial Intelligence Tools Among First-Year Medical Students: A Cross-Sectional Survey</a>
+    <p class="news-card-summary">Survey of first-year medical students finds AI tools widely adopted and seen as enhancing traditional study methods, with structured AI literacy potentially affecting content evaluation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">The temporal changes in GPT-4 performance on UKMLA practice questions: educational and clinical implications</a>
+    <p class="news-card-summary">Longitudinal study shows GPT-4 performance on UKMLA practice questions varies over time, raising questions about stability of AI performance on medical licensing exams.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552577?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">The hidden patterns of alignment: exploring variability between generative AI and human</a>
+    <p class="news-card-summary">Study finds generative AI can consistently align pharmacological content with curricula but lacks the contextual judgment of human experts with diverse perspectives.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552483?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">See more, detect more: investigating colonic inspection techniques and polyp detection using machine learning</a>
+    <p class="news-card-summary">Vision Transformer machine learning model objectively assesses colonic inspection techniques and polyp detection rates, enabling targeted feedback to improve endoscopy performance.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">AI Detectors Are Out, New Assessments Are In</a>
+    <p class="news-card-summary">Universities increasingly abandon AI detectors as unreliable, prompting faculty to develop alternative assessment strategies for the age of generative AI.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robots_leaving_entering_gates.jpg?itok=q4gbxvzU" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
@@ -83,48 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2607.28634">Can LLMs Really Understand Item Difficulty Levels? Implications for Automated Item Generation Using LLMs</a>
     <p class="news-card-summary">Study investigates whether large language models can accurately predict item difficulty levels for educational assessments using various prompting strategies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">Feasibility and Perceived Impact of an AI-Assisted Pre-Matriculation Study Strategies Curriculum for Incoming Medical Students</a>
-    <p class="news-card-summary">A study evaluated an AI-assisted curriculum teaching incoming medical students evidence-based study strategies like retrieval practice and spaced repetition before matriculation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 1, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42539916?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">A primer on artificial intelligence for palliative care educators</a>
-    <p class="news-card-summary">A narrative primer on artificial intelligence for palliative care educators addresses the field&#x27;s relational, prognostic, and cultural sensitivities overlooked in general health professions education primers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Evaluating Large Language Model-Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: A Cross-Sectional Agreement Study</a>
-    <p class="news-card-summary">Large language models showed moderate agreement with faculty in scoring voice-based virtual patient interactions, suitable for formative assessment but not independent high-stakes evaluation due to rater variability and bias.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Designing AI-resilient assessment in higher education: a four-pillar conceptual framework</a>
-    <p class="news-card-summary">A framework for designing assessments resistant to generative AI misuse, addressing limitations of detection-based approaches and proposing structural changes to course evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">Artificial intelligence as a clinical tutor in telemedicine: Opportunities and challenges in medical education</a>
-    <p class="news-card-summary">Study of pediatric trainees&#x27; confidence and engagement with AI in telemedicine identified gaps in digital competence and critical evaluation skills, informing curriculum updates.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">Evaluation of an AI-Based Constraint-Optimization Scheduler to Optimize On-Call Schedule Equity and Reduce Administrative Burden in a Pediatric Residency: Retrospective Comparative Study</a>
-    <p class="news-card-summary">Retrospective study found an AI constraint-optimization scheduler improved on-call equity and reduced high-risk shift sequences in pediatric residency training.</p>
   </div>
 </div>
 </div>

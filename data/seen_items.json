@@ -29043,6 +29043,206 @@
    "first_seen": "2026-08-05T06:43:21.022496+00:00",
    "kept": false,
    "reason": "speculation about unreleased models without confirmed developments"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded",
+   "title_hash": "3ff0ec24aa8192cad5dec892a0c39eb5",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "Trump’s AI testing plan is limited and vague",
+   "source": "The Verge AI",
+   "published": "2026-08-05T10:29:47+00:00",
+   "summary": "Trump administration AI testing framework excludes open models and lacks technical evaluation capacity for cybersecurity risk assessment.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/name-an-article-that-changed-your",
+   "title_hash": "12eb01fa7dc406e5b6231c5e92659b59",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; no AI content, generic opinion piece unrelated to artificial intelligence in medicine"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42553807?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "130dec51cbfb7a4be76efa50fac2e3cb",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": false,
+   "reason": "narrative review without novel AI findings; focuses on case-based learning approaches generally, not on AI in medical education specifically"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42553746?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "644a6a88f53fea23bf9c8f71b0a518c9",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "Large language model-based simulated patient training for heart failure palliative care communication: a pilot study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-05T10:00:00+00:00",
+   "summary": "Pilot study shows feasibility of web-based large language model simulated patient system for palliative care communication training with early signals of improved physician self-efficacy.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "762d5543a504be09be8626a71486f53d",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "Use and Perceptions of Generative Artificial Intelligence Tools Among First-Year Medical Students: A Cross-Sectional Survey",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-05T10:00:00+00:00",
+   "summary": "Survey of first-year medical students finds AI tools widely adopted and seen as enhancing traditional study methods, with structured AI literacy potentially affecting content evaluation.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "facfa128623fc8928e940ca89b199499",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "The temporal changes in GPT-4 performance on UKMLA practice questions: educational and clinical implications",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-05T10:00:00+00:00",
+   "summary": "Longitudinal study shows GPT-4 performance on UKMLA practice questions varies over time, raising questions about stability of AI performance on medical licensing exams.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42552577?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "38ff454bbcae13de41097eaf441d8e00",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "The hidden patterns of alignment: exploring variability between generative AI and human",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-05T10:00:00+00:00",
+   "summary": "Study finds generative AI can consistently align pharmacological content with curricula but lacks the contextual judgment of human experts with diverse perspectives.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "b07ba6123ecf2ab159ee2d7fa7e2ddc4",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "Accuracy, Usefulness, and Impact Variability of ChatGPT-4 for COPD Medication Management: A Modified Delphi Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-05T10:00:00+00:00",
+   "summary": "Modified Delphi study demonstrates ChatGPT-4 responses to identical COPD prompts show material variability in accuracy and clinical impact, supporting oversight and guideline grounding.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42552483?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "53e3f2d713a48c7e613e4bcdd0941dea",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "See more, detect more: investigating colonic inspection techniques and polyp detection using machine learning",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-05T10:00:00+00:00",
+   "summary": "Vision Transformer machine learning model objectively assesses colonic inspection techniques and polyp detection rates, enabling targeted feedback to improve endoscopy performance.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42552456?fc=20260609215449&ff=20260805064701&v=2.20.0.post5+40e1b98",
+   "title_hash": "57c324a17d64cd3c3f4e6a97257f80b0",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": false,
+   "reason": "translation and validation study of an assessment scale; methodologically sound but not about AI deployment or capability"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are",
+   "title_hash": "c4ecb0f0686ef2bc43541b1cc6369052",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "AI Detectors Are Out, New Assessments Are In",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-08-05T03:00:00+00:00",
+   "summary": "Universities increasingly abandon AI detectors as unreliable, prompting faculty to develop alternative assessment strategies for the age of generative AI.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robots_leaving_entering_gates.jpg?itok=q4gbxvzU",
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03088-1",
+   "title_hash": "5cda66c111cf157490a359a5e6f09651",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "Conversational AI should fill the white space in mental health care, not replace humans",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-05T00:00:00+00:00",
+   "summary": "Commentary argues conversational AI should address gaps in mental health care delivery rather than replace human clinicians.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03089-0",
+   "title_hash": "60eda514f40d974cf6b188e00051087b",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "AI-assisted digital peripheral blood morphology multicenter randomized paired method clinical validation study",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-05T00:00:00+00:00",
+   "summary": "Multicenter randomized clinical validation study demonstrates feasibility and efficacy of AI-assisted digital peripheral blood morphology analysis.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03071-w",
+   "title_hash": "0a6ed364f04214d271c61dae6b1f4ff6",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "Dynamic prediction of preterm birth and gestational age at delivery based on longitudinal electronic health records",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-05T00:00:00+00:00",
+   "summary": "Study presents machine learning model for dynamic prediction of preterm birth and gestational age delivery from longitudinal electronic health records.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03067-6",
+   "title_hash": "5dcb4a4c000acf0fe759c099ca3ef0b0",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": true,
+   "title": "Large language model-assisted referral triage automation in a tertiary hospital",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-05T00:00:00+00:00",
+   "summary": "Large language model deployment automates referral triage routing in a tertiary hospital setting.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04546-9",
+   "title_hash": "fdc3022c01c3417e9601cbb1cea236be",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical trial of dronabinol with no AI relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=8HutJ9W5pTg",
+   "title_hash": "d1edd9a0004d3fef40265667a4506182",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": false,
+   "reason": "vendor marketing and tutorial for a commercial tool without independent analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=A9nnvw2wqmE",
+   "title_hash": "1583fb0937077c5ffd054a05498c367f",
+   "first_seen": "2026-08-05T10:47:01.127043+00:00",
+   "kept": false,
+   "reason": "drama coverage and speculation without substantive technical content"
   }
  ],
  "digests": [
@@ -29193,18 +29393,18 @@
  "last_digest_at": "2026-07-31T03:52:19.435381+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "An AI-supervised remote exam&#x27;s failure, which forced 58,000 students to retake testing after anomalous score distributions, underscores growing scrutiny of automated assessment tools <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[8]</a>. Amid these concerns, a four-pillar framework for AI-resilient assessment design proposes structural changes to coursework rather than relying on detection software <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[13]</a>. Elsewhere, evidence for AI&#x27;s instructional value is accumulating: a randomized trial found deep learning guidance improved novice performance in point-of-care ultrasound <a href=\"https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98\">[1]</a>, while internal medicine residency guidance addresses safe, ethical AI use and prompt engineering <a href=\"https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98\">[6]</a>. Pediatric trainees using AI as a telemedicine tutor showed confidence gains but persistent gaps in digital competence <a href=\"https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98\">[14]</a>.\n\nAlso this week: nine items address teaching and curriculum, including a pre-matriculation study-strategies curriculum for incoming students, while four cover assessment and feedback, such as LLM-based scoring of virtual standardized patient exams. One item each addresses exam benchmarking and attitudes toward AI adoption.",
-   "hash": "17bf418b3b1e418c",
+   "text": "A remote exam proctored by AI invalidated results for 58,000 students after anomalous score distributions forced a mass retake <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[14]</a>, underscoring reliability concerns that echo findings that GPT-4&#x27;s performance on UK medical licensing practice questions shifts over time <a href=\"https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Such instability is pushing institutions to move past AI detectors toward redesigned assessment methods <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are\">[6]</a>. Meanwhile a randomized trial found deep learning guidance improved novice point-of-care ultrasound acquisition <a href=\"https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98\">[7]</a>, and a survey of first-year medical students showed widespread adoption of generative AI tools alongside calls for structured AI literacy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[2]</a>.\n\nAlso this week: seven items address teaching and curriculum integration, including guidance for internal medicine residency on safe AI use. Four more cover assessment and feedback, such as endoscopy skill evaluation via vision transformers, and the remaining items span exam benchmark performance, simulation training, and student attitudes toward AI adoption.",
+   "hash": "855496d615e81206",
    "date": "August 5, 2026"
   },
   "clinical_practice": {
-   "text": "Explainable AI is emerging as a double-edged tool in diagnosis: a Nature Medicine study of dermatology decision support found that showing the same AI explanations to clinicians and to lay users changed their trust and choices in different, sometimes conflicting, ways <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[8]</a>. Patient-facing language models are drawing similar scrutiny, with a comparative evaluation of colonoscopy preparation guidance finding meaningful differences in correctness, harm potential, and consistency across models <a href=\"https://ai.jmir.org/2026/1/e88581\">[3]</a>. Clinical decision support is expanding past diagnosis into treatment logistics, as multicenter research tested large language models for antibiotic selection and dosing in hospitalized pneumonia patients <a href=\"https://medinform.jmir.org/2026/1/e98207\">[5]</a>. Fairness questions also persist, with new work examining how vision-language classifiers perform across intersecting demographic groups in medical imaging <a href=\"https://www.nature.com/articles/s41746-026-03030-5\">[13]</a>.\n\nAlso this week: the section adds five papers on safety and evaluation, four on patient-facing tools including AI versus human coaching for diabetes prevention, three on clinical decision support, two on imaging and diagnostics such as chest radiography detection thresholds, and one on documentation-focused text validation.",
-   "hash": "e4f03f49878cc062",
-   "date": "August 4, 2026"
+   "text": "A modified Delphi study found that ChatGPT-4 responses to identical COPD management prompts vary meaningfully in accuracy and clinical impact, reinforcing calls for physician oversight and guideline-anchored review <a href=\"https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[1]</a>. Similar retrospective work on antibiotic selection for hospitalized pneumonia patients reports comparable performance gaps, suggesting language models still need calibration against local protocols <a href=\"https://medinform.jmir.org/2026/1/e98207\">[10]</a>. Separately, an explainable AI system for dermatological diagnosis shaped clinician and lay-user trust in divergent ways, complicating assumptions that transparency alone builds confidence <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[13]</a>. At the workflow level, a tertiary hospital&#x27;s deployment of language model-based referral triage automation shows these tools reshaping administrative decision paths <a href=\"https://www.nature.com/articles/s41746-026-03067-6\">[5]</a>.\n\nAlso this week: the section adds five decision-support studies spanning transfusion prediction, disaster medicine mapping, and knowledge graph construction, alongside three patient-facing tools addressing translation, orthopedic recovery preferences, and colonoscopy-prep guidance. A single imaging study validates AI-assisted blood morphology analysis, and one paper addresses expert-level clinical documentation validation.",
+   "hash": "590cfad4aba331b3",
+   "date": "August 5, 2026"
   },
   "general_ai": {
-   "text": "Research this week complicates a basic assumption behind model ranking: pairwise preference scores, a common method for judging large language models, do not reliably predict clinical safety, according to a study built on clinician feedback from the MOOVE platform <a href=\"https://arxiv.org/abs/2608.02617\">[2]</a>. That gap sits alongside a broader effort to tighten safety evaluation. A reinforcement learning method called C-Guard seeks to catch harmful prompts without triggering over-refusal on benign ones <a href=\"https://arxiv.org/abs/2608.00180\">[14]</a>, while a cross-architecture study finds that adapting small language models for healthcare, legal, and financial use carries measurable trustworthiness costs <a href=\"https://arxiv.org/abs/2608.00042\">[12]</a>. Mistral&#x27;s Shieldstral, a 3-billion-parameter open-weights moderation model, offers a practical tool for content screening <a href=\"https://mistral.ai/news/shieldstral\">[6]</a>, and JudgeArena proposes a standardized framework to reduce fragmentation across LLM-as-judge benchmarks <a href=\"https://arxiv.org/abs/2608.02620\">[3]</a>.\n\nAlso this week: the section carries six items on safety and reliability and five on benchmarks and evaluation, including work on detecting tool-use failures through sparse neuron activity, memory management strategies for conversational agents, and long-document understanding tests drawn from clinical guidelines. Texas now requires a grid-connection audit for new data centers, and LLM 0.32 adds reasoning-trace visibility and server-side tool support.",
-   "hash": "faab8e832cc81982",
+   "text": "New research on clinical safety evaluation finds that reviewer preference between model answers does not reliably predict which response is actually safer for patients <a href=\"https://arxiv.org/abs/2608.02617\">[3]</a>, raising questions for health systems validating AI tools before deployment. A related study on domain-adapted small language models shows that fine-tuning for healthcare can quietly erode trustworthiness in ways standard benchmarks miss <a href=\"https://arxiv.org/abs/2608.00042\">[13]</a>. Regulatory oversight faces similar gaps: the Trump administration&#x27;s proposed AI testing framework skips cybersecurity evaluation and excludes open models <a href=\"https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded\">[1]</a>. Meanwhile, a new framework seeks to standardize how models are judged as evaluators, addressing inconsistency across current LLM-as-judge protocols <a href=\"https://arxiv.org/abs/2608.02620\">[4]</a>.\n\nAlso this week: two new model releases include Mistral&#x27;s Shieldstral, an open-weight moderation model, and a diffusion-based language model eliminating autoregressive decoding. Five further papers on benchmarks and evaluation cover document understanding, mathematical proof judging, and multimodal agent memory, while additional safety work addresses reinforcement learning trade-offs between over-refusal and harm detection. One item covers Texas data center grid requirements.",
+   "hash": "dcd07910d83530dc",
    "date": "August 5, 2026"
   }
  },
