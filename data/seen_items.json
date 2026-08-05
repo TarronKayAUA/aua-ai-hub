@@ -29381,6 +29381,68 @@
    "first_seen": "2026-08-05T14:34:38.110920+00:00",
    "kept": false,
    "reason": "sponsored content with promotional link integration"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/975528/fenix-flexin-ai-music-generator-treblo",
+   "title_hash": "6854f462221ba4863f90f45babee8230",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; music generation detection unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/tech/975677/google-deepmind-ai-demis-hassabis-shakeup",
+   "title_hash": "29b60cd155eebf84d259d1722c356580",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": false,
+   "reason": "industry and personnel news; no substantive information on AI capabilities or medical applications"
+  },
+  {
+   "url": "https://www.theverge.com/science/975545/spacex-x-earnings-ai-data-centers-compute-space",
+   "title_hash": "5dc72acd16aef3b4a32e5c318affe993",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; business and organizational commentary on SpaceX unrelated to medicine or medical AI"
+  },
+  {
+   "url": "https://www.theverge.com/tech/975398/reddit-ai-rules-hub-moderator-old-reddit-developer-platform",
+   "title_hash": "1b6b5683a83cf174cf7f87b2eb2a70d8",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; social media moderation tools lack relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/google-plans-to-kill-assistant-on-your-phone-on-september-4",
+   "title_hash": "b7ab8216d0e56149f6631dc807ec9964",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; product deprecation news unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/975577/aisi-openai-anthropic-agent-hacking",
+   "title_hash": "3ef7fab67cdca9c3d004b4450b5c1487",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; AI security incidents unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42554456?fc=20260609215449&ff=20260805135434&v=2.20.0.post5+40e1b98",
+   "title_hash": "dd85979d431def76b8977544f24ed0da",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": true,
+   "title": "The Basic Science of Large Language Models in Orthopaedic Surgery",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-05T10:00:00+00:00",
+   "summary": "Peer-reviewed overview of how large language models are changing information search and resident learning in orthopaedic surgery.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfirld/has_anyone_tried_mach1_additive_95_of_performance",
+   "title_hash": "3345f2cef33c1064b1198e884b9d1862",
+   "first_seen": "2026-08-05T17:54:34.211815+00:00",
+   "kept": false,
+   "reason": "forum thread about model performance; lacks authoritative sourcing for medical educator audience"
   }
  ],
  "digests": [
@@ -29531,8 +29593,8 @@
  "last_digest_at": "2026-07-31T03:52:19.435381+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "An AI-supervised remote exam covering 58,000 students was voided after anomalous scoring patterns forced a mass retake, underscoring fragile trust in automated proctoring <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[14]</a>. That unease echoes across assessment more broadly, as institutions increasingly abandon AI detectors in favor of redesigned evaluation methods <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are\">[6]</a>. Exam-related uncertainty also surfaces in benchmarking: GPT-4&#x27;s performance on UKMLA practice questions shifted over time, raising doubts about the stability of AI scores on licensing-style tests <a href=\"https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Meanwhile, debate continues over whether AI scribes strengthen or erode clinical documentation skills among trainees <a href=\"https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch\">[15]</a>, even as a randomized trial found deep learning guidance improved novice ultrasound image acquisition <a href=\"https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98\">[7]</a>.\n\nAlso this week: eight items address teaching and curriculum, including simulated patient training for palliative care communication and new nuclear medicine education frameworks, while three cover assessment and feedback, among them a geriatrics knowledge pilot that flagged fraudulent survey responses. A separate survey finds first-year medical students widely adopting generative AI tools.",
-   "hash": "feb72d3d87325d9d",
+   "text": "An AI-supervised remote exam left 58,000 students needing retakes after anomalous score distributions invalidated results, spotlighting risks in automated proctoring <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[15]</a>. Assessment concerns run deeper: many universities are abandoning AI detectors as unreliable and redesigning evaluations for a generative-AI environment <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are\">[7]</a>. Exam-performance stability is also in question, as a longitudinal study found GPT-4&#x27;s scores on UK medical licensing practice questions shift over time <a href=\"https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Elsewhere, a randomized trial showed deep learning guidance improved novice point-of-care ultrasound image acquisition <a href=\"https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98\">[8]</a>.\n\nAlso this week: eight curriculum-focused pieces span orthopaedic surgery, internal medicine, and nuclear medicine education, plus a systematic review protocol on nursing training outcomes. Three items address assessment and feedback, two examine exam and benchmark performance, and single reports cover simulation training and student attitudes toward AI adoption, including a survey of first-year medical students embracing generative tools.",
+   "hash": "fa357d64c83e3bf0",
    "date": "August 5, 2026"
   },
   "clinical_practice": {

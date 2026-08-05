@@ -13,8 +13,8 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An AI-supervised remote exam covering 58,000 students was voided after anomalous scoring patterns forced a mass retake, underscoring fragile trust in automated proctoring <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[14]</a>. That unease echoes across assessment more broadly, as institutions increasingly abandon AI detectors in favor of redesigned evaluation methods <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[6]</a>. Exam-related uncertainty also surfaces in benchmarking: GPT-4&#x27;s performance on UKMLA practice questions shifted over time, raising doubts about the stability of AI scores on licensing-style tests <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Meanwhile, debate continues over whether AI scribes strengthen or erode clinical documentation skills among trainees <a href="https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch">[15]</a>, even as a randomized trial found deep learning guidance improved novice ultrasound image acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
-<p>Also this week: eight items address teaching and curriculum, including simulated patient training for palliative care communication and new nuclear medicine education frameworks, while three cover assessment and feedback, among them a geriatrics knowledge pilot that flagged fraudulent survey responses. A separate survey finds first-year medical students widely adopting generative AI tools.</p>
+<p>An AI-supervised remote exam left 58,000 students needing retakes after anomalous score distributions invalidated results, spotlighting risks in automated proctoring <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[15]</a>. Assessment concerns run deeper: many universities are abandoning AI detectors as unreliable and redesigning evaluations for a generative-AI environment <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[7]</a>. Exam-performance stability is also in question, as a longitudinal study found GPT-4&#x27;s scores on UK medical licensing practice questions shift over time <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Elsewhere, a randomized trial showed deep learning guidance improved novice point-of-care ultrasound image acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[8]</a>.</p>
+<p>Also this week: eight curriculum-focused pieces span orthopaedic surgery, internal medicine, and nuclear medicine education, plus a systematic review protocol on nursing training outcomes. Three items address assessment and feedback, two examine exam and benchmark performance, and single reports cover simulation training and student attitudes toward AI adoption, including a survey of first-year medical students embracing generative tools.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
 </div>
 
@@ -54,6 +54,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552483?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">See more, detect more: investigating colonic inspection techniques and polyp detection using machine learning</a>
     <p class="news-card-summary">Vision Transformer machine learning model objectively assesses colonic inspection techniques and polyp detection rates, enabling targeted feedback to improve endoscopy performance.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42554456?fc=20260609215449&amp;ff=20260805135434&amp;v=2.20.0.post5+40e1b98">The Basic Science of Large Language Models in Orthopaedic Surgery</a>
+    <p class="news-card-summary">Peer-reviewed overview of how large language models are changing information search and resident learning in orthopaedic surgery.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -120,13 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">An AI-supervised remote exam for 58,000 students was invalidated due to system failures that produced anomalous score distributions, requiring retesting.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-82955454-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch">STAT+: Are AI scribes useful tools in medical education, or a crutch that imperils learning?</a>
-    <p class="news-card-summary">Educators debate whether AI scribes help students develop clinical documentation skills or reduce learning by automating note-taking.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AdobeStock_1686952984-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
