@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An AI-supervised remote exam left 58,000 students needing retakes after anomalous score distributions invalidated results, spotlighting risks in automated proctoring <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[15]</a>. Assessment concerns run deeper: many universities are abandoning AI detectors as unreliable and redesigning evaluations for a generative-AI environment <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[7]</a>. Exam-performance stability is also in question, as a longitudinal study found GPT-4&#x27;s scores on UK medical licensing practice questions shift over time <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Elsewhere, a randomized trial showed deep learning guidance improved novice point-of-care ultrasound image acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[8]</a>.</p>
-<p>Also this week: eight curriculum-focused pieces span orthopaedic surgery, internal medicine, and nuclear medicine education, plus a systematic review protocol on nursing training outcomes. Three items address assessment and feedback, two examine exam and benchmark performance, and single reports cover simulation training and student attitudes toward AI adoption, including a survey of first-year medical students embracing generative tools.</p>
+<p>Assessment practices are shifting as institutions move away from AI detectors, now considered unreliable, toward new strategies for evaluating student work in the era of generative AI <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[9]</a>. Questions about AI reliability also surface in exam research, where GPT-4&#x27;s scores on UK medical licensing practice questions fluctuated over time, raising concerns about benchmark stability <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[4]</a>. Simulation training advances too, with a pilot study showing large language model-based simulated patients can help train physicians in palliative care communication <a href="https://pubmed.ncbi.nlm.nih.gov/42553746?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[2]</a>. A French survey of health professionals and students found broad AI use alongside persistent concerns and training gaps <a href="https://mededu.jmir.org/2026/1/e89152">[1]</a>, echoing curriculum efforts guiding internal medicine residents on safe, ethical AI use <a href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">[15]</a>.</p>
+<p>Also this week: the section carries seven items on teaching and curriculum, covering topics from orthopaedic surgery education to nuclear medicine training, alongside three pieces on student and professional attitudes toward AI and three on assessment and feedback, including a look at survey authentication problems in a geriatrics knowledge pilot.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e89152">Use, Concerns, and Perspectives on AI in Health Care Among French Health Professionals and Students: Web-Based Cross-Sectional Survey</a>
+    <p class="news-card-summary">French survey of health professionals and students reveals current AI use, perceived benefits and concerns, confidence levels, and training needs in clinical settings.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
@@ -61,6 +68,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42554456?fc=20260609215449&amp;ff=20260805135434&amp;v=2.20.0.post5+40e1b98">The Basic Science of Large Language Models in Orthopaedic Surgery</a>
     <p class="news-card-summary">Peer-reviewed overview of how large language models are changing information search and resident learning in orthopaedic surgery.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98">Factors associated with attitudes towards artificial intelligence among medical students: roles of digital literacy, emotional intelligence, and AI-related perceptions</a>
+    <p class="news-card-summary">Medical students&#x27; attitudes toward AI correlate more strongly with digital literacy and AI perceptions than prior use; medical education should integrate digital literacy and ethical awareness into AI teaching.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -112,20 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">Training in internal medicine in the age of artificial intelligence</a>
     <p class="news-card-summary">Peer-reviewed review guides internal medicine residency training on reliable AI use, clinical safety, ethics, and prompt engineering.</p>
   </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.00207">Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection</a>
-    <p class="news-card-summary">Research identifies that English-Arabic performance gaps in medical language models stem from missing knowledge access rather than absent training data, enabling targeted fine-tuning improvements.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">An AI-supervised remote exam went so badly that 58,000 students must retake it</a>
-    <p class="news-card-summary">An AI-supervised remote exam for 58,000 students was invalidated due to system failures that produced anomalous score distributions, requiring retesting.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-82955454-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
