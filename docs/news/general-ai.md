@@ -13,14 +13,42 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Researchers reported a prototype self-replicating AI virus built from open-weight language models, a development that underscores growing worries about persistent autonomous threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[14]</a>. That concern arrives alongside a broader safety and reliability effort spanning five items, including Mistral&#x27;s Shieldstral, a 3 billion parameter open-weights model built for multimodal content moderation <a href="https://mistral.ai/news/shieldstral">[2]</a>, and a reinforcement-learning method called C-Guard designed to catch harmful prompts without triggering excessive refusals <a href="https://arxiv.org/abs/2608.00180">[10]</a>. Regulatory attention is intensifying as well: European Union rules requiring disclosure of AI interactions and AI-generated content took effect <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[13]</a>, while Texas now requires data centers to pass a grid-connection audit <a href="https://www.theverge.com/policy/975071/texas-data-center-audit">[3]</a>.</p>
-<p>Also this week: three new benchmarks probe agent memory, long-document understanding, and automated proof grading, while two new model releases include an open-weight diffusion-based language model, DiffusionGemma, alongside updated tooling for reasoning traces in LLM 0.32. Two studies examine transfer dynamics between vision and language systems and efficient methods for compressing long-context memory.</p>
+<p>Research this week complicates a basic assumption behind model ranking: pairwise preference scores, a common method for judging large language models, do not reliably predict clinical safety, according to a study built on clinician feedback from the MOOVE platform <a href="https://arxiv.org/abs/2608.02617">[2]</a>. That gap sits alongside a broader effort to tighten safety evaluation. A reinforcement learning method called C-Guard seeks to catch harmful prompts without triggering over-refusal on benign ones <a href="https://arxiv.org/abs/2608.00180">[14]</a>, while a cross-architecture study finds that adapting small language models for healthcare, legal, and financial use carries measurable trustworthiness costs <a href="https://arxiv.org/abs/2608.00042">[12]</a>. Mistral&#x27;s Shieldstral, a 3-billion-parameter open-weights moderation model, offers a practical tool for content screening <a href="https://mistral.ai/news/shieldstral">[6]</a>, and JudgeArena proposes a standardized framework to reduce fragmentation across LLM-as-judge benchmarks <a href="https://arxiv.org/abs/2608.02620">[3]</a>.</p>
+<p>Also this week: the section carries six items on safety and reliability and five on benchmarks and evaluation, including work on detecting tool-use failures through sparse neuron activity, memory management strategies for conversational agents, and long-document understanding tests drawn from clinical guidelines. Texas now requires a grid-connection audit for new data centers, and LLM 0.32 adds reasoning-trace visibility and server-side tool support.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.02616">Evaluating OpenAI&#x27;s Privacy Filter: Cross-Lingual, Cross-Domain PII Detection Across 42 Benchmarks</a>
+    <p class="news-card-summary">Independent evaluation of OpenAI&#x27;s privacy filter across 42 benchmarks spanning 22 languages and medical data shows performance versus competing tools.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.02617">Preferred, Not Safer: Pairwise Preference Is a Poor Proxy for Clinical Safety</a>
+    <p class="news-card-summary">Research using clinician feedback from MOOVE platform shows pairwise preferences do not reliably predict clinical safety in large language model evaluation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.02620">JudgeArena: A Unified Framework for Reproducible LLM-Judge Evaluation</a>
+    <p class="news-card-summary">Framework addresses fragmentation in LLM-as-judge evaluation by standardizing design choices across benchmarks, models, and protocols.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.02966">Every Wrong Answer Counts: Option-Level Psychometrics for LLM Multiple-Choice Benchmarks</a>
+    <p class="news-card-summary">Research shows that analyzing incorrect answer choices in multiple-choice benchmarks reveals systematic information about LLM behavior beyond binary scoring.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 4, 2026</span></div>
@@ -99,36 +127,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.00218">A Few Neurons Reveal When LLMs Misuse Tools: Sparse Detection and Selective Steering for Reliable Tool Use</a>
     <p class="news-card-summary">Study shows that small sets of neurons reveal when language models fail at tool use, enabling sparse detection and steering for more reliable agentic systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.00311">SeDeM: Selective Decompression of Hidden-State Memories for Long-Context Question Answering</a>
-    <p class="news-card-summary">SeDeM addresses long-context inference costs by selectively decompressing hidden-state memories, reducing key-value cache size while preserving evidence retrieval for question-answering.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vellf2/qwen38max_matches_kimi_k3_and_deepseek_v4_flash">Qwen3.8-Max matches Kimi K3 and DeepSeek V4 Flash</a>
-    <p class="news-card-summary">Qwen3.8-Max performs comparably to Kimi K3 and DeepSeek V4 Flash across benchmarks with particular strength in coding; open-weight 27B version coming soon.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/14mqdzhzb7hh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=53a5f1f5ea4dd8a66ef78591cbea34554cb1a2ed" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">Europe’s AI labeling and transparency rules are now in effect</a>
-    <p class="news-card-summary">European Union AI Act transparency rules now require companies to disclose when people interact with AI models and when content is AI-generated deepfakes.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/EU-AI-label-icons-hero.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">August 3, 2026</span></div>
-    <a class="news-card-title" href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity</a>
-    <p class="news-card-summary">Researchers demonstrated a prototype self-replicating AI virus using open-weight language models, raising concerns about persistent autonomous threats.</p>
   </div>
 </div>
 </div>

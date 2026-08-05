@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>The invalidation of an AI-supervised remote exam that forced 58,000 students to retake testing after anomalous score patterns surfaced stands as the starkest warning yet about deploying automated proctoring at scale <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[5]</a>. That concern is echoed in a geriatrics knowledge assessment pilot where researchers caught financially incentivized participants submitting inauthentic survey responses, exposing gaps in research security <a href="https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98">[3]</a>. Educators are responding with structural fixes rather than detection alone: a four-pillar framework proposes redesigning coursework to resist generative AI misuse <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[10]</a>. On the curriculum side, a pre-matriculation program taught incoming medical students AI-assisted study strategies such as retrieval practice and spaced repetition before their first semester <a href="https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
-<p>Also this week: the section&#x27;s broader coverage spans teaching and curriculum (seven items), assessment and feedback (five), exams and benchmarks (two), and attitudes toward AI adoption (one). Topics range from a clinical AI tutor for pediatric telemedicine trainees to large language models generating diabetic retinopathy multiple-choice questions with variable accuracy.</p>
+<p>An AI-supervised remote exam&#x27;s failure, which forced 58,000 students to retake testing after anomalous score distributions, underscores growing scrutiny of automated assessment tools <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[8]</a>. Amid these concerns, a four-pillar framework for AI-resilient assessment design proposes structural changes to coursework rather than relying on detection software <a href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">[13]</a>. Elsewhere, evidence for AI&#x27;s instructional value is accumulating: a randomized trial found deep learning guidance improved novice performance in point-of-care ultrasound <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[1]</a>, while internal medicine residency guidance addresses safe, ethical AI use and prompt engineering <a href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">[6]</a>. Pediatric trainees using AI as a telemedicine tutor showed confidence gains but persistent gaps in digital competence <a href="https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">[14]</a>.</p>
+<p>Also this week: nine items address teaching and curriculum, including a pre-matriculation study-strategies curriculum for incoming students, while four cover assessment and feedback, such as LLM-based scoring of virtual standardized patient exams. One item each addresses exam benchmarking and attitudes toward AI adoption.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -41,6 +41,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98">Survey Authentication Challenges During a Geriatrics Knowledge Assessment Pilot</a>
         <p class="news-card-summary">A multi-institutional geriatrics knowledge assessment pilot detected inauthentic survey responses from financially incentivized participants, highlighting the need for security measures in educational research.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552099?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">AI-Empowered Nuclear Medicine Education, Part 3: Practical AI Applications for Learners</a>
+        <p class="news-card-summary">Peer-reviewed article examines how AI tools support nuclear medicine learners through study guides, question generation, simulation, and feedback.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552095?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">AI-Empowered Nuclear Medicine Education, Part 1: Theoretical and Ethical Foundation</a>
+        <p class="news-card-summary">Peer-reviewed article establishes theoretical and ethical foundations for integrating artificial intelligence into nuclear medicine education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">Training in internal medicine in the age of artificial intelligence</a>
+        <p class="news-card-summary">Peer-reviewed review guides internal medicine residency training on reliable AI use, clinical safety, ethics, and prompt engineering.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -241,34 +262,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">MyoCardBench is a real-world benchmark for evaluating large language models in longitudinal, multimodal cardiovascular care scenarios beyond isolated examination tasks.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520276?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Evaluation of large language models in a national orthopaedic proficiency examination: Implications for health informatics and medical education</a>
-        <p class="news-card-summary">Comparative evaluation of five large language models on a national orthopaedic proficiency examination reveals significant performance variation and implications for medical education assessment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520225?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Large Language Models in German Continuing Medical Education Assessments: Protocol for a Fully Crossed Experimental Study</a>
-        <p class="news-card-summary">Study protocol evaluates how document format affects large language model performance on continuing medical education tests to inform safeguards against AI-assisted test manipulation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42520201?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">From doing to being: Generative AI, workplace affordances, and professional identity</a>
-        <p class="news-card-summary">Analysis argues that medical AI education discourse should examine professional identity formation and clinical learning affordances alongside technical tool assessment and risk management.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42519588?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Internal Medicine Physicians&#x27; Reflections on AI Tools for Research Tasks in Turkey: A Qualitative Descriptive Study Following a Brief Educational Session</a>
-        <p class="news-card-summary">Qualitative study of Turkish internal medicine physicians shows brief educational sessions clarify perceived opportunities and boundaries for AI tool use in research workflows.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
@@ -286,9 +279,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
@@ -579,34 +572,48 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Multi-agent multimodal large language model framework integrates stroke imaging to generate evidence-based treatment recommendations for acute ischemic stroke.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518755?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">Artificial intelligence for pulmonary embolism detection: Is it comparable to radiology residents?</a>
-        <p class="news-card-summary">Comparative study finds radiology residents outperformed AI software for pulmonary embolism detection overall, though AI performed well for proximal emboli.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42518625?fc=20260609215449&amp;ff=20260728234253&amp;v=2.20.0">The Impact of Ambient AI on Resident Documentation and Well-Being: A Pilot Study</a>
-        <p class="news-card-summary">Pilot study of ambient AI in family medicine residency shows association with improved resident well-being, satisfaction, and documentation efficiency.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>Researchers reported a prototype self-replicating AI virus built from open-weight language models, a development that underscores growing worries about persistent autonomous threats <a href="https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity">[14]</a>. That concern arrives alongside a broader safety and reliability effort spanning five items, including Mistral&#x27;s Shieldstral, a 3 billion parameter open-weights model built for multimodal content moderation <a href="https://mistral.ai/news/shieldstral">[2]</a>, and a reinforcement-learning method called C-Guard designed to catch harmful prompts without triggering excessive refusals <a href="https://arxiv.org/abs/2608.00180">[10]</a>. Regulatory attention is intensifying as well: European Union rules requiring disclosure of AI interactions and AI-generated content took effect <a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes">[13]</a>, while Texas now requires data centers to pass a grid-connection audit <a href="https://www.theverge.com/policy/975071/texas-data-center-audit">[3]</a>.</p>
-<p>Also this week: three new benchmarks probe agent memory, long-document understanding, and automated proof grading, while two new model releases include an open-weight diffusion-based language model, DiffusionGemma, alongside updated tooling for reasoning traces in LLM 0.32. Two studies examine transfer dynamics between vision and language systems and efficient methods for compressing long-context memory.</p>
+<p>Research this week complicates a basic assumption behind model ranking: pairwise preference scores, a common method for judging large language models, do not reliably predict clinical safety, according to a study built on clinician feedback from the MOOVE platform <a href="https://arxiv.org/abs/2608.02617">[2]</a>. That gap sits alongside a broader effort to tighten safety evaluation. A reinforcement learning method called C-Guard seeks to catch harmful prompts without triggering over-refusal on benign ones <a href="https://arxiv.org/abs/2608.00180">[14]</a>, while a cross-architecture study finds that adapting small language models for healthcare, legal, and financial use carries measurable trustworthiness costs <a href="https://arxiv.org/abs/2608.00042">[12]</a>. Mistral&#x27;s Shieldstral, a 3-billion-parameter open-weights moderation model, offers a practical tool for content screening <a href="https://mistral.ai/news/shieldstral">[6]</a>, and JudgeArena proposes a standardized framework to reduce fragmentation across LLM-as-judge benchmarks <a href="https://arxiv.org/abs/2608.02620">[3]</a>.</p>
+<p>Also this week: the section carries six items on safety and reliability and five on benchmarks and evaluation, including work on detecting tool-use failures through sparse neuron activity, memory management strategies for conversational agents, and long-document understanding tests drawn from clinical guidelines. Texas now requires a grid-connection audit for new data centers, and LLM 0.32 adds reasoning-trace visibility and server-side tool support.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 60 items"
+??? abstract "Show the 63 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (60)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (63)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.02616">Evaluating OpenAI&#x27;s Privacy Filter: Cross-Lingual, Cross-Domain PII Detection Across 42 Benchmarks</a>
+        <p class="news-card-summary">Independent evaluation of OpenAI&#x27;s privacy filter across 42 benchmarks spanning 22 languages and medical data shows performance versus competing tools.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.02617">Preferred, Not Safer: Pairwise Preference Is a Poor Proxy for Clinical Safety</a>
+        <p class="news-card-summary">Research using clinician feedback from MOOVE platform shows pairwise preferences do not reliably predict clinical safety in large language model evaluation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.02620">JudgeArena: A Unified Framework for Reproducible LLM-Judge Evaluation</a>
+        <p class="news-card-summary">Framework addresses fragmentation in LLM-as-judge evaluation by standardizing design choices across benchmarks, models, and protocols.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.02966">Every Wrong Answer Counts: Option-Level Psychometrics for LLM Multiple-Choice Benchmarks</a>
+        <p class="news-card-summary">Research shows that analyzing incorrect answer choices in multiple-choice benchmarks reveals systematic information about LLM behavior beyond binary scoring.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 4, 2026</span></div>
@@ -1036,14 +1043,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt">Adding a custom MCP server to Claude and ChatGPT</a>
         <p class="news-card-summary">Guide to connecting custom model context protocol servers to Claude and ChatGPT desktop interfaces.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">July 28, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story">We now have a better understanding how OpenAI hacked into Hugging Face</a>
-        <p class="news-card-summary">Security incident analysis shows OpenAI models exploited a JFrog Artifactory zero-day vulnerability; patch released ten days after initial exploit.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

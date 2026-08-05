@@ -28784,6 +28784,265 @@
    "first_seen": "2026-08-05T03:34:43.599044+00:00",
    "kept": false,
    "reason": "minor release notes"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02609",
+   "title_hash": "5e3e2bd1f6967e02abf891d787266c4c",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "specialized historical NLP application with no medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02612",
+   "title_hash": "cbe6f28921f6e2d76df0675424a97d04",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow domain benchmark with no medical education or clinical significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02613",
+   "title_hash": "34e55813a79713a9ec41138d9968523e",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow application benchmark outside medical education scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02615",
+   "title_hash": "c9298063efc6866c8c6de0fc5185239a",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow domain application of benchmark to oncology; falls below preprint bar for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02616",
+   "title_hash": "c1289c5d4242e5785edb3ef6bdbc29b2",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": true,
+   "title": "Evaluating OpenAI's Privacy Filter: Cross-Lingual, Cross-Domain PII Detection Across 42 Benchmarks",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-05T04:00:00+00:00",
+   "summary": "Independent evaluation of OpenAI's privacy filter across 42 benchmarks spanning 22 languages and medical data shows performance versus competing tools.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02617",
+   "title_hash": "2642bf3a8c208e26f22350230f33203a",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": true,
+   "title": "Preferred, Not Safer: Pairwise Preference Is a Poor Proxy for Clinical Safety",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-05T04:00:00+00:00",
+   "summary": "Research using clinician feedback from MOOVE platform shows pairwise preferences do not reliably predict clinical safety in large language model evaluation.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02620",
+   "title_hash": "384fc40f0a0d1a17b125f1131749b779",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": true,
+   "title": "JudgeArena: A Unified Framework for Reproducible LLM-Judge Evaluation",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-05T04:00:00+00:00",
+   "summary": "Framework addresses fragmentation in LLM-as-judge evaluation by standardizing design choices across benchmarks, models, and protocols.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02621",
+   "title_hash": "c6484f79a1cfd3b2c46969feb584f56a",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow domain application to legal benchmarks with no medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02625",
+   "title_hash": "e7f8bc6d2cde400371df9b630fc15a66",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow method paper on diffusion language model decoding with incremental scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02689",
+   "title_hash": "c9b607c2940b668cb69d10326228aec8",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrowly scoped performance tinkering on single model variant"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02694",
+   "title_hash": "2bb50eeb6758f30ae9a31976e492ed51",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow application to video editing agents outside medical education scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02703",
+   "title_hash": "ba334a34a19ff8a16c142576c015d353",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization paper on model quantization without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02807",
+   "title_hash": "66b985e93ac0e4ab12a5f158ba17b284",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow cognitive modeling application outside medical education scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02867",
+   "title_hash": "f6ff5c614d5249b1dcd56222fa11a19a",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow reasoning research without broad medical education implications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02919",
+   "title_hash": "5f944ac838bab6ee5c93e8baa28c7c6b",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow method paper on prompt optimization without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02935",
+   "title_hash": "dc1daa9974865cc3991a06ae3c5cfddc",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "specialized linguistic analysis of Arabic script with no medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02941",
+   "title_hash": "71505b4812ea8414c480138fd6fc76f1",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow safety audit of low-resource language variant without broader implications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02942",
+   "title_hash": "335c0d40d148d8d82169fd390d1ba04e",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow distillation method for diffusion models without broad medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02966",
+   "title_hash": "d8159a5ce04b2754377e02ab3e1dfc73",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": true,
+   "title": "Every Wrong Answer Counts: Option-Level Psychometrics for LLM Multiple-Choice Benchmarks",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-05T04:00:00+00:00",
+   "summary": "Research shows that analyzing incorrect answer choices in multiple-choice benchmarks reveals systematic information about LLM behavior beyond binary scoring.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02971",
+   "title_hash": "5fb550f84a165607ec9f298f8c9cefde",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow application analyzing urban geography representations in language models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02975",
+   "title_hash": "ace4df35da79a02af408e7758a3f3595",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow domain application to machine translation quality evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02999",
+   "title_hash": "562ae7aafc37fe5124d6e440091534e3",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "specialized historical linguistics application outside medical education scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.03035",
+   "title_hash": "80fcb55d5b7081f1f78ea7aba44a8f97",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "theoretical study of internal representations with limited practical medical education implications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.03038",
+   "title_hash": "a966e7435f93e25891b50aa10b8d1969",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow evaluation of statistical reasoning without medical education application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.03044",
+   "title_hash": "f1f19e0e7055331a87ee78fb1639f551",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "narrow study of opinion simulation without medical education relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfa3tq/sk_hynix_in_collaboration_with_sandisk_unveils",
+   "title_hash": "762c9fc0bda28054dddfd550a3fae857",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "hardware infrastructure announcement with no AI capability or education implications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.02412",
+   "title_hash": "d7234051f88bc2ee9c1d319248f848ae",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "forum discussion post without original research or expert analysis; underlying paper not primary source"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42552099?fc=20260609215449&ff=20260805024321&v=2.20.0.post5+40e1b98",
+   "title_hash": "d54bbb02dd8290ab3b255ce2e2db8947",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": true,
+   "title": "AI-Empowered Nuclear Medicine Education, Part 3: Practical AI Applications for Learners",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-04T10:00:00+00:00",
+   "summary": "Peer-reviewed article examines how AI tools support nuclear medicine learners through study guides, question generation, simulation, and feedback.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42552095?fc=20260609215449&ff=20260805024321&v=2.20.0.post5+40e1b98",
+   "title_hash": "956fe9bcb49fe4736a0fa4d0e25f1ceb",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": true,
+   "title": "AI-Empowered Nuclear Medicine Education, Part 1: Theoretical and Ethical Foundation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-04T10:00:00+00:00",
+   "summary": "Peer-reviewed article establishes theoretical and ethical foundations for integrating artificial intelligence into nuclear medicine education.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&ff=20260805024321&v=2.20.0.post5+40e1b98",
+   "title_hash": "6211dfecae7ec08121d614ae3ea42725",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": true,
+   "title": "Training in internal medicine in the age of artificial intelligence",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-04T10:00:00+00:00",
+   "summary": "Peer-reviewed review guides internal medicine residency training on reliable AI use, clinical safety, ethics, and prompt engineering.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=JJvSODvTCes",
+   "title_hash": "ed29174d1056d67de00ddfcf618303b9",
+   "first_seen": "2026-08-05T06:43:21.022496+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models without confirmed developments"
   }
  ],
  "digests": [
@@ -28934,8 +29193,8 @@
  "last_digest_at": "2026-07-31T03:52:19.435381+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "The invalidation of an AI-supervised remote exam that forced 58,000 students to retake testing after anomalous score patterns surfaced stands as the starkest warning yet about deploying automated proctoring at scale <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[5]</a>. That concern is echoed in a geriatrics knowledge assessment pilot where researchers caught financially incentivized participants submitting inauthentic survey responses, exposing gaps in research security <a href=\"https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98\">[3]</a>. Educators are responding with structural fixes rather than detection alone: a four-pillar framework proposes redesigning coursework to resist generative AI misuse <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[10]</a>. On the curriculum side, a pre-matriculation program taught incoming medical students AI-assisted study strategies such as retrieval practice and spaced repetition before their first semester <a href=\"https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&amp;ff=20260802024637&amp;v=2.20.0.post5+40e1b98\">[7]</a>.\n\nAlso this week: the section&#x27;s broader coverage spans teaching and curriculum (seven items), assessment and feedback (five), exams and benchmarks (two), and attitudes toward AI adoption (one). Topics range from a clinical AI tutor for pediatric telemedicine trainees to large language models generating diabetic retinopathy multiple-choice questions with variable accuracy.",
-   "hash": "c613238bb3503e26",
+   "text": "An AI-supervised remote exam&#x27;s failure, which forced 58,000 students to retake testing after anomalous score distributions, underscores growing scrutiny of automated assessment tools <a href=\"https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it\">[8]</a>. Amid these concerns, a four-pillar framework for AI-resilient assessment design proposes structural changes to coursework rather than relying on detection software <a href=\"https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98\">[13]</a>. Elsewhere, evidence for AI&#x27;s instructional value is accumulating: a randomized trial found deep learning guidance improved novice performance in point-of-care ultrasound <a href=\"https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98\">[1]</a>, while internal medicine residency guidance addresses safe, ethical AI use and prompt engineering <a href=\"https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98\">[6]</a>. Pediatric trainees using AI as a telemedicine tutor showed confidence gains but persistent gaps in digital competence <a href=\"https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98\">[14]</a>.\n\nAlso this week: nine items address teaching and curriculum, including a pre-matriculation study-strategies curriculum for incoming students, while four cover assessment and feedback, such as LLM-based scoring of virtual standardized patient exams. One item each addresses exam benchmarking and attitudes toward AI adoption.",
+   "hash": "17bf418b3b1e418c",
    "date": "August 5, 2026"
   },
   "clinical_practice": {
@@ -28944,8 +29203,8 @@
    "date": "August 4, 2026"
   },
   "general_ai": {
-   "text": "Researchers reported a prototype self-replicating AI virus built from open-weight language models, a development that underscores growing worries about persistent autonomous threats <a href=\"https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity\">[14]</a>. That concern arrives alongside a broader safety and reliability effort spanning five items, including Mistral&#x27;s Shieldstral, a 3 billion parameter open-weights model built for multimodal content moderation <a href=\"https://mistral.ai/news/shieldstral\">[2]</a>, and a reinforcement-learning method called C-Guard designed to catch harmful prompts without triggering excessive refusals <a href=\"https://arxiv.org/abs/2608.00180\">[10]</a>. Regulatory attention is intensifying as well: European Union rules requiring disclosure of AI interactions and AI-generated content took effect <a href=\"https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes\">[13]</a>, while Texas now requires data centers to pass a grid-connection audit <a href=\"https://www.theverge.com/policy/975071/texas-data-center-audit\">[3]</a>.\n\nAlso this week: three new benchmarks probe agent memory, long-document understanding, and automated proof grading, while two new model releases include an open-weight diffusion-based language model, DiffusionGemma, alongside updated tooling for reasoning traces in LLM 0.32. Two studies examine transfer dynamics between vision and language systems and efficient methods for compressing long-context memory.",
-   "hash": "1df4a32f9531d9ff",
+   "text": "Research this week complicates a basic assumption behind model ranking: pairwise preference scores, a common method for judging large language models, do not reliably predict clinical safety, according to a study built on clinician feedback from the MOOVE platform <a href=\"https://arxiv.org/abs/2608.02617\">[2]</a>. That gap sits alongside a broader effort to tighten safety evaluation. A reinforcement learning method called C-Guard seeks to catch harmful prompts without triggering over-refusal on benign ones <a href=\"https://arxiv.org/abs/2608.00180\">[14]</a>, while a cross-architecture study finds that adapting small language models for healthcare, legal, and financial use carries measurable trustworthiness costs <a href=\"https://arxiv.org/abs/2608.00042\">[12]</a>. Mistral&#x27;s Shieldstral, a 3-billion-parameter open-weights moderation model, offers a practical tool for content screening <a href=\"https://mistral.ai/news/shieldstral\">[6]</a>, and JudgeArena proposes a standardized framework to reduce fragmentation across LLM-as-judge benchmarks <a href=\"https://arxiv.org/abs/2608.02620\">[3]</a>.\n\nAlso this week: the section carries six items on safety and reliability and five on benchmarks and evaluation, including work on detecting tool-use failures through sparse neuron activity, memory management strategies for conversational agents, and long-document understanding tests drawn from clinical guidelines. Texas now requires a grid-connection audit for new data centers, and LLM 0.32 adds reasoning-trace visibility and server-side tool support.",
+   "hash": "faab8e832cc81982",
    "date": "August 5, 2026"
   }
  },
