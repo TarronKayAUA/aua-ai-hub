@@ -17,11 +17,23 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">The AI Daily Brief, August 4, 2026</span>
   <span class="video-card-desc">Discussion of how open models and organizational sophistication are raising scrutiny of corporate AI claims and shallow implementations.</span>
 </a>
+<a class="video-card" href="https://www.cognitiverevolution.ai/nathan-goes-to-china-part-2-ai-safety-with-chinese-characteristics" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/0fb6bad0-8eaf-11f1-956a-e372f562a84d/image/6b3cba9b590d7a751f2dace1adbca55d.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics" loading="lazy">
+  <span class="video-card-title">Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics</span>
+  <span class="video-card-meta">The Cognitive Revolution, August 2, 2026</span>
+  <span class="video-card-desc">Nathan reports from China on AI safety practices and governance, examining whether American policy arguments about futility of safety obligations hold up against current Chinese model safeguards.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Everything You Need to Know About AI Tokens" loading="lazy">
   <span class="video-card-title">Everything You Need to Know About AI Tokens</span>
   <span class="video-card-meta">The AI Daily Brief, August 2, 2026</span>
   <span class="video-card-desc">Nufar Gaspar explains how AI tokens work, why agentic workflows inflate costs, and how to measure cost-effectiveness of model deployments.</span>
+</a>
+<a class="video-card" href="https://www.cognitiverevolution.ai/is-offense-or-defense-dominant-far-ai-s-adam-gleave-on-the-ai-security-leaderboard" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/17fab7ca-8c55-11f1-9f1b-3f3ff7360962/image/a7386c3e3837d9aa954f64ad28a1be30.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard" loading="lazy">
+  <span class="video-card-title">Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard</span>
+  <span class="video-card-meta">The Cognitive Revolution, July 30, 2026</span>
+  <span class="video-card-desc">FAR.AI co-founder Adam Gleave discusses the AI Security Leaderboard, a systematic evaluation of safety safeguards in frontier models, revealing gaps in how developers measure misuse defenses.</span>
 </a>
 <a class="video-card" href="https://aipodcast.education/why-ai-in-education-starts-with-better-conversations-dr-jo-orlando" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Why AI in Education Starts With Better Conversations: Dr Jo Orlando" loading="lazy">

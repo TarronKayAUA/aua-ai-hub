@@ -13,14 +13,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>New research on clinical safety evaluation finds that reviewer preference between model answers does not reliably predict which response is actually safer for patients <a href="https://arxiv.org/abs/2608.02617">[3]</a>, raising questions for health systems validating AI tools before deployment. A related study on domain-adapted small language models shows that fine-tuning for healthcare can quietly erode trustworthiness in ways standard benchmarks miss <a href="https://arxiv.org/abs/2608.00042">[13]</a>. Regulatory oversight faces similar gaps: the Trump administration&#x27;s proposed AI testing framework skips cybersecurity evaluation and excludes open models <a href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">[1]</a>. Meanwhile, a new framework seeks to standardize how models are judged as evaluators, addressing inconsistency across current LLM-as-judge protocols <a href="https://arxiv.org/abs/2608.02620">[4]</a>.</p>
-<p>Also this week: two new model releases include Mistral&#x27;s Shieldstral, an open-weight moderation model, and a diffusion-based language model eliminating autoregressive decoding. Five further papers on benchmarks and evaluation cover document understanding, mathematical proof judging, and multimodal agent memory, while additional safety work addresses reinforcement learning trade-offs between over-refusal and harm detection. One item covers Texas data center grid requirements.</p>
+<p>New research on evaluating large language models finds that clinician-preferred responses do not reliably indicate clinical safety, a gap that complicates efforts to certify medical AI systems <a href="https://arxiv.org/abs/2608.02617">[5]</a>. That concern echoes a broader pattern in AI oversight: the Trump administration&#x27;s newly outlined AI testing framework omits open models and lacks the technical capacity to assess cybersecurity risk <a href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">[3]</a>. Meanwhile, studies of AI agents show they still cannot conduct open-ended research without human direction <a href="https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended">[1]</a>, even as some researchers argue that scientific papers should be restructured for AI readers rather than people <a href="https://spectrum.ieee.org/ai-scientist-research-paper-format">[2]</a>.</p>
+<p>Also this week: five benchmarking and evaluation studies span long-document comprehension to proof grading, while four safety and reliability papers weigh trustworthiness trade-offs in domain-adapted models. Three research-methods papers include vision-language scaling laws, and two industry and policy items cover Texas&#x27;s grid-connection audit rule and Mistral&#x27;s release of Shieldstral, a 3-billion-parameter open-weights moderation model.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended">AI agents can&#x27;t yet do open-ended AI research</a>
+    <p class="news-card-summary">Early case studies show AI agents remain limited in conducting open-ended artificial intelligence research without human direction.</p>
+  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!2o-q!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a0117ca-8ce4-45e9-a956-62c82a45d44b_3064x1792.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-scientist-research-paper-format">Should Researchers Write Papers for AI Instead of People?</a>
+    <p class="news-card-summary">Researchers from major universities and tech companies propose reformatting scientific papers to accommodate AI agents as independent research participants.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/vintage-typewriter-typing-a-brain-made-of-letters-on-white-paper-on-pink-background.jpg?id=67572143&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 5, 2026</span></div>
@@ -114,20 +130,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.00042">Trustworthiness Costs of Domain Adaptation in Small Language Models:A Cross-Architecture Empirical Study</a>
     <p class="news-card-summary">Empirical study examines how domain adaptation of small language models affects trustworthiness across healthcare, legal, and financial applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.00146">DiffusionGemma Technical Report</a>
-    <p class="news-card-summary">DiffusionGemma is an open-weight language model using discrete diffusion to generate text blocks in parallel, eliminating sequential autoregressive decoding bottlenecks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.00180">A Constitution-Grid Instrument for Data-Efficient RL Alignment (C-Guard)</a>
-    <p class="news-card-summary">C-Guard applies reinforcement learning to balance two conflicting safety objectives: catching harmful prompts while avoiding over-refusal on benign requests.</p>
   </div>
 </div>
 </div>

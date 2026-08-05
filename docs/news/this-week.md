@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A remote exam proctored by AI invalidated results for 58,000 students after anomalous score distributions forced a mass retake <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[14]</a>, underscoring reliability concerns that echo findings that GPT-4&#x27;s performance on UK medical licensing practice questions shifts over time <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Such instability is pushing institutions to move past AI detectors toward redesigned assessment methods <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[6]</a>. Meanwhile a randomized trial found deep learning guidance improved novice point-of-care ultrasound acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[7]</a>, and a survey of first-year medical students showed widespread adoption of generative AI tools alongside calls for structured AI literacy <a href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[2]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum integration, including guidance for internal medicine residency on safe AI use. Four more cover assessment and feedback, such as endoscopy skill evaluation via vision transformers, and the remaining items span exam benchmark performance, simulation training, and student attitudes toward AI adoption.</p>
+<p>An AI-supervised remote exam covering 58,000 students was voided after anomalous scoring patterns forced a mass retake, underscoring fragile trust in automated proctoring <a href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">[14]</a>. That unease echoes across assessment more broadly, as institutions increasingly abandon AI detectors in favor of redesigned evaluation methods <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[6]</a>. Exam-related uncertainty also surfaces in benchmarking: GPT-4&#x27;s performance on UKMLA practice questions shifted over time, raising doubts about the stability of AI scores on licensing-style tests <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Meanwhile, debate continues over whether AI scribes strengthen or erode clinical documentation skills among trainees <a href="https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch">[15]</a>, even as a randomized trial found deep learning guidance improved novice ultrasound image acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
+<p>Also this week: eight items address teaching and curriculum, including simulated patient training for palliative care communication and new nuclear medicine education frameworks, while three cover assessment and feedback, among them a geriatrics knowledge pilot that flagged fraudulent survey responses. A separate survey finds first-year medical students widely adopting generative AI tools.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
@@ -121,6 +121,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An AI-supervised remote exam for 58,000 students was invalidated due to system failures that produced anomalous score distributions, requiring retesting.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-82955454-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch">STAT+: Are AI scribes useful tools in medical education, or a crutch that imperils learning?</a>
+        <p class="news-card-summary">Educators debate whether AI scribes help students develop clinical documentation skills or reduce learning by automating note-taking.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AdobeStock_1686952984-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -301,9 +309,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (20)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -416,6 +424,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42545563?fc=20260609215449&amp;ff=20260803140809&amp;v=2.20.0.post5+40e1b98">Diagnostic performance with sensitivity/specificity optimized computer-aided detection to detect common abnormalities in chest radiography</a>
         <p class="news-card-summary">Study comparing sensitivity-optimized and specificity-optimized computer-aided detection for chest radiography found that specificity-prioritized systems improved specificity without significantly reducing sensitivity.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-doctors-licensing-state-medical-boards">Opinion: We lead the Federation of State Medical Boards. Here’s what we think about licensing AI to practice medicine</a>
+        <p class="news-card-summary">Leaders of the Federation of State Medical Boards discuss regulatory considerations for licensing artificial intelligence systems to practice medicine.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AdobeStock_1909065947-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
@@ -587,6 +603,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Experimental study identifies embedding model degradation in clinical retrieval-augmented generation and tests methods to detect and correct it.</p>
       </div>
     </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">July 29, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/07/29/benchmarking-clinical-chatbots-openevidence-doximity-ai-prognosis">STAT+: Why benchmarking clinical LLMs from OpenEvidence, Doximity is complicated</a>
+        <p class="news-card-summary">Benchmarking clinical large language models from different developers presents methodological challenges that complicate safety and accuracy comparisons.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AIPrognosis_Wordpress_Katieqa-645x645.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 29, 2026</span></div>
@@ -627,15 +651,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>New research on clinical safety evaluation finds that reviewer preference between model answers does not reliably predict which response is actually safer for patients <a href="https://arxiv.org/abs/2608.02617">[3]</a>, raising questions for health systems validating AI tools before deployment. A related study on domain-adapted small language models shows that fine-tuning for healthcare can quietly erode trustworthiness in ways standard benchmarks miss <a href="https://arxiv.org/abs/2608.00042">[13]</a>. Regulatory oversight faces similar gaps: the Trump administration&#x27;s proposed AI testing framework skips cybersecurity evaluation and excludes open models <a href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">[1]</a>. Meanwhile, a new framework seeks to standardize how models are judged as evaluators, addressing inconsistency across current LLM-as-judge protocols <a href="https://arxiv.org/abs/2608.02620">[4]</a>.</p>
-<p>Also this week: two new model releases include Mistral&#x27;s Shieldstral, an open-weight moderation model, and a diffusion-based language model eliminating autoregressive decoding. Five further papers on benchmarks and evaluation cover document understanding, mathematical proof judging, and multimodal agent memory, while additional safety work addresses reinforcement learning trade-offs between over-refusal and harm detection. One item covers Texas data center grid requirements.</p>
+<p>New research on evaluating large language models finds that clinician-preferred responses do not reliably indicate clinical safety, a gap that complicates efforts to certify medical AI systems <a href="https://arxiv.org/abs/2608.02617">[5]</a>. That concern echoes a broader pattern in AI oversight: the Trump administration&#x27;s newly outlined AI testing framework omits open models and lacks the technical capacity to assess cybersecurity risk <a href="https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded">[3]</a>. Meanwhile, studies of AI agents show they still cannot conduct open-ended research without human direction <a href="https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended">[1]</a>, even as some researchers argue that scientific papers should be restructured for AI readers rather than people <a href="https://spectrum.ieee.org/ai-scientist-research-paper-format">[2]</a>.</p>
+<p>Also this week: five benchmarking and evaluation studies span long-document comprehension to proof grading, while four safety and reliability papers weigh trustworthiness trade-offs in domain-adapted models. Three research-methods papers include vision-language scaling laws, and two industry and policy items cover Texas&#x27;s grid-connection audit rule and Mistral&#x27;s release of Shieldstral, a 3-billion-parameter open-weights moderation model.</p>
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 62 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (62)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (62)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (11)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended">AI agents can&#x27;t yet do open-ended AI research</a>
+        <p class="news-card-summary">Early case studies show AI agents remain limited in conducting open-ended artificial intelligence research without human direction.</p>
+      </div>
+      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!2o-q!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a0117ca-8ce4-45e9-a956-62c82a45d44b_3064x1792.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/ai-scientist-research-paper-format">Should Researchers Write Papers for AI Instead of People?</a>
+        <p class="news-card-summary">Researchers from major universities and tech companies propose reformatting scientific papers to accommodate AI agents as independent research participants.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/vintage-typewriter-typing-a-brain-made-of-letters-on-white-paper-on-pink-background.jpg?id=67572143&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 5, 2026</span></div>
@@ -1073,14 +1113,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STK485_STK414_AI_SAFETY_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/07/29/1140795/the-ai-hype-index-unsexy-ai">The AI Hype Index: Unsexy AI</a>
-        <p class="news-card-summary">MIT Technology Review surveys recent developments in practical AI applications including robotics and domestic automation, covering both real capabilities and hype in near-term AI deployment.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/JUL26-thumb.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 29, 2026</span></div>
@@ -1095,20 +1127,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Kimi K3, a mixture-of-experts model with 2.8 trillion parameters, weights released; deployment on various accelerator types underway.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">July 27, 2026</span></div>
-        <a class="news-card-title" href="https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html">Truth is not a direction: a Tarski attack on LLM probes</a>
-        <p class="news-card-summary">Research paper argues that mechanistic interpretability probes of large language models rest on flawed assumptions about how truth is represented, challenging a common evaluation approach.</p>
-      </div>
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 11 videos"
+??? abstract "Show the 10 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=SJJBPwlPpww" target="_blank" rel="noopener" title="How AI Helps Solve Medical Mysteries at Boston Children’s Hospital | OpenAI Forum">
@@ -1171,17 +1196,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">OpenAI, July 29, 2026</span>
       <span class="video-card-desc">OpenAI announces a program providing 100,000 academic researchers free access to its frontier AI models including GPT-4o and o1.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=WeP9VUf1OoE" target="_blank" rel="noopener" title="Introducing gpt-transcribe and gpt-live-transcribe">
-      <img src="https://i4.ytimg.com/vi/WeP9VUf1OoE/hqdefault.jpg" alt="Video: OpenAI gpt-transcribe and gpt-live-transcribe models" loading="lazy">
-      <span class="video-card-title">OpenAI gpt-transcribe and gpt-live-transcribe models</span>
-      <span class="video-card-meta">OpenAI, July 28, 2026</span>
-      <span class="video-card-desc">OpenAI releases two transcription models for batch and live audio processing with custom vocabulary support, relevant for clinical documentation workflows.</span>
-    </a>
     </div>
 
 ## Podcasts
 
-??? abstract "Show the 2 episodes"
+??? abstract "Show the 4 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Washing-Wont-Work-Much-Longer-e3mvkl0" target="_blank" rel="noopener">
@@ -1190,11 +1209,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">The AI Daily Brief, August 4, 2026</span>
       <span class="video-card-desc">Discussion of how open models and organizational sophistication are raising scrutiny of corporate AI claims and shallow implementations.</span>
     </a>
+    <a class="video-card" href="https://www.cognitiverevolution.ai/nathan-goes-to-china-part-2-ai-safety-with-chinese-characteristics" target="_blank" rel="noopener">
+      <img src="https://megaphone.imgix.net/podcasts/0fb6bad0-8eaf-11f1-956a-e372f562a84d/image/6b3cba9b590d7a751f2dace1adbca55d.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics" loading="lazy">
+      <span class="video-card-title">Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics</span>
+      <span class="video-card-meta">The Cognitive Revolution, August 2, 2026</span>
+      <span class="video-card-desc">Nathan reports from China on AI safety practices and governance, examining whether American policy arguments about futility of safety obligations hold up against current Chinese model safeguards.</span>
+    </a>
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1" target="_blank" rel="noopener">
       <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Everything You Need to Know About AI Tokens" loading="lazy">
       <span class="video-card-title">Everything You Need to Know About AI Tokens</span>
       <span class="video-card-meta">The AI Daily Brief, August 2, 2026</span>
       <span class="video-card-desc">Nufar Gaspar explains how AI tokens work, why agentic workflows inflate costs, and how to measure cost-effectiveness of model deployments.</span>
+    </a>
+    <a class="video-card" href="https://www.cognitiverevolution.ai/is-offense-or-defense-dominant-far-ai-s-adam-gleave-on-the-ai-security-leaderboard" target="_blank" rel="noopener">
+      <img src="https://megaphone.imgix.net/podcasts/17fab7ca-8c55-11f1-9f1b-3f3ff7360962/image/a7386c3e3837d9aa954f64ad28a1be30.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard" loading="lazy">
+      <span class="video-card-title">Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard</span>
+      <span class="video-card-meta">The Cognitive Revolution, July 30, 2026</span>
+      <span class="video-card-desc">FAR.AI co-founder Adam Gleave discusses the AI Security Leaderboard, a systematic evaluation of safety safeguards in frontier models, revealing gaps in how developers measure misuse defenses.</span>
     </a>
     </div>
 
