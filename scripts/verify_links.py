@@ -68,13 +68,34 @@ MANUALLY_VERIFIED = {
     # 403s from GitHub Actions runner IPs only (issue #9, 2026-07-05);
     # serves 200 with full content to any user agent from residential
     # IPs (verified 2026-07-09), so the block is datacenter-IP based
-    # and will recur on the runner.
-    "www.deeplearning.ai": "2026-07-09",
+    # and will recur on the runner. Key fixed 2026-08-05 (issue #36):
+    # the matcher strips the www prefix, so the original
+    # "www.deeplearning.ai" key never matched and the entry silently
+    # did nothing.
+    "deeplearning.ai": "2026-07-09",
+    # 403s all scripted clients everywhere, browser user agent included
+    # (probed 2026-08-05); owner confirmed live in a browser 2026-08-01.
+    # verify: skip in tools.yaml for the same reason.
+    "studyfetch.com": "2026-08-05",
+    # Began 403ing all scripted clients in late July 2026 (conference
+    # watch issues #29 and #30, link check issue #36); conference dates
+    # owner-verified from the page in July, and the calendar entry
+    # carries watch_skip.
+    "events.educause.edu": "2026-08-05",
+    # Failed from the Actions runner 2026-08-05 (issue #36) but serves
+    # 200 to the checker's own user agent from residential IPs (probed
+    # the same day), the deeplearning.ai pattern.
+    "icmje.org": "2026-08-05",
     # ahli.cc was allowlisted 2026-07-06 when its /ml4h/ subpath began
     # 403ing scripted clients; removed 2026-07-09 when the listing moved
     # to the dedicated ml4h.ahli.cc site, which serves scripts normally
     # (matching is exact-host, so this entry never covered subdomains).
 }
+# The host matcher strips a leading www, so allowlist keys must be
+# stored without it; a www-prefixed key can never match (the
+# deeplearning.ai bug, issue #36).
+assert not any(k.startswith("www.") for k in MANUALLY_VERIFIED), \
+    "MANUALLY_VERIFIED keys must not start with 'www.'"
 BOT_BLOCK_STATUSES = {400, 403, 429}
 
 MD_LINK = re.compile(r"\[[^\]]*\]\((https?://[^)\s]+)\)")
@@ -159,11 +180,25 @@ def check(url: str, retries: int = 2) -> tuple[bool, str]:
         host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
         if host in MANUALLY_VERIFIED:
             return True, f"manual ({MANUALLY_VERIFIED[host]})"
-        # A 403 reached through a doi.org link means the DOI resolved
-        # (doi.org returns 404 for unknown DOIs) and only the publisher
-        # site blocks scripted clients, so the link works in a browser.
-        if host == "doi.org" and resp.status_code == 403:
-            return True, "doi resolved (publisher 403s scripts)"
+        # A 403 or 429 reached through a doi.org link, where redirects
+        # landed on a publisher host, means the DOI resolved (doi.org
+        # returns 404 for unknown DOIs) and only the publisher blocks
+        # scripted clients, so the link works in a browser. The final
+        # host is checked so a rate limit from doi.org itself is not
+        # mistaken for a resolution (429 case added 2026-08-05, issue
+        # #36: BMJ answers scripts with a persistent 429).
+        if host == "doi.org" and resp.status_code in (403, 429):
+            final_host = urllib.parse.urlparse(resp.url).netloc
+            if final_host and final_host != "doi.org":
+                return True, f"doi resolved ({final_host} blocks scripts)"
+        # github.com/signup bot-challenges every non-browser client
+        # (403 to scripted fetches with any user agent, probed
+        # 2026-08-05, issue #36); the page is GitHub's own signup and
+        # is not going anywhere. Scoped to the signup path so real
+        # github.com links stay checked.
+        if (host == "github.com" and resp.status_code == 403
+                and "/signup" in url):
+            return True, "github signup bot-challenges scripts"
     ok = resp.status_code < 400
     return ok, f"HTTP {resp.status_code}"
 
