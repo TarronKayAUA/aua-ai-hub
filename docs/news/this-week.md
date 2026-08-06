@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
@@ -276,14 +276,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42531043?fc=20260609215449&amp;ff=20260730235219&amp;v=2.20.0.post5+40e1b98">Artificial intelligence tools in dermatology education: A scoping review on their application, efficacy, and limitations</a>
         <p class="news-card-summary">Scoping review of artificial intelligence tools in dermatology education, identifying gaps in methodological rigor and need for standardized evaluation frameworks.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">July 30, 2026</span></div>
-        <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/07/30/law-schools-are-asking-wrong-question-about-ai-opinion">Law Schools Are Asking the Wrong Question About AI</a>
-        <p class="news-card-summary">Legal educators argue that assessing professional competence in a field rapidly transformed by AI requires reconsidering evaluation beyond academic integrity.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-2192059335.jpg?itok=awZJA4gq" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
@@ -1115,9 +1107,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 4 episodes"
+??? abstract "Show the 5 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://share.transistor.fm/s/063cfaad" target="_blank" rel="noopener">
+      <img src="https://img.transistorcdn.com/Rd4TVng9FvCHld5mIVx4EYiKPtyGdDsQdsNUW6WrTkA/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mNmVk/MTg5ZDU1MDdkYWNi/MjU3MDg1YmY1Zjhj/NWJjZC5wbmc.jpg" alt="Podcast: Models, Harnesses, and Multi-Agent Systems" loading="lazy">
+      <span class="video-card-title">Models, Harnesses, and Multi-Agent Systems</span>
+      <span class="video-card-meta">Practical AI, August 6, 2026</span>
+      <span class="video-card-desc">An explanation of AI models, agents, harnesses, and multi-agent systems for those new to current AI terminology and concepts.</span>
+    </a>
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Washing-Wont-Work-Much-Longer-e3mvkl0" target="_blank" rel="noopener">
       <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why AI Washing Won’t Work Much Longer" loading="lazy">
       <span class="video-card-title">Why AI Washing Won’t Work Much Longer</span>

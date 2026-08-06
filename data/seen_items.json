@@ -29675,6 +29675,61 @@
    "first_seen": "2026-08-06T06:47:21.922218+00:00",
    "kept": false,
    "reason": "community policy announcement without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/betting-on-clinical-trials",
+   "title_hash": "7aa195b0e90e7fef415447693240adf5",
+   "first_seen": "2026-08-06T10:49:22.678102+00:00",
+   "kept": false,
+   "reason": "commentary on clinical trial betting without new AI development or medical education relevance"
+  },
+  {
+   "url": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+   "title_hash": "118696984cf3ade46e832992860540b8",
+   "first_seen": "2026-08-06T10:49:22.678102+00:00",
+   "kept": false,
+   "reason": "litigation and industry gossip without substantive AI development news"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04557-6",
+   "title_hash": "1d35f67dbcb02dc81c1eee877d8b9dbd",
+   "first_seen": "2026-08-06T10:49:22.678102+00:00",
+   "kept": false,
+   "reason": "peer-reviewed clinical trial not focused on AI in medicine"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04541-0",
+   "title_hash": "bc308ba084628ad82b4b45da243c5ad7",
+   "first_seen": "2026-08-06T10:49:22.678102+00:00",
+   "kept": false,
+   "reason": "peer-reviewed clinical trial not focused on AI in medicine"
+  },
+  {
+   "url": "https://www.insidehighered.com/podcasts/key-podcast/2026/08/05/ep-207-ai-public-good-venu-govindaraju",
+   "title_hash": "fb44a4c17a7bd9921e9c37972c792a8c",
+   "first_seen": "2026-08-06T10:49:22.678102+00:00",
+   "kept": false,
+   "reason": "podcast episode, not a news item; handle separately under podcast rules"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6J8pE92Biko",
+   "title_hash": "dbb3252ac2f50a12c4e7d33bd1680911",
+   "first_seen": "2026-08-06T10:49:22.678102+00:00",
+   "kept": false,
+   "reason": "video title is speculative marketing claim without substantive content; description is promotional boilerplate"
+  },
+  {
+   "url": "https://share.transistor.fm/s/063cfaad",
+   "title_hash": "3eaf1bf40adac4578e1c82f0dba641da",
+   "first_seen": "2026-08-06T10:49:22.678102+00:00",
+   "kept": true,
+   "title": "Models, Harnesses, and Multi-Agent Systems",
+   "source": "Practical AI",
+   "published": "2026-08-06T09:00:00+00:00",
+   "summary": "An explanation of AI models, agents, harnesses, and multi-agent systems for those new to current AI terminology and concepts.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://img.transistorcdn.com/Rd4TVng9FvCHld5mIVx4EYiKPtyGdDsQdsNUW6WrTkA/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mNmVk/MTg5ZDU1MDdkYWNi/MjU3MDg1YmY1Zjhj/NWJjZC5wbmc.jpg"
   }
  ],
  "digests": [
