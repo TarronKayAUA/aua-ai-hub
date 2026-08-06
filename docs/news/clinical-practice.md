@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>US federal health officials met privately with technology companies and industry groups to discuss speeding clinical AI adoption <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[1]</a>, a push that arrives alongside new evidence on real-world performance. A modified Delphi study found ChatGPT-4 responses to COPD medication questions varied meaningfully in accuracy and clinical impact, reinforcing calls for oversight and guideline grounding <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[3]</a>. Separately, a multicenter retrospective study assessed large language model recommendations for antibiotic selection and dosing in hospitalized pneumonia patients <a href="https://medinform.jmir.org/2026/1/e98207">[13]</a>, while a randomized multicenter trial validated AI-assisted blood morphology analysis for clinical use <a href="https://www.nature.com/articles/s41746-026-03089-0">[5]</a>.</p>
-<p>Also this week: clinical decision support accounts for six items, including a referral triage system and a prostate cancer model built on MedGemma, while four papers examine safety and evaluation. Three patient-facing tools focus on mental health and orthopedic recovery support, and two imaging studies apply deep learning to chest radiographs for lung function estimation.</p>
-<p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
+<p>Federal health officials convened closed-door meetings with industry and researchers to weigh how to accelerate clinical AI adoption <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[2]</a>, a policy question shadowed by growing evidence that model performance remains inconsistent. A multicenter study found large language models could support antibiotic selection and dosing for hospitalized pneumonia patients <a href="https://medinform.jmir.org/2026/1/e98207">[14]</a>, while a modified Delphi analysis of ChatGPT-4 for COPD medication management found meaningful variability in accuracy and clinical impact across identical prompts <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[4]</a>. Similar concerns arose in a comparative evaluation of language models generating colonoscopy preparation guidance for patients <a href="https://ai.jmir.org/2026/1/e88581">[12]</a>, underscoring calls for tighter oversight before wider deployment in decision support and patient-facing tools.</p>
+<p>Also this week: five items address clinical decision support and four cover safety and evaluation, alongside three on patient-facing tools and one on clinical documentation. Imaging and diagnostics contributions include a deep learning model that estimates lung function from chest radiographs and an explainable system generating clinical reports from capsule endoscopy video.</p>
+<p class="section-brief-date">The picture as of August 6, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03079-2">An explainable generative AI system for video-to-report generation in capsule endoscopy</a>
+    <p class="news-card-summary">Explainable generative AI system automatically generates clinical reports from capsule endoscopy videos, published in npj Digital Medicine.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 5, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e78485">Benchmarking AI-Powered Translation of the EQ-5D-5L Patient-Reported Outcome Measure Using Automated Metrics: Comparative Evaluation Study</a>
     <p class="news-card-summary">Study benchmarked AI translation of the EQ-5D-5L patient outcome measure against human translation standards to assess feasibility for multinational clinical research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03058-7">MedKGent: a large language model agent framework for constructing temporally evolving medical knowledge graph</a>
-    <p class="news-card-summary">MedKGent presents a framework using language model agents to automatically construct and maintain medical knowledge graphs that evolve over time as new information becomes available.</p>
   </div>
 </div>
 </div>
