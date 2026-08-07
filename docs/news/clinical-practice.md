@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a policy move that lands alongside new evidence on where such tools still fall short <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[6]</a>. A modified Delphi study found ChatGPT-4 responses to COPD medication questions varied materially in accuracy and impact, underscoring calls for guideline-grounded oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[8]</a>, while a comparative study of large language models in glaucoma reasoning showed only partial overlap with ophthalmologist judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[3]</a>. Elsewhere, prehospital injury severity estimates embedded in AI models matched in-hospital trauma scores in prospective testing <a href="https://www.nature.com/articles/s41746-026-03074-7">[2]</a>, and AI-enabled continuous care features improved engagement and outcomes in psychotherapy <a href="https://www.nature.com/articles/s41746-026-03081-8">[5]</a>.</p>
-<p>Also this week: the section&#x27;s five items on clinical decision support and four on patient-facing tools reflect broader deployment efforts, including large language model-assisted referral triage automation in a tertiary hospital and a policy-optimized MedGemma model for multimodal prostate cancer care, alongside continued work on imaging-based lung function estimation and digital blood morphology validation.</p>
+<p>Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a move that comes as evidence on real-world performance remains mixed <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[7]</a>. A comparative study found large language models show overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning, reinforcing calls for specialist oversight before deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[4]</a>. Separately, a modified Delphi study found ChatGPT-4 responses to identical COPD management prompts varied materially in accuracy and clinical impact, underscoring the need for guideline-grounded oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[9]</a>. A STAT News opinion piece contends that AI systems extend, rather than newly create, longstanding erosion of physician autonomy <a href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">[1]</a>.</p>
+<p>Also this week: the section adds to its five items on clinical decision support and four on safety and evaluation, including a prehospital trauma severity model validated against in-hospital scores. Patient-facing tools, three items in all, include a generative AI coach shown effective for anxiety worry logs, alongside two entries on imaging and diagnostics and one on clinical documentation.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">Opinion: AI won’t enhance physician autonomy. It will further diminish it</a>
+    <p class="news-card-summary">A former surgeon argues that AI systems in medicine reflect and amplify existing diminishment of physician autonomy rather than representing a novel threat.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_442937982-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03009-2">Policy optimized MedGemma for multimodal prostate cancer care</a>
     <p class="news-card-summary">Policy-optimized MedGemma model addresses multimodal prostate cancer care through reinforcement learning from medical feedback.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e91061">Mapping the Evolving AI Preferences and Care Needs in Orthopedic Transitional Care From Hospitals to Home: Cross-Sectional Study</a>
-    <p class="news-card-summary">Cross-sectional study mapped patient and family preferences for AI-powered digital systems supporting orthopedic recovery after discharge from hospital.</p>
   </div>
 </div>
 </div>

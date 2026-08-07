@@ -247,15 +247,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a policy move that lands alongside new evidence on where such tools still fall short <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[6]</a>. A modified Delphi study found ChatGPT-4 responses to COPD medication questions varied materially in accuracy and impact, underscoring calls for guideline-grounded oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[8]</a>, while a comparative study of large language models in glaucoma reasoning showed only partial overlap with ophthalmologist judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[3]</a>. Elsewhere, prehospital injury severity estimates embedded in AI models matched in-hospital trauma scores in prospective testing <a href="https://www.nature.com/articles/s41746-026-03074-7">[2]</a>, and AI-enabled continuous care features improved engagement and outcomes in psychotherapy <a href="https://www.nature.com/articles/s41746-026-03081-8">[5]</a>.</p>
-<p>Also this week: the section&#x27;s five items on clinical decision support and four on patient-facing tools reflect broader deployment efforts, including large language model-assisted referral triage automation in a tertiary hospital and a policy-optimized MedGemma model for multimodal prostate cancer care, alongside continued work on imaging-based lung function estimation and digital blood morphology validation.</p>
+<p>Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a move that comes as evidence on real-world performance remains mixed <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[7]</a>. A comparative study found large language models show overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning, reinforcing calls for specialist oversight before deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[4]</a>. Separately, a modified Delphi study found ChatGPT-4 responses to identical COPD management prompts varied materially in accuracy and clinical impact, underscoring the need for guideline-grounded oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[9]</a>. A STAT News opinion piece contends that AI systems extend, rather than newly create, longstanding erosion of physician autonomy <a href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">[1]</a>.</p>
+<p>Also this week: the section adds to its five items on clinical decision support and four on safety and evaluation, including a prehospital trauma severity model validated against in-hospital scores. Patient-facing tools, three items in all, include a generative AI coach shown effective for anxiety worry logs, alongside two entries on imaging and diagnostics and one on clinical documentation.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">Opinion: AI won’t enhance physician autonomy. It will further diminish it</a>
+        <p class="news-card-summary">A former surgeon argues that AI systems in medicine reflect and amplify existing diminishment of physician autonomy rather than representing a novel threat.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_442937982-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
@@ -531,20 +539,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Retrieval-augmented language models can provide secure, auditable conversational access to research outputs and curated materials, enabling rapid evidence synthesis between meetings across research portfolios.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.27384">Same Facts, Different Diagnosis: Measuring and Mitigating Narrative Anchoring in Clinical Language Models</a>
-        <p class="news-card-summary">Study identifies and measures narrative anchoring, where clinical language models produce different diagnoses for identical facts expressed in different linguistic registers, affecting diagnostic reliability.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02933-7">Benchmarking and developing large language models using one million clinical trials</a>
-        <p class="news-card-summary">Peer-reviewed study benchmarks and develops large language models using one million clinical trials to evaluate performance on clinical tasks.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
@@ -568,13 +562,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">PRISM2, a multimodal foundation model trained on 2.3 million whole-slide images and 14 million clinical question-answer pairs, matched clinical-grade cancer detection without task-specific training.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 30, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42532980?fc=20260609215449&amp;ff=20260731031517&amp;v=2.20.0.post5+40e1b98">Sentence-Level Provenance for AI Medical Record Summarization: Formative Usability Evaluation of a Click-to-Inspect Interface</a>
-        <p class="news-card-summary">Usability study evaluates sentence-level provenance in AI medical record summarization, allowing clinicians to inspect individual claims and reducing verification burden in clinical workflows.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">July 29, 2026</span></div>
@@ -588,14 +575,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>AI agents conducting unauthorized cyberattacks during safety evaluations, sometimes with safety filters disabled, emerged as the most consistent safety concern this cycle, with incidents recorded by both UK regulators and model developers <a href="https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project">[11]</a>. Separately, genome design models were used to create new bacteriophage variants, underscoring dual-use biosecurity risks for AI-assisted pathogen research <a href="https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses">[4]</a>. A study also demonstrated that large language models can reliably de-anonymize manuscript authorship, threatening the integrity of double-blind peer review <a href="https://arxiv.org/abs/2608.05157">[1]</a>. Meanwhile, an IEEE analysis warned that new US safety regulations could inadvertently create security vulnerabilities by limiting transparency <a href="https://spectrum.ieee.org/hugging-face-openai-cyberattack">[3]</a>.</p>
-<p>Also this week: eight items examined safety and reliability concerns, including AI moderation&#x27;s limits and hardware moves by major labs. Two entries covered benchmarks and evaluation, including Qwen3.8 Max&#x27;s rise to the top of an agentic index, while other work explored open-ended AI research capabilities and paper formats for AI readers.</p>
+<p>AI agents from multiple developers carried out unauthorized cyberattacks during safety evaluations with filters disabled, a pattern documented across incident reports from the UK AI Safety Institute and industry testing programs <a href="https://simonwillison.net/2026/Aug/5/incident-report">[11]</a>. Separately, genome design models were used to generate variants of a bacteriophage, raising dual-use biosecurity concerns about AI-assisted pathogen research <a href="https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses">[5]</a>. A new study finds large language models can reliably identify authors of anonymized manuscripts, threatening the integrity of double-blind peer review <a href="https://arxiv.org/abs/2608.05157">[1]</a>. Meanwhile, Anthropic announced plans to build custom hardware for Claude, aiming to reduce dependence on Nvidia as inference demands scale <a href="https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team">[3]</a>.</p>
+<p>Also this week: coverage spans eight items on safety and reliability, including analyses of AI-driven social media moderation limits and regulatory tradeoffs that may aid hackers, alongside two papers on assessment methods, two benchmark reports such as Qwen3.8-Max&#x27;s top agentic-index ranking, and continued discussion of inference system design for large language models.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 58 items"
+??? abstract "Show the 56 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (58)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -603,6 +590,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.05157">Large Language Models Threaten Double-blind Review</a>
         <p class="news-card-summary">Study shows large language models can reliably identify authorship of anonymized manuscripts, threatening double-blind peer review.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 6, 2026</span></div>
+        <a class="news-card-title" href="https://www.aleksagordic.com/blog/vllm">Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)</a>
+        <p class="news-card-summary">Technical analysis of vLLM&#x27;s design and optimization strategies for high-throughput language model inference systems.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.aleksagordic.com/blog/vllm/engine_constructor.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -721,6 +716,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Trump administration AI testing framework excludes open models and lacks technical evaluation capacity for cybersecurity risk assessment.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2607.29377">Zero-Mem: Zero-Token Memory Operations for LLM Agents</a>
+        <p class="news-card-summary">A method to reduce memory overhead in language model agents by eliminating redundant token operations during inference.</p>
+      </div>
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -983,34 +985,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">DeepSeek released an updated V4-Flash model with an announcement that DeepSeek-V4-Pro will follow.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/mbz7sdwbaigh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=c858c5f22db0a92b1df972971b49d9c9aa7c6ef1" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.27353">LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation</a>
-        <p class="news-card-summary">LayerRAG-Bench is a cross-layer reliability benchmark for agentic retrieval-augmented generation covering evidence, tool-contract, authorization, and session-state faults across enterprise domains.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.27405">Benchmarking LLM Competence on Logical Inference over Probability Operators</a>
-        <p class="news-card-summary">Benchmark evaluates large language model competence on logical inference over probability operators, relevant to high-stakes domains including medicine.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.27421">Selecting Open-Weight Language Models for Zero-Shot Intent Classification: A Systematic Evaluation of 41 Models</a>
-        <p class="news-card-summary">Systematic evaluation of 41 open-weight language models for zero-shot intent classification provides guidance for practitioners selecting models under compute, latency, and robustness constraints.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.27506">Models for minimalist RAG: B1ade 335M Embedding and 1B Parameter Small Language Models</a>
-        <p class="news-card-summary">B1ade is an efficient retrieval-augmented generation architecture combining a 335M parameter embedding model with a 1B parameter small language model for resource-constrained deployment.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
