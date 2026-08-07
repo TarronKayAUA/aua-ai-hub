@@ -149,7 +149,15 @@ llm:
   # llm.tasks.section_briefs (moved off the retired GitHub Models free
   # tier 2026-07-31; it rode openai/gpt-4.1 there from 2026-06-11 until
   # the service ended). This block keeps the feature-level settings.
+  # refresh_hours added 2026-08-07 (owner approved): on the free tier
+  # the hash gate could open on every one of the six daily runs, and
+  # the first paid week showed 54 regenerations in 7 days (a few cents
+  # each on Sonnet, thinking included), heading for 5 to 9 dollars a
+  # month for intra-day freshness no reader perceives. Briefs now
+  # regenerate only on runs whose UTC hour is listed here (the 00:20
+  # nightly run); items on the pages keep refreshing six times daily.
   briefs:
+    refresh_hours: [0]
     # Forum/community sources stay on the page but are not offered to the
     # brief writer; the brief cites journals, labs, and primary sources.
     exclude_domains:
