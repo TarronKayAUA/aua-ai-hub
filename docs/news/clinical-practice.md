@@ -13,19 +13,33 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Federal health officials convened closed-door meetings with industry and researchers to weigh how to accelerate clinical AI adoption <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[2]</a>, a policy question shadowed by growing evidence that model performance remains inconsistent. A multicenter study found large language models could support antibiotic selection and dosing for hospitalized pneumonia patients <a href="https://medinform.jmir.org/2026/1/e98207">[14]</a>, while a modified Delphi analysis of ChatGPT-4 for COPD medication management found meaningful variability in accuracy and clinical impact across identical prompts <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[4]</a>. Similar concerns arose in a comparative evaluation of language models generating colonoscopy preparation guidance for patients <a href="https://ai.jmir.org/2026/1/e88581">[12]</a>, underscoring calls for tighter oversight before wider deployment in decision support and patient-facing tools.</p>
-<p>Also this week: five items address clinical decision support and four cover safety and evaluation, alongside three on patient-facing tools and one on clinical documentation. Imaging and diagnostics contributions include a deep learning model that estimates lung function from chest radiographs and an explainable system generating clinical reports from capsule endoscopy video.</p>
-<p class="section-brief-date">The picture as of August 6, 2026; numbered links go to the items below.</p>
+<p>Federal health officials convened closed-door meetings with technology companies and industry groups to discuss accelerating clinical AI adoption, a signal of how quickly regulatory attitudes toward deployment may shift <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[4]</a>. That urgency contrasts with mounting evidence that clinical performance remains uneven: a comparative evaluation found large language models overlapping but not equivalent to ophthalmologists in glaucoma reasoning, requiring specialist oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[1]</a>, while a modified Delphi study of ChatGPT-4 responses to COPD medication questions found material variability in accuracy and impact <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[6]</a>. Elsewhere, generative systems moved toward deployment, with an explainable model drafting reports from capsule endoscopy video <a href="https://www.nature.com/articles/s41746-026-03079-2">[2]</a>, and a randomized trial validating AI-assisted blood morphology analysis <a href="https://www.nature.com/articles/s41746-026-03089-0">[9]</a>.</p>
+<p>Also this week: the section adds four items on clinical decision support and four on patient-facing tools, alongside four addressing safety and evaluation, two on imaging and diagnostics, and one on clinical documentation. Coverage spans mental health engagement, referral triage automation, disaster medicine methods, and colonoscopy preparation guidance for patients.</p>
+<p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Comparative evaluation of large language models and clinicians in real-world glaucoma clinical reasoning</a>
+    <p class="news-card-summary">Large language model systems showed overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning and require specialist oversight before clinical deployment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 6, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03079-2">An explainable generative AI system for video-to-report generation in capsule endoscopy</a>
     <p class="news-card-summary">Explainable generative AI system automatically generates clinical reports from capsule endoscopy videos, published in npj Digital Medicine.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03081-8">AI enabled continuous care features enhance engagement and clinical outcomes in psychotherapy</a>
+    <p class="news-card-summary">Study reports AI-enabled continuous care features improved engagement and clinical outcomes in psychotherapy treatment.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -48,6 +62,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Accuracy, Usefulness, and Impact Variability of ChatGPT-4 for COPD Medication Management: A Modified Delphi Study</a>
     <p class="news-card-summary">Modified Delphi study demonstrates ChatGPT-4 responses to identical COPD prompts show material variability in accuracy and clinical impact, supporting oversight and guideline grounding.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556405?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">An artificial intelligence-enabled digital stethoscope demonstrates moderate murmur detection in dogs but not cats and unreliable arrhythmia classification in both species</a>
+    <p class="news-card-summary">AI-enabled digital stethoscope achieved moderate murmur detection in dogs comparable to veterinary students but performed poorly in cats and unreliably classified arrhythmias.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -104,27 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88581">Correctness, Harmfulness, and Diversity of Large Language Models for Colonoscopy Preparation Assistance: Comparative Evaluation Study</a>
     <p class="news-card-summary">Comparative study evaluated large language models for correctness, safety, and diversity of guidance on colonoscopy preparation instructions for patients.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83889">Prediction of Blood Transfusion Need and Dose in Patients With Upper Gastrointestinal Bleeding: Retrospective Multicenter Prediction Model Study</a>
-    <p class="news-card-summary">Multicenter study developed a gradient boosting model to predict transfusion need and dose in upper gastrointestinal bleeding with calibrated individualized risk estimates.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e98207">Large Language Model, Based Clinical Decision Support for Antibiotic Selection and Dose Recommendation in Hospitalized Patients With Pneumonia: Multicenter Retrospective Study</a>
-    <p class="news-card-summary">Retrospective multicenter study evaluated large language model performance for antibiotic selection and dose recommendation in hospitalized pneumonia patients.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e78485">Benchmarking AI-Powered Translation of the EQ-5D-5L Patient-Reported Outcome Measure Using Automated Metrics: Comparative Evaluation Study</a>
-    <p class="news-card-summary">Study benchmarked AI translation of the EQ-5D-5L patient outcome measure against human translation standards to assess feasibility for multinational clinical research.</p>
   </div>
 </div>
 </div>

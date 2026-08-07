@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Assessment practices are shifting as institutions move away from AI detectors, now considered unreliable, toward new strategies for evaluating student work in the era of generative AI <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[9]</a>. Questions about AI reliability also surface in exam research, where GPT-4&#x27;s scores on UK medical licensing practice questions fluctuated over time, raising concerns about benchmark stability <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[4]</a>. Simulation training advances too, with a pilot study showing large language model-based simulated patients can help train physicians in palliative care communication <a href="https://pubmed.ncbi.nlm.nih.gov/42553746?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[2]</a>. A French survey of health professionals and students found broad AI use alongside persistent concerns and training gaps <a href="https://mededu.jmir.org/2026/1/e89152">[1]</a>, echoing curriculum efforts guiding internal medicine residents on safe, ethical AI use <a href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">[15]</a>.</p>
-<p>Also this week: the section carries seven items on teaching and curriculum, covering topics from orthopaedic surgery education to nuclear medicine training, alongside three pieces on student and professional attitudes toward AI and three on assessment and feedback, including a look at survey authentication problems in a geriatrics knowledge pilot.</p>
-<p class="section-brief-date">The picture as of August 5, 2026; numbered links go to the items below.</p>
+<p>Faculty development and institutional readiness remain central to AI integration in health professions education, with a narrative review outlining strategies for preparing programs and instructors <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[2]</a>. Cost and structural barriers complicate that readiness, as one analysis maps policy imperatives needed before AI can meaningfully lower educational expenses <a href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[11]</a>. Meanwhile, assessment practices are shifting: many universities are dropping unreliable AI detectors in favor of redesigned evaluation methods <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[13]</a>. Underlying performance concerns persist too, since GPT-4&#x27;s accuracy on UK licensing exam questions has fluctuated over time <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[6]</a>. Medical students&#x27; attitudes toward AI, research shows, track digital literacy more than prior exposure <a href="https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98">[10]</a>.</p>
+<p>Also this week: the section covers seven items on teaching and curriculum, four on attitudes and adoption, two on assessment and feedback, and single entries on simulation-based training and exam benchmarking, including a pilot large language model-based simulated patient system for palliative care communication and a machine-learning tool for endoscopy skill feedback.</p>
+<p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 6, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90736">Prompt Framing and Evidence Requirement for AI-Generated Educational Responses in Dental Education: Experimental Study</a>
+    <p class="news-card-summary">Experimental study shows prompt framing and evidence requirements significantly shape AI-generated responses in dental education, affecting credibility and procedural reasoning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Faculty development and institutional readiness for incorporating AI in health professions education- A narrative review</a>
+    <p class="news-card-summary">Narrative review explores faculty development strategies and institutional readiness requirements for integrating artificial intelligence into health professions education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 5, 2026</span></div>
@@ -77,6 +91,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Medical students&#x27; attitudes toward AI correlate more strongly with digital literacy and AI perceptions than prior use; medical education should integrate digital literacy and ethical awareness into AI teaching.</p>
   </div>
 </div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Artificial Intelligence and the Cost of Medical Education: Conditional Promise, Structural Barriers, and Policy Imperatives</a>
+    <p class="news-card-summary">Analysis examines artificial intelligence&#x27;s effects on medical education costs, identifies structural barriers to adoption, and proposes policy recommendations.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556425?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Implementing the AI Act in the Portuguese Health Sector: Implications, Challenges and the CPIA-OM Perspective</a>
+    <p class="news-card-summary">Analysis examines implications of the European Union Artificial Intelligence Act for healthcare deployment in Portugal and discusses regulatory implementation challenges.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 5, 2026</span></div>
@@ -97,34 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42547997?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">Effects of AI on Nursing Education: Protocol for a Systematic Review and Meta-Analysis</a>
     <p class="news-card-summary">A systematic review protocol will synthesize evidence on how AI-assisted teaching affects nursing students&#x27; knowledge, practical ability, satisfaction, and confidence.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&amp;ff=20260804233443&amp;v=2.20.0.post5+40e1b98">Survey Authentication Challenges During a Geriatrics Knowledge Assessment Pilot</a>
-    <p class="news-card-summary">A multi-institutional geriatrics knowledge assessment pilot detected inauthentic survey responses from financially incentivized participants, highlighting the need for security measures in educational research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552099?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">AI-Empowered Nuclear Medicine Education, Part 3: Practical AI Applications for Learners</a>
-    <p class="news-card-summary">Peer-reviewed article examines how AI tools support nuclear medicine learners through study guides, question generation, simulation, and feedback.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552095?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">AI-Empowered Nuclear Medicine Education, Part 1: Theoretical and Ethical Foundation</a>
-    <p class="news-card-summary">Peer-reviewed article establishes theoretical and ethical foundations for integrating artificial intelligence into nuclear medicine education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">Training in internal medicine in the age of artificial intelligence</a>
-    <p class="news-card-summary">Peer-reviewed review guides internal medicine residency training on reliable AI use, clinical safety, ethics, and prompt engineering.</p>
   </div>
 </div>
 </div>

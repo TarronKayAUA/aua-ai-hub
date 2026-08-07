@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=UaeWJK_vv-Y" target="_blank" rel="noopener" title="Introducing Agent Plugins">
+  <img src="https://i2.ytimg.com/vi/UaeWJK_vv-Y/hqdefault.jpg" alt="Video: Agent Plugins open standard announcement" loading="lazy">
+  <span class="video-card-title">Agent Plugins open standard announcement</span>
+  <span class="video-card-meta">OpenAI, August 6, 2026</span>
+  <span class="video-card-desc">OpenAI announces Agent Plugins, an open standard for bundling AI agent skills and model context protocols with partner collaboration.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Gjw3ok6alYY" target="_blank" rel="noopener" title="Meta Muse Code Is HERE, Spark 1.2 &amp; Meta’s NEW Coding Agent!">
   <img src="https://i4.ytimg.com/vi/Gjw3ok6alYY/hqdefault.jpg" alt="Video: Meta Muse Code, Spark 1.2, and coding agent demo" loading="lazy">
   <span class="video-card-title">Meta Muse Code, Spark 1.2, and coding agent demo</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Gemini 3.6 Flash testing and technical overview</span>
   <span class="video-card-meta">Bijan Bowen, July 21, 2026</span>
   <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=-W2JdSl1v48" target="_blank" rel="noopener" title="Is Fine-Tuning Still Needed? LLMs, RAG, &amp; LoRA">
-  <img src="https://i2.ytimg.com/vi/-W2JdSl1v48/hqdefault.jpg" alt="Video: Fine-tuning, RAG, and LoRA in modern LLM workflows" loading="lazy">
-  <span class="video-card-title">Fine-tuning, RAG, and LoRA in modern LLM workflows</span>
-  <span class="video-card-meta">IBM Technology, July 21, 2026</span>
-  <span class="video-card-desc">Exploration of whether fine-tuning remains necessary in modern AI workflows, comparing it with retrieval-augmented generation and parameter-efficient methods like LoRA.</span>
 </a>
 </div>
 

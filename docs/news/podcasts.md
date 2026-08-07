@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/the-hidden-gender-gap-in-ai-education-with-juliana-peloche" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: The Hidden Gender Gap in AI Education, with Juliana Peloche" loading="lazy">
+  <span class="video-card-title">The Hidden Gender Gap in AI Education, with Juliana Peloche</span>
+  <span class="video-card-meta">AI in Education Podcast, August 6, 2026</span>
+  <span class="video-card-desc">Episode explores underrepresentation of women and girls in artificial intelligence education and its causes.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/063cfaad" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/Rd4TVng9FvCHld5mIVx4EYiKPtyGdDsQdsNUW6WrTkA/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mNmVk/MTg5ZDU1MDdkYWNi/MjU3MDg1YmY1Zjhj/NWJjZC5wbmc.jpg" alt="Podcast: Models, Harnesses, and Multi-Agent Systems" loading="lazy">
   <span class="video-card-title">Models, Harnesses, and Multi-Agent Systems</span>
