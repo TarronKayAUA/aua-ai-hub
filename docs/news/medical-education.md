@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/allenai/tutormoments">TutorMoments: Do AI tutors know when to help and when to hold back?</a>
+    <p class="news-card-summary">Study examines whether AI tutoring systems appropriately calibrate help provision, balancing scaffolding with student independence.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/j9L73K19mkz-n8Rr8ZI_B.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Artificial Intelligence and the Cost of Medical Education: Conditional Promise, Structural Barriers, and Policy Imperatives</a>
     <p class="news-card-summary">Analysis examines artificial intelligence&#x27;s effects on medical education costs, identifies structural barriers to adoption, and proposes policy recommendations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556425?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Implementing the AI Act in the Portuguese Health Sector: Implications, Challenges and the CPIA-OM Perspective</a>
-    <p class="news-card-summary">Analysis examines implications of the European Union Artificial Intelligence Act for healthcare deployment in Portugal and discusses regulatory implementation challenges.</p>
   </div>
 </div>
 </div>

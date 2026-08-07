@@ -18,10 +18,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://huggingface.co/blog/allenai/tutormoments">TutorMoments: Do AI tutors know when to help and when to hold back?</a>
+        <p class="news-card-summary">Study examines whether AI tutoring systems appropriately calibrate help provision, balancing scaffolding with student independence.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/j9L73K19mkz-n8Rr8ZI_B.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
@@ -221,20 +229,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A narrative primer on artificial intelligence for palliative care educators addresses the field&#x27;s relational, prognostic, and cultural sensitivities overlooked in general health professions education primers.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42535722?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Evaluating Large Language Model-Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: A Cross-Sectional Agreement Study</a>
-        <p class="news-card-summary">Large language models showed moderate agreement with faculty in scoring voice-based virtual patient interactions, suitable for formative assessment but not independent high-stakes evaluation due to rater variability and bias.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42534790?fc=20260609215449&amp;ff=20260731135414&amp;v=2.20.0.post5+40e1b98">Designing AI-resilient assessment in higher education: a four-pillar conceptual framework</a>
-        <p class="news-card-summary">A framework for designing assessments resistant to generative AI misuse, addressing limitations of detection-based approaches and proposing structural changes to course evaluation.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
@@ -266,9 +260,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -297,6 +291,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 7, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04577-2">A clinically validated framework for auditing AI chatbot behavior in mental health interactions</a>
         <p class="news-card-summary">A Nature Medicine study evaluating 810 conversations finds that AI chatbots often amplify psychological vulnerabilities in simulated mental health interactions, revealing persistent safety risks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03101-7">Review of open foundation models and datasets for ECG and PPG waveforms</a>
+        <p class="news-card-summary">Systematic review of open foundation models and datasets for electrocardiogram and photoplethysmogram analysis.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03076-5">Does timing matter, meta-analysis and systematic review of digital cognitive behavioral therapy in the perinatal period</a>
+        <p class="news-card-summary">Meta-analysis examining timing effects of digital cognitive behavioral therapy interventions during pregnancy and postpartum periods.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -571,10 +579,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 54 items"
+??? abstract "Show the 55 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities">OpenAI puts the brakes on a new model because it’s supposedly too powerful</a>
+        <p class="news-card-summary">OpenAI paused development of model Astra due to unmet security standards following recent disclosure of accidental model security breaches.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK155_OPEN_AI_CVirginia_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 7, 2026</span></div>
@@ -582,6 +598,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Clinicians and researchers call for AI companies to disclose safety data after chatbots have failed people in crisis situations.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mentalhealthaichat-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vhwilp/an_openweight_model_too_moonshot_joins_the_race">An open-weight model too, Moonshot joins the race (gently this time)</a>
+        <p class="news-card-summary">Moonshot released Kimi K3, an open-weight Chinese AI model, following earlier containment bypass reports.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/6i806mqxexhh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f2bd9e1ac62690d2068ec7710964ce3806b28cc5" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -953,14 +977,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Google retracted its AI tool for synthetic satellite imagery generation after concerns about misinformation and the risks of synthetic media.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/Google-Earth-AI-generated-image-of-Googleplex-on-fire-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Quanta Magazine AI</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731">Is AI Reasoning Right for the Wrong Reasons?</a>
-        <p class="news-card-summary">An analysis of whether AI systems perform reasoning tasks through genuine logical processes or pattern matching, examining the gap between intuitive explanations and empirical evidence.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/07/AI-Reasoning-cr.Celsius-Pictor-Default.webp" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

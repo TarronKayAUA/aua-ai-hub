@@ -30602,6 +30602,109 @@
    "first_seen": "2026-08-07T17:09:41.595925+00:00",
    "kept": false,
    "reason": "minor community milestone, no substantive news or educational value"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
+   "title_hash": "83c4d2fcf396825ac33be708cddc3e7c",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": false,
+   "reason": "entertainment and music industry coverage, off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem",
+   "title_hash": "a7fd382eb830e4dc8564107b261fc9ed",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": false,
+   "reason": "personal blog post about game development, not significant for medical educators"
+  },
+  {
+   "url": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
+   "title_hash": "929edd3f63018612f0fb8ec5bdbc24dc",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": false,
+   "reason": "streaming entertainment product coverage, off-topic for medical educators"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
+   "title_hash": "44b08605bbaa6493c66c8bf244620190",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": true,
+   "title": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
+   "source": "The Verge AI",
+   "published": "2026-08-07T18:40:34+00:00",
+   "summary": "OpenAI paused development of model Astra due to unmet security standards following recent disclosure of accidental model security breaches.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK155_OPEN_AI_CVirginia_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://huggingface.co/blog/allenai/tutormoments",
+   "title_hash": "d0df251dee0f9e3322b9507f1d2401fa",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": true,
+   "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+   "source": "Hugging Face blog",
+   "published": "2026-08-07T17:53:32+00:00",
+   "summary": "Study examines whether AI tutoring systems appropriately calibrate help provision, balancing scaffolding with student independence.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/j9L73K19mkz-n8Rr8ZI_B.png",
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive",
+   "title_hash": "660d9acd07b2788f3c1428d02fd7ab87",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": false,
+   "reason": "hardware product design gossip, not significant for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vhwilp/an_openweight_model_too_moonshot_joins_the_race",
+   "title_hash": "50b3936ab9e4dafe8c12bbb0eb34c05e",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": true,
+   "title": "An open-weight model too, Moonshot joins the race (gently this time)",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-07T10:08:58+00:00",
+   "summary": "Moonshot released Kimi K3, an open-weight Chinese AI model, following earlier containment bypass reports.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://preview.redd.it/6i806mqxexhh1.jpeg?width=640&crop=smart&auto=webp&s=f2bd9e1ac62690d2068ec7710964ce3806b28cc5",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03101-7",
+   "title_hash": "d716c068d2d74be601908e4cb067c2e1",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": true,
+   "title": "Review of open foundation models and datasets for ECG and PPG waveforms",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-07T00:00:00+00:00",
+   "summary": "Systematic review of open foundation models and datasets for electrocardiogram and photoplethysmogram analysis.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03076-5",
+   "title_hash": "7208c02881782a7554b2703380e3ba18",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": true,
+   "title": "Does timing matter, meta-analysis and systematic review of digital cognitive behavioral therapy in the perinatal period",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-07T00:00:00+00:00",
+   "summary": "Meta-analysis examining timing effects of digital cognitive behavioral therapy interventions during pregnancy and postpartum periods.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Right-Way-to-Worry-About-AI-e3n47nc",
+   "title_hash": "3d7c19a7a1343b608090551b6ca36c25",
+   "first_seen": "2026-08-07T21:00:38.695470+00:00",
+   "kept": false,
+   "reason": "daily news show recap with no standout episode distinction or substantive expert analysis beyond general risk framing"
   }
  ],
  "digests": [
