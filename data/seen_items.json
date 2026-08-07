@@ -30560,6 +30560,48 @@
    "first_seen": "2026-08-07T13:40:57.630922+00:00",
    "kept": false,
    "reason": "news roundup video from corporate channel with speculation framing; content summary insufficient to assess substance"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
+   "title_hash": "f8cebfe49f872848f75f78442be51def",
+   "first_seen": "2026-08-07T17:09:41.595925+00:00",
+   "kept": false,
+   "reason": "industry personnel gossip without substantive analysis of AI capabilities or developments"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible",
+   "title_hash": "5d627933353a5b7bda200b0d362bdc82",
+   "first_seen": "2026-08-07T17:09:41.595925+00:00",
+   "kept": false,
+   "reason": "vendor gossip and industry speculation without substantive news"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed",
+   "title_hash": "41c6f610ee7459d6567e7df63c35b8ab",
+   "first_seen": "2026-08-07T17:09:41.595925+00:00",
+   "kept": true,
+   "title": "AI chatbots have failed people in crisis. Can that be fixed?",
+   "source": "Ars Technica AI",
+   "published": "2026-08-07T13:49:37+00:00",
+   "summary": "Clinicians and researchers call for AI companies to disclose safety data after chatbots have failed people in crisis situations.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/mentalhealthaichat-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://github.com/Wyzer-Lang/wyzer",
+   "title_hash": "452395b57433199b942faa6cc5f8d6f1",
+   "first_seen": "2026-08-07T17:09:41.595925+00:00",
+   "kept": false,
+   "reason": "niche programming language project announcement, off-topic for this audience"
+  },
+  {
+   "url": "https://sebastianraschka.com/blog/2026/llms-from-scratch-reaches-100000-github-stars.html",
+   "title_hash": "667bcc118a09788e6977f899eb89e26e",
+   "first_seen": "2026-08-07T17:09:41.595925+00:00",
+   "kept": false,
+   "reason": "minor community milestone, no substantive news or educational value"
   }
  ],
  "digests": [

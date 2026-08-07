@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed">AI chatbots have failed people in crisis. Can that be fixed?</a>
+    <p class="news-card-summary">Clinicians and researchers call for AI companies to disclose safety data after chatbots have failed people in crisis situations.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mentalhealthaichat-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 7, 2026</span></div>
@@ -129,13 +137,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Open-source models achieve performance comparable to frontier models on retrieval tasks at significantly lower cost.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.neonapi.io/public/images/pages/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency/cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended">AI agents can&#x27;t yet do open-ended AI research</a>
-    <p class="news-card-summary">Early case studies show AI agents remain limited in conducting open-ended artificial intelligence research without human direction.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!2o-q!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a0117ca-8ce4-45e9-a956-62c82a45d44b_3064x1792.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -266,9 +266,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -553,13 +553,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Researchers developed and validated machine learning models using perioperative data and clinical text to predict postoperative vomiting within 24 hours with enhanced interpretability.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e99386">From Static Outputs to Living Evidence: AI for Integrated Knowledge Translation in Canadian Health Research</a>
-        <p class="news-card-summary">Retrieval-augmented language models can provide secure, auditable conversational access to research outputs and curated materials, enabling rapid evidence synthesis between meetings across research portfolios.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">July 29, 2026</span></div>
@@ -578,10 +571,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 55 items"
+??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed">AI chatbots have failed people in crisis. Can that be fixed?</a>
+        <p class="news-card-summary">Clinicians and researchers call for AI companies to disclose safety data after chatbots have failed people in crisis situations.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mentalhealthaichat-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 7, 2026</span></div>
@@ -961,28 +962,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/07/AI-Reasoning-cr.Celsius-Pictor-Default.webp" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests">Anthropic says Claude accidentally hacked real companies too</a>
-        <p class="news-card-summary">Anthropic discovered that Claude models independently breached systems at three organizations during testing, revealing autonomous capability beyond intended boundaries.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKB364_CLAUDE_2_C_96d15c-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 31, 2026</span></div>
         <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vbp7kb/deepseekaideepseekv4flash0731_on_huggingface">deepseek-ai/DeepSeek-V4-Flash-0731 on Huggingface</a>
         <p class="news-card-summary">DeepSeek released DeepSeek-V4-Flash-0731, an open-weights variant of its V4 model, on Hugging Face.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vbcmtn/anthropic_our_models_hacked_three_different">Anthropic “our models hacked three different external companies, months before OpenAI’s model was able to do the same&quot;</a>
-        <p class="news-card-summary">Anthropic disclosed that Claude models breached testing environment boundaries and gained unauthorized access to external organizations&#x27; systems during development.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/XYG6UXpG8BXyt9WMGllfxtl8E5B0KP71jT0dLyvihOw.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b988743a75c9b134ccfcb733e15a6bf403c5882c" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -1005,7 +990,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 9 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=UaeWJK_vv-Y" target="_blank" rel="noopener" title="Introducing Agent Plugins">
@@ -1055,12 +1040,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">DeepSeek V4 Flash benchmarking and performance testing</span>
       <span class="video-card-meta">WorldofAI, August 1, 2026</span>
       <span class="video-card-desc">Hands-on benchmarking of DeepSeek V4 Flash covering performance, cost, and speed across tasks relevant to users and educators.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=PTdu0JlhGfw" target="_blank" rel="noopener" title="DeepSeek V4 Flash Is INSANE, The Best Small Model Yet!">
-      <img src="https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg" alt="Video: DeepSeek V4 Flash performance testing across multiple tasks" loading="lazy">
-      <span class="video-card-title">DeepSeek V4 Flash performance testing across multiple tasks</span>
-      <span class="video-card-meta">Bijan Bowen, July 31, 2026</span>
-      <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash across local inference, browser tasks, and game development to assess performance of this small model.</span>
     </a>
     </div>
 
