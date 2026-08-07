@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Faculty development and institutional readiness remain central to AI integration in health professions education, with a narrative review outlining strategies for preparing programs and instructors <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[2]</a>. Cost and structural barriers complicate that readiness, as one analysis maps policy imperatives needed before AI can meaningfully lower educational expenses <a href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[11]</a>. Meanwhile, assessment practices are shifting: many universities are dropping unreliable AI detectors in favor of redesigned evaluation methods <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[13]</a>. Underlying performance concerns persist too, since GPT-4&#x27;s accuracy on UK licensing exam questions has fluctuated over time <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[6]</a>. Medical students&#x27; attitudes toward AI, research shows, track digital literacy more than prior exposure <a href="https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98">[10]</a>.</p>
-<p>Also this week: the section covers seven items on teaching and curriculum, four on attitudes and adoption, two on assessment and feedback, and single entries on simulation-based training and exam benchmarking, including a pilot large language model-based simulated patient system for palliative care communication and a machine-learning tool for endoscopy skill feedback.</p>
+<p>Universities are moving away from AI detectors, judged unreliable, toward newly designed assessment strategies as faculty adapt to generative AI in coursework <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[14]</a>. That shift comes alongside growing attention to institutional readiness, with a narrative review outlining faculty development needs for integrating AI into health professions education <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[2]</a>. Student use continues to expand: a survey of first-year medical students finds AI tools already widely adopted and seen as reinforcing study methods <a href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[6]</a>, while a longitudinal study of GPT-4 on UKMLA practice questions finds exam performance drifts over time, raising questions about relying on such models for licensing preparation <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
+<p>Also this week: the section carries six items on teaching and curriculum design, five on attitudes and adoption across students and faculty, and two on assessment and feedback methods, plus single studies on simulation-based training and exam benchmarking. A pilot program used a large language model-based simulated patient to train physicians in palliative care communication.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -33,6 +33,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Faculty development and institutional readiness for incorporating AI in health professions education- A narrative review</a>
     <p class="news-card-summary">Narrative review explores faculty development strategies and institutional readiness requirements for integrating artificial intelligence into health professions education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42562591?fc=20260609215449&amp;ff=20260807015150&amp;v=2.20.1">Large language models in paediatric medical education: equity must come first</a>
+    <p class="news-card-summary">Peer-reviewed perspective on equity considerations for large language model deployment in pediatric medical education.</p>
   </div>
 </div>
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">Acquisition of Cardiac Point-of-Care Ultrasound Images With Deep Learning: A Randomized Trial for Educational Outcomes With Novices</a>
     <p class="news-card-summary">A randomized trial found that deep learning-assisted point-of-care ultrasound guidance improved image acquisition and interpretation among novice learners.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42547997?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">Effects of AI on Nursing Education: Protocol for a Systematic Review and Meta-Analysis</a>
-    <p class="news-card-summary">A systematic review protocol will synthesize evidence on how AI-assisted teaching affects nursing students&#x27; knowledge, practical ability, satisfaction, and confidence.</p>
   </div>
 </div>
 </div>

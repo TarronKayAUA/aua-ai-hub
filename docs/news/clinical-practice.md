@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Federal health officials convened closed-door meetings with technology companies and industry groups to discuss accelerating clinical AI adoption, a signal of how quickly regulatory attitudes toward deployment may shift <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[4]</a>. That urgency contrasts with mounting evidence that clinical performance remains uneven: a comparative evaluation found large language models overlapping but not equivalent to ophthalmologists in glaucoma reasoning, requiring specialist oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[1]</a>, while a modified Delphi study of ChatGPT-4 responses to COPD medication questions found material variability in accuracy and impact <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[6]</a>. Elsewhere, generative systems moved toward deployment, with an explainable model drafting reports from capsule endoscopy video <a href="https://www.nature.com/articles/s41746-026-03079-2">[2]</a>, and a randomized trial validating AI-assisted blood morphology analysis <a href="https://www.nature.com/articles/s41746-026-03089-0">[9]</a>.</p>
-<p>Also this week: the section adds four items on clinical decision support and four on patient-facing tools, alongside four addressing safety and evaluation, two on imaging and diagnostics, and one on clinical documentation. Coverage spans mental health engagement, referral triage automation, disaster medicine methods, and colonoscopy preparation guidance for patients.</p>
+<p>Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a policy move that lands alongside new evidence on where such tools still fall short <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[6]</a>. A modified Delphi study found ChatGPT-4 responses to COPD medication questions varied materially in accuracy and impact, underscoring calls for guideline-grounded oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[8]</a>, while a comparative study of large language models in glaucoma reasoning showed only partial overlap with ophthalmologist judgment <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[3]</a>. Elsewhere, prehospital injury severity estimates embedded in AI models matched in-hospital trauma scores in prospective testing <a href="https://www.nature.com/articles/s41746-026-03074-7">[2]</a>, and AI-enabled continuous care features improved engagement and outcomes in psychotherapy <a href="https://www.nature.com/articles/s41746-026-03081-8">[5]</a>.</p>
+<p>Also this week: the section&#x27;s five items on clinical decision support and four on patient-facing tools reflect broader deployment efforts, including large language model-assisted referral triage automation in a tertiary hospital and a policy-optimized MedGemma model for multimodal prostate cancer care, alongside continued work on imaging-based lung function estimation and digital blood morphology validation.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03087-2">Randomized controlled trial of GenAI coach feedback efficacy, acceptability and mechanisms in anxiety worry logs</a>
+    <p class="news-card-summary">Randomized controlled trial shows generative AI coach feedback in anxiety worry logs is efficacious and acceptable to users.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03074-7">Prehospital Injury Severity Estimate (PHISE) matches in-hospital trauma scores when embedded in AI models</a>
+    <p class="news-card-summary">Prehospital injury severity estimates embedded in AI models match in-hospital trauma assessment scores in prospective evaluation.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 6, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e91061">Mapping the Evolving AI Preferences and Care Needs in Orthopedic Transitional Care From Hospitals to Home: Cross-Sectional Study</a>
     <p class="news-card-summary">Cross-sectional study mapped patient and family preferences for AI-powered digital systems supporting orthopedic recovery after discharge from hospital.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90848">AI in Disaster Medicine: Scoping Review of Methods, Validation, and System Integration</a>
-    <p class="news-card-summary">Scoping review systematically mapped AI methods for disaster medicine, assessing progress from research toward operationally validated clinical systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88581">Correctness, Harmfulness, and Diversity of Large Language Models for Colonoscopy Preparation Assistance: Comparative Evaluation Study</a>
-    <p class="news-card-summary">Comparative study evaluated large language models for correctness, safety, and diversity of guidance on colonoscopy preparation instructions for patients.</p>
   </div>
 </div>
 </div>
