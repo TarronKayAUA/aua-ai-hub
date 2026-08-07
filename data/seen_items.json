@@ -30486,6 +30486,80 @@
    "first_seen": "2026-08-07T09:16:33.282050+00:00",
    "kept": false,
    "reason": "rumor and speculation with no confirmed event"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic",
+   "title_hash": "5221bf83fc309070bddd072093818856",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip without technical details or capability specifics"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&ff=20260807094057&v=2.20.1",
+   "title_hash": "62e61a6f381724d4de6fde7122167aa1",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": true,
+   "title": "Predicting Step 2 CK Performance Using Automated Feature Selection and Nested Cross-Validation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-07T10:00:00+00:00",
+   "summary": "Researchers developed a predictive model using automated feature selection to forecast medical student USMLE Step 2 CK performance and deployed it as an interactive dashboard for educators.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03124-0",
+   "title_hash": "55ba7105e41dd741c745ec8d09eb0cd2",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": true,
+   "title": "Developing interactive learning interfaces for teaching AI in health professions education using generative AI tools",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-07T00:00:00+00:00",
+   "summary": "An npj Digital Medicine study presents an instructional design strategy using generative AI tools to create interactive learning experiences for teaching non-technical audiences foundational AI concepts in health professions education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04585-2",
+   "title_hash": "da9b9169798a483deb830d59ba15ed94",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; genomics study without AI education or clinical AI deployment focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04577-2",
+   "title_hash": "86e5d879b49decb228558cf0ce1b5652",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": true,
+   "title": "A clinically validated framework for auditing AI chatbot behavior in mental health interactions",
+   "source": "Nature Medicine",
+   "published": "2026-08-07T00:00:00+00:00",
+   "summary": "A Nature Medicine study evaluating 810 conversations finds that AI chatbots often amplify psychological vulnerabilities in simulated mental health interactions, revealing persistent safety risks.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vduej3/chinas_dfsx_offers_2x_the_memory_bandwidth_of",
+   "title_hash": "71e11d8812b93dbe1801059c05763ec6",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": false,
+   "reason": "hardware infrastructure news without direct relevance to medical educators or clinicians"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vdq8en/deepseekv4flash0731_surpasses_fable5_sol_kimik3",
+   "title_hash": "4825aa6b11736e12506911b9a10c3f76",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": false,
+   "reason": "forum discussion of benchmark comparisons without substantive analysis or new development"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=W0wXevMkdMM",
+   "title_hash": "56542daad3b057ed30037b3ad1341049",
+   "first_seen": "2026-08-07T13:40:57.630922+00:00",
+   "kept": false,
+   "reason": "news roundup video from corporate channel with speculation framing; content summary insufficient to assess substance"
   }
  ],
  "digests": [
@@ -30643,13 +30717,13 @@
  "last_digest_at": "2026-08-07T00:55:37.152446+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Universities are moving away from AI detectors, judged unreliable, toward newly designed assessment strategies as faculty adapt to generative AI in coursework <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are\">[14]</a>. That shift comes alongside growing attention to institutional readiness, with a narrative review outlining faculty development needs for integrating AI into health professions education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1\">[2]</a>. Student use continues to expand: a survey of first-year medical students finds AI tools already widely adopted and seen as reinforcing study methods <a href=\"https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[6]</a>, while a longitudinal study of GPT-4 on UKMLA practice questions finds exam performance drifts over time, raising questions about relying on such models for licensing preparation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[7]</a>.\n\nAlso this week: the section carries six items on teaching and curriculum design, five on attitudes and adoption across students and faculty, and two on assessment and feedback methods, plus single studies on simulation-based training and exam benchmarking. A pilot program used a large language model-based simulated patient to train physicians in palliative care communication.",
-   "hash": "58af16d59144e42e",
+   "text": "A predictive model that forecasts USMLE Step 2 CK performance from automated feature selection, now packaged as a dashboard for educators, offers a concrete tool for early advising <a href=\"https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1\">[1]</a>. Its release coincides with broader institutional questions: a narrative review examines faculty development and readiness as schools adopt AI tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1\">[4]</a>, while a separate analysis argues equity must be built into pediatric AI deployment from the outset <a href=\"https://pubmed.ncbi.nlm.nih.gov/42562591?fc=20260609215449&amp;ff=20260807015150&amp;v=2.20.1\">[5]</a>. Medical students&#x27; attitudes toward AI track more closely with digital literacy and perceptions than with prior use, a new survey finds <a href=\"https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98\">[13]</a>, and a cost-focused analysis points to structural barriers still limiting wider adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1\">[14]</a>.\n\nAlso this week: six items address teaching and curriculum design, five examine attitudes and adoption toward AI in clinical training, and two cover assessment and feedback methods. A single exams-and-benchmarks study tracks GPT-4&#x27;s shifting performance on UK licensing questions, while one simulation report tests an LLM-based standardized patient system for palliative care communication training.",
+   "hash": "be7a31f932d85993",
    "date": "August 7, 2026"
   },
   "clinical_practice": {
-   "text": "Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a move that comes as evidence on real-world performance remains mixed <a href=\"https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai\">[7]</a>. A comparative study found large language models show overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning, reinforcing calls for specialist oversight before deployment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1\">[4]</a>. Separately, a modified Delphi study found ChatGPT-4 responses to identical COPD management prompts varied materially in accuracy and clinical impact, underscoring the need for guideline-grounded oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[9]</a>. A STAT News opinion piece contends that AI systems extend, rather than newly create, longstanding erosion of physician autonomy <a href=\"https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy\">[1]</a>.\n\nAlso this week: the section adds to its five items on clinical decision support and four on safety and evaluation, including a prehospital trauma severity model validated against in-hospital scores. Patient-facing tools, three items in all, include a generative AI coach shown effective for anxiety worry logs, alongside two entries on imaging and diagnostics and one on clinical documentation.",
-   "hash": "22401793d02fbf6b",
+   "text": "A Nature Medicine analysis of 810 simulated mental health conversations finds that AI chatbots often amplify psychological vulnerabilities rather than mitigate them, adding urgency to broader questions about clinical oversight <a href=\"https://www.nature.com/articles/s41591-026-04577-2\">[4]</a>. That caution echoes in a comparative study showing large language models overlap with but do not match ophthalmologists in glaucoma reasoning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1\">[5]</a>, and in a Delphi study finding ChatGPT-4 responses to COPD questions vary materially in accuracy and impact <a href=\"https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98\">[10]</a>. Against this backdrop, US federal health officials met privately with industry groups to discuss accelerating clinical AI adoption <a href=\"https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai\">[8]</a>, prompting a physician&#x27;s argument that such systems mainly extend, rather than create, erosion of clinical autonomy <a href=\"https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy\">[1]</a>.\n\nAlso this week: four items address clinical decision support, including AI-assisted blood morphology validation and referral triage automation, while three explore patient-facing tools such as generative AI coaching for anxiety and continuous-care psychotherapy features. Two imaging and diagnostics studies cover capsule endoscopy reporting and chest radiograph-based lung function estimation, and one report addresses clinical documentation workflows.",
+   "hash": "ef5957e15fc15f5e",
    "date": "August 7, 2026"
   },
   "general_ai": {

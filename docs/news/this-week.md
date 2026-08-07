@@ -13,15 +13,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Universities are moving away from AI detectors, judged unreliable, toward newly designed assessment strategies as faculty adapt to generative AI in coursework <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[14]</a>. That shift comes alongside growing attention to institutional readiness, with a narrative review outlining faculty development needs for integrating AI into health professions education <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[2]</a>. Student use continues to expand: a survey of first-year medical students finds AI tools already widely adopted and seen as reinforcing study methods <a href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[6]</a>, while a longitudinal study of GPT-4 on UKMLA practice questions finds exam performance drifts over time, raising questions about relying on such models for licensing preparation <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
-<p>Also this week: the section carries six items on teaching and curriculum design, five on attitudes and adoption across students and faculty, and two on assessment and feedback methods, plus single studies on simulation-based training and exam benchmarking. A pilot program used a large language model-based simulated patient to train physicians in palliative care communication.</p>
+<p>A predictive model that forecasts USMLE Step 2 CK performance from automated feature selection, now packaged as a dashboard for educators, offers a concrete tool for early advising <a href="https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1">[1]</a>. Its release coincides with broader institutional questions: a narrative review examines faculty development and readiness as schools adopt AI tools <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[4]</a>, while a separate analysis argues equity must be built into pediatric AI deployment from the outset <a href="https://pubmed.ncbi.nlm.nih.gov/42562591?fc=20260609215449&amp;ff=20260807015150&amp;v=2.20.1">[5]</a>. Medical students&#x27; attitudes toward AI track more closely with digital literacy and perceptions than with prior use, a new survey finds <a href="https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98">[13]</a>, and a cost-focused analysis points to structural barriers still limiting wider adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[14]</a>.</p>
+<p>Also this week: six items address teaching and curriculum design, five examine attitudes and adoption toward AI in clinical training, and two cover assessment and feedback methods. A single exams-and-benchmarks study tracks GPT-4&#x27;s shifting performance on UK licensing questions, while one simulation report tests an LLM-based standardized patient system for palliative care communication training.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1">Predicting Step 2 CK Performance Using Automated Feature Selection and Nested Cross-Validation</a>
+        <p class="news-card-summary">Researchers developed a predictive model using automated feature selection to forecast medical student USMLE Step 2 CK performance and deployed it as an interactive dashboard for educators.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03124-0">Developing interactive learning interfaces for teaching AI in health professions education using generative AI tools</a>
+        <p class="news-card-summary">An npj Digital Medicine study presents an instructional design strategy using generative AI tools to create interactive learning experiences for teaching non-technical audiences foundational AI concepts in health professions education.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 6, 2026</span></div>
@@ -247,14 +261,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a move that comes as evidence on real-world performance remains mixed <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[7]</a>. A comparative study found large language models show overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning, reinforcing calls for specialist oversight before deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[4]</a>. Separately, a modified Delphi study found ChatGPT-4 responses to identical COPD management prompts varied materially in accuracy and clinical impact, underscoring the need for guideline-grounded oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[9]</a>. A STAT News opinion piece contends that AI systems extend, rather than newly create, longstanding erosion of physician autonomy <a href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">[1]</a>.</p>
-<p>Also this week: the section adds to its five items on clinical decision support and four on safety and evaluation, including a prehospital trauma severity model validated against in-hospital scores. Patient-facing tools, three items in all, include a generative AI coach shown effective for anxiety worry logs, alongside two entries on imaging and diagnostics and one on clinical documentation.</p>
+<p>A Nature Medicine analysis of 810 simulated mental health conversations finds that AI chatbots often amplify psychological vulnerabilities rather than mitigate them, adding urgency to broader questions about clinical oversight <a href="https://www.nature.com/articles/s41591-026-04577-2">[4]</a>. That caution echoes in a comparative study showing large language models overlap with but do not match ophthalmologists in glaucoma reasoning <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[5]</a>, and in a Delphi study finding ChatGPT-4 responses to COPD questions vary materially in accuracy and impact <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[10]</a>. Against this backdrop, US federal health officials met privately with industry groups to discuss accelerating clinical AI adoption <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[8]</a>, prompting a physician&#x27;s argument that such systems mainly extend, rather than create, erosion of clinical autonomy <a href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">[1]</a>.</p>
+<p>Also this week: four items address clinical decision support, including AI-assisted blood morphology validation and referral triage automation, while three explore patient-facing tools such as generative AI coaching for anxiety and continuous-care psychotherapy features. Two imaging and diagnostics studies cover capsule endoscopy reporting and chest radiograph-based lung function estimation, and one report addresses clinical documentation workflows.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -276,6 +290,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03074-7">Prehospital Injury Severity Estimate (PHISE) matches in-hospital trauma scores when embedded in AI models</a>
         <p class="news-card-summary">Prehospital injury severity estimates embedded in AI models match in-hospital trauma assessment scores in prospective evaluation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04577-2">A clinically validated framework for auditing AI chatbot behavior in mental health interactions</a>
+        <p class="news-card-summary">A Nature Medicine study evaluating 810 conversations finds that AI chatbots often amplify psychological vulnerabilities in simulated mental health interactions, revealing persistent safety risks.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -539,29 +560,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Retrieval-augmented language models can provide secure, auditable conversational access to research outputs and curated materials, enabling rapid evidence synthesis between meetings across research portfolios.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04567-4">Learning from routine health system data builds better neuroimaging AI models</a>
-        <p class="news-card-summary">A three-dimensional visual foundation model trained on 5.24 million routine clinical CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance.</p>
-      </div>
-      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04567-4/MediaObjects/41591_2026_4567_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00038-y">Humanoid robots perform successful surgery in animals</a>
-        <p class="news-card-summary">A humanoid robot controlled by a remote human surgeon performed laparoscopic gallbladder removal in pigs, generating findings for future surgical robotics development.</p>
-      </div>
-      <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00038-y/d41591-026-00038-y_53047252.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04521-4">End-to-end multimodal pathology foundation model with clinical dialogue</a>
-        <p class="news-card-summary">PRISM2, a multimodal foundation model trained on 2.3 million whole-slide images and 14 million clinical question-answer pairs, matched clinical-grade cancer detection without task-specific training.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">July 29, 2026</span></div>
@@ -580,9 +578,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 56 items"
+??? abstract "Show the 55 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -977,14 +975,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vbp7kb/deepseekaideepseekv4flash0731_on_huggingface">deepseek-ai/DeepSeek-V4-Flash-0731 on Huggingface</a>
         <p class="news-card-summary">DeepSeek released DeepSeek-V4-Flash-0731, an open-weights variant of its V4 model, on Hugging Face.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vbidkp/deepseekv4flash_has_been_updated_the_official">DeepSeek-V4-Flash has been updated, &quot;The official release of DeepSeek-V4-Pro will follow soon&quot;</a>
-        <p class="news-card-summary">DeepSeek released an updated V4-Flash model with an announcement that DeepSeek-V4-Pro will follow.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/mbz7sdwbaigh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=c858c5f22db0a92b1df972971b49d9c9aa7c6ef1" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">

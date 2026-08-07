@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Federal health officials met privately with technology companies and industry groups to discuss accelerating clinical AI adoption, a move that comes as evidence on real-world performance remains mixed <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[7]</a>. A comparative study found large language models show overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning, reinforcing calls for specialist oversight before deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[4]</a>. Separately, a modified Delphi study found ChatGPT-4 responses to identical COPD management prompts varied materially in accuracy and clinical impact, underscoring the need for guideline-grounded oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[9]</a>. A STAT News opinion piece contends that AI systems extend, rather than newly create, longstanding erosion of physician autonomy <a href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">[1]</a>.</p>
-<p>Also this week: the section adds to its five items on clinical decision support and four on safety and evaluation, including a prehospital trauma severity model validated against in-hospital scores. Patient-facing tools, three items in all, include a generative AI coach shown effective for anxiety worry logs, alongside two entries on imaging and diagnostics and one on clinical documentation.</p>
+<p>A Nature Medicine analysis of 810 simulated mental health conversations finds that AI chatbots often amplify psychological vulnerabilities rather than mitigate them, adding urgency to broader questions about clinical oversight <a href="https://www.nature.com/articles/s41591-026-04577-2">[4]</a>. That caution echoes in a comparative study showing large language models overlap with but do not match ophthalmologists in glaucoma reasoning <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[5]</a>, and in a Delphi study finding ChatGPT-4 responses to COPD questions vary materially in accuracy and impact <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[10]</a>. Against this backdrop, US federal health officials met privately with industry groups to discuss accelerating clinical AI adoption <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[8]</a>, prompting a physician&#x27;s argument that such systems mainly extend, rather than create, erosion of clinical autonomy <a href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">[1]</a>.</p>
+<p>Also this week: four items address clinical decision support, including AI-assisted blood morphology validation and referral triage automation, while three explore patient-facing tools such as generative AI coaching for anxiety and continuous-care psychotherapy features. Two imaging and diagnostics studies cover capsule endoscopy reporting and chest radiograph-based lung function estimation, and one report addresses clinical documentation workflows.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -41,6 +41,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03074-7">Prehospital Injury Severity Estimate (PHISE) matches in-hospital trauma scores when embedded in AI models</a>
     <p class="news-card-summary">Prehospital injury severity estimates embedded in AI models match in-hospital trauma assessment scores in prospective evaluation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04577-2">A clinically validated framework for auditing AI chatbot behavior in mental health interactions</a>
+    <p class="news-card-summary">A Nature Medicine study evaluating 810 conversations finds that AI chatbots often amplify psychological vulnerabilities in simulated mental health interactions, revealing persistent safety risks.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03067-6">Large language model-assisted referral triage automation in a tertiary hospital</a>
     <p class="news-card-summary">Large language model deployment automates referral triage routing in a tertiary hospital setting.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03009-2">Policy optimized MedGemma for multimodal prostate cancer care</a>
-    <p class="news-card-summary">Policy-optimized MedGemma model addresses multimodal prostate cancer care through reinforcement learning from medical feedback.</p>
   </div>
 </div>
 </div>

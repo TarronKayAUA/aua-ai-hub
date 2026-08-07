@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Universities are moving away from AI detectors, judged unreliable, toward newly designed assessment strategies as faculty adapt to generative AI in coursework <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">[14]</a>. That shift comes alongside growing attention to institutional readiness, with a narrative review outlining faculty development needs for integrating AI into health professions education <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[2]</a>. Student use continues to expand: a survey of first-year medical students finds AI tools already widely adopted and seen as reinforcing study methods <a href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[6]</a>, while a longitudinal study of GPT-4 on UKMLA practice questions finds exam performance drifts over time, raising questions about relying on such models for licensing preparation <a href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[7]</a>.</p>
-<p>Also this week: the section carries six items on teaching and curriculum design, five on attitudes and adoption across students and faculty, and two on assessment and feedback methods, plus single studies on simulation-based training and exam benchmarking. A pilot program used a large language model-based simulated patient to train physicians in palliative care communication.</p>
+<p>A predictive model that forecasts USMLE Step 2 CK performance from automated feature selection, now packaged as a dashboard for educators, offers a concrete tool for early advising <a href="https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1">[1]</a>. Its release coincides with broader institutional questions: a narrative review examines faculty development and readiness as schools adopt AI tools <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[4]</a>, while a separate analysis argues equity must be built into pediatric AI deployment from the outset <a href="https://pubmed.ncbi.nlm.nih.gov/42562591?fc=20260609215449&amp;ff=20260807015150&amp;v=2.20.1">[5]</a>. Medical students&#x27; attitudes toward AI track more closely with digital literacy and perceptions than with prior use, a new survey finds <a href="https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98">[13]</a>, and a cost-focused analysis points to structural barriers still limiting wider adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[14]</a>.</p>
+<p>Also this week: six items address teaching and curriculum design, five examine attitudes and adoption toward AI in clinical training, and two cover assessment and feedback methods. A single exams-and-benchmarks study tracks GPT-4&#x27;s shifting performance on UK licensing questions, while one simulation report tests an LLM-based standardized patient system for palliative care communication training.</p>
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1">Predicting Step 2 CK Performance Using Automated Feature Selection and Nested Cross-Validation</a>
+    <p class="news-card-summary">Researchers developed a predictive model using automated feature selection to forecast medical student USMLE Step 2 CK performance and deployed it as an interactive dashboard for educators.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03124-0">Developing interactive learning interfaces for teaching AI in health professions education using generative AI tools</a>
+    <p class="news-card-summary">An npj Digital Medicine study presents an instructional design strategy using generative AI tools to create interactive learning experiences for teaching non-technical audiences foundational AI concepts in health professions education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 6, 2026</span></div>
@@ -110,21 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556425?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Implementing the AI Act in the Portuguese Health Sector: Implications, Challenges and the CPIA-OM Perspective</a>
     <p class="news-card-summary">Analysis examines implications of the European Union Artificial Intelligence Act for healthcare deployment in Portugal and discusses regulatory implementation challenges.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/05/ai-detectors-are-out-new-approaches-are">AI Detectors Are Out, New Assessments Are In</a>
-    <p class="news-card-summary">Universities increasingly abandon AI detectors as unreliable, prompting faculty to develop alternative assessment strategies for the age of generative AI.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robots_leaving_entering_gates.jpg?itok=q4gbxvzU" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42548487?fc=20260609215449&amp;ff=20260804065754&amp;v=2.20.0.post5+40e1b98">Acquisition of Cardiac Point-of-Care Ultrasound Images With Deep Learning: A Randomized Trial for Educational Outcomes With Novices</a>
-    <p class="news-card-summary">A randomized trial found that deep learning-assisted point-of-care ultrasound guidance improved image acquisition and interpretation among novice learners.</p>
   </div>
 </div>
 </div>
