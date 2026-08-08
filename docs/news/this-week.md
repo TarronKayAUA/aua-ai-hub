@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 34 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -243,20 +243,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A narrative primer on artificial intelligence for palliative care educators addresses the field&#x27;s relational, prognostic, and cultural sensitivities overlooked in general health professions education primers.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">Artificial intelligence as a clinical tutor in telemedicine: Opportunities and challenges in medical education</a>
-        <p class="news-card-summary">Study of pediatric trainees&#x27; confidence and engagement with AI in telemedicine identified gaps in digital competence and critical evaluation skills, informing curriculum updates.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&amp;ff=20260731235227&amp;v=2.20.0.post5+40e1b98">Evaluation of an AI-Based Constraint-Optimization Scheduler to Optimize On-Call Schedule Equity and Reduce Administrative Burden in a Pediatric Residency: Retrospective Comparative Study</a>
-        <p class="news-card-summary">Retrospective study found an AI constraint-optimization scheduler improved on-call equity and reduced high-risk shift sequences in pediatric residency training.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">July 31, 2026</span></div>
@@ -274,15 +260,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03061-y">Pan-retinal pathology detection in oct scans integrating natural language synthesis with diagnostic annotation</a>
         <p class="news-card-summary">Natural language synthesis integrated with diagnostic annotation improves pan-retinal pathology detection in optical coherence tomography scans.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03102-6">A multi-class gastric biopsy artificial intelligence model developed from whole slide histopathological images</a>
+        <p class="news-card-summary">Researchers developed a multi-class artificial intelligence model to classify gastric biopsy findings from whole slide histopathological images.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -586,9 +579,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 53 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -959,22 +952,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">DeepSeek-V4-Flash-0731 achieves an intelligence benchmark score comparable to top frontier models from five months prior, while remaining runnable on modest local hardware.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/h09pa8bs3qgh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=42ca1e9982df4666fd1016fe3e7e0f5f510d9d65" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731">deepseek-ai/DeepSeek-V4-Flash-0731</a>
-        <p class="news-card-summary">DeepSeek released V4-Flash-0731, a 304-billion-parameter open-weights model with enhanced agentic capabilities at competitive pricing.</p>
-      </div>
-      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/deepseek-flash-chart.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="other">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">July 31, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Jul/31/stateless-mcp">Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)</a>
-        <p class="news-card-summary">Model Context Protocol 2.0 specification introduced stateless MCP design, enabling standardized integration of tools and data sources with language models.</p>
-      </div>
-      <img class="news-card-thumb" src="https://raw.githubusercontent.com/simonw/til/refs/heads/main/llms/claude-add-custom-connector-dialog.webp" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

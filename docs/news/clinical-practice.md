@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -26,6 +26,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03061-y">Pan-retinal pathology detection in oct scans integrating natural language synthesis with diagnostic annotation</a>
     <p class="news-card-summary">Natural language synthesis integrated with diagnostic annotation improves pan-retinal pathology detection in optical coherence tomography scans.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03102-6">A multi-class gastric biopsy artificial intelligence model developed from whole slide histopathological images</a>
+    <p class="news-card-summary">Researchers developed a multi-class artificial intelligence model to classify gastric biopsy findings from whole slide histopathological images.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556405?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">An artificial intelligence-enabled digital stethoscope demonstrates moderate murmur detection in dogs but not cats and unreliable arrhythmia classification in both species</a>
     <p class="news-card-summary">AI-enabled digital stethoscope achieved moderate murmur detection in dogs comparable to veterinary students but performed poorly in cats and unreliably classified arrhythmias.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03088-1">Conversational AI should fill the white space in mental health care, not replace humans</a>
-    <p class="news-card-summary">Commentary argues conversational AI should address gaps in mental health care delivery rather than replace human clinicians.</p>
   </div>
 </div>
 </div>
