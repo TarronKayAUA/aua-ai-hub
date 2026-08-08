@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -34,6 +34,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1">Predicting Step 2 CK Performance Using Automated Feature Selection and Nested Cross-Validation</a>
     <p class="news-card-summary">Researchers developed a predictive model using automated feature selection to forecast medical student USMLE Step 2 CK performance and deployed it as an interactive dashboard for educators.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42566601?fc=20260609215449&amp;ff=20260807222257&amp;v=2.20.1">Mapping the research landscape of virtual reality and artificial intelligence in medical education evaluation: A bibliometric analysis</a>
+    <p class="news-card-summary">Bibliometric analysis shows virtual reality and AI in medical education evaluation have shifted from technical skill assessment toward competency-oriented and quality-focused approaches.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42566403?fc=20260609215449&amp;ff=20260807222257&amp;v=2.20.1">Trial Files: Leveraging large language models to summarize practice-changing clinical trials for clinicians</a>
+    <p class="news-card-summary">Large language models can produce concise, accurate summaries of randomized controlled trials to help internists keep current with recent medical literature.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42554456?fc=20260609215449&amp;ff=20260805135434&amp;v=2.20.0.post5+40e1b98">The Basic Science of Large Language Models in Orthopaedic Surgery</a>
     <p class="news-card-summary">Peer-reviewed overview of how large language models are changing information search and resident learning in orthopaedic surgery.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98">Factors associated with attitudes towards artificial intelligence among medical students: roles of digital literacy, emotional intelligence, and AI-related perceptions</a>
-    <p class="news-card-summary">Medical students&#x27; attitudes toward AI correlate more strongly with digital literacy and AI perceptions than prior use; medical education should integrate digital literacy and ethical awareness into AI teaching.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Artificial Intelligence and the Cost of Medical Education: Conditional Promise, Structural Barriers, and Policy Imperatives</a>
-    <p class="news-card-summary">Analysis examines artificial intelligence&#x27;s effects on medical education costs, identifies structural barriers to adoption, and proposes policy recommendations.</p>
   </div>
 </div>
 </div>
