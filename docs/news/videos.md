@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=MKI58bgFK8A" target="_blank" rel="noopener" title="Ling 3.0 Tiny First Test, Can a Model THIS Small Really Code?">
+  <img src="https://i2.ytimg.com/vi/MKI58bgFK8A/hqdefault.jpg" alt="Video: Testing Ling 3.0 Tiny model on coding tasks" loading="lazy">
+  <span class="video-card-title">Testing Ling 3.0 Tiny model on coding tasks</span>
+  <span class="video-card-meta">Bijan Bowen, August 8, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Ling 3.0 Tiny, a small language model, across coding tasks including browser automation and C++ with observations on its behavior and limitations.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=UaeWJK_vv-Y" target="_blank" rel="noopener" title="Introducing Agent Plugins">
   <img src="https://i2.ytimg.com/vi/UaeWJK_vv-Y/hqdefault.jpg" alt="Video: Agent Plugins open standard announcement" loading="lazy">
   <span class="video-card-title">Agent Plugins open standard announcement</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Prompt injection attacks and AI security defenses</span>
   <span class="video-card-meta">IBM Technology, July 22, 2026</span>
   <span class="video-card-desc">IBM researchers discuss prompt injection attacks on large language models and strategies for defending AI systems against such exploits.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=XSHTyq8Z9jA" target="_blank" rel="noopener" title="Gemini 3.6 Flash Is HERE, Testing Google’s BEST Model Yet!">
-  <img src="https://i1.ytimg.com/vi/XSHTyq8Z9jA/hqdefault.jpg" alt="Video: Gemini 3.6 Flash testing and technical overview" loading="lazy">
-  <span class="video-card-title">Gemini 3.6 Flash testing and technical overview</span>
-  <span class="video-card-meta">Bijan Bowen, July 21, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.</span>
 </a>
 </div>
 

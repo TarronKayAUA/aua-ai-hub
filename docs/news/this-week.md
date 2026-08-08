@@ -253,9 +253,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -269,6 +269,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03102-6">A multi-class gastric biopsy artificial intelligence model developed from whole slide histopathological images</a>
         <p class="news-card-summary">Researchers developed a multi-class artificial intelligence model to classify gastric biopsy findings from whole slide histopathological images.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03060-z">Multimodal artificial intelligence agents in healthcare: a scoping review</a>
+        <p class="news-card-summary">Scoping review examining multimodal artificial intelligence agents deployed in healthcare settings and their clinical applications.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03110-6">A Multimodal large language model-based triage tool for osteoporotic vertebral compression fractures using posture and movement videos</a>
+        <p class="news-card-summary">Study of a multimodal language model-based system for triaging osteoporotic vertebral compression fractures using video analysis of posture and movement.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03086-3">Data-driven personalization of just-in-time adaptive mental health intervention via two-stage reinforcement learning approach</a>
+        <p class="news-card-summary">Research on personalizing just-in-time adaptive mental health interventions using two-stage reinforcement learning to tailor timing and content to individual needs.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -961,9 +982,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 7 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=MKI58bgFK8A" target="_blank" rel="noopener" title="Ling 3.0 Tiny First Test, Can a Model THIS Small Really Code?">
+      <img src="https://i2.ytimg.com/vi/MKI58bgFK8A/hqdefault.jpg" alt="Video: Testing Ling 3.0 Tiny model on coding tasks" loading="lazy">
+      <span class="video-card-title">Testing Ling 3.0 Tiny model on coding tasks</span>
+      <span class="video-card-meta">Bijan Bowen, August 8, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Ling 3.0 Tiny, a small language model, across coding tasks including browser automation and C++ with observations on its behavior and limitations.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=UaeWJK_vv-Y" target="_blank" rel="noopener" title="Introducing Agent Plugins">
       <img src="https://i2.ytimg.com/vi/UaeWJK_vv-Y/hqdefault.jpg" alt="Video: Agent Plugins open standard announcement" loading="lazy">
       <span class="video-card-title">Agent Plugins open standard announcement</span>

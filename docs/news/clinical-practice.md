@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -33,6 +33,27 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03102-6">A multi-class gastric biopsy artificial intelligence model developed from whole slide histopathological images</a>
     <p class="news-card-summary">Researchers developed a multi-class artificial intelligence model to classify gastric biopsy findings from whole slide histopathological images.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03060-z">Multimodal artificial intelligence agents in healthcare: a scoping review</a>
+    <p class="news-card-summary">Scoping review examining multimodal artificial intelligence agents deployed in healthcare settings and their clinical applications.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03110-6">A Multimodal large language model-based triage tool for osteoporotic vertebral compression fractures using posture and movement videos</a>
+    <p class="news-card-summary">Study of a multimodal language model-based system for triaging osteoporotic vertebral compression fractures using video analysis of posture and movement.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03086-3">Data-driven personalization of just-in-time adaptive mental health intervention via two-stage reinforcement learning approach</a>
+    <p class="news-card-summary">Research on personalizing just-in-time adaptive mental health interventions using two-stage reinforcement learning to tailor timing and content to individual needs.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -106,26 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">US federal health officials held closed-door meetings with technology companies and industry groups to discuss accelerating clinical AI adoption.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_551617477-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87770">Deep Learning Estimation of Forced Expiratory Volume in One Second/Forced Vital Capacity and Obstructive Lung Disease Classification From Chest Radiographs With Subgroup Performance Analysis in a North American Cohort: Retrospective Cohort Study</a>
-    <p class="news-card-summary">Deep learning models estimate lung function parameters from chest radiographs to identify obstructive lung disease where spirometry is unavailable.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Accuracy, Usefulness, and Impact Variability of ChatGPT-4 for COPD Medication Management: A Modified Delphi Study</a>
-    <p class="news-card-summary">Modified Delphi study demonstrates ChatGPT-4 responses to identical COPD prompts show material variability in accuracy and clinical impact, supporting oversight and guideline grounding.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42556405?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">An artificial intelligence-enabled digital stethoscope demonstrates moderate murmur detection in dogs but not cats and unreliable arrhythmia classification in both species</a>
-    <p class="news-card-summary">AI-enabled digital stethoscope achieved moderate murmur detection in dogs comparable to veterinary students but performed poorly in cats and unreliably classified arrhythmias.</p>
-  </div>
 </div>
 </div>

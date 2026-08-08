@@ -3,5 +3,5 @@
 - [DeepMind’s hurricane breakthrough has surprised weather scientists](https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day) (Ars Technica AI, August 8, 2026)
 - [Pan-retinal pathology detection in oct scans integrating natural language synthesis with diagnostic annotation](https://www.nature.com/articles/s41746-026-03061-y) (npj Digital Medicine, August 8, 2026)
 - [A multi-class gastric biopsy artificial intelligence model developed from whole slide histopathological images](https://www.nature.com/articles/s41746-026-03102-6) (npj Digital Medicine, August 8, 2026)
-- [Now we have a timeline of the OpenAI accidental attack against Hugging Face](https://simonwillison.net/2026/Aug/7/openai-timeline) (Simon Willison's weblog, August 7, 2026)
-- [U.S. Department of Energy Launches the Genesis Open Models Initiative](https://genesisopenmodels.anl.gov/) (Hacker News (LLM, 100+ points), August 7, 2026)
+- [Multimodal artificial intelligence agents in healthcare: a scoping review](https://www.nature.com/articles/s41746-026-03060-z) (npj Digital Medicine, August 8, 2026)
+- [A Multimodal large language model-based triage tool for osteoporotic vertebral compression fractures using posture and movement videos](https://www.nature.com/articles/s41746-026-03110-6) (npj Digital Medicine, August 8, 2026)
