@@ -30812,6 +30812,27 @@
    "first_seen": "2026-08-08T05:10:39.706588+00:00",
    "kept": false,
    "reason": "forum post about media coverage, not substantive news or analysis"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03043-0",
+   "title_hash": "094ccf5eaee707cc5158ae6ac6a4c00d",
+   "first_seen": "2026-08-08T09:02:27.791136+00:00",
+   "kept": false,
+   "reason": "author correction notice without substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=EHzqlA311R0",
+   "title_hash": "268fc49313da97d67a8b975a54c79689",
+   "first_seen": "2026-08-08T09:02:27.791136+00:00",
+   "kept": false,
+   "reason": "speculation and rumor without confirmed developments"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=C9WoQrslPMM",
+   "title_hash": "58c99b5ad9021c7845201356c41eb0d4",
+   "first_seen": "2026-08-08T09:02:27.791136+00:00",
+   "kept": false,
+   "reason": "drama coverage without substantive content"
   }
  ],
  "digests": [
