@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/425d0b1a-9364-11f1-89b7-8f18e1951ec7/image/a013bf9d538b3f904596d5dc68137112.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent" loading="lazy">
+  <span class="video-card-title">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</span>
+  <span class="video-card-meta">The Cognitive Revolution, August 8, 2026</span>
+  <span class="video-card-desc">Goodfire CTO discusses interpretability research advances and a research platform using concept manifolds to guide language model development.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/the-hidden-gender-gap-in-ai-education-with-juliana-peloche" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: The Hidden Gender Gap in AI Education, with Juliana Peloche" loading="lazy">
   <span class="video-card-title">The Hidden Gender Gap in AI Education, with Juliana Peloche</span>

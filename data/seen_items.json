@@ -30921,6 +30921,46 @@
    "score": 2.0,
    "thumbnail": "https://i2.ytimg.com/vi/MKI58bgFK8A/hqdefault.jpg",
    "display_title": "Testing Ling 3.0 Tiny model on coding tasks"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
+   "title_hash": "d2e4151284bd84537e22cab15508fe2e",
+   "first_seen": "2026-08-08T20:49:42.441190+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones",
+   "title_hash": "979d4de1612966d0a429a19f23be3ffd",
+   "first_seen": "2026-08-08T20:49:42.441190+00:00",
+   "kept": true,
+   "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-08T09:18:50+00:00",
+   "summary": "DeepMind's WeatherNext model demonstrates improved accuracy in forecasting cyclones using artificial intelligence methods.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/41-Stats-That-Tell-the-Story-of-AI-Right-Now-e3n4u0i",
+   "title_hash": "8c0d06c0110c6143eee7fbd94a6a25b0",
+   "first_seen": "2026-08-08T20:49:42.441190+00:00",
+   "kept": false,
+   "reason": "listicle and roundup article, mechanical link of statistics without substantive analysis"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent",
+   "title_hash": "64f51a5d74b8c7af2824b27061982cff",
+   "first_seen": "2026-08-08T20:49:42.441190+00:00",
+   "kept": true,
+   "title": "Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds & a $1000/Month ML Research Agent",
+   "source": "The Cognitive Revolution",
+   "published": "2026-08-08T20:48:23+00:00",
+   "summary": "Goodfire CTO discusses interpretability research advances and a research platform using concept manifolds to guide language model development.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://megaphone.imgix.net/podcasts/425d0b1a-9364-11f1-89b7-8f18e1951ec7/image/a013bf9d538b3f904596d5dc68137112.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
  ],
  "digests": [

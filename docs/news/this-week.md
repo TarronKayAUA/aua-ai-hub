@@ -581,7 +581,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -590,6 +590,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">DeepMind&#x27;s open-source WeatherNext model generates accurate weather predictions using lower-resolution input data.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2023/12/hurricane-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 8, 2026</span></div>
+        <a class="news-card-title" href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones">DeepMind&#x27;s WeatherNext model achieves breakthrough forecasting cyclones</a>
+        <p class="news-card-summary">DeepMind&#x27;s WeatherNext model demonstrates improved accuracy in forecasting cyclones using artificial intelligence methods.</p>
+      </div>
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -953,14 +960,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">European Union AI Act takes effect August 2, 2026, requiring disclosure labeling for AI-generated images, audio, video, and text.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 1, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vchoua/deepseekv4flash0731_models_you_can_run_locally">DeepSeek-V4-Flash-0731: Models you can run locally now have the intelligence score of the top frontier model from March 2026</a>
-        <p class="news-card-summary">DeepSeek-V4-Flash-0731 achieves an intelligence benchmark score comparable to top frontier models from five months prior, while remaining runnable on modest local hardware.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/h09pa8bs3qgh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=42ca1e9982df4666fd1016fe3e7e0f5f510d9d65" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 29, 2026</span></div>
@@ -1037,9 +1036,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 6 episodes"
+??? abstract "Show the 7 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
+      <img src="https://megaphone.imgix.net/podcasts/425d0b1a-9364-11f1-89b7-8f18e1951ec7/image/a013bf9d538b3f904596d5dc68137112.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent" loading="lazy">
+      <span class="video-card-title">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</span>
+      <span class="video-card-meta">The Cognitive Revolution, August 8, 2026</span>
+      <span class="video-card-desc">Goodfire CTO discusses interpretability research advances and a research platform using concept manifolds to guide language model development.</span>
+    </a>
     <a class="video-card" href="https://aipodcast.education/the-hidden-gender-gap-in-ai-education-with-juliana-peloche" target="_blank" rel="noopener">
       <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: The Hidden Gender Gap in AI Education, with Juliana Peloche" loading="lazy">
       <span class="video-card-title">The Hidden Gender Gap in AI Education, with Juliana Peloche</span>
