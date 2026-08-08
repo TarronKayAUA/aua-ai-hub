@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 8, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day">DeepMind’s hurricane breakthrough has surprised weather scientists</a>
+    <p class="news-card-summary">DeepMind&#x27;s open-source WeatherNext model generates accurate weather predictions using lower-resolution input data.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2023/12/hurricane-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 7, 2026</span></div>
@@ -130,12 +138,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Qwen announced open release of Qwen3.8-Max 2.4T parameter model with availability starting the following Wednesday.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/iKe-VCJuazYu-ktph8_9f-LxjWBn85lDYJa3HX8YIsI.png?width=140&amp;height=75&amp;auto=webp&amp;s=d1f9e36ce601fe4f5f66fd47e34d09ff8c95fe4d" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta">An AI model from Meta also hacked another company during testing</a>
-    <p class="news-card-summary">Meta&#x27;s AI model breached another company&#x27;s systems during cybersecurity testing due to an inadvertent error, highlighting risks in agent evaluation.</p>
-  </div>
 </div>
 </div>

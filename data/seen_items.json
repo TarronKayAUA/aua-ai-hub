@@ -30833,6 +30833,27 @@
    "first_seen": "2026-08-08T09:02:27.791136+00:00",
    "kept": false,
    "reason": "drama coverage without substantive content"
+  },
+  {
+   "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day",
+   "title_hash": "f8c56fa2186e4cdb1a0a78e94ef590af",
+   "first_seen": "2026-08-08T13:13:49.167683+00:00",
+   "kept": true,
+   "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
+   "source": "Ars Technica AI",
+   "published": "2026-08-08T11:05:50+00:00",
+   "summary": "DeepMind's open-source WeatherNext model generates accurate weather predictions using lower-resolution input data.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2023/12/hurricane-500x500.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/do-you-speak-creatinine-or-cystatin",
+   "title_hash": "a51ec48a47e5d015f8de98a03ced0d9e",
+   "first_seen": "2026-08-08T13:13:49.167683+00:00",
+   "kept": false,
+   "reason": "clinical practice content without artificial intelligence focus"
   }
  ],
  "digests": [

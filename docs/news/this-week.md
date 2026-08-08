@@ -558,10 +558,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 8, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day">DeepMind’s hurricane breakthrough has surprised weather scientists</a>
+        <p class="news-card-summary">DeepMind&#x27;s open-source WeatherNext model generates accurate weather predictions using lower-resolution input data.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2023/12/hurricane-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 7, 2026</span></div>
@@ -953,7 +961,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 7 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=UaeWJK_vv-Y" target="_blank" rel="noopener" title="Introducing Agent Plugins">
@@ -997,12 +1005,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Understanding AI agent hallucination in AI systems</span>
       <span class="video-card-meta">IBM Technology, August 2, 2026</span>
       <span class="video-card-desc">IBM explainer on how large language models generate confident but false answers and why hallucination occurs in AI systems.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=wT42SgaOPK4" target="_blank" rel="noopener" title="DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, &amp; Fast! (Fully Tested)">
-      <img src="https://i4.ytimg.com/vi/wT42SgaOPK4/hqdefault.jpg" alt="Video: DeepSeek V4 Flash benchmarking and performance testing" loading="lazy">
-      <span class="video-card-title">DeepSeek V4 Flash benchmarking and performance testing</span>
-      <span class="video-card-meta">WorldofAI, August 1, 2026</span>
-      <span class="video-card-desc">Hands-on benchmarking of DeepSeek V4 Flash covering performance, cost, and speed across tasks relevant to users and educators.</span>
     </a>
     </div>
 
