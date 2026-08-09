@@ -981,7 +981,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 10 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=vRZNJWw78BQ" target="_blank" rel="noopener" title="What Is Chunkless RAG? How Docling &amp; AI Agents Navigate Documents">
@@ -1038,17 +1038,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">WorldofAI, August 4, 2026</span>
       <span class="video-card-desc">Hands-on testing and evaluation of Alibaba&#x27;s Qwen 3.8 Max open-source model against leading alternatives.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=bNRhppHct54" target="_blank" rel="noopener" title="Understanding AI Agent Hallucination in AI Systems">
-      <img src="https://i3.ytimg.com/vi/bNRhppHct54/hqdefault.jpg" alt="Video: Understanding AI agent hallucination in AI systems" loading="lazy">
-      <span class="video-card-title">Understanding AI agent hallucination in AI systems</span>
-      <span class="video-card-meta">IBM Technology, August 2, 2026</span>
-      <span class="video-card-desc">IBM explainer on how large language models generate confident but false answers and why hallucination occurs in AI systems.</span>
-    </a>
     </div>
 
 ## Podcasts
 
-??? abstract "Show the 7 episodes"
+??? abstract "Show the 6 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
@@ -1080,12 +1074,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics</span>
       <span class="video-card-meta">The Cognitive Revolution, August 2, 2026</span>
       <span class="video-card-desc">Nathan reports from China on AI safety practices and governance, examining whether American policy arguments about futility of safety obligations hold up against current Chinese model safeguards.</span>
-    </a>
-    <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1" target="_blank" rel="noopener">
-      <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Everything You Need to Know About AI Tokens" loading="lazy">
-      <span class="video-card-title">Everything You Need to Know About AI Tokens</span>
-      <span class="video-card-meta">The AI Daily Brief, August 2, 2026</span>
-      <span class="video-card-desc">Nufar Gaspar explains how AI tokens work, why agentic workflows inflate costs, and how to measure cost-effectiveness of model deployments.</span>
     </a>
     <a class="video-card" href="https://www.cognitiverevolution.ai/is-offense-or-defense-dominant-far-ai-s-adam-gleave-on-the-ai-security-leaderboard" target="_blank" rel="noopener">
       <img src="https://megaphone.imgix.net/podcasts/17fab7ca-8c55-11f1-9f1b-3f3ff7360962/image/a7386c3e3837d9aa954f64ad28a1be30.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard" loading="lazy">

@@ -125,22 +125,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">The AI Daily Brief, June 10, 2026</span>
   <span class="video-card-desc">This podcast episode discusses the new features and user expectations set by Anthropic&#x27;s Fable 5 in advancing frontier artificial intelligence.</span>
 </a>
-<a class="video-card" href="https://aipodcast.education/why-one-law-school-just-banned-ai" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Why One Law School Just Banned AI" loading="lazy">
-  <span class="video-card-title">Why One Law School Just Banned AI</span>
-  <span class="video-card-meta">AI in Education Podcast, June 4, 2026</span>
-  <span class="video-card-desc">A law school explains its decision to ban artificial intelligence use entirely, contrasting with countries promoting wide AI access and raising questions about AI&#x27;s role in legal education.</span>
-</a>
-<a class="video-card" href="https://share.transistor.fm/s/302b36f8" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/ipFlPl0Z0kkjjiMc1n8f9T_9pB23QEviqZIzZXO9pig/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9hYjA0/MjAxZGQ2Nzg4Yzk4/YzYxODg0OThmM2U0/ZmE0My5wbmc.jpg" alt="Podcast: Breaking down the 2026 Stanford AI Index Report" loading="lazy">
-  <span class="video-card-title">Breaking down the 2026 Stanford AI Index Report</span>
-  <span class="video-card-meta">Practical AI, June 4, 2026</span>
-  <span class="video-card-desc">An analysis of the 2026 Stanford AI Index Report highlights AI models&#x27; success in math competitions alongside ongoing struggles with basic tasks like reading analog clocks.</span>
-</a>
-<a class="video-card" href="https://sloanreview.mit.edu/audio/ai-for-interoperability-in-health-care-philipss-carla-goulart-peron" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/499218be-4f0b-11f1-b37f-0b0591ec3021/image/ae291127f6965432b65f8770e58490c6.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI for Interoperability in Health Care: Philips’s Carla Goulart Peron" loading="lazy">
-  <span class="video-card-title">AI for Interoperability in Health Care: Philips’s Carla Goulart Peron</span>
-  <span class="video-card-meta">Me, Myself, and AI, June 1, 2026</span>
-  <span class="video-card-desc">Philips’s chief medical officer Carla Goulart Peron discusses how artificial intelligence supports interoperability in health care systems to improve patient outcomes and clinical workflows.</span>
-</a>
 </div>
