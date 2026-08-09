@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=uJgzFn0GT7M" target="_blank" rel="noopener" title="New 3D editors, open medical AI, AI symphony, Qwen 3.8, Wan Animate 2: AI NEWS">
+  <img src="https://i2.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg" alt="Video: AI news roundup: Qwen 3.8, Wan Animate 2, medical AI" loading="lazy">
+  <span class="video-card-title">AI news roundup: Qwen 3.8, Wan Animate 2, medical AI</span>
+  <span class="video-card-meta">AI Search, August 9, 2026</span>
+  <span class="video-card-desc">Roundup covering Qwen 3.8 Max release, Wan Animate 2, and other AI developments including medical AI tools.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=MKI58bgFK8A" target="_blank" rel="noopener" title="Ling 3.0 Tiny First Test, Can a Model THIS Small Really Code?">
   <img src="https://i2.ytimg.com/vi/MKI58bgFK8A/hqdefault.jpg" alt="Video: Testing Ling 3.0 Tiny model on coding tasks" loading="lazy">
   <span class="video-card-title">Testing Ling 3.0 Tiny model on coding tasks</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">When to use AI agents versus rules versus machine learning</span>
   <span class="video-card-meta">IBM Technology, July 23, 2026</span>
   <span class="video-card-desc">Sam Anthony discusses when AI agents, rule-based systems, and machine learning are appropriate choices for different problems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=g4CNcUAqM4Q" target="_blank" rel="noopener" title="GPT-Red: Can AI read teams stop prompt injections?">
-  <img src="https://i4.ytimg.com/vi/g4CNcUAqM4Q/hqdefault.jpg" alt="Video: Prompt injection attacks and AI security defenses" loading="lazy">
-  <span class="video-card-title">Prompt injection attacks and AI security defenses</span>
-  <span class="video-card-meta">IBM Technology, July 22, 2026</span>
-  <span class="video-card-desc">IBM researchers discuss prompt injection attacks on large language models and strategies for defending AI systems against such exploits.</span>
 </a>
 </div>
 

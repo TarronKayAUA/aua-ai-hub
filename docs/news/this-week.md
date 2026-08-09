@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 8, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42570526?fc=20260609215449&amp;ff=20260809011935&amp;v=2.20.1">The impact of artificial intelligence on critical thinking and clinical reasoning in health professions education: A systematic review and meta-analysis</a>
+        <p class="news-card-summary">A systematic review finds that AI-based educational interventions may improve critical thinking and clinical reasoning in health professions students, but evidence quality is low and heterogeneity prevents identification of optimal approaches.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
@@ -593,9 +600,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -982,22 +989,21 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/-Pi0PiNmpJmI17QD0uo-SnFZHONDxkrCISpiFrdpHa8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=48f4e0f32c02df68aeb40a87995bb8f7d6d7cc0f" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 27, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1v81qw0/kimi_k3_weights_drop_today_were_deploying_on">Kimi K3 weights drop today. We&#x27;re deploying on A100s, H200s and B300s this week and the A100 math is already rough</a>
-        <p class="news-card-summary">Kimi K3, a mixture-of-experts model with 2.8 trillion parameters, weights released; deployment on various accelerator types underway.</p>
-      </div>
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=uJgzFn0GT7M" target="_blank" rel="noopener" title="New 3D editors, open medical AI, AI symphony, Qwen 3.8, Wan Animate 2: AI NEWS">
+      <img src="https://i2.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg" alt="Video: AI news roundup: Qwen 3.8, Wan Animate 2, medical AI" loading="lazy">
+      <span class="video-card-title">AI news roundup: Qwen 3.8, Wan Animate 2, medical AI</span>
+      <span class="video-card-meta">AI Search, August 9, 2026</span>
+      <span class="video-card-desc">Roundup covering Qwen 3.8 Max release, Wan Animate 2, and other AI developments including medical AI tools.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=MKI58bgFK8A" target="_blank" rel="noopener" title="Ling 3.0 Tiny First Test, Can a Model THIS Small Really Code?">
       <img src="https://i2.ytimg.com/vi/MKI58bgFK8A/hqdefault.jpg" alt="Video: Testing Ling 3.0 Tiny model on coding tasks" loading="lazy">
       <span class="video-card-title">Testing Ling 3.0 Tiny model on coding tasks</span>
