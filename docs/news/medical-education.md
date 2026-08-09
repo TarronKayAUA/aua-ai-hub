@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03113-3">Transfer learning for text-based distractor selection rate prediction in medical multiple-choice questions: fine-tuning embedding models as a plausibility proxy</a>
+    <p class="news-card-summary">Transfer learning with embedding models predicts distractor selection rates in medical multiple-choice questions, offering a plausibility assessment tool.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 7, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552483?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">See more, detect more: investigating colonic inspection techniques and polyp detection using machine learning</a>
     <p class="news-card-summary">Vision Transformer machine learning model objectively assesses colonic inspection techniques and polyp detection rates, enabling targeted feedback to improve endoscopy performance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42554456?fc=20260609215449&amp;ff=20260805135434&amp;v=2.20.0.post5+40e1b98">The Basic Science of Large Language Models in Orthopaedic Surgery</a>
-    <p class="news-card-summary">Peer-reviewed overview of how large language models are changing information search and resident learning in orthopaedic surgery.</p>
   </div>
 </div>
 </div>
