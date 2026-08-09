@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=vRZNJWw78BQ" target="_blank" rel="noopener" title="What Is Chunkless RAG? How Docling &amp; AI Agents Navigate Documents">
+  <img src="https://i3.ytimg.com/vi/vRZNJWw78BQ/hqdefault.jpg" alt="Video: Chunkless RAG and document parsing with Docling" loading="lazy">
+  <span class="video-card-title">Chunkless RAG and document parsing with Docling</span>
+  <span class="video-card-meta">IBM Technology, August 9, 2026</span>
+  <span class="video-card-desc">IBM researcher explains chunkless retrieval-augmented generation and how document parsing preserves context lost in traditional chunking approaches.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=uJgzFn0GT7M" target="_blank" rel="noopener" title="New 3D editors, open medical AI, AI symphony, Qwen 3.8, Wan Animate 2: AI NEWS">
   <img src="https://i2.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg" alt="Video: AI news roundup: Qwen 3.8, Wan Animate 2, medical AI" loading="lazy">
   <span class="video-card-title">AI news roundup: Qwen 3.8, Wan Animate 2, medical AI</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing Poolside Laguna S2.1 local model</span>
   <span class="video-card-meta">Bijan Bowen, July 24, 2026</span>
   <span class="video-card-desc">Hands-on testing of Poolside Laguna S2.1, a local open-weights model, across browser, operating system, and coding tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=_ZqSFVi6UDY" target="_blank" rel="noopener" title="Knowing When Not to Use AI: AI Agents vs Rules vs ML">
-  <img src="https://i4.ytimg.com/vi/_ZqSFVi6UDY/hqdefault.jpg" alt="Video: When to use AI agents versus rules versus machine learning" loading="lazy">
-  <span class="video-card-title">When to use AI agents versus rules versus machine learning</span>
-  <span class="video-card-meta">IBM Technology, July 23, 2026</span>
-  <span class="video-card-desc">Sam Anthony discusses when AI agents, rule-based systems, and machine learning are appropriate choices for different problems.</span>
 </a>
 </div>
 

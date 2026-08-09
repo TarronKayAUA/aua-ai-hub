@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42571443?fc=20260609215449&amp;ff=20260809091701&amp;v=2.20.1">The AI-Augmented Scientific Congress Ecosystem (AISCE): Reimagining Scientific Congresses in the Age of Artificial Intelligence</a>
+        <p class="news-card-summary">Editorial proposes an AI-augmented model for scientific congresses to address rising abstract volumes, reviewer fatigue, and fragmented programming while maintaining human oversight.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 8, 2026</span></div>
@@ -253,10 +260,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42571234?fc=20260609215449&amp;ff=20260809091701&amp;v=2.20.1">Association between AI-driven conversational agents and physician-patient interaction quality during outpatient consultations: A propensity score matching study in China</a>
+        <p class="news-card-summary">Propensity score matching study in China found AI-driven conversational agents associated with improved physician-patient interaction quality during outpatient consultations.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
@@ -967,9 +981,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 9 videos"
+??? abstract "Show the 10 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=vRZNJWw78BQ" target="_blank" rel="noopener" title="What Is Chunkless RAG? How Docling &amp; AI Agents Navigate Documents">
+      <img src="https://i3.ytimg.com/vi/vRZNJWw78BQ/hqdefault.jpg" alt="Video: Chunkless RAG and document parsing with Docling" loading="lazy">
+      <span class="video-card-title">Chunkless RAG and document parsing with Docling</span>
+      <span class="video-card-meta">IBM Technology, August 9, 2026</span>
+      <span class="video-card-desc">IBM researcher explains chunkless retrieval-augmented generation and how document parsing preserves context lost in traditional chunking approaches.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=uJgzFn0GT7M" target="_blank" rel="noopener" title="New 3D editors, open medical AI, AI symphony, Qwen 3.8, Wan Animate 2: AI NEWS">
       <img src="https://i2.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg" alt="Video: AI news roundup: Qwen 3.8, Wan Animate 2, medical AI" loading="lazy">
       <span class="video-card-title">AI news roundup: Qwen 3.8, Wan Animate 2, medical AI</span>

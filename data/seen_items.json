@@ -29537,6 +29537,81 @@
    "first_seen": "2026-08-09T09:04:21.626510+00:00",
    "kept": false,
    "reason": "forum thread linking to unverified social media speculation with no substantive content"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/what-anthony-fauci-should-say-to",
+   "title_hash": "3cbb5265fa643b8a0bf166daa4c6cf33",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, no AI relevance"
+  },
+  {
+   "url": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion",
+   "title_hash": "a6149d248d133e7fd0f8395064cab6a0",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": false,
+   "reason": "newsletter boilerplate without substantive analysis or news value"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42571545?fc=20260609215449&ff=20260809091701&v=2.20.1",
+   "title_hash": "069c4fcca63fba9e5ca4a7cb3c8fa6a9",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, computational food science unrelated to AI in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42571443?fc=20260609215449&ff=20260809091701&v=2.20.1",
+   "title_hash": "fad48286d9b475d98d9debe1acac3b01",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": true,
+   "title": "The AI-Augmented Scientific Congress Ecosystem (AISCE): Reimagining Scientific Congresses in the Age of Artificial Intelligence",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-09T10:00:00+00:00",
+   "summary": "Editorial proposes an AI-augmented model for scientific congresses to address rising abstract volumes, reviewer fatigue, and fragmented programming while maintaining human oversight.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42571234?fc=20260609215449&ff=20260809091701&v=2.20.1",
+   "title_hash": "04130dd0013c984f7c8b52770f424b78",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": true,
+   "title": "Association between AI-driven conversational agents and physician-patient interaction quality during outpatient consultations: A propensity score matching study in China",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-09T10:00:00+00:00",
+   "summary": "Propensity score matching study in China found AI-driven conversational agents associated with improved physician-patient interaction quality during outpatient consultations.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjcljq/rtx_5090_96gb_spotted_on_alibaba",
+   "title_hash": "86dd06a09bb1b91b677865cbb0e0f980",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": false,
+   "reason": "rumor about unreleased hardware, no substantive content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vio0x6/deepseek_v4_flash_0731_appreciation_post",
+   "title_hash": "753a424d77363e78c25353462cdb4952",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": false,
+   "reason": "forum discussion with no substantive analysis or news value"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=vRZNJWw78BQ",
+   "title_hash": "1d09dbaba11050ad0db900d0ad938b65",
+   "first_seen": "2026-08-09T13:17:01.478744+00:00",
+   "kept": true,
+   "title": "What Is Chunkless RAG? How Docling & AI Agents Navigate Documents",
+   "source": "IBM Technology",
+   "published": "2026-08-09T11:00:02+00:00",
+   "summary": "IBM researcher explains chunkless retrieval-augmented generation and how document parsing preserves context lost in traditional chunking approaches.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/vRZNJWw78BQ/hqdefault.jpg",
+   "display_title": "Chunkless RAG and document parsing with Docling"
   }
  ],
  "digests": [

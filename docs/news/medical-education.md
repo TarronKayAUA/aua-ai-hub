@@ -23,6 +23,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42571443?fc=20260609215449&amp;ff=20260809091701&amp;v=2.20.1">The AI-Augmented Scientific Congress Ecosystem (AISCE): Reimagining Scientific Congresses in the Age of Artificial Intelligence</a>
+    <p class="news-card-summary">Editorial proposes an AI-augmented model for scientific congresses to address rising abstract volumes, reviewer fatigue, and fragmented programming while maintaining human oversight.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42570526?fc=20260609215449&amp;ff=20260809011935&amp;v=2.20.1">The impact of artificial intelligence on critical thinking and clinical reasoning in health professions education: A systematic review and meta-analysis</a>
     <p class="news-card-summary">A systematic review finds that AI-based educational interventions may improve critical thinking and clinical reasoning in health professions students, but evidence quality is low and heterogeneity prevents identification of optimal approaches.</p>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">The temporal changes in GPT-4 performance on UKMLA practice questions: educational and clinical implications</a>
     <p class="news-card-summary">Longitudinal study shows GPT-4 performance on UKMLA practice questions varies over time, raising questions about stability of AI performance on medical licensing exams.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552577?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">The hidden patterns of alignment: exploring variability between generative AI and human</a>
-    <p class="news-card-summary">Study finds generative AI can consistently align pharmacological content with curricula but lacks the contextual judgment of human experts with diverse perspectives.</p>
   </div>
 </div>
 </div>

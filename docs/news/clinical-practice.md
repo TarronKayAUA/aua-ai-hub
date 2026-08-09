@@ -21,6 +21,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42571234?fc=20260609215449&amp;ff=20260809091701&amp;v=2.20.1">Association between AI-driven conversational agents and physician-patient interaction quality during outpatient consultations: A propensity score matching study in China</a>
+    <p class="news-card-summary">Propensity score matching study in China found AI-driven conversational agents associated with improved physician-patient interaction quality during outpatient consultations.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 6, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03079-2">An explainable generative AI system for video-to-report generation in capsule endoscopy</a>
     <p class="news-card-summary">Explainable generative AI system automatically generates clinical reports from capsule endoscopy videos, published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03081-8">AI enabled continuous care features enhance engagement and clinical outcomes in psychotherapy</a>
-    <p class="news-card-summary">Study reports AI-enabled continuous care features improved engagement and clinical outcomes in psychotherapy treatment.</p>
   </div>
 </div>
 </div>
