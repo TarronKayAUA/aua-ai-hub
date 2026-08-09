@@ -157,6 +157,15 @@
   format: in_person
   abstract_deadline: passed
   url: https://chil.ahli.cc/
+  # watch_skip added 2026-08-09 (owner approved; issues #35 and #37):
+  # the conference concluded 2026-06-30, so the dates above are final,
+  # and the site's single-IPv4 host is intermittently unreachable from
+  # Actions runners (failed Aug 5 and Aug 9, passed Aug 7; serves
+  # normally from residential connections). Trade-off accepted
+  # knowingly: CHIL 2027 dates will arrive through the monthly survey
+  # or ordinary roster curation rather than this page's watch. ML4H,
+  # the sibling AHLI event on a healthy subdomain, stays watched.
+  watch_skip: true
   tags: [ai, clinical]
 
 # Verified 2026-06-09 from sail.health/event/sail-2026
