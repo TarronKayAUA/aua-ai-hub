@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91048">Unimodal and Multimodal Deep Learning for Pressure Injury Identification: Scoping Review</a>
+    <p class="news-card-summary">Scoping review maps deep learning applications for pressure injury identification and staging across unimodal and multimodal approaches.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e103162">AI Scribe Safety: Measuring What Happens After Signing</a>
+    <p class="news-card-summary">Commentary argues that AI scribe safety evaluation must extend beyond initial draft quality to track how downstream tools process and re-use signed clinical notes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82360">From Data Poverty to Data Sovereignty: Operationalizing Gold-Standard Biomedical Datasets in Low- and Middle-Income Countries</a>
+    <p class="news-card-summary">Analysis examines underrepresentation of low- and middle-income countries in biomedical datasets used to train FDA-approved AI tools and its clinical performance impact.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
@@ -105,28 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03133-z">Multicenter evaluation of four large language models for automated spine imaging diagnosis</a>
     <p class="news-card-summary">Multicenter study evaluates four large language models on automated spine imaging diagnosis across multiple sites.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">Opinion: AI won’t enhance physician autonomy. It will further diminish it</a>
-    <p class="news-card-summary">A former surgeon argues that AI systems in medicine reflect and amplify existing diminishment of physician autonomy rather than representing a novel threat.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_442937982-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03087-2">Randomized controlled trial of GenAI coach feedback efficacy, acceptability and mechanisms in anxiety worry logs</a>
-    <p class="news-card-summary">Randomized controlled trial shows generative AI coach feedback in anxiety worry logs is efficacious and acceptable to users.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03074-7">Prehospital Injury Severity Estimate (PHISE) matches in-hospital trauma scores when embedded in AI models</a>
-    <p class="news-card-summary">Prehospital injury severity estimates embedded in AI models match in-hospital trauma assessment scores in prospective evaluation.</p>
   </div>
 </div>
 </div>

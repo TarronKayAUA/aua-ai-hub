@@ -28669,6 +28669,93 @@
    "first_seen": "2026-08-10T17:10:29.522434+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge",
+   "title_hash": "4b7abd6f781c4606112be1a32272b8ff",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e100179",
+   "title_hash": "cf26062d1c0dd3dce0eff07ac0f89377",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": true,
+   "title": "Human-Edited Generative AI-Assisted Multiple-Choice Questions in Postgraduate Family Medicine: Blinded Cross-Sectional Comparative Psychometric Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-10T20:45:13+00:00",
+   "summary": "Study evaluates psychometric properties of multiple-choice questions drafted by generative AI and edited by faculty for postgraduate family medicine assessment.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e91048",
+   "title_hash": "4993cf53905e22e059bf3cbc7adc1b46",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": true,
+   "title": "Unimodal and Multimodal Deep Learning for Pressure Injury Identification: Scoping Review",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-10T20:45:13+00:00",
+   "summary": "Scoping review maps deep learning applications for pressure injury identification and staging across unimodal and multimodal approaches.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e103162",
+   "title_hash": "8251285ce9fa018bf6a866caecd58267",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": true,
+   "title": "AI Scribe Safety: Measuring What Happens After Signing",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-10T20:45:13+00:00",
+   "summary": "Commentary argues that AI scribe safety evaluation must extend beyond initial draft quality to track how downstream tools process and re-use signed clinical notes.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e93680",
+   "title_hash": "8472c7ee69dbd671a2b41ecdb9ea785c",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": false,
+   "reason": "narrow domain application without clear significance for medical education or general AI audiences"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/10/1141597/ai-professors-are-negotiating-the-new-realities-of-academic-research",
+   "title_hash": "675576aea646271b2307d00afbd15c6b",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": false,
+   "reason": "listicle or general commentary without substantive new information or analysis"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e82360",
+   "title_hash": "32b875af387840c7bdbef2988b512f7b",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": true,
+   "title": "From Data Poverty to Data Sovereignty: Operationalizing Gold-Standard Biomedical Datasets in Low- and Middle-Income Countries",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-10T19:15:11+00:00",
+   "summary": "Analysis examines underrepresentation of low- and middle-income countries in biomedical datasets used to train FDA-approved AI tools and its clinical performance impact.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkhbuc/unslothmuseglimmer30bgguf_hugging_face",
+   "title_hash": "0cee8209655358b0af6451748f71f2cd",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/lindy-teammate-flo-crivello-on-multiplayer-agents-memory-why-he-d-ban-the-chinese-models-he-uses",
+   "title_hash": "749d85a146b0665324abd58ae8536b3b",
+   "first_seen": "2026-08-10T21:03:25.176251+00:00",
+   "kept": false,
+   "reason": "business tool marketing and founder interview rather than educational content about AI in medicine or medical education"
   }
  ],
  "digests": [
