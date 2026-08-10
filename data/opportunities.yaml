@@ -151,3 +151,17 @@
   support: "Organizer-stated: $75,000 in cash prizes across five partner tracks (IBM, Grafana, Parallel, Clickhouse, Replit), each with 1st ($7,500), 2nd ($4,500), and 3rd ($3,000) place cash prizes plus social media promotion opportunity"
   relevance: "Online AI and machine learning hackathon hosted by Google with substantial prizes, relevant to medical AI applications and general AI skills development."
   verified: 2026-08-04
+
+# Auto-verified 2026-08-10 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "All Things Agentic Hackathon"
+  url: https://allthingsagentichackathon.devpost.com/
+  organizer: "Google"
+  type: hackathon
+  format: virtual
+  eligibility: "Individuals above legal age of majority in their country of residence, excluding certain countries"
+  deadline: 2026-08-31
+  start_date: 2026-08-04
+  end_date: 2026-08-31
+  support: "Organizer-stated: $180,000 in cash prizes and $150 in Google Cloud credits per participant"
+  relevance: "Online AI hackathon with substantial prizes hosted by Google; medical students and faculty can meaningfully participate in machine learning and AI agent development."
+  verified: 2026-08-10
