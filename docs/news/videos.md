@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=dtb1ihWSkP4" target="_blank" rel="noopener" title="Meta Open Source Is BACK, Muse Glimmer First Test!">
+  <img src="https://i1.ytimg.com/vi/dtb1ihWSkP4/hqdefault.jpg" alt="Video: Testing Meta open-source models and Muse Glimmer" loading="lazy">
+  <span class="video-card-title">Testing Meta open-source models and Muse Glimmer</span>
+  <span class="video-card-meta">Bijan Bowen, August 10, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Meta&#x27;s open-source model releases and Muse Glimmer, including local deployment and browser functionality.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=iF5IWjOWcA4" target="_blank" rel="noopener" title="Dispatches from Iceland">
+  <img src="https://i2.ytimg.com/vi/iF5IWjOWcA4/hqdefault.jpg" alt="Video: Iceland&#x27;s national AI education pilot for teachers" loading="lazy">
+  <span class="video-card-title">Iceland&#x27;s national AI education pilot for teachers</span>
+  <span class="video-card-meta">Anthropic, August 10, 2026</span>
+  <span class="video-card-desc">Iceland&#x27;s national AI education pilot program giving teachers access to AI tools for classroom integration and professional development.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=vRZNJWw78BQ" target="_blank" rel="noopener" title="What Is Chunkless RAG? How Docling &amp; AI Agents Navigate Documents">
   <img src="https://i3.ytimg.com/vi/vRZNJWw78BQ/hqdefault.jpg" alt="Video: Chunkless RAG and document parsing with Docling" loading="lazy">
   <span class="video-card-title">Chunkless RAG and document parsing with Docling</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Llama.cpp versus vLLM: local LLM inference engine performance comparison</span>
   <span class="video-card-meta">IBM Technology, July 28, 2026</span>
   <span class="video-card-desc">Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Wf1hgNfGtEs" target="_blank" rel="noopener" title="Claude Opus 5 Is THE GREATEST AI Model EVER?! Beats Fable &amp; CHEAPER! (Fully Tested)">
-  <img src="https://i4.ytimg.com/vi/Wf1hgNfGtEs/hqdefault.jpg" alt="Video: Benchmark testing of Claude Opus 5 against competitors" loading="lazy">
-  <span class="video-card-title">Benchmark testing of Claude Opus 5 against competitors</span>
-  <span class="video-card-meta">WorldofAI, July 25, 2026</span>
-  <span class="video-card-desc">Hands-on benchmark testing of Claude Opus 5 against competing models, with reproducible methodology and cost comparison.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=t6uhTLEOpzU" target="_blank" rel="noopener" title="Poolside Laguna S2.1 First Test, A VERY Creative Local Model!">
-  <img src="https://i1.ytimg.com/vi/t6uhTLEOpzU/hqdefault.jpg" alt="Video: Testing Poolside Laguna S2.1 local model" loading="lazy">
-  <span class="video-card-title">Testing Poolside Laguna S2.1 local model</span>
-  <span class="video-card-meta">Bijan Bowen, July 24, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Poolside Laguna S2.1, a local open-weights model, across browser, operating system, and coding tasks.</span>
 </a>
 </div>
 

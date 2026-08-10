@@ -28526,6 +28526,149 @@
    "first_seen": "2026-08-10T13:46:22.699320+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+   "title_hash": "03202fad252982f1fd52e3d27ac22205",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e98345",
+   "title_hash": "31f021ebff949759578304bc1261ba5d",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": true,
+   "title": "Toward Drift-Aware Multimodal Early Warning for Acute Exacerbations of Chronic Obstructive Pulmonary Disease",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-10T16:00:21+00:00",
+   "summary": "Study addresses concept drift in multimodal early-warning systems for acute exacerbations of chronic obstructive pulmonary disease using machine learning to detect patient deterioration.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble",
+   "title_hash": "201b780dbe4a79acab40a7c5cc266085",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "commentary on a CEO's published essay rather than substantive AI development or research"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/975732/bose-ceo-lila-snyder-ai-wearables-licensing-headphones-audio",
+   "title_hash": "6b9ec28303a7e704e4c821dd3d094084",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "product interview, vendor marketing"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkk6vy/mark_zuckerberg_on_releases",
+   "title_hash": "a2e4f7490eb70b74be99e2917a2715cb",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "forum discussion with no substantive content"
+  },
+  {
+   "url": "https://jack-clark.net/2026/08/10/import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interplay-with-ai-racing",
+   "title_hash": "1ae95e260fba90ebebfc6cd029aa6005",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "newsletter roundup with generic description, not substantive analysis"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42573859?fc=20260609215449&ff=20260810131029&v=2.20.1",
+   "title_hash": "1559bb5143eb3d74eab353c20e0965f1",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence for Diagnosis of Esophageal Manometry: A Narrative Review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-10T10:00:00+00:00",
+   "summary": "Narrative review of artificial intelligence approaches to diagnose esophageal motility disorders and address training gaps in gastroenterology fellowship programs.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42573794?fc=20260609215449&ff=20260810131029&v=2.20.1",
+   "title_hash": "e20e7b81110f9261fccbec045183b3ac",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": true,
+   "title": "Can ChatGPT pass the polish national medical specialization examination in orthopedics and traumatology?",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-10T10:00:00+00:00",
+   "summary": "ChatGPT achieved strong performance on Polish orthopedic specialist examinations but does not demonstrate clinical competence or readiness for independent surgical practice.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03116-0",
+   "title_hash": "10dd6dc52083c8e156fef39497e3d107",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": true,
+   "title": "MedGuard: an LLM-based gatekeeper for detecting clinical risks in Chinese telemedicine consultations",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-10T00:00:00+00:00",
+   "summary": "Study describes MedGuard, a language model system that detects clinical risks in Chinese telemedicine consultations to support patient safety.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03119-x",
+   "title_hash": "a820fa5b9cff357d53bc211ee8a7a30b",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "article title and metadata only, no substantive summary provided"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04628-8",
+   "title_hash": "966eca9a236d67e382af35a03a07451d",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "virology content with no AI component, off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vgnmny/prime_agent_a_new_coding_harness_surpassing",
+   "title_hash": "a191ce123ca9ed3ae6f786aa84c8bdfe",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "forum discussion of niche research agent tool"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=dtb1ihWSkP4",
+   "title_hash": "1e269db3c2d2352adbc433bddef290f0",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": true,
+   "title": "Meta Open Source Is BACK, Muse Glimmer First Test!",
+   "source": "Bijan Bowen",
+   "published": "2026-08-10T16:30:50+00:00",
+   "summary": "Hands-on testing of Meta's open-source model releases and Muse Glimmer, including local deployment and browser functionality.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/dtb1ihWSkP4/hqdefault.jpg",
+   "display_title": "Testing Meta open-source models and Muse Glimmer"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=iF5IWjOWcA4",
+   "title_hash": "f3ec6609a931b1c72989d481d549182e",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": true,
+   "title": "Dispatches from Iceland",
+   "source": "Anthropic",
+   "published": "2026-08-10T14:30:52+00:00",
+   "summary": "Iceland's national AI education pilot program giving teachers access to AI tools for classroom integration and professional development.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/iF5IWjOWcA4/hqdefault.jpg",
+   "display_title": "Iceland's national AI education pilot for teachers"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=OEkxKdhtQng",
+   "title_hash": "cf8ea8c006fda1d27a15183c78de6b26",
+   "first_seen": "2026-08-10T17:10:29.522434+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
