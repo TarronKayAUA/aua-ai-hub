@@ -784,6 +784,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vg0q6r/qwen3tts_voice_cloning_is_now_in_mainline">Qwen3-TTS voice cloning is now in mainline llama.cpp, the old demo finally became real support</a>
+        <p class="news-card-summary">Qwen3 text-to-speech voice cloning support was merged into mainline llama.cpp with GGUF quantization and multi-language capabilities.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/kxag5u5ehihh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a834e7741f36d18f76c56a1ec7b72dbc96fa82e9" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 5, 2026</span></div>
@@ -952,13 +960,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">MiniMax-H3, a multimodal generative system supporting text, images, video, and audio, is now available on Hugging Face with video generation capability.</p>
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/WyIvGqO4ylsfEfqo7vAaNtLhBYgl2urdqW5R5dAOYG4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=9db3c969c5d772a76d5b69447a853988e20f5dd8" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 2, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vd874t/i_pushed_kimi_k3_onto_one_cpu_with_8_gb_of_ram">I pushed Kimi K3 onto one CPU with 8 GB of RAM</a>
-        <p class="news-card-summary">A developer implemented CPU-based inference for Kimi K3, a large mixture-of-experts model, by loading routed experts on demand from storage rather than keeping the full checkpoint resident.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
