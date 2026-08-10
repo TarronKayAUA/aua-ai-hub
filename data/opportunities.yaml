@@ -165,3 +165,43 @@
   support: "Organizer-stated: $180,000 in cash prizes and $150 in Google Cloud credits per participant"
   relevance: "Online AI hackathon with substantial prizes hosted by Google; medical students and faculty can meaningfully participate in machine learning and AI agent development."
   verified: 2026-08-10
+
+# Verified 2026-08-10 on the official grand-challenge.org pages
+# (opportunity-watch issue #38, owner approved): organized entirely by
+# Intuitive Surgical, Inc per the organizing-committee page; part of
+# EndoVis at MICCAI 2026. Important Dates page: registration opened
+# May 8, new registrations close August 15, preliminary testing July 20
+# to September 2, final test phase ends September 6, winners announced
+# on challenge day September 27 at MICCAI. No entry fee stated.
+- name: Surgical Visual Understanding 2026
+  url: https://surgvu26.grand-challenge.org/
+  organizer: Intuitive Surgical (EndoVis at MICCAI 2026, on grand-challenge.org)
+  type: challenge
+  format: virtual
+  eligibility: Open worldwide through the grand-challenge.org platform; no restrictions stated on the official page
+  deadline: 2026-08-15
+  start_date: 2026-07-20
+  end_date: 2026-09-27
+  support: "Organizer-stated: cash prizes totaling up to US$8,500"
+  relevance: Surgical video AI challenge (tool localization and video question answering from endoscopic video), fifth year of an established series and a concrete entry point into surgical data science. Note the August 15 registration cutoff.
+  verified: 2026-08-10
+
+# Verified 2026-08-10 on the official grand-challenge.org pages
+# (opportunity-watch issue #38, owner approved): organized by an
+# international academic consortium (TU Eindhoven, University of
+# Zurich, ZHAW, Lausanne University Hospital, UMC Utrecht, Charite
+# CLAIM, and partners, per the organizers page). Schedule on the main
+# page: full training data July 31, submission window August 31 to
+# September 14, challenge event at MICCAI September 27. Free to enter;
+# a verified grand-challenge.org account is required.
+- name: TopAneu 2026
+  url: https://topaneu-26.grand-challenge.org/
+  organizer: International academic consortium led by TU Eindhoven, University of Zurich, and ZHAW (on grand-challenge.org)
+  type: challenge
+  format: virtual
+  eligibility: Open worldwide; a verified grand-challenge.org account is required to join
+  deadline: 2026-09-14
+  start_date: 2026-07-31
+  end_date: 2026-09-27
+  relevance: Medical imaging challenge on intracranial aneurysm classification and segmentation from CT and MR angiography across a multi-center dataset, clinically framed down to vessel-specific anatomy.
+  verified: 2026-08-10
