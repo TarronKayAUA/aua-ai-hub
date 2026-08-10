@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572759?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Accuracy, Reliability, and Bloom&#x27;s Taxonomy Performance of Seven Large Language Models on Microbiology Questions</a>
+    <p class="news-card-summary">Study evaluates seven large language models on microbiology multiple-choice questions, finding marked differences in reliability alongside accuracy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572664?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Comparison of Large Language Model Performance on the United Kingdom Neurology Specialty Certificate Examination</a>
+    <p class="news-card-summary">Study compares performance of ChatGPT, Claude, and Gemini on UK neurology specialty certification examination questions.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553746?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Large language model-based simulated patient training for heart failure palliative care communication: a pilot study</a>
     <p class="news-card-summary">Pilot study shows feasibility of web-based large language model simulated patient system for palliative care communication training with early signals of improved physician self-efficacy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553680?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">Use and Perceptions of Generative Artificial Intelligence Tools Among First-Year Medical Students: A Cross-Sectional Survey</a>
-    <p class="news-card-summary">Survey of first-year medical students finds AI tools widely adopted and seen as enhancing traditional study methods, with structured AI literacy potentially affecting content evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42553655?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">The temporal changes in GPT-4 performance on UKMLA practice questions: educational and clinical implications</a>
-    <p class="news-card-summary">Longitudinal study shows GPT-4 performance on UKMLA practice questions varies over time, raising questions about stability of AI performance on medical licensing exams.</p>
   </div>
 </div>
 </div>

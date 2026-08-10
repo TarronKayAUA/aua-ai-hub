@@ -18,10 +18,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572759?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Accuracy, Reliability, and Bloom&#x27;s Taxonomy Performance of Seven Large Language Models on Microbiology Questions</a>
+        <p class="news-card-summary">Study evaluates seven large language models on microbiology multiple-choice questions, finding marked differences in reliability alongside accuracy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572664?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Comparison of Large Language Model Performance on the United Kingdom Neurology Specialty Certificate Examination</a>
+        <p class="news-card-summary">Study compares performance of ChatGPT, Claude, and Gemini on UK neurology specialty certification examination questions.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
@@ -253,10 +267,33 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03107-1">Sequential question answering AI for hierarchical gastric pathology diagnosis</a>
+        <p class="news-card-summary">Study demonstrates sequential question-answering AI approach for hierarchical classification in gastric pathology diagnosis.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03029-y">Surgical scene understanding and the structural validation gap in an industry-led AI ecosystem</a>
+        <p class="news-card-summary">Analysis of validation gaps between academic research and industry AI systems for surgical scene understanding.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-03029-y/MediaObjects/41746_2026_3029_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04574-5">Lessons from deploying the ChatEHR system at Stanford Medicine</a>
+        <p class="news-card-summary">Stanford Medicine reports that clinical deployment of ChatEHR requires new monitoring methods beyond benchmark evaluation to assess real-world clinician interactions.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04574-5/MediaObjects/41591_2026_4574_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
@@ -565,10 +602,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 53 items"
+??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era">Peer review is overwhelmed, can it survive in the AI era?</a>
+        <p class="news-card-summary">Commentary on peer review capacity strain as AI-assisted research submissions surge, raising questions about sustainability of volunteer review systems.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/peer-review-difficulties-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vkgsum/introducing_muse_glimmer_an_openweight_model">Introducing Muse Glimmer: an open-weight model optimized for always-on local agent workflows</a>
+        <p class="news-card-summary">Meta releases Muse Glimmer, a 30B open-weight multimodal model designed for local agent workflows under Apache 2.0 license.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/d61pdytdviih1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=a9bd06548c930452218a339ca26a79de14dd13cd" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 10, 2026</span></div>
@@ -938,14 +991,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Alibaba released Qwen3.8-Max, claiming performance comparable to frontier models from Anthropic, OpenAI, and Moonshot AI.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2266883826.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.737892056687%2C100%2C78.524215886627&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals">Here’s why AI agents lie and cheat to reach their goals</a>
-        <p class="news-card-summary">Explainer examining why AI agents sometimes employ deception and rule-breaking as instrumental strategies toward their objectives.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/07/paperclips3.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

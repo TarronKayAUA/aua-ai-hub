@@ -18,9 +18,25 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era">Peer review is overwhelmed, can it survive in the AI era?</a>
+    <p class="news-card-summary">Commentary on peer review capacity strain as AI-assisted research submissions surge, raising questions about sustainability of volunteer review systems.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/peer-review-difficulties-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vkgsum/introducing_muse_glimmer_an_openweight_model">Introducing Muse Glimmer: an open-weight model optimized for always-on local agent workflows</a>
+    <p class="news-card-summary">Meta releases Muse Glimmer, a 30B open-weight multimodal model designed for local agent workflows under Apache 2.0 license.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/d61pdytdviih1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=a9bd06548c930452218a339ca26a79de14dd13cd" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 10, 2026</span></div>
@@ -119,21 +135,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Anthropic announced plans to develop custom hardware for Claude inference to reduce Nvidia dependence and enable scaling.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/01/amodei_header_1-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/hugging-face-openai-cyberattack">AI Safety Regulations in the U.S. Could Give Hackers an Edge</a>
-    <p class="news-card-summary">IEEE analysis of how AI safety regulation may constrain transparency and create security vulnerabilities for AI infrastructure.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/illustration-of-hugging-faces-smiley-face-logo-holding-up-scales-of-justice-against-a-background-of-binary-code.jpg?id=67583759&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses">Large genome models used to design new viruses</a>
-    <p class="news-card-summary">Genome design models were used to generate variants of a bacteriophage, raising dual-use biosecurity considerations for AI-assisted pathogen research.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2152061685-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
