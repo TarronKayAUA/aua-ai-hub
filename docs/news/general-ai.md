@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.06532">Confidence Estimation for Financial Vision-Language Models in Chart and Document Understanding</a>
+    <p class="news-card-summary">Financial vision-language models often present confident answers without actually reading charts and documents; researchers propose methods to identify which answers can be trusted.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.06663">The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</a>
+    <p class="news-card-summary">Survey of 1,547 papers identifies the horizon gap: frontier language models fail at multi-hour tasks despite solving single-pass reasoning problems, proposing frameworks for planning, memory, and long-horizon execution.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 8, 2026</span></div>
@@ -121,21 +135,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Qwen3.8-Max achieved top ranking on Artificial Analysis agentic index benchmark, surpassing Claude Opus 5.</p>
   </div>
   <img class="news-card-thumb" src="https://artificialanalysis.ai/opengraph-image.png?732728ccc2829321" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/cloudflare-open-sources-vibe-coding-platform-for-people-who-arent-coders">Cloudflare open-sources vibe-coding platform for people who aren&#x27;t coders</a>
-    <p class="news-card-summary">Cloudflare open-sourced Vibe, an AI agent workspace designed for non-programmers to build workflows without coding.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/Cloudflare-logo-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai">AI isn’t enough to protect social media communities from AI</a>
-    <p class="news-card-summary">Analysis of why artificial intelligence moderation tools alone cannot adequately protect online communities without human oversight.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2259634870-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

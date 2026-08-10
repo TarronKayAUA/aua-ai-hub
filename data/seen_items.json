@@ -28463,6 +28463,200 @@
    "first_seen": "2026-08-10T02:35:54.380574+00:00",
    "kept": false,
    "reason": "unconfirmed model speculation based on GitHub commit history"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06396",
+   "title_hash": "8a73d5512a70d5c41c973a92babcbcfb",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical methods paper without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06409",
+   "title_hash": "5df251f60a6312adc373ec33518630f7",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical diagnostic for speech models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06425",
+   "title_hash": "b587691104f45227b192057cb036c38d",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow domain application in affective analysis"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06429",
+   "title_hash": "0c755c83daa569846d235cb9e2570297",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow domain application in aphasia simulation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06485",
+   "title_hash": "89385ba844615df2200175d80b649e4a",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06495",
+   "title_hash": "659f55736717404c30f8695846d75b15",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "dataset announcement for construction accident data extraction"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06506",
+   "title_hash": "43847b19813f951dae730def64467044",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow linguistic research without broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06526",
+   "title_hash": "55b5f11f8da517f581e9608e7fa36822",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow application of anonymization techniques"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06529",
+   "title_hash": "7d977cd9a463f5b4f2b1dd9048a2e8b1",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical analysis of diffusion language models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06532",
+   "title_hash": "33ca3d8e7ac04eaa187cb1683d511d55",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": true,
+   "title": "Confidence Estimation for Financial Vision-Language Models in Chart and Document Understanding",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-10T04:00:00+00:00",
+   "summary": "Financial vision-language models often present confident answers without actually reading charts and documents; researchers propose methods to identify which answers can be trusted.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06539",
+   "title_hash": "3064302019be09cd5f7a3d8a5d4ed563",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow domain application of question-answering evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06549",
+   "title_hash": "6e0edc149a6af6f1625657365f8af4d0",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow domain application in political negotiation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06589",
+   "title_hash": "a39869df6155af6aa99a376cbd01ef97",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "linguistic analysis paper without methodological significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06607",
+   "title_hash": "b55538eab4deb53d18b1b4ba56815b08",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow application in document field extraction"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06614",
+   "title_hash": "dc3436dbbbdf442d4ce316a698493724",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow application in taxonomy retrieval"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06652",
+   "title_hash": "bdb0fd97703ce3afb54c2705c508e6b0",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow domain application in metaphor detection"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06663",
+   "title_hash": "0b3fc6df9be48421ea87761d74bc2928",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": true,
+   "title": "The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-10T04:00:00+00:00",
+   "summary": "Survey of 1,547 papers identifies the horizon gap: frontier language models fail at multi-hour tasks despite solving single-pass reasoning problems, proposing frameworks for planning, memory, and long-horizon execution.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06672",
+   "title_hash": "e6657dcc3dede03a53be812f947bf67a",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow application of tone awareness in retrieval-augmented generation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06718",
+   "title_hash": "8003f0e96cfcf27344ae30b1b44f92f6",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical evaluation of audio language models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06750",
+   "title_hash": "304c6c5bb2a6e91b91bb7e994cc7358b",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical methods paper on LLM refinement"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06758",
+   "title_hash": "f6e27389341e73f9814ac920989f747d",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "minor model release for Japanese document parsing"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06785",
+   "title_hash": "c34dc264b2e2df2a500c18e15b45979b",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow domain application in cognitive distortion detection"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06802",
+   "title_hash": "bd3b3eb96ddec060079c886979e18052",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical methods paper on distillation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06819",
+   "title_hash": "e2a5ad2a7046723779d311776a148334",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization for collaborative decoding"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.06849",
+   "title_hash": "e379e9efbb411112d0b480520e5bda38",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "narrow technical methods paper on sparse attention"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vef79c/quantization_hurts_knowledge_nonlinearly_qwen36",
+   "title_hash": "71a34d19efdf0a7cba1b4f0c38ccd17c",
+   "first_seen": "2026-08-10T05:45:37.575358+00:00",
+   "kept": false,
+   "reason": "forum discussion of model optimization without significant news"
   }
  ],
  "digests": [

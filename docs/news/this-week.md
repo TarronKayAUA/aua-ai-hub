@@ -260,9 +260,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
@@ -533,13 +533,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Research evaluates preference-optimized language models as counselors in motivational interviewing, examining tradeoffs between goal persistence and relational attunement.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03030-5">Intersectional fairness in vision-language models for medical image disease classification</a>
-        <p class="news-card-summary">Study examines fairness across demographic groups in vision-language models for medical image disease classification.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
@@ -593,10 +586,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.06532">Confidence Estimation for Financial Vision-Language Models in Chart and Document Understanding</a>
+        <p class="news-card-summary">Financial vision-language models often present confident answers without actually reading charts and documents; researchers propose methods to identify which answers can be trusted.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.06663">The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</a>
+        <p class="news-card-summary">Survey of 1,547 papers identifies the horizon gap: frontier language models fail at multi-hour tasks despite solving single-pass reasoning problems, proposing frameworks for planning, memory, and long-horizon execution.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 8, 2026</span></div>
