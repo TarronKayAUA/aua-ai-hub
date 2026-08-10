@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science">AI for science needs reasoning, not just data</a>
+    <p class="news-card-summary">MIT Technology Review examines how AI systems for scientific discovery require reasoning capabilities beyond pattern matching from data alone.</p>
+  </div>
+  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/ai-scientists2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
@@ -127,13 +135,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Genome design models were used to generate variants of a bacteriophage, raising dual-use biosecurity considerations for AI-assisted pathogen research.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2152061685-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://artificialanalysis.ai/?intelligence=agentic-index">Qwen3.8 Max now ranked as the best overall model by agentic index</a>
-    <p class="news-card-summary">Qwen3.8-Max achieved top ranking on Artificial Analysis agentic index benchmark, surpassing Claude Opus 5.</p>
-  </div>
-  <img class="news-card-thumb" src="https://artificialanalysis.ai/opengraph-image.png?732728ccc2829321" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

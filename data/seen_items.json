@@ -28657,6 +28657,69 @@
    "first_seen": "2026-08-10T05:45:37.575358+00:00",
    "kept": false,
    "reason": "forum discussion of model optimization without significant news"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science",
+   "title_hash": "ce4d1c771a6b2b24af3507025a761629",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": true,
+   "title": "AI for science needs reasoning, not just data",
+   "source": "MIT Technology Review AI",
+   "published": "2026-08-10T09:00:00+00:00",
+   "summary": "MIT Technology Review examines how AI systems for scientific discovery require reasoning capabilities beyond pattern matching from data alone.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/ai-scientists2.jpg?resize=1200,600",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/10/1141511/these-startups-are-chasing-the-next-big-thing-in-llms",
+   "title_hash": "3bd82ed6b5e532a15074959825e74d75",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": false,
+   "reason": "listicle and vendor marketing; historical recap with startup coverage rather than substantive analysis of capability or deployment"
+  },
+  {
+   "url": "https://medicalfuturist.com/best-examples-of-digital-health-for-patients-with-intellectual-disability",
+   "title_hash": "2ac468f7dcd48bf42bbbcd7cab6041a0",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; digital health for intellectual disability is a clinical application but not related to artificial intelligence"
+  },
+  {
+   "url": "https://medicalfuturist.com/the-state-of-exoskeletons-in-healthcare",
+   "title_hash": "ee58c4b9f157bf114a24e486ab080c18",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; exoskeletons are not AI systems"
+  },
+  {
+   "url": "https://claude.com/blog/auto-mode-default-in-claude-code",
+   "title_hash": "0b2809f694b3377d89cd8d52a2e66e6c",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": false,
+   "reason": "minor product update; auto mode default in Claude Code is a feature change, not a capability shift or release of significance to medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04550-z",
+   "title_hash": "f154e38fab3e236b42ea886db39a9501",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical research on diabetes prevention without AI relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vk0o98/the_gemma_team_will_host_a_special_event_on",
+   "title_hash": "6fb45060c125ec5a5af833f53332ba77",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": false,
+   "reason": "rumor and speculation; the candidate is speculation about a possible Gemma release, not reporting of an actual announcement"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=X8K1bW-XfL8",
+   "title_hash": "f2976a3ad2c25010ee86b461a4800eb2",
+   "first_seen": "2026-08-10T09:49:29.946133+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models with no confirmed events or substantive content"
   }
  ],
  "digests": [

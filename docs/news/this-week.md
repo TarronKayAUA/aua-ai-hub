@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 31 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -243,13 +243,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AdobeStock_1686952984-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.28634">Can LLMs Really Understand Item Difficulty Levels? Implications for Automated Item Generation Using LLMs</a>
-        <p class="news-card-summary">Study investigates whether large language models can accurately predict item difficulty levels for educational assessments using various prompting strategies.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -260,9 +253,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
@@ -528,20 +521,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.28814">Rolling With Resistance: Preference-Optimized LLM Counselors Can Trade Goal Persistence for Relational Attunement in Motivational Interviewing</a>
-        <p class="news-card-summary">Research evaluates preference-optimized language models as counselors in motivational interviewing, examining tradeoffs between goal persistence and relational attunement.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03062-x">Multimodal deep learning for preoperative invasiveness stratification of lung adenocarcinoma spectrum nodules</a>
-        <p class="news-card-summary">Peer-reviewed study on multimodal deep learning for preoperative assessment of lung adenocarcinoma nodule invasiveness.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03063-w">Patient engagement, acceptability, and preference of artificial intelligence versus human coaching for diabetes prevention</a>
         <p class="news-card-summary">A study compares patient engagement and preference between AI coaching and human coaching for diabetes prevention.</p>
@@ -586,10 +565,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 53 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science">AI for science needs reasoning, not just data</a>
+        <p class="news-card-summary">MIT Technology Review examines how AI systems for scientific discovery require reasoning capabilities beyond pattern matching from data alone.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/ai-scientists2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
