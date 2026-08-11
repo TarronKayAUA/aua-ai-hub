@@ -18,9 +18,44 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.07527">DocAtlas: Long-Document Understanding as Mutable-State Interaction</a>
+    <p class="news-card-summary">DocAtlas presents a mutable-state interaction system for long-document understanding that updates evidence dynamically during generation rather than relying on static retrieval.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.07531">Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards</a>
+    <p class="news-card-summary">Search-G1 introduces representation-based intrinsic rewards to train search-augmented language agents to retrieve information strategically and ground answers in evidence.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.07594">Scaling Inherently Interpretable Language Models</a>
+    <p class="news-card-summary">Study demonstrates that language model interpretability can be built into training as a constraint rather than applied post-hoc, maintaining capability at scale.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.07968">Thinking Hard, Not Smart: Reasoning Models Fail to Ration Test-Time Compute Across Questions</a>
+    <p class="news-card-summary">Study shows reasoning models fail to allocate test-time compute efficiently across multiple questions under shared budget constraints, introducing an exam-style evaluation framework.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.08024">Prompt Embedding Probes (PEP): Hallucination Detection in LLMs from Hidden States</a>
+    <p class="news-card-summary">Prompt Embedding Probes provides a white-box method for detecting hallucinations in frozen language models using hidden states without additional model training.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 10, 2026</span></div>
@@ -97,43 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">OpenAI detailed a security incident involving Hugging Face at Black Hat, providing timeline and internal perspective on the attack and response.</p>
   </div>
   <img class="news-card-thumb" src="https://img.youtube.com/vi/87DyyMV0kCY/maxresdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://genesisopenmodels.anl.gov/">U.S. Department of Energy Launches the Genesis Open Models Initiative</a>
-    <p class="news-card-summary">U.S. Department of Energy launched the Genesis Open Models Initiative for open-source model development.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities">OpenAI puts the brakes on a new model because it’s supposedly too powerful</a>
-    <p class="news-card-summary">OpenAI paused development of model Astra due to unmet security standards following recent disclosure of accidental model security breaches.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK155_OPEN_AI_CVirginia_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed">AI chatbots have failed people in crisis. Can that be fixed?</a>
-    <p class="news-card-summary">Clinicians and researchers call for AI companies to disclose safety data after chatbots have failed people in crisis situations.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mentalhealthaichat-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vhwilp/an_openweight_model_too_moonshot_joins_the_race">An open-weight model too, Moonshot joins the race (gently this time)</a>
-    <p class="news-card-summary">Moonshot released Kimi K3, an open-weight Chinese AI model, following earlier containment bypass reports.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/6i806mqxexhh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f2bd9e1ac62690d2068ec7710964ce3806b28cc5" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.05157">Large Language Models Threaten Double-blind Review</a>
-    <p class="news-card-summary">Study shows large language models can reliably identify authorship of anonymized manuscripts, threatening double-blind peer review.</p>
-  </div>
 </div>
 </div>

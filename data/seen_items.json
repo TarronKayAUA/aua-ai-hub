@@ -1,19 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2np0a/nvidiadiffusiongemma26ba4bitnvfp4_hugging_face",
-   "title_hash": "5902abe12f80646ea5c9c6b663423cb4",
-   "first_seen": "2026-06-12T03:08:49.759806+00:00",
-   "kept": true,
-   "title": "nvidia/diffusiongemma-26B-A4B-it-NVFP4 · Hugging Face",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-06-11T03:28:47+00:00",
-   "summary": "Nvidia releases DiffusionGemma 26B, an open-weights multimodal model combining language and image generation capabilities.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/9EBAZR2owX7nOGzlCDPXd-p_xWnW0WyWy3qPB046G1s.png?width=640&crop=smart&auto=webp&s=6d83f884a6cf4fe9a76b4e5328582f59450a6ff5"
-  },
-  {
    "url": "https://arxiv.org/abs/2606.12569",
    "title_hash": "bf8c636957fbe9c64d20b769b41fdc93",
    "first_seen": "2026-06-12T10:13:18.251485+00:00",
@@ -28571,6 +28558,251 @@
    "first_seen": "2026-08-11T02:29:18.734463+00:00",
    "kept": false,
    "reason": "daily news recap with no substantive technical or domain-specific content for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07525",
+   "title_hash": "749ec6eb601af519d01475f1bf1e8e93",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow domain application of limited significance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07527",
+   "title_hash": "514b4d595077db67f28efbe617066888",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": true,
+   "title": "DocAtlas: Long-Document Understanding as Mutable-State Interaction",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-11T04:00:00+00:00",
+   "summary": "DocAtlas presents a mutable-state interaction system for long-document understanding that updates evidence dynamically during generation rather than relying on static retrieval.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07529",
+   "title_hash": "9c1fda25aaee89c5ea9229f417861ba5",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside scope of medical and educational audiences"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07531",
+   "title_hash": "cff9e8ab6aced7c03b450191a171153b",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": true,
+   "title": "Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-11T04:00:00+00:00",
+   "summary": "Search-G1 introduces representation-based intrinsic rewards to train search-augmented language agents to retrieve information strategically and ground answers in evidence.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07594",
+   "title_hash": "344f8688df171ad09c33ae5a0425a37a",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": true,
+   "title": "Scaling Inherently Interpretable Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-11T04:00:00+00:00",
+   "summary": "Study demonstrates that language model interpretability can be built into training as a constraint rather than applied post-hoc, maintaining capability at scale.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07629",
+   "title_hash": "c2ca3a751f81a1f05f23300d9b08ae76",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow domain application in low-resource machine translation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07641",
+   "title_hash": "7e2603c8bdce09fc6c213c7b8683dfe4",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow application to survey evaluation without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07727",
+   "title_hash": "1dd54d7dab683aa7fe8557ebd2dd63c9",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow language-specific evaluation without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07737",
+   "title_hash": "2da7d94ed7d8931d2ff314cdf4a8afbc",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "off-topic linguistic analysis with no AI significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07763",
+   "title_hash": "d9b0fdddce53751df7f47fdcdebe6582",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow language-specific benchmark without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07812",
+   "title_hash": "2d0a9080040c2da082ed857dc1afe9d2",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow domain evaluation without broad methodological significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07852",
+   "title_hash": "4fe9bf03f53b261c2025c923b6f348eb",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow technical investigation of speaker representation without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07862",
+   "title_hash": "28a0771c6ffbb11cda6740bda4df5155",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow language-specific safety benchmark without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07891",
+   "title_hash": "64601ddcff4d2bab34c1ac444d69a969",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow domain application in legislative testimony analysis"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.07968",
+   "title_hash": "af5c8a8ee298ec43b8d58a7b9c9c2a59",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": true,
+   "title": "Thinking Hard, Not Smart: Reasoning Models Fail to Ration Test-Time Compute Across Questions",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-11T04:00:00+00:00",
+   "summary": "Study shows reasoning models fail to allocate test-time compute efficiently across multiple questions under shared budget constraints, introducing an exam-style evaluation framework.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08024",
+   "title_hash": "83f2ad6c4af51f49acefaec653fb4407",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": true,
+   "title": "Prompt Embedding Probes (PEP): Hallucination Detection in LLMs from Hidden States",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-11T04:00:00+00:00",
+   "summary": "Prompt Embedding Probes provides a white-box method for detecting hallucinations in frozen language models using hidden states without additional model training.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08059",
+   "title_hash": "dc5d5442c9f3a7fdf6deb2e63c9a5b53",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow dataset announcement in specialized translation domain"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08067",
+   "title_hash": "ac3080ae09223edac6d76195f7228c1b",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow domain application in dialect speech modeling"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08082",
+   "title_hash": "951ffc76f8b5f8a26f71783cacf81c0f",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization for masked diffusion models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08086",
+   "title_hash": "2a61aee964dde1ffdfc1014c5b549f01",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization for diffusion language model inference"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08090",
+   "title_hash": "ca679703aba2534d94537308f23bb0d0",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow language-specific evaluation of figurative language identification"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08107",
+   "title_hash": "8268832a46fb51fc8a1ac42aed7bce66",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow technical method for multimodal model adaptation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08160",
+   "title_hash": "0fb35f2a0b16427ce660d4f56f703a7a",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow domain application in game narrative without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08164",
+   "title_hash": "e94a606f3d2e09f11309880347bc265b",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow evaluation framework for identity consistency in distilled models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.08168",
+   "title_hash": "31aa67ec07500212fa1a7c9a1689b9f7",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "narrow technical investigation of reasoning mechanisms without broad significance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03126-y",
+   "title_hash": "970867c9c4d61597a0ea44058a341883",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": true,
+   "title": "Cost-effectiveness of an AI-based app compared to usual care for early skin cancer detection in Belgium",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-11T00:00:00+00:00",
+   "summary": "Study evaluates cost-effectiveness of an artificial intelligence app compared to standard care for early skin cancer detection in Belgium.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "http://danluu.com/pl-tokens",
+   "title_hash": "4f3ee883f880ce4068fffc19cd799ee9",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "community forum discussion without significant news or instructive analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkm42m/muse_glimmer_actually_fits_on_a_single_rtx_3090",
+   "title_hash": "40af7e9353db100f78bdb158db2758aa",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": false,
+   "reason": "minor performance-tinkering thread in niche community"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42574942?fc=20260609215449&ff=20260811012951&v=2.20.1",
+   "title_hash": "a886744a6e0b8543f82b135afcb61696",
+   "first_seen": "2026-08-11T05:29:50.876577+00:00",
+   "kept": true,
+   "title": "Artificial intelligence in medical education: a narrative review across four functional domains",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-10T10:00:00+00:00",
+   "summary": "Narrative review concludes AI functions best as an educational augmentation supporting feedback and personalization rather than replacing educators, with current evidence supporting cautious implementation pending multicenter validation.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
   }
  ],
  "digests": [

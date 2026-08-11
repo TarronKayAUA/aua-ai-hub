@@ -65,6 +65,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574942?fc=20260609215449&amp;ff=20260811012951&amp;v=2.20.1">Artificial intelligence in medical education: a narrative review across four functional domains</a>
+    <p class="news-card-summary">Narrative review concludes AI functions best as an educational augmentation supporting feedback and personalization rather than replacing educators, with current evidence supporting cautious implementation pending multicenter validation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42571443?fc=20260609215449&amp;ff=20260809091701&amp;v=2.20.1">The AI-Augmented Scientific Congress Ecosystem (AISCE): Reimagining Scientific Congresses in the Age of Artificial Intelligence</a>
     <p class="news-card-summary">Editorial proposes an AI-augmented model for scientific congresses to address rising abstract volumes, reviewer fatigue, and fragmented programming while maintaining human oversight.</p>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03124-0">Developing interactive learning interfaces for teaching AI in health professions education using generative AI tools</a>
     <p class="news-card-summary">An npj Digital Medicine study presents an instructional design strategy using generative AI tools to create interactive learning experiences for teaching non-technical audiences foundational AI concepts in health professions education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90736">Prompt Framing and Evidence Requirement for AI-Generated Educational Responses in Dental Education: Experimental Study</a>
-    <p class="news-card-summary">Experimental study shows prompt framing and evidence requirements significantly shape AI-generated responses in dental education, affecting credibility and procedural reasoning.</p>
   </div>
 </div>
 </div>

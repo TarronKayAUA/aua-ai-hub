@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -62,6 +62,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574069?fc=20260609215449&amp;ff=20260810222918&amp;v=2.20.1">Assessing the Educational Role of Large Language Models in Dental Training: A Decade-Long Analysis of Text-Based and Visual Questions in a National Examination</a>
         <p class="news-card-summary">Analysis of large language models on a decade of dental board exam questions shows strong text-based performance but significant limitations with visual content in image-dependent disciplines.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574942?fc=20260609215449&amp;ff=20260811012951&amp;v=2.20.1">Artificial intelligence in medical education: a narrative review across four functional domains</a>
+        <p class="news-card-summary">Narrative review concludes AI functions best as an educational augmentation supporting feedback and personalization rather than replacing educators, with current evidence supporting cautious implementation pending multicenter validation.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -287,10 +294,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03126-y">Cost-effectiveness of an AI-based app compared to usual care for early skin cancer detection in Belgium</a>
+        <p class="news-card-summary">Study evaluates cost-effectiveness of an artificial intelligence app compared to standard care for early skin cancer detection in Belgium.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
@@ -604,20 +618,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AdobeStock_1909065947-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02997-5">Predicting Alzheimer progression using EEG-based digital twins</a>
-        <p class="news-card-summary">EEG-based digital twins were developed to predict Alzheimer disease progression, offering a computational approach to clinical outcome forecasting.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03053-y">Cross-linguistic benchmarking of NLP metrics for psychosis research</a>
-        <p class="news-card-summary">Cross-linguistic natural language processing metrics were benchmarked for psychosis research, establishing standardized evaluation approaches across languages.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">July 29, 2026</span></div>
@@ -636,10 +636,45 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 56 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.07527">DocAtlas: Long-Document Understanding as Mutable-State Interaction</a>
+        <p class="news-card-summary">DocAtlas presents a mutable-state interaction system for long-document understanding that updates evidence dynamically during generation rather than relying on static retrieval.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.07531">Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards</a>
+        <p class="news-card-summary">Search-G1 introduces representation-based intrinsic rewards to train search-augmented language agents to retrieve information strategically and ground answers in evidence.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.07594">Scaling Inherently Interpretable Language Models</a>
+        <p class="news-card-summary">Study demonstrates that language model interpretability can be built into training as a constraint rather than applied post-hoc, maintaining capability at scale.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.07968">Thinking Hard, Not Smart: Reasoning Models Fail to Ration Test-Time Compute Across Questions</a>
+        <p class="news-card-summary">Study shows reasoning models fail to allocate test-time compute efficiently across multiple questions under shared budget constraints, introducing an exam-style evaluation framework.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.08024">Prompt Embedding Probes (PEP): Hallucination Detection in LLMs from Hidden States</a>
+        <p class="news-card-summary">Prompt Embedding Probes provides a white-box method for detecting hallucinations in frozen language models using hidden states without additional model training.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 10, 2026</span></div>
@@ -1018,14 +1053,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Qwen3.8-Max performs comparably to Kimi K3 and DeepSeek V4 Flash across benchmarks with particular strength in coding; open-weight 27B version coming soon.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/14mqdzhzb7hh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=53a5f1f5ea4dd8a66ef78591cbea34554cb1a2ed" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1ve1mvh/minimaxh3_now_on_huggingface">MiniMax-H3 now on huggingface</a>
-        <p class="news-card-summary">MiniMax-H3, a multimodal generative system supporting text, images, video, and audio, is now available on Hugging Face with video generation capability.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/WyIvGqO4ylsfEfqo7vAaNtLhBYgl2urdqW5R5dAOYG4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=9db3c969c5d772a76d5b69447a853988e20f5dd8" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
