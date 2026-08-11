@@ -64,7 +64,7 @@ The [Agents category in the tools directory](index.md#agents) carries every entr
 | [Cowork](#cowork-anthropic) | Anthropic | The natural starting agent for faculty and staff who live in documents |
 | [Codex](#codex-openai) | OpenAI | Developer-oriented, with the most thorough onboarding video on this page |
 | [ChatGPT Work](#chatgpt-work-openai) | OpenAI | The gentlest entry point: give it an outcome, get finished documents |
-| [Manus](#manus) | Butterfly Effect, now Meta | Autonomous agent in a cloud workspace, working steps on its own infrastructure |
+| [Manus](#manus) | Meta, with a spin-out announced | Autonomous agent in a cloud workspace, working steps on its own infrastructure |
 | [Comet](#comet-perplexity) | Perplexity | The agent built into a web browser, acting across your open tabs |
 | [OpenClaw](#openclaw-open-source) | Open source | The self-hosted path: the most control and the most responsibility |
 
@@ -102,7 +102,7 @@ More: [ChatGPT Work and the desktop app](https://learn.chatgpt.com/docs/app).
 
 ### Manus
 
-A general-purpose autonomous agent in a cloud workspace: it decomposes a goal into steps and works them on its own infrastructure, returning research, documents, slides, and simple applications. Free credits to start, subscriptions beyond. Originally built by the startup Butterfly Effect, Manus has been part of Meta since December 2025; the service and subscriptions continue under Meta.
+A general-purpose autonomous agent in a cloud workspace: it decomposes a goal into steps and works them on its own infrastructure, returning research, documents, slides, and simple applications. Free credits to start, subscriptions beyond. Originally built by the startup Butterfly Effect and part of Meta since December 2025, Manus has announced it will soon resume operating as an independent company; account changes may be required during the transition.
 
 <!-- render:guide-videos:agents:manus -->
 
