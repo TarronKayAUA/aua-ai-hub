@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -271,13 +271,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00207">Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection</a>
-        <p class="news-card-summary">Research identifies that English-Arabic performance gaps in medical language models stem from missing knowledge access rather than absent training data, enabling targeted fine-tuning improvements.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
         <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch">STAT+: Are AI scribes useful tools in medical education, or a crutch that imperils learning?</a>
         <p class="news-card-summary">Educators debate whether AI scribes help students develop clinical documentation skills or reduce learning by automating note-taking.</p>
@@ -296,8 +289,16 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions">STAT+: Nurses seek a seat at the table as they fight expanding clinical AI</a>
+        <p class="news-card-summary">Nursing leaders raise concerns about job displacement and patient safety risks from expanding clinical AI deployment without adequate workforce input.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1222271719-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
@@ -582,13 +583,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study benchmarked AI translation of the EQ-5D-5L patient outcome measure against human translation standards to assess feasibility for multinational clinical research.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03058-7">MedKGent: a large language model agent framework for constructing temporally evolving medical knowledge graph</a>
-        <p class="news-card-summary">MedKGent presents a framework using language model agents to automatically construct and maintain medical knowledge graphs that evolve over time as new information becomes available.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 4, 2026</span></div>
@@ -636,9 +630,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 56 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (56)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (16)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -982,69 +976,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Texas requires audit verification for new data center proposals before grid connection, affecting artificial intelligence infrastructure deployment.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00004">Cost-Effective Automated Judging of Natural-Language Mathematical Proofs</a>
-        <p class="news-card-summary">Study demonstrates that cost-effective open-weight language models can reliably judge natural-language mathematical proofs when given a rubric, reducing evaluation expenses for math-reasoning systems.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00009">AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents</a>
-        <p class="news-card-summary">AgentMemBench systematically compares five memory management strategies for conversational AI agents, addressing the challenge of maintaining coherent recall across thousands of conversation turns.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00013">What Transfers from Text to Vision? Capability Scaling Laws and Transfer Dynamics for VLMs</a>
-        <p class="news-card-summary">Study establishes scaling laws predicting vision-language model performance from language model backbone choice without requiring full model training.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00036">XL-DocBench: Benchmarking Evidence-Grounded Extra-Long Document Understanding</a>
-        <p class="news-card-summary">XL-DocBench evaluates language models on long document understanding tasks from real-world domains including clinical guidelines, testing question-answering and document comparison across hundreds or thousands of pages.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00042">Trustworthiness Costs of Domain Adaptation in Small Language Models:A Cross-Architecture Empirical Study</a>
-        <p class="news-card-summary">Empirical study examines how domain adaptation of small language models affects trustworthiness across healthcare, legal, and financial applications.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00146">DiffusionGemma Technical Report</a>
-        <p class="news-card-summary">DiffusionGemma is an open-weight language model using discrete diffusion to generate text blocks in parallel, eliminating sequential autoregressive decoding bottlenecks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00180">A Constitution-Grid Instrument for Data-Efficient RL Alignment (C-Guard)</a>
-        <p class="news-card-summary">C-Guard applies reinforcement learning to balance two conflicting safety objectives: catching harmful prompts while avoiding over-refusal on benign requests.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00218">A Few Neurons Reveal When LLMs Misuse Tools: Sparse Detection and Selective Steering for Reliable Tool Use</a>
-        <p class="news-card-summary">Study shows that small sets of neurons reveal when language models fail at tool use, enabling sparse detection and steering for more reliable agentic systems.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.00311">SeDeM: Selective Decompression of Hidden-State Memories for Long-Context Question Answering</a>
-        <p class="news-card-summary">SeDeM addresses long-context inference costs by selectively decompressing hidden-state memories, reducing key-value cache size while preserving evidence retrieval for question-answering.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

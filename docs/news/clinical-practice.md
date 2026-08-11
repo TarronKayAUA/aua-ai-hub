@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions">STAT+: Nurses seek a seat at the table as they fight expanding clinical AI</a>
+    <p class="news-card-summary">Nursing leaders raise concerns about job displacement and patient safety risks from expanding clinical AI deployment without adequate workforce input.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1222271719-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
@@ -119,13 +127,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03110-6">A Multimodal large language model-based triage tool for osteoporotic vertebral compression fractures using posture and movement videos</a>
     <p class="news-card-summary">Study of a multimodal language model-based system for triaging osteoporotic vertebral compression fractures using video analysis of posture and movement.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03086-3">Data-driven personalization of just-in-time adaptive mental health intervention via two-stage reinforcement learning approach</a>
-    <p class="news-card-summary">Research on personalizing just-in-time adaptive mental health interventions using two-stage reinforcement learning to tailor timing and content to individual needs.</p>
   </div>
 </div>
 </div>
