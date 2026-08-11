@@ -330,7 +330,7 @@
   cost: paid
   governance_status: listed
   status_note: Beta on paid Claude plans; macOS and Linux (Windows via WSL).
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-11
   blurb: Local-first research workbench pairing an agent with curated scientific skills (genomics, proteomics, cheminformatics), local code execution, and a reviewer agent that checks citations and calculations.
 
 - name: ResearchRabbit
@@ -340,7 +340,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-11
   blurb: Visual literature mapping from seed papers, surfacing related work, shared authorship, and citation neighborhoods, with a feature-complete free tier.
 
 # Medical Learning: student-facing study tools. Listings are not
@@ -546,7 +546,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-11
   blurb: OpenAI's image generation inside ChatGPT, strong at following detailed instructions and rendering readable text, which suits diagrams and slide artwork.
 
 - name: Adobe Firefly
@@ -570,7 +570,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-11
   blurb: Image generator particularly good at legible text inside images, useful for posters, badges, and labeled figures.
 
 # --- Video Generation (owner approved 2026-06-12; OpenAI's Sora was
@@ -694,7 +694,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-11
   blurb: Chat assistant from the French lab Mistral, renamed from Le Chat in June 2026. Combines a conversational mode with work and coding agent modes that connect to tools such as email, calendar, and code repositories.
 
 - name: Antigravity
@@ -743,7 +743,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-11
   blurb: Scholarly research assistant from the Allen Institute for AI, the makers of Semantic Scholar, that finds papers, answers questions with citations to the literature, and summarizes evidence. Free to use with a sign-in.
 
 - name: Paperpal
@@ -783,7 +783,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-11
   blurb: Medical knowledge platform and question bank with a built-in artificial intelligence study mode (AI Mode Learning) that answers questions grounded in the AMBOSS library, plus a beta collection of Assistants for case simulation, checklists, and consult preparation.
 
 - name: Osmosis AI
@@ -822,7 +822,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-11
   blurb: Meeting assistant that transcribes and summarizes video calls, with live transcripts that participants can highlight and comment on during the meeting. The free plan includes 300 transcription minutes per month.
 
 - name: Fathom
@@ -832,7 +832,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-11
   blurb: Meeting notetaker that joins video calls to record, transcribe, and summarize them, delivering the summary shortly after the call ends. The free plan does not cap recordings or transcription.
 
 - name: Napkin AI
@@ -842,7 +842,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-11
   blurb: Generates editable diagrams, flowcharts, and infographics from pasted or imported text, a quick way to add visuals to lectures and handouts. Exports to PowerPoint, image, and PDF formats; the free plan places a small watermark on exported visuals.
 
 - name: Jan
@@ -852,7 +852,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-08-11
   blurb: Open-source desktop application for downloading and chatting with open-weights models fully offline, similar in role to LM Studio but Apache 2.0 licensed. Runs on Windows, macOS, and Linux.
 
 # The next four were added 2026-07-21 from tool-discovery issue #21
