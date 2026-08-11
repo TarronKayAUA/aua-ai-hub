@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -54,6 +54,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42573794?fc=20260609215449&amp;ff=20260810131029&amp;v=2.20.1">Can ChatGPT pass the polish national medical specialization examination in orthopedics and traumatology?</a>
     <p class="news-card-summary">ChatGPT achieved strong performance on Polish orthopedic specialist examinations but does not demonstrate clinical competence or readiness for independent surgical practice.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574069?fc=20260609215449&amp;ff=20260810222918&amp;v=2.20.1">Assessing the Educational Role of Large Language Models in Dental Training: A Decade-Long Analysis of Text-Based and Visual Questions in a National Examination</a>
+    <p class="news-card-summary">Analysis of large language models on a decade of dental board exam questions shows strong text-based performance but significant limitations with visual content in image-dependent disciplines.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 6, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90736">Prompt Framing and Evidence Requirement for AI-Generated Educational Responses in Dental Education: Experimental Study</a>
     <p class="news-card-summary">Experimental study shows prompt framing and evidence requirements significantly shape AI-generated responses in dental education, affecting credibility and procedural reasoning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">Faculty development and institutional readiness for incorporating AI in health professions education- A narrative review</a>
-    <p class="news-card-summary">Narrative review explores faculty development strategies and institutional readiness requirements for integrating artificial intelligence into health professions education.</p>
   </div>
 </div>
 </div>

@@ -18,9 +18,25 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer">Introducing Muse Glimmer</a>
+    <p class="news-card-summary">Meta released Muse Glimmer, a 30-billion-parameter open-weight model under Apache 2.0 license optimized for agentic task completion with strong benchmark performance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/glimmer-pelican.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 10, 2026</span></div>
+    <a class="news-card-title" href="https://cactuscompute.com/needle">Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots</a>
+    <p class="news-card-summary">Cactus released Needle 2, a 14-megabyte agentic language model for edge devices including phones and wearables, requiring only 28 megabytes of RAM for full inference.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cactuscompute.com/opengraph-image?9df76a35fe8276e2" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 10, 2026</span></div>
@@ -119,21 +135,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2608.05157">Large Language Models Threaten Double-blind Review</a>
     <p class="news-card-summary">Study shows large language models can reliably identify authorship of anonymized manuscripts, threatening double-blind peer review.</p>
   </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.aleksagordic.com/blog/vllm">Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)</a>
-    <p class="news-card-summary">Technical analysis of vLLM&#x27;s design and optimization strategies for high-throughput language model inference systems.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.aleksagordic.com/blog/vllm/engine_constructor.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 6, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team">Anthropic will design its own hardware to power Claude</a>
-    <p class="news-card-summary">Anthropic announced plans to develop custom hardware for Claude inference to reduce Nvidia dependence and enable scaling.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/01/amodei_header_1-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

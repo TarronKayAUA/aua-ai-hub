@@ -20,7 +20,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -55,6 +55,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42573794?fc=20260609215449&amp;ff=20260810131029&amp;v=2.20.1">Can ChatGPT pass the polish national medical specialization examination in orthopedics and traumatology?</a>
         <p class="news-card-summary">ChatGPT achieved strong performance on Polish orthopedic specialist examinations but does not demonstrate clinical competence or readiness for independent surgical practice.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574069?fc=20260609215449&amp;ff=20260810222918&amp;v=2.20.1">Assessing the Educational Role of Large Language Models in Dental Training: A Decade-Long Analysis of Text-Based and Visual Questions in a National Examination</a>
+        <p class="news-card-summary">Analysis of large language models on a decade of dental board exam questions shows strong text-based performance but significant limitations with visual content in image-dependent disciplines.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -261,14 +268,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.00207">Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection</a>
         <p class="news-card-summary">Research identifies that English-Arabic performance gaps in medical language models stem from missing knowledge access rather than absent training data, enabling targeted fine-tuning improvements.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it">An AI-supervised remote exam went so badly that 58,000 students must retake it</a>
-        <p class="news-card-summary">An AI-supervised remote exam for 58,000 students was invalidated due to system failures that produced anomalous score distributions, requiring retesting.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-82955454-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -637,10 +636,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 52 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer">Introducing Muse Glimmer</a>
+        <p class="news-card-summary">Meta released Muse Glimmer, a 30-billion-parameter open-weight model under Apache 2.0 license optimized for agentic task completion with strong benchmark performance.</p>
+      </div>
+      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/glimmer-pelican.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 10, 2026</span></div>
+        <a class="news-card-title" href="https://cactuscompute.com/needle">Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots</a>
+        <p class="news-card-summary">Cactus released Needle 2, a 14-megabyte agentic language model for edge devices including phones and wearables, requiring only 28 megabytes of RAM for full inference.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cactuscompute.com/opengraph-image?9df76a35fe8276e2" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 10, 2026</span></div>
@@ -1018,14 +1033,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vcqpn4/eu_ai_act_takes_effect_tomorrow_august_2_2026">EU AI Act takes effect tomorrow, August 2, 2026. 🤡</a>
         <p class="news-card-summary">European Union AI Act takes effect August 2, 2026, requiring disclosure labeling for AI-generated images, audio, video, and text.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1va6ot2/kimi_k3_for_local_use_156tb_594gb_compressed_and">Kimi K3 for local use (1.56TB → 594GB) compressed and released by Unsloth</a>
-        <p class="news-card-summary">Unsloth released quantized versions of Kimi K3 ranging from 8-bit to 1-bit, with the smallest 594 GB model retaining 78.9% accuracy.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/-Pi0PiNmpJmI17QD0uo-SnFZHONDxkrCISpiFrdpHa8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=48f4e0f32c02df68aeb40a87995bb8f7d6d7cc0f" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
