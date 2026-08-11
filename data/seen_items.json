@@ -1,279 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arxiv.org/abs/2606.12569",
-   "title_hash": "bf8c636957fbe9c64d20b769b41fdc93",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false,
-   "title": "EDEN: A Large-Scale Corpus of Clinical Notes for Italian",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-12T04:00:00+00:00",
-   "summary": "EDEN is a large-scale Italian clinical notes corpus for training and evaluating language models on emergency department data.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12576",
-   "title_hash": "a975e75ac67af8ac0ac2da39fccc2fb3",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12578",
-   "title_hash": "3e1ab4b268cc4fd326b63bcfdca07321",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false,
-   "title": "MARD: Mirror-Augmented Reasoning Distillation for Mechanism-Level Drug-Drug Interaction Prediction",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-12T04:00:00+00:00",
-   "summary": "MARD applies reasoning distillation to predict mechanism-level drug-drug interactions, combining machine learning with pharmacological reasoning.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12599",
-   "title_hash": "d394c90a5a144ff08a32ae25275cf1af",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12608",
-   "title_hash": "01715286dc85cb8bf3fd2a81ca877cc4",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12649",
-   "title_hash": "a029ef071e219f4be83fad70776a3516",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12689",
-   "title_hash": "bc9b0eb630cba183fa64c1baea88d489",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12708",
-   "title_hash": "4887f92f6600ec7e51ee1ca3f196df2b",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12716",
-   "title_hash": "e63865f9c38582e4d3b71bbc96616f33",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12748",
-   "title_hash": "ca0651637b046b650bf02cc45e420c3d",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12754",
-   "title_hash": "2aa97407d86ef8e0c54de255776b1f66",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12765",
-   "title_hash": "440beb485b0a08d373325caa1b73280d",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12789",
-   "title_hash": "508e6813013b8948baf10546778b72f5",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12790",
-   "title_hash": "5d229e26d72dd76e134a7e1811bb12ff",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12807",
-   "title_hash": "bbedd06cc5166ddbde3b38bda2d961d7",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12818",
-   "title_hash": "5791b995b7af90da9e7758524143a235",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12837",
-   "title_hash": "a5f53ca64146e0f37080def365495672",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12854",
-   "title_hash": "60070f92aeb6068884c1499bc4ce604a",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false,
-   "title": "Small LLMs for Biomedical Claim Verification: Cost-Effective Fine-Tuning, Structural Dataset Shortcuts, and Cross-Domain Generalization",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-12T04:00:00+00:00",
-   "summary": "Study demonstrates cost-effective fine-tuning of small language models for biomedical claim verification with improved cross-domain generalization.",
-   "category": "general_ai",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12881",
-   "title_hash": "70fc18338336601f8d6cf5f9a9ed5018",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12897",
-   "title_hash": "a88a268a38b03183f7045d7a79fecc62",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false,
-   "title": "SafeLLM: Extraction as a Hallucination-Resistant Alternative to Rewriting in Safety-Critical Settings",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-12T04:00:00+00:00",
-   "summary": "SafeLLM proposes extraction rather than rewriting to reduce hallucinations and improve reliability of language models in safety-critical medical applications.",
-   "category": "general_ai",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12902",
-   "title_hash": "5e99fb778f7f4615dff43b10f0c636e9",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12903",
-   "title_hash": "b517d9f72ca12340e7f01eec155c5414",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12908",
-   "title_hash": "6b8b1285848a81998d6213b6c5805877",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12911",
-   "title_hash": "80dab8f7e5af4a8b044b6e0a54887d94",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.12922",
-   "title_hash": "0fc3abc0ae54ec0599d455eec8deb1e8",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02795-z",
-   "title_hash": "e0822074949442bbd7429bafcb107fa0",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": true,
-   "title": "A new AI assisted approach aligns data standards and accelerates interoperability in biomedical research",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-12T00:00:00+00:00",
-   "summary": "npj Digital Medicine describes an artificial intelligence approach to align data standards and improve interoperability in biomedical research.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04465-9",
-   "title_hash": "37a0547ea6922a4e59e1ec11ab484db1",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04431-5",
-   "title_hash": "06901856e23e652b3db5aa5e1eca0d27",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": true,
-   "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
-   "source": "Nature Medicine",
-   "published": "2026-06-12T00:00:00+00:00",
-   "summary": "Nature Medicine reports that general-purpose large language models match or exceed specialized clinical AI tools on medical benchmarks in independent evaluation.",
-   "category": "clinical_practice",
-   "score": 5.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat",
-   "title_hash": "a4bd3a6afd2acc574d0ea51451630c59",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42276882?fc=20260609215449&ff=20260612061318&v=2.20.0",
-   "title_hash": "0ac5714f1db050b6dcb478921c5b0dc4",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": true,
-   "title": "Revolutionizing radiology education: exploring and implementing spaced repetition in radiology teaching and curricula",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-11T10:00:00+00:00",
-   "summary": "Study evaluates spaced repetition techniques, including Anki platforms, as scalable adjuncts to traditional radiology education and curriculum design.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42276635?fc=20260609215449&ff=20260612061318&v=2.20.0",
-   "title_hash": "344e6df418abe8fc10dd5ec38ffcb5cd",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": true,
-   "title": "Preparing the nursing workforce for the health AI era: Insights from the Macy Foundation Conference on AI in Medical Education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-11T10:00:00+00:00",
-   "summary": "Macy Foundation conference proceedings address curriculum and workforce preparation for integrating artificial intelligence into nursing education and clinical practice.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42276426?fc=20260609215449&ff=20260612061318&v=2.20.0",
-   "title_hash": "22d58807ece4422d5b18192ef952a577",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=9K9TR1GVec0",
-   "title_hash": "7c4769f7f46238dc2dbd0861fe30cd91",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": true,
-   "title": "IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks",
-   "source": "Stanford AIMI",
-   "published": "2026-04-25T01:01:30+00:00",
-   "summary": "Susan Shelmerdine argues that successful healthcare artificial intelligence requires organizational and system changes beyond isolated task automation.",
-   "category": "videos",
-   "score": 4.0,
-   "thumbnail": "https://i2.ytimg.com/vi/9K9TR1GVec0/hqdefault.jpg",
-   "display_title": "Seminar on healthcare AI requiring system-level changes"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=NIm4sVii2MA",
-   "title_hash": "31600d3956aed51b8d2fbc1b1b068b04",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=-Jm-Bf3g9r8",
-   "title_hash": "081eb8575915166c2e4a60f9a9be90df",
-   "first_seen": "2026-06-12T10:13:18.251485+00:00",
-   "kept": true,
-   "title": "How Preply combines AI and human tutors to personalize learning",
-   "source": "OpenAI",
-   "published": "2026-06-12T09:53:26+00:00",
-   "summary": "Preply integrates language models with human tutors to personalize learning experiences on its platform.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/-Jm-Bf3g9r8/hqdefault.jpg"
-  },
-  {
    "url": "https://arstechnica.com/ai/2026/06/when-it-comes-to-total-water-use-ai-data-centers-are-a-drop-in-the-bucket",
    "title_hash": "b04a2b389ba69ebc9ee2175b5abe02a0",
    "first_seen": "2026-06-12T17:16:28.331101+00:00",
@@ -28831,6 +28558,170 @@
    "first_seen": "2026-08-11T09:15:11.090479+00:00",
    "kept": false,
    "reason": "speculation and rumor video with no confirmed subjects; 'mysterious new Claude model' is unconfirmed"
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+   "title_hash": "773c52b4f27341cc919f2084249df9bd",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "insufficient summary to evaluate; vendor technical note rather than significant capability change"
+  },
+  {
+   "url": "https://www.aipolicyperspectives.com/p/seb-kriers-8-summer-reads",
+   "title_hash": "a4cf40baf275cdd192d3267dab346faf",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "listicle; mechanical link list"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun",
+   "title_hash": "277cea24dbfcda793e120daacae020c6",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "The AI takeover of mathematics has begun",
+   "source": "The Verge AI",
+   "published": "2026-08-11T11:00:00+00:00",
+   "summary": "Interview with Fields Medal mathematician James Maynard on how artificial intelligence is reshaping mathematical research and academic adaptation to automated discovery tools.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&ff=20260811094422&v=2.20.1",
+   "title_hash": "38615a137ba0ad2e3da8145a459b8c5d",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "Diagnostic performance and short-interval reproducibility of multimodal large language models in differentiating cholesteatoma from chronic otitis media using key-image temporal bone high-resolution computed tomography",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-11T10:00:00+00:00",
+   "summary": "Evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone computed tomography for cholesteatoma diagnosis found fair-to-moderate reproducibility and insufficient agreement to support use as independent diagnostic readers.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&ff=20260811094422&v=2.20.1",
+   "title_hash": "9dba0160e54784eeb96626fdb063a983",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "Current Status of Generative Artificial Intelligence Utilization in Medical Education: A Cross-Sectional Survey of Medical Students and Faculty",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-11T10:00:00+00:00",
+   "summary": "Survey of medical students and faculty finds generative AI is widely accepted and used in medical education but requires ethical guidelines, digital literacy training, and careful integration strategies.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42576362?fc=20260609215449&ff=20260811094422&v=2.20.1",
+   "title_hash": "28dae3c4975b88b43f4c36718212fbe2",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "The dead still teach the living: Body donor dissection in the digital age of anatomy education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-11T10:00:00+00:00",
+   "summary": "Review examines the role of cadaveric dissection in medical anatomy curricula as digital platforms, simulation, and AI-supported learning reshape anatomy education alongside reduced curricular time.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/how-not-to-be-fooled-lecture-2",
+   "title_hash": "4583218ab4426e46601244cc182c2e18",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03105-3",
+   "title_hash": "7e86e99a01db669be1012b180e4a3102",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "Eyecare-Cloud enabling 21 years of real world pediatric ophthalmology practice and paperless healthcare",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-11T00:00:00+00:00",
+   "summary": "Cloud-based electronic health record system supporting 21 years of pediatric ophthalmology practice demonstrates feasibility of paperless documentation and real-world healthcare integration.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04529-w",
+   "title_hash": "d0f7b6605b19b022273f158ef7236587",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 2; keeping candidate 2 summary as more complete"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04611-3",
+   "title_hash": "6bf3c594f9f70d5694795a51865162d8",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04556-7",
+   "title_hash": "2e358c04d0415842591640bd6d39cd6a",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "Reinventing health communication for the digital era",
+   "source": "Nature Medicine",
+   "published": "2026-08-11T00:00:00+00:00",
+   "summary": "Commentary on improving access to accurate, timely, evidence-based health information in the digital era as essential to global health outcomes.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04556-7/MediaObjects/41591_2026_4556_Figa_HTML.png",
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04537-w",
+   "title_hash": "d8d64ddbd37ca0d50aa9241e8b97ffdf",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkydi5/i_trained_a_1bparameter_llm_from_scratch_on_20b",
+   "title_hash": "9b297e01970cf8d4de1255953194fa14",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "forum post on narrow technical exercise; no significance for medical educators or students"
+  },
+  {
+   "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+   "title_hash": "b864cb065b75dc74f589965741b19dc5",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "LFM2.5 2.6B model competitive with 4x larger models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-04T18:47:25+00:00",
+   "summary": "LFM2.5 2.6 billion parameter model achieves performance comparable to models four times its size, demonstrating efficiency gains in model scaling.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/LiquidAI/LFM2.5-2.6B.png",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0i1ntlGvIqA",
+   "title_hash": "146aac4e72f75355ea45cbe101771179",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": false,
+   "reason": "general tool testing of a consumer product without educational relevance to medical educators or clinical AI"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Qx0fCqpkBus",
+   "title_hash": "b9d5b2a4f04a6045b5e8ed3ce33cc3a7",
+   "first_seen": "2026-08-11T13:44:21.945384+00:00",
+   "kept": true,
+   "title": "What Is Context Engineering? Why It Matters for AI Agents",
+   "source": "IBM Technology",
+   "published": "2026-08-11T11:00:03+00:00",
+   "summary": "IBM explainer on context engineering for AI agents and why data quality and context selection matter for system performance.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i2.ytimg.com/vi/Qx0fCqpkBus/hqdefault.jpg",
+   "display_title": "Context engineering for AI agents explained"
   }
  ],
  "digests": [

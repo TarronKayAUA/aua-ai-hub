@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=Qx0fCqpkBus" target="_blank" rel="noopener" title="What Is Context Engineering? Why It Matters for AI Agents">
+  <img src="https://i2.ytimg.com/vi/Qx0fCqpkBus/hqdefault.jpg" alt="Video: Context engineering for AI agents explained" loading="lazy">
+  <span class="video-card-title">Context engineering for AI agents explained</span>
+  <span class="video-card-meta">IBM Technology, August 11, 2026</span>
+  <span class="video-card-desc">IBM explainer on context engineering for AI agents and why data quality and context selection matter for system performance.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=dtb1ihWSkP4" target="_blank" rel="noopener" title="Meta Open Source Is BACK, Muse Glimmer First Test!">
   <img src="https://i1.ytimg.com/vi/dtb1ihWSkP4/hqdefault.jpg" alt="Video: Testing Meta open-source models and Muse Glimmer" loading="lazy">
   <span class="video-card-title">Testing Meta open-source models and Muse Glimmer</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">OpenAI gpt-transcribe and gpt-live-transcribe models</span>
   <span class="video-card-meta">OpenAI, July 28, 2026</span>
   <span class="video-card-desc">OpenAI releases two transcription models for batch and live audio processing with custom vocabulary support, relevant for clinical documentation workflows.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=0ujh7hfutq0" target="_blank" rel="noopener" title="Llama.cpp vs vLLM: Which Local LLM Engine Actually Scales?">
-  <img src="https://i1.ytimg.com/vi/0ujh7hfutq0/hqdefault.jpg" alt="Video: Llama.cpp versus vLLM: local LLM inference engine performance comparison" loading="lazy">
-  <span class="video-card-title">Llama.cpp versus vLLM: local LLM inference engine performance comparison</span>
-  <span class="video-card-meta">IBM Technology, July 28, 2026</span>
-  <span class="video-card-desc">Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.</span>
 </a>
 </div>
 
