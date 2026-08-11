@@ -28722,6 +28722,157 @@
    "score": 2.0,
    "thumbnail": "https://i2.ytimg.com/vi/Qx0fCqpkBus/hqdefault.jpg",
    "display_title": "Context engineering for AI agents explained"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86461",
+   "title_hash": "3a1fa234fd90167b53abbc31d620a678",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; primarily concerns clinical data interoperability standards, not artificial intelligence in medicine or education"
+  },
+  {
+   "url": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
+   "title_hash": "3a90b51ea02cadd627e5d117bf579a39",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "vendor marketing; product announcement from Google's own channel"
+  },
+  {
+   "url": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
+   "title_hash": "da0ddce949d5d4113519a8316ace20ea",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; consumer device feature with no direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+   "title_hash": "8ad85144a1c93cb7344e891fe3d4fa4f",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "link-only Hacker News post without substantive summary; insufficient content to evaluate relevance"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/977909/zoom-vulnerability-ai-attack",
+   "title_hash": "57d261d65b8feae60f93dbfb214f3fe3",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general cybersecurity incident not related to medicine or medical education"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vlj87v/introducing_unsloth_desktop_app",
+   "title_hash": "8b048a580bef8cf0027b5bce8cc6ee41",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": true,
+   "title": "Introducing Unsloth Desktop app",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-11T14:36:02+00:00",
+   "summary": "Unsloth released a desktop application for running and training open-source models locally across Mac, Windows, and Linux, supporting MLX, diffusion, audio models, and GGUF formats.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/Z3J5Zm50ZWRicmloMTYBeDWCK4xeu5RSagED4X3V45DmVqtj8jdzgTMEyWCB.png?width=640&crop=smart&auto=webp&s=358f4006aab83cdaa7ec385a75d9ce47b4647baa",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/977733/amazon-order-emails-google-gmail-ai-agents-data",
+   "title_hash": "f81c85bd88bcea33bb1e8c18e7fe6d18",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns retail email practices, not medicine or medical education"
+  },
+  {
+   "url": "https://stolen-thoughts.com/",
+   "title_hash": "1057d462d0a71e58c9dcfc8e6ffb0030",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "link-only Hacker News post without substantive summary; insufficient content to evaluate relevance"
+  },
+  {
+   "url": "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations",
+   "title_hash": "140dce308c01a6a9ee51e63b573c5331",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; music streaming policy announcement with no relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
+   "title_hash": "0594948e6732e5c4e05657d81343c399",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": true,
+   "title": "Claude will apply invisible watermarks to AI text and images",
+   "source": "The Verge AI",
+   "published": "2026-08-11T12:22:20+00:00",
+   "summary": "Anthropic announced plans to embed machine-readable watermarks in Claude-generated text and digitally signed metadata in files to comply with European AI transparency regulations.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STKB364_CLAUDE_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&ff=20260811131414&v=2.20.1",
+   "title_hash": "e2c9a07122c2ab768032f7924dc4df0e",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": true,
+   "title": "Comparative benchmarking of three artificial intelligence chatbots (ChatGPT-5.1, Qwen- 3 Max, and Perplexity AI) on faculty validated undergraduate respiratory physiology multiple-choice examinations",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-11T10:00:00+00:00",
+   "summary": "Comparison of ChatGPT-5.1, Qwen-3 Max, and Perplexity AI on respiratory physiology multiple-choice exams showed substantial performance variability, suggesting institutions should evaluate models locally before adoption.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42578006?fc=20260609215449&ff=20260811131414&v=2.20.1",
+   "title_hash": "531706810cda75e4e2bf6dfbf5e7e91e",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns chemical engineering and reactor design, not medicine or medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&ff=20260811131414&v=2.20.1",
+   "title_hash": "96d483d7740aa1631e27d70592b3c5fc",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": true,
+   "title": "Dependence on Generative Artificial Intelligence Among Medical Students and Its Association With Critical Thinking: A Cross-Sectional Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-11T10:00:00+00:00",
+   "summary": "Study of medical students found that greater dependence on generative AI is independently associated with diminished critical thinking, particularly in final-year and male students.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42577789?fc=20260609215449&ff=20260811131414&v=2.20.1",
+   "title_hash": "b44133bfca5d18812220eeebf9b22468",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns computational chemistry and force fields, not medicine or medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42577716?fc=20260609215449&ff=20260811131414&v=2.20.1",
+   "title_hash": "549fa774d490e4ccd614f0a68feb9903",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": true,
+   "title": "Are AI tutors ready for the TCM classroom? A multimodal evaluation of large language models across cognitive levels in Chinese medicine education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-11T10:00:00+00:00",
+   "summary": "Evaluation of large language models for Traditional Chinese Medicine education found they work for foundational knowledge but pose risks in complex clinical reasoning and multimodal teaching.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42577678?fc=20260609215449&ff=20260811131414&v=2.20.1",
+   "title_hash": "c7db7e4e33fb0507005475006687c8c4",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "incomplete summary; key content is cut off and cannot assess the full argument or findings"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=JQ97GiDwPxc",
+   "title_hash": "c362976c65a21470e66930a42af39ccd",
+   "first_seen": "2026-08-11T17:14:14.390149+00:00",
+   "kept": false,
+   "reason": "speculation and hype without substantive content; generic boilerplate summary"
   }
  ],
  "digests": [

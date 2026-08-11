@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -40,6 +40,27 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42576362?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">The dead still teach the living: Body donor dissection in the digital age of anatomy education</a>
     <p class="news-card-summary">Review examines the role of cadaveric dissection in medical anatomy curricula as digital platforms, simulation, and AI-supported learning reshape anatomy education alongside reduced curricular time.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Comparative benchmarking of three artificial intelligence chatbots (ChatGPT-5.1, Qwen- 3 Max, and Perplexity AI) on faculty validated undergraduate respiratory physiology multiple-choice examinations</a>
+    <p class="news-card-summary">Comparison of ChatGPT-5.1, Qwen-3 Max, and Perplexity AI on respiratory physiology multiple-choice exams showed substantial performance variability, suggesting institutions should evaluate models locally before adoption.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Dependence on Generative Artificial Intelligence Among Medical Students and Its Association With Critical Thinking: A Cross-Sectional Study</a>
+    <p class="news-card-summary">Study of medical students found that greater dependence on generative AI is independently associated with diminished critical thinking, particularly in final-year and male students.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577716?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Are AI tutors ready for the TCM classroom? A multimodal evaluation of large language models across cognitive levels in Chinese medicine education</a>
+    <p class="news-card-summary">Evaluation of large language models for Traditional Chinese Medicine education found they work for foundational knowledge but pose risks in complex clinical reasoning and multimodal teaching.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -103,28 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42570526?fc=20260609215449&amp;ff=20260809011935&amp;v=2.20.1">The impact of artificial intelligence on critical thinking and clinical reasoning in health professions education: A systematic review and meta-analysis</a>
     <p class="news-card-summary">A systematic review finds that AI-based educational interventions may improve critical thinking and clinical reasoning in health professions students, but evidence quality is low and heterogeneity prevents identification of optimal approaches.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03113-3">Transfer learning for text-based distractor selection rate prediction in medical multiple-choice questions: fine-tuning embedding models as a plausibility proxy</a>
-    <p class="news-card-summary">Transfer learning with embedding models predicts distractor selection rates in medical multiple-choice questions, offering a plausibility assessment tool.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/allenai/tutormoments">TutorMoments: Do AI tutors know when to help and when to hold back?</a>
-    <p class="news-card-summary">Study examines whether AI tutoring systems appropriately calibrate help provision, balancing scaffolding with student independence.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/j9L73K19mkz-n8Rr8ZI_B.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1">Predicting Step 2 CK Performance Using Automated Feature Selection and Nested Cross-Validation</a>
-    <p class="news-card-summary">Researchers developed a predictive model using automated feature selection to forecast medical student USMLE Step 2 CK performance and deployed it as an interactive dashboard for educators.</p>
   </div>
 </div>
 </div>
