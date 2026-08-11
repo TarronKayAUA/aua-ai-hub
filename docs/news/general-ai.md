@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="new-models">
@@ -44,6 +44,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Interview with Fields Medal mathematician James Maynard on how artificial intelligence is reshaping mathematical research and academic adaptation to automated discovery tools.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://sebastianraschka.com/blog/2026/muse-glimmer-30b-architecture-notes.html">Muse Glimmer 30B Architecture Notes</a>
+    <p class="news-card-summary">Meta released Muse Glimmer 30B with gated local and global group query attention, achieving strong benchmark results with reduced token throughput compared to competing models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/muse-glimmer-30b-architecture-notes/muse-glimmer-30b.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
@@ -125,13 +133,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.06532">Confidence Estimation for Financial Vision-Language Models in Chart and Document Understanding</a>
     <p class="news-card-summary">Financial vision-language models often present confident answers without actually reading charts and documents; researchers propose methods to identify which answers can be trusted.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.06663">The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</a>
-    <p class="news-card-summary">Survey of 1,547 papers identifies the horizon gap: frontier language models fail at multi-hour tasks despite solving single-pass reasoning problems, proposing frameworks for planning, memory, and long-horizon execution.</p>
   </div>
 </div>
 </div>

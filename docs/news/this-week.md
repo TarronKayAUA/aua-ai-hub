@@ -315,10 +315,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91844">Influenza-Like Illness Forecasting Using Multisource Data: Comparative Deep Learning Study</a>
+        <p class="news-card-summary">Comparative deep learning study developed and evaluated models combining internet searches and mobility data with traditional surveillance to forecast influenza-like illness incidence.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 11, 2026</span></div>
@@ -348,6 +355,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Commentary on improving access to accurate, timely, evidence-based health information in the digital era as essential to global health outcomes.</p>
       </div>
       <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04556-7/MediaObjects/41591_2026_4556_Figa_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03103-5">Automated epilepsy and seizure type phenotyping with transformer-based language models</a>
+        <p class="news-card-summary">Peer-reviewed study demonstrated automated phenotyping of epilepsy and seizure types using transformer-based language models applied to clinical text.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02946-2">Fully-automated sleep staging for Parkinson’s disease and isolated REM sleep behavior disorder</a>
+        <p class="news-card-summary">Fully-automated sleep staging using machine learning for patients with Parkinson&#x27;s disease and isolated REM sleep behavior disorder.</p>
+      </div>
     </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -628,20 +649,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02975-x">Clinical videos enable digital assessment of functional recovery and prediction of long-term outcomes after anterior cruciate ligament reconstruction</a>
-        <p class="news-card-summary">Clinical video analysis with machine learning predicts functional recovery and long-term outcomes after anterior cruciate ligament reconstruction.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03084-5">Toward expert-level medical text validation with language models</a>
-        <p class="news-card-summary">Language models can validate medical text at expert level, supporting clinical documentation tasks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
         <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-doctors-licensing-state-medical-boards">Opinion: We lead the Federation of State Medical Boards. Here’s what we think about licensing AI to practice medicine</a>
         <p class="news-card-summary">Leaders of the Federation of State Medical Boards discuss regulatory considerations for licensing artificial intelligence systems to practice medicine.</p>
@@ -666,9 +673,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -693,6 +700,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Interview with Fields Medal mathematician James Maynard on how artificial intelligence is reshaping mathematical research and academic adaptation to automated discovery tools.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://sebastianraschka.com/blog/2026/muse-glimmer-30b-architecture-notes.html">Muse Glimmer 30B Architecture Notes</a>
+        <p class="news-card-summary">Meta released Muse Glimmer 30B with gated local and global group query attention, achieving strong benchmark results with reduced token throughput compared to competing models.</p>
+      </div>
+      <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/muse-glimmer-30b-architecture-notes/muse-glimmer-30b.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -1036,21 +1051,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Mistral released Shieldstral, a 3 billion parameter open-weights model for multimodal content moderation.</p>
       </div>
       <img class="news-card-thumb" src="https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/policy/975071/texas-data-center-audit">Texas says data centers must pass an audit before connecting to the grid</a>
-        <p class="news-card-summary">Texas requires audit verification for new data center proposals before grid connection, affecting artificial intelligence infrastructure deployment.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 1, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vcqpn4/eu_ai_act_takes_effect_tomorrow_august_2_2026">EU AI Act takes effect tomorrow, August 2, 2026. 🤡</a>
-        <p class="news-card-summary">European Union AI Act takes effect August 2, 2026, requiring disclosure labeling for AI-generated images, audio, video, and text.</p>
-      </div>
     </div>
     </div>
 
