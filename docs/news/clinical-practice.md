@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/08/12/the-secret-startup-project-ive-been-working-on-ai-prognosis">STAT+: The secret AI-startup project I’ve been working on the last six months</a>
+    <p class="news-card-summary">STAT News reports on challenges in developing and deploying AI tools to clinical settings, documenting real-world implementation difficulties.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AIPrognosis_Wordpress_AIcoins-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
@@ -61,6 +69,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03120-4">Automated limb motor assessment in Parkinson’s disease via a time-frequency state-space model</a>
     <p class="news-card-summary">A time-frequency state-space model automates assessment of limb motor function in Parkinson&#x27;s disease patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03130-2">End-to-end deep learning, based electrocardiographic analysis for the detection of hypertrophic cardiomyopathy</a>
+    <p class="news-card-summary">Published research describes an end-to-end deep learning approach for detecting hypertrophic cardiomyopathy from electrocardiographic signals.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04568-3">Frugal AI is the missing piece in cervical cancer screening</a>
+    <p class="news-card-summary">Nature Medicine analysis argues that cervical cancer screening in low-resource settings requires efficient, explainable AI models with local calibration rather than complex approaches.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -105,27 +127,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03103-5">Automated epilepsy and seizure type phenotyping with transformer-based language models</a>
     <p class="news-card-summary">Peer-reviewed study demonstrated automated phenotyping of epilepsy and seizure types using transformer-based language models applied to clinical text.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02946-2">Fully-automated sleep staging for Parkinson’s disease and isolated REM sleep behavior disorder</a>
-    <p class="news-card-summary">Fully-automated sleep staging using machine learning for patients with Parkinson&#x27;s disease and isolated REM sleep behavior disorder.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91048">Unimodal and Multimodal Deep Learning for Pressure Injury Identification: Scoping Review</a>
-    <p class="news-card-summary">Scoping review maps deep learning applications for pressure injury identification and staging across unimodal and multimodal approaches.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e103162">AI Scribe Safety: Measuring What Happens After Signing</a>
-    <p class="news-card-summary">Commentary argues that AI scribe safety evaluation must extend beyond initial draft quality to track how downstream tools process and re-use signed clinical notes.</p>
   </div>
 </div>
 </div>
