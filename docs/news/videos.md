@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=qBoQZ3Sf3h4" target="_blank" rel="noopener" title="Muse Glimmer 30B: BEST LOCAL AI Model? Meta AI Beats Qwen 3.6 27B? (Fully Tested)">
+  <img src="https://i2.ytimg.com/vi/qBoQZ3Sf3h4/hqdefault.jpg" alt="Video: Muse Glimmer 30B benchmarked against local language models" loading="lazy">
+  <span class="video-card-title">Muse Glimmer 30B benchmarked against local language models</span>
+  <span class="video-card-meta">WorldofAI, August 12, 2026</span>
+  <span class="video-card-desc">Benchmarking comparison of Muse Glimmer 30B against Qwen and other local language models with test methodology transparency.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Qx0fCqpkBus" target="_blank" rel="noopener" title="What Is Context Engineering? Why It Matters for AI Agents">
   <img src="https://i2.ytimg.com/vi/Qx0fCqpkBus/hqdefault.jpg" alt="Video: Context engineering for AI agents explained" loading="lazy">
   <span class="video-card-title">Context engineering for AI agents explained</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">OpenAI frontier models access for academic researchers</span>
   <span class="video-card-meta">OpenAI, July 29, 2026</span>
   <span class="video-card-desc">OpenAI announces a program providing 100,000 academic researchers free access to its frontier AI models including GPT-4o and o1.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=WeP9VUf1OoE" target="_blank" rel="noopener" title="Introducing gpt-transcribe and gpt-live-transcribe">
-  <img src="https://i4.ytimg.com/vi/WeP9VUf1OoE/hqdefault.jpg" alt="Video: OpenAI gpt-transcribe and gpt-live-transcribe models" loading="lazy">
-  <span class="video-card-title">OpenAI gpt-transcribe and gpt-live-transcribe models</span>
-  <span class="video-card-meta">OpenAI, July 28, 2026</span>
-  <span class="video-card-desc">OpenAI releases two transcription models for batch and live audio processing with custom vocabulary support, relevant for clinical documentation workflows.</span>
 </a>
 </div>
 

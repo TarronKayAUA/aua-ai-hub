@@ -44,6 +44,27 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03138-8">Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction</a>
+    <p class="news-card-summary">A phenomapping-derived tool predicts individual patient response to sacubitril-valsartan in heart failure with preserved ejection fraction.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03132-0">Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit</a>
+    <p class="news-card-summary">A peer-reviewed comparison of artificial intelligence versus clinician performance in predicting patient outcomes in intensive care.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03120-4">Automated limb motor assessment in Parkinson’s disease via a time-frequency state-space model</a>
+    <p class="news-card-summary">A time-frequency state-space model automates assessment of limb motor function in Parkinson&#x27;s disease patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91844">Influenza-Like Illness Forecasting Using Multisource Data: Comparative Deep Learning Study</a>
     <p class="news-card-summary">Comparative deep learning study developed and evaluated models combining internet searches and mobility data with traditional surveillance to forecast influenza-like illness incidence.</p>
@@ -105,27 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e103162">AI Scribe Safety: Measuring What Happens After Signing</a>
     <p class="news-card-summary">Commentary argues that AI scribe safety evaluation must extend beyond initial draft quality to track how downstream tools process and re-use signed clinical notes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82360">From Data Poverty to Data Sovereignty: Operationalizing Gold-Standard Biomedical Datasets in Low- and Middle-Income Countries</a>
-    <p class="news-card-summary">Analysis examines underrepresentation of low- and middle-income countries in biomedical datasets used to train FDA-approved AI tools and its clinical performance impact.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e98345">Toward Drift-Aware Multimodal Early Warning for Acute Exacerbations of Chronic Obstructive Pulmonary Disease</a>
-    <p class="news-card-summary">Study addresses concept drift in multimodal early-warning systems for acute exacerbations of chronic obstructive pulmonary disease using machine learning to detect patient deterioration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03107-1">Sequential question answering AI for hierarchical gastric pathology diagnosis</a>
-    <p class="news-card-summary">Study demonstrates sequential question-answering AI approach for hierarchical classification in gastric pathology diagnosis.</p>
   </div>
 </div>
 </div>

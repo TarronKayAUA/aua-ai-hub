@@ -29016,6 +29016,87 @@
    "first_seen": "2026-08-12T05:47:33.067245+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/this-fortnight-in-medicine-xxxii",
+   "title_hash": "4059ce1692119debd5a55ac137006fc6",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/12/inside-commure-athelas-mad-dash-automate-health-care",
+   "title_hash": "a0f2c29ac281693b5d7a42742166d941",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vm7iqx/its_the_final_countdown_baby_qwen_is_out_in_just",
+   "title_hash": "e932e63ad5020a46834ad21e6ab12e7e",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03138-8",
+   "title_hash": "8c051295dade99c0019b57322a6c90d2",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": true,
+   "title": "Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-12T00:00:00+00:00",
+   "summary": "A phenomapping-derived tool predicts individual patient response to sacubitril-valsartan in heart failure with preserved ejection fraction.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03132-0",
+   "title_hash": "bc9a2895f34221ebf6d013664f932082",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": true,
+   "title": "Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-12T00:00:00+00:00",
+   "summary": "A peer-reviewed comparison of artificial intelligence versus clinician performance in predicting patient outcomes in intensive care.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03120-4",
+   "title_hash": "90d4db6ab35499db9fe4963105c55d6f",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": true,
+   "title": "Automated limb motor assessment in Parkinson’s disease via a time-frequency state-space model",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-12T00:00:00+00:00",
+   "summary": "A time-frequency state-space model automates assessment of limb motor function in Parkinson's disease patients.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qBoQZ3Sf3h4",
+   "title_hash": "0f819a239336d9b777f4d74e573749b6",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": true,
+   "title": "Muse Glimmer 30B: BEST LOCAL AI Model? Meta AI Beats Qwen 3.6 27B? (Fully Tested)",
+   "source": "WorldofAI",
+   "published": "2026-08-12T07:17:13+00:00",
+   "summary": "Benchmarking comparison of Muse Glimmer 30B against Qwen and other local language models with test methodology transparency.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/qBoQZ3Sf3h4/hqdefault.jpg",
+   "display_title": "Muse Glimmer 30B benchmarked against local language models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=G3YHSvXZP_g",
+   "title_hash": "a24de99ff186af052355d6ea62c085d9",
+   "first_seen": "2026-08-12T09:32:33.979887+00:00",
+   "kept": false,
+   "reason": "tool tutorial and feature overview without substantive news or benchmark content"
   }
  ],
  "digests": [

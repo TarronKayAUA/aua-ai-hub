@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -278,27 +278,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552099?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">AI-Empowered Nuclear Medicine Education, Part 3: Practical AI Applications for Learners</a>
-        <p class="news-card-summary">Peer-reviewed article examines how AI tools support nuclear medicine learners through study guides, question generation, simulation, and feedback.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42552095?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">AI-Empowered Nuclear Medicine Education, Part 1: Theoretical and Ethical Foundation</a>
-        <p class="news-card-summary">Peer-reviewed article establishes theoretical and ethical foundations for integrating artificial intelligence into nuclear medicine education.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42551696?fc=20260609215449&amp;ff=20260805024321&amp;v=2.20.0.post5+40e1b98">Training in internal medicine in the age of artificial intelligence</a>
-        <p class="news-card-summary">Peer-reviewed review guides internal medicine residency training on reliable AI use, clinical safety, ethics, and prompt engineering.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
         <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch">STAT+: Are AI scribes useful tools in medical education, or a crutch that imperils learning?</a>
         <p class="news-card-summary">Educators debate whether AI scribes help students develop clinical documentation skills or reduce learning by automating note-taking.</p>
@@ -315,9 +294,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -338,6 +317,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03125-z">Natural language processing application in electronic health records studies for psychosis: a systematic review</a>
         <p class="news-card-summary">A systematic review surveys natural language processing applications in electronic health record studies of psychosis, assessing clinical utility and evidence quality.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03138-8">Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction</a>
+        <p class="news-card-summary">A phenomapping-derived tool predicts individual patient response to sacubitril-valsartan in heart failure with preserved ejection fraction.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03132-0">Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit</a>
+        <p class="news-card-summary">A peer-reviewed comparison of artificial intelligence versus clinician performance in predicting patient outcomes in intensive care.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03120-4">Automated limb motor assessment in Parkinson’s disease via a time-frequency state-space model</a>
+        <p class="news-card-summary">A time-frequency state-space model automates assessment of limb motor function in Parkinson&#x27;s disease patients.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -652,9 +652,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -1000,34 +1000,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A method to reduce memory overhead in language model agents by eliminating redundant token operations during inference.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.02616">Evaluating OpenAI&#x27;s Privacy Filter: Cross-Lingual, Cross-Domain PII Detection Across 42 Benchmarks</a>
-        <p class="news-card-summary">Independent evaluation of OpenAI&#x27;s privacy filter across 42 benchmarks spanning 22 languages and medical data shows performance versus competing tools.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.02617">Preferred, Not Safer: Pairwise Preference Is a Poor Proxy for Clinical Safety</a>
-        <p class="news-card-summary">Research using clinician feedback from MOOVE platform shows pairwise preferences do not reliably predict clinical safety in large language model evaluation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.02620">JudgeArena: A Unified Framework for Reproducible LLM-Judge Evaluation</a>
-        <p class="news-card-summary">Framework addresses fragmentation in LLM-as-judge evaluation by standardizing design choices across benchmarks, models, and protocols.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.02966">Every Wrong Answer Counts: Option-Level Psychometrics for LLM Multiple-Choice Benchmarks</a>
-        <p class="news-card-summary">Research shows that analyzing incorrect answer choices in multiple-choice benchmarks reveals systematic information about LLM behavior beyond binary scoring.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 4, 2026</span></div>
@@ -1042,9 +1014,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 9 videos"
+??? abstract "Show the 10 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=qBoQZ3Sf3h4" target="_blank" rel="noopener" title="Muse Glimmer 30B: BEST LOCAL AI Model? Meta AI Beats Qwen 3.6 27B? (Fully Tested)">
+      <img src="https://i2.ytimg.com/vi/qBoQZ3Sf3h4/hqdefault.jpg" alt="Video: Muse Glimmer 30B benchmarked against local language models" loading="lazy">
+      <span class="video-card-title">Muse Glimmer 30B benchmarked against local language models</span>
+      <span class="video-card-meta">WorldofAI, August 12, 2026</span>
+      <span class="video-card-desc">Benchmarking comparison of Muse Glimmer 30B against Qwen and other local language models with test methodology transparency.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=Qx0fCqpkBus" target="_blank" rel="noopener" title="What Is Context Engineering? Why It Matters for AI Agents">
       <img src="https://i2.ytimg.com/vi/Qx0fCqpkBus/hqdefault.jpg" alt="Video: Context engineering for AI agents explained" loading="lazy">
       <span class="video-card-title">Context engineering for AI agents explained</span>
