@@ -28750,6 +28750,39 @@
    "first_seen": "2026-08-11T21:05:38.907541+00:00",
    "kept": false,
    "reason": "daily news show recap with no substantive coverage of a specific development"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text",
+   "title_hash": "fff3fd3c3339d15276e1278e9fdaa06c",
+   "first_seen": "2026-08-12T02:46:22.358089+00:00",
+   "kept": true,
+   "title": "There are no lossless transformations of natural-language text",
+   "source": "Simon Willison's weblog",
+   "published": "2026-08-11T23:48:35+00:00",
+   "summary": "An analysis of lossless text transformation limitations and principles for responsible AI-assisted technical writing emphasizes personal accountability for every sentence.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vlr43b/all_the_more_reason_not_to_use_closed_models",
+   "title_hash": "042feda2e2ba11fa9b34152db1c6f2bb",
+   "first_seen": "2026-08-12T02:46:22.358089+00:00",
+   "kept": false,
+   "reason": "forum discussion of rumors and speculation without substantive news or analysis"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42579624?fc=20260609215449&ff=20260811224622&v=2.20.1",
+   "title_hash": "b5176f2041d5ef9db23c65f98553079f",
+   "first_seen": "2026-08-12T02:46:22.358089+00:00",
+   "kept": true,
+   "title": "Student and teacher views of using GenAI in GP undergraduate medical education: 'to complement not replace'",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-11T10:00:00+00:00",
+   "summary": "A UK study explores undergraduate medical students' and teachers' views on using generative AI in general practice education, finding support for AI as a complement rather than replacement.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
   }
  ],
  "digests": [

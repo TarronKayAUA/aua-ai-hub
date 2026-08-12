@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -62,6 +62,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577716?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Are AI tutors ready for the TCM classroom? A multimodal evaluation of large language models across cognitive levels in Chinese medicine education</a>
         <p class="news-card-summary">Evaluation of large language models for Traditional Chinese Medicine education found they work for foundational knowledge but pose risks in complex clinical reasoning and multimodal teaching.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42579624?fc=20260609215449&amp;ff=20260811224622&amp;v=2.20.1">Student and teacher views of using GenAI in GP undergraduate medical education: &#x27;to complement not replace&#x27;</a>
+        <p class="news-card-summary">A UK study explores undergraduate medical students&#x27; and teachers&#x27; views on using generative AI in general practice education, finding support for AI as a complement rather than replacement.</p>
       </div>
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
@@ -315,9 +322,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -605,48 +612,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Policy-optimized MedGemma model addresses multimodal prostate cancer care through reinforcement learning from medical feedback.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e91061">Mapping the Evolving AI Preferences and Care Needs in Orthopedic Transitional Care From Hospitals to Home: Cross-Sectional Study</a>
-        <p class="news-card-summary">Cross-sectional study mapped patient and family preferences for AI-powered digital systems supporting orthopedic recovery after discharge from hospital.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90848">AI in Disaster Medicine: Scoping Review of Methods, Validation, and System Integration</a>
-        <p class="news-card-summary">Scoping review systematically mapped AI methods for disaster medicine, assessing progress from research toward operationally validated clinical systems.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88581">Correctness, Harmfulness, and Diversity of Large Language Models for Colonoscopy Preparation Assistance: Comparative Evaluation Study</a>
-        <p class="news-card-summary">Comparative study evaluated large language models for correctness, safety, and diversity of guidance on colonoscopy preparation instructions for patients.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83889">Prediction of Blood Transfusion Need and Dose in Patients With Upper Gastrointestinal Bleeding: Retrospective Multicenter Prediction Model Study</a>
-        <p class="news-card-summary">Multicenter study developed a gradient boosting model to predict transfusion need and dose in upper gastrointestinal bleeding with calibrated individualized risk estimates.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e98207">Large Language Model, Based Clinical Decision Support for Antibiotic Selection and Dose Recommendation in Hospitalized Patients With Pneumonia: Multicenter Retrospective Study</a>
-        <p class="news-card-summary">Retrospective multicenter study evaluated large language model performance for antibiotic selection and dose recommendation in hospitalized pneumonia patients.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 4, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e78485">Benchmarking AI-Powered Translation of the EQ-5D-5L Patient-Reported Outcome Measure Using Automated Metrics: Comparative Evaluation Study</a>
-        <p class="news-card-summary">Study benchmarked AI translation of the EQ-5D-5L patient outcome measure against human translation standards to assess feasibility for multinational clinical research.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
@@ -673,10 +638,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 11, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text">There are no lossless transformations of natural-language text</a>
+        <p class="news-card-summary">An analysis of lossless text transformation limitations and principles for responsible AI-assisted technical writing emphasizes personal accountability for every sentence.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 11, 2026</span></div>
@@ -1058,7 +1030,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 10 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=Qx0fCqpkBus" target="_blank" rel="noopener" title="What Is Context Engineering? Why It Matters for AI Agents">
@@ -1115,17 +1087,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">IBM Technology, August 6, 2026</span>
       <span class="video-card-desc">Explanation of AI model collapse: the degradation that occurs when AI systems train predominantly on data generated by other AI systems.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=SJJBPwlPpww" target="_blank" rel="noopener" title="How AI Helps Solve Medical Mysteries at Boston Children’s Hospital | OpenAI Forum">
-      <img src="https://i4.ytimg.com/vi/SJJBPwlPpww/hqdefault.jpg" alt="Video: AI application for rare disease diagnosis at Boston Children&#x27;s Hospital" loading="lazy">
-      <span class="video-card-title">AI application for rare disease diagnosis at Boston Children&#x27;s Hospital</span>
-      <span class="video-card-meta">OpenAI, August 4, 2026</span>
-      <span class="video-card-desc">Boston Children&#x27;s Hospital uses AI to help clinicians diagnose rare genetic diseases when conventional testing leaves patients without answers.</span>
-    </a>
     </div>
 
 ## Podcasts
 
-??? abstract "Show the 6 episodes"
+??? abstract "Show the 5 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
@@ -1145,12 +1111,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Models, Harnesses, and Multi-Agent Systems</span>
       <span class="video-card-meta">Practical AI, August 6, 2026</span>
       <span class="video-card-desc">An explanation of AI models, agents, harnesses, and multi-agent systems for those new to current AI terminology and concepts.</span>
-    </a>
-    <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Washing-Wont-Work-Much-Longer-e3mvkl0" target="_blank" rel="noopener">
-      <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why AI Washing Won’t Work Much Longer" loading="lazy">
-      <span class="video-card-title">Why AI Washing Won’t Work Much Longer</span>
-      <span class="video-card-meta">The AI Daily Brief, August 4, 2026</span>
-      <span class="video-card-desc">Discussion of how open models and organizational sophistication are raising scrutiny of corporate AI claims and shallow implementations.</span>
     </a>
     <a class="video-card" href="https://www.cognitiverevolution.ai/nathan-goes-to-china-part-2-ai-safety-with-chinese-characteristics" target="_blank" rel="noopener">
       <img src="https://megaphone.imgix.net/podcasts/0fb6bad0-8eaf-11f1-956a-e372f562a84d/image/6b3cba9b590d7a751f2dace1adbca55d.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics" loading="lazy">

@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -61,6 +61,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577716?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Are AI tutors ready for the TCM classroom? A multimodal evaluation of large language models across cognitive levels in Chinese medicine education</a>
     <p class="news-card-summary">Evaluation of large language models for Traditional Chinese Medicine education found they work for foundational knowledge but pose risks in complex clinical reasoning and multimodal teaching.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42579624?fc=20260609215449&amp;ff=20260811224622&amp;v=2.20.1">Student and teacher views of using GenAI in GP undergraduate medical education: &#x27;to complement not replace&#x27;</a>
+    <p class="news-card-summary">A UK study explores undergraduate medical students&#x27; and teachers&#x27; views on using generative AI in general practice education, finding support for AI as a complement rather than replacement.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42571443?fc=20260609215449&amp;ff=20260809091701&amp;v=2.20.1">The AI-Augmented Scientific Congress Ecosystem (AISCE): Reimagining Scientific Congresses in the Age of Artificial Intelligence</a>
     <p class="news-card-summary">Editorial proposes an AI-augmented model for scientific congresses to address rising abstract volumes, reviewer fatigue, and fragmented programming while maintaining human oversight.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42570526?fc=20260609215449&amp;ff=20260809011935&amp;v=2.20.1">The impact of artificial intelligence on critical thinking and clinical reasoning in health professions education: A systematic review and meta-analysis</a>
-    <p class="news-card-summary">A systematic review finds that AI-based educational interventions may improve critical thinking and clinical reasoning in health professions students, but evidence quality is low and heterogeneity prevents identification of optimal approaches.</p>
   </div>
 </div>
 </div>
