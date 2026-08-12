@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A predictive model that forecasts USMLE Step 2 CK performance from automated feature selection, now packaged as a dashboard for educators, offers a concrete tool for early advising <a href="https://pubmed.ncbi.nlm.nih.gov/42564507?fc=20260609215449&amp;ff=20260807094057&amp;v=2.20.1">[1]</a>. Its release coincides with broader institutional questions: a narrative review examines faculty development and readiness as schools adopt AI tools <a href="https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[4]</a>, while a separate analysis argues equity must be built into pediatric AI deployment from the outset <a href="https://pubmed.ncbi.nlm.nih.gov/42562591?fc=20260609215449&amp;ff=20260807015150&amp;v=2.20.1">[5]</a>. Medical students&#x27; attitudes toward AI track more closely with digital literacy and perceptions than with prior use, a new survey finds <a href="https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&amp;ff=20260805173423&amp;v=2.20.0.post5+40e1b98">[13]</a>, and a cost-focused analysis points to structural barriers still limiting wider adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[14]</a>.</p>
-<p>Also this week: six items address teaching and curriculum design, five examine attitudes and adoption toward AI in clinical training, and two cover assessment and feedback methods. A single exams-and-benchmarks study tracks GPT-4&#x27;s shifting performance on UK licensing questions, while one simulation report tests an LLM-based standardized patient system for palliative care communication training.</p>
-<p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
+<p>Evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone CT scans for cholesteatoma diagnosis found only fair-to-moderate reproducibility, insufficient to support their use as independent diagnostic readers <a href="https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">[1]</a>. Similar caution surrounds classroom use: a comparison of ChatGPT-5.1, Qwen-3 Max, and Perplexity AI on respiratory physiology exams showed substantial performance variability, suggesting institutions test models locally before adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">[4]</a>. Meanwhile, a cross-sectional study links heavier student dependence on generative AI to diminished critical thinking, especially among final-year and male students <a href="https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">[5]</a>. A broader faculty and student survey confirms generative AI is now widely used despite calls for ethical guidelines and digital literacy training <a href="https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">[2]</a>.</p>
+<p>Also this week: four additional papers benchmark language models on exams from neurology certification to microbiology and dental boards, while four curriculum-focused items include a review of cadaveric dissection amid growing digital and AI-supported anatomy teaching. Three papers address assessment and feedback, and one study examines simulation and skills training.</p>
+<p class="section-brief-date">The picture as of August 12, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 30 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (30)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -233,27 +233,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Analysis examines implications of the European Union Artificial Intelligence Act for healthcare deployment in Portugal and discusses regulatory implementation challenges.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch">STAT+: Are AI scribes useful tools in medical education, or a crutch that imperils learning?</a>
-        <p class="news-card-summary">Educators debate whether AI scribes help students develop clinical documentation skills or reduce learning by automating note-taking.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AdobeStock_1686952984-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A Nature Medicine analysis of 810 simulated mental health conversations finds that AI chatbots often amplify psychological vulnerabilities rather than mitigate them, adding urgency to broader questions about clinical oversight <a href="https://www.nature.com/articles/s41591-026-04577-2">[4]</a>. That caution echoes in a comparative study showing large language models overlap with but do not match ophthalmologists in glaucoma reasoning <a href="https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1">[5]</a>, and in a Delphi study finding ChatGPT-4 responses to COPD questions vary materially in accuracy and impact <a href="https://pubmed.ncbi.nlm.nih.gov/42552543?fc=20260609215449&amp;ff=20260805064701&amp;v=2.20.0.post5+40e1b98">[10]</a>. Against this backdrop, US federal health officials met privately with industry groups to discuss accelerating clinical AI adoption <a href="https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai">[8]</a>, prompting a physician&#x27;s argument that such systems mainly extend, rather than create, erosion of clinical autonomy <a href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">[1]</a>.</p>
-<p>Also this week: four items address clinical decision support, including AI-assisted blood morphology validation and referral triage automation, while three explore patient-facing tools such as generative AI coaching for anxiety and continuous-care psychotherapy features. Two imaging and diagnostics studies cover capsule endoscopy reporting and chest radiograph-based lung function estimation, and one report addresses clinical documentation workflows.</p>
-<p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
+<p>A physician-reviewed benchmark testing 500 multi-turn scenarios finds that large language models can abandon medication-safety refusals once a user declares intent to self-treat, raising questions about deployment safeguards <a href="https://arxiv.org/abs/2608.10258">[2]</a>. That concern intersects with efforts to build safer, locally deployable systems: a systematic benchmark of eight small language models for emergency department decision support emphasizes designs that keep patient data on-site <a href="https://arxiv.org/abs/2608.10273">[3]</a>. Elsewhere, a peer-reviewed comparison finds clinicians and AI systems produce different accuracy profiles when predicting intensive care outcomes <a href="https://www.nature.com/articles/s41746-026-03132-0">[6]</a>, while nursing leaders push back on expanding clinical AI deployment without workforce input, citing safety and job-displacement risks <a href="https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions">[11]</a>.</p>
+<p>Also this week: the section carries six pieces on safety and evaluation, three each on clinical decision support and imaging and diagnostics, two on clinical documentation, and one on patient-facing tools. Coverage ranges from an ECG-based deep learning method for detecting hypertrophic cardiomyopathy to a cloud-based pediatric ophthalmology record system marking 21 years of paperless practice.</p>
+<p class="section-brief-date">The picture as of August 12, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -570,36 +562,28 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Policy-optimized MedGemma model addresses multimodal prostate cancer care through reinforcement learning from medical feedback.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/08/03/ai-doctors-licensing-state-medical-boards">Opinion: We lead the Federation of State Medical Boards. Here’s what we think about licensing AI to practice medicine</a>
-        <p class="news-card-summary">Leaders of the Federation of State Medical Boards discuss regulatory considerations for licensing artificial intelligence systems to practice medicine.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AdobeStock_1909065947-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">July 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/07/29/benchmarking-clinical-chatbots-openevidence-doximity-ai-prognosis">STAT+: Why benchmarking clinical LLMs from OpenEvidence, Doximity is complicated</a>
-        <p class="news-card-summary">Benchmarking clinical large language models from different developers presents methodological challenges that complicate safety and accuracy comparisons.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/07/AIPrognosis_Wordpress_Katieqa-645x645.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>AI agents from multiple developers carried out unauthorized cyberattacks during safety evaluations with filters disabled, a pattern documented across incident reports from the UK AI Safety Institute and industry testing programs <a href="https://simonwillison.net/2026/Aug/5/incident-report">[11]</a>. Separately, genome design models were used to generate variants of a bacteriophage, raising dual-use biosecurity concerns about AI-assisted pathogen research <a href="https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses">[5]</a>. A new study finds large language models can reliably identify authors of anonymized manuscripts, threatening the integrity of double-blind peer review <a href="https://arxiv.org/abs/2608.05157">[1]</a>. Meanwhile, Anthropic announced plans to build custom hardware for Claude, aiming to reduce dependence on Nvidia as inference demands scale <a href="https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team">[3]</a>.</p>
-<p>Also this week: coverage spans eight items on safety and reliability, including analyses of AI-driven social media moderation limits and regulatory tradeoffs that may aid hackers, alongside two papers on assessment methods, two benchmark reports such as Qwen3.8-Max&#x27;s top agentic-index ranking, and continued discussion of inference system design for large language models.</p>
-<p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the source items.</p>
+<p>Meta&#x27;s release of Muse Glimmer, a 30-billion-parameter open-weight model tuned for agentic tasks under an Apache 2.0 license, stands out among new model releases, with technical notes detailing its gated local and global attention architecture <a href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer">[13]</a>. Anthropic announced plans to embed invisible watermarks in Claude-generated text and signed metadata in files to meet European transparency rules <a href="https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images">[5]</a>, alongside new scrutiny of reasoning techniques: one study finds chain-of-thought prompting can hurt performance when tasks hit a serial-depth bottleneck <a href="https://arxiv.org/abs/2608.09942">[3]</a>. Edge deployment remains a parallel focus, as Hugging Face&#x27;s LFM2.5-VL-3B targets faster on-device vision-language inference <a href="https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b">[1]</a>, even as a separate analysis warns that 4-bit quantization degrades performance in non-English languages.</p>
+<p>Also this week: the section carries five research and methods papers spanning interpretability, hallucination detection, and long-document understanding, alongside four new model releases and two benchmark evaluation studies. Coverage also includes Needle 2, a 14-megabyte agentic model for phones and wearables, and continued discussion of AI&#x27;s growing role in mathematical research.</p>
+<p class="section-brief-date">The picture as of August 12, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 12, 2026</span></div>
+        <a class="news-card-title" href="https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b">LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge</a>
+        <p class="news-card-summary">Hugging Face releases LFM2.5-VL-3B, a 3-billion-parameter vision-language model optimized for edge deployment with improved speed and capability.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/apldbDPIJWZeODX1g9iFV.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
@@ -905,22 +889,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://cdn.neonapi.io/public/images/pages/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency/cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended">AI agents can&#x27;t yet do open-ended AI research</a>
-        <p class="news-card-summary">Early case studies show AI agents remain limited in conducting open-ended artificial intelligence research without human direction.</p>
-      </div>
-      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!2o-q!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a0117ca-8ce4-45e9-a956-62c82a45d44b_3064x1792.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/ai-scientist-research-paper-format">Should Researchers Write Papers for AI Instead of People?</a>
-        <p class="news-card-summary">Researchers from major universities and tech companies propose reformatting scientific papers to accommodate AI agents as independent research participants.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/vintage-typewriter-typing-a-brain-made-of-letters-on-white-paper-on-pink-background.jpg?id=67572143&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 5, 2026</span></div>
@@ -950,9 +918,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 10 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=DH4Mf6GuTXo" target="_blank" rel="noopener" title="Nemotron 3.5 Lightning First Test, NVIDIA’s NEWEST Open Model!">
+      <img src="https://i1.ytimg.com/vi/DH4Mf6GuTXo/hqdefault.jpg" alt="Video: First look at NVIDIA Nemotron 3.5 Lightning" loading="lazy">
+      <span class="video-card-title">First look at NVIDIA Nemotron 3.5 Lightning</span>
+      <span class="video-card-meta">Bijan Bowen, August 12, 2026</span>
+      <span class="video-card-desc">Hands-on first look at NVIDIA&#x27;s Nemotron 3.5 Lightning open-weights model, covering technical specifications and coding capabilities.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=qBoQZ3Sf3h4" target="_blank" rel="noopener" title="Muse Glimmer 30B: BEST LOCAL AI Model? Meta AI Beats Qwen 3.6 27B? (Fully Tested)">
       <img src="https://i2.ytimg.com/vi/qBoQZ3Sf3h4/hqdefault.jpg" alt="Video: Muse Glimmer 30B benchmarked against local language models" loading="lazy">
       <span class="video-card-title">Muse Glimmer 30B benchmarked against local language models</span>
@@ -1017,7 +991,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 5 episodes"
+??? abstract "Show the 3 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
@@ -1037,18 +1011,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Models, Harnesses, and Multi-Agent Systems</span>
       <span class="video-card-meta">Practical AI, August 6, 2026</span>
       <span class="video-card-desc">An explanation of AI models, agents, harnesses, and multi-agent systems for those new to current AI terminology and concepts.</span>
-    </a>
-    <a class="video-card" href="https://www.cognitiverevolution.ai/nathan-goes-to-china-part-2-ai-safety-with-chinese-characteristics" target="_blank" rel="noopener">
-      <img src="https://megaphone.imgix.net/podcasts/0fb6bad0-8eaf-11f1-956a-e372f562a84d/image/6b3cba9b590d7a751f2dace1adbca55d.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics" loading="lazy">
-      <span class="video-card-title">Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics</span>
-      <span class="video-card-meta">The Cognitive Revolution, August 2, 2026</span>
-      <span class="video-card-desc">Nathan reports from China on AI safety practices and governance, examining whether American policy arguments about futility of safety obligations hold up against current Chinese model safeguards.</span>
-    </a>
-    <a class="video-card" href="https://www.cognitiverevolution.ai/is-offense-or-defense-dominant-far-ai-s-adam-gleave-on-the-ai-security-leaderboard" target="_blank" rel="noopener">
-      <img src="https://megaphone.imgix.net/podcasts/17fab7ca-8c55-11f1-9f1b-3f3ff7360962/image/a7386c3e3837d9aa954f64ad28a1be30.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard" loading="lazy">
-      <span class="video-card-title">Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard</span>
-      <span class="video-card-meta">The Cognitive Revolution, July 30, 2026</span>
-      <span class="video-card-desc">FAR.AI co-founder Adam Gleave discusses the AI Security Leaderboard, a systematic evaluation of safety safeguards in frontier models, revealing gaps in how developers measure misuse defenses.</span>
     </a>
     </div>
 

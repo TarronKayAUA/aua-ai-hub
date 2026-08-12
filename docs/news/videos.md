@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=DH4Mf6GuTXo" target="_blank" rel="noopener" title="Nemotron 3.5 Lightning First Test, NVIDIA’s NEWEST Open Model!">
+  <img src="https://i1.ytimg.com/vi/DH4Mf6GuTXo/hqdefault.jpg" alt="Video: First look at NVIDIA Nemotron 3.5 Lightning" loading="lazy">
+  <span class="video-card-title">First look at NVIDIA Nemotron 3.5 Lightning</span>
+  <span class="video-card-meta">Bijan Bowen, August 12, 2026</span>
+  <span class="video-card-desc">Hands-on first look at NVIDIA&#x27;s Nemotron 3.5 Lightning open-weights model, covering technical specifications and coding capabilities.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=qBoQZ3Sf3h4" target="_blank" rel="noopener" title="Muse Glimmer 30B: BEST LOCAL AI Model? Meta AI Beats Qwen 3.6 27B? (Fully Tested)">
   <img src="https://i2.ytimg.com/vi/qBoQZ3Sf3h4/hqdefault.jpg" alt="Video: Muse Glimmer 30B benchmarked against local language models" loading="lazy">
   <span class="video-card-title">Muse Glimmer 30B benchmarked against local language models</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Gemini Robotics 2 whole body control overview</span>
   <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
   <span class="video-card-desc">Google DeepMind introduces Gemini Robotics 2, enabling robots to perform whole-body movements in human environments.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=MLehRytu9Zo" target="_blank" rel="noopener" title="We&#x27;re giving 100,000 academic researchers free access to our frontier models">
-  <img src="https://i2.ytimg.com/vi/MLehRytu9Zo/hqdefault.jpg" alt="Video: OpenAI frontier models access for academic researchers" loading="lazy">
-  <span class="video-card-title">OpenAI frontier models access for academic researchers</span>
-  <span class="video-card-meta">OpenAI, July 29, 2026</span>
-  <span class="video-card-desc">OpenAI announces a program providing 100,000 academic researchers free access to its frontier AI models including GPT-4o and o1.</span>
 </a>
 </div>
 
