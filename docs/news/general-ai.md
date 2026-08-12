@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.09941">The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs</a>
+    <p class="news-card-summary">A zero-shot multilingual evaluation demonstrates that 4-bit quantization of small language models causes substantial performance degradation in non-English languages, with implications for edge deployment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.09942">When Chain-of-Thought Helps and When It Hurts: An Empirical Investigation of the Serial-Depth Bottleneck in LLM Reasoning</a>
+    <p class="news-card-summary">An empirical study identifies cases where chain-of-thought prompting hurts large language model reasoning due to serial computational bottlenecks, clarifying when this technique helps.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 11, 2026</span></div>
@@ -118,21 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Commentary on peer review capacity strain as AI-assisted research submissions surge, raising questions about sustainability of volunteer review systems.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/peer-review-difficulties-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vkgsum/introducing_muse_glimmer_an_openweight_model">Introducing Muse Glimmer: an open-weight model optimized for always-on local agent workflows</a>
-    <p class="news-card-summary">Meta releases Muse Glimmer, a 30B open-weight multimodal model designed for local agent workflows under Apache 2.0 license.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/d61pdytdviih1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=a9bd06548c930452218a339ca26a79de14dd13cd" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science">AI for science needs reasoning, not just data</a>
-    <p class="news-card-summary">MIT Technology Review examines how AI systems for scientific discovery require reasoning capabilities beyond pattern matching from data alone.</p>
-  </div>
-  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/ai-scientists2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
