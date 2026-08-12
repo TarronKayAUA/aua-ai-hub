@@ -2,6 +2,6 @@
 
 - [LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge](https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b) (Hugging Face blog, August 12, 2026)
 - [STAT+: The secret AI-startup project I’ve been working on the last six months](https://www.statnews.com/2026/08/12/the-secret-startup-project-ive-been-working-on-ai-prognosis) (STAT News AI, August 12, 2026)
+- [An Interactive, Project-Based AI in Healthcare Curriculum for Clinicians and Medical Educators](https://pubmed.ncbi.nlm.nih.gov/42582818?fc=20260609215449&ff=20260812131422&v=2.20.1) (PubMed AI in medical education, August 12, 2026)
+- [Artificial intelligence for medical imaging education: bibliometric and visual analysis](https://pubmed.ncbi.nlm.nih.gov/42582784?fc=20260609215449&ff=20260812131422&v=2.20.1) (PubMed AI in medical education, August 12, 2026)
 - [The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs](https://arxiv.org/abs/2608.09941) (arXiv cs.CL, August 12, 2026)
-- [When Chain-of-Thought Helps and When It Hurts: An Empirical Investigation of the Serial-Depth Bottleneck in LLM Reasoning](https://arxiv.org/abs/2608.09942) (arXiv cs.CL, August 12, 2026)
-- [TAF-MED: Multi-Turn Safety Refusal Collapse in LLMs Under Declared Self-Treatment Intent](https://arxiv.org/abs/2608.10258) (arXiv cs.CL, August 12, 2026)
