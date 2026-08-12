@@ -755,13 +755,18 @@ def update_section_briefs(config: dict, categories: dict, ledger: dict,
     cfg = config.get("llm", {}).get("briefs")
     if not cfg:
         return "not configured"
-    # Once-daily gate (2026-08-07, owner approved): with briefs on paid
-    # Sonnet, regenerating on all six daily runs cost real money for
-    # freshness no reader perceives. Only runs whose UTC hour appears
-    # in refresh_hours regenerate; other runs keep the stored briefs.
-    hours = cfg.get("refresh_hours")
-    if hours is not None and now.hour not in hours:
-        return "outside refresh window; stored briefs kept"
+    # Once-daily gate, v2 (2026-08-11): v1 matched the run's UTC hour
+    # against a configured list, but GitHub cron is best-effort and the
+    # 00:20 run actually started between 02:28 and 02:35 every day
+    # after the gate shipped, so every run judged itself outside the
+    # window and the briefs silently froze at their August 7 state.
+    # Drift-proof version: the first run of each UTC day regenerates,
+    # whatever its start time, tracked by a ledger marker. The marker
+    # is only set after an attempt with no failures, so transient
+    # errors retry on the next run instead of waiting a day.
+    if cfg.get("refresh_daily"):
+        if ledger.get("section_briefs_refreshed") == now.date().isoformat():
+            return "already refreshed today; stored briefs kept"
     # Provider resolution moved to the per-task path 2026-07-31, when
     # GitHub Models (the briefs' original free home) was retired.
     provider, call, model_cfg = resolve_task_llm(config, "section_briefs")
@@ -838,6 +843,9 @@ def update_section_briefs(config: dict, categories: dict, ledger: dict,
                 f"{cat_key} {'kept previous' if stored else 'unavailable'} "
                 f"({type(exc).__name__})"
             )
+    if cfg.get("refresh_daily") and not any(
+            "kept previous" in s or "unavailable" in s for s in statuses):
+        ledger["section_briefs_refreshed"] = now.date().isoformat()
     return "; ".join(statuses)
 
 
