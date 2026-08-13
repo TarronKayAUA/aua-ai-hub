@@ -29194,6 +29194,245 @@
    "category": "clinical_practice",
    "score": 3.0,
    "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11232",
+   "title_hash": "06d1dff1f4fe54f4035e69bd11fab042",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow domain application with limited relevance to medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11233",
+   "title_hash": "c7ce2d451d9634ca9aea519bf2368b9d",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical modification with limited broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11236",
+   "title_hash": "3c0927ff422109caa8739973f360f6c6",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow benchmark for roleplay evaluation without clear medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11242",
+   "title_hash": "63436b8a4ca8902c9ce3471cff7c98f0",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical problem without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11249",
+   "title_hash": "4da9c0b05bbffcd59c78fe915a9ded41",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow domain application without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11332",
+   "title_hash": "05a2ea3f454e7a8adc83d97ae9980aaa",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow domain application without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11338",
+   "title_hash": "3fc55b2d9e2ce3e937d235505ef561d9",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11350",
+   "title_hash": "b23f579cd63a8f88543ea45b87fe2a35",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow domain application without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11352",
+   "title_hash": "8866390e14082616fc6ed3362398468f",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow domain application without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11408",
+   "title_hash": "672a2b38c90037ffe45950c6cb842172",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": true,
+   "title": "Measure, Don't Optimize: Forecasting Recovery in LLM Unlearning",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-13T04:00:00+00:00",
+   "summary": "Research demonstrates that models retain latent traces of unlearned knowledge and proposes methods to forecast whether this residual knowledge will recover with additional training.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11426",
+   "title_hash": "c3eb24c1b777d35547cfa8f9cc6c2433",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": true,
+   "title": "Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-13T04:00:00+00:00",
+   "summary": "Study shows output homogeneity in language models originates during pretraining rather than alignment, challenging common assumptions about model behavior modification.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11433",
+   "title_hash": "fa12eb13fe07f353e3a2b771acb0dc02",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11441",
+   "title_hash": "0cf14cb5677489785a49dda50a364270",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow domain application without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11460",
+   "title_hash": "68a7817119a1f008a9af4e277e71b614",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": true,
+   "title": "Principal Trait Analysis: Towards Deriving \"Skills\" in Human-AI Collaboration",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-13T04:00:00+00:00",
+   "summary": "Research identifies prompting traits that contribute to task success in human-AI collaboration and proposes training frameworks for professionals using language model agents.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11528",
+   "title_hash": "d7f3587297eef030102c094c28423e1f",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11531",
+   "title_hash": "138ee2d62a8aed7404c54b761d9a64ef",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11534",
+   "title_hash": "524b512f39142e510e23c339d583b9c0",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": true,
+   "title": "CT-$\\Delta$Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-13T04:00:00+00:00",
+   "summary": "CT-DeltaBench introduces a benchmark for evaluating vision-language models on longitudinal medical imaging comparisons, a core clinical task for assessing disease progression.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11552",
+   "title_hash": "7a7b02213bfaf918b8935effb0a52133",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11573",
+   "title_hash": "4f99723a98eca6632decce52705f2b5f",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11624",
+   "title_hash": "9219376e63cba4d6be3b5604cf926192",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11629",
+   "title_hash": "7d24b5f6f353854cf4a77c25e421ac02",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow domain application without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11649",
+   "title_hash": "ad8c565b2bc9da904aa9464df1b61aea",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11657",
+   "title_hash": "9ce331658561cb59f6df477c07c315a8",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11660",
+   "title_hash": "b3c2ff5144bb1dd73346b49e07827e48",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.11694",
+   "title_hash": "858c3d0e570e9b843c58720935405b80",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": true,
+   "title": "The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-13T04:00:00+00:00",
+   "summary": "Research shows that rephrasing benchmark questions while preserving meaning and answers produces inconsistent model performance, questioning benchmark reliability.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/12/alchemy-utils",
+   "title_hash": "dcb5704e8c70ba4234c243d41130dd08",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "minor release notes for niche software"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42586857?fc=20260609215449&ff=20260813015007&v=2.20.1",
+   "title_hash": "51d82dcef3a8e04759c30fc4c89c0bf0",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": true,
+   "title": "AI in GME education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-12T10:00:00+00:00",
+   "summary": "A review paper examines artificial intelligence integration across graduate medical education, covering residency selection, clinical training, and postgraduate practice.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42586857?fc=20260609215545&ff=20260813015009&v=2.20.1",
+   "title_hash": "51d82dcef3a8e04759c30fc4c89c0bf0",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 1"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VQqxMITWABU",
+   "title_hash": "3a280c1e5af6282467351abed587fc4c",
+   "first_seen": "2026-08-13T05:50:07.617410+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models (GPT-5.6 Sol does not exist) presented as fact"
   }
  ],
  "digests": [

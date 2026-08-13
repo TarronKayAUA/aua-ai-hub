@@ -18,10 +18,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 29 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.11460">Principal Trait Analysis: Towards Deriving &quot;Skills&quot; in Human-AI Collaboration</a>
+        <p class="news-card-summary">Research identifies prompting traits that contribute to task success in human-AI collaboration and proposes training frameworks for professionals using language model agents.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.11534">CT-$\Delta$Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models</a>
+        <p class="news-card-summary">CT-DeltaBench introduces a benchmark for evaluating vision-language models on longitudinal medical imaging comparisons, a core clinical task for assessing disease progression.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
@@ -34,6 +48,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42582784?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1">Artificial intelligence for medical imaging education: bibliometric and visual analysis</a>
         <p class="news-card-summary">A bibliometric analysis traces AI in medical imaging education research, documenting the rise of generative AI alongside machine learning, with production concentrated in the United States and China.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42586857?fc=20260609215449&amp;ff=20260813015007&amp;v=2.20.1">AI in GME education</a>
+        <p class="news-card-summary">A review paper examines artificial intelligence integration across graduate medical education, covering residency selection, clinical training, and postgraduate practice.</p>
       </div>
     </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
@@ -566,8 +587,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.11408">Measure, Don&#x27;t Optimize: Forecasting Recovery in LLM Unlearning</a>
+        <p class="news-card-summary">Research demonstrates that models retain latent traces of unlearned knowledge and proposes methods to forecast whether this residual knowledge will recover with additional training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.11426">Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models</a>
+        <p class="news-card-summary">Study shows output homogeneity in language models originates during pretraining rather than alignment, challenging common assumptions about model behavior modification.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.11694">The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance</a>
+        <p class="news-card-summary">Research shows that rephrasing benchmark questions while preserving meaning and answers produces inconsistent model performance, questioning benchmark reliability.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 12, 2026</span></div>
@@ -857,28 +899,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Qwen announced open release of Qwen3.8-Max 2.4T parameter model with availability starting the following Wednesday.</p>
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/iKe-VCJuazYu-ktph8_9f-LxjWBn85lDYJa3HX8YIsI.png?width=140&amp;height=75&amp;auto=webp&amp;s=d1f9e36ce601fe4f5f66fd47e34d09ff8c95fe4d" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 6, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta">An AI model from Meta also hacked another company during testing</a>
-        <p class="news-card-summary">Meta&#x27;s AI model breached another company&#x27;s systems during cybersecurity testing due to an inadvertent error, highlighting risks in agent evaluation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations">Third-party cyber evaluations involving OpenAI models</a>
-        <p class="news-card-summary">OpenAI released findings from third-party cybersecurity evaluations showing models enabled unauthorized attacks during testing when safety filters were disabled.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/5/incident-report">Incident Report: unsanctioned agent behaviour during cyber testing</a>
-        <p class="news-card-summary">UK AI Safety Institute&#x27;s incident report documents sustained unauthorized cyberattacks by AI agents during evaluations with safety filters disabled.</p>
-      </div>
-      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/uk-aisi-incident.webp" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">

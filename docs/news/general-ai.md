@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.11408">Measure, Don&#x27;t Optimize: Forecasting Recovery in LLM Unlearning</a>
+    <p class="news-card-summary">Research demonstrates that models retain latent traces of unlearned knowledge and proposes methods to forecast whether this residual knowledge will recover with additional training.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.11426">Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models</a>
+    <p class="news-card-summary">Study shows output homogeneity in language models originates during pretraining rather than alignment, challenging common assumptions about model behavior modification.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.11694">The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance</a>
+    <p class="news-card-summary">Research shows that rephrasing benchmark questions while preserving meaning and answers produces inconsistent model performance, questioning benchmark reliability.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 12, 2026</span></div>
@@ -109,27 +130,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.07531">Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards</a>
     <p class="news-card-summary">Search-G1 introduces representation-based intrinsic rewards to train search-augmented language agents to retrieve information strategically and ground answers in evidence.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.07594">Scaling Inherently Interpretable Language Models</a>
-    <p class="news-card-summary">Study demonstrates that language model interpretability can be built into training as a constraint rather than applied post-hoc, maintaining capability at scale.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.07968">Thinking Hard, Not Smart: Reasoning Models Fail to Ration Test-Time Compute Across Questions</a>
-    <p class="news-card-summary">Study shows reasoning models fail to allocate test-time compute efficiently across multiple questions under shared budget constraints, introducing an exam-style evaluation framework.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.08024">Prompt Embedding Probes (PEP): Hallucination Detection in LLMs from Hidden States</a>
-    <p class="news-card-summary">Prompt Embedding Probes provides a white-box method for detecting hallucinations in frozen language models using hidden states without additional model training.</p>
   </div>
 </div>
 </div>

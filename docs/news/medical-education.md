@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.11460">Principal Trait Analysis: Towards Deriving &quot;Skills&quot; in Human-AI Collaboration</a>
+    <p class="news-card-summary">Research identifies prompting traits that contribute to task success in human-AI collaboration and proposes training frameworks for professionals using language model agents.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.11534">CT-$\Delta$Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models</a>
+    <p class="news-card-summary">CT-DeltaBench introduces a benchmark for evaluating vision-language models on longitudinal medical imaging comparisons, a core clinical task for assessing disease progression.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
@@ -33,6 +47,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42582784?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1">Artificial intelligence for medical imaging education: bibliometric and visual analysis</a>
     <p class="news-card-summary">A bibliometric analysis traces AI in medical imaging education research, documenting the rise of generative AI alongside machine learning, with production concentrated in the United States and China.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42586857?fc=20260609215449&amp;ff=20260813015007&amp;v=2.20.1">AI in GME education</a>
+    <p class="news-card-summary">A review paper examines artificial intelligence integration across graduate medical education, covering residency selection, clinical training, and postgraduate practice.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -103,27 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572664?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Comparison of Large Language Model Performance on the United Kingdom Neurology Specialty Certificate Examination</a>
     <p class="news-card-summary">Study compares performance of ChatGPT, Claude, and Gemini on UK neurology specialty certification examination questions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42573859?fc=20260609215449&amp;ff=20260810131029&amp;v=2.20.1">Artificial Intelligence for Diagnosis of Esophageal Manometry: A Narrative Review</a>
-    <p class="news-card-summary">Narrative review of artificial intelligence approaches to diagnose esophageal motility disorders and address training gaps in gastroenterology fellowship programs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42573794?fc=20260609215449&amp;ff=20260810131029&amp;v=2.20.1">Can ChatGPT pass the polish national medical specialization examination in orthopedics and traumatology?</a>
-    <p class="news-card-summary">ChatGPT achieved strong performance on Polish orthopedic specialist examinations but does not demonstrate clinical competence or readiness for independent surgical practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574069?fc=20260609215449&amp;ff=20260810222918&amp;v=2.20.1">Assessing the Educational Role of Large Language Models in Dental Training: A Decade-Long Analysis of Text-Based and Visual Questions in a National Examination</a>
-    <p class="news-card-summary">Analysis of large language models on a decade of dental board exam questions shows strong text-based performance but significant limitations with visual content in image-dependent disciplines.</p>
   </div>
 </div>
 </div>
