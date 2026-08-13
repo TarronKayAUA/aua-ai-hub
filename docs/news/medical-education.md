@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42587642?fc=20260609215449&amp;ff=20260813053422&amp;v=2.20.1">Autopsy Pathology&#x27;s Paradigm Shift: Artificial Intelligence and Emerging Technologies in the Era of Digitally Integrated Death Investigation</a>
+    <p class="news-card-summary">Review examines how artificial intelligence and digital technologies are reshaping autopsy pathology, addressing workforce shortages and supporting diagnostic quality and medical education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572759?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Accuracy, Reliability, and Bloom&#x27;s Taxonomy Performance of Seven Large Language Models on Microbiology Questions</a>
     <p class="news-card-summary">Study evaluates seven large language models on microbiology multiple-choice questions, finding marked differences in reliability alongside accuracy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572664?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Comparison of Large Language Model Performance on the United Kingdom Neurology Specialty Certificate Examination</a>
-    <p class="news-card-summary">Study compares performance of ChatGPT, Claude, and Gemini on UK neurology specialty certification examination questions.</p>
   </div>
 </div>
 </div>

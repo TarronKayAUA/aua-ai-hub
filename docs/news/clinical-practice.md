@@ -23,6 +23,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">STAT+: What Medicare incentives for AI-based devices mean for tech companies, and hospitals</a>
+    <p class="news-card-summary">Analysis of how Medicare reimbursement incentives for newly-authorized AI-based medical devices may drive overuse in hospitals.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/ntap-4-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03106-2">Context-aware monitoring: rethinking comprehensive screening in the era of AI</a>
     <p class="news-card-summary">Analysis of how Bayesian reasoning and context-aware AI can reduce false positives in AI-assisted screening of asymptomatic populations.</p>
@@ -120,12 +128,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Nursing leaders raise concerns about job displacement and patient safety risks from expanding clinical AI deployment without adequate workforce input.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1222271719-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03126-y">Cost-effectiveness of an AI-based app compared to usual care for early skin cancer detection in Belgium</a>
-    <p class="news-card-summary">Study evaluates cost-effectiveness of an artificial intelligence app compared to standard care for early skin cancer detection in Belgium.</p>
-  </div>
 </div>
 </div>

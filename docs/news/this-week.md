@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42587642?fc=20260609215449&amp;ff=20260813053422&amp;v=2.20.1">Autopsy Pathology&#x27;s Paradigm Shift: Artificial Intelligence and Emerging Technologies in the Era of Digitally Integrated Death Investigation</a>
+        <p class="news-card-summary">Review examines how artificial intelligence and digital technologies are reshaping autopsy pathology, addressing workforce shortages and supporting diagnostic quality and medical education.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
@@ -257,10 +264,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">STAT+: What Medicare incentives for AI-based devices mean for tech companies, and hospitals</a>
+        <p class="news-card-summary">Analysis of how Medicare reimbursement incentives for newly-authorized AI-based medical devices may drive overuse in hospitals.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/ntap-4-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
@@ -585,9 +600,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -900,14 +915,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/iKe-VCJuazYu-ktph8_9f-LxjWBn85lDYJa3HX8YIsI.png?width=140&amp;height=75&amp;auto=webp&amp;s=d1f9e36ce601fe4f5f66fd47e34d09ff8c95fe4d" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency">Beating GPT-5.6 Sol on retrieval with 100x cheaper open models</a>
-        <p class="news-card-summary">Open-source models achieve performance comparable to frontier models on retrieval tasks at significantly lower cost.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.neonapi.io/public/images/pages/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency/cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 5, 2026</span></div>
@@ -937,9 +944,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 11 videos"
+??? abstract "Show the 12 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=Mu5a8ErscIE" target="_blank" rel="noopener" title="DeepSeek V4 Pro Is HERE, Is THIS the BEST Open Model Yet?">
+      <img src="https://i2.ytimg.com/vi/Mu5a8ErscIE/hqdefault.jpg" alt="Video: DeepSeek V4 Pro testing and technical analysis" loading="lazy">
+      <span class="video-card-title">DeepSeek V4 Pro testing and technical analysis</span>
+      <span class="video-card-meta">Bijan Bowen, August 13, 2026</span>
+      <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4 Pro against benchmark tasks to assess its capabilities as an open-weights model.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=DH4Mf6GuTXo" target="_blank" rel="noopener" title="Nemotron 3.5 Lightning First Test, NVIDIA’s NEWEST Open Model!">
       <img src="https://i1.ytimg.com/vi/DH4Mf6GuTXo/hqdefault.jpg" alt="Video: First look at NVIDIA Nemotron 3.5 Lightning" loading="lazy">
       <span class="video-card-title">First look at NVIDIA Nemotron 3.5 Lightning</span>

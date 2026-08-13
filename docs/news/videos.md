@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=Mu5a8ErscIE" target="_blank" rel="noopener" title="DeepSeek V4 Pro Is HERE, Is THIS the BEST Open Model Yet?">
+  <img src="https://i2.ytimg.com/vi/Mu5a8ErscIE/hqdefault.jpg" alt="Video: DeepSeek V4 Pro testing and technical analysis" loading="lazy">
+  <span class="video-card-title">DeepSeek V4 Pro testing and technical analysis</span>
+  <span class="video-card-meta">Bijan Bowen, August 13, 2026</span>
+  <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4 Pro against benchmark tasks to assess its capabilities as an open-weights model.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=DH4Mf6GuTXo" target="_blank" rel="noopener" title="Nemotron 3.5 Lightning First Test, NVIDIA’s NEWEST Open Model!">
   <img src="https://i1.ytimg.com/vi/DH4Mf6GuTXo/hqdefault.jpg" alt="Video: First look at NVIDIA Nemotron 3.5 Lightning" loading="lazy">
   <span class="video-card-title">First look at NVIDIA Nemotron 3.5 Lightning</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Advanced dexterity with Gemini Robotics 2</span>
   <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
   <span class="video-card-desc">Google DeepMind demonstrates advanced physical dexterity capabilities in Gemini Robotics 2 for practical household and workplace tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=4lSQnrMC6nY" target="_blank" rel="noopener" title="Gemini Robotics 2 brings whole body intelligence to robots">
-  <img src="https://i1.ytimg.com/vi/4lSQnrMC6nY/hqdefault.jpg" alt="Video: Gemini Robotics 2 whole body control overview" loading="lazy">
-  <span class="video-card-title">Gemini Robotics 2 whole body control overview</span>
-  <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
-  <span class="video-card-desc">Google DeepMind introduces Gemini Robotics 2, enabling robots to perform whole-body movements in human environments.</span>
 </a>
 </div>
 
