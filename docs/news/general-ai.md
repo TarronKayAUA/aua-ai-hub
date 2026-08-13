@@ -18,9 +18,25 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">Google announces Gemini 3.7 Flash just three weeks after previous release</a>
+    <p class="news-card-summary">Google released Gemini 3.7 Flash three weeks after Gemini 3.6 Flash with reported substantial improvements.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-4-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.netlify.com/blog/one-prompt-11-models-very-different-results">Choosing an AI model: one prompt, 11 models, different results</a>
+    <p class="news-card-summary">A comparison of prompt outputs across 11 language models demonstrates significant variation in response quality and style.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.sanity.io/images/o0o2tn5x/production/61190f2745496c269dd071680edec773a29eaef7-1800x1013.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
@@ -41,6 +57,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2608.11694">The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance</a>
     <p class="news-card-summary">Research shows that rephrasing benchmark questions while preserving meaning and answers produces inconsistent model performance, questioning benchmark reliability.</p>
   </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/icml-2026-open-reproductions">What We Learned by Reproducing 2,200 papers from ICML</a>
+    <p class="news-card-summary">A Hugging Face analysis of 2,200 papers from ICML documents reproducibility findings and lessons from major machine learning research.</p>
+  </div>
+  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/icml-2026-open-reproductions/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -109,28 +133,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Anthropic announced plans to embed machine-readable watermarks in Claude-generated text and digitally signed metadata in files to comply with European AI transparency regulations.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STKB364_CLAUDE_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun">The AI takeover of mathematics has begun</a>
-    <p class="news-card-summary">Interview with Fields Medal mathematician James Maynard on how artificial intelligence is reshaping mathematical research and academic adaptation to automated discovery tools.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://sebastianraschka.com/blog/2026/muse-glimmer-30b-architecture-notes.html">Muse Glimmer 30B Architecture Notes</a>
-    <p class="news-card-summary">Meta released Muse Glimmer 30B with gated local and global group query attention, achieving strong benchmark results with reduced token throughput compared to competing models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/muse-glimmer-30b-architecture-notes/muse-glimmer-30b.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.07527">DocAtlas: Long-Document Understanding as Mutable-State Interaction</a>
-    <p class="news-card-summary">DocAtlas presents a mutable-state interaction system for long-document understanding that updates evidence dynamically during generation rather than relying on static retrieval.</p>
-  </div>
 </div>
 </div>

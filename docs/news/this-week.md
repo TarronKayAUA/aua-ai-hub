@@ -18,15 +18,43 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42587642?fc=20260609215449&amp;ff=20260813053422&amp;v=2.20.1">Autopsy Pathology&#x27;s Paradigm Shift: Artificial Intelligence and Emerging Technologies in the Era of Digitally Integrated Death Investigation</a>
         <p class="news-card-summary">Review examines how artificial intelligence and digital technologies are reshaping autopsy pathology, addressing workforce shortages and supporting diagnostic quality and medical education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42592181?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">A Large Language Model-Based Simulation Protocol Using ChatGPT for Training Novice Critical Care Nurses in Family Crisis Communication and De-escalation</a>
+        <p class="news-card-summary">A study demonstrates ChatGPT-based simulation for training novice ICU nurses in family crisis communication and de-escalation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Application of an AI-enhanced interactive virtual clinical reasoning training system in orthodontic residency training</a>
+        <p class="news-card-summary">An AI-enhanced virtual clinical reasoning system for orthodontic residents significantly improved case analysis performance and learning experience compared to traditional methods.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42591894?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Transforming thyroid disease education: AI and virtual technologies in residency training</a>
+        <p class="news-card-summary">A narrative review examines applications and challenges of AI and virtual technologies in standardizing thyroid disease residency training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42591467?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Generative AI in psychiatric education: balancing risks and benefits for responsible integration</a>
+        <p class="news-card-summary">A review analyzes opportunities and risks of integrating generative AI chatbots into psychiatric education across training levels.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -266,7 +294,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -304,6 +332,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Clinical AI decision support tools are deploying rapidly while evidence generation and evaluation frameworks struggle to keep pace.</p>
       </div>
       <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00040-4/d41591-026-00040-4_50850336.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03143-x">Causal inference framework for personalised b/tsDMARD selection in rheumatoid arthritis: ANSWER cohort validation</a>
+        <p class="news-card-summary">A causal inference framework for personalizing b/tsDMARD selection in rheumatoid arthritis shows validation on an ANSWER cohort.</p>
+      </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -591,13 +626,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Large language model systems showed overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning and require specialist oversight before clinical deployment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 6, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03079-2">An explainable generative AI system for video-to-report generation in capsule endoscopy</a>
-        <p class="news-card-summary">Explainable generative AI system automatically generates clinical reports from capsule endoscopy videos, published in npj Digital Medicine.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 6, 2026</span></div>
@@ -622,10 +650,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">Google announces Gemini 3.7 Flash just three weeks after previous release</a>
+        <p class="news-card-summary">Google released Gemini 3.7 Flash three weeks after Gemini 3.6 Flash with reported substantial improvements.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-4-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.netlify.com/blog/one-prompt-11-models-very-different-results">Choosing an AI model: one prompt, 11 models, different results</a>
+        <p class="news-card-summary">A comparison of prompt outputs across 11 language models demonstrates significant variation in response quality and style.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.sanity.io/images/o0o2tn5x/production/61190f2745496c269dd071680edec773a29eaef7-1800x1013.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
@@ -646,6 +690,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.11694">The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance</a>
         <p class="news-card-summary">Research shows that rephrasing benchmark questions while preserving meaning and answers produces inconsistent model performance, questioning benchmark reliability.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://huggingface.co/blog/icml-2026-open-reproductions">What We Learned by Reproducing 2,200 papers from ICML</a>
+        <p class="news-card-summary">A Hugging Face analysis of 2,200 papers from ICML documents reproducibility findings and lessons from major machine learning research.</p>
+      </div>
+      <img class="news-card-thumb" src="https://huggingface.co/blog/assets/icml-2026-open-reproductions/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -929,14 +981,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/Cloudflare-logo-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 6, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai">AI isn’t enough to protect social media communities from AI</a>
-        <p class="news-card-summary">Analysis of why artificial intelligence moderation tools alone cannot adequately protect online communities without human oversight.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2259634870-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 6, 2026</span></div>
@@ -974,7 +1018,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 12 videos"
+??? abstract "Show the 10 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=Mu5a8ErscIE" target="_blank" rel="noopener" title="DeepSeek V4 Pro Is HERE, Is THIS the BEST Open Model Yet?">
@@ -1036,18 +1080,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Agent Plugins open standard announcement</span>
       <span class="video-card-meta">OpenAI, August 6, 2026</span>
       <span class="video-card-desc">OpenAI announces Agent Plugins, an open standard for bundling AI agent skills and model context protocols with partner collaboration.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=Gjw3ok6alYY" target="_blank" rel="noopener" title="Meta Muse Code Is HERE, Spark 1.2 &amp; Meta’s NEW Coding Agent!">
-      <img src="https://i4.ytimg.com/vi/Gjw3ok6alYY/hqdefault.jpg" alt="Video: Meta Muse Code, Spark 1.2, and coding agent demo" loading="lazy">
-      <span class="video-card-title">Meta Muse Code, Spark 1.2, and coding agent demo</span>
-      <span class="video-card-meta">Bijan Bowen, August 6, 2026</span>
-      <span class="video-card-desc">Hands-on demonstration of Meta&#x27;s Muse Code editor, Spark 1.2 update, and new coding agent with technical breakdown and real-world testing.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=uhWFLmr7xao" target="_blank" rel="noopener" title="What Is AI Model Collapse? Why AI Could Forget Reality">
-      <img src="https://i2.ytimg.com/vi/uhWFLmr7xao/hqdefault.jpg" alt="Video: What is AI model collapse and its implications" loading="lazy">
-      <span class="video-card-title">What is AI model collapse and its implications</span>
-      <span class="video-card-meta">IBM Technology, August 6, 2026</span>
-      <span class="video-card-desc">Explanation of AI model collapse: the degradation that occurs when AI systems train predominantly on data generated by other AI systems.</span>
     </a>
     </div>
 

@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -26,6 +26,34 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42587642?fc=20260609215449&amp;ff=20260813053422&amp;v=2.20.1">Autopsy Pathology&#x27;s Paradigm Shift: Artificial Intelligence and Emerging Technologies in the Era of Digitally Integrated Death Investigation</a>
     <p class="news-card-summary">Review examines how artificial intelligence and digital technologies are reshaping autopsy pathology, addressing workforce shortages and supporting diagnostic quality and medical education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42592181?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">A Large Language Model-Based Simulation Protocol Using ChatGPT for Training Novice Critical Care Nurses in Family Crisis Communication and De-escalation</a>
+    <p class="news-card-summary">A study demonstrates ChatGPT-based simulation for training novice ICU nurses in family crisis communication and de-escalation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Application of an AI-enhanced interactive virtual clinical reasoning training system in orthodontic residency training</a>
+    <p class="news-card-summary">An AI-enhanced virtual clinical reasoning system for orthodontic residents significantly improved case analysis performance and learning experience compared to traditional methods.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42591894?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Transforming thyroid disease education: AI and virtual technologies in residency training</a>
+    <p class="news-card-summary">A narrative review examines applications and challenges of AI and virtual technologies in standardizing thyroid disease residency training.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42591467?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Generative AI in psychiatric education: balancing risks and benefits for responsible integration</a>
+    <p class="news-card-summary">A review analyzes opportunities and risks of integrating generative AI chatbots into psychiatric education across training levels.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -96,34 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Dependence on Generative Artificial Intelligence Among Medical Students and Its Association With Critical Thinking: A Cross-Sectional Study</a>
     <p class="news-card-summary">Study of medical students found that greater dependence on generative AI is independently associated with diminished critical thinking, particularly in final-year and male students.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577716?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Are AI tutors ready for the TCM classroom? A multimodal evaluation of large language models across cognitive levels in Chinese medicine education</a>
-    <p class="news-card-summary">Evaluation of large language models for Traditional Chinese Medicine education found they work for foundational knowledge but pose risks in complex clinical reasoning and multimodal teaching.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42579624?fc=20260609215449&amp;ff=20260811224622&amp;v=2.20.1">Student and teacher views of using GenAI in GP undergraduate medical education: &#x27;to complement not replace&#x27;</a>
-    <p class="news-card-summary">A UK study explores undergraduate medical students&#x27; and teachers&#x27; views on using generative AI in general practice education, finding support for AI as a complement rather than replacement.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e100179">Human-Edited Generative AI-Assisted Multiple-Choice Questions in Postgraduate Family Medicine: Blinded Cross-Sectional Comparative Psychometric Study</a>
-    <p class="news-card-summary">Study evaluates psychometric properties of multiple-choice questions drafted by generative AI and edited by faculty for postgraduate family medicine assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42572759?fc=20260609215449&amp;ff=20260810094622&amp;v=2.20.1">Accuracy, Reliability, and Bloom&#x27;s Taxonomy Performance of Seven Large Language Models on Microbiology Questions</a>
-    <p class="news-card-summary">Study evaluates seven large language models on microbiology multiple-choice questions, finding marked differences in reliability alongside accuracy.</p>
   </div>
 </div>
 </div>

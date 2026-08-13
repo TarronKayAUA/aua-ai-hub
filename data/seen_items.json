@@ -1,50 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink",
-   "title_hash": "651148683eb6abe5804d3f7baa271ece",
-   "first_seen": "2026-06-14T16:08:35.889212+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://github.com/kekcleader/FreeOberon",
-   "title_hash": "f306a45a113e8bc030ef56c096ffef94",
-   "first_seen": "2026-06-14T16:08:35.889212+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=zJvN8PDX1is",
-   "title_hash": "5f779459d541c353de9530154c8bed61",
-   "first_seen": "2026-06-14T16:08:35.889212+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=gRFhacXrP1s",
-   "title_hash": "5a311ce20032a93251d9cf608147d2eb",
-   "first_seen": "2026-06-14T16:08:35.889212+00:00",
-   "kept": true,
-   "title": "Diffusion Gemma First Look & Demo, A BIG Step for Local AI Models!",
-   "source": "Bijan Bowen",
-   "published": "2026-06-14T14:35:51+00:00",
-   "summary": "Diffusion Gemma is a new generative image model that runs locally; this video demonstrates its capabilities and technical details for practitioners working with open-weights models.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i4.ytimg.com/vi/gRFhacXrP1s/hqdefault.jpg",
-   "display_title": "Introduction and demo of Diffusion Gemma local AI model"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
-   "title_hash": "e556e12d6b28ef9b2b2753ab6fd9e42b",
-   "first_seen": "2026-06-14T16:08:35.889212+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/This-Week-in-AI-in-5-Minutes-Fable-Chaos-Edition-e3kp7dn",
-   "title_hash": "5c5999ca1dca026fd90975e3edc0702f",
-   "first_seen": "2026-06-14T16:08:35.889212+00:00",
-   "kept": false
-  },
-  {
    "url": "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021",
    "title_hash": "66311cfc8692b00a9fa20d9cf067abda",
    "first_seen": "2026-06-15T20:07:40.595150+00:00",
@@ -29571,6 +29527,176 @@
    "first_seen": "2026-08-13T13:50:00.355898+00:00",
    "kept": false,
    "reason": "conceptual overview video with no current developments or relevance to medical education and practice"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release",
+   "title_hash": "0df6cc53d2198f3bdaaf291d021f2ad4",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "Google announces Gemini 3.7 Flash just three weeks after previous release",
+   "source": "Ars Technica AI",
+   "published": "2026-08-13T17:00:13+00:00",
+   "summary": "Google released Gemini 3.7 Flash three weeks after Gemini 3.6 Flash with reported substantial improvements.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-4-500x500.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects",
+   "title_hash": "fb47bf0ac893c59766a7b4a8c0191317",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; music generation tool feature release"
+  },
+  {
+   "url": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
+   "title_hash": "f31711290bfc22d67960abe3e9010334",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "entertainment and creative content review; not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
+   "title_hash": "fecaa97be2990383ea94a269a4a22482",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "industry commentary on Google's organizational strategy; speculation rather than substantive development or analysis"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public",
+   "title_hash": "f0b51a4c46e81fcafa45031288b76cb7",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash",
+   "title_hash": "aba95542aab2144d39001540fc4d521f",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; police surveillance technology unrelated to medical education or clinical AI"
+  },
+  {
+   "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results",
+   "title_hash": "1aecf20384067f312e92f6edf722fcb1",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "Choosing an AI model: one prompt, 11 models, different results",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-13T13:05:29+00:00",
+   "summary": "A comparison of prompt outputs across 11 language models demonstrates significant variation in response quality and style.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.sanity.io/images/o0o2tn5x/production/61190f2745496c269dd071680edec773a29eaef7-1800x1013.png",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42592422?fc=20260609215449&ff=20260813131428&v=2.20.1",
+   "title_hash": "d6c5b1ec1c5c5e3ce4fc051e3046c9a7",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "narrow domain application without AI focus; curriculum survey on plastic surgery"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42592181?fc=20260609215449&ff=20260813131428&v=2.20.1",
+   "title_hash": "224037a19eb61ed34c62f083b4d3443e",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "A Large Language Model-Based Simulation Protocol Using ChatGPT for Training Novice Critical Care Nurses in Family Crisis Communication and De-escalation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-13T10:00:00+00:00",
+   "summary": "A study demonstrates ChatGPT-based simulation for training novice ICU nurses in family crisis communication and de-escalation.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&ff=20260813131428&v=2.20.1",
+   "title_hash": "8598189005a76fd0fbb9abc87379c086",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "Application of an AI-enhanced interactive virtual clinical reasoning training system in orthodontic residency training",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-13T10:00:00+00:00",
+   "summary": "An AI-enhanced virtual clinical reasoning system for orthodontic residents significantly improved case analysis performance and learning experience compared to traditional methods.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42591894?fc=20260609215449&ff=20260813131428&v=2.20.1",
+   "title_hash": "e72fdc6ef3e5113b235147dfe27e598a",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "Transforming thyroid disease education: AI and virtual technologies in residency training",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-13T10:00:00+00:00",
+   "summary": "A narrative review examines applications and challenges of AI and virtual technologies in standardizing thyroid disease residency training.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42591624?fc=20260609215449&ff=20260813131428&v=2.20.1",
+   "title_hash": "b6ae6f44dfe38da44b58fb249b9555d1",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "curriculum design study without AI evaluation or integration as primary focus"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42591467?fc=20260609215449&ff=20260813131428&v=2.20.1",
+   "title_hash": "bd92f561514e703ebbd376ff66dc6e66",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "Generative AI in psychiatric education: balancing risks and benefits for responsible integration",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-13T10:00:00+00:00",
+   "summary": "A review analyzes opportunities and risks of integrating generative AI chatbots into psychiatric education across training levels.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vn4020/the_countdown_to_qwen3827b_starts_now",
+   "title_hash": "4e7e9a67adb0271ec0f517a0cea2dc09",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "minor rumor about unreleased model; community discussion without substantive news"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03143-x",
+   "title_hash": "37d51868f2b1102e61c3c5edd32e59ea",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "Causal inference framework for personalised b/tsDMARD selection in rheumatoid arthritis: ANSWER cohort validation",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "A causal inference framework for personalizing b/tsDMARD selection in rheumatoid arthritis shows validation on an ANSWER cohort.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+   "title_hash": "9e9f49512a6de650210568ae0bad7958",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": true,
+   "title": "What We Learned by Reproducing 2,200 papers from ICML",
+   "source": "Hugging Face blog",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "A Hugging Face analysis of 2,200 papers from ICML documents reproducibility findings and lessons from major machine learning research.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://huggingface.co/blog/assets/icml-2026-open-reproductions/thumbnail.png",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://sharktastica.co.uk/articles/pc-fxt-45",
+   "title_hash": "d006e8f50505703cf3a96e1159cebe42",
+   "first_seen": "2026-08-13T17:14:28.556358+00:00",
+   "kept": false,
+   "reason": "off-topic; historical computing anniversary unrelated to artificial intelligence or medicine"
   }
  ],
  "digests": [
