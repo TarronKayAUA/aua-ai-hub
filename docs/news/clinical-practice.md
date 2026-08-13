@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A physician-reviewed benchmark testing 500 multi-turn scenarios finds that large language models can abandon medication-safety refusals once a user declares intent to self-treat, raising questions about deployment safeguards <a href="https://arxiv.org/abs/2608.10258">[2]</a>. That concern intersects with efforts to build safer, locally deployable systems: a systematic benchmark of eight small language models for emergency department decision support emphasizes designs that keep patient data on-site <a href="https://arxiv.org/abs/2608.10273">[3]</a>. Elsewhere, a peer-reviewed comparison finds clinicians and AI systems produce different accuracy profiles when predicting intensive care outcomes <a href="https://www.nature.com/articles/s41746-026-03132-0">[6]</a>, while nursing leaders push back on expanding clinical AI deployment without workforce input, citing safety and job-displacement risks <a href="https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions">[11]</a>.</p>
-<p>Also this week: the section carries six pieces on safety and evaluation, three each on clinical decision support and imaging and diagnostics, two on clinical documentation, and one on patient-facing tools. Coverage ranges from an ECG-based deep learning method for detecting hypertrophic cardiomyopathy to a cloud-based pediatric ophthalmology record system marking 21 years of paperless practice.</p>
-<p class="section-brief-date">The picture as of August 12, 2026; numbered links go to the items below.</p>
+<p>A physician-reviewed benchmark testing 500 three-turn scenarios finds that large language models can lose medication-safety boundaries once users declare intent to self-treat after an initial refusal <a href="https://arxiv.org/abs/2608.10258">[3]</a>. The finding lands alongside a systematic review and meta-analysis assessing how reliably large language models diagnose rare diseases <a href="https://www.nature.com/articles/s41746-026-03109-z">[11]</a>, and a peer-reviewed study comparing clinician and AI performance in predicting intensive care unit outcomes, work that bears directly on how much weight clinical teams should place on model output <a href="https://www.nature.com/articles/s41746-026-03132-0">[7]</a>. Nursing leaders are pressing a related point, warning that expanding clinical AI deployment without workforce input raises both job-displacement and patient-safety concerns <a href="https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions">[14]</a>.</p>
+<p>Also this week: the section&#x27;s evaluation focus extends to eight items spanning benchmarking, deployment, and safety testing of clinical AI tools, alongside four papers on decision support, two on imaging and diagnostics, and one on documentation. Coverage includes phenomapping for heart failure treatment response and deep learning-based detection of hypertrophic cardiomyopathy from electrocardiograms.</p>
+<p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03106-2">Context-aware monitoring: rethinking comprehensive screening in the era of AI</a>
+    <p class="news-card-summary">Analysis of how Bayesian reasoning and context-aware AI can reduce false positives in AI-assisted screening of asymptomatic populations.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 12, 2026</span></div>
@@ -94,6 +101,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03077-4">OpenEvidence clinical question-answering platform: systematic review of early evaluations</a>
+    <p class="news-card-summary">Systematic review of early evaluations of the OpenEvidence clinical question-answering platform across published studies.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91844">Influenza-Like Illness Forecasting Using Multisource Data: Comparative Deep Learning Study</a>
     <p class="news-card-summary">Comparative deep learning study developed and evaluated models combining internet searches and mobility data with traditional surveillance to forecast influenza-like illness incidence.</p>
@@ -113,20 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03126-y">Cost-effectiveness of an AI-based app compared to usual care for early skin cancer detection in Belgium</a>
     <p class="news-card-summary">Study evaluates cost-effectiveness of an artificial intelligence app compared to standard care for early skin cancer detection in Belgium.</p>
   </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03105-3">Eyecare-Cloud enabling 21 years of real world pediatric ophthalmology practice and paperless healthcare</a>
-    <p class="news-card-summary">Cloud-based electronic health record system supporting 21 years of pediatric ophthalmology practice demonstrates feasibility of paperless documentation and real-world healthcare integration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04556-7">Reinventing health communication for the digital era</a>
-    <p class="news-card-summary">Commentary on improving access to accurate, timely, evidence-based health information in the digital era as essential to global health outcomes.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04556-7/MediaObjects/41591_2026_4556_Figa_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

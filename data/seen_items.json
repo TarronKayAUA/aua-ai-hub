@@ -29120,6 +29120,80 @@
    "first_seen": "2026-08-12T21:04:31.243852+00:00",
    "kept": false,
    "reason": "daily news show recap with no standout reporting or analysis"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/merch",
+   "title_hash": "4179ce9e946046947f7780582a0bc06e",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03106-2",
+   "title_hash": "25705dcb283204b92a2f2200eba8823e",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": true,
+   "title": "Context-aware monitoring: rethinking comprehensive screening in the era of AI",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "Analysis of how Bayesian reasoning and context-aware AI can reduce false positives in AI-assisted screening of asymptomatic populations.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813",
+   "title_hash": "63a007d2ee77980069055314501f3653",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": true,
+   "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+   "source": "Simon Willison's weblog",
+   "published": "2026-08-12T23:59:23+00:00",
+   "summary": "DeepSeek released V4 Pro 0813, a new model variant available via API through OpenRouter.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers",
+   "title_hash": "a76ec02f7302bd24d1f66a73c585e926",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack",
+   "title_hash": "3e9070eed1271bff1963a93087b214cd",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42585665?fc=20260609215449&ff=20260812224845&v=2.20.1",
+   "title_hash": "b59f5c908a2293fddc02e9450a28c775",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": false,
+   "reason": "narrow application of chatbot technology without findings about AI efficacy in education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42585217?fc=20260609215449&ff=20260812224845&v=2.20.1",
+   "title_hash": "afe0cafa16fcf9bb88c77b3fa88b6a3d",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance for medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03077-4",
+   "title_hash": "22b7d460fb830380f141c27e20565fe0",
+   "first_seen": "2026-08-13T02:48:45.435134+00:00",
+   "kept": true,
+   "title": "OpenEvidence clinical question-answering platform: systematic review of early evaluations",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-12T00:00:00+00:00",
+   "summary": "Systematic review of early evaluations of the OpenEvidence clinical question-answering platform across published studies.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
   }
  ],
  "digests": [
@@ -29277,19 +29351,19 @@
  "last_digest_at": "2026-08-07T00:55:37.152446+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone CT scans for cholesteatoma diagnosis found only fair-to-moderate reproducibility, insufficient to support their use as independent diagnostic readers <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[1]</a>. Similar caution surrounds classroom use: a comparison of ChatGPT-5.1, Qwen-3 Max, and Perplexity AI on respiratory physiology exams showed substantial performance variability, suggesting institutions test models locally before adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1\">[4]</a>. Meanwhile, a cross-sectional study links heavier student dependence on generative AI to diminished critical thinking, especially among final-year and male students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1\">[5]</a>. A broader faculty and student survey confirms generative AI is now widely used despite calls for ethical guidelines and digital literacy training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[2]</a>.\n\nAlso this week: four additional papers benchmark language models on exams from neurology certification to microbiology and dental boards, while four curriculum-focused items include a review of cadaveric dissection amid growing digital and AI-supported anatomy teaching. Three papers address assessment and feedback, and one study examines simulation and skills training.",
-   "hash": "7f385531b372672f",
-   "date": "August 12, 2026"
+   "text": "A cross-sectional study links heavier generative AI use among medical students to diminished critical thinking, particularly in final-year and male students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1\">[7]</a>. That concern echoes in exam benchmarking, where ChatGPT-5.1, Qwen-3 Max, and Perplexity AI showed substantial variability on respiratory physiology questions, arguing for local evaluation before adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1\">[6]</a>. A broader faculty and student survey confirms generative AI is now widely used, though it still requires ethical guidelines and digital literacy training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[4]</a>. A project-based curriculum responds by teaching clinicians to critically evaluate and govern these tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42582818?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: additional exam benchmarking work spans neurology, orthopedics, dental, and microbiology question sets, while curriculum pieces track AI&#x27;s growing role in imaging education and general practice teaching. Assessment research includes faculty-edited AI-generated exam questions for family medicine, and a single report addresses simulation-based skills training alongside the wider shift away from cadaveric dissection.",
+   "hash": "253daaf451f7c44d",
+   "date": "August 13, 2026"
   },
   "clinical_practice": {
-   "text": "A physician-reviewed benchmark testing 500 multi-turn scenarios finds that large language models can abandon medication-safety refusals once a user declares intent to self-treat, raising questions about deployment safeguards <a href=\"https://arxiv.org/abs/2608.10258\">[2]</a>. That concern intersects with efforts to build safer, locally deployable systems: a systematic benchmark of eight small language models for emergency department decision support emphasizes designs that keep patient data on-site <a href=\"https://arxiv.org/abs/2608.10273\">[3]</a>. Elsewhere, a peer-reviewed comparison finds clinicians and AI systems produce different accuracy profiles when predicting intensive care outcomes <a href=\"https://www.nature.com/articles/s41746-026-03132-0\">[6]</a>, while nursing leaders push back on expanding clinical AI deployment without workforce input, citing safety and job-displacement risks <a href=\"https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions\">[11]</a>.\n\nAlso this week: the section carries six pieces on safety and evaluation, three each on clinical decision support and imaging and diagnostics, two on clinical documentation, and one on patient-facing tools. Coverage ranges from an ECG-based deep learning method for detecting hypertrophic cardiomyopathy to a cloud-based pediatric ophthalmology record system marking 21 years of paperless practice.",
-   "hash": "a3ba23c535d95d43",
-   "date": "August 12, 2026"
+   "text": "A physician-reviewed benchmark testing 500 three-turn scenarios finds that large language models can lose medication-safety boundaries once users declare intent to self-treat after an initial refusal <a href=\"https://arxiv.org/abs/2608.10258\">[3]</a>. The finding lands alongside a systematic review and meta-analysis assessing how reliably large language models diagnose rare diseases <a href=\"https://www.nature.com/articles/s41746-026-03109-z\">[11]</a>, and a peer-reviewed study comparing clinician and AI performance in predicting intensive care unit outcomes, work that bears directly on how much weight clinical teams should place on model output <a href=\"https://www.nature.com/articles/s41746-026-03132-0\">[7]</a>. Nursing leaders are pressing a related point, warning that expanding clinical AI deployment without workforce input raises both job-displacement and patient-safety concerns <a href=\"https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions\">[14]</a>.\n\nAlso this week: the section&#x27;s evaluation focus extends to eight items spanning benchmarking, deployment, and safety testing of clinical AI tools, alongside four papers on decision support, two on imaging and diagnostics, and one on documentation. Coverage includes phenomapping for heart failure treatment response and deep learning-based detection of hypertrophic cardiomyopathy from electrocardiograms.",
+   "hash": "31e90accbc038225",
+   "date": "August 13, 2026"
   },
   "general_ai": {
-   "text": "Meta&#x27;s release of Muse Glimmer, a 30-billion-parameter open-weight model tuned for agentic tasks under an Apache 2.0 license, stands out among new model releases, with technical notes detailing its gated local and global attention architecture <a href=\"https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer\">[13]</a>. Anthropic announced plans to embed invisible watermarks in Claude-generated text and signed metadata in files to meet European transparency rules <a href=\"https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images\">[5]</a>, alongside new scrutiny of reasoning techniques: one study finds chain-of-thought prompting can hurt performance when tasks hit a serial-depth bottleneck <a href=\"https://arxiv.org/abs/2608.09942\">[3]</a>. Edge deployment remains a parallel focus, as Hugging Face&#x27;s LFM2.5-VL-3B targets faster on-device vision-language inference <a href=\"https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b\">[1]</a>, even as a separate analysis warns that 4-bit quantization degrades performance in non-English languages.\n\nAlso this week: the section carries five research and methods papers spanning interpretability, hallucination detection, and long-document understanding, alongside four new model releases and two benchmark evaluation studies. Coverage also includes Needle 2, a 14-megabyte agentic model for phones and wearables, and continued discussion of AI&#x27;s growing role in mathematical research.",
-   "hash": "6b9c996faab5d66d",
-   "date": "August 12, 2026"
+   "text": "Anthropic&#x27;s plan to embed invisible watermarks in Claude-generated text and files, aimed at meeting European transparency rules, marks a concrete step toward regulatory compliance <a href=\"https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images\">[7]</a>. Separately, new research complicates assumptions about reasoning models: one study finds chain-of-thought prompting can hurt performance when serial computation becomes a bottleneck <a href=\"https://arxiv.org/abs/2608.09942\">[5]</a>, while another shows reasoning models often fail to ration test-time compute across multiple questions. A third paper documents a &quot;quantization tax,&quot; where compressing small language models to 4-bit precision disproportionately degrades non-English performance <a href=\"https://arxiv.org/abs/2608.09941\">[4]</a>. Meanwhile, an interview with Fields Medalist James Maynard examines how AI is reshaping mathematical research <a href=\"https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun\">[8]</a>.\n\nAlso this week: three new model releases, including DeepSeek V4 Pro and Meta&#x27;s Muse Glimmer 30B, joined three items on safety and reliability, two studies in benchmarks and evaluation, and one industry and policy update. Five additional papers cover research methods, spanning interpretability, hallucination detection, and long-document retrieval.",
+   "hash": "434577441ecf8c30",
+   "date": "August 13, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -29342,5 +29416,5 @@
    "url": "https://agentic-cinema.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-08-12"
+ "section_briefs_refreshed": "2026-08-13"
 }

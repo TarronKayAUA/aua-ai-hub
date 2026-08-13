@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Meta&#x27;s release of Muse Glimmer, a 30-billion-parameter open-weight model tuned for agentic tasks under an Apache 2.0 license, stands out among new model releases, with technical notes detailing its gated local and global attention architecture <a href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer">[13]</a>. Anthropic announced plans to embed invisible watermarks in Claude-generated text and signed metadata in files to meet European transparency rules <a href="https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images">[5]</a>, alongside new scrutiny of reasoning techniques: one study finds chain-of-thought prompting can hurt performance when tasks hit a serial-depth bottleneck <a href="https://arxiv.org/abs/2608.09942">[3]</a>. Edge deployment remains a parallel focus, as Hugging Face&#x27;s LFM2.5-VL-3B targets faster on-device vision-language inference <a href="https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b">[1]</a>, even as a separate analysis warns that 4-bit quantization degrades performance in non-English languages.</p>
-<p>Also this week: the section carries five research and methods papers spanning interpretability, hallucination detection, and long-document understanding, alongside four new model releases and two benchmark evaluation studies. Coverage also includes Needle 2, a 14-megabyte agentic model for phones and wearables, and continued discussion of AI&#x27;s growing role in mathematical research.</p>
-<p class="section-brief-date">The picture as of August 12, 2026; numbered links go to the items below.</p>
+<p>Anthropic&#x27;s plan to embed invisible watermarks in Claude-generated text and files, aimed at meeting European transparency rules, marks a concrete step toward regulatory compliance <a href="https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images">[7]</a>. Separately, new research complicates assumptions about reasoning models: one study finds chain-of-thought prompting can hurt performance when serial computation becomes a bottleneck <a href="https://arxiv.org/abs/2608.09942">[5]</a>, while another shows reasoning models often fail to ration test-time compute across multiple questions. A third paper documents a &quot;quantization tax,&quot; where compressing small language models to 4-bit precision disproportionately degrades non-English performance <a href="https://arxiv.org/abs/2608.09941">[4]</a>. Meanwhile, an interview with Fields Medalist James Maynard examines how AI is reshaping mathematical research <a href="https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun">[8]</a>.</p>
+<p>Also this week: three new model releases, including DeepSeek V4 Pro and Meta&#x27;s Muse Glimmer 30B, joined three items on safety and reliability, two studies in benchmarks and evaluation, and one industry and policy update. Five additional papers cover research methods, spanning interpretability, hallucination detection, and long-document retrieval.</p>
+<p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 12, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813">DeepSeek V4 Pro 0813 (on OpenRouter)</a>
+    <p class="news-card-summary">DeepSeek released V4 Pro 0813, a new model variant available via API through OpenRouter.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 12, 2026</span></div>
@@ -124,13 +131,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2608.08024">Prompt Embedding Probes (PEP): Hallucination Detection in LLMs from Hidden States</a>
     <p class="news-card-summary">Prompt Embedding Probes provides a white-box method for detecting hallucinations in frozen language models using hidden states without additional model training.</p>
   </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 10, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer">Introducing Muse Glimmer</a>
-    <p class="news-card-summary">Meta released Muse Glimmer, a 30-billion-parameter open-weight model under Apache 2.0 license optimized for agentic task completion with strong benchmark performance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/glimmer-pelican.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
