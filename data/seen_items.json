@@ -1,110 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels",
-   "title_hash": "898007d1cbc4f2b8a8122eee779c0d6f",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/13/luau-wasm",
-   "title_hash": "7fb49441f88da926c3baf12788280ea9",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance",
-   "title_hash": "6708412300914b534a6868102a29f8be",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4wy3p/this_is_coming_to_chinese_open_source_models",
-   "title_hash": "2a6e3fb56ed39e52d05cf3e2aa8d6ba6",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4ow2h/pi_setup_that_pretty_much_replaced_claude_code",
-   "title_hash": "93321ffffe48dd6ebb4806e031ee43c0",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4je3d/glm52_next_week_open_weight_mit",
-   "title_hash": "034617a4ad45bcc24248e91cb0f72c6f",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4fzg1/new_model_on_huggingface",
-   "title_hash": "af4d733683c30c1ac71afa64ee2a6bf1",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02868-z",
-   "title_hash": "e118eb4f941268858bb3c6f23506ddf3",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": true,
-   "title": "FairGen: preference-aligned diffusion for demographically equitable medical image synthesis",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-13T00:00:00+00:00",
-   "summary": "Peer-reviewed study presents FairGen, a method for generating medical images with demographic equity using preference-aligned diffusion models.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://arstechnica.com/space/2026/06/spacex-is-now-a-public-company-valued-for-its-ai-potential-so-what-comes-next",
-   "title_hash": "734bd918176a6679a3f76590695d5965",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=xvfz3gXVYNI",
-   "title_hash": "a2dd047db477eefefa6b7c2f696f598a",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=V1EPXfZV0Ew",
-   "title_hash": "86b87c98285dbc7c0817ea0b1158301e",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": true,
-   "title": "GLM-5.2 Is INSANE, Is This the BEST New Open Source Model?",
-   "source": "Bijan Bowen",
-   "published": "2026-06-13T23:01:50+00:00",
-   "summary": "Demonstration and evaluation of GLM-5.2, an open-source language model, across coding and reasoning tasks.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i3.ytimg.com/vi/V1EPXfZV0Ew/hqdefault.jpg",
-   "display_title": "Evaluation of GLM-5.2 open source AI model"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=qVn5BN094Qo",
-   "title_hash": "79719c8882193135c1ca319fc72a2ace",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=SxiRANj0xLs",
-   "title_hash": "0cf40a371a93d5e851db4d6aba6a7240",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Gh1E9VgXZWs",
-   "title_hash": "a1ec0d797ad73ac2ef3f02af90a248e7",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Fable-5-Shut-Down-by-US-Government-e3koa10",
-   "title_hash": "f744c54ad27b080f20ea56ba27be019b",
-   "first_seen": "2026-06-14T13:16:32.387420+00:00",
-   "kept": false
-  },
-  {
    "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink",
    "title_hash": "651148683eb6abe5804d3f7baa271ece",
    "first_seen": "2026-06-14T16:08:35.889212+00:00",
@@ -29544,6 +29440,137 @@
    "first_seen": "2026-08-13T09:34:22.854778+00:00",
    "kept": false,
    "reason": "product demo from the product's own company"
+  },
+  {
+   "url": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
+   "title_hash": "a1e5518983fea1b653eb21cc562f77c8",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "vendor marketing of Microsoft's consumer product consolidation"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now",
+   "title_hash": "f5d6ce0044c711d08ffcb83f6dbb5d1b",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 0, same core story from a less authoritative source"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03127-x",
+   "title_hash": "9001d545558206c8b2ceb180ef0d555a",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "author correction notice, not a substantive finding"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03134-y",
+   "title_hash": "c505ee03fd07ab53205867a640305f7b",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": true,
+   "title": "Beyond expertise: exploring behavioral personas in AI-assisted rare renal cancer diagnosis",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "Study examines how clinician behavior and expertise interact with AI assistance in diagnosis of rare renal cancers.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04580-7",
+   "title_hash": "28dd763d1c582acf35acdea32d20e311",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; vaccine regulation without AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04595-0",
+   "title_hash": "41010c54e67f1797724a891c928d569c",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": true,
+   "title": "How to build an AI-driven digital organism",
+   "source": "Nature Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "Perspective on designing integrated multiscale foundation models as AI-driven systems to advance biological and medical research.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00040-4",
+   "title_hash": "3f4fdb38bcdaa19f2bd17fc20b73d32d",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": true,
+   "title": "AI decision support is scaling-up fast, can the evidence keep up?",
+   "source": "Nature Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "Clinical AI decision support tools are deploying rapidly while evidence generation and evaluation frameworks struggle to keep pace.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://media.nature.com/lw1200/magazine-assets/d41591-026-00040-4/d41591-026-00040-4_50850336.jpg",
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vlyzi6/anthropic_openai_google_meta_microsoft_and",
+   "title_hash": "46fdbf4d74548a600e06f9b9cd402235",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": true,
+   "title": "Anthropic, OpenAI, Google, Meta, Microsoft, and Mistral all signed the EU Code of Practice on Transparency of AI-Generated Content",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-12T00:28:51+00:00",
+   "summary": "Major AI companies committed to EU transparency requirements including watermarking of AI-generated and AI-edited content.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/f9jt8fh79uih1.jpeg?width=640&crop=smart&auto=webp&s=94a2ca64f968166390bf8c39f36b4fe852739a18",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PtdI0KZRTLU",
+   "title_hash": "e1c060ff4ead585dd28b3d5d83b14a80",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "model comparison video with no medical or educational relevance to this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=bl2eGejkbaU",
+   "title_hash": "ab41400d4bc39e4a02be0ab401637916",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=94Td-y5z5rk",
+   "title_hash": "a60ff6c5e4cb776d02f7097f4913e29b",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Ljm3nHQQiSk",
+   "title_hash": "20455616044bbbd65ce2ed65d1afeb1a",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=_HCks5jkPLw",
+   "title_hash": "be25557e4568836e91e38c8457b2a8b7",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mOAHWk24D28",
+   "title_hash": "04082701db8fef7348bce836826e586c",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jAkB_qeATag",
+   "title_hash": "c74413d8e3902be4c2ba52a3d669414b",
+   "first_seen": "2026-08-13T13:50:00.355898+00:00",
+   "kept": false,
+   "reason": "conceptual overview video with no current developments or relevance to medical education and practice"
   }
  ],
  "digests": [

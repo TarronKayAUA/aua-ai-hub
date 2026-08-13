@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -35,6 +35,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03106-2">Context-aware monitoring: rethinking comprehensive screening in the era of AI</a>
     <p class="news-card-summary">Analysis of how Bayesian reasoning and context-aware AI can reduce false positives in AI-assisted screening of asymptomatic populations.</p>
   </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03134-y">Beyond expertise: exploring behavioral personas in AI-assisted rare renal cancer diagnosis</a>
+    <p class="news-card-summary">Study examines how clinician behavior and expertise interact with AI assistance in diagnosis of rare renal cancers.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04595-0">How to build an AI-driven digital organism</a>
+    <p class="news-card-summary">Perspective on designing integrated multiscale foundation models as AI-driven systems to advance biological and medical research.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00040-4">AI decision support is scaling-up fast, can the evidence keep up?</a>
+    <p class="news-card-summary">Clinical AI decision support tools are deploying rapidly while evidence generation and evaluation frameworks struggle to keep pace.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00040-4/d41591-026-00040-4_50850336.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
@@ -106,27 +128,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03109-z">Diagnostic accuracy of large language models for rare diseases: a systematic review and meta-analysis</a>
     <p class="news-card-summary">A systematic review and meta-analysis evaluates diagnostic accuracy of large language models for rare diseases.</p>
   </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03077-4">OpenEvidence clinical question-answering platform: systematic review of early evaluations</a>
-    <p class="news-card-summary">Systematic review of early evaluations of the OpenEvidence clinical question-answering platform across published studies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91844">Influenza-Like Illness Forecasting Using Multisource Data: Comparative Deep Learning Study</a>
-    <p class="news-card-summary">Comparative deep learning study developed and evaluated models combining internet searches and mobility data with traditional surveillance to forecast influenza-like illness incidence.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions">STAT+: Nurses seek a seat at the table as they fight expanding clinical AI</a>
-    <p class="news-card-summary">Nursing leaders raise concerns about job displacement and patient safety risks from expanding clinical AI deployment without adequate workforce input.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1222271719-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -264,9 +264,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -282,6 +282,28 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03106-2">Context-aware monitoring: rethinking comprehensive screening in the era of AI</a>
         <p class="news-card-summary">Analysis of how Bayesian reasoning and context-aware AI can reduce false positives in AI-assisted screening of asymptomatic populations.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03134-y">Beyond expertise: exploring behavioral personas in AI-assisted rare renal cancer diagnosis</a>
+        <p class="news-card-summary">Study examines how clinician behavior and expertise interact with AI assistance in diagnosis of rare renal cancers.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04595-0">How to build an AI-driven digital organism</a>
+        <p class="news-card-summary">Perspective on designing integrated multiscale foundation models as AI-driven systems to advance biological and medical research.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00040-4">AI decision support is scaling-up fast, can the evidence keep up?</a>
+        <p class="news-card-summary">Clinical AI decision support tools are deploying rapidly while evidence generation and evaluation frameworks struggle to keep pace.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00040-4/d41591-026-00040-4_50850336.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -600,9 +622,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -661,6 +683,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.09942">When Chain-of-Thought Helps and When It Hurts: An Empirical Investigation of the Serial-Depth Bottleneck in LLM Reasoning</a>
         <p class="news-card-summary">An empirical study identifies cases where chain-of-thought prompting hurts large language model reasoning due to serial computational bottlenecks, clarifying when this technique helps.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 12, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vlyzi6/anthropic_openai_google_meta_microsoft_and">Anthropic, OpenAI, Google, Meta, Microsoft, and Mistral all signed the EU Code of Practice on Transparency of AI-Generated Content</a>
+        <p class="news-card-summary">Major AI companies committed to EU transparency requirements including watermarking of AI-generated and AI-edited content.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/f9jt8fh79uih1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=94a2ca64f968166390bf8c39f36b4fe852739a18" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -1023,7 +1053,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 3 episodes"
+??? abstract "Show the 2 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
@@ -1037,12 +1067,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">The Hidden Gender Gap in AI Education, with Juliana Peloche</span>
       <span class="video-card-meta">AI in Education Podcast, August 6, 2026</span>
       <span class="video-card-desc">Episode explores underrepresentation of women and girls in artificial intelligence education and its causes.</span>
-    </a>
-    <a class="video-card" href="https://share.transistor.fm/s/063cfaad" target="_blank" rel="noopener">
-      <img src="https://img.transistorcdn.com/Rd4TVng9FvCHld5mIVx4EYiKPtyGdDsQdsNUW6WrTkA/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mNmVk/MTg5ZDU1MDdkYWNi/MjU3MDg1YmY1Zjhj/NWJjZC5wbmc.jpg" alt="Podcast: Models, Harnesses, and Multi-Agent Systems" loading="lazy">
-      <span class="video-card-title">Models, Harnesses, and Multi-Agent Systems</span>
-      <span class="video-card-meta">Practical AI, August 6, 2026</span>
-      <span class="video-card-desc">An explanation of AI models, agents, harnesses, and multi-agent systems for those new to current AI terminology and concepts.</span>
     </a>
     </div>
 
