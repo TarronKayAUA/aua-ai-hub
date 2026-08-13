@@ -29697,6 +29697,180 @@
    "first_seen": "2026-08-13T17:14:28.556358+00:00",
    "kept": false,
    "reason": "off-topic; historical computing anniversary unrelated to artificial intelligence or medicine"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e90192",
+   "title_hash": "4dfbbf1a078594efe8f6ccca99cd2e1e",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "AI Integration in Undergraduate Medical Education: Qualitative Study of Faculty Perspectives in the United Arab Emirates",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-13T20:30:05+00:00",
+   "summary": "Qualitative study explores perspectives of medical faculty in the United Arab Emirates on integrating AI into undergraduate medical education, addressing faculty views in non-Western contexts.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e88082",
+   "title_hash": "12d4487dc2dd3e6f9a3b8f81a1e9c0f9",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "Large Language Models for Mental Health Prediction: Scoping Review of Bias and Clinical Utility Documentation in 2019-2024",
+   "source": "JMIR AI",
+   "published": "2026-08-13T20:30:05+00:00",
+   "summary": "Scoping review identifies bias and clinical utility gaps in large language models designed for mental health prediction across 2019-2024 literature.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e89834",
+   "title_hash": "41e9e9b211d2cebae0a74dc8e4bab97b",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "Real-World Barriers to and Facilitators of Implementing AI-Based Clinical Decision Support Systems: Scoping Review",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-13T20:30:05+00:00",
+   "summary": "Scoping review synthesizes real-world barriers and facilitators to implementation of AI-based clinical decision support systems in actual health care settings.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
+   "title_hash": "196184753ad315083c56535197124d3a",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e94951",
+   "title_hash": "a26c75bee84844fcbfba0186ddc06094",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "Integrating Generative AI Into Clinical Reasoning Education for Medical Students: Mixed Methods Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-13T18:15:08+00:00",
+   "summary": "Mixed methods study evaluates integration of generative AI with clinical reasoning frameworks to develop student competencies in prompt design, output verification, and limitation recognition.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop",
+   "title_hash": "a9166323e80461de434bc256e15dff98",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "off-topic: opinion commentary on design unrelated to AI in medicine or education"
+  },
+  {
+   "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+   "title_hash": "2b8747c3bcf3f0921d533f859d706a13",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vn9it4/deepseekaideepseekv4pro0813_hugging_face",
+   "title_hash": "ca63d8b2958988ed568ecfde80ac70a0",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "minor release notes and forum discussion without substantial analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vn8m1x/deepseek_were_launching_deepseekv4pro_today",
+   "title_hash": "55a1fc1589ae51ffb50d983c47c1ca30",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "DeepSeek: We’re launching DeepSeek-V4-Pro today!",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-13T11:56:04+00:00",
+   "summary": "DeepSeek released DeepSeek-V4-Pro, a new language model version.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/amc67w5ts4jh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=ef7aad754bc6d06eac6ce07dbc90663abf3c4784",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03135-x",
+   "title_hash": "22e18be9846496313529f81fe8581063",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "UniMedDiff: a knowledge-enhanced diffusion model for medical image generation from clinical reports",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "Peer-reviewed study presents UniMedDiff, a knowledge-enhanced diffusion model for generating medical images from clinical reports.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03136-w",
+   "title_hash": "9c37b32a05174a4149bf9b1d8d79d1de",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "Developing a scalable pipeline for data extraction from clinical letters through resource-efficient prompt engineering",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "Peer-reviewed study develops a resource-efficient prompt engineering pipeline for extracting structured data from clinical letters at scale.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03069-4",
+   "title_hash": "106b641b37ad57052b9e2a077068f627",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "Role prompting modulates linguistic style but not clinical decision structure in GPT-5 tumour board simulation",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-13T00:00:00+00:00",
+   "summary": "Peer-reviewed study examines how role prompting affects linguistic style and clinical decision-making in GPT-5 simulated tumor board discussions.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=rdYBjpylJUQ",
+   "title_hash": "7f39c67d17a6d98cfe1677894c21069d",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "reaction video to unconfirmed model release; no substantive demonstration or analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=W-HhMUe9hOg",
+   "title_hash": "32aab50253e5dcdf439a251075b0679b",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "product feature announcement from vendor's own channel without substantive educational or capability-change content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WCwT4gWpHmI",
+   "title_hash": "19aec088478bde9d044843613fd4490b",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "product feature announcement from vendor's own channel; not a significant capability change or benchmark"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Grok-4-6-Shows-How-Fast-Your-AI-Options-Are-Expanding-e3ncdop",
+   "title_hash": "e4b36fbc7e3c7df074144562d62d2544",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": false,
+   "reason": "daily news recap of model release and market positioning, routine coverage without substantive analysis"
+  },
+  {
+   "url": "https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn",
+   "title_hash": "ec275cf0ff486569d10b2566dc3f0a88",
+   "first_seen": "2026-08-13T21:04:52.999849+00:00",
+   "kept": true,
+   "title": "Is AI Helping Students Perform, or Actually Learn?",
+   "source": "AI in Education Podcast",
+   "published": "2026-08-13T20:22:00+00:00",
+   "summary": "Discussion of whether AI improves student performance versus learning, EU transparency requirements, and AI watermarking for detection reliability.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
   }
  ],
  "digests": [

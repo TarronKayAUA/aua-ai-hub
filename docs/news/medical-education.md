@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90192">AI Integration in Undergraduate Medical Education: Qualitative Study of Faculty Perspectives in the United Arab Emirates</a>
+    <p class="news-card-summary">Qualitative study explores perspectives of medical faculty in the United Arab Emirates on integrating AI into undergraduate medical education, addressing faculty views in non-Western contexts.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94951">Integrating Generative AI Into Clinical Reasoning Education for Medical Students: Mixed Methods Study</a>
+    <p class="news-card-summary">Mixed methods study evaluates integration of generative AI with clinical reasoning frameworks to develop student competencies in prompt design, output verification, and limitation recognition.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42576362?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">The dead still teach the living: Body donor dissection in the digital age of anatomy education</a>
     <p class="news-card-summary">Review examines the role of cadaveric dissection in medical anatomy curricula as digital platforms, simulation, and AI-supported learning reshape anatomy education alongside reduced curricular time.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Comparative benchmarking of three artificial intelligence chatbots (ChatGPT-5.1, Qwen- 3 Max, and Perplexity AI) on faculty validated undergraduate respiratory physiology multiple-choice examinations</a>
-    <p class="news-card-summary">Comparison of ChatGPT-5.1, Qwen-3 Max, and Perplexity AI on respiratory physiology multiple-choice exams showed substantial performance variability, suggesting institutions should evaluate models locally before adoption.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">Dependence on Generative Artificial Intelligence Among Medical Students and Its Association With Critical Thinking: A Cross-Sectional Study</a>
-    <p class="news-card-summary">Study of medical students found that greater dependence on generative AI is independently associated with diminished critical thinking, particularly in final-year and male students.</p>
   </div>
 </div>
 </div>

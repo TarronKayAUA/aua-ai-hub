@@ -18,10 +18,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90192">AI Integration in Undergraduate Medical Education: Qualitative Study of Faculty Perspectives in the United Arab Emirates</a>
+        <p class="news-card-summary">Qualitative study explores perspectives of medical faculty in the United Arab Emirates on integrating AI into undergraduate medical education, addressing faculty views in non-Western contexts.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94951">Integrating Generative AI Into Clinical Reasoning Education for Medical Students: Mixed Methods Study</a>
+        <p class="news-card-summary">Mixed methods study evaluates integration of generative AI with clinical reasoning frameworks to develop student competencies in prompt design, output verification, and limitation recognition.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
@@ -292,10 +306,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 53 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88082">Large Language Models for Mental Health Prediction: Scoping Review of Bias and Clinical Utility Documentation in 2019-2024</a>
+        <p class="news-card-summary">Scoping review identifies bias and clinical utility gaps in large language models designed for mental health prediction across 2019-2024 literature.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89834">Real-World Barriers to and Facilitators of Implementing AI-Based Clinical Decision Support Systems: Scoping Review</a>
+        <p class="news-card-summary">Scoping review synthesizes real-world barriers and facilitators to implementation of AI-based clinical decision support systems in actual health care settings.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 13, 2026</span></div>
@@ -338,6 +366,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03143-x">Causal inference framework for personalised b/tsDMARD selection in rheumatoid arthritis: ANSWER cohort validation</a>
         <p class="news-card-summary">A causal inference framework for personalizing b/tsDMARD selection in rheumatoid arthritis shows validation on an ANSWER cohort.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03135-x">UniMedDiff: a knowledge-enhanced diffusion model for medical image generation from clinical reports</a>
+        <p class="news-card-summary">Peer-reviewed study presents UniMedDiff, a knowledge-enhanced diffusion model for generating medical images from clinical reports.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03136-w">Developing a scalable pipeline for data extraction from clinical letters through resource-efficient prompt engineering</a>
+        <p class="news-card-summary">Peer-reviewed study develops a resource-efficient prompt engineering pipeline for extracting structured data from clinical letters at scale.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03069-4">Role prompting modulates linguistic style but not clinical decision structure in GPT-5 tumour board simulation</a>
+        <p class="news-card-summary">Peer-reviewed study examines how role prompting affects linguistic style and clinical decision-making in GPT-5 simulated tumor board discussions.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -650,9 +699,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -669,6 +718,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A comparison of prompt outputs across 11 language models demonstrates significant variation in response quality and style.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.sanity.io/images/o0o2tn5x/production/61190f2745496c269dd071680edec773a29eaef7-1800x1013.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 13, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vn8m1x/deepseek_were_launching_deepseekv4pro_today">DeepSeek: We’re launching DeepSeek-V4-Pro today!</a>
+        <p class="news-card-summary">DeepSeek released DeepSeek-V4-Pro, a new language model version.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/amc67w5ts4jh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=ef7aad754bc6d06eac6ce07dbc90663abf3c4784" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -1085,9 +1142,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 2 episodes"
+??? abstract "Show the 3 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn" target="_blank" rel="noopener">
+      <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI Helping Students Perform, or Actually Learn?" loading="lazy">
+      <span class="video-card-title">Is AI Helping Students Perform, or Actually Learn?</span>
+      <span class="video-card-meta">AI in Education Podcast, August 13, 2026</span>
+      <span class="video-card-desc">Discussion of whether AI improves student performance versus learning, EU transparency requirements, and AI watermarking for detection reliability.</span>
+    </a>
     <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
       <img src="https://megaphone.imgix.net/podcasts/425d0b1a-9364-11f1-89b7-8f18e1951ec7/image/a013bf9d538b3f904596d5dc68137112.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent" loading="lazy">
       <span class="video-card-title">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</span>

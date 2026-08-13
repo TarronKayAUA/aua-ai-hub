@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI Helping Students Perform, or Actually Learn?" loading="lazy">
+  <span class="video-card-title">Is AI Helping Students Perform, or Actually Learn?</span>
+  <span class="video-card-meta">AI in Education Podcast, August 13, 2026</span>
+  <span class="video-card-desc">Discussion of whether AI improves student performance versus learning, EU transparency requirements, and AI watermarking for detection reliability.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/425d0b1a-9364-11f1-89b7-8f18e1951ec7/image/a013bf9d538b3f904596d5dc68137112.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent" loading="lazy">
   <span class="video-card-title">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</span>

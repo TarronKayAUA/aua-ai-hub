@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88082">Large Language Models for Mental Health Prediction: Scoping Review of Bias and Clinical Utility Documentation in 2019-2024</a>
+    <p class="news-card-summary">Scoping review identifies bias and clinical utility gaps in large language models designed for mental health prediction across 2019-2024 literature.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89834">Real-World Barriers to and Facilitators of Implementing AI-Based Clinical Decision Support Systems: Scoping Review</a>
+    <p class="news-card-summary">Scoping review synthesizes real-world barriers and facilitators to implementation of AI-based clinical decision support systems in actual health care settings.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 13, 2026</span></div>
@@ -65,6 +79,27 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A causal inference framework for personalizing b/tsDMARD selection in rheumatoid arthritis shows validation on an ANSWER cohort.</p>
   </div>
 </div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03135-x">UniMedDiff: a knowledge-enhanced diffusion model for medical image generation from clinical reports</a>
+    <p class="news-card-summary">Peer-reviewed study presents UniMedDiff, a knowledge-enhanced diffusion model for generating medical images from clinical reports.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03136-w">Developing a scalable pipeline for data extraction from clinical letters through resource-efficient prompt engineering</a>
+    <p class="news-card-summary">Peer-reviewed study develops a resource-efficient prompt engineering pipeline for extracting structured data from clinical letters at scale.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03069-4">Role prompting modulates linguistic style but not clinical decision structure in GPT-5 tumour board simulation</a>
+    <p class="news-card-summary">Peer-reviewed study examines how role prompting affects linguistic style and clinical decision-making in GPT-5 simulated tumor board discussions.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 12, 2026</span></div>
@@ -92,41 +127,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03125-z">Natural language processing application in electronic health records studies for psychosis: a systematic review</a>
     <p class="news-card-summary">A systematic review surveys natural language processing applications in electronic health record studies of psychosis, assessing clinical utility and evidence quality.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03138-8">Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction</a>
-    <p class="news-card-summary">A phenomapping-derived tool predicts individual patient response to sacubitril-valsartan in heart failure with preserved ejection fraction.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03132-0">Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit</a>
-    <p class="news-card-summary">A peer-reviewed comparison of artificial intelligence versus clinician performance in predicting patient outcomes in intensive care.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03120-4">Automated limb motor assessment in Parkinson’s disease via a time-frequency state-space model</a>
-    <p class="news-card-summary">A time-frequency state-space model automates assessment of limb motor function in Parkinson&#x27;s disease patients.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03130-2">End-to-end deep learning, based electrocardiographic analysis for the detection of hypertrophic cardiomyopathy</a>
-    <p class="news-card-summary">Published research describes an end-to-end deep learning approach for detecting hypertrophic cardiomyopathy from electrocardiographic signals.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04568-3">Frugal AI is the missing piece in cervical cancer screening</a>
-    <p class="news-card-summary">Nature Medicine analysis argues that cervical cancer screening in low-resource settings requires efficient, explainable AI models with local calibration rather than complex approaches.</p>
   </div>
 </div>
 </div>

@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="new-models">
@@ -36,6 +36,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A comparison of prompt outputs across 11 language models demonstrates significant variation in response quality and style.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.sanity.io/images/o0o2tn5x/production/61190f2745496c269dd071680edec773a29eaef7-1800x1013.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vn8m1x/deepseek_were_launching_deepseekv4pro_today">DeepSeek: We’re launching DeepSeek-V4-Pro today!</a>
+    <p class="news-card-summary">DeepSeek released DeepSeek-V4-Pro, a new language model version.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/amc67w5ts4jh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=ef7aad754bc6d06eac6ce07dbc90663abf3c4784" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -125,13 +133,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Unsloth released a desktop application for running and training open-source models locally across Mac, Windows, and Linux, supporting MLX, diffusion, audio models, and GGUF formats.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/Z3J5Zm50ZWRicmloMTYBeDWCK4xeu5RSagED4X3V45DmVqtj8jdzgTMEyWCB.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=358f4006aab83cdaa7ec385a75d9ce47b4647baa" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images">Claude will apply invisible watermarks to AI text and images</a>
-    <p class="news-card-summary">Anthropic announced plans to embed machine-readable watermarks in Claude-generated text and digitally signed metadata in files to comply with European AI transparency regulations.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STKB364_CLAUDE_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
