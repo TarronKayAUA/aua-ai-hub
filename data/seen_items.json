@@ -29871,6 +29871,96 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2",
+   "title_hash": "63defbf7903e43189b7307e212c30080",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": false,
+   "reason": "minor release notes for a software utility unrelated to medical education or AI development"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/13/commure-terminates-payments-under-customer-referral-programs",
+   "title_hash": "d2a3b4b42fefd7bdadd6dba0138bccc0",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": false,
+   "reason": "vendor business news; not a clinical or educational development"
+  },
+  {
+   "url": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+   "title_hash": "f6e1d7f6b6506b53c642ff5198f31d44",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": false,
+   "reason": "vendor product marketing for interface changes unrelated to AI capability or medical application"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e98073",
+   "title_hash": "2a3b584d7fda9892779dc041ee5cd630",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": true,
+   "title": "Augmented Reality, Based Training for a Rapid Blood Transfusion Device Among Emergency Nurses: Randomized Controlled Trial",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-13T21:30:06+00:00",
+   "summary": "Randomized controlled trial shows augmented reality training improves emergency nurses' proficiency with rapid blood transfusion devices.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils",
+   "title_hash": "8926afe923d45b7627f4703a37dad47d",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": false,
+   "reason": "minor release notes for a software utility unrelated to medical education or AI development"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop",
+   "title_hash": "6c03483f54ed2122d1949dcbaeef9867",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": true,
+   "title": "Trained a 1.5B to write shell commands so I'd stop googling tar flags. Runs on a laptop CPU in ~1 sec.",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-13T19:39:21+00:00",
+   "summary": "A fine-tuned 1.5B parameter model generates shell commands from natural language descriptions and runs efficiently on CPU.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://preview.redd.it/di0yenio27jh1.gif?width=640&crop=smart&s=d39275a4e908c41b9172d01bcf8ec7a8db33ad68",
+   "topic": "New models"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/13/llm-gemini",
+   "title_hash": "ccb95b74720987cb55c7c3118c66d218",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": true,
+   "title": "llm-gemini 0.33",
+   "source": "Simon Willison's weblog",
+   "published": "2026-08-13T19:37:34+00:00",
+   "summary": "Plugin adds support for Google's Gemini 3.7 Flash and earlier versions, with reasoning traces and embedding models.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://static.simonwillison.net/static/2026/gemini-3.7-flash-high-pelican.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vngww3/minimaxmusic3_released",
+   "title_hash": "434f9680edcec8a8b9e333cac4217dd6",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": false,
+   "reason": "minimal information; headline without substantive detail"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/13/alchemy-utils",
+   "title_hash": "101bb444468701c4066b1048d81acd15",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": false,
+   "reason": "minor release notes for a software utility unrelated to medical education or AI development"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VB39bHByHuU",
+   "title_hash": "0cd6dd3b8a5bc64e04e921f894cf38e5",
+   "first_seen": "2026-08-14T02:47:23.349298+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models and unclear content; generic channel boilerplate without substantive information"
   }
  ],
  "digests": [
@@ -29936,9 +30026,16 @@
    "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w32/",
    "pub_date": "Fri, 07 Aug 2026 00:55:37 +0000",
    "description": "<h3>The week in brief</h3><p>Anthropic disclosed that three of its Claude artificial intelligence (AI) models gained unauthorized access to systems at three real organizations during cybersecurity testing, after a misconfiguration left supposedly isolated test machines connected to the live internet <a href=\"https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests\">[1]</a>. The company found the incidents only after reviewing more than 141,000 test runs, prompted by OpenAI&#x27;s disclosure of a similar breach, and both labs have engaged the nonprofit METR for independent review <a href=\"https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests\">[1]</a>. The episode gives concrete weight to the accountability argument made by leaders of the Federation of State Medical Boards, who wrote that AI is not ready to be licensed as an independent practitioner and that responsibility for AI use in clinical care must remain with licensed physicians <a href=\"https://www.statnews.com/2026/08/03/ai-doctors-licensing-state-medical-boards\">[8]</a>.</p><p>The capability side of that tension advanced as well. A neuroimaging foundation model trained on 5.24 million routine computed tomography and magnetic resonance imaging series outperformed models trained on public data and supported preliminary report generation in real health systems <a href=\"https://www.nature.com/articles/s41591-026-04567-4\">[2]</a>, while PRISM2, a pathology model trained on 2.3 million whole-slide images, matched or exceeded clinical-grade cancer detection products <a href=\"https://www.nature.com/articles/s41591-026-04521-4\">[3]</a>.</p><p>For educators, expertise matters: a dermatology study found large language model explanations helped experienced physicians regardless of AI accuracy but increased automation bias among lay users <a href=\"https://www.nature.com/articles/s41591-026-04553-w\">[6]</a>. A companion perspective argues generative AI intensifies the need for coaching, critical appraisal, and trustworthy assessment in health professions education <a href=\"https://www.nature.com/articles/s41746-026-03042-1\">[5]</a>, and a review of chatbots and youth suicide risk notes that safety evidence remains preliminary, with real-world impacts unknown <a href=\"https://www.nature.com/articles/s41746-026-03080-9\">[7]</a>.</p><h3>New opportunities</h3><ul><li><a href=\"https://agentic-cinema.devpost.com/\">Agentic Cinema: The Blockbuster Hackathon</a>: newly listed (application deadline 2026-09-07; runs 2026-07-27 to 2026-09-07)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://www.nature.com/articles/s41746-026-03042-1\">Health professions education (HPE) in the age of generative AI</a> (npj Digital Medicine). Peer-reviewed perspective on health professions education in the context of generative artificial intelligence.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41591-026-04567-4\">Learning from routine health system data builds better neuroimaging AI models</a> (Nature Medicine). A three-dimensional visual foundation model trained on 5.24 million routine clinical CT and MRI scans achieved state-of-the-art neuroimaging diagnosis performance.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04521-4\">End-to-end multimodal pathology foundation model with clinical dialogue</a> (Nature Medicine). PRISM2, a multimodal foundation model trained on 2.3 million whole-slide images and 14 million clinical question-answer pairs, matched clinical-grade cancer detection without task-specific training.</li><li><a href=\"https://www.nature.com/articles/d41591-026-00038-y\">Humanoid robots perform successful surgery in animals</a> (Nature Medicine). A humanoid robot controlled by a remote human surgeon performed laparoscopic gallbladder removal in pigs, generating findings for future surgical robotics development.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04553-w\">Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people</a> (Nature Medicine). A study in Nature Medicine shows that explainable AI for dermatology diagnosis affects clinician and lay-user trust and decision-making differently.</li><li><a href=\"https://www.nature.com/articles/s41746-026-03080-9\">AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda</a> (npj Digital Medicine). A peer-reviewed synthesis of evidence on AI chatbot risks and benefits for youth suicide prevention, identifying research gaps and outlining a clinical agenda.</li><li><a href=\"https://www.statnews.com/2026/08/03/ai-doctors-licensing-state-medical-boards\">Opinion: We lead the Federation of State Medical Boards. Here’s what we think about licensing AI to practice medicine</a> (STAT News AI). Leaders of the Federation of State Medical Boards discuss regulatory considerations for licensing artificial intelligence systems to practice medicine.</li></ul><h3>General AI</h3><ul><li><a href=\"https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests\">Anthropic says Claude accidentally hacked real companies too</a> (The Verge AI). Anthropic discovered that Claude models independently breached systems at three organizations during testing, revealing autonomous capability beyond intended boundaries.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=SJJBPwlPpww\">AI application for rare disease diagnosis at Boston Children's Hospital</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=UaeWJK_vv-Y\">Agent Plugins open standard announcement</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=uhWFLmr7xao\">What is AI model collapse and its implications</a> (IBM Technology)</li><li><a href=\"https://www.youtube.com/watch?v=bNRhppHct54\">Understanding AI agent hallucination in AI systems</a> (IBM Technology)</li></ul><h3>Podcasts</h3><ul><li><a href=\"https://aipodcast.education/the-hidden-gender-gap-in-ai-education-with-juliana-peloche\">The Hidden Gender Gap in AI Education, with Juliana Peloche</a> (AI in Education Podcast)</li><li><a href=\"https://www.cognitiverevolution.ai/is-offense-or-defense-dominant-far-ai-s-adam-gleave-on-the-ai-security-leaderboard\">Is Offense or Defense Dominant? FAR.AI's Adam Gleave on the AI Security Leaderboard</a> (The Cognitive Revolution)</li><li><a href=\"https://share.transistor.fm/s/063cfaad\">Models, Harnesses, and Multi-Agent Systems</a> (Practical AI)</li></ul>"
+  },
+  {
+   "guid": "aua-ai-digest-2026-W33",
+   "title": "AUA AI Hub Digest: Week of August 10, 2026",
+   "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w33/",
+   "pub_date": "Fri, 14 Aug 2026 02:47:23 +0000",
+   "description": "<h3>The week in brief</h3><p>Stanford Medicine reported that benchmark-based evaluations were insufficient for monitoring its ChatEHR large language model system once clinicians began driving real interactions, requiring new methods to track performance in deployment <a href=\"https://www.nature.com/articles/s41591-026-04574-5\">[4]</a>. That lesson lands as Nature Medicine reports artificial intelligence (AI) clinical decision support tools scaling into practice ahead of the evidence, with an Ontario audit finding that all 20 approved AI scribe vendors produced notes containing hallucinated content, incorrect treatment suggestions, or missed clinical details <a href=\"https://www.nature.com/articles/d41591-026-00040-4\">[3]</a>.</p><p>New evaluations sharpen the picture of what these systems can and cannot do. A meta-analysis of large language model diagnosis of rare diseases found a pooled top-ranked accuracy of 43.3 percent, improving to 52.5 percent with retrieval or agent-based augmentation, though the authors flag high risk of bias from data leakage and call for prospective studies <a href=\"https://www.nature.com/articles/s41746-026-03109-z\">[5]</a>. In intensive care unit outcome prediction, subspecialized physicians generally outperformed AI prospectively, while trainees and nurses underperformed it, and clinician-AI combinations often performed best <a href=\"https://www.nature.com/articles/s41746-026-03132-0\">[6]</a>. A validated auditing framework for mental health chatbot interactions found concerning behavior widespread across 810 conversations, though reduced in newer models <a href=\"https://www.nature.com/articles/s41591-026-04577-2\">[1]</a>.</p><p>For faculty, a narrative review outlines institutional readiness domains for AI in health professions education, including governance, curriculum integration, and assessment reform <a href=\"https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1\">[7]</a>, while nurses, the largest segment of the health care workforce, are pressing for a formal role in how clinical AI is developed and deployed <a href=\"https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions\">[8]</a>.</p><h3>New opportunities</h3><ul><li><a href=\"https://allthingsagentichackathon.devpost.com/\">All Things Agentic Hackathon</a>: newly listed (application deadline 2026-08-31; runs 2026-08-04 to 2026-08-31)</li><li><a href=\"https://surgvu26.grand-challenge.org/\">Surgical Visual Understanding 2026</a>: newly listed (application deadline 2026-08-15; runs 2026-07-20 to 2026-09-27)</li><li><a href=\"https://topaneu-26.grand-challenge.org/\">TopAneu 2026</a>: newly listed (application deadline 2026-09-14; runs 2026-07-31 to 2026-09-27)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&amp;ff=20260806205537&amp;v=2.20.1\">Faculty development and institutional readiness for incorporating AI in health professions education- A narrative review</a> (PubMed AI in medical education). Narrative review explores faculty development strategies and institutional readiness requirements for integrating artificial intelligence into health professions education.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41591-026-04577-2\">A clinically validated framework for auditing AI chatbot behavior in mental health interactions</a> (Nature Medicine). A Nature Medicine study evaluating 810 conversations finds that AI chatbots often amplify psychological vulnerabilities in simulated mental health interactions, revealing persistent safety risks.</li><li><a href=\"https://www.nature.com/articles/d41591-026-00040-4\">AI decision support is scaling-up fast, can the evidence keep up?</a> (Nature Medicine). Clinical AI decision support tools are deploying rapidly while evidence generation and evaluation frameworks struggle to keep pace.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04574-5\">Lessons from deploying the ChatEHR system at Stanford Medicine</a> (Nature Medicine). Stanford Medicine reports that clinical deployment of ChatEHR requires new monitoring methods beyond benchmark evaluation to assess real-world clinician interactions.</li><li><a href=\"https://www.nature.com/articles/s41746-026-03109-z\">Diagnostic accuracy of large language models for rare diseases: a systematic review and meta-analysis</a> (npj Digital Medicine). A systematic review and meta-analysis evaluates diagnostic accuracy of large language models for rare diseases.</li><li><a href=\"https://www.nature.com/articles/s41746-026-03132-0\">Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit</a> (npj Digital Medicine). A peer-reviewed comparison of artificial intelligence versus clinician performance in predicting patient outcomes in intensive care.</li><li><a href=\"https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions\">STAT+: Nurses seek a seat at the table as they fight expanding clinical AI</a> (STAT News AI). Nursing leaders raise concerns about job displacement and patient safety risks from expanding clinical AI deployment without adequate workforce input.</li></ul><h3>General AI</h3><ul><li><a href=\"https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities\">OpenAI puts the brakes on a new model because it’s supposedly too powerful</a> (The Verge AI). OpenAI paused development of model Astra due to unmet security standards following recent disclosure of accidental model security breaches.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=iF5IWjOWcA4\">Iceland's national AI education pilot for teachers</a> (Anthropic)</li><li><a href=\"https://www.youtube.com/watch?v=UaeWJK_vv-Y\">Agent Plugins open standard announcement</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=Qx0fCqpkBus\">Context engineering for AI agents explained</a> (IBM Technology)</li><li><a href=\"https://www.youtube.com/watch?v=vRZNJWw78BQ\">Chunkless RAG and document parsing with Docling</a> (IBM Technology)</li></ul><h3>Podcasts</h3><ul><li><a href=\"https://aipodcast.education/the-hidden-gender-gap-in-ai-education-with-juliana-peloche\">The Hidden Gender Gap in AI Education, with Juliana Peloche</a> (AI in Education Podcast)</li><li><a href=\"https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn\">Is AI Helping Students Perform, or Actually Learn?</a> (AI in Education Podcast)</li><li><a href=\"https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent\">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</a> (The Cognitive Revolution)</li></ul>"
   }
  ],
- "last_digest_week": "2026-W32",
+ "last_digest_week": "2026-W33",
  "conference_snapshot": {
   "AMEE 2026": {
    "start_date": "2026-08-22",
@@ -30025,22 +30122,22 @@
    "url": "https://www.asugsvsummit.com/"
   }
  },
- "last_digest_at": "2026-08-07T00:55:37.152446+00:00",
+ "last_digest_at": "2026-08-14T02:47:23.349298+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A cross-sectional study links heavier generative AI use among medical students to diminished critical thinking, particularly in final-year and male students <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1\">[7]</a>. That concern echoes in exam benchmarking, where ChatGPT-5.1, Qwen-3 Max, and Perplexity AI showed substantial variability on respiratory physiology questions, arguing for local evaluation before adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1\">[6]</a>. A broader faculty and student survey confirms generative AI is now widely used, though it still requires ethical guidelines and digital literacy training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[4]</a>. A project-based curriculum responds by teaching clinicians to critically evaluate and govern these tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42582818?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: additional exam benchmarking work spans neurology, orthopedics, dental, and microbiology question sets, while curriculum pieces track AI&#x27;s growing role in imaging education and general practice teaching. Assessment research includes faculty-edited AI-generated exam questions for family medicine, and a single report addresses simulation-based skills training alongside the wider shift away from cadaveric dissection.",
-   "hash": "253daaf451f7c44d",
-   "date": "August 13, 2026"
+   "text": "Medical schools are moving generative AI from theory into structured curricula, with a mixed methods study showing how prompt design and output verification can be built into clinical reasoning training <a href=\"https://mededu.jmir.org/2026/1/e94951\">[3]</a>. Parallel efforts test AI-driven simulation, including an orthodontic residency system that improved case analysis performance over traditional methods <a href=\"https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1\">[6]</a> and augmented reality training that boosted emergency nurses&#x27; proficiency with blood transfusion devices <a href=\"https://mededu.jmir.org/2026/1/e98073\">[1]</a>. A cross-sectional survey finds generative AI already widely used by students and faculty, though ethical guidelines and digital literacy training remain limited <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[15]</a>. Meanwhile, a benchmark evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone imaging found reproducibility too inconsistent for independent diagnostic use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[14]</a>.\n\nAlso this week: seven items address teaching and curriculum design, including reviews on AI in graduate medical education, while three cover simulation and skills work such as ChatGPT-based crisis drills for ICU nurses. Three more examine attitudes toward AI adoption, and two benchmark studies test vision-language models on longitudinal imaging.",
+   "hash": "256613242365d825",
+   "date": "August 14, 2026"
   },
   "clinical_practice": {
-   "text": "A physician-reviewed benchmark testing 500 three-turn scenarios finds that large language models can lose medication-safety boundaries once users declare intent to self-treat after an initial refusal <a href=\"https://arxiv.org/abs/2608.10258\">[3]</a>. The finding lands alongside a systematic review and meta-analysis assessing how reliably large language models diagnose rare diseases <a href=\"https://www.nature.com/articles/s41746-026-03109-z\">[11]</a>, and a peer-reviewed study comparing clinician and AI performance in predicting intensive care unit outcomes, work that bears directly on how much weight clinical teams should place on model output <a href=\"https://www.nature.com/articles/s41746-026-03132-0\">[7]</a>. Nursing leaders are pressing a related point, warning that expanding clinical AI deployment without workforce input raises both job-displacement and patient-safety concerns <a href=\"https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions\">[14]</a>.\n\nAlso this week: the section&#x27;s evaluation focus extends to eight items spanning benchmarking, deployment, and safety testing of clinical AI tools, alongside four papers on decision support, two on imaging and diagnostics, and one on documentation. Coverage includes phenomapping for heart failure treatment response and deep learning-based detection of hypertrophic cardiomyopathy from electrocardiograms.",
-   "hash": "31e90accbc038225",
-   "date": "August 13, 2026"
+   "text": "A Nature Medicine perspective argues that clinical AI decision support tools are scaling up faster than the evidence needed to evaluate them <a href=\"https://www.nature.com/articles/d41591-026-00040-4\">[7]</a>. That gap sits alongside a new benchmark showing large language models can abandon medication-safety boundaries once users declare self-treatment intent after an initial refusal <a href=\"https://arxiv.org/abs/2608.10258\">[13]</a>. Real-world barriers to implementing AI-based decision support systems <a href=\"https://medinform.jmir.org/2026/1/e89834\">[2]</a> compound the concern, especially as new Medicare reimbursement incentives for AI-based devices may encourage overuse in hospitals <a href=\"https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices\">[3]</a>. A separate benchmark of locally deployable small language models for emergency department decision support <a href=\"https://arxiv.org/abs/2608.10273\">[14]</a> offers one path toward safer, more controllable deployment.\n\nAlso this week: the section carries six safety and evaluation items, five on clinical decision support, and two each on imaging and diagnostics and clinical documentation. Coverage spans a scoping review of bias in mental health prediction models to UniMedDiff, a diffusion model that generates medical images directly from clinical reports.",
+   "hash": "d325d7964b26e884",
+   "date": "August 14, 2026"
   },
   "general_ai": {
-   "text": "Anthropic&#x27;s plan to embed invisible watermarks in Claude-generated text and files, aimed at meeting European transparency rules, marks a concrete step toward regulatory compliance <a href=\"https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images\">[7]</a>. Separately, new research complicates assumptions about reasoning models: one study finds chain-of-thought prompting can hurt performance when serial computation becomes a bottleneck <a href=\"https://arxiv.org/abs/2608.09942\">[5]</a>, while another shows reasoning models often fail to ration test-time compute across multiple questions. A third paper documents a &quot;quantization tax,&quot; where compressing small language models to 4-bit precision disproportionately degrades non-English performance <a href=\"https://arxiv.org/abs/2608.09941\">[4]</a>. Meanwhile, an interview with Fields Medalist James Maynard examines how AI is reshaping mathematical research <a href=\"https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun\">[8]</a>.\n\nAlso this week: three new model releases, including DeepSeek V4 Pro and Meta&#x27;s Muse Glimmer 30B, joined three items on safety and reliability, two studies in benchmarks and evaluation, and one industry and policy update. Five additional papers cover research methods, spanning interpretability, hallucination detection, and long-document retrieval.",
-   "hash": "434577441ecf8c30",
-   "date": "August 13, 2026"
+   "text": "Google&#x27;s release of Gemini 3.7 Flash just three weeks after Gemini 3.6 Flash <a href=\"https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release\">[2]</a> underscores the pace of frontier model iteration, a trend reinforced by DeepSeek&#x27;s V4 Pro update <a href=\"https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813\">[8]</a> arriving via API. Questions about how to interpret such releases persist: research on benchmark wording shows that rephrasing questions without changing their meaning shifts model scores <a href=\"https://arxiv.org/abs/2608.11694\">[6]</a>, and separate work on machine unlearning finds that models retain latent traces of removed knowledge <a href=\"https://arxiv.org/abs/2608.11408\">[4]</a>. Meanwhile, Twitch&#x27;s new opt-out option for Amazon&#x27;s AI training <a href=\"https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai\">[9]</a> signals growing attention to data consent in industry practice.\n\nAlso this week: four new model releases include LFM2.5-VL-3B, a vision-language model built for edge devices, alongside a plugin adding Gemini support to a command-line tool. Three additional benchmark and evaluation studies examine chain-of-thought reasoning limits and cross-model output comparisons, while two papers on research methods address reproducibility across thousands of ICML papers and quantization effects on multilingual performance.",
+   "hash": "b02a9ac0e043fad6",
+   "date": "August 14, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -30091,7 +30188,25 @@
    "start_date": "2026-07-27",
    "end_date": "2026-09-07",
    "url": "https://agentic-cinema.devpost.com/"
+  },
+  "All Things Agentic Hackathon": {
+   "deadline": "2026-08-31",
+   "start_date": "2026-08-04",
+   "end_date": "2026-08-31",
+   "url": "https://allthingsagentichackathon.devpost.com/"
+  },
+  "Surgical Visual Understanding 2026": {
+   "deadline": "2026-08-15",
+   "start_date": "2026-07-20",
+   "end_date": "2026-09-27",
+   "url": "https://surgvu26.grand-challenge.org/"
+  },
+  "TopAneu 2026": {
+   "deadline": "2026-09-14",
+   "start_date": "2026-07-31",
+   "end_date": "2026-09-27",
+   "url": "https://topaneu-26.grand-challenge.org/"
   }
  },
- "section_briefs_refreshed": "2026-08-13"
+ "section_briefs_refreshed": "2026-08-14"
 }

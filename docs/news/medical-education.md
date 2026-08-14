@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A cross-sectional study links heavier generative AI use among medical students to diminished critical thinking, particularly in final-year and male students <a href="https://pubmed.ncbi.nlm.nih.gov/42577941?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">[7]</a>. That concern echoes in exam benchmarking, where ChatGPT-5.1, Qwen-3 Max, and Perplexity AI showed substantial variability on respiratory physiology questions, arguing for local evaluation before adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42578767?fc=20260609215449&amp;ff=20260811131414&amp;v=2.20.1">[6]</a>. A broader faculty and student survey confirms generative AI is now widely used, though it still requires ethical guidelines and digital literacy training <a href="https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">[4]</a>. A project-based curriculum responds by teaching clinicians to critically evaluate and govern these tools <a href="https://pubmed.ncbi.nlm.nih.gov/42582818?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1">[1]</a>.</p>
-<p>Also this week: additional exam benchmarking work spans neurology, orthopedics, dental, and microbiology question sets, while curriculum pieces track AI&#x27;s growing role in imaging education and general practice teaching. Assessment research includes faculty-edited AI-generated exam questions for family medicine, and a single report addresses simulation-based skills training alongside the wider shift away from cadaveric dissection.</p>
-<p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
+<p>Medical schools are moving generative AI from theory into structured curricula, with a mixed methods study showing how prompt design and output verification can be built into clinical reasoning training <a href="https://mededu.jmir.org/2026/1/e94951">[3]</a>. Parallel efforts test AI-driven simulation, including an orthodontic residency system that improved case analysis performance over traditional methods <a href="https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">[6]</a> and augmented reality training that boosted emergency nurses&#x27; proficiency with blood transfusion devices <a href="https://mededu.jmir.org/2026/1/e98073">[1]</a>. A cross-sectional survey finds generative AI already widely used by students and faculty, though ethical guidelines and digital literacy training remain limited <a href="https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">[15]</a>. Meanwhile, a benchmark evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone imaging found reproducibility too inconsistent for independent diagnostic use <a href="https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">[14]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum design, including reviews on AI in graduate medical education, while three cover simulation and skills work such as ChatGPT-based crisis drills for ICU nurses. Three more examine attitudes toward AI adoption, and two benchmark studies test vision-language models on longitudinal imaging.</p>
+<p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98073">Augmented Reality, Based Training for a Rapid Blood Transfusion Device Among Emergency Nurses: Randomized Controlled Trial</a>
+    <p class="news-card-summary">Randomized controlled trial shows augmented reality training improves emergency nurses&#x27; proficiency with rapid blood transfusion devices.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">Current Status of Generative Artificial Intelligence Utilization in Medical Education: A Cross-Sectional Survey of Medical Students and Faculty</a>
     <p class="news-card-summary">Survey of medical students and faculty finds generative AI is widely accepted and used in medical education but requires ethical guidelines, digital literacy training, and careful integration strategies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42576362?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">The dead still teach the living: Body donor dissection in the digital age of anatomy education</a>
-    <p class="news-card-summary">Review examines the role of cadaveric dissection in medical anatomy curricula as digital platforms, simulation, and AI-supported learning reshape anatomy education alongside reduced curricular time.</p>
   </div>
 </div>
 </div>

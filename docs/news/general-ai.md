@@ -13,14 +13,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic&#x27;s plan to embed invisible watermarks in Claude-generated text and files, aimed at meeting European transparency rules, marks a concrete step toward regulatory compliance <a href="https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images">[7]</a>. Separately, new research complicates assumptions about reasoning models: one study finds chain-of-thought prompting can hurt performance when serial computation becomes a bottleneck <a href="https://arxiv.org/abs/2608.09942">[5]</a>, while another shows reasoning models often fail to ration test-time compute across multiple questions. A third paper documents a &quot;quantization tax,&quot; where compressing small language models to 4-bit precision disproportionately degrades non-English performance <a href="https://arxiv.org/abs/2608.09941">[4]</a>. Meanwhile, an interview with Fields Medalist James Maynard examines how AI is reshaping mathematical research <a href="https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun">[8]</a>.</p>
-<p>Also this week: three new model releases, including DeepSeek V4 Pro and Meta&#x27;s Muse Glimmer 30B, joined three items on safety and reliability, two studies in benchmarks and evaluation, and one industry and policy update. Five additional papers cover research methods, spanning interpretability, hallucination detection, and long-document retrieval.</p>
-<p class="section-brief-date">The picture as of August 13, 2026; numbered links go to the items below.</p>
+<p>Google&#x27;s release of Gemini 3.7 Flash just three weeks after Gemini 3.6 Flash <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">[2]</a> underscores the pace of frontier model iteration, a trend reinforced by DeepSeek&#x27;s V4 Pro update <a href="https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813">[8]</a> arriving via API. Questions about how to interpret such releases persist: research on benchmark wording shows that rephrasing questions without changing their meaning shifts model scores <a href="https://arxiv.org/abs/2608.11694">[6]</a>, and separate work on machine unlearning finds that models retain latent traces of removed knowledge <a href="https://arxiv.org/abs/2608.11408">[4]</a>. Meanwhile, Twitch&#x27;s new opt-out option for Amazon&#x27;s AI training <a href="https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai">[9]</a> signals growing attention to data consent in industry practice.</p>
+<p>Also this week: four new model releases include LFM2.5-VL-3B, a vision-language model built for edge devices, alongside a plugin adding Gemini support to a command-line tool. Three additional benchmark and evaluation studies examine chain-of-thought reasoning limits and cross-model output comparisons, while two papers on research methods address reproducibility across thousands of ICML papers and quantization effects on multilingual performance.</p>
+<p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop">Trained a 1.5B to write shell commands so I&#x27;d stop googling tar flags. Runs on a laptop CPU in ~1 sec.</a>
+    <p class="news-card-summary">A fine-tuned 1.5B parameter model generates shell commands from natural language descriptions and runs efficiently on CPU.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/di0yenio27jh1.gif?width=640&amp;crop=smart&amp;s=d39275a4e908c41b9172d01bcf8ec7a8db33ad68" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/13/llm-gemini">llm-gemini 0.33</a>
+    <p class="news-card-summary">Plugin adds support for Google&#x27;s Gemini 3.7 Flash and earlier versions, with reasoning traces and embedding models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/gemini-3.7-flash-high-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 13, 2026</span></div>
@@ -118,20 +134,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Major AI companies committed to EU transparency requirements including watermarking of AI-generated and AI-edited content.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/f9jt8fh79uih1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=94a2ca64f968166390bf8c39f36b4fe852739a18" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text">There are no lossless transformations of natural-language text</a>
-    <p class="news-card-summary">An analysis of lossless text transformation limitations and principles for responsible AI-assisted technical writing emphasizes personal accountability for every sentence.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vlj87v/introducing_unsloth_desktop_app">Introducing Unsloth Desktop app</a>
-    <p class="news-card-summary">Unsloth released a desktop application for running and training open-source models locally across Mac, Windows, and Linux, supporting MLX, diffusion, audio models, and GGUF formats.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/Z3J5Zm50ZWRicmloMTYBeDWCK4xeu5RSagED4X3V45DmVqtj8jdzgTMEyWCB.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=358f4006aab83cdaa7ec385a75d9ce47b4647baa" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
