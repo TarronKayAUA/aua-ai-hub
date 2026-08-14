@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -33,6 +33,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89834">Real-World Barriers to and Facilitators of Implementing AI-Based Clinical Decision Support Systems: Scoping Review</a>
     <p class="news-card-summary">Scoping review synthesizes real-world barriers and facilitators to implementation of AI-based clinical decision support systems in actual health care settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42595478?fc=20260609215449&amp;ff=20260814014806&amp;v=2.20.1">Artificial Intelligence for Diagnosing Images of Common Skin Disorders</a>
+    <p class="news-card-summary">An AI tool for dermatologic image analysis performs well on common skin disorders and may assist providers in resource-limited settings.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -120,13 +127,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.10273">Locally Deployable Small Language Models for Emergency Department Decision Support: A Systematic Benchmark of Fine-Tuning Strategies</a>
     <p class="news-card-summary">A systematic benchmark compares eight open-source small language models and fine-tuning strategies for locally deployable emergency department decision support without transmitting patient data externally.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03125-z">Natural language processing application in electronic health records studies for psychosis: a systematic review</a>
-    <p class="news-card-summary">A systematic review surveys natural language processing applications in electronic health record studies of psychosis, assessing clinical utility and evidence quality.</p>
   </div>
 </div>
 </div>

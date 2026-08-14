@@ -29961,6 +29961,33 @@
    "first_seen": "2026-08-14T02:47:23.349298+00:00",
    "kept": false,
    "reason": "speculation about unreleased models and unclear content; generic channel boilerplate without substantive information"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42595478?fc=20260609215449&ff=20260814014806&v=2.20.1",
+   "title_hash": "226edc754f8a0c5be675a77fe6886ed2",
+   "first_seen": "2026-08-14T05:48:05.984737+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence for Diagnosing Images of Common Skin Disorders",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-13T10:00:00+00:00",
+   "summary": "An AI tool for dermatologic image analysis performs well on common skin disorders and may assist providers in resource-limited settings.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42594709?fc=20260609215449&ff=20260814014806&v=2.20.1",
+   "title_hash": "4602f6f67a1ef022ef79f5d74a29508c",
+   "first_seen": "2026-08-14T05:48:05.984737+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42594520?fc=20260609215449&ff=20260814014806&v=2.20.1",
+   "title_hash": "73d7e46d24f8f500b58e0fa7a66a531b",
+   "first_seen": "2026-08-14T05:48:05.984737+00:00",
+   "kept": false,
+   "reason": "insufficient content to evaluate"
   }
  ],
  "digests": [
