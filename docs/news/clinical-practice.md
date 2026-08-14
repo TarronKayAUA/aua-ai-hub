@@ -23,6 +23,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e102146">Detecting and Mitigating AI Bias in Health Care: Development and Validation of a Unified Multistage Framework</a>
+    <p class="news-card-summary">Study develops and validates a multistage framework to detect and mitigate multiple interacting sources of bias in AI clinical systems, addressing representation, proxy, integrity, and temporal biases.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79713">Cross-Silo Federated Learning for Predicting Successful Mechanical Ventilation Weaning Across 5 Intensive Care Unit Databases: Retrospective Database Analysis</a>
+    <p class="news-card-summary">Retrospective study using federated learning across five intensive care unit databases to develop a mechanical ventilation weaning prediction model without sharing patient-level data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04575-4">An AI-Health infrastructure for the Nordic region: technical foundations, data assets, and a roadmap for deployment</a>
     <p class="news-card-summary">Nature Medicine commentary describes the Nordic AI-Health Initiative, a secure platform for developing generalizable AI models from large-scale longitudinal health datasets across the Nordic region.</p>
@@ -113,20 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03136-w">Developing a scalable pipeline for data extraction from clinical letters through resource-efficient prompt engineering</a>
     <p class="news-card-summary">Peer-reviewed study develops a resource-efficient prompt engineering pipeline for extracting structured data from clinical letters at scale.</p>
   </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03069-4">Role prompting modulates linguistic style but not clinical decision structure in GPT-5 tumour board simulation</a>
-    <p class="news-card-summary">Peer-reviewed study examines how role prompting affects linguistic style and clinical decision-making in GPT-5 simulated tumor board discussions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/12/the-secret-startup-project-ive-been-working-on-ai-prognosis">STAT+: The secret AI-startup project I’ve been working on the last six months</a>
-    <p class="news-card-summary">STAT News reports on challenges in developing and deploying AI tools to clinical settings, documenting real-world implementation difficulties.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AIPrognosis_Wordpress_AIcoins-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

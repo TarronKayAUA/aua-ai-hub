@@ -1,511 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021",
-   "title_hash": "66311cfc8692b00a9fa20d9cf067abda",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics",
-   "title_hash": "4929215c8dee9f9048cd1abeefb2c0d3",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://news.ycombinator.com/item?id=48542100",
-   "title_hash": "04b6b081551e2b0501fc48a775913bba",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42295838?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "6ebc2ede59b4fb8b8144d90007535650",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42295201?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "be7b9c8333a78c6525e92a97a31e11eb",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42295093?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "5432cce57c99e3bad1ce92cca2b91373",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42294612?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "8e0ffdf0a0d5811e78c5ef5c5ba5e53a",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42294133?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "6181c3d0fc2afc4c886efc6351978aac",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42292247?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "0f9d5152a1e6a474de7466cf8b5ea0dc",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "Generative AI and student learning performance in medical higher education: a social cognitive theory perspective",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-15T10:00:00+00:00",
-   "summary": "Empirical study demonstrates that generative AI enhances learning performance in medical higher education through mechanisms aligned with social cognitive theory.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42291614?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "d982e5a31d4797fa8c68ec17ac2f2e91",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42291586?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "184829c7890ca6ab559a79143d66f2e2",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "Beyond Red Pen: Comparing the machine vs human grading of reflective assignments on clinical reasoning in Dermatology undergraduate students",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-15T10:00:00+00:00",
-   "summary": "ChatGPT provides reliable complementary assessment of reflective clinical reasoning assignments in dermatology students, with results showing meaningful concordance with human graders.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42290129?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "5c3e51d7db6a2e4ec483bff875eb6fc8",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "Large language model prompt engineering for medical education: A practical guide for the Australian and New Zealand College of Anaesthetists Final Examination",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-15T10:00:00+00:00",
-   "summary": "Practical guide for using large language models in prompt engineering across specialist-level medical education in anaesthesia, addressing capability and implementation considerations.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u6azol/whats_the_lesson_chat",
-   "title_hash": "4a5fce5847b3088aab366f8f170b3704",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
-   "title_hash": "1bc7e352b0baee4f592b994a688d358f",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13685",
-   "title_hash": "171c00a92c73b420bdf1f819427f04de",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-15T04:00:00+00:00",
-   "summary": "Analysis of large language model-as-judge evaluation methods reveals reliability concerns and systematic biases affecting model ranking comparisons.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13686",
-   "title_hash": "4007cc59c443fa676bd103ff4df09b74",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13751",
-   "title_hash": "e0e15a22b4cdf9b89fa1de2fea05ab44",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13756",
-   "title_hash": "a891c018fac4b02e03d2ad06db9899c3",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13808",
-   "title_hash": "8a5c32845d2ebe897cfc04ed4d2a4ae6",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13835",
-   "title_hash": "d797266b899bab397f424d0baf2e2b68",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13852",
-   "title_hash": "6a4ab2ba4edafc24da2885927ddf8321",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13904",
-   "title_hash": "843ffaf8d0ad1c88d8c7f5a7128cdf4e",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13931",
-   "title_hash": "f7daac0e4fe47522742e613468eea968",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13940",
-   "title_hash": "05446aa6a0c75ef75be21270ef419785",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "Can Post-Training Turn LLMs into Good Medical Coders? An Empirical Study of Generative ICD Coding",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-15T04:00:00+00:00",
-   "summary": "Study evaluates whether post-training can improve large language models for automated International Classification of Diseases coding from clinical documentation.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13944",
-   "title_hash": "ab6413a66ca1fb79303c07fcf11e933b",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13945",
-   "title_hash": "4296fe7baf19697ac2ef40405e1ffb3c",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13977",
-   "title_hash": "305cb41f7e8705506fa158b9ed4fd0c7",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13991",
-   "title_hash": "bdff3283e5a84d7abf25c28f12da8931",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13993",
-   "title_hash": "677a220a0909ce917d865bf87002d9b9",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.13995",
-   "title_hash": "7451f5b9a0171c4a558ead6716c6bcbb",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14037",
-   "title_hash": "8bb7d8c344953675b0e48b4c22296a40",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14068",
-   "title_hash": "437155db7e7b9c0a2c36c0b74c872f9a",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14122",
-   "title_hash": "cbe5b84dcb0c8a74148b2ffc47d38de9",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14142",
-   "title_hash": "7b3aafcf6161a2aade09fbf6d373c42a",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14145",
-   "title_hash": "cf3425c57427508389d3bf7eb3920d69",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14179",
-   "title_hash": "e8edd3923b07c50ad47300606a295db1",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "CacheRL:Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-15T04:00:00+00:00",
-   "summary": "CacheRL system trains small language model agents for multi-turn tool-calling tasks using cached rollouts and hybrid reward mechanisms.",
-   "category": "general_ai",
-   "score": 2.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14199",
-   "title_hash": "4bd4b238bbe14155cb3264580e693930",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14209",
-   "title_hash": "04f27b9fc03bd9bc0f7170107c7472fc",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.14243",
-   "title_hash": "a6324d800d81c342f1522f04ce0aac62",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/15/julia-evans",
-   "title_hash": "871092210bd7e08f4df7ec87c4042885",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://theslowburningfuse.wordpress.com/2026/06/14/the-rich-arent-your-role-models-theyre-your-oppressors",
-   "title_hash": "18729f85ecb5e0b3785a5acf3639a16f",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02883-0",
-   "title_hash": "5f39cc80a032685fcc94ac7796e1963b",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "Digital phenotyping with large language models to detect depressive state changes in patients",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-15T00:00:00+00:00",
-   "summary": "Digital phenotyping using large language models detects changes in depressive state from patient-generated text data with clinical validation.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02880-3",
-   "title_hash": "a1f01beea1daaee3df87665142d88695",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "A scoping review of traditional and artificial intelligence methods in malaria diagnostics",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-15T00:00:00+00:00",
-   "summary": "Scoping review compares traditional diagnostic methods and artificial intelligence approaches for malaria detection across available evidence.",
-   "category": "clinical_practice",
-   "score": 2.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02895-w",
-   "title_hash": "0ce9abd86cbe1b06f3f5315f20a4e555",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02875-0",
-   "title_hash": "ac1a8c2d1b05477108b59f4b530fb59e",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02903-z",
-   "title_hash": "bc2ee2bdc633afddb7352115c7ade94d",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02899-6",
-   "title_hash": "5a9749a473be11fa33b4830c09f5c229",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04447-x",
-   "title_hash": "105826cc75b1735d9d4ec3d6fd5486e3",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04434-2",
-   "title_hash": "dcb1d264bbd84e41d23d197706660339",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04446-y",
-   "title_hash": "581d8eccb8af65ea9ac4d6bd12fee39d",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04432-4",
-   "title_hash": "0dc3fc4e3f7edcc796ae33b25e25b787",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04414-6",
-   "title_hash": "5b39415755ec9266b6ce0400b38e5cca",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers",
-   "title_hash": "74feac058272e3ceb93dd896572000b8",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u5wous/zai_poll_on_x_mitlicensed_open_weights_are_losing",
-   "title_hash": "17d6f99f1770f4daa179c47192ac21fb",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-   "title_hash": "4df720ca0ca186802000db223fcb1ea1",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://news.ycombinator.com/item?id=48528029",
-   "title_hash": "f3de30c686c8f94d0cddbc61e3085946",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://twitter.com/zenmagnets/status/2065796012820848699",
-   "title_hash": "54499660011fc9bb30580b5f57b2fe5b",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u5lmge/introducing_the_heretic_grimoire_the",
-   "title_hash": "97278b5d812968ea5d85524c44120391",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42289528?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "1800fe1cc22f2dc66568d1fcefca15a3",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42289470?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "c1a06d9659ba7fffd08fcd02387d0f2d",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42289332?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "fa63cf432e84fab2b395b4adcb7dbd8e",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u55rzy/open_source_ai_must_win",
-   "title_hash": "d3e02bb3685acbde280e182d346f884a",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42288885?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "2b6236de37ce801bf80786f676f4f796",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "How crucial is research philosophy in designing an AI study in medical education?",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-13T10:00:00+00:00",
-   "summary": "Analysis of methodological rigor in AI studies within medical education, addressing common research design and philosophical framework gaps affecting paper quality.",
-   "category": "medical_education",
-   "score": 2.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42288632?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "786e110e5801c32ddbdfa87f2edbb3b5",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42288333?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "898e529f5ff151956efd21bd9372a10a",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "Item-Level Evaluation of Multimodal Large Language Models in Neuroradiology: Generational Performance and Execution Variability",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-13T10:00:00+00:00",
-   "summary": "Item-level evaluation of multimodal large language models on neuroradiology tasks shows meaningful performance gains across model generations with notable variability.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42288098?fc=20260609215449&ff=20260615160740&v=2.20.0",
-   "title_hash": "ad174f393bf5d276f0ded0f9c649263b",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "The eye sees what the mind knows: Eye tracking and artificial intelligence to assess surgical resident level of expertise",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-13T10:00:00+00:00",
-   "summary": "Eye-tracking combined with artificial intelligence identifies gaze patterns that distinguish expertise levels in surgical residents during procedural training.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Ovj5f0ajDww",
-   "title_hash": "93549f9d9c5d357b85a318ed2d3efb8a",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=TDM2Dz_MuPk",
-   "title_hash": "4e4602a55f986cfc0746ef716b7dc3bc",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=_jNbM8pV9oI",
-   "title_hash": "412dd941c92a1890e676a2ee09facc7e",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=NxAxwsu6_Zs",
-   "title_hash": "a388239c96b1011ff23fbf2dcd5f5ee0",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=MTmhgIVhpag",
-   "title_hash": "467fcff861fca51f0b5616bc0755dbb0",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": true,
-   "title": "What Is AI Pair Programming? AI Coding Tools for Developers",
-   "source": "IBM Technology",
-   "published": "2026-06-15T11:00:36+00:00",
-   "summary": "Overview of AI pair programming tools and their application to software development workflows.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i2.ytimg.com/vi/MTmhgIVhpag/hqdefault.jpg"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Fable-5-Crisis-Continues-e3kr0o3",
-   "title_hash": "a61924207e5c95ed12c87dd8e7c93929",
-   "first_seen": "2026-06-15T20:07:40.595150+00:00",
-   "kept": false
-  },
-  {
    "url": "https://medinform.jmir.org/2026/1/e85255",
    "title_hash": "874ba0578c9c30d809cfb4ed26067070",
    "first_seen": "2026-06-15T21:35:57.245910+00:00",
@@ -30272,6 +29767,113 @@
    "first_seen": "2026-08-14T17:13:10.515303+00:00",
    "kept": false,
    "reason": "book availability and counterfeit warning unrelated to AI capabilities or medical application"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e94122",
+   "title_hash": "26af4c9b2a7001b47e1bc123e3200059",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": true,
+   "title": "Effects of an Immersive 180° Video, Based Virtual Reality Instructional Module on Learning Satisfaction, Technology Acceptance, Motivation, and Quiz-Based Learning Achievement in Undergraduate Physical Therapy Students: Randomized Controlled Trial",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-14T20:30:13+00:00",
+   "summary": "Randomized controlled trial comparing immersive 180-degree video virtual reality instruction with conventional teaching for musculoskeletal examination skills, measuring learning satisfaction and achievement.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e102146",
+   "title_hash": "961b267d7bb5f4afd072db21ee969059",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": true,
+   "title": "Detecting and Mitigating AI Bias in Health Care: Development and Validation of a Unified Multistage Framework",
+   "source": "JMIR AI",
+   "published": "2026-08-14T20:30:12+00:00",
+   "summary": "Study develops and validates a multistage framework to detect and mitigate multiple interacting sources of bias in AI clinical systems, addressing representation, proxy, integrity, and temporal biases.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e94034",
+   "title_hash": "e6f49c4ef8343ebc5fb1a67b76a0db8e",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": true,
+   "title": "The AI Colleague: Reimagining Interprofessional Collaboration and Education in Medicine",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-14T20:00:17+00:00",
+   "summary": "Analysis of how AI as an integrated team member reshapes medical education and interprofessional practice beyond traditional tool-focused frameworks.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e79713",
+   "title_hash": "0a619519ed791f2a2000ad6ac6fdb1a8",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": true,
+   "title": "Cross-Silo Federated Learning for Predicting Successful Mechanical Ventilation Weaning Across 5 Intensive Care Unit Databases: Retrospective Database Analysis",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-14T20:00:03+00:00",
+   "summary": "Retrospective study using federated learning across five intensive care unit databases to develop a mechanical ventilation weaning prediction model without sharing patient-level data.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e92826",
+   "title_hash": "8cb61faf8d1f06d2ba56d408a25e9233",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": true,
+   "title": "AI for Clinical Competency Assessment: Scoping Review of Methods and Applications",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-14T18:45:11+00:00",
+   "summary": "Scoping review of artificial intelligence methods for assessing clinical competency across health professions, examining validity and scalability of AI-driven assessment approaches.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e92838",
+   "title_hash": "ea7ddf4a5228c0792cdea9b5c3ca9fa1",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": false,
+   "reason": "narrow domain application of computational analysis to a specific clinical marker; does not address artificial intelligence methods or evaluation"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case",
+   "title_hash": "6be2b44181cf22c611af0b05df701b8e",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": false,
+   "reason": "drama coverage of chatbot misuse; no substantive artificial intelligence development or educational value"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
+   "title_hash": "13717a3ea68346b07d84367d13812426",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns branding and design, not artificial intelligence"
+  },
+  {
+   "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
+   "title_hash": "46dfc5a7309d6d600b5c74489952bda4",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": false,
+   "reason": "vendor marketing from Google announcing product feature adjustments unrelated to artificial intelligence capability or medical application"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voblcs/qwen3827b_is_identical_to_qwen3627b",
+   "title_hash": "7e17a599ec374e030f4e90a53c40277f",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": false,
+   "reason": "minor technical observation from forum discussion; does not represent a model release, capability change, or significant benchmark"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=EDWbX_-RYws",
+   "title_hash": "19aec088478bde9d044843613fd4490b",
+   "first_seen": "2026-08-14T20:47:12.918628+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
