@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -26,6 +26,55 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42596566?fc=20260609215449&amp;ff=20260814094532&amp;v=2.20.1">Bridging the experiential gap in artificial intelligence-based health professions education</a>
     <p class="news-card-summary">Peer-reviewed study on methods to close the gap between AI training and practical experience in health professions education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598310?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Designing Self-Directed Learning Content for Medical Students: An AI-Driven Evaluation of Learning Outcomes</a>
+    <p class="news-card-summary">Systematic integration of generative AI into self-directed learning enhances medical student efficiency and knowledge acquisition, though human oversight and AI verification skills remain essential.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598196?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">OpenSpineConsortium: An Open-Source Framework for Medical Student Engagement in Computational Spine Imaging Research</a>
+    <p class="news-card-summary">Open-source consortium framework engages medical students in computational spine imaging research, producing gains in anatomy, computational skills, and scientific communication.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598023?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Artificial intelligence for affective-domain development in healthcare professions education: a systematic review</a>
+    <p class="news-card-summary">Systematic review finds AI can support communication rehearsal, reflective learning, and formative feedback, but should complement rather than replace human educators for empathy and professional identity formation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598001?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Mapping artificial intelligence in problem-based and case-based medical education: a bibliometric analysis (2019-2026)</a>
+    <p class="news-card-summary">First bibliometric analysis of AI in problem-based and case-based learning shows rapid growth after 2023, with four interconnected research clusters and strong US-China collaboration.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597979?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Virtual patients in medical education: a bibliometric analysis based on the wos core collection and scopus databases</a>
+    <p class="news-card-summary">Bibliometric analysis shows sustained growth in virtual patient systems with increasing integration of generative AI and large language models into medical education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI Agents and the Future of Clinical Judgment in Medical Education: Opportunities, Challenges, and the Need for Human-Centered Integration</a>
+    <p class="news-card-summary">AI agents should enhance rather than replace clinical reasoning through human-centered frameworks including AI literacy, controlled simulation failures, and updated assessments like AI-assisted OSCEs.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597353?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI literacy and AI anxiety in nursing students: the serial mediating roles of attitudes and self-efficacy</a>
+    <p class="news-card-summary">Serial mediation analysis in nursing students shows higher AI literacy associates with lower AI anxiety through more favorable attitudes and stronger self-efficacy.</p>
   </div>
 </div>
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -76,55 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Application of an AI-enhanced interactive virtual clinical reasoning training system in orthodontic residency training</a>
     <p class="news-card-summary">An AI-enhanced virtual clinical reasoning system for orthodontic residents significantly improved case analysis performance and learning experience compared to traditional methods.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42591894?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Transforming thyroid disease education: AI and virtual technologies in residency training</a>
-    <p class="news-card-summary">A narrative review examines applications and challenges of AI and virtual technologies in standardizing thyroid disease residency training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42591467?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">Generative AI in psychiatric education: balancing risks and benefits for responsible integration</a>
-    <p class="news-card-summary">A review analyzes opportunities and risks of integrating generative AI chatbots into psychiatric education across training levels.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.11460">Principal Trait Analysis: Towards Deriving &quot;Skills&quot; in Human-AI Collaboration</a>
-    <p class="news-card-summary">Research identifies prompting traits that contribute to task success in human-AI collaboration and proposes training frameworks for professionals using language model agents.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.11534">CT-$\Delta$Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models</a>
-    <p class="news-card-summary">CT-DeltaBench introduces a benchmark for evaluating vision-language models on longitudinal medical imaging comparisons, a core clinical task for assessing disease progression.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42582818?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1">An Interactive, Project-Based AI in Healthcare Curriculum for Clinicians and Medical Educators</a>
-    <p class="news-card-summary">A project-based curriculum teaches clinicians and medical educators to critically evaluate and govern AI tools in healthcare, addressing the skills gap between AI development and clinical adoption.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42582784?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1">Artificial intelligence for medical imaging education: bibliometric and visual analysis</a>
-    <p class="news-card-summary">A bibliometric analysis traces AI in medical imaging education research, documenting the rise of generative AI alongside machine learning, with production concentrated in the United States and China.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42586857?fc=20260609215449&amp;ff=20260813015007&amp;v=2.20.1">AI in GME education</a>
-    <p class="news-card-summary">A review paper examines artificial intelligence integration across graduate medical education, covering residency selection, clinical training, and postgraduate practice.</p>
   </div>
 </div>
 </div>

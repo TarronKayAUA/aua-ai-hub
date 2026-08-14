@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">OpenAI and Anthropic in price war as Chinese AI rivals gain ground</a>
+    <p class="news-card-summary">OpenAI and Anthropic release lower-priced models in response to competition from Chinese AI companies, reshaping the competitive landscape.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2285566787-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 14, 2026</span></div>
@@ -28,6 +36,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Zhipu AI released GLM 5.3, an update to its open-weights large language model.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/eixnxdnvz9jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2247868071d2d80c73f9ce9e95b5c3085bb85fa3" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/state-of-open-models-summer-2026">State of Open Models: Summer 2026 Observations</a>
+    <p class="news-card-summary">Hugging Face observations on the state of open models landscape in summer 2026.</p>
+  </div>
+  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/state-of-open-models-summer-2026/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -120,19 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Hugging Face releases LFM2.5-VL-3B, a 3-billion-parameter vision-language model optimized for edge deployment with improved speed and capability.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/apldbDPIJWZeODX1g9iFV.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.09941">The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs</a>
-    <p class="news-card-summary">A zero-shot multilingual evaluation demonstrates that 4-bit quantization of small language models causes substantial performance degradation in non-English languages, with implications for edge deployment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.09942">When Chain-of-Thought Helps and When It Hurts: An Empirical Investigation of the Serial-Depth Bottleneck in LLM Reasoning</a>
-    <p class="news-card-summary">An empirical study identifies cases where chain-of-thought prompting hurts large language model reasoning due to serial computational bottlenecks, clarifying when this technique helps.</p>
-  </div>
 </div>
 </div>

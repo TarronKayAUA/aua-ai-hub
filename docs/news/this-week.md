@@ -18,15 +18,64 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42596566?fc=20260609215449&amp;ff=20260814094532&amp;v=2.20.1">Bridging the experiential gap in artificial intelligence-based health professions education</a>
         <p class="news-card-summary">Peer-reviewed study on methods to close the gap between AI training and practical experience in health professions education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598310?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Designing Self-Directed Learning Content for Medical Students: An AI-Driven Evaluation of Learning Outcomes</a>
+        <p class="news-card-summary">Systematic integration of generative AI into self-directed learning enhances medical student efficiency and knowledge acquisition, though human oversight and AI verification skills remain essential.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598196?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">OpenSpineConsortium: An Open-Source Framework for Medical Student Engagement in Computational Spine Imaging Research</a>
+        <p class="news-card-summary">Open-source consortium framework engages medical students in computational spine imaging research, producing gains in anatomy, computational skills, and scientific communication.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598023?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Artificial intelligence for affective-domain development in healthcare professions education: a systematic review</a>
+        <p class="news-card-summary">Systematic review finds AI can support communication rehearsal, reflective learning, and formative feedback, but should complement rather than replace human educators for empathy and professional identity formation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598001?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Mapping artificial intelligence in problem-based and case-based medical education: a bibliometric analysis (2019-2026)</a>
+        <p class="news-card-summary">First bibliometric analysis of AI in problem-based and case-based learning shows rapid growth after 2023, with four interconnected research clusters and strong US-China collaboration.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597979?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Virtual patients in medical education: a bibliometric analysis based on the wos core collection and scopus databases</a>
+        <p class="news-card-summary">Bibliometric analysis shows sustained growth in virtual patient systems with increasing integration of generative AI and large language models into medical education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI Agents and the Future of Clinical Judgment in Medical Education: Opportunities, Challenges, and the Need for Human-Centered Integration</a>
+        <p class="news-card-summary">AI agents should enhance rather than replace clinical reasoning through human-centered frameworks including AI literacy, controlled simulation failures, and updated assessments like AI-assisted OSCEs.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597353?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI literacy and AI anxiety in nursing students: the serial mediating roles of attitudes and self-efficacy</a>
+        <p class="news-card-summary">Serial mediation analysis in nursing students shows higher AI literacy associates with lower AI anxiety through more favorable attitudes and stronger self-efficacy.</p>
       </div>
     </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
@@ -643,10 +692,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="new-models">New models (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">OpenAI and Anthropic in price war as Chinese AI rivals gain ground</a>
+        <p class="news-card-summary">OpenAI and Anthropic release lower-priced models in response to competition from Chinese AI companies, reshaping the competitive landscape.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2285566787-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 14, 2026</span></div>
@@ -654,6 +711,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Zhipu AI released GLM 5.3, an update to its open-weights large language model.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/eixnxdnvz9jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2247868071d2d80c73f9ce9e95b5c3085bb85fa3" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://huggingface.co/blog/state-of-open-models-summer-2026">State of Open Models: Summer 2026 Observations</a>
+        <p class="news-card-summary">Hugging Face observations on the state of open models landscape in summer 2026.</p>
+      </div>
+      <img class="news-card-thumb" src="https://huggingface.co/blog/assets/state-of-open-models-summer-2026/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -934,14 +999,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">OpenAI paused development of model Astra due to unmet security standards following recent disclosure of accidental model security breaches.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK155_OPEN_AI_CVirginia_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed">AI chatbots have failed people in crisis. Can that be fixed?</a>
-        <p class="news-card-summary">Clinicians and researchers call for AI companies to disclose safety data after chatbots have failed people in crisis situations.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mentalhealthaichat-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
