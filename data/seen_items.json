@@ -30065,6 +30065,73 @@
    "first_seen": "2026-08-14T09:28:56.446448+00:00",
    "kept": false,
    "reason": "vendor marketing from OpenAI's own channel promoting ChatGPT customer use case"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42596566?fc=20260609215449&ff=20260814094532&v=2.20.1",
+   "title_hash": "fbd26e089a4b3a382062298173934f53",
+   "first_seen": "2026-08-14T13:45:32.060604+00:00",
+   "kept": true,
+   "title": "Bridging the experiential gap in artificial intelligence-based health professions education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-14T10:00:00+00:00",
+   "summary": "Peer-reviewed study on methods to close the gap between AI training and practical experience in health professions education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo2iiz/a_preliminary_qwen3827b_model_card_is_live",
+   "title_hash": "a879341613c53a1c52e82d9608427139",
+   "first_seen": "2026-08-14T13:45:32.060604+00:00",
+   "kept": false,
+   "reason": "minor release notes without benchmarks or capability details"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+   "title_hash": "c1421862f9e5b5b98cc751ee52df3886",
+   "first_seen": "2026-08-14T13:45:32.060604+00:00",
+   "kept": false,
+   "reason": "industry and acquisition gossip, not a capability or deployment development"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04576-3",
+   "title_hash": "a428e92a204e4606b0335650f58b3a33",
+   "first_seen": "2026-08-14T13:45:32.060604+00:00",
+   "kept": false,
+   "reason": "no AI content; off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04575-4",
+   "title_hash": "1f23b3ec2b632fa0ebed143b2c37785e",
+   "first_seen": "2026-08-14T13:45:32.060604+00:00",
+   "kept": true,
+   "title": "An AI-Health infrastructure for the Nordic region: technical foundations, data assets, and a roadmap for deployment",
+   "source": "Nature Medicine",
+   "published": "2026-08-14T00:00:00+00:00",
+   "summary": "Nature Medicine commentary describes the Nordic AI-Health Initiative, a secure platform for developing generalizable AI models from large-scale longitudinal health datasets across the Nordic region.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04566-5",
+   "title_hash": "80c41d04a405a8ac39824a360d9fe633",
+   "first_seen": "2026-08-14T13:45:32.060604+00:00",
+   "kept": true,
+   "title": "Histological aging signatures for monitoring tissue-specific aging and disease",
+   "source": "Nature Medicine",
+   "published": "2026-08-14T00:00:00+00:00",
+   "summary": "Researchers developed tissue-specific aging clocks from histological images across 40 tissue types paired with blood transcriptomics to assess structural integrity and physiological fitness.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=FVXDXi4es8E",
+   "title_hash": "6aba747cebd079591b9d031e46b8de35",
+   "first_seen": "2026-08-14T13:45:32.060604+00:00",
+   "kept": false,
+   "reason": "channel boilerplate with no substantive content description; cannot assess whether the episode covers news or speculation"
   }
  ],
  "digests": [

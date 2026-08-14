@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04575-4">An AI-Health infrastructure for the Nordic region: technical foundations, data assets, and a roadmap for deployment</a>
+    <p class="news-card-summary">Nature Medicine commentary describes the Nordic AI-Health Initiative, a secure platform for developing generalizable AI models from large-scale longitudinal health datasets across the Nordic region.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04566-5">Histological aging signatures for monitoring tissue-specific aging and disease</a>
+    <p class="news-card-summary">Researchers developed tissue-specific aging clocks from histological images across 40 tissue types paired with blood transcriptomics to assess structural integrity and physiological fitness.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 13, 2026</span></div>
@@ -114,19 +128,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">STAT News reports on challenges in developing and deploying AI tools to clinical settings, documenting real-world implementation difficulties.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AIPrognosis_Wordpress_AIcoins-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.10258">TAF-MED: Multi-Turn Safety Refusal Collapse in LLMs Under Declared Self-Treatment Intent</a>
-    <p class="news-card-summary">A physician-reviewed benchmark of 500 three-turn scenarios tests whether large language models maintain medication-safety boundaries when users declare self-treatment intent after initial refusals.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.10273">Locally Deployable Small Language Models for Emergency Department Decision Support: A Systematic Benchmark of Fine-Tuning Strategies</a>
-    <p class="news-card-summary">A systematic benchmark compares eight open-source small language models and fine-tuning strategies for locally deployable emergency department decision support without transmitting patient data externally.</p>
-  </div>
 </div>
 </div>
