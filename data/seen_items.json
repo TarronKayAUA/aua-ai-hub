@@ -29988,6 +29988,83 @@
    "first_seen": "2026-08-14T05:48:05.984737+00:00",
    "kept": false,
    "reason": "insufficient content to evaluate"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/how-i-learned-about-incontinence",
+   "title_hash": "790fa603709983c799614ca95a512d9d",
+   "first_seen": "2026-08-14T09:28:56.446448+00:00",
+   "kept": false,
+   "reason": "personal essay with no actionable AI content or medical education substance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vny9zs/glm_53_released",
+   "title_hash": "a8ce7f32c15714416d6e44e40d931c64",
+   "first_seen": "2026-08-14T09:28:56.446448+00:00",
+   "kept": true,
+   "title": "GLM 5.3 Released",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-14T05:23:43+00:00",
+   "summary": "Zhipu AI released GLM 5.3, an update to its open-weights large language model.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/eixnxdnvz9jh1.png?width=640&crop=smart&auto=webp&s=2247868071d2d80c73f9ce9e95b5c3085bb85fa3",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/views/2026/08/14/will-ai-break-postdoc-bottleneck-opinion",
+   "title_hash": "b36024dbb851e00b3e412ce5fc75f758",
+   "first_seen": "2026-08-14T09:28:56.446448+00:00",
+   "kept": true,
+   "title": "Will AI Break the Postdoc Bottleneck?",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-08-14T03:00:00+00:00",
+   "summary": "Commentary on how artificial intelligence may address workforce misalignment between postdoctoral positions and permanent academic roles.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-2268583854.jpg?itok=1mHgkkX2",
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.quantamagazine.org/how-godels-proof-works-20200714",
+   "title_hash": "4f0ebfcd393d3221e79b0217940920f7",
+   "first_seen": "2026-08-14T09:28:56.446448+00:00",
+   "kept": false,
+   "reason": "mathematics history article without AI relevance or connection to medical education"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=QnGNF8k_uoc",
+   "title_hash": "45df651a23ca2ee3b9a84ecd735fba17",
+   "first_seen": "2026-08-14T09:28:56.446448+00:00",
+   "kept": true,
+   "title": "Claude AI Failed 650 Times…Then Beat The Human Record",
+   "source": "Two Minute Papers",
+   "published": "2026-08-14T08:42:07+00:00",
+   "summary": "Overview of a research paper showing iterative improvement and scaling in model performance on a benchmark task.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/QnGNF8k_uoc/hqdefault.jpg",
+   "display_title": "Iterative model improvement and benchmark performance analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=yMoUwyyTe3E",
+   "title_hash": "ef836e3b5d9004294c25cebe68dcb1d2",
+   "first_seen": "2026-08-14T09:28:56.446448+00:00",
+   "kept": true,
+   "title": "GLM 5.3 Is INSANE! The BEST Open Source Model EVER? BEATS MYTHOS? (Fully Tested)",
+   "source": "WorldofAI",
+   "published": "2026-08-14T08:53:38+00:00",
+   "summary": "Benchmarking and hands-on testing of GLM 5.3 against other open-weights models including Mythos.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/yMoUwyyTe3E/hqdefault.jpg",
+   "display_title": "GLM 5.3 benchmarking and testing against open-source models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0XPk_MAwCW4",
+   "title_hash": "40ebf04832abf31f45276c0cdbeef68c",
+   "first_seen": "2026-08-14T09:28:56.446448+00:00",
+   "kept": false,
+   "reason": "vendor marketing from OpenAI's own channel promoting ChatGPT customer use case"
   }
  ],
  "digests": [

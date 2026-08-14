@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=yMoUwyyTe3E" target="_blank" rel="noopener" title="GLM 5.3 Is INSANE! The BEST Open Source Model EVER? BEATS MYTHOS? (Fully Tested)">
+  <img src="https://i2.ytimg.com/vi/yMoUwyyTe3E/hqdefault.jpg" alt="Video: GLM 5.3 benchmarking and testing against open-source models" loading="lazy">
+  <span class="video-card-title">GLM 5.3 benchmarking and testing against open-source models</span>
+  <span class="video-card-meta">WorldofAI, August 14, 2026</span>
+  <span class="video-card-desc">Benchmarking and hands-on testing of GLM 5.3 against other open-weights models including Mythos.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=QnGNF8k_uoc" target="_blank" rel="noopener" title="Claude AI Failed 650 Times…Then Beat The Human Record">
+  <img src="https://i2.ytimg.com/vi/QnGNF8k_uoc/hqdefault.jpg" alt="Video: Iterative model improvement and benchmark performance analysis" loading="lazy">
+  <span class="video-card-title">Iterative model improvement and benchmark performance analysis</span>
+  <span class="video-card-meta">Two Minute Papers, August 14, 2026</span>
+  <span class="video-card-desc">Overview of a research paper showing iterative improvement and scaling in model performance on a benchmark task.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Mu5a8ErscIE" target="_blank" rel="noopener" title="DeepSeek V4 Pro Is HERE, Is THIS the BEST Open Model Yet?">
   <img src="https://i2.ytimg.com/vi/Mu5a8ErscIE/hqdefault.jpg" alt="Video: DeepSeek V4 Pro testing and technical analysis" loading="lazy">
   <span class="video-card-title">DeepSeek V4 Pro testing and technical analysis</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">DeepSeek V4 Flash performance testing across multiple tasks</span>
   <span class="video-card-meta">Bijan Bowen, July 31, 2026</span>
   <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash across local inference, browser tasks, and game development to assess performance of this small model.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=CiTPDm7PKW0" target="_blank" rel="noopener" title="Multi-robot collaboration with Gemini Robotics 2">
-  <img src="https://i4.ytimg.com/vi/CiTPDm7PKW0/hqdefault.jpg" alt="Video: Multi-robot collaboration with Gemini Robotics 2" loading="lazy">
-  <span class="video-card-title">Multi-robot collaboration with Gemini Robotics 2</span>
-  <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
-  <span class="video-card-desc">Google DeepMind demonstrates Gemini Robotics 2 enabling different robot types to communicate and coordinate on complex multi-robot tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=O9-650iHAls" target="_blank" rel="noopener" title="Advanced dexterity with Gemini Robotics 2">
-  <img src="https://i4.ytimg.com/vi/O9-650iHAls/hqdefault.jpg" alt="Video: Advanced dexterity with Gemini Robotics 2" loading="lazy">
-  <span class="video-card-title">Advanced dexterity with Gemini Robotics 2</span>
-  <span class="video-card-meta">Google DeepMind, July 30, 2026</span>
-  <span class="video-card-desc">Google DeepMind demonstrates advanced physical dexterity capabilities in Gemini Robotics 2 for practical household and workplace tasks.</span>
 </a>
 </div>
 

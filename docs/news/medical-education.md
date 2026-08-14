@@ -21,6 +21,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/08/14/will-ai-break-postdoc-bottleneck-opinion">Will AI Break the Postdoc Bottleneck?</a>
+    <p class="news-card-summary">Commentary on how artificial intelligence may address workforce misalignment between postdoctoral positions and permanent academic roles.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-2268583854.jpg?itok=1mHgkkX2" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">Diagnostic performance and short-interval reproducibility of multimodal large language models in differentiating cholesteatoma from chronic otitis media using key-image temporal bone high-resolution computed tomography</a>
     <p class="news-card-summary">Evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone computed tomography for cholesteatoma diagnosis found fair-to-moderate reproducibility and insufficient agreement to support use as independent diagnostic readers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">Current Status of Generative Artificial Intelligence Utilization in Medical Education: A Cross-Sectional Survey of Medical Students and Faculty</a>
-    <p class="news-card-summary">Survey of medical students and faculty finds generative AI is widely accepted and used in medical education but requires ethical guidelines, digital literacy training, and careful integration strategies.</p>
   </div>
 </div>
 </div>

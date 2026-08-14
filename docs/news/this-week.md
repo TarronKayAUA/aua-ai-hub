@@ -22,6 +22,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
     <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/08/14/will-ai-break-postdoc-bottleneck-opinion">Will AI Break the Postdoc Bottleneck?</a>
+        <p class="news-card-summary">Commentary on how artificial intelligence may address workforce misalignment between postdoctoral positions and permanent academic roles.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-2268583854.jpg?itok=1mHgkkX2" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
@@ -268,13 +276,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An npj Digital Medicine study presents an instructional design strategy using generative AI tools to create interactive learning experiences for teaching non-technical audiences foundational AI concepts in health professions education.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 6, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42562591?fc=20260609215449&amp;ff=20260807015150&amp;v=2.20.1">Large language models in paediatric medical education: equity must come first</a>
-        <p class="news-card-summary">Peer-reviewed perspective on equity considerations for large language model deployment in pediatric medical education.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -285,9 +286,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -613,28 +614,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy">Opinion: AI won’t enhance physician autonomy. It will further diminish it</a>
-        <p class="news-card-summary">A former surgeon argues that AI systems in medicine reflect and amplify existing diminishment of physician autonomy rather than representing a novel threat.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_442937982-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03087-2">Randomized controlled trial of GenAI coach feedback efficacy, acceptability and mechanisms in anxiety worry logs</a>
-        <p class="news-card-summary">Randomized controlled trial shows generative AI coach feedback in anxiety worry logs is efficacious and acceptable to users.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03074-7">Prehospital Injury Severity Estimate (PHISE) matches in-hospital trauma scores when embedded in AI models</a>
-        <p class="news-card-summary">Prehospital injury severity estimates embedded in AI models match in-hospital trauma assessment scores in prospective evaluation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 7, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04577-2">A clinically validated framework for auditing AI chatbot behavior in mental health interactions</a>
         <p class="news-card-summary">A Nature Medicine study evaluating 810 conversations finds that AI chatbots often amplify psychological vulnerabilities in simulated mental health interactions, revealing persistent safety risks.</p>
@@ -664,10 +643,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="new-models">New models (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vny9zs/glm_53_released">GLM 5.3 Released</a>
+        <p class="news-card-summary">Zhipu AI released GLM 5.3, an update to its open-weights large language model.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/eixnxdnvz9jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2247868071d2d80c73f9ce9e95b5c3085bb85fa3" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 13, 2026</span></div>
@@ -964,29 +951,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/6i806mqxexhh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f2bd9e1ac62690d2068ec7710964ce3806b28cc5" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.05157">Large Language Models Threaten Double-blind Review</a>
-        <p class="news-card-summary">Study shows large language models can reliably identify authorship of anonymized manuscripts, threatening double-blind peer review.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 6, 2026</span></div>
-        <a class="news-card-title" href="https://www.aleksagordic.com/blog/vllm">Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)</a>
-        <p class="news-card-summary">Technical analysis of vLLM&#x27;s design and optimization strategies for high-throughput language model inference systems.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.aleksagordic.com/blog/vllm/engine_constructor.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 6, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/hugging-face-openai-cyberattack">AI Safety Regulations in the U.S. Could Give Hackers an Edge</a>
-        <p class="news-card-summary">IEEE analysis of how AI safety regulation may constrain transparency and create security vulnerabilities for AI infrastructure.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/illustration-of-hugging-faces-smiley-face-logo-holding-up-scales-of-justice-against-a-background-of-binary-code.jpg?id=67583759&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 5, 2026</span></div>
@@ -994,13 +958,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Qwen3 text-to-speech voice cloning support was merged into mainline llama.cpp with GGUF quantization and multi-language capabilities.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/kxag5u5ehihh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a834e7741f36d18f76c56a1ec7b72dbc96fa82e9" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2607.29377">Zero-Mem: Zero-Token Memory Operations for LLM Agents</a>
-        <p class="news-card-summary">A method to reduce memory overhead in language model agents by eliminating redundant token operations during inference.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -1016,9 +973,21 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 9 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=yMoUwyyTe3E" target="_blank" rel="noopener" title="GLM 5.3 Is INSANE! The BEST Open Source Model EVER? BEATS MYTHOS? (Fully Tested)">
+      <img src="https://i2.ytimg.com/vi/yMoUwyyTe3E/hqdefault.jpg" alt="Video: GLM 5.3 benchmarking and testing against open-source models" loading="lazy">
+      <span class="video-card-title">GLM 5.3 benchmarking and testing against open-source models</span>
+      <span class="video-card-meta">WorldofAI, August 14, 2026</span>
+      <span class="video-card-desc">Benchmarking and hands-on testing of GLM 5.3 against other open-weights models including Mythos.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=QnGNF8k_uoc" target="_blank" rel="noopener" title="Claude AI Failed 650 Times…Then Beat The Human Record">
+      <img src="https://i2.ytimg.com/vi/QnGNF8k_uoc/hqdefault.jpg" alt="Video: Iterative model improvement and benchmark performance analysis" loading="lazy">
+      <span class="video-card-title">Iterative model improvement and benchmark performance analysis</span>
+      <span class="video-card-meta">Two Minute Papers, August 14, 2026</span>
+      <span class="video-card-desc">Overview of a research paper showing iterative improvement and scaling in model performance on a benchmark task.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=Mu5a8ErscIE" target="_blank" rel="noopener" title="DeepSeek V4 Pro Is HERE, Is THIS the BEST Open Model Yet?">
       <img src="https://i2.ytimg.com/vi/Mu5a8ErscIE/hqdefault.jpg" alt="Video: DeepSeek V4 Pro testing and technical analysis" loading="lazy">
       <span class="video-card-title">DeepSeek V4 Pro testing and technical analysis</span>
