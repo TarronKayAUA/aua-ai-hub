@@ -31,12 +31,25 @@
   last_reviewed: 2026-06-10
   blurb: Google's open model family, released April 2026, from 2 billion parameter on-device variants to a 31 billion parameter model, with vision and audio input and support for over 140 languages.
 
+# Refreshed 2026-08-13 for the Qwen3.8 release (content watch had
+# proposed this twice while the weights were still unpublished; the
+# repos landed under the official Qwen org between 08-05 and 08-13).
+# Licenses read from each card: Qwen3.8-27B is tagged apache-2.0 like
+# the rest of the line, but the 2.4T flagship carries license "other"
+# with license_name qwen3.8-max, whose text (read in full the same
+# day) is an MIT-style grant with two conditions that bite only at
+# scale: attribution on the interface for products above 100M monthly
+# users or US$20M monthly revenue, and a separate Qwen license for
+# model-as-a-service or AI work-assistant businesses above US$50M
+# annual revenue. Neither reaches an institution running the model for
+# teaching or research, but the family license line stays honest about
+# the split rather than calling the whole line Apache.
 - name: Qwen3
   vendor: Alibaba
   url: https://huggingface.co/Qwen
-  license: Apache 2.0
-  last_reviewed: 2026-06-10
-  blurb: Alibaba's open-weight line, offered in the widest range of sizes, from models small enough for a laptop to flagship scale, with broad multilingual coverage.
+  license: Apache 2.0 (Qwen3.8-Max license on the 2.4T flagship)
+  last_reviewed: 2026-08-13
+  blurb: Alibaba's open-weight line, offered in the widest range of sizes, from models small enough for a laptop to flagship scale, with broad multilingual coverage. The August 2026 Qwen3.8 release opened a Max-class flagship for the first time (2.4 trillion parameters with 95 billion active, data-center hardware only) alongside a 27 billion parameter vision-language model that runs on a workstation, both with a 262,000 token context extensible to about 1 million.
 
 - name: DeepSeek
   vendor: DeepSeek
