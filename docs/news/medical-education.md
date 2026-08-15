@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -105,6 +105,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Serial mediation analysis in nursing students shows higher AI literacy associates with lower AI anxiety through more favorable attitudes and stronger self-efficacy.</p>
   </div>
 </div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600593?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">NAVIGATING AI IN MEDICAL EDUCATION: A NARRATIVE REVIEW OF APPLICATIONS, CHALLENGES, AND FUTURE STRATEGIES</a>
+    <p class="news-card-summary">Narrative review synthesizing current AI applications in medical education, including personalized learning and immersive clinical simulation, with actionable strategies for responsible integration.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600580?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">ARTIFICIAL INTELLIGENCE-ASSISTED TEACHING MODEL AS A STRATEGY TO ENHANCE CORE COMPETENCIES OF CLINICAL MEDICINE UNDERGRADUATES: A SCIENTIFIC HYPOTHESIS</a>
+    <p class="news-card-summary">Proposal for AI-assisted teaching models to address gaps between undergraduate clinical theory and practice through personalized guidance and high-fidelity simulation.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 14, 2026</span></div>
@@ -112,19 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Commentary on how artificial intelligence may address workforce misalignment between postdoctoral positions and permanent academic roles.</p>
   </div>
   <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-2268583854.jpg?itok=1mHgkkX2" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98073">Augmented Reality, Based Training for a Rapid Blood Transfusion Device Among Emergency Nurses: Randomized Controlled Trial</a>
-    <p class="news-card-summary">Randomized controlled trial shows augmented reality training improves emergency nurses&#x27; proficiency with rapid blood transfusion devices.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90192">AI Integration in Undergraduate Medical Education: Qualitative Study of Faculty Perspectives in the United Arab Emirates</a>
-    <p class="news-card-summary">Qualitative study explores perspectives of medical faculty in the United Arab Emirates on integrating AI into undergraduate medical education, addressing faculty views in non-Western contexts.</p>
-  </div>
 </div>
 </div>

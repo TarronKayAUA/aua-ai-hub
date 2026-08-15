@@ -20,7 +20,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (21)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -104,6 +104,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597353?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI literacy and AI anxiety in nursing students: the serial mediating roles of attitudes and self-efficacy</a>
         <p class="news-card-summary">Serial mediation analysis in nursing students shows higher AI literacy associates with lower AI anxiety through more favorable attitudes and stronger self-efficacy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600593?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">NAVIGATING AI IN MEDICAL EDUCATION: A NARRATIVE REVIEW OF APPLICATIONS, CHALLENGES, AND FUTURE STRATEGIES</a>
+        <p class="news-card-summary">Narrative review synthesizing current AI applications in medical education, including personalized learning and immersive clinical simulation, with actionable strategies for responsible integration.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600580?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">ARTIFICIAL INTELLIGENCE-ASSISTED TEACHING MODEL AS A STRATEGY TO ENHANCE CORE COMPETENCIES OF CLINICAL MEDICINE UNDERGRADUATES: A SCIENTIFIC HYPOTHESIS</a>
+        <p class="news-card-summary">Proposal for AI-assisted teaching models to address gaps between undergraduate clinical theory and practice through personalized guidance and high-fidelity simulation.</p>
       </div>
     </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
@@ -324,20 +338,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Transfer learning with embedding models predicts distractor selection rates in medical multiple-choice questions, offering a plausibility assessment tool.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42566601?fc=20260609215449&amp;ff=20260807222257&amp;v=2.20.1">Mapping the research landscape of virtual reality and artificial intelligence in medical education evaluation: A bibliometric analysis</a>
-        <p class="news-card-summary">Bibliometric analysis shows virtual reality and AI in medical education evaluation have shifted from technical skill assessment toward competency-oriented and quality-focused approaches.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42566403?fc=20260609215449&amp;ff=20260807222257&amp;v=2.20.1">Trial Files: Leveraging large language models to summarize practice-changing clinical trials for clinicians</a>
-        <p class="news-card-summary">Large language models can produce concise, accurate summaries of randomized controlled trials to help internists keep current with recent medical literature.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -348,9 +348,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -663,13 +663,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03061-y">Pan-retinal pathology detection in oct scans integrating natural language synthesis with diagnostic annotation</a>
-        <p class="news-card-summary">Natural language synthesis integrated with diagnostic annotation improves pan-retinal pathology detection in optical coherence tomography scans.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 8, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03102-6">A multi-class gastric biopsy artificial intelligence model developed from whole slide histopathological images</a>
         <p class="news-card-summary">Researchers developed a multi-class artificial intelligence model to classify gastric biopsy findings from whole slide histopathological images.</p>
       </div>
@@ -712,9 +705,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="new-models">New models (16)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -995,21 +988,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 8, 2026</span></div>
         <a class="news-card-title" href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones">DeepMind&#x27;s WeatherNext model achieves breakthrough forecasting cyclones</a>
         <p class="news-card-summary">DeepMind&#x27;s WeatherNext model demonstrates improved accuracy in forecasting cyclones using artificial intelligence methods.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/7/openai-timeline">Now we have a timeline of the OpenAI accidental attack against Hugging Face</a>
-        <p class="news-card-summary">OpenAI detailed a security incident involving Hugging Face at Black Hat, providing timeline and internal perspective on the attack and response.</p>
-      </div>
-      <img class="news-card-thumb" src="https://img.youtube.com/vi/87DyyMV0kCY/maxresdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 7, 2026</span></div>
-        <a class="news-card-title" href="https://genesisopenmodels.anl.gov/">U.S. Department of Energy Launches the Genesis Open Models Initiative</a>
-        <p class="news-card-summary">U.S. Department of Energy launched the Genesis Open Models Initiative for open-source model development.</p>
       </div>
     </div>
     <div class="news-card" data-topic="new-models">
