@@ -29966,6 +29966,20 @@
    "first_seen": "2026-08-15T08:47:03.526300+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voxppd/qwen_38_35ba3b_spotted",
+   "title_hash": "cf88b24ab6a9b777f14bc48a5db63a80",
+   "first_seen": "2026-08-15T13:00:06.687173+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased model with no substantive information or confirmation"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Agent-Platform-for-Everyone-e3navt9",
+   "title_hash": "194a73c001d29263e6976957b225a866",
+   "first_seen": "2026-08-15T13:00:06.687173+00:00",
+   "kept": false,
+   "reason": "daily news show recap; no standout episode warrant"
   }
  ],
  "digests": [
