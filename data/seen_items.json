@@ -1,57 +1,6 @@
 {
  "items": [
   {
-   "url": "https://medinform.jmir.org/2026/1/e85255",
-   "title_hash": "874ba0578c9c30d809cfb4ed26067070",
-   "first_seen": "2026-06-15T21:35:57.245910+00:00",
-   "kept": true,
-   "title": "Predicting Laboratory Test Ordering in Emergency Departments Using Integrated Structured and Unstructured Electronic Health Records: Machine Learning Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-06-15T21:15:14+00:00",
-   "summary": "Machine learning model predicts emergency department laboratory test ordering using structured and unstructured electronic health record data to support clinical decision-making.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://asset.jmir.pub/assets/354a2cc0feee66259ce6e37274beff5e.png"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e81049",
-   "title_hash": "b8eecf939a5e98f403f3adc3d7790cdb",
-   "first_seen": "2026-06-15T21:35:57.245910+00:00",
-   "kept": true,
-   "title": "AI-Assisted Systematic Literature Review of the Economic Burden of Pneumococcal Disease: Development and Validation Study",
-   "source": "JMIR AI",
-   "published": "2026-06-15T21:00:21+00:00",
-   "summary": "Study validates AI-assisted automated systematic literature review for extracting economic evidence on pneumococcal disease burden from medical databases.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "thumbnail": "https://asset.jmir.pub/assets/fc7be4ebbdd9481f612f762ed4c9b5f3.png"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e76924",
-   "title_hash": "733571242d2a57347c39f43be2472ac2",
-   "first_seen": "2026-06-15T21:35:57.245910+00:00",
-   "kept": true,
-   "title": "Developing a Large Language Model, Based Feedback System for Case Report Writing in Rehabilitation Education: Tutorial",
-   "source": "JMIR Medical Education",
-   "published": "2026-06-15T21:00:04+00:00",
-   "summary": "Tutorial describes development of a large language model feedback system to assist rehabilitation students in writing clinical case reports.",
-   "category": "medical_education",
-   "score": 3.0,
-   "thumbnail": "https://asset.jmir.pub/assets/6c27dff69c1613c31e499e3fbb24630b.png"
-  },
-  {
-   "url": "https://github.com/sammysltd/euromesh",
-   "title_hash": "2d537af1d8fc45eb1aee8b4a28687603",
-   "first_seen": "2026-06-15T21:35:57.245910+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u6bca1/this_is_amazing_token_speed_doubled_kv_cache_now",
-   "title_hash": "5c0af55ec3176eabd66bcea540d653bd",
-   "first_seen": "2026-06-15T21:35:57.245910+00:00",
-   "kept": false
-  },
-  {
    "url": "https://arstechnica.com/ai/2026/06/pentagon-boasts-of-using-ai-to-write-reports-mandated-by-congress",
    "title_hash": "3a45dea1f89212450b5bd81b4a607a3a",
    "first_seen": "2026-06-16T19:56:44.275372+00:00",
@@ -29874,6 +29823,68 @@
    "first_seen": "2026-08-14T20:47:12.918628+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate",
+   "title_hash": "0e6dba715bea823e85ed8f10e337685a",
+   "first_seen": "2026-08-15T01:51:09.219863+00:00",
+   "kept": false,
+   "reason": "technique for content tagging using language models, not significant for medical education or clinical practice audience"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e103399",
+   "title_hash": "120c606f64d8eb3fb779365b22599747",
+   "first_seen": "2026-08-15T01:51:09.219863+00:00",
+   "kept": true,
+   "title": "Empowering Educators to Build AI Chatbots in Health Professions Education: Tutorial on a No-Code Design Workflow",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-14T21:00:18+00:00",
+   "summary": "A peer-reviewed tutorial guides health professions educators through building generative AI chatbots as simulated patients and assessment tools using no-code workflows.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voa3ch/qwen_38_27b_released_please_share_your_experience",
+   "title_hash": "6d183ac7e1bbc9da245d796749d7244d",
+   "first_seen": "2026-08-15T01:51:09.219863+00:00",
+   "kept": false,
+   "reason": "forum discussion with no authoritative information, belongs in community meta-discussion category"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9qix4oDB5aw",
+   "title_hash": "c823f116a446eb0f0dc91daf7f92bb46",
+   "first_seen": "2026-08-15T01:51:09.219863+00:00",
+   "kept": true,
+   "title": "AI News: ChatGPT Ultrafast, Grok 4.6, 3 New Open-Source Models, and more!",
+   "source": "Matthew Berman",
+   "published": "2026-08-14T23:34:42+00:00",
+   "summary": "Roundup covering ChatGPT performance updates, Grok 4.6, and three new open-source model releases with brief descriptions of each.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/9qix4oDB5aw/hqdefault.jpg",
+   "display_title": "AI news roundup: ChatGPT updates, Grok 4.6, and open-source models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6kjXzTVmT58",
+   "title_hash": "708b55688bb50f090338ed1fb80b275c",
+   "first_seen": "2026-08-15T01:51:09.219863+00:00",
+   "kept": true,
+   "title": "Qwen3.8 27B Is INSANE, This Is the BEST Local AI Model Yet!",
+   "source": "Bijan Bowen",
+   "published": "2026-08-14T22:21:09+00:00",
+   "summary": "Hands-on testing and benchmark comparison of Qwen 3.8 27B local model across language, coding, and game tasks.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i3.ytimg.com/vi/6kjXzTVmT58/hqdefault.jpg",
+   "display_title": "Testing Qwen 3.8 27B local model performance"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Decide-What-Work-AI-Should-Do-for-You-The-AI-Deputization-Audit-e3ndv48",
+   "title_hash": "c1312102a5a3c334fd5ded87c511d354",
+   "first_seen": "2026-08-15T01:51:09.219863+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
@@ -30038,19 +30049,19 @@
  "last_digest_at": "2026-08-14T02:47:23.349298+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Medical schools are moving generative AI from theory into structured curricula, with a mixed methods study showing how prompt design and output verification can be built into clinical reasoning training <a href=\"https://mededu.jmir.org/2026/1/e94951\">[3]</a>. Parallel efforts test AI-driven simulation, including an orthodontic residency system that improved case analysis performance over traditional methods <a href=\"https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1\">[6]</a> and augmented reality training that boosted emergency nurses&#x27; proficiency with blood transfusion devices <a href=\"https://mededu.jmir.org/2026/1/e98073\">[1]</a>. A cross-sectional survey finds generative AI already widely used by students and faculty, though ethical guidelines and digital literacy training remain limited <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[15]</a>. Meanwhile, a benchmark evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone imaging found reproducibility too inconsistent for independent diagnostic use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1\">[14]</a>.\n\nAlso this week: seven items address teaching and curriculum design, including reviews on AI in graduate medical education, while three cover simulation and skills work such as ChatGPT-based crisis drills for ICU nurses. Three more examine attitudes toward AI adoption, and two benchmark studies test vision-language models on longitudinal imaging.",
-   "hash": "256613242365d825",
-   "date": "August 14, 2026"
+   "text": "Generative AI is being recast as a participant in medical education rather than just a tool for it, according to an analysis in JMIR Medical Education describing an &quot;AI colleague&quot; that reshapes interprofessional teaching <a href=\"https://mededu.jmir.org/2026/1/e94034\">[3]</a>. That shift intersects with a call for human-centered frameworks around AI agents and clinical judgment, including AI literacy training and AI-assisted OSCEs so automation supports rather than replaces reasoning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1\">[11]</a>. Assessment is adapting in parallel, with a scoping review mapping how AI can gauge clinical competency across professions <a href=\"https://mededu.jmir.org/2026/1/e92826\">[4]</a>. Practical uptake is also visible: a no-code tutorial shows educators how to build chatbot-based standardized patients <a href=\"https://mededu.jmir.org/2026/1/e103399\">[1]</a>, while faculty in the United Arab Emirates weigh how such tools fit undergraduate curricula <a href=\"https://mededu.jmir.org/2026/1/e90192\">[15]</a>.\n\nAlso this week: seven curriculum items cover self-directed learning tools and a bibliometric mapping of problem-based education, while four simulation entries include virtual and augmented reality training. Three pieces explore attitudes and adoption, including nursing students&#x27; AI literacy and anxiety, and the section&#x27;s sole assessment entry evaluates methods for gauging clinical competency.",
+   "hash": "594bbc4ed7ba0fcc",
+   "date": "August 15, 2026"
   },
   "clinical_practice": {
-   "text": "A Nature Medicine perspective argues that clinical AI decision support tools are scaling up faster than the evidence needed to evaluate them <a href=\"https://www.nature.com/articles/d41591-026-00040-4\">[7]</a>. That gap sits alongside a new benchmark showing large language models can abandon medication-safety boundaries once users declare self-treatment intent after an initial refusal <a href=\"https://arxiv.org/abs/2608.10258\">[13]</a>. Real-world barriers to implementing AI-based decision support systems <a href=\"https://medinform.jmir.org/2026/1/e89834\">[2]</a> compound the concern, especially as new Medicare reimbursement incentives for AI-based devices may encourage overuse in hospitals <a href=\"https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices\">[3]</a>. A separate benchmark of locally deployable small language models for emergency department decision support <a href=\"https://arxiv.org/abs/2608.10273\">[14]</a> offers one path toward safer, more controllable deployment.\n\nAlso this week: the section carries six safety and evaluation items, five on clinical decision support, and two each on imaging and diagnostics and clinical documentation. Coverage spans a scoping review of bias in mental health prediction models to UniMedDiff, a diffusion model that generates medical images directly from clinical reports.",
-   "hash": "d325d7964b26e884",
-   "date": "August 14, 2026"
+   "text": "Detecting and mitigating bias in clinical AI systems is now the focus of a new unified framework that addresses representation, proxy, integrity, and temporal distortions across the patient journey <a href=\"https://ai.jmir.org/2026/1/e102146\">[1]</a>. The advance arrives as evidence generation struggles to keep pace with rapid deployment of AI-based decision support tools <a href=\"https://www.nature.com/articles/d41591-026-00040-4\">[12]</a>, a gap reinforced by a scoping review cataloging real-world barriers to implementing such systems in practice <a href=\"https://medinform.jmir.org/2026/1/e89834\">[6]</a>. Meanwhile, an AI tool for diagnosing common skin disorders shows strong performance and potential use in resource-limited settings <a href=\"https://pubmed.ncbi.nlm.nih.gov/42595478?fc=20260609215449&amp;ff=20260814014806&amp;v=2.20.1\">[7]</a>, even as analysts examine how Medicare reimbursement incentives for newly authorized AI devices could encourage overuse in hospitals <a href=\"https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices\">[8]</a>.\n\nAlso this week: the section includes six items on safety and evaluation, four on clinical decision support, four on imaging and diagnostics, and one on clinical documentation. Coverage spans federated learning for ventilator weaning prediction and a knowledge-enhanced diffusion model for generating medical images from clinical reports.",
+   "hash": "1a53af5d93d34023",
+   "date": "August 15, 2026"
   },
   "general_ai": {
-   "text": "Google&#x27;s release of Gemini 3.7 Flash just three weeks after Gemini 3.6 Flash <a href=\"https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release\">[2]</a> underscores the pace of frontier model iteration, a trend reinforced by DeepSeek&#x27;s V4 Pro update <a href=\"https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813\">[8]</a> arriving via API. Questions about how to interpret such releases persist: research on benchmark wording shows that rephrasing questions without changing their meaning shifts model scores <a href=\"https://arxiv.org/abs/2608.11694\">[6]</a>, and separate work on machine unlearning finds that models retain latent traces of removed knowledge <a href=\"https://arxiv.org/abs/2608.11408\">[4]</a>. Meanwhile, Twitch&#x27;s new opt-out option for Amazon&#x27;s AI training <a href=\"https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai\">[9]</a> signals growing attention to data consent in industry practice.\n\nAlso this week: four new model releases include LFM2.5-VL-3B, a vision-language model built for edge devices, alongside a plugin adding Gemini support to a command-line tool. Three additional benchmark and evaluation studies examine chain-of-thought reasoning limits and cross-model output comparisons, while two papers on research methods address reproducibility across thousands of ICML papers and quantization effects on multilingual performance.",
-   "hash": "b02a9ac0e043fad6",
-   "date": "August 14, 2026"
+   "text": "OpenAI and Anthropic have cut prices as Chinese AI companies press into the market <a href=\"https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground\">[1]</a>, a shift that comes as Google keeps accelerating its release cadence, shipping Gemini 3.7 Flash just three weeks after the previous version <a href=\"https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release\">[4]</a>. DeepSeek added to the pace with a new V4 Pro variant <a href=\"https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813\">[10]</a>. Underneath this activity, two research threads complicate how progress gets measured: one study finds that minor rewording of benchmark questions can shift model scores <a href=\"https://arxiv.org/abs/2608.11694\">[8]</a>, while another shows that &quot;unlearned&quot; information can resurface in later training <a href=\"https://arxiv.org/abs/2608.11408\">[6]</a>.\n\nAlso this week: the section covers four new model releases, three industry and policy stories, and two safety and reliability studies, along with a look at open model trends and a multi-model prompt comparison. An edge-focused vision-language model and a reproducibility analysis of ICML papers close out the list.",
+   "hash": "8146e784b4c4150c",
+   "date": "August 15, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -30121,5 +30132,5 @@
    "url": "https://topaneu-26.grand-challenge.org/"
   }
  },
- "section_briefs_refreshed": "2026-08-14"
+ "section_briefs_refreshed": "2026-08-15"
 }

@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Medical schools are moving generative AI from theory into structured curricula, with a mixed methods study showing how prompt design and output verification can be built into clinical reasoning training <a href="https://mededu.jmir.org/2026/1/e94951">[3]</a>. Parallel efforts test AI-driven simulation, including an orthodontic residency system that improved case analysis performance over traditional methods <a href="https://pubmed.ncbi.nlm.nih.gov/42592048?fc=20260609215449&amp;ff=20260813131428&amp;v=2.20.1">[6]</a> and augmented reality training that boosted emergency nurses&#x27; proficiency with blood transfusion devices <a href="https://mededu.jmir.org/2026/1/e98073">[1]</a>. A cross-sectional survey finds generative AI already widely used by students and faculty, though ethical guidelines and digital literacy training remain limited <a href="https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">[15]</a>. Meanwhile, a benchmark evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone imaging found reproducibility too inconsistent for independent diagnostic use <a href="https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&amp;ff=20260811094422&amp;v=2.20.1">[14]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum design, including reviews on AI in graduate medical education, while three cover simulation and skills work such as ChatGPT-based crisis drills for ICU nurses. Three more examine attitudes toward AI adoption, and two benchmark studies test vision-language models on longitudinal imaging.</p>
-<p class="section-brief-date">The picture as of August 14, 2026; numbered links go to the items below.</p>
+<p>Generative AI is being recast as a participant in medical education rather than just a tool for it, according to an analysis in JMIR Medical Education describing an &quot;AI colleague&quot; that reshapes interprofessional teaching <a href="https://mededu.jmir.org/2026/1/e94034">[3]</a>. That shift intersects with a call for human-centered frameworks around AI agents and clinical judgment, including AI literacy training and AI-assisted OSCEs so automation supports rather than replaces reasoning <a href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">[11]</a>. Assessment is adapting in parallel, with a scoping review mapping how AI can gauge clinical competency across professions <a href="https://mededu.jmir.org/2026/1/e92826">[4]</a>. Practical uptake is also visible: a no-code tutorial shows educators how to build chatbot-based standardized patients <a href="https://mededu.jmir.org/2026/1/e103399">[1]</a>, while faculty in the United Arab Emirates weigh how such tools fit undergraduate curricula <a href="https://mededu.jmir.org/2026/1/e90192">[15]</a>.</p>
+<p>Also this week: seven curriculum items cover self-directed learning tools and a bibliometric mapping of problem-based education, while four simulation entries include virtual and augmented reality training. Three pieces explore attitudes and adoption, including nursing students&#x27; AI literacy and anxiety, and the section&#x27;s sole assessment entry evaluates methods for gauging clinical competency.</p>
+<p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e103399">Empowering Educators to Build AI Chatbots in Health Professions Education: Tutorial on a No-Code Design Workflow</a>
+    <p class="news-card-summary">A peer-reviewed tutorial guides health professions educators through building generative AI chatbots as simulated patients and assessment tools using no-code workflows.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e90192">AI Integration in Undergraduate Medical Education: Qualitative Study of Faculty Perspectives in the United Arab Emirates</a>
     <p class="news-card-summary">Qualitative study explores perspectives of medical faculty in the United Arab Emirates on integrating AI into undergraduate medical education, addressing faculty views in non-Western contexts.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94951">Integrating Generative AI Into Clinical Reasoning Education for Medical Students: Mixed Methods Study</a>
-    <p class="news-card-summary">Mixed methods study evaluates integration of generative AI with clinical reasoning frameworks to develop student competencies in prompt design, output verification, and limitation recognition.</p>
   </div>
 </div>
 </div>

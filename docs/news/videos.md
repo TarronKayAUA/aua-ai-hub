@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9qix4oDB5aw" target="_blank" rel="noopener" title="AI News: ChatGPT Ultrafast, Grok 4.6, 3 New Open-Source Models, and more!">
+  <img src="https://i2.ytimg.com/vi/9qix4oDB5aw/hqdefault.jpg" alt="Video: AI news roundup: ChatGPT updates, Grok 4.6, and open-source models" loading="lazy">
+  <span class="video-card-title">AI news roundup: ChatGPT updates, Grok 4.6, and open-source models</span>
+  <span class="video-card-meta">Matthew Berman, August 14, 2026</span>
+  <span class="video-card-desc">Roundup covering ChatGPT performance updates, Grok 4.6, and three new open-source model releases with brief descriptions of each.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=6kjXzTVmT58" target="_blank" rel="noopener" title="Qwen3.8 27B Is INSANE, This Is the BEST Local AI Model Yet!">
+  <img src="https://i3.ytimg.com/vi/6kjXzTVmT58/hqdefault.jpg" alt="Video: Testing Qwen 3.8 27B local model performance" loading="lazy">
+  <span class="video-card-title">Testing Qwen 3.8 27B local model performance</span>
+  <span class="video-card-meta">Bijan Bowen, August 14, 2026</span>
+  <span class="video-card-desc">Hands-on testing and benchmark comparison of Qwen 3.8 27B local model across language, coding, and game tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=yMoUwyyTe3E" target="_blank" rel="noopener" title="GLM 5.3 Is INSANE! The BEST Open Source Model EVER? BEATS MYTHOS? (Fully Tested)">
   <img src="https://i2.ytimg.com/vi/yMoUwyyTe3E/hqdefault.jpg" alt="Video: GLM 5.3 benchmarking and testing against open-source models" loading="lazy">
   <span class="video-card-title">GLM 5.3 benchmarking and testing against open-source models</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Understanding AI agent hallucination in AI systems</span>
   <span class="video-card-meta">IBM Technology, August 2, 2026</span>
   <span class="video-card-desc">IBM explainer on how large language models generate confident but false answers and why hallucination occurs in AI systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=wT42SgaOPK4" target="_blank" rel="noopener" title="DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, &amp; Fast! (Fully Tested)">
-  <img src="https://i4.ytimg.com/vi/wT42SgaOPK4/hqdefault.jpg" alt="Video: DeepSeek V4 Flash benchmarking and performance testing" loading="lazy">
-  <span class="video-card-title">DeepSeek V4 Flash benchmarking and performance testing</span>
-  <span class="video-card-meta">WorldofAI, August 1, 2026</span>
-  <span class="video-card-desc">Hands-on benchmarking of DeepSeek V4 Flash covering performance, cost, and speed across tasks relevant to users and educators.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=PTdu0JlhGfw" target="_blank" rel="noopener" title="DeepSeek V4 Flash Is INSANE, The Best Small Model Yet!">
-  <img src="https://i1.ytimg.com/vi/PTdu0JlhGfw/hqdefault.jpg" alt="Video: DeepSeek V4 Flash performance testing across multiple tasks" loading="lazy">
-  <span class="video-card-title">DeepSeek V4 Flash performance testing across multiple tasks</span>
-  <span class="video-card-meta">Bijan Bowen, July 31, 2026</span>
-  <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash across local inference, browser tasks, and game development to assess performance of this small model.</span>
 </a>
 </div>
 
