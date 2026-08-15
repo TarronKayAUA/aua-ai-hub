@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03100-8">CliniSense AI for automated clinical skills assessment with real-time feedback</a>
+    <p class="news-card-summary">CliniSense AI provides automated assessment of clinical skills with real-time feedback to learners during practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
@@ -118,13 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600580?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">ARTIFICIAL INTELLIGENCE-ASSISTED TEACHING MODEL AS A STRATEGY TO ENHANCE CORE COMPETENCIES OF CLINICAL MEDICINE UNDERGRADUATES: A SCIENTIFIC HYPOTHESIS</a>
     <p class="news-card-summary">Proposal for AI-assisted teaching models to address gaps between undergraduate clinical theory and practice through personalized guidance and high-fidelity simulation.</p>
   </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/08/14/will-ai-break-postdoc-bottleneck-opinion">Will AI Break the Postdoc Bottleneck?</a>
-    <p class="news-card-summary">Commentary on how artificial intelligence may address workforce misalignment between postdoctoral positions and permanent academic roles.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-2268583854.jpg?itok=1mHgkkX2" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -29980,6 +29980,86 @@
    "first_seen": "2026-08-15T13:00:06.687173+00:00",
    "kept": false,
    "reason": "daily news show recap; no standout episode warrant"
+  },
+  {
+   "url": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
+   "title_hash": "0999ac7e7faea0fcf8bfe379a10dcf12",
+   "first_seen": "2026-08-15T16:42:42.967746+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance"
+  },
+  {
+   "url": "https://sebastianraschka.com/blog/2026/claude-text-watermarking.html",
+   "title_hash": "1b55928fbd0e534e7129d1ab0f164b38",
+   "first_seen": "2026-08-15T16:42:42.967746+00:00",
+   "kept": true,
+   "title": "How Claude's Text Watermarking Works",
+   "source": "Ahead of AI",
+   "published": "2026-08-15T09:28:41+00:00",
+   "summary": "Anthropic's text watermarking embeds imperceptible patterns in Claude's outputs to enable detection of AI-generated text.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://sebastianraschka.com/images/blog/2026/claude-watermarking-explained/claude-watermarking.png",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vonuu0/qwen_38_27b_is_a_game_changer",
+   "title_hash": "83c9c7f8f8ead9ede7f4474276f5b5f6",
+   "first_seen": "2026-08-15T16:42:42.967746+00:00",
+   "kept": false,
+   "reason": "forum discussion without significant news or instructive analysis for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03100-8",
+   "title_hash": "c5a8fc7562b1f7565a1ba7e9cb02f064",
+   "first_seen": "2026-08-15T16:42:42.967746+00:00",
+   "kept": true,
+   "title": "CliniSense AI for automated clinical skills assessment with real-time feedback",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-15T00:00:00+00:00",
+   "summary": "CliniSense AI provides automated assessment of clinical skills with real-time feedback to learners during practice.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03118-y",
+   "title_hash": "7e7012b13276f03e5f12046ad7bde5f4",
+   "first_seen": "2026-08-15T16:42:42.967746+00:00",
+   "kept": true,
+   "title": "Uncertainty-inspired open-set model for identifying infantile fundus abnormalities",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-15T00:00:00+00:00",
+   "summary": "An uncertainty-aware open-set model identifies abnormalities in infant fundus images while detecting out-of-distribution cases.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03064-9",
+   "title_hash": "aeb16dfeaf1faa1dea9cd8b7c5f5e9ca",
+   "first_seen": "2026-08-15T16:42:42.967746+00:00",
+   "kept": true,
+   "title": "Toward federated large language models in medicine: a parameter-efficient framework for privacy-preserving, multi-institutional adaptation",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-15T00:00:00+00:00",
+   "summary": "A parameter-efficient federated learning framework enables multiple medical institutions to adapt large language models while preserving patient privacy.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03094-3",
+   "title_hash": "1d3cd76eaba690db8cdf6d92d1f92fbc",
+   "first_seen": "2026-08-15T16:42:42.967746+00:00",
+   "kept": true,
+   "title": "Accelerating AI in clinical care: policy priorities of the 2025 HHS request for information",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-15T00:00:00+00:00",
+   "summary": "The U.S. Department of Health and Human Services seeks public input on policy priorities for AI adoption in clinical care, including regulation and reimbursement.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
   }
  ],
  "digests": [

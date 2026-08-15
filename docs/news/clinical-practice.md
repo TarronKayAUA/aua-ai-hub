@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -26,6 +26,27 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03147-7">A virtual trial framework for generating clinical evidence in orthopedics demonstrated with humeral stem evaluation</a>
     <p class="news-card-summary">A virtual trial framework using simulation generates clinical evidence for orthopedic device design without requiring physical trials.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03118-y">Uncertainty-inspired open-set model for identifying infantile fundus abnormalities</a>
+    <p class="news-card-summary">An uncertainty-aware open-set model identifies abnormalities in infant fundus images while detecting out-of-distribution cases.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03064-9">Toward federated large language models in medicine: a parameter-efficient framework for privacy-preserving, multi-institutional adaptation</a>
+    <p class="news-card-summary">A parameter-efficient federated learning framework enables multiple medical institutions to adapt large language models while preserving patient privacy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03094-3">Accelerating AI in clinical care: policy priorities of the 2025 HHS request for information</a>
+    <p class="news-card-summary">The U.S. Department of Health and Human Services seeks public input on policy priorities for AI adoption in clinical care, including regulation and reimbursement.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -104,28 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04595-0">How to build an AI-driven digital organism</a>
     <p class="news-card-summary">Perspective on designing integrated multiscale foundation models as AI-driven systems to advance biological and medical research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00040-4">AI decision support is scaling-up fast, can the evidence keep up?</a>
-    <p class="news-card-summary">Clinical AI decision support tools are deploying rapidly while evidence generation and evaluation frameworks struggle to keep pace.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00040-4/d41591-026-00040-4_50850336.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03143-x">Causal inference framework for personalised b/tsDMARD selection in rheumatoid arthritis: ANSWER cohort validation</a>
-    <p class="news-card-summary">A causal inference framework for personalizing b/tsDMARD selection in rheumatoid arthritis shows validation on an ANSWER cohort.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03135-x">UniMedDiff: a knowledge-enhanced diffusion model for medical image generation from clinical reports</a>
-    <p class="news-card-summary">Peer-reviewed study presents UniMedDiff, a knowledge-enhanced diffusion model for generating medical images from clinical reports.</p>
   </div>
 </div>
 </div>

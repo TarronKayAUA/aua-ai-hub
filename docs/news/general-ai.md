@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://sebastianraschka.com/blog/2026/claude-text-watermarking.html">How Claude&#x27;s Text Watermarking Works</a>
+    <p class="news-card-summary">Anthropic&#x27;s text watermarking embeds imperceptible patterns in Claude&#x27;s outputs to enable detection of AI-generated text.</p>
+  </div>
+  <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/claude-watermarking-explained/claude-watermarking.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 14, 2026</span></div>
@@ -128,13 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Twitch users can now opt out of having their content used to train Amazon&#x27;s generative AI models.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK044_VRG_Illo_N_Barclay_1_twitch.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b">LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge</a>
-    <p class="news-card-summary">Hugging Face releases LFM2.5-VL-3B, a 3-billion-parameter vision-language model optimized for edge deployment with improved speed and capability.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/apldbDPIJWZeODX1g9iFV.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

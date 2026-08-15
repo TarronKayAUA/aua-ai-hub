@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (21)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (21)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03100-8">CliniSense AI for automated clinical skills assessment with real-time feedback</a>
+        <p class="news-card-summary">CliniSense AI provides automated assessment of clinical skills with real-time feedback to learners during practice.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
@@ -348,15 +355,36 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (21)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03147-7">A virtual trial framework for generating clinical evidence in orthopedics demonstrated with humeral stem evaluation</a>
         <p class="news-card-summary">A virtual trial framework using simulation generates clinical evidence for orthopedic device design without requiring physical trials.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03118-y">Uncertainty-inspired open-set model for identifying infantile fundus abnormalities</a>
+        <p class="news-card-summary">An uncertainty-aware open-set model identifies abnormalities in infant fundus images while detecting out-of-distribution cases.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03064-9">Toward federated large language models in medicine: a parameter-efficient framework for privacy-preserving, multi-institutional adaptation</a>
+        <p class="news-card-summary">A parameter-efficient federated learning framework enables multiple medical institutions to adapt large language models while preserving patient privacy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03094-3">Accelerating AI in clinical care: policy priorities of the 2025 HHS request for information</a>
+        <p class="news-card-summary">The U.S. Department of Health and Human Services seeks public input on policy priorities for AI adoption in clinical care, including regulation and reimbursement.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -707,8 +735,16 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 15, 2026</span></div>
+        <a class="news-card-title" href="https://sebastianraschka.com/blog/2026/claude-text-watermarking.html">How Claude&#x27;s Text Watermarking Works</a>
+        <p class="news-card-summary">Anthropic&#x27;s text watermarking embeds imperceptible patterns in Claude&#x27;s outputs to enable detection of AI-generated text.</p>
+      </div>
+      <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/claude-watermarking-explained/claude-watermarking.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 14, 2026</span></div>
@@ -974,14 +1010,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.06663">The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</a>
         <p class="news-card-summary">Survey of 1,547 papers identifies the horizon gap: frontier language models fail at multi-hour tasks despite solving single-pass reasoning problems, proposing frameworks for planning, memory, and long-horizon execution.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 8, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day">DeepMind’s hurricane breakthrough has surprised weather scientists</a>
-        <p class="news-card-summary">DeepMind&#x27;s open-source WeatherNext model generates accurate weather predictions using lower-resolution input data.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2023/12/hurricane-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
