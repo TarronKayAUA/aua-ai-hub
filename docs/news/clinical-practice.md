@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03147-7">A virtual trial framework for generating clinical evidence in orthopedics demonstrated with humeral stem evaluation</a>
+    <p class="news-card-summary">A virtual trial framework using simulation generates clinical evidence for orthopedic device design without requiring physical trials.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 14, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03135-x">UniMedDiff: a knowledge-enhanced diffusion model for medical image generation from clinical reports</a>
     <p class="news-card-summary">Peer-reviewed study presents UniMedDiff, a knowledge-enhanced diffusion model for generating medical images from clinical reports.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03136-w">Developing a scalable pipeline for data extraction from clinical letters through resource-efficient prompt engineering</a>
-    <p class="news-card-summary">Peer-reviewed study develops a resource-efficient prompt engineering pipeline for extracting structured data from clinical letters at scale.</p>
   </div>
 </div>
 </div>

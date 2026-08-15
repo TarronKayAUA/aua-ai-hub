@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=J_aqblUWj4k" target="_blank" rel="noopener" title="Qwen 3.8 27B BLOWS MY MIND! Best Local AI Model Yet! Basically Opus Locally! (Fully Tested)">
+  <img src="https://i3.ytimg.com/vi/J_aqblUWj4k/hqdefault.jpg" alt="Video: Qwen 3.8 27B benchmarked against commercial models" loading="lazy">
+  <span class="video-card-title">Qwen 3.8 27B benchmarked against commercial models</span>
+  <span class="video-card-meta">WorldofAI, August 15, 2026</span>
+  <span class="video-card-desc">Benchmarked testing of Qwen 3.8 27B model against commercial alternatives on local hardware.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=9qix4oDB5aw" target="_blank" rel="noopener" title="AI News: ChatGPT Ultrafast, Grok 4.6, 3 New Open-Source Models, and more!">
   <img src="https://i2.ytimg.com/vi/9qix4oDB5aw/hqdefault.jpg" alt="Video: AI news roundup: ChatGPT updates, Grok 4.6, and open-source models" loading="lazy">
   <span class="video-card-title">AI news roundup: ChatGPT updates, Grok 4.6, and open-source models</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing Qwen 3.8 Max against leading open models</span>
   <span class="video-card-meta">WorldofAI, August 4, 2026</span>
   <span class="video-card-desc">Hands-on testing and evaluation of Alibaba&#x27;s Qwen 3.8 Max open-source model against leading alternatives.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=bNRhppHct54" target="_blank" rel="noopener" title="Understanding AI Agent Hallucination in AI Systems">
-  <img src="https://i3.ytimg.com/vi/bNRhppHct54/hqdefault.jpg" alt="Video: Understanding AI agent hallucination in AI systems" loading="lazy">
-  <span class="video-card-title">Understanding AI agent hallucination in AI systems</span>
-  <span class="video-card-meta">IBM Technology, August 2, 2026</span>
-  <span class="video-card-desc">IBM explainer on how large language models generate confident but false answers and why hallucination occurs in AI systems.</span>
 </a>
 </div>
 

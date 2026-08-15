@@ -29925,6 +29925,47 @@
    "first_seen": "2026-08-15T04:48:53.424900+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03147-7",
+   "title_hash": "55921782b801ccb07c312fc01605ab47",
+   "first_seen": "2026-08-15T08:47:03.526300+00:00",
+   "kept": true,
+   "title": "A virtual trial framework for generating clinical evidence in orthopedics demonstrated with humeral stem evaluation",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-15T00:00:00+00:00",
+   "summary": "A virtual trial framework using simulation generates clinical evidence for orthopedic device design without requiring physical trials.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voix4o/local_uncensored_opus_46_at_home_qwen38_27b",
+   "title_hash": "f5f168a762ca8a5c6319e65ffe2b7e12",
+   "first_seen": "2026-08-15T08:47:03.526300+00:00",
+   "kept": false,
+   "reason": "forum thread about model fine-tuning; lacks significance for medical educators and crosses the safety-circumvention boundary unsuitable for institutional use"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=J_aqblUWj4k",
+   "title_hash": "18f11674e7e15b1a99f05a7d310d19a2",
+   "first_seen": "2026-08-15T08:47:03.526300+00:00",
+   "kept": true,
+   "title": "Qwen 3.8 27B BLOWS MY MIND! Best Local AI Model Yet! Basically Opus Locally! (Fully Tested)",
+   "source": "WorldofAI",
+   "published": "2026-08-15T05:42:26+00:00",
+   "summary": "Benchmarked testing of Qwen 3.8 27B model against commercial alternatives on local hardware.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/J_aqblUWj4k/hqdefault.jpg",
+   "display_title": "Qwen 3.8 27B benchmarked against commercial models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=aUcDyeZgz_k",
+   "title_hash": "7c1cf072a965c79625e764ded42ea641",
+   "first_seen": "2026-08-15T08:47:03.526300+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
