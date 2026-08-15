@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42602997?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">Leveraging Large Language Models to Summarize Data and Free-Text Comments From Resident Assessments</a>
+    <p class="news-card-summary">Large language models with optimized prompts labeled resident assessment comments with substantially higher accuracy for identifying strengths than areas for improvement.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42602288?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">Application of a deep learning-based system for eyelid margin signs identification training and testing in dry eye disease education</a>
+    <p class="news-card-summary">A deep learning system trained on eyelid margin signs improved student accuracy in identifying abnormal findings in dry eye disease, particularly meibomian gland orifice plugging.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">Artificial Intelligence-Augmented Standardized Patient Models for AETCOM (Attitude, Ethics, and Communication) Competency Evaluation: A Pilot Study</a>
+    <p class="news-card-summary">AI virtual patients demonstrated reproducibility and consistency in assessing communication skills, providing immediate feedback and scalable standardized evaluation alongside expert assessment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
@@ -103,27 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI Agents and the Future of Clinical Judgment in Medical Education: Opportunities, Challenges, and the Need for Human-Centered Integration</a>
     <p class="news-card-summary">AI agents should enhance rather than replace clinical reasoning through human-centered frameworks including AI literacy, controlled simulation failures, and updated assessments like AI-assisted OSCEs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597353?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI literacy and AI anxiety in nursing students: the serial mediating roles of attitudes and self-efficacy</a>
-    <p class="news-card-summary">Serial mediation analysis in nursing students shows higher AI literacy associates with lower AI anxiety through more favorable attitudes and stronger self-efficacy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600593?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">NAVIGATING AI IN MEDICAL EDUCATION: A NARRATIVE REVIEW OF APPLICATIONS, CHALLENGES, AND FUTURE STRATEGIES</a>
-    <p class="news-card-summary">Narrative review synthesizing current AI applications in medical education, including personalized learning and immersive clinical simulation, with actionable strategies for responsible integration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600580?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">ARTIFICIAL INTELLIGENCE-ASSISTED TEACHING MODEL AS A STRATEGY TO ENHANCE CORE COMPETENCIES OF CLINICAL MEDICINE UNDERGRADUATES: A SCIENTIFIC HYPOTHESIS</a>
-    <p class="news-card-summary">Proposal for AI-assisted teaching models to address gaps between undergraduate clinical theory and practice through personalized guidance and high-fidelity simulation.</p>
   </div>
 </div>
 </div>
