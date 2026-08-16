@@ -29707,6 +29707,34 @@
    "first_seen": "2026-08-16T04:51:00.079500+00:00",
    "kept": false,
    "reason": "speculation and rumor without confirmed releases; generic channel boilerplate without substantive coverage of real developments"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vp438p/if_you_would_have_told_me_half_a_year_ago_that_a",
+   "title_hash": "c1a0cb94f68484cc122881e49b4dd964",
+   "first_seen": "2026-08-16T08:48:15.755495+00:00",
+   "kept": false,
+   "reason": "forum thread about personal experimentation with a model, lacking significance for medical educators"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=IPV90it7UYU",
+   "title_hash": "4b834cc662fa3c21e61ae7acc8ba4033",
+   "first_seen": "2026-08-16T08:48:15.755495+00:00",
+   "kept": false,
+   "reason": "rumor and speculation video with no confirmed underlying event"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qZefjtkkvrY",
+   "title_hash": "7fa1de39a0fccc9ba6ec93afcefb6bf1",
+   "first_seen": "2026-08-16T08:48:15.755495+00:00",
+   "kept": false,
+   "reason": "drama-framed content with promotional payload"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-systems",
+   "title_hash": "5766dc9de0de30477703a75ce3cadb51",
+   "first_seen": "2026-08-16T08:48:15.755495+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
