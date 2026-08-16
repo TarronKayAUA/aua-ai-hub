@@ -21,6 +21,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 16, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-cpu-comeback">The CPU Comeback Is Upon Us</a>
+    <p class="news-card-summary">AWS is experiencing CPU capacity constraints as AI workloads strain cloud infrastructure, prompting a shift toward CPU-efficient computing strategies.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-single-computer-chip-balancing-on-the-tip-of-a-pyramid.jpg?id=67615384&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 15, 2026</span></div>
@@ -128,13 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813">DeepSeek V4 Pro 0813 (on OpenRouter)</a>
     <p class="news-card-summary">DeepSeek released V4 Pro 0813, a new model variant available via API through OpenRouter.</p>
   </div>
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai">Twitch streamers can now opt out from training Amazon’s AI</a>
-    <p class="news-card-summary">Twitch users can now opt out of having their content used to train Amazon&#x27;s generative AI models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK044_VRG_Illo_N_Barclay_1_twitch.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

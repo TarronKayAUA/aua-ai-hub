@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=BHGTA6ZEls4" target="_blank" rel="noopener" title="5 Ways to Connect AI Agents to Tools: From APIs to MCP">
+  <img src="https://i3.ytimg.com/vi/BHGTA6ZEls4/hqdefault.jpg" alt="Video: Connecting AI agents to tools: methods and protocols" loading="lazy">
+  <span class="video-card-title">Connecting AI agents to tools: methods and protocols</span>
+  <span class="video-card-meta">IBM Technology, August 16, 2026</span>
+  <span class="video-card-desc">Overview of five approaches for connecting AI agents to external tools, including application programming interfaces and model context protocol.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=3TeW8L9wy-Y" target="_blank" rel="noopener" title="GLM 5.3 Is HERE, Is THIS the BEST Open Model Yet?">
+  <img src="https://i4.ytimg.com/vi/3TeW8L9wy-Y/hqdefault.jpg" alt="Video: GLM 5.3 open model evaluation and testing" loading="lazy">
+  <span class="video-card-title">GLM 5.3 open model evaluation and testing</span>
+  <span class="video-card-meta">Bijan Bowen, August 16, 2026</span>
+  <span class="video-card-desc">Hands-on evaluation of GLM 5.3 open-weights model across multiple benchmarks and use cases.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=J_aqblUWj4k" target="_blank" rel="noopener" title="Qwen 3.8 27B BLOWS MY MIND! Best Local AI Model Yet! Basically Opus Locally! (Fully Tested)">
   <img src="https://i3.ytimg.com/vi/J_aqblUWj4k/hqdefault.jpg" alt="Video: Qwen 3.8 27B benchmarked against commercial models" loading="lazy">
   <span class="video-card-title">Qwen 3.8 27B benchmarked against commercial models</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI application for rare disease diagnosis at Boston Children&#x27;s Hospital</span>
   <span class="video-card-meta">OpenAI, August 4, 2026</span>
   <span class="video-card-desc">Boston Children&#x27;s Hospital uses AI to help clinicians diagnose rare genetic diseases when conventional testing leaves patients without answers.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=f0Y3tQp2OqQ" target="_blank" rel="noopener" title="Fable 5 &amp; Qwen 27B, Traycer Multi-Agent Hands-On Test!">
-  <img src="https://i3.ytimg.com/vi/f0Y3tQp2OqQ/hqdefault.jpg" alt="Video: Fable 5 and Qwen 27B multi-agent hands-on test" loading="lazy">
-  <span class="video-card-title">Fable 5 and Qwen 27B multi-agent hands-on test</span>
-  <span class="video-card-meta">Bijan Bowen, August 4, 2026</span>
-  <span class="video-card-desc">Hands-on demonstration of Fable 5 and Qwen 27B models with multi-agent testing and technical overview.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=vmLwsoVRo30" target="_blank" rel="noopener" title="Qwen 3.8 Max IS OUT! Best Open Model? (Fully Tested)">
-  <img src="https://i3.ytimg.com/vi/vmLwsoVRo30/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Max against leading open models" loading="lazy">
-  <span class="video-card-title">Testing Qwen 3.8 Max against leading open models</span>
-  <span class="video-card-meta">WorldofAI, August 4, 2026</span>
-  <span class="video-card-desc">Hands-on testing and evaluation of Alibaba&#x27;s Qwen 3.8 Max open-source model against leading alternatives.</span>
 </a>
 </div>
 
