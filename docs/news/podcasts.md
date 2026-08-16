@@ -119,10 +119,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">AI in Education Podcast, June 18, 2026</span>
   <span class="video-card-desc">Episode explores the paradoxical effects of AI on student performance, examining why AI tutoring correlates with both higher grades and increased failure rates.</span>
 </a>
-<a class="video-card" href="https://ai-podcast.nejm.org/e/openai-s-karan-singal-on-healthbench-and-the-future-of-medical-ai" target="_blank" rel="noopener">
-  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: OpenAI’s Karan Singal on HealthBench and the Future of Medical AI" loading="lazy">
-  <span class="video-card-title">OpenAI’s Karan Singal on HealthBench and the Future of Medical AI</span>
-  <span class="video-card-meta">NEJM AI Grand Rounds, June 17, 2026</span>
-  <span class="video-card-desc">Karan Singal from OpenAI discusses HealthBench, a benchmark for evaluating AI performance on medical tasks, and the role of AI in addressing medical expertise gaps.</span>
-</a>
 </div>
