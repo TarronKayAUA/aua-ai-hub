@@ -29700,6 +29700,13 @@
    "first_seen": "2026-08-16T01:58:16.350899+00:00",
    "kept": false,
    "reason": "niche software tool announcement without broad significance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=62HSUsS0ypo",
+   "title_hash": "42889d95ab1bd40c6c78461bb157c32c",
+   "first_seen": "2026-08-16T04:51:00.079500+00:00",
+   "kept": false,
+   "reason": "speculation and rumor without confirmed releases; generic channel boilerplate without substantive coverage of real developments"
   }
  ],
  "digests": [
