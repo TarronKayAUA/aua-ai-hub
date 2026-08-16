@@ -29812,6 +29812,27 @@
    "first_seen": "2026-08-16T13:02:01.123014+00:00",
    "kept": false,
    "reason": "daily news show recap with generic framing; no specific development, practitioner insight, or medical education relevance"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/16/dario-amodei",
+   "title_hash": "26b4c16b6322a4df31ee865ece8fc7a4",
+   "first_seen": "2026-08-16T16:44:02.018825+00:00",
+   "kept": false,
+   "reason": "commentary on public perception without substantive analysis or new information"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
+   "title_hash": "a696716d4f046fdcb468baea3d8bc14c",
+   "first_seen": "2026-08-16T16:44:02.018825+00:00",
+   "kept": true,
+   "title": "ChatGPT’s Computer History tracks your clicks and keystrokes",
+   "source": "The Verge AI",
+   "published": "2026-08-16T14:56:40+00:00",
+   "summary": "ChatGPT's desktop app now includes Computer History, which tracks user actions to train models on work patterns and suggest automations.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_C.png?quality=90&strip=all&crop=0%2C10.742221417566%2C100%2C78.515557164868&w=1200",
+   "topic": "Safety and reliability"
   }
  ],
  "digests": [

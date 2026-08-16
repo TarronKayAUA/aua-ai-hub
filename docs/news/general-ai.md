@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes">ChatGPT’s Computer History tracks your clicks and keystrokes</a>
+    <p class="news-card-summary">ChatGPT&#x27;s desktop app now includes Computer History, which tracks user actions to train models on work patterns and suggest automations.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_C.png?quality=90&amp;strip=all&amp;crop=0%2C10.742221417566%2C100%2C78.515557164868&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 16, 2026</span></div>
@@ -129,12 +137,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A Hugging Face analysis of 2,200 papers from ICML documents reproducibility findings and lessons from major machine learning research.</p>
   </div>
   <img class="news-card-thumb" src="https://huggingface.co/blog/assets/icml-2026-open-reproductions/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 12, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813">DeepSeek V4 Pro 0813 (on OpenRouter)</a>
-    <p class="news-card-summary">DeepSeek released V4 Pro 0813, a new model variant available via API through OpenRouter.</p>
-  </div>
 </div>
 </div>
