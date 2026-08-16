@@ -13,9 +13,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Generative AI is being recast as a participant in medical education rather than just a tool for it, according to an analysis in JMIR Medical Education describing an &quot;AI colleague&quot; that reshapes interprofessional teaching <a href="https://mededu.jmir.org/2026/1/e94034">[3]</a>. That shift intersects with a call for human-centered frameworks around AI agents and clinical judgment, including AI literacy training and AI-assisted OSCEs so automation supports rather than replaces reasoning <a href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">[11]</a>. Assessment is adapting in parallel, with a scoping review mapping how AI can gauge clinical competency across professions <a href="https://mededu.jmir.org/2026/1/e92826">[4]</a>. Practical uptake is also visible: a no-code tutorial shows educators how to build chatbot-based standardized patients <a href="https://mededu.jmir.org/2026/1/e103399">[1]</a>, while faculty in the United Arab Emirates weigh how such tools fit undergraduate curricula <a href="https://mededu.jmir.org/2026/1/e90192">[15]</a>.</p>
-<p>Also this week: seven curriculum items cover self-directed learning tools and a bibliometric mapping of problem-based education, while four simulation entries include virtual and augmented reality training. Three pieces explore attitudes and adoption, including nursing students&#x27; AI literacy and anxiety, and the section&#x27;s sole assessment entry evaluates methods for gauging clinical competency.</p>
-<p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the source items.</p>
+<p>A scoping review of AI methods for clinical competency assessment <a href="https://mededu.jmir.org/2026/1/e92826">[8]</a> arrives alongside a broader call for human-centered integration of AI agents in clinical judgment training, including proposals for AI-assisted OSCEs <a href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">[15]</a>, as programs weigh how much autonomy these tools should have. Standardized patient simulations are also advancing, with AI-augmented virtual patients showing reproducibility in assessing communication skills <a href="https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">[3]</a> and a no-code tutorial demonstrating how educators can build their own chatbot-based simulated patients <a href="https://mededu.jmir.org/2026/1/e103399">[5]</a>. Meanwhile, large language models are being tested for grading resident assessment narratives, though they perform unevenly across strengths and areas for improvement <a href="https://pubmed.ncbi.nlm.nih.gov/42602997?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">[1]</a>.</p>
+<p>Also this week: eight items address teaching and curriculum design, including self-directed learning tools and bibliometric analyses tracing AI&#x27;s growth in problem-based and case-based education. Four cover simulation and skills training, such as immersive virtual reality modules for physical therapy students, while three focus on assessment and feedback methods used across clinical training programs.</p>
+<p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 49 items"
@@ -371,9 +371,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Detecting and mitigating bias in clinical AI systems is now the focus of a new unified framework that addresses representation, proxy, integrity, and temporal distortions across the patient journey <a href="https://ai.jmir.org/2026/1/e102146">[1]</a>. The advance arrives as evidence generation struggles to keep pace with rapid deployment of AI-based decision support tools <a href="https://www.nature.com/articles/d41591-026-00040-4">[12]</a>, a gap reinforced by a scoping review cataloging real-world barriers to implementing such systems in practice <a href="https://medinform.jmir.org/2026/1/e89834">[6]</a>. Meanwhile, an AI tool for diagnosing common skin disorders shows strong performance and potential use in resource-limited settings <a href="https://pubmed.ncbi.nlm.nih.gov/42595478?fc=20260609215449&amp;ff=20260814014806&amp;v=2.20.1">[7]</a>, even as analysts examine how Medicare reimbursement incentives for newly authorized AI devices could encourage overuse in hospitals <a href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">[8]</a>.</p>
-<p>Also this week: the section includes six items on safety and evaluation, four on clinical decision support, four on imaging and diagnostics, and one on clinical documentation. Coverage spans federated learning for ventilator weaning prediction and a knowledge-enhanced diffusion model for generating medical images from clinical reports.</p>
-<p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the source items.</p>
+<p>The U.S. Department of Health and Human Services has opened a formal request for input on policy priorities for clinical AI adoption, covering regulation and reimbursement <a href="https://www.nature.com/articles/s41746-026-03094-3">[4]</a>. That effort intersects with a separate analysis warning that new Medicare incentives for AI-based devices could encourage overuse in hospitals <a href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">[12]</a>. Meanwhile, a multistage framework for detecting and mitigating interacting sources of bias, including representation, proxy, integrity, and temporal effects, offers hospitals a practical tool for safety review <a href="https://ai.jmir.org/2026/1/e102146">[5]</a>. Parallel work on federated learning shows how large language models can be adapted across institutions without sharing patient data <a href="https://www.nature.com/articles/s41746-026-03064-9">[3]</a>, as an uncertainty-aware open-set model extends similar privacy-conscious rigor to infant fundus imaging <a href="https://www.nature.com/articles/s41746-026-03118-y">[2]</a>.</p>
+<p>Also this week: nine items address safety and evaluation, four cover imaging and diagnostics, and two focus on clinical decision support, including a scoping review of real-world implementation barriers and a Nordic AI-Health Initiative commentary on shared data infrastructure. Other entries cover histological aging clocks, dermatologic image analysis, and design principles for AI-driven digital organisms.</p>
+<p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 48 items"
@@ -728,14 +728,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI and Anthropic have cut prices as Chinese AI companies press into the market <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[1]</a>, a shift that comes as Google keeps accelerating its release cadence, shipping Gemini 3.7 Flash just three weeks after the previous version <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">[4]</a>. DeepSeek added to the pace with a new V4 Pro variant <a href="https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813">[10]</a>. Underneath this activity, two research threads complicate how progress gets measured: one study finds that minor rewording of benchmark questions can shift model scores <a href="https://arxiv.org/abs/2608.11694">[8]</a>, while another shows that &quot;unlearned&quot; information can resurface in later training <a href="https://arxiv.org/abs/2608.11408">[6]</a>.</p>
-<p>Also this week: the section covers four new model releases, three industry and policy stories, and two safety and reliability studies, along with a look at open model trends and a multi-model prompt comparison. An edge-focused vision-language model and a reproducibility analysis of ICML papers close out the list.</p>
-<p class="section-brief-date">The picture as of August 15, 2026; numbered links go to the source items.</p>
+<p>OpenAI and Anthropic have cut prices as Chinese competitors gain market share, intensifying a broader industry shakeout <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[2]</a>. Google matched the pace by shipping Gemini 3.7 Flash just three weeks after its predecessor, underscoring how fast release cycles have become <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">[5]</a>. Amid this acceleration, researchers are questioning whether benchmark scores mean what they claim: rephrasing questions without changing their meaning can shift measured performance <a href="https://arxiv.org/abs/2608.11694">[9]</a>. Separately, work tracing output homogeneity back to pretraining suggests some behavioral patterns are set before alignment even begins <a href="https://arxiv.org/abs/2608.11426">[8]</a>. Anthropic&#x27;s watermarking system for Claude, meanwhile, offers a concrete tool for detecting AI-generated text <a href="https://sebastianraschka.com/blog/2026/claude-text-watermarking.html">[1]</a>.</p>
+<p>Also this week: coverage spans three new model releases, including DeepSeek V4 Pro 0813 and updated Gemini plugin support, alongside three items on industry and policy such as Twitch&#x27;s new opt-out for AI training. Two further papers address benchmark drift and reproducibility across thousands of ICML papers, while a Hugging Face survey of the open-model landscape closes out the list.</p>
+<p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -1011,13 +1011,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Survey of 1,547 papers identifies the horizon gap: frontier language models fail at multi-hour tasks despite solving single-pass reasoning problems, proposing frameworks for planning, memory, and long-horizon execution.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 8, 2026</span></div>
-        <a class="news-card-title" href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones">DeepMind&#x27;s WeatherNext model achieves breakthrough forecasting cyclones</a>
-        <p class="news-card-summary">DeepMind&#x27;s WeatherNext model demonstrates improved accuracy in forecasting cyclones using artificial intelligence methods.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 5, 2026</span></div>
@@ -1125,7 +1118,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 2 episodes"
+??? abstract "Show the 1 episode"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn" target="_blank" rel="noopener">
@@ -1133,12 +1126,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Is AI Helping Students Perform, or Actually Learn?</span>
       <span class="video-card-meta">AI in Education Podcast, August 13, 2026</span>
       <span class="video-card-desc">Discussion of whether AI improves student performance versus learning, EU transparency requirements, and AI watermarking for detection reliability.</span>
-    </a>
-    <a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
-      <img src="https://megaphone.imgix.net/podcasts/425d0b1a-9364-11f1-89b7-8f18e1951ec7/image/a013bf9d538b3f904596d5dc68137112.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent" loading="lazy">
-      <span class="video-card-title">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</span>
-      <span class="video-card-meta">The Cognitive Revolution, August 8, 2026</span>
-      <span class="video-card-desc">Goodfire CTO discusses interpretability research advances and a research platform using concept manifolds to guide language model development.</span>
     </a>
     </div>
 
