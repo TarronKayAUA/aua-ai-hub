@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -317,20 +317,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study evaluates psychometric properties of multiple-choice questions drafted by generative AI and edited by faculty for postgraduate family medicine assessment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42573859?fc=20260609215449&amp;ff=20260810131029&amp;v=2.20.1">Artificial Intelligence for Diagnosis of Esophageal Manometry: A Narrative Review</a>
-        <p class="news-card-summary">Narrative review of artificial intelligence approaches to diagnose esophageal motility disorders and address training gaps in gastroenterology fellowship programs.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42573794?fc=20260609215449&amp;ff=20260810131029&amp;v=2.20.1">Can ChatGPT pass the polish national medical specialization examination in orthopedics and traumatology?</a>
-        <p class="news-card-summary">ChatGPT achieved strong performance on Polish orthopedic specialist examinations but does not demonstrate clinical competence or readiness for independent surgical practice.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
@@ -357,7 +343,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (20)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -378,6 +364,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03097-0">HealthFlow: automating electronic health record analysis via a strategically self-evolving multi-agent framework</a>
         <p class="news-card-summary">Published research describes HealthFlow, a multi-agent framework that automates electronic health record analysis through self-evolving strategies.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03140-0">TabPFN-SHAP metabolic networks reveal chronic liver disease progression and identify a hepatocellular carcinoma screening panel</a>
+        <p class="news-card-summary">TabPFN-SHAP analysis of metabolic networks identifies chronic liver disease progression markers and proposes a hepatocellular carcinoma screening panel.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03150-y">Lightweight non-contrast CT-based multimodal artificial intelligence for subtype classification of hepatic cystic echinococcosis in resource-limited clinical settings</a>
+        <p class="news-card-summary">Lightweight multimodal AI system classifies hepatic cystic echinococcosis subtypes from non-contrast CT scans, designed for resource-limited settings.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -670,20 +670,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
         <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82360">From Data Poverty to Data Sovereignty: Operationalizing Gold-Standard Biomedical Datasets in Low- and Middle-Income Countries</a>
         <p class="news-card-summary">Analysis examines underrepresentation of low- and middle-income countries in biomedical datasets used to train FDA-approved AI tools and its clinical performance impact.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e98345">Toward Drift-Aware Multimodal Early Warning for Acute Exacerbations of Chronic Obstructive Pulmonary Disease</a>
-        <p class="news-card-summary">Study addresses concept drift in multimodal early-warning systems for acute exacerbations of chronic obstructive pulmonary disease using machine learning to detect patient deterioration.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03116-0">MedGuard: an LLM-based gatekeeper for detecting clinical risks in Chinese telemedicine consultations</a>
-        <p class="news-card-summary">Study describes MedGuard, a language model system that detects clinical risks in Chinese telemedicine consultations to support patient safety.</p>
       </div>
     </div>
     </div>
@@ -1035,7 +1021,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 13 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=BHGTA6ZEls4" target="_blank" rel="noopener" title="5 Ways to Connect AI Agents to Tools: From APIs to MCP">
@@ -1103,18 +1089,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Context engineering for AI agents explained</span>
       <span class="video-card-meta">IBM Technology, August 11, 2026</span>
       <span class="video-card-desc">IBM explainer on context engineering for AI agents and why data quality and context selection matter for system performance.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=dtb1ihWSkP4" target="_blank" rel="noopener" title="Meta Open Source Is BACK, Muse Glimmer First Test!">
-      <img src="https://i1.ytimg.com/vi/dtb1ihWSkP4/hqdefault.jpg" alt="Video: Testing Meta open-source models and Muse Glimmer" loading="lazy">
-      <span class="video-card-title">Testing Meta open-source models and Muse Glimmer</span>
-      <span class="video-card-meta">Bijan Bowen, August 10, 2026</span>
-      <span class="video-card-desc">Hands-on testing of Meta&#x27;s open-source model releases and Muse Glimmer, including local deployment and browser functionality.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=iF5IWjOWcA4" target="_blank" rel="noopener" title="Dispatches from Iceland">
-      <img src="https://i2.ytimg.com/vi/iF5IWjOWcA4/hqdefault.jpg" alt="Video: Iceland&#x27;s national AI education pilot for teachers" loading="lazy">
-      <span class="video-card-title">Iceland&#x27;s national AI education pilot for teachers</span>
-      <span class="video-card-meta">Anthropic, August 10, 2026</span>
-      <span class="video-card-desc">Iceland&#x27;s national AI education pilot program giving teachers access to AI tools for classroom integration and professional development.</span>
     </a>
     </div>
 

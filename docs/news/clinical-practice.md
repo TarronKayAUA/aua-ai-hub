@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -40,6 +40,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03097-0">HealthFlow: automating electronic health record analysis via a strategically self-evolving multi-agent framework</a>
     <p class="news-card-summary">Published research describes HealthFlow, a multi-agent framework that automates electronic health record analysis through self-evolving strategies.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03140-0">TabPFN-SHAP metabolic networks reveal chronic liver disease progression and identify a hepatocellular carcinoma screening panel</a>
+    <p class="news-card-summary">TabPFN-SHAP analysis of metabolic networks identifies chronic liver disease progression markers and proposes a hepatocellular carcinoma screening panel.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03150-y">Lightweight non-contrast CT-based multimodal artificial intelligence for subtype classification of hepatic cystic echinococcosis in resource-limited clinical settings</a>
+    <p class="news-card-summary">Lightweight multimodal AI system classifies hepatic cystic echinococcosis subtypes from non-contrast CT scans, designed for resource-limited settings.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -111,20 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89834">Real-World Barriers to and Facilitators of Implementing AI-Based Clinical Decision Support Systems: Scoping Review</a>
     <p class="news-card-summary">Scoping review synthesizes real-world barriers and facilitators to implementation of AI-based clinical decision support systems in actual health care settings.</p>
   </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42595478?fc=20260609215449&amp;ff=20260814014806&amp;v=2.20.1">Artificial Intelligence for Diagnosing Images of Common Skin Disorders</a>
-    <p class="news-card-summary">An AI tool for dermatologic image analysis performs well on common skin disorders and may assist providers in resource-limited settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">STAT+: What Medicare incentives for AI-based devices mean for tech companies, and hospitals</a>
-    <p class="news-card-summary">Analysis of how Medicare reimbursement incentives for newly-authorized AI-based medical devices may drive overuse in hospitals.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/ntap-4-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -1,408 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/tech-policy/2026/06/bernie-sanders-unveils-7-trillion-plan-to-give-americans-control-of-ai-industry",
-   "title_hash": "4d28fd3d1b04206cbe994c644b82d575",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u96jof/glms_founder_says_glmfable_before_the_end_of_the",
-   "title_hash": "ffb57db69416bd337c4553acd350ee6a",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42311995?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "b890d2ac82ba2d44630ba4976f7dce71",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42311928?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "6262b45fe9a9c98cea824f50c4a0dde0",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Evaluation of Large Language Models in Infectious Disease Decision-Making: From Examination to Clinical Practice",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-18T10:00:00+00:00",
-   "summary": "Large language models show substantial potential in infectious disease education and decision support, with ability to handle both exam and clinical scenarios.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42311898?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "ff91a8876e23b5776f2da229a4166741",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42311349?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "816c292ba42596d121728903b50c87b2",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42310703?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "397a6515103911e4da9575b20f795e62",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Evaluating the Performance of GPT-4.0 in Generating and Refining Multiple-Choice Questions for Dental Education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-18T10:00:00+00:00",
-   "summary": "GPT-4.0 demonstrated capability to generate and refine multiple-choice questions for dental education, outperforming some baseline methods.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42310669?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "01b290987cbdd6bc0313e447b97e3d48",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Is it time to introduce an artificial intelligence curriculum in undergraduate medical education? medical students' perspectives: a systematic review and meta-analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-18T10:00:00+00:00",
-   "summary": "Systematic review finds medical students recognize need for standardized artificial intelligence curriculum to address gap between enthusiasm and actual competence.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18273",
-   "title_hash": "a0c6d08f0fa2fb77d0791eb54898b41e",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Continuous Audio Thinking for Large Audio Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-18T04:00:00+00:00",
-   "summary": "Continuous Audio Thinking extends large audio language models with intermediate reasoning steps for improved audio processing and understanding.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18372",
-   "title_hash": "0a9761e175f8e5089fcfa167e7597330",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identification",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-18T04:00:00+00:00",
-   "summary": "Fully local artificial intelligence cascade de-identifies educational dialogue without sending data to external servers, balancing privacy and utility.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18381",
-   "title_hash": "f984b8103c4fd5296b29e033db1007df",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18389",
-   "title_hash": "b7c43f2cf94b13fc48c890615cb2c24d",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18394",
-   "title_hash": "938006abcba8d4f3c04db342c224ce3f",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18406",
-   "title_hash": "dc3f8c5e50876d6ad02a5a45b6055982",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18448",
-   "title_hash": "f2f8fadf9b63193e59526573606a90a3",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18453",
-   "title_hash": "07cc866e9560e3f5a01fc9d9559bdcac",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18466",
-   "title_hash": "277f123cc3aa986dbe60f34bb3850b48",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18471",
-   "title_hash": "d560654eb8f45c1b4de9d1deb39d74fc",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Possible or Definite? A Benchmark for Evaluating Diagnostic Uncertainty Preservation in Clinical Text",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-18T04:00:00+00:00",
-   "summary": "New benchmark evaluates whether large language models preserve diagnostic uncertainty in clinical text, testing their readiness for medical use.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18473",
-   "title_hash": "48e3f62e0a16dc652073f4b7a4e59242",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18502",
-   "title_hash": "0179b752ec808bc21dc0c1e9688497e6",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18508",
-   "title_hash": "47618038321de3f405d4c9fff4aa7d60",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18584",
-   "title_hash": "bbcad1c3759055fd17067d5cdd0844cc",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18587",
-   "title_hash": "98f1f62a001f474b798253f27a3b8d04",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18597",
-   "title_hash": "9273bdaa78ac6a98786746671b412349",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18606",
-   "title_hash": "fa9902a28c0c61e327c7c41ab2f33401",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18613",
-   "title_hash": "14bcb004272135240f25bbaec776fcb6",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Are LLMs Ready to Assist Physicians? PhysAssistBench for Interactive Doctor-Patient-EHR Assistance",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-18T04:00:00+00:00",
-   "summary": "PhysAssistBench benchmark tests whether large language models can assist physicians in interactive doctor-patient-electronic health record scenarios.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18620",
-   "title_hash": "5e4143b50987c1a9820c9a6ca9ce2714",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18624",
-   "title_hash": "9f8710fa21443364a57666ca36d499ac",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18636",
-   "title_hash": "b8ec76ff3b66b75d0b984050c83a7b8c",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18656",
-   "title_hash": "cbf97dd5aa1571c763190644e95e8608",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18663",
-   "title_hash": "c66ade88da8e1ecddcf255f2baa032d0",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18699",
-   "title_hash": "1fd4070499ec8a1d9ca26e1d8d0f001b",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.18709",
-   "title_hash": "6e96f55b6f3dfadaf3c056d31a93d4ad",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "LLMs Struggle to Measure What Distinguishes Students of Different Proficiency Levels: A Study of Item Discrimination in Reading Comprehension Assessment",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-18T04:00:00+00:00",
-   "summary": "Study finds large language models struggle to measure item discrimination, a key psychometric property for assessing student reading comprehension differences.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02829-6",
-   "title_hash": "2401a8783c39387449598005631c5c60",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "UNICORN: a deep learning model for integrating multi-stain data in histopathology",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-18T00:00:00+00:00",
-   "summary": "UNICORN is a deep learning model that integrates multi-stain histopathology data, published in npj Digital Medicine.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02861-6",
-   "title_hash": "ad762c719bee237eccec699ecf5b1784",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Unlocking multi-institutional insights into disease progression with PEAL as a lossless, one-shot federated learning solution",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-18T00:00:00+00:00",
-   "summary": "PEAL provides lossless, one-shot federated learning for disease progression analysis across multiple healthcare institutions without sharing raw data.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://huggingface.co/blog/peft-beyond-lora",
-   "title_hash": "2452cae0c3766bb43e14bcc3a52fe824",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://huggingface.co/blog/is-it-agentic-enough",
-   "title_hash": "16f8d165a6ac93704e29a101b4f00588",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/17/glm-52",
-   "title_hash": "157e0401935aec190079b6463f029e47",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
-   "source": "Simon Willison's weblog",
-   "published": "2026-06-17T23:58:39+00:00",
-   "summary": "Chinese AI lab Z.ai released GLM-5.2, an open-weights large language model, to coding plan subscribers with reported strong text-generation performance.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://static.simonwillison.net/static/2026/glm-5.2-pelican-card.jpg"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u8p9s1/i_released_inflectnano_an_ultraextreme_tiny_463m",
-   "title_hash": "950c2a73901674178e6a5d52df7da923",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e83657",
-   "title_hash": "7eb6df99a408919b5d1549e6f85868d2",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training",
-   "title_hash": "5057229ebbe74c95597b5eaeb5f81e64",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "AI coding agents taught robots how to install GPUs and cut zip ties",
-   "source": "Ars Technica AI",
-   "published": "2026-06-17T19:25:19+00:00",
-   "summary": "Nvidia's robot self-improvement program used teams of artificial intelligence coding agents to teach robots hardware installation tasks.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Screenshot-2026-06-17-at-2.40.06-PM-500x500.png"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u8g3d0/gemma_4_e2b_running_inbrowser_at_255_toks_using",
-   "title_hash": "9492ce5bd2a072f8cac6ceda518614dc",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42309426?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "8050f20ef2f1134dab94249e2931dc34",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42308755?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "3fd833af6412b4b4b8efb132a80fdf3a",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42308513?fc=20260609215449&ff=20260618141138&v=2.20.0",
-   "title_hash": "fb3ba9bc24b0c11e4e48fe1abfcf7e83",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=wwfJlSF34n8",
-   "title_hash": "cea469acbd2d1fae83bf3ca63a8cd81b",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=tFiJMUNJdJU",
-   "title_hash": "f4f942a5969f977e24f84fa63628c328",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Liquid LFM2.5-8B First Test, An On-Device MoE Model!",
-   "source": "Bijan Bowen",
-   "published": "2026-06-18T13:16:31+00:00",
-   "summary": "Demonstration of Liquid LFM2.5-8B, an on-device mixture-of-experts model suitable for local deployment.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i1.ytimg.com/vi/tFiJMUNJdJU/hqdefault.jpg",
-   "display_title": "First test of Liquid LFM2.5-8B on-device MoE model"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=57L3vmQLzwQ",
-   "title_hash": "016b82f4118b998baa9a51fc45a6d6df",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=4Vg2aVtrX8k",
-   "title_hash": "d12dba654a97f4cdc2141e3079bacf67",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": true,
-   "title": "Building AI Agents for Real-World Problems & Workflows",
-   "source": "IBM Technology",
-   "published": "2026-06-18T11:00:32+00:00",
-   "summary": "IBM's overview of building and evaluating AI agents for real-world applications and clinical workflows.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i1.ytimg.com/vi/4Vg2aVtrX8k/hqdefault.jpg"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/A-Big-Shift-in-the-AI-Race-e3kubu2",
-   "title_hash": "3e9d048bb1d3c5c9907806956a56fd60",
-   "first_seen": "2026-06-18T18:11:37.919150+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
-   "title_hash": "dd52080878d0e1b829da4d5bc68d3c85",
-   "first_seen": "2026-06-18T18:42:20.882407+00:00",
-   "kept": true,
-   "title": "MosaicLeaks: Can your research agent keep a secret?",
-   "source": "Hugging Face blog",
-   "published": "2026-06-18T18:13:13+00:00",
-   "summary": "Study demonstrates that research agents can leak sensitive information from training data when queried strategically, raising security concerns for deployed AI systems.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp"
-  },
-  {
    "url": "https://medinform.jmir.org/2026/1/e87227",
    "title_hash": "aa91e36e3142da7b4c0a0c564266565e",
    "first_seen": "2026-06-19T16:33:28.270097+00:00",
@@ -29841,6 +29439,74 @@
    "first_seen": "2026-08-17T16:47:34.125168+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+   "title_hash": "c899e9e17d27983b11e37a72f0e3df1b",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": false,
+   "reason": "minor performance optimization note without broader significance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/17/1142200/what-flocks-defenders-are-missing",
+   "title_hash": "b3dfddf9be4fef2ddbd1cb85310551eb",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; policy debate about surveillance technology unrelated to medical AI"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/hidden-airtag-reveals-amazon-is-trashing-rare-books-to-train-ai",
+   "title_hash": "e83a5ec8c44383a763e18b44fb5a6234",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; data sourcing controversy not specific to medical applications"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqrt86/after_pushing_1m_tokens_through_qwen_38_27b_here",
+   "title_hash": "70e35e79ae7356410288721eb39953a1",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": false,
+   "reason": "community technical thread; minor configuration tuning without instructive value for medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03140-0",
+   "title_hash": "e827fa1d43776089ee08256fa361290c",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": true,
+   "title": "TabPFN-SHAP metabolic networks reveal chronic liver disease progression and identify a hepatocellular carcinoma screening panel",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-17T00:00:00+00:00",
+   "summary": "TabPFN-SHAP analysis of metabolic networks identifies chronic liver disease progression markers and proposes a hepatocellular carcinoma screening panel.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03150-y",
+   "title_hash": "17099e6ca2c7d9fd9c10df91c823b541",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": true,
+   "title": "Lightweight non-contrast CT-based multimodal artificial intelligence for subtype classification of hepatic cystic echinococcosis in resource-limited clinical settings",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-17T00:00:00+00:00",
+   "summary": "Lightweight multimodal AI system classifies hepatic cystic echinococcosis subtypes from non-contrast CT scans, designed for resource-limited settings.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1RTq_EWv2Yo",
+   "title_hash": "1e2ca3641152d116b7659542be57cba7",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": false,
+   "reason": "listicle-style roundup video with promotional code"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=wIf9yMGalPU",
+   "title_hash": "5525cdcf18bcd607cfc5e9ff7a073f1c",
+   "first_seen": "2026-08-17T20:45:15.892135+00:00",
+   "kept": false,
+   "reason": "product marketing from vendor's own channel"
   }
  ],
  "digests": [
