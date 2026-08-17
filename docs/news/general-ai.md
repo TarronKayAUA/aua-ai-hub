@@ -13,14 +13,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI and Anthropic have cut prices as Chinese competitors gain market share, intensifying a broader industry shakeout <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[2]</a>. Google matched the pace by shipping Gemini 3.7 Flash just three weeks after its predecessor, underscoring how fast release cycles have become <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">[5]</a>. Amid this acceleration, researchers are questioning whether benchmark scores mean what they claim: rephrasing questions without changing their meaning can shift measured performance <a href="https://arxiv.org/abs/2608.11694">[9]</a>. Separately, work tracing output homogeneity back to pretraining suggests some behavioral patterns are set before alignment even begins <a href="https://arxiv.org/abs/2608.11426">[8]</a>. Anthropic&#x27;s watermarking system for Claude, meanwhile, offers a concrete tool for detecting AI-generated text <a href="https://sebastianraschka.com/blog/2026/claude-text-watermarking.html">[1]</a>.</p>
-<p>Also this week: coverage spans three new model releases, including DeepSeek V4 Pro 0813 and updated Gemini plugin support, alongside three items on industry and policy such as Twitch&#x27;s new opt-out for AI training. Two further papers address benchmark drift and reproducibility across thousands of ICML papers, while a Hugging Face survey of the open-model landscape closes out the list.</p>
-<p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the items below.</p>
+<p>OpenAI&#x27;s reported dissolution of its preparedness team <a href="https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team">[2]</a>, the unit tasked with assessing frontier-model risks, arrives alongside scrutiny of ChatGPT&#x27;s new Computer History feature, which logs user clicks and keystrokes to train future automations <a href="https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes">[4]</a>. Separately, analysis suggests some capability limits in current models are deliberate design choices rather than technical ceilings <a href="https://w4g1.dev/blog/models-are-getting-dumber-on-purpose">[3]</a>. These safety-adjacent developments coincide with intensifying commercial pressure: Google shipped Gemini 3.7 Flash just three weeks after its predecessor <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">[10]</a>, while OpenAI and Anthropic cut prices in response to Chinese competitors <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[7]</a>, underscoring how fast release cycles and safety oversight are colliding.</p>
+<p>Also this week: the section includes four items on safety and reliability, three each on new models and industry and policy, and one each on research and benchmarking. Beyond the preparedness and release-cycle stories, coverage extends to Anthropic&#x27;s Claude watermarking system, a Hugging Face survey of the open-model landscape, and ongoing comparisons of outputs across different language models.</p>
+<p class="section-brief-date">The picture as of August 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 16, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/16/qwen-38-27b">Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things</a>
+    <p class="news-card-summary">Qwen 3.8 27B, an Apache 2 licensed vision-capable model from Alibaba, shows strong benchmark improvements over its predecessor and runs on standard laptops despite defaulting to verbose reasoning.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/qwen-thinking-bicycle-27b.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team">OpenAI reportedly disbanded its preparedness team</a>
+    <p class="news-card-summary">OpenAI dissolved its preparedness team, which assessed safety risks and developed mitigation strategies for large language models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 16, 2026</span></div>
@@ -122,20 +138,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.11408">Measure, Don&#x27;t Optimize: Forecasting Recovery in LLM Unlearning</a>
     <p class="news-card-summary">Research demonstrates that models retain latent traces of unlearned knowledge and proposes methods to forecast whether this residual knowledge will recover with additional training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.11426">Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models</a>
-    <p class="news-card-summary">Study shows output homogeneity in language models originates during pretraining rather than alignment, challenging common assumptions about model behavior modification.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.11694">The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance</a>
-    <p class="news-card-summary">Research shows that rephrasing benchmark questions while preserving meaning and answers produces inconsistent model performance, questioning benchmark reliability.</p>
   </div>
 </div>
 </div>
