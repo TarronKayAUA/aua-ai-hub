@@ -18,9 +18,25 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/axiom-math-246-theorem-formalization">AI Used to Verify Toughest Mathematics Proof Yet</a>
+    <p class="news-card-summary">Axiom Math&#x27;s AI system automatically verified a significant formal mathematics proof relating to prime numbers, demonstrating progress in automated mathematical verification.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/abstract-illustration-of-several-long-arrows-stacked-horizontally-parallel-to-one-another-each-arrow-has-one-plotted-point-in-a.jpg?id=67608532&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system">Anthropic explains how Claude’s invisible text watermarks will work</a>
+    <p class="news-card-summary">Anthropic detailed its SynthID-Text watermarking approach for detecting Claude-generated text, complying with European Union AI transparency requirements.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
@@ -122,21 +138,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Plugin adds support for Google&#x27;s Gemini 3.7 Flash and earlier versions, with reasoning traces and embedding models.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/gemini-3.7-flash-high-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">Google announces Gemini 3.7 Flash just three weeks after previous release</a>
-    <p class="news-card-summary">Google released Gemini 3.7 Flash three weeks after Gemini 3.6 Flash with reported substantial improvements.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-4-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.netlify.com/blog/one-prompt-11-models-very-different-results">Choosing an AI model: one prompt, 11 models, different results</a>
-    <p class="news-card-summary">A comparison of prompt outputs across 11 language models demonstrates significant variation in response quality and style.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.sanity.io/images/o0o2tn5x/production/61190f2745496c269dd071680edec773a29eaef7-1800x1013.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

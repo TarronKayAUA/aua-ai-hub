@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02962-2">MultiMed-RAG: leveraging multi-source knowledge and agent collaboration for medical tasks</a>
+    <p class="news-card-summary">MultiMed-RAG system leverages multi-source medical knowledge and agent collaboration to improve performance on medical tasks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03134-y">Beyond expertise: exploring behavioral personas in AI-assisted rare renal cancer diagnosis</a>
     <p class="news-card-summary">Study examines how clinician behavior and expertise interact with AI assistance in diagnosis of rare renal cancers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04595-0">How to build an AI-driven digital organism</a>
-    <p class="news-card-summary">Perspective on designing integrated multiscale foundation models as AI-driven systems to advance biological and medical research.</p>
   </div>
 </div>
 </div>

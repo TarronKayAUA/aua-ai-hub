@@ -29657,6 +29657,95 @@
    "first_seen": "2026-08-17T09:02:12.773059+00:00",
    "kept": false,
    "reason": "vendor marketing disguised as a model comparison; the video is primarily an advertisement for Miro with an affiliate link, using model coverage as packaging"
+  },
+  {
+   "url": "https://spectrum.ieee.org/axiom-math-246-theorem-formalization",
+   "title_hash": "6e998c93b5443d2ce573daf90803fefb",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": true,
+   "title": "AI Used to Verify Toughest Mathematics Proof Yet",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-08-17T13:00:02+00:00",
+   "summary": "Axiom Math's AI system automatically verified a significant formal mathematics proof relating to prime numbers, demonstrating progress in automated mathematical verification.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/abstract-illustration-of-several-long-arrows-stacked-horizontally-parallel-to-one-another-each-arrow-has-one-plotted-point-in-a.jpg?id=67608532&width=980",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
+   "title_hash": "b05649c7dc137def7e85c1d51f486fc0",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": true,
+   "title": "Anthropic explains how Claude’s invisible text watermarks will work",
+   "source": "The Verge AI",
+   "published": "2026-08-17T10:57:13+00:00",
+   "summary": "Anthropic detailed its SynthID-Text watermarking approach for detecting Claude-generated text, complying with European Union AI transparency requirements.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/the-mechanical-cpr-device-when-evidence",
+   "title_hash": "41199dde426cf2aef074037b245e8e47",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&ff=20260817090740&v=2.20.1",
+   "title_hash": "03906f61b8a4cfe99962d266ec75e91e",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": true,
+   "title": "Comparative Performance of Large Language Models in the Polish State Specialization Examination in Anesthesiology and Intensive Care Medicine",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-17T10:00:00+00:00",
+   "summary": "Large language models achieved high accuracy on Polish specialty-level anesthesiology and intensive care medicine examinations, suggesting potential for examination preparation while requiring caution against inferring clinical readiness.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies",
+   "title_hash": "b46784ce41ce9030cdf1e4c7275b3dfe",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-02962-2",
+   "title_hash": "03c720879ea24d1235f8254e9a9bd288",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": true,
+   "title": "MultiMed-RAG: leveraging multi-source knowledge and agent collaboration for medical tasks",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-17T00:00:00+00:00",
+   "summary": "MultiMed-RAG system leverages multi-source medical knowledge and agent collaboration to improve performance on medical tasks.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04590-5",
+   "title_hash": "fbad9699303ad96eead1e2c39c39e2a7",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vpxbm8/newer_commits_removed_the_qwen_35b",
+   "title_hash": "33f8eabbbc38320a9dbe184eab356366",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": false,
+   "reason": "minor release notes and community meta-discussion"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=J0zbWsutyA8",
+   "title_hash": "91b1440871c9f84f541b516c2ed53310",
+   "first_seen": "2026-08-17T13:07:40.237131+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

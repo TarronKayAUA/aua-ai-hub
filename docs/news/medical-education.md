@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1">Comparative Performance of Large Language Models in the Polish State Specialization Examination in Anesthesiology and Intensive Care Medicine</a>
+    <p class="news-card-summary">Large language models achieved high accuracy on Polish specialty-level anesthesiology and intensive care medicine examinations, suggesting potential for examination preparation while requiring caution against inferring clinical readiness.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598001?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Mapping artificial intelligence in problem-based and case-based medical education: a bibliometric analysis (2019-2026)</a>
     <p class="news-card-summary">First bibliometric analysis of AI in problem-based and case-based learning shows rapid growth after 2023, with four interconnected research clusters and strong US-China collaboration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597979?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Virtual patients in medical education: a bibliometric analysis based on the wos core collection and scopus databases</a>
-    <p class="news-card-summary">Bibliometric analysis shows sustained growth in virtual patient systems with increasing integration of generative AI and large language models into medical education.</p>
   </div>
 </div>
 </div>
