@@ -205,3 +205,17 @@
   end_date: 2026-09-27
   relevance: Medical imaging challenge on intracranial aneurysm classification and segmentation from CT and MR angiography across a multi-center dataset, clinically framed down to vessel-specific anatomy.
   verified: 2026-08-10
+
+# Auto-verified 2026-08-17 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "Agents for Humans Hackathon"
+  url: https://agentsforhumans.devpost.com/
+  organizer: "Amazon (AWS)"
+  type: hackathon
+  format: virtual
+  eligibility: "Individuals or teams above legal age of majority in country of residence, excluding certain listed countries/territories"
+  deadline: 2026-09-14
+  start_date: 2026-08-10
+  end_date: 2026-09-14
+  support: "Organizer-stated: $40,000 in cash prizes across three tracks, $50 in AWS credits, AWS Builder ID, featured AWS social posts"
+  relevance: "Online AI hackathon with machine learning focus and substantial prizes, open to international participants and relevant to medical AI applications."
+  verified: 2026-08-17
