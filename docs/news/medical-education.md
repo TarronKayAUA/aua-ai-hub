@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.13708">TeachMateGPT: A Multi-Agent Knowledge-Grounded Framework for Pedagogical Assessment Generation from Science Curriculum Materials</a>
+    <p class="news-card-summary">Multi-agent system generates curriculum-grounded assessment items for science education, addressing gaps in retrieval-augmented generation for low-resource and board-exam-structured settings.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597979?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Virtual patients in medical education: a bibliometric analysis based on the wos core collection and scopus databases</a>
     <p class="news-card-summary">Bibliometric analysis shows sustained growth in virtual patient systems with increasing integration of generative AI and large language models into medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">AI Agents and the Future of Clinical Judgment in Medical Education: Opportunities, Challenges, and the Need for Human-Centered Integration</a>
-    <p class="news-card-summary">AI agents should enhance rather than replace clinical reasoning through human-centered frameworks including AI literacy, controlled simulation failures, and updated assessments like AI-assisted OSCEs.</p>
   </div>
 </div>
 </div>

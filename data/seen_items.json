@@ -29429,6 +29429,206 @@
    "first_seen": "2026-08-17T01:56:00.864964+00:00",
    "kept": false,
    "reason": "community meta-discussion"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13568",
+   "title_hash": "e67c2ffc96cfae011f29d8db4a980d08",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization study without clear medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13570",
+   "title_hash": "d30f51e9fb689d8ca7262057e4744d3f",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow technical research on latent reasoning without demonstrated significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13571",
+   "title_hash": "42fc42b6f45dfecfb57a5e6de3463cd3",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow study of token economics in agentic systems without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13578",
+   "title_hash": "2564f96d75bd72ac76b0438e4223a846",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow technical architecture research without demonstrated medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13580",
+   "title_hash": "ac21c2fc40361e2288f10f5fd002e566",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow language model release without demonstrated relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13588",
+   "title_hash": "9f487809be03a5293d09a20a3aacc5dc",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow technical study on prompt compression without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13624",
+   "title_hash": "38bedba0549f050233e043e8bfac7c7f",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in audio models without demonstrated medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13698",
+   "title_hash": "64b7df96cc379f7698eba24422812d83",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow technical study on multilingual reasoning optimization without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13706",
+   "title_hash": "9148e872c04df35ce7f34ce2a888f7ce",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in financial question answering without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13708",
+   "title_hash": "7e4ae4c8eddc51ec63dac31e216b1ebd",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": true,
+   "title": "TeachMateGPT: A Multi-Agent Knowledge-Grounded Framework for Pedagogical Assessment Generation from Science Curriculum Materials",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "Multi-agent system generates curriculum-grounded assessment items for science education, addressing gaps in retrieval-augmented generation for low-resource and board-exam-structured settings.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13717",
+   "title_hash": "aa4daa309fda1d0669d5195d8e67848e",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in speech recognition without demonstrated medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13722",
+   "title_hash": "8aa448d520e1bd09c155d58dcf2f25c9",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow translation task for specific language pair without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13741",
+   "title_hash": "bff44dd1f4ded34b514211e0f7890ac9",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in time-series synthesis without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13760",
+   "title_hash": "55f7d31f40ada26e44087df947a5dd9a",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": true,
+   "title": "Amplified Does Not Mean Predictive: Reasoning Behaviors in Thinking Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "Study shows that training models for extended reasoning amplifies deliberative behaviors in traces without necessarily correlating those behaviors with correct answers.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13835",
+   "title_hash": "2e64433a592ac7101dcd8cee5a6900a5",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow technical study on topic model evaluation without demonstrated medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13840",
+   "title_hash": "83f41630e30315fb8c9b7b32532bb406",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": true,
+   "title": "ASSERT: A Measurement Pipeline for GenAI Audits",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "Measurement pipeline framework for auditing generative AI systems shows how methodological choices shape reported compliance rates.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13854",
+   "title_hash": "30c196f82c8499dd5b99f3865daccf1f",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in code translation without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13947",
+   "title_hash": "58725ff1e573e7d4c9689a863e18502e",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow application in creative writing dataset expansion without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.13959",
+   "title_hash": "bd70436007020212230d6f3cda421491",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow technical study on constrained decoding without demonstrated medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14003",
+   "title_hash": "7395bccc1d8ed8c84c06c08264ea6d1b",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow optimization technique for inference without demonstrated medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14029",
+   "title_hash": "8926a1fca3895abee0a080c59f49d84b",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in dialogue retrieval without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14055",
+   "title_hash": "eb297e9629fd72658675f97364d45b94",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in geoscience document extraction without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14079",
+   "title_hash": "75bb7a02d61831c239e391ee7c4f6b76",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; concerns survey methodology in social science"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14150",
+   "title_hash": "5cb985ef21aa4e26cab69c9e37af47e5",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow competition system description without demonstrated medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14210",
+   "title_hash": "905f7cbb5089c8c4b9ad380599bd34bf",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "narrow domain application in legal RAG systems without demonstrated medical or educational relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ZSNMw8U5h-c",
+   "title_hash": "d6870c17f0cb81fac3bae862ffe3004f",
+   "first_seen": "2026-08-17T04:59:22.142749+00:00",
+   "kept": false,
+   "reason": "marketing content with sponsor integration; title and description lack substance about the model itself"
   }
  ],
  "digests": [

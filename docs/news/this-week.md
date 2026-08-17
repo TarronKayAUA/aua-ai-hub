@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.13708">TeachMateGPT: A Multi-Agent Knowledge-Grounded Framework for Pedagogical Assessment Generation from Science Curriculum Materials</a>
+        <p class="news-card-summary">Multi-agent system generates curriculum-grounded assessment items for science education, addressing gaps in retrieval-augmented generation for low-resource and board-exam-structured settings.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
@@ -698,10 +705,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.13760">Amplified Does Not Mean Predictive: Reasoning Behaviors in Thinking Models</a>
+        <p class="news-card-summary">Study shows that training models for extended reasoning amplifies deliberative behaviors in traces without necessarily correlating those behaviors with correct answers.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.13840">ASSERT: A Measurement Pipeline for GenAI Audits</a>
+        <p class="news-card-summary">Measurement pipeline framework for auditing generative AI systems shows how methodological choices shape reported compliance rates.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 16, 2026</span></div>
@@ -1015,14 +1036,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.06663">The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</a>
         <p class="news-card-summary">Survey of 1,547 papers identifies the horizon gap: frontier language models fail at multi-hour tasks despite solving single-pass reasoning problems, proposing frameworks for planning, memory, and long-horizon execution.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 5, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vg0q6r/qwen3tts_voice_cloning_is_now_in_mainline">Qwen3-TTS voice cloning is now in mainline llama.cpp, the old demo finally became real support</a>
-        <p class="news-card-summary">Qwen3 text-to-speech voice cloning support was merged into mainline llama.cpp with GGUF quantization and multi-language capabilities.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/kxag5u5ehihh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a834e7741f36d18f76c56a1ec7b72dbc96fa82e9" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

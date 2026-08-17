@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.13760">Amplified Does Not Mean Predictive: Reasoning Behaviors in Thinking Models</a>
+    <p class="news-card-summary">Study shows that training models for extended reasoning amplifies deliberative behaviors in traces without necessarily correlating those behaviors with correct answers.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.13840">ASSERT: A Measurement Pipeline for GenAI Audits</a>
+    <p class="news-card-summary">Measurement pipeline framework for auditing generative AI systems shows how methodological choices shape reported compliance rates.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 16, 2026</span></div>
@@ -124,20 +138,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A comparison of prompt outputs across 11 language models demonstrates significant variation in response quality and style.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.sanity.io/images/o0o2tn5x/production/61190f2745496c269dd071680edec773a29eaef7-1800x1013.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vn8m1x/deepseek_were_launching_deepseekv4pro_today">DeepSeek: We’re launching DeepSeek-V4-Pro today!</a>
-    <p class="news-card-summary">DeepSeek released DeepSeek-V4-Pro, a new language model version.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/amc67w5ts4jh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=ef7aad754bc6d06eac6ce07dbc90663abf3c4784" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.11408">Measure, Don&#x27;t Optimize: Forecasting Recovery in LLM Unlearning</a>
-    <p class="news-card-summary">Research demonstrates that models retain latent traces of unlearned knowledge and proposes methods to forecast whether this residual knowledge will recover with additional training.</p>
-  </div>
 </div>
 </div>
