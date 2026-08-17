@@ -29629,6 +29629,34 @@
    "first_seen": "2026-08-17T04:59:22.142749+00:00",
    "kept": false,
    "reason": "marketing content with sponsor integration; title and description lack substance about the model itself"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/17/ugm-epic-confronts-challenges-succession-ai-strategy-antitrust",
+   "title_hash": "15e28bed49591ca4349b4d9ddde0f644",
+   "first_seen": "2026-08-17T09:02:12.773059+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqgt0x/and_im_not_afraid_of_losing_my_social_credits",
+   "title_hash": "ce4c58eb7f2e197796f1f44143553b74",
+   "first_seen": "2026-08-17T09:02:12.773059+00:00",
+   "kept": false,
+   "reason": "forum post without substantive news or analysis"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/08/17/maestro-college-discloses-private-student-information",
+   "title_hash": "d6e4df770b48224de6d1308f315d6e31",
+   "first_seen": "2026-08-17T09:02:12.773059+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jVM_JrGOfgM",
+   "title_hash": "b99a9895cdd90631f1d9eb58780c347f",
+   "first_seen": "2026-08-17T09:02:12.773059+00:00",
+   "kept": false,
+   "reason": "vendor marketing disguised as a model comparison; the video is primarily an advertisement for Miro with an affiliate link, using model coverage as packaging"
   }
  ],
  "digests": [
