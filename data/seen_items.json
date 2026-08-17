@@ -29746,6 +29746,101 @@
    "first_seen": "2026-08-17T13:07:40.237131+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra",
+   "title_hash": "bc83d74739663e6f73f1d275796d773b",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": false,
+   "reason": "data sourcing practices are business/legal news rather than AI capability or educational content"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/17/irs-probe-unitedhealth-group-taxes-private-equity-deals-physician-groups",
+   "title_hash": "97ad52b20458773fc0439bbc2f6f6988",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": false,
+   "reason": "insurance and healthcare business news without AI relevance"
+  },
+  {
+   "url": "https://spectrum.ieee.org/amd-agent-swarms",
+   "title_hash": "05553569b74be454de5fe42e79a64cc0",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": false,
+   "reason": "vendor marketing and general software development focus without medical or educational relevance"
+  },
+  {
+   "url": "https://jack-clark.net/2026/08/17/import-ai-469-science-ai-rsi-simulator-and-zucks-technological-pessimism",
+   "title_hash": "091a8f7a3dcee85ad31e38712b70557f",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": true,
+   "title": "Import AI 469: Science AI; RSI simulator; and Zuck’s technological pessimism",
+   "source": "Import AI",
+   "published": "2026-08-17T13:05:36+00:00",
+   "summary": "Import AI newsletter covers DiG-bench results showing Fable model capabilities, AI system analysis, and scientific AI applications.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://blog.roboflow.com/openai-gpt-5-6",
+   "title_hash": "152d0c95c5fcc0563fd4bae9d0942838",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": true,
+   "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-17T12:09:42+00:00",
+   "summary": "OpenAI released GPT 5.6 Sol, a vision model with significant improvements in visual understanding capabilities.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://storage.ghost.io/c/2c/8d/2c8d8c0d-1c15-4b6d-825e-02b78d61d40a/content/images/2026/07/img-blog-gpt-5-6-sol-best-vision-model-to-date.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqlh98/stripe_will_reportedly_acquire_ai_gateway_startup",
+   "title_hash": "b2eae104acee03399168d26b9f13a348",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": false,
+   "reason": "acquisition gossip without confirmed details"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03153-9",
+   "title_hash": "fa0dc9270aceaa373c5a2e20c9bf136d",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": true,
+   "title": "Evaluating retrieval-augmented large language models for pediatric cardiology knowledge using standardized questions",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-17T00:00:00+00:00",
+   "summary": "Peer-reviewed study evaluates retrieval-augmented language models on pediatric cardiology knowledge using standardized assessment questions.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03097-0",
+   "title_hash": "13be70cc337517495f18bb12d068512b",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": true,
+   "title": "HealthFlow: automating electronic health record analysis via a strategically self-evolving multi-agent framework",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-17T00:00:00+00:00",
+   "summary": "Published research describes HealthFlow, a multi-agent framework that automates electronic health record analysis through self-evolving strategies.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=_onfQRKB1JY",
+   "title_hash": "8d299d67a2d0fe1acb40d6a72a0a4add",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": false,
+   "reason": "model version does not exist; content appears speculative or fictitious"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Cxp2aZQqkYM",
+   "title_hash": "011c60119d333722672cb3710424b323",
+   "first_seen": "2026-08-17T16:47:34.125168+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

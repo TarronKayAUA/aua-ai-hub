@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://jack-clark.net/2026/08/17/import-ai-469-science-ai-rsi-simulator-and-zucks-technological-pessimism">Import AI 469: Science AI; RSI simulator; and Zuck’s technological pessimism</a>
+    <p class="news-card-summary">Import AI newsletter covers DiG-bench results showing Fable model capabilities, AI system analysis, and scientific AI applications.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 17, 2026</span></div>
@@ -28,6 +35,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Axiom Math&#x27;s AI system automatically verified a significant formal mathematics proof relating to prime numbers, demonstrating progress in automated mathematical verification.</p>
   </div>
   <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/abstract-illustration-of-several-long-arrows-stacked-horizontally-parallel-to-one-another-each-arrow-has-one-plotted-point-in-a.jpg?id=67608532&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://blog.roboflow.com/openai-gpt-5-6">GPT 5.6 Sol is the best &quot;vision&quot; model OpenAI ever released</a>
+    <p class="news-card-summary">OpenAI released GPT 5.6 Sol, a vision model with significant improvements in visual understanding capabilities.</p>
+  </div>
+  <img class="news-card-thumb" src="https://storage.ghost.io/c/2c/8d/2c8d8c0d-1c15-4b6d-825e-02b78d61d40a/content/images/2026/07/img-blog-gpt-5-6-sol-best-vision-model-to-date.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -122,21 +137,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Hugging Face observations on the state of open models landscape in summer 2026.</p>
   </div>
   <img class="news-card-thumb" src="https://huggingface.co/blog/assets/state-of-open-models-summer-2026/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop">Trained a 1.5B to write shell commands so I&#x27;d stop googling tar flags. Runs on a laptop CPU in ~1 sec.</a>
-    <p class="news-card-summary">A fine-tuned 1.5B parameter model generates shell commands from natural language descriptions and runs efficiently on CPU.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/di0yenio27jh1.gif?width=640&amp;crop=smart&amp;s=d39275a4e908c41b9172d01bcf8ec7a8db33ad68" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/13/llm-gemini">llm-gemini 0.33</a>
-    <p class="news-card-summary">Plugin adds support for Google&#x27;s Gemini 3.7 Flash and earlier versions, with reasoning traces and embedding models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/gemini-3.7-flash-high-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
