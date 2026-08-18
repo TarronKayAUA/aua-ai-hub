@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -308,13 +308,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 11, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42579624?fc=20260609215449&amp;ff=20260811224622&amp;v=2.20.1">Student and teacher views of using GenAI in GP undergraduate medical education: &#x27;to complement not replace&#x27;</a>
         <p class="news-card-summary">A UK study explores undergraduate medical students&#x27; and teachers&#x27; views on using generative AI in general practice education, finding support for AI as a complement rather than replacement.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574069?fc=20260609215449&amp;ff=20260810222918&amp;v=2.20.1">Assessing the Educational Role of Large Language Models in Dental Training: A Decade-Long Analysis of Text-Based and Visual Questions in a National Examination</a>
-        <p class="news-card-summary">Analysis of large language models on a decade of dental board exam questions shows strong text-based performance but significant limitations with visual content in image-dependent disciplines.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -661,9 +654,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
@@ -976,22 +969,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.08024">Prompt Embedding Probes (PEP): Hallucination Detection in LLMs from Hidden States</a>
         <p class="news-card-summary">Prompt Embedding Probes provides a white-box method for detecting hallucinations in frozen language models using hidden states without additional model training.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer">Introducing Muse Glimmer</a>
-        <p class="news-card-summary">Meta released Muse Glimmer, a 30-billion-parameter open-weight model under Apache 2.0 license optimized for agentic task completion with strong benchmark performance.</p>
-      </div>
-      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/glimmer-pelican.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://cactuscompute.com/needle">Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots</a>
-        <p class="news-card-summary">Cactus released Needle 2, a 14-megabyte agentic language model for edge devices including phones and wearables, requiring only 28 megabytes of RAM for full inference.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cactuscompute.com/opengraph-image?9df76a35fe8276e2" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">

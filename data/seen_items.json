@@ -29561,6 +29561,13 @@
    "first_seen": "2026-08-18T01:52:02.246192+00:00",
    "kept": false,
    "reason": "daily news recap with generic industry discussion, not substantive on artificial intelligence development or deployment"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03091-6",
+   "title_hash": "09489e1916edf3677587c552480dd131",
+   "first_seen": "2026-08-18T04:54:11.296352+00:00",
+   "kept": false,
+   "reason": "not about artificial intelligence; off-topic for this audience"
   }
  ],
  "digests": [
