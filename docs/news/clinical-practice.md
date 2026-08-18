@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The U.S. Department of Health and Human Services has opened a formal request for input on policy priorities for clinical AI adoption, covering regulation and reimbursement <a href="https://www.nature.com/articles/s41746-026-03094-3">[4]</a>. That effort intersects with a separate analysis warning that new Medicare incentives for AI-based devices could encourage overuse in hospitals <a href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">[12]</a>. Meanwhile, a multistage framework for detecting and mitigating interacting sources of bias, including representation, proxy, integrity, and temporal effects, offers hospitals a practical tool for safety review <a href="https://ai.jmir.org/2026/1/e102146">[5]</a>. Parallel work on federated learning shows how large language models can be adapted across institutions without sharing patient data <a href="https://www.nature.com/articles/s41746-026-03064-9">[3]</a>, as an uncertainty-aware open-set model extends similar privacy-conscious rigor to infant fundus imaging <a href="https://www.nature.com/articles/s41746-026-03118-y">[2]</a>.</p>
-<p>Also this week: nine items address safety and evaluation, four cover imaging and diagnostics, and two focus on clinical decision support, including a scoping review of real-world implementation barriers and a Nordic AI-Health Initiative commentary on shared data infrastructure. Other entries cover histological aging clocks, dermatologic image analysis, and design principles for AI-driven digital organisms.</p>
-<p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the items below.</p>
+<p>Policy and safety concerns dominate this cycle, starting with the Department of Health and Human Services opening a formal request for input on AI adoption priorities in clinical care, including regulation and reimbursement <a href="https://www.nature.com/articles/s41746-026-03094-3">[10]</a>. That regulatory attention pairs with a newly validated multistage framework for detecting and mitigating interacting bias sources in clinical AI systems <a href="https://ai.jmir.org/2026/1/e102146">[11]</a>. Infrastructure for large-scale, privacy-preserving deployment is also advancing: a parameter-efficient federated learning approach lets institutions adapt language models without sharing patient data <a href="https://www.nature.com/articles/s41746-026-03064-9">[9]</a>, while the Nordic region has outlined a technical roadmap for pooling longitudinal health datasets across borders <a href="https://www.nature.com/articles/s41591-026-04575-4">[13]</a>. On the diagnostic side, a multicenter prospective study validated interpretable deep learning for liver lesion classification from non-contrast MRI <a href="https://www.nature.com/articles/s41746-026-03032-3">[1]</a>.</p>
+<p>Also this week: the section adds to its seven items on safety and evaluation, four on imaging and diagnostics, and four on clinical decision support. Additional work spans federated ICU ventilation weaning prediction, tissue-specific histological aging clocks, and a scoping review documenting bias and clinical utility gaps in mental health language models.</p>
+<p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03032-3">Interpretable deep learning for three-stage focal liver lesion diagnosis on non-contrast MRI: a multicenter, prospective study</a>
+    <p class="news-card-summary">Multicenter prospective study validates interpretable deep learning for focal liver lesion diagnosis on non-contrast MRI.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 13, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e88082">Large Language Models for Mental Health Prediction: Scoping Review of Bias and Clinical Utility Documentation in 2019-2024</a>
     <p class="news-card-summary">Scoping review identifies bias and clinical utility gaps in large language models designed for mental health prediction across 2019-2024 literature.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 13, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89834">Real-World Barriers to and Facilitators of Implementing AI-Based Clinical Decision Support Systems: Scoping Review</a>
-    <p class="news-card-summary">Scoping review synthesizes real-world barriers and facilitators to implementation of AI-based clinical decision support systems in actual health care settings.</p>
   </div>
 </div>
 </div>

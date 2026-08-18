@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A scoping review of AI methods for clinical competency assessment <a href="https://mededu.jmir.org/2026/1/e92826">[8]</a> arrives alongside a broader call for human-centered integration of AI agents in clinical judgment training, including proposals for AI-assisted OSCEs <a href="https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">[15]</a>, as programs weigh how much autonomy these tools should have. Standardized patient simulations are also advancing, with AI-augmented virtual patients showing reproducibility in assessing communication skills <a href="https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">[3]</a> and a no-code tutorial demonstrating how educators can build their own chatbot-based simulated patients <a href="https://mededu.jmir.org/2026/1/e103399">[5]</a>. Meanwhile, large language models are being tested for grading resident assessment narratives, though they perform unevenly across strengths and areas for improvement <a href="https://pubmed.ncbi.nlm.nih.gov/42602997?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">[1]</a>.</p>
-<p>Also this week: eight items address teaching and curriculum design, including self-directed learning tools and bibliometric analyses tracing AI&#x27;s growth in problem-based and case-based education. Four cover simulation and skills training, such as immersive virtual reality modules for physical therapy students, while three focus on assessment and feedback methods used across clinical training programs.</p>
-<p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the source items.</p>
+<p>Assessment of clinical competency is emerging as a central theme, with a scoping review mapping AI-driven methods for evaluating clinical skills and the validity questions they raise <a href="https://mededu.jmir.org/2026/1/e92826">[10]</a>. Standardized patient systems built on generative AI show measurable consistency in judging communication and professionalism, matching expert raters in pilot testing <a href="https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">[5]</a>. Automated skills platforms are moving into real-time practice, offering learners immediate feedback <a href="https://www.nature.com/articles/s41746-026-03100-8">[6]</a>. A systematic review of AI&#x27;s role in the affective domain cautions that such tools should support, not substitute for, human mentorship in empathy and professional identity formation <a href="https://pubmed.ncbi.nlm.nih.gov/42598023?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">[14]</a>. Large language models continue to post strong scores on specialty board-style examinations, raising questions about what those results predict for clinical readiness <a href="https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1">[1]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum design, including AI chatbot-building tutorials for educators and analyses of AI as an interprofessional team member. Four pieces examine assessment and feedback methods beyond the standardized-patient work, and three cover simulation and skills training, including virtual reality instruction for physical therapy students.</p>
+<p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -312,13 +312,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e100179">Human-Edited Generative AI-Assisted Multiple-Choice Questions in Postgraduate Family Medicine: Blinded Cross-Sectional Comparative Psychometric Study</a>
-        <p class="news-card-summary">Study evaluates psychometric properties of multiple-choice questions drafted by generative AI and edited by faculty for postgraduate family medicine assessment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 10, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42574069?fc=20260609215449&amp;ff=20260810222918&amp;v=2.20.1">Assessing the Educational Role of Large Language Models in Dental Training: A Decade-Long Analysis of Text-Based and Visual Questions in a National Examination</a>
         <p class="news-card-summary">Analysis of large language models on a decade of dental board exam questions shows strong text-based performance but significant limitations with visual content in image-dependent disciplines.</p>
@@ -336,15 +329,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>The U.S. Department of Health and Human Services has opened a formal request for input on policy priorities for clinical AI adoption, covering regulation and reimbursement <a href="https://www.nature.com/articles/s41746-026-03094-3">[4]</a>. That effort intersects with a separate analysis warning that new Medicare incentives for AI-based devices could encourage overuse in hospitals <a href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">[12]</a>. Meanwhile, a multistage framework for detecting and mitigating interacting sources of bias, including representation, proxy, integrity, and temporal effects, offers hospitals a practical tool for safety review <a href="https://ai.jmir.org/2026/1/e102146">[5]</a>. Parallel work on federated learning shows how large language models can be adapted across institutions without sharing patient data <a href="https://www.nature.com/articles/s41746-026-03064-9">[3]</a>, as an uncertainty-aware open-set model extends similar privacy-conscious rigor to infant fundus imaging <a href="https://www.nature.com/articles/s41746-026-03118-y">[2]</a>.</p>
-<p>Also this week: nine items address safety and evaluation, four cover imaging and diagnostics, and two focus on clinical decision support, including a scoping review of real-world implementation barriers and a Nordic AI-Health Initiative commentary on shared data infrastructure. Other entries cover histological aging clocks, dermatologic image analysis, and design principles for AI-driven digital organisms.</p>
-<p class="section-brief-date">The picture as of August 16, 2026; numbered links go to the source items.</p>
+<p>Policy and safety concerns dominate this cycle, starting with the Department of Health and Human Services opening a formal request for input on AI adoption priorities in clinical care, including regulation and reimbursement <a href="https://www.nature.com/articles/s41746-026-03094-3">[10]</a>. That regulatory attention pairs with a newly validated multistage framework for detecting and mitigating interacting bias sources in clinical AI systems <a href="https://ai.jmir.org/2026/1/e102146">[11]</a>. Infrastructure for large-scale, privacy-preserving deployment is also advancing: a parameter-efficient federated learning approach lets institutions adapt language models without sharing patient data <a href="https://www.nature.com/articles/s41746-026-03064-9">[9]</a>, while the Nordic region has outlined a technical roadmap for pooling longitudinal health datasets across borders <a href="https://www.nature.com/articles/s41591-026-04575-4">[13]</a>. On the diagnostic side, a multicenter prospective study validated interpretable deep learning for liver lesion classification from non-contrast MRI <a href="https://www.nature.com/articles/s41746-026-03032-3">[1]</a>.</p>
+<p>Also this week: the section adds to its seven items on safety and evaluation, four on imaging and diagnostics, and four on clinical decision support. Additional work spans federated ICU ventilation weaning prediction, tissue-specific histological aging clocks, and a scoping review documenting bias and clinical utility gaps in mental health language models.</p>
+<p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03032-3">Interpretable deep learning for three-stage focal liver lesion diagnosis on non-contrast MRI: a multicenter, prospective study</a>
+        <p class="news-card-summary">Multicenter prospective study validates interpretable deep learning for focal liver lesion diagnosis on non-contrast MRI.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
@@ -651,41 +651,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Fully-automated sleep staging using machine learning for patients with Parkinson&#x27;s disease and isolated REM sleep behavior disorder.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91048">Unimodal and Multimodal Deep Learning for Pressure Injury Identification: Scoping Review</a>
-        <p class="news-card-summary">Scoping review maps deep learning applications for pressure injury identification and staging across unimodal and multimodal approaches.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e103162">AI Scribe Safety: Measuring What Happens After Signing</a>
-        <p class="news-card-summary">Commentary argues that AI scribe safety evaluation must extend beyond initial draft quality to track how downstream tools process and re-use signed clinical notes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 10, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82360">From Data Poverty to Data Sovereignty: Operationalizing Gold-Standard Biomedical Datasets in Low- and Middle-Income Countries</a>
-        <p class="news-card-summary">Analysis examines underrepresentation of low- and middle-income countries in biomedical datasets used to train FDA-approved AI tools and its clinical performance impact.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI&#x27;s reported dissolution of its preparedness team <a href="https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team">[2]</a>, the unit tasked with assessing frontier-model risks, arrives alongside scrutiny of ChatGPT&#x27;s new Computer History feature, which logs user clicks and keystrokes to train future automations <a href="https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes">[4]</a>. Separately, analysis suggests some capability limits in current models are deliberate design choices rather than technical ceilings <a href="https://w4g1.dev/blog/models-are-getting-dumber-on-purpose">[3]</a>. These safety-adjacent developments coincide with intensifying commercial pressure: Google shipped Gemini 3.7 Flash just three weeks after its predecessor <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">[10]</a>, while OpenAI and Anthropic cut prices in response to Chinese competitors <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[7]</a>, underscoring how fast release cycles and safety oversight are colliding.</p>
-<p>Also this week: the section includes four items on safety and reliability, three each on new models and industry and policy, and one each on research and benchmarking. Beyond the preparedness and release-cycle stories, coverage extends to Anthropic&#x27;s Claude watermarking system, a Hugging Face survey of the open-model landscape, and ongoing comparisons of outputs across different language models.</p>
-<p class="section-brief-date">The picture as of August 17, 2026; numbered links go to the source items.</p>
+<p>OpenAI has reportedly disbanded its preparedness team, the group responsible for assessing safety risks in large language models <a href="https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team">[9]</a>, raising questions about internal risk oversight as the company also faces new price competition from Chinese AI developers <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[14]</a>. Meanwhile, Alibaba&#x27;s open-weights Qwen 3.8 27B model has drawn attention for matching much larger proprietary systems on standard benchmarks, though it defaults to verbose reasoning <a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b">[8]</a>. Anthropic detailed how its SynthID-Text watermarking will identify Claude-generated content to meet EU transparency rules <a href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system">[5]</a>, and Axiom Math&#x27;s system verified a major formal proof involving prime numbers <a href="https://spectrum.ieee.org/axiom-math-246-theorem-formalization">[3]</a>.</p>
+<p>Also this week: five items address safety and reliability, including a study on reasoning behaviors in thinking models and an audit framework for generative AI systems. Three papers examine research methods, two look at benchmarks and evaluation, and two cover industry and policy shifts such as rising CPU demand for AI workloads.</p>
+<p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="new-models">New models (14)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 17, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52">Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index</a>
+        <p class="news-card-summary">Open-weights Qwen 3.8 27B model achieves performance comparable to much larger proprietary models on standardized AI benchmarks.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">August 17, 2026</span></div>

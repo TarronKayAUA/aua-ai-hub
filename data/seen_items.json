@@ -29507,6 +29507,60 @@
    "first_seen": "2026-08-17T20:45:15.892135+00:00",
    "kept": false,
    "reason": "product marketing from vendor's own channel"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03032-3",
+   "title_hash": "234fd4ec4c1b552bdcfdeaacde0687f4",
+   "first_seen": "2026-08-18T01:52:02.246192+00:00",
+   "kept": true,
+   "title": "Interpretable deep learning for three-stage focal liver lesion diagnosis on non-contrast MRI: a multicenter, prospective study",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-18T00:00:00+00:00",
+   "summary": "Multicenter prospective study validates interpretable deep learning for focal liver lesion diagnosis on non-contrast MRI.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52",
+   "title_hash": "67f1a0fc9fc7f64dfab8256af064b7e9",
+   "first_seen": "2026-08-18T01:52:02.246192+00:00",
+   "kept": true,
+   "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
+   "source": "Simon Willison's weblog",
+   "published": "2026-08-17T23:58:14+00:00",
+   "summary": "Open-weights Qwen 3.8 27B model achieves performance comparable to much larger proprietary models on standardized AI benchmarks.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/former-spacex-engineers-are-building-a-robotic-factory-for-making-steel-parts",
+   "title_hash": "9f424cd72b10edcd5eac5f1156e3889e",
+   "first_seen": "2026-08-18T01:52:02.246192+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; robotic manufacturing has no medical education or clinical practice relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqyq8r/artificial_analysis_qwen3827b_benchmarks_put_it",
+   "title_hash": "d83189e47c15aefdb7750639e1566159",
+   "first_seen": "2026-08-18T01:52:02.246192+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 2, which provides more substantive analysis"
+  },
+  {
+   "url": "https://www.theverge.com/tech/978323/whisker-litter-robot-5-pro-review",
+   "title_hash": "a5a2aeea5ff0ae507268bd6046e0399d",
+   "first_seen": "2026-08-18T01:52:02.246192+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; consumer pet product review lacks medical or educational relevance"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Companies-Still-Havent-Delivered-on-Their-Biggest-Promises-e3nhjtc",
+   "title_hash": "1bd667eb4b1d7362511d228c8760de60",
+   "first_seen": "2026-08-18T01:52:02.246192+00:00",
+   "kept": false,
+   "reason": "daily news recap with generic industry discussion, not substantive on artificial intelligence development or deployment"
   }
  ],
  "digests": [
@@ -29671,19 +29725,19 @@
  "last_digest_at": "2026-08-14T02:47:23.349298+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A scoping review of AI methods for clinical competency assessment <a href=\"https://mededu.jmir.org/2026/1/e92826\">[8]</a> arrives alongside a broader call for human-centered integration of AI agents in clinical judgment training, including proposals for AI-assisted OSCEs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42597935?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1\">[15]</a>, as programs weigh how much autonomy these tools should have. Standardized patient simulations are also advancing, with AI-augmented virtual patients showing reproducibility in assessing communication skills <a href=\"https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1\">[3]</a> and a no-code tutorial demonstrating how educators can build their own chatbot-based simulated patients <a href=\"https://mededu.jmir.org/2026/1/e103399\">[5]</a>. Meanwhile, large language models are being tested for grading resident assessment narratives, though they perform unevenly across strengths and areas for improvement <a href=\"https://pubmed.ncbi.nlm.nih.gov/42602997?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: eight items address teaching and curriculum design, including self-directed learning tools and bibliometric analyses tracing AI&#x27;s growth in problem-based and case-based education. Four cover simulation and skills training, such as immersive virtual reality modules for physical therapy students, while three focus on assessment and feedback methods used across clinical training programs.",
-   "hash": "a624a06b81dc18eb",
-   "date": "August 16, 2026"
+   "text": "Assessment of clinical competency is emerging as a central theme, with a scoping review mapping AI-driven methods for evaluating clinical skills and the validity questions they raise <a href=\"https://mededu.jmir.org/2026/1/e92826\">[10]</a>. Standardized patient systems built on generative AI show measurable consistency in judging communication and professionalism, matching expert raters in pilot testing <a href=\"https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1\">[5]</a>. Automated skills platforms are moving into real-time practice, offering learners immediate feedback <a href=\"https://www.nature.com/articles/s41746-026-03100-8\">[6]</a>. A systematic review of AI&#x27;s role in the affective domain cautions that such tools should support, not substitute for, human mentorship in empathy and professional identity formation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42598023?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1\">[14]</a>. Large language models continue to post strong scores on specialty board-style examinations, raising questions about what those results predict for clinical readiness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: seven items address teaching and curriculum design, including AI chatbot-building tutorials for educators and analyses of AI as an interprofessional team member. Four pieces examine assessment and feedback methods beyond the standardized-patient work, and three cover simulation and skills training, including virtual reality instruction for physical therapy students.",
+   "hash": "01e12c5e29676171",
+   "date": "August 18, 2026"
   },
   "clinical_practice": {
-   "text": "The U.S. Department of Health and Human Services has opened a formal request for input on policy priorities for clinical AI adoption, covering regulation and reimbursement <a href=\"https://www.nature.com/articles/s41746-026-03094-3\">[4]</a>. That effort intersects with a separate analysis warning that new Medicare incentives for AI-based devices could encourage overuse in hospitals <a href=\"https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices\">[12]</a>. Meanwhile, a multistage framework for detecting and mitigating interacting sources of bias, including representation, proxy, integrity, and temporal effects, offers hospitals a practical tool for safety review <a href=\"https://ai.jmir.org/2026/1/e102146\">[5]</a>. Parallel work on federated learning shows how large language models can be adapted across institutions without sharing patient data <a href=\"https://www.nature.com/articles/s41746-026-03064-9\">[3]</a>, as an uncertainty-aware open-set model extends similar privacy-conscious rigor to infant fundus imaging <a href=\"https://www.nature.com/articles/s41746-026-03118-y\">[2]</a>.\n\nAlso this week: nine items address safety and evaluation, four cover imaging and diagnostics, and two focus on clinical decision support, including a scoping review of real-world implementation barriers and a Nordic AI-Health Initiative commentary on shared data infrastructure. Other entries cover histological aging clocks, dermatologic image analysis, and design principles for AI-driven digital organisms.",
-   "hash": "efa802803aef044a",
-   "date": "August 16, 2026"
+   "text": "Policy and safety concerns dominate this cycle, starting with the Department of Health and Human Services opening a formal request for input on AI adoption priorities in clinical care, including regulation and reimbursement <a href=\"https://www.nature.com/articles/s41746-026-03094-3\">[10]</a>. That regulatory attention pairs with a newly validated multistage framework for detecting and mitigating interacting bias sources in clinical AI systems <a href=\"https://ai.jmir.org/2026/1/e102146\">[11]</a>. Infrastructure for large-scale, privacy-preserving deployment is also advancing: a parameter-efficient federated learning approach lets institutions adapt language models without sharing patient data <a href=\"https://www.nature.com/articles/s41746-026-03064-9\">[9]</a>, while the Nordic region has outlined a technical roadmap for pooling longitudinal health datasets across borders <a href=\"https://www.nature.com/articles/s41591-026-04575-4\">[13]</a>. On the diagnostic side, a multicenter prospective study validated interpretable deep learning for liver lesion classification from non-contrast MRI <a href=\"https://www.nature.com/articles/s41746-026-03032-3\">[1]</a>.\n\nAlso this week: the section adds to its seven items on safety and evaluation, four on imaging and diagnostics, and four on clinical decision support. Additional work spans federated ICU ventilation weaning prediction, tissue-specific histological aging clocks, and a scoping review documenting bias and clinical utility gaps in mental health language models.",
+   "hash": "be4ace0e6becb691",
+   "date": "August 18, 2026"
   },
   "general_ai": {
-   "text": "OpenAI&#x27;s reported dissolution of its preparedness team <a href=\"https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team\">[2]</a>, the unit tasked with assessing frontier-model risks, arrives alongside scrutiny of ChatGPT&#x27;s new Computer History feature, which logs user clicks and keystrokes to train future automations <a href=\"https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes\">[4]</a>. Separately, analysis suggests some capability limits in current models are deliberate design choices rather than technical ceilings <a href=\"https://w4g1.dev/blog/models-are-getting-dumber-on-purpose\">[3]</a>. These safety-adjacent developments coincide with intensifying commercial pressure: Google shipped Gemini 3.7 Flash just three weeks after its predecessor <a href=\"https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release\">[10]</a>, while OpenAI and Anthropic cut prices in response to Chinese competitors <a href=\"https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground\">[7]</a>, underscoring how fast release cycles and safety oversight are colliding.\n\nAlso this week: the section includes four items on safety and reliability, three each on new models and industry and policy, and one each on research and benchmarking. Beyond the preparedness and release-cycle stories, coverage extends to Anthropic&#x27;s Claude watermarking system, a Hugging Face survey of the open-model landscape, and ongoing comparisons of outputs across different language models.",
-   "hash": "ad16a86b868f90ae",
-   "date": "August 17, 2026"
+   "text": "OpenAI has reportedly disbanded its preparedness team, the group responsible for assessing safety risks in large language models <a href=\"https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team\">[9]</a>, raising questions about internal risk oversight as the company also faces new price competition from Chinese AI developers <a href=\"https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground\">[14]</a>. Meanwhile, Alibaba&#x27;s open-weights Qwen 3.8 27B model has drawn attention for matching much larger proprietary systems on standard benchmarks, though it defaults to verbose reasoning <a href=\"https://simonwillison.net/2026/Aug/16/qwen-38-27b\">[8]</a>. Anthropic detailed how its SynthID-Text watermarking will identify Claude-generated content to meet EU transparency rules <a href=\"https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system\">[5]</a>, and Axiom Math&#x27;s system verified a major formal proof involving prime numbers <a href=\"https://spectrum.ieee.org/axiom-math-246-theorem-formalization\">[3]</a>.\n\nAlso this week: five items address safety and reliability, including a study on reasoning behaviors in thinking models and an audit framework for generative AI systems. Three papers examine research methods, two look at benchmarks and evaluation, and two cover industry and policy shifts such as rising CPU demand for AI workloads.",
+   "hash": "b9247c421723cfe1",
+   "date": "August 18, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -29754,5 +29808,5 @@
    "url": "https://topaneu-26.grand-challenge.org/"
   }
  },
- "section_briefs_refreshed": "2026-08-17"
+ "section_briefs_refreshed": "2026-08-18"
 }

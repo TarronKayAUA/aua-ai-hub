@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI&#x27;s reported dissolution of its preparedness team <a href="https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team">[2]</a>, the unit tasked with assessing frontier-model risks, arrives alongside scrutiny of ChatGPT&#x27;s new Computer History feature, which logs user clicks and keystrokes to train future automations <a href="https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes">[4]</a>. Separately, analysis suggests some capability limits in current models are deliberate design choices rather than technical ceilings <a href="https://w4g1.dev/blog/models-are-getting-dumber-on-purpose">[3]</a>. These safety-adjacent developments coincide with intensifying commercial pressure: Google shipped Gemini 3.7 Flash just three weeks after its predecessor <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release">[10]</a>, while OpenAI and Anthropic cut prices in response to Chinese competitors <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[7]</a>, underscoring how fast release cycles and safety oversight are colliding.</p>
-<p>Also this week: the section includes four items on safety and reliability, three each on new models and industry and policy, and one each on research and benchmarking. Beyond the preparedness and release-cycle stories, coverage extends to Anthropic&#x27;s Claude watermarking system, a Hugging Face survey of the open-model landscape, and ongoing comparisons of outputs across different language models.</p>
-<p class="section-brief-date">The picture as of August 17, 2026; numbered links go to the items below.</p>
+<p>OpenAI has reportedly disbanded its preparedness team, the group responsible for assessing safety risks in large language models <a href="https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team">[9]</a>, raising questions about internal risk oversight as the company also faces new price competition from Chinese AI developers <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">[14]</a>. Meanwhile, Alibaba&#x27;s open-weights Qwen 3.8 27B model has drawn attention for matching much larger proprietary systems on standard benchmarks, though it defaults to verbose reasoning <a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b">[8]</a>. Anthropic detailed how its SynthID-Text watermarking will identify Claude-generated content to meet EU transparency rules <a href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system">[5]</a>, and Axiom Math&#x27;s system verified a major formal proof involving prime numbers <a href="https://spectrum.ieee.org/axiom-math-246-theorem-formalization">[3]</a>.</p>
+<p>Also this week: five items address safety and reliability, including a study on reasoning behaviors in thinking models and an audit framework for generative AI systems. Three papers examine research methods, two look at benchmarks and evaluation, and two cover industry and policy shifts such as rising CPU demand for AI workloads.</p>
+<p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 17, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52">Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index</a>
+    <p class="news-card-summary">Open-weights Qwen 3.8 27B model achieves performance comparable to much larger proprietary models on standardized AI benchmarks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">August 17, 2026</span></div>
@@ -129,13 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Zhipu AI released GLM 5.3, an update to its open-weights large language model.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/eixnxdnvz9jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2247868071d2d80c73f9ce9e95b5c3085bb85fa3" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/state-of-open-models-summer-2026">State of Open Models: Summer 2026 Observations</a>
-    <p class="news-card-summary">Hugging Face observations on the state of open models landscape in summer 2026.</p>
-  </div>
-  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/state-of-open-models-summer-2026/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
