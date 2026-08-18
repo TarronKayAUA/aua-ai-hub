@@ -898,6 +898,11 @@
   vendor: Adobe
   category: music_audio
   url: https://podcast.adobe.com
+  # The app is client-rendered (about 12 words of static text to a
+  # scripted fetch, probed 2026-08-18, issue #40) and Adobe's alternate
+  # product pages time out for scripts, so there is nothing for the
+  # weekly verifier to read. Owner-reviewed.
+  verify: skip
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
