@@ -1,401 +1,6 @@
 {
  "items": [
   {
-   "url": "https://medinform.jmir.org/2026/1/e87227",
-   "title_hash": "aa91e36e3142da7b4c0a0c564266565e",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "Differentiating Ischemic From Nonischemic T-Wave Inversion Using a Multimodal Vision-Language Model With Reinforcement Learning (ECG-R1): Development and Validation Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-06-19T16:15:13+00:00",
-   "summary": "Vision-language model with reinforcement learning differentiates ischemic from nonischemic T-wave inversion on electrocardiograms.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "thumbnail": "https://asset.jmir.pub/assets/868464737a74765c41328b0e83b67b6b.png"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42319217?fc=20260609215449&ff=20260619123328&v=2.20.0",
-   "title_hash": "ccc8c5bdef89254938d0058d9162e7af",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42317953?fc=20260609215449&ff=20260619123328&v=2.20.0",
-   "title_hash": "d262e627b2eddcf6c7b327aa9522cf10",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "AI in Medicine: Uncovering the Educational Pulse Through Students' Perspective",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-19T10:00:00+00:00",
-   "summary": "Study explores medical students' perspectives on artificial intelligence in healthcare delivery and medical training.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42316367?fc=20260609215449&ff=20260619123328&v=2.20.0",
-   "title_hash": "3bb1557376ab81a2bcbcfd44a2edcf5d",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42316197?fc=20260609215449&ff=20260619123328&v=2.20.0",
-   "title_hash": "3cc992af4f33a5382daee9886ea6983e",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42316098?fc=20260609215449&ff=20260619123328&v=2.20.0",
-   "title_hash": "78f51d1c52969a63766ed2152c1f0d2b",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19344",
-   "title_hash": "e462b5f24e5951c4d3b4962c0ca578d8",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19345",
-   "title_hash": "705e0e0b484f903ecc704b498e580bd5",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19346",
-   "title_hash": "c44cee2059c4425394c6756bbf632dfc",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19347",
-   "title_hash": "64d33ecc4c8f552bcaf495fe6f9755f9",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19348",
-   "title_hash": "97081c25150606596e91728739446f6e",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-19T04:00:00+00:00",
-   "summary": "DeepSeek-V4 preview targets efficient context handling for million-token language model applications.",
-   "category": "general_ai",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19349",
-   "title_hash": "82a3f1bd8ceacb5520ff9c5819b636df",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19350",
-   "title_hash": "6f67d9626136de033e649739f4f74cef",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19351",
-   "title_hash": "4c3339aaacf5bd14aa55b0196382fbee",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19352",
-   "title_hash": "779545135abb59c17c1b21f8ab7c053c",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19353",
-   "title_hash": "2c952b59d4922b89735ba34704339e46",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19354",
-   "title_hash": "f15e5ece1e163fa0c1ad0d9cf21f00e6",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19356",
-   "title_hash": "d7b0ed9c4c591da94e98baa3d0776b4b",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19468",
-   "title_hash": "88aa4218d4de7938e23fca2459106c19",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19544",
-   "title_hash": "3401557a1f7d47993e118b99e687fa52",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-19T04:00:00+00:00",
-   "summary": "Large-scale evaluation reveals that LLM-as-a-Judge models show reliability and consistency issues across agreement and bias measures.",
-   "category": "general_ai",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19552",
-   "title_hash": "e111c00e7b68464ce319b56cd7ae5d5c",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19591",
-   "title_hash": "59ab8076daccd1022b0b91e809f66b9e",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19625",
-   "title_hash": "21fdb20f2da65970223b3879f742ee4b",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19637",
-   "title_hash": "04db01ce623ee8120fb6327a2eafb45e",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19638",
-   "title_hash": "d9c2f6f8d7fdac776a7548b2a2177709",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19640",
-   "title_hash": "381ddac3844eb56a04f841c08e03c386",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19647",
-   "title_hash": "c8408148d12ff45c7322c56494a9517b",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19659",
-   "title_hash": "a4f600cb640cbfa41e081a10bcbff59b",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19667",
-   "title_hash": "bfcfbe27b4025ca4739156f4f19279ac",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "CacheWeaver: Cache-Aware Evidence Ordering for Efficient Grounded RAG Inference",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-19T04:00:00+00:00",
-   "summary": "CacheWeaver optimizes retrieval-augmented generation inference efficiency through cache-aware evidence ordering.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19668",
-   "title_hash": "b3671197774885329ee3b9e3a1c1c688",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.19698",
-   "title_hash": "f5e3530a6835f7bea4c8a8aa79d1f736",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02897-8",
-   "title_hash": "04f2ddce739578155b928cb898becec1",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02902-0",
-   "title_hash": "9561619ca3cdee809f03aac09c2c2373",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02835-8",
-   "title_hash": "bc569058fba70697a174fcb238a3916b",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02888-9",
-   "title_hash": "d3f605519900ec053eec01501d9ec59c",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02509-5",
-   "title_hash": "d61716d4ce34727bf3d2eb1b747cdcce",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "Clinical large language model centered on electronic medical records",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-19T00:00:00+00:00",
-   "summary": "Large language model trained on electronic medical records for clinical applications.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02917-7",
-   "title_hash": "cea8a80ba9d29bb58787b497a27fc982",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04519-y",
-   "title_hash": "10532289ef12c3ebab13bc233e9a4ce5",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/18/datasette-apps",
-   "title_hash": "18756fd731af602befe12882588b9fae",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/06/as-china-looms-taiwan-makes-more-drones-for-defense-and-the-us-military",
-   "title_hash": "a370885f38e31a04f10e22a729f6ebb9",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e77943",
-   "title_hash": "9312708c7ec26fed26fd66c5e26a0e8a",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "Performance of Zero-Shot Classifiers for Categorizing RCT Abstracts by Intervention Type: Validation Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-06-18T20:30:18+00:00",
-   "summary": "Zero-shot language model classifiers validated for categorizing randomized controlled trial abstracts by intervention type.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://asset.jmir.pub/assets/6f8388d5d0ea3298643a34812798503f.png"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e93054",
-   "title_hash": "bc7c276442bd7f90a2c1b41fa805678d",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "Evaluation of Five Large Language Models for Parental Education in Pediatric Anesthesia: Reliability and Readability Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-06-18T20:30:18+00:00",
-   "summary": "Five large language models evaluated for reliability and readability in generating parental education materials for pediatric anesthesia.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://asset.jmir.pub/assets/19437c759dc1cc8ac08d1e1262e71a35.png"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/18/datasette-acl",
-   "title_hash": "b554c566c8e653174910d18f7cf1b0fa",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9a17y/my_suitcase_robot_gets_high_now_off_a_real_gas",
-   "title_hash": "28bdd441e44108e532055bef9aa190f0",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42314970?fc=20260609215449&ff=20260619123328&v=2.20.0",
-   "title_hash": "bfbdadd472bb39e7b38e65844e7d880d",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "Real-Time CustomGPT Generated Feedback for Medical Students: A Simulation-Based Pilot Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-18T10:00:00+00:00",
-   "summary": "Pilot study assesses real-time CustomGPT-generated feedback for medical students in simulation-based training.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u8kr2o/we_need_a_80160b_model_urgently_the_unified",
-   "title_hash": "9af985943e12e8f4ffcef8ef98b859aa",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/15/datasette-apps-2",
-   "title_hash": "96e8f8a5211b7ddbfd12050fd195fe5d",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=dUmT0OIGoqE",
-   "title_hash": "cde77450e0e62b4b3f980384938f05f5",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=OdlUXu2sAb4",
-   "title_hash": "dbb74dc3a93f2a95de4176f318cad6fb",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=UxY8zJKRrHU",
-   "title_hash": "d84f5a6b3f93b37a94257301419d8b76",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "Improving health intelligence in ChatGPT",
-   "source": "OpenAI",
-   "published": "2026-06-18T19:10:18+00:00",
-   "summary": "OpenAI describes improvements to health intelligence features in ChatGPT, including enhanced medical information handling for its 230 million weekly health-related user queries.",
-   "category": "videos",
-   "score": 4.0,
-   "thumbnail": "https://i2.ytimg.com/vi/UxY8zJKRrHU/hqdefault.jpg"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=ZK3JhU73W18",
-   "title_hash": "279c1e21e62d07f7761c40860df1980d",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=SvBheXuKY8s",
-   "title_hash": "5974026406d511db3fe3ba821ab36571",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Models-Trying-to-Fill-the-Fable-Gap-e3kvr3b",
-   "title_hash": "31245b60c9b63f00b202b5ca34e9bd80",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://aipodcast.education/more-as-more-fails-what-ai-is-really-doing-to-student-performance",
-   "title_hash": "fadc706011480d098ba02a2f67be6fcc",
-   "first_seen": "2026-06-19T16:33:28.270097+00:00",
-   "kept": true,
-   "title": "More A's, More Fails: What AI Is Really Doing to Student Performance",
-   "source": "AI in Education Podcast",
-   "published": "2026-06-18T20:38:00+00:00",
-   "summary": "Episode explores the paradoxical effects of AI on student performance, examining why AI tutoring correlates with both higher grades and increased failure rates.",
-   "category": "podcasts",
-   "score": 4.0,
-   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42322138?fc=20260609215449&ff=20260620082131&v=2.20.0",
    "title_hash": "d650c641995172be78f890eade0ef98a",
    "first_seen": "2026-06-20T12:21:31.438564+00:00",
@@ -29722,6 +29327,74 @@
    "score": 3.0,
    "thumbnail": "https://i4.ytimg.com/vi/OvjccOrr-iw/hqdefault.jpg",
    "display_title": "AI security tradeoffs: intelligence, speed, and safety"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86812",
+   "title_hash": "6503709060da57ab0adb7aec921f08dc",
+   "first_seen": "2026-08-18T16:49:28.051379+00:00",
+   "kept": false,
+   "reason": "graph-based study discoverability system with no specific AI application described; off-topic for this audience"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/lecture-3-how-not-to-be-fooled-vps",
+   "title_hash": "a4d531444568cf46debe4cba784d882c",
+   "first_seen": "2026-08-18T16:49:28.051379+00:00",
+   "kept": false,
+   "reason": "incomplete announcement without content or detail"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e92964",
+   "title_hash": "37d961bea26a82f4619ec150979ebffb",
+   "first_seen": "2026-08-18T16:49:28.051379+00:00",
+   "kept": true,
+   "title": "Multiagent Large Language Model Framework for Psychotherapy Fidelity Assessment in Motivational Interviewing and Cognitive Behavioral Therapy Training: Cross-Sectional, Simulation-Based Evaluation Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-18T14:30:15+00:00",
+   "summary": "Multiagent language models can assess fidelity in motivational interviewing and cognitive behavioral therapy training sessions, offering a scalable alternative to manual rater assessment.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
+   "title_hash": "930fa7fff6ebd170ec35de81d17a93ab",
+   "first_seen": "2026-08-18T16:49:28.051379+00:00",
+   "kept": false,
+   "reason": "vendor marketing for Firefox browser feature, not a development in artificial intelligence relevant to medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03085-4",
+   "title_hash": "bb55749761d74d18158a4a66ff873baa",
+   "first_seen": "2026-08-18T16:49:28.051379+00:00",
+   "kept": true,
+   "title": "Fine-tuning an ECG foundation model to predict coronary CT angiography outcomes",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-18T00:00:00+00:00",
+   "summary": "Fine-tuning an ECG foundation model improves prediction of coronary CT angiography outcomes, demonstrating transfer learning for cardiac diagnostic imaging.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://huggingface.co/blog/multi-vector-encoder",
+   "title_hash": "0580e6359a47b41738a9ff63be1a5812",
+   "first_seen": "2026-08-18T16:49:28.051379+00:00",
+   "kept": true,
+   "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+   "source": "Hugging Face blog",
+   "published": "2026-08-18T00:00:00+00:00",
+   "summary": "Sentence Transformers now supports multi-vector late interaction embedding models for improved semantic search and retrieval tasks.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://huggingface.co/blog/assets/multi-vector-encoder/st-hf-lighton-thumbnail.png",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqnbhe/petition_to_add_a_rule_for_people_to_add_their",
+   "title_hash": "2bcb9a43a19681690759050139193f99",
+   "first_seen": "2026-08-18T16:49:28.051379+00:00",
+   "kept": false,
+   "reason": "community meta-discussion about forum organization, not news or significant technical analysis"
   }
  ],
  "digests": [
