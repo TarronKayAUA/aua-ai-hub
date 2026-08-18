@@ -29568,6 +29568,41 @@
    "first_seen": "2026-08-18T04:54:11.296352+00:00",
    "kept": false,
    "reason": "not about artificial intelligence; off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrdetw/qwen_dev_says_not_to_wait_for_35ba3b",
+   "title_hash": "5cfcfe9c264d899e6f0b2a30b1a15ac8",
+   "first_seen": "2026-08-18T08:54:57.222128+00:00",
+   "kept": false,
+   "reason": "forum speculation about unreleased models with no substantive news"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/18/ai-helps-researchers-win-nih-grants-will",
+   "title_hash": "e344674e1dcbbbd7062f0927b4da4297",
+   "first_seen": "2026-08-18T08:54:57.222128+00:00",
+   "kept": true,
+   "title": "AI Helped Researchers Win NIH Grants. Will Science Suffer?",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-08-18T03:00:00+00:00",
+   "summary": "Analysis of thousands of NSF and NIH grant applications reveals patterns in how researchers use generative AI and raises questions about effects on scientific quality.",
+   "category": "medical_education",
+   "score": 4.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robot_AI_sifting_documents_papers%20copy.jpg?itok=tNomQNI_",
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=toWaoplHKRg",
+   "title_hash": "5418ace9a47b438a189162a5c2a2839a",
+   "first_seen": "2026-08-18T08:54:57.222128+00:00",
+   "kept": false,
+   "reason": "speculation and rumor coverage without substantive development reporting"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ig3PUfSow5Y",
+   "title_hash": "df22357f4fb80839a58ac181a40f0e52",
+   "first_seen": "2026-08-18T08:54:57.222128+00:00",
+   "kept": false,
+   "reason": "tool tutorial with no news value or significant release announcement"
   }
  ],
  "digests": [
