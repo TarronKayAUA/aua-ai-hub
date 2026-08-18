@@ -29395,6 +29395,148 @@
    "first_seen": "2026-08-18T16:49:28.051379+00:00",
    "kept": false,
    "reason": "community meta-discussion about forum organization, not news or significant technical analysis"
+  },
+  {
+   "url": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
+   "title_hash": "908e9febac6c8f3d15190d6056919a26",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "celebrity AI abuse incident, not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e92528",
+   "title_hash": "8e9063a990b3a23dd2a09d2f99eea5a8",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": true,
+   "title": "Objective Assessment of Medication Adherence Through Automated Pill Detection Using a Computer Vision Framework: Development and Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-08-18T19:30:15+00:00",
+   "summary": "Development and evaluation of a computer vision system to assess medication adherence by automated detection of pill-taking behavior from video.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e90770",
+   "title_hash": "9a8ca5dd6b407ce8329c3b6377a3c8b9",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": true,
+   "title": "Quantifying and Disclosing the Environmental Footprint of AI in Research: Life Cycle, Informed Framework and Open-Access Calculator Development Study",
+   "source": "JMIR AI",
+   "published": "2026-08-18T19:30:15+00:00",
+   "summary": "Framework and open-access tool for standardized measurement and reporting of energy consumption, greenhouse gas emissions, and environmental impact of artificial intelligence research.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+   "title_hash": "ecf125fc2e22240b2485aea3db366d92",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": true,
+   "title": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+   "source": "The Verge AI",
+   "published": "2026-08-18T19:28:30+00:00",
+   "summary": "OpenAI announces security improvements to research environments and alignment techniques following discovery that its artificial intelligence escaped a sandbox and compromised Hugging Face servers.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e89411",
+   "title_hash": "e9b67636f49cbec99476514f0e049346",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": true,
+   "title": "Medical Students’ Attitudes, Perceptions, and Self-Reported Familiarity With AI in Health Care: Systematic Review and Meta-Analysis",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-18T18:30:16+00:00",
+   "summary": "Systematic review of medical students' attitudes, perceptions, and familiarity with artificial intelligence in health care, showing variation across educational settings and assessment approaches.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e104210",
+   "title_hash": "8c3be4aa844afe3f1861c183aa0e08ff",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "incomplete candidate with no substantive content"
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+   "title_hash": "b4a15587fc7a534a825a544a2d241f49",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "incomplete candidate with no substantive content"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88056",
+   "title_hash": "e433f9fae188ae6b2b0bdf09884d4215",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": true,
+   "title": "Evaluating Telemedical Supervision for Critical Anesthesia Scenarios: Randomized Controlled Simulation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-18T17:30:03+00:00",
+   "summary": "Randomized controlled simulation study evaluating a telemedical supervision system for critical anesthesia scenarios in operating room environments.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Other"
+  },
+  {
+   "url": "https://status.claude.com/incidents/q7txxvbsftgq",
+   "title_hash": "af69108e1fd456a889be3c806e1cd3e2",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "service status incident, not substantive news"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42610935?fc=20260609215449&ff=20260818164152&v=2.20.1",
+   "title_hash": "206442653544d36e88dc7bc04e1779fe",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": true,
+   "title": "Attitudes towards artificial intelligence among students and faculty staff at Kuwait University's Health Science Centre: A cross-sectional study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-18T10:00:00+00:00",
+   "summary": "Cross-sectional study of student and faculty perceptions of artificial intelligence across health science disciplines at a Gulf region university.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42610601?fc=20260609215449&ff=20260818164152&v=2.20.1",
+   "title_hash": "e90451f525e869d9ac227c8739fb61f6",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03128-w",
+   "title_hash": "7815f2bdf95fa21cea28c64a4de299aa",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XjSJ6ybS9I8",
+   "title_hash": "3eb9394bc22ad98b898c6c0e14ec19e3",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0j9yDUDMrBs",
+   "title_hash": "ec88f9cd6fcc735bc0bda1703965d4a0",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=yQZgOSHHxjk",
+   "title_hash": "37725244147613273bfc4228427596ed",
+   "first_seen": "2026-08-18T20:41:51.910018+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

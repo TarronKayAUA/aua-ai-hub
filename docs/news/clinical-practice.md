@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92528">Objective Assessment of Medication Adherence Through Automated Pill Detection Using a Computer Vision Framework: Development and Evaluation Study</a>
+    <p class="news-card-summary">Development and evaluation of a computer vision system to assess medication adherence by automated detection of pill-taking behavior from video.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90770">Quantifying and Disclosing the Environmental Footprint of AI in Research: Life Cycle, Informed Framework and Open-Access Calculator Development Study</a>
+    <p class="news-card-summary">Framework and open-access tool for standardized measurement and reporting of energy consumption, greenhouse gas emissions, and environmental impact of artificial intelligence research.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88056">Evaluating Telemedical Supervision for Critical Anesthesia Scenarios: Randomized Controlled Simulation Study</a>
+    <p class="news-card-summary">Randomized controlled simulation study evaluating a telemedical supervision system for critical anesthesia scenarios in operating room environments.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
@@ -103,27 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e102146">Detecting and Mitigating AI Bias in Health Care: Development and Validation of a Unified Multistage Framework</a>
     <p class="news-card-summary">Study develops and validates a multistage framework to detect and mitigate multiple interacting sources of bias in AI clinical systems, addressing representation, proxy, integrity, and temporal biases.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79713">Cross-Silo Federated Learning for Predicting Successful Mechanical Ventilation Weaning Across 5 Intensive Care Unit Databases: Retrospective Database Analysis</a>
-    <p class="news-card-summary">Retrospective study using federated learning across five intensive care unit databases to develop a mechanical ventilation weaning prediction model without sharing patient-level data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04575-4">An AI-Health infrastructure for the Nordic region: technical foundations, data assets, and a roadmap for deployment</a>
-    <p class="news-card-summary">Nature Medicine commentary describes the Nordic AI-Health Initiative, a secure platform for developing generalizable AI models from large-scale longitudinal health datasets across the Nordic region.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04566-5">Histological aging signatures for monitoring tissue-specific aging and disease</a>
-    <p class="news-card-summary">Researchers developed tissue-specific aging clocks from histological images across 40 tissue types paired with blood transcriptomics to assess structural integrity and physiological fitness.</p>
   </div>
 </div>
 </div>
