@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-08-18
 ---
 
 # Hardware for Local AI

@@ -1,9 +1,16 @@
 {
   "ledger": {
-    "claims_checked": 0,
+    "claims_checked": 8,
     "drifted": 0,
-    "reviews": 0,
-    "unverifiable": 0
+    "reviews": 1,
+    "unverifiable": 1
   },
-  "pages": {}
+  "pages": {
+    "tools/hardware.md": {
+      "budget_days": 45,
+      "claims_checked": 8,
+      "last_result": "clean",
+      "last_run": "2026-08-18"
+    }
+  }
 }

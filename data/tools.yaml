@@ -23,7 +23,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-18
   blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface.
 
 - name: ChatGPT
@@ -33,7 +33,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-18
   blurb: Widely used artificial intelligence chat assistant for drafting, summarizing, brainstorming, and general question answering.
 
 - name: Gemini
@@ -46,7 +46,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-18
   blurb: Google's artificial intelligence assistant, integrated with Google Workspace apps such as Docs and Gmail.
 
 - name: Microsoft 365 Copilot
@@ -598,7 +598,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Video generation and editing platform aimed at production work, with fine control over camera moves, motion, and character consistency.
 
 - name: Kling
@@ -621,7 +621,7 @@
   # Re-read 2026-07-21 against the live page (content-watch flag): video
   # generation and the free tier both confirmed; the page now also
   # offers image generation, not claimed in the blurb.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Fast video generator from the Chinese lab MiniMax with a usable free tier, a practical way to try video generation without paying.
 
 - name: HeyGen
@@ -631,7 +631,7 @@
   cost: freemium
   governance_status: caution
   status_note: Avatar and voice features require documented consent before using any real person's face or voice.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Generates presenter-style videos with artificial intelligence avatars, including translated, lip-synced versions of existing recordings.
 
 - name: Synthesia
@@ -641,7 +641,7 @@
   cost: freemium
   governance_status: caution
   status_note: Avatar and voice features require documented consent before using any real person's face or voice.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Avatar video platform for training and instructional content. Turns a script or document into a narrated presenter video without filming.
 
 # --- Music and Audio (owner approved 2026-06-12) ----------------------------
@@ -653,7 +653,7 @@
   cost: freemium
   governance_status: caution
   status_note: Training-data copyright litigation is ongoing; check output-use terms before publishing generated music.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Generates complete songs with vocals from a text description. The most widely used music generator, with a free tier.
 
 - name: Udio
@@ -871,7 +871,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Web platform for systematic and literature reviews that handles reference import, duplicate detection, and title and abstract screening across a review team. Artificial intelligence features rank records by predicted relevance on every plan including the free one, while automated data extraction requires the Advanced plan or higher.
 
 - name: Covidence
@@ -881,7 +881,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Web platform for managing systematic reviews with a team, covering screening, data extraction, and reporting aligned to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) standard. Artificial intelligence features sort records by predicted relevance, tag randomized controlled trials, and suggest data extraction values that reviewers accept or reject one at a time.
 
 - name: BioRender
@@ -891,7 +891,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply. The free tier is for educational use only and grants no publication rights; check your plan before a figure goes into a manuscript.
-  last_reviewed: 2026-07-21
+  last_reviewed: 2026-08-18
   blurb: Web-based tool for building scientific figures, slides, and posters from a library of biomedical icons and templates. Its artificial intelligence features convert uploaded images to the platform's style, edit icons from text prompts, and draft flowcharts, protocols, and timelines from written descriptions.
 
 - name: Adobe Podcast
