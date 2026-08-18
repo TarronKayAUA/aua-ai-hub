@@ -29603,6 +29603,125 @@
    "first_seen": "2026-08-18T08:54:57.222128+00:00",
    "kept": false,
    "reason": "tool tutorial with no news value or significant release announcement"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked",
+   "title_hash": "7cc53ec4372d994ade1cd430dbb23295",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": true,
+   "title": "Microsoft Copilot reveals secret input that allowed it to be hacked",
+   "source": "Ars Technica AI",
+   "published": "2026-08-18T13:00:04+00:00",
+   "summary": "Microsoft Copilot contained a secret parameter that allowed attackers to steal passwords through malicious links.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/18/david-baker-genbio-ai-new-virtual-model-unveiled-aido-cell",
+   "title_hash": "80a716926f72172c59e2dce7a2c618a8",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "vendor marketing or insufficient specifics for medical audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
+   "title_hash": "382743adf9513663bbd6ab95f6b31f97",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "vendor marketing or product review of consumer feature"
+  },
+  {
+   "url": "https://www.theverge.com/transportation/981194/faa-air-traffic-elon-musk-peter-thiel-palantir",
+   "title_hash": "a218f251a1d3941217174a2aa2e4b095",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; conspiracy speculation without substantive AI content"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
+   "title_hash": "45a47758943bb1ea28714f7f066a4b57",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "vendor marketing from OpenAI's own channel"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai",
+   "title_hash": "de4f826bf57c32e52d9147fa72ce54f2",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": true,
+   "title": "We still don’t know how people are really using AI",
+   "source": "MIT Technology Review AI",
+   "published": "2026-08-18T10:06:43+00:00",
+   "summary": "AI companies publish only selected usage data about their products, limiting independent verification of real-world adoption patterns and safety impacts.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/arm-around2.jpg?resize=1200,600",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/why-has-the-antiarrhythmic-drug-well",
+   "title_hash": "cdfec82d0b758ad68e794e4d6c5fcf96",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; no AI content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42609262?fc=20260609215449&ff=20260818091002&v=2.20.1",
+   "title_hash": "b5be5279d3189f157a4d29d5524153ce",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "narrow domain application of machine learning; not a significant AI education finding"
+  },
+  {
+   "url": "https://www.theverge.com/tech/981326/apple-airpods-with-cameras-demo-video-leak",
+   "title_hash": "9a0b6a57bcb036289b104b9890e0bc21",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "rumor or unconfirmed product"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
+   "title_hash": "0a32843c244b20fe174193ebfc331cd8",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": true,
+   "title": "AI’s recursive self-improvement might not come so quickly after all",
+   "source": "MIT Technology Review AI",
+   "published": "2026-08-18T09:00:00+00:00",
+   "summary": "Analysis suggests recursive self-improvement in AI may develop more slowly than industry forecasts predict, despite current capabilities in code and data generation.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/research-target2a.jpg?resize=1200,600",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04591-4",
+   "title_hash": "deee74bf3569690b4dfe462eac6543f3",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; no AI content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04561-w",
+   "title_hash": "f56640168baedc00e09224bea781035b",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; no AI content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=OvjccOrr-iw",
+   "title_hash": "404e55e8b1fb7f7dc3dc755a10dd00d3",
+   "first_seen": "2026-08-18T13:10:02.219526+00:00",
+   "kept": true,
+   "title": "What Is the AI Security Trilemma? Smart, Fast, or Secure AI?",
+   "source": "IBM Technology",
+   "published": "2026-08-18T11:00:38+00:00",
+   "summary": "Explainer of the tradeoffs between intelligence, speed, and security in AI systems and their implications for deployment.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/OvjccOrr-iw/hqdefault.jpg",
+   "display_title": "AI security tradeoffs: intelligence, speed, and safety"
   }
  ],
  "digests": [

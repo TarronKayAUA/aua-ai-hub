@@ -18,9 +18,33 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked">Microsoft Copilot reveals secret input that allowed it to be hacked</a>
+    <p class="news-card-summary">Microsoft Copilot contained a secret parameter that allowed attackers to steal passwords through malicious links.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai">We still don’t know how people are really using AI</a>
+    <p class="news-card-summary">AI companies publish only selected usage data about their products, limiting independent verification of real-world adoption patterns and safety impacts.</p>
+  </div>
+  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/arm-around2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement">AI’s recursive self-improvement might not come so quickly after all</a>
+    <p class="news-card-summary">Analysis suggests recursive self-improvement in AI may develop more slowly than industry forecasts predict, despite current capabilities in code and data generation.</p>
+  </div>
+  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/research-target2a.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 17, 2026</span></div>
@@ -112,29 +136,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">AWS is experiencing CPU capacity constraints as AI workloads strain cloud infrastructure, prompting a shift toward CPU-efficient computing strategies.</p>
   </div>
   <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-single-computer-chip-balancing-on-the-tip-of-a-pyramid.jpg?id=67615384&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 15, 2026</span></div>
-    <a class="news-card-title" href="https://sebastianraschka.com/blog/2026/claude-text-watermarking.html">How Claude&#x27;s Text Watermarking Works</a>
-    <p class="news-card-summary">Anthropic&#x27;s text watermarking embeds imperceptible patterns in Claude&#x27;s outputs to enable detection of AI-generated text.</p>
-  </div>
-  <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/claude-watermarking-explained/claude-watermarking.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground">OpenAI and Anthropic in price war as Chinese AI rivals gain ground</a>
-    <p class="news-card-summary">OpenAI and Anthropic release lower-priced models in response to competition from Chinese AI companies, reshaping the competitive landscape.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2285566787-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vny9zs/glm_53_released">GLM 5.3 Released</a>
-    <p class="news-card-summary">Zhipu AI released GLM 5.3, an update to its open-weights large language model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/eixnxdnvz9jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2247868071d2d80c73f9ce9e95b5c3085bb85fa3" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
