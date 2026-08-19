@@ -29982,6 +29982,55 @@
    "first_seen": "2026-08-19T04:53:08.816016+00:00",
    "kept": false,
    "reason": "community forum post about local model inference configuration; technical tinkering rather than significant news"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health",
+   "title_hash": "6aca0560c797e00957c9d69adaa4984b",
+   "first_seen": "2026-08-19T08:55:30.767603+00:00",
+   "kept": true,
+   "title": "Opinion: I’m a pediatrician. AI chatbots are grooming my patients",
+   "source": "STAT News AI",
+   "published": "2026-08-19T08:30:00+00:00",
+   "summary": "A pediatrician argues that chatbot interactions designed to encourage engagement may constitute child abuse when they exploit children's developmental vulnerabilities, yet current law does not address algorithmic harms.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1457137503-645x645.jpg",
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/student-success/life-after-college/2026/08/19/ai-career-skills-move-beyond-computer-science",
+   "title_hash": "5ec8553e09ae92516fc5eb1e60683ae3",
+   "first_seen": "2026-08-19T08:55:30.767603+00:00",
+   "kept": false,
+   "reason": "general higher-education career trends not specific to AI in medicine or medical education"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/online-trending-now/2026/08/19/focus-quantum-future",
+   "title_hash": "22d22fff112b45847d97cc5b74220368",
+   "first_seen": "2026-08-19T08:55:30.767603+00:00",
+   "kept": false,
+   "reason": "opinion on quantum computing vs. AI priorities, not substantive analysis relevant to medical education or clinical AI"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/call-action/2026/08/19/how-higher-ed-can-maximize-impact-ai-search",
+   "title_hash": "25dd4514c3a43a387dd97f8c5e7f5bb1",
+   "first_seen": "2026-08-19T08:55:30.767603+00:00",
+   "kept": false,
+   "reason": "marketing and institutional communications strategy, not medical education or clinical AI development"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrwsfl/memory_prices_climb_500_in_12_months_up_to_10x",
+   "title_hash": "f0570e905aafa2517942eb552e27ac58",
+   "first_seen": "2026-08-19T08:55:30.767603+00:00",
+   "kept": false,
+   "reason": "hardware pricing discussion, not relevant to this audience's focus on medical AI applications and education"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=J5HhFmjB9a4",
+   "title_hash": "d5239f3636710cd6a568914b5e8b6735",
+   "first_seen": "2026-08-19T08:55:30.767603+00:00",
+   "kept": false,
+   "reason": "speculation and rumor content with sensationalized framing; no substantive news or analysis"
   }
  ],
  "digests": [

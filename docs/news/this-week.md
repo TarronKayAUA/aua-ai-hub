@@ -321,10 +321,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health">Opinion: I’m a pediatrician. AI chatbots are grooming my patients</a>
+        <p class="news-card-summary">A pediatrician argues that chatbot interactions designed to encourage engagement may constitute child abuse when they exploit children&#x27;s developmental vulnerabilities, yet current law does not address algorithmic harms.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1457137503-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
@@ -566,27 +574,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AIPrognosis_Wordpress_AIcoins-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.10258">TAF-MED: Multi-Turn Safety Refusal Collapse in LLMs Under Declared Self-Treatment Intent</a>
-        <p class="news-card-summary">A physician-reviewed benchmark of 500 three-turn scenarios tests whether large language models maintain medication-safety boundaries when users declare self-treatment intent after initial refusals.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.10273">Locally Deployable Small Language Models for Emergency Department Decision Support: A Systematic Benchmark of Fine-Tuning Strategies</a>
-        <p class="news-card-summary">A systematic benchmark compares eight open-source small language models and fine-tuning strategies for locally deployable emergency department decision support without transmitting patient data externally.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03125-z">Natural language processing application in electronic health records studies for psychosis: a systematic review</a>
-        <p class="news-card-summary">A systematic review surveys natural language processing applications in electronic health record studies of psychosis, assessing clinical utility and evidence quality.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
@@ -646,9 +633,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -933,20 +920,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Hugging Face releases LFM2.5-VL-3B, a 3-billion-parameter vision-language model optimized for edge deployment with improved speed and capability.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/apldbDPIJWZeODX1g9iFV.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.09941">The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs</a>
-        <p class="news-card-summary">A zero-shot multilingual evaluation demonstrates that 4-bit quantization of small language models causes substantial performance degradation in non-English languages, with implications for edge deployment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.09942">When Chain-of-Thought Helps and When It Hurts: An Empirical Investigation of the Serial-Depth Bottleneck in LLM Reasoning</a>
-        <p class="news-card-summary">An empirical study identifies cases where chain-of-thought prompting hurts large language model reasoning due to serial computational bottlenecks, clarifying when this technique helps.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
