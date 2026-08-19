@@ -29958,6 +29958,175 @@
    "category": "clinical_practice",
    "score": 3.0,
    "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e108367",
+   "title_hash": "ba38f2961254e430652844d09f152680",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "retraction notice with no summary; not substantive content"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/flight-attendants-freaked-out-that-google-to-buy-tons-of-spirit-employee-data",
+   "title_hash": "b8ae5ba576467bbc26aa063b482d19ed",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; not about AI in medicine or education"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e93443",
+   "title_hash": "25318e586a387a31e4ee9c3e6678345d",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": true,
+   "title": "Centralized Digital Surveillance for Abdominal Aortic Aneurysm Detection, Longitudinal Tracking, and Management Within an Integrated Health System: Retrospective Cohort Study",
+   "source": "JMIR AI",
+   "published": "2026-08-19T19:00:03+00:00",
+   "summary": "Centralized digital surveillance combining electronic health records and natural language processing improves detection and longitudinal tracking of incidental abdominal aortic aneurysms.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
+   "title_hash": "35dc63ccf3579f315e2f0add42e18e91",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "vendor marketing from Google's own channel"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e93148",
+   "title_hash": "acaf0caea352210aba524a2fdd1051a5",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": true,
+   "title": "Olfactory Cues and Patient Safety Behavior in Virtual Reality Medical Simulation: Controlled Trial",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-19T18:30:16+00:00",
+   "summary": "Adding olfactory cues to virtual reality medical simulation increases immersion and elicits authentic safety-relevant clinical behaviors.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e89242",
+   "title_hash": "c431aaab1880e0d98220717dcacd0de7",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": true,
+   "title": "Machine Learning, Based Risk Prediction of In-Hospital Mortality in Patients With Non, ST-Elevation Acute Coronary Syndrome at Various Stages of the Diagnostic Process: Observational Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-19T17:30:14+00:00",
+   "summary": "Machine learning models improve in-hospital mortality risk prediction for non-ST-elevation acute coronary syndrome patients across diagnostic stages.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+   "title_hash": "9cf9677a0ec56ec556fad496634622c9",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "industry and personnel news not substantive for medical educators"
+  },
+  {
+   "url": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+   "title_hash": "07ec7d4b526306b45bc5d95fa5fb0c44",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "vendor marketing from Meta's own channel"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vsr67c/introducing_qwen3827b_dynamic_v3_unsloth_ggufs",
+   "title_hash": "6f71b7593274da0992ab91ba45066443",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche quantization tool"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42615368?fc=20260609215449&ff=20260819164714&v=2.20.1",
+   "title_hash": "ccfc6f24a1df89cf63d4f97b22b1531a",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "narrow domain application; incremental deep learning study on a specific imaging task"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42615013?fc=20260609215449&ff=20260819164714&v=2.20.1",
+   "title_hash": "1391a313555139c276a7b1be32f0be74",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": true,
+   "title": "A Generational Approach to Neurology Education: Engaging Generation Z Learners",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-19T10:00:00+00:00",
+   "summary": "Neurology educators address persistent student struggle with neuroanatomy and clinical reasoning by designing curricula tailored to Generation Z learning preferences and digital literacy.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42613470?fc=20260609215449&ff=20260819164714&v=2.20.1",
+   "title_hash": "fcd7e133fde15f3ff81ae29fa314b745",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": true,
+   "title": "Automatic extraction of structured information from brain MRI reports using an open-weight large language model",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-19T10:00:00+00:00",
+   "summary": "Open-weight LLaMA 3.1 effectively extracts structured clinical data from neuroradiology reports, with few-shot prompting improving performance on numerical variables.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.modular.com/blog/modcon-announcements",
+   "title_hash": "46675e9cfcb8de9250e7f7c2316f5d57",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "programming language release; not relevant to medical education or AI development for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03151-x",
+   "title_hash": "7b4f7376261c7ff894a8fbe4690c030a",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": true,
+   "title": "Full end-to-end diagnostic workflow automation of 3D OCT via foundation model-driven AI for retinal diseases",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-19T00:00:00+00:00",
+   "summary": "Foundation model-driven AI automates end-to-end diagnostic workflow for retinal diseases from three-dimensional optical coherence tomography scans.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04624-y",
+   "title_hash": "a87a220a7bad27e751a5f216ae2c3a48",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "genomics research unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://modelmap.cc/",
+   "title_hash": "3c85ba68c06ed806d6be93bfff005454",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "developer tool for model visualization; not substantive for medical educators"
+  },
+  {
+   "url": "https://homosabiens.substack.com/p/activation-energy-is-a-good-model",
+   "title_hash": "2337c6f0460a1d40affdc3326b3e4dfa",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "conceptual essay not bearing on artificial intelligence in medicine or education"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=kyYepbhe1g8",
+   "title_hash": "a9c65e0f3faf1ea6bc5dae942b49a4fc",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "hype-styled title with no substantive content description; summary is promotional boilerplate"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Backlash-Is-Getting-Stupider--But-Also-Smarter-e3nkhhd",
+   "title_hash": "c96a5f1889cebb4f866e611484b34aa3",
+   "first_seen": "2026-08-19T20:47:13.930344+00:00",
+   "kept": false,
+   "reason": "daily news recap with no substantive content relevant to medical educators or AI literacy"
   }
  ],
  "digests": [

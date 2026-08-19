@@ -18,14 +18,35 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93443">Centralized Digital Surveillance for Abdominal Aortic Aneurysm Detection, Longitudinal Tracking, and Management Within an Integrated Health System: Retrospective Cohort Study</a>
+    <p class="news-card-summary">Centralized digital surveillance combining electronic health records and natural language processing improves detection and longitudinal tracking of incidental abdominal aortic aneurysms.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89242">Machine Learning, Based Risk Prediction of In-Hospital Mortality in Patients With Non, ST-Elevation Acute Coronary Syndrome at Various Stages of the Diagnostic Process: Observational Study</a>
+    <p class="news-card-summary">Machine learning models improve in-hospital mortality risk prediction for non-ST-elevation acute coronary syndrome patients across diagnostic stages.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77335">Multicenter External Validation of an AI-Based Funduscopic Carotid Atherosclerosis Score and Assessment of Its Association With Coronary Artery Calcification: External Validation Study</a>
     <p class="news-card-summary">External validation study of a deep-learning funduscopic atherosclerosis score for noninvasive cardiovascular risk assessment using retinal imaging.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42613470?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">Automatic extraction of structured information from brain MRI reports using an open-weight large language model</a>
+    <p class="news-card-summary">Open-weight LLaMA 3.1 effectively extracts structured clinical data from neuroradiology reports, with few-shot prompting improving performance on numerical variables.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -64,6 +85,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Physics-informed machine learning model to predict surgical outcomes for orthognathic procedures using skeletal and facial geometry.</p>
   </div>
 </div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03151-x">Full end-to-end diagnostic workflow automation of 3D OCT via foundation model-driven AI for retinal diseases</a>
+    <p class="news-card-summary">Foundation model-driven AI automates end-to-end diagnostic workflow for retinal diseases from three-dimensional optical coherence tomography scans.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
@@ -97,34 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 18, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.14792">Prompting is not enough: supervised baselines and leakage control for measuring shared decision-making with LLMs in pediatric encounters</a>
     <p class="news-card-summary">Zero-shot prompting of language models is insufficient for detecting shared decision-making behaviors in pediatric surgical encounters; supervised learning with proper evaluation methods adds measurable value.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03032-3">Interpretable deep learning for three-stage focal liver lesion diagnosis on non-contrast MRI: a multicenter, prospective study</a>
-    <p class="news-card-summary">Multicenter prospective study validates interpretable deep learning for focal liver lesion diagnosis on non-contrast MRI.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03085-4">Fine-tuning an ECG foundation model to predict coronary CT angiography outcomes</a>
-    <p class="news-card-summary">Fine-tuning an ECG foundation model improves prediction of coronary CT angiography outcomes, demonstrating transfer learning for cardiac diagnostic imaging.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02962-2">MultiMed-RAG: leveraging multi-source knowledge and agent collaboration for medical tasks</a>
-    <p class="news-card-summary">MultiMed-RAG system leverages multi-source medical knowledge and agent collaboration to improve performance on medical tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03153-9">Evaluating retrieval-augmented large language models for pediatric cardiology knowledge using standardized questions</a>
-    <p class="news-card-summary">Peer-reviewed study evaluates retrieval-augmented language models on pediatric cardiology knowledge using standardized assessment questions.</p>
   </div>
 </div>
 </div>

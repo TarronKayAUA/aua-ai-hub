@@ -20,8 +20,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e93148">Olfactory Cues and Patient Safety Behavior in Virtual Reality Medical Simulation: Controlled Trial</a>
+        <p class="news-card-summary">Adding olfactory cues to virtual reality medical simulation increases immersion and elicits authentic safety-relevant clinical behaviors.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42615013?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">A Generational Approach to Neurology Education: Engaging Generation Z Learners</a>
+        <p class="news-card-summary">Neurology educators address persistent student struggle with neuroanatomy and clinical reasoning by designing curricula tailored to Generation Z learning preferences and digital literacy.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
@@ -293,20 +307,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42582818?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1">An Interactive, Project-Based AI in Healthcare Curriculum for Clinicians and Medical Educators</a>
-        <p class="news-card-summary">A project-based curriculum teaches clinicians and medical educators to critically evaluate and govern AI tools in healthcare, addressing the skills gap between AI development and clinical adoption.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42582784?fc=20260609215449&amp;ff=20260812131422&amp;v=2.20.1">Artificial intelligence for medical imaging education: bibliometric and visual analysis</a>
-        <p class="news-card-summary">A bibliometric analysis traces AI in medical imaging education research, documenting the rise of generative AI alongside machine learning, with production concentrated in the United States and China.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 12, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42586857?fc=20260609215449&amp;ff=20260813015007&amp;v=2.20.1">AI in GME education</a>
         <p class="news-card-summary">A review paper examines artificial intelligence integration across graduate medical education, covering residency selection, clinical training, and postgraduate practice.</p>
       </div>
@@ -321,15 +321,36 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93443">Centralized Digital Surveillance for Abdominal Aortic Aneurysm Detection, Longitudinal Tracking, and Management Within an Integrated Health System: Retrospective Cohort Study</a>
+        <p class="news-card-summary">Centralized digital surveillance combining electronic health records and natural language processing improves detection and longitudinal tracking of incidental abdominal aortic aneurysms.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89242">Machine Learning, Based Risk Prediction of In-Hospital Mortality in Patients With Non, ST-Elevation Acute Coronary Syndrome at Various Stages of the Diagnostic Process: Observational Study</a>
+        <p class="news-card-summary">Machine learning models improve in-hospital mortality risk prediction for non-ST-elevation acute coronary syndrome patients across diagnostic stages.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 19, 2026</span></div>
         <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77335">Multicenter External Validation of an AI-Based Funduscopic Carotid Atherosclerosis Score and Assessment of Its Association With Coronary Artery Calcification: External Validation Study</a>
         <p class="news-card-summary">External validation study of a deep-learning funduscopic atherosclerosis score for noninvasive cardiovascular risk assessment using retinal imaging.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42613470?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">Automatic extraction of structured information from brain MRI reports using an open-weight large language model</a>
+        <p class="news-card-summary">Open-weight LLaMA 3.1 effectively extracts structured clinical data from neuroradiology reports, with few-shot prompting improving performance on numerical variables.</p>
       </div>
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
@@ -366,6 +387,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03075-6">PhysSFI-Net: physics-informed geometric learning of skeletal and facial interactions for orthognathic surgical outcome prediction</a>
         <p class="news-card-summary">Physics-informed machine learning model to predict surgical outcomes for orthognathic procedures using skeletal and facial geometry.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03151-x">Full end-to-end diagnostic workflow automation of 3D OCT via foundation model-driven AI for retinal diseases</a>
+        <p class="news-card-summary">Foundation model-driven AI automates end-to-end diagnostic workflow for retinal diseases from three-dimensional optical coherence tomography scans.</p>
       </div>
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
@@ -592,13 +620,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03069-4">Role prompting modulates linguistic style but not clinical decision structure in GPT-5 tumour board simulation</a>
         <p class="news-card-summary">Peer-reviewed study examines how role prompting affects linguistic style and clinical decision-making in GPT-5 simulated tumor board discussions.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03109-z">Diagnostic accuracy of large language models for rare diseases: a systematic review and meta-analysis</a>
-        <p class="news-card-summary">A systematic review and meta-analysis evaluates diagnostic accuracy of large language models for rare diseases.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">

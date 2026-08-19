@@ -21,6 +21,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e93148">Olfactory Cues and Patient Safety Behavior in Virtual Reality Medical Simulation: Controlled Trial</a>
+    <p class="news-card-summary">Adding olfactory cues to virtual reality medical simulation increases immersion and elicits authentic safety-relevant clinical behaviors.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42615013?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">A Generational Approach to Neurology Education: Engaging Generation Z Learners</a>
+    <p class="news-card-summary">Neurology educators address persistent student struggle with neuroanatomy and clinical reasoning by designing curricula tailored to Generation Z learning preferences and digital literacy.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03100-8">CliniSense AI for automated clinical skills assessment with real-time feedback</a>
     <p class="news-card-summary">CliniSense AI provides automated assessment of clinical skills with real-time feedback to learners during practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e103399">Empowering Educators to Build AI Chatbots in Health Professions Education: Tutorial on a No-Code Design Workflow</a>
-    <p class="news-card-summary">A peer-reviewed tutorial guides health professions educators through building generative AI chatbots as simulated patients and assessment tools using no-code workflows.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94122">Effects of an Immersive 180° Video, Based Virtual Reality Instructional Module on Learning Satisfaction, Technology Acceptance, Motivation, and Quiz-Based Learning Achievement in Undergraduate Physical Therapy Students: Randomized Controlled Trial</a>
-    <p class="news-card-summary">Randomized controlled trial comparing immersive 180-degree video virtual reality instruction with conventional teaching for musculoskeletal examination skills, measuring learning satisfaction and achievement.</p>
   </div>
 </div>
 </div>
