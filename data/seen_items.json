@@ -1,56 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.nature.com/articles/s41746-026-02918-6",
-   "title_hash": "2628110e6eca63d863c7e44153b7aa9c",
-   "first_seen": "2026-06-20T15:57:36.989284+00:00",
-   "kept": true,
-   "title": "Human-AI Collaboration in Healthcare: A Scoping Review",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-20T00:00:00+00:00",
-   "summary": "Scoping review examines frameworks and outcomes of human-AI collaboration in clinical settings and healthcare delivery.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02901-1",
-   "title_hash": "1292f9f528da8521a372e62b6955dd64",
-   "first_seen": "2026-06-20T15:57:36.989284+00:00",
-   "kept": true,
-   "title": "Interpretable machine learning model for predicting kidney failure among CAKUT children in multicenter large-scale study",
-   "source": "npj Digital Medicine",
-   "published": "2026-06-20T00:00:00+00:00",
-   "summary": "Multicenter study develops an interpretable machine learning model to predict kidney failure in children with congenital anomalies of the kidney and urinary tract.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=qdf6UvCUlu4",
-   "title_hash": "2e8415219df0d721a89d2fc9084754e5",
-   "first_seen": "2026-06-20T15:57:36.989284+00:00",
-   "kept": true,
-   "title": "North Mini Code First Test, Cohere’s LOCAL Agentic Coding Model!",
-   "source": "Bijan Bowen",
-   "published": "2026-06-20T13:20:42+00:00",
-   "summary": "Demonstration and technical walkthrough of Cohere's North Mini, a local agentic coding model suitable for running without cloud infrastructure.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/qdf6UvCUlu4/hqdefault.jpg",
-   "display_title": "First test of North Mini Code local agentic coding model"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=G3KfRWUj6Wc",
-   "title_hash": "e5dd12f0c07558f8d019aad1737eb02d",
-   "first_seen": "2026-06-20T15:57:36.989284+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-5-Minute-AI-Weekly-Recap-Realignment-Week-e3l2097",
-   "title_hash": "dee5b4bd1451aee4eeaa06047afa9560",
-   "first_seen": "2026-06-20T15:57:36.989284+00:00",
-   "kept": false
-  },
-  {
    "url": "https://www.nature.com/articles/s41746-026-02900-2",
    "title_hash": "b790ccb55373153d1c404874a3ed9e5b",
    "first_seen": "2026-06-21T13:24:45.624195+00:00",
@@ -29968,6 +29918,46 @@
    "category": "podcasts",
    "score": 4.0,
    "thumbnail": "https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e77335",
+   "title_hash": "8602256ffdb938dd330f18b4385526f7",
+   "first_seen": "2026-08-19T16:48:14.190630+00:00",
+   "kept": true,
+   "title": "Multicenter External Validation of an AI-Based Funduscopic Carotid Atherosclerosis Score and Assessment of Its Association With Coronary Artery Calcification: External Validation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-19T16:15:12+00:00",
+   "summary": "External validation study of a deep-learning funduscopic atherosclerosis score for noninvasive cardiovascular risk assessment using retinal imaging.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/meta-ran-ads-for-an-app-promising-to-nudify-female-politicians",
+   "title_hash": "4cbce461cdbdf2a9dd738dba0e303786",
+   "first_seen": "2026-08-19T16:48:14.190630+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://huggingface.co/blog/LiquidAI/qad",
+   "title_hash": "7263e853ba751db051b29461afb71351",
+   "first_seen": "2026-08-19T16:48:14.190630+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03075-6",
+   "title_hash": "53c48710f257aad4150f0d97da1a9cda",
+   "first_seen": "2026-08-19T16:48:14.190630+00:00",
+   "kept": true,
+   "title": "PhysSFI-Net: physics-informed geometric learning of skeletal and facial interactions for orthognathic surgical outcome prediction",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-19T00:00:00+00:00",
+   "summary": "Physics-informed machine learning model to predict surgical outcomes for orthognathic procedures using skeletal and facial geometry.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
   }
  ],
  "digests": [
