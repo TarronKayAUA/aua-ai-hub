@@ -29770,6 +29770,218 @@
    "first_seen": "2026-08-19T01:54:28.931351+00:00",
    "kept": false,
    "reason": "daily news recap with generic framing; no specific development, research, or expert analysis of substantive value to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.16975",
+   "title_hash": "85e2ddd9531b96c5b2f21d46291c857c",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "narrow neuroscience application; specialized brain-language decoding without broad relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17050",
+   "title_hash": "fb4b44c8e6c639844a382d7bd4eb4cfb",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "incremental method for knowledge retrieval in language models; narrow technical contribution without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17051",
+   "title_hash": "481e23397e33900d3bea227d27241d04",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": true,
+   "title": "Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-19T04:00:00+00:00",
+   "summary": "Large language models can recover protected health information that automated de-identification systems miss, revealing institution-specific privacy risks in secondary EHR use.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17075",
+   "title_hash": "686462cc8aeed25fb5f88c547bc14673",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "narrow domain application in clinical forecasting; belongs in clinical_practice if medical relevance is primary, but the preprint is a specialized task…"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17084",
+   "title_hash": "169dd21e9b629cfe3475e602dee73175",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": true,
+   "title": "Uncertainty-Aware Decision Making in Multimodal Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-19T04:00:00+00:00",
+   "summary": "Multimodal language models struggle to express uncertainty when visual, textual, and cross-modal evidence conflict or degrade, raising reliability concerns.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17088",
+   "title_hash": "758870f1f04c688eb611ab3237f8a1f5",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "theoretical analysis of multilingual model scaling; specialized linguistic research without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17096",
+   "title_hash": "f64a95ba80e8937f00ca527093000823",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "linguistic analysis of the Voynich manuscript; off-topic for medical education and clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17102",
+   "title_hash": "c5c28e27db489544527f0e0626d9326d",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "multimodal emotion recognition in foundational models; cognitive science research without direct application to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17120",
+   "title_hash": "40e0a2cd22a0456b9742e246f835fe17",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "developmental psychology study comparing children's word learning to language model behavior; narrow cognitive science finding without relevance to medical…"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17153",
+   "title_hash": "e58aba0117d5e1fa29ec99e0e72cdb77",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": true,
+   "title": "Towards Safer RAG: Only Agents Capable of System 2 Thinking may Access Untrusted Documents",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-19T04:00:00+00:00",
+   "summary": "Retrieval-augmented generation systems remain vulnerable to knowledge-poisoning attacks unless the language model employs deliberate reasoning over retrieved documents.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17168",
+   "title_hash": "c55a65dad5e549e912f92198c4841e54",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "legal case reasoning benchmark; domain-specific evaluation without relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17171",
+   "title_hash": "6e02dd34a310c46c4d7949955ab15b26",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "table retrieval optimization using language models; specialized NLP task without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17184",
+   "title_hash": "963673c0abeafe33eafa9bb7beef6850",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "highway construction safety application; domain-specific system without relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17188",
+   "title_hash": "14d06350b4b8b645c73cc4f45f48ce1f",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "practitioner framework for multi-agent workflow optimization; operational technique without broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17205",
+   "title_hash": "39e7aa9ded57b2fc1ad2cdc9baae3b95",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "specialized study of modality reallocation in vision-language models; narrow technical investigation without direct relevance to medical education or practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17218",
+   "title_hash": "5e0c7ae172228518325af25e9f605d5c",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "literary analysis using language models; off-topic for medical education and clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17223",
+   "title_hash": "0c14c73c8a3a867fe1655dab13030f1e",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "domain-specific NLP benchmark for financial news; not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17288",
+   "title_hash": "ce8fe005f9f87c93683abd9c60435372",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "quantum-inspired attention mechanism; specialized infrastructure research without demonstrated significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17325",
+   "title_hash": "f187efd677077c6f32bb10aaed9d83cb",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "tokenization optimization study; specialized component-level language model research without broad significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17356",
+   "title_hash": "03bf3a0b098403f126327051fa68dba0",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": true,
+   "title": "ArguLens: An Open-Source System for Automated Essay Scoring and Label-Aware Feedback Generation",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-19T04:00:00+00:00",
+   "summary": "ArguLens is an open-source system for automated essay scoring and feedback that decomposes essays into interpretable discourse components using locally deployable language models.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17379",
+   "title_hash": "c7b4577c56dfc822f7ea9f4dff9b452a",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "specialized GPU kernel optimization benchmark; infrastructure for a narrow technical domain, not broadly significant for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17399",
+   "title_hash": "046a3660a6f822b260c0a769263b4024",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "linguistic analysis of translation artifacts in multilingual model generations; specialized NLP research without relevance to medical education or clinical…"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17454",
+   "title_hash": "b4c9cc3d44ef8e3cdebaf42656b2580d",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "media bias analysis pipeline for news; off-topic for medical education and clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17516",
+   "title_hash": "348b1b1c4c0047c0795f0ef0b0cde93a",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": true,
+   "title": "Effects of Answer Format Variation on Gender Bias in Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-19T04:00:00+00:00",
+   "summary": "Large language models exhibit gender bias that varies with question-answer format, mirroring known survey-science effects on human responses.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.17534",
+   "title_hash": "428e635159ae113c3222bf5d4ab53320",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "conversational memory architecture for language models; specialized infrastructure design without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrqf4f/running_deepseek_v4_flash_q4_k_xl_at_100_toks",
+   "title_hash": "ad4d2ba7f186f5ddb039a6eed1457d96",
+   "first_seen": "2026-08-19T04:53:08.816016+00:00",
+   "kept": false,
+   "reason": "community forum post about local model inference configuration; technical tinkering rather than significant news"
   }
  ],
  "digests": [

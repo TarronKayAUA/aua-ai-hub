@@ -21,6 +21,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.17051">Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss</a>
+    <p class="news-card-summary">Large language models can recover protected health information that automated de-identification systems miss, revealing institution-specific privacy risks in secondary EHR use.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03118-y">Uncertainty-inspired open-set model for identifying infantile fundus abnormalities</a>
     <p class="news-card-summary">An uncertainty-aware open-set model identifies abnormalities in infant fundus images while detecting out-of-distribution cases.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03064-9">Toward federated large language models in medicine: a parameter-efficient framework for privacy-preserving, multi-institutional adaptation</a>
-    <p class="news-card-summary">A parameter-efficient federated learning framework enables multiple medical institutions to adapt large language models while preserving patient privacy.</p>
   </div>
 </div>
 </div>

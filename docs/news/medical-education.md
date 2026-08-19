@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.17356">ArguLens: An Open-Source System for Automated Essay Scoring and Label-Aware Feedback Generation</a>
+    <p class="news-card-summary">ArguLens is an open-source system for automated essay scoring and feedback that decomposes essays into interpretable discourse components using locally deployable language models.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 18, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94122">Effects of an Immersive 180° Video, Based Virtual Reality Instructional Module on Learning Satisfaction, Technology Acceptance, Motivation, and Quiz-Based Learning Achievement in Undergraduate Physical Therapy Students: Randomized Controlled Trial</a>
     <p class="news-card-summary">Randomized controlled trial comparing immersive 180-degree video virtual reality instruction with conventional teaching for musculoskeletal examination skills, measuring learning satisfaction and achievement.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94034">The AI Colleague: Reimagining Interprofessional Collaboration and Education in Medicine</a>
-    <p class="news-card-summary">Analysis of how AI as an integrated team member reshapes medical education and interprofessional practice beyond traditional tool-focused frameworks.</p>
   </div>
 </div>
 </div>
