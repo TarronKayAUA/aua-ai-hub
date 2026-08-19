@@ -69,6 +69,7 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 | Memos, minutes, and reports | [Administrative Drafting](playbooks/admin-drafting.md) | Every fact yours while the model does the arranging |
 | Advising students on exam performance | [Making Sense of Your Score Reports](playbooks/score-reports.md) | Written for students and their advisors, with an advisor note; honest plans from National Board of Medical Examiners (NBME) INSIGHTS data |
 | Ending the re-explaining | [Standing Setups](tools/standing-setups.md) | A project per course; [Your First Agent Session](tools/first-session.md) is the 20-minute walkthrough for file-based work |
+| Producing documents, decks, and spreadsheets | [Skills](tools/skills.md) | Four document skills are already switched on and need no setup, including text recognition on scanned PDFs; the same page explains why skills from unknown authors are a real risk |
 | Getting better answers from any tool | [Getting Better Answers](basics/better-answers.md) | The three levers that decide output quality: context, memory, and standing instructions |
 
 ## Staying current

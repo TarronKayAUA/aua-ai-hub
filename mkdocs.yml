@@ -103,6 +103,7 @@ nav:
       - AI Agents: tools/agents.md
       - Choosing Your Interface: tools/interfaces.md
       - Standing Setups: tools/standing-setups.md
+      - Skills: tools/skills.md
       - Your First Agent Session: tools/first-session.md
       - Running Models Locally: tools/local.md
       - Hardware for Local AI: tools/hardware.md

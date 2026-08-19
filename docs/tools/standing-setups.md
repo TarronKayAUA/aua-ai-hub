@@ -18,6 +18,8 @@ last_reviewed: 2026-07-14
 
 The common idea: **instructions plus materials, attached to the work instead of the conversation.** A project's instructions apply to every chat inside it, and its uploaded knowledge is available without re-uploading.
 
+There is a fourth container worth knowing about, and it works the other way around: a [skill](skills.md) attaches instructions to a *kind of task* rather than to one body of work, so it applies wherever you are. You already have four of them switched on, and that page also covers why skills from unknown authors deserve real caution.
+
 <figure class="figure">
 <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a standing setup: instructions and uploaded knowledge sit in the container, and every conversation inside it starts with both already in place">
 <text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">anatomy of a standing setup</text>

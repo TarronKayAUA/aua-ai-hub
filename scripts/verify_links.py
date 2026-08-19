@@ -113,6 +113,7 @@ def collect() -> list[tuple[str, str]]:
         "data/learning_resources.yaml",
         "data/committee_work.yaml",
         "data/opportunities.yaml",
+        "data/skills.yaml",
     ):
         path = REPO / yaml_rel
         if not path.exists():

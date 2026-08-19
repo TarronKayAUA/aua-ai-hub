@@ -1,0 +1,96 @@
+# Agent skills listed on docs/tools/skills.md. Rendered at build time by
+# scripts/render_data.py. Edit this file only; never the rendered page.
+#
+# SCOPE IS A SAFETY DECISION, NOT AN OVERSIGHT (2026-08-19, owner
+# approved). A skill is a set of instructions an agent follows, and it
+# may bundle scripts the agent can execute, so a skill from an unknown
+# author is closer to installing software than to reading a document.
+# Anthropic's own security guidance is a two-item allowlist: "Use Skills
+# only from trusted sources: those you created yourself or obtained from
+# Anthropic." This roster therefore lists ONLY:
+#
+#   provenance: builtin    Anthropic's pre-built skills, on by default,
+#                          nothing to install
+#   provenance: anthropic  published by Anthropic in its own repository
+#   provenance: aua        written at AUA and reviewed here
+#
+# Third-party skills from open directories are deliberately out of scope
+# and must not be added to this file, however popular or useful they
+# look. Install counts and star ratings measure popularity, not safety.
+# If a third-party skill ever needs listing, that is an owner decision
+# taken with the AI Committee, and it needs its own review process
+# first.
+#
+# Fields:
+#   name        display name
+#   provenance  builtin | anthropic | aua  (drives the badge)
+#   what        one sentence, plain language, what it does for you
+#   surfaces    where it works, in reader-facing words
+#   setup       what the reader must do, or "Nothing" when it is on
+#   url         official documentation or repository for this skill
+#   last_reviewed  date the entry was checked against its source
+
+# The four pre-built document skills. Verified 2026-08-19 from
+# platform.claude.com/docs/en/agents-and-tools/agent-skills/overview and
+# from each skill's own SKILL.md in github.com/anthropics/skills, which
+# documents capabilities well beyond the summary line (the ones named
+# below are the ones staff are most likely not to know about).
+- name: Word documents
+  provenance: builtin
+  what: Creates and edits Word documents, including tracked changes, comments, and find and replace across a long file.
+  surfaces: claude.ai and Cowork
+  setup: Nothing
+  url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+  last_reviewed: 2026-08-19
+
+- name: PowerPoint decks
+  provenance: builtin
+  what: Builds slide decks, and reads existing ones, including pulling out speaker notes and comments from a deck you already have.
+  surfaces: claude.ai and Cowork
+  setup: Nothing
+  url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+  last_reviewed: 2026-08-19
+
+- name: Excel spreadsheets
+  provenance: builtin
+  what: Creates spreadsheets with formulas and charts, and cleans up messy exports where headers are in the wrong place or rows are malformed.
+  surfaces: claude.ai and Cowork
+  setup: Nothing
+  url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+  last_reviewed: 2026-08-19
+
+- name: PDF documents
+  provenance: builtin
+  what: Produces formatted PDFs, and also fills PDF forms, merges or splits files, and runs text recognition on a scanned document so it becomes searchable.
+  surfaces: claude.ai and Cowork
+  setup: Nothing
+  url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+  last_reviewed: 2026-08-19
+
+# Published by Anthropic in its own public repository. Verified
+# 2026-08-19 from the repository listing and each skill's frontmatter
+# description; both are Apache 2.0 there, unlike the four above, whose
+# source is published but proprietary.
+- name: Document co-authoring
+  provenance: anthropic
+  what: Walks you through writing a structured document in phases, gathering context first, then drafting, then testing whether a reader would follow it. Suited to proposals, policies, and self-study narratives.
+  surfaces: Claude Code, and claude.ai if you upload it yourself
+  setup: Install or upload
+  url: https://github.com/anthropics/skills
+  last_reviewed: 2026-08-19
+
+- name: Poster and print design
+  provenance: anthropic
+  what: Designs static visual pieces as image or PDF files, such as a conference poster or an event flyer.
+  surfaces: Claude Code, and claude.ai if you upload it yourself
+  setup: Install or upload
+  url: https://github.com/anthropics/skills
+  last_reviewed: 2026-08-19
+
+- name: Skill creator
+  provenance: anthropic
+  what: Helps you write a skill of your own, which is the supported way to package an AUA workflow rather than adopting someone else's.
+  surfaces: Claude Code, and claude.ai if you upload it yourself
+  setup: Install or upload
+  url: https://github.com/anthropics/skills
+  last_reviewed: 2026-08-19

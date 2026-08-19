@@ -64,5 +64,6 @@ A chat assistant answers you; an agent works for you. The difference is the loop
 - [Choosing Your Interface](../tools/interfaces.md): the full comparison of chat, working sessions, and agents, including the economics.
 - [Your First Agent Session](../tools/first-session.md): the 20-minute hands-on walkthrough, including the settings worth changing.
 - [Standing Setups](../tools/standing-setups.md): projects, instructions, and folder briefs that persist.
+- [Skills](../tools/skills.md): the document skills you already have, and how to judge the ones you would have to install.
 
 **Next:** [Your First Agent Session](../tools/first-session.md) puts this module into practice in 20 minutes.

@@ -32,6 +32,7 @@ OPPORTUNITIES_MARKER = "<!-- render:opportunities -->"
 LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
 PROMPT_RESOURCES_MARKER = "<!-- render:prompt-resources -->"
+SKILLS_MARKER = "<!-- render:skills -->"
 COMMITTEE_MARKER = "<!-- render:committee -->"
 HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
 
@@ -47,6 +48,15 @@ PROMPT_CATEGORY_LABELS = {
 PROMPT_STATUS_LABELS = {
     "draft": ("Draft", "badge-under-review"),
     "reviewed": ("Reviewed", "badge-approved"),
+}
+
+# Skill provenance is the safety-relevant fact about a skill, so it is
+# what the roster badges (2026-08-19). The three values are the only
+# sources data/skills.yaml admits; see that file's header for why.
+SKILL_PROVENANCE_LABELS = {
+    "builtin": ("Built in", "badge-approved"),
+    "anthropic": ("From Anthropic", "badge-reviewed"),
+    "aua": ("Written at AUA", "badge-licensed"),
 }
 
 PROMPT_RESOURCE_TYPES = {"video", "guide", "paper"}
@@ -684,6 +694,59 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
 
 # --- committee work and polls ---------------------------------------------------
 
+# --- skills -----------------------------------------------------------------
+
+
+def _render_skills(config) -> str:
+    """Render the skills roster as one scannable table, safest first.
+
+    Provenance drives the badge because it is the fact that decides
+    whether a skill is safe to use: a skill is instructions plus
+    optionally executable code, so who wrote it matters more than what
+    it claims to do. data/skills.yaml admits only three provenances by
+    policy and this hook fails loudly on any other, so a third-party
+    skill cannot reach the page by editing data alone."""
+    skills = _load(_data_dir(config) / "skills.yaml")
+    order = list(SKILL_PROVENANCE_LABELS)
+    for entry in skills:
+        if entry["provenance"] not in SKILL_PROVENANCE_LABELS:
+            raise ValueError(
+                "render_data hook: unknown skill provenance "
+                f"{entry['provenance']!r} in {entry['name']!r}; "
+                "data/skills.yaml is limited to first-party and "
+                "AUA-written skills by policy"
+            )
+        for field in ("what", "surfaces", "setup", "url"):
+            if not str(entry.get(field, "")).strip():
+                raise ValueError(
+                    f"render_data hook: skill {entry['name']!r} is "
+                    f"missing {field!r}"
+                )
+    skills = sorted(skills, key=lambda e: order.index(e["provenance"]))
+
+    lines = ["| Skill | Source | What it does | Where it works | To use it |",
+             "| --- | --- | --- | --- | --- |"]
+    counts: dict[str, int] = {}
+    for entry in skills:
+        label, css = SKILL_PROVENANCE_LABELS[entry["provenance"]]
+        counts[label] = counts.get(label, 0) + 1
+        lines.append(
+            f"| [{entry['name']}]({entry['url']}) "
+            f"| {_badge(label, css)} "
+            f"| {entry['what'].strip()} "
+            f"| {entry['surfaces'].strip()} "
+            f"| {entry['setup'].strip()} |"
+        )
+    lines.append("")
+
+    print("render_data: skills verification")
+    print(f"  entries read : {len(skills)}")
+    for label, count in counts.items():
+        print(f"  {label:<15}: {count}")
+    print(f"  rows rendered: {len(skills)} (cross-check ok)")
+    return "\n".join(lines)
+
+
 COMMITTEE_WORK_MARKER = "<!-- render:committee-work -->"
 POLLS_MARKER = "<!-- render:polls -->"
 
@@ -1145,6 +1208,13 @@ def on_page_markdown(markdown, page, config, files):
         return markdown.replace(
             PROMPTS_MARKER, _render_prompts(config, resource_groups)
         )
+    if src == "tools/skills.md":
+        if SKILLS_MARKER not in markdown:
+            raise AssertionError(
+                f"render_data hook: tools/skills.md is missing the "
+                f"{SKILLS_MARKER} marker"
+            )
+        return markdown.replace(SKILLS_MARKER, _render_skills(config))
     if src == "prompts/learning.md":
         if PROMPT_RESOURCES_MARKER not in markdown:
             raise AssertionError(
