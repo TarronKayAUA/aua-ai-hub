@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="patient-facing-tools">
@@ -34,6 +34,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.17051">Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss</a>
     <p class="news-card-summary">Large language models can recover protected health information that automated de-identification systems miss, revealing institution-specific privacy risks in secondary EHR use.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04601-5">Prospective evaluation of a large language model clinical decision support system in the emergency department</a>
+    <p class="news-card-summary">A pilot study of large language model clinical decision support in an emergency department found safe integration but decreasing adoption over four weeks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04589-y">Large-scale AI-guided liver malignancy diagnosis: multicenter study and a single-arm trial</a>
+    <p class="news-card-summary">A multicenter study of an AI system for liver cancer diagnosis using contrast-enhanced computed tomography showed potential to reduce missed or delayed diagnoses.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03140-0">TabPFN-SHAP metabolic networks reveal chronic liver disease progression and identify a hepatocellular carcinoma screening panel</a>
     <p class="news-card-summary">TabPFN-SHAP analysis of metabolic networks identifies chronic liver disease progression markers and proposes a hepatocellular carcinoma screening panel.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03150-y">Lightweight non-contrast CT-based multimodal artificial intelligence for subtype classification of hepatic cystic echinococcosis in resource-limited clinical settings</a>
-    <p class="news-card-summary">Lightweight multimodal AI system classifies hepatic cystic echinococcosis subtypes from non-contrast CT scans, designed for resource-limited settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03147-7">A virtual trial framework for generating clinical evidence in orthopedics demonstrated with humeral stem evaluation</a>
-    <p class="news-card-summary">A virtual trial framework using simulation generates clinical evidence for orthopedic device design without requiring physical trials.</p>
   </div>
 </div>
 </div>

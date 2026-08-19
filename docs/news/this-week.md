@@ -321,9 +321,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
@@ -338,6 +338,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2608.17051">Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss</a>
         <p class="news-card-summary">Large language models can recover protected health information that automated de-identification systems miss, revealing institution-specific privacy risks in secondary EHR use.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04601-5">Prospective evaluation of a large language model clinical decision support system in the emergency department</a>
+        <p class="news-card-summary">A pilot study of large language model clinical decision support in an emergency department found safe integration but decreasing adoption over four weeks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04589-y">Large-scale AI-guided liver malignancy diagnosis: multicenter study and a single-arm trial</a>
+        <p class="news-card-summary">A multicenter study of an AI system for liver cancer diagnosis using contrast-enhanced computed tomography showed potential to reduce missed or delayed diagnoses.</p>
       </div>
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
@@ -573,27 +587,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">STAT News reports on challenges in developing and deploying AI tools to clinical settings, documenting real-world implementation difficulties.</p>
       </div>
       <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AIPrognosis_Wordpress_AIcoins-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03138-8">Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction</a>
-        <p class="news-card-summary">A phenomapping-derived tool predicts individual patient response to sacubitril-valsartan in heart failure with preserved ejection fraction.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03132-0">Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit</a>
-        <p class="news-card-summary">A peer-reviewed comparison of artificial intelligence versus clinician performance in predicting patient outcomes in intensive care.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03120-4">Automated limb motor assessment in Parkinson’s disease via a time-frequency state-space model</a>
-        <p class="news-card-summary">A time-frequency state-space model automates assessment of limb motor function in Parkinson&#x27;s disease patients.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -935,7 +928,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 11 videos"
+??? abstract "Show the 10 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=OvjccOrr-iw" target="_blank" rel="noopener" title="What Is the AI Security Trilemma? Smart, Fast, or Secure AI?">
@@ -998,19 +991,19 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">Bijan Bowen, August 12, 2026</span>
       <span class="video-card-desc">Hands-on first look at NVIDIA&#x27;s Nemotron 3.5 Lightning open-weights model, covering technical specifications and coding capabilities.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=qBoQZ3Sf3h4" target="_blank" rel="noopener" title="Muse Glimmer 30B: BEST LOCAL AI Model? Meta AI Beats Qwen 3.6 27B? (Fully Tested)">
-      <img src="https://i2.ytimg.com/vi/qBoQZ3Sf3h4/hqdefault.jpg" alt="Video: Muse Glimmer 30B benchmarked against local language models" loading="lazy">
-      <span class="video-card-title">Muse Glimmer 30B benchmarked against local language models</span>
-      <span class="video-card-meta">WorldofAI, August 12, 2026</span>
-      <span class="video-card-desc">Benchmarking comparison of Muse Glimmer 30B against Qwen and other local language models with test methodology transparency.</span>
-    </a>
     </div>
 
 ## Podcasts
 
-??? abstract "Show the 1 episode"
+??? abstract "Show the 2 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://ai-podcast.nejm.org/e/dr-suchi-saria-on-building-ai-that-changes-care" target="_blank" rel="noopener">
+      <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Dr. Suchi Saria on Building AI That Changes Care" loading="lazy">
+      <span class="video-card-title">Dr. Suchi Saria on Building AI That Changes Care</span>
+      <span class="video-card-meta">NEJM AI Grand Rounds, August 19, 2026</span>
+      <span class="video-card-desc">Suchi Saria, Johns Hopkins faculty and Bayesian Health CEO, discusses building AI systems to detect early warning signals of patient deterioration buried in electronic health records.</span>
+    </a>
     <a class="video-card" href="https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn" target="_blank" rel="noopener">
       <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI Helping Students Perform, or Actually Learn?" loading="lazy">
       <span class="video-card-title">Is AI Helping Students Perform, or Actually Learn?</span>

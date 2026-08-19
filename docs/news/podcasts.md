@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://ai-podcast.nejm.org/e/dr-suchi-saria-on-building-ai-that-changes-care" target="_blank" rel="noopener">
+  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Dr. Suchi Saria on Building AI That Changes Care" loading="lazy">
+  <span class="video-card-title">Dr. Suchi Saria on Building AI That Changes Care</span>
+  <span class="video-card-meta">NEJM AI Grand Rounds, August 19, 2026</span>
+  <span class="video-card-desc">Suchi Saria, Johns Hopkins faculty and Bayesian Health CEO, discusses building AI systems to detect early warning signals of patient deterioration buried in electronic health records.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI Helping Students Perform, or Actually Learn?" loading="lazy">
   <span class="video-card-title">Is AI Helping Students Perform, or Actually Learn?</span>
