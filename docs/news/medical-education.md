@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Assessment of clinical competency is emerging as a central theme, with a scoping review mapping AI-driven methods for evaluating clinical skills and the validity questions they raise <a href="https://mededu.jmir.org/2026/1/e92826">[10]</a>. Standardized patient systems built on generative AI show measurable consistency in judging communication and professionalism, matching expert raters in pilot testing <a href="https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">[5]</a>. Automated skills platforms are moving into real-time practice, offering learners immediate feedback <a href="https://www.nature.com/articles/s41746-026-03100-8">[6]</a>. A systematic review of AI&#x27;s role in the affective domain cautions that such tools should support, not substitute for, human mentorship in empathy and professional identity formation <a href="https://pubmed.ncbi.nlm.nih.gov/42598023?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">[14]</a>. Large language models continue to post strong scores on specialty board-style examinations, raising questions about what those results predict for clinical readiness <a href="https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1">[1]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum design, including AI chatbot-building tutorials for educators and analyses of AI as an interprofessional team member. Four pieces examine assessment and feedback methods beyond the standardized-patient work, and three cover simulation and skills training, including virtual reality instruction for physical therapy students.</p>
-<p class="section-brief-date">The picture as of August 18, 2026; numbered links go to the items below.</p>
+<p>Assessment tools are moving from manual to automated across several training contexts: multiagent language models now score fidelity in motivational interviewing and cognitive behavioral therapy simulations <a href="https://mededu.jmir.org/2026/1/e92964">[2]</a>, while a new system offers real-time feedback on clinical skills practice <a href="https://www.nature.com/articles/s41746-026-03100-8">[12]</a>. Surveys of medical students and faculty continue to document uneven familiarity with AI, with a systematic review finding wide variation by setting <a href="https://mededu.jmir.org/2026/1/e89411">[1]</a> and a Kuwait University study reporting similar gaps between students and staff. Meanwhile, large language models performed strongly on Poland&#x27;s anesthesiology and intensive care specialty exam <a href="https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1">[7]</a>, reinforcing questions about how well exam success predicts clinical readiness.</p>
+<p>Also this week: six items address assessment and feedback, including AI-generated summaries of resident evaluation comments and eyelid margin sign training for dry eye diagnosis, while three pieces examine teaching and curriculum design, three explore attitudes and adoption, two cover simulation and skills training, and one benchmarks exam performance.</p>
+<p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -40,6 +40,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42610935?fc=20260609215449&amp;ff=20260818164152&amp;v=2.20.1">Attitudes towards artificial intelligence among students and faculty staff at Kuwait University&#x27;s Health Science Centre: A cross-sectional study</a>
     <p class="news-card-summary">Cross-sectional study of student and faculty perceptions of artificial intelligence across health science disciplines at a Gulf region university.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.14551">Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews</a>
+    <p class="news-card-summary">A structured uncertainty signal from a BERT classifier improves large language model efficiency in title-abstract screening for systematic reviews across eight drug-class studies.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.14737">Class Imbalance and Batch Effects in LLM-Based Screening for Systematic Reviews</a>
+    <p class="news-card-summary">Large language models show limited sensitivity to class imbalance and batch effects in systematic review screening, with prevalence metadata providing minimal improvement to predictions.</p>
   </div>
 </div>
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -111,20 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94034">The AI Colleague: Reimagining Interprofessional Collaboration and Education in Medicine</a>
     <p class="news-card-summary">Analysis of how AI as an integrated team member reshapes medical education and interprofessional practice beyond traditional tool-focused frameworks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92826">AI for Clinical Competency Assessment: Scoping Review of Methods and Applications</a>
-    <p class="news-card-summary">Scoping review of artificial intelligence methods for assessing clinical competency across health professions, examining validity and scalability of AI-driven assessment approaches.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42596566?fc=20260609215449&amp;ff=20260814094532&amp;v=2.20.1">Bridging the experiential gap in artificial intelligence-based health professions education</a>
-    <p class="news-card-summary">Peer-reviewed study on methods to close the gap between AI training and practical experience in health professions education.</p>
   </div>
 </div>
 </div>

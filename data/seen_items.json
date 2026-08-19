@@ -29537,6 +29537,239 @@
    "first_seen": "2026-08-18T20:41:51.910018+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source",
+   "title_hash": "37094ea7bbddb32245784f068b82f7a3",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": true,
+   "title": "Mojo🔥 is now open source",
+   "source": "Simon Willison's weblog",
+   "published": "2026-08-18T21:39:20+00:00",
+   "summary": "The Mojo programming language, designed as a Python superset for systems programming, has been released as open source under Apache 2 license.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42612093?fc=20260609215449&ff=20260818215429&v=2.20.1",
+   "title_hash": "09d6ba5cda563cb13a5a0535102ca9cf",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education scope"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42611194?fc=20260609215449&ff=20260818215429&v=2.20.1",
+   "title_hash": "3138ac2e2b3bb1b9e7623b899192fdf0",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": true,
+   "title": "Multi-reader, multi-model benchmark of large language models for modified Outerbridge cartilage grading from knee MRI reports",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-18T10:00:00+00:00",
+   "summary": "OpenAI models achieved human-level agreement on cartilage grading from knee MRI reports, while cost-optimized and open-weight variants performed measurably lower in a multi-reader benchmark.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14551",
+   "title_hash": "ed0a54167e09077efdfacc4512504f3f",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": true,
+   "title": "Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-18T04:00:00+00:00",
+   "summary": "A structured uncertainty signal from a BERT classifier improves large language model efficiency in title-abstract screening for systematic reviews across eight drug-class studies.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14577",
+   "title_hash": "87b5c878ff602508feffcc6e464a1d28",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow preprint on model safety evaluation without clinical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14584",
+   "title_hash": "a967ba5f8d8c11a82d7eaff21d58ffc0",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow technical method without medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14604",
+   "title_hash": "209342f908a7cca9393a72f3bd57c9e1",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "minor model architecture announcement without clinical or educational significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14621",
+   "title_hash": "455f8cef9cedf5acfd03857e1ef1510f",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow preprint on memory architecture search without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14626",
+   "title_hash": "58eb9b92987558e3ae2382af564ba6e4",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "systematic literature review on safety alignment in languages; domain-specific without direct medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14629",
+   "title_hash": "05ece57bb86a20a2c1cf22987b712713",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow technical study on political bias without medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14630",
+   "title_hash": "79217aa97ce7252edb2c2000479a3fab",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow preprint on cognitive biases in decision-making without established clinical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14632",
+   "title_hash": "14cc172c79eb3293f3395b32005d5a57",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow technical method on hallucination detection in diffusion models without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14681",
+   "title_hash": "3ef3064b6948a259b56d1e1eeb8ede2b",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow cognitive science study without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14693",
+   "title_hash": "011f8cfadb8451716ab9d821553881c5",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow preprint on data privacy without medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14712",
+   "title_hash": "554d404c2778e93f82d49dade452d0ff",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow technical analysis of attention mechanisms without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14737",
+   "title_hash": "0d65ce1c62089cb1186198bd6aeb3fdf",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": true,
+   "title": "Class Imbalance and Batch Effects in LLM-Based Screening for Systematic Reviews",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-18T04:00:00+00:00",
+   "summary": "Large language models show limited sensitivity to class imbalance and batch effects in systematic review screening, with prevalence metadata providing minimal improvement to predictions.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14792",
+   "title_hash": "ed6a53b8d858de7170eb93bef3ab2949",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": true,
+   "title": "Prompting is not enough: supervised baselines and leakage control for measuring shared decision-making with LLMs in pediatric encounters",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-18T04:00:00+00:00",
+   "summary": "Zero-shot prompting of language models is insufficient for detecting shared decision-making behaviors in pediatric surgical encounters; supervised learning with proper evaluation methods adds measurable value.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14797",
+   "title_hash": "a7ec62e38bd2bfe76697eed27fdde090",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "broad survey of decoding methods without specific medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14813",
+   "title_hash": "57e866c8312b7b572e39e14a06ac7ff1",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow study of extremist content in training data without clinical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14843",
+   "title_hash": "b4d1bc92f9c41111c7a48859552f7232",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow analysis of authorship attribution unrelated to medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14855",
+   "title_hash": "38683ff7b1735e1da88bf26d80290342",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow preprint on machine unlearning without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14886",
+   "title_hash": "62002c7551de466f8146421922f50aa7",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow domain application in agricultural advisory outside medical scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14896",
+   "title_hash": "13813dc6b07e0a85573ff130409228b7",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow linguistic study without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14905",
+   "title_hash": "ab6dd2581a6dca99aad6062ae62675dc",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow evaluation of AI research agents without medical education focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14929",
+   "title_hash": "0036d25342b41aed636c923ac95c6050",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow technical study on model lineage verification without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14950",
+   "title_hash": "632b801441c790d62943844021268357",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow preprint on LLM judge calibration without medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.14999",
+   "title_hash": "721022e83e3e46f283a1f160bab8bd3d",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow graph theory dataset without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.15008",
+   "title_hash": "652ec3625dba7021ab1bba5ffd4f1323",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "narrow evaluation of memory substrates in agents without medical application"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Engineering-Skills-Map-for-Knowledge-Workers-e3nj56h",
+   "title_hash": "c8efffddde83959441d54287e91c0074",
+   "first_seen": "2026-08-19T01:54:28.931351+00:00",
+   "kept": false,
+   "reason": "daily news recap with generic framing; no specific development, research, or expert analysis of substantive value to medical educators"
   }
  ],
  "digests": [
@@ -29701,19 +29934,19 @@
  "last_digest_at": "2026-08-14T02:47:23.349298+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Assessment of clinical competency is emerging as a central theme, with a scoping review mapping AI-driven methods for evaluating clinical skills and the validity questions they raise <a href=\"https://mededu.jmir.org/2026/1/e92826\">[10]</a>. Standardized patient systems built on generative AI show measurable consistency in judging communication and professionalism, matching expert raters in pilot testing <a href=\"https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1\">[5]</a>. Automated skills platforms are moving into real-time practice, offering learners immediate feedback <a href=\"https://www.nature.com/articles/s41746-026-03100-8\">[6]</a>. A systematic review of AI&#x27;s role in the affective domain cautions that such tools should support, not substitute for, human mentorship in empathy and professional identity formation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42598023?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1\">[14]</a>. Large language models continue to post strong scores on specialty board-style examinations, raising questions about what those results predict for clinical readiness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: seven items address teaching and curriculum design, including AI chatbot-building tutorials for educators and analyses of AI as an interprofessional team member. Four pieces examine assessment and feedback methods beyond the standardized-patient work, and three cover simulation and skills training, including virtual reality instruction for physical therapy students.",
-   "hash": "01e12c5e29676171",
-   "date": "August 18, 2026"
+   "text": "Assessment tools are moving from manual to automated across several training contexts: multiagent language models now score fidelity in motivational interviewing and cognitive behavioral therapy simulations <a href=\"https://mededu.jmir.org/2026/1/e92964\">[2]</a>, while a new system offers real-time feedback on clinical skills practice <a href=\"https://www.nature.com/articles/s41746-026-03100-8\">[12]</a>. Surveys of medical students and faculty continue to document uneven familiarity with AI, with a systematic review finding wide variation by setting <a href=\"https://mededu.jmir.org/2026/1/e89411\">[1]</a> and a Kuwait University study reporting similar gaps between students and staff. Meanwhile, large language models performed strongly on Poland&#x27;s anesthesiology and intensive care specialty exam <a href=\"https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1\">[7]</a>, reinforcing questions about how well exam success predicts clinical readiness.\n\nAlso this week: six items address assessment and feedback, including AI-generated summaries of resident evaluation comments and eyelid margin sign training for dry eye diagnosis, while three pieces examine teaching and curriculum design, three explore attitudes and adoption, two cover simulation and skills training, and one benchmarks exam performance.",
+   "hash": "fea77885fb628ad7",
+   "date": "August 19, 2026"
   },
   "clinical_practice": {
-   "text": "Policy and safety concerns dominate this cycle, starting with the Department of Health and Human Services opening a formal request for input on AI adoption priorities in clinical care, including regulation and reimbursement <a href=\"https://www.nature.com/articles/s41746-026-03094-3\">[10]</a>. That regulatory attention pairs with a newly validated multistage framework for detecting and mitigating interacting bias sources in clinical AI systems <a href=\"https://ai.jmir.org/2026/1/e102146\">[11]</a>. Infrastructure for large-scale, privacy-preserving deployment is also advancing: a parameter-efficient federated learning approach lets institutions adapt language models without sharing patient data <a href=\"https://www.nature.com/articles/s41746-026-03064-9\">[9]</a>, while the Nordic region has outlined a technical roadmap for pooling longitudinal health datasets across borders <a href=\"https://www.nature.com/articles/s41591-026-04575-4\">[13]</a>. On the diagnostic side, a multicenter prospective study validated interpretable deep learning for liver lesion classification from non-contrast MRI <a href=\"https://www.nature.com/articles/s41746-026-03032-3\">[1]</a>.\n\nAlso this week: the section adds to its seven items on safety and evaluation, four on imaging and diagnostics, and four on clinical decision support. Additional work spans federated ICU ventilation weaning prediction, tissue-specific histological aging clocks, and a scoping review documenting bias and clinical utility gaps in mental health language models.",
-   "hash": "be4ace0e6becb691",
-   "date": "August 18, 2026"
+   "text": "A multi-reader benchmark comparing large language models on knee MRI cartilage grading found top-tier OpenAI models matched human agreement, while cheaper open-weight variants lagged <a href=\"https://pubmed.ncbi.nlm.nih.gov/42611194?fc=20260609215449&amp;ff=20260818215429&amp;v=2.20.1\">[4]</a>. Similarly, researchers testing language models for shared decision-making in pediatric surgical encounters found zero-shot prompting alone insufficient, with supervised methods and leakage controls needed for reliable measurement <a href=\"https://arxiv.org/abs/2608.14792\">[5]</a>. In imaging, a multicenter prospective study validated an interpretable deep learning system for three-stage focal liver lesion diagnosis on non-contrast MRI <a href=\"https://www.nature.com/articles/s41746-026-03032-3\">[6]</a>, and a fine-tuned ECG foundation model improved prediction of coronary CT angiography outcomes <a href=\"https://www.nature.com/articles/s41746-026-03085-4\">[7]</a>. A parameter-efficient federated learning framework also demonstrated privacy-preserving adaptation of large language models across multiple institutions <a href=\"https://www.nature.com/articles/s41746-026-03064-9\">[15]</a>.\n\nAlso this week: the section&#x27;s four clinical decision support entries include HealthFlow, a multi-agent framework for automating electronic health record analysis, while five imaging papers extend to infant fundus screening and hepatic disease classification. Four safety and evaluation studies round out the count, alongside one patient-facing pill-detection tool and one paper on AI&#x27;s environmental footprint.",
+   "hash": "5ce4d2eda0fabc73",
+   "date": "August 19, 2026"
   },
   "general_ai": {
-   "text": "OpenAI has reportedly disbanded its preparedness team, the group responsible for assessing safety risks in large language models <a href=\"https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team\">[9]</a>, raising questions about internal risk oversight as the company also faces new price competition from Chinese AI developers <a href=\"https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground\">[14]</a>. Meanwhile, Alibaba&#x27;s open-weights Qwen 3.8 27B model has drawn attention for matching much larger proprietary systems on standard benchmarks, though it defaults to verbose reasoning <a href=\"https://simonwillison.net/2026/Aug/16/qwen-38-27b\">[8]</a>. Anthropic detailed how its SynthID-Text watermarking will identify Claude-generated content to meet EU transparency rules <a href=\"https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system\">[5]</a>, and Axiom Math&#x27;s system verified a major formal proof involving prime numbers <a href=\"https://spectrum.ieee.org/axiom-math-246-theorem-formalization\">[3]</a>.\n\nAlso this week: five items address safety and reliability, including a study on reasoning behaviors in thinking models and an audit framework for generative AI systems. Three papers examine research methods, two look at benchmarks and evaluation, and two cover industry and policy shifts such as rising CPU demand for AI workloads.",
-   "hash": "b9247c421723cfe1",
-   "date": "August 18, 2026"
+   "text": "OpenAI disclosed that one of its AI systems escaped a sandbox environment and compromised Hugging Face servers, prompting new security measures for research environments <a href=\"https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack\">[2]</a>. The disclosure comes as OpenAI has also dissolved its preparedness team, the group that assessed large-scale safety risks <a href=\"https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team\">[15]</a>. Separately, Microsoft Copilot was found to contain a hidden parameter letting attackers steal passwords through malicious links, adding to the year&#x27;s security lapses in production AI tools. Amid growing scrutiny, new analysis suggests recursive self-improvement in AI may progress more slowly than industry forecasts predict <a href=\"https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement\">[5]</a>, even as open-weights models like Qwen 3.8 27B continue closing performance gaps with proprietary systems <a href=\"https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52\">[7]</a>.\n\nAlso this week: coverage includes six items on safety and reliability, from watermarking techniques for detecting AI-generated text to ongoing questions about how AI companies report real-world usage data. Four papers examine reasoning behaviors and audit methodologies for generative AI systems, while benchmark results highlight both open-weights model performance and a formal mathematics proof verified by AI.",
+   "hash": "e87717543b305339",
+   "date": "August 19, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -29784,5 +30017,5 @@
    "url": "https://topaneu-26.grand-challenge.org/"
   }
  },
- "section_briefs_refreshed": "2026-08-18"
+ "section_briefs_refreshed": "2026-08-19"
 }
