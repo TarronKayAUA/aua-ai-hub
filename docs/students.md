@@ -82,6 +82,12 @@ Clinical rotations change the rules, because you are now inside a hospital's pri
 - **Practicing differentials against an AI is legitimate and effective**, with one discipline: a real encounter gets stripped to a teaching abstraction first, meaning an age band, a presentation pattern, and nothing identifiable.
 - Your clinical site has its own rules, and they may be stricter than ours. Follow the stricter one, and ask before using anything on site.
 
+## The application year
+
+The [residency application playbook](playbooks/residency-application.md) covers what the AAMC and ECFMG actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and the privacy trap hiding inside patient stories in personal statements.
+
+For anything about strategy, meaning which programs, how many, how to signal, and how your own record should be presented, your Education Enhancement Department (EED) clinical advisor is the person to see. The playbook is about the tools, not the plan.
+
 ## Staying current
 
 [This Week](news/this-week.md) rolls up the last seven days of curated news, videos, and podcasts, refreshed through the day. The [Videos page](news/videos.md) has a Medical AI section with seminar recordings and explainers, and a weekly digest of highlights lands every Friday in the [archive](news/archive/index.md).
