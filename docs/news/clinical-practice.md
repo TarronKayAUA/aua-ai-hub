@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/08/20/health-systems-embrace-ai-chatbots-query-patient-records-ehr">STAT+: How health systems are embracing chatbots to query and summarize patient records</a>
+    <p class="news-card-summary">Large health systems are deploying AI chatbots to query and summarize patient records, reporting time savings and claims of improved diagnostic accuracy.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_491335537-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03148-6">Conditional generative modeling of postoperative radiographs in adolescent idiopathic scoliosis</a>
     <p class="news-card-summary">Conditional generative model developed to synthesize postoperative radiographs in adolescent idiopathic scoliosis treatment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92528">Objective Assessment of Medication Adherence Through Automated Pill Detection Using a Computer Vision Framework: Development and Evaluation Study</a>
-    <p class="news-card-summary">Development and evaluation of a computer vision system to assess medication adherence by automated detection of pill-taking behavior from video.</p>
   </div>
 </div>
 </div>

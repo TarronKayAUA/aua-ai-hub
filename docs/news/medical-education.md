@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">ICE Blog</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://icenet.blog/2026/08/20/code-switching-in-simulation-the-hidden-work-of-sounding-right">Code-switching in simulation: the hidden work of ‘sounding right’</a>
+    <p class="news-card-summary">Simulation educators should account for cognitive load from language and accent switching when designing clinical scenarios for learners.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 19, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">Artificial Intelligence-Augmented Standardized Patient Models for AETCOM (Attitude, Ethics, and Communication) Competency Evaluation: A Pilot Study</a>
     <p class="news-card-summary">AI virtual patients demonstrated reproducibility and consistency in assessing communication skills, providing immediate feedback and scalable standardized evaluation alongside expert assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 15, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03100-8">CliniSense AI for automated clinical skills assessment with real-time feedback</a>
-    <p class="news-card-summary">CliniSense AI provides automated assessment of clinical skills with real-time feedback to learners during practice.</p>
   </div>
 </div>
 </div>

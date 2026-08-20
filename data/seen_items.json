@@ -30445,6 +30445,61 @@
    "first_seen": "2026-08-20T04:54:49.378298+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/20/health-systems-embrace-ai-chatbots-query-patient-records-ehr",
+   "title_hash": "f86e839d1544b34b7dc64dae11483ec6",
+   "first_seen": "2026-08-20T08:57:37.017458+00:00",
+   "kept": true,
+   "title": "STAT+: How health systems are embracing chatbots to query and summarize patient records",
+   "source": "STAT News AI",
+   "published": "2026-08-20T08:30:00+00:00",
+   "summary": "Large health systems are deploying AI chatbots to query and summarize patient records, reporting time savings and claims of improved diagnostic accuracy.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_491335537-645x645.jpeg",
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://icenet.blog/2026/08/20/code-switching-in-simulation-the-hidden-work-of-sounding-right",
+   "title_hash": "86391eb1819e6b8c4071d7aa6ea1ecff",
+   "first_seen": "2026-08-20T08:57:37.017458+00:00",
+   "kept": true,
+   "title": "Code-switching in simulation: the hidden work of ‘sounding right’",
+   "source": "ICE Blog",
+   "published": "2026-08-20T06:00:00+00:00",
+   "summary": "Simulation educators should account for cognitive load from language and accent switching when designing clinical scenarios for learners.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/faculty/teaching/2026/08/20/ai-requirements-and-courses-colleges-eye-ai-fluency",
+   "title_hash": "c5f673398d1100d6c854b878f16d77be",
+   "first_seen": "2026-08-20T08:57:37.017458+00:00",
+   "kept": false,
+   "reason": "vendor marketing and listicle"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/learning-innovation/2026/08/20/i-am-not-robot-and-our-ai-conversation",
+   "title_hash": "d84ecdacc66516b4a447f7f78115d7d3",
+   "first_seen": "2026-08-20T08:57:37.017458+00:00",
+   "kept": false,
+   "reason": "book review without instructive analysis for this audience"
+  },
+  {
+   "url": "https://www.insidehighered.com/podcasts/key-podcast/2026/08/19/ep-209-mcmahons-call-action-student-visa-limits-harvards-big-win",
+   "title_hash": "65a4cdebcc2aef3de0834b5970e8e313",
+   "first_seen": "2026-08-20T08:57:37.017458+00:00",
+   "kept": false,
+   "reason": "general policy news without AI-specific substance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Q6ZDUl2FhTU",
+   "title_hash": "0e7170e64d58afea39ff94d46f4fb78d",
+   "first_seen": "2026-08-20T08:57:37.017458+00:00",
+   "kept": false,
+   "reason": "speculation and rumor content without confirmed developments; the 'leak' framing indicates unverified claims rather than announced releases"
   }
  ],
  "digests": [
