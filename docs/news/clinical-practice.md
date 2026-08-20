@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -62,6 +62,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03114-2">Exploring a dynamic digital biomarker of illness severity in older ICU patients via interpretable time-series deep learning modeling</a>
     <p class="news-card-summary">Researchers developed an interpretable deep learning model to detect dynamic digital biomarkers of illness severity in older intensive care unit patients using time-series data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03054-x">A scoping review on the mental health harms of LLM-based chatbots</a>
+    <p class="news-card-summary">A scoping review of mental health risks and harms associated with large language model based chatbots.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04601-5">Prospective evaluation of a large language model clinical decision support system in the emergency department</a>
     <p class="news-card-summary">A pilot study of large language model clinical decision support in an emergency department found safe integration but decreasing adoption over four weeks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04589-y">Large-scale AI-guided liver malignancy diagnosis: multicenter study and a single-arm trial</a>
-    <p class="news-card-summary">A multicenter study of an AI system for liver cancer diagnosis using contrast-enhanced computed tomography showed potential to reduce missed or delayed diagnoses.</p>
   </div>
 </div>
 </div>

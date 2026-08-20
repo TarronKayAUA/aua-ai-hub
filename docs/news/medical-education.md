@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92700">Beyond Pattern Recognition: Call for Functionally Aware AI for Anatomical Illustration</a>
+    <p class="news-card-summary">A critical analysis of generative AI&#x27;s current limitations in anatomical illustration, identifying persistent accuracy and hallucination problems that prevent replacement of human medical illustrators.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91050">Digital Standardized Patients: Conceptual Framework for Generative AI, Empowered Medical Education</a>
+    <p class="news-card-summary">A conceptual framework for AI-driven digital standardized patients to teach clinical communication, emotional sensitivity, and ethical judgment in medical education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
@@ -112,19 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Analysis of thousands of NSF and NIH grant applications reveals patterns in how researchers use generative AI and raises questions about effects on scientific quality.</p>
   </div>
   <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robot_AI_sifting_documents_papers%20copy.jpg?itok=tNomQNI_" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1">Comparative Performance of Large Language Models in the Polish State Specialization Examination in Anesthesiology and Intensive Care Medicine</a>
-    <p class="news-card-summary">Large language models achieved high accuracy on Polish specialty-level anesthesiology and intensive care medicine examinations, suggesting potential for examination preparation while requiring caution against inferring clinical readiness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.13708">TeachMateGPT: A Multi-Agent Knowledge-Grounded Framework for Pedagogical Assessment Generation from Science Curriculum Materials</a>
-    <p class="news-card-summary">Multi-agent system generates curriculum-grounded assessment items for science education, addressing gaps in retrieval-augmented generation for low-resource and board-exam-structured settings.</p>
-  </div>
 </div>
 </div>

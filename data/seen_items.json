@@ -30588,6 +30588,87 @@
    "category": "medical_education",
    "score": 4.0,
    "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e92700",
+   "title_hash": "39dc17f9a4c05ee05f148dc258e6c584",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": true,
+   "title": "Beyond Pattern Recognition: Call for Functionally Aware AI for Anatomical Illustration",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-20T20:15:11+00:00",
+   "summary": "A critical analysis of generative AI's current limitations in anatomical illustration, identifying persistent accuracy and hallucination problems that prevent replacement of human medical illustrators.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e91050",
+   "title_hash": "c41396e7e00f8005809c560cd909c163",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": true,
+   "title": "Digital Standardized Patients: Conceptual Framework for Generative AI, Empowered Medical Education",
+   "source": "JMIR Medical Education",
+   "published": "2026-08-20T18:00:21+00:00",
+   "summary": "A conceptual framework for AI-driven digital standardized patients to teach clinical communication, emotional sensitivity, and ethical judgment in medical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+   "title_hash": "ec31dda0f324c6d8510ac3c143133b04",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": false,
+   "reason": "minor release notes without substantive technical contribution or benchmark comparison"
+  },
+  {
+   "url": "https://github.com/zachahn/vomit",
+   "title_hash": "e1eed7786ea717f12e8aa5086b2f491c",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": false,
+   "reason": "community forum discussion of a minor utility tool, not a significant development"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vth1c3/i_just_built_a_mini_kimik3_from_scratch_under_250",
+   "title_hash": "03b63e57d127297c3dcfd536770e422b",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": false,
+   "reason": "hobby project post lacking verified results or methodological substance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03054-x",
+   "title_hash": "f9bbbf7a931e70379facbfad19e201f0",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": true,
+   "title": "A scoping review on the mental health harms of LLM-based chatbots",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-20T00:00:00+00:00",
+   "summary": "A scoping review of mental health risks and harms associated with large language model based chatbots.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04612-2",
+   "title_hash": "da4afd808324ce4c9119569d0c6a9a41",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; measles epidemiology has no AI component"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00041-3",
+   "title_hash": "e1a97d066bed59708652743c1eb8fa59",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; pancreatic cancer vaccine development has no AI component"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5CSXUsljJ_E",
+   "title_hash": "39bb019364a8c4318c5aeeab3ed821b3",
+   "first_seen": "2026-08-20T20:48:28.849331+00:00",
+   "kept": false,
+   "reason": "marketing and product demonstration without substantive educational content or significant development news"
   }
  ],
  "digests": [
