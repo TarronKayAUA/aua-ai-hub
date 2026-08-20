@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
@@ -262,13 +262,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Mixed methods study evaluates integration of generative AI with clinical reasoning frameworks to develop student competencies in prompt design, output verification, and limitation recognition.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42587642?fc=20260609215449&amp;ff=20260813053422&amp;v=2.20.1">Autopsy Pathology&#x27;s Paradigm Shift: Artificial Intelligence and Emerging Technologies in the Era of Digitally Integrated Death Investigation</a>
-        <p class="news-card-summary">Review examines how artificial intelligence and digital technologies are reshaping autopsy pathology, addressing workforce shortages and supporting diagnostic quality and medical education.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 13, 2026</span></div>
@@ -324,6 +317,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03095-2">Evaluating transportability failures of electronic health record-based risk models for treatment-resistant depression</a>
         <p class="news-card-summary">Study examines why electronic health record-based risk models for treatment-resistant depression fail to transport across different clinical settings.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03114-2">Exploring a dynamic digital biomarker of illness severity in older ICU patients via interpretable time-series deep learning modeling</a>
+        <p class="news-card-summary">Researchers developed an interpretable deep learning model to detect dynamic digital biomarkers of illness severity in older intensive care unit patients using time-series data.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-documentation">
@@ -578,14 +578,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42595478?fc=20260609215449&amp;ff=20260814014806&amp;v=2.20.1">Artificial Intelligence for Diagnosing Images of Common Skin Disorders</a>
         <p class="news-card-summary">An AI tool for dermatologic image analysis performs well on common skin disorders and may assist providers in resource-limited settings.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices">STAT+: What Medicare incentives for AI-based devices mean for tech companies, and hospitals</a>
-        <p class="news-card-summary">Analysis of how Medicare reimbursement incentives for newly-authorized AI-based medical devices may drive overuse in hospitals.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/ntap-4-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -962,7 +954,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 9 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=OvjccOrr-iw" target="_blank" rel="noopener" title="What Is the AI Security Trilemma? Smart, Fast, or Secure AI?">
@@ -1012,12 +1004,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Iterative model improvement and benchmark performance analysis</span>
       <span class="video-card-meta">Two Minute Papers, August 14, 2026</span>
       <span class="video-card-desc">Overview of a research paper showing iterative improvement and scaling in model performance on a benchmark task.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=Mu5a8ErscIE" target="_blank" rel="noopener" title="DeepSeek V4 Pro Is HERE, Is THIS the BEST Open Model Yet?">
-      <img src="https://i2.ytimg.com/vi/Mu5a8ErscIE/hqdefault.jpg" alt="Video: DeepSeek V4 Pro testing and technical analysis" loading="lazy">
-      <span class="video-card-title">DeepSeek V4 Pro testing and technical analysis</span>
-      <span class="video-card-meta">Bijan Bowen, August 13, 2026</span>
-      <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4 Pro against benchmark tasks to assess its capabilities as an open-weights model.</span>
     </a>
     </div>
 

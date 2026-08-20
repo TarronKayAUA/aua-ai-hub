@@ -30500,6 +30500,47 @@
    "first_seen": "2026-08-20T08:57:37.017458+00:00",
    "kept": false,
    "reason": "speculation and rumor content without confirmed developments; the 'leak' framing indicates unverified claims rather than announced releases"
+  },
+  {
+   "url": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+   "title_hash": "3be544049d97c6640cce000474a6c889",
+   "first_seen": "2026-08-20T13:12:30.816834+00:00",
+   "kept": false,
+   "reason": "vendor marketing of Slack's own product features"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/the-death-of-expertise",
+   "title_hash": "ea1bff82f2edf1edefb52792b21c4810",
+   "first_seen": "2026-08-20T13:12:30.816834+00:00",
+   "kept": false,
+   "reason": "opinion essay without new information or instructive analysis on AI in medical practice"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vt78xd/qwen3827b_has_the_highest_level_of_agency_ive",
+   "title_hash": "f07e20de2f0cadf029c31ef9f5dfeba7",
+   "first_seen": "2026-08-20T13:12:30.816834+00:00",
+   "kept": false,
+   "reason": "forum post about model capabilities without peer review or substantive analysis; minor personal observation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03114-2",
+   "title_hash": "22309e9786bb782ce16079834f17fa58",
+   "first_seen": "2026-08-20T13:12:30.816834+00:00",
+   "kept": true,
+   "title": "Exploring a dynamic digital biomarker of illness severity in older ICU patients via interpretable time-series deep learning modeling",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-20T00:00:00+00:00",
+   "summary": "Researchers developed an interpretable deep learning model to detect dynamic digital biomarkers of illness severity in older intensive care unit patients using time-series data.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=i1ZmNUbRGD4",
+   "title_hash": "5bc0d7d2816351406c2234a4b3a539b3",
+   "first_seen": "2026-08-20T13:12:30.816834+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

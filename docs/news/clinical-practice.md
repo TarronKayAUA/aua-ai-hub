@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-documentation">
@@ -34,6 +34,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03095-2">Evaluating transportability failures of electronic health record-based risk models for treatment-resistant depression</a>
     <p class="news-card-summary">Study examines why electronic health record-based risk models for treatment-resistant depression fail to transport across different clinical settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03114-2">Exploring a dynamic digital biomarker of illness severity in older ICU patients via interpretable time-series deep learning modeling</a>
+    <p class="news-card-summary">Researchers developed an interpretable deep learning model to detect dynamic digital biomarkers of illness severity in older intensive care unit patients using time-series data.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03117-z">Mapping patient-perceived physician traits from nationwide online reviews with LLMs</a>
     <p class="news-card-summary">Large language models used to extract patient-perceived physician traits from nationwide online reviews to assess communication and professionalism.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03148-6">Conditional generative modeling of postoperative radiographs in adolescent idiopathic scoliosis</a>
-    <p class="news-card-summary">Conditional generative model developed to synthesize postoperative radiographs in adolescent idiopathic scoliosis treatment.</p>
   </div>
 </div>
 </div>
