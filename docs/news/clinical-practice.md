@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A multi-reader benchmark comparing large language models on knee MRI cartilage grading found top-tier OpenAI models matched human agreement, while cheaper open-weight variants lagged <a href="https://pubmed.ncbi.nlm.nih.gov/42611194?fc=20260609215449&amp;ff=20260818215429&amp;v=2.20.1">[4]</a>. Similarly, researchers testing language models for shared decision-making in pediatric surgical encounters found zero-shot prompting alone insufficient, with supervised methods and leakage controls needed for reliable measurement <a href="https://arxiv.org/abs/2608.14792">[5]</a>. In imaging, a multicenter prospective study validated an interpretable deep learning system for three-stage focal liver lesion diagnosis on non-contrast MRI <a href="https://www.nature.com/articles/s41746-026-03032-3">[6]</a>, and a fine-tuned ECG foundation model improved prediction of coronary CT angiography outcomes <a href="https://www.nature.com/articles/s41746-026-03085-4">[7]</a>. A parameter-efficient federated learning framework also demonstrated privacy-preserving adaptation of large language models across multiple institutions <a href="https://www.nature.com/articles/s41746-026-03064-9">[15]</a>.</p>
-<p>Also this week: the section&#x27;s four clinical decision support entries include HealthFlow, a multi-agent framework for automating electronic health record analysis, while five imaging papers extend to infant fundus screening and hepatic disease classification. Four safety and evaluation studies round out the count, alongside one patient-facing pill-detection tool and one paper on AI&#x27;s environmental footprint.</p>
-<p class="section-brief-date">The picture as of August 19, 2026; numbered links go to the items below.</p>
+<p>A multicenter study in Nature Medicine found that an AI system for diagnosing liver malignancy from contrast-enhanced CT could reduce missed or delayed diagnoses <a href="https://www.nature.com/articles/s41591-026-04589-y">[10]</a>. Emergency clinicians received similar scrutiny as a pilot of a large language model clinical decision support tool in the ED showed safe integration but declining use over four weeks <a href="https://www.nature.com/articles/s41591-026-04601-5">[9]</a>. Concerns about safety extended beyond diagnostic accuracy: researchers demonstrated that institution-specific prompting can recover protected health information that de-identification systems and their gold standards both miss <a href="https://arxiv.org/abs/2608.17051">[8]</a>, while a pediatrician&#x27;s opinion piece in STAT News argued that some chatbot designs exploit children&#x27;s developmental vulnerabilities without legal recourse <a href="https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health">[7]</a>.</p>
+<p>Also this week: four papers on imaging and diagnostics, three on safety and evaluation, three on clinical decision support, three on patient-facing tools, and two on clinical documentation round out the section, including external validation of a funduscopic carotid atherosclerosis score and structured data extraction from brain MRI reports using an open-weight language model.</p>
+<p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03095-2">Evaluating transportability failures of electronic health record-based risk models for treatment-resistant depression</a>
+    <p class="news-card-summary">Study examines why electronic health record-based risk models for treatment-resistant depression fail to transport across different clinical settings.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 19, 2026</span></div>
@@ -47,6 +54,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42613470?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">Automatic extraction of structured information from brain MRI reports using an open-weight large language model</a>
     <p class="news-card-summary">Open-weight LLaMA 3.1 effectively extracts structured clinical data from neuroradiology reports, with few-shot prompting improving performance on numerical variables.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42616129?fc=20260609215449&amp;ff=20260819215246&amp;v=2.20.1">External validation of a machine learning-based web application for personalized testing of objective functioning using the five-repetition sit-to-stand test</a>
+    <p class="news-card-summary">External validation of a machine learning model for personalized physical function assessment revealed limited generalization and systematic underestimation of slower test times.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -94,37 +108,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92528">Objective Assessment of Medication Adherence Through Automated Pill Detection Using a Computer Vision Framework: Development and Evaluation Study</a>
-    <p class="news-card-summary">Development and evaluation of a computer vision system to assess medication adherence by automated detection of pill-taking behavior from video.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e90770">Quantifying and Disclosing the Environmental Footprint of AI in Research: Life Cycle, Informed Framework and Open-Access Calculator Development Study</a>
-    <p class="news-card-summary">Framework and open-access tool for standardized measurement and reporting of energy consumption, greenhouse gas emissions, and environmental impact of artificial intelligence research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88056">Evaluating Telemedical Supervision for Critical Anesthesia Scenarios: Randomized Controlled Simulation Study</a>
-    <p class="news-card-summary">Randomized controlled simulation study evaluating a telemedical supervision system for critical anesthesia scenarios in operating room environments.</p>
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03117-z">Mapping patient-perceived physician traits from nationwide online reviews with LLMs</a>
+    <p class="news-card-summary">Large language models used to extract patient-perceived physician traits from nationwide online reviews to assess communication and professionalism.</p>
   </div>
 </div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42611194?fc=20260609215449&amp;ff=20260818215429&amp;v=2.20.1">Multi-reader, multi-model benchmark of large language models for modified Outerbridge cartilage grading from knee MRI reports</a>
-    <p class="news-card-summary">OpenAI models achieved human-level agreement on cartilage grading from knee MRI reports, while cost-optimized and open-weight variants performed measurably lower in a multi-reader benchmark.</p>
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03148-6">Conditional generative modeling of postoperative radiographs in adolescent idiopathic scoliosis</a>
+    <p class="news-card-summary">Conditional generative model developed to synthesize postoperative radiographs in adolescent idiopathic scoliosis treatment.</p>
   </div>
 </div>
-<div class="news-card" data-topic="clinical-decision-support">
+<div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.14792">Prompting is not enough: supervised baselines and leakage control for measuring shared decision-making with LLMs in pediatric encounters</a>
-    <p class="news-card-summary">Zero-shot prompting of language models is insufficient for detecting shared decision-making behaviors in pediatric surgical encounters; supervised learning with proper evaluation methods adds measurable value.</p>
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 18, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92528">Objective Assessment of Medication Adherence Through Automated Pill Detection Using a Computer Vision Framework: Development and Evaluation Study</a>
+    <p class="news-card-summary">Development and evaluation of a computer vision system to assess medication adherence by automated detection of pill-taking behavior from video.</p>
   </div>
 </div>
 </div>
