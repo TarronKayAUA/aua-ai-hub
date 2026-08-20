@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Same child, different risk: demographic bias in childhood obesity attribution by large language models</a>
+    <p class="news-card-summary">Study found systematic demographic bias in large language models when attributing pediatric obesity risk, highlighting need for pre- and post-deployment bias auditing before clinical use.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620648?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Transforming Systematic Reviews: Evaluating a Fine-Tuned Large Language Model for Abstract Screening in Uveitis and Retinal Vasculitis: Fine-Tuned LLM for Review Screening</a>
+    <p class="news-card-summary">Fine-tuned large language model demonstrated expert-level performance for abstract screening in uveitis and retinal vasculitis systematic reviews, outperforming general-purpose models.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620587?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Large language models in emergency medicine education: opportunities, challenges, and implementation pathways</a>
+    <p class="news-card-summary">Review of evidence for large language models in emergency medicine education, discussing opportunities, challenges, and implementation pathways for phased adoption.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">ICE Blog</span><span class="news-card-date">August 20, 2026</span></div>
@@ -104,27 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 17, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.13708">TeachMateGPT: A Multi-Agent Knowledge-Grounded Framework for Pedagogical Assessment Generation from Science Curriculum Materials</a>
     <p class="news-card-summary">Multi-agent system generates curriculum-grounded assessment items for science education, addressing gaps in retrieval-augmented generation for low-resource and board-exam-structured settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42602997?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">Leveraging Large Language Models to Summarize Data and Free-Text Comments From Resident Assessments</a>
-    <p class="news-card-summary">Large language models with optimized prompts labeled resident assessment comments with substantially higher accuracy for identifying strengths than areas for improvement.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42602288?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">Application of a deep learning-based system for eyelid margin signs identification training and testing in dry eye disease education</a>
-    <p class="news-card-summary">A deep learning system trained on eyelid margin signs improved student accuracy in identifying abnormal findings in dry eye disease, particularly meibomian gland orifice plugging.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42602116?fc=20260609215449&amp;ff=20260815164040&amp;v=2.20.1">Artificial Intelligence-Augmented Standardized Patient Models for AETCOM (Attitude, Ethics, and Communication) Competency Evaluation: A Pilot Study</a>
-    <p class="news-card-summary">AI virtual patients demonstrated reproducibility and consistency in assessing communication skills, providing immediate feedback and scalable standardized evaluation alongside expert assessment.</p>
   </div>
 </div>
 </div>

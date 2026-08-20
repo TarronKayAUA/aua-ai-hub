@@ -113,10 +113,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">Practical AI, June 25, 2026</span>
   <span class="video-card-desc">Discussion of how to build trust in AI agents, with Emil Lassen from the Artificial Intelligence Upstart Committee.</span>
 </a>
-<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Local-AI-Matters-and-How-to-Use-It-e3l344o" target="_blank" rel="noopener">
-  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why Local AI Matters and How to Use It" loading="lazy">
-  <span class="video-card-title">Why Local AI Matters and How to Use It</span>
-  <span class="video-card-meta">The AI Daily Brief, June 21, 2026</span>
-  <span class="video-card-desc">Practical overview of local AI systems, their advantages over cloud-based models, and deployment considerations for institutions and individuals.</span>
-</a>
 </div>

@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis">Welcome to the AI crisis in math</a>
+    <p class="news-card-summary">Report on impact of artificial intelligence on mathematics and the field&#x27;s response to OpenAI&#x27;s solutions to longstanding mathematical problems.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/DCD_082026_Site.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
@@ -121,13 +129,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Microsoft Copilot contained a secret parameter that allowed attackers to steal passwords through malicious links.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai">We still don’t know how people are really using AI</a>
-    <p class="news-card-summary">AI companies publish only selected usage data about their products, limiting independent verification of real-world adoption patterns and safety impacts.</p>
-  </div>
-  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/arm-around2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

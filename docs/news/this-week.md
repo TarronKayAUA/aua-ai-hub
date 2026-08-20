@@ -18,10 +18,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Same child, different risk: demographic bias in childhood obesity attribution by large language models</a>
+        <p class="news-card-summary">Study found systematic demographic bias in large language models when attributing pediatric obesity risk, highlighting need for pre- and post-deployment bias auditing before clinical use.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620648?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Transforming Systematic Reviews: Evaluating a Fine-Tuned Large Language Model for Abstract Screening in Uveitis and Retinal Vasculitis: Fine-Tuned LLM for Review Screening</a>
+        <p class="news-card-summary">Fine-tuned large language model demonstrated expert-level performance for abstract screening in uveitis and retinal vasculitis systematic reviews, outperforming general-purpose models.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620587?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Large language models in emergency medicine education: opportunities, challenges, and implementation pathways</a>
+        <p class="news-card-summary">Review of evidence for large language models in emergency medicine education, discussing opportunities, challenges, and implementation pathways for phased adoption.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">ICE Blog</span><span class="news-card-date">August 20, 2026</span></div>
@@ -302,8 +323,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95081">Augmenting Head and Neck Multidisciplinary Tumor Board Recommendations With Locally Run Large Language Models: Prospective Evaluation of Real-World Implementation</a>
+        <p class="news-card-summary">First prospective feasibility study of locally run large language models integrated into real-world head and neck multidisciplinary tumor board meetings.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93239">Large Language Models for Oncology Guideline Maintenance: Prospective Case Study</a>
+        <p class="news-card-summary">Prospective case study evaluating large language models for maintaining oncology clinical practice guidelines by integrating rapid growth in trial data and therapeutic complexity.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93522">Discordance Between Textual Reasoning and Visual Interpretation in Large Language Models for Low Back Pain: Cross-Sectional Quantitative Evaluation and Exploratory Multimodal Stress Test</a>
+        <p class="news-card-summary">Study evaluates safety risks when multimodal large language models show discordance between visual interpretation and textual reasoning in low back pain management.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 20, 2026</span></div>
@@ -579,28 +621,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">An AI tool for dermatologic image analysis performs well on common skin disorders and may assist providers in resource-limited settings.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03134-y">Beyond expertise: exploring behavioral personas in AI-assisted rare renal cancer diagnosis</a>
-        <p class="news-card-summary">Study examines how clinician behavior and expertise interact with AI assistance in diagnosis of rare renal cancers.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04595-0">How to build an AI-driven digital organism</a>
-        <p class="news-card-summary">Perspective on designing integrated multiscale foundation models as AI-driven systems to advance biological and medical research.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/d41591-026-00040-4">AI decision support is scaling-up fast, can the evidence keep up?</a>
-        <p class="news-card-summary">Clinical AI decision support tools are deploying rapidly while evidence generation and evaluation frameworks struggle to keep pace.</p>
-      </div>
-      <img class="news-card-thumb" src="https://media.nature.com/lw1200/magazine-assets/d41591-026-00040-4/d41591-026-00040-4_50850336.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
@@ -641,8 +661,16 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis">Welcome to the AI crisis in math</a>
+        <p class="news-card-summary">Report on impact of artificial intelligence on mathematics and the field&#x27;s response to OpenAI&#x27;s solutions to longstanding mathematical problems.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/DCD_082026_Site.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
@@ -939,14 +967,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A Hugging Face analysis of 2,200 papers from ICML documents reproducibility findings and lessons from major machine learning research.</p>
       </div>
       <img class="news-card-thumb" src="https://huggingface.co/blog/assets/icml-2026-open-reproductions/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vlyzi6/anthropic_openai_google_meta_microsoft_and">Anthropic, OpenAI, Google, Meta, Microsoft, and Mistral all signed the EU Code of Practice on Transparency of AI-Generated Content</a>
-        <p class="news-card-summary">Major AI companies committed to EU transparency requirements including watermarking of AI-generated and AI-edited content.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/f9jt8fh79uih1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=94a2ca64f968166390bf8c39f36b4fe852739a18" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95081">Augmenting Head and Neck Multidisciplinary Tumor Board Recommendations With Locally Run Large Language Models: Prospective Evaluation of Real-World Implementation</a>
+    <p class="news-card-summary">First prospective feasibility study of locally run large language models integrated into real-world head and neck multidisciplinary tumor board meetings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93239">Large Language Models for Oncology Guideline Maintenance: Prospective Case Study</a>
+    <p class="news-card-summary">Prospective case study evaluating large language models for maintaining oncology clinical practice guidelines by integrating rapid growth in trial data and therapeutic complexity.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93522">Discordance Between Textual Reasoning and Visual Interpretation in Large Language Models for Low Back Pain: Cross-Sectional Quantitative Evaluation and Exploratory Multimodal Stress Test</a>
+    <p class="news-card-summary">Study evaluates safety risks when multimodal large language models show discordance between visual interpretation and textual reasoning in low back pain management.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 20, 2026</span></div>
@@ -105,27 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04589-y">Large-scale AI-guided liver malignancy diagnosis: multicenter study and a single-arm trial</a>
     <p class="news-card-summary">A multicenter study of an AI system for liver cancer diagnosis using contrast-enhanced computed tomography showed potential to reduce missed or delayed diagnoses.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03075-6">PhysSFI-Net: physics-informed geometric learning of skeletal and facial interactions for orthognathic surgical outcome prediction</a>
-    <p class="news-card-summary">Physics-informed machine learning model to predict surgical outcomes for orthognathic procedures using skeletal and facial geometry.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03151-x">Full end-to-end diagnostic workflow automation of 3D OCT via foundation model-driven AI for retinal diseases</a>
-    <p class="news-card-summary">Foundation model-driven AI automates end-to-end diagnostic workflow for retinal diseases from three-dimensional optical coherence tomography scans.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03117-z">Mapping patient-perceived physician traits from nationwide online reviews with LLMs</a>
-    <p class="news-card-summary">Large language models used to extract patient-perceived physician traits from nationwide online reviews to assess communication and professionalism.</p>
   </div>
 </div>
 </div>
