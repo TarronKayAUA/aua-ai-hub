@@ -18,9 +18,58 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.18083">Entity tracking emerges in sub-billion parameter language models and exceeds human performance in naturalistic narratives</a>
+    <p class="news-card-summary">Language models under one billion parameters track entities across narratives and exceed human-level performance on naturalistic text understanding tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.18089">Latent Space Refusal Anchoring for Low-Resource African Languages: Mechanistic Safety Recovery Without Retraining</a>
+    <p class="news-card-summary">Researchers recover refusal mechanisms in instruction-tuned models for low-resource languages by manipulating latent space without retraining.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.18091">Self- and Other-Labels Induce Bidirectional Bias in LLM Judges</a>
+    <p class="news-card-summary">Language models used as judges exhibit systematic bias favoring their own outputs, raising concerns about evaluation reliability in LLM assessment systems.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.18093">Abliteration Mitigation via Refusal Aliases</a>
+    <p class="news-card-summary">Research identifies alternative refusal mechanisms in language models that persist when primary safety defenses are removed through abliteration attacks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.18108">Same Facts, Different Updates: Inference Setup Shapes LLM Behavior in Medical Allocation</a>
+    <p class="news-card-summary">Language models show unexpected behavioral changes in medical allocation decisions based on accumulated context during deployment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.18114">Accurate Decoding of Natural Sentences from Non-Invasive Brain Recordings</a>
+    <p class="news-card-summary">Brain2Qwerty v2 decodes natural sentence production from non-invasive brain recordings, advancing brain-computer interface technology for communication restoration.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.18115">Temporal Multi-Signal Fusion for Token-Level Hallucination Detection</a>
+    <p class="news-card-summary">A sequence labeling approach detects token-level hallucinations by fusing multiple signals over time rather than scoring tokens independently.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
@@ -80,59 +129,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">AI companies publish only selected usage data about their products, limiting independent verification of real-world adoption patterns and safety impacts.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/arm-around2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement">AI’s recursive self-improvement might not come so quickly after all</a>
-    <p class="news-card-summary">Analysis suggests recursive self-improvement in AI may develop more slowly than industry forecasts predict, despite current capabilities in code and data generation.</p>
-  </div>
-  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/research-target2a.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/multi-vector-encoder">Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers</a>
-    <p class="news-card-summary">Sentence Transformers now supports multi-vector late interaction embedding models for improved semantic search and retrieval tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/multi-vector-encoder/st-hf-lighton-thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52">Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index</a>
-    <p class="news-card-summary">Open-weights Qwen 3.8 27B model achieves performance comparable to much larger proprietary models on standardized AI benchmarks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://jack-clark.net/2026/08/17/import-ai-469-science-ai-rsi-simulator-and-zucks-technological-pessimism">Import AI 469: Science AI; RSI simulator; and Zuck’s technological pessimism</a>
-    <p class="news-card-summary">Import AI newsletter covers DiG-bench results showing Fable model capabilities, AI system analysis, and scientific AI applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/axiom-math-246-theorem-formalization">AI Used to Verify Toughest Mathematics Proof Yet</a>
-    <p class="news-card-summary">Axiom Math&#x27;s AI system automatically verified a significant formal mathematics proof relating to prime numbers, demonstrating progress in automated mathematical verification.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/abstract-illustration-of-several-long-arrows-stacked-horizontally-parallel-to-one-another-each-arrow-has-one-plotted-point-in-a.jpg?id=67608532&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://blog.roboflow.com/openai-gpt-5-6">GPT 5.6 Sol is the best &quot;vision&quot; model OpenAI ever released</a>
-    <p class="news-card-summary">OpenAI released GPT 5.6 Sol, a vision model with significant improvements in visual understanding capabilities.</p>
-  </div>
-  <img class="news-card-thumb" src="https://storage.ghost.io/c/2c/8d/2c8d8c0d-1c15-4b6d-825e-02b78d61d40a/content/images/2026/07/img-blog-gpt-5-6-sol-best-vision-model-to-date.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system">Anthropic explains how Claude’s invisible text watermarks will work</a>
-    <p class="news-card-summary">Anthropic detailed its SynthID-Text watermarking approach for detecting Claude-generated text, complying with European Union AI transparency requirements.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

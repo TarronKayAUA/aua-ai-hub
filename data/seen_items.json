@@ -30214,6 +30214,237 @@
    "score": 4.0,
    "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/55UVJLAaFr5hqOom9Il3Ou/2a7c6a08571daf98a0643d76cc243add/index-pacing-model-development-cyber-capabilities-dark-seo.png?w=1600&h=900&fit=fill",
    "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18082",
+   "title_hash": "1fd629bf8e7a1e73fc07d22d1980d722",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18083",
+   "title_hash": "cecffae440d09818bfd2d275d717ca80",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": true,
+   "title": "Entity tracking emerges in sub-billion parameter language models and exceeds human performance in naturalistic narratives",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-20T04:00:00+00:00",
+   "summary": "Language models under one billion parameters track entities across narratives and exceed human-level performance on naturalistic text understanding tasks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18084",
+   "title_hash": "9a371db3ce101ea1a32279efe3d44299",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "narrow domain application in theorem proving without broad methodological significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18085",
+   "title_hash": "874e0e4e7860b4b9b05c931550158f10",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "narrow application in dialogue systems without methodological or capability implications for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18087",
+   "title_hash": "839c0a39991d318ca235aa8d21ce96c2",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "language-specific tokenization research without broad significance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18089",
+   "title_hash": "713bab6c592e592b234f1d5f570d6ef6",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": true,
+   "title": "Latent Space Refusal Anchoring for Low-Resource African Languages: Mechanistic Safety Recovery Without Retraining",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-20T04:00:00+00:00",
+   "summary": "Researchers recover refusal mechanisms in instruction-tuned models for low-resource languages by manipulating latent space without retraining.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18090",
+   "title_hash": "899208cd17a771be2da67415dc46c722",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "narrow research on internal model representations with limited relevance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18091",
+   "title_hash": "748539a3073922a95a3c05b0bed5c7ae",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": true,
+   "title": "Self- and Other-Labels Induce Bidirectional Bias in LLM Judges",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-20T04:00:00+00:00",
+   "summary": "Language models used as judges exhibit systematic bias favoring their own outputs, raising concerns about evaluation reliability in LLM assessment systems.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18093",
+   "title_hash": "bae0b23532fa36c6f1b22361ff0fb0cf",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": true,
+   "title": "Abliteration Mitigation via Refusal Aliases",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-20T04:00:00+00:00",
+   "summary": "Research identifies alternative refusal mechanisms in language models that persist when primary safety defenses are removed through abliteration attacks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18094",
+   "title_hash": "c3fa38df9ae064c7e185fbeb7e0b0ae8",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "language-specific model for low-resource languages without broad significance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18095",
+   "title_hash": "89c6bb4aedbe24737d7d2812e8956eea",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "thesis abstract on backdoor attacks without specific findings or methodological advances"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18096",
+   "title_hash": "eae09c3ba0c798c561aa8ddb4f6a73f6",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "framework for societal value evaluation without demonstrated significance or methodological contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18097",
+   "title_hash": "945881e93b7d7a6223b2e0aa9911f6cc",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "domain-specific dataset and benchmark with limited relevance to this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18098",
+   "title_hash": "7a9f7ee69eb2ed8162b956b89af05fea",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "optimization technique for dialogue systems without broad capability or methodological significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18100",
+   "title_hash": "82204d8ab7c09737ee5c8567c5802f96",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "bias measurement study too specific to geographic and cultural content without broader methodological relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18101",
+   "title_hash": "f9863d87dfc2bbb8905130ac06375f4d",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "narrow application in topic modeling without broader research significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18102",
+   "title_hash": "bae6d20fd566f0cb0aaa767e77b988a1",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "watermark detection research without broad significance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18103",
+   "title_hash": "6997044ffb1376a1c7aad12538f20271",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "domain-specific agent for traditional Chinese medicine without general medical education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18105",
+   "title_hash": "eaf72f8c2213aafc487599f2a697609a",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "narrow application system for financial data without significance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18106",
+   "title_hash": "2b63877ae67f5ae7cd1a37400ead42ef",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "narrow study of model overconfidence in specific scenarios without broader implications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18107",
+   "title_hash": "31f880febf92b121527369a2a44f2967",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "bias study in hiring contexts without direct relevance to medical education or practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18108",
+   "title_hash": "94495f865689468419967f73c7066ef2",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": true,
+   "title": "Same Facts, Different Updates: Inference Setup Shapes LLM Behavior in Medical Allocation",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-20T04:00:00+00:00",
+   "summary": "Language models show unexpected behavioral changes in medical allocation decisions based on accumulated context during deployment.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18109",
+   "title_hash": "c753a27806cc94a984dc2658d0f68be5",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "pilot study on narrative processing without established relevance to medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18114",
+   "title_hash": "b597afef3d0964ef6bbd2de8f0fdc300",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": true,
+   "title": "Accurate Decoding of Natural Sentences from Non-Invasive Brain Recordings",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-20T04:00:00+00:00",
+   "summary": "Brain2Qwerty v2 decodes natural sentence production from non-invasive brain recordings, advancing brain-computer interface technology for communication restoration.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.18115",
+   "title_hash": "309b2e4fe1c74bc72cb6d6c991f2b6d5",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": true,
+   "title": "Temporal Multi-Signal Fusion for Token-Level Hallucination Detection",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-20T04:00:00+00:00",
+   "summary": "A sequence labeling approach detects token-level hallucinations by fusing multiple signals over time rather than scoring tokens independently.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vs0wsl/alibabas_riscv_cpu_xuantie_c950_runs_qwen38_27b",
+   "title_hash": "beef4fca541468711da96fe33e053b47",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "forum post about hardware performance without substantive analysis or news value"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=LUFVYJlguJk",
+   "title_hash": "6368cc826f062072c86a0fc06d9d4547",
+   "first_seen": "2026-08-20T04:54:49.378298+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

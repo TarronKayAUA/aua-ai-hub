@@ -321,9 +321,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -593,13 +593,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/ntap-4-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03106-2">Context-aware monitoring: rethinking comprehensive screening in the era of AI</a>
-        <p class="news-card-summary">Analysis of how Bayesian reasoning and context-aware AI can reduce false positives in AI-assisted screening of asymptomatic populations.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 13, 2026</span></div>
@@ -650,13 +643,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Peer-reviewed study examines how role prompting affects linguistic style and clinical decision-making in GPT-5 simulated tumor board discussions.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03077-4">OpenEvidence clinical question-answering platform: systematic review of early evaluations</a>
-        <p class="news-card-summary">Systematic review of early evaluations of the OpenEvidence clinical question-answering platform across published studies.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -667,10 +653,59 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.18083">Entity tracking emerges in sub-billion parameter language models and exceeds human performance in naturalistic narratives</a>
+        <p class="news-card-summary">Language models under one billion parameters track entities across narratives and exceed human-level performance on naturalistic text understanding tasks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.18089">Latent Space Refusal Anchoring for Low-Resource African Languages: Mechanistic Safety Recovery Without Retraining</a>
+        <p class="news-card-summary">Researchers recover refusal mechanisms in instruction-tuned models for low-resource languages by manipulating latent space without retraining.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.18091">Self- and Other-Labels Induce Bidirectional Bias in LLM Judges</a>
+        <p class="news-card-summary">Language models used as judges exhibit systematic bias favoring their own outputs, raising concerns about evaluation reliability in LLM assessment systems.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.18093">Abliteration Mitigation via Refusal Aliases</a>
+        <p class="news-card-summary">Research identifies alternative refusal mechanisms in language models that persist when primary safety defenses are removed through abliteration attacks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.18108">Same Facts, Different Updates: Inference Setup Shapes LLM Behavior in Medical Allocation</a>
+        <p class="news-card-summary">Language models show unexpected behavioral changes in medical allocation decisions based on accumulated context during deployment.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.18114">Accurate Decoding of Natural Sentences from Non-Invasive Brain Recordings</a>
+        <p class="news-card-summary">Brain2Qwerty v2 decodes natural sentence production from non-invasive brain recordings, advancing brain-computer interface technology for communication restoration.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.18115">Temporal Multi-Signal Fusion for Token-Level Hallucination Detection</a>
+        <p class="news-card-summary">A sequence labeling approach detects token-level hallucinations by fusing multiple signals over time rather than scoring tokens independently.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
@@ -939,13 +974,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A Hugging Face analysis of 2,200 papers from ICML documents reproducibility findings and lessons from major machine learning research.</p>
       </div>
       <img class="news-card-thumb" src="https://huggingface.co/blog/assets/icml-2026-open-reproductions/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 12, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813">DeepSeek V4 Pro 0813 (on OpenRouter)</a>
-        <p class="news-card-summary">DeepSeek released V4 Pro 0813, a new model variant available via API through OpenRouter.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
