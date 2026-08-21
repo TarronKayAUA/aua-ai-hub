@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03167-3">Clinical decision support in nasopharyngeal carcinoma: comparative evaluation of large reasoning and language models</a>
+    <p class="news-card-summary">Peer-reviewed study comparing large reasoning models and language models for clinical decision support in nasopharyngeal carcinoma treatment planning.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
@@ -119,13 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42616129?fc=20260609215449&amp;ff=20260819215246&amp;v=2.20.1">External validation of a machine learning-based web application for personalized testing of objective functioning using the five-repetition sit-to-stand test</a>
     <p class="news-card-summary">External validation of a machine learning model for personalized physical function assessment revealed limited generalization and systematic underestimation of slower test times.</p>
   </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health">Opinion: I’m a pediatrician. AI chatbots are grooming my patients</a>
-    <p class="news-card-summary">A pediatrician argues that chatbot interactions designed to encourage engagement may constitute child abuse when they exploit children&#x27;s developmental vulnerabilities, yet current law does not address algorithmic harms.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1457137503-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
