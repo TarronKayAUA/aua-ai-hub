@@ -31001,6 +31001,103 @@
    "first_seen": "2026-08-21T08:59:16.604623+00:00",
    "kept": false,
    "reason": "speculation and rumor content with no confirmed developments"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/meta-ai-glasses-may-get-creepier-and-apps-that-detect-them-arent-perfect",
+   "title_hash": "dcc13f0d8ccac58b9749f2fb14d18973",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/cardiovascular-safety-of-testosterone-286",
+   "title_hash": "0dee5fb5004386e98dd7fd89b9521078",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03123-1",
+   "title_hash": "3399f1e9db17fbb46f1c394b89b3e8cd",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "narrow domain application without AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04597-y",
+   "title_hash": "f861e172e1d37b003d43d550ff835db4",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04524-1",
+   "title_hash": "cfe3da6f094c5af0eff90f4c58a344ba",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": true,
+   "title": "Putting epigenetic aging clocks on trial",
+   "source": "Nature Medicine",
+   "published": "2026-08-21T00:00:00+00:00",
+   "summary": "A systematic study tests whether DNA methylation aging clocks respond appropriately to clinical interventions, validating their use as surrogate endpoints for aging.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04524-1/MediaObjects/41591_2026_4524_Fig1_HTML.png",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04588-z",
+   "title_hash": "b9cdef032ac95e4f3b2cebbe907c0bbc",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04571-8",
+   "title_hash": "58991f5b4ced80f32894d207e8a352a5",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04562-9",
+   "title_hash": "50a8e02f608336611a50c0dd7289c180",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": true,
+   "title": "Responsiveness of epigenetic aging biomarkers to longevity interventions in humans",
+   "source": "Nature Medicine",
+   "published": "2026-08-21T00:00:00+00:00",
+   "summary": "Analysis of 16 epigenetic aging clocks across 51 studies shows differential responsiveness to pharmacological and lifestyle interventions, informing their reliability as biomarkers.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vs9zym/new_midsize_qwen_38_model_coming_next_week",
+   "title_hash": "d5d6cc252dbeff8abef277aefe966873",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "rumor about unreleased model from community forum"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=c4UiiWU7DoI",
+   "title_hash": "1f85f6c73de087c25f39c4802ba5668e",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": true,
+   "title": "Ox Alpha Is INSANE, Testing the Mysterious New Stealth Model!",
+   "source": "Bijan Bowen",
+   "published": "2026-08-21T12:42:20+00:00",
+   "summary": "Hands-on testing of Ox Alpha, a newly released model, across multiple benchmarks including simulation, web interaction, and reasoning tasks.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/c4UiiWU7DoI/hqdefault.jpg",
+   "display_title": "Testing Ox Alpha model capabilities"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=8LNH7TxvD14",
+   "title_hash": "bd2e8542b53be409e442e79f25aedc1f",
+   "first_seen": "2026-08-21T13:12:43.147433+00:00",
+   "kept": false,
+   "reason": "industry gossip and acquisition news without substantive technical or educational content"
   }
  ],
  "digests": [

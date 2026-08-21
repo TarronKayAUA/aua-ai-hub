@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -26,6 +26,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03167-3">Clinical decision support in nasopharyngeal carcinoma: comparative evaluation of large reasoning and language models</a>
     <p class="news-card-summary">Peer-reviewed study comparing large reasoning models and language models for clinical decision support in nasopharyngeal carcinoma treatment planning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04524-1">Putting epigenetic aging clocks on trial</a>
+    <p class="news-card-summary">A systematic study tests whether DNA methylation aging clocks respond appropriately to clinical interventions, validating their use as surrogate endpoints for aging.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04524-1/MediaObjects/41591_2026_4524_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04562-9">Responsiveness of epigenetic aging biomarkers to longevity interventions in humans</a>
+    <p class="news-card-summary">Analysis of 16 epigenetic aging clocks across 51 studies shows differential responsiveness to pharmacological and lifestyle interventions, informing their reliability as biomarkers.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -111,20 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77335">Multicenter External Validation of an AI-Based Funduscopic Carotid Atherosclerosis Score and Assessment of Its Association With Coronary Artery Calcification: External Validation Study</a>
     <p class="news-card-summary">External validation study of a deep-learning funduscopic atherosclerosis score for noninvasive cardiovascular risk assessment using retinal imaging.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42613470?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">Automatic extraction of structured information from brain MRI reports using an open-weight large language model</a>
-    <p class="news-card-summary">Open-weight LLaMA 3.1 effectively extracts structured clinical data from neuroradiology reports, with few-shot prompting improving performance on numerical variables.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42616129?fc=20260609215449&amp;ff=20260819215246&amp;v=2.20.1">External validation of a machine learning-based web application for personalized testing of objective functioning using the five-repetition sit-to-stand test</a>
-    <p class="news-card-summary">External validation of a machine learning model for personalized physical function assessment revealed limited generalization and systematic underestimation of slower test times.</p>
   </div>
 </div>
 </div>

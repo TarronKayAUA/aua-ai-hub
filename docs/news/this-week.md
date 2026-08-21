@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -282,14 +282,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Proposal for AI-assisted teaching models to address gaps between undergraduate clinical theory and practice through personalized guidance and high-fidelity simulation.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/08/14/will-ai-break-postdoc-bottleneck-opinion">Will AI Break the Postdoc Bottleneck?</a>
-        <p class="news-card-summary">Commentary on how artificial intelligence may address workforce misalignment between postdoctoral positions and permanent academic roles.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-2268583854.jpg?itok=1mHgkkX2" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## Clinical Practice
@@ -300,15 +292,30 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 21, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03167-3">Clinical decision support in nasopharyngeal carcinoma: comparative evaluation of large reasoning and language models</a>
         <p class="news-card-summary">Peer-reviewed study comparing large reasoning models and language models for clinical decision support in nasopharyngeal carcinoma treatment planning.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04524-1">Putting epigenetic aging clocks on trial</a>
+        <p class="news-card-summary">A systematic study tests whether DNA methylation aging clocks respond appropriately to clinical interventions, validating their use as surrogate endpoints for aging.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04524-1/MediaObjects/41591_2026_4524_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04562-9">Responsiveness of epigenetic aging biomarkers to longevity interventions in humans</a>
+        <p class="news-card-summary">Analysis of 16 epigenetic aging clocks across 51 studies shows differential responsiveness to pharmacological and lifestyle interventions, informing their reliability as biomarkers.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -617,9 +624,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -897,14 +904,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2285566787-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vny9zs/glm_53_released">GLM 5.3 Released</a>
-        <p class="news-card-summary">Zhipu AI released GLM 5.3, an update to its open-weights large language model.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/eixnxdnvz9jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2247868071d2d80c73f9ce9e95b5c3085bb85fa3" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 14, 2026</span></div>
@@ -919,9 +918,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 7 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=c4UiiWU7DoI" target="_blank" rel="noopener" title="Ox Alpha Is INSANE, Testing the Mysterious New Stealth Model!">
+      <img src="https://i4.ytimg.com/vi/c4UiiWU7DoI/hqdefault.jpg" alt="Video: Testing Ox Alpha model capabilities" loading="lazy">
+      <span class="video-card-title">Testing Ox Alpha model capabilities</span>
+      <span class="video-card-meta">Bijan Bowen, August 21, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Ox Alpha, a newly released model, across multiple benchmarks including simulation, web interaction, and reasoning tasks.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=OvjccOrr-iw" target="_blank" rel="noopener" title="What Is the AI Security Trilemma? Smart, Fast, or Secure AI?">
       <img src="https://i4.ytimg.com/vi/OvjccOrr-iw/hqdefault.jpg" alt="Video: AI security tradeoffs: intelligence, speed, and safety" loading="lazy">
       <span class="video-card-title">AI security tradeoffs: intelligence, speed, and safety</span>
@@ -957,18 +962,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Testing Qwen 3.8 27B local model performance</span>
       <span class="video-card-meta">Bijan Bowen, August 14, 2026</span>
       <span class="video-card-desc">Hands-on testing and benchmark comparison of Qwen 3.8 27B local model across language, coding, and game tasks.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=yMoUwyyTe3E" target="_blank" rel="noopener" title="GLM 5.3 Is INSANE! The BEST Open Source Model EVER? BEATS MYTHOS? (Fully Tested)">
-      <img src="https://i2.ytimg.com/vi/yMoUwyyTe3E/hqdefault.jpg" alt="Video: GLM 5.3 benchmarking and testing against open-source models" loading="lazy">
-      <span class="video-card-title">GLM 5.3 benchmarking and testing against open-source models</span>
-      <span class="video-card-meta">WorldofAI, August 14, 2026</span>
-      <span class="video-card-desc">Benchmarking and hands-on testing of GLM 5.3 against other open-weights models including Mythos.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=QnGNF8k_uoc" target="_blank" rel="noopener" title="Claude AI Failed 650 Times…Then Beat The Human Record">
-      <img src="https://i2.ytimg.com/vi/QnGNF8k_uoc/hqdefault.jpg" alt="Video: Iterative model improvement and benchmark performance analysis" loading="lazy">
-      <span class="video-card-title">Iterative model improvement and benchmark performance analysis</span>
-      <span class="video-card-meta">Two Minute Papers, August 14, 2026</span>
-      <span class="video-card-desc">Overview of a research paper showing iterative improvement and scaling in model performance on a benchmark task.</span>
     </a>
     </div>
 
