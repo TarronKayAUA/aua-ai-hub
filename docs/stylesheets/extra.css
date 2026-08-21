@@ -723,6 +723,20 @@
   overflow: hidden;
 }
 
+/* Currency caveat on a resource card (2026-08-19). Deliberately NOT
+   line-clamped, unlike the description above: this is the text a reader
+   most needs before committing time to an older resource, so it must
+   never be the text that gets truncated away. */
+.video-card-note {
+  margin: 0 0.7rem 0.65rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
 /* Podcast variant: square show art, slightly narrower cards */
 
 .podcast-grid {
