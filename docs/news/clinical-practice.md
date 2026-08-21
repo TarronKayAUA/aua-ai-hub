@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A multicenter study in Nature Medicine found that an AI system for diagnosing liver malignancy from contrast-enhanced CT could reduce missed or delayed diagnoses <a href="https://www.nature.com/articles/s41591-026-04589-y">[10]</a>. Emergency clinicians received similar scrutiny as a pilot of a large language model clinical decision support tool in the ED showed safe integration but declining use over four weeks <a href="https://www.nature.com/articles/s41591-026-04601-5">[9]</a>. Concerns about safety extended beyond diagnostic accuracy: researchers demonstrated that institution-specific prompting can recover protected health information that de-identification systems and their gold standards both miss <a href="https://arxiv.org/abs/2608.17051">[8]</a>, while a pediatrician&#x27;s opinion piece in STAT News argued that some chatbot designs exploit children&#x27;s developmental vulnerabilities without legal recourse <a href="https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health">[7]</a>.</p>
-<p>Also this week: four papers on imaging and diagnostics, three on safety and evaluation, three on clinical decision support, three on patient-facing tools, and two on clinical documentation round out the section, including external validation of a funduscopic carotid atherosclerosis score and structured data extraction from brain MRI reports using an open-weight language model.</p>
-<p class="section-brief-date">The picture as of August 20, 2026; numbered links go to the items below.</p>
+<p>A cross-sectional study of large language models managing low back pain found that visual interpretation and textual reasoning can diverge, raising safety concerns for multimodal clinical use <a href="https://medinform.jmir.org/2026/1/e93522">[3]</a>. Concerns about downstream harms extend to mental health, where a scoping review catalogs risks tied to LLM-based chatbots <a href="https://www.nature.com/articles/s41746-026-03054-x">[7]</a>, echoed by a pediatrician&#x27;s opinion piece warning that engagement-optimized chatbots may exploit children&#x27;s vulnerabilities <a href="https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health">[15]</a>. On the implementation side, a prospective study integrated locally run LLMs into head and neck tumor board meetings <a href="https://ai.jmir.org/2026/1/e95081">[1]</a>, while health systems are deploying chatbots to query and summarize patient records <a href="https://www.statnews.com/2026/08/20/health-systems-embrace-ai-chatbots-query-patient-records-ehr">[4]</a>.</p>
+<p>Also this week: the section adds six items on safety and evaluation, three on clinical decision support, and three on clinical documentation, alongside two imaging and diagnostics studies covering funduscopic carotid atherosclerosis scoring and five-year cost-effectiveness of diabetic eye screening. Other entries examine adaptive platform trials for clinical AI evidence generation and transportability failures in EHR-based depression risk models.</p>
+<p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -71,6 +71,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A scoping review of mental health risks and harms associated with large language model based chatbots.</p>
   </div>
 </div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03154-8">Modernizing evidence generation for clinical artificial intelligence: the case for adaptive platform trials</a>
+    <p class="news-card-summary">Adaptive platform trials offer a modernized approach to generating evidence for clinical AI deployments.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03078-3">Five-year cost-effectiveness of AI for adult diabetic eye exams, a health system perspective</a>
+    <p class="news-card-summary">Five-year cost-effectiveness analysis of AI in diabetic eye screening demonstrates health system financial impact and clinical utility.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 19, 2026</span></div>
@@ -113,19 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">A pediatrician argues that chatbot interactions designed to encourage engagement may constitute child abuse when they exploit children&#x27;s developmental vulnerabilities, yet current law does not address algorithmic harms.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1457137503-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.17051">Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss</a>
-    <p class="news-card-summary">Large language models can recover protected health information that automated de-identification systems miss, revealing institution-specific privacy risks in secondary EHR use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04601-5">Prospective evaluation of a large language model clinical decision support system in the emergency department</a>
-    <p class="news-card-summary">A pilot study of large language model clinical decision support in an emergency department found safe integration but decreasing adoption over four weeks.</p>
-  </div>
 </div>
 </div>

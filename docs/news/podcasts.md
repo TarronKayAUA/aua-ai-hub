@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/when-does-ai-help-learning-and-when-does-it-replace-it" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: When Does AI Help Learning - and When Does It Replace It?" loading="lazy">
+  <span class="video-card-title">When Does AI Help Learning - and When Does It Replace It?</span>
+  <span class="video-card-meta">AI in Education Podcast, August 20, 2026</span>
+  <span class="video-card-desc">Researchers discuss evidence on when generative AI supports versus replaces learning, drawing on recent studies of student outcomes.</span>
+</a>
 <a class="video-card" href="https://ai-podcast.nejm.org/e/dr-suchi-saria-on-building-ai-that-changes-care" target="_blank" rel="noopener">
   <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Dr. Suchi Saria on Building AI That Changes Care" loading="lazy">
   <span class="video-card-title">Dr. Suchi Saria on Building AI That Changes Care</span>
