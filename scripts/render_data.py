@@ -389,7 +389,8 @@ def _youtube_id(url: str) -> str:
 
 
 def _video_card(url: str, title: str, meta: str, desc: str = "",
-                thumbnail: str = "", note: str = "") -> str:
+                thumbnail: str = "", note: str = "",
+                fallback_thumbnail: str = "") -> str:
     """One thumbnail card, reusing the pipeline's video-card markup and CSS.
     YouTube thumbnails derive from the video id; an empty thumbnail renders
     a text-only card.
@@ -401,6 +402,10 @@ def _video_card(url: str, title: str, meta: str, desc: str = "",
     Used for currency caveats on resources that have aged."""
     if not thumbnail and "youtube.com/watch" in url:
         thumbnail = f"https://i.ytimg.com/vi/{_youtube_id(url)}/hqdefault.jpg"
+    # Applied only after the YouTube derivation above, never before it:
+    # passing a fallback in as `thumbnail` would suppress the real video
+    # thumbnail and silently replace it with brand artwork.
+    thumbnail = thumbnail or fallback_thumbnail
     img = (f'  <img src="{thumbnail}" alt="Thumbnail: {title}" '
            'loading="lazy">\n') if thumbnail else ""
     desc_part = (f'\n  <span class="video-card-desc">{desc}</span>'
@@ -475,7 +480,18 @@ def _render_learning_resources(config, markdown: str) -> str:
                 title=e["title"],
                 meta=f"{e['source']}, {e['kind']}",
                 desc=" ".join(e["blurb"].split()),
+                # Some sources publish no og:image (DeepLearning.AI and
+                # Harvard Business Publishing both serve none to a
+                # scripted fetch, checked 2026-08-19), which left
+                # text-only cards sitting awkwardly beside thumbnailed
+                # ones. Rather than hotlink an arbitrary vendor image
+                # that would misrepresent the page and eventually rot,
+                # those fall back to local brand artwork. The path is
+                # page-relative because MkDocs does not rewrite raw HTML
+                # src attributes, and these markers appear only in
+                # docs/learning/index.md, which serves from /learning/.
                 thumbnail=e.get("thumbnail", ""),
+                fallback_thumbnail="../assets/resource-card.svg",
                 note=" ".join(str(e.get("note", "")).split()),
             )
             for e in by_section[section]
