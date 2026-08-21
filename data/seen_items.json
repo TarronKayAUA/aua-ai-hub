@@ -31098,6 +31098,162 @@
    "first_seen": "2026-08-21T13:12:43.147433+00:00",
    "kept": false,
    "reason": "industry gossip and acquisition news without substantive technical or educational content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis",
+   "title_hash": "adb375f34b60227bda305ced4bc76fdf",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "personal opinion on UI design; no actionable substance for medical educators"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e94614",
+   "title_hash": "be2684dfbad2738134953f64944311e5",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": true,
+   "title": "Evaluation of Prompt Design and Internal Reasoning in Chatbot-Based Medical History Taking: Simulation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-21T16:00:13+00:00",
+   "summary": "Study evaluates how prompt design and model reasoning affect the completeness and clinical relevance of medical histories collected by conversational agents before patient consultations.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/21/matt-webb",
+   "title_hash": "3b65030ad8ebcca971272c7d4adcb881",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "personal commentary on learning without actionable substance for medical educators"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e84636",
+   "title_hash": "3ba8f2153ce534ef822084ddf72f492a",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": true,
+   "title": "Integrated Clinical-Molecular Risk Stratification in Diffuse Large B-Cell Lymphoma: Machine Learning Survival Analysis",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-21T15:00:02+00:00",
+   "summary": "Machine learning model integrates molecular and clinical features to improve risk stratification and prognostic accuracy in diffuse large B-cell lymphoma beyond standard clinical indices.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553",
+   "title_hash": "fa6fafbad412a5ffe8b987184deb8d85",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "vendor marketing webinar promoting a product"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
+   "title_hash": "4ea9d46d9bb52d598254e5f64771ec0e",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "drama coverage unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&ff=20260821125301&v=2.20.1",
+   "title_hash": "4422e88c4b05ccbd2055e88eb7bee8b4",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": true,
+   "title": "Navigating the Artificial Intelligence Revolution in Clinical Neurology: A New Multidisciplinary Task Force Within the European Academy of Neurology",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-21T10:00:00+00:00",
+   "summary": "European Academy of Neurology task force outlines multidisciplinary strategy for responsible AI integration in neurology, addressing education, ethics, and clinical implementation.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&ff=20260821125301&v=2.20.1",
+   "title_hash": "7b6101562ad1de65af457c728c4697cb",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": true,
+   "title": "AI patients, real practice: exploring the use of AI-simulated patients to support primary healthcare training for combat medical technicians",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-21T10:00:00+00:00",
+   "summary": "Study demonstrates that AI-simulated patients improve consultation confidence among combat medical technicians and provide scalable, standardized training supplementing clinical practice.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42626627?fc=20260609215449&ff=20260821125301&v=2.20.1",
+   "title_hash": "80cb1acd496dfe24dd391a794356a49f",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": true,
+   "title": "Twelve tips for using educational data mining and machine learning to predict performance in high-stakes health professions education exams",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-21T10:00:00+00:00",
+   "summary": "Practical guide offering 12 tips for using machine learning and educational data mining to predict performance in high-stakes health professions exams.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42626484?fc=20260609215449&ff=20260821125301&v=2.20.1",
+   "title_hash": "ac34a88df8710b3e534dce3f0cb978cb",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "off-topic; chemical optimization of a drug synthesis is neither medical education nor AI in healthcare"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42626241?fc=20260609215449&ff=20260821125301&v=2.20.1",
+   "title_hash": "16046026bd07c80955475c319d3402d3",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "tangential mention of AI without substantive analysis of AI in medical education or practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42625853?fc=20260609215449&ff=20260821125301&v=2.20.1",
+   "title_hash": "4348e6c6d9ebcc3b84c7636f1f2bdd3b",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "narrow domain application; standard epidemiological prediction study unrelated to medical education or clinical AI deployment"
+  },
+  {
+   "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+   "title_hash": "b9c9be47fa7e536a738ca91b9213bbfe",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "incomplete summary; speech recognition benchmarking unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vsjcf7/stop_anthropomorphisizing_intermediate_tokens",
+   "title_hash": "e07c4fa292f738095b3e60786169c116",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "community meta-discussion about model behavior; no substantive finding or development for medical educators"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqszw0/llamacpp_version_v010_has_been_released",
+   "title_hash": "c7f43b840f1b3783140e2a31ab2e7bca",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "minor release notes; semantic versioning change is routine tooling, not a significant development for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vpuhh1/paper_claims_rl_for_reasoning_only_changes_13_of",
+   "title_hash": "bef388377194e0e9bf25c095287d1b2d",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": false,
+   "reason": "incomplete summary insufficient to assess; forum post with no accessible source"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=h24qAKwWDiw",
+   "title_hash": "5e83cd542572945e40d397ddef2863d1",
+   "first_seen": "2026-08-21T16:53:00.810215+00:00",
+   "kept": true,
+   "title": "Toward a Radiology Foundation Model - Curt Langlotz | Computational Medicine Research Colloquium",
+   "source": "Stanford AIMI",
+   "published": "2026-08-21T16:00:28+00:00",
+   "summary": "Curt Langlotz discusses foundation models for radiology and their role in clinical practice and medical education.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/h24qAKwWDiw/hqdefault.jpg",
+   "display_title": "Toward a radiology foundation model"
   }
  ],
  "digests": [

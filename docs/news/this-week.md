@@ -18,10 +18,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Navigating the Artificial Intelligence Revolution in Clinical Neurology: A New Multidisciplinary Task Force Within the European Academy of Neurology</a>
+        <p class="news-card-summary">European Academy of Neurology task force outlines multidisciplinary strategy for responsible AI integration in neurology, addressing education, ethics, and clinical implementation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">AI patients, real practice: exploring the use of AI-simulated patients to support primary healthcare training for combat medical technicians</a>
+        <p class="news-card-summary">Study demonstrates that AI-simulated patients improve consultation confidence among combat medical technicians and provide scalable, standardized training supplementing clinical practice.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42626627?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Twelve tips for using educational data mining and machine learning to predict performance in high-stakes health professions education exams</a>
+        <p class="news-card-summary">Practical guide offering 12 tips for using machine learning and educational data mining to predict performance in high-stakes health professions exams.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 20, 2026</span></div>
@@ -215,13 +236,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42596566?fc=20260609215449&amp;ff=20260814094532&amp;v=2.20.1">Bridging the experiential gap in artificial intelligence-based health professions education</a>
-        <p class="news-card-summary">Peer-reviewed study on methods to close the gap between AI training and practical experience in health professions education.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42598310?fc=20260609215449&amp;ff=20260814131310&amp;v=2.20.1">Designing Self-Directed Learning Content for Medical Students: An AI-Driven Evaluation of Learning Outcomes</a>
         <p class="news-card-summary">Systematic integration of generative AI into self-directed learning enhances medical student efficiency and knowledge acquisition, though human oversight and AI verification skills remain essential.</p>
       </div>
@@ -294,8 +308,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e94614">Evaluation of Prompt Design and Internal Reasoning in Chatbot-Based Medical History Taking: Simulation Study</a>
+        <p class="news-card-summary">Study evaluates how prompt design and model reasoning affect the completeness and clinical relevance of medical histories collected by conversational agents before patient consultations.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84636">Integrated Clinical-Molecular Risk Stratification in Diffuse Large B-Cell Lymphoma: Machine Learning Survival Analysis</a>
+        <p class="news-card-summary">Machine learning model integrates molecular and clinical features to improve risk stratification and prognostic accuracy in diffuse large B-cell lymphoma beyond standard clinical indices.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 21, 2026</span></div>
@@ -598,20 +626,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 14, 2026</span></div>
         <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79713">Cross-Silo Federated Learning for Predicting Successful Mechanical Ventilation Weaning Across 5 Intensive Care Unit Databases: Retrospective Database Analysis</a>
         <p class="news-card-summary">Retrospective study using federated learning across five intensive care unit databases to develop a mechanical ventilation weaning prediction model without sharing patient-level data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04575-4">An AI-Health infrastructure for the Nordic region: technical foundations, data assets, and a roadmap for deployment</a>
-        <p class="news-card-summary">Nature Medicine commentary describes the Nordic AI-Health Initiative, a secure platform for developing generalizable AI models from large-scale longitudinal health datasets across the Nordic region.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04566-5">Histological aging signatures for monitoring tissue-specific aging and disease</a>
-        <p class="news-card-summary">Researchers developed tissue-specific aging clocks from histological images across 40 tissue types paired with blood transcriptomics to assess structural integrity and physiological fitness.</p>
       </div>
     </div>
     </div>
@@ -918,9 +932,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 7 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=h24qAKwWDiw" target="_blank" rel="noopener" title="Toward a Radiology Foundation Model - Curt Langlotz | Computational Medicine Research Colloquium">
+      <img src="https://i1.ytimg.com/vi/h24qAKwWDiw/hqdefault.jpg" alt="Video: Toward a radiology foundation model" loading="lazy">
+      <span class="video-card-title">Toward a radiology foundation model</span>
+      <span class="video-card-meta">Stanford AIMI, August 21, 2026</span>
+      <span class="video-card-desc">Curt Langlotz discusses foundation models for radiology and their role in clinical practice and medical education.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=c4UiiWU7DoI" target="_blank" rel="noopener" title="Ox Alpha Is INSANE, Testing the Mysterious New Stealth Model!">
       <img src="https://i4.ytimg.com/vi/c4UiiWU7DoI/hqdefault.jpg" alt="Video: Testing Ox Alpha model capabilities" loading="lazy">
       <span class="video-card-title">Testing Ox Alpha model capabilities</span>

@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Navigating the Artificial Intelligence Revolution in Clinical Neurology: A New Multidisciplinary Task Force Within the European Academy of Neurology</a>
+    <p class="news-card-summary">European Academy of Neurology task force outlines multidisciplinary strategy for responsible AI integration in neurology, addressing education, ethics, and clinical implementation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">AI patients, real practice: exploring the use of AI-simulated patients to support primary healthcare training for combat medical technicians</a>
+    <p class="news-card-summary">Study demonstrates that AI-simulated patients improve consultation confidence among combat medical technicians and provide scalable, standardized training supplementing clinical practice.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42626627?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Twelve tips for using educational data mining and machine learning to predict performance in high-stakes health professions education exams</a>
+    <p class="news-card-summary">Practical guide offering 12 tips for using machine learning and educational data mining to predict performance in high-stakes health professions exams.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 20, 2026</span></div>
@@ -103,27 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 18, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e89411">Medical Students’ Attitudes, Perceptions, and Self-Reported Familiarity With AI in Health Care: Systematic Review and Meta-Analysis</a>
     <p class="news-card-summary">Systematic review of medical students&#x27; attitudes, perceptions, and familiarity with artificial intelligence in health care, showing variation across educational settings and assessment approaches.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92964">Multiagent Large Language Model Framework for Psychotherapy Fidelity Assessment in Motivational Interviewing and Cognitive Behavioral Therapy Training: Cross-Sectional, Simulation-Based Evaluation Study</a>
-    <p class="news-card-summary">Multiagent language models can assess fidelity in motivational interviewing and cognitive behavioral therapy training sessions, offering a scalable alternative to manual rater assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42610935?fc=20260609215449&amp;ff=20260818164152&amp;v=2.20.1">Attitudes towards artificial intelligence among students and faculty staff at Kuwait University&#x27;s Health Science Centre: A cross-sectional study</a>
-    <p class="news-card-summary">Cross-sectional study of student and faculty perceptions of artificial intelligence across health science disciplines at a Gulf region university.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.14551">Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews</a>
-    <p class="news-card-summary">A structured uncertainty signal from a BERT classifier improves large language model efficiency in title-abstract screening for systematic reviews across eight drug-class studies.</p>
   </div>
 </div>
 </div>

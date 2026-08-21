@@ -138,6 +138,12 @@ Cards link to YouTube; nothing plays on this site.
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=h24qAKwWDiw" target="_blank" rel="noopener" title="Toward a Radiology Foundation Model - Curt Langlotz | Computational Medicine Research Colloquium">
+  <img src="https://i1.ytimg.com/vi/h24qAKwWDiw/hqdefault.jpg" alt="Video: Toward a radiology foundation model" loading="lazy">
+  <span class="video-card-title">Toward a radiology foundation model</span>
+  <span class="video-card-meta">Stanford AIMI, August 21, 2026</span>
+  <span class="video-card-desc">Curt Langlotz discusses foundation models for radiology and their role in clinical practice and medical education.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener">
   <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26" loading="lazy">
   <span class="video-card-title">AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Panel on building and scaling AI products for healthcare markets, covering economic, operational, and regulatory challenges in practice.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=zrM2gAjXLx8" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/zrM2gAjXLx8/hqdefault.jpg" alt="Video: Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Real-world examples of AI systems integrated into clinical workflows, with focus on human-AI interaction design and clinical acceptance drivers.</span>
 </a>
 </div>
 
