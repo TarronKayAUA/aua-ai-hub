@@ -56,6 +56,18 @@
   thumbnail: https://cdn.sanity.io/images/4zrzovbb/website/c4bd33e7c8e809a2f9a9a5896ee13961e2a738ec-2400x1260.png
   blurb: Courses ranging from AI fluency for general audiences to technical material for builders.
 
+# Added 2026-08-19 (owner approved, forwarded by the Provost). All four
+# parts verified reachable the same day. The site is client-rendered and
+# serves no og:image to a scripted fetch, so this renders as a text card;
+# linking out rather than reproducing any of it keeps attribution with
+# the authors.
+- title: "Simple AI Tips for Teaching: a four-part series"
+  section: teaching
+  source: Dan Levy and Angela Perez Albertos, Harvard Business Publishing Education
+  kind: article series
+  url: https://hbsp.harvard.edu/inspiring-minds/simple-ai-tips-designing-courses
+  blurb: "Tested techniques from two Harvard Kennedy School instructors, in four parts: designing a new course, revising an existing one, enhancing class time, and creating assessments. Concrete and step-by-step rather than abstract, with supporting videos."
+
 - title: Intro to Large Language Models
   section: students
   source: Andrej Karpathy
