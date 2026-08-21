@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -55,6 +55,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620587?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Large language models in emergency medicine education: opportunities, challenges, and implementation pathways</a>
         <p class="news-card-summary">Review of evidence for large language models in emergency medicine education, discussing opportunities, challenges, and implementation pathways for phased adoption.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">Building safer clinical agents: the case for residency-level benchmarks in medical artificial intelligence</a>
+        <p class="news-card-summary">Proposes residency-level benchmarks for evaluating safety in medical artificial intelligence systems.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42623754?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">The human-AI partnership model for faculty mentorship: A conceptual framework for reflective learning in nursing education</a>
+        <p class="news-card-summary">Presents a conceptual framework for integrating artificial intelligence into nursing faculty mentorship to enhance reflective learning and feedback.</p>
       </div>
     </div>
     <div class="news-card" data-topic="simulation-and-skills">
@@ -275,13 +289,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Commentary on how artificial intelligence may address workforce misalignment between postdoctoral positions and permanent academic roles.</p>
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-2268583854.jpg?itok=1mHgkkX2" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98073">Augmented Reality, Based Training for a Rapid Blood Transfusion Device Among Emergency Nurses: Randomized Controlled Trial</a>
-        <p class="news-card-summary">Randomized controlled trial shows augmented reality training improves emergency nurses&#x27; proficiency with rapid blood transfusion devices.</p>
-      </div>
     </div>
     </div>
 
@@ -610,10 +617,45 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.19206">Hallucination as a Feature, not a Defect: Evaluating a multi-agent architecture to transform speculative language-model outputs into testable scientific hypotheses</a>
+        <p class="news-card-summary">Proposes using large language model outputs as a feature to generate testable scientific hypotheses, reframing hallucination as a tool for speculative research.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.19207">Compliance, Capability, and Conflict: Benchmarking Multimodal LLMs under System Messages</a>
+        <p class="news-card-summary">Introduces benchmark for measuring whether multimodal large language models comply with system message constraints in production contexts.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.19437">Are LLMs becoming similarly creative? Evidence from three years of models</a>
+        <p class="news-card-summary">Analyzes trends in large language model performance on open-ended creative tasks across three years of model releases.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.19564">Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents</a>
+        <p class="news-card-summary">Evaluates how large language model agents should handle persistent memory updates, testing when information should be stored versus verified with users.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.19670">The Asymmetric Harms of LLM Compression</a>
+        <p class="news-card-summary">Systematically evaluates how compression methods affect large language model behavior on knowledge, confidence, and bias beyond standard performance metrics.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 20, 2026</span></div>
@@ -870,22 +912,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Hugging Face observations on the state of open models landscape in summer 2026.</p>
       </div>
       <img class="news-card-thumb" src="https://huggingface.co/blog/assets/state-of-open-models-summer-2026/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop">Trained a 1.5B to write shell commands so I&#x27;d stop googling tar flags. Runs on a laptop CPU in ~1 sec.</a>
-        <p class="news-card-summary">A fine-tuned 1.5B parameter model generates shell commands from natural language descriptions and runs efficiently on CPU.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/di0yenio27jh1.gif?width=640&amp;crop=smart&amp;s=d39275a4e908c41b9172d01bcf8ec7a8db33ad68" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 13, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/13/llm-gemini">llm-gemini 0.33</a>
-        <p class="news-card-summary">Plugin adds support for Google&#x27;s Gemini 3.7 Flash and earlier versions, with reasoning traces and embedding models.</p>
-      </div>
-      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/gemini-3.7-flash-high-pelican.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

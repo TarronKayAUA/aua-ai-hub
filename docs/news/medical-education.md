@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -54,6 +54,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620587?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Large language models in emergency medicine education: opportunities, challenges, and implementation pathways</a>
     <p class="news-card-summary">Review of evidence for large language models in emergency medicine education, discussing opportunities, challenges, and implementation pathways for phased adoption.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">Building safer clinical agents: the case for residency-level benchmarks in medical artificial intelligence</a>
+    <p class="news-card-summary">Proposes residency-level benchmarks for evaluating safety in medical artificial intelligence systems.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42623754?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">The human-AI partnership model for faculty mentorship: A conceptual framework for reflective learning in nursing education</a>
+    <p class="news-card-summary">Presents a conceptual framework for integrating artificial intelligence into nursing faculty mentorship to enhance reflective learning and feedback.</p>
   </div>
 </div>
 <div class="news-card" data-topic="simulation-and-skills">
@@ -111,20 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2608.14551">Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews</a>
     <p class="news-card-summary">A structured uncertainty signal from a BERT classifier improves large language model efficiency in title-abstract screening for systematic reviews across eight drug-class studies.</p>
   </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.14737">Class Imbalance and Batch Effects in LLM-Based Screening for Systematic Reviews</a>
-    <p class="news-card-summary">Large language models show limited sensitivity to class imbalance and batch effects in systematic review screening, with prevalence metadata providing minimal improvement to predictions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/18/ai-helps-researchers-win-nih-grants-will">AI Helped Researchers Win NIH Grants. Will Science Suffer?</a>
-    <p class="news-card-summary">Analysis of thousands of NSF and NIH grant applications reveals patterns in how researchers use generative AI and raises questions about effects on scientific quality.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robot_AI_sifting_documents_papers%20copy.jpg?itok=tNomQNI_" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
