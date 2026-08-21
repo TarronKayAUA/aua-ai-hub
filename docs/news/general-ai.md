@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="research-and-methods">
@@ -63,6 +63,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Report on impact of artificial intelligence on mathematics and the field&#x27;s response to OpenAI&#x27;s solutions to longstanding mathematical problems.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/DCD_082026_Site.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 20, 2026</span></div>
+    <a class="news-card-title" href="https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks">Every Model Cheats</a>
+    <p class="news-card-summary">Preprint examining how contemporary large language models exhibit forms of shortcut learning and dataset artifacts that constitute a form of cheating on benchmarks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://dreadnode.io/images/blog/every-model-cheats-hero.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.17084">Uncertainty-Aware Decision Making in Multimodal Large Language Models</a>
     <p class="news-card-summary">Multimodal language models struggle to express uncertainty when visual, textual, and cross-modal evidence conflict or degrade, raising reliability concerns.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.17153">Towards Safer RAG: Only Agents Capable of System 2 Thinking may Access Untrusted Documents</a>
-    <p class="news-card-summary">Retrieval-augmented generation systems remain vulnerable to knowledge-poisoning attacks unless the language model employs deliberate reasoning over retrieved documents.</p>
   </div>
 </div>
 </div>
