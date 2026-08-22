@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/1c66427c-9e23-11f1-bdcf-eb8cc278348e/image/61122eb6e8b7af420752cdc76f260006.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)" loading="lazy">
+  <span class="video-card-title">AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)</span>
+  <span class="video-card-meta">The Cognitive Revolution, August 22, 2026</span>
+  <span class="video-card-desc">Weekly digest covering frontier AI oversight, gaps between internal and public systems, capability deployment locations, and infrastructure costs, with multiple expert guests.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/when-does-ai-help-learning-and-when-does-it-replace-it" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: When Does AI Help Learning - and When Does It Replace It?" loading="lazy">
   <span class="video-card-title">When Does AI Help Learning - and When Does It Replace It?</span>

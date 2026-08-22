@@ -596,10 +596,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 22, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/22/more-than-just-code-review">More than just code review</a>
+        <p class="news-card-summary">Effective use of coding agents requires skilled instruction and verification rather than line-by-line code review of all generated output.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
@@ -919,9 +926,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 2 episodes"
+??? abstract "Show the 3 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026" target="_blank" rel="noopener">
+      <img src="https://megaphone.imgix.net/podcasts/1c66427c-9e23-11f1-bdcf-eb8cc278348e/image/61122eb6e8b7af420752cdc76f260006.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)" loading="lazy">
+      <span class="video-card-title">AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)</span>
+      <span class="video-card-meta">The Cognitive Revolution, August 22, 2026</span>
+      <span class="video-card-desc">Weekly digest covering frontier AI oversight, gaps between internal and public systems, capability deployment locations, and infrastructure costs, with multiple expert guests.</span>
+    </a>
     <a class="video-card" href="https://aipodcast.education/when-does-ai-help-learning-and-when-does-it-replace-it" target="_blank" rel="noopener">
       <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: When Does AI Help Learning - and When Does It Replace It?" loading="lazy">
       <span class="video-card-title">When Does AI Help Learning - and When Does It Replace It?</span>

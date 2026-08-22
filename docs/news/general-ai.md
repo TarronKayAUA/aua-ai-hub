@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 22, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/22/more-than-just-code-review">More than just code review</a>
+    <p class="news-card-summary">Effective use of coding agents requires skilled instruction and verification rather than line-by-line code review of all generated output.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.18115">Temporal Multi-Signal Fusion for Token-Level Hallucination Detection</a>
     <p class="news-card-summary">A sequence labeling approach detects token-level hallucinations by fusing multiple signals over time rather than scoring tokens independently.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.17084">Uncertainty-Aware Decision Making in Multimodal Large Language Models</a>
-    <p class="news-card-summary">Multimodal language models struggle to express uncertainty when visual, textual, and cross-modal evidence conflict or degrade, raising reliability concerns.</p>
   </div>
 </div>
 </div>
