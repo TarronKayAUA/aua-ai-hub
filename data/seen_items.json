@@ -31172,6 +31172,13 @@
    "first_seen": "2026-08-22T04:51:40.136103+00:00",
    "kept": false,
    "reason": "speculation about unreleased models and future timelines with no current news or development"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=pDIve2mdl4k",
+   "title_hash": "a987ff37c4ab5c849701f75b4a7ccae2",
+   "first_seen": "2026-08-22T08:48:55.270948+00:00",
+   "kept": false,
+   "reason": "speculation and rumors about unreleased models with no substantive event"
   }
  ],
  "digests": [
