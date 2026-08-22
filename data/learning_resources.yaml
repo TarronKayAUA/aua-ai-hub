@@ -8,13 +8,6 @@
 # other entries carry the page's own og:image URL, verified live at
 # authoring time (2026-06-11); entries without one render as text cards.
 # kind + source build the card's meta line.
-#
-# note (optional, added 2026-08-19): a currency caveat shown in its own
-# unclamped line under the blurb, for resources good enough to keep but
-# old enough that a reader should know what has changed since. Say what
-# still holds as well as what has dated. It is a separate field because
-# the blurb is line-clamped to three lines, so a caveat appended there
-# would be truncated out of sight.
 
 - title: Google AI Essentials
   section: getting_started
@@ -67,15 +60,14 @@
 # parts verified reachable the same day. The site is client-rendered and
 # serves no og:image to a scripted fetch, so this renders as a text card;
 # linking out rather than reproducing any of it keeps attribution with
-# the authors. Dated 2025 from Internet Archive captures (part 4 was
-# already live 2025-03-28), which is why it carries a currency note.
+# the authors. Dated to 2025 from Internet Archive captures (part 4 was
+# already live 2025-03-28), so the blurb says so plainly.
 - title: "Simple AI Tips for Teaching: a four-part series"
   section: teaching
   source: Dan Levy and Angela Perez Albertos, Harvard Business Publishing Education
   kind: article series
   url: https://hbsp.harvard.edu/inspiring-minds/simple-ai-tips-designing-courses
-  blurb: "Tested techniques from two Harvard Kennedy School instructors, in four parts: designing a course, revising one, enhancing class time, and creating assessments."
-  note: Published in 2025. The techniques still hold, but assistants have since gained long-document handling, persistent project workspaces, and direct file output, so several steps described here as workarounds are no longer necessary.
+  blurb: Four short articles from 2025 on designing a course, revising one, running class sessions, and building assessments.
 
 - title: Intro to Large Language Models
   section: students

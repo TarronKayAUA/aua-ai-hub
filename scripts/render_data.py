@@ -389,17 +389,11 @@ def _youtube_id(url: str) -> str:
 
 
 def _video_card(url: str, title: str, meta: str, desc: str = "",
-                thumbnail: str = "", note: str = "",
+                thumbnail: str = "",
                 fallback_thumbnail: str = "") -> str:
     """One thumbnail card, reusing the pipeline's video-card markup and CSS.
     YouTube thumbnails derive from the video id; an empty thumbnail renders
-    a text-only card.
-
-    note renders in its own unclamped span (2026-08-19). It exists because
-    .video-card-desc is line-clamped to three lines with overflow hidden,
-    so a caveat appended to a blurb would be silently truncated: exactly
-    the text a reader most needs to see would be the text that vanished.
-    Used for currency caveats on resources that have aged."""
+    a text-only card."""
     if not thumbnail and "youtube.com/watch" in url:
         thumbnail = f"https://i.ytimg.com/vi/{_youtube_id(url)}/hqdefault.jpg"
     # Applied only after the YouTube derivation above, never before it:
@@ -410,14 +404,11 @@ def _video_card(url: str, title: str, meta: str, desc: str = "",
            'loading="lazy">\n') if thumbnail else ""
     desc_part = (f'\n  <span class="video-card-desc">{desc}</span>'
                  if desc else "")
-    note_part = (f'\n  <span class="video-card-note">{note}</span>'
-                 if note else "")
     return (
         f'<a class="video-card" href="{url}" target="_blank" rel="noopener">\n'
         f"{img}"
         f'  <span class="video-card-title">{title}</span>\n'
-        f'  <span class="video-card-meta">{meta}</span>{desc_part}'
-        f"{note_part}\n"
+        f'  <span class="video-card-meta">{meta}</span>{desc_part}\n'
         "</a>"
     )
 
@@ -492,7 +483,6 @@ def _render_learning_resources(config, markdown: str) -> str:
                 # docs/learning/index.md, which serves from /learning/.
                 thumbnail=e.get("thumbnail", ""),
                 fallback_thumbnail="../assets/resource-card.svg",
-                note=" ".join(str(e.get("note", "")).split()),
             )
             for e in by_section[section]
         ]
