@@ -23,6 +23,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03165-5">Delays between CE mark and FDA regulatory approval of AI-enabled software for radiology</a>
+    <p class="news-card-summary">Analysis of regulatory delays between CE marking and FDA approval for artificial intelligence-enabled radiology software.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e68317">Machine Learning in Palliative Care: Scoping Review of Applications</a>
     <p class="news-card-summary">Scoping review maps machine learning applications in palliative care beyond prognostication to identify uses for patient-centered care and system-level process optimization.</p>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03114-2">Exploring a dynamic digital biomarker of illness severity in older ICU patients via interpretable time-series deep learning modeling</a>
     <p class="news-card-summary">Researchers developed an interpretable deep learning model to detect dynamic digital biomarkers of illness severity in older intensive care unit patients using time-series data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03054-x">A scoping review on the mental health harms of LLM-based chatbots</a>
-    <p class="news-card-summary">A scoping review of mental health risks and harms associated with large language model based chatbots.</p>
   </div>
 </div>
 </div>

@@ -31179,6 +31179,39 @@
    "first_seen": "2026-08-22T08:48:55.270948+00:00",
    "kept": false,
    "reason": "speculation and rumors about unreleased models with no substantive event"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42629687?fc=20260609215449&ff=20260822090215&v=2.20.1",
+   "title_hash": "75b8b9fb67ea65dfa78f983a6b075397",
+   "first_seen": "2026-08-22T13:02:15.235156+00:00",
+   "kept": true,
+   "title": "Artificial intelligence in medical education: Performance of ChatGPT versus medical students on medical examination",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-22T10:00:00+00:00",
+   "summary": "Study comparing ChatGPT performance against medical students on preventive medicine examination questions, evaluating accuracy and reliability in medical problem-solving.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03165-5",
+   "title_hash": "82a33c2422419fc558b1f90e37ded4d7",
+   "first_seen": "2026-08-22T13:02:15.235156+00:00",
+   "kept": true,
+   "title": "Delays between CE mark and FDA regulatory approval of AI-enabled software for radiology",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-22T00:00:00+00:00",
+   "summary": "Analysis of regulatory delays between CE marking and FDA approval for artificial intelligence-enabled radiology software.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=OO_wTt_ogtU",
+   "title_hash": "5c0f32ae9638e00102ac828ede05319e",
+   "first_seen": "2026-08-22T13:02:15.235156+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread on a niche model variant; not a significant capability change or benchmark movement relevant to medical educators"
   }
  ],
  "digests": [
