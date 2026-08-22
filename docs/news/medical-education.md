@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="simulation-and-skills">
@@ -61,6 +61,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627696?fc=20260609215449&amp;ff=20260821215148&amp;v=2.20.1">Artificial intelligence in health professions education publishing: A content analysis of journal and publisher guidance</a>
     <p class="news-card-summary">Content analysis of publisher guidance on AI use in academic publishing shows ongoing tension between advancing publishing processes and maintaining scientific integrity.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42628268?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">A large language models-assisted and expert-corrected workflow for preoperative anesthesia assessment drafts: A single-centre exploratory feasibility study</a>
+    <p class="news-card-summary">Large language models can draft preoperative anesthesia assessments, but expert review remains essential before clinical or educational use due to reliability gaps.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42628194?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">Mapping the evidence on generative artificial intelligence for higher-order thinking skills in nursing students: A scoping review</a>
+    <p class="news-card-summary">A scoping review finds generative AI can support higher-order thinking in nursing students but risks cognitive dependence; effective integration requires careful pedagogical design.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42623754?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">The human-AI partnership model for faculty mentorship: A conceptual framework for reflective learning in nursing education</a>
     <p class="news-card-summary">Presents a conceptual framework for integrating artificial intelligence into nursing faculty mentorship to enhance reflective learning and feedback.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">ICE Blog</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://icenet.blog/2026/08/20/code-switching-in-simulation-the-hidden-work-of-sounding-right">Code-switching in simulation: the hidden work of ‘sounding right’</a>
-    <p class="news-card-summary">Simulation educators should account for cognitive load from language and accent switching when designing clinical scenarios for learners.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e93148">Olfactory Cues and Patient Safety Behavior in Virtual Reality Medical Simulation: Controlled Trial</a>
-    <p class="news-card-summary">Adding olfactory cues to virtual reality medical simulation increases immersion and elicits authentic safety-relevant clinical behaviors.</p>
   </div>
 </div>
 </div>

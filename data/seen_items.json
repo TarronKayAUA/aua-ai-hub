@@ -31119,6 +31119,59 @@
    "first_seen": "2026-08-22T01:51:48.350130+00:00",
    "kept": false,
    "reason": "rumor or unconfirmed model announcement without substantive reporting"
+  },
+  {
+   "url": "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier",
+   "title_hash": "c1b13133ddc6592114210c917ac74875",
+   "first_seen": "2026-08-22T04:51:40.136103+00:00",
+   "kept": false,
+   "reason": "minor technical optimization of a vendor product, not a significant capability change or benchmark"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42629289?fc=20260609215449&ff=20260822005140&v=2.20.1",
+   "title_hash": "2eafd21e76c0fdb8b6d55d535391c3ca",
+   "first_seen": "2026-08-22T04:51:40.136103+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence-Assisted Chest Radiography: A Prospective Crossover Multi-Reader Study on Diagnostic Performance and Workflow Efficiency",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-21T10:00:00+00:00",
+   "summary": "Commercial AI tools for chest radiography shortened reading time but did not improve diagnostic accuracy and increased false positives, highlighting automation bias risks in clinical deployment.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42628268?fc=20260609215449&ff=20260822005140&v=2.20.1",
+   "title_hash": "8d1f9aaa71c69c73d2e57baa926d016d",
+   "first_seen": "2026-08-22T04:51:40.136103+00:00",
+   "kept": true,
+   "title": "A large language models-assisted and expert-corrected workflow for preoperative anesthesia assessment drafts: A single-centre exploratory feasibility study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-21T10:00:00+00:00",
+   "summary": "Large language models can draft preoperative anesthesia assessments, but expert review remains essential before clinical or educational use due to reliability gaps.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42628194?fc=20260609215449&ff=20260822005140&v=2.20.1",
+   "title_hash": "fcf0b5ea0348288bee0ed14f79d4002c",
+   "first_seen": "2026-08-22T04:51:40.136103+00:00",
+   "kept": true,
+   "title": "Mapping the evidence on generative artificial intelligence for higher-order thinking skills in nursing students: A scoping review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-21T10:00:00+00:00",
+   "summary": "A scoping review finds generative AI can support higher-order thinking in nursing students but risks cognitive dependence; effective integration requires careful pedagogical design.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vq279o/based_on_an_accelerating_frontier_local",
+   "title_hash": "59c83b2abdba8ab3aac711a550cf46ef",
+   "first_seen": "2026-08-22T04:51:40.136103+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models and future timelines with no current news or development"
   }
  ],
  "digests": [

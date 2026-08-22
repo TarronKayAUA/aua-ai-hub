@@ -49,6 +49,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Machine learning model integrates molecular and clinical features to improve risk stratification and prognostic accuracy in diffuse large B-cell lymphoma beyond standard clinical indices.</p>
   </div>
 </div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42629289?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">Artificial Intelligence-Assisted Chest Radiography: A Prospective Crossover Multi-Reader Study on Diagnostic Performance and Workflow Efficiency</a>
+    <p class="news-card-summary">Commercial AI tools for chest radiography shortened reading time but did not improve diagnostic accuracy and increased false positives, highlighting automation bias risks in clinical deployment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 21, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03054-x">A scoping review on the mental health harms of LLM-based chatbots</a>
     <p class="news-card-summary">A scoping review of mental health risks and harms associated with large language model based chatbots.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03154-8">Modernizing evidence generation for clinical artificial intelligence: the case for adaptive platform trials</a>
-    <p class="news-card-summary">Adaptive platform trials offer a modernized approach to generating evidence for clinical AI deployments.</p>
   </div>
 </div>
 </div>

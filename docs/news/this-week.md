@@ -66,6 +66,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42628268?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">A large language models-assisted and expert-corrected workflow for preoperative anesthesia assessment drafts: A single-centre exploratory feasibility study</a>
+        <p class="news-card-summary">Large language models can draft preoperative anesthesia assessments, but expert review remains essential before clinical or educational use due to reliability gaps.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42628194?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">Mapping the evidence on generative artificial intelligence for higher-order thinking skills in nursing students: A scoping review</a>
+        <p class="news-card-summary">A scoping review finds generative AI can support higher-order thinking in nursing students but risks cognitive dependence; effective integration requires careful pedagogical design.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 20, 2026</span></div>
         <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92700">Beyond Pattern Recognition: Call for Functionally Aware AI for Anatomical Illustration</a>
         <p class="news-card-summary">A critical analysis of generative AI&#x27;s current limitations in anatomical illustration, identifying persistent accuracy and hallucination problems that prevent replacement of human medical illustrators.</p>
@@ -226,20 +240,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">CliniSense AI provides automated assessment of clinical skills with real-time feedback to learners during practice.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600593?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">NAVIGATING AI IN MEDICAL EDUCATION: A NARRATIVE REVIEW OF APPLICATIONS, CHALLENGES, AND FUTURE STRATEGIES</a>
-        <p class="news-card-summary">Narrative review synthesizing current AI applications in medical education, including personalized learning and immersive clinical simulation, with actionable strategies for responsible integration.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600580?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">ARTIFICIAL INTELLIGENCE-ASSISTED TEACHING MODEL AS A STRATEGY TO ENHANCE CORE COMPETENCIES OF CLINICAL MEDICINE UNDERGRADUATES: A SCIENTIFIC HYPOTHESIS</a>
-        <p class="news-card-summary">Proposal for AI-assisted teaching models to address gaps between undergraduate clinical theory and practice through personalized guidance and high-fidelity simulation.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -250,9 +250,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -280,6 +280,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 21, 2026</span></div>
         <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84636">Integrated Clinical-Molecular Risk Stratification in Diffuse Large B-Cell Lymphoma: Machine Learning Survival Analysis</a>
         <p class="news-card-summary">Machine learning model integrates molecular and clinical features to improve risk stratification and prognostic accuracy in diffuse large B-cell lymphoma beyond standard clinical indices.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42629289?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">Artificial Intelligence-Assisted Chest Radiography: A Prospective Crossover Multi-Reader Study on Diagnostic Performance and Workflow Efficiency</a>
+        <p class="news-card-summary">Commercial AI tools for chest radiography shortened reading time but did not improve diagnostic accuracy and increased false positives, highlighting automation bias risks in clinical deployment.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
