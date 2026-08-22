@@ -13,9 +13,9 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>The most consequential item this cycle is a study showing systematic demographic bias in how large language models attribute pediatric obesity risk, underscoring the need for bias audits before clinical deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[3]</a>. Educators are also exploring how generative AI can extend training tools, from a conceptual framework for AI-driven digital standardized patients that teach clinical communication and ethical judgment <a href="https://mededu.jmir.org/2026/1/e91050">[2]</a> to a multiagent system that scores fidelity in motivational interviewing and cognitive behavioral therapy sessions <a href="https://mededu.jmir.org/2026/1/e92964">[11]</a>. Meanwhile, fine-tuned language models are proving effective for abstract screening in systematic reviews <a href="https://pubmed.ncbi.nlm.nih.gov/42620648?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[4]</a>, and a meta-analysis finds medical student attitudes toward AI vary widely across settings <a href="https://mededu.jmir.org/2026/1/e89411">[10]</a>.</p>
-<p>Also this week: five pieces on assessment and feedback explore automated essay scoring and uncertainty-aware screening tools, while four articles address curriculum design, including a Generation Z-focused neurology curriculum. Three items examine simulation and skills, from olfactory cues in virtual reality training to code-switching in clinical scenarios, and three more track attitudes toward AI adoption among students and faculty.</p>
-<p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the items below.</p>
+<p>Digital standardized patients built on generative AI are emerging as a practical framework for teaching clinical communication and ethical judgment <a href="https://mededu.jmir.org/2026/1/e91050">[8]</a>, complementing evidence that AI-simulated patients already boost consultation confidence among trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[4]</a>. This expansion of AI into clinical training coincides with a caution: a study found systematic demographic bias in pediatric obesity risk attribution by large language models, underscoring the need for bias audits before deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[9]</a>. The European Academy of Neurology has formed a multidisciplinary task force to guide responsible AI integration into neurology education <a href="https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[3]</a>, while a separate proposal calls for residency-level benchmarks to evaluate safety in medical AI systems <a href="https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">[12]</a>.</p>
+<p>Also this week: six pieces on teaching and curriculum span topics from inclusive Spanish-language training to nursing mentorship frameworks, while five simulation and skills items examine sensory and linguistic realism, including olfactory cues in virtual reality and code-switching&#x27;s cognitive load. Two entries address exam benchmarks, and single articles cover AI adoption attitudes and assessment feedback.</p>
+<p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
@@ -54,6 +54,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42626627?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Twelve tips for using educational data mining and machine learning to predict performance in high-stakes health professions education exams</a>
     <p class="news-card-summary">Practical guide offering 12 tips for using machine learning and educational data mining to predict performance in high-stakes health professions exams.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627696?fc=20260609215449&amp;ff=20260821215148&amp;v=2.20.1">Artificial intelligence in health professions education publishing: A content analysis of journal and publisher guidance</a>
+    <p class="news-card-summary">Content analysis of publisher guidance on AI use in academic publishing shows ongoing tension between advancing publishing processes and maintaining scientific integrity.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 19, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e93148">Olfactory Cues and Patient Safety Behavior in Virtual Reality Medical Simulation: Controlled Trial</a>
     <p class="news-card-summary">Adding olfactory cues to virtual reality medical simulation increases immersion and elicits authentic safety-relevant clinical behaviors.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42615013?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">A Generational Approach to Neurology Education: Engaging Generation Z Learners</a>
-    <p class="news-card-summary">Neurology educators address persistent student struggle with neuroanatomy and clinical reasoning by designing curricula tailored to Generation Z learning preferences and digital literacy.</p>
   </div>
 </div>
 </div>

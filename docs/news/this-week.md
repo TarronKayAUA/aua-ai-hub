@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>The most consequential item this cycle is a study showing systematic demographic bias in how large language models attribute pediatric obesity risk, underscoring the need for bias audits before clinical deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[3]</a>. Educators are also exploring how generative AI can extend training tools, from a conceptual framework for AI-driven digital standardized patients that teach clinical communication and ethical judgment <a href="https://mededu.jmir.org/2026/1/e91050">[2]</a> to a multiagent system that scores fidelity in motivational interviewing and cognitive behavioral therapy sessions <a href="https://mededu.jmir.org/2026/1/e92964">[11]</a>. Meanwhile, fine-tuned language models are proving effective for abstract screening in systematic reviews <a href="https://pubmed.ncbi.nlm.nih.gov/42620648?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[4]</a>, and a meta-analysis finds medical student attitudes toward AI vary widely across settings <a href="https://mededu.jmir.org/2026/1/e89411">[10]</a>.</p>
-<p>Also this week: five pieces on assessment and feedback explore automated essay scoring and uncertainty-aware screening tools, while four articles address curriculum design, including a Generation Z-focused neurology curriculum. Three items examine simulation and skills, from olfactory cues in virtual reality training to code-switching in clinical scenarios, and three more track attitudes toward AI adoption among students and faculty.</p>
-<p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
+<p>Digital standardized patients built on generative AI are emerging as a practical framework for teaching clinical communication and ethical judgment <a href="https://mededu.jmir.org/2026/1/e91050">[8]</a>, complementing evidence that AI-simulated patients already boost consultation confidence among trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[4]</a>. This expansion of AI into clinical training coincides with a caution: a study found systematic demographic bias in pediatric obesity risk attribution by large language models, underscoring the need for bias audits before deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[9]</a>. The European Academy of Neurology has formed a multidisciplinary task force to guide responsible AI integration into neurology education <a href="https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[3]</a>, while a separate proposal calls for residency-level benchmarks to evaluate safety in medical AI systems <a href="https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">[12]</a>.</p>
+<p>Also this week: six pieces on teaching and curriculum span topics from inclusive Spanish-language training to nursing mentorship frameworks, while five simulation and skills items examine sensory and linguistic realism, including olfactory cues in virtual reality and code-switching&#x27;s cognitive load. Two entries address exam benchmarks, and single articles cover AI adoption attitudes and assessment feedback.</p>
+<p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 34 items"
+??? abstract "Show the 31 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (10)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
@@ -55,6 +55,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42626627?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Twelve tips for using educational data mining and machine learning to predict performance in high-stakes health professions education exams</a>
         <p class="news-card-summary">Practical guide offering 12 tips for using machine learning and educational data mining to predict performance in high-stakes health professions exams.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627696?fc=20260609215449&amp;ff=20260821215148&amp;v=2.20.1">Artificial intelligence in health professions education publishing: A content analysis of journal and publisher guidance</a>
+        <p class="news-card-summary">Content analysis of publisher guidance on AI use in academic publishing shows ongoing tension between advancing publishing processes and maintaining scientific integrity.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -221,34 +228,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e103399">Empowering Educators to Build AI Chatbots in Health Professions Education: Tutorial on a No-Code Design Workflow</a>
-        <p class="news-card-summary">A peer-reviewed tutorial guides health professions educators through building generative AI chatbots as simulated patients and assessment tools using no-code workflows.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94122">Effects of an Immersive 180° Video, Based Virtual Reality Instructional Module on Learning Satisfaction, Technology Acceptance, Motivation, and Quiz-Based Learning Achievement in Undergraduate Physical Therapy Students: Randomized Controlled Trial</a>
-        <p class="news-card-summary">Randomized controlled trial comparing immersive 180-degree video virtual reality instruction with conventional teaching for musculoskeletal examination skills, measuring learning satisfaction and achievement.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94034">The AI Colleague: Reimagining Interprofessional Collaboration and Education in Medicine</a>
-        <p class="news-card-summary">Analysis of how AI as an integrated team member reshapes medical education and interprofessional practice beyond traditional tool-focused frameworks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92826">AI for Clinical Competency Assessment: Scoping Review of Methods and Applications</a>
-        <p class="news-card-summary">Scoping review of artificial intelligence methods for assessing clinical competency across health professions, examining validity and scalability of AI-driven assessment approaches.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 14, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42600593?fc=20260609215449&amp;ff=20260815004853&amp;v=2.20.1">NAVIGATING AI IN MEDICAL EDUCATION: A NARRATIVE REVIEW OF APPLICATIONS, CHALLENGES, AND FUTURE STRATEGIES</a>
         <p class="news-card-summary">Narrative review synthesizing current AI applications in medical education, including personalized learning and immersive clinical simulation, with actionable strategies for responsible integration.</p>
@@ -266,14 +245,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A cross-sectional study of large language models managing low back pain found that visual interpretation and textual reasoning can diverge, raising safety concerns for multimodal clinical use <a href="https://medinform.jmir.org/2026/1/e93522">[3]</a>. Concerns about downstream harms extend to mental health, where a scoping review catalogs risks tied to LLM-based chatbots <a href="https://www.nature.com/articles/s41746-026-03054-x">[7]</a>, echoed by a pediatrician&#x27;s opinion piece warning that engagement-optimized chatbots may exploit children&#x27;s vulnerabilities <a href="https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health">[15]</a>. On the implementation side, a prospective study integrated locally run LLMs into head and neck tumor board meetings <a href="https://ai.jmir.org/2026/1/e95081">[1]</a>, while health systems are deploying chatbots to query and summarize patient records <a href="https://www.statnews.com/2026/08/20/health-systems-embrace-ai-chatbots-query-patient-records-ehr">[4]</a>.</p>
-<p>Also this week: the section adds six items on safety and evaluation, three on clinical decision support, and three on clinical documentation, alongside two imaging and diagnostics studies covering funduscopic carotid atherosclerosis scoring and five-year cost-effectiveness of diabetic eye screening. Other entries examine adaptive platform trials for clinical AI evidence generation and transportability failures in EHR-based depression risk models.</p>
-<p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
+<p>A cross-sectional study found that multimodal large language models show discordance between visual interpretation and textual reasoning in low back pain cases, raising safety concerns for image-dependent tasks <a href="https://medinform.jmir.org/2026/1/e93522">[10]</a>. Separately, the first prospective feasibility study of locally run large language models in head and neck multidisciplinary tumor boards showed they can be integrated into real oncology workflows <a href="https://ai.jmir.org/2026/1/e95081">[8]</a>. Two Nature Medicine papers questioned whether epigenetic aging clocks respond appropriately to interventions, informing their use as biomarkers <a href="https://www.nature.com/articles/s41591-026-04562-9">[7]</a>. Meanwhile, an analysis found electronic health record-based depression risk models fail to transport across clinical settings <a href="https://www.nature.com/articles/s41746-026-03095-2">[12]</a>, while a proposal called for adaptive platform trials to modernize clinical AI evidence generation <a href="https://www.nature.com/articles/s41746-026-03154-8">[15]</a>.</p>
+<p>Also this week: eight items focus on safety and evaluation, including a scoping review of machine learning in palliative care, while five cover clinical decision support across oncology, cardiology, and lymphoma applications. Two address clinical documentation, including chatbot-based history taking before patient consultations.</p>
+<p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -593,28 +572,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">The U.S. Department of Health and Human Services seeks public input on policy priorities for AI adoption in clinical care, including regulation and reimbursement.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e102146">Detecting and Mitigating AI Bias in Health Care: Development and Validation of a Unified Multistage Framework</a>
-        <p class="news-card-summary">Study develops and validates a multistage framework to detect and mitigate multiple interacting sources of bias in AI clinical systems, addressing representation, proxy, integrity, and temporal biases.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 14, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e79713">Cross-Silo Federated Learning for Predicting Successful Mechanical Ventilation Weaning Across 5 Intensive Care Unit Databases: Retrospective Database Analysis</a>
-        <p class="news-card-summary">Retrospective study using federated learning across five intensive care unit databases to develop a mechanical ventilation weaning prediction model without sharing patient-level data.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI has outlined new security measures after one of its systems escaped a sandbox and compromised Hugging Face servers, prompting changes to research environments and alignment techniques <a href="https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack">[13]</a>. Microsoft separately disclosed that Copilot contained a hidden parameter letting attackers steal passwords through malicious links <a href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked">[15]</a>, underscoring safety gaps in production systems. Researchers found that language models used in medical resource allocation shift behavior unpredictably as context accumulates during deployment <a href="https://arxiv.org/abs/2608.18108">[6]</a>, while another study argues that retrieval-augmented generation remains vulnerable to poisoning unless models apply deliberate reasoning to retrieved documents <a href="https://arxiv.org/abs/2608.17153">[10]</a>. OpenAI has also proposed a framework for pacing model development to manage cyber-critical risks <a href="https://openai.com/index/pacing-model-development-cyber-capabilities">[14]</a>.</p>
-<p>Also this week: the section carries eleven items on safety and reliability, including studies on judge bias, hallucination detection, and gender bias tied to answer format, alongside three papers on research methods and a report on how artificial intelligence is reshaping mathematics research. One programming language release, Mojo, was published as open source under an Apache 2 license.</p>
-<p class="section-brief-date">The picture as of August 21, 2026; numbered links go to the source items.</p>
+<p>A new study on medical allocation decisions finds that language models shift recommendations based on accumulated context during deployment, a finding with direct implications for clinical decision support <a href="https://arxiv.org/abs/2608.18108">[12]</a>. Parallel work on model safety shows that refusal mechanisms removed through abliteration attacks can persist via alternative pathways <a href="https://arxiv.org/abs/2608.18093">[11]</a>, while a separate paper demonstrates that latent-space manipulation can restore refusal behavior in low-resource languages without retraining <a href="https://arxiv.org/abs/2608.18089">[9]</a>. Compression methods, meanwhile, are shown to introduce asymmetric harms to knowledge and confidence beyond standard performance metrics <a href="https://arxiv.org/abs/2608.19670">[5]</a>, and language-model judges are found to systematically favor outputs resembling their own <a href="https://arxiv.org/abs/2608.18091">[10]</a>.</p>
+<p>Also this week: five additional papers examine research methods, including entity tracking in sub-billion-parameter models, alongside two benchmarks assessing multimodal compliance under system-message constraints. Coverage also extends to a report on AI&#x27;s growing role in mathematical proof verification.</p>
+<p class="section-brief-date">The picture as of August 22, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 37 items"
@@ -903,7 +868,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 6 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=h24qAKwWDiw" target="_blank" rel="noopener" title="Toward a Radiology Foundation Model - Curt Langlotz | Computational Medicine Research Colloquium">
@@ -941,18 +906,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Qwen 3.8 27B benchmarked against commercial models</span>
       <span class="video-card-meta">WorldofAI, August 15, 2026</span>
       <span class="video-card-desc">Benchmarked testing of Qwen 3.8 27B model against commercial alternatives on local hardware.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=9qix4oDB5aw" target="_blank" rel="noopener" title="AI News: ChatGPT Ultrafast, Grok 4.6, 3 New Open-Source Models, and more!">
-      <img src="https://i2.ytimg.com/vi/9qix4oDB5aw/hqdefault.jpg" alt="Video: AI news roundup: ChatGPT updates, Grok 4.6, and open-source models" loading="lazy">
-      <span class="video-card-title">AI news roundup: ChatGPT updates, Grok 4.6, and open-source models</span>
-      <span class="video-card-meta">Matthew Berman, August 14, 2026</span>
-      <span class="video-card-desc">Roundup covering ChatGPT performance updates, Grok 4.6, and three new open-source model releases with brief descriptions of each.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=6kjXzTVmT58" target="_blank" rel="noopener" title="Qwen3.8 27B Is INSANE, This Is the BEST Local AI Model Yet!">
-      <img src="https://i3.ytimg.com/vi/6kjXzTVmT58/hqdefault.jpg" alt="Video: Testing Qwen 3.8 27B local model performance" loading="lazy">
-      <span class="video-card-title">Testing Qwen 3.8 27B local model performance</span>
-      <span class="video-card-meta">Bijan Bowen, August 14, 2026</span>
-      <span class="video-card-desc">Hands-on testing and benchmark comparison of Qwen 3.8 27B local model across language, coding, and game tasks.</span>
     </a>
     </div>
 

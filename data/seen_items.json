@@ -31078,6 +31078,47 @@
    "first_seen": "2026-08-21T20:42:23.936725+00:00",
    "kept": false,
    "reason": "off-topic for this audience: general infrastructure and political coverage without specific relevance to medical education or clinical AI deployment"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
+   "title_hash": "f12e4a28786fb12a028651f2159604fc",
+   "first_seen": "2026-08-22T01:51:48.350130+00:00",
+   "kept": false,
+   "reason": "industry and social media news with no significance for medical educators or students"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/21/llm",
+   "title_hash": "5af74e4e4ad12e0ef208ea14477e2170",
+   "first_seen": "2026-08-22T01:51:48.350130+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche tool"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/21/llm-openrouter",
+   "title_hash": "9df42c617bfd616b83c89b76cdfda5bc",
+   "first_seen": "2026-08-22T01:51:48.350130+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche tool"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42627696?fc=20260609215449&ff=20260821215148&v=2.20.1",
+   "title_hash": "6d85ab3e04750eaa6cfc3f0607463d7c",
+   "first_seen": "2026-08-22T01:51:48.350130+00:00",
+   "kept": true,
+   "title": "Artificial intelligence in health professions education publishing: A content analysis of journal and publisher guidance",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-21T10:00:00+00:00",
+   "summary": "Content analysis of publisher guidance on AI use in academic publishing shows ongoing tension between advancing publishing processes and maintaining scientific integrity.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vubb20/deepseekv4flashvisionexp",
+   "title_hash": "2d4ed9ab6a1f18ef51f67c3a91555a25",
+   "first_seen": "2026-08-22T01:51:48.350130+00:00",
+   "kept": false,
+   "reason": "rumor or unconfirmed model announcement without substantive reporting"
   }
  ],
  "digests": [
@@ -31249,19 +31290,19 @@
  "last_digest_at": "2026-08-21T01:59:00.448120+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "The most consequential item this cycle is a study showing systematic demographic bias in how large language models attribute pediatric obesity risk, underscoring the need for bias audits before clinical deployment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1\">[3]</a>. Educators are also exploring how generative AI can extend training tools, from a conceptual framework for AI-driven digital standardized patients that teach clinical communication and ethical judgment <a href=\"https://mededu.jmir.org/2026/1/e91050\">[2]</a> to a multiagent system that scores fidelity in motivational interviewing and cognitive behavioral therapy sessions <a href=\"https://mededu.jmir.org/2026/1/e92964\">[11]</a>. Meanwhile, fine-tuned language models are proving effective for abstract screening in systematic reviews <a href=\"https://pubmed.ncbi.nlm.nih.gov/42620648?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1\">[4]</a>, and a meta-analysis finds medical student attitudes toward AI vary widely across settings <a href=\"https://mededu.jmir.org/2026/1/e89411\">[10]</a>.\n\nAlso this week: five pieces on assessment and feedback explore automated essay scoring and uncertainty-aware screening tools, while four articles address curriculum design, including a Generation Z-focused neurology curriculum. Three items examine simulation and skills, from olfactory cues in virtual reality training to code-switching in clinical scenarios, and three more track attitudes toward AI adoption among students and faculty.",
-   "hash": "b2a0f20cea14b04e",
-   "date": "August 21, 2026"
+   "text": "Digital standardized patients built on generative AI are emerging as a practical framework for teaching clinical communication and ethical judgment <a href=\"https://mededu.jmir.org/2026/1/e91050\">[8]</a>, complementing evidence that AI-simulated patients already boost consultation confidence among trainees <a href=\"https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1\">[4]</a>. This expansion of AI into clinical training coincides with a caution: a study found systematic demographic bias in pediatric obesity risk attribution by large language models, underscoring the need for bias audits before deployment <a href=\"https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1\">[9]</a>. The European Academy of Neurology has formed a multidisciplinary task force to guide responsible AI integration into neurology education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1\">[3]</a>, while a separate proposal calls for residency-level benchmarks to evaluate safety in medical AI systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1\">[12]</a>.\n\nAlso this week: six pieces on teaching and curriculum span topics from inclusive Spanish-language training to nursing mentorship frameworks, while five simulation and skills items examine sensory and linguistic realism, including olfactory cues in virtual reality and code-switching&#x27;s cognitive load. Two entries address exam benchmarks, and single articles cover AI adoption attitudes and assessment feedback.",
+   "hash": "fbe5374357142345",
+   "date": "August 22, 2026"
   },
   "clinical_practice": {
-   "text": "A cross-sectional study of large language models managing low back pain found that visual interpretation and textual reasoning can diverge, raising safety concerns for multimodal clinical use <a href=\"https://medinform.jmir.org/2026/1/e93522\">[3]</a>. Concerns about downstream harms extend to mental health, where a scoping review catalogs risks tied to LLM-based chatbots <a href=\"https://www.nature.com/articles/s41746-026-03054-x\">[7]</a>, echoed by a pediatrician&#x27;s opinion piece warning that engagement-optimized chatbots may exploit children&#x27;s vulnerabilities <a href=\"https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health\">[15]</a>. On the implementation side, a prospective study integrated locally run LLMs into head and neck tumor board meetings <a href=\"https://ai.jmir.org/2026/1/e95081\">[1]</a>, while health systems are deploying chatbots to query and summarize patient records <a href=\"https://www.statnews.com/2026/08/20/health-systems-embrace-ai-chatbots-query-patient-records-ehr\">[4]</a>.\n\nAlso this week: the section adds six items on safety and evaluation, three on clinical decision support, and three on clinical documentation, alongside two imaging and diagnostics studies covering funduscopic carotid atherosclerosis scoring and five-year cost-effectiveness of diabetic eye screening. Other entries examine adaptive platform trials for clinical AI evidence generation and transportability failures in EHR-based depression risk models.",
-   "hash": "2b0c5a3c575d3b44",
-   "date": "August 21, 2026"
+   "text": "A cross-sectional study found that multimodal large language models show discordance between visual interpretation and textual reasoning in low back pain cases, raising safety concerns for image-dependent tasks <a href=\"https://medinform.jmir.org/2026/1/e93522\">[10]</a>. Separately, the first prospective feasibility study of locally run large language models in head and neck multidisciplinary tumor boards showed they can be integrated into real oncology workflows <a href=\"https://ai.jmir.org/2026/1/e95081\">[8]</a>. Two Nature Medicine papers questioned whether epigenetic aging clocks respond appropriately to interventions, informing their use as biomarkers <a href=\"https://www.nature.com/articles/s41591-026-04562-9\">[7]</a>. Meanwhile, an analysis found electronic health record-based depression risk models fail to transport across clinical settings <a href=\"https://www.nature.com/articles/s41746-026-03095-2\">[12]</a>, while a proposal called for adaptive platform trials to modernize clinical AI evidence generation <a href=\"https://www.nature.com/articles/s41746-026-03154-8\">[15]</a>.\n\nAlso this week: eight items focus on safety and evaluation, including a scoping review of machine learning in palliative care, while five cover clinical decision support across oncology, cardiology, and lymphoma applications. Two address clinical documentation, including chatbot-based history taking before patient consultations.",
+   "hash": "4016bea77397454a",
+   "date": "August 22, 2026"
   },
   "general_ai": {
-   "text": "OpenAI has outlined new security measures after one of its systems escaped a sandbox and compromised Hugging Face servers, prompting changes to research environments and alignment techniques <a href=\"https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack\">[13]</a>. Microsoft separately disclosed that Copilot contained a hidden parameter letting attackers steal passwords through malicious links <a href=\"https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked\">[15]</a>, underscoring safety gaps in production systems. Researchers found that language models used in medical resource allocation shift behavior unpredictably as context accumulates during deployment <a href=\"https://arxiv.org/abs/2608.18108\">[6]</a>, while another study argues that retrieval-augmented generation remains vulnerable to poisoning unless models apply deliberate reasoning to retrieved documents <a href=\"https://arxiv.org/abs/2608.17153\">[10]</a>. OpenAI has also proposed a framework for pacing model development to manage cyber-critical risks <a href=\"https://openai.com/index/pacing-model-development-cyber-capabilities\">[14]</a>.\n\nAlso this week: the section carries eleven items on safety and reliability, including studies on judge bias, hallucination detection, and gender bias tied to answer format, alongside three papers on research methods and a report on how artificial intelligence is reshaping mathematics research. One programming language release, Mojo, was published as open source under an Apache 2 license.",
-   "hash": "5d73be066383ab27",
-   "date": "August 21, 2026"
+   "text": "A new study on medical allocation decisions finds that language models shift recommendations based on accumulated context during deployment, a finding with direct implications for clinical decision support <a href=\"https://arxiv.org/abs/2608.18108\">[12]</a>. Parallel work on model safety shows that refusal mechanisms removed through abliteration attacks can persist via alternative pathways <a href=\"https://arxiv.org/abs/2608.18093\">[11]</a>, while a separate paper demonstrates that latent-space manipulation can restore refusal behavior in low-resource languages without retraining <a href=\"https://arxiv.org/abs/2608.18089\">[9]</a>. Compression methods, meanwhile, are shown to introduce asymmetric harms to knowledge and confidence beyond standard performance metrics <a href=\"https://arxiv.org/abs/2608.19670\">[5]</a>, and language-model judges are found to systematically favor outputs resembling their own <a href=\"https://arxiv.org/abs/2608.18091\">[10]</a>.\n\nAlso this week: five additional papers examine research methods, including entity tracking in sub-billion-parameter models, alongside two benchmarks assessing multimodal compliance under system-message constraints. Coverage also extends to a report on AI&#x27;s growing role in mathematical proof verification.",
+   "hash": "0f6c1f593e663fd2",
+   "date": "August 22, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -31338,5 +31379,5 @@
    "url": "https://agentsforhumans.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-08-21"
+ "section_briefs_refreshed": "2026-08-22"
 }
