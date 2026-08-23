@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 30 items"
+??? abstract "Show the 31 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (30)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 23, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">When end users can build: AI-assisted application development and the new accountability gap in digital health</a>
+        <p class="news-card-summary">When health professionals use generative AI to build their own digital tools, accountability for safety and quality shifts from developers to end users, raising new governance questions.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
@@ -561,9 +568,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -840,21 +847,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_C.png?quality=90&amp;strip=all&amp;crop=0%2C10.742221417566%2C100%2C78.515557164868&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 16, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/ai-cpu-comeback">The CPU Comeback Is Upon Us</a>
-        <p class="news-card-summary">AWS is experiencing CPU capacity constraints as AI workloads strain cloud infrastructure, prompting a shift toward CPU-efficient computing strategies.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-single-computer-chip-balancing-on-the-tip-of-a-pyramid.jpg?id=67615384&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 5 videos"
+??? abstract "Show the 3 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=h24qAKwWDiw" target="_blank" rel="noopener" title="Toward a Radiology Foundation Model - Curt Langlotz | Computational Medicine Research Colloquium">
@@ -874,18 +873,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">AI security tradeoffs: intelligence, speed, and safety</span>
       <span class="video-card-meta">IBM Technology, August 18, 2026</span>
       <span class="video-card-desc">Explainer of the tradeoffs between intelligence, speed, and security in AI systems and their implications for deployment.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=BHGTA6ZEls4" target="_blank" rel="noopener" title="5 Ways to Connect AI Agents to Tools: From APIs to MCP">
-      <img src="https://i3.ytimg.com/vi/BHGTA6ZEls4/hqdefault.jpg" alt="Video: Connecting AI agents to tools: methods and protocols" loading="lazy">
-      <span class="video-card-title">Connecting AI agents to tools: methods and protocols</span>
-      <span class="video-card-meta">IBM Technology, August 16, 2026</span>
-      <span class="video-card-desc">Overview of five approaches for connecting AI agents to external tools, including application programming interfaces and model context protocol.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=3TeW8L9wy-Y" target="_blank" rel="noopener" title="GLM 5.3 Is HERE, Is THIS the BEST Open Model Yet?">
-      <img src="https://i4.ytimg.com/vi/3TeW8L9wy-Y/hqdefault.jpg" alt="Video: GLM 5.3 open model evaluation and testing" loading="lazy">
-      <span class="video-card-title">GLM 5.3 open model evaluation and testing</span>
-      <span class="video-card-meta">Bijan Bowen, August 16, 2026</span>
-      <span class="video-card-desc">Hands-on evaluation of GLM 5.3 open-weights model across multiple benchmarks and use cases.</span>
     </a>
     </div>
 

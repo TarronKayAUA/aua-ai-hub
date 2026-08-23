@@ -30889,6 +30889,47 @@
    "first_seen": "2026-08-23T08:50:28.808722+00:00",
    "kept": false,
    "reason": "marketing from a vendor channel for their own product"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&ff=20260823090325&v=2.20.1",
+   "title_hash": "bb91c2e86a5edeab14a7eda1471e6e41",
+   "first_seen": "2026-08-23T13:03:25.107509+00:00",
+   "kept": true,
+   "title": "When end users can build: AI-assisted application development and the new accountability gap in digital health",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-23T10:00:00+00:00",
+   "summary": "When health professionals use generative AI to build their own digital tools, accountability for safety and quality shifts from developers to end users, raising new governance questions.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vvv7iv/the_all_spark_cluster_upgrading_from_16_36_dgx",
+   "title_hash": "f45c6538883809689cdd17b128515b2d",
+   "first_seen": "2026-08-23T13:03:25.107509+00:00",
+   "kept": false,
+   "reason": "personal hobby project with no relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VbNdual0DFo",
+   "title_hash": "d5468b7ee808de274118e2c42bbe8efd",
+   "first_seen": "2026-08-23T13:03:25.107509+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models without substantive analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=eFf2OvkZxEM",
+   "title_hash": "aaef7a0754a8bffde4da165a963d9545",
+   "first_seen": "2026-08-23T13:03:25.107509+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Real-Future-of-AI-and-Work-e3noahk",
+   "title_hash": "85995d4612e6995750437be098a6775d",
+   "first_seen": "2026-08-23T13:03:25.107509+00:00",
+   "kept": false,
+   "reason": "daily news show recap, not a standout episode with substantive content for this audience"
   }
  ],
  "digests": [

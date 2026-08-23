@@ -21,6 +21,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">When end users can build: AI-assisted application development and the new accountability gap in digital health</a>
+    <p class="news-card-summary">When health professionals use generative AI to build their own digital tools, accountability for safety and quality shifts from developers to end users, raising new governance questions.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Same child, different risk: demographic bias in childhood obesity attribution by large language models</a>
     <p class="news-card-summary">Study found systematic demographic bias in large language models when attributing pediatric obesity risk, highlighting need for pre- and post-deployment bias auditing before clinical use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620648?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Transforming Systematic Reviews: Evaluating a Fine-Tuned Large Language Model for Abstract Screening in Uveitis and Retinal Vasculitis: Fine-Tuned LLM for Review Screening</a>
-    <p class="news-card-summary">Fine-tuned large language model demonstrated expert-level performance for abstract screening in uveitis and retinal vasculitis systematic reviews, outperforming general-purpose models.</p>
   </div>
 </div>
 </div>
