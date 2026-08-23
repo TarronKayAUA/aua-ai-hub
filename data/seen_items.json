@@ -30882,6 +30882,13 @@
    "first_seen": "2026-08-23T04:53:13.258545+00:00",
    "kept": false,
    "reason": "news roundup video with speculative framing and no substantive educational content for medical audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=oBuWXUy7stw",
+   "title_hash": "9f2d3fc67fd12845ffffe5648efe6e8e",
+   "first_seen": "2026-08-23T08:50:28.808722+00:00",
+   "kept": false,
+   "reason": "marketing from a vendor channel for their own product"
   }
  ],
  "digests": [
