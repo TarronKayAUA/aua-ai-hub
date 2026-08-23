@@ -1,62 +1,6 @@
 {
  "items": [
   {
-   "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
-   "title_hash": "249e2a01a2a461c15f82c00deb2dbbb6",
-   "first_seen": "2026-06-24T17:29:20.306852+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-   "title_hash": "d710814bbc30751514148f36b6080ca0",
-   "first_seen": "2026-06-24T17:29:20.306852+00:00",
-   "kept": true,
-   "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-06-24T13:14:39+00:00",
-   "summary": "OpenAI and Broadcom announced a custom inference chip optimized for large language model deployment.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4DeZq8e24W4qgIrtAu4Xmg/54189176ae1c6150d94cac02fb104f79/openai-broadcom-jalapeno-inference-chip-image-16_9.png?w=1600&h=900&fit=fill"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02910-0",
-   "title_hash": "111a5d289a75ef454dddd873409bf5b4",
-   "first_seen": "2026-06-24T17:29:20.306852+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04508-1",
-   "title_hash": "51e4033b68dfcef8e82ab50c32bb0d80",
-   "first_seen": "2026-06-24T17:29:20.306852+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://huggingface.co/blog/ffasr-leaderboard",
-   "title_hash": "6fae39e7e9302ddacbf4a6422907e611",
-   "first_seen": "2026-06-24T17:29:20.306852+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.krea.ai/blog/krea-2-technical-report",
-   "title_hash": "dfa55ff7e26a6e357f485ae12c827e9c",
-   "first_seen": "2026-06-24T17:29:20.306852+00:00",
-   "kept": true,
-   "title": "Krea 2: SOTA open-weights 12B image model",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-06-23T15:31:21+00:00",
-   "summary": "Krea 2, a state-of-the-art open-weights 12 billion parameter image generation model, was released.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://s.krea.ai/blog-posts/krea-2-technical-report/agent/1782227962641-krea2-hero-new.jpg"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uc79ho/glm52_is_on_deepswe",
-   "title_hash": "b2b27529e3f717bb8780db3c3cd1e100",
-   "first_seen": "2026-06-24T17:29:20.306852+00:00",
-   "kept": false
-  },
-  {
    "url": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology",
    "title_hash": "73f27e5734fea1522e23f75c1c305868",
    "first_seen": "2026-06-25T16:09:48.276449+00:00",
@@ -30480,6 +30424,34 @@
    "first_seen": "2026-08-23T16:44:29.851180+00:00",
    "kept": false,
    "reason": "forum discussion of model performance without significant benchmark data or methodological rigor; falls below source quality bar for general_ai"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t",
+   "title_hash": "61cded4779e6e9b5d8f758c316eea240",
+   "first_seen": "2026-08-23T20:41:05.918378+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/23/drew-breunig",
+   "title_hash": "8cf5c83d400447d65abdc590a04657c8",
+   "first_seen": "2026-08-23T20:41:05.918378+00:00",
+   "kept": false,
+   "reason": "forum discussion without instructive analysis for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vry2ns/and_here_we_are",
+   "title_hash": "6ec6b0b042bd0b8a06ae87f3dff61303",
+   "first_seen": "2026-08-23T20:41:05.918378+00:00",
+   "kept": false,
+   "reason": "community meta-discussion without substantive content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vq8rsf/qwen_38_9b",
+   "title_hash": "dad85da9e795b4d37e13bd55c1a2cbe0",
+   "first_seen": "2026-08-23T20:41:05.918378+00:00",
+   "kept": false,
+   "reason": "minor model release speculation without confirmation"
   }
  ],
  "digests": [
