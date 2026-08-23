@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -26,6 +26,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42629687?fc=20260609215449&amp;ff=20260822090215&amp;v=2.20.1">Artificial intelligence in medical education: Performance of ChatGPT versus medical students on medical examination</a>
     <p class="news-card-summary">Study comparing ChatGPT performance against medical students on preventive medicine examination questions, evaluating accuracy and reliability in medical problem-solving.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">Twelve tips for educators supporting learner-centered AI integration in undergraduate medical education</a>
+    <p class="news-card-summary">Practical guidance for educators integrating artificial intelligence into undergraduate medical education using a five-level socio-ecological framework.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42630272?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">Effectiveness of a &quot;5E+AI&quot; teaching model on science communication in medical students: a contribution to global health literacy</a>
+    <p class="news-card-summary">Study evaluates a teaching model combining the 5E framework with artificial intelligence to improve medical student knowledge acquisition and science communication skills.</p>
   </div>
 </div>
 <div class="news-card" data-topic="simulation-and-skills">
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620648?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Transforming Systematic Reviews: Evaluating a Fine-Tuned Large Language Model for Abstract Screening in Uveitis and Retinal Vasculitis: Fine-Tuned LLM for Review Screening</a>
     <p class="news-card-summary">Fine-tuned large language model demonstrated expert-level performance for abstract screening in uveitis and retinal vasculitis systematic reviews, outperforming general-purpose models.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42620587?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">Large language models in emergency medicine education: opportunities, challenges, and implementation pathways</a>
-    <p class="news-card-summary">Review of evidence for large language models in emergency medicine education, discussing opportunities, challenges, and implementation pathways for phased adoption.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">Building safer clinical agents: the case for residency-level benchmarks in medical artificial intelligence</a>
-    <p class="news-card-summary">Proposes residency-level benchmarks for evaluating safety in medical artificial intelligence systems.</p>
   </div>
 </div>
 </div>

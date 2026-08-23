@@ -18,9 +18,17 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 22, 2026</span></div>
+    <a class="news-card-title" href="https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917">Why your local LLM feels dumber than it is</a>
+    <p class="news-card-summary">Analysis of why locally run large language models underperform relative to their capabilities and how prompt engineering and configuration affect perceived quality.</p>
+  </div>
+  <img class="news-card-thumb" src="https://level1techs.us-east-1.linodeobjects.com/original/4X/d/8/7/d87c01532439840126d90ea94abfdfcf6501f42f.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 22, 2026</span></div>
@@ -119,13 +127,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.18114">Accurate Decoding of Natural Sentences from Non-Invasive Brain Recordings</a>
     <p class="news-card-summary">Brain2Qwerty v2 decodes natural sentence production from non-invasive brain recordings, advancing brain-computer interface technology for communication restoration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.18115">Temporal Multi-Signal Fusion for Token-Level Hallucination Detection</a>
-    <p class="news-card-summary">A sequence labeling approach detects token-level hallucinations by fusing multiple signals over time rather than scoring tokens independently.</p>
   </div>
 </div>
 </div>
