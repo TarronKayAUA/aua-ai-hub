@@ -30466,6 +30466,212 @@
    "first_seen": "2026-08-24T01:58:51.384399+00:00",
    "kept": false,
    "reason": "vendor marketing; customer case study from the product's own company"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20344",
+   "title_hash": "f738b95462be200d86d12723610bf280",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on digital persona extraction with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20345",
+   "title_hash": "198fe62453b96bccffe823902753d36c",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": true,
+   "title": "When Vocabulary Comprehension Fails Clinical Reasoning: Evaluating Therapy Bots' Safety Risks for Generation Alpha",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-24T04:00:00+00:00",
+   "summary": "Study evaluates safety risks of conversational AI systems used by adolescents for mental health support, examining failures in clinical reasoning when systems misunderstand psychological concepts.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Other"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20346",
+   "title_hash": "1885aa7f724339c3c97a781f2cf187b7",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow domain application with no relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20347",
+   "title_hash": "7e86750c10ce01be94e275d66592dbf0",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow methodological study with no direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20348",
+   "title_hash": "c72a39af832fea71cb5fa70976d50855",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": true,
+   "title": "Inhibitory Attention for Clinical Long-Context Reasoning: Characterizing and Mitigating Lost-in-the-Middle Effects in EHR Processing",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-24T04:00:00+00:00",
+   "summary": "Research identifies and proposes mitigation for lost-in-the-middle effects in large language models processing long electronic health records, where critical information in the middle is retrieved less reliably.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20349",
+   "title_hash": "203a95a11150ae7864873f8967dc9328",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical analysis of prompt sensitivity with limited relevance to medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20350",
+   "title_hash": "3c47e9d44c70086d2b1b5b30b6bb546f",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on industrial agent workflows with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20351",
+   "title_hash": "33974edfe55e08ae0fd332e471e4be0f",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "specialized privacy audit study with limited relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20353",
+   "title_hash": "d869a33feb862a178452b67fb07fa087",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on mental health NLP classifiers without clinical deployment relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20355",
+   "title_hash": "9a8fd112f744d49b1be09ed58f28d444",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on value simulation with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20359",
+   "title_hash": "b55c9a1cfd8b3b4196aaa71c5c4697c4",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization study with limited relevance to medical applications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20360",
+   "title_hash": "fff1b2fb354abc141570ac9a0ad97d11",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical architecture study with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20361",
+   "title_hash": "6d5d51c0403b15560221bca75000022f",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on research idea generation with limited medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20362",
+   "title_hash": "d3805a1f546f33b4956924e99d3d5bf6",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on multilingual mathematical reasoning with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20364",
+   "title_hash": "070124863d3bdd52232633368f5e099f",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, concerns computational analysis of religious texts"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20365",
+   "title_hash": "d3ac90aff11593abc34bd4b11cb61258",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow domain application with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20368",
+   "title_hash": "6355cae9149c4eacbe3167a569429ce4",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow domain application with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20369",
+   "title_hash": "ae4d64eeffca9540c18ec25f9a3d602e",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": true,
+   "title": "ASTAR: Automated induction of STAndardized radiology Reporting templates from large-scale clinical free-text corpora",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-24T04:00:00+00:00",
+   "summary": "Automated system generates standardized radiology reporting templates from free-text clinical corpora, enabling structured extraction of queryable data from narrative reports.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20371",
+   "title_hash": "bc82e21531314eb9f56f0a7e9f9b33b4",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical comparison of intent detection methods with limited medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20373",
+   "title_hash": "86e4738986ecf7ea0fb83e6e8dc362cb",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": true,
+   "title": "An ambiguity taxonomy for evaluating large language model performance on clinical registry abstraction: a multi-site prospective study",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-24T04:00:00+00:00",
+   "summary": "Prospective multi-site study evaluates large language model performance on clinical registry abstraction from electronic medical records, using ambiguity taxonomy to characterize errors.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20374",
+   "title_hash": "a2aeded074a35f5bf534cbf0b557e9f7",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on emotion generation with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20375",
+   "title_hash": "3fe9b85c3963764f752eae28581d7c75",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization study with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20376",
+   "title_hash": "0917b12c265064d2a2ad57f0ecb85cd8",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical study on detection of synthetic content with limited medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20381",
+   "title_hash": "a9fa1eb143e21d638d4486f8587d400c",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical application to presentation editing with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.20382",
+   "title_hash": "8c2dfe56fb7d4772515047e8a5d51800",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "narrow technical architecture study with no direct medical relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vveabg/this_is_a_great_sub_regardless_of_what_complaints",
+   "title_hash": "e3ce677845431eb8dae4624f5d58e60f",
+   "first_seen": "2026-08-24T05:03:00.465603+00:00",
+   "kept": false,
+   "reason": "community meta-discussion with no substantive news or educational content"
   }
  ],
  "digests": [

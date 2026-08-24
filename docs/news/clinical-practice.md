@@ -23,6 +23,27 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.20348">Inhibitory Attention for Clinical Long-Context Reasoning: Characterizing and Mitigating Lost-in-the-Middle Effects in EHR Processing</a>
+    <p class="news-card-summary">Research identifies and proposes mitigation for lost-in-the-middle effects in large language models processing long electronic health records, where critical information in the middle is retrieved less reliably.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.20369">ASTAR: Automated induction of STAndardized radiology Reporting templates from large-scale clinical free-text corpora</a>
+    <p class="news-card-summary">Automated system generates standardized radiology reporting templates from free-text clinical corpora, enabling structured extraction of queryable data from narrative reports.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.20373">An ambiguity taxonomy for evaluating large language model performance on clinical registry abstraction: a multi-site prospective study</a>
+    <p class="news-card-summary">Prospective multi-site study evaluates large language model performance on clinical registry abstraction from electronic medical records, using ambiguity taxonomy to characterize errors.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03165-5">Delays between CE mark and FDA regulatory approval of AI-enabled software for radiology</a>
     <p class="news-card-summary">Analysis of regulatory delays between CE marking and FDA approval for artificial intelligence-enabled radiology software.</p>
@@ -104,28 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93522">Discordance Between Textual Reasoning and Visual Interpretation in Large Language Models for Low Back Pain: Cross-Sectional Quantitative Evaluation and Exploratory Multimodal Stress Test</a>
     <p class="news-card-summary">Study evaluates safety risks when multimodal large language models show discordance between visual interpretation and textual reasoning in low back pain management.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/20/health-systems-embrace-ai-chatbots-query-patient-records-ehr">STAT+: How health systems are embracing chatbots to query and summarize patient records</a>
-    <p class="news-card-summary">Large health systems are deploying AI chatbots to query and summarize patient records, reporting time savings and claims of improved diagnostic accuracy.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_491335537-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03095-2">Evaluating transportability failures of electronic health record-based risk models for treatment-resistant depression</a>
-    <p class="news-card-summary">Study examines why electronic health record-based risk models for treatment-resistant depression fail to transport across different clinical settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03114-2">Exploring a dynamic digital biomarker of illness severity in older ICU patients via interpretable time-series deep learning modeling</a>
-    <p class="news-card-summary">Researchers developed an interpretable deep learning model to detect dynamic digital biomarkers of illness severity in older intensive care unit patients using time-series data.</p>
   </div>
 </div>
 </div>
