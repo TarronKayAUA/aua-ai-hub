@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85822">A Simplified Metric to Streamline Between-Group Fairness Assessment for Predictive Models: Algorithm Development and Evaluation Study</a>
+    <p class="news-card-summary">Study develops a simplified metric to assess fairness in clinical prediction models, addressing the practical challenge of evaluating discrimination across patient groups.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 24, 2026</span></div>
@@ -62,6 +69,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03160-w">When machines misread science: creating guardrails for human and AI interpretation of biomedical research</a>
     <p class="news-card-summary">Guardrails for AI and human interpretation of biomedical research aim to prevent errors that could distort clinical evidence application.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03169-1">Generative versus discriminative diagnostic performance of large multimodal models in intracranial and spinal neuroradiology</a>
+    <p class="news-card-summary">Peer-reviewed study compares generative and discriminative approaches in large multimodal models for neuroradiology diagnosis in intracranial and spinal imaging.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -111,21 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03167-3">Clinical decision support in nasopharyngeal carcinoma: comparative evaluation of large reasoning and language models</a>
     <p class="news-card-summary">Peer-reviewed study comparing large reasoning models and language models for clinical decision support in nasopharyngeal carcinoma treatment planning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04524-1">Putting epigenetic aging clocks on trial</a>
-    <p class="news-card-summary">A systematic study tests whether DNA methylation aging clocks respond appropriately to clinical interventions, validating their use as surrogate endpoints for aging.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04524-1/MediaObjects/41591_2026_4524_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04562-9">Responsiveness of epigenetic aging biomarkers to longevity interventions in humans</a>
-    <p class="news-card-summary">Analysis of 16 epigenetic aging clocks across 51 studies shows differential responsiveness to pharmacological and lifestyle interventions, informing their reliability as biomarkers.</p>
   </div>
 </div>
 </div>

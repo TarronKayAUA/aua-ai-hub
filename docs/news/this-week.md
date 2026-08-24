@@ -268,8 +268,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 24, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85822">A Simplified Metric to Streamline Between-Group Fairness Assessment for Predictive Models: Algorithm Development and Evaluation Study</a>
+        <p class="news-card-summary">Study develops a simplified metric to assess fairness in clinical prediction models, addressing the practical challenge of evaluating discrimination across patient groups.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 24, 2026</span></div>
@@ -311,6 +318,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03160-w">When machines misread science: creating guardrails for human and AI interpretation of biomedical research</a>
         <p class="news-card-summary">Guardrails for AI and human interpretation of biomedical research aim to prevent errors that could distort clinical evidence application.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03169-1">Generative versus discriminative diagnostic performance of large multimodal models in intracranial and spinal neuroradiology</a>
+        <p class="news-card-summary">Peer-reviewed study compares generative and discriminative approaches in large multimodal models for neuroradiology diagnosis in intracranial and spinal imaging.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -580,20 +594,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03085-4">Fine-tuning an ECG foundation model to predict coronary CT angiography outcomes</a>
         <p class="news-card-summary">Fine-tuning an ECG foundation model improves prediction of coronary CT angiography outcomes, demonstrating transfer learning for cardiac diagnostic imaging.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03140-0">TabPFN-SHAP metabolic networks reveal chronic liver disease progression and identify a hepatocellular carcinoma screening panel</a>
-        <p class="news-card-summary">TabPFN-SHAP analysis of metabolic networks identifies chronic liver disease progression markers and proposes a hepatocellular carcinoma screening panel.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03150-y">Lightweight non-contrast CT-based multimodal artificial intelligence for subtype classification of hepatic cystic echinococcosis in resource-limited clinical settings</a>
-        <p class="news-card-summary">Lightweight multimodal AI system classifies hepatic cystic echinococcosis subtypes from non-contrast CT scans, designed for resource-limited settings.</p>
       </div>
     </div>
     </div>
