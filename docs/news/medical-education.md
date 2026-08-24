@@ -23,6 +23,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies">How to encourage smarter AI use in the classroom</a>
+    <p class="news-card-summary">MIT Technology Review examines strategies for encouraging thoughtful use of AI chatbots in educational settings rather than bypassing learning.</p>
+  </div>
+  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/8947cf02-f42b-04bb-03ce-c05c80e44d46.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42634457?fc=20260609215449&amp;ff=20260824091500&amp;v=2.20.1">Detection Status and Cost Analysis of Community Pulmonary Nodule Screening with Mobile LDCT Combined with AI</a>
     <p class="news-card-summary">Mobile low-dose CT screening combined with AI assistance identifies high-risk pulmonary nodule cases in community settings with cost analysis.</p>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42628268?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">A large language models-assisted and expert-corrected workflow for preoperative anesthesia assessment drafts: A single-centre exploratory feasibility study</a>
     <p class="news-card-summary">Large language models can draft preoperative anesthesia assessments, but expert review remains essential before clinical or educational use due to reliability gaps.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42628194?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">Mapping the evidence on generative artificial intelligence for higher-order thinking skills in nursing students: A scoping review</a>
-    <p class="news-card-summary">A scoping review finds generative AI can support higher-order thinking in nursing students but risks cognitive dependence; effective integration requires careful pedagogical design.</p>
   </div>
 </div>
 </div>

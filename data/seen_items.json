@@ -1,421 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology",
-   "title_hash": "73f27e5734fea1522e23f75c1c305868",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42344784?fc=20260609215449&ff=20260625120948&v=2.20.0",
-   "title_hash": "729895c4b7566bd9a4ecaafc373875cc",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42344248?fc=20260609215449&ff=20260625120948&v=2.20.0",
-   "title_hash": "9cb7f5e42ce5b80f7767717abaed6999",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42343943?fc=20260609215449&ff=20260625120948&v=2.20.0",
-   "title_hash": "4a9bbe59e766917b395d6244e4cf43e8",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "Performance of large language models in delivering accurate and comprehensible patient information on heart failure and cardiomyopathy",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-25T10:00:00+00:00",
-   "summary": "Study evaluates how well large language models deliver accurate and understandable patient information about heart failure and cardiomyopathy.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42343367?fc=20260609215449&ff=20260625120948&v=2.20.0",
-   "title_hash": "fee96d70712ccc690dc31263d322a43f",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uf4azy/nvidia_has_released",
-   "title_hash": "f1d77dbc11776fccd7a6397c5023318a",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uf0oso/if_llms_are_so_good_at_coding",
-   "title_hash": "bdcf99117ee51b120657e1b0970c26af",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.24889",
-   "title_hash": "b285bdc7a082b20579ae5bfd2767feb1",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.24890",
-   "title_hash": "edecd71522186feb3deecec4ab878461",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.24893",
-   "title_hash": "089e2930a2bece9a7c9d2ad5473e53da",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.24915",
-   "title_hash": "134fae57447e2404d041cf50f4423c88",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.24952",
-   "title_hash": "ba5e89a36696a1c647cfd0eaa908c258",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-25T04:00:00+00:00",
-   "summary": "Mechanistic interpretability research reveals a gap between detecting harmful capabilities in language models and successfully steering or controlling them.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.24957",
-   "title_hash": "c85a3030dd29ed77172b9353590d8c19",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.24973",
-   "title_hash": "52232befcab4fa45c018832e7cd59fe4",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25057",
-   "title_hash": "2f723024ea1d8965674b5a56ee4a228f",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-25T04:00:00+00:00",
-   "summary": "Preprint examines methods, benchmarks, and reliability challenges for using large language models to conduct peer review of scientific papers.",
-   "category": "general_ai",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25102",
-   "title_hash": "07a936fd0e5f6c3fff5564c853940532",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25143",
-   "title_hash": "718d2c816e7e013f57e1ee2fb8362d4a",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25152",
-   "title_hash": "69d547b3856fb29eecfa4e3b338abd40",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25182",
-   "title_hash": "ee31fe47282229b32cd1dee4b3edfe5b",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-25T04:00:00+00:00",
-   "summary": "Method detects jailbreak attacks on large language models by analyzing entropy dynamics in intermediate layers without requiring knowledge of attack prompts.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25231",
-   "title_hash": "02a2055d9185d544a65b53dd8a209b70",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25253",
-   "title_hash": "473dcdc8a73ec035e7bc8eafe8201327",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25331",
-   "title_hash": "3dde1a9826cde6d9fecadb0853607378",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25338",
-   "title_hash": "091dc4a508a9fb46a71e3ce33932376e",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "Hybrid-IR: Dual-Path Hybrid Retrieval with Iterative Reasoning for Complex Medical Question Answering",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-25T04:00:00+00:00",
-   "summary": "Hybrid-IR combines dual-path hybrid retrieval with iterative reasoning to improve large language model performance on complex medical question answering tasks.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25354",
-   "title_hash": "ca53d20475d57ab9837ef882e79235b8",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25361",
-   "title_hash": "bb123074641b89e12e55ede1d33f8e16",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25365",
-   "title_hash": "9b87841b536ea5b75a3e8d5760904ce8",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25372",
-   "title_hash": "74a365897abbcfa4b88fac4950b6b1ca",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25379",
-   "title_hash": "c4e6e39a3e1ca06d3e457debfc879491",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25380",
-   "title_hash": "da46b0cea8d8325a490c0fb32ecb56bb",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "A Survey of Toxicity Detection and Mitigation Strategies for Multilingual Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-06-25T04:00:00+00:00",
-   "summary": "Survey reviews detection and mitigation strategies for toxicity in multilingual large language models as they are increasingly deployed globally.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25383",
-   "title_hash": "2ddb8ad890431b6e8ba63942e27fec3d",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25421",
-   "title_hash": "d083d5cff6d19c7661286cdf1e6e85ad",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.25442",
-   "title_hash": "962a04751b6bdfd7c016d05603b30b13",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/d41591-026-00033-3",
-   "title_hash": "2bdad762872870b4b557ed6ac34e0456",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04481-9",
-   "title_hash": "2be3dd48c7c109f0a04204d649c01393",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04453-z",
-   "title_hash": "b1b17fd0fec9cf40cbc4d05b28483957",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04471-x",
-   "title_hash": "b7d981b25697aad12b8c49e195835bdc",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/24/browser-compat-db",
-   "title_hash": "c970af3e39f803a9a8e8c42f13fc4890",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale",
-   "title_hash": "2ab2d6f8bde390a11061c382126a7ce8",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "OpenAI and Broadcom announce chip designed for LLM inference at scale",
-   "source": "Ars Technica AI",
-   "published": "2026-06-24T22:28:18+00:00",
-   "summary": "OpenAI and Broadcom announce a custom silicon chip designed to handle large language model inference at scale amid growing computational demand.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image-500x500.webp"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e90852",
-   "title_hash": "25aa4eccba1719730e854eaf5721d855",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "Prediction of Early Hospital Admission (≤24 Hours) After Stroke Using Machine Learning and Deep Learning: Multicenter Study From China",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-06-24T21:15:03+00:00",
-   "summary": "Multicenter machine learning study from China develops models to predict early hospital admission within 24 hours after stroke for improved patient triage.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://asset.jmir.pub/assets/5023dc89505869aa37a36470fcc9b5ea.png"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e87959",
-   "title_hash": "bc0971ad8e4f0cf1c6be2d1ae90d1513",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "Effectiveness of Artificial Intelligence, Assisted Peer Teaching in Orthopedic Clinical Education: Historical Cohort Study",
-   "source": "JMIR Medical Education",
-   "published": "2026-06-24T20:45:02+00:00",
-   "summary": "Historical cohort study examines effectiveness of AI-assisted peer teaching in orthopedic clinical education compared to traditional peer teaching.",
-   "category": "medical_education",
-   "score": 4.0,
-   "thumbnail": "https://asset.jmir.pub/assets/c1ebd4f1d6710c903c129408430f160e.png"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e72655",
-   "title_hash": "206414f9ad0ed52d8d140126694f2c50",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24",
-   "title_hash": "ab2be3dac2a93d6d62fa0f1ebe99d299",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/24/tom-macwright",
-   "title_hash": "fb01646390c9fbc8b8f7379c79585f03",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e86107",
-   "title_hash": "bd6e8fd5962bcf4e1aed9bfa0dda08cd",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e84900",
-   "title_hash": "d91245899de7e079a5656daa3928cb52",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ueeund/the_swiss_federal_supreme_court_is_evaluating",
-   "title_hash": "eea9f16d57fbebe27a36abd93cffef17",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42341762?fc=20260609215449&ff=20260625120948&v=2.20.0",
-   "title_hash": "9cfee50c2388e7f7e9dfaca7c8d02469",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04532-1",
-   "title_hash": "6b4bab4e607138fd57a310aebe4c6a93",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucixz9/been_tracking_eu_ddr5_data_for_25_days_prices_are",
-   "title_hash": "1843a851899d267c56bc5a983d6047fd",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uar4e2/glm_52_98_of_max_level_intelligence_with_less",
-   "title_hash": "ff776af86829d220b4370a344c17df0d",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "GLM 5.2: 98% of max level intelligence with less than half of tokens usage",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-06-20T08:19:42+00:00",
-   "summary": "GLM-5.2 achieves 98 percent of maximum reasoning capability while using less than half the inference tokens required by its predecessor.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/vxL3J4B1cStZzAInWQ5D4gqyaUYke8i4-GOuqdek2Vw.png?width=140&height=73&auto=webp&s=d484efdefc2f79b158ceffc4b991b53ed1cf183f"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9vfhf/glm52_can_now_run_locally_in_llamacpp_and_unsloth",
-   "title_hash": "179aa5f5bd4e3e2e9876c267e0a39043",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "GLM-5.2 can now run locally in llama.cpp and Unsloth Studio.",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-06-19T07:34:56+00:00",
-   "summary": "GLM-5.2 is now runnable locally via llama.cpp and Unsloth Studio after compression from 1.51TB to 238GB while retaining 82 percent accuracy.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://preview.redd.it/3hzm5bu8078h1.jpeg?width=640&crop=smart&auto=webp&s=6629b2c33de56c2f3492a28d93aede6ca8917d8c"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9b2i3/poolsidelagunam1_hugging_face_225ba23b",
-   "title_hash": "f01fa8fa164ddb4c242190bb46c1d314",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "poolside/Laguna-M.1 · Hugging Face - 225B-A23B",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-06-18T16:30:57+00:00",
-   "summary": "Laguna M.1, a 225 billion parameter mixture-of-experts model with 23 billion activated parameters, is now available on Hugging Face.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/vHCU5AFU0BwrXZl0c0jt_f_O2yQ-jV1nc7SNtokYWKU.png?width=640&crop=smart&auto=webp&s=09eca81f311eecad4b4ad37a95cabbddf0e51bf0"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=12lB1Cz7gUw",
-   "title_hash": "b7f6279eabc35bbada976b258e890e89",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/5-Ways-Claude-Tag-Could-Change-How-You-Use-AI-e3l89g0",
-   "title_hash": "bf010f82eecfb79ad42d0d7168a91cc7",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://share.transistor.fm/s/e039d1ca",
-   "title_hash": "204b09a169ae3825a76f879c83da15ce",
-   "first_seen": "2026-06-25T16:09:48.276449+00:00",
-   "kept": true,
-   "title": "AIUC-1: Building trust in AI agents",
-   "source": "Practical AI",
-   "published": "2026-06-25T09:00:00+00:00",
-   "summary": "Discussion of how to build trust in AI agents, with Emil Lassen from the Artificial Intelligence Upstart Committee.",
-   "category": "podcasts",
-   "score": 3.0,
-   "thumbnail": "https://img.transistorcdn.com/89G25P83HZOemN0dpGiJ0ofsle6f0bOdMWHjVS7LB_Q/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wODZl/ZTNmNTE4ODVjMTc4/YTE2MGJhYjQ1M2Fk/ZTAzNC5wbmc.jpg"
-  },
-  {
    "url": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
    "title_hash": "4c93254e42418b0bfb2029ab9b79c911",
    "first_seen": "2026-06-25T17:37:18.758581+00:00",
@@ -30865,6 +30450,76 @@
    "score": 2.0,
    "thumbnail": "https://i3.ytimg.com/vi/zAe-sau06io/hqdefault.jpg",
    "display_title": "AI coding agents and codebase understanding"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china",
+   "title_hash": "fe1f8ca9486960efa254709170ca318f",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": false,
+   "reason": "corporate crime and smuggling, not AI development or deployment"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies",
+   "title_hash": "a6be019fd750d2ab4f6789b13ab1236f",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": true,
+   "title": "How to encourage smarter AI use in the classroom",
+   "source": "MIT Technology Review AI",
+   "published": "2026-08-24T14:20:19+00:00",
+   "summary": "MIT Technology Review examines strategies for encouraging thoughtful use of AI chatbots in educational settings rather than bypassing learning.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/8947cf02-f42b-04bb-03ce-c05c80e44d46.jpg?resize=1200,600",
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://spectrum.ieee.org/adaptable-engineer-core-skills",
+   "title_hash": "bc8ac6a8e1528fde7f8bdcc50c848650",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": false,
+   "reason": "general career advice tangentially related to AI, not substantive for medical educators"
+  },
+  {
+   "url": "https://jack-clark.net/2026/08/24/import-ai-470-no-rights-for-machines-automating-environment-generation-with-spade-and-building-better-gpu-kernels-with-hawkeye",
+   "title_hash": "ef1b5857c3b2bb0ea34738215baacbc8",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": true,
+   "title": "Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye",
+   "source": "Import AI",
+   "published": "2026-08-24T13:12:40+00:00",
+   "summary": "Import AI newsletter digest covers research on AI progress acceleration, environment generation automation, and GPU kernel optimization.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/08/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-Fauq8x.png?fit=258%2C258&ssl=1",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04663-5",
+   "title_hash": "4905d2e62080fb3aadc5463974a282b5",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": false,
+   "reason": "virology case report without AI relevance, off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04664-4",
+   "title_hash": "759fc575db953c2439e543eb39481114",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": false,
+   "reason": "virology study without AI relevance, off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vu1e3u/i_did_it_im_free_its_been_7_hours_since_i_used",
+   "title_hash": "bb27222827d89b55fd5d8c677bf6a93b",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": false,
+   "reason": "forum discussion of personal tool choice, not news or analysis of significance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ceBruD6v5Bk",
+   "title_hash": "c1495bafbb4082118920299a7f4c00bf",
+   "first_seen": "2026-08-24T16:57:02.359368+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company"
   }
  ],
  "digests": [
