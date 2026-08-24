@@ -219,3 +219,17 @@
   support: "Organizer-stated: $40,000 in cash prizes across three tracks, $50 in AWS credits, AWS Builder ID, featured AWS social posts"
   relevance: "Online AI hackathon with machine learning focus and substantial prizes, open to international participants and relevant to medical AI applications."
   verified: 2026-08-17
+
+# Auto-verified 2026-08-24 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "AI Builders Hackathon"
+  url: https://ai-builders-hackathon-2026.devpost.com/
+  organizer: "OSC"
+  type: hackathon
+  format: virtual
+  eligibility: "Individuals above legal age of majority, students and non-students, companies/professional organizations excluded, open to most countries"
+  deadline: 2026-09-15
+  start_date: 2026-08-21
+  end_date: 2026-09-15
+  support: "Organizer-stated: $33,900+ in prizes including cash awards and sponsor perks such as NexFellow plans and Tin Computer credits"
+  relevance: "General AI building opportunity open to international participants online; relevant for medical students seeking foundational ML skills."
+  verified: 2026-08-24
