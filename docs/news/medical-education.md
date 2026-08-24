@@ -21,6 +21,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42634457?fc=20260609215449&amp;ff=20260824091500&amp;v=2.20.1">Detection Status and Cost Analysis of Community Pulmonary Nodule Screening with Mobile LDCT Combined with AI</a>
+    <p class="news-card-summary">Mobile low-dose CT screening combined with AI assistance identifies high-risk pulmonary nodule cases in community settings with cost analysis.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="other">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42628194?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">Mapping the evidence on generative artificial intelligence for higher-order thinking skills in nursing students: A scoping review</a>
     <p class="news-card-summary">A scoping review finds generative AI can support higher-order thinking in nursing students but risks cognitive dependence; effective integration requires careful pedagogical design.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92700">Beyond Pattern Recognition: Call for Functionally Aware AI for Anatomical Illustration</a>
-    <p class="news-card-summary">A critical analysis of generative AI&#x27;s current limitations in anatomical illustration, identifying persistent accuracy and hallucination problems that prevent replacement of human medical illustrators.</p>
   </div>
 </div>
 </div>

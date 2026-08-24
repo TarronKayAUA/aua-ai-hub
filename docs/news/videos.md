@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9Rx76Qz2XpM" target="_blank" rel="noopener" title="DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!">
+  <img src="https://i2.ytimg.com/vi/9Rx76Qz2XpM/hqdefault.jpg" alt="Video: DeepSeek V4 Flash vision testing and capabilities" loading="lazy">
+  <span class="video-card-title">DeepSeek V4 Flash vision testing and capabilities</span>
+  <span class="video-card-meta">Bijan Bowen, August 24, 2026</span>
+  <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash vision capabilities including browser interaction and game comprehension with the DeepSeek Harness tool.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=zAe-sau06io" target="_blank" rel="noopener" title="How AI Coding Agents Understand Your Codebase &amp; Developer Tools">
+  <img src="https://i3.ytimg.com/vi/zAe-sau06io/hqdefault.jpg" alt="Video: AI coding agents and codebase understanding" loading="lazy">
+  <span class="video-card-title">AI coding agents and codebase understanding</span>
+  <span class="video-card-meta">IBM Technology, August 24, 2026</span>
+  <span class="video-card-desc">Explanation of how AI coding agents parse and work with codebases and developer tools for code generation and understanding.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=c4UiiWU7DoI" target="_blank" rel="noopener" title="Ox Alpha Is INSANE, Testing the Mysterious New Stealth Model!">
   <img src="https://i4.ytimg.com/vi/c4UiiWU7DoI/hqdefault.jpg" alt="Video: Testing Ox Alpha model capabilities" loading="lazy">
   <span class="video-card-title">Testing Ox Alpha model capabilities</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing Ling 3.0 Tiny model on coding tasks</span>
   <span class="video-card-meta">Bijan Bowen, August 8, 2026</span>
   <span class="video-card-desc">Hands-on testing of Ling 3.0 Tiny, a small language model, across coding tasks including browser automation and C++ with observations on its behavior and limitations.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=UaeWJK_vv-Y" target="_blank" rel="noopener" title="Introducing Agent Plugins">
-  <img src="https://i2.ytimg.com/vi/UaeWJK_vv-Y/hqdefault.jpg" alt="Video: Agent Plugins open standard announcement" loading="lazy">
-  <span class="video-card-title">Agent Plugins open standard announcement</span>
-  <span class="video-card-meta">OpenAI, August 6, 2026</span>
-  <span class="video-card-desc">OpenAI announces Agent Plugins, an open standard for bundling AI agent skills and model context protocols with partner collaboration.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Gjw3ok6alYY" target="_blank" rel="noopener" title="Meta Muse Code Is HERE, Spark 1.2 &amp; Meta’s NEW Coding Agent!">
-  <img src="https://i4.ytimg.com/vi/Gjw3ok6alYY/hqdefault.jpg" alt="Video: Meta Muse Code, Spark 1.2, and coding agent demo" loading="lazy">
-  <span class="video-card-title">Meta Muse Code, Spark 1.2, and coding agent demo</span>
-  <span class="video-card-meta">Bijan Bowen, August 6, 2026</span>
-  <span class="video-card-desc">Hands-on demonstration of Meta&#x27;s Muse Code editor, Spark 1.2 update, and new coding agent with technical breakdown and real-world testing.</span>
 </a>
 </div>
 

@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -48,6 +48,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.20373">An ambiguity taxonomy for evaluating large language model performance on clinical registry abstraction: a multi-site prospective study</a>
     <p class="news-card-summary">Prospective multi-site study evaluates large language model performance on clinical registry abstraction from electronic medical records, using ambiguity taxonomy to characterize errors.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03158-4">Towards a multi-agent Clinical Trial Center framework to support modern clinical trials</a>
+    <p class="news-card-summary">A multi-agent framework using AI to coordinate clinical trial operations and management across distributed trial centers.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03160-w">When machines misread science: creating guardrails for human and AI interpretation of biomedical research</a>
+    <p class="news-card-summary">Guardrails for AI and human interpretation of biomedical research aim to prevent errors that could distort clinical evidence application.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -112,20 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04562-9">Responsiveness of epigenetic aging biomarkers to longevity interventions in humans</a>
     <p class="news-card-summary">Analysis of 16 epigenetic aging clocks across 51 studies shows differential responsiveness to pharmacological and lifestyle interventions, informing their reliability as biomarkers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95081">Augmenting Head and Neck Multidisciplinary Tumor Board Recommendations With Locally Run Large Language Models: Prospective Evaluation of Real-World Implementation</a>
-    <p class="news-card-summary">First prospective feasibility study of locally run large language models integrated into real-world head and neck multidisciplinary tumor board meetings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93239">Large Language Models for Oncology Guideline Maintenance: Prospective Case Study</a>
-    <p class="news-card-summary">Prospective case study evaluating large language models for maintaining oncology clinical practice guidelines by integrating rapid growth in trial data and therapeutic complexity.</p>
   </div>
 </div>
 </div>

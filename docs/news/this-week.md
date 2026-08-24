@@ -20,8 +20,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 24, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42634457?fc=20260609215449&amp;ff=20260824091500&amp;v=2.20.1">Detection Status and Cost Analysis of Community Pulmonary Nodule Screening with Mobile LDCT Combined with AI</a>
+        <p class="news-card-summary">Mobile low-dose CT screening combined with AI assistance identifies high-risk pulmonary nodule cases in community settings with cost analysis.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="other">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
@@ -241,13 +248,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/Robot_AI_sifting_documents_papers%20copy.jpg?itok=tNomQNI_" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 17, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42605427?fc=20260609215449&amp;ff=20260817090740&amp;v=2.20.1">Comparative Performance of Large Language Models in the Polish State Specialization Examination in Anesthesiology and Intensive Care Medicine</a>
-        <p class="news-card-summary">Large language models achieved high accuracy on Polish specialty-level anesthesiology and intensive care medicine examinations, suggesting potential for examination preparation while requiring caution against inferring clinical readiness.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -258,9 +258,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -289,6 +289,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2608.20373">An ambiguity taxonomy for evaluating large language model performance on clinical registry abstraction: a multi-site prospective study</a>
         <p class="news-card-summary">Prospective multi-site study evaluates large language model performance on clinical registry abstraction from electronic medical records, using ambiguity taxonomy to characterize errors.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03158-4">Towards a multi-agent Clinical Trial Center framework to support modern clinical trials</a>
+        <p class="news-card-summary">A multi-agent framework using AI to coordinate clinical trial operations and management across distributed trial centers.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03160-w">When machines misread science: creating guardrails for human and AI interpretation of biomedical research</a>
+        <p class="news-card-summary">Guardrails for AI and human interpretation of biomedical research aim to prevent errors that could distort clinical evidence application.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -560,13 +574,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Fine-tuning an ECG foundation model improves prediction of coronary CT angiography outcomes, demonstrating transfer learning for cardiac diagnostic imaging.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02962-2">MultiMed-RAG: leveraging multi-source knowledge and agent collaboration for medical tasks</a>
-        <p class="news-card-summary">MultiMed-RAG system leverages multi-source medical knowledge and agent collaboration to improve performance on medical tasks.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 17, 2026</span></div>
@@ -605,10 +612,18 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 30 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (30)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 24, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning">Kids outlearn AI, and we still don’t know why</a>
+        <p class="news-card-summary">Children continue to outpace large language models in acquiring language fluency despite recent advances in AI systems.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/3_HighChair-crop.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 22, 2026</span></div>
@@ -814,14 +829,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Import AI newsletter covers DiG-bench results showing Fable model capabilities, AI system analysis, and scientific AI applications.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 17, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/axiom-math-246-theorem-formalization">AI Used to Verify Toughest Mathematics Proof Yet</a>
-        <p class="news-card-summary">Axiom Math&#x27;s AI system automatically verified a significant formal mathematics proof relating to prime numbers, demonstrating progress in automated mathematical verification.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/abstract-illustration-of-several-long-arrows-stacked-horizontally-parallel-to-one-another-each-arrow-has-one-plotted-point-in-a.jpg?id=67608532&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 17, 2026</span></div>
@@ -830,23 +837,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://storage.ghost.io/c/2c/8d/2c8d8c0d-1c15-4b6d-825e-02b78d61d40a/content/images/2026/07/img-blog-gpt-5-6-sol-best-vision-model-to-date.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 17, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system">Anthropic explains how Claude’s invisible text watermarks will work</a>
-        <p class="news-card-summary">Anthropic detailed its SynthID-Text watermarking approach for detecting Claude-generated text, complying with European Union AI transparency requirements.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 3 videos"
+??? abstract "Show the 5 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=9Rx76Qz2XpM" target="_blank" rel="noopener" title="DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!">
+      <img src="https://i2.ytimg.com/vi/9Rx76Qz2XpM/hqdefault.jpg" alt="Video: DeepSeek V4 Flash vision testing and capabilities" loading="lazy">
+      <span class="video-card-title">DeepSeek V4 Flash vision testing and capabilities</span>
+      <span class="video-card-meta">Bijan Bowen, August 24, 2026</span>
+      <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash vision capabilities including browser interaction and game comprehension with the DeepSeek Harness tool.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=zAe-sau06io" target="_blank" rel="noopener" title="How AI Coding Agents Understand Your Codebase &amp; Developer Tools">
+      <img src="https://i3.ytimg.com/vi/zAe-sau06io/hqdefault.jpg" alt="Video: AI coding agents and codebase understanding" loading="lazy">
+      <span class="video-card-title">AI coding agents and codebase understanding</span>
+      <span class="video-card-meta">IBM Technology, August 24, 2026</span>
+      <span class="video-card-desc">Explanation of how AI coding agents parse and work with codebases and developer tools for code generation and understanding.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=h24qAKwWDiw" target="_blank" rel="noopener" title="Toward a Radiology Foundation Model - Curt Langlotz | Computational Medicine Research Colloquium">
       <img src="https://i1.ytimg.com/vi/h24qAKwWDiw/hqdefault.jpg" alt="Video: Toward a radiology foundation model" loading="lazy">
       <span class="video-card-title">Toward a radiology foundation model</span>

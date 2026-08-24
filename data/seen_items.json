@@ -30742,6 +30742,129 @@
    "first_seen": "2026-08-24T09:06:07.299541+00:00",
    "kept": false,
    "reason": "marketing and promotion from the channel itself, not substantive coverage of a model capability or comparison"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/choosing-the-wrong-patient-when-it",
+   "title_hash": "7a69c2b6b6c2fc3b194f4e4d61355402",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience: clinical practice commentary unrelated to AI"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database",
+   "title_hash": "62f227cd7b79c771f4b5b3e06dfde560",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience: systems programming technique without AI relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42634457?fc=20260609215449&ff=20260824091500&v=2.20.1",
+   "title_hash": "f8ea0e4019949652e960b545774e8c3f",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": true,
+   "title": "Detection Status and Cost Analysis of Community Pulmonary Nodule Screening with Mobile LDCT Combined with AI",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-24T10:00:00+00:00",
+   "summary": "Mobile low-dose CT screening combined with AI assistance identifies high-risk pulmonary nodule cases in community settings with cost analysis.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning",
+   "title_hash": "a98d2080cc3b8967231e7a9611a64b44",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": true,
+   "title": "Kids outlearn AI, and we still don’t know why",
+   "source": "MIT Technology Review AI",
+   "published": "2026-08-24T09:00:00+00:00",
+   "summary": "Children continue to outpace large language models in acquiring language fluency despite recent advances in AI systems.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/3_HighChair-crop.jpg?resize=1200,600",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03162-8",
+   "title_hash": "1be40cb7e99f435939b90942033ccd47",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": false,
+   "reason": "author correction notice without substantive content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03158-4",
+   "title_hash": "d247ed0303a0d9854bb963f009061cbe",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": true,
+   "title": "Towards a multi-agent Clinical Trial Center framework to support modern clinical trials",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-24T00:00:00+00:00",
+   "summary": "A multi-agent framework using AI to coordinate clinical trial operations and management across distributed trial centers.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03160-w",
+   "title_hash": "aea968e700d6fe970a45602d5bfaebaa",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": true,
+   "title": "When machines misread science: creating guardrails for human and AI interpretation of biomedical research",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-24T00:00:00+00:00",
+   "summary": "Guardrails for AI and human interpretation of biomedical research aim to prevent errors that could distort clinical evidence application.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04598-x",
+   "title_hash": "33b883dce31cfa31b24d23f9062758f9",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience: genomics implementation without AI focus"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwde84/new_qwen3827b_on_a_39k_line_c_to_singlefile_html",
+   "title_hash": "4c740d39757101045c1c501309df39ff",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": false,
+   "reason": "minor tool demonstration: performance testing of specific model on code task lacks broad significance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vs2tsn/dflash_2_available_for_qwen_38_27b_and_muse",
+   "title_hash": "34c36b8b3c4cc3feffb34306ae4abca6",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": false,
+   "reason": "minor release notes: quantization format update for niche audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9Rx76Qz2XpM",
+   "title_hash": "6246ac0a704cb2be7fe9a9d528c29ed9",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": true,
+   "title": "DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!",
+   "source": "Bijan Bowen",
+   "published": "2026-08-24T12:36:02+00:00",
+   "summary": "Hands-on testing of DeepSeek V4 Flash vision capabilities including browser interaction and game comprehension with the DeepSeek Harness tool.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/9Rx76Qz2XpM/hqdefault.jpg",
+   "display_title": "DeepSeek V4 Flash vision testing and capabilities"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zAe-sau06io",
+   "title_hash": "1dd82af9183d5b27b4a812c56cc74dd1",
+   "first_seen": "2026-08-24T13:15:00.286415+00:00",
+   "kept": true,
+   "title": "How AI Coding Agents Understand Your Codebase & Developer Tools",
+   "source": "IBM Technology",
+   "published": "2026-08-24T11:00:38+00:00",
+   "summary": "Explanation of how AI coding agents parse and work with codebases and developer tools for code generation and understanding.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i3.ytimg.com/vi/zAe-sau06io/hqdefault.jpg",
+   "display_title": "AI coding agents and codebase understanding"
   }
  ],
  "digests": [
