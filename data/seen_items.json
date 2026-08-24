@@ -30672,6 +30672,76 @@
    "first_seen": "2026-08-24T05:03:00.465603+00:00",
    "kept": false,
    "reason": "community meta-discussion with no substantive news or educational content"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming",
+   "title_hash": "cc5abd91552e41b8cc3f4463780996e2",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": true,
+   "title": "STAT+: FDA digital health leader promises generative AI regulatory guidance is coming",
+   "source": "STAT News AI",
+   "published": "2026-08-24T08:30:00+00:00",
+   "summary": "FDA's digital health policy leader indicates regulatory guidance on generative AI devices will be issued in the near term.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2016/01/FDABuilding_FDA-645x645.jpg",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://medicalfuturist.com/how-to-predict-the-future-of-healthcare-method-1-forecasting",
+   "title_hash": "7cc7d18d141c996a180ea50c679d72d1",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": false,
+   "reason": "generic explainer on forecasting methods without specific AI application or substantive analysis"
+  },
+  {
+   "url": "https://medicalfuturist.com/will-ai-companions-change-our-lives-and-relationships",
+   "title_hash": "a7d21b889d8cffa5d3c45321af70bc35",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": false,
+   "reason": "speculative opinion piece on companion AI and relationships, not clinical or educational practice"
+  },
+  {
+   "url": "https://medicalfuturist.com/future-emergency-medicine-innovations-making-patients-point-care",
+   "title_hash": "bd64dcae8a3b6c66bd42dd30d930a855",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": false,
+   "reason": "listicle format; no specific clinical deployment or evaluation data"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwvghi/xiaomi_ai_cube_announced_with_12tbs_memory",
+   "title_hash": "dae0f2187356fdb6163a77e2fd6f7973",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": false,
+   "reason": "hardware specification announcement from a consumer electronics company, not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/08/24/ai-literacy",
+   "title_hash": "ef9a2ac83471040c2835bc4f24a9ca1a",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": true,
+   "title": "‘AI Literacy’",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-08-24T03:00:00+00:00",
+   "summary": "Brief commentary on the importance of understanding the problems a technology solves as a foundation for AI literacy.",
+   "category": "medical_education",
+   "score": 2.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2023-04/Blog-Logo-Confessions%20of%20a%20Community%20College%20Dean.png?itok=3esLh9ql",
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vus4ko/qwen_38_low_and_medium_are_goated",
+   "title_hash": "9ac2918a60dc44880ed1d4f8eec14e21",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": false,
+   "reason": "forum discussion of benchmark scores without substantive analysis; insufficient source quality for general_ai"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RWp5cejTApU",
+   "title_hash": "eec50cbb5e330bbaed2a6ecb003d880a",
+   "first_seen": "2026-08-24T09:06:07.299541+00:00",
+   "kept": false,
+   "reason": "marketing and promotion from the channel itself, not substantive coverage of a model capability or comparison"
   }
  ],
  "digests": [

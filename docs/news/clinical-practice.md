@@ -23,6 +23,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">STAT+: FDA digital health leader promises generative AI regulatory guidance is coming</a>
+    <p class="news-card-summary">FDA&#x27;s digital health policy leader indicates regulatory guidance on generative AI devices will be issued in the near term.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2016/01/FDABuilding_FDA-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.20348">Inhibitory Attention for Clinical Long-Context Reasoning: Characterizing and Mitigating Lost-in-the-Middle Effects in EHR Processing</a>
     <p class="news-card-summary">Research identifies and proposes mitigation for lost-in-the-middle effects in large language models processing long electronic health records, where critical information in the middle is retrieved less reliably.</p>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 20, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93239">Large Language Models for Oncology Guideline Maintenance: Prospective Case Study</a>
     <p class="news-card-summary">Prospective case study evaluating large language models for maintaining oncology clinical practice guidelines by integrating rapid growth in trial data and therapeutic complexity.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93522">Discordance Between Textual Reasoning and Visual Interpretation in Large Language Models for Low Back Pain: Cross-Sectional Quantitative Evaluation and Exploratory Multimodal Stress Test</a>
-    <p class="news-card-summary">Study evaluates safety risks when multimodal large language models show discordance between visual interpretation and textual reasoning in low back pain management.</p>
   </div>
 </div>
 </div>
