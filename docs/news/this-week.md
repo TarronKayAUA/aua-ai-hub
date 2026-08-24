@@ -13,9 +13,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A new study comparing ChatGPT to medical students on preventive medicine exam questions found the model matching or exceeding student accuracy, raising questions about how exams should be designed and scored <a href="https://pubmed.ncbi.nlm.nih.gov/42629687?fc=20260609215449&amp;ff=20260822090215&amp;v=2.20.1">[1]</a>. That performance sits alongside risk: a separate analysis found large language models show systematic demographic bias in pediatric obesity risk attribution, arguing for bias auditing before clinical or educational use <a href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[12]</a>. One proposal responds with residency-level benchmarks to test AI safety before deployment <a href="https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">[15]</a>. Meanwhile, AI-simulated patients are already helping combat medical technicians build consultation confidence through scalable practice sessions <a href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[5]</a>.</p>
-<p>Also this week: seven items cover teaching and curriculum, including a European neurology task force&#x27;s roadmap for responsible AI integration and a nursing scoping review on generative AI and higher-order thinking skills. Three simulation and skills pieces address training methods, and single studies cover assessment feedback and attitudes toward AI adoption.</p>
-<p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the source items.</p>
+<p>A new analysis of AI-assisted application development in digital health warns that when clinicians build their own tools, accountability for safety shifts from developers to end users, raising governance questions for training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[1]</a>. Curriculum guidance is expanding in parallel: a twelve-tips framework for learner-centered AI integration offers educators a five-level socio-ecological approach to undergraduate teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[3]</a>. Bias concerns persist elsewhere, as a study of large language models found systematic demographic skew in pediatric obesity risk attribution <a href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[15]</a>. Simulation research also advances, with AI-simulated patients shown to improve consultation confidence among combat medical technicians <a href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[8]</a>.</p>
+<p>Also this week: the section adds eight items on teaching and curriculum, including guidance on AI in health professions publishing and a scoping review of generative AI&#x27;s effect on higher-order thinking in nursing students, alongside three simulation studies, two exam-focused benchmarks, one paper on assessment and feedback, and one on attitudes toward adoption.</p>
+<p class="section-brief-date">The picture as of August 24, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 31 items"
@@ -563,14 +563,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>A new study on medical resource allocation shows that language models&#x27; decisions can shift based on how information is presented during a session, raising concerns for clinical deployment <a href="https://arxiv.org/abs/2608.18108">[13]</a>. Related work finds that safety refusal behavior in these systems is not fully robust: some models retain hidden refusal pathways even after adversarial removal, while others require targeted intervention to restore refusals for low-resource languages <a href="https://arxiv.org/abs/2608.18093">[12]</a>. Separately, research on using language models as evaluators finds that these judges systematically favor outputs resembling their own, complicating benchmark reliability <a href="https://arxiv.org/abs/2608.18091">[11]</a>, a concern echoed by a preprint documenting widespread shortcut learning across current models <a href="https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks">[8]</a>.</p>
-<p>Also this week: broader safety work covers compression effects on model bias, hallucination detection at the token level, and mechanistic recovery of refusal behavior, contributing to seven items on safety and reliability. Six papers examine research methods such as entity tracking in small models and brain-to-text decoding, alongside two benchmarking studies on system-message compliance and creative output trends.</p>
-<p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the source items.</p>
+<p>&quot;Every Model Cheats&quot; documents widespread shortcut learning across benchmarks, raising questions about what current evaluation actually measures <a href="https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks">[9]</a>. A related study on model compression finds that shrinking large language models distorts knowledge, confidence, and bias in ways standard performance metrics miss <a href="https://arxiv.org/abs/2608.19670">[7]</a>. Separately, research on language models used as judges finds they systematically favor outputs labeled as their own, a bias with direct implications for automated evaluation pipelines <a href="https://arxiv.org/abs/2608.18091">[12]</a>. In clinical settings, one paper found that language models shift medical allocation decisions depending on how context accumulates during a session, a finding worth attention for anyone piloting these tools in patient-facing workflows <a href="https://arxiv.org/abs/2608.18108">[14]</a>.</p>
+<p>Also this week: the section carries seven items on research and methods, six on safety and reliability, and two dedicated benchmark studies, ranging from a proposal to treat hallucination as a scientific-hypothesis generator to a mechanistic fix restoring refusal behavior in low-resource African language models.</p>
+<p class="section-brief-date">The picture as of August 24, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (16)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -814,22 +814,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <a class="news-card-title" href="https://arxiv.org/abs/2608.13840">ASSERT: A Measurement Pipeline for GenAI Audits</a>
         <p class="news-card-summary">Measurement pipeline framework for auditing generative AI systems shows how methodological choices shape reported compliance rates.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 16, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/16/qwen-38-27b">Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things</a>
-        <p class="news-card-summary">Qwen 3.8 27B, an Apache 2 licensed vision-capable model from Alibaba, shows strong benchmark improvements over its predecessor and runs on standard laptops despite defaulting to verbose reasoning.</p>
-      </div>
-      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/qwen-thinking-bicycle-27b.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 16, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team">OpenAI reportedly disbanded its preparedness team</a>
-        <p class="news-card-summary">OpenAI dissolved its preparedness team, which assessed safety risks and developed mitigation strategies for large language models.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
