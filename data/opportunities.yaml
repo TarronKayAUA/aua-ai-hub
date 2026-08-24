@@ -233,3 +233,25 @@
   support: "Organizer-stated: $33,900+ in prizes including cash awards and sponsor perks such as NexFellow plans and Tin Computer credits"
   relevance: "General AI building opportunity open to international participants online; relevant for medical students seeking foundational ML skills."
   verified: 2026-08-24
+
+# Verified 2026-08-24 from the official grand-challenge.org pages:
+# organizers page names the full team (lead Dr. Nadieh Khalili, Radboud
+# UMC, with Karolinska Institute co-organizers); timeline page confirms
+# the 2026-09-10 submission deadline; awards page confirms the prizes.
+# No entry fee is stated anywhere; a verified grand-challenge.org
+# account is required (same as the TopAneu 2026 entry). A second
+# submission round runs in November 2026 with its deadline "announced
+# soon": when that date publishes, update deadline/end_date rather than
+# letting this entry archive after round 1.
+- name: CHIMERA-agent
+  url: https://chimera-agent.grand-challenge.org/
+  organizer: Radboud University Medical Center and Karolinska Institute (on grand-challenge.org)
+  type: challenge
+  format: virtual
+  eligibility: Open worldwide; a verified grand-challenge.org account is required to join
+  deadline: 2026-09-10
+  start_date: 2026-07-10
+  end_date: 2026-10-01
+  support: "Organizer-stated: 1,500 euros in prizes per submission round (first 750, second 500, third 250), plus a 500 US dollar award for the most innovative agentic AI solution"
+  relevance: Agentic multimodal AI challenge across the full prostate cancer patient journey, from MRI-based diagnosis through biopsy risk stratification to pathology prediction, run with MICCAI 2026.
+  verified: 2026-08-24
