@@ -61,13 +61,16 @@
 - name: Kimi
   vendor: Moonshot AI
   url: https://huggingface.co/moonshotai
-  # License is the published K2 line's, read from the HF card
-  # (license_name modified-mit on Kimi-K2.6, checked 2026-07-16). The
-  # announced K3's license is nowhere stated yet; when its weights
-  # publish, read the license from its own card before naming it here.
+  # K3 weights published; license read from the Kimi-K3 card's LICENSE
+  # file 2026-08-25 (license_name kimi-k3): MIT-style grant with
+  # conditions only at very large scale (model-as-a-service businesses
+  # over 20 million dollars in 12-month revenue need a separate
+  # agreement; products over 100 million monthly users or 20 million
+  # dollars monthly revenue must display "Kimi K3"). Same structure as
+  # the K2 line's modified MIT, so the label below still fits.
   license: Modified MIT
-  last_reviewed: 2026-07-16
-  blurb: Moonshot AI's open-weight family, among the strongest published models on coding and agentic benchmarks. The flagship K3, announced July 2026 at 2.8 trillion total parameters and by the vendor's own testing second only to the leading proprietary models, has open weights promised but not yet published; a model that size needs data-center hardware, not a consumer graphics card.
+  last_reviewed: 2026-08-25
+  blurb: Moonshot AI's open-weight family, among the strongest published models on coding and agentic benchmarks. The flagship K3, at 2.8 trillion total parameters with a 1 million token context window, now has published weights under an MIT-style license whose extra conditions apply only to very large commercial deployments; a model that size needs data-center hardware, not a consumer graphics card.
 
 - name: Mistral
   vendor: Mistral AI

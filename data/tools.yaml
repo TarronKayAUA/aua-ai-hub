@@ -73,25 +73,34 @@
   last_reviewed: 2026-08-25
   blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
 
-- name: Qwen Chat
+# Renamed from Qwen Chat 2026-08-25: the web app and both app stores now
+# present the product as Qwen Studio (Google Play lists it under Alibaba
+# Cloud). Blurb claims verified the same day from the official store
+# description (multimodal text/image/audio/video, voice chat, document
+# upload); no paid tier or in-app purchases found.
+- name: Qwen Studio
   vendor: Alibaba
   category: assistants
   url: https://chat.qwen.ai
   cost: free
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Alibaba's chat assistant, built on the Qwen model family, with document, image, and voice input alongside text chat.
 
+# 2026-08-25: blurb moved from K2 to K3 (App Store listing "Kimi K3 is
+# Live", Moonshot homepage, weights on Hugging Face). Cost flipped from
+# freemium to free: both official store listings show it free with no
+# in-app purchases and no membership or pricing page was found.
 - name: Kimi
   vendor: Moonshot AI
   category: assistants
   url: https://www.kimi.com
-  cost: freemium
+  cost: free
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-07-28
-  blurb: Chat assistant from Moonshot AI, built on the Kimi K2 model family, with long-document reading and agent features.
+  last_reviewed: 2026-08-25
+  blurb: Chat assistant from Moonshot AI, built on the Kimi K3 model family, with long-document reading and agent features.
 
 - name: Perplexity
   vendor: Perplexity
