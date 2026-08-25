@@ -1,476 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42359442?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "4f15b3a205edf512edde435aa68a39ec",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Artificial intelligence in undergraduate medical education clinical skills curricula: a scoping review of implementations since 2022",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-26T10:00:00+00:00",
-   "summary": "Scoping review finds AI implementation in clinical skills education has accelerated substantially since 2022, with emerging applications across simulation and assessment.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42359219?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "52cb564063831d1541a1809eb5eff067",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42359191?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "220ac721397922a0e1d0e24d9b4cf85f",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42359135?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "c33bdca7d4a4e0795f71ebe584071b99",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42359091?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "c76bef867d9aa3fedf44119f94fcea5f",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Use of large language models for providing automated feedback in medical imaging education: a systematic review",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-26T10:00:00+00:00",
-   "summary": "Systematic review finds large language models show promising potential as supportive tools for providing automated feedback in medical imaging education.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42358633?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "b5260bb4742d59800374b9a8f6524c9a",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42357848?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "60f3f94213f92ef269e5afe17b424372",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42355604?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "cb90ac487aa58650e11071f32e95558a",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Complementary Error Patterns Between Human Evaluators and GPT-4o in Video-Based Cardiopulmonary Resuscitation Skills Assessment: Implications for Artificial Intelligence-Assisted Second Reading",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-26T10:00:00+00:00",
-   "summary": "Study identifies complementary error patterns between human evaluators and GPT-4o in video-based CPR skills assessment, suggesting potential for hybrid evaluation approaches.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42355546?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "11316b3646907cb8f781651f7f2754bf",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "The Impact of Artificial Intelligence on BI-RADS Classification and Diagnostic Confidence in Mammography Interpretation by Radiology Residents",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-26T10:00:00+00:00",
-   "summary": "Study examines how AI assistance influences BI-RADS classification reassessment and diagnostic confidence among radiology residents in mammography interpretation.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42351276?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "f33ffce3f07c8c0cefbb32abb87bb9c9",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Artificial intelligence to support debriefing in simulation-based healthcare education: a scoping review",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-26T10:00:00+00:00",
-   "summary": "Scoping review identifies artificial intelligence as an emerging supportive tool for debriefing in simulation-based healthcare education.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://aditya.patadia.org/p/ai-and-cloud-costs",
-   "title_hash": "b7e3b9f4e14bf09e9495317230ffe59f",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26100",
-   "title_hash": "74f0ce9593665d2e021042ed56331949",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26101",
-   "title_hash": "caf7ac473cd78cb5805522bd8c33be32",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26102",
-   "title_hash": "ef7679a4795155a2b94f86c2856c9f9f",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26103",
-   "title_hash": "528394ec82ef0ff1abb552522cddbfa1",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26104",
-   "title_hash": "9e422f21be1d62d2a0a484699c62d838",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26105",
-   "title_hash": "51cdf5ea661ddc50d427db49da4b4f1f",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26106",
-   "title_hash": "0440eedead79714c5c2603db6afc6d7c",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26107",
-   "title_hash": "20f56662eaa2ee558c72444c9bcd79a7",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26108",
-   "title_hash": "2a71a51dbedb8c9d5a083a2b63249143",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26112",
-   "title_hash": "2c1383985e06509fcc92039fae9a141e",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26120",
-   "title_hash": "96084004f3039a449ade7913da39ab27",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26130",
-   "title_hash": "59e623dfaf91ca9d288bb0628e19a465",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26196",
-   "title_hash": "b10f172bec1d388505858e3c423a7509",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26360",
-   "title_hash": "579776351b96232f3add1821b063290c",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26382",
-   "title_hash": "307d38a9a31301cde53fa99ef69ef465",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26403",
-   "title_hash": "ae84a3bbe369cc75e044b18122450e48",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26437",
-   "title_hash": "334b104a7f9480d93e7df7140ee30b28",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26449",
-   "title_hash": "3ba31573d80b3e73ede9ee0966c5afb5",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26452",
-   "title_hash": "8b52dafae0717a467a18cc6a6b799d5d",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26466",
-   "title_hash": "dbaa43f86c0eeab11c4139905cde30e2",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26481",
-   "title_hash": "c2b7e205bb1d6e99a7e9d9cfbf12a265",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26485",
-   "title_hash": "cbc3b2502cb91988557e080dcb47e2a0",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26487",
-   "title_hash": "243b7246fcecb0ee3f7ad64d458982a9",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26489",
-   "title_hash": "4130919e4aa9fc887e6399d0f6b39035",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arxiv.org/abs/2606.26493",
-   "title_hash": "4f9cbf144ef3f43171304c1769aa5913",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02930-w",
-   "title_hash": "596130bbdcab92db44f420312bd28d52",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04489-1",
-   "title_hash": "d02e41bdee920bfc944385d7e81b8666",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04486-4",
-   "title_hash": "1c763005f8cda51c6a3a5e138c4ef9eb",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04505-4",
-   "title_hash": "344f5267daf52e0162d42a5dc89d2239",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04503-6",
-   "title_hash": "d0b60353990641717cf98c199ccaf54d",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial",
-   "source": "Nature Medicine",
-   "published": "2026-06-26T00:00:00+00:00",
-   "summary": "Pragmatic cluster-randomized trial published in Nature Medicine evaluates a generative AI-enabled clinical decision support system in primary care.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04487-3",
-   "title_hash": "3dc83778f5a9fbdcc9bac547968ce665",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04501-8",
-   "title_hash": "34177ef5a813ac0256d4b1af423964c0",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Evaluating the robustness and readiness of large frontier models in health AI applications",
-   "source": "Nature Medicine",
-   "published": "2026-06-26T00:00:00+00:00",
-   "summary": "Nature Medicine study evaluates robustness and readiness of large frontier models in health AI applications through adversarial evaluation methods.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://huggingface.co/blog/vllm-jobs",
-   "title_hash": "5eed6a19b91576abebe0d1de4d5947a7",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ufpnm6/audiocpp_12_audio_models_qwen3tts_pockettts_vevo2",
-   "title_hash": "30585b5b730441527c79f63b3df23213",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/25/ai-and-liability",
-   "title_hash": "c63c6090a5fa167be7d8035849d41558",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ufo0un/us_govt_to_individually_approve_who_gets_gpt_56",
-   "title_hash": "5f0b0c94b6b21f161f4062df73f27a30",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead",
-   "title_hash": "6c3db118fce2445eb1fd3bb105429b4d",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/google/2026/06/google-finance-finally-gets-a-mobile-app-as-ai-powered-overhaul-leaves-beta",
-   "title_hash": "6ebda6b484aff0e4a18dafd88b8f53bb",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ufhu3s/report_apple_to_skip_m6_promax_chips_fasttrack_m7",
-   "title_hash": "e1bc1335ae06e23892b6edb702c0f941",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities",
-   "title_hash": "169a3417887d30c2e4a4be82fec62b85",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Anthropic says Alibaba must be punished for largest Claude cloning attack",
-   "source": "Ars Technica AI",
-   "published": "2026-06-25T18:01:48+00:00",
-   "summary": "Anthropic reports that Alibaba conducted a large-scale coordinated account campaign to extract Claude capabilities through millions of model exchanges.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2271847932-500x500.jpg"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/25/datasette-export-database",
-   "title_hash": "e89c83b042a7a8044d070861053189c0",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ufc9vp/ornith10_released_on_hugging_face",
-   "title_hash": "543e9583280c25f620ad4650e35f5bdc",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://trakkr.ai/bias",
-   "title_hash": "c8939aac66e2eec0b53da18bac9e6094",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42351124?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "341fdc21c17d7c73ea6d4690db5a5b26",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Acceptance and use of GenAI among medical and health sciences students in Saudi Arabia: an extended TAM study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-25T10:00:00+00:00",
-   "summary": "Extended Technology Acceptance Model study examines acceptance and use of generative AI among medical and health sciences students in Saudi Arabia.",
-   "category": "medical_education",
-   "score": 2.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42351097?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "dbec9cde568099ab003ee2537de8fa63",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Development and pilot evaluation of a large language model-based clinical simulation system for medical education in gastroenterology",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-25T10:00:00+00:00",
-   "summary": "Large language model-based clinical simulator for gastroenterology education demonstrates high accuracy, realism, and adaptability in pilot evaluation.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42348732?fc=20260609215449&ff=20260626113417&v=2.20.0",
-   "title_hash": "9b8c494dae3b8fb8e5176c1974423cfe",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ueyl2i/anthropic_accuses_alibaba_of_campaign_to_brazenly",
-   "title_hash": "28046c7d414497b4770eaad295e000e2",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02935-5",
-   "title_hash": "2281b8f416e7144188d38377aeda5d27",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02823-y",
-   "title_hash": "5aac274d377a6a20e4d0ff68ea3b0007",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02921-x",
-   "title_hash": "192dbbd8dbdc597300cc942fbb8e2b20",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=IwKuv4LrCVk",
-   "title_hash": "8f27716829dbb558ee9d1a50bb18ed62",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=EfYqyj5ThBc",
-   "title_hash": "9477d328adecc483d4d74dfa9fe38562",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=HAsEYh6jTks",
-   "title_hash": "1dc61b5c6984e04b95c3272efb808f38",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=mFwWax5pLTs",
-   "title_hash": "fb5f7d43fbfbe40f7cc6adde814d6522",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/CEO-Led-AI-Gets-3X-the-ROI-e3l9mhq",
-   "title_hash": "e33490310683c7ae5472b45fe65b0d8b",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://aipodcast.education/victoria-hedlund-on-ai-bias-what-every-teacher-needs-to-know",
-   "title_hash": "48583f5036bb97a83a7fff6275404cfd",
-   "first_seen": "2026-06-26T15:34:17.251264+00:00",
-   "kept": true,
-   "title": "Victoria Hedlund on AI bias: What every teacher needs to know",
-   "source": "AI in Education Podcast",
-   "published": "2026-06-25T20:36:00+00:00",
-   "summary": "Victoria Hedlund discusses AI bias in educational systems and implications for teachers and students.",
-   "category": "podcasts",
-   "score": 3.0,
-   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jun/26/openai",
    "title_hash": "b0ff0300fb5fda42db4a158f3b443703",
    "first_seen": "2026-06-26T17:12:21.927517+00:00",
@@ -31014,6 +30544,107 @@
    "first_seen": "2026-08-25T13:13:00.919482+00:00",
    "kept": false,
    "reason": "organizational AI adoption guidance, not targeted at medical educators or clinical/educational AI"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e92843",
+   "title_hash": "aa1a7dd29a66bb3d38c7587dcb66d7b2",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": true,
+   "title": "Reflection- and Curriculum-Based Instruction Tuning for Diabetes-Specialized Large Language Models: Model Development and Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-08-25T16:15:10+00:00",
+   "summary": "Study describes instruction tuning methods for a diabetes-specialized large language model to improve glycemic interpretation, dietary guidance, and patient education.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+   "title_hash": "92a2f95a496c791a2f142138ca68b79d",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": true,
+   "title": "Granite 4.2 LLMs: How They're Built",
+   "source": "Hugging Face blog",
+   "published": "2026-08-25T15:14:14+00:00",
+   "summary": "IBM Granite 4.2 large language models released with open weights; blog explains training approach and model architecture.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/65cc2c288ebd392213e58899/XHWV2L_wZsFe3ekksCgvQ.webp",
+   "topic": "New models"
+  },
+  {
+   "url": "https://arstechnica.com/health/2026/08/ai-wont-replace-radiologists-but-it-will-dramatically-change-their-jobs",
+   "title_hash": "c4792634b612b65997e5f463e461b5a1",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": false,
+   "reason": "commentary without new information; general speculation rather than substantive analysis"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e95964",
+   "title_hash": "0bceae60b3748663fe554c92435ae18d",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": true,
+   "title": "Automating Motivational Interviewing Coding in Adolescent Substance Use Prevention: Human-AI Agreement Study",
+   "source": "JMIR AI",
+   "published": "2026-08-25T14:30:13+00:00",
+   "summary": "Study evaluates large language model agreement with human coders for automating motivational interviewing technique coding in substance use prevention.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/984290/openai-jalapeno-ai-chip-benchmarks",
+   "title_hash": "f0b7c4271be4a4c2341414f89f492de9",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": false,
+   "reason": "vendor marketing of the company's own hardware product"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxzg6v/apple_introduces_new_mac_studio_with_m5_max_and",
+   "title_hash": "07718eff23b5826008bd14fa651a494a",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": false,
+   "reason": "hardware announcement not specific to AI or medical relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxybmy/qwen_38_flash_next_day_0_support_from_unsloth",
+   "title_hash": "7b7d8ffba782eff26f84ecb28bec629b",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": false,
+   "reason": "minor software integration announcement from forum discussion"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&ff=20260825125720&v=2.20.1",
+   "title_hash": "4d3c8bac7450cb9abac70b6c90f9f16b",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": true,
+   "title": "Addressing Clinician-Educator Hesitancy Toward Artificial Intelligence Through a Peer-Led Instructional Design",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-25T10:00:00+00:00",
+   "summary": "Study shows peer-led instruction on AI tools increases physician-educators' perceived usefulness and implementation intent compared to traditional training.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42639054?fc=20260609215449&ff=20260825125720&v=2.20.1",
+   "title_hash": "d4b9b809150076c55a6644c05a2a7a4a",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": true,
+   "title": "Understanding Time Availability and Format Preferences for AI Professional Development in Health Professions Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-25T10:00:00+00:00",
+   "summary": "Study examines health professions educators' preferences for AI professional development formats and time availability.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04650-w",
+   "title_hash": "03582293151735fea9f3c84a9a024850",
+   "first_seen": "2026-08-25T16:57:20.623545+00:00",
+   "kept": false,
+   "reason": "author correction to unrelated clinical trial, not about artificial intelligence"
   }
  ],
  "digests": [

@@ -18,9 +18,23 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92843">Reflection- and Curriculum-Based Instruction Tuning for Diabetes-Specialized Large Language Models: Model Development and Evaluation Study</a>
+    <p class="news-card-summary">Study describes instruction tuning methods for a diabetes-specialized large language model to improve glycemic interpretation, dietary guidance, and patient education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95964">Automating Motivational Interviewing Coding in Adolescent Substance Use Prevention: Human-AI Agreement Study</a>
+    <p class="news-card-summary">Study evaluates large language model agreement with human coders for automating motivational interviewing technique coding in substance use prevention.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
@@ -112,20 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83099">Patient Stratification for Improving Acute Chest Pain Management and Mitigating Emergency Department Crowding: Machine Learning Model Development and Validation</a>
     <p class="news-card-summary">Machine learning models stratify acute chest pain patients to improve triage decisions and reduce emergency department crowding while maintaining accuracy for acute coronary syndrome detection.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e94614">Evaluation of Prompt Design and Internal Reasoning in Chatbot-Based Medical History Taking: Simulation Study</a>
-    <p class="news-card-summary">Study evaluates how prompt design and model reasoning affect the completeness and clinical relevance of medical histories collected by conversational agents before patient consultations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e84636">Integrated Clinical-Molecular Risk Stratification in Diffuse Large B-Cell Lymphoma: Machine Learning Survival Analysis</a>
-    <p class="news-card-summary">Machine learning model integrates molecular and clinical features to improve risk stratification and prognostic accuracy in diffuse large B-cell lymphoma beyond standard clinical indices.</p>
   </div>
 </div>
 </div>

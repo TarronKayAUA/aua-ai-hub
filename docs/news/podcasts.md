@@ -113,10 +113,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">Practical AI, July 2, 2026</span>
   <span class="video-card-desc">Discussion of the evolution of AI image generation capabilities and visual intelligence models with Black Forest Labs.</span>
 </a>
-<a class="video-card" href="https://aipodcast.education/victoria-hedlund-on-ai-bias-what-every-teacher-needs-to-know" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Victoria Hedlund on AI bias: What every teacher needs to know" loading="lazy">
-  <span class="video-card-title">Victoria Hedlund on AI bias: What every teacher needs to know</span>
-  <span class="video-card-meta">AI in Education Podcast, June 25, 2026</span>
-  <span class="video-card-desc">Victoria Hedlund discusses AI bias in educational systems and implications for teachers and students.</span>
-</a>
 </div>
