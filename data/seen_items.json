@@ -30847,6 +30847,55 @@
    "score": 4.0,
    "thumbnail": "https://reinvently.co.uk/images/hero-ed-o-meter-leaderboard.jpg",
    "topic": "New models"
+  },
+  {
+   "url": "https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7",
+   "title_hash": "26ed4820e676b24f326335100841dc90",
+   "first_seen": "2026-08-25T09:01:43.669874+00:00",
+   "kept": true,
+   "title": "STAT+: AI is good at catching drug theft at hospitals, but only when humans do their part",
+   "source": "STAT News AI",
+   "published": "2026-08-25T08:30:00+00:00",
+   "summary": "AI systems can help hospitals prevent controlled substance theft and staff diversion, but require effective human oversight to function reliably.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_230717451-645x645.jpeg",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://icenet.blog/2026/08/25/ice-book-review-the-way-of-excellence",
+   "title_hash": "2c68125d3094b8f74759ff846213a27b",
+   "first_seen": "2026-08-25T09:01:43.669874+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model",
+   "title_hash": "dc547e0f7861021041557a574e7099f6",
+   "first_seen": "2026-08-25T09:01:43.669874+00:00",
+   "kept": true,
+   "title": "Thomson Reuters Launches Its Own Frontier Model",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-25T02:11:39+00:00",
+   "summary": "Thomson Reuters announced its own frontier model, leveraging its data assets for domain-specific applications.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://www.thomsonreuters.com/content/dam/ewp-m/images/thomsonreuters/en/photography/reuters/rtr1zkvu-luke-macgregor-tr.jpg.transform/rect-768/q90/image.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxescz/copilot_you_say",
+   "title_hash": "e1b1027e7ea5d646d133afced6b41b6a",
+   "first_seen": "2026-08-25T09:01:43.669874+00:00",
+   "kept": false,
+   "reason": "community meta-discussion with no substantive technical content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Mgz4BbVhArc",
+   "title_hash": "4cee4f3b6f24acd113144945c4796e48",
+   "first_seen": "2026-08-25T09:01:43.669874+00:00",
+   "kept": false,
+   "reason": "marketing and affiliate promotion for a commercial product"
   }
  ],
  "digests": [
