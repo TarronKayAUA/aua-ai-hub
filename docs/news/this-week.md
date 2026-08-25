@@ -13,9 +13,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A new analysis of AI-assisted application development in digital health warns that when clinicians build their own tools, accountability for safety shifts from developers to end users, raising governance questions for training programs <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[1]</a>. Curriculum guidance is expanding in parallel: a twelve-tips framework for learner-centered AI integration offers educators a five-level socio-ecological approach to undergraduate teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[3]</a>. Bias concerns persist elsewhere, as a study of large language models found systematic demographic skew in pediatric obesity risk attribution <a href="https://pubmed.ncbi.nlm.nih.gov/42621471?fc=20260609215449&amp;ff=20260820125221&amp;v=2.20.1">[15]</a>. Simulation research also advances, with AI-simulated patients shown to improve consultation confidence among combat medical technicians <a href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[8]</a>.</p>
-<p>Also this week: the section adds eight items on teaching and curriculum, including guidance on AI in health professions publishing and a scoping review of generative AI&#x27;s effect on higher-order thinking in nursing students, alongside three simulation studies, two exam-focused benchmarks, one paper on assessment and feedback, and one on attitudes toward adoption.</p>
-<p class="section-brief-date">The picture as of August 24, 2026; numbered links go to the source items.</p>
+<p>A new analysis of AI-assisted application development in digital health identifies a growing accountability gap: as clinicians build their own tools with generative AI, responsibility for safety and quality shifts from developers to end users <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[5]</a>. That tension runs through much of the surrounding coverage. Twelve tips for educators lay out a five-level framework for integrating AI into undergraduate curricula in ways that keep learners, not tools, central <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[7]</a>. A study comparing ChatGPT to medical students on preventive medicine exam questions finds the chatbot&#x27;s accuracy still lags human reasoning in some areas <a href="https://pubmed.ncbi.nlm.nih.gov/42629687?fc=20260609215449&amp;ff=20260822090215&amp;v=2.20.1">[6]</a>. AI-simulated patients, meanwhile, are showing measurable gains in training confidence for combat medical technicians <a href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[12]</a>.</p>
+<p>Also this week: eight items address teaching and curriculum design, including a &quot;5E+AI&quot; model for improving science communication among medical students. Two pieces weigh attitudes toward AI adoption, two address exam and benchmark performance, and two explore simulation-based skill building in clinical training environments, from resident emotion tracking to standardized patient simulations for military medics.</p>
+<p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 33 items"
@@ -261,14 +261,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>AI-assisted chest radiography shortened reading time but did not improve diagnostic accuracy, raising concerns about automation bias <a href="https://pubmed.ncbi.nlm.nih.gov/42629289?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">[6]</a>. A related concern surfaces in large reasoning models used for treatment planning in nasopharyngeal carcinoma, where comparative evaluation found meaningful gaps in decision support quality <a href="https://www.nature.com/articles/s41746-026-03167-3">[7]</a>. Two Nature Medicine studies test whether epigenetic aging clocks respond appropriately to interventions, questioning their use as surrogate endpoints <a href="https://www.nature.com/articles/s41591-026-04562-9">[9]</a>. Separately, electronic health record-based risk models for treatment-resistant depression failed to transport across clinical settings, a deployment problem <a href="https://www.nature.com/articles/s41746-026-03095-2">[14]</a>. Regulatory delays between CE marking and FDA approval for radiology software add further friction <a href="https://www.nature.com/articles/s41746-026-03165-5">[1]</a>.</p>
-<p>Also this week: the section&#x27;s eight safety and evaluation items span palliative care applications and ICU digital biomarkers, while five clinical decision support studies cover oncology guideline maintenance and multidisciplinary tumor boards. Two documentation-focused reports examine chatbot-based medical history taking and health system deployment of record-summarizing chatbots.</p>
-<p class="section-brief-date">The picture as of August 23, 2026; numbered links go to the source items.</p>
+<p>Federal regulators are signaling a shift toward oversight of generative AI in clinical devices, with an FDA digital health official confirming that regulatory guidance is forthcoming <a href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">[2]</a>. That scrutiny arrives alongside growing evidence of real-world performance gaps: a multi-reader study of AI-assisted chest radiography found that automated tools shortened reading time but did not improve diagnostic accuracy and raised false positive rates, underscoring automation bias risks <a href="https://pubmed.ncbi.nlm.nih.gov/42629289?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">[14]</a>. Parallel work addresses how large language models handle long clinical documents, describing lost-in-the-middle effects that degrade retrieval accuracy in electronic health record processing <a href="https://arxiv.org/abs/2608.20348">[3]</a>. A newly proposed fairness metric offers a simpler way to check whether prediction models perform equitably across patient groups <a href="https://ai.jmir.org/2026/1/e85822">[1]</a>.</p>
+<p>Also this week: eight items examine safety and evaluation methods for clinical AI, from registry abstraction accuracy to guardrails against misinterpreting biomedical research. Four decision support studies include a lymphoma risk stratification model, two cover clinical documentation, including automated radiology template generation, and one addresses imaging diagnostics in neuroradiology.</p>
+<p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -585,13 +585,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03032-3">Interpretable deep learning for three-stage focal liver lesion diagnosis on non-contrast MRI: a multicenter, prospective study</a>
-        <p class="news-card-summary">Multicenter prospective study validates interpretable deep learning for focal liver lesion diagnosis on non-contrast MRI.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 18, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03085-4">Fine-tuning an ECG foundation model to predict coronary CT angiography outcomes</a>
         <p class="news-card-summary">Fine-tuning an ECG foundation model improves prediction of coronary CT angiography outcomes, demonstrating transfer learning for cardiac diagnostic imaging.</p>
       </div>
@@ -601,15 +594,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>&quot;Every Model Cheats&quot; documents widespread shortcut learning across benchmarks, raising questions about what current evaluation actually measures <a href="https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks">[9]</a>. A related study on model compression finds that shrinking large language models distorts knowledge, confidence, and bias in ways standard performance metrics miss <a href="https://arxiv.org/abs/2608.19670">[7]</a>. Separately, research on language models used as judges finds they systematically favor outputs labeled as their own, a bias with direct implications for automated evaluation pipelines <a href="https://arxiv.org/abs/2608.18091">[12]</a>. In clinical settings, one paper found that language models shift medical allocation decisions depending on how context accumulates during a session, a finding worth attention for anyone piloting these tools in patient-facing workflows <a href="https://arxiv.org/abs/2608.18108">[14]</a>.</p>
-<p>Also this week: the section carries seven items on research and methods, six on safety and reliability, and two dedicated benchmark studies, ranging from a proposal to treat hallucination as a scientific-hypothesis generator to a mechanistic fix restoring refusal behavior in low-resource African language models.</p>
-<p class="section-brief-date">The picture as of August 24, 2026; numbered links go to the source items.</p>
+<p>Stanford research finds AI-impacted fields saw entry-level employment drop 19 percent more than AI-resistant occupations <a href="https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds">[1]</a>, adding data to debates over labor market effects as capability claims continue to outpace demonstrated understanding: language models still lag children in acquiring fluent language despite scaling <a href="https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning">[3]</a>. Evaluation itself is under scrutiny, with a new preprint documenting widespread shortcut learning and benchmark gaming across contemporary models <a href="https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks">[12]</a>, compounding worries after separate work found LLM judges show systematic bias favoring outputs matching their own or their labeled origin <a href="https://arxiv.org/abs/2608.18091">[15]</a>. Compression research meanwhile shows performance metrics mask harms to knowledge and confidence <a href="https://arxiv.org/abs/2608.19670">[10]</a>.</p>
+<p>Also this week: eight items span research and methods, including work on memory management in agent systems, hallucination reframed as a tool for hypothesis generation, and entity tracking abilities in sub-billion-parameter models. Four safety and reliability papers address topics like refusal recovery for low-resource languages, alongside two benchmarking studies and continued discussion of AI&#x27;s impact on mathematics research.</p>
+<p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 29 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 24, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds">AI is hitting entry-level jobs hardest, Stanford study finds</a>
+        <p class="news-card-summary">Stanford research shows employment in entry-level jobs declined 19 percent more in AI-impacted fields than in AI-resistant occupations.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2211086231-500x500-1787606429.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">August 24, 2026</span></div>
@@ -816,13 +817,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Sentence Transformers now supports multi-vector late interaction embedding models for improved semantic search and retrieval tasks.</p>
       </div>
       <img class="news-card-thumb" src="https://huggingface.co/blog/assets/multi-vector-encoder/st-hf-lighton-thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 17, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52">Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index</a>
-        <p class="news-card-summary">Open-weights Qwen 3.8 27B model achieves performance comparable to much larger proprietary models on standardized AI benchmarks.</p>
-      </div>
     </div>
     </div>
 
