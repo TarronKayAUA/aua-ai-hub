@@ -1,9 +1,9 @@
 {
   "ledger": {
-    "claims_checked": 8,
-    "drifted": 0,
-    "reviews": 1,
-    "unverifiable": 1
+    "claims_checked": 19,
+    "drifted": 1,
+    "reviews": 2,
+    "unverifiable": 9
   },
   "pages": {
     "tools/hardware.md": {
@@ -11,6 +11,13 @@
       "claims_checked": 8,
       "last_result": "clean",
       "last_run": "2026-08-18"
+    },
+    "tools/research.md": {
+      "budget_days": 45,
+      "claims_checked": 11,
+      "last_result": "held",
+      "last_run": "2026-08-25",
+      "pending_since": "2026-08-25"
     }
   }
 }

@@ -56,7 +56,7 @@
   cost: institutional
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
 
 - name: DeepSeek
@@ -70,7 +70,7 @@
   cost: free
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
 
 - name: Qwen Chat
@@ -130,7 +130,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Anthropic's agent for software work, available in the terminal, IDE extensions, a desktop app, and the browser. Plans and executes multi-step tasks against your own files; included with paid Claude plans.
 
 - name: Cowork
@@ -155,7 +155,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: OpenAI's coding agent, part of the ChatGPT desktop app since the July 2026 merge, alongside a command-line tool, an IDE extension, and a cloud service. Works with local folders, repositories, and terminals; included with every ChatGPT plan, including Free.
 
 # Renamed from "ChatGPT Agent Mode" 2026-07-13: Agent Mode was
@@ -172,7 +172,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   # Blurb and cost updated 2026-07-28 (issue #28, owner approved): the
   # successor-to-Agent-Mode framing no longer appears on any official
   # page (the renamed-from comment above preserves that history), the
@@ -225,7 +225,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Perplexity's desktop agent, which orchestrates multiple models across local files, native applications, and the web from a single request. Generally available in the Mac app; rolling out to Pro and Max subscribers on Windows.
 
 - name: OpenClaw
@@ -245,7 +245,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Literature research assistant that finds papers and extracts key findings into structured tables.
 
 - name: Consensus
@@ -268,7 +268,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
 - name: NotebookLM
@@ -312,7 +312,7 @@
   cost: AUA-licensed
   governance_status: licensed
   status_note: "Licensed institution-wide through the AUA Library (2026) and reviewed ahead of procurement. Sign in with AUA credentials via the library link. The policy's data rules apply here as everywhere."
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Elsevier's Scopus citation database with its Scopus AI layer, answering plain-language questions with cited summaries, concept maps, and an agentic Deep Research mode, grounded in the abstracts of the indexed peer-reviewed literature.
 
 - name: Semantic Scholar
@@ -322,7 +322,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-08-25
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
 
 - name: Claude Science
