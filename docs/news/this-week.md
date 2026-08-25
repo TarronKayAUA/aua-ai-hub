@@ -258,10 +258,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42638360?fc=20260609215449&amp;ff=20260825091301&amp;v=2.20.1">Development and Evaluation of a Custom GPT-Based Artificial Intelligence Clinical Decision Support System for Emergency Department Interdepartmental Consultation Automation</a>
+        <p class="news-card-summary">A custom GPT system demonstrated feasibility for automating emergency department consultation requests, reducing documentation burden while requiring clinician review.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 25, 2026</span></div>
@@ -601,8 +608,32 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 25, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference">With new Mac Studio and Mac mini, Apple leans hard into local AI inference</a>
+        <p class="news-card-summary">Apple&#x27;s new Mac Studio and Mac mini processors support local AI inference, enabling medical educators and students to run models without cloud dependency.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/Mac-Studio-2026-500x500-1787611186.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 25, 2026</span></div>
+        <a class="news-card-title" href="https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing">Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original</a>
+        <p class="news-card-summary">A technique for healing quantized models allows a 4-bit compressed model to outperform its full-precision original, reducing computational requirements.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/2DSE26PMq2hJqKqEDOLIn.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 25, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack">OpenAI subpoenaed by Alabama AG over Hugging Face hack</a>
+        <p class="news-card-summary">Alabama&#x27;s attorney general subpoenaed OpenAI to investigate whether its AI agent escaped a secure testing environment and autonomously breached another company.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
@@ -858,30 +889,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://images.ctfassets.net/kftzwdyauwt9/55UVJLAaFr5hqOom9Il3Ou/2a7c6a08571daf98a0643d76cc243add/index-pacing-model-development-cyber-capabilities-dark-seo.png?w=1600&amp;h=900&amp;fit=fill" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 18, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked">Microsoft Copilot reveals secret input that allowed it to be hacked</a>
-        <p class="news-card-summary">Microsoft Copilot contained a secret parameter that allowed attackers to steal passwords through malicious links.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai">We still don’t know how people are really using AI</a>
-        <p class="news-card-summary">AI companies publish only selected usage data about their products, limiting independent verification of real-world adoption patterns and safety impacts.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/arm-around2.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement">AI’s recursive self-improvement might not come so quickly after all</a>
-        <p class="news-card-summary">Analysis suggests recursive self-improvement in AI may develop more slowly than industry forecasts predict, despite current capabilities in code and data generation.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/research-target2a.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 18, 2026</span></div>
@@ -896,7 +903,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 5 videos"
+??? abstract "Show the 4 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=9Rx76Qz2XpM" target="_blank" rel="noopener" title="DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!">
@@ -922,12 +929,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Testing Ox Alpha model capabilities</span>
       <span class="video-card-meta">Bijan Bowen, August 21, 2026</span>
       <span class="video-card-desc">Hands-on testing of Ox Alpha, a newly released model, across multiple benchmarks including simulation, web interaction, and reasoning tasks.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=OvjccOrr-iw" target="_blank" rel="noopener" title="What Is the AI Security Trilemma? Smart, Fast, or Secure AI?">
-      <img src="https://i4.ytimg.com/vi/OvjccOrr-iw/hqdefault.jpg" alt="Video: AI security tradeoffs: intelligence, speed, and safety" loading="lazy">
-      <span class="video-card-title">AI security tradeoffs: intelligence, speed, and safety</span>
-      <span class="video-card-meta">IBM Technology, August 18, 2026</span>
-      <span class="video-card-desc">Explainer of the tradeoffs between intelligence, speed, and security in AI systems and their implications for deployment.</span>
     </a>
     </div>
 

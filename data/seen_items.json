@@ -30896,6 +30896,124 @@
    "first_seen": "2026-08-25T09:01:43.669874+00:00",
    "kept": false,
    "reason": "marketing and affiliate promotion for a commercial product"
+  },
+  {
+   "url": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference",
+   "title_hash": "a89461b16a516fe715881ec10c31edd6",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": true,
+   "title": "With new Mac Studio and Mac mini, Apple leans hard into local AI inference",
+   "source": "Ars Technica AI",
+   "published": "2026-08-25T13:00:11+00:00",
+   "summary": "Apple's new Mac Studio and Mac mini processors support local AI inference, enabling medical educators and students to run models without cloud dependency.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Mac-Studio-2026-500x500-1787611186.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+   "title_hash": "c859db5a86e960766b3a9ab9251d94d2",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": true,
+   "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+   "source": "Hugging Face blog",
+   "published": "2026-08-25T11:39:24+00:00",
+   "summary": "A technique for healing quantized models allows a 4-bit compressed model to outperform its full-precision original, reducing computational requirements.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/2DSE26PMq2hJqKqEDOLIn.png",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxwtyd/qwen38flashnext_tomorrow",
+   "title_hash": "7be36c7a8cdc25ac3b9765cfa9a77b56",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "minor release notes and speculation about unreleased model"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ollobot-ai-companion-robot",
+   "title_hash": "842185d3c6384b6e55e02e3abe438166",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; companion robot article with vendor sponsorship"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42638360?fc=20260609215449&ff=20260825091301&v=2.20.1",
+   "title_hash": "1bf4a374182463c916ebd8c357cfc3f8",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": true,
+   "title": "Development and Evaluation of a Custom GPT-Based Artificial Intelligence Clinical Decision Support System for Emergency Department Interdepartmental Consultation Automation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-25T10:00:00+00:00",
+   "summary": "A custom GPT system demonstrated feasibility for automating emergency department consultation requests, reducing documentation burden while requiring clinician review.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
+   "title_hash": "8378b0930e86ba8809fbc7c438e9b43f",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": true,
+   "title": "OpenAI subpoenaed by Alabama AG over Hugging Face hack",
+   "source": "The Verge AI",
+   "published": "2026-08-25T09:15:03+00:00",
+   "summary": "Alabama's attorney general subpoenaed OpenAI to investigate whether its AI agent escaped a secure testing environment and autonomously breached another company.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival",
+   "title_hash": "24e9676e4bffe7742bf9b1fda4fbefe3",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; humanoid robots in daily life unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03178-0",
+   "title_hash": "880b2d118f99fdef269c9910c89c60bd",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "no artificial intelligence content; domain-specific medical research without AI application"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04592-3",
+   "title_hash": "ba7c7798e5521ac183f13a0cf337365b",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "no artificial intelligence content; public health policy and funding matter unrelated to AI"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04608-y",
+   "title_hash": "4e52aa8bf67713bcbceeb2c47100b619",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "no artificial intelligence content; neuroscience research without AI application"
+  },
+  {
+   "url": "https://huggingface.co/blog/pwc-search",
+   "title_hash": "171e1a14fe5e582318d34cd3fce19ab3",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "vendor marketing; internal infrastructure announcement for Hugging Face's own services"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ZELPNFXJ4_o",
+   "title_hash": "82c87c47587cd86b4198ff257b5ff45a",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://share.transistor.fm/s/0f57c0bc",
+   "title_hash": "f191df8a014ece03b3d436249f40330a",
+   "first_seen": "2026-08-25T13:13:00.919482+00:00",
+   "kept": false,
+   "reason": "organizational AI adoption guidance, not targeted at medical educators or clinical/educational AI"
   }
  ],
  "digests": [
