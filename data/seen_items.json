@@ -30603,6 +30603,250 @@
    "first_seen": "2026-08-25T01:53:43.823081+00:00",
    "kept": false,
    "reason": "product demonstration and marketing from the product's own company without educational substance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21364",
+   "title_hash": "f31b4028f27b31462ca752ab8c6f3db7",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical study of narrative interpretation; not significant for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21365",
+   "title_hash": "b8a245ddf2722f4efa7f264bbe9a03fc",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow domain application; analysis of semantic search in low-resource language without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21369",
+   "title_hash": "5c5d211204adbb114347dc8fa551c355",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow domain application; benchmark for a specific language variety without broad significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21376",
+   "title_hash": "b100396122a86916fd8297a67019f1ed",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "On the Role of Citations in Preference Data",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Study examines how humans and language models evaluate citations when comparing outputs, critical for reward modeling and attributed generation.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21377",
+   "title_hash": "46d85f5aa55b9343bf89a13cf15c324b",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "Agentic Scaffolding Amplifies Sycophantic Behavior in Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Research shows that greater interaction scaffolding amplifies sycophantic behavior in language models, where they prioritize user agreement over truthfulness.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21384",
+   "title_hash": "b462bc656dd22c6a9a309eddde6fea39",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical analysis of tokenization inefficiency; not significant for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21385",
+   "title_hash": "9aea7e86e3986028297ecda445534c05",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "social media analysis of geopolitical discourse; off-topic for medical education or clinical audiences"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21415",
+   "title_hash": "491a4c7a19a02b4569c712c22caf2c0c",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "Mitigating Bias in Large Vision-Language Models via Counterfactual Ensemble Decoding",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Method using counterfactual ensemble decoding reduces social biases in large vision-language models inherited from training data.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21423",
+   "title_hash": "833b2f6c875284649cc821530455a280",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "Agentic Security: A Systematization of Tools, Failure Modes, and Design Laws for LLM-Driven Penetration Testing",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Systematization of failure modes and design principles for LLM-driven penetration testing agents identifies recurring operational failures.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21462",
+   "title_hash": "fa9011ab99ed752fd013d0f5b9bbd2cf",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow language-specific analysis; not significant for broad medical education audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21544",
+   "title_hash": "cfd076ca3617bd2fa9325d0ed256ae60",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical study of tool-augmented agent unlearning; incremental application of existing methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21558",
+   "title_hash": "16afece5b295e39447e0318b0300538f",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "Automating Multi-Hop RAG Evaluation via TRIAD: From Context Extraction to Validated Dataset Generation",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Automated approach generates domain-specific question-answer datasets for evaluating retrieval-augmented generation systems on proprietary data.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21559",
+   "title_hash": "bb3d5695a7ff69f08075d3d0ba148d99",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical analysis of evidence reliability in multi-stage pipelines; not significant for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21606",
+   "title_hash": "cb149d574e934190bb0a324b1fc54bca",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "Can LLMs Truly Forget? Revealing Unlearning Gaps Through Adversarial Evaluation",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Study evaluates whether machine unlearning truly removes targeted training data influence from models or leaves information accessible through adversarial queries.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21656",
+   "title_hash": "1a96e6861f88e5b1b727e578778fbb8e",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical defense mechanism for RAG systems; incremental security contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21714",
+   "title_hash": "a72231e37c6480969e74a8578ba44576",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow domain application; benchmark for cross-lingual retrieval in low-resource language without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21750",
+   "title_hash": "ac95e3e788e2ab875d8ec6a434bb88d1",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization for RAG systems; incremental contribution to parameter-efficient methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21766",
+   "title_hash": "807dce917e6500d5c7dc701151e8a5ea",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "Evaluation Awareness in Language Models: Representation, Verbalization, and Control",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Research examines whether language models alter behavior when they detect being evaluated and proposes methods to control such evaluation awareness.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21775",
+   "title_hash": "aa5e02c7d80027c8ae550f037905b13a",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "No One Model Catches Every Harm: Benchmarking Content Moderation Across Safety Scenarios",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-25T04:00:00+00:00",
+   "summary": "Benchmark shows that no single model catches all types of harmful content, ranging from jailbreaks to implicit hate, across diverse safety scenarios.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21794",
+   "title_hash": "096d5ea790434546812766b39a586664",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical analysis of GUI element grounding; not significant for medical education or clinical audiences"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21806",
+   "title_hash": "7ce44af7d23459afdbbb92dc576e2adc",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "meta-analysis of NLP conference practices; not significant for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21808",
+   "title_hash": "21057e167632ff4d413c99e51c46ebbe",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical method for multimodal RAG; incremental contribution without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21821",
+   "title_hash": "e840602eaedbcfc70fac69321bcf1ae5",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "cross-cultural Wikipedia analysis; off-topic for medical education and clinical audiences"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21827",
+   "title_hash": "6d385d6932a3d5fb28582518d26403b5",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow evaluation of LLM performance on poetry; not significant for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.21829",
+   "title_hash": "84f69aca699ef4abcb421441e13c6c73",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "narrow technical method for knowledge base curation; not significant for medical education or clinical practice"
+  },
+  {
+   "url": "https://huggingface.co/blog/gradio-workflow-guide",
+   "title_hash": "70a60fc571ad0d20a0e0d0baa54b6dd3",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": false,
+   "reason": "vendor marketing; product feature announcement from company's own blog"
+  },
+  {
+   "url": "https://reinvently.co.uk/tools/ed-o-meter",
+   "title_hash": "76368a52244403f7ddbed6aa10ce38d6",
+   "first_seen": "2026-08-25T04:55:34.803563+00:00",
+   "kept": true,
+   "title": "GLM-5.3 (open-weight) beat Anthropic/OpenAI models, for 1/5 the cost",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-23T16:24:21+00:00",
+   "summary": "Open-weight GLM-5.3 model demonstrates competitive performance against Anthropic and OpenAI models at substantially lower cost.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://reinvently.co.uk/images/hero-ed-o-meter-leaderboard.jpg",
+   "topic": "New models"
   }
  ],
  "digests": [

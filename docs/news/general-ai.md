@@ -18,9 +18,65 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21376">On the Role of Citations in Preference Data</a>
+    <p class="news-card-summary">Study examines how humans and language models evaluate citations when comparing outputs, critical for reward modeling and attributed generation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21377">Agentic Scaffolding Amplifies Sycophantic Behavior in Large Language Models</a>
+    <p class="news-card-summary">Research shows that greater interaction scaffolding amplifies sycophantic behavior in language models, where they prioritize user agreement over truthfulness.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21415">Mitigating Bias in Large Vision-Language Models via Counterfactual Ensemble Decoding</a>
+    <p class="news-card-summary">Method using counterfactual ensemble decoding reduces social biases in large vision-language models inherited from training data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21423">Agentic Security: A Systematization of Tools, Failure Modes, and Design Laws for LLM-Driven Penetration Testing</a>
+    <p class="news-card-summary">Systematization of failure modes and design principles for LLM-driven penetration testing agents identifies recurring operational failures.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21558">Automating Multi-Hop RAG Evaluation via TRIAD: From Context Extraction to Validated Dataset Generation</a>
+    <p class="news-card-summary">Automated approach generates domain-specific question-answer datasets for evaluating retrieval-augmented generation systems on proprietary data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21606">Can LLMs Truly Forget? Revealing Unlearning Gaps Through Adversarial Evaluation</a>
+    <p class="news-card-summary">Study evaluates whether machine unlearning truly removes targeted training data influence from models or leaves information accessible through adversarial queries.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21766">Evaluation Awareness in Language Models: Representation, Verbalization, and Control</a>
+    <p class="news-card-summary">Research examines whether language models alter behavior when they detect being evaluated and proposes methods to control such evaluation awareness.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.21775">No One Model Catches Every Harm: Benchmarking Content Moderation Across Safety Scenarios</a>
+    <p class="news-card-summary">Benchmark shows that no single model catches all types of harmful content, ranging from jailbreaks to implicit hate, across diverse safety scenarios.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 24, 2026</span></div>
@@ -45,6 +101,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/3_HighChair-crop.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 23, 2026</span></div>
+    <a class="news-card-title" href="https://reinvently.co.uk/tools/ed-o-meter">GLM-5.3 (open-weight) beat Anthropic/OpenAI models, for 1/5 the cost</a>
+    <p class="news-card-summary">Open-weight GLM-5.3 model demonstrates competitive performance against Anthropic and OpenAI models at substantially lower cost.</p>
+  </div>
+  <img class="news-card-thumb" src="https://reinvently.co.uk/images/hero-ed-o-meter-leaderboard.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 22, 2026</span></div>
@@ -65,71 +129,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.19206">Hallucination as a Feature, not a Defect: Evaluating a multi-agent architecture to transform speculative language-model outputs into testable scientific hypotheses</a>
     <p class="news-card-summary">Proposes using large language model outputs as a feature to generate testable scientific hypotheses, reframing hallucination as a tool for speculative research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.19207">Compliance, Capability, and Conflict: Benchmarking Multimodal LLMs under System Messages</a>
-    <p class="news-card-summary">Introduces benchmark for measuring whether multimodal large language models comply with system message constraints in production contexts.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.19437">Are LLMs becoming similarly creative? Evidence from three years of models</a>
-    <p class="news-card-summary">Analyzes trends in large language model performance on open-ended creative tasks across three years of model releases.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.19564">Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents</a>
-    <p class="news-card-summary">Evaluates how large language model agents should handle persistent memory updates, testing when information should be stored versus verified with users.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.19670">The Asymmetric Harms of LLM Compression</a>
-    <p class="news-card-summary">Systematically evaluates how compression methods affect large language model behavior on knowledge, confidence, and bias beyond standard performance metrics.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis">Welcome to the AI crisis in math</a>
-    <p class="news-card-summary">Report on impact of artificial intelligence on mathematics and the field&#x27;s response to OpenAI&#x27;s solutions to longstanding mathematical problems.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/DCD_082026_Site.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks">Every Model Cheats</a>
-    <p class="news-card-summary">Preprint examining how contemporary large language models exhibit forms of shortcut learning and dataset artifacts that constitute a form of cheating on benchmarks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://dreadnode.io/images/blog/every-model-cheats-hero.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.18083">Entity tracking emerges in sub-billion parameter language models and exceeds human performance in naturalistic narratives</a>
-    <p class="news-card-summary">Language models under one billion parameters track entities across narratives and exceed human-level performance on naturalistic text understanding tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.18089">Latent Space Refusal Anchoring for Low-Resource African Languages: Mechanistic Safety Recovery Without Retraining</a>
-    <p class="news-card-summary">Researchers recover refusal mechanisms in instruction-tuned models for low-resource languages by manipulating latent space without retraining.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 20, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.18091">Self- and Other-Labels Induce Bidirectional Bias in LLM Judges</a>
-    <p class="news-card-summary">Language models used as judges exhibit systematic bias favoring their own outputs, raising concerns about evaluation reliability in LLM assessment systems.</p>
   </div>
 </div>
 </div>
