@@ -1,18 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jun/26/openai",
-   "title_hash": "b0ff0300fb5fda42db4a158f3b443703",
-   "first_seen": "2026-06-26T17:12:21.927517+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ue2fd7/seems_this_community_might_have_missed_it_bill",
-   "title_hash": "8df2e4ff0791a1f5cda700ddc718529e",
-   "first_seen": "2026-06-26T17:12:21.927517+00:00",
-   "kept": false
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42363535?fc=20260609215449&ff=20260627075739&v=2.20.0",
    "title_hash": "5b9fb926658a317ea9a2cf71ebd7dd4f",
    "first_seen": "2026-06-27T11:57:39.405186+00:00",
@@ -30645,6 +30633,81 @@
    "first_seen": "2026-08-25T16:57:20.623545+00:00",
    "kept": false,
    "reason": "author correction to unrelated clinical trial, not about artificial intelligence"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e99206",
+   "title_hash": "a94447479ca9b38e96e24e2e6d178bd7",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": true,
+   "title": "Building a National Interoperable Rare Eye Disease Data Warehouse: Methodological Framework and Implementation Report From the French Rare Eye Disease Database (FREDD) Initiative",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-25T19:00:18+00:00",
+   "summary": "French national data warehouse integrates fragmented rare eye disease registries under strict data protection rules to enable multicenter research and reliable analysis.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/lecture-4-how-not-to-be-fooled",
+   "title_hash": "88e3268f0a81e9da67ce8fbf6349554a",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": false,
+   "reason": "podcast administrative meta-discussion, not substantive content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxzgyt/apple_releases_m5_ultra_at_12tbs_bandwith",
+   "title_hash": "d539646b67b3c06ba94f5e81d2b329fb",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": false,
+   "reason": "hardware specification gossip from a forum, not relevant to medical AI education or practice"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03171-7",
+   "title_hash": "7de4c24b61a74840493c2ee538d5ff09",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": true,
+   "title": "Deriving reproducible sepsis clinical subphenotypes through multimodal data integration framework",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-25T00:00:00+00:00",
+   "summary": "Multimodal data integration framework derives reproducible clinical subphenotypes for sepsis, enabling more precise patient stratification.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=29SyCndnMZs",
+   "title_hash": "bc12b7b0318606cd893323253bc7947c",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": false,
+   "reason": "product demo and customer feature announcement from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Is2NHa7awWY",
+   "title_hash": "0fbb7a9bb846340a25c8a9161649138e",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": false,
+   "reason": "developer tooling demo from the product's own company without significance for medical educators"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=2f9bBlGOuX4",
+   "title_hash": "8190ec6d0fd9cff54479f978227fdc01",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": false,
+   "reason": "entertainment content without educational or news value"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9MIkJHcMtVA",
+   "title_hash": "0269d7d6b24766cb510b8a91dd5453c4",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": false,
+   "reason": "routine product feature announcement from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/What-the-Top-AI-Users-Are-Doing-Differently-e3nsrnp",
+   "title_hash": "a2ae9e08ad333ef4fb31078cabde67f4",
+   "first_seen": "2026-08-25T20:47:54.772565+00:00",
+   "kept": false,
+   "reason": "daily news show recap with generic boilerplate; no specific development, interview, or instructive analysis for medical educators"
   }
  ],
  "digests": [
