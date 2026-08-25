@@ -52,15 +52,13 @@ If your school or library licenses one of these platforms, it is the right answe
 
 ## Look harder before you generate
 
-A worked example, because the reasoning generalizes.
+The situation that sends people to a generator is usually this one: every figure you can find of a structure is a section, and you want it from another direction. It is tempting to conclude the view does not exist.
 
-Suppose you want a front-on view of the epiploic foramen (the foramen of Winslow) and every figure you find is a section. It is tempting to conclude the view does not exist and to generate one.
+Often it does exist, and the reason you did not find it is worth knowing. A structure that lies deep to another is hidden rather than absent, and atlases handle that by removing or reflecting what covers it rather than by changing the angle. Those plates are then captioned by what was taken away, which is precisely the wording that a search on the structure's own name will not surface. Sectional diagrams sit alongside them for a different job, showing how neighboring spaces relate rather than showing the structure face on. And the view you want may already exist in the radiology literature, in whichever imaging plane is standard for that region rather than the one you were picturing.
 
-It does exist. The foramen sits immediately behind the free right edge of the hepatoduodenal ligament, so in an intact abdomen it is hidden rather than absent. Atlases handle that by removing the obstruction rather than by changing the angle: standard illustrations are anterior views with the lesser omentum removed or the stomach reflected. TeachMeAnatomy captions such a figure "The lesser omentum removed to show the epiploic foramen of Winslow," and Netter's plate is titled "Omental Bursa: Stomach Reflected." Sagittal diagrams do appear, but they show how the greater and lesser sacs relate rather than showing the aperture. On computed tomography the foramen is assessed mainly in the axial plane.
+The search failed, not the literature. There is also a cost to skipping past this that is easy to miss: why a structure is awkward to depict is often itself the anatomy, and a generated picture that renders it conveniently visible erases the very relationship a student needs to understand.
 
-The search failed, not the literature. And the anatomy carries a teaching point that a generated image would have erased: the foramen opens to the right, which is why it is classically demonstrated by passing a finger behind that free margin rather than by looking into it, and why the structures of the portal triad sit where they do in front of it.
-
-Before generating, work through the atlas plate list rather than the index, a 3D platform if you have one, a colleague in anatomy, a librarian, and the radiology literature for the corresponding imaging plane.
+Before generating, work through the atlas plate list and its captions rather than the index, a 3D platform if you have one, a colleague who teaches the region, a librarian, and the radiology literature for the corresponding imaging plane.
 
 ## The one workflow with evidence behind it
 
