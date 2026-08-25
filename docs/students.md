@@ -66,6 +66,7 @@ This is where the daily habits form, and the ones that pay off share a shape: th
 - **Documents, without the fiddling.** Assistants can already turn a scanned PDF into searchable text, clean up an exported spreadsheet, or build a study sheet as a real file. The [Skills page](tools/skills.md) covers what is switched on by default, and why skills from unknown authors deserve caution.
 - **Finding study tools.** The [Medical Learning tools](tools/index.md#medical-learning) in the directory are built for exactly this. Statuses describe the institution's relationship with each tool, and a listing is not an endorsement.
 - **Better answers, less effort.** [Getting Better Answers](basics/better-answers.md) explains the three levers that decide quality: what goes into the context window, what persists as memory, and standing instructions.
+- **Do not let AI draw your anatomy.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong, and a wrong picture studied at first exposure is unusually hard to unlearn. The [misconceptions page](basics/misconceptions.md) explains what to use instead.
 - **Calibrating trust.** Fluency is not accuracy. The [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, and it matters double for anything you might carry into an exam or a ward.
 
 ## Around an exam

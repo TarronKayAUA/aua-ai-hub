@@ -71,6 +71,7 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 | Ending the re-explaining | [Standing Setups](tools/standing-setups.md) | A project per course; [Your First Agent Session](tools/first-session.md) is the 20-minute walkthrough for file-based work |
 | Producing documents, decks, and spreadsheets | [Skills](tools/skills.md) | Four document skills are already switched on and need no setup, including text recognition on scanned PDFs; the same page explains why skills from unknown authors are a real risk |
 | Writing a letter of evaluation | [AI and the Residency Application](playbooks/residency-application.md) | The AAMC permits AI support for drafting while you remain the author responsible for content and accuracy; a student's record is an educational record |
+| Making or sourcing a figure for a session | [AI-Generated Images in Teaching](playbooks/ai-images.md) | Generated anatomy looks polished and is frequently wrong; the fix is usually a resource you have not exhausted, not a generated picture |
 | Getting better answers from any tool | [Getting Better Answers](basics/better-answers.md) | The three levers that decide output quality: context, memory, and standing instructions |
 
 ## Staying current
