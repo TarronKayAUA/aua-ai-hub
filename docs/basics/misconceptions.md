@@ -60,13 +60,13 @@ The evidence so far supports a narrower claim: these tools shift how time is spe
 
 Verification works differently here. With text you can check a claim against a source; with a generated image there is no source it came from, and the errors are not the kind you catch by looking, because the wrong parts are rendered as confidently as the right ones.
 
-The numbers are not marginal. A 2025 study generated 1,500 anatomical images for patient education and found fabricated anatomy in 99.8 percent of them, while many of those images scored as well as real teaching materials on visual detail and clarity. A 2024 study found that no generator tested could produce a skull, heart, or brain illustration that was both detailed and accurate. Foramina, suture lines, rib counts, and muscle attachments are the structures that go wrong most often, which is to say the structures you are being examined on.
+The numbers are not marginal. A 2025 study generated 1,500 anatomical images for patient education and found fabricated anatomy in 99.8 percent of them, while many of those images scored as well as real teaching materials on visual detail and clarity ([PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC12547223/)). A 2024 study found that no generator tested could produce a skull, heart, or brain illustration that was both detailed and accurate ([DOI](https://doi.org/10.1002/ase.2336)). Foramina, suture lines, rib counts, and muscle attachments are the structures that go wrong most often, which is to say the structures you are being examined on.
 
 The reason is mechanical. These models are good at rendering recognizable objects and measurably worse at counting and at spatial relationships, and anatomy is largely counting and spatial relationships.
 
 Not every generated image is wrong, and the tools have improved between generations. That is exactly what makes them risky for study: some structures come out right, and nothing on the image tells you which ones.
 
-Why this matters more than an ordinary AI error: a wrong sentence is easy to overwrite, but a wrong picture studied during first exposure is memorable, and confident wrong beliefs are the hard ones to shift. In one study of medical students, an incorrect answer held with confidence was corrected only 35.8 percent of the time, against 61.4 percent when the student was unsure. An image you generated yourself, on your own screen, with nobody checking it, is the ideal way to manufacture exactly that kind of confidence.
+Why this matters more than an ordinary AI error: a wrong sentence is easy to overwrite, but a wrong picture studied during first exposure is memorable, and confident wrong beliefs are the hard ones to shift. In one study of medical students, an incorrect answer held with confidence was corrected only 35.8 percent of the time, against 61.4 percent when the student was unsure ([DOI](https://doi.org/10.1186/s12909-020-02166-6)). An image you generated yourself, on your own screen, with nobody checking it, is the ideal way to manufacture exactly that kind of confidence.
 
 What to do instead:
 

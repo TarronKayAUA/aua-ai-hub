@@ -59,7 +59,7 @@ Artificial intelligence (AI) has changed literature work more than any other res
 
 - Your research question, framework-vetted. If it is still an idea, the [Research question coach](../prompts/index.md) prompt converts it into a PICO/PICOT or SPIDER structure with a FINER screen, and hands you the novelty search to run.
 - Your inclusion and exclusion criteria, written as numbered lists before any tool sees a single abstract.
-- Your review's ambition, named honestly: an orientation for an introduction section, a scoping review, or a full systematic review. A systematic review needs a registered protocol and PRISMA documentation from the first search onward, not retrofitted at the end.
+- Your review's ambition, named honestly: an orientation for an introduction section, a scoping review, or a full systematic review. A systematic review needs a registered protocol and [PRISMA](https://www.prisma-statement.org/) documentation from the first search onward, not retrofitted at the end.
 - Library access: [Scopus with AI](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) through your AUA credentials.
 
 ## The workflow
