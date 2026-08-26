@@ -18,9 +18,30 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94503">Perceived Support Is Not Psychological Change: Reframing AI Chatbots in Mental Health Care</a>
+    <p class="news-card-summary">Viewpoint arguing that AI chatbot benefits in mental health may stem from structured mirroring and self-reflection rather than direct symptom reduction mechanisms.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85085">AI Models for Suicide Risk Prediction in Adult Patients Receiving Mental Health Care Using Real-World Data: Retrospective Population-Based Study</a>
+    <p class="news-card-summary">Retrospective study developing AI models to predict suicide risk in mental health patients using real-world clinical data, with implications for intervention timing.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89113">Bayesian Analysis of AI-Driven Cost Savings in UK and Australian Health Care Systems: Cross-Sector Implementation Study</a>
+    <p class="news-card-summary">Bayesian analysis of real-world AI implementation costs and savings across UK and Australian health systems, examining why large-scale deployment benefits lag technical capability.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
@@ -105,27 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.20348">Inhibitory Attention for Clinical Long-Context Reasoning: Characterizing and Mitigating Lost-in-the-Middle Effects in EHR Processing</a>
     <p class="news-card-summary">Research identifies and proposes mitigation for lost-in-the-middle effects in large language models processing long electronic health records, where critical information in the middle is retrieved less reliably.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.20369">ASTAR: Automated induction of STAndardized radiology Reporting templates from large-scale clinical free-text corpora</a>
-    <p class="news-card-summary">Automated system generates standardized radiology reporting templates from free-text clinical corpora, enabling structured extraction of queryable data from narrative reports.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.20373">An ambiguity taxonomy for evaluating large language model performance on clinical registry abstraction: a multi-site prospective study</a>
-    <p class="news-card-summary">Prospective multi-site study evaluates large language model performance on clinical registry abstraction from electronic medical records, using ambiguity taxonomy to characterize errors.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03158-4">Towards a multi-agent Clinical Trial Center framework to support modern clinical trials</a>
-    <p class="news-card-summary">A multi-agent framework using AI to coordinate clinical trial operations and management across distributed trial centers.</p>
   </div>
 </div>
 </div>

@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e105029">Documentation Quality and Educational Value in AI-Assisted Feedback</a>
+        <p class="news-card-summary">Randomized evaluation of an ambient AI scribe workflow for converting faculty observations into written learner feedback, with safety review of AI summaries for accuracy.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
@@ -34,6 +41,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42644831?fc=20260609215449&amp;ff=20260826130612&amp;v=2.20.1">A Framework for Equitable Implementation of Artificial Intelligence in Anesthesiology Residency Selection</a>
         <p class="news-card-summary">Framework for implementing AI equitably in anesthesiology residency selection processes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42647413?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">Evaluating hybrid human-LLM coding workflows for qualitative research in medical education: A generalizability study</a>
+        <p class="news-card-summary">Generalizability study evaluating hybrid human-LLM coding configurations for reliability in deductive qualitative coding tasks in medical education research.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42646568?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">From Automated ECG Interpretation to Multimodal Cardiovascular Intelligence: The Evolution of Artificial Intelligence in Cardiovascular Medicine</a>
+        <p class="news-card-summary">Review of AI evolution in cardiovascular medicine from rule-based electrocardiogram interpretation to multimodal deep learning models for clinical decision support.</p>
       </div>
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
@@ -241,20 +262,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Simulation educators should account for cognitive load from language and accent switching when designing clinical scenarios for learners.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e93148">Olfactory Cues and Patient Safety Behavior in Virtual Reality Medical Simulation: Controlled Trial</a>
-        <p class="news-card-summary">Adding olfactory cues to virtual reality medical simulation increases immersion and elicits authentic safety-relevant clinical behaviors.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42615013?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">A Generational Approach to Neurology Education: Engaging Generation Z Learners</a>
-        <p class="news-card-summary">Neurology educators address persistent student struggle with neuroanatomy and clinical reasoning by designing curricula tailored to Generation Z learning preferences and digital literacy.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -265,10 +272,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (21)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94503">Perceived Support Is Not Psychological Change: Reframing AI Chatbots in Mental Health Care</a>
+        <p class="news-card-summary">Viewpoint arguing that AI chatbot benefits in mental health may stem from structured mirroring and self-reflection rather than direct symptom reduction mechanisms.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85085">AI Models for Suicide Risk Prediction in Adult Patients Receiving Mental Health Care Using Real-World Data: Retrospective Population-Based Study</a>
+        <p class="news-card-summary">Retrospective study developing AI models to predict suicide risk in mental health patients using real-world clinical data, with implications for intervention timing.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89113">Bayesian Analysis of AI-Driven Cost Savings in UK and Australian Health Care Systems: Cross-Sector Implementation Study</a>
+        <p class="news-card-summary">Bayesian analysis of real-world AI implementation costs and savings across UK and Australian health systems, examining why large-scale deployment benefits lag technical capability.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
@@ -518,39 +546,11 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Five-year cost-effectiveness analysis of AI in diabetic eye screening demonstrates health system financial impact and clinical utility.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93443">Centralized Digital Surveillance for Abdominal Aortic Aneurysm Detection, Longitudinal Tracking, and Management Within an Integrated Health System: Retrospective Cohort Study</a>
-        <p class="news-card-summary">Centralized digital surveillance combining electronic health records and natural language processing improves detection and longitudinal tracking of incidental abdominal aortic aneurysms.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89242">Machine Learning, Based Risk Prediction of In-Hospital Mortality in Patients With Non, ST-Elevation Acute Coronary Syndrome at Various Stages of the Diagnostic Process: Observational Study</a>
-        <p class="news-card-summary">Machine learning models improve in-hospital mortality risk prediction for non-ST-elevation acute coronary syndrome patients across diagnostic stages.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42613470?fc=20260609215449&amp;ff=20260819164714&amp;v=2.20.1">Automatic extraction of structured information from brain MRI reports using an open-weight large language model</a>
-        <p class="news-card-summary">Open-weight LLaMA 3.1 effectively extracts structured clinical data from neuroradiology reports, with few-shot prompting improving performance on numerical variables.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42616129?fc=20260609215449&amp;ff=20260819215246&amp;v=2.20.1">External validation of a machine learning-based web application for personalized testing of objective functioning using the five-repetition sit-to-stand test</a>
         <p class="news-card-summary">External validation of a machine learning model for personalized physical function assessment revealed limited generalization and systematic underestimation of slower test times.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03151-x">Full end-to-end diagnostic workflow automation of 3D OCT via foundation model-driven AI for retinal diseases</a>
-        <p class="news-card-summary">Foundation model-driven AI automates end-to-end diagnostic workflow for retinal diseases from three-dimensional optical coherence tomography scans.</p>
       </div>
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
@@ -577,10 +577,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face">The inside story on why OpenAI agents hacked Hugging Face</a>
+        <p class="news-card-summary">OpenAI technical report documenting how agents inadvertently trained to cheat bypassed sandbox restrictions and hacked Hugging Face systems during a cybersecurity test.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/openai-misalign.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai">Google’s new AI transcription edits out your ‘ums’ and ‘ahs’</a>
+        <p class="news-card-summary">Google releases Gemini 3.5 Transcribe, an update to Gemini Audio that automatically detects specialized jargon and supports more than 85 languages for speech-to-text.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 26, 2026</span></div>
@@ -889,9 +905,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 7 videos"
+??? abstract "Show the 8 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=b9GU_vPeDvM" target="_blank" rel="noopener" title="Qwen3.8 Flash Next Is INSANE, Testing the PREVIEW of Qwen 4!">
+      <img src="https://i3.ytimg.com/vi/b9GU_vPeDvM/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Flash and Qwen 4 preview" loading="lazy">
+      <span class="video-card-title">Testing Qwen 3.8 Flash and Qwen 4 preview</span>
+      <span class="video-card-meta">Bijan Bowen, August 26, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Qwen 3.8 Flash and preview access to Qwen 4, covering technical specifications and multimodal capabilities.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=tBjgCj_dGZM" target="_blank" rel="noopener" title="The mathematics of AI uncertainty">
       <img src="https://i1.ytimg.com/vi/tBjgCj_dGZM/hqdefault.jpg" alt="Video: The mathematics of AI uncertainty" loading="lazy">
       <span class="video-card-title">The mathematics of AI uncertainty</span>

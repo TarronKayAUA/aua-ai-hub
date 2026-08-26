@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=b9GU_vPeDvM" target="_blank" rel="noopener" title="Qwen3.8 Flash Next Is INSANE, Testing the PREVIEW of Qwen 4!">
+  <img src="https://i3.ytimg.com/vi/b9GU_vPeDvM/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Flash and Qwen 4 preview" loading="lazy">
+  <span class="video-card-title">Testing Qwen 3.8 Flash and Qwen 4 preview</span>
+  <span class="video-card-meta">Bijan Bowen, August 26, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Qwen 3.8 Flash and preview access to Qwen 4, covering technical specifications and multimodal capabilities.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=tBjgCj_dGZM" target="_blank" rel="noopener" title="The mathematics of AI uncertainty">
   <img src="https://i1.ytimg.com/vi/tBjgCj_dGZM/hqdefault.jpg" alt="Video: The mathematics of AI uncertainty" loading="lazy">
   <span class="video-card-title">The mathematics of AI uncertainty</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing Meta open-source models and Muse Glimmer</span>
   <span class="video-card-meta">Bijan Bowen, August 10, 2026</span>
   <span class="video-card-desc">Hands-on testing of Meta&#x27;s open-source model releases and Muse Glimmer, including local deployment and browser functionality.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=iF5IWjOWcA4" target="_blank" rel="noopener" title="Dispatches from Iceland">
-  <img src="https://i2.ytimg.com/vi/iF5IWjOWcA4/hqdefault.jpg" alt="Video: Iceland&#x27;s national AI education pilot for teachers" loading="lazy">
-  <span class="video-card-title">Iceland&#x27;s national AI education pilot for teachers</span>
-  <span class="video-card-meta">Anthropic, August 10, 2026</span>
-  <span class="video-card-desc">Iceland&#x27;s national AI education pilot program giving teachers access to AI tools for classroom integration and professional development.</span>
 </a>
 </div>
 

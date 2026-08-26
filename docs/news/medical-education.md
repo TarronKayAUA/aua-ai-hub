@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e105029">Documentation Quality and Educational Value in AI-Assisted Feedback</a>
+    <p class="news-card-summary">Randomized evaluation of an ambient AI scribe workflow for converting faculty observations into written learner feedback, with safety review of AI summaries for accuracy.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
@@ -33,6 +40,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42644831?fc=20260609215449&amp;ff=20260826130612&amp;v=2.20.1">A Framework for Equitable Implementation of Artificial Intelligence in Anesthesiology Residency Selection</a>
     <p class="news-card-summary">Framework for implementing AI equitably in anesthesiology residency selection processes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42647413?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">Evaluating hybrid human-LLM coding workflows for qualitative research in medical education: A generalizability study</a>
+    <p class="news-card-summary">Generalizability study evaluating hybrid human-LLM coding configurations for reliability in deductive qualitative coding tasks in medical education research.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42646568?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">From Automated ECG Interpretation to Multimodal Cardiovascular Intelligence: The Evolution of Artificial Intelligence in Cardiovascular Medicine</a>
+    <p class="news-card-summary">Review of AI evolution in cardiovascular medicine from rule-based electrocardiogram interpretation to multimodal deep learning models for clinical decision support.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -105,27 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">When end users can build: AI-assisted application development and the new accountability gap in digital health</a>
     <p class="news-card-summary">When health professionals use generative AI to build their own digital tools, accountability for safety and quality shifts from developers to end users, raising new governance questions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42629687?fc=20260609215449&amp;ff=20260822090215&amp;v=2.20.1">Artificial intelligence in medical education: Performance of ChatGPT versus medical students on medical examination</a>
-    <p class="news-card-summary">Study comparing ChatGPT performance against medical students on preventive medicine examination questions, evaluating accuracy and reliability in medical problem-solving.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">Twelve tips for educators supporting learner-centered AI integration in undergraduate medical education</a>
-    <p class="news-card-summary">Practical guidance for educators integrating artificial intelligence into undergraduate medical education using a five-level socio-ecological framework.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42630272?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">Effectiveness of a &quot;5E+AI&quot; teaching model on science communication in medical students: a contribution to global health literacy</a>
-    <p class="news-card-summary">Study evaluates a teaching model combining the 5E framework with artificial intelligence to improve medical student knowledge acquisition and science communication skills.</p>
   </div>
 </div>
 </div>
