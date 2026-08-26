@@ -34,7 +34,7 @@ Artificial intelligence tools now cover most stages of a research project, from 
 <text x="541" y="86" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Scite, OpenEvidence</text>
 <rect x="20" y="152" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="117" y="172" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">4. synthesize your sources</text>
-<text x="117" y="192" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">NotebookLM, grounded</text>
+<text x="117" y="192" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Gemini Notebook, grounded</text>
 <text x="117" y="206" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">in what you upload</text>
 <rect x="232" y="152" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="329" y="172" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">5. analyze</text>
@@ -87,7 +87,7 @@ For a first pass at "what does the literature say about X," licensed [Scopus AI]
 
 ## Synthesizing from your own sources
 
-[NotebookLM](https://notebooklm.google.com) is the standout free tool for working with a fixed set of papers: upload them and it answers questions, drafts summaries, and builds study aids grounded only in what you gave it, with citations back to the exact passage. Because it refuses to reach beyond the uploaded sources, it has the lowest hallucination risk of anything on this page. The limitation is the same as the strength: it only knows what you upload.
+[Gemini Notebook](https://notebook.google/), which Google renamed from NotebookLM in July 2026, is the standout free tool for working with a fixed set of papers: upload them and it answers questions, drafts summaries, and builds study aids grounded only in what you gave it, with citations back to the exact passage. Because it refuses to reach beyond the uploaded sources, it has the lowest hallucination risk of anything on this page. The limitation is the same as the strength: it only knows what you upload.
 
 ## Analysis and agentic workbenches
 
@@ -118,13 +118,13 @@ Prices are approximate, checked July 2026 from vendor pages, and change often; t
 | [Scopus with AI](#scopus-with-ai-licensed-for-aua) | AUA institutional license; no cost to AUA users | Everyone; cited orientation summaries plus citation-database depth |
 | [Semantic Scholar](#finding-and-mapping-literature) | Free | Everyone; all fields including medical education |
 | [ResearchRabbit](#finding-and-mapping-literature) | Free (feature-complete tier) | Everyone; literature mapping in any field |
-| [NotebookLM](#synthesizing-from-your-own-sources) | Free; higher limits on Google's paid AI plans | Everyone; synthesis from your own paper set |
+| [Gemini Notebook](#synthesizing-from-your-own-sources) | Free; higher limits on Google's paid AI plans | Everyone; synthesis from your own paper set |
 | [Consensus](#answering-evidence-questions) | Free tier; Pro about $10/month, student discounts | Clinical and biomedical evidence questions |
 | [Elicit](#screening-and-extracting) | Free tier; paid tiers roughly $7 to $49/month | Systematic-review style screening and extraction |
 | [Scite](#answering-evidence-questions) | About $20/month, free trial | Verifying how key claims held up; biomedical depth |
 | [OpenEvidence](#answering-evidence-questions) | Free for verified US clinicians and US medical students | Clinical questions; US-credential holders only |
 | [Claude Science](#analysis-and-agentic-workbenches) | Included in paid Claude plans (beta) | Computational and laboratory science; statistics-heavy work |
 
-Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, NotebookLM, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
+Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, Gemini Notebook, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
 
 Suggest a tool for this page through the [About page](../about.md) contact. New tools enter the directory as Listed, a catalog fact rather than a verdict; committee review of any tool can be requested through the [review process](../governance/review-process.md).

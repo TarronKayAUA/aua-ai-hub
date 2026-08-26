@@ -280,18 +280,23 @@
   last_reviewed: 2026-08-25
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
-- name: NotebookLM
-  # Pages never yield text to a scripted fetch (login wall or
-  # client-rendered); excluded from content-watch verification 2026-07-02.
-  verify: skip
+# Renamed 2026-08-26: Google announced "NotebookLM is now Gemini Notebook"
+# on 2026-07-16 (blog.google), notebooklm.google now redirects to
+# notebook.google, and the help centre moved to
+# support.google.com/gemininotebook. The old name went stale here for six
+# weeks because `verify: skip` hid the entry from the content watch
+# entirely; the help centre serves fetchable text, so verification now
+# points there instead of skipping and a future rename should surface.
+- name: Gemini Notebook
   vendor: Google
   category: research
-  url: https://notebooklm.google.com
+  url: https://notebook.google/
+  verify_url: https://support.google.com/gemininotebook/
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-06-09
-  blurb: Research notebook that answers questions and generates summaries grounded only in documents you upload.
+  last_reviewed: 2026-08-26
+  blurb: Research notebook that answers questions and generates summaries grounded only in documents you upload. Formerly NotebookLM.
 
 - name: OpenEvidence
   vendor: OpenEvidence

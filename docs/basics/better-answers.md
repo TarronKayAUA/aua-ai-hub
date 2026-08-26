@@ -76,7 +76,7 @@ It is tempting to attach everything that might be relevant. Past a point this ba
 <figcaption>Three casual "for reference" attachments can outweigh your actual question hundreds of times over.</figcaption>
 </figure>
 
-The habit that fixes all three: **curate, then place.** Attach only what the task needs, quote the key passage near the question, and state what you want the material used for ("using only the attached objectives, write..."). If your source material genuinely exceeds what fits, that is what grounding tools are for: [NotebookLM](../tools/index.md) and similar tools index your documents and pull in only relevant passages per question, rather than holding everything in the window at once.
+The habit that fixes all three: **curate, then place.** Attach only what the task needs, quote the key passage near the question, and state what you want the material used for ("using only the attached objectives, write..."). If your source material genuinely exceeds what fits, that is what grounding tools are for: [Gemini Notebook](../tools/index.md) and similar tools index your documents and pull in only relevant passages per question, rather than holding everything in the window at once.
 
 Curious what your own material costs? Paste it below. The count runs entirely in your browser, and the text is not sent anywhere.
 
