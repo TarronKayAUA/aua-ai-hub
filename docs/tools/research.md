@@ -87,7 +87,7 @@ For a first pass at "what does the literature say about X," licensed [Scopus AI]
 
 ## Synthesizing from your own sources
 
-[Gemini Notebook](https://notebook.google/), which Google renamed from NotebookLM in July 2026, is the standout free tool for working with a fixed set of papers: upload them and it answers questions, drafts summaries, and builds study aids grounded only in what you gave it, with citations back to the exact passage. Because it refuses to reach beyond the uploaded sources, it has the lowest hallucination risk of anything on this page. The limitation is the same as the strength: it only knows what you upload.
+[Gemini Notebook](gemini-notebook.md), which Google renamed from NotebookLM in July 2026, is the standout free tool for working with a fixed set of papers: upload them and it answers questions, drafts summaries, and builds study aids grounded only in what you gave it, with citations back to the exact passage. Because it refuses to reach beyond the uploaded sources, it has the lowest hallucination risk of anything on this page, though measurably not zero: its [dedicated page](gemini-notebook.md) covers what the published evaluations found, including where the generated summaries and audio overviews go wrong. The limitation is the same as the strength: it only knows what you upload.
 
 ## Analysis and agentic workbenches
 
