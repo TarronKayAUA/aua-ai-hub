@@ -18,9 +18,32 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/silico-ai-interpretability">New Platform Peers Inside AI’s Black Box</a>
+    <p class="news-card-summary">A new platform enables investigation of how large language models arrive at specific outputs, addressing transparency gaps in model behavior.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/goodfire-ai-s-silico-uses-agents-equipped-with-interpretability-tools-to-examine-the-reasoning-behind-an-ai-model.jpg?id=67668252&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms">IBM&#x27;s new Granite 4.2 models ride the wave of interest in local LLMs</a>
+    <p class="news-card-summary">IBM released Granite 4.2 models emphasizing agentic capabilities and local deployment for enterprise use.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/ollama-granite-500x500-1787698921.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek">Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights</a>
+    <p class="news-card-summary">Z.ai&#x27;s Ox Alpha, a GLM-series model competing with DeepSeek, will be released with open weights.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 26, 2026</span></div>
@@ -107,27 +130,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.21423">Agentic Security: A Systematization of Tools, Failure Modes, and Design Laws for LLM-Driven Penetration Testing</a>
     <p class="news-card-summary">Systematization of failure modes and design principles for LLM-driven penetration testing agents identifies recurring operational failures.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.21558">Automating Multi-Hop RAG Evaluation via TRIAD: From Context Extraction to Validated Dataset Generation</a>
-    <p class="news-card-summary">Automated approach generates domain-specific question-answer datasets for evaluating retrieval-augmented generation systems on proprietary data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.21606">Can LLMs Truly Forget? Revealing Unlearning Gaps Through Adversarial Evaluation</a>
-    <p class="news-card-summary">Study evaluates whether machine unlearning truly removes targeted training data influence from models or leaves information accessible through adversarial queries.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.21766">Evaluation Awareness in Language Models: Representation, Verbalization, and Control</a>
-    <p class="news-card-summary">Research examines whether language models alter behavior when they detect being evaluated and proposes methods to control such evaluation awareness.</p>
   </div>
 </div>
 </div>

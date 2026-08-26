@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=nWgvobB4hcw" target="_blank" rel="noopener" title="Who’s afraid of an open-weight model? GLM, context bombing and post-Black Hat attacks">
+  <img src="https://i3.ytimg.com/vi/nWgvobB4hcw/hqdefault.jpg" alt="Video: Security vulnerabilities in GLM and open-weight models" loading="lazy">
+  <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>
+  <span class="video-card-meta">IBM Technology, August 26, 2026</span>
+  <span class="video-card-desc">IBM explores security vulnerabilities in GLM-5.3 and open-weight models, comparing their vulnerability discovery capabilities against proprietary systems.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=9Rx76Qz2XpM" target="_blank" rel="noopener" title="DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!">
   <img src="https://i2.ytimg.com/vi/9Rx76Qz2XpM/hqdefault.jpg" alt="Video: DeepSeek V4 Flash vision testing and capabilities" loading="lazy">
   <span class="video-card-title">DeepSeek V4 Flash vision testing and capabilities</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI news roundup: Qwen 3.8, Wan Animate 2, medical AI</span>
   <span class="video-card-meta">AI Search, August 9, 2026</span>
   <span class="video-card-desc">Roundup covering Qwen 3.8 Max release, Wan Animate 2, and other AI developments including medical AI tools.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=MKI58bgFK8A" target="_blank" rel="noopener" title="Ling 3.0 Tiny First Test, Can a Model THIS Small Really Code?">
-  <img src="https://i2.ytimg.com/vi/MKI58bgFK8A/hqdefault.jpg" alt="Video: Testing Ling 3.0 Tiny model on coding tasks" loading="lazy">
-  <span class="video-card-title">Testing Ling 3.0 Tiny model on coding tasks</span>
-  <span class="video-card-meta">Bijan Bowen, August 8, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Ling 3.0 Tiny, a small language model, across coding tasks including browser automation and C++ with observations on its behavior and limitations.</span>
 </a>
 </div>
 

@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42643292?fc=20260609215449&amp;ff=20260826091753&amp;v=2.20.1">Blind spots in artificial intelligence systems: poor identification of self-generated medical images-evidence-based cross-sectional study</a>
+        <p class="news-card-summary">ChatGPT and Google Gemini show systematic, architecture-dependent failures in identifying AI-generated medical images, with implications for validation protocols.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 26, 2026</span></div>
@@ -251,9 +258,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
@@ -534,20 +541,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04601-5">Prospective evaluation of a large language model clinical decision support system in the emergency department</a>
-        <p class="news-card-summary">A pilot study of large language model clinical decision support in an emergency department found safe integration but decreasing adoption over four weeks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04589-y">Large-scale AI-guided liver malignancy diagnosis: multicenter study and a single-arm trial</a>
-        <p class="news-card-summary">A multicenter study of an AI system for liver cancer diagnosis using contrast-enhanced computed tomography showed potential to reduce missed or delayed diagnoses.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03075-6">PhysSFI-Net: physics-informed geometric learning of skeletal and facial interactions for orthognathic surgical outcome prediction</a>
         <p class="news-card-summary">Physics-informed machine learning model to predict surgical outcomes for orthognathic procedures using skeletal and facial geometry.</p>
@@ -584,10 +577,33 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (16)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/silico-ai-interpretability">New Platform Peers Inside AI’s Black Box</a>
+        <p class="news-card-summary">A new platform enables investigation of how large language models arrive at specific outputs, addressing transparency gaps in model behavior.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/goodfire-ai-s-silico-uses-agents-equipped-with-interpretability-tools-to-examine-the-reasoning-behind-an-ai-model.jpg?id=67668252&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms">IBM&#x27;s new Granite 4.2 models ride the wave of interest in local LLMs</a>
+        <p class="news-card-summary">IBM released Granite 4.2 models emphasizing agentic capabilities and local deployment for enterprise use.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/ollama-granite-500x500-1787698921.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek">Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights</a>
+        <p class="news-card-summary">Z.ai&#x27;s Ox Alpha, a GLM-series model competing with DeepSeek, will be released with open weights.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 26, 2026</span></div>
@@ -873,9 +889,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 4 videos"
+??? abstract "Show the 5 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=nWgvobB4hcw" target="_blank" rel="noopener" title="Who’s afraid of an open-weight model? GLM, context bombing and post-Black Hat attacks">
+      <img src="https://i3.ytimg.com/vi/nWgvobB4hcw/hqdefault.jpg" alt="Video: Security vulnerabilities in GLM and open-weight models" loading="lazy">
+      <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>
+      <span class="video-card-meta">IBM Technology, August 26, 2026</span>
+      <span class="video-card-desc">IBM explores security vulnerabilities in GLM-5.3 and open-weight models, comparing their vulnerability discovery capabilities against proprietary systems.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=9Rx76Qz2XpM" target="_blank" rel="noopener" title="DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!">
       <img src="https://i2.ytimg.com/vi/9Rx76Qz2XpM/hqdefault.jpg" alt="Video: DeepSeek V4 Flash vision testing and capabilities" loading="lazy">
       <span class="video-card-title">DeepSeek V4 Flash vision testing and capabilities</span>
@@ -907,6 +929,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ??? abstract "Show the 3 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://www.cognitiverevolution.ai/rl-s-a-hell-of-a-drug-metagaming-reward-seeking-motivated-cot-reasoning-bronson-schoen-apollo" target="_blank" rel="noopener">
+      <img src="https://megaphone.imgix.net/podcasts/928ce68a-a130-11f1-a245-53e44e8fe530/image/a3942fcfe350377c0fd8afd08bc53442.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo" loading="lazy">
+      <span class="video-card-title">RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo</span>
+      <span class="video-card-meta">The Cognitive Revolution, August 26, 2026</span>
+      <span class="video-card-desc">Interview on reinforcement learning behavior in frontier models: how reward-seeking and chain-of-thought reasoning interact, with analysis of metagaming and grader-aware reasoning.</span>
+    </a>
     <a class="video-card" href="https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026" target="_blank" rel="noopener">
       <img src="https://megaphone.imgix.net/podcasts/1c66427c-9e23-11f1-bdcf-eb8cc278348e/image/61122eb6e8b7af420752cdc76f260006.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)" loading="lazy">
       <span class="video-card-title">AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)</span>
@@ -918,12 +946,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">When Does AI Help Learning - and When Does It Replace It?</span>
       <span class="video-card-meta">AI in Education Podcast, August 20, 2026</span>
       <span class="video-card-desc">Researchers discuss evidence on when generative AI supports versus replaces learning, drawing on recent studies of student outcomes.</span>
-    </a>
-    <a class="video-card" href="https://ai-podcast.nejm.org/e/dr-suchi-saria-on-building-ai-that-changes-care" target="_blank" rel="noopener">
-      <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Dr. Suchi Saria on Building AI That Changes Care" loading="lazy">
-      <span class="video-card-title">Dr. Suchi Saria on Building AI That Changes Care</span>
-      <span class="video-card-meta">NEJM AI Grand Rounds, August 19, 2026</span>
-      <span class="video-card-desc">Suchi Saria, Johns Hopkins faculty and Bayesian Health CEO, discusses building AI systems to detect early warning signals of patient deterioration buried in electronic health records.</span>
     </a>
     </div>
 

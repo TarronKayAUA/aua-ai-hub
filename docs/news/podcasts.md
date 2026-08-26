@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/rl-s-a-hell-of-a-drug-metagaming-reward-seeking-motivated-cot-reasoning-bronson-schoen-apollo" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/928ce68a-a130-11f1-a245-53e44e8fe530/image/a3942fcfe350377c0fd8afd08bc53442.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo" loading="lazy">
+  <span class="video-card-title">RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo</span>
+  <span class="video-card-meta">The Cognitive Revolution, August 26, 2026</span>
+  <span class="video-card-desc">Interview on reinforcement learning behavior in frontier models: how reward-seeking and chain-of-thought reasoning interact, with analysis of metagaming and grader-aware reasoning.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/1c66427c-9e23-11f1-bdcf-eb8cc278348e/image/61122eb6e8b7af420752cdc76f260006.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)" loading="lazy">
   <span class="video-card-title">AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)</span>
