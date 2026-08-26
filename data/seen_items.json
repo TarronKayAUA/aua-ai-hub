@@ -30994,6 +30994,47 @@
    "first_seen": "2026-08-26T04:57:03.540956+00:00",
    "kept": false,
    "reason": "off-topic for this audience; focuses on pharmaceutical nanoparticle development, not AI"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/this-fortnight-in-medicine-xxxiii",
+   "title_hash": "47880025f2209973f5a66d4992268a30",
+   "first_seen": "2026-08-26T09:04:04.458238+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general medical commentary with no AI content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/26/paul-dix",
+   "title_hash": "418cb1c6b02d09a00b806b5581f818e9",
+   "first_seen": "2026-08-26T09:04:04.458238+00:00",
+   "kept": false,
+   "reason": "incomplete excerpt; insufficient content to assess relevance or accuracy"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold",
+   "title_hash": "cb6f5ecc2172fd4fbcb2c7e6170585f6",
+   "first_seen": "2026-08-26T09:04:04.458238+00:00",
+   "kept": false,
+   "reason": "vendor commentary; policy opinion rather than actionable news or substantive analysis for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03170-8",
+   "title_hash": "8c4c4dc99cc47057c8e3e5f7f16e0c8f",
+   "first_seen": "2026-08-26T09:04:04.458238+00:00",
+   "kept": true,
+   "title": "OncoRAG: graph-based retrieval enabling clinical phenotyping from oncology notes using local mid-size language models",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-26T00:00:00+00:00",
+   "summary": "Graph-based retrieval system enables clinical phenotyping from oncology notes using locally deployed mid-size language models.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PbAitmG0-ok",
+   "title_hash": "b3dc66e06724f52e394aee9bdeadb0db",
+   "first_seen": "2026-08-26T09:04:04.458238+00:00",
+   "kept": false,
+   "reason": "marketing and sponsorship content without substantive educational payload"
   }
  ],
  "digests": [
