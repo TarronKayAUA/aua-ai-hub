@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Federal regulators are signaling a shift toward oversight of generative AI in clinical devices, with an FDA digital health official confirming that regulatory guidance is forthcoming <a href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">[2]</a>. That scrutiny arrives alongside growing evidence of real-world performance gaps: a multi-reader study of AI-assisted chest radiography found that automated tools shortened reading time but did not improve diagnostic accuracy and raised false positive rates, underscoring automation bias risks <a href="https://pubmed.ncbi.nlm.nih.gov/42629289?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1">[14]</a>. Parallel work addresses how large language models handle long clinical documents, describing lost-in-the-middle effects that degrade retrieval accuracy in electronic health record processing <a href="https://arxiv.org/abs/2608.20348">[3]</a>. A newly proposed fairness metric offers a simpler way to check whether prediction models perform equitably across patient groups <a href="https://ai.jmir.org/2026/1/e85822">[1]</a>.</p>
-<p>Also this week: eight items examine safety and evaluation methods for clinical AI, from registry abstraction accuracy to guardrails against misinterpreting biomedical research. Four decision support studies include a lymphoma risk stratification model, two cover clinical documentation, including automated radiology template generation, and one addresses imaging diagnostics in neuroradiology.</p>
-<p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the items below.</p>
+<p>The FDA&#x27;s digital health policy leader signaled that regulatory guidance on generative AI medical devices is coming soon, arriving alongside a wave of studies testing how such systems perform in practice <a href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">[9]</a>. GPT-4o showed promise in automating preanesthetic risk assessment, reducing incomplete documentation before surgery <a href="https://medinform.jmir.org/2026/1/e83893">[1]</a>. Separately, researchers identified a lost-in-the-middle effect in large language models processing long electronic health records, where critical details buried mid-chart are retrieved less reliably <a href="https://arxiv.org/abs/2608.20348">[10]</a>. A multimodal framework for deriving reproducible sepsis subphenotypes pointed toward more precise patient stratification <a href="https://www.nature.com/articles/s41746-026-03171-7">[7]</a>, and a STAT News report on hospital drug theft detection found AI tools still depend on consistent human oversight <a href="https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7">[6]</a>.</p>
+<p>Also this week: the section tracked eight studies on safety and evaluation, four on clinical decision support, and single entries on patient-facing tools, clinical documentation, and imaging and diagnostics. Coverage included fairness metrics for prediction models, a diabetes-specialized language model for patient education, and an automated system generating standardized radiology reporting templates from free-text corpora.</p>
+<p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83893">GPT-4o, Powered Preanesthetic AI: Development and Validation Study</a>
+    <p class="news-card-summary">Study validates GPT-4o for automated preanesthetic assessment, reducing subjective judgment and incomplete documentation in perioperative risk stratification.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 25, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03169-1">Generative versus discriminative diagnostic performance of large multimodal models in intracranial and spinal neuroradiology</a>
     <p class="news-card-summary">Peer-reviewed study compares generative and discriminative approaches in large multimodal models for neuroradiology diagnosis in intracranial and spinal imaging.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03165-5">Delays between CE mark and FDA regulatory approval of AI-enabled software for radiology</a>
-    <p class="news-card-summary">Analysis of regulatory delays between CE marking and FDA approval for artificial intelligence-enabled radiology software.</p>
   </div>
 </div>
 </div>

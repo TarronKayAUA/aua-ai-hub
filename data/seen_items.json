@@ -30708,6 +30708,80 @@
    "first_seen": "2026-08-25T20:47:54.772565+00:00",
    "kept": false,
    "reason": "daily news show recap with generic boilerplate; no specific development, interview, or instructive analysis for medical educators"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3",
+   "title_hash": "ae0beb97a5a5636492c3fb21191c8e7c",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; software infrastructure migration without AI relevance"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e83893",
+   "title_hash": "3c7b05a5c0fdec4cc9d7ac640df3546a",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": true,
+   "title": "GPT-4o, Powered Preanesthetic AI: Development and Validation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-25T21:15:03+00:00",
+   "summary": "Study validates GPT-4o for automated preanesthetic assessment, reducing subjective judgment and incomplete documentation in perioperative risk stratification.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames",
+   "title_hash": "04edf1a7e344cb74d77a52fc71453a65",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; robotics competition coverage without medical or educational relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vy6smx/qwen38flashnext_this_architecture_could_be",
+   "title_hash": "e806866923e6b0a706aa81199c9aefc2",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": false,
+   "reason": "forum discussion of unconfirmed technical specifications; source quality and significance bar not met"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42641075?fc=20260609215449&ff=20260825215936&v=2.20.1",
+   "title_hash": "2b5cb7a8391942ec4a0e8534745bc0b3",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": true,
+   "title": "Large Language Model-Assisted Thematic Coding in Medical Education Research: Comparative Methodological Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-25T10:00:00+00:00",
+   "summary": "Large language models can reliably apply codebooks and generate inductive codes in qualitative research when paired with human oversight.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42640905?fc=20260609215449&ff=20260825215936&v=2.20.1",
+   "title_hash": "91de8910f46037df54f3994e061f5da1",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broader significance for medical education or AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&ff=20260825215936&v=2.20.1",
+   "title_hash": "27cff6e536cb16f3972fc30df252da43",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": true,
+   "title": "A Rasch-based analysis comparing the performance of updated multimodal large language models and surgeons on the Japanese surgical specialist examination",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-25T10:00:00+00:00",
+   "summary": "Updated multimodal large language models performed below human surgeons on a Japanese surgical specialty exam, with particular weakness on image-based questions.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42640275?fc=20260609215449&ff=20260825215936&v=2.20.1",
+   "title_hash": "edb2b0d4ef7b407832fb0b32d95972c7",
+   "first_seen": "2026-08-26T01:59:36.135837+00:00",
+   "kept": false,
+   "reason": "narrow domain finding without AI or educational technology relevance"
   }
  ],
  "digests": [
@@ -30879,14 +30953,14 @@
  "last_digest_at": "2026-08-21T01:59:00.448120+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A new analysis of AI-assisted application development in digital health identifies a growing accountability gap: as clinicians build their own tools with generative AI, responsibility for safety and quality shifts from developers to end users <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1\">[5]</a>. That tension runs through much of the surrounding coverage. Twelve tips for educators lay out a five-level framework for integrating AI into undergraduate curricula in ways that keep learners, not tools, central <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1\">[7]</a>. A study comparing ChatGPT to medical students on preventive medicine exam questions finds the chatbot&#x27;s accuracy still lags human reasoning in some areas <a href=\"https://pubmed.ncbi.nlm.nih.gov/42629687?fc=20260609215449&amp;ff=20260822090215&amp;v=2.20.1\">[6]</a>. AI-simulated patients, meanwhile, are showing measurable gains in training confidence for combat medical technicians <a href=\"https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1\">[12]</a>.\n\nAlso this week: eight items address teaching and curriculum design, including a &quot;5E+AI&quot; model for improving science communication among medical students. Two pieces weigh attitudes toward AI adoption, two address exam and benchmark performance, and two explore simulation-based skill building in clinical training environments, from resident emotion tracking to standardized patient simulations for military medics.",
-   "hash": "48055ac530de081b",
-   "date": "August 25, 2026"
+   "text": "A new analysis of end-user-built AI tools in digital health warns that as clinicians assemble their own applications, accountability for safety and quality shifts away from developers and toward the clinicians themselves <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1\">[9]</a>. That governance question sits alongside efforts to prepare educators for AI in the classroom: a peer-led instructional design significantly increased physician-educators&#x27; willingness to adopt AI tools compared with traditional training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1\">[1]</a>, while a twelve-tip framework offers practical steps for learner-centered AI integration in undergraduate curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1\">[11]</a>. Meanwhile, benchmark testing continues to temper expectations, with updated multimodal models still underperforming human surgeons on a Japanese specialty exam, particularly on image-based questions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: three items examine attitudes and adoption of AI among educators and students, one paper explores AI-assisted thematic coding for qualitative research, and a simulation study uses speech and text analysis to track anesthesiology residents&#x27; emotional dynamics during critical-incident training. Other coverage includes a tutorial on inclusive Spanish-language medical education modules addressing bias in patient communication.",
+   "hash": "8a1a8bbd6f8d6874",
+   "date": "August 26, 2026"
   },
   "clinical_practice": {
-   "text": "Federal regulators are signaling a shift toward oversight of generative AI in clinical devices, with an FDA digital health official confirming that regulatory guidance is forthcoming <a href=\"https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming\">[2]</a>. That scrutiny arrives alongside growing evidence of real-world performance gaps: a multi-reader study of AI-assisted chest radiography found that automated tools shortened reading time but did not improve diagnostic accuracy and raised false positive rates, underscoring automation bias risks <a href=\"https://pubmed.ncbi.nlm.nih.gov/42629289?fc=20260609215449&amp;ff=20260822005140&amp;v=2.20.1\">[14]</a>. Parallel work addresses how large language models handle long clinical documents, describing lost-in-the-middle effects that degrade retrieval accuracy in electronic health record processing <a href=\"https://arxiv.org/abs/2608.20348\">[3]</a>. A newly proposed fairness metric offers a simpler way to check whether prediction models perform equitably across patient groups <a href=\"https://ai.jmir.org/2026/1/e85822\">[1]</a>.\n\nAlso this week: eight items examine safety and evaluation methods for clinical AI, from registry abstraction accuracy to guardrails against misinterpreting biomedical research. Four decision support studies include a lymphoma risk stratification model, two cover clinical documentation, including automated radiology template generation, and one addresses imaging diagnostics in neuroradiology.",
-   "hash": "9836b37a5e6edc98",
-   "date": "August 25, 2026"
+   "text": "The FDA&#x27;s digital health policy leader signaled that regulatory guidance on generative AI medical devices is coming soon, arriving alongside a wave of studies testing how such systems perform in practice <a href=\"https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming\">[9]</a>. GPT-4o showed promise in automating preanesthetic risk assessment, reducing incomplete documentation before surgery <a href=\"https://medinform.jmir.org/2026/1/e83893\">[1]</a>. Separately, researchers identified a lost-in-the-middle effect in large language models processing long electronic health records, where critical details buried mid-chart are retrieved less reliably <a href=\"https://arxiv.org/abs/2608.20348\">[10]</a>. A multimodal framework for deriving reproducible sepsis subphenotypes pointed toward more precise patient stratification <a href=\"https://www.nature.com/articles/s41746-026-03171-7\">[7]</a>, and a STAT News report on hospital drug theft detection found AI tools still depend on consistent human oversight <a href=\"https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7\">[6]</a>.\n\nAlso this week: the section tracked eight studies on safety and evaluation, four on clinical decision support, and single entries on patient-facing tools, clinical documentation, and imaging and diagnostics. Coverage included fairness metrics for prediction models, a diabetes-specialized language model for patient education, and an automated system generating standardized radiology reporting templates from free-text corpora.",
+   "hash": "cc1f6d71def57140",
+   "date": "August 26, 2026"
   },
   "general_ai": {
    "text": "Stanford research finds AI-impacted fields saw entry-level employment drop 19 percent more than AI-resistant occupations <a href=\"https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds\">[1]</a>, adding data to debates over labor market effects as capability claims continue to outpace demonstrated understanding: language models still lag children in acquiring fluent language despite scaling <a href=\"https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning\">[3]</a>. Evaluation itself is under scrutiny, with a new preprint documenting widespread shortcut learning and benchmark gaming across contemporary models <a href=\"https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks\">[12]</a>, compounding worries after separate work found LLM judges show systematic bias favoring outputs matching their own or their labeled origin <a href=\"https://arxiv.org/abs/2608.18091\">[15]</a>. Compression research meanwhile shows performance metrics mask harms to knowledge and confidence <a href=\"https://arxiv.org/abs/2608.19670\">[10]</a>.\n\nAlso this week: eight items span research and methods, including work on memory management in agent systems, hallucination reframed as a tool for hypothesis generation, and entity tracking abilities in sub-billion-parameter models. Four safety and reliability papers address topics like refusal recovery for low-resource languages, alongside two benchmarking studies and continued discussion of AI&#x27;s impact on mathematics research.",

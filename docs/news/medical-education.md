@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new analysis of AI-assisted application development in digital health identifies a growing accountability gap: as clinicians build their own tools with generative AI, responsibility for safety and quality shifts from developers to end users <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[5]</a>. That tension runs through much of the surrounding coverage. Twelve tips for educators lay out a five-level framework for integrating AI into undergraduate curricula in ways that keep learners, not tools, central <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[7]</a>. A study comparing ChatGPT to medical students on preventive medicine exam questions finds the chatbot&#x27;s accuracy still lags human reasoning in some areas <a href="https://pubmed.ncbi.nlm.nih.gov/42629687?fc=20260609215449&amp;ff=20260822090215&amp;v=2.20.1">[6]</a>. AI-simulated patients, meanwhile, are showing measurable gains in training confidence for combat medical technicians <a href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">[12]</a>.</p>
-<p>Also this week: eight items address teaching and curriculum design, including a &quot;5E+AI&quot; model for improving science communication among medical students. Two pieces weigh attitudes toward AI adoption, two address exam and benchmark performance, and two explore simulation-based skill building in clinical training environments, from resident emotion tracking to standardized patient simulations for military medics.</p>
-<p class="section-brief-date">The picture as of August 25, 2026; numbered links go to the items below.</p>
+<p>A new analysis of end-user-built AI tools in digital health warns that as clinicians assemble their own applications, accountability for safety and quality shifts away from developers and toward the clinicians themselves <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[9]</a>. That governance question sits alongside efforts to prepare educators for AI in the classroom: a peer-led instructional design significantly increased physician-educators&#x27; willingness to adopt AI tools compared with traditional training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[1]</a>, while a twelve-tip framework offers practical steps for learner-centered AI integration in undergraduate curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[11]</a>. Meanwhile, benchmark testing continues to temper expectations, with updated multimodal models still underperforming human surgeons on a Japanese specialty exam, particularly on image-based questions <a href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">[4]</a>.</p>
+<p>Also this week: three items examine attitudes and adoption of AI among educators and students, one paper explores AI-assisted thematic coding for qualitative research, and a simulation study uses speech and text analysis to track anesthesiology residents&#x27; emotional dynamics during critical-incident training. Other coverage includes a tutorial on inclusive Spanish-language medical education modules addressing bias in patient communication.</p>
+<p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -33,6 +33,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42639054?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">Understanding Time Availability and Format Preferences for AI Professional Development in Health Professions Education</a>
     <p class="news-card-summary">Study examines health professions educators&#x27; preferences for AI professional development formats and time availability.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42641075?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">Large Language Model-Assisted Thematic Coding in Medical Education Research: Comparative Methodological Study</a>
+    <p class="news-card-summary">Large language models can reliably apply codebooks and generate inductive codes in qualitative research when paired with human oversight.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">A Rasch-based analysis comparing the performance of updated multimodal large language models and surgeons on the Japanese surgical specialist examination</a>
+    <p class="news-card-summary">Updated multimodal large language models performed below human surgeons on a Japanese surgical specialty exam, with particular weakness on image-based questions.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -112,20 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Navigating the Artificial Intelligence Revolution in Clinical Neurology: A New Multidisciplinary Task Force Within the European Academy of Neurology</a>
     <p class="news-card-summary">European Academy of Neurology task force outlines multidisciplinary strategy for responsible AI integration in neurology, addressing education, ethics, and clinical implementation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627168?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">AI patients, real practice: exploring the use of AI-simulated patients to support primary healthcare training for combat medical technicians</a>
-    <p class="news-card-summary">Study demonstrates that AI-simulated patients improve consultation confidence among combat medical technicians and provide scalable, standardized training supplementing clinical practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42626627?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Twelve tips for using educational data mining and machine learning to predict performance in high-stakes health professions education exams</a>
-    <p class="news-card-summary">Practical guide offering 12 tips for using machine learning and educational data mining to predict performance in high-stakes health professions exams.</p>
   </div>
 </div>
 </div>
