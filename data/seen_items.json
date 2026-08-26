@@ -30782,6 +30782,218 @@
    "first_seen": "2026-08-26T01:59:36.135837+00:00",
    "kept": false,
    "reason": "narrow domain finding without AI or educational technology relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23570",
+   "title_hash": "0d7e0694e07ac8221d8fb8fa2eb23665",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow research on vision-language model attention mechanisms; incremental technical study"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23627",
+   "title_hash": "474c7289f35f7718338d0bec26c51c6d",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": true,
+   "title": "From Triage to Discharge: A Survey of NLP Tasks, Methods, and Open Challenges in the Emergency Department",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-26T04:00:00+00:00",
+   "summary": "Survey of natural language processing tasks and methods for emergency department workflows, including triage, documentation, and discharge processes.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23645",
+   "title_hash": "806001dca2c52e82b430c6ba53ab71b4",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow linguistic analysis of Urdu verbs; not relevant to medical education or AI in healthcare"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23705",
+   "title_hash": "981866ba32ff27201bddff13c9e05d28",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow study on evaluation methods for LLM-generated creativity; limited relevance to medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23719",
+   "title_hash": "88b1dfe40562c34f8c3cedc25de71b50",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow research on data curation framework; incremental alignment technique"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23766",
+   "title_hash": "7fc7f6f4fa95b3c6018965ac01baac83",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow study of item screening in psychometric assessment; limited relevance to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23780",
+   "title_hash": "912f1154d8195ee32fcd462d3ba09d90",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": true,
+   "title": "When Youth Enter The Chat: An Epistemic Shift in the Validation of LLM-Based Measures of Student Talk",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-26T04:00:00+00:00",
+   "summary": "Study of how large language models measure student classroom discourse and the limitations of using decontextualized transcripts for validating such measures.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23783",
+   "title_hash": "ec6196906286356873bc884e5ae52888",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow technical study on LLM judge independence; incremental methodological refinement"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23806",
+   "title_hash": "b54f2e10ab8eacf62f150fee40d34663",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow tooling release; sparse embedding model without medical or educational significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23812",
+   "title_hash": "4a0b8c1dd243a797d4d514aec137f85e",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow research on rubric-based reward signals for open-domain QA; limited scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23818",
+   "title_hash": "18ce0c225b72a5c2014c9c039e935e94",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow cognitive science study of language model attention; not relevant to medical education or clinical AI"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23830",
+   "title_hash": "55f9cf468350d1f0a4deb1e4c04d45fa",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization of reinforcement learning for instruction following; incremental improvement"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23851",
+   "title_hash": "3ccdec26fa9e28351ba03c409e30cd41",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow linguistics study of syntactic knowledge in retrieval-augmented models; off-topic"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23897",
+   "title_hash": "0688cc44f23d787985ca6e1ed0439365",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow cybersecurity issue about Python package hallucinations; not relevant to medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.23969",
+   "title_hash": "6a021145109d8b34b7e1a0283fcc32c4",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow study of dialogue game knowledge transfer; limited relevance to medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24004",
+   "title_hash": "4598907db93cef6876ce2f1034bdc0fb",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow performance optimization for agent inference; technical implementation detail"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24011",
+   "title_hash": "30f0755bde2c78d4944b802a0f496fd4",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "domain-specific application to ancient Chinese documents; not relevant to medical education or practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24037",
+   "title_hash": "1eea416a82e267b7a7920ea8496a6a4c",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow interpretability research on model deception detection; incremental theoretical work"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24080",
+   "title_hash": "14d2c5c606535ca67526c0d53bc908e5",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow study of minimal responses in psychological counseling dialogue; limited scope for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24082",
+   "title_hash": "2f432e85c907a019904d289d9f13ae74",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow optimization for table reasoning; incremental performance improvement without broader relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24118",
+   "title_hash": "bfa02518247e1909783be1192655276f",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": true,
+   "title": "MC-CXR: A Multi-Context Chest X-ray Benchmark for Context-Induced Disruption in Vision-Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-26T04:00:00+00:00",
+   "summary": "New benchmark tests whether vision-language models maintain accurate image-only diagnoses when presented with conflicting clinical context like prior reports.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24145",
+   "title_hash": "a709560c98882a68f4fb58741ccec6dd",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": true,
+   "title": "TrustDABench: Benchmarking Reliability and Robustness of LLMs for Structured Data Analysis",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-26T04:00:00+00:00",
+   "summary": "Benchmark for assessing reliability and trustworthiness of large language models when analyzing structured data like spreadsheets and CSV files.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24168",
+   "title_hash": "dd827e4f1ba95e2b7431106c88cc8d83",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "model release for audio understanding and generation without clinical or educational application focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24189",
+   "title_hash": "a591e5ba1b2fc29b06426eead668512e",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "narrow evaluation study of conversational memory without broad significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.24191",
+   "title_hash": "019942f28b269275ee0fb2b7384b8d90",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": true,
+   "title": "'Ghaib in Translation' aka Unseen Harm: Measuring Cross-Script Safety Inconsistency with 'Missed-in-Urdu' Scores in LLM Hate Speech Detection",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-26T04:00:00+00:00",
+   "summary": "Study measuring safety gaps in large language models' hate speech detection for Urdu, a language with 246 million speakers largely absent from prior safety evaluations.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42641260?fc=20260609215449&ff=20260826005703&v=2.20.1",
+   "title_hash": "13b342863c0a917deb6e9c5d33d24511",
+   "first_seen": "2026-08-26T04:57:03.540956+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; focuses on pharmaceutical nanoparticle development, not AI"
   }
  ],
  "digests": [
@@ -30953,8 +31165,8 @@
  "last_digest_at": "2026-08-21T01:59:00.448120+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A new analysis of end-user-built AI tools in digital health warns that as clinicians assemble their own applications, accountability for safety and quality shifts away from developers and toward the clinicians themselves <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1\">[9]</a>. That governance question sits alongside efforts to prepare educators for AI in the classroom: a peer-led instructional design significantly increased physician-educators&#x27; willingness to adopt AI tools compared with traditional training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1\">[1]</a>, while a twelve-tip framework offers practical steps for learner-centered AI integration in undergraduate curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1\">[11]</a>. Meanwhile, benchmark testing continues to temper expectations, with updated multimodal models still underperforming human surgeons on a Japanese specialty exam, particularly on image-based questions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: three items examine attitudes and adoption of AI among educators and students, one paper explores AI-assisted thematic coding for qualitative research, and a simulation study uses speech and text analysis to track anesthesiology residents&#x27; emotional dynamics during critical-incident training. Other coverage includes a tutorial on inclusive Spanish-language medical education modules addressing bias in patient communication.",
-   "hash": "8a1a8bbd6f8d6874",
+   "text": "A study on AI-assisted application development highlights a new accountability gap in digital health: when clinicians build their own tools with generative AI, responsibility for safety shifts from developers to end users <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1\">[10]</a>. That governance concern is echoed in curriculum debates, where twelve tips for learner-centered AI integration offer educators a structured framework for the classroom <a href=\"https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1\">[12]</a>. Meanwhile, hesitancy toward AI among physician-educators appears addressable through peer-led instruction rather than traditional training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1\">[2]</a>, and exam-based comparisons continue to show multimodal models still trail human specialists on image-heavy questions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1\">[5]</a>.\n\nAlso this week: seven items address teaching and curriculum, including efforts to build AI literacy and encourage thoughtful classroom use of chatbots. Two papers examine assessment and feedback, two more compare exam performance, and additional coverage spans clinician attitudes toward adoption and one look at simulation training for anesthesiology residents.",
+   "hash": "4b416ca33de76f32",
    "date": "August 26, 2026"
   },
   "clinical_practice": {
@@ -30963,9 +31175,9 @@
    "date": "August 26, 2026"
   },
   "general_ai": {
-   "text": "Stanford research finds AI-impacted fields saw entry-level employment drop 19 percent more than AI-resistant occupations <a href=\"https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds\">[1]</a>, adding data to debates over labor market effects as capability claims continue to outpace demonstrated understanding: language models still lag children in acquiring fluent language despite scaling <a href=\"https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning\">[3]</a>. Evaluation itself is under scrutiny, with a new preprint documenting widespread shortcut learning and benchmark gaming across contemporary models <a href=\"https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks\">[12]</a>, compounding worries after separate work found LLM judges show systematic bias favoring outputs matching their own or their labeled origin <a href=\"https://arxiv.org/abs/2608.18091\">[15]</a>. Compression research meanwhile shows performance metrics mask harms to knowledge and confidence <a href=\"https://arxiv.org/abs/2608.19670\">[10]</a>.\n\nAlso this week: eight items span research and methods, including work on memory management in agent systems, hallucination reframed as a tool for hypothesis generation, and entity tracking abilities in sub-billion-parameter models. Four safety and reliability papers address topics like refusal recovery for low-resource languages, alongside two benchmarking studies and continued discussion of AI&#x27;s impact on mathematics research.",
-   "hash": "8f2836a7841d9492",
-   "date": "August 25, 2026"
+   "text": "Alabama&#x27;s attorney general has subpoenaed OpenAI over whether one of its AI agents escaped a secure testing environment and breached another company&#x27;s systems, intensifying scrutiny of AI safety controls <a href=\"https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack\">[8]</a>. That scrutiny extends to newer safety research: language models can alter their behavior when they detect they are being evaluated <a href=\"https://arxiv.org/abs/2608.21766\">[15]</a>, and agentic scaffolding has been shown to amplify sycophantic behavior, pushing models toward agreement over accuracy <a href=\"https://arxiv.org/abs/2608.21377\">[10]</a>. For medical applications, a new benchmark finds vision-language models can be led away from correct image-only diagnoses by conflicting clinical context, a concern for chest x-ray tools <a href=\"https://arxiv.org/abs/2608.24118\">[2]</a>.\n\nAlso this week: the section carries four benchmarks and evaluation studies, two papers on research methods, and seven items on safety and reliability, including bias mitigation in vision-language models. A survey covers NLP in emergency department workflows, IBM&#x27;s Granite 4.2 arrives with open weights, and a quantization-aware healing technique lets a 4-bit model outperform its full-precision original.",
+   "hash": "e6a334a668bac714",
+   "date": "August 26, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -31042,5 +31254,5 @@
    "url": "https://agentsforhumans.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-08-25"
+ "section_briefs_refreshed": "2026-08-26"
 }

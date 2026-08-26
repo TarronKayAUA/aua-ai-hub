@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new analysis of end-user-built AI tools in digital health warns that as clinicians assemble their own applications, accountability for safety and quality shifts away from developers and toward the clinicians themselves <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[9]</a>. That governance question sits alongside efforts to prepare educators for AI in the classroom: a peer-led instructional design significantly increased physician-educators&#x27; willingness to adopt AI tools compared with traditional training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[1]</a>, while a twelve-tip framework offers practical steps for learner-centered AI integration in undergraduate curricula <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[11]</a>. Meanwhile, benchmark testing continues to temper expectations, with updated multimodal models still underperforming human surgeons on a Japanese specialty exam, particularly on image-based questions <a href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">[4]</a>.</p>
-<p>Also this week: three items examine attitudes and adoption of AI among educators and students, one paper explores AI-assisted thematic coding for qualitative research, and a simulation study uses speech and text analysis to track anesthesiology residents&#x27; emotional dynamics during critical-incident training. Other coverage includes a tutorial on inclusive Spanish-language medical education modules addressing bias in patient communication.</p>
+<p>A study on AI-assisted application development highlights a new accountability gap in digital health: when clinicians build their own tools with generative AI, responsibility for safety shifts from developers to end users <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[10]</a>. That governance concern is echoed in curriculum debates, where twelve tips for learner-centered AI integration offer educators a structured framework for the classroom <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[12]</a>. Meanwhile, hesitancy toward AI among physician-educators appears addressable through peer-led instruction rather than traditional training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[2]</a>, and exam-based comparisons continue to show multimodal models still trail human specialists on image-heavy questions <a href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">[5]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum, including efforts to build AI literacy and encourage thoughtful classroom use of chatbots. Two papers examine assessment and feedback, two more compare exam performance, and additional coverage spans clinician attitudes toward adoption and one look at simulation training for anesthesiology residents.</p>
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.23780">When Youth Enter The Chat: An Epistemic Shift in the Validation of LLM-Based Measures of Student Talk</a>
+    <p class="news-card-summary">Study of how large language models measure student classroom discourse and the limitations of using decontextualized transcripts for validating such measures.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 21, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98398">Inclusive Medical Spanish Education to Address Bias in Clinical Communication: Tutorial on Patient-Informed Module Development</a>
     <p class="news-card-summary">Tutorial describes patient-informed development of inclusive Spanish-language medical education modules addressing bias and communication barriers for LGBTQ+ and Spanish-speaking patients.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42627286?fc=20260609215449&amp;ff=20260821125301&amp;v=2.20.1">Navigating the Artificial Intelligence Revolution in Clinical Neurology: A New Multidisciplinary Task Force Within the European Academy of Neurology</a>
-    <p class="news-card-summary">European Academy of Neurology task force outlines multidisciplinary strategy for responsible AI integration in neurology, addressing education, ethics, and clinical implementation.</p>
   </div>
 </div>
 </div>
