@@ -18,15 +18,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42643292?fc=20260609215449&amp;ff=20260826091753&amp;v=2.20.1">Blind spots in artificial intelligence systems: poor identification of self-generated medical images-evidence-based cross-sectional study</a>
         <p class="news-card-summary">ChatGPT and Google Gemini show systematic, architecture-dependent failures in identifying AI-generated medical images, with implications for validation protocols.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42644831?fc=20260609215449&amp;ff=20260826130612&amp;v=2.20.1">A Framework for Equitable Implementation of Artificial Intelligence in Anesthesiology Residency Selection</a>
+        <p class="news-card-summary">Framework for implementing AI equitably in anesthesiology residency selection processes.</p>
       </div>
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
@@ -258,15 +265,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (19)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03170-8">OncoRAG: graph-based retrieval enabling clinical phenotyping from oncology notes using local mid-size language models</a>
         <p class="news-card-summary">Graph-based retrieval system enables clinical phenotyping from oncology notes using locally deployed mid-size language models.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03181-5">A comprehensive computational pathology atlas for multi-cancer tumor microenvironment characterization and prognosis prediction</a>
+        <p class="news-card-summary">Computational pathology atlas enables tumor microenvironment characterization and prognostic prediction across multiple cancer types.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -518,13 +532,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Machine learning models improve in-hospital mortality risk prediction for non-ST-elevation acute coronary syndrome patients across diagnostic stages.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e77335">Multicenter External Validation of an AI-Based Funduscopic Carotid Atherosclerosis Score and Assessment of Its Association With Coronary Artery Calcification: External Validation Study</a>
-        <p class="news-card-summary">External validation study of a deep-learning funduscopic atherosclerosis score for noninvasive cardiovascular risk assessment using retinal imaging.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
@@ -537,13 +544,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 19, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42616129?fc=20260609215449&amp;ff=20260819215246&amp;v=2.20.1">External validation of a machine learning-based web application for personalized testing of objective functioning using the five-repetition sit-to-stand test</a>
         <p class="news-card-summary">External validation of a machine learning model for personalized physical function assessment revealed limited generalization and systematic underestimation of slower test times.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03075-6">PhysSFI-Net: physics-informed geometric learning of skeletal and facial interactions for orthognathic surgical outcome prediction</a>
-        <p class="news-card-summary">Physics-informed machine learning model to predict surgical outcomes for orthognathic procedures using skeletal and facial geometry.</p>
       </div>
     </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -889,9 +889,21 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 5 videos"
+??? abstract "Show the 7 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=tBjgCj_dGZM" target="_blank" rel="noopener" title="The mathematics of AI uncertainty">
+      <img src="https://i1.ytimg.com/vi/tBjgCj_dGZM/hqdefault.jpg" alt="Video: The mathematics of AI uncertainty" loading="lazy">
+      <span class="video-card-title">The mathematics of AI uncertainty</span>
+      <span class="video-card-meta">Google DeepMind, August 26, 2026</span>
+      <span class="video-card-desc">Google DeepMind seminar on uncertainty quantification in machine learning and how to measure model confidence.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=L9mMfAFwbl4" target="_blank" rel="noopener" title="DeepSeek’s New AI System Shouldn’t Be Possible">
+      <img src="https://i1.ytimg.com/vi/L9mMfAFwbl4/hqdefault.jpg" alt="Video: DeepSeek reasoning system architecture and performance" loading="lazy">
+      <span class="video-card-title">DeepSeek reasoning system architecture and performance</span>
+      <span class="video-card-meta">Two Minute Papers, August 26, 2026</span>
+      <span class="video-card-desc">Technical analysis of DeepSeek&#x27;s new reasoning system covering its architecture and performance against other models.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=nWgvobB4hcw" target="_blank" rel="noopener" title="Who’s afraid of an open-weight model? GLM, context bombing and post-Black Hat attacks">
       <img src="https://i3.ytimg.com/vi/nWgvobB4hcw/hqdefault.jpg" alt="Video: Security vulnerabilities in GLM and open-weight models" loading="lazy">
       <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>

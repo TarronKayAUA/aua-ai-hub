@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-documentation">
@@ -26,6 +26,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03170-8">OncoRAG: graph-based retrieval enabling clinical phenotyping from oncology notes using local mid-size language models</a>
     <p class="news-card-summary">Graph-based retrieval system enables clinical phenotyping from oncology notes using locally deployed mid-size language models.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03181-5">A comprehensive computational pathology atlas for multi-cancer tumor microenvironment characterization and prognosis prediction</a>
+    <p class="news-card-summary">Computational pathology atlas enables tumor microenvironment characterization and prognostic prediction across multiple cancer types.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03158-4">Towards a multi-agent Clinical Trial Center framework to support modern clinical trials</a>
     <p class="news-card-summary">A multi-agent framework using AI to coordinate clinical trial operations and management across distributed trial centers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03160-w">When machines misread science: creating guardrails for human and AI interpretation of biomedical research</a>
-    <p class="news-card-summary">Guardrails for AI and human interpretation of biomedical research aim to prevent errors that could distort clinical evidence application.</p>
   </div>
 </div>
 </div>

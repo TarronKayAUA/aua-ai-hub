@@ -4,4 +4,4 @@
 - [IBM's new Granite 4.2 models ride the wave of interest in local LLMs](https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms) (Ars Technica AI, August 26, 2026)
 - [Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights](https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek) (Hacker News (LLM, 100+ points), August 26, 2026)
 - [Blind spots in artificial intelligence systems: poor identification of self-generated medical images-evidence-based cross-sectional study](https://pubmed.ncbi.nlm.nih.gov/42643292?fc=20260609215449&ff=20260826091753&v=2.20.1) (PubMed AI in medical education, August 26, 2026)
-- [From Triage to Discharge: A Survey of NLP Tasks, Methods, and Open Challenges in the Emergency Department](https://arxiv.org/abs/2608.23627) (arXiv cs.CL, August 26, 2026)
+- [A Framework for Equitable Implementation of Artificial Intelligence in Anesthesiology Residency Selection](https://pubmed.ncbi.nlm.nih.gov/42644831?fc=20260609215449&ff=20260826130612&v=2.20.1) (PubMed AI in medical education, August 26, 2026)

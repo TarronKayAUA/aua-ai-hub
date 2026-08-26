@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -26,6 +26,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42643292?fc=20260609215449&amp;ff=20260826091753&amp;v=2.20.1">Blind spots in artificial intelligence systems: poor identification of self-generated medical images-evidence-based cross-sectional study</a>
     <p class="news-card-summary">ChatGPT and Google Gemini show systematic, architecture-dependent failures in identifying AI-generated medical images, with implications for validation protocols.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42644831?fc=20260609215449&amp;ff=20260826130612&amp;v=2.20.1">A Framework for Equitable Implementation of Artificial Intelligence in Anesthesiology Residency Selection</a>
+    <p class="news-card-summary">Framework for implementing AI equitably in anesthesiology residency selection processes.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42630272?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">Effectiveness of a &quot;5E+AI&quot; teaching model on science communication in medical students: a contribution to global health literacy</a>
     <p class="news-card-summary">Study evaluates a teaching model combining the 5E framework with artificial intelligence to improve medical student knowledge acquisition and science communication skills.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 21, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e96628">Speech- and Text-Based Emotion Recognition in Anesthesiology Residents During Critical Incident Simulation Training: Exploratory Observational Study</a>
-    <p class="news-card-summary">Study uses speech and text analysis to objectively measure emotional dynamics and sentiment during anesthesiology resident simulation training, capturing previously unmeasured performance aspects.</p>
   </div>
 </div>
 </div>

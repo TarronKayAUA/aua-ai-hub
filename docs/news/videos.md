@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=tBjgCj_dGZM" target="_blank" rel="noopener" title="The mathematics of AI uncertainty">
+  <img src="https://i1.ytimg.com/vi/tBjgCj_dGZM/hqdefault.jpg" alt="Video: The mathematics of AI uncertainty" loading="lazy">
+  <span class="video-card-title">The mathematics of AI uncertainty</span>
+  <span class="video-card-meta">Google DeepMind, August 26, 2026</span>
+  <span class="video-card-desc">Google DeepMind seminar on uncertainty quantification in machine learning and how to measure model confidence.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=L9mMfAFwbl4" target="_blank" rel="noopener" title="DeepSeek’s New AI System Shouldn’t Be Possible">
+  <img src="https://i1.ytimg.com/vi/L9mMfAFwbl4/hqdefault.jpg" alt="Video: DeepSeek reasoning system architecture and performance" loading="lazy">
+  <span class="video-card-title">DeepSeek reasoning system architecture and performance</span>
+  <span class="video-card-meta">Two Minute Papers, August 26, 2026</span>
+  <span class="video-card-desc">Technical analysis of DeepSeek&#x27;s new reasoning system covering its architecture and performance against other models.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=nWgvobB4hcw" target="_blank" rel="noopener" title="Who’s afraid of an open-weight model? GLM, context bombing and post-Black Hat attacks">
   <img src="https://i3.ytimg.com/vi/nWgvobB4hcw/hqdefault.jpg" alt="Video: Security vulnerabilities in GLM and open-weight models" loading="lazy">
   <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Iceland&#x27;s national AI education pilot for teachers</span>
   <span class="video-card-meta">Anthropic, August 10, 2026</span>
   <span class="video-card-desc">Iceland&#x27;s national AI education pilot program giving teachers access to AI tools for classroom integration and professional development.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=vRZNJWw78BQ" target="_blank" rel="noopener" title="What Is Chunkless RAG? How Docling &amp; AI Agents Navigate Documents">
-  <img src="https://i3.ytimg.com/vi/vRZNJWw78BQ/hqdefault.jpg" alt="Video: Chunkless RAG and document parsing with Docling" loading="lazy">
-  <span class="video-card-title">Chunkless RAG and document parsing with Docling</span>
-  <span class="video-card-meta">IBM Technology, August 9, 2026</span>
-  <span class="video-card-desc">IBM researcher explains chunkless retrieval-augmented generation and how document parsing preserves context lost in traditional chunking approaches.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=uJgzFn0GT7M" target="_blank" rel="noopener" title="New 3D editors, open medical AI, AI symphony, Qwen 3.8, Wan Animate 2: AI NEWS">
-  <img src="https://i2.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg" alt="Video: AI news roundup: Qwen 3.8, Wan Animate 2, medical AI" loading="lazy">
-  <span class="video-card-title">AI news roundup: Qwen 3.8, Wan Animate 2, medical AI</span>
-  <span class="video-card-meta">AI Search, August 9, 2026</span>
-  <span class="video-card-desc">Roundup covering Qwen 3.8 Max release, Wan Animate 2, and other AI developments including medical AI tools.</span>
 </a>
 </div>
 
