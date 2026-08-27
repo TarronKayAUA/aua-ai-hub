@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The FDA&#x27;s digital health policy leader signaled that regulatory guidance on generative AI medical devices is coming soon, arriving alongside a wave of studies testing how such systems perform in practice <a href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">[9]</a>. GPT-4o showed promise in automating preanesthetic risk assessment, reducing incomplete documentation before surgery <a href="https://medinform.jmir.org/2026/1/e83893">[1]</a>. Separately, researchers identified a lost-in-the-middle effect in large language models processing long electronic health records, where critical details buried mid-chart are retrieved less reliably <a href="https://arxiv.org/abs/2608.20348">[10]</a>. A multimodal framework for deriving reproducible sepsis subphenotypes pointed toward more precise patient stratification <a href="https://www.nature.com/articles/s41746-026-03171-7">[7]</a>, and a STAT News report on hospital drug theft detection found AI tools still depend on consistent human oversight <a href="https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7">[6]</a>.</p>
-<p>Also this week: the section tracked eight studies on safety and evaluation, four on clinical decision support, and single entries on patient-facing tools, clinical documentation, and imaging and diagnostics. Coverage included fairness metrics for prediction models, a diabetes-specialized language model for patient education, and an automated system generating standardized radiology reporting templates from free-text corpora.</p>
-<p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
+<p>Federal regulators are moving toward clearer generative AI oversight, with the FDA&#x27;s digital health leader signaling that guidance is imminent <a href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">[15]</a>. That shift comes as evidence mounts on both promise and limits: a retrospective study built AI models to flag suicide risk in mental health patients using real-world data <a href="https://ai.jmir.org/2026/1/e85085">[3]</a>, while a Bayesian analysis of UK and Australian health systems found cost savings still lag behind technical capability <a href="https://medinform.jmir.org/2026/1/e89113">[4]</a>. Hospital systems using AI to catch controlled-substance theft found the tools work only with active human oversight <a href="https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7">[12]</a>, and a new metric aims to simplify fairness assessment across patient groups <a href="https://ai.jmir.org/2026/1/e85822">[14]</a>.</p>
+<p>Also this week: three items address clinical decision support, including a GPT-4o-based system for automated preanesthetic assessment, alongside two papers on clinical documentation and two on patient-facing tools such as diabetes-specialized language models. A single imaging and diagnostics entry covers a computational pathology atlas for tumor microenvironment characterization, rounding out a slate dominated by seven safety and evaluation studies.</p>
+<p class="section-brief-date">The picture as of August 27, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03179-z">The beginning of the end for manual chart review: LLM-mediated database construction</a>
+    <p class="news-card-summary">Published research on using large language models to automate chart review and database construction, reducing manual data extraction burden.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 26, 2026</span></div>
@@ -120,12 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">FDA&#x27;s digital health policy leader indicates regulatory guidance on generative AI devices will be issued in the near term.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2016/01/FDABuilding_FDA-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.20348">Inhibitory Attention for Clinical Long-Context Reasoning: Characterizing and Mitigating Lost-in-the-Middle Effects in EHR Processing</a>
-    <p class="news-card-summary">Research identifies and proposes mitigation for lost-in-the-middle effects in large language models processing long electronic health records, where critical information in the middle is retrieved less reliably.</p>
-  </div>
 </div>
 </div>

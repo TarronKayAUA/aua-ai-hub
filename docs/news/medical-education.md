@@ -13,14 +13,36 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A study on AI-assisted application development highlights a new accountability gap in digital health: when clinicians build their own tools with generative AI, responsibility for safety shifts from developers to end users <a href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">[10]</a>. That governance concern is echoed in curriculum debates, where twelve tips for learner-centered AI integration offer educators a structured framework for the classroom <a href="https://pubmed.ncbi.nlm.nih.gov/42632043?fc=20260609215449&amp;ff=20260823005313&amp;v=2.20.1">[12]</a>. Meanwhile, hesitancy toward AI among physician-educators appears addressable through peer-led instruction rather than traditional training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[2]</a>, and exam-based comparisons continue to show multimodal models still trail human specialists on image-heavy questions <a href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">[5]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum, including efforts to build AI literacy and encourage thoughtful classroom use of chatbots. Two papers examine assessment and feedback, two more compare exam performance, and additional coverage spans clinician attitudes toward adoption and one look at simulation training for anesthesiology residents.</p>
-<p class="section-brief-date">The picture as of August 26, 2026; numbered links go to the items below.</p>
+<p>Large language models tend to grade student essays more generously than human instructors do, a finding that complicates efforts to rely on AI for consistent assessment <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[3]</a>. Elsewhere, a randomized evaluation of an ambient AI scribe workflow found it can convert faculty observations into written feedback for learners without compromising accuracy <a href="https://mededu.jmir.org/2026/1/e105029">[4]</a>. On the exam side, updated multimodal language models still underperform human surgeons on Japan&#x27;s surgical specialty examination, particularly on image-based questions <a href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">[14]</a>. Efforts to address educator wariness toward AI show promise too: peer-led instruction increased physician-educators&#x27; perceived usefulness and intent to implement AI tools compared with traditional training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[11]</a>.</p>
+<p>Also this week: the section adds four items on teaching and curriculum design, two on attitudes and adoption, and single entries on simulation and exam benchmarking. Coverage includes efforts to generate image-based multiple-choice questions with multimodal models and guidance on encouraging thoughtful classroom use of AI chatbots.</p>
+<p class="section-brief-date">The picture as of August 27, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42651234?fc=20260609215449&amp;ff=20260827055305&amp;v=2.20.1">Artificial Intelligence Adoption in Public Health Practice: A Cross-Sectional Study of Practical Determinants Among Healthcare Professionals</a>
+    <p class="news-card-summary">Cross-sectional study identifying knowledge, trust, and legal concern as determinants of artificial intelligence adoption among healthcare professionals.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42649563?fc=20260609215449&amp;ff=20260827055305&amp;v=2.20.1">Human Evaluation of Synthetic Videostroboscopic Laryngeal Images Generated Using StyleGAN3</a>
+    <p class="news-card-summary">Evaluation of synthetic laryngeal images generated by StyleGAN3 for training, demonstrating high perceptual realism with practical implications for training data generation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">AI Tends to Mark Students’ Essays Higher Than Humans, Study Shows</a>
+    <p class="news-card-summary">Study showing large language models tend to grade student essays higher than human instructors, raising concerns about reliable assessment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-815740942.jpeg?itok=A3aBzw3r" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 26, 2026</span></div>
@@ -54,6 +76,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42646568?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">From Automated ECG Interpretation to Multimodal Cardiovascular Intelligence: The Evolution of Artificial Intelligence in Cardiovascular Medicine</a>
     <p class="news-card-summary">Review of AI evolution in cardiovascular medicine from rule-based electrocardiogram interpretation to multimodal deep learning models for clinical decision support.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42649336?fc=20260609215449&amp;ff=20260827055305&amp;v=2.20.1">Generating Image-Based Multiple-Choice Questions with Multimodal Large Language Models: Expert and Psychometric Evaluation</a>
+    <p class="news-card-summary">Expert evaluation and psychometric analysis of multiple-choice radiology questions generated by GPT-4o and o3 compared with faculty-written questions.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -98,34 +127,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">MIT Technology Review examines strategies for encouraging thoughtful use of AI chatbots in educational settings rather than bypassing learning.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/8947cf02-f42b-04bb-03ce-c05c80e44d46.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42634457?fc=20260609215449&amp;ff=20260824091500&amp;v=2.20.1">Detection Status and Cost Analysis of Community Pulmonary Nodule Screening with Mobile LDCT Combined with AI</a>
-    <p class="news-card-summary">Mobile low-dose CT screening combined with AI assistance identifies high-risk pulmonary nodule cases in community settings with cost analysis.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.20345">When Vocabulary Comprehension Fails Clinical Reasoning: Evaluating Therapy Bots&#x27; Safety Risks for Generation Alpha</a>
-    <p class="news-card-summary">Study evaluates safety risks of conversational AI systems used by adolescents for mental health support, examining failures in clinical reasoning when systems misunderstand psychological concepts.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/08/24/ai-literacy">‘AI Literacy’</a>
-    <p class="news-card-summary">Brief commentary on the importance of understanding the problems a technology solves as a foundation for AI literacy.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2023-04/Blog-Logo-Confessions%20of%20a%20Community%20College%20Dean.png?itok=3esLh9ql" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">When end users can build: AI-assisted application development and the new accountability gap in digital health</a>
-    <p class="news-card-summary">When health professionals use generative AI to build their own digital tools, accountability for safety and quality shifts from developers to end users, raising new governance questions.</p>
-  </div>
 </div>
 </div>
