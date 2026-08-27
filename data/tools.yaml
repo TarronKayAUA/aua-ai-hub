@@ -15,6 +15,17 @@
 # when unchanged. verify_url points it at a fetchable marketing page when
 # the product url is a login wall; `verify: skip` excludes an entry whose
 # pages never yield text to a scripted fetch (those stay owner-reviewed).
+#
+# Skip sweep 2026-08-26: every `verify: skip` entry was probed for a
+# fetchable surface carrying a real product description. Three were
+# recovered (Perplexity, OpenEvidence, Osmosis AI). The rest stay skipped
+# and the reason is per-entry: Nabu Tutor, StudyFetch and Gamma 403 every
+# candidate; Adobe Firefly and Adobe Podcast time out; SciSpace does not
+# resolve; Midjourney and Udio serve help shells too thin to verify
+# against; Consensus offers only a volatile blog index; and Z.ai's only
+# substantial surface is API documentation describing a different product
+# from the chat assistant listed here, which would invite false drift
+# flags. Re-probe before assuming any of these is still unreachable.
 
 - name: Claude
   vendor: Anthropic
@@ -109,10 +120,12 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  # Page serves a script-only shell to fetchers; verified live in a
-  # browser by the owner and by HTTP 200 probe, 2026-07-14.
+  # The app serves a script-only shell to fetchers, but the hub's
+  # getting-started page returns a plain product description to scripts
+  # ("AI-powered answer engine ... backed by citations you can verify"),
+  # so verification points there rather than skipping (probed 2026-08-26).
   last_reviewed: 2026-07-14
-  verify: skip
+  verify_url: https://www.perplexity.ai/hub/getting-started
   blurb: Search-centered assistant that answers questions with citations to live web sources, useful when you need traceable answers rather than open-ended chat.
 
 - name: Z.ai
@@ -302,10 +315,13 @@
   vendor: OpenEvidence
   category: research
   url: https://www.openevidence.com
-  # Rejects scripted fetches even with browser headers (content watch
-  # HTTPError 2026-07-21 and 2026-07-28); serves browsers normally and
-  # is allowlisted in verify_links.py. Owner-reviewed.
-  verify: skip
+  # The product URL rejects scripted fetches even with browser headers
+  # (content watch HTTPError 2026-07-21 and 2026-07-28) and is allowlisted
+  # in verify_links.py, but /about returns a full product description to
+  # scripts, so verification points there rather than skipping (probed
+  # 2026-08-26). That page states no pricing, so cost may read as
+  # unverifiable; catching blurb drift is the reason for the change.
+  verify_url: https://www.openevidence.com/about
   cost: free
   governance_status: listed
   status_note: Verification requires US credentials (NPI or US medical school); withdrew from the UK and EU in spring 2026.
@@ -809,8 +825,11 @@
   vendor: Elsevier
   category: medical_learning
   url: https://www.osmosis.org/features/osmosis-ai
-  # Site 403s all scripted clients; confirmed live in a browser 2026-07-15.
-  verify: skip
+  # The feature URL 403s scripted clients (confirmed live in a browser
+  # 2026-07-15), but osmosis.org/about serves both a product description
+  # and plan information to scripts, so verification points there rather
+  # than skipping (probed 2026-08-26).
+  verify_url: https://www.osmosis.org/about
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
