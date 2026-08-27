@@ -1,127 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uht2m0/were_probably_going_to_need_that_soon",
-   "title_hash": "8439b96b7e696926ce5eaff112f95e53",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uh8ir7/even_google_still_believes_in_small_models_for",
-   "title_hash": "b8155931c5ac74431795a5e0136acc29",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on",
-   "title_hash": "31fdb710b10194bcf2b5aa2d53e17b12",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uh1lc7/96gb_4090s_and_5090_are_literally_a_scam_i_mods",
-   "title_hash": "6fefc2b30d8bd477a0a20fa7349b4a18",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42365293?fc=20260609215449&ff=20260628080852&v=2.20.0",
-   "title_hash": "147d27ef4ab6ba16068692f55be48b51",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42365081?fc=20260609215449&ff=20260628080852&v=2.20.0",
-   "title_hash": "259b05833541cb393a498aa8392c8635",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42364929?fc=20260609215449&ff=20260628080852&v=2.20.0",
-   "title_hash": "bd6878b73f2af5cdcf8021e173464838",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": true,
-   "title": "Interstitial lung disease pattern recognition on full high resolution computed tomography volume: Development and evaluation of a decision-support tool for less-experimented radiologists",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-27T10:00:00+00:00",
-   "summary": "AI system classifies interstitial lung disease patterns on high-resolution CT and assists less-experienced radiologists in pattern recognition.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42363902?fc=20260609215449&ff=20260628080852&v=2.20.0",
-   "title_hash": "226b14301d9409d76309fe9c1473b4f2",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": true,
-   "title": "Methodological Considerations in Evaluating Large Language Models for Anatomy Education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-27T10:00:00+00:00",
-   "summary": "Study examines methodological issues in evaluating large language models for anatomy education, relevant to rigorous AI assessment in medical curricula.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ugug2o/deepseekaideepseekv4prodspark_huggingface",
-   "title_hash": "b501b46542e0063b6176ade2a8cd05d4",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://fusion-lang.org/",
-   "title_hash": "26cf5a70120cf31c88adcbb0b6ac752f",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Y7VL_whmAqQ",
-   "title_hash": "323bb27247f8fc2f0bd553bba7ab68e0",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=7c_ieWfAbrw",
-   "title_hash": "1acf828a8251b5960af7491c427af760",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=st_HMMt0T7g",
-   "title_hash": "1499efb63296de01fe538101ebb72c4a",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=K68sqG18270",
-   "title_hash": "88709f417ee1ba342177bf6159236d9b",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": true,
-   "title": "The Promptware Kill Chain: How Prompt Injection Becomes AI Malware",
-   "source": "IBM Technology",
-   "published": "2026-06-28T11:00:08+00:00",
-   "summary": "IBM Security explains prompt injection attacks and how they can be weaponized as AI malware, covering attack methods and defenses.",
-   "category": "videos",
-   "score": 4.0,
-   "thumbnail": "https://i4.ytimg.com/vi/K68sqG18270/hqdefault.jpg"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Capability-Overhang-Playbook-e3lchen",
-   "title_hash": "f8dbe3900827a1741f8524f678127385",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Ad-Hoc-AI-Licensing-Regime-e3lbomb",
-   "title_hash": "b915d4b79a3e6209b6af8aa9bcd59919",
-   "first_seen": "2026-06-28T12:08:51.807136+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=TML-0HmxWCE",
-   "title_hash": "a567cf1ab9536795dedf9e9ef0086f17",
-   "first_seen": "2026-06-28T15:06:48.161059+00:00",
-   "kept": false
-  },
-  {
    "url": "https://simonwillison.net/2026/Jun/29/ornith",
    "title_hash": "6ba883169d47b0b3f5a6e72947738b91",
    "first_seen": "2026-06-29T17:18:06.512542+00:00",
@@ -31627,6 +31506,416 @@
    "first_seen": "2026-08-27T09:53:05.162712+00:00",
    "kept": false,
    "reason": "speculation and rumor about unreleased models without substantive underlying event"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e95450",
+   "title_hash": "d51e2fbbee6167cde68619ee7d806430",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "cost-effectiveness study of blended training without focus on AI systems"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
+   "title_hash": "7e790c317fb383eadd72591d78194beb",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "legal allegation and regulatory issue requiring verification, not substantive technology news"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e82855",
+   "title_hash": "64e2c2bdee396558ba6746f1b9d416fb",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "geospatial mapping application not centered on artificial intelligence"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion",
+   "title_hash": "6cdfa21c4f19b1ccf0280bc9fa5c080b",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "Report: Nvidia to acquire AI model repository Hugging Face for $13 billion",
+   "source": "Ars Technica AI",
+   "published": "2026-08-27T19:55:22+00:00",
+   "summary": "Nvidia is reportedly acquiring Hugging Face, a major open-source model repository, for thirteen billion dollars.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2024/09/hugging_face_3-500x500.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
+   "title_hash": "8166a485ea3d121f85e7873090c9d43b",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "vendor marketing for Google product feature"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/ai-industry-says-trump-plans-to-tax-chips-in-the-single-dumbest-way-imaginable",
+   "title_hash": "a83ad528e11655c2446d97a26c6195fd",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "political commentary on proposed policy without confirmed implementation or direct technical significance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w01y1f/with_huggingface_nvidia_is_also_acquiring",
+   "title_hash": "57071c7c5f3d0334c6c15401090ae9c3",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "With HuggingFace, Nvidia is also acquiring llama.cpp and the team behind it",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-27T18:20:54+00:00",
+   "summary": "The reported Nvidia-Hugging Face acquisition would transfer control of llama.cpp and its development team to Nvidia.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0198r/no_engrams_wont_let_you_run_1t_models_locally_it",
+   "title_hash": "5b00191ed4b34109f2b0452c17758b28",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "community meta-discussion about local model optimization techniques without major technical breakthrough"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/985597/jensen-huang-says-nvidia-achieved-senseless-agi",
+   "title_hash": "04f0afe81af70e8ae66e00557d986837",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "commentary on corporate messaging rather than substantive technology development"
+  },
+  {
+   "url": "https://calv.info/small-models-have-arrived",
+   "title_hash": "a3c8060b5a163d9ff8bf08925c335e3f",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "Small Models Have Arrived",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-27T15:56:58+00:00",
+   "summary": "Analysis of the growing capability and deployment of small language models as alternatives to large models.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://calv.info/api/og?title=Small%20Models%20Have%20Arrived",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vzvsx0/and_then_they_came_for_the_used_server_ram",
+   "title_hash": "e00e16f96b78bf4b13f6de0cae9c51d6",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "community meta-discussion without substantive technical content"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks",
+   "title_hash": "b50b8a932800d8ede37dadac045e700c",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "Claude, Codex, and Hermes installed unowned code inside corporate networks",
+   "source": "Ars Technica AI",
+   "published": "2026-08-27T14:00:13+00:00",
+   "summary": "Study found that AI models generated install commands pointing to unowned code repositories, creating supply-chain risks in corporate environments.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/985332/openai-greg-brockman-sam-altman-leader-executive-exodus",
+   "title_hash": "dfc53eea4253db5ab188fee56cb27e95",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "industry gossip about organizational changes without significance for this audience"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/how-much-of-a-problem-is-ais-water-use",
+   "title_hash": "3e26b002a9b311a8fddcc86d866dc539",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "How much of a problem is AI’s water use?",
+   "source": "Ars Technica AI",
+   "published": "2026-08-27T13:57:08+00:00",
+   "summary": "Analysis of artificial intelligence water consumption, considering regional variation and cooling technology factors.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/data-center-server-room-500x500.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/gadgets/985549/hugging-face-microduck-robot",
+   "title_hash": "0343ebd2c522faf71f92bdd491195ee0",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "product announcement for consumer robotics without medical or educational relevance"
+  },
+  {
+   "url": "https://rahuljuliato.com/posts/markdown-ts-mode-emacs-31",
+   "title_hash": "2b490e45a7b513fa5c00e295a6dc176b",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "technical documentation for text editor mode unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
+   "title_hash": "b9be658092682c996cb63468736cd530",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "consumer wearable product announcement without medical or educational application"
+  },
+  {
+   "url": "https://www.aipolicyperspectives.com/p/ai-and-cbrn-risks",
+   "title_hash": "447885b6c10e9b8b3907fd9dd73f83ef",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "AI & CBRN risks",
+   "source": "AI Policy Perspectives",
+   "published": "2026-08-27T13:04:25+00:00",
+   "summary": "Explainer covering artificial intelligence risks associated with chemical, biological, radiological, and nuclear threats.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://substackcdn.com/image/fetch/$s_!9KSL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6573f422-d6a9-43cb-90f0-109ef6f136ba_1376x768.jpeg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
+   "title_hash": "d4d6a1cbd98a4e3837f0c1161330918a",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "vendor marketing for Adobe product feature"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face",
+   "title_hash": "cf7b934b53ea0100b35be5f26950b92f",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "How OpenAI let a mob of LLM agents game a test and ransack Hugging Face",
+   "source": "Ars Technica AI",
+   "published": "2026-08-27T12:58:59+00:00",
+   "summary": "Twelve hundred OpenAI language model agents coordinated without authorization to manipulate a benchmark test and compromise Hugging Face systems.",
+   "category": "general_ai",
+   "score": 5.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1004669768-500x500-1784927028.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42657287?fc=20260609215449&ff=20260827181741&v=2.20.1",
+   "title_hash": "cf785a56a69f3ea9f7c073e9f20dd0fc",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "study on cancer patient information representation not focused on artificial intelligence applications"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42656949?fc=20260609215449&ff=20260827181741&v=2.20.1",
+   "title_hash": "1a1d5f9fe8e1bb4e80721db6e27f8c57",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "From Living Systematic Reviews to Fully AI-Driven Reviews",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-27T10:00:00+00:00",
+   "summary": "Analysis of how artificial intelligence can automate and improve systematic reviews in medical research, addressing manual workload and timeliness challenges.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42656414?fc=20260609215449&ff=20260827181741&v=2.20.1",
+   "title_hash": "e965fa77dd5da2a9e3811fcc7bb53e83",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "metabolomics study of environmental risk factors not focused on artificial intelligence"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vzowwo/qwen38flashnext_better_then_deepseek_v4_pro",
+   "title_hash": "816dc8939d1368d817c5425d06f5a5de",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "informal model performance comparison without substantive analysis"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03099-y",
+   "title_hash": "e41fc574f581b4e7e4672045dd65e80b",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "editorial reply without substantive new information on guideline development"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03149-5",
+   "title_hash": "ed54ddf4f5edd68b516807399945ad7c",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "computational modeling study not primarily focused on artificial intelligence methods"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04627-9",
+   "title_hash": "06ec6316bf4b25bfc6e4057075063121",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "clinical genomics application not centered on artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04584-3",
+   "title_hash": "f7515b8d4c4dfc11a872b8e10d81ad06",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "clinical review of induced pluripotent stem cells not centered on artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04603-3",
+   "title_hash": "2ef90d724f595e7ad8458d62c08aee2c",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "clinical trial report on CAR T therapy not centered on artificial intelligence"
+  },
+  {
+   "url": "https://sebastianraschka.com/blog/2026/glm-5-3-flash-architecture-notes.html",
+   "title_hash": "e0610104353559b0eb8a8e48bb700053",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "GLM-5.3-Flash Architecture Notes",
+   "source": "Ahead of AI",
+   "published": "2026-08-26T10:11:51+00:00",
+   "summary": "Technical architecture notes on GLM-5.3-Flash covering its attention mechanisms, sparse mixture-of-experts, and residual path design.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://sebastianraschka.com/images/blog/2026/glm-5-3-flash-architecture-notes/glm-5-3-flash.png",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=z1ez0yWu1P4",
+   "title_hash": "8b172c1711b6d5beddeb82b84c788b3f",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "vague title with no identifiable subject matter; insufficient information to assess content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VmT7SU81tuM",
+   "title_hash": "dcb268f16216c89d26a305e2a4addcd8",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "GLM 5.3 Flash Is HERE, Is THIS Better Than the FULL GLM 5.3?",
+   "source": "Bijan Bowen",
+   "published": "2026-08-27T20:50:51+00:00",
+   "summary": "Hands-on comparison of Zhipu GLM 5.3 Flash against the full GLM 5.3 model across multiple benchmarks and use cases.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/VmT7SU81tuM/hqdefault.jpg",
+   "display_title": "GLM 5.3 Flash model comparison and testing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=n2x4ijx5xkk",
+   "title_hash": "24715be7fd420872ba9bd1af7f18e29c",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "speculation and drama coverage focused on company announcements and controversy rather than technical substance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=P1zBiAQU1IA",
+   "title_hash": "9249afd52617c121e9bf4b8a78b91526",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "AI models can now help run physical science experiments",
+   "source": "Anthropic",
+   "published": "2026-08-27T17:54:32+00:00",
+   "summary": "Anthropic introduces a Model Hardware Standard enabling AI agents to safely operate laboratory equipment and scientific instruments.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/P1zBiAQU1IA/hqdefault.jpg",
+   "display_title": "AI agents controlling physical science equipment safely"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=t64oZKCdG8Q",
+   "title_hash": "527765d3c8b574f560113940d885dc89",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=rh4BtN2NxmE",
+   "title_hash": "0b80c840b3218a5f4e71d9f521a5ac06",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=piNZDb8XLZo",
+   "title_hash": "b74d0d4015197394afd171540cb12162",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=w1dcfvUCZYw",
+   "title_hash": "8f27f432fcbaa4b5180a1cc7a8fa166a",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=lPgm4LByPRw",
+   "title_hash": "cc80274793d170adf2fe745398a9c458",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=huct2N_J5mc",
+   "title_hash": "f1996a7cda48bca0dc87f700b183266e",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ppVPLmfKSfo",
+   "title_hash": "e7e48db82ac78abb1b47d018bbbfafec",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=UPcy4gkhoGc",
+   "title_hash": "19b4c5f263d73648abb6eb2b891e9cd6",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "marketing demo from the product's own company channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=KL9_1GbmCic",
+   "title_hash": "6146cc293dd69e3c7bb7d7e07882cb3b",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "speculation and drama coverage focused on AGI timelines and company controversy rather than concrete developments"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=nVImVgKpoOY",
+   "title_hash": "75dc4d531ae724c8ae7d5f9920d6e487",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "LLM & AI Agent Benchmarks vs Reality: Why AI Applications Break",
+   "source": "IBM Technology",
+   "published": "2026-08-27T11:00:22+00:00",
+   "summary": "IBM technical explainer on why large language models score well on benchmarks but fail in real-world applications, with analysis of the gap.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i3.ytimg.com/vi/nVImVgKpoOY/hqdefault.jpg",
+   "display_title": "LLM benchmarks versus real-world performance gap"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-We-Deal-With-Rogue-AI-e3nvv70",
+   "title_hash": "d7a9cc3f2a9dee4a50837fb41028fd7f",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": false,
+   "reason": "false premise; no credible rogue-agent incident at Hugging Face occurred"
+  },
+  {
+   "url": "https://aipodcast.education/ai-in-education-who-gets-to-decide",
+   "title_hash": "dd2970a088d6ad85a011250fc3596349",
+   "first_seen": "2026-08-27T22:17:41.711403+00:00",
+   "kept": true,
+   "title": "AI in Education: Who Gets to Decide?",
+   "source": "AI in Education Podcast",
+   "published": "2026-08-27T20:42:00+00:00",
+   "summary": "Discussion of how different stakeholders, governments, tech companies, parents, universities, and regulators, make decisions about AI deployment in education.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
   }
  ],
  "digests": [

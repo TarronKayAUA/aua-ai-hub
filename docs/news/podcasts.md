@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/ai-in-education-who-gets-to-decide" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: AI in Education: Who Gets to Decide?" loading="lazy">
+  <span class="video-card-title">AI in Education: Who Gets to Decide?</span>
+  <span class="video-card-meta">AI in Education Podcast, August 27, 2026</span>
+  <span class="video-card-desc">Discussion of how different stakeholders, governments, tech companies, parents, universities, and regulators, make decisions about AI deployment in education.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/rl-s-a-hell-of-a-drug-metagaming-reward-seeking-motivated-cot-reasoning-bronson-schoen-apollo" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/928ce68a-a130-11f1-a245-53e44e8fe530/image/a3942fcfe350377c0fd8afd08bc53442.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo" loading="lazy">
   <span class="video-card-title">RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo</span>

@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=VmT7SU81tuM" target="_blank" rel="noopener" title="GLM 5.3 Flash Is HERE, Is THIS Better Than the FULL GLM 5.3?">
+  <img src="https://i3.ytimg.com/vi/VmT7SU81tuM/hqdefault.jpg" alt="Video: GLM 5.3 Flash model comparison and testing" loading="lazy">
+  <span class="video-card-title">GLM 5.3 Flash model comparison and testing</span>
+  <span class="video-card-meta">Bijan Bowen, August 27, 2026</span>
+  <span class="video-card-desc">Hands-on comparison of Zhipu GLM 5.3 Flash against the full GLM 5.3 model across multiple benchmarks and use cases.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=P1zBiAQU1IA" target="_blank" rel="noopener" title="AI models can now help run physical science experiments">
+  <img src="https://i1.ytimg.com/vi/P1zBiAQU1IA/hqdefault.jpg" alt="Video: AI agents controlling physical science equipment safely" loading="lazy">
+  <span class="video-card-title">AI agents controlling physical science equipment safely</span>
+  <span class="video-card-meta">Anthropic, August 27, 2026</span>
+  <span class="video-card-desc">Anthropic introduces a Model Hardware Standard enabling AI agents to safely operate laboratory equipment and scientific instruments.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=nVImVgKpoOY" target="_blank" rel="noopener" title="LLM &amp; AI Agent Benchmarks vs Reality: Why AI Applications Break">
+  <img src="https://i3.ytimg.com/vi/nVImVgKpoOY/hqdefault.jpg" alt="Video: LLM benchmarks versus real-world performance gap" loading="lazy">
+  <span class="video-card-title">LLM benchmarks versus real-world performance gap</span>
+  <span class="video-card-meta">IBM Technology, August 27, 2026</span>
+  <span class="video-card-desc">IBM technical explainer on why large language models score well on benchmarks but fail in real-world applications, with analysis of the gap.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=b9GU_vPeDvM" target="_blank" rel="noopener" title="Qwen3.8 Flash Next Is INSANE, Testing the PREVIEW of Qwen 4!">
   <img src="https://i3.ytimg.com/vi/b9GU_vPeDvM/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Flash and Qwen 4 preview" loading="lazy">
   <span class="video-card-title">Testing Qwen 3.8 Flash and Qwen 4 preview</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">First look at NVIDIA Nemotron 3.5 Lightning</span>
   <span class="video-card-meta">Bijan Bowen, August 12, 2026</span>
   <span class="video-card-desc">Hands-on first look at NVIDIA&#x27;s Nemotron 3.5 Lightning open-weights model, covering technical specifications and coding capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=qBoQZ3Sf3h4" target="_blank" rel="noopener" title="Muse Glimmer 30B: BEST LOCAL AI Model? Meta AI Beats Qwen 3.6 27B? (Fully Tested)">
-  <img src="https://i2.ytimg.com/vi/qBoQZ3Sf3h4/hqdefault.jpg" alt="Video: Muse Glimmer 30B benchmarked against local language models" loading="lazy">
-  <span class="video-card-title">Muse Glimmer 30B benchmarked against local language models</span>
-  <span class="video-card-meta">WorldofAI, August 12, 2026</span>
-  <span class="video-card-desc">Benchmarking comparison of Muse Glimmer 30B against Qwen and other local language models with test methodology transparency.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Qx0fCqpkBus" target="_blank" rel="noopener" title="What Is Context Engineering? Why It Matters for AI Agents">
-  <img src="https://i2.ytimg.com/vi/Qx0fCqpkBus/hqdefault.jpg" alt="Video: Context engineering for AI agents explained" loading="lazy">
-  <span class="video-card-title">Context engineering for AI agents explained</span>
-  <span class="video-card-meta">IBM Technology, August 11, 2026</span>
-  <span class="video-card-desc">IBM explainer on context engineering for AI agents and why data quality and context selection matter for system performance.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=dtb1ihWSkP4" target="_blank" rel="noopener" title="Meta Open Source Is BACK, Muse Glimmer First Test!">
-  <img src="https://i1.ytimg.com/vi/dtb1ihWSkP4/hqdefault.jpg" alt="Video: Testing Meta open-source models and Muse Glimmer" loading="lazy">
-  <span class="video-card-title">Testing Meta open-source models and Muse Glimmer</span>
-  <span class="video-card-meta">Bijan Bowen, August 10, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Meta&#x27;s open-source model releases and Muse Glimmer, including local deployment and browser functionality.</span>
 </a>
 </div>
 
