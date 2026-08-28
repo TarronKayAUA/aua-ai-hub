@@ -18,9 +18,44 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42663448?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Postgraduate Education in Artificial Intelligence: A Proposal from the Artificial Intelligence Commission of the Portuguese Medical Association</a>
+    <p class="news-card-summary">The Portuguese Medical Association proposes postgraduate AI literacy training requirements to meet European AI Act compliance for clinical staff.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42662474?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Large Language Models as Simulated Candidates in Objective Structured Clinical Examinations: A Rubric-Mapping Proof-of-Concept Study</a>
+    <p class="news-card-summary">Large language models can generate structured, scoreable responses for objective structured clinical examination station pre-validation and rubric refinement.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42662102?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Generative AI and Clinicians Show Comparable Prognostic Reasoning From Clinical Narratives in Biologic-Treated CRSwNP</a>
+    <p class="news-card-summary">Large language models produced prognostic reasoning comparable to clinician variability when analyzing limited clinical text in chronic rhinosinusitis cases.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42661705?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Evaluating the potential of ChatGPT as an educational decision-support tool for hemodialysis decision-making in nephrology training</a>
+    <p class="news-card-summary">ChatGPT aligned more closely with nephrology fellows than senior nephrologists in hemodialysis decision-making, suggesting potential as an educational support tool.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42661654?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">From AI use to critical thinking among medical students: a moderated mediation perspective on cognitive load and self-regulated learning</a>
+    <p class="news-card-summary">AI effectiveness in developing medical student critical thinking depends on both cognitive support and learners&#x27; capacity for self-regulated engagement.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 28, 2026</span></div>
@@ -91,41 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42646568?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">From Automated ECG Interpretation to Multimodal Cardiovascular Intelligence: The Evolution of Artificial Intelligence in Cardiovascular Medicine</a>
     <p class="news-card-summary">Review of AI evolution in cardiovascular medicine from rule-based electrocardiogram interpretation to multimodal deep learning models for clinical decision support.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42649336?fc=20260609215449&amp;ff=20260827055305&amp;v=2.20.1">Generating Image-Based Multiple-Choice Questions with Multimodal Large Language Models: Expert and Psychometric Evaluation</a>
-    <p class="news-card-summary">Expert evaluation and psychometric analysis of multiple-choice radiology questions generated by GPT-4o and o3 compared with faculty-written questions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.23780">When Youth Enter The Chat: An Epistemic Shift in the Validation of LLM-Based Measures of Student Talk</a>
-    <p class="news-card-summary">Study of how large language models measure student classroom discourse and the limitations of using decontextualized transcripts for validating such measures.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">Addressing Clinician-Educator Hesitancy Toward Artificial Intelligence Through a Peer-Led Instructional Design</a>
-    <p class="news-card-summary">Study shows peer-led instruction on AI tools increases physician-educators&#x27; perceived usefulness and implementation intent compared to traditional training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42639054?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">Understanding Time Availability and Format Preferences for AI Professional Development in Health Professions Education</a>
-    <p class="news-card-summary">Study examines health professions educators&#x27; preferences for AI professional development formats and time availability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42641075?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">Large Language Model-Assisted Thematic Coding in Medical Education Research: Comparative Methodological Study</a>
-    <p class="news-card-summary">Large language models can reliably apply codebooks and generate inductive codes in qualitative research when paired with human oversight.</p>
   </div>
 </div>
 </div>

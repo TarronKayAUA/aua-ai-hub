@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="research-and-methods">
@@ -27,6 +27,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2608.26112">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a>
     <p class="news-card-summary">TreeGraft improves tree-based speculative decoding for LLM inference by adaptively selecting among multiple drafters to increase accepted token length.</p>
   </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/open-asr-leaderboard-global-south">The Open ASR Leaderboard Adds Its First Global South Language</a>
+    <p class="news-card-summary">The Open ASR Leaderboard added automatic speech recognition evaluation for Global South languages, expanding benchmark coverage.</p>
+  </div>
+  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/open-asr-leaderboard-global-south/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -57,6 +65,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1w01y1f/with_huggingface_nvidia_is_also_acquiring">With HuggingFace, Nvidia is also acquiring llama.cpp and the team behind it</a>
     <p class="news-card-summary">The reported Nvidia-Hugging Face acquisition would transfer control of llama.cpp and its development team to Nvidia.</p>
   </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.anthropic.com/news/model-hardware-standard-research-preview">Previewing the Model Hardware Standard</a>
+    <p class="news-card-summary">Anthropic published a research preview of a model hardware standard for improving efficiency and compatibility across hardware platforms.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.sanity.io/images/4zrzovbb/website/5008271abbababe59f4fbb01998697f7dd0b5b60-1280x720.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -117,20 +133,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 27, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.25071">HealthBench-Psych: A Mental Health Subset of OpenAI&#x27;s HealthBench</a>
     <p class="news-card-summary">Mental health focused benchmark subset of OpenAI&#x27;s HealthBench to enable specialty-specific evaluation of large language models in psychology and psychiatry.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.25085">MTDiag: A Multi-Turn Diagnostic Dataset Towards Clinically Meaningful LLM Evaluation</a>
-    <p class="news-card-summary">Interactive multi-turn diagnostic dataset for evaluating large language models as diagnostic agents in dynamic clinical encounters rather than static question-answering.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next">Qwen3.8-Flash-Next</a>
-    <p class="news-card-summary">Qwen3.8-Flash-Next, a multimodal mixture-of-experts model with 125B total parameters but only 6B active, representing Qwen4 architecture preview.</p>
   </div>
 </div>
 </div>
