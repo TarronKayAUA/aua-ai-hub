@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://share.transistor.fm/s/123da941" target="_blank" rel="noopener">
+  <img src="https://img.transistorcdn.com/8Uz0jVk9I5C7YZnykmA_PZcLkTSBu6XPG7fkeVdsSu4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS82Y2I1/NGU1NmI1ODUyNWNl/ZTAyN2ZlZDkyMTkz/ZTkwNS5wbmc.jpg" alt="Podcast: Building the Foundation for the Agentic AI Era" loading="lazy">
+  <span class="video-card-title">Building the Foundation for the Agentic AI Era</span>
+  <span class="video-card-meta">Practical AI, August 28, 2026</span>
+  <span class="video-card-desc">VP of the Agentic AI Foundation discusses open standards and projects for building interoperable AI agent systems, including Model Context Protocol and agent-to-agent communication frameworks.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/ai-in-education-who-gets-to-decide" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: AI in Education: Who Gets to Decide?" loading="lazy">
   <span class="video-card-title">AI in Education: Who Gets to Decide?</span>

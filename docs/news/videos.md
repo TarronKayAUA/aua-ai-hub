@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=LBiNcdGNgrg" target="_blank" rel="noopener" title="This Free AI Just Caught The Billion Dollar Giants">
+  <img src="https://i1.ytimg.com/vi/LBiNcdGNgrg/hqdefault.jpg" alt="Video: Qwen3.8-Flash-Next compared to larger commercial models" loading="lazy">
+  <span class="video-card-title">Qwen3.8-Flash-Next compared to larger commercial models</span>
+  <span class="video-card-meta">Two Minute Papers, August 28, 2026</span>
+  <span class="video-card-desc">Comparison of Qwen3.8-Flash-Next against larger commercial models, demonstrating competitive performance of an open-weights alternative.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=UxJZrCFzTHY" target="_blank" rel="noopener" title="Model Hardware Standard: AI operating physical equipment">
+  <img src="https://i2.ytimg.com/vi/UxJZrCFzTHY/hqdefault.jpg" alt="Video: Model Hardware Standard for AI control of lab equipment" loading="lazy">
+  <span class="video-card-title">Model Hardware Standard for AI control of lab equipment</span>
+  <span class="video-card-meta">Anthropic, August 28, 2026</span>
+  <span class="video-card-desc">Anthropic announces Model Hardware Standard, a framework for AI agents to safely control physical equipment in scientific and research settings.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=VmT7SU81tuM" target="_blank" rel="noopener" title="GLM 5.3 Flash Is HERE, Is THIS Better Than the FULL GLM 5.3?">
   <img src="https://i3.ytimg.com/vi/VmT7SU81tuM/hqdefault.jpg" alt="Video: GLM 5.3 Flash model comparison and testing" loading="lazy">
   <span class="video-card-title">GLM 5.3 Flash model comparison and testing</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Iterative model improvement and benchmark performance analysis</span>
   <span class="video-card-meta">Two Minute Papers, August 14, 2026</span>
   <span class="video-card-desc">Overview of a research paper showing iterative improvement and scaling in model performance on a benchmark task.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Mu5a8ErscIE" target="_blank" rel="noopener" title="DeepSeek V4 Pro Is HERE, Is THIS the BEST Open Model Yet?">
-  <img src="https://i2.ytimg.com/vi/Mu5a8ErscIE/hqdefault.jpg" alt="Video: DeepSeek V4 Pro testing and technical analysis" loading="lazy">
-  <span class="video-card-title">DeepSeek V4 Pro testing and technical analysis</span>
-  <span class="video-card-meta">Bijan Bowen, August 13, 2026</span>
-  <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4 Pro against benchmark tasks to assess its capabilities as an open-weights model.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=DH4Mf6GuTXo" target="_blank" rel="noopener" title="Nemotron 3.5 Lightning First Test, NVIDIA’s NEWEST Open Model!">
-  <img src="https://i1.ytimg.com/vi/DH4Mf6GuTXo/hqdefault.jpg" alt="Video: First look at NVIDIA Nemotron 3.5 Lightning" loading="lazy">
-  <span class="video-card-title">First look at NVIDIA Nemotron 3.5 Lightning</span>
-  <span class="video-card-meta">Bijan Bowen, August 12, 2026</span>
-  <span class="video-card-desc">Hands-on first look at NVIDIA&#x27;s Nemotron 3.5 Lightning open-weights model, covering technical specifications and coding capabilities.</span>
 </a>
 </div>
 

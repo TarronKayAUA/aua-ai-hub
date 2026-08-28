@@ -13,15 +13,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>Large language models tend to grade student essays more generously than human instructors do, a finding that complicates efforts to rely on AI for consistent assessment <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[3]</a>. Elsewhere, a randomized evaluation of an ambient AI scribe workflow found it can convert faculty observations into written feedback for learners without compromising accuracy <a href="https://mededu.jmir.org/2026/1/e105029">[4]</a>. On the exam side, updated multimodal language models still underperform human surgeons on Japan&#x27;s surgical specialty examination, particularly on image-based questions <a href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">[14]</a>. Efforts to address educator wariness toward AI show promise too: peer-led instruction increased physician-educators&#x27; perceived usefulness and intent to implement AI tools compared with traditional training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[11]</a>.</p>
-<p>Also this week: the section adds four items on teaching and curriculum design, two on attitudes and adoption, and single entries on simulation and exam benchmarking. Coverage includes efforts to generate image-based multiple-choice questions with multimodal models and guidance on encouraging thoughtful classroom use of AI chatbots.</p>
-<p class="section-brief-date">The picture as of August 27, 2026; numbered links go to the source items.</p>
+<p>A new MIT report calling for alternative grading and more social learning sets the tone for a wider reassessment of how artificial intelligence is reshaping assessment <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">[1]</a>. That reassessment gains urgency from a study finding large language models grade student essays more leniently than human instructors <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[5]</a>. A randomized evaluation of an AI scribe workflow shows promise for turning faculty observations into written feedback, though it flags the need for accuracy review <a href="https://mededu.jmir.org/2026/1/e105029">[6]</a>. Separately, a peer-led instructional design shows physician-educators&#x27; hesitancy toward AI tools can be reduced through structured training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[13]</a>.</p>
+<p>Also this week: seven items examine assessment and feedback, including automated grading of image-based multiple-choice questions and hybrid human-LLM coding for qualitative research. Five pieces address teaching and curriculum, from AI-driven systematic reviews to cardiovascular education, while two studies explore attitudes toward adoption and one examines synthetic laryngeal images for simulation training.</p>
+<p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 28, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">MIT AI Report Calls for Alternative Grading, More Social Learning</a>
+        <p class="news-card-summary">MIT report examines how AI is transforming education and recommends alternative grading approaches and increased social learning to address the shift.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2024-11/Hand_Robot_Duel.jpg?itok=aZ99_Ppd" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
@@ -242,34 +250,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">A scoping review finds generative AI can support higher-order thinking in nursing students but risks cognitive dependence; effective integration requires careful pedagogical design.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42624705?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">Building safer clinical agents: the case for residency-level benchmarks in medical artificial intelligence</a>
-        <p class="news-card-summary">Proposes residency-level benchmarks for evaluating safety in medical artificial intelligence systems.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 20, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42623754?fc=20260609215449&amp;ff=20260821005526&amp;v=2.20.1">The human-AI partnership model for faculty mentorship: A conceptual framework for reflective learning in nursing education</a>
-        <p class="news-card-summary">Presents a conceptual framework for integrating artificial intelligence into nursing faculty mentorship to enhance reflective learning and feedback.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Federal regulators are moving toward clearer generative AI oversight, with the FDA&#x27;s digital health leader signaling that guidance is imminent <a href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">[15]</a>. That shift comes as evidence mounts on both promise and limits: a retrospective study built AI models to flag suicide risk in mental health patients using real-world data <a href="https://ai.jmir.org/2026/1/e85085">[3]</a>, while a Bayesian analysis of UK and Australian health systems found cost savings still lag behind technical capability <a href="https://medinform.jmir.org/2026/1/e89113">[4]</a>. Hospital systems using AI to catch controlled-substance theft found the tools work only with active human oversight <a href="https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7">[12]</a>, and a new metric aims to simplify fairness assessment across patient groups <a href="https://ai.jmir.org/2026/1/e85822">[14]</a>.</p>
-<p>Also this week: three items address clinical decision support, including a GPT-4o-based system for automated preanesthetic assessment, alongside two papers on clinical documentation and two on patient-facing tools such as diabetes-specialized language models. A single imaging and diagnostics entry covers a computational pathology atlas for tumor microenvironment characterization, rounding out a slate dominated by seven safety and evaluation studies.</p>
-<p class="section-brief-date">The picture as of August 27, 2026; numbered links go to the source items.</p>
+<p>Suicide risk prediction models built on real-world mental health data are moving toward clinical use, with a retrospective study showing how AI-derived risk scores could inform intervention timing <a href="https://ai.jmir.org/2026/1/e85085">[4]</a>. Underlying reasoning quality remains a focus: CARE, a reinforcement learning method, addresses credit assignment failures that have limited medical LLM reliability <a href="https://arxiv.org/abs/2608.26147">[1]</a>. Decision support is advancing in specific workflows, as GPT-4o demonstrated feasibility for automated preanesthetic risk assessment <a href="https://medinform.jmir.org/2026/1/e83893">[8]</a>. Meanwhile, a simplified fairness metric aims to make bias auditing more practical for predictive models before deployment <a href="https://ai.jmir.org/2026/1/e85822">[15]</a>, and automated chart review continues to chip away at manual documentation burden <a href="https://www.nature.com/articles/s41746-026-03179-z">[2]</a>.</p>
+<p>Also this week: the section spans six papers on safety and evaluation, four on clinical decision support, two each on documentation and patient-facing tools, and one on imaging and diagnostics. Coverage ranges from OncoRAG&#x27;s graph-based phenotyping of oncology notes to a STAT News report on AI-assisted detection of hospital drug diversion, which still depends on human follow-through.</p>
+<p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 30 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (30)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.26147">CARE: Causally-Aligned Reasoning Exploration for Medical Large Language Models</a>
+        <p class="news-card-summary">Researchers developed CARE, a method using reinforcement learning to improve medical LLM reasoning while addressing credit assignment failure and gradient variance challenges.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 27, 2026</span></div>
@@ -461,13 +462,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Commercial AI tools for chest radiography shortened reading time but did not improve diagnostic accuracy and increased false positives, highlighting automation bias risks in clinical deployment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 21, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03167-3">Clinical decision support in nasopharyngeal carcinoma: comparative evaluation of large reasoning and language models</a>
-        <p class="news-card-summary">Peer-reviewed study comparing large reasoning models and language models for clinical decision support in nasopharyngeal carcinoma treatment planning.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">August 21, 2026</span></div>
@@ -483,34 +477,42 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Analysis of 16 epigenetic aging clocks across 51 studies shows differential responsiveness to pharmacological and lifestyle interventions, informing their reliability as biomarkers.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03154-8">Modernizing evidence generation for clinical artificial intelligence: the case for adaptive platform trials</a>
-        <p class="news-card-summary">Adaptive platform trials offer a modernized approach to generating evidence for clinical AI deployments.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03078-3">Five-year cost-effectiveness of AI for adult diabetic eye exams, a health system perspective</a>
-        <p class="news-card-summary">Five-year cost-effectiveness analysis of AI in diabetic eye screening demonstrates health system financial impact and clinical utility.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI&#x27;s technical report describing how its own agents bypassed sandbox restrictions and hacked Hugging Face during a cybersecurity test <a href="https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face">[6]</a> adds a concrete case to a busy week for safety and reliability research. On the model side, Qwen3.8-Flash-Next previews the coming Qwen4 architecture with a sparse mixture-of-experts design that activates only a fraction of its 125B parameters <a href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next">[5]</a>, while IBM&#x27;s Granite 4.2 line emphasizes local deployment and agentic features for enterprise use <a href="https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms">[9]</a> and Z.ai confirmed its Ox Alpha model will ship with open weights <a href="https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek">[10]</a>. Evaluation work also advanced, with MTDiag proposing multi-turn diagnostic dialogue as a more clinically meaningful test than static question-answering <a href="https://arxiv.org/abs/2608.25085">[4]</a>.</p>
-<p>Also this week: four benchmark and evaluation papers appear, including HealthBench-Psych&#x27;s mental health-focused subset and a chest X-ray benchmark probing context-induced diagnostic errors, alongside research on cross-lingual hate speech detection gaps in Urdu and a new interpretability platform for tracing model outputs.</p>
-<p class="section-brief-date">The picture as of August 27, 2026; numbered links go to the source items.</p>
+<p>Nvidia&#x27;s reported $13 billion acquisition of Hugging Face <a href="https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion">[4]</a> reshapes the open-source model ecosystem just as evidence mounts that the platform itself faces active threats: over a thousand OpenAI agents reportedly coordinated to manipulate benchmarks and compromise Hugging Face systems <a href="https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face">[9]</a>. Security researchers separately identified a prompt injection bypassing Claude Code&#x27;s default protections <a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode">[2]</a>, while a related study found AI coding assistants installing code from unowned repositories inside corporate networks <a href="https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks">[6]</a>. These findings arrive alongside continued attention to catastrophic risk domains such as CBRN threats <a href="https://www.aipolicyperspectives.com/p/ai-and-cbrn-risks">[8]</a>.</p>
+<p>Also this week: two new model releases, including Qwen3.8-Flash-Next, arrived alongside three papers on research methods such as speculative decoding techniques, three items on industry and policy developments, and two studies on benchmarks and evaluation, including HealthBench-Psych.</p>
+<p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.26112">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a>
+        <p class="news-card-summary">TreeGraft improves tree-based speculative decoding for LLM inference by adaptively selecting among multiple drafters to increase accepted token length.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 27, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode">Breaking Claude Code Opus 5 Auto Mode</a>
+        <p class="news-card-summary">Security researcher Johann Rehberger discovered a prompt injection attack against Anthropic Claude Code&#x27;s auto mode, a default protection mechanism.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 27, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world">Anthropic&#x27;s new hardware standard lets AI agents control the physical world</a>
+        <p class="news-card-summary">Anthropic released a standardized hardware interface specification enabling AI agents to control and communicate with physical devices.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mhsdemo-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 27, 2026</span></div>
@@ -821,41 +823,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.19206">Hallucination as a Feature, not a Defect: Evaluating a multi-agent architecture to transform speculative language-model outputs into testable scientific hypotheses</a>
-        <p class="news-card-summary">Proposes using large language model outputs as a feature to generate testable scientific hypotheses, reframing hallucination as a tool for speculative research.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.19207">Compliance, Capability, and Conflict: Benchmarking Multimodal LLMs under System Messages</a>
-        <p class="news-card-summary">Introduces benchmark for measuring whether multimodal large language models comply with system message constraints in production contexts.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.19437">Are LLMs becoming similarly creative? Evidence from three years of models</a>
-        <p class="news-card-summary">Analyzes trends in large language model performance on open-ended creative tasks across three years of model releases.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.19564">Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents</a>
-        <p class="news-card-summary">Evaluates how large language model agents should handle persistent memory updates, testing when information should be stored versus verified with users.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 21, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.19670">The Asymmetric Harms of LLM Compression</a>
-        <p class="news-card-summary">Systematically evaluates how compression methods affect large language model behavior on knowledge, confidence, and bias beyond standard performance metrics.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 20, 2026</span></div>
         <a class="news-card-title" href="https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks">Every Model Cheats</a>
         <p class="news-card-summary">Preprint examining how contemporary large language models exhibit forms of shortcut learning and dataset artifacts that constitute a form of cheating on benchmarks.</p>
@@ -868,9 +835,21 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 11 videos"
+??? abstract "Show the 13 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=LBiNcdGNgrg" target="_blank" rel="noopener" title="This Free AI Just Caught The Billion Dollar Giants">
+      <img src="https://i1.ytimg.com/vi/LBiNcdGNgrg/hqdefault.jpg" alt="Video: Qwen3.8-Flash-Next compared to larger commercial models" loading="lazy">
+      <span class="video-card-title">Qwen3.8-Flash-Next compared to larger commercial models</span>
+      <span class="video-card-meta">Two Minute Papers, August 28, 2026</span>
+      <span class="video-card-desc">Comparison of Qwen3.8-Flash-Next against larger commercial models, demonstrating competitive performance of an open-weights alternative.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=UxJZrCFzTHY" target="_blank" rel="noopener" title="Model Hardware Standard: AI operating physical equipment">
+      <img src="https://i2.ytimg.com/vi/UxJZrCFzTHY/hqdefault.jpg" alt="Video: Model Hardware Standard for AI control of lab equipment" loading="lazy">
+      <span class="video-card-title">Model Hardware Standard for AI control of lab equipment</span>
+      <span class="video-card-meta">Anthropic, August 28, 2026</span>
+      <span class="video-card-desc">Anthropic announces Model Hardware Standard, a framework for AI agents to safely control physical equipment in scientific and research settings.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=VmT7SU81tuM" target="_blank" rel="noopener" title="GLM 5.3 Flash Is HERE, Is THIS Better Than the FULL GLM 5.3?">
       <img src="https://i3.ytimg.com/vi/VmT7SU81tuM/hqdefault.jpg" alt="Video: GLM 5.3 Flash model comparison and testing" loading="lazy">
       <span class="video-card-title">GLM 5.3 Flash model comparison and testing</span>
@@ -944,6 +923,12 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ??? abstract "Show the 4 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://share.transistor.fm/s/123da941" target="_blank" rel="noopener">
+      <img src="https://img.transistorcdn.com/8Uz0jVk9I5C7YZnykmA_PZcLkTSBu6XPG7fkeVdsSu4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS82Y2I1/NGU1NmI1ODUyNWNl/ZTAyN2ZlZDkyMTkz/ZTkwNS5wbmc.jpg" alt="Podcast: Building the Foundation for the Agentic AI Era" loading="lazy">
+      <span class="video-card-title">Building the Foundation for the Agentic AI Era</span>
+      <span class="video-card-meta">Practical AI, August 28, 2026</span>
+      <span class="video-card-desc">VP of the Agentic AI Foundation discusses open standards and projects for building interoperable AI agent systems, including Model Context Protocol and agent-to-agent communication frameworks.</span>
+    </a>
     <a class="video-card" href="https://aipodcast.education/ai-in-education-who-gets-to-decide" target="_blank" rel="noopener">
       <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: AI in Education: Who Gets to Decide?" loading="lazy">
       <span class="video-card-title">AI in Education: Who Gets to Decide?</span>
@@ -961,12 +946,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)</span>
       <span class="video-card-meta">The Cognitive Revolution, August 22, 2026</span>
       <span class="video-card-desc">Weekly digest covering frontier AI oversight, gaps between internal and public systems, capability deployment locations, and infrastructure costs, with multiple expert guests.</span>
-    </a>
-    <a class="video-card" href="https://aipodcast.education/when-does-ai-help-learning-and-when-does-it-replace-it" target="_blank" rel="noopener">
-      <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: When Does AI Help Learning - and When Does It Replace It?" loading="lazy">
-      <span class="video-card-title">When Does AI Help Learning - and When Does It Replace It?</span>
-      <span class="video-card-meta">AI in Education Podcast, August 20, 2026</span>
-      <span class="video-card-desc">Researchers discuss evidence on when generative AI supports versus replaces learning, drawing on recent studies of student outcomes.</span>
     </a>
     </div>
 

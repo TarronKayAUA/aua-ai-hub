@@ -13,14 +13,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models tend to grade student essays more generously than human instructors do, a finding that complicates efforts to rely on AI for consistent assessment <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[3]</a>. Elsewhere, a randomized evaluation of an ambient AI scribe workflow found it can convert faculty observations into written feedback for learners without compromising accuracy <a href="https://mededu.jmir.org/2026/1/e105029">[4]</a>. On the exam side, updated multimodal language models still underperform human surgeons on Japan&#x27;s surgical specialty examination, particularly on image-based questions <a href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">[14]</a>. Efforts to address educator wariness toward AI show promise too: peer-led instruction increased physician-educators&#x27; perceived usefulness and intent to implement AI tools compared with traditional training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[11]</a>.</p>
-<p>Also this week: the section adds four items on teaching and curriculum design, two on attitudes and adoption, and single entries on simulation and exam benchmarking. Coverage includes efforts to generate image-based multiple-choice questions with multimodal models and guidance on encouraging thoughtful classroom use of AI chatbots.</p>
-<p class="section-brief-date">The picture as of August 27, 2026; numbered links go to the items below.</p>
+<p>A new MIT report calling for alternative grading and more social learning sets the tone for a wider reassessment of how artificial intelligence is reshaping assessment <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">[1]</a>. That reassessment gains urgency from a study finding large language models grade student essays more leniently than human instructors <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[5]</a>. A randomized evaluation of an AI scribe workflow shows promise for turning faculty observations into written feedback, though it flags the need for accuracy review <a href="https://mededu.jmir.org/2026/1/e105029">[6]</a>. Separately, a peer-led instructional design shows physician-educators&#x27; hesitancy toward AI tools can be reduced through structured training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[13]</a>.</p>
+<p>Also this week: seven items examine assessment and feedback, including automated grading of image-based multiple-choice questions and hybrid human-LLM coding for qualitative research. Five pieces address teaching and curriculum, from AI-driven systematic reviews to cardiovascular education, while two studies explore attitudes toward adoption and one examines synthetic laryngeal images for simulation training.</p>
+<p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">MIT AI Report Calls for Alternative Grading, More Social Learning</a>
+    <p class="news-card-summary">MIT report examines how AI is transforming education and recommends alternative grading approaches and increased social learning to address the shift.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2024-11/Hand_Robot_Duel.jpg?itok=aZ99_Ppd" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
@@ -118,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42641075?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">Large Language Model-Assisted Thematic Coding in Medical Education Research: Comparative Methodological Study</a>
     <p class="news-card-summary">Large language models can reliably apply codebooks and generate inductive codes in qualitative research when paired with human oversight.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42640323?fc=20260609215449&amp;ff=20260825215936&amp;v=2.20.1">A Rasch-based analysis comparing the performance of updated multimodal large language models and surgeons on the Japanese surgical specialist examination</a>
-    <p class="news-card-summary">Updated multimodal large language models performed below human surgeons on a Japanese surgical specialty exam, with particular weakness on image-based questions.</p>
   </div>
 </div>
 </div>

@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Federal regulators are moving toward clearer generative AI oversight, with the FDA&#x27;s digital health leader signaling that guidance is imminent <a href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">[15]</a>. That shift comes as evidence mounts on both promise and limits: a retrospective study built AI models to flag suicide risk in mental health patients using real-world data <a href="https://ai.jmir.org/2026/1/e85085">[3]</a>, while a Bayesian analysis of UK and Australian health systems found cost savings still lag behind technical capability <a href="https://medinform.jmir.org/2026/1/e89113">[4]</a>. Hospital systems using AI to catch controlled-substance theft found the tools work only with active human oversight <a href="https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7">[12]</a>, and a new metric aims to simplify fairness assessment across patient groups <a href="https://ai.jmir.org/2026/1/e85822">[14]</a>.</p>
-<p>Also this week: three items address clinical decision support, including a GPT-4o-based system for automated preanesthetic assessment, alongside two papers on clinical documentation and two on patient-facing tools such as diabetes-specialized language models. A single imaging and diagnostics entry covers a computational pathology atlas for tumor microenvironment characterization, rounding out a slate dominated by seven safety and evaluation studies.</p>
-<p class="section-brief-date">The picture as of August 27, 2026; numbered links go to the items below.</p>
+<p>Suicide risk prediction models built on real-world mental health data are moving toward clinical use, with a retrospective study showing how AI-derived risk scores could inform intervention timing <a href="https://ai.jmir.org/2026/1/e85085">[4]</a>. Underlying reasoning quality remains a focus: CARE, a reinforcement learning method, addresses credit assignment failures that have limited medical LLM reliability <a href="https://arxiv.org/abs/2608.26147">[1]</a>. Decision support is advancing in specific workflows, as GPT-4o demonstrated feasibility for automated preanesthetic risk assessment <a href="https://medinform.jmir.org/2026/1/e83893">[8]</a>. Meanwhile, a simplified fairness metric aims to make bias auditing more practical for predictive models before deployment <a href="https://ai.jmir.org/2026/1/e85822">[15]</a>, and automated chart review continues to chip away at manual documentation burden <a href="https://www.nature.com/articles/s41746-026-03179-z">[2]</a>.</p>
+<p>Also this week: the section spans six papers on safety and evaluation, four on clinical decision support, two each on documentation and patient-facing tools, and one on imaging and diagnostics. Coverage ranges from OncoRAG&#x27;s graph-based phenotyping of oncology notes to a STAT News report on AI-assisted detection of hospital drug diversion, which still depends on human follow-through.</p>
+<p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.26147">CARE: Causally-Aligned Reasoning Exploration for Medical Large Language Models</a>
+    <p class="news-card-summary">Researchers developed CARE, a method using reinforcement learning to improve medical LLM reasoning while addressing credit assignment failure and gradient variance challenges.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 27, 2026</span></div>
@@ -119,13 +126,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85822">A Simplified Metric to Streamline Between-Group Fairness Assessment for Predictive Models: Algorithm Development and Evaluation Study</a>
     <p class="news-card-summary">Study develops a simplified metric to assess fairness in clinical prediction models, addressing the practical challenge of evaluating discrimination across patient groups.</p>
   </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">STAT+: FDA digital health leader promises generative AI regulatory guidance is coming</a>
-    <p class="news-card-summary">FDA&#x27;s digital health policy leader indicates regulatory guidance on generative AI devices will be issued in the near term.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2016/01/FDABuilding_FDA-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
