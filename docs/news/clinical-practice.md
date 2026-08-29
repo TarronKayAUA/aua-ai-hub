@@ -13,14 +13,21 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Suicide risk prediction models built on real-world mental health data are moving toward clinical use, with a retrospective study showing how AI-derived risk scores could inform intervention timing <a href="https://ai.jmir.org/2026/1/e85085">[4]</a>. Underlying reasoning quality remains a focus: CARE, a reinforcement learning method, addresses credit assignment failures that have limited medical LLM reliability <a href="https://arxiv.org/abs/2608.26147">[1]</a>. Decision support is advancing in specific workflows, as GPT-4o demonstrated feasibility for automated preanesthetic risk assessment <a href="https://medinform.jmir.org/2026/1/e83893">[8]</a>. Meanwhile, a simplified fairness metric aims to make bias auditing more practical for predictive models before deployment <a href="https://ai.jmir.org/2026/1/e85822">[15]</a>, and automated chart review continues to chip away at manual documentation burden <a href="https://www.nature.com/articles/s41746-026-03179-z">[2]</a>.</p>
-<p>Also this week: the section spans six papers on safety and evaluation, four on clinical decision support, two each on documentation and patient-facing tools, and one on imaging and diagnostics. Coverage ranges from OncoRAG&#x27;s graph-based phenotyping of oncology notes to a STAT News report on AI-assisted detection of hospital drug diversion, which still depends on human follow-through.</p>
-<p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the items below.</p>
+<p>AgentDS-BUS demonstrates that breast ultrasound malignancy classification can be automated without model retraining, decoupling segmentation from feature analysis in a fine-tuning-free agentic framework <a href="https://www.nature.com/articles/s41746-026-03144-w">[1]</a>. Parallel work addresses how these systems reason: CARE applies reinforcement learning to correct credit assignment failures in medical large language model reasoning <a href="https://arxiv.org/abs/2608.26147">[4]</a>, while a validated GPT-4o preanesthetic assessment tool shows such reasoning entering perioperative workflows, still under clinician review <a href="https://medinform.jmir.org/2026/1/e83893">[11]</a>. On the data side, LLM-mediated chart review promises to cut manual extraction burden substantially <a href="https://www.nature.com/articles/s41746-026-03179-z">[5]</a>, even as suicide risk prediction models built on real-world mental health data underscore the stakes of putting these systems in direct contact with patients <a href="https://ai.jmir.org/2026/1/e85085">[7]</a>.</p>
+<p>Also this week: the section adds four papers on clinical decision support and four on safety and evaluation, including a conceptual model for ambient AI adoption in clinical settings and a Bayesian analysis of AI-driven cost savings across UK and Australian health systems. Three patient-facing tools cover mental health chatbots and automated motivational interviewing coding.</p>
+<p class="section-brief-date">The picture as of August 29, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03144-w">AgentDS-BUS: a fine-tuning-free agentic breast ultrasound malignancy classification framework with decoupled segmentation and feature analysis</a>
+    <p class="news-card-summary">AgentDS-BUS is a fine-tuning-free agentic system for breast ultrasound malignancy classification that decouples segmentation and feature analysis without requiring model retraining.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 28, 2026</span></div>
@@ -118,13 +125,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42638360?fc=20260609215449&amp;ff=20260825091301&amp;v=2.20.1">Development and Evaluation of a Custom GPT-Based Artificial Intelligence Clinical Decision Support System for Emergency Department Interdepartmental Consultation Automation</a>
     <p class="news-card-summary">A custom GPT system demonstrated feasibility for automating emergency department consultation requests, reducing documentation burden while requiring clinician review.</p>
   </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7">STAT+: AI is good at catching drug theft at hospitals, but only when humans do their part</a>
-    <p class="news-card-summary">AI systems can help hospitals prevent controlled substance theft and staff diversion, but require effective human oversight to function reliably.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_230717451-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

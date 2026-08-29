@@ -13,12 +13,12 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new MIT report calling for alternative grading and more social learning sets the tone for a wider reassessment of how artificial intelligence is reshaping assessment <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">[1]</a>. That reassessment gains urgency from a study finding large language models grade student essays more leniently than human instructors <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[5]</a>. A randomized evaluation of an AI scribe workflow shows promise for turning faculty observations into written feedback, though it flags the need for accuracy review <a href="https://mededu.jmir.org/2026/1/e105029">[6]</a>. Separately, a peer-led instructional design shows physician-educators&#x27; hesitancy toward AI tools can be reduced through structured training <a href="https://pubmed.ncbi.nlm.nih.gov/42639421?fc=20260609215449&amp;ff=20260825125720&amp;v=2.20.1">[13]</a>.</p>
-<p>Also this week: seven items examine assessment and feedback, including automated grading of image-based multiple-choice questions and hybrid human-LLM coding for qualitative research. Five pieces address teaching and curriculum, from AI-driven systematic reviews to cardiovascular education, while two studies explore attitudes toward adoption and one examines synthetic laryngeal images for simulation training.</p>
-<p class="section-brief-date">The picture as of August 28, 2026; numbered links go to the items below.</p>
+<p>A new MIT report calling for alternative grading models and more social learning <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">[7]</a> arrives alongside evidence that large language models tend to score student essays higher than human instructors do <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[11]</a>, sharpening concerns about assessment reliability as AI tools spread through medical training. Documentation-focused tools are also advancing: an ambient AI scribe workflow that converts faculty observations into written learner feedback showed promise in a randomized evaluation <a href="https://mededu.jmir.org/2026/1/e105029">[12]</a>. Meanwhile, the Portuguese Medical Association has proposed postgraduate AI literacy requirements tied to European AI Act compliance <a href="https://pubmed.ncbi.nlm.nih.gov/42663448?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">[1]</a>, and large language models continue to post strong but inconsistent results on USMLE-style question sets <a href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">[6]</a>.</p>
+<p>Also this week: six items address teaching and curriculum design, five examine assessment and feedback practices, and two explore simulation and skills training, including synthetic StyleGAN3-generated laryngeal images for procedural practice. A single study on artificial intelligence adoption among public health professionals rounds out the broader picture, alongside continued work on hybrid human-LLM coding workflows for qualitative medical education research.</p>
+<p class="section-brief-date">The picture as of August 29, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -54,6 +54,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42661654?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">From AI use to critical thinking among medical students: a moderated mediation perspective on cognitive load and self-regulated learning</a>
     <p class="news-card-summary">AI effectiveness in developing medical student critical thinking depends on both cognitive support and learners&#x27; capacity for self-regulated engagement.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">A Comparative Analysis of Large Language Model Performance on USMLE Step 1-Style Allergy/Immunology Questions: Evaluating Correctness and Consistency</a>
+    <p class="news-card-summary">Gemini and Grok achieved approximately 81% accuracy on USMLE Step 1-style allergy and immunology questions, outperforming ChatGPT, with performance varying significantly based on prompt complexity.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42647413?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">Evaluating hybrid human-LLM coding workflows for qualitative research in medical education: A generalizability study</a>
     <p class="news-card-summary">Generalizability study evaluating hybrid human-LLM coding configurations for reliability in deductive qualitative coding tasks in medical education research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42646568?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">From Automated ECG Interpretation to Multimodal Cardiovascular Intelligence: The Evolution of Artificial Intelligence in Cardiovascular Medicine</a>
-    <p class="news-card-summary">Review of AI evolution in cardiovascular medicine from rule-based electrocardiogram interpretation to multimodal deep learning models for clinical decision support.</p>
   </div>
 </div>
 </div>
