@@ -1,85 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/tech-policy/2026/06/trumps-plan-to-redesign-every-gov-website-leads-to-ai-designed-horrors",
-   "title_hash": "76cfe2d665988cf3e302b87f64c9b325",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video",
-   "title_hash": "803b2a5f61ad8f6fd658285cc32d461f",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/06/spacex-may-donate-stock-to-trumps-savings-accounts-for-kids-report-says",
-   "title_hash": "279ce9dd61bf0d7a3e33d02f65e42b51",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jun/30/shot-scraper",
-   "title_hash": "ff140227077762a2aacf37761f793e2a",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable",
-   "title_hash": "7f8190b84bec910c68b9b60807d63f94",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": true,
-   "title": "Why Specialization Is Inevitable",
-   "source": "Hugging Face blog",
-   "published": "2026-06-30T14:39:11+00:00",
-   "summary": "Hugging Face analysis of model specialization trends in artificial intelligence development and deployment.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Av4v9_l94sEUj-etRFOLb.png"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ujouxg/well_its_a_step_up_from_nonstop_bot_spam_i_guess",
-   "title_hash": "d54a955b0e0d25e2eb94f4eab84d17bb",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42377065?fc=20260609215449&ff=20260630132631&v=2.20.0",
-   "title_hash": "5d70ca17c32b997aac3a9b6e463cb0bc",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence Use Among Occupational Therapy Students in Academic and Fieldwork Education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-30T10:00:00+00:00",
-   "summary": "Study documents how occupational therapy students are integrating artificial intelligence into academic and fieldwork education with measured caution.",
-   "category": "medical_education",
-   "score": 2.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42376791?fc=20260609215449&ff=20260630132631&v=2.20.0",
-   "title_hash": "6801d2f626fc3fe05ac8c0bfaa1019ab",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": true,
-   "title": "Exploring medical Artificial Intelligence Readiness among Korean medical students: a cross-sectional study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-30T10:00:00+00:00",
-   "summary": "Cross-sectional study finds Korean medical students lack sufficient preparation to effectively utilize artificial intelligence in their training.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42376779?fc=20260609215449&ff=20260630132631&v=2.20.0",
-   "title_hash": "9eb38dec07fc9b1904045d63d30268f3",
-   "first_seen": "2026-06-30T17:26:30.856048+00:00",
-   "kept": true,
-   "title": "Turning AI hallucinations into scaffolds for morphologic reasoning: A pilot randomized trial of prompt-guided virtual microscopy learning during a focused histology module",
-   "source": "PubMed AI in medical education",
-   "published": "2026-06-30T10:00:00+00:00",
-   "summary": "Pilot randomized trial tests whether AI-guided prompts in virtual microscopy can scaffold morphologic reasoning skills in medical students.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42382821?fc=20260609215449&ff=20260701121028&v=2.20.0",
    "title_hash": "06cf3ab48345b02693b9abf31706acb3",
    "first_seen": "2026-07-01T16:10:28.605463+00:00",
@@ -31848,6 +31769,46 @@
    "first_seen": "2026-08-29T13:50:55.435424+00:00",
    "kept": false,
    "reason": "speculation about unreleased capability claims; drama-framed coverage without substantive technical content"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+   "title_hash": "99d6e75db72e2d3b43a6f2fd0b193339",
+   "first_seen": "2026-08-29T19:25:15.250046+00:00",
+   "kept": false,
+   "reason": "industry litigation, not substantive AI technology or practice news"
+  },
+  {
+   "url": "https://sebastianraschka.com/blog/2026/reasoning-model-book-club-q-and-a.html",
+   "title_hash": "090f712731138ae95b2f7fe1020679ed",
+   "first_seen": "2026-08-29T19:25:15.250046+00:00",
+   "kept": false,
+   "reason": "community event announcement without substantive content relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42666714?fc=20260609215449&ff=20260829152515&v=2.20.1",
+   "title_hash": "b13a52b3e9b4263b569a16c2ccccc995",
+   "first_seen": "2026-08-29T19:25:15.250046+00:00",
+   "kept": true,
+   "title": "Clinician Performance in Training Data Curation for an Arrhythmia Machine Learning Model: Is Anyone Qualified?",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-29T10:00:00+00:00",
+   "summary": "Study finds clinicians perform inconsistently when labeling arrhythmia training data, especially for complex cases, supporting the case for clinical decision support tools and better labeler preparation.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03145-9",
+   "title_hash": "b16b1e2eddd53c587f9aca38e3188cb6",
+   "first_seen": "2026-08-29T19:25:15.250046+00:00",
+   "kept": true,
+   "title": "Interpretable multi-modal hierarchical framework to support cytomorphological analysis of hematologic cancers",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-29T00:00:00+00:00",
+   "summary": "Peer-reviewed framework combines multiple data types in an interpretable model to assist pathologists in analyzing hematologic cancer cell morphology.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
   }
  ],
  "digests": [

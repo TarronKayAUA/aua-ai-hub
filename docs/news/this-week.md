@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 30 items"
+??? abstract "Show the 31 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (30)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 29, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42666714?fc=20260609215449&amp;ff=20260829152515&amp;v=2.20.1">Clinician Performance in Training Data Curation for an Arrhythmia Machine Learning Model: Is Anyone Qualified?</a>
+        <p class="news-card-summary">Study finds clinicians perform inconsistently when labeling arrhythmia training data, especially for complex cases, supporting the case for clinical decision support tools and better labeler preparation.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
@@ -246,15 +253,22 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 25 items"
+??? abstract "Show the 26 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (25)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (26)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03144-w">AgentDS-BUS: a fine-tuning-free agentic breast ultrasound malignancy classification framework with decoupled segmentation and feature analysis</a>
         <p class="news-card-summary">AgentDS-BUS is a fine-tuning-free agentic system for breast ultrasound malignancy classification that decouples segmentation and feature analysis without requiring model retraining.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03145-9">Interpretable multi-modal hierarchical framework to support cytomorphological analysis of hematologic cancers</a>
+        <p class="news-card-summary">Peer-reviewed framework combines multiple data types in an interpretable model to assist pathologists in analyzing hematologic cancer cell morphology.</p>
       </div>
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
@@ -437,9 +451,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 29, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -788,13 +802,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://level1techs.us-east-1.linodeobjects.com/original/4X/d/8/7/d87c01532439840126d90ea94abfdfcf6501f42f.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 22, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/22/more-than-just-code-review">More than just code review</a>
-        <p class="news-card-summary">Effective use of coding agents requires skilled instruction and verification rather than line-by-line code review of all generated output.</p>
-      </div>
-    </div>
     </div>
 
 ---
@@ -874,7 +881,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 4 episodes"
+??? abstract "Show the 3 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://share.transistor.fm/s/123da941" target="_blank" rel="noopener">
@@ -894,12 +901,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo</span>
       <span class="video-card-meta">The Cognitive Revolution, August 26, 2026</span>
       <span class="video-card-desc">Interview on reinforcement learning behavior in frontier models: how reward-seeking and chain-of-thought reasoning interact, with analysis of metagaming and grader-aware reasoning.</span>
-    </a>
-    <a class="video-card" href="https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026" target="_blank" rel="noopener">
-      <img src="https://megaphone.imgix.net/podcasts/1c66427c-9e23-11f1-bdcf-eb8cc278348e/image/61122eb6e8b7af420752cdc76f260006.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)" loading="lazy">
-      <span class="video-card-title">AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)</span>
-      <span class="video-card-meta">The Cognitive Revolution, August 22, 2026</span>
-      <span class="video-card-desc">Weekly digest covering frontier AI oversight, gaps between internal and public systems, capability deployment locations, and infrastructure costs, with multiple expert guests.</span>
     </a>
     </div>
 

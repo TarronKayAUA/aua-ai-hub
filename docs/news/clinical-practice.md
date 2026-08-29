@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 29, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -26,6 +26,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03144-w">AgentDS-BUS: a fine-tuning-free agentic breast ultrasound malignancy classification framework with decoupled segmentation and feature analysis</a>
     <p class="news-card-summary">AgentDS-BUS is a fine-tuning-free agentic system for breast ultrasound malignancy classification that decouples segmentation and feature analysis without requiring model retraining.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03145-9">Interpretable multi-modal hierarchical framework to support cytomorphological analysis of hematologic cancers</a>
+    <p class="news-card-summary">Peer-reviewed framework combines multiple data types in an interpretable model to assist pathologists in analyzing hematologic cancer cell morphology.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 25, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95964">Automating Motivational Interviewing Coding in Adolescent Substance Use Prevention: Human-AI Agreement Study</a>
     <p class="news-card-summary">Study evaluates large language model agreement with human coders for automating motivational interviewing technique coding in substance use prevention.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42638360?fc=20260609215449&amp;ff=20260825091301&amp;v=2.20.1">Development and Evaluation of a Custom GPT-Based Artificial Intelligence Clinical Decision Support System for Emergency Department Interdepartmental Consultation Automation</a>
-    <p class="news-card-summary">A custom GPT system demonstrated feasibility for automating emergency department consultation requests, reducing documentation burden while requiring clinician review.</p>
   </div>
 </div>
 </div>
