@@ -31809,6 +31809,13 @@
    "category": "clinical_practice",
    "score": 3.0,
    "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Start-AI-Coding-If-You-Havent-Yet-e3o2itk",
+   "title_hash": "4edfaa20115bbb0f628503db1cf932dc",
+   "first_seen": "2026-08-29T22:40:32.893565+00:00",
+   "kept": false,
+   "reason": "promotional episode with boilerplate course-signup framing"
   }
  ],
  "digests": [
