@@ -22,6 +22,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
     <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 30, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1">Impact of ChatGPT-assisted personalized learning on teaching acute abdomen to undergraduate medical students: A randomized crossover study</a>
+        <p class="news-card-summary">A randomized crossover trial found that ChatGPT-assisted personalized learning improved surgical education outcomes for undergraduate medical students compared to traditional methods.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 29, 2026</span></div>
@@ -221,13 +228,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Brief commentary on the importance of understanding the problems a technology solves as a foundation for AI literacy.</p>
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2023-04/Blog-Logo-Confessions%20of%20a%20Community%20College%20Dean.png?itok=3esLh9ql" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 23, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42632993?fc=20260609215449&amp;ff=20260823090325&amp;v=2.20.1">When end users can build: AI-assisted application development and the new accountability gap in digital health</a>
-        <p class="news-card-summary">When health professionals use generative AI to build their own digital tools, accountability for safety and quality shifts from developers to end users, raising new governance questions.</p>
-      </div>
     </div>
     </div>
 

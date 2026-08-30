@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 30, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 30, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1">Impact of ChatGPT-assisted personalized learning on teaching acute abdomen to undergraduate medical students: A randomized crossover study</a>
+    <p class="news-card-summary">A randomized crossover trial found that ChatGPT-assisted personalized learning improved surgical education outcomes for undergraduate medical students compared to traditional methods.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 29, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 26, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e105029">Documentation Quality and Educational Value in AI-Assisted Feedback</a>
     <p class="news-card-summary">Randomized evaluation of an ambient AI scribe workflow for converting faculty observations into written learner feedback, with safety review of AI summaries for accuracy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42643292?fc=20260609215449&amp;ff=20260826091753&amp;v=2.20.1">Blind spots in artificial intelligence systems: poor identification of self-generated medical images-evidence-based cross-sectional study</a>
-    <p class="news-card-summary">ChatGPT and Google Gemini show systematic, architecture-dependent failures in identifying AI-generated medical images, with implications for validation protocols.</p>
   </div>
 </div>
 </div>

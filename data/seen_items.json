@@ -31865,6 +31865,75 @@
    "score": 3.0,
    "thumbnail": "https://i1.ytimg.com/vi/4wjHNgMLeyY/hqdefault.jpg",
    "display_title": "Recent model releases: GLM, Qwen, Minimax, and Hy4"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers",
+   "title_hash": "f86fcb5f01bd9fdc899afec8fa30b3eb",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; robotics in data centers lacks relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&ff=20260830094906&v=2.20.1",
+   "title_hash": "84e5486fa16513dd0db6241b7b5024b3",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": true,
+   "title": "Impact of ChatGPT-assisted personalized learning on teaching acute abdomen to undergraduate medical students: A randomized crossover study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-30T10:00:00+00:00",
+   "summary": "A randomized crossover trial found that ChatGPT-assisted personalized learning improved surgical education outcomes for undergraduate medical students compared to traditional methods.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42668712?fc=20260609215449&ff=20260830094906&v=2.20.1",
+   "title_hash": "976b2b2812564ad9d651705e5c85b335",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "narrow domain application with insufficient validation evidence, not addressing AI capability or deployment significance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42668501?fc=20260609215449&ff=20260830094906&v=2.20.1",
+   "title_hash": "8fde073bc7bfd929270381e505b909af",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "molecular biology research without AI component; not about artificial intelligence in medical education"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04670-6",
+   "title_hash": "b8e2ab9bbf2f0ca714929011cd2c469f",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "clinical trial results on amyloid cardiomyopathy treatment; not related to artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04594-1",
+   "title_hash": "a02de985f09f1c918e29d1000c25bc75",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "health policy commentary on obesity medications; not related to artificial intelligence"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a",
+   "title_hash": "4d97e59e6e814aa43f28b4a450e3f7ac",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "minor performance-tinkering thread on community forum; lacks significance for medical educator audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=eKZaB71Y2ts",
+   "title_hash": "1a420164d6b212c2c01e9777df11645f",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "speculation and rumor about unreleased models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=IRtSdLX_Obw",
+   "title_hash": "e3323b17be46c3c21dcd378409a3993f",
+   "first_seen": "2026-08-30T13:49:05.885799+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
