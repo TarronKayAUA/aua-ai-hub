@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=4wjHNgMLeyY" target="_blank" rel="noopener" title="Ox Alpha reveal, realtime Minimax, Qwen Next, Hy4, robot olympics: AI NEWS">
+  <img src="https://i1.ytimg.com/vi/4wjHNgMLeyY/hqdefault.jpg" alt="Video: Recent model releases: GLM, Qwen, Minimax, and Hy4" loading="lazy">
+  <span class="video-card-title">Recent model releases: GLM, Qwen, Minimax, and Hy4</span>
+  <span class="video-card-meta">AI Search, August 30, 2026</span>
+  <span class="video-card-desc">Roundup covering recent model releases including GLM 5.3 Flash, Qwen 3.8 Flash Next, Minimax FastH3, and Hy4 with news and capability comparisons.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=LBiNcdGNgrg" target="_blank" rel="noopener" title="This Free AI Just Caught The Billion Dollar Giants">
   <img src="https://i1.ytimg.com/vi/LBiNcdGNgrg/hqdefault.jpg" alt="Video: Qwen3.8-Flash-Next compared to larger commercial models" loading="lazy">
   <span class="video-card-title">Qwen3.8-Flash-Next compared to larger commercial models</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">GLM 5.3 benchmarking and testing against open-source models</span>
   <span class="video-card-meta">WorldofAI, August 14, 2026</span>
   <span class="video-card-desc">Benchmarking and hands-on testing of GLM 5.3 against other open-weights models including Mythos.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=QnGNF8k_uoc" target="_blank" rel="noopener" title="Claude AI Failed 650 Times…Then Beat The Human Record">
-  <img src="https://i2.ytimg.com/vi/QnGNF8k_uoc/hqdefault.jpg" alt="Video: Iterative model improvement and benchmark performance analysis" loading="lazy">
-  <span class="video-card-title">Iterative model improvement and benchmark performance analysis</span>
-  <span class="video-card-meta">Two Minute Papers, August 14, 2026</span>
-  <span class="video-card-desc">Overview of a research paper showing iterative improvement and scaling in model performance on a benchmark task.</span>
 </a>
 </div>
 
