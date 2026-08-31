@@ -1,254 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate",
-   "title_hash": "87a4e369cb93a7f41501547ad0dfb424",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e85666",
-   "title_hash": "4e598a3f43fbc170528fe8ac8697fa90",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Exploring Ambient Artificial Intelligence to Enhance Learning and Feedback During Operating Room-to-Intensive Care Unit Handoffs: Co-Design and Simulation Study",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-02T17:00:25+00:00",
-   "summary": "Co-design study explores use of ambient AI to enhance learning and feedback during operating room-to-intensive care unit clinical handoffs.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://arena.ai/blog/fullstack-code-arena",
-   "title_hash": "33fe3bd86d02ddce62304d8d0918a651",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e92193",
-   "title_hash": "4ce96719dace3664db492e0d9d1e84e6",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Ambient AI Scribes and Emergency Department Documentation Burden: Retrospective Cohort Study",
-   "source": "JMIR AI",
-   "published": "2026-07-02T15:45:18+00:00",
-   "summary": "Retrospective study of ambient AI scribes in emergency departments shows impact on documentation burden and clinician workload in high-burnout settings.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e86569",
-   "title_hash": "7d926ad3fa0643b5951a07502d24371a",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Voice Cloning Using AI vs Traditional Audio Recording for Prerecorded Courses in Medical Pedagogy: Randomized Controlled Trial",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-02T15:30:03+00:00",
-   "summary": "Randomized controlled trial compares voice-cloned versus traditionally recorded audio for prerecorded medical courses, evaluating learning outcomes and student perception.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/openai-floats-giving-us-5-stake-to-win-over-ai-haters",
-   "title_hash": "dc7c1f3f6910d1d104172e0f917b5fbe",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/musks-x-poses-serious-risk-to-americans-privacy-advocates-warn-ftc",
-   "title_hash": "739d4b9248abbc0c5183802a88a680d3",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e86877",
-   "title_hash": "c7f3c030bb2c1c09ffbc5640ade04c40",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e81445",
-   "title_hash": "b51d18d87b4583a5f247fe9495357d3d",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Clinician Perspectives on Ambient AI Scribes in the Intensive Care Unit: Qualitative Interview Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-02T14:00:24+00:00",
-   "summary": "Qualitative interview study explores intensive care unit clinician perspectives on ambient AI scribes for documentation and team communication support.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e87284",
-   "title_hash": "0f68b5a6aa8f8ce358b6c565ccad28b3",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ulgwld/talking_with_gemma_4_31b",
-   "title_hash": "c15f76e21a2620d8aa5be63ead30b655",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025",
-   "title_hash": "cb6293c7de3756f226815184de05ad85",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Google’s AI buildout drove 37% increase in electricity use in 2025",
-   "source": "Ars Technica AI",
-   "published": "2026-07-02T11:15:49+00:00",
-   "summary": "Google reports 37 percent increase in electricity consumption driven by AI infrastructure buildout in 2025, amid efforts to balance emissions with clean energy.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2246163658-500x500.jpg"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42390385?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "c95d49b3fc6106f14bda99df6de241ac",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42390115?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "6bbd2bf34977f10ca1ca6d66e2fbce36",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Awareness, Educational Needs, and Curriculum Preferences Regarding AI and Medical Big Data Education Among Clinical Medicine Undergraduates: Cross-Sectional Survey Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "Survey of clinical medicine undergraduates reveals limited AI familiarity and identifies curriculum needs and student preferences for AI and medical big data education.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42390095?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "4b9c854837d25f67c99bc520e274cc86",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42389893?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "ae46daa7cb3e40748ec4c4ebbc2c527f",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42389691?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "75704548a0f524e1496432e4276071e8",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Artificial intelligence in veterinary education: self-perceived knowledge, use, and attitudes among veterinary students in Spain and Portugal",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "Survey of veterinary students in Spain and Portugal assesses self-perceived knowledge, use, and attitudes toward AI and generative AI in veterinary education.",
-   "category": "medical_education",
-   "score": 2.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42389598?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "66c9046cecdaeeab57510d85045810c6",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42388626?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "a349674b2bd6955aeeadf3a17048c33c",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Knowledge localization is associated with higher performance of domestic large language models in a Chinese radiation oncology examination",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "Study demonstrates that large language models with domain-specific knowledge localization outperform standard models on Chinese radiation oncology board examination questions.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42388510?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "695a65d63d0675b7b6222a59cb139857",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42388342?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "6e75826d3a7002428a86acb5b32f4775",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42387641?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "9bb282fa81bcb9a5f79b64f2f494dc71",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "AI In Leukemia Diagnostics: Complementing the Pathologist's Role",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "Review discusses artificial intelligence applications across leukemia diagnostic stages, from morphology to molecular analysis, and pathologist integration.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42387330?fc=20260609215449&ff=20260702141946&v=2.20.0",
-   "title_hash": "4b200f17020eec48b9e64374f4de34d8",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "User Acceptance of an AI-Powered Medical History-Taking Training System Among Undergraduate Medical Students: Mixed Methods Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "Mixed methods study evaluates undergraduate medical student acceptance and interaction with an AI-powered system for training in patient history-taking.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ulb4nx/palantir_ceo_rages_against_closed_models",
-   "title_hash": "07388747071b7c8df7719bca38c09878",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02940-8",
-   "title_hash": "9a982672619cd51a931e311e38f512f9",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02949-z",
-   "title_hash": "3d8ceff4767cb9049670bace567e6165",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02942-6",
-   "title_hash": "e48e591a5a5e116086e9a5262ed08170",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Physicians and artificial intelligence diverge in evaluating large language models on real clinical cases",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-02T00:00:00+00:00",
-   "summary": "Study finds divergence between physician and AI model evaluations on clinical reasoning tasks, raising questions about readiness for health AI deployment.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04500-9",
-   "title_hash": "683944934c3d1f7e9c038d07368955ff",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": true,
-   "title": "Why high scores do not mean application readiness for health AI",
-   "source": "Nature Medicine",
-   "published": "2026-07-02T00:00:00+00:00",
-   "summary": "Nature Medicine article examines why high benchmark scores alone do not predict readiness of large language models for real-world health AI application.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04500-9/MediaObjects/41591_2026_4500_Fig1_HTML.png"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Qw8qVSZEWBc",
-   "title_hash": "eebd6a1603a9bde569e14896e837d065",
-   "first_seen": "2026-07-02T18:19:45.936017+00:00",
-   "kept": false
-  },
-  {
    "url": "https://mededu.jmir.org/2026/1/e98949",
    "title_hash": "2822984860b4e24d0f1f17005cea123d",
    "first_seen": "2026-07-02T23:40:00.982999+00:00",
@@ -31848,6 +31600,62 @@
    "first_seen": "2026-08-31T16:10:49.485157+00:00",
    "kept": false,
    "reason": "vendor marketing from the product's own company"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit",
+   "title_hash": "47b90fd2a5782905b784b2837ea5db1a",
+   "first_seen": "2026-08-31T21:29:14.208308+00:00",
+   "kept": false,
+   "reason": "legal gossip and litigation coverage without technical substance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai",
+   "title_hash": "d685580c967071be75bb2a8717e6e3c1",
+   "first_seen": "2026-08-31T21:29:14.208308+00:00",
+   "kept": false,
+   "reason": "security incident reporting without primary details; drama framing overshadows technical content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w39i6r/deepseekaideepseekv4flashvisionexp_hugging_face",
+   "title_hash": "291da6c3d43ac9fc6f1994db3b4fb45b",
+   "first_seen": "2026-08-31T21:29:14.208308+00:00",
+   "kept": false,
+   "reason": "minor model release notes with no substantive description"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1fpxi/terminal_bench_40_just_dropped_glm53_is_at_the",
+   "title_hash": "c7278ab14202a2f991180fb41a2a13d8",
+   "first_seen": "2026-08-31T21:29:14.208308+00:00",
+   "kept": true,
+   "title": "Terminal Bench 4.0 just dropped, GLM-5.3 is at the same level as Fable 5, accounting for margin of error",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-08-29T07:17:09+00:00",
+   "summary": "Terminal Bench 4.0 released with updated leaderboard showing GLM-5.3 and Fable 5 at comparable performance levels; benchmark includes focus on rapid iteration to address saturation.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://preview.redd.it/49j32fxfk9mh1.png?width=640&crop=smart&auto=webp&s=8b4fef10ec92ba49c55974de956673941355815d",
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RC-1c9VQjBE",
+   "title_hash": "557b7840fb77de0bea38c23503b88218",
+   "first_seen": "2026-08-31T21:29:14.208308+00:00",
+   "kept": true,
+   "title": "Tencent HY4 Is INSANE, Is THIS Tencent’s Next Frontier Model?",
+   "source": "Bijan Bowen",
+   "published": "2026-08-31T16:17:18+00:00",
+   "summary": "Hands-on testing of Tencent HY4 across coding, browser OS, and game development tasks, demonstrating model capabilities on practical applications.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/RC-1c9VQjBE/hqdefault.jpg",
+   "display_title": "Tencent HY4 hands-on testing across coding and application tasks"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Navigate-the-Next-Wave-of-AI-Competition-e3o59rt",
+   "title_hash": "f7b0614ff1c97378e3ec3f05c89a1d62",
+   "first_seen": "2026-08-31T21:29:14.208308+00:00",
+   "kept": false,
+   "reason": "daily news show recap with no standout educational substance for medical educators"
   }
  ],
  "digests": [

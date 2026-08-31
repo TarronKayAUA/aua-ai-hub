@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="industry-and-policy">
@@ -95,6 +95,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026-08-29/IMG_7725.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1w1fpxi/terminal_bench_40_just_dropped_glm53_is_at_the">Terminal Bench 4.0 just dropped, GLM-5.3 is at the same level as Fable 5, accounting for margin of error</a>
+    <p class="news-card-summary">Terminal Bench 4.0 released with updated leaderboard showing GLM-5.3 and Fable 5 at comparable performance levels; benchmark includes focus on rapid iteration to address saturation.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/49j32fxfk9mh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8b4fef10ec92ba49c55974de956673941355815d" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 28, 2026</span></div>
@@ -124,13 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode">Breaking Claude Code Opus 5 Auto Mode</a>
     <p class="news-card-summary">Security researcher Johann Rehberger discovered a prompt injection attack against Anthropic Claude Code&#x27;s auto mode, a default protection mechanism.</p>
   </div>
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world">Anthropic&#x27;s new hardware standard lets AI agents control the physical world</a>
-    <p class="news-card-summary">Anthropic released a standardized hardware interface specification enabling AI agents to control and communicate with physical devices.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mhsdemo-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

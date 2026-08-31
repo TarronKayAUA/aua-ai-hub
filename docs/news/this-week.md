@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 28 items"
+??? abstract "Show the 27 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (28)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (27)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -214,14 +214,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Updated multimodal large language models performed below human surgeons on a Japanese surgical specialty exam, with particular weakness on image-based questions.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies">How to encourage smarter AI use in the classroom</a>
-        <p class="news-card-summary">MIT Technology Review examines strategies for encouraging thoughtful use of AI chatbots in educational settings rather than bypassing learning.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/8947cf02-f42b-04bb-03ce-c05c80e44d46.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## Clinical Practice
@@ -232,9 +224,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 21 items"
+??? abstract "Show the 19 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (21)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -370,20 +362,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Multimodal data integration framework derives reproducible clinical subphenotypes for sepsis, enabling more precise patient stratification.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85822">A Simplified Metric to Streamline Between-Group Fairness Assessment for Predictive Models: Algorithm Development and Evaluation Study</a>
-        <p class="news-card-summary">Study develops a simplified metric to assess fairness in clinical prediction models, addressing the practical challenge of evaluating discrimination across patient groups.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03169-1">Generative versus discriminative diagnostic performance of large multimodal models in intracranial and spinal neuroradiology</a>
-        <p class="news-card-summary">Peer-reviewed study compares generative and discriminative approaches in large multimodal models for neuroradiology diagnosis in intracranial and spinal imaging.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -396,7 +374,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -471,6 +449,14 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Tencent released Hy4 Preview, an open-weights large language model with 770B total parameters, 49B active, and 1M token context window.</p>
       </div>
       <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026-08-29/IMG_7725.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 29, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1w1fpxi/terminal_bench_40_just_dropped_glm53_is_at_the">Terminal Bench 4.0 just dropped, GLM-5.3 is at the same level as Fable 5, accounting for margin of error</a>
+        <p class="news-card-summary">Terminal Bench 4.0 released with updated leaderboard showing GLM-5.3 and Fable 5 at comparable performance levels; benchmark includes focus on rapid iteration to address saturation.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/49j32fxfk9mh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8b4fef10ec92ba49c55974de956673941355815d" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -787,14 +773,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2211086231-500x500-1787606429.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://jack-clark.net/2026/08/24/import-ai-470-no-rights-for-machines-automating-environment-generation-with-spade-and-building-better-gpu-kernels-with-hawkeye">Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye</a>
-        <p class="news-card-summary">Import AI newsletter digest covers research on AI progress acceleration, environment generation automation, and GPU kernel optimization.</p>
-      </div>
-      <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/08/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-Fauq8x.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 23, 2026</span></div>
@@ -809,9 +787,15 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 10 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=RC-1c9VQjBE" target="_blank" rel="noopener" title="Tencent HY4 Is INSANE, Is THIS Tencent’s Next Frontier Model?">
+      <img src="https://i3.ytimg.com/vi/RC-1c9VQjBE/hqdefault.jpg" alt="Video: Tencent HY4 hands-on testing across coding and application tasks" loading="lazy">
+      <span class="video-card-title">Tencent HY4 hands-on testing across coding and application tasks</span>
+      <span class="video-card-meta">Bijan Bowen, August 31, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Tencent HY4 across coding, browser OS, and game development tasks, demonstrating model capabilities on practical applications.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=4wjHNgMLeyY" target="_blank" rel="noopener" title="Ox Alpha reveal, realtime Minimax, Qwen Next, Hy4, robot olympics: AI NEWS">
       <img src="https://i1.ytimg.com/vi/4wjHNgMLeyY/hqdefault.jpg" alt="Video: Recent model releases: GLM, Qwen, Minimax, and Hy4" loading="lazy">
       <span class="video-card-title">Recent model releases: GLM, Qwen, Minimax, and Hy4</span>

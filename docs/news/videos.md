@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=RC-1c9VQjBE" target="_blank" rel="noopener" title="Tencent HY4 Is INSANE, Is THIS Tencent’s Next Frontier Model?">
+  <img src="https://i3.ytimg.com/vi/RC-1c9VQjBE/hqdefault.jpg" alt="Video: Tencent HY4 hands-on testing across coding and application tasks" loading="lazy">
+  <span class="video-card-title">Tencent HY4 hands-on testing across coding and application tasks</span>
+  <span class="video-card-meta">Bijan Bowen, August 31, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Tencent HY4 across coding, browser OS, and game development tasks, demonstrating model capabilities on practical applications.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=4wjHNgMLeyY" target="_blank" rel="noopener" title="Ox Alpha reveal, realtime Minimax, Qwen Next, Hy4, robot olympics: AI NEWS">
   <img src="https://i1.ytimg.com/vi/4wjHNgMLeyY/hqdefault.jpg" alt="Video: Recent model releases: GLM, Qwen, Minimax, and Hy4" loading="lazy">
   <span class="video-card-title">Recent model releases: GLM, Qwen, Minimax, and Hy4</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing Qwen 3.8 27B local model performance</span>
   <span class="video-card-meta">Bijan Bowen, August 14, 2026</span>
   <span class="video-card-desc">Hands-on testing and benchmark comparison of Qwen 3.8 27B local model across language, coding, and game tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=yMoUwyyTe3E" target="_blank" rel="noopener" title="GLM 5.3 Is INSANE! The BEST Open Source Model EVER? BEATS MYTHOS? (Fully Tested)">
-  <img src="https://i2.ytimg.com/vi/yMoUwyyTe3E/hqdefault.jpg" alt="Video: GLM 5.3 benchmarking and testing against open-source models" loading="lazy">
-  <span class="video-card-title">GLM 5.3 benchmarking and testing against open-source models</span>
-  <span class="video-card-meta">WorldofAI, August 14, 2026</span>
-  <span class="video-card-desc">Benchmarking and hands-on testing of GLM 5.3 against other open-weights models including Mythos.</span>
 </a>
 </div>
 
