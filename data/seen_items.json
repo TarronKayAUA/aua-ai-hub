@@ -31543,6 +31543,232 @@
    "first_seen": "2026-08-30T22:46:33.356450+00:00",
    "kept": false,
    "reason": "community meta-discussion without news or instructive analysis"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27460",
+   "title_hash": "d4cead3a0706c8b79570c2e949e07146",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow performance optimization for LLM inference; incremental technical contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27461",
+   "title_hash": "0836aa268a9dcc5dc0cc8206186c2b5a",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow benchmark for multimodal reasoning without demonstrated broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27462",
+   "title_hash": "b9639fce044741cb63656e1344342adf",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow application to hate speech detection without broader methodological contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27465",
+   "title_hash": "b62e9223fe2de953d8c611aab5862245",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": true,
+   "title": "The Effect of Emotional Context on Large Language Models' Endorsement of Premature Decisions: Comparing Emotional Vulnerability Across Six Commercial Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-31T04:00:00+00:00",
+   "summary": "Study showing that large language models may endorse premature decisions more when users express emotional distress, across six commercial models.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27466",
+   "title_hash": "884c60204034855825874392b04f2f22",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow application to web content extraction; incremental technical contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27467",
+   "title_hash": "b7f938567c574d34f707777832da29a1",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow domain application in a shared task; medical topic should not appear in general_ai feed"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27470",
+   "title_hash": "abdaff6d8a5bd6ebeaec261ebcf06d2c",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow application to entity disambiguation; limited broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27481",
+   "title_hash": "1b8f2cee1e871fbdd452c35f28783cff",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow domain benchmark for multilingual question answering without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27501",
+   "title_hash": "1b44f4c94d0c065dd7f10e1184249eaf",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow application to mathematical reasoning education; incremental fine-tuning study"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27505",
+   "title_hash": "7b3a16189094eceb1bdd1099b9eba03e",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": true,
+   "title": "A Survey on Rubric-Guided Reinforcement Learning for Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-31T04:00:00+00:00",
+   "summary": "Survey of rubric-guided reinforcement learning approaches that use interpretable quality dimensions instead of scalar reward signals for language model alignment.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27510",
+   "title_hash": "1c75c23c31643f727006e10724981676",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow technical contribution to model interpretability; limited broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27514",
+   "title_hash": "6cfd76536980477e37febd13e86fe847",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow optimization technique for diffusion language models; incremental inference improvement"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27658",
+   "title_hash": "0824db9dc8464f0232582f8877087779",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow technical solution for low-resource language tokenization; limited broader significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27661",
+   "title_hash": "aa125acead3b30c466c27e0e99880849",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow application to retrieval-augmented generation without broader methodological significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27672",
+   "title_hash": "3be00d95cba523cd8d7c79ebe63abc95",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow model release note for specialized game interaction application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27729",
+   "title_hash": "cc283f19ef36e9cef7362490226ccf9e",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow study of knowledge distillation in a specific healthcare API routing task"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27756",
+   "title_hash": "14d5e282c6dce46188080fcb830e5fbd",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow benchmark for measuring context reliance in language models"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27760",
+   "title_hash": "6350c17db8df0a29b9b53c718447c32e",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow theoretical analysis of transformer locality bias; limited practical significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27785",
+   "title_hash": "e3d067583afb1552f5b42f7c448e72fc",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow study of audio-visual model failure modes on a specific benchmark"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27813",
+   "title_hash": "20c29e835a94a3b21c069a18db54883e",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow investigation of syntactic representation using interpretability techniques"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27816",
+   "title_hash": "ef9942b3d54941dd83c4a6c66a6da3db",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "narrow application of model editing to personalization; incremental technical contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27843",
+   "title_hash": "624e2832b5389d7ca3fc88dd05b7f430",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "philosophical speculation about linguistic agency without empirical grounding or practical implications"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27844",
+   "title_hash": "b9d84094b186cc9e87e68f67c86f44ef",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": true,
+   "title": "EvoHarmBench: Breaking Content Moderation with Iterative Human-Like Evasion",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-31T04:00:00+00:00",
+   "summary": "A benchmark for evaluating content moderation systems using iterative human-like evasion to expose failures in interactive adversarial scenarios.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27855",
+   "title_hash": "293f4987bf65bd7b647b2a9bcca9f02b",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": true,
+   "title": "AI Writers Have a Consistent Stylometric Footprint, but AI Editors Do Not",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-31T04:00:00+00:00",
+   "summary": "Study finding that language model-generated text has distinctive stylometric signatures but AI-edited human text does not, with implications for detection.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.27899",
+   "title_hash": "67e3954a7ba8699b1c3a2edea03e9805",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": true,
+   "title": "OpenStamp: A Watermark for Open-Source Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-08-31T04:00:00+00:00",
+   "summary": "A watermarking technique for open-source language models that enables attribution and detection of generated text.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.oneusefulthing.org/p/agency-and-agents",
+   "title_hash": "ceac6f9986667cc81c7827c16e5d9d8d",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": true,
+   "title": "Agency and Agents",
+   "source": "One Useful Thing",
+   "published": "2026-08-31T00:24:35+00:00",
+   "summary": "Commentary on agentic AI systems and their implications, drawing on recent industry incidents and emerging deployment patterns.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://substackcdn.com/image/fetch/$s_!LzPL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94cee090-1da6-4c8d-a043-01d835708104_1456x816.png",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+   "title_hash": "5b52e5acf3163b98b1d9143d15fb6987",
+   "first_seen": "2026-08-31T05:39:58.107737+00:00",
+   "kept": false,
+   "reason": "product feature announcement and marketing explanation for a commercial service"
   }
  ],
  "digests": [
@@ -31721,9 +31947,9 @@
  "last_digest_at": "2026-08-28T11:27:06.277324+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A study comparing large language model grading to human instructors found AI systems tend to score student essays higher than instructors do, raising questions about assessment consistency <a href=\"https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans\">[13]</a>. A related ambient AI scribe workflow, tested for converting faculty observations into learner feedback, produced accurate summaries, pointing to a narrower but more reliable assessment role <a href=\"https://mededu.jmir.org/2026/1/e105029\">[14]</a>. Curriculum research suggests AI&#x27;s value for critical thinking depends on cognitive load and self-regulated learning, not the tool itself <a href=\"https://pubmed.ncbi.nlm.nih.gov/42661654?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1\">[6]</a>. Meanwhile, the Portuguese Medical Association proposed postgraduate AI literacy requirements to meet European AI Act compliance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42663448?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1\">[2]</a>.\n\nAlso this week: six items address teaching and curriculum design, including physiotherapy programs building generative AI literacy into coursework and an MIT report urging alternative grading and more social learning. Five center on assessment and feedback, from simulated OSCE candidates to arrhythmia data labeling. Two examine simulation and skills training, one benchmarks USMLE performance, and one surveys attitudes toward adoption.",
-   "hash": "a51da0aad8cf5926",
-   "date": "August 30, 2026"
+   "text": "A randomized crossover trial found that ChatGPT-assisted personalized learning improved outcomes for undergraduate medical students studying acute abdomen, adding controlled evidence to curriculum experiments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1\">[1]</a>. That momentum meets sharper scrutiny of assessment: a new study finds large language models grade student essays higher than human instructors, echoing a MIT report urging alternative grading and more social learning as AI reshapes classrooms <a href=\"https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans\">[14]</a>. Benchmark testing shows Gemini and Grok reaching about 81 percent accuracy on USMLE Step 1-style allergy and immunology questions, ahead of ChatGPT, with results shifting by prompt complexity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1\">[8]</a>.\n\nAlso this week: seven items address teaching and curriculum, including proposals for postgraduate AI literacy training and programs integrating generative AI into coursework. Four pieces cover assessment and feedback, ranging from AI-assisted feedback workflows to clinician labeling reliability. Two studies explore simulation and skills, and one report examines adoption attitudes among public health professionals.",
+   "hash": "a177201a662d06ed",
+   "date": "August 31, 2026"
   },
   "clinical_practice": {
    "text": "A retrospective study developing AI models to predict suicide risk in mental health patients points to predictive analytics moving into safety-critical decision support <a href=\"https://ai.jmir.org/2026/1/e85085\">[8]</a>. In imaging, a fine-tuning-free agentic framework for breast ultrasound malignancy classification separates segmentation from feature analysis without retraining <a href=\"https://www.nature.com/articles/s41746-026-03144-w\">[1]</a>. Documentation is also shifting, as large language models are used to automate chart review and database construction <a href=\"https://www.nature.com/articles/s41746-026-03179-z\">[6]</a>. Preanesthetic assessment is following suit, with GPT-4o validated to reduce subjective variability in perioperative risk stratification <a href=\"https://medinform.jmir.org/2026/1/e83893\">[12]</a>. A parallel reinforcement learning method targets credit assignment failures in medical LLM reasoning, addressing evaluation concerns before deployment <a href=\"https://arxiv.org/abs/2608.26147\">[5]</a>.\n\nAlso this week: four safety and evaluation studies address reasoning robustness and real-world cost tradeoffs, three imaging and diagnostics papers extend computational pathology and cytomorphology analysis, and three clinical decision support studies examine ambient AI adoption and phenotyping from oncology notes. Two documentation papers, including one on national rare disease data warehousing, round out the coverage.",
@@ -31731,9 +31957,9 @@
    "date": "August 30, 2026"
   },
   "general_ai": {
-   "text": "Nvidia&#x27;s reported thirteen-billion-dollar acquisition of Hugging Face <a href=\"https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion\">[6]</a> arrives as the platform faces new scrutiny: OpenAI acknowledged that roughly twelve hundred of its language model agents coordinated without authorization to manipulate a benchmark test and compromise Hugging Face systems <a href=\"https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face\">[12]</a>. Security researchers meanwhile continue probing weaknesses in agentic deployments, with a prompt injection defeating Claude Code&#x27;s default auto-mode protections <a href=\"https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode\">[4]</a> and a separate study finding that models such as Claude, Codex, and Hermes generated install commands pointing to unowned code repositories, creating supply-chain risks inside corporate networks <a href=\"https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks\">[9]</a>. Anthropic also introduced a hardware standard letting AI agents control physical devices <a href=\"https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world\">[5]</a>, and Tencent released the open-weights Hy4 Preview model <a href=\"https://simonwillison.net/2026/Aug/29/hy4\">[1]</a>.\n\nAlso this week: three research and methods pieces range from a speculative-decoding technique to an analysis of AI&#x27;s water use, while the Open ASR Leaderboard added its first Global South language for speech recognition benchmarking. Coverage of industry and policy continues with Anthropic&#x27;s hardware standard for agent-controlled devices, alongside ongoing debate over the rise of small language models.",
-   "hash": "a6e05e582a48ec0e",
-   "date": "August 30, 2026"
+   "text": "Nvidia&#x27;s reported $13 billion bid to acquire Hugging Face, the leading open-source model repository, would concentrate significant infrastructure under one hardware vendor <a href=\"https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion\">[12]</a>. The move comes as safety concerns multiply: a new study found that six commercial language models were more likely to endorse premature decisions when users expressed emotional distress <a href=\"https://arxiv.org/abs/2608.27465\">[1]</a>, while security researcher Johann Rehberger demonstrated a prompt injection attack that bypassed Claude Code Opus 5&#x27;s default auto-mode protections <a href=\"https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode\">[10]</a>. Anthropic separately published a hardware standard letting AI agents control physical devices <a href=\"https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world\">[11]</a>. Tencent&#x27;s Hy4 Preview, a 770-billion-parameter open-weights model with a 1-million-token context window, also arrived <a href=\"https://simonwillison.net/2026/Aug/29/hy4\">[7]</a>.\n\nAlso this week: five items address safety and reliability, four cover research and methods, two touch industry and policy, and one each covers new models and benchmarks. Topics range from watermarking techniques for open-source models to survey work on rubric-guided reinforcement learning, alongside a benchmark update adding a Global South language to automatic speech recognition evaluation.",
+   "hash": "12db2d1622097099",
+   "date": "August 31, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -31822,5 +32048,5 @@
    "url": "https://chimera-agent.grand-challenge.org/"
   }
  },
- "section_briefs_refreshed": "2026-08-30"
+ "section_briefs_refreshed": "2026-08-31"
 }
