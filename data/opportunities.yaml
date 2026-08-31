@@ -255,3 +255,16 @@
   support: "Organizer-stated: 1,500 euros in prizes per submission round (first 750, second 500, third 250), plus a 500 US dollar award for the most innovative agentic AI solution"
   relevance: Agentic multimodal AI challenge across the full prostate cancer patient journey, from MRI-based diagnosis through biopsy risk stratification to pathology prediction, run with MICCAI 2026.
   verified: 2026-08-24
+
+# Auto-verified 2026-08-31 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "Nebius x NVIDIA Global AI Hackathon"
+  url: https://nebiusglobalaihackathon.devpost.com/
+  organizer: "Nebius and NVIDIA"
+  type: hackathon
+  format: virtual
+  eligibility: "Individuals above the legal age of majority in their country of residence, from all countries/territories excluding standard exceptions"
+  deadline: 2026-10-30
+  end_date: 2026-10-30
+  support: "Organizer-stated: $50,000+ in prizes including $20,000 grand prize, $10,000 2nd place, $6,000 3rd place, NVIDIA Jetson Orin Nano devices, and other awards"
+  relevance: "Global online AI hackathon with substantial prizes and beginner-friendly focus, accessible to international medical students and faculty seeking general AI building skills."
+  verified: 2026-08-31
