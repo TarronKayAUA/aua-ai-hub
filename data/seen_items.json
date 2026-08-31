@@ -1,85 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.nature.com/articles/s41591-026-04504-5",
-   "title_hash": "7588232e01ec6a25fa747a8af5748963",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ul0cx9/i_extended_gemma431b_to_44b_88_layers_since",
-   "title_hash": "1027ed0f5332372cedee31646aa42b19",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42386900?fc=20260609215449&ff=20260702062112&v=2.20.0",
-   "title_hash": "73c7bfbe3398d59e3ffa0da397008bb3",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42385724?fc=20260609215449&ff=20260702062112&v=2.20.0",
-   "title_hash": "8913a50467482247687f187660e796a2",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42385587?fc=20260609215449&ff=20260702062112&v=2.20.0",
-   "title_hash": "3752390b728999fee734795086b3b308",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": true,
-   "title": "Closing the Feedback Loop: The Feed Protocol for AI-Driven Curricular Reform in Surgical Residency",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-01T10:00:00+00:00",
-   "summary": "Study describes the FEED Protocol, a method using artificial intelligence to rapidly collect and act on feedback for improving surgical residency curricula.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42384915?fc=20260609215449&ff=20260702062112&v=2.20.0",
-   "title_hash": "3a92bc1179eeb531993c88bcf1dc1b41",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": true,
-   "title": "Toward a global ecosystem for health professions education: harnessing open educational resources and generative AI with shared governance",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-01T10:00:00+00:00",
-   "summary": "Article explores using open educational resources and generative AI with shared governance to address the global shortage of health professions educators.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=W7k0Lcs5bZk",
-   "title_hash": "45d13cd10613d9950cf4788cd3c55b3b",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=GPxUhrdDbKE",
-   "title_hash": "9166cb4fcebc6b8c9be28d02c8a6fc26",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Fable-is-Back-Heres-What-You-Should-Try-First-e3lhm3n",
-   "title_hash": "520ba526f6a233533e679a1316045725",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://share.transistor.fm/s/6d8dad5f",
-   "title_hash": "4d29a8b9c519c983705c59cf867ae3e5",
-   "first_seen": "2026-07-02T10:21:11.901631+00:00",
-   "kept": true,
-   "title": "Image Generation and Visual Intelligence with Black Forest Labs",
-   "source": "Practical AI",
-   "published": "2026-07-02T09:00:00+00:00",
-   "summary": "Discussion of the evolution of AI image generation capabilities and visual intelligence models with Black Forest Labs.",
-   "category": "podcasts",
-   "score": 2.0,
-   "thumbnail": "https://img.transistorcdn.com/Lm2mEDqafZACT7FMC2M7-KVb80vV2pNbxRXD28BQVg0/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9jYWRm/N2UzOWQ2NmRjOTll/NTBiMDEwMjc1ZjVm/YjNlYy5wbmc.jpg"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate",
    "title_hash": "87a4e369cb93a7f41501547ad0dfb424",
    "first_seen": "2026-07-02T18:19:45.936017+00:00",
@@ -31769,6 +31690,164 @@
    "first_seen": "2026-08-31T05:39:58.107737+00:00",
    "kept": false,
    "reason": "product feature announcement and marketing explanation for a commercial service"
+  },
+  {
+   "url": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+   "title_hash": "a3e3dd958ad852e15cf4fe3669b523f2",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": true,
+   "title": "Debian won’t ban AI code from its Linux distribution",
+   "source": "The Verge AI",
+   "published": "2026-08-31T15:34:58+00:00",
+   "summary": "Debian's new policy permits developers to use AI tools in contributions with no special restrictions beyond existing standards, recognizing productivity benefits.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK414_AI_CVIRGINIA_I__0009_7.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/986661/ny-gov-kathy-hochul-ai-data-centers-ban-3d-printed-guns-flock-cameras",
+   "title_hash": "c55cf6e0eaa4e22977b447dabbecf6d8",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules",
+   "title_hash": "420cc7d739bc4b7cc48a7719cd2d4965",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": true,
+   "title": "ChatGPT and Reddit now face EU's toughest online safety rules",
+   "source": "Ars Technica AI",
+   "published": "2026-08-31T13:41:40+00:00",
+   "summary": "European Union classified ChatGPT as a very large online search engine under the Digital Services Act, imposing stricter regulatory obligations on content moderation and risk mitigation.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2022/03/getty-eu-flag-500x500.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+   "title_hash": "c110547c0a2a280c5755303611c09302",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+   "title_hash": "a38e0117d302ff2dbb2cae17d09df625",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arstechnica.com/gaming/2026/08/pockets-ai-made-my-game-ideas-real-now-meta-controls-the-results",
+   "title_hash": "e9652ed4f48464dc9ee3d3a37b40dc32",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/statins-in-the-elderly-the-staree",
+   "title_hash": "b274f296f2d55755fb34e7182b82abc4",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://medicalfuturist.com/5-things-that-will-define-the-future-of-pharmas-medical-affairs",
+   "title_hash": "38824267c7351b71aa8551d2630379aa",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "listicle without substantive analysis"
+  },
+  {
+   "url": "https://medicalfuturist.com/data-annotation",
+   "title_hash": "9fc9ff9ca6200810af7a6d5e50526efc",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": true,
+   "title": "Data Annotators: The Unsung Heroes Of Artificial Intelligence Development",
+   "source": "The Medical Futurist blog",
+   "published": "2026-08-31T07:17:48+00:00",
+   "summary": "Article examines the role of data annotators in training healthcare AI systems and the labor practices underlying machine learning model development.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://cdn.medicalfuturist.com/wp-content/uploads/2019/04/081_data_annotator-scaled.png",
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03146-8",
+   "title_hash": "91aa0de95bda96e75198c03ab0368077",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03168-2",
+   "title_hash": "faeb121ed012a47db16437c0db038d56",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": true,
+   "title": "Artificial intelligence tools in sepsis prediction: a systematic review and meta-analysis",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-31T00:00:00+00:00",
+   "summary": "Systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on performance and clinical applicability.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03082-7",
+   "title_hash": "d653d925933917e9b545af4cfc8932e8",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": true,
+   "title": "Evaluating foundation models on official German medical licensing examinations: Implications for high-stakes assessment and AI-assisted medical education",
+   "source": "npj Digital Medicine",
+   "published": "2026-08-31T00:00:00+00:00",
+   "summary": "Foundation models evaluated on German medical licensing examinations show varying performance with implications for high-stakes assessment design and AI-assisted medical education.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04623-z",
+   "title_hash": "182927f63d5eab73c2746c3b65cf77d5",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model",
+   "title_hash": "3cca2498e4b66adfa7c7a6007755ce47",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": true,
+   "title": "How to build a diffusion language model",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-08-30T23:41:32+00:00",
+   "summary": "Tutorial explains the technical approach to building diffusion models applied to language generation, covering architecture and training methods.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://sander.ai/2026/08/24/continuous-dlms.html",
+   "title_hash": "b835051114ccc6c469941c6fc6a600c4",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=CWkmZX3yqsQ",
+   "title_hash": "ed3e6ff57d484fa303dcdb1ee0044da3",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=c57vAe-mMLo",
+   "title_hash": "cd8673f8db284a22e57ae0fbb0c3f720",
+   "first_seen": "2026-08-31T16:10:49.485157+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company"
   }
  ],
  "digests": [

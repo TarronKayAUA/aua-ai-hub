@@ -21,6 +21,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03168-2">Artificial intelligence tools in sepsis prediction: a systematic review and meta-analysis</a>
+    <p class="news-card-summary">Systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on performance and clinical applicability.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 25, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92843">Reflection- and Curriculum-Based Instruction Tuning for Diabetes-Specialized Large Language Models: Model Development and Evaluation Study</a>
     <p class="news-card-summary">Study describes instruction tuning methods for a diabetes-specialized large language model to improve glycemic interpretation, dietary guidance, and patient education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e95964">Automating Motivational Interviewing Coding in Adolescent Substance Use Prevention: Human-AI Agreement Study</a>
-    <p class="news-card-summary">Study evaluates large language model agreement with human coders for automating motivational interviewing technique coding in substance use prevention.</p>
   </div>
 </div>
 </div>

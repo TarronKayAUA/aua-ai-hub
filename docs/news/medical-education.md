@@ -18,9 +18,24 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://medicalfuturist.com/data-annotation">Data Annotators: The Unsung Heroes Of Artificial Intelligence Development</a>
+    <p class="news-card-summary">Article examines the role of data annotators in training healthcare AI systems and the labor practices underlying machine learning model development.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2019/04/081_data_annotator-scaled.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03082-7">Evaluating foundation models on official German medical licensing examinations: Implications for high-stakes assessment and AI-assisted medical education</a>
+    <p class="news-card-summary">Foundation models evaluated on German medical licensing examinations show varying performance with implications for high-stakes assessment design and AI-assisted medical education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 30, 2026</span></div>
@@ -111,21 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42656949?fc=20260609215449&amp;ff=20260827181741&amp;v=2.20.1">From Living Systematic Reviews to Fully AI-Driven Reviews</a>
     <p class="news-card-summary">Analysis of how artificial intelligence can automate and improve systematic reviews in medical research, addressing manual workload and timeliness challenges.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">AI Tends to Mark Students’ Essays Higher Than Humans, Study Shows</a>
-    <p class="news-card-summary">Study showing large language models tend to grade student essays higher than human instructors, raising concerns about reliable assessment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-08/GettyImages-815740942.jpeg?itok=A3aBzw3r" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e105029">Documentation Quality and Educational Value in AI-Assisted Feedback</a>
-    <p class="news-card-summary">Randomized evaluation of an ambient AI scribe workflow for converting faculty observations into written learner feedback, with safety review of AI summaries for accuracy.</p>
   </div>
 </div>
 </div>

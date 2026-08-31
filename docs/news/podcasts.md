@@ -125,10 +125,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">AI in Education Podcast, July 2, 2026</span>
   <span class="video-card-desc">Ray and Dan survey recent research on artificial intelligence in education, summarizing findings for educators and students.</span>
 </a>
-<a class="video-card" href="https://share.transistor.fm/s/6d8dad5f" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/Lm2mEDqafZACT7FMC2M7-KVb80vV2pNbxRXD28BQVg0/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9jYWRm/N2UzOWQ2NmRjOTll/NTBiMDEwMjc1ZjVm/YjNlYy5wbmc.jpg" alt="Podcast: Image Generation and Visual Intelligence with Black Forest Labs" loading="lazy">
-  <span class="video-card-title">Image Generation and Visual Intelligence with Black Forest Labs</span>
-  <span class="video-card-meta">Practical AI, July 2, 2026</span>
-  <span class="video-card-desc">Discussion of the evolution of AI image generation capabilities and visual intelligence models with Black Forest Labs.</span>
-</a>
 </div>

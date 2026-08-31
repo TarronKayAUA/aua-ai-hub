@@ -21,6 +21,22 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy">Debian won’t ban AI code from its Linux distribution</a>
+    <p class="news-card-summary">Debian&#x27;s new policy permits developers to use AI tools in contributions with no special restrictions beyond existing standards, recognizing productivity benefits.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK414_AI_CVIRGINIA_I__0009_7.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules">ChatGPT and Reddit now face EU&#x27;s toughest online safety rules</a>
+    <p class="news-card-summary">European Union classified ChatGPT as a very large online search engine under the Digital Services Act, imposing stricter regulatory obligations on content moderation and risk mitigation.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2022/03/getty-eu-flag-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
@@ -63,6 +79,13 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Commentary on agentic AI systems and their implications, drawing on recent industry incidents and emerging deployment patterns.</p>
   </div>
   <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!LzPL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94cee090-1da6-4c8d-a043-01d835708104_1456x816.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 30, 2026</span></div>
+    <a class="news-card-title" href="https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model">How to build a diffusion language model</a>
+    <p class="news-card-summary">Tutorial explains the technical approach to building diffusion models applied to language generation, covering architecture and training methods.</p>
+  </div>
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -109,28 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Anthropic released a standardized hardware interface specification enabling AI agents to control and communicate with physical devices.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mhsdemo-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion">Report: Nvidia to acquire AI model repository Hugging Face for $13 billion</a>
-    <p class="news-card-summary">Nvidia is reportedly acquiring Hugging Face, a major open-source model repository, for thirteen billion dollars.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2024/09/hugging_face_3-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1w01y1f/with_huggingface_nvidia_is_also_acquiring">With HuggingFace, Nvidia is also acquiring llama.cpp and the team behind it</a>
-    <p class="news-card-summary">The reported Nvidia-Hugging Face acquisition would transfer control of llama.cpp and its development team to Nvidia.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://www.anthropic.com/news/model-hardware-standard-research-preview">Previewing the Model Hardware Standard</a>
-    <p class="news-card-summary">Anthropic published a research preview of a model hardware standard for improving efficiency and compatibility across hardware platforms.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.sanity.io/images/4zrzovbb/website/5008271abbababe59f4fbb01998697f7dd0b5b60-1280x720.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

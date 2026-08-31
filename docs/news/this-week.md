@@ -20,8 +20,23 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 28 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (28)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (28)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://medicalfuturist.com/data-annotation">Data Annotators: The Unsung Heroes Of Artificial Intelligence Development</a>
+        <p class="news-card-summary">Article examines the role of data annotators in training healthcare AI systems and the labor practices underlying machine learning model development.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2019/04/081_data_annotator-scaled.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03082-7">Evaluating foundation models on official German medical licensing examinations: Implications for high-stakes assessment and AI-assisted medical education</a>
+        <p class="news-card-summary">Foundation models evaluated on German medical licensing examinations show varying performance with implications for high-stakes assessment design and AI-assisted medical education.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 30, 2026</span></div>
@@ -207,21 +222,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/8947cf02-f42b-04bb-03ce-c05c80e44d46.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42634457?fc=20260609215449&amp;ff=20260824091500&amp;v=2.20.1">Detection Status and Cost Analysis of Community Pulmonary Nodule Screening with Mobile LDCT Combined with AI</a>
-        <p class="news-card-summary">Mobile low-dose CT screening combined with AI assistance identifies high-risk pulmonary nodule cases in community settings with cost analysis.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/08/24/ai-literacy">‘AI Literacy’</a>
-        <p class="news-card-summary">Brief commentary on the importance of understanding the problems a technology solves as a foundation for AI literacy.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2023-04/Blog-Logo-Confessions%20of%20a%20Community%20College%20Dean.png?itok=3esLh9ql" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## Clinical Practice
@@ -232,10 +232,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 30, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 23 items"
+??? abstract "Show the 21 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (23)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (21)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03168-2">Artificial intelligence tools in sepsis prediction: a systematic review and meta-analysis</a>
+        <p class="news-card-summary">Systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on performance and clinical applicability.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
@@ -370,28 +377,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Study develops a simplified metric to assess fairness in clinical prediction models, addressing the practical challenge of evaluating discrimination across patient groups.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming">STAT+: FDA digital health leader promises generative AI regulatory guidance is coming</a>
-        <p class="news-card-summary">FDA&#x27;s digital health policy leader indicates regulatory guidance on generative AI devices will be issued in the near term.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2016/01/FDABuilding_FDA-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03158-4">Towards a multi-agent Clinical Trial Center framework to support modern clinical trials</a>
-        <p class="news-card-summary">A multi-agent framework using AI to coordinate clinical trial operations and management across distributed trial centers.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03160-w">When machines misread science: creating guardrails for human and AI interpretation of biomedical research</a>
-        <p class="news-card-summary">Guardrails for AI and human interpretation of biomedical research aim to prevent errors that could distort clinical evidence application.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 24, 2026</span></div>
@@ -409,10 +394,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 52 items"
+??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (52)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy">Debian won’t ban AI code from its Linux distribution</a>
+        <p class="news-card-summary">Debian&#x27;s new policy permits developers to use AI tools in contributions with no special restrictions beyond existing standards, recognizing productivity benefits.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK414_AI_CVIRGINIA_I__0009_7.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules">ChatGPT and Reddit now face EU&#x27;s toughest online safety rules</a>
+        <p class="news-card-summary">European Union classified ChatGPT as a very large online search engine under the Digital Services Act, imposing stricter regulatory obligations on content moderation and risk mitigation.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2022/03/getty-eu-flag-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
@@ -455,6 +456,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Commentary on agentic AI systems and their implications, drawing on recent industry incidents and emerging deployment patterns.</p>
       </div>
       <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!LzPL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94cee090-1da6-4c8d-a043-01d835708104_1456x816.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 30, 2026</span></div>
+        <a class="news-card-title" href="https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model">How to build a diffusion language model</a>
+        <p class="news-card-summary">Tutorial explains the technical approach to building diffusion models applied to language generation, covering architecture and training methods.</p>
+      </div>
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -787,14 +795,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/08/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-Fauq8x.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning">Kids outlearn AI, and we still don’t know why</a>
-        <p class="news-card-summary">Children continue to outpace large language models in acquiring language fluency despite recent advances in AI systems.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/08/3_HighChair-crop.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 23, 2026</span></div>
@@ -809,7 +809,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Videos
 
-??? abstract "Show the 12 videos"
+??? abstract "Show the 10 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=4wjHNgMLeyY" target="_blank" rel="noopener" title="Ox Alpha reveal, realtime Minimax, Qwen Next, Hy4, robot olympics: AI NEWS">
@@ -871,18 +871,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>
       <span class="video-card-meta">IBM Technology, August 26, 2026</span>
       <span class="video-card-desc">IBM explores security vulnerabilities in GLM-5.3 and open-weight models, comparing their vulnerability discovery capabilities against proprietary systems.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=9Rx76Qz2XpM" target="_blank" rel="noopener" title="DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!">
-      <img src="https://i2.ytimg.com/vi/9Rx76Qz2XpM/hqdefault.jpg" alt="Video: DeepSeek V4 Flash vision testing and capabilities" loading="lazy">
-      <span class="video-card-title">DeepSeek V4 Flash vision testing and capabilities</span>
-      <span class="video-card-meta">Bijan Bowen, August 24, 2026</span>
-      <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash vision capabilities including browser interaction and game comprehension with the DeepSeek Harness tool.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=zAe-sau06io" target="_blank" rel="noopener" title="How AI Coding Agents Understand Your Codebase &amp; Developer Tools">
-      <img src="https://i3.ytimg.com/vi/zAe-sau06io/hqdefault.jpg" alt="Video: AI coding agents and codebase understanding" loading="lazy">
-      <span class="video-card-title">AI coding agents and codebase understanding</span>
-      <span class="video-card-meta">IBM Technology, August 24, 2026</span>
-      <span class="video-card-desc">Explanation of how AI coding agents parse and work with codebases and developer tools for code generation and understanding.</span>
     </a>
     </div>
 
