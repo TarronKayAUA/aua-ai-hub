@@ -6,7 +6,7 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">Seven modules</span><span class="meta-chip">Self-paced</span> <span class="meta-note">The two core stages take about 70 minutes total</span>
 
-A self-paced pathway in three stages: short plain-language modules, pointers into the best material on this site and beyond, and a short self-check in each. Every module stands alone, and none requires math.
+A self-paced pathway in three stages: short plain-language modules, pointers into the relevant material on this site and beyond, and a short self-check in each. Every module stands alone, and none requires math.
 
 The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Assistant Dean of AI in Medical Education.
 

@@ -6,15 +6,13 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The task
 
 Turn a topic and a set of learning objectives into a session plan: a structure, timed sections, active-learning checks, and supporting materials, in a fraction of the usual drafting time.
 
 ## Where AI helps, and where it hurts
 
-AI is strong at structure and variation: organizing content against objectives, generating clinical openers, drafting check questions, proposing analogies, and producing alternative explanations for a concept students struggle with. It is weak exactly where your expertise lives: knowing what this cohort needs, judging clinical accuracy and currency, and deciding what to cut. Use it to multiply your drafting, never to outsource your judgment about content.
+Artificial intelligence (AI) is strong at structure and variation: organizing content against objectives, generating clinical openers, drafting check questions, proposing analogies, and producing alternative explanations for a concept students struggle with. It is weak exactly where your expertise lives: knowing what this cohort needs, judging clinical accuracy and currency, and deciding what to cut. Use it to multiply your drafting, never to outsource your judgment about content.
 
 <figure class="figure">
 <svg viewBox="0 0 660 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Swimlane diagram alternating between what the model drafts and what you decide, ending in source verification">
@@ -50,6 +48,8 @@ AI is strong at structure and variation: organizing content against objectives, 
 - Your learning objectives for the session (the single highest-value input).
 - Existing materials: last year's slides or outline, the assigned reading, the curriculum map context.
 - Constraints: duration, audience year, format, what the students were taught before this session.
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## The workflow
 

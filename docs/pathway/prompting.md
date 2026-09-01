@@ -6,13 +6,13 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For everyone</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## What you will be able to do
 
 - Structure a request so the model has what it needs: a role, your actual materials, the task, and the output shape you want.
 - Iterate on a first draft answer instead of accepting or abandoning it.
 - Apply a verification habit proportionate to the stakes of the task.
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## The core idea
 

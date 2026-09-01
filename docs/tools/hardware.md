@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-08-18
+last_reviewed: 2026-09-01
 ---
 
 # Hardware for Local AI
@@ -8,8 +8,10 @@ last_reviewed: 2026-08-18
 
 [Running Models Locally](local.md) gets you started in ten minutes. This page is the deeper layer: what actually determines whether a model runs on your machine and how fast it feels, taught through one piece of arithmetic you can do on a napkin. By the end you should be able to estimate, for any model and any computer, whether it fits and roughly how fast it will run, without buying anything or trusting a benchmark chart.
 
+If you only want the answer to "what can my machine run", jump to [What you probably own](#what-you-probably-own).
+
 !!! note "Should you run models locally at all?"
-    Be honest about the economics first: a serious graphics card costs more than years of cloud assistant subscriptions, and cloud frontier models are simply better. The reasons local wins are privacy (nothing you type leaves the machine, which matters under the [AI Responsible Use Policy](../governance/policy.md)'s data rules), zero marginal cost once you own the hardware, and education. The best local setup is usually the computer you already own, which is what the estimator below is for. If you need serious hardware occasionally, [rent it by the hour](local.md#when-your-machine-cannot-keep-up-renting-a-gpu) instead of buying.
+    Be honest about the economics first: a serious graphics card costs more than years of cloud assistant subscriptions, and cloud frontier models are more capable. The reasons local wins are privacy (nothing you type leaves the machine, which matters under the [AI Responsible Use Policy](../governance/policy.md)'s data rules), zero marginal cost once you own the hardware, and education. The best local setup is usually the computer you already own, which is what the estimator below is for. If you need serious hardware occasionally, [rent it by the hour](local.md#when-your-machine-cannot-keep-up-renting-a-gpu) instead of buying.
 
 ## What tokens per second feels like
 
@@ -35,7 +37,7 @@ Real systems achieve roughly half to two thirds of that ceiling. Memory bandwidt
 
 | Where the model lives | Typical bandwidth | What it means |
 | --- | --- | --- |
-| Graphics card memory (VRAM) | 250 to 1,000+ GB/s | The fast path; this is why GPUs matter |
+| Graphics card memory (VRAM) | 250 to 1,000+ GB/s | The fast path; this is why graphics processing units (GPUs) matter |
 | Unified memory (Apple silicon and similar) | 100 to 800+ GB/s by chip tier | Capacity of system memory at GPU-class speeds |
 | System memory (RAM, dual-channel DDR5) | 60 to 100 GB/s | Runs models, slowly; capacity is cheap here |
 | Solid-state drive (SSD) | 3 to 7 GB/s | A model spilling here slows to a crawl |
@@ -81,7 +83,7 @@ Runners like Ollama and LM Studio do not give up when a model exceeds video memo
 
 ### Unified memory, the interesting middle
 
-Apple silicon Macs (and a growing set of similar PC chips) share one pool of memory between the processor and graphics at bandwidths far above ordinary RAM. The trade is capacity for bandwidth: a 96 GB unified-memory machine runs models no consumer graphics card can hold, at speeds between a GPU and a CPU. For mixture-of-experts models (below), which need lots of capacity but little bandwidth per token, unified memory is arguably the best consumer hardware there is. If you own a higher-tier Apple silicon Mac, you own a genuinely good local AI machine and may not need to buy anything.
+Apple silicon Macs (and a growing set of similar PC chips) share one pool of memory between the processor and graphics at bandwidths far above ordinary RAM. The trade is capacity for bandwidth: a 96 GB unified-memory machine runs models no consumer graphics card can hold, at speeds between a GPU and a CPU. For mixture-of-experts models (below), which need lots of capacity but little bandwidth per token, unified memory is well suited among consumer hardware. If you own a higher-tier Apple silicon Mac, you own a genuinely good local artificial intelligence (AI) machine and may not need to buy anything.
 
 ## Sizing a model: parameters × quantization
 

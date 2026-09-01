@@ -18,7 +18,7 @@ Two different worlds share the word "clinical," and the rules differ sharply bet
 
 ### Learning clinical medicine with AI: encouraged, with discipline
 
-Practicing differentials against an AI case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Your course materials and the literature stay primary, per the [AI Responsible Use Policy](../governance/policy.md); the model is a practice partner, not a reference.
+Practicing differentials against an artificial intelligence (AI) case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Your course materials and the literature stay primary, per the [AI Responsible Use Policy](../governance/policy.md); the model is a practice partner, not a reference.
 
 ### AI in patient care: extreme caution, by policy
 
@@ -26,7 +26,7 @@ The policy is direct: AI tools must not replace professional judgment or clinica
 
 ### The absolute rule
 
-Patient health information never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
+Patient health information (PHI) never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
 
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels: learning clinical medicine with AI is encouraged with discipline; AI in patient care is extreme caution; patient information never enters a public tool in either world">
@@ -74,5 +74,6 @@ Models reflect their training data, and documented performance gaps across popul
 
 - [Medical Learning tools](../tools/index.md#medical-learning): the directory's category built for study and case practice.
 - [Image Generation benchmarks](../benchmarks/image.md): including the medical-contexts section and its institutional line.
+- [AI and the Residency Application](../playbooks/residency-application.md): what the AAMC and ECFMG actually permit, and the patient-story privacy trap in personal statements.
 
 **Done with the core pathway?** Stage 3 is waiting when you are: [Module 7: Working with Agents](working-with-agents.md). The [Playbooks](../playbooks/index.md) turn these foundations into task-by-task workflows, and the [News](../news/this-week.md) section keeps you current from here.

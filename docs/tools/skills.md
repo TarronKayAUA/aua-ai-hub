@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-08-19
+last_reviewed: 2026-09-01
 ---
 
 # Skills: Giving an Agent a Playbook
@@ -24,7 +24,7 @@ That last part is the whole safety story, so it is worth stating plainly.
 
 ## The four you already have
 
-These are written and maintained by Anthropic, are on by default in claude.ai and Cowork, and require nothing from you. Most of what faculty and staff need from skills is already here, which is the safest possible starting point.
+These are written and maintained by Anthropic, are on by default in claude.ai and Cowork, and require nothing from you. Most of what faculty and staff need from skills is already here, which is a safe starting point.
 
 <!-- render:skills -->
 

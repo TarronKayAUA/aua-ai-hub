@@ -70,7 +70,7 @@ The [Agents category in the tools directory](index.md#agents) carries every entr
 
 ### Claude Code (Anthropic)
 
-Anthropic's agent for software work, available in the terminal, IDE extensions, a desktop app, and the browser. Built for coding, but increasingly used for any file-based task: it plans multi-step work against your own files and executes it step by step. Included with paid Claude plans.
+Anthropic's agent for software work, available in the terminal, integrated development environment (IDE) extensions, a desktop app, and the browser. Built for coding, but increasingly used for any file-based task: it plans multi-step work against your own files and executes it step by step. Included with paid Claude plans.
 
 <!-- render:guide-videos:agents:claude-code -->
 

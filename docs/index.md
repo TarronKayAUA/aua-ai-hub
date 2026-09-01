@@ -63,13 +63,13 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     [Open the library](prompts/index.md)
 
-- :material-calendar-star:{ .lg .middle } __Conferences__
+- :material-calendar-star:{ .lg .middle } __Conferences and Opportunities__
 
     ---
 
     Verified dates and deadlines for AI and medical education meetings, with past events archived automatically.
 
-    [See the calendar](conferences.md)
+    [See the calendar](conferences.md) · [See open calls](opportunities.md)
 
 - :material-scale-balance:{ .lg .middle } __Governance__
 
@@ -107,7 +107,7 @@ More in the [News section](news/this-week.md), including the weekly digest.
 
 --8<-- "includes/latest-videos.md"
 
-More on the [Videos page](news/videos.md).
+More on the [Videos page](news/videos.md), and episodes on the [Podcasts page](news/podcasts.md).
 
 ## Announcements
 

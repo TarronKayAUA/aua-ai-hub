@@ -6,15 +6,13 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty and staff</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The task
 
-Turn facts you already have into finished administrative prose: memos, committee minutes, reports, accreditation narratives, and the recurring correspondence that consumes afternoons. This is the task where AI assistance pays back fastest, and the one where a fabricated detail does the most institutional damage, because the output becomes a record.
+Turn facts you already have into finished administrative prose: memos, committee minutes, reports, accreditation narratives, and the recurring correspondence that consumes afternoons. This is the task where artificial intelligence (AI) assistance pays back fastest, and the one where a fabricated detail does the most institutional damage, because the output becomes a record.
 
 ## Where AI helps, and where it hurts
 
-AI is excellent at the shape of administrative writing: structure, register, condensing forty minutes of meeting notes into eight minutes of minutes, converting a bullet list into a memo, and rewriting the same information for a second audience. It is dangerous at the substance: models fill gaps with plausible institutional facts (dates, room numbers, policy names, who agreed to what) delivered in exactly the confident register administrative prose uses. The division of labor must be absolute: **every fact comes from you; the model only arranges them.**
+AI is reliable at the shape of administrative writing: structure, register, condensing forty minutes of meeting notes into eight minutes of minutes, converting a bullet list into a memo, and rewriting the same information for a second audience. It is dangerous at the substance: models fill gaps with plausible institutional facts (dates, room numbers, policy names, who agreed to what) delivered in exactly the confident register administrative prose uses. The division of labor must be absolute: **every fact comes from you; the model only arranges them.**
 
 The second hazard is voice. Administrative documents signed by you should sound like you; a department that starts producing identical AI-cadence memos has lost something real. The fix is cheap: draft from your own examples.
 
@@ -54,6 +52,8 @@ The second hazard is voice. Administrative documents signed by you should sound 
 - The facts, as your own bullet list: decisions made, dates, names, amounts, action items. Writing this list is the thinking; do not skip it and hope the model infers the facts from context.
 - One or two prior examples of the genre in your voice (your best past memo, last month's minutes).
 - The audience and its register: a memo to faculty and a report to an accreditor carry the same facts differently.
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## The workflow
 

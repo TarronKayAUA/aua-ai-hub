@@ -8,6 +8,8 @@ last_reviewed: 2026-09-01
 
 The model you use is fixed; what you control is everything around it. This page covers the three levers that decide answer quality in practice: what goes into the **context window** (and what you keep out of it), what persists across conversations as **memory**, and the standing **instructions** that govern how the model behaves. [How LLMs Work](how-llms-work.md), the primer on large language models (LLMs), explains what the context window is; this page is about using it well.
 
+The short version is [the checklist](#the-checklist) at the end; the rest of the page explains why each item is there.
+
 ## One window, two budgets
 
 Everything the model can see lives in one working memory, the context window, measured in tokens (a token is roughly three quarters of a word). Everything counts against it: your messages, the files you attach (for very large files, some assistants quietly pull in excerpts rather than the whole document), the model's own replies, your standing instructions, and anything its memory feature has stored. Consumer assistants today offer windows from a few thousand tokens on some free tiers to a million or more, depending on the model and plan; check your plan's documentation rather than assuming.

@@ -6,17 +6,17 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: AI Possibilities in Medical Education</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## What you will be able to do
 
 - Identify the teaching tasks where AI assistance is currently strongest and weakest.
 - Use a safe workflow for AI-assisted assessment item drafting.
 - Set AI expectations for your own course deliberately rather than by default.
 
+--8<-- "includes/prompt-maturity-note.md"
+
 ## The core idea
 
-For educators, AI is at its best on structured generation from your materials: outlines, cases, vignettes, draft questions, rubrics, explanations at a chosen level, and alternative examples when students need a concept approached differently. It is weakest exactly where your judgment is the job: deciding what matters for your learners, judging clinical accuracy, and evaluating real student work fairly.
+For educators, artificial intelligence (AI) is at its best on structured generation from your materials: outlines, cases, vignettes, draft questions, rubrics, explanations at a chosen level, and alternative examples when students need a concept approached differently. It is weakest exactly where your judgment is the job: deciding what matters for your learners, judging clinical accuracy, and evaluating real student work fairly.
 
 ### Content and session preparation
 
@@ -28,7 +28,7 @@ AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence s
 
 ### Evaluating student work
 
-This is the highest-caution zone. Identifiable student work and grades are FERPA-protected records, so they do not go into public tools; de-identify first or do not use AI at all. And outputs from AI detectors and similarity flags are preliminary indicators, not verdicts; treat any flag as a starting point for human review, never as sufficient evidence on its own.
+This is the highest-caution zone. Identifiable student work and grades are records protected by the Family Educational Rights and Privacy Act (FERPA), so they do not go into public tools; de-identify first or do not use AI at all. And outputs from AI detectors and similarity flags are preliminary indicators, not verdicts; treat any flag as a starting point for human review, never as sufficient evidence on its own.
 
 ### Your course's AI rules
 

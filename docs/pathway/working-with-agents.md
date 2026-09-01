@@ -19,7 +19,7 @@ A chat assistant answers you; an agent works for you. The difference is the loop
 
 ### Tool calls, and why you are the gate
 
-When an agent needs something done in the world, it pauses and asks: may I read this file, may I run this command, may I write this document. The interface executes the action only after the request passes a permission check, and in the default permission modes that check is you for anything consequential. Some settings auto-approve certain actions; [Your First Agent Session](../tools/first-session.md#the-settings-that-matter) covers which, and when they are earned. This is the module's one habit to build: **read the request before approving it.** A request that matches what you asked for gets a yes; a request that surprises you gets a no and a question. The permission prompt is not a formality to click through; it is the mechanism that makes a powerful tool safe, and it is enforced by the software, not by the model's good intentions.
+When an agent needs something done in the world, it pauses and asks: may I read this file, may I run this command, may I write this document. The interface executes the action only after the request passes a permission check, and in the default permission modes that check is you for anything consequential. Some settings auto-approve certain actions; [Your First Agent Session](../tools/first-session.md#the-settings-that-matter) covers which, and when they are earned. This is the module's one habit to build: **read the request before approving it.** A request that matches what you asked for gets a yes; a request that surprises you gets a no and a question. The permission prompt is not a formality to click through; it is the mechanism that makes an agent safe to use, and it is enforced by the software, not by the model's good intentions.
 
 <figure class="figure">
 <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An agent proposes an action, you approve or deny at the gate, and only approved actions reach your machine">
@@ -65,7 +65,7 @@ Everything from [Module 3](rules.md) applies with more force, because an agent c
     Move the files the task actually needs into a fresh folder and open that instead. The agent can read anything in the folder you grant, so the grant is the decision that matters; a protected record in scope is a data-rules problem even if the agent never happens to open it.
 
 ??? question "The agent reports the task finished successfully. Why open the output yourself anyway?"
-    Because "finished" is the agent's claim about its own work, and the pathway's rule for AI claims does not change when the AI can run tools: verify before you rely. Agents make checking cheap (the file is right there), and the two minutes of looking is what makes delegating to one responsible rather than hopeful.
+    Because "finished" is the agent's claim about its own work, and the pathway's rule for artificial intelligence (AI) claims does not change when the AI can run tools: verify before you rely. Agents make checking cheap (the file is right there), and the two minutes of looking is what makes delegating to one responsible rather than hopeful.
 
 ## Going deeper
 

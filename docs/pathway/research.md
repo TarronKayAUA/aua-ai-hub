@@ -6,17 +6,17 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: Using AI in Research and Scholarship</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## What you will be able to do
 
 - Use AI for literature work with a workflow that catches its failure modes.
 - Apply current disclosure norms for AI assistance in scholarly writing.
 - Recognize the research-specific places where AI use is restricted.
 
+--8<-- "includes/prompt-maturity-note.md"
+
 ## The core idea
 
-Research rewards AI assistance more than almost any other academic activity (literature screening, summarization, drafting, code for analysis) and punishes sloppy AI use more too, because the integrity standards are unforgiving.
+Research rewards artificial intelligence (AI) assistance more than almost any other academic activity (literature screening, summarization, drafting, code for analysis) and punishes sloppy AI use more too, because the integrity standards are unforgiving.
 
 ### Literature work
 
@@ -24,7 +24,7 @@ Models are genuinely useful for screening titles and abstracts against inclusion
 
 ### Writing and disclosure
 
-The norms have settled quickly and are remarkably consistent across journals: an AI tool cannot be an author, because authorship requires accountability no tool can hold; and AI assistance must be disclosed per the venue's requirements. The [International Committee of Medical Journal Editors (ICMJE) recommendations](https://www.icmje.org/recommendations/) now carry a dedicated section on AI use by authors, reviewers, and editors; check it and your target journal's instructions before submitting. Presenting AI-generated data, images, or references as authentic empirical material is research misconduct, full stop.
+The norms have settled quickly and are consistent across journals: an AI tool cannot be an author, because authorship requires accountability no tool can hold; and AI assistance must be disclosed per the venue's requirements. The [International Committee of Medical Journal Editors (ICMJE) recommendations](https://www.icmje.org/recommendations/) now carry a dedicated section on AI use by authors, reviewers, and editors; check it and your target journal's instructions before submitting. Presenting AI-generated data, images, or references as authentic empirical material is research misconduct, full stop.
 
 ### Restricted zones
 

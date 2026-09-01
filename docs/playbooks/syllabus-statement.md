@@ -6,11 +6,11 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty</span> <span class="meta-note">Templates below are starting points, adapt to your course</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The task
 
-Set explicit, enforceable expectations for student AI use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) deliberately delegates labeling and attribution standards to "specific course or departmental guidelines," which means the syllabus is where your line gets drawn. No statement is itself a statement, and it will be read as permission.
+Set explicit, enforceable expectations for student artificial intelligence (AI) use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) deliberately delegates labeling and attribution standards to "specific course or departmental guidelines," which means the syllabus is where your line gets drawn. No statement is itself a statement, and it will be read as permission.
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## Where AI helps, and where it hurts
 

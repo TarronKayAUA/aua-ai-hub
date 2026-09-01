@@ -8,7 +8,8 @@ repo_name: TarronKayAUA/aua-ai-hub
 copyright: >-
   Maintained by Dr. Tarron Kayalackakom, Assistant Dean of AI in Medical
   Education, AUA College of Medicine &nbsp;|&nbsp;
-  <a href="https://forms.office.com/r/5a8RCi2YKP">Feedback</a>
+  <a href="https://forms.office.com/r/5a8RCi2YKP">Feedback</a> &nbsp;|&nbsp;
+  <a href="accessibility/">Accessibility</a>
 
 theme:
   name: material
@@ -103,11 +104,11 @@ nav:
       - AI Agents: tools/agents.md
       - Choosing Your Interface: tools/interfaces.md
       - Standing Setups: tools/standing-setups.md
-      - Skills: tools/skills.md
+      - Agent Skills: tools/skills.md
       - Your First Agent Session: tools/first-session.md
       - Running Models Locally: tools/local.md
       - Hardware for Local AI: tools/hardware.md
-      - Gemini Notebook: tools/gemini-notebook.md
+      - Gemini Notebook (NotebookLM): tools/gemini-notebook.md
       - AI for Research: tools/research.md
       - Prompts:
           - prompts/index.md

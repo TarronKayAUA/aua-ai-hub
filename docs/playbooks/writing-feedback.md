@@ -6,15 +6,13 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The task
 
 Give substantive, rubric-grounded formative feedback on a stack of student writing (reflections, essays, reports, case write-ups) in a fraction of the usual time, without ever letting a model judge a student or a grade.
 
 ## Where AI helps, and where it hurts
 
-AI is strong at the mechanical layer of feedback: applying your rubric consistently to the twentieth essay as to the first, spotting structural patterns (a missing counterargument, an unsupported claim, a conclusion that answers a different question), and offering alternative phrasings for points you want to make more kindly or more clearly. It is weak, and must be kept away from, everything that requires knowing the student: judging growth against their previous work, sensing what this particular writer can hear right now, and any decision that touches a grade. It also fails in a way specific to this task: models generate plausible-sounding praise and criticism that does not match the text in front of them, so every observation must carry a quote you can check.
+Artificial intelligence (AI) is strong at the mechanical layer of feedback: applying your rubric consistently to the twentieth essay as to the first, spotting structural patterns (a missing counterargument, an unsupported claim, a conclusion that answers a different question), and offering alternative phrasings for points you want to make more kindly or more clearly. It is weak, and must be kept away from, everything that requires knowing the student: judging growth against their previous work, sensing what this particular writer can hear right now, and any decision that touches a grade. It also fails in a way specific to this task: models generate plausible-sounding praise and criticism that does not match the text in front of them, so every observation must carry a quote you can check.
 
 One more failure mode is yours rather than the model's: feedback that arrives in a voice that is not yours teaches students that your feedback is not worth reading. The model drafts observations; the words that reach the student are yours.
 
@@ -52,6 +50,8 @@ One more failure mode is yours rather than the model's: feedback that arrives in
 - Your rubric or feedback criteria, written out (if they live in your head, this task is the reason to write them down).
 - The assignment brief the students actually received.
 - The submissions, **de-identified**: this step is not optional (see guardrails).
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## The workflow
 

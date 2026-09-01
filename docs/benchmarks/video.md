@@ -60,3 +60,5 @@ Everything on the [image generation page about medical contexts](image.md#medica
 !!! danger "Never crossed, whatever the tool"
     - Patient-identifiable material never enters a generation tool.
     - Synthetic media depicting real, identifiable people without consent is prohibited territory regardless of intent.
+
+The tools being ranked are listed under [Video Generation](../tools/index.md#video-generation) in the directory; for text models, see the [Language Model Benchmarks](../benchmarks.md).

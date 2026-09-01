@@ -6,8 +6,6 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For students and their advisors</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The task
 
 Turn an exam performance report (a comprehensive exam, a shelf exam, a self-assessment, or an in-house exam) into a study plan that is honest about where you stand, fits the hours you actually have, and gets tested against your next assessment instead of drifting. The report is not the hard part; most students receive more performance data than they ever use. The hard part is reading it without flinching, turning it into a plan that survives a bad week, and closing the loop.
@@ -87,6 +85,8 @@ Before you run any prompt, open your report and write down your own three takeaw
 - The date of your next exam and your honest weekly study hours, after classes, work, and everything else. Honest, not aspirational.
 - What resources you actually have (question bank, lecture notes, review materials), so the plan names real things.
 - Your own three takeaways, written first.
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## The workflow
 

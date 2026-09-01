@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-06-11
+last_reviewed: 2026-09-01
 ---
 
 # Language Model Benchmarks
@@ -26,7 +26,7 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
     ---
 
-    Independent measurements of intelligence, speed, and price across providers. The best single view of the cost-versus-capability tradeoff.
+    Independent measurements of intelligence, speed, and price across providers, in a single view of cost against capability.
 
     [Visit Artificial Analysis](https://artificialanalysis.ai/models)
 

@@ -53,11 +53,13 @@ Artificial intelligence tools now cover most stages of a research project, from 
 <figcaption>Each stage has a section below; every stage ends with your own verification at the source.</figcaption>
 </figure>
 
+If you only want the table, jump to [Cost and field fit at a glance](#cost-and-field-fit-at-a-glance).
+
 ## Scopus with AI, licensed for AUA
 
 AUA holds an institution-wide license to [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home), Elsevier's citation database of peer-reviewed literature, arranged through the AUA Library in 2026, and the license includes [Scopus AI](https://www.elsevier.com/products/scopus/scopus-ai), the generative layer built on top of it. Ask a question in plain language and it returns a summary with citations and confidence indicators, a concept map of the surrounding topic, the foundational papers behind the answer, and emerging research themes; a Deep Research mode plans and runs a longer investigation and produces a downloadable report. Sign in with your AUA credentials through the library link above.
 
-Know what it is grounded in before you lean on it: Scopus AI works from titles, abstracts, and metadata rather than full text, its coverage concentrates on literature from 2003 onward, and Elsevier itself states that the summaries are not citable. Treat it as the fastest way to orient in an unfamiliar literature and surface the papers that matter, then read those papers; the verification rules at the top of this page apply unchanged.
+Know what it is grounded in before you lean on it: Scopus AI works from titles, abstracts, and metadata rather than full text, its coverage concentrates on literature from 2003 onward, and Elsevier itself states that the summaries are not citable. Treat it as a quick way to orient in an unfamiliar literature and surface the papers that matter, then read those papers; the verification rules at the top of this page apply unchanged.
 
 Because it is comprehensive and the directory's one institutionally licensed research tool, this page's default is Scopus first: where Scopus does a task well, start there. The tools below earn their places by doing things Scopus does not, and those recommendations are unchanged.
 
@@ -67,7 +69,7 @@ Start with [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/
 
 [Semantic Scholar](https://www.semanticscholar.org) is the strongest open alternative: a free, no-sign-in search engine over 200+ million papers including the PubMed corpus, with citation graphs and one-line paper summaries. Reach for it off campus, for quick checks, or when you want a second index's view of the same question.
 
-[ResearchRabbit](https://www.researchrabbit.ai/) does one thing Scopus AI's concept maps do not: give it a few seed papers you already trust and it maps the literature *around them* visually, surfacing related work, shared authorship, and citation neighborhoods. Its free tier is genuinely feature-complete (the company commits to keeping it that way). Use Scopus to find your seeds, ResearchRabbit to grow them.
+[ResearchRabbit](https://www.researchrabbit.ai/) does one thing Scopus AI's concept maps do not: give it a few seed papers you already trust and it maps the literature *around them* visually, surfacing related work, shared authorship, and citation neighborhoods. Its free tier currently includes the full feature set, which the company says it intends to keep. Use Scopus to find your seeds, ResearchRabbit to grow them.
 
 The **deep research modes** inside the general assistants (ChatGPT, Gemini, and Claude all have one on their paid plans) will search the open web and produce a cited report on a topic. They are useful for orientation in an unfamiliar area and weaker for exhaustive coverage: they miss paywalled work and their recall is not systematic-review grade. Treat their output as a scouting report, never as the review itself.
 

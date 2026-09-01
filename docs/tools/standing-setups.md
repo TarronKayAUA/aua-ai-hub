@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-14
+last_reviewed: 2026-09-01
 ---
 
 # Standing Setups: Assistants that Remember
@@ -18,7 +18,7 @@ last_reviewed: 2026-07-14
 
 The common idea: **instructions plus materials, attached to the work instead of the conversation.** A project's instructions apply to every chat inside it, and its uploaded knowledge is available without re-uploading.
 
-There is a fourth container worth knowing about, and it works the other way around: a [skill](skills.md) attaches instructions to a *kind of task* rather than to one body of work, so it applies wherever you are. You already have four of them switched on, and that page also covers why skills from unknown authors deserve real caution.
+There is a fourth container worth knowing about, and it works the other way around: a [skill](skills.md) attaches instructions to a *kind of task* rather than to one body of work, so it applies wherever you are. You already have four of them switched on, and that page also covers why skills from unknown authors deserve real caution. A per-course [Gemini Notebook](gemini-notebook.md) is the same pattern for source-grounded questions: your lectures uploaded once, answered from with citations all term.
 
 <figure class="figure">
 <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a standing setup: instructions and uploaded knowledge sit in the container, and every conversation inside it starts with both already in place">
@@ -56,7 +56,7 @@ The highest-value standing setup for faculty is one project per course:
 3. **Write the instructions**, which are just a standing version of a good prompt: who the assistant is (a teaching assistant for this specific course and level), what it answers from (the uploaded materials first, citing the section it drew on), and your standing rules (US English, the course's terminology, "say so when the materials do not cover a question rather than guessing").
 4. **Use it all term.** Draft announcements, generate practice questions against the actual objectives, and check whether a planned session duplicates an earlier one, all without re-explaining the course once.
 
-Students can run the same pattern in reverse: a project per course, lecture notes and syllabus as knowledge, and the [NBME-style question tutor](../prompts/index.md) from the prompt library pasted in as the project instructions. That combination, a reviewed prompt plus your own materials in a standing container, is the single best study setup this site can recommend.
+Students can run the same pattern in reverse: a project per course, lecture notes and syllabus as knowledge, and the [National Board of Medical Examiners (NBME)-style question tutor](../prompts/index.md) from the prompt library pasted in as the project instructions. That combination, a reviewed prompt plus your own materials in a standing container, is the study setup this site recommends.
 
 The same shape serves research: one project per manuscript or study, with your appraised paper set as knowledge (the [literature review playbook](../playbooks/literature-reviews.md)'s synthesis step, made permanent) and the project instructions carrying your reporting guideline and journal target.
 

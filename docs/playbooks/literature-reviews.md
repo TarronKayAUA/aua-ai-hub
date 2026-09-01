@@ -6,11 +6,9 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty and graduate student researchers</span> <span class="meta-note">From question to appraised evidence</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The task
 
-Artificial intelligence (AI) has changed literature work more than any other research task: tools now find, screen, and summarize papers at a speed no human matches. What has not changed is the standard your review will be judged by, and the failure that sinks manuscripts fastest, citations that do not check out, is a signature AI failure. This playbook walks the workflow that captures the speed without inheriting the risk. The [AI for Research guide](../tools/research.md) describes the tools themselves; this page is the discipline for using them in sequence.
+Artificial intelligence (AI) has changed literature work more than any other research task: tools now find, screen, and summarize papers faster than any manual process. What has not changed is the standard your review will be judged by, and the failure that sinks manuscripts fastest, citations that do not check out, is a signature AI failure. This playbook walks the workflow that captures the speed without inheriting the risk. The [AI for Research guide](../tools/research.md) describes the tools themselves; this page is the discipline for using them in sequence.
 
 ## Where AI helps, and where it hurts
 
@@ -57,10 +55,12 @@ Artificial intelligence (AI) has changed literature work more than any other res
 
 ## Gather first
 
-- Your research question, framework-vetted. If it is still an idea, the [Research question coach](../prompts/index.md) prompt converts it into a PICO/PICOT or SPIDER structure with a FINER screen, and hands you the novelty search to run.
+- Your research question, framework-vetted. If it is still an idea, the [Research question coach](../prompts/index.md) prompt converts it into a PICO (population, intervention, comparison, outcome) structure, or its PICOT and SPIDER variants, with a FINER (feasible, interesting, novel, ethical, relevant) screen, and hands you the novelty search to run.
 - Your inclusion and exclusion criteria, written as numbered lists before any tool sees a single abstract.
-- Your review's ambition, named honestly: an orientation for an introduction section, a scoping review, or a full systematic review. A systematic review needs a registered protocol and [PRISMA](https://www.prisma-statement.org/) documentation from the first search onward, not retrofitted at the end.
+- Your review's ambition, named honestly: an orientation for an introduction section, a scoping review, or a full systematic review. A systematic review needs a registered protocol and [Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)](https://www.prisma-statement.org/) documentation from the first search onward, not retrofitted at the end.
 - Library access: [Scopus with AI](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) through your AUA credentials.
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## The workflow
 
@@ -69,7 +69,7 @@ Artificial intelligence (AI) has changed literature work more than any other res
 3. **Grow the map from seeds.** Feed your strongest papers to ResearchRabbit or use Scopus citation chasing to find what your keyword queries missed: the papers your seeds cite, and the papers that cite your seeds.
 4. **Screen at scale, conservatively.** The [Literature screening assistant](../prompts/index.md) prompt applies your frozen criteria to titles and abstracts with an audit trail, defaulting to "unclear" whenever the abstract cannot support a decision. Borderline calls stay yours, and screening decisions are aids, never verdicts.
 5. **Appraise by hand.** This step does not delegate. Read the methods sections of everything that survives screening and apply a structured instrument: the reporting checklist for each study's design as a completeness lens, and in medical education research, a rigor instrument such as the Medical Education Research Study Quality Instrument (MERSQI). AI can fetch and summarize; it cannot be accountable for your judgment that a study is worth building on.
-6. **Synthesize from your own set.** Load the appraised papers, your papers, not the open web, into Gemini Notebook or a Claude Project and draft the synthesis grounded in that set, with every claim traceable to a source you have read.
+6. **Synthesize from your own set.** Load the appraised papers, your papers, not the open web, into [Gemini Notebook](../tools/gemini-notebook.md) or a Claude Project and draft the synthesis grounded in that set, with every claim traceable to a source you have read.
 7. **Verify every citation at the source.** Before any reference enters your manuscript: the paper exists, the authors and year are right, and it says what your sentence claims. No exceptions, including references you are certain about.
 
 ## Guardrails for this task

@@ -6,11 +6,9 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty</span> <span class="meta-note">The highest-stakes playbook, read the guardrails first</span>
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The task
 
-Use AI to draft and structurally vet multiple choice questions (MCQs), cutting item-writing time while keeping quality control and assessment security entirely human.
+Use artificial intelligence (AI) to draft and structurally vet multiple choice questions (MCQs), cutting item-writing time while keeping quality control and assessment security entirely human.
 
 ## Where AI helps, and where it hurts
 
@@ -21,6 +19,8 @@ Models draft plausible vignette-based items quickly and are genuinely good at th
 - The learning objective each item must test, and the blueprint slot it fills.
 - Target level (preclinical or clinical) and item format conventions your committee uses.
 - Your item-writing standards (the library prompts encode the common National Board of Medical Examiners style rules: vignette-dependent, lead-in answerable cold, homogeneous options, no absolutes or cues).
+
+--8<-- "includes/prompt-maturity-note.md"
 
 ## The workflow
 

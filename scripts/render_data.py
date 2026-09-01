@@ -96,6 +96,21 @@ CATEGORY_DESCRIPTORS = {
 # Optional longer guidance that belongs to the category rather than any
 # one tool; renders inside the collapsed block, above the cards.
 CATEGORY_INTROS = {
+    "agents": (
+        "The [AI Agents field guide](agents.md) frames this category: what "
+        "agents are good and bad at, the risk model, and where to start. "
+        "[Your First Agent Session](first-session.md) runs one in 20 minutes."
+    ),
+    "research": (
+        "[AI for Research](research.md) maps these tools to each stage of a "
+        "project, licensed library tools first; [Gemini Notebook]"
+        "(gemini-notebook.md) has its own guide because it works from your "
+        "own uploads rather than the open web."
+    ),
+    "local": (
+        "[Running Models Locally](local.md) is the walkthrough for these "
+        "apps, and [Hardware for Local AI](hardware.md) sizes the machine."
+    ),
     "presentations_design": (
         "To improve an existing PowerPoint deck without rebuilding it, "
         "start with tools that work on the .pptx file itself: PowerPoint "

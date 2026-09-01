@@ -25,9 +25,9 @@ This site was built for the whole American University of Antigua College of Medi
 
     ---
 
-    An exam-style question tutor built from your own lecture notes, set up once per course.
+    An exam-style question tutor built from your own lecture notes, set up once per course, or one notebook per course.
 
-    [Set it up](tools/standing-setups.md)
+    [Set it up](tools/standing-setups.md) · [One notebook per course](tools/gemini-notebook.md)
 
 - :material-chart-line:{ .lg .middle } __After an exam__
 

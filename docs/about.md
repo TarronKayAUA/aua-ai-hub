@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-15
+last_reviewed: 2026-09-01
 ---
 
 # About
@@ -10,12 +10,12 @@ The AUA AI Hub is a curated reference and news site on artificial intelligence (
 
 ## How content is selected
 
-Most of this site is written and reviewed by people; the News, Videos, Podcasts, and benchmark sections are produced by an automated pipeline that runs nightly. Here is exactly what it does:
+Most of this site is written and reviewed by people; the News, Videos, Podcasts, and benchmark sections are produced by an automated pipeline that runs several times a day. Here is exactly what it does:
 
 1. **News.** The pipeline reads a fixed, public list of sources: established AI publications and blogs, PubMed literature searches, and medical education and digital health journals. New items are filtered to a recent window, screened against a blocklist of promotional content, and de-duplicated. A language model then selects the items most relevant to medical educators and writes a one-sentence summary of each; when the language model is unavailable, a simpler keyword ranking runs instead.
 2. **Videos and podcasts.** The same pipeline follows a hand-picked roster of YouTube channels and podcast shows. The language model selects relevant uploads and episodes and writes a one-sentence description for each, so you know what you are getting into before you click. Everything links out to the original platform; nothing is embedded or tracked here.
 3. **Benchmarks.** The [Benchmarks page](benchmarks.md) carries a snapshot of the LiveBench leaderboard, rebuilt nightly from LiveBench's published data, with the calculation method described on that page.
-4. **Weekly digest.** Every Friday a second selection pass picks the most significant items of the week, news, videos, and podcasts, plus any updates made to the conference calendar, into a weekly digest. Each week's digest is preserved in the [News Archive](news/archive/index.md) and published to a [digest feed](digest.xml) that any feed reader can follow. The [This Week page](news/this-week.md) is separate: a rolling view of everything kept in the last seven days, refreshed nightly.
+4. **Weekly digest.** Every Friday a second selection pass picks the most significant items of the week, news, videos, and podcasts, plus any updates made to the conference calendar, into a weekly digest. Each week's digest is preserved in the [News Archive](news/archive/index.md) and published to a [digest feed](digest.xml) that any feed reader can follow. The [This Week page](news/this-week.md) is separate: a rolling view of everything kept in the last seven days, refreshed with each run.
 
 <figure class="figure">
 <svg viewBox="0 0 660 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline diagram: fixed public sources flow through the nightly pipeline into the site's generated sections, with a Friday digest branch">
@@ -86,11 +86,13 @@ This site is informational. AI-generated summaries and descriptions may contain 
 <div class="maintainer-card">
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
 <div class="maintainer-bio">
-<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean of Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and reviews its sources, tools, and guidance on an ongoing basis.</p>
+<p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Assistant Dean of Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and keeps its sources, tool entries, and guidance current on an ongoing basis.</p>
 </div>
 </div>
 
 ## Comments and feedback
+
+The site's [accessibility statement](accessibility.md) describes what has been checked, what is known to be imperfect, and how to report a barrier.
 
 The fastest way to tell us what works, what does not, and what to fix: the [feedback form](https://forms.office.com/r/5a8RCi2YKP), five questions, about two minutes, including a field for corrections to anything on this site.
 

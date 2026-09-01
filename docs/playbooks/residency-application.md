@@ -44,7 +44,7 @@ The practical consequence has nothing to do with rules. A statement you did not 
 
 ## Where AI genuinely helps
 
-### Interview practice, which is the best use on this list
+### Interview practice, the strongest use on this list
 
 This is where AI earns its place in the application year, and it matters most for students who do not have a network of physicians to practice with. An assistant can run a mock interview that asks real follow-up questions, stays in role, and debriefs you afterward on what was vague, what was rehearsed-sounding, and what a program would probably probe.
 

@@ -14,7 +14,7 @@ last_reviewed: 2026-09-01
 
 ## The core idea
 
-AUA encourages AI use where it helps you do your work, inside guardrails set by the [AI Responsible Use Policy](../governance/policy.md). The policy is short and readable; this module is the orientation, not the substitute. Four rules carry most of its weight:
+AUA encourages artificial intelligence (AI) use where it helps you do your work, inside guardrails set by the [AI Responsible Use Policy](../governance/policy.md). The policy is short and readable; this module is the orientation, not the substitute. Four rules carry most of its weight:
 
 1. **You are accountable.** Whatever a tool contributed, the work, the decisions, and the errors are yours. "The AI wrote it" is not a defense; the policy makes human oversight and final responsibility explicit.
 
