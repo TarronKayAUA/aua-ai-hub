@@ -124,7 +124,7 @@
   # getting-started page returns a plain product description to scripts
   # ("AI-powered answer engine ... backed by citations you can verify"),
   # so verification points there rather than skipping (probed 2026-08-26).
-  last_reviewed: 2026-07-14
+  last_reviewed: 2026-09-01
   verify_url: https://www.perplexity.ai/hub/getting-started
   blurb: Search-centered assistant that answers questions with citations to live web sources, useful when you need traceable answers rather than open-ended chat.
 
@@ -162,7 +162,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-01
   blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
 # Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
@@ -325,7 +325,7 @@
   cost: free
   governance_status: listed
   status_note: Verification requires US credentials (NPI or US medical school); withdrew from the UK and EU in spring 2026.
-  last_reviewed: 2026-07-01
+  last_reviewed: 2026-09-01
   blurb: Clinical question-answering tool for verified health professionals, with answers cited to the medical literature.
 
 # Verified 2026-07-08: AUA's institution-wide Scopus license (arranged
@@ -389,7 +389,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: Study platform for medical, nursing, and physician assistant students with flashcard generation from your own materials, board-style questions, and simulated patient encounters for clinical exam practice.
 
 - name: Thea
@@ -399,7 +399,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: General-purpose study app widely used by medical students. Upload readings or lecture notes and it builds flashcards, practice tests, and summaries with spaced repetition.
 
 - name: Medical Student AI
@@ -409,7 +409,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: Tutoring app with a question bank in the style of the United States Medical Licensing Examination (USMLE), cited explanations, and custom quizzes built from uploaded study materials.
 
 - name: Nabu Tutor
@@ -455,7 +455,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: Writing assistant that checks grammar, clarity, and tone in documents, email, and browser text fields.
 
 - name: Whisper
@@ -465,7 +465,7 @@
   cost: free
   governance_status: listed
   status_note: Runs locally; audio never leaves your computer.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: Open-source speech-to-text model that transcribes audio recordings on your own computer.
 
 - name: Microsoft Teams transcription
@@ -475,7 +475,7 @@
   cost: institutional
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: Built-in live transcription for Teams meetings under the institutional Microsoft 365 license.
 
 - name: Ollama
@@ -503,7 +503,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: Desktop application with a graphical interface for downloading and chatting with local language models, which remains a free download. The vendor's lead product is now LM Studio Bionic, an agent for open models with free local use and optional paid cloud models.
 
 - name: Open WebUI
@@ -513,7 +513,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-28
+  last_reviewed: 2026-09-01
   blurb: Self-hosted web interface for chatting with local models served by tools such as Ollama.
 
 # --- Presentations and Design (owner approved 2026-06-12) -------------------
@@ -833,7 +833,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-07-15
+  last_reviewed: 2026-09-01
   blurb: Conversational study companion from Elsevier included with Osmosis subscriptions. Answers medical study questions with citations to Elsevier textbooks, links answers to Osmosis videos, and generates flashcards and quiz questions on request.
 
 # Added 2026-08-01 (owner approved) after student use surfaced it: the
