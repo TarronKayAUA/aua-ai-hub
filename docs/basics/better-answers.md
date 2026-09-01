@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Getting Better Answers
@@ -76,7 +76,7 @@ It is tempting to attach everything that might be relevant. Past a point this ba
 <figcaption>Three casual "for reference" attachments can outweigh your actual question hundreds of times over.</figcaption>
 </figure>
 
-The habit that fixes all three: **curate, then place.** Attach only what the task needs, quote the key passage near the question, and state what you want the material used for ("using only the attached objectives, write..."). If your source material genuinely exceeds what fits, that is what grounding tools are for: [Gemini Notebook](../tools/index.md) and similar tools index your documents and pull in only relevant passages per question, rather than holding everything in the window at once.
+The habit that fixes all three: **curate, then place.** Attach only what the task needs, quote the key passage near the question, and state what you want the material used for ("using only the attached objectives, write..."). If your source material genuinely exceeds what fits, that is what grounding tools are for: [Gemini Notebook](../tools/gemini-notebook.md) and similar tools index your documents and pull in only relevant passages per question, rather than holding everything in the window at once.
 
 Curious what your own material costs? Paste it below. The count runs entirely in your browser, and the text is not sent anywhere.
 
@@ -155,4 +155,4 @@ Before a task that matters, thirty seconds of setup:
 
 None of this is model-specific, and all of it matters more as tasks get longer. Curious what context physically costs? The [hardware page](../tools/hardware.md) shows how conversation length consumes memory when you run models on your own machine. For prompt patterns to use inside the window, see the [Prompting Fundamentals module](../pathway/prompting.md) and the [prompt library](../prompts/index.md).
 
-This page is also the first step of the pathway's operator stage: the same three levers, pointed at agents, are what [Choosing Your Interface](../tools/interfaces.md), [Standing Setups](../tools/standing-setups.md), and [Your First Agent Session](../tools/first-session.md) build on.
+These are also the levers the pathway's operator stage builds on: the same three, pointed at agents, are what [Choosing Your Interface](../tools/interfaces.md), [Standing Setups](../tools/standing-setups.md), and [Your First Agent Session](../tools/first-session.md) build on.

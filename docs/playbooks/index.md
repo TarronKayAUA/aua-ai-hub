@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-15
+last_reviewed: 2026-09-01
 ---
 
 # Playbooks
@@ -19,7 +19,7 @@ Task-level walkthroughs for getting real work done with artificial intelligence 
 | [Feedback on Student Writing](writing-feedback.md) | Faculty | Rubric-grounded formative feedback at scale, with students' records protected |
 | [Administrative Drafting](admin-drafting.md) | Faculty and staff | Memos, minutes, and reports where every fact is yours and only the arranging is AI |
 | [Making Sense of Your Score Reports](score-reports.md) | Students and their advisors | From an exam performance report to an honest, interleaved study plan your advisor can hold you to |
-| [AI and the Residency Application](residency-application.md) | Students, with a section for letter writers | What the AAMC and ECFMG actually permit, where AI helps in the application year, and where it does not |
+| [AI and the Residency Application](residency-application.md) | Students, with a section for letter writers | What the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) actually permit, where AI helps in the application year, and where it does not |
 | [AI-Generated Images in Teaching](ai-images.md) | Faculty | Why image generators fail at anatomy, what to reach for instead, and the conditions for using a flawed image deliberately |
 
 To request the next playbook, use the [feedback form](https://forms.office.com/r/5a8RCi2YKP).

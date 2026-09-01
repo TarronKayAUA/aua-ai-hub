@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-10
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: Reviewing the Literature
@@ -87,5 +87,7 @@ Artificial intelligence (AI) has changed literature work more than any other res
 - [ ] Every citation was opened at the original source and says what you claim it says.
 - [ ] The synthesis cites only papers in your appraised set.
 - [ ] AI assistance is disclosed per the venue's instructions.
+
+**Related:** [AI for Research](../tools/research.md) for the tools at each stage, and [Module 5: Research and Scholarship](../pathway/research.md) for integrity, authorship, and disclosure.
 
 More playbooks and refinements come from use: what worked, what broke, and what is missing go through the [feedback form](https://forms.office.com/r/5a8RCi2YKP).

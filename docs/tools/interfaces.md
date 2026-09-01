@@ -74,11 +74,11 @@ Both vendors now expose how hard the model thinks as a setting, and it is the mo
 
 The heuristic: default effort for routine work; drop effort (or use fast mode) for mechanical batch tasks where the steps are obvious; raise it only for the genuinely hard steps: architecture decisions, subtle debugging, analysis where a wrong answer is expensive. Effort applies per task, so one session can dial down for the cleanup and up for the hard part. Paying maximum reasoning for routine file renames is the agent-era version of leaving the lights on.
 
-## The current lineups (July 2026)
+## The current lineups (September 2026)
 
 Model names go stale faster than anything else on this page; treat these as a snapshot, check the [Benchmarks section](../benchmarks.md) for standings, and expect the interfaces to outlive the models in them.
 
-- **Anthropic:** Claude Code and Cowork run the Claude family. Claude Fable 5.1, released 1 September 2026, is the top model for demanding reasoning and long-running agent work. It is available on every paid plan but never the default: you select it explicitly (in Claude Code with `/model`), Max plans include it for up to half of weekly usage, and Pro plans pay for it with usage credits. Claude Opus 5 is Anthropic's recommended starting point for most work, with Claude Sonnet 5 as the faster, lower-cost tier.
+- **Anthropic:** Claude Code and Cowork run the Claude family. Anthropic positions Claude Fable 5.1, released 1 September 2026, as its model for demanding reasoning and long-running agent work, with standings left to the [Benchmarks section](../benchmarks.md). It is available on every paid plan but never the default: you select it explicitly (in Claude Code with `/model`), Max plans include it for up to half of weekly usage, and Pro plans pay for it with usage credits. Claude Opus 5 is Anthropic's recommended starting point for most work, with Claude Sonnet 5 as the faster, lower-cost tier.
 - **OpenAI:** the ChatGPT app runs the GPT-5.6 family, three tiers under one generation: Sol (flagship), Terra (the everyday mid-tier), Luna (fastest and cheapest). Free and Go plans get Terra; Plus, Pro, Business, and Enterprise plans choose the tier and set the effort level.
 
 ## Equipping the machine

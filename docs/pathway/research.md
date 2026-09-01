@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Module 5: Research and Scholarship
 
-<span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">CGEA competency domain: Using AI in Research and Scholarship</span>
+<span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: Using AI in Research and Scholarship</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 
@@ -18,11 +18,17 @@ last_reviewed: 2026-07-02
 
 Research rewards AI assistance more than almost any other academic activity (literature screening, summarization, drafting, code for analysis) and punishes sloppy AI use more too, because the integrity standards are unforgiving.
 
-**Literature work.** Models are genuinely useful for screening titles and abstracts against inclusion criteria and for first-pass synthesis; recent studies (linked as further reading under the [research prompts](../prompts/index.md)) report strong sensitivity when prompts state criteria explicitly and a human verifies. Two cautions: every reference an AI suggests gets verified at the original source before you cite it, because fabricated citations remain a signature failure; and a literature-screening assistant is a recall tool, not a judge, so borderline calls stay human. The [Literature screening prompt](../prompts/index.md) in the library is built around exactly this division of labor.
+### Literature work
 
-**Writing and disclosure.** The norms have settled quickly and are remarkably consistent across journals: an AI tool cannot be an author, because authorship requires accountability no tool can hold; and AI assistance must be disclosed per the venue's requirements. The [International Committee of Medical Journal Editors (ICMJE) recommendations](https://www.icmje.org/recommendations/) now carry a dedicated section on AI use by authors, reviewers, and editors; check it and your target journal's instructions before submitting. Presenting AI-generated data, images, or references as authentic empirical material is research misconduct, full stop.
+Models are genuinely useful for screening titles and abstracts against inclusion criteria and for first-pass synthesis; recent studies (linked as further reading under the [research prompts](../prompts/index.md)) report strong sensitivity when prompts state criteria explicitly and a human verifies. Two cautions: every reference an AI suggests gets verified at the original source before you cite it, because fabricated citations remain a signature failure; and a literature-screening assistant is a recall tool, not a judge, so borderline calls stay human. The [Literature screening prompt](../prompts/index.md) in the library is built around exactly this division of labor.
 
-**Restricted zones.** Unpublished manuscripts, grant applications, and materials you receive for peer review are confidential; they do not go into public AI tools, and many funders explicitly prohibit AI use in peer review. Funder rules for AI in proposal preparation vary and change; check the current policy of your funder before drafting with assistance. Research data carrying human subjects identifiers falls under the [AI Responsible Use Policy](../governance/policy.md)'s prohibited-data rules: de-identify before any AI-assisted analysis, and involve your institutional review board (IRB) where human subjects research requires it.
+### Writing and disclosure
+
+The norms have settled quickly and are remarkably consistent across journals: an AI tool cannot be an author, because authorship requires accountability no tool can hold; and AI assistance must be disclosed per the venue's requirements. The [International Committee of Medical Journal Editors (ICMJE) recommendations](https://www.icmje.org/recommendations/) now carry a dedicated section on AI use by authors, reviewers, and editors; check it and your target journal's instructions before submitting. Presenting AI-generated data, images, or references as authentic empirical material is research misconduct, full stop.
+
+### Restricted zones
+
+Unpublished manuscripts, grant applications, and materials you receive for peer review are confidential; they do not go into public AI tools, and many funders explicitly prohibit AI use in peer review. Funder rules for AI in proposal preparation vary and change; check the current policy of your funder before drafting with assistance. Research data carrying human subjects identifiers falls under the [AI Responsible Use Policy](../governance/policy.md)'s prohibited-data rules: de-identify before any AI-assisted analysis, and involve your institutional review board (IRB) where human subjects research requires it.
 
 <figure class="figure">
 <svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three zones of research AI use: assisted and verified literature work, disclosed writing assistance, and restricted confidential material">

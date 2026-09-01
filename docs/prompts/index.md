@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-14
+last_reviewed: 2026-09-01
 ---
 
 # Prompt Library
@@ -11,10 +11,10 @@ Reusable prompts for teaching, research, and studying: pick from the at-a-glance
 !!! warning "Drafts pending review"
     Prompts marked Draft are still being tested and refined; Reviewed means a prompt has been through that process, not that its outputs are guaranteed. Treat outputs as first drafts: verify accuracy yourself, and never paste protected health information or student records into any AI tool.
 
-!!! note "What to expect across different models"
+??? note "What to expect across different models"
     These prompts are written for and tested against current frontier assistants from Anthropic, OpenAI, and Google. The same prompt will not give identical results everywhere: output depends on the model's capability, the company that trained it, the material and context you provide, and the model version, which changes over time. Treat a weaker or older model's output as a rough draft, give the model your real source material rather than a blank-page request, and judge every result against your own expertise. The structure and rules in each prompt carry across models even when the exact wording of the output does not.
 
-Two habits make every prompt here work better: give the model your actual materials (objectives, criteria, draft items) rather than asking from a blank page, and ask it to show reasoning you can check rather than bare answers. For the mechanics behind both, what fits in a conversation, when to start a fresh one, and where standing instructions belong, see [Getting Better Answers](../basics/better-answers.md). New to prompting altogether? Start with the guides and videos on [Learning to Prompt](learning.md); studies specific to one kind of task appear as further reading under that task's section below.
+Two habits make every prompt here work better: give the model your actual materials rather than a blank-page request, and ask for reasoning you can check rather than bare answers ([Getting Better Answers](../basics/better-answers.md) covers the mechanics). New to prompting? Start with [Learning to Prompt](learning.md); task-specific studies appear as further reading under each section below.
 
 <!-- render:prompts -->
 

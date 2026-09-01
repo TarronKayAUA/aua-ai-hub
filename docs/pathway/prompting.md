@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Module 2: Prompting Fundamentals
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">CGEA competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 

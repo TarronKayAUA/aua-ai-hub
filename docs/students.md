@@ -1,10 +1,13 @@
 ---
-last_reviewed: 2026-08-19
+last_reviewed: 2026-09-01
 ---
 
 # For Students
 
 <span class="meta-chip">For medical students</span> <span class="meta-note">Organized by where you are, from first semester to the wards</span>
+
+!!! tip "If you have 35 minutes"
+    Read the pathway's first three modules: [How AI Works](pathway/how-ai-works.md), [Prompting Fundamentals](pathway/prompting.md), and [The Rules](pathway/rules.md). Everything else on this page builds on them.
 
 This site was built for the whole American University of Antigua College of Medicine (AUACOM) community, and much of it was built with you specifically in mind. Nothing here replaces your course materials or your own judgment; artificial intelligence (AI) tools are study aids with sharp edges, and knowing where the edges are is most of the skill. The sections below follow the shape of medical school, so you can skip to wherever you are standing.
 
@@ -55,20 +58,18 @@ The literacy pathway's first three modules are short, plain-language, and writte
 2. [Prompting Fundamentals](pathway/prompting.md) (about 15 minutes): the habits that most improve what you get back, starting with giving the model your actual materials.
 3. [The Rules](pathway/rules.md) (about 10 minutes): what must never go into a public AI tool, and what the university expects when AI contributes to your work.
 
-If you read nothing else on this site, read those three.
-
 ## Through the basic sciences
 
 This is where the daily habits form, and the ones that pay off share a shape: the AI works from **your** materials, and **you** do the recalling.
 
-- **Set it up once, not every session.** A [standing setup](tools/standing-setups.md) holds your course, its objectives, and your notes, so every conversation starts already briefed instead of re-explained.
-- **Three prompts written for this stage.** The [prompt library](prompts/index.md) has a lecture tutor that teaches one objective at a time and makes you answer, a daily review sheet builder that keeps the specific details your lecture actually emphasizes, and a National Board of Medical Examiners (NBME)-style question tutor with a study mode that explains as it goes. All three work from the lecture you attach.
-- **Documents, without the fiddling.** Assistants can already turn a scanned PDF into searchable text, clean up an exported spreadsheet, or build a study sheet as a real file. The [Skills page](tools/skills.md) covers what is switched on by default, and why skills from unknown authors deserve caution.
-- **One notebook per course.** [Gemini Notebook](tools/gemini-notebook.md), which you may know as NotebookLM, answers from the lectures and notes you upload rather than from the web, with a citation back to the passage. It is strong for finding things in your own material and weaker at the study guides and audio summaries it generates from it, which is worth knowing before you revise from one.
-- **Finding study tools.** The [Medical Learning tools](tools/index.md#medical-learning) in the directory are built for exactly this. Statuses describe the institution's relationship with each tool, and a listing is not an endorsement.
-- **Better answers, less effort.** [Getting Better Answers](basics/better-answers.md) explains the three levers that decide quality: what goes into the context window, what persists as memory, and standing instructions.
-- **Do not let AI draw your anatomy.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong, and a wrong picture studied at first exposure is unusually hard to unlearn. The [misconceptions page](basics/misconceptions.md) explains what to use instead.
-- **Calibrating trust.** Fluency is not accuracy. The [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, and it matters double for anything you might carry into an exam or a ward.
+- **Set it up once, not every session.** A [standing setup](tools/standing-setups.md) holds your course, its objectives, and your notes, so every conversation starts briefed.
+- **Three prompts written for this stage.** A lecture tutor, a daily review sheet builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach, in the [prompt library](prompts/index.md).
+- **Documents, without the fiddling.** Scanned PDFs, exported spreadsheets, and study sheets as real files: the [Skills page](tools/skills.md) covers what is switched on, and why unknown skills deserve caution.
+- **One notebook per course.** [Gemini Notebook](tools/gemini-notebook.md) (formerly NotebookLM) answers from what you upload, with citations; it finds well and summarizes less reliably.
+- **Finding study tools.** The [Medical Learning tools](tools/index.md#medical-learning) are built for this; statuses describe the institution's relationship with a tool, not an endorsement.
+- **Better answers, less effort.** [Getting Better Answers](basics/better-answers.md) explains the three levers that decide quality: context, memory, and standing instructions.
+- **Do not let AI draw your anatomy.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
+- **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.
 
 ## Around an exam
 
@@ -86,7 +87,7 @@ Clinical rotations change the rules, because you are now inside a hospital's pri
 
 ## The application year
 
-The [residency application playbook](playbooks/residency-application.md) covers what the AAMC and ECFMG actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and the privacy trap hiding inside patient stories in personal statements.
+The [residency application playbook](playbooks/residency-application.md) covers what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and the privacy trap hiding inside patient stories in personal statements.
 
 For anything about strategy, meaning which programs, how many, how to signal, and how your own record should be presented, your Education Enhancement Department (EED) clinical advisor is the person to see. The playbook is about the tools, not the plan.
 

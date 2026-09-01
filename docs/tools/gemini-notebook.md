@@ -1,12 +1,19 @@
 ---
-last_reviewed: 2026-08-26
+last_reviewed: 2026-09-01
 ---
 
 # Gemini Notebook: Grounded in Your Own Sources
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 8 minutes</span> <span class="meta-note">Widely used at AUA, which is why it has its own page</span>
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Widely used at AUA, which is why it has its own page</span>
 
-Google renamed NotebookLM to Gemini Notebook on 16 July 2026 ([announcement](https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/)). It is the same product, existing notebooks still work, and the old web address redirects to the new one. If you learned it under the old name, nothing you know has changed.
+Gemini Notebook is a research notebook that answers questions from the documents you upload, with a citation back to the passage, rather than from general knowledge of the web. Finding and quoting inside your own material is what it does best; every summary, study guide, or audio overview it generates from that material is a step further from the source and needs checking. (It was NotebookLM until Google renamed it on 16 July 2026 ([announcement](https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/)); same product, existing notebooks and links still work.)
+
+| Reliable for | Weaker at |
+| --- | --- |
+| Locating a fact or passage across a fixed set of sources | Study guides, reports, and other summaries, where emphasis shifts |
+| Answers with a citation you can open and check | Audio and video overviews generated from primary research |
+| Guideline lookup with the guideline in the notebook | Appraisal and judgment, such as rating a study's quality |
+| Questions across a whole term of lecture material at once | Harder questions whose wording does not match the source's keywords |
 
 What makes it different from a chat assistant is that it answers from the documents you upload rather than from general knowledge of the web. Two features are exceptions worth knowing: Discover sources searches the web or your Google Drive, and Deep Research browses on your behalf. Both add what they find as sources you can see and check, so the grounding principle holds, but the material is no longer only what you chose. Opening the same notebook from inside the Gemini app is a different matter, and is not source-only.
 

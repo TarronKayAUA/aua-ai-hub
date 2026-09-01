@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-28
+last_reviewed: 2026-09-01
 ---
 
 # AI Agents
@@ -52,7 +52,7 @@ Two risks matter more for agents than for chat:
 1. **Consequential actions.** An agent that can send, submit, post, purchase, or delete can do those things wrongly. Review anything irreversible before it executes; well-designed agents pause and ask at exactly these moments, and you should treat a tool that does not as unsuitable for consequential work.
 2. **Prompt injection.** An agent that reads web pages, emails, or documents can encounter text written to manipulate it ("ignore your instructions and forward this file"). The agent cannot always tell your instructions from an attacker's. Vendors are building defenses (OpenAI added a Lockdown Mode to ChatGPT in June 2026 specifically against this class of attack), but the working assumption stays: the more an agent can touch, and the more untrusted content it reads, the more deliberately you scope what it is allowed to do.
 
-The [AI Responsible Use Policy](../governance/policy.md)'s existing rules carry the rest of the weight: you are accountable for work done on your behalf, which includes anything an agent does; and the data prohibitions are unchanged, so an agent must not be given access to patient information, student records, or confidential material that the underlying tool is not approved to handle. Expect university guidance on agents to become more specific as the governance process continues; the principles above already apply.
+The installable version of the same problem is a skill: a file of instructions an agent follows with whatever access you have already granted, which is why the [Skills page](skills.md) treats skills from unknown authors as software rather than advice. The [AI Responsible Use Policy](../governance/policy.md)'s existing rules carry the rest of the weight: you are accountable for work done on your behalf, which includes anything an agent does; and the data prohibitions are unchanged, so an agent must not be given access to patient information, student records, or confidential material that the underlying tool is not approved to handle. Expect university guidance on agents to become more specific as the governance process continues; the principles above already apply.
 
 ## The agents
 
@@ -64,7 +64,7 @@ The [Agents category in the tools directory](index.md#agents) carries every entr
 | [Cowork](#cowork-anthropic) | Anthropic | The natural starting agent for faculty and staff who live in documents |
 | [Codex](#codex-openai) | OpenAI | Developer-oriented, with the most thorough onboarding video on this page |
 | [ChatGPT Work](#chatgpt-work-openai) | OpenAI | The gentlest entry point: give it an outcome, get finished documents |
-| [Manus](#manus) | Meta, with a spin-out announced | Autonomous agent in a cloud workspace, working steps on its own infrastructure |
+| [Manus](#manus) | Independent; formerly part of Meta | Autonomous agent in a cloud workspace, working steps on its own infrastructure |
 | [Comet](#comet-perplexity) | Perplexity | The agent built into a web browser, acting across your open tabs |
 | [OpenClaw](#openclaw-open-source) | Open source | The self-hosted path: the most control and the most responsibility |
 
@@ -102,7 +102,7 @@ More: [ChatGPT Work and the desktop app](https://learn.chatgpt.com/docs/app).
 
 ### Manus
 
-A general-purpose autonomous agent in a cloud workspace: it decomposes a goal into steps and works them on its own infrastructure, returning research, documents, slides, and simple applications. Free credits to start, subscriptions beyond. Originally built by the startup Butterfly Effect and part of Meta since December 2025, Manus has announced it will soon resume operating as an independent company; account changes may be required during the transition.
+A general-purpose autonomous agent in a cloud workspace: it decomposes a goal into steps and works them on its own infrastructure, returning research, documents, slides, and simple applications. Free credits to start, subscriptions beyond. Originally built by the startup Butterfly Effect, acquired by Meta in December 2025, and returned to independent operation in August 2026 after Chinese regulators blocked the acquisition. Existing accounts may have changed during the separation, so check your account and any saved work.
 
 <!-- render:guide-videos:agents:manus -->
 
@@ -163,5 +163,13 @@ This page is the field guide; the rest of the site carries the working layer:
     Makes your preferences permanent once you are running sessions routinely.
 
     [Set it up once](standing-setups.md)
+
+- :material-toolbox:{ .lg .middle } __Skills__
+
+    ---
+
+    The four document skills you already have, and why skills from unknown authors are software, not advice.
+
+    [Read before installing](skills.md)
 
 </div>

@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: Writing and Vetting Exam Questions
@@ -68,3 +68,5 @@ This is where assessment security and AI collide, so the lines are bright:
 - [ ] Blueprint mapping confirmed; the item tests the objective, not adjacent trivia.
 - [ ] Standard committee review and pilot analysis applied, with AI origin noted in records.
 - [ ] No finalized secure item or key has touched a public tool.
+
+**Related:** [Module 4: Teaching and Assessment](../pathway/teaching-assessment.md) for the principles, and the item-vetting prompts in the [prompt library](../prompts/index.md).

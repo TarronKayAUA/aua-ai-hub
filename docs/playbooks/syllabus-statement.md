@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: Your Syllabus AI Statement
@@ -101,3 +101,5 @@ always apply: no patient information, no identifiable records, in any tool.
 - [ ] Nothing in your statement conflicts with the university policy's fixed points or your department's guidance.
 - [ ] The rationale is stated; students comply better with rules that explain themselves.
 - [ ] Enforcement language matches what you will actually do.
+
+**Related:** [Feedback on Student Writing](writing-feedback.md), where your disclosure practice has to match this statement, and [Module 3: The Rules](../pathway/rules.md).

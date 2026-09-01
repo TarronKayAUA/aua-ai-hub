@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-09-01
 ---
 
 # Module 7: Working with Agents
 
-<span class="meta-chip">Optional, for when the basics feel comfortable</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">CGEA competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
+<span class="meta-chip">Optional, for when the basics feel comfortable</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
 
 ## What you will be able to do
 
@@ -17,7 +17,9 @@ last_reviewed: 2026-07-13
 
 A chat assistant answers you; an agent works for you. The difference is the loop: an agent can act (read a file, run a command, write a document), check its own result, and continue, repeating until the task is done. That loop lets an agent run checks and hand you *evidence* that the work was completed, not just text that looks right. Those checks improve reliability, but they are the agent grading its own work: they do not replace your review. The loop is also why agents come with a control chat never needed: your permission.
 
-**Tool calls, and why you are the gate.** When an agent needs something done in the world, it pauses and asks: may I read this file, may I run this command, may I write this document. The interface executes the action only after the request passes a permission check, and in the default permission modes that check is you for anything consequential. Some settings auto-approve certain actions; [Your First Agent Session](../tools/first-session.md#the-settings-that-matter) covers which, and when they are earned. This is the module's one habit to build: **read the request before approving it.** A request that matches what you asked for gets a yes; a request that surprises you gets a no and a question. The permission prompt is not a formality to click through; it is the mechanism that makes a powerful tool safe, and it is enforced by the software, not by the model's good intentions.
+### Tool calls, and why you are the gate
+
+When an agent needs something done in the world, it pauses and asks: may I read this file, may I run this command, may I write this document. The interface executes the action only after the request passes a permission check, and in the default permission modes that check is you for anything consequential. Some settings auto-approve certain actions; [Your First Agent Session](../tools/first-session.md#the-settings-that-matter) covers which, and when they are earned. This is the module's one habit to build: **read the request before approving it.** A request that matches what you asked for gets a yes; a request that surprises you gets a no and a question. The permission prompt is not a formality to click through; it is the mechanism that makes a powerful tool safe, and it is enforced by the software, not by the model's good intentions.
 
 <figure class="figure">
 <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An agent proposes an action, you approve or deny at the gate, and only approved actions reach your machine">
@@ -42,11 +44,17 @@ A chat assistant answers you; an agent works for you. The difference is the loop
 <figcaption>Approve what matches your request; deny what surprises you. That one habit is most of agent safety.</figcaption>
 </figure>
 
-**When an agent beats chat.** The heavier and more file-bound the task, the more an agent wins. Chat is right for questions, drafts, and thinking; an agent is right when the work lives in files (a folder of readings to summarize, a document to revise consistently, data to reorganize), when it has many steps, or when it should be checked before you see it. There is an economic reason too: an agent writes a small script and lets your computer do mechanical work in seconds, where a chat interface would regenerate every word as paid output. If you have ever pasted a whole document into a chat window, an agent is the tool you were missing.
+### When an agent beats chat
 
-**Setups that persist.** Agents and assistants can both hold standing context so you stop re-explaining your job: a project per course with your syllabus attached, or a brief file in a folder the agent works in. One heuristic carries the whole idea: when the tool makes the same mistake twice, or you type the same correction twice, that correction belongs in the standing setup.
+The heavier and more file-bound the task, the more an agent wins. Chat is right for questions, drafts, and thinking; an agent is right when the work lives in files (a folder of readings to summarize, a document to revise consistently, data to reorganize), when it has many steps, or when it should be checked before you see it. There is an economic reason too: an agent writes a small script and lets your computer do mechanical work in seconds, where a chat interface would regenerate every word as paid output. If you have ever pasted a whole document into a chat window, an agent is the tool you were missing.
 
-**The safety floor does not move.** Everything from [Module 3](rules.md) applies with more force, because an agent can read every file in the folder you open for it. Open the folder the task needs, never your whole disk; a folder containing student records is a folder an agent should not work in. Start any new kind of task on copies, not originals. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
+### Setups that persist
+
+Agents and assistants can both hold standing context so you stop re-explaining your job: a project per course with your syllabus attached, or a brief file in a folder the agent works in. One heuristic carries the whole idea: when the tool makes the same mistake twice, or you type the same correction twice, that correction belongs in the standing setup.
+
+### The safety floor does not move
+
+Everything from [Module 3](rules.md) applies with more force, because an agent can read every file in the folder you open for it. Open the folder the task needs, never your whole disk; a folder containing student records is a folder an agent should not work in. Start any new kind of task on copies, not originals. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
 
 ## Self-check
 
@@ -66,4 +74,4 @@ A chat assistant answers you; an agent works for you. The difference is the loop
 - [Standing Setups](../tools/standing-setups.md): projects, instructions, and folder briefs that persist.
 - [Skills](../tools/skills.md): the document skills you already have, and how to judge the ones you would have to install.
 
-**Next:** [Your First Agent Session](../tools/first-session.md) puts this module into practice in 20 minutes.
+**Next:** [Choosing Your Interface](../tools/interfaces.md) picks the room, then [Your First Agent Session](../tools/first-session.md) puts this module into practice in 20 minutes.

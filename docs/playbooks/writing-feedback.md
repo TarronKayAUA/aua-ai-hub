@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: Feedback on Student Writing
@@ -75,3 +75,5 @@ One more failure mode is yours rather than the model's: feedback that arrives in
 - [ ] The feedback that reaches each student is in your voice and reflects your judgment, not a lightly edited transcript.
 - [ ] No grade, score, or ranking was AI-touched at any step.
 - [ ] Your disclosure practice matches your syllabus statement.
+
+**Related:** [Your Syllabus AI Statement](syllabus-statement.md), which sets the rule this practice has to match, and the advisor note in [Making Sense of Your Score Reports](score-reports.md).

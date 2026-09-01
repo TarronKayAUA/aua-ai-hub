@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Module 4: Teaching and Assessment
 
-<span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">CGEA competency domain: AI Possibilities in Medical Education</span>
+<span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: AI Possibilities in Medical Education</span>
 
 --8<-- "includes/prompt-maturity-note.md"
 
@@ -18,13 +18,21 @@ last_reviewed: 2026-07-02
 
 For educators, AI is at its best on structured generation from your materials: outlines, cases, vignettes, draft questions, rubrics, explanations at a chosen level, and alternative examples when students need a concept approached differently. It is weakest exactly where your judgment is the job: deciding what matters for your learners, judging clinical accuracy, and evaluating real student work fairly.
 
-**Content and session preparation.** The [Preparing a Lecture playbook](../playbooks/lecture-prep.md) walks the full workflow. The pattern generalizes: feed the model your objectives and materials, ask for structure plus active-learning checks, then apply your expertise to what comes back. The accuracy of anything that reaches students is yours to confirm.
+### Content and session preparation
 
-**Assessment writing.** AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence so far says quality is usable but uneven, with structural flaws that standard item-writing rules catch. Two non-negotiables frame the workflow: every AI-drafted item gets faculty review for accuracy and blueprint fit before use, and secure assessment materials (live exam items, answer keys, secure banks) never go into public AI tools. The [exam questions playbook](../playbooks/exam-items.md) gives the step-by-step, and the prompt library's [item writer and flaw checker](../prompts/index.md) carry the studies behind this as further reading.
+The [Preparing a Lecture playbook](../playbooks/lecture-prep.md) walks the full workflow. The pattern generalizes: feed the model your objectives and materials, ask for structure plus active-learning checks, then apply your expertise to what comes back. The accuracy of anything that reaches students is yours to confirm.
 
-**Evaluating student work.** This is the highest-caution zone. Identifiable student work and grades are FERPA-protected records, so they do not go into public tools; de-identify first or do not use AI at all. And outputs from AI detectors and similarity flags are preliminary indicators, not verdicts; treat any flag as a starting point for human review, never as sufficient evidence on its own.
+### Assessment writing
 
-**Your course's AI rules.** Students will use these tools; ambiguity serves no one. The policy delegates labeling and attribution expectations to course and departmental guidelines, which means your syllabus is where the line gets drawn. The [syllabus AI statement playbook](../playbooks/syllabus-statement.md) offers adaptable templates from prohibited to encouraged-with-verification.
+AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence so far says quality is usable but uneven, with structural flaws that standard item-writing rules catch. Two non-negotiables frame the workflow: every AI-drafted item gets faculty review for accuracy and blueprint fit before use, and secure assessment materials (live exam items, answer keys, secure banks) never go into public AI tools. The [exam questions playbook](../playbooks/exam-items.md) gives the step-by-step, and the prompt library's [item writer and flaw checker](../prompts/index.md) carry the studies behind this as further reading.
+
+### Evaluating student work
+
+This is the highest-caution zone. Identifiable student work and grades are FERPA-protected records, so they do not go into public tools; de-identify first or do not use AI at all. And outputs from AI detectors and similarity flags are preliminary indicators, not verdicts; treat any flag as a starting point for human review, never as sufficient evidence on its own.
+
+### Your course's AI rules
+
+Students will use these tools; ambiguity serves no one. The policy delegates labeling and attribution expectations to course and departmental guidelines, which means your syllabus is where the line gets drawn. The [syllabus AI statement playbook](../playbooks/syllabus-statement.md) offers adaptable templates from prohibited to encouraged-with-verification.
 
 <figure class="figure">
 <svg viewBox="0 0 660 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Caution gradient across three teaching tasks: content preparation has strong leverage, assessment writing needs review and security, evaluating student work is the highest-caution zone">
@@ -61,5 +69,6 @@ For educators, AI is at its best on structured generation from your materials: o
 - [Feedback on Student Writing](../playbooks/writing-feedback.md): the highest-caution zone above, as a full guarded workflow.
 - [Administrative Drafting](../playbooks/admin-drafting.md): the same discipline applied to memos, minutes, and reports.
 - [Standing Setups](../tools/standing-setups.md): a project per course, so the model knows your objectives all term.
+- [AI-Generated Images in Teaching](../playbooks/ai-images.md): why generated anatomy fails, what to reach for instead, and the conditions under which a flawed image is defensible pedagogy.
 
 **Next:** [Module 5: Research and Scholarship](research.md) or [Module 6: Clinical Contexts](clinical.md)

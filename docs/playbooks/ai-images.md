@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-08-25
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: AI-Generated Images in Teaching
 
-<span class="meta-chip">For faculty</span> <span class="meta-note">Anatomy, histology, pathology, and any teaching material where a picture carries the content</span>
+<span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Anatomy, histology, pathology, and any teaching material where a picture carries the content</span>
 
 ## The task
 
@@ -68,26 +68,29 @@ It is not generation. In a 2026 study, AI editing of an already accurate human-m
 
 Asking students to find what is wrong with an inaccurate image is real pedagogy, and it is a reasonable instinct when you are looking at a figure you have already made. Several things are worth knowing before you build a session around it.
 
-**It has been studied, and the result was sobering.** In a 2026 study, 121 students compared correct ophthalmic anatomy images against AI-generated variants containing deliberate errors, with immediate instructor feedback. Post-test knowledge scores did not differ from the control for either group. Educational background moderated only the self-reported outcomes, and not in the direction you might expect: students without medical training reported higher satisfaction and higher confidence in their own performance, while the medical students reported no benefit at all. Note also what the study had to do to run the exercise. Ophthalmologists and anatomists designed each error deliberately, one known error type per image, and only about a third of the generated candidates passed expert review for use ([DOI](https://doi.org/10.3389/fmed.2026.1868565)).
+??? note "The evidence, in detail"
+    **It has been studied, and the result was sobering.** In a 2026 study, 121 students compared correct ophthalmic anatomy images against AI-generated variants containing deliberate errors, with immediate instructor feedback. Post-test knowledge scores did not differ from the control for either group. Educational background moderated only the self-reported outcomes, and not in the direction you might expect: students without medical training reported higher satisfaction and higher confidence in their own performance, while the medical students reported no benefit at all. Note also what the study had to do to run the exercise. Ophthalmologists and anatomists designed each error deliberately, one known error type per image, and only about a third of the generated candidates passed expert review for use ([DOI](https://doi.org/10.3389/fmed.2026.1868565)).
 
-Two things keep that null from settling the question. The study measured immediately and did not assess retention, and in one erroneous-examples study the benefit was absent on the immediate test and significant a week later ([DOI](https://doi.org/10.1007/s40593-015-0064-x)). The wider family of designs also has support: across 53 studies, having learners grapple with a problem before instruction outperformed instruction first, with a moderate effect, provided a consolidation phase follows ([DOI](https://doi.org/10.3102/00346543211019105)).
+    Two things keep that null from settling the question. The study measured immediately and did not assess retention, and in one erroneous-examples study the benefit was absent on the immediate test and significant a week later ([DOI](https://doi.org/10.1007/s40593-015-0064-x)). The wider family of designs also has support: across 53 studies, having learners grapple with a problem before instruction outperformed instruction first, with a moderate effect, provided a consolidation phase follows ([DOI](https://doi.org/10.3102/00346543211019105)).
 
 **Spotting someone else's errors may be the weaker version of the design.** In a 2023 set of experiments, learners who generated a wrong answer themselves and then corrected it outperformed a control group that spotted and corrected the same errors their peers had made. That specific comparison is one experiment within one study of undergraduates reading science texts, so treat it as a reason to prefer the stronger design rather than as a settled result ([DOI](https://doi.org/10.1007/s10648-023-09739-z)). The cheap change it suggests: have students predict or sketch the structure first, then compare against both the flawed image and the correct one.
 
 The evidence supports the format only under these conditions:
 
-- **Not at first exposure.** Studying flawed examples helped transfer for learners who already had reasonable prior knowledge, while learners with weak prior knowledge did better with correct examples only ([DOI](https://doi.org/10.1016/j.learninstruc.2007.09.008)). A novice has no way to tell which parts of the image are the deliberate errors, and calling the activity a critique does not guarantee they leave holding the correct version.
-- **The correct image is present.** Side by side, so the comparison drives retrieval of real relationships rather than free-floating suspicion.
-- **Every error named in the debrief.** Students who analyzed contrasting cases and then received explicit instruction outperformed students who analyzed the same cases twice with no telling ([DOI](https://doi.org/10.1207/s1532690xci1604_4)). An error nobody caught, left uncorrected, is worse than the same error in an ordinary figure, because the exercise implied the rest of the image was sound.
-- **Decided in advance.** "This figure turned out wrong, so let us make it a critique exercise" is how an inaccurate image stays on the slide with a justification attached.
+- [ ] **Not at first exposure.** Studying flawed examples helped transfer for learners who already had reasonable prior knowledge, while learners with weak prior knowledge did better with correct examples only ([DOI](https://doi.org/10.1016/j.learninstruc.2007.09.008)). A novice has no way to tell which parts of the image are the deliberate errors, and calling the activity a critique does not guarantee they leave holding the correct version.
+- [ ] **The correct image is present.** Side by side, so the comparison drives retrieval of real relationships rather than free-floating suspicion.
+- [ ] **Every error named in the debrief.** Students who analyzed contrasting cases and then received explicit instruction outperformed students who analyzed the same cases twice with no telling ([DOI](https://doi.org/10.1207/s1532690xci1604_4)). An error nobody caught, left uncorrected, is worse than the same error in an ordinary figure, because the exercise implied the rest of the image was sound.
+- [ ] **Decided in advance.** "This figure turned out wrong, so let us make it a critique exercise" is how an inaccurate image stays on the slide with a justification attached.
 
 These are floors, not a guarantee. The ophthalmic study already showed each flawed image beside its correct counterpart and gave immediate feedback naming every error, which is two of these four conditions, and still found no knowledge gain. One more caution: the only outcomes that moved in that study were self-reported, and in the erring experiments learners could not identify which condition had actually helped them even after being tested. Positive student feedback is not evidence that the exercise taught the anatomy.
 
 ## Before you rely on any of it
 
-- The [AI Responsible Use Policy](../governance/policy.md) makes you accountable for the final output, requires you to verify the accuracy and validity of AI-generated content before using it, and asks you to consult faculty or other experts when you are unsure of it. For an anatomical figure, verifying accuracy means someone who knows the anatomy checking the anatomy.
-- Labels are the one failure you can check without knowing the structure. Typography in generated images has improved, but a legible word is not the same as the right word in the right place.
-- If a generated image is already in your material and it is wrong, take it out. Removing it costs one slide. Leaving it costs a correction you may never get to make, in students who will be confident.
-- Patient images, identifiable clinical photographs, and licensed atlas figures are governed by [The Rules](../pathway/rules.md) and by the license on the material, whatever tool is involved.
+- [ ] The [AI Responsible Use Policy](../governance/policy.md) makes you accountable for the final output, requires you to verify the accuracy and validity of AI-generated content before using it, and asks you to consult faculty or other experts when you are unsure of it. For an anatomical figure, verifying accuracy means someone who knows the anatomy checking the anatomy.
+- [ ] Labels are the one failure you can check without knowing the structure. Typography in generated images has improved, but a legible word is not the same as the right word in the right place.
+- [ ] If a generated image is already in your material and it is wrong, take it out. Removing it costs one slide. Leaving it costs a correction you may never get to make, in students who will be confident.
+- [ ] Patient images, identifiable clinical photographs, and licensed atlas figures are governed by [The Rules](../pathway/rules.md) and by the license on the material, whatever tool is involved.
 
 Students are meeting these tools too, and generating their own study figures. The student-facing version of this guidance is on the [Common Misconceptions](../basics/misconceptions.md) page.
+
+**Related:** [Image Generation Benchmarks](../benchmarks/image.md) for how these models are ranked, and [Preparing a Lecture](lecture-prep.md) for the session the figure belongs to.

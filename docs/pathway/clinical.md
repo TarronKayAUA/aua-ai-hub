@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Module 6: Clinical Contexts
 
-<span class="meta-chip">For students and clinical faculty</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">CGEA competency domain: AI Enhanced Clinical Encounters</span>
+<span class="meta-chip">For students and clinical faculty</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: AI Enhanced Clinical Encounters</span>
 
 ## What you will be able to do
 
@@ -16,11 +16,17 @@ last_reviewed: 2026-07-02
 
 Two different worlds share the word "clinical," and the rules differ sharply between them.
 
-**Learning clinical medicine with AI: encouraged, with discipline.** Practicing differentials against an AI case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Your course materials and the literature stay primary, per the [AI Responsible Use Policy](../governance/policy.md); the model is a practice partner, not a reference.
+### Learning clinical medicine with AI: encouraged, with discipline
 
-**AI in patient care: extreme caution, by policy.** The policy is direct: AI tools must not replace professional judgment or clinical expertise; they augment decisions, never automate them, and any AI-assisted decision must comply with clinical guidelines, ethical standards, and the law. As a student, the practical translation is that AI never sits between you and your supervisor's judgment about a real patient.
+Practicing differentials against an AI case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Your course materials and the literature stay primary, per the [AI Responsible Use Policy](../governance/policy.md); the model is a practice partner, not a reference.
 
-**The absolute rule.** Patient health information never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
+### AI in patient care: extreme caution, by policy
+
+The policy is direct: AI tools must not replace professional judgment or clinical expertise; they augment decisions, never automate them, and any AI-assisted decision must comply with clinical guidelines, ethical standards, and the law. As a student, the practical translation is that AI never sits between you and your supervisor's judgment about a real patient.
+
+### The absolute rule
+
+Patient health information never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
 
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels: learning clinical medicine with AI is encouraged with discipline; AI in patient care is extreme caution; patient information never enters a public tool in either world">
@@ -45,9 +51,13 @@ Two different worlds share the word "clinical," and the rules differ sharply bet
 <figcaption>Same word, different rules; the data floor is identical in both.</figcaption>
 </figure>
 
-**At clinical sites.** Hospitals and clinics have their own AI policies, often stricter than the university's and sometimes covering specific tools (ambient scribes, documentation assistants) that the site has or has not sanctioned. During rotations you are under both sets of rules; when they differ, follow the stricter one, and when you are unsure, ask before you use.
+### At clinical sites
 
-**Bias is a clinical issue here.** Models reflect their training data, and documented performance gaps across populations make uncritical clinical use an equity problem, not just an accuracy one. The policy's requirement to identify and mitigate bias applies with most force exactly here.
+Hospitals and clinics have their own AI policies, often stricter than the university's and sometimes covering specific tools (ambient scribes, documentation assistants) that the site has or has not sanctioned. During rotations you are under both sets of rules; when they differ, follow the stricter one, and when you are unsure, ask before you use.
+
+### Bias is a clinical issue here
+
+Models reflect their training data, and documented performance gaps across populations make uncritical clinical use an equity problem, not just an accuracy one. The policy's requirement to identify and mitigate bias applies with most force exactly here.
 
 ## Self-check
 

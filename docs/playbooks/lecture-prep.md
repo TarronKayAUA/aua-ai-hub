@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: Preparing a Lecture
@@ -56,7 +56,7 @@ AI is strong at structure and variation: organizing content against objectives, 
 1. **Start from the template.** The [Lecture outline builder](../prompts/index.md#content-generation) prompt in the library takes duration, audience, topic, and objectives, and returns a timed outline with an active check per section. Paste your materials after it; do not run it from a blank page.
 2. **Interrogate the draft.** Ask what the outline omits that a [your specialty] educator would expect, where students typically get confused on this topic, and what could be cut first if time runs short. Treat the answers as prompts for your judgment, not verdicts.
 3. **Deepen the checks.** For each section's active check, ask for one alternative format (one-best-answer question, think-pair-share prompt, quick poll) and pick what fits your room.
-4. **Generate support materials.** Once the outline is yours, ask for the things that follow mechanically: a handout skeleton, draft slide bullets per section, or three vignette variants of your opener for reuse in small groups.
+4. **Generate support materials.** Once the outline is yours, ask for the things that follow mechanically: a handout skeleton, draft slide bullets per section, or three vignette variants of your opener for reuse in small groups. For figures, read [AI-Generated Images in Teaching](ai-images.md) before generating one.
 5. **Verify content.** Every factual claim, dose, criterion, and guideline reference that survives into your materials gets checked against a current authoritative source. Models confidently reproduce outdated clinical thresholds; currency checking is non-negotiable.
 
 ## Guardrails for this task
@@ -71,3 +71,5 @@ AI is strong at structure and variation: organizing content against objectives, 
 - [ ] Every factual and clinical claim checked against a current source.
 - [ ] Checks and examples match your students' level, not a generic level.
 - [ ] The plan fits the real duration with the cut-first list identified.
+
+**Related:** [AI-Generated Images in Teaching](ai-images.md) for figures, and [Writing and Vetting Exam Questions](exam-items.md) for the items that follow the session.

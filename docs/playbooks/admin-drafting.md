@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: Administrative Drafting
@@ -76,3 +76,5 @@ The second hazard is voice. Administrative documents signed by you should sound 
 - [ ] Every fact in the draft traces to your bullet list; every [TO CONFIRM] resolved or removed.
 - [ ] Names, dates, amounts, and commitments verified individually.
 - [ ] It reads like you wrote it, because by the final pass, you did.
+
+**Related:** [Standing Setups](../tools/standing-setups.md) so the model knows your house style, and [Skills](../tools/skills.md) for producing the finished document as a real file.

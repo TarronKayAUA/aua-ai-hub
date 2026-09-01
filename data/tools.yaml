@@ -204,22 +204,23 @@
   blurb: "OpenAI's agent for finished work: give it an outcome and it returns documents, spreadsheets, slides, sites, or analyses. On the desktop it can use local files and applications with permission; included with every ChatGPT plan on desktop, with web and mobile on paid plans."
 
 - name: Manus
-  # Vendor updated 2026-07-14: acquisition announced 2025-12-30, verified
-  # from the manus.im banner ("Manus is now part of Meta") and CNBC.
-  # Status note updated 2026-08-11 (issue #39, owner approved): the
-  # banner now reads "Manus will soon resume operating as an
-  # independent company. Action may be required for your Manus
-  # account." Vendor stays Meta until the spin-out completes; the
-  # weekly watch will catch the change.
-  vendor: Meta
+  # Vendor history: acquired by Meta 2025-12-30 (manus.im banner and
+  # CNBC, checked 2026-07-14); spin-out announced on the banner 2026-08-11
+  # (issue #39). Returned to independent operation in August 2026 after
+  # Chinese regulators blocked the acquisition (Reuters, 2026-08-11:
+  # "AI startup Manus to resume independent operations as deal with Meta
+  # unwinds"; confirmed 2026-09-01, by which time the banner was gone).
+  # The watch could not catch this because the signal was the banner's
+  # disappearance, not a new statement.
+  vendor: Manus (Butterfly Effect)
   category: agents
   url: https://manus.im
   cost: freemium
   governance_status: listed
-  status_note: Meta acquired Manus in December 2025 and has announced it
+  status_note: Listed for discovery, not endorsement; the policy's data rules apply. Independent again since August 2026 after Chinese regulators blocked Meta's acquisition; existing accounts may have changed during the separation.
     will soon resume operating as an independent company; account
     changes may be required during the transition.
-  last_reviewed: 2026-08-11
+  last_reviewed: 2026-09-01
   blurb: General-purpose autonomous agent that breaks a goal into steps and executes them in a cloud workspace, producing research, documents, slides, and simple applications.
 
 - name: Comet

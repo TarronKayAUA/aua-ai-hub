@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-09-01
 ---
 
 # AI Literacy Pathway
@@ -62,7 +62,14 @@ For when the basics feel comfortable: how to work with AI that can read files, r
 | Step | Page | Time |
 | --- | --- | --- |
 | 7 | [Working with Agents](working-with-agents.md) | ~12 min |
-| Then | [Getting Better Answers](../basics/better-answers.md) · [Choosing Your Interface](../tools/interfaces.md) · [Standing Setups](../tools/standing-setups.md) · [Your First Agent Session](../tools/first-session.md) | self-paced |
+| 8 | [Choosing Your Interface](../tools/interfaces.md) | ~10 min |
+| 9 | [Your First Agent Session](../tools/first-session.md) | ~20 min, hands-on |
+| 10 | [Standing Setups](../tools/standing-setups.md) | ~10 min |
+| 11 | [Skills](../tools/skills.md) | ~8 min |
+
+[Getting Better Answers](../basics/better-answers.md), from Module 2, is the prerequisite this stage assumes rather than a step in it.
+
+**The reference shelf.** Five pages sit alongside the modules rather than in sequence: [How LLMs Work](../basics/how-llms-work.md) holds the diagrams Module 1 defers to; [Getting Better Answers](../basics/better-answers.md) is the operating manual for context, memory, and standing instructions; the [Glossary](../basics/glossary.md) defines every term the pathway uses; [Common Misconceptions](../basics/misconceptions.md) calibrates trust by task; and [Courses and Resources](../learning/index.md) lists external courses for when the pathway is done.
 
 **What it aligns with.** The pathway's coverage is mapped to the [Artificial Intelligence Competencies for Medical Educators](https://www.aamc.org/about-us/mission-areas/medical-education/advancing-ai-resource-collection/artificial-intelligence-competencies-medical-educators), the framework compiled by the Central Group on Educational Affairs (CGEA) Faculty Development Special Interest Group and published through the Association of American Medical Colleges (AAMC). Each module notes the competency domain it serves; the six core modules cover all seven domains, and Module 7 deepens Working with AI and Critical Appraisal of AI Outputs.
 

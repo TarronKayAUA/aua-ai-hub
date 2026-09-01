@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-08
+last_reviewed: 2026-09-01
 ---
 
 # AI for Research
@@ -93,9 +93,9 @@ For a first pass at "what does the literature say about X," licensed [Scopus AI]
 
 For planning statistics before data touches any tool, the [Analysis plan reviewer](../prompts/index.md) prompt in the library is the place to start; it recommends methods and names its assumptions without ever inventing results.
 
-The new category in 2026 is the **agentic research workbench**, and [Claude Science](https://claude.com/science) is the most complete entrant: a local-first desktop application in which a coordinating agent works with about 60 curated scientific skills and connectors (genomics, single-cell analysis, proteomics, structural biology, cheminformatics), executes code on your machine or your lab's infrastructure, and runs a reviewer agent that checks citations and calculations in what it produces. Local-first matters here: files and artifacts can stay on your device, which is a meaningfully better posture for sensitive research material than a consumer web tool.
+The new category in 2026 is the **agentic research workbench**, and [Claude Science](https://claude.com/science) is one such workbench: a local-first desktop application in which a coordinating agent can query more than 60 scientific databases and carries a growing set of scientific skills and connectors (genomics, single-cell analysis, proteomics, structural biology, cheminformatics), executes code on your machine or your lab's infrastructure, and runs a reviewer agent that checks citations and calculations in what it produces. Local-first matters here: files and artifacts can stay on your device, which is a meaningfully better posture for sensitive research material than a consumer web tool.
 
-**Setting it up:** Claude Science is in beta for Pro, Max, Team, and Enterprise Claude plans, on macOS 13+ and Linux x64, from [claude.com/science](https://claude.com/science). On a Windows machine, install it inside the Windows Subsystem for Linux (WSL: run `wsl --install` in an administrator terminal, then install the Linux build inside that environment); it can also run on a remote machine over SSH, including a high-performance computing login node. Expect beta rough edges, and hold it to the same standard as everything else here: the reviewer agent reduces checking work, it does not replace it.
+**Setting it up:** Claude Science is in beta for Pro, Max, Team, and Enterprise Claude plans, on Mac (Apple Silicon and Intel) and Linux, from [claude.com/science](https://claude.com/science). Anthropic also advertises a discounted Team plan for scientists at academic and nonprofit institutions, described on that page as available at no cost to start. On a Windows machine, install it inside the Windows Subsystem for Linux (WSL: run `wsl --install` in an administrator terminal, then install the Linux build inside that environment); it can also run on a remote machine over SSH, including a high-performance computing login node. Expect beta rough edges, and hold it to the same standard as everything else here: the reviewer agent reduces checking work, it does not replace it.
 
 For general-purpose agents (coding assistants, computer-use tools) that also serve research workflows, see [AI Agents](agents.md).
 
@@ -111,7 +111,7 @@ The prompt library's [Pre-submission reviewer and Reporting guideline auditor](.
 
 ## Cost and field fit at a glance
 
-Prices are approximate, checked July 2026 from vendor pages, and change often; the vendor's pricing page is authoritative.
+Prices are approximate, checked September 2026 from vendor pages, and change often; the vendor's pricing page is authoritative.
 
 | Tool | Cost | Best fit for AUA researchers |
 | --- | --- | --- |
@@ -120,10 +120,10 @@ Prices are approximate, checked July 2026 from vendor pages, and change often; t
 | [ResearchRabbit](#finding-and-mapping-literature) | Free (feature-complete tier) | Everyone; literature mapping in any field |
 | [Gemini Notebook](#synthesizing-from-your-own-sources) | Free; higher limits on Google's paid AI plans | Everyone; synthesis from your own paper set |
 | [Consensus](#answering-evidence-questions) | Free tier; Pro about $10/month, student discounts | Clinical and biomedical evidence questions |
-| [Elicit](#screening-and-extracting) | Free tier; paid tiers roughly $7 to $49/month | Systematic-review style screening and extraction |
+| [Elicit](#screening-and-extracting) | Free tier; paid tiers from $11 to $89 per user per month when billed annually | Systematic-review style screening and extraction |
 | [Scite](#answering-evidence-questions) | About $20/month, free trial | Verifying how key claims held up; biomedical depth |
 | [OpenEvidence](#answering-evidence-questions) | Free for verified US clinicians and US medical students | Clinical questions; US-credential holders only |
-| [Claude Science](#analysis-and-agentic-workbenches) | Included in paid Claude plans (beta) | Computational and laboratory science; statistics-heavy work |
+| [Claude Science](#analysis-and-agentic-workbenches) | Included in paid Claude plans (beta); a discounted Team plan for scientists is advertised for academic and nonprofit institutions | Computational and laboratory science; statistics-heavy work |
 
 Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, Gemini Notebook, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
 

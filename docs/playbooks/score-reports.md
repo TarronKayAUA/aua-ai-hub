@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-14
+last_reviewed: 2026-09-01
 ---
 
 # Playbook: Making Sense of Your Score Reports
@@ -149,3 +149,5 @@ Before you run any prompt, open your report and write down your own three takeaw
 - [ ] The weekly hours in the plan are hours you demonstrably have.
 - [ ] Strong areas appear in every week, not only the weak ones.
 - [ ] Your advisor has seen the plan, or the meeting is booked.
+
+**Related:** [AI and the Residency Application](residency-application.md) for the year that follows, and [Module 6: Clinical Contexts](../pathway/clinical.md) for the wards.

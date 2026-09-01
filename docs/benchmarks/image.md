@@ -1,10 +1,17 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-09-01
 ---
 
 # Image Generation Benchmarks
 
-Text-to-image models are judged differently from language models. There is no answer key for a picture, so the field's standard is the **arena**: thousands of people are shown two images generated from the same prompt, without knowing which model made which, and vote for the better one. Votes become Elo-style ratings, the same math used to rank chess players. It measures human preference at scale, which is most of what matters for generated images, with one caveat: preference rewards what looks good, which is not always what is accurate.
+Text-to-image models are judged differently from language models, because there is no answer key for a picture. The field's standard is the **arena**: thousands of people see two images generated from the same prompt, without knowing which model made which, and vote for the better one. Votes become Elo-style ratings, the same math used to rank chess players.
+
+That measures human preference at scale, which is most of what matters for generated images. The caveat is that preference rewards what looks good, not what is accurate, so look past the overall rank for:
+
+- **Prompt adherence:** whether the image contains what was asked for, in the arrangement asked for.
+- **Text rendering:** legible, correctly spelled labels, which most models still get wrong.
+- **Anatomy:** counts and spatial relations, the two things generators handle worst.
+- **Style range:** whether a model can produce a clean schematic as well as a photograph.
 
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How an arena ranks models: one prompt produces two images from hidden models, a person votes for the better one, and thousands of blind votes become Elo-style ratings">
@@ -77,6 +84,7 @@ No public leaderboard ranks models on generating *accurate* medical imagery, and
 - A 2025 study in the Journal of Pediatric Ophthalmology and Strabismus had general text-to-image models depict common pediatric eye pathologies and scored them against human medical illustration: the generated images rated poorly overall and worse on pathological accuracy specifically ([DOI](https://doi.org/10.3928/01913913-20250724-03)).
 - A clinical perspective in Cureus reaches the same balance point for practice: generated imagery may eventually enrich patient communication and teaching, but inaccuracy and bias demand that it supplement, never substitute for, verified clinical material ([DOI](https://doi.org/10.7759/cureus.68313)).
 - The technical literature on medical image synthesis and translation is advancing quickly, with its own evaluation metrics distinct from preference arenas; a 2025 review in Medical Image Analysis maps that landscape ([DOI](https://doi.org/10.1016/j.media.2025.103605)).
+- For teaching figures specifically, the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook covers the anatomy evaluations, what to reach for instead, and when a flawed image is defensible in a session.
 
 The practical guidance for the American University of Antigua College of Medicine (AUACOM) follows directly: treat general-purpose image models as illustration tools, not anatomy references. A generated image used in teaching needs expert review for accuracy and labeling as AI-generated per the [AI Responsible Use Policy](../governance/policy.md).
 

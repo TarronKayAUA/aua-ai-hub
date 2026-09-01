@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-09-01
 ---
 
 # Module 1: How AI Works
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">CGEA competency domain: Understanding AI</span>
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: Understanding AI</span>
 
 ## What you will be able to do
 
@@ -69,5 +69,6 @@ Three consequences worth internalizing:
 - [How LLMs Work](../basics/how-llms-work.md): the same mechanics, one level down (already linked above; it rewards a second pass).
 - [Common Misconceptions](../basics/misconceptions.md): calibrating trust by task.
 - [Benchmarks](../benchmarks.md): how capability actually gets measured, updated nightly.
+- [Glossary](../basics/glossary.md): the terms used across the pathway, one paragraph each.
 
 **Next:** [Module 2: Prompting Fundamentals](prompting.md)

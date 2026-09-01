@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-14
+last_reviewed: 2026-09-01
 ---
 
 # Your First Agent Session
@@ -10,7 +10,7 @@ last_reviewed: 2026-07-14
 
 ## Before you start
 
-- Install an agent: the [Claude Code desktop app](https://claude.com/claude-code) or the [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) (Codex is a mode inside it). Both offer free tiers sufficient for this walkthrough.
+- Install an agent: the [Claude Code desktop app](https://claude.com/claude-code) or the [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) (Codex is a mode inside it). Codex is included with every ChatGPT plan, including Free; Claude Code needs a paid Claude plan (Pro or above), so take the ChatGPT route if you have no subscription.
 - Optional but worthwhile: the [local toolkit](interfaces.md#equipping-the-machine), so document conversion works when you get ambitious later.
 
 ## The walkthrough

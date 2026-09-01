@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-14
+last_reviewed: 2026-09-01
 ---
 
 # Tool Directory
@@ -59,13 +59,31 @@ The directory catalogs; the guides recommend. Route by what you need:
 
     ---
 
-    [Local Models](#local-models), with [Running Models Locally](local.md) as the walkthrough.
+    [Local Models](#local-models), with [Running Models Locally](local.md) as the walkthrough and [Hardware for Local AI](hardware.md) for sizing the machine.
 
 - :material-clipboard-text:{ .lg .middle } __A task end to end__
 
     ---
 
-    The [playbooks](../playbooks/index.md) walk one task at a time, guardrails included.
+    The [playbooks](../playbooks/index.md) walk one task at a time, guardrails included, and the [prompt library](../prompts/index.md) holds the reusable templates they draw on.
+
+- :material-robot:{ .lg .middle } __Delegate a task to an agent__
+
+    ---
+
+    [AI Agents](agents.md) is the field guide; [Your First Agent Session](first-session.md) runs one in 20 minutes on a folder that cannot be hurt.
+
+- :material-file-document-multiple:{ .lg .middle } __Documents, decks, and spreadsheets__
+
+    ---
+
+    Four document [skills](skills.md) are already switched on, and the same page explains why skills from unknown authors are software, not advice.
+
+- :material-notebook:{ .lg .middle } __Your own lectures and papers__
+
+    ---
+
+    [Gemini Notebook](gemini-notebook.md) answers from what you upload, with citations; [Standing Setups](standing-setups.md) makes any assistant remember your course.
 
 </div>
 
@@ -77,7 +95,7 @@ The directory catalogs; the guides recommend. Route by what you need:
 
 The assistants above run in their vendor's cloud. Open-weights models are different: the model file itself is published for anyone to download and run on their own hardware, so nothing you type leaves your machine. The Local Models tools above are the usual way to run them; [Running AI Models Locally](local.md) is a practical walkthrough. Capability rankings shift quickly; the [Benchmarks page](../benchmarks.md) tracks current standings. Model families carry a license instead of a governance status, because there is no service operator to have a relationship with; as everywhere in this directory, a listing is not an endorsement, and the license named on each entry is the fact to check before any use beyond personal experimentation.
 
-The major open-weight families as of June 2026:
+The major open-weight families; each entry shows the date its license and description were last checked:
 
 <!-- render:open-models -->
 
