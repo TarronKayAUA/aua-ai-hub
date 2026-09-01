@@ -119,10 +119,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">Practical AI, July 9, 2026</span>
   <span class="video-card-desc">Hamza Tahir discusses MLOps principles for moving AI agents from demos to reliable production systems, covering workflows, harnesses, fleets, and infrastructure.</span>
 </a>
-<a class="video-card" href="https://aipodcast.education/weve-read-the-ai-reports-so-you-dont-have-to-series-17-episode-9" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9" loading="lazy">
-  <span class="video-card-title">We&#x27;ve Read the AI Reports So You Don&#x27;t Have To - Series 17, Episode 9</span>
-  <span class="video-card-meta">AI in Education Podcast, July 2, 2026</span>
-  <span class="video-card-desc">Ray and Dan survey recent research on artificial intelligence in education, summarizing findings for educators and students.</span>
-</a>
 </div>

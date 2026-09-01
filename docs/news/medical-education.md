@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A randomized crossover trial found that ChatGPT-assisted personalized learning improved outcomes for undergraduate medical students studying acute abdomen, adding controlled evidence to curriculum experiments <a href="https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1">[1]</a>. That momentum meets sharper scrutiny of assessment: a new study finds large language models grade student essays higher than human instructors, echoing a MIT report urging alternative grading and more social learning as AI reshapes classrooms <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[14]</a>. Benchmark testing shows Gemini and Grok reaching about 81 percent accuracy on USMLE Step 1-style allergy and immunology questions, ahead of ChatGPT, with results shifting by prompt complexity <a href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">[8]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum, including proposals for postgraduate AI literacy training and programs integrating generative AI into coursework. Four pieces cover assessment and feedback, ranging from AI-assisted feedback workflows to clinician labeling reliability. Two studies explore simulation and skills, and one report examines adoption attitudes among public health professionals.</p>
-<p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the items below.</p>
+<p>Foundation models evaluated on official German medical licensing examinations showed uneven performance, raising questions about how AI-assisted exams should be designed <a href="https://www.nature.com/articles/s41746-026-03082-7">[4]</a>. Elsewhere, conversational AI virtual patients are moving into skills training, with Spanish medical students reporting favorable acceptance of pediatric interview practice tools <a href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">[2]</a>. Benchmark testing continues to probe model reliability, as Gemini and Grok outperformed ChatGPT on USMLE Step 1-style allergy and immunology questions, though prompt complexity still shifted results <a href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">[12]</a>. Separately, an analysis found that AI&#x27;s effect on critical thinking depends on cognitive load and self-regulated learning, not just tool availability <a href="https://pubmed.ncbi.nlm.nih.gov/42661654?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">[11]</a>.</p>
+<p>Also this week: the section&#x27;s seven items on teaching and curriculum span AI-assisted personalized learning in surgical education and generative AI integration in physiotherapy training, while three pieces on assessment and feedback include rubric-based OSCE simulation work. Two entries cover simulation and skills training, two more benchmark exam performance, and one surveys AI adoption attitudes among health professionals.</p>
+<p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.28619">From GenAI Virtual Patient Dialogue Logs to Teacher-Interpretable Process Evidence: A Learning Analytics Study in Higher Education</a>
+    <p class="news-card-summary">Learning analytics study extracting interpretable process evidence from generative AI virtual patient dialogue logs for medical history-taking assessment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">Practicing pediatric interviews with parents through conversational AI-based virtual patients: an observational study in Spanish undergraduate medical education</a>
+    <p class="news-card-summary">Observational study of Spanish medical students&#x27; acceptance and satisfaction with conversational AI-based virtual patients for pediatric interview practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">August 31, 2026</span></div>
@@ -112,20 +126,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42651234?fc=20260609215449&amp;ff=20260827055305&amp;v=2.20.1">Artificial Intelligence Adoption in Public Health Practice: A Cross-Sectional Study of Practical Determinants Among Healthcare Professionals</a>
     <p class="news-card-summary">Cross-sectional study identifying knowledge, trust, and legal concern as determinants of artificial intelligence adoption among healthcare professionals.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42649563?fc=20260609215449&amp;ff=20260827055305&amp;v=2.20.1">Human Evaluation of Synthetic Videostroboscopic Laryngeal Images Generated Using StyleGAN3</a>
-    <p class="news-card-summary">Evaluation of synthetic laryngeal images generated by StyleGAN3 for training, demonstrating high perceptual realism with practical implications for training data generation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42656949?fc=20260609215449&amp;ff=20260827181741&amp;v=2.20.1">From Living Systematic Reviews to Fully AI-Driven Reviews</a>
-    <p class="news-card-summary">Analysis of how artificial intelligence can automate and improve systematic reviews in medical research, addressing manual workload and timeliness challenges.</p>
   </div>
 </div>
 </div>

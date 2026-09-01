@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A retrospective study developing AI models to predict suicide risk in mental health patients points to predictive analytics moving into safety-critical decision support <a href="https://ai.jmir.org/2026/1/e85085">[8]</a>. In imaging, a fine-tuning-free agentic framework for breast ultrasound malignancy classification separates segmentation from feature analysis without retraining <a href="https://www.nature.com/articles/s41746-026-03144-w">[1]</a>. Documentation is also shifting, as large language models are used to automate chart review and database construction <a href="https://www.nature.com/articles/s41746-026-03179-z">[6]</a>. Preanesthetic assessment is following suit, with GPT-4o validated to reduce subjective variability in perioperative risk stratification <a href="https://medinform.jmir.org/2026/1/e83893">[12]</a>. A parallel reinforcement learning method targets credit assignment failures in medical LLM reasoning, addressing evaluation concerns before deployment <a href="https://arxiv.org/abs/2608.26147">[5]</a>.</p>
-<p>Also this week: four safety and evaluation studies address reasoning robustness and real-world cost tradeoffs, three imaging and diagnostics papers extend computational pathology and cytomorphology analysis, and three clinical decision support studies examine ambient AI adoption and phenotyping from oncology notes. Two documentation papers, including one on national rare disease data warehousing, round out the coverage.</p>
-<p class="section-brief-date">The picture as of August 30, 2026; numbered links go to the items below.</p>
+<p>A systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on diagnostic performance and clinical applicability across studies <a href="https://www.nature.com/articles/s41746-026-03168-2">[3]</a>, arriving alongside a parallel review of large language models in mental health care that weighs clinical usefulness against safety and implementation readiness <a href="https://ai.jmir.org/2026/1/e87730">[1]</a>. Suicide risk prediction also advances, with a retrospective study using real-world clinical data to model risk timing in adult mental health patients <a href="https://ai.jmir.org/2026/1/e85085">[11]</a>. In imaging, a fine-tuning-free agentic framework for breast ultrasound malignancy classification separates segmentation from feature analysis without retraining <a href="https://www.nature.com/articles/s41746-026-03144-w">[4]</a>, while documentation gains a validated GPT-4o system for automated preanesthetic assessment <a href="https://medinform.jmir.org/2026/1/e83893">[15]</a>.</p>
+<p>Also this week: the section&#x27;s four safety and evaluation studies and four clinical decision support papers extend into chatbot memory frameworks, causally-aligned reasoning training, and Bayesian cost-savings analysis. Three imaging and diagnostics papers cover cytomorphology and pathology atlases, two patient-facing tools weigh chatbot support claims, and two documentation studies include OncoRAG&#x27;s oncology note phenotyping.</p>
+<p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87730">Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis</a>
+    <p class="news-card-summary">Systematic review and meta-analysis of large language models in mental health care examining clinical usefulness, safety, and implementation readiness.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88441">Predicting Call Abandonment in a Health Care Call Center Using Nonpersonal Operational Data: Machine Learning Study</a>
+    <p class="news-card-summary">Machine learning study predicting call abandonment in health care call centers using anonymized operational data only.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 25, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83893">GPT-4o, Powered Preanesthetic AI: Development and Validation Study</a>
     <p class="news-card-summary">Study validates GPT-4o for automated preanesthetic assessment, reducing subjective judgment and incomplete documentation in perioperative risk stratification.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e99206">Building a National Interoperable Rare Eye Disease Data Warehouse: Methodological Framework and Implementation Report From the French Rare Eye Disease Database (FREDD) Initiative</a>
-    <p class="news-card-summary">French national data warehouse integrates fragmented rare eye disease registries under strict data protection rules to enable multicenter research and reliable analysis.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92843">Reflection- and Curriculum-Based Instruction Tuning for Diabetes-Specialized Large Language Models: Model Development and Evaluation Study</a>
-    <p class="news-card-summary">Study describes instruction tuning methods for a diabetes-specialized large language model to improve glycemic interpretation, dietary guidance, and patient education.</p>
   </div>
 </div>
 </div>

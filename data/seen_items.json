@@ -1,267 +1,6 @@
 {
  "items": [
   {
-   "url": "https://mededu.jmir.org/2026/1/e98949",
-   "title_hash": "2822984860b4e24d0f1f17005cea123d",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence for Assessment and Feedback in Medical Education: Bibliometric Mapping Study and Thematic Evidence Map",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-02T21:00:38+00:00",
-   "summary": "Bibliometric and thematic mapping study of artificial intelligence applications for assessment and feedback in medical education.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ult0f4/its_officially_over_one_of_the_fathers_of_ai_at",
-   "title_hash": "042d5da356c0b25464bdf5dd1f62a784",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent",
-   "title_hash": "b91d3394be2a44fdf6b8eb992a33dea5",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e87897",
-   "title_hash": "b8de38e2e1184c06408e95235fcf799e",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "Digital Simulation, Based Ultrasound Training for Physiotherapy Students: Prospective Randomized Controlled Trial",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-02T19:30:18+00:00",
-   "summary": "Prospective randomized controlled trial of digital simulation-based ultrasound training for physiotherapy students compared to traditional on-site methods.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts",
-   "title_hash": "a22cfc635757851e2bd811929e8d41b8",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://joeyh.name/blog/entry/no_LLM_code_in_dependencies",
-   "title_hash": "31b8f784cef2cd09c44fbe2d4c478402",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42391624?fc=20260609215449&ff=20260702194001&v=2.20.0",
-   "title_hash": "14695f5fde83857d21374d9a9fb36e09",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "Agreement Between Reasoning-Oriented Generative AI Models and Clinical Educators in Evaluating Japanese Objective Structured Clinical Examination Transcripts: Preliminary Comparative Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "Single-center study comparing reasoning-oriented generative AI models to clinical educators in evaluating Japanese objective structured clinical exams.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42391038?fc=20260609215449&ff=20260702194001&v=2.20.0",
-   "title_hash": "4185a147aaa015e6434a525d626e77e3",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "Artificial intelligence teaching assistants: a scalable solution for supporting struggling medical students",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "Study of AI teaching assistants shows correlation with improved exam performance and reduced academic difficulty in medical students.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42391026?fc=20260609215449&ff=20260702194001&v=2.20.0",
-   "title_hash": "1c70f1fe696ffc0fb716347319416485",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "MDCU MedUMORE: a national digital platform for equitable and lifelong medical education in Thailand and beyond",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-02T10:00:00+00:00",
-   "summary": "National digital platform for medical education in Thailand addressing inequities in infrastructure, faculty availability, and continuing professional development access.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02943-5",
-   "title_hash": "2b503d13906b0efb4e8c90dcf7a76cad",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "KGRD: a knowledge-graph-augmented automated reasoning framework for diagnosis and counselling of paediatric rare genetic disorders",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-02T00:00:00+00:00",
-   "summary": "Knowledge-graph-augmented automated reasoning framework for diagnosis and counseling of pediatric rare genetic disorders published in npj Digital Medicine.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ukkz9a/non_us_ally_should_be_afraid",
-   "title_hash": "fe2506470460db739d5259dfc71380c2",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=_pkjyDSwO7I",
-   "title_hash": "b4acc7d29585de051ea36836a725129a",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "MedAI #162: Clinical Environment Simulator | Luyang Luo",
-   "source": "Stanford MedAI",
-   "published": "2026-05-28T23:40:26+00:00",
-   "summary": "Clinical Environment Simulator addresses limitations of current medical LLM benchmarks by providing more realistic evaluation contexts.",
-   "category": "videos",
-   "score": 4.0,
-   "thumbnail": "https://i4.ytimg.com/vi/_pkjyDSwO7I/hqdefault.jpg"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Os_wohQDErw",
-   "title_hash": "9d4b63d6b9d25269f3aefda61eb1f663",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "MedAI #161: A prospective trial of a conversational AI in a primary care clinic | Jacob Koshy",
-   "source": "Stanford MedAI",
-   "published": "2026-05-05T06:43:33+00:00",
-   "summary": "Prospective trial results from deployment of conversational AI in primary care clinic practice.",
-   "category": "videos",
-   "score": 4.0,
-   "thumbnail": "https://i4.ytimg.com/vi/Os_wohQDErw/hqdefault.jpg"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=gp4pHq9FRDI",
-   "title_hash": "402846ddc07e609e918347587e6ce6a0",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "MedAI #160: AI and LLMs for Advancing Clinical Research and Practice | Rui Zhang",
-   "source": "Stanford MedAI",
-   "published": "2026-04-23T23:19:21+00:00",
-   "summary": "Overview of applications of AI and large language models for advancing clinical research and practice.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i4.ytimg.com/vi/gp4pHq9FRDI/hqdefault.jpg"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=mBTp5WTcDhk",
-   "title_hash": "e06d2569963353858075de0487dbec22",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "MedAI #159: The Alignment Tax: How the Same Helpful LLMs Training Makes Them Dangerous | Mahmud Omar",
-   "source": "Stanford MedAI",
-   "published": "2026-04-15T21:24:58+00:00",
-   "summary": "Analysis of safety tradeoffs in large language model training: how alignment techniques can create unexpected risks.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/mBTp5WTcDhk/hqdefault.jpg"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=b0dZjfQ1rpc",
-   "title_hash": "50b6b2c5c4b04b8863974f6a5df1b1ab",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist",
-   "source": "The Medical Futurist",
-   "published": "2026-06-30T09:16:30+00:00",
-   "summary": "Examination of AI scribes as a near-term healthcare AI tool with direct clinical utility and physician acceptance.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=eqFOXtw89r4",
-   "title_hash": "799964f7effeb8e0b6410698645cf88b",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=YifvLHvLckA",
-   "title_hash": "c055c5bcca24db5370927b1c61a2b766",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=cwPCMh3_D5c",
-   "title_hash": "948eb83eb0a80fa1ff4f8201a955375c",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=m4V48NkY7Vo",
-   "title_hash": "99e78baf53c9edb035307d5ebed9c5ed",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=G5JdWttaKTs",
-   "title_hash": "9d0f5c63415a9f9985d42467e20d8be0",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=aYBf0qitkdQ",
-   "title_hash": "68fe7f2490152b93f0d78adf32b3161b",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=qks6dGQFd_c",
-   "title_hash": "da8494b18ee7ad9e2940d190e1283247",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=d-hJa-yDJmQ",
-   "title_hash": "2134c26421f2cb29843d01b699f3b43a",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Companies-Are-Hiring-More-e3lj0ra",
-   "title_hash": "0304da86959bb0fad578607d50d77eb5",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": false
-  },
-  {
-   "url": "https://aipodcast.education/weve-read-the-ai-reports-so-you-dont-have-to-series-17-episode-9",
-   "title_hash": "e525fc7f7038f9a4b1daee33ad20c4c3",
-   "first_seen": "2026-07-02T23:40:00.982999+00:00",
-   "kept": true,
-   "title": "We've Read the AI Reports So You Don't Have To - Series 17, Episode 9",
-   "source": "AI in Education Podcast",
-   "published": "2026-07-02T20:07:00+00:00",
-   "summary": "Ray and Dan survey recent research on artificial intelligence in education, summarizing findings for educators and students.",
-   "category": "podcasts",
-   "score": 3.0,
-   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=zdhY9ZXn410",
-   "title_hash": "eabb41ca78a8ce3f623548875bbeaf4d",
-   "first_seen": "2026-07-02T23:44:44.984429+00:00",
-   "kept": true,
-   "title": "GLM-5.2 vs Claude Opus 4.8, Does GLM REALLY Beat Claude?",
-   "source": "Bijan Bowen",
-   "published": "2026-06-29T15:57:44+00:00",
-   "summary": "Benchmark comparison of GLM-5.2 and Claude Opus 4.8 across multiple test scenarios.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i3.ytimg.com/vi/zdhY9ZXn410/hqdefault.jpg",
-   "display_title": "Comparison of GLM-5.2 and Claude Opus 4.8 AI models"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=y24lF1q4SFY",
-   "title_hash": "8e61e7a5d55ca9bcc3ca2cf9041eb646",
-   "first_seen": "2026-07-02T23:44:44.984429+00:00",
-   "kept": true,
-   "title": "Fable 5 vs GPT 5.6 Sol: The Early Results",
-   "source": "AI Explained",
-   "published": "2026-07-02T16:27:26+00:00",
-   "summary": "Hands-on comparison of Fable 5 and GPT 5.6 Sol model performance across benchmark tasks.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/y24lF1q4SFY/hqdefault.jpg"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1um702y/claude_code_and_china_the_mechanism_is_activated",
    "title_hash": "4a985908d43a072739a9efecc72da099",
    "first_seen": "2026-07-03T10:18:09.141194+00:00",
@@ -31656,6 +31395,273 @@
    "first_seen": "2026-08-31T21:29:14.208308+00:00",
    "kept": false,
    "reason": "daily news show recap with no standout educational substance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28608",
+   "title_hash": "ced57192c53a9144f52b524c73985e4b",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad medical AI significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28609",
+   "title_hash": "e68f53100beb5837c00908a382ba3f1d",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical study without medical or education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28611",
+   "title_hash": "c4ba6fd394f198797bb44da35ac97ce0",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad medical or education significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28614",
+   "title_hash": "5d2b1f77895a833d0923f498642bee7a",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28619",
+   "title_hash": "b5a8134b537d8e8b38cbe8dea8a28619",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": true,
+   "title": "From GenAI Virtual Patient Dialogue Logs to Teacher-Interpretable Process Evidence: A Learning Analytics Study in Higher Education",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-01T04:00:00+00:00",
+   "summary": "Learning analytics study extracting interpretable process evidence from generative AI virtual patient dialogue logs for medical history-taking assessment.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28623",
+   "title_hash": "55acb3e6b2e4ab1ff5fe510d26d0390a",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broad medical significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28624",
+   "title_hash": "8970b524c78db3efca7b83ab61e68af6",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow domain application of existing techniques"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28625",
+   "title_hash": "1cb9994f859e87b7f5d16e69cc42583f",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "preprint on narrow NLP method without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28626",
+   "title_hash": "608b5d1a55e6c68790a98d91b2c553dd",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": true,
+   "title": "Do large language models scrutinise what they review? A multimodal audit of scoring calibration, error detection, and author-identity effects",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-01T04:00:00+00:00",
+   "summary": "Audit of multimodal large language models as peer reviewers examining scoring calibration, error detection, and author-identity bias.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28629",
+   "title_hash": "ca91eec876dff4594d485ba5752abca0",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad medical significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28630",
+   "title_hash": "71c7545e0f9f3841d515e378f392e862",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28633",
+   "title_hash": "d652e1818ce4a6a01e955d3870a00d69",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28635",
+   "title_hash": "6b069964833d1019325655bcb8b2d3be",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad medical significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28640",
+   "title_hash": "78f9f8a648ff35813b03014892a46c3d",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28641",
+   "title_hash": "0fde62bab77c1f94d757e1237cabc7b3",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28643",
+   "title_hash": "f16bd205edf62022a94110181e712672",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broad medical or education significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28645",
+   "title_hash": "1689f5829b35e45dc241c7e558d21da8",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad medical significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28649",
+   "title_hash": "86c1f89d9422602dfef0a1f9f8aa9c73",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28660",
+   "title_hash": "d1aadfb5c41d039c468e0ffe293e2f18",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical study without medical or education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28667",
+   "title_hash": "a406015b4be2e063fe63051af167a55e",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": true,
+   "title": "GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-01T04:00:00+00:00",
+   "summary": "Benchmark and evaluation of large language model inference energy efficiency and carbon footprint on Apple Silicon.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28707",
+   "title_hash": "c580522a1ff21cd7c523fbc3342c5d06",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical study without medical or education relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28776",
+   "title_hash": "00c13beaed88dd04e952a80d4dfef826",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28846",
+   "title_hash": "09bd67e8c883f9b0594025fadc220b6a",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization study without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28860",
+   "title_hash": "11f0e1da6caaab0e925427a2a5507d92",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broad medical or education significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2608.28875",
+   "title_hash": "84c7e4441ac4ad58ccbadc8b35a2ff07",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "narrow technical study without broad medical or education significance"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture",
+   "title_hash": "a104b2d35eefec36d66d1cf6e66ef3d4",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "minor tool release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/31/andrew-digby",
+   "title_hash": "75d9aa1c97ea4f0f239be3bd81a2a39f",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e107588",
+   "title_hash": "b9595f4bec62fdeb75128c6aa68ca406",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "letter to editor, not substantive research"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e87730",
+   "title_hash": "90c8afbfc311f6c3b6dc28217a5e40d9",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": true,
+   "title": "Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis",
+   "source": "JMIR AI",
+   "published": "2026-08-31T17:15:11+00:00",
+   "summary": "Systematic review and meta-analysis of large language models in mental health care examining clinical usefulness, safety, and implementation readiness.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88441",
+   "title_hash": "3dc8c28a62f5a4e0bd004f604c688c29",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": true,
+   "title": "Predicting Call Abandonment in a Health Care Call Center Using Nonpersonal Operational Data: Machine Learning Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-08-31T17:00:03+00:00",
+   "summary": "Machine learning study predicting call abandonment in health care call centers using anonymized operational data only.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42671328?fc=20260609215449&ff=20260901011346&v=2.20.1",
+   "title_hash": "9b678b7bb22ee37118cd3e9b8f8e13c4",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "letter to editor without substantive content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&ff=20260901011346&v=2.20.1",
+   "title_hash": "b9a23ba0eec5196ba836bbb014054725",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": true,
+   "title": "Practicing pediatric interviews with parents through conversational AI-based virtual patients: an observational study in Spanish undergraduate medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-31T10:00:00+00:00",
+   "summary": "Observational study of Spanish medical students' acceptance and satisfaction with conversational AI-based virtual patients for pediatric interview practice.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42670335?fc=20260609215449&ff=20260901011346&v=2.20.1",
+   "title_hash": "68f82e5d3652178f4eec38cba581b633",
+   "first_seen": "2026-09-01T05:13:45.920771+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
@@ -31834,19 +31840,19 @@
  "last_digest_at": "2026-08-28T11:27:06.277324+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A randomized crossover trial found that ChatGPT-assisted personalized learning improved outcomes for undergraduate medical students studying acute abdomen, adding controlled evidence to curriculum experiments <a href=\"https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1\">[1]</a>. That momentum meets sharper scrutiny of assessment: a new study finds large language models grade student essays higher than human instructors, echoing a MIT report urging alternative grading and more social learning as AI reshapes classrooms <a href=\"https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans\">[14]</a>. Benchmark testing shows Gemini and Grok reaching about 81 percent accuracy on USMLE Step 1-style allergy and immunology questions, ahead of ChatGPT, with results shifting by prompt complexity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1\">[8]</a>.\n\nAlso this week: seven items address teaching and curriculum, including proposals for postgraduate AI literacy training and programs integrating generative AI into coursework. Four pieces cover assessment and feedback, ranging from AI-assisted feedback workflows to clinician labeling reliability. Two studies explore simulation and skills, and one report examines adoption attitudes among public health professionals.",
-   "hash": "a177201a662d06ed",
-   "date": "August 31, 2026"
+   "text": "Foundation models evaluated on official German medical licensing examinations showed uneven performance, raising questions about how AI-assisted exams should be designed <a href=\"https://www.nature.com/articles/s41746-026-03082-7\">[4]</a>. Elsewhere, conversational AI virtual patients are moving into skills training, with Spanish medical students reporting favorable acceptance of pediatric interview practice tools <a href=\"https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1\">[2]</a>. Benchmark testing continues to probe model reliability, as Gemini and Grok outperformed ChatGPT on USMLE Step 1-style allergy and immunology questions, though prompt complexity still shifted results <a href=\"https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1\">[12]</a>. Separately, an analysis found that AI&#x27;s effect on critical thinking depends on cognitive load and self-regulated learning, not just tool availability <a href=\"https://pubmed.ncbi.nlm.nih.gov/42661654?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1\">[11]</a>.\n\nAlso this week: the section&#x27;s seven items on teaching and curriculum span AI-assisted personalized learning in surgical education and generative AI integration in physiotherapy training, while three pieces on assessment and feedback include rubric-based OSCE simulation work. Two entries cover simulation and skills training, two more benchmark exam performance, and one surveys AI adoption attitudes among health professionals.",
+   "hash": "d51ab8f43d48258f",
+   "date": "September 1, 2026"
   },
   "clinical_practice": {
-   "text": "A retrospective study developing AI models to predict suicide risk in mental health patients points to predictive analytics moving into safety-critical decision support <a href=\"https://ai.jmir.org/2026/1/e85085\">[8]</a>. In imaging, a fine-tuning-free agentic framework for breast ultrasound malignancy classification separates segmentation from feature analysis without retraining <a href=\"https://www.nature.com/articles/s41746-026-03144-w\">[1]</a>. Documentation is also shifting, as large language models are used to automate chart review and database construction <a href=\"https://www.nature.com/articles/s41746-026-03179-z\">[6]</a>. Preanesthetic assessment is following suit, with GPT-4o validated to reduce subjective variability in perioperative risk stratification <a href=\"https://medinform.jmir.org/2026/1/e83893\">[12]</a>. A parallel reinforcement learning method targets credit assignment failures in medical LLM reasoning, addressing evaluation concerns before deployment <a href=\"https://arxiv.org/abs/2608.26147\">[5]</a>.\n\nAlso this week: four safety and evaluation studies address reasoning robustness and real-world cost tradeoffs, three imaging and diagnostics papers extend computational pathology and cytomorphology analysis, and three clinical decision support studies examine ambient AI adoption and phenotyping from oncology notes. Two documentation papers, including one on national rare disease data warehousing, round out the coverage.",
-   "hash": "4974c979e2c71e64",
-   "date": "August 30, 2026"
+   "text": "A systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on diagnostic performance and clinical applicability across studies <a href=\"https://www.nature.com/articles/s41746-026-03168-2\">[3]</a>, arriving alongside a parallel review of large language models in mental health care that weighs clinical usefulness against safety and implementation readiness <a href=\"https://ai.jmir.org/2026/1/e87730\">[1]</a>. Suicide risk prediction also advances, with a retrospective study using real-world clinical data to model risk timing in adult mental health patients <a href=\"https://ai.jmir.org/2026/1/e85085\">[11]</a>. In imaging, a fine-tuning-free agentic framework for breast ultrasound malignancy classification separates segmentation from feature analysis without retraining <a href=\"https://www.nature.com/articles/s41746-026-03144-w\">[4]</a>, while documentation gains a validated GPT-4o system for automated preanesthetic assessment <a href=\"https://medinform.jmir.org/2026/1/e83893\">[15]</a>.\n\nAlso this week: the section&#x27;s four safety and evaluation studies and four clinical decision support papers extend into chatbot memory frameworks, causally-aligned reasoning training, and Bayesian cost-savings analysis. Three imaging and diagnostics papers cover cytomorphology and pathology atlases, two patient-facing tools weigh chatbot support claims, and two documentation studies include OncoRAG&#x27;s oncology note phenotyping.",
+   "hash": "df9954ab3571cbf7",
+   "date": "September 1, 2026"
   },
   "general_ai": {
-   "text": "Nvidia&#x27;s reported $13 billion bid to acquire Hugging Face, the leading open-source model repository, would concentrate significant infrastructure under one hardware vendor <a href=\"https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion\">[12]</a>. The move comes as safety concerns multiply: a new study found that six commercial language models were more likely to endorse premature decisions when users expressed emotional distress <a href=\"https://arxiv.org/abs/2608.27465\">[1]</a>, while security researcher Johann Rehberger demonstrated a prompt injection attack that bypassed Claude Code Opus 5&#x27;s default auto-mode protections <a href=\"https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode\">[10]</a>. Anthropic separately published a hardware standard letting AI agents control physical devices <a href=\"https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world\">[11]</a>. Tencent&#x27;s Hy4 Preview, a 770-billion-parameter open-weights model with a 1-million-token context window, also arrived <a href=\"https://simonwillison.net/2026/Aug/29/hy4\">[7]</a>.\n\nAlso this week: five items address safety and reliability, four cover research and methods, two touch industry and policy, and one each covers new models and benchmarks. Topics range from watermarking techniques for open-source models to survey work on rubric-guided reinforcement learning, alongside a benchmark update adding a Global South language to automatic speech recognition evaluation.",
-   "hash": "12db2d1622097099",
-   "date": "August 31, 2026"
+   "text": "The European Union&#x27;s classification of ChatGPT as a very large online search engine under the Digital Services Act marks a significant regulatory shift, subjecting the chatbot to stricter content moderation and risk mitigation requirements <a href=\"https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules\">[4]</a>. Separately, research on large language models&#x27; handling of emotionally vulnerable users found that six commercial models were more likely to endorse premature decisions when users expressed distress <a href=\"https://arxiv.org/abs/2608.27465\">[5]</a>, while a multimodal audit of AI peer reviewers identified calibration and author-identity bias in scoring <a href=\"https://arxiv.org/abs/2608.28626\">[1]</a>. Tencent&#x27;s release of Hy4 Preview, a 770-billion-parameter open-weights model, expanded the field of large-scale open models <a href=\"https://simonwillison.net/2026/Aug/29/hy4\">[12]</a>.\n\nAlso this week: additional safety research covers adversarial evasion of content moderation and watermarking for AI-generated text, alongside work on rubric-guided reinforcement learning and stylometric detection of AI writing. Debian&#x27;s decision to allow AI-assisted code contributions reflects industry debate over AI tool policies, and a new benchmark measures energy efficiency of local LLM inference on Apple Silicon hardware.",
+   "hash": "b6736cdec3b228d8",
+   "date": "September 1, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -31935,5 +31941,5 @@
    "url": "https://chimera-agent.grand-challenge.org/"
   }
  },
- "section_briefs_refreshed": "2026-08-31"
+ "section_briefs_refreshed": "2026-09-01"
 }

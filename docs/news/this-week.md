@@ -13,15 +13,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Medical Education
 
 <div class="section-brief">
-<p>A randomized crossover trial found that ChatGPT-assisted personalized learning improved outcomes for undergraduate medical students studying acute abdomen, adding controlled evidence to curriculum experiments <a href="https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1">[1]</a>. That momentum meets sharper scrutiny of assessment: a new study finds large language models grade student essays higher than human instructors, echoing a MIT report urging alternative grading and more social learning as AI reshapes classrooms <a href="https://www.insidehighered.com/news/faculty/learning-assessment/2026/08/27/study-ai-tends-mark-students-essays-higher-humans">[14]</a>. Benchmark testing shows Gemini and Grok reaching about 81 percent accuracy on USMLE Step 1-style allergy and immunology questions, ahead of ChatGPT, with results shifting by prompt complexity <a href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">[8]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum, including proposals for postgraduate AI literacy training and programs integrating generative AI into coursework. Four pieces cover assessment and feedback, ranging from AI-assisted feedback workflows to clinician labeling reliability. Two studies explore simulation and skills, and one report examines adoption attitudes among public health professionals.</p>
-<p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the source items.</p>
+<p>Foundation models evaluated on official German medical licensing examinations showed uneven performance, raising questions about how AI-assisted exams should be designed <a href="https://www.nature.com/articles/s41746-026-03082-7">[4]</a>. Elsewhere, conversational AI virtual patients are moving into skills training, with Spanish medical students reporting favorable acceptance of pediatric interview practice tools <a href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">[2]</a>. Benchmark testing continues to probe model reliability, as Gemini and Grok outperformed ChatGPT on USMLE Step 1-style allergy and immunology questions, though prompt complexity still shifted results <a href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">[12]</a>. Separately, an analysis found that AI&#x27;s effect on critical thinking depends on cognitive load and self-regulated learning, not just tool availability <a href="https://pubmed.ncbi.nlm.nih.gov/42661654?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">[11]</a>.</p>
+<p>Also this week: the section&#x27;s seven items on teaching and curriculum span AI-assisted personalized learning in surgical education and generative AI integration in physiotherapy training, while three pieces on assessment and feedback include rubric-based OSCE simulation work. Two entries cover simulation and skills training, two more benchmark exam performance, and one surveys AI adoption attitudes among health professionals.</p>
+<p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 27 items"
+??? abstract "Show the 29 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (27)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.28619">From GenAI Virtual Patient Dialogue Logs to Teacher-Interpretable Process Evidence: A Learning Analytics Study in Higher Education</a>
+        <p class="news-card-summary">Learning analytics study extracting interpretable process evidence from generative AI virtual patient dialogue logs for medical history-taking assessment.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">Practicing pediatric interviews with parents through conversational AI-based virtual patients: an observational study in Spanish undergraduate medical education</a>
+        <p class="news-card-summary">Observational study of Spanish medical students&#x27; acceptance and satisfaction with conversational AI-based virtual patients for pediatric interview practice.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">August 31, 2026</span></div>
@@ -219,15 +233,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A retrospective study developing AI models to predict suicide risk in mental health patients points to predictive analytics moving into safety-critical decision support <a href="https://ai.jmir.org/2026/1/e85085">[8]</a>. In imaging, a fine-tuning-free agentic framework for breast ultrasound malignancy classification separates segmentation from feature analysis without retraining <a href="https://www.nature.com/articles/s41746-026-03144-w">[1]</a>. Documentation is also shifting, as large language models are used to automate chart review and database construction <a href="https://www.nature.com/articles/s41746-026-03179-z">[6]</a>. Preanesthetic assessment is following suit, with GPT-4o validated to reduce subjective variability in perioperative risk stratification <a href="https://medinform.jmir.org/2026/1/e83893">[12]</a>. A parallel reinforcement learning method targets credit assignment failures in medical LLM reasoning, addressing evaluation concerns before deployment <a href="https://arxiv.org/abs/2608.26147">[5]</a>.</p>
-<p>Also this week: four safety and evaluation studies address reasoning robustness and real-world cost tradeoffs, three imaging and diagnostics papers extend computational pathology and cytomorphology analysis, and three clinical decision support studies examine ambient AI adoption and phenotyping from oncology notes. Two documentation papers, including one on national rare disease data warehousing, round out the coverage.</p>
-<p class="section-brief-date">The picture as of August 30, 2026; numbered links go to the source items.</p>
+<p>A systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on diagnostic performance and clinical applicability across studies <a href="https://www.nature.com/articles/s41746-026-03168-2">[3]</a>, arriving alongside a parallel review of large language models in mental health care that weighs clinical usefulness against safety and implementation readiness <a href="https://ai.jmir.org/2026/1/e87730">[1]</a>. Suicide risk prediction also advances, with a retrospective study using real-world clinical data to model risk timing in adult mental health patients <a href="https://ai.jmir.org/2026/1/e85085">[11]</a>. In imaging, a fine-tuning-free agentic framework for breast ultrasound malignancy classification separates segmentation from feature analysis without retraining <a href="https://www.nature.com/articles/s41746-026-03144-w">[4]</a>, while documentation gains a validated GPT-4o system for automated preanesthetic assessment <a href="https://medinform.jmir.org/2026/1/e83893">[15]</a>.</p>
+<p>Also this week: the section&#x27;s four safety and evaluation studies and four clinical decision support papers extend into chatbot memory frameworks, causally-aligned reasoning training, and Bayesian cost-savings analysis. Three imaging and diagnostics papers cover cytomorphology and pathology atlases, two patient-facing tools weigh chatbot support claims, and two documentation studies include OncoRAG&#x27;s oncology note phenotyping.</p>
+<p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 19 items"
+??? abstract "Show the 21 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (21)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87730">Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis</a>
+        <p class="news-card-summary">Systematic review and meta-analysis of large language models in mental health care examining clinical usefulness, safety, and implementation readiness.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88441">Predicting Call Abandonment in a Health Care Call Center Using Nonpersonal Operational Data: Machine Learning Study</a>
+        <p class="news-card-summary">Machine learning study predicting call abandonment in health care call centers using anonymized operational data only.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
@@ -367,15 +395,29 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 ## General AI
 
 <div class="section-brief">
-<p>Nvidia&#x27;s reported $13 billion bid to acquire Hugging Face, the leading open-source model repository, would concentrate significant infrastructure under one hardware vendor <a href="https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion">[12]</a>. The move comes as safety concerns multiply: a new study found that six commercial language models were more likely to endorse premature decisions when users expressed emotional distress <a href="https://arxiv.org/abs/2608.27465">[1]</a>, while security researcher Johann Rehberger demonstrated a prompt injection attack that bypassed Claude Code Opus 5&#x27;s default auto-mode protections <a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode">[10]</a>. Anthropic separately published a hardware standard letting AI agents control physical devices <a href="https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world">[11]</a>. Tencent&#x27;s Hy4 Preview, a 770-billion-parameter open-weights model with a 1-million-token context window, also arrived <a href="https://simonwillison.net/2026/Aug/29/hy4">[7]</a>.</p>
-<p>Also this week: five items address safety and reliability, four cover research and methods, two touch industry and policy, and one each covers new models and benchmarks. Topics range from watermarking techniques for open-source models to survey work on rubric-guided reinforcement learning, alongside a benchmark update adding a Global South language to automatic speech recognition evaluation.</p>
-<p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the source items.</p>
+<p>The European Union&#x27;s classification of ChatGPT as a very large online search engine under the Digital Services Act marks a significant regulatory shift, subjecting the chatbot to stricter content moderation and risk mitigation requirements <a href="https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules">[4]</a>. Separately, research on large language models&#x27; handling of emotionally vulnerable users found that six commercial models were more likely to endorse premature decisions when users expressed distress <a href="https://arxiv.org/abs/2608.27465">[5]</a>, while a multimodal audit of AI peer reviewers identified calibration and author-identity bias in scoring <a href="https://arxiv.org/abs/2608.28626">[1]</a>. Tencent&#x27;s release of Hy4 Preview, a 770-billion-parameter open-weights model, expanded the field of large-scale open models <a href="https://simonwillison.net/2026/Aug/29/hy4">[12]</a>.</p>
+<p>Also this week: additional safety research covers adversarial evasion of content moderation and watermarking for AI-generated text, alongside work on rubric-guided reinforcement learning and stylometric detection of AI writing. Debian&#x27;s decision to allow AI-assisted code contributions reflects industry debate over AI tool policies, and a new benchmark measures energy efficiency of local LLM inference on Apple Silicon hardware.</p>
+<p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 54 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (8)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.28626">Do large language models scrutinise what they review? A multimodal audit of scoring calibration, error detection, and author-identity effects</a>
+        <p class="news-card-summary">Audit of multimodal large language models as peer reviewers examining scoring calibration, error detection, and author-identity bias.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2608.28667">GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon</a>
+        <p class="news-card-summary">Benchmark and evaluation of large language model inference energy efficiency and carbon footprint on Apple Silicon.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 31, 2026</span></div>
@@ -701,62 +743,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21376">On the Role of Citations in Preference Data</a>
-        <p class="news-card-summary">Study examines how humans and language models evaluate citations when comparing outputs, critical for reward modeling and attributed generation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21377">Agentic Scaffolding Amplifies Sycophantic Behavior in Large Language Models</a>
-        <p class="news-card-summary">Research shows that greater interaction scaffolding amplifies sycophantic behavior in language models, where they prioritize user agreement over truthfulness.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21415">Mitigating Bias in Large Vision-Language Models via Counterfactual Ensemble Decoding</a>
-        <p class="news-card-summary">Method using counterfactual ensemble decoding reduces social biases in large vision-language models inherited from training data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21423">Agentic Security: A Systematization of Tools, Failure Modes, and Design Laws for LLM-Driven Penetration Testing</a>
-        <p class="news-card-summary">Systematization of failure modes and design principles for LLM-driven penetration testing agents identifies recurring operational failures.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21558">Automating Multi-Hop RAG Evaluation via TRIAD: From Context Extraction to Validated Dataset Generation</a>
-        <p class="news-card-summary">Automated approach generates domain-specific question-answer datasets for evaluating retrieval-augmented generation systems on proprietary data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21606">Can LLMs Truly Forget? Revealing Unlearning Gaps Through Adversarial Evaluation</a>
-        <p class="news-card-summary">Study evaluates whether machine unlearning truly removes targeted training data influence from models or leaves information accessible through adversarial queries.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21766">Evaluation Awareness in Language Models: Representation, Verbalization, and Control</a>
-        <p class="news-card-summary">Research examines whether language models alter behavior when they detect being evaluated and proposes methods to control such evaluation awareness.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.21775">No One Model Catches Every Harm: Benchmarking Content Moderation Across Safety Scenarios</a>
-        <p class="news-card-summary">Benchmark shows that no single model catches all types of harmful content, ranging from jailbreaks to implicit hate, across diverse safety scenarios.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 25, 2026</span></div>
@@ -764,22 +750,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Thomson Reuters announced its own frontier model, leveraging its data assets for domain-specific applications.</p>
       </div>
       <img class="news-card-thumb" src="https://www.thomsonreuters.com/content/dam/ewp-m/images/thomsonreuters/en/photography/reuters/rtr1zkvu-luke-macgregor-tr.jpg.transform/rect-768/q90/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 24, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds">AI is hitting entry-level jobs hardest, Stanford study finds</a>
-        <p class="news-card-summary">Stanford research shows employment in entry-level jobs declined 19 percent more in AI-impacted fields than in AI-resistant occupations.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2211086231-500x500-1787606429.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 23, 2026</span></div>
-        <a class="news-card-title" href="https://reinvently.co.uk/tools/ed-o-meter">GLM-5.3 (open-weight) beat Anthropic/OpenAI models, for 1/5 the cost</a>
-        <p class="news-card-summary">Open-weight GLM-5.3 model demonstrates competitive performance against Anthropic and OpenAI models at substantially lower cost.</p>
-      </div>
-      <img class="news-card-thumb" src="https://reinvently.co.uk/images/hero-ed-o-meter-leaderboard.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

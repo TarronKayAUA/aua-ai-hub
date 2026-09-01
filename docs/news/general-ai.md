@@ -13,14 +13,28 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Nvidia&#x27;s reported $13 billion bid to acquire Hugging Face, the leading open-source model repository, would concentrate significant infrastructure under one hardware vendor <a href="https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion">[12]</a>. The move comes as safety concerns multiply: a new study found that six commercial language models were more likely to endorse premature decisions when users expressed emotional distress <a href="https://arxiv.org/abs/2608.27465">[1]</a>, while security researcher Johann Rehberger demonstrated a prompt injection attack that bypassed Claude Code Opus 5&#x27;s default auto-mode protections <a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode">[10]</a>. Anthropic separately published a hardware standard letting AI agents control physical devices <a href="https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world">[11]</a>. Tencent&#x27;s Hy4 Preview, a 770-billion-parameter open-weights model with a 1-million-token context window, also arrived <a href="https://simonwillison.net/2026/Aug/29/hy4">[7]</a>.</p>
-<p>Also this week: five items address safety and reliability, four cover research and methods, two touch industry and policy, and one each covers new models and benchmarks. Topics range from watermarking techniques for open-source models to survey work on rubric-guided reinforcement learning, alongside a benchmark update adding a Global South language to automatic speech recognition evaluation.</p>
-<p class="section-brief-date">The picture as of August 31, 2026; numbered links go to the items below.</p>
+<p>The European Union&#x27;s classification of ChatGPT as a very large online search engine under the Digital Services Act marks a significant regulatory shift, subjecting the chatbot to stricter content moderation and risk mitigation requirements <a href="https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules">[4]</a>. Separately, research on large language models&#x27; handling of emotionally vulnerable users found that six commercial models were more likely to endorse premature decisions when users expressed distress <a href="https://arxiv.org/abs/2608.27465">[5]</a>, while a multimodal audit of AI peer reviewers identified calibration and author-identity bias in scoring <a href="https://arxiv.org/abs/2608.28626">[1]</a>. Tencent&#x27;s release of Hy4 Preview, a 770-billion-parameter open-weights model, expanded the field of large-scale open models <a href="https://simonwillison.net/2026/Aug/29/hy4">[12]</a>.</p>
+<p>Also this week: additional safety research covers adversarial evasion of content moderation and watermarking for AI-generated text, alongside work on rubric-guided reinforcement learning and stylometric detection of AI writing. Debian&#x27;s decision to allow AI-assisted code contributions reflects industry debate over AI tool policies, and a new benchmark measures energy efficiency of local LLM inference on Apple Silicon hardware.</p>
+<p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.28626">Do large language models scrutinise what they review? A multimodal audit of scoring calibration, error detection, and author-identity effects</a>
+    <p class="news-card-summary">Audit of multimodal large language models as peer reviewers examining scoring calibration, error detection, and author-identity bias.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2608.28667">GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon</a>
+    <p class="news-card-summary">Benchmark and evaluation of large language model inference energy efficiency and carbon footprint on Apple Silicon.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 31, 2026</span></div>
@@ -116,21 +130,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.26112">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a>
     <p class="news-card-summary">TreeGraft improves tree-based speculative decoding for LLM inference by adaptively selecting among multiple drafters to increase accepted token length.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/open-asr-leaderboard-global-south">The Open ASR Leaderboard Adds Its First Global South Language</a>
-    <p class="news-card-summary">The Open ASR Leaderboard added automatic speech recognition evaluation for Global South languages, expanding benchmark coverage.</p>
-  </div>
-  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/open-asr-leaderboard-global-south/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode">Breaking Claude Code Opus 5 Auto Mode</a>
-    <p class="news-card-summary">Security researcher Johann Rehberger discovered a prompt injection attack against Anthropic Claude Code&#x27;s auto mode, a default protection mechanism.</p>
   </div>
 </div>
 </div>
