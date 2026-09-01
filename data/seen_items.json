@@ -1,288 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1um702y/claude_code_and_china_the_mechanism_is_activated",
-   "title_hash": "4a985908d43a072739a9efecc72da099",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "forum thread about implementation detail, not substantive news"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01235",
-   "title_hash": "6baf8faffc295e81d19b43505634d2b9",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow technical study on code-oriented interpretability, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01236",
-   "title_hash": "7c69f8c8854c3bd13707adf7059bf6c2",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow safety mechanism study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01237",
-   "title_hash": "35291d1a5aad31f9c29ecbbc24c8aed0",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow optimization technique, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01238",
-   "title_hash": "7a46c89b7c14718475fb5a24496a49d5",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow speech synthesis study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01239",
-   "title_hash": "718711a3de82789c6ad987f50e7e8a43",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow tokenization safety study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01240",
-   "title_hash": "fe6521b4f79fed48e2502a2a637e8147",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow methodology study on evaluation, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01241",
-   "title_hash": "f74ec3a9e18d1e0c4b0082bbfaea8b0b",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow prompt compression technique, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01245",
-   "title_hash": "174be76880f7ae4d70a8c8adfa382360",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow benchmark announcement, insufficient detail in summary"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01293",
-   "title_hash": "40d656fe17b4d1c6a9715f97036b388a",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow framework for rule grounding, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01345",
-   "title_hash": "76a7ca41b2a5a73aee713efd4c1b43af",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow dialogue evaluation metric, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01388",
-   "title_hash": "f35526ece681e1aac0ab4a70fd42cc55",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow domain benchmark, not broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01392",
-   "title_hash": "b5fb94fe0e45ba8956984327951ae865",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow alignment optimization study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01420",
-   "title_hash": "a99a087eb1aafbd253fab5303d429fb0",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow attribution method for QA, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01431",
-   "title_hash": "c70af2510e99ed35cb906aa1a6e20eb4",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": true,
-   "title": "IsoSci: A Benchmark of Isomorphic Cross-Domain Science Problems for Evaluating Reasoning versus Knowledge Retrieval in LLMs",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-03T04:00:00+00:00",
-   "summary": "IsoSci benchmark uses isomorphic cross-domain science problems to evaluate whether large language models reason or retrieve knowledge.",
-   "category": "general_ai",
-   "score": 3.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01440",
-   "title_hash": "799172e89e64b29aa8ab8c4a878f0ebb",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": true,
-   "title": "FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-03T04:00:00+00:00",
-   "summary": "FaithMed trains language models to produce faithful evidence-based medical reasoning by grounding outputs in cited medical knowledge.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01457",
-   "title_hash": "2f4ba2b03c948be2ccbe7676669e6bfe",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow application to document rewriting, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01464",
-   "title_hash": "cf26fd8fc5ec432e0218fecae8ebb286",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow political text scaling study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01502",
-   "title_hash": "dc94d5196d044cb17c339bdc061d571d",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow ASR evaluation for specific languages, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01517",
-   "title_hash": "5d49d4bc97483a738faea7d46049452b",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow parameter optimization study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01538",
-   "title_hash": "cc29df6b255f47cea1fbf4e801266ea0",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow retrieval-in-context study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01557",
-   "title_hash": "d949f0852821f16636928ff28fb53bac",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow persuasion dialogue application, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01581",
-   "title_hash": "8b45b4631ba35107f49ac17dba433bf0",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow pedagogical reasoning study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01602",
-   "title_hash": "b16f579d24c58014056b6f5610aa5229",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "off-topic; FPGA CNN accelerators, not AI in medicine or education"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01727",
-   "title_hash": "9f0957188713ce8ba82d3d69bfcdef54",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow synthetic data scaling study, insufficient broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.01733",
-   "title_hash": "739390b41cd5fba9e68c9411d39b9cc9",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "narrow speech-LLM integration study, insufficient broad significance"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02885-y",
-   "title_hash": "4578e0012c56384ede4582dd517592fd",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": true,
-   "title": "BCGNet: an AI model trained on 600 K hours of sleep data for a novel under-pillow contactless monitoring device",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-03T00:00:00+00:00",
-   "summary": "BCGNet is an AI model trained on 600,000 hours of sleep data for contactless under-pillow monitoring of sleep patterns.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02909-7",
-   "title_hash": "95b1c3f70467859446b7155bd5c3b232",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": true,
-   "title": "Fast information and slow evidence in the large language models era",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-03T00:00:00+00:00",
-   "summary": "Article examines how large language models generate fast information but may conflict with slower evidence-based clinical practice.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02952-4",
-   "title_hash": "843892602a8042ccc9adb75bc59c17c8",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": true,
-   "title": "Automated diagnosis of keratitis from low-quality slit-lamp images using an improved generative adversarial network",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-03T00:00:00+00:00",
-   "summary": "Improved generative adversarial network automatically diagnoses keratitis from low-quality slit-lamp images.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04478-4",
-   "title_hash": "487606a2b33db80a9c5e22d7f508c1c8",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "summary truncated, unrelated to AI"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04502-7",
-   "title_hash": "a2d8f16610840c9c0c50846b4b5ad404",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": true,
-   "title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
-   "source": "Nature Medicine",
-   "published": "2026-07-03T00:00:00+00:00",
-   "summary": "COMPASS, a generalizable AI model, predicts immunotherapy outcomes across multiple cancer types and treatments.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04493-5",
-   "title_hash": "97ffd4106918507168349063a6e8c973",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "summary truncated, unrelated to AI"
-  },
-  {
-   "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
-   "title_hash": "14f25f5f0c635757ce24ad544f7b1073",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "tool integration announcement without substantive capability news"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42391868?fc=20260609215449&ff=20260703061809&v=2.20.0",
-   "title_hash": "4ca03fc2c9806679104d7713596f8a67",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "off-topic; taxi speeding risk, not AI in medical education"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=J0D7qV3nl7w",
-   "title_hash": "270b65a5705002827120e944dee20813",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "title uses shock phrasing; summary too incomplete to verify substantive news"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=tV5zXS78HzU",
-   "title_hash": "cc882a9c5fcba388665b9d956090a3f1",
-   "first_seen": "2026-07-03T10:18:09.141194+00:00",
-   "kept": false,
-   "reason": "title is rumor-framed and incomplete; source material too fragmentary to evaluate"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/3/june-newsletter",
    "title_hash": "a4db28fd73fef6ad6697f0fda95b349d",
    "first_seen": "2026-07-03T17:05:45.226673+00:00",
@@ -31662,6 +31380,217 @@
    "first_seen": "2026-09-01T05:13:45.920771+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27",
+   "title_hash": "3d2e7c3939209c12797b1ae0c5333534",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; gaming graphics technology has no relevance to medical education or practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42675609?fc=20260609215449&ff=20260901093100&v=2.20.1",
+   "title_hash": "06d86e2ed8b648ed185a4ba7756154c3",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "Precision education in the era of AI: promise, pitfalls, and the data divide",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-01T10:00:00+00:00",
+   "summary": "Combining AI with electronic health record data may improve clinical education, but adoption raises concerns about equity and access across institutions.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03174-4",
+   "title_hash": "91d5c1921c183d82c018fdcb4bfb2db0",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "abstract-only citation without sufficient content for summary"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04613-1",
+   "title_hash": "0c940d43ee270affb087768c35cdebaf",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "author correction of non-AI research, off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04573-6",
+   "title_hash": "2fb71bda2dc97bba17d17b9a390d2f95",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "biomedical research without AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04616-y",
+   "title_hash": "50978204a498fff0362f8f0ac21c5ea2",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "biomedical research without AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04565-6",
+   "title_hash": "c3c22cc7a55f4bb0c39e19fbfc690d37",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "clinical trial result without AI relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w3kppp/glm_53_and_glm_53_flash_ran_locally_on_rtx_pro",
+   "title_hash": "cbc7299afed0d0d949378b6d4a0d4adc",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "personal tool experimentation with no significance for medical educators or students"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42675315?fc=20260609215449&ff=20260901093100&v=2.20.1",
+   "title_hash": "66eb25d17724dd1b8b4e60d0ff5042bd",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "Comparison of artificial intelligence and lecturers' grading in the evaluation of handwritten open-ended anatomy examinations",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-31T10:00:00+00:00",
+   "summary": "ChatGPT aligned best with lecturer grading of handwritten anatomy exams, but AI-assisted grading requires human oversight and structured criteria for high-stakes assessments.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42675273?fc=20260609215449&ff=20260901093100&v=2.20.1",
+   "title_hash": "b1a7293c81085720aa7634e91e712f8f",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "narrow domain application without broad significance for medical educators"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42675249?fc=20260609215449&ff=20260901093100&v=2.20.1",
+   "title_hash": "f950ac40aa8733df84db7e871ce0231e",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "Sailing by the Stars: A Cross-Sectional Survey Study of Generative AI Use Among GME Trainees and Faculty",
+   "source": "PubMed AI in medical education",
+   "published": "2026-08-31T10:00:00+00:00",
+   "summary": "Survey of graduate medical education trainees and faculty on generative AI use in clinical training.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w35sc1/could_this_affect_m5_ultra_priceavailability",
+   "title_hash": "1ad158772fde1f825f0b554c8f03fd93",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "community meta-discussion with no substantive news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0igxk/tencenthy4preview_770ba49b_weight_dropped",
+   "title_hash": "6deab54a52cd72cf0f048a538c11b2c8",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "minor model release announcement without context or significance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=vm96htqioYc",
+   "title_hash": "716fedafc1fe04274b5778b479680c58",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "MedAI #162: Resource-Efficient LLMs for Infection Surveillance in Home Healthcare | Zidu Xu",
+   "source": "Stanford MedAI",
+   "published": "2026-08-31T22:34:45+00:00",
+   "summary": "Seminar on efficient large language models for detecting infections in home healthcare settings, addressing practical deployment constraints.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i3.ytimg.com/vi/vm96htqioYc/hqdefault.jpg",
+   "display_title": "Resource-efficient LLMs for infection surveillance in home healthcare"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=b0dZjfQ1rpc",
+   "title_hash": "50b6b2c5c4b04b8863974f6a5df1b1ab",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist",
+   "source": "The Medical Futurist",
+   "published": "2026-06-30T09:16:30+00:00",
+   "summary": "Overview of why physicians may adopt AI scribes as clinical tools, focusing on workflow integration and clinician acceptance.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=eqFOXtw89r4",
+   "title_hash": "799964f7effeb8e0b6410698645cf88b",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "The Real Math Behind Why Healthcare Needs AI - The Medical Futurist",
+   "source": "The Medical Futurist",
+   "published": "2026-06-18T09:27:06+00:00",
+   "summary": "Analysis of healthcare economics and sustainability arguments for artificial intelligence adoption in clinical practice.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/eqFOXtw89r4/hqdefault.jpg"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=YifvLHvLckA",
+   "title_hash": "c055c5bcca24db5370927b1c61a2b766",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "product review of consumer neurotechnology device, off-topic for medical educators and artificial intelligence relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=w9RDunJACkc",
+   "title_hash": "b4710a275e9c25efd5831e6d8ec4bd0d",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "GLM 5.3: Powerful AI Is Becoming Almost Free",
+   "source": "Two Minute Papers",
+   "published": "2026-09-01T09:04:56+00:00",
+   "summary": "Hands-on overview of GLM 5.3 Flash, an open-weight large language model, and its capabilities relative to commercial alternatives.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/w9RDunJACkc/hqdefault.jpg",
+   "display_title": "GLM 5.3 Flash open-weight model overview"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uZ4VZRPvyX4",
+   "title_hash": "b836c0b2d7ffb26e6b656216e85468e7",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "Tencent HY4 IS SOLID! Best Open-Weight Model? (FULLY FREE)",
+   "source": "WorldofAI",
+   "published": "2026-09-01T06:15:31+00:00",
+   "summary": "Testing and evaluation of Tencent HY4, an open-weight large language model, against comparable alternatives.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/uZ4VZRPvyX4/hqdefault.jpg",
+   "display_title": "Tencent HY4 open-weight model evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Dxix8GQD-P4",
+   "title_hash": "2ca442829d99dfc30944e48626394d86",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "announcement of consumer product positioning, not a development in artificial intelligence capability or deployment"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Gj13NR35WU4",
+   "title_hash": "acb47907524e27a1ec3536a16a198982",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": false,
+   "reason": "general corporate explainer on digital sovereignty, not specific to artificial intelligence"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/write-change-recall-forget-mongodb-s-pete-johnson-on-how-retrieval-drives-agent-performance",
+   "title_hash": "ecfb36da23243e1521b3ae35bd74921d",
+   "first_seen": "2026-09-01T13:30:59.912387+00:00",
+   "kept": true,
+   "title": "Write, Change, Recall, Forget: MongoDB's Pete Johnson on How Retrieval Drives Agent Performance",
+   "source": "The Cognitive Revolution",
+   "published": "2026-09-01T09:26:39+00:00",
+   "summary": "A Field CTO at MongoDB discusses database architecture and the technical challenges of designing memory systems for AI agents.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://megaphone.imgix.net/podcasts/5faf9776-a18f-11f1-9dc1-d3d77021b3b7/image/f1f5a517fbd4f64f9f8f82d534066ac8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
  ],
  "digests": [

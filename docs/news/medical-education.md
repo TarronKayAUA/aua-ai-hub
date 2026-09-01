@@ -18,9 +18,16 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675609?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Precision education in the era of AI: promise, pitfalls, and the data divide</a>
+    <p class="news-card-summary">Combining AI with electronic health record data may improve clinical education, but adoption raises concerns about equity and access across institutions.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
@@ -33,6 +40,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">Practicing pediatric interviews with parents through conversational AI-based virtual patients: an observational study in Spanish undergraduate medical education</a>
     <p class="news-card-summary">Observational study of Spanish medical students&#x27; acceptance and satisfaction with conversational AI-based virtual patients for pediatric interview practice.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675315?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Comparison of artificial intelligence and lecturers&#x27; grading in the evaluation of handwritten open-ended anatomy examinations</a>
+    <p class="news-card-summary">ChatGPT aligned best with lecturer grading of handwritten anatomy exams, but AI-assisted grading requires human oversight and structured criteria for high-stakes assessments.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675249?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Sailing by the Stars: A Cross-Sectional Survey Study of Generative AI Use Among GME Trainees and Faculty</a>
+    <p class="news-card-summary">Survey of graduate medical education trainees and faculty on generative AI use in clinical training.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -104,28 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">A Comparative Analysis of Large Language Model Performance on USMLE Step 1-Style Allergy/Immunology Questions: Evaluating Correctness and Consistency</a>
     <p class="news-card-summary">Gemini and Grok achieved approximately 81% accuracy on USMLE Step 1-style allergy and immunology questions, outperforming ChatGPT, with performance varying significantly based on prompt complexity.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42665827?fc=20260609215449&amp;ff=20260829095055&amp;v=2.20.1">Integrating generative AI into physiotherapy education: students&#x27; use, perceptions, and generative AI literacy following curricular adaptations: a repeated cross-sectional programme evaluation</a>
-    <p class="news-card-summary">Physiotherapy students showed increased generative AI use and literacy after completing integrated AI learning activities, with higher confidence in semester 3 than semester 1.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">MIT AI Report Calls for Alternative Grading, More Social Learning</a>
-    <p class="news-card-summary">MIT report examines how AI is transforming education and recommends alternative grading approaches and increased social learning to address the shift.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2024-11/Hand_Robot_Duel.jpg?itok=aZ99_Ppd" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 27, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42651234?fc=20260609215449&amp;ff=20260827055305&amp;v=2.20.1">Artificial Intelligence Adoption in Public Health Practice: A Cross-Sectional Study of Practical Determinants Among Healthcare Professionals</a>
-    <p class="news-card-summary">Cross-sectional study identifying knowledge, trust, and legal concern as determinants of artificial intelligence adoption among healthcare professionals.</p>
   </div>
 </div>
 </div>

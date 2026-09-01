@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/write-change-recall-forget-mongodb-s-pete-johnson-on-how-retrieval-drives-agent-performance" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/5faf9776-a18f-11f1-9dc1-d3d77021b3b7/image/f1f5a517fbd4f64f9f8f82d534066ac8.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Write, Change, Recall, Forget: MongoDB&#x27;s Pete Johnson on How Retrieval Drives Agent Performance" loading="lazy">
+  <span class="video-card-title">Write, Change, Recall, Forget: MongoDB&#x27;s Pete Johnson on How Retrieval Drives Agent Performance</span>
+  <span class="video-card-meta">The Cognitive Revolution, September 1, 2026</span>
+  <span class="video-card-desc">A Field CTO at MongoDB discusses database architecture and the technical challenges of designing memory systems for AI agents.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/123da941" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/8Uz0jVk9I5C7YZnykmA_PZcLkTSBu6XPG7fkeVdsSu4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS82Y2I1/NGU1NmI1ODUyNWNl/ZTAyN2ZlZDkyMTkz/ZTkwNS5wbmc.jpg" alt="Podcast: Building the Foundation for the Agentic AI Era" loading="lazy">
   <span class="video-card-title">Building the Foundation for the Agentic AI Era</span>

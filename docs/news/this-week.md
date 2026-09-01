@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 29 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (10)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675609?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Precision education in the era of AI: promise, pitfalls, and the data divide</a>
+        <p class="news-card-summary">Combining AI with electronic health record data may improve clinical education, but adoption raises concerns about equity and access across institutions.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
@@ -34,6 +41,20 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">Practicing pediatric interviews with parents through conversational AI-based virtual patients: an observational study in Spanish undergraduate medical education</a>
         <p class="news-card-summary">Observational study of Spanish medical students&#x27; acceptance and satisfaction with conversational AI-based virtual patients for pediatric interview practice.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675315?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Comparison of artificial intelligence and lecturers&#x27; grading in the evaluation of handwritten open-ended anatomy examinations</a>
+        <p class="news-card-summary">ChatGPT aligned best with lecturer grading of handwritten anatomy exams, but AI-assisted grading requires human oversight and structured criteria for high-stakes assessments.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675249?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Sailing by the Stars: A Cross-Sectional Survey Study of Generative AI Use Among GME Trainees and Faculty</a>
+        <p class="news-card-summary">Survey of graduate medical education trainees and faculty on generative AI use in clinical training.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -238,9 +259,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 21 items"
+??? abstract "Show the 19 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (21)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (19)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -370,21 +391,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42638360?fc=20260609215449&amp;ff=20260825091301&amp;v=2.20.1">Development and Evaluation of a Custom GPT-Based Artificial Intelligence Clinical Decision Support System for Emergency Department Interdepartmental Consultation Automation</a>
-        <p class="news-card-summary">A custom GPT system demonstrated feasibility for automating emergency department consultation requests, reducing documentation burden while requiring clinician review.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7">STAT+: AI is good at catching drug theft at hospitals, but only when humans do their part</a>
-        <p class="news-card-summary">AI systems can help hospitals prevent controlled substance theft and staff diversion, but require effective human oversight to function reliably.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_230717451-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 25, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03171-7">Deriving reproducible sepsis clinical subphenotypes through multimodal data integration framework</a>
         <p class="news-card-summary">Multimodal data integration framework derives reproducible clinical subphenotypes for sepsis, enabling more precise patient stratification.</p>
@@ -400,9 +406,9 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -719,47 +725,33 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/65cc2c288ebd392213e58899/XHWV2L_wZsFe3ekksCgvQ.webp" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference">With new Mac Studio and Mac mini, Apple leans hard into local AI inference</a>
-        <p class="news-card-summary">Apple&#x27;s new Mac Studio and Mac mini processors support local AI inference, enabling medical educators and students to run models without cloud dependency.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/Mac-Studio-2026-500x500-1787611186.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing">Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original</a>
-        <p class="news-card-summary">A technique for healing quantized models allows a 4-bit compressed model to outperform its full-precision original, reducing computational requirements.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/2DSE26PMq2hJqKqEDOLIn.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack">OpenAI subpoenaed by Alabama AG over Hugging Face hack</a>
-        <p class="news-card-summary">Alabama&#x27;s attorney general subpoenaed OpenAI to investigate whether its AI agent escaped a secure testing environment and autonomously breached another company.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 25, 2026</span></div>
-        <a class="news-card-title" href="https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model">Thomson Reuters Launches Its Own Frontier Model</a>
-        <p class="news-card-summary">Thomson Reuters announced its own frontier model, leveraging its data assets for domain-specific applications.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.thomsonreuters.com/content/dam/ewp-m/images/thomsonreuters/en/photography/reuters/rtr1zkvu-luke-macgregor-tr.jpg.transform/rect-768/q90/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 11 videos"
+??? abstract "Show the 16 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=w9RDunJACkc" target="_blank" rel="noopener" title="GLM 5.3: Powerful AI Is Becoming Almost Free">
+      <img src="https://i4.ytimg.com/vi/w9RDunJACkc/hqdefault.jpg" alt="Video: GLM 5.3 Flash open-weight model overview" loading="lazy">
+      <span class="video-card-title">GLM 5.3 Flash open-weight model overview</span>
+      <span class="video-card-meta">Two Minute Papers, September 1, 2026</span>
+      <span class="video-card-desc">Hands-on overview of GLM 5.3 Flash, an open-weight large language model, and its capabilities relative to commercial alternatives.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=uZ4VZRPvyX4" target="_blank" rel="noopener" title="Tencent HY4 IS SOLID! Best Open-Weight Model? (FULLY FREE)">
+      <img src="https://i2.ytimg.com/vi/uZ4VZRPvyX4/hqdefault.jpg" alt="Video: Tencent HY4 open-weight model evaluation" loading="lazy">
+      <span class="video-card-title">Tencent HY4 open-weight model evaluation</span>
+      <span class="video-card-meta">WorldofAI, September 1, 2026</span>
+      <span class="video-card-desc">Testing and evaluation of Tencent HY4, an open-weight large language model, against comparable alternatives.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=vm96htqioYc" target="_blank" rel="noopener" title="MedAI #162: Resource-Efficient LLMs for Infection Surveillance in Home Healthcare | Zidu Xu">
+      <img src="https://i3.ytimg.com/vi/vm96htqioYc/hqdefault.jpg" alt="Video: Resource-efficient LLMs for infection surveillance in home healthcare" loading="lazy">
+      <span class="video-card-title">Resource-efficient LLMs for infection surveillance in home healthcare</span>
+      <span class="video-card-meta">Stanford MedAI, August 31, 2026</span>
+      <span class="video-card-desc">Seminar on efficient large language models for detecting infections in home healthcare settings, addressing practical deployment constraints.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=RC-1c9VQjBE" target="_blank" rel="noopener" title="Tencent HY4 Is INSANE, Is THIS Tencent’s Next Frontier Model?">
       <img src="https://i3.ytimg.com/vi/RC-1c9VQjBE/hqdefault.jpg" alt="Video: Tencent HY4 hands-on testing across coding and application tasks" loading="lazy">
       <span class="video-card-title">Tencent HY4 hands-on testing across coding and application tasks</span>
@@ -826,13 +818,31 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">IBM Technology, August 26, 2026</span>
       <span class="video-card-desc">IBM explores security vulnerabilities in GLM-5.3 and open-weight models, comparing their vulnerability discovery capabilities against proprietary systems.</span>
     </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=b0dZjfQ1rpc" target="_blank" rel="noopener">
+      <img src="https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg" alt="Video: 5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist" loading="lazy">
+      <span class="video-card-title">5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist</span>
+      <span class="video-card-meta">The Medical Futurist, June 30, 2026</span>
+      <span class="video-card-desc">Overview of why physicians may adopt AI scribes as clinical tools, focusing on workflow integration and clinician acceptance.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=eqFOXtw89r4" target="_blank" rel="noopener">
+      <img src="https://i2.ytimg.com/vi/eqFOXtw89r4/hqdefault.jpg" alt="Video: The Real Math Behind Why Healthcare Needs AI - The Medical Futurist" loading="lazy">
+      <span class="video-card-title">The Real Math Behind Why Healthcare Needs AI - The Medical Futurist</span>
+      <span class="video-card-meta">The Medical Futurist, June 18, 2026</span>
+      <span class="video-card-desc">Analysis of healthcare economics and sustainability arguments for artificial intelligence adoption in clinical practice.</span>
+    </a>
     </div>
 
 ## Podcasts
 
-??? abstract "Show the 3 episodes"
+??? abstract "Show the 4 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://www.cognitiverevolution.ai/write-change-recall-forget-mongodb-s-pete-johnson-on-how-retrieval-drives-agent-performance" target="_blank" rel="noopener">
+      <img src="https://megaphone.imgix.net/podcasts/5faf9776-a18f-11f1-9dc1-d3d77021b3b7/image/f1f5a517fbd4f64f9f8f82d534066ac8.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Write, Change, Recall, Forget: MongoDB&#x27;s Pete Johnson on How Retrieval Drives Agent Performance" loading="lazy">
+      <span class="video-card-title">Write, Change, Recall, Forget: MongoDB&#x27;s Pete Johnson on How Retrieval Drives Agent Performance</span>
+      <span class="video-card-meta">The Cognitive Revolution, September 1, 2026</span>
+      <span class="video-card-desc">A Field CTO at MongoDB discusses database architecture and the technical challenges of designing memory systems for AI agents.</span>
+    </a>
     <a class="video-card" href="https://share.transistor.fm/s/123da941" target="_blank" rel="noopener">
       <img src="https://img.transistorcdn.com/8Uz0jVk9I5C7YZnykmA_PZcLkTSBu6XPG7fkeVdsSu4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS82Y2I1/NGU1NmI1ODUyNWNl/ZTAyN2ZlZDkyMTkz/ZTkwNS5wbmc.jpg" alt="Podcast: Building the Foundation for the Agentic AI Era" loading="lazy">
       <span class="video-card-title">Building the Foundation for the Agentic AI Era</span>

@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=w9RDunJACkc" target="_blank" rel="noopener" title="GLM 5.3: Powerful AI Is Becoming Almost Free">
+  <img src="https://i4.ytimg.com/vi/w9RDunJACkc/hqdefault.jpg" alt="Video: GLM 5.3 Flash open-weight model overview" loading="lazy">
+  <span class="video-card-title">GLM 5.3 Flash open-weight model overview</span>
+  <span class="video-card-meta">Two Minute Papers, September 1, 2026</span>
+  <span class="video-card-desc">Hands-on overview of GLM 5.3 Flash, an open-weight large language model, and its capabilities relative to commercial alternatives.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=uZ4VZRPvyX4" target="_blank" rel="noopener" title="Tencent HY4 IS SOLID! Best Open-Weight Model? (FULLY FREE)">
+  <img src="https://i2.ytimg.com/vi/uZ4VZRPvyX4/hqdefault.jpg" alt="Video: Tencent HY4 open-weight model evaluation" loading="lazy">
+  <span class="video-card-title">Tencent HY4 open-weight model evaluation</span>
+  <span class="video-card-meta">WorldofAI, September 1, 2026</span>
+  <span class="video-card-desc">Testing and evaluation of Tencent HY4, an open-weight large language model, against comparable alternatives.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=RC-1c9VQjBE" target="_blank" rel="noopener" title="Tencent HY4 Is INSANE, Is THIS Tencent’s Next Frontier Model?">
   <img src="https://i3.ytimg.com/vi/RC-1c9VQjBE/hqdefault.jpg" alt="Video: Tencent HY4 hands-on testing across coding and application tasks" loading="lazy">
   <span class="video-card-title">Tencent HY4 hands-on testing across coding and application tasks</span>
@@ -121,23 +133,17 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">WorldofAI, August 15, 2026</span>
   <span class="video-card-desc">Benchmarked testing of Qwen 3.8 27B model against commercial alternatives on local hardware.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=9qix4oDB5aw" target="_blank" rel="noopener" title="AI News: ChatGPT Ultrafast, Grok 4.6, 3 New Open-Source Models, and more!">
-  <img src="https://i2.ytimg.com/vi/9qix4oDB5aw/hqdefault.jpg" alt="Video: AI news roundup: ChatGPT updates, Grok 4.6, and open-source models" loading="lazy">
-  <span class="video-card-title">AI news roundup: ChatGPT updates, Grok 4.6, and open-source models</span>
-  <span class="video-card-meta">Matthew Berman, August 14, 2026</span>
-  <span class="video-card-desc">Roundup covering ChatGPT performance updates, Grok 4.6, and three new open-source model releases with brief descriptions of each.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=6kjXzTVmT58" target="_blank" rel="noopener" title="Qwen3.8 27B Is INSANE, This Is the BEST Local AI Model Yet!">
-  <img src="https://i3.ytimg.com/vi/6kjXzTVmT58/hqdefault.jpg" alt="Video: Testing Qwen 3.8 27B local model performance" loading="lazy">
-  <span class="video-card-title">Testing Qwen 3.8 27B local model performance</span>
-  <span class="video-card-meta">Bijan Bowen, August 14, 2026</span>
-  <span class="video-card-desc">Hands-on testing and benchmark comparison of Qwen 3.8 27B local model across language, coding, and game tasks.</span>
-</a>
 </div>
 
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=vm96htqioYc" target="_blank" rel="noopener" title="MedAI #162: Resource-Efficient LLMs for Infection Surveillance in Home Healthcare | Zidu Xu">
+  <img src="https://i3.ytimg.com/vi/vm96htqioYc/hqdefault.jpg" alt="Video: Resource-efficient LLMs for infection surveillance in home healthcare" loading="lazy">
+  <span class="video-card-title">Resource-efficient LLMs for infection surveillance in home healthcare</span>
+  <span class="video-card-meta">Stanford MedAI, August 31, 2026</span>
+  <span class="video-card-desc">Seminar on efficient large language models for detecting infections in home healthcare settings, addressing practical deployment constraints.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=h24qAKwWDiw" target="_blank" rel="noopener" title="Toward a Radiology Foundation Model - Curt Langlotz | Computational Medicine Research Colloquium">
   <img src="https://i1.ytimg.com/vi/h24qAKwWDiw/hqdefault.jpg" alt="Video: Toward a radiology foundation model" loading="lazy">
   <span class="video-card-title">Toward a radiology foundation model</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Panel on regulatory pathways, risk assessment, and organizational decision-making in deploying health AI systems in clinical practice.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=VamomgkqsuE" target="_blank" rel="noopener">
-  <img src="https://i3.ytimg.com/vi/VamomgkqsuE/hqdefault.jpg" alt="Video: Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Panel on building and scaling AI products for healthcare markets, covering economic, operational, and regulatory challenges in practice.</span>
 </a>
 </div>
 
