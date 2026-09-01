@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=ROF2Nv_KjOM" target="_blank" rel="noopener" title="Introducing Claude Fable 5.1">
+  <img src="https://i3.ytimg.com/vi/ROF2Nv_KjOM/hqdefault.jpg" alt="Video: Claude Fable 5.1 model announcement" loading="lazy">
+  <span class="video-card-title">Claude Fable 5.1 model announcement</span>
+  <span class="video-card-meta">Anthropic, September 1, 2026</span>
+  <span class="video-card-desc">Anthropic announces Claude Fable 5.1, an upgrade to its most capable model class with improvements in complex tasks and research capabilities.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=w9RDunJACkc" target="_blank" rel="noopener" title="GLM 5.3: Powerful AI Is Becoming Almost Free">
   <img src="https://i4.ytimg.com/vi/w9RDunJACkc/hqdefault.jpg" alt="Video: GLM 5.3 Flash open-weight model overview" loading="lazy">
   <span class="video-card-title">GLM 5.3 Flash open-weight model overview</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">GLM 5.3 open model evaluation and testing</span>
   <span class="video-card-meta">Bijan Bowen, August 16, 2026</span>
   <span class="video-card-desc">Hands-on evaluation of GLM 5.3 open-weights model across multiple benchmarks and use cases.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=J_aqblUWj4k" target="_blank" rel="noopener" title="Qwen 3.8 27B BLOWS MY MIND! Best Local AI Model Yet! Basically Opus Locally! (Fully Tested)">
-  <img src="https://i3.ytimg.com/vi/J_aqblUWj4k/hqdefault.jpg" alt="Video: Qwen 3.8 27B benchmarked against commercial models" loading="lazy">
-  <span class="video-card-title">Qwen 3.8 27B benchmarked against commercial models</span>
-  <span class="video-card-meta">WorldofAI, August 15, 2026</span>
-  <span class="video-card-desc">Benchmarked testing of Qwen 3.8 27B model against commercial alternatives on local hardware.</span>
 </a>
 </div>
 

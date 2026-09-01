@@ -35,6 +35,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Benchmark and evaluation of large language model inference energy efficiency and carbon footprint on Apple Silicon.</p>
   </div>
 </div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/webgpu-kernels">Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI</a>
+    <p class="news-card-summary">Hugging Face releases open-weights collection of 200+ WebGPU computational kernels for running AI models locally in web browsers.</p>
+  </div>
+  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/webgpu-kernels/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 31, 2026</span></div>
@@ -124,12 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">GLM-5.3, an open-weights model, achieves state-of-the-art performance on coding benchmarks through post-training improvements, with 50% gains over GLM-5.2 on internal and public coding evaluation sets.</p>
   </div>
   <img class="news-card-thumb" src="https://external-preview.redd.it/BhH_AjL0mdp-2nZPRCiygI2acL0nwkgIh3KfgwJsMEU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=dea490193213b00bb41f33cf60be19d474c255bb" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.26112">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a>
-    <p class="news-card-summary">TreeGraft improves tree-based speculative decoding for LLM inference by adaptively selecting among multiple drafters to increase accepted token length.</p>
-  </div>
 </div>
 </div>

@@ -18,9 +18,51 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03161-9">Condition controllable generation of 3D molecules using textual prompts by multimodal equivariant diffusion model</a>
+    <p class="news-card-summary">Multimodal equivariant diffusion model enables text-prompted generation of three-dimensional molecules with controlled properties.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03176-2">A framework for selecting, validating, and optimizing DHT-derived measures in clinical research</a>
+    <p class="news-card-summary">Framework for selecting, validating, and optimizing measures derived from digital health technology in clinical research.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03164-6">A perspective on federated foundation models in biomedical sensing and imaging</a>
+    <p class="news-card-summary">Perspective on federated foundation models as an approach to privacy-preserving machine learning in biomedical sensing and imaging.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03121-3">A CT-enhanced multi-modal framework for predicting early conversion to arthroplasty in patients with intracapsular hip fractures</a>
+    <p class="news-card-summary">Multi-modal framework using computed tomography and other data to predict early conversion to arthroplasty in intracapsular hip fracture patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03173-5">Generative deep learning reconstructs subcortical neural signals from cortical recordings for closed-loop brain stimulation</a>
+    <p class="news-card-summary">Generative deep learning reconstructs subcortical neural signals from cortical recordings to enable closed-loop brain stimulation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03157-5">Toward Clinical Adoption of Spatial Omics and Computational Pathology in Oncology</a>
+    <p class="news-card-summary">Perspective on advancing clinical adoption of spatial omics and computational pathology methods in oncology practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 31, 2026</span></div>
@@ -82,48 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 27, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03179-z">The beginning of the end for manual chart review: LLM-mediated database construction</a>
     <p class="news-card-summary">Published research on using large language models to automate chart review and database construction, reducing manual data extraction burden.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94503">Perceived Support Is Not Psychological Change: Reframing AI Chatbots in Mental Health Care</a>
-    <p class="news-card-summary">Viewpoint arguing that AI chatbot benefits in mental health may stem from structured mirroring and self-reflection rather than direct symptom reduction mechanisms.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85085">AI Models for Suicide Risk Prediction in Adult Patients Receiving Mental Health Care Using Real-World Data: Retrospective Population-Based Study</a>
-    <p class="news-card-summary">Retrospective study developing AI models to predict suicide risk in mental health patients using real-world clinical data, with implications for intervention timing.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e89113">Bayesian Analysis of AI-Driven Cost Savings in UK and Australian Health Care Systems: Cross-Sector Implementation Study</a>
-    <p class="news-card-summary">Bayesian analysis of real-world AI implementation costs and savings across UK and Australian health systems, examining why large-scale deployment benefits lag technical capability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03170-8">OncoRAG: graph-based retrieval enabling clinical phenotyping from oncology notes using local mid-size language models</a>
-    <p class="news-card-summary">Graph-based retrieval system enables clinical phenotyping from oncology notes using locally deployed mid-size language models.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03181-5">A comprehensive computational pathology atlas for multi-cancer tumor microenvironment characterization and prognosis prediction</a>
-    <p class="news-card-summary">Computational pathology atlas enables tumor microenvironment characterization and prognostic prediction across multiple cancer types.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 25, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83893">GPT-4o, Powered Preanesthetic AI: Development and Validation Study</a>
-    <p class="news-card-summary">Study validates GPT-4o for automated preanesthetic assessment, reducing subjective judgment and incomplete documentation in perioperative risk stratification.</p>
   </div>
 </div>
 </div>

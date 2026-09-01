@@ -1,144 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/3/june-newsletter",
-   "title_hash": "a4db28fd73fef6ad6697f0fda95b349d",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": false,
-   "reason": "vendor marketing and incomplete summary"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1umcr5m/glm52_on_5x_pro_6000s_and_a_5090_an_expensive",
-   "title_hash": "45f803a9a5246c31d394960440d21c03",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": false,
-   "reason": "personal blog post on hardware configuration without significant news or instructive analysis"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42397674?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "96a7693a8100ca7224b1f3e1770e4bd1",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "Knowledge, Attitudes, and Practices Related to AI in Learning and Research Among Medical Students in Vietnam: Cross-Sectional Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "Medical students in Vietnam demonstrated favorable knowledge and positive attitudes toward AI, though practical skills remain limited.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42396905?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "95125d128c176d33b0990d4556c744b3",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; focuses on healthcare infrastructure without AI relevance"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42396275?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "4feff9d6e7ff014c77b3c25a3137462f",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "Historical Perspectives in Medicine using a Large Language Model: Emulating an 18th Century Physician",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "Large language models configured with historical constraints can simulate decision-making of 18th-century physicians for educational purposes.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42395672?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "ead012eefab35d4f1437583e718f123e",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; editorial on ultrasound without AI relevance"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42394097?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "6b97a7a78a3cfdc6dc3d4df906a74851",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "LLMs in Problem-Based Learning: The Grounding Issue",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "Large language models used in problem-based learning face grounding issues that affect their pedagogical effectiveness.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42394077?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "f24dcba58c2e45e6bdd5c04600aecf20",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "Vibe Coding to Democratize Dementia mHealth Development: Preliminary Findings",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "Vibe coding enables health professionals without programming expertise to develop dementia-focused mobile health applications.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42394047?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "4f26b883c5b0cdfcf224fe1d52b47ae6",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "Designing Effective Laboratory Sessions of AI in Medicine: A Practical Relevance Index",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "A practical relevance index framework guides design of effective laboratory sessions for teaching artificial intelligence in medicine.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42393703?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "5e75750abf534d300b04ef67b53178a8",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "Personality traits, technology affinity, and artificial intelligence readiness in medical students: a multinational cross-sectional study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "Personality traits independently predict AI readiness in medical students across multiple countries, more so than technology affinity.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42393541?fc=20260609215449&ff=20260703130545&v=2.20.0",
-   "title_hash": "20383a404795cc996dad160d01da03e8",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "Artificial intelligence as a second reader for pneumothorax detection: redirecting rather than reducing chest CT use",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "AI assistance for pneumothorax detection redirects rather than reduces chest CT use in simulated clinical workflows.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1um9j5q/deepseek_drops_another_huge_breakthrough_dspark",
-   "title_hash": "36860a68f62eccdf887cab98047c9abe",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": false,
-   "reason": "speculation and rumor framing without primary source verification"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02920-y",
-   "title_hash": "97970f808915109b2972cdcebe0dd690",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; molecular cancer biology without AI or ML relevance"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02938-2",
-   "title_hash": "fa1a0646703712af1d222d57b3142551",
-   "first_seen": "2026-07-03T17:05:45.226673+00:00",
-   "kept": true,
-   "title": "Whole body CT attenuation and volume charts from routine clinical scans via LLM report filtering",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-03T00:00:00+00:00",
-   "summary": "Large language models extract whole-body CT attenuation and volume data from routine clinical reports to generate population-based charts.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map",
    "title_hash": "d540af3f2afdfe303848fa24cd1f7dd9",
    "first_seen": "2026-07-03T23:48:45.730897+00:00",
@@ -31591,6 +31453,242 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://megaphone.imgix.net/podcasts/5faf9776-a18f-11f1-9dc1-d3d77021b3b7/image/f1f5a517fbd4f64f9f8f82d534066ac8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice",
+   "title_hash": "5d2850cb25ce99fc2b7d8ae71c9dc04d",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
+   "title_hash": "72858829d71d96e5fa00d09f3524c1c4",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "industry and legal dispute coverage without educational substance for medical educators"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e94197",
+   "title_hash": "e8a9cca2a75f61e5d156b8b5ac916a2e",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "Evaluating the Influence of MCAT Scores on Medical Student Selection and Performance Using a Machine Learning Approach: Retrospective Cohort Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-01T19:00:18+00:00",
+   "summary": "Machine learning analysis of MCAT scores and medical school admissions shows how alternative selection criteria may predict student performance when standardized testing is unavailable.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
+   "title_hash": "0920330a83ae16b28fc30ee0952ed5fc",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "legal dispute coverage without relevance to medical education or practice"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86564",
+   "title_hash": "4bb155692f829c3636b5e38cb81f942b",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/1/tarn-adams",
+   "title_hash": "9661e2aec8e3a7c3ee228694ab9a26e6",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/lecture-5",
+   "title_hash": "df429cc1d192652f1dff76ffb9d423af",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
+   "title_hash": "6cf6815923c01cde14f25d6d060e25cd",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/987423/google-pics-ai-image-editor-generator",
+   "title_hash": "8e2372e73e5495e011549cc0c94de32e",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "vendor marketing from corporate news channel"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/1/python-315-rc-2",
+   "title_hash": "f386df25e1d6f0cef6044a78a11918ed",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-inference-distributed-computing",
+   "title_hash": "b3de01341b66ee5c157571cc24434ebe",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "marketing and consumer service announcement"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42678088?fc=20260609215449&ff=20260901152452&v=2.20.1",
+   "title_hash": "072e60621d5f4cb7a57628d8d1765cb3",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "Assessing digital health curriculum needs: a mixed-methods study of student and faculty perspectives in a Singapore medical school",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-01T10:00:00+00:00",
+   "summary": "Mixed-methods study identifies gaps between digital health conceptual knowledge and clinical practice in medical curricula, recommending tiered competency models and experiential learning.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42677091?fc=20260609215449&ff=20260901152452&v=2.20.1",
+   "title_hash": "75e5cf896646eed3038aa1495eef34cd",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "The digital transformation of clinical teaching: a review of AI and data-driven quality assurance systems in medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-01T10:00:00+00:00",
+   "summary": "Review identifies governance frameworks, faculty development, equitable access, validation, and continuous evaluation as prerequisites for integrating AI-based technologies into clinical education.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03161-9",
+   "title_hash": "234828248cae8105cb2120de3c04b727",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "Condition controllable generation of 3D molecules using textual prompts by multimodal equivariant diffusion model",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-01T00:00:00+00:00",
+   "summary": "Multimodal equivariant diffusion model enables text-prompted generation of three-dimensional molecules with controlled properties.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Other"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03176-2",
+   "title_hash": "f95b89a93db213496608a73267b09067",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "A framework for selecting, validating, and optimizing DHT-derived measures in clinical research",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-01T00:00:00+00:00",
+   "summary": "Framework for selecting, validating, and optimizing measures derived from digital health technology in clinical research.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03164-6",
+   "title_hash": "f94e4eb9e190df7c89eb8765996bf861",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "A perspective on federated foundation models in biomedical sensing and imaging",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-01T00:00:00+00:00",
+   "summary": "Perspective on federated foundation models as an approach to privacy-preserving machine learning in biomedical sensing and imaging.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03121-3",
+   "title_hash": "51d682f0a452d0f53a4d518eb5744ae9",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "A CT-enhanced multi-modal framework for predicting early conversion to arthroplasty in patients with intracapsular hip fractures",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-01T00:00:00+00:00",
+   "summary": "Multi-modal framework using computed tomography and other data to predict early conversion to arthroplasty in intracapsular hip fracture patients.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03173-5",
+   "title_hash": "43239ba46a9c570df2fb581b26cc370f",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "Generative deep learning reconstructs subcortical neural signals from cortical recordings for closed-loop brain stimulation",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-01T00:00:00+00:00",
+   "summary": "Generative deep learning reconstructs subcortical neural signals from cortical recordings to enable closed-loop brain stimulation.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03157-5",
+   "title_hash": "81d3c9ab631b2aea8cb30b89b065688c",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "Toward Clinical Adoption of Spatial Omics and Computational Pathology in Oncology",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-01T00:00:00+00:00",
+   "summary": "Perspective on advancing clinical adoption of spatial omics and computational pathology methods in oncology practice.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04630-0",
+   "title_hash": "c63a1017d0fbf5d1369301eecdf299dc",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://huggingface.co/blog/webgpu-kernels",
+   "title_hash": "4ee415d9e942bc406d4a05be00d0f21e",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+   "source": "Hugging Face blog",
+   "published": "2026-09-01T00:00:00+00:00",
+   "summary": "Hugging Face releases open-weights collection of 200+ WebGPU computational kernels for running AI models locally in web browsers.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://huggingface.co/blog/assets/webgpu-kernels/thumbnail.png",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w05clp/the_unsloth_appreciation_post_big_thanks_to",
+   "title_hash": "7362fe3ecfd789bc0b78d2ea829a0785",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "community forum discussion without substantive technical or educational content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=U6Ie2br8lxs",
+   "title_hash": "cb3a9e5d7dc45c907642f4be31775125",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": false,
+   "reason": "drama coverage and speculation without substantive underlying event"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ROF2Nv_KjOM",
+   "title_hash": "c817fa64390a405f5a3a99be4641e7ef",
+   "first_seen": "2026-09-01T19:24:52.108718+00:00",
+   "kept": true,
+   "title": "Introducing Claude Fable 5.1",
+   "source": "Anthropic",
+   "published": "2026-09-01T18:02:31+00:00",
+   "summary": "Anthropic announces Claude Fable 5.1, an upgrade to its most capable model class with improvements in complex tasks and research capabilities.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i3.ytimg.com/vi/ROF2Nv_KjOM/hqdefault.jpg",
+   "display_title": "Claude Fable 5.1 model announcement"
   }
  ],
  "digests": [

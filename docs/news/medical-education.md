@@ -21,11 +21,32 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e94197">Evaluating the Influence of MCAT Scores on Medical Student Selection and Performance Using a Machine Learning Approach: Retrospective Cohort Study</a>
+    <p class="news-card-summary">Machine learning analysis of MCAT scores and medical school admissions shows how alternative selection criteria may predict student performance when standardized testing is unavailable.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675609?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Precision education in the era of AI: promise, pitfalls, and the data divide</a>
     <p class="news-card-summary">Combining AI with electronic health record data may improve clinical education, but adoption raises concerns about equity and access across institutions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42678088?fc=20260609215449&amp;ff=20260901152452&amp;v=2.20.1">Assessing digital health curriculum needs: a mixed-methods study of student and faculty perspectives in a Singapore medical school</a>
+    <p class="news-card-summary">Mixed-methods study identifies gaps between digital health conceptual knowledge and clinical practice in medical curricula, recommending tiered competency models and experiential learning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42677091?fc=20260609215449&amp;ff=20260901152452&amp;v=2.20.1">The digital transformation of clinical teaching: a review of AI and data-driven quality assurance systems in medical education</a>
+    <p class="news-card-summary">Review identifies governance frameworks, faculty development, equitable access, validation, and continuous evaluation as prerequisites for integrating AI-based technologies into clinical education.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -104,27 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42662102?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Generative AI and Clinicians Show Comparable Prognostic Reasoning From Clinical Narratives in Biologic-Treated CRSwNP</a>
     <p class="news-card-summary">Large language models produced prognostic reasoning comparable to clinician variability when analyzing limited clinical text in chronic rhinosinusitis cases.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42661705?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Evaluating the potential of ChatGPT as an educational decision-support tool for hemodialysis decision-making in nephrology training</a>
-    <p class="news-card-summary">ChatGPT aligned more closely with nephrology fellows than senior nephrologists in hemodialysis decision-making, suggesting potential as an educational support tool.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42661654?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">From AI use to critical thinking among medical students: a moderated mediation perspective on cognitive load and self-regulated learning</a>
-    <p class="news-card-summary">AI effectiveness in developing medical student critical thinking depends on both cognitive support and learners&#x27; capacity for self-regulated engagement.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">A Comparative Analysis of Large Language Model Performance on USMLE Step 1-Style Allergy/Immunology Questions: Evaluating Correctness and Consistency</a>
-    <p class="news-card-summary">Gemini and Grok achieved approximately 81% accuracy on USMLE Step 1-style allergy and immunology questions, outperforming ChatGPT, with performance varying significantly based on prompt complexity.</p>
   </div>
 </div>
 </div>
