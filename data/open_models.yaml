@@ -17,6 +17,16 @@
   last_reviewed: 2026-06-10
   blurb: OpenAI's open-weight pair. gpt-oss-120b runs on a single 80 gigabyte graphics card with reasoning performance near the company's o4-mini, and gpt-oss-20b runs on machines with 16 gigabytes of memory.
 
+# Added 2026-09-01 (content watch, owner approved). Apache 2.0 read from
+# the ibm-granite/granite-4.2-8b card 2026-09-01; published 2026-08-13 in
+# 3B, 8B, and 30B sizes. IBM was not previously on this roster.
+- name: Granite 4.2
+  vendor: IBM
+  url: https://huggingface.co/ibm-granite
+  license: Apache 2.0
+  last_reviewed: 2026-09-01
+  blurb: IBM's open-weight family, built for tool calling and agent work at sizes that run on ordinary hardware. The 4.2 release comes in 3 billion, 8 billion, and 30 billion parameter versions under Apache 2.0, with quantized builds published alongside for lower-memory machines.
+
 - name: Llama 4
   vendor: Meta
   url: https://www.llama.com
@@ -47,9 +57,9 @@
 - name: Qwen3
   vendor: Alibaba
   url: https://huggingface.co/Qwen
-  license: Apache 2.0 (Qwen3.8-Max license on the 2.4T flagship)
-  last_reviewed: 2026-08-13
-  blurb: Alibaba's open-weight line, offered in the widest range of sizes, from models small enough for a laptop to flagship scale, with broad multilingual coverage. The August 2026 Qwen3.8 release opened a Max-class flagship for the first time (2.4 trillion parameters with 95 billion active, data-center hardware only) alongside a 27 billion parameter vision-language model that runs on a workstation, both with a 262,000 token context extensible to about 1 million.
+  license: Apache 2.0 (Qwen3.8-Max license on the 2.4T flagship; Qwen Community License 1.0 on Flash-Next)
+  last_reviewed: 2026-09-01
+  blurb: Alibaba's open-weight line, offered in the widest range of sizes, from models small enough for a laptop to flagship scale, with broad multilingual coverage. The August 2026 Qwen3.8 release opened a Max-class flagship for the first time (2.4 trillion parameters with 95 billion active, data-center hardware only) alongside a 27 billion parameter vision-language model that runs on a workstation, both with a 262,000 token context extensible to about 1 million. Qwen3.8-Flash-Next, published later that month as a preview of the next architecture, is multimodal and carries a third license.
 
 - name: DeepSeek
   vendor: DeepSeek
@@ -82,12 +92,20 @@
 # The next three were added 2026-07-02 via content-watch issue #6 (owner
 # approved). Licenses verified from each Hugging Face model card.
 
-- name: GLM 5.2
+# GLM 5.3 published 2026-08-25 (zai-org/GLM-5.3). The license changed with
+# it and the version bump alone would have carried a wrong license field
+# forward: 5.2 was MIT, 5.3 ships a custom "GLM-5.3 License" read from the
+# repo's LICENSE file 2026-09-01. It is an MIT-style grant (use, modify,
+# distribute, sell, fine-tune, all permitted) with one condition, which no
+# university triggers: a Model-as-a-Service business whose group revenue
+# exceeds 10 billion US dollars over any 12 months must pass a Z.AI
+# security review before commercial use.
+- name: GLM 5.3
   vendor: Z.ai (Zhipu AI)
-  url: https://huggingface.co/zai-org/GLM-5.2
-  license: MIT
-  last_reviewed: 2026-07-02
-  blurb: The current flagship of the GLM open-weight family behind the Z.ai assistant, a mixture-of-experts model published under the permissive MIT license and supported by local toolchains including llama.cpp.
+  url: https://huggingface.co/zai-org/GLM-5.3
+  license: GLM-5.3 License
+  last_reviewed: 2026-09-01
+  blurb: The current flagship of the GLM open-weight family behind the Z.ai assistant, a mixture-of-experts model that keeps the 5.2 base model and gains its improvements from post-training, with the largest gains in complex coding. Supported by local toolchains including llama.cpp. Published under a custom license that permits use, modification, and redistribution, with conditions that apply only to very large commercial providers.
 
 - name: LongCat 2.0
   vendor: Meituan
@@ -104,14 +122,16 @@
   blurb: Huawei's open-weight mixture-of-experts model, 92 billion total parameters with 6 billion active and a 512k context window, trained on Huawei's own accelerators under a custom license.
 
 # Verified 2026-07-07: license apache-2.0 from the Hugging Face card tag;
-# 295B total (298.8B incl. MTP layers per safetensors), 21B active, 256k
-# context per the release coverage (simonwillison.net/2026/Jul/6/hy3).
-- name: Hy3
+# Succeeded by Hy4 preview, published 2026-08-27. Specifications read
+# from the model card 2026-09-01: 770B total, 49B activated per token,
+# 1M context, Apache 2.0 confirmed from the card's own license field.
+# Hy3 was 295B total / 21B active / 256k context.
+- name: Hy4 Preview
   vendor: Tencent
-  url: https://huggingface.co/tencent/Hy3
+  url: https://huggingface.co/tencent/Hy4-preview
   license: Apache 2.0
-  last_reviewed: 2026-07-07
-  blurb: A large open-weight mixture-of-experts model from Chinese company Tencent, about 295 billion total parameters with 21 billion active per token and a 256,000 token context window, under Apache 2.0.
+  last_reviewed: 2026-09-01
+  blurb: A very large open-weight mixture-of-experts model from Chinese company Tencent, 770 billion total parameters with 49 billion active per token and a 1 million token context window, under Apache 2.0. Data-center hardware only. It succeeds Hy3, which was roughly a third the size.
 
 # Verified 2026-07-07: license tag "other" resolves to
 # tabfm-non-commercial-v1.0 on the Hugging Face card; named verbatim.
