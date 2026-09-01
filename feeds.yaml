@@ -124,6 +124,16 @@ llm:
     page_review:
       provider: anthropic
       model: claude-sonnet-5
+      # 16000, not the 4000 default (2026-09-01, issue #44): reviewing a
+      # claim-heavy page against several fetched tool pages spends more
+      # on thinking than the default allows, and Claude 5 thinking draws
+      # from the same budget as the reply. tools/research.md and
+      # tools/interfaces.md both failed as truncation errors, the same
+      # failure as issues #20 and #27. This is a ceiling, not a spend:
+      # runs that do not need the room are unaffected. The 300s timeout
+      # in content_watch.call_task, which this task shares, is already
+      # long enough for the raised ceiling to be generatable.
+      max_tokens: 16000
     # Weekly digest narrative: owner editorial decision 2026-07-04, made
     # knowing the benchmark picture (LiveBench has Opus 4.8 slightly ahead
     # globally): Fable 5 writes denser short-form prose, and Opus's
