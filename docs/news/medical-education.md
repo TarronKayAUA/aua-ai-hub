@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of September 1, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -47,6 +47,27 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42677091?fc=20260609215449&amp;ff=20260901152452&amp;v=2.20.1">The digital transformation of clinical teaching: a review of AI and data-driven quality assurance systems in medical education</a>
     <p class="news-card-summary">Review identifies governance frameworks, faculty development, equitable access, validation, and continuous evaluation as prerequisites for integrating AI-based technologies into clinical education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42679233?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">AI Tool Use Among Osteopathic Medical Students: Pilot Digital Diary Study</a>
+    <p class="news-card-summary">Osteopathic medical students use AI for a substantial portion of study time, with greater adoption among clinical trainees, though most use remains passive; further research on learning outcomes is needed.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42678725?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">Assessing AI literacy and attitudes among medical students: implications for integration into healthcare practice</a>
+    <p class="news-card-summary">Study assesses artificial intelligence literacy and attitudes among medical students and their implications for integrating AI into healthcare practice.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42678529?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">Performance and Hallucination Analysis of Large Language Models on European Anesthesiology Examinations: Cross-Sectional Comparative Study</a>
+    <p class="news-card-summary">Large language models score highly on European anesthesiology examinations but produce clinically relevant hallucinations, supporting their use as supervised educational tools rather than autonomous resources.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -104,27 +125,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42666714?fc=20260609215449&amp;ff=20260829152515&amp;v=2.20.1">Clinician Performance in Training Data Curation for an Arrhythmia Machine Learning Model: Is Anyone Qualified?</a>
     <p class="news-card-summary">Study finds clinicians perform inconsistently when labeling arrhythmia training data, especially for complex cases, supporting the case for clinical decision support tools and better labeler preparation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42663448?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Postgraduate Education in Artificial Intelligence: A Proposal from the Artificial Intelligence Commission of the Portuguese Medical Association</a>
-    <p class="news-card-summary">The Portuguese Medical Association proposes postgraduate AI literacy training requirements to meet European AI Act compliance for clinical staff.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42662474?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Large Language Models as Simulated Candidates in Objective Structured Clinical Examinations: A Rubric-Mapping Proof-of-Concept Study</a>
-    <p class="news-card-summary">Large language models can generate structured, scoreable responses for objective structured clinical examination station pre-validation and rubric refinement.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42662102?fc=20260609215449&amp;ff=20260828182318&amp;v=2.20.1">Generative AI and Clinicians Show Comparable Prognostic Reasoning From Clinical Narratives in Biologic-Treated CRSwNP</a>
-    <p class="news-card-summary">Large language models produced prognostic reasoning comparable to clinician variability when analyzing limited clinical text in chronic rhinosinusitis cases.</p>
   </div>
 </div>
 </div>
