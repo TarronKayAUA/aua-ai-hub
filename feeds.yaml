@@ -148,9 +148,15 @@ llm:
     # docs that day), newer model, so the swap is free. The primary stays
     # Fable pending a side-by-side; the July 4 choice was about dense
     # short-form prose under a 320-word ceiling, not raw capability.
+    # Primary moved from claude-fable-5 to claude-fable-5-1 on 2026-09-01
+    # (owner approved): same list price ($10/$50 per million, verified from
+    # the platform docs that day), same model class, newer knowledge
+    # cutoff, so the swap follows the July 25 logic that moved the
+    # fallback. The July 4 prose-density judgement was made on Fable 5;
+    # if the narrative's register drifts, this is the line to revisit.
     digest_narrative:
       provider: anthropic
-      model: claude-fable-5
+      model: claude-fable-5-1
       fallback_model: claude-opus-5
       max_tokens: 8000
       # List prices for the cost line in the verification block (USD per
