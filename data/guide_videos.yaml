@@ -44,18 +44,23 @@
   url: https://www.youtube.com/watch?v=px7XlbYgk7I
   note: Official onboarding covering the command line, app, and editor extension.
 
-# Tool renamed 2026-07-13 (Agent Mode became ChatGPT Work in the
-# 2026-07-09 desktop merge). The video predates the merge; swap it for
-# an official ChatGPT Work walkthrough at the next guide-videos refresh.
+# Refreshed 2026-09-01: the previous entry ("Introduction to ChatGPT
+# agent", July 2025) predated the 2026-07-09 desktop merge that renamed
+# Agent Mode to ChatGPT Work. OpenAI published a series of short official
+# walkthroughs on 2026-08-28; this is the getting-started one, verified
+# via oEmbed (channel OpenAI) and the watch page (3 min, 2026-08-28).
+# The rest of the series (computer and browser use, slides and docs,
+# plugins and skills, scheduled tasks, voice, phone) sits on the same
+# channel and is named in the note rather than listed, one entry per tool.
 - tool: ChatGPT Work
   slug: chatgpt-agent
   group: agents
-  title: Introduction to ChatGPT agent
+  title: Getting Started with ChatGPT Work
   channel: OpenAI (official)
-  length: 25 min
-  published: July 2025
-  url: https://www.youtube.com/watch?v=1jn_RpbPbEc
-  note: The official introduction to the former Agent Mode, which became ChatGPT Work in the July 2026 desktop merge; the interface has changed, the agent concepts shown still hold.
+  length: 3 min
+  published: August 2026
+  url: https://www.youtube.com/watch?v=Rk4VyQxDq5s
+  note: The official three-minute introduction, first of a same-day series of short walkthroughs on OpenAI's channel covering computer and browser use, slides and documents, plugins and skills, scheduled tasks, and the phone app.
 
 - tool: Manus
   slug: manus

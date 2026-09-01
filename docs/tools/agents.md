@@ -56,7 +56,7 @@ The installable version of the same problem is a skill: a file of instructions a
 
 ## The agents
 
-The [Agents category in the tools directory](index.md#agents) carries every entry with its status and cost. Below, each agent gets its own section: what it is, where it lives, one verified video walkthrough (official-channel videos where they exist), and its official starting documentation. Video links reviewed June 2026; tutorials in this space age within months, so check a video's date against the tool's current version.
+The [Agents category in the tools directory](index.md#agents) carries every entry with its status and cost. Below, each agent gets its own section: what it is, where it lives, one verified video walkthrough (official-channel videos where they exist), and its official starting documentation. Video links reviewed September 2026; tutorials in this space age within months, so check a video's date against the tool's current version.
 
 | Agent | Maker | The short version |
 | --- | --- | --- |

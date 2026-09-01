@@ -71,7 +71,7 @@ Be clear-eyed about what this trades away. The moment your model runs on rented 
 
 ## Watch: setting it up
 
-Verified walkthroughs for the tools on this page. Links reviewed June 2026; check a video's date against the tool's current version.
+Verified walkthroughs for the tools on this page. Links reviewed September 2026; check a video's date against the tool's current version.
 
 <!-- render:guide-videos:local -->
 
