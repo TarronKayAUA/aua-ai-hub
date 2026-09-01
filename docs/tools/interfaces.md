@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-07-13
+last_reviewed: 2026-09-01
 ---
 
 # Chat, Work, or Code: Choosing Your AI Interface
@@ -78,7 +78,7 @@ The heuristic: default effort for routine work; drop effort (or use fast mode) f
 
 Model names go stale faster than anything else on this page; treat these as a snapshot, check the [Benchmarks section](../benchmarks.md) for standings, and expect the interfaces to outlive the models in them.
 
-- **Anthropic:** Claude Code and Cowork run the Claude family. Claude Fable 5 is the top model for the hardest, longest-running tasks (selected explicitly with `/model fable`; not the default). Claude Opus 4.8 is the default on Max and enterprise plans; Claude Sonnet 5 is the default on Pro.
+- **Anthropic:** Claude Code and Cowork run the Claude family. Claude Fable 5.1, released 1 September 2026, is the top model for demanding reasoning and long-running agent work. It is available on every paid plan but never the default: you select it explicitly (in Claude Code with `/model`), Max plans include it for up to half of weekly usage, and Pro plans pay for it with usage credits. Claude Opus 5 is Anthropic's recommended starting point for most work, with Claude Sonnet 5 as the faster, lower-cost tier.
 - **OpenAI:** the ChatGPT app runs the GPT-5.6 family, three tiers under one generation: Sol (flagship), Terra (the everyday mid-tier), Luna (fastest and cheapest). Free and Go plans get Terra; Plus, Pro, Business, and Enterprise plans choose the tier and set the effort level.
 
 ## Equipping the machine
