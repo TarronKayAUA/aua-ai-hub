@@ -11,7 +11,8 @@ downloaded once into NARRATION_MODEL_DIR (default ~/.cache/aua-narration)
 from the kokoro-onnx project's release; CI caches that directory.
 
 Text extraction follows the rules from the 2026-09-01 site audit: skip
-front matter, meta-chip rows, snippet includes, SVG bodies (keep figure
+icon shortcodes in headings, cue fully quoted headings as misconceptions,
+skip front matter, meta-chip rows, snippet includes, SVG bodies (keep figure
 captions), link-only list items and Next lines; read headings as section
 cues; expand collapsed blocks as title then body; strip markdown links to
 their text and drop citation parentheticals. A small owner-tunable lexicon
@@ -59,7 +60,8 @@ def load_lexicon() -> list[tuple[re.Pattern, str]]:
     data = yaml.safe_load(LEXICON_PATH.read_text(encoding="utf-8")) or {}
     rules = []
     for term, spoken in (data.get("terms") or {}).items():
-        rules.append((re.compile(rf"(?<![\w-]){re.escape(term)}(?![\w-])"), spoken))
+        # A trailing hyphen is allowed so "AI-generated" reads "A I-generated".
+        rules.append((re.compile(rf"(?<![\w-]){re.escape(term)}(?!\w)"), spoken))
     return rules
 
 
@@ -87,9 +89,20 @@ def markdown_to_speech_text(src: str) -> str:
         if not s.strip():
             out.append("")
             continue
+        # Horizontal rules and other punctuation-only lines have nothing to
+        # say; the voice model raises on a paragraph with no phonemes.
+        if re.fullmatch(r"\s*[-*_=]{3,}\s*", s):
+            out.append("")
+            continue
         m = re.match(r"^(#{1,6})\s+(.*)$", s)
         if m:
-            out.append("\n" + m.group(2).strip().rstrip(".") + ".")
+            heading = re.sub(r":[a-z0-9_-]+:\s*", "", m.group(2)).strip().rstrip(".")
+            # A heading that is entirely a quotation names a misconception
+            # (basics/misconceptions.md); cue it so it is not heard as an
+            # assertion.
+            if re.fullmatch(r'"[^"]+"', heading):
+                heading = "Misconception: " + heading
+            out.append("\n" + heading + ".")
             continue
         m = re.match(r'^(\?\?\?|!!!)\+?\s+\w+\s+"(.*)"$', s)
         if m:
@@ -104,9 +117,14 @@ def markdown_to_speech_text(src: str) -> str:
         s = re.sub(r"^\s*- \[ \] ", "", s)
         if re.match(r"^\s*[-*]\s+\S+\s*$", s):
             continue
+        is_item = bool(re.match(r"^\s*(?:[-*]|\d+\.)\s+", s))
         s = re.sub(r"^\s*[-*]\s+", "", s)
         s = re.sub(r"^\s*\d+\.\s+", "", s)
         out.append(s.strip())
+        if is_item:
+            # Each list item becomes its own spoken paragraph, so the voice
+            # pauses between items instead of running a list together.
+            out.append("")
     text = "\n".join(out)
     text = html.unescape(text)
     return re.sub(r"\n{3,}", "\n\n", text).strip()
@@ -193,6 +211,8 @@ def synthesize(engine, text: str, out: Path) -> float:
     chunks = []
     sr = SAMPLE_RATE
     for para in [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]:
+        if not re.search(r"[A-Za-z0-9]", para):
+            continue
         audio, sr = engine.create(para, voice=VOICE, speed=1.0, lang="en-us")
         chunks.append(audio)
         chunks.append(np.zeros(int(sr * PARAGRAPH_PAUSE_S), dtype=np.float32))

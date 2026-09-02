@@ -28,6 +28,9 @@ STATIC_PAGES = [
     "pathway/research.md",
     "pathway/clinical.md",
     "pathway/working-with-agents.md",
+    # Second round, owner approved 2026-09-01.
+    "basics/how-llms-work.md",
+    "basics/misconceptions.md",
 ]
 
 # News pages whose section briefs are narrated at build time.
