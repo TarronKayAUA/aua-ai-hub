@@ -1,0 +1,8 @@
+# Narration voice dependencies (scripts/narrate.py), installed only by the
+# CI build steps that generate audio; not needed for the pipeline or for
+# local builds, which render pages without players when audio is absent.
+# Pinned like requirements.txt. kokoro-onnx supports Python <3.14.
+kokoro-onnx==0.6.1
+onnxruntime==1.29.0
+soundfile==0.14.0
+numpy==2.5.2

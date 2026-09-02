@@ -819,3 +819,27 @@
 .md-banner a:hover {
   color: var(--md-accent-fg-color);
 }
+
+/* === Narration player (2026-09-01) ========================================
+   Injected by scripts/render_data.py under the meta-chip row on pages
+   that have a generated MP3 in docs/assets/audio/, and inside each news
+   section brief that has one. Native audio element: keyboard-accessible,
+   works on phones, nothing to maintain. */
+.listen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.6rem 0 1rem;
+}
+.listen audio {
+  height: 2.2rem;
+  max-width: 100%;
+}
+.listen-note {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+.section-brief .listen {
+  margin: 0.4rem 0 0.6rem;
+}

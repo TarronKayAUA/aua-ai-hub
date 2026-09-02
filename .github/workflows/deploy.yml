@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -25,6 +25,21 @@ jobs:
           python-version: "3.13"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Cache narration model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/aua-narration
+          key: narration-model-v1
+      - name: Cache generated narration audio
+        uses: actions/cache@v4
+        with:
+          path: docs/assets/audio
+          key: narration-audio-${{ github.run_id }}
+          restore-keys: narration-audio-
+      - name: Narrate news briefs and digest
+        run: |
+          pip install -r requirements-narration.txt
+          python scripts/narrate.py --only news
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v5
         with:

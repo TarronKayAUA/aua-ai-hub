@@ -13,3 +13,11 @@ site/
 # OS noise
 Thumbs.db
 .DS_Store
+
+# Narration audio generated during the CI build (news briefs and the
+# weekly digest narrative); regenerated every run, never committed. The
+# static pathway narration in the same folder IS committed.
+docs/assets/audio/news-*.mp3
+docs/assets/audio/news-*.sha256
+docs/assets/audio/digest-*.mp3
+docs/assets/audio/digest-*.sha256

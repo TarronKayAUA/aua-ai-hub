@@ -24,6 +24,9 @@ from urllib.parse import urlparse
 
 import yaml
 
+from narration_common import (NEWS_PAGES, STATIC_PAGES, audio_exists, brief_slug,
+                              digest_slug, page_slug, player_html)
+
 TOOLS_MARKER = "<!-- render:tools -->"
 OPEN_MODELS_MARKER = "<!-- render:open-models -->"
 GUIDE_VIDEOS_LOCAL_MARKER = "<!-- render:guide-videos:local -->"
@@ -1155,9 +1158,54 @@ def _reviewed_footer(meta, src: str) -> str:
             f'[About page]({about}).</p>\n')
 
 
+def _inject_narration(src: str, markdown: str) -> str:
+    """Add a native audio player wherever a generated MP3 exists for this
+    page (scripts/narrate.py). Absent audio means no player, so local
+    builds and pages outside the narrated set are untouched. Raw HTML
+    src paths are page-relative because MkDocs does not rewrite them."""
+    if src in STATIC_PAGES and audio_exists(page_slug(src)):
+        title = re.search(r"^# (.+)$", markdown, flags=re.M)
+        label = (title.group(1).strip() if title else src) + ", read aloud"
+        player = player_html(src, page_slug(src), label)
+        lines = markdown.split("\n")
+        for i, line in enumerate(lines):
+            if line.startswith('<span class="meta-chip"'):
+                lines.insert(i + 1, "\n" + player)
+                return "\n".join(lines)
+        for i, line in enumerate(lines):
+            if line.startswith("# "):
+                lines.insert(i + 1, "\n" + player)
+                break
+        return "\n".join(lines)
+    if src in NEWS_PAGES:
+        h1 = re.search(r"^# (.+)$", markdown, flags=re.M)
+        heading = h1.group(1).strip() if h1 else None
+        out = []
+        for chunk in re.split(r"(?m)^(?=## )", markdown):
+            hm = re.match(r"^## (.+)$", chunk, flags=re.M)
+            if hm:
+                heading = hm.group(1).strip()
+            if heading and '<div class="section-brief">' in chunk:
+                slug = brief_slug(src, heading)
+                if audio_exists(slug):
+                    chunk = chunk.replace(
+                        '<p class="section-brief-date">',
+                        player_html(src, slug, f"{heading} brief, read aloud")
+                        + '\n<p class="section-brief-date">', 1)
+            out.append(chunk)
+        return "".join(out)
+    if re.fullmatch(r"news/archive/\d{4}-w\d{2}\.md", src) and audio_exists(digest_slug(src)):
+        return markdown.replace(
+            "## The week in brief\n",
+            "## The week in brief\n\n"
+            + player_html(src, digest_slug(src), "The week in brief, read aloud") + "\n", 1)
+    return markdown
+
+
 def on_page_markdown(markdown, page, config, files):
     src = page.file.src_uri
     markdown += _reviewed_footer(page.meta, src)
+    markdown = _inject_narration(src, markdown)
     if src == "tools/index.md":
         for marker in (TOOLS_MARKER, OPEN_MODELS_MARKER):
             if marker not in markdown:

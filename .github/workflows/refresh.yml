@@ -31,7 +31,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -62,6 +62,21 @@ jobs:
           else
             echo "No content changes; skipping commit."
           fi
+      - name: Cache narration model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/aua-narration
+          key: narration-model-v1
+      - name: Cache generated narration audio
+        uses: actions/cache@v4
+        with:
+          path: docs/assets/audio
+          key: narration-audio-${{ github.run_id }}
+          restore-keys: narration-audio-
+      - name: Narrate news briefs and digest
+        run: |
+          pip install -r requirements-narration.txt
+          python scripts/narrate.py --only news
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v5
         with:
