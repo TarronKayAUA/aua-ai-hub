@@ -67,10 +67,15 @@ jobs:
         with:
           path: ~/.cache/aua-narration
           key: narration-model-v1
+      # Only the build-generated files are cached. Caching the whole folder
+      # restored last run's stale pathway MP3s over the freshly checked-out
+      # committed ones (found 2026-09-02, the live audio lagged a commit).
       - name: Cache generated narration audio
         uses: actions/cache@v4
         with:
-          path: docs/assets/audio
+          path: |
+            docs/assets/audio/news-*
+            docs/assets/audio/digest-*
           key: narration-audio-${{ github.run_id }}
           restore-keys: narration-audio-
       - name: Narrate news briefs and digest
