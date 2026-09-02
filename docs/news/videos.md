@@ -13,6 +13,30 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=eHsuG3bPiJ8" target="_blank" rel="noopener" title="Stop Paying for ElevenLabs? NEW #1 Realtime AI Voice Inworld TTS-2">
+  <img src="https://i2.ytimg.com/vi/eHsuG3bPiJ8/hqdefault.jpg" alt="Video: Inworld TTS-2 real-time voice performance and comparison" loading="lazy">
+  <span class="video-card-title">Inworld TTS-2 real-time voice performance and comparison</span>
+  <span class="video-card-meta">WorldofAI, September 2, 2026</span>
+  <span class="video-card-desc">Hands-on comparison of Inworld TTS-2 against commercial alternatives, demonstrating real-time text-to-speech capabilities and relative performance rankings.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=qRNZMGc7TMc" target="_blank" rel="noopener" title="GPT-6 Astra Just Went CRITICAL...">
+  <img src="https://i2.ytimg.com/vi/qRNZMGc7TMc/hqdefault.jpg" alt="Video: OpenAI Astra model cybersecurity risk assessment" loading="lazy">
+  <span class="video-card-title">OpenAI Astra model cybersecurity risk assessment</span>
+  <span class="video-card-meta">Wes Roth, September 2, 2026</span>
+  <span class="video-card-desc">Report on OpenAI&#x27;s assessment of its upcoming Astra model against its Preparedness Framework cybersecurity thresholds and implications for model safety classification.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=epogfA_0R4E" target="_blank" rel="noopener" title="Anthropic went CRAZY (Mythos/Fable 5.1)">
+  <img src="https://i2.ytimg.com/vi/epogfA_0R4E/hqdefault.jpg" alt="Video: Anthropic Fable 5.1 hands-on demonstration and testing" loading="lazy">
+  <span class="video-card-title">Anthropic Fable 5.1 hands-on demonstration and testing</span>
+  <span class="video-card-meta">Matthew Berman, September 1, 2026</span>
+  <span class="video-card-desc">Hands-on demonstration of Anthropic&#x27;s Mythos and Fable 5.1 models showing agent capabilities, benchmarks, and real-world test applications.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=9Z9rPZavjUU" target="_blank" rel="noopener" title="Claude Fable 5.1 Is INSANE, Hands-On With the BEST Model Yet!">
+  <img src="https://i2.ytimg.com/vi/9Z9rPZavjUU/hqdefault.jpg" alt="Video: Claude Fable 5.1 technical testing and benchmark review" loading="lazy">
+  <span class="video-card-title">Claude Fable 5.1 technical testing and benchmark review</span>
+  <span class="video-card-meta">Bijan Bowen, September 1, 2026</span>
+  <span class="video-card-desc">Technical hands-on testing of Claude Fable 5.1 across benchmarks, browser automation, and coding tasks with performance analysis.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=ROF2Nv_KjOM" target="_blank" rel="noopener" title="Introducing Claude Fable 5.1">
   <img src="https://i3.ytimg.com/vi/ROF2Nv_KjOM/hqdefault.jpg" alt="Video: Claude Fable 5.1 model announcement" loading="lazy">
   <span class="video-card-title">Claude Fable 5.1 model announcement</span>
@@ -108,30 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI coding agents and codebase understanding</span>
   <span class="video-card-meta">IBM Technology, August 24, 2026</span>
   <span class="video-card-desc">Explanation of how AI coding agents parse and work with codebases and developer tools for code generation and understanding.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=c4UiiWU7DoI" target="_blank" rel="noopener" title="Ox Alpha Is INSANE, Testing the Mysterious New Stealth Model!">
-  <img src="https://i4.ytimg.com/vi/c4UiiWU7DoI/hqdefault.jpg" alt="Video: Testing Ox Alpha model capabilities" loading="lazy">
-  <span class="video-card-title">Testing Ox Alpha model capabilities</span>
-  <span class="video-card-meta">Bijan Bowen, August 21, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Ox Alpha, a newly released model, across multiple benchmarks including simulation, web interaction, and reasoning tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=OvjccOrr-iw" target="_blank" rel="noopener" title="What Is the AI Security Trilemma? Smart, Fast, or Secure AI?">
-  <img src="https://i4.ytimg.com/vi/OvjccOrr-iw/hqdefault.jpg" alt="Video: AI security tradeoffs: intelligence, speed, and safety" loading="lazy">
-  <span class="video-card-title">AI security tradeoffs: intelligence, speed, and safety</span>
-  <span class="video-card-meta">IBM Technology, August 18, 2026</span>
-  <span class="video-card-desc">Explainer of the tradeoffs between intelligence, speed, and security in AI systems and their implications for deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=BHGTA6ZEls4" target="_blank" rel="noopener" title="5 Ways to Connect AI Agents to Tools: From APIs to MCP">
-  <img src="https://i3.ytimg.com/vi/BHGTA6ZEls4/hqdefault.jpg" alt="Video: Connecting AI agents to tools: methods and protocols" loading="lazy">
-  <span class="video-card-title">Connecting AI agents to tools: methods and protocols</span>
-  <span class="video-card-meta">IBM Technology, August 16, 2026</span>
-  <span class="video-card-desc">Overview of five approaches for connecting AI agents to external tools, including application programming interfaces and model context protocol.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=3TeW8L9wy-Y" target="_blank" rel="noopener" title="GLM 5.3 Is HERE, Is THIS the BEST Open Model Yet?">
-  <img src="https://i4.ytimg.com/vi/3TeW8L9wy-Y/hqdefault.jpg" alt="Video: GLM 5.3 open model evaluation and testing" loading="lazy">
-  <span class="video-card-title">GLM 5.3 open model evaluation and testing</span>
-  <span class="video-card-meta">Bijan Bowen, August 16, 2026</span>
-  <span class="video-card-desc">Hands-on evaluation of GLM 5.3 open-weights model across multiple benchmarks and use cases.</span>
 </a>
 </div>
 

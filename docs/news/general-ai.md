@@ -18,7 +18,7 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of September 2, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-reliability">
@@ -42,6 +42,14 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <p class="news-card-summary">Anthropic released Claude Fable 5.1, advancing coding and scientific reasoning with 52.6% score on Terminal-Bench-Science 0.1.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/fable-5.1-max.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference">The efficient frontier of LLM inference</a>
+    <p class="news-card-summary">Analysis of trade-offs between speed, cost, and quality in large language model inference optimization strategies.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.datocms-assets.com/104802/1788302073-efficient-frontier-image3.png?auto=compress%2Cformat&amp;fit=crop&amp;h=630&amp;q=75&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
@@ -124,13 +132,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.27844">EvoHarmBench: Breaking Content Moderation with Iterative Human-Like Evasion</a>
     <p class="news-card-summary">A benchmark for evaluating content moderation systems using iterative human-like evasion to expose failures in interactive adversarial scenarios.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.27855">AI Writers Have a Consistent Stylometric Footprint, but AI Editors Do Not</a>
-    <p class="news-card-summary">Study finding that language model-generated text has distinctive stylometric signatures but AI-edited human text does not, with implications for detection.</p>
   </div>
 </div>
 </div>

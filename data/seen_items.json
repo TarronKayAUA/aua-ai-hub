@@ -1,68 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42399988?fc=20260609215449&ff=20260704051042&v=2.20.0",
-   "title_hash": "c5631dc39f1c99ab71e6c5555c168f66",
-   "first_seen": "2026-07-04T09:10:42.631207+00:00",
-   "kept": true,
-   "title": "Principles for medical students' responsible use of generative AI: a student-partnered Delphi study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-04T10:00:00+00:00",
-   "summary": "Delphi study with student partners identifies principles for responsible generative AI use in medical education.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02959-x",
-   "title_hash": "61a37b2f798915014ce8d20b6352ef97",
-   "first_seen": "2026-07-04T09:10:42.631207+00:00",
-   "kept": true,
-   "title": "Conversational artificial intelligence for pre-procedural patient preparation: implementation, validation and patient satisfaction",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-04T00:00:00+00:00",
-   "summary": "Study reports implementation and validation of conversational AI for preparing patients before medical procedures and measures patient satisfaction.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42399928?fc=20260609215449&ff=20260704051042&v=2.20.0",
-   "title_hash": "32b84b5cc0b7cb6a433c3e0e7c877071",
-   "first_seen": "2026-07-04T09:10:42.631207+00:00",
-   "kept": true,
-   "title": "Do large language models differ in their pharmacology-related response quality for oral and maxillofacial surgery? a blinded expert benchmark study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-03T10:00:00+00:00",
-   "summary": "Blinded benchmark comparison of Claude Sonnet and Gemini Pro on pharmacology questions for oral and maxillofacial surgery.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42399877?fc=20260609215449&ff=20260704051042&v=2.20.0",
-   "title_hash": "5a2b2f967a75dadc9c64bf00c2bd66b2",
-   "first_seen": "2026-07-04T09:10:42.631207+00:00",
-   "kept": false,
-   "reason": "narrow domain application with limited scope"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02947-1",
-   "title_hash": "7c039f9d3e8ad8afe70a9e7d2a875760",
-   "first_seen": "2026-07-04T09:10:42.631207+00:00",
-   "kept": true,
-   "title": "Predicting response to neoadjuvant therapy using artificial intelligence on digitized histopathology slides: a systematic review",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-03T00:00:00+00:00",
-   "summary": "Systematic review of artificial intelligence methods for predicting treatment response from digitized histopathology slides.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Big-Ways-AI-Just-Changed-e3lkje9",
-   "title_hash": "875f238c3dfbadbde0dc0fbc3eec10b7",
-   "first_seen": "2026-07-04T09:10:42.631207+00:00",
-   "kept": false,
-   "reason": "incomplete candidate data; summary cuts off mid-sentence and provides no substantive information about episode content or speakers"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&ff=20260704114920&v=2.20.0",
    "title_hash": "448240cb850b47ff779449679950ad25",
    "first_seen": "2026-07-04T15:49:19.939408+00:00",
@@ -31919,6 +31857,131 @@
    "first_seen": "2026-09-02T04:39:00.661775+00:00",
    "kept": false,
    "reason": "personal blog post on local model setup without instructive analysis for medical educators"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42680939?fc=20260609215449&ff=20260902084734&v=2.20.1",
+   "title_hash": "be85c04640f083fe1cb027d8345e7d05",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": true,
+   "title": "SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "SlideChat is a multimodal AI assistant that analyzes whole-slide pathology images across cancer types, addressing a gap in AI tools for gigapixel-scale clinical image interpretation.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/what-should-we-say-to-trainees-who",
+   "title_hash": "a90b2b96322993f5d013a71591131bf8",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/2/rick-brewster",
+   "title_hash": "8f4c89e3abf97cefb07112cf52475e7d",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/online-trending-now/2026/09/02/time-plan-and-prepare-students-and-colleagues-ai",
+   "title_hash": "11b9388987d12f885b569e116d3fe49a",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": false,
+   "reason": "vendor marketing and lacks substantive analysis"
+  },
+  {
+   "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference",
+   "title_hash": "c014ddb19854655628ba591af2c71b6b",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": true,
+   "title": "The efficient frontier of LLM inference",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-01T23:48:05+00:00",
+   "summary": "Analysis of trade-offs between speed, cost, and quality in large language model inference optimization strategies.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://www.datocms-assets.com/104802/1788302073-efficient-frontier-image3.png?auto=compress%2Cformat&fit=crop&h=630&q=75&w=1200",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w4l9cp/fingers_crossed_for_a_122b_or_really_anything",
+   "title_hash": "3377317753323d0923aed97d6f06d4ea",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": false,
+   "reason": "community meta-discussion without substantive news"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/1/datasette-mcp",
+   "title_hash": "0ea83d16d20206e236b412bd7879e7ec",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=epogfA_0R4E",
+   "title_hash": "32fcaf63ff4a7b78a4c178a4ff2beaa3",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": true,
+   "title": "Anthropic went CRAZY (Mythos/Fable 5.1)",
+   "source": "Matthew Berman",
+   "published": "2026-09-01T23:57:31+00:00",
+   "summary": "Hands-on demonstration of Anthropic's Mythos and Fable 5.1 models showing agent capabilities, benchmarks, and real-world test applications.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/epogfA_0R4E/hqdefault.jpg",
+   "display_title": "Anthropic Fable 5.1 hands-on demonstration and testing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9Z9rPZavjUU",
+   "title_hash": "c6575a93cbb6b0f953bc60c91992920d",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": true,
+   "title": "Claude Fable 5.1 Is INSANE, Hands-On With the BEST Model Yet!",
+   "source": "Bijan Bowen",
+   "published": "2026-09-01T23:31:45+00:00",
+   "summary": "Technical hands-on testing of Claude Fable 5.1 across benchmarks, browser automation, and coding tasks with performance analysis.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/9Z9rPZavjUU/hqdefault.jpg",
+   "display_title": "Claude Fable 5.1 technical testing and benchmark review"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=eHsuG3bPiJ8",
+   "title_hash": "4e86742492ae28e8126931ecb352d62f",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": true,
+   "title": "Stop Paying for ElevenLabs? NEW #1 Realtime AI Voice Inworld TTS-2",
+   "source": "WorldofAI",
+   "published": "2026-09-02T06:15:25+00:00",
+   "summary": "Hands-on comparison of Inworld TTS-2 against commercial alternatives, demonstrating real-time text-to-speech capabilities and relative performance rankings.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i2.ytimg.com/vi/eHsuG3bPiJ8/hqdefault.jpg",
+   "display_title": "Inworld TTS-2 real-time voice performance and comparison"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qRNZMGc7TMc",
+   "title_hash": "c7934c4db617eba5407af66ff457913c",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": true,
+   "title": "GPT-6 Astra Just Went CRITICAL...",
+   "source": "Wes Roth",
+   "published": "2026-09-02T05:41:07+00:00",
+   "summary": "Report on OpenAI's assessment of its upcoming Astra model against its Preparedness Framework cybersecurity thresholds and implications for model safety classification.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/qRNZMGc7TMc/hqdefault.jpg",
+   "display_title": "OpenAI Astra model cybersecurity risk assessment"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=-0p68wKEitE",
+   "title_hash": "130ceb0cab38ebf62608b0250a392763",
+   "first_seen": "2026-09-02T12:47:33.828675+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
