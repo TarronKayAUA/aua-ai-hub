@@ -843,3 +843,34 @@
 .section-brief .listen {
   margin: 0.4rem 0 0.6rem;
 }
+
+/* Narration speed buttons (docs/javascripts/listen.js). Same idiom as the
+   news topic chips: small pills, one active. Sits under the player so a
+   listener can change speed without hunting in the browser's menu. */
+.listen-speed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  flex-basis: 100%;
+}
+.listen-speed-btn {
+  font: inherit;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 1rem;
+  background: transparent;
+  color: var(--md-typeset-color);
+  cursor: pointer;
+}
+.listen-speed-btn:hover,
+.listen-speed-btn:focus-visible {
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color);
+}
+.listen-speed-btn.is-active {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: #ffffff;
+}

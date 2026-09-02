@@ -59,6 +59,7 @@ extra_javascript:
   - javascripts/prompts.js
   - javascripts/topics.js
   - javascripts/better-answers.js
+  - javascripts/listen.js
 
 plugins:
   - search

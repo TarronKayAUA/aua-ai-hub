@@ -98,7 +98,7 @@ PAGE_INTROS = {
 def selection_note(rel_prefix: str) -> str:
     """rel_prefix is the path from the page's directory up to docs/."""
     return (
-        "Items are selected nightly by an automated pipeline and the "
+        "Items are selected several times a day by an automated pipeline and the "
         "summaries are machine generated; follow the links to the original "
         f"sources. See [About]({rel_prefix}about.md) for how selection "
         "works."
@@ -2078,7 +2078,7 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
         "",
         "# This Week",
         "",
-        "Everything kept in the last seven days, refreshed nightly. "
+        "Everything kept in the last seven days, refreshed several times a day. "
         + selection_note("../"),
         "",
         # Raw HTML is not path-rewritten by MkDocs: the page serves from
