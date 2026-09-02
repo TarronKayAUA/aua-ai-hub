@@ -68,7 +68,7 @@ Three consequences worth internalizing:
 
 - [How LLMs Work](../basics/how-llms-work.md): the same mechanics, one level down (already linked above; it rewards a second pass).
 - [Common Misconceptions](../basics/misconceptions.md): calibrating trust by task.
-- [Benchmarks](../benchmarks.md): how capability actually gets measured, updated nightly.
+- [Benchmarks](../benchmarks.md): how capability actually gets measured, updated with each build.
 - [Glossary](../basics/glossary.md): the terms used across the pathway, one paragraph each.
 
 **Next:** [Module 2: Prompting Fundamentals](prompting.md)
