@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -44,7 +44,8 @@ jobs:
       - name: Narrate news briefs and digest
         run: |
           pip install -r requirements-narration.txt
-          python scripts/narrate.py --only news
+          python scripts/narrate.py --check || true
+          python scripts/narrate.py
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v5
         with:

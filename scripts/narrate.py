@@ -4,6 +4,7 @@ Usage:
     python scripts/narrate.py            # generate whatever is missing or stale
     python scripts/narrate.py --dry-run  # report targets and staleness, no model
     python scripts/narrate.py --only static | news
+    python scripts/narrate.py --check    # exit 1 if any committed static audio is stale
 
 Voice: Kokoro (hexgrad/Kokoro-82M, Apache 2.0) through kokoro-onnx, the
 "am_michael" voice, chosen by the owner 2026-09-01. Model files are
@@ -227,6 +228,8 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only", choices=["static", "news"])
     ap.add_argument("--force", action="store_true", help="regenerate even when the hash matches")
+    ap.add_argument("--check", action="store_true",
+                    help="list static pages whose committed audio is missing or stale and exit 1 if any; no generation")
     args = ap.parse_args()
 
     rules = load_lexicon()
@@ -245,15 +248,24 @@ def main() -> int:
         if not args.force and mp3.exists() and side.exists() and side.read_text().strip() == h:
             skipped += 1
             continue
-        todo.append((slug, label, spoken, h))
+        todo.append((slug, label, spoken, h, "missing" if not mp3.exists() else "text changed"))
 
     print("narrate: plan")
     print(f"  targets read : {len(targets)}")
     print(f"  up to date   : {skipped}")
     print(f"  to generate  : {len(todo)}")
-    for slug, _, spoken, _ in todo:
+    for slug, _, spoken, _, why in todo:
         words = len(spoken.split())
-        print(f"    {slug:44} {words:5d} words  ~{words/150:.1f} min")
+        print(f"    {slug:44} {words:5d} words  ~{words/150:.1f} min  ({why})")
+    if args.check:
+        stale = [(slug, why) for slug, _, _, _, why in todo if not slug.startswith(("news-", "digest-"))]
+        if not stale:
+            print("narrate: check ok, committed static narration matches every page")
+            return 0
+        for slug, why in stale:
+            msg = f"static narration {why}: {slug} (the build will re-read it; run scripts/narrate.py and commit the MP3 to make it durable)"
+            print(("::warning::" if os.environ.get("GITHUB_ACTIONS") else "narrate: STALE ") + msg)
+        return 1
     if args.dry_run or not todo:
         return 0
 
@@ -261,7 +273,7 @@ def main() -> int:
     model, voices = ensure_model()
     engine = Kokoro(str(model), str(voices))
     generated, failed, total_audio, t0 = 0, 0, 0.0, time.time()
-    for slug, _, spoken, h in todo:
+    for slug, _, spoken, h, _ in todo:
         try:
             secs = synthesize(engine, spoken, AUDIO_DIR / f"{slug}.mp3")
             (AUDIO_DIR / f"{slug}.sha256").write_text(h + "\n")

@@ -31,7 +31,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -81,7 +81,24 @@ jobs:
       - name: Narrate news briefs and digest
         run: |
           pip install -r requirements-narration.txt
-          python scripts/narrate.py --only news
+          python scripts/narrate.py --check || true
+          python scripts/narrate.py
+      # A static page edited without re-narration is re-read by the step
+      # above and served from this build; committing the result here makes
+      # the repository catch up within one refresh cycle (owner approved
+      # 2026-09-02). News audio is gitignored and never committed.
+      - name: Commit regenerated static narration
+        run: |
+          git add docs/assets/audio/pathway-* docs/assets/audio/basics-*
+          if git diff --cached --quiet; then
+            echo "Static narration already matches the text."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(narration): re-read pages whose text changed"
+            git pull --rebase origin main
+            git push
+          fi
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v5
         with:
