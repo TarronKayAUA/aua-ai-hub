@@ -21,6 +21,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88206">Markov Decision Process, Based Personalized Follow-Up Planning for Type 2 Diabetes: Retrospective Cohort Study</a>
+    <p class="news-card-summary">Researchers develop a Markov decision process framework for personalized follow-up scheduling in type 2 diabetes care, balancing monitoring frequency, delivery mode, health outcomes, and resource use.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 31, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87730">Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis</a>
     <p class="news-card-summary">Systematic review and meta-analysis of large language models in mental health care examining clinical usefulness, safety, and implementation readiness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88441">Predicting Call Abandonment in a Health Care Call Center Using Nonpersonal Operational Data: Machine Learning Study</a>
-    <p class="news-card-summary">Machine learning study predicting call abandonment in health care call centers using anonymized operational data only.</p>
   </div>
 </div>
 </div>

@@ -23,6 +23,14 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban">NYC bans AI use for students until they reach high school</a>
+    <p class="news-card-summary">New York City announced a one-year moratorium on AI use in classrooms for students below high school, affecting approximately 600,000 elementary and middle school students starting 2026-2027.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42680939?fc=20260609215449&amp;ff=20260902084734&amp;v=2.20.1">SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types</a>
     <p class="news-card-summary">SlideChat is a multimodal AI assistant that analyzes whole-slide pathology images across cancer types, addressing a gap in AI tools for gigapixel-scale clinical image interpretation.</p>
@@ -118,13 +126,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675249?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Sailing by the Stars: A Cross-Sectional Survey Study of Generative AI Use Among GME Trainees and Faculty</a>
     <p class="news-card-summary">Survey of graduate medical education trainees and faculty on generative AI use in clinical training.</p>
   </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://medicalfuturist.com/data-annotation">Data Annotators: The Unsung Heroes Of Artificial Intelligence Development</a>
-    <p class="news-card-summary">Article examines the role of data annotators in training healthcare AI systems and the labor practices underlying machine learning model development.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2019/04/081_data_annotator-scaled.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

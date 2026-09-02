@@ -1,43 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100",
-   "title_hash": "0c6ee0bcb17bde89e5ead468cf0a12cb",
-   "first_seen": "2026-07-04T20:16:07.872157+00:00",
-   "kept": true,
-   "title": "google/tabfm-1.0.0",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-04T10:20:58+00:00",
-   "summary": "Google Research released TabFM, a zero-shot foundation model for tabular data supporting classification and regression tasks.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/J-WwzolBRQVriyFjrSxJJXj_RBqoGjl9IqtDCzg_QIU.png?width=640&crop=smart&auto=webp&s=15aaf1d34804b9ad9d9e2115446764ba26b824f6"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02968-w",
-   "title_hash": "9f3ada3b58410525651ae2281bf12e5a",
-   "first_seen": "2026-07-04T20:16:07.872157+00:00",
-   "kept": true,
-   "title": "Explainable foundation model for dementia screening and risk stratification using retinal fundus images",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-04T00:00:00+00:00",
-   "summary": "A peer-reviewed study describes an explainable foundation model using retinal fundus images for dementia screening and risk stratification.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02872-3",
-   "title_hash": "1f0febc9949ea4a47b2c1365ed96cb76",
-   "first_seen": "2026-07-04T20:16:07.872157+00:00",
-   "kept": true,
-   "title": "LLM research on public biosignals data is needed to protect patients",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-04T00:00:00+00:00",
-   "summary": "A peer-reviewed commentary argues that large language model research on public biosignals data requires safeguards to protect patient privacy.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes",
    "title_hash": "64a039d3e531d85ee9615ceeb127b324",
    "first_seen": "2026-07-04T23:46:32.932134+00:00",
@@ -32134,6 +32097,89 @@
    "first_seen": "2026-09-02T19:24:08.692492+00:00",
    "kept": false,
    "reason": "product review and personal tool evaluation, not substantive discussion of AI development or medical relevance"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88206",
+   "title_hash": "c1f459bae7e355b317de1166393cf007",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": true,
+   "title": "Markov Decision Process, Based Personalized Follow-Up Planning for Type 2 Diabetes: Retrospective Cohort Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-02T21:45:17+00:00",
+   "summary": "Researchers develop a Markov decision process framework for personalized follow-up scheduling in type 2 diabetes care, balancing monitoring frequency, delivery mode, health outcomes, and resource use.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+   "title_hash": "030b3ec3e5e3e8ca07103c8651f1722f",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": true,
+   "title": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more",
+   "source": "The Verge AI",
+   "published": "2026-09-02T20:11:40+00:00",
+   "summary": "Google released Gemini 3.8 Flash with improved reasoning capabilities through iterative reasoning steps and tool use, maintaining introductory pricing levels.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/tech/988518/amazon-alexa-for-shopping-verify-emails",
+   "title_hash": "a15782113b3c82e02b634dceed102f6e",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": false,
+   "reason": "vendor marketing for consumer product feature unrelated to medical education or healthcare"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety",
+   "title_hash": "fd236b925e86c4e92e84051c001b4f90",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": false,
+   "reason": "drama coverage and unconfirmed safety claims about unreleased model"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
+   "title_hash": "4db833aa811da51395f627793b195e03",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": false,
+   "reason": "policy and litigation news without direct relevance to medical educators or students"
+  },
+  {
+   "url": "https://www.theverge.com/tech/988355/mrbeast-google-partnership-gemini-fitbit",
+   "title_hash": "56a47630f39ff1374e9282495f108194",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": false,
+   "reason": "vendor marketing and entertainment partnership promotion"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/988261/openai-tumbler-ridge-shooting-lawsuit-aiding-abetting",
+   "title_hash": "a0da483e91cd563f95e7bdd54d0a7fee",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": false,
+   "reason": "litigation and drama coverage unrelated to AI capabilities or medical practice"
+  },
+  {
+   "url": "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
+   "title_hash": "06418a0cd9fd5104f9afecebd2db352c",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": true,
+   "title": "NYC bans AI use for students until they reach high school",
+   "source": "The Verge AI",
+   "published": "2026-09-02T14:30:00+00:00",
+   "summary": "New York City announced a one-year moratorium on AI use in classrooms for students below high school, affecting approximately 600,000 elementary and middle school students starting 2026-2027.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w4oadx/really_stunned_by_the_singularity_comment_section",
+   "title_hash": "1b8b4b3e09cbc31e529c8811bd289caa",
+   "first_seen": "2026-09-02T22:40:27.323076+00:00",
+   "kept": false,
+   "reason": "community meta-discussion and social media commentary without substantive content"
   }
  ],
  "digests": [
