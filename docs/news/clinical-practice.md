@@ -18,9 +18,37 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of September 2, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.00055">Zero-Shot Respiratory Sound Classification through LLM-Augmented Audio-Text Alignment</a>
+    <p class="news-card-summary">Researchers developed a framework aligning respiratory sound encoders with medical terminology to enable zero-shot clinical classification without task-specific labeled data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.00063">Medical Causal Hypothesis Verification with Large Language Models</a>
+    <p class="news-card-summary">Study evaluates large language models&#x27; ability to assess causal relationships in medical information and ground conclusions reliably for healthcare applications.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.00068">Life Operators: a self-evolving framework for multiscale life modelling</a>
+    <p class="news-card-summary">Study proposes a framework combining statistical and mechanistic models to represent patient state and predict outcomes under intervention for longitudinal clinical prediction.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.00191">Assessing Suicide Risk in Arabic Crisis Helpline Calls: A Comparison of Arabic and English Large Language Models</a>
+    <p class="news-card-summary">Researchers compared Arabic and English large language models for assessing suicide risk in crisis helpline calls within privacy constraints of real helpline data.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 2, 2026</span></div>
@@ -96,34 +124,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03144-w">AgentDS-BUS: a fine-tuning-free agentic breast ultrasound malignancy classification framework with decoupled segmentation and feature analysis</a>
     <p class="news-card-summary">AgentDS-BUS is a fine-tuning-free agentic system for breast ultrasound malignancy classification that decouples segmentation and feature analysis without requiring model retraining.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03145-9">Interpretable multi-modal hierarchical framework to support cytomorphological analysis of hematologic cancers</a>
-    <p class="news-card-summary">Peer-reviewed framework combines multiple data types in an interpretable model to assist pathologists in analyzing hematologic cancer cell morphology.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e99950">From Personalization to Therapeutic Continuity: Framework for Memory in AI-Powered Mental Health Systems</a>
-    <p class="news-card-summary">A framework for designing memory systems in AI-powered mental health applications that balance therapeutic continuity with safety and privacy concerns.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91098">A Conceptual Model for Ambient AI Adoption: Perspectives From Academia and Industry</a>
-    <p class="news-card-summary">A conceptual model for evaluating and adopting ambient AI systems in clinical settings, addressing gaps between vendor claims and real-world performance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.26147">CARE: Causally-Aligned Reasoning Exploration for Medical Large Language Models</a>
-    <p class="news-card-summary">Researchers developed CARE, a method using reinforcement learning to improve medical LLM reasoning while addressing credit assignment failure and gradient variance challenges.</p>
   </div>
 </div>
 </div>

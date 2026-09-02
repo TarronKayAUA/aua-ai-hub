@@ -31701,6 +31701,224 @@
    "first_seen": "2026-09-02T03:37:54.603071+00:00",
    "kept": false,
    "reason": "vendor marketing from the product's own channel promoting its own product release"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00014",
+   "title_hash": "0a3ac155d7d24fb9694d1596b8335edd",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow focus on persona-driven LLM adaptation without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00038",
+   "title_hash": "08315c79132e7520a26a502b3f6c650b",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "research on LLM agent evaluation methods, not of broad significance for medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00048",
+   "title_hash": "22e491e5e7ba33fc2e9b1c25ba4a66ca",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow domain application in GUI agents, outside scope for medical education audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00051",
+   "title_hash": "6a446fb73ad58dfa06ae9eb4d3b6155b",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": true,
+   "title": "From Detection to Refusal: Safer LLMs via Circuit-Guided Weight Scaling",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-02T04:00:00+00:00",
+   "summary": "Study applies mechanistic interpretability to understand LLM safety circuits and proposes weight-scaling methods to improve refusal capabilities under adversarial prompting.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00055",
+   "title_hash": "3f48948697942c5074c6255a9040ccf3",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": true,
+   "title": "Zero-Shot Respiratory Sound Classification through LLM-Augmented Audio-Text Alignment",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-02T04:00:00+00:00",
+   "summary": "Researchers developed a framework aligning respiratory sound encoders with medical terminology to enable zero-shot clinical classification without task-specific labeled data.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00057",
+   "title_hash": "3d1149109a68fcbeb88ca2aab7f172cc",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow focus on user representation from social media, no medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00058",
+   "title_hash": "2b57da5689ebda80297436173c04efa6",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "specialized technical research on CUDA kernel generation, outside scope for medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00062",
+   "title_hash": "3711b81481bd902906a23aea79a3374c",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow focus on mathematical problem solving evaluation, not broad significance for medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00063",
+   "title_hash": "13b9e8f2ecaac4d3fbf247e00abb20e9",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": true,
+   "title": "Medical Causal Hypothesis Verification with Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-02T04:00:00+00:00",
+   "summary": "Study evaluates large language models' ability to assess causal relationships in medical information and ground conclusions reliably for healthcare applications.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00065",
+   "title_hash": "ab5f4226a00cfdf936184abcde8fc81e",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": true,
+   "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-02T04:00:00+00:00",
+   "summary": "Researchers present a library of procedural knowledge and field-specific skills for research agents to produce defensible scientific analyses beyond syntactically correct code.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00066",
+   "title_hash": "c2111e18bbddbad9e55880ce661815a6",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "specialized technical research on quantization optimization, narrow scope outside medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00067",
+   "title_hash": "6cd67c685f644d70c66403902257eef8",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow research on multimodal LLM biases without direct medical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00068",
+   "title_hash": "1157622b1c5212012190df3c3648e45a",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": true,
+   "title": "Life Operators: a self-evolving framework for multiscale life modelling",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-02T04:00:00+00:00",
+   "summary": "Study proposes a framework combining statistical and mechanistic models to represent patient state and predict outcomes under intervention for longitudinal clinical prediction.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00069",
+   "title_hash": "db156913f380321b3bc162b0d6927ee3",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "specialized research on self-improving agent security without broad significance for medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00077",
+   "title_hash": "3f057621a4c6304ea2a353f5a26f3d93",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow focus on autonomous research loops in machine learning, no medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00082",
+   "title_hash": "39716527ac32d5ae5ab5146aee26b65a",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow technique for injecting specialized knowledge into LLMs, insufficient broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00086",
+   "title_hash": "c990f01e0e51a10d5a13320cb54ca263",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow domain application in conversational recommendation systems, no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00155",
+   "title_hash": "6768a830748b6876837e3cec227d411f",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "specialized research on multilingual LLM mechanisms without medical or educational relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00177",
+   "title_hash": "a39ac8902313fccc53772b5890ece5c4",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "evaluation of NLP embeddings on ontological reasoning, narrow scope without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00184",
+   "title_hash": "52a6d9b47fd027a78d91764dd62fb067",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "focused on general LLM knowledge updating, narrow scope without direct medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00191",
+   "title_hash": "04c0ce733ac0eb611d99e8ba577a048c",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": true,
+   "title": "Assessing Suicide Risk in Arabic Crisis Helpline Calls: A Comparison of Arabic and English Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-02T04:00:00+00:00",
+   "summary": "Researchers compared Arabic and English large language models for assessing suicide risk in crisis helpline calls within privacy constraints of real helpline data.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00213",
+   "title_hash": "c36a552e33d285d2784e03db3becc558",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow research on reward aggregation in LLM fine-tuning without broad medical significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00222",
+   "title_hash": "1e2bff333857ab26c25951ce9066bf48",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "research on demographic prompting of LLM judges, narrow scope without medical application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00228",
+   "title_hash": "fbf357244625462ec248eec6eb8f840a",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "narrow application to scientific entity linking, insufficient broad significance for audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.00241",
+   "title_hash": "64f4706cf59c026dc3fdb0541140259c",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "specialized technique for document-table summarization without medical or educational relevance"
+  },
+  {
+   "url": "https://lws.io/blog/my-local-model-setup",
+   "title_hash": "31b4cb0deadaa0c968a5f6acf4eaa37c",
+   "first_seen": "2026-09-02T04:39:00.661775+00:00",
+   "kept": false,
+   "reason": "personal blog post on local model setup without instructive analysis for medical educators"
   }
  ],
  "digests": [

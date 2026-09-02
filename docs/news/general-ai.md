@@ -21,6 +21,20 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.00051">From Detection to Refusal: Safer LLMs via Circuit-Guided Weight Scaling</a>
+    <p class="news-card-summary">Study applies mechanistic interpretability to understand LLM safety circuits and proposes weight-scaling methods to improve refusal capabilities under adversarial prompting.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.00065">Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents</a>
+    <p class="news-card-summary">Researchers present a library of procedural knowledge and field-specific skills for research agents to produce defensible scientific analyses beyond syntactically correct code.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 1, 2026</span></div>
@@ -118,20 +132,5 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <a class="news-card-title" href="https://arxiv.org/abs/2608.27855">AI Writers Have a Consistent Stylometric Footprint, but AI Editors Do Not</a>
     <p class="news-card-summary">Study finding that language model-generated text has distinctive stylometric signatures but AI-edited human text does not, with implications for detection.</p>
   </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.27899">OpenStamp: A Watermark for Open-Source Language Models</a>
-    <p class="news-card-summary">A watermarking technique for open-source language models that enables attribution and detection of generated text.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">One Useful Thing</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://www.oneusefulthing.org/p/agency-and-agents">Agency and Agents</a>
-    <p class="news-card-summary">Commentary on agentic AI systems and their implications, drawing on recent industry incidents and emerging deployment patterns.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!LzPL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94cee090-1da6-4c8d-a043-01d835708104_1456x816.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
