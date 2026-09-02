@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-Everything kept in the last seven days, refreshed nightly. Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
+Everything kept in the last seven days, refreshed several times a day. Items are selected several times a day by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 <img class="section-banner" src="../../assets/section-this-week.svg" alt="">
 
@@ -20,13 +20,27 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42680939?fc=20260609215449&amp;ff=20260902084734&amp;v=2.20.1">SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types</a>
         <p class="news-card-summary">SlideChat is a multimodal AI assistant that analyzes whole-slide pathology images across cancer types, addressing a gap in AI tools for gigapixel-scale clinical image interpretation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42683094?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">Readiness and Perception Toward Artificial Intelligence Among Undergraduate Medical Students at a Tertiary Care Teaching Institute: A Cross-Sectional Study</a>
+        <p class="news-card-summary">A cross-sectional study assessed undergraduate medical students&#x27; readiness and perceptions toward artificial intelligence in healthcare and education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42682551?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">AI-generated videos in medical science popularization and education: a scoping review</a>
+        <p class="news-card-summary">A scoping review synthesized evidence on AI-generated videos for public, patient, and medical student education, finding few studies with considerable heterogeneity and insufficient standardization.</p>
       </div>
     </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
@@ -231,20 +245,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42643292?fc=20260609215449&amp;ff=20260826091753&amp;v=2.20.1">Blind spots in artificial intelligence systems: poor identification of self-generated medical images-evidence-based cross-sectional study</a>
-        <p class="news-card-summary">ChatGPT and Google Gemini show systematic, architecture-dependent failures in identifying AI-generated medical images, with implications for validation protocols.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42644831?fc=20260609215449&amp;ff=20260826130612&amp;v=2.20.1">A Framework for Equitable Implementation of Artificial Intelligence in Anesthesiology Residency Selection</a>
-        <p class="news-card-summary">Framework for implementing AI equitably in anesthesiology residency selection processes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 26, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42647413?fc=20260609215449&amp;ff=20260826193713&amp;v=2.20.1">Evaluating hybrid human-LLM coding workflows for qualitative research in medical education: A generalizability study</a>
         <p class="news-card-summary">Generalizability study evaluating hybrid human-LLM coding configurations for reliability in deductive qualitative coding tasks in medical education research.</p>
       </div>
@@ -273,10 +273,24 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of September 2, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 24 items"
+??? abstract "Show the 25 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (24)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (25)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82540">Automatic Kidney Image Segmentation During Robot-Assisted Partial Nephrectomy Using a Deep Learning Model Based on a Multiannotator Dataset: Model Development and Validation Study</a>
+        <p class="news-card-summary">A deep learning model for real-time kidney image segmentation during robot-assisted partial nephrectomy was developed and validated using a multiannotator dataset to enable augmented reality guidance.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 2, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89981">A Clinical AI-Based System (MoodMon) for Affective Disorders: Algorithm Development and Validation</a>
+        <p class="news-card-summary">MoodMon, an AI-based smartphone system using speech acoustic features, was developed and validated to detect mood changes in patients with major depressive disorder and bipolar disorder.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
@@ -438,13 +452,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
         <p class="news-card-summary">Bayesian analysis of real-world AI implementation costs and savings across UK and Australian health systems, examining why large-scale deployment benefits lag technical capability.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 26, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03181-5">A comprehensive computational pathology atlas for multi-cancer tumor microenvironment characterization and prognosis prediction</a>
-        <p class="news-card-summary">Computational pathology atlas enables tumor microenvironment characterization and prognostic prediction across multiple cancer types.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -455,10 +462,26 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 <p class="section-brief-date">The picture as of September 2, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (13)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 2, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing">Trump may be forced to reveal secret rules feds use for AI safety testing</a>
+        <p class="news-card-summary">A lawsuit alleges that secret federal AI safety testing rules may conceal corruption, arguing for public disclosure of frontier model review procedures.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2250714805-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 2, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/ai-engineer-skills">AI Efficiency Could Cost Us the Next Generation of Experts</a>
+        <p class="news-card-summary">An analysis argues that pursuing extreme AI efficiency may undermine the development of domain expertise and human oversight needed for safe system operation.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/human-and-robotic-hands-share-a-caliper-over-technical-engineering-blueprints.png?id=67702640&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
@@ -769,22 +792,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">August 26, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/silico-ai-interpretability">New Platform Peers Inside AI’s Black Box</a>
-        <p class="news-card-summary">A new platform enables investigation of how large language models arrive at specific outputs, addressing transparency gaps in model behavior.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/goodfire-ai-s-silico-uses-agents-equipped-with-interpretability-tools-to-examine-the-reasoning-behind-an-ai-model.jpg?id=67668252&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 26, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms">IBM&#x27;s new Granite 4.2 models ride the wave of interest in local LLMs</a>
-        <p class="news-card-summary">IBM released Granite 4.2 models emphasizing agentic capabilities and local deployment for enterprise use.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/ollama-granite-500x500-1787698921.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">August 26, 2026</span></div>
@@ -793,20 +800,13 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       </div>
       <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/glm-5-3-flash-architecture-notes/glm-5-3-flash.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 26, 2026</span></div>
-        <a class="news-card-title" href="https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek">Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights</a>
-        <p class="news-card-summary">Z.ai&#x27;s Ox Alpha, a GLM-series model competing with DeepSeek, will be released with open weights.</p>
-      </div>
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 21 videos"
+??? abstract "Show the 18 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=eHsuG3bPiJ8" target="_blank" rel="noopener" title="Stop Paying for ElevenLabs? NEW #1 Realtime AI Voice Inworld TTS-2">
@@ -905,24 +905,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-meta">Bijan Bowen, August 26, 2026</span>
       <span class="video-card-desc">Hands-on testing of Qwen 3.8 Flash and preview access to Qwen 4, covering technical specifications and multimodal capabilities.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=tBjgCj_dGZM" target="_blank" rel="noopener" title="The mathematics of AI uncertainty">
-      <img src="https://i1.ytimg.com/vi/tBjgCj_dGZM/hqdefault.jpg" alt="Video: The mathematics of AI uncertainty" loading="lazy">
-      <span class="video-card-title">The mathematics of AI uncertainty</span>
-      <span class="video-card-meta">Google DeepMind, August 26, 2026</span>
-      <span class="video-card-desc">Google DeepMind seminar on uncertainty quantification in machine learning and how to measure model confidence.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=L9mMfAFwbl4" target="_blank" rel="noopener" title="DeepSeek’s New AI System Shouldn’t Be Possible">
-      <img src="https://i1.ytimg.com/vi/L9mMfAFwbl4/hqdefault.jpg" alt="Video: DeepSeek reasoning system architecture and performance" loading="lazy">
-      <span class="video-card-title">DeepSeek reasoning system architecture and performance</span>
-      <span class="video-card-meta">Two Minute Papers, August 26, 2026</span>
-      <span class="video-card-desc">Technical analysis of DeepSeek&#x27;s new reasoning system covering its architecture and performance against other models.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=nWgvobB4hcw" target="_blank" rel="noopener" title="Who’s afraid of an open-weight model? GLM, context bombing and post-Black Hat attacks">
-      <img src="https://i3.ytimg.com/vi/nWgvobB4hcw/hqdefault.jpg" alt="Video: Security vulnerabilities in GLM and open-weight models" loading="lazy">
-      <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>
-      <span class="video-card-meta">IBM Technology, August 26, 2026</span>
-      <span class="video-card-desc">IBM explores security vulnerabilities in GLM-5.3 and open-weight models, comparing their vulnerability discovery capabilities against proprietary systems.</span>
-    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=b0dZjfQ1rpc" target="_blank" rel="noopener">
       <img src="https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg" alt="Video: 5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist" loading="lazy">
       <span class="video-card-title">5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist</span>
@@ -939,7 +921,7 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
 
 ## Podcasts
 
-??? abstract "Show the 4 episodes"
+??? abstract "Show the 3 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://www.cognitiverevolution.ai/write-change-recall-forget-mongodb-s-pete-johnson-on-how-retrieval-drives-agent-performance" target="_blank" rel="noopener">
@@ -959,12 +941,6 @@ Everything kept in the last seven days, refreshed nightly. Items are selected ni
       <span class="video-card-title">AI in Education: Who Gets to Decide?</span>
       <span class="video-card-meta">AI in Education Podcast, August 27, 2026</span>
       <span class="video-card-desc">Discussion of how different stakeholders, governments, tech companies, parents, universities, and regulators, make decisions about AI deployment in education.</span>
-    </a>
-    <a class="video-card" href="https://www.cognitiverevolution.ai/rl-s-a-hell-of-a-drug-metagaming-reward-seeking-motivated-cot-reasoning-bronson-schoen-apollo" target="_blank" rel="noopener">
-      <img src="https://megaphone.imgix.net/podcasts/928ce68a-a130-11f1-a245-53e44e8fe530/image/a3942fcfe350377c0fd8afd08bc53442.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo" loading="lazy">
-      <span class="video-card-title">RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo</span>
-      <span class="video-card-meta">The Cognitive Revolution, August 26, 2026</span>
-      <span class="video-card-desc">Interview on reinforcement learning behavior in frontier models: how reward-seeking and chain-of-thought reasoning interact, with analysis of metagaming and grader-aware reasoning.</span>
     </a>
     </div>
 

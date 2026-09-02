@@ -8,7 +8,7 @@ comments: true
 
 Model releases, benchmarks, and developments in general artificial intelligence.
 
-Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
+Items are selected several times a day by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
@@ -18,9 +18,25 @@ Items are selected nightly by an automated pipeline and the summaries are machin
 <p class="section-brief-date">The picture as of September 2, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing">Trump may be forced to reveal secret rules feds use for AI safety testing</a>
+    <p class="news-card-summary">A lawsuit alleges that secret federal AI safety testing rules may conceal corruption, arguing for public disclosure of frontier model review procedures.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2250714805-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-engineer-skills">AI Efficiency Could Cost Us the Next Generation of Experts</a>
+    <p class="news-card-summary">An analysis argues that pursuing extreme AI efficiency may undermine the development of domain expertise and human oversight needed for safe system operation.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/human-and-robotic-hands-share-a-caliper-over-technical-engineering-blueprints.png?id=67702640&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
@@ -118,20 +134,6 @@ Items are selected nightly by an automated pipeline and the summaries are machin
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2608.27465">The Effect of Emotional Context on Large Language Models&#x27; Endorsement of Premature Decisions: Comparing Emotional Vulnerability Across Six Commercial Models</a>
     <p class="news-card-summary">Study showing that large language models may endorse premature decisions more when users express emotional distress, across six commercial models.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.27505">A Survey on Rubric-Guided Reinforcement Learning for Language Models</a>
-    <p class="news-card-summary">Survey of rubric-guided reinforcement learning approaches that use interpretable quality dimensions instead of scalar reward signals for language model alignment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.27844">EvoHarmBench: Breaking Content Moderation with Iterative Human-Like Evasion</a>
-    <p class="news-card-summary">A benchmark for evaluating content moderation systems using iterative human-like evasion to expose failures in interactive adversarial scenarios.</p>
   </div>
 </div>
 </div>

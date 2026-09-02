@@ -6,7 +6,7 @@ comments: true
 
 # Videos
 
-Recent videos from a curated set of channels covering artificial intelligence developments, explanations, and announcements. Items are selected nightly by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
+Recent videos from a curated set of channels covering artificial intelligence developments, explanations, and announcements. Items are selected several times a day by an automated pipeline and the summaries are machine generated; follow the links to the original sources. See [About](../about.md) for how selection works.
 
 Cards link to YouTube; nothing plays on this site.
 

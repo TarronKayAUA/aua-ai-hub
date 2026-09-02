@@ -1,32 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42400299?fc=20260609215449&ff=20260704114920&v=2.20.0",
-   "title_hash": "448240cb850b47ff779449679950ad25",
-   "first_seen": "2026-07-04T15:49:19.939408+00:00",
-   "kept": true,
-   "title": "Anatomical Fidelity in Text-to-Image Generative AI: A Comparative Qualitative and Quantitative Evaluation",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-04T10:00:00+00:00",
-   "summary": "Study evaluates anatomical accuracy of text-to-image generative AI models compared to cadaveric dissection and professional atlases for medical education.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://soatok.blog/2026/06/30/soatoks-informal-guide-to-threat-models",
-   "title_hash": "d949c9d03c49f136b0508176268e9c70",
-   "first_seen": "2026-07-04T15:49:19.939408+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1umokhj/uh_honey_how_do_you_feel_about_takeout",
-   "title_hash": "d686942ec8c5ef02f9630d264b3ac81d",
-   "first_seen": "2026-07-04T15:49:19.939408+00:00",
-   "kept": false,
-   "reason": "community meta-discussion"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100",
    "title_hash": "0c6ee0bcb17bde89e5ead468cf0a12cb",
    "first_seen": "2026-07-04T20:16:07.872157+00:00",
@@ -31982,6 +31956,184 @@
    "first_seen": "2026-09-02T12:47:33.828675+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks",
+   "title_hash": "7694cfb4f5abe0119eacdec37cf70429",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "minor release notes; vendor marketing"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing",
+   "title_hash": "2269087b642ad77ab0569922150e54a5",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": true,
+   "title": "Trump may be forced to reveal secret rules feds use for AI safety testing",
+   "source": "Ars Technica AI",
+   "published": "2026-09-02T17:58:33+00:00",
+   "summary": "A lawsuit alleges that secret federal AI safety testing rules may conceal corruption, arguing for public disclosure of frontier model review procedures.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2250714805-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e82540",
+   "title_hash": "36e38a82ad491993ae7ff6c24bdf5fa0",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": true,
+   "title": "Automatic Kidney Image Segmentation During Robot-Assisted Partial Nephrectomy Using a Deep Learning Model Based on a Multiannotator Dataset: Model Development and Validation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-02T17:00:03+00:00",
+   "summary": "A deep learning model for real-time kidney image segmentation during robot-assisted partial nephrectomy was developed and validated using a multiannotator dataset to enable augmented reality guidance.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/2/llm-gemini",
+   "title_hash": "a7517ef3f71e1b69e6eecb31615fb71d",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e89981",
+   "title_hash": "5120df93fb96ab6595c220ac71e72099",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": true,
+   "title": "A Clinical AI-Based System (MoodMon) for Affective Disorders: Algorithm Development and Validation",
+   "source": "JMIR AI",
+   "published": "2026-09-02T15:00:15+00:00",
+   "summary": "MoodMon, an AI-based smartphone system using speech acoustic features, was developed and validated to detect mood changes in patients with major depressive disorder and bipolar disorder.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt",
+   "title_hash": "5e77db5373a439d3daaa2d1f8ff58938",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "minor system behavior observation; no substantive news"
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+   "title_hash": "5acfea81e020a98e2abaf9ef5fe8d859",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "vendor marketing with no summary content"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/02/why-transfyr-tackles-dumb-problems-intersection-bio-ai-prognosis",
+   "title_hash": "53da6a8d53ba5fc0b6d2110285c9e06a",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-engineer-skills",
+   "title_hash": "e508f455326d0eb40e42b0b59e061a44",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": true,
+   "title": "AI Efficiency Could Cost Us the Next Generation of Experts",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-09-02T13:00:04+00:00",
+   "summary": "An analysis argues that pursuing extreme AI efficiency may undermine the development of domain expertise and human oversight needed for safe system operation.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/human-and-robotic-hands-share-a-caliper-over-technical-engineering-blueprints.png?id=67702640&width=980",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
+   "title_hash": "6456ab9eb9f9009d54fc1c1ace9e3c41",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "vendor marketing; Hacker News forum discussion of company announcement"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42684053?fc=20260609215449&ff=20260902152408&v=2.20.1",
+   "title_hash": "8d360f1ba7bd23641239c9dbe69cea48",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; no AI component"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42683094?fc=20260609215449&ff=20260902152408&v=2.20.1",
+   "title_hash": "d6a5b2ab62c018dd5d20eec753d477c6",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": true,
+   "title": "Readiness and Perception Toward Artificial Intelligence Among Undergraduate Medical Students at a Tertiary Care Teaching Institute: A Cross-Sectional Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "A cross-sectional study assessed undergraduate medical students' readiness and perceptions toward artificial intelligence in healthcare and education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42682551?fc=20260609215449&ff=20260902152408&v=2.20.1",
+   "title_hash": "7fe788c0d4a90995fc0796762c9638e5",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": true,
+   "title": "AI-generated videos in medical science popularization and education: a scoping review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "A scoping review synthesized evidence on AI-generated videos for public, patient, and medical student education, finding few studies with considerable heterogeneity and insufficient standardization.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://sebastianraschka.com/blog/2026/openai-astra-looped-transformers.html",
+   "title_hash": "885b8209609cc02b4ea572ed14c29930",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "listicle and rumor; no substantive development details"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04604-2",
+   "title_hash": "83cfbe14e4fae99653a6657a1563c629",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; no AI component"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w47nif/new_gemma_models_on_arena_ai",
+   "title_hash": "23a691e7c5641b71c4e9ff72170ec244",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "speculation and rumor with no confirmed development"
+  },
+  {
+   "url": "https://icenet.blog/2026/09/01/a-day-in-the-life-of-a-clinician-educator-dr-savannah-silva-md",
+   "title_hash": "90dc5f1ecd34fccfc0c24a12d1c5d659",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; no AI content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w42biu/mtp_released_for_qwen38flashnextgguf",
+   "title_hash": "2fd2004bb46c3900343f5cf5c77e4869",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "minor performance-tinkering thread"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=_CfDyKBzXF4",
+   "title_hash": "cfc4cf5cb56dd98827968b58bdfc4314",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience: high school student testimonial, not medical education or clinical AI content"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Fable-5-1-Is-Worth-the-Upgrade-e3o8i62",
+   "title_hash": "63042b4f22ac74f1b12ea8a15f91c199",
+   "first_seen": "2026-09-02T19:24:08.692492+00:00",
+   "kept": false,
+   "reason": "product review and personal tool evaluation, not substantive discussion of AI development or medical relevance"
   }
  ],
  "digests": [
