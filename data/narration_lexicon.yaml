@@ -1,40 +1,35 @@
 # Pronunciation lexicon for the narration voice (scripts/narrate.py).
 # Owner-owned. Each entry maps a term as it appears in page text to the
-# form the voice should read. Matching is whole-word and case-sensitive,
-# so "AI" here does not touch "AIDS" or "said". Acronyms the voice would
-# otherwise read as words are spelled out with spaces; terms that are
-# genuinely said as words (FERPA, ERAS, MERSQI, PRISMA) are left alone.
-# Add an entry when a mispronunciation is reported; regenerate with
-# `python scripts/narrate.py` and the affected pages re-narrate because
-# their spoken text, and therefore their hash, changed.
+# form the voice should read. Matching is whole-word and case-sensitive
+# (a trailing hyphen is allowed, so an entry for a term also covers its
+# hyphenated compounds).
+#
+# Every spoken form here was checked against the voice's own phonemizer
+# on 2026-09-02, after the first table mispronounced "AI": spaced capitals
+# ("A I") make the voice read a lone A as the article "uh", so letter
+# names are written with periods ("A.A.M.C."), and plurals with an
+# apostrophe ("L L M's") so the S is not dropped. Terms the voice already
+# spells correctly raw are deliberately absent (AI, NBME, LLM, MCQ, GPU,
+# CPU, PDF, URL, API, NRMP, US, UK, EU), as are acronyms said as words
+# (FERPA, ERAS, PRISMA, MERSQI, VRAM). To add a term, check its
+# phonemes first:
+#   python -c "from kokoro_onnx.tokenizer import Tokenizer as T; print(T().phonemize('X.Y.Z.', lang='en-us'))"
+# then add it here and run scripts/narrate.py; only pages whose spoken
+# text changed re-narrate.
 
 terms:
-  AI: "A I"
-  AUA: "A U A"
-  AUACOM: "A U A com"
-  LLM: "L L M"
-  LLMs: "L L Ms"
-  MCQ: "M C Q"
-  MCQs: "M C Qs"
-  NBME: "N B M E"
-  USMLE: "U S M L E"
-  PHI: "P H I"
-  AAMC: "A A M C"
-  ECFMG: "E C F M G"
-  NRMP: "N R M P"
-  CGEA: "C G E A"
-  IDE: "I D E"
-  GPU: "G P U"
-  GPUs: "G P Us"
-  CPU: "C P U"
-  VRAM: "V RAM"
-  EED: "E E D"
-  IRB: "I R B"
-  ICMJE: "I C M J E"
-  PDF: "P D F"
-  PDFs: "P D Fs"
-  URL: "U R L"
-  API: "A P I"
-  UK: "U K"
-  US: "U S"
-  EU: "E U"
+  AAMC: "A.A.M.C."
+  AUA: "A.U.A."
+  AUACOM: "A.U.A. com"
+  USMLE: "U.S.M.L.E."
+  PHI: "P.H.I."
+  IDE: "I.D.E."
+  EED: "E.E.D."
+  IRB: "I.R.B."
+  ECFMG: "E.C.F.M.G."
+  ICMJE: "I.C.M.J.E."
+  CGEA: "C.G.E.A."
+  LLMs: "L L M's"
+  MCQs: "M C Q's"
+  GPUs: "G P U's"
+  PDFs: "P D F's"
