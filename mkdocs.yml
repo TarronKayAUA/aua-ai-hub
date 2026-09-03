@@ -144,10 +144,10 @@ nav:
       - Opportunities: opportunities.md
   - Worked Examples:
       - worked-examples/index.md
-      - How This Site Is Built: worked-examples/this-site.md
-      - Forking a Program I Could Not Have Written: worked-examples/sharex-hdr.md
-      - Building a Recommender I Could Not Read: worked-examples/recommender.md
-      - Checking a Headline Against My Own Genome: worked-examples/genome.md
+      - When a Check Stops Checking: worked-examples/this-site.md
+      - I Fixed Software I Cannot Read: worked-examples/sharex-hdr.md
+      - My Favourite Game Was Not a Game: worked-examples/recommender.md
+      - The Neanderthal Gene That Explained Nothing: worked-examples/genome.md
   - Governance:
       - governance/index.md
       - AI Responsible Use Policy: governance/policy.md

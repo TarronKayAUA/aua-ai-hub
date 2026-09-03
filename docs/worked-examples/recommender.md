@@ -2,7 +2,7 @@
 last_reviewed: 2026-09-03
 ---
 
-# Building a recommender I could not read
+# My favourite game was not a game
 
 <span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 14 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
 

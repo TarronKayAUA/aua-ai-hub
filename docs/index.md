@@ -103,33 +103,33 @@ How this kind of work actually goes, written up after the fact by the person who
 
 <div class="grid cards hp-cards" markdown>
 
-- :material-notebook-outline:{ .lg .middle } __How this site is built__
+- :material-notebook-outline:{ .lg .middle } __When a check stops checking__
 
     ---
 
-    Specification before code, a selection algorithm that turned out to be prose, and the failure that keeps recurring: a check that silently stopped checking.
+    For six weeks this site displayed a product name that no longer existed, and nothing went red.
 
     [Read it](worked-examples/this-site.md)
 
-- :material-source-fork:{ .lg .middle } __Forking a program I could not have written__
+- :material-source-fork:{ .lg .middle } __I fixed software I cannot read__
 
     ---
 
-    Adding HDR screenshot capture to someone else's software, and deciding boundaries when you cannot review the code.
+    Building a feature into someone else's software in a language I do not write, and deciding boundaries when you cannot review the code.
 
     [Read it](worked-examples/sharex-hdr.md)
 
-- :material-tune-variant:{ .lg .middle } __Building a recommender I could not read__
+- :material-tune-variant:{ .lg .middle } __My favourite game was not a game__
 
     ---
 
-    Testing software you cannot read, and measurements that flatter you by answering a different question than the one you asked.
+    According to software I built and paid for, my fourth-favourite game was a frame rate counter.
 
     [Read it](worked-examples/recommender.md)
 
 </div>
 
-[More worked examples](worked-examples/index.md), including a genetics headline tested against the author's own data.
+[More worked examples](worked-examples/index.md), including a Neanderthal gene that explained nothing.
 
 ## Latest items
 

@@ -14,10 +14,10 @@ They are here because the useful skill is turning out not to be generating thing
 
 | Worked example | What it is | What it demonstrates |
 | --- | --- | --- |
-| [How this site is built](this-site.md) | The pipeline, automation and rules behind the site you are reading | Specification before code, a selection algorithm that turned out to be prose, and the failure that keeps recurring: a check that silently stopped checking |
-| [Forking a program I could not have written](sharex-hdr.md) | Adding HDR screenshot capture to ShareX, in a language the author does not write | Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and publishing what you could not verify |
-| [Building a recommender I could not read](recommender.md) | A media tracker and recommender for one family, built in three weeks without the author writing a line of it | Testing software you cannot read, six ways a check passes against broken code, and measurements that flatter you by answering the wrong question |
-| [Checking a headline against my own genome](genome.md) | Testing a widely reported genetics finding against the author's own consumer genotype data | Declining a flattering conclusion the data cannot support, setting refusals in advance, and catching a model's confident error inside your own expertise |
+| [When a check stops checking](this-site.md) | How this site is built, and the six weeks it displayed a product name that no longer existed | Specification before code, a selection algorithm that turned out to be an essay, and five ways a check went on reporting success from behind its own blind spot |
+| [I fixed software I cannot read](sharex-hdr.md) | Building HDR screenshot capture into ShareX, in a language the author does not write | Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and an ending the author did not control |
+| [My favourite game was not a game](recommender.md) | A media tracker and recommender for one family, built in three weeks without the author writing a line of it | Testing software you cannot read, six ways a check passes against broken code, and a measurement that flattered its way into the profile |
+| [The Neanderthal gene that explained nothing](genome.md) | A widely reported genetics finding, tested against the author's own genotype | Declining a flattering conclusion the data cannot support, refusals agreed in advance, and catching a confident error inside your own expertise |
 
 !!! note "How to read these"
     Every claim in a worked example is meant to be traceable to something concrete: a file, a commit, a log, a published paper. Where a number was never measured, the text says so rather than estimating. Where something is unverified, it is labeled unverified. If you find a claim that does not meet that standard, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) is the fastest way to tell the maintainer.
