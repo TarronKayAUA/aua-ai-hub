@@ -4,112 +4,159 @@ last_reviewed: 2026-09-03
 
 # Building a recommender I could not read
 
-<span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
+<span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 14 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
 
-Over three weeks in August 2026 I built a media tracker and recommender for my family: it follows films, television, games and books, tells you the day something you are waiting for arrives, and answers "what should we watch tonight" for whoever is actually in the room. It has been in real use since August.
+The fourth-favourite game of my life, according to software I had commissioned and paid for and was rather proud of, was a frame rate counter.
 
-I wrote none of it.
+Its name is fpsVR. It is a small utility that floats your graphics performance in the corner of your vision while you are wearing a virtual reality headset, and it had scored 94 out of 100, placing it above things I have genuinely loved. Two rows below sat Mirror's Edge, at 30. I have never started Mirror's Edge. It came in a bundle.
+
+Nothing had crashed. No test had failed. The system was working exactly as designed, and what it was telling me was that I love a frame rate counter, because the way you use a frame rate counter is to leave it running.
+
+That single screen is the most useful thing that happened in this project, and everything below is really a longer version of it.
+
+## What I built, and what I did not do
+
+In August 2026 I built a media tracker for my family. It follows films, television, games and books across six people in four countries, tells you the day the thing you are waiting for actually arrives, and answers the question that ruins more evenings than any other: what should we watch tonight, for whoever happens to be in the room.
+
+It has been in real use since August. It cost about five dollars a month to run, plus roughly three cents each time it thinks hard about a recommendation.
+
+I did not write any of it. Not a line. Across some sixteen hundred messages I never once cited a file path or a function name, and when the interface first showed me a diff I had to ask what I was looking at and whether I was supposed to do anything about it.
 
 | | |
 |---|---|
-| Commits in 21 days | 509, peak of 60 in one day |
+| Commits in 21 days | 509, with a peak of 60 in a single day |
 | Application code | About 31,000 lines |
-| Test code | About 31,100 lines, 61 suites, 4,795 checks |
+| Test code | About 31,100 lines, 61 suites, 4,795 individual checks |
 | Design and rationale document | 2,849 lines |
-| Running cost | About $5 a month, roughly 3 cents per recommendation |
 | Lines of code I wrote | Zero |
 
-The two middle rows are the point. There is slightly more code verifying the application than there is application, and that inversion is what made the rest possible. It is also the only reason I have any business describing the system at all.
+The row I want you to look at twice is not the last one. It is the pair in the middle. There is slightly more code checking this system than there is system, and that inversion is not an accident of enthusiasm. It is the entire reason I am able to tell you anything about whether the thing works.
 
-## The failure mode that matters is not a crash
+## The failures that do not announce themselves
 
-A crash is loud. Somebody phones about it. The dangerous failure in a system like this is software that keeps running and quietly gets worse: a search that ignores half your filters, a slider that saves nothing, a button reading "No games yet" to a man with 2,103 games imported.
+A crash is a gift. A crash is loud, somebody phones you about it within the hour, and you know precisely where to look.
 
-So the whole test suite is organized around one question, written at the top of the design document:
+What I was actually afraid of was the other kind. Software that keeps running and quietly gets worse. A search that silently ignores half your filters. A slider that appears to save your preference and does not. A cheerful empty state reading "No games yet" to a man who has just imported two thousand one hundred and three games.
+
+None of those ring any alarms. They just make the product a bit worse, forever, and everyone slowly stops using it without ever quite being able to say why.
+
+So the whole test suite got organised around one question, which sits at the top of the project's design document and which I have since started applying to almost everything:
 
 > If this broke silently, what would the family see, and how long before anyone said so?
 
-If the honest answer is "nothing, or something that looks like an ordinary mediocre recommendation", the change does not ship without a test. If the answer is "a crash, a blank screen, a missing notification someone will mention", it ships without one.
+If the honest answer is "nothing much, or something that looks like an ordinary mediocre recommendation", then the change does not ship until there is a test watching it. If the answer is "a blank screen, a crash, a missing notification that somebody will complain about at dinner", then the family is the test and we ship it without one.
 
-Three consequences followed, and they are the transferable part:
+Three habits fell out of taking that seriously, and they are the part I would press on anyone.
 
-- **Every suite says in plain English what its failure means for the family.** A red result reads "deep search quietly ignores some of your filters", not "assertion failed at line 47". The second sentence is useless to me. The first is the only one I can act on.
-- **A test that checks nothing counts as a failure.** A check whose pattern matched zero lines reports success while verifying nothing, so the runner fails any suite with zero assertions.
-- **Every test must be seen to fail.** Write it, deliberately break the code, watch it go red, put the code back. An unfalsified test is an unverified claim.
+The first is that every test suite has to say, in plain English, what its failure means for a human being. When something goes red, the report says *deep search is quietly ignoring some of your filters*. It does not say *assertion failed at line 47*. I cannot act on the second sentence. Nobody outside a very small profession can.
 
-## Six ways a test can pass against broken code
+The second is that a test which checks nothing counts as a failure. This sounds like pedantry until you meet one. A check whose search pattern matches zero lines will report a serene, confident pass while verifying absolutely nothing, forever. The runner now fails any suite that finishes without having actually asserted anything.
 
-Many of the checks work by reading the source: is every route the page calls one the server actually implements? This project found six distinct ways such a check can pass while the code underneath is broken.
+The third is the one I would tattoo on something. **Every test must be seen to fail.** Write it, then deliberately break the code underneath it, watch it go red, then put the code back. A test you have never seen fail is not a test. It is a claim about a test.
 
-1. It matched the comment explaining the rule instead of the code obeying it.
-2. It looked past its anchor and found what it wanted in the function underneath.
-3. It proved a sentence exists in the file, never that anyone ever sees it.
-4. It carried an exemption for a case it had already stopped being able to detect.
-5. It anchored on a name the surrounding prose repeats, so the documentation satisfied it.
-6. It expected one style of line ending in a file checked out with the other, so the pattern could never match anything.
+## Six ways to be lied to by a passing check
 
-Every one was found by deliberately breaking the code to see whether the test noticed. None was found by reading. In each case the test reads correctly and the code reads correctly, and only the relationship between them is wrong. That is precisely the class of defect a person who cannot read the code has no other way to catch.
+That last habit earned its keep in a way I did not anticipate.
 
-## What the data was actually answering
+A lot of the checks work by reading the source code and asking structural questions. Does every address the web page tries to call actually exist on the server? Simple enough. Over the course of the project we found six separate ways that a check like that can pass triumphantly while the code underneath it is broken.
 
-The hardest problems were never bugs. They were pieces of software measuring the wrong thing and reporting it confidently.
+1. It matched the comment explaining the rule, rather than the code obeying it.
+2. It looked slightly too far past its anchor and found what it wanted in the function underneath.
+3. It proved a sentence exists somewhere in the file. Not that any human being ever sees it.
+4. It carried an exemption for a special case that it had, at some point, quietly stopped being able to detect at all.
+5. It anchored on a word that the surrounding documentation happens to repeat, so the documentation satisfied it.
+6. It expected one style of invisible line ending in a file that had been checked out with the other, so the pattern could never match anything, ever, under any circumstances.
 
-The clearest example cost me a fortnight of tedium. Importing a game library gives you hours played, which looks like a gift for a system that needs to know what you like. It was sold to me as the games shelf's cold start solution, and it worked, in the sense that it ran correctly and produced numbers.
+Every single one of those was found by deliberately breaking the code to see whether the test would notice. Not one was found by reading.
 
-Then I looked at the numbers. Some genuinely excellent games sat at 3.0. The top of my inferred taste profile was the games I had left running the longest, and in fourth place was not a game at all but a virtual reality overlay utility, scoring 94 for having been open in the background. A game I had never started scored 30, which is also exactly what a deliberate "I disliked this" writes, so a backlog of unplayed games read as a couple of hundred active dislikes.
+That is worth sitting with. In each case the test reads correctly. The code reads correctly. Only the relationship between them is wrong, and a relationship is not a thing you can see by looking at either end of it. Which is oddly liberating if, like me, you cannot read either end of it in the first place.
 
-Playtime measures retention. It does not measure affection. All 502 inferred ratings were deleted, which committed me to hand-rating a two thousand game library.
+## The thing that was measuring the wrong thing
 
-The same error recurred in other clothes. The time I recorded a rating measured when I sat down to catch up, not when I watched. A novelty axis asked a question about the rater and was being averaged as though it were about the work. In every case the code was correct, the tests passed, and the thing being measured was not the thing being reported.
+Which brings us back to the frame rate counter.
 
-## The person who could not say no
+Importing a games library hands you hours played, and hours played looks like an absolute gift to a system that needs to know what you enjoy. It was sold to me, cheerfully and correctly, as the solution to the cold start problem on the games shelf. It ran. It produced numbers. The numbers populated a profile and the profile fed recommendations and every part of that pipeline was working as specified.
 
-The most interesting problem in the project turned out to be me.
+Then I looked at it. Genuinely excellent games sat at 3.0. My inferred favourites were, in order, the games I had left running longest, which is a category that includes several I actively resent. And underneath the comedy sat something worse: a game I had never launched scored 30, and 30 is also precisely what the system writes when a person deliberately says *I disliked this*. My backlog, two hundred games of good intentions, was being read as two hundred active dislikes.
+
+Playtime measures retention. It has almost nothing to do with affection. The two correlate just enough to look like a signal and not nearly enough to be one.
+
+All 502 inferred ratings were deleted, which committed me to hand-rating a library of two thousand games, an act of penance I am still performing.
+
+The same mistake kept arriving in different costumes. The timestamp on a rating measured when I had sat down to catch up on admin, not when I watched anything. A "novelty" axis asked a question about the rater and was quietly being averaged as though it were a property of the film. In every one of these the code was correct, the tests passed, and the number being reported was not the number anyone believed it was.
+
+None of these were bugs. That is the part I want to be clear about. Every one of them shipped as working, tested, entirely correct software.
+
+## The man who cannot say no
+
+The most interesting defect in the system turned out to be me.
 
 | Instrument | Negative responses |
 |---|---|
-| 935 ratings | Exactly 1 below the dislike threshold |
+| 935 ratings | Exactly one below the dislike threshold |
 | 575 answers to "want more like this?" | Zero |
 | 2,819 followed titles | 17 ever abandoned |
 
-Three independent instruments, three near-zero negative counts. That is not an instrument fault, it is how I answer. I eventually worked out why, and it is not flattering: I avoid saying no because it feels like criticism the model will hold against me.
+Three completely independent instruments. Three near-zero counts. When your measuring equipment disagrees with reality this consistently, the equipment is usually broken. Here it was fine. It was faithfully recording a man who does not say no.
 
-A recommender cannot learn taste from an unbroken run of approval. So the fix was to stop asking for verdicts and start asking for choices. Shown two titles and told to pick one, I always pick, and **every pick silently produces a loser without anyone having to condemn anything.** About 2,061 forced comparisons later, the bottom of my appetite list finally held real negatives: things I had rated 70 to 75 and genuinely wanted no more of.
+I worked out why eventually, and it is not flattering. I avoid saying no because it feels like criticism, and some part of me does not want the model to hold it against me. I am aware of how that sounds. I said it out loud to the machine, in writing, in a transcript I have now published on my employer's website, which tells you something about the standard of self-examination this project demanded.
 
-Two disciplines make that credible rather than merely satisfying.
+A recommender cannot learn anything from an unbroken run of approval. Worse, "I liked it" and "send me more of that" turn out to be entirely different sentences: documentary is my highest-rated genre and sits in the bottom third of what I actually reach for on a given evening.
 
-**The failure condition was agreed before the data was collected.** If the tournament results simply mirrored the star ratings already on file, then forty minutes of tapping had bought nothing and the instrument should be thrown away. The threshold was written down in advance: a rank correlation above 0.70 meant discard it. Measured, it came in at 0.49 to 0.68, and it predicted my actual appetite answers far better than the rating column did. It passed a test it had been allowed to fail.
+The fix was to stop asking for verdicts and start asking for choices. Show me two things, make me pick one. I always pick. And every pick quietly produces a loser without requiring anybody to condemn anything.
 
-**That same discipline caught the first version cheating.** Version one chose which titles to compare by maximizing genre coverage, which quietly made rare, oddball titles the most attractive things in the library, so "unpopular" results were partly a census of my own shelves wearing a preference's clothes. The tell was a correlation of +0.50 between how rare a title's genre was and how often it lost. Nothing on screen looked wrong. It was found only by checking the answers against the thing the chooser had been optimizing for.
+Two thousand and sixty-one forced comparisons later, the bottom of my appetite list finally contained real negatives: things sitting at 70 to 75 in my ratings that I plainly never want to see again. The first honest bad news the system had ever held about me.
 
-None of that was possible for the first several months, because the app had shown 118 recommendations and kept no record of which ones it showed, in what order, or what anyone did next. No amount of clever statistics helps until something writes down what was asked.
+## Agreeing to be wrong in advance
 
-## What the measurements said that I did not want to hear
+That instrument cost forty minutes of relentless tapping, and I want to describe the two things that make me believe it rather than merely enjoy it.
 
-An audit in September asked whether the recommender was doing what it claimed. The honest finding is that most of the personalisation machinery is worth about two cards in ten, because the language model's general knowledge does most of the work. At one point a deliberately scrambled version of my taste profile predicted my ratings better than the real one.
+The first is that **the failure condition was written down before the data was collected.** If the tournament results simply mirrored the star ratings already on file, then the whole exercise had bought nothing, and the honest response was to throw the instrument away. The threshold was set in advance: a rank correlation above 0.70 against my existing ratings meant discard it.
 
-Separately, a feature that blended the model's ranking with the statistical one looked good in offline tests, was built completely, was raced against the existing approach on live data with the win condition written down beforehand, and lost. It ships switched off, with the losing machinery and the test rig left in place.
+It came in between 0.49 and 0.68. Comfortably under the line it had been given permission to fail at, while predicting my actual appetite answers dramatically better than my ratings ever had. A test it was allowed to fail, and did not.
 
-Twice I suspected the AI prompt was too long and expensive. Twice a fair comparison showed the cheaper version was worse. The one saving actually found came from reading the bill rather than reasoning about it: a caching feature meant to make repeat questions cheap had cost 42 cents to save less than half a penny, because every night's question is about a different night.
+The second is that the same discipline caught the first version cheating.
 
-## What I never delegated
+Version one chose which pairs to show me by greedily maximising genre coverage, which had the unadvertised effect of making rare, oddball titles the most attractive things in the library to put on screen. Which meant my "unpopular" results were partly just a census of my own shelves, wearing a preference's clothes and looking very convincing.
 
-Nearly everything technical was delegated: the database, the deployment, the statistics, the tests, the styling, the platform choice, the wording of every prompt. Across roughly 1,600 messages I never once cited a file path or a line number.
+The tell was a correlation of +0.50 between how rare a title's genre was and how often it lost. Nothing on the screen looked wrong. Nothing in the code was wrong. It was found only by checking the answers against the thing the chooser had been quietly optimising for, which is a check you only think to run if you have already accepted that your instruments can flatter you.
 
-What stayed with me was narrower and, it turns out, sufficient:
+And none of this was possible for the first several months, because the application had cheerfully shown 118 recommendations while keeping no record whatsoever of which ones it had shown, in what order, or what anybody did next. There is no clever statistics that recovers from that. Somebody has to write down what was asked before anything can be learned from the answer.
 
-- **The boundary.** The system may track content from unofficial sources but must never scrape their catalogues or link to unlicensed streams. I set that in the first hour by refusing my own euphemism, and it never moved.
-- **Money.** Every spending ceiling, the per-user quota built twelve hours in before anyone else had an account, and the shutdown procedure written when the storage was approved rather than after an alarm.
-- **Where a failure lands.** Asked to raise an image size limit tenfold, I refused, because the proposal worked but moved the failure somewhere silent.
-- **What the family is asked to do.** Every major usability change traces to watching a specific relative fail to do something. My father clicked straight through the onboarding without reading it. I am also disqualified as a judge of this, because I helped build it, so it is obviously more intuitive to me.
-- **Facts about myself that invalidate the data.** That I only watch things I have already researched, so my ratings are compressed into the top of the scale. That I never rewatch anything. No analysis could have recovered those, and each one changed a mechanism.
+## What the measurements said when I stopped flattering myself
+
+An audit in September asked the rude question: is the personalisation actually doing anything?
+
+The answer is that most of the machinery is worth about two cards in ten. The language model's general knowledge is doing most of the work. At one point a deliberately scrambled version of my taste profile predicted my ratings better than the real one, which is the sort of result that makes you put your coffee down.
+
+Elsewhere, a feature that blended the model's ranking with the statistical one looked good in offline testing, was built out completely, was raced against the existing approach on live data with the win condition agreed beforehand, and lost. It ships today, switched off, with the losing machinery and the race rig left in place, because a negative result you keep is worth more than one you quietly delete.
+
+Twice I was convinced the AI prompt was bloated and expensive. Twice a fair race showed the cheaper version was worse. The only saving I ever actually found came from reading the bill instead of reasoning about it: a caching feature designed to make repeated questions cheap had spent 42 cents to save rather less than half a penny, because it turns out every night's question is about a different night.
+
+## What I never handed over
+
+Nearly everything technical was delegated. The database, the deployment, the statistics, the tests, the styling, the choice of platform, the wording of every prompt.
+
+What stayed with me was narrower than I expected and, it turns out, sufficient.
+
+The boundary stayed with me. The system may track content from unofficial sources but must never scrape their catalogues or link to unlicensed streams. I set that in the first hour, by refusing my own euphemism and making myself say plainly what I meant, and it never moved afterwards.
+
+Money stayed with me. Every ceiling, the per-person quota built twelve hours in before anybody else even had an account, and the shutdown procedure written on the day the storage was approved rather than on the day something went wrong.
+
+Where a failure lands stayed with me. Asked once to raise an image size limit tenfold, I refused. The proposal worked perfectly. It also moved the failure from somewhere loud to somewhere silent, and I had already learned what that costs.
+
+And what the family is asked to do stayed with me, mostly because I kept watching them not do it. My father, an engineer in his seventies, clicked straight through the onboarding without reading a word of it, then took an uncomfortably long time to find the button I was verbally telling him to press. I am also, obviously, the worst possible judge of whether any of it is intuitive, having helped build the thing.
+
+Last, and least comfortably: the facts about myself that invalidate the data. That I only watch things I have already researched, so my ratings bunch up at the top of the scale. That I essentially never rewatch anything, which makes "would you watch it again" a useless question to ask me. No amount of analysis would have recovered either of those. They had to be confessed.
 
 ## What transfers
 
-- Ask what the family, or the patient, or the student would actually see if this broke silently. Test the things where the answer is "nothing".
-- Write the failure condition before you collect the data, and be willing to throw the instrument away.
-- When a measurement flatters you, check what it is measuring. Playtime is not affection, and time of rating is not time of watching.
-- If a person will not give you negative signal, stop asking for verdicts and ask for choices instead.
-- Nothing can be evaluated until something logs what was asked and what happened next.
+- Ask what a real person would actually see if this broke silently, and put your effort where the answer is "nothing at all".
+- Write down the result that would make you abandon the idea, before you collect the data that might.
+- When a measurement flatters you, go and look at what it is physically measuring. Hours played is not affection. A timestamp is not a memory.
+- If somebody will not give you bad news, stop asking for verdicts and start asking for choices.
+- Nothing can be evaluated until something writes down what was asked.
 
-The binding constraint on quality was never the code. It was knowing what question the data was actually answering, and that judgment stayed with me throughout, because it was the one thing the machine could not supply for itself. Every error above shipped as working, tested, correct-looking software. None of them was a bug. And in each case the person who caught it could not read a line of the code doing it.
+The binding constraint on quality was never the code. It was knowing what question the data was actually answering, and that judgement stayed with me the whole way through, because it was the one thing the machine could not supply for itself.
+
+Every error in this piece shipped as working, tested, correct-looking software. Not one of them was a bug. And in every single case, the person who eventually noticed could not read a line of the code doing it.
