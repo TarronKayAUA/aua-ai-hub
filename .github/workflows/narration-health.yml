@@ -1,0 +1,80 @@
+name: Daily narration health check
+
+# Static page narration is generated on the maintainer's machine with a
+# metered voice whose key is deliberately absent from CI, so the build can
+# no longer re-read a page that was edited without a local run. The build
+# hook drops that page's player rather than reading superseded words aloud,
+# which is safe but silent. This is the notification: one issue, opened
+# when audio falls behind the text and closed by the same workflow once it
+# catches up. Needs no narration extras and no voice key, because --check
+# only hashes text.
+
+on:
+  schedule:
+    - cron: "17 11 * * *" # 11:17 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Compare committed static narration against page text
+        id: check
+        run: |
+          set +e
+          python scripts/narrate.py --check --only static > narration-health.txt 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+          cat narration-health.txt
+      - name: Open, update, or close the narration health issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --state open --search "Narration health: in:title" \
+            --json number --jq '.[0].number // empty')
+          if [[ "${{ steps.check.outputs.exit_code }}" != "0" ]]; then
+            # grep -c exits non-zero on no matches, which would abort the step.
+            n=$(grep -c 'static narration' narration-health.txt || true)
+            title="Narration health: ${n} pages need re-reading"
+            {
+              echo "One or more narrated pages were edited without re-running the"
+              echo "voice, so their committed audio no longer matches the text on"
+              echo "the page. Those pages are currently served without a player."
+              echo
+              echo '```'
+              grep 'static narration' narration-health.txt || true
+              echo '```'
+              echo
+              echo "CI cannot fix this. The static voice is metered and its key is"
+              echo "local only by design, so the repository is the only place the"
+              echo "audio can come from. To clear this issue, run"
+              echo
+              echo '    python scripts/narrate.py --only static'
+              echo
+              echo "on the maintainer machine and commit the regenerated .mp3 and"
+              echo ".sha256 files together."
+            } > body.md
+            if [[ -n "$existing" ]]; then
+              gh issue edit "$existing" --title "$title" --body-file body.md
+              gh issue comment "$existing" --body "Still stale as of $(date -u +%F)."
+            else
+              gh issue create --title "$title" --body-file body.md \
+                --assignee TarronKayAUA
+            fi
+          elif [[ -n "$existing" ]]; then
+            gh issue close "$existing" \
+              --comment "Narration matches every page as of $(date -u +%F). Closing."
+          else
+            echo "Narration matches every page; no issue to manage."
+          fi

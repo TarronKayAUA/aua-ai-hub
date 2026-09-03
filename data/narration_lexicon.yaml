@@ -1,10 +1,19 @@
-# Pronunciation lexicon for the narration voice (scripts/narrate.py).
+# Pronunciation lexicon for the narration voices (scripts/narrate.py).
 # Owner-owned. Each entry maps a term as it appears in page text to the
 # form the voice should read. Matching is whole-word and case-sensitive
 # (a trailing hyphen is allowed, so an entry for a term also covers its
 # hyphenated compounds).
 #
-# Every spoken form here was checked against the voice's own phonemizer
+# Entries are per engine, because a substitution is a workaround for one
+# model's failure and is usually wrong for another. Spelling "AAMC" as
+# "A.A.M.C." rescues Kokoro; a model that already reads the acronym
+# correctly would be made worse by it. So a new engine starts with an
+# empty table and earns entries only where its own output is wrong.
+#
+# The engine's identity is part of each MP3's sidecar hash, so moving a
+# term between engines re-reads exactly the pages that use it.
+#
+# kokoro: every spoken form was checked against the voice's own phonemizer
 # on 2026-09-02, after the first table mispronounced "AI": spaced capitals
 # ("A I") make the voice read a lone A as the article "uh", so letter
 # names are written with periods ("A.A.M.C."), and plurals with an
@@ -16,20 +25,29 @@
 #   python -c "from kokoro_onnx.tokenizer import Tokenizer as T; print(T().phonemize('X.Y.Z.', lang='en-us'))"
 # then add it here and run scripts/narrate.py; only pages whose spoken
 # text changed re-narrate.
+#
+# speechify: deliberately empty pending a listening check of the first
+# generated page. Add a term only after hearing that voice get it wrong,
+# never by copying Kokoro's table across.
 
-terms:
-  AAMC: "A.A.M.C."
-  AUA: "A.U.A."
-  AUACOM: "A.U.A. com"
-  USMLE: "U.S.M.L.E."
-  PHI: "P.H.I."
-  IDE: "I.D.E."
-  EED: "E.E.D."
-  IRB: "I.R.B."
-  ECFMG: "E.C.F.M.G."
-  ICMJE: "I.C.M.J.E."
-  CGEA: "C.G.E.A."
-  LLMs: "L L M's"
-  MCQs: "M C Q's"
-  GPUs: "G P U's"
-  PDFs: "P D F's"
+engines:
+  kokoro:
+    terms:
+      AAMC: "A.A.M.C."
+      AUA: "A.U.A."
+      AUACOM: "A.U.A. com"
+      USMLE: "U.S.M.L.E."
+      PHI: "P.H.I."
+      IDE: "I.D.E."
+      EED: "E.E.D."
+      IRB: "I.R.B."
+      ECFMG: "E.C.F.M.G."
+      ICMJE: "I.C.M.J.E."
+      CGEA: "C.G.E.A."
+      LLMs: "L L M's"
+      MCQs: "M C Q's"
+      GPUs: "G P U's"
+      PDFs: "P D F's"
+
+  speechify:
+    terms: {}

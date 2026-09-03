@@ -187,6 +187,36 @@ llm:
       - news.ycombinator.com
       - hnrss.org
 
+# Narration engines (scripts/narrate.py). Static pages are read on the
+# maintainer's machine with a paid-tier voice and the MP3s are committed;
+# the news briefs are read in CI with the local model, which keeps the
+# six-times-daily refresh free, offline, and independent of any vendor
+# quota. Never put the Speechify key in a GitHub secret: CI must not be
+# able to call a metered voice.
+#
+# Changing engine, model or voice here changes every affected sidecar
+# hash, so the next run re-reads those pages. That is deliberate: it is
+# the only thing that makes a voice change take effect.
+narration:
+  static:
+    engine: speechify
+    model: simba-3.2        # simba-3.0 is the API default; 3.2 must be asked for
+    voice: wyatt_32         # Wyatt, en-US, low/middle-aged/sophisticated.
+                            # Dorian was chosen first but is simba-3.0 only;
+                            # only 8 English voices offer 3.2 (2026-09-03).
+    language: en-US
+    api_base: https://api.speechify.ai
+  news:
+    engine: kokoro
+    model: kokoro-v1.0
+    voice: am_michael
+  # Speechify's free tier is 50,000 characters a month, hard capped with no
+  # overage. A full re-read of every static page is 42,629, so a run that
+  # would exceed the remaining budget stops before spending any of it
+  # rather than failing part way and leaving two voices across the set.
+  monthly_char_budget:
+    speechify: 50000
+
 # Category order is meaningful: it sets the section order in the weekly
 # digest and mirrors the nav (medical education first, per owner preference).
 # Topic vocabularies for the news sub-navigation chips (owner-tunable).

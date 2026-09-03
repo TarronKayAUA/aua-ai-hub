@@ -25,7 +25,8 @@ from urllib.parse import urlparse
 import yaml
 
 from narration_common import (NEWS_PAGES, STATIC_PAGES, audio_exists, brief_slug,
-                              digest_slug, page_slug, player_html)
+                              digest_slug, page_slug, player_html,
+                              static_audio_current)
 
 TOOLS_MARKER = "<!-- render:tools -->"
 OPEN_MODELS_MARKER = "<!-- render:open-models -->"
@@ -1162,8 +1163,14 @@ def _inject_narration(src: str, markdown: str) -> str:
     """Add a native audio player wherever a generated MP3 exists for this
     page (scripts/narrate.py). Absent audio means no player, so local
     builds and pages outside the narrated set are untouched. Raw HTML
-    src paths are page-relative because MkDocs does not rewrite them."""
-    if src in STATIC_PAGES and audio_exists(page_slug(src)):
+    src paths are page-relative because MkDocs does not rewrite them.
+
+    Static pages are checked for staleness, not just existence: their audio
+    is generated on the maintainer's machine with a metered voice that CI
+    has no key for, so a page edited without a local re-run would otherwise
+    serve a recording of superseded words. No player is the safe answer, and
+    the daily narration-health workflow raises an issue about it."""
+    if src in STATIC_PAGES and static_audio_current(src):
         title = re.search(r"^# (.+)$", markdown, flags=re.M)
         label = (title.group(1).strip() if title else src) + ", read aloud"
         player = player_html(src, page_slug(src), label)

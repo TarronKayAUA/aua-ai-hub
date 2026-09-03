@@ -45,7 +45,7 @@ jobs:
         run: |
           pip install -r requirements-narration.txt
           python scripts/narrate.py --check || true
-          python scripts/narrate.py
+          python scripts/narrate.py --only news
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v5
         with:

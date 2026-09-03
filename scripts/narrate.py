@@ -6,10 +6,20 @@ Usage:
     python scripts/narrate.py --only static | news
     python scripts/narrate.py --check    # exit 1 if any committed static audio is stale
 
-Voice: Kokoro (hexgrad/Kokoro-82M, Apache 2.0) through kokoro-onnx, the
-"am_michael" voice, chosen by the owner 2026-09-01. Model files are
-downloaded once into NARRATION_MODEL_DIR (default ~/.cache/aua-narration)
-from the kokoro-onnx project's release; CI caches that directory.
+Two engines, configured in the feeds.yaml narration block, never here:
+
+  static  a metered cloud voice (Speechify simba-3.2), run on the
+          maintainer's machine only. The MP3s are committed. CI has no key
+          by design, so a page edited without a local re-run keeps stale
+          audio and the build hook drops its player rather than reading
+          superseded words aloud.
+  news    Kokoro (hexgrad/Kokoro-82M, Apache 2.0) through kokoro-onnx, free
+          and offline, because the briefs regenerate six times a day. Model
+          files download once into NARRATION_MODEL_DIR (default
+          ~/.cache/aua-narration); CI caches that directory.
+
+Choose a metered voice with `--voices`, which lists the catalogue without
+generating anything.
 
 Text extraction follows the rules from the 2026-09-01 site audit: skip
 icon shortcodes in headings, cue fully quoted headings as misconceptions,
@@ -20,8 +30,14 @@ their text and drop citation parentheticals. A small owner-tunable lexicon
 (data/narration_lexicon.yaml) spells out acronyms the voice would
 otherwise read as words.
 
-Every MP3 carries a sidecar .sha256 of the exact text it was read from;
-matching hashes are skipped, so unchanged pages cost nothing to rebuild.
+Every MP3 carries a sidecar .sha256 of the exact text it was read from
+AND the engine that read it; matching hashes are skipped, so unchanged
+pages cost nothing to rebuild and a voice change re-reads exactly the
+pages that used it. Metered spend is budgeted against the provider's free
+allowance before a run starts, and a run that would exceed it stops
+before spending anything. Static pages are promoted together: if any one
+of them fails, none are replaced, so a page set can never end up split
+across two voices.
 Verification counts print at the end and the script exits non-zero if
 any target failed (CLAUDE.md working rule 2).
 """
@@ -33,17 +49,24 @@ import os
 import re
 import sys
 import time
+import base64
+import io
+import json
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
-import yaml
-
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from narration_common import (AUDIO_DIR, NEWS_PAGES, REPO, STATIC_PAGES, VOICE,  # noqa: E402
-                              brief_slug, digest_slug, page_slug, text_hash)
+from narration_common import (AUDIO_DIR, DOCS, NEWS_PAGES, REPO,  # noqa: E402
+                              STATIC_PAGES, apply_lexicon, brief_slug,
+                              content_hash, digest_slug, engine_config,
+                              load_lexicon, markdown_to_speech_text,
+                              narration_config, page_slug, target_class)
 
-DOCS = REPO / "docs"
-LEXICON_PATH = REPO / "data" / "narration_lexicon.yaml"
+# Local only, and deliberately outside the repository so it cannot be
+# committed. CI never holds this key.
+KEY_FILE = Path.home() / ".aua-narration" / "speechify.key"
+SPEND_PATH = REPO / "data" / "narration_spend.json"
 MODEL_DIR = Path(os.environ.get("NARRATION_MODEL_DIR", Path.home() / ".cache" / "aua-narration"))
 MODEL_FILES = {
     "kokoro-v1.0.onnx": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx",
@@ -54,82 +77,8 @@ SAMPLE_RATE = 24000
 
 
 # --- text extraction -------------------------------------------------------
-
-def load_lexicon() -> list[tuple[re.Pattern, str]]:
-    if not LEXICON_PATH.exists():
-        return []
-    data = yaml.safe_load(LEXICON_PATH.read_text(encoding="utf-8")) or {}
-    rules = []
-    for term, spoken in (data.get("terms") or {}).items():
-        # A trailing hyphen is allowed so "AI-generated" reads "A I-generated".
-        rules.append((re.compile(rf"(?<![\w-]){re.escape(term)}(?!\w)"), spoken))
-    return rules
-
-
-def apply_lexicon(text: str, rules) -> str:
-    for pat, spoken in rules:
-        text = pat.sub(spoken, text)
-    return text
-
-
-def markdown_to_speech_text(src: str) -> str:
-    src = re.sub(r"^---\n.*?\n---\n", "", src, flags=re.S)
-    src = re.sub(r"<figure.*?</figure>",
-                 lambda m: "\n" + (re.search(r"<figcaption>(.*?)</figcaption>", m.group(0), re.S).group(1).strip()
-                                   if "<figcaption>" in m.group(0) else "") + "\n",
-                 src, flags=re.S)
-    src = re.sub(r"<svg.*?</svg>", "", src, flags=re.S)
-    src = re.sub(r'^<span class="meta-chip".*$', "", src, flags=re.M)
-    src = re.sub(r"^--8<--.*$", "", src, flags=re.M)
-    src = re.sub(r"^\*\*Next:\*\*.*$", "", src, flags=re.M)
-    src = re.sub(r"^\*\*Done with the core pathway\?\*\*.*$", "", src, flags=re.M)
-    src = re.sub(r"<[^>]+>", "", src)
-    out = []
-    for line in src.split("\n"):
-        s = line.rstrip()
-        if not s.strip():
-            out.append("")
-            continue
-        # Horizontal rules and other punctuation-only lines have nothing to
-        # say; the voice model raises on a paragraph with no phonemes.
-        if re.fullmatch(r"\s*[-*_=]{3,}\s*", s):
-            out.append("")
-            continue
-        m = re.match(r"^(#{1,6})\s+(.*)$", s)
-        if m:
-            heading = re.sub(r":[a-z0-9_-]+:\s*", "", m.group(2)).strip().rstrip(".")
-            # A heading that is entirely a quotation names a misconception
-            # (basics/misconceptions.md); cue it so it is not heard as an
-            # assertion.
-            if re.fullmatch(r'"[^"]+"', heading):
-                heading = "Misconception: " + heading
-            out.append("\n" + heading + ".")
-            continue
-        m = re.match(r'^(\?\?\?|!!!)\+?\s+\w+\s+"(.*)"$', s)
-        if m:
-            out.append("\n" + m.group(2).strip().rstrip(".") + ".")
-            continue
-        s = re.sub(r"^\s{4}", "", s)
-        s = re.sub(r"\(\[(?:DOI|PubMed Central|arXiv|PubMed|PMC)\]\([^)]*\)\)", "", s)
-        s = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", s)
-        s = re.sub(r"\*\*([^*]+)\*\*", r"\1", s)
-        s = re.sub(r"(?<!\w)\*([^*]+)\*(?!\w)", r"\1", s)
-        s = re.sub(r"`([^`]+)`", r"\1", s)
-        s = re.sub(r"^\s*- \[ \] ", "", s)
-        if re.match(r"^\s*[-*]\s+\S+\s*$", s):
-            continue
-        is_item = bool(re.match(r"^\s*(?:[-*]|\d+\.)\s+", s))
-        s = re.sub(r"^\s*[-*]\s+", "", s)
-        s = re.sub(r"^\s*\d+\.\s+", "", s)
-        out.append(s.strip())
-        if is_item:
-            # Each list item becomes its own spoken paragraph, so the voice
-            # pauses between items instead of running a list together.
-            out.append("")
-    text = "\n".join(out)
-    text = html.unescape(text)
-    return re.sub(r"\n{3,}", "\n\n", text).strip()
-
+# markdown_to_speech_text and the lexicon helpers live in narration_common
+# so the MkDocs hook can compute the same hash without importing a voice.
 
 def brief_paragraphs(rendered_html_block: str) -> str:
     """Section brief div -> spoken text: paragraphs minus the date line and
@@ -206,21 +155,237 @@ def ensure_model() -> tuple[Path, Path]:
     return MODEL_DIR / "kokoro-v1.0.onnx", MODEL_DIR / "voices-v1.0.bin"
 
 
-def synthesize(engine, text: str, out: Path) -> float:
+def api_base(cfg: dict) -> str:
+    return cfg.get("api_base", "https://api.speechify.ai").rstrip("/")
+
+
+def speechify_key() -> str:
+    """Environment first, then the local key file. Never a GitHub secret:
+    CI must not be able to spend against a metered allowance."""
+    key = os.environ.get("SPEECHIFY_API_KEY", "").strip()
+    if not key and KEY_FILE.is_file():
+        key = KEY_FILE.read_text(encoding="utf-8").strip()
+    if not key:
+        raise RuntimeError(
+            "no Speechify API key. Set SPEECHIFY_API_KEY, or write the key "
+            f"to {KEY_FILE}")
+    return key
+
+
+class KokoroEngine:
+    """Local Apache 2.0 voice: free, offline, unmetered, so CI can run it
+    six times a day without a key or a quota."""
+    metered = False
+
+    def __init__(self, cfg: dict):
+        from kokoro_onnx import Kokoro
+        model, voices = ensure_model()
+        self._kokoro = Kokoro(str(model), str(voices))
+        self._voice = cfg["voice"]
+
+    def create(self, text: str):
+        audio, sr = self._kokoro.create(text, voice=self._voice,
+                                        speed=1.0, lang="en-us")
+        return audio, sr, 0
+
+
+class SpeechifyEngine:
+    """Metered cloud voice for the committed static pages. Reports the
+    provider's own billable character count, so the ledger records what was
+    actually charged rather than what we guessed from the text length."""
+    metered = True
+
+    def __init__(self, cfg: dict):
+        import requests
+        if not cfg.get("voice"):
+            raise RuntimeError(
+                "feeds.yaml narration.static.voice is empty. List the "
+                "catalogue with `python scripts/narrate.py --voices`, then "
+                "set the voice_id you want.")
+        self._requests = requests
+        self._cfg = cfg
+        self._key = speechify_key()
+        self._url = api_base(cfg) + "/v1/audio/speech"
+        self._check_voice_supports_model()
+
+    def _check_voice_supports_model(self) -> None:
+        """Most of the catalogue is simba-3.0 only. Pairing a voice with a
+        model it does not offer is the kind of mistake that produces audio
+        rather than an error, so it is checked once before generating."""
+        want, vid = self._cfg.get("model", "simba-3.2"), self._cfg["voice"]
+        entry = next((v for v in fetch_voices() if v.get("id") == vid), None)
+        if entry is None:
+            raise RuntimeError(
+                f"voice {vid!r} is not in the Speechify catalogue; run "
+                "`python scripts/narrate.py --voices`")
+        have = [m.get("name") for m in entry.get("models") or []]
+        if want not in have:
+            raise RuntimeError(
+                f"voice {vid!r} supports {have} but feeds.yaml asks for "
+                f"{want!r}. Pick a voice that offers {want}, or set "
+                f"narration.static.model to one this voice has.")
+
+    def create(self, text: str):
+        import numpy as np
+        import soundfile as sf
+        resp = self._requests.post(
+            self._url,
+            headers={"Authorization": f"Bearer {self._key}",
+                     "Content-Type": "application/json"},
+            json={"input": text,
+                  "voice_id": self._cfg["voice"],
+                  # simba-3.0 is the API default; 3.2 has to be asked for.
+                  "model": self._cfg.get("model", "simba-3.2"),
+                  "audio_format": "wav",
+                  "language": self._cfg.get("language", "en-US")},
+            timeout=180)
+        if resp.status_code != 200:
+            raise RuntimeError(
+                f"speechify HTTP {resp.status_code}: {resp.text[:300]}")
+        payload = resp.json()
+        samples, sr = sf.read(
+            io.BytesIO(base64.b64decode(payload["audio_data"])), dtype="float32")
+        if getattr(samples, "ndim", 1) > 1:
+            samples = np.mean(samples, axis=1)
+        billed = int(payload.get("billable_characters_count") or len(text))
+        return samples, sr, billed
+
+
+ENGINES = {"kokoro": KokoroEngine, "speechify": SpeechifyEngine}
+
+
+def build_engine(cls: str):
+    cfg = engine_config(cls)
+    name = cfg["engine"]
+    if name not in ENGINES:
+        raise RuntimeError(
+            f"feeds.yaml narration.{cls}.engine is {name!r}; known engines "
+            f"are {', '.join(sorted(ENGINES))}")
+    return ENGINES[name](cfg)
+
+
+def fetch_voices() -> list[dict]:
+    """The whole catalogue. It is cursor-paginated at 50 a page and runs to
+    around a thousand entries, so a single unpaged request silently returns
+    the first fifty alphabetically and hides the voice you wanted."""
+    import requests
+    cfg = engine_config("static")
+    hdr = {"Authorization": f"Bearer {speechify_key()}"}
+    out, cursor, pages = [], None, 0
+    while True:
+        resp = requests.get(api_base(cfg) + "/v1/voices", headers=hdr,
+                            params={"cursor": cursor} if cursor else {},
+                            timeout=60)
+        if resp.status_code != 200:
+            raise RuntimeError(
+                f"speechify voices HTTP {resp.status_code}: {resp.text[:300]}")
+        body = resp.json()
+        out += body.get("voices") or body.get("data") or []
+        cursor = body.get("next_cursor")
+        pages += 1
+        if not body.get("has_more") or not cursor or pages > 50:
+            break
+    return out
+
+
+def list_voices() -> int:
+    """Print the voices the configured model can actually use. Costs nothing,
+    so a voice is chosen by ear from the preview clips rather than by
+    spending characters on trial generations.
+
+    Model support is not universal: most of the catalogue is simba-3.0 only,
+    and asking for a voice its model does not offer is a silent downgrade
+    waiting to happen."""
+    cfg = engine_config("static")
+    model = cfg.get("model", "simba-3.2")
+    voices = fetch_voices()
+    rows, wrong_model, wrong_locale = [], 0, 0
+    for v in voices:
+        if not isinstance(v, dict):
+            continue
+        locale = str(v.get("locale") or "")
+        if not locale.lower().startswith("en"):
+            wrong_locale += 1
+            continue
+        if not any(m.get("name") == model for m in v.get("models") or []):
+            wrong_model += 1
+            continue
+        traits = sorted({t.split(":", 1)[1] for t in v.get("tags") or []
+                         if t.split(":", 1)[0] in ("style", "pitch", "timbre", "age")})
+        rows.append((str(v.get("display_name") or "").lower(),
+                     f"  {v.get('id', ''):16} {v.get('display_name', ''):14} "
+                     f"{v.get('gender', ''):7} {locale:6} {','.join(traits)}\n"
+                     f"    preview: {v.get('preview_audio', '')}"))
+    print(f"narrate: {len(rows)} English voices support {model} "
+          f"({wrong_model} English voices are other models, "
+          f"{wrong_locale} are other locales, {len(voices)} in the catalogue)")
+    if not rows:
+        print("narrate: nothing matched. Check narration.static.model in feeds.yaml.")
+        return 1
+    print(f"  {'voice_id':16} {'name':14} {'gender':7} {'locale':6} traits")
+    for _, line in sorted(rows):
+        print(line)
+    print("\nSet the chosen voice_id as narration.static.voice in feeds.yaml.")
+    return 0
+
+
+# --- metered spend ---------------------------------------------------------
+
+def _month() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m")
+
+
+def load_spend() -> dict:
+    if SPEND_PATH.is_file():
+        try:
+            return json.loads(SPEND_PATH.read_text(encoding="utf-8"))
+        except ValueError:
+            print(f"narrate: {SPEND_PATH.name} is unreadable; "
+                  "treating this month as unspent")
+    return {}
+
+
+def record_spend(engine: str, chars: int) -> None:
+    if not chars:
+        return
+    spend = load_spend()
+    spend.setdefault(engine, {})
+    spend[engine][_month()] = spend[engine].get(_month(), 0) + chars
+    SPEND_PATH.write_text(json.dumps(spend, indent=2, sort_keys=True) + "\n",
+                          encoding="utf-8")
+
+
+def budget_report(engine: str, planned: int) -> tuple[bool, str]:
+    """Advisory guard against a hard-capped free allowance. The provider
+    resets on its own billing date rather than the calendar month, so this
+    is deliberately conservative: better to refuse a run than to fail part
+    way through one and split a page set across two voices."""
+    budget = (narration_config().get("monthly_char_budget") or {}).get(engine)
+    if not budget:
+        return True, f"{engine}: no monthly budget configured"
+    spent = load_spend().get(engine, {}).get(_month(), 0)
+    left = budget - spent
+    ok = planned <= left
+    return ok, (f"{engine}: {planned:,} to send, {spent:,} spent this month, "
+                f"{left:,} of {budget:,} left"
+                + ("" if ok else "   OVER BUDGET"))
+
+
+def synthesize(engine, text: str, out: Path) -> tuple[float, int]:
     import numpy as np
     import soundfile as sf
-    chunks = []
-    sr = SAMPLE_RATE
+    chunks, billed, sr = [], 0, SAMPLE_RATE
     for para in [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]:
         if not re.search(r"[A-Za-z0-9]", para):
             continue
-        audio, sr = engine.create(para, voice=VOICE, speed=1.0, lang="en-us")
+        audio, sr, chars = engine.create(para)
         chunks.append(audio)
         chunks.append(np.zeros(int(sr * PARAGRAPH_PAUSE_S), dtype=np.float32))
+        billed += chars
     wave = np.concatenate(chunks)
     out.parent.mkdir(parents=True, exist_ok=True)
     sf.write(str(out), wave, sr, format="MP3")
-    return len(wave) / sr
+    return len(wave) / sr, billed
 
 
 def main() -> int:
@@ -230,68 +395,142 @@ def main() -> int:
     ap.add_argument("--force", action="store_true", help="regenerate even when the hash matches")
     ap.add_argument("--check", action="store_true",
                     help="list static pages whose committed audio is missing or stale and exit 1 if any; no generation")
+    ap.add_argument("--voices", action="store_true",
+                    help="list the metered engine's voice catalogue and exit; generates nothing")
+    ap.add_argument("--page", action="append",
+                    help="restrict to these slugs (repeatable), so a metered voice "
+                         "can be trialled on one page before spending the month")
+    ap.add_argument("--promote-each", action="store_true",
+                    help="keep each static page as it finishes instead of holding "
+                         "the set back when a sibling fails. For migrating a set to "
+                         "a new voice, where the pages are already mixed and an "
+                         "interrupted run would otherwise be paid for twice")
     args = ap.parse_args()
 
-    rules = load_lexicon()
+    if args.voices:
+        return list_voices()
+
     targets = []
     if args.only in (None, "static"):
         targets += static_targets()
     if args.only in (None, "news"):
         targets += news_targets()
+    if args.page:
+        # Filter targets, not todo, so the verification cross-check stays honest.
+        targets = [t for t in targets if t[0] in args.page]
+        if not targets:
+            print(f"narrate: no target matches {args.page}")
+            return 1
 
     todo, skipped = [], 0
     for slug, label, text in targets:
-        spoken = apply_lexicon(text, rules)
-        h = text_hash(spoken)
+        cls = target_class(slug)
+        spoken = apply_lexicon(text, load_lexicon(engine_config(cls)["engine"]))
+        h = content_hash(cls, spoken)
         side = AUDIO_DIR / f"{slug}.sha256"
         mp3 = AUDIO_DIR / f"{slug}.mp3"
         if not args.force and mp3.exists() and side.exists() and side.read_text().strip() == h:
             skipped += 1
             continue
-        todo.append((slug, label, spoken, h, "missing" if not mp3.exists() else "text changed"))
+        why = "missing" if not mp3.exists() else "text or voice changed"
+        todo.append((slug, cls, spoken, h, why))
 
     print("narrate: plan")
     print(f"  targets read : {len(targets)}")
     print(f"  up to date   : {skipped}")
     print(f"  to generate  : {len(todo)}")
-    for slug, _, spoken, _, why in todo:
+    for slug, cls, spoken, _, why in todo:
         words = len(spoken.split())
-        print(f"    {slug:44} {words:5d} words  ~{words/150:.1f} min  ({why})")
+        print(f"    {slug:44} {words:5d} words  ~{words/150:.1f} min  ({cls}, {why})")
+
+    planned: dict[str, int] = {}
+    for slug, cls, spoken, _, _ in todo:
+        name = engine_config(cls)["engine"]
+        if getattr(ENGINES.get(name), "metered", False):
+            planned[name] = planned.get(name, 0) + len(spoken)
+    over = False
+    for name, chars in sorted(planned.items()):
+        ok, msg = budget_report(name, chars)
+        print(f"  budget       : {msg}")
+        over = over or not ok
+
     if args.check:
-        stale = [(slug, why) for slug, _, _, _, why in todo if not slug.startswith(("news-", "digest-"))]
+        stale = [(slug, why) for slug, cls, _, _, why in todo if cls == "static"]
         if not stale:
             print("narrate: check ok, committed static narration matches every page")
             return 0
         for slug, why in stale:
-            msg = f"static narration {why}: {slug} (the build will re-read it; run scripts/narrate.py and commit the MP3 to make it durable)"
+            msg = (f"static narration {why}: {slug} (CI cannot re-read it, so the "
+                   f"build serves that page without a player; run "
+                   f"scripts/narrate.py locally and commit the MP3)")
             print(("::warning::" if os.environ.get("GITHUB_ACTIONS") else "narrate: STALE ") + msg)
         return 1
     if args.dry_run or not todo:
         return 0
+    if over:
+        print("narrate: refusing to start. The run would exceed a configured "
+              "monthly allowance, and a part-spent run would leave a page set "
+              "split across two voices. Wait for the provider's reset or raise "
+              "narration.monthly_char_budget in feeds.yaml.")
+        return 1
 
-    from kokoro_onnx import Kokoro
-    model, voices = ensure_model()
-    engine = Kokoro(str(model), str(voices))
-    generated, failed, total_audio, t0 = 0, 0, 0.0, time.time()
-    for slug, _, spoken, h, _ in todo:
+    engines: dict[str, object] = {}
+    made: list[tuple] = []
+    failed = {"static": 0, "news": 0}
+    t0 = time.time()
+    for slug, cls, spoken, h, _ in todo:
+        tmp = AUDIO_DIR / f"{slug}.mp3.part"
         try:
-            secs = synthesize(engine, spoken, AUDIO_DIR / f"{slug}.mp3")
-            (AUDIO_DIR / f"{slug}.sha256").write_text(h + "\n")
-            generated += 1
-            total_audio += secs
-            print(f"  wrote {slug}.mp3 ({secs/60:.1f} min)")
+            if cls not in engines:
+                engines[cls] = build_engine(cls)
+            secs, billed = synthesize(engines[cls], spoken, tmp)
+            record_spend(engine_config(cls)["engine"], billed)
+            made.append((slug, cls, tmp, h, secs, billed))
         except Exception as exc:  # noqa: BLE001
-            failed += 1
+            failed[cls] += 1
+            tmp.unlink(missing_ok=True)
             print(f"  FAILED {slug}: {type(exc).__name__}: {exc}")
+
+    # Spend was recorded per call above, as it was incurred. This is only
+    # the run summary.
+    billed_by_engine: dict[str, int] = {}
+    for _, cls, _, _, _, billed in made:
+        if billed:
+            name = engine_config(cls)["engine"]
+            billed_by_engine[name] = billed_by_engine.get(name, 0) + billed
+
+    # Static pages are promoted together. A half-applied voice change would
+    # leave one page set narrated by two voices, which is worse for a reader
+    # than leaving every page on its previous recording.
+    generated, held, total_audio = 0, 0, 0.0
+    for slug, cls, tmp, h, secs, _ in made:
+        if cls == "static" and failed["static"] and not args.promote_each:
+            tmp.unlink(missing_ok=True)
+            held += 1
+            continue
+        tmp.replace(AUDIO_DIR / f"{slug}.mp3")
+        (AUDIO_DIR / f"{slug}.sha256").write_text(h + "\n")
+        generated += 1
+        total_audio += secs
+        print(f"  wrote {slug}.mp3 ({secs/60:.1f} min)")
+    if held:
+        print(f"  held back {held} static file(s): a sibling failed, so none were "
+              f"replaced and every page keeps its previous recording")
+
     elapsed = time.time() - t0
+    fail_total = failed["static"] + failed["news"]
+    accounted = generated + held + skipped + fail_total
     print("narrate: verification")
     print(f"  targets read : {len(targets)}")
     print(f"  generated    : {generated}")
     print(f"  up to date   : {skipped}")
-    print(f"  failed       : {failed}")
+    print(f"  held back    : {held}")
+    print(f"  failed       : {fail_total}")
+    for name, chars in sorted(billed_by_engine.items()):
+        print(f"  billed chars : {chars:,} ({name})")
     print(f"  audio minutes: {total_audio/60:.1f} in {elapsed:.0f}s "
-          f"(cross-check {'ok' if generated + skipped + failed == len(targets) else 'MISMATCH'})")
-    return 1 if failed or generated + skipped + failed != len(targets) else 0
+          f"(cross-check {'ok' if accounted == len(targets) else 'MISMATCH'})")
+    return 1 if fail_total or accounted != len(targets) else 0
 
 
 if __name__ == "__main__":
