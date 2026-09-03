@@ -9,9 +9,25 @@ Usage:
     python scripts/verify_feeds.py                # checks every feed in feeds.yaml
     python scripts/verify_feeds.py URL [URL ...]  # checks candidate URLs
 
-Exit code is nonzero if any feed fails.
+Exit code is nonzero when a human needs to act, which is not the same thing
+as "a feed failed".
+
+A feed may carry `expect_fail_in_ci` in feeds.yaml. That marks it as known to
+be blocked from GitHub Actions datacenter IPs and kept in the roster
+deliberately, failing soft, with an approved replacement already carrying the
+coverage. Those failures are reported and tolerated rather than raised.
+
+The alert is inverted for them. The actionable event is not that a blocked
+feed is still blocked, it is that a blocked feed has started WORKING again,
+because that means the block lifted and its replacement can be retired.
+Reporting a known block every month only teaches everyone to ignore the
+report (issues #31 and #45).
+
+Recovery counts as actionable only inside GitHub Actions. From an ordinary
+network these feeds pass, which is normal and says nothing about the block.
 """
 
+import os
 import sys
 from pathlib import Path
 
@@ -27,9 +43,10 @@ HEADERS = {
 TIMEOUT = 20
 
 
-def collect() -> list[tuple[str, str]]:
+def collect() -> list[tuple[str, str, bool, str | None]]:
+    """(source, url, browser_ua, expect_fail_in_ci) for every feed."""
     if len(sys.argv) > 1:
-        return [("cli", url, False) for url in sys.argv[1:]]
+        return [("cli", url, False, None) for url in sys.argv[1:]]
     config = yaml.safe_load((REPO / "feeds.yaml").read_text(encoding="utf-8"))
     pairs = []
     for category, spec in config["categories"].items():
@@ -38,13 +55,16 @@ def collect() -> list[tuple[str, str]]:
                 print(f"skip {feed['name']} (URL pending owner action)")
                 continue
             pairs.append((f"{category}:{feed['name']}", feed["url"],
-                          feed.get("browser_ua", False)))
+                          feed.get("browser_ua", False),
+                          feed.get("expect_fail_in_ci")))
     for channel in config.get("video_feeds", {}).get("channels", []):
         url = ("https://www.youtube.com/feeds/videos.xml?channel_id="
                + channel["channel_id"])
-        pairs.append((f"videos:{channel['name']}", url, False))
+        pairs.append((f"videos:{channel['name']}", url, False,
+                      channel.get("expect_fail_in_ci")))
     for show in config.get("podcast_feeds", {}).get("shows", []):
-        pairs.append((f"podcasts:{show['name']}", show["url"], False))
+        pairs.append((f"podcasts:{show['name']}", show["url"], False,
+                      show.get("expect_fail_in_ci")))
     return pairs
 
 
@@ -76,22 +96,46 @@ def check(url: str, browser_ua: bool = False) -> tuple[bool, str]:
 
 
 def main() -> int:
+    in_ci = bool(os.environ.get("GITHUB_ACTIONS"))
     pairs = collect()
-    failures = []
-    for source, url, browser_ua in pairs:
-        ok, detail = check(url, browser_ua)
-        marker = "ok  " if ok else "FAIL"
-        print(f"{marker} {detail}\n     {url}  ({source})")
-        if not ok:
-            failures.append((source, url, detail))
+    failures, tolerated, recovered = [], [], []
 
-    print("\n=== verification ===")
+    for source, url, browser_ua, expected in pairs:
+        ok, detail = check(url, browser_ua)
+        if ok and expected and in_ci:
+            marker = "BACK"
+            recovered.append((source, url, expected))
+        elif ok:
+            marker = "ok  "
+        elif expected:
+            marker = "held"
+            tolerated.append((source, url, expected))
+        else:
+            marker = "FAIL"
+            failures.append((source, url, detail))
+        print(f"{marker} {detail}")
+        print(f"     {url}  ({source})")
+
+    expected_total = sum(1 for *_rest, e in pairs if e)
+    print()
+    print("=== verification ===")
     print(f"feeds checked : {len(pairs)}")
-    print(f"passed        : {len(pairs) - len(failures)}")
+    print(f"passed        : {len(pairs) - len(failures) - len(tolerated)}")
     print(f"failed        : {len(failures)}")
+    print(f"tolerated     : {len(tolerated)} (known blocked, replacement in the roster)")
+    if not in_ci and expected_total:
+        print(f"note          : {expected_total} feeds are expected to fail only in CI;")
+        print("                passing here is normal on an ordinary network")
+
     for source, url, detail in failures:
-        print(f"  FAIL {url} ({source}): {detail}")
-    return 1 if failures else 0
+        print(f"  ACTION new failure: {url} ({source}): {detail}")
+    for source, url, reason in recovered:
+        print(f"  ACTION recovered, its replacement can be retired: {url} ({source})")
+        print(f"         it was tolerated because: {reason}")
+    for source, url, reason in tolerated:
+        print(f"  held, no action: {url} ({source}): {reason}")
+
+    return 1 if (failures or recovered) else 0
 
 
 if __name__ == "__main__":

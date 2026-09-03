@@ -306,6 +306,7 @@ categories:
       # 2026-08-05).
       - name: Ground Truths
         url: https://erictopol.substack.com/feed
+        expect_fail_in_ci: "Substack blocks GitHub Actions datacenter IPs (issue #31, 2026-08-02)"
       # Replacement for Ground Truths (owner approved 2026-08-05,
       # selection delegated): STAT's dedicated AI-in-medicine desk,
       # verified parsing under the pipeline's own user agent the same
@@ -369,6 +370,7 @@ categories:
       # meanwhile (owner approved 2026-08-05).
       - name: Epoch AI
         url: https://epochai.substack.com/feed
+        expect_fail_in_ci: "Substack blocks GitHub Actions datacenter IPs (issue #31, 2026-08-02)"
       # Sebastian Raschka's data-grounded analysis of model
       # architectures, open-weight releases, and benchmarks, on his own
       # domain. Verified parsing 2026-08-05 (139 entries, active).
@@ -659,6 +661,7 @@ podcast_feeds:
     # tuned; The Cognitive Revolution below is its replacement.
     - name: Latent Space
       url: https://api.substack.com/feed/podcast/1084089.rss
+      expect_fail_in_ci: "Substack blocks GitHub Actions datacenter IPs (issue #31, 2026-08-02)"
     # Long-form, measured interviews with AI builders and researchers,
     # the closest match to Latent Space's niche. megaphone.fm host
     # already proven CI-fetchable in this roster (Me, Myself, and AI).

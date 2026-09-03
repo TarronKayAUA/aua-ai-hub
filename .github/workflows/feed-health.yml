@@ -35,17 +35,27 @@ jobs:
           existing=$(gh issue list --state open --search "Feed health: in:title" \
             --json number --jq '.[0].number // empty')
           if [[ "${{ steps.check.outputs.exit_code }}" != "0" ]]; then
-            n=$(grep -E '^failed' feed-health.txt | grep -oE '[0-9]+$')
-            title="Feed health: ${n} feeds failing"
+            # grep -c exits nonzero on no matches, which would abort the step.
+            n=$(grep -c '^  ACTION' feed-health.txt || true)
+            held=$(grep -c '^  held, no action' feed-health.txt || true)
+            title="Feed health: ${n} needing action"
             {
-              echo "Automated monthly check found failing feeds."
+              echo "The monthly check found something that needs a decision."
               echo
               echo '```'
-              grep -E '^  FAIL|^skip' feed-health.txt
+              grep -E '^  ACTION|^skip' feed-health.txt
               echo '```'
               echo
-              echo "Full log in the workflow run. Fix or replace the feeds in feeds.yaml,"
-              echo "verify with \`python scripts/verify_feeds.py\`, and commit."
+              echo "Two kinds of item appear here:"
+              echo
+              echo "- **new failure**: fix or replace the feed in feeds.yaml, verify with"
+              echo "  \`python scripts/verify_feeds.py\`, and commit."
+              echo "- **recovered**: a feed marked \`expect_fail_in_ci\` is reachable again,"
+              echo "  so the block lifted. Drop its \`expect_fail_in_ci\` line and decide"
+              echo "  whether the replacement added alongside it can now be retired."
+              echo
+              echo "${held} known-blocked feeds were tolerated and are not listed above."
+              echo "Full log in the workflow run."
             } > body.md
             if [[ -n "$existing" ]]; then
               gh issue edit "$existing" --title "$title" --body-file body.md
@@ -56,7 +66,7 @@ jobs:
             fi
           elif [[ -n "$existing" ]]; then
             gh issue close "$existing" \
-              --comment "All feeds passing as of $(date -u +%F). Closing."
+              --comment "Nothing needs action as of $(date -u +%F). Closing."
           else
-            echo "All feeds healthy; no issue to manage."
+            echo "Nothing actionable; no issue to manage."
           fi
