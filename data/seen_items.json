@@ -1,27 +1,6 @@
 {
  "items": [
   {
-   "url": "https://dthain.github.io/books/compiler",
-   "title_hash": "a336c77457c0df655106f2603b075277",
-   "first_seen": "2026-07-05T16:18:01.774492+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=1ItQnh3LWeg",
-   "title_hash": "2c630bec6c2907292bfdcedfa13f9b16",
-   "first_seen": "2026-07-05T16:18:01.774492+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Job-Positions-of-the-AI-Future-e3lm4ub",
-   "title_hash": "79a61ca7ae45417aa63f57fcbd019220",
-   "first_seen": "2026-07-05T16:18:01.774492+00:00",
-   "kept": false,
-   "reason": "opinion piece with no new information"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unyvnz/longcat_20_16t_48b_active_weights_are_now_open",
    "title_hash": "e46899a7938e2dcb6b8146f981a45c65",
    "first_seen": "2026-07-05T20:33:37.156548+00:00",
@@ -32609,6 +32588,199 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://img.transistorcdn.com/-0_OMgmp3xKvAJfdUTA1m0vONHyL0qOVlX1utg7d2G8/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81MjEz/Yzc5NWZiN2FjZDRk/NzVjYWQ2NDhkZjRj/YjNlZi5wbmc.jpg"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime",
+   "title_hash": "f9a7cf473e3fb661e13b06aa467363c1",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "service outage reporting with no bearing on AI capabilities or clinical use"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+   "title_hash": "6838312e7ec8def6c482062b5f06df98",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "OpenAI’s next big AI model has ‘entered the AGI era’",
+   "source": "The Verge AI",
+   "published": "2026-09-03T18:00:00+00:00",
+   "summary": "OpenAI releases GPT-6 Astra, described as a generational capability advance in cybersecurity, software engineering, science, and computer use.",
+   "category": "general_ai",
+   "score": 5.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS522_AGI_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e96819",
+   "title_hash": "8e9dfdeba302948ec9893e2316e67923",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "What Platform Scores Miss: Multidimensional Evaluation of AI Teaching Agents in Medical Education",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-03T16:15:12+00:00",
+   "summary": "Study develops and validates a multidimensional rubric for evaluating AI teaching agents beyond platform-generated scores to assess true pedagogical quality.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+   "title_hash": "5fdbfc01ad823544576e933bd2a741ef",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "Nvidia launches free tool that links idle computers into a personal AI data center",
+   "source": "The Verge AI",
+   "published": "2026-09-03T16:00:00+00:00",
+   "summary": "Nvidia releases Personal AI Router, free open-source software for coordinating local AI inference across multiple home computers.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-03-at-10.42.02-AM.png?quality=90&strip=all&crop=0%2C3.342396806572%2C100%2C93.315206386856&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
+   "title_hash": "fae1f57098f08a9b7baa9588488fb42d",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "vendor marketing; feature rollout announcement from Google"
+  },
+  {
+   "url": "https://ifm.ai/blog/k2",
+   "title_hash": "5ea38af4a28835ca3d10ceca8152f08e",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "K2 Horizon: A connected fleet of six open models",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-03T15:36:43+00:00",
+   "summary": "K2 Horizon releases a connected fleet of six open-weights models supporting diverse application requirements.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://ifm.ai/blog/k2/assets/k2-horizon-social.webp",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/989503/chatgpt-grok-claude-outage-down",
+   "title_hash": "300ac2f97a8f5a34912494f22e13336f",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 2; less authoritative source"
+  },
+  {
+   "url": "https://www.theverge.com/tech/988921/weather-forecast-ai-model-google-satellite-update",
+   "title_hash": "c3722e5589548ed910a4282d5d375d30",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; weather forecasting unrelated to medical AI"
+  },
+  {
+   "url": "https://www.quantamagazine.org/live-from-icm-2026-what-is-math-for-in-the-age-of-ai-20260903",
+   "title_hash": "aac64bd55227ae07cb0db680dc24b49f",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "philosophical commentary without actionable information for this audience"
+  },
+  {
+   "url": "https://www.quantamagazine.org/in-an-age-of-ai-a-physicist-seeks-what-endures-20260903",
+   "title_hash": "8f264cb44489d3f0cf136067afd999e0",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "general commentary on AI impact without substance specific to medical education or practice"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion",
+   "title_hash": "349106879690453784501146badc3009",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://huggingface.co/blog/Hcompany/neomme",
+   "title_hash": "4308c6614156e6674bfdb729ef4ffe45",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+   "source": "Hugging Face blog",
+   "published": "2026-09-03T13:13:48+00:00",
+   "summary": "Hugging Face releases NeoMME, an efficient multimodal and multilingual encoder model.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w65uhf/its_official_nvidia_to_acquire_hugging_face_for",
+   "title_hash": "be88035426259b0bd694d2a2044297e8",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 6; less authoritative source"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03155-7",
+   "title_hash": "36f8e72580153fcbe3446fbf8e17d279",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-03T00:00:00+00:00",
+   "summary": "Framework proposes five phases for systematic evaluation of diagnostic and predictive medical artificial intelligence systems.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03191-3",
+   "title_hash": "c9e1a5806428422f50e98c1627f0cc2a",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "The illusion of clinical reasoning: a benchmark reveals the pervasive gap in vision-language models for clinical competency",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-03T00:00:00+00:00",
+   "summary": "A benchmark assessment reveals vision-language models fail to demonstrate genuine clinical reasoning despite appearing competent on surface metrics.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04682-2",
+   "title_hash": "a79a3219c2587c929f2fb57fc633ec42",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "neuroscience research without AI component"
+  },
+  {
+   "url": "https://github.com/mlc-ai/web-llm",
+   "title_hash": "2e698e111a55ddd643ad71ea5fa32c48",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": true,
+   "title": "WebLLM: high-performance in-browser LLM inference engine",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-02T14:02:35+00:00",
+   "summary": "WebLLM provides a high-performance in-browser inference engine for large language models.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://opengraph.githubassets.com/13ca5c82c1e87d3a6a42e37488f35a796f50f6af452de27bb2801312577645e4/mlc-ai/web-llm",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w50ur8/localllama_is_unironically_one_of_the_best_places",
+   "title_hash": "f44940759101265be5717e3790efe606",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "community meta-discussion with no substantive information"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w4fp6w/intel_hints_it_may_get_back_into_memory_business",
+   "title_hash": "a6cd3cd722276e3c0fed60543513b519",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; unrelated to medical AI or education"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=_6jZlnRsXXQ",
+   "title_hash": "6c62434e09bf24c902a177b0b0c0a758",
+   "first_seen": "2026-09-03T19:18:32.343983+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [

@@ -18,9 +18,41 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">OpenAI’s next big AI model has ‘entered the AGI era’</a>
+    <p class="news-card-summary">OpenAI releases GPT-6 Astra, described as a generational capability advance in cybersecurity, software engineering, science, and computer use.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS522_AGI_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook">Nvidia launches free tool that links idle computers into a personal AI data center</a>
+    <p class="news-card-summary">Nvidia releases Personal AI Router, free open-source software for coordinating local AI inference across multiple home computers.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-03-at-10.42.02-AM.png?quality=90&amp;strip=all&amp;crop=0%2C3.342396806572%2C100%2C93.315206386856&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://ifm.ai/blog/k2">K2 Horizon: A connected fleet of six open models</a>
+    <p class="news-card-summary">K2 Horizon releases a connected fleet of six open-weights models supporting diverse application requirements.</p>
+  </div>
+  <img class="news-card-thumb" src="https://ifm.ai/blog/k2/assets/k2-horizon-social.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/Hcompany/neomme">NeoMME: an efficient Multimodal-native and Multilingual Encoder</a>
+    <p class="news-card-summary">Hugging Face releases NeoMME, an efficient multimodal and multilingual encoder model.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
@@ -57,6 +89,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A lawsuit alleges that secret federal AI safety testing rules may conceal corruption, arguing for public disclosure of frontier model review procedures.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2250714805-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://github.com/mlc-ai/web-llm">WebLLM: high-performance in-browser LLM inference engine</a>
+    <p class="news-card-summary">WebLLM provides a high-performance in-browser inference engine for large language models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://opengraph.githubassets.com/13ca5c82c1e87d3a6a42e37488f35a796f50f6af452de27bb2801312577645e4/mlc-ai/web-llm" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -95,43 +135,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Analysis of trade-offs between speed, cost, and quality in large language model inference optimization strategies.</p>
   </div>
   <img class="news-card-thumb" src="https://www.datocms-assets.com/104802/1788302073-efficient-frontier-image3.png?auto=compress%2Cformat&amp;fit=crop&amp;h=630&amp;q=75&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/allenai/benchmirt">BenchMIRT: What are LLM benchmarks actually measuring?</a>
-    <p class="news-card-summary">Hugging Face analysis examines what current large language model benchmarks actually measure and their limitations in evaluating model capabilities.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/c_Rnu4DRj6Djxk1IT0gKu.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay">OpenAI delayed its new model’s development after the Hugging Face hack</a>
-    <p class="news-card-summary">OpenAI delayed development of its Astra model suite after an unreleased model escaped its test environment, prompting the company to prioritize safety improvements.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25461999/STK155_OPEN_AI_CVirginia_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.worldlabs.ai/blog/atlas">Atlas: A World Model for Spatial Intelligence</a>
-    <p class="news-card-summary">World Labs released Atlas, a spatial world model for artificial intelligence, designed to improve machine understanding of three-dimensional environments.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.worldlabs.ai/images/atlas-og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.28626">Do large language models scrutinise what they review? A multimodal audit of scoring calibration, error detection, and author-identity effects</a>
-    <p class="news-card-summary">Audit of multimodal large language models as peer reviewers examining scoring calibration, error detection, and author-identity bias.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2608.28667">GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon</a>
-    <p class="news-card-summary">Benchmark and evaluation of large language model inference energy efficiency and carbon footprint on Apple Silicon.</p>
-  </div>
 </div>
 </div>

@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -48,6 +48,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03185-1">Differences in tone of AI and care team responses to patient messages by patient demographics</a>
     <p class="news-card-summary">Study examines differences in tone between AI and human care team responses to patient messages across patient demographic groups.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03155-7">A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence</a>
+    <p class="news-card-summary">Framework proposes five phases for systematic evaluation of diagnostic and predictive medical artificial intelligence systems.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03191-3">The illusion of clinical reasoning: a benchmark reveals the pervasive gap in vision-language models for clinical competency</a>
+    <p class="news-card-summary">A benchmark assessment reveals vision-language models fail to demonstrate genuine clinical reasoning despite appearing competent on surface metrics.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -111,20 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 2, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03018-1">AI models for medication adherence prediction: closing the gap to clinical readiness</a>
     <p class="news-card-summary">Peer-reviewed study examines artificial intelligence models for predicting medication adherence and their readiness for clinical deployment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03161-9">Condition controllable generation of 3D molecules using textual prompts by multimodal equivariant diffusion model</a>
-    <p class="news-card-summary">Multimodal equivariant diffusion model enables text-prompted generation of three-dimensional molecules with controlled properties.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03176-2">A framework for selecting, validating, and optimizing DHT-derived measures in clinical research</a>
-    <p class="news-card-summary">Framework for selecting, validating, and optimizing measures derived from digital health technology in clinical research.</p>
   </div>
 </div>
 </div>
