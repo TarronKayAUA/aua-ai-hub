@@ -13,14 +13,28 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A systematic review and meta-analysis of AI tools for sepsis prediction synthesizes evidence on their real-world performance, offering clinicians a benchmark for adoption decisions <a href="https://www.nature.com/articles/s41746-026-03168-2">[10]</a>. Similar scrutiny extends to mental health care, where a review of generative language models in clinical settings weighs usefulness against safety and implementation readiness <a href="https://ai.jmir.org/2026/1/e87730">[8]</a>. Diagnostic imaging also advances with a fine-tuning-free system for classifying breast ultrasound malignancy that separates segmentation from feature analysis, avoiding retraining burdens <a href="https://www.nature.com/articles/s41746-026-03144-w">[11]</a>. Meanwhile, a conceptual model for ambient AI adoption tries to close the gap between vendor claims and actual clinical performance <a href="https://medinform.jmir.org/2026/1/e91098">[14]</a>.</p>
-<p>Also this week: the section includes five items on clinical decision support, four on imaging and diagnostics, and three on safety and evaluation, spanning digital health measure validation frameworks to federated foundation models for biomedical imaging, alongside a hip fracture arthroplasty prediction tool and a molecule-generation model for drug discovery.</p>
-<p class="section-brief-date">The picture as of September 2, 2026; numbered links go to the items below.</p>
+<p>A deep learning model for real-time kidney image segmentation during robot-assisted partial nephrectomy demonstrates growing sophistication in intraoperative imaging support, validated against a multiannotator dataset to guide augmented reality overlays <a href="https://medinform.jmir.org/2026/1/e82540">[4]</a>. Elsewhere in decision support, a Markov decision process framework proposes personalized follow-up scheduling for type 2 diabetes, balancing monitoring frequency against resource use <a href="https://medinform.jmir.org/2026/1/e88206">[3]</a>. Safety and evaluation work continues to test where large language models can be trusted with sensitive judgments, illustrated by a comparison of Arabic and English models assessing suicide risk in crisis helpline calls <a href="https://arxiv.org/abs/2609.00191">[9]</a>. Separately, a peer-reviewed study weighs how close medication adherence prediction models are to real clinical deployment <a href="https://www.nature.com/articles/s41746-026-03018-1">[11]</a>.</p>
+<p>Also this week: clinical decision support continues to dominate output, with seven entries spanning causal hypothesis verification, literature retrieval tools like PubChat, and multiscale patient modeling frameworks. Safety and evaluation adds three papers on trustworthiness, while imaging and diagnostics and patient-facing tools each contribute two studies, including MoodMon&#x27;s speech-based mood tracking system.</p>
+<p class="section-brief-date">The picture as of September 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.01832">Interpretable Symptom Vectors for Depression in a Large Language Model</a>
+    <p class="news-card-summary">Preprint demonstrates how large language models represent depressive symptoms as interpretable vectors, offering potential for nuanced mental health assessment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.01971">NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis</a>
+    <p class="news-card-summary">Preprint presents an agent system that integrates heterogeneous neural models to lower barriers for laboratories adopting AI in neuroscience research.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
@@ -77,6 +91,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">PubChat enables multilingual biomedical literature retrieval from PubMed with benchmark validation for clinical evidence access.</p>
   </div>
 </div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03018-1">AI models for medication adherence prediction: closing the gap to clinical readiness</a>
+    <p class="news-card-summary">Peer-reviewed study examines artificial intelligence models for predicting medication adherence and their readiness for clinical deployment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="other">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
@@ -103,27 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03121-3">A CT-enhanced multi-modal framework for predicting early conversion to arthroplasty in patients with intracapsular hip fractures</a>
     <p class="news-card-summary">Multi-modal framework using computed tomography and other data to predict early conversion to arthroplasty in intracapsular hip fracture patients.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03173-5">Generative deep learning reconstructs subcortical neural signals from cortical recordings for closed-loop brain stimulation</a>
-    <p class="news-card-summary">Generative deep learning reconstructs subcortical neural signals from cortical recordings to enable closed-loop brain stimulation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03157-5">Toward Clinical Adoption of Spatial Omics and Computational Pathology in Oncology</a>
-    <p class="news-card-summary">Perspective on advancing clinical adoption of spatial omics and computational pathology methods in oncology practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87730">Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis</a>
-    <p class="news-card-summary">Systematic review and meta-analysis of large language models in mental health care examining clinical usefulness, safety, and implementation readiness.</p>
   </div>
 </div>
 </div>

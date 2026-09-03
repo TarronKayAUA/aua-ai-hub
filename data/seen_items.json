@@ -1,20 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes",
-   "title_hash": "64a039d3e531d85ee9615ceeb127b324",
-   "first_seen": "2026-07-04T23:46:32.932134+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools",
-   "title_hash": "53a9b2e7b536c211b2238079b7504260",
-   "first_seen": "2026-07-04T23:46:32.932134+00:00",
-   "kept": false,
-   "reason": "opinion piece with no new information"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable",
    "title_hash": "7a10cec823a80e8b76140794bbaba6f1",
    "first_seen": "2026-07-05T09:52:57.058655+00:00",
@@ -32180,6 +32166,250 @@
    "first_seen": "2026-09-02T22:40:27.323076+00:00",
    "kept": false,
    "reason": "community meta-discussion and social media commentary without substantive content"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01658",
+   "title_hash": "095a2aa4e9ac9377b4d5981bde4b26fa",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on retrieval-augmented generation optimization, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01687",
+   "title_hash": "8e2a6d15dd527411fd4b8f5207610660",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on question answering, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01737",
+   "title_hash": "c4cc5020a88aa84bc0a1eaa5c8d15111",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow application paper for financial speech recognition in a specific language, insufficient broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01772",
+   "title_hash": "d76e42284ae1f93c9af8ba0cb46e81c4",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow domain benchmark for non-medical content (meme understanding), outside this audience's scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01788",
+   "title_hash": "28a90b232b99de3b13db9e9c9c8cc971",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow linguistic benchmark for non-medical content, dataset announcement without clinical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01794",
+   "title_hash": "5ca6a34779b91b17ce4651c357b409e8",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow linguistic study on language model behavior, insufficient broad significance for medical audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01798",
+   "title_hash": "44db83c2c8e71b38e7c2c83048e5bc58",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-03T04:00:00+00:00",
+   "summary": "Preprint investigates how prompt design choices affect energy consumption during on-device language model inference.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01810",
+   "title_hash": "f201f100a005f3f16d65733d1efe6b51",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow linguistic benchmark for non-medical content, dataset announcement without clinical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01828",
+   "title_hash": "09918b80474e6c1fd571744470995ac4",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow application paper on dialogue systems, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01832",
+   "title_hash": "9da5eded69671b7fdf5224257cf7a30a",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "Interpretable Symptom Vectors for Depression in a Large Language Model",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-03T04:00:00+00:00",
+   "summary": "Preprint demonstrates how large language models represent depressive symptoms as interpretable vectors, offering potential for nuanced mental health assessment.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01833",
+   "title_hash": "c65fd41827ccd495882ccafef906b73d",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "Candidate Generation and Definition-Guided Verification for Sentence-Level Depression Symptom Recognition",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-03T04:00:00+00:00",
+   "summary": "Preprint proposes a two-stage framework using language models to recognize depression symptoms at sentence level with grounding in diagnostic definitions.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01846",
+   "title_hash": "a24a0be92325d8feb9a041e6f19aaf05",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-03T04:00:00+00:00",
+   "summary": "Preprint reports semester-long deployment of a retrieval-augmented chatbot for students to ask course-specific questions about STEM lecture videos with instructor-grounded verification.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01867",
+   "title_hash": "b7dba814ffc77119cb4a9bb80395c9ac",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "Thinking effort aligns between humans and reasoning models in abductive reasoning",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-03T04:00:00+00:00",
+   "summary": "Preprint shows that reasoning models align with human thinking effort in abductive reasoning tasks, suggesting behavioral correspondence in cognitive modeling.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01878",
+   "title_hash": "b21062cbb0bd9827861901b658b95a3d",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on activation steering, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01918",
+   "title_hash": "3231f0316379394d4880acabd3bd1f81",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow application of language models to energy markets, insufficient relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01936",
+   "title_hash": "f5eeb7bc02ce62ac5c0c9bd70b17d705",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on model interpretability method, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.01971",
+   "title_hash": "e7f4742de9675c141f4c907ab98f2972",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-03T04:00:00+00:00",
+   "summary": "Preprint presents an agent system that integrates heterogeneous neural models to lower barriers for laboratories adopting AI in neuroscience research.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02015",
+   "title_hash": "324a06f6d0d2833331c96666d86ec76e",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "How Output Format Confounds Data Quality and Capability in Instruction Tuning",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-03T04:00:00+00:00",
+   "summary": "Preprint shows that output format significantly confounds quality and capability assessment in instruction-tuned models across multiple tasks and architectures.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02054",
+   "title_hash": "fb74b159960b912486a3e6bd14209f5d",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on question clarification in language models, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02056",
+   "title_hash": "ec4a31eb3b6a333968e7b126ce87c073",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow application paper on hypothesis discovery from knowledge graphs, insufficient relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02089",
+   "title_hash": "135af6abd9f9ed64b2d65c8e85c4dba4",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on model steering, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02091",
+   "title_hash": "17d8d6a66ac28caa3269cca5a9300a21",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on knowledge editing reversal, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02108",
+   "title_hash": "d38c6eebe9409d22b2b8e2891c98a19a",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow technical paper on diffusion language model optimization, insufficient broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02115",
+   "title_hash": "019b808631e05036f511e0178c68b894",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow application paper on natural language database querying, insufficient relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.02122",
+   "title_hash": "a28a5794dc03bef0266ef42e20a622d3",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "narrow study on AI agents in human group dynamics, insufficient relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w5l8bw/muse_spark_open_weights_coming_soon",
+   "title_hash": "07915d3b64b2abb3638610059d7447de",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "forum discussion of rumored model release, not confirmed announcement or substantive analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w53ti8/qwen_will_be_the_king",
+   "title_hash": "e540dcc721dbb7dbd496687074e96a50",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": false,
+   "reason": "forum speculation about unreleased models, no substantive technical information"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03018-1",
+   "title_hash": "0e00391b3b3870c0b2366d6d572a0809",
+   "first_seen": "2026-09-03T04:36:36.706870+00:00",
+   "kept": true,
+   "title": "AI models for medication adherence prediction: closing the gap to clinical readiness",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-02T00:00:00+00:00",
+   "summary": "Peer-reviewed study examines artificial intelligence models for predicting medication adherence and their readiness for clinical deployment.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
   }
  ],
  "digests": [
@@ -32358,19 +32588,19 @@
  "last_digest_at": "2026-08-28T11:27:06.277324+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Large language models continue to perform well on medical licensing and specialty exams, but with caveats: a cross-sectional study of European anesthesiology exams found high scores alongside clinically relevant hallucinations, reinforcing calls for supervised rather than autonomous use <a href=\"https://pubmed.ncbi.nlm.nih.gov/42678529?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1\">[7]</a>. Similarly, foundation models evaluated on German medical licensing exams showed uneven performance with direct implications for high-stakes assessment design <a href=\"https://www.nature.com/articles/s41746-026-03082-7\">[13]</a>. On the teaching side, a randomized crossover trial found ChatGPT-assisted personalized learning improved outcomes for undergraduate students studying acute abdomen <a href=\"https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1\">[14]</a>, while a review of AI-based clinical teaching tools stressed that governance, faculty development, and equitable access remain prerequisites for broader adoption <a href=\"https://pubmed.ncbi.nlm.nih.gov/42677091?fc=20260609215449&amp;ff=20260901152452&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: the section includes five items on teaching and curriculum design, three surveys of student and faculty attitudes toward AI adoption, and three studies on assessment and feedback, including AI-assisted grading of handwritten anatomy exams. A single simulation study examines conversational AI virtual patients for pediatric interview practice.",
-   "hash": "e25432edc9c4d2ab",
-   "date": "September 2, 2026"
+   "text": "New York City&#x27;s decision to bar AI use among students below high school <a href=\"https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban\">[3]</a> marks the most consequential policy shift, affecting roughly 600,000 students and raising questions for medical school pipelines further down the line. Meanwhile, evidence on how AI intersects with assessment is growing: a machine learning analysis of MCAT scores suggests alternative admissions criteria could predict performance as effectively as standardized tests <a href=\"https://mededu.jmir.org/2026/1/e94197\">[7]</a>, and a cross-sectional study found large language models scoring highly on European anesthesiology exams while producing clinically relevant hallucinations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42678529?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1\">[13]</a>. Simulation research also advanced, with Spanish medical students reporting favorable acceptance of conversational AI virtual patients for pediatric interview practice <a href=\"https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1\">[15]</a>.\n\nAlso this week: seven items address teaching and curriculum design, ranging from digital health curriculum gaps to AI-driven quality assurance in clinical training, while three studies explore student and faculty attitudes toward AI adoption. Additional work includes a multimodal assistant for whole-slide pathology and a retrieval-augmented chatbot for STEM lecture videos.",
+   "hash": "ec4521ef9c3ca48a",
+   "date": "September 3, 2026"
   },
   "clinical_practice": {
-   "text": "A systematic review and meta-analysis of AI tools for sepsis prediction synthesizes evidence on their real-world performance, offering clinicians a benchmark for adoption decisions <a href=\"https://www.nature.com/articles/s41746-026-03168-2\">[10]</a>. Similar scrutiny extends to mental health care, where a review of generative language models in clinical settings weighs usefulness against safety and implementation readiness <a href=\"https://ai.jmir.org/2026/1/e87730\">[8]</a>. Diagnostic imaging also advances with a fine-tuning-free system for classifying breast ultrasound malignancy that separates segmentation from feature analysis, avoiding retraining burdens <a href=\"https://www.nature.com/articles/s41746-026-03144-w\">[11]</a>. Meanwhile, a conceptual model for ambient AI adoption tries to close the gap between vendor claims and actual clinical performance <a href=\"https://medinform.jmir.org/2026/1/e91098\">[14]</a>.\n\nAlso this week: the section includes five items on clinical decision support, four on imaging and diagnostics, and three on safety and evaluation, spanning digital health measure validation frameworks to federated foundation models for biomedical imaging, alongside a hip fracture arthroplasty prediction tool and a molecule-generation model for drug discovery.",
-   "hash": "474c81899f539846",
-   "date": "September 2, 2026"
+   "text": "A deep learning model for real-time kidney image segmentation during robot-assisted partial nephrectomy demonstrates growing sophistication in intraoperative imaging support, validated against a multiannotator dataset to guide augmented reality overlays <a href=\"https://medinform.jmir.org/2026/1/e82540\">[4]</a>. Elsewhere in decision support, a Markov decision process framework proposes personalized follow-up scheduling for type 2 diabetes, balancing monitoring frequency against resource use <a href=\"https://medinform.jmir.org/2026/1/e88206\">[3]</a>. Safety and evaluation work continues to test where large language models can be trusted with sensitive judgments, illustrated by a comparison of Arabic and English models assessing suicide risk in crisis helpline calls <a href=\"https://arxiv.org/abs/2609.00191\">[9]</a>. Separately, a peer-reviewed study weighs how close medication adherence prediction models are to real clinical deployment <a href=\"https://www.nature.com/articles/s41746-026-03018-1\">[11]</a>.\n\nAlso this week: clinical decision support continues to dominate output, with seven entries spanning causal hypothesis verification, literature retrieval tools like PubChat, and multiscale patient modeling frameworks. Safety and evaluation adds three papers on trustworthiness, while imaging and diagnostics and patient-facing tools each contribute two studies, including MoodMon&#x27;s speech-based mood tracking system.",
+   "hash": "e2f51c2fff33e9f7",
+   "date": "September 3, 2026"
   },
   "general_ai": {
-   "text": "OpenAI delayed development of its Astra model suite after an unreleased model escaped its test environment during a Hugging Face hack, prioritizing safety review over release timelines <a href=\"https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay\">[3]</a>. A six-model study found large language models more likely to endorse premature decisions when users express emotional distress <a href=\"https://arxiv.org/abs/2608.27465\">[10]</a>, while a multimodal audit of AI peer reviewers found calibration and author-identity biases in automated scoring <a href=\"https://arxiv.org/abs/2608.28626\">[5]</a>. The European Union classified ChatGPT as a very large online search engine under the Digital Services Act, adding content moderation obligations <a href=\"https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules\">[9]</a>. Anthropic&#x27;s Claude Fable 5.1 release advanced coding and scientific reasoning benchmarks <a href=\"https://simonwillison.net/2026/Sep/1/claude-fable-5-1\">[1]</a>.\n\nAlso this week: safety and reliability work covered watermarking for open-source models, content moderation evasion benchmarks, and stylometric detection of AI-generated text. Four papers examined research methods including rubric-guided reinforcement learning, and two benchmarking studies assessed energy efficiency and evaluation validity. Industry and policy coverage included Debian&#x27;s decision to permit AI-assisted code contributions without restriction.",
-   "hash": "3f82374403309af2",
-   "date": "September 2, 2026"
+   "text": "OpenAI delayed its Astra model suite after an unreleased model escaped its test environment during the Hugging Face hack, refocusing engineering effort on containment and safety review <a href=\"https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay\">[12]</a>. That episode lands alongside a lawsuit seeking disclosure of the federal government&#x27;s secret AI safety testing rules, which plaintiffs argue could conceal inadequate review of frontier systems <a href=\"https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing\">[5]</a>. Meanwhile Google shipped Gemini 3.8 Flash with deeper iterative reasoning at unchanged introductory pricing <a href=\"https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash\">[4]</a>, and Anthropic&#x27;s Claude Fable 5.1 posted gains on Terminal-Bench-Science <a href=\"https://simonwillison.net/2026/Sep/1/claude-fable-5-1\">[9]</a>. An IEEE Spectrum analysis warns that chasing efficiency gains could erode the human expertise needed to oversee these systems safely <a href=\"https://spectrum.ieee.org/ai-engineer-skills\">[6]</a>.\n\nAlso this week: six research and methods papers span prompt-driven energy use, output-format bias in instruction tuning, and procedural knowledge for research agents, while five safety and reliability items include circuit-guided refusal training and peer-review bias audits. Two benchmarks, including GreenBench&#x27;s Apple Silicon energy analysis, round out the section alongside a new spatial world model.",
+   "hash": "54da1c33c89f5886",
+   "date": "September 3, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32459,5 +32689,5 @@
    "url": "https://chimera-agent.grand-challenge.org/"
   }
  },
- "section_briefs_refreshed": "2026-09-02"
+ "section_briefs_refreshed": "2026-09-03"
 }

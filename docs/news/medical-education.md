@@ -13,14 +13,28 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models continue to perform well on medical licensing and specialty exams, but with caveats: a cross-sectional study of European anesthesiology exams found high scores alongside clinically relevant hallucinations, reinforcing calls for supervised rather than autonomous use <a href="https://pubmed.ncbi.nlm.nih.gov/42678529?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">[7]</a>. Similarly, foundation models evaluated on German medical licensing exams showed uneven performance with direct implications for high-stakes assessment design <a href="https://www.nature.com/articles/s41746-026-03082-7">[13]</a>. On the teaching side, a randomized crossover trial found ChatGPT-assisted personalized learning improved outcomes for undergraduate students studying acute abdomen <a href="https://pubmed.ncbi.nlm.nih.gov/42668909?fc=20260609215449&amp;ff=20260830094906&amp;v=2.20.1">[14]</a>, while a review of AI-based clinical teaching tools stressed that governance, faculty development, and equitable access remain prerequisites for broader adoption <a href="https://pubmed.ncbi.nlm.nih.gov/42677091?fc=20260609215449&amp;ff=20260901152452&amp;v=2.20.1">[4]</a>.</p>
-<p>Also this week: the section includes five items on teaching and curriculum design, three surveys of student and faculty attitudes toward AI adoption, and three studies on assessment and feedback, including AI-assisted grading of handwritten anatomy exams. A single simulation study examines conversational AI virtual patients for pediatric interview practice.</p>
-<p class="section-brief-date">The picture as of September 2, 2026; numbered links go to the items below.</p>
+<p>New York City&#x27;s decision to bar AI use among students below high school <a href="https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban">[3]</a> marks the most consequential policy shift, affecting roughly 600,000 students and raising questions for medical school pipelines further down the line. Meanwhile, evidence on how AI intersects with assessment is growing: a machine learning analysis of MCAT scores suggests alternative admissions criteria could predict performance as effectively as standardized tests <a href="https://mededu.jmir.org/2026/1/e94197">[7]</a>, and a cross-sectional study found large language models scoring highly on European anesthesiology exams while producing clinically relevant hallucinations <a href="https://pubmed.ncbi.nlm.nih.gov/42678529?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">[13]</a>. Simulation research also advanced, with Spanish medical students reporting favorable acceptance of conversational AI virtual patients for pediatric interview practice <a href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">[15]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum design, ranging from digital health curriculum gaps to AI-driven quality assurance in clinical training, while three studies explore student and faculty attitudes toward AI adoption. Additional work includes a multimodal assistant for whole-slide pathology and a retrieval-augmented chatbot for STEM lecture videos.</p>
+<p class="section-brief-date">The picture as of September 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.01833">Candidate Generation and Definition-Guided Verification for Sentence-Level Depression Symptom Recognition</a>
+    <p class="news-card-summary">Preprint proposes a two-stage framework using language models to recognize depression symptoms at sentence level with grounding in diagnostic definitions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.01846">Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos</a>
+    <p class="news-card-summary">Preprint reports semester-long deployment of a retrieval-augmented chatbot for students to ask course-specific questions about STEM lecture videos with instructor-grounded verification.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 2, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">Practicing pediatric interviews with parents through conversational AI-based virtual patients: an observational study in Spanish undergraduate medical education</a>
     <p class="news-card-summary">Observational study of Spanish medical students&#x27; acceptance and satisfaction with conversational AI-based virtual patients for pediatric interview practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675315?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Comparison of artificial intelligence and lecturers&#x27; grading in the evaluation of handwritten open-ended anatomy examinations</a>
-    <p class="news-card-summary">ChatGPT aligned best with lecturer grading of handwritten anatomy exams, but AI-assisted grading requires human oversight and structured criteria for high-stakes assessments.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675249?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Sailing by the Stars: A Cross-Sectional Survey Study of Generative AI Use Among GME Trainees and Faculty</a>
-    <p class="news-card-summary">Survey of graduate medical education trainees and faculty on generative AI use in clinical training.</p>
   </div>
 </div>
 </div>
