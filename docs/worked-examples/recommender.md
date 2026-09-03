@@ -20,6 +20,11 @@ In August 2026 I built a media tracker for my family. It follows films, televisi
 
 It has been in real use since August. It cost about five dollars a month to run, plus roughly three cents each time it thinks hard about a recommendation.
 
+<figure class="figure">
+<img src="../../assets/worked-examples/tracker-pick.jpg" alt="A recommendation for the film Yojimbo, marked Strong match 92, with a written explanation connecting it to films the reader already likes">
+<figcaption>What comes out of it. Everything else in this article exists to decide which forty titles the model was allowed to choose from.</figcaption>
+</figure>
+
 I did not write any of it. Not a line. Across some sixteen hundred messages I never once cited a file path or a function name, and when the interface first showed me a diff I had to ask what I was looking at and whether I was supposed to do anything about it.
 
 | | |
@@ -49,6 +54,11 @@ If the honest answer is "nothing much, or something that looks like an ordinary 
 Three habits fell out of taking that seriously, and they are the part I would press on anyone.
 
 The first is that every test suite has to say, in plain English, what its failure means for a human being. When something goes red, the report says *deep search is quietly ignoring some of your filters*. It does not say *assertion failed at line 47*. I cannot act on the second sentence. Nobody outside a very small profession can.
+
+<figure class="figure">
+<img src="../../assets/worked-examples/tracker-refine.png" alt="A panel of filter controls: media type, review threshold, mood, genres to rule in or out, language, and time available">
+<figcaption>Every one of these is a promise. Quietly disregard half of them and you still get a perfectly plausible film.</figcaption>
+</figure>
 
 The second is that a test which checks nothing counts as a failure. This sounds like pedantry until you meet one. A check whose search pattern matches zero lines will report a serene, confident pass while verifying absolutely nothing, forever. The runner now fails any suite that finishes without having actually asserted anything.
 
@@ -122,6 +132,11 @@ Version one chose which pairs to show me by greedily maximising genre coverage, 
 The tell was a correlation of +0.50 between how rare a title's genre was and how often it lost. Nothing on the screen looked wrong. Nothing in the code was wrong. It was found only by checking the answers against the thing the chooser had been quietly optimising for, which is a check you only think to run if you have already accepted that your instruments can flatter you.
 
 And none of this was possible for the first several months, because the application had cheerfully shown 118 recommendations while keeping no record whatsoever of which ones it had shown, in what order, or what anybody did next. There is no clever statistics that recovers from that. Somebody has to write down what was asked before anything can be learned from the answer.
+
+<figure class="figure">
+<img src="../../assets/worked-examples/tracker-feedback.jpg" alt="A card asking whether the reader watched any of five previously suggested titles, with Watched It, Not yet and No buttons beside each">
+<figcaption>The least clever screen here, and the one everything else depends on. Note the third button, and the permission to skip.</figcaption>
+</figure>
 
 ## What the measurements said when I stopped flattering myself
 

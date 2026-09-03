@@ -562,6 +562,18 @@
   height: auto;
 }
 
+/* Screenshots inside figures (worked examples). The rule above only covers
+   SVG, so a raster figure shrink-wrapped to its intrinsic size and sat off
+   centre. A faint border matters here: these are dark interface captures on
+   a page that is white in light mode, and without it the image bleeds into
+   the background with no edge. */
+.figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+}
+
 .figure figcaption {
   margin-top: 0.4rem;
   font-size: 0.74rem;
