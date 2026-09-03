@@ -119,15 +119,17 @@ How this kind of work actually goes, written up after the fact by the person who
 
     [Read it](worked-examples/sharex-hdr.md)
 
-- :material-dna:{ .lg .middle } __Checking a headline against my own genome__
+- :material-tune-variant:{ .lg .middle } __Building a recommender I could not read__
 
     ---
 
-    A widely reported genetics finding, tested against the author's own data, and the arithmetic that declined the flattering answer.
+    Testing software you cannot read, and measurements that flatter you by answering a different question than the one you asked.
 
-    [Read it](worked-examples/genome.md)
+    [Read it](worked-examples/recommender.md)
 
 </div>
+
+[More worked examples](worked-examples/index.md), including a genetics headline tested against the author's own data.
 
 ## Latest items
 

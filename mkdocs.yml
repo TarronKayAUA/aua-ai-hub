@@ -146,6 +146,7 @@ nav:
       - worked-examples/index.md
       - How This Site Is Built: worked-examples/this-site.md
       - Forking a Program I Could Not Have Written: worked-examples/sharex-hdr.md
+      - Building a Recommender I Could Not Read: worked-examples/recommender.md
       - Checking a Headline Against My Own Genome: worked-examples/genome.md
   - Governance:
       - governance/index.md

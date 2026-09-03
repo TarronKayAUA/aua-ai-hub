@@ -16,6 +16,7 @@ They are here because the useful skill is turning out not to be generating thing
 | --- | --- | --- |
 | [How this site is built](this-site.md) | The pipeline, automation and rules behind the site you are reading | Specification before code, a selection algorithm that turned out to be prose, and the failure that keeps recurring: a check that silently stopped checking |
 | [Forking a program I could not have written](sharex-hdr.md) | Adding HDR screenshot capture to ShareX, in a language the author does not write | Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and publishing what you could not verify |
+| [Building a recommender I could not read](recommender.md) | A media tracker and recommender for one family, built in three weeks without the author writing a line of it | Testing software you cannot read, six ways a check passes against broken code, and measurements that flatter you by answering the wrong question |
 | [Checking a headline against my own genome](genome.md) | Testing a widely reported genetics finding against the author's own consumer genotype data | Declining a flattering conclusion the data cannot support, setting refusals in advance, and catching a model's confident error inside your own expertise |
 
 !!! note "How to read these"
