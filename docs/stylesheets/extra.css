@@ -574,6 +574,12 @@
   border-radius: 4px;
 }
 
+/* Portrait figures (a cropped panel, a tall screenshot) would otherwise be
+   scaled to the full 42rem column width and tower over the prose. */
+.md-typeset .figure--narrow {
+  max-width: 20rem;
+}
+
 .figure figcaption {
   margin-top: 0.4rem;
   font-size: 0.74rem;

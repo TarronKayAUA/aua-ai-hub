@@ -43,6 +43,68 @@ Thirty-six commits over eight days. Display discovery for HDR-capable monitors, 
 
 It works. I have been using it since July.
 
+<figure class="figure">
+<svg viewBox="0 0 660 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The capture path. An HDR display is duplicated to a high precision frame, which is tone mapped and written out as three files: an ordinary image, a lossless HDR file, and an Ultra HDR file carrying both. If any stage fails the whole path falls back once to the original capture method.">
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">one capture, three files, and a way back out</text>
+
+<rect x="14" y="42" width="112" height="46" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
+<text x="70" y="62" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">find the HDR</text>
+<text x="70" y="76" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">display</text>
+
+<rect x="150" y="42" width="112" height="46" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
+<text x="206" y="62" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">duplicate it, at</text>
+<text x="206" y="76" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">full precision</text>
+
+<rect x="286" y="42" width="112" height="46" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
+<text x="342" y="62" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">tone map on</text>
+<text x="342" y="76" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">the graphics card</text>
+
+<g stroke="var(--md-default-fg-color--light)" stroke-width="1.6" fill="none">
+  <path d="M126,65 L146,65"/><path d="M141,61 L146,65 L141,69" fill="var(--md-default-fg-color--light)"/>
+  <path d="M262,65 L282,65"/><path d="M277,61 L282,65 L277,69" fill="var(--md-default-fg-color--light)"/>
+  <path d="M398,65 L418,65"/><path d="M413,61 L418,65 L413,69" fill="var(--md-default-fg-color--light)"/>
+</g>
+
+<rect x="422" y="24" width="224" height="26" rx="4" fill="var(--md-default-fg-color--lightest)" opacity="0.5"/>
+<text x="434" y="41" font-size="10.5" fill="var(--md-typeset-color)">an ordinary image, for normal use</text>
+<rect x="422" y="54" width="224" height="26" rx="4" fill="var(--md-default-fg-color--lightest)" opacity="0.5"/>
+<text x="434" y="71" font-size="10.5" fill="var(--md-typeset-color)">a lossless file, all the HDR data</text>
+<rect x="422" y="84" width="224" height="26" rx="4" fill="var(--md-primary-fg-color)" opacity="0.16"/>
+<rect x="422" y="84" width="224" height="26" rx="4" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.4"/>
+<text x="434" y="101" font-size="10.5" fill="var(--md-typeset-color)">an Ultra HDR file, correct on both</text>
+
+<path d="M70,88 L70,150 L342,150" fill="none" stroke="#c62828" stroke-width="1.6" stroke-dasharray="4,3"/>
+<path d="M337,146 L342,150 L337,154" fill="none" stroke="#c62828" stroke-width="1.6"/>
+<rect x="346" y="136" width="188" height="28" rx="5" fill="none" stroke="#c62828" stroke-width="1.6"/>
+<text x="440" y="154" text-anchor="middle" font-size="10.5" fill="#c62828">fall back once, and say so</text>
+<text x="70" y="170" text-anchor="middle" font-size="9.5" fill="#c62828">any stage fails</text>
+
+<text x="330" y="192" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the old capture path stays the default; this one is opt-in and gives way the moment it cannot deliver</text>
+</svg>
+<figcaption>The whole design, including the part I care most about. The dashed line is the only branch I was truly qualified to specify.</figcaption>
+</figure>
+
+## Four builds, each named after a defect
+
+The work is not really thirty-six commits. It is four successive builds, and their folder names on my machine are the clearest record of the method I have:
+
+```
+ShareX-UltraHDR
+ShareX-UltraHDR-AntiBanding
+ShareX-UltraHDR-DisplayIndependent
+ShareX-UltraHDR-PresentationMatch
+```
+
+Each one is named after the thing that was wrong with the one before it.
+
+The first produced Ultra HDR files. They worked, in the sense that they opened and displayed. Then I looked at a sky in one of them and found visible banding in the gradient, the ugly stepping you get when a smooth transition is stored with too little precision. That produced the second build, and a commit recording the calibration that fixed it.
+
+The third exists because an image that looked correct on my monitor did not look correct on a different one. The white level was being tied to the display it had been captured on, so the file carried assumptions about a screen that the file would then travel away from. Making the output display-independent was a conceptual fix rather than a numerical one, and I could only find it by opening the same file somewhere else.
+
+The fourth is about matching what the screen was actually presenting at the moment of capture, rather than what the system reported it should be.
+
+I want to be clear that I did not diagnose any of these in code. What I did was look at output, on real screens, and say that something was wrong before I knew why. Every one of these was found by looking, not by reading, which is the only diagnostic move available to me and turns out to be a surprisingly powerful one. Banding is invisible in a source file and obvious in a sky.
+
 ## The part I am actually proud of
 
 The last third of the project is not features at all.
@@ -62,6 +124,11 @@ Nobody asked me to do that. It is the part of the work I am most confident about
 The plan document ends with a validation note that I have come to think of as the most honest thing in the repository.
 
 Display discovery worked. The shaders compiled. The settings, the routing and the fallback all worked, and the whole solution built clean. But the machine session available at the time returned an access denied error from the screen duplication interface before a single frame could be captured, which meant the end-to-end path, actual HDR pixels going through the actual tone mapper, was never confirmed in that environment.
+
+<figure class="figure figure--narrow">
+<img src="../../assets/worked-examples/hdr-gainmap.png" alt="An inspector panel showing a histogram split into SDR and HDR regions, a list of image components including base image and gain map, and the line: This is an SDR photo with a Gain Map.">
+<figcaption>What I could check, I checked in somebody else's software. Adobe's inspector reading my fork's output and confirming the gain map is real.</figcaption>
+</figure>
 
 I published it anyway, with that limitation written into the documentation rather than quietly omitted, and posted it publicly with the same caveat plus the two monitors I had genuinely tested on and their peak brightness.
 
