@@ -144,7 +144,8 @@ nav:
       - Opportunities: opportunities.md
   - Worked Examples:
       - worked-examples/index.md
-      - Changing the Site's Narration Voice: worked-examples/narration-engines.md
+      - How This Site Is Built: worked-examples/this-site.md
+      - Forking a Program I Could Not Have Written: worked-examples/sharex-hdr.md
       - Checking a Headline Against My Own Genome: worked-examples/genome.md
   - Governance:
       - governance/index.md

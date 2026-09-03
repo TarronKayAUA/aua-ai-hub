@@ -14,7 +14,8 @@ They are here because the useful skill is turning out not to be generating thing
 
 | Worked example | What it is | What it demonstrates |
 | --- | --- | --- |
-| [Changing the voice that reads this site aloud](narration-engines.md) | Replacing the speech system behind this site's read-aloud players | Measuring before deciding, licensing traps in open-weights models, and a review that appeared to pass because it never ran |
+| [How this site is built](this-site.md) | The pipeline, automation and rules behind the site you are reading | Specification before code, a selection algorithm that turned out to be prose, and the failure that keeps recurring: a check that silently stopped checking |
+| [Forking a program I could not have written](sharex-hdr.md) | Adding HDR screenshot capture to ShareX, in a language the author does not write | Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and publishing what you could not verify |
 | [Checking a headline against my own genome](genome.md) | Testing a widely reported genetics finding against the author's own consumer genotype data | Declining a flattering conclusion the data cannot support, setting refusals in advance, and catching a model's confident error inside your own expertise |
 
 !!! note "How to read these"

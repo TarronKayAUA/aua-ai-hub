@@ -103,13 +103,21 @@ How this kind of work actually goes, written up after the fact by the person who
 
 <div class="grid cards hp-cards" markdown>
 
-- :material-notebook-outline:{ .lg .middle } __Changing this site's narration voice__
+- :material-notebook-outline:{ .lg .middle } __How this site is built__
 
     ---
 
-    Measuring before deciding, a licensing trap in open-weights models, and an automated review that looked like it passed because it never ran.
+    Specification before code, a selection algorithm that turned out to be prose, and the failure that keeps recurring: a check that silently stopped checking.
 
-    [Read it](worked-examples/narration-engines.md)
+    [Read it](worked-examples/this-site.md)
+
+- :material-source-fork:{ .lg .middle } __Forking a program I could not have written__
+
+    ---
+
+    Adding HDR screenshot capture to someone else's software, and deciding boundaries when you cannot review the code.
+
+    [Read it](worked-examples/sharex-hdr.md)
 
 - :material-dna:{ .lg .middle } __Checking a headline against my own genome__
 
