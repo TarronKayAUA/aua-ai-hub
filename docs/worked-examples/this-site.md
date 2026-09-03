@@ -89,8 +89,6 @@ Hosting is free, on static pages published from the repository. The recurring co
 
 ## What this does not show
 
-There is no test suite in this repository and never has been. There is no measurement of whether anyone reads the site. I cannot tell you what the pipeline has wrongly discarded, because rejected items are dropped before anything is written down, so the loss is real and unquantifiable.
+There is no test suite in this repository and never has been, and nothing measures whether anyone reads the site. I also cannot tell you what the pipeline has wrongly discarded, because rejected items are dropped before anything is written down.
 
-And while preparing this piece I ran a review of the pipeline that found a live defect: the news blocklist matched substrings, so the term "crypto" had been silently discarding anything about cryptogenic stroke or cryptococcal infection. On a medical education site. It is fixed, and I have no way to know how much it cost me, for the reason in the previous paragraph.
-
-That is the honest summary of three months. The system works, it is watched more carefully than most things I have built, and it was still hiding a bug that any medical reader would have found embarrassing.
+That last gap is not hypothetical. While preparing this piece I ran a review that found the news blocklist matching substrings, so the term "crypto" had been quietly discarding anything about cryptogenic stroke or cryptococcal infection. On a medical education site. It is fixed, and by design there is no way to know what it cost.

@@ -8,7 +8,7 @@ Accounts of real projects built with artificial intelligence (AI) assistance, wr
 
 <img class="section-banner" src="../assets/section-worked-examples.svg" alt="">
 
-Where the [AI Literacy Pathway](../pathway/index.md) teaches the foundations and the [Playbooks](../playbooks/index.md) walk through a task, these walk through a whole project after the fact, including the parts that did not work. Each one is written by the person who did the work, about their own work, and each ends with what it does not show.
+Where the [AI Literacy Pathway](../pathway/index.md) teaches the foundations and the [Playbooks](../playbooks/index.md) walk through a task, these walk through a whole project after the fact, including the parts that did not work. Each one is written by the person who did the work, about their own work, and each is explicit about what it did not establish.
 
 They are here because the useful skill is turning out not to be generating things with AI. It is specifying a project, deciding what the system is not allowed to do, verifying output you cannot fully read, noticing when the model is confidently wrong, and knowing when to stop. Those are teachable, and they are easier to show than to describe.
 

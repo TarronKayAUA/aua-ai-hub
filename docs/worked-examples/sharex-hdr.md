@@ -72,7 +72,3 @@ That argument is not settled, and I do not think my experience settles it. But t
 - When you cannot review the code, review the boundaries instead. Scope, defaults, fallbacks, and what happens on failure are all decidable without reading a line.
 - Publish what you could not test, in the same place you publish the thing itself.
 - If you fork someone's project, take care not to spend their resources or their reputation. Turning off my updater was the single clearest decision in the project.
-
-## What this does not show
-
-My fork has no users that I know of: zero stars, zero forks, and no bug reports, so nothing here has been validated by anyone but me on two machines. The end-to-end capture path was never confirmed in the environment where it was built. I cannot demonstrate that any of it influenced anything. And the feature I wanted now exists in the official software, written by someone else, which is the best possible outcome and also means my version has no reason to exist.
