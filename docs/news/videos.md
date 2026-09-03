@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=X4FVEEegCbk" target="_blank" rel="noopener" title="Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know">
+  <img src="https://i1.ytimg.com/vi/X4FVEEegCbk/hqdefault.jpg" alt="Video: AI agent architecture: skills, MCP, RAG, and memory" loading="lazy">
+  <span class="video-card-title">AI agent architecture: skills, MCP, RAG, and memory</span>
+  <span class="video-card-meta">IBM Technology, September 3, 2026</span>
+  <span class="video-card-desc">Explains architectural components of AI agents: skills, model context protocol, retrieval-augmented generation, and memory systems.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=B3LXEW4Pc-w" target="_blank" rel="noopener" title="Claude Fable AI Is Much Stranger Than The Headlines Suggest">
+  <img src="https://i3.ytimg.com/vi/B3LXEW4Pc-w/hqdefault.jpg" alt="Video: Claude Fable 5.1 technical analysis" loading="lazy">
+  <span class="video-card-title">Claude Fable 5.1 technical analysis</span>
+  <span class="video-card-meta">Two Minute Papers, September 3, 2026</span>
+  <span class="video-card-desc">Technical analysis of Claude Fable 5.1 capabilities and behavior patterns beyond release announcements.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=eHsuG3bPiJ8" target="_blank" rel="noopener" title="Stop Paying for ElevenLabs? NEW #1 Realtime AI Voice Inworld TTS-2">
   <img src="https://i2.ytimg.com/vi/eHsuG3bPiJ8/hqdefault.jpg" alt="Video: Inworld TTS-2 real-time voice performance and comparison" loading="lazy">
   <span class="video-card-title">Inworld TTS-2 real-time voice performance and comparison</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>
   <span class="video-card-meta">IBM Technology, August 26, 2026</span>
   <span class="video-card-desc">IBM explores security vulnerabilities in GLM-5.3 and open-weight models, comparing their vulnerability discovery capabilities against proprietary systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=9Rx76Qz2XpM" target="_blank" rel="noopener" title="DeepSeek V4 Flash Vision Is INSANE, Tested With DeepSeek Harness!">
-  <img src="https://i2.ytimg.com/vi/9Rx76Qz2XpM/hqdefault.jpg" alt="Video: DeepSeek V4 Flash vision testing and capabilities" loading="lazy">
-  <span class="video-card-title">DeepSeek V4 Flash vision testing and capabilities</span>
-  <span class="video-card-meta">Bijan Bowen, August 24, 2026</span>
-  <span class="video-card-desc">Hands-on testing of DeepSeek V4 Flash vision capabilities including browser interaction and game comprehension with the DeepSeek Harness tool.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=zAe-sau06io" target="_blank" rel="noopener" title="How AI Coding Agents Understand Your Codebase &amp; Developer Tools">
-  <img src="https://i3.ytimg.com/vi/zAe-sau06io/hqdefault.jpg" alt="Video: AI coding agents and codebase understanding" loading="lazy">
-  <span class="video-card-title">AI coding agents and codebase understanding</span>
-  <span class="video-card-meta">IBM Technology, August 24, 2026</span>
-  <span class="video-card-desc">Explanation of how AI coding agents parse and work with codebases and developer tools for code generation and understanding.</span>
 </a>
 </div>
 

@@ -1,98 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable",
-   "title_hash": "7a10cec823a80e8b76140794bbaba6f1",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils",
-   "title_hash": "ebdf46105ee17b2a9bec8fef8d95ce8c",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "duplicate of candidate 1"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unif51/possible_evidence_of_literal_prompt_injection_by",
-   "title_hash": "23b9f44f4688f9a4a973b54d0a5d9740",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "forum post speculation without verified evidence"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42400421?fc=20260609215449&ff=20260705055257&v=2.20.0",
-   "title_hash": "0f72f96200e0009f7528404caf435db7",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "narrow domain application with limited relevance to AI practitioners"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42401625?fc=20260609215449&ff=20260705055257&v=2.20.0",
-   "title_hash": "be3031aa230f7469ef628283b5260127",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": true,
-   "title": "Precise ECG diagnosis and validation of educational utility for acute myocardial infarction using deep learning and explainable artificial intelligence",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-04T10:00:00+00:00",
-   "summary": "Deep learning system for electrocardiogram analysis demonstrates improved diagnostic accuracy for acute myocardial infarction with explainable outputs.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42401603?fc=20260609215449&ff=20260705055257&v=2.20.0",
-   "title_hash": "8ed05f3754e2c85d4085741cc41f6c16",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42400962?fc=20260609215449&ff=20260705055257&v=2.20.0",
-   "title_hash": "f3d2c3ac757d51433425131c52040fdb",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": true,
-   "title": "Familiar but unprepared: Artificial intelligence training needs in graduate medical education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-04T10:00:00+00:00",
-   "summary": "Survey finds graduate medical education trainees have high artificial intelligence exposure but lack formal training in the field.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42400960?fc=20260609215449&ff=20260705055257&v=2.20.0",
-   "title_hash": "8b48c6658237c41461fb4ce994248575",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": true,
-   "title": "Medical students' use of large language models: a national survey",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-04T10:00:00+00:00",
-   "summary": "National survey documents nearly universal large language model adoption among Canadian medical students with generally positive student perceptions.",
-   "category": "medical_education",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.freepressjournal.in/education/breaking-the-bird-barrier-scientist-decodes-zebra-finch-language",
-   "title_hash": "e26cd3da5f7bc76544c7b9400cb4b2bf",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=-z2QiGjtOzk",
-   "title_hash": "e2f7468ae13f652bd194c2127dfc63ca",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "title is rumor-framed and shock-phrased"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=qtzzN8w2TvU",
-   "title_hash": "f4e47000d8c4e80abd512bc1fc6a54cd",
-   "first_seen": "2026-07-05T09:52:57.058655+00:00",
-   "kept": false,
-   "reason": "title uses shock phrasing and gossip framing; content appears to be reaction recap rather than substantive explanation or hands-on test"
-  },
-  {
    "url": "https://dthain.github.io/books/compiler",
    "title_hash": "a336c77457c0df655106f2603b075277",
    "first_seen": "2026-07-05T16:18:01.774492+00:00",
@@ -32410,6 +32318,297 @@
    "category": "clinical_practice",
    "score": 4.0,
    "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
+   "title_hash": "cfefb924bef57d024169045e401b5188",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42687662?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "4a583a824d633516ac6413389a5ec938",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Vibe coding for ophthalmologists",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-03T10:00:00+00:00",
+   "summary": "Review examines vibe coding, conversational AI-assisted software development, through an ophthalmology-specific lens to identify where it adds value and limitations.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42687598?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "399066a109aaf95453f3c754df18ba1c",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Endoscopists' attitudes toward and experiences with artificial intelligence-assisted colonoscopy: a 3-year follow-up survey after the implementation of GI Genius",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-03T10:00:00+00:00",
+   "summary": "Three-year follow-up survey finds endoscopists generally perceive AI-assisted colonoscopy as improving quality, with greater experience associated with more positive attitudes.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42687470?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "30056e333da95d7363e6d9e899352164",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Will Artificial Intelligence Replace Me? Automation Susceptibility of Emergency Physician Tasks",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-03T10:00:00+00:00",
+   "summary": "Study finds routine cognitive tasks consume disproportionate emergency physician time and are immediate targets for AI workflow automation, with augmentation of complex tasks accelerating.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42687251?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "73c35960bb9a122c3584f97f641ab33d",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "off-topic institutional history"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation",
+   "title_hash": "61efbc54b46bc1cdcafcf22cf2c6375c",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "STAT+: FDA pilot offers generative AI medical devices a path to patients before they are authorized",
+   "source": "STAT News AI",
+   "published": "2026-09-03T08:30:00+00:00",
+   "summary": "The FDA's TEMPO pilot program allows generative AI medical devices from companies including Cadence and Limbic to reach patients before obtaining formal marketing authorization.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_1767433801-645x645.jpeg",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w5zdx4/my_rule_of_thumb_of_choosing_a_models",
+   "title_hash": "ac2845b6c4fdd2ef0de116defd6a97ea",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "personal blog post reporting anecdotal experience without instructive analysis"
+  },
+  {
+   "url": "https://icenet.blog/2026/09/03/competency-based-health-professions-education-as-a-quality-improvement-journey",
+   "title_hash": "9f8a9a365eee3ea6a7025af50147076b",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "off-topic education policy without AI focus"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/editors-note/2026/09/03/set-world-fire",
+   "title_hash": "a39722a9079f82ff05a11112dbefeec4",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "commentary without specific AI content or instructive analysis"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03190-4",
+   "title_hash": "48ff4cd550136c459483772023ee2aac",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "author correction notice with no substantive content accessible in summary"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03185-1",
+   "title_hash": "a14927ba70f35d76740f382848782c7e",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Differences in tone of AI and care team responses to patient messages by patient demographics",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-03T00:00:00+00:00",
+   "summary": "Study examines differences in tone between AI and human care team responses to patient messages across patient demographic groups.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04637-7",
+   "title_hash": "22fe431f923d16dd29707a8098565d0f",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "author correction notice with no substantive content accessible in summary"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41591-026-00045-z",
+   "title_hash": "94ff24d0fa0ba836b6310525accfff24",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "off-topic drug development without AI focus"
+  },
+  {
+   "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+   "title_hash": "235b58240d597a858b36f76036a33c7c",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "narrow technical tutorial without broad significance"
+  },
+  {
+   "url": "https://huggingface.co/blog/funes",
+   "title_hash": "8799cb7639f3c6c5f3ef6cff168c5c15",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "minor tooling announcement"
+  },
+  {
+   "url": "https://huggingface.co/blog/train-to-paint-with-code",
+   "title_hash": "6004d8fe16e1b89aad5cdb11962c7652",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "narrow technical demonstration without broad significance"
+  },
+  {
+   "url": "https://www.insidehighered.com/podcasts/key-podcast/2026/09/02/ep-211-paul-leblancs-optimistic-vision-higher-ed-ai-world",
+   "title_hash": "bef017542947257acc9c5c11456ff6db",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "off-topic higher education policy without AI content focus"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42686494?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "4e3566bd11a9e7fdb3a5ab51592e48bf",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence-Enabled Precision Education: A Novel Tool to Augment Radiology Residency Training",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "AI-enabled precision education identified pathology exposure gaps in radiology residents and enhanced training while maintaining clinical opportunities.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42686199?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "07aed1544786b25cc9a0b258231dd408",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "A Real-World Evaluation of Large Language Model-Generated Hospital Courses in Pediatrics",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "Real-world evaluation of LLM-generated pediatric hospital courses found common errors but low perceived harm, supporting use as clinician-reviewed starting drafts with institutional safeguards.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42686188?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "695fff7169bd9f1061bcaaf4930cbf39",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Performance of ChatGPT, Claude, and AMBOSS on the European Board of Urology In-Service Assessment and Alignment With the European Association of Urology 2025 Guidelines: Comparative Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "Comparative study of ChatGPT, Claude, and AMBOSS on European Board of Urology assessments shows high accuracy but differences in reasoning quality and guideline adherence, with ChatGPT performing best.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42684392?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "1442a61c34e08ae086af55907264a819",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "AI Use, Perceptions, and Perceived Impact Among Nursing Students: Cross-Sectional Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "Cross-sectional study finds nursing students widely use AI for learning and academic performance but shows limited impact on professional and interpersonal competencies, suggesting curriculum integration needed.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42684317?fc=20260609215449&ff=20260903085057&v=2.20.1",
+   "title_hash": "476ea922bd66de2b5829d58996bba93e",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Teaching the Atomic Sentence Method for Source-Verified, AI-Assisted Literature Synthesis to Clinical Health Care Professionals: Single-Cohort Feasibility and Acceptability Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-02T10:00:00+00:00",
+   "summary": "Workshop teaching the Atomic Sentence method for AI-assisted literature synthesis was feasible and well-accepted but requires controlled studies to verify reduction in citation hallucination.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=2uVH2WUYb5E",
+   "title_hash": "50fa4e3f26686815daaf123c1635f2fb",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "hype-driven title with limited substantive content on model capabilities"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=B3LXEW4Pc-w",
+   "title_hash": "29484eb28e77586a221b6aa0fcb5eac6",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Claude Fable AI Is Much Stranger Than The Headlines Suggest",
+   "source": "Two Minute Papers",
+   "published": "2026-09-03T08:23:37+00:00",
+   "summary": "Technical analysis of Claude Fable 5.1 capabilities and behavior patterns beyond release announcements.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/B3LXEW4Pc-w/hqdefault.jpg",
+   "display_title": "Claude Fable 5.1 technical analysis"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=tLlEzZUyGdM",
+   "title_hash": "30f542a2eead33720a970237dfed359b",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "product comparison with marketing elements, lower priority than established technical analyses"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XgM6FRO6Ql4",
+   "title_hash": "ee7221ba69a0cbfb118fddd241c65b7e",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "model comparison video with significant marketing and sponsorship content, lower substantive value than alternative coverage"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RmlP_nqOhsk",
+   "title_hash": "319347cde5b6888bc3c7447d5d954816",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "marketing-driven review with sponsorship, low educational substance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4AOCZuaYQ2U",
+   "title_hash": "6ffc055a39312ddcdcd2495eb4e32b62",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": false,
+   "reason": "product demo and customer story from independent channel, but primarily entertainment-focused application with marketing elements"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=X4FVEEegCbk",
+   "title_hash": "8a16e2d1ecd69de7a267e0a27945ba53",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know",
+   "source": "IBM Technology",
+   "published": "2026-09-03T11:00:15+00:00",
+   "summary": "Explains architectural components of AI agents: skills, model context protocol, retrieval-augmented generation, and memory systems.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/X4FVEEegCbk/hqdefault.jpg",
+   "display_title": "AI agent architecture: skills, MCP, RAG, and memory"
+  },
+  {
+   "url": "https://share.transistor.fm/s/ec79b4ac",
+   "title_hash": "88b20431677c839476ba77a2536bffb2",
+   "first_seen": "2026-09-03T12:50:57.543900+00:00",
+   "kept": true,
+   "title": "Less about Models; More about Architecture",
+   "source": "Practical AI",
+   "published": "2026-09-03T09:00:00+00:00",
+   "summary": "A Rackspace CAO discusses how enterprises should shift focus from model selection to systems architecture as AI moves from research to production deployment.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://img.transistorcdn.com/-0_OMgmp3xKvAJfdUTA1m0vONHyL0qOVlX1utg7d2G8/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81MjEz/Yzc5NWZiN2FjZDRk/NzVjYWQ2NDhkZjRj/YjNlZi5wbmc.jpg"
   }
  ],
  "digests": [
