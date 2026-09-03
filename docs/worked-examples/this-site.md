@@ -22,12 +22,161 @@ I am a physician and a medical educator. I cannot write the code that does any o
 
 | | |
 |---|---|
-| Commits, 9 June to 3 September 2026 | 651 |
+| Commits, 9 June to 3 September 2026 | 658 |
 | By an automated account | 419 |
-| By me | 232 |
+| By me | 239 |
 | Of those, carrying an AI co-author trailer | 180 |
 | Automated news refreshes | 396, about 61% of all history |
 | Test files in the repository | 0 |
+
+<figure class="figure">
+<svg viewBox="0 0 660 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daily commits from 9 June to 3 September 2026. A near-constant low band of automated commits on 86 of 87 days, with taller bursts of human commits on 42 days, the largest 33 in one day at launch.">
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">every commit to this site, by day</text>
+<line x1="44" y1="172" x2="646" y2="172" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<rect x="44.9" y="120.7" width="5.1" height="51.3" fill="var(--md-primary-fg-color)"/>
+<rect x="51.8" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="51.8" y="34.0" width="5.1" height="130.1" fill="var(--md-primary-fg-color)"/>
+<rect x="58.7" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="58.7" y="53.7" width="5.1" height="102.5" fill="var(--md-primary-fg-color)"/>
+<rect x="65.7" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="65.7" y="108.9" width="5.1" height="39.4" fill="var(--md-primary-fg-color)"/>
+<rect x="72.6" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="79.5" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="86.4" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="93.3" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="100.3" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="107.2" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="114.1" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="121.0" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="127.9" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="134.9" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="141.8" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="148.7" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="155.6" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="162.5" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="169.5" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="176.4" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="183.3" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="190.2" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="197.1" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="197.1" y="101.0" width="5.1" height="55.2" fill="var(--md-primary-fg-color)"/>
+<rect x="204.0" y="152.3" width="5.1" height="19.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="204.0" y="97.1" width="5.1" height="55.2" fill="var(--md-primary-fg-color)"/>
+<rect x="211.0" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="217.9" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="217.9" y="148.3" width="5.1" height="7.9" fill="var(--md-primary-fg-color)"/>
+<rect x="224.8" y="160.2" width="5.1" height="11.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="231.7" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="238.6" y="152.3" width="5.1" height="19.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="238.6" y="132.6" width="5.1" height="19.7" fill="var(--md-primary-fg-color)"/>
+<rect x="245.6" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="245.6" y="152.3" width="5.1" height="11.8" fill="var(--md-primary-fg-color)"/>
+<rect x="252.5" y="160.2" width="5.1" height="11.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="252.5" y="132.6" width="5.1" height="27.6" fill="var(--md-primary-fg-color)"/>
+<rect x="259.4" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="259.4" y="152.3" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="266.3" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="266.3" y="144.4" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="273.2" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="280.2" y="140.5" width="5.1" height="31.5" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="280.2" y="112.9" width="5.1" height="27.6" fill="var(--md-primary-fg-color)"/>
+<rect x="287.1" y="128.6" width="5.1" height="43.4" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="287.1" y="65.5" width="5.1" height="63.1" fill="var(--md-primary-fg-color)"/>
+<rect x="294.0" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="294.0" y="128.6" width="5.1" height="15.8" fill="var(--md-primary-fg-color)"/>
+<rect x="300.9" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="300.9" y="128.6" width="5.1" height="19.7" fill="var(--md-primary-fg-color)"/>
+<rect x="307.8" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="307.8" y="136.5" width="5.1" height="7.9" fill="var(--md-primary-fg-color)"/>
+<rect x="314.8" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="321.7" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="328.6" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="335.5" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="335.5" y="136.5" width="5.1" height="7.9" fill="var(--md-primary-fg-color)"/>
+<rect x="342.4" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="349.4" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="349.4" y="144.4" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="356.3" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="356.3" y="112.9" width="5.1" height="35.5" fill="var(--md-primary-fg-color)"/>
+<rect x="363.2" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="363.2" y="140.5" width="5.1" height="7.9" fill="var(--md-primary-fg-color)"/>
+<rect x="370.1" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="377.0" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="377.0" y="140.5" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="384.0" y="140.5" width="5.1" height="31.5" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="384.0" y="124.7" width="5.1" height="15.8" fill="var(--md-primary-fg-color)"/>
+<rect x="390.9" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="397.8" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="404.7" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="404.7" y="140.5" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="411.6" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="411.6" y="144.4" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="418.6" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="425.5" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="432.4" y="136.5" width="5.1" height="35.5" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="432.4" y="124.7" width="5.1" height="11.8" fill="var(--md-primary-fg-color)"/>
+<rect x="439.3" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="439.3" y="136.5" width="5.1" height="7.9" fill="var(--md-primary-fg-color)"/>
+<rect x="446.2" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="453.2" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="453.2" y="144.4" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="460.1" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="467.0" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="467.0" y="144.4" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="473.9" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="473.9" y="140.5" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="480.8" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="480.8" y="140.5" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="487.8" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="487.8" y="136.5" width="5.1" height="7.9" fill="var(--md-primary-fg-color)"/>
+<rect x="494.7" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="501.6" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="508.5" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="508.5" y="144.4" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="515.4" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="522.3" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="529.3" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="529.3" y="140.5" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="536.2" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="536.2" y="136.5" width="5.1" height="11.8" fill="var(--md-primary-fg-color)"/>
+<rect x="543.1" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="550.0" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="550.0" y="132.6" width="5.1" height="15.8" fill="var(--md-primary-fg-color)"/>
+<rect x="556.9" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="563.9" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="570.8" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="570.8" y="140.5" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="577.7" y="144.4" width="5.1" height="27.6" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="577.7" y="124.7" width="5.1" height="19.7" fill="var(--md-primary-fg-color)"/>
+<rect x="584.6" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="584.6" y="132.6" width="5.1" height="15.8" fill="var(--md-primary-fg-color)"/>
+<rect x="591.5" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="598.5" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="605.4" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="612.3" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="619.2" y="156.2" width="5.1" height="15.8" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="626.1" y="152.3" width="5.1" height="19.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="626.1" y="101.0" width="5.1" height="51.3" fill="var(--md-primary-fg-color)"/>
+<rect x="633.1" y="148.3" width="5.1" height="23.7" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="633.1" y="144.4" width="5.1" height="3.9" fill="var(--md-primary-fg-color)"/>
+<rect x="640.0" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<rect x="640.0" y="120.7" width="5.1" height="43.4" fill="var(--md-primary-fg-color)"/>
+<line x1="47.5" y1="172" x2="47.5" y2="176" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<text x="47.5" y="188" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">Jun</text>
+<line x1="199.7" y1="172" x2="199.7" y2="176" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<text x="199.7" y="188" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">Jul</text>
+<line x1="414.2" y1="172" x2="414.2" y2="176" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<text x="414.2" y="188" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">Aug</text>
+<line x1="628.7" y1="172" x2="628.7" y2="176" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
+<text x="628.7" y="188" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">Sep</text>
+<rect x="44" y="26" width="9" height="9" fill="var(--md-primary-fg-color)"/>
+<text x="58" y="34" font-size="10" fill="var(--md-typeset-color)">me, on 42 days</text>
+<rect x="152" y="26" width="9" height="9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
+<text x="166" y="34" font-size="10" fill="var(--md-typeset-color)">the pipeline, on 86 of 87</text>
+<text x="646" y="34" text-anchor="end" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">peak: 35 in one day</text>
+</svg>
+<figcaption>Three months of commits. The pipeline runs whether or not anyone is watching, which is the point of it and also why a silent failure can sit undisturbed for six weeks.</figcaption>
+</figure>
 
 Effectively all of the code was written by an AI assistant across a great many sessions. Around three fifths of the project's entire history is the pipeline feeding itself, which is either impressive or slightly absurd depending on your mood.
 
