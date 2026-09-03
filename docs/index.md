@@ -97,6 +97,30 @@ One reliable place for the American University of Antigua College of Medicine (A
 
 </div>
 
+## Worked examples
+
+How this kind of work actually goes, written up after the fact by the person who did it, including the parts that went wrong. Software and data projects, not clinical cases.
+
+<div class="grid cards hp-cards" markdown>
+
+- :material-notebook-outline:{ .lg .middle } __Changing this site's narration voice__
+
+    ---
+
+    Measuring before deciding, a licensing trap in open-weights models, and an automated review that looked like it passed because it never ran.
+
+    [Read it](worked-examples/narration-engines.md)
+
+- :material-dna:{ .lg .middle } __Checking a headline against my own genome__
+
+    ---
+
+    A widely reported genetics finding, tested against the author's own data, and the arithmetic that declined the flattering answer.
+
+    [Read it](worked-examples/genome.md)
+
+</div>
+
 ## Latest items
 
 --8<-- "includes/latest.md"

@@ -126,6 +126,10 @@ nav:
           - Your Score Reports: playbooks/score-reports.md
           - Residency Application: playbooks/residency-application.md
           - AI-Generated Images: playbooks/ai-images.md
+  - Worked Examples:
+      - worked-examples/index.md
+      - Changing the Site's Narration Voice: worked-examples/narration-engines.md
+      - Checking a Headline Against My Own Genome: worked-examples/genome.md
   - For Faculty & Staff: faculty.md
   - For Students: students.md
   - News & Events:
