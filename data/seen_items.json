@@ -1,26 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1unyvnz/longcat_20_16t_48b_active_weights_are_now_open",
-   "title_hash": "e46899a7938e2dcb6b8146f981a45c65",
-   "first_seen": "2026-07-05T20:33:37.156548+00:00",
-   "kept": true,
-   "title": "longcat 2.0 (1.6T, ~48B active) weights are now open under MIT license",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-05T10:35:23+00:00",
-   "summary": "Longcat 2.0, a 48-billion-parameter open-weights model, is released under MIT license.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/Tl4T00m03mXi9dnysuPMT3ZoHlKwgeMAyvE7uTJqM4o.png?width=640&crop=smart&auto=webp&s=13c43b98a88d05ab28ba5000aec6daa339a442bf"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42402141?fc=20260609215449&ff=20260705163337&v=2.20.0",
-   "title_hash": "eb51062ce28b03ff0957f46544aa8acf",
-   "first_seen": "2026-07-05T20:33:37.156548+00:00",
-   "kept": false,
-   "reason": "abstract fragment; full peer-reviewed findings not evaluable from provided text"
-  },
-  {
    "url": "https://huggingface.co/blog/lerobot-release-v060",
    "title_hash": "f6e8d6866ab6cf0450238f6d4cb79b48",
    "first_seen": "2026-07-06T14:09:02.489160+00:00",
@@ -32781,6 +32761,188 @@
    "first_seen": "2026-09-03T19:18:32.343983+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra",
+   "title_hash": "98ad7468b365321422b01619ef5a7115",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "GPT‑6 Astra",
+   "source": "Simon Willison's weblog",
+   "published": "2026-09-03T20:18:41+00:00",
+   "summary": "OpenAI released GPT-6 Astra to limited organizations initially, rolling out to ChatGPT Plus, Pro, Business, and Enterprise users and the API at Claude Opus pricing.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e96673",
+   "title_hash": "cbf7f43effc6373ff8ef4b662e5f47b6",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "Estimating the Prevalence of Generative AI Use in Medical School Application Essays: Cross-Sectional Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-03T20:00:34+00:00",
+   "summary": "Cross-sectional study estimating generative AI use in medical school application essays across cohorts spanning the rollout period from November 2022 onward.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e93923",
+   "title_hash": "ff1e1828764b915c2ddf411bc9ed0b65",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "narrow domain application; administrative data methodology without direct AI significance"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e95039",
+   "title_hash": "1d7f72b00c26e28ce2d373106c898720",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "Scaffolded AI-Supported Problem-Based Learning for Medical Interns: Exploratory Retrospectively Registered Randomized Controlled Evaluation With a Voluntary Feasibility Follow-Up",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-03T20:00:17+00:00",
+   "summary": "Randomized controlled trial of a multiagent AI system designed to scaffold problem-based learning for medical interns, comparing facilitated and unfacilitated AI-supported approaches.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6aw2a/apparently_chatgpt_claude_and_grok_were_down",
+   "title_hash": "60573866da5900c8b6566524cb646773",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "community meta-discussion; no substantive technical content"
+  },
+  {
+   "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot",
+   "title_hash": "bf62825673b91be743015746cc940989",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "personal project report; off-topic for this audience (game porting, not medical or educational AI)"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w68rj6/introducing_k2_horizon_frontier_performance",
+   "title_hash": "70bbf69bb9853999deb64326a88cdb3c",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "forum discussion stub with no substantive summary; insufficient content to evaluate"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42690629?fc=20260609215449&ff=20260903183658&v=2.20.1",
+   "title_hash": "afdd10ec8603c34e438d5047a14e13d5",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "The Role of Artificial Intelligence in Teaching Ophthalmology Skills: A Systematic Review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-03T10:00:00+00:00",
+   "summary": "Systematic review of AI-enabled interventions in ophthalmology training, finding promise for diagnostic learning and feedback but noting limited evidence from small heterogeneous studies.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42690594?fc=20260609215449&ff=20260903183658&v=2.20.1",
+   "title_hash": "6c954c2dd3c5bf0a5c5466840ce36816",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence-Based Simulation to Improve Code Status Discussions Among Internal Medicine Residents: A Pilot Randomized Trial",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-03T10:00:00+00:00",
+   "summary": "Pilot randomized trial showing feasibility and promise of AI-based simulation for training internal medicine residents in code status discussion skills.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42689738?fc=20260609215449&ff=20260903183658&v=2.20.1",
+   "title_hash": "202d7eda28e23f59630bce681cb13177",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "medical conference summary; no direct AI content relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03175-3",
+   "title_hash": "e35be4524a8c09a3bd31ca04a5aed010",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "Explicit chain of diagnosis for CMR semantic interpretation via large reasoning model",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-03T00:00:00+00:00",
+   "summary": "Study of a large reasoning model for cardiac magnetic resonance interpretation using explicit diagnostic chain of reasoning.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=9xa7RTC5pzo",
+   "title_hash": "31131174e0171a66e72f1a2289bc40c5",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "reaction video from independent channel with no substantive technical analysis or demonstration"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=xdXLzFzxA9Q",
+   "title_hash": "5a79b74b38ecd25803dc2f8a70c2f14a",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "duplicate of kept candidate 4; same subject from independent channel without independent analysis or testing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gyArDlsWHQM",
+   "title_hash": "1a23521b7a5ae3d66ec2ae9ee9bb5018",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "speculative title and promotional content; the video appears to be sponsored by Abacus AI and frames opinion as fact"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=3rSFxrKAb3o",
+   "title_hash": "f6422130c354c8f99f30b5b778bf33a7",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": false,
+   "reason": "reaction and news roundup video from non-specialized channel with no specific educational or demonstration content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=-TTyyY3VWh8",
+   "title_hash": "f1b287a98df99151dc16cd1f6f3fb29e",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "First impressions of GPT-6 Astra from developers",
+   "source": "OpenAI",
+   "published": "2026-09-03T21:20:49+00:00",
+   "summary": "Developers demonstrate practical applications of GPT-6 Astra including 3D visualization and other projects.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/-TTyyY3VWh8/hqdefault.jpg",
+   "display_title": "Developer applications of GPT-6 Astra"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1QNsdr-Qx_I",
+   "title_hash": "96e7aa6f1f1021a61a5e094a9e7f42c6",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "Introducing GPT-6 Astra: the most intelligent and aligned model in the world.",
+   "source": "OpenAI",
+   "published": "2026-09-03T19:40:03+00:00",
+   "summary": "OpenAI announces GPT-6 Astra with benchmarks on long-context computer-use tasks and multimodal capabilities.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/1QNsdr-Qx_I/hqdefault.jpg",
+   "display_title": "GPT-6 Astra announcement and capabilities"
+  },
+  {
+   "url": "https://aipodcast.education/inside-oxfords-ai-competency-centre-rethinking-assessment-and-authorship",
+   "title_hash": "6bc005c84ec4c1741679bd8e9bd14d22",
+   "first_seen": "2026-09-03T22:36:58.470803+00:00",
+   "kept": true,
+   "title": "Inside Oxford's AI Competency Centre: Rethinking Assessment and Authorship",
+   "source": "AI in Education Podcast",
+   "published": "2026-09-03T20:41:00+00:00",
+   "summary": "Oxford's AI Consultant explores how universities should rethink authorship, assessment, and academic integrity as generative AI tools become routine in academic work.",
+   "category": "podcasts",
+   "score": 4.0,
+   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
   }
  ],
  "digests": [

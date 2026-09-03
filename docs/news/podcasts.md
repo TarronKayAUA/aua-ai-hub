@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/inside-oxfords-ai-competency-centre-rethinking-assessment-and-authorship" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Inside Oxford&#x27;s AI Competency Centre: Rethinking Assessment and Authorship" loading="lazy">
+  <span class="video-card-title">Inside Oxford&#x27;s AI Competency Centre: Rethinking Assessment and Authorship</span>
+  <span class="video-card-meta">AI in Education Podcast, September 3, 2026</span>
+  <span class="video-card-desc">Oxford&#x27;s AI Consultant explores how universities should rethink authorship, assessment, and academic integrity as generative AI tools become routine in academic work.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/ec79b4ac" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/-0_OMgmp3xKvAJfdUTA1m0vONHyL0qOVlX1utg7d2G8/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81MjEz/Yzc5NWZiN2FjZDRk/NzVjYWQ2NDhkZjRj/YjNlZi5wbmc.jpg" alt="Podcast: Less about Models; More about Architecture" loading="lazy">
   <span class="video-card-title">Less about Models; More about Architecture</span>

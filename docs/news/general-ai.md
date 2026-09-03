@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 3, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 3, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/3/gpt6-astra">GPT‑6 Astra</a>
+    <p class="news-card-summary">OpenAI released GPT-6 Astra to limited organizations initially, rolling out to ChatGPT Plus, Pro, Business, and Enterprise users and the API at Claude Opus pricing.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 3, 2026</span></div>
@@ -127,13 +134,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Anthropic released Claude Fable 5.1, advancing coding and scientific reasoning with 52.6% score on Terminal-Bench-Science 0.1.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/fable-5.1-max.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference">The efficient frontier of LLM inference</a>
-    <p class="news-card-summary">Analysis of trade-offs between speed, cost, and quality in large language model inference optimization strategies.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.datocms-assets.com/104802/1788302073-efficient-frontier-image3.png?auto=compress%2Cformat&amp;fit=crop&amp;h=630&amp;q=75&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

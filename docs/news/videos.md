@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=-TTyyY3VWh8" target="_blank" rel="noopener" title="First impressions of GPT-6 Astra from developers">
+  <img src="https://i2.ytimg.com/vi/-TTyyY3VWh8/hqdefault.jpg" alt="Video: Developer applications of GPT-6 Astra" loading="lazy">
+  <span class="video-card-title">Developer applications of GPT-6 Astra</span>
+  <span class="video-card-meta">OpenAI, September 3, 2026</span>
+  <span class="video-card-desc">Developers demonstrate practical applications of GPT-6 Astra including 3D visualization and other projects.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=1QNsdr-Qx_I" target="_blank" rel="noopener" title="Introducing GPT-6 Astra: the most intelligent and aligned model in the world.">
+  <img src="https://i2.ytimg.com/vi/1QNsdr-Qx_I/hqdefault.jpg" alt="Video: GPT-6 Astra announcement and capabilities" loading="lazy">
+  <span class="video-card-title">GPT-6 Astra announcement and capabilities</span>
+  <span class="video-card-meta">OpenAI, September 3, 2026</span>
+  <span class="video-card-desc">OpenAI announces GPT-6 Astra with benchmarks on long-context computer-use tasks and multimodal capabilities.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=X4FVEEegCbk" target="_blank" rel="noopener" title="Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know">
   <img src="https://i1.ytimg.com/vi/X4FVEEegCbk/hqdefault.jpg" alt="Video: AI agent architecture: skills, MCP, RAG, and memory" loading="lazy">
   <span class="video-card-title">AI agent architecture: skills, MCP, RAG, and memory</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">The mathematics of AI uncertainty</span>
   <span class="video-card-meta">Google DeepMind, August 26, 2026</span>
   <span class="video-card-desc">Google DeepMind seminar on uncertainty quantification in machine learning and how to measure model confidence.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=L9mMfAFwbl4" target="_blank" rel="noopener" title="DeepSeek’s New AI System Shouldn’t Be Possible">
-  <img src="https://i1.ytimg.com/vi/L9mMfAFwbl4/hqdefault.jpg" alt="Video: DeepSeek reasoning system architecture and performance" loading="lazy">
-  <span class="video-card-title">DeepSeek reasoning system architecture and performance</span>
-  <span class="video-card-meta">Two Minute Papers, August 26, 2026</span>
-  <span class="video-card-desc">Technical analysis of DeepSeek&#x27;s new reasoning system covering its architecture and performance against other models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=nWgvobB4hcw" target="_blank" rel="noopener" title="Who’s afraid of an open-weight model? GLM, context bombing and post-Black Hat attacks">
-  <img src="https://i3.ytimg.com/vi/nWgvobB4hcw/hqdefault.jpg" alt="Video: Security vulnerabilities in GLM and open-weight models" loading="lazy">
-  <span class="video-card-title">Security vulnerabilities in GLM and open-weight models</span>
-  <span class="video-card-meta">IBM Technology, August 26, 2026</span>
-  <span class="video-card-desc">IBM explores security vulnerabilities in GLM-5.3 and open-weight models, comparing their vulnerability discovery capabilities against proprietary systems.</span>
 </a>
 </div>
 
