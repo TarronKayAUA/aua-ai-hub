@@ -670,7 +670,8 @@ podcast_feeds:
 keyword_block:
   - sponsored
   - webinar replay
-  - crypto
+  - cryptocurrency   # not "crypto": whole-word or not, that is the CDC's
+                     # informal name for cryptosporidiosis (2026-09-03)
   - giveaway
   - promo code
 

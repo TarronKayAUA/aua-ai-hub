@@ -2303,6 +2303,38 @@ def read_site_url() -> str:
     raise ValueError("site_url not found in mkdocs.yml")
 
 
+# Control phrases that must never be blocked. A blocked item is dropped before
+# the ledger append, so a wrong block leaves no record and is unrecoverable;
+# a wrong pass still faces the curation model and the owner. The filter must
+# therefore err toward passing, and this list makes that failure loud.
+BLOCK_CONTROLS = [
+    "Machine learning for cryptogenic stroke detection",
+    "Cryptococcal meningitis imaging with AI",
+    "Cryptosporidiosis outbreak prediction model",
+    "Cryptorchidism repair outcomes",
+    "An industry-sponsored trial of AI triage",
+    "NIH-sponsored study of clinical decision support",
+]
+
+
+def compile_block_terms(terms: list[str]) -> list[re.Pattern]:
+    """Whole-word block patterns, hyphen aware.
+
+    Until 2026-09-03 this was a naive substring test, so the term "crypto"
+    silently blocked "cryptogenic stroke" and "Cryptococcal meningitis" on a
+    medical education site. Hyphens count as word characters here so that
+    "industry-sponsored" does not match "sponsored"."""
+    pats = [re.compile(rf"(?<![\w-]){re.escape(t)}(?![\w-])", re.I) for t in terms]
+    for control in BLOCK_CONTROLS:
+        hit = next((p.pattern for p in pats if p.search(control)), None)
+        if hit:
+            raise AssertionError(
+                f"keyword_block pattern {hit} blocks the control phrase "
+                f"{control!r}; a blocked item leaves no record, so this must "
+                f"be corrected in feeds.yaml before the pipeline runs")
+    return pats
+
+
 def main() -> int:
     argp = argparse.ArgumentParser(description=__doc__)
     argp.add_argument("--dry-run", action="store_true", help="no writes")
@@ -2320,7 +2352,7 @@ def main() -> int:
     lookback_days = args.since_days or defaults["lookback_days"]
     timeout = defaults["request_timeout_seconds"]
     max_items = defaults["max_items_per_feed"]
-    block_terms = [t.lower() for t in config["keyword_block"]]
+    block_terms = compile_block_terms(config["keyword_block"])
     boost_terms = [t.lower() for t in config["keyword_boost"]]
     categories = {k: v["label"] for k, v in config["categories"].items()}
 
@@ -2424,8 +2456,8 @@ def main() -> int:
     after_window = len(in_window)
 
     def blocked(item: Item) -> bool:
-        text = f"{item.title} {item.summary}".lower()
-        return any(term in text for term in block_terms)
+        text = f"{item.title} {item.summary}"
+        return any(pat.search(text) for pat in block_terms)
 
     unblocked = []
     for item in in_window:
