@@ -1,10 +1,16 @@
 """Generate narration audio for the pathway modules and the news briefs.
 
 Usage:
-    python scripts/narrate.py            # generate whatever is missing or stale
-    python scripts/narrate.py --dry-run  # report targets and staleness, no model
-    python scripts/narrate.py --only static | news
-    python scripts/narrate.py --check    # exit 1 if any committed static audio is stale
+    python scripts/narrate.py --only static   # the usual local run
+    python scripts/narrate.py --dry-run       # report targets and staleness, no model
+    python scripts/narrate.py --check         # exit 1 if committed static audio is stale
+    python scripts/narrate.py --voices        # list metered voices, generates nothing
+    python scripts/narrate.py --page SLUG     # one page, to trial a voice cheaply
+    python scripts/narrate.py --promote-each  # keep finished pages when a sibling fails
+
+A bare run covers both classes and so needs the Kokoro extras installed as
+well as a metered key. Locally you almost always want --only static; CI runs
+--only news.
 
 Two engines, configured in the feeds.yaml narration block, never here:
 
@@ -37,7 +43,9 @@ pages that used it. Metered spend is budgeted against the provider's free
 allowance before a run starts, and a run that would exceed it stops
 before spending anything. Static pages are promoted together: if any one
 of them fails, none are replaced, so a page set can never end up split
-across two voices.
+across two voices. --promote-each overrides that for a voice migration,
+where the set is already mixed and holding pages back would only mean
+paying twice for work an interrupted run threw away.
 Verification counts print at the end and the script exits non-zero if
 any target failed (CLAUDE.md working rule 2).
 """
@@ -225,23 +233,44 @@ class SpeechifyEngine:
                 f"{want!r}. Pick a voice that offers {want}, or set "
                 f"narration.static.model to one this voice has.")
 
+    def _post(self, body: dict, attempts: int = 4):
+        """Retry transient failures. A page is dozens of calls and a whole
+        run is hundreds, so at this length a blip is expected rather than
+        exceptional, and a failure here discards a page that was already
+        billed for. 4xx other than 429 will not improve on a retry, so they
+        raise immediately."""
+        delay, last = 2.0, None
+        for attempt in range(attempts):
+            try:
+                resp = self._requests.post(
+                    self._url,
+                    headers={"Authorization": f"Bearer {self._key}",
+                             "Content-Type": "application/json"},
+                    json=body, timeout=180)
+            except Exception as exc:  # noqa: BLE001  (connection, timeout, DNS)
+                last = f"{type(exc).__name__}: {exc}"
+            else:
+                if resp.status_code == 200:
+                    return resp
+                detail = f"HTTP {resp.status_code}: {resp.text[:300]}"
+                if resp.status_code < 500 and resp.status_code != 429:
+                    raise RuntimeError(f"speechify {detail}")
+                last = detail
+            if attempt < attempts - 1:
+                print(f"    retrying after {last} (attempt {attempt + 2}/{attempts})")
+                time.sleep(delay)
+                delay *= 2
+        raise RuntimeError(f"speechify failed after {attempts} attempts: {last}")
+
     def create(self, text: str):
         import numpy as np
         import soundfile as sf
-        resp = self._requests.post(
-            self._url,
-            headers={"Authorization": f"Bearer {self._key}",
-                     "Content-Type": "application/json"},
-            json={"input": text,
-                  "voice_id": self._cfg["voice"],
-                  # simba-3.0 is the API default; 3.2 has to be asked for.
-                  "model": self._cfg.get("model", "simba-3.2"),
-                  "audio_format": "wav",
-                  "language": self._cfg.get("language", "en-US")},
-            timeout=180)
-        if resp.status_code != 200:
-            raise RuntimeError(
-                f"speechify HTTP {resp.status_code}: {resp.text[:300]}")
+        resp = self._post({"input": text,
+                           "voice_id": self._cfg["voice"],
+                           # simba-3.0 is the API default; 3.2 must be asked for.
+                           "model": self._cfg.get("model", "simba-3.2"),
+                           "audio_format": "wav",
+                           "language": self._cfg.get("language", "en-US")})
         payload = resp.json()
         samples, sr = sf.read(
             io.BytesIO(base64.b64decode(payload["audio_data"])), dtype="float32")
@@ -264,10 +293,17 @@ def build_engine(cls: str):
     return ENGINES[name](cfg)
 
 
+_VOICE_CACHE: list | None = None
+
+
 def fetch_voices() -> list[dict]:
-    """The whole catalogue. It is cursor-paginated at 50 a page and runs to
-    around a thousand entries, so a single unpaged request silently returns
-    the first fifty alphabetically and hides the voice you wanted."""
+    """The whole catalogue, fetched once per process. It is cursor-paginated
+    at 50 a page and runs to around a thousand entries, so a single unpaged
+    request silently returns the first fifty alphabetically and hides the
+    voice you wanted."""
+    global _VOICE_CACHE
+    if _VOICE_CACHE is not None:
+        return _VOICE_CACHE
     import requests
     cfg = engine_config("static")
     hdr = {"Authorization": f"Bearer {speechify_key()}"}
@@ -285,6 +321,7 @@ def fetch_voices() -> list[dict]:
         pages += 1
         if not body.get("has_more") or not cursor or pages > 50:
             break
+    _VOICE_CACHE = out
     return out
 
 
@@ -335,24 +372,42 @@ def _month() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m")
 
 
-def load_spend() -> dict:
-    if SPEND_PATH.is_file():
-        try:
-            return json.loads(SPEND_PATH.read_text(encoding="utf-8"))
-        except ValueError:
-            print(f"narrate: {SPEND_PATH.name} is unreadable; "
-                  "treating this month as unspent")
-    return {}
+def load_spend() -> dict | None:
+    """The ledger, or None if it could not be read.
+
+    None is not {}. An unreadable ledger means this month's spend is
+    UNKNOWN, and treating unknown as zero would let the guard wave through a
+    run that walks straight into the provider's hard cap. The caller must
+    refuse rather than guess."""
+    if not SPEND_PATH.is_file():
+        return {}
+    try:
+        data = json.loads(SPEND_PATH.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return None
+    return data if isinstance(data, dict) else None
 
 
 def record_spend(engine: str, chars: int) -> None:
+    """Written atomically. A run interrupted mid-write (a closed laptop
+    during a long generation is the expected case) would otherwise leave
+    truncated JSON, which is exactly the state load_spend refuses to
+    interpret."""
     if not chars:
         return
     spend = load_spend()
+    if spend is None:
+        # Unreadable: do not silently start a new ledger over the top of one
+        # whose contents we could not read.
+        print(f"narrate: {SPEND_PATH.name} unreadable, not recording "
+              f"{chars:,} characters; reconcile against the provider dashboard")
+        return
     spend.setdefault(engine, {})
     spend[engine][_month()] = spend[engine].get(_month(), 0) + chars
-    SPEND_PATH.write_text(json.dumps(spend, indent=2, sort_keys=True) + "\n",
-                          encoding="utf-8")
+    tmp = SPEND_PATH.with_name(SPEND_PATH.name + ".part")
+    tmp.write_text(json.dumps(spend, indent=2, sort_keys=True) + "\n",
+                   encoding="utf-8")
+    tmp.replace(SPEND_PATH)
 
 
 def budget_report(engine: str, planned: int) -> tuple[bool, str]:
@@ -363,7 +418,13 @@ def budget_report(engine: str, planned: int) -> tuple[bool, str]:
     budget = (narration_config().get("monthly_char_budget") or {}).get(engine)
     if not budget:
         return True, f"{engine}: no monthly budget configured"
-    spent = load_spend().get(engine, {}).get(_month(), 0)
+    spend = load_spend()
+    if spend is None:
+        return False, (f"{engine}: {SPEND_PATH.name} is unreadable, so this "
+                       f"month's spend is unknown. Refusing rather than "
+                       f"assuming zero. Check the provider dashboard, then "
+                       f"restore or reset the ledger by hand.")
+    spent = spend.get(engine, {}).get(_month(), 0)
     left = budget - spent
     ok = planned <= left
     return ok, (f"{engine}: {planned:,} to send, {spent:,} spent this month, "
@@ -371,7 +432,9 @@ def budget_report(engine: str, planned: int) -> tuple[bool, str]:
                 + ("" if ok else "   OVER BUDGET"))
 
 
-def synthesize(engine, text: str, out: Path) -> tuple[float, int]:
+def synthesize(engine, text: str, out: Path, on_billed=None) -> tuple[float, int]:
+    """on_billed is called with each API call's billable characters as they
+    are incurred, so an interrupted page still leaves an accurate ledger."""
     import numpy as np
     import soundfile as sf
     chunks, billed, sr = [], 0, SAMPLE_RATE
@@ -379,6 +442,8 @@ def synthesize(engine, text: str, out: Path) -> tuple[float, int]:
         if not re.search(r"[A-Za-z0-9]", para):
             continue
         audio, sr, chars = engine.create(para)
+        if chars and on_billed:
+            on_billed(chars)
         chunks.append(audio)
         chunks.append(np.zeros(int(sr * PARAGRAPH_PAUSE_S), dtype=np.float32))
         billed += chars
@@ -483,8 +548,9 @@ def main() -> int:
         try:
             if cls not in engines:
                 engines[cls] = build_engine(cls)
-            secs, billed = synthesize(engines[cls], spoken, tmp)
-            record_spend(engine_config(cls)["engine"], billed)
+            ename = engine_config(cls)["engine"]
+            secs, billed = synthesize(engines[cls], spoken, tmp,
+                                      on_billed=lambda c, e=ename: record_spend(e, c))
             made.append((slug, cls, tmp, h, secs, billed))
         except Exception as exc:  # noqa: BLE001
             failed[cls] += 1

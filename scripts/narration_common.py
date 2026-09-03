@@ -242,9 +242,12 @@ def static_audio_current(rel: str) -> bool:
     slug = page_slug(rel)
     if not audio_exists(slug):
         return False
+    # Only file-level errors mean "no audio yet". A malformed narration block
+    # raises AssertionError, and swallowing that would silently ship a site
+    # with no players anywhere rather than failing the strict build.
     try:
         return sidecar_matches(slug, content_hash("static", spoken_static(rel)))
-    except (OSError, AssertionError):
+    except OSError:
         return False
 
 
