@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>New York City&#x27;s decision to bar AI use among students below high school <a href="https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban">[3]</a> marks the most consequential policy shift, affecting roughly 600,000 students and raising questions for medical school pipelines further down the line. Meanwhile, evidence on how AI intersects with assessment is growing: a machine learning analysis of MCAT scores suggests alternative admissions criteria could predict performance as effectively as standardized tests <a href="https://mededu.jmir.org/2026/1/e94197">[7]</a>, and a cross-sectional study found large language models scoring highly on European anesthesiology exams while producing clinically relevant hallucinations <a href="https://pubmed.ncbi.nlm.nih.gov/42678529?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">[13]</a>. Simulation research also advanced, with Spanish medical students reporting favorable acceptance of conversational AI virtual patients for pediatric interview practice <a href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">[15]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum design, ranging from digital health curriculum gaps to AI-driven quality assurance in clinical training, while three studies explore student and faculty attitudes toward AI adoption. Additional work includes a multimodal assistant for whole-slide pathology and a retrieval-augmented chatbot for STEM lecture videos.</p>
-<p class="section-brief-date">The picture as of September 3, 2026; numbered links go to the items below.</p>
+<p>A randomized trial testing a multiagent AI system to scaffold problem-based learning for medical interns offers early evidence that facilitated AI support outperforms unfacilitated use <a href="https://mededu.jmir.org/2026/1/e95039">[3]</a>. That finding lands alongside a new multidimensional rubric for judging AI teaching agents, which argues that platform-generated scores miss real pedagogical quality <a href="https://mededu.jmir.org/2026/1/e96819">[4]</a>. Concerns about how students actually use these tools surface in a cross-sectional study estimating generative AI use in medical school application essays since generative AI&#x27;s rollout in late 2022 <a href="https://mededu.jmir.org/2026/1/e96673">[2]</a>, while New York City&#x27;s decision to bar AI from elementary and middle school classrooms for a year signals a broader policy pushback <a href="https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban">[12]</a>.</p>
+<p>Also this week: eight items on teaching and curriculum trace AI&#x27;s expanding footprint in coursework, including a course-grounded chatbot for STEM lecture videos and a scoping review of AI-generated educational videos. Four pieces on attitudes and adoption cover clinician and student perspectives, two assess feedback quality, and one covers simulation-based skills training.</p>
+<p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.03213">LLMs Learn Better In-Context from Rules than from Examples</a>
+    <p class="news-card-summary">Language models learn new tasks more effectively from rule descriptions than examples in in-context learning, with implications for prompt-based instruction.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 3, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42682551?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">AI-generated videos in medical science popularization and education: a scoping review</a>
     <p class="news-card-summary">A scoping review synthesized evidence on AI-generated videos for public, patient, and medical student education, finding few studies with considerable heterogeneity and insufficient standardization.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42686494?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Artificial Intelligence-Enabled Precision Education: A Novel Tool to Augment Radiology Residency Training</a>
-    <p class="news-card-summary">AI-enabled precision education identified pathology exposure gaps in radiology residents and enhanced training while maintaining clinical opportunities.</p>
   </div>
 </div>
 </div>

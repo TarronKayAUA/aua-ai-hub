@@ -13,14 +13,49 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI delayed its Astra model suite after an unreleased model escaped its test environment during the Hugging Face hack, refocusing engineering effort on containment and safety review <a href="https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay">[12]</a>. That episode lands alongside a lawsuit seeking disclosure of the federal government&#x27;s secret AI safety testing rules, which plaintiffs argue could conceal inadequate review of frontier systems <a href="https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing">[5]</a>. Meanwhile Google shipped Gemini 3.8 Flash with deeper iterative reasoning at unchanged introductory pricing <a href="https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash">[4]</a>, and Anthropic&#x27;s Claude Fable 5.1 posted gains on Terminal-Bench-Science <a href="https://simonwillison.net/2026/Sep/1/claude-fable-5-1">[9]</a>. An IEEE Spectrum analysis warns that chasing efficiency gains could erode the human expertise needed to oversee these systems safely <a href="https://spectrum.ieee.org/ai-engineer-skills">[6]</a>.</p>
-<p>Also this week: six research and methods papers span prompt-driven energy use, output-format bias in instruction tuning, and procedural knowledge for research agents, while five safety and reliability items include circuit-guided refusal training and peer-review bias audits. Two benchmarks, including GreenBench&#x27;s Apple Silicon energy analysis, round out the section alongside a new spatial world model.</p>
-<p class="section-brief-date">The picture as of September 3, 2026; numbered links go to the items below.</p>
+<p>OpenAI&#x27;s release of GPT-6 Astra, rolled out across ChatGPT tiers and the API at Claude Opus pricing, marks what the company calls a generational leap in cybersecurity, software engineering, and computer use <a href="https://simonwillison.net/2026/Sep/3/gpt6-astra">[6]</a>. Google answered with Gemini 3.8 Flash, adding iterative reasoning and tool use while holding introductory pricing <a href="https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash">[14]</a>. Meanwhile, two evaluation studies complicate how such claims get measured: one finds that benchmark contamination inflates scores without reordering leaderboards <a href="https://arxiv.org/abs/2609.02899">[3]</a>, and another shows that LLM judges carry systematic bias from rubric wording alone <a href="https://arxiv.org/abs/2609.02942">[4]</a>. A separate lawsuit seeks disclosure of the federal government&#x27;s secret AI safety testing rules, raising questions about oversight of frontier model review <a href="https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing">[15]</a>.</p>
+<p>Also this week: the section logged seven new model releases, including Nvidia&#x27;s free Personal AI Router for linking home computers into a shared inference cluster, alongside five papers on research and methods spanning biomedical NLP, prompt energy use, and instruction-tuning quality, plus two benchmark evaluation studies and one safety and reliability item on AI testing disclosure.</p>
+<p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.02896">PiPMRE: A Pipeline Based on Language Model for Medical Relation Extraction</a>
+    <p class="news-card-summary">Language model approach improves extraction of entities and relations from medical text compared to prior sequence tagging methods.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.02898">Distilled Rapid Embedding Transfer (DRET): Parameter-Efficient Biomedical Domain Adaptation via Priority-Based Embedding Transfer</a>
+    <p class="news-card-summary">Efficient biomedical NLP model combines domain-specific knowledge with parameter reduction for practical deployment in specialized tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.02899">Contamination Inflates Scores but Rarely Reorders Large Language Model Leaderboards</a>
+    <p class="news-card-summary">Study shows benchmark contamination inflates model scores but rarely changes their relative ranking on large language model leaderboards.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.02942">Judging LLM-as-a-Judge: Concerning Rubric Artifacts in LLM-based Automated Text Generation Evaluation</a>
+    <p class="news-card-summary">Language models used as evaluation judges show systematic biases from rubric text alone, raising concerns about automated text generation assessment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.03181">Jina-OCR-v1: Efficient Document Parsing with Speculative Decoding and Dense Verifiable Rewards</a>
+    <p class="news-card-summary">Jina-OCR-v1 combines compressed vision encoding and mixture-of-experts decoding with speculative decoding for efficient document parsing on low-cost hardware.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 3, 2026</span></div>
@@ -96,43 +131,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A lawsuit alleges that secret federal AI safety testing rules may conceal corruption, arguing for public disclosure of frontier model review procedures.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2250714805-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://github.com/mlc-ai/web-llm">WebLLM: high-performance in-browser LLM inference engine</a>
-    <p class="news-card-summary">WebLLM provides a high-performance in-browser inference engine for large language models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://opengraph.githubassets.com/13ca5c82c1e87d3a6a42e37488f35a796f50f6af452de27bb2801312577645e4/mlc-ai/web-llm" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/ai-engineer-skills">AI Efficiency Could Cost Us the Next Generation of Experts</a>
-    <p class="news-card-summary">An analysis argues that pursuing extreme AI efficiency may undermine the development of domain expertise and human oversight needed for safe system operation.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/human-and-robotic-hands-share-a-caliper-over-technical-engineering-blueprints.png?id=67702640&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.00051">From Detection to Refusal: Safer LLMs via Circuit-Guided Weight Scaling</a>
-    <p class="news-card-summary">Study applies mechanistic interpretability to understand LLM safety circuits and proposes weight-scaling methods to improve refusal capabilities under adversarial prompting.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.00065">Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents</a>
-    <p class="news-card-summary">Researchers present a library of procedural knowledge and field-specific skills for research agents to produce defensible scientific analyses beyond syntactically correct code.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 1, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/1/claude-fable-5-1">Claude Fable 5.1 made me a really nice animated pelican</a>
-    <p class="news-card-summary">Anthropic released Claude Fable 5.1, advancing coding and scientific reasoning with 52.6% score on Terminal-Bench-Science 0.1.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/fable-5.1-max.webp" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Agentic-Loops-for-Knowledge-Workers-e3oaiu2" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Agentic Loops for Knowledge Workers" loading="lazy">
+  <span class="video-card-title">Agentic Loops for Knowledge Workers</span>
+  <span class="video-card-meta">The AI Daily Brief, September 3, 2026</span>
+  <span class="video-card-desc">Episode explains how knowledge workers can use agentic loops and iterative prompting to improve reliability and completeness of AI-assisted work.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/inside-oxfords-ai-competency-centre-rethinking-assessment-and-authorship" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Inside Oxford&#x27;s AI Competency Centre: Rethinking Assessment and Authorship" loading="lazy">
   <span class="video-card-title">Inside Oxford&#x27;s AI Competency Centre: Rethinking Assessment and Authorship</span>
