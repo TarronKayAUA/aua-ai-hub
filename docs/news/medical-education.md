@@ -23,6 +23,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">Prompt Strategy and Model Choice in AI-Assisted Gross Anatomy Education: Evaluating Zero-Shot, Few-Shot, and Chain-of-Thought Prompting for Image Interpretation</a>
+    <p class="news-card-summary">Study evaluates four multimodal language models on visual identification of anatomical structures and assesses whether prompt engineering strategies improve accuracy for gross anatomy education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.03213">LLMs Learn Better In-Context from Rules than from Examples</a>
     <p class="news-card-summary">Language models learn new tasks more effectively from rule descriptions than examples in in-context learning, with implications for prompt-based instruction.</p>
@@ -118,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42683094?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">Readiness and Perception Toward Artificial Intelligence Among Undergraduate Medical Students at a Tertiary Care Teaching Institute: A Cross-Sectional Study</a>
     <p class="news-card-summary">A cross-sectional study assessed undergraduate medical students&#x27; readiness and perceptions toward artificial intelligence in healthcare and education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42682551?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">AI-generated videos in medical science popularization and education: a scoping review</a>
-    <p class="news-card-summary">A scoping review synthesized evidence on AI-generated videos for public, patient, and medical student education, finding few studies with considerable heterogeneity and insufficient standardization.</p>
   </div>
 </div>
 </div>

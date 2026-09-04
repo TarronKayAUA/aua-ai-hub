@@ -24,6 +24,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">Prompt Strategy and Model Choice in AI-Assisted Gross Anatomy Education: Evaluating Zero-Shot, Few-Shot, and Chain-of-Thought Prompting for Image Interpretation</a>
+        <p class="news-card-summary">Study evaluates four multimodal language models on visual identification of anatomical structures and assesses whether prompt engineering strategies improve accuracy for gross anatomy education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2609.03213">LLMs Learn Better In-Context from Rules than from Examples</a>
         <p class="news-card-summary">Language models learn new tasks more effectively from rule descriptions than examples in in-context learning, with implications for prompt-based instruction.</p>
@@ -318,14 +325,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Physiotherapy students showed increased generative AI use and literacy after completing integrated AI learning activities, with higher confidence in semester 3 than semester 1.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">August 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/28/mit-ai-report-calls-alternative-grading">MIT AI Report Calls for Alternative Grading, More Social Learning</a>
-        <p class="news-card-summary">MIT report examines how AI is transforming education and recommends alternative grading approaches and increased social learning to address the shift.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2024-11/Hand_Robot_Duel.jpg?itok=aZ99_Ppd" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## Clinical Practice
@@ -338,13 +337,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 31 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2609.03221">Counterfactual Fairness Audits of Multi-Step Clinical LLM Agents Require a Measured Per-Action Instability Floor</a>
         <p class="news-card-summary">Counterfactual fairness audits of clinical language model agents require accounting for inherent action instability when evaluating demographic disparities.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 4, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03206-z">A voice-biomarker foundation model for ALS monitoring and Parkinson’s screening</a>
+        <p class="news-card-summary">Foundation model trained on voice biomarkers demonstrates capability for remote monitoring of amyotrophic lateral sclerosis and screening for Parkinson&#x27;s disease.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -551,13 +557,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A conceptual model for evaluating and adopting ambient AI systems in clinical settings, addressing gaps between vendor claims and real-world performance.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.26147">CARE: Causally-Aligned Reasoning Exploration for Medical Large Language Models</a>
-        <p class="news-card-summary">Researchers developed CARE, a method using reinforcement learning to improve medical LLM reasoning while addressing credit assignment failure and gradient variance challenges.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -568,10 +567,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (14)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 4, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users</a>
+        <p class="news-card-summary">OpenAI released GPT-6 Astra with reported significant capability improvements, though initial rollout experienced access issues for paying users.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285138968.jpg?quality=90&amp;strip=all&amp;crop=0%2C12.219817290162%2C100%2C75.560365419677&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
@@ -865,13 +872,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/BhH_AjL0mdp-2nZPRCiygI2acL0nwkgIh3KfgwJsMEU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=dea490193213b00bb41f33cf60be19d474c255bb" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">August 28, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.26112">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a>
-        <p class="news-card-summary">TreeGraft improves tree-based speculative decoding for LLM inference by adaptively selecting among multiple drafters to increase accepted token length.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">August 28, 2026</span></div>
@@ -879,21 +879,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">The Open ASR Leaderboard added automatic speech recognition evaluation for Global South languages, expanding benchmark coverage.</p>
       </div>
       <img class="news-card-thumb" src="https://huggingface.co/blog/assets/open-asr-leaderboard-global-south/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 27, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode">Breaking Claude Code Opus 5 Auto Mode</a>
-        <p class="news-card-summary">Security researcher Johann Rehberger discovered a prompt injection attack against Anthropic Claude Code&#x27;s auto mode, a default protection mechanism.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 27, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world">Anthropic&#x27;s new hardware standard lets AI agents control the physical world</a>
-        <p class="news-card-summary">Anthropic released a standardized hardware interface specification enabling AI agents to control and communicate with physical devices.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/mhsdemo-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -912,6 +897,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ??? abstract "Show the 18 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=Spuza-KwTJ4" target="_blank" rel="noopener" title="GPT 6 Astra, so good even OpenAI are worried">
+      <img src="https://i4.ytimg.com/vi/Spuza-KwTJ4/hqdefault.jpg" alt="Video: Recent AI model releases and benchmark updates" loading="lazy">
+      <span class="video-card-title">Recent AI model releases and benchmark updates</span>
+      <span class="video-card-meta">AI Explained, September 4, 2026</span>
+      <span class="video-card-desc">Overview of recent AI model releases and benchmarks, including cost efficiency improvements and safety considerations for medical educators following the field.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=W3iQbl5R_Jk" target="_blank" rel="noopener" title="Anthropic reveals hardware specs and Claude updates, OpenAI talks security, and Runway&#x27;s new model">
+      <img src="https://i4.ytimg.com/vi/W3iQbl5R_Jk/hqdefault.jpg" alt="Video: Anthropic, OpenAI, and Runway AI updates digest" loading="lazy">
+      <span class="video-card-title">Anthropic, OpenAI, and Runway AI updates digest</span>
+      <span class="video-card-meta">IBM Technology, September 4, 2026</span>
+      <span class="video-card-desc">Podcast episode covering Anthropic hardware specifications, Claude updates, OpenAI security announcements, and Runway model releases from industry leaders.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=-TTyyY3VWh8" target="_blank" rel="noopener" title="First impressions of GPT-6 Astra from developers">
       <img src="https://i2.ytimg.com/vi/-TTyyY3VWh8/hqdefault.jpg" alt="Video: Developer applications of GPT-6 Astra" loading="lazy">
       <span class="video-card-title">Developer applications of GPT-6 Astra</span>
@@ -996,18 +993,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-meta">AI Search, August 30, 2026</span>
       <span class="video-card-desc">Roundup covering recent model releases including GLM 5.3 Flash, Qwen 3.8 Flash Next, Minimax FastH3, and Hy4 with news and capability comparisons.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=LBiNcdGNgrg" target="_blank" rel="noopener" title="This Free AI Just Caught The Billion Dollar Giants">
-      <img src="https://i1.ytimg.com/vi/LBiNcdGNgrg/hqdefault.jpg" alt="Video: Qwen3.8-Flash-Next compared to larger commercial models" loading="lazy">
-      <span class="video-card-title">Qwen3.8-Flash-Next compared to larger commercial models</span>
-      <span class="video-card-meta">Two Minute Papers, August 28, 2026</span>
-      <span class="video-card-desc">Comparison of Qwen3.8-Flash-Next against larger commercial models, demonstrating competitive performance of an open-weights alternative.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=UxJZrCFzTHY" target="_blank" rel="noopener" title="Model Hardware Standard: AI operating physical equipment">
-      <img src="https://i2.ytimg.com/vi/UxJZrCFzTHY/hqdefault.jpg" alt="Video: Model Hardware Standard for AI control of lab equipment" loading="lazy">
-      <span class="video-card-title">Model Hardware Standard for AI control of lab equipment</span>
-      <span class="video-card-meta">Anthropic, August 28, 2026</span>
-      <span class="video-card-desc">Anthropic announces Model Hardware Standard, a framework for AI agents to safely control physical equipment in scientific and research settings.</span>
-    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=b0dZjfQ1rpc" target="_blank" rel="noopener">
       <img src="https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg" alt="Video: 5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist" loading="lazy">
       <span class="video-card-title">5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist</span>
@@ -1024,7 +1009,7 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Podcasts
 
-??? abstract "Show the 5 episodes"
+??? abstract "Show the 4 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Agentic-Loops-for-Knowledge-Workers-e3oaiu2" target="_blank" rel="noopener">
@@ -1050,12 +1035,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">Write, Change, Recall, Forget: MongoDB&#x27;s Pete Johnson on How Retrieval Drives Agent Performance</span>
       <span class="video-card-meta">The Cognitive Revolution, September 1, 2026</span>
       <span class="video-card-desc">A Field CTO at MongoDB discusses database architecture and the technical challenges of designing memory systems for AI agents.</span>
-    </a>
-    <a class="video-card" href="https://share.transistor.fm/s/123da941" target="_blank" rel="noopener">
-      <img src="https://img.transistorcdn.com/8Uz0jVk9I5C7YZnykmA_PZcLkTSBu6XPG7fkeVdsSu4/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS82Y2I1/NGU1NmI1ODUyNWNl/ZTAyN2ZlZDkyMTkz/ZTkwNS5wbmc.jpg" alt="Podcast: Building the Foundation for the Agentic AI Era" loading="lazy">
-      <span class="video-card-title">Building the Foundation for the Agentic AI Era</span>
-      <span class="video-card-meta">Practical AI, August 28, 2026</span>
-      <span class="video-card-desc">VP of the Agentic AI Foundation discusses open standards and projects for building interoperable AI agent systems, including Model Context Protocol and agent-to-agent communication frameworks.</span>
     </a>
     </div>
 

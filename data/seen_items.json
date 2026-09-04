@@ -33180,6 +33180,193 @@
    "category": "podcasts",
    "score": 2.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
+   "title_hash": "aabacce930e582897ce8fdc0b28f938e",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "vendor issue with a social media platform; not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w71bax/nvidias_1293030000000_acquisition_of_hugging_face",
+   "title_hash": "d61b2c74a69f8f07b7bb4f9a36eaa9f5",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "rumor about unconfirmed acquisition; no underlying real event or reporting"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/989376/ai-generated-food-why-does-it-look-like-that",
+   "title_hash": "99a9c5b8feba7e3554c5668edd2b4904",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; food industry marketing imagery unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+   "title_hash": "ac2cf0a2d98c7b34efb5e56da7718f16",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "vendor product announcement for developer tools; not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
+   "title_hash": "262906e113d2410162ca8a0beb29f131",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": true,
+   "title": "Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users",
+   "source": "The Verge AI",
+   "published": "2026-09-04T10:41:48+00:00",
+   "summary": "OpenAI released GPT-6 Astra with reported significant capability improvements, though initial rollout experienced access issues for paying users.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285138968.jpg?quality=90&strip=all&crop=0%2C12.219817290162%2C100%2C75.560365419677&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&ff=20260904084448&v=2.20.1",
+   "title_hash": "a28e889332995b2c57f48c591e04cc2c",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": true,
+   "title": "Prompt Strategy and Model Choice in AI-Assisted Gross Anatomy Education: Evaluating Zero-Shot, Few-Shot, and Chain-of-Thought Prompting for Image Interpretation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-04T10:00:00+00:00",
+   "summary": "Study evaluates four multimodal language models on visual identification of anatomical structures and assesses whether prompt engineering strategies improve accuracy for gross anatomy education.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
+   "title_hash": "891b7313640db7b14b45eb6400bed0d9",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "vendor product launch for smart home storage; not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
+   "title_hash": "e8f83e5f2dcd6d6ec8823cd818588e11",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; defense procurement and data markets unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/sagasite-and-staree-will-change-my",
+   "title_hash": "fbf8aae6003e235449c2a63d6ad9df42",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "clinical commentary on trial results; no artificial intelligence content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/4/august-newsletter",
+   "title_hash": "c721ca8ae830d03c93f8ab7e034ef5eb",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "subscriber-only newsletter with generic table of contents; specific content inaccessible to verify relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03206-z",
+   "title_hash": "f4c3e816f8d871c414879a1be332d47e",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": true,
+   "title": "A voice-biomarker foundation model for ALS monitoring and Parkinson’s screening",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-04T00:00:00+00:00",
+   "summary": "Foundation model trained on voice biomarkers demonstrates capability for remote monitoring of amyotrophic lateral sclerosis and screening for Parkinson's disease.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6nihk/can_the_bubble_pop_please",
+   "title_hash": "a109095156a544b145f29b6897097159",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "community meta-discussion with no substantive content"
+  },
+  {
+   "url": "https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831",
+   "title_hash": "b2ed4df1b7b7e26b706dedf4c6529c2d",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; Julia programming language history unrelated to artificial intelligence or medicine"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=a0oRq-xNeWA",
+   "title_hash": "92aea0b77047ee019b82b271bb4e5e36",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5iu0nY9lIy8",
+   "title_hash": "8517433d9c6d8f31b20433a95534b7d5",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=D-QteDHdHes",
+   "title_hash": "13e28aaa9c7e0277beb71342d12adb64",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Ez-anO32D_s",
+   "title_hash": "e52dc3e53449de04fd11b43758c02a87",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=N-MJ1W8Vj9E",
+   "title_hash": "4b945e9f539b9ecaf0bf78fb42e3a335",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=HHt8CPJRviA",
+   "title_hash": "d6fde278848648e8f7e5ab673e41f889",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=NSqlZ1L81nQ",
+   "title_hash": "6d77ef9ad842dccf606e043e96a3627b",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Spuza-KwTJ4",
+   "title_hash": "99686241ecd2068721b45f203048bd09",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": true,
+   "title": "GPT 6 Astra, so good even OpenAI are worried",
+   "source": "AI Explained",
+   "published": "2026-09-04T11:37:27+00:00",
+   "summary": "Overview of recent AI model releases and benchmarks, including cost efficiency improvements and safety considerations for medical educators following the field.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/Spuza-KwTJ4/hqdefault.jpg",
+   "display_title": "Recent AI model releases and benchmark updates"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=W3iQbl5R_Jk",
+   "title_hash": "653e5978ed263eed2bf6e0dd67742243",
+   "first_seen": "2026-09-04T12:44:48.191737+00:00",
+   "kept": true,
+   "title": "Anthropic reveals hardware specs and Claude updates, OpenAI talks security, and Runway's new model",
+   "source": "IBM Technology",
+   "published": "2026-09-04T10:00:19+00:00",
+   "summary": "Podcast episode covering Anthropic hardware specifications, Claude updates, OpenAI security announcements, and Runway model releases from industry leaders.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/W3iQbl5R_Jk/hqdefault.jpg",
+   "display_title": "Anthropic, OpenAI, and Runway AI updates digest"
   }
  ],
  "digests": [

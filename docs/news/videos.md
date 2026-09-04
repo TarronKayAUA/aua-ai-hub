@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=Spuza-KwTJ4" target="_blank" rel="noopener" title="GPT 6 Astra, so good even OpenAI are worried">
+  <img src="https://i4.ytimg.com/vi/Spuza-KwTJ4/hqdefault.jpg" alt="Video: Recent AI model releases and benchmark updates" loading="lazy">
+  <span class="video-card-title">Recent AI model releases and benchmark updates</span>
+  <span class="video-card-meta">AI Explained, September 4, 2026</span>
+  <span class="video-card-desc">Overview of recent AI model releases and benchmarks, including cost efficiency improvements and safety considerations for medical educators following the field.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=W3iQbl5R_Jk" target="_blank" rel="noopener" title="Anthropic reveals hardware specs and Claude updates, OpenAI talks security, and Runway&#x27;s new model">
+  <img src="https://i4.ytimg.com/vi/W3iQbl5R_Jk/hqdefault.jpg" alt="Video: Anthropic, OpenAI, and Runway AI updates digest" loading="lazy">
+  <span class="video-card-title">Anthropic, OpenAI, and Runway AI updates digest</span>
+  <span class="video-card-meta">IBM Technology, September 4, 2026</span>
+  <span class="video-card-desc">Podcast episode covering Anthropic hardware specifications, Claude updates, OpenAI security announcements, and Runway model releases from industry leaders.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=-TTyyY3VWh8" target="_blank" rel="noopener" title="First impressions of GPT-6 Astra from developers">
   <img src="https://i2.ytimg.com/vi/-TTyyY3VWh8/hqdefault.jpg" alt="Video: Developer applications of GPT-6 Astra" loading="lazy">
   <span class="video-card-title">Developer applications of GPT-6 Astra</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">LLM benchmarks versus real-world performance gap</span>
   <span class="video-card-meta">IBM Technology, August 27, 2026</span>
   <span class="video-card-desc">IBM technical explainer on why large language models score well on benchmarks but fail in real-world applications, with analysis of the gap.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=b9GU_vPeDvM" target="_blank" rel="noopener" title="Qwen3.8 Flash Next Is INSANE, Testing the PREVIEW of Qwen 4!">
-  <img src="https://i3.ytimg.com/vi/b9GU_vPeDvM/hqdefault.jpg" alt="Video: Testing Qwen 3.8 Flash and Qwen 4 preview" loading="lazy">
-  <span class="video-card-title">Testing Qwen 3.8 Flash and Qwen 4 preview</span>
-  <span class="video-card-meta">Bijan Bowen, August 26, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Qwen 3.8 Flash and preview access to Qwen 4, covering technical specifications and multimodal capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=tBjgCj_dGZM" target="_blank" rel="noopener" title="The mathematics of AI uncertainty">
-  <img src="https://i1.ytimg.com/vi/tBjgCj_dGZM/hqdefault.jpg" alt="Video: The mathematics of AI uncertainty" loading="lazy">
-  <span class="video-card-title">The mathematics of AI uncertainty</span>
-  <span class="video-card-meta">Google DeepMind, August 26, 2026</span>
-  <span class="video-card-desc">Google DeepMind seminar on uncertainty quantification in machine learning and how to measure model confidence.</span>
 </a>
 </div>
 
