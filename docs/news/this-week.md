@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 4, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91809">Multimodal Large Language Models for Dental Chart Image Interpretation: Cross-Sectional Benchmarking Study With Students and Clinicians</a>
+        <p class="news-card-summary">Multimodal large language models that interpret dental chart images were benchmarked against student and clinician performance to assess their potential for supporting dental education.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>

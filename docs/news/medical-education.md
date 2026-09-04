@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91809">Multimodal Large Language Models for Dental Chart Image Interpretation: Cross-Sectional Benchmarking Study With Students and Clinicians</a>
+    <p class="news-card-summary">Multimodal large language models that interpret dental chart images were benchmarked against student and clinician performance to assess their potential for supporting dental education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
@@ -119,12 +126,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">New York City announced a one-year moratorium on AI use in classrooms for students below high school, affecting approximately 600,000 elementary and middle school students starting 2026-2027.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42680939?fc=20260609215449&amp;ff=20260902084734&amp;v=2.20.1">SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types</a>
-    <p class="news-card-summary">SlideChat is a multimodal AI assistant that analyzes whole-slide pathology images across cancer types, addressing a gap in AI tools for gigapixel-scale clinical image interpretation.</p>
-  </div>
 </div>
 </div>
