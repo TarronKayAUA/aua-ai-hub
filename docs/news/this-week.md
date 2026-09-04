@@ -18,15 +18,22 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">Prompt Strategy and Model Choice in AI-Assisted Gross Anatomy Education: Evaluating Zero-Shot, Few-Shot, and Chain-of-Thought Prompting for Image Interpretation</a>
         <p class="news-card-summary">Study evaluates four multimodal language models on visual identification of anatomical structures and assesses whether prompt engineering strategies improve accuracy for gross anatomy education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&amp;ff=20260904145949&amp;v=2.20.1">Accuracy of General-Use Multimodal AI Platforms for Pell and Gregory Classification of Impacted Mandibular Third Molars</a>
+        <p class="news-card-summary">ChatGPT and Grok showed poor accuracy in classifying impacted mandibular third molars on radiographs, indicating general-use AI models are unreliable for independent radiographic assessment.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -335,9 +342,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -351,6 +358,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 4, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03206-z">A voice-biomarker foundation model for ALS monitoring and Parkinson’s screening</a>
         <p class="news-card-summary">Foundation model trained on voice biomarkers demonstrates capability for remote monitoring of amyotrophic lateral sclerosis and screening for Parkinson&#x27;s disease.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 4, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03189-x">Platforms for artificial intelligence-enabled infectious disease surveillance</a>
+        <p class="news-card-summary">A review of platforms for artificial intelligence-enabled infectious disease surveillance examines systems and approaches for monitoring disease patterns and outbreaks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 4, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04694-y">Prediction of maternal and infant outcomes from longitudinal electronic health records with a Mother-Child AI agent</a>
+        <p class="news-card-summary">An LLM-based clinical assistant integrating longitudinal electronic health records can forecast maternal and infant conditions to support risk-stratified prenatal and postnatal care.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">

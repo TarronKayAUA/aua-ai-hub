@@ -2,6 +2,6 @@
 
 - [Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users](https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout) (The Verge AI, September 4, 2026)
 - [Prompt Strategy and Model Choice in AI-Assisted Gross Anatomy Education: Evaluating Zero-Shot, Few-Shot, and Chain-of-Thought Prompting for Image Interpretation](https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&ff=20260904084448&v=2.20.1) (PubMed AI in medical education, September 4, 2026)
+- [Accuracy of General-Use Multimodal AI Platforms for Pell and Gregory Classification of Impacted Mandibular Third Molars](https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&ff=20260904145949&v=2.20.1) (PubMed AI in medical education, September 4, 2026)
 - [PiPMRE: A Pipeline Based on Language Model for Medical Relation Extraction](https://arxiv.org/abs/2609.02896) (arXiv cs.CL, September 4, 2026)
 - [Distilled Rapid Embedding Transfer (DRET): Parameter-Efficient Biomedical Domain Adaptation via Priority-Based Embedding Transfer](https://arxiv.org/abs/2609.02898) (arXiv cs.CL, September 4, 2026)
-- [Contamination Inflates Scores but Rarely Reorders Large Language Model Leaderboards](https://arxiv.org/abs/2609.02899) (arXiv cs.CL, September 4, 2026)

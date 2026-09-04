@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -26,6 +26,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">Prompt Strategy and Model Choice in AI-Assisted Gross Anatomy Education: Evaluating Zero-Shot, Few-Shot, and Chain-of-Thought Prompting for Image Interpretation</a>
     <p class="news-card-summary">Study evaluates four multimodal language models on visual identification of anatomical structures and assesses whether prompt engineering strategies improve accuracy for gross anatomy education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&amp;ff=20260904145949&amp;v=2.20.1">Accuracy of General-Use Multimodal AI Platforms for Pell and Gregory Classification of Impacted Mandibular Third Molars</a>
+    <p class="news-card-summary">ChatGPT and Grok showed poor accuracy in classifying impacted mandibular third molars on radiographs, indicating general-use AI models are unreliable for independent radiographic assessment.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -118,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42680939?fc=20260609215449&amp;ff=20260902084734&amp;v=2.20.1">SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types</a>
     <p class="news-card-summary">SlideChat is a multimodal AI assistant that analyzes whole-slide pathology images across cancer types, addressing a gap in AI tools for gigapixel-scale clinical image interpretation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42683094?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">Readiness and Perception Toward Artificial Intelligence Among Undergraduate Medical Students at a Tertiary Care Teaching Institute: A Cross-Sectional Study</a>
-    <p class="news-card-summary">A cross-sectional study assessed undergraduate medical students&#x27; readiness and perceptions toward artificial intelligence in healthcare and education.</p>
   </div>
 </div>
 </div>

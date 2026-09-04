@@ -1,143 +1,6 @@
 {
  "items": [
   {
-   "url": "https://huggingface.co/blog/lerobot-release-v060",
-   "title_hash": "f6e8d6866ab6cf0450238f6d4cb79b48",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "insufficient information in summary"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e86893",
-   "title_hash": "c60c82e27e3407108c1fc2502156983a",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42404744?fc=20260609215449&ff=20260706100904&v=2.20.0",
-   "title_hash": "6bceed506bfff258c472ad6f5a2ccfdb",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": true,
-   "title": "Thematic Evolution in Medical Education Research (2000-2024): A Large-Scale BERTopic Analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-06T10:00:00+00:00",
-   "summary": "Large-scale analysis of 24 years of medical education research reveals a gradual shift in emphasis toward technology and artificial intelligence topics.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42404183?fc=20260609215449&ff=20260706100904&v=2.20.0",
-   "title_hash": "7890393beb0fc8042b1ebfab6fb7c57e",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": true,
-   "title": "Incorporating AI-Driven Vision Systems to Quantify Learning Curve in EVD Placement",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-06T10:00:00+00:00",
-   "summary": "Artificial intelligence vision system platform quantifies the learning curve for external ventricular drain placement in surgical training.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42403136?fc=20260609215449&ff=20260706100904&v=2.20.0",
-   "title_hash": "1241b4436749c57831c3b0806be15107",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": true,
-   "title": "The Urgent Need for AI-Guidelines and Framework for Medical Education and Research in Pakistan",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-06T10:00:00+00:00",
-   "summary": "Commentary on the urgent need for artificial intelligence governance frameworks and guidelines specific to medical education and research in Pakistan.",
-   "category": "medical_education",
-   "score": 2.0
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/6/sqlite-utils",
-   "title_hash": "bc99dd4f83d1e54ac24ed49b9aa5367d",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uoij3s/if_trends_hold_mythosclass_capability_may_be",
-   "title_hash": "6c821e9c23a1239519b89bd829317780",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "speculation and trend projection without evidence"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02966-y",
-   "title_hash": "74a3652774fa3ae03c3185493762730a",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02845-6",
-   "title_hash": "e4c761a51a88b48ad848bcbbb0d5d1f0",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02915-9",
-   "title_hash": "2870eeae0b49a0213c5ecf960ed34377",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": true,
-   "title": "Large language models are powerful electronic health record encoders",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-06T00:00:00+00:00",
-   "summary": "Peer-reviewed study demonstrates that large language models perform effectively as electronic health record encoders for clinical data extraction and processing.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02919-5",
-   "title_hash": "679d09dcebad3134248536dc3c04646a",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": true,
-   "title": "Bridging the gap from clinical to home ECG: quantifying and overcoming accuracy loss in AI-enabled single-lead ECG models",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-06T00:00:00+00:00",
-   "summary": "Study quantifies accuracy loss when single-lead ECG artificial intelligence models transition from clinical to home settings and proposes mitigation strategies.",
-   "category": "clinical_practice",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04506-3",
-   "title_hash": "a22a443377f15d6487b82efc8bc4584d",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04551-y",
-   "title_hash": "5e7c259d8e708884ed2581d20d0fe278",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://huggingface.co/blog/revamped-kernels",
-   "title_hash": "b62d9d8518cf33c68c8b9f0e2587ba8e",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "insufficient information in summary"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=NY_V8mFL1Gg",
-   "title_hash": "e67dc39848b5042cc202df078e7e93c9",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "title is rumor-framed; speculation without confirmed information"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=f84XbvASkk4",
-   "title_hash": "a6c435298506debf2c85dfe88b5c3a2b",
-   "first_seen": "2026-07-06T14:09:02.489160+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
    "url": "https://mededu.jmir.org/2026/1/e104447",
    "title_hash": "a97937a564129885442788c5a998dfd1",
    "first_seen": "2026-07-06T21:51:22.875117+00:00",
@@ -33367,6 +33230,94 @@
    "score": 3.0,
    "thumbnail": "https://i4.ytimg.com/vi/W3iQbl5R_Jk/hqdefault.jpg",
    "display_title": "Anthropic, OpenAI, and Runway AI updates digest"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
+   "title_hash": "d29f7c35909e4a27bdd39dd8431810a6",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": false,
+   "reason": "off-topic: music generation tool without medical or educational relevance"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
+   "title_hash": "86cc02e0f9fb38d222887f304bd40a64",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": false,
+   "reason": "drama coverage and speculation about unconfirmed incidents"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers",
+   "title_hash": "74cd3373a8daad9682176ebbfaf5ae42",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": false,
+   "reason": "off-topic for medical educators and students"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight",
+   "title_hash": "1fa1bf40e60c610ed6505b578be21ca7",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
+   "title_hash": "8898b739be7ddf98b76eebba21917e66",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": false,
+   "reason": "copyright litigation detail with limited relevance to medical audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
+   "title_hash": "6aaec3f0a9d29434837042de07f0a396",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 0; drama coverage and speculation about unconfirmed incidents"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42694589?fc=20260609215449&ff=20260904145949&v=2.20.1",
+   "title_hash": "ad1b918b5874c592d8a059ce7d045e3b",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": false,
+   "reason": "off-topic: medical treatment without AI content relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&ff=20260904145949&v=2.20.1",
+   "title_hash": "0f5d77df4d08016ec1d81575d8df95af",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": true,
+   "title": "Accuracy of General-Use Multimodal AI Platforms for Pell and Gregory Classification of Impacted Mandibular Third Molars",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-04T10:00:00+00:00",
+   "summary": "ChatGPT and Grok showed poor accuracy in classifying impacted mandibular third molars on radiographs, indicating general-use AI models are unreliable for independent radiographic assessment.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03189-x",
+   "title_hash": "13c3b01216bfec00070642de993c3e36",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": true,
+   "title": "Platforms for artificial intelligence-enabled infectious disease surveillance",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-04T00:00:00+00:00",
+   "summary": "A review of platforms for artificial intelligence-enabled infectious disease surveillance examines systems and approaches for monitoring disease patterns and outbreaks.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04694-y",
+   "title_hash": "61cc839d1bbc2f1d238a5b437328d6b6",
+   "first_seen": "2026-09-04T18:59:49.108141+00:00",
+   "kept": true,
+   "title": "Prediction of maternal and infant outcomes from longitudinal electronic health records with a Mother-Child AI agent",
+   "source": "Nature Medicine",
+   "published": "2026-09-04T00:00:00+00:00",
+   "summary": "An LLM-based clinical assistant integrating longitudinal electronic health records can forecast maternal and infant conditions to support risk-stratified prenatal and postnatal care.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
   }
  ],
  "digests": [
