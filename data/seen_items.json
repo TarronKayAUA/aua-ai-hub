@@ -33103,6 +33103,13 @@
    "first_seen": "2026-09-05T15:16:53.299212+00:00",
    "kept": false,
    "reason": "forum discussion of speculative policy, not reporting on actual regulatory development or enacted policy"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos",
+   "title_hash": "33145d04655ccf63fe8ce4752b016cb8",
+   "first_seen": "2026-09-05T18:20:25.368411+00:00",
+   "kept": false,
+   "reason": "personal blog post on a niche tool integration, not of significance to medical educators"
   }
  ],
  "digests": [
