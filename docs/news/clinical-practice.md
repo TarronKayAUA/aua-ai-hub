@@ -13,14 +13,28 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The FDA&#x27;s TEMPO pilot program is letting generative AI medical devices from companies such as Cadence and Limbic reach patients before securing formal marketing authorization, a shift that puts new weight on evaluation science <a href="https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation">[2]</a>. That pressure is underscored by a benchmark showing vision-language models still fail to demonstrate genuine clinical reasoning despite scoring well on surface metrics <a href="https://www.nature.com/articles/s41746-026-03191-3">[7]</a>, and by a proposed five-phase framework for systematically evaluating diagnostic and predictive medical AI before deployment <a href="https://www.nature.com/articles/s41746-026-03155-7">[6]</a>. Meanwhile, a study of patient messaging found measurable differences in tone between AI and human care team responses across demographic groups <a href="https://www.nature.com/articles/s41746-026-03185-1">[5]</a>, and a deep learning model for real-time kidney segmentation during robot-assisted nephrectomy advanced toward clinical validation <a href="https://medinform.jmir.org/2026/1/e82540">[10]</a>.</p>
-<p>Also this week: the section adds six items on safety and evaluation, five on clinical decision support, and two each on patient-facing tools and imaging and diagnostics, including work on causal hypothesis verification with large language models and a Markov decision process for personalized diabetes follow-up planning.</p>
-<p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the items below.</p>
+<p>The FDA&#x27;s TEMPO pilot program is opening a path for generative AI medical devices to reach patients before formal marketing authorization, letting companies such as Cadence and Limbic deploy tools ahead of full clearance <a href="https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation">[7]</a>. That regulatory shift arrives alongside new evidence that AI systems still struggle with genuine clinical reasoning: a benchmark of vision-language models found persistent gaps between surface-level competence and actual diagnostic understanding <a href="https://www.nature.com/articles/s41746-026-03191-3">[12]</a>. Meanwhile, a Nature Medicine study describes a Mother-Child AI agent that integrates longitudinal electronic health records to forecast maternal and infant outcomes, illustrating growing interest in agent-based clinical decision support <a href="https://www.nature.com/articles/s41591-026-04694-y">[6]</a>. A separate voice-biomarker model further extends monitoring to ALS and Parkinson&#x27;s disease <a href="https://www.nature.com/articles/s41746-026-03206-z">[4]</a>.</p>
+<p>Also this week: five decision-support studies address diabetes follow-up planning and infectious disease surveillance, while five safety and evaluation papers include a five-phase framework for diagnostic AI and a fairness audit of clinical language model agents. Three patient-facing tools cover topics from messaging tone to mental health assessment, and two imaging papers examine cardiac MRI interpretation and robotic kidney segmentation.</p>
+<p class="section-brief-date">The picture as of September 5, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03108-0">From feasibility to neuroanatomic validity of remote cognitive smartphone assessments in early Alzheimer’s disease</a>
+    <p class="news-card-summary">Remote cognitive assessments via smartphone show neuroanatomic validity for detecting early Alzheimer&#x27;s disease, supporting feasibility of smartphone-based cognitive monitoring.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42696799?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1">Digital Predictive Technologies for Fall Risk Assessment, Prediction, and Prevention in Long-Term Care: A Scoping Review</a>
+    <p class="news-card-summary">A scoping review finds digital predictive technologies show emerging potential for fall risk assessment in long-term care but remain heterogeneous and developmental, functioning as decision-support tools rather than replacements for clinical judgment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82540">Automatic Kidney Image Segmentation During Robot-Assisted Partial Nephrectomy Using a Deep Learning Model Based on a Multiannotator Dataset: Model Development and Validation Study</a>
     <p class="news-card-summary">A deep learning model for real-time kidney image segmentation during robot-assisted partial nephrectomy was developed and validated using a multiannotator dataset to enable augmented reality guidance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89981">A Clinical AI-Based System (MoodMon) for Affective Disorders: Algorithm Development and Validation</a>
-    <p class="news-card-summary">MoodMon, an AI-based smartphone system using speech acoustic features, was developed and validated to detect mood changes in patients with major depressive disorder and bipolar disorder.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.00055">Zero-Shot Respiratory Sound Classification through LLM-Augmented Audio-Text Alignment</a>
-    <p class="news-card-summary">Researchers developed a framework aligning respiratory sound encoders with medical terminology to enable zero-shot clinical classification without task-specific labeled data.</p>
   </div>
 </div>
 </div>

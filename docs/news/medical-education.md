@@ -13,12 +13,12 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A randomized trial testing a multiagent AI system to scaffold problem-based learning for medical interns offers early evidence that facilitated AI support outperforms unfacilitated use <a href="https://mededu.jmir.org/2026/1/e95039">[3]</a>. That finding lands alongside a new multidimensional rubric for judging AI teaching agents, which argues that platform-generated scores miss real pedagogical quality <a href="https://mededu.jmir.org/2026/1/e96819">[4]</a>. Concerns about how students actually use these tools surface in a cross-sectional study estimating generative AI use in medical school application essays since generative AI&#x27;s rollout in late 2022 <a href="https://mededu.jmir.org/2026/1/e96673">[2]</a>, while New York City&#x27;s decision to bar AI from elementary and middle school classrooms for a year signals a broader policy pushback <a href="https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban">[12]</a>.</p>
-<p>Also this week: eight items on teaching and curriculum trace AI&#x27;s expanding footprint in coursework, including a course-grounded chatbot for STEM lecture videos and a scoping review of AI-generated educational videos. Four pieces on attitudes and adoption cover clinician and student perspectives, two assess feedback quality, and one covers simulation-based skills training.</p>
-<p class="section-brief-date">The picture as of September 4, 2026; numbered links go to the items below.</p>
+<p>General-use multimodal AI models continue to struggle with specialized visual tasks in medicine: platforms tested on Pell and Gregory classification of impacted molars performed poorly against radiographs <a href="https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&amp;ff=20260904145949&amp;v=2.20.1">[3]</a>, and a related study found that prompting strategy alone did not close the gap for gross anatomy image interpretation across four models <a href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">[2]</a>. Attitudes toward AI vary by clinical context and experience: radiology-bound Canadian medical students report confidence in the specialty&#x27;s sustainability despite automation concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42697747?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1">[4]</a>, while endoscopists surveyed three years after GI Genius adoption describe increasingly positive views of AI-assisted colonoscopy <a href="https://pubmed.ncbi.nlm.nih.gov/42687598?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">[10]</a>. Meanwhile, a randomized trial tested AI-scaffolded problem-based learning for medical interns under facilitated and unfacilitated designs <a href="https://mededu.jmir.org/2026/1/e95039">[7]</a>.</p>
+<p>Also this week: six items address teaching and curriculum design, including a multidimensional rubric for evaluating AI teaching agents beyond platform-generated scores and a course-grounded chatbot for STEM lecture videos, alongside three studies on assessment and feedback, one on emergency physician task automation, and a pilot trial of AI-based simulation for code status discussions in internal medicine residency.</p>
+<p class="section-brief-date">The picture as of September 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -40,6 +40,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&amp;ff=20260904145949&amp;v=2.20.1">Accuracy of General-Use Multimodal AI Platforms for Pell and Gregory Classification of Impacted Mandibular Third Molars</a>
     <p class="news-card-summary">ChatGPT and Grok showed poor accuracy in classifying impacted mandibular third molars on radiographs, indicating general-use AI models are unreliable for independent radiographic assessment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42697747?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1">Canadian Medical Students Interested in Radiology Report Greater Perceived Importance of Procedural Roles and Greater Career Sustainability Amid Artificial Intelligence</a>
+    <p class="news-card-summary">Canadian medical students interested in radiology report greater confidence in the specialty&#x27;s career sustainability despite artificial intelligence concerns, with procedural skills and AI perception associated with radiology interest.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -118,13 +125,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://arxiv.org/abs/2609.01846">Cite or Decline: A Strict Course-Grounded Chatbot for STEM Lecture Videos</a>
     <p class="news-card-summary">Preprint reports semester-long deployment of a retrieval-augmented chatbot for students to ask course-specific questions about STEM lecture videos with instructor-grounded verification.</p>
   </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban">NYC bans AI use for students until they reach high school</a>
-    <p class="news-card-summary">New York City announced a one-year moratorium on AI use in classrooms for students below high school, affecting approximately 600,000 elementary and middle school students starting 2026-2027.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
