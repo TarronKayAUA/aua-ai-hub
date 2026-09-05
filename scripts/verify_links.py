@@ -26,6 +26,7 @@ Exit code is nonzero if any link fails.
 """
 
 import re
+import ssl
 import sys
 import time
 import urllib.parse
@@ -248,6 +249,42 @@ def collect() -> list[tuple[str, str, str | None]]:
     return list(dict.fromkeys(pairs))
 
 
+# OpenSSL verification codes. 20 is "unable to get local issuer certificate":
+# the server did not send an intermediate, so a strict client cannot build the
+# chain while a browser, which caches and fetches intermediates, usually can.
+# That gap is what the allowlist's TLS branch was built for (added 2026-06-11
+# for stepgenie.app; SPEC, media-rich resource cards section).
+#
+# Every other verification code is browser-fatal. An expired, self-signed,
+# untrusted-root or wrong-host certificate stops a human visitor with a
+# full-page warning, so answering ok would hide from this checker the one TLS
+# failure a reader cannot click past. Narrowed to code 20 on 2026-09-05, owner
+# approved, after all four fatal modes were confirmed to report ok: a bot block
+# is invisible to browsers and a bad certificate is browser-fatal, so they
+# should not share a verdict.
+TLS_BROWSER_TOLERANT = {20}
+
+
+def _cert_error(exc, depth: int = 0) -> ssl.SSLCertVerificationError | None:
+    """The ssl.SSLCertVerificationError inside a requests SSLError, if any.
+
+    requests buries it three deep: SSLError -> MaxRetryError.reason ->
+    urllib3.SSLError -> ssl.SSLCertVerificationError. Returns None for a TLS
+    failure that is not a certificate verification failure at all, such as a
+    protocol or handshake mismatch, which keeps its old allowlist behaviour.
+    """
+    if exc is None or depth > 6:
+        return None
+    if isinstance(exc, ssl.SSLCertVerificationError):
+        return exc
+    for nxt in (getattr(exc, "reason", None),
+                exc.args[0] if getattr(exc, "args", None) else None):
+        found = _cert_error(nxt, depth + 1)
+        if found is not None:
+            return found
+    return None
+
+
 def check(url: str, retries: int = 2,
           expect_type: str | None = None) -> tuple[bool, str]:
     # YouTube rate-limits watch pages (HTTP 429) when several are fetched in
@@ -269,8 +306,14 @@ def check(url: str, retries: int = 2,
                 url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True
             )
             break
-        except requests.exceptions.SSLError:
+        except requests.exceptions.SSLError as exc:
             host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+            cert_exc = _cert_error(exc)
+            if (cert_exc is not None
+                    and cert_exc.verify_code not in TLS_BROWSER_TOLERANT):
+                # A browser rejects this certificate too, so the allowlist
+                # must not cover it and a retry cannot help. Report and stop.
+                return False, f"TLS {cert_exc.verify_message}"
             if host in MANUALLY_VERIFIED:
                 return True, f"manual ({MANUALLY_VERIFIED[host]}, TLS strict-fail)"
             last_exc = "SSLError"
