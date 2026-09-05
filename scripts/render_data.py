@@ -419,8 +419,15 @@ def _video_card(url: str, title: str, meta: str, desc: str = "",
     # passing a fallback in as `thumbnail` would suppress the real video
     # thumbnail and silently replace it with brand artwork.
     thumbnail = thumbnail or fallback_thumbnail
+    # Hidden onerror, the same treatment _favicon_img gives a missing favicon:
+    # a thumbnail whose host has dropped the image collapses the card to text
+    # instead of showing a broken-image box in a 16:9 grey slot, and text-only
+    # is already the documented shape for an entry with no thumbnail
+    # (2026-09-05, owner approved). verify_links.py now checks these at
+    # authoring time; this is what a reader sees between rot and repair.
     img = (f'  <img src="{thumbnail}" alt="Thumbnail: {title}" '
-           'loading="lazy">\n') if thumbnail else ""
+           "loading=\"lazy\" onerror=\"this.style.display='none'\">\n"
+           ) if thumbnail else ""
     desc_part = (f'\n  <span class="video-card-desc">{desc}</span>'
                  if desc else "")
     return (
