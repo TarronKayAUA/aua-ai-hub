@@ -105,6 +105,12 @@ MANUALLY_VERIFIED = {
 assert not any(k.startswith("www.") for k in MANUALLY_VERIFIED), \
     "MANUALLY_VERIFIED keys must not start with 'www.'"
 BOT_BLOCK_STATUSES = {400, 403, 429}
+# Server-side failures worth a retry, because they say the host is having a
+# bad moment rather than that the link is wrong. 501 and 505 are deliberately
+# absent: those are settled answers, not hiccups, and retrying them only
+# slows the sweep down. 429 is absent too, since it is already handled as a
+# bot block below and a three second wait does not clear a rate limit.
+RETRY_STATUSES = {500, 502, 503, 504}
 
 MD_LINK_OPEN = re.compile(r"\[[^\]]*\]\(\s*(https?://\S*)")
 # Counts the same link openings a different way, so a destination the walker
@@ -491,11 +497,24 @@ def check(url: str, retries: int = 2,
     # is common; retry before reporting a link dead so the monthly
     # link-health issue only carries real failures.
     last_exc = "RequestException"
+    retried_5xx = False
     for attempt in range(retries + 1):
         try:
             resp = requests.get(
                 url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True
             )
+            # A 5xx is the server failing, not the link being wrong, and it is
+            # usually a hiccup: openwebui.com answered 502 once during the
+            # 2026-09-05 sweep and 200 on four straight fetches a minute
+            # later. Left unretried that files a monthly issue about a site
+            # that is fine, which is the false alarm issues #31 and #45 were
+            # closed to remove. Retry on the same schedule as a connection
+            # error, and if it survives that, report it as the real failure
+            # it then is.
+            if resp.status_code in RETRY_STATUSES and attempt < retries:
+                retried_5xx = True
+                time.sleep(3)
+                continue
             break
         except requests.exceptions.SSLError as exc:
             host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
@@ -558,6 +577,10 @@ def check(url: str, retries: int = 2,
         ctype = (resp.headers.get("Content-Type") or "").split(";")[0].strip()
         if not ctype.startswith(expect_type):
             return False, f"HTTP {resp.status_code}, {ctype or 'no type'} not {expect_type}"
+    if retried_5xx and not ok:
+        # Say it survived the retries, so the monthly issue distinguishes a
+        # host that is genuinely down from one that blinked.
+        return ok, f"HTTP {resp.status_code} after {retries} retries"
     return ok, f"HTTP {resp.status_code}"
 
 
