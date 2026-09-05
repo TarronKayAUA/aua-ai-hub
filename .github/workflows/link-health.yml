@@ -35,18 +35,37 @@ jobs:
           existing=$(gh issue list --state open --search "Link health: in:title" \
             --json number --jq '.[0].number // empty')
           if [[ "${{ steps.check.outputs.exit_code }}" != "0" ]]; then
-            n=$(grep -E '^failed' link-health.txt | grep -oE '[0-9]+$')
-            title="Link health: ${n} links failing"
-            {
-              echo "Automated monthly check found failing links."
-              echo
-              echo '```'
-              grep -E '^  FAIL' link-health.txt
-              echo '```'
-              echo
-              echo "Fix or replace the links, verify with"
-              echo '`python scripts/verify_links.py --all-docs`, and commit.'
-            } > body.md
+            # grep exits nonzero when it matches nothing, which would abort
+            # this step under set -e before any issue is written (the same
+            # trap fixed in feed-health.yml, 13db884). A checker that CRASHED
+            # prints no summary line at all, and that has to be louder than
+            # one that merely found dead links, never quieter.
+            n=$(grep -E '^failed' link-health.txt | grep -oE '[0-9]+$' || true)
+            fails=$(grep -E '^  FAIL' link-health.txt || true)
+            if [[ -z "$n" ]]; then
+              title="Link health: the checker failed to run"
+              {
+                echo "The checker crashed rather than finding dead links."
+                echo "It printed no summary line, so **no link was verified**"
+                echo "this month. Exit ${{ steps.check.outputs.exit_code }}."
+                echo
+                echo '```'
+                tail -n 40 link-health.txt
+                echo '```'
+              } > body.md
+            else
+              title="Link health: ${n} links failing"
+              {
+                echo "Automated monthly check found failing links."
+                echo
+                echo '```'
+                echo "$fails"
+                echo '```'
+                echo
+                echo "Fix or replace the links, verify with"
+                echo '`python scripts/verify_links.py --all-docs`, and commit.'
+              } > body.md
+            fi
             if [[ -n "$existing" ]]; then
               gh issue edit "$existing" --title "$title" --body-file body.md
               gh issue comment "$existing" --body "Still failing as of $(date -u +%F)."

@@ -8,7 +8,7 @@ last_reviewed: 2026-09-03
 
 In August a paper landed that was, for me personally, almost too convenient to be believed.
 
-Two changes in the growth hormone receptor gene, inherited from Neanderthals some forty-seven thousand years ago, turn out to be common in South Asian populations and vanishingly rare in European ones. Carrying them is associated with more lean muscle. The finding was published in *Current Biology* by a team including Svante Pääbo, and it went around the world in a week ([Kanis et al., 2026](https://www.cell.com/current-biology/fulltext/S0960-9822(26)00890-0)).
+Two changes in the growth hormone receptor gene, inherited from Neanderthals some forty-seven thousand years ago, turn out to be common in South Asian populations and vanishingly rare in European ones. Carrying them is associated with more lean muscle. The finding was published in *Current Biology* by a team including Svante Pääbo, and it went around the world in a week ([Kanis et al., 2026](https://doi.org/10.1016/j.cub.2026.07.025)).
 
 I am South Asian. I have been visibly muscular my entire adult life without ever training for it, to the point that I was used as an anatomical model for neck musculature in medical school. And I have had my own raw genotype file sitting in a folder since 2022, downloaded from a consumer testing service and never seriously looked at.
 

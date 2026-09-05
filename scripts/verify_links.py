@@ -98,7 +98,74 @@ assert not any(k.startswith("www.") for k in MANUALLY_VERIFIED), \
     "MANUALLY_VERIFIED keys must not start with 'www.'"
 BOT_BLOCK_STATUSES = {400, 403, 429}
 
-MD_LINK = re.compile(r"\[[^\]]*\]\((https?://[^)\s]+)\)")
+MD_LINK_OPEN = re.compile(r"\[[^\]]*\]\(\s*(https?://\S*)")
+# Counts the same link openings a different way, so a destination the walker
+# below cannot parse becomes a loud error rather than a link that quietly
+# stops being checked.
+MD_LINK_COUNT = re.compile(r"\]\(\s*https?://")
+
+
+def link_destinations(text: str) -> list[str]:
+    """Every markdown link destination in `text`, parenthesis-aware.
+
+    Python-Markdown allows balanced parentheses inside a link destination, so
+    ending one at the first ")" checks a URL the page never links. That is how
+    issue #46 came to report HTTP 403 for ".../S0960-9822(26", a string that
+    appears nowhere in the built site, while the real citation beside it went
+    unfetched. Walking with a depth counter tracks what the renderer does.
+
+    Do not replace this with a regex that balances one level of parentheses.
+    That looks equivalent and is worse: on a nested destination it matches
+    nothing at all, trading a wrongly-checked link for a silently skipped one.
+    """
+    out = []
+    for match in MD_LINK_OPEN.finditer(text):
+        raw, depth, end = match.group(1), 0, 0
+        for i, char in enumerate(raw):
+            if char == "(":
+                depth += 1
+            elif char == ")":
+                if depth == 0:
+                    break  # this ")" closes the markdown link, not the URL
+                depth -= 1
+            end = i + 1
+        out.append(raw[:end])
+    return out
+
+
+# Controls for the walker, checked at import the way compile_block_terms
+# checks BLOCK_CONTROLS in aggregate.py. Each expectation is what
+# python-markdown actually renders, not what looks right. A mis-extracted
+# destination is worse than no check at all: the checker then reports a
+# verdict about a URL the site does not link, and the standard remedy for
+# that verdict (a MANUALLY_VERIFIED entry) would green-light the phantom
+# permanently while the real link stayed untested.
+LINK_CONTROLS = [
+    ("[a](https://ex.com/p)", ["https://ex.com/p"]),
+    # The citation behind issue #46, and the shape it belongs to: Elsevier
+    # PII, Wiley SICI DOIs and Wikipedia disambiguation titles all carry
+    # parentheses, so a site that cites journals meets this constantly.
+    (("[Kanis et al., 2026](https://www.cell.com/current-biology/fulltext/"
+      "S0960-9822(26)00890-0)"),
+     ["https://www.cell.com/current-biology/fulltext/S0960-9822(26)00890-0"]),
+    ("[t](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture))",
+     ["https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"]),
+    ("[a](https://ex.com/a(b(c)d)e)", ["https://ex.com/a(b(c)d)e"]),
+    ("(see [a](https://ex.com/p))", ["https://ex.com/p"]),
+    ("![alt](https://ex.com/i(1).png)", ["https://ex.com/i(1).png"]),
+    ("[a](https://ex.com/p%28x%29)", ["https://ex.com/p%28x%29"]),
+    ("[a](https://ex.com/x) and [b](https://ex.com/y)",
+     ["https://ex.com/x", "https://ex.com/y"]),
+    ("[**bold**](https://ex.com/p)", ["https://ex.com/p"]),
+    ('[t](https://ex.com/p "A title")', ["https://ex.com/p"]),
+]
+for _md, _want in LINK_CONTROLS:
+    _got = link_destinations(_md)
+    assert _got == _want, (
+        f"link extractor returned {_got} for {_md!r}, expected {_want}. A "
+        f"mis-extracted destination makes this checker report on a URL the "
+        f"site does not link (issue #46), so fix the walker before trusting "
+        f"any run.")
 
 
 def collect() -> list[tuple[str, str]]:
@@ -138,8 +205,15 @@ def collect() -> list[tuple[str, str]]:
         md_paths = [REPO / md_rel for md_rel in sys.argv[1:]]
     for path in md_paths:
         text = path.read_text(encoding="utf-8")
-        for url in MD_LINK.findall(text):
-            pairs.append((path.relative_to(REPO).as_posix(), url))
+        rel = path.relative_to(REPO).as_posix()
+        urls = link_destinations(text)
+        opens = len(MD_LINK_COUNT.findall(text))
+        assert len(urls) == opens, (
+            f"{rel}: {opens} markdown link openings but {len(urls)} "
+            f"destinations extracted. A destination the walker cannot parse "
+            f"would otherwise stop being checked with nothing saying so.")
+        for url in urls:
+            pairs.append((rel, url))
     # de-duplicate identical (source, url) pairs from repeated links
     return list(dict.fromkeys(pairs))
 
