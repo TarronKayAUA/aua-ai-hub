@@ -33076,6 +33076,33 @@
    "first_seen": "2026-09-05T11:50:40.174067+00:00",
    "kept": false,
    "reason": "hype-styled title with generic boilerplate summary; no substantive content description provided to assess educational or demonstration value"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03198-w",
+   "title_hash": "c5cea63f5ecc699d2c40fab7c6939c3e",
+   "first_seen": "2026-09-05T15:16:53.299212+00:00",
+   "kept": true,
+   "title": "Exploring generalizability and explainability of LLMs in classifying clinically rated suicidal ideation using heterogeneous data",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-05T00:00:00+00:00",
+   "summary": "Peer-reviewed study examines how large language models generalize across heterogeneous data when classifying clinically rated suicidal ideation and explores model explainability for this application.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://gmcgoldr.github.io/2026/09/04/llm-next-token-predictors.html",
+   "title_hash": "c7f156a798032c3e76b6545a0b7ed6de",
+   "first_seen": "2026-09-05T15:16:53.299212+00:00",
+   "kept": false,
+   "reason": "forum discussion of conceptual criticism, lacks significance for medical educators and does not report a development in the field"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6egid/bernie_sanders_proposes_to_ban_ai",
+   "title_hash": "6bfff0e74e6e95f9e2476a84a53bd6f6",
+   "first_seen": "2026-09-05T15:16:53.299212+00:00",
+   "kept": false,
+   "reason": "forum discussion of speculative policy, not reporting on actual regulatory development or enacted policy"
   }
  ],
  "digests": [

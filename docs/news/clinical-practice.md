@@ -49,6 +49,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Unsupervised machine learning applied to spatial cell organization in placental tissue enables detection of placental disease.</p>
   </div>
 </div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03198-w">Exploring generalizability and explainability of LLMs in classifying clinically rated suicidal ideation using heterogeneous data</a>
+    <p class="news-card-summary">Peer-reviewed study examines how large language models generalize across heterogeneous data when classifying clinically rated suicidal ideation and explores model explainability for this application.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03155-7">A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence</a>
     <p class="news-card-summary">Framework proposes five phases for systematic evaluation of diagnostic and predictive medical artificial intelligence systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03191-3">The illusion of clinical reasoning: a benchmark reveals the pervasive gap in vision-language models for clinical competency</a>
-    <p class="news-card-summary">A benchmark assessment reveals vision-language models fail to demonstrate genuine clinical reasoning despite appearing competent on surface metrics.</p>
   </div>
 </div>
 </div>
