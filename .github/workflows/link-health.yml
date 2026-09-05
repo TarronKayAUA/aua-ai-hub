@@ -54,7 +54,10 @@ jobs:
                 echo '```'
               } > body.md
             else
-              title="Link health: ${n} links failing"
+              # "checks", not "links": a failure can be a stale soft-404
+              # canary rather than a dead link, and the body always names
+              # which. See SOFT_404_SHAPES in scripts/verify_links.py.
+              title="Link health: ${n} checks failing"
               {
                 echo "Automated monthly check found failing links."
                 echo

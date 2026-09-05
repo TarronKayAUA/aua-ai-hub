@@ -74,7 +74,14 @@ Tool categories, their page order, and category intro paragraphs live in
 `CATEGORY_LABELS` and `CATEGORY_INTROS` in `scripts/render_data.py` (the
 hook fails the build on an unknown category). Sites that block scripted
 clients go in the `MANUALLY_VERIFIED` allowlist in `scripts/verify_links.py`
-with the date they were confirmed live in a browser.
+with the date they were confirmed live in a browser. A host that answers
+HTTP 200 for a page that does not exist goes in `SOFT_404_SHAPES` in the same
+file instead, as a (host, path prefix) pair with a discriminator drawn from
+the response and a canary URL that must never exist. The canary is fetched
+once per sweep and a run fails if it starts reading alive, which is the only
+warning you get that the entry has stopped working. Most soft-404 hosts do
+not belong there: read the "surveyed and deliberately excluded" note beside
+the table before adding a third entry.
 
 **Add a prompt learning resource** — edit `data/prompt_resources.yaml`
 (category `general` renders on the Learning to Prompt page,

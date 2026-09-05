@@ -285,8 +285,199 @@ def _cert_error(exc, depth: int = 0) -> ssl.SSLCertVerificationError | None:
     return None
 
 
+# Hosts that answer HTTP 200 for a path that cannot exist ("soft 404"), so
+# `status < 400` is not evidence a link is alive. On these shapes a dead link
+# is unreportable and the monthly run stays green forever.
+#
+# This is a REGISTRY, not a detector: a dated list of specific (host, path
+# prefix) shapes someone surveyed by hand, in the same spirit as
+# MANUALLY_VERIFIED above and the doi.org and github.com/signup cases in
+# check() below. Nothing here generalises, and that is the point. A general
+# soft-404 heuristic (body length, title wording, redirected-away) was
+# measured against every host this repository links on 2026-09-05 and would
+# have reported live links as dead every month: see the "surveyed and
+# deliberately excluded" note under the table.
+#
+# Each entry carries a discriminator drawn from the response check() has
+# ALREADY fetched, so an entry costs no extra request during the sweep and
+# turns a false green into a true red only when the link is genuinely gone.
+# An entry with no such discriminator does not belong here at all; there is
+# nothing to report but "cannot tell", and a verdict that repeats monthly on
+# links that are almost certainly fine is how issues #31 and #45 taught
+# everyone to ignore a report.
+#
+#   host    exact host, www stripped, matched the way MANUALLY_VERIFIED is
+#   prefix  path prefix the shape starts with; the shape dependency is real,
+#           forms.office.com/<junk> hard-404s while forms.office.com/r/<junk>
+#           soft-404s, so a host-wide entry would be wrong
+#   dead    (final url after redirects, page title) -> True when the host is
+#           telling us, at 200, that the page is not there
+#   canary  a URL of this shape that must NEVER exist, fetched once per sweep
+#           to prove `dead` still fires (see _canary_failures)
+#   verdict short reason printed in the detail column
+SOFT_404_SHAPES = [
+    {
+        # The site's feedback form is linked from 13 hand-authored pages
+        # (about, accessibility, faculty, students, opportunities, the
+        # rollout announcement, both governance pages, learning, pathway,
+        # both playbooks pages, worked-examples). Retire or re-issue that
+        # form and all 13 break with the checker still reporting HTTP 200.
+        # Surveyed 2026-09-05: a fabricated same-length code, and a
+        # one-character change of the real code, both returned 200 with a
+        # byte-identical 1418-byte body after redirecting to the fixed
+        # sentinel /PageNotFound.aspx. A live form leaves the host entirely
+        # for forms.cloud.microsoft/pages/responsepage.aspx.
+        #
+        # TWO KNOWN LIMITS, both unprobed as of 2026-09-05, stated here
+        # rather than left for someone to discover from a green report.
+        # (a) This covers the form being DELETED or re-issued under a new
+        #     code. A form CLOSED to responses, which is Microsoft's
+        #     one-click retire and the likelier path for a form the owner no
+        #     longer wants, probably still resolves to responsepage.aspx and
+        #     would read alive. Settle it by closing a throwaway form and
+        #     fetching its link once, then add a second clause here.
+        # (b) The long-form URL the same Copy link menu offers,
+        #     forms.office.com/Pages/ResponsePage.aspx?id=..., is neither
+        #     surveyed nor matched. It does not appear in this repository.
+        "host": "forms.office.com",
+        "prefix": "/r/",
+        "dead": lambda final, title: urllib.parse.urlparse(
+            final).path.lower().endswith("/pagenotfound.aspx"),
+        # TRAP, and the reason this canary REPLACES the code rather than
+        # extending it: forms.office.com/r/5a8RCi2YKP-zq7v3x-does-not-exist
+        # still resolves to the REAL form and returns the live page, so a
+        # canary built by appending a suffix would silently always pass.
+        # SOFT_404_CONTROLS below pins that case so nobody re-derives it.
+        "canary": "https://forms.office.com/r/Zq7V3xKp2M",
+        "verdict": "soft 404, form gone",
+    },
+    {
+        # Three leaderboard URLs on docs/benchmarks/image.md and
+        # docs/benchmarks/video.md. Leaderboards get renamed, and the host
+        # states the failure in words while answering 200: a fabricated slug
+        # returned the title "Leaderboard Not Found" in place, no redirect
+        # (surveyed 2026-09-05). Body size halves too, but size is not used:
+        # a 9 percent difference is inside normal page-to-page variation on
+        # other hosts in the same survey, so only the wording is trusted.
+        "host": "arena.ai",
+        "prefix": "/leaderboard/",
+        "dead": lambda final, title: title.strip().lower(
+        ) == "leaderboard not found",
+        "canary": "https://arena.ai/leaderboard/zq7v3x-does-not-exist",
+        "verdict": "soft 404, no board",
+    },
+]
+# SURVEYED AND DELIBERATELY EXCLUDED (2026-09-05). Recorded here because the
+# expensive part of this work was learning which hosts must be left alone,
+# and an empty absence looks like an oversight to the next reader.
+#
+# aamc.org, students-residents.aamc.org (10 URLs). Fabricated paths return
+#   200, but the body is a 3038-byte Akamai "Client Challenge", not a
+#   not-found page, and the identical body came back for 2 of 7 fetches of
+#   LIVE AAMC pages in the same survey. Any detector keyed on that title,
+#   size or hash would have reported roughly a quarter of live AAMC links as
+#   dead every month. That is issues #31 and #45 rebuilt exactly, on links
+#   belonging to an institution the owner works with. Do nothing here.
+# hbsp.harvard.edu (1 URL). The host serves one byte-identical JavaScript
+#   shell for every path, live or dead. No HTTP client can tell them apart.
+# claude.com (3 one-segment URLs). A fabricated one-segment path leaves the
+#   host for claude.ai, which would discriminate, but this vendor
+#   restructures often: the MANUALLY_VERIFIED note above records
+#   claude.com/design behaving differently in June 2026 than it did in this
+#   survey. A redirect off the host is as likely to mean "moved" as "gone".
+# one.google.com, sites.usc.edu, udio.com (1 URL each). The dead signal is a
+#   redirect to a sign-in page, and an auth wall sits in front of live URLs
+#   just as readily as missing ones.
+# grow.google, idc.com (1 URL each). Redirect-to-index or redirect-to-root.
+#   Real, but one URL each; not worth an entry that must be re-surveyed.
+# pmc.ncbi.nlm.nih.gov (5 URLs). Looked soft, was not: a plausibly-shaped
+#   nonexistent id returns a clean 404. Its intermittent reCAPTCHA
+#   interstitial at 200 is a separate false-green worth knowing about, but it
+#   is a bot challenge and has the same live-URL problem as AAMC.
+# 23 further soft-404 URLs sit on bare domain roots (chatgpt.com,
+#   lmstudio.ai, suno.com and the like) where there is no id that can rot, so
+#   the soft 404 changes nothing.
+
+TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
+
+
+def _soft_404_entry(url: str) -> dict | None:
+    """The SOFT_404_SHAPES entry covering `url`, if any."""
+    parts = urllib.parse.urlparse(url)
+    host = re.sub(r"^www\.", "", parts.netloc).lower()
+    # Path is case-folded because Microsoft's "Copy link" hands out /r/ and
+    # the shortlink works in either case; a case-sensitive match protected
+    # exactly one spelling of the one URL this entry exists for.
+    path = parts.path.lower()
+    for entry in SOFT_404_SHAPES:
+        if host == entry["host"] and path.startswith(entry["prefix"]):
+            return entry
+    return None
+
+
+def _page_title(resp) -> str:
+    """The <title> of a response, or "" when it has none.
+
+    Bounded to the first 100 KB because these are 500 KB to 1 MB app shells
+    and the title is in the head; an unbounded search buys nothing.
+    """
+    try:
+        match = TITLE_RE.search(resp.text[:100_000])
+    except (UnicodeDecodeError, ValueError):
+        return ""
+    return re.sub(r"\s+", " ", match.group(1)) if match else ""
+
+
+# Controls for the registry, asserted at import the way LINK_CONTROLS above
+# is. Every fixture is a real response recorded during the 2026-09-05 survey,
+# so an edit to a `dead` predicate that stops separating a live page from a
+# dead one fails the import instead of quietly restoring the false green.
+# (url, final url after redirects, page title, is this dead?)
+SOFT_404_CONTROLS = [
+    ("https://forms.office.com/r/Zq7V3xKp2M",
+     "https://forms.office.com/PageNotFound.aspx", "Page not found", True),
+    # Microsoft's "Copy link" hands out /r/, but the shortlink resolves in
+    # either case, so the matcher is case-folded and this pins that.
+    ("https://forms.office.com/R/Zq7V3xKp2M",
+     "https://forms.office.com/PageNotFound.aspx", "Page not found", True),
+    ("https://forms.office.com/r/5a8RCi2YKP",
+     ("https://forms.cloud.microsoft/pages/responsepage.aspx"
+      "?id=xxx&route=shorturl"), "Microsoft Forms", False),
+    # The trap: a suffix on the real code still resolves to the real form.
+    ("https://forms.office.com/r/5a8RCi2YKP-zq7v3x-does-not-exist",
+     ("https://forms.cloud.microsoft/pages/responsepage.aspx"
+      "?id=xxx&route=shorturl"), "Microsoft Forms", False),
+    ("https://arena.ai/leaderboard/text-to-image-zq7v3x-does-not-exist",
+     "https://arena.ai/leaderboard/text-to-image-zq7v3x-does-not-exist",
+     "Leaderboard Not Found", True),
+    ("https://arena.ai/leaderboard/text-to-image",
+     "https://arena.ai/leaderboard/text-to-image",
+     "Text-to-Image Leaderboard - Best AI Image Generators", False),
+]
+for _url, _final, _title, _want_dead in SOFT_404_CONTROLS:
+    _entry = _soft_404_entry(_url)
+    assert _entry is not None, f"no soft-404 entry matches {_url}"
+    assert _entry["dead"](_final, _title) is _want_dead, (
+        f"soft-404 entry {_entry['host']}{_entry['prefix']} returned "
+        f"{not _want_dead} for {_url}. Fix the predicate before trusting a "
+        f"run: reading dead as alive restores a false green, and reading "
+        f"alive as dead reports a working link every month.")
+# The shape dependency, pinned: only /r/ soft-404s on forms.office.com, and
+# the excluded hosts above must stay unmatched however the table is edited.
+for _url in ("https://forms.office.com/zq7v3x-does-not-exist",
+             "https://www.aamc.org/learn-network/learn-serve-lead",
+             "https://claude.com/design",
+             "https://arena.ai/blog/factuality-in-arena"):
+    assert _soft_404_entry(_url) is None, \
+        f"{_url} must not match a soft-404 entry; see the exclusions above"
+
+
 def check(url: str, retries: int = 2,
           expect_type: str | None = None) -> tuple[bool, str]:
+    # Kept because `url` is rewritten below: the soft-404 registry must be
+    # matched against the URL the page actually links, not against an
+    # endpoint this function substituted for it.
+    requested = url
     # YouTube rate-limits watch pages (HTTP 429) when several are fetched in
     # a row. The oEmbed endpoint answers cheaply: 200 for a live public
     # video, 400/404 for a dead one. Check videos through it instead.
@@ -349,6 +540,14 @@ def check(url: str, retries: int = 2,
                 and "/signup" in url):
             return True, "github signup bot-challenges scripts"
     ok = resp.status_code < 400
+    if ok:
+        # On a registered soft-404 shape a 200 proves nothing on its own, so
+        # ask the entry's discriminator what this particular response means
+        # (2026-09-05 survey; see SOFT_404_SHAPES). No extra request: the
+        # answer is in the response already in hand.
+        entry = _soft_404_entry(requested)
+        if entry is not None and entry["dead"](resp.url, _page_title(resp)):
+            return False, entry["verdict"]
     if ok and expect_type:
         # A field that declares its content type gets that checked too. An
         # image URL answering 200 with text/html is a host serving an error
@@ -362,9 +561,43 @@ def check(url: str, retries: int = 2,
     return ok, f"HTTP {resp.status_code}"
 
 
+def _canary_failures(pairs) -> tuple[list[tuple[str, str, str]], int]:
+    """Prove every engaged registry entry can still tell dead from alive.
+
+    A registry is only as good as the day it was written: if Microsoft
+    renames /PageNotFound.aspx, the entry above stops firing and this file
+    goes back to reporting HTTP 200 for a retired form with nothing saying
+    so. That is the one real weakness of a hand-built table, so each entry
+    names a URL of its shape that must never exist, and one sweep fetches it
+    once. If the canary reads ALIVE, the discriminator is stale and a human
+    must re-survey the host: that is a genuine failure, and unlike a
+    heuristic it can only fire when the host itself changes.
+
+    Only entries some collected link actually matched are probed, so a run
+    over one page never sends a request to a host that page does not link.
+    A canary that fails to load is NOT reported: an unreachable host makes
+    every real link on it fail anyway, so the sweep is already loud.
+    """
+    engaged = [entry for entry in SOFT_404_SHAPES
+               if any(_soft_404_entry(url) is entry for _, url, _ in pairs)]
+    out = []
+    for entry in engaged:
+        time.sleep(0.5)  # same pacing as the sweep
+        alive, detail = check(entry["canary"])
+        if alive:
+            out.append((
+                "soft-404 registry",
+                entry["canary"],
+                (f"canary reads alive ({detail}): the {entry['host']}"
+                 f"{entry['prefix']} soft-404 check no longer works, so"
+                 f" dead links on that shape are reporting HTTP 200 again."
+                 f" Re-survey the host, then fix or remove the entry.")))
+    return out, len(engaged)
+
+
 def main() -> int:
     pairs = collect()
-    failures = []
+    failures, canaries = _canary_failures(pairs)
     for source, url, expect_type in pairs:
         time.sleep(0.5)  # pacing; rapid-fire requests trip connection drops
         ok, detail = check(url, expect_type=expect_type)
@@ -373,10 +606,33 @@ def main() -> int:
         if not ok:
             failures.append((source, url, detail))
 
+    # Canaries are counted apart from the links so "checked" and "passed"
+    # keep meaning the site's own links, but they are added into "failed",
+    # which is the line the monthly workflow reads and which means "a human
+    # must act" (CLAUDE.md). A stale soft-404 entry needs a human.
+    stale = sum(1 for source, _, _ in failures
+                if source == "soft-404 registry")
+    # Canaries are counted into the total as well as into "failed", so the
+    # block sums: passed + failed == checks run. Counting them only on the
+    # failure side printed "checked 296, passed 296, failed 1" whenever an
+    # entry went stale, which breaks CLAUDE.md working rule 2 on the first
+    # line the owner reads.
+    #
+    # "failed" stays the only line starting with that word: link-health.yml
+    # greps '^failed' for the issue title's count, and a second such line
+    # would make the shell variable multiline and break the title.
+    checks = len(pairs) + canaries
+    judged = sum(1 for _, url, _ in pairs if _soft_404_entry(url) is not None)
     print("\n=== verification ===")
-    print(f"links checked : {len(pairs)}")
-    print(f"passed        : {len(pairs) - len(failures)}")
+    print(f"checks run    : {checks} ({len(pairs)} links, "
+          f"{canaries} soft-404 canaries)")
+    print(f"passed        : {checks - len(failures)}")
     print(f"failed        : {len(failures)}")
+    if canaries:
+        print(f"soft 404      : {canaries} shape"
+              f"{'' if canaries == 1 else 's'} engaged, "
+              f"{canaries - stale} still detecting, "
+              f"{judged} link{'' if judged == 1 else 's'} judged through one")
     for source, url, detail in failures:
         print(f"  FAIL {url} ({source}): {detail}")
     return 1 if failures else 0
