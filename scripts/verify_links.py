@@ -1,8 +1,15 @@
 """Authoring-time link checker for the AUA AI Hub.
 
-Checks every URL in data/tools.yaml, data/conferences.yaml,
-data/prompt_resources.yaml, and any markdown files passed as arguments. Run before committing changes to those files so no
-dead link is ever committed (SPEC section 11, Phase 1 acceptance criteria).
+Checks every URL-valued field named in URL_FIELDS, across the owner-owned data
+files listed in collect(), plus any markdown files passed as arguments. Run
+before committing changes to those files so no dead link is ever committed
+(SPEC section 11, Phase 1 acceptance criteria).
+
+The file list and the field list both live in collect() rather than here,
+because an enumeration in a docstring goes stale silently: this one named
+three data files while collect() read nine, and claimed every URL in
+data/prompt_resources.yaml was covered while five of its twenty were not
+(corrected 2026-09-05).
 
 Not run in CI on purpose: a link that dies after commit should surface through
 review, not block site deploys.
@@ -168,8 +175,27 @@ for _md, _want in LINK_CONTROLS:
         f"any run.")
 
 
-def collect() -> list[tuple[str, str]]:
-    """Return (source, url) pairs from the data files and any CLI-passed markdown."""
+# Entry fields whose values are URLs that reach a reader. "url" is the entry's
+# own link. "thumbnail" is an og:image that render_data._video_card hotlinks
+# into a card, so a rotted one is a broken image on the Courses and Resources
+# and Learning to Prompt pages; twelve of them went unchecked until 2026-09-05
+# because this loop only ever read "url".
+#
+# tools.yaml's verify_url is deliberately NOT here. content_watch.py and
+# page_review.py already fetch it weekly, so adding it would duplicate their
+# traffic against the same hosts without covering anything new.
+#
+# The value is the Content-Type prefix the field's URL must answer with, or
+# None when anything is acceptable. A thumbnail is hotlinked into an <img>, so
+# a 200 carrying HTML is a host serving an error or consent page in the
+# image's place: the page shows a broken image while a status-only check
+# reports the link alive. All 12 thumbnails answered image/* when this was
+# added, so the assertion starts with no false positives.
+URL_FIELDS = {"url": None, "thumbnail": "image/"}
+
+
+def collect() -> list[tuple[str, str, str | None]]:
+    """Return (source, url, expected Content-Type prefix or None) triples."""
     pairs = []
     for yaml_rel in (
         "data/tools.yaml",
@@ -187,10 +213,12 @@ def collect() -> list[tuple[str, str]]:
             continue
         entries = yaml.safe_load(path.read_text(encoding="utf-8")) or []
         for entry in entries:
-            url = entry.get("url", "")
-            if url and url != "TBD":
-                label = entry.get("name") or entry.get("title", "?")
-                pairs.append((f"{yaml_rel}:{label}", url))
+            label = entry.get("name") or entry.get("title", "?")
+            for field, expect in URL_FIELDS.items():
+                url = entry.get(field, "")
+                if url and url != "TBD":
+                    suffix = "" if field == "url" else f" [{field}]"
+                    pairs.append((f"{yaml_rel}:{label}{suffix}", url, expect))
     md_paths = []
     if "--all-docs" in sys.argv[1:]:
         # Skip generated trees and the Exchange mirror: news rotates nightly
@@ -213,12 +241,15 @@ def collect() -> list[tuple[str, str]]:
             f"destinations extracted. A destination the walker cannot parse "
             f"would otherwise stop being checked with nothing saying so.")
         for url in urls:
-            pairs.append((rel, url))
+            # A markdown link can point at anything, so no content-type
+            # expectation: only the data files declare what a field must be.
+            pairs.append((rel, url, None))
     # de-duplicate identical (source, url) pairs from repeated links
     return list(dict.fromkeys(pairs))
 
 
-def check(url: str, retries: int = 2) -> tuple[bool, str]:
+def check(url: str, retries: int = 2,
+          expect_type: str | None = None) -> tuple[bool, str]:
     # YouTube rate-limits watch pages (HTTP 429) when several are fetched in
     # a row. The oEmbed endpoint answers cheaply: 200 for a live public
     # video, 400/404 for a dead one. Check videos through it instead.
@@ -275,15 +306,25 @@ def check(url: str, retries: int = 2) -> tuple[bool, str]:
                 and "/signup" in url):
             return True, "github signup bot-challenges scripts"
     ok = resp.status_code < 400
+    if ok and expect_type:
+        # A field that declares its content type gets that checked too. An
+        # image URL answering 200 with text/html is a host serving an error
+        # or consent page where the picture used to be, which renders as a
+        # broken image while status alone still reads as alive (2026-09-05).
+        # This cannot catch a host that serves a placeholder IMAGE for a
+        # missing one; media.springernature.com does exactly that.
+        ctype = (resp.headers.get("Content-Type") or "").split(";")[0].strip()
+        if not ctype.startswith(expect_type):
+            return False, f"HTTP {resp.status_code}, {ctype or 'no type'} not {expect_type}"
     return ok, f"HTTP {resp.status_code}"
 
 
 def main() -> int:
     pairs = collect()
     failures = []
-    for source, url in pairs:
+    for source, url, expect_type in pairs:
         time.sleep(0.5)  # pacing; rapid-fire requests trip connection drops
-        ok, detail = check(url)
+        ok, detail = check(url, expect_type=expect_type)
         marker = "ok  " if ok else "FAIL"
         print(f"{marker} {detail:<22} {url}  ({source})")
         if not ok:
